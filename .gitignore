@@ -1,0 +1,25 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.key
+
+# Python environment and generated caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Generated exports
+dist/
+*.apkg
+
+# Local-only content; never a substitute for reviewing staged changes
+private/
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
