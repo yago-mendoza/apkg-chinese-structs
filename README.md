@@ -13,6 +13,20 @@ Generar tarjetas es la parte fácil. Lo que hace útil este sistema es que el ag
 - **Pronunciación explícita.** Transcripción fonética, trampas del pinyin para hispanohablantes y reglas de sandhi en las tarjetas donde toca pronunciar o reconocer de oído.
 - **Reglas que no dependen del modelo.** Qué tarjetas faltan, qué sobra y qué falta por practicar lo calcula `anki.py` a partir de una especificación (`docs/design.md`). El modelo redacta; el código comprueba. Un modelo mejor mejora el mazo sin cambiar el sistema.
 
+## Usarlo con tus propios apuntes
+
+El repositorio trae el contenido de YAGO (sus apuntes, su mazo y su audio), pero el sistema es independiente del contenido: el agente, las reglas y `anki.py` sirven para los apuntes de cualquiera.
+
+1. Copia el repositorio (fork o clon).
+2. Vacía el contenido y conserva la estructura:
+   - `2-raw/`, `4-digests/`, `5-guide/` y `3-data/audio/`: borra su contenido (`5-guide/` se regenera sola).
+   - `3-data/lexicon.yaml`: deja `version`, la lista `themes` (ajústala a tu gusto) y `entries: []`.
+   - `3-data/exercises.yaml`: deja `version`, `sentences: []` y `exercises: []`.
+3. En `anki.py`, cambia `DECK_NAME` y `GUID_NAMESPACE` si en tu Anki ya tienes este mazo, para que no se mezclen.
+4. Adapta a ti la sección «Objetivo» de `docs/design.md`: nivel, idioma de apoyo, para qué estudias. Las trampas fonéticas están pensadas para hispanohablantes.
+5. Configura Azure Speech y Anki (ver «Configuración») y deja tu primer lote en `1-inbox/`.
+6. Abre un agente de código (Claude Code, Codex…) en la carpeta y pídele «procesa el inbox». `AGENTS.md` y `docs/design.md` le dicen todo lo que necesita.
+
 ## Uso diario
 
 1. Dejar apuntes en bruto en `1-inbox/`: un `.txt` por lote, sin formato.
