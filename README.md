@@ -64,4 +64,4 @@ python -m venv .venv
 - Audio: `AZURE_SPEECH_KEY` y `AZURE_SPEECH_REGION` como variables de entorno del usuario (ver `.env.example`).
 - Anki desktop con el complemento AnkiConnect (`2055492159`) y sesión iniciada en AnkiWeb para sincronizar.
 
-Otros comandos, sobre todo para el agente: `anki.py lookup <término>`, `plan` (qué tarjetas faltan), `gaps` (reparto del mazo), `check`, `guide`, `build`.
+Otros comandos, sobre todo para el agente: `anki.py lookup <término>`, `plan` (qué tarjetas faltan), `gaps` (reparto del mazo), `check`, `guide`, `build`. Opciones de `push`: `--prune` borra del mazo las tarjetas cuyo ejercicio ya no existe (antes las lista); `--reset` devuelve todo el mazo a nuevas, sin progreso (solo mientras estemos en fase de pruebas).
