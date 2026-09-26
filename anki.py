@@ -8,7 +8,7 @@ Uso:
     python anki.py guide                   regenera 5-guide/ desde 3-data/
     python anki.py audio [--dry-run]
     python anki.py build [--allow-missing-audio]
-    python anki.py push [--allow-missing-audio] [--no-sync] [--prune]
+    python anki.py push [--allow-missing-audio] [--no-sync] [--prune] [--reset]
 
 No llama a ningún LLM. `audio` usa la red (Azure Speech) y nunca repite audios
 ya guardados en 3-data/audio/. `push` compila, importa en Anki desktop (abriéndolo si
@@ -1246,6 +1246,21 @@ def reorder_new(order):
     return len(actions)
 
 
+def reset_progress():
+    """Fase de pruebas: todas las tarjetas del mazo vuelven a nuevas, con repasos y fallos a 0.
+    Solo este mazo. El registro de repasos de Anki (estadísticas) no se borra."""
+    cards = anki_request("findCards", query=f'"deck:{DECK_NAME}"')
+    if not cards:
+        return 0
+    anki_request("forgetCards", cards=cards)
+    actions = [{"action": "setSpecificValueOfCard",
+                "params": {"card": c, "keys": ["reps", "lapses"], "newValues": [0, 0], "warning_check": True}}
+               for c in cards]
+    for i in range(0, len(actions), 200):
+        anki_request("multi", actions=actions[i:i + 200])
+    return len(cards)
+
+
 def orphans(exercises, prune):
     notes = anki_request("findNotes", query=f'"deck:{DECK_NAME}"')
     info = anki_request("notesInfo", notes=notes) if notes else []
@@ -1261,7 +1276,7 @@ def orphans(exercises, prune):
         print(f"{len(lost)} nota(s) del mazo ya no existen en 3-data/. Revisar y repetir con --prune para borrarlas.")
 
 
-def cmd_push(allow_missing_audio, sync, prune=False):
+def cmd_push(allow_missing_audio, sync, prune=False, reset=False):
     import subprocess
     import time
     if cmd_build(allow_missing_audio):
@@ -1287,6 +1302,8 @@ def cmd_push(allow_missing_audio, sync, prune=False):
     entries, sentences, exercises = load()
     sync_templates()
     print("Límites: " + ensure_limits())
+    if reset:
+        print(f"Progreso reiniciado: {reset_progress()} tarjeta(s) vuelven a nuevas.")
     moved = reorder_new(new_card_order(entries, sentences, exercises))
     print(f"Orden de nuevas: {moved} tarjeta(s) recolocada(s).")
     orphans(exercises, prune)
@@ -1322,6 +1339,7 @@ def main():
     u.add_argument("--allow-missing-audio", action="store_true")
     u.add_argument("--no-sync", action="store_true")
     u.add_argument("--prune", action="store_true", help="borrar notas del mazo cuyo ejercicio ya no existe")
+    u.add_argument("--reset", action="store_true", help="fase de pruebas: todo el mazo vuelve a nuevas, sin progreso")
     pl = sub.add_parser("plan")
     pl.add_argument("--doc", metavar="LOTE", help="escribe 1-inbox/gaps-<LOTE>.md")
     sub.add_parser("guide")
@@ -1335,7 +1353,7 @@ def main():
     if args.cmd == "audio":
         return cmd_audio(args.dry_run)
     if args.cmd == "push":
-        return cmd_push(args.allow_missing_audio, not args.no_sync, args.prune)
+        return cmd_push(args.allow_missing_audio, not args.no_sync, args.prune, args.reset)
     if args.cmd == "plan":
         return cmd_plan(args.doc)
     if args.cmd == "guide":

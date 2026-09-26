@@ -138,6 +138,7 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 - **Límites**: 30 nuevas al día y 300 repasos como máximo (elegido por YAGO el 2026-09-26: 15 se le quedaba corto), fijados por `push` en un preset propio. A ritmo estable los repasos diarios son del orden de 5 a 8 veces las nuevas (proporcional, no geométrico: a unos 10 s por tarjeta, 30 nuevas son unos 40 minutos al día); `use` mantiene el total asumible hacia C1. Cambiarlo es cambiar `NEW_PER_DAY` en `anki.py`: un cambio a mano en Anki se pierde en el siguiente `push`.
 - **GUID** = `guid_for("apkg-chinese-structs", id del ejercicio)`; IDs de modelo fijos en `anki.py`. Reimportar actualiza sin duplicar (comprobado el 2026-09-25); la conservación del historial tras repasar está por comprobar.
 - **Nunca se corrige dentro de Anki**: cada `push` sobrescribe desde `3-data/`.
+- **Fase de pruebas** (hasta que YAGO dé el sistema por estable): `push --reset` devuelve todo el mazo a nuevas con repasos y fallos a 0, a petición de YAGO. Solo este mazo; el registro de repasos de Anki se conserva. Anki sigue contando las nuevas ya empezadas ese día, así que el reinicio se nota del todo al día siguiente. Cuando el sistema sea estable, no se reinicia: el progreso se conserva.
 - Los otros mazos de la colección de YAGO son independientes (regla en `AGENTS.md`).
 
 ## Audio
