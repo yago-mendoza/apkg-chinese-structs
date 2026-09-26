@@ -25,9 +25,9 @@ Thumbs.db
 .idea/
 
 # Raw notes: local only (the repository is public)
+# Pending notes stay local until processed; processed notes (2-raw/) are versioned.
 1-inbox/*
 !1-inbox/README.md
-2-raw/
 
 # Azure F0 audio: not covered for redistribution. Keep local until regenerated on a paid tier (S0).
 3-data/audio/*.mp3

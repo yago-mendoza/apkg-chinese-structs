@@ -47,7 +47,7 @@ Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de o
 
 | Capa | Orden | Contenido |
 |---|---|---|
-| `2-raw/<lote>/` | cronológico, intocable | lo que YAGO escribió, tal cual; local, fuera de git |
+| `2-raw/<lote>/` | cronológico, intocable | lo que YAGO escribió, tal cual; versionado |
 | `4-digests/<lote>.md` | cronológico; temático por dentro | todo lo que aportó el lote, clasificado; histórico, no se reescribe |
 | `3-data/` | por concepto, sin cronología | fuente de verdad; la cronología solo como `source.batch` y `added` |
 | `5-guide/` | temático, acumulado | todo lo aprendido por tema, generado desde `3-data/` en cada lote; nunca se edita |
@@ -156,7 +156,7 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 ## Repositorio y privacidad
 
 - Repositorio `yago-mendoza/apkg-chinese-structs`, **público**: nada privado en `3-data/`, ninguna credencial. Local en `C:\Users\yagom\dev\apkg-chinese-structs`, Python en `.venv`, UTF-8 explícito.
-- Fuera de git: `1-inbox/` (salvo su README), `2-raw/`, `6-output/`, los MP3 (hasta S0) y el entorno. `2-raw/` solo existe en este disco [pendiente: copia de seguridad].
+- Fuera de git: `1-inbox/` (salvo su README), `6-output/`, los MP3 (hasta S0) y el entorno. `2-raw/` se versiona (decisión de YAGO, 2026-09-27): los apuntes no son privados. Antes de archivar un lote en `2-raw/`, revisar que no haya datos sensibles (claves, correos, teléfonos).
 - Commits cuando YAGO lo pida; push a GitHub solo cuando lo pida.
 - Fuentes externas: HSK 3.0 de `drkameleon/complete-hsk-vocabulary` (MIT; se puede versionar con su aviso de licencia; solo nivel y pinyin, no sus glosas CC-CEDICT). Dong Chinese y SUBTLEX-CH: condiciones sin aclarar, solo en local. No elegir licencia de publicación por YAGO.
 - Futuro (sin fecha): exportación `dictionary.json` para InfraPhysics desde `3-data/`, por lista explícita de campos publicables.
@@ -173,7 +173,7 @@ Por comprobar en uso real: que el cliente móvil de YAGO conserva lo escrito ent
 4. HSK 3.0 y frecuencia hablada como señales.
 5. `stats`: leer fallos de Anki por AnkiConnect y convertir las tarjetas problemáticas en huecos del siguiente lote.
 
-Sin fase: pasar Azure a S0 y regenerar (decisión de YAGO) y copia de seguridad de `2-raw/`.
+Sin fase: pasar Azure a S0 y regenerar (decisión de YAGO).
 
 ## Fuentes
 

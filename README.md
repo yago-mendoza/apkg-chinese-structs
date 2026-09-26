@@ -30,7 +30,7 @@ No se corrige nada dentro de Anki: cada `push` sobrescribe las tarjetas con lo q
 | Ruta | Para quién | Qué es |
 |---|---|---|
 | `1-inbox/` | YAGO escribe, el agente lee | Apuntes en bruto pendientes de procesar, y `gaps-<lote>.md`: lo que falta tras el último lote, editable. |
-| `2-raw/` | Archivo | Apuntes ya procesados, tal cual, en una carpeta por lote (`2-raw/001-2026-09-25-primeras-clases/`). No se suben a GitHub. |
+| `2-raw/` | Archivo | Apuntes ya procesados, tal cual, en una carpeta por lote (`2-raw/001-2026-09-25-primeras-clases/`). Se versionan (YAGO lo decidió el 2026-09-27). |
 | `3-data/` | Agente mantiene | Fuente de verdad del mazo. |
 | `3-data/lexicon.yaml` | Agente | Diccionario: palabras, caracteres, pronunciación, grupos. |
 | `3-data/exercises.yaml` | Agente | Frases y ejercicios (cada ejercicio es una tarjeta). |
