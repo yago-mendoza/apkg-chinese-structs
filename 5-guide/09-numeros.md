@@ -4,4 +4,4 @@
 
 ## Vocabulario
 
-- ✅🃏 八 bā · ocho
+- ✅🃏 八 bā [pa˥] · ocho

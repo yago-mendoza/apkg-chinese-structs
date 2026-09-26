@@ -4,18 +4,18 @@
 
 ## Vocabulario
 
-- ✅🃏 你好 nǐ hǎo · hola
-- ✅🃏 谢谢 xièxie · gracias · La segunda 谢 se dice en tono neutro, corta y sin contorno propio.
-- ✅🃏 请 qǐng · por favor · qǐng nín [verbo] = please you <do smth> (formal)
-- ✅🃏 再见 zàijiàn · adiós · formal / general ♡
-- ✅🃏 拜拜 báibái · adiós (informal, del inglés bye-bye)
-- ✅🃏 对 duì · correcto; sí, eso es · duì a / méi cuò (+ intenso)
-- ✅🃏 早 zǎo · ¡buenos días! (informal); temprano · zǎo ← zǎoshang hǎo
-- ✅🃏 好的 hǎo de · vale, de acuerdo · subjetivo, muy bien, gusto
-- ✅🃏 您好 nín hǎo · hola (con respeto)
-- ✅🃏 你们好 nǐmen hǎo · hola (a un grupo)
-- ✅🃏 大家好 dàjiā hǎo · hola a todos
-- ✅🃏 老师好 lǎoshī hǎo · hola, profe
+- ✅🃏 你好 nǐ hǎo [ni˧˩˧ xɑʊ˧˩˧] · hola
+- ✅🃏 谢谢 xièxie [ɕjɛ˥˩ ɕjɛ] · gracias · La segunda 谢 se dice en tono neutro, corta y sin contorno propio.
+- ✅🃏 请 qǐng [tɕʰiŋ˧˩˧] · por favor · qǐng nín [verbo] = please you <do smth> (formal)
+- ✅🃏 再见 zàijiàn [tsaɪ˥˩ tɕjɛn˥˩] · adiós · formal / general ♡
+- ✅🃏 拜拜 báibái [paɪ˧˥ paɪ˧˥] · adiós (informal, del inglés bye-bye)
+- ✅🃏 对 duì [tweɪ˥˩] · correcto; sí, eso es · duì a / méi cuò (+ intenso)
+- ✅🃏 早 zǎo [tsɑʊ˧˩˧] · ¡buenos días! (informal); temprano · zǎo ← zǎoshang hǎo
+- ✅🃏 好的 hǎo de [xɑʊ˧˩˧ tɤ] · vale, de acuerdo · subjetivo, muy bien, gusto
+- ✅🃏 您好 nín hǎo [nin˧˥ xɑʊ˧˩˧] · hola (con respeto)
+- ✅🃏 你们好 nǐmen hǎo [ni˧˩˧ mən xɑʊ˧˩˧] · hola (a un grupo)
+- ✅🃏 大家好 dàjiā hǎo [ta˥˩ tɕja˥ xɑʊ˧˩˧] · hola a todos
+- ✅🃏 老师好 lǎoshī hǎo [lɑʊ˧˩˧ ʂɨ˥ xɑʊ˧˩˧] · hola, profe
 
 ## Saludos con 好
 

@@ -4,15 +4,15 @@
 
 ## Vocabulario
 
-- ✅ 在 zài · estar (haciendo algo)
-- ✅🃏 看 kàn · mirar; leer · mano sobre ojo
-- ✅🃏 看见 kànjiàn · ver (llegar a ver) · 看 es la acción de mirar; 见 añade el resultado: llegar a ver.
-- ✅🃏 看看 kànkan · echar un vistazo · Repetir el verbo lo suaviza: «mirar un poco», no «mirar dos veces».
-- ✅🃏 书 shū · libro
-- ✅🃏 手机 shǒujī · móvil · 手 «mano» + 机 «máquina».
-- ✅🃏 足球 zúqiú · fútbol · Calco: 足 «pie» + 球 «pelota».
-- ✅🃏 火车 huǒchē · tren · 火 «fuego» + 车 «vehículo»: el primero especifica el segundo.
-- 🟡🃏 入口 rùkǒu · entrada
+- ✅ 在 zài [tsaɪ˥˩] · estar (haciendo algo)
+- ✅🃏 看 kàn [kʰan˥˩] · mirar; leer · mano sobre ojo
+- ✅🃏 看见 kànjiàn [kʰan˥˩ tɕjɛn˥˩] · ver (llegar a ver) · 看 es la acción de mirar; 见 añade el resultado: llegar a ver.
+- ✅🃏 看看 kànkan [kʰan˥˩ kʰan] · echar un vistazo · Repetir el verbo lo suaviza: «mirar un poco», no «mirar dos veces».
+- ✅🃏 书 shū [ʂu˥] · libro
+- ✅🃏 手机 shǒujī [ʂoʊ˧˩˧ tɕi˥] · móvil · 手 «mano» + 机 «máquina».
+- ✅🃏 足球 zúqiú [tsu˧˥ tɕʰjoʊ˧˥] · fútbol · Calco: 足 «pie» + 球 «pelota».
+- ✅🃏 火车 huǒchē [xwɔ˧˩˧ ʈʂʰɤ˥] · tren · 火 «fuego» + 车 «vehículo»: el primero especifica el segundo.
+- 🟡🃏 入口 rùkǒu [ʐu˥˩ kʰoʊ˧˩˧] · entrada
 
 ## Frases
 

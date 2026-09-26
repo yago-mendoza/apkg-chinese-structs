@@ -2010,7 +2010,7 @@ exercises:
     context: [w.mama]
     skills: [components]
     prompt: {text: '¿Qué aporta cada parte de este carácter?', hanzi: 妈}
-    answer: {hanzi: 妈, pinyin: mā, meaning: 女 «mujer» da el significado; 马 mǎ da el sonido}
+    answer: {hanzi: 妈, pinyin: mā, meaning: '女 «mujer» da el significado; 马 mǎ («caballo») solo da el sonido'}
     lang: es
     comments: []
   - id: x.components.ma-question
@@ -2020,7 +2020,7 @@ exercises:
     context: [w.ma]
     skills: [components]
     prompt: {text: '¿Qué aporta cada parte de este carácter?', hanzi: 吗}
-    answer: {hanzi: 吗, pinyin: ma, meaning: '口 «boca»: palabra del habla; 马 mǎ da el sonido'}
+    answer: {hanzi: 吗, pinyin: ma, meaning: '口 «boca»: palabra del habla; 马 mǎ («caballo») solo da el sonido'}
     lang: es
     comments: []
   - id: x.components.kan

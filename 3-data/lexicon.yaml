@@ -334,7 +334,8 @@ entries:
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: linguistic, private: false, date: 2026-09-25, text: '女 «mujer» aporta el significado y 马 mǎ, el sonido.'}
+      - {kind: linguistic, private: false, date: 2026-09-25, text: '女 «mujer» aporta el significado y 马 mǎ, el sonido. 马 significa «caballo», pero aquí solo presta su sonido: el caballo no tiene nada que ver con mamá.'}
+      - {kind: linguistic, private: false, date: 2026-09-26, text: 'También se dice 妈 mā sola, sobre todo para llamarla (妈！). 爸妈 bàmā son papá y mamá juntos, en registro coloquial.'}
   - id: w.erzi
     use: hear
     role: content

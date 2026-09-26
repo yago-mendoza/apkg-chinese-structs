@@ -4,22 +4,22 @@
 
 ## Vocabulario
 
-- ✅🃏 中国 Zhōngguó · China
-- ✅🃏 西班牙 Xībānyá · España · Transcripción fonética: los caracteres imitan el sonido, no el significado.
-- ✅🃏 美国 Měiguó · Estados Unidos
-- ✅🃏 中文 Zhōngwén · chino (la lengua) · Modificador + núcleo: 中 «China» especifica 文 «lengua, escritura».
-- ✅🃏 是 shì · ser
-- ✅🃏 不 bù · no
-- ✅🃏 吗 ma · ¿…? (convierte la frase en pregunta de sí o no) · checking for yes/no
-- ✅🃏 呢 ne · ¿y…? (devuelve la pregunta) · neutral → decay, /ə/, “y tú?”
-- ✅🃏 也 yě · también
-- ✅🃏 都 dōu · todos, ambos (adverbio)
-- ✅🃏 的 de · de (posesión: 我的 = mi)
-- ✅🃏 叫 jiào · llamarse
-- ✅🃏 什么 shénme · qué
-- ✅🃏 名字 míngzi · nombre
-- ✅🃏 认识 rènshi · conocer (a alguien) · 认识 = reconocer + distinguir = familiarizado con · distinguir algo (de los demás) con conocimiento
-- ✅🃏 高兴 gāoxìng · contento
+- ✅🃏 中国 Zhōngguó [ʈʂʊŋ˥ kwɔ˧˥] · China
+- ✅🃏 西班牙 Xībānyá [ɕi˥ pan˥ ja˧˥] · España · Transcripción fonética: los caracteres imitan el sonido, no el significado.
+- ✅🃏 美国 Měiguó [meɪ˧˩˧ kwɔ˧˥] · Estados Unidos
+- ✅🃏 中文 Zhōngwén [ʈʂʊŋ˥ wən˧˥] · chino (la lengua) · Modificador + núcleo: 中 «China» especifica 文 «lengua, escritura».
+- ✅🃏 是 shì [ʂɨ˥˩] · ser
+- ✅🃏 不 bù [pu˥˩] · no
+- ✅🃏 吗 ma [ma] · ¿…? (convierte la frase en pregunta de sí o no) · checking for yes/no
+- ✅🃏 呢 ne [nɤ] · ¿y…? (devuelve la pregunta) · neutral → decay, /ə/, “y tú?”
+- ✅🃏 也 yě [jɛ˧˩˧] · también
+- ✅🃏 都 dōu [toʊ˥] · todos, ambos (adverbio)
+- ✅🃏 的 de [tɤ] · de (posesión: 我的 = mi)
+- ✅🃏 叫 jiào [tɕjɑʊ˥˩] · llamarse
+- ✅🃏 什么 shénme [ʂən˧˥ mɤ] · qué
+- ✅🃏 名字 míngzi [miŋ˧˥ tsɯ] · nombre
+- ✅🃏 认识 rènshi [ʐən˥˩ ʂɨ] · conocer (a alguien) · 认识 = reconocer + distinguir = familiarizado con · distinguir algo (de los demás) con conocimiento
+- ✅🃏 高兴 gāoxìng [kɑʊ˥ ɕiŋ˥˩] · contento
 
 ## Frases
 

@@ -4,21 +4,21 @@
 
 ## Vocabulario
 
-- ✅🃏 我 wǒ · yo; me
-- ✅🃏 你 nǐ · tú
-- ✅🃏 您 nín · usted (tú con respeto) · formal / respetuoso
-- ✅🃏 我们 wǒmen · nosotros
-- ✅🃏 你们 nǐmen · vosotros
-- ✅🃏 他 tā · él
-- 🟡🃏 她 tā · ella
-- 🟡🃏 它 tā · ello (cosas, animales) · animals
-- ✅🃏 他们 tāmen · ellos
-- ✅🃏 大家 dàjiā · todos, todo el mundo
-- ✅🃏 老师 lǎoshī · profesor, profesora
-- ✅🃏 学生 xuéshēng · estudiante · niño estudiando bajo un techo con utensilios de aprendizaje
-- ✅🃏 朋友 péngyou · amigo, amiga
-- ✅🃏 工程师 gōngchéngshī · ingeniero, ingeniera · mi profession · 师 aparece en profesiones y maestros, como en 老师.
-- ✅🃏 人 rén · persona
+- ✅🃏 我 wǒ [wɔ˧˩˧] · yo; me
+- ✅🃏 你 nǐ [ni˧˩˧] · tú
+- ✅🃏 您 nín [nin˧˥] · usted (tú con respeto) · formal / respetuoso
+- ✅🃏 我们 wǒmen [wɔ˧˩˧ mən] · nosotros
+- ✅🃏 你们 nǐmen [ni˧˩˧ mən] · vosotros
+- ✅🃏 他 tā [tʰa˥] · él
+- 🟡🃏 她 tā [tʰa˥] · ella
+- 🟡🃏 它 tā [tʰa˥] · ello (cosas, animales) · animals
+- ✅🃏 他们 tāmen [tʰa˥ mən] · ellos
+- ✅🃏 大家 dàjiā [ta˥˩ tɕja˥] · todos, todo el mundo
+- ✅🃏 老师 lǎoshī [lɑʊ˧˩˧ ʂɨ˥] · profesor, profesora
+- ✅🃏 学生 xuéshēng [ɕɥœ˧˥ ʂɤŋ˥] · estudiante · niño estudiando bajo un techo con utensilios de aprendizaje
+- ✅🃏 朋友 péngyou [pʰɤŋ˧˥ joʊ] · amigo, amiga
+- ✅🃏 工程师 gōngchéngshī [kʊŋ˥ ʈʂʰɤŋ˧˥ ʂɨ˥] · ingeniero, ingeniera · mi profession · 师 aparece en profesiones y maestros, como en 老师.
+- ✅🃏 人 rén [ʐən˧˥] · persona
 
 ## 他, 她 y 它: los tres son tā
 

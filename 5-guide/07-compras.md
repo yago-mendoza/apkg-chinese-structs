@@ -4,18 +4,18 @@
 
 ## Vocabulario
 
-- ✅🃏 喝 hē · beber
-- ✅🃏 水 shuǐ · agua
-- ✅🃏 想 xiǎng · querer (hacer algo); pensar · think / desire
-- ✅🃏 去 qù · ir
-- ✅🃏 买 mǎi · comprar
-- ✅🃏 水果 shuǐguǒ · fruta
-- ✅🃏 商店 shāngdiàn · tienda
-- ✅🃏 在 zài · estar en (un lugar)
-- ✅🃏 哪儿 nǎr · dónde
-- ✅🃏 咖啡 kāfēi · café · Transcripción fonética de «coffee».
-- ✅🃏 巧克力 qiǎokèlì · chocolate · Transcripción fonética de «chocolate».
-- ✅🃏 牛肉 niúròu · carne de ternera · Modificador + núcleo: 牛 «vaca» especifica 肉 «carne».
+- ✅🃏 喝 hē [xɤ˥] · beber
+- ✅🃏 水 shuǐ [ʂweɪ˧˩˧] · agua
+- ✅🃏 想 xiǎng [ɕjɑŋ˧˩˧] · querer (hacer algo); pensar · think / desire
+- ✅🃏 去 qù [tɕʰy˥˩] · ir
+- ✅🃏 买 mǎi [maɪ˧˩˧] · comprar
+- ✅🃏 水果 shuǐguǒ [ʂweɪ˧˩˧ kwɔ˧˩˧] · fruta
+- ✅🃏 商店 shāngdiàn [ʂɑŋ˥ tjɛn˥˩] · tienda
+- ✅🃏 在 zài [tsaɪ˥˩] · estar en (un lugar)
+- ✅🃏 哪儿 nǎr [naɻ˧˩˧] · dónde
+- ✅🃏 咖啡 kāfēi [kʰa˥ feɪ˥] · café · Transcripción fonética de «coffee».
+- ✅🃏 巧克力 qiǎokèlì [tɕʰjɑʊ˧˩˧ kʰɤ˥˩ li˥˩] · chocolate · Transcripción fonética de «chocolate».
+- ✅🃏 牛肉 niúròu [njoʊ˧˥ ʐoʊ˥˩] · carne de ternera · Modificador + núcleo: 牛 «vaca» especifica 肉 «carne».
 
 ## Frases
 

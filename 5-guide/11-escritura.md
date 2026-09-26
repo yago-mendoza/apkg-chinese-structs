@@ -5,7 +5,7 @@
 ## Vocabulario
 
 - 🟡🃏 午 wǔ · mediodía
-- 🟡🃏 牛 niú · vaca, buey
+- 🟡🃏 牛 niú [njoʊ˧˥] · vaca, buey
 - 🟡🃏 生 shēng · vida; nacer · some plant emerging
 - 🟡🃏 入 rù · entrar
 - 🟡🃏 女 nǚ · mujer (como componente)

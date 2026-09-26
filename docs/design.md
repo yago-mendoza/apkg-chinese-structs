@@ -60,7 +60,7 @@ Mapa completo y convenciones de nombres: `README.md`.
 | una frase o situación | la frase | junto a esa frase |
 | un truco para una pregunta concreta | el ejercicio | solo en su respuesta |
 
-`kind`: `mnemonic` (subjetivo), `teacher` (solo si consta que lo dijo la profesora), `linguistic` (verificado), `note` (apunte literal de YAGO de origen sin precisar). Literal siempre; una mnemotecnia no se presenta como etimología. `private: true` por defecto y nada privado sale en ninguna salida; como el repositorio es público, lo privado ni siquiera se guarda en `3-data/`. Una observación nueva de YAGO («先生 se pronuncia…») va a su hogar según esta tabla y aparece en todas las tarjetas afectadas.
+`kind`: `mnemonic` (subjetivo), `teacher` (solo si consta que lo dijo la profesora), `linguistic` (verificado), `note` (apunte literal de YAGO de origen sin precisar), `sound` (pista de pronunciación de YAGO, literal, como «xiEnshAng»; se muestra como «Cómo suena»). Literal siempre; una mnemotecnia no se presenta como etimología. `private: true` por defecto y nada privado sale en ninguna salida; como el repositorio es público, lo privado ni siquiera se guarda en `3-data/`. Una observación nueva de YAGO («先生 se pronuncia…») va a su hogar según esta tabla y aparece en todas las tarjetas afectadas.
 
 ## Cobertura: `use`, `plan` y `check`
 
@@ -109,21 +109,23 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 - **Tipos**: `read` (hanzi → pinyin y significado), `listen` (audio → pinyin o comprensión), `produce` (español → chino), `cloze` (hueco en frase), `tones` (un dígito por sílaba: 什么 → `25`; desde audio o desde pinyin sin tonos; `check` reconstruye el pinyin y verifica), `speak` (voz alta y comparar), `contrast`, `derive`, `components`. Una pregunta concreta por tarjeta.
 - **Tecleadas frente a autoevaluación**: YAGO estudia desde el móvil; se teclea en tonos y producción del núcleo, el resto es autoevaluación. **Normalización**: la plantilla compara tras quitar espacios y mayúsculas, convertir tildes en dígitos y tratar `v` = `ü`, para que solo un error real de sílaba o tono cuente como fallo.
 - **Audio**: escucha, tonos y pronunciación lo llevan delante; lectura, producción y deducción, tras revelar; el contraste visual y los componentes no llevan (se deciden por la forma); el de homófonos sí. Frases de ejemplo y entradas `p.`, siempre.
+- **AFI** (transcripción fonética del tono de cita) en el reverso de palabras y en `5-guide/`, calculada del pinyin con dragonmapper al compilar; nunca se guarda en `3-data/`. No refleja el sandhi: eso lo explican las entradas `p.`. Las pistas propias de YAGO van como comentario `sound` y aparecen en tarjetas, guía y digest.
+- **Tarjetas de tonos**: llevan el recordatorio de qué número es cada tono.
 - **Pinyin** siempre visible en las soluciones. Colores solo para alinear hanzi y pinyin, nunca para marcar tonos. No se promete corregir el habla: `speak` es autoevaluación.
 
 ## Anki
 
-- Mazo `🐉 Chino práctico`. **Subdecks por tema**, numerados por orden de aprendizaje (`🐉 Chino práctico::02 Presentarse`), decididos por el agente [pendiente, fase 2; hoy hay un subdeck por mes, `::2026-09`]. **Etiquetas** para lo que admite varios valores: `nivel::`, `mes::`, `use::`, `skill::`, `type::`. Estudiar el mazo padre lo mezcla todo, que es lo eficaz; las etiquetas permiten sesiones filtradas.
+- Mazo `🐉 Chino práctico`. **Subdecks por tema**, numerados por orden de aprendizaje (`🐉 Chino práctico::02 Presentarse`), decididos por el agente [pendiente, fase 2; hoy hay un subdeck por mes, `::2026-09`]. **Etiquetas** para lo que admite varios valores: `nivel::`, `mes::`, `use::`, `skill::`, `type::`. Estudiar el mazo padre lo mezcla todo (lo nuevo y lo antiguo, cuando Anki lo decide), que es como YAGO quiere estudiar; los temas organizan, no separan el estudio. En cada lote el agente revisa si la estructura de temas sigue sirviendo y la reorganiza si hace falta.
 - **`push`**: compila, abre Anki si hace falta, importa por AnkiConnect (complemento `2055492159`) y sincroniza con AnkiWeb. Anki no mueve tarjetas de deck al reimportar: `push` las recoloca con AnkiConnect conservando el progreso [pendiente, fase 2]. Detecta notas del mazo cuyo ejercicio ya no existe y propone borrarlas, mostrando cuáles.
 - **Orden de nuevas**: las tarjetas de una misma entrada no se introducen el mismo día (Anki solo separa hermanas de una misma nota y aquí cada tarjeta es una nota); los básicos primero.
-- **Límites**: 15 nuevas al día y 200 repasos como máximo, fijados por `push` en el mazo padre. A ritmo estable los repasos diarios son del orden de 7 a 10 veces las nuevas; `use` mantiene el total asumible hacia C1.
+- **Límites**: 30 nuevas al día y 300 repasos como máximo (elegido por YAGO el 2026-09-26: 15 se le quedaba corto), fijados por `push` en un preset propio. A ritmo estable los repasos diarios son del orden de 5 a 8 veces las nuevas (proporcional, no geométrico: a unos 10 s por tarjeta, 30 nuevas son unos 40 minutos al día); `use` mantiene el total asumible hacia C1. Cambiarlo es cambiar `NEW_PER_DAY` en `anki.py`: un cambio a mano en Anki se pierde en el siguiente `push`.
 - **GUID** = `guid_for("apkg-chinese-structs", id del ejercicio)`; IDs de modelo fijos en `anki.py`. Reimportar actualiza sin duplicar (comprobado el 2026-09-25); la conservación del historial tras repasar está por comprobar.
 - **Nunca se corrige dentro de Anki**: cada `push` sobrescribe desde `3-data/`.
 - Los otros mazos de la colección de YAGO son independientes (regla en `AGENTS.md`).
 
 ## Audio
 
-- Azure Speech por REST, voz `zh-CN-YunyangNeural` (clara y estable, elegida por YAGO), velocidad -30 %. Caché por **texto chino exacto** en `3-data/audio/index.yaml`: editar consigna, significado o comentarios no regenera nada; cambiar el hanzi de una respuesta o frase sí (solo si estaba mal). Un texto se genera una vez y se reutiliza.
+- Azure Speech por REST, voz `zh-CN-YunyangNeural` (clara y estable, elegida por YAGO), velocidad -30 % en frases y -40 % en palabras sueltas (hasta 3 hanzi), con 200 ms de silencio inicial porque algunos reproductores cortan el primer instante (上午 se oía «shòu»). Caché por **texto chino exacto** en `3-data/audio/index.yaml`: editar consigna, significado o comentarios no regenera nada; cambiar el hanzi de una respuesta o frase sí (solo si estaba mal). Un texto se genera una vez y se reutiliza.
 - El audio de una frase solo vale para esa frase exacta: pocas frases útiles y estables, reutilizadas como ejemplo, mejor que variantes casi iguales.
 - **Licencia**: según los Product Terms de Microsoft (citados en su Q&A), solo el nivel de pago da derecho de uso del audio generado; el F0 actual es de evaluación. Hasta regenerar en **S0** (coste del orden de céntimos), los MP3 quedan fuera de git y el mazo no se comparte. Al publicar, indicar que el audio es sintético.
 - Voces HD descartadas por ahora: más naturales pero menos estables para fijar tonos; se reconsiderarán para frases de escucha largas.

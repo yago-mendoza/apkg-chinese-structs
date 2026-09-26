@@ -53,11 +53,13 @@ AUDIO_PREFIX = "acs_"
 MODEL_TYPED_NAME = "Chino práctico (tecleada)"
 MODEL_SELF_NAME = "Chino práctico (autoevaluación)"
 DECK_PRESET = "🐉 Chino práctico"          # preset propio: nunca tocar el de otros mazos
-NEW_PER_DAY, REVIEWS_PER_DAY = 15, 200
+NEW_PER_DAY, REVIEWS_PER_DAY = 30, 300
 
 AZURE_VOICE = os.environ.get("AZURE_SPEECH_VOICE", "zh-CN-YunyangNeural")
-# Más despacio que lo normal: más claro para aprender tonos.
+# Más despacio que lo normal: más claro para aprender tonos. Las palabras sueltas, aún más.
 AZURE_RATE = "-30%"
+AZURE_RATE_WORD = "-40%"
+AZURE_LEAD_MS = 200        # silencio inicial: algunos reproductores cortan el primer instante
 AZURE_FORMAT = "audio-24khz-96kbitrate-mono-mp3"
 
 TONE_MARKS = {
@@ -167,6 +169,22 @@ def tone_traps(hanzi, reading):
     if any(c in "不一" and i + 1 < len(tones) for i, c in enumerate(chars)):
         traps.add("不/一")
     return traps          # el erhua (哪儿 nǎr) lo trata la pista de pronunciación, no la tarjeta de dígitos
+
+
+def ipa(hanzi, reading):
+    """Transcripción fonética (AFI) del tono de cita, calculada del pinyin. Vacía si no alinea."""
+    syl = syllable_tones(hanzi, reading)
+    if not syl:
+        return ""
+    parts = [f"{s}{t}" for s, t in syl if t != "erhua"]
+    try:
+        from dragonmapper.transcriptions import pinyin_to_ipa
+        out = pinyin_to_ipa(" ".join(parts))
+    except Exception:
+        return ""
+    if any(t == "erhua" for _, t in syl):                  # 哪儿: la ɻ va dentro de la sílaba, antes del tono
+        out = re.sub(r"([˥˦˧˨˩]+)$", r"ɻ\1", out, count=1) if re.search(r"[˥˦˧˨˩]$", out) else out + "ɻ"
+    return out
 
 
 def strip_tones(text):
@@ -511,7 +529,9 @@ def cmd_guide():
             for e in words:
                 meaning = (e.get("meaning") or {}).get("es", "")
                 notes = " · ".join(c["text"] for c in e.get("comments", []) if c.get("private", True) is False)
-                out.append(f"- {mark(e, e['id'] in targeted)} {e['hanzi']} {e.get('pinyin', '')} · {meaning}"
+                phon = ipa(e.get("hanzi"), e.get("pinyin")) if e.get("kind") in ("word", "expression") else ""
+                out.append(f"- {mark(e, e['id'] in targeted)} {e['hanzi']} {e.get('pinyin', '')}"
+                           + (f" [{phon}]" if phon else "") + f" · {meaning}"
                            + (f" · {notes}" if notes else ""))
             out.append("")
         for g in (e for e in items if e.get("kind") == "group"):
@@ -742,14 +762,20 @@ def cmd_check(require_audio):
 
 # ---------------------------------------------------------------- audio
 
+def audio_rate(text):
+    """Palabra suelta (hasta 3 hanzi, sin puntuación): más lenta. Frases: velocidad general."""
+    hanzi = [c for c in text if "一" <= c <= "鿿"]
+    return AZURE_RATE_WORD if len(hanzi) == len(text) and len(hanzi) <= 3 else AZURE_RATE
+
+
 def audio_key(text, voice):
-    raw = json.dumps([text, voice, AZURE_RATE, AZURE_FORMAT], ensure_ascii=False, sort_keys=True)
+    raw = json.dumps([text, voice, audio_rate(text), AZURE_LEAD_MS, AZURE_FORMAT], ensure_ascii=False, sort_keys=True)
     return AUDIO_PREFIX + hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16] + ".mp3"
 
 
 def azure_tts(text, voice, key, region):
-    ssml = (f"<speak version='1.0' xml:lang='zh-CN'><voice name='{voice}'>"
-            f"<prosody rate='{AZURE_RATE}'>{html.escape(text)}</prosody></voice></speak>")
+    ssml = (f"<speak version='1.0' xml:lang='zh-CN'><voice name='{voice}'><break time='{AZURE_LEAD_MS}ms'/>"
+            f"<prosody rate='{audio_rate(text)}'>{html.escape(text)}</prosody></voice></speak>")
     req = urllib.request.Request(
         f"https://{region}.tts.speech.microsoft.com/cognitiveservices/v1",
         data=ssml.encode("utf-8"),
@@ -780,7 +806,8 @@ def cmd_audio(dry_run):
         path = MEDIA / name
         if not path.exists():
             path.write_bytes(azure_tts(t, AZURE_VOICE, key, region))
-        manifest[t] = {"file": name, "provider": "Azure Speech", "voice": AZURE_VOICE, "rate": AZURE_RATE,
+        manifest[t] = {"file": name, "provider": "Azure Speech", "voice": AZURE_VOICE, "rate": audio_rate(t),
+                       "lead_ms": AZURE_LEAD_MS,
                        "date": datetime.date.today().isoformat()}
         save_manifest(manifest)
         print(f"  ✓ {t} → {name}")
@@ -811,6 +838,8 @@ CSS = """
           border: 1px solid #999; border-radius: 6px; background: transparent; color: inherit; }
 #acs-result { font-size: 20px; margin-bottom: 8px; }
 .acs-ok { color: #2e7d32; } .acs-bad { color: #c62828; }
+.legend { font-size: 13px; opacity: .7; margin-top: 10px; }
+.ipa { font-size: 15px; opacity: .6; margin-top: 2px; }
 """
 # Los colores solo alinean segmentos hanzi↔pinyin; los tonos se leen por sus marcas.
 
@@ -913,6 +942,9 @@ def build_note(ex, eby, sby, manifest, media_files, models):
         front = f'<div class="hanzi">{esc(prompt["hanzi"])}</div>'
     if prompt.get("pinyin"):
         front += f'<div class="pinyin">{esc(prompt["pinyin"])}</div>'
+    if ex["type"] == "tones":
+        front += ('<div class="legend">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · '
+                  '5 a neutro, corto</div>')
     prompt_audio = sound(spoken, manifest, media_files) if prompt.get("audio") else ""
     if prompt.get("audio") and not prompt_audio:
         # Solo ocurre con --allow-missing-audio: que la tarjeta no parezca rota.
@@ -923,6 +955,9 @@ def build_note(ex, eby, sby, manifest, media_files, models):
         meaning = sent.get("translation", {}).get(lang) if ex["type"] == "cloze" else ans.get("meaning")
     else:
         back = f'<div class="hanzi">{esc(ans.get("hanzi", ""))}</div><div class="pinyin">{esc(ans.get("pinyin", ""))}</div>'
+        phon = ipa(ans.get("hanzi"), ans.get("pinyin"))
+        if phon:
+            back += f'<div class="ipa">[{esc(phon)}]</div>'
         meaning = ans.get("meaning")
     if meaning:
         back += f'<div class="meaning">{esc(meaning)}</div>'
@@ -947,8 +982,9 @@ def build_note(ex, eby, sby, manifest, media_files, models):
     for rid in ex.get("refs", []):
         p = eby.get(rid, {})
         if p.get("kind") == "pronunciation":
-            notes.append(f"<h4>{esc(p.get('title'))}</h4>{esc(p.get('explanation'))} "
-                         f"{sound(p.get('audio_text'), manifest, media_files)}")
+            example = (f"<div>Ejemplo del fenómeno: {esc(p.get('audio_text'))} "
+                       f"{sound(p.get('audio_text'), manifest, media_files)}</div>") if p.get("audio_text") else ""
+            notes.append(f"<h4>{esc(p.get('title'))}</h4>{esc(p.get('explanation'))}{example}")
     for sid in ex.get("reveal", []):
         s = sby.get(sid)
         if s:
@@ -958,7 +994,8 @@ def build_note(ex, eby, sby, manifest, media_files, models):
     comments = list(ex.get("comments", []))
     for tid in ex.get("targets", []):
         comments += eby.get(tid, {}).get("comments", [])
-    labels = {"mnemonic": "Mnemotecnia", "teacher": "Profesora", "linguistic": "Nota", "note": "Apunte"}
+    labels = {"mnemonic": "Mnemotecnia", "teacher": "Profesora", "linguistic": "Nota", "note": "Apunte",
+              "sound": "Cómo suena"}
     for c in comments:
         if c.get("private", True) is False:
             notes.append(f"<h4>{labels.get(c.get('kind'), 'Comentario')}</h4>{esc(c.get('text'))}")
