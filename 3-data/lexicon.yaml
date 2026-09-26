@@ -170,6 +170,20 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
 
+  - id: g.day-parts
+    kind: group
+    basis: set
+    theme: tiempo
+    title: Partes del día
+    explanation: Con 午 «mediodía» se forman las tres del centro (上 antes, 中 en, 下 después); la noche va aparte.
+    members:
+      - {ref: w.shangwu, cue: '上 «arriba, antes» + 午'}
+      - {ref: w.zhongwu, cue: '中 «en medio» + 午'}
+      - {ref: w.xiawu, cue: '下 «abajo, después» + 午'}
+      - {ref: w.wanshang, cue: '晚 «tarde, noche»; sin 午'}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    comments: []
+
   - id: p.third-tone-sandhi
     use: say
     theme: sonidos
@@ -1220,8 +1234,8 @@ entries:
     theme: sonidos
     kind: pronunciation
     title: 'b/p, d/t, g/k: aire, no voz'
-    explanation: 'La diferencia no es sonora/sorda como en español: b, d y g van sin aire; p, t y k llevan un soplo. 爸 bà, sin
-      aire; 朋 péng, con aire.'
+    explanation: 'La diferencia no es sonora/sorda como en español: b, d y g van sin aire [p t k]; p, t y k llevan
+      un soplo [pʰ tʰ kʰ]. 爸 bà [pa˥˩], sin aire; 朋 péng [pʰɤŋ˧˥], con aire.'
     audio_text: 爸爸，朋友
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments:
@@ -1231,8 +1245,9 @@ entries:
     theme: sonidos
     kind: pronunciation
     title: j q x frente a zh ch sh r
-    explanation: 'j, q, x: lengua plana, con la punta abajo, detrás de los dientes (学 xué). zh, ch, sh, r: punta de la lengua
-      curvada hacia arriba (生 shēng). En la escritura no se confunden: j, q, x solo van delante de i o ü.'
+    explanation: 'j, q, x [tɕ tɕʰ ɕ]: lengua plana, con la punta abajo, detrás de los dientes (学 xué [ɕɥœ˧˥]). zh, ch,
+      sh, r [ʈʂ ʈʂʰ ʂ ʐ]: punta de la lengua curvada hacia arriba (生 shēng [ʂɤŋ˥]). En la escritura no se confunden:
+      j, q, x solo van delante de i o ü.'
     audio_text: 学生
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments:

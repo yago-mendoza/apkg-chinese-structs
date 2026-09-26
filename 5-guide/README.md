@@ -11,7 +11,7 @@ Todo lo aprendido, por temas. ✅ aprender · 🟡 reconocer · ❌ descartado �
 - [Familia](05-familia.md) · 6 entradas, 2 frases
 - [Describir](06-describir.md) · 12 entradas, 3 frases
 - [Compras](07-compras.md) · 12 entradas, 4 frases
-- [Momentos del día](08-tiempo.md) · 7 entradas, 2 frases
+- [Momentos del día](08-tiempo.md) · 8 entradas, 2 frases
 - [Números](09-numeros.md) · 1 entradas, 0 frases
 - [Cosas y actividades](10-cosas.md) · 9 entradas, 1 frases
 - [Caracteres y componentes](11-escritura.md) · 10 entradas, 0 frases

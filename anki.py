@@ -264,6 +264,73 @@ def exercise_roles(ex, sentences_by_id, entries_by_id=None):
     return roles
 
 
+# ---------------------------------------------------------------- trampas fonéticas
+#
+# Letras del pinyin que un hispanohablante lee mal. Se detectan en cada sílaba y se muestran solas
+# en las tarjetas de pronunciar o reconocer por el oído (escucha, voz alta, tonos), como mucho
+# PHONETIC_MAX por tarjeta, de más a menos engañosa. Las pistas propias de YAGO van aparte, como
+# comentario `sound`.
+
+PHONETIC_MAX = 3
+INITIAL = re.compile(r"^(zh|ch|sh|[bpmfdtnlgkhjqxrzcsyw])?(.*)$")
+PHONETIC_TRAPS = [  # (clave, condición sobre (inicial, final), texto)
+    ("i-muda-retro", lambda i, f: i in ("zh", "ch", "sh", "r") and f == "i",
+     "{s}: la i no suena i; se alarga la consonante, con la lengua curvada [{ipa}]"),
+    ("i-muda-dental", lambda i, f: i in ("z", "c", "s") and f == "i",
+     "{s}: la i no suena i; es un zumbido tras la consonante [{ipa}]"),
+    ("u-es-ü", lambda i, f: i in ("j", "q", "x", "y") and f.startswith("u"),
+     "{s}: tras j, q, x o y la u es una ü: labios de u y lengua de i [{ipa}]"),
+    ("ü", lambda i, f: "ü" in f, "{s}: ü, labios de u y lengua de i [{ipa}]"),
+    ("x", lambda i, f: i == "x", "{s}: x suena casi como una sh suave, con la lengua plana y sonriendo [{ipa}]"),
+    ("q", lambda i, f: i == "q", "{s}: q es una ch con soplo de aire y la lengua plana, no una k [{ipa}]"),
+    ("j", lambda i, f: i == "j", "{s}: j es una ch suave con la lengua plana, no una jota [{ipa}]"),
+    ("r", lambda i, f: i == "r", "{s}: r, entre la r inglesa y la y porteña; nunca vibra [{ipa}]"),
+    ("zh-ch-sh", lambda i, f: i in ("zh", "ch", "sh"), "{s}: {i} con la punta de la lengua curvada hacia atrás [{ipa}]"),
+    ("z-c", lambda i, f: i in ("z", "c"), "{s}: {i} suena ts{aire}, como en «pizza» [{ipa}]"),
+    ("e-no-española", lambda i, f: f in ("e", "eng") and i not in ("y",),
+     "{s}: esta e no es española: suena hacia atrás, casi como una o sin redondear [{ipa}]"),
+    ("en", lambda i, f: f == "en", "{s}: en suena con una e muy breve, casi «ən» [{ipa}]"),
+    ("ian", lambda i, f: f in ("ian", "yan") or (i == "y" and f == "an"), "{s}: -ian suena «ien», no «ian» [{ipa}]"),
+    ("ui", lambda i, f: f == "ui", "{s}: -ui se lee «uei» [{ipa}]"),
+    ("iu", lambda i, f: f == "iu", "{s}: -iu se lee «iou» [{ipa}]"),
+    ("un", lambda i, f: f == "un" and i not in ("j", "q", "x", "y"), "{s}: -un se lee «uen» [{ipa}]"),
+    ("ong", lambda i, f: f in ("ong", "iong"), "{s}: -ong suena «ung» [{ipa}]"),
+    ("h", lambda i, f: i == "h", "{s}: h es una jota suave, rasposa [{ipa}]"),
+    ("b-d-g", lambda i, f: i in ("b", "d", "g"), "{s}: {i} sin aire, casi una {sorda} española [{ipa}]"),
+    ("p-t-k", lambda i, f: i in ("p", "t", "k"), "{s}: {i} con un soplo de aire claro [{ipa}]"),
+]
+SORDA = {"b": "p", "d": "t", "g": "k"}
+
+
+def phonetic_notes(hanzi, reading):
+    """Trampas fonéticas de una palabra o frase, sin repetir regla y en orden de importancia."""
+    syl = syllable_tones(hanzi, reading)
+    if not syl:
+        return []
+    found = {}
+    for bare, tone in syl:
+        if tone == "erhua":
+            continue
+        i, f = INITIAL.match(bare).groups()
+        i = i or ""
+        for n, (key, cond, text) in enumerate(PHONETIC_TRAPS):
+            if key not in found and cond(i, f):
+                marked = numeric_to_marked(f"{bare}{tone}")
+                try:
+                    from dragonmapper.transcriptions import pinyin_to_ipa
+                    phon = pinyin_to_ipa(f"{bare}{tone}")
+                except Exception:
+                    phon = ""
+                found[key] = (n, bare, text.format(s=marked, i=i, ipa=phon, sorda=SORDA.get(i, ""),
+                                                   aire=" con aire" if i == "c" else "").replace(" []", ""))
+    # Primero una nota por sílaba distinta (la más engañosa de cada una); luego el resto.
+    ranked, used, rest = [], set(), []
+    for n, bare, t in sorted(found.values()):
+        (rest if bare in used else ranked).append(t)
+        used.add(bare)
+    return (ranked + rest)[:PHONETIC_MAX]
+
+
 # ---------------------------------------------------------------- cobertura
 #
 # Cada entrada y frase declara `use`: para qué la necesita YAGO. Escalera read ⊂ hear ⊂ say, o
@@ -624,8 +691,8 @@ def validate(entries, sentences, exercises, require_audio=True):
             warnings.append(f"{e['id']}: no se usa solo y no hay ninguna palabra registrada que lo contenga")
         if e.get("kind") == "group":
             members = e.get("members") or []
-            if e.get("basis") not in ("visual", "homophone", "pattern"):
-                errors.append(f"{e['id']}: basis debe ser visual, homophone o pattern")
+            if e.get("basis") not in ("visual", "homophone", "pattern", "set"):
+                errors.append(f"{e['id']}: basis debe ser visual, homophone, pattern o set")
             if len(members) < 2:
                 errors.append(f"{e['id']}: un grupo necesita al menos 2 miembros")
             if e.get("basis") in ("visual", "homophone") and len(members) > 4:
@@ -840,6 +907,8 @@ CSS = """
 .acs-ok { color: #2e7d32; } .acs-bad { color: #c62828; }
 .legend { font-size: 13px; opacity: .7; margin-top: 10px; }
 .ipa { font-size: 15px; opacity: .6; margin-top: 2px; }
+.is-target { font-weight: bold; }
+.is-target::before { content: '▸ '; }
 """
 # Los colores solo alinean segmentos hanzi↔pinyin; los tonos se leen por sus marcas.
 
@@ -967,12 +1036,23 @@ def build_note(ex, eby, sby, manifest, media_files, models):
     notes = []
     if ex.get("explanation"):
         notes.append(f"<h4>Explicación</h4>{esc(ex['explanation'])}")
-    if group:
+    # Grupos: el del ejercicio y los de sus objetivos (se recuerda mejor por contraste). Si un objetivo
+    # está en un conjunto (set) y en un patrón, basta el conjunto.
+    shown_groups = [group] if group else []
+    for tid in ex.get("targets", []):
+        member_of = [g for g in eby.values() if g.get("kind") == "group"
+                     and any(m.get("ref") == tid for m in g.get("members", []))]
+        if any(g.get("basis") == "set" for g in member_of):
+            member_of = [g for g in member_of if g.get("basis") != "pattern"]
+        shown_groups += [g for g in member_of if g not in shown_groups]
+    targets = set(ex.get("targets", []))
+    for g in shown_groups:
         rows = "".join(
-            f"<div>{esc(eby[m['ref']].get('hanzi'))} {esc(eby[m['ref']].get('pinyin'))} — "
-            f"{esc(eby[m['ref']].get('meaning', {}).get(lang))} · {esc(m.get('cue'))}</div>"
-            for m in group["members"])
-        notes.append(f"<h4>{esc(group.get('title'))}</h4>{esc(group.get('explanation'))}{rows}")
+            f"<div{' class=\"is-target\"' if m['ref'] in targets else ''}>{esc(eby[m['ref']].get('hanzi'))} "
+            f"{esc(eby[m['ref']].get('pinyin'))} — {esc(eby[m['ref']].get('meaning', {}).get(lang))} · "
+            f"{esc(m.get('cue'))}</div>"
+            for m in g["members"])
+        notes.append(f"<h4>{esc(g.get('title'))}</h4>{esc(g.get('explanation'))}{rows}")
     for tid in ex.get("targets", []):
         t = eby.get(tid, {})
         if standalone(t) in ("no", "rare"):
@@ -985,6 +1065,14 @@ def build_note(ex, eby, sby, manifest, media_files, models):
             example = (f"<div>Ejemplo del fenómeno: {esc(p.get('audio_text'))} "
                        f"{sound(p.get('audio_text'), manifest, media_files)}</div>") if p.get("audio_text") else ""
             notes.append(f"<h4>{esc(p.get('title'))}</h4>{esc(p.get('explanation'))}{example}")
+    # Trampas fonéticas en las tarjetas de pronunciar o reconocer por el oído.
+    if ex["type"] in ("listen", "speak", "tones"):
+        spoken_text = sentence_text(sent) if sent else ans.get("hanzi")
+        spoken_pinyin = " ".join(seg["pinyin"] for seg in sent["segments"] if seg.get("pinyin")) if sent \
+            else ans.get("pinyin")
+        traps = phonetic_notes(spoken_text, spoken_pinyin) if spoken_text and spoken_pinyin else []
+        if traps:
+            notes.append("<h4>Pronunciación</h4>" + "".join(f"<div>{esc(t)}</div>" for t in traps))
     for sid in ex.get("reveal", []):
         s = sby.get(sid)
         if s:

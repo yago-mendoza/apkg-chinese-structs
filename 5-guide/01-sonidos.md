@@ -27,12 +27,12 @@ Sílaba corta y ligera, sin contorno propio; su altura depende de la sílaba ant
 
 ## b/p, d/t, g/k: aire, no voz
 
-La diferencia no es sonora/sorda como en español: b, d y g van sin aire; p, t y k llevan un soplo. 爸 bà, sin aire; 朋 péng, con aire.
+La diferencia no es sonora/sorda como en español: b, d y g van sin aire [p t k]; p, t y k llevan un soplo [pʰ tʰ kʰ]. 爸 bà [pa˥˩], sin aire; 朋 péng [pʰɤŋ˧˥], con aire.
 
 - use paper to practice!
 
 ## j q x frente a zh ch sh r
 
-j, q, x: lengua plana, con la punta abajo, detrás de los dientes (学 xué). zh, ch, sh, r: punta de la lengua curvada hacia arriba (生 shēng). En la escritura no se confunden: j, q, x solo van delante de i o ü.
+j, q, x [tɕ tɕʰ ɕ]: lengua plana, con la punta abajo, detrás de los dientes (学 xué [ɕɥœ˧˥]). zh, ch, sh, r [ʈʂ ʈʂʰ ʂ ʐ]: punta de la lengua curvada hacia arriba (生 shēng [ʂɤŋ˥]). En la escritura no se confunden: j, q, x solo van delante de i o ü.
 
 - No se maltratan porque no comparten finales

@@ -45,7 +45,7 @@ Mapa completo y convenciones de nombres: `README.md`.
 
 - **IDs** con prefijo de tipo (`w.` palabra, `e.` expresión, `c.` carácter o componente, `p.` pronunciación, `g.` grupo, `s.` frase, `x.` ejercicio). Nunca se reutilizan ni se cambian; no usar solo el hanzi. Corregir conserva el ID; cambiar lo que pregunta una tarjeta exige ID nuevo.
 - **Una entrada por sentido y lectura** (行 háng / xíng). `standalone: yes | rare | no` es del sentido: si no se usa solo, `check` exige alguna palabra registrada que lo contenga.
-- **Grupos** (`kind: group`): `basis: visual | homophone | pattern`, miembros con `cue` (rasgo distintivo). Máximo 4 en contraste. Se crean cuando YAGO ya conoce un miembro o los ha confundido, nunca por adelantado. Tarjetas: `contrast` (una por miembro) y `derive` (de un miembro del patrón a otro).
+- **Grupos** (`kind: group`): `basis: visual | homophone | pattern | set` (set: serie de significado, como las partes del día), miembros con `cue` (rasgo distintivo). Máximo 4 en contraste. Toda tarjeta cuyo objetivo es miembro de un grupo muestra el grupo en el reverso con el objetivo marcado (si está en un set y en un pattern, basta el set). Se crean cuando YAGO ya conoce un miembro o los ha confundido, nunca por adelantado. Tarjetas: `contrast` (una por miembro) y `derive` (de un miembro del patrón a otro).
 - **Frases** segmentadas con `ref` a las entradas; una frase se guarda una vez y se reutiliza. Un segmento puede declarar `sandhi` cuando su pinyin escrito es el realizado (不 → bú).
 - **Ejercicios** separan `targets` (lo evaluado), `context` (visible en la pregunta) y `reveal` (ejemplos al revelar). La cobertura se cuenta por `targets`, nunca buscando subcadenas.
 - **Procedencia**: `source: {origin, batch, file, date}`; `added` en cada ejercicio.
@@ -111,6 +111,7 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 - **Audio**: escucha, tonos y pronunciación lo llevan delante; lectura, producción y deducción, tras revelar; el contraste visual y los componentes no llevan (se deciden por la forma); el de homófonos sí. Frases de ejemplo y entradas `p.`, siempre.
 - **AFI** (transcripción fonética del tono de cita) en el reverso de palabras y en `5-guide/`, calculada del pinyin con dragonmapper al compilar; nunca se guarda en `3-data/`. No refleja el sandhi: eso lo explican las entradas `p.`. Las pistas propias de YAGO van como comentario `sound` y aparecen en tarjetas, guía y digest.
 - **Tarjetas de tonos**: llevan el recordatorio de qué número es cada tono.
+- **Trampas fonéticas**: reglas en `anki.py` (`PHONETIC_TRAPS`) detectan en el pinyin lo que un hispanohablante lee mal (x, q, j, r, zh/ch/sh, z/c, ü, i muda, e no española, -ian, -ui, -iu, -un, -ong, h, aspiración) y lo muestran solas en las tarjetas de escucha, voz alta y tonos, como mucho 3 por tarjeta. Una regla nueva se añade a la tabla, nunca como nota suelta en una palabra. Notas a mano solo para las pistas de YAGO (`sound`) y las entradas `p.`.
 - **Pinyin** siempre visible en las soluciones. Colores solo para alinear hanzi y pinyin, nunca para marcar tonos. No se promete corregir el habla: `speak` es autoevaluación.
 
 ## Anki

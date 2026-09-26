@@ -19,6 +19,15 @@
 - 中午 zhōngwǔ · 中 en el mediodía
 - 下午 xiàwǔ · 下 después del mediodía
 
+## Partes del día
+
+Con 午 «mediodía» se forman las tres del centro (上 antes, 中 en, 下 después); la noche va aparte.
+
+- 上午 shàngwǔ · 上 «arriba, antes» + 午
+- 中午 zhōngwǔ · 中 «en medio» + 午
+- 下午 xiàwǔ · 下 «abajo, después» + 午
+- 晚上 wǎnshang · 晚 «tarde, noche»; sin 午
+
 ## Frases
 
 - ✅🃏 明天见！ · míngtiān jiàn · ¡Hasta mañana!
