@@ -159,6 +159,7 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 - Fuera de git: `1-inbox/` (salvo su README), `6-output/` y el entorno. `2-raw/` se versiona (decisión de YAGO, 2026-09-27): los apuntes no son privados. Antes de archivar un lote en `2-raw/`, revisar que no haya datos sensibles (claves, correos, teléfonos).
 - Commits cuando YAGO lo pida; push a GitHub solo cuando lo pida.
 - Fuentes externas: HSK 3.0 de `drkameleon/complete-hsk-vocabulary` (MIT; se puede versionar con su aviso de licencia; solo nivel y pinyin, no sus glosas CC-CEDICT). Dong Chinese y SUBTLEX-CH: condiciones sin aclarar, solo en local. No elegir licencia de publicación por YAGO.
+- Licencia (elegida por YAGO, 2026-09-27): MIT para el código, CC BY 4.0 para el contenido; cita obligatoria, uso comercial permitido. Lo que entre de terceros tiene que ser compatible con CC BY.
 - Futuro (sin fecha): exportación `dictionary.json` para InfraPhysics desde `3-data/`, por lista explícita de campos publicables.
 
 ## Estado y fases

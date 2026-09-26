@@ -1,6 +1,8 @@
 # Chino práctico — mazo de Anki
 
-Mazo personal de mandarín cotidiano: pinyin, tonos y audio. YAGO aporta apuntes; un agente (LLM) los convierte en tarjetas; `anki.py` las comprueba, genera el audio y las mete en Anki.
+Un sistema para convertir apuntes de clase de mandarín en un mazo de Anki con pinyin, tonos, audio y pronunciación. Dejas tus apuntes en bruto; un agente de código (LLM) los convierte en tarjetas siguiendo una especificación; `anki.py` comprueba el resultado, genera el audio y lo mete en Anki.
+
+El repositorio trae como ejemplo real el mazo de Yago Mendoza, construido con sus apuntes. Se puede usar tal cual o vaciar para trabajar con los tuyos.
 
 ## Aprendizaje activo, no solo tarjetas generadas
 
@@ -8,14 +10,34 @@ Generar tarjetas es la parte fácil. Lo que hace útil este sistema es que el ag
 
 - **Deberes después de cada lote.** `1-inbox/gaps-<lote>.md` lista lo que falta y por qué: palabras que quieres decir y aún no aparecen en ninguna frase, lo pendiente de los apuntes y lo que conviene comprobar en el cuaderno. Se edita ahí mismo y vuelve como entrada del siguiente lote. El agente pide frases reales en vez de inventarlas.
 - **Filtrar, no acumular.** Cada digest clasifica lo aprendido en ✅ aprender, 🟡 reconocer y ❌ tachar (literario, arcaico, en desuso), para tachar en los apuntes a mano lo que no merece esfuerzo, y corrige con ⚠️ las glosas mal leídas.
-- **Recordar, no releer.** Las tarjetas piden producir: escribir el pinyin o los hanzi, marcar los tonos con dígitos, decir frases en voz alta y compararlas con el audio. Reconocer no basta: cada palabra tiene las tarjetas que exige para qué la necesitas (leer, entender al oír, decir).
+- **Recordar, no releer.** Las tarjetas piden producir: escribir el pinyin o los hanzi, marcar los tonos con dígitos, decir frases en voz alta y compararlas con el audio. Cada palabra tiene las tarjetas que exige para qué la necesitas (leer, entender al oír, decir).
 - **Contraste y contexto.** Las palabras que se confunden (他/她/它, 生/牛/午) o que forman serie (上午/中午/下午/晚上) aparecen juntas al dar la vuelta, y las palabras que quieres decir tienen que aparecer en frases.
 - **Pronunciación explícita.** Transcripción fonética, trampas del pinyin para hispanohablantes y reglas de sandhi en las tarjetas donde toca pronunciar o reconocer de oído.
 - **Reglas que no dependen del modelo.** Qué tarjetas faltan, qué sobra y qué falta por practicar lo calcula `anki.py` a partir de una especificación (`docs/design.md`). El modelo redacta; el código comprueba. Un modelo mejor mejora el mazo sin cambiar el sistema.
 
-## Usarlo con tus propios apuntes
+## Uso
 
-El repositorio trae el contenido de YAGO (sus apuntes, su mazo y su audio), pero el sistema es independiente del contenido: el agente, las reglas y `anki.py` sirven para los apuntes de cualquiera.
+1. Deja tus apuntes en bruto en `1-inbox/`: un `.txt` por lote, sin formato.
+2. Abre un agente de código en la carpeta y pídele «procesa el inbox». Edita el mazo, escribe el digest del lote, regenera la guía, te deja los deberes en `1-inbox/` y te dice qué ha cambiado.
+3. Sube el mazo a Anki:
+
+```powershell
+.\.venv\Scripts\python anki.py audio   # genera solo el audio que falta (Azure Speech)
+.\.venv\Scripts\python anki.py push    # compila, abre Anki, importa, ajusta límites y orden, y sincroniza
+```
+
+No corrijas nada dentro de Anki: cada `push` sobrescribe las tarjetas con lo que hay en `3-data/`. Las correcciones se piden al agente.
+
+## Cómo estudiar
+
+- Estudia el mazo padre (**🐉 Chino práctico**): mezcla lo nuevo y lo antiguo de todos los temas.
+- Colores de Anki: 🔵 nuevas · 🟠 aprendiendo (vuelven a los pocos minutos) · 🟢 repasos (lo aprendido otro día que toca recordar). «¡Felicidades!» es que no queda nada por hoy.
+- Ritmo: `push` fija las nuevas y los repasos máximos al día (`NEW_PER_DAY` y `REVIEWS_PER_DAY` en `anki.py`). Los repasos se estabilizan en unas 5–8 veces las nuevas: con 30 nuevas, unos 200 repasos, unos 40 minutos.
+- Respuestas escritas: pinyin con tildes o con números (`ni3 hao3`) o hanzi con un teclado chino; espacios, mayúsculas y puntuación dan igual. En las frases para decir en voz alta, escribir es opcional.
+- Al dar la vuelta: pinyin, transcripción fonética [AFI], audio, trampas de pronunciación y la familia de la palabra si la tiene (la palabra de la tarjeta, marcada ▸).
+- `5-guide/` reúne todo lo aprendido por temas; `4-digests/`, lo que aportó cada lote y qué tachar de los apuntes.
+
+## Usarlo con tus propios apuntes
 
 1. Copia el repositorio (fork o clon).
 2. Vacía el contenido y conserva la estructura:
@@ -23,61 +45,31 @@ El repositorio trae el contenido de YAGO (sus apuntes, su mazo y su audio), pero
    - `3-data/lexicon.yaml`: deja `version`, la lista `themes` (ajústala a tu gusto) y `entries: []`.
    - `3-data/exercises.yaml`: deja `version`, `sentences: []` y `exercises: []`.
 3. En `anki.py`, cambia `DECK_NAME` y `GUID_NAMESPACE` si en tu Anki ya tienes este mazo, para que no se mezclen.
-4. Adapta a ti la sección «Objetivo» de `docs/design.md`: nivel, idioma de apoyo, para qué estudias. Las trampas fonéticas están pensadas para hispanohablantes.
+4. Adapta a ti la sección «Objetivo» de `docs/design.md` (nivel, idioma de apoyo, para qué estudias) y sustituye `docs/owner.md` por tus propias notas. Las trampas fonéticas están pensadas para hispanohablantes.
 5. Configura Azure Speech y Anki (ver «Configuración») y deja tu primer lote en `1-inbox/`.
-6. Abre un agente de código (Claude Code, Codex…) en la carpeta y pídele «procesa el inbox». `AGENTS.md` y `docs/design.md` le dicen todo lo que necesita.
-
-## Uso diario
-
-1. Dejar apuntes en bruto en `1-inbox/`: un `.txt` por lote, sin formato.
-2. Pedir al agente «procesa el inbox». Edita el mazo, escribe un resumen del lote en `4-digests/` y dice qué ha cambiado.
-3. Subir a Anki:
-
-```powershell
-.\.venv\Scripts\python anki.py audio   # genera solo el audio que falta (Azure Speech)
-.\.venv\Scripts\python anki.py push    # compila, abre Anki, importa, ajusta límites y orden, y sincroniza
-```
-
-No se corrige nada dentro de Anki: cada `push` sobrescribe las tarjetas con lo que hay en `3-data/`. Las correcciones se dicen al agente.
-
-## Cómo estudiar
-
-- Pulsar el mazo padre **🐉 Chino práctico**: mezcla lo nuevo y lo antiguo de todos los temas.
-- Colores de Anki: 🔵 nuevas (hoy, como mucho 30) · 🟠 aprendiendo (vuelven a los pocos minutos) · 🟢 repasos (lo aprendido otro día que toca recordar). «¡Felicidades!» es que no queda nada por hoy.
-- Ritmo: 30 nuevas y 300 repasos como máximo al día. Los repasos se estabilizan en unas 5–8 veces las nuevas: con 30, unos 200 al día, unos 40 minutos. Lo fija `push`; para cambiarlo, pedirlo al agente.
-- Respuestas escritas: pinyin con tildes o con números (`ni3 hao3`) o hanzi con el teclado chino; espacios, mayúsculas y puntuación dan igual. En las frases para decir en voz alta, escribir es opcional.
-- Al dar la vuelta: pinyin, transcripción fonética [AFI], audio, trampas de pronunciación y la familia de la palabra si la tiene (la palabra de la tarjeta, marcada ▸).
-- Tras cada lote, `1-inbox/gaps-<lote>.md` dice qué falta (por ejemplo, frases para palabras que quieres decir). Se edita ahí mismo y entra en el siguiente lote.
-- `5-guide/` reúne todo lo aprendido por temas; `4-digests/`, lo que aportó cada lote y qué tachar de los apuntes.
+6. Pide a tu agente «procesa el inbox». `AGENTS.md` y `docs/design.md` le dicen todo lo que necesita.
 
 ## Qué hay en cada sitio
 
-| Ruta | Para quién | Qué es |
-|---|---|---|
-| `1-inbox/` | YAGO escribe, el agente lee | Apuntes en bruto pendientes de procesar, y `gaps-<lote>.md`: lo que falta tras el último lote, editable. |
-| `2-raw/` | Archivo | Apuntes ya procesados, tal cual, en una carpeta por lote (`2-raw/001-2026-09-25-primeras-clases/`). Se versionan (YAGO lo decidió el 2026-09-27). |
-| `3-data/` | Agente mantiene | Fuente de verdad del mazo. |
-| `3-data/lexicon.yaml` | Agente | Diccionario: palabras, caracteres, pronunciación, grupos. |
-| `3-data/exercises.yaml` | Agente | Frases y ejercicios (cada ejercicio es una tarjeta). |
-| `3-data/audio/` | `anki.py` | MP3 generados e `index.yaml` con su procedencia. No regenerar ni borrar. |
-| `4-digests/` | YAGO lee | Un resumen por lote: todo lo de los apuntes, comprimido y clasificado en ✅ aprender, 🟡 reconocer y ❌ tachar. No se edita. |
-| `5-guide/` | YAGO lee | Todo lo aprendido, un archivo por tema, generado desde `3-data/` en cada lote. No se edita. |
-| `6-output/` | YAGO saca | Lo que se genera: `chino-practico.apkg` y, en el futuro, la exportación para InfraPhysics. Se regenera; no editar. |
-| `README.md` | YAGO | Esta página: uso y mapa del repositorio. |
-| `AGENTS.md` | Agente | Reglas de trabajo. Lo primero que lee cualquier agente. |
-| `docs/design.md` | Agente | Diseño canónico: criterios, tipos de tarjeta, decisiones. |
-| `anki.py` | Herramienta | Consulta, validación, audio, compilación e importación. No llama a ningún LLM. |
-| `.env.example` | Referencia | Variables de entorno necesarias (sin valores). |
+| Ruta | Qué es |
+|---|---|
+| `1-inbox/` | Apuntes en bruto pendientes de procesar, y `gaps-<lote>.md`: lo que falta tras el último lote, editable. No se versiona. |
+| `2-raw/` | Apuntes ya procesados, tal cual, en una carpeta por lote. |
+| `3-data/` | Fuente de verdad del mazo, mantenida por el agente: `lexicon.yaml` (diccionario), `exercises.yaml` (frases y tarjetas) y `audio/` (MP3 e `index.yaml` con su procedencia). |
+| `4-digests/` | Un resumen por lote: todo lo de los apuntes, comprimido y clasificado ✅ 🟡 ❌. No se edita. |
+| `5-guide/` | Todo lo aprendido, un archivo por tema, generado desde `3-data/`. No se edita. |
+| `6-output/` | Lo que se genera (`chino-practico.apkg`). No se versiona. |
+| `AGENTS.md` | Reglas para cualquier agente. Lo primero que lee. |
+| `docs/design.md` | Especificación completa: cobertura, tipos de tarjeta, audio, decisiones. |
+| `docs/owner.md` | Notas del dueño de este mazo: su configuración y sus decisiones. |
+| `anki.py` | Consulta, validación, cobertura, audio, compilación e importación. No llama a ningún LLM. |
 
 ## Convenciones
 
-- Carpetas y archivos en inglés, en minúsculas, con guiones: `3-data/`, `docs/design.md`.
-- Las carpetas del flujo llevan el número de su paso: `1-inbox` → `2-raw` → `3-data` → `4-digests` → `5-guide` → `6-output`. Lo que no es flujo (`docs/`, `anki.py`) va sin número.
-- Toda documentación de carpeta se llama `README.md`; las reglas para agentes, `AGENTS.md`.
-- Contenido y documentación en español.
-- Lotes: `NNN-AAAA-MM-DD-tema` (número de orden de procesado, fecha y tema en palabras: `001-2026-09-25-primeras-clases`). Ese nombre lo comparten la carpeta `2-raw/<lote>/` y el digest `4-digests/<lote>.md`. Nunca números de hoja, ni en el nombre ni en el contenido: el digest se organiza por temas.
-- Apuntes del inbox: `AAAA-MM-DD-tema.txt` (por ejemplo, `2026-09-25-clase-1.txt`); cualquier nombre sirve.
-- IDs del diccionario y ejercicios con prefijo de tipo: `w.` palabra, `e.` expresión, `c.` carácter, `p.` pronunciación, `g.` grupo, `s.` frase, `x.` ejercicio. Nunca cambian.
+- Carpetas y archivos en inglés, en minúsculas, con guiones. Las carpetas del flujo llevan el número de su paso: `1-inbox` → `2-raw` → `3-data` → `4-digests` → `5-guide` → `6-output`. Lo que no es flujo (`docs/`, `anki.py`) va sin número.
+- Toda documentación de carpeta se llama `README.md`; las reglas para agentes, `AGENTS.md`. Contenido y documentación en español.
+- Lotes: `NNN-AAAA-MM-DD-tema` (número de orden de procesado, fecha y tema en palabras: `001-2026-09-25-primeras-clases`). Ese nombre lo comparten la carpeta `2-raw/<lote>/` y el digest `4-digests/<lote>.md`. Nunca números de hoja: el digest se organiza por temas.
+- IDs del diccionario y de los ejercicios con prefijo de tipo: `w.` palabra, `e.` expresión, `c.` carácter, `p.` pronunciación, `g.` grupo, `s.` frase, `x.` ejercicio. Nunca cambian.
 
 ## Configuración (una vez)
 
@@ -86,9 +78,16 @@ python -m venv .venv
 .\.venv\Scripts\python -m pip install -r requirements.txt
 ```
 
-- Audio: `AZURE_SPEECH_KEY` y `AZURE_SPEECH_REGION` como variables de entorno del usuario (ver `.env.example`). Recurso de Azure en nivel S0 (de pago, céntimos por lote).
+- Audio: un recurso Azure AI Speech en nivel de pago (S0; céntimos por lote) y `AZURE_SPEECH_KEY` y `AZURE_SPEECH_REGION` como variables de entorno (ver `.env.example`). El nivel gratuito sirve para uso propio, pero su audio no se puede distribuir.
+- Anki desktop con el complemento AnkiConnect (`2055492159`) y sesión iniciada en AnkiWeb para sincronizar con el móvil.
+
+Otros comandos, sobre todo para el agente: `anki.py lookup <término>`, `plan` (qué tarjetas faltan), `gaps` (reparto del mazo), `check`, `guide`, `build`. Opciones de `push`: `--prune` borra del mazo las tarjetas cuyo ejercicio ya no existe (antes las lista); `--reset` devuelve todo el mazo a nuevas, sin progreso (para fases de pruebas).
 
 **El audio es sintético**, generado con Azure AI Speech (voz `zh-CN-YunyangNeural`).
-- Anki desktop con el complemento AnkiConnect (`2055492159`) y sesión iniciada en AnkiWeb para sincronizar.
 
-Otros comandos, sobre todo para el agente: `anki.py lookup <término>`, `plan` (qué tarjetas faltan), `gaps` (reparto del mazo), `check`, `guide`, `build`. Opciones de `push`: `--prune` borra del mazo las tarjetas cuyo ejercicio ya no existe (antes las lista); `--reset` devuelve todo el mazo a nuevas, sin progreso (solo mientras estemos en fase de pruebas).
+## Licencia y cita
+
+- **Código** (`anki.py`): [MIT](LICENSE).
+- **Contenido** (apuntes, datos, digests, guía, audio y documentación): [CC BY 4.0](LICENSE-CONTENT). Se puede usar para cualquier fin, también comercial, **citando al autor**.
+
+Forma de citar: *Yago Mendoza, «apkg-chinese-structs», https://github.com/yago-mendoza/apkg-chinese-structs, CC BY 4.0.*
