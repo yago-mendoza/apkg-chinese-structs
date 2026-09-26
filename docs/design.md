@@ -1,206 +1,163 @@
 # Diseño — chino práctico, pinyin y audio
 
-Documento canónico para agentes. Reúne las decisiones; las propuestas pendientes se identifican expresamente. Para YAGO: `README.md`. Fuente: conversaciones de YAGO con Codex y Claude, desde el 2026-09-25.
+Especificación canónica para agentes. Cada regla se dice una vez, aquí. Para YAGO: `README.md` (uso y mapa de carpetas). Las partes sin implementar llevan **[pendiente]** y su fase (ver «Estado y fases»).
 
-## Funcionamiento de `anki.py` y de las tarjetas
+## Objetivo
 
-- `push` usa el complemento AnkiConnect (código `2055492159`, instalado en `%APPDATA%\Anki2\addons21`). Abre Anki si no está abierto (ruta por defecto o `ANKI_EXE`). La sincronización requiere haber iniciado sesión en AnkiWeb una vez desde Anki; `--no-sync` la omite. Comprobado el 2026-09-25: reimportar no duplica notas. Falta comprobar que se conserva el historial después de repasar.
+Mandarín cotidiano y de trabajo hasta un nivel equivalente a C1, con **mucho énfasis en fluidez y en pronunciación**. YAGO empezó en septiembre de 2026. Nada de vocabulario literario, arcaico o remoto; sí lo necesario para vivir en China, trabajar (es ingeniero) y hablar con algo de personalidad. YAGO estudia en ratos sueltos, casi siempre desde el móvil y siempre con auriculares: el audio está disponible en cualquier sesión.
 
-- `audio` necesita `AZURE_SPEECH_KEY` y `AZURE_SPEECH_REGION` como variables de entorno (ver `.env.example`). Voz por defecto `zh-CN-YunyangNeural`, a velocidad -30 % (elegida por YAGO escuchando muestras, 2026-09-26). `audio --dry-run` lista lo pendiente sin llamar a la API. Los MP3 se guardan en `3-data/audio/` con prefijo `acs_` y su procedencia en `3-data/audio/index.yaml`.
-- `build` se niega a compilar si falta audio requerido. `build --allow-missing-audio` sirve solo para probar importación y visualización antes de tener audio.
-- Tarjetas tecleadas: la respuesta se escribe en pinyin numérico (`he1`, `ni3 hao3`, `5` = neutro) y Anki la compara literalmente. Aceptar también `hē` con diacríticos queda pendiente: la comparación nativa de Anki no normaliza.
-- Tarjetas de tonos (`type: tones`): la respuesta es un dígito por sílaba, sin espacios (什么 → `25`, 谢谢 → `45`). Dos variantes: escuchar el audio, o ver el pinyin sin tonos (`shen me`). `check` reconstruye el pinyin con pypinyin y comprueba que los dígitos equivalen a `answer.pinyin`. Útil para neutros y sandhi: 你好 se oye ní hǎo y se responde `33`.
-- Tarjetas sin `typed` son de autoevaluación (escucha de comprensión, pronunciación).
-- GUID de cada nota = `guid_for("apkg-chinese-structs", id del ejercicio)`; modelos con IDs fijos en `anki.py`. No cambiarlos.
-- Mazo `🐉 Chino práctico`, con un subdeck por mes (`🐉 Chino práctico::2026-09`) según `added` de cada ejercicio. Anki deja cada tarjeta en el deck de su primera importación, así que el mes no se reasigna. Estudiar el mazo padre repasa todos los meses juntos.
-- Redundancia: `check` avisa si dos ejercicios tienen el mismo tipo y los mismos `targets`. Que una entrada reaparezca como contexto o ejemplo en otro mes es deseable y no cuenta.
-- Grupos (`kind: group` en `3-data/lexicon.yaml`): reúnen entradas que conviene estudiar juntas. `basis: visual` (se parecen: 大/太/天), `homophone` (mismo sonido) o `pattern` (misma pieza de formación: 上午/中午/下午, 作者/读者/记者). Cada miembro lleva `cue`: el rasgo que lo distingue o lo que aporta. Máximo 4 en grupos de contraste. Crear un grupo cuando YAGO ya conoce al menos uno de los miembros o los ha confundido, no por adelantado: estudiar a la vez cosas parecidas y desconocidas aumenta la confusión.
-- Tarjetas de grupo: `contrast` (una por miembro: el anverso muestra el grupo en orden barajado estable y pregunta por uno) y `derive` (dado un miembro de un patrón, producir otro). El reverso muestra el grupo completo con sus rasgos.
-- Varios sentidos de un hanzi: una entrada por sentido y una tarjeta por sentido dentro de una palabra (行 en 银行 → háng). No hacer tarjetas de «enumera todos los significados».
-- `standalone: yes | rare | no` indica si **ese sentido** se usa solo como palabra (午 «mediodía»: no; aparece en 上午, 下午). Depende del sentido, no del hanzi: 生 «vida» casi no va solo, 生 «crudo» sí. El reverso lo indica con las palabras registradas que lo contienen; `check` y `gaps` avisan si no hay ninguna.
-- Estado (2026-09-26): 108 entradas, 22 frases, 178 ejercicios, 108 audios, todo sacado de los apuntes de YAGO (el contenido inventado del piloto se retiró). Importado y sincronizado con AnkiWeb. Conservación del historial tras repasar, pendiente.
-- Comentarios: `note` es un apunte literal de YAGO de origen sin precisar (se muestra como «Apunte»); `teacher` solo si consta que lo dijo la profesora.
+## Principio
 
-## Inbox: entrada por lotes
+El modelo redacta; `anki.py` calcula y comprueba. Lo que puede calcularse (qué tarjetas faltan, qué sobra, qué audio falta) lo decide el código a partir de reglas escritas aquí, no el criterio del agente en cada sesión. El agente trabaja sobre la diferencia que el código le da (`plan`) y `check` verifica el resultado. `anki.py` no llama nunca a un LLM; compilar no regenera ejercicios.
 
-`1-inbox/*.txt` son apuntes en bruto de YAGO. Son locales y no se suben (`.gitignore`), porque el repositorio es público. Al procesarlos, el agente (Claude Code en la sesión; `anki.py` no llama a ningún LLM):
+## Flujo de un lote
 
-1. Lee todos los `.txt` pendientes (`gaps` los cuenta). Para cada término: `lookup`, y decide si es nuevo, corrige algo existente o amplía una entrada o grupo.
-2. Algo parecido a lo existente (misma forma, mismo sonido, mismo patrón) se añade a esa entrada, a `relations` o a un grupo. No se crean tarjetas sueltas repetidas. Se aplican las reglas de grupos de «Funcionamiento».
-3. Guarda los comentarios de YAGO literalmente, en su ámbito. No lleva al YAML lo que parezca privado, sino que pregunta. `source` lleva `origin: inbox`, `batch` (el lote), `file` y la fecha.
-4. Equilibra según `gaps`: completa lectura/escucha/producción de lo activo antes de ampliar vocabulario, y no crea ejercicios de relleno.
-5. Pregunta lo ambiguo en vez de adivinar (sentido, lectura, si ya lo sabe).
-6. Escribe `4-digests/<lote>.md` (formato abajo).
-7. `check` sin errores ni avisos pendientes; mueve los `.txt` a `2-raw/<lote>/` (lote = `NNN-AAAA-MM-DD-tema`, numerado por orden de procesado; el mismo nombre que su digest); resume a YAGO lo añadido, lo cambiado y el audio nuevo que se generará.
+Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de orden de procesado, fecha, tema en palabras; nunca números de hoja). El lote solo sirve para llevar la cuenta de la procedencia: dentro del mazo cada cosa va donde le toca por tema y nivel, y un ajuste sobre algo antiguo corrige la entrada antigua.
 
-Digest del lote (`4-digests/`, para YAGO): todo el contenido del lote, no solo lo que entra al mazo, comprimido y agrupado por temas. Una línea por elemento: `汉字 pinyin · significado · pista (relación, mnemotecnia, pronunciación) · ejemplo`. Cada línea lleva una marca:
+1. YAGO deja `.txt` en `1-inbox/` (o los pega en el chat y el agente los guarda allí tal cual).
+2. El agente lee también `1-inbox/gaps-*.md` si existe: es parte del lote.
+3. Para cada elemento: `lookup`; decide si es nuevo, corrige algo o amplía una entrada o grupo. Lo parecido a lo existente (forma, sonido, patrón) va a esa entrada, a `relations` o a un grupo, no a tarjetas sueltas.
+4. Asigna `use` a cada entrada nueva (ver «Cobertura»), con motivo cuando se aparte de las señales de frecuencia.
+5. Guarda los comentarios de YAGO literalmente y en su ámbito (ver «Comentarios»). Lo que parezca privado no va a `3-data/`: se pregunta.
+6. Pregunta lo ambiguo (sentido, lectura, si ya lo sabe) en vez de adivinar. Las transcripciones de fotos hechas por LLM traen errores y `[¿?]`: se marcan con ⚠️ en el digest, nunca se dan por buenas.
+7. `plan` → escribe exactamente las tarjetas que faltan → `check` sin errores ni avisos pendientes.
+8. Escribe `4-digests/<lote>.md`, regenera `5-guide/` y el nuevo `1-inbox/gaps-<lote>.md`.
+9. Mueve los `.txt` y el `gaps-*.md` leído a `2-raw/<lote>/`. `1-inbox/` queda vacío salvo su `README.md` y el nuevo `gaps`.
+10. `audio`, `push`, y resumen a YAGO: añadido, cambiado, tarjetas antiguas tocadas y audio nuevo.
 
-- ✅ aprender: cotidiano, vivir en China, trabajo, o expresivo para hablar con algo de personalidad.
-- 🟡 reconocer: ayuda a leer o a entender; no hace falta producirlo.
-- ❌ tachar: literario, arcaico, en desuso o remoto (YAGO lo tacha en sus apuntes).
-- 🃏 si está en el mazo, ⚠️ si corrige algo de los apuntes.
+**`1-inbox/gaps-<lote>.md`** es lo que falta tras el lote, con el porqué, para que YAGO lo estudie y lo traiga en el siguiente. Empieza con la línea `<!-- Documento editable: escribe encima, tacha, añade dudas. Todo lo que pongas aquí entra en el siguiente lote. -->`. Solo hay uno a la vez; el anterior se archiva con el lote que lo consume.
 
-Se organiza por temas, sin referencias a números de hoja ni de página de los apuntes. Al final: qué entró al mazo y qué ✅ queda pendiente. El digest es histórico: no se reescribe; lo pendiente se retoma en lotes siguientes.
+## Capas y carpetas
 
-No hay registro manual de fechas de edición por tarjeta: Git guarda qué cambió y cuándo, y Anki guarda el historial de repaso. `source.date` indica cuándo entró cada entrada.
-
-## Estabilidad de las tarjetas y del audio
-
-Una tarjeta creada se toca poco: su audio queda generado y no conviene regenerarlo sin motivo.
-
-- El audio se guarda por **texto chino exacto** (`3-data/audio/index.yaml`). Editar consigna, significado, explicación o comentarios no lo regenera. Cambiar el hanzi de una respuesta o frase sí pide audio nuevo: hacerlo solo si estaba mal.
-- Un mismo texto se sonoriza una vez y se reutiliza en todas las tarjetas.
-- El audio de una frase solo vale para esa frase exacta (我是学生。 no sirve para 我是老师。). Preferir pocas frases útiles y estables, reutilizadas como ejemplo en varias tarjetas, antes que variantes casi iguales. Antes de crear una frase, buscar con `lookup` si ya hay una que sirva.
-- El ID de ejercicio no cambia nunca, porque de él depende el progreso en Anki. Ampliar un grupo añade tarjetas nuevas y conserva las anteriores.
-- Audio por tipo (`wants_audio` en `anki.py`): escucha, tonos y pronunciación lo necesitan; lectura, hueco, producción y deducción lo muestran tras revelar; el contraste visual (大/太/天) y los componentes no llevan, porque se deciden por la forma; el contraste de homófonos sí lleva. Las frases de ejemplo y las entradas de pronunciación siempre llevan.
-
-## Propósito y alcance
-
-Aprender mandarín útil para la vida cotidiana desde un nivel inicial —YAGO lleva pocas clases—, con especial atención a leer pinyin, reconocer y producir tonos, escuchar y conversar. Nada de vocabulario literario ni frases raras para rellenar ejercicios. La frecuencia orienta; la utilidad real y las palabras de la profesora también cuentan.
-
-YAGO aporta palabras, frases, dudas y comentarios por chat. El LLM mantiene un diccionario personal estructurado y redacta ejercicios a partir de él. Un programa consulta, comprueba y empaqueta lo guardado. El mismo conocimiento podrá alimentar una sección de diccionario y un mazo descargable en InfraPhysics.
-
-Decisión vigente de YAGO (2026-09-25, sustituye a la de trabajar en Codespaces): el proyecto vive en este ordenador, fuera de Atrio, en `C:\Users\yagom\dev\apkg-chinese-structs`, con Python en un entorno virtual propio. Repositorio: https://github.com/yago-mendoza/apkg-chinese-structs. La generación de audio y la publicación siguen pendientes.
-
-## Dónde vive cada nota
-
-Evitar usar «nota» para tres cosas diferentes: una entrada del diccionario guarda conocimiento; un ejercicio plantea una pregunta; una nota de Anki es un registro técnico que produce tarjetas.
-
-| El comentario trata sobre… | Hogar canónico | Cuándo se muestra |
+| Capa | Orden | Contenido |
 |---|---|---|
-| Una palabra, un sentido o un carácter: «esto me recuerda a…» | La entrada correspondiente en `lexicon.yaml` | En las respuestas que evalúen esa entrada |
-| Un sonido, un tono o una regla general de pronunciación | Una entrada de pronunciación en el mismo `lexicon.yaml` | En ejercicios vinculados a esa dificultad |
-| Una frase concreta, su pronunciación o una situación | El ejemplo/frase guardado en `exercises.yaml` | Junto a esa frase |
-| Un truco para resolver una pregunta particular | El ejercicio correspondiente | Solo en su respuesta |
+| `2-raw/<lote>/` | cronológico, intocable | lo que YAGO escribió, tal cual; local, fuera de git |
+| `4-digests/<lote>.md` | cronológico; temático por dentro | todo lo que aportó el lote, clasificado; histórico, no se reescribe |
+| `3-data/` | por concepto, sin cronología | fuente de verdad; la cronología solo como `source.batch` y `added` |
+| `5-guide/` | temático, acumulado | todo lo aprendido por tema, generado desde `3-data/` en cada lote; nunca se edita |
+| Anki | por tema + etiquetas | estudio |
 
-Una observación general sobre cómo pronunciar una sílaba no debe quedar enterrada en una palabra accidental. Se guarda una vez y se referencia. No crear un tercer archivo para pronunciación: es otro tipo de entrada del diccionario. No mostrar todos los comentarios en todas las tarjetas: primero la solución, después explicación breve y comentarios pertinentes.
+Mapa completo y convenciones de nombres: `README.md`.
 
-Preservar literalmente los comentarios personales. Separar mnemotecnia subjetiva, observación de la profesora y explicación lingüística verificada. Una imagen mental útil no se presenta automáticamente como etimología. Los componentes, radicales y pictogramas tampoco son sinónimos.
+## Datos
 
-## Pinyin y tonos: parte central del diseño
+`3-data/lexicon.yaml` (entradas) y `3-data/exercises.yaml` (frases y ejercicios). Encabezados de cada archivo: esquema breve.
 
-- Pinyin visible y legible en las soluciones; nunca retirarlo globalmente para «avanzar». En el anverso se muestra u oculta según qué se pregunte.
-- Practicar por separado reconocer el símbolo de un tono, distinguirlo al oído y producirlo. Saber el significado no acredita esas habilidades.
-- Empezar con palabras cotidianas cortas y sílabas conocidas; pasar a combinaciones de dos sílabas y frases breves. Precisión antes de rapidez, sin cronómetro obligatorio.
-- Ejercicios específicos: escuchar y elegir/escribir el tono; completar los tonos de un pinyin ya dado; leer pinyin en voz alta antes de escuchar; distinguir dos audios; escribir pinyin completo desde hanzi o audio.
-- Son variantes del repertorio, no nuevas infraestructuras. Cada ejercicio declara exactamente qué evalúa: lectura, escucha, producción y, cuando corresponda, discriminación de tonos o pronunciación.
-- Incluir tono neutro y pronunciación contextual gradualmente. Distinguir la escritura de referencia del pinyin de una explicación de cómo se realiza en una frase; no alterar silenciosamente la respuesta para reflejar cambios fonéticos.
-- Propuesta de entrada: aceptar tanto `he1` como `hē`, normalizando sin perder los tonos. Aceptar una respuesta sin tono solo cuando la consigna no lo evalúe. Verificar esta interacción en los clientes Anki usados por YAGO.
-- Anki permite comparar una respuesta escrita, pero las traducciones abiertas admiten alternativas y la pronunciación oral requiere autoevaluación al escuchar el modelo. No prometer corrección automática del habla.
-- Usar colores para alinear partes de hanzi/pinyin/traducción. No reutilizar simultáneamente esos mismos colores con otro significado para los tonos. Sus marcas deben seguir siendo claras sin depender del color.
+- **IDs** con prefijo de tipo (`w.` palabra, `e.` expresión, `c.` carácter o componente, `p.` pronunciación, `g.` grupo, `s.` frase, `x.` ejercicio). Nunca se reutilizan ni se cambian; no usar solo el hanzi. Corregir conserva el ID; cambiar lo que pregunta una tarjeta exige ID nuevo.
+- **Una entrada por sentido y lectura** (行 háng / xíng). `standalone: yes | rare | no` es del sentido: si no se usa solo, `check` exige alguna palabra registrada que lo contenga.
+- **Grupos** (`kind: group`): `basis: visual | homophone | pattern`, miembros con `cue` (rasgo distintivo). Máximo 4 en contraste. Se crean cuando YAGO ya conoce un miembro o los ha confundido, nunca por adelantado. Tarjetas: `contrast` (una por miembro) y `derive` (de un miembro del patrón a otro).
+- **Frases** segmentadas con `ref` a las entradas; una frase se guarda una vez y se reutiliza. Un segmento puede declarar `sandhi` cuando su pinyin escrito es el realizado (不 → bú).
+- **Ejercicios** separan `targets` (lo evaluado), `context` (visible en la pregunta) y `reveal` (ejemplos al revelar). La cobertura se cuenta por `targets`, nunca buscando subcadenas.
+- **Procedencia**: `source: {origin, batch, file, date}`; `added` en cada ejercicio.
+- **Pinyin**: `check` lo contrasta con pypinyin; las discrepancias legítimas (tono neutro, erhua) llevan `accept_pinyin_mismatch` con motivo.
 
-## Contenido y ejercicios
+## Comentarios
 
-Dos archivos en `3-data/`, mantenidos por el agente:
+| El comentario trata sobre… | Va en… | Se muestra… |
+|---|---|---|
+| una palabra, sentido o carácter | su entrada | en todas las tarjetas que la evalúan |
+| un sonido, tono o regla general | una entrada `p.` de pronunciación | en los ejercicios que la referencian |
+| una frase o situación | la frase | junto a esa frase |
+| un truco para una pregunta concreta | el ejercicio | solo en su respuesta |
 
-| Archivo | Contenido |
-|---|---|
-| `lexicon.yaml` | ID permanente; tipo —palabra, expresión, carácter, componente o pronunciación—; escritura, lectura y sentido cuando proceda; registro; fuente y fecha; comentarios; relaciones; referencias de frecuencia |
-| `exercises.yaml` | ID permanente; tipo de pregunta; objetivo y capacidades evaluadas; consigna; respuesta y alternativas; frase segmentada, pinyin y traducción; explicación; comentarios particulares; referencias de audio |
+`kind`: `mnemonic` (subjetivo), `teacher` (solo si consta que lo dijo la profesora), `linguistic` (verificado), `note` (apunte literal de YAGO de origen sin precisar). Literal siempre; una mnemotecnia no se presenta como etimología. `private: true` por defecto y nada privado sale en ninguna salida; como el repositorio es público, lo privado ni siquiera se guarda en `3-data/`. Una observación nueva de YAGO («先生 se pronuncia…») va a su hogar según esta tabla y aparece en todas las tarjetas afectadas.
 
-No usar solo el hanzi como ID: una escritura puede tener distintos sentidos y lecturas. Las correcciones conservan el ID. Las entradas de pronunciación o componentes no necesitan fingir que son palabras independientes.
+## Cobertura: `use`, `plan` y `check`
 
-Cada ejercicio distingue objetivos evaluados, vocabulario de contexto en la pregunta y vocabulario que solo aparece al revelar ejemplos. Segmentar las frases con referencias a las entradas para alinear colores y contar apariciones. No deducir cobertura solo buscando subcadenas: un carácter dentro de una palabra no equivale a evaluar su significado aislado.
+Cada entrada declara **para qué la necesita YAGO**:
 
-Las frases reutilizadas se guardan una sola vez y se referencian; no hace falta un archivo independiente de ejemplos al empezar. Idioma de apoyo español o inglés, indicado en cada ejercicio; evitar alternancias arbitrarias dentro de una misma explicación.
+| `use` | Significa | Digest |
+|---|---|---|
+| `say` | decirla (implica oírla y leerla) | ✅ |
+| `hear` | entenderla al oírla (implica leerla) | ✅ |
+| `read` | reconocerla escrita | 🟡 |
+| `drop` | descartada con motivo; sin tarjetas; `lookup` la encuentra | ❌ |
 
-### Repertorio acordado
+Es una escalera, con **excepciones siempre que hagan falta**: una lista explícita (`use: [read]` para 入口, que se lee en carteles pero casi no se dice; `use: [hear]` para un nombre propio) con `use_reason`. `check` exige el motivo y no limita cuántas excepciones hay.
 
-1. Hanzi → escribir pinyin y recordar significado.
-2. Completar una frase con pinyin.
-3. Escuchar → reconocer, transcribir pinyin o responder una pregunta de comprensión.
-4. Chino → significado en español o inglés.
-5. Intención/español/inglés → producir chino, principalmente en pinyin.
-6. Reconocer componentes y caracteres, vinculados a ejemplos útiles.
-7. Contrastar usos, sonidos, tonos o palabras que se confunden.
-8. Pinyin → significado sin depender del hanzi.
-9. Construir, ordenar o corregir una frase.
-10. Pronunciar en voz alta y comparar con audio.
+**Rol**: `content` (水, 商店, 高) o `function` (吗, 呢, 的, 都, 很, 什么, 在). No es frecuencia sino función: las piezas gramaticales se practican dentro de frases.
 
-Diez tipos de pregunta no implican diez tarjetas por palabra ni diez plantillas técnicas. Compartir presentación y usar comportamientos específicos solo cuando hagan falta. Primer piloto: lectura con pinyin, escucha y producción con hueco, incorporando práctica explícita de tonos. Añadir las demás modalidades conforme el contenido las justifique.
+**Tarjetas exigidas** (una por tipo y objetivo; más es redundancia):
 
-Una pregunta concreta por tarjeta. No convertir todos sus ejemplos y explicaciones en objetivos adicionales. Contextos cotidianos: pedir, responder, comprar, comer, desplazarse, presentarse y hablar con gente. Los componentes se estudian como apoyo a palabras útiles, no como un catálogo histórico obligatorio.
+| | `read` | `hear` | `say` |
+|---|---|---|---|
+| palabra `content` | lectura | + escucha | + producción |
+| palabra `function` | lectura | + escucha | + producción en frase (hueco) |
+| frase o frase hecha | — | escucha | + decirla en voz alta con el audio |
+| carácter o componente | componentes, si está en una palabra que se estudia | — | — |
+| pronunciación `p.` | — | escucha | + voz alta |
 
-## Consulta y salud del mazo
+Además, calculado del pinyin: tarjeta de tonos para toda entrada `hear` o `say` con tono neutro o sandhi (3+3, 不, 一). El erhua se detecta pero lo trata la pista de pronunciación. La producción suelta tecleada se reserva para el núcleo; el peso de la producción va a frases y frases hechas, que son lo más rentable para tonos en contexto y fluidez.
 
-`lookup` busca por hanzi, pinyin o significado y devuelve las entradas relacionadas, ejercicios por tipo y papel de cada aparición. El agente debe consultarlo antes de añadir contenido. `gaps` resume cobertura; ambos se calculan desde los archivos, sin un índice manual duplicado.
+**Ósmosis**: toda palabra `say` o `context` aparece como contexto en al menos una frase; aviso si no. Las expresiones que ya son un enunciado completo (你好, 再见) no lo necesitan. Antes de pedir frases a YAGO, se buscan en sus apuntes de `2-raw/`. Que una entrada reaparezca como contexto en muchas frases es deseable y no cuenta como redundancia.
 
-Para palabras/expresiones activas, objetivo inicial flexible: lectura con recuperación de pinyin, escucha sin texto revelado y producción. Suele requerir aproximadamente tres ejercicios útiles, pero no es una cuota. Componentes y pronunciación tienen criterios propios. Disponer de audio en una respuesta no acredita práctica de escucha; repetir vocabulario en contexto tampoco acredita producción.
+**Señales de prioridad** (orientan, no deciden): frecuencia hablada (subtítulos de cine: Dong Chinese o SUBTLEX-CH) para qué es núcleo, y bandas del HSK 3.0 como control de huecos hacia C1. `check` avisa cuando `use` choca con ellas (banda 1 marcada `read`; banda 7–9 marcada `say`) y pide motivo. Las necesidades de YAGO (工程师, 买单) justifican excepciones. Nunca se importa un ranking entero. [pendiente, fase 4]
 
-Mostrar también práctica específica de tonos, contextos distintos, audio pendiente y palabras de ejemplos aún no registradas. Estar registrado no significa estar aprendido: sin datos de repaso no inferir dominio ni velocidad. No imponer dos apariciones de contexto, porcentajes iguales de tipos ni notas personales obligatorias.
+**`plan`** lista, para todo el mazo, las tarjetas exigidas que faltan y los avisos de ósmosis y señales. **`check` estricto** convierte en error cualquier tarjeta exigida ausente. **`gaps`** informa del reparto por capacidad (lectura, escucha, producción, tonos), contando cada tarjeta solo por lo que practica.
 
-Errores que bloquean la salida final: IDs repetidos, referencias rotas, respuestas obligatorias ausentes o audio requerido faltante. Avisos editoriales: posible redundancia, pinyin discrepante con diccionario, sentido/registro dudoso, contexto demasiado difícil. El LLM revisa el significado de los avisos; no los ignora ni acepta automáticamente.
+## Pronunciación: pista propia [pendiente, fase 3]
 
-## Audio, compilación y actualización
+Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesita cobertura propia, calculada:
 
-Audio reproducible en las respuestas y ejemplos chinos, salvo los tipos que se deciden por la forma (ver «Estabilidad de las tarjetas y del audio»). En ejercicios de escucha aparece antes de revelar; en lectura/producción, después, para no regalar la respuesta. Para un componente sin uso hablado independiente, usar su nombre y una palabra de ejemplo. Pronunciación: modelo de audio de la unidad o palabra que ilustra el fenómeno.
+- **Parejas de tonos**: las combinaciones de dos sílabas (1-1 … 4-neutro), clasificadas automáticamente desde el pinyin; `check` exige escucha y producción de cada pareja con varias palabras.
+- **Sonidos difíciles**: aspiración (b/p, d/t, g/k), j q x frente a zh ch sh r, ü, -n frente a -ng; pares mínimos desde el vocabulario de YAGO.
+- **Sandhi, neutro y erhua**, detectados desde el pinyin.
+- Se practican por separado el tono de cita de cada palabra y la melodía real de las frases: el sandhi y el neutro esconden el tono de cita.
 
-Decisión de YAGO (2026-09-25): Azure Speech, voces neuronales nativas `zh-CN`, nivel gratuito F0. Se eligió frente a ElevenLabs por la precisión de tonos, el nivel gratuito y la posibilidad de fijar la lectura en pinyin con SSML (`<phoneme alphabet="sapi">`) si un audio lee mal un polífono; implementarlo cuando haga falta. Confirmar la lectura en contexto de palabras ambiguas. Diccionarios y pypinyin ayudan a detectar discrepancias; no garantizan el audio ni seleccionan por sí solos el sentido.
+## Tarjetas
 
-Generar audio en un paso separado y conservarlo. Caché por texto, voz, modelo y ajustes relevantes, con nombre prefijado para evitar colisiones en Anki. Registrar procedencia y condiciones de uso. Recompilar no llama al LLM ni vuelve a pagar audios existentes.
+- **Tipos**: `read` (hanzi → pinyin y significado), `listen` (audio → pinyin o comprensión), `produce` (español → chino), `cloze` (hueco en frase), `tones` (un dígito por sílaba: 什么 → `25`; desde audio o desde pinyin sin tonos; `check` reconstruye el pinyin y verifica), `speak` (voz alta y comparar), `contrast`, `derive`, `components`. Una pregunta concreta por tarjeta.
+- **Tecleadas frente a autoevaluación**: YAGO estudia desde el móvil; se teclea en tonos y producción del núcleo, el resto es autoevaluación. **Normalización**: la plantilla compara tras quitar espacios y mayúsculas, convertir tildes en dígitos y tratar `v` = `ü`, para que solo un error real de sílaba o tono cuente como fallo.
+- **Audio**: escucha, tonos y pronunciación lo llevan delante; lectura, producción y deducción, tras revelar; el contraste visual y los componentes no llevan (se deciden por la forma); el de homófonos sí. Frases de ejemplo y entradas `p.`, siempre.
+- **Pinyin** siempre visible en las soluciones. Colores solo para alinear hanzi y pinyin, nunca para marcar tonos. No se promete corregir el habla: `speak` es autoevaluación.
 
-Python en el entorno virtual `.venv` del proyecto; archivos abiertos con UTF-8 explícito. Dependencias fijadas en `requirements.txt`: genanki, PyYAML y pypinyin. Azure Speech se llama por HTTP (REST) sin SDK. CC-CEDICT sigue pendiente como segundo verificador. Respetar licencias y atribuciones de recursos al exportar.
+## Anki
 
-IDs estables de mazo/modelos/notas y campos/plantillas estables. El GUID de Anki deriva del ID permanente del ejercicio, no del texto mutable. Una corrección conserva identidad; sustituir el objetivo por otro ejercicio requiere identidad nueva. Retirar un ejercicio de la fuente no garantiza eliminarlo de Anki: documentar y probar esa operación aparte.
+- Mazo `🐉 Chino práctico`. **Subdecks por tema**, numerados por orden de aprendizaje (`🐉 Chino práctico::02 Presentarse`), decididos por el agente [pendiente, fase 2; hoy hay un subdeck por mes, `::2026-09`]. **Etiquetas** para lo que admite varios valores: `nivel::`, `mes::`, `use::`, `skill::`, `type::`. Estudiar el mazo padre lo mezcla todo, que es lo eficaz; las etiquetas permiten sesiones filtradas.
+- **`push`**: compila, abre Anki si hace falta, importa por AnkiConnect (complemento `2055492159`) y sincroniza con AnkiWeb. Anki no mueve tarjetas de deck al reimportar: `push` las recoloca con AnkiConnect conservando el progreso [pendiente, fase 2]. Detecta notas del mazo cuyo ejercicio ya no existe y propone borrarlas, mostrando cuáles.
+- **Orden de nuevas**: las tarjetas de una misma entrada no se introducen el mismo día (Anki solo separa hermanas de una misma nota y aquí cada tarjeta es una nota); los básicos primero.
+- **Límites**: 15 nuevas al día y 200 repasos como máximo, fijados por `push` en el mazo padre. A ritmo estable los repasos diarios son del orden de 7 a 10 veces las nuevas; `use` mantiene el total asumible hacia C1.
+- **GUID** = `guid_for("apkg-chinese-structs", id del ejercicio)`; IDs de modelo fijos en `anki.py`. Reimportar actualiza sin duplicar (comprobado el 2026-09-25); la conservación del historial tras repasar está por comprobar.
+- **Nunca se corrige dentro de Anki**: cada `push` sobrescribe desde `3-data/`.
+- Los otros mazos de la colección de YAGO son independientes (regla en `AGENTS.md`).
 
-Desde el piloto: importar, repasar, editar contenido, reimportar y comprobar ausencia de duplicados y conservación del historial. Comprobar audio, pinyin escrito y visualización en el cliente real; no dar por validada una importación por el mero hecho de crear el `.apkg`.
+## Audio
 
-## Frecuencia, dificultad y registro
+- Azure Speech por REST, voz `zh-CN-YunyangNeural` (clara y estable, elegida por YAGO), velocidad -30 %. Caché por **texto chino exacto** en `3-data/audio/index.yaml`: editar consigna, significado o comentarios no regenera nada; cambiar el hanzi de una respuesta o frase sí (solo si estaba mal). Un texto se genera una vez y se reutiliza.
+- El audio de una frase solo vale para esa frase exacta: pocas frases útiles y estables, reutilizadas como ejemplo, mejor que variantes casi iguales.
+- **Licencia**: según los Product Terms de Microsoft (citados en su Q&A), solo el nivel de pago da derecho de uso del audio generado; el F0 actual es de evaluación. Hasta regenerar en **S0** (coste del orden de céntimos), los MP3 quedan fuera de git y el mazo no se comparte. Al publicar, indicar que el audio es sintético.
+- Voces HD descartadas por ahora: más naturales pero menos estables para fijar tonos; se reconsiderarán para frases de escucha largas.
+- Un polífono mal leído se corrige fijando la lectura con SSML (`<phoneme alphabet="sapi">`) cuando haga falta.
 
-Conservar separadamente los datos de Dong Chinese: rango de palabra en películas, orden del carácter y número de caracteres que contienen un componente. No mezclarlos en una puntuación. Bandas de frecuencia transparentes —top 500, 1.000, etc.— serían una presentación derivada; un dato ausente sigue desconocido.
+## Digest del lote
 
-Frecuencia no equivale a coloquialidad ni dificultad personal. El filtro editorial es chino cotidiano y práctico. Una necesidad concreta de YAGO puede justificar una palabra menos frecuente. No importar automáticamente todo un ranking.
+`4-digests/<lote>.md`, para YAGO: todo el contenido del lote, no solo lo que entra al mazo, comprimido y **por temas, sin números de hoja ni de página**. Una línea por elemento: `汉字 pinyin · significado · pista (relación, mnemotecnia, pronunciación) · ejemplo`, con su marca ✅ 🟡 ❌ (derivada de `use`), 🃏 si está en el mazo y ⚠️ si corrige algo de los apuntes (glosas, transcripción). Al final: qué entró y qué ✅ queda pendiente. Histórico: no se reescribe.
 
-Las primeras páginas de las tres listas se comprobaron durante el diseño; la extracción completa, paginación y condiciones de reutilización siguen pendientes. Obtener una copia fechada cuando se implemente esta parte, sin hacer de la extracción un requisito para las primeras tarjetas.
+## Repositorio y privacidad
 
-## Repositorio, privacidad e InfraPhysics
+- Repositorio `yago-mendoza/apkg-chinese-structs`, **público**: nada privado en `3-data/`, ninguna credencial. Local en `C:\Users\yagom\dev\apkg-chinese-structs`, Python en `.venv`, UTF-8 explícito.
+- Fuera de git: `1-inbox/` (salvo su README), `2-raw/`, `6-output/`, los MP3 (hasta S0) y el entorno. `2-raw/` solo existe en este disco [pendiente: copia de seguridad].
+- Commits cuando YAGO lo pida; push a GitHub solo cuando lo pida.
+- Fuentes externas: HSK 3.0 de `drkameleon/complete-hsk-vocabulary` (MIT; se puede versionar con su aviso de licencia; solo nivel y pinyin, no sus glosas CC-CEDICT). Dong Chinese y SUBTLEX-CH: condiciones sin aclarar, solo en local. No elegir licencia de publicación por YAGO.
+- Futuro (sin fecha): exportación `dictionary.json` para InfraPhysics desde `3-data/`, por lista explícita de campos publicables.
 
-Repositorio propio creado por YAGO: `yago-mendoza/apkg-chinese-structs`, trabajado en local en `C:\Users\yagom\dev\apkg-chinese-structs`. Visibilidad comprobada el 2026-09-25: **público**. Mientras lo sea, no introducir comentarios privados en `3-data/` ni credenciales; hacerlo privado o decidir otra ubicación antes. Git aporta recuperación del código y contenido; YAGO no necesita mantener un ritual de commits. Git local, alojamiento en GitHub y publicación de resultados son decisiones separadas.
+## Estado y fases
 
-Este documento es el diseño vigente; Atrio conserva solo una nota breve que señala este repositorio (`🐉/my_anki/README.md`).
+Hecho (2026-09-26): `lookup`, `plan`, `gaps`, `check` estricto, `guide`, `audio`, `build`, `push` (plantillas, límites, orden de nuevas, huérfanas con `--prune`, sincronización); lote 001 procesado con la especificación de cobertura: 108 entradas, 30 frases, 342 tarjetas, 123 audios, 0 tarjetas exigidas pendientes, 12 huecos de ósmosis devueltos en `1-inbox/gaps-001-…md`. Normalización probada en código (13 casos); falta confirmar en el móvil de YAGO que el cliente conserva lo escrito entre anverso y reverso.
 
-Estructura de carpetas y convenciones de nombres: `README.md`. Versionar código, YAML y MP3 (`3-data/audio/`): Git puede servir al principio para una colección pequeña y estable; revisar tamaño y frecuencia de cambios antes de adoptarlo como almacén permanente. Excluir secretos, entorno virtual y compilados. Estar en `.gitignore` no elimina un archivo ya registrado ni protege copias publicadas anteriormente.
+1. ~~Fase 1~~ hecha.
+2. Subdecks temáticos, etiquetas y recolocación en `push`.
+3. Pista de pronunciación.
+4. HSK 3.0 y frecuencia hablada como señales.
+5. `stats`: leer fallos de Anki por AnkiConnect y convertir las tarjetas problemáticas en huecos del siguiente lote.
 
-Comentarios privados: permanecer en la fuente privada. Exportación pública por lista explícita de campos permitidos, tanto en JSON como en tarjetas/HTML/audio del mazo. Una marca `private` no oculta nada si se publica el archivo fuente. Para el piloto, los comentarios privados quedan fuera de todas las salidas; un eventual mazo personal con ellos sería un modo separado y nunca el publicable.
+Sin fase: pasar Azure a S0 y regenerar (decisión de YAGO), copia de `2-raw/`, comprobar el historial tras unos días de repaso.
 
-Salida web futura, en `5-output/`: `dictionary.json` con versión de esquema, ejemplos y comentarios publicables; MP3 referenciados mediante rutas portables; `.apkg` con esos audios incluidos. La web consume una exportación, no otra copia editable del diccionario. No necesita decidirse ahora su framework.
+## Fuentes
 
-GitHub Releases es una opción de distribución, no una obligación semanal. IMPORTANTE: las releases de un repositorio privado no son descargas públicas. Para una web pública se necesitan artefactos publicados en un destino público o una importación autenticada desde el servidor/build que sirva solo el resultado permitido. Nunca incluir credenciales en el navegador. Elegir ese destino al implementar la publicación.
+- [genanki](https://github.com/kerrickstaley/genanki) · [Anki: importar paquetes](https://docs.ankiweb.net/importing/packaged-decks.html) · [AnkiConnect](https://ankiweb.net/shared/info/2055492159)
+- [pypinyin](https://github.com/mozillazg/python-pinyin) · [complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary)
+- [Dong: palabras de películas](https://www.dong-chinese.com/dictionary/topMovieWords), [componentes](https://www.dong-chinese.com/dictionary/topComponents), [orden de caracteres](https://www.dong-chinese.com/dictionary/dongChinese)
+- [Azure Speech](https://learn.microsoft.com/azure/ai-services/speech-service/text-to-speech) · [precios](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-services/) · [uso del audio según nivel (Q&A)](https://learn.microsoft.com/en-us/answers/questions/5805156/please-clarify-the-conflicting-information-regardi)
 
-GitHub permite enlaces `releases/latest/download/<archivo>` para los assets. Un enlace latest no actualiza por sí solo el diccionario ya compilado en la web. Para builds reproducibles, consumir una versión fijada y actualizarla cuando se publique; el enlace de descarga del mazo puede apuntar a latest en el destino público adecuado.
-
-Audio de Azure Speech: revisar los términos de Microsoft sobre distribución de audio sintético antes de publicar el mazo.
-
-## Secuencia de construcción
-
-1. ~~Trasladar el diseño al repositorio.~~ Hecho en local el 2026-09-25.
-2. Preparar unas cinco entradas cotidianas y un concepto de pronunciación relevante, con pocos ejercicios de lectura, escucha, tonos y producción. Hecho, con audio.
-3. Implementar consulta, validación, compilación e importación (`push`). Hecho; falta comprobar el historial tras repasar.
-4. Audio con caché (Azure). Hecho. Pendiente: comparación con diccionarios; ampliar ejercicios desde `1-inbox/`.
-5. Añadir exportación pública y rankings. Publicar e integrar InfraPhysics solo cuando haya contenido listo y un destino decidido.
-
-Antes de producir contenido: concretar con el material de clase simplificado/tradicional, variedad de mandarín y clientes Anki usados. No bloquean este diseño. Visibilidad del repositorio y destino público permanecen pendientes.
-
-## Fuentes de comprobación
-
-- [genanki](https://github.com/kerrickstaley/genanki): generación del paquete e identidades.
-- [Anki: importar paquetes](https://docs.ankiweb.net/importing/packaged-decks.html): comportamiento de actualización.
-- [pypinyin](https://github.com/mozillazg/python-pinyin): herramienta de contraste de lecturas.
-- [Dong: palabras de películas](https://www.dong-chinese.com/dictionary/topMovieWords), [componentes](https://www.dong-chinese.com/dictionary/topComponents), [orden de caracteres](https://www.dong-chinese.com/dictionary/dongChinese).
-- [GitHub: enlaces a releases](https://docs.github.com/en/repositories/releasing-projects-on-github/linking-to-releases).
-- [Azure Speech: texto a voz](https://learn.microsoft.com/azure/ai-services/speech-service/text-to-speech).
-
-Las fuentes web se consultaron durante la conversación del 25 de septiembre de 2026; condiciones comerciales y compatibilidad se volverán a comprobar al implementar las partes correspondientes.
-
-## Siguiente paso
-
-1. Procesar los primeros apuntes de YAGO desde `1-inbox/` y simplificar este documento con lo aprendido.
-2. Iniciar sesión en AnkiWeb desde Anki para que `push` sincronice.
-3. Repasar unos días, editar un ejercicio, recompilar, reimportar y comprobar que no hay duplicados y se conserva el historial.
-4. Decidir la visibilidad del repositorio antes de guardar comentarios privados.
-
-No elegir una licencia de publicación automáticamente. LICENSE sigue siendo una decisión pendiente si se publica código/contenido con permisos de reutilización.
-
-### Instrucción de arranque para el siguiente agente
-
-> Lee `AGENTS.md` y este documento completo. Trabajamos en local en `C:\Users\yagom\dev\apkg-chinese-structs`, con `.venv`. Conserva chino cotidiano, pinyin y tonos como prioridades. Antes de añadir contenido, ejecuta `lookup` y `gaps`; después, `check`. No empieces por rankings, publicaciones o una arquitectura extensa. Distingue lo comprobado automáticamente de lo que requiere probarse en el cliente Anki.
+Consultadas entre el 25 y el 26 de septiembre de 2026; condiciones y precios se vuelven a comprobar al implementar cada parte.

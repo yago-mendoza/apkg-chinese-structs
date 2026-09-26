@@ -9,10 +9,28 @@
 # AVISO: el repositorio remoto es público. No guardar aquí comentarios privados
 # hasta hacerlo privado o mover esos comentarios a private/.
 
+# use: read | hear | say (escalera) o excepción con use_reason: lista ([read], [hear]…), context
+#   (solo dentro de frases) o drop (descartada). role: content | function. theme: id de themes.
 version: 1
+
+themes:  # orden de aprendizaje; decide el orden de las nuevas y los archivos de 5-guide/
+  - {id: sonidos, title: Sonidos y tonos}
+  - {id: saludos, title: Saludos y cortesía}
+  - {id: personas, title: Personas y pronombres}
+  - {id: presentarse, title: Presentarse}
+  - {id: familia, title: Familia}
+  - {id: describir, title: Describir}
+  - {id: compras, title: Compras, comida y bebida}
+  - {id: tiempo, title: Momentos del día}
+  - {id: numeros, title: Números}
+  - {id: cosas, title: Cosas y actividades}
+  - {id: escritura, title: Caracteres y componentes}
 
 entries:
   - id: w.wo
+    use: say
+    role: content
+    theme: personas
     kind: word
     hanzi: 我
     pinyin: wǒ
@@ -24,6 +42,9 @@ entries:
     comments: []
 
   - id: w.he.drink
+    use: say
+    role: content
+    theme: compras
     kind: word
     hanzi: 喝
     pinyin: hē
@@ -35,6 +56,9 @@ entries:
     comments: []
 
   - id: w.shui
+    use: say
+    role: content
+    theme: compras
     kind: word
     hanzi: 水
     pinyin: shuǐ
@@ -46,6 +70,9 @@ entries:
     comments: []
 
   - id: e.nihao
+    use: say
+    role: content
+    theme: saludos
     kind: expression
     hanzi: 你好
     pinyin: nǐ hǎo
@@ -57,6 +84,9 @@ entries:
     comments: []
 
   - id: e.xiexie
+    use: say
+    role: content
+    theme: saludos
     kind: expression
     hanzi: 谢谢
     pinyin: xièxie
@@ -76,6 +106,8 @@ entries:
   # --- Patrón de formación: partes del día con 午
 
   - id: c.wu.noon
+    use: read
+    theme: escritura
     kind: character
     hanzi: 午
     pinyin: wǔ
@@ -86,6 +118,9 @@ entries:
     comments: []
 
   - id: w.shangwu
+    use: say
+    role: content
+    theme: tiempo
     kind: word
     hanzi: 上午
     pinyin: shàngwǔ
@@ -96,6 +131,9 @@ entries:
     comments: []
 
   - id: w.zhongwu
+    use: say
+    role: content
+    theme: tiempo
     kind: word
     hanzi: 中午
     pinyin: zhōngwǔ
@@ -106,6 +144,9 @@ entries:
     comments: []
 
   - id: w.xiawu
+    use: say
+    role: content
+    theme: tiempo
     kind: word
     hanzi: 下午
     pinyin: xiàwǔ
@@ -116,6 +157,7 @@ entries:
     comments: []
 
   - id: g.wu-day-parts
+    theme: tiempo
     kind: group
     basis: pattern
     title: 上 / 中 / 下 + 午
@@ -129,6 +171,8 @@ entries:
     comments: []
 
   - id: p.third-tone-sandhi
+    use: say
+    theme: sonidos
     kind: pronunciation
     title: Dos terceros tonos seguidos
     explanation: >-
@@ -142,6 +186,9 @@ entries:
   # ============ Lote 2026-09-25: primeras clases
 
   - id: w.ni
+    use: say
+    role: content
+    theme: personas
     kind: word
     hanzi: 你
     pinyin: nǐ
@@ -149,6 +196,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.nin
+    use: say
+    role: content
+    theme: personas
     kind: word
     hanzi: 您
     pinyin: nín
@@ -157,6 +207,9 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: formal / respetuoso}
   - id: w.women
+    use: say
+    role: content
+    theme: personas
     kind: word
     hanzi: 我们
     pinyin: wǒmen
@@ -164,6 +217,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.nimen
+    use: say
+    role: content
+    theme: personas
     kind: word
     hanzi: 你们
     pinyin: nǐmen
@@ -171,6 +227,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.ta.he
+    use: say
+    role: content
+    theme: personas
     kind: word
     hanzi: 他
     pinyin: tā
@@ -178,6 +237,10 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.ta.she
+    use: [read]
+    role: content
+    theme: personas
+    use_reason: 'suena igual que 他 (tā): lo que se aprende de 她 es la escritura'
     kind: word
     hanzi: 她
     pinyin: tā
@@ -185,6 +248,10 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.ta.it
+    use: [read]
+    role: content
+    theme: personas
+    use_reason: 'suena igual que 他 (tā): lo que se aprende de 它 es la escritura'
     kind: word
     hanzi: 它
     pinyin: tā
@@ -193,6 +260,9 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: animals}
   - id: w.tamen
+    use: say
+    role: content
+    theme: personas
     kind: word
     hanzi: 他们
     pinyin: tāmen
@@ -200,6 +270,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.dajia
+    use: say
+    role: content
+    theme: personas
     kind: word
     hanzi: 大家
     pinyin: dàjiā
@@ -207,6 +280,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.laoshi
+    use: say
+    role: content
+    theme: personas
     kind: word
     hanzi: 老师
     pinyin: lǎoshī
@@ -215,6 +291,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.xuesheng
+    use: say
+    role: content
+    theme: personas
     kind: word
     hanzi: 学生
     pinyin: xuéshēng
@@ -223,6 +302,9 @@ entries:
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: niño estudiando bajo un techo con utensilios de aprendizaje}
   - id: w.pengyou
+    use: say
+    role: content
+    theme: personas
     kind: word
     hanzi: 朋友
     pinyin: péngyou
@@ -231,6 +313,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.baba
+    use: say
+    role: content
+    theme: familia
     kind: word
     hanzi: 爸爸
     pinyin: bàba
@@ -239,6 +324,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.mama
+    use: say
+    role: content
+    theme: familia
     kind: word
     hanzi: 妈妈
     pinyin: māma
@@ -248,6 +336,9 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: '女 «mujer» aporta el significado y 马 mǎ, el sonido.'}
   - id: w.erzi
+    use: hear
+    role: content
+    theme: familia
     kind: word
     hanzi: 儿子
     pinyin: érzi
@@ -255,6 +346,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.nver
+    use: hear
+    role: content
+    theme: familia
     kind: word
     hanzi: 女儿
     pinyin: nǚ'ér
@@ -262,6 +356,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.haizi
+    use: say
+    role: content
+    theme: familia
     kind: word
     hanzi: 孩子
     pinyin: háizi
@@ -269,6 +366,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.xiaohai
+    use: hear
+    role: content
+    theme: familia
     kind: word
     hanzi: 小孩
     pinyin: xiǎohái
@@ -277,6 +377,9 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 孩子 es el término general; 小孩 añade 小 «pequeño».}
   - id: w.gongchengshi
+    use: say
+    role: content
+    theme: personas
     kind: word
     hanzi: 工程师
     pinyin: gōngchéngshī
@@ -286,6 +389,9 @@ entries:
       - {kind: note, private: false, date: 2026-09-25, text: mi profession}
       - {kind: linguistic, private: false, date: 2026-09-25, text: '师 aparece en profesiones y maestros, como en 老师.'}
   - id: w.ren
+    use: say
+    role: content
+    theme: personas
     kind: word
     hanzi: 人
     pinyin: rén
@@ -294,6 +400,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.zhongguo
+    use: say
+    role: content
+    theme: presentarse
     kind: word
     hanzi: 中国
     pinyin: Zhōngguó
@@ -301,6 +410,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.xibanya
+    use: say
+    role: content
+    theme: presentarse
     kind: word
     hanzi: 西班牙
     pinyin: Xībānyá
@@ -310,6 +422,9 @@ entries:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Transcripción fonética: los caracteres imitan el sonido,
           no el significado.'}
   - id: w.meiguo
+    use: hear
+    role: content
+    theme: presentarse
     kind: word
     hanzi: 美国
     pinyin: Měiguó
@@ -317,6 +432,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.zhongwen
+    use: say
+    role: content
+    theme: presentarse
     kind: word
     hanzi: 中文
     pinyin: Zhōngwén
@@ -325,6 +443,9 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Modificador + núcleo: 中 «China» especifica 文 «lengua, escritura».'}
   - id: w.shi
+    use: say
+    role: content
+    theme: presentarse
     kind: word
     hanzi: 是
     pinyin: shì
@@ -332,6 +453,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.bu
+    use: say
+    role: function
+    theme: presentarse
     kind: word
     hanzi: 不
     pinyin: bù
@@ -340,6 +464,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.ma
+    use: say
+    role: function
+    theme: presentarse
     kind: word
     hanzi: 吗
     pinyin: ma
@@ -348,6 +475,9 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: checking for yes/no}
   - id: w.ne
+    use: say
+    role: function
+    theme: presentarse
     kind: word
     hanzi: 呢
     pinyin: ne
@@ -356,6 +486,9 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'neutral → decay, /ə/, “y tú?”'}
   - id: w.hen
+    use: say
+    role: function
+    theme: describir
     kind: word
     hanzi: 很
     pinyin: hěn
@@ -366,6 +499,9 @@ entries:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Con un adjetivo como predicado, 很 suele ser un enlace sin
           énfasis: 我很好 = estoy bien.'}
   - id: w.hao
+    use: say
+    role: content
+    theme: describir
     kind: word
     hanzi: 好
     pinyin: hǎo
@@ -374,6 +510,9 @@ entries:
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: 女 + 子 (woman + child)}
   - id: w.ye
+    use: say
+    role: function
+    theme: presentarse
     kind: word
     hanzi: 也
     pinyin: yě
@@ -381,6 +520,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.dou
+    use: say
+    role: function
+    theme: presentarse
     kind: word
     hanzi: 都
     pinyin: dōu
@@ -388,6 +530,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.de
+    use: say
+    role: function
+    theme: presentarse
     kind: word
     hanzi: 的
     pinyin: de
@@ -395,6 +540,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.jiao
+    use: say
+    role: content
+    theme: presentarse
     kind: word
     hanzi: 叫
     pinyin: jiào
@@ -402,6 +550,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.shenme
+    use: say
+    role: function
+    theme: presentarse
     kind: word
     hanzi: 什么
     pinyin: shénme
@@ -409,6 +560,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.mingzi
+    use: say
+    role: content
+    theme: presentarse
     kind: word
     hanzi: 名字
     pinyin: míngzi
@@ -417,6 +571,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.renshi
+    use: say
+    role: content
+    theme: presentarse
     kind: word
     hanzi: 认识
     pinyin: rènshi
@@ -427,6 +584,9 @@ entries:
       - {kind: note, private: false, date: 2026-09-25, text: 认识 = reconocer + distinguir = familiarizado con}
       - {kind: note, private: false, date: 2026-09-25, text: distinguir algo (de los demás) con conocimiento}
   - id: w.gaoxing
+    use: say
+    role: content
+    theme: presentarse
     kind: word
     hanzi: 高兴
     pinyin: gāoxìng
@@ -434,6 +594,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.qing
+    use: say
+    role: content
+    theme: saludos
     kind: word
     hanzi: 请
     pinyin: qǐng
@@ -442,7 +605,10 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'qǐng nín [verbo] = please you <do smth> (formal)'}
   - id: w.zaijian
-    kind: word
+    use: say
+    role: content
+    theme: saludos
+    kind: expression
     hanzi: 再见
     pinyin: zàijiàn
     meaning: {es: adiós, en: goodbye}
@@ -450,13 +616,19 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: formal / general ♡}
   - id: w.baibai
-    kind: word
+    use: say
+    role: content
+    theme: saludos
+    kind: expression
     hanzi: 拜拜
     pinyin: báibái
     meaning: {es: 'adiós (informal, del inglés bye-bye)', en: bye-bye}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.mingtian
+    use: say
+    role: content
+    theme: tiempo
     kind: word
     hanzi: 明天
     pinyin: míngtiān
@@ -464,6 +636,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.jian
+    use: hear
+    role: content
+    theme: tiempo
     kind: word
     hanzi: 见
     pinyin: jiàn
@@ -472,6 +647,9 @@ entries:
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: 目 + 儿 → 见 = see}
   - id: w.dui
+    use: say
+    role: content
+    theme: saludos
     kind: word
     hanzi: 对
     pinyin: duì
@@ -480,7 +658,10 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: duì a / méi cuò (+ intenso)}
   - id: w.zao
-    kind: word
+    use: say
+    role: content
+    theme: saludos
+    kind: expression
     hanzi: 早
     pinyin: zǎo
     meaning: {es: ¡buenos días! (informal); temprano, en: morning!; early}
@@ -488,6 +669,9 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: zǎo ← zǎoshang hǎo}
   - id: w.xiang
+    use: say
+    role: content
+    theme: compras
     kind: word
     hanzi: 想
     pinyin: xiǎng
@@ -496,6 +680,9 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: think / desire}
   - id: w.qu
+    use: say
+    role: content
+    theme: compras
     kind: word
     hanzi: 去
     pinyin: qù
@@ -503,6 +690,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.mai
+    use: say
+    role: content
+    theme: compras
     kind: word
     hanzi: 买
     pinyin: mǎi
@@ -510,6 +700,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.shuiguo
+    use: say
+    role: content
+    theme: compras
     kind: word
     hanzi: 水果
     pinyin: shuǐguǒ
@@ -518,6 +711,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.shangdian
+    use: say
+    role: content
+    theme: compras
     kind: word
     hanzi: 商店
     pinyin: shāngdiàn
@@ -525,6 +721,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.zai.at
+    use: say
+    role: function
+    theme: compras
     kind: word
     hanzi: 在
     pinyin: zài
@@ -532,6 +731,10 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.zai.progressive
+    use: context
+    role: function
+    theme: cosas
+    use_reason: 'mismo hanzi y sonido que 在 «estar en»: suelto es ambiguo; se aprende al oírlo en frases'
     kind: word
     hanzi: 在
     pinyin: zài
@@ -539,6 +742,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.nar
+    use: say
+    role: function
+    theme: compras
     kind: word
     hanzi: 哪儿
     pinyin: nǎr
@@ -547,6 +753,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.kan
+    use: say
+    role: content
+    theme: cosas
     kind: word
     hanzi: 看
     pinyin: kàn
@@ -555,6 +764,9 @@ entries:
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: mano sobre ojo}
   - id: w.kanjian
+    use: hear
+    role: content
+    theme: cosas
     kind: word
     hanzi: 看见
     pinyin: kànjiàn
@@ -564,6 +776,9 @@ entries:
       - {kind: linguistic, private: false, date: 2026-09-25, text: '看 es la acción de mirar; 见 añade el resultado: llegar a
           ver.'}
   - id: w.kankan
+    use: say
+    role: content
+    theme: cosas
     kind: word
     hanzi: 看看
     pinyin: kànkan
@@ -574,6 +789,9 @@ entries:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Repetir el verbo lo suaviza: «mirar un poco», no «mirar
           dos veces».'}
   - id: w.shu
+    use: say
+    role: content
+    theme: cosas
     kind: word
     hanzi: 书
     pinyin: shū
@@ -581,6 +799,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.shouji
+    use: say
+    role: content
+    theme: cosas
     kind: word
     hanzi: 手机
     pinyin: shǒujī
@@ -589,6 +810,9 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 手 «mano» + 机 «máquina».}
   - id: w.kafei
+    use: say
+    role: content
+    theme: compras
     kind: word
     hanzi: 咖啡
     pinyin: kāfēi
@@ -597,6 +821,9 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: Transcripción fonética de «coffee».}
   - id: w.qiaokeli
+    use: hear
+    role: content
+    theme: compras
     kind: word
     hanzi: 巧克力
     pinyin: qiǎokèlì
@@ -605,6 +832,9 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: Transcripción fonética de «chocolate».}
   - id: w.niurou
+    use: say
+    role: content
+    theme: compras
     kind: word
     hanzi: 牛肉
     pinyin: niúròu
@@ -613,6 +843,9 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Modificador + núcleo: 牛 «vaca» especifica 肉 «carne».'}
   - id: w.zuqiu
+    use: hear
+    role: content
+    theme: cosas
     kind: word
     hanzi: 足球
     pinyin: zúqiú
@@ -621,6 +854,9 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Calco: 足 «pie» + 球 «pelota».'}
   - id: w.huoche
+    use: hear
+    role: content
+    theme: cosas
     kind: word
     hanzi: 火车
     pinyin: huǒchē
@@ -629,6 +865,9 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: '火 «fuego» + 车 «vehículo»: el primero especifica el segundo.'}
   - id: w.wanshang
+    use: say
+    role: content
+    theme: tiempo
     kind: word
     hanzi: 晚上
     pinyin: wǎnshang
@@ -638,6 +877,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.gao
+    use: say
+    role: content
+    theme: describir
     kind: word
     hanzi: 高
     pinyin: gāo
@@ -645,6 +887,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.ai
+    use: hear
+    role: content
+    theme: describir
     kind: word
     hanzi: 矮
     pinyin: ǎi
@@ -652,6 +897,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.pang
+    use: hear
+    role: content
+    theme: describir
     kind: word
     hanzi: 胖
     pinyin: pàng
@@ -661,6 +909,9 @@ entries:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'El 月 de la izquierda es 肉 «carne», como en muchas partes
           del cuerpo; no «luna».'}
   - id: w.shou
+    use: hear
+    role: content
+    theme: describir
     kind: word
     hanzi: 瘦
     pinyin: shòu
@@ -668,6 +919,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.piaoliang
+    use: say
+    role: content
+    theme: describir
     kind: word
     hanzi: 漂亮
     pinyin: piàoliang
@@ -676,6 +930,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.shuai
+    use: hear
+    role: content
+    theme: describir
     kind: word
     hanzi: 帅
     pinyin: shuài
@@ -683,6 +940,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.congming
+    use: hear
+    role: content
+    theme: describir
     kind: word
     hanzi: 聪明
     pinyin: cōngming
@@ -691,6 +951,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.ben
+    use: hear
+    role: content
+    theme: describir
     kind: word
     hanzi: 笨
     pinyin: bèn
@@ -698,6 +961,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.keai
+    use: say
+    role: content
+    theme: describir
     kind: word
     hanzi: 可爱
     pinyin: kě'ài
@@ -707,6 +973,9 @@ entries:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: like kawaii but mouth asleep}
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'El parecido con «kawaii» es solo de sonido, no histórico.'}
   - id: w.youmo
+    use: hear
+    role: content
+    theme: describir
     kind: word
     hanzi: 幽默
     pinyin: yōumò
@@ -715,6 +984,9 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: Préstamo fonético del inglés «humour».}
   - id: w.niu
+    use: read
+    role: content
+    theme: escritura
     kind: word
     hanzi: 牛
     pinyin: niú
@@ -723,6 +995,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.ba
+    use: say
+    role: content
+    theme: numeros
     kind: word
     hanzi: 八
     pinyin: bā
@@ -731,6 +1006,10 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.rukou
+    use: [read]
+    role: content
+    theme: cosas
+    use_reason: 'se lee en carteles; casi nunca se dice'
     kind: word
     hanzi: 入口
     pinyin: rùkǒu
@@ -738,6 +1017,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: e.haode
+    use: say
+    role: content
+    theme: saludos
     kind: expression
     hanzi: 好的
     pinyin: hǎo de
@@ -746,6 +1028,9 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'subjetivo, muy bien, gusto'}
   - id: e.ninhao
+    use: say
+    role: content
+    theme: saludos
     kind: expression
     hanzi: 您好
     pinyin: nín hǎo
@@ -753,6 +1038,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: e.nimenhao
+    use: say
+    role: content
+    theme: saludos
     kind: expression
     hanzi: 你们好
     pinyin: nǐmen hǎo
@@ -760,6 +1048,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: e.dajiahao
+    use: hear
+    role: content
+    theme: saludos
     kind: expression
     hanzi: 大家好
     pinyin: dàjiā hǎo
@@ -767,6 +1058,9 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: e.laoshihao
+    use: say
+    role: content
+    theme: saludos
     kind: expression
     hanzi: 老师好
     pinyin: lǎoshī hǎo
@@ -774,6 +1068,8 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: c.sheng.life
+    use: read
+    theme: escritura
     kind: character
     hanzi: 生
     pinyin: shēng
@@ -783,6 +1079,8 @@ entries:
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: some plant emerging}
   - id: c.ru.enter
+    use: read
+    theme: escritura
     kind: character
     hanzi: 入
     pinyin: rù
@@ -791,6 +1089,8 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: c.nv.woman
+    use: read
+    theme: escritura
     kind: component
     hanzi: 女
     pinyin: nǚ
@@ -798,6 +1098,8 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: c.kou.mouth
+    use: read
+    theme: escritura
     kind: component
     hanzi: 口
     pinyin: kǒu
@@ -806,6 +1108,8 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: boca habla}
   - id: c.rou.flesh
+    use: read
+    theme: escritura
     kind: component
     hanzi: 月
     pinyin: yuè
@@ -814,6 +1118,8 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: moon + meat / “radical” → 月 = muscle}
   - id: c.mu.eye
+    use: read
+    theme: escritura
     kind: component
     hanzi: 目
     pinyin: mù
@@ -821,6 +1127,7 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: g.hao-greetings
+    theme: saludos
     kind: group
     basis: pattern
     title: Saludos con 好
@@ -837,6 +1144,7 @@ entries:
       - {kind: note, private: false, date: 2026-09-25, text: 'nínmen hǎo → respectful w/ seniors / teachers; nǐmen hǎo → relaxed,
           friends (grupo delante de mí); dàjiā hǎo → formal, group (todo el mundo)'}
   - id: g.ta-ta-ta
+    theme: personas
     kind: group
     basis: homophone
     title: '他, 她 y 它: los tres son tā'
@@ -848,6 +1156,7 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: g.sheng-niu-wu
+    theme: escritura
     kind: group
     basis: visual
     title: 生, 牛 y 午
@@ -860,6 +1169,7 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: g.ren-ru-ba
+    theme: escritura
     kind: group
     basis: visual
     title: 人, 入 y 八
@@ -871,6 +1181,8 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: p.bu-sandhi
+    use: say
+    theme: sonidos
     kind: pronunciation
     title: 不 delante de cuarto tono
     explanation: '不 es bù, pero delante de otro cuarto tono pasa a segundo: 不是 se dice bú shì. En pinyin se suele escribir ya
@@ -880,6 +1192,8 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: '4 + 4 → 2 + 4. Ej.: bú shì ← bù shì'}
   - id: p.third-tone-half
+    use: say
+    theme: sonidos
     kind: pronunciation
     title: El tercer tono, a medias
     explanation: 'Delante de un 1.º, 2.º, 4.º o neutro, el tercer tono solo baja y no vuelve a subir: en 老师 la sílaba lǎo solo
@@ -891,6 +1205,8 @@ entries:
           do it besides when emphasis'}
       - {kind: note, private: false, date: 2026-09-25, text: 'No exageres ↓ tono: CONTRASTE >>> ↓ tono'}
   - id: p.neutral-tone
+    use: say
+    theme: sonidos
     kind: pronunciation
     title: Tono neutro
     explanation: Sílaba corta y ligera, sin contorno propio; su altura depende de la sílaba anterior. En pinyin va sin marca
@@ -899,6 +1215,8 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: p.aspiration
+    use: say
+    theme: sonidos
     kind: pronunciation
     title: 'b/p, d/t, g/k: aire, no voz'
     explanation: 'La diferencia no es sonora/sorda como en español: b, d y g van sin aire; p, t y k llevan un soplo. 爸 bà, sin
@@ -908,6 +1226,8 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: use paper to practice!}
   - id: p.jqx-zhchsh
+    use: say
+    theme: sonidos
     kind: pronunciation
     title: j q x frente a zh ch sh r
     explanation: 'j, q, x: lengua plana, con la punta abajo, detrás de los dientes (学 xué). zh, ch, sh, r: punta de la lengua

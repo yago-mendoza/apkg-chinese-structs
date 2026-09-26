@@ -10,7 +10,7 @@ Mazo personal de mandarín cotidiano: pinyin, tonos y audio. YAGO aporta apuntes
 
 ```powershell
 .\.venv\Scripts\python anki.py audio   # genera solo el audio que falta (Azure Speech)
-.\.venv\Scripts\python anki.py push    # compila, abre Anki, importa y sincroniza
+.\.venv\Scripts\python anki.py push    # compila, abre Anki, importa, ajusta límites y orden, y sincroniza
 ```
 
 No se corrige nada dentro de Anki: cada `push` sobrescribe las tarjetas con lo que hay en `3-data/`. Las correcciones se dicen al agente.
@@ -19,14 +19,15 @@ No se corrige nada dentro de Anki: cada `push` sobrescribe las tarjetas con lo q
 
 | Ruta | Para quién | Qué es |
 |---|---|---|
-| `1-inbox/` | YAGO escribe, el agente lee | Apuntes en bruto pendientes de procesar. Vacío si no hay nada pendiente. |
+| `1-inbox/` | YAGO escribe, el agente lee | Apuntes en bruto pendientes de procesar, y `gaps-<lote>.md`: lo que falta tras el último lote, editable. |
 | `2-raw/` | Archivo | Apuntes ya procesados, tal cual, en una carpeta por lote (`2-raw/001-2026-09-25-primeras-clases/`). No se suben a GitHub. |
 | `3-data/` | Agente mantiene | Fuente de verdad del mazo. |
 | `3-data/lexicon.yaml` | Agente | Diccionario: palabras, caracteres, pronunciación, grupos. |
 | `3-data/exercises.yaml` | Agente | Frases y ejercicios (cada ejercicio es una tarjeta). |
 | `3-data/audio/` | `anki.py` | MP3 generados e `index.yaml` con su procedencia. No regenerar ni borrar. |
 | `4-digests/` | YAGO lee | Un resumen por lote: todo lo de los apuntes, comprimido y clasificado en ✅ aprender, 🟡 reconocer y ❌ tachar. No se edita. |
-| `5-output/` | YAGO saca | Lo que se genera: `chino-practico.apkg` y, en el futuro, la exportación para InfraPhysics. Se regenera; no editar. |
+| `5-guide/` | YAGO lee | Todo lo aprendido, un archivo por tema, generado desde `3-data/` en cada lote. No se edita. |
+| `6-output/` | YAGO saca | Lo que se genera: `chino-practico.apkg` y, en el futuro, la exportación para InfraPhysics. Se regenera; no editar. |
 | `README.md` | YAGO | Esta página: uso y mapa del repositorio. |
 | `AGENTS.md` | Agente | Reglas de trabajo. Lo primero que lee cualquier agente. |
 | `docs/design.md` | Agente | Diseño canónico: criterios, tipos de tarjeta, decisiones. |
@@ -36,7 +37,7 @@ No se corrige nada dentro de Anki: cada `push` sobrescribe las tarjetas con lo q
 ## Convenciones
 
 - Carpetas y archivos en inglés, en minúsculas, con guiones: `3-data/`, `docs/design.md`.
-- Las carpetas del flujo llevan el número de su paso: `1-inbox` → `2-raw` → `3-data` → `4-digests` → `5-output`. Lo que no es flujo (`docs/`, `anki.py`) va sin número.
+- Las carpetas del flujo llevan el número de su paso: `1-inbox` → `2-raw` → `3-data` → `4-digests` → `5-guide` → `6-output`. Lo que no es flujo (`docs/`, `anki.py`) va sin número.
 - Toda documentación de carpeta se llama `README.md`; las reglas para agentes, `AGENTS.md`.
 - Contenido y documentación en español.
 - Lotes: `NNN-AAAA-MM-DD-tema` (número de orden de procesado, fecha y tema en palabras: `001-2026-09-25-primeras-clases`). Ese nombre lo comparten la carpeta `2-raw/<lote>/` y el digest `4-digests/<lote>.md`. Nunca números de hoja, ni en el nombre ni en el contenido: el digest se organiza por temas.
@@ -53,4 +54,4 @@ python -m venv .venv
 - Audio: `AZURE_SPEECH_KEY` y `AZURE_SPEECH_REGION` como variables de entorno del usuario (ver `.env.example`).
 - Anki desktop con el complemento AnkiConnect (`2055492159`) y sesión iniciada en AnkiWeb para sincronizar.
 
-Otros comandos, sobre todo para el agente: `anki.py lookup <término>`, `gaps`, `check`, `build`.
+Otros comandos, sobre todo para el agente: `anki.py lookup <término>`, `plan` (qué tarjetas faltan), `gaps` (reparto del mazo), `check`, `guide`, `build`.

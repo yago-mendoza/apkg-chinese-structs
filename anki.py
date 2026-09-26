@@ -1,16 +1,19 @@
-"""Consulta, validación, audio y compilación del mazo de chino.
+"""Consulta, validación, cobertura, audio y compilación del mazo de chino.
 
 Uso:
     python anki.py lookup <hanzi|pinyin|significado>
-    python anki.py gaps
+    python anki.py plan [--doc <lote>]     tarjetas exigidas que faltan; --doc escribe 1-inbox/gaps-<lote>.md
+    python anki.py gaps                    reparto del mazo y pendientes
     python anki.py check
+    python anki.py guide                   regenera 5-guide/ desde 3-data/
     python anki.py audio [--dry-run]
     python anki.py build [--allow-missing-audio]
-    python anki.py push [--allow-missing-audio] [--no-sync]
+    python anki.py push [--allow-missing-audio] [--no-sync] [--prune]
 
 No llama a ningún LLM. `audio` usa la red (Azure Speech) y nunca repite audios
 ya guardados en 3-data/audio/. `push` compila, importa en Anki desktop (abriéndolo si
-hace falta) mediante el complemento AnkiConnect y sincroniza con AnkiWeb.
+hace falta) mediante el complemento AnkiConnect, ajusta plantillas, límites y orden de
+nuevas, y sincroniza con AnkiWeb.
 """
 
 import argparse
@@ -35,7 +38,8 @@ EXERCISES = DATA / "exercises.yaml"
 MEDIA = DATA / "audio"                  # MP3 generados; no regenerar
 AUDIO_MANIFEST = MEDIA / "index.yaml"
 INBOX = ROOT / "1-inbox"                  # apuntes en bruto de YAGO
-OUTPUT = ROOT / "5-output"                # lo que sale: mazo y futuras exportaciones
+GUIDE = ROOT / "5-guide"                  # guía acumulada por temas, generada
+OUTPUT = ROOT / "6-output"                # lo que sale: mazo y futuras exportaciones
 APKG = OUTPUT / "chino-practico.apkg"
 ANKI_CONNECT = "http://127.0.0.1:8765"
 
@@ -46,6 +50,10 @@ DECK_ID_BASE = 1_758_800_000_000         # ID del subdeck = base + AAAAMM
 MODEL_TYPED_ID = 1_758_800_101
 MODEL_SELF_ID = 1_758_800_102
 AUDIO_PREFIX = "acs_"
+MODEL_TYPED_NAME = "Chino práctico (tecleada)"
+MODEL_SELF_NAME = "Chino práctico (autoevaluación)"
+DECK_PRESET = "🐉 Chino práctico"          # preset propio: nunca tocar el de otros mazos
+NEW_PER_DAY, REVIEWS_PER_DAY = 15, 200
 
 AZURE_VOICE = os.environ.get("AZURE_SPEECH_VOICE", "zh-CN-YunyangNeural")
 # Más despacio que lo normal: más claro para aprender tonos.
@@ -120,6 +128,45 @@ def tones_to_numeric(hanzi, digits):
     if not chars or len(syllables) != len(digits):
         return None
     return " ".join(s + d for s, d in zip(syllables, digits))
+
+
+def syllable_tones(hanzi, reading):
+    """[(sílaba, tono)] alineando el pinyin escrito con las sílabas de pypinyin; tono 5 = neutro.
+    Un 儿 fundido con la sílaba anterior (哪儿 nǎr) se devuelve como ('r', 'erhua'). None si no alinea."""
+    from pypinyin import Style, lazy_pinyin
+    chars = "".join(c for c in hanzi or "" if "一" <= c <= "鿿")
+    if not chars or not reading:
+        return None
+    marked, out, pos = compact(reading), [], 0
+    for hz, bare in zip(chars, lazy_pinyin(chars, style=Style.NORMAL, v_to_u=True)):
+        seg = marked[pos:pos + len(bare)]
+        if strip_tones(seg) == bare:
+            tone = next((UNMARK[c][1] for c in seg if c in UNMARK), 5)
+            out.append((bare, tone))
+            pos += len(bare)
+        elif hz == "儿" and marked[pos:pos + 1] == "r":
+            out.append(("r", "erhua"))
+            pos += 1
+        else:
+            return None
+    return out if pos == len(marked) else None
+
+
+def tone_traps(hanzi, reading):
+    """Motivos por los que la pronunciación real se aparta del tono de cita: neutro, 3+3, 不/一."""
+    syl = syllable_tones(hanzi, reading)
+    if not syl or len(syl) < 2:
+        return set()
+    chars = [c for c in hanzi if "一" <= c <= "鿿"]
+    tones = [t for _, t in syl]
+    traps = set()
+    if any(t == 5 for t in tones[1:]):
+        traps.add("neutro")
+    if any(a == 3 and b == 3 for a, b in zip(tones, tones[1:])):
+        traps.add("3+3")
+    if any(c in "不一" and i + 1 < len(tones) for i, c in enumerate(chars)):
+        traps.add("不/一")
+    return traps          # el erhua (哪儿 nǎr) lo trata la pista de pronunciación, no la tarjeta de dígitos
 
 
 def strip_tones(text):
@@ -199,6 +246,109 @@ def exercise_roles(ex, sentences_by_id, entries_by_id=None):
     return roles
 
 
+# ---------------------------------------------------------------- cobertura
+#
+# Cada entrada y frase declara `use`: para qué la necesita YAGO. Escalera read ⊂ hear ⊂ say, o
+# excepción con motivo (`use_reason`): lista explícita (`[read]`, `[hear]`…), `context` (solo dentro
+# de frases, sin tarjeta propia) o `drop` (descartada). De ahí se derivan las tarjetas exigidas; lo
+# que falta lo lista `plan` y `check` lo convierte en error.
+
+USE_LADDER = {"read": {"read"}, "hear": {"read", "hear"}, "say": {"read", "hear", "say"}}
+MODALITIES = {"read", "hear", "say"}
+ROLES = {"content", "function"}
+CARD_LABELS = {
+    "read": "lectura", "listen": "escucha", "produce": "producción", "produce-sentence": "producción en frase",
+    "tones": "tonos", "speak": "voz alta", "contrast": "contraste", "recognize": "reconocimiento",
+}
+
+
+def use_modalities(item):
+    u = item.get("use")
+    if isinstance(u, list):
+        return set(u)
+    return set(USE_LADDER.get(u, ()))
+
+
+def use_label(item):
+    u = item.get("use")
+    return "/".join(u) if isinstance(u, list) else str(u)
+
+
+def groups_by_member(entries):
+    out = {}
+    for g in entries:
+        if g.get("kind") == "group":
+            for m in g.get("members", []):
+                out.setdefault(m.get("ref"), []).append(g)
+    return out
+
+
+def required_cards(item, groups_of):
+    """Tarjetas que exige una entrada o frase según su `use`, su tipo y su rol."""
+    kind, mods, req = item.get("kind"), use_modalities(item), set()
+    if kind is None:                                    # frase
+        if "hear" in mods:
+            req.add("listen")
+        if "say" in mods:
+            req.add("produce")
+    elif kind in ("word", "expression"):
+        if "read" in mods:
+            req.add("read")
+        if "hear" in mods:
+            req.add("listen")
+        if "say" in mods:
+            req.add("produce-sentence" if item.get("role") == "function" else "produce")
+        if mods & {"hear", "say"} and tone_traps(item.get("hanzi"), item.get("pinyin")):
+            req.add("tones")
+    elif kind in ("character", "component"):
+        if mods:
+            req.add("recognize")
+    elif kind == "pronunciation":
+        if "hear" in mods:
+            req.add("listen")
+        if "say" in mods:
+            req.add("speak")
+    if mods:
+        for g in groups_of.get(item.get("id"), []):
+            if g.get("basis") in ("visual", "homophone"):
+                req.add("contrast")
+    return req
+
+
+def satisfied(ex):
+    """Qué exigencias cubre un ejercicio para cada uno de sus objetivos."""
+    t, audio = ex.get("type"), (ex.get("prompt") or {}).get("audio")
+    return {
+        "read": {"read", "recognize"},
+        "listen": {"listen"},
+        "tones": {"tones", "listen"} if audio else {"tones"},
+        "produce": {"produce"},
+        "derive": {"produce"},
+        "cloze": {"produce", "produce-sentence"},
+        "speak": {"speak"},
+        "contrast": {"contrast", "recognize"},
+        "components": {"recognize"},
+    }.get(t, set())
+
+
+def coverage(entries, sentences, exercises):
+    """[(elemento, exigidas, cubiertas)] para cada entrada (salvo grupos) y frase."""
+    groups_of = groups_by_member(entries)
+    have = {}
+    for ex in exercises:
+        for tid in ex.get("targets", []):
+            have.setdefault(tid, set()).update(satisfied(ex))
+    return [(it, required_cards(it, groups_of), have.get(it["id"], set()))
+            for it in entries + sentences if it.get("kind") != "group"]
+
+
+def osmosis_gaps(entries, sentences):
+    """Palabras `say` o `context` que no aparecen en ninguna frase. Las expresiones no: ya son frases."""
+    in_sentence = {seg.get("ref") for s in sentences for seg in s.get("segments", [])}
+    return [e for e in entries if e.get("kind") == "word"
+            and ("say" in use_modalities(e) or e.get("use") == "context") and e["id"] not in in_sentence]
+
+
 def cmd_lookup(query):
     entries, sentences, exercises = load()
     sby = {s["id"]: s for s in sentences}
@@ -224,6 +374,9 @@ def cmd_lookup(query):
         print(f"\n[{e['id']}] {e['kind']}  {e.get('hanzi', e.get('title', ''))}  {e.get('pinyin', '')}")
         if e.get("meaning"):
             print("  " + " | ".join(f"{k}: {v}" for k, v in e["meaning"].items()))
+        if e.get("use") or e.get("theme"):
+            print(f"  use: {use_label(e)}" + (f" ({e['use_reason']})" if e.get("use_reason") else "")
+                  + (f" · {e['role']}" if e.get("role") else "") + f" · tema: {e.get('theme')}")
         if standalone(e):
             print(f"  se usa solo: {standalone(e)}")
             if standalone(e) != "yes":
@@ -256,56 +409,130 @@ def cmd_lookup(query):
         print("\nEn frases, sin entrada: " + ", ".join(sorted(loose)))
 
 
-SKILL_GROUPS = {
-    "lectura": {"reading"},
-    "escucha": {"listening"},
-    "producción": {"production", "speaking"},
-    "tonos": {"tones"},
-}
+PRIMARY = {"read": "lectura", "listen": "escucha", "tones": "tonos", "produce": "producción",
+           "derive": "producción", "cloze": "producción", "speak": "voz alta", "contrast": "contraste",
+           "components": "componentes"}
+GENERATED = "<!-- Generado por `anki.py guide` desde 3-data/. No editar: se rehace en cada lote. -->"
+GAPS_HEADER = ("<!-- Documento editable: escribe encima, tacha, añade dudas. "
+               "Todo lo que pongas aquí entra en el siguiente lote. -->")
+
+
+def load_themes():
+    return load_yaml(LEXICON).get("themes", [])
 
 
 def cmd_gaps():
+    """Reparto del mazo: cada tarjeta cuenta una vez, por lo que practica."""
+    from collections import Counter
     entries, sentences, exercises = load()
-    sby = {s["id"]: s for s in sentences}
-    eby = {e["id"]: e for e in entries}
     manifest = load_manifest()
-    print("Cobertura registrada (no equivale a aprendido; sin datos de repaso).\n")
-    print(f"{'entrada':22} {'lect':>4} {'escu':>4} {'prod':>4} {'tono':>4} {'ctx':>4}")
-    for e in entries:
-        if e["kind"] not in ("word", "expression"):
-            continue
-        counts = {k: 0 for k in SKILL_GROUPS}
-        contexts = set()
-        for ex in exercises:
-            role = exercise_roles(ex, sby, eby).get(e["id"])
-            if role == "objetivo":
-                for k, skills in SKILL_GROUPS.items():
-                    counts[k] += bool(skills & set(ex.get("skills", [])))
-            if role in ("contexto", "ejemplo") and (ex.get("sentence") or ex.get("reveal")):
-                contexts.update([ex.get("sentence")] + ex.get("reveal", []))
-        missing = [k for k, v in counts.items() if not v and k != "tonos"]
-        flag = "  falta: " + ", ".join(missing) if missing else ""
-        print(f"{e['id']:22} {counts['lectura']:>4} {counts['escucha']:>4} "
-              f"{counts['producción']:>4} {counts['tonos']:>4} {len(contexts - {None}):>4}{flag}")
-    others = [e for e in entries if e["kind"] not in ("word", "expression")]
-    for e in others:
-        n = sum(e["id"] in exercise_roles(ex, sby, eby) for ex in exercises)
-        print(f"{e['id']:22} ({e['kind']}) en {n} ejercicio(s)")
-    bound = [e for e in entries if standalone(e) in ("no", "rare")]
-    if bound:
-        print("\nSentidos que no se usan solos (se aprenden dentro de palabras):")
-        for e in bound:
-            words = free_words_containing(e, entries)
-            where = ", ".join(w["hanzi"] for w in words) if words else "AVISO: ninguna palabra registrada"
-            print(f"  {e.get('hanzi')} {e.get('pinyin', '')} ({standalone(e)}) → {where}")
+    by_skill = Counter(PRIMARY.get(ex.get("type"), ex.get("type")) for ex in exercises)
+    print(f"{len(exercises)} tarjetas (registrado no equivale a aprendido).\n")
+    for skill, n in by_skill.most_common():
+        print(f"  {skill:12} {n:4}  {100 * n / len(exercises):5.1f} %")
+    uses = Counter(use_label(e) for e in entries if e.get("kind") in ("word", "expression"))
+    print("\nPalabras y expresiones por use: " + ", ".join(f"{u} {n}" for u, n in uses.most_common()))
+    missing = sum(len(req - have) for _, req, have in coverage(entries, sentences, exercises))
+    print(f"Tarjetas exigidas que faltan: {missing}" + ("  (ver `plan`)" if missing else ""))
+    osm = osmosis_gaps(entries, sentences)
+    print(f"Sin frase de contexto (ósmosis): {len(osm)}" + (f" → {', '.join(e['hanzi'] for e in osm)}" if osm else ""))
     pending = sorted(t for t in required_audio(entries, sentences, exercises) if t not in manifest)
-    print(f"\nAudio pendiente: {len(pending)}" + (f" → {', '.join(pending)}" if pending else ""))
+    print(f"Audio pendiente: {len(pending)}" + (f" → {', '.join(pending)}" if pending else ""))
     loose = sorted({seg["text"] for s in sentences for seg in s["segments"]
                     if not seg.get("ref") and seg.get("pinyin")})
     if loose:
         print("Palabras en frases sin entrada: " + ", ".join(loose))
     raw = sorted(f.name for f in INBOX.glob("*.txt")) if INBOX.exists() else []
     print(f"Inbox sin procesar: {len(raw)}" + (f" → {', '.join(raw)}" if raw else ""))
+
+
+def label(item):
+    return item.get("hanzi") or item.get("title") or ("".join(seg["text"] for seg in item.get("segments", [])))
+
+
+def cmd_plan(doc=None):
+    """Lo que falta según la especificación: tarjetas exigidas ausentes y ósmosis."""
+    entries, sentences, exercises = load()
+    rows = [(it, sorted(req - have)) for it, req, have in coverage(entries, sentences, exercises) if req - have]
+    for it, miss in rows:
+        role = f", {it['role']}" if it.get("role") else ""
+        print(f"{it['id']:28} {label(it):10} ({use_label(it)}{role}): falta {', '.join(CARD_LABELS[m] for m in miss)}")
+    osm = osmosis_gaps(entries, sentences)
+    for e in osm:
+        print(f"{e['id']:28} {e['hanzi']:10} (ósmosis): no aparece en ninguna frase")
+    print(f"\n{sum(len(m) for _, m in rows)} tarjeta(s) exigida(s) que faltan; {len(osm)} entrada(s) sin frase.")
+    if doc:
+        write_gaps_doc(doc, osm)
+    return 0
+
+
+def write_gaps_doc(batch, osm):
+    """Deja en 1-inbox/ los huecos que necesitan a YAGO. Lo pendiente del digest lo añade el agente."""
+    INBOX.mkdir(exist_ok=True)
+    for old in INBOX.glob("gaps-*.md"):
+        print(f"AVISO  ya había {old.name}: archívalo en 2-raw/ con el lote que lo leyó antes de generar otro.")
+        return
+    lines = [GAPS_HEADER, "", f"# Huecos tras el lote {batch}", ""]
+    lines += ["## Palabras que quieres decir y aún no tienen frase", "",
+              "Trae una frase de clase o de tu día a día que las use (o dime una que digas tú).", ""]
+    lines += [f"- {e['hanzi']} {e.get('pinyin', '')} · {e.get('meaning', {}).get('es', '')}" for e in osm] or ["- (ninguna)"]
+    lines += ["", "## Pendiente de tus apuntes", "", "<!-- lo rellena el agente desde el digest -->", "",
+              "## Dudas y ajustes", "", "- ", ""]
+    path = INBOX / f"gaps-{batch}.md"
+    path.write_text("\n".join(lines), encoding="utf-8")
+    print(f"Escrito {path.relative_to(ROOT)}")
+
+
+def mark(item, has_cards):
+    u, mods = item.get("use"), use_modalities(item)
+    m = "❌" if u == "drop" else "✅" if (mods & {"hear", "say"} or u == "context") else "🟡"
+    return m + ("🃏" if has_cards else "")
+
+
+def cmd_guide():
+    """Regenera 5-guide/: todo lo aprendido, un archivo por tema, desde 3-data/."""
+    entries, sentences, exercises = load()
+    themes = load_themes()
+    targeted = {t for ex in exercises for t in ex.get("targets", [])}
+    eby = {e["id"]: e for e in entries}
+    GUIDE.mkdir(exist_ok=True)
+    for old in GUIDE.glob("*.md"):
+        if old.read_text(encoding="utf-8").startswith(GENERATED):
+            old.unlink()
+    index = [GENERATED, "", "# Guía", "", "Todo lo aprendido, por temas. ✅ aprender · 🟡 reconocer · ❌ descartado · 🃏 en el mazo.", ""]
+    for n, th in enumerate(themes, 1):
+        name = f"{n:02d}-{th['id']}.md"
+        items = [e for e in entries if e.get("theme") == th["id"]]
+        sents = [s for s in sentences if s.get("theme") == th["id"]]
+        out = [GENERATED, "", f"# {th['title']}", ""]
+        words = [e for e in items if e.get("kind") in ("word", "expression", "character", "component")]
+        if words:
+            out += ["## Vocabulario", ""]
+            for e in words:
+                meaning = (e.get("meaning") or {}).get("es", "")
+                notes = " · ".join(c["text"] for c in e.get("comments", []) if c.get("private", True) is False)
+                out.append(f"- {mark(e, e['id'] in targeted)} {e['hanzi']} {e.get('pinyin', '')} · {meaning}"
+                           + (f" · {notes}" if notes else ""))
+            out.append("")
+        for g in (e for e in items if e.get("kind") == "group"):
+            out += [f"## {g['title']}", "", g.get("explanation", ""), ""]
+            out += [f"- {eby[m['ref']]['hanzi']} {eby[m['ref']].get('pinyin', '')} · {m.get('cue', '')}"
+                    for m in g.get("members", []) if m["ref"] in eby]
+            out.append("")
+        for pr in (e for e in items if e.get("kind") == "pronunciation"):
+            out += [f"## {pr['title']}", "", " ".join(pr.get("explanation", "").split()), ""]
+            out += [f"- {c['text']}" for c in pr.get("comments", []) if c.get("private", True) is False]
+            out.append("")
+        if sents:
+            out += ["## Frases", ""]
+            out += [f"- {mark(s, s['id'] in targeted)} {sentence_text(s)} · {sentence_pinyin(s)} · "
+                    f"{s['translation'].get('es', '')}" for s in sents]
+            out.append("")
+        (GUIDE / name).write_text("\n".join(out), encoding="utf-8")
+        index.append(f"- [{th['title']}]({name}) · {len(items)} entradas, {len(sents)} frases")
+    (GUIDE / "README.md").write_text("\n".join(index) + "\n", encoding="utf-8")
+    print(f"Guía regenerada: {len(themes)} temas en {GUIDE.relative_to(ROOT)}/")
+    return 0
 
 
 # ---------------------------------------------------------------- validación
@@ -460,6 +687,35 @@ def validate(entries, sentences, exercises, require_audio=True):
                        for e in entries)
         if w and not accepted:
             warnings.append(f"{xid}: {w}")
+    # Especificación de cobertura: use, rol, tema y tarjetas exigidas.
+    theme_ids = {t["id"] for t in load_themes()}
+    for it in entries + sentences:
+        iid, kind, u = it["id"], it.get("kind"), it.get("use")
+        if kind != "group":
+            if isinstance(u, list):
+                if not u or not set(u) <= MODALITIES:
+                    errors.append(f"{iid}: use en lista solo admite {sorted(MODALITIES)}")
+            elif u not in (*USE_LADDER, "context", "drop"):
+                errors.append(f"{iid}: falta use (read | hear | say, o excepción con use_reason)")
+            if (isinstance(u, list) or u in ("context", "drop")) and not it.get("use_reason"):
+                errors.append(f"{iid}: use «{use_label(it)}» es una excepción y necesita use_reason")
+        if kind in ("word", "expression") and it.get("role") not in ROLES:
+            errors.append(f"{iid}: role debe ser content o function")
+        if it.get("theme") not in theme_ids:
+            errors.append(f"{iid}: theme «{it.get('theme')}» no está en themes")
+    for ex in exercises:
+        for tid in ex.get("targets", []):
+            if ex.get("type") == "produce" and eby.get(tid, {}).get("role") == "function":
+                warnings.append(f"{ex['id']}: producción suelta de {tid}, palabra gramatical: se practica en frase (cloze)")
+    dropped = {it["id"] for it in entries + sentences if it.get("use") == "drop"}
+    for ex in exercises:
+        for tid in set(ex.get("targets", [])) & dropped:
+            errors.append(f"{ex['id']}: evalúa {tid}, que está descartada (use: drop)")
+    for it, req, have in coverage(entries, sentences, exercises):
+        for m in sorted(req - have):
+            errors.append(f"{it['id']} ({label(it)}): falta tarjeta de {CARD_LABELS[m]} (ver `plan`)")
+    for e in osmosis_gaps(entries, sentences):
+        warnings.append(f"{e['id']} ({e['hanzi']}): use {use_label(e)} sin ninguna frase que la contenga (ósmosis)")
     if require_audio:
         manifest = load_manifest()
         for t in sorted(required_audio(entries, sentences, exercises)):
@@ -551,14 +807,66 @@ CSS = """
 .seg .hz { font-size: 30px; }
 .gap { min-width: 1.6em; border-bottom: 3px dashed #999; }
 .c0 { --c: #4e79a7; } .c1 { --c: #f28e2b; } .c2 { --c: #59a14f; } .c3 { --c: #b07aa1; } .c4 { --c: #9c755f; }
+.acs-in { font-size: 20px; padding: 6px 10px; width: 12em; max-width: 90%; text-align: center;
+          border: 1px solid #999; border-radius: 6px; background: transparent; color: inherit; }
+#acs-result { font-size: 20px; margin-bottom: 8px; }
+.acs-ok { color: #2e7d32; } .acs-bad { color: #c62828; }
 """
 # Los colores solo alinean segmentos hanzi↔pinyin; los tonos se leen por sus marcas.
 
 FIELDS = ["ExerciseID", "Task", "Front", "PromptAudio", "Answer", "Back", "AnswerAudio", "Notes"]
 
-FRONT_TYPED = '<div class="task">{{Task}}</div>{{Front}}{{PromptAudio}}<br>{{type:Answer}}'
+# Respuesta tecleada sin la comparación literal de Anki: la tarjeta guarda lo escrito (sessionStorage)
+# y el reverso lo compara normalizado (espacios, mayúsculas, tildes o dígitos, v = ü). Si el cliente
+# no conserva sessionStorage entre anverso y reverso, la tarjeta queda como autoevaluación.
+TYPED_JS_FRONT = """<script>
+setTimeout(function () {
+  var i = document.getElementById('acs-in'); if (!i) return;
+  if (document.getElementById('answer')) { i.style.display = 'none'; return; }
+  var save = function () { try { sessionStorage.setItem('acs-typed', i.value); } catch (e) {} };
+  try { sessionStorage.removeItem('acs-typed'); } catch (e) {}
+  i.addEventListener('input', save);
+  i.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') { save(); try { pycmd('ans'); } catch (x) {} }
+  });
+  i.focus();
+}, 0);
+</script>"""
+
+TYPED_JS_BACK = """<script>
+setTimeout(function () {
+  var M = {a:'āáǎà', e:'ēéěè', i:'īíǐì', o:'ōóǒò', u:'ūúǔù', 'ü':'ǖǘǚǜ'};
+  function mark(s) {
+    return s.replace(/([a-zü]+)([1-5]?)/g, function (_, b, t) {
+      if (!t || t === '5') return b;
+      var i = b.indexOf('a') >= 0 ? b.indexOf('a') : b.indexOf('e') >= 0 ? b.indexOf('e')
+            : b.indexOf('ou') >= 0 ? b.indexOf('o') : -1;
+      if (i < 0) for (var k = b.length - 1; k >= 0; k--) if ('iouü'.indexOf(b[k]) >= 0) { i = k; break; }
+      return i < 0 ? b : b.slice(0, i) + M[b[i]][t - 1] + b.slice(i + 1);
+    });
+  }
+  function norm(s) {
+    s = (s || '').normalize('NFC').toLowerCase().replace(/u:/g, 'ü').replace(/v/g, 'ü')
+          .replace(/[\\s'’·,.\\-]/g, '');
+    return /^[1-5]+$/.test(s) ? s : mark(s);
+  }
+  var out = document.getElementById('acs-result'), exp = document.getElementById('acs-expected');
+  if (!out || !exp) return;
+  var typed = null; try { typed = sessionStorage.getItem('acs-typed'); } catch (e) {}
+  if (typed === null || typed.trim() === '') return;
+  var ok = norm(typed) === norm(exp.textContent);
+  out.className = ok ? 'acs-ok' : 'acs-bad';
+  out.textContent = ok ? '✓ ' + typed : '✗ ' + typed;
+}, 0);
+</script>"""
+
+FRONT_TYPED = ('<div class="task">{{Task}}</div>{{Front}}{{PromptAudio}}'
+               '<br><input id="acs-in" class="acs-in" autocomplete="off" autocapitalize="off" '
+               'autocorrect="off" spellcheck="false" placeholder="pinyin">' + TYPED_JS_FRONT)
 FRONT_SELF = '<div class="task">{{Task}}</div>{{Front}}{{PromptAudio}}'
-BACK = '{{FrontSide}}<hr id="answer">{{Back}}{{AnswerAudio}}{{Notes}}'
+BACK = ('{{FrontSide}}<hr id="answer"><div id="acs-result"></div>'
+        '<div id="acs-expected" style="display:none">{{Answer}}</div>'
+        '{{Back}}{{AnswerAudio}}{{Notes}}' + TYPED_JS_BACK)
 BACK_SELF = '{{FrontSide}}<hr id="answer">{{Back}}{{AnswerAudio}}{{Notes}}'
 
 
@@ -674,9 +982,9 @@ def cmd_build(allow_missing_audio):
         return 1
     fields = [{"name": f} for f in FIELDS]
     models = {
-        "typed": genanki.Model(MODEL_TYPED_ID, "Chino práctico (tecleada)", fields=fields, css=CSS,
+        "typed": genanki.Model(MODEL_TYPED_ID, MODEL_TYPED_NAME, fields=fields, css=CSS,
                                templates=[{"name": "Tarjeta", "qfmt": FRONT_TYPED, "afmt": BACK}]),
-        "self": genanki.Model(MODEL_SELF_ID, "Chino práctico (autoevaluación)", fields=fields, css=CSS,
+        "self": genanki.Model(MODEL_SELF_ID, MODEL_SELF_NAME, fields=fields, css=CSS,
                               templates=[{"name": "Tarjeta", "qfmt": FRONT_SELF, "afmt": BACK_SELF}]),
     }
     # Anki deja cada tarjeta en el deck donde se importó por primera vez: el mes no se reasigna.
@@ -734,7 +1042,82 @@ def find_anki():
     return next((c for c in candidates if c and os.path.exists(c)), None)
 
 
-def cmd_push(allow_missing_audio, sync):
+STAGE = {"read": 0, "contrast": 1, "components": 1, "listen": 2, "tones": 3,
+         "produce": 4, "derive": 4, "cloze": 4, "speak": 5}
+
+
+def new_card_order(entries, sentences, exercises):
+    """Posición de cada ejercicio entre las nuevas: por tema, y cada paso (lectura, escucha, tonos,
+    producción) dos temas por detrás del anterior, para que las tarjetas de una misma entrada no
+    salgan el mismo día (Anki solo separa hermanas de una misma nota)."""
+    theme_idx = {t["id"]: i for i, t in enumerate(load_themes())}
+    items = {it["id"]: (theme_idx.get(it.get("theme"), 99), n) for n, it in enumerate(entries + sentences)}
+    def key(ex):
+        th, n = items.get((ex.get("targets") or [None])[0], (99, 0))
+        stage = STAGE.get(ex.get("type"), 1)
+        return (th + 2 * stage, th, n, stage, ex["id"])
+    return {ex["id"]: pos for pos, ex in enumerate(sorted(exercises, key=key))}
+
+
+def our_decks():
+    return [d for d in anki_request("deckNames") if d == DECK_NAME or d.startswith(DECK_NAME + "::")]
+
+
+def sync_templates():
+    """El importador no siempre actualiza plantillas de un tipo de nota existente: se fuerzan."""
+    for name, front, back in ((MODEL_TYPED_NAME, FRONT_TYPED, BACK), (MODEL_SELF_NAME, FRONT_SELF, BACK_SELF)):
+        anki_request("updateModelTemplates", model={"name": name, "templates": {"Tarjeta": {"Front": front, "Back": back}}})
+        anki_request("updateModelStyling", model={"name": name, "css": CSS})
+
+
+def ensure_limits():
+    """Preset propio con los límites diarios; nunca se modifica el preset que usan otros mazos."""
+    decks = our_decks()
+    confs = {d: anki_request("getDeckConfig", deck=d) for d in decks}
+    ours = next((c["id"] for c in confs.values() if c.get("name") == DECK_PRESET), None)
+    if ours is None:
+        ours = anki_request("cloneDeckConfigId", name=DECK_PRESET, cloneFrom=confs[DECK_NAME]["id"])
+    anki_request("setDeckConfigId", decks=decks, configId=ours)
+    conf = anki_request("getDeckConfig", deck=DECK_NAME)
+    if conf["new"]["perDay"] != NEW_PER_DAY or conf["rev"]["perDay"] != REVIEWS_PER_DAY:
+        conf["new"]["perDay"], conf["rev"]["perDay"] = NEW_PER_DAY, REVIEWS_PER_DAY
+        anki_request("saveDeckConfig", config=conf)
+    return f"{NEW_PER_DAY} nuevas y {REVIEWS_PER_DAY} repasos al día (preset «{DECK_PRESET}»)"
+
+
+def reorder_new(order):
+    cards = anki_request("findCards", query=f'"deck:{DECK_NAME}" is:new')
+    if not cards:
+        return 0
+    info = anki_request("cardsInfo", cards=cards)
+    base = min(c["due"] for c in info)
+    actions = []
+    for c in info:
+        pos = order.get(c["fields"].get("ExerciseID", {}).get("value"))
+        if pos is not None and c["due"] != base + pos:
+            actions.append({"action": "setSpecificValueOfCard",
+                            "params": {"card": c["cardId"], "keys": ["due"], "newValues": [base + pos]}})
+    for i in range(0, len(actions), 200):
+        anki_request("multi", actions=actions[i:i + 200])
+    return len(actions)
+
+
+def orphans(exercises, prune):
+    notes = anki_request("findNotes", query=f'"deck:{DECK_NAME}"')
+    info = anki_request("notesInfo", notes=notes) if notes else []
+    ids = {ex["id"] for ex in exercises}
+    lost = [n for n in info if n["modelName"] in (MODEL_TYPED_NAME, MODEL_SELF_NAME)
+            and n["fields"]["ExerciseID"]["value"] not in ids]
+    for n in lost:
+        print(f"  huérfana: {n['fields']['ExerciseID']['value']}")
+    if lost and prune:
+        anki_request("deleteNotes", notes=[n["noteId"] for n in lost])
+        print(f"Borradas {len(lost)} nota(s) huérfana(s).")
+    elif lost:
+        print(f"{len(lost)} nota(s) del mazo ya no existen en 3-data/. Revisar y repetir con --prune para borrarlas.")
+
+
+def cmd_push(allow_missing_audio, sync, prune=False):
     import subprocess
     import time
     if cmd_build(allow_missing_audio):
@@ -756,8 +1139,14 @@ def cmd_push(allow_missing_audio, sync):
                 return 1
             time.sleep(1)
     anki_request("importPackage", path=str(APKG.resolve()))
-    anki_request("guiDeckBrowser")
     print(f"Importado en Anki: {APKG.name}")
+    entries, sentences, exercises = load()
+    sync_templates()
+    print("Límites: " + ensure_limits())
+    moved = reorder_new(new_card_order(entries, sentences, exercises))
+    print(f"Orden de nuevas: {moved} tarjeta(s) recolocada(s).")
+    orphans(exercises, prune)
+    anki_request("guiDeckBrowser")
     if not sync:
         return 0
     try:
@@ -788,6 +1177,10 @@ def main():
     u = sub.add_parser("push")
     u.add_argument("--allow-missing-audio", action="store_true")
     u.add_argument("--no-sync", action="store_true")
+    u.add_argument("--prune", action="store_true", help="borrar notas del mazo cuyo ejercicio ya no existe")
+    pl = sub.add_parser("plan")
+    pl.add_argument("--doc", metavar="LOTE", help="escribe 1-inbox/gaps-<LOTE>.md")
+    sub.add_parser("guide")
     args = p.parse_args()
     if args.cmd == "lookup":
         return cmd_lookup(args.query) or 0
@@ -798,7 +1191,11 @@ def main():
     if args.cmd == "audio":
         return cmd_audio(args.dry_run)
     if args.cmd == "push":
-        return cmd_push(args.allow_missing_audio, not args.no_sync)
+        return cmd_push(args.allow_missing_audio, not args.no_sync, args.prune)
+    if args.cmd == "plan":
+        return cmd_plan(args.doc)
+    if args.cmd == "guide":
+        return cmd_guide()
     return cmd_build(args.allow_missing_audio)
 
 

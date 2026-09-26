@@ -2,6 +2,7 @@
 # type: read | listen | tones | cloze | produce | speak   (ver README, repertorio)
 # targets: lo que se evalúa. context: vocabulario visible en la pregunta.
 # reveal: frases que solo aparecen al revelar la respuesta.
+# frases: use (say = frase modelo; hear = de ejemplo) y theme.
 # added: fecha de creación; decide el subdeck mensual (🐉 Chino práctico::AAAA-MM). No cambiarla.
 # answer.typed: respuesta tecleada en pinyin numérico (he1, ni3 hao3, 5 = neutro)
 #   o, en ejercicios de tonos, solo un dígito por sílaba (什么 → '25', entre comillas).
@@ -11,6 +12,8 @@ version: 1
 
 sentences:
   - id: s.ni-he-shui-ma
+    use: say
+    theme: compras
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 喝, ref: w.he.drink, pinyin: hē}
@@ -22,6 +25,8 @@ sentences:
   # ============ Lote 2026-09-25: primeras clases
 
   - id: s.ni-hao-ma
+    use: say
+    theme: saludos
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 好, ref: w.hao, pinyin: hǎo}
@@ -29,6 +34,8 @@ sentences:
       - {text: ？}
     translation: {es: '¿Qué tal estás?', en: 'How are you?'}
   - id: s.wo-hen-hao-ni-ne
+    use: say
+    theme: saludos
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 很, ref: w.hen, pinyin: hěn}
@@ -39,6 +46,8 @@ sentences:
       - {text: ？}
     translation: {es: 'Estoy bien, ¿y tú?', en: 'I''m fine, and you?'}
   - id: s.wo-ye-hen-hao
+    use: say
+    theme: saludos
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 也, ref: w.ye, pinyin: yě}
@@ -47,6 +56,8 @@ sentences:
       - {text: 。}
     translation: {es: Yo también estoy bien., en: I'm fine too.}
   - id: s.ni-jiao-shenme-mingzi
+    use: say
+    theme: presentarse
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 叫, ref: w.jiao, pinyin: jiào}
@@ -55,6 +66,8 @@ sentences:
       - {text: ？}
     translation: {es: '¿Cómo te llamas?', en: 'What''s your name?'}
   - id: s.wo-jiao-dawei
+    use: hear
+    theme: presentarse
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 叫, ref: w.jiao, pinyin: jiào}
@@ -62,6 +75,8 @@ sentences:
       - {text: 。}
     translation: {es: Me llamo David., en: My name is David.}
   - id: s.hen-gaoxing-renshi-ni
+    use: say
+    theme: presentarse
     segments:
       - {text: 很, ref: w.hen, pinyin: hěn}
       - {text: 高兴, ref: w.gaoxing, pinyin: gāoxìng}
@@ -70,6 +85,8 @@ sentences:
       - {text: 。}
     translation: {es: Encantado de conocerte., en: Nice to meet you.}
   - id: s.ni-shi-zhongguoren-ma
+    use: hear
+    theme: presentarse
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 是, ref: w.shi, pinyin: shì}
@@ -79,6 +96,8 @@ sentences:
       - {text: ？}
     translation: {es: '¿Eres chino?', en: 'Are you Chinese?'}
   - id: s.wo-shi-xibanyaren
+    use: say
+    theme: presentarse
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 是, ref: w.shi, pinyin: shì}
@@ -87,6 +106,8 @@ sentences:
       - {text: 。}
     translation: {es: Soy español., en: I'm Spanish.}
   - id: s.wo-bu-shi-xuesheng
+    use: say
+    theme: presentarse
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 不, ref: w.bu, pinyin: bú, sandhi: bù → bú delante de cuarto tono}
@@ -99,6 +120,8 @@ sentences:
       - {text: 。}
     translation: {es: 'No soy estudiante, soy profesor.', en: 'I''m not a student, I''m a teacher.'}
   - id: s.wo-shi-gongchengshi
+    use: say
+    theme: presentarse
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 是, ref: w.shi, pinyin: shì}
@@ -106,6 +129,8 @@ sentences:
       - {text: 。}
     translation: {es: Soy ingeniero., en: I'm an engineer.}
   - id: s.ta-shi-wo-de-laoshi
+    use: hear
+    theme: personas
     segments:
       - {text: 她, ref: w.ta.she, pinyin: tā}
       - {text: 是, ref: w.shi, pinyin: shì}
@@ -115,6 +140,8 @@ sentences:
       - {text: 。}
     translation: {es: Ella es mi profesora., en: She is my teacher.}
   - id: s.women-shi-pengyou
+    use: say
+    theme: personas
     segments:
       - {text: 我们, ref: w.women, pinyin: wǒmen}
       - {text: 是, ref: w.shi, pinyin: shì}
@@ -122,6 +149,8 @@ sentences:
       - {text: 。}
     translation: {es: Somos amigos., en: We are friends.}
   - id: s.wo-xiang-qu-shangdian
+    use: say
+    theme: compras
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 想, ref: w.xiang, pinyin: xiǎng}
@@ -130,6 +159,8 @@ sentences:
       - {text: 。}
     translation: {es: Quiero ir a la tienda., en: I want to go to the shop.}
   - id: s.wo-xiang-mai-shuiguo
+    use: say
+    theme: compras
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 想, ref: w.xiang, pinyin: xiǎng}
@@ -138,6 +169,8 @@ sentences:
       - {text: 。}
     translation: {es: Quiero comprar fruta., en: I want to buy fruit.}
   - id: s.shangdian-zai-nar
+    use: say
+    theme: compras
     segments:
       - {text: 商店, ref: w.shangdian, pinyin: shāngdiàn}
       - {text: 在, ref: w.zai.at, pinyin: zài}
@@ -145,6 +178,8 @@ sentences:
       - {text: ？}
     translation: {es: '¿Dónde está la tienda?', en: 'Where is the shop?'}
   - id: s.ta-hen-gao
+    use: say
+    theme: describir
     segments:
       - {text: 他, ref: w.ta.he, pinyin: tā}
       - {text: 很, ref: w.hen, pinyin: hěn}
@@ -152,6 +187,8 @@ sentences:
       - {text: 。}
     translation: {es: Él es alto., en: He is tall.}
   - id: s.ta-hen-piaoliang
+    use: hear
+    theme: describir
     segments:
       - {text: 她, ref: w.ta.she, pinyin: tā}
       - {text: 很, ref: w.hen, pinyin: hěn}
@@ -159,6 +196,8 @@ sentences:
       - {text: 。}
     translation: {es: Ella es guapa., en: She is pretty.}
   - id: s.ta-hen-keai
+    use: hear
+    theme: describir
     segments:
       - {text: 它, ref: w.ta.it, pinyin: tā}
       - {text: 很, ref: w.hen, pinyin: hěn}
@@ -166,6 +205,8 @@ sentences:
       - {text: 。}
     translation: {es: Es muy mono (un animal)., en: It's cute.}
   - id: s.haode-xiexie
+    use: say
+    theme: saludos
     segments:
       - {text: 好的, ref: e.haode, pinyin: hǎo de}
       - {text: ，}
@@ -173,12 +214,16 @@ sentences:
       - {text: ！}
     translation: {es: 'Vale, ¡gracias!', en: 'OK, thanks!'}
   - id: s.mingtian-jian
+    use: say
+    theme: tiempo
     segments:
       - {text: 明天, ref: w.mingtian, pinyin: míngtiān}
       - {text: 见, ref: w.jian, pinyin: jiàn}
       - {text: ！}
     translation: {es: ¡Hasta mañana!, en: See you tomorrow!}
   - id: s.wo-zai-kan-shu
+    use: say
+    theme: cosas
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 在, ref: w.zai.progressive, pinyin: zài}
@@ -186,6 +231,114 @@ sentences:
       - {text: 书, ref: w.shu, pinyin: shū}
       - {text: 。}
     translation: {es: Estoy leyendo., en: I'm reading.}
+
+  # Frases de los apuntes del lote 001 añadidas en la fase 1 (ósmosis). En las dos con nombre
+  # ilegible en los apuntes (Xīm?) se ha quitado el nombre.
+
+  - id: s.ta-shi-wo-de-baba
+    use: say
+    theme: familia
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt}
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 爸爸, ref: w.baba, pinyin: bàba}
+      - {text: 。}
+    translation: {es: 'Él es mi padre.', en: 'He is my dad.'}
+
+  - id: s.ta-shi-wo-de-mama
+    use: hear
+    theme: familia
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt}
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: tā}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 妈妈, ref: w.mama, pinyin: māma}
+      - {text: 。}
+    translation: {es: 'Ella es mi madre.', en: 'She is my mom.'}
+
+  - id: s.women-dou-shi-xuesheng
+    use: say
+    theme: presentarse
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt}
+    segments:
+      - {text: 我们, ref: w.women, pinyin: wǒmen}
+      - {text: 都, ref: w.dou, pinyin: dōu}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 学生, ref: w.xuesheng, pinyin: xuéshēng}
+      - {text: 。}
+    translation: {es: 'Todos somos estudiantes.', en: 'We are all students.'}
+
+  - id: s.nimen-bu-shi-xuesheng-ma
+    use: hear
+    theme: presentarse
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt}
+    segments:
+      - {text: 你们, ref: w.nimen, pinyin: nǐmen}
+      - {text: 不, ref: w.bu, pinyin: bú, sandhi: bù → bú delante de cuarto tono}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 学生, ref: w.xuesheng, pinyin: xuéshēng}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿No sois estudiantes?', en: 'Aren''t you students?'}
+
+  - id: s.nin-shi-women-de-laoshi-ma
+    use: hear
+    theme: personas
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt}
+    segments:
+      - {text: 您, ref: w.nin, pinyin: nín}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 我们, ref: w.women, pinyin: wǒmen}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 老师, ref: w.laoshi, pinyin: lǎoshī}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Es usted nuestra profesora?', en: 'Are you our teacher?'}
+
+  - id: s.tamen-dou-shi-zhongguoren-ma
+    use: hear
+    theme: presentarse
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt}
+    segments:
+      - {text: 他们, ref: w.tamen, pinyin: tāmen}
+      - {text: 都, ref: w.dou, pinyin: dōu}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 中国, ref: w.zhongguo, pinyin: Zhōngguó}
+      - {text: 人, ref: w.ren, pinyin: rén}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Son todos chinos?', en: 'Are they all Chinese?'}
+
+  - id: s.dui-wo-shi-nimen-de-laoshi
+    use: hear
+    theme: personas
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt}
+    segments:
+      - {text: 对, ref: w.dui, pinyin: duì}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 你们, ref: w.nimen, pinyin: nǐmen}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 老师, ref: w.laoshi, pinyin: lǎoshī}
+      - {text: 。}
+    translation: {es: 'Sí, soy vuestro profesor.', en: 'Yes, I''m your teacher.'}
+
+  - id: s.xiawu-qu-shangdian
+    use: say
+    theme: tiempo
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt}
+    segments:
+      - {text: 下午, ref: w.xiawu, pinyin: xiàwǔ}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 商店, ref: w.shangdian, pinyin: shāngdiàn}
+      - {text: 。}
+    translation: {es: 'Por la tarde voy a la tienda.', en: 'In the afternoon I go to the shop.'}
 
 exercises:
   - id: x.read.he
@@ -1174,33 +1327,6 @@ exercises:
     answer: {typed: shi4, hanzi: 是, pinyin: shì, meaning: ser}
     lang: es
     comments: []
-  - id: x.produce.bu
-    added: 2026-09-25
-    type: produce
-    targets: [w.bu]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «no (negación)»? Escribe el pinyin.'}
-    answer: {typed: bu4, hanzi: 不, pinyin: bù, meaning: 'no'}
-    lang: es
-    comments: []
-  - id: x.produce.ye
-    added: 2026-09-25
-    type: produce
-    targets: [w.ye]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «también»? Escribe el pinyin.'}
-    answer: {typed: ye3, hanzi: 也, pinyin: yě, meaning: también}
-    lang: es
-    comments: []
-  - id: x.produce.shenme
-    added: 2026-09-25
-    type: produce
-    targets: [w.shenme]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «qué»? Escribe el pinyin.'}
-    answer: {typed: shen2 me5, hanzi: 什么, pinyin: shénme, meaning: qué}
-    lang: es
-    comments: []
   - id: x.produce.mingzi
     added: 2026-09-25
     type: produce
@@ -1962,5 +2088,1636 @@ exercises:
     skills: [speaking]
     prompt: {text: 'Lee en voz alta: xué con la lengua plana abajo; shēng con la punta curvada arriba.', hanzi: 学生, pinyin: xuéshēng}
     answer: {hanzi: 学生, pinyin: xuéshēng, meaning: estudiante}
+    lang: es
+    comments: []
+
+  # ============ Fase 1 (2026-09-26): tarjetas exigidas por use, generadas desde `plan`
+
+  - id: x.listen.wo
+    added: 2026-09-26
+    type: listen
+    targets: [w.wo]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 我, pinyin: wǒ, meaning: yo; me}
+    reveal: [s.wo-hen-hao-ni-ne]
+    lang: es
+    comments: []
+  - id: x.produce.wo
+    added: 2026-09-26
+    type: produce
+    targets: [w.wo]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «yo; me»? Escribe el pinyin.'}
+    answer: {typed: wo3, hanzi: 我, pinyin: wǒ, meaning: yo; me}
+    lang: es
+    comments: []
+  - id: x.read.wo
+    added: 2026-09-26
+    type: read
+    targets: [w.wo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 我}
+    answer: {hanzi: 我, pinyin: wǒ, meaning: yo; me}
+    reveal: [s.wo-hen-hao-ni-ne]
+    lang: es
+    comments: []
+  - id: x.listen.he.drink
+    added: 2026-09-26
+    type: listen
+    targets: [w.he.drink]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 喝, pinyin: hē, meaning: beber}
+    reveal: [s.ni-he-shui-ma]
+    lang: es
+    comments: []
+  - id: x.produce.he.drink
+    added: 2026-09-26
+    type: produce
+    targets: [w.he.drink]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «beber»? Escribe el pinyin.'}
+    answer: {typed: he1, hanzi: 喝, pinyin: hē, meaning: beber}
+    lang: es
+    comments: []
+  - id: x.produce.shui
+    added: 2026-09-26
+    type: produce
+    targets: [w.shui]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «agua»? Escribe el pinyin.'}
+    answer: {typed: shui3, hanzi: 水, pinyin: shuǐ, meaning: agua}
+    lang: es
+    comments: []
+  - id: x.read.shui
+    added: 2026-09-26
+    type: read
+    targets: [w.shui]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 水}
+    answer: {hanzi: 水, pinyin: shuǐ, meaning: agua}
+    reveal: [s.ni-he-shui-ma]
+    lang: es
+    comments: []
+  - id: x.listen.nihao
+    added: 2026-09-26
+    type: listen
+    targets: [e.nihao]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 你好, pinyin: nǐ hǎo, meaning: hola}
+    lang: es
+    comments: []
+  - id: x.produce.nihao
+    added: 2026-09-26
+    type: produce
+    targets: [e.nihao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «hola»? Escribe el pinyin.'}
+    answer: {typed: ni3 hao3, hanzi: 你好, pinyin: nǐ hǎo, meaning: hola}
+    lang: es
+    comments: []
+  - id: x.tones.nihao
+    added: 2026-09-26
+    type: tones
+    targets: [e.nihao]
+    refs: [p.third-tone-sandhi]
+    skills: [tones, pinyin]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 你好, pinyin: ni hao}
+    answer: {typed: '33', hanzi: 你好, pinyin: nǐ hǎo, meaning: hola}
+    lang: es
+    comments: []
+  - id: x.listen.xiexie
+    added: 2026-09-26
+    type: listen
+    targets: [e.xiexie]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 谢谢, pinyin: xièxie, meaning: gracias}
+    reveal: [s.haode-xiexie]
+    lang: es
+    comments: []
+  - id: x.read.xiexie
+    added: 2026-09-26
+    type: read
+    targets: [e.xiexie]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 谢谢}
+    answer: {hanzi: 谢谢, pinyin: xièxie, meaning: gracias}
+    reveal: [s.haode-xiexie]
+    lang: es
+    comments: []
+  - id: x.listen.shangwu
+    added: 2026-09-26
+    type: listen
+    targets: [w.shangwu]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 上午, pinyin: shàngwǔ, meaning: por la mañana (antes de mediodía)}
+    lang: es
+    comments: []
+  - id: x.produce.shangwu
+    added: 2026-09-26
+    type: produce
+    targets: [w.shangwu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «por la mañana (antes de mediodía)»? Escribe el pinyin.'}
+    answer: {typed: shang4 wu3, hanzi: 上午, pinyin: shàngwǔ, meaning: por la mañana (antes de mediodía)}
+    lang: es
+    comments: []
+  - id: x.read.shangwu
+    added: 2026-09-26
+    type: read
+    targets: [w.shangwu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 上午}
+    answer: {hanzi: 上午, pinyin: shàngwǔ, meaning: por la mañana (antes de mediodía)}
+    lang: es
+    comments: []
+  - id: x.listen.zhongwu
+    added: 2026-09-26
+    type: listen
+    targets: [w.zhongwu]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 中午, pinyin: zhōngwǔ, meaning: mediodía}
+    lang: es
+    comments: []
+  - id: x.produce.zhongwu
+    added: 2026-09-26
+    type: produce
+    targets: [w.zhongwu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «mediodía»? Escribe el pinyin.'}
+    answer: {typed: zhong1 wu3, hanzi: 中午, pinyin: zhōngwǔ, meaning: mediodía}
+    lang: es
+    comments: []
+  - id: x.read.zhongwu
+    added: 2026-09-26
+    type: read
+    targets: [w.zhongwu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 中午}
+    answer: {hanzi: 中午, pinyin: zhōngwǔ, meaning: mediodía}
+    lang: es
+    comments: []
+  - id: x.listen.xiawu
+    added: 2026-09-26
+    type: listen
+    targets: [w.xiawu]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 下午, pinyin: xiàwǔ, meaning: por la tarde}
+    reveal: [s.xiawu-qu-shangdian]
+    lang: es
+    comments: []
+  - id: x.read.xiawu
+    added: 2026-09-26
+    type: read
+    targets: [w.xiawu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 下午}
+    answer: {hanzi: 下午, pinyin: xiàwǔ, meaning: por la tarde}
+    reveal: [s.xiawu-qu-shangdian]
+    lang: es
+    comments: []
+  - id: x.speak.third-tone-sandhi
+    added: 2026-09-26
+    type: speak
+    targets: [p.third-tone-sandhi]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Lee en voz alta: dos terceros tonos seguidos, la primera sube. Compara con el audio.', hanzi: 水果, pinyin: shuǐguǒ}
+    answer: {hanzi: 水果, pinyin: shuǐguǒ, meaning: 'fruta: suena shuíguǒ'}
+    skills: [speaking, tones]
+    lang: es
+    comments: []
+  - id: x.listen.ni
+    added: 2026-09-26
+    type: listen
+    targets: [w.ni]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 你, pinyin: nǐ, meaning: tú}
+    reveal: [s.ni-he-shui-ma]
+    lang: es
+    comments: []
+  - id: x.produce.ni
+    added: 2026-09-26
+    type: produce
+    targets: [w.ni]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «tú»? Escribe el pinyin.'}
+    answer: {typed: ni3, hanzi: 你, pinyin: nǐ, meaning: tú}
+    lang: es
+    comments: []
+  - id: x.listen.nin
+    added: 2026-09-26
+    type: listen
+    targets: [w.nin]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 您, pinyin: nín, meaning: usted (tú con respeto)}
+    reveal: [s.nin-shi-women-de-laoshi-ma]
+    lang: es
+    comments: []
+  - id: x.produce.nin
+    added: 2026-09-26
+    type: produce
+    targets: [w.nin]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «usted (tú con respeto)»? Escribe el pinyin.'}
+    answer: {typed: nin2, hanzi: 您, pinyin: nín, meaning: usted (tú con respeto)}
+    lang: es
+    comments: []
+  - id: x.listen.women
+    added: 2026-09-26
+    type: listen
+    targets: [w.women]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 我们, pinyin: wǒmen, meaning: nosotros}
+    reveal: [s.women-shi-pengyou]
+    lang: es
+    comments: []
+  - id: x.listen.nimen
+    added: 2026-09-26
+    type: listen
+    targets: [w.nimen]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 你们, pinyin: nǐmen, meaning: vosotros}
+    reveal: [s.nimen-bu-shi-xuesheng-ma]
+    lang: es
+    comments: []
+  - id: x.produce.nimen
+    added: 2026-09-26
+    type: produce
+    targets: [w.nimen]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «vosotros»? Escribe el pinyin.'}
+    answer: {typed: ni3 men5, hanzi: 你们, pinyin: nǐmen, meaning: vosotros}
+    lang: es
+    comments: []
+  - id: x.tones.nimen
+    added: 2026-09-26
+    type: tones
+    targets: [w.nimen]
+    refs: [p.neutral-tone]
+    skills: [tones, pinyin]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 你们, pinyin: ni men}
+    answer: {typed: '35', hanzi: 你们, pinyin: nǐmen, meaning: vosotros}
+    lang: es
+    comments: []
+  - id: x.listen.ta.he
+    added: 2026-09-26
+    type: listen
+    targets: [w.ta.he]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 他, pinyin: tā, meaning: él}
+    reveal: [s.ta-hen-gao]
+    lang: es
+    comments: []
+  - id: x.produce.ta.he
+    added: 2026-09-26
+    type: produce
+    targets: [w.ta.he]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «él»? Escribe el pinyin.'}
+    answer: {typed: ta1, hanzi: 他, pinyin: tā, meaning: él}
+    lang: es
+    comments: []
+  - id: x.read.ta.he
+    added: 2026-09-26
+    type: read
+    targets: [w.ta.he]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 他}
+    answer: {hanzi: 他, pinyin: tā, meaning: él}
+    reveal: [s.ta-hen-gao]
+    lang: es
+    comments: []
+  - id: x.read.ta.she
+    added: 2026-09-26
+    type: read
+    targets: [w.ta.she]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 她}
+    answer: {hanzi: 她, pinyin: tā, meaning: ella}
+    reveal: [s.ta-shi-wo-de-laoshi]
+    lang: es
+    comments: []
+  - id: x.read.ta.it
+    added: 2026-09-26
+    type: read
+    targets: [w.ta.it]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 它}
+    answer: {hanzi: 它, pinyin: tā, meaning: 'ello (cosas, animales)'}
+    reveal: [s.ta-hen-keai]
+    lang: es
+    comments: []
+  - id: x.listen.tamen
+    added: 2026-09-26
+    type: listen
+    targets: [w.tamen]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 他们, pinyin: tāmen, meaning: ellos}
+    reveal: [s.tamen-dou-shi-zhongguoren-ma]
+    lang: es
+    comments: []
+  - id: x.produce.tamen
+    added: 2026-09-26
+    type: produce
+    targets: [w.tamen]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «ellos»? Escribe el pinyin.'}
+    answer: {typed: ta1 men5, hanzi: 他们, pinyin: tāmen, meaning: ellos}
+    lang: es
+    comments: []
+  - id: x.tones.tamen
+    added: 2026-09-26
+    type: tones
+    targets: [w.tamen]
+    refs: [p.neutral-tone]
+    skills: [tones, pinyin]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 他们, pinyin: ta men}
+    answer: {typed: '15', hanzi: 他们, pinyin: tāmen, meaning: ellos}
+    lang: es
+    comments: []
+  - id: x.listen.dajia
+    added: 2026-09-26
+    type: listen
+    targets: [w.dajia]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 大家, pinyin: dàjiā, meaning: 'todos, todo el mundo'}
+    lang: es
+    comments: []
+  - id: x.produce.dajia
+    added: 2026-09-26
+    type: produce
+    targets: [w.dajia]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «todos, todo el mundo»? Escribe el pinyin.'}
+    answer: {typed: da4 jia1, hanzi: 大家, pinyin: dàjiā, meaning: 'todos, todo el mundo'}
+    lang: es
+    comments: []
+  - id: x.listen.baba
+    added: 2026-09-26
+    type: listen
+    targets: [w.baba]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 爸爸, pinyin: bàba, meaning: papá}
+    reveal: [s.ta-shi-wo-de-baba]
+    lang: es
+    comments: []
+  - id: x.produce.baba
+    added: 2026-09-26
+    type: produce
+    targets: [w.baba]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «papá»? Escribe el pinyin.'}
+    answer: {typed: ba4 ba5, hanzi: 爸爸, pinyin: bàba, meaning: papá}
+    lang: es
+    comments: []
+  - id: x.tones.baba
+    added: 2026-09-26
+    type: tones
+    targets: [w.baba]
+    refs: [p.neutral-tone]
+    skills: [tones, pinyin]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 爸爸, pinyin: ba ba}
+    answer: {typed: '45', hanzi: 爸爸, pinyin: bàba, meaning: papá}
+    lang: es
+    comments: []
+  - id: x.listen.mama
+    added: 2026-09-26
+    type: listen
+    targets: [w.mama]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 妈妈, pinyin: māma, meaning: mamá}
+    reveal: [s.ta-shi-wo-de-mama]
+    lang: es
+    comments: []
+  - id: x.produce.mama
+    added: 2026-09-26
+    type: produce
+    targets: [w.mama]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «mamá»? Escribe el pinyin.'}
+    answer: {typed: ma1 ma5, hanzi: 妈妈, pinyin: māma, meaning: mamá}
+    lang: es
+    comments: []
+  - id: x.tones.mama
+    added: 2026-09-26
+    type: tones
+    targets: [w.mama]
+    refs: [p.neutral-tone]
+    skills: [tones, pinyin]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 妈妈, pinyin: ma ma}
+    answer: {typed: '15', hanzi: 妈妈, pinyin: māma, meaning: mamá}
+    lang: es
+    comments: []
+  - id: x.listen.erzi
+    added: 2026-09-26
+    type: listen
+    targets: [w.erzi]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 儿子, pinyin: érzi, meaning: hijo}
+    lang: es
+    comments: []
+  - id: x.tones.erzi
+    added: 2026-09-26
+    type: tones
+    targets: [w.erzi]
+    refs: [p.neutral-tone]
+    skills: [tones, pinyin]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 儿子, pinyin: er zi}
+    answer: {typed: '25', hanzi: 儿子, pinyin: érzi, meaning: hijo}
+    lang: es
+    comments: []
+  - id: x.listen.nver
+    added: 2026-09-26
+    type: listen
+    targets: [w.nver]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 女儿, pinyin: nǚ'ér, meaning: hija}
+    lang: es
+    comments: []
+  - id: x.listen.haizi
+    added: 2026-09-26
+    type: listen
+    targets: [w.haizi]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 孩子, pinyin: háizi, meaning: 'niño, niña; hijo, hija'}
+    lang: es
+    comments: []
+  - id: x.produce.haizi
+    added: 2026-09-26
+    type: produce
+    targets: [w.haizi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «niño, niña; hijo, hija»? Escribe el pinyin.'}
+    answer: {typed: hai2 zi5, hanzi: 孩子, pinyin: háizi, meaning: 'niño, niña; hijo, hija'}
+    lang: es
+    comments: []
+  - id: x.tones.haizi
+    added: 2026-09-26
+    type: tones
+    targets: [w.haizi]
+    refs: [p.neutral-tone]
+    skills: [tones, pinyin]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 孩子, pinyin: hai zi}
+    answer: {typed: '25', hanzi: 孩子, pinyin: háizi, meaning: 'niño, niña; hijo, hija'}
+    lang: es
+    comments: []
+  - id: x.listen.xiaohai
+    added: 2026-09-26
+    type: listen
+    targets: [w.xiaohai]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 小孩, pinyin: xiǎohái, meaning: 'niño pequeño, crío'}
+    lang: es
+    comments: []
+  - id: x.listen.gongchengshi
+    added: 2026-09-26
+    type: listen
+    targets: [w.gongchengshi]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 工程师, pinyin: gōngchéngshī, meaning: 'ingeniero, ingeniera'}
+    reveal: [s.wo-shi-gongchengshi]
+    lang: es
+    comments: []
+  - id: x.listen.ren
+    added: 2026-09-26
+    type: listen
+    targets: [w.ren]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 人, pinyin: rén, meaning: persona}
+    reveal: [s.wo-shi-xibanyaren]
+    lang: es
+    comments: []
+  - id: x.produce.ren
+    added: 2026-09-26
+    type: produce
+    targets: [w.ren]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «persona»? Escribe el pinyin.'}
+    answer: {typed: ren2, hanzi: 人, pinyin: rén, meaning: persona}
+    lang: es
+    comments: []
+  - id: x.read.ren
+    added: 2026-09-26
+    type: read
+    targets: [w.ren]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 人}
+    answer: {hanzi: 人, pinyin: rén, meaning: persona}
+    reveal: [s.wo-shi-xibanyaren]
+    lang: es
+    comments: []
+  - id: x.produce.zhongguo
+    added: 2026-09-26
+    type: produce
+    targets: [w.zhongguo]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «China»? Escribe el pinyin.'}
+    answer: {typed: zhong1 guo2, hanzi: 中国, pinyin: Zhōngguó, meaning: China}
+    lang: es
+    comments: []
+  - id: x.listen.meiguo
+    added: 2026-09-26
+    type: listen
+    targets: [w.meiguo]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 美国, pinyin: Měiguó, meaning: Estados Unidos}
+    lang: es
+    comments: []
+  - id: x.listen.zhongwen
+    added: 2026-09-26
+    type: listen
+    targets: [w.zhongwen]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 中文, pinyin: Zhōngwén, meaning: chino (la lengua)}
+    lang: es
+    comments: []
+  - id: x.produce.zhongwen
+    added: 2026-09-26
+    type: produce
+    targets: [w.zhongwen]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «chino (la lengua)»? Escribe el pinyin.'}
+    answer: {typed: zhong1 wen2, hanzi: 中文, pinyin: Zhōngwén, meaning: chino (la lengua)}
+    lang: es
+    comments: []
+  - id: x.listen.bu
+    added: 2026-09-26
+    type: listen
+    targets: [w.bu]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 不, pinyin: bù, meaning: 'no'}
+    reveal: [s.wo-bu-shi-xuesheng]
+    lang: es
+    comments: []
+  - id: x.cloze.bu
+    added: 2026-09-26
+    type: cloze
+    sentence: s.wo-bu-shi-xuesheng
+    gap: w.bu
+    targets: [w.bu]
+    context: [w.wo, w.shi, w.xuesheng, w.laoshi]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «No soy estudiante, soy profesor.»'}
+    answer: {typed: bu4, hanzi: 不, pinyin: bù, meaning: 'no'}
+    explanation: Se escribe bù; delante de cuarto tono suena bú.
+    lang: es
+    comments: []
+  - id: x.listen.ma
+    added: 2026-09-26
+    type: listen
+    targets: [w.ma]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 吗, pinyin: ma, meaning: '¿…? (convierte la frase en pregunta de sí o no)'}
+    reveal: [s.ni-he-shui-ma]
+    lang: es
+    comments: []
+  - id: x.cloze.ma
+    added: 2026-09-26
+    type: cloze
+    sentence: s.ni-he-shui-ma
+    gap: w.ma
+    targets: [w.ma]
+    context: [w.ni, w.he.drink, w.shui]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Bebes agua?»'}
+    answer: {typed: ma5, hanzi: 吗, pinyin: ma, meaning: '¿…? (convierte la frase en pregunta de sí o no)'}
+    lang: es
+    comments: []
+  - id: x.listen.ne
+    added: 2026-09-26
+    type: listen
+    targets: [w.ne]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 呢, pinyin: ne, meaning: '¿y…? (devuelve la pregunta)'}
+    reveal: [s.wo-hen-hao-ni-ne]
+    lang: es
+    comments: []
+  - id: x.cloze.ne
+    added: 2026-09-26
+    type: cloze
+    sentence: s.wo-hen-hao-ni-ne
+    gap: w.ne
+    targets: [w.ne]
+    context: [w.wo, w.hen, w.hao, w.ni]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Estoy bien, ¿y tú?»'}
+    answer: {typed: ne5, hanzi: 呢, pinyin: ne, meaning: '¿y…? (devuelve la pregunta)'}
+    lang: es
+    comments: []
+  - id: x.cloze.hen
+    added: 2026-09-26
+    type: cloze
+    sentence: s.wo-hen-hao-ni-ne
+    gap: w.hen
+    targets: [w.hen]
+    context: [w.wo, w.hao, w.ni, w.ne]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Estoy bien, ¿y tú?»'}
+    answer: {typed: hen3, hanzi: 很, pinyin: hěn, meaning: 'muy (con adjetivos, a menudo solo enlace)'}
+    lang: es
+    comments: []
+  - id: x.listen.hao
+    added: 2026-09-26
+    type: listen
+    targets: [w.hao]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 好, pinyin: hǎo, meaning: 'bien, bueno'}
+    reveal: [s.ni-hao-ma]
+    lang: es
+    comments: []
+  - id: x.produce.hao
+    added: 2026-09-26
+    type: produce
+    targets: [w.hao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «bien, bueno»? Escribe el pinyin.'}
+    answer: {typed: hao3, hanzi: 好, pinyin: hǎo, meaning: 'bien, bueno'}
+    lang: es
+    comments: []
+  - id: x.listen.ye
+    added: 2026-09-26
+    type: listen
+    targets: [w.ye]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 也, pinyin: yě, meaning: también}
+    reveal: [s.wo-ye-hen-hao]
+    lang: es
+    comments: []
+  - id: x.cloze.ye
+    added: 2026-09-26
+    type: cloze
+    sentence: s.wo-ye-hen-hao
+    gap: w.ye
+    targets: [w.ye]
+    context: [w.wo, w.hen, w.hao]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Yo también estoy bien.»'}
+    answer: {typed: ye3, hanzi: 也, pinyin: yě, meaning: también}
+    lang: es
+    comments: []
+  - id: x.listen.dou
+    added: 2026-09-26
+    type: listen
+    targets: [w.dou]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 都, pinyin: dōu, meaning: 'todos, ambos (adverbio)'}
+    reveal: [s.women-dou-shi-xuesheng]
+    lang: es
+    comments: []
+  - id: x.cloze.dou
+    added: 2026-09-26
+    type: cloze
+    sentence: s.women-dou-shi-xuesheng
+    gap: w.dou
+    targets: [w.dou]
+    context: [w.women, w.shi, w.xuesheng]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Todos somos estudiantes.»'}
+    answer: {typed: dou1, hanzi: 都, pinyin: dōu, meaning: 'todos, ambos (adverbio)'}
+    lang: es
+    comments: []
+  - id: x.listen.de
+    added: 2026-09-26
+    type: listen
+    targets: [w.de]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 的, pinyin: de, meaning: 'de (posesión: 我的 = mi)'}
+    reveal: [s.ta-shi-wo-de-baba]
+    lang: es
+    comments: []
+  - id: x.cloze.de
+    added: 2026-09-26
+    type: cloze
+    sentence: s.ta-shi-wo-de-baba
+    gap: w.de
+    targets: [w.de]
+    context: [w.ta.he, w.shi, w.wo, w.baba]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Él es mi padre.»'}
+    answer: {typed: de5, hanzi: 的, pinyin: de, meaning: 'de (posesión: 我的 = mi)'}
+    lang: es
+    comments: []
+  - id: x.produce.jiao
+    added: 2026-09-26
+    type: produce
+    targets: [w.jiao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «llamarse»? Escribe el pinyin.'}
+    answer: {typed: jiao4, hanzi: 叫, pinyin: jiào, meaning: llamarse}
+    lang: es
+    comments: []
+  - id: x.cloze.shenme
+    added: 2026-09-26
+    type: cloze
+    sentence: s.ni-jiao-shenme-mingzi
+    gap: w.shenme
+    targets: [w.shenme]
+    context: [w.ni, w.jiao, w.mingzi]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Cómo te llamas?»'}
+    answer: {typed: shen2 me5, hanzi: 什么, pinyin: shénme, meaning: qué}
+    lang: es
+    comments: []
+  - id: x.produce.renshi
+    added: 2026-09-26
+    type: produce
+    targets: [w.renshi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «conocer (a alguien)»? Escribe el pinyin.'}
+    answer: {typed: ren4 shi5, hanzi: 认识, pinyin: rènshi, meaning: conocer (a alguien)}
+    lang: es
+    comments: []
+  - id: x.listen.gaoxing
+    added: 2026-09-26
+    type: listen
+    targets: [w.gaoxing]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 高兴, pinyin: gāoxìng, meaning: contento}
+    reveal: [s.hen-gaoxing-renshi-ni]
+    lang: es
+    comments: []
+  - id: x.produce.gaoxing
+    added: 2026-09-26
+    type: produce
+    targets: [w.gaoxing]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «contento»? Escribe el pinyin.'}
+    answer: {typed: gao1 xing4, hanzi: 高兴, pinyin: gāoxìng, meaning: contento}
+    lang: es
+    comments: []
+  - id: x.listen.qing
+    added: 2026-09-26
+    type: listen
+    targets: [w.qing]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 请, pinyin: qǐng, meaning: por favor}
+    lang: es
+    comments: []
+  - id: x.produce.qing
+    added: 2026-09-26
+    type: produce
+    targets: [w.qing]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «por favor»? Escribe el pinyin.'}
+    answer: {typed: qing3, hanzi: 请, pinyin: qǐng, meaning: por favor}
+    lang: es
+    comments: []
+  - id: x.listen.zaijian
+    added: 2026-09-26
+    type: listen
+    targets: [w.zaijian]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 再见, pinyin: zàijiàn, meaning: adiós}
+    lang: es
+    comments: []
+  - id: x.listen.baibai
+    added: 2026-09-26
+    type: listen
+    targets: [w.baibai]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 拜拜, pinyin: báibái, meaning: 'adiós (informal, del inglés bye-bye)'}
+    lang: es
+    comments: []
+  - id: x.produce.baibai
+    added: 2026-09-26
+    type: produce
+    targets: [w.baibai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «adiós (informal, del inglés bye-bye)»? Escribe el pinyin.'}
+    answer: {typed: bai2 bai2, hanzi: 拜拜, pinyin: báibái, meaning: 'adiós (informal, del inglés bye-bye)'}
+    lang: es
+    comments: []
+  - id: x.listen.mingtian
+    added: 2026-09-26
+    type: listen
+    targets: [w.mingtian]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 明天, pinyin: míngtiān, meaning: mañana (el día)}
+    reveal: [s.mingtian-jian]
+    lang: es
+    comments: []
+  - id: x.produce.mingtian
+    added: 2026-09-26
+    type: produce
+    targets: [w.mingtian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «mañana (el día)»? Escribe el pinyin.'}
+    answer: {typed: ming2 tian1, hanzi: 明天, pinyin: míngtiān, meaning: mañana (el día)}
+    lang: es
+    comments: []
+  - id: x.listen.jian
+    added: 2026-09-26
+    type: listen
+    targets: [w.jian]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 见, pinyin: jiàn, meaning: ver; verse}
+    reveal: [s.mingtian-jian]
+    lang: es
+    comments: []
+  - id: x.listen.dui
+    added: 2026-09-26
+    type: listen
+    targets: [w.dui]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 对, pinyin: duì, meaning: 'correcto; sí, eso es'}
+    reveal: [s.dui-wo-shi-nimen-de-laoshi]
+    lang: es
+    comments: []
+  - id: x.produce.dui
+    added: 2026-09-26
+    type: produce
+    targets: [w.dui]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «correcto; sí, eso es»? Escribe el pinyin.'}
+    answer: {typed: dui4, hanzi: 对, pinyin: duì, meaning: 'correcto; sí, eso es'}
+    lang: es
+    comments: []
+  - id: x.listen.zao
+    added: 2026-09-26
+    type: listen
+    targets: [w.zao]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 早, pinyin: zǎo, meaning: ¡buenos días! (informal); temprano}
+    lang: es
+    comments: []
+  - id: x.produce.zao
+    added: 2026-09-26
+    type: produce
+    targets: [w.zao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¡buenos días! (informal); temprano»? Escribe el pinyin.'}
+    answer: {typed: zao3, hanzi: 早, pinyin: zǎo, meaning: ¡buenos días! (informal); temprano}
+    lang: es
+    comments: []
+  - id: x.produce.xiang
+    added: 2026-09-26
+    type: produce
+    targets: [w.xiang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «querer (hacer algo); pensar»? Escribe el pinyin.'}
+    answer: {typed: xiang3, hanzi: 想, pinyin: xiǎng, meaning: querer (hacer algo); pensar}
+    lang: es
+    comments: []
+  - id: x.listen.shuiguo
+    added: 2026-09-26
+    type: listen
+    targets: [w.shuiguo]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 水果, pinyin: shuǐguǒ, meaning: fruta}
+    reveal: [s.wo-xiang-mai-shuiguo]
+    lang: es
+    comments: []
+  - id: x.tones.shuiguo
+    added: 2026-09-26
+    type: tones
+    targets: [w.shuiguo]
+    refs: [p.third-tone-sandhi]
+    skills: [tones, pinyin]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 水果, pinyin: shui guo}
+    answer: {typed: '33', hanzi: 水果, pinyin: shuǐguǒ, meaning: fruta}
+    lang: es
+    comments: []
+  - id: x.listen.zai.at
+    added: 2026-09-26
+    type: listen
+    targets: [w.zai.at]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 在, pinyin: zài, meaning: estar en (un lugar)}
+    reveal: [s.shangdian-zai-nar]
+    lang: es
+    comments: []
+  - id: x.cloze.zai.at
+    added: 2026-09-26
+    type: cloze
+    sentence: s.shangdian-zai-nar
+    gap: w.zai.at
+    targets: [w.zai.at]
+    context: [w.shangdian, w.nar]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Dónde está la tienda?»'}
+    answer: {typed: zai4, hanzi: 在, pinyin: zài, meaning: estar en (un lugar)}
+    lang: es
+    comments: []
+  - id: x.cloze.nar
+    added: 2026-09-26
+    type: cloze
+    sentence: s.shangdian-zai-nar
+    gap: w.nar
+    targets: [w.nar]
+    context: [w.shangdian, w.zai.at]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Dónde está la tienda?»'}
+    answer: {typed: nar3, hanzi: 哪儿, pinyin: nǎr, meaning: dónde}
+    lang: es
+    comments: []
+  - id: x.listen.kan
+    added: 2026-09-26
+    type: listen
+    targets: [w.kan]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 看, pinyin: kàn, meaning: mirar; leer}
+    reveal: [s.wo-zai-kan-shu]
+    lang: es
+    comments: []
+  - id: x.produce.kan
+    added: 2026-09-26
+    type: produce
+    targets: [w.kan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «mirar; leer»? Escribe el pinyin.'}
+    answer: {typed: kan4, hanzi: 看, pinyin: kàn, meaning: mirar; leer}
+    lang: es
+    comments: []
+  - id: x.listen.kanjian
+    added: 2026-09-26
+    type: listen
+    targets: [w.kanjian]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 看见, pinyin: kànjiàn, meaning: ver (llegar a ver)}
+    lang: es
+    comments: []
+  - id: x.listen.kankan
+    added: 2026-09-26
+    type: listen
+    targets: [w.kankan]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 看看, pinyin: kànkan, meaning: echar un vistazo}
+    lang: es
+    comments: []
+  - id: x.produce.kankan
+    added: 2026-09-26
+    type: produce
+    targets: [w.kankan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «echar un vistazo»? Escribe el pinyin.'}
+    answer: {typed: kan4 kan5, hanzi: 看看, pinyin: kànkan, meaning: echar un vistazo}
+    lang: es
+    comments: []
+  - id: x.tones.kankan
+    added: 2026-09-26
+    type: tones
+    targets: [w.kankan]
+    refs: [p.neutral-tone]
+    skills: [tones, pinyin]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 看看, pinyin: kan kan}
+    answer: {typed: '45', hanzi: 看看, pinyin: kànkan, meaning: echar un vistazo}
+    lang: es
+    comments: []
+  - id: x.listen.shu
+    added: 2026-09-26
+    type: listen
+    targets: [w.shu]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 书, pinyin: shū, meaning: libro}
+    reveal: [s.wo-zai-kan-shu]
+    lang: es
+    comments: []
+  - id: x.produce.shu
+    added: 2026-09-26
+    type: produce
+    targets: [w.shu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «libro»? Escribe el pinyin.'}
+    answer: {typed: shu1, hanzi: 书, pinyin: shū, meaning: libro}
+    lang: es
+    comments: []
+  - id: x.listen.shouji
+    added: 2026-09-26
+    type: listen
+    targets: [w.shouji]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 手机, pinyin: shǒujī, meaning: móvil}
+    lang: es
+    comments: []
+  - id: x.produce.shouji
+    added: 2026-09-26
+    type: produce
+    targets: [w.shouji]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «móvil»? Escribe el pinyin.'}
+    answer: {typed: shou3 ji1, hanzi: 手机, pinyin: shǒujī, meaning: móvil}
+    lang: es
+    comments: []
+  - id: x.listen.kafei
+    added: 2026-09-26
+    type: listen
+    targets: [w.kafei]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 咖啡, pinyin: kāfēi, meaning: café}
+    lang: es
+    comments: []
+  - id: x.produce.kafei
+    added: 2026-09-26
+    type: produce
+    targets: [w.kafei]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «café»? Escribe el pinyin.'}
+    answer: {typed: ka1 fei1, hanzi: 咖啡, pinyin: kāfēi, meaning: café}
+    lang: es
+    comments: []
+  - id: x.listen.qiaokeli
+    added: 2026-09-26
+    type: listen
+    targets: [w.qiaokeli]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 巧克力, pinyin: qiǎokèlì, meaning: chocolate}
+    lang: es
+    comments: []
+  - id: x.listen.niurou
+    added: 2026-09-26
+    type: listen
+    targets: [w.niurou]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 牛肉, pinyin: niúròu, meaning: carne de ternera}
+    lang: es
+    comments: []
+  - id: x.produce.niurou
+    added: 2026-09-26
+    type: produce
+    targets: [w.niurou]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «carne de ternera»? Escribe el pinyin.'}
+    answer: {typed: niu2 rou4, hanzi: 牛肉, pinyin: niúròu, meaning: carne de ternera}
+    lang: es
+    comments: []
+  - id: x.listen.zuqiu
+    added: 2026-09-26
+    type: listen
+    targets: [w.zuqiu]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 足球, pinyin: zúqiú, meaning: fútbol}
+    lang: es
+    comments: []
+  - id: x.listen.huoche
+    added: 2026-09-26
+    type: listen
+    targets: [w.huoche]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 火车, pinyin: huǒchē, meaning: tren}
+    lang: es
+    comments: []
+  - id: x.listen.wanshang
+    added: 2026-09-26
+    type: listen
+    targets: [w.wanshang]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 晚上, pinyin: wǎnshang, meaning: por la noche}
+    lang: es
+    comments: []
+  - id: x.produce.wanshang
+    added: 2026-09-26
+    type: produce
+    targets: [w.wanshang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «por la noche»? Escribe el pinyin.'}
+    answer: {typed: wan3 shang5, hanzi: 晚上, pinyin: wǎnshang, meaning: por la noche}
+    lang: es
+    comments: []
+  - id: x.listen.gao
+    added: 2026-09-26
+    type: listen
+    targets: [w.gao]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 高, pinyin: gāo, meaning: alto}
+    reveal: [s.ta-hen-gao]
+    lang: es
+    comments: []
+  - id: x.listen.ai
+    added: 2026-09-26
+    type: listen
+    targets: [w.ai]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 矮, pinyin: ǎi, meaning: bajo (de estatura)}
+    lang: es
+    comments: []
+  - id: x.listen.pang
+    added: 2026-09-26
+    type: listen
+    targets: [w.pang]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 胖, pinyin: pàng, meaning: gordo}
+    lang: es
+    comments: []
+  - id: x.listen.shou
+    added: 2026-09-26
+    type: listen
+    targets: [w.shou]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 瘦, pinyin: shòu, meaning: delgado}
+    lang: es
+    comments: []
+  - id: x.listen.piaoliang
+    added: 2026-09-26
+    type: listen
+    targets: [w.piaoliang]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 漂亮, pinyin: piàoliang, meaning: 'guapo, bonito'}
+    reveal: [s.ta-hen-piaoliang]
+    lang: es
+    comments: []
+  - id: x.listen.shuai
+    added: 2026-09-26
+    type: listen
+    targets: [w.shuai]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 帅, pinyin: shuài, meaning: guapo (sobre todo hombres)}
+    lang: es
+    comments: []
+  - id: x.listen.congming
+    added: 2026-09-26
+    type: listen
+    targets: [w.congming]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 聪明, pinyin: cōngming, meaning: 'listo, inteligente'}
+    lang: es
+    comments: []
+  - id: x.listen.ben
+    added: 2026-09-26
+    type: listen
+    targets: [w.ben]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 笨, pinyin: bèn, meaning: 'torpe, tonto'}
+    lang: es
+    comments: []
+  - id: x.listen.keai
+    added: 2026-09-26
+    type: listen
+    targets: [w.keai]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 可爱, pinyin: kě'ài, meaning: 'mono, adorable'}
+    reveal: [s.ta-hen-keai]
+    lang: es
+    comments: []
+  - id: x.produce.keai
+    added: 2026-09-26
+    type: produce
+    targets: [w.keai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «mono, adorable»? Escribe el pinyin.'}
+    answer: {typed: ke3 ai4, hanzi: 可爱, pinyin: kě'ài, meaning: 'mono, adorable'}
+    lang: es
+    comments: []
+  - id: x.listen.youmo
+    added: 2026-09-26
+    type: listen
+    targets: [w.youmo]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 幽默, pinyin: yōumò, meaning: 'gracioso, con sentido del humor'}
+    lang: es
+    comments: []
+  - id: x.read.niu
+    added: 2026-09-26
+    type: read
+    targets: [w.niu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 牛}
+    answer: {hanzi: 牛, pinyin: niú, meaning: 'vaca, buey'}
+    lang: es
+    comments: []
+  - id: x.listen.ba
+    added: 2026-09-26
+    type: listen
+    targets: [w.ba]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 八, pinyin: bā, meaning: ocho}
+    lang: es
+    comments: []
+  - id: x.produce.ba
+    added: 2026-09-26
+    type: produce
+    targets: [w.ba]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «ocho»? Escribe el pinyin.'}
+    answer: {typed: ba1, hanzi: 八, pinyin: bā, meaning: ocho}
+    lang: es
+    comments: []
+  - id: x.read.ba
+    added: 2026-09-26
+    type: read
+    targets: [w.ba]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 八}
+    answer: {hanzi: 八, pinyin: bā, meaning: ocho}
+    lang: es
+    comments: []
+  - id: x.listen.haode
+    added: 2026-09-26
+    type: listen
+    targets: [e.haode]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 好的, pinyin: hǎo de, meaning: 'vale, de acuerdo'}
+    reveal: [s.haode-xiexie]
+    lang: es
+    comments: []
+  - id: x.produce.haode
+    added: 2026-09-26
+    type: produce
+    targets: [e.haode]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «vale, de acuerdo»? Escribe el pinyin.'}
+    answer: {typed: hao3 de5, hanzi: 好的, pinyin: hǎo de, meaning: 'vale, de acuerdo'}
+    lang: es
+    comments: []
+  - id: x.tones.haode
+    added: 2026-09-26
+    type: tones
+    targets: [e.haode]
+    refs: [p.neutral-tone]
+    skills: [tones, pinyin]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 好的, pinyin: hao de}
+    answer: {typed: '35', hanzi: 好的, pinyin: hǎo de, meaning: 'vale, de acuerdo'}
+    lang: es
+    comments: []
+  - id: x.listen.ninhao
+    added: 2026-09-26
+    type: listen
+    targets: [e.ninhao]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 您好, pinyin: nín hǎo, meaning: hola (con respeto)}
+    lang: es
+    comments: []
+  - id: x.read.ninhao
+    added: 2026-09-26
+    type: read
+    targets: [e.ninhao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 您好}
+    answer: {hanzi: 您好, pinyin: nín hǎo, meaning: hola (con respeto)}
+    lang: es
+    comments: []
+  - id: x.listen.nimenhao
+    added: 2026-09-26
+    type: listen
+    targets: [e.nimenhao]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 你们好, pinyin: nǐmen hǎo, meaning: hola (a un grupo)}
+    lang: es
+    comments: []
+  - id: x.read.nimenhao
+    added: 2026-09-26
+    type: read
+    targets: [e.nimenhao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 你们好}
+    answer: {hanzi: 你们好, pinyin: nǐmen hǎo, meaning: hola (a un grupo)}
+    lang: es
+    comments: []
+  - id: x.tones.nimenhao
+    added: 2026-09-26
+    type: tones
+    targets: [e.nimenhao]
+    refs: [p.neutral-tone]
+    skills: [tones, pinyin]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 你们好, pinyin: ni men hao}
+    answer: {typed: '353', hanzi: 你们好, pinyin: nǐmen hǎo, meaning: hola (a un grupo)}
+    lang: es
+    comments: []
+  - id: x.listen.dajiahao
+    added: 2026-09-26
+    type: listen
+    targets: [e.dajiahao]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 大家好, pinyin: dàjiā hǎo, meaning: hola a todos}
+    lang: es
+    comments: []
+  - id: x.read.dajiahao
+    added: 2026-09-26
+    type: read
+    targets: [e.dajiahao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 大家好}
+    answer: {hanzi: 大家好, pinyin: dàjiā hǎo, meaning: hola a todos}
+    lang: es
+    comments: []
+  - id: x.listen.laoshihao
+    added: 2026-09-26
+    type: listen
+    targets: [e.laoshihao]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 老师好, pinyin: lǎoshī hǎo, meaning: 'hola, profe'}
+    lang: es
+    comments: []
+  - id: x.read.laoshihao
+    added: 2026-09-26
+    type: read
+    targets: [e.laoshihao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 老师好}
+    answer: {hanzi: 老师好, pinyin: lǎoshī hǎo, meaning: 'hola, profe'}
+    lang: es
+    comments: []
+  - id: x.listen.bu-sandhi
+    added: 2026-09-26
+    type: listen
+    targets: [p.bu-sandhi]
+    refs: [p.bu-sandhi]
+    prompt: {text: 'Escucha 不是. ¿Con qué tono suena 不?', audio: true}
+    answer: {hanzi: 不是, pinyin: bú shì, meaning: 'segundo tono: bú. Se escribe bù, pero cambia delante de cuarto tono'}
+    skills: [listening, tones]
+    lang: es
+    comments: []
+  - id: x.listen.third-tone-half
+    added: 2026-09-26
+    type: listen
+    targets: [p.third-tone-half]
+    refs: [p.third-tone-half]
+    prompt: {text: 'Escucha 老师. La sílaba lǎo, ¿baja y vuelve a subir, o solo baja?', audio: true}
+    answer: {hanzi: 老师, pinyin: lǎoshī, meaning: 'solo baja: delante de otro tono, el tercero se queda a medias'}
+    skills: [listening, tones]
+    lang: es
+    comments: []
+  - id: x.listen.neutral-tone
+    added: 2026-09-26
+    type: listen
+    targets: [p.neutral-tone]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escucha 什么. ¿Cómo suena la segunda sílaba?', audio: true}
+    answer: {hanzi: 什么, pinyin: shénme, meaning: 'corta y ligera, sin contorno propio: tono neutro'}
+    skills: [listening, tones]
+    lang: es
+    comments: []
+  - id: x.speak.neutral-tone
+    added: 2026-09-26
+    type: speak
+    targets: [p.neutral-tone]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Lee en voz alta: la segunda sílaba, corta y ligera. Compara con el audio.', hanzi: 朋友，名字, pinyin: 'péngyou,
+        míngzi'}
+    answer: {hanzi: 朋友，名字, meaning: 'amigo, nombre'}
+    skills: [speaking, tones]
+    lang: es
+    comments: []
+  - id: x.listen.aspiration
+    added: 2026-09-26
+    type: listen
+    targets: [p.aspiration]
+    refs: [p.aspiration]
+    prompt: {text: 'Escucha 爸爸，朋友. ¿Cuál empieza con un soplo de aire?', audio: true}
+    answer: {hanzi: 爸爸，朋友, meaning: '朋 (p): con aire. 爸 (b): sin aire'}
+    skills: [listening]
+    lang: es
+    comments: []
+  - id: x.listen.jqx-zhchsh
+    added: 2026-09-26
+    type: listen
+    targets: [p.jqx-zhchsh]
+    refs: [p.jqx-zhchsh]
+    prompt: {text: 'Escucha 学生. ¿Qué sílaba va con la lengua plana y cuál con la punta curvada?', audio: true}
+    answer: {hanzi: 学生, pinyin: xuéshēng, meaning: 'xué: lengua plana (x). shēng: punta curvada (sh)'}
+    skills: [listening]
+    lang: es
+    comments: []
+  - id: x.produce.ni-he-shui-ma
+    added: 2026-09-26
+    type: produce
+    sentence: s.ni-he-shui-ma
+    targets: [s.ni-he-shui-ma]
+    context: [w.ni, w.he.drink, w.shui, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Bebes agua?»'}
+    answer: {meaning: '¿Bebes agua?'}
+    lang: es
+    comments: []
+  - id: x.produce.wo-ye-hen-hao
+    added: 2026-09-26
+    type: produce
+    sentence: s.wo-ye-hen-hao
+    targets: [s.wo-ye-hen-hao]
+    context: [w.wo, w.ye, w.hen, w.hao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Yo también estoy bien.»'}
+    answer: {meaning: Yo también estoy bien.}
+    lang: es
+    comments: []
+  - id: x.produce.wo-bu-shi-xuesheng
+    added: 2026-09-26
+    type: produce
+    sentence: s.wo-bu-shi-xuesheng
+    targets: [s.wo-bu-shi-xuesheng]
+    context: [w.wo, w.bu, w.shi, w.xuesheng, w.laoshi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No soy estudiante, soy profesor.»'}
+    answer: {meaning: 'No soy estudiante, soy profesor.'}
+    lang: es
+    comments: []
+  - id: x.produce.ta-hen-gao
+    added: 2026-09-26
+    type: produce
+    sentence: s.ta-hen-gao
+    targets: [s.ta-hen-gao]
+    context: [w.ta.he, w.hen, w.gao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Él es alto.»'}
+    answer: {meaning: Él es alto.}
+    lang: es
+    comments: []
+  - id: x.produce.haode-xiexie
+    added: 2026-09-26
+    type: produce
+    sentence: s.haode-xiexie
+    targets: [s.haode-xiexie]
+    context: [e.haode, e.xiexie]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Vale, ¡gracias!»'}
+    answer: {meaning: 'Vale, ¡gracias!'}
+    lang: es
+    comments: []
+  - id: x.produce.wo-zai-kan-shu
+    added: 2026-09-26
+    type: produce
+    sentence: s.wo-zai-kan-shu
+    targets: [s.wo-zai-kan-shu]
+    context: [w.wo, w.zai.progressive, w.kan, w.shu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estoy leyendo.»'}
+    answer: {meaning: Estoy leyendo.}
+    lang: es
+    comments: []
+  - id: x.listen.ta-shi-wo-de-baba
+    added: 2026-09-26
+    type: listen
+    sentence: s.ta-shi-wo-de-baba
+    targets: [s.ta-shi-wo-de-baba]
+    context: [w.ta.he, w.shi, w.wo, w.de, w.baba]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Él es mi padre.}
+    lang: es
+    comments: []
+  - id: x.produce.ta-shi-wo-de-baba
+    added: 2026-09-26
+    type: produce
+    sentence: s.ta-shi-wo-de-baba
+    targets: [s.ta-shi-wo-de-baba]
+    context: [w.ta.he, w.shi, w.wo, w.de, w.baba]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Él es mi padre.»'}
+    answer: {meaning: Él es mi padre.}
+    lang: es
+    comments: []
+  - id: x.listen.ta-shi-wo-de-mama
+    added: 2026-09-26
+    type: listen
+    sentence: s.ta-shi-wo-de-mama
+    targets: [s.ta-shi-wo-de-mama]
+    context: [w.ta.she, w.shi, w.wo, w.de, w.mama]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ella es mi madre.}
+    lang: es
+    comments: []
+  - id: x.listen.women-dou-shi-xuesheng
+    added: 2026-09-26
+    type: listen
+    sentence: s.women-dou-shi-xuesheng
+    targets: [s.women-dou-shi-xuesheng]
+    context: [w.women, w.dou, w.shi, w.xuesheng]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Todos somos estudiantes.}
+    lang: es
+    comments: []
+  - id: x.produce.women-dou-shi-xuesheng
+    added: 2026-09-26
+    type: produce
+    sentence: s.women-dou-shi-xuesheng
+    targets: [s.women-dou-shi-xuesheng]
+    context: [w.women, w.dou, w.shi, w.xuesheng]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Todos somos estudiantes.»'}
+    answer: {meaning: Todos somos estudiantes.}
+    lang: es
+    comments: []
+  - id: x.listen.nimen-bu-shi-xuesheng-ma
+    added: 2026-09-26
+    type: listen
+    sentence: s.nimen-bu-shi-xuesheng-ma
+    targets: [s.nimen-bu-shi-xuesheng-ma]
+    context: [w.nimen, w.bu, w.shi, w.xuesheng, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿No sois estudiantes?'}
+    lang: es
+    comments: []
+  - id: x.listen.nin-shi-women-de-laoshi-ma
+    added: 2026-09-26
+    type: listen
+    sentence: s.nin-shi-women-de-laoshi-ma
+    targets: [s.nin-shi-women-de-laoshi-ma]
+    context: [w.nin, w.shi, w.women, w.de, w.laoshi, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Es usted nuestra profesora?'}
+    lang: es
+    comments: []
+  - id: x.listen.tamen-dou-shi-zhongguoren-ma
+    added: 2026-09-26
+    type: listen
+    sentence: s.tamen-dou-shi-zhongguoren-ma
+    targets: [s.tamen-dou-shi-zhongguoren-ma]
+    context: [w.tamen, w.dou, w.shi, w.zhongguo, w.ren, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Son todos chinos?'}
+    lang: es
+    comments: []
+  - id: x.listen.dui-wo-shi-nimen-de-laoshi
+    added: 2026-09-26
+    type: listen
+    sentence: s.dui-wo-shi-nimen-de-laoshi
+    targets: [s.dui-wo-shi-nimen-de-laoshi]
+    context: [w.dui, w.wo, w.shi, w.nimen, w.de, w.laoshi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Sí, soy vuestro profesor.'}
+    lang: es
+    comments: []
+  - id: x.listen.xiawu-qu-shangdian
+    added: 2026-09-26
+    type: listen
+    sentence: s.xiawu-qu-shangdian
+    targets: [s.xiawu-qu-shangdian]
+    context: [w.xiawu, w.qu, w.shangdian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Por la tarde voy a la tienda.}
+    lang: es
+    comments: []
+  - id: x.produce.xiawu-qu-shangdian
+    added: 2026-09-26
+    type: produce
+    sentence: s.xiawu-qu-shangdian
+    targets: [s.xiawu-qu-shangdian]
+    context: [w.xiawu, w.qu, w.shangdian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Por la tarde voy a la tienda.»'}
+    answer: {meaning: Por la tarde voy a la tienda.}
     lang: es
     comments: []
