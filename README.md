@@ -2,6 +2,17 @@
 
 Mazo personal de mandarín cotidiano: pinyin, tonos y audio. YAGO aporta apuntes; un agente (LLM) los convierte en tarjetas; `anki.py` las comprueba, genera el audio y las mete en Anki.
 
+## Aprendizaje activo, no solo tarjetas generadas
+
+Generar tarjetas es la parte fácil. Lo que hace útil este sistema es que el agente no solo produce: **devuelve trabajo al que aprende** y cierra el ciclo.
+
+- **Deberes después de cada lote.** `1-inbox/gaps-<lote>.md` lista lo que falta y por qué: palabras que quieres decir y aún no aparecen en ninguna frase, lo pendiente de los apuntes y lo que conviene comprobar en el cuaderno. Se edita ahí mismo y vuelve como entrada del siguiente lote. El agente pide frases reales en vez de inventarlas.
+- **Filtrar, no acumular.** Cada digest clasifica lo aprendido en ✅ aprender, 🟡 reconocer y ❌ tachar (literario, arcaico, en desuso), para tachar en los apuntes a mano lo que no merece esfuerzo, y corrige con ⚠️ las glosas mal leídas.
+- **Recordar, no releer.** Las tarjetas piden producir: escribir el pinyin o los hanzi, marcar los tonos con dígitos, decir frases en voz alta y compararlas con el audio. Reconocer no basta: cada palabra tiene las tarjetas que exige para qué la necesitas (leer, entender al oír, decir).
+- **Contraste y contexto.** Las palabras que se confunden (他/她/它, 生/牛/午) o que forman serie (上午/中午/下午/晚上) aparecen juntas al dar la vuelta, y las palabras que quieres decir tienen que aparecer en frases.
+- **Pronunciación explícita.** Transcripción fonética, trampas del pinyin para hispanohablantes y reglas de sandhi en las tarjetas donde toca pronunciar o reconocer de oído.
+- **Reglas que no dependen del modelo.** Qué tarjetas faltan, qué sobra y qué falta por practicar lo calcula `anki.py` a partir de una especificación (`docs/design.md`). El modelo redacta; el código comprueba. Un modelo mejor mejora el mazo sin cambiar el sistema.
+
 ## Uso diario
 
 1. Dejar apuntes en bruto en `1-inbox/`: un `.txt` por lote, sin formato.
