@@ -10,6 +10,22 @@ Mandarín cotidiano y de trabajo hasta un nivel equivalente a C1, con **mucho é
 
 El modelo redacta; `anki.py` calcula y comprueba. Lo que puede calcularse (qué tarjetas faltan, qué sobra, qué audio falta) lo decide el código a partir de reglas escritas aquí, no el criterio del agente en cada sesión. El agente trabaja sobre la diferencia que el código le da (`plan`) y `check` verifica el resultado. `anki.py` no llama nunca a un LLM; compilar no regenera ejercicios.
 
+## Glosario
+
+- **Entrada**: un elemento del diccionario (`3-data/lexicon.yaml`): palabra, expresión, carácter, componente, pronunciación o grupo. Una por sentido.
+- **Frase**: oración segmentada en `3-data/exercises.yaml`, reutilizable en varias tarjetas.
+- **Ejercicio**: una pregunta concreta; en Anki, una nota con una tarjeta.
+- **`use`**: para qué necesita YAGO una entrada o frase (`read`, `hear`, `say`, o excepción). Decide las tarjetas exigidas.
+- **Rol**: `content` (palabra con significado propio) o `function` (pieza gramatical: se practica en frase).
+- **Tema**: agrupación por asunto (`themes` en el diccionario); ordena el aprendizaje, la guía y los subdecks.
+- **Grupo**: entradas que se estudian juntas por contraste (`visual`, `homophone`, `pattern`, `set`).
+- **Ósmosis**: que una palabra aparezca como contexto en frases, además de en sus propias tarjetas.
+- **Lote**: una entrega de apuntes de YAGO (`NNN-AAAA-MM-DD-tema`).
+- **Digest**: resumen de un lote para YAGO, clasificado ✅ 🟡 ❌.
+- **Gaps**: lo que falta tras un lote y necesita a YAGO (`1-inbox/gaps-<lote>.md`).
+- **Guía**: todo lo aprendido por tema (`5-guide/`), generada.
+- **Trampa fonética**: letra del pinyin que un hispanohablante lee mal; la detecta una regla.
+
 ## Flujo de un lote
 
 Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de orden de procesado, fecha, tema en palabras; nunca números de hoja). El lote solo sirve para llevar la cuenta de la procedencia: dentro del mazo cada cosa va donde le toca por tema y nivel, y un ajuste sobre algo antiguo corrige la entrada antigua.
@@ -146,7 +162,9 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 
 ## Estado y fases
 
-Hecho (2026-09-26): `lookup`, `plan`, `gaps`, `check` estricto, `guide`, `audio`, `build`, `push` (plantillas, límites, orden de nuevas, huérfanas con `--prune`, sincronización); lote 001 procesado con la especificación de cobertura: 108 entradas, 30 frases, 342 tarjetas, 123 audios, 0 tarjetas exigidas pendientes, 12 huecos de ósmosis devueltos en `1-inbox/gaps-001-…md`. Normalización probada en código (13 casos); falta confirmar en el móvil de YAGO que el cliente conserva lo escrito entre anverso y reverso.
+Las cifras del mazo (entradas, frases, tarjetas, audio pendiente, huecos) no se anotan aquí porque caducan: las da `anki.py gaps` en el momento.
+
+Por comprobar en uso real: que el cliente móvil de YAGO conserva lo escrito entre anverso y reverso (si no, las tarjetas escritas quedan como autoevaluación) y que el historial de repaso se conserva al reimportar.
 
 1. ~~Fase 1~~ hecha.
 2. Subdecks temáticos, etiquetas y recolocación en `push`.

@@ -15,6 +15,16 @@ Mazo personal de mandarín cotidiano: pinyin, tonos y audio. YAGO aporta apuntes
 
 No se corrige nada dentro de Anki: cada `push` sobrescribe las tarjetas con lo que hay en `3-data/`. Las correcciones se dicen al agente.
 
+## Cómo estudiar
+
+- Pulsar el mazo padre **🐉 Chino práctico**: mezcla lo nuevo y lo antiguo de todos los temas.
+- Colores de Anki: 🔵 nuevas (hoy, como mucho 30) · 🟠 aprendiendo (vuelven a los pocos minutos) · 🟢 repasos (lo aprendido otro día que toca recordar). «¡Felicidades!» es que no queda nada por hoy.
+- Ritmo: 30 nuevas y 300 repasos como máximo al día. Los repasos se estabilizan en unas 5–8 veces las nuevas: con 30, unos 200 al día, unos 40 minutos. Lo fija `push`; para cambiarlo, pedirlo al agente.
+- Respuestas escritas: pinyin con tildes o con números (`ni3 hao3`) o hanzi con el teclado chino; espacios, mayúsculas y puntuación dan igual. En las frases para decir en voz alta, escribir es opcional.
+- Al dar la vuelta: pinyin, transcripción fonética [AFI], audio, trampas de pronunciación y la familia de la palabra si la tiene (la palabra de la tarjeta, marcada ▸).
+- Tras cada lote, `1-inbox/gaps-<lote>.md` dice qué falta (por ejemplo, frases para palabras que quieres decir). Se edita ahí mismo y entra en el siguiente lote.
+- `5-guide/` reúne todo lo aprendido por temas; `4-digests/`, lo que aportó cada lote y qué tachar de los apuntes.
+
 ## Qué hay en cada sitio
 
 | Ruta | Para quién | Qué es |

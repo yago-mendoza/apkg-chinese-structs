@@ -914,26 +914,31 @@ CSS = """
 
 FIELDS = ["ExerciseID", "Task", "Front", "PromptAudio", "Answer", "Back", "AnswerAudio", "Notes"]
 
-# Respuesta tecleada sin la comparación literal de Anki: la tarjeta guarda lo escrito (sessionStorage)
-# y el reverso lo compara normalizado (espacios, mayúsculas, tildes o dígitos, v = ü). Si el cliente
-# no conserva sessionStorage entre anverso y reverso, la tarjeta queda como autoevaluación.
-TYPED_JS_FRONT = """<script>
+# Respuesta escrita sin la comparación literal de Anki: la tarjeta guarda lo escrito (sessionStorage)
+# y el reverso lo compara normalizado. Vale pinyin (tildes o dígitos, v = ü, sin importar espacios,
+# mayúsculas ni puntuación) o hanzi (teclado chino). Lo esperado viaja en el campo Back como
+# #acs-exp-py y #acs-exp-hz. En las tarjetas de autoevaluación la caja solo aparece si el anverso
+# lleva .acs-typable (frases para decir en voz alta: escribir es opcional). Si el cliente no
+# conserva sessionStorage entre anverso y reverso, la tarjeta queda como autoevaluación.
+INPUT_JS_FRONT = """<script>
 setTimeout(function () {
   var i = document.getElementById('acs-in'); if (!i) return;
-  if (document.getElementById('answer')) { i.style.display = 'none'; return; }
+  var allowed = i.getAttribute('data-always') === '1' || document.querySelector('.acs-typable');
+  if (!allowed || document.getElementById('answer')) { i.style.display = 'none'; return; }
   var save = function () { try { sessionStorage.setItem('acs-typed', i.value); } catch (e) {} };
   try { sessionStorage.removeItem('acs-typed'); } catch (e) {}
   i.addEventListener('input', save);
   i.addEventListener('keydown', function (e) {
     if (e.key === 'Enter') { save(); try { pycmd('ans'); } catch (x) {} }
   });
-  i.focus();
+  if (i.getAttribute('data-always') === '1') i.focus();
 }, 0);
 </script>"""
 
-TYPED_JS_BACK = """<script>
+INPUT_JS_BACK = """<script>
 setTimeout(function () {
   var M = {a:'āáǎà', e:'ēéěè', i:'īíǐì', o:'ōóǒò', u:'ūúǔù', 'ü':'ǖǘǚǜ'};
+  var PUNCT = /[\\s'’·,.\\-，。？！、：；“”‘’「」?!:;]/g;
   function mark(s) {
     return s.replace(/([a-zü]+)([1-5]?)/g, function (_, b, t) {
       if (!t || t === '5') return b;
@@ -944,28 +949,31 @@ setTimeout(function () {
     });
   }
   function norm(s) {
-    s = (s || '').normalize('NFC').toLowerCase().replace(/u:/g, 'ü').replace(/v/g, 'ü')
-          .replace(/[\\s'’·,.\\-]/g, '');
+    s = (s || '').normalize('NFC').toLowerCase().replace(/u:/g, 'ü').replace(/v/g, 'ü').replace(PUNCT, '');
     return /^[1-5]+$/.test(s) ? s : mark(s);
   }
-  var out = document.getElementById('acs-result'), exp = document.getElementById('acs-expected');
-  if (!out || !exp) return;
+  function text(id) { var el = document.getElementById(id); return el ? el.textContent : ''; }
+  var out = document.getElementById('acs-result'); if (!out) return;
   var typed = null; try { typed = sessionStorage.getItem('acs-typed'); } catch (e) {}
   if (typed === null || typed.trim() === '') return;
-  var ok = norm(typed) === norm(exp.textContent);
+  var ok = /[\\u3400-\\u9fff]/.test(typed)
+    ? typed.replace(PUNCT, '') === text('acs-exp-hz').replace(PUNCT, '') && text('acs-exp-hz') !== ''
+    : norm(typed) === norm(text('acs-exp-py') || text('acs-expected'));
   out.className = ok ? 'acs-ok' : 'acs-bad';
-  out.textContent = ok ? '✓ ' + typed : '✗ ' + typed;
+  out.textContent = (ok ? '✓ ' : '✗ ') + typed;
 }, 0);
 </script>"""
 
+INPUT = ('<br><input id="acs-in" class="acs-in" data-always="{always}" autocomplete="off" autocapitalize="off" '
+         'autocorrect="off" spellcheck="false" placeholder="{hint}">')
 FRONT_TYPED = ('<div class="task">{{Task}}</div>{{Front}}{{PromptAudio}}'
-               '<br><input id="acs-in" class="acs-in" autocomplete="off" autocapitalize="off" '
-               'autocorrect="off" spellcheck="false" placeholder="pinyin">' + TYPED_JS_FRONT)
-FRONT_SELF = '<div class="task">{{Task}}</div>{{Front}}{{PromptAudio}}'
+               + INPUT.format(always="1", hint="pinyin o hanzi") + INPUT_JS_FRONT)
+FRONT_SELF = ('<div class="task">{{Task}}</div>{{Front}}{{PromptAudio}}'
+              + INPUT.format(always="0", hint="escríbelo si quieres (pinyin o hanzi)") + INPUT_JS_FRONT)
 BACK = ('{{FrontSide}}<hr id="answer"><div id="acs-result"></div>'
         '<div id="acs-expected" style="display:none">{{Answer}}</div>'
-        '{{Back}}{{AnswerAudio}}{{Notes}}' + TYPED_JS_BACK)
-BACK_SELF = '{{FrontSide}}<hr id="answer">{{Back}}{{AnswerAudio}}{{Notes}}'
+        '{{Back}}{{AnswerAudio}}{{Notes}}' + INPUT_JS_BACK)
+BACK_SELF = '{{FrontSide}}<hr id="answer"><div id="acs-result"></div>{{Back}}{{AnswerAudio}}{{Notes}}' + INPUT_JS_BACK
 
 
 def esc(s):
@@ -1090,6 +1098,17 @@ def build_note(ex, eby, sby, manifest, media_files, models):
 
     typed = ans.get("typed", "")
     model = models["typed"] if typed else models["self"]
+    # Lo esperado para comparar lo escrito: tecleadas y frases para decir (en estas, escribir es opcional).
+    if typed:
+        exp_py, exp_hz = typed, ans.get("hanzi", "")
+    elif ex["type"] == "produce" and sent:
+        exp_py, exp_hz = sentence_pinyin(sent), sentence_text(sent)
+        front += '<span class="acs-typable" style="display:none"></span>'
+    else:
+        exp_py = exp_hz = ""
+    if exp_py or exp_hz:
+        back = (f'<span id="acs-exp-py" style="display:none">{esc(exp_py)}</span>'
+                f'<span id="acs-exp-hz" style="display:none">{esc(exp_hz)}</span>') + back
     fields = [ex["id"], esc(prompt.get("text")), front, prompt_audio, esc(typed), back, answer_audio,
               f'<div class="box">{"".join(notes)}</div>' if notes else ""]
     return genanki.Note(model=model, fields=fields,
