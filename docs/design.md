@@ -172,7 +172,7 @@ Por comprobar en uso real: que el cliente móvil de YAGO conserva lo escrito ent
 4. HSK 3.0 y frecuencia hablada como señales.
 5. `stats`: leer fallos de Anki por AnkiConnect y convertir las tarjetas problemáticas en huecos del siguiente lote.
 
-Sin fase: pasar Azure a S0 y regenerar (decisión de YAGO), copia de `2-raw/`, comprobar el historial tras unos días de repaso.
+Sin fase: pasar Azure a S0 y regenerar (decisión de YAGO) y copia de seguridad de `2-raw/`.
 
 ## Fuentes
 
