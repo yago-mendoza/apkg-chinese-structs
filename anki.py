@@ -61,6 +61,7 @@ AZURE_RATE = "-30%"
 AZURE_RATE_WORD = "-40%"
 AZURE_LEAD_MS = 200        # silencio inicial: algunos reproductores cortan el primer instante
 AZURE_FORMAT = "audio-24khz-96kbitrate-mono-mp3"
+AZURE_TIER = "S0"          # nivel de pago desde 2026-09-27: el audio generado puede distribuirse
 
 TONE_MARKS = {
     "a": "āáǎà", "e": "ēéěè", "i": "īíǐì",
@@ -836,7 +837,7 @@ def audio_rate(text):
 
 
 def audio_key(text, voice):
-    raw = json.dumps([text, voice, audio_rate(text), AZURE_LEAD_MS, AZURE_FORMAT], ensure_ascii=False, sort_keys=True)
+    raw = json.dumps([text, voice, audio_rate(text), AZURE_LEAD_MS, AZURE_FORMAT, AZURE_TIER], ensure_ascii=False, sort_keys=True)
     return AUDIO_PREFIX + hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16] + ".mp3"
 
 
@@ -874,7 +875,7 @@ def cmd_audio(dry_run):
         if not path.exists():
             path.write_bytes(azure_tts(t, AZURE_VOICE, key, region))
         manifest[t] = {"file": name, "provider": "Azure Speech", "voice": AZURE_VOICE, "rate": audio_rate(t),
-                       "lead_ms": AZURE_LEAD_MS,
+                       "lead_ms": AZURE_LEAD_MS, "tier": AZURE_TIER,
                        "date": datetime.date.today().isoformat()}
         save_manifest(manifest)
         print(f"  ✓ {t} → {name}")

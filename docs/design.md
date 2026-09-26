@@ -145,7 +145,7 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 
 - Azure Speech por REST, voz `zh-CN-YunyangNeural` (clara y estable, elegida por YAGO), velocidad -30 % en frases y -40 % en palabras sueltas (hasta 3 hanzi), con 200 ms de silencio inicial porque algunos reproductores cortan el primer instante (上午 se oía «shòu»). Caché por **texto chino exacto** en `3-data/audio/index.yaml`: editar consigna, significado o comentarios no regenera nada; cambiar el hanzi de una respuesta o frase sí (solo si estaba mal). Un texto se genera una vez y se reutiliza.
 - El audio de una frase solo vale para esa frase exacta: pocas frases útiles y estables, reutilizadas como ejemplo, mejor que variantes casi iguales.
-- **Licencia**: según los Product Terms de Microsoft (citados en su Q&A), solo el nivel de pago da derecho de uso del audio generado; el F0 actual es de evaluación. Hasta regenerar en **S0** (coste del orden de céntimos), los MP3 quedan fuera de git y el mazo no se comparte. Al publicar, indicar que el audio es sintético.
+- **Licencia**: según los Product Terms de Microsoft (citados en su Q&A), solo el nivel de pago da derecho de uso del audio generado. El recurso está en **S0** desde el 2026-09-27 y todo el audio se regeneró ahí (`tier: S0` en `index.yaml`); los MP3 se versionan. Al publicar, indicar que el audio es sintético (lo dice el README).
 - Voces HD descartadas por ahora: más naturales pero menos estables para fijar tonos; se reconsiderarán para frases de escucha largas.
 - Un polífono mal leído se corrige fijando la lectura con SSML (`<phoneme alphabet="sapi">`) cuando haga falta.
 
@@ -156,7 +156,7 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 ## Repositorio y privacidad
 
 - Repositorio `yago-mendoza/apkg-chinese-structs`, **público**: nada privado en `3-data/`, ninguna credencial. Local en `C:\Users\yagom\dev\apkg-chinese-structs`, Python en `.venv`, UTF-8 explícito.
-- Fuera de git: `1-inbox/` (salvo su README), `6-output/`, los MP3 (hasta S0) y el entorno. `2-raw/` se versiona (decisión de YAGO, 2026-09-27): los apuntes no son privados. Antes de archivar un lote en `2-raw/`, revisar que no haya datos sensibles (claves, correos, teléfonos).
+- Fuera de git: `1-inbox/` (salvo su README), `6-output/` y el entorno. `2-raw/` se versiona (decisión de YAGO, 2026-09-27): los apuntes no son privados. Antes de archivar un lote en `2-raw/`, revisar que no haya datos sensibles (claves, correos, teléfonos).
 - Commits cuando YAGO lo pida; push a GitHub solo cuando lo pida.
 - Fuentes externas: HSK 3.0 de `drkameleon/complete-hsk-vocabulary` (MIT; se puede versionar con su aviso de licencia; solo nivel y pinyin, no sus glosas CC-CEDICT). Dong Chinese y SUBTLEX-CH: condiciones sin aclarar, solo en local. No elegir licencia de publicación por YAGO.
 - Futuro (sin fecha): exportación `dictionary.json` para InfraPhysics desde `3-data/`, por lista explícita de campos publicables.
@@ -173,7 +173,6 @@ Por comprobar en uso real: que el cliente móvil de YAGO conserva lo escrito ent
 4. HSK 3.0 y frecuencia hablada como señales.
 5. `stats`: leer fallos de Anki por AnkiConnect y convertir las tarjetas problemáticas en huecos del siguiente lote.
 
-Sin fase: pasar Azure a S0 y regenerar (decisión de YAGO).
 
 ## Fuentes
 
