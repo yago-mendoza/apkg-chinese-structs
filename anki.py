@@ -33,6 +33,7 @@ import urllib.request
 from pathlib import Path
 
 import yaml
+from dragonmapper.transcriptions import pinyin_to_ipa
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "3-data"                    # fuente de verdad, mantenida por el agente
@@ -229,11 +230,7 @@ def ipa(hanzi, reading):
     if not syl:
         return ""
     parts = [f"{s}{t}" for s, t in syl if t != "erhua"]
-    try:
-        from dragonmapper.transcriptions import pinyin_to_ipa
-        out = pinyin_to_ipa(" ".join(parts))
-    except Exception:
-        return ""
+    out = pinyin_to_ipa(" ".join(parts))
     if any(t == "erhua" for _, t in syl):                  # 哪儿: la ɻ va dentro de la sílaba, antes del tono
         out = re.sub(r"([˥˦˧˨˩]+)$", r"ɻ\1", out, count=1) if re.search(r"[˥˦˧˨˩]$", out) else out + "ɻ"
     return out
@@ -368,11 +365,7 @@ def phonetic_notes(hanzi, reading):
         for n, (key, cond, text) in enumerate(PHONETIC_TRAPS):
             if key not in found and cond(i, f):
                 marked = numeric_to_marked(f"{bare}{tone}")
-                try:
-                    from dragonmapper.transcriptions import pinyin_to_ipa
-                    phon = pinyin_to_ipa(f"{bare}{tone}")
-                except Exception:
-                    phon = ""
+                phon = pinyin_to_ipa(f"{bare}{tone}")
                 found[key] = (n, bare, text.format(s=marked, i=i, ipa=phon, sorda=SORDA.get(i, ""),
                                                    aire=" con aire" if i == "c" else "").replace(" []", ""))
     # Primero una nota por sílaba distinta (la más engañosa de cada una); luego el resto.

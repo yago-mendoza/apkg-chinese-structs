@@ -1,0 +1,24 @@
+# En cada push y pull request: valida los datos del mazo (anki.py check) y ejecuta las pruebas.
+# No necesita Azure ni Anki: el audio ya está en el repositorio y lo que habla con Anki se prueba simulado.
+name: check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # las etiquetas lote-NNN: check compara con el último lote
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python anki.py check
+      - run: python -m unittest discover -s tests -v
