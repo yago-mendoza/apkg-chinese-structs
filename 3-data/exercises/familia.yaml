@@ -55,16 +55,6 @@ exercises:
     answer: {typed: xiao3 hai2, hanzi: 小孩, pinyin: xiǎohái, meaning: 'niño pequeño, crío'}
     lang: es
     comments: []
-  - id: x.listen.baba
-    added: 2026-09-26
-    type: listen
-    targets: [w.baba]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 爸爸, pinyin: bàba, meaning: papá}
-    reveal: [s.ta-shi-wo-de-baba]
-    lang: es
-    comments: []
   - id: x.produce.baba
     added: 2026-09-26
     type: produce
@@ -82,16 +72,6 @@ exercises:
     skills: [tones, pinyin]
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 爸爸, pinyin: ba ba}
     answer: {typed: '45', hanzi: 爸爸, pinyin: bàba, meaning: papá}
-    lang: es
-    comments: []
-  - id: x.listen.mama
-    added: 2026-09-26
-    type: listen
-    targets: [w.mama]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 妈妈, pinyin: māma, meaning: mamá}
-    reveal: [s.ta-shi-wo-de-mama]
     lang: es
     comments: []
   - id: x.produce.mama
@@ -113,15 +93,6 @@ exercises:
     answer: {typed: '15', hanzi: 妈妈, pinyin: māma, meaning: mamá}
     lang: es
     comments: []
-  - id: x.listen.erzi
-    added: 2026-09-26
-    type: listen
-    targets: [w.erzi]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 儿子, pinyin: érzi, meaning: hijo}
-    lang: es
-    comments: []
   - id: x.tones.erzi
     added: 2026-09-26
     type: tones
@@ -130,24 +101,6 @@ exercises:
     skills: [tones, pinyin]
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 儿子, pinyin: er zi}
     answer: {typed: '25', hanzi: 儿子, pinyin: érzi, meaning: hijo}
-    lang: es
-    comments: []
-  - id: x.listen.nver
-    added: 2026-09-26
-    type: listen
-    targets: [w.nver]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 女儿, pinyin: nǚ'ér, meaning: hija}
-    lang: es
-    comments: []
-  - id: x.listen.haizi
-    added: 2026-09-26
-    type: listen
-    targets: [w.haizi]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 孩子, pinyin: háizi, meaning: 'niño, niña; hijo, hija'}
     lang: es
     comments: []
   - id: x.produce.haizi
@@ -167,15 +120,6 @@ exercises:
     skills: [tones, pinyin]
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 孩子, pinyin: hai zi}
     answer: {typed: '25', hanzi: 孩子, pinyin: háizi, meaning: 'niño, niña; hijo, hija'}
-    lang: es
-    comments: []
-  - id: x.listen.xiaohai
-    added: 2026-09-26
-    type: listen
-    targets: [w.xiaohai]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 小孩, pinyin: xiǎohái, meaning: 'niño pequeño, crío'}
     lang: es
     comments: []
   - id: x.listen.ta-shi-wo-de-baba
@@ -210,4 +154,58 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Ella es mi madre.}
     lang: es
+    comments: []
+  - id: x.dictation.baba
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.baba]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ba4 ba5, hanzi: 爸爸, pinyin: bàba, meaning: papá}
+    comments: []
+  - id: x.dictation.mama
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.mama]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ma1 ma5, hanzi: 妈妈, pinyin: māma, meaning: mamá}
+    comments: []
+  - id: x.dictation.erzi
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.erzi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: er2 zi5, hanzi: 儿子, pinyin: érzi, meaning: hijo}
+    comments: []
+  - id: x.dictation.nver
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.nver]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nü3 er2, hanzi: 女儿, pinyin: nǚ'ér, meaning: hija}
+    comments: []
+  - id: x.dictation.haizi
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.haizi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hai2 zi5, hanzi: 孩子, pinyin: háizi, meaning: 'niño, niña; hijo, hija'}
+    comments: []
+  - id: x.dictation.xiaohai
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.xiaohai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiao3 hai2, hanzi: 小孩, pinyin: xiǎohái, meaning: 'niño pequeño, crío'}
     comments: []

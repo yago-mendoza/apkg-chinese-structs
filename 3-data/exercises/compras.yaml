@@ -279,16 +279,6 @@ exercises:
     answer: {meaning: '¿Dónde está la tienda?'}
     lang: es
     comments: []
-  - id: x.listen.he.drink
-    added: 2026-09-26
-    type: listen
-    targets: [w.he.drink]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 喝, pinyin: hē, meaning: beber}
-    reveal: [s.ni-he-shui-ma]
-    lang: es
-    comments: []
   - id: x.produce.he.drink
     added: 2026-09-26
     type: produce
@@ -326,16 +316,6 @@ exercises:
     answer: {typed: xiang3, hanzi: 想, pinyin: xiǎng, meaning: querer (hacer algo); pensar}
     lang: es
     comments: []
-  - id: x.listen.shuiguo
-    added: 2026-09-26
-    type: listen
-    targets: [w.shuiguo]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 水果, pinyin: shuǐguǒ, meaning: fruta}
-    reveal: [s.wo-xiang-mai-shuiguo]
-    lang: es
-    comments: []
   - id: x.tones.shuiguo
     added: 2026-09-26
     type: tones
@@ -344,16 +324,6 @@ exercises:
     skills: [tones, pinyin]
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 水果, pinyin: shui guo}
     answer: {typed: '33', hanzi: 水果, pinyin: shuǐguǒ, meaning: fruta}
-    lang: es
-    comments: []
-  - id: x.listen.zai.at
-    added: 2026-09-26
-    type: listen
-    targets: [w.zai.at]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 在, pinyin: zài, meaning: estar en (un lugar)}
-    reveal: [s.shangdian-zai-nar]
     lang: es
     comments: []
   - id: x.cloze.zai.at
@@ -380,15 +350,6 @@ exercises:
     answer: {typed: nar3, hanzi: 哪儿, pinyin: nǎr, meaning: dónde}
     lang: es
     comments: []
-  - id: x.listen.kafei
-    added: 2026-09-26
-    type: listen
-    targets: [w.kafei]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 咖啡, pinyin: kāfēi, meaning: café}
-    lang: es
-    comments: []
   - id: x.produce.kafei
     added: 2026-09-26
     type: produce
@@ -396,24 +357,6 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: '¿Cómo se dice «café»? Escribe el pinyin.'}
     answer: {typed: ka1 fei1, hanzi: 咖啡, pinyin: kāfēi, meaning: café}
-    lang: es
-    comments: []
-  - id: x.listen.qiaokeli
-    added: 2026-09-26
-    type: listen
-    targets: [w.qiaokeli]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 巧克力, pinyin: qiǎokèlì, meaning: chocolate}
-    lang: es
-    comments: []
-  - id: x.listen.niurou
-    added: 2026-09-26
-    type: listen
-    targets: [w.niurou]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 牛肉, pinyin: niúròu, meaning: carne de ternera}
     lang: es
     comments: []
   - id: x.produce.niurou
@@ -435,4 +378,58 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¿Bebes agua?»'}
     answer: {meaning: '¿Bebes agua?'}
     lang: es
+    comments: []
+  - id: x.dictation.he.drink
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.he.drink]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: he1, hanzi: 喝, pinyin: hē, meaning: beber}
+    comments: []
+  - id: x.dictation.shuiguo
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.shuiguo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shui3 guo3, hanzi: 水果, pinyin: shuǐguǒ, meaning: fruta}
+    comments: []
+  - id: x.dictation.zai.at
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.zai.at]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zai4, hanzi: 在, pinyin: zài, meaning: estar en (un lugar)}
+    comments: []
+  - id: x.dictation.kafei
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.kafei]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ka1 fei1, hanzi: 咖啡, pinyin: kāfēi, meaning: café}
+    comments: []
+  - id: x.dictation.qiaokeli
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.qiaokeli]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: qiao3 ke4 li4, hanzi: 巧克力, pinyin: qiǎokèlì, meaning: chocolate}
+    comments: []
+  - id: x.dictation.niurou
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.niurou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: niu2 rou4, hanzi: 牛肉, pinyin: niúròu, meaning: carne de ternera}
     comments: []

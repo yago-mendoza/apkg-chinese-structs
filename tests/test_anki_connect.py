@@ -31,6 +31,10 @@ class FakeAnki:
         return card["deck"] == deck or card["deck"].startswith(deck + "::")
 
     def _find(self, query):
+        if query.startswith("(note:"):                   # our note types, outside our deck
+            ours = re.search(r'-"deck:([^"]+)"', query).group(1)
+            return [i for i, c in self.cards.items() if c.get("model", MODEL) in (MODEL, anki.MODEL_SELF_NAME)
+                    and not self._in_deck(c, ours)]
         deck = re.search(r'"deck:([^"]+)"', query).group(1)
         return [i for i, c in self.cards.items() if self._in_deck(c, deck) and ("is:new" not in query or c["new"])]
 
@@ -98,7 +102,7 @@ class AnkiSafety(unittest.TestCase):
         fake = FakeAnki([
             {"id": 1, "deck": self.saludos, "ex": "x.a", "new": True},
             {"id": 2, "deck": f"{OURS}::2026-09", "ex": "x.b", "new": True},       # subdeck antiguo, por mes
-            {"id": 3, "deck": "HSK 1", "ex": "x.b", "new": True},                 # otro mazo con un ID igual
+            {"id": 3, "deck": "HSK 1", "ex": "x.b", "new": True, "model": "Basic"},  # otro mazo con un ID igual
             {"id": 4, "deck": "Pimsleur::Unit 1", "ex": "zzz", "new": False},
         ])
         (moved, removed), _ = self.run_with(fake, anki.place_by_theme, [ex("x.a", "saludos"), ex("x.b", "familia")])
@@ -110,6 +114,16 @@ class AnkiSafety(unittest.TestCase):
         self.assertIn("HSK 1", fake.decks)
         self.assertIn("Pimsleur::Unit 1", fake.decks)
         self.assertNotIn(3, fake.touched_cards())
+
+    def test_place_by_theme_recovers_our_cards_left_in_the_default_deck(self):
+        fake = FakeAnki([
+            {"id": 1, "deck": "Predeterminado", "ex": "x.a", "new": True},
+            {"id": 2, "deck": "Predeterminado", "ex": "otra", "new": True, "model": "Basic"},   # ajena: se queda
+        ])
+        (moved, _), _ = self.run_with(fake, anki.place_by_theme, [ex("x.a", "saludos")])
+        self.assertEqual(moved, 1)
+        self.assertEqual(fake.cards[1]["deck"], self.saludos)
+        self.assertEqual(fake.cards[2]["deck"], "Predeterminado")
 
     def test_place_by_theme_keeps_a_stale_subdeck_that_still_has_cards(self):
         fake = FakeAnki([{"id": 1, "deck": f"{OURS}::viejo", "ex": "x.desconocido", "new": True}])

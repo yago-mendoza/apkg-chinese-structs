@@ -206,16 +206,6 @@ exercises:
     answer: {typed: hen3, hanzi: 很, pinyin: hěn, meaning: 'muy (con adjetivos, a menudo solo enlace)'}
     lang: es
     comments: []
-  - id: x.listen.hao
-    added: 2026-09-26
-    type: listen
-    targets: [w.hao]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 好, pinyin: hǎo, meaning: 'bien, bueno'}
-    reveal: [s.ni-hao-ma]
-    lang: es
-    comments: []
   - id: x.produce.hao
     added: 2026-09-26
     type: produce
@@ -225,90 +215,6 @@ exercises:
     answer: {typed: hao3, hanzi: 好, pinyin: hǎo, meaning: 'bien, bueno'}
     lang: es
     comments: []
-  - id: x.listen.gao
-    added: 2026-09-26
-    type: listen
-    targets: [w.gao]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 高, pinyin: gāo, meaning: alto}
-    reveal: [s.ta-hen-gao]
-    lang: es
-    comments: []
-  - id: x.listen.ai
-    added: 2026-09-26
-    type: listen
-    targets: [w.ai]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 矮, pinyin: ǎi, meaning: bajo (de estatura)}
-    lang: es
-    comments: []
-  - id: x.listen.pang
-    added: 2026-09-26
-    type: listen
-    targets: [w.pang]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 胖, pinyin: pàng, meaning: gordo}
-    lang: es
-    comments: []
-  - id: x.listen.shou
-    added: 2026-09-26
-    type: listen
-    targets: [w.shou]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 瘦, pinyin: shòu, meaning: delgado}
-    lang: es
-    comments: []
-  - id: x.listen.piaoliang
-    added: 2026-09-26
-    type: listen
-    targets: [w.piaoliang]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 漂亮, pinyin: piàoliang, meaning: 'guapo, bonito'}
-    reveal: [s.ta-hen-piaoliang]
-    lang: es
-    comments: []
-  - id: x.listen.shuai
-    added: 2026-09-26
-    type: listen
-    targets: [w.shuai]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 帅, pinyin: shuài, meaning: guapo (sobre todo hombres)}
-    lang: es
-    comments: []
-  - id: x.listen.congming
-    added: 2026-09-26
-    type: listen
-    targets: [w.congming]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 聪明, pinyin: cōngming, meaning: 'listo, inteligente'}
-    lang: es
-    comments: []
-  - id: x.listen.ben
-    added: 2026-09-26
-    type: listen
-    targets: [w.ben]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 笨, pinyin: bèn, meaning: 'torpe, tonto'}
-    lang: es
-    comments: []
-  - id: x.listen.keai
-    added: 2026-09-26
-    type: listen
-    targets: [w.keai]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 可爱, pinyin: kě'ài, meaning: 'mono, adorable'}
-    reveal: [s.ta-hen-keai]
-    lang: es
-    comments: []
   - id: x.produce.keai
     added: 2026-09-26
     type: produce
@@ -316,15 +222,6 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: '¿Cómo se dice «mono, adorable»? Escribe el pinyin.'}
     answer: {typed: ke3 ai4, hanzi: 可爱, pinyin: kě'ài, meaning: 'mono, adorable'}
-    lang: es
-    comments: []
-  - id: x.listen.youmo
-    added: 2026-09-26
-    type: listen
-    targets: [w.youmo]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 幽默, pinyin: yōumò, meaning: 'gracioso, con sentido del humor'}
     lang: es
     comments: []
   - id: x.produce.ta-hen-gao
@@ -337,4 +234,103 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Él es alto.»'}
     answer: {meaning: Él es alto.}
     lang: es
+    comments: []
+  - id: x.dictation.hao
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.hao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hao3, hanzi: 好, pinyin: hǎo, meaning: 'bien, bueno'}
+    comments: []
+  - id: x.dictation.gao
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.gao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gao1, hanzi: 高, pinyin: gāo, meaning: alto}
+    comments: []
+  - id: x.dictation.ai
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.ai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ai3, hanzi: 矮, pinyin: ǎi, meaning: bajo (de estatura)}
+    comments: []
+  - id: x.dictation.pang
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.pang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: pang4, hanzi: 胖, pinyin: pàng, meaning: gordo}
+    comments: []
+  - id: x.dictation.shou
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.shou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shou4, hanzi: 瘦, pinyin: shòu, meaning: delgado}
+    comments: []
+  - id: x.dictation.piaoliang
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.piaoliang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: piao4 liang5, hanzi: 漂亮, pinyin: piàoliang, meaning: 'guapo, bonito'}
+    comments: []
+  - id: x.dictation.shuai
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.shuai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shuai4, hanzi: 帅, pinyin: shuài, meaning: guapo (sobre todo hombres)}
+    comments: []
+  - id: x.dictation.congming
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.congming]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: cong1 ming5, hanzi: 聪明, pinyin: cōngming, meaning: 'listo, inteligente'}
+    comments: []
+  - id: x.dictation.ben
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.ben]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ben4, hanzi: 笨, pinyin: bèn, meaning: 'torpe, tonto'}
+    comments: []
+  - id: x.dictation.keai
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.keai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ke3 ai4, hanzi: 可爱, pinyin: kě'ài, meaning: 'mono, adorable'}
+    comments: []
+  - id: x.dictation.youmo
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.youmo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: you1 mo4, hanzi: 幽默, pinyin: yōumò, meaning: 'gracioso, con sentido del humor'}
     comments: []

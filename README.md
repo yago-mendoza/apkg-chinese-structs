@@ -29,6 +29,10 @@
 - **After each batch** it leaves you a review: your level, gaps, what didn't go in and why. You answer inline; your answers feed the next batch.
 - **You study** in Anki (soon, one HSK level at a time). Nothing else to maintain.
 
+<p align="center">
+  <img src="docs/assets/anki-card.jpg" width="300" alt="A listening card on the phone after answering: typed pinyin checked, hanzi, IPA, meaning, pronunciation traps, an example sentence and Anki's review intervals">
+</p>
+
 I built this for my own Mandarin, so the repository ships with a real, working example: my deck, **🐉 Chino práctico**, built from my classes. The deck and my working notes are in Spanish; the system works for any learner. Use it as is, or empty it and start with your own notes.
 
 ## How it works

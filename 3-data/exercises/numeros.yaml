@@ -11,15 +11,6 @@ exercises:
     answer: {hanzi: 八, pinyin: bā, meaning: ocho}
     lang: es
     comments: []
-  - id: x.listen.ba
-    added: 2026-09-26
-    type: listen
-    targets: [w.ba]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 八, pinyin: bā, meaning: ocho}
-    lang: es
-    comments: []
   - id: x.produce.ba
     added: 2026-09-26
     type: produce
@@ -37,4 +28,13 @@ exercises:
     prompt: {text: 'Lee: pinyin y significado.', hanzi: 八}
     answer: {hanzi: 八, pinyin: bā, meaning: ocho}
     lang: es
+    comments: []
+  - id: x.dictation.ba
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.ba]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ba1, hanzi: 八, pinyin: bā, meaning: ocho}
     comments: []

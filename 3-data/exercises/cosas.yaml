@@ -86,16 +86,6 @@ exercises:
     answer: {meaning: Estoy leyendo.}
     lang: es
     comments: []
-  - id: x.listen.kan
-    added: 2026-09-26
-    type: listen
-    targets: [w.kan]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 看, pinyin: kàn, meaning: mirar; leer}
-    reveal: [s.wo-zai-kan-shu]
-    lang: es
-    comments: []
   - id: x.produce.kan
     added: 2026-09-26
     type: produce
@@ -103,24 +93,6 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: '¿Cómo se dice «mirar; leer»? Escribe el pinyin.'}
     answer: {typed: kan4, hanzi: 看, pinyin: kàn, meaning: mirar; leer}
-    lang: es
-    comments: []
-  - id: x.listen.kanjian
-    added: 2026-09-26
-    type: listen
-    targets: [w.kanjian]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 看见, pinyin: kànjiàn, meaning: ver (llegar a ver)}
-    lang: es
-    comments: []
-  - id: x.listen.kankan
-    added: 2026-09-26
-    type: listen
-    targets: [w.kankan]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 看看, pinyin: kànkan, meaning: echar un vistazo}
     lang: es
     comments: []
   - id: x.produce.kankan
@@ -142,16 +114,6 @@ exercises:
     answer: {typed: '45', hanzi: 看看, pinyin: kànkan, meaning: echar un vistazo}
     lang: es
     comments: []
-  - id: x.listen.shu
-    added: 2026-09-26
-    type: listen
-    targets: [w.shu]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 书, pinyin: shū, meaning: libro}
-    reveal: [s.wo-zai-kan-shu]
-    lang: es
-    comments: []
   - id: x.produce.shu
     added: 2026-09-26
     type: produce
@@ -161,15 +123,6 @@ exercises:
     answer: {typed: shu1, hanzi: 书, pinyin: shū, meaning: libro}
     lang: es
     comments: []
-  - id: x.listen.shouji
-    added: 2026-09-26
-    type: listen
-    targets: [w.shouji]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 手机, pinyin: shǒujī, meaning: móvil}
-    lang: es
-    comments: []
   - id: x.produce.shouji
     added: 2026-09-26
     type: produce
@@ -177,24 +130,6 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: '¿Cómo se dice «móvil»? Escribe el pinyin.'}
     answer: {typed: shou3 ji1, hanzi: 手机, pinyin: shǒujī, meaning: móvil}
-    lang: es
-    comments: []
-  - id: x.listen.zuqiu
-    added: 2026-09-26
-    type: listen
-    targets: [w.zuqiu]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 足球, pinyin: zúqiú, meaning: fútbol}
-    lang: es
-    comments: []
-  - id: x.listen.huoche
-    added: 2026-09-26
-    type: listen
-    targets: [w.huoche]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 火车, pinyin: huǒchē, meaning: tren}
     lang: es
     comments: []
   - id: x.produce.wo-zai-kan-shu
@@ -207,4 +142,67 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Estoy leyendo.»'}
     answer: {meaning: Estoy leyendo.}
     lang: es
+    comments: []
+  - id: x.dictation.kan
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.kan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kan4, hanzi: 看, pinyin: kàn, meaning: mirar; leer}
+    comments: []
+  - id: x.dictation.kanjian
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.kanjian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kan4 jian4, hanzi: 看见, pinyin: kànjiàn, meaning: ver (llegar a ver)}
+    comments: []
+  - id: x.dictation.kankan
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.kankan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kan4 kan5, hanzi: 看看, pinyin: kànkan, meaning: echar un vistazo}
+    comments: []
+  - id: x.dictation.shu
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.shu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shu1, hanzi: 书, pinyin: shū, meaning: libro}
+    comments: []
+  - id: x.dictation.shouji
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.shouji]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shou3 ji1, hanzi: 手机, pinyin: shǒujī, meaning: móvil}
+    comments: []
+  - id: x.dictation.zuqiu
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.zuqiu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zu2 qiu2, hanzi: 足球, pinyin: zúqiú, meaning: fútbol}
+    comments: []
+  - id: x.dictation.huoche
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.huoche]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: huo3 che1, hanzi: 火车, pinyin: huǒchē, meaning: tren}
     comments: []

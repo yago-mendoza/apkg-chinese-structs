@@ -272,16 +272,6 @@ exercises:
     answer: {hanzi: 人, pinyin: rén, meaning: persona}
     lang: es
     comments: []
-  - id: x.listen.wo
-    added: 2026-09-26
-    type: listen
-    targets: [w.wo]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 我, pinyin: wǒ, meaning: yo; me}
-    reveal: [s.wo-hen-hao-ni-ne]
-    lang: es
-    comments: []
   - id: x.produce.wo
     added: 2026-09-26
     type: produce
@@ -301,16 +291,6 @@ exercises:
     reveal: [s.wo-hen-hao-ni-ne]
     lang: es
     comments: []
-  - id: x.listen.ni
-    added: 2026-09-26
-    type: listen
-    targets: [w.ni]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 你, pinyin: nǐ, meaning: tú}
-    reveal: [s.ni-he-shui-ma]
-    lang: es
-    comments: []
   - id: x.produce.ni
     added: 2026-09-26
     type: produce
@@ -320,16 +300,6 @@ exercises:
     answer: {typed: ni3, hanzi: 你, pinyin: nǐ, meaning: tú}
     lang: es
     comments: []
-  - id: x.listen.nin
-    added: 2026-09-26
-    type: listen
-    targets: [w.nin]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 您, pinyin: nín, meaning: usted (tú con respeto)}
-    reveal: [s.nin-shi-women-de-laoshi-ma]
-    lang: es
-    comments: []
   - id: x.produce.nin
     added: 2026-09-26
     type: produce
@@ -337,26 +307,6 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: '¿Cómo se dice «usted (tú con respeto)»? Escribe el pinyin.'}
     answer: {typed: nin2, hanzi: 您, pinyin: nín, meaning: usted (tú con respeto)}
-    lang: es
-    comments: []
-  - id: x.listen.women
-    added: 2026-09-26
-    type: listen
-    targets: [w.women]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 我们, pinyin: wǒmen, meaning: nosotros}
-    reveal: [s.women-shi-pengyou]
-    lang: es
-    comments: []
-  - id: x.listen.nimen
-    added: 2026-09-26
-    type: listen
-    targets: [w.nimen]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 你们, pinyin: nǐmen, meaning: vosotros}
-    reveal: [s.nimen-bu-shi-xuesheng-ma]
     lang: es
     comments: []
   - id: x.produce.nimen
@@ -376,16 +326,6 @@ exercises:
     skills: [tones, pinyin]
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 你们, pinyin: ni men}
     answer: {typed: '35', hanzi: 你们, pinyin: nǐmen, meaning: vosotros}
-    lang: es
-    comments: []
-  - id: x.listen.ta.he
-    added: 2026-09-26
-    type: listen
-    targets: [w.ta.he]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 他, pinyin: tā, meaning: él}
-    reveal: [s.ta-hen-gao]
     lang: es
     comments: []
   - id: x.produce.ta.he
@@ -427,16 +367,6 @@ exercises:
     reveal: [s.ta-hen-keai]
     lang: es
     comments: []
-  - id: x.listen.tamen
-    added: 2026-09-26
-    type: listen
-    targets: [w.tamen]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 他们, pinyin: tāmen, meaning: ellos}
-    reveal: [s.tamen-dou-shi-zhongguoren-ma]
-    lang: es
-    comments: []
   - id: x.produce.tamen
     added: 2026-09-26
     type: produce
@@ -456,15 +386,6 @@ exercises:
     answer: {typed: '15', hanzi: 他们, pinyin: tāmen, meaning: ellos}
     lang: es
     comments: []
-  - id: x.listen.dajia
-    added: 2026-09-26
-    type: listen
-    targets: [w.dajia]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 大家, pinyin: dàjiā, meaning: 'todos, todo el mundo'}
-    lang: es
-    comments: []
   - id: x.produce.dajia
     added: 2026-09-26
     type: produce
@@ -472,26 +393,6 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: '¿Cómo se dice «todos, todo el mundo»? Escribe el pinyin.'}
     answer: {typed: da4 jia1, hanzi: 大家, pinyin: dàjiā, meaning: 'todos, todo el mundo'}
-    lang: es
-    comments: []
-  - id: x.listen.gongchengshi
-    added: 2026-09-26
-    type: listen
-    targets: [w.gongchengshi]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 工程师, pinyin: gōngchéngshī, meaning: 'ingeniero, ingeniera'}
-    reveal: [s.wo-shi-gongchengshi]
-    lang: es
-    comments: []
-  - id: x.listen.ren
-    added: 2026-09-26
-    type: listen
-    targets: [w.ren]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 人, pinyin: rén, meaning: persona}
-    reveal: [s.wo-shi-xibanyaren]
     lang: es
     comments: []
   - id: x.produce.ren
@@ -534,4 +435,94 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: 'Sí, soy vuestro profesor.'}
     lang: es
+    comments: []
+  - id: x.dictation.wo
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.wo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wo3, hanzi: 我, pinyin: wǒ, meaning: yo; me}
+    comments: []
+  - id: x.dictation.ni
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.ni]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ni3, hanzi: 你, pinyin: nǐ, meaning: tú}
+    comments: []
+  - id: x.dictation.nin
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.nin]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nin2, hanzi: 您, pinyin: nín, meaning: usted (tú con respeto)}
+    comments: []
+  - id: x.dictation.women
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.women]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wo3 men5, hanzi: 我们, pinyin: wǒmen, meaning: nosotros}
+    comments: []
+  - id: x.dictation.nimen
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.nimen]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ni3 men5, hanzi: 你们, pinyin: nǐmen, meaning: vosotros}
+    comments: []
+  - id: x.dictation.ta.he
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.ta.he]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ta1, hanzi: 他, pinyin: tā, meaning: él}
+    comments: []
+  - id: x.dictation.tamen
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.tamen]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ta1 men5, hanzi: 他们, pinyin: tāmen, meaning: ellos}
+    comments: []
+  - id: x.dictation.dajia
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.dajia]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: da4 jia1, hanzi: 大家, pinyin: dàjiā, meaning: 'todos, todo el mundo'}
+    comments: []
+  - id: x.dictation.gongchengshi
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.gongchengshi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gong1 cheng2 shi1, hanzi: 工程师, pinyin: gōngchéngshī, meaning: 'ingeniero, ingeniera'}
+    comments: []
+  - id: x.dictation.ren
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.ren]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ren2, hanzi: 人, pinyin: rén, meaning: persona}
     comments: []

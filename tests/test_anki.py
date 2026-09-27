@@ -86,6 +86,11 @@ class Coverage(unittest.TestCase):
         types = sorted(ex["type"] for _, ex in made)
         self.assertEqual(types, ["listen", "produce", "read", "tones"])
         self.assertEqual(manual, [])
+        listen = next(ex for _, ex in made if ex["type"] == "listen")
+        self.assertEqual(listen["answer"].get("typed"), "peng2 you5")        # lo que se oye se escribe
+        base = anki.baseline_exercises()
+        if base:
+            self.assertFalse({ex["id"] for _, ex in made} & set(base[1]))   # nunca un ID del último lote
         written = [ex | {"theme": theme} for theme, ex in made]   # al escribirlos, su tema es su archivo
         errors, _ = anki.validate(entries, sentences, exercises + written, require_audio=False)
         self.assertEqual([e for e in errors if "w.test" in e], [])

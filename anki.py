@@ -609,6 +609,9 @@ def scaffold_exercises(entries, sentences, exercises, today):
     """([(tema, ejercicio)], [(id, exigencia, motivo)]): tarjetas estándar para lo que falta, y lo que pide criterio."""
     sby = {x["id"]: x for x in sentences}
     ids = {x["id"] for x in exercises}
+    base = baseline_exercises()
+    if base:
+        ids |= set(base[1])
     containing = {}
     for sent in sorted(sentences, key=lambda t: t.get("use") != "say"):
         for seg in sent.get("segments", []):
@@ -661,8 +664,13 @@ def scaffold_exercises(entries, sentences, exercises, today):
                 made.append(make(f"x.read.{short}", theme, type="read", targets=[iid], skills=["reading", "pinyin"],
                                  prompt={"text": "Lee: pinyin y significado.", "hanzi": it["hanzi"]}, answer=answer(it)))
             elif need == "listen":
-                made.append(make(f"x.listen.{short}", theme, type="listen", targets=[iid], skills=["listening", "tones"],
-                                 prompt={"text": "Escucha. ¿Qué palabra es?", "audio": True}, answer=answer(it)))
+                if not numeric:
+                    manual.append((iid, need, "el pinyin no se alinea con los hanzi: revisar la entrada"))
+                    continue
+                made.append(make(f"x.dictation.{short}", theme, type="listen", targets=[iid],
+                                 skills=["listening", "pinyin", "tones"],
+                                 prompt={"text": "Escucha y escribe el pinyin.", "audio": True},
+                                 answer=answer(it, numeric)))
             elif need == "produce":
                 made.append(make(f"x.produce.{short}", theme, type="produce", targets=[iid], skills=["production", "pinyin"],
                                  prompt={"text": f"¿Cómo se dice «{(it.get('meaning') or {}).get('es', '')}»? Escribe el pinyin."},
@@ -1711,11 +1719,14 @@ def reset_progress():
 
 
 def place_by_theme(exercises):
-    """Mueve cada tarjeta al subdeck de su tema (conserva el progreso) y borra los subdecks propios que
-    queden vacíos y no sean de ningún tema (p. ej. los antiguos por mes). Solo dentro del mazo."""
+    """Mueve cada tarjeta al subdeck de su tema (conserva el progreso), también las de este mazo que hayan acabado
+    fuera de él, y borra los subdecks propios que queden vacíos y no sean de ningún tema. Nunca toca otras notas."""
     names = theme_deck_names()
     want = {ex["id"]: names[ex["theme"]] for ex in exercises}
     cards = anki_request("findCards", query=f'"deck:{DECK_NAME}"')
+    # Our cards that ended up outside the deck (e.g. in the default deck) come back too; filtered decks are left alone.
+    cards += anki_request("findCards", query=f'(note:"{MODEL_TYPED_NAME}" OR note:"{MODEL_SELF_NAME}") '
+                                             f'-"deck:{DECK_NAME}" -deck:filtered')
     info = anki_request("cardsInfo", cards=cards) if cards else []
     moves = {}
     for c in info:

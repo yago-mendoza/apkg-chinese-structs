@@ -418,24 +418,6 @@ exercises:
     answer: {typed: zhong1 guo2, hanzi: 中国, pinyin: Zhōngguó, meaning: China}
     lang: es
     comments: []
-  - id: x.listen.meiguo
-    added: 2026-09-26
-    type: listen
-    targets: [w.meiguo]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 美国, pinyin: Měiguó, meaning: Estados Unidos}
-    lang: es
-    comments: []
-  - id: x.listen.zhongwen
-    added: 2026-09-26
-    type: listen
-    targets: [w.zhongwen]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 中文, pinyin: Zhōngwén, meaning: chino (la lengua)}
-    lang: es
-    comments: []
   - id: x.produce.zhongwen
     added: 2026-09-26
     type: produce
@@ -443,16 +425,6 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: '¿Cómo se dice «chino (la lengua)»? Escribe el pinyin.'}
     answer: {typed: zhong1 wen2, hanzi: 中文, pinyin: Zhōngwén, meaning: chino (la lengua)}
-    lang: es
-    comments: []
-  - id: x.listen.bu
-    added: 2026-09-26
-    type: listen
-    targets: [w.bu]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 不, pinyin: bù, meaning: 'no'}
-    reveal: [s.wo-bu-shi-xuesheng]
     lang: es
     comments: []
   - id: x.cloze.bu
@@ -468,16 +440,6 @@ exercises:
     explanation: Se escribe bù; delante de cuarto tono suena bú.
     lang: es
     comments: []
-  - id: x.listen.ma
-    added: 2026-09-26
-    type: listen
-    targets: [w.ma]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 吗, pinyin: ma, meaning: '¿…? (convierte la frase en pregunta de sí o no)'}
-    reveal: [s.ni-he-shui-ma]
-    lang: es
-    comments: []
   - id: x.cloze.ma
     added: 2026-09-26
     type: cloze
@@ -488,16 +450,6 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: 'Completa en pinyin: «¿Bebes agua?»'}
     answer: {typed: ma5, hanzi: 吗, pinyin: ma, meaning: '¿…? (convierte la frase en pregunta de sí o no)'}
-    lang: es
-    comments: []
-  - id: x.listen.ne
-    added: 2026-09-26
-    type: listen
-    targets: [w.ne]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 呢, pinyin: ne, meaning: '¿y…? (devuelve la pregunta)'}
-    reveal: [s.wo-hen-hao-ni-ne]
     lang: es
     comments: []
   - id: x.cloze.ne
@@ -512,16 +464,6 @@ exercises:
     answer: {typed: ne5, hanzi: 呢, pinyin: ne, meaning: '¿y…? (devuelve la pregunta)'}
     lang: es
     comments: []
-  - id: x.listen.ye
-    added: 2026-09-26
-    type: listen
-    targets: [w.ye]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 也, pinyin: yě, meaning: también}
-    reveal: [s.wo-ye-hen-hao]
-    lang: es
-    comments: []
   - id: x.cloze.ye
     added: 2026-09-26
     type: cloze
@@ -534,16 +476,6 @@ exercises:
     answer: {typed: ye3, hanzi: 也, pinyin: yě, meaning: también}
     lang: es
     comments: []
-  - id: x.listen.dou
-    added: 2026-09-26
-    type: listen
-    targets: [w.dou]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 都, pinyin: dōu, meaning: 'todos, ambos (adverbio)'}
-    reveal: [s.women-dou-shi-xuesheng]
-    lang: es
-    comments: []
   - id: x.cloze.dou
     added: 2026-09-26
     type: cloze
@@ -554,16 +486,6 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: 'Completa en pinyin: «Todos somos estudiantes.»'}
     answer: {typed: dou1, hanzi: 都, pinyin: dōu, meaning: 'todos, ambos (adverbio)'}
-    lang: es
-    comments: []
-  - id: x.listen.de
-    added: 2026-09-26
-    type: listen
-    targets: [w.de]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 的, pinyin: de, meaning: 'de (posesión: 我的 = mi)'}
-    reveal: [s.ta-shi-wo-de-baba]
     lang: es
     comments: []
   - id: x.cloze.de
@@ -606,16 +528,6 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: '¿Cómo se dice «conocer (a alguien)»? Escribe el pinyin.'}
     answer: {typed: ren4 shi5, hanzi: 认识, pinyin: rènshi, meaning: conocer (a alguien)}
-    lang: es
-    comments: []
-  - id: x.listen.gaoxing
-    added: 2026-09-26
-    type: listen
-    targets: [w.gaoxing]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 高兴, pinyin: gāoxìng, meaning: contento}
-    reveal: [s.hen-gaoxing-renshi-ni]
     lang: es
     comments: []
   - id: x.produce.gaoxing
@@ -681,4 +593,85 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: '¿Son todos chinos?'}
     lang: es
+    comments: []
+  - id: x.dictation.meiguo
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.meiguo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mei3 guo2, hanzi: 美国, pinyin: Měiguó, meaning: Estados Unidos}
+    comments: []
+  - id: x.dictation.zhongwen
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.zhongwen]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhong1 wen2, hanzi: 中文, pinyin: Zhōngwén, meaning: chino (la lengua)}
+    comments: []
+  - id: x.dictation.bu
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.bu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bu4, hanzi: 不, pinyin: bù, meaning: 'no'}
+    comments: []
+  - id: x.dictation.ma
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.ma]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ma5, hanzi: 吗, pinyin: ma, meaning: '¿…? (convierte la frase en pregunta de sí o no)'}
+    comments: []
+  - id: x.dictation.ne
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.ne]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ne5, hanzi: 呢, pinyin: ne, meaning: '¿y…? (devuelve la pregunta)'}
+    comments: []
+  - id: x.dictation.ye
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.ye]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ye3, hanzi: 也, pinyin: yě, meaning: también}
+    comments: []
+  - id: x.dictation.dou
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.dou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dou1, hanzi: 都, pinyin: dōu, meaning: 'todos, ambos (adverbio)'}
+    comments: []
+  - id: x.dictation.de
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.de]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: de5, hanzi: 的, pinyin: de, meaning: 'de (posesión: 我的 = mi)'}
+    comments: []
+  - id: x.dictation.gaoxing
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.gaoxing]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gao1 xing4, hanzi: 高兴, pinyin: gāoxìng, meaning: contento}
     comments: []

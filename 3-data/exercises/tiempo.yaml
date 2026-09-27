@@ -73,15 +73,6 @@ exercises:
     answer: {meaning: ¡Hasta mañana!}
     lang: es
     comments: []
-  - id: x.listen.shangwu
-    added: 2026-09-26
-    type: listen
-    targets: [w.shangwu]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 上午, pinyin: shàngwǔ, meaning: por la mañana (antes de mediodía)}
-    lang: es
-    comments: []
   - id: x.produce.shangwu
     added: 2026-09-26
     type: produce
@@ -98,15 +89,6 @@ exercises:
     skills: [reading, pinyin]
     prompt: {text: 'Lee: pinyin y significado.', hanzi: 上午}
     answer: {hanzi: 上午, pinyin: shàngwǔ, meaning: por la mañana (antes de mediodía)}
-    lang: es
-    comments: []
-  - id: x.listen.zhongwu
-    added: 2026-09-26
-    type: listen
-    targets: [w.zhongwu]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 中午, pinyin: zhōngwǔ, meaning: mediodía}
     lang: es
     comments: []
   - id: x.produce.zhongwu
@@ -127,16 +109,6 @@ exercises:
     answer: {hanzi: 中午, pinyin: zhōngwǔ, meaning: mediodía}
     lang: es
     comments: []
-  - id: x.listen.xiawu
-    added: 2026-09-26
-    type: listen
-    targets: [w.xiawu]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 下午, pinyin: xiàwǔ, meaning: por la tarde}
-    reveal: [s.xiawu-qu-shangdian]
-    lang: es
-    comments: []
   - id: x.read.xiawu
     added: 2026-09-26
     type: read
@@ -147,16 +119,6 @@ exercises:
     reveal: [s.xiawu-qu-shangdian]
     lang: es
     comments: []
-  - id: x.listen.mingtian
-    added: 2026-09-26
-    type: listen
-    targets: [w.mingtian]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 明天, pinyin: míngtiān, meaning: mañana (el día)}
-    reveal: [s.mingtian-jian]
-    lang: es
-    comments: []
   - id: x.produce.mingtian
     added: 2026-09-26
     type: produce
@@ -164,25 +126,6 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: '¿Cómo se dice «mañana (el día)»? Escribe el pinyin.'}
     answer: {typed: ming2 tian1, hanzi: 明天, pinyin: míngtiān, meaning: mañana (el día)}
-    lang: es
-    comments: []
-  - id: x.listen.jian
-    added: 2026-09-26
-    type: listen
-    targets: [w.jian]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 见, pinyin: jiàn, meaning: ver; verse}
-    reveal: [s.mingtian-jian]
-    lang: es
-    comments: []
-  - id: x.listen.wanshang
-    added: 2026-09-26
-    type: listen
-    targets: [w.wanshang]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
-    answer: {hanzi: 晚上, pinyin: wǎnshang, meaning: por la noche}
     lang: es
     comments: []
   - id: x.produce.wanshang
@@ -215,4 +158,58 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Por la tarde voy a la tienda.»'}
     answer: {meaning: Por la tarde voy a la tienda.}
     lang: es
+    comments: []
+  - id: x.dictation.shangwu
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.shangwu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shang4 wu3, hanzi: 上午, pinyin: shàngwǔ, meaning: por la mañana (antes de mediodía)}
+    comments: []
+  - id: x.dictation.zhongwu
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.zhongwu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhong1 wu3, hanzi: 中午, pinyin: zhōngwǔ, meaning: mediodía}
+    comments: []
+  - id: x.dictation.xiawu
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.xiawu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xia4 wu3, hanzi: 下午, pinyin: xiàwǔ, meaning: por la tarde}
+    comments: []
+  - id: x.dictation.mingtian
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.mingtian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ming2 tian1, hanzi: 明天, pinyin: míngtiān, meaning: mañana (el día)}
+    comments: []
+  - id: x.dictation.jian
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.jian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jian4, hanzi: 见, pinyin: jiàn, meaning: ver; verse}
+    comments: []
+  - id: x.dictation.wanshang
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.wanshang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wan3 shang5, hanzi: 晚上, pinyin: wǎnshang, meaning: por la noche}
     comments: []
