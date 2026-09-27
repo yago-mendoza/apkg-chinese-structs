@@ -57,7 +57,7 @@ flowchart LR
 
 **`5-output/`: what comes out.** The compiled deck (`.apkg`) and the public dictionary (`dictionary.json`) behind [infraphysics.net/corner/chinese](https://infraphysics.net/corner/chinese).
 
-**Batches.** A batch is whatever is in the inbox when you ask; how often is up to you. Small batches give you feedback sooner, large ones let the agent see more at once. The structure is never frozen: every batch, themes and groups are revisited and reorganized when needed, without losing your progress.
+**Batches.** A batch is whatever is in the inbox when you ask; how often is up to you. One a week is a good habit, since the review then arrives in time for your next class, but nothing depends on it: small batches give you feedback sooner, large ones let the agent see more at once. The structure is never frozen: every batch, themes and groups are revisited and reorganized when needed, without losing your progress.
 
 **Nothing drifts out of sync.** `3-data/` is the single source of truth; the notebook, the deck and the dictionary are generated from it. `anki.py check` validates every change before it reaches Anki, and every closed batch is committed and tagged, so any earlier state can be recovered.
 
@@ -130,7 +130,7 @@ The agent pushes the deck itself. To do it by hand:
 - Study the subdeck of your current level (until levels land, the parent deck). Themes are subdecks inside it, and level, theme, month and purpose are also tags for filtered sessions.
 - Typed answers accept pinyin with tone marks or digits (`ni3 hao3`) or hanzi from a Chinese keyboard; spaces, case and punctuation are ignored. For sentences you say aloud, typing is optional.
 - The back of each card shows pinyin, IPA, audio, pronunciation traps and, when there is one, the word's family, with the tested word marked ▸.
-- `push` sets the daily limits (`NEW_PER_DAY`, `REVIEWS_PER_DAY` in `anki.py`). Reviews settle at roughly 5 to 8 times the new cards: 30 new cards a day means about 200 reviews, around 40 minutes.
+- `push` sets the daily limits (`NEW_PER_DAY`, `REVIEWS_PER_DAY` in `anki.py`). Reviews settle at roughly 5 to 8 times the new cards: 20 new cards a day means about 100 to 160 reviews, around 25 to 30 minutes.
 
 ## Using it with your own notes
 
