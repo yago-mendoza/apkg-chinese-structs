@@ -1,5 +1,15 @@
 # apkg-chinese-structs
 
+<p align="center">
+  <a href="https://infraphysics.net/corner/chinese">
+    <img src="docs/assets/infraphysics.svg" width="84" alt="InfraPhysics">
+  </a>
+</p>
+<p align="center">
+  <b>A side project of <a href="https://infraphysics.net">InfraPhysics</a>.</b><br>
+  Browse the whole dictionary, with audio, at <a href="https://infraphysics.net/corner/chinese"><b>infraphysics.net/corner/chinese</b></a>
+</p>
+
 Turn raw Mandarin class notes into a structured Anki deck with pinyin, tones, IPA, slowed-down audio and pronunciation rules. You drop notes into a folder; a coding agent (an LLM) turns them into dictionary entries, sentences and cards following a written specification; `anki.py` validates the result, synthesizes the audio and pushes the deck into Anki.
 
 The repository ships with a real, working example: **🐉 Chino práctico**, the deck of Yago Mendoza, built from his own classes. The deck, the notes and the working documents are in Spanish; the system itself is language-agnostic on the learner's side. Use it as is, or empty it and start with your own notes.
