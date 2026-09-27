@@ -56,6 +56,7 @@ MODEL_SELF_NAME = "Chino práctico (autoevaluación)"
 DECK_PRESET = "🐉 Chino práctico"          # preset propio: nunca tocar el de otros mazos
 NEW_PER_DAY, REVIEWS_PER_DAY = 30, 300
 THEME_MAX, THEME_MIN = 60, 3               # entradas por tema: por encima, ¿dividir?; por debajo, ¿juntar?
+EXAMPLES_MAX = 2                           # frases de ejemplo al dar la vuelta a una tarjeta de palabra
 PRUNE_MAX = 10                             # más huérfanas que esto: `push --prune` se niega sin --force
 
 AZURE_VOICE = os.environ.get("AZURE_SPEECH_VOICE", "zh-CN-YunyangNeural")
@@ -704,9 +705,8 @@ def required_audio(entries, sentences, exercises):
     for ex in exercises:
         if answer_hanzi(ex, sby) and wants_audio(ex, eby):
             texts.add(answer_hanzi(ex, sby))
-        for sid in ex.get("reveal", []) + ([ex["sentence"]] if ex.get("sentence") else []):
-            if sid in sby:
-                texts.add(sentence_text(sby[sid]))
+    for s in sentences:                   # toda frase puede salir como ejemplo en cualquier tarjeta
+        texts.add(sentence_text(s))
     for e in entries:
         if e.get("audio_text"):
             texts.add(e["audio_text"])
@@ -1001,6 +1001,7 @@ CSS = """
 .legend { font-size: 13px; opacity: .7; margin-top: 10px; }
 .ipa { font-size: 15px; opacity: .6; margin-top: 2px; }
 .is-target { font-weight: bold; }
+.example + .example { margin-top: 10px; }
 .is-target::before { content: '▸ '; }
 """
 # Los colores solo alinean segmentos hanzi↔pinyin; los tonos se leen por sus marcas.
@@ -1094,6 +1095,28 @@ def sound(text, manifest, media_files):
     return f"[sound:{item['file']}]"
 
 
+def examples_for(ex, sby):
+    """Frases de ejemplo para el reverso de una tarjeta de palabra: primero las de `reveal` (elegidas a mano) y,
+    hasta EXAMPLES_MAX, las frases que contienen el objetivo (por ID de entrada, así que respetan el sentido).
+    Frases modelo (say) primero; entre varias, cada tarjeta toma otras distintas según su ID, para que las
+    tarjetas de una misma palabra no repitan siempre la misma. Una frase nueva enriquece sola las tarjetas
+    antiguas de sus palabras."""
+    chosen = [sid for sid in ex.get("reveal", []) if sid in sby]
+    targets = [t for t in ex.get("targets", []) if t not in sby]      # las tarjetas de frase ya son la frase
+    if not targets or ex.get("type") in ("cloze", "nuance"):
+        return chosen[:EXAMPLES_MAX]
+    own = ex.get("sentence")
+    pool = [s["id"] for s in sby.values()
+            if s["id"] != own and s["id"] not in chosen
+            and any(seg.get("ref") in targets for seg in s.get("segments", []))]
+    say = [sid for sid in pool if sby[sid].get("use") == "say"]
+    pool = say if len(say) >= EXAMPLES_MAX - len(chosen) else say + [sid for sid in pool if sid not in say]
+    if pool:
+        k = int(hashlib.sha1(ex["id"].encode("utf-8")).hexdigest()[:8], 16) % len(pool)
+        pool = pool[k:] + pool[:k]
+    return (chosen + pool)[:EXAMPLES_MAX]
+
+
 def build_note(ex, eby, sby, manifest, media_files, models):
     import genanki
     prompt, ans, lang = ex.get("prompt") or {}, ex.get("answer") or {}, ex.get("lang", "es")
@@ -1174,11 +1197,11 @@ def build_note(ex, eby, sby, manifest, media_files, models):
         traps = phonetic_notes(spoken_text, spoken_pinyin) if spoken_text and spoken_pinyin else []
         if traps:
             notes.append("<h4>Pronunciación</h4>" + "".join(f"<div>{esc(t)}</div>" for t in traps))
-    for sid in ex.get("reveal", []):
-        s = sby.get(sid)
-        if s:
-            notes.append(f"<h4>Ejemplo</h4>{render_sentence(s)}<div>{esc(s['translation'].get(lang))}</div>"
-                         f"{sound(sentence_text(s), manifest, media_files)}")
+    examples = examples_for(ex, sby)
+    if examples:
+        notes.append(f"<h4>{'Ejemplo' if len(examples) == 1 else 'Ejemplos'}</h4>" + "".join(
+            f"<div class=\"example\">{render_sentence(sby[sid])}<div>{esc(sby[sid]['translation'].get(lang))}</div>"
+            f"{sound(sentence_text(sby[sid]), manifest, media_files)}</div>" for sid in examples))
     # Comentarios: solo los marcados private: false (del ejercicio y de sus objetivos).
     comments = list(ex.get("comments", []))
     for tid in ex.get("targets", []):

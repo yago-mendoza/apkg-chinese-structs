@@ -48,6 +48,23 @@ Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de o
 
 Histórico: un summary archivado no se reescribe. Si YAGO corrige algo después (por el chat o por el inbox), el cambio va a `4-data/` y el summary recibe al final «Correcciones posteriores» con la fecha. Que algo se repita en los apuntes de varios lotes es una señal: si está como `hear` y reaparece, se propone subirlo a `say` en el review.
 
+## Integración de lo nuevo
+
+Para cada elemento que llega (tras `lookup`):
+
+| Lo que llega | Qué se hace |
+|---|---|
+| Algo que ya existe con el mismo sentido | Enriquecer lo antiguo: comentario, frase de contexto. Tarjetas nuevas solo si sube su `use` (las calcula `plan`) |
+| El mismo hanzi con otro sentido | Entrada nueva para ese sentido, en `relations` con la antigua |
+| Algo nuevo que encaja en un tema | Entrada nueva en ese tema; `plan` calcula sus tarjetas |
+| Algo nuevo sin tema donde encaje | Tema nuevo, o reorganizar (ver abajo) |
+| Algo que se confunde con lo que ya hay | Grupo de contraste nuevo o ampliado |
+| Una frase nueva | Frase propia (`say` o `hear`); enriquece sola las tarjetas antiguas de sus palabras |
+
+Si hay duda (sentido ambiguo, variante de algo existente, tema), se pregunta en el review en vez de adivinar.
+
+**Ejemplos automáticos.** Al dar la vuelta a una tarjeta de palabra se muestran hasta `EXAMPLES_MAX` frases que la contienen, por el ID de la entrada (así que respetan el sentido), frases modelo primero, y cada tarjeta de la misma palabra toma otras distintas. `reveal` sigue sirviendo para fijar a mano una frase concreta. Así lo nuevo y lo antiguo se cruzan sin depender de que nadie se acuerde de enlazarlo; las tarjetas conservan su progreso porque solo cambia su reverso.
+
 ## Reorganización
 
 La estructura se adapta a lo que llega; no se congela. En cada lote el agente revisa, y cambia si hace falta:

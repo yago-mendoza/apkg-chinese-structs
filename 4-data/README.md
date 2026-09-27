@@ -32,6 +32,6 @@ Fuente de verdad del mazo, mantenida por el agente. Un archivo por tema en cada 
 
 - `id` con prefijo `x.`, permanente: de él depende el progreso en Anki. Si cambia lo que pregunta, ID nuevo.
 - `type`: `read | listen | tones | cloze | produce | speak | contrast | derive | components | nuance`.
-- `targets` (lo que se evalúa), `context` (visible en la pregunta), `reveal` (frases al dar la vuelta), `refs` (entradas de pronunciación).
+- `targets` (lo que se evalúa), `context` (visible en la pregunta), `reveal` (frase fijada a mano para el reverso; sin él, se eligen solas entre las que contienen el objetivo), `refs` (entradas de pronunciación).
 - `prompt: {text, hanzi, pinyin, audio}`; `answer: {typed, hanzi, pinyin, meaning}`. `typed`: pinyin numérico (`ni3 hao3`) o, en tonos, un dígito por sílaba (`'25'`). Sin `typed`, autoevaluación.
 - `added`: fecha de creación (etiqueta `mes::` en Anki). No se cambia.
