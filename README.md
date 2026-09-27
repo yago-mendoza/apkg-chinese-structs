@@ -1,40 +1,65 @@
-# apkg-chinese-structs
+<p align="center">
+  <a href="https://infraphysics.net/corner/chinese"><img src="docs/assets/infraphysics.svg" width="72" alt="InfraPhysics"></a>
+</p>
+
+<h1 align="center">apkg-chinese-structs</h1>
 
 <p align="center">
-  <a href="https://infraphysics.net/corner/chinese">
-    <img src="docs/assets/infraphysics.svg" width="84" alt="InfraPhysics">
-  </a>
+  Raw Mandarin class notes in, a structured Anki deck out.<br>
+  Pinyin, tones, IPA, audio, and a review after every batch telling you what you're missing.
 </p>
+
 <p align="center">
-  <b>A side project of <a href="https://infraphysics.net">InfraPhysics</a>.</b><br>
+  <a href="https://github.com/yago-mendoza/apkg-chinese-structs/actions/workflows/check.yml"><img src="https://github.com/yago-mendoza/apkg-chinese-structs/actions/workflows/check.yml/badge.svg" alt="check"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/code-MIT-blue" alt="Code: MIT"></a>
+  <a href="LICENSE-CONTENT"><img src="https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey" alt="Content: CC BY 4.0"></a>
+</p>
+
+<p align="center">
+  <b>A side project of <a href="https://infraphysics.net">InfraPhysics</a>.</b>
   Browse the whole dictionary, with audio, at <a href="https://infraphysics.net/corner/chinese"><b>infraphysics.net/corner/chinese</b></a>
 </p>
 
-Turn raw Mandarin class notes into a structured Anki deck with pinyin, tones, IPA, slowed-down audio and pronunciation rules. You drop notes into a folder; a coding agent (an LLM) turns them into dictionary entries, sentences and cards following a written specification; `anki.py` validates the result, synthesizes the audio and pushes the deck into Anki.
-
-The repository ships with a real, working example: **🐉 Chino práctico**, the deck of Yago Mendoza, built from his own classes. The deck, the notes and the working documents are in Spanish; the system itself is language-agnostic on the learner's side. Use it as is, or empty it and start with your own notes.
+---
 
 ## TL;DR
 
-You do two things: put notes in `1-inbox/`, and every now and then tell the agent *process the inbox*. It updates the deck, generates the audio and loads everything into Anki. You study in Anki. That's it. (Anki desktop has to be open while the agent pushes; if you study on your phone, sync as usual.)
+- **You** drop class notes in `1-inbox/`, in any format, and now and then say *process the inbox*.
+- **The agent** turns them into dictionary entries, sentences and cards, generates the audio and loads the deck into Anki.
+- **After each batch** it leaves you a review: your level, gaps, what didn't go in and why. You answer inline; your answers feed the next batch.
+- **You study** in Anki (soon, one HSK level at a time). Nothing else to maintain.
 
-**`1-inbox/`: where you write.** Notes exactly as they come out: phone notes, transcribed photos, half-finished lists, questions. No format required; the only thing that helps is the date you wrote each thing down. After each batch, the agent leaves a **review** here: what the deck is missing, what did not go in and why, and what is worth double-checking. You answer under each point, and your answers go into the next batch.
+This repository ships with a real, working example: **🐉 Chino práctico**, Yago Mendoza's own deck. The deck and its working documents are in Spanish; the system works for any learner. Use it as is, or empty it and start with your own notes.
 
-**`1-inbox/history/`: the inbox's archive.** When a batch is closed, everything that went through the inbox (your notes and the review you answered) is filed here untouched, one folder per batch. You never edit it; it is there to go back to the original.
+## How it works
 
-**`2-digests/`: one log per batch.** The agent's record of what it did: what went in, what did not and why, what it corrected in your notes and what it reorganized. Read-only; it is the system's memory. Anything that needs your opinion is in the review, not here.
+```mermaid
+flowchart LR
+    notes["Your notes<br/>1-inbox/"] --> agent(["Agent"])
+    agent --> data[("Database<br/>3-data/")]
+    agent --> log["Batch log<br/>2-digests/"]
+    agent --> review["Review for you<br/>1-inbox/"]
+    review -. your answers .-> notes
+    data --> notebook["Notebook<br/>4-notebook/"]
+    data --> deck["Anki deck"]
+    data --> web["Public dictionary<br/>5-output/"]
+```
 
-**`3-data/`: the database.** Everything the deck knows, one file per theme: the lexicon (words, expressions, characters, pronunciation rules and groups of easily confused items), sentences, cards, the list of themes, and the generated audio. Only the agent edits it.
+**`1-inbox/`: where you write.** Notes exactly as they come out: phone notes, transcribed photos, half-finished lists, questions. The only thing that helps is the date you wrote each thing down. The agent's review lands here too, with a line under each point for your answer.
 
-**`4-notebook/`: the same database, readable.** Everything learned so far, by theme, with pinyin, meaning, sentences and notes. Open it to look something up without Anki. Regenerated automatically.
+**`1-inbox/history/`: the inbox's archive.** When a batch is closed, your notes and the review you answered are filed here untouched, one folder per batch.
 
-**`5-output/`: what comes out.** The compiled deck (`.apkg`) and a public dictionary (`dictionary.json`), which powers [infraphysics.net/corner/chinese](https://infraphysics.net/corner/chinese).
+**`2-digests/`: one log per batch.** The agent's record: what went in, what did not and why, what it corrected and what it reorganized, plus a running reflection on your level, your classes and your method. Read-only; it is the system's memory.
 
-**Levels.** Everything is ordered by difficulty using the HSK 3.0 levels: the deck is split into HSK 1 to HSK 7, with themes inside each level, and you study one level at a time. See [Levels](#levels-hsk-30) below.
+**`3-data/`: the database.** Everything the deck knows, one file per theme: words, expressions, characters, pronunciation rules, groups of easily confused items, sentences, cards and the generated audio. Only the agent edits it.
 
-**Batches.** A batch is whatever is in the inbox when you ask for it to be processed; how often is up to you. Small, frequent batches give you the review sooner; large ones let the agent see more material at once when deciding themes and groups. Which works better is still an open question, which is why the structure is never frozen: every batch, the agent revisits themes and groups and reorganizes when needed, without losing your progress.
+**`4-notebook/`: the same database, readable.** Everything learned so far, by theme. Open it to look something up without Anki.
 
-**Why nothing drifts out of sync.** `3-data/` is the single source of truth. The notebook, the deck and the dictionary are all generated from it, so they cannot disagree. Before a change reaches Anki, `anki.py check` validates it (schema, pinyin, IDs, missing or redundant cards, audio). Closing a batch regenerates everything, commits and tags it, so any earlier state can be recovered.
+**`5-output/`: what comes out.** The compiled deck (`.apkg`) and the public dictionary (`dictionary.json`) behind [infraphysics.net/corner/chinese](https://infraphysics.net/corner/chinese).
+
+**Batches.** A batch is whatever is in the inbox when you ask; how often is up to you. Small batches give you feedback sooner, large ones let the agent see more at once. The structure is never frozen: every batch, themes and groups are revisited and reorganized when needed, without losing your progress.
+
+**Nothing drifts out of sync.** `3-data/` is the single source of truth; the notebook, the deck and the dictionary are generated from it. `anki.py check` validates every change before it reaches Anki, and every closed batch is committed and tagged, so any earlier state can be recovered.
 
 ## What you don't need to worry about
 
