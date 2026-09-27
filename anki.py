@@ -7,7 +7,7 @@ Uso:
     python anki.py check
     python anki.py notebook                   regenera 5-notebook/ desde 4-data/
     python anki.py scaffold [--write]      tarjetas estándar para lo que falta (sin --write, solo las lista)
-    python anki.py close-batch <lote> [--dry-run]  archiva summary, review y apuntes; cuaderno; commit y etiqueta
+    python anki.py close-batch <lote> [--dry-run]  archiva review leído y apuntes; cuaderno; commit y etiqueta
     python anki.py audio [--dry-run]
     python anki.py build [--allow-missing-audio]
     python anki.py push [--allow-missing-audio] [--no-sync] [--prune] [--reset]
@@ -544,12 +544,12 @@ PRIMARY = {"read": "lectura", "listen": "escucha", "tones": "tonos", "produce": 
            "derive": "producción", "cloze": "producción", "speak": "voz alta", "contrast": "contraste",
            "components": "componentes", "nuance": "matiz"}
 GENERATED = "<!-- Generado por `anki.py notebook` desde 4-data/. No editar: se rehace en cada lote. -->"
-REVIEW_HEADER = ("<!-- REVIEW: editable. Debajo de cada punto hay una línea «>»: escribe lo que quieras (sí, no, "
-                 "un matiz, una frase, una corrección). Lo que escribas entra en el siguiente lote; lo que dejes "
-                 "vacío se queda como está. Puedes añadir puntos nuevos al final. -->")
-SUMMARY_HEADER = ("<!-- SUMMARY: solo lectura. Qué entró al mazo con este lote y qué conviene entender de tus apuntes "
-                  "(relaciones, mnemotecnias, correcciones). Lo que no entró está en el review. En el siguiente lote "
-                  "se archiva en 3-digests/. -->")
+REVIEW_HEADER = ("<!-- REVIEW: para opinar. Debajo de cada punto hay una línea «>»: escribe lo que quieras (sí, no, "
+                 "un matiz, una duda, una frase, una corrección). Lo que escribas entra en el siguiente lote; lo que "
+                 "dejes vacío se queda como está. Puedes añadir puntos al final. El log completo del lote está en "
+                 "3-digests/summary-{batch}.md. -->")
+LOG_HEADER = ("<!-- LOG del lote: qué entró, qué no y por qué, correcciones y reorganizaciones. Histórico: no se "
+              "reescribe; los cambios posteriores se añaden al final. Para opinar: el review del inbox. -->")
 
 
 def cmd_gaps():
@@ -579,8 +579,7 @@ def cmd_gaps():
     print(f"Inbox sin procesar: {len(raw)}" + (f" → {', '.join(raw)}" if raw else ""))
     for g in sorted(INBOX.glob("review-*.md")) if INBOX.exists() else []:
         print(f"Review: {g.name} (editable; entra en el próximo lote junto con los apuntes)")
-    for g in sorted(INBOX.glob("summary-*.md")) if INBOX.exists() else []:
-        print(f"Summary: {g.name} (lectura; se archiva en 3-digests/ en el próximo lote)")
+
 
 
 # ---------------------------------------------------------------- scaffold
@@ -764,14 +763,17 @@ def write_review_doc(batch, osm):
     if (INBOX / f"review-{batch}.md").exists():      # el del lote anterior se archiva al cerrar este
         print(f"AVISO  ya existe review-{batch}.md: no se sobrescribe.")
         return
-    lines = [REVIEW_HEADER, "", f"# Review del lote {batch}", "",
+    lines = [REVIEW_HEADER.format(batch=batch), "", f"# Review del lote {batch}", "",
              "## Falta", "", "Palabras que quieres decir y aún no aparecen en ninguna frase. Trae una frase de clase "
              "o de tu día a día que las use, o escríbela aquí.", ""]
     for e in osm:
         lines += [f"- {e['hanzi']} {e.get('pinyin', '')} · {e.get('meaning', {}).get('es', '')}", "  > ", ""]
     if not osm:
         lines += ["- (nada)", ""]
-    lines += ["## No entró, y por qué", "", "<!-- lo completa el agente: 🟡 y ❌ con su motivo, y ✅ aún sin tarjeta -->",
+    lines += ["## ✅ Entró, con matices para ahondar", "",
+              "<!-- lo completa el agente: solo los ✅ que traen relación, mnemotecnia, registro o corrección -->", "",
+              "## Pendiente: ✅ sin tarjeta todavía", "", "<!-- lo completa el agente -->", "",
+              "## No entró, y por qué", "", "<!-- lo completa el agente: 🟡 y ❌, cada uno con su motivo -->",
               "", "## Por verificar", "", "<!-- lo completa el agente: transcripciones dudosas y glosas corregidas -->",
               "", "## Tus notas", "", "> ", ""]
     path = INBOX / f"review-{batch}.md"
@@ -1464,15 +1466,16 @@ def close_batch_plan(batch):
     err, _ = validate(*load())
     if err:
         errors.append(f"`check` tiene {len(err)} error(es): resolverlos antes de cerrar")
-    for name in (f"summary-{batch}.md", f"review-{batch}.md"):
-        if not (INBOX / name).exists():
-            errors.append(f"falta 1-inbox/{name} (lo escribe el agente; el review se empieza con `plan --doc {batch}`)")
+    if not (DIGESTS / f"summary-{batch}.md").exists():
+        errors.append(f"falta 3-digests/summary-{batch}.md: el log del lote (lo escribe el agente)")
+    if not (INBOX / f"review-{batch}.md").exists():
+        errors.append(f"falta 1-inbox/review-{batch}.md (se empieza con `plan --doc {batch}` y lo completa el agente)")
     raw = ROOT / "2-raw" / batch
     for f in sorted(INBOX.iterdir()) if INBOX.exists() else []:
-        if not f.is_file() or f.name == "README.md" or f.name in (f"summary-{batch}.md", f"review-{batch}.md"):
+        if not f.is_file() or f.name == "README.md" or f.name == f"review-{batch}.md":
             continue
-        if f.name.startswith("summary-"):
-            actions.append(("summary anterior → 3-digests/", f, DIGESTS / f.name))
+        if f.name.startswith("summary-"):             # formato antiguo: el log iba primero al inbox
+            actions.append(("log antiguo → 3-digests/", f, DIGESTS / f.name))
         elif f.name.startswith("review-"):
             actions.append(("review leído → 2-raw/", f, raw / f.name))
         elif NOTE_PREFIX_RE.match(f.name):
@@ -1483,7 +1486,8 @@ def close_batch_plan(batch):
 
 
 def cmd_close_batch(batch, dry_run):
-    """Cierra un lote: archiva summary, review y apuntes, regenera el cuaderno, commit y etiqueta lote-NNN."""
+    """Cierra un lote: archiva el review leído y los apuntes, regenera el cuaderno, commit y etiqueta lote-NNN.
+    El log del lote ya está en 3-digests/ (lo escribe el agente al procesar)."""
     import shutil
     actions, errors = close_batch_plan(batch)
     for desc, src, dst in actions:

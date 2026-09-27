@@ -10,7 +10,7 @@ Generar tarjetas es la parte fácil. Lo que hace útil este sistema es que el ag
 
 - **Deberes después de cada lote.** El agente deja en `1-inbox/` un `review-<lote>.md`: lo que falta (palabras que quieres decir y aún no aparecen en ninguna frase), lo que no entró y por qué, y lo que conviene comprobar en el cuaderno. Debajo de cada punto hay una línea `>` para escribir libremente; vuelve como entrada del siguiente lote. El agente pide frases reales en vez de inventarlas.
 - **Filtrar, no acumular.** Lo que no entra se explica: 🟡 solo para reconocer, ❌ literario, arcaico o en desuso, para tacharlo en los apuntes a mano. Las glosas mal leídas se corrigen con ⚠️. Si un matiz te interesa, puede volver como tarjeta de matiz.
-- **Entender lo que apuntaste.** Junto al review, un `summary-<lote>.md` cuenta qué entró al mazo y lo que conviene entender de tus apuntes: relaciones, mnemotecnias, correcciones.
+- **Entender lo que apuntaste.** Cada lote deja un log en `3-digests/`: qué entró, qué no y por qué, correcciones y reorganizaciones. Lo que admite tu opinión (incluidos los matices de lo que sí entró) está en el review.
 - **Recordar, no releer.** Las tarjetas piden producir: escribir el pinyin o los hanzi, marcar los tonos con dígitos, decir frases en voz alta y compararlas con el audio. Cada palabra tiene las tarjetas que exige para qué la necesitas (leer, entender al oír, decir).
 - **Contraste y contexto.** Las palabras que se confunden (他/她/它, 生/牛/午) o que forman serie (上午/中午/下午/晚上) aparecen juntas al dar la vuelta, y las palabras que quieres decir tienen que aparecer en frases.
 - **Pronunciación explícita.** Transcripción fonética, trampas del pinyin para hispanohablantes y reglas de sandhi en las tarjetas donde toca pronunciar o reconocer de oído.
@@ -19,7 +19,7 @@ Generar tarjetas es la parte fácil. Lo que hace útil este sistema es que el ag
 ## Uso
 
 1. Deja tus apuntes en bruto en `1-inbox/`: cualquier archivo, sin formato. Pon la fecha de lo apuntado, al principio o en cada parte si mezclas días.
-2. Abre un agente de código en la carpeta y pídele «procesa el inbox». Edita el mazo, regenera el cuaderno y te deja en `1-inbox/` el `summary` (qué entró) y el `review` (qué falta y qué no entró, para que escribas debajo de cada punto).
+2. Abre un agente de código en la carpeta y pídele «procesa el inbox». Edita el mazo, regenera el cuaderno, deja el log del lote en `3-digests/` y te deja en `1-inbox/` el `review`, para que escribas debajo de cada punto.
 3. Sube el mazo a Anki:
 
 ```powershell
@@ -36,14 +36,14 @@ No corrijas nada dentro de Anki: cada `push` sobrescribe las tarjetas con lo que
 - Ritmo: `push` fija las nuevas y los repasos máximos al día (`NEW_PER_DAY` y `REVIEWS_PER_DAY` en `anki.py`). Los repasos se estabilizan en unas 5–8 veces las nuevas: con 30 nuevas, unos 200 repasos, unos 40 minutos.
 - Respuestas escritas: pinyin con tildes o con números (`ni3 hao3`) o hanzi con un teclado chino; espacios, mayúsculas y puntuación dan igual. En las frases para decir en voz alta, escribir es opcional.
 - Al dar la vuelta: pinyin, transcripción fonética [AFI], audio, trampas de pronunciación y la familia de la palabra si la tiene (la palabra de la tarjeta, marcada ▸).
-- `5-notebook/` reúne todo lo aprendido por temas; `3-digests/`, los summaries de lotes anteriores.
+- `5-notebook/` reúne todo lo aprendido por temas; `3-digests/`, el log de cada lote.
 - En Anki, un subdeck por tema; el mes, el tema y el `use` también van como etiquetas, para sesiones filtradas.
 
 ## Usarlo con tus propios apuntes
 
 1. Copia el repositorio (fork o clon).
 2. Vacía el contenido y conserva la estructura:
-   - `2-raw/`, `3-digests/`, `5-notebook/`, `4-data/audio/` y el summary y el review de `1-inbox/`: borra su contenido (deja los `README.md`; `5-notebook/` se regenera sola).
+   - `2-raw/`, `3-digests/`, `5-notebook/`, `4-data/audio/` y el review de `1-inbox/`: borra su contenido (deja los `README.md`; `5-notebook/` se regenera sola).
    - `4-data/lexicon/`, `4-data/sentences/` y `4-data/exercises/`: borra los archivos.
    - `4-data/themes.yaml`: ajusta los temas a tu gusto.
 3. En `anki.py`, cambia `DECK_NAME` y `GUID_NAMESPACE` si en tu Anki ya tienes este mazo, para que no se mezclen.
@@ -55,9 +55,9 @@ No corrijas nada dentro de Anki: cada `push` sobrescribe las tarjetas con lo que
 
 | Ruta | Qué es |
 |---|---|
-| `1-inbox/` | Apuntes en bruto pendientes (no se versionan) y lo que deja el agente tras cada lote: `summary-<lote>.md` (qué entró) y `review-<lote>.md` (qué falta y qué no entró; editable). |
+| `1-inbox/` | Apuntes en bruto pendientes (no se versionan) y el `review-<lote>.md` que deja el agente tras cada lote: todo lo que admite tu opinión, para escribir debajo de cada punto. |
 | `2-raw/` | Apuntes ya procesados, tal cual, en una carpeta por lote. |
-| `3-digests/` | Los summaries de lotes anteriores: histórico. No se edita. |
+| `3-digests/` | El log de cada lote: qué entró, qué no y por qué. Histórico; no se edita. |
 | `4-data/` | Fuente de verdad del mazo, mantenida por el agente, un archivo por tema: `lexicon/` (diccionario), `sentences/` (frases), `exercises/` (tarjetas), `themes.yaml` (temas y orden) y `audio/`. Esquema en su `README.md`. |
 | `5-notebook/` | Todo lo aprendido, un archivo por tema, generado desde `4-data/`. No se edita. |
 | `6-output/` | Lo que se genera (`chino-practico.apkg`). No se versiona. |

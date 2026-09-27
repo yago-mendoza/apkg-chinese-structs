@@ -1,4 +1,4 @@
-<!-- REVIEW: editable. Debajo de cada punto hay una línea «>»: escribe lo que quieras (sí, no, un matiz, una frase, una corrección). Lo que escribas entra en el siguiente lote; lo que dejes vacío se queda como está. Puedes añadir puntos nuevos al final. -->
+<!-- REVIEW: para opinar. Debajo de cada punto hay una línea «>»: escribe lo que quieras (sí, no, un matiz, una duda, una frase, una corrección). Lo que escribas entra en el siguiente lote; lo que dejes vacío se queda como está. Puedes añadir puntos al final. El log completo del lote está en 3-digests/summary-001-2026-09-25-primeras-clases.md. -->
 
 # Review del lote 001-2026-09-25-primeras-clases
 
@@ -45,6 +45,69 @@ Palabras que quieres decir y aún no aparecen en ninguna frase. Trae una frase d
 - **Números**: solo tienes 八 bā. Trae los que hayas visto en clase (一 二 三… 十, y más si los tienes), o escribe aquí «sí» y los meto del 1 al 10.
   > 
 
+## ✅ Entró, con matices para ahondar
+
+Ya está en el mazo, pero trae algo que puedes discutir o ampliar: una relación, una mnemotecnia, un matiz de registro o de pronunciación.
+
+- Estructura: `他很 + adjetivo`. 很 sirve de enlace: sin 很 suena a comparación (我好，他不好).
+  > 
+
+- 您好 nín hǎo · hola con respeto · a mayores, profesores, clientes
+  > 
+
+- 大家好 dàjiā hǎo · hola a todos · más amplio y formal: al hablar en público
+  > 
+
+- 我 wǒ / 你 nǐ / 您 nín · yo / tú / usted · 您 = 你 + 心 «corazón»: respeto
+  > 
+
+- 我们 wǒmen / 你们 nǐmen / 他们 tāmen · 们 = plural de personas · 们: 亻 persona + 门 mén (sonido)
+  > 
+
+- 他 / 她 / 它 tā · él / ella / ello · suenan igual; la diferencia solo se ve al escribir: 亻 persona, 女 mujer, 宀 cosas y animales
+  > 
+
+- 老师 lǎoshī · profesor · 老 viejo + 师 maestro · lǎo solo baja (tercer tono a medias)
+  > 
+
+- 学生 xuéshēng · estudiante · mnemotecnia: niño estudiando bajo un techo · xué (lengua plana) vs shēng (lengua curvada)
+  > 
+
+- 爸爸 bàba / 妈妈 māma · papá / mamá · 妈 = 女 (significado) + 马 mǎ (sonido)
+  > 
+
+- 认识 rènshi · conocer (a alguien) · 认 reconocer + 识 distinguir → «estar familiarizado» · 45
+  > 
+
+- 中国 Zhōngguó / 西班牙 Xībānyá / 美国 Měiguó · 中 «centro»; 西班牙 imita el sonido de «España»
+  > 
+
+- 胖 pàng / 瘦 shòu · gordo / delgado · 月 de 胖 = 肉 «carne», no luna · ⚠️ 胖 es muy directo: úsalo con cuidado
+  > 
+
+- 笨 bèn · torpe · puede ofender
+  > 
+
+- 可爱 kě'ài · mono · suena a «kawaii» (solo de oído) · 它很可爱
+  > 
+
+- 商店在哪儿？ · ¿dónde está la tienda? · 在 = estar en · 哪儿 nǎr (norte) ≈ 哪里 nǎlǐ (sur)
+  > 
+
+- 看见 kànjiàn · ver (llegar a ver) · 见 añade el resultado
+  > 
+
+- 看看 kànkan · echar un vistazo · repetir suaviza · 我看看 «a ver»
+  > 
+
+- 我在看书 · estoy leyendo · 在 + verbo = acción en curso
+  > 
+
+- **Tercer tono a medias**: delante de otro tono solo baja (老师). Completo solo aislado o con énfasis. Prima el contraste entre tonos, no exagerar la bajada.
+  > 
+
+- 生 / 牛 / 午 · tres horizontales / el vertical sobresale / no sobresale
+  > 
 ## Pendiente: ✅ sin tarjeta todavía
 
 Útil, pero no cupo en el primer lote. Escribe «sí» en lo que quieras en el mazo (o un matiz).

@@ -21,8 +21,8 @@ El modelo redacta; `anki.py` calcula y comprueba. Lo que puede calcularse (qué 
 - **Grupo**: entradas que se estudian juntas por contraste (`visual`, `homophone`, `pattern`, `set`).
 - **Ósmosis**: que una palabra aparezca como contexto en frases, además de en sus propias tarjetas.
 - **Lote**: una entrega de apuntes de YAGO (`NNN-AAAA-MM-DD-tema`).
-- **Summary**: lo que entró al mazo con un lote y lo que conviene entender de los apuntes (`summary-<lote>.md`); se archiva en `3-digests/`.
-- **Review**: lo que queda por decidir tras un lote (lo que falta, lo que no entró y por qué, lo que hay que verificar), con una línea «>» por punto para que YAGO escriba (`review-<lote>.md`); entra en el siguiente lote.
+- **Log** (`3-digests/summary-<lote>.md`): el acta de un lote, lo que el agente decidió y por qué. Se lee; no se reescribe.
+- **Review** (`1-inbox/review-<lote>.md`): todo lo que admite la opinión de YAGO, con una línea «>» por punto; con sus respuestas entra en el siguiente lote.
 - **Cuaderno**: todo lo aprendido por tema (`5-notebook/`), generado.
 - **Trampa fonética**: letra del pinyin que un hispanohablante lee mal; la detecta una regla.
 
@@ -30,23 +30,23 @@ El modelo redacta; `anki.py` calcula y comprueba. Lo que puede calcularse (qué 
 
 Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de orden de procesado, fecha, tema en palabras; nunca números de hoja). El lote solo sirve para llevar la cuenta de la procedencia: dentro del mazo cada cosa va donde le toca por tema y nivel, y un ajuste sobre algo antiguo corrige la entrada antigua.
 
-1. YAGO deja archivos en `1-inbox/`, en cualquier formato y con cualquier nombre (o los pega en el chat y el agente los guarda allí tal cual). Todo archivo salvo `README.md`, `summary-*.md` y `review-*.md` es apunte pendiente. Las fechas de los apuntes, si las hay, van a `source.date` de lo que salga de cada parte; si un archivo mezcla días, se respeta la fecha de cada parte.
+1. YAGO deja archivos en `1-inbox/`, en cualquier formato y con cualquier nombre (o los pega en el chat y el agente los guarda allí tal cual). Todo archivo salvo `README.md` y `review-*.md` es apunte pendiente. Las fechas de los apuntes, si las hay, van a `source.date` de lo que salga de cada parte; si un archivo mezcla días, se respeta la fecha de cada parte.
 2. El agente lee también el `review-*.md` del lote anterior: cada línea «>» con texto es una instrucción de YAGO (meter, descartar, matizar, corregir); vacía, no cambia nada. Si YAGO pide una tarjeta de matiz, es `type: nuance`.
 3. Para cada elemento: `lookup`; decide si es nuevo, corrige algo o amplía una entrada o grupo. Lo parecido a lo existente (forma, sonido, patrón) va a esa entrada, a `relations` o a un grupo, no a tarjetas sueltas.
 4. Asigna `use` a cada entrada nueva (ver «Cobertura»), con motivo cuando se aparte de las señales de frecuencia.
 5. Guarda los comentarios de YAGO literalmente y en su ámbito (ver «Comentarios»). Lo que parezca privado no va a `4-data/`: se pregunta.
-6. Pregunta lo ambiguo (sentido, lectura, si ya lo sabe) en vez de adivinar. Las transcripciones de fotos hechas por LLM traen errores y `[¿?]`: se marcan con ⚠️ y van a «Por verificar» del review, nunca se dan por buenas.
+6. Pregunta lo ambiguo (sentido, lectura, si ya lo sabe) en vez de adivinar. Las transcripciones de fotos hechas por LLM traen errores y `[¿?]`: se marcan con ⚠️ en el log y van a «Por verificar» del review, nunca se dan por buenas.
 7. `plan` → `scaffold --write` escribe las tarjetas estándar de lo que falta (siempre con el mismo formato) → el agente revisa sus consignas y redacta a mano lo que `scaffold` marca «a mano» → `check` sin errores ni avisos pendientes.
-8. Archiva el `summary-*.md` anterior en `3-digests/`. Escribe en `1-inbox/` el `summary-<lote>.md` y el `review-<lote>.md` nuevos (`plan --doc <lote>` crea el review con «Falta»; el agente completa el resto) y regenera `5-notebook/`.
-9. Pone a cada apunte del inbox su prefijo de fecha y ejecuta `close-batch <lote>` (primero con `--dry-run`): archiva el summary anterior en `3-digests/`, mueve los apuntes y el review leído a `2-raw/<lote>/`, regenera el cuaderno, hace commit y pone la etiqueta `lote-NNN`; se niega si falta algo o `check` tiene errores. Cada apunte se archiva como `AAAA-MM-DD_<nombre original>`, con la fecha en que se apuntó (la que YAGO escribe dentro); si mezcla días, `mixto_<nombre original>` y la fecha de cada parte dentro; si no tiene fecha, `sin-fecha_<nombre original>` y se usa la de procesado en `source.date`. El review conserva su nombre. Sin subcarpetas por día: el prefijo ya ordena. Dos fechas distintas: la del lote (procesado) y la de cada apunte (cuándo se aprendió). `1-inbox/` queda con su `README.md`, el `summary` y el `review` nuevos.
+8. Escribe el log en `3-digests/summary-<lote>.md` y el review en `1-inbox/review-<lote>.md` (`plan --doc <lote>` lo empieza con «Falta»; el agente completa el resto).
+9. Pone a cada apunte del inbox su prefijo de fecha y ejecuta `close-batch <lote>` (primero con `--dry-run`): mueve los apuntes y el review leído a `2-raw/<lote>/`, regenera el cuaderno, hace commit y pone la etiqueta `lote-NNN`; se niega si falta algo o `check` tiene errores. Cada apunte se archiva como `AAAA-MM-DD_<nombre original>`, con la fecha en que se apuntó (la que YAGO escribe dentro); si mezcla días, `mixto_<nombre original>` y la fecha de cada parte dentro; si no tiene fecha, `sin-fecha_<nombre original>` y se usa la de procesado en `source.date`. El review conserva su nombre. Sin subcarpetas por día: el prefijo ya ordena. Dos fechas distintas: la del lote (procesado) y la de cada apunte (cuándo se aprendió). `1-inbox/` queda con su `README.md` y el review nuevo.
 10. `audio` y `push` antes del cierre; después, resumen a YAGO: añadido, cambiado, reorganizado, tarjetas antiguas tocadas y audio nuevo. Subir a GitHub (commit y etiqueta) cuando YAGO lo pida.
 
-**Summary y review** (en `1-inbox/`, versionados; solo uno de cada a la vez). Ambos empiezan con un comentario que explica qué son (`SUMMARY_HEADER` y `REVIEW_HEADER` en `anki.py`), organizados **por temas, sin números de hoja ni de página**, una línea por elemento: `汉字 pinyin · significado · pista (relación, mnemotecnia, pronunciación) · ejemplo`.
+**Log y review**: dos documentos con dos autores. Ambos empiezan con un comentario que explica qué son (`LOG_HEADER` y `REVIEW_HEADER` en `anki.py`) y van **por temas, sin números de hoja ni de página**, una línea por elemento: `汉字 pinyin · significado · pista (relación, mnemotecnia, pronunciación) · ejemplo`.
 
-- **Summary** (lectura): lo que entró (✅, 🃏 si tiene tarjeta) y lo que conviene entender de los apuntes: relaciones, mnemotecnias, correcciones ⚠️ de glosas.
-- **Review** (editable): «Falta» (palabras `say` sin frase, calculado), «Pendiente: ✅ sin tarjeta todavía», «No entró, y por qué» (🟡 solo reconocer, ❌ literario, arcaico o en desuso, cada uno con su motivo), «Por verificar» (transcripciones dudosas) y «Tus notas». Debajo de cada punto, una línea `  > ` para YAGO.
+- **Log** (`3-digests/`, del agente, lectura): el acta completa del lote: lo que entró (✅, 🃏 si tiene tarjeta), lo que no (🟡 solo reconocer, ❌ literario, arcaico o en desuso) con su motivo, las correcciones ⚠️ de glosas y las reorganizaciones.
+- **Review** (`1-inbox/`, para YAGO, editable): solo lo que admite su opinión: «Falta» (palabras `say` sin frase, calculado), «✅ Entró, con matices para ahondar» (solo los que traen relación, mnemotecnia, registro o corrección), «Pendiente: ✅ sin tarjeta todavía», «No entró, y por qué», «Por verificar» y «Tus notas». Debajo de cada punto, una línea `  > `. Con las respuestas va a `2-raw/` del lote siguiente.
 
-Histórico: un summary archivado no se reescribe. Si YAGO corrige algo después (por el chat o por el inbox), el cambio va a `4-data/` y el summary recibe al final «Correcciones posteriores» con la fecha. Que algo se repita en los apuntes de varios lotes es una señal: si está como `hear` y reaparece, se propone subirlo a `say` en el review.
+Histórico: un log no se reescribe. Si YAGO corrige algo después (por el chat o por el inbox), el cambio va a `4-data/` y el log recibe al final «Cambios posteriores» con la fecha. Que algo se repita en los apuntes de varios lotes es una señal: si está como `hear` y reaparece, se propone subirlo a `say` en el review.
 
 ## Integración de lo nuevo
 
@@ -74,7 +74,7 @@ La estructura se adapta a lo que llega; no se congela. En cada lote el agente re
 - **`use`**: subir lo que se repite en los apuntes o YAGO pide decir; bajar lo que resulta que no usa.
 - **Frases y entradas**: fusionar duplicados y separar sentidos que estaban mezclados (IDs nuevos para lo separado; los antiguos no se reutilizan).
 
-Cómo: mover un elemento de tema es moverlo de archivo en `4-data/` (y sus ejercicios, al archivo del mismo tema); renombrar o reordenar temas es editar `themes.yaml`. `push` recoloca las tarjetas en Anki conservando el progreso y borra los subdecks que queden vacíos. Toda reorganización se cuenta en el summary del lote, con qué se movió y por qué.
+Cómo: mover un elemento de tema es moverlo de archivo en `4-data/` (y sus ejercicios, al archivo del mismo tema); renombrar o reordenar temas es editar `themes.yaml`. `push` recoloca las tarjetas en Anki conservando el progreso y borra los subdecks que queden vacíos. Toda reorganización se cuenta en el log del lote, con qué se movió y por qué.
 
 ## Lotes disruptivos: qué protege y cómo se recupera
 
@@ -94,7 +94,7 @@ Entradas que absorbe el inbox: texto en cualquier formato e imágenes (fotos de 
 | Capa | Orden | Contenido |
 |---|---|---|
 | `2-raw/<lote>/` | cronológico, intocable | lo que YAGO escribió, tal cual; versionado |
-| `3-digests/summary-<lote>.md` | cronológico; temático por dentro | lo que aportó cada lote; histórico, no se reescribe |
+| `3-digests/summary-<lote>.md` | cronológico; temático por dentro | el log de cada lote, del agente; histórico, no se reescribe |
 | `4-data/<carpeta>/<tema>.yaml` | por tema y concepto, sin cronología | fuente de verdad; la cronología solo como `source.batch` y `added` |
 | `5-notebook/` | temático, acumulado | todo lo aprendido por tema, generado desde `4-data/` en cada lote; nunca se edita |
 | Anki | por tema + etiquetas | estudio |
@@ -171,7 +171,7 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 - **Tipos**: `read` (hanzi → pinyin y significado), `listen` (audio → pinyin o comprensión), `produce` (español → chino), `cloze` (hueco en frase), `tones` (un dígito por sílaba: 什么 → `25`; desde audio o desde pinyin sin tonos; `check` reconstruye el pinyin y verifica), `speak` (voz alta y comparar), `contrast`, `derive`, `components`, `nuance` (matiz o confusión concreta que YAGO pide desde el review: «¿qué aporta 公 en 公司 y en 公主?»; nunca exigida, sin audio). Una pregunta concreta por tarjeta.
 - **Tecleadas frente a autoevaluación**: YAGO estudia desde el móvil; se teclea en tonos y producción del núcleo, el resto es autoevaluación. En las frases para decir, escribir es opcional (caja «escríbelo si quieres»). **Normalización**: vale pinyin (tildes o dígitos, `v` = `ü`) o hanzi; espacios, mayúsculas y puntuación dan igual; solo cuenta como fallo un error real de sílaba o tono.
 - **Audio**: escucha, tonos y pronunciación lo llevan delante; lectura, producción y deducción, tras revelar; el contraste visual y los componentes no llevan (se deciden por la forma); el de homófonos sí. Frases de ejemplo y entradas `p.`, siempre.
-- **AFI** (transcripción fonética del tono de cita) en el reverso de palabras y en `5-notebook/`, calculada del pinyin con dragonmapper al compilar; nunca se guarda en `4-data/`. No refleja el sandhi: eso lo explican las entradas `p.`. Las pistas propias de YAGO van como comentario `sound` y aparecen en tarjetas, cuaderno y summary.
+- **AFI** (transcripción fonética del tono de cita) en el reverso de palabras y en `5-notebook/`, calculada del pinyin con dragonmapper al compilar; nunca se guarda en `4-data/`. No refleja el sandhi: eso lo explican las entradas `p.`. Las pistas propias de YAGO van como comentario `sound` y aparecen en tarjetas, cuaderno y log.
 - **Tarjetas de tonos**: llevan el recordatorio de qué número es cada tono.
 - **Trampas fonéticas**: reglas en `anki.py` (`PHONETIC_TRAPS`) detectan en el pinyin lo que un hispanohablante lee mal (x, q, j, r, zh/ch/sh, z/c, ü, i muda, e no española, -ian, -ui, -iu, -un, -ong, h, aspiración) y lo muestran solas en las tarjetas de escucha, voz alta y tonos, como mucho 3 por tarjeta. Una regla nueva se añade a la tabla, nunca como nota suelta en una palabra. Notas a mano solo para las pistas de YAGO (`sound`) y las entradas `p.`.
 - **Pinyin** siempre visible en las soluciones. Colores solo para alinear hanzi y pinyin, nunca para marcar tonos. No se promete corregir el habla: `speak` es autoevaluación.
@@ -198,7 +198,7 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 ## Repositorio y privacidad
 
 - Repositorio `yago-mendoza/apkg-chinese-structs`, **público**: nada privado en `4-data/`, ninguna credencial. Local en `C:\Users\yagom\dev\apkg-chinese-structs`, Python en `.venv`, UTF-8 explícito.
-- Fuera de git: los apuntes pendientes de `1-inbox/` (sí se versionan su README, el summary y el review), `6-output/` y el entorno. `2-raw/` se versiona (decisión de YAGO, 2026-09-27): los apuntes no son privados. Antes de archivar un lote en `2-raw/`, revisar que no haya datos sensibles (claves, correos, teléfonos).
+- Fuera de git: los apuntes pendientes de `1-inbox/` (sí se versionan su README y el review), `6-output/` y el entorno. `2-raw/` se versiona (decisión de YAGO, 2026-09-27): los apuntes no son privados. Antes de archivar un lote en `2-raw/`, revisar que no haya datos sensibles (claves, correos, teléfonos).
 - Commits cuando YAGO lo pida; push a GitHub solo cuando lo pida.
 - Fuentes externas: HSK 3.0 de `drkameleon/complete-hsk-vocabulary` (MIT; se puede versionar con su aviso de licencia; solo nivel y pinyin, no sus glosas CC-CEDICT). Dong Chinese y SUBTLEX-CH: condiciones sin aclarar, solo en local.
 - Licencia (elegida por YAGO, 2026-09-27): MIT para el código, CC BY 4.0 para el contenido; cita obligatoria, uso comercial permitido. Lo que entre de terceros tiene que ser compatible con CC BY.
@@ -215,7 +215,7 @@ Las cifras del mazo (entradas, frases, tarjetas, audio pendiente, huecos) no se 
 Por comprobar en uso real: que el cliente móvil de YAGO conserva lo escrito entre anverso y reverso (si no, las tarjetas escritas quedan como autoevaluación) y que el historial de repaso se conserva al reimportar.
 
 1. ~~Fase 1~~ hecha.
-2. ~~Fase 2~~ hecha: subdecks por tema, etiquetas, recolocación, datos por tema, frases aparte, summary y review, tarjeta de matiz.
+2. ~~Fase 2~~ hecha: subdecks por tema, etiquetas, recolocación, datos por tema, frases aparte, log y review, tarjeta de matiz.
 3. Pista de pronunciación.
 4. HSK 3.0 y frecuencia hablada como señales.
 5. `stats`: leer fallos de Anki por AnkiConnect y convertir las tarjetas problemáticas en huecos del siguiente lote.
