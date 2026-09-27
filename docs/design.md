@@ -30,7 +30,7 @@ El modelo redacta; `anki.py` calcula y comprueba. Lo que puede calcularse (qué 
 
 Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de orden de procesado, fecha, tema en palabras; nunca números de hoja). El lote solo sirve para llevar la cuenta de la procedencia: dentro del mazo cada cosa va donde le toca por tema y nivel, y un ajuste sobre algo antiguo corrige la entrada antigua.
 
-1. YAGO deja `.txt` en `1-inbox/` (o los pega en el chat y el agente los guarda allí tal cual).
+1. YAGO deja archivos en `1-inbox/`, en cualquier formato y con cualquier nombre (o los pega en el chat y el agente los guarda allí tal cual). Todo archivo salvo `README.md` y `gaps-*.md` es apunte pendiente. Las fechas de los apuntes, si las hay, van a `source.date` de lo que salga de cada parte; si un archivo mezcla días, se respeta la fecha de cada parte.
 2. El agente lee también `1-inbox/gaps-*.md` si existe: es parte del lote.
 3. Para cada elemento: `lookup`; decide si es nuevo, corrige algo o amplía una entrada o grupo. Lo parecido a lo existente (forma, sonido, patrón) va a esa entrada, a `relations` o a un grupo, no a tarjetas sueltas.
 4. Asigna `use` a cada entrada nueva (ver «Cobertura»), con motivo cuando se aparte de las señales de frecuencia.
@@ -38,7 +38,7 @@ Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de o
 6. Pregunta lo ambiguo (sentido, lectura, si ya lo sabe) en vez de adivinar. Las transcripciones de fotos hechas por LLM traen errores y `[¿?]`: se marcan con ⚠️ en el digest, nunca se dan por buenas.
 7. `plan` → escribe exactamente las tarjetas que faltan → `check` sin errores ni avisos pendientes.
 8. Escribe `4-digests/<lote>.md`, regenera `5-guide/` y el nuevo `1-inbox/gaps-<lote>.md`.
-9. Mueve los `.txt` y el `gaps-*.md` leído a `2-raw/<lote>/`. `1-inbox/` queda vacío salvo su `README.md` y el nuevo `gaps`.
+9. Mueve los apuntes y el `gaps-*.md` leído a `2-raw/<lote>/`, con sus nombres originales. `1-inbox/` queda vacío salvo su `README.md` y el nuevo `gaps`.
 10. `audio`, `push`, y resumen a YAGO: añadido, cambiado, tarjetas antiguas tocadas y audio nuevo.
 
 **`1-inbox/gaps-<lote>.md`** es lo que falta tras el lote, con el porqué, para que YAGO lo estudie y lo traiga en el siguiente. Empieza con la línea `<!-- Documento editable: escribe encima, tacha, añade dudas. Todo lo que pongas aquí entra en el siguiente lote. -->`. Solo hay uno a la vez; el anterior se archiva con el lote que lo consume.

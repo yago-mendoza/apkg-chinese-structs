@@ -528,7 +528,9 @@ def cmd_gaps():
                     if not seg.get("ref") and seg.get("pinyin")})
     if loose:
         print("Palabras en frases sin entrada: " + ", ".join(loose))
-    raw = sorted(f.name for f in INBOX.glob("*.txt")) if INBOX.exists() else []
+    # Cualquier archivo cuenta como apunte pendiente, con o sin extensión; salvo el README y los gaps.
+    raw = sorted(f.name for f in INBOX.iterdir() if f.is_file() and f.name != "README.md"
+                 and not f.name.startswith("gaps-")) if INBOX.exists() else []
     print(f"Inbox sin procesar: {len(raw)}" + (f" → {', '.join(raw)}" if raw else ""))
 
 

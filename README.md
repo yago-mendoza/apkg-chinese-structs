@@ -17,7 +17,7 @@ Generar tarjetas es la parte fácil. Lo que hace útil este sistema es que el ag
 
 ## Uso
 
-1. Deja tus apuntes en bruto en `1-inbox/`: un `.txt` por lote, sin formato.
+1. Deja tus apuntes en bruto en `1-inbox/`: cualquier archivo, sin formato. Pon la fecha de lo apuntado, al principio o en cada parte si mezclas días.
 2. Abre un agente de código en la carpeta y pídele «procesa el inbox». Edita el mazo, escribe el digest del lote, regenera la guía, te deja los deberes en `1-inbox/` y te dice qué ha cambiado.
 3. Sube el mazo a Anki:
 
