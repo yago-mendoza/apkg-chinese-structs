@@ -55,6 +55,7 @@ MODEL_TYPED_NAME = "Chino práctico (tecleada)"
 MODEL_SELF_NAME = "Chino práctico (autoevaluación)"
 DECK_PRESET = "🐉 Chino práctico"          # preset propio: nunca tocar el de otros mazos
 NEW_PER_DAY, REVIEWS_PER_DAY = 30, 300
+THEME_MAX, THEME_MIN = 60, 3               # entradas por tema: por encima, ¿dividir?; por debajo, ¿juntar?
 
 AZURE_VOICE = os.environ.get("AZURE_SPEECH_VOICE", "zh-CN-YunyangNeural")
 # Más despacio que lo normal: más claro para aprender tonos. Las palabras sueltas, aún más.
@@ -808,8 +809,21 @@ def validate(entries, sentences, exercises, require_audio=True):
         if w and not accepted:
             warnings.append(f"{xid}: {w}")
     for t in load_themes():
-        if set(t) != {"id", "title"} or not isinstance(t.get("title"), str):
+        if not {"id", "title"} <= set(t) <= {"id", "title", "keep"} or not isinstance(t.get("title"), str):
             errors.append(f"themes.yaml: tema mal formado {t} (¿una coma sin comillas en el título?)")
+    # Disparadores de reorganización: avisos para que el agente decida con criterio (docs/design.md).
+    per_theme = {}
+    for e in entries:
+        if e.get("kind") != "group":
+            per_theme[e["theme"]] = per_theme.get(e["theme"], 0) + 1
+    for t in load_themes():
+        n = per_theme.get(t["id"], 0)
+        if t.get("keep"):          # decisión tomada y anotada: no se vuelve a avisar
+            continue
+        if n > THEME_MAX:
+            warnings.append(f"tema {t['id']}: {n} entradas (más de {THEME_MAX}); ¿dividirlo? (Reorganización)")
+        elif n < THEME_MIN:
+            warnings.append(f"tema {t['id']}: {n} entrada(s) (menos de {THEME_MIN}); ¿juntarlo con otro? (Reorganización)")
     for f in stray_data_files():
         errors.append(f"{f}: el nombre no es ningún tema de 4-data/themes.yaml; su contenido no se carga")
     # Especificación de cobertura: use, rol, tema y tarjetas exigidas.

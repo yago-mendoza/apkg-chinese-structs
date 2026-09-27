@@ -39,7 +39,7 @@ Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de o
 7. `plan` → escribe exactamente las tarjetas que faltan → `check` sin errores ni avisos pendientes.
 8. Archiva el `summary-*.md` anterior en `3-digests/`. Escribe en `1-inbox/` el `summary-<lote>.md` y el `review-<lote>.md` nuevos (`plan --doc <lote>` crea el review con «Falta»; el agente completa el resto) y regenera `5-guide/`.
 9. Mueve los apuntes y el `review-*.md` leído (con lo que escribió YAGO) a `2-raw/<lote>/`. Cada apunte se archiva como `AAAA-MM-DD_<nombre original>`, con la fecha en que se apuntó (la que YAGO escribe dentro); si mezcla días, `mixto_<nombre original>` y la fecha de cada parte dentro; si no tiene fecha, `sin-fecha_<nombre original>` y se usa la de procesado en `source.date`. El review conserva su nombre. Sin subcarpetas por día: el prefijo ya ordena. Dos fechas distintas: la del lote (procesado) y la de cada apunte (cuándo se aprendió). `1-inbox/` queda con su `README.md`, el `summary` y el `review` nuevos.
-10. `audio`, `push`, y resumen a YAGO: añadido, cambiado, tarjetas antiguas tocadas y audio nuevo.
+10. `audio`, `push`, commit con la etiqueta `lote-NNN` (en GitHub, el repositorio tal como quedó tras ese lote) y resumen a YAGO: añadido, cambiado, reorganizado, tarjetas antiguas tocadas y audio nuevo.
 
 **Summary y review** (en `1-inbox/`, versionados; solo uno de cada a la vez). Ambos empiezan con un comentario que explica qué son (`SUMMARY_HEADER` y `REVIEW_HEADER` en `anki.py`), organizados **por temas, sin números de hoja ni de página**, una línea por elemento: `汉字 pinyin · significado · pista (relación, mnemotecnia, pronunciación) · ejemplo`.
 
@@ -47,6 +47,17 @@ Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de o
 - **Review** (editable): «Falta» (palabras `say` sin frase, calculado), «Pendiente: ✅ sin tarjeta todavía», «No entró, y por qué» (🟡 solo reconocer, ❌ literario, arcaico o en desuso, cada uno con su motivo), «Por verificar» (transcripciones dudosas) y «Tus notas». Debajo de cada punto, una línea `  > ` para YAGO.
 
 Histórico: un summary archivado no se reescribe. Si YAGO corrige algo después (por el chat o por el inbox), el cambio va a `4-data/` y el summary recibe al final «Correcciones posteriores» con la fecha. Que algo se repita en los apuntes de varios lotes es una señal: si está como `hear` y reaparece, se propone subirlo a `say` en el review.
+
+## Reorganización
+
+La estructura se adapta a lo que llega; no se congela. En cada lote el agente revisa, y cambia si hace falta:
+
+- **Temas**: dividir los que crecen demasiado, juntar los que se quedan con muy poco, crear uno cuando llega un asunto nuevo, mover lo que encaja mal y reordenarlos si el orden de aprendizaje ya no sirve. `check` avisa cuando un tema pasa de `THEME_MAX` entradas o baja de `THEME_MIN` (en `anki.py`); es un aviso: decide el criterio. Si se decide mantener un tema así, se anota en `themes.yaml` con `keep: <motivo>` y el aviso deja de salir.
+- **Grupos**: crear familias cuando aparecen confusiones o series nuevas, y ampliar las existentes.
+- **`use`**: subir lo que se repite en los apuntes o YAGO pide decir; bajar lo que resulta que no usa.
+- **Frases y entradas**: fusionar duplicados y separar sentidos que estaban mezclados (IDs nuevos para lo separado; los antiguos no se reutilizan).
+
+Cómo: mover un elemento de tema es moverlo de archivo en `4-data/` (y sus ejercicios, al archivo del mismo tema); renombrar o reordenar temas es editar `themes.yaml`. `push` recoloca las tarjetas en Anki conservando el progreso y borra los subdecks que queden vacíos. Toda reorganización se cuenta en el summary del lote, con qué se movió y por qué.
 
 ## Capas y carpetas
 
@@ -137,7 +148,7 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 
 ## Anki
 
-- Mazo `🐉 Chino práctico`. **Subdecks por tema**, numerados por orden de aprendizaje (`🐉 Chino práctico::04 Presentarse`), a partir de `themes.yaml` (decisión de YAGO: por fechas, cada subdeck sería un poco de todo). **Etiquetas** para lo que admite varios valores: `tema::`, `mes::`, `use::`, `skill::`, `type::` (y `nivel::` cuando haya niveles). Estudiar el mazo padre lo mezcla todo (lo nuevo y lo antiguo, cuando Anki lo decide), que es como YAGO quiere estudiar; los temas organizan, no separan el estudio. En cada lote el agente revisa si la estructura de temas sigue sirviendo y la reorganiza si hace falta.
+- Mazo `🐉 Chino práctico`. **Subdecks por tema**, numerados por orden de aprendizaje (`🐉 Chino práctico::04 Presentarse`), a partir de `themes.yaml` (decisión de YAGO: por fechas, cada subdeck sería un poco de todo). **Etiquetas** para lo que admite varios valores: `tema::`, `mes::`, `use::`, `skill::`, `type::` (y `nivel::` cuando haya niveles). Estudiar el mazo padre lo mezcla todo (lo nuevo y lo antiguo, cuando Anki lo decide), que es como YAGO quiere estudiar; los temas organizan, no separan el estudio. La estructura de temas se revisa en cada lote (ver «Reorganización»).
 - **`push`**: compila, abre Anki si hace falta, importa por AnkiConnect (complemento `2055492159`) y sincroniza con AnkiWeb. Anki no mueve tarjetas de deck al reimportar: `push` las recoloca con AnkiConnect conservando el progreso, y borra los subdecks propios que queden vacíos y no correspondan a ningún tema (renombrar un tema funciona así solo). Detecta notas del mazo cuyo ejercicio ya no existe y propone borrarlas, mostrando cuáles.
 - **Orden de nuevas**: las tarjetas de una misma entrada no se introducen el mismo día (Anki solo separa hermanas de una misma nota y aquí cada tarjeta es una nota); los básicos primero.
 - **Límites**: 30 nuevas al día y 300 repasos como máximo (elegido por YAGO el 2026-09-26: 15 se le quedaba corto), fijados por `push` en un preset propio. A ritmo estable los repasos diarios son del orden de 5 a 8 veces las nuevas (proporcional, no geométrico: a unos 10 s por tarjeta, 30 nuevas son unos 40 minutos al día); `use` mantiene el total asumible hacia C1. Cambiarlo es cambiar `NEW_PER_DAY` en `anki.py`: un cambio a mano en Anki se pierde en el siguiente `push`.

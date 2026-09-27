@@ -4,7 +4,7 @@ Fuente de verdad del mazo, mantenida por el agente. Un archivo por tema en cada 
 
 | Ruta | Contenido |
 |---|---|
-| `themes.yaml` | Temas en orden de aprendizaje: `{id, title}`. Deciden los subdecks (`🐉 Chino práctico::NN Título`), el orden de las nuevas y `5-guide/`. Títulos con coma, entre comillas. |
+| `themes.yaml` | Temas en orden de aprendizaje: `{id, title}`. Deciden los subdecks (`🐉 Chino práctico::NN Título`), el orden de las nuevas y `5-guide/`. Títulos con coma, entre comillas. `keep: <motivo>` si se decide mantener un tema aunque `check` avise de su tamaño. |
 | `lexicon/<tema>.yaml` | `entries`: el diccionario. |
 | `sentences/<tema>.yaml` | `sentences`: frases, recursos en sí mismos y ejemplos reutilizables. |
 | `exercises/<tema>.yaml` | `exercises`: cada ejercicio es una tarjeta de Anki. Va en el tema de su primer objetivo. |

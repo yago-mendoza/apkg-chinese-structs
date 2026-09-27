@@ -42,6 +42,9 @@ Palabras que quieres decir y aún no aparecen en ninguna frase. Trae una frase d
 - 手机 shǒujī · móvil
   > 
 
+- **Números**: solo tienes 八 bā. Trae los que hayas visto en clase (一 二 三… 十, y más si los tienes), o escribe aquí «sí» y los meto del 1 al 10.
+  > 
+
 ## Pendiente: ✅ sin tarjeta todavía
 
 Útil, pero no cupo en el primer lote. Escribe «sí» en lo que quieras en el mazo (o un matiz).
