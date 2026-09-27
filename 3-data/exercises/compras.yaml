@@ -1,0 +1,438 @@
+# Ejercicios · Compras. Esquema: 3-data/README.md
+
+exercises:
+  - id: x.read.he
+    added: 2026-09-25
+    type: read
+    lang: es
+    targets: [w.he.drink]
+    skills: [reading, pinyin, tones]
+    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 喝}
+    answer: {typed: he1, hanzi: 喝, pinyin: hē, meaning: beber}
+    reveal: [s.ni-he-shui-ma]
+    explanation: Primer tono, alto y sostenido.
+    comments: []
+  - id: x.listen.shui
+    added: 2026-09-25
+    type: listen
+    lang: es
+    targets: [w.shui]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shui3, hanzi: 水, pinyin: shuǐ, meaning: agua}
+    reveal: [s.ni-he-shui-ma]
+    explanation: Tercer tono aislado, baja y vuelve a subir.
+    comments: []
+  - id: x.listen.ni-he-shui-ma
+    added: 2026-09-25
+    type: listen
+    lang: es
+    sentence: s.ni-he-shui-ma
+    targets: [s.ni-he-shui-ma]
+    context: [w.he.drink, w.shui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué te preguntan?', audio: true}
+    answer: {meaning: '¿Bebes agua?'}
+    explanation: 吗 al final convierte la afirmación en pregunta de sí o no.
+    comments: []
+  - id: x.read.xiang
+    added: 2026-09-25
+    type: read
+    targets: [w.xiang]
+    skills: [reading, pinyin, tones]
+    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 想}
+    answer: {typed: xiang3, hanzi: 想, pinyin: xiǎng, meaning: querer (hacer algo); pensar}
+    reveal: [s.wo-xiang-qu-shangdian]
+    lang: es
+    comments: []
+  - id: x.read.qu
+    added: 2026-09-25
+    type: read
+    targets: [w.qu]
+    skills: [reading, pinyin, tones]
+    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 去}
+    answer: {typed: qu4, hanzi: 去, pinyin: qù, meaning: ir}
+    reveal: [s.wo-xiang-qu-shangdian]
+    lang: es
+    comments: []
+  - id: x.read.mai
+    added: 2026-09-25
+    type: read
+    targets: [w.mai]
+    skills: [reading, pinyin, tones]
+    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 买}
+    answer: {typed: mai3, hanzi: 买, pinyin: mǎi, meaning: comprar}
+    reveal: [s.wo-xiang-mai-shuiguo]
+    lang: es
+    comments: []
+  - id: x.read.shuiguo
+    added: 2026-09-25
+    type: read
+    targets: [w.shuiguo]
+    skills: [reading, pinyin, tones]
+    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 水果}
+    answer: {typed: shui3 guo3, hanzi: 水果, pinyin: shuǐguǒ, meaning: fruta}
+    reveal: [s.wo-xiang-mai-shuiguo]
+    lang: es
+    comments: []
+  - id: x.read.shangdian
+    added: 2026-09-25
+    type: read
+    targets: [w.shangdian]
+    skills: [reading, pinyin, tones]
+    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 商店}
+    answer: {typed: shang1 dian4, hanzi: 商店, pinyin: shāngdiàn, meaning: tienda}
+    reveal: [s.wo-xiang-qu-shangdian]
+    lang: es
+    comments: []
+  - id: x.read.zai.at
+    added: 2026-09-25
+    type: read
+    targets: [w.zai.at]
+    skills: [reading, pinyin, tones]
+    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 在}
+    answer: {typed: zai4, hanzi: 在, pinyin: zài, meaning: estar en (un lugar)}
+    reveal: [s.shangdian-zai-nar]
+    lang: es
+    comments: []
+  - id: x.read.nar
+    added: 2026-09-25
+    type: read
+    targets: [w.nar]
+    skills: [reading, pinyin, tones]
+    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 哪儿}
+    answer: {typed: nar3, hanzi: 哪儿, pinyin: nǎr, meaning: dónde}
+    reveal: [s.shangdian-zai-nar]
+    lang: es
+    comments: []
+  - id: x.read.kafei
+    added: 2026-09-25
+    type: read
+    targets: [w.kafei]
+    skills: [reading, pinyin, tones]
+    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 咖啡}
+    answer: {typed: ka1 fei1, hanzi: 咖啡, pinyin: kāfēi, meaning: café}
+    lang: es
+    comments: []
+  - id: x.read.qiaokeli
+    added: 2026-09-25
+    type: read
+    targets: [w.qiaokeli]
+    skills: [reading, pinyin, tones]
+    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 巧克力}
+    answer: {typed: qiao3 ke4 li4, hanzi: 巧克力, pinyin: qiǎokèlì, meaning: chocolate}
+    lang: es
+    comments: []
+  - id: x.read.niurou
+    added: 2026-09-25
+    type: read
+    targets: [w.niurou]
+    skills: [reading, pinyin, tones]
+    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 牛肉}
+    answer: {typed: niu2 rou4, hanzi: 牛肉, pinyin: niúròu, meaning: carne de ternera}
+    lang: es
+    comments: []
+  - id: x.listen.xiang
+    added: 2026-09-25
+    type: listen
+    targets: [w.xiang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiang3, hanzi: 想, pinyin: xiǎng, meaning: querer (hacer algo); pensar}
+    lang: es
+    comments: []
+  - id: x.listen.qu
+    added: 2026-09-25
+    type: listen
+    targets: [w.qu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: qu4, hanzi: 去, pinyin: qù, meaning: ir}
+    lang: es
+    comments: []
+  - id: x.listen.mai
+    added: 2026-09-25
+    type: listen
+    targets: [w.mai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mai3, hanzi: 买, pinyin: mǎi, meaning: comprar}
+    lang: es
+    comments: []
+  - id: x.listen.shangdian
+    added: 2026-09-25
+    type: listen
+    targets: [w.shangdian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shang1 dian4, hanzi: 商店, pinyin: shāngdiàn, meaning: tienda}
+    lang: es
+    comments: []
+  - id: x.listen.nar
+    added: 2026-09-25
+    type: listen
+    targets: [w.nar]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nar3, hanzi: 哪儿, pinyin: nǎr, meaning: dónde}
+    lang: es
+    comments: []
+  - id: x.produce.qu
+    added: 2026-09-25
+    type: produce
+    targets: [w.qu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «ir»? Escribe el pinyin.'}
+    answer: {typed: qu4, hanzi: 去, pinyin: qù, meaning: ir}
+    lang: es
+    comments: []
+  - id: x.produce.mai
+    added: 2026-09-25
+    type: produce
+    targets: [w.mai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «comprar»? Escribe el pinyin.'}
+    answer: {typed: mai3, hanzi: 买, pinyin: mǎi, meaning: comprar}
+    lang: es
+    comments: []
+  - id: x.produce.shuiguo
+    added: 2026-09-25
+    type: produce
+    targets: [w.shuiguo]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «fruta»? Escribe el pinyin.'}
+    answer: {typed: shui3 guo3, hanzi: 水果, pinyin: shuǐguǒ, meaning: fruta}
+    lang: es
+    comments: []
+  - id: x.produce.shangdian
+    added: 2026-09-25
+    type: produce
+    targets: [w.shangdian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «tienda»? Escribe el pinyin.'}
+    answer: {typed: shang1 dian4, hanzi: 商店, pinyin: shāngdiàn, meaning: tienda}
+    lang: es
+    comments: []
+  - id: x.listen.wo-xiang-qu-shangdian
+    added: 2026-09-25
+    type: listen
+    sentence: s.wo-xiang-qu-shangdian
+    targets: [s.wo-xiang-qu-shangdian]
+    context: [w.wo, w.xiang, w.qu, w.shangdian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero ir a la tienda.}
+    lang: es
+    comments: []
+  - id: x.listen.wo-xiang-mai-shuiguo
+    added: 2026-09-25
+    type: listen
+    sentence: s.wo-xiang-mai-shuiguo
+    targets: [s.wo-xiang-mai-shuiguo]
+    context: [w.wo, w.xiang, w.mai, w.shuiguo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero comprar fruta.}
+    lang: es
+    comments: []
+  - id: x.listen.shangdian-zai-nar
+    added: 2026-09-25
+    type: listen
+    sentence: s.shangdian-zai-nar
+    targets: [s.shangdian-zai-nar]
+    context: [w.shangdian, w.zai.at, w.nar]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Dónde está la tienda?'}
+    lang: es
+    comments: []
+  - id: x.produce.wo-xiang-qu-shangdian
+    added: 2026-09-25
+    type: produce
+    sentence: s.wo-xiang-qu-shangdian
+    targets: [s.wo-xiang-qu-shangdian]
+    context: [w.wo, w.xiang, w.qu, w.shangdian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero ir a la tienda.»'}
+    answer: {meaning: Quiero ir a la tienda.}
+    lang: es
+    comments: []
+  - id: x.produce.wo-xiang-mai-shuiguo
+    added: 2026-09-25
+    type: produce
+    sentence: s.wo-xiang-mai-shuiguo
+    targets: [s.wo-xiang-mai-shuiguo]
+    context: [w.wo, w.xiang, w.mai, w.shuiguo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero comprar fruta.»'}
+    answer: {meaning: Quiero comprar fruta.}
+    lang: es
+    comments: []
+  - id: x.produce.shangdian-zai-nar
+    added: 2026-09-25
+    type: produce
+    sentence: s.shangdian-zai-nar
+    targets: [s.shangdian-zai-nar]
+    context: [w.shangdian, w.zai.at, w.nar]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde está la tienda?»'}
+    answer: {meaning: '¿Dónde está la tienda?'}
+    lang: es
+    comments: []
+  - id: x.listen.he.drink
+    added: 2026-09-26
+    type: listen
+    targets: [w.he.drink]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 喝, pinyin: hē, meaning: beber}
+    reveal: [s.ni-he-shui-ma]
+    lang: es
+    comments: []
+  - id: x.produce.he.drink
+    added: 2026-09-26
+    type: produce
+    targets: [w.he.drink]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «beber»? Escribe el pinyin.'}
+    answer: {typed: he1, hanzi: 喝, pinyin: hē, meaning: beber}
+    lang: es
+    comments: []
+  - id: x.produce.shui
+    added: 2026-09-26
+    type: produce
+    targets: [w.shui]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «agua»? Escribe el pinyin.'}
+    answer: {typed: shui3, hanzi: 水, pinyin: shuǐ, meaning: agua}
+    lang: es
+    comments: []
+  - id: x.read.shui
+    added: 2026-09-26
+    type: read
+    targets: [w.shui]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 水}
+    answer: {hanzi: 水, pinyin: shuǐ, meaning: agua}
+    reveal: [s.ni-he-shui-ma]
+    lang: es
+    comments: []
+  - id: x.produce.xiang
+    added: 2026-09-26
+    type: produce
+    targets: [w.xiang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «querer (hacer algo); pensar»? Escribe el pinyin.'}
+    answer: {typed: xiang3, hanzi: 想, pinyin: xiǎng, meaning: querer (hacer algo); pensar}
+    lang: es
+    comments: []
+  - id: x.listen.shuiguo
+    added: 2026-09-26
+    type: listen
+    targets: [w.shuiguo]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 水果, pinyin: shuǐguǒ, meaning: fruta}
+    reveal: [s.wo-xiang-mai-shuiguo]
+    lang: es
+    comments: []
+  - id: x.tones.shuiguo
+    added: 2026-09-26
+    type: tones
+    targets: [w.shuiguo]
+    refs: [p.third-tone-sandhi]
+    skills: [tones, pinyin]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 水果, pinyin: shui guo}
+    answer: {typed: '33', hanzi: 水果, pinyin: shuǐguǒ, meaning: fruta}
+    lang: es
+    comments: []
+  - id: x.listen.zai.at
+    added: 2026-09-26
+    type: listen
+    targets: [w.zai.at]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 在, pinyin: zài, meaning: estar en (un lugar)}
+    reveal: [s.shangdian-zai-nar]
+    lang: es
+    comments: []
+  - id: x.cloze.zai.at
+    added: 2026-09-26
+    type: cloze
+    sentence: s.shangdian-zai-nar
+    gap: w.zai.at
+    targets: [w.zai.at]
+    context: [w.shangdian, w.nar]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Dónde está la tienda?»'}
+    answer: {typed: zai4, hanzi: 在, pinyin: zài, meaning: estar en (un lugar)}
+    lang: es
+    comments: []
+  - id: x.cloze.nar
+    added: 2026-09-26
+    type: cloze
+    sentence: s.shangdian-zai-nar
+    gap: w.nar
+    targets: [w.nar]
+    context: [w.shangdian, w.zai.at]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Dónde está la tienda?»'}
+    answer: {typed: nar3, hanzi: 哪儿, pinyin: nǎr, meaning: dónde}
+    lang: es
+    comments: []
+  - id: x.listen.kafei
+    added: 2026-09-26
+    type: listen
+    targets: [w.kafei]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 咖啡, pinyin: kāfēi, meaning: café}
+    lang: es
+    comments: []
+  - id: x.produce.kafei
+    added: 2026-09-26
+    type: produce
+    targets: [w.kafei]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «café»? Escribe el pinyin.'}
+    answer: {typed: ka1 fei1, hanzi: 咖啡, pinyin: kāfēi, meaning: café}
+    lang: es
+    comments: []
+  - id: x.listen.qiaokeli
+    added: 2026-09-26
+    type: listen
+    targets: [w.qiaokeli]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 巧克力, pinyin: qiǎokèlì, meaning: chocolate}
+    lang: es
+    comments: []
+  - id: x.listen.niurou
+    added: 2026-09-26
+    type: listen
+    targets: [w.niurou]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 牛肉, pinyin: niúròu, meaning: carne de ternera}
+    lang: es
+    comments: []
+  - id: x.produce.niurou
+    added: 2026-09-26
+    type: produce
+    targets: [w.niurou]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «carne de ternera»? Escribe el pinyin.'}
+    answer: {typed: niu2 rou4, hanzi: 牛肉, pinyin: niúròu, meaning: carne de ternera}
+    lang: es
+    comments: []
+  - id: x.produce.ni-he-shui-ma
+    added: 2026-09-26
+    type: produce
+    sentence: s.ni-he-shui-ma
+    targets: [s.ni-he-shui-ma]
+    context: [w.ni, w.he.drink, w.shui, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Bebes agua?»'}
+    answer: {meaning: '¿Bebes agua?'}
+    lang: es
+    comments: []

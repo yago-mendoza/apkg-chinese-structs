@@ -20,7 +20,7 @@ Configuración y decisiones propias de este mazo (Yago Mendoza). Nada secreto: e
 - Ritmo: 30 nuevas y 300 repasos al día (15 se quedaba corto). Se cambia en `anki.py`, no a mano en Anki, porque `push` lo vuelve a fijar.
 - No se corrige nada dentro de Anki: las correcciones se piden al agente.
 - **Fase de pruebas**: mientras el sistema no sea estable, se reinicia el progreso a petición (`push --reset`). Cuando lo sea, el progreso se conserva.
-- `2-raw/` se versiona: los apuntes no son privados.
+- `1-inbox/history/` se versiona: los apuntes no son privados.
 - Licencia: MIT para el código y CC BY 4.0 para el contenido, con cita obligatoria y uso comercial permitido (2026-09-27).
 
 ## Si algo falla

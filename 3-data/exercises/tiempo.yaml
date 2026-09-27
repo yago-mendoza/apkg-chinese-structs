@@ -1,0 +1,218 @@
+# Ejercicios · Momentos del día. Esquema: 3-data/README.md
+
+exercises:
+  - id: x.derive.xiawu
+    added: 2026-09-25
+    type: derive
+    lang: es
+    group: g.wu-day-parts
+    targets: [w.xiawu]
+    context: [w.shangwu]
+    skills: [production, pinyin, tones]
+    prompt: {text: 'Si 上午 shàngwǔ es «por la mañana», ¿cómo se dice «por la tarde»?'}
+    answer: {typed: xia4 wu3, hanzi: 下午, pinyin: xiàwǔ, meaning: por la tarde}
+    comments: []
+  - id: x.read.mingtian
+    added: 2026-09-25
+    type: read
+    targets: [w.mingtian]
+    skills: [reading, pinyin, tones]
+    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 明天}
+    answer: {typed: ming2 tian1, hanzi: 明天, pinyin: míngtiān, meaning: mañana (el día)}
+    reveal: [s.mingtian-jian]
+    lang: es
+    comments: []
+  - id: x.read.jian
+    added: 2026-09-25
+    type: read
+    targets: [w.jian]
+    skills: [reading, pinyin, tones]
+    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 见}
+    answer: {typed: jian4, hanzi: 见, pinyin: jiàn, meaning: ver; verse}
+    reveal: [s.mingtian-jian]
+    lang: es
+    comments: []
+  - id: x.read.wanshang
+    added: 2026-09-25
+    type: read
+    targets: [w.wanshang]
+    skills: [reading, pinyin, tones]
+    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 晚上}
+    answer: {typed: wan3 shang5, hanzi: 晚上, pinyin: wǎnshang, meaning: por la noche}
+    lang: es
+    comments: []
+  - id: x.tones.wanshang
+    added: 2026-09-25
+    type: tones
+    targets: [w.wanshang]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 晚上, pinyin: wan shang}
+    answer: {typed: '35', hanzi: 晚上, pinyin: wǎnshang, meaning: por la noche}
+    lang: es
+    comments: []
+  - id: x.listen.mingtian-jian
+    added: 2026-09-25
+    type: listen
+    sentence: s.mingtian-jian
+    targets: [s.mingtian-jian]
+    context: [w.mingtian, w.jian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Hasta mañana!}
+    lang: es
+    comments: []
+  - id: x.produce.mingtian-jian
+    added: 2026-09-25
+    type: produce
+    sentence: s.mingtian-jian
+    targets: [s.mingtian-jian]
+    context: [w.mingtian, w.jian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Hasta mañana!»'}
+    answer: {meaning: ¡Hasta mañana!}
+    lang: es
+    comments: []
+  - id: x.listen.shangwu
+    added: 2026-09-26
+    type: listen
+    targets: [w.shangwu]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 上午, pinyin: shàngwǔ, meaning: por la mañana (antes de mediodía)}
+    lang: es
+    comments: []
+  - id: x.produce.shangwu
+    added: 2026-09-26
+    type: produce
+    targets: [w.shangwu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «por la mañana (antes de mediodía)»? Escribe el pinyin.'}
+    answer: {typed: shang4 wu3, hanzi: 上午, pinyin: shàngwǔ, meaning: por la mañana (antes de mediodía)}
+    lang: es
+    comments: []
+  - id: x.read.shangwu
+    added: 2026-09-26
+    type: read
+    targets: [w.shangwu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 上午}
+    answer: {hanzi: 上午, pinyin: shàngwǔ, meaning: por la mañana (antes de mediodía)}
+    lang: es
+    comments: []
+  - id: x.listen.zhongwu
+    added: 2026-09-26
+    type: listen
+    targets: [w.zhongwu]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 中午, pinyin: zhōngwǔ, meaning: mediodía}
+    lang: es
+    comments: []
+  - id: x.produce.zhongwu
+    added: 2026-09-26
+    type: produce
+    targets: [w.zhongwu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «mediodía»? Escribe el pinyin.'}
+    answer: {typed: zhong1 wu3, hanzi: 中午, pinyin: zhōngwǔ, meaning: mediodía}
+    lang: es
+    comments: []
+  - id: x.read.zhongwu
+    added: 2026-09-26
+    type: read
+    targets: [w.zhongwu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 中午}
+    answer: {hanzi: 中午, pinyin: zhōngwǔ, meaning: mediodía}
+    lang: es
+    comments: []
+  - id: x.listen.xiawu
+    added: 2026-09-26
+    type: listen
+    targets: [w.xiawu]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 下午, pinyin: xiàwǔ, meaning: por la tarde}
+    reveal: [s.xiawu-qu-shangdian]
+    lang: es
+    comments: []
+  - id: x.read.xiawu
+    added: 2026-09-26
+    type: read
+    targets: [w.xiawu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 下午}
+    answer: {hanzi: 下午, pinyin: xiàwǔ, meaning: por la tarde}
+    reveal: [s.xiawu-qu-shangdian]
+    lang: es
+    comments: []
+  - id: x.listen.mingtian
+    added: 2026-09-26
+    type: listen
+    targets: [w.mingtian]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 明天, pinyin: míngtiān, meaning: mañana (el día)}
+    reveal: [s.mingtian-jian]
+    lang: es
+    comments: []
+  - id: x.produce.mingtian
+    added: 2026-09-26
+    type: produce
+    targets: [w.mingtian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «mañana (el día)»? Escribe el pinyin.'}
+    answer: {typed: ming2 tian1, hanzi: 明天, pinyin: míngtiān, meaning: mañana (el día)}
+    lang: es
+    comments: []
+  - id: x.listen.jian
+    added: 2026-09-26
+    type: listen
+    targets: [w.jian]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 见, pinyin: jiàn, meaning: ver; verse}
+    reveal: [s.mingtian-jian]
+    lang: es
+    comments: []
+  - id: x.listen.wanshang
+    added: 2026-09-26
+    type: listen
+    targets: [w.wanshang]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 晚上, pinyin: wǎnshang, meaning: por la noche}
+    lang: es
+    comments: []
+  - id: x.produce.wanshang
+    added: 2026-09-26
+    type: produce
+    targets: [w.wanshang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «por la noche»? Escribe el pinyin.'}
+    answer: {typed: wan3 shang5, hanzi: 晚上, pinyin: wǎnshang, meaning: por la noche}
+    lang: es
+    comments: []
+  - id: x.listen.xiawu-qu-shangdian
+    added: 2026-09-26
+    type: listen
+    sentence: s.xiawu-qu-shangdian
+    targets: [s.xiawu-qu-shangdian]
+    context: [w.xiawu, w.qu, w.shangdian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Por la tarde voy a la tienda.}
+    lang: es
+    comments: []
+  - id: x.produce.xiawu-qu-shangdian
+    added: 2026-09-26
+    type: produce
+    sentence: s.xiawu-qu-shangdian
+    targets: [s.xiawu-qu-shangdian]
+    context: [w.xiawu, w.qu, w.shangdian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Por la tarde voy a la tienda.»'}
+    answer: {meaning: Por la tarde voy a la tienda.}
+    lang: es
+    comments: []

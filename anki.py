@@ -5,16 +5,16 @@ Uso:
     python anki.py plan [--doc <lote>]     tarjetas exigidas que faltan; --doc escribe 1-inbox/review-<lote>.md
     python anki.py gaps                    reparto del mazo y pendientes
     python anki.py check
-    python anki.py notebook                   regenera 5-notebook/ desde 4-data/
+    python anki.py notebook                   regenera 4-notebook/ desde 3-data/
     python anki.py scaffold [--write]      tarjetas estándar para lo que falta (sin --write, solo las lista)
-    python anki.py export                  6-output/dictionary.json: diccionario público versionado
+    python anki.py export                  5-output/dictionary.json: diccionario público versionado
     python anki.py close-batch <lote> [--dry-run]  archiva review leído y apuntes; cuaderno; commit y etiqueta
     python anki.py audio [--dry-run]
     python anki.py build [--allow-missing-audio]
     python anki.py push [--allow-missing-audio] [--no-sync] [--prune] [--reset]
 
 No llama a ningún LLM. `audio` usa la red (Azure Speech) y nunca repite audios
-ya guardados en 4-data/audio/. `push` compila, importa en Anki desktop (abriéndolo si
+ya guardados en 3-data/audio/. `push` compila, importa en Anki desktop (abriéndolo si
 hace falta) mediante el complemento AnkiConnect, ajusta plantillas, límites y orden de
 nuevas, y sincroniza con AnkiWeb.
 """
@@ -35,15 +35,16 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent
-DATA = ROOT / "4-data"                    # fuente de verdad, mantenida por el agente
+DATA = ROOT / "3-data"                    # fuente de verdad, mantenida por el agente
 THEMES = DATA / "themes.yaml"             # temas en orden de aprendizaje
 KINDS = {"lexicon": "entries", "sentences": "sentences", "exercises": "exercises"}  # carpeta → clave; un archivo por tema
 MEDIA = DATA / "audio"                  # MP3 generados; no regenerar
 AUDIO_MANIFEST = MEDIA / "index.yaml"
 INBOX = ROOT / "1-inbox"                  # apuntes en bruto de YAGO
-DIGESTS = ROOT / "3-digests"              # histórico de cada lote
-NOTEBOOK = ROOT / "5-notebook"            # cuaderno de consulta por temas, generado
-OUTPUT = ROOT / "6-output"                # lo que sale: mazo y futuras exportaciones
+HISTORY = INBOX / "history"                # lo que pasó por el inbox, archivado tal cual por lote
+DIGESTS = ROOT / "2-digests"              # histórico de cada lote
+NOTEBOOK = ROOT / "4-notebook"            # cuaderno de consulta por temas, generado
+OUTPUT = ROOT / "5-output"                # lo que sale: mazo y futuras exportaciones
 APKG = OUTPUT / "chino-practico.apkg"
 ANKI_CONNECT = "http://127.0.0.1:8765"
 
@@ -93,7 +94,7 @@ def load_themes():
 
 def load():
     """Entradas, frases y ejercicios de todos los temas, en el orden de themes.yaml. El tema de cada
-    elemento es el archivo en que vive (4-data/<carpeta>/<tema>.yaml): se añade en memoria como `theme`."""
+    elemento es el archivo en que vive (3-data/<carpeta>/<tema>.yaml): se añade en memoria como `theme`."""
     out = {key: [] for key in KINDS.values()}
     for th in load_themes():
         for folder, key in KINDS.items():
@@ -115,7 +116,12 @@ def baseline_exercises():
     tags = (git("tag", "--list", "lote-*", "--sort=-v:refname") or "").split()
     if not tags:
         return None
-    files = (git("ls-tree", "-r", "--name-only", tags[0], "4-data/exercises") or "").split()
+    # Las etiquetas anteriores a la renumeración (lote-001) guardan los datos en 4-data/.
+    files = []
+    for folder in (f"{DATA.name}/exercises", "4-data/exercises"):
+        files = (git("ls-tree", "-r", "--name-only", tags[0], folder) or "").split()
+        if files:
+            break
     out = {}
     for f in files:
         text = git("show", f"{tags[0]}:{f}")
@@ -544,11 +550,11 @@ def cmd_lookup(query):
 PRIMARY = {"read": "lectura", "listen": "escucha", "tones": "tonos", "produce": "producción",
            "derive": "producción", "cloze": "producción", "speak": "voz alta", "contrast": "contraste",
            "components": "componentes", "nuance": "matiz"}
-GENERATED = "<!-- Generado por `anki.py notebook` desde 4-data/. No editar: se rehace en cada lote. -->"
+GENERATED = "<!-- Generado por `anki.py notebook` desde 3-data/. No editar: se rehace en cada lote. -->"
 REVIEW_HEADER = ("<!-- REVIEW: para opinar. Debajo de cada punto hay una línea «>»: escribe lo que quieras (sí, no, "
                  "un matiz, una duda, una frase, una corrección). Lo que escribas entra en el siguiente lote; lo que "
                  "dejes vacío se queda como está. Puedes añadir puntos al final. El log completo del lote está en "
-                 "3-digests/summary-{batch}.md. -->")
+                 "2-digests/summary-{batch}.md. -->")
 LOG_HEADER = ("<!-- LOG del lote: qué entró, qué no y por qué, correcciones y reorganizaciones. Histórico: no se "
               "reescribe; los cambios posteriores se añaden al final. Para opinar: el review del inbox. -->")
 
@@ -707,7 +713,7 @@ class _Dumper(yaml.SafeDumper):
 
 
 def append_exercises(theme, items):
-    """Añade ejercicios al final de 4-data/exercises/<tema>.yaml (lo crea si no existe)."""
+    """Añade ejercicios al final de 3-data/exercises/<tema>.yaml (lo crea si no existe)."""
     path = DATA / "exercises" / f"{theme}.yaml"
     body = yaml.dump(items, Dumper=_Dumper, allow_unicode=True, sort_keys=False, default_flow_style=None, width=120)
     block = "\n".join("  " + line if line else line for line in body.splitlines()) + "\n"
@@ -716,7 +722,7 @@ def append_exercises(theme, items):
     else:
         title = next((t["title"] for t in load_themes() if t["id"] == theme), theme)
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(f"# Ejercicios · {title}. Esquema: 4-data/README.md\n\nexercises:\n{block}", encoding="utf-8")
+        path.write_text(f"# Ejercicios · {title}. Esquema: 3-data/README.md\n\nexercises:\n{block}", encoding="utf-8")
 
 
 def cmd_scaffold(write):
@@ -789,7 +795,7 @@ def mark(item, has_cards):
 
 
 def cmd_notebook():
-    """Regenera 5-notebook/: todo lo aprendido, un archivo por tema, desde 4-data/."""
+    """Regenera 4-notebook/: todo lo aprendido, un archivo por tema, desde 3-data/."""
     entries, sentences, exercises = load()
     themes = load_themes()
     targeted = {t for ex in exercises for t in ex.get("targets", [])}
@@ -1024,7 +1030,7 @@ def validate(entries, sentences, exercises, require_audio=True):
             warnings.append(f"{ex['id']}: está en exercises/{ex['theme']}.yaml pero su objetivo {first} es del tema "
                             f"{theme_of[first]}; moverlo para que vaya al subdeck correcto")
     for f in stray_data_files():
-        errors.append(f"{f}: el nombre no es ningún tema de 4-data/themes.yaml; su contenido no se carga")
+        errors.append(f"{f}: el nombre no es ningún tema de 3-data/themes.yaml; su contenido no se carga")
     # Especificación de cobertura: use, rol, tema y tarjetas exigidas.
     theme_ids = {t["id"] for t in load_themes()}
     for it in entries + sentences:
@@ -1453,7 +1459,7 @@ def export_dictionary(entries, sentences, exercises):
 
     def audio(text):
         item = manifest.get(text) if text else None
-        return f"4-data/audio/{item['file']}" if item else None
+        return (MEDIA / item["file"]).relative_to(ROOT).as_posix() if item else None
 
     def public_notes(item):
         return [{"kind": c.get("kind"), "text": c.get("text")} for c in item.get("comments", [])
@@ -1545,19 +1551,19 @@ def close_batch_plan(batch):
         errors.append(f"`check` tiene {len(err)} error(es): resolverlos antes de cerrar")
     log = DIGESTS / f"summary-{batch}.md"
     if not log.exists():
-        errors.append(f"falta 3-digests/summary-{batch}.md: el log del lote (lo escribe el agente)")
+        errors.append(f"falta 2-digests/summary-{batch}.md: el log del lote (lo escribe el agente)")
     elif not log.read_text(encoding="utf-8").startswith(LOG_HEADER):
-        errors.append(f"3-digests/summary-{batch}.md debe empezar con LOG_HEADER (anki.py): así se sabe qué es")
+        errors.append(f"2-digests/summary-{batch}.md debe empezar con LOG_HEADER (anki.py): así se sabe qué es")
     if not (INBOX / f"review-{batch}.md").exists():
         errors.append(f"falta 1-inbox/review-{batch}.md (se empieza con `plan --doc {batch}` y lo completa el agente)")
-    raw = ROOT / "2-raw" / batch
+    raw = HISTORY / batch
     for f in sorted(INBOX.iterdir()) if INBOX.exists() else []:
         if not f.is_file() or f.name == "README.md" or f.name == f"review-{batch}.md":
             continue
         if f.name.startswith("review-"):
-            actions.append(("review leído → 2-raw/", f, raw / f.name))
+            actions.append(("review leído → 1-inbox/history/", f, raw / f.name))
         elif NOTE_PREFIX_RE.match(f.name):
-            actions.append(("apunte → 2-raw/", f, raw / f.name))
+            actions.append(("apunte → 1-inbox/history/", f, raw / f.name))
         else:
             errors.append(f"1-inbox/{f.name}: ponle delante su fecha (AAAA-MM-DD_), mixto_ o sin-fecha_ antes de cerrar")
     return actions, errors
@@ -1565,7 +1571,7 @@ def close_batch_plan(batch):
 
 def cmd_close_batch(batch, dry_run):
     """Cierra un lote: archiva el review leído y los apuntes, regenera el cuaderno, commit y etiqueta lote-NNN.
-    El log del lote ya está en 3-digests/ (lo escribe el agente al procesar)."""
+    El log del lote ya está en 2-digests/ (lo escribe el agente al procesar)."""
     import shutil
     actions, errors = close_batch_plan(batch)
     for desc, src, dst in actions:
@@ -1746,7 +1752,7 @@ def orphans(exercises, prune, force=False):
         anki_request("deleteNotes", notes=[n["noteId"] for n in lost])
         print(f"Borradas {len(lost)} nota(s) huérfana(s).")
     elif lost:
-        print(f"{len(lost)} nota(s) del mazo ya no existen en 4-data/. Revisar y repetir con --prune para borrarlas.")
+        print(f"{len(lost)} nota(s) del mazo ya no existen en 3-data/. Revisar y repetir con --prune para borrarlas.")
 
 
 def cmd_push(allow_missing_audio, sync, prune=False, reset=False, force=False):

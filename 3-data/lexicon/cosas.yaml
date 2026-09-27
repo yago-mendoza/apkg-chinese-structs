@@ -1,0 +1,95 @@
+# Diccionario · Cosas y actividades. Esquema: 3-data/README.md
+
+entries:
+  - id: w.zai.progressive
+    use: context
+    role: function
+    use_reason: 'mismo hanzi y sonido que 在 «estar en»: suelto es ambiguo; se aprende al oírlo en frases'
+    kind: word
+    hanzi: 在
+    pinyin: zài
+    meaning: {es: estar (haciendo algo), en: (action in progress)}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.kan
+    use: say
+    role: content
+    kind: word
+    hanzi: 看
+    pinyin: kàn
+    meaning: {es: mirar; leer, en: to look; to read}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments:
+      - {kind: mnemonic, private: false, date: 2026-09-25, text: mano sobre ojo}
+  - id: w.kanjian
+    use: hear
+    role: content
+    kind: word
+    hanzi: 看见
+    pinyin: kànjiàn
+    meaning: {es: ver (llegar a ver), en: to see}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: '看 es la acción de mirar; 见 añade el resultado: llegar
+          a ver.'}
+  - id: w.kankan
+    use: say
+    role: content
+    kind: word
+    hanzi: 看看
+    pinyin: kànkan
+    meaning: {es: echar un vistazo, en: to have a look}
+    accept_pinyin_mismatch: la repetición del verbo va en tono neutro
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 'Repetir el verbo lo suaviza: «mirar un poco», no «mirar
+          dos veces».'}
+  - id: w.shu
+    use: say
+    role: content
+    kind: word
+    hanzi: 书
+    pinyin: shū
+    meaning: {es: libro, en: book}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.shouji
+    use: say
+    role: content
+    kind: word
+    hanzi: 手机
+    pinyin: shǒujī
+    meaning: {es: móvil, en: mobile phone}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 手 «mano» + 机 «máquina».}
+  - id: w.zuqiu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 足球
+    pinyin: zúqiú
+    meaning: {es: fútbol, en: football}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 'Calco: 足 «pie» + 球 «pelota».'}
+  - id: w.huoche
+    use: hear
+    role: content
+    kind: word
+    hanzi: 火车
+    pinyin: huǒchē
+    meaning: {es: tren, en: train}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: '火 «fuego» + 车 «vehículo»: el primero especifica el segundo.'}
+  - id: w.rukou
+    use: [read]
+    role: content
+    use_reason: se lee en carteles; casi nunca se dice
+    kind: word
+    hanzi: 入口
+    pinyin: rùkǒu
+    meaning: {es: entrada, en: entrance}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    comments: []

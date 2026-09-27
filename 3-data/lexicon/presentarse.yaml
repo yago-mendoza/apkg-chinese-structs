@@ -1,0 +1,158 @@
+# Diccionario · Presentarse. Esquema: 3-data/README.md
+
+entries:
+  - id: w.zhongguo
+    use: say
+    role: content
+    kind: word
+    hanzi: 中国
+    pinyin: Zhōngguó
+    meaning: {es: China, en: China}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.xibanya
+    use: say
+    role: content
+    kind: word
+    hanzi: 西班牙
+    pinyin: Xībānyá
+    meaning: {es: España, en: Spain}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 'Transcripción fonética: los caracteres imitan el sonido,
+          no el significado.'}
+  - id: w.meiguo
+    use: hear
+    role: content
+    kind: word
+    hanzi: 美国
+    pinyin: Měiguó
+    meaning: {es: Estados Unidos, en: United States}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.zhongwen
+    use: say
+    role: content
+    kind: word
+    hanzi: 中文
+    pinyin: Zhōngwén
+    meaning: {es: chino (la lengua), en: Chinese (language)}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 'Modificador + núcleo: 中 «China» especifica 文 «lengua,
+          escritura».'}
+  - id: w.shi
+    use: say
+    role: content
+    kind: word
+    hanzi: 是
+    pinyin: shì
+    meaning: {es: ser, en: to be}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.bu
+    use: say
+    role: function
+    kind: word
+    hanzi: 不
+    pinyin: bù
+    meaning: {es: 'no', en: not}
+    relations: [p.bu-sandhi]
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.ma
+    use: say
+    role: function
+    kind: word
+    hanzi: 吗
+    pinyin: ma
+    meaning: {es: '¿…? (convierte la frase en pregunta de sí o no)', en: yes/no question particle}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments:
+      - {kind: note, private: false, date: 2026-09-25, text: checking for yes/no}
+  - id: w.ne
+    use: say
+    role: function
+    kind: word
+    hanzi: 呢
+    pinyin: ne
+    meaning: {es: '¿y…? (devuelve la pregunta)', en: 'and…?'}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments:
+      - {kind: note, private: false, date: 2026-09-25, text: 'neutral → decay, /ə/, “y tú?”'}
+  - id: w.ye
+    use: say
+    role: function
+    kind: word
+    hanzi: 也
+    pinyin: yě
+    meaning: {es: también, en: also}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.dou
+    use: say
+    role: function
+    kind: word
+    hanzi: 都
+    pinyin: dōu
+    meaning: {es: 'todos, ambos (adverbio)', en: 'all, both'}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.de
+    use: say
+    role: function
+    kind: word
+    hanzi: 的
+    pinyin: de
+    meaning: {es: 'de (posesión: 我的 = mi)', en: '''s (possessive)'}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.jiao
+    use: say
+    role: content
+    kind: word
+    hanzi: 叫
+    pinyin: jiào
+    meaning: {es: llamarse, en: to be called}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.shenme
+    use: say
+    role: function
+    kind: word
+    hanzi: 什么
+    pinyin: shénme
+    meaning: {es: qué, en: what}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.mingzi
+    use: say
+    role: content
+    kind: word
+    hanzi: 名字
+    pinyin: míngzi
+    meaning: {es: nombre, en: name}
+    accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.renshi
+    use: say
+    role: content
+    kind: word
+    hanzi: 认识
+    pinyin: rènshi
+    meaning: {es: conocer (a alguien), en: to know (someone)}
+    accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments:
+      - {kind: note, private: false, date: 2026-09-25, text: 认识 = reconocer + distinguir = familiarizado con}
+      - {kind: note, private: false, date: 2026-09-25, text: distinguir algo (de los demás) con conocimiento}
+  - id: w.gaoxing
+    use: say
+    role: content
+    kind: word
+    hanzi: 高兴
+    pinyin: gāoxìng
+    meaning: {es: contento, en: happy}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []

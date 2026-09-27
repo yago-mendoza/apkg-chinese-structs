@@ -1,0 +1,40 @@
+# Ejercicios · Números. Esquema: 3-data/README.md
+
+exercises:
+  - id: x.contrast.ba
+    added: 2026-09-25
+    type: contrast
+    group: g.ren-ru-ba
+    targets: [w.ba]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es bā, «ocho»?'}
+    answer: {hanzi: 八, pinyin: bā, meaning: ocho}
+    lang: es
+    comments: []
+  - id: x.listen.ba
+    added: 2026-09-26
+    type: listen
+    targets: [w.ba]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿Qué palabra es?', audio: true}
+    answer: {hanzi: 八, pinyin: bā, meaning: ocho}
+    lang: es
+    comments: []
+  - id: x.produce.ba
+    added: 2026-09-26
+    type: produce
+    targets: [w.ba]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «ocho»? Escribe el pinyin.'}
+    answer: {typed: ba1, hanzi: 八, pinyin: bā, meaning: ocho}
+    lang: es
+    comments: []
+  - id: x.read.ba
+    added: 2026-09-26
+    type: read
+    targets: [w.ba]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 八}
+    answer: {hanzi: 八, pinyin: bā, meaning: ocho}
+    lang: es
+    comments: []

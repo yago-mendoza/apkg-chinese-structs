@@ -1,0 +1,64 @@
+# Diccionario · Familia. Esquema: 3-data/README.md
+
+entries:
+  - id: w.baba
+    use: say
+    role: content
+    kind: word
+    hanzi: 爸爸
+    pinyin: bàba
+    meaning: {es: papá, en: dad}
+    accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.mama
+    use: say
+    role: content
+    kind: word
+    hanzi: 妈妈
+    pinyin: māma
+    meaning: {es: mamá, en: mom}
+    accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: '女 «mujer» aporta el significado y 马 mǎ, el sonido. 马 significa
+          «caballo», pero aquí solo presta su sonido: el caballo no tiene nada que ver con mamá.'}
+      - {kind: linguistic, private: false, date: 2026-09-26, text: 'También se dice 妈 mā sola, sobre todo para llamarla (妈！).
+          爸妈 bàmā son papá y mamá juntos, en registro coloquial.'}
+  - id: w.erzi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 儿子
+    pinyin: érzi
+    meaning: {es: hijo, en: son}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments: []
+  - id: w.nver
+    use: hear
+    role: content
+    kind: word
+    hanzi: 女儿
+    pinyin: nǚ'ér
+    meaning: {es: hija, en: daughter}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments: []
+  - id: w.haizi
+    use: say
+    role: content
+    kind: word
+    hanzi: 孩子
+    pinyin: háizi
+    meaning: {es: 'niño, niña; hijo, hija', en: child}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments: []
+  - id: w.xiaohai
+    use: hear
+    role: content
+    kind: word
+    hanzi: 小孩
+    pinyin: xiǎohái
+    meaning: {es: 'niño pequeño, crío', en: kid}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 孩子 es el término general; 小孩 añade 小 «pequeño».}

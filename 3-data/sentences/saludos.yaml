@@ -1,0 +1,39 @@
+# Frases · Saludos y cortesía. Esquema: 3-data/README.md
+
+sentences:
+  - id: s.ni-hao-ma
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 好, ref: w.hao, pinyin: hǎo}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Qué tal estás?', en: 'How are you?'}
+  - id: s.wo-hen-hao-ni-ne
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 好, ref: w.hao, pinyin: hǎo}
+      - {text: ，}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 呢, ref: w.ne, pinyin: ne}
+      - {text: ？}
+    translation: {es: 'Estoy bien, ¿y tú?', en: 'I''m fine, and you?'}
+  - id: s.wo-ye-hen-hao
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 也, ref: w.ye, pinyin: yě}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 好, ref: w.hao, pinyin: hǎo}
+      - {text: 。}
+    translation: {es: Yo también estoy bien., en: I'm fine too.}
+  - id: s.haode-xiexie
+    use: say
+    segments:
+      - {text: 好的, ref: e.haode, pinyin: hǎo de}
+      - {text: ，}
+      - {text: 谢谢, ref: e.xiexie, pinyin: xièxie}
+      - {text: ！}
+    translation: {es: 'Vale, ¡gracias!', en: 'OK, thanks!'}

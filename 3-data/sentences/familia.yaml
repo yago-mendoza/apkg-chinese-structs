@@ -1,0 +1,25 @@
+# Frases · Familia. Esquema: 3-data/README.md
+
+sentences:
+  - id: s.ta-shi-wo-de-baba
+    use: say
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt}
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 爸爸, ref: w.baba, pinyin: bàba}
+      - {text: 。}
+    translation: {es: Él es mi padre., en: He is my dad.}
+  - id: s.ta-shi-wo-de-mama
+    use: hear
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt}
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: tā}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 妈妈, ref: w.mama, pinyin: māma}
+      - {text: 。}
+    translation: {es: Ella es mi madre., en: She is my mom.}

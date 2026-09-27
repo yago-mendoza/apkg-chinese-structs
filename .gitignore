@@ -14,8 +14,8 @@ __pycache__/
 
 # Generated output (rebuilt by anki.py). The public dictionary export is versioned:
 # consumers pin it by tag or commit.
-6-output/*
-!6-output/dictionary.json
+5-output/*
+!5-output/dictionary.json
 *.apkg
 
 # Local-only content; never a substitute for reviewing staged changes
@@ -27,9 +27,10 @@ Thumbs.db
 .idea/
 
 # Raw notes: local only (the repository is public)
-# Pending notes stay local until processed; processed notes (2-raw/) are versioned,
-# and so are the summary and review the agent leaves in the inbox.
+# Pending notes stay local until processed; processed notes (1-inbox/history/) are versioned,
+# and so is the review the agent leaves in the inbox.
 1-inbox/*
 !1-inbox/README.md
 !1-inbox/review-*.md
+!1-inbox/history/
 

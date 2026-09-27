@@ -1,0 +1,162 @@
+# Diccionario · Personas y pronombres. Esquema: 3-data/README.md
+
+entries:
+  - id: w.wo
+    use: say
+    role: content
+    kind: word
+    hanzi: 我
+    pinyin: wǒ
+    meaning: {es: yo; me, en: I; me}
+    register: neutral
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    frequency: {}
+    relations: []
+    comments: []
+  - id: w.ni
+    use: say
+    role: content
+    kind: word
+    hanzi: 你
+    pinyin: nǐ
+    meaning: {es: tú, en: you}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.nin
+    use: say
+    role: content
+    kind: word
+    hanzi: 您
+    pinyin: nín
+    meaning: {es: usted (tú con respeto), en: you (polite)}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments:
+      - {kind: note, private: false, date: 2026-09-25, text: formal / respetuoso}
+  - id: w.women
+    use: say
+    role: content
+    kind: word
+    hanzi: 我们
+    pinyin: wǒmen
+    meaning: {es: nosotros, en: we}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.nimen
+    use: say
+    role: content
+    kind: word
+    hanzi: 你们
+    pinyin: nǐmen
+    meaning: {es: vosotros, en: you (plural)}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.ta.he
+    use: say
+    role: content
+    kind: word
+    hanzi: 他
+    pinyin: tā
+    meaning: {es: él, en: he}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.ta.she
+    use: [read]
+    role: content
+    use_reason: 'suena igual que 他 (tā): lo que se aprende de 她 es la escritura'
+    kind: word
+    hanzi: 她
+    pinyin: tā
+    meaning: {es: ella, en: she}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.ta.it
+    use: [read]
+    role: content
+    use_reason: 'suena igual que 他 (tā): lo que se aprende de 它 es la escritura'
+    kind: word
+    hanzi: 它
+    pinyin: tā
+    meaning: {es: 'ello (cosas, animales)', en: it}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments:
+      - {kind: note, private: false, date: 2026-09-25, text: animals}
+  - id: w.tamen
+    use: say
+    role: content
+    kind: word
+    hanzi: 他们
+    pinyin: tāmen
+    meaning: {es: ellos, en: they}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.dajia
+    use: say
+    role: content
+    kind: word
+    hanzi: 大家
+    pinyin: dàjiā
+    meaning: {es: 'todos, todo el mundo', en: everybody}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.laoshi
+    use: say
+    role: content
+    kind: word
+    hanzi: 老师
+    pinyin: lǎoshī
+    meaning: {es: 'profesor, profesora', en: teacher}
+    relations: [p.third-tone-half]
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.xuesheng
+    use: say
+    role: content
+    kind: word
+    hanzi: 学生
+    pinyin: xuéshēng
+    meaning: {es: estudiante, en: student}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments:
+      - {kind: mnemonic, private: false, date: 2026-09-25, text: niño estudiando bajo un techo con utensilios de aprendizaje}
+  - id: w.pengyou
+    use: say
+    role: content
+    kind: word
+    hanzi: 朋友
+    pinyin: péngyou
+    meaning: {es: 'amigo, amiga', en: friend}
+    accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.gongchengshi
+    use: say
+    role: content
+    kind: word
+    hanzi: 工程师
+    pinyin: gōngchéngshī
+    meaning: {es: 'ingeniero, ingeniera', en: engineer}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    comments:
+      - {kind: note, private: false, date: 2026-09-25, text: mi profession}
+      - {kind: linguistic, private: false, date: 2026-09-25, text: '师 aparece en profesiones y maestros, como en 老师.'}
+  - id: w.ren
+    use: say
+    role: content
+    kind: word
+    hanzi: 人
+    pinyin: rén
+    meaning: {es: persona, en: person}
+    standalone: 'yes'
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: g.ta-ta-ta
+    kind: group
+    basis: homophone
+    title: '他, 她 y 它: los tres son tā'
+    explanation: Suenan igual; solo la escritura distingue a quién se refiere.
+    members:
+      - {ref: w.ta.he, cue: '亻 persona: él (y grupos mixtos: 他们)'}
+      - {ref: w.ta.she, cue: '女 mujer: ella'}
+      - {ref: w.ta.it, cue: '宀 arriba: cosas y animales'}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments: []

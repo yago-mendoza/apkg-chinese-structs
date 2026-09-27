@@ -1,0 +1,19 @@
+# Frases · Momentos del día. Esquema: 3-data/README.md
+
+sentences:
+  - id: s.mingtian-jian
+    use: say
+    segments:
+      - {text: 明天, ref: w.mingtian, pinyin: míngtiān}
+      - {text: 见, ref: w.jian, pinyin: jiàn}
+      - {text: ！}
+    translation: {es: ¡Hasta mañana!, en: See you tomorrow!}
+  - id: s.xiawu-qu-shangdian
+    use: say
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt}
+    segments:
+      - {text: 下午, ref: w.xiawu, pinyin: xiàwǔ}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 商店, ref: w.shangdian, pinyin: shāngdiàn}
+      - {text: 。}
+    translation: {es: Por la tarde voy a la tienda., en: In the afternoon I go to the shop.}

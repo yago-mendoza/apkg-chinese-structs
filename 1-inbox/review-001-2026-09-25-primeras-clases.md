@@ -1,4 +1,4 @@
-<!-- REVIEW: para opinar. Debajo de cada punto hay una línea «>»: escribe lo que quieras (sí, no, un matiz, una duda, una frase, una corrección). Lo que escribas entra en el siguiente lote; lo que dejes vacío se queda como está. Puedes añadir puntos al final. El log completo del lote está en 3-digests/summary-001-2026-09-25-primeras-clases.md. -->
+<!-- REVIEW: para opinar. Debajo de cada punto hay una línea «>»: escribe lo que quieras (sí, no, un matiz, una duda, una frase, una corrección). Lo que escribas entra en el siguiente lote; lo que dejes vacío se queda como está. Puedes añadir puntos al final. El log completo del lote está en 2-digests/summary-001-2026-09-25-primeras-clases.md. -->
 
 # Review del lote 001-2026-09-25-primeras-clases
 

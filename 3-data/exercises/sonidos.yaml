@@ -1,0 +1,133 @@
+# Ejercicios · Sonidos y tonos. Esquema: 3-data/README.md
+
+exercises:
+  - id: x.tones.nihao-audio
+    added: 2026-09-25
+    type: tones
+    lang: es
+    targets: [p.third-tone-sandhi]
+    context: [e.nihao]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. Escribe el tono de referencia de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '33', hanzi: 你好, pinyin: nǐ hǎo, meaning: hola}
+    refs: [p.third-tone-sandhi]
+    explanation: Oyes ní hǎo, pero se escribe nǐ hǎo.
+    comments: []
+  - id: x.speak.aspiration
+    added: 2026-09-25
+    type: speak
+    targets: [p.aspiration]
+    context: [w.baba, w.pengyou]
+    refs: [p.aspiration]
+    skills: [speaking]
+    prompt: {text: 'Lee en voz alta con un papel delante de la boca: solo la p debe moverlo.', hanzi: 爸爸，朋友, pinyin: 'bàba,
+        péngyou'}
+    answer: {hanzi: 爸爸，朋友, meaning: 'papá, amigo'}
+    lang: es
+    comments: []
+  - id: x.speak.bu-shi
+    added: 2026-09-25
+    type: speak
+    sentence: s.wo-bu-shi-xuesheng
+    targets: [p.bu-sandhi]
+    context: [w.bu, w.shi, w.xuesheng, w.laoshi]
+    refs: [p.bu-sandhi]
+    skills: [speaking, tones]
+    prompt: {text: Lee en voz alta y después compara con el audio., hanzi: 我不是学生，我是老师。, pinyin: 'Wǒ bú shì xuéshēng, wǒ shì
+        lǎoshī.'}
+    answer: {meaning: 'No soy estudiante, soy profesor.'}
+    lang: es
+    comments: []
+  - id: x.speak.laoshihao
+    added: 2026-09-25
+    type: speak
+    targets: [p.third-tone-half]
+    context: [e.laoshihao]
+    refs: [p.third-tone-half]
+    skills: [speaking, tones]
+    prompt: {text: 'Lee en voz alta: lǎo solo baja, no sube.', hanzi: 老师好, pinyin: lǎoshī hǎo}
+    answer: {hanzi: 老师好, pinyin: lǎoshī hǎo, meaning: 'hola, profe'}
+    lang: es
+    comments: []
+  - id: x.speak.jqx-zhchsh
+    added: 2026-09-25
+    type: speak
+    targets: [p.jqx-zhchsh]
+    context: [w.xuesheng]
+    refs: [p.jqx-zhchsh]
+    skills: [speaking]
+    prompt: {text: 'Lee en voz alta: xué con la lengua plana abajo; shēng con la punta curvada arriba.', hanzi: 学生, pinyin: xuéshēng}
+    answer: {hanzi: 学生, pinyin: xuéshēng, meaning: estudiante}
+    lang: es
+    comments: []
+  - id: x.speak.third-tone-sandhi
+    added: 2026-09-26
+    type: speak
+    targets: [p.third-tone-sandhi]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Lee en voz alta: dos terceros tonos seguidos, la primera sube. Compara con el audio.', hanzi: 水果, pinyin: shuǐguǒ}
+    answer: {hanzi: 水果, pinyin: shuǐguǒ, meaning: 'fruta: suena shuíguǒ'}
+    skills: [speaking, tones]
+    lang: es
+    comments: []
+  - id: x.listen.bu-sandhi
+    added: 2026-09-26
+    type: listen
+    targets: [p.bu-sandhi]
+    refs: [p.bu-sandhi]
+    prompt: {text: 'Escucha 不是. ¿Con qué tono suena 不?', audio: true}
+    answer: {hanzi: 不是, pinyin: bú shì, meaning: 'segundo tono: bú. Se escribe bù, pero cambia delante de cuarto tono'}
+    skills: [listening, tones]
+    lang: es
+    comments: []
+  - id: x.listen.third-tone-half
+    added: 2026-09-26
+    type: listen
+    targets: [p.third-tone-half]
+    refs: [p.third-tone-half]
+    prompt: {text: 'Escucha 老师. La sílaba lǎo, ¿baja y vuelve a subir, o solo baja?', audio: true}
+    answer: {hanzi: 老师, pinyin: lǎoshī, meaning: 'solo baja: delante de otro tono, el tercero se queda a medias'}
+    skills: [listening, tones]
+    lang: es
+    comments: []
+  - id: x.listen.neutral-tone
+    added: 2026-09-26
+    type: listen
+    targets: [p.neutral-tone]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escucha 什么. ¿Cómo suena la segunda sílaba?', audio: true}
+    answer: {hanzi: 什么, pinyin: shénme, meaning: 'corta y ligera, sin contorno propio: tono neutro'}
+    skills: [listening, tones]
+    lang: es
+    comments: []
+  - id: x.speak.neutral-tone
+    added: 2026-09-26
+    type: speak
+    targets: [p.neutral-tone]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Lee en voz alta: la segunda sílaba, corta y ligera. Compara con el audio.', hanzi: 朋友，名字, pinyin: 'péngyou,
+        míngzi'}
+    answer: {hanzi: 朋友，名字, meaning: 'amigo, nombre'}
+    skills: [speaking, tones]
+    lang: es
+    comments: []
+  - id: x.listen.aspiration
+    added: 2026-09-26
+    type: listen
+    targets: [p.aspiration]
+    refs: [p.aspiration]
+    prompt: {text: 'Escucha 爸爸，朋友. ¿Cuál empieza con un soplo de aire?', audio: true}
+    answer: {hanzi: 爸爸，朋友, meaning: '朋 (p): con aire. 爸 (b): sin aire'}
+    skills: [listening]
+    lang: es
+    comments: []
+  - id: x.listen.jqx-zhchsh
+    added: 2026-09-26
+    type: listen
+    targets: [p.jqx-zhchsh]
+    refs: [p.jqx-zhchsh]
+    prompt: {text: 'Escucha 学生. ¿Qué sílaba va con la lengua plana y cuál con la punta curvada?', audio: true}
+    answer: {hanzi: 学生, pinyin: xuéshēng, meaning: 'xué: lengua plana (x). shēng: punta curvada (sh)'}
+    skills: [listening]
+    lang: es
+    comments: []

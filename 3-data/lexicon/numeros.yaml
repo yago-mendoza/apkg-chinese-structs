@@ -1,0 +1,13 @@
+# Diccionario · Números. Esquema: 3-data/README.md
+
+entries:
+  - id: w.ba
+    use: say
+    role: content
+    kind: word
+    hanzi: 八
+    pinyin: bā
+    meaning: {es: ocho, en: eight}
+    standalone: 'yes'
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    comments: []
