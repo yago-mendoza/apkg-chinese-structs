@@ -36,7 +36,7 @@ entries:
     pinyin: wǒ
     meaning: {es: yo; me, en: I; me}
     register: neutral
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     frequency: {}
     relations: []
     comments: []
@@ -50,7 +50,7 @@ entries:
     pinyin: hē
     meaning: {es: beber, en: to drink}
     register: neutral
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     frequency: {}
     relations: []
     comments: []
@@ -64,7 +64,7 @@ entries:
     pinyin: shuǐ
     meaning: {es: agua, en: water}
     register: neutral
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     frequency: {}
     relations: []
     comments: []
@@ -78,7 +78,7 @@ entries:
     pinyin: nǐ hǎo
     meaning: {es: hola, en: hello}
     register: neutral
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     frequency: {}
     relations: [p.third-tone-sandhi]
     comments: []
@@ -92,7 +92,7 @@ entries:
     pinyin: xièxie
     meaning: {es: gracias, en: thank you}
     register: neutral
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     frequency: {}
     relations: []
     # Revisado: los diccionarios dan xièxiè; el uso cotidiano estándar lleva tono neutro en la segunda sílaba.
@@ -114,7 +114,7 @@ entries:
     meaning: {es: mediodía, en: noon}
     standalone: no
     register: neutral
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
 
   - id: w.shangwu
@@ -127,7 +127,7 @@ entries:
     meaning: {es: por la mañana (antes de mediodía), en: morning; a.m.}
     standalone: yes
     register: neutral
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
 
   - id: w.zhongwu
@@ -140,7 +140,7 @@ entries:
     meaning: {es: mediodía, en: noon}
     standalone: yes
     register: neutral
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
 
   - id: w.xiawu
@@ -153,7 +153,7 @@ entries:
     meaning: {es: por la tarde, en: afternoon; p.m.}
     standalone: yes
     register: neutral
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
 
   - id: g.wu-day-parts
@@ -167,7 +167,7 @@ entries:
       - {ref: w.shangwu, cue: 上 antes del mediodía}
       - {ref: w.zhongwu, cue: 中 en el mediodía}
       - {ref: w.xiawu, cue: 下 después del mediodía}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
 
   - id: g.day-parts
@@ -181,7 +181,7 @@ entries:
       - {ref: w.zhongwu, cue: '中 «en medio» + 午'}
       - {ref: w.xiawu, cue: '下 «abajo, después» + 午'}
       - {ref: w.wanshang, cue: '晚 «tarde, noche»; sin 午'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
 
   - id: p.third-tone-sandhi
@@ -194,7 +194,7 @@ entries:
       como segundo tono. Se sigue escribiendo el tono de referencia:
       你好 se escribe nǐ hǎo y suena como ní hǎo.
     audio_text: 你好
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
 
   # ============ Lote 2026-09-25: primeras clases
@@ -207,7 +207,7 @@ entries:
     hanzi: 你
     pinyin: nǐ
     meaning: {es: tú, en: you}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.nin
     use: say
@@ -217,7 +217,7 @@ entries:
     hanzi: 您
     pinyin: nín
     meaning: {es: usted (tú con respeto), en: you (polite)}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: formal / respetuoso}
   - id: w.women
@@ -228,7 +228,7 @@ entries:
     hanzi: 我们
     pinyin: wǒmen
     meaning: {es: nosotros, en: we}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.nimen
     use: say
@@ -238,7 +238,7 @@ entries:
     hanzi: 你们
     pinyin: nǐmen
     meaning: {es: vosotros, en: you (plural)}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.ta.he
     use: say
@@ -248,7 +248,7 @@ entries:
     hanzi: 他
     pinyin: tā
     meaning: {es: él, en: he}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.ta.she
     use: [read]
@@ -259,7 +259,7 @@ entries:
     hanzi: 她
     pinyin: tā
     meaning: {es: ella, en: she}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.ta.it
     use: [read]
@@ -270,7 +270,7 @@ entries:
     hanzi: 它
     pinyin: tā
     meaning: {es: 'ello (cosas, animales)', en: it}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: animals}
   - id: w.tamen
@@ -281,7 +281,7 @@ entries:
     hanzi: 他们
     pinyin: tāmen
     meaning: {es: ellos, en: they}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.dajia
     use: say
@@ -291,7 +291,7 @@ entries:
     hanzi: 大家
     pinyin: dàjiā
     meaning: {es: 'todos, todo el mundo', en: everybody}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.laoshi
     use: say
@@ -302,7 +302,7 @@ entries:
     pinyin: lǎoshī
     meaning: {es: 'profesor, profesora', en: teacher}
     relations: [p.third-tone-half]
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.xuesheng
     use: say
@@ -312,7 +312,7 @@ entries:
     hanzi: 学生
     pinyin: xuéshēng
     meaning: {es: estudiante, en: student}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: niño estudiando bajo un techo con utensilios de aprendizaje}
   - id: w.pengyou
@@ -324,7 +324,7 @@ entries:
     pinyin: péngyou
     meaning: {es: 'amigo, amiga', en: friend}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.baba
     use: say
@@ -335,7 +335,7 @@ entries:
     pinyin: bàba
     meaning: {es: papá, en: dad}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.mama
     use: say
@@ -346,7 +346,7 @@ entries:
     pinyin: māma
     meaning: {es: mamá, en: mom}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: '女 «mujer» aporta el significado y 马 mǎ, el sonido. 马 significa «caballo», pero aquí solo presta su sonido: el caballo no tiene nada que ver con mamá.'}
       - {kind: linguistic, private: false, date: 2026-09-26, text: 'También se dice 妈 mā sola, sobre todo para llamarla (妈！). 爸妈 bàmā son papá y mamá juntos, en registro coloquial.'}
@@ -358,7 +358,7 @@ entries:
     hanzi: 儿子
     pinyin: érzi
     meaning: {es: hijo, en: son}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.nver
     use: hear
@@ -368,7 +368,7 @@ entries:
     hanzi: 女儿
     pinyin: nǚ'ér
     meaning: {es: hija, en: daughter}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.haizi
     use: say
@@ -378,7 +378,7 @@ entries:
     hanzi: 孩子
     pinyin: háizi
     meaning: {es: 'niño, niña; hijo, hija', en: child}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.xiaohai
     use: hear
@@ -388,7 +388,7 @@ entries:
     hanzi: 小孩
     pinyin: xiǎohái
     meaning: {es: 'niño pequeño, crío', en: kid}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 孩子 es el término general; 小孩 añade 小 «pequeño».}
   - id: w.gongchengshi
@@ -399,7 +399,7 @@ entries:
     hanzi: 工程师
     pinyin: gōngchéngshī
     meaning: {es: 'ingeniero, ingeniera', en: engineer}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: mi profession}
       - {kind: linguistic, private: false, date: 2026-09-25, text: '师 aparece en profesiones y maestros, como en 老师.'}
@@ -412,7 +412,7 @@ entries:
     pinyin: rén
     meaning: {es: persona, en: person}
     standalone: 'yes'
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.zhongguo
     use: say
@@ -422,7 +422,7 @@ entries:
     hanzi: 中国
     pinyin: Zhōngguó
     meaning: {es: China, en: China}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.xibanya
     use: say
@@ -432,7 +432,7 @@ entries:
     hanzi: 西班牙
     pinyin: Xībānyá
     meaning: {es: España, en: Spain}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Transcripción fonética: los caracteres imitan el sonido,
           no el significado.'}
@@ -444,7 +444,7 @@ entries:
     hanzi: 美国
     pinyin: Měiguó
     meaning: {es: Estados Unidos, en: United States}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.zhongwen
     use: say
@@ -454,7 +454,7 @@ entries:
     hanzi: 中文
     pinyin: Zhōngwén
     meaning: {es: chino (la lengua), en: Chinese (language)}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Modificador + núcleo: 中 «China» especifica 文 «lengua, escritura».'}
   - id: w.shi
@@ -465,7 +465,7 @@ entries:
     hanzi: 是
     pinyin: shì
     meaning: {es: ser, en: to be}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.bu
     use: say
@@ -476,7 +476,7 @@ entries:
     pinyin: bù
     meaning: {es: 'no', en: not}
     relations: [p.bu-sandhi]
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.ma
     use: say
@@ -486,7 +486,7 @@ entries:
     hanzi: 吗
     pinyin: ma
     meaning: {es: '¿…? (convierte la frase en pregunta de sí o no)', en: yes/no question particle}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: checking for yes/no}
   - id: w.ne
@@ -497,7 +497,7 @@ entries:
     hanzi: 呢
     pinyin: ne
     meaning: {es: '¿y…? (devuelve la pregunta)', en: 'and…?'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'neutral → decay, /ə/, “y tú?”'}
   - id: w.hen
@@ -508,7 +508,7 @@ entries:
     hanzi: 很
     pinyin: hěn
     meaning: {es: 'muy (con adjetivos, a menudo solo enlace)', en: very}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: Sin hěn suena a comparación tipo ‘yo estoy bien / mejor…’}
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Con un adjetivo como predicado, 很 suele ser un enlace sin
@@ -521,7 +521,7 @@ entries:
     hanzi: 好
     pinyin: hǎo
     meaning: {es: 'bien, bueno', en: good}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: 女 + 子 (woman + child)}
   - id: w.ye
@@ -532,7 +532,7 @@ entries:
     hanzi: 也
     pinyin: yě
     meaning: {es: también, en: also}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.dou
     use: say
@@ -542,7 +542,7 @@ entries:
     hanzi: 都
     pinyin: dōu
     meaning: {es: 'todos, ambos (adverbio)', en: 'all, both'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.de
     use: say
@@ -552,7 +552,7 @@ entries:
     hanzi: 的
     pinyin: de
     meaning: {es: 'de (posesión: 我的 = mi)', en: '''s (possessive)'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.jiao
     use: say
@@ -562,7 +562,7 @@ entries:
     hanzi: 叫
     pinyin: jiào
     meaning: {es: llamarse, en: to be called}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.shenme
     use: say
@@ -572,7 +572,7 @@ entries:
     hanzi: 什么
     pinyin: shénme
     meaning: {es: qué, en: what}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.mingzi
     use: say
@@ -583,7 +583,7 @@ entries:
     pinyin: míngzi
     meaning: {es: nombre, en: name}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.renshi
     use: say
@@ -594,7 +594,7 @@ entries:
     pinyin: rènshi
     meaning: {es: conocer (a alguien), en: to know (someone)}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 认识 = reconocer + distinguir = familiarizado con}
       - {kind: note, private: false, date: 2026-09-25, text: distinguir algo (de los demás) con conocimiento}
@@ -606,7 +606,7 @@ entries:
     hanzi: 高兴
     pinyin: gāoxìng
     meaning: {es: contento, en: happy}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.qing
     use: say
@@ -616,7 +616,7 @@ entries:
     hanzi: 请
     pinyin: qǐng
     meaning: {es: por favor, en: please}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'qǐng nín [verbo] = please you <do smth> (formal)'}
   - id: w.zaijian
@@ -627,7 +627,7 @@ entries:
     hanzi: 再见
     pinyin: zàijiàn
     meaning: {es: adiós, en: goodbye}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: formal / general ♡}
   - id: w.baibai
@@ -638,7 +638,7 @@ entries:
     hanzi: 拜拜
     pinyin: báibái
     meaning: {es: 'adiós (informal, del inglés bye-bye)', en: bye-bye}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.mingtian
     use: say
@@ -648,7 +648,7 @@ entries:
     hanzi: 明天
     pinyin: míngtiān
     meaning: {es: mañana (el día), en: tomorrow}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.jian
     use: hear
@@ -658,7 +658,7 @@ entries:
     hanzi: 见
     pinyin: jiàn
     meaning: {es: ver; verse, en: to see; to meet}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: 目 + 儿 → 见 = see}
   - id: w.dui
@@ -669,7 +669,7 @@ entries:
     hanzi: 对
     pinyin: duì
     meaning: {es: 'correcto; sí, eso es', en: 'right, correct'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: duì a / méi cuò (+ intenso)}
   - id: w.zao
@@ -680,7 +680,7 @@ entries:
     hanzi: 早
     pinyin: zǎo
     meaning: {es: ¡buenos días! (informal); temprano, en: morning!; early}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: zǎo ← zǎoshang hǎo}
   - id: w.xiang
@@ -691,7 +691,7 @@ entries:
     hanzi: 想
     pinyin: xiǎng
     meaning: {es: querer (hacer algo); pensar, en: to want to; to think}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: think / desire}
   - id: w.qu
@@ -702,7 +702,7 @@ entries:
     hanzi: 去
     pinyin: qù
     meaning: {es: ir, en: to go}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.mai
     use: say
@@ -712,7 +712,7 @@ entries:
     hanzi: 买
     pinyin: mǎi
     meaning: {es: comprar, en: to buy}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.shuiguo
     use: say
@@ -723,7 +723,7 @@ entries:
     pinyin: shuǐguǒ
     meaning: {es: fruta, en: fruit}
     relations: [w.shui]
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.shangdian
     use: say
@@ -733,7 +733,7 @@ entries:
     hanzi: 商店
     pinyin: shāngdiàn
     meaning: {es: tienda, en: shop}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.zai.at
     use: say
@@ -743,7 +743,7 @@ entries:
     hanzi: 在
     pinyin: zài
     meaning: {es: estar en (un lugar), en: to be at}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.zai.progressive
     use: context
@@ -754,7 +754,7 @@ entries:
     hanzi: 在
     pinyin: zài
     meaning: {es: estar (haciendo algo), en: (action in progress)}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.nar
     use: say
@@ -765,7 +765,7 @@ entries:
     pinyin: nǎr
     meaning: {es: dónde, en: where}
     accept_pinyin_mismatch: '儿 se funde con la sílaba anterior (erhua): nǎr'
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.kan
     use: say
@@ -775,7 +775,7 @@ entries:
     hanzi: 看
     pinyin: kàn
     meaning: {es: mirar; leer, en: to look; to read}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: mano sobre ojo}
   - id: w.kanjian
@@ -786,7 +786,7 @@ entries:
     hanzi: 看见
     pinyin: kànjiàn
     meaning: {es: ver (llegar a ver), en: to see}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: '看 es la acción de mirar; 见 añade el resultado: llegar a
           ver.'}
@@ -799,7 +799,7 @@ entries:
     pinyin: kànkan
     meaning: {es: echar un vistazo, en: to have a look}
     accept_pinyin_mismatch: la repetición del verbo va en tono neutro
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Repetir el verbo lo suaviza: «mirar un poco», no «mirar
           dos veces».'}
@@ -811,7 +811,7 @@ entries:
     hanzi: 书
     pinyin: shū
     meaning: {es: libro, en: book}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.shouji
     use: say
@@ -821,7 +821,7 @@ entries:
     hanzi: 手机
     pinyin: shǒujī
     meaning: {es: móvil, en: mobile phone}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 手 «mano» + 机 «máquina».}
   - id: w.kafei
@@ -832,7 +832,7 @@ entries:
     hanzi: 咖啡
     pinyin: kāfēi
     meaning: {es: café, en: coffee}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: Transcripción fonética de «coffee».}
   - id: w.qiaokeli
@@ -843,7 +843,7 @@ entries:
     hanzi: 巧克力
     pinyin: qiǎokèlì
     meaning: {es: chocolate, en: chocolate}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: Transcripción fonética de «chocolate».}
   - id: w.niurou
@@ -854,7 +854,7 @@ entries:
     hanzi: 牛肉
     pinyin: niúròu
     meaning: {es: carne de ternera, en: beef}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Modificador + núcleo: 牛 «vaca» especifica 肉 «carne».'}
   - id: w.zuqiu
@@ -865,7 +865,7 @@ entries:
     hanzi: 足球
     pinyin: zúqiú
     meaning: {es: fútbol, en: football}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Calco: 足 «pie» + 球 «pelota».'}
   - id: w.huoche
@@ -876,7 +876,7 @@ entries:
     hanzi: 火车
     pinyin: huǒchē
     meaning: {es: tren, en: train}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: '火 «fuego» + 车 «vehículo»: el primero especifica el segundo.'}
   - id: w.wanshang
@@ -889,7 +889,7 @@ entries:
     meaning: {es: por la noche, en: evening}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
     relations: [w.xiawu]
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.gao
     use: say
@@ -899,7 +899,7 @@ entries:
     hanzi: 高
     pinyin: gāo
     meaning: {es: alto, en: tall}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.ai
     use: hear
@@ -909,7 +909,7 @@ entries:
     hanzi: 矮
     pinyin: ǎi
     meaning: {es: bajo (de estatura), en: short}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.pang
     use: hear
@@ -919,7 +919,7 @@ entries:
     hanzi: 胖
     pinyin: pàng
     meaning: {es: gordo, en: fat}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'El 月 de la izquierda es 肉 «carne», como en muchas partes
           del cuerpo; no «luna».'}
@@ -931,7 +931,7 @@ entries:
     hanzi: 瘦
     pinyin: shòu
     meaning: {es: delgado, en: slim}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.piaoliang
     use: say
@@ -942,7 +942,7 @@ entries:
     pinyin: piàoliang
     meaning: {es: 'guapo, bonito', en: beautiful}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.shuai
     use: hear
@@ -952,7 +952,7 @@ entries:
     hanzi: 帅
     pinyin: shuài
     meaning: {es: guapo (sobre todo hombres), en: handsome}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.congming
     use: hear
@@ -963,7 +963,7 @@ entries:
     pinyin: cōngming
     meaning: {es: 'listo, inteligente', en: clever}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.ben
     use: hear
@@ -973,7 +973,7 @@ entries:
     hanzi: 笨
     pinyin: bèn
     meaning: {es: 'torpe, tonto', en: stupid}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: w.keai
     use: say
@@ -983,7 +983,7 @@ entries:
     hanzi: 可爱
     pinyin: kě'ài
     meaning: {es: 'mono, adorable', en: cute}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: like kawaii but mouth asleep}
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'El parecido con «kawaii» es solo de sonido, no histórico.'}
@@ -995,7 +995,7 @@ entries:
     hanzi: 幽默
     pinyin: yōumò
     meaning: {es: 'gracioso, con sentido del humor', en: humorous}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: Préstamo fonético del inglés «humour».}
   - id: w.niu
@@ -1007,7 +1007,7 @@ entries:
     pinyin: niú
     meaning: {es: 'vaca, buey', en: cow}
     standalone: 'yes'
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.ba
     use: say
@@ -1018,7 +1018,7 @@ entries:
     pinyin: bā
     meaning: {es: ocho, en: eight}
     standalone: 'yes'
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.rukou
     use: [read]
@@ -1029,7 +1029,7 @@ entries:
     hanzi: 入口
     pinyin: rùkǒu
     meaning: {es: entrada, en: entrance}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: e.haode
     use: say
@@ -1039,7 +1039,7 @@ entries:
     hanzi: 好的
     pinyin: hǎo de
     meaning: {es: 'vale, de acuerdo', en: OK}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'subjetivo, muy bien, gusto'}
   - id: e.ninhao
@@ -1050,7 +1050,7 @@ entries:
     hanzi: 您好
     pinyin: nín hǎo
     meaning: {es: hola (con respeto), en: hello (polite)}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: e.nimenhao
     use: say
@@ -1060,7 +1060,7 @@ entries:
     hanzi: 你们好
     pinyin: nǐmen hǎo
     meaning: {es: hola (a un grupo), en: hello (to a group)}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: e.dajiahao
     use: hear
@@ -1070,7 +1070,7 @@ entries:
     hanzi: 大家好
     pinyin: dàjiā hǎo
     meaning: {es: hola a todos, en: hello everyone}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: e.laoshihao
     use: say
@@ -1080,7 +1080,7 @@ entries:
     hanzi: 老师好
     pinyin: lǎoshī hǎo
     meaning: {es: 'hola, profe', en: 'hello, teacher'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: c.sheng.life
     use: read
@@ -1090,7 +1090,7 @@ entries:
     pinyin: shēng
     meaning: {es: vida; nacer, en: life; to be born}
     standalone: rare
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: some plant emerging}
   - id: c.ru.enter
@@ -1101,7 +1101,7 @@ entries:
     pinyin: rù
     meaning: {es: entrar, en: to enter}
     standalone: rare
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: c.nv.woman
     use: read
@@ -1110,7 +1110,7 @@ entries:
     hanzi: 女
     pinyin: nǚ
     meaning: {es: mujer (como componente), en: woman (component)}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: c.kou.mouth
     use: read
@@ -1119,7 +1119,7 @@ entries:
     hanzi: 口
     pinyin: kǒu
     meaning: {es: boca (como componente), en: mouth (component)}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: boca habla}
   - id: c.rou.flesh
@@ -1129,7 +1129,7 @@ entries:
     hanzi: 月
     pinyin: yuè
     meaning: {es: forma de 月 «luna»; en partes del cuerpo viene de 肉 «carne», en: flesh radical}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: moon + meat / “radical” → 月 = muscle}
   - id: c.mu.eye
@@ -1139,7 +1139,7 @@ entries:
     hanzi: 目
     pinyin: mù
     meaning: {es: ojo (como componente), en: eye (component)}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: g.hao-greetings
     theme: saludos
@@ -1154,7 +1154,7 @@ entries:
       - {ref: e.nimenhao, cue: un grupo que tienes delante; relajado}
       - {ref: e.dajiahao, cue: todo el mundo; más amplio y formal}
       - {ref: e.laoshihao, cue: 'a la profesora: el cargo + 好'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'nínmen hǎo → respectful w/ seniors / teachers; nǐmen hǎo → relaxed,
           friends (grupo delante de mí); dàjiā hǎo → formal, group (todo el mundo)'}
@@ -1168,7 +1168,7 @@ entries:
       - {ref: w.ta.he, cue: '亻 persona: él (y grupos mixtos: 他们)'}
       - {ref: w.ta.she, cue: '女 mujer: ella'}
       - {ref: w.ta.it, cue: '宀 arriba: cosas y animales'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments: []
   - id: g.sheng-niu-wu
     theme: escritura
@@ -1181,7 +1181,7 @@ entries:
       - {ref: c.sheng.life, cue: 'tres horizontales; la de abajo, la más larga'}
       - {ref: w.niu, cue: dos horizontales; el vertical sobresale por arriba}
       - {ref: c.wu.noon, cue: dos horizontales; el vertical no sobresale}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: g.ren-ru-ba
     theme: escritura
@@ -1193,7 +1193,7 @@ entries:
       - {ref: w.ren, cue: el trazo izquierdo es el largo; el derecho sale de su mitad}
       - {ref: c.ru.enter, cue: 'el trazo derecho es el largo; el izquierdo, corto, sale de su punta'}
       - {ref: w.ba, cue: los dos trazos no se tocan}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: p.bu-sandhi
     use: say
@@ -1203,7 +1203,7 @@ entries:
     explanation: '不 es bù, pero delante de otro cuarto tono pasa a segundo: 不是 se dice bú shì. En pinyin se suele escribir ya
       cambiado.'
     audio_text: 不是
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: '4 + 4 → 2 + 4. Ej.: bú shì ← bù shì'}
   - id: p.third-tone-half
@@ -1214,7 +1214,7 @@ entries:
     explanation: 'Delante de un 1.º, 2.º, 4.º o neutro, el tercer tono solo baja y no vuelve a subir: en 老师 la sílaba lǎo solo
       baja. El tercer tono completo aparece sobre todo en una sílaba aislada o con énfasis.'
     audio_text: 老师
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'in fact, ǎ accent is usually varying / subtle; it’s like we don’t
           do it besides when emphasis'}
@@ -1227,7 +1227,7 @@ entries:
     explanation: Sílaba corta y ligera, sin contorno propio; su altura depende de la sílaba anterior. En pinyin va sin marca
       (ma, ne, de) y en las respuestas se escribe 5.
     audio_text: 什么
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: p.aspiration
     use: say
@@ -1237,7 +1237,7 @@ entries:
     explanation: 'La diferencia no es sonora/sorda como en español: b, d y g van sin aire [p t k]; p, t y k llevan
       un soplo [pʰ tʰ kʰ]. 爸 bà [pa˥˩], sin aire; 朋 péng [pʰɤŋ˧˥], con aire.'
     audio_text: 爸爸，朋友
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: use paper to practice!}
   - id: p.jqx-zhchsh
@@ -1249,6 +1249,6 @@ entries:
       sh, r [ʈʂ ʈʂʰ ʂ ʐ]: punta de la lengua curvada hacia arriba (生 shēng [ʂɤŋ˥]). En la escritura no se confunden:
       j, q, x solo van delante de i o ü.'
     audio_text: 学生
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: 2026-09-25-hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: No se maltratan porque no comparten finales}
