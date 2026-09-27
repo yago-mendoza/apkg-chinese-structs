@@ -7,6 +7,7 @@ Uso:
     python anki.py check
     python anki.py notebook                   regenera 5-notebook/ desde 4-data/
     python anki.py scaffold [--write]      tarjetas estándar para lo que falta (sin --write, solo las lista)
+    python anki.py export                  6-output/dictionary.json: diccionario público versionado
     python anki.py close-batch <lote> [--dry-run]  archiva review leído y apuntes; cuaderno; commit y etiqueta
     python anki.py audio [--dry-run]
     python anki.py build [--allow-missing-audio]
@@ -1436,6 +1437,83 @@ def cmd_build(allow_missing_audio):
     return 0
 
 
+# ---------------------------------------------------------------- exportación pública
+#
+# Contrato con quien publique el diccionario (InfraPhysics): un JSON versionado con una lista explícita de
+# campos publicables. Nunca comentarios privados, IDs de ejercicio ni detalles internos. El audio se
+# referencia por ruta dentro del repositorio: con el repositorio fijado a una versión (etiqueta o commit),
+# jsDelivr lo sirve en https://cdn.jsdelivr.net/gh/yago-mendoza/apkg-chinese-structs@<versión>/<ruta>.
+
+EXPORT_PATH = OUTPUT / "dictionary.json"
+EXPORT_SCHEMA = 1
+
+
+def export_dictionary(entries, sentences, exercises):
+    manifest = load_manifest()
+
+    def audio(text):
+        item = manifest.get(text) if text else None
+        return f"4-data/audio/{item['file']}" if item else None
+
+    def public_notes(item):
+        return [{"kind": c.get("kind"), "text": c.get("text")} for c in item.get("comments", [])
+                if c.get("private", True) is False]
+
+    groups_of = groups_by_member(entries)
+    out_entries, out_groups = [], []
+    for e in entries:
+        if e.get("use") == "drop":
+            continue
+        if e.get("kind") == "group":
+            out_groups.append({"id": e["id"], "basis": e.get("basis"), "title": e.get("title"),
+                               "explanation": e.get("explanation"), "theme": e.get("theme"),
+                               "members": [{"ref": m["ref"], "cue": m.get("cue")} for m in e.get("members", [])]})
+            continue
+        row = {"id": e["id"], "kind": e.get("kind"), "theme": e.get("theme"), "use": use_label(e),
+               "notes": public_notes(e)}
+        if e.get("kind") == "pronunciation":
+            row |= {"title": e.get("title"), "explanation": " ".join((e.get("explanation") or "").split()),
+                    "example": e.get("audio_text"), "audio": audio(e.get("audio_text"))}
+        else:
+            row |= {"hanzi": e.get("hanzi"), "pinyin": e.get("pinyin"),
+                    "ipa": ipa(e.get("hanzi"), e.get("pinyin")) if e.get("kind") in ("word", "expression") else None,
+                    "meaning": e.get("meaning") or {}, "role": e.get("role"), "standalone": standalone(e),
+                    "audio": audio(e.get("hanzi")), "groups": [g["id"] for g in groups_of.get(e["id"], [])],
+                    "relations": e.get("relations", [])}
+        out_entries.append(row)
+    out_sentences = [{"id": x["id"], "theme": x.get("theme"), "use": use_label(x), "text": sentence_text(x),
+                      "pinyin": sentence_pinyin(x),
+                      "segments": [{"text": g["text"], "ref": g.get("ref"), "pinyin": g.get("pinyin")}
+                                   for g in x.get("segments", [])],
+                      "translation": x.get("translation") or {}, "audio": audio(sentence_text(x))}
+                     for x in sentences if x.get("use") != "drop"]
+    return {
+        "schemaVersion": EXPORT_SCHEMA,
+        "source": "https://github.com/yago-mendoza/apkg-chinese-structs",
+        "license": "CC BY 4.0",
+        "attribution": "Yago Mendoza, «apkg-chinese-structs», https://github.com/yago-mendoza/apkg-chinese-structs, CC BY 4.0",
+        "audio": {"provider": "Azure AI Speech", "voice": AZURE_VOICE, "synthetic": True},
+        "counts": {"entries": len(out_entries), "sentences": len(out_sentences), "cards": len(exercises)},
+        "themes": [{"id": t["id"], "title": t["title"], "order": n} for n, t in enumerate(load_themes(), 1)],
+        "entries": out_entries, "groups": out_groups, "sentences": out_sentences,
+    }
+
+
+def cmd_export():
+    entries, sentences, exercises = load()
+    errors, _ = validate(entries, sentences, exercises)
+    if errors:
+        print(f"`check` tiene {len(errors)} error(es): no se exporta.")
+        return 1
+    OUTPUT.mkdir(exist_ok=True)
+    data = export_dictionary(entries, sentences, exercises)
+    EXPORT_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    c = data["counts"]
+    print(f"Exportado {EXPORT_PATH.relative_to(ROOT).as_posix()}: {c['entries']} entradas, {c['sentences']} frases, "
+          f"{len(data['groups'])} grupos (esquema {EXPORT_SCHEMA}).")
+    return 0
+
+
 # ---------------------------------------------------------------- cierre de lote
 
 BATCH_RE = re.compile(r"^(\d{3})-\d{4}-\d{2}-\d{2}-[a-z0-9]+(?:-[a-z0-9]+)*$")
@@ -1508,6 +1586,7 @@ def cmd_close_batch(batch, dry_run):
         else:
             shutil.move(str(src), str(dst))
     cmd_notebook()
+    cmd_export()
     _git("add", "-A")
     _git("commit", "-q", "-m", f"lote {batch}\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>")
     tag = f"lote-{batch[:3]}"
@@ -1744,6 +1823,7 @@ def main():
     cb = sub.add_parser("close-batch")
     cb.add_argument("batch", metavar="LOTE", help="NNN-AAAA-MM-DD-tema")
     cb.add_argument("--dry-run", action="store_true", help="mostrar lo que haría sin mover nada")
+    sub.add_parser("export")
     sc = sub.add_parser("scaffold")
     sc.add_argument("--write", action="store_true", help="escribir las tarjetas (sin esto, solo se listan)")
     args = p.parse_args()
@@ -1763,6 +1843,8 @@ def main():
         return cmd_notebook()
     if args.cmd == "scaffold":
         return cmd_scaffold(args.write)
+    if args.cmd == "export":
+        return cmd_export()
     if args.cmd == "close-batch":
         return cmd_close_batch(args.batch, args.dry_run)
     return cmd_build(args.allow_missing_audio)

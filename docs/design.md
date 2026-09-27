@@ -202,7 +202,7 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 - Commits cuando YAGO lo pida; push a GitHub solo cuando lo pida.
 - Fuentes externas: HSK 3.0 de `drkameleon/complete-hsk-vocabulary` (MIT; se puede versionar con su aviso de licencia; solo nivel y pinyin, no sus glosas CC-CEDICT). Dong Chinese y SUBTLEX-CH: condiciones sin aclarar, solo en local.
 - Licencia (elegida por YAGO, 2026-09-27): MIT para el código, CC BY 4.0 para el contenido; cita obligatoria, uso comercial permitido. Lo que entre de terceros tiene que ser compatible con CC BY.
-- Futuro (sin fecha): exportación `dictionary.json` para InfraPhysics desde `4-data/`, por lista explícita de campos publicables.
+- **Exportación pública** (`anki.py export` → `6-output/dictionary.json`, versionado; `close-batch` la regenera antes del commit, así que cada etiqueta `lote-NNN` lleva la suya). Es el contrato con InfraPhysics: lista explícita de campos publicables (temas, entradas con pinyin, AFI, significado, `use`, grupos y comentarios públicos, frases y grupos), `schemaVersion` y atribución CC BY; nunca comentarios privados ni ejercicios. El audio va por ruta dentro del repositorio y se sirve con jsDelivr fijado a una versión: `https://cdn.jsdelivr.net/gh/yago-mendoza/apkg-chinese-structs@<versión>/<ruta>`. InfraPhysics la consume en `/corner/chinese` con un script que descarga una versión fijada; actualizar la web es cambiar esa versión. Un cambio incompatible del formato sube `EXPORT_SCHEMA`.
 
 ## Pruebas
 

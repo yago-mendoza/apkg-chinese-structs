@@ -100,6 +100,20 @@ class Repository(unittest.TestCase):
         for t in anki.load_themes():
             self.assertTrue({"id", "title"} <= set(t) <= {"id", "title", "keep"}, t)
 
+    def test_export_is_public_only(self):
+        entries, sentences, exercises = anki.load()
+        data = anki.export_dictionary(entries, sentences, exercises)
+        self.assertEqual(data["schemaVersion"], anki.EXPORT_SCHEMA)
+        text = json.dumps(data, ensure_ascii=False)
+        self.assertNotIn('"private"', text)
+        self.assertNotIn("x.", " ".join(e["id"] for e in data["entries"]))     # nada de ejercicios
+        private = [c["text"] for e in entries for c in e.get("comments", []) if c.get("private", True) is not False]
+        for t in private:
+            self.assertNotIn(t, text)
+        for e in data["entries"]:
+            if e.get("audio"):
+                self.assertTrue((anki.ROOT / e["audio"]).exists(), e["audio"])
+
     def test_close_batch_rejects_bad_names(self):
         _, errors = anki.close_batch_plan("2-foo")
         self.assertTrue(errors)
