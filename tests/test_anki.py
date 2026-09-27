@@ -96,6 +96,21 @@ class Coverage(unittest.TestCase):
         self.assertEqual([e for e in errors if "w.test" in e], [])
 
 
+class Comments(unittest.TestCase):
+    def test_informal_notes_are_flagged(self):
+        for text in ["use paper to practice!", "formal / general ♡", "zǎo ← zǎoshang hǎo.", "Mi profesión"]:
+            self.assertIsNotNone(anki.comment_style({"kind": "note", "text": text}), text)
+        for text in ["Para practicar, pon una hoja de papel delante de la boca.", "¿Y tú?", "Mi profesión."]:
+            self.assertIsNone(anki.comment_style({"kind": "note", "text": text}), text)
+        self.assertIsNone(anki.comment_style({"kind": "sound", "text": "xiEnshAng"}))
+
+    def test_repository_notes_are_clean(self):
+        entries, sentences, exercises = anki.load()
+        dirty = [(it["id"], c["text"]) for it in entries + sentences + exercises for c in it.get("comments", [])
+                 if anki.comment_style(c)]
+        self.assertEqual(dirty, [])
+
+
 class Repository(unittest.TestCase):
     def test_current_data_is_valid(self):
         errors, _ = anki.validate(*anki.load(), require_audio=True)

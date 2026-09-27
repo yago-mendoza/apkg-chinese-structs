@@ -885,6 +885,25 @@ def required_audio(entries, sentences, exercises):
     return texts
 
 
+NOTE_MARKS = re.compile(r"→|←|>>>|<<<|\bw/|♡|\+ ?intenso")
+
+
+def comment_style(c):
+    """Por qué el texto visible de un comentario no está bien redactado (docs/design.md, «Comentarios»), o None.
+    Las pistas de sonido (`sound`) se escriben tal cual y no se comprueban."""
+    text = (c.get("text") or "").strip()
+    if c.get("kind") == "sound" or not text:
+        return None
+    first = next((ch for ch in text if ch.isalpha()), "")
+    if first and first.islower():
+        return "empieza en minúscula"
+    if text[-1] not in ".!?»)":
+        return "no termina en punto"
+    if NOTE_MARKS.search(text):
+        return "lleva símbolos de apunte (flechas, w/, ♡, + intenso)"
+    return None
+
+
 def validate(entries, sentences, exercises, require_audio=True):
     errors, warnings = [], []
     ids = [x["id"] for x in entries + sentences + exercises if "id" in x]
@@ -1038,6 +1057,13 @@ def validate(entries, sentences, exercises, require_audio=True):
                             f"{theme_of[first]}; moverlo para que vaya al subdeck correcto")
     for f in stray_data_files():
         errors.append(f"{f}: el nombre no es ningún tema de 3-data/themes.yaml; su contenido no se carga")
+    # Lo que se muestra de un comentario va redactado; el apunte literal vive en `original`.
+    for it in entries + sentences + exercises:
+        for c in it.get("comments", []):
+            why = comment_style(c)
+            if why:
+                warnings.append(f"{it['id']}: comentario {why}: «{c['text'][:50]}». Redactarlo en `text` y guardar "
+                                "lo escrito en `original` (Comentarios)")
     # Especificación de cobertura: use, rol, tema y tarjetas exigidas.
     theme_ids = {t["id"] for t in load_themes()}
     for it in entries + sentences:
