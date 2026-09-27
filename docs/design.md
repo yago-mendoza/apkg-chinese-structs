@@ -36,10 +36,10 @@ Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de o
 4. Asigna `use` a cada entrada nueva (ver «Cobertura»), con motivo cuando se aparte de las señales de frecuencia.
 5. Guarda los comentarios de YAGO literalmente y en su ámbito (ver «Comentarios»). Lo que parezca privado no va a `4-data/`: se pregunta.
 6. Pregunta lo ambiguo (sentido, lectura, si ya lo sabe) en vez de adivinar. Las transcripciones de fotos hechas por LLM traen errores y `[¿?]`: se marcan con ⚠️ y van a «Por verificar» del review, nunca se dan por buenas.
-7. `plan` → escribe exactamente las tarjetas que faltan → `check` sin errores ni avisos pendientes.
+7. `plan` → `scaffold --write` escribe las tarjetas estándar de lo que falta (siempre con el mismo formato) → el agente revisa sus consignas y redacta a mano lo que `scaffold` marca «a mano» → `check` sin errores ni avisos pendientes.
 8. Archiva el `summary-*.md` anterior en `3-digests/`. Escribe en `1-inbox/` el `summary-<lote>.md` y el `review-<lote>.md` nuevos (`plan --doc <lote>` crea el review con «Falta»; el agente completa el resto) y regenera `5-guide/`.
-9. Mueve los apuntes y el `review-*.md` leído (con lo que escribió YAGO) a `2-raw/<lote>/`. Cada apunte se archiva como `AAAA-MM-DD_<nombre original>`, con la fecha en que se apuntó (la que YAGO escribe dentro); si mezcla días, `mixto_<nombre original>` y la fecha de cada parte dentro; si no tiene fecha, `sin-fecha_<nombre original>` y se usa la de procesado en `source.date`. El review conserva su nombre. Sin subcarpetas por día: el prefijo ya ordena. Dos fechas distintas: la del lote (procesado) y la de cada apunte (cuándo se aprendió). `1-inbox/` queda con su `README.md`, el `summary` y el `review` nuevos.
-10. `audio`, `push`, commit con la etiqueta `lote-NNN` (en GitHub, el repositorio tal como quedó tras ese lote) y resumen a YAGO: añadido, cambiado, reorganizado, tarjetas antiguas tocadas y audio nuevo.
+9. Pone a cada apunte del inbox su prefijo de fecha y ejecuta `close-batch <lote>` (primero con `--dry-run`): archiva el summary anterior en `3-digests/`, mueve los apuntes y el review leído a `2-raw/<lote>/`, regenera la guía, hace commit y pone la etiqueta `lote-NNN`; se niega si falta algo o `check` tiene errores. Cada apunte se archiva como `AAAA-MM-DD_<nombre original>`, con la fecha en que se apuntó (la que YAGO escribe dentro); si mezcla días, `mixto_<nombre original>` y la fecha de cada parte dentro; si no tiene fecha, `sin-fecha_<nombre original>` y se usa la de procesado en `source.date`. El review conserva su nombre. Sin subcarpetas por día: el prefijo ya ordena. Dos fechas distintas: la del lote (procesado) y la de cada apunte (cuándo se aprendió). `1-inbox/` queda con su `README.md`, el `summary` y el `review` nuevos.
+10. `audio` y `push` antes del cierre; después, resumen a YAGO: añadido, cambiado, reorganizado, tarjetas antiguas tocadas y audio nuevo. Subir a GitHub (commit y etiqueta) cuando YAGO lo pida.
 
 **Summary y review** (en `1-inbox/`, versionados; solo uno de cada a la vez). Ambos empiezan con un comentario que explica qué son (`SUMMARY_HEADER` y `REVIEW_HEADER` en `anki.py`), organizados **por temas, sin números de hoja ni de página**, una línea por elemento: `汉字 pinyin · significado · pista (relación, mnemotecnia, pronunciación) · ejemplo`.
 
@@ -203,6 +203,10 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 - Fuentes externas: HSK 3.0 de `drkameleon/complete-hsk-vocabulary` (MIT; se puede versionar con su aviso de licencia; solo nivel y pinyin, no sus glosas CC-CEDICT). Dong Chinese y SUBTLEX-CH: condiciones sin aclarar, solo en local.
 - Licencia (elegida por YAGO, 2026-09-27): MIT para el código, CC BY 4.0 para el contenido; cita obligatoria, uso comercial permitido. Lo que entre de terceros tiene que ser compatible con CC BY.
 - Futuro (sin fecha): exportación `dictionary.json` para InfraPhysics desde `4-data/`, por lista explícita de campos publicables.
+
+## Pruebas
+
+`tests/test_anki.py` (unittest, sin dependencias nuevas): pinyin, tonos, sílabas y erhua, AFI, trampas fonéticas, velocidad del audio, tarjetas exigidas por `use`, ejemplos que respetan el sentido, `scaffold` completo, validez de los datos del repositorio, temas bien formados, nombres de lote y la comparación de respuestas en JavaScript (con node, si está). Tras cambiar `anki.py`: `.\.venv\Scripts\python -m unittest discover -s tests`.
 
 ## Estado y fases
 

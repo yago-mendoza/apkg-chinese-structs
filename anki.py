@@ -6,6 +6,8 @@ Uso:
     python anki.py gaps                    reparto del mazo y pendientes
     python anki.py check
     python anki.py guide                   regenera 5-guide/ desde 4-data/
+    python anki.py scaffold [--write]      tarjetas estándar para lo que falta (sin --write, solo las lista)
+    python anki.py close-batch <lote> [--dry-run]  archiva summary, review y apuntes; guía; commit y etiqueta
     python anki.py audio [--dry-run]
     python anki.py build [--allow-missing-audio]
     python anki.py push [--allow-missing-audio] [--no-sync] [--prune] [--reset]
@@ -581,6 +583,160 @@ def cmd_gaps():
         print(f"Summary: {g.name} (lectura; se archiva en 3-digests/ en el próximo lote)")
 
 
+# ---------------------------------------------------------------- scaffold
+#
+# Tarjetas estándar para lo que `plan` dice que falta, siempre con el mismo formato. El agente revisa y
+# ajusta después lo que pide criterio (consignas ambiguas, explicaciones). Lo que no es mecánico
+# (pronunciación, componentes, frases que aún no existen) se lista como «a mano».
+
+TONE_PROMPT = "Escribe el tono de cada sílaba (1–4, 5 = neutro)."
+
+
+def to_numeric(hanzi, reading):
+    """你好 + nǐ hǎo -> ni3 hao3; 哪儿 + nǎr -> nar3. None si no alinea."""
+    syl = syllable_tones(hanzi, reading)
+    if not syl:
+        return None
+    out = []
+    for bare, tone in syl:
+        if tone == "erhua":
+            out[-1] = out[-1][:-1] + "r" + out[-1][-1]
+        else:
+            out.append(f"{bare}{tone}")
+    return " ".join(out)
+
+
+def scaffold_exercises(entries, sentences, exercises, today):
+    """([(tema, ejercicio)], [(id, exigencia, motivo)]): tarjetas estándar para lo que falta, y lo que pide criterio."""
+    sby = {x["id"]: x for x in sentences}
+    ids = {x["id"] for x in exercises}
+    containing = {}
+    for sent in sorted(sentences, key=lambda t: t.get("use") != "say"):
+        for seg in sent.get("segments", []):
+            if seg.get("ref"):
+                containing.setdefault(seg["ref"], []).append(sent["id"])
+
+    def new_id(base):
+        cand, n = base, 2
+        while cand in ids:
+            cand, n = f"{base}-{n}", n + 1
+        ids.add(cand)
+        return cand
+
+    def make(base, theme, **kw):
+        ex = {"id": new_id(base), "added": today, "lang": "es"}
+        ex.update(kw)
+        ex["comments"] = []
+        return theme, ex
+
+    def answer(it, typed=None):
+        a = {"hanzi": it["hanzi"], "pinyin": it["pinyin"], "meaning": (it.get("meaning") or {}).get("es", "")}
+        return ({"typed": typed} | a) if typed else a
+
+    groups_of = groups_by_member(entries)
+    made, manual = [], []
+    for it, req, have in coverage(entries, sentences, exercises):
+        iid, kind, theme = it["id"], it.get("kind"), it.get("theme")
+        short = iid.split(".", 1)[1]
+        for need in sorted(req - have):
+            if kind is None:                                            # frase
+                ctx = list(dict.fromkeys(g["ref"] for g in it["segments"] if g.get("ref")))
+                es = it["translation"]["es"]
+                if need == "listen":
+                    made.append(make(f"x.listen.{short}", theme, type="listen", sentence=iid, targets=[iid], context=ctx,
+                                     skills=["listening", "comprehension"],
+                                     prompt={"text": "Escucha. ¿Qué significa?", "audio": True}, answer={"meaning": es}))
+                elif need == "produce":
+                    made.append(make(f"x.produce.{short}", theme, type="produce", sentence=iid, targets=[iid],
+                                     context=ctx, skills=["production", "speaking"],
+                                     prompt={"text": f"Dilo en chino, en voz alta: «{es}»"}, answer={"meaning": es}))
+                continue
+            if kind in ("pronunciation", "character", "component") or need == "recognize":
+                manual.append((iid, need, "tarjeta de pronunciación o de componentes: se redacta a mano"))
+                continue
+            numeric = to_numeric(it.get("hanzi"), it.get("pinyin"))
+            if need in ("produce", "produce-sentence", "tones") and not numeric:
+                manual.append((iid, need, "el pinyin no se alinea con los hanzi: revisar la entrada"))
+                continue
+            if need == "read":
+                made.append(make(f"x.read.{short}", theme, type="read", targets=[iid], skills=["reading", "pinyin"],
+                                 prompt={"text": "Lee: pinyin y significado.", "hanzi": it["hanzi"]}, answer=answer(it)))
+            elif need == "listen":
+                made.append(make(f"x.listen.{short}", theme, type="listen", targets=[iid], skills=["listening", "tones"],
+                                 prompt={"text": "Escucha. ¿Qué palabra es?", "audio": True}, answer=answer(it)))
+            elif need == "produce":
+                made.append(make(f"x.produce.{short}", theme, type="produce", targets=[iid], skills=["production", "pinyin"],
+                                 prompt={"text": f"¿Cómo se dice «{(it.get('meaning') or {}).get('es', '')}»? Escribe el pinyin."},
+                                 answer=answer(it, numeric)))
+            elif need == "produce-sentence":
+                if not containing.get(iid):
+                    manual.append((iid, need, "no hay ninguna frase que la contenga: pedirla en el review"))
+                    continue
+                sid = containing[iid][0]
+                sent = sby[sid]
+                made.append(make(f"x.cloze.{short}", theme, type="cloze", sentence=sid, gap=iid, targets=[iid],
+                                 context=[r for r in dict.fromkeys(g.get("ref") for g in sent["segments"]) if r and r != iid],
+                                 skills=["production", "pinyin"],
+                                 prompt={"text": f"Completa en pinyin: «{sent['translation']['es']}»"},
+                                 answer=answer(it, numeric)))
+            elif need == "tones":
+                syl = syllable_tones(it["hanzi"], it["pinyin"])
+                traps = tone_traps(it["hanzi"], it["pinyin"])
+                made.append(make(f"x.tones.{short}", theme, type="tones", targets=[iid], skills=["tones", "pinyin"],
+                                 refs=(["p.neutral-tone"] if "neutro" in traps else [])
+                                 + (["p.third-tone-sandhi"] if "3+3" in traps else []),
+                                 prompt={"text": TONE_PROMPT, "hanzi": it["hanzi"],
+                                         "pinyin": " ".join(b for b, t in syl if t != "erhua")},
+                                 answer=answer(it, "".join(str(t) for _, t in syl if t != "erhua"))))
+            elif need == "contrast":
+                grp = next((g for g in groups_of.get(iid, []) if g.get("basis") in ("visual", "homophone")), None)
+                meaning = (it.get("meaning") or {}).get("es", "")
+                made.append(make(f"x.contrast.{short}", theme, type="contrast", group=grp["id"], targets=[iid],
+                                 skills=["reading", "discrimination"],
+                                 prompt={"text": f"¿Cuál es {it['pinyin']}, «{meaning}»?"},
+                                 answer={"hanzi": it["hanzi"], "pinyin": it["pinyin"], "meaning": meaning}))
+    return made, manual
+
+
+class _Dumper(yaml.SafeDumper):
+    def ignore_aliases(self, data):
+        return True
+
+    def increase_indent(self, flow=False, indentless=False):
+        return super().increase_indent(flow, False)
+
+
+def append_exercises(theme, items):
+    """Añade ejercicios al final de 4-data/exercises/<tema>.yaml (lo crea si no existe)."""
+    path = DATA / "exercises" / f"{theme}.yaml"
+    body = yaml.dump(items, Dumper=_Dumper, allow_unicode=True, sort_keys=False, default_flow_style=None, width=120)
+    block = "\n".join("  " + line if line else line for line in body.splitlines()) + "\n"
+    if path.exists():
+        path.write_text(path.read_text(encoding="utf-8").rstrip("\n") + "\n" + block, encoding="utf-8")
+    else:
+        title = next((t["title"] for t in load_themes() if t["id"] == theme), theme)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(f"# Ejercicios · {title}. Esquema: 4-data/README.md\n\nexercises:\n{block}", encoding="utf-8")
+
+
+def cmd_scaffold(write):
+    entries, sentences, exercises = load()
+    made, manual = scaffold_exercises(entries, sentences, exercises, datetime.date.today())
+    for theme, ex in made:
+        print(f"{'+' if write else '·'} {theme:12} {ex['id']:32} {ex['type']:8} {ex['targets'][0]}")
+    for iid, need, why in manual:
+        print(f"a mano  {iid:32} {CARD_LABELS.get(need, need)}: {why}")
+    if write:
+        by_theme = {}
+        for theme, ex in made:
+            by_theme.setdefault(theme, []).append(ex)
+        for theme, items in by_theme.items():
+            append_exercises(theme, items)
+    print(f"\n{len(made)} tarjeta(s) {'escritas' if write else 'por escribir (repetir con --write)'}; "
+          f"{len(manual)} a mano. Después: revisar consignas, `check`, `audio`.")
+    return 0
+
+
 def label(item):
     return item.get("hanzi") or item.get("title") or ("".join(seg["text"] for seg in item.get("segments", [])))
 
@@ -605,8 +761,8 @@ def write_review_doc(batch, osm):
     """Deja en 1-inbox/ el review del lote: lo que falta (calculado) y los apartados que completa el agente.
     Cada punto lleva debajo una línea «>» para que YAGO escriba."""
     INBOX.mkdir(exist_ok=True)
-    for old in INBOX.glob("review-*.md"):
-        print(f"AVISO  ya había {old.name}: se archiva en 2-raw/ con el lote que lo leyó antes de generar otro.")
+    if (INBOX / f"review-{batch}.md").exists():      # el del lote anterior se archiva al cerrar este
+        print(f"AVISO  ya existe review-{batch}.md: no se sobrescribe.")
         return
     lines = [REVIEW_HEADER, "", f"# Review del lote {batch}", "",
              "## Falta", "", "Palabras que quieres decir y aún no aparecen en ninguna frase. Trae una frase de clase "
@@ -862,7 +1018,7 @@ def validate(entries, sentences, exercises, require_audio=True):
     theme_of = {it["id"]: it["theme"] for it in entries + sentences}
     for ex in exercises:
         first = (ex.get("targets") or [None])[0]
-        if first in theme_of and theme_of[first] != ex["theme"]:
+        if first in theme_of and ex.get("theme") and theme_of[first] != ex["theme"]:
             warnings.append(f"{ex['id']}: está en exercises/{ex['theme']}.yaml pero su objetivo {first} es del tema "
                             f"{theme_of[first]}; moverlo para que vaya al subdeck correcto")
     for f in stray_data_files():
@@ -1279,6 +1435,83 @@ def cmd_build(allow_missing_audio):
     return 0
 
 
+# ---------------------------------------------------------------- cierre de lote
+
+BATCH_RE = re.compile(r"^(\d{3})-\d{4}-\d{2}-\d{2}-[a-z0-9]+(?:-[a-z0-9]+)*$")
+NOTE_PREFIX_RE = re.compile(r"^(\d{4}-\d{2}-\d{2}|mixto|sin-fecha)_")
+
+
+def _git(*args, check=True):
+    import subprocess
+    r = subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
+    if check and r.returncode != 0:
+        raise RuntimeError(f"git {' '.join(args)}: {r.stderr.strip()}")
+    return r.stdout
+
+
+def close_batch_plan(batch):
+    """(acciones, errores) para cerrar un lote. Acción: (descripción, origen, destino)."""
+    errors, actions = [], []
+    m = BATCH_RE.match(batch)
+    if not m:
+        return [], [f"nombre de lote «{batch}»: debe ser NNN-AAAA-MM-DD-tema (tema en minúsculas y guiones)"]
+    tags = _git("tag", "--list", "lote-*", check=False).split()
+    expected = max((int(t[5:]) for t in tags if t[5:].isdigit()), default=0) + 1
+    if f"lote-{m.group(1)}" in tags:
+        errors.append(f"la etiqueta lote-{m.group(1)} ya existe: ese lote ya está cerrado")
+    elif int(m.group(1)) != expected:
+        errors.append(f"el siguiente lote debería ser el {expected:03d}, no el {m.group(1)}")
+    err, _ = validate(*load())
+    if err:
+        errors.append(f"`check` tiene {len(err)} error(es): resolverlos antes de cerrar")
+    for name in (f"summary-{batch}.md", f"review-{batch}.md"):
+        if not (INBOX / name).exists():
+            errors.append(f"falta 1-inbox/{name} (lo escribe el agente; el review se empieza con `plan --doc {batch}`)")
+    raw = ROOT / "2-raw" / batch
+    for f in sorted(INBOX.iterdir()) if INBOX.exists() else []:
+        if not f.is_file() or f.name == "README.md" or f.name in (f"summary-{batch}.md", f"review-{batch}.md"):
+            continue
+        if f.name.startswith("summary-"):
+            actions.append(("summary anterior → 3-digests/", f, DIGESTS / f.name))
+        elif f.name.startswith("review-"):
+            actions.append(("review leído → 2-raw/", f, raw / f.name))
+        elif NOTE_PREFIX_RE.match(f.name):
+            actions.append(("apunte → 2-raw/", f, raw / f.name))
+        else:
+            errors.append(f"1-inbox/{f.name}: ponle delante su fecha (AAAA-MM-DD_), mixto_ o sin-fecha_ antes de cerrar")
+    return actions, errors
+
+
+def cmd_close_batch(batch, dry_run):
+    """Cierra un lote: archiva summary, review y apuntes, regenera la guía, commit y etiqueta lote-NNN."""
+    import shutil
+    actions, errors = close_batch_plan(batch)
+    for desc, src, dst in actions:
+        print(f"{'·' if dry_run else '→'} {desc:32} {src.relative_to(ROOT).as_posix()} → {dst.relative_to(ROOT).as_posix()}")
+    for e in errors:
+        print(f"ERROR  {e}")
+    if errors:
+        print("Lote sin cerrar: nada se ha movido.")
+        return 1
+    if dry_run:
+        print("Simulación: repetir sin --dry-run para cerrar el lote.")
+        return 0
+    for _, src, dst in actions:
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        tracked = bool(_git("ls-files", src.relative_to(ROOT).as_posix(), check=False).strip())
+        if tracked:
+            _git("mv", src.relative_to(ROOT).as_posix(), dst.relative_to(ROOT).as_posix())
+        else:
+            shutil.move(str(src), str(dst))
+    cmd_guide()
+    _git("add", "-A")
+    _git("commit", "-q", "-m", f"lote {batch}\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>")
+    tag = f"lote-{batch[:3]}"
+    _git("tag", "-a", tag, "-m", f"Lote {batch}: estado tras procesarlo")
+    print(f"Lote cerrado: commit y etiqueta {tag}. Subir a GitHub: git push && git push origin {tag}")
+    return 0
+
+
 # ---------------------------------------------------------------- Anki desktop
 
 def anki_request(action, timeout=120, **params):
@@ -1504,6 +1737,11 @@ def main():
     pl = sub.add_parser("plan")
     pl.add_argument("--doc", metavar="LOTE", help="escribe 1-inbox/review-<LOTE>.md")
     sub.add_parser("guide")
+    cb = sub.add_parser("close-batch")
+    cb.add_argument("batch", metavar="LOTE", help="NNN-AAAA-MM-DD-tema")
+    cb.add_argument("--dry-run", action="store_true", help="mostrar lo que haría sin mover nada")
+    sc = sub.add_parser("scaffold")
+    sc.add_argument("--write", action="store_true", help="escribir las tarjetas (sin esto, solo se listan)")
     args = p.parse_args()
     if args.cmd == "lookup":
         return cmd_lookup(args.query) or 0
@@ -1519,6 +1757,10 @@ def main():
         return cmd_plan(args.doc)
     if args.cmd == "guide":
         return cmd_guide()
+    if args.cmd == "scaffold":
+        return cmd_scaffold(args.write)
+    if args.cmd == "close-batch":
+        return cmd_close_batch(args.batch, args.dry_run)
     return cmd_build(args.allow_missing_audio)
 
 

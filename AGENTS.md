@@ -13,6 +13,7 @@ Leer `docs/design.md` antes de implementar o añadir contenido: diseño canónic
 - Preservar IDs y comentarios personales literalmente. Guardar cada comentario en el ámbito que describe; separar mnemotecnia, profesora y explicación verificada.
 - Trabajar incrementalmente. No implementar publicaciones, rankings completos o servicios anticipados.
 - Nombres: carpetas y archivos en inglés; documentación de carpeta siempre `README.md`, nunca traducida.
+- Tarjetas estándar con `anki.py scaffold`, no a mano; cierre de lote con `anki.py close-batch`. Tras cambiar `anki.py`, ejecutar las pruebas (`python -m unittest discover -s tests`).
 - UTF-8 explícito en archivos y ejecución de Python sobre Windows.
 - El repositorio es público (comprobado 2026-09-25): no guardar comentarios privados ni credenciales. Revisar cambios antes de subirlos; no hacer push sin que YAGO lo pida.
 - Licencia elegida por YAGO (2026-09-27): MIT para el código (`LICENSE`), CC BY 4.0 para el contenido (`LICENSE-CONTENT`), con cita obligatoria. Mantener procedencia y condiciones de recursos externos; no incorporar material de terceros incompatible con CC BY.
