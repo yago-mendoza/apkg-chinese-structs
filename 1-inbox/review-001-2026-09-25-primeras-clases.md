@@ -2,6 +2,39 @@
 
 # Review del lote 001-2026-09-25-primeras-clases
 
+## Cómo vas
+
+**Nivel.** HSK 1: 60 de sus 506 palabras (12 %); del HSK 2 tienes 6 y del HSK 3, 5. Estás al principio del HSK 1, que es donde tocaba.
+
+**Las clases.** Los materiales de este tramo (tres sesiones, del 17 al 24 de septiembre) son de la lección 1-1 del curso: saludos, tonos y pinyin. Para empezar es lo correcto: la pronunciación se fija ahora o cuesta mucho más después, y se nota en tus apuntes (las reglas de tono y las trampas b/p, j/q/x frente a zh/ch/sh vienen de ahí). Pero tres sesiones en la misma lección es un ritmo lento, y tus apuntes ya van bastante más allá (familia, describir personas, compras, momentos del día). Si los saludos ya te salen, pídele a la profesora que avance hacia las piezas que sostienen frases: 有, 这 y 那, 个, los números, y las preguntas con 谁, 几 y 哪.
+
+**Tu método.** Es el primer lote, así que aún no hay evolución que mirar. Lo que se ve:
+- Bien: apuntas los matices de la profesora con tus palabras («No exageres ↓ tono: CONTRASTE»), y eso vale más que cualquier lista; y cuidas la pronunciación desde el primer día.
+- A mejorar: ningún apunte llevaba fecha (todo entró como sin fecha); pon la fecha arriba de cada hoja.
+- A mejorar: muchas palabras sueltas y pocas frases: 30 frases para unas 90 palabras, la mayoría con 是 o 很, y 12 palabras que quieres saber decir no salen en ninguna. Apunta frases enteras de clase, aunque sean cortas: son lo que más rinde para tonos y fluidez.
+- Ojo con el orden: tienes bastante vocabulario para describir personas que no es del HSK 1 (矮, 瘦, 帅, 聪明, 笨, 幽默) y te faltan piezas básicas (有, 这, 个, los números). Sirve para hablar, así que se queda, pero lo básico rinde antes.
+
+**Avisos.** El mazo va a dividirse por niveles del HSK (decidido, pendiente de montar). Cuando esté, lo que es de niveles superiores (漂亮 y 可爱, del HSK 2; 工程师, 咖啡 y 足球, del HSK 3) saldrá de tu mazo de estudio actual y esperará en su nivel.
+
+> 
+
+## Huecos y propuestas
+
+- Piezas básicas del HSK 1 que faltan: 有 (tener, haber), 这 y 那 (esto, eso), 个 (el clasificador más común), 了, 没 y 没有, 要, 会.
+  > 
+
+- Números: solo tienes 八. Del 一 al 十, más 几 y 多少, abren fechas, horas, precios y edades.
+  > 
+
+- Preguntas: tienes 什么 y 哪儿; faltan 谁, 几, 哪, 怎么 y 多少.
+  > 
+
+- Verbos del día a día: tienes 喝, 买 y 看, pero no 吃, 做, 说 ni 来.
+  > 
+
+- Temático: compras sin dinero (钱, 块, 多少钱); momentos del día sin días de la semana ni horas.
+  > 
+
 ## Falta
 
 Palabras que quieres decir y aún no aparecen en ninguna frase. Trae una frase de clase o de tu día a día que las use, o escríbela aquí.

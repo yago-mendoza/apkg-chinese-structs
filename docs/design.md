@@ -46,8 +46,15 @@ Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de o
 
 **Log y review**: dos documentos con dos autores. Ambos empiezan con un comentario que explica qué son (`LOG_HEADER` y `REVIEW_HEADER` en `anki.py`) y van **por temas, sin números de hoja ni de página**, una línea por elemento: `汉字 pinyin · significado · pista (relación, mnemotecnia, pronunciación) · ejemplo`.
 
-- **Log** (`2-digests/`, del agente, lectura): el acta completa del lote: lo que entró (✅, 🃏 si tiene tarjeta), lo que no (🟡 solo reconocer, ❌ literario, arcaico o en desuso) con su motivo, las correcciones ⚠️ de glosas y las reorganizaciones.
-- **Review** (`1-inbox/`, para YAGO, editable): solo lo que admite su opinión: «Falta» (palabras `say` sin frase, calculado), «✅ Entró, con matices para ahondar» (solo los que traen relación, mnemotecnia, registro o corrección), «Pendiente: ✅ sin tarjeta todavía», «No entró, y por qué», «Por verificar» y «Tus notas». Debajo de cada punto, una línea `  > `. Con las respuestas va a `1-inbox/history/` del lote siguiente.
+- **Log** (`2-digests/`, del agente, lectura): el acta completa del lote: lo que entró (✅, 🃏 si tiene tarjeta), lo que no (🟡 solo reconocer, ❌ literario, arcaico o en desuso) con su motivo, las correcciones ⚠️ de glosas y las reorganizaciones. Termina con «Seguimiento» (ver abajo).
+- **Review** (`1-inbox/`, para YAGO, editable): empieza por «Cómo vas» (el «Seguimiento» del log) y «Huecos y propuestas» (lo que el agente propone aprender, según `docs/goal.md`); después, solo lo que admite su opinión: «Falta» (palabras `say` sin frase, calculado), «✅ Entró, con matices para ahondar» (solo los que traen relación, mnemotecnia, registro o corrección), «Pendiente: ✅ sin tarjeta todavía», «No entró, y por qué», «Por verificar» y «Tus notas». Debajo de cada punto, una línea `  > `. Con las respuestas va a `1-inbox/history/` del lote siguiente.
+
+**Seguimiento**: en cada lote el agente escribe una reflexión que va al final del log y, igual, al principio del review como «Cómo vas», con su línea «>». Es acumulativa: antes de escribirla relee los seguimientos de los logs anteriores y las respuestas de YAGO en los reviews archivados (`1-inbox/history/`), para decir qué ha cambiado desde la última vez y no repetir lo mismo si nada cambió. Cuatro partes, breves:
+
+1. **Nivel**: cobertura de cada nivel y distancia al siguiente (ver «Niveles»); el cambio de nivel, cuando toque, se anuncia aquí y en el chat.
+2. **Las clases**: qué está enseñando la profesora en este tramo (temas, ritmo, énfasis), contrastado con el nivel y con `docs/goal.md`: qué encaja, qué falta, qué convendría pedirle. Siempre «la profesora», sin nombre (el repositorio es público), y la opinión es sobre el contenido de las clases, nunca sobre la persona.
+3. **Tu método**: cómo estudia YAGO, visto a lo largo de los lotes (qué apuntes rinden, frases frente a palabras sueltas, escuchar, hablar y leer, fechas, tamaño y frecuencia de los lotes, constancia) y un consejo concreto, con lo que funciona y lo que no.
+4. **Avisos**: lo que el agente quiera transmitir: cambios en el mazo que le afectan, decisiones pendientes, ideas. Es el canal que YAGO lee con seguridad.
 
 Histórico: un log no se reescribe. Si YAGO corrige algo después (por el chat o por el inbox), el cambio va a `3-data/` y el log recibe al final «Cambios posteriores» con la fecha. Que algo se repita en los apuntes de varios lotes es una señal: si está como `hear` y reaparece, se propone subirlo a `say` en el review.
 

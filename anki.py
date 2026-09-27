@@ -771,6 +771,12 @@ def write_review_doc(batch, osm):
         print(f"AVISO  ya existe review-{batch}.md: no se sobrescribe.")
         return
     lines = [REVIEW_HEADER.format(batch=batch), "", f"# Review del lote {batch}", "",
+             "## Cómo vas", "",
+             "<!-- lo completa el agente, igual que «Seguimiento» en el log: nivel, las clases, tu método "
+             "(mirando los lotes anteriores) y avisos -->", "", "> ", "",
+             "## Huecos y propuestas", "",
+             "<!-- lo completa el agente: huecos temáticos, lo básico del nivel que falta, caracteres con historia, "
+             "qué investigar después; cada uno con su línea «>» -->", "",
              "## Falta", "", "Palabras que quieres decir y aún no aparecen en ninguna frase. Trae una frase de clase "
              "o de tu día a día que las use, o escríbela aquí.", ""]
     for e in osm:

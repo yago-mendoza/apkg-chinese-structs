@@ -39,3 +39,7 @@ El agente no se limita a procesar lo que llega. En cada review señala, con crit
 - de vez en cuando, qué investigar a continuación para su nivel.
 
 Y le avisa, con claridad y sin rebajarlo, cuando cruce de un nivel al siguiente.
+
+## Seguimiento
+
+En cada lote, además, una reflexión acumulativa (el «Cómo vas» del review): su nivel, qué le están enseñando en clase y si encaja con este objetivo, cómo está estudiando visto a lo largo de los lotes, y un consejo concreto. Directa y útil, no complaciente. Formato y reglas: `docs/design.md`, «Seguimiento».
