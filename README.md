@@ -20,6 +20,8 @@ You do two things: put notes in `1-inbox/`, and every now and then tell the agen
 
 **`5-output/`: what comes out.** The compiled deck (`.apkg`) and a public dictionary (`dictionary.json`), which powers [infraphysics.net/corner/chinese](https://infraphysics.net/corner/chinese).
 
+**Levels.** Everything is ordered by difficulty using the HSK 3.0 levels: the deck is split into HSK 1 to HSK 7, with themes inside each level, and you study one level at a time. See [Levels](#levels-hsk-30) below.
+
 **Batches.** A batch is whatever is in the inbox when you ask for it to be processed; how often is up to you. Small, frequent batches give you the review sooner; large ones let the agent see more material at once when deciding themes and groups. Which works better is still an open question, which is why the structure is never frozen: every batch, the agent revisits themes and groups and reorganizes when needed, without losing your progress.
 
 **Why nothing drifts out of sync.** `3-data/` is the single source of truth. The notebook, the deck and the dictionary are all generated from it, so they cannot disagree. Before a change reaches Anki, `anki.py check` validates it (schema, pinyin, IDs, missing or redundant cards, audio). Closing a batch regenerates everything, commits and tags it, so any earlier state can be recovered.
@@ -44,6 +46,24 @@ Generating cards is the easy part. What makes the system useful is that the agen
 - **Contrast and context.** Items that get confused (他/她/它, 生/牛/午) or form a series (上午/中午/下午/晚上) are shown together on the back of the card.
 - **Explicit pronunciation.** IPA, pinyin traps for Spanish speakers, and tone-sandhi rules wherever a card asks you to speak or listen.
 - **Rules that do not depend on the model.** Which cards are required, which are redundant and what is still missing is computed by `anki.py` from a written specification. The model writes; the code checks. A better model improves the deck without changing the system.
+
+## The learner's goal: a swappable module
+
+Everything that depends on *who* is learning lives in one file, [`docs/goal.md`](docs/goal.md): who they are, why they study, what should go in (to say, to understand, or not at all), in what order, and which gaps to point out. The agent reads it before every batch and applies it as the first filter on every decision.
+
+It works as a swappable prompt module. [`docs/design.md`](docs/design.md) describes *how* the system works (formats, cards, coverage, audio, Anki) and holds no personal preferences; `goal.md` says *what* and *why* for this particular learner. Change the goal (more business vocabulary, less reading, a different person) and the agent's decisions change with it, without touching the code or the specification.
+
+## Levels (HSK 3.0)
+
+The deck is ordered by difficulty using the levels of the HSK 3.0 (the 2021 standard): 1 to 6, plus 7 for the advanced band (levels 7 to 9 share one vocabulary list). The HSK is the scale, not the goal: the aim is to speak, and items that are not on the official list get a level too.
+
+- **Every item has a level.** Words on the official list (`sources/hsk/`) take their official level, computed by `anki.py`. Anything else gets a level estimated by the agent, with the reason written down. A sentence takes the highest level of its words, so it never smuggles in vocabulary from a later level.
+- **Level first, theme second.** In Anki: `🐉 Chino práctico::HSK 1::02 Saludos y cortesía`. Moving an item to another level keeps its review history.
+- **One level at a time.** You study the subdeck of your current level. Anything from a higher level, even if it came from your own notes, is filed under its level and waits.
+- **Knowing where you stand.** Every review reports how much of each level's vocabulary the deck covers. When you reach a level (at least 80% of its vocabulary, plus the agent's judgement on the sentence patterns you already handle), the agent says so clearly. Anything that arrives later from a level you already passed is flagged as a gap from that level.
+- **Gaps against a curriculum.** The review compares the deck with your current level, both the official list and the lesson-by-lesson sequence of standard courses, and suggests what is missing.
+
+Status: decided and documented; being implemented. Today the deck is still split by theme only.
 
 ## Getting started
 
@@ -72,7 +92,7 @@ The agent pushes the deck itself. To do it by hand:
 
 ## Studying
 
-- Study the parent deck; it mixes new and review cards across themes. Each theme is a subdeck, and theme, month and purpose are also tags for filtered sessions.
+- Study the subdeck of your current level (until levels land, the parent deck). Themes are subdecks inside it, and level, theme, month and purpose are also tags for filtered sessions.
 - Typed answers accept pinyin with tone marks or digits (`ni3 hao3`) or hanzi from a Chinese keyboard; spaces, case and punctuation are ignored. For sentences you say aloud, typing is optional.
 - The back of each card shows pinyin, IPA, audio, pronunciation traps and, when there is one, the word's family, with the tested word marked ▸.
 - `push` sets the daily limits (`NEW_PER_DAY`, `REVIEWS_PER_DAY` in `anki.py`). Reviews settle at roughly 5 to 8 times the new cards: 30 new cards a day means about 200 reviews, around 40 minutes.
@@ -97,7 +117,7 @@ The agent pushes the deck itself. To do it by hand:
 
 **Commands** (mostly for the agent): `lookup <term>`, `plan` (missing cards), `scaffold` (writes them in the standard format), `gaps` (how the deck is distributed), `check`, `notebook`, `build`, `export` (the public dictionary), `close-batch <batch>` (archive, commit and tag), `audio`, `push`. `push --prune` removes cards whose exercise no longer exists (it lists them first and requires `--force` if there are many); `push --reset` returns the whole deck to new, with no progress. Tests: `.\.venv\Scripts\python -m unittest discover -s tests`.
 
-**Levels and frequency.** Your notes and your goal decide what goes in. External lists are signals, never sources: the HSK 3.0 word list (`sources/hsk/`, from [drkameleon/complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary), MIT) is used to order items by difficulty, spot gaps and tell where you stand. No list is ever imported wholesale.
+**External lists.** Your notes and your goal decide what goes in. The HSK 3.0 word list (`sources/hsk/`, from [drkameleon/complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary), MIT) orders items by level and shows gaps; it is never imported wholesale. Course books and character references that cannot be redistributed are consulted locally only: nothing in the repository depends on them or copies from them.
 
 **Conventions**
 

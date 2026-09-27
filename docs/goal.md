@@ -1,6 +1,6 @@
 # Objetivo del que aprende
 
-Este documento es el primer filtro del sistema. El agente lo lee antes de procesar un lote y decide con él qué entra, cuánto se practica, en qué orden y qué huecos señalar. Es la pieza que se cambia para adaptar el sistema a otra persona u otro objetivo; el resto de la especificación (`docs/design.md`) no depende de quién aprende.
+Este documento es un módulo de prompt: la única parte del sistema que depende de quién aprende. El agente lo lee antes de procesar un lote y lo aplica como primer filtro: con él decide qué entra, cuánto se practica, en qué orden y qué huecos señalar. `docs/design.md` dice cómo funciona todo y no recoge preferencias personales; para adaptar el sistema a otra persona u otro objetivo, se reescribe este archivo y nada más. Si algo de aquí choca con una regla de `design.md` en lo que es del que aprende, manda este archivo.
 
 ## Quién aprende
 
@@ -27,7 +27,7 @@ Cada elemento de los apuntes se juzga contra el «para qué» de arriba:
 
 ## Orden
 
-Todo se ordena por dificultad, con los niveles del HSK 3.0 (del 1 al 6, más el 7 para los niveles 7 a 9): nivel oficial si la palabra está en la lista (`sources/hsk/`) y nivel estimado por el agente si no, con su motivo. YAGO estudia nivel a nivel y respeta esta ordenación: lo que llega de un nivel superior se guarda en su nivel y espera. Su nivel actual se calcula con lo que ya tiene, no con lo que declara.
+Todo se ordena por dificultad, con los niveles del HSK 3.0 (del 1 al 6, más el 7 para los niveles 7 a 9): nivel oficial si la palabra está en la lista (`sources/hsk/`) y nivel estimado por el agente si no, con su motivo. Las reglas completas están en `docs/design.md`, «Niveles». YAGO estudia nivel a nivel y respeta esta ordenación: lo que llega de un nivel superior se guarda en su nivel y espera. Su nivel actual se calcula con lo que ya tiene, no con lo que declara.
 
 ## Huecos y propuestas
 
