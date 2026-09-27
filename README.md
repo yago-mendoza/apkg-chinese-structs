@@ -89,12 +89,13 @@ No corrijas nada dentro de Anki: cada `push` sobrescribe las tarjetas con lo que
 - `docs/design.md`: la especificación completa (cobertura, tipos de tarjeta, audio, decisiones).
 - `docs/owner.md`: la configuración y las decisiones del dueño de este mazo.
 - `anki.py`: consulta, validación, cobertura, audio, compilación e importación. No llama a ningún LLM.
+- `sources/`: listas externas de consulta (hoy, el vocabulario del HSK 3.0), cada una con su origen y su licencia.
 
 ## Listas de frecuencia y HSK
 
 El agente decide qué entra y cuánto se practica sobre todo por tus apuntes y tus necesidades. Dos tipos de lista externa sirven de señal, nunca de fuente: la frecuencia hablada (palabras más usadas en subtítulos de películas, de Dong Chinese) dice qué es núcleo y qué es raro, y los niveles del HSK 3.0 (lista de `drkameleon/complete-hsk-vocabulary`, MIT) sirven para ver huecos y saber en qué nivel estás. No se importa ninguna lista entera: una palabra solo entra cuando aparece en tus apuntes o cuando el review te la propone y la aceptas.
 
-Estado: todavía no se usan (fase 4 de `docs/design.md`). La del HSK se podrá versionar con su licencia; la de Dong Chinese, que no aclara sus condiciones, solo se consulta.
+Estado: la lista del HSK 3.0 ya está en `sources/hsk/` (con su licencia), pero `anki.py` aún no la usa (fase 4 de `docs/design.md`). La de Dong Chinese no se descarga: su web pide que no la rastreen programas.
 
 ## Convenciones
 
