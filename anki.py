@@ -56,6 +56,7 @@ MODEL_SELF_NAME = "Chino práctico (autoevaluación)"
 DECK_PRESET = "🐉 Chino práctico"          # preset propio: nunca tocar el de otros mazos
 NEW_PER_DAY, REVIEWS_PER_DAY = 30, 300
 THEME_MAX, THEME_MIN = 60, 3               # entradas por tema: por encima, ¿dividir?; por debajo, ¿juntar?
+PRUNE_MAX = 10                             # más huérfanas que esto: `push --prune` se niega sin --force
 
 AZURE_VOICE = os.environ.get("AZURE_SPEECH_VOICE", "zh-CN-YunyangNeural")
 # Más despacio que lo normal: más claro para aprender tonos. Las palabras sueltas, aún más.
@@ -98,6 +99,25 @@ def load():
                     item["theme"] = th["id"]
                     out[key].append(item)
     return out["entries"], out["sentences"], out["exercises"]
+
+
+def baseline_exercises():
+    """Ejercicios en la última etiqueta lote-NNN (el estado tras el último lote), o None si no hay git o etiqueta.
+    Sirve para detectar IDs desaparecidos y preguntas cambiadas con el mismo ID."""
+    import subprocess
+    def git(*args):
+        r = subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
+        return r.stdout if r.returncode == 0 else None
+    tags = (git("tag", "--list", "lote-*", "--sort=-v:refname") or "").split()
+    if not tags:
+        return None
+    files = (git("ls-tree", "-r", "--name-only", tags[0], "4-data/exercises") or "").split()
+    out = {}
+    for f in files:
+        text = git("show", f"{tags[0]}:{f}")
+        for ex in (yaml.safe_load(text or "") or {}).get("exercises", []):
+            out[ex["id"]] = ex
+    return tags[0], out
 
 
 def stray_data_files():
@@ -824,6 +844,27 @@ def validate(entries, sentences, exercises, require_audio=True):
             warnings.append(f"tema {t['id']}: {n} entradas (más de {THEME_MAX}); ¿dividirlo? (Reorganización)")
         elif n < THEME_MIN:
             warnings.append(f"tema {t['id']}: {n} entrada(s) (menos de {THEME_MIN}); ¿juntarlo con otro? (Reorganización)")
+    # Protección ante lotes disruptivos: comparar con el estado del último lote.
+    base = baseline_exercises()
+    if base:
+        tag, old = base
+        now = {x["id"]: x for x in exercises}
+        gone = sorted(set(old) - set(now))
+        if gone:
+            warnings.append(f"{len(gone)} ejercicio(s) de {tag} ya no existen (sus tarjetas quedarían huérfanas y "
+                            f"perderían el progreso con --prune): {', '.join(gone[:10])}{' …' if len(gone) > 10 else ''}")
+        for xid in sorted(set(old) & set(now)):
+            a, b = old[xid].get("answer") or {}, now[xid].get("answer") or {}
+            if (a.get("hanzi"), a.get("typed")) != (b.get("hanzi"), b.get("typed")) or \
+                    old[xid].get("type") != now[xid].get("type"):
+                warnings.append(f"{xid}: cambió la respuesta o el tipo respecto a {tag}. Si ya no es la misma "
+                                "pregunta, necesita ID nuevo (si no, hereda un progreso que no le corresponde).")
+    theme_of = {it["id"]: it["theme"] for it in entries + sentences}
+    for ex in exercises:
+        first = (ex.get("targets") or [None])[0]
+        if first in theme_of and theme_of[first] != ex["theme"]:
+            warnings.append(f"{ex['id']}: está en exercises/{ex['theme']}.yaml pero su objetivo {first} es del tema "
+                            f"{theme_of[first]}; moverlo para que vaya al subdeck correcto")
     for f in stray_data_files():
         errors.append(f"{f}: el nombre no es ningún tema de 4-data/themes.yaml; su contenido no se carga")
     # Especificación de cobertura: use, rol, tema y tarjetas exigidas.
@@ -1351,7 +1392,7 @@ def place_by_theme(exercises):
     return sum(len(v) for v in moves.values()), removed
 
 
-def orphans(exercises, prune):
+def orphans(exercises, prune, force=False):
     notes = anki_request("findNotes", query=f'"deck:{DECK_NAME}"')
     info = anki_request("notesInfo", notes=notes) if notes else []
     ids = {ex["id"] for ex in exercises}
@@ -1359,14 +1400,17 @@ def orphans(exercises, prune):
             and n["fields"]["ExerciseID"]["value"] not in ids]
     for n in lost:
         print(f"  huérfana: {n['fields']['ExerciseID']['value']}")
-    if lost and prune:
+    if lost and prune and len(lost) > PRUNE_MAX and not force:
+        print(f"{len(lost)} huérfanas son muchas (más de {PRUNE_MAX}): no borro nada. Si es intencionado, repetir con "
+              "--prune --force. Si no, algo ha cambiado IDs: revisar `check` antes.")
+    elif lost and prune:
         anki_request("deleteNotes", notes=[n["noteId"] for n in lost])
         print(f"Borradas {len(lost)} nota(s) huérfana(s).")
     elif lost:
         print(f"{len(lost)} nota(s) del mazo ya no existen en 4-data/. Revisar y repetir con --prune para borrarlas.")
 
 
-def cmd_push(allow_missing_audio, sync, prune=False, reset=False):
+def cmd_push(allow_missing_audio, sync, prune=False, reset=False, force=False):
     import subprocess
     import time
     if cmd_build(allow_missing_audio):
@@ -1395,7 +1439,7 @@ def cmd_push(allow_missing_audio, sync, prune=False, reset=False):
         print(f"Progreso reiniciado: {reset_progress()} tarjeta(s) vuelven a nuevas.")
     moved = reorder_new(new_card_order(entries, sentences, exercises))
     print(f"Orden de nuevas: {moved} tarjeta(s) recolocada(s).")
-    orphans(exercises, prune)
+    orphans(exercises, prune, force)
     moved_decks, removed = place_by_theme(exercises)
     print(f"Subdecks por tema: {moved_decks} tarjeta(s) recolocada(s)"
           + (f"; borrados por vacíos: {', '.join(removed)}" if removed else "") + ".")
@@ -1433,6 +1477,7 @@ def main():
     u.add_argument("--no-sync", action="store_true")
     u.add_argument("--prune", action="store_true", help="borrar notas del mazo cuyo ejercicio ya no existe")
     u.add_argument("--reset", action="store_true", help="fase de pruebas: todo el mazo vuelve a nuevas, sin progreso")
+    u.add_argument("--force", action="store_true", help=f"con --prune, borrar aunque haya más de {PRUNE_MAX} huérfanas")
     pl = sub.add_parser("plan")
     pl.add_argument("--doc", metavar="LOTE", help="escribe 1-inbox/review-<LOTE>.md")
     sub.add_parser("guide")
@@ -1446,7 +1491,7 @@ def main():
     if args.cmd == "audio":
         return cmd_audio(args.dry_run)
     if args.cmd == "push":
-        return cmd_push(args.allow_missing_audio, not args.no_sync, args.prune, args.reset)
+        return cmd_push(args.allow_missing_audio, not args.no_sync, args.prune, args.reset, args.force)
     if args.cmd == "plan":
         return cmd_plan(args.doc)
     if args.cmd == "guide":

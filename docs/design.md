@@ -59,6 +59,19 @@ La estructura se adapta a lo que llega; no se congela. En cada lote el agente re
 
 Cómo: mover un elemento de tema es moverlo de archivo en `4-data/` (y sus ejercicios, al archivo del mismo tema); renombrar o reordenar temas es editar `themes.yaml`. `push` recoloca las tarjetas en Anki conservando el progreso y borra los subdecks que queden vacíos. Toda reorganización se cuenta en el summary del lote, con qué se movió y por qué.
 
+## Lotes disruptivos: qué protege y cómo se recupera
+
+Un lote puede tocar mucho (reorganizar temas, corregir cientos de tarjetas). Lo que lo hace seguro:
+
+- **La identidad de una tarjeta es el ID de su ejercicio**, no su texto, su tema ni su archivo. Moverla o corregirla conserva el progreso en Anki. Solo lo pierde si su ejercicio desaparece y se borra con `--prune`.
+- **El audio va por texto chino exacto.** Reorganizar no toca audio; cambiar un hanzi pide audio nuevo (céntimos) y `check` bloquea hasta que exista. Los MP3 que dejan de usarse quedan sin estorbar.
+- **`check` bloquea** referencias rotas, IDs repetidos entre archivos, tarjetas exigidas ausentes, pinyin que no cuadra y audio que falta. Y **compara con la última etiqueta `lote-NNN`**: avisa de ejercicios desaparecidos (tarjetas que quedarían huérfanas), de preguntas que cambian de respuesta o de tipo con el mismo ID (deben llevar ID nuevo) y de ejercicios archivados en un tema distinto al de su objetivo. El paso 7 del flujo exige resolver los avisos antes de subir.
+- **Borrar en Anki nunca es automático**: `push --prune` lista las huérfanas y, si son más de `PRUNE_MAX`, se niega salvo `--force`.
+
+Recuperación: el estado tras cada lote está en su etiqueta `lote-NNN`. Volver a él es restaurar `4-data/` desde la etiqueta y hacer `push`: el contenido y la colocación de las tarjetas vuelven; el progreso de las que sigan existiendo nunca se tocó. Lo único irrecuperable desde el repositorio son las notas borradas con `--prune`; para eso quedan las copias automáticas de Anki (Herramientas → Copias de seguridad).
+
+Entradas que absorbe el inbox: texto en cualquier formato e imágenes (fotos de apuntes: el agente las lee). Audio o vídeo, no directamente: primero hay que transcribirlos.
+
 ## Capas y carpetas
 
 | Capa | Orden | Contenido |

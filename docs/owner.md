@@ -28,6 +28,8 @@ Configuración y decisiones propias de este mazo (Yago Mendoza). Nada secreto: e
 - **`push` dice que AnkiConnect no responde**: abrir Anki en el PC; si ya estaba abierto, cerrarlo del todo y reabrirlo (el complemento se carga al arrancar).
 - **Sin sincronizar**: iniciar sesión en AnkiWeb desde el botón Sincronizar de Anki desktop.
 - **El móvil muestra algo viejo**: sincronizar el móvil después de cada `push`.
+- **Antes de un lote grande**: sincronizar el móvil primero, para que AnkiWeb tenga los repasos del día antes de que `push` suba cambios (si Anki pidiera una sincronización completa, no se pierde nada del móvil).
+- **Un lote salió mal**: volver a la etiqueta del lote anterior (`lote-NNN`) y hacer `push` (ver «Lotes disruptivos» en `docs/design.md`).
 - **`audio` falla**: comprobar las variables de entorno (reiniciar la terminal tras cambiarlas) y que el recurso de Azure sigue activo.
 - **Pocas tarjetas azules un día**: Anki cuenta las nuevas ya empezadas hoy contra el límite; se puede ampliar solo para hoy (Estudio personalizado → aumentar el límite de nuevas de hoy) o pedirlo al agente.
 
