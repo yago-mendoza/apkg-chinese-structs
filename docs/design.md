@@ -38,7 +38,7 @@ Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de o
 6. Pregunta lo ambiguo (sentido, lectura, si ya lo sabe) en vez de adivinar. Las transcripciones de fotos hechas por LLM traen errores y `[¿?]`: se marcan con ⚠️ en el digest, nunca se dan por buenas.
 7. `plan` → escribe exactamente las tarjetas que faltan → `check` sin errores ni avisos pendientes.
 8. Escribe `4-digests/<lote>.md`, regenera `5-guide/` y el nuevo `1-inbox/gaps-<lote>.md`.
-9. Mueve los apuntes y el `gaps-*.md` leído a `2-raw/<lote>/`, con sus nombres originales. `1-inbox/` queda vacío salvo su `README.md` y el nuevo `gaps`.
+9. Mueve los apuntes y el `gaps-*.md` leído a `2-raw/<lote>/`. Cada apunte se archiva como `AAAA-MM-DD_<nombre original>`, con la fecha en que se apuntó (la que YAGO escribe dentro); si mezcla días, `mixto_<nombre original>` y la fecha de cada parte dentro; si no tiene fecha, `sin-fecha_<nombre original>` y se usa la de procesado en `source.date`. El `gaps` conserva su nombre. Sin subcarpetas por día: el prefijo ya ordena. Dos fechas distintas: la del lote (procesado) y la de cada apunte (cuándo se aprendió). `1-inbox/` queda vacío salvo su `README.md` y el nuevo `gaps`.
 10. `audio`, `push`, y resumen a YAGO: añadido, cambiado, tarjetas antiguas tocadas y audio nuevo.
 
 **`1-inbox/gaps-<lote>.md`** es lo que falta tras el lote, con el porqué, para que YAGO lo estudie y lo traiga en el siguiente. Empieza con la línea `<!-- Documento editable: escribe encima, tacha, añade dudas. Todo lo que pongas aquí entra en el siguiente lote. -->`. Solo hay uno a la vez; el anterior se archiva con el lote que lo consume.

@@ -68,7 +68,7 @@ No corrijas nada dentro de Anki: cada `push` sobrescribe las tarjetas con lo que
 
 - Carpetas y archivos en inglés, en minúsculas, con guiones. Las carpetas del flujo llevan el número de su paso: `1-inbox` → `2-raw` → `3-data` → `4-digests` → `5-guide` → `6-output`. Lo que no es flujo (`docs/`, `anki.py`) va sin número.
 - Toda documentación de carpeta se llama `README.md`; las reglas para agentes, `AGENTS.md`. Contenido y documentación en español.
-- Lotes: `NNN-AAAA-MM-DD-tema` (número de orden de procesado, fecha y tema en palabras: `001-2026-09-25-primeras-clases`). Ese nombre lo comparten la carpeta `2-raw/<lote>/` y el digest `4-digests/<lote>.md`. Nunca números de hoja: el digest se organiza por temas.
+- Lotes: `NNN-AAAA-MM-DD-tema` (número de orden de procesado, fecha de procesado y tema en palabras: `001-2026-09-25-primeras-clases`). Dentro, cada apunte lleva como prefijo la fecha en que se apuntó (`2026-10-03_notas-bus.txt`, o `mixto_…` si mezcla días); lo pone el agente al archivar. Ese nombre lo comparten la carpeta `2-raw/<lote>/` y el digest `4-digests/<lote>.md`. Nunca números de hoja: el digest se organiza por temas.
 - IDs del diccionario y de los ejercicios con prefijo de tipo: `w.` palabra, `e.` expresión, `c.` carácter, `p.` pronunciación, `g.` grupo, `s.` frase, `x.` ejercicio. Nunca cambian.
 
 ## Configuración (una vez)
