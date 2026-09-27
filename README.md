@@ -29,7 +29,7 @@
 - **After each batch** it leaves you a review: your level, gaps, what didn't go in and why. You answer inline; your answers feed the next batch.
 - **You study** in Anki (soon, one HSK level at a time). Nothing else to maintain.
 
-This repository ships with a real, working example: **🐉 Chino práctico**, Yago Mendoza's own deck. The deck and its working documents are in Spanish; the system works for any learner. Use it as is, or empty it and start with your own notes.
+I built this for my own Mandarin, so the repository ships with a real, working example: my deck, **🐉 Chino práctico**, built from my classes. The deck and my working notes are in Spanish; the system works for any learner. Use it as is, or empty it and start with your own notes.
 
 ## How it works
 
@@ -147,7 +147,7 @@ The agent pushes the deck itself. To do it by hand:
 - `AGENTS.md`: rules for any agent; the first thing it reads.
 - `docs/goal.md`: the learner's goal: the first filter for everything that goes in.
 - `docs/design.md`: the full specification (coverage, card types, audio, decisions).
-- `docs/owner.md`: this deck owner's setup and decisions.
+- `docs/owner.md`: my own setup and decisions for this deck.
 - `sources/`: external reference lists, each with its origin and license.
 
 **Commands** (mostly for the agent): `lookup <term>`, `plan` (missing cards), `scaffold` (writes them in the standard format), `gaps` (how the deck is distributed), `check`, `notebook`, `build`, `export` (the public dictionary), `close-batch <batch>` (archive, commit and tag), `audio`, `push`. `push --prune` removes cards whose exercise no longer exists (it lists them first and requires `--force` if there are many); `push --reset` returns the whole deck to new, with no progress. Tests: `.\.venv\Scripts\python -m unittest discover -s tests`, including a simulated AnkiConnect that checks nothing outside this deck is ever moved, deleted or reconfigured. GitHub Actions runs `check` and the tests on every push.
