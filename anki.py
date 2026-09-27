@@ -532,6 +532,8 @@ def cmd_gaps():
     raw = sorted(f.name for f in INBOX.iterdir() if f.is_file() and f.name != "README.md"
                  and not f.name.startswith("gaps-")) if INBOX.exists() else []
     print(f"Inbox sin procesar: {len(raw)}" + (f" → {', '.join(raw)}" if raw else ""))
+    for g in sorted(INBOX.glob("gaps-*.md")) if INBOX.exists() else []:
+        print(f"Deberes: {g.name} (entra en el próximo lote junto con los apuntes)")
 
 
 def label(item):
