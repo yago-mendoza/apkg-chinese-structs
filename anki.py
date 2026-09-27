@@ -927,8 +927,7 @@ def validate(entries, sentences, exercises, require_audio=True):
                     warnings.append(f"{s['id']}: pinyin de «{seg['text']}» distinto de {seg['ref']}")
         if not s.get("translation"):
             errors.append(f"{s['id']}: falta traducción")
-    types = {"read", "listen", "tones", "cloze", "produce", "speak", "meaning", "components",
-             "contrast", "derive", "pinyin-meaning", "build", "nuance"}
+    types = {"read", "listen", "tones", "cloze", "produce", "speak", "components", "contrast", "derive", "nuance"}
     seen = {}
     for ex in exercises:
         xid = ex["id"]
@@ -1466,17 +1465,18 @@ def close_batch_plan(batch):
     err, _ = validate(*load())
     if err:
         errors.append(f"`check` tiene {len(err)} error(es): resolverlos antes de cerrar")
-    if not (DIGESTS / f"summary-{batch}.md").exists():
+    log = DIGESTS / f"summary-{batch}.md"
+    if not log.exists():
         errors.append(f"falta 3-digests/summary-{batch}.md: el log del lote (lo escribe el agente)")
+    elif not log.read_text(encoding="utf-8").startswith(LOG_HEADER):
+        errors.append(f"3-digests/summary-{batch}.md debe empezar con LOG_HEADER (anki.py): así se sabe qué es")
     if not (INBOX / f"review-{batch}.md").exists():
         errors.append(f"falta 1-inbox/review-{batch}.md (se empieza con `plan --doc {batch}` y lo completa el agente)")
     raw = ROOT / "2-raw" / batch
     for f in sorted(INBOX.iterdir()) if INBOX.exists() else []:
         if not f.is_file() or f.name == "README.md" or f.name == f"review-{batch}.md":
             continue
-        if f.name.startswith("summary-"):             # formato antiguo: el log iba primero al inbox
-            actions.append(("log antiguo → 3-digests/", f, DIGESTS / f.name))
-        elif f.name.startswith("review-"):
+        if f.name.startswith("review-"):
             actions.append(("review leído → 2-raw/", f, raw / f.name))
         elif NOTE_PREFIX_RE.match(f.name):
             actions.append(("apunte → 2-raw/", f, raw / f.name))
