@@ -15,6 +15,7 @@ Leer `docs/design.md` antes de implementar o añadir contenido: diseño canónic
 - Nombres: carpetas y archivos en inglés; documentación de carpeta siempre `README.md`, nunca traducida.
 - Tarjetas estándar con `anki.py scaffold`, no a mano; cierre de lote con `anki.py close-batch`. Tras cambiar `anki.py`, ejecutar las pruebas (`python -m unittest discover -s tests`).
 - UTF-8 explícito en archivos y ejecución de Python sobre Windows.
+- Si existe `private/README.md` (solo local, en `.gitignore`), leerlo: fuentes que solo se consultan en local, con sus reglas. Nada de ellas se copia ni se nombra en lo versionado.
 - El repositorio es público (comprobado 2026-09-25): no guardar comentarios privados ni credenciales. Revisar cambios antes de subirlos; no hacer push sin que YAGO lo pida.
 - Licencia elegida por YAGO (2026-09-27): MIT para el código (`LICENSE`), CC BY 4.0 para el contenido (`LICENSE-CONTENT`), con cita obligatoria. Mantener procedencia y condiciones de recursos externos; no incorporar material de terceros incompatible con CC BY.
 - La colección de Anki de YAGO tiene otros mazos descargados (HSK, Pimsleur, Spoonfed…): son práctica aparte, independientes de este proyecto. No modificarlos ni borrarlos y no contarlos en ninguna métrica. Hoy no son fuente; más adelante (hacia HSK 7) podrán servir para explorar vocabulario, solo cuando YAGO lo pida, y lo elegido entra como un lote más. Toda operación en Anki se limita al mazo `🐉 Chino práctico`.

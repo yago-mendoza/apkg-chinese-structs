@@ -4,6 +4,38 @@ Un sistema para convertir apuntes de clase de mandarín en un mazo de Anki con p
 
 El repositorio trae como ejemplo real el mazo de Yago Mendoza, construido con sus apuntes. Se puede usar tal cual o vaciar para trabajar con los tuyos.
 
+## TL;DR
+
+Solo haces dos cosas: dejar apuntes en `1-inbox/` y, cuando te apetezca, decirle al agente «procesa el inbox». Él los convierte en tarjetas, genera el audio y las mete en Anki. Estudias en Anki. Ya está. (Anki tiene que estar abierto cuando el agente sube las tarjetas; si estudias en el móvil, sincronizas y listo.)
+
+**`1-inbox/`: donde escribes.** Apuntes tal como salen: notas del móvil, fotos pasadas a texto, listas a medias, dudas. Sin formato. Lo único que ayuda es poner la fecha en que apuntaste cada cosa. Aquí te deja también el agente el review del último lote: lo que le falta al mazo, lo que no entró y por qué, lo que conviene comprobar. Escribes debajo de cada punto lo que quieras y entra en el siguiente lote.
+
+**`2-raw/`: el historial del inbox.** Al procesar un lote, el agente archiva ahí todo lo que pasó por el inbox, tal cual, en una carpeta por lote: tus apuntes y el review que contestaste. No se lee ni se edita; sirve para volver al original.
+
+**`3-digests/`: el log de cada lote.** El acta de lo que hizo el agente: qué entró, qué no y por qué, qué corrigió de tus apuntes y qué reorganizó. No se edita; es la memoria del sistema. Lo que admite tu opinión no está aquí, está en el review.
+
+**Lotes.** Un lote es lo que haya en el inbox cuando pides procesarlo; la frecuencia la eliges tú. Lotes cortos te devuelven el review antes. Lotes grandes dejan ver más material junto al decidir temas y grupos. Todavía está por ver qué funciona mejor: si muchos lotes pequeños fijan una organización que luego no encaja, o si mucho texto de golpe organiza mejor. Por eso la estructura no se congela: en cada lote el agente revisa temas y grupos y reorganiza si hace falta, sin perder tu progreso.
+
+**`4-data/`: la base de datos.** Todo lo que sabe el mazo, un archivo por tema: el léxico (palabras, expresiones, caracteres, reglas de pronunciación y grupos de cosas que se confunden), las frases, las tarjetas, la lista de temas y el audio generado. Solo la edita el agente.
+
+**`5-notebook/`: la misma base, para leer.** Todo lo aprendido, por temas, con pinyin, significado, frases y notas. Es lo que abres para repasar o buscar algo sin Anki. Se regenera sola.
+
+**`6-output/`: lo que sale.** El mazo compilado (`.apkg`) y el diccionario público (`dictionary.json`), que es lo que muestra infraphysics.net/corner/chinese.
+
+**Por qué no se desincroniza nada.** `4-data/` es la única fuente: el cuaderno, el mazo y el diccionario se generan de ella, así que no pueden contradecirse. Antes de que un cambio llegue a Anki, `anki.py check` lo valida (formato, pinyin, IDs, tarjetas que faltan o sobran, audio). Al cerrar un lote se regenera todo, se hace commit y se etiqueta el lote: cualquier estado anterior se puede recuperar.
+
+## Lo que no tienes que vigilar
+
+- **Tarjetas repetidas o redundantes.** `check` detecta las que piden lo mismo y el agente las fusiona.
+- **Palabras sueltas que nunca usas.** Toda palabra que quieres saber decir tiene que aparecer en alguna frase; si no hay ninguna, el review te la pide.
+- **Errores en tus apuntes.** El agente corrige glosas y lecturas mal copiadas, lo marca ⚠️ en el log y te pregunta lo dudoso en el review.
+- **Temas mal elegidos.** Se reorganizan en cualquier lote. Cada tarjeta tiene un ID fijo, así que moverla o corregirla no borra su historial en Anki.
+- **Cuántas tarjetas hacer y de qué tipo.** Lo calcula `anki.py` según para qué quieres cada palabra (leerla, entenderla al oírla o decirla).
+- **El audio.** Se genera solo para lo que falta y se guarda; no se paga dos veces.
+- **Tus otros mazos de Anki.** El sistema solo toca el suyo.
+- **Corregir cosas dentro de Anki.** No hace falta, y se perdería: díselo al agente y lo arregla en la fuente.
+- **Qué estudiar hoy.** El mazo padre, que ya mezcla lo nuevo y lo viejo en orden.
+
 ## Aprendizaje activo, no solo tarjetas generadas
 
 Generar tarjetas es la parte fácil. Lo que hace útil este sistema es que el agente no solo produce: **devuelve trabajo al que aprende** y cierra el ciclo.
@@ -20,7 +52,7 @@ Generar tarjetas es la parte fácil. Lo que hace útil este sistema es que el ag
 
 1. Deja tus apuntes en bruto en `1-inbox/`: cualquier archivo, sin formato. Pon la fecha de lo apuntado, al principio o en cada parte si mezclas días.
 2. Abre un agente de código en la carpeta y pídele «procesa el inbox». Edita el mazo, regenera el cuaderno, deja el log del lote en `3-digests/` y te deja en `1-inbox/` el `review`, para que escribas debajo de cada punto.
-3. Sube el mazo a Anki:
+3. Pide que lo suba a Anki (con Anki abierto), o hazlo tú:
 
 ```powershell
 .\.venv\Scripts\python anki.py audio   # genera solo el audio que falta (Azure Speech)
@@ -51,20 +83,18 @@ No corrijas nada dentro de Anki: cada `push` sobrescribe las tarjetas con lo que
 5. Configura Azure Speech y Anki (ver «Configuración») y deja tu primer lote en `1-inbox/`.
 6. Pide a tu agente «procesa el inbox». `AGENTS.md` y `docs/design.md` le dicen todo lo que necesita.
 
-## Qué hay en cada sitio
+## Qué más hay
 
-| Ruta | Qué es |
-|---|---|
-| `1-inbox/` | Apuntes en bruto pendientes (no se versionan) y el `review-<lote>.md` que deja el agente tras cada lote: todo lo que admite tu opinión, para escribir debajo de cada punto. |
-| `2-raw/` | Apuntes ya procesados, tal cual, en una carpeta por lote. |
-| `3-digests/` | El log de cada lote: qué entró, qué no y por qué. Histórico; no se edita. |
-| `4-data/` | Fuente de verdad del mazo, mantenida por el agente, un archivo por tema: `lexicon/` (diccionario), `sentences/` (frases), `exercises/` (tarjetas), `themes.yaml` (temas y orden) y `audio/`. Esquema en su `README.md`. |
-| `5-notebook/` | Todo lo aprendido, un archivo por tema, generado desde `4-data/`. No se edita. |
-| `6-output/` | Lo que se genera (`chino-practico.apkg`). No se versiona. |
-| `AGENTS.md` | Reglas para cualquier agente. Lo primero que lee. |
-| `docs/design.md` | Especificación completa: cobertura, tipos de tarjeta, audio, decisiones. |
-| `docs/owner.md` | Notas del dueño de este mazo: su configuración y sus decisiones. |
-| `anki.py` | Consulta, validación, cobertura, audio, compilación e importación. No llama a ningún LLM. |
+- `AGENTS.md`: reglas para cualquier agente; lo primero que lee.
+- `docs/design.md`: la especificación completa (cobertura, tipos de tarjeta, audio, decisiones).
+- `docs/owner.md`: la configuración y las decisiones del dueño de este mazo.
+- `anki.py`: consulta, validación, cobertura, audio, compilación e importación. No llama a ningún LLM.
+
+## Listas de frecuencia y HSK
+
+El agente decide qué entra y cuánto se practica sobre todo por tus apuntes y tus necesidades. Dos tipos de lista externa sirven de señal, nunca de fuente: la frecuencia hablada (palabras más usadas en subtítulos de películas, de Dong Chinese) dice qué es núcleo y qué es raro, y los niveles del HSK 3.0 (lista de `drkameleon/complete-hsk-vocabulary`, MIT) sirven para ver huecos y saber en qué nivel estás. No se importa ninguna lista entera: una palabra solo entra cuando aparece en tus apuntes o cuando el review te la propone y la aceptas.
+
+Estado: todavía no se usan (fase 4 de `docs/design.md`). La del HSK se podrá versionar con su licencia; la de Dong Chinese, que no aclara sus condiciones, solo se consulta.
 
 ## Convenciones
 
