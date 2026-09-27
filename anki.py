@@ -5,9 +5,9 @@ Uso:
     python anki.py plan [--doc <lote>]     tarjetas exigidas que faltan; --doc escribe 1-inbox/review-<lote>.md
     python anki.py gaps                    reparto del mazo y pendientes
     python anki.py check
-    python anki.py guide                   regenera 5-guide/ desde 4-data/
+    python anki.py notebook                   regenera 5-notebook/ desde 4-data/
     python anki.py scaffold [--write]      tarjetas estándar para lo que falta (sin --write, solo las lista)
-    python anki.py close-batch <lote> [--dry-run]  archiva summary, review y apuntes; guía; commit y etiqueta
+    python anki.py close-batch <lote> [--dry-run]  archiva summary, review y apuntes; cuaderno; commit y etiqueta
     python anki.py audio [--dry-run]
     python anki.py build [--allow-missing-audio]
     python anki.py push [--allow-missing-audio] [--no-sync] [--prune] [--reset]
@@ -41,7 +41,7 @@ MEDIA = DATA / "audio"                  # MP3 generados; no regenerar
 AUDIO_MANIFEST = MEDIA / "index.yaml"
 INBOX = ROOT / "1-inbox"                  # apuntes en bruto de YAGO
 DIGESTS = ROOT / "3-digests"              # histórico de cada lote
-GUIDE = ROOT / "5-guide"                  # guía acumulada por temas, generada
+NOTEBOOK = ROOT / "5-notebook"            # cuaderno de consulta por temas, generado
 OUTPUT = ROOT / "6-output"                # lo que sale: mazo y futuras exportaciones
 APKG = OUTPUT / "chino-practico.apkg"
 ANKI_CONNECT = "http://127.0.0.1:8765"
@@ -543,7 +543,7 @@ def cmd_lookup(query):
 PRIMARY = {"read": "lectura", "listen": "escucha", "tones": "tonos", "produce": "producción",
            "derive": "producción", "cloze": "producción", "speak": "voz alta", "contrast": "contraste",
            "components": "componentes", "nuance": "matiz"}
-GENERATED = "<!-- Generado por `anki.py guide` desde 4-data/. No editar: se rehace en cada lote. -->"
+GENERATED = "<!-- Generado por `anki.py notebook` desde 4-data/. No editar: se rehace en cada lote. -->"
 REVIEW_HEADER = ("<!-- REVIEW: editable. Debajo de cada punto hay una línea «>»: escribe lo que quieras (sí, no, "
                  "un matiz, una frase, una corrección). Lo que escribas entra en el siguiente lote; lo que dejes "
                  "vacío se queda como está. Puedes añadir puntos nuevos al final. -->")
@@ -785,17 +785,17 @@ def mark(item, has_cards):
     return m + ("🃏" if has_cards else "")
 
 
-def cmd_guide():
-    """Regenera 5-guide/: todo lo aprendido, un archivo por tema, desde 4-data/."""
+def cmd_notebook():
+    """Regenera 5-notebook/: todo lo aprendido, un archivo por tema, desde 4-data/."""
     entries, sentences, exercises = load()
     themes = load_themes()
     targeted = {t for ex in exercises for t in ex.get("targets", [])}
     eby = {e["id"]: e for e in entries}
-    GUIDE.mkdir(exist_ok=True)
-    for old in GUIDE.glob("*.md"):
-        if old.read_text(encoding="utf-8").startswith("<!-- Generado por `anki.py guide`"):
+    NOTEBOOK.mkdir(exist_ok=True)
+    for old in NOTEBOOK.glob("*.md"):
+        if old.read_text(encoding="utf-8").startswith("<!-- Generado por `anki.py "):
             old.unlink()
-    index = [GENERATED, "", "# Guía", "", "Todo lo aprendido, por temas. ✅ aprender · 🟡 reconocer · ❌ descartado · 🃏 en el mazo.", ""]
+    index = [GENERATED, "", "# Cuaderno", "", "Todo lo aprendido, por temas. ✅ aprender · 🟡 reconocer · ❌ descartado · 🃏 en el mazo.", ""]
     for n, th in enumerate(themes, 1):
         name = f"{n:02d}-{th['id']}.md"
         items = [e for e in entries if e.get("theme") == th["id"]]
@@ -826,10 +826,10 @@ def cmd_guide():
             out += [f"- {mark(s, s['id'] in targeted)} {sentence_text(s)} · {sentence_pinyin(s)} · "
                     f"{s['translation'].get('es', '')}" for s in sents]
             out.append("")
-        (GUIDE / name).write_text("\n".join(out), encoding="utf-8")
+        (NOTEBOOK / name).write_text("\n".join(out), encoding="utf-8")
         index.append(f"- [{th['title']}]({name}) · {len(items)} entradas, {len(sents)} frases")
-    (GUIDE / "README.md").write_text("\n".join(index) + "\n", encoding="utf-8")
-    print(f"Guía regenerada: {len(themes)} temas en {GUIDE.relative_to(ROOT)}/")
+    (NOTEBOOK / "README.md").write_text("\n".join(index) + "\n", encoding="utf-8")
+    print(f"Cuaderno regenerado: {len(themes)} temas en {NOTEBOOK.relative_to(ROOT)}/")
     return 0
 
 
@@ -1483,7 +1483,7 @@ def close_batch_plan(batch):
 
 
 def cmd_close_batch(batch, dry_run):
-    """Cierra un lote: archiva summary, review y apuntes, regenera la guía, commit y etiqueta lote-NNN."""
+    """Cierra un lote: archiva summary, review y apuntes, regenera el cuaderno, commit y etiqueta lote-NNN."""
     import shutil
     actions, errors = close_batch_plan(batch)
     for desc, src, dst in actions:
@@ -1503,7 +1503,7 @@ def cmd_close_batch(batch, dry_run):
             _git("mv", src.relative_to(ROOT).as_posix(), dst.relative_to(ROOT).as_posix())
         else:
             shutil.move(str(src), str(dst))
-    cmd_guide()
+    cmd_notebook()
     _git("add", "-A")
     _git("commit", "-q", "-m", f"lote {batch}\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>")
     tag = f"lote-{batch[:3]}"
@@ -1736,7 +1736,7 @@ def main():
     u.add_argument("--force", action="store_true", help=f"con --prune, borrar aunque haya más de {PRUNE_MAX} huérfanas")
     pl = sub.add_parser("plan")
     pl.add_argument("--doc", metavar="LOTE", help="escribe 1-inbox/review-<LOTE>.md")
-    sub.add_parser("guide")
+    sub.add_parser("notebook")
     cb = sub.add_parser("close-batch")
     cb.add_argument("batch", metavar="LOTE", help="NNN-AAAA-MM-DD-tema")
     cb.add_argument("--dry-run", action="store_true", help="mostrar lo que haría sin mover nada")
@@ -1755,8 +1755,8 @@ def main():
         return cmd_push(args.allow_missing_audio, not args.no_sync, args.prune, args.reset, args.force)
     if args.cmd == "plan":
         return cmd_plan(args.doc)
-    if args.cmd == "guide":
-        return cmd_guide()
+    if args.cmd == "notebook":
+        return cmd_notebook()
     if args.cmd == "scaffold":
         return cmd_scaffold(args.write)
     if args.cmd == "close-batch":

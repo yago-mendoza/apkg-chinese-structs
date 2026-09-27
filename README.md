@@ -19,7 +19,7 @@ Generar tarjetas es la parte fácil. Lo que hace útil este sistema es que el ag
 ## Uso
 
 1. Deja tus apuntes en bruto en `1-inbox/`: cualquier archivo, sin formato. Pon la fecha de lo apuntado, al principio o en cada parte si mezclas días.
-2. Abre un agente de código en la carpeta y pídele «procesa el inbox». Edita el mazo, regenera la guía y te deja en `1-inbox/` el `summary` (qué entró) y el `review` (qué falta y qué no entró, para que escribas debajo de cada punto).
+2. Abre un agente de código en la carpeta y pídele «procesa el inbox». Edita el mazo, regenera el cuaderno y te deja en `1-inbox/` el `summary` (qué entró) y el `review` (qué falta y qué no entró, para que escribas debajo de cada punto).
 3. Sube el mazo a Anki:
 
 ```powershell
@@ -36,14 +36,14 @@ No corrijas nada dentro de Anki: cada `push` sobrescribe las tarjetas con lo que
 - Ritmo: `push` fija las nuevas y los repasos máximos al día (`NEW_PER_DAY` y `REVIEWS_PER_DAY` en `anki.py`). Los repasos se estabilizan en unas 5–8 veces las nuevas: con 30 nuevas, unos 200 repasos, unos 40 minutos.
 - Respuestas escritas: pinyin con tildes o con números (`ni3 hao3`) o hanzi con un teclado chino; espacios, mayúsculas y puntuación dan igual. En las frases para decir en voz alta, escribir es opcional.
 - Al dar la vuelta: pinyin, transcripción fonética [AFI], audio, trampas de pronunciación y la familia de la palabra si la tiene (la palabra de la tarjeta, marcada ▸).
-- `5-guide/` reúne todo lo aprendido por temas; `3-digests/`, los summaries de lotes anteriores.
+- `5-notebook/` reúne todo lo aprendido por temas; `3-digests/`, los summaries de lotes anteriores.
 - En Anki, un subdeck por tema; el mes, el tema y el `use` también van como etiquetas, para sesiones filtradas.
 
 ## Usarlo con tus propios apuntes
 
 1. Copia el repositorio (fork o clon).
 2. Vacía el contenido y conserva la estructura:
-   - `2-raw/`, `3-digests/`, `5-guide/`, `4-data/audio/` y el summary y el review de `1-inbox/`: borra su contenido (deja los `README.md`; `5-guide/` se regenera sola).
+   - `2-raw/`, `3-digests/`, `5-notebook/`, `4-data/audio/` y el summary y el review de `1-inbox/`: borra su contenido (deja los `README.md`; `5-notebook/` se regenera sola).
    - `4-data/lexicon/`, `4-data/sentences/` y `4-data/exercises/`: borra los archivos.
    - `4-data/themes.yaml`: ajusta los temas a tu gusto.
 3. En `anki.py`, cambia `DECK_NAME` y `GUID_NAMESPACE` si en tu Anki ya tienes este mazo, para que no se mezclen.
@@ -59,7 +59,7 @@ No corrijas nada dentro de Anki: cada `push` sobrescribe las tarjetas con lo que
 | `2-raw/` | Apuntes ya procesados, tal cual, en una carpeta por lote. |
 | `3-digests/` | Los summaries de lotes anteriores: histórico. No se edita. |
 | `4-data/` | Fuente de verdad del mazo, mantenida por el agente, un archivo por tema: `lexicon/` (diccionario), `sentences/` (frases), `exercises/` (tarjetas), `themes.yaml` (temas y orden) y `audio/`. Esquema en su `README.md`. |
-| `5-guide/` | Todo lo aprendido, un archivo por tema, generado desde `4-data/`. No se edita. |
+| `5-notebook/` | Todo lo aprendido, un archivo por tema, generado desde `4-data/`. No se edita. |
 | `6-output/` | Lo que se genera (`chino-practico.apkg`). No se versiona. |
 | `AGENTS.md` | Reglas para cualquier agente. Lo primero que lee. |
 | `docs/design.md` | Especificación completa: cobertura, tipos de tarjeta, audio, decisiones. |
@@ -68,7 +68,7 @@ No corrijas nada dentro de Anki: cada `push` sobrescribe las tarjetas con lo que
 
 ## Convenciones
 
-- Carpetas y archivos en inglés, en minúsculas, con guiones. Las carpetas del flujo llevan el número de su paso: `1-inbox` → `2-raw` → `3-digests` → `4-data` → `5-guide` → `6-output`. Lo que no es flujo (`docs/`, `anki.py`) va sin número.
+- Carpetas y archivos en inglés, en minúsculas, con guiones. Las carpetas del flujo llevan el número de su paso: `1-inbox` → `2-raw` → `3-digests` → `4-data` → `5-notebook` → `6-output`. Lo que no es flujo (`docs/`, `anki.py`) va sin número.
 - Toda documentación de carpeta se llama `README.md`; las reglas para agentes, `AGENTS.md`. Contenido y documentación en español.
 - Lotes: `NNN-AAAA-MM-DD-tema` (número de orden de procesado, fecha de procesado y tema en palabras: `001-2026-09-25-primeras-clases`). Dentro, cada apunte lleva como prefijo la fecha en que se apuntó (`2026-10-03_notas-bus.txt`, o `mixto_…` si mezcla días); lo pone el agente al archivar. Ese nombre lo comparten la carpeta `2-raw/<lote>/` y el digest `3-digests/<lote>.md`. Nunca números de hoja: el digest se organiza por temas.
 - IDs del diccionario y de los ejercicios con prefijo de tipo: `w.` palabra, `e.` expresión, `c.` carácter, `p.` pronunciación, `g.` grupo, `s.` frase, `x.` ejercicio. Nunca cambian.
@@ -83,13 +83,13 @@ python -m venv .venv
 - Audio: un recurso Azure AI Speech en nivel de pago (S0; céntimos por lote) y `AZURE_SPEECH_KEY` y `AZURE_SPEECH_REGION` como variables de entorno (ver `.env.example`). El nivel gratuito sirve para uso propio, pero su audio no se puede distribuir.
 - Anki desktop con el complemento AnkiConnect (`2055492159`) y sesión iniciada en AnkiWeb para sincronizar con el móvil.
 
-Otros comandos, sobre todo para el agente: `anki.py lookup <término>`, `plan` (qué tarjetas faltan), `scaffold` (las escribe con formato estándar), `gaps` (reparto del mazo), `check`, `guide`, `build`, `close-batch <lote>` (archiva el lote, commit y etiqueta). Pruebas: `.\.venv\Scripts\python -m unittest discover -s tests`. Opciones de `push`: `--prune` borra del mazo las tarjetas cuyo ejercicio ya no existe (antes las lista; si son muchas, exige además `--force`); `--reset` devuelve todo el mazo a nuevas, sin progreso (para fases de pruebas).
+Otros comandos, sobre todo para el agente: `anki.py lookup <término>`, `plan` (qué tarjetas faltan), `scaffold` (las escribe con formato estándar), `gaps` (reparto del mazo), `check`, `notebook`, `build`, `close-batch <lote>` (archiva el lote, commit y etiqueta). Pruebas: `.\.venv\Scripts\python -m unittest discover -s tests`. Opciones de `push`: `--prune` borra del mazo las tarjetas cuyo ejercicio ya no existe (antes las lista; si son muchas, exige además `--force`); `--reset` devuelve todo el mazo a nuevas, sin progreso (para fases de pruebas).
 
 **El audio es sintético**, generado con Azure AI Speech (voz `zh-CN-YunyangNeural`).
 
 ## Licencia y cita
 
 - **Código** (`anki.py`): [MIT](LICENSE).
-- **Contenido** (apuntes, datos, digests, guía, audio y documentación): [CC BY 4.0](LICENSE-CONTENT). Se puede usar para cualquier fin, también comercial, **citando al autor**.
+- **Contenido** (apuntes, datos, digests, cuaderno, audio y documentación): [CC BY 4.0](LICENSE-CONTENT). Se puede usar para cualquier fin, también comercial, **citando al autor**.
 
 Forma de citar: *Yago Mendoza, «apkg-chinese-structs», https://github.com/yago-mendoza/apkg-chinese-structs, CC BY 4.0.*

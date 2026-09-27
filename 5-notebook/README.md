@@ -1,6 +1,6 @@
-<!-- Generado por `anki.py guide` desde 4-data/. No editar: se rehace en cada lote. -->
+<!-- Generado por `anki.py notebook` desde 4-data/. No editar: se rehace en cada lote. -->
 
-# Guía
+# Cuaderno
 
 Todo lo aprendido, por temas. ✅ aprender · 🟡 reconocer · ❌ descartado · 🃏 en el mazo.
 

@@ -1,4 +1,4 @@
-<!-- Generado por `anki.py guide` desde 4-data/. No editar: se rehace en cada lote. -->
+<!-- Generado por `anki.py notebook` desde 4-data/. No editar: se rehace en cada lote. -->
 
 # Familia
 
