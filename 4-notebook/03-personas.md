@@ -6,18 +6,18 @@
 
 - ✅🃏 我 wǒ [wɔ˧˩˧] · yo; me
 - ✅🃏 你 nǐ [ni˧˩˧] · tú
-- ✅🃏 您 nín [nin˧˥] · usted (tú con respeto) · formal / respetuoso
+- ✅🃏 您 nín [nin˧˥] · usted (tú con respeto) · Forma respetuosa de 你: para personas mayores, clientes o desconocidos.
 - ✅🃏 我们 wǒmen [wɔ˧˩˧ mən] · nosotros
 - ✅🃏 你们 nǐmen [ni˧˩˧ mən] · vosotros
 - ✅🃏 他 tā [tʰa˥] · él
 - 🟡🃏 她 tā [tʰa˥] · ella
-- 🟡🃏 它 tā [tʰa˥] · ello (cosas, animales) · animals
+- 🟡🃏 它 tā [tʰa˥] · ello (cosas, animales) · Se usa para animales y cosas.
 - ✅🃏 他们 tāmen [tʰa˥ mən] · ellos
 - ✅🃏 大家 dàjiā [ta˥˩ tɕja˥] · todos, todo el mundo
 - ✅🃏 老师 lǎoshī [lɑʊ˧˩˧ ʂɨ˥] · profesor, profesora
-- ✅🃏 学生 xuéshēng [ɕɥœ˧˥ ʂɤŋ˥] · estudiante · niño estudiando bajo un techo con utensilios de aprendizaje
+- ✅🃏 学生 xuéshēng [ɕɥœ˧˥ ʂɤŋ˥] · estudiante · Un niño que estudia bajo un techo, rodeado de sus útiles de aprendizaje.
 - ✅🃏 朋友 péngyou [pʰɤŋ˧˥ joʊ] · amigo, amiga
-- ✅🃏 工程师 gōngchéngshī [kʊŋ˥ ʈʂʰɤŋ˧˥ ʂɨ˥] · ingeniero, ingeniera · mi profession · 师 aparece en profesiones y maestros, como en 老师.
+- ✅🃏 工程师 gōngchéngshī [kʊŋ˥ ʈʂʰɤŋ˧˥ ʂɨ˥] · ingeniero, ingeniera · Mi profesión. · 师 aparece en profesiones y maestros, como en 老师.
 - ✅🃏 人 rén [ʐən˧˥] · persona
 
 ## 他, 她 y 它: los tres son tā

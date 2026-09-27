@@ -37,7 +37,7 @@ Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de o
 2. El agente lee también el `review-*.md` del lote anterior: cada línea «>» con texto es una instrucción de YAGO (meter, descartar, matizar, corregir); vacía, no cambia nada. Si YAGO pide una tarjeta de matiz, es `type: nuance`.
 3. Para cada elemento: `lookup`; decide si es nuevo, corrige algo o amplía una entrada o grupo. Lo parecido a lo existente (forma, sonido, patrón) va a esa entrada, a `relations` o a un grupo, no a tarjetas sueltas.
 4. Asigna `use` a cada entrada nueva (ver «Cobertura»), con motivo cuando se aparte de las señales de frecuencia.
-5. Guarda los comentarios de YAGO literalmente y en su ámbito (ver «Comentarios»). Lo que parezca privado no va a `3-data/`: se pregunta.
+5. Guarda los comentarios de YAGO en su ámbito, redactados en `text` y con lo que escribió en `original` (ver «Comentarios»). Lo que parezca privado no va a `3-data/`: se pregunta.
 6. Pregunta lo ambiguo (sentido, lectura, si ya lo sabe) en vez de adivinar. Las transcripciones de fotos hechas por LLM traen errores y `[¿?]`: se marcan con ⚠️ en el log y van a «Por verificar» del review, nunca se dan por buenas.
 7. `plan` → `scaffold --write` escribe las tarjetas estándar de lo que falta (siempre con el mismo formato) → el agente revisa sus consignas y redacta a mano lo que `scaffold` marca «a mano» → `check` sin errores ni avisos pendientes.
 8. Escribe el log en `2-digests/summary-<lote>.md` y el review en `1-inbox/review-<lote>.md` (`plan --doc <lote>` lo empieza con «Falta»; el agente completa el resto).
@@ -134,7 +134,7 @@ Un archivo por tema en `3-data/lexicon/` (entradas), `3-data/sentences/` (frases
 | una frase o situación | la frase | junto a esa frase |
 | un truco para una pregunta concreta | el ejercicio | solo en su respuesta |
 
-`kind`: `mnemonic` (subjetivo), `teacher` (solo si consta que lo dijo la profesora), `linguistic` (verificado), `note` (apunte literal de YAGO de origen sin precisar), `sound` (pista de pronunciación de YAGO, literal, como «xiEnshAng»; se muestra como «Cómo suena»). Literal siempre; una mnemotecnia no se presenta como etimología. `private: true` por defecto y nada privado sale en ninguna salida; como el repositorio es público, lo privado ni siquiera se guarda en `3-data/`. Una observación nueva de YAGO («先生 se pronuncia…») va a su hogar según esta tabla y aparece en todas las tarjetas afectadas.
+`kind`: `mnemonic` (subjetivo), `teacher` (solo si consta que lo dijo la profesora), `linguistic` (verificado), `note` (apunte de YAGO de origen sin precisar), `sound` (pista de pronunciación de YAGO, literal, como «xiEnshAng»; se muestra como «Cómo suena»). **Redacción**: `text` es lo que se muestra (tarjetas, cuaderno, web) y va siempre bien escrito: frases completas en español, con mayúsculas y puntuación, sin símbolos de apunte (flechas, `+ intenso`, `w/`), traducido si YAGO lo apuntó en inglés, sin cambiar lo que quería decir (se puede añadir un ejemplo o una precisión comprobada). Lo que escribió se conserva literalmente en `original`, que no sale de `3-data/`. Si su apunte ya está bien escrito, se copia tal cual y no lleva `original`. Una mnemotecnia no se presenta como etimología. `private: true` por defecto y nada privado sale en ninguna salida; como el repositorio es público, lo privado ni siquiera se guarda en `3-data/`. Una observación nueva de YAGO («先生 se pronuncia…») va a su hogar según esta tabla y aparece en todas las tarjetas afectadas.
 
 ## Cobertura: `use`, `plan` y `check`
 

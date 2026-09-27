@@ -8,7 +8,7 @@
 - ✅🃏 中午 zhōngwǔ [ʈʂʊŋ˥ u˧˩˧] · mediodía
 - ✅🃏 下午 xiàwǔ [ɕja˥˩ u˧˩˧] · por la tarde
 - ✅🃏 明天 míngtiān [miŋ˧˥ tʰjɛn˥] · mañana (el día)
-- ✅🃏 见 jiàn [tɕjɛn˥˩] · ver; verse · 目 + 儿 → 见 = see
+- ✅🃏 见 jiàn [tɕjɛn˥˩] · ver; verse · Un ojo 目 sobre unas piernas 儿: alguien que ve. La forma tradicional, 見, lo muestra mejor.
 - ✅🃏 晚上 wǎnshang [wan˧˩˧ ʂɑŋ] · por la noche
 
 ## 上 / 中 / 下 + 午

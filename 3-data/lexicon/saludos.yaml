@@ -26,8 +26,7 @@ entries:
     relations: []
     accept_pinyin_mismatch: segunda sílaba en tono neutro en el habla estándar
     comments:
-      - {kind: linguistic, private: false, date: 2026-09-25, text: 'La segunda 谢 se dice en tono neutro, corta y sin contorno
-          propio.'}
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 'La segunda 谢 se dice en tono neutro, corta y sin contorno propio.'}
   - id: w.qing
     use: say
     role: content
@@ -37,7 +36,7 @@ entries:
     meaning: {es: por favor, en: please}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: 'qǐng nín [verbo] = please you <do smth> (formal)'}
+      - {kind: note, private: false, date: 2026-09-25, text: 'Fórmula cortés: 请您 + verbo, «le ruego que…». Por ejemplo, 请您进 qǐng nín jìn, «pase, por favor».', original: 'qǐng nín [verbo] = please you <do smth> (formal)'}
   - id: w.zaijian
     use: say
     role: content
@@ -47,7 +46,7 @@ entries:
     meaning: {es: adiós, en: goodbye}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: formal / general ♡}
+      - {kind: note, private: false, date: 2026-09-25, text: 'Despedida general, válida en cualquier registro.', original: formal / general ♡}
   - id: w.baibai
     use: say
     role: content
@@ -66,7 +65,7 @@ entries:
     meaning: {es: 'correcto; sí, eso es', en: 'right, correct'}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: duì a / méi cuò (+ intenso)}
+      - {kind: note, private: false, date: 2026-09-25, text: 'Variantes: 对啊 duì a, más natural en conversación, y 没错 méi cuò, más enfático («exacto»).', original: duì a / méi cuò (+ intenso)}
   - id: w.zao
     use: say
     role: content
@@ -76,7 +75,7 @@ entries:
     meaning: {es: ¡buenos días! (informal); temprano, en: morning!; early}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: zǎo ← zǎoshang hǎo}
+      - {kind: note, private: false, date: 2026-09-25, text: 'Forma abreviada de 早上好 zǎoshang hǎo, «buenos días».', original: zǎo ← zǎoshang hǎo}
   - id: e.haode
     use: say
     role: content
@@ -86,7 +85,7 @@ entries:
     meaning: {es: 'vale, de acuerdo', en: OK}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: 'subjetivo, muy bien, gusto'}
+      - {kind: note, private: false, date: 2026-09-25, text: 'Expresa acuerdo o conformidad: «vale», «muy bien», «de acuerdo».', original: 'subjetivo, muy bien, gusto'}
   - id: e.ninhao
     use: say
     role: content
@@ -137,5 +136,4 @@ entries:
       - {ref: e.laoshihao, cue: 'a la profesora: el cargo + 好'}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: 'nínmen hǎo → respectful w/ seniors / teachers; nǐmen hǎo → relaxed,
-          friends (grupo delante de mí); dàjiā hǎo → formal, group (todo el mundo)'}
+      - {kind: note, private: false, date: 2026-09-25, text: '您们好 nínmen hǎo: respetuoso, para personas mayores o profesores. 你们好 nǐmen hǎo: relajado, para un grupo de amigos que tienes delante. 大家好 dàjiā hǎo: para dirigirse a todo el mundo, más formal.', original: 'nínmen hǎo → respectful w/ seniors / teachers; nǐmen hǎo → relaxed, friends (grupo delante de mí); dàjiā hǎo → formal, group (todo el mundo)'}

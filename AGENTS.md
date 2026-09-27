@@ -10,7 +10,7 @@ Leer `docs/goal.md` (objetivo del que aprende: el primer filtro de todo lo que e
 - La estructura no se congela: en cada lote, revisar temas, grupos y `use` y reorganizar si hace falta (`docs/design.md`, «Reorganización»), contándolo en el log del lote.
 - Distinguir objetivo evaluado (`targets`), contexto (`context`) y ejemplo revelado (`reveal`).
 - El LLM redacta y revisa; la compilación consume contenido guardado sin llamar a un LLM. No regenerar ejercicios al compilar.
-- Preservar IDs y comentarios personales literalmente. Guardar cada comentario en el ámbito que describe; separar mnemotecnia, profesora y explicación verificada.
+- Preservar IDs. Los comentarios de YAGO se muestran bien redactados (`text`: español cuidado, mayúsculas y puntuación, sin abreviaturas de apunte) y lo que escribió se guarda tal cual en `original`; si ya estaba bien escrito, va sin cambios y sin `original` (ver «Comentarios» en `docs/design.md`). Guardar cada comentario en el ámbito que describe; separar mnemotecnia, profesora y explicación verificada.
 - Trabajar incrementalmente. No implementar publicaciones, rankings completos o servicios anticipados.
 - Nombres: carpetas y archivos en inglés; documentación de carpeta siempre `README.md`, nunca traducida.
 - Tarjetas estándar con `anki.py scaffold`, no a mano; cierre de lote con `anki.py close-batch`. Tras cambiar `anki.py`, ejecutar las pruebas (`python -m unittest discover -s tests`).

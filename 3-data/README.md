@@ -19,7 +19,7 @@ Fuente de verdad del mazo, mantenida por el agente. Un archivo por tema en cada 
 - `hanzi`, `pinyin`, `meaning: {es, en}`; `standalone: yes | rare | no` (del sentido); `relations`; `accept_pinyin_mismatch` con motivo si pypinyin discrepa con razón.
 - Grupos: `basis: visual | homophone | pattern | set`, `members: [{ref, cue}]` (cue: rasgo distintivo; máximo 4 en contraste).
 - Pronunciación: `title`, `explanation`, `audio_text`.
-- `comments: [{kind, private, date, text}]`, con `kind`: `mnemonic | teacher | linguistic | note | sound`. `private: true` por defecto; el repositorio es público, así que lo privado no se guarda aquí.
+- `comments: [{kind, private, date, text, original}]` (`text` redactado para mostrar; `original`, lo que escribió YAGO, solo si difiere), con `kind`: `mnemonic | teacher | linguistic | note | sound`. `private: true` por defecto; el repositorio es público, así que lo privado no se guarda aquí.
 - `source: {origin, batch, file, date}`.
 
 ## Frases (`sentences/`)

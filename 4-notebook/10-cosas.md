@@ -5,7 +5,7 @@
 ## Vocabulario
 
 - ✅ 在 zài [tsaɪ˥˩] · estar (haciendo algo)
-- ✅🃏 看 kàn [kʰan˥˩] · mirar; leer · mano sobre ojo
+- ✅🃏 看 kàn [kʰan˥˩] · mirar; leer · Una mano 手 sobre el ojo 目, como quien se hace visera para mirar a lo lejos.
 - ✅🃏 看见 kànjiàn [kʰan˥˩ tɕjɛn˥˩] · ver (llegar a ver) · 看 es la acción de mirar; 见 añade el resultado: llegar a ver.
 - ✅🃏 看看 kànkan [kʰan˥˩ kʰan] · echar un vistazo · Repetir el verbo lo suaviza: «mirar un poco», no «mirar dos veces».
 - ✅🃏 书 shū [ʂu˥] · libro

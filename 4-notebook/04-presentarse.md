@@ -10,15 +10,15 @@
 - ✅🃏 中文 Zhōngwén [ʈʂʊŋ˥ wən˧˥] · chino (la lengua) · Modificador + núcleo: 中 «China» especifica 文 «lengua, escritura».
 - ✅🃏 是 shì [ʂɨ˥˩] · ser
 - ✅🃏 不 bù [pu˥˩] · no
-- ✅🃏 吗 ma [ma] · ¿…? (convierte la frase en pregunta de sí o no) · checking for yes/no
-- ✅🃏 呢 ne [nɤ] · ¿y…? (devuelve la pregunta) · neutral → decay, /ə/, “y tú?”
+- ✅🃏 吗 ma [ma] · ¿…? (convierte la frase en pregunta de sí o no) · Partícula final que convierte una afirmación en una pregunta de sí o no.
+- ✅🃏 呢 ne [nɤ] · ¿y…? (devuelve la pregunta) · Tono neutro, corto y apagado, con una vocal parecida a [ə]. Tras una respuesta, devuelve la pregunta: «¿y tú?».
 - ✅🃏 也 yě [jɛ˧˩˧] · también
 - ✅🃏 都 dōu [toʊ˥] · todos, ambos (adverbio)
 - ✅🃏 的 de [tɤ] · de (posesión: 我的 = mi)
 - ✅🃏 叫 jiào [tɕjɑʊ˥˩] · llamarse
 - ✅🃏 什么 shénme [ʂən˧˥ mɤ] · qué
 - ✅🃏 名字 míngzi [miŋ˧˥ tsɯ] · nombre
-- ✅🃏 认识 rènshi [ʐən˥˩ ʂɨ] · conocer (a alguien) · 认识 = reconocer + distinguir = familiarizado con · distinguir algo (de los demás) con conocimiento
+- ✅🃏 认识 rènshi [ʐən˥˩ ʂɨ] · conocer (a alguien) · 认 «reconocer» + 识 «distinguir»: conocer a alguien, estar familiarizado con algo. · 识 aporta la idea de distinguir algo de lo demás porque se conoce.
 - ✅🃏 高兴 gāoxìng [kɑʊ˥ ɕiŋ˥˩] · contento
 
 ## Frases

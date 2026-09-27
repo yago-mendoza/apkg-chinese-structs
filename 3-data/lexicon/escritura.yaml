@@ -30,7 +30,7 @@ entries:
     standalone: rare
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: mnemonic, private: false, date: 2026-09-25, text: some plant emerging}
+      - {kind: mnemonic, private: false, date: 2026-09-25, text: Una planta que brota de la tierra., original: some plant emerging}
   - id: c.ru.enter
     use: read
     kind: character
@@ -56,7 +56,7 @@ entries:
     meaning: {es: boca (como componente), en: mouth (component)}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: boca habla}
+      - {kind: note, private: false, date: 2026-09-25, text: 'Como componente, aparece en caracteres relacionados con la boca o con hablar, como 叫 o 吗.', original: boca habla}
   - id: c.rou.flesh
     use: read
     kind: component
@@ -65,7 +65,7 @@ entries:
     meaning: {es: forma de 月 «luna»; en partes del cuerpo viene de 肉 «carne», en: flesh radical}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: moon + meat / “radical” → 月 = muscle}
+      - {kind: note, private: false, date: 2026-09-25, text: 'Como componente, 月 suele ser 肉 «carne» y no «luna»: aparece en partes del cuerpo, como 胖 o 脸.', original: moon + meat / “radical” → 月 = muscle}
   - id: c.mu.eye
     use: read
     kind: component

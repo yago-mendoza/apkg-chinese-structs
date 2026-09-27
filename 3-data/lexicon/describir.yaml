@@ -10,9 +10,8 @@ entries:
     meaning: {es: 'muy (con adjetivos, a menudo solo enlace)', en: very}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: Sin hěn suena a comparación tipo ‘yo estoy bien / mejor…’}
-      - {kind: linguistic, private: false, date: 2026-09-25, text: 'Con un adjetivo como predicado, 很 suele ser un enlace
-          sin énfasis: 我很好 = estoy bien.'}
+      - {kind: note, private: false, date: 2026-09-25, text: 'Sin 很, el adjetivo suena a comparación implícita: «yo estoy bien (a diferencia de otros)».', original: Sin hěn suena a comparación tipo ‘yo estoy bien / mejor…’}
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 'Con un adjetivo como predicado, 很 suele ser un enlace sin énfasis: 我很好 = estoy bien.'}
   - id: w.hao
     use: say
     role: content
@@ -22,7 +21,7 @@ entries:
     meaning: {es: 'bien, bueno', en: good}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: mnemonic, private: false, date: 2026-09-25, text: 女 + 子 (woman + child)}
+      - {kind: mnemonic, private: false, date: 2026-09-25, text: '女 «mujer» + 子 «niño»: una madre con su hijo, imagen de algo bueno.', original: 女 + 子 (woman + child)}
   - id: w.gao
     use: say
     role: content
@@ -50,8 +49,7 @@ entries:
     meaning: {es: gordo, en: fat}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments:
-      - {kind: linguistic, private: false, date: 2026-09-25, text: 'El 月 de la izquierda es 肉 «carne», como en muchas partes
-          del cuerpo; no «luna».'}
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 'El 月 de la izquierda es 肉 «carne», como en muchas partes del cuerpo; no «luna».'}
   - id: w.shou
     use: hear
     role: content
@@ -108,7 +106,7 @@ entries:
     meaning: {es: 'mono, adorable', en: cute}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments:
-      - {kind: mnemonic, private: false, date: 2026-09-25, text: like kawaii but mouth asleep}
+      - {kind: mnemonic, private: false, date: 2026-09-25, text: Suena como «kawaii» dicho con la boca dormida., original: like kawaii but mouth asleep}
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'El parecido con «kawaii» es solo de sonido, no histórico.'}
   - id: w.youmo
     use: hear

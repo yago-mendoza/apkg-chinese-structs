@@ -6,7 +6,7 @@
 
 - ✅🃏 喝 hē [xɤ˥] · beber
 - ✅🃏 水 shuǐ [ʂweɪ˧˩˧] · agua
-- ✅🃏 想 xiǎng [ɕjɑŋ˧˩˧] · querer (hacer algo); pensar · think / desire
+- ✅🃏 想 xiǎng [ɕjɑŋ˧˩˧] · querer (hacer algo); pensar · Dos sentidos: «pensar» y «querer, tener ganas de».
 - ✅🃏 去 qù [tɕʰy˥˩] · ir
 - ✅🃏 买 mǎi [maɪ˧˩˧] · comprar
 - ✅🃏 水果 shuǐguǒ [ʂweɪ˧˩˧ kwɔ˧˩˧] · fruta

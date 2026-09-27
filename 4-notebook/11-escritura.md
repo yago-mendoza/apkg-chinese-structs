@@ -6,11 +6,11 @@
 
 - 🟡🃏 午 wǔ · mediodía
 - 🟡🃏 牛 niú [njoʊ˧˥] · vaca, buey
-- 🟡🃏 生 shēng · vida; nacer · some plant emerging
+- 🟡🃏 生 shēng · vida; nacer · Una planta que brota de la tierra.
 - 🟡🃏 入 rù · entrar
 - 🟡🃏 女 nǚ · mujer (como componente)
-- 🟡🃏 口 kǒu · boca (como componente) · boca habla
-- 🟡🃏 月 yuè · forma de 月 «luna»; en partes del cuerpo viene de 肉 «carne» · moon + meat / “radical” → 月 = muscle
+- 🟡🃏 口 kǒu · boca (como componente) · Como componente, aparece en caracteres relacionados con la boca o con hablar, como 叫 o 吗.
+- 🟡🃏 月 yuè · forma de 月 «luna»; en partes del cuerpo viene de 肉 «carne» · Como componente, 月 suele ser 肉 «carne» y no «luna»: aparece en partes del cuerpo, como 胖 o 脸.
 - 🟡🃏 目 mù · ojo (como componente)
 
 ## 生, 牛 y 午

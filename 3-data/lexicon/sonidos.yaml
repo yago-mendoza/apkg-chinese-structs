@@ -19,7 +19,7 @@ entries:
     audio_text: 不是
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: '4 + 4 → 2 + 4. Ej.: bú shì ← bù shì'}
+      - {kind: note, private: false, date: 2026-09-25, text: 'Dos cuartos tonos seguidos: el primero pasa a segundo (4 + 4 se pronuncia 2 + 4). Por ejemplo, bù shì se dice bú shì.', original: '4 + 4 → 2 + 4. Ej.: bú shì ← bù shì'}
   - id: p.third-tone-half
     use: say
     kind: pronunciation
@@ -29,9 +29,8 @@ entries:
     audio_text: 老师
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: 'in fact, ǎ accent is usually varying / subtle; it’s like we
-          don’t do it besides when emphasis'}
-      - {kind: note, private: false, date: 2026-09-25, text: 'No exageres ↓ tono: CONTRASTE >>> ↓ tono'}
+      - {kind: note, private: false, date: 2026-09-25, text: 'En la práctica, el tercer tono completo (bajar y volver a subir) apenas se oye: aparece sobre todo al enfatizar o en una sílaba aislada.', original: 'in fact, ǎ accent is usually varying / subtle; it’s like we don’t do it besides when emphasis'}
+      - {kind: note, private: false, date: 2026-09-25, text: 'No exageres la bajada: importa más el contraste con los tonos que la rodean que lo grave que llegues.', original: 'No exageres ↓ tono: CONTRASTE >>> ↓ tono'}
   - id: p.neutral-tone
     use: say
     kind: pronunciation
@@ -50,7 +49,7 @@ entries:
     audio_text: 爸爸，朋友
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: use paper to practice!}
+      - {kind: note, private: false, date: 2026-09-25, text: 'Para practicar, pon una hoja de papel delante de la boca: con p, t y k debe moverse; con b, d y g, no.', original: use paper to practice!}
   - id: p.jqx-zhchsh
     use: say
     kind: pronunciation
@@ -61,4 +60,4 @@ entries:
     audio_text: 学生
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: No se maltratan porque no comparten finales}
+      - {kind: note, private: false, date: 2026-09-25, text: 'Las dos series no se confunden por escrito porque no comparten finales: j, q y x solo van delante de i o ü, y zh, ch y sh nunca.', original: No se maltratan porque no comparten finales}

@@ -11,14 +11,14 @@ Cuando dos sílabas en tercer tono van seguidas, la primera se pronuncia como se
 
 不 es bù, pero delante de otro cuarto tono pasa a segundo: 不是 se dice bú shì. En pinyin se suele escribir ya cambiado.
 
-- 4 + 4 → 2 + 4. Ej.: bú shì ← bù shì
+- Dos cuartos tonos seguidos: el primero pasa a segundo (4 + 4 se pronuncia 2 + 4). Por ejemplo, bù shì se dice bú shì.
 
 ## El tercer tono, a medias
 
 Delante de un 1.º, 2.º, 4.º o neutro, el tercer tono solo baja y no vuelve a subir: en 老师 la sílaba lǎo solo baja. El tercer tono completo aparece sobre todo en una sílaba aislada o con énfasis.
 
-- in fact, ǎ accent is usually varying / subtle; it’s like we don’t do it besides when emphasis
-- No exageres ↓ tono: CONTRASTE >>> ↓ tono
+- En la práctica, el tercer tono completo (bajar y volver a subir) apenas se oye: aparece sobre todo al enfatizar o en una sílaba aislada.
+- No exageres la bajada: importa más el contraste con los tonos que la rodean que lo grave que llegues.
 
 ## Tono neutro
 
@@ -29,10 +29,10 @@ Sílaba corta y ligera, sin contorno propio; su altura depende de la sílaba ant
 
 La diferencia no es sonora/sorda como en español: b, d y g van sin aire [p t k]; p, t y k llevan un soplo [pʰ tʰ kʰ]. 爸 bà [pa˥˩], sin aire; 朋 péng [pʰɤŋ˧˥], con aire.
 
-- use paper to practice!
+- Para practicar, pon una hoja de papel delante de la boca: con p, t y k debe moverse; con b, d y g, no.
 
 ## j q x frente a zh ch sh r
 
 j, q, x [tɕ tɕʰ ɕ]: lengua plana, con la punta abajo, detrás de los dientes (学 xué [ɕɥœ˧˥]). zh, ch, sh, r [ʈʂ ʈʂʰ ʂ ʐ]: punta de la lengua curvada hacia arriba (生 shēng [ʂɤŋ˥]). En la escritura no se confunden: j, q, x solo van delante de i o ü.
 
-- No se maltratan porque no comparten finales
+- Las dos series no se confunden por escrito porque no comparten finales: j, q y x solo van delante de i o ü, y zh, ch y sh nunca.

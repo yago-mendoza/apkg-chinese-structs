@@ -20,7 +20,7 @@ entries:
     meaning: {es: mirar; leer, en: to look; to read}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: mnemonic, private: false, date: 2026-09-25, text: mano sobre ojo}
+      - {kind: mnemonic, private: false, date: 2026-09-25, text: 'Una mano 手 sobre el ojo 目, como quien se hace visera para mirar a lo lejos.', original: mano sobre ojo}
   - id: w.kanjian
     use: hear
     role: content
@@ -30,8 +30,7 @@ entries:
     meaning: {es: ver (llegar a ver), en: to see}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments:
-      - {kind: linguistic, private: false, date: 2026-09-25, text: '看 es la acción de mirar; 见 añade el resultado: llegar
-          a ver.'}
+      - {kind: linguistic, private: false, date: 2026-09-25, text: '看 es la acción de mirar; 见 añade el resultado: llegar a ver.'}
   - id: w.kankan
     use: say
     role: content
@@ -42,8 +41,7 @@ entries:
     accept_pinyin_mismatch: la repetición del verbo va en tono neutro
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments:
-      - {kind: linguistic, private: false, date: 2026-09-25, text: 'Repetir el verbo lo suaviza: «mirar un poco», no «mirar
-          dos veces».'}
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 'Repetir el verbo lo suaviza: «mirar un poco», no «mirar dos veces».'}
   - id: w.shu
     use: say
     role: content
