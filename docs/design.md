@@ -237,7 +237,7 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 
 ## Pruebas
 
-`tests/test_anki.py` (unittest, sin dependencias nuevas): pinyin, tonos, sílabas y erhua, AFI, trampas fonéticas, velocidad del audio, tarjetas exigidas por `use`, ejemplos que respetan el sentido, `scaffold` completo, validez de los datos del repositorio, temas bien formados, nombres de lote y la comparación de respuestas en JavaScript (con node, si está). Tras cambiar `anki.py`: `.\.venv\Scripts\python -m unittest discover -s tests`.
+`tests/test_anki.py` (unittest, sin dependencias nuevas): pinyin, tonos, sílabas y erhua, AFI, trampas fonéticas, velocidad del audio, tarjetas exigidas por `use`, ejemplos que respetan el sentido, `scaffold` completo, validez de los datos del repositorio, temas bien formados, nombres de lote y la comparación de respuestas en JavaScript (con node, si está). `tests/test_anki_connect.py` prueba contra un AnkiConnect simulado, con mazos ajenos en la colección, que recolocar, podar, reiniciar y fijar límites no tocan nada fuera de este mazo y que la poda masiva se frena sin `--force`. Tras cambiar `anki.py`: `.\.venv\Scripts\python -m unittest discover -s tests`. La CI de GitHub (`.github/workflows/check.yml`) ejecuta `check` y las pruebas en cada push.
 
 ## Estado y fases
 
