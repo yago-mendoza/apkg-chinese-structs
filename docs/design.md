@@ -151,7 +151,7 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 
 ## Digest del lote
 
-`4-digests/<lote>.md`, para YAGO: todo el contenido del lote, no solo lo que entra al mazo, comprimido y **por temas, sin números de hoja ni de página**. Una línea por elemento: `汉字 pinyin · significado · pista (relación, mnemotecnia, pronunciación) · ejemplo`, con su marca ✅ 🟡 ❌ (derivada de `use`), 🃏 si está en el mazo y ⚠️ si corrige algo de los apuntes (glosas, transcripción). Al final: qué entró y qué ✅ queda pendiente. Histórico: no se reescribe.
+`4-digests/<lote>.md`, para YAGO: todo el contenido del lote, no solo lo que entra al mazo, comprimido y **por temas, sin números de hoja ni de página**. Una línea por elemento: `汉字 pinyin · significado · pista (relación, mnemotecnia, pronunciación) · ejemplo`, con su marca ✅ 🟡 ❌ (derivada de `use`), 🃏 si está en el mazo y ⚠️ si corrige algo de los apuntes (glosas, transcripción). Al final: qué entró y qué ✅ queda pendiente. Histórico: no se reescribe. Si YAGO corrige algo de un digest (por el chat o por el inbox), el cambio se aplica en `3-data/` y el digest recibe al final una sección «Correcciones posteriores» con la fecha y lo que cambió; lo anterior no se toca.
 
 ## Repositorio y privacidad
 
