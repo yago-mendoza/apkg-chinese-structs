@@ -1,126 +1,115 @@
-# Chino práctico — mazo de Anki
+# apkg-chinese-structs
 
-Un sistema para convertir apuntes de clase de mandarín en un mazo de Anki con pinyin, tonos, audio y pronunciación. Dejas tus apuntes en bruto; un agente de código (LLM) los convierte en tarjetas siguiendo una especificación; `anki.py` comprueba el resultado, genera el audio y lo mete en Anki.
+Turn raw Mandarin class notes into a structured Anki deck with pinyin, tones, IPA, slowed-down audio and pronunciation rules. You drop notes into a folder; a coding agent (an LLM) turns them into dictionary entries, sentences and cards following a written specification; `anki.py` validates the result, synthesizes the audio and pushes the deck into Anki.
 
-El repositorio trae como ejemplo real el mazo de Yago Mendoza, construido con sus apuntes. Se puede usar tal cual o vaciar para trabajar con los tuyos.
+The repository ships with a real, working example: **🐉 Chino práctico**, the deck of Yago Mendoza, built from his own classes. The deck, the notes and the working documents are in Spanish; the system itself is language-agnostic on the learner's side. Use it as is, or empty it and start with your own notes.
 
 ## TL;DR
 
-Solo haces dos cosas: dejar apuntes en `1-inbox/` y, cuando te apetezca, decirle al agente «procesa el inbox». Él los convierte en tarjetas, genera el audio y las mete en Anki. Estudias en Anki. Ya está. (Anki tiene que estar abierto cuando el agente sube las tarjetas; si estudias en el móvil, sincronizas y listo.)
+You do two things: put notes in `1-inbox/`, and every now and then tell the agent *process the inbox*. It updates the deck, generates the audio and loads everything into Anki. You study in Anki. That's it. (Anki desktop has to be open while the agent pushes; if you study on your phone, sync as usual.)
 
-**`1-inbox/`: donde escribes.** Apuntes tal como salen: notas del móvil, fotos pasadas a texto, listas a medias, dudas. Sin formato. Lo único que ayuda es poner la fecha en que apuntaste cada cosa. Aquí te deja también el agente el review del último lote: lo que le falta al mazo, lo que no entró y por qué, lo que conviene comprobar. Escribes debajo de cada punto lo que quieras y entra en el siguiente lote.
+**`1-inbox/`: where you write.** Notes exactly as they come out: phone notes, transcribed photos, half-finished lists, questions. No format required; the only thing that helps is the date you wrote each thing down. After each batch, the agent leaves a **review** here: what the deck is missing, what did not go in and why, and what is worth double-checking. You answer under each point, and your answers go into the next batch.
 
-**`1-inbox/history/`: el historial del inbox.** Al procesar un lote, el agente archiva ahí todo lo que pasó por el inbox, tal cual, en una carpeta por lote: tus apuntes y el review que contestaste. No se lee ni se edita; sirve para volver al original.
+**`1-inbox/history/`: the inbox's archive.** When a batch is closed, everything that went through the inbox (your notes and the review you answered) is filed here untouched, one folder per batch. You never edit it; it is there to go back to the original.
 
-**`2-digests/`: el log de cada lote.** El acta de lo que hizo el agente: qué entró, qué no y por qué, qué corrigió de tus apuntes y qué reorganizó. No se edita; es la memoria del sistema. Lo que admite tu opinión no está aquí, está en el review.
+**`2-digests/`: one log per batch.** The agent's record of what it did: what went in, what did not and why, what it corrected in your notes and what it reorganized. Read-only; it is the system's memory. Anything that needs your opinion is in the review, not here.
 
-**Lotes.** Un lote es lo que haya en el inbox cuando pides procesarlo; la frecuencia la eliges tú. Lotes cortos te devuelven el review antes. Lotes grandes dejan ver más material junto al decidir temas y grupos. Todavía está por ver qué funciona mejor: si muchos lotes pequeños fijan una organización que luego no encaja, o si mucho texto de golpe organiza mejor. Por eso la estructura no se congela: en cada lote el agente revisa temas y grupos y reorganiza si hace falta, sin perder tu progreso.
+**`3-data/`: the database.** Everything the deck knows, one file per theme: the lexicon (words, expressions, characters, pronunciation rules and groups of easily confused items), sentences, cards, the list of themes, and the generated audio. Only the agent edits it.
 
-**`3-data/`: la base de datos.** Todo lo que sabe el mazo, un archivo por tema: el léxico (palabras, expresiones, caracteres, reglas de pronunciación y grupos de cosas que se confunden), las frases, las tarjetas, la lista de temas y el audio generado. Solo la edita el agente.
+**`4-notebook/`: the same database, readable.** Everything learned so far, by theme, with pinyin, meaning, sentences and notes. Open it to look something up without Anki. Regenerated automatically.
 
-**`4-notebook/`: la misma base, para leer.** Todo lo aprendido, por temas, con pinyin, significado, frases y notas. Es lo que abres para repasar o buscar algo sin Anki. Se regenera sola.
+**`5-output/`: what comes out.** The compiled deck (`.apkg`) and a public dictionary (`dictionary.json`), which powers [infraphysics.net/corner/chinese](https://infraphysics.net/corner/chinese).
 
-**`5-output/`: lo que sale.** El mazo compilado (`.apkg`) y el diccionario público (`dictionary.json`), que es lo que muestra infraphysics.net/corner/chinese.
+**Batches.** A batch is whatever is in the inbox when you ask for it to be processed; how often is up to you. Small, frequent batches give you the review sooner; large ones let the agent see more material at once when deciding themes and groups. Which works better is still an open question, which is why the structure is never frozen: every batch, the agent revisits themes and groups and reorganizes when needed, without losing your progress.
 
-**Por qué no se desincroniza nada.** `3-data/` es la única fuente: el cuaderno, el mazo y el diccionario se generan de ella, así que no pueden contradecirse. Antes de que un cambio llegue a Anki, `anki.py check` lo valida (formato, pinyin, IDs, tarjetas que faltan o sobran, audio). Al cerrar un lote se regenera todo, se hace commit y se etiqueta el lote: cualquier estado anterior se puede recuperar.
+**Why nothing drifts out of sync.** `3-data/` is the single source of truth. The notebook, the deck and the dictionary are all generated from it, so they cannot disagree. Before a change reaches Anki, `anki.py check` validates it (schema, pinyin, IDs, missing or redundant cards, audio). Closing a batch regenerates everything, commits and tags it, so any earlier state can be recovered.
 
-## Lo que no tienes que vigilar
+## What you don't need to worry about
 
-- **Tarjetas repetidas o redundantes.** `check` detecta las que piden lo mismo y el agente las fusiona.
-- **Palabras sueltas que nunca usas.** Toda palabra que quieres saber decir tiene que aparecer en alguna frase; si no hay ninguna, el review te la pide.
-- **Errores en tus apuntes.** El agente corrige glosas y lecturas mal copiadas, lo marca ⚠️ en el log y te pregunta lo dudoso en el review.
-- **Temas mal elegidos.** Se reorganizan en cualquier lote. Cada tarjeta tiene un ID fijo, así que moverla o corregirla no borra su historial en Anki.
-- **Cuántas tarjetas hacer y de qué tipo.** Lo calcula `anki.py` según para qué quieres cada palabra (leerla, entenderla al oírla o decirla).
-- **El audio.** Se genera solo para lo que falta y se guarda; no se paga dos veces.
-- **Tus otros mazos de Anki.** El sistema solo toca el suyo.
-- **Corregir cosas dentro de Anki.** No hace falta, y se perdería: díselo al agente y lo arregla en la fuente.
-- **Qué estudiar hoy.** El mazo padre, que ya mezcla lo nuevo y lo viejo en orden.
+- **Duplicate or redundant cards.** `check` flags cards that test the same thing; the agent merges them.
+- **Words you can say but never use.** Every word you want to be able to say must appear in at least one sentence; if none does, the review asks you for one.
+- **Mistakes in your notes.** The agent fixes misread glosses and readings, marks them ⚠️ in the log and asks about anything doubtful in the review.
+- **Choosing themes up front.** Themes are reorganized whenever needed. Every card has a permanent ID, so moving or correcting it keeps its review history in Anki.
+- **How many cards, and of what kind.** `anki.py` derives them from what you need each word for: reading it, understanding it by ear, or saying it.
+- **Audio.** Only missing audio is synthesized, and it is cached; nothing is paid for twice.
+- **Editing cards in Anki.** Don't: every push overwrites the deck from `3-data/`. Tell the agent instead and it fixes the source.
 
-## Aprendizaje activo, no solo tarjetas generadas
+## What makes it more than generated flashcards
 
-Generar tarjetas es la parte fácil. Lo que hace útil este sistema es que el agente no solo produce: **devuelve trabajo al que aprende** y cierra el ciclo.
+Generating cards is the easy part. What makes the system useful is that the agent hands work back to the learner and closes the loop:
 
-- **Deberes después de cada lote.** El agente deja en `1-inbox/` un `review-<lote>.md`: lo que falta (palabras que quieres decir y aún no aparecen en ninguna frase), lo que no entró y por qué, y lo que conviene comprobar en el cuaderno. Debajo de cada punto hay una línea `>` para escribir libremente; vuelve como entrada del siguiente lote. El agente pide frases reales en vez de inventarlas.
-- **Filtrar, no acumular.** Lo que no entra se explica: 🟡 solo para reconocer, ❌ literario, arcaico o en desuso, para tacharlo en los apuntes a mano. Las glosas mal leídas se corrigen con ⚠️. Si un matiz te interesa, puede volver como tarjeta de matiz.
-- **Entender lo que apuntaste.** Cada lote deja un log en `2-digests/`: qué entró, qué no y por qué, correcciones y reorganizaciones. Lo que admite tu opinión (incluidos los matices de lo que sí entró) está en el review.
-- **Recordar, no releer.** Las tarjetas piden producir: escribir el pinyin o los hanzi, marcar los tonos con dígitos, decir frases en voz alta y compararlas con el audio. Cada palabra tiene las tarjetas que exige para qué la necesitas (leer, entender al oír, decir).
-- **Contraste y contexto.** Las palabras que se confunden (他/她/它, 生/牛/午) o que forman serie (上午/中午/下午/晚上) aparecen juntas al dar la vuelta, y las palabras que quieres decir tienen que aparecer en frases.
-- **Pronunciación explícita.** Transcripción fonética, trampas del pinyin para hispanohablantes y reglas de sandhi en las tarjetas donde toca pronunciar o reconocer de oído.
-- **Reglas que no dependen del modelo.** Qué tarjetas faltan, qué sobra y qué falta por practicar lo calcula `anki.py` a partir de una especificación (`docs/design.md`). El modelo redacta; el código comprueba. Un modelo mejor mejora el mazo sin cambiar el sistema.
+- **A review after every batch**, with a line to answer under each point. The agent asks for real sentences instead of inventing them, points out thematic gaps (you can say *morning* and *evening*, but not *afternoon*) and suggests what to learn next at your level.
+- **Filtering, not hoarding.** Nothing is silently dropped: 🟡 recognize only, ❌ literary, archaic or obsolete, each with its reason.
+- **Recall, not rereading.** Cards ask you to produce: type the pinyin or the hanzi, mark tones with digits, say sentences aloud and compare with the audio.
+- **Contrast and context.** Items that get confused (他/她/它, 生/牛/午) or form a series (上午/中午/下午/晚上) are shown together on the back of the card.
+- **Explicit pronunciation.** IPA, pinyin traps for Spanish speakers, and tone-sandhi rules wherever a card asks you to speak or listen.
+- **Rules that do not depend on the model.** Which cards are required, which are redundant and what is still missing is computed by `anki.py` from a written specification. The model writes; the code checks. A better model improves the deck without changing the system.
 
-## Uso
+## Getting started
 
-1. Deja tus apuntes en bruto en `1-inbox/`: cualquier archivo, sin formato. Pon la fecha de lo apuntado, al principio o en cada parte si mezclas días.
-2. Abre un agente de código en la carpeta y pídele «procesa el inbox». Edita el mazo, regenera el cuaderno, deja el log del lote en `2-digests/` y te deja en `1-inbox/` el `review`, para que escribas debajo de cada punto.
-3. Pide que lo suba a Anki (con Anki abierto), o hazlo tú:
-
-```powershell
-.\.venv\Scripts\python anki.py audio   # genera solo el audio que falta (Azure Speech)
-.\.venv\Scripts\python anki.py push    # compila, abre Anki, importa, ajusta límites y orden, y sincroniza
-```
-
-No corrijas nada dentro de Anki: cada `push` sobrescribe las tarjetas con lo que hay en `3-data/`. Las correcciones se piden al agente.
-
-## Cómo estudiar
-
-- Estudia el mazo padre (**🐉 Chino práctico**): mezcla lo nuevo y lo antiguo de todos los temas.
-- Colores de Anki: 🔵 nuevas · 🟠 aprendiendo (vuelven a los pocos minutos) · 🟢 repasos (lo aprendido otro día que toca recordar). «¡Felicidades!» es que no queda nada por hoy.
-- Ritmo: `push` fija las nuevas y los repasos máximos al día (`NEW_PER_DAY` y `REVIEWS_PER_DAY` en `anki.py`). Los repasos se estabilizan en unas 5–8 veces las nuevas: con 30 nuevas, unos 200 repasos, unos 40 minutos.
-- Respuestas escritas: pinyin con tildes o con números (`ni3 hao3`) o hanzi con un teclado chino; espacios, mayúsculas y puntuación dan igual. En las frases para decir en voz alta, escribir es opcional.
-- Al dar la vuelta: pinyin, transcripción fonética [AFI], audio, trampas de pronunciación y la familia de la palabra si la tiene (la palabra de la tarjeta, marcada ▸).
-- `4-notebook/` reúne todo lo aprendido por temas; `2-digests/`, el log de cada lote.
-- En Anki, un subdeck por tema; el mes, el tema y el `use` también van como etiquetas, para sesiones filtradas.
-
-## Usarlo con tus propios apuntes
-
-1. Copia el repositorio (fork o clon).
-2. Vacía el contenido y conserva la estructura:
-   - `1-inbox/history/`, `2-digests/`, `4-notebook/`, `3-data/audio/` y el review de `1-inbox/`: borra su contenido (deja los `README.md`; `4-notebook/` se regenera sola).
-   - `3-data/lexicon/`, `3-data/sentences/` y `3-data/exercises/`: borra los archivos.
-   - `3-data/themes.yaml`: ajusta los temas a tu gusto.
-3. En `anki.py`, cambia `DECK_NAME` y `GUID_NAMESPACE` si en tu Anki ya tienes este mazo, para que no se mezclen.
-4. Adapta a ti la sección «Objetivo» de `docs/design.md` (nivel, idioma de apoyo, para qué estudias) y sustituye `docs/owner.md` por tus propias notas. Las trampas fonéticas están pensadas para hispanohablantes.
-5. Configura Azure Speech y Anki (ver «Configuración») y deja tu primer lote en `1-inbox/`.
-6. Pide a tu agente «procesa el inbox». `AGENTS.md` y `docs/design.md` le dicen todo lo que necesita.
-
-## Qué más hay
-
-- `AGENTS.md`: reglas para cualquier agente; lo primero que lee.
-- `docs/design.md`: la especificación completa (cobertura, tipos de tarjeta, audio, decisiones).
-- `docs/owner.md`: la configuración y las decisiones del dueño de este mazo.
-- `anki.py`: consulta, validación, cobertura, audio, compilación e importación. No llama a ningún LLM.
-- `sources/`: listas externas de consulta (hoy, el vocabulario del HSK 3.0), cada una con su origen y su licencia.
-
-## Listas de frecuencia y HSK
-
-El agente decide qué entra y cuánto se practica sobre todo por tus apuntes y tus necesidades. Dos tipos de lista externa sirven de señal, nunca de fuente: la frecuencia hablada (palabras más usadas en subtítulos de películas, de Dong Chinese) dice qué es núcleo y qué es raro, y los niveles del HSK 3.0 (lista de `drkameleon/complete-hsk-vocabulary`, MIT) sirven para ver huecos y saber en qué nivel estás. No se importa ninguna lista entera: una palabra solo entra cuando aparece en tus apuntes o cuando el review te la propone y la aceptas.
-
-Estado: la lista del HSK 3.0 ya está en `sources/hsk/` (con su licencia), pero `anki.py` aún no la usa (fase 4 de `docs/design.md`). La de Dong Chinese no se descarga: su web pide que no la rastreen programas.
-
-## Convenciones
-
-- Carpetas y archivos en inglés, en minúsculas, con guiones. Las carpetas del flujo llevan el número de su paso: `1-inbox` (con su historial en `history/`) → `2-digests` → `3-data` → `4-notebook` → `5-output`. Lo que no es flujo (`docs/`, `anki.py`) va sin número.
-- Toda documentación de carpeta se llama `README.md`; las reglas para agentes, `AGENTS.md`. Contenido y documentación en español.
-- Lotes: `NNN-AAAA-MM-DD-tema` (número de orden de procesado, fecha de procesado y tema en palabras: `001-2026-09-25-primeras-clases`). Dentro, cada apunte lleva como prefijo la fecha en que se apuntó (`2026-10-03_notas-bus.txt`, o `mixto_…` si mezcla días); lo pone el agente al archivar. Ese nombre lo comparten la carpeta `1-inbox/history/<lote>/`, el log `2-digests/summary-<lote>.md` y el review `review-<lote>.md`. Nunca números de hoja: log y review se organizan por temas.
-- IDs del diccionario y de los ejercicios con prefijo de tipo: `w.` palabra, `e.` expresión, `c.` carácter, `p.` pronunciación, `g.` grupo, `s.` frase, `x.` ejercicio. Nunca cambian.
-
-## Configuración (una vez)
+Setup, once (Windows shown; any OS with Python 3 works):
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\python -m pip install -r requirements.txt
 ```
 
-- Audio: un recurso Azure AI Speech en nivel de pago (S0; céntimos por lote) y `AZURE_SPEECH_KEY` y `AZURE_SPEECH_REGION` como variables de entorno (ver `.env.example`). El nivel gratuito sirve para uso propio, pero su audio no se puede distribuir.
-- Anki desktop con el complemento AnkiConnect (`2055492159`) y sesión iniciada en AnkiWeb para sincronizar con el móvil.
+- **Audio**: an Azure AI Speech resource on the paid S0 tier (a few cents per batch), with `AZURE_SPEECH_KEY` and `AZURE_SPEECH_REGION` set as environment variables (see `.env.example`). The free F0 tier is fine for personal use, but its audio may not be redistributed.
+- **Anki**: Anki desktop with the AnkiConnect add-on (`2055492159`), signed in to AnkiWeb to sync with your phone.
 
-Otros comandos, sobre todo para el agente: `anki.py lookup <término>`, `plan` (qué tarjetas faltan), `scaffold` (las escribe con formato estándar), `gaps` (reparto del mazo), `check`, `notebook`, `build`, `close-batch <lote>` (archiva el lote, commit y etiqueta), `export` (el diccionario público `5-output/dictionary.json`, que usa infraphysics.net/corner/chinese). Pruebas: `.\.venv\Scripts\python -m unittest discover -s tests`. Opciones de `push`: `--prune` borra del mazo las tarjetas cuyo ejercicio ya no existe (antes las lista; si son muchas, exige además `--force`); `--reset` devuelve todo el mazo a nuevas, sin progreso (para fases de pruebas).
+Then, for each batch:
 
-**El audio es sintético**, generado con Azure AI Speech (voz `zh-CN-YunyangNeural`).
+1. Put your notes in `1-inbox/`, with the date you wrote them.
+2. Open a coding agent in the repository and ask it to *process the inbox*.
+3. Answer the review it leaves in `1-inbox/` whenever you like; your answers go into the next batch.
 
-## Licencia y cita
+The agent pushes the deck itself. To do it by hand:
 
-- **Código** (`anki.py`): [MIT](LICENSE).
-- **Contenido** (apuntes, datos, digests, cuaderno, audio y documentación): [CC BY 4.0](LICENSE-CONTENT). Se puede usar para cualquier fin, también comercial, **citando al autor**.
+```powershell
+.\.venv\Scripts\python anki.py audio   # synthesize only the missing audio
+.\.venv\Scripts\python anki.py push    # build, open Anki, import, set limits and order, sync
+```
 
-Forma de citar: *Yago Mendoza, «apkg-chinese-structs», https://github.com/yago-mendoza/apkg-chinese-structs, CC BY 4.0.*
+## Studying
+
+- Study the parent deck; it mixes new and review cards across themes. Each theme is a subdeck, and theme, month and purpose are also tags for filtered sessions.
+- Typed answers accept pinyin with tone marks or digits (`ni3 hao3`) or hanzi from a Chinese keyboard; spaces, case and punctuation are ignored. For sentences you say aloud, typing is optional.
+- The back of each card shows pinyin, IPA, audio, pronunciation traps and, when there is one, the word's family, with the tested word marked ▸.
+- `push` sets the daily limits (`NEW_PER_DAY`, `REVIEWS_PER_DAY` in `anki.py`). Reviews settle at roughly 5 to 8 times the new cards: 30 new cards a day means about 200 reviews, around 40 minutes.
+
+## Using it with your own notes
+
+1. Fork or clone the repository.
+2. Empty the content but keep the structure: clear `1-inbox/history/`, `2-digests/`, `3-data/audio/` and the review in `1-inbox/` (keep each `README.md`); delete the files in `3-data/lexicon/`, `3-data/sentences/` and `3-data/exercises/`; adjust `3-data/themes.yaml`. `4-notebook/` regenerates itself.
+3. In `anki.py`, change `DECK_NAME` and `GUID_NAMESPACE` so your deck never collides with this one.
+4. Rewrite `docs/goal.md` for yourself (who is learning, why, what should go in, in what order) and replace `docs/owner.md` with your own notes. The pronunciation traps assume a Spanish speaker.
+5. Set up Azure and Anki as above, drop your first notes in `1-inbox/` and ask your agent to *process the inbox*. `AGENTS.md` tells it everything else.
+
+## Reference
+
+**Documents**
+
+- `AGENTS.md`: rules for any agent; the first thing it reads.
+- `docs/goal.md`: the learner's goal: the first filter for everything that goes in.
+- `docs/design.md`: the full specification (coverage, card types, audio, decisions).
+- `docs/owner.md`: this deck owner's setup and decisions.
+- `sources/`: external reference lists, each with its origin and license.
+
+**Commands** (mostly for the agent): `lookup <term>`, `plan` (missing cards), `scaffold` (writes them in the standard format), `gaps` (how the deck is distributed), `check`, `notebook`, `build`, `export` (the public dictionary), `close-batch <batch>` (archive, commit and tag), `audio`, `push`. `push --prune` removes cards whose exercise no longer exists (it lists them first and requires `--force` if there are many); `push --reset` returns the whole deck to new, with no progress. Tests: `.\.venv\Scripts\python -m unittest discover -s tests`.
+
+**Levels and frequency.** Your notes and your goal decide what goes in. External lists are signals, never sources: the HSK 3.0 word list (`sources/hsk/`, from [drkameleon/complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary), MIT) is used to order items by difficulty, spot gaps and tell where you stand. No list is ever imported wholesale.
+
+**Conventions**
+
+- File and folder names in English, lowercase, hyphenated. Pipeline folders carry their step number: `1-inbox` (with `history/`) → `2-digests` → `3-data` → `4-notebook` → `5-output`. Every folder's documentation is a `README.md`. This README is in English; the deck and the working documents are in Spanish.
+- Batches are named `NNN-YYYY-MM-DD-topic` (processing order, processing date, topic in words), shared by `1-inbox/history/<batch>/`, `2-digests/summary-<batch>.md` and `review-<batch>.md`. Archived notes are prefixed with the date they were written (`2026-10-03_bus-notes.txt`; `mixto_` for mixed days, `sin-fecha_` when undated).
+- Dictionary and exercise IDs carry a type prefix and never change: `w.` word, `e.` expression, `c.` character, `p.` pronunciation, `g.` group, `s.` sentence, `x.` exercise.
+
+**Audio is synthetic**, generated with Azure AI Speech (voice `zh-CN-YunyangNeural`, slowed down for learners).
+
+## License and citation
+
+- **Code** (`anki.py`, `tests/`): [MIT](LICENSE).
+- **Content** (notes, data, logs, notebook, audio and documentation): [CC BY 4.0](LICENSE-CONTENT). Free for any use, including commercial, **with attribution**.
+
+Cite as: *Yago Mendoza, «apkg-chinese-structs», https://github.com/yago-mendoza/apkg-chinese-structs, CC BY 4.0.*

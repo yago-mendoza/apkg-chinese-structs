@@ -4,7 +4,7 @@ Configuración y decisiones propias de este mazo (Yago Mendoza). Nada secreto: e
 
 ## Quién estudia y cómo
 
-- Objetivo, nivel y forma de estudiar: `docs/design.md`, «Objetivo» (ahí se usan para decidir el contenido).
+- Objetivo, nivel y forma de estudiar: `docs/goal.md` (ahí se usan para decidir el contenido).
 - Escribe con teclado chino en el móvil (pinyin con tildes o hanzi) y estudia el mazo padre mezclado. Sus otros mazos de Anki (HSK, Pimsleur, Spoonfed…) son práctica aparte: no se tocan ni se cuentan.
 
 ## Entorno

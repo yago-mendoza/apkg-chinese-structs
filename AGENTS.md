@@ -1,6 +1,6 @@
 # Trabajo en este repositorio
 
-Leer `docs/design.md` antes de implementar o añadir contenido: diseño canónico, repertorio de ejercicios y decisiones pendientes. El mapa de carpetas y las convenciones de nombres están en `README.md`. La configuración y las decisiones propias del dueño del mazo (Azure, Anki, ritmo, fase de pruebas), en `docs/owner.md`. No duplicar ninguno de los dos aquí.
+Leer `docs/goal.md` (objetivo del que aprende: el primer filtro de todo lo que entra) y `docs/design.md` antes de implementar o añadir contenido: diseño canónico, repertorio de ejercicios y decisiones pendientes. El mapa de carpetas y las convenciones de nombres están en `README.md`. La configuración y las decisiones propias del dueño del mazo (Azure, Anki, ritmo, fase de pruebas), en `docs/owner.md`. No duplicar ninguno de los dos aquí.
 
 - Entorno: local en Windows, `C:\Users\yagom\dev\apkg-chinese-structs`, Python en `.venv` (`.\.venv\Scripts\python anki.py ...`). No instalar dependencias fuera de `.venv`.
 - Prioridad: mandarín cotidiano y práctico, pinyin y tonos, audio en respuestas y ejemplos. YAGO está empezando.

@@ -4,7 +4,7 @@ Especificación canónica para agentes. Cada regla se dice una vez, aquí. Para 
 
 ## Objetivo
 
-Mandarín cotidiano y de trabajo hasta un nivel equivalente a C1, con **mucho énfasis en fluidez y en pronunciación**. YAGO empezó en septiembre de 2026. Nada de vocabulario literario, arcaico o remoto; sí lo necesario para vivir en China, trabajar (es ingeniero) y hablar con algo de personalidad. YAGO estudia en ratos sueltos, casi siempre desde el móvil y siempre con auriculares: el audio está disponible en cualquier sesión.
+Quién aprende, para qué, qué entra, en qué orden y qué huecos señalar: `docs/goal.md`. Es el primer filtro de cada lote y lo único que cambia de una persona a otra.
 
 ## Principio
 
