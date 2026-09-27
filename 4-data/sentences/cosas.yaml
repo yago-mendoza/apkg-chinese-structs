@@ -1,0 +1,12 @@
+# Frases · Cosas y actividades. Esquema: 4-data/README.md
+
+sentences:
+  - id: s.wo-zai-kan-shu
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 在, ref: w.zai.progressive, pinyin: zài}
+      - {text: 看, ref: w.kan, pinyin: kàn}
+      - {text: 书, ref: w.shu, pinyin: shū}
+      - {text: 。}
+    translation: {es: Estoy leyendo., en: I'm reading.}

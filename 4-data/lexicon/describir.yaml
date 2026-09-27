@@ -1,0 +1,122 @@
+# Diccionario · Describir. Esquema: 4-data/README.md
+
+entries:
+  - id: w.hen
+    use: say
+    role: function
+    kind: word
+    hanzi: 很
+    pinyin: hěn
+    meaning: {es: 'muy (con adjetivos, a menudo solo enlace)', en: very}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments:
+      - {kind: note, private: false, date: 2026-09-25, text: Sin hěn suena a comparación tipo ‘yo estoy bien / mejor…’}
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 'Con un adjetivo como predicado, 很 suele ser un enlace
+          sin énfasis: 我很好 = estoy bien.'}
+  - id: w.hao
+    use: say
+    role: content
+    kind: word
+    hanzi: 好
+    pinyin: hǎo
+    meaning: {es: 'bien, bueno', en: good}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments:
+      - {kind: mnemonic, private: false, date: 2026-09-25, text: 女 + 子 (woman + child)}
+  - id: w.gao
+    use: say
+    role: content
+    kind: word
+    hanzi: 高
+    pinyin: gāo
+    meaning: {es: alto, en: tall}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments: []
+  - id: w.ai
+    use: hear
+    role: content
+    kind: word
+    hanzi: 矮
+    pinyin: ǎi
+    meaning: {es: bajo (de estatura), en: short}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments: []
+  - id: w.pang
+    use: hear
+    role: content
+    kind: word
+    hanzi: 胖
+    pinyin: pàng
+    meaning: {es: gordo, en: fat}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 'El 月 de la izquierda es 肉 «carne», como en muchas partes
+          del cuerpo; no «luna».'}
+  - id: w.shou
+    use: hear
+    role: content
+    kind: word
+    hanzi: 瘦
+    pinyin: shòu
+    meaning: {es: delgado, en: slim}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments: []
+  - id: w.piaoliang
+    use: say
+    role: content
+    kind: word
+    hanzi: 漂亮
+    pinyin: piàoliang
+    meaning: {es: 'guapo, bonito', en: beautiful}
+    accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments: []
+  - id: w.shuai
+    use: hear
+    role: content
+    kind: word
+    hanzi: 帅
+    pinyin: shuài
+    meaning: {es: guapo (sobre todo hombres), en: handsome}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments: []
+  - id: w.congming
+    use: hear
+    role: content
+    kind: word
+    hanzi: 聪明
+    pinyin: cōngming
+    meaning: {es: 'listo, inteligente', en: clever}
+    accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments: []
+  - id: w.ben
+    use: hear
+    role: content
+    kind: word
+    hanzi: 笨
+    pinyin: bèn
+    meaning: {es: 'torpe, tonto', en: stupid}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments: []
+  - id: w.keai
+    use: say
+    role: content
+    kind: word
+    hanzi: 可爱
+    pinyin: kě'ài
+    meaning: {es: 'mono, adorable', en: cute}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments:
+      - {kind: mnemonic, private: false, date: 2026-09-25, text: like kawaii but mouth asleep}
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 'El parecido con «kawaii» es solo de sonido, no histórico.'}
+  - id: w.youmo
+    use: hear
+    role: content
+    kind: word
+    hanzi: 幽默
+    pinyin: yōumò
+    meaning: {es: 'gracioso, con sentido del humor', en: humorous}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: Préstamo fonético del inglés «humour».}

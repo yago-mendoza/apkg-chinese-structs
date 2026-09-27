@@ -1,4 +1,4 @@
-<!-- Generado por `anki.py guide` desde 3-data/. No editar: se rehace en cada lote. -->
+<!-- Generado por `anki.py guide` desde 4-data/. No editar: se rehace en cada lote. -->
 
 # Guía
 
@@ -10,7 +10,7 @@ Todo lo aprendido, por temas. ✅ aprender · 🟡 reconocer · ❌ descartado �
 - [Presentarse](04-presentarse.md) · 16 entradas, 10 frases
 - [Familia](05-familia.md) · 6 entradas, 2 frases
 - [Describir](06-describir.md) · 12 entradas, 3 frases
-- [Compras](07-compras.md) · 12 entradas, 4 frases
+- [Compras, comida y bebida](07-compras.md) · 12 entradas, 4 frases
 - [Momentos del día](08-tiempo.md) · 8 entradas, 2 frases
 - [Números](09-numeros.md) · 1 entradas, 0 frases
 - [Cosas y actividades](10-cosas.md) · 9 entradas, 1 frases

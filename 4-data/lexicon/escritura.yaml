@@ -1,0 +1,99 @@
+# Diccionario · Caracteres y componentes. Esquema: 4-data/README.md
+
+entries:
+  - id: c.wu.noon
+    use: read
+    kind: character
+    hanzi: 午
+    pinyin: wǔ
+    meaning: {es: mediodía, en: noon}
+    standalone: false
+    register: neutral
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.niu
+    use: read
+    role: content
+    kind: word
+    hanzi: 牛
+    pinyin: niú
+    meaning: {es: 'vaca, buey', en: cow}
+    standalone: 'yes'
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: c.sheng.life
+    use: read
+    kind: character
+    hanzi: 生
+    pinyin: shēng
+    meaning: {es: vida; nacer, en: life; to be born}
+    standalone: rare
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments:
+      - {kind: mnemonic, private: false, date: 2026-09-25, text: some plant emerging}
+  - id: c.ru.enter
+    use: read
+    kind: character
+    hanzi: 入
+    pinyin: rù
+    meaning: {es: entrar, en: to enter}
+    standalone: rare
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    comments: []
+  - id: c.nv.woman
+    use: read
+    kind: component
+    hanzi: 女
+    pinyin: nǚ
+    meaning: {es: mujer (como componente), en: woman (component)}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: c.kou.mouth
+    use: read
+    kind: component
+    hanzi: 口
+    pinyin: kǒu
+    meaning: {es: boca (como componente), en: mouth (component)}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments:
+      - {kind: note, private: false, date: 2026-09-25, text: boca habla}
+  - id: c.rou.flesh
+    use: read
+    kind: component
+    hanzi: 月
+    pinyin: yuè
+    meaning: {es: forma de 月 «luna»; en partes del cuerpo viene de 肉 «carne», en: flesh radical}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    comments:
+      - {kind: note, private: false, date: 2026-09-25, text: moon + meat / “radical” → 月 = muscle}
+  - id: c.mu.eye
+    use: read
+    kind: component
+    hanzi: 目
+    pinyin: mù
+    meaning: {es: ojo (como componente), en: eye (component)}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: g.sheng-niu-wu
+    kind: group
+    basis: visual
+    title: 生, 牛 y 午
+    explanation: Los tres empiezan con un trazo inclinado arriba a la izquierda. Fíjate en las horizontales y en si el vertical
+      sobresale.
+    members:
+      - {ref: c.sheng.life, cue: 'tres horizontales; la de abajo, la más larga'}
+      - {ref: w.niu, cue: dos horizontales; el vertical sobresale por arriba}
+      - {ref: c.wu.noon, cue: dos horizontales; el vertical no sobresale}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: g.ren-ru-ba
+    kind: group
+    basis: visual
+    title: 人, 入 y 八
+    explanation: Dos trazos en los tres; cambia cuál domina y si se tocan.
+    members:
+      - {ref: w.ren, cue: el trazo izquierdo es el largo; el derecho sale de su mitad}
+      - {ref: c.ru.enter, cue: 'el trazo derecho es el largo; el izquierdo, corto, sale de su punta'}
+      - {ref: w.ba, cue: los dos trazos no se tocan}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    comments: []

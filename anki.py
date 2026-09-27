@@ -2,16 +2,16 @@
 
 Uso:
     python anki.py lookup <hanzi|pinyin|significado>
-    python anki.py plan [--doc <lote>]     tarjetas exigidas que faltan; --doc escribe 1-inbox/gaps-<lote>.md
+    python anki.py plan [--doc <lote>]     tarjetas exigidas que faltan; --doc escribe 1-inbox/review-<lote>.md
     python anki.py gaps                    reparto del mazo y pendientes
     python anki.py check
-    python anki.py guide                   regenera 5-guide/ desde 3-data/
+    python anki.py guide                   regenera 5-guide/ desde 4-data/
     python anki.py audio [--dry-run]
     python anki.py build [--allow-missing-audio]
     python anki.py push [--allow-missing-audio] [--no-sync] [--prune] [--reset]
 
 No llama a ningún LLM. `audio` usa la red (Azure Speech) y nunca repite audios
-ya guardados en 3-data/audio/. `push` compila, importa en Anki desktop (abriéndolo si
+ya guardados en 4-data/audio/. `push` compila, importa en Anki desktop (abriéndolo si
 hace falta) mediante el complemento AnkiConnect, ajusta plantillas, límites y orden de
 nuevas, y sincroniza con AnkiWeb.
 """
@@ -32,12 +32,13 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent
-DATA = ROOT / "3-data"                    # fuente de verdad, mantenida por el agente
-LEXICON = DATA / "lexicon.yaml"
-EXERCISES = DATA / "exercises.yaml"
+DATA = ROOT / "4-data"                    # fuente de verdad, mantenida por el agente
+THEMES = DATA / "themes.yaml"             # temas en orden de aprendizaje
+KINDS = {"lexicon": "entries", "sentences": "sentences", "exercises": "exercises"}  # carpeta → clave; un archivo por tema
 MEDIA = DATA / "audio"                  # MP3 generados; no regenerar
 AUDIO_MANIFEST = MEDIA / "index.yaml"
 INBOX = ROOT / "1-inbox"                  # apuntes en bruto de YAGO
+DIGESTS = ROOT / "3-digests"              # histórico de cada lote
 GUIDE = ROOT / "5-guide"                  # guía acumulada por temas, generada
 OUTPUT = ROOT / "6-output"                # lo que sale: mazo y futuras exportaciones
 APKG = OUTPUT / "chino-practico.apkg"
@@ -45,8 +46,8 @@ ANKI_CONNECT = "http://127.0.0.1:8765"
 
 # Identidades estables: no cambiarlas nunca, o Anki verá un mazo/modelo nuevo.
 GUID_NAMESPACE = "apkg-chinese-structs"
-DECK_NAME = "🐉 Chino práctico"          # un subdeck por mes: "🐉 Chino práctico::2026-09"
-DECK_ID_BASE = 1_758_800_000_000         # ID del subdeck = base + AAAAMM
+DECK_NAME = "🐉 Chino práctico"          # un subdeck por tema: "🐉 Chino práctico::02 Saludos y cortesía"
+DECK_ID_BASE = 1_758_800_000_000         # ID del subdeck = base + hash estable del id del tema
 MODEL_TYPED_ID = 1_758_800_101
 MODEL_SELF_ID = 1_758_800_102
 AUDIO_PREFIX = "acs_"
@@ -80,10 +81,29 @@ def load_yaml(path):
         return yaml.safe_load(f) or {}
 
 
+def load_themes():
+    return load_yaml(THEMES).get("themes", [])
+
+
 def load():
-    lex = load_yaml(LEXICON)
-    exe = load_yaml(EXERCISES)
-    return lex.get("entries", []), exe.get("sentences", []), exe.get("exercises", [])
+    """Entradas, frases y ejercicios de todos los temas, en el orden de themes.yaml. El tema de cada
+    elemento es el archivo en que vive (4-data/<carpeta>/<tema>.yaml): se añade en memoria como `theme`."""
+    out = {key: [] for key in KINDS.values()}
+    for th in load_themes():
+        for folder, key in KINDS.items():
+            path = DATA / folder / f"{th['id']}.yaml"
+            if path.exists():
+                for item in load_yaml(path).get(key, []):
+                    item["theme"] = th["id"]
+                    out[key].append(item)
+    return out["entries"], out["sentences"], out["exercises"]
+
+
+def stray_data_files():
+    """Archivos de datos cuyo nombre no es ningún tema: su contenido no se cargaría."""
+    ids = {t["id"] for t in load_themes()}
+    return [f.relative_to(ROOT).as_posix() for folder in KINDS for f in (DATA / folder).glob("*.yaml")
+            if f.stem not in ids]
 
 
 def load_manifest():
@@ -414,6 +434,7 @@ def satisfied(ex):
         "speak": {"speak"},
         "contrast": {"contrast", "recognize"},
         "components": {"recognize"},
+        "nuance": {"nuance"},          # matiz o confusión concreta: nunca exigido, lo pide YAGO en el review
     }.get(t, set())
 
 
@@ -497,14 +518,14 @@ def cmd_lookup(query):
 
 PRIMARY = {"read": "lectura", "listen": "escucha", "tones": "tonos", "produce": "producción",
            "derive": "producción", "cloze": "producción", "speak": "voz alta", "contrast": "contraste",
-           "components": "componentes"}
-GENERATED = "<!-- Generado por `anki.py guide` desde 3-data/. No editar: se rehace en cada lote. -->"
-GAPS_HEADER = ("<!-- Documento editable: escribe encima, tacha, añade dudas. "
-               "Todo lo que pongas aquí entra en el siguiente lote. -->")
-
-
-def load_themes():
-    return load_yaml(LEXICON).get("themes", [])
+           "components": "componentes", "nuance": "matiz"}
+GENERATED = "<!-- Generado por `anki.py guide` desde 4-data/. No editar: se rehace en cada lote. -->"
+REVIEW_HEADER = ("<!-- REVIEW: editable. Debajo de cada punto hay una línea «>»: escribe lo que quieras (sí, no, "
+                 "un matiz, una frase, una corrección). Lo que escribas entra en el siguiente lote; lo que dejes "
+                 "vacío se queda como está. Puedes añadir puntos nuevos al final. -->")
+SUMMARY_HEADER = ("<!-- SUMMARY: solo lectura. Qué entró al mazo con este lote y qué conviene entender de tus apuntes "
+                  "(relaciones, mnemotecnias, correcciones). Lo que no entró está en el review. En el siguiente lote "
+                  "se archiva en 3-digests/. -->")
 
 
 def cmd_gaps():
@@ -528,12 +549,14 @@ def cmd_gaps():
                     if not seg.get("ref") and seg.get("pinyin")})
     if loose:
         print("Palabras en frases sin entrada: " + ", ".join(loose))
-    # Cualquier archivo cuenta como apunte pendiente, con o sin extensión; salvo el README y los gaps.
+    # Cualquier archivo cuenta como apunte pendiente, con o sin extensión; salvo el README y lo que deja el agente.
     raw = sorted(f.name for f in INBOX.iterdir() if f.is_file() and f.name != "README.md"
-                 and not f.name.startswith("gaps-")) if INBOX.exists() else []
+                 and not f.name.startswith(("summary-", "review-"))) if INBOX.exists() else []
     print(f"Inbox sin procesar: {len(raw)}" + (f" → {', '.join(raw)}" if raw else ""))
-    for g in sorted(INBOX.glob("gaps-*.md")) if INBOX.exists() else []:
-        print(f"Deberes: {g.name} (entra en el próximo lote junto con los apuntes)")
+    for g in sorted(INBOX.glob("review-*.md")) if INBOX.exists() else []:
+        print(f"Review: {g.name} (editable; entra en el próximo lote junto con los apuntes)")
+    for g in sorted(INBOX.glob("summary-*.md")) if INBOX.exists() else []:
+        print(f"Summary: {g.name} (lectura; se archiva en 3-digests/ en el próximo lote)")
 
 
 def label(item):
@@ -552,23 +575,28 @@ def cmd_plan(doc=None):
         print(f"{e['id']:28} {e['hanzi']:10} (ósmosis): no aparece en ninguna frase")
     print(f"\n{sum(len(m) for _, m in rows)} tarjeta(s) exigida(s) que faltan; {len(osm)} entrada(s) sin frase.")
     if doc:
-        write_gaps_doc(doc, osm)
+        write_review_doc(doc, osm)
     return 0
 
 
-def write_gaps_doc(batch, osm):
-    """Deja en 1-inbox/ los huecos que necesitan a YAGO. Lo pendiente del digest lo añade el agente."""
+def write_review_doc(batch, osm):
+    """Deja en 1-inbox/ el review del lote: lo que falta (calculado) y los apartados que completa el agente.
+    Cada punto lleva debajo una línea «>» para que YAGO escriba."""
     INBOX.mkdir(exist_ok=True)
-    for old in INBOX.glob("gaps-*.md"):
-        print(f"AVISO  ya había {old.name}: archívalo en 2-raw/ con el lote que lo leyó antes de generar otro.")
+    for old in INBOX.glob("review-*.md"):
+        print(f"AVISO  ya había {old.name}: se archiva en 2-raw/ con el lote que lo leyó antes de generar otro.")
         return
-    lines = [GAPS_HEADER, "", f"# Huecos tras el lote {batch}", ""]
-    lines += ["## Palabras que quieres decir y aún no tienen frase", "",
-              "Trae una frase de clase o de tu día a día que las use (o dime una que digas tú).", ""]
-    lines += [f"- {e['hanzi']} {e.get('pinyin', '')} · {e.get('meaning', {}).get('es', '')}" for e in osm] or ["- (ninguna)"]
-    lines += ["", "## Pendiente de tus apuntes", "", "<!-- lo rellena el agente desde el digest -->", "",
-              "## Dudas y ajustes", "", "- ", ""]
-    path = INBOX / f"gaps-{batch}.md"
+    lines = [REVIEW_HEADER, "", f"# Review del lote {batch}", "",
+             "## Falta", "", "Palabras que quieres decir y aún no aparecen en ninguna frase. Trae una frase de clase "
+             "o de tu día a día que las use, o escríbela aquí.", ""]
+    for e in osm:
+        lines += [f"- {e['hanzi']} {e.get('pinyin', '')} · {e.get('meaning', {}).get('es', '')}", "  > ", ""]
+    if not osm:
+        lines += ["- (nada)", ""]
+    lines += ["## No entró, y por qué", "", "<!-- lo completa el agente: 🟡 y ❌ con su motivo, y ✅ aún sin tarjeta -->",
+              "", "## Por verificar", "", "<!-- lo completa el agente: transcripciones dudosas y glosas corregidas -->",
+              "", "## Tus notas", "", "> ", ""]
+    path = INBOX / f"review-{batch}.md"
     path.write_text("\n".join(lines), encoding="utf-8")
     print(f"Escrito {path.relative_to(ROOT)}")
 
@@ -580,14 +608,14 @@ def mark(item, has_cards):
 
 
 def cmd_guide():
-    """Regenera 5-guide/: todo lo aprendido, un archivo por tema, desde 3-data/."""
+    """Regenera 5-guide/: todo lo aprendido, un archivo por tema, desde 4-data/."""
     entries, sentences, exercises = load()
     themes = load_themes()
     targeted = {t for ex in exercises for t in ex.get("targets", [])}
     eby = {e["id"]: e for e in entries}
     GUIDE.mkdir(exist_ok=True)
     for old in GUIDE.glob("*.md"):
-        if old.read_text(encoding="utf-8").startswith(GENERATED):
+        if old.read_text(encoding="utf-8").startswith("<!-- Generado por `anki.py guide`"):
             old.unlink()
     index = [GENERATED, "", "# Guía", "", "Todo lo aprendido, por temas. ✅ aprender · 🟡 reconocer · ❌ descartado · 🃏 en el mazo.", ""]
     for n, th in enumerate(themes, 1):
@@ -640,7 +668,7 @@ def answer_hanzi(ex, sby):
 def wants_audio(ex, eby):
     """Si la respuesta lleva audio. El contraste visual (大/太/天) se decide mirando la
     forma: no lo necesita. El de homófonos sí, porque el sonido es lo que se contrasta."""
-    if ex.get("type") == "components":
+    if ex.get("type") in ("components", "nuance"):
         return False
     if ex.get("type") == "contrast":
         return eby.get(ex.get("group"), {}).get("basis") == "homophone"
@@ -721,7 +749,7 @@ def validate(entries, sentences, exercises, require_audio=True):
         if not s.get("translation"):
             errors.append(f"{s['id']}: falta traducción")
     types = {"read", "listen", "tones", "cloze", "produce", "speak", "meaning", "components",
-             "contrast", "derive", "pinyin-meaning", "build"}
+             "contrast", "derive", "pinyin-meaning", "build", "nuance"}
     seen = {}
     for ex in exercises:
         xid = ex["id"]
@@ -779,6 +807,11 @@ def validate(entries, sentences, exercises, require_audio=True):
                        for e in entries)
         if w and not accepted:
             warnings.append(f"{xid}: {w}")
+    for t in load_themes():
+        if set(t) != {"id", "title"} or not isinstance(t.get("title"), str):
+            errors.append(f"themes.yaml: tema mal formado {t} (¿una coma sin comillas en el título?)")
+    for f in stray_data_files():
+        errors.append(f"{f}: el nombre no es ningún tema de 4-data/themes.yaml; su contenido no se carga")
     # Especificación de cobertura: use, rol, tema y tarjetas exigidas.
     theme_ids = {t["id"] for t in load_themes()}
     for it in entries + sentences:
@@ -1118,7 +1151,18 @@ def build_note(ex, eby, sby, manifest, media_files, models):
               f'<div class="box">{"".join(notes)}</div>' if notes else ""]
     return genanki.Note(model=model, fields=fields,
                         guid=genanki.guid_for(GUID_NAMESPACE, ex["id"]),
-                        tags=[f"type::{ex['type']}"] + [f"skill::{s}" for s in ex.get("skills", [])])
+                        tags=[f"tema::{ex.get('theme')}", f"mes::{str(ex.get('added'))[:7]}"]
+                        + [f"use::{use_label(eby[t]) if t in eby else use_label(sby[t])}".replace("/", "+")
+                           for t in ex.get("targets", [])[:1] if t in eby or t in sby]
+                        + [f"type::{ex['type']}"] + [f"skill::{s}" for s in ex.get("skills", [])])
+
+
+def theme_deck_names():
+    return {t["id"]: f"{DECK_NAME}::{n:02d} {t['title']}" for n, t in enumerate(load_themes(), 1)}
+
+
+def theme_deck_id(theme_id):
+    return DECK_ID_BASE + int(hashlib.sha1(theme_id.encode("utf-8")).hexdigest()[:8], 16) % 1_000_000_000
 
 
 def cmd_build(allow_missing_audio):
@@ -1136,16 +1180,17 @@ def cmd_build(allow_missing_audio):
         "self": genanki.Model(MODEL_SELF_ID, MODEL_SELF_NAME, fields=fields, css=CSS,
                               templates=[{"name": "Tarjeta", "qfmt": FRONT_SELF, "afmt": BACK_SELF}]),
     }
-    # Anki deja cada tarjeta en el deck donde se importó por primera vez: el mes no se reasigna.
+    # Un subdeck por tema. Anki no mueve al reimportar: `push` recoloca las tarjetas que ya existían.
     decks = {}
     manifest, media_files = load_manifest(), set()
     eby = {e["id"]: e for e in entries}
     sby = {s["id"]: s for s in sentences}
+    names = theme_deck_names()
     for ex in exercises:
-        month = str(ex["added"])[:7]
-        if month not in decks:
-            decks[month] = genanki.Deck(DECK_ID_BASE + int(month.replace("-", "")), f"{DECK_NAME}::{month}")
-        decks[month].add_note(build_note(ex, eby, sby, manifest, media_files, models))
+        th = ex["theme"]
+        if th not in decks:
+            decks[th] = genanki.Deck(theme_deck_id(th), names[th])
+        decks[th].add_note(build_note(ex, eby, sby, manifest, media_files, models))
     OUTPUT.mkdir(exist_ok=True)
     pkg = genanki.Package(list(decks.values()))
     pkg.media_files = sorted(media_files)
@@ -1191,7 +1236,7 @@ def find_anki():
     return next((c for c in candidates if c and os.path.exists(c)), None)
 
 
-STAGE = {"read": 0, "contrast": 1, "components": 1, "listen": 2, "tones": 3,
+STAGE = {"read": 0, "contrast": 1, "components": 1, "nuance": 1, "listen": 2, "tones": 3,
          "produce": 4, "derive": 4, "cloze": 4, "speak": 5}
 
 
@@ -1266,6 +1311,32 @@ def reset_progress():
     return len(cards)
 
 
+def place_by_theme(exercises):
+    """Mueve cada tarjeta al subdeck de su tema (conserva el progreso) y borra los subdecks propios que
+    queden vacíos y no sean de ningún tema (p. ej. los antiguos por mes). Solo dentro del mazo."""
+    names = theme_deck_names()
+    want = {ex["id"]: names[ex["theme"]] for ex in exercises}
+    cards = anki_request("findCards", query=f'"deck:{DECK_NAME}"')
+    info = anki_request("cardsInfo", cards=cards) if cards else []
+    moves = {}
+    for c in info:
+        target = want.get(c["fields"].get("ExerciseID", {}).get("value"))
+        if target and c["deckName"] != target:
+            moves.setdefault(target, []).append(c["cardId"])
+    for deck, ids in moves.items():
+        anki_request("changeDeck", cards=ids, deck=deck)
+    removed = []
+    for d in our_decks():
+        if d == DECK_NAME or d in names.values():
+            continue
+        if any(x.startswith(d + "::") for x in our_decks()):
+            continue
+        if not anki_request("findCards", query=f'"deck:{d}"'):      # vacío: comprobado justo antes
+            anki_request("deleteDecks", decks=[d], cardsToo=True)
+            removed.append(d)
+    return sum(len(v) for v in moves.values()), removed
+
+
 def orphans(exercises, prune):
     notes = anki_request("findNotes", query=f'"deck:{DECK_NAME}"')
     info = anki_request("notesInfo", notes=notes) if notes else []
@@ -1278,7 +1349,7 @@ def orphans(exercises, prune):
         anki_request("deleteNotes", notes=[n["noteId"] for n in lost])
         print(f"Borradas {len(lost)} nota(s) huérfana(s).")
     elif lost:
-        print(f"{len(lost)} nota(s) del mazo ya no existen en 3-data/. Revisar y repetir con --prune para borrarlas.")
+        print(f"{len(lost)} nota(s) del mazo ya no existen en 4-data/. Revisar y repetir con --prune para borrarlas.")
 
 
 def cmd_push(allow_missing_audio, sync, prune=False, reset=False):
@@ -1306,12 +1377,15 @@ def cmd_push(allow_missing_audio, sync, prune=False, reset=False):
     print(f"Importado en Anki: {APKG.name}")
     entries, sentences, exercises = load()
     sync_templates()
-    print("Límites: " + ensure_limits())
     if reset:
         print(f"Progreso reiniciado: {reset_progress()} tarjeta(s) vuelven a nuevas.")
     moved = reorder_new(new_card_order(entries, sentences, exercises))
     print(f"Orden de nuevas: {moved} tarjeta(s) recolocada(s).")
     orphans(exercises, prune)
+    moved_decks, removed = place_by_theme(exercises)
+    print(f"Subdecks por tema: {moved_decks} tarjeta(s) recolocada(s)"
+          + (f"; borrados por vacíos: {', '.join(removed)}" if removed else "") + ".")
+    print("Límites: " + ensure_limits())
     anki_request("guiDeckBrowser")
     if not sync:
         return 0
@@ -1346,7 +1420,7 @@ def main():
     u.add_argument("--prune", action="store_true", help="borrar notas del mazo cuyo ejercicio ya no existe")
     u.add_argument("--reset", action="store_true", help="fase de pruebas: todo el mazo vuelve a nuevas, sin progreso")
     pl = sub.add_parser("plan")
-    pl.add_argument("--doc", metavar="LOTE", help="escribe 1-inbox/gaps-<LOTE>.md")
+    pl.add_argument("--doc", metavar="LOTE", help="escribe 1-inbox/review-<LOTE>.md")
     sub.add_parser("guide")
     args = p.parse_args()
     if args.cmd == "lookup":

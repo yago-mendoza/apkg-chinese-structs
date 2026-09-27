@@ -1,0 +1,27 @@
+# Frases · Describir. Esquema: 4-data/README.md
+
+sentences:
+  - id: s.ta-hen-gao
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 高, ref: w.gao, pinyin: gāo}
+      - {text: 。}
+    translation: {es: Él es alto., en: He is tall.}
+  - id: s.ta-hen-piaoliang
+    use: hear
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: tā}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: piàoliang}
+      - {text: 。}
+    translation: {es: Ella es guapa., en: She is pretty.}
+  - id: s.ta-hen-keai
+    use: hear
+    segments:
+      - {text: 它, ref: w.ta.it, pinyin: tā}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 可爱, ref: w.keai, pinyin: kě'ài}
+      - {text: 。}
+    translation: {es: Es muy mono (un animal)., en: It's cute.}

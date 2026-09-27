@@ -25,7 +25,10 @@ Thumbs.db
 .idea/
 
 # Raw notes: local only (the repository is public)
-# Pending notes stay local until processed; processed notes (2-raw/) are versioned.
+# Pending notes stay local until processed; processed notes (2-raw/) are versioned,
+# and so are the summary and review the agent leaves in the inbox.
 1-inbox/*
 !1-inbox/README.md
+!1-inbox/summary-*.md
+!1-inbox/review-*.md
 

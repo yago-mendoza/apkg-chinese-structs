@@ -4,7 +4,7 @@ Leer `docs/design.md` antes de implementar o añadir contenido: diseño canónic
 
 - Entorno: local en Windows, `C:\Users\yagom\dev\apkg-chinese-structs`, Python en `.venv` (`.\.venv\Scripts\python anki.py ...`). No instalar dependencias fuera de `.venv`.
 - Prioridad: mandarín cotidiano y práctico, pinyin y tonos, audio en respuestas y ejemplos. YAGO está empezando.
-- Solo el agente edita `3-data/`. YAGO escribe en `1-inbox/` y saca resultados de `6-output/`.
+- Solo el agente edita `4-data/`. YAGO escribe en `1-inbox/` y saca resultados de `6-output/`.
 - Antes de añadir contenido: `anki.py lookup <término>` y `anki.py gaps`. Después: `anki.py check`. Revisar los avisos; no ignorarlos ni aceptarlos automáticamente (`accept_pinyin_mismatch` solo con motivo).
 - «Procesa el inbox»: seguir «Flujo de un lote» de `docs/design.md`. No cambiar el hanzi de respuestas o frases con audio salvo error (ver «Audio»).
 - Distinguir objetivo evaluado (`targets`), contexto (`context`) y ejemplo revelado (`reveal`).
