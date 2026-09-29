@@ -22,6 +22,7 @@ Cada elemento de los apuntes se juzga contra el «para qué» de arriba:
 
 - **Entra para decir** (`say`): lo que usaría hablando en esas situaciones.
 - **Entra para entender** (`hear` o `read`): lo que oirá o leerá pero no necesita producir (registro formal, carteles, fórmulas escritas).
+- **Espera en el desván**: lo de su investigación propia que es de un nivel superior y está poco conectado, o lo que llega suelto sin frase. No entra aún, pero se guarda con todas sus notas y entra solo cuando llegue algo con lo que conecte (`docs/design.md`, «Desván»). Lo de clase nunca va al desván.
 - **Queda fuera**: literario, arcaico, en desuso, variantes regionales que no son estándar y rarezas sin uso real. Se dice en el log y en el review, con el motivo, por si no está de acuerdo.
 - Lo que viene de sus apuntes se respeta aunque no esté en ninguna lista, siempre que pase el filtro: si lo apuntó, suele ser porque lo necesita.
 
@@ -41,7 +42,7 @@ Condición indispensable en todo el mazo (tarjetas, cuaderno, log y review): que
 
 ## Orden
 
-Todo se ordena por dificultad, con los niveles del HSK 3.0 (del 1 al 6, más el 7 para los niveles 7 a 9): nivel oficial si la palabra está en la lista (`sources/hsk/`) y nivel estimado por el agente si no, con su motivo. Las reglas completas están en `docs/design.md`, «Niveles». YAGO estudia nivel a nivel y respeta esta ordenación: lo que llega de un nivel superior se guarda en su nivel y espera. Su nivel actual se calcula con lo que ya tiene, no con lo que declara.
+Todo se ordena por dificultad, con los niveles del HSK 3.0 (del 1 al 6, más el 7 para los niveles 7 a 9): nivel oficial si la palabra está en la lista (`sources/hsk/`) y nivel estimado por el agente si no, con su motivo. Las reglas completas están en `docs/design.md`, «Niveles». YAGO estudia nivel a nivel y respeta esta ordenación: lo de clase que llega de un nivel superior entra en su nivel y espera; lo investigado de un nivel superior y poco conectado espera en el desván. Su nivel actual se calcula con lo que ya tiene, no con lo que declara.
 
 ## Huecos y propuestas
 
@@ -56,7 +57,7 @@ Y le avisa, con claridad y sin rebajarlo, cuando cruce de un nivel al siguiente.
 
 ## Las clases y la investigación propia
 
-Los apuntes mezclan lo que da la profesora (hasta 2026-09-29: saludos, adjetivos con 很, el tiempo, apellidos y nombres) con lo que YAGO investiga por su cuenta, sobre todo caracteres. Lo de clase es lo prioritario y lo que marca el ritmo; lo investigado entra si pasa el filtro y en su nivel, y el resto se queda como nota o fuera, con el motivo.
+Los apuntes mezclan lo que da la profesora (hasta 2026-09-29: saludos, adjetivos con 很, el tiempo, apellidos y nombres) con lo que YAGO investiga por su cuenta, sobre todo caracteres. Lo de clase es lo prioritario y lo que marca el ritmo; lo investigado entra si pasa el filtro y conecta con lo que ya tiene, en su nivel; lo que es de más arriba y no conecta va al desván, y lo que solo explica otra palabra se queda como nota de esa palabra.
 
 ## El sistema se ajusta solo
 

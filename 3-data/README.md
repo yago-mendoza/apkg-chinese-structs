@@ -8,6 +8,7 @@ Fuente de verdad del mazo, mantenida por el agente. Un archivo por tema en cada 
 | `lexicon/<tema>.yaml` | `entries`: el diccionario. |
 | `sentences/<tema>.yaml` | `sentences`: frases, recursos en sí mismos y ejemplos reutilizables. |
 | `exercises/<tema>.yaml` | `exercises`: cada ejercicio es una tarjeta de Anki. Va en el tema de su primer objetivo. |
+| `attic.yaml` | `items`: el desván, lo que no entró y espera con su contexto (`docs/design.md`, «Desván»). Cada uno: `id` (`a.<nombre>`), `hanzi`, `pinyin`, `meaning: {es}`, `theme` (dónde iría), `links` (palabras que lo despiertan), `reason` (por qué no entró), `notes: [{text, original?}]`, `source: {batch, file, date}`; `level` y `level_reason` si no está en la lista del HSK; `snooze: <lote>` con `snooze_reason` para aplazarlo en un lote. Sin tarjetas. |
 | `theory.yaml` | `terms`: los términos de teoría (pictograma, fonético-semántico, homófonos…), `{id, group, title: {es, en}, text: {es, en}}`. Se exportan al cuaderno web; no generan tarjetas. |
 | `audio/` | MP3 generados por `anki.py audio` e `index.yaml` con su procedencia. No regenerar ni borrar. |
 

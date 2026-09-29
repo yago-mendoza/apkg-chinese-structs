@@ -100,6 +100,8 @@ Palabras que quieres decir y aún no aparecen en ninguna frase. Trae una frase d
 
 ## No entró, y por qué
 
+Casi todo lo de esta lista no se pierde: espera en el desván (`3-data/attic.yaml`) con tus notas, y entra solo cuando traigas algo con lo que conecte (颜色 despierta 灰色; 钱 despierta 欠). Si quieres algo ya, escribe «sácalo».
+
 **Caracteres y piezas**
 
 - ❌ 犬 quǎn: solo vive como pieza 犭; perro es 狗 gǒu [HSK 2].

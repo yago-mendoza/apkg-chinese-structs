@@ -20,6 +20,7 @@ El modelo redacta; `anki.py` calcula y comprueba. Lo que puede calcularse (qué 
 - **`use`**: para qué necesita YAGO una entrada o frase (`read`, `hear`, `say`, o excepción). Decide las tarjetas exigidas.
 - **Rol**: `content` (palabra con significado propio) o `function` (pieza gramatical: se practica en frase).
 - **Nivel**: escalón de dificultad del HSK 3.0, del 1 al 7 (el 7 agrupa los niveles 7 a 9). Oficial si la palabra está en la lista, estimado por el agente si no. Primera división del mazo (ver «Niveles»).
+- **Desván**: lo que llegó y no entra ahora, guardado con su contexto hasta que algo lo despierte (`3-data/attic.yaml`; ver «Desván»).
 - **Tema**: agrupación por asunto (`3-data/themes.yaml`); es el archivo en que vive cada elemento y decide el subdeck, el orden de aprendizaje y el cuaderno.
 - **Grupo**: entradas que se estudian juntas (`visual` y `homophone` por contraste; `pattern`, `set` y `phonetic` como familia).
 - **Ósmosis**: que una palabra aparezca como contexto en frases, además de en sus propias tarjetas.
@@ -35,7 +36,7 @@ Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de o
 
 1. YAGO deja archivos en `1-inbox/`, en cualquier formato y con cualquier nombre (o los pega en el chat y el agente los guarda allí tal cual). Todo archivo salvo `README.md` y `review-*.md` es apunte pendiente. Las fechas de los apuntes, si las hay, van a `source.date` de lo que salga de cada parte; si un archivo mezcla días, se respeta la fecha de cada parte.
 2. El agente lee también el `review-*.md` del lote anterior: cada línea «>» con texto es una instrucción de YAGO (meter, descartar, matizar, corregir); vacía, no cambia nada. Si YAGO pide una tarjeta de matiz, es `type: nuance`.
-3. Para cada elemento: `lookup`; decide si es nuevo, corrige algo o amplía una entrada o grupo. Lo parecido a lo existente (forma, sonido, patrón) va a esa entrada, a `relations` o a un grupo, no a tarjetas sueltas.
+3. Para cada elemento: `lookup` (busca también en el desván); decide si es nuevo, corrige algo, amplía una entrada o grupo, o va al desván (ver «Desván»). Con las entradas nuevas escritas, `attic <lote>`: lo que despierta entra en este lote. Lo parecido a lo existente (forma, sonido, patrón) va a esa entrada, a `relations` o a un grupo, no a tarjetas sueltas.
 4. Asigna `use` a cada entrada nueva (ver «Cobertura»), con motivo cuando se aparte de las señales de frecuencia.
 5. Guarda los comentarios de YAGO en su ámbito, redactados en `text` y con lo que escribió en `original` (ver «Comentarios»). Lo que parezca privado no va a `3-data/`: se pregunta.
 6. Pregunta lo ambiguo (sentido, lectura, si ya lo sabe) en vez de adivinar. Las transcripciones de fotos hechas por LLM traen errores y `[¿?]`: se marcan con ⚠️ en el log y van a «Por verificar» del review, nunca se dan por buenas.
@@ -49,7 +50,7 @@ Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de o
 **Log y review**: dos documentos con dos autores. Ambos empiezan con un comentario que explica qué son (`LOG_HEADER` y `REVIEW_HEADER` en `anki.py`) y van **por temas, sin números de hoja ni de página**, una línea por elemento: `汉字 pinyin · significado · pista (relación, mnemotecnia, pronunciación) · ejemplo`.
 
 - **Log** (`2-digests/`, del agente, lectura): el acta completa del lote: lo que entró (✅, 🃏 si tiene tarjeta), lo que no (🟡 solo reconocer, ❌ literario, arcaico o en desuso) con su motivo, las correcciones ⚠️ de glosas y las reorganizaciones. Termina con «Seguimiento» (ver abajo).
-- **Review** (`1-inbox/`, para YAGO, editable): empieza por «Cómo vas» (el «Seguimiento» del log) y «Huecos y propuestas» (lo que el agente propone aprender, según `docs/goal.md`); después, solo lo que admite su opinión: «Falta» (palabras `say` sin frase, calculado), «✅ Entró, con matices para ahondar» (solo los que traen relación, mnemotecnia, registro o corrección), «Pendiente: ✅ sin tarjeta todavía», «No entró, y por qué», «Por verificar» y «Tus notas». Debajo de cada punto, una línea `  > `. Con las respuestas va a `1-inbox/history/` del lote siguiente.
+- **Review** (`1-inbox/`, para YAGO, editable): empieza por «Cómo vas» (el «Seguimiento» del log) y «Huecos y propuestas» (lo que el agente propone aprender, según `docs/goal.md`); después, solo lo que admite su opinión: «Falta» (palabras `say` sin frase, calculado), «✅ Entró, con matices para ahondar» (solo los que traen relación, mnemotecnia, registro o corrección), «Pendiente: ✅ sin tarjeta todavía», «Del desván» (lo que entró desde el desván y por qué despertó), «No entró, y por qué» (señalando lo que se guarda en el desván), «Por verificar» y «Tus notas». Debajo de cada punto, una línea `  > `. Con las respuestas va a `1-inbox/history/` del lote siguiente.
 
 **Seguimiento**: en cada lote el agente escribe una reflexión que va al final del log y, igual, al principio del review como «Cómo vas», con su línea «>». Es acumulativa: antes de escribirla relee los seguimientos de los logs anteriores y las respuestas de YAGO en los reviews archivados (`1-inbox/history/`), para decir qué ha cambiado desde la última vez y no repetir lo mismo si nada cambió. Cuatro partes, breves:
 
@@ -102,6 +103,29 @@ Un lote puede tocar mucho (reorganizar temas, corregir cientos de tarjetas). Lo 
 Recuperación: el estado tras cada lote está en su etiqueta `lote-NNN`. Volver a él es restaurar `3-data/` desde la etiqueta y hacer `push`: el contenido y la colocación de las tarjetas vuelven; el progreso de las que sigan existiendo nunca se tocó. Lo único irrecuperable desde el repositorio son las notas borradas con `--prune`; para eso quedan las copias automáticas de Anki (Herramientas → Copias de seguridad).
 
 Entradas que absorbe el inbox: texto en cualquier formato e imágenes (fotos de apuntes: el agente las lee). Audio o vídeo, no directamente: primero hay que transcribirlos.
+
+## Desván [desde el 2026-09-29]
+
+`3-data/attic.yaml` guarda lo que llega en los apuntes y no entra ahora, con todo su contexto, para que no se pierda ni ensucie el mazo. Lo propuso YAGO: «lo que no entró no entra, pero se conserva, y el día que coja colores, que lo arrastre».
+
+**Qué va al desván y qué no**
+
+- Va: lo de su investigación propia que es de un nivel superior y está poco conectado con lo que ya tiene (发票, 灰色, 欠), lo que llega suelto y sin frase (左, 右), las piezas con un uso real más adelante (疒 con 病) y lo que YAGO quiere ver algún día.
+- No va, **nunca**: lo de clase (entra en el mazo, en su nivel; ver `docs/goal.md`); lo que ya es una nota de otra entrada y no tiene uso propio (叟 dentro de 瘦); lo literario, arcaico o en desuso (se descarta con ❌ y su motivo, sin desván). El desván no es un sitio para aplazar decisiones difíciles: si algo pasa el filtro y conecta, entra.
+
+**Cada elemento** (esquema en `3-data/README.md`): hanzi, pinyin, significado, nivel (oficial, o `level` con `level_reason`), `theme` (dónde iría), `links` (qué palabras lo despiertan), `reason` (por qué no entró), `notes` (sus observaciones, redactadas como cualquier comentario, con `original` si hace falta) y `source` (lote, archivo y fecha). Un hanzi, un elemento: si vuelve a aparecer en otro lote, se amplían sus notas.
+
+**Cuándo despierta** (`anki.py attic <lote>`, determinista, `attic_awake`):
+
+1. una entrada nueva del lote es uno de sus `links` (un enlace de un solo hanzi solo cuenta si es esa palabra exacta: 猫 no despierta con 小猫; uno de varios, también dentro de otra palabra);
+2. una entrada nueva contiene su hanzi (日 despierta con 生日);
+3. su nivel está a punto de cerrarse: el mazo cubre ya el 60 % de ese nivel (`ATTIC_NEAR`), y lo que espera ayuda a completarlo.
+
+Lo que despierta entra en ese mismo lote: pasa a `3-data/` como una entrada más (con sus notas como comentarios y `source: {origin: attic, batch, file, date, rescued: <lote en que entra>}`: el lote, el archivo y la fecha son los de cuando se apuntó), sale del desván y el log y el review («Del desván») lo cuentan con el motivo. Si el agente decide que aún no, lo deja con `snooze: <lote>` y `snooze_reason`; vuelve a despertar en el lote siguiente.
+
+**Qué lo protege** (en el código): `check` exige los campos, un hanzi por elemento y notas bien redactadas, y avisa si algo del desván ya está en el mazo (hay que borrarlo de allí); `close-batch` se niega a cerrar un lote con elementos despiertos sin pasar ni aplazar; `gaps` muestra cuántos esperan, por nivel, y el más antiguo; `lookup` busca también en el desván, así que antes de añadir algo se ve si ya esperaba con notas. YAGO puede pedir que algo salga cuando quiera: «sácalo» en el review o en el chat.
+
+**Qué no es**: no genera tarjetas, no cuenta en la cobertura y no se exporta a la web. Es público como el resto de `3-data/` (nada privado; las citas de libros, con el mismo criterio que en los comentarios).
 
 ## Capas y carpetas
 
@@ -187,7 +211,7 @@ El mazo se ordena por dificultad con los niveles del HSK 3.0 (la versión de 202
 
 **En Anki**: el nivel es la primera división y el tema la segunda: `🐉 Chino práctico::HSK 1::02 Saludos y despedidas` (el 7, `HSK 7-9`). El nivel de una tarjeta es el de su objetivo más difícil (`exercise_level`). Las nuevas salen por nivel primero. Etiquetas `nivel::1` y, si es estimado, `nivel::estimado`. Cambiar el nivel de algo lo mueve de subdeck conservando el progreso, igual que al reorganizar temas (se comprueba en Anki antes de darlo por hecho).
 
-**Cómo se estudia**: nivel a nivel, el subdeck del nivel actual. El que aprende respeta el orden: lo que llega de un nivel superior se guarda en su nivel y espera, aunque venga de sus apuntes.
+**Cómo se estudia**: nivel a nivel, el subdeck del nivel actual. El que aprende respeta el orden: lo de clase que llega de un nivel superior entra en su nivel y espera; lo investigado por su cuenta que es de un nivel superior y está poco conectado espera en el desván.
 
 **Nivel actual y cambio de nivel**: en cada lote se calcula la cobertura de cada nivel (palabras de la lista con `use` `hear` o `say` en el mazo, frente al total del nivel; `anki.py gaps`, `level_coverage`) y va al review. Un nivel se da por superado con al menos el 80 % de su vocabulario y el juicio del agente sobre las estructuras de frase que ya se manejan (la lista mide vocabulario, no gramática). Al cruzarlo, el agente lo anuncia en el chat y en el review, con claridad. Lo que llegue después de un nivel ya superado se señala como hueco de ese nivel.
 
@@ -263,6 +287,7 @@ Todo lo que se puede decidir con datos se decide con atributos y lo comprueba `c
 | Qué entra y para qué (`use`), nivel estimado, tema | criterio del agente con `docs/goal.md`; queda en `use_reason` y `level_reason` y en el log |
 | Frases naturales, mnemotecnias, conexiones, series fonéticas | criterio del agente; se revisan en el review |
 | Citas de libros | criterio: fuera la copia literal (en `original` y en el apunte archivado); la paráfrasis se queda, sin nombrar la fuente (ver «Repositorio y privacidad») |
+| Desván: nada se pierde ni se olvida | `check` (campos, un hanzi por elemento, aviso si ya está en el mazo); `attic_awake` decide qué despierta; `close-batch` no cierra con despiertos sin pasar ni `snooze` |
 | Mnemotecnia frente a origen | criterio al elegir `kind` (`mnemonic` o `linguistic`); la tarjeta lo rotula |
 
 ## Pruebas

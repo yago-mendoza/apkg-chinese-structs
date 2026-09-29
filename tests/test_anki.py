@@ -200,6 +200,31 @@ class Repository(unittest.TestCase):
             for path in re.findall(r'data-audio="([^"]+)"', html):
                 self.assertTrue((anki.ROOT / path).exists(), path)
 
+    def test_attic_wakes_by_rule(self):
+        gou = {"id": "a.gou", "hanzi": "狗", "links": ["猫", "动物"]}
+        ri = {"id": "a.ri", "hanzi": "日", "links": ["星期"]}
+        color = {"id": "a.huise", "hanzi": "灰色", "links": ["颜色"]}
+        w = lambda h: {"hanzi": h}
+        attic = [gou, ri, color]
+        self.assertEqual(anki.attic_awake(attic, [w("小猫")]), [])            # 猫 suelto no despierta con 小猫
+        self.assertEqual([a["id"] for a, _ in anki.attic_awake(attic, [w("猫")])], ["a.gou"])
+        self.assertEqual([a["id"] for a, _ in anki.attic_awake(attic, [w("生日")])], ["a.ri"])
+        self.assertEqual([a["id"] for a, _ in anki.attic_awake(attic, [w("颜色好看")])], ["a.huise"])
+        self.assertEqual(anki.attic_awake([{**gou, "snooze": "003-x"}], [w("猫")], snoozed_for="003-x"), [])
+
+    def test_attic_rules(self):
+        base = {"id": "a.t", "hanzi": "狗", "pinyin": "gǒu", "meaning": {"es": "perro"}, "theme": "cosas",
+                "links": ["猫"], "reason": "prueba", "source": {"batch": "x"}, "notes": []}
+        errors, warnings = [], []
+        anki.attic_rules([base], [], errors, warnings)
+        self.assertEqual((errors, warnings), ([], []))
+        errors, warnings = [], []
+        anki.attic_rules([base, {**base, "id": "a.t2"}, {**base, "id": "a.t3", "hanzi": "猫", "links": []}],
+                         [{"hanzi": "狗"}], errors, warnings)
+        self.assertTrue(any("dos veces" in e for e in errors))
+        self.assertTrue(any("sin links" in e for e in errors))
+        self.assertTrue(any("ya está en el mazo" in w for w in warnings))
+
     def test_bound_character_takes_the_level_of_its_word(self):
         levels = anki.hsk_levels()
         ru = {"id": "c.t.ru", "kind": "character", "hanzi": "入", "pinyin": "rù", "standalone": "rare"}

@@ -5,7 +5,8 @@ Uso:
     python anki.py plan [--doc <lote>]     tarjetas exigidas que faltan; --doc escribe 1-inbox/review-<lote>.md
     python anki.py gaps                    reparto del mazo y pendientes
     python anki.py check
-    python anki.py notebook                   regenera 4-notebook/ desde 3-data/
+    python anki.py notebook                regenera 4-notebook/ desde 3-data/
+    python anki.py attic [<lote>]          el desván: lo que espera y lo que despiertan las entradas del lote
     python anki.py scaffold [--write]      tarjetas estándar para lo que falta (sin --write, solo las lista)
     python anki.py export                  5-output/dictionary.json: diccionario público versionado
     python anki.py close-batch <lote> [--dry-run]  archiva review leído y apuntes; cuaderno; commit y etiqueta
@@ -556,6 +557,16 @@ def cmd_lookup(query):
         uses = [s["id"] for s in sentences if any(seg.get("ref") == e["id"] for seg in s["segments"])]
         if uses:
             print("  frases: " + ", ".join(uses))
+    # El desván: lo que no entró, con su contexto.
+    for a in load_attic():
+        text = " ".join([a.get("hanzi") or "", (a.get("meaning") or {}).get("es", "")] + a.get("links", []))
+        py = compact(a.get("pinyin") or "")
+        if (q and q in text.lower()) or (py and (q_marked == py or q_plain == strip_tones(py))):
+            print(f"\n[desván {a['id']}] {a['hanzi']}  {a.get('pinyin', '')}  {a['meaning'].get('es', '')} · "
+                  f"tema: {a.get('theme')} · despierta con: {', '.join(a.get('links', []))}")
+            print(f"  no entró: {a.get('reason')}")
+            for n in a.get("notes", []):
+                print(f"  nota: {n.get('text')}")
     # Palabras de frases aún no registradas que coinciden.
     loose = {f"{seg['text']} {seg.get('pinyin', '')}".strip() for s in sentences for seg in s["segments"]
              if not seg.get("ref") and seg.get("pinyin") and q and
@@ -580,6 +591,94 @@ LEVEL_PASS = 0.8     # un nivel se da por superado con el 80 % de su vocabulario
 
 
 THEORY = DATA / "theory.yaml"
+ATTIC = DATA / "attic.yaml"
+
+
+def load_attic():
+    """El desván (3-data/attic.yaml): lo que no entró (avanzado o poco conectado), con todo su contexto, esperando a
+    que algo de un lote lo despierte. No genera tarjetas ni se exporta."""
+    if not ATTIC.exists():
+        return []
+    return (yaml.safe_load(ATTIC.read_text(encoding="utf-8")) or {}).get("items", []) or []
+
+
+ATTIC_NEAR = 0.6     # a partir del 60 % de un nivel, lo que espera de ese nivel en el desván se propone para cerrarlo
+
+
+def attic_link_hits(link, hanzi):
+    """Un enlace de un solo hanzi solo despierta con esa palabra exacta (猫 no despierta con 小猫, 进 no con 请进); uno
+    de varios, también dentro de otra palabra (颜色 despierta con 颜色好看)."""
+    return bool(link) and (link == hanzi if len(link) == 1 else link in hanzi)
+
+
+def attic_awake(attic, new_entries, entries=None, snoozed_for=None):
+    """[(elemento, motivo)]: lo del desván que despierta en un lote, por tres vías deterministas:
+    1. una entrada nueva del lote es uno de sus `links` (ver attic_link_hits);
+    2. una entrada nueva contiene su hanzi (日 despierta con 生日);
+    3. su nivel está a punto de cerrarse: el mazo cubre ya el ATTIC_NEAR de ese nivel (lo que espera ayuda a cerrarlo).
+    `snooze: <lote>` (con `snooze_reason`) lo deja dormir en ese lote: se decidió que aún no, y queda escrito."""
+    levels = hsk_levels()
+    near = {lv for lv, have, total in level_coverage(entries)
+            if have / total >= ATTIC_NEAR} if entries is not None else set()
+    out = []
+    for a in attic:
+        if snoozed_for and a.get("snooze") == snoozed_for:
+            continue
+        why = None
+        for e in new_entries:
+            h = e.get("hanzi") or ""
+            hit = next((l for l in a.get("links", []) if h and attic_link_hits(l, h)), None)
+            if hit:
+                why = f"llega {h}"
+                break
+            if h and a.get("hanzi") and len(h) > len(a["hanzi"]) and a["hanzi"] in h:
+                why = f"{h} contiene {a['hanzi']}"
+                break
+        lv = levels.get(a.get("hanzi")) or a.get("level")
+        if not why and lv in near:
+            why = f"el HSK {lv} ya pasa del {int(ATTIC_NEAR * 100)} %"
+        if why:
+            out.append((a, why))
+    return out
+
+
+def batch_attic_awake(batch):
+    """Lo que despierta en un lote con sus entradas nuevas (las que llevan source.batch de ese lote)."""
+    entries, _, _ = load()
+    new = [e for e in entries if (e.get("source") or {}).get("batch") == batch]
+    return attic_awake(load_attic(), new, entries, snoozed_for=batch)
+
+
+def attic_rules(attic, entries, errors, warnings):
+    """Cada elemento del desván, completo; nada que ya esté en el mazo."""
+    levels = hsk_levels()
+    in_deck = {e.get("hanzi") for e in entries if e.get("hanzi")}
+    seen = set()
+    hanzi_seen = set()
+    for a in attic:
+        aid = a.get("id") or f"{a.get('hanzi')}"
+        if aid in seen:
+            errors.append(f"attic.yaml: {aid} repetido")
+        seen.add(aid)
+        if a.get("hanzi") in hanzi_seen:
+            errors.append(f"attic.yaml: {a.get('hanzi')} está dos veces: junta sus notas en un solo elemento")
+        hanzi_seen.add(a.get("hanzi"))
+        if a.get("snooze") and not a.get("snooze_reason"):
+            errors.append(f"attic.yaml: {aid} con snooze sin snooze_reason")
+        for c in a.get("notes", []):
+            if c.get("text") and (c["text"][:1].islower() or c["text"].rstrip()[-1:] not in ".!?»)"):
+                warnings.append(f"attic.yaml: {aid}: nota mal redactada (mayúscula y punto): «{c['text'][:40]}»")
+        for f in ("id", "hanzi", "pinyin", "theme", "reason", "source"):
+            if not a.get(f):
+                errors.append(f"attic.yaml: {aid} sin {f}")
+        if not (a.get("meaning") or {}).get("es"):
+            errors.append(f"attic.yaml: {aid} sin meaning.es")
+        if not a.get("links"):
+            errors.append(f"attic.yaml: {aid} sin links (qué palabras lo despiertan)")
+        if not levels.get(a.get("hanzi")) and not a.get("level"):
+            errors.append(f"attic.yaml: {aid} no está en la lista del HSK: pon level y level_reason")
+        if a.get("hanzi") in in_deck:
+            warnings.append(f"attic.yaml: {aid} ({a.get('hanzi')}) ya está en el mazo: bórralo del desván")
 
 
 def load_theory():
@@ -637,6 +736,13 @@ def cmd_gaps():
     raw = sorted(f.name for f in INBOX.iterdir() if f.is_file() and f.name != "README.md"
                  and not f.name.startswith(("summary-", "review-"))) if INBOX.exists() else []
     print(f"Inbox sin procesar: {len(raw)}" + (f" → {', '.join(raw)}" if raw else ""))
+    attic, lv = load_attic(), hsk_levels()
+    if attic:
+        from collections import Counter
+        by = Counter(lv.get(x.get("hanzi")) or x.get("level") for x in attic)
+        oldest = min(str((x.get("source") or {}).get("date", "")) for x in attic)
+        print(f"Desván: {len(attic)} esperando (" + ", ".join(f"HSK {k}: {n}" for k, n in sorted(by.items()))
+              + f"); lo más antiguo, del {oldest}")
     for g in sorted(INBOX.glob("review-*.md")) if INBOX.exists() else []:
         print(f"Review: {g.name} (editable; entra en el próximo lote junto con los apuntes)")
 
@@ -861,12 +967,32 @@ def write_review_doc(batch, osm):
     lines += ["## ✅ Entró, con matices para ahondar", "",
               "<!-- lo completa el agente: solo los ✅ que traen relación, mnemotecnia, registro o corrección -->", "",
               "## Pendiente: ✅ sin tarjeta todavía", "", "<!-- lo completa el agente -->", "",
-              "## No entró, y por qué", "", "<!-- lo completa el agente: 🟡 y ❌, cada uno con su motivo -->",
+              "## Del desván", "", "<!-- lo completa el agente: lo que entró en este lote desde el desván "
+              "(`anki.py attic <lote>`) y por qué despertó -->", "",
+              "## No entró, y por qué", "", "<!-- lo completa el agente: 🟡 y ❌, cada uno con su motivo; lo que "
+              "se guarda va al desván -->",
               "", "## Por verificar", "", "<!-- lo completa el agente: transcripciones dudosas y glosas corregidas -->",
               "", "## Tus notas", "", "> ", ""]
     path = INBOX / f"review-{batch}.md"
     path.write_text("\n".join(lines), encoding="utf-8")
     print(f"Escrito {path.relative_to(ROOT)}")
+
+
+def cmd_attic(batch=None):
+    """El desván: todo lo que espera y, con un lote, lo que sus entradas nuevas despiertan (entra en ese lote)."""
+    entries, _, _ = load()
+    attic, levels = load_attic(), hsk_levels()
+    awake = batch_attic_awake(batch) if batch else []
+    woken = {a["id"] for a, _ in awake}
+    for a in sorted(attic, key=lambda a: (a.get("theme") or "", a["id"])):
+        lv = levels.get(a.get("hanzi")) or a.get("level")
+        flag = "DESPIERTA" if a["id"] in woken else "espera   "
+        print(f"{flag} {a['id']:18} {a['hanzi']:6} {a.get('pinyin', ''):14} HSK {lv}  {a.get('theme')}: "
+              f"{a['meaning'].get('es', '')}")
+    for a, why in awake:
+        print(f"\n→ {a['hanzi']} despierta ({why}): entra en el lote con sus notas y sale del desván.")
+    print(f"\n{len(attic)} en el desván" + (f"; {len(awake)} despierta(n) con {batch}." if batch else "."))
+    return 0
 
 
 def mark(item, has_cards):
@@ -1249,6 +1375,7 @@ def validate(entries, sentences, exercises, require_audio=True):
     for f in stray_data_files():
         errors.append(f"{f}: el nombre no es ningún tema de 3-data/themes.yaml; su contenido no se carga")
     quality_rules(entries, sentences, exercises, eby, sby, errors, warnings)
+    attic_rules(load_attic(), entries, errors, warnings)
     # Lo que se muestra de un comentario va redactado; el apunte literal vive en `original`.
     for it in entries + sentences + exercises:
         for c in it.get("comments", []):
@@ -1949,6 +2076,9 @@ def close_batch_plan(batch):
     err, _ = validate(*load())
     if err:
         errors.append(f"`check` tiene {len(err)} error(es): resolverlos antes de cerrar")
+    for a, why in batch_attic_awake(batch):
+        errors.append(f"desván: {a['hanzi']} despierta en este lote ({why}): pásalo al mazo o ponle "
+                      f"snooze: {batch} con snooze_reason")
     log = DIGESTS / f"summary-{batch}.md"
     if not log.exists():
         errors.append(f"falta 2-digests/summary-{batch}.md: el log del lote (lo escribe el agente)")
@@ -2232,6 +2362,8 @@ def main():
     pl = sub.add_parser("plan")
     pl.add_argument("--doc", metavar="LOTE", help="escribe 1-inbox/review-<LOTE>.md")
     sub.add_parser("notebook")
+    at = sub.add_parser("attic")
+    at.add_argument("batch", nargs="?", metavar="LOTE", help="qué despiertan las entradas nuevas de este lote")
     cb = sub.add_parser("close-batch")
     cb.add_argument("batch", metavar="LOTE", help="NNN-AAAA-MM-DD-tema")
     cb.add_argument("--dry-run", action="store_true", help="mostrar lo que haría sin mover nada")
@@ -2253,6 +2385,8 @@ def main():
         return cmd_plan(args.doc)
     if args.cmd == "notebook":
         return cmd_notebook()
+    if args.cmd == "attic":
+        return cmd_attic(args.batch)
     if args.cmd == "scaffold":
         return cmd_scaffold(args.write)
     if args.cmd == "export":

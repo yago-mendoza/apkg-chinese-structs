@@ -1,0 +1,357 @@
+# Desván: lo que llegó en los apuntes y no entró (de nivel superior, poco conectado o sin frase), guardado con todo su
+# contexto. No genera tarjetas. `links`: palabras o hanzi que, si llegan como entradas nuevas en un lote, lo despiertan:
+# entonces entra en ese lote (`anki.py attic <lote>`) con sus notas y sale de aquí. `theme`: donde iría. Nivel: el
+# oficial si está en la lista del HSK; si no, `level` y `level_reason`. Esquema completo: 3-data/README.md.
+
+items:
+  # ---------------------------------------------------------------- enviar, lanzar, billetes
+  - id: a.fa
+    hanzi: 发
+    pinyin: fā
+    meaning: {es: 'enviar, mandar; emitir'}
+    theme: cosas
+    links: [短信, 微信, 邮件, 手机号, 发票, 出发, 投]
+    reason: 'HSK 2 y muy cotidiano (发短信 «mandar un SMS», 发微信 «mandar un WeChat»), pero llegó suelto, sin frase, en un lote ya grande.'
+    notes:
+      - {text: '发 es hacer salir algo de ti hacia fuera: enviar, emitir. 投 es lanzar o meter algo hacia un destino. De ahí 发票 «factura» (el papel que se emite) frente a 投票 «votar» (el papel que se mete en la urna).', original: 'Así que 发 es más “send/emit”; 投 más “throw/cast/put into”. (esto relaciaonadlo con lo de voto vs factura)'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.tou
+    hanzi: 投
+    pinyin: tóu
+    meaning: {es: 'lanzar; meter (en un destino)'}
+    theme: cosas
+    links: [投票, 发, 投资]
+    reason: HSK 4; solo tiene sentido junto a 发 y 投票.
+    notes:
+      - {text: '扌 «mano»: lanzar con la mano. Contraste con 发 en la nota de 发.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.fapiao
+    hanzi: 发票
+    pinyin: fāpiào
+    meaning: {es: factura}
+    theme: compras
+    links: [发, 付钱, 买单, 结账, 钱]
+    reason: HSK 4. Muy útil en China para gastos de trabajo, pero de nivel superior.
+    notes:
+      - {text: '票 piào «billete, papel» da el sonido y el sentido: el papel que se emite (发) al pagar.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.toupiao
+    hanzi: 投票
+    pinyin: tóupiào
+    meaning: {es: votar}
+    theme: cosas
+    links: [投, 选, 选举]
+    reason: HSK 6; poco útil para el día a día.
+    notes: []
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.chepiao
+    hanzi: 车票
+    pinyin: chēpiào
+    meaning: {es: 'billete (de tren o autobús)'}
+    theme: compras
+    links: [车, 火车, 公共汽车, 地铁, 坐车]
+    reason: HSK 1, pero 票 y 机票 cubrían la idea; entra con el transporte.
+    notes: []
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.menpiao
+    hanzi: 门票
+    pinyin: ménpiào
+    meaning: {es: 'entrada (a un museo, un parque)'}
+    theme: compras
+    links: [公园, 博物馆, 电影, 电影院]
+    reason: HSK 1, pero 票 y 机票 cubrían la idea; entra con el ocio.
+    notes:
+      - {text: '门 mén es el mismo de 们 y 问; aquí con su tono y su sentido de «puerta».', original: '(fijate que aqui hestá el ''men'' de nimen tamen women, solo que en esos es neutro y aqui no)'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+
+  # ---------------------------------------------------------------- colores, luz, cielo
+  - id: a.huise
+    hanzi: 灰色
+    pinyin: huīsè
+    meaning: {es: gris}
+    theme: describir
+    links: [颜色, 色, 红色, 白色, 黑色, 蓝色, 绿色]
+    reason: HSK 5; entra cuando lleguen los colores.
+    notes:
+      - {text: '灰 huī es «ceniza»: el color de la ceniza.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.yueliang
+    hanzi: 月亮
+    pinyin: yuèliang
+    meaning: {es: luna}
+    theme: clima
+    links: [太阳, 星星, 天空, 亮]
+    reason: HSK 2; mencionado en notas, sin frase.
+    notes:
+      - {text: '月 ya es «luna» (y «mes»); 月亮 es la palabra corriente para la luna. 亮 pierde el tono: yuèliang.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.liang
+    hanzi: 亮
+    pinyin: liàng
+    meaning: {es: 'brillante, con luz'}
+    theme: describir
+    links: [月亮, 灯, 光, 暗]
+    reason: HSK 2; de momento solo vive dentro de 漂亮.
+    notes:
+      - {text: 'La parte de arriba es la de 高, recortada. 很亮 «hay mucha luz». 亮出来 «sacar a la vista».'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.yun
+    hanzi: 云
+    pinyin: yún
+    meaning: {es: nube}
+    theme: clima
+    links: [阴, 晴, 下雪, 刮风, 太阳]
+    reason: HSK 2; entra con más tiempo meteorológico.
+    notes:
+      - {text: 'Aparece en la parte de abajo de 会 huì.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+
+  # ---------------------------------------------------------------- dinero, errores
+  - id: a.qian.owe
+    hanzi: 欠
+    pinyin: qiàn
+    meaning: {es: 'deber (dinero)'}
+    theme: compras
+    links: [钱, 借, 还钱]
+    reason: HSK 5; entra cuando llegue el dinero.
+    notes:
+      - {text: '我欠你钱 «te debo dinero». Como pieza, en 软 ruǎn «blando».', original: '(PERO 欠 SE USA PAR DEBER DINERO 我欠你钱)'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.wuhui
+    hanzi: 误会
+    pinyin: wùhuì
+    meaning: {es: 'malentendido; entender mal'}
+    theme: cosas
+    links: [会, 误, 错误, 理解]
+    reason: HSK 4; 错 cubre «equivocarse» en este nivel.
+    notes:
+      - {text: '我误会你了 «te entendí mal». 误 lleva 讠 «hablar». 会 aquí es «entender».'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.cuowu
+    hanzi: 错误
+    pinyin: cuòwù
+    meaning: {es: error}
+    theme: cosas
+    links: [误, 误会, 问题]
+    reason: 'HSK 3, más formal que 错: 我错了 basta para hablar.'
+    notes: []
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+
+  # ---------------------------------------------------------------- lugares, direcciones, países
+  - id: a.zuo
+    hanzi: 左
+    pinyin: zuǒ
+    meaning: {es: izquierda}
+    theme: cosas
+    links: [右, 边, 往, 前面, 后面, 旁边, 拐]
+    reason: HSK 1, pero llegó suelto; entra con las direcciones.
+    notes: []
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: a.you.right
+    hanzi: 右
+    pinyin: yòu
+    meaning: {es: derecha}
+    theme: cosas
+    links: [左, 边, 往, 前面, 后面, 旁边, 拐]
+    reason: HSK 1, pero llegó suelto; entra con las direcciones.
+    notes:
+      - {text: '左右 zuǒyòu [HSK 3] es «más o menos»: 十个左右 «unos diez».'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: a.guojia
+    hanzi: 国家
+    pinyin: guójiā
+    meaning: {es: país}
+    theme: presentarse
+    links: [外国, 外国人, 哪国]
+    reason: HSK 1, mencionado solo como ejemplo de 国.
+    notes: []
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.waiguo
+    hanzi: 外国
+    pinyin: wàiguó
+    meaning: {es: extranjero (país)}
+    theme: presentarse
+    links: [外国人, 国家, 外]
+    reason: HSK 1, mencionado solo como ejemplo de 国.
+    notes: []
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.shi.city
+    hanzi: 市
+    pinyin: shì
+    meaning: {es: 'ciudad; mercado'}
+    theme: cosas
+    links: [城市, 超市, 市场]
+    reason: 'HSK 2; suelto casi no se usa: entra con 超市 o 城市.'
+    notes:
+      - {text: 'Lleva 巾 «tela» con un tejado 亠: un puesto con toldo. No confundir con 师, 帅, 币 y 布, que también llevan 巾.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+
+  # ---------------------------------------------------------------- tiempo y números
+  - id: a.ri
+    hanzi: 日
+    pinyin: rì
+    meaning: {es: 'día (en fechas, escrito)'}
+    theme: tiempo
+    links: [号, 月, 星期, 生日, 今天]
+    reason: HSK 1; entra con las fechas.
+    notes:
+      - {text: '9月29日 «29 de septiembre». Hablando se dice más 号: 九月二十九号.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.nian
+    hanzi: 年
+    pinyin: nián
+    meaning: {es: año}
+    theme: tiempo
+    links: [今年, 去年, 明年, 新年, 岁]
+    reason: HSK 1; solo apareció como carácter parecido a 午 y 牛.
+    notes:
+      - {text: '午 wǔ «mediodía», 牛 niú «vaca» y 年 nián «año» se parecen mucho y no suenan igual.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.ban
+    hanzi: 半
+    pinyin: bàn
+    meaning: {es: 'mitad; y media'}
+    theme: numeros
+    links: [点, 一半, 半天, 小时]
+    reason: HSK 1; entra con las horas (三点半 «las tres y media»).
+    notes:
+      - {text: 'Da el sonido a 胖 pàng y a 伴 bàn «compañero» [HSK 7].'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.ben.book
+    hanzi: 本
+    pinyin: běn
+    meaning: {es: 'clasificador de libros; raíz, origen'}
+    theme: cosas
+    links: [书, 本子, 词典]
+    reason: 'HSK 1: 一本书 «un libro». Llegó como raíz de 笨, sin su uso cotidiano.'
+    notes:
+      - {text: 'Un árbol 木 con una raya en la raíz. 本国 «país de origen».'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+
+  # ---------------------------------------------------------------- personas y oficios
+  - id: a.zhuanjia
+    hanzi: 专家
+    pinyin: zhuānjiā
+    meaning: {es: experto}
+    theme: personas
+    links: [专业, 医生, 工程师]
+    reason: HSK 3.
+    notes:
+      - {text: '师 va en nombres de profesiones (老师, 工程师), pero «experto» es 专家.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.zhe
+    hanzi: 者
+    pinyin: zhě
+    meaning: {es: 'el que hace (sufijo de agente)'}
+    theme: personas
+    links: [记者, 作者, 读者, 或者]
+    reason: 'HSK 3 y ligado; lo marcaste «importante» en el review 001: entra con su primera palabra.'
+    notes:
+      - {text: 'Forma oficios que ejercen una acción: 记者 «periodista», 作者 «autor». No es el 师 de 老师. 或者 «o bien» no es de agente.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.wang
+    hanzi: 王
+    pinyin: wáng
+    meaning: {es: 'rey; Wang (apellido)'}
+    theme: presentarse
+    links: [姓王, 老王, 小王, 国王]
+    reason: 'HSK 4 como «rey», pero como apellido es de los más comunes: entra en cuanto aparezca un Wang.'
+    notes:
+      - {text: '玉 yù «jade» [HSK 4] es 王 con un punto.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.gongxi
+    hanzi: 恭喜
+    pinyin: gōngxǐ
+    meaning: {es: ¡enhorabuena!}
+    theme: saludos
+    links: [祝, 生日, 新年, 快乐, 结婚]
+    reason: 'HSK 7 en la lista, pero se oye mucho (恭喜发财 en Año Nuevo): entra con las felicitaciones.'
+    notes:
+      - {text: '恭 «respetuoso» + 喜 «alegría», el mismo de 喜欢.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+
+  # ---------------------------------------------------------------- animales, cuerpo
+  - id: a.gou
+    hanzi: 狗
+    pinyin: gǒu
+    meaning: {es: perro}
+    theme: cosas
+    links: [动物, 小狗, 猫, 养]
+    reason: 'HSK 2; llegó a través de 犬, que solo vive como pieza 犭.'
+    notes:
+      - {text: '犬 quǎn «perro» es culto y como pieza se escribe 犭; hablando, 狗.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.yang
+    hanzi: 羊
+    pinyin: yáng
+    meaning: {es: 'oveja, cordero'}
+    theme: compras
+    links: [羊肉, 动物, 猪肉, 鸡肉]
+    reason: HSK 3; entra con 羊肉 «cordero» (comida).
+    notes:
+      - {text: 'Da sonido y parte de sentido a 洋 yáng «océano» [HSK 6] y está en 美 «bello».'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.erduo
+    hanzi: 耳朵
+    pinyin: ěrduo
+    meaning: {es: oreja}
+    theme: describir
+    links: [眼睛, 鼻子, 嘴, 头, 身体]
+    reason: HSK 5; entra con el cuerpo.
+    notes:
+      - {text: '耳 «oreja» está en 聪 de 聪明.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.bing.radical
+    hanzi: 疒
+    pinyin: nè
+    meaning: {es: 'enfermedad (componente)'}
+    theme: escritura
+    level: 3
+    level_reason: 'Componente; se reconoce cuando llegan 病 bìng [HSK 2] y 疼 téng [HSK 3].'
+    links: [病, 生病, 疼, 医院]
+    reason: Pieza; ya se explica en la nota de 瘦.
+    notes:
+      - {text: 'Una cama con una persona tumbada: todo lo que lo lleva tiene que ver con la enfermedad.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+
+  # ---------------------------------------------------------------- verbos y otros
+  - id: a.chuqu
+    hanzi: 出去
+    pinyin: chūqù
+    meaning: {es: 'salir (hacia fuera)'}
+    theme: cosas
+    links: [进, 进来, 进去, 回来, 回去, 出来]
+    reason: HSK 1; entra con una frase de clase.
+    notes:
+      - {text: '出 es una planta que sale de un tiesto. 出来 chūlái es salir hacia aquí; 亮出来 «sacar a la vista».'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.pa
+    hanzi: 怕
+    pinyin: pà
+    meaning: {es: 'temer, tener miedo'}
+    theme: describir
+    links: [可怕, 害怕, 担心]
+    reason: 'HSK 2; llegó como ejemplo de 可 (可怕 «temible»).'
+    notes:
+      - {text: '忄 «corazón» + 白 bái, que da un sonido parecido.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.qing.green
+    hanzi: 青
+    pinyin: qīng
+    meaning: {es: 'verde azulado (de la naturaleza)'}
+    theme: escritura
+    links: [青菜, 青年, 绿, 清楚, 晴]
+    reason: 'HSK 5 suelto; ya explicado como pieza de sonido en 请.'
+    notes:
+      - {text: '青菜 «verdura», 青年 «joven». Da el sonido a 请, 清, 晴 y 情.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: a.tree
+    hanzi: 树
+    pinyin: shù
+    meaning: {es: árbol}
+    theme: cosas
+    links: [棵, 花, 公园, 草]
+    reason: 'HSK 1; salió en una diapositiva (这棵树很高) con 棵 [HSK 4], su clasificador.'
+    notes:
+      - {text: '这棵树很高 «este árbol es alto»: 棵 kē es el clasificador de los árboles.'}
+    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}

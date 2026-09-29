@@ -55,7 +55,7 @@ flowchart LR
 
 **`2-digests/`: one log per batch.** The agent's record: what went in, what did not and why, what it corrected and what it reorganized, plus a running reflection on your level, your classes and your method. Read-only; it is the system's memory.
 
-**`3-data/`: the database.** Everything the deck knows, one file per theme: words, expressions, characters, pronunciation rules, groups of easily confused items, sentences, cards and the generated audio. Only the agent edits it.
+**`3-data/`: the database.** Everything the deck knows, one file per theme: words, expressions, characters, pronunciation rules, groups of easily confused items, sentences, cards and the generated audio. Only the agent edits it. It also holds the attic (`attic.yaml`): what came in my notes but is too advanced or too loose to enter yet, kept with all its context until a later batch brings something it connects to.
 
 **`4-notebook/`: the same database, readable.** Everything learned so far, by theme. Open it to look something up without Anki.
 
