@@ -30,6 +30,8 @@ Cada elemento de los apuntes se juzga contra el «para qué» de arriba:
 
 Hablar depende del pinyin y de los tonos, no de los hanzi. YAGO tiende a investigar a fondo los caracteres después de clase y a descuidar el pinyin (lo dijo él, 2026-09-29), así que el mazo compensa: lo nuevo se practica primero oyéndolo y diciéndolo (dictado, producción, tonos, frases en voz alta); el análisis de caracteres (componentes, origen, mnemotecnias) va como apoyo en el reverso y casi nunca como tarjeta propia. Las estructuras del pinyin (sílabas, finales, pares que se confunden) cuentan tanto como las palabras.
 
+Hablar se entrena sobre todo fuera del mazo: YAGO conversa con su profesora y lee en voz alta todo lo que estudia, también las tarjetas (lo dijo él, 2026-09-29). Por eso el mazo no necesita muchas tarjetas de voz alta, y la pista de pronunciación (fase 4 en `docs/design.md`) no tiene prisa; lo que sí aporta el mazo es el oído y el pinyin: dictado, tonos y audio en todo.
+
 ## Cómo se explica un carácter
 
 Condición indispensable en todo el mazo (tarjetas, cuaderno, log y review): que nunca se confunda lo que se usa con lo que solo ayuda a recordar.
