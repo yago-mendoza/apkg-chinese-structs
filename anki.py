@@ -2001,8 +2001,14 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
     cards = []
     for x in exercises:
         f = card_fields(x, eby, sby, manifest_cards, set())
+        # Lo esperado al escribir (pinyin y hanzi), como lo compara Anki: `typed` obliga a escribir; `typable`,
+        # frases para decir, lo deja opcional.
+        exp = {k: html.unescape(m.group(1)) for k in ("py", "hz")
+               if (m := re.search(rf'<span id="acs-exp-{k}" style="display:none">(.*?)</span>', f["back"]))}
         cards.append({"id": x["id"], "type": x["type"], "theme": x.get("theme"), "level": card_level(x),
-                      "typed": bool(f["typed"]), "task": f["task"],
+                      "typed": bool(f["typed"]), "typable": "acs-typable" in f["front"],
+                      "expected": {"pinyin": exp.get("py", ""), "hanzi": exp.get("hz", "")} if exp else None,
+                      "task": f["task"],
                       "front": web_html(f["front"] + f["prompt_audio"]),
                       "back": web_html(f["back"] + f["answer_audio"]), "notes": web_html(f["notes"])})
     return {
