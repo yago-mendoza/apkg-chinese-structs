@@ -15,6 +15,7 @@ entries:
     use: say
     role: content
     kind: word
+    pos: nombre-propio
     hanzi: 西班牙
     pinyin: Xībānyá
     meaning: {es: España, en: Spain}
@@ -28,6 +29,7 @@ entries:
     use: hear
     role: content
     kind: word
+    pos: nombre-propio
     hanzi: 美国
     pinyin: Měiguó
     meaning: {es: Estados Unidos, en: United States}
@@ -199,6 +201,7 @@ entries:
     use: say
     role: content
     kind: word
+    pos: nombre-propio
     hanzi: 门多萨
     pinyin: Ménduōsà
     meaning: {es: Mendoza (mi apellido), en: Mendoza (my surname)}
@@ -211,6 +214,7 @@ entries:
     use: say
     role: content
     kind: word
+    pos: nombre-propio
     hanzi: 雅戈
     pinyin: Yǎgē
     meaning: {es: Yago (mi nombre en chino), en: Yago (my Chinese name)}
@@ -266,6 +270,7 @@ entries:
     use_reason: nombre de ejemplo de la clase; solo aparece dentro de su frase
     role: content
     kind: word
+    pos: nombre-propio
     hanzi: 大卫
     pinyin: Dàwèi
     meaning: {es: David (nombre de ejemplo), en: David (example name)}

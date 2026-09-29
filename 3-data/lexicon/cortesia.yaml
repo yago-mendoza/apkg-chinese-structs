@@ -30,6 +30,8 @@ entries:
     use: say
     role: content
     kind: word
+    pos: adjetivo
+    pos_reason: 'en el mazo es «correcto, eso es»; la lista lo da antes como preposición («hacia, para»)'
     hanzi: 对
     pinyin: duì
     meaning: {es: 'correcto; sí, eso es', en: 'right, correct'}
@@ -92,6 +94,7 @@ entries:
     use: say
     role: content
     kind: word
+    pos: interjeccion
     hanzi: 嗯
     pinyin: èn
     meaning: {es: 'mm, sí (asentimiento)', en: mm-hm (agreement)}

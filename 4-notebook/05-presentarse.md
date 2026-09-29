@@ -4,32 +4,32 @@
 
 ## Vocabulario
 
-- ✅🃏 中国 Zhōngguó [ʈʂʊŋ˥ kwɔ˧˥] · China · 国: un territorio cerrado 口 que guarda el sello de jade 玉 del rey: el país.
-- ✅🃏 西班牙 Xībānyá [ɕi˥ pan˥ ja˧˥] · España · Transcripción fonética: los caracteres imitan el sonido, no el significado. · 西 xī «oeste» es el mismo de 东西 dōngxi «cosas».
-- ✅🃏 美国 Měiguó [meɪ˧˩˧ kwɔ˧˥] · Estados Unidos · 美: 大 «persona» con 羊 «carnero» encima, como adorno de cuernos: bello. · 美国 es en parte transcripción: 美 měi imita el sonido de «América» y de paso significa «bello».
-- ✅🃏 中文 Zhōngwén [ʈʂʊŋ˥ wən˧˥] · chino (la lengua) · Modificador + núcleo: 中 «China» especifica 文 «lengua, escritura».
-- ✅🃏 是 shì [ʂɨ˥˩] · ser · 是 une dos nombres (我是学生), no un nombre con un adjetivo: 我很高, no 我是高. Para preguntar vale 她漂亮吗？ o 她是不是很漂亮？, pero no 她是漂亮吗？.
-- ✅🃏 不 bù [pu˥˩] · no
-- ✅🃏 吗 ma [ma] · ¿…? (convierte la frase en pregunta de sí o no) · Partícula final que convierte una afirmación en una pregunta de sí o no.
-- ✅🃏 呢 ne [nɤ] · ¿y…? (devuelve la pregunta) · Tono neutro, corto y apagado, con una vocal parecida a [ə]. Tras una respuesta, devuelve la pregunta: «¿y tú?».
-- ✅🃏 也 yě [jɛ˧˩˧] · también
-- ✅🃏 都 dōu [toʊ˥] · todos, ambos (adverbio)
-- ✅🃏 的 de [tɤ] · de (posesión: 我的 = mi)
-- ✅🃏 叫 jiào [tɕjɑʊ˥˩] · llamarse
-- ✅🃏 什么 shénme [ʂən˧˥ mɤ] · qué
-- ✅🃏 名字 míngzi [miŋ˧˥ tsɯ] · nombre
-- ✅🃏 认识 rènshi [ʐən˥˩ ʂɨ] · conocer (a alguien) · 认 «reconocer» + 识 «distinguir»: conocer a alguien, estar familiarizado con algo. · 识 aporta la idea de distinguir algo de lo demás porque se conoce.
-- ✅🃏 高兴 gāoxìng [kɑʊ˥ ɕiŋ˥˩] · contento
-- ✅🃏 姓 xìng [ɕiŋ˥˩] · apellidarse; apellido · Se pregunta el apellido para poder tratar a alguien de señor o señora. · 姓 xìng «apellido» + 名字 míngzi «nombre» = 姓名 xìngmíng, el nombre completo.
-- ✅🃏 贵姓 guìxìng [kweɪ˥˩ ɕiŋ˥˩] · su apellido (forma cortés) · 您贵姓？ es la forma respetuosa de 你姓什么？ Se contesta con el apellido o con el nombre completo.
-- ✅🃏 姓名 xìngmíng [ɕiŋ˥˩ miŋ˧˥] · nombre completo
-- ✅🃏 门多萨 Ménduōsà [mən˧˥ twɔ˥ sa˥˩] · Mendoza (mi apellido) · Pura transcripción del sonido: 门 «puerta», 多 «mucho» y 萨 no forman ningún significado.
-- ✅🃏 雅戈 Yǎgē [ja˧˩˧ kɤ˥] · Yago (mi nombre en chino) · Transcripción por el sonido: 雅 «elegante» y 戈 «alabarda», sin otro significado. Solo por diversión.
-- ✅🃏 来 lái [laɪ˧˥] · venir · Su origen es el dibujo de una planta de trigo, tomado prestado por su sonido para «venir».
-- ✅🃏 来自 láizì [laɪ˧˥ tsɯ˥˩] · venir de, ser de · Algo formal. Hablando, también: 我从西班牙来 wǒ cóng Xībānyá lái.
-- ✅🃏 问 wèn [wən˥˩] · preguntar · Una boca 口 en la puerta 门, preguntando. · 门 mén le da el sonido: wèn.
-- ✅🃏 北京 Běijīng [peɪ˧˩˧ tɕiŋ˥] · Pekín · Literalmente «capital del norte»: 北 běi «norte» + 京 jīng «capital». · 京 es un edificio alto sobre una colina, la parte de arriba de 高.
-- ✅ 大卫 Dàwèi [ta˥˩ weɪ˥˩] · David (nombre de ejemplo)
+- ✅🃏 中国 Zhōngguó [ʈʂʊŋ˥ kwɔ˧˥] · China · _nombre propio_ · 国: un territorio cerrado 口 que guarda el sello de jade 玉 del rey: el país.
+- ✅🃏 西班牙 Xībānyá [ɕi˥ pan˥ ja˧˥] · España · _nombre propio_ · Transcripción fonética: los caracteres imitan el sonido, no el significado. · 西 xī «oeste» es el mismo de 东西 dōngxi «cosas».
+- ✅🃏 美国 Měiguó [meɪ˧˩˧ kwɔ˧˥] · Estados Unidos · _nombre propio_ · 美: 大 «persona» con 羊 «carnero» encima, como adorno de cuernos: bello. · 美国 es en parte transcripción: 美 měi imita el sonido de «América» y de paso significa «bello».
+- ✅🃏 中文 Zhōngwén [ʈʂʊŋ˥ wən˧˥] · chino (la lengua) · _nombre propio_ · Modificador + núcleo: 中 «China» especifica 文 «lengua, escritura».
+- ✅🃏 是 shì [ʂɨ˥˩] · ser · _verbo_ · 是 une dos nombres (我是学生), no un nombre con un adjetivo: 我很高, no 我是高. Para preguntar vale 她漂亮吗？ o 她是不是很漂亮？, pero no 她是漂亮吗？.
+- ✅🃏 不 bù [pu˥˩] · no · _adverbio_
+- ✅🃏 吗 ma [ma] · ¿…? (convierte la frase en pregunta de sí o no) · _partícula_ · Partícula final que convierte una afirmación en una pregunta de sí o no.
+- ✅🃏 呢 ne [nɤ] · ¿y…? (devuelve la pregunta) · _partícula_ · Tono neutro, corto y apagado, con una vocal parecida a [ə]. Tras una respuesta, devuelve la pregunta: «¿y tú?».
+- ✅🃏 也 yě [jɛ˧˩˧] · también · _adverbio_
+- ✅🃏 都 dōu [toʊ˥] · todos, ambos (adverbio) · _adverbio_
+- ✅🃏 的 de [tɤ] · de (posesión: 我的 = mi) · _partícula_
+- ✅🃏 叫 jiào [tɕjɑʊ˥˩] · llamarse · _verbo_
+- ✅🃏 什么 shénme [ʂən˧˥ mɤ] · qué · _interrogativo_
+- ✅🃏 名字 míngzi [miŋ˧˥ tsɯ] · nombre · _sustantivo_
+- ✅🃏 认识 rènshi [ʐən˥˩ ʂɨ] · conocer (a alguien) · _verbo_ · 认 «reconocer» + 识 «distinguir»: conocer a alguien, estar familiarizado con algo. · 识 aporta la idea de distinguir algo de lo demás porque se conoce.
+- ✅🃏 高兴 gāoxìng [kɑʊ˥ ɕiŋ˥˩] · contento · _adjetivo_
+- ✅🃏 姓 xìng [ɕiŋ˥˩] · apellidarse; apellido · _verbo_ · Se pregunta el apellido para poder tratar a alguien de señor o señora. · 姓 xìng «apellido» + 名字 míngzi «nombre» = 姓名 xìngmíng, el nombre completo.
+- ✅🃏 贵姓 guìxìng [kweɪ˥˩ ɕiŋ˥˩] · su apellido (forma cortés) · _expresión_ · 您贵姓？ es la forma respetuosa de 你姓什么？ Se contesta con el apellido o con el nombre completo.
+- ✅🃏 姓名 xìngmíng [ɕiŋ˥˩ miŋ˧˥] · nombre completo · _sustantivo_
+- ✅🃏 门多萨 Ménduōsà [mən˧˥ twɔ˥ sa˥˩] · Mendoza (mi apellido) · _nombre propio_ · Pura transcripción del sonido: 门 «puerta», 多 «mucho» y 萨 no forman ningún significado.
+- ✅🃏 雅戈 Yǎgē [ja˧˩˧ kɤ˥] · Yago (mi nombre en chino) · _nombre propio_ · Transcripción por el sonido: 雅 «elegante» y 戈 «alabarda», sin otro significado. Solo por diversión.
+- ✅🃏 来 lái [laɪ˧˥] · venir · _verbo_ · Su origen es el dibujo de una planta de trigo, tomado prestado por su sonido para «venir».
+- ✅🃏 来自 láizì [laɪ˧˥ tsɯ˥˩] · venir de, ser de · _verbo_ · Algo formal. Hablando, también: 我从西班牙来 wǒ cóng Xībānyá lái.
+- ✅🃏 问 wèn [wən˥˩] · preguntar · _verbo_ · Una boca 口 en la puerta 门, preguntando. · 门 mén le da el sonido: wèn.
+- ✅🃏 北京 Běijīng [peɪ˧˩˧ tɕiŋ˥] · Pekín · _nombre propio_ · Literalmente «capital del norte»: 北 běi «norte» + 京 jīng «capital». · 京 es un edificio alto sobre una colina, la parte de arriba de 高.
+- ✅ 大卫 Dàwèi [ta˥˩ weɪ˥˩] · David (nombre de ejemplo) · _nombre propio_
 
 ## Frases
 

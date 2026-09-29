@@ -200,6 +200,42 @@ class Repository(unittest.TestCase):
             for path in re.findall(r'data-audio="([^"]+)"', html):
                 self.assertTrue((anki.ROOT / path).exists(), path)
 
+    def test_part_of_speech(self):
+        w = lambda h, **k: {"id": "w.t", "kind": "word", "hanzi": h, **k}
+        self.assertEqual(anki.pos_of(w("我")), "pronombre")
+        self.assertEqual(anki.pos_of(w("个")), "clasificador")
+        self.assertEqual(anki.pos_of(w("什么")), "interrogativo")          # la lista lo da como pronombre
+        self.assertEqual(anki.pos_of(w("对", pos="adjetivo")), "adjetivo")
+        self.assertEqual(anki.pos_of({"kind": "expression", "hanzi": "你好"}), "expresion")
+        self.assertIsNone(anki.pos_of({"kind": "character", "hanzi": "们"}))
+        e = w("对", pos="adjetivo")
+        errors, warnings = [], []
+        anki.grammar_rules([e], [], {"w.t": e}, {}, errors, warnings)
+        self.assertTrue(any("pos_reason" in m for m in warnings))
+
+    def test_structures(self):
+        self.assertEqual(anki.pattern_tokens("{S} + 很 + {Adj}"), [("slot", "S"), ("fixed", "很"), ("slot", "Adj")])
+        self.assertEqual(anki.pattern_tokens("{S} + {Adj} + 吗？")[-2:], [("fixed", "吗"), ("punct", "？")])
+        words = [{"id": "w.ta", "kind": "word", "hanzi": "他", "pinyin": "tā"},
+                 {"id": "w.hen", "kind": "word", "hanzi": "很", "pinyin": "hěn"},
+                 {"id": "w.gao", "kind": "word", "hanzi": "高", "pinyin": "gāo"},
+                 {"id": "w.pengyou", "kind": "word", "hanzi": "朋友", "pinyin": "péngyou"}]
+        seg = lambda *ids: {"segments": [{"text": i, "ref": i} for i in ids]}
+        good = {"id": "s.good", **seg("w.ta", "w.hen", "w.gao")}
+        odd = {"id": "s.odd", **seg("w.ta", "w.hen", "w.pengyou")}
+        st = {"id": "st.t", "kind": "structure", "pattern": "{S} + 很 + {Adj}", "refs": ["w.hen"],
+              "meaning": {"es": "describir"}, "examples": ["s.good"]}
+        errors, warnings = [], []
+        anki.grammar_rules(words + [st], [good], {e["id"]: e for e in words + [st]}, {"s.good": good}, errors, warnings)
+        self.assertEqual((errors, warnings), ([], []))
+        errors, warnings = [], []
+        bad = {**st, "examples": ["s.odd"]}
+        anki.grammar_rules(words + [bad], [odd], {e["id"]: e for e in words + [bad]}, {"s.odd": odd}, errors, warnings)
+        self.assertTrue(any("ocupa el hueco" in m for m in warnings))        # 朋友 no es un adjetivo
+        errors, warnings = [], []
+        anki.grammar_rules(words + [{**st, "refs": []}], [good], {e["id"]: e for e in words}, {"s.good": good}, errors, warnings)
+        self.assertTrue(any("refs deben ser" in m for m in errors))
+
     def test_attic_wakes_by_rule(self):
         gou = {"id": "a.gou", "hanzi": "狗", "links": ["猫", "动物"]}
         ri = {"id": "a.ri", "hanzi": "日", "links": ["星期"]}

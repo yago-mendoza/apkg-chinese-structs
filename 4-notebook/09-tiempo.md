@@ -4,12 +4,12 @@
 
 ## Vocabulario
 
-- ✅🃏 上午 shàngwǔ [ʂɑŋ˥˩ u˧˩˧] · por la mañana (antes de mediodía)
-- ✅🃏 中午 zhōngwǔ [ʈʂʊŋ˥ u˧˩˧] · mediodía
-- ✅🃏 下午 xiàwǔ [ɕja˥˩ u˧˩˧] · por la tarde
-- ✅🃏 明天 míngtiān [miŋ˧˥ tʰjɛn˥] · mañana (el día)
-- ✅🃏 见 jiàn [tɕjɛn˥˩] · ver; verse · Un ojo 目 sobre unas piernas 儿: alguien que ve. La forma tradicional, 見, lo muestra mejor.
-- ✅🃏 晚上 wǎnshang [wan˧˩˧ ʂɑŋ] · por la noche
+- ✅🃏 上午 shàngwǔ [ʂɑŋ˥˩ u˧˩˧] · por la mañana (antes de mediodía) · _sustantivo_
+- ✅🃏 中午 zhōngwǔ [ʈʂʊŋ˥ u˧˩˧] · mediodía · _sustantivo_
+- ✅🃏 下午 xiàwǔ [ɕja˥˩ u˧˩˧] · por la tarde · _sustantivo_
+- ✅🃏 明天 míngtiān [miŋ˧˥ tʰjɛn˥] · mañana (el día) · _sustantivo_
+- ✅🃏 见 jiàn [tɕjɛn˥˩] · ver; verse · _verbo_ · Un ojo 目 sobre unas piernas 儿: alguien que ve. La forma tradicional, 見, lo muestra mejor.
+- ✅🃏 晚上 wǎnshang [wan˧˩˧ ʂɑŋ] · por la noche · _sustantivo_
 
 ## 上 / 中 / 下 + 午
 

@@ -4,21 +4,21 @@
 
 ## Vocabulario
 
-- ✅🃏 我 wǒ [wɔ˧˩˧] · yo; me
-- ✅🃏 你 nǐ [ni˧˩˧] · tú
-- ✅🃏 您 nín [nin˧˥] · usted (tú con respeto) · Forma respetuosa de 你: para personas mayores, clientes o desconocidos.
-- ✅🃏 我们 wǒmen [wɔ˧˩˧ mən] · nosotros
-- ✅🃏 你们 nǐmen [ni˧˩˧ mən] · vosotros
-- ✅🃏 他 tā [tʰa˥] · él
-- 🟡🃏 她 tā [tʰa˥] · ella
-- 🟡🃏 它 tā [tʰa˥] · ello (cosas, animales) · Se usa para animales y cosas.
-- ✅🃏 他们 tāmen [tʰa˥ mən] · ellos
-- ✅🃏 大家 dàjiā [ta˥˩ tɕja˥] · todos, todo el mundo · Suele ir con 都: 大家都来了 «ya estamos todos».
-- ✅🃏 老师 lǎoshī [lɑʊ˧˩˧ ʂɨ˥] · profesor, profesora
-- ✅🃏 学生 xuéshēng [ɕɥœ˧˥ ʂɤŋ˥] · estudiante · Un niño que estudia bajo un techo, rodeado de sus útiles de aprendizaje.
-- ✅🃏 朋友 péngyou [pʰɤŋ˧˥ joʊ] · amigo, amiga
-- ✅🃏 工程师 gōngchéngshī [kʊŋ˥ ʈʂʰɤŋ˧˥ ʂɨ˥] · ingeniero, ingeniera · Mi profesión. · 师 aparece en profesiones y maestros, como en 老师.
-- ✅🃏 人 rén [ʐən˧˥] · persona
+- ✅🃏 我 wǒ [wɔ˧˩˧] · yo; me · _pronombre_
+- ✅🃏 你 nǐ [ni˧˩˧] · tú · _pronombre_
+- ✅🃏 您 nín [nin˧˥] · usted (tú con respeto) · _pronombre_ · Forma respetuosa de 你: para personas mayores, clientes o desconocidos.
+- ✅🃏 我们 wǒmen [wɔ˧˩˧ mən] · nosotros · _pronombre_
+- ✅🃏 你们 nǐmen [ni˧˩˧ mən] · vosotros · _pronombre_
+- ✅🃏 他 tā [tʰa˥] · él · _pronombre_
+- 🟡🃏 她 tā [tʰa˥] · ella · _pronombre_
+- 🟡🃏 它 tā [tʰa˥] · ello (cosas, animales) · _pronombre_ · Se usa para animales y cosas.
+- ✅🃏 他们 tāmen [tʰa˥ mən] · ellos · _pronombre_
+- ✅🃏 大家 dàjiā [ta˥˩ tɕja˥] · todos, todo el mundo · _pronombre_ · Suele ir con 都: 大家都来了 «ya estamos todos».
+- ✅🃏 老师 lǎoshī [lɑʊ˧˩˧ ʂɨ˥] · profesor, profesora · _sustantivo_
+- ✅🃏 学生 xuéshēng [ɕɥœ˧˥ ʂɤŋ˥] · estudiante · _sustantivo_ · Un niño que estudia bajo un techo, rodeado de sus útiles de aprendizaje.
+- ✅🃏 朋友 péngyou [pʰɤŋ˧˥ joʊ] · amigo, amiga · _sustantivo_
+- ✅🃏 工程师 gōngchéngshī [kʊŋ˥ ʈʂʰɤŋ˧˥ ʂɨ˥] · ingeniero, ingeniera · _sustantivo_ · Mi profesión. · 师 aparece en profesiones y maestros, como en 老师.
+- ✅🃏 人 rén [ʐən˧˥] · persona · _sustantivo_
 - 🟡🃏 师 shī · maestro; experto (en nombres de profesiones) · Da nombre a profesiones y a quien enseña: 老师 lǎoshī, 工程师 gōngchéngshī, 厨师 chúshī «cocinero» [HSK 3]. «Experto» en general es otra palabra: 专家 zhuānjiā [HSK 3]. · No se confunde con 者 zhě, «el que hace»: 作者 zuòzhě «autor», 记者 jìzhě «periodista» [HSK 3]. 师 es un oficio; 者, quien hace una acción. · El maestro dirige a los alumnos bajo techo, con el pañuelo 巾 como en 帅.
 - ✅🃏 们 men · plural de personas (我们, 你们, 他们) · Muchas personas 亻 pasando por una puerta 门. · 门 mén le da el sonido; en 们 la sílaba pierde el tono: wǒmen, nǐmen, tāmen.
 

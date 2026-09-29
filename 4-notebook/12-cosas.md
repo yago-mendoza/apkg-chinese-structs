@@ -4,28 +4,28 @@
 
 ## Vocabulario
 
-- ✅ 在 zài [tsaɪ˥˩] · estar (haciendo algo)
-- ✅🃏 看 kàn [kʰan˥˩] · mirar; leer · Una mano 手 sobre el ojo 目, como quien se hace visera para mirar a lo lejos.
-- ✅🃏 看见 kànjiàn [kʰan˥˩ tɕjɛn˥˩] · ver (llegar a ver) · 看 es la acción de mirar; 见 añade el resultado: llegar a ver.
-- ✅🃏 看看 kànkan [kʰan˥˩ kʰan] · echar un vistazo · Repetir el verbo lo suaviza: «mirar un poco», no «mirar dos veces».
-- ✅🃏 书 shū [ʂu˥] · libro
-- ✅🃏 手机 shǒujī [ʂoʊ˧˩˧ tɕi˥] · móvil · 手 «mano» + 机 «máquina». · 机 jī «máquina» (con 木 a la izquierda, no 扌): 手机 es la máquina de mano; 飞机 fēijī, la que vuela; 机票 jīpiào, su billete.
-- ✅🃏 足球 zúqiú [tsu˧˥ tɕʰjoʊ˧˥] · fútbol · Calco: 足 «pie» + 球 «pelota».
-- ✅🃏 火车 huǒchē [xwɔ˧˩˧ ʈʂʰɤ˥] · tren · 火 «fuego» + 车 «vehículo»: el primero especifica el segundo.
-- 🟡🃏 入口 rùkǒu [ʐu˥˩ kʰoʊ˧˩˧] · entrada
-- ✅🃏 这 zhè [ʈʂɤ˥˩] · este, esto
-- ✅🃏 那 nà [na˥˩] · ese, eso; aquel
-- ✅🃏 门 mén [mən˧˥] · puerta · El dibujo de una puerta de dos hojas.
-- ✅🃏 飞机 fēijī [feɪ˥ tɕi˥] · avión
-- ✅🃏 小猫 xiǎomāo [ɕjɑʊ˧˩˧ mɑʊ˥] · gatito
-- ✅🃏 工作 gōngzuò [kʊŋ˥ tswɔ˥˩] · trabajo; trabajar · 工 gōng es el de 工程师. 恭 gōng «respetuoso» suena igual y es otro carácter.
-- ✅🃏 走 zǒu [tsoʊ˧˩˧] · irse; andar
-- ✅🃏 了 le [lɤ] · partícula: algo ya pasó o ha cambiado · Al final de la frase marca un cambio o algo ya ocurrido: 我走了 «me voy», 下雨了 «se ha puesto a llover», 我错了 «me equivoqué».
-- ✅🃏 错 cuò [tsʰwɔ˥˩] · equivocado; error · 错误 cuòwù «error» [HSK 3] y 误会 wùhuì «malentendido» [HSK 4] son más formales; hablando basta 错.
-- ✅🃏 篮球 lánqiú [lan˧˥ tɕʰjoʊ˧˥] · baloncesto
-- ✅🃏 打 dǎ [ta˧˩˧] · jugar (a deportes de pelota); golpear · 打 + deporte de pelota: 打篮球 «jugar al baloncesto». Lleva 扌 «mano».
-- 🟡🃏 出口 chūkǒu [ʈʂʰu˥ kʰoʊ˧˩˧] · salida · 出 chū «salir»: una planta que sale de un tiesto. 出口 y 入口 son la pareja de los carteles.
-- ✅🃏 软件 ruǎnjiàn [ʐwan˧˩˧ tɕjɛn˥˩] · software · Calco: 软 «blando» + 件 «pieza», frente a 硬件 yìngjiàn «hardware», las piezas duras.
+- ✅ 在 zài [tsaɪ˥˩] · estar (haciendo algo) · _adverbio_
+- ✅🃏 看 kàn [kʰan˥˩] · mirar; leer · _verbo_ · Una mano 手 sobre el ojo 目, como quien se hace visera para mirar a lo lejos.
+- ✅🃏 看见 kànjiàn [kʰan˥˩ tɕjɛn˥˩] · ver (llegar a ver) · _verbo_ · 看 es la acción de mirar; 见 añade el resultado: llegar a ver.
+- ✅🃏 看看 kànkan [kʰan˥˩ kʰan] · echar un vistazo · _verbo_ · Repetir el verbo lo suaviza: «mirar un poco», no «mirar dos veces».
+- ✅🃏 书 shū [ʂu˥] · libro · _sustantivo_
+- ✅🃏 手机 shǒujī [ʂoʊ˧˩˧ tɕi˥] · móvil · _sustantivo_ · 手 «mano» + 机 «máquina». · 机 jī «máquina» (con 木 a la izquierda, no 扌): 手机 es la máquina de mano; 飞机 fēijī, la que vuela; 机票 jīpiào, su billete.
+- ✅🃏 足球 zúqiú [tsu˧˥ tɕʰjoʊ˧˥] · fútbol · _sustantivo_ · Calco: 足 «pie» + 球 «pelota».
+- ✅🃏 火车 huǒchē [xwɔ˧˩˧ ʈʂʰɤ˥] · tren · _sustantivo_ · 火 «fuego» + 车 «vehículo»: el primero especifica el segundo.
+- 🟡🃏 入口 rùkǒu [ʐu˥˩ kʰoʊ˧˩˧] · entrada · _sustantivo_
+- ✅🃏 这 zhè [ʈʂɤ˥˩] · este, esto · _pronombre_
+- ✅🃏 那 nà [na˥˩] · ese, eso; aquel · _pronombre_
+- ✅🃏 门 mén [mən˧˥] · puerta · _sustantivo_ · El dibujo de una puerta de dos hojas.
+- ✅🃏 飞机 fēijī [feɪ˥ tɕi˥] · avión · _sustantivo_
+- ✅🃏 小猫 xiǎomāo [ɕjɑʊ˧˩˧ mɑʊ˥] · gatito · _sustantivo_
+- ✅🃏 工作 gōngzuò [kʊŋ˥ tswɔ˥˩] · trabajo; trabajar · _verbo_ · 工 gōng es el de 工程师. 恭 gōng «respetuoso» suena igual y es otro carácter.
+- ✅🃏 走 zǒu [tsoʊ˧˩˧] · irse; andar · _verbo_
+- ✅🃏 了 le [lɤ] · partícula: algo ya pasó o ha cambiado · _partícula_ · Al final de la frase marca un cambio o algo ya ocurrido: 我走了 «me voy», 下雨了 «se ha puesto a llover», 我错了 «me equivoqué».
+- ✅🃏 错 cuò [tsʰwɔ˥˩] · equivocado; error · _adjetivo_ · 错误 cuòwù «error» [HSK 3] y 误会 wùhuì «malentendido» [HSK 4] son más formales; hablando basta 错.
+- ✅🃏 篮球 lánqiú [lan˧˥ tɕʰjoʊ˧˥] · baloncesto · _sustantivo_
+- ✅🃏 打 dǎ [ta˧˩˧] · jugar (a deportes de pelota); golpear · _verbo_ · 打 + deporte de pelota: 打篮球 «jugar al baloncesto». Lleva 扌 «mano».
+- 🟡🃏 出口 chūkǒu [ʈʂʰu˥ kʰoʊ˧˩˧] · salida · _sustantivo_ · 出 chū «salir»: una planta que sale de un tiesto. 出口 y 入口 son la pareja de los carteles.
+- ✅🃏 软件 ruǎnjiàn [ʐwan˧˩˧ tɕjɛn˥˩] · software · _sustantivo_ · Calco: 软 «blando» + 件 «pieza», frente a 硬件 yìngjiàn «hardware», las piezas duras.
 
 ## 那 y 哪儿
 

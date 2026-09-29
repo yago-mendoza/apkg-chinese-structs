@@ -21,6 +21,8 @@ El modelo redacta; `anki.py` calcula y comprueba. Lo que puede calcularse (qué 
 - **Rol**: `content` (palabra con significado propio) o `function` (pieza gramatical: se practica en frase).
 - **Nivel**: escalón de dificultad del HSK 3.0, del 1 al 7 (el 7 agrupa los niveles 7 a 9). Oficial si la palabra está en la lista, estimado por el agente si no. Primera división del mazo (ver «Niveles»).
 - **Desván**: lo que llegó y no entra ahora, guardado con su contexto hasta que algo lo despierte (`3-data/attic.yaml`; ver «Desván»).
+- **Categoría gramatical** (`pos`): pronombre, verbo, clasificador… de cada palabra; ver «Gramática».
+- **Estructura**: plantilla de frase con huecos visibles (`{S} + 很 + {Adj}`), con sus ejemplos; ver «Gramática».
 - **Tema**: agrupación por asunto (`3-data/themes.yaml`); es el archivo en que vive cada elemento y decide el subdeck, el orden de aprendizaje y el cuaderno.
 - **Grupo**: entradas que se estudian juntas (`visual` y `homophone` por contraste; `pattern`, `set` y `phonetic` como familia).
 - **Ósmosis**: que una palabra aparezca como contexto en frases, además de en sus propias tarjetas.
@@ -103,6 +105,26 @@ Un lote puede tocar mucho (reorganizar temas, corregir cientos de tarjetas). Lo 
 Recuperación: el estado tras cada lote está en su etiqueta `lote-NNN`. Volver a él es restaurar `3-data/` desde la etiqueta y hacer `push`: el contenido y la colocación de las tarjetas vuelven; el progreso de las que sigan existiendo nunca se tocó. Lo único irrecuperable desde el repositorio son las notas borradas con `--prune`; para eso quedan las copias automáticas de Anki (Herramientas → Copias de seguridad).
 
 Entradas que absorbe el inbox: texto en cualquier formato e imágenes (fotos de apuntes: el agente las lee). Audio o vídeo, no directamente: primero hay que transcribirlos.
+
+## Gramática: categorías y estructuras [desde el 2026-09-29]
+
+Propuesta de YAGO: clasificar el vocabulario por categoría gramatical y escribir las estructuras de frase con huecos visibles, también en las tarjetas.
+
+**Categoría gramatical** (`pos`, calculada; `pos_of` en `anki.py`): cada palabra tiene una de pronombre, sustantivo, nombre propio, verbo, adjetivo, adverbio, clasificador, número, partícula, conjunción, preposición, interrogativo, interjección o expresión (`POS_LABEL`).
+
+- Si está en la lista del HSK, sale de ella: `sources/hsk/hsk3.tsv` trae las etiquetas de corpus de cada palabra (v, n, a, d, q, r…), y cuenta la primera que tiene equivalente (`POS_TAGS`). Los interrogativos (什么, 谁, 几…) se fijan como tales en el código, porque la lista los da como pronombres o números. Las expresiones son `expresion`.
+- La entrada fija `pos` cuando no está en la lista (门多萨, 嗯) o cuando el sentido del mazo no es el de la primera etiqueta (对 «correcto» es adjetivo aunque la lista lo dé antes como preposición); en ese caso, con `pos_reason`.
+- Solo palabras y expresiones: un carácter ligado o un componente no son palabras.
+- `check`: error si una palabra queda sin categoría; aviso si `pos` contradice la lista sin `pos_reason`.
+- Se ve en el reverso (bajo el significado), en la etiqueta `pos::` de Anki, en el cuaderno y en la exportación.
+
+**Estructuras** (`kind: structure`, `st.`, tema `estructuras`): una plantilla de frase con huecos, `{S} + 很 + {Adj}`.
+
+- Piezas separadas por « + »: huecos entre llaves y piezas fijas en hanzi; la puntuación final puede ir pegada (`{S} + 呢？`). Huecos: `{S}` sujeto, `{N}` sustantivo, `{V}` verbo, `{Adj}` adjetivo, `{Num}` número, `{Nombre}`, `{Lugar}` (`SLOTS`); cada uno admite unas categorías y tiene su color.
+- `refs`: las entradas de las piezas fijas, en orden. `examples`: frases del mazo que la cumplen. `meaning: {es, en}`: qué expresa y la regla, en una frase. El nivel no se escribe: es el de su pieza fija más difícil.
+- `check` (determinista, `grammar_rules`): error si falta algo, si un hueco no existe, si `refs` no son las piezas fijas o si un ejemplo no las contiene en ese orden; aviso si lo que ocupa un hueco junto a una pieza fija es de otra categoría (en `{S} + 很 + {Adj}`, lo que sigue a 很 tiene que ser adjetivo). Una estructura no entra con un ejemplo que no la cumple: se cambia el ejemplo o se descarta la estructura.
+- Tarjeta `pattern` (exigida si `use` incluye oír o decir; la genera `scaffold`): delante, la plantilla con los huecos como cajas de color y lo que expresa; «Di una frase con esta estructura, en voz alta»; detrás, dos ejemplos con audio. Autoevaluación.
+- Qué estructuras entran lo decide el agente con `docs/goal.md` (las de clase primero); las frases de ejemplo son las del mazo, así que una estructura nueva suele pedir una frase nueva en el review.
 
 ## Desván [desde el 2026-09-29]
 
@@ -228,7 +250,7 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 
 ## Tarjetas
 
-- **Tipos**: `read` (hanzi → pinyin y significado), `listen` (audio → pinyin o comprensión: una palabra oída se escribe, en pinyin o en hanzi, como dictado `x.dictation.`; una frase se entiende y se autoevalúa, porque el significado no se compara letra a letra), `produce` (español → chino), `cloze` (hueco en frase), `tones` (un dígito por sílaba: 什么 → `25`; desde audio o desde pinyin sin tonos; `check` reconstruye el pinyin y verifica), `speak` (voz alta y comparar), `contrast`, `derive`, `components`, `nuance` (matiz o confusión concreta que YAGO pide desde el review: «¿qué aporta 公 en 公司 y en 公主?»; nunca exigida, sin audio). Una pregunta concreta por tarjeta.
+- **Tipos**: `read` (hanzi → pinyin y significado), `listen` (audio → pinyin o comprensión: una palabra oída se escribe, en pinyin o en hanzi, como dictado `x.dictation.`; una frase se entiende y se autoevalúa, porque el significado no se compara letra a letra), `produce` (español → chino), `cloze` (hueco en frase), `tones` (un dígito por sílaba: 什么 → `25`; desde audio o desde pinyin sin tonos; `check` reconstruye el pinyin y verifica), `speak` (voz alta y comparar), `contrast`, `derive`, `components`, `nuance` (matiz o confusión concreta que YAGO pide desde el review: «¿qué aporta 公 en 公司 y en 公主?»; nunca exigida, sin audio), `pattern` (una estructura: decir una frase que la cumpla; ver «Gramática»). Una pregunta concreta por tarjeta.
 - **Tecleadas frente a autoevaluación**: YAGO estudia desde el móvil; se teclea en tonos y producción del núcleo, el resto es autoevaluación. En las frases para decir, escribir es opcional (caja «escríbelo si quieres»). **Normalización**: vale pinyin (tildes o dígitos, `v` = `ü`) o hanzi; espacios, mayúsculas y puntuación dan igual; solo cuenta como fallo un error real de sílaba o tono.
 - **Audio**: escucha, tonos y pronunciación lo llevan delante; lectura, producción y deducción, tras revelar; el contraste visual y los componentes no llevan (se deciden por la forma); el de homófonos sí. Frases de ejemplo y entradas `p.`, siempre.
 - **AFI** (transcripción fonética del tono de cita) en el reverso de palabras y en `4-notebook/`, calculada del pinyin con dragonmapper al compilar; nunca se guarda en `3-data/`. No refleja el sandhi: eso lo explican las entradas `p.`. Las pistas propias de YAGO van como comentario `sound` y aparecen en tarjetas, cuaderno y log.
@@ -288,6 +310,8 @@ Todo lo que se puede decidir con datos se decide con atributos y lo comprueba `c
 | Frases naturales, mnemotecnias, conexiones, series fonéticas | criterio del agente; se revisan en el review |
 | Citas de libros | criterio: fuera la copia literal (en `original` y en el apunte archivado); la paráfrasis se queda, sin nombrar la fuente (ver «Repositorio y privacidad») |
 | Desván: nada se pierde ni se olvida | `check` (campos, un hanzi por elemento, aviso si ya está en el mazo); `attic_awake` decide qué despierta; `close-batch` no cierra con despiertos sin pasar ni `snooze` |
+| Categoría gramatical | calculada de la lista del HSK (`pos_of`); `check`: error si falta, aviso si `pos` la contradice sin `pos_reason` |
+| Estructuras bien formadas | `check` (`grammar_rules`): piezas fijas enlazadas y en orden en cada ejemplo; aviso si un hueco lo ocupa otra categoría |
 | Mnemotecnia frente a origen | criterio al elegir `kind` (`mnemonic` o `linguistic`); la tarjeta lo rotula |
 
 ## Pruebas

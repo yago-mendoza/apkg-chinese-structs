@@ -6,6 +6,8 @@ entries:
     role: function
     use_reason: 'mismo hanzi y sonido que 在 «estar en»: suelto es ambiguo; se aprende al oírlo en frases'
     kind: word
+    pos: adverbio
+    pos_reason: 'marca la acción en curso (我在看书); la lista lo da como preposición'
     hanzi: 在
     pinyin: zài
     meaning: {es: estar (haciendo algo), en: (action in progress)}
@@ -35,6 +37,7 @@ entries:
     use: say
     role: content
     kind: word
+    pos: verbo
     hanzi: 看看
     pinyin: kànkan
     meaning: {es: echar un vistazo, en: to have a look}
@@ -156,6 +159,7 @@ entries:
     use: hear
     role: content
     kind: word
+    pos: sustantivo
     hanzi: 小猫
     pinyin: xiǎomāo
     meaning: {es: gatito, en: kitten}
@@ -196,6 +200,8 @@ entries:
     use: say
     role: content
     kind: word
+    pos: adjetivo
+    pos_reason: '«equivocado» (我错了); la lista lo da antes como verbo'
     hanzi: 错
     pinyin: cuò
     meaning: {es: equivocado; error, en: wrong}
@@ -226,6 +232,8 @@ entries:
     use_reason: 'cartel de salida, pareja de 入口: se lee más que se dice'
     role: content
     kind: word
+    pos: sustantivo
+    pos_reason: '«salida» de un cartel; la lista lo da antes como verbo («exportar»)'
     hanzi: 出口
     pinyin: chūkǒu
     meaning: {es: salida, en: exit}

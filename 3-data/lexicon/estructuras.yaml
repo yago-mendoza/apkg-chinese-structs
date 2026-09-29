@@ -1,0 +1,214 @@
+# Diccionario · Estructuras de frase. Esquema: 3-data/README.md
+# Plantillas con huecos visibles ({S} sujeto, {N} sustantivo, {V} verbo, {Adj} adjetivo, {Num} número, {Nombre},
+# {Lugar}). `refs`: las entradas de las piezas fijas, en orden; `examples`: frases del mazo que la cumplen (check
+# comprueba el orden y la categoría de lo que ocupa cada hueco). Su nivel es el de su pieza fija más difícil.
+
+entries:
+  - id: st.hen-adj
+    kind: structure
+    use: say
+    pattern: '{S} + 很 + {Adj}'
+    refs: [w.hen]
+    meaning: {es: 'Describir: el adjetivo va sin 是 y con 很 delante, aunque no signifique «muy».', en: 'Describing: the adjective takes no 是, and 很 in front even when it does not mean «very».'}
+    examples: [s.ta-hen-gao, s.tianqi-hen-leng, s.beijing-hen-re]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments:
+      - {kind: note, private: false, date: '2026-09-29', text: 'Tu error típico: 他是高 no se dice; 他很高.'}
+  - id: st.bu-adj
+    kind: structure
+    use: say
+    pattern: '{S} + 不 + {Adj}'
+    refs: [w.bu]
+    meaning: {es: 'Negar una descripción: 不 delante del adjetivo, sin 很 ni 是.', en: 'Denying a description: 不 before the adjective, no 很, no 是.'}
+    examples: [s.ta-bu-gao, s.tianqi-bu-leng, s.ta-bu-piaoliang]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.adj-ma
+    kind: structure
+    use: say
+    pattern: '{S} + {Adj} + 吗？'
+    refs: [w.ma]
+    meaning: {es: 'Preguntar por una descripción: el adjetivo solo y 吗 al final.', en: 'Asking about a description: the bare adjective and 吗 at the end.'}
+    examples: [s.tianqi-leng-ma, s.ta-piaoliang-ma]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.adj-bu-adj
+    kind: structure
+    use: say
+    pattern: '{S} + {Adj} + 不 + {Adj}？'
+    refs: [w.bu]
+    meaning: {es: 'Pregunta de sí o no sin 吗: el adjetivo, 不 y el adjetivo otra vez.', en: 'A yes-no question without 吗: the adjective, 不, the adjective again.'}
+    examples: [s.ta-piaoliang-bu-piaoliang]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.tai-adj-le
+    kind: structure
+    use: say
+    pattern: '太 + {Adj} + 了！'
+    refs: [w.tai, w.le]
+    meaning: {es: 'Exclamar: ¡qué…!, ¡demasiado…!', en: 'Exclaiming: how…!, too…!'}
+    examples: [s.tai-hao-le]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.ye-hen-adj
+    kind: structure
+    use: say
+    pattern: '{S} + 也 + 很 + {Adj}'
+    refs: [w.ye, w.hen]
+    meaning: {es: 'Yo también: 也 va detrás del sujeto y delante de 很.', en: 'Me too: 也 after the subject, before 很.'}
+    examples: [s.wo-ye-hen-hao]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.shi-n
+    kind: structure
+    use: say
+    pattern: '{S} + 是 + {N}'
+    refs: [w.shi]
+    meaning: {es: 'Decir qué o quién es algo: 是 une dos nombres, nunca un nombre y un adjetivo.', en: 'Saying what or who something is: 是 joins two nouns, never a noun and an adjective.'}
+    examples: [s.wo-shi-gongchengshi, s.women-shi-pengyou, s.zhe-shi-wode-shouji]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.bu-shi-n
+    kind: structure
+    use: say
+    pattern: '{S} + 不 + 是 + {N}'
+    refs: [w.bu, w.shi]
+    meaning: {es: 'Negar lo que es algo: 不是.', en: 'Denying what something is: 不是.'}
+    examples: [s.wo-bu-shi-xuesheng]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.shi-ren
+    kind: structure
+    use: say
+    pattern: '{S} + 是 + {Lugar} + 人'
+    refs: [w.shi, w.ren]
+    meaning: {es: 'Decir la nacionalidad: país + 人.', en: 'Saying your nationality: country + 人.'}
+    examples: [s.wo-shi-xibanyaren]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.de-n
+    kind: structure
+    use: say
+    pattern: '{S} + 的 + {N}'
+    refs: [w.de]
+    meaning: {es: 'Posesión: el poseedor, 的 y la cosa (我的手机, mi móvil).', en: 'Possession: owner, 的, thing (我的手机, my phone).'}
+    examples: [s.zhe-shi-wode-shouji]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.jiao
+    kind: structure
+    use: say
+    pattern: '{S} + 叫 + {Nombre}'
+    refs: [w.jiao]
+    meaning: {es: 'Decir cómo se llama alguien.', en: 'Saying what someone is called.'}
+    examples: [s.wo-jiao-yage]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.xing
+    kind: structure
+    use: say
+    pattern: '{S} + 姓 + {Nombre}'
+    refs: [w.xing]
+    meaning: {es: 'Decir el apellido.', en: 'Saying your surname.'}
+    examples: [s.wo-xing-menduosa]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.laizi
+    kind: structure
+    use: say
+    pattern: '{S} + 来自 + {Lugar}'
+    refs: [w.laizi]
+    meaning: {es: 'Decir de dónde eres.', en: 'Saying where you are from.'}
+    examples: [s.wo-laizi-xibanya]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.ne
+    kind: structure
+    use: say
+    pattern: '{S} + 呢？'
+    refs: [w.ne]
+    meaning: {es: 'Devolver la pregunta: ¿y tú?', en: 'Returning the question: and you?'}
+    examples: [s.wo-hen-hao-ni-ne]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.dou-v
+    kind: structure
+    use: say
+    pattern: '{S} + 都 + {V}'
+    refs: [w.dou]
+    meaning: {es: 'Todos: 都 va detrás del sujeto y delante del verbo.', en: 'All: 都 after the subject, before the verb.'}
+    examples: [s.women-dou-shi-xuesheng, s.women-dou-xihuan-da-lanqiu, s.dajia-dou-lai-le]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.qing-v
+    kind: structure
+    use: say
+    pattern: '请 + {V}'
+    refs: [w.qing]
+    meaning: {es: 'Pedir con cortesía: 请 delante del verbo.', en: 'Asking politely: 请 before the verb.'}
+    examples: [s.qing-he-kafei]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.xiang-v
+    kind: structure
+    use: say
+    pattern: '{S} + 想 + {V}'
+    refs: [w.xiang]
+    meaning: {es: 'Tener ganas de hacer algo.', en: 'Wanting to do something.'}
+    examples: [s.wo-xiang-mai-dongxi, s.wo-xiang-qu-shangdian]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.yao-n
+    kind: structure
+    use: say
+    pattern: '{S} + 要 + {N}'
+    refs: [w.yao]
+    meaning: {es: 'Pedir o querer una cosa.', en: 'Asking for or wanting a thing.'}
+    examples: [s.wo-yao-shui, s.wo-yao-niurou]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.xihuan-v
+    kind: structure
+    use: say
+    pattern: '{S} + 喜欢 + {V}'
+    refs: [w.xihuan]
+    meaning: {es: 'Decir que te gusta hacer algo.', en: 'Saying you like doing something.'}
+    examples: [s.wo-xihuan-he-kafei, s.wo-xihuan-kan-shu]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.zai-v
+    kind: structure
+    use: say
+    pattern: '{S} + 在 + {V}'
+    refs: [w.zai.progressive]
+    meaning: {es: 'Estar haciendo algo ahora: 在 delante del verbo.', en: 'Doing something right now: 在 before the verb.'}
+    examples: [s.wo-zai-kan-shu]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.v-le
+    kind: structure
+    use: say
+    pattern: '{S} + {V} + 了'
+    refs: [w.le]
+    meaning: {es: 'Algo ya ha pasado o ha cambiado: 了 detrás del verbo.', en: 'Something has happened or changed: 了 after the verb.'}
+    examples: [s.wo-zou-le, s.dajia-dou-lai-le]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.num-ge-n
+    kind: structure
+    use: say
+    pattern: '{Num} + 个 + {N}'
+    refs: [w.ge]
+    meaning: {es: 'Contar: número, clasificador y nombre; delante del clasificador, 两 y no 二.', en: 'Counting: number, measure word, noun; before the measure word, 两, not 二.'}
+    examples: [s.wo-you-san-ge-pengyou, s.tamen-you-liang-ge-haizi]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.zai-nar
+    kind: structure
+    use: say
+    pattern: '{N} + 在 + 哪儿？'
+    refs: [w.zai.at, w.nar]
+    meaning: {es: 'Preguntar dónde está algo.', en: 'Asking where something is.'}
+    examples: [s.shangdian-zai-nar]
+    source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []

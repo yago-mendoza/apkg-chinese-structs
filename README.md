@@ -82,6 +82,7 @@ Generating cards is the easy part. What makes the system useful is that the agen
 - **A review after every batch**, with a line to answer under each point. The agent asks for real sentences instead of inventing them, points out thematic gaps (you can say *morning* and *evening*, but not *afternoon*) and suggests what to learn next at your level.
 - **Filtering, not hoarding.** Nothing is silently dropped: 🟡 recognize only, ❌ literary, archaic or obsolete, each with its reason.
 - **Recall, not rereading.** Cards ask you to produce: type the pinyin or the hanzi, mark tones with digits, say sentences aloud and compare with the audio.
+- **Grammar made visible.** Every word carries its part of speech (from the HSK list, checked), and sentence patterns are entries of their own, written with visible slots (`{S} + 很 + {Adj}`, `{Num} + 个 + {N}`) and checked against real example sentences.
 - **Contrast and context.** Items that get confused (他/她/它, 生/牛/午) or form a series (上午/中午/下午/晚上) are shown together on the back of the card.
 - **Explicit pronunciation.** IPA, pinyin traps for Spanish speakers, and tone-sandhi rules wherever a card asks you to speak or listen.
 - **Rules that do not depend on the model.** Which cards are required, which are redundant and what is still missing is computed by `anki.py` from a written specification. The model writes; the code checks. A better model improves the deck without changing the system.

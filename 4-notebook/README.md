@@ -16,4 +16,5 @@ Todo lo aprendido, por temas. ✅ aprender · 🟡 reconocer · ❌ descartado �
 - [El tiempo que hace](10-clima.md) · 4 entradas, 6 frases
 - [Números](11-numeros.md) · 13 entradas, 3 frases
 - [Cosas y actividades](12-cosas.md) · 25 entradas, 7 frases
-- [Caracteres y componentes](13-escritura.md) · 22 entradas, 0 frases
+- [Estructuras de frase](13-estructuras.md) · 23 entradas, 0 frases
+- [Caracteres y componentes](14-escritura.md) · 22 entradas, 0 frases

@@ -84,6 +84,8 @@ entries:
     use: hear
     role: content
     kind: word
+    pos: adjetivo
+    pos_reason: '«guapo»; la lista lo da como nombre propio (apellido)'
     hanzi: 帅
     pinyin: shuài
     meaning: {es: guapo (sobre todo hombres), en: handsome}
@@ -186,6 +188,8 @@ entries:
     use: hear
     role: content
     kind: word
+    pos: sustantivo
+    pos_reason: '«día; cielo»; la lista lo da antes como clasificador'
     hanzi: 天
     pinyin: tiān
     meaning: {es: día; cielo, en: day; sky}

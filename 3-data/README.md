@@ -14,13 +14,15 @@ Fuente de verdad del mazo, mantenida por el agente. Un archivo por tema en cada 
 
 ## Entradas (`lexicon/`)
 
-- `id` permanente con prefijo: `w.` palabra, `e.` expresión, `c.` carácter o componente, `p.` pronunciación, `g.` grupo. Una entrada por sentido y lectura.
-- `kind`: `word | expression | character | component | pronunciation | group`.
+- `id` permanente con prefijo: `w.` palabra, `e.` expresión, `c.` carácter o componente, `p.` pronunciación, `g.` grupo, `st.` estructura. Una entrada por sentido y lectura.
+- `kind`: `word | expression | character | component | pronunciation | group | structure`.
+- `pos` (palabras): categoría gramatical; se calcula de la lista del HSK y solo se escribe si no está en ella o si el sentido del mazo es otro (entonces con `pos_reason`). Valores: `pronombre | sustantivo | nombre-propio | verbo | adjetivo | adverbio | clasificador | numero | particula | conjuncion | preposicion | interrogativo | interjeccion | expresion`.
 - `use`: `read | hear | say` (escalera), o excepción con `use_reason`: lista (`[read]`, `[hear]`…), `context` (solo dentro de frases) o `drop` (descartada).
 - `role` (palabras y expresiones): `content | function`.
 - `hanzi`, `pinyin`, `meaning: {es, en}`; `standalone: yes | rare | no` (del sentido); `as_word: {es, pinyin?}` en un componente cuyo hanzi también es palabra suelta (口, 女, 月; `check` lo exige si está en la lista del HSK o en el mazo); `relations`; `accept_pinyin_mismatch` con motivo si pypinyin discrepa con razón.
 - Grupos: `basis: visual | homophone | pattern | set`, `members: [{ref, cue}]` (cue: rasgo distintivo; máximo 4 en contraste).
 - Pronunciación: `title`, `explanation`, `audio_text`.
+- Estructuras (`lexicon/estructuras.yaml`): `pattern` (`{S} + 很 + {Adj}`; huecos `{S} {N} {V} {Adj} {Num} {Nombre} {Lugar}`), `refs` (las entradas de las piezas fijas, en orden), `examples` (frases que la cumplen), `meaning: {es, en}`. Sin `level`: es el de su pieza fija más difícil. Ver `docs/design.md`, «Gramática».
 - `comments: [{kind, private, date, text, original}]` (`text` redactado para mostrar; `original`, lo que escribió YAGO, solo si difiere), con `kind`: `mnemonic | teacher | linguistic | note | sound`. `private: true` por defecto; el repositorio es público, así que lo privado no se guarda aquí.
 - `source: {origin, batch, file, date}`.
 

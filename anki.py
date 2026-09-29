@@ -275,6 +275,55 @@ def sentence_pinyin(s):
     return " ".join(seg["pinyin"] for seg in s.get("segments", []) if seg.get("pinyin"))
 
 
+# Estructuras: plantillas de frase con huecos visibles, «{S} + 很 + {Adj}». Los huecos son estos; cada uno admite
+# unas categorías (para comprobar los ejemplos) y lleva su color en las tarjetas y en la web.
+SLOTS = {
+    "S": ("sujeto", {"pronombre", "sustantivo", "nombre-propio"}),
+    "N": ("sustantivo", {"sustantivo", "pronombre", "nombre-propio"}),
+    "V": ("verbo", {"verbo"}),
+    "Adj": ("adjetivo", {"adjetivo"}),
+    "Num": ("número", {"numero"}),
+    "Nombre": ("nombre", {"nombre-propio", "sustantivo"}),
+    "Lugar": ("lugar", {"nombre-propio", "sustantivo"}),
+}
+SLOT_RE = re.compile(r"^\{([A-Za-z]+)\}$")
+
+
+def pattern_tokens(pattern):
+    """[(clase, texto)] de una plantilla: ("slot", "Adj"), ("fixed", "很") o ("punct", "？"). Las piezas van
+    separadas por « + »; la puntuación final puede ir pegada a la última."""
+    out = []
+    for raw in (pattern or "").split(" + "):
+        raw = raw.strip()
+        tail = ""
+        while raw and raw[-1] in "？?。！!":
+            raw, tail = raw[:-1], raw[-1] + tail
+        m = SLOT_RE.match(raw)
+        if m:
+            out.append(("slot", m.group(1)))
+        elif raw:
+            out.append(("fixed", raw))
+        if tail:
+            out.append(("punct", tail))
+    return out
+
+
+def render_pattern(st, eby):
+    """HTML de una plantilla: las piezas fijas con su pinyin, los huecos como cajas de color con su nombre."""
+    pinyin = {eby[r]["hanzi"]: eby[r].get("pinyin", "") for r in st.get("refs", []) if r in eby}
+    parts = []
+    for kind, text in pattern_tokens(st.get("pattern")):
+        if kind == "slot":
+            parts.append(f'<span class="slot slot-{esc(text)}"><span class="py">&nbsp;</span>'
+                         f'<span class="hz">{esc(SLOTS.get(text, (text,))[0])}</span></span>')
+        elif kind == "fixed":
+            parts.append(f'<span class="seg fixed"><span class="py">{esc(pinyin.get(text, ""))}</span>'
+                         f'<span class="hz">{esc(text)}</span></span>')
+        else:
+            parts.append(f'<span class="seg"><span class="py"></span><span class="hz">{esc(text)}</span></span>')
+    return '<div class="sent pattern">' + '<span class="plus">+</span>'.join(parts) + "</div>"
+
+
 def standalone(e):
     """yes | rare | no | None. YAML lee yes/no sin comillas como booleanos."""
     v = e.get("standalone")
@@ -413,6 +462,7 @@ ROLES = {"content", "function"}
 CARD_LABELS = {
     "read": "lectura", "listen": "escucha", "produce": "producción", "produce-sentence": "producción en frase",
     "tones": "tonos", "speak": "voz alta", "contrast": "contraste", "recognize": "reconocimiento",
+    "pattern": "estructura",
 }
 
 
@@ -458,6 +508,9 @@ def required_cards(item, groups_of):
         in_contrast = any(g.get("basis") in ("visual", "homophone") for g in groups_of.get(item.get("id"), []))
         if mods and not in_contrast:
             req.add("recognize")
+    elif kind == "structure":
+        if mods & {"hear", "say"}:
+            req.add("pattern")
     elif kind == "pronunciation":
         if "hear" in mods:
             req.add("listen")
@@ -484,6 +537,7 @@ def satisfied(ex):
         "contrast": {"contrast", "recognize"},
         "components": {"recognize"},
         "nuance": {"nuance"},          # matiz o confusión concreta: nunca exigido, lo pide YAGO en el review
+        "pattern": {"pattern"},        # decir una frase con una estructura
     }.get(t, set())
 
 
@@ -577,7 +631,7 @@ def cmd_lookup(query):
 
 PRIMARY = {"read": "lectura", "listen": "escucha", "tones": "tonos", "produce": "producción",
            "derive": "producción", "cloze": "producción", "speak": "voz alta", "contrast": "contraste",
-           "components": "componentes", "nuance": "matiz"}
+           "components": "componentes", "nuance": "matiz", "pattern": "estructura"}
 GENERATED = "<!-- Generado por `anki.py notebook` desde 3-data/. No editar: se rehace en cada lote. -->"
 REVIEW_HEADER = ("<!-- REVIEW: para opinar. Debajo de cada punto hay una línea «>»: escribe lo que quieras (sí, no, "
                  "un matiz, una duda, una frase, una corrección). Lo que escribas entra en el siguiente lote; lo que "
@@ -833,6 +887,13 @@ def scaffold_exercises(entries, sentences, exercises, today):
                                      context=ctx, skills=["production", "speaking"],
                                      prompt={"text": f"Dilo en chino, en voz alta: «{es}»"}, answer={"meaning": es}))
                 continue
+            if kind == "structure":
+                made.append(make(f"x.pattern.{short}", theme, type="pattern", targets=[iid],
+                                 context=list(it.get("refs", [])), reveal=list(it.get("examples", []))[:EXAMPLES_MAX],
+                                 skills=["production", "grammar", "speaking"],
+                                 prompt={"text": "Di una frase con esta estructura, en voz alta."},
+                                 answer={"meaning": (it.get("meaning") or {}).get("es", "")}))
+                continue
             if kind in ("pronunciation", "character", "component") or need == "recognize":
                 manual.append((iid, need, "tarjeta de pronunciación o de componentes: se redacta a mano"))
                 continue
@@ -925,7 +986,7 @@ def cmd_scaffold(write):
 
 
 def label(item):
-    return item.get("hanzi") or item.get("title") or ("".join(seg["text"] for seg in item.get("segments", [])))
+    return item.get("hanzi") or item.get("title") or item.get("pattern") or ("".join(seg["text"] for seg in item.get("segments", [])))
 
 
 def cmd_plan(doc=None):
@@ -1026,12 +1087,21 @@ def cmd_notebook():
                 phon = ipa(e.get("hanzi"), e.get("pinyin")) if e.get("kind") in ("word", "expression") else ""
                 out.append(f"- {mark(e, e['id'] in targeted)} {e['hanzi']} {e.get('pinyin', '')}"
                            + (f" [{phon}]" if phon else "") + f" · {meaning}"
+                           + (f" · _{POS_LABEL[pos_of(e)]}_" if pos_of(e) in POS_LABEL else "")
                            + (f" · {notes}" if notes else ""))
             out.append("")
         for g in (e for e in items if e.get("kind") == "group"):
             out += [f"## {g['title']}", "", g.get("explanation", ""), ""]
             out += [f"- {eby[m['ref']]['hanzi']} {eby[m['ref']].get('pinyin', '')} · {m.get('cue', '')}"
                     for m in g.get("members", []) if m["ref"] in eby]
+            out.append("")
+        structs = [e for e in items if e.get("kind") == "structure"]
+        if structs:
+            out += ["## Estructuras", ""]
+            for st in structs:
+                ex = [sentence_text(x) for x in sentences if x["id"] in st.get("examples", [])]
+                out.append(f"- {mark(st, st['id'] in targeted)} `{st['pattern']}` · {(st.get('meaning') or {}).get('es', '')}"
+                           + (f" · {' / '.join(ex)}" if ex else ""))
             out.append("")
         for pr in (e for e in items if e.get("kind") == "pronunciation"):
             out += [f"## {pr['title']}", "", " ".join(pr.get("explanation", "").split()), ""]
@@ -1062,7 +1132,7 @@ def answer_hanzi(ex, sby):
 def wants_audio(ex, eby):
     """Si la respuesta lleva audio. El contraste visual (大/太/天) se decide mirando la
     forma: no lo necesita. El de homófonos sí, porque el sonido es lo que se contrasta."""
-    if ex.get("type") in ("components", "nuance"):
+    if ex.get("type") in ("components", "nuance", "pattern"):
         return False
     if ex.get("type") == "contrast":
         return eby.get(ex.get("group"), {}).get("basis") == "homophone"
@@ -1143,12 +1213,75 @@ def unmarked_levels(text, own_level, known_hanzi, levels):
     return out
 
 
+def grammar_rules(entries, sentences, eby, sby, errors, warnings):
+    """Categoría gramatical de cada palabra y estructuras bien formadas, con ejemplos que las cumplen."""
+    for e in entries:
+        if e.get("kind") in ("word", "expression"):
+            p = pos_of(e)
+            if not p:
+                errors.append(f"{e['id']}: sin categoría gramatical: la lista del HSK no la da; pon pos ({', '.join(POS_LABEL)})")
+            elif p not in POS_LABEL:
+                errors.append(f"{e['id']}: pos «{p}» no es ninguna de {', '.join(POS_LABEL)}")
+            off = official_pos(e.get("hanzi")) if e.get("kind") == "word" else None
+            if e.get("pos") and off and e["pos"] != off and not e.get("pos_reason"):
+                warnings.append(f"{e['id']}: pos «{e['pos']}» distinto del de la lista («{off}»): pon pos_reason")
+        if e.get("kind") != "structure":
+            continue
+        sid = e["id"]
+        toks = pattern_tokens(e.get("pattern"))
+        if not toks:
+            errors.append(f"{sid}: estructura sin pattern")
+            continue
+        for kind, text in toks:
+            if kind == "slot" and text not in SLOTS:
+                errors.append(f"{sid}: hueco {{{text}}} desconocido (valen {', '.join(SLOTS)})")
+        fixed = [t for k, t in toks if k == "fixed"]
+        refs = [r for r in e.get("refs", []) if r in eby]
+        if [eby[r].get("hanzi") for r in refs] != fixed:
+            errors.append(f"{sid}: refs deben ser, en orden, las entradas de las piezas fijas {fixed}")
+            continue                     # sin piezas bien enlazadas no se pueden comprobar los ejemplos
+        if not e.get("examples"):
+            errors.append(f"{sid}: una estructura necesita al menos una frase de ejemplo (examples)")
+        if not (e.get("meaning") or {}).get("es"):
+            errors.append(f"{sid}: falta meaning.es (qué expresa la estructura)")
+        for xid in e.get("examples", []):
+            x = sby.get(xid)
+            if not x:
+                errors.append(f"{sid}: ejemplo «{xid}» no existe")
+                continue
+            segs = [g for g in x.get("segments", []) if g.get("ref")]
+            ids = [g["ref"] for g in segs]
+            # Las piezas fijas, en orden, en la frase; y a su lado, palabras de la categoría del hueco.
+            pos_i, at = 0, []
+            for r in refs:
+                while pos_i < len(ids) and ids[pos_i] != r:
+                    pos_i += 1
+                if pos_i == len(ids):
+                    break
+                at.append(pos_i)
+                pos_i += 1
+            if len(at) != len(refs):
+                errors.append(f"{sid}: el ejemplo {xid} no contiene {fixed} en ese orden")
+                continue
+            ti = [i for i, (k, _) in enumerate(toks) if k == "fixed"]
+            for n, i in enumerate(ti):
+                for side, j in ((-1, i - 1), (1, i + 1)):
+                    if 0 <= j < len(toks) and toks[j][0] == "slot" and toks[j][1] in SLOTS:
+                        k = at[n] + side
+                        if 0 <= k < len(segs):
+                            got = pos_of(eby.get(segs[k]["ref"], {}))
+                            if got and got not in SLOTS[toks[j][1]][1]:
+                                warnings.append(f"{sid}: en {xid}, «{segs[k]['text']}» ({POS_LABEL.get(got, got)}) ocupa el hueco "
+                                                f"{{{toks[j][1]}}}; ¿ejemplo o plantilla equivocados?")
+
+
 def quality_rules(entries, sentences, exercises, eby, sby, errors, warnings):
     """Reglas de calidad que no dependen del criterio de nadie (docs/design.md y docs/goal.md)."""
+    grammar_rules(entries, sentences, eby, sby, errors, warnings)
     levels = hsk_levels()
     known_hanzi = {e.get("hanzi") for e in entries if e.get("hanzi")}
     for e in entries:
-        if e.get("kind") == "group":
+        if e.get("kind") in ("group", "structure"):
             continue
         official = levels.get(e.get("hanzi")) if e.get("kind") != "pronunciation" else 1
         # Niveles: oficial si está en la lista; si no, estimado con su motivo.
@@ -1277,7 +1410,8 @@ def validate(entries, sentences, exercises, require_audio=True):
                     warnings.append(f"{s['id']}: pinyin de «{seg['text']}» distinto de {seg['ref']}")
         if not s.get("translation"):
             errors.append(f"{s['id']}: falta traducción")
-    types = {"read", "listen", "tones", "cloze", "produce", "speak", "components", "contrast", "derive", "nuance"}
+    types = {"read", "listen", "tones", "cloze", "produce", "speak", "components", "contrast", "derive", "nuance",
+             "pattern"}
     seen = {}
     for ex in exercises:
         xid = ex["id"]
@@ -1519,6 +1653,14 @@ CSS = """
 .is-target { font-weight: bold; }
 .example + .example { margin-top: 10px; }
 .is-target::before { content: '▸ '; }
+.pattern { align-items: flex-end; gap: 6px; }
+.pattern .plus { align-self: center; opacity: .45; font-size: 18px; }
+.slot { display: inline-flex; flex-direction: column; align-items: center; padding: 2px 8px 4px; border-radius: 8px;
+        border: 2px dashed var(--s); background: color-mix(in srgb, var(--s) 14%, transparent); }
+.slot .hz { font-size: 16px; font-style: italic; color: var(--s); }
+.slot-S { --s: #4e79a7; } .slot-N { --s: #59a14f; } .slot-V { --s: #e15759; } .slot-Adj { --s: #f28e2b; }
+.slot-Num { --s: #b07aa1; } .slot-Nombre { --s: #76b7b2; } .slot-Lugar { --s: #9c755f; }
+.pos { font-style: italic; }
 """
 # Los colores solo alinean segmentos hanzi↔pinyin; los tonos se leen por sus marcas.
 
@@ -1653,6 +1795,10 @@ def card_fields(ex, eby, sby, manifest, media_files):
         front = '<div class="hanzi">' + "　".join(esc(eby[m["ref"]]["hanzi"]) for m in members) + "</div>"
     elif ex["type"] == "cloze" and sent:
         front = render_sentence(sent, gap=ex.get("gap"))
+    elif ex["type"] == "pattern":
+        st = eby.get((ex.get("targets") or [None])[0], {})
+        front = render_pattern(st, eby) + f'<div class="legend">{esc((st.get("meaning") or {}).get(lang, ""))}</div>'.replace(
+            '<div class="legend"></div>', "")
     elif prompt.get("hanzi"):
         front = f'<div class="hanzi">{esc(prompt["hanzi"])}</div>'
     if prompt.get("pinyin"):
@@ -1665,7 +1811,12 @@ def card_fields(ex, eby, sby, manifest, media_files):
         # Solo ocurre con --allow-missing-audio: que la tarjeta no parezca rota.
         prompt_audio = '<div class="task">(audio pendiente)</div>'
 
-    if sent:
+    if ex["type"] == "pattern":
+        back = "".join(f'<div class="example">{render_sentence(sby[sid])}<div>{esc(sby[sid]["translation"].get(lang))}</div>'
+                       f'{sound(sentence_text(sby[sid]), manifest, media_files)}</div>'
+                       for sid in ex.get("reveal", []) if sid in sby)
+        meaning = None
+    elif sent:
         back = render_sentence(sent)
         meaning = sent.get("translation", {}).get(lang) if ex["type"] == "cloze" else ans.get("meaning")
     else:
@@ -1727,7 +1878,11 @@ def card_fields(ex, eby, sby, manifest, media_files):
         traps = phonetic_notes(spoken_text, spoken_pinyin) if spoken_text and spoken_pinyin else []
         if traps:
             notes.append("<h4>Pronunciación</h4>" + "".join(f"<div>{esc(t)}</div>" for t in traps))
-    examples = examples_for(ex, sby, eby)
+    # La categoría de la palabra que se responde, en pequeño bajo el significado.
+    first = eby.get((ex.get("targets") or [None])[0], {})
+    if not sent and ex["type"] not in ("pattern", "contrast") and pos_of(first) and first.get("hanzi") == ans.get("hanzi"):
+        back += f'<div class="legend pos">{esc(POS_LABEL[pos_of(first)])}</div>'
+    examples = [] if ex["type"] == "pattern" else examples_for(ex, sby, eby)
     if examples:
         notes.append(f"<h4>{'Ejemplo' if len(examples) == 1 else 'Ejemplos'}</h4>" + "".join(
             f"<div class=\"example\">{render_sentence(sby[sid])}<div>{esc(sby[sid]['translation'].get(lang))}</div>"
@@ -1773,7 +1928,8 @@ def build_note(ex, eby, sby, manifest, media_files, models):
                                                      and (eby.get(t) or {}).get("level") for t in ex.get("targets", [])) else [])
                         + [f"use::{use_label(eby[t]) if t in eby else use_label(sby[t])}".replace("/", "+")
                            for t in ex.get("targets", [])[:1] if t in eby or t in sby]
-                        + [f"type::{ex['type']}"] + [f"skill::{s}" for s in ex.get("skills", [])])
+                        + [f"type::{ex['type']}"] + [f"skill::{s}" for s in ex.get("skills", [])]
+                        + [f"pos::{pos_of(eby[t])}" for t in ex.get("targets", [])[:1] if t in eby and pos_of(eby[t])])
 
 
 LEVELS = range(1, 8)
@@ -1850,6 +2006,7 @@ HSK_LIST = ROOT / "sources" / "hsk" / "hsk3.tsv"
 
 
 _HSK_CACHE = {}
+_HSK_POS = {}
 
 
 def hsk_levels():
@@ -1858,9 +2015,61 @@ def hsk_levels():
         return _HSK_CACHE
     out = _HSK_CACHE
     for line in HSK_LIST.read_text(encoding="utf-8").splitlines()[1:]:
-        level, _, hanzi, _ = line.split("\t")
+        parts = line.split("\t")
+        level, hanzi = parts[0], parts[2]
         out.setdefault(hanzi, int(level))
+        if len(parts) > 4:
+            _HSK_POS.setdefault(hanzi, [t for t in parts[4].split(",") if t])
     return out
+
+
+def hsk_pos():
+    """hanzi → etiquetas de categoría gramatical de la lista (notación de corpus: v, n, a, d, q, r…), la principal primero."""
+    hsk_levels()
+    return _HSK_POS
+
+
+# ---------------------------------------------------------------- categoría gramatical (pos)
+# Cada palabra tiene una: la primera etiqueta de la lista del HSK que tenga equivalente, salvo los interrogativos
+# (la lista los da como pronombres o números) y lo que la entrada fije con `pos` (otro sentido; con `pos_reason`).
+# Las expresiones son `expresion`. Solo las palabras y expresiones: un carácter ligado o un componente no son palabras.
+POS_LABEL = {
+    "pronombre": "pronombre", "sustantivo": "sustantivo", "nombre-propio": "nombre propio", "verbo": "verbo",
+    "adjetivo": "adjetivo", "adverbio": "adverbio", "clasificador": "clasificador", "numero": "número",
+    "particula": "partícula", "conjuncion": "conjunción", "preposicion": "preposición",
+    "interrogativo": "interrogativo", "interjeccion": "interjección", "expresion": "expresión",
+}
+POS_TAGS = {
+    **dict.fromkeys(["v", "vd", "vi", "vn", "vf", "vx"], "verbo"),
+    **dict.fromkeys(["n", "ng", "t", "tg", "s", "f"], "sustantivo"),
+    **dict.fromkeys(["nr", "ns", "nt", "nz"], "nombre-propio"),
+    **dict.fromkeys(["a", "ad", "an", "ag", "b", "z"], "adjetivo"),
+    **dict.fromkeys(["d", "dg"], "adverbio"),
+    **dict.fromkeys(["m", "mq", "Mg"], "numero"),
+    **dict.fromkeys(["q", "qv", "qt"], "clasificador"),
+    **dict.fromkeys(["r", "rr", "rz", "Rg"], "pronombre"),
+    "p": "preposicion", "c": "conjuncion", "cc": "conjuncion", "u": "particula", "y": "particula",
+    "e": "interjeccion", "o": "interjeccion", "l": "expresion", "i": "expresion",
+}
+INTERROGATIVES = {"什么", "谁", "哪", "哪儿", "哪里", "几", "多少", "怎么", "怎么样", "为什么", "什么时候"}
+
+
+def official_pos(hanzi):
+    """La categoría que dice la lista (con la regla de los interrogativos), o None."""
+    if hanzi in INTERROGATIVES:
+        return "interrogativo"
+    return next((POS_TAGS[t] for t in hsk_pos().get(hanzi, []) if t in POS_TAGS), None)
+
+
+def pos_of(e):
+    """Categoría gramatical de una palabra o expresión (None para lo demás, o si falta)."""
+    if e.get("kind") not in ("word", "expression"):
+        return None
+    if e.get("pos"):
+        return e["pos"]
+    if e.get("kind") == "expression":
+        return "expresion"
+    return official_pos(e.get("hanzi"))
 
 
 def level_of(item_id, eby, sby, levels):
@@ -1875,6 +2084,10 @@ def level_of(item_id, eby, sby, levels):
     e = eby.get(item_id) or {}
     if e.get("kind") == "pronunciation":
         return 1
+    if e.get("kind") == "structure":
+        known = [level_of(r, eby, sby, levels) for r in e.get("refs", [])]
+        known = [k for k in known if k]
+        return max(known) if known else e.get("level")
     own = levels.get(e.get("hanzi")) or e.get("level")
     h = e.get("hanzi") or ""
     if len(h) == 1 and standalone(e) in ("no", "rare"):
@@ -1966,10 +2179,13 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
             continue
         row = {"id": e["id"], "kind": e.get("kind"), "theme": e.get("theme"), "use": use_label(e),
                "level": level_of(e["id"], eby, sby, levels), "levelEstimated": level_estimated(e, levels),
-               "status": char_status(e), "notes": public_notes(e)}
+               "status": char_status(e), "pos": pos_of(e), "notes": public_notes(e)}
         if e.get("as_word"):
             row["asWord"] = {"es": e["as_word"].get("es"), "pinyin": e["as_word"].get("pinyin") or e.get("pinyin")}
-        if e.get("kind") == "pronunciation":
+        if e.get("kind") == "structure":
+            row |= {"pattern": e.get("pattern"), "tokens": [{"kind": k, "text": t} for k, t in pattern_tokens(e.get("pattern"))],
+                    "meaning": e.get("meaning") or {}, "refs": e.get("refs", []), "examples": e.get("examples", [])}
+        elif e.get("kind") == "pronunciation":
             row |= {"title": e.get("title"), "explanation": " ".join((e.get("explanation") or "").split()),
                     "example": e.get("audio_text"), "audio": audio(e.get("audio_text"))}
         else:
@@ -2025,6 +2241,8 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
         "coverage": [{"level": lv, "total": total, "trained": have, "inDeck": in_deck}
                      for (lv, have, total), in_deck in zip(level_coverage(entries), deck_coverage(entries))],
         "theory": load_theory(),
+        "posLabels": POS_LABEL,
+        "slots": {k: v[0] for k, v in SLOTS.items()},
         "deck": {"file": APKG.relative_to(ROOT).as_posix(), "cards": len(exercises)},
     }
 
@@ -2173,7 +2391,7 @@ def find_anki():
 
 
 STAGE = {"read": 0, "contrast": 1, "components": 1, "nuance": 1, "listen": 2, "tones": 3,
-         "produce": 4, "derive": 4, "cloze": 4, "speak": 5}
+         "produce": 4, "derive": 4, "cloze": 4, "speak": 5, "pattern": 5}
 
 
 def new_card_order(entries, sentences, exercises):

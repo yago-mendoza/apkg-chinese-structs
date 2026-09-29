@@ -4,10 +4,10 @@
 
 ## Vocabulario
 
-- ✅🃏 天气 tiānqì [tʰjɛn˥ tɕʰi˥˩] · el tiempo (meteorológico)
-- ✅🃏 热 rè [ʐɤ˥˩] · calor; caluroso · Suena un poco a «rua».
-- ✅🃏 冷 lěng [lɤŋ˧˩˧] · frío
-- ✅🃏 下雨 xiàyǔ [ɕja˥˩ y˧˩˧] · llover · 下 «caer» + 雨 yǔ «lluvia». 雨 también está en 需 de 需要.
+- ✅🃏 天气 tiānqì [tʰjɛn˥ tɕʰi˥˩] · el tiempo (meteorológico) · _sustantivo_
+- ✅🃏 热 rè [ʐɤ˥˩] · calor; caluroso · _adjetivo_ · Suena un poco a «rua».
+- ✅🃏 冷 lěng [lɤŋ˧˩˧] · frío · _adjetivo_
+- ✅🃏 下雨 xiàyǔ [ɕja˥˩ y˧˩˧] · llover · _verbo_ · 下 «caer» + 雨 yǔ «lluvia». 雨 también está en 需 de 需要.
 
 ## Frases
 
