@@ -1627,40 +1627,61 @@ def cmd_audio(dry_run):
 # ---------------------------------------------------------------- compilación
 
 CSS = """
-.card { font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif; font-size: 20px;
-        text-align: center; color: #1c1c1c; background: #fdfcf8; }
-.nightMode.card, .night_mode .card { color: #eee; background: #1e1e1e; }
-.task { font-size: 16px; opacity: .75; margin-bottom: 14px; }
-.hanzi { font-size: 48px; line-height: 1.3; }
+/* Tarjeta: papel claro o noche cálida (como el cuaderno web), una cabecera con tipo y nivel, la respuesta en su
+   bloque y las notas en secciones. CSS sencillo, sin color-mix ni trucos: AnkiDroid, AnkiMobile y escritorio. */
+.card { font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 20px; line-height: 1.4;
+        text-align: center; color: #1f1a16; background: #faf7ef; padding: 10px 8px 28px;
+        --muted: rgba(31,26,22,.55); --line: rgba(31,26,22,.13); --panel: rgba(31,26,22,.045); --lv: #b3301d; }
+.nightMode.card, .night_mode .card, .card.nightMode { color: #ececec; background: #1b1b1b;
+        --muted: rgba(236,236,236,.55); --line: rgba(236,236,236,.13); --panel: rgba(255,255,255,.045); }
+.meta { display: flex; justify-content: space-between; align-items: center; max-width: 30em; margin: 0 auto 14px;
+        padding-top: 7px; border-top: 3px solid var(--lv); font: 700 11px/1 Menlo, Consolas, monospace;
+        letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.lv-1 { --lv: #b3301d; } .lv-2 { --lv: #d0632f; } .lv-3 { --lv: #df9340; } .lv-4 { --lv: #cdb35c; }
+.lv-5 { --lv: #8fa972; } .lv-6 { --lv: #5f9590; } .lv-7 { --lv: #557aa3; }
+.task { font-size: 17px; line-height: 1.45; max-width: 26em; margin: 0 auto 14px; color: var(--muted); }
+.task .meta { font-size: 11px; }
+.front { margin: 6px 0; }
+.hanzi { font-size: 54px; line-height: 1.2; }
 .pinyin { font-size: 24px; margin-top: 4px; }
 .meaning { font-size: 20px; margin-top: 10px; }
-.box { margin-top: 18px; font-size: 16px; text-align: left; max-width: 34em;
-       margin-left: auto; margin-right: auto; }
-.box h4 { margin: 12px 0 4px; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; opacity: .6; }
+.ipa { font-size: 15px; color: var(--muted); margin-top: 2px; }
+.legend { font-size: 13px; color: var(--muted); margin-top: 10px; }
+.pos { font-style: italic; }
+hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margin: 20px auto 16px; }
+.answer { max-width: 30em; margin: 0 auto; padding: 14px 12px 16px; border-radius: 16px; background: var(--panel);
+          border: 1px solid var(--line); }
+.box { max-width: 30em; margin: 14px auto 0; text-align: left; font-size: 15px; line-height: 1.55; }
+.note { margin-top: 10px; padding: 10px 12px 11px; border-radius: 12px; border: 1px solid var(--line); background: var(--panel); }
+.note h4 { margin: 0 0 6px; font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+.note--group .note-body > div { padding: 5px 8px; margin: 0 -8px; border-radius: 8px; }
+.note--group .note-body > div + div { border-top: 1px solid var(--line); }
+.note--group .is-target { font-weight: 700; background: rgba(179,48,29,.13); }
+.note--example { text-align: center; }
+.note--mnemonic { border-style: dashed; }
+.note--mnemonic .note-body { font-style: italic; }
+.note--teacher { border-left: 3px solid var(--lv); }
+.example + .example { margin-top: 14px; }
 .sent { display: inline-flex; gap: 4px; align-items: flex-end; flex-wrap: wrap; justify-content: center; }
 .seg { display: inline-flex; flex-direction: column; align-items: center; padding: 0 2px;
        border-bottom: 3px solid var(--c, transparent); }
 .seg .py { font-size: 15px; }
 .seg .hz { font-size: 30px; }
+.box .seg .hz { font-size: 24px; }
 .gap { min-width: 1.6em; border-bottom: 3px dashed #999; }
 .c0 { --c: #4e79a7; } .c1 { --c: #f28e2b; } .c2 { --c: #59a14f; } .c3 { --c: #b07aa1; } .c4 { --c: #9c755f; }
-.acs-in { font-size: 20px; padding: 6px 10px; width: 12em; max-width: 90%; text-align: center;
-          border: 1px solid #999; border-radius: 6px; background: transparent; color: inherit; }
-#acs-result { font-size: 20px; margin-bottom: 8px; }
+.acs-in { font-size: 20px; padding: 10px 14px; width: 12em; max-width: 90%; margin-top: 14px; text-align: center;
+          border: 1px solid var(--line); border-radius: 12px; background: var(--panel); color: inherit; outline: none; }
+#acs-result { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
 .acs-ok { color: #2e7d32; } .acs-bad { color: #c62828; }
-.legend { font-size: 13px; opacity: .7; margin-top: 10px; }
-.ipa { font-size: 15px; opacity: .6; margin-top: 2px; }
-.is-target { font-weight: bold; }
-.example + .example { margin-top: 10px; }
-.is-target::before { content: '▸ '; }
+.nightMode .acs-ok, .night_mode .acs-ok { color: #7cc36f; } .nightMode .acs-bad, .night_mode .acs-bad { color: #e8845a; }
 .pattern { align-items: flex-end; gap: 6px; }
-.pattern .plus { align-self: center; opacity: .45; font-size: 18px; }
+.pattern .plus { align-self: center; color: var(--muted); font-size: 18px; }
 .slot { display: inline-flex; flex-direction: column; align-items: center; padding: 2px 8px 4px; border-radius: 8px;
-        border: 2px dashed var(--s); background: color-mix(in srgb, var(--s) 14%, transparent); }
+        border: 2px dashed var(--s); }
 .slot .hz { font-size: 16px; font-style: italic; color: var(--s); }
 .slot-S { --s: #4e79a7; } .slot-N { --s: #59a14f; } .slot-V { --s: #e15759; } .slot-Adj { --s: #f28e2b; }
 .slot-Num { --s: #b07aa1; } .slot-Nombre { --s: #76b7b2; } .slot-Lugar { --s: #9c755f; }
-.pos { font-style: italic; }
 """
 # Los colores solo alinean segmentos hanzi↔pinyin; los tonos se leen por sus marcas.
 
@@ -1718,14 +1739,15 @@ setTimeout(function () {
 
 INPUT = ('<br><input id="acs-in" class="acs-in" data-always="{always}" autocomplete="off" autocapitalize="off" '
          'autocorrect="off" spellcheck="false" placeholder="{hint}">')
-FRONT_TYPED = ('<div class="task">{{Task}}</div>{{Front}}{{PromptAudio}}'
+FRONT_TYPED = ('<div class="task">{{Task}}</div><div class="front">{{Front}}{{PromptAudio}}</div>'
                + INPUT.format(always="1", hint="pinyin o hanzi") + INPUT_JS_FRONT)
-FRONT_SELF = ('<div class="task">{{Task}}</div>{{Front}}{{PromptAudio}}'
+FRONT_SELF = ('<div class="task">{{Task}}</div><div class="front">{{Front}}{{PromptAudio}}</div>'
               + INPUT.format(always="0", hint="escríbelo si quieres (pinyin o hanzi)") + INPUT_JS_FRONT)
 BACK = ('{{FrontSide}}<hr id="answer"><div id="acs-result"></div>'
         '<div id="acs-expected" style="display:none">{{Answer}}</div>'
-        '{{Back}}{{AnswerAudio}}{{Notes}}' + INPUT_JS_BACK)
-BACK_SELF = '{{FrontSide}}<hr id="answer"><div id="acs-result"></div>{{Back}}{{AnswerAudio}}{{Notes}}' + INPUT_JS_BACK
+        '<div class="answer">{{Back}}{{AnswerAudio}}</div>{{Notes}}' + INPUT_JS_BACK)
+BACK_SELF = ('{{FrontSide}}<hr id="answer"><div id="acs-result"></div><div class="answer">{{Back}}{{AnswerAudio}}</div>'
+             '{{Notes}}' + INPUT_JS_BACK)
 
 
 def esc(s):
@@ -1911,14 +1933,45 @@ def card_fields(ex, eby, sby, manifest, media_files):
                 f'<span id="acs-exp-hz" style="display:none">{esc(exp_hz)}</span>') + back
     return {"typed": typed, "task": esc(prompt.get("text")), "front": front, "prompt_audio": prompt_audio,
             "back": back, "answer_audio": answer_audio,
-            "notes": f'<div class="box">{"".join(notes)}</div>' if notes else ""}
+            "notes": f'<div class="box">{"".join(note_section(n) for n in notes)}</div>' if notes else ""}
+
+
+NOTE_KIND = (("ejemplo", "example"), ("mnemotecnia", "mnemonic"), ("profesora", "teacher"), ("cómo suena", "sound"),
+             ("pronunciación", "sound"), ("qué es", "status"), ("no se usa solo", "status"),
+             ("casi no se usa solo", "status"))
+
+
+def note_section(html_note):
+    """Una nota del reverso («<h4>título</h4>cuerpo») como sección con su clase: grupo de palabras, ejemplo,
+    mnemotecnia, profesora, sonido, estatus o texto. La misma estructura sirve a Anki y a la web."""
+    m = re.match(r"<h4>(.*?)</h4>(.*)", html_note, re.S)
+    if not m:
+        return f'<section class="note note--text"><div class="note-body">{html_note}</div></section>'
+    title, body = m.groups()
+    t = title.lower()
+    kind = next((k for prefix, k in NOTE_KIND if t.startswith(prefix)), None)
+    if not kind:
+        kind = "group" if "<div" in body else "text"
+    return f'<section class="note note--{kind}"><h4>{title}</h4><div class="note-body">{body}</div></section>'
+
+
+TYPE_ES = {"read": "Leer", "listen": "Escuchar", "produce": "Decir", "speak": "En voz alta", "tones": "Tonos",
+           "cloze": "Hueco", "contrast": "Contraste", "components": "Componentes", "derive": "Deducir",
+           "nuance": "Matiz", "pattern": "Estructura"}
+
+
+def card_meta(ex, eby, sby):
+    """Cabecera de la tarjeta en Anki: el tipo y el nivel, con el color del nivel. La web pinta la suya."""
+    lv = exercise_level(ex, eby, sby)
+    kind = "Dictado" if ex["type"] == "listen" and (ex.get("answer") or {}).get("typed") else TYPE_ES.get(ex["type"], ex["type"])
+    return f'<div class="meta lv-{lv}"><span>{esc(kind)}</span><span>{esc(level_label(lv))}</span></div>'
 
 
 def build_note(ex, eby, sby, manifest, media_files, models):
     import genanki
     f = card_fields(ex, eby, sby, manifest, media_files)
     model = models["typed"] if f["typed"] else models["self"]
-    fields = [ex["id"], f["task"], f["front"], f["prompt_audio"], esc(f["typed"]), f["back"], f["answer_audio"],
+    fields = [ex["id"], card_meta(ex, eby, sby) + f["task"], f["front"], f["prompt_audio"], esc(f["typed"]), f["back"], f["answer_audio"],
               f["notes"]]
     return genanki.Note(model=model, fields=fields,
                         guid=genanki.guid_for(GUID_NAMESPACE, ex["id"]),
