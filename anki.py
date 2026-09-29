@@ -1314,8 +1314,8 @@ def examples_for(ex, sby):
     return (chosen + pool)[:EXAMPLES_MAX]
 
 
-def build_note(ex, eby, sby, manifest, media_files, models):
-    import genanki
+def card_fields(ex, eby, sby, manifest, media_files):
+    """Lo que muestra una tarjeta, campo a campo, en HTML: lo usan Anki (build_note) y la exportación pública."""
     prompt, ans, lang = ex.get("prompt") or {}, ex.get("answer") or {}, ex.get("lang", "es")
     sent = sby.get(ex.get("sentence"))
     spoken = answer_hanzi(ex, sby) if wants_audio(ex, eby) else None
@@ -1410,7 +1410,6 @@ def build_note(ex, eby, sby, manifest, media_files, models):
             notes.append(f"<h4>{labels.get(c.get('kind'), 'Comentario')}</h4>{esc(c.get('text'))}")
 
     typed = ans.get("typed", "")
-    model = models["typed"] if typed else models["self"]
     # Lo esperado para comparar lo escrito: tecleadas y frases para decir (en estas, escribir es opcional).
     if typed:
         exp_py, exp_hz = typed, ans.get("hanzi", "")
@@ -1422,8 +1421,17 @@ def build_note(ex, eby, sby, manifest, media_files, models):
     if exp_py or exp_hz:
         back = (f'<span id="acs-exp-py" style="display:none">{esc(exp_py)}</span>'
                 f'<span id="acs-exp-hz" style="display:none">{esc(exp_hz)}</span>') + back
-    fields = [ex["id"], esc(prompt.get("text")), front, prompt_audio, esc(typed), back, answer_audio,
-              f'<div class="box">{"".join(notes)}</div>' if notes else ""]
+    return {"typed": typed, "task": esc(prompt.get("text")), "front": front, "prompt_audio": prompt_audio,
+            "back": back, "answer_audio": answer_audio,
+            "notes": f'<div class="box">{"".join(notes)}</div>' if notes else ""}
+
+
+def build_note(ex, eby, sby, manifest, media_files, models):
+    import genanki
+    f = card_fields(ex, eby, sby, manifest, media_files)
+    model = models["typed"] if f["typed"] else models["self"]
+    fields = [ex["id"], f["task"], f["front"], f["prompt_audio"], esc(f["typed"]), f["back"], f["answer_audio"],
+              f["notes"]]
     return genanki.Note(model=model, fields=fields,
                         guid=genanki.guid_for(GUID_NAMESPACE, ex["id"]),
                         tags=[f"tema::{ex.get('theme')}", f"mes::{str(ex.get('added'))[:7]}"]
@@ -1484,7 +1492,70 @@ def cmd_build(allow_missing_audio):
 # jsDelivr lo sirve en https://cdn.jsdelivr.net/gh/yago-mendoza/apkg-chinese-structs@<versión>/<ruta>.
 
 EXPORT_PATH = OUTPUT / "dictionary.json"
-EXPORT_SCHEMA = 1
+EXPORT_SCHEMA = 2
+HSK_LIST = ROOT / "sources" / "hsk" / "hsk3.tsv"
+
+
+def hsk_levels():
+    """hanzi → nivel oficial del HSK 3.0 (1–7; el 7 agrupa 7–9), desde sources/hsk/."""
+    out = {}
+    for line in HSK_LIST.read_text(encoding="utf-8").splitlines()[1:]:
+        level, _, hanzi, _ = line.split("\t")
+        out.setdefault(hanzi, int(level))
+    return out
+
+
+def level_of(item_id, eby, sby, levels):
+    """Nivel oficial de una entrada o frase; None si no está en la lista. Las reglas de pronunciación son de nivel 1;
+    una frase toma el nivel más alto de sus palabras con nivel conocido."""
+    if item_id in sby:
+        known = [level_of(g["ref"], eby, sby, levels) for g in sby[item_id].get("segments", []) if g.get("ref")]
+        known = [k for k in known if k]
+        return max(known) if known else None
+    e = eby.get(item_id) or {}
+    if e.get("kind") == "pronunciation":
+        return 1
+    return levels.get(e.get("hanzi"))
+
+
+def deck_history(exercises, card_level):
+    """Día a día, desde git: tarjetas añadidas (por nivel), editadas y retiradas. El estado actual, si difiere del
+    último commit, cuenta como hoy (así `close-batch` exporta el lote que está cerrando)."""
+    import subprocess
+
+    def git(*args):
+        r = subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
+        return r.stdout if r.returncode == 0 else ""
+
+    def snapshot(commit):
+        found = {}
+        for path in git("ls-tree", "-r", "--name-only", commit).split("\n"):
+            if re.search(r"(^|/)exercises(\.yaml|/[^/]+\.yaml)$", path):
+                for x in (yaml.safe_load(git("show", f"{commit}:{path}")) or {}).get("exercises", []):
+                    found[x["id"]] = x
+        return found
+
+    def key(x):
+        return json.dumps({k: v for k, v in x.items() if k not in ("theme", "added")}, sort_keys=True, default=str)
+
+    states = []
+    for line in git("log", "--reverse", "--date=short", "--format=%H %ad", "--", "*exercises*").split("\n"):
+        if line.strip():
+            commit, date = line.split()
+            states.append((date, snapshot(commit)))
+    now = {x["id"]: x for x in exercises}
+    if not states or {i: key(x) for i, x in states[-1][1].items()} != {i: key(x) for i, x in now.items()}:
+        states.append((datetime.date.today().isoformat(), now))
+    days, prev = {}, {}
+    for date, cur in states:
+        d = days.setdefault(date, {"date": date, "added": {}, "edited": 0, "removed": 0})
+        for i in cur.keys() - prev.keys():
+            lvl = str(card_level(cur[i]) or "unlisted")
+            d["added"][lvl] = d["added"].get(lvl, 0) + 1
+        d["removed"] += len(prev.keys() - cur.keys())
+        d["edited"] += sum(1 for i in cur.keys() & prev.keys() if key(cur[i]) != key(prev[i]))
+        prev = cur
+    return list(days.values())
 
 
 def export_dictionary(entries, sentences, exercises):
@@ -1499,6 +1570,7 @@ def export_dictionary(entries, sentences, exercises):
                 if c.get("private", True) is False]
 
     groups_of = groups_by_member(entries)
+    eby, sby, levels = {e["id"]: e for e in entries}, {x["id"]: x for x in sentences}, hsk_levels()
     out_entries, out_groups = [], []
     for e in entries:
         if e.get("use") == "drop":
@@ -1509,7 +1581,7 @@ def export_dictionary(entries, sentences, exercises):
                                "members": [{"ref": m["ref"], "cue": m.get("cue")} for m in e.get("members", [])]})
             continue
         row = {"id": e["id"], "kind": e.get("kind"), "theme": e.get("theme"), "use": use_label(e),
-               "notes": public_notes(e)}
+               "level": level_of(e["id"], eby, sby, levels), "notes": public_notes(e)}
         if e.get("kind") == "pronunciation":
             row |= {"title": e.get("title"), "explanation": " ".join((e.get("explanation") or "").split()),
                     "example": e.get("audio_text"), "audio": audio(e.get("audio_text"))}
@@ -1526,6 +1598,25 @@ def export_dictionary(entries, sentences, exercises):
                                    for g in x.get("segments", [])],
                       "translation": x.get("translation") or {}, "audio": audio(sentence_text(x))}
                      for x in sentences if x.get("use") != "drop"]
+    def card_level(x):
+        return level_of((x.get("targets") or [None])[0], eby, sby, levels)
+
+    def web_html(html):
+        # [sound:archivo] de Anki pasa a un botón que la web conecta con el audio; lo oculto para el corrector, fuera.
+        html = re.sub(r'<span id="acs-exp-(py|hz)" style="display:none">.*?</span>', "", html)
+        html = html.replace('<span class="acs-typable" style="display:none"></span>', "")
+        return re.sub(r"\[sound:([^\]]+)\]", lambda m: f'<button class="zh-sound" type="button" '
+                      f'data-audio="{(MEDIA / m.group(1)).relative_to(ROOT).as_posix()}" aria-label="Play"></button>',
+                      html)
+
+    manifest_cards = load_manifest()
+    cards = []
+    for x in exercises:
+        f = card_fields(x, eby, sby, manifest_cards, set())
+        cards.append({"id": x["id"], "type": x["type"], "theme": x.get("theme"), "level": card_level(x),
+                      "typed": bool(f["typed"]), "task": f["task"],
+                      "front": web_html(f["front"] + f["prompt_audio"]),
+                      "back": web_html(f["back"] + f["answer_audio"]), "notes": web_html(f["notes"])})
     return {
         "schemaVersion": EXPORT_SCHEMA,
         "source": "https://github.com/yago-mendoza/apkg-chinese-structs",
@@ -1535,10 +1626,14 @@ def export_dictionary(entries, sentences, exercises):
         "counts": {"entries": len(out_entries), "sentences": len(out_sentences), "cards": len(exercises)},
         "themes": [{"id": t["id"], "title": t["title"], "order": n} for n, t in enumerate(load_themes(), 1)],
         "entries": out_entries, "groups": out_groups, "sentences": out_sentences,
+        "cards": cards, "history": deck_history(exercises, card_level),
+        "deck": {"file": APKG.relative_to(ROOT).as_posix(), "cards": len(exercises)},
     }
 
 
 def cmd_export():
+    if cmd_build(allow_missing_audio=False):
+        return 1
     entries, sentences, exercises = load()
     errors, _ = validate(entries, sentences, exercises)
     if errors:

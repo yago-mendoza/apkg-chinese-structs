@@ -59,7 +59,7 @@ flowchart LR
 
 **`4-notebook/`: the same database, readable.** Everything learned so far, by theme. Open it to look something up without Anki.
 
-**`5-output/`: what comes out.** The compiled deck (`.apkg`) and the public dictionary (`dictionary.json`) behind [infraphysics.net/corner/chinese](https://infraphysics.net/corner/chinese).
+**`5-output/`: what comes out.** The compiled deck (`.apkg`, downloadable) and the public export (`dictionary.json`: entries, sentences, every card as Anki renders it, and the day-by-day history of the deck) behind [infraphysics.net/corner/chinese](https://infraphysics.net/corner/chinese).
 
 **Batches.** A batch is whatever is in the inbox when you ask; how often is up to you. One a week is a good habit, since the review then arrives in time for your next class, but nothing depends on it: small batches give you feedback sooner, large ones let the agent see more at once. The structure is never frozen: every batch, themes and groups are revisited and reorganized when needed, without losing your progress.
 

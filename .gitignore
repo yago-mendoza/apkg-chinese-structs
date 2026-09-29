@@ -12,11 +12,11 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 
-# Generated output (rebuilt by anki.py). The public dictionary export is versioned:
+# Generated output (rebuilt by anki.py). The public export (dictionary and deck) is versioned:
 # consumers pin it by tag or commit.
 5-output/*
 !5-output/dictionary.json
-*.apkg
+!5-output/chino-practico.apkg
 
 # Local-only content; never a substitute for reviewing staged changes
 private/

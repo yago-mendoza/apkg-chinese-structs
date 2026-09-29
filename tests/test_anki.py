@@ -1,6 +1,7 @@
 """Pruebas de anki.py. Ejecutar: .\\.venv\\Scripts\\python -m unittest discover -s tests"""
 import datetime
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -133,6 +134,12 @@ class Repository(unittest.TestCase):
         for e in data["entries"]:
             if e.get("audio"):
                 self.assertTrue((anki.ROOT / e["audio"]).exists(), e["audio"])
+        self.assertEqual(len(data["cards"]), len(exercises))
+        for c in data["cards"]:
+            html = c["front"] + c["back"] + c["notes"]
+            self.assertNotIn("[sound:", html)
+            for path in re.findall(r'data-audio="([^"]+)"', html):
+                self.assertTrue((anki.ROOT / path).exists(), path)
 
     def test_close_batch_rejects_bad_names(self):
         _, errors = anki.close_batch_plan("2-foo")
