@@ -317,7 +317,7 @@ def render_pattern(st, eby):
             parts.append(f'<span class="slot slot-{esc(text)}"><span class="py">&nbsp;</span>'
                          f'<span class="hz">{esc(SLOTS.get(text, (text,))[0])}</span></span>')
         elif kind == "fixed":
-            parts.append(f'<span class="seg fixed"><span class="py">{esc(pinyin.get(text, ""))}</span>'
+            parts.append(f'<span class="seg is-fixed"><span class="py">{esc(pinyin.get(text, ""))}</span>'
                          f'<span class="hz">{esc(text)}</span></span>')
         else:
             parts.append(f'<span class="seg"><span class="py"></span><span class="hz">{esc(text)}</span></span>')
