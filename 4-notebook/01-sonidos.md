@@ -36,3 +36,14 @@ La diferencia no es sonora/sorda como en español: b, d y g van sin aire [p t k]
 j, q, x [tɕ tɕʰ ɕ]: lengua plana, con la punta abajo, detrás de los dientes (学 xué [ɕɥœ˧˥]). zh, ch, sh, r [ʈʂ ʈʂʰ ʂ ʐ]: punta de la lengua curvada hacia arriba (生 shēng [ʂɤŋ˥]). En la escritura no se confunden: j, q, x solo van delante de i o ü.
 
 - Las dos series no se confunden por escrito porque no comparten finales: j, q y x solo van delante de i o ü, y zh, ch y sh nunca.
+
+## La h, desde la garganta
+
+La h del pinyin es áspera, más cerca de la j española que de una h muda: el aire roza al fondo de la garganta. 喝 hē, 好 hǎo, 很 hěn.
+
+
+## Piensa en sílabas
+
+Cada hanzi es una sílaba con su tono. Dilas como golpes claros, también dentro de una palabra y aunque se junten varias (谢谢 xièxie, 我不是学生): no las encadenes como en español.
+
+- Es de lo más importante: pensar las sílabas una a una, aunque estén juntas en la frase.

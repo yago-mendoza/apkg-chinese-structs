@@ -21,7 +21,7 @@ El modelo redacta; `anki.py` calcula y comprueba. Lo que puede calcularse (qué 
 - **Rol**: `content` (palabra con significado propio) o `function` (pieza gramatical: se practica en frase).
 - **Nivel**: escalón de dificultad del HSK 3.0, del 1 al 7 (el 7 agrupa los niveles 7 a 9). Oficial si la palabra está en la lista, estimado por el agente si no. Primera división del mazo (ver «Niveles»).
 - **Tema**: agrupación por asunto (`3-data/themes.yaml`); es el archivo en que vive cada elemento y decide el subdeck, el orden de aprendizaje y el cuaderno.
-- **Grupo**: entradas que se estudian juntas por contraste (`visual`, `homophone`, `pattern`, `set`).
+- **Grupo**: entradas que se estudian juntas (`visual` y `homophone` por contraste; `pattern`, `set` y `phonetic` como familia).
 - **Ósmosis**: que una palabra aparezca como contexto en frases, además de en sus propias tarjetas.
 - **Lote**: una entrega de apuntes de YAGO (`NNN-AAAA-MM-DD-tema`).
 - **Log** (`2-digests/summary-<lote>.md`): el acta de un lote, lo que el agente decidió y por qué. Se lee; no se reescribe.
@@ -57,6 +57,8 @@ Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de o
 2. **Las clases**: qué está enseñando la profesora en este tramo (temas, ritmo, énfasis), contrastado con el nivel y con `docs/goal.md`: qué encaja, qué falta, qué convendría pedirle. Siempre «la profesora», sin nombre (el repositorio es público), y la opinión es sobre el contenido de las clases, nunca sobre la persona.
 3. **Tu método**: cómo estudia YAGO, visto a lo largo de los lotes (qué apuntes rinden, frases frente a palabras sueltas, escuchar, hablar y leer, fechas, tamaño y frecuencia de los lotes, constancia) y un consejo concreto, con lo que funciona y lo que no.
 4. **Avisos**: lo que el agente quiera transmitir: cambios en el mazo que le afectan, decisiones pendientes, ideas. Es el canal que YAGO lee con seguridad.
+
+**Cambios en el sistema**: si un lote hace cambiar reglas, criterios o código (porque YAGO lo pide o porque sus apuntes muestran que sirve mejor), el log lo cuenta en una sección propia, con qué cambió y dónde está escrito ahora.
 
 Histórico: un log no se reescribe. Si YAGO corrige algo después (por el chat o por el inbox), el cambio va a `3-data/` y el log recibe al final «Cambios posteriores» con la fecha. Que algo se repita en los apuntes de varios lotes es una señal: si está como `hear` y reaparece, se propone subirlo a `say` en el review.
 
@@ -119,7 +121,7 @@ Un archivo por tema en `3-data/lexicon/` (entradas), `3-data/sentences/` (frases
 
 - **IDs** con prefijo de tipo (`w.` palabra, `e.` expresión, `c.` carácter o componente, `p.` pronunciación, `g.` grupo, `s.` frase, `x.` ejercicio). Nunca se reutilizan ni se cambian; no usar solo el hanzi. Corregir conserva el ID; cambiar lo que pregunta una tarjeta exige ID nuevo.
 - **Una entrada por sentido y lectura** (行 háng / xíng). `standalone: yes | rare | no` es del sentido: si no se usa solo, `check` exige alguna palabra registrada que lo contenga.
-- **Grupos** (`kind: group`): `basis: visual | homophone | pattern | set` (set: serie de significado, como las partes del día), miembros con `cue` (rasgo distintivo). Máximo 4 en contraste. Toda tarjeta cuyo objetivo es miembro de un grupo muestra el grupo en el reverso con el objetivo marcado (si está en un set y en un pattern, basta el set). Se crean cuando YAGO ya conoce un miembro o los ha confundido, nunca por adelantado. Tarjetas: `contrast` (una por miembro) y `derive` (de un miembro del patrón a otro).
+- **Grupos** (`kind: group`): `basis: visual | homophone | pattern | set | phonetic` (set: serie de significado, como las partes del día o los verbos de querer; phonetic: caracteres que comparten la pieza que da el sonido, como 青 en 请 y 清), miembros con `cue` (rasgo distintivo). Máximo 4 en contraste. Toda tarjeta cuyo objetivo es miembro de un grupo muestra el grupo en el reverso con el objetivo marcado (si está en un set y en un pattern, basta el set). Se crean cuando YAGO ya conoce un miembro o los ha confundido, nunca por adelantado. Tarjetas: `contrast` (una por miembro) y `derive` (de un miembro del patrón a otro).
 - **Frases** segmentadas con `ref` a las entradas; una frase se guarda una vez y se reutiliza. Un segmento puede declarar `sandhi` cuando su pinyin escrito es el realizado (不 → bú).
 - **Ejercicios** separan `targets` (lo evaluado), `context` (visible en la pregunta) y `reveal` (ejemplos al revelar). La cobertura se cuenta por `targets`, nunca buscando subcadenas.
 - **Procedencia**: `source: {origin, batch, file, date}`; `added` en cada ejercicio.
@@ -134,7 +136,9 @@ Un archivo por tema en `3-data/lexicon/` (entradas), `3-data/sentences/` (frases
 | una frase o situación | la frase | junto a esa frase |
 | un truco para una pregunta concreta | el ejercicio | solo en su respuesta |
 
-`kind`: `mnemonic` (subjetivo), `teacher` (solo si consta que lo dijo la profesora), `linguistic` (verificado), `note` (apunte de YAGO de origen sin precisar), `sound` (pista de pronunciación de YAGO, literal, como «xiEnshAng»; se muestra como «Cómo suena»). **Redacción**: `text` es lo que se muestra (tarjetas, cuaderno, web) y va siempre bien escrito: frases completas en español, con mayúsculas y puntuación, sin símbolos de apunte (flechas, `+ intenso`, `w/`), traducido si YAGO lo apuntó en inglés, sin cambiar lo que quería decir (se puede añadir un ejemplo o una precisión comprobada). Lo que escribió se conserva literalmente en `original`, que no sale de `3-data/`. Si su apunte ya está bien escrito, se copia tal cual y no lleva `original`. El log, el review y cualquier otra salida citan siempre `text`; el apunte en bruto solo queda en `1-inbox/history/` y en `original`. `check` avisa de un `text` que empiece en minúscula, no termine en punto o lleve símbolos de apunte (salvo `sound`). Una mnemotecnia no se presenta como etimología. `private: true` por defecto y nada privado sale en ninguna salida; como el repositorio es público, lo privado ni siquiera se guarda en `3-data/`. Una observación nueva de YAGO («先生 se pronuncia…») va a su hogar según esta tabla y aparece en todas las tarjetas afectadas.
+**Estatus de cada carácter**: todo carácter o componente que aparece en una tarjeta o en un grupo se presenta como **palabra**, **ligada** (solo dentro de palabras; `standalone: no` o `rare`) o **componente** (`kind: component`: solo parte de otros caracteres). El reverso lo muestra solo, calculado de los datos. Los componentes llevan `use: context` (sin tarjetas; visibles en el diccionario) salvo que entren en un grupo de contraste. Si el mismo hanzi también es palabra suelta (口 «boca», 月 «luna; mes»), la entrada del componente lleva `as_word` y el reverso lo dice: «componente aquí; suelto también es palabra». Nunca se afirma que no es palabra algo que sí lo es.
+
+`kind`: `mnemonic` (subjetivo; en la tarjeta, «Mnemotecnia», con el aviso de que es una imagen para recordar y no su origen), `teacher` (solo si consta que lo dijo la profesora), `linguistic` (verificado), `note` (apunte de YAGO de origen sin precisar), `sound` (pista de pronunciación de YAGO, literal, como «xiEnshAng»; se muestra como «Cómo suena»). **Redacción**: `text` es lo que se muestra (tarjetas, cuaderno, web) y va siempre bien escrito: frases completas en español, con mayúsculas y puntuación, sin símbolos de apunte (flechas, `+ intenso`, `w/`), traducido si YAGO lo apuntó en inglés, sin cambiar lo que quería decir (se puede añadir un ejemplo o una precisión comprobada). Lo que escribió se conserva literalmente en `original`, que no sale de `3-data/`; si lo que pegó es texto de un libro y no suyo, no lleva `original` y `text` lo cuenta con otras palabras (ver «Repositorio y privacidad»). Si su apunte ya está bien escrito, se copia tal cual y no lleva `original`. El log, el review y cualquier otra salida citan siempre `text`; el apunte en bruto solo queda en `1-inbox/history/` y en `original`. `check` avisa de un `text` que empiece en minúscula, no termine en punto o lleve símbolos de apunte (salvo `sound`). Una mnemotecnia no se presenta como etimología. `private: true` por defecto y nada privado sale en ninguna salida; como el repositorio es público, lo privado ni siquiera se guarda en `3-data/`. Una observación nueva de YAGO («先生 se pronuncia…») va a su hogar según esta tabla y aparece en todas las tarjetas afectadas.
 
 ## Cobertura: `use`, `plan` y `check`
 
@@ -158,18 +162,18 @@ Es una escalera, con **excepciones siempre que hagan falta**: una lista explíci
 | palabra `content` | lectura | + escucha | + producción |
 | palabra `function` | lectura | + escucha | + producción en frase (hueco) |
 | frase o frase hecha | — | escucha | + decirla en voz alta con el audio |
-| carácter o componente | componentes, si está en una palabra que se estudia | — | — |
+| carácter o componente | componentes (o solo el contraste, si está en un grupo `visual`) | — | — |
 | pronunciación `p.` | — | escucha | + voz alta |
 
 Además, calculado del pinyin: tarjeta de tonos para toda entrada `hear` o `say` con tono neutro o sandhi (3+3, 不, 一). El erhua se detecta pero lo trata la pista de pronunciación. La producción suelta tecleada se reserva para el núcleo; el peso de la producción va a frases y frases hechas, que son lo más rentable para tonos en contexto y fluidez.
 
 **Ósmosis**: toda palabra `say` o `context` aparece como contexto en al menos una frase; aviso si no. Las expresiones que ya son un enunciado completo (你好, 再见) no lo necesitan. Antes de pedir frases a YAGO, se buscan en sus apuntes de `1-inbox/history/`. Que una entrada reaparezca como contexto en muchas frases es deseable y no cuenta como redundancia.
 
-**Señales para `use`** (orientan, no deciden): el nivel (ver «Niveles») y la frecuencia hablada. `check` avisa cuando `use` choca con el nivel (nivel 1 marcado `read`; nivel 7 marcado `say`) y pide motivo; las necesidades del que aprende según `docs/goal.md` justifican excepciones. Nunca se importa una lista entera. [pendiente, fase 3]
+**Señales para `use`** (orientan, no deciden): el nivel (ver «Niveles») y la frecuencia hablada. `check` avisa cuando `use` choca con el nivel (nivel 1 marcado `read`; nivel 7 marcado `say`) y pide motivo; las necesidades del que aprende según `docs/goal.md` justifican excepciones. Nunca se importa una lista entera.
 
 **`plan`** lista, para todo el mazo, las tarjetas exigidas que faltan y los avisos de ósmosis y señales. **`check` estricto** convierte en error cualquier tarjeta exigida ausente. **`gaps`** informa del reparto por capacidad (lectura, escucha, producción, tonos), contando cada tarjeta solo por lo que practica.
 
-## Niveles (HSK) [decidido 2026-09-27; pendiente, fase 3]
+## Niveles (HSK) [hecho el 2026-09-29, salvo las secuencias de curso]
 
 El mazo se ordena por dificultad con los niveles del HSK 3.0 (la versión de 2021): del 1 al 6, y el 7 para los niveles 7, 8 y 9, que comparten lista de vocabulario. El HSK es la escala, no la meta: el objetivo es hablar (`docs/goal.md`), y lo que no está en la lista también lleva nivel.
 
@@ -178,14 +182,14 @@ El mazo se ordena por dificultad con los niveles del HSK 3.0 (la versión de 202
 - **Palabras y expresiones**: si están en `sources/hsk/hsk3.tsv`, su nivel es el oficial y lo calcula `anki.py`; no se escribe a mano. Si no están (帅, 西班牙, 你好 como saludo), el agente escribe `level` y `level_reason` (por qué ese nivel: frecuencia, dificultad, a qué palabras oficiales se parece). `check` da error si una entrada no tiene nivel.
 - **Caracteres y componentes**: el nivel de la palabra oficial más baja que los usa; si ninguna, estimado.
 - **Pronunciación**: las reglas básicas (tonos, sandhi, iniciales) son nivel 1.
-- **Frases**: el nivel más alto de sus palabras. Una frase nunca adelanta vocabulario de un nivel superior.
+- **Frases**: el nivel más alto de sus palabras. Una frase nunca adelanta vocabulario de un nivel superior: los ejemplos automáticos del reverso solo toman frases de nivel igual o inferior al de la tarjeta (hecho el 2026-09-29, `examples_for`).
 - **Ejercicios**: el nivel más alto de sus objetivos.
 
-**En Anki**: el nivel es la primera división y el tema la segunda: `🐉 Chino práctico::HSK 1::02 Saludos y cortesía`. Etiquetas `nivel::1` y, si es estimado, `nivel::estimado`. Cambiar el nivel de algo lo mueve de subdeck conservando el progreso, igual que al reorganizar temas (se comprueba en Anki antes de darlo por hecho).
+**En Anki**: el nivel es la primera división y el tema la segunda: `🐉 Chino práctico::HSK 1::02 Saludos y cortesía` (el 7, `HSK 7-9`). El nivel de una tarjeta es el de su objetivo más difícil (`exercise_level`). Las nuevas salen por nivel primero. Etiquetas `nivel::1` y, si es estimado, `nivel::estimado`. Cambiar el nivel de algo lo mueve de subdeck conservando el progreso, igual que al reorganizar temas (se comprueba en Anki antes de darlo por hecho).
 
 **Cómo se estudia**: nivel a nivel, el subdeck del nivel actual. El que aprende respeta el orden: lo que llega de un nivel superior se guarda en su nivel y espera, aunque venga de sus apuntes.
 
-**Nivel actual y cambio de nivel**: en cada lote se calcula la cobertura de cada nivel (palabras de la lista con `use` `hear` o `say` en el mazo, frente al total del nivel) y va al review. Un nivel se da por superado con al menos el 80 % de su vocabulario y el juicio del agente sobre las estructuras de frase que ya se manejan (la lista mide vocabulario, no gramática). Al cruzarlo, el agente lo anuncia en el chat y en el review, con claridad. Lo que llegue después de un nivel ya superado se señala como hueco de ese nivel.
+**Nivel actual y cambio de nivel**: en cada lote se calcula la cobertura de cada nivel (palabras de la lista con `use` `hear` o `say` en el mazo, frente al total del nivel; `anki.py gaps`, `level_coverage`) y va al review. Un nivel se da por superado con al menos el 80 % de su vocabulario y el juicio del agente sobre las estructuras de frase que ya se manejan (la lista mide vocabulario, no gramática). Al cruzarlo, el agente lo anuncia en el chat y en el review, con claridad. Lo que llegue después de un nivel ya superado se señala como hueco de ese nivel.
 
 **Huecos y propuestas**: el review compara el mazo con el nivel actual (lista oficial y secuencias de curso) y propone qué falta, con el criterio de `docs/goal.md`. Las secuencias de curso (qué palabras y qué gramática trae cada lección) se extraen nivel a nivel de materiales que solo están en local (ver «Repositorio y privacidad»).
 
@@ -210,7 +214,7 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 
 ## Anki
 
-- Mazo `🐉 Chino práctico`. Hoy, **subdecks por tema**, numerados por orden de aprendizaje (`🐉 Chino práctico::04 Presentarse`), a partir de `themes.yaml` (decisión de YAGO: por fechas, cada subdeck sería un poco de todo), y se estudia el mazo padre. Decidido: **nivel primero y tema dentro** (ver «Niveles»), estudiando el subdeck del nivel actual [pendiente, fase 3]. **Etiquetas** para lo que admite varios valores: `tema::`, `mes::`, `use::`, `skill::`, `type::` y `nivel::`. La estructura de temas se revisa en cada lote (ver «Reorganización»).
+- Mazo `🐉 Chino práctico`. **Nivel primero y tema dentro** (`🐉 Chino práctico::HSK 1::04 Presentarse`; ver «Niveles»), con los temas numerados por orden de aprendizaje a partir de `themes.yaml` (decisión de YAGO: por fechas, cada subdeck sería un poco de todo). Se estudia el subdeck del nivel actual. **Etiquetas** para lo que admite varios valores: `tema::`, `mes::`, `use::`, `skill::`, `type::` y `nivel::`. La estructura de temas se revisa en cada lote (ver «Reorganización»).
 - **`push`**: compila, abre Anki si hace falta, importa por AnkiConnect (complemento `2055492159`) y sincroniza con AnkiWeb. Anki no mueve tarjetas de deck al reimportar: `push` las recoloca con AnkiConnect conservando el progreso (también las de este mazo que hayan acabado fuera de él, en el mazo por defecto o donde sea, salvo en mazos filtrados; las reconoce por su tipo de nota), y borra los subdecks propios que queden vacíos y no correspondan a ningún tema (renombrar un tema funciona así solo). Detecta notas del mazo cuyo ejercicio ya no existe y propone borrarlas, mostrando cuáles.
 - **Orden de nuevas**: las tarjetas de una misma entrada no se introducen el mismo día (Anki solo separa hermanas de una misma nota y aquí cada tarjeta es una nota); los básicos primero.
 - **Límites**: 20 nuevas al día y 300 repasos como máximo (YAGO, 2026-09-27; antes 30, y 15 se le quedaba corto), fijados por `push` en un preset propio. A ritmo estable los repasos diarios son del orden de 5 a 8 veces las nuevas (proporcional, no geométrico: a unos 10 s por tarjeta, 20 nuevas son unos 25 a 30 minutos al día); `use` mantiene el total asumible hacia C1. Cambiarlo es cambiar `NEW_PER_DAY` en `anki.py`: un cambio a mano en Anki se pierde en el siguiente `push`.
@@ -230,12 +234,36 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 ## Repositorio y privacidad
 
 - Repositorio `yago-mendoza/apkg-chinese-structs`, **público**: nada privado en `3-data/`, ninguna credencial. Local en `C:\Users\yagom\dev\apkg-chinese-structs`, Python en `.venv`, UTF-8 explícito.
+- **Citas de libros en los apuntes**: si un apunte copia texto literal de un libro con derechos (citas largas, con su página), el archivo de `1-inbox/history/` guarda el apunte con esas citas retiradas y marcadas («[cita de un libro retirada]»), y el apunte íntegro se guarda en `private/` (fuera de git). Lo que YAGO escribió con sus palabras se archiva tal cual.
 - Fuera de git: los apuntes pendientes de `1-inbox/` (sí se versionan su README y el review), `5-output/` y el entorno. `1-inbox/history/` se versiona (decisión de YAGO, 2026-09-27): los apuntes no son privados. Antes de archivar un lote en `1-inbox/history/`, revisar que no haya datos sensibles (claves, correos, teléfonos).
 - Commits cuando YAGO lo pida; push a GitHub solo cuando lo pida.
 - Fuentes externas versionadas: `sources/`, cada una con su origen y su licencia. Hoy, el vocabulario del HSK 3.0 de `drkameleon/complete-hsk-vocabulary` (MIT; solo nivel, frecuencia y pinyin, no sus glosas CC-CEDICT). Dong Chinese no se descarga (su `robots.txt` pide que no la rastreen programas); SUBTLEX-CH, si hace falta, solo en local.
 - Materiales solo locales: manuales de curso y libros de caracteres que no se pueden redistribuir. Viven fuera del repositorio; `private/README.md` (en `.gitignore`) dice dónde están y cómo se usan. Nada del repositorio depende de ellos, nada se copia de ellos y no se nombran en nada versionado: lo que aporten entra redactado con palabras propias y comprobado con fuentes abiertas.
 - Licencia (elegida por YAGO, 2026-09-27): MIT para el código, CC BY 4.0 para el contenido; cita obligatoria, uso comercial permitido. Lo que entre de terceros tiene que ser compatible con CC BY.
 - **Exportación pública** (`anki.py export` → `5-output/dictionary.json`, versionado; `close-batch` la regenera antes del commit, así que cada etiqueta `lote-NNN` lleva la suya). Es el contrato con InfraPhysics: lista explícita de campos publicables (temas, entradas con pinyin, AFI, significado, `use`, nivel oficial del HSK, grupos y comentarios públicos, frases), las tarjetas tal como las muestra Anki (el mismo HTML de `card_fields`, con el audio como botón), el historial día a día sacado de git (tarjetas añadidas por nivel, editadas y retiradas; la propia exportación guarda hasta qué commit está calculado, `historyCache`, y la siguiente solo lee los commits nuevos) y el mazo compilado (`5-output/chino-practico.apkg`, que `export` genera y se versiona para poder descargarlo), `schemaVersion` y atribución CC BY; nunca comentarios privados ni el campo `original`. El audio va por ruta dentro del repositorio y se sirve con jsDelivr fijado a una versión: `https://cdn.jsdelivr.net/gh/yago-mendoza/apkg-chinese-structs@<versión>/<ruta>`. InfraPhysics la consume en `/side-quests/chinese`: al cargar, la página lee la exportación de `@main` en jsDelivr (con la copia incluida en su código como respaldo), y el workflow `publish` purga esa caché de jsDelivr tras cada push que cambie `5-output/`, así que la web se actualiza sola en un par de minutos. Un cambio incompatible del formato sube `EXPORT_SCHEMA`.
+
+## Garantías: qué asegura el código y qué el criterio
+
+Todo lo que se puede decidir con datos se decide con atributos y lo comprueba `check` (error: bloquea el lote; aviso: hay que resolverlo o justificarlo antes de cerrar). Lo que necesita criterio lo decide el agente, pero deja rastro escrito que se puede revisar. Una regla nueva se escribe primero aquí o en `docs/goal.md` y, si se puede comprobar, entra en `quality_rules` (`anki.py`) con su prueba en `tests/`.
+
+| Regla | Cómo se asegura |
+|---|---|
+| Tarjetas exigidas por `use`, redundancia, ósmosis | `check` (error / aviso) |
+| Nivel de cada entrada | `check`: error si no hay nivel oficial ni `level` con `level_reason` |
+| `use` frente al nivel | `check`: aviso si HSK 1 es solo lectura o HSK 7 es para decir, sin `use_reason` |
+| Estatus del carácter (palabra, ligada, componente) | `check`: error si un carácter no declara `standalone` o un componente pide oírse o decirse, y si un componente cuyo hanzi es palabra (lista del HSK o mazo) no lleva `as_word`; el reverso lo muestra calculado |
+| El pinyin por delante | `check`: error si la escucha o la producción de una palabra no piden escribir; `scaffold` genera dictado |
+| Ejemplos sin vocabulario de un nivel superior | código (`examples_for`) y prueba |
+| Frase de cada hueco | regla fija (`cloze_sentence`); `check` avisa de frases repetidas o de nivel superior |
+| Frases completas | `check`: error si un trozo en chino no enlaza a una entrada |
+| Notas bien redactadas | `check`: aviso (mayúscula, punto, sin símbolos de apunte) |
+| Otros niveles marcados en las notas | `check`: aviso si una palabra de la lista de nivel superior, fuera del mazo, no lleva «[HSK n]» |
+| Fuentes privadas | `check`: error si lo versionado nombra un término de `private/forbidden.txt` (lista local) |
+| Audio completo, referencias, IDs, temas | `check` (error) |
+| Qué entra y para qué (`use`), nivel estimado, tema | criterio del agente con `docs/goal.md`; queda en `use_reason` y `level_reason` y en el log |
+| Frases naturales, mnemotecnias, conexiones, series fonéticas | criterio del agente; se revisan en el review |
+| Citas de libros | criterio: `original` solo guarda lo que YAGO escribió con sus palabras; el archivo del apunte las retira (ver «Repositorio y privacidad») |
+| Mnemotecnia frente a origen | criterio al elegir `kind` (`mnemonic` o `linguistic`); la tarjeta lo rotula |
 
 ## Pruebas
 
@@ -249,7 +277,7 @@ Por comprobar en uso real: que el cliente móvil de YAGO conserva lo escrito ent
 
 1. ~~Fase 1~~ hecha.
 2. ~~Fase 2~~ hecha: subdecks por tema, etiquetas, recolocación, datos por tema, frases aparte, log y review, tarjeta de matiz.
-3. Niveles del HSK 3.0 (decidido el 2026-09-27; ver «Niveles»): nivel en cada elemento, subdecks por nivel, cobertura por nivel en el review y aviso de cambio de nivel; después, las secuencias de curso del nivel actual.
+3. ~~Niveles del HSK 3.0~~ hechos el 2026-09-29: nivel en cada elemento (con `check`), subdecks y orden por nivel, ejemplos sin vocabulario superior y cobertura por nivel. Queda: las secuencias de curso del nivel actual.
 4. Pista de pronunciación.
 5. `stats`: leer fallos de Anki por AnkiConnect y convertir las tarjetas problemáticas en huecos del siguiente lote.
 

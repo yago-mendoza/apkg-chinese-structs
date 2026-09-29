@@ -118,6 +118,116 @@ entries:
     hanzi: 牛肉
     pinyin: niúròu
     meaning: {es: carne de ternera, en: beef}
+    level: 2
+    level_reason: 'comida de menú; 肉 y 牛 aparecen pronto, 牛 es HSK 3 como palabra suelta'
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Modificador + núcleo: 牛 «vaca» especifica 肉 «carne».'}
+  - id: w.xihuan
+    use: say
+    role: content
+    kind: word
+    hanzi: 喜欢
+    pinyin: xǐhuan
+    meaning: {es: gustar, en: to like}
+    accept_pinyin_mismatch: segunda sílaba en tono neutro en el habla
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-09-27', text: '喜: un tambor sobre una boca que canta: alegría.', original: xîhuan(alegria(hanzitambor y gente cantandodeabjo)+ )}
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '欢 es ligada: aparece en 喜欢 y en 欢迎 huānyíng «bienvenido». 喜 también en 恭喜 gōngxǐ «¡enhorabuena!» [HSK 7], muy frecuente al hablar.'}
+  - id: w.ai.love
+    use: say
+    role: content
+    kind: word
+    hanzi: 爱
+    pinyin: ài
+    meaning: {es: 'amar, querer (a alguien)', en: to love}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-09-27', text: 'Una mano 爫 que cubre 冖 al amigo 友: amar.', original: 爫 = mano 冖 = cubierta/techo 友 yǒu = amigo}
+  - id: w.aihao
+    use: say
+    role: content
+    kind: word
+    hanzi: 爱好
+    pinyin: àihào
+    meaning: {es: 'afición, hobby', en: hobby}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '爱 «amar» + 好 hào «que gusta»: lo que te gusta hacer. Aquí 好 se lee hào, no hǎo.'}
+  - id: w.yao
+    use: say
+    role: content
+    kind: word
+    hanzi: 要
+    pinyin: yào
+    meaning: {es: querer (algo); hacer falta, en: to want; to need}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-09-27', text: 'Unas manos que sujetan a una mujer por la cintura: desear.'}
+  - id: w.xuyao
+    use: hear
+    role: content
+    kind: word
+    hanzi: 需要
+    pinyin: xūyào
+    meaning: {es: necesitar, en: to need}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '需要 es necesitar porque la situación lo impone; 要, querer o hacer falta. 我需要水 «necesito agua»; 我要水 «quiero agua».'}
+      - {kind: mnemonic, private: false, date: '2026-09-27', text: '需: una persona bajo la lluvia 雨 que necesita resguardo.'}
+  - id: g.want-like
+    kind: group
+    basis: set
+    title: 'Querer, gustar, amar'
+    explanation: Cuatro verbos que en español se cruzan. Cada uno pide un tipo de frase distinto.
+    members:
+      - {ref: w.xiang, cue: 'ganas de hacer algo: 我想喝水 (también «pensar»)'}
+      - {ref: w.yao, cue: 'lo quiero, me hace falta: 我要水'}
+      - {ref: w.xihuan, cue: 'me gusta, en general: 我喜欢咖啡'}
+      - {ref: w.ai.love, cue: 'amo: 我爱你'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.piao
+    use: hear
+    role: content
+    kind: word
+    hanzi: 票
+    pinyin: piào
+    meaning: {es: 'billete, entrada', en: ticket}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 'Familia: 车票 chēpiào «billete de tren o autobús», 机票 jīpiào «billete de avión», 门票 ménpiào «entrada» [HSK 1]; 发票 fāpiào «factura» [HSK 4]; 投票 tóupiào «votar» [HSK 6]. En 发票 va 发 fā «emitir» (la factura se emite); en 投票, 投 tóu «lanzar, meter» (el voto se mete en la urna).'}
+      - {kind: mnemonic, private: false, date: '2026-09-27', text: 'Un papel ritual que se quemaba: de ahí «billete»; sus cenizas flotando dan 漂 piāo «flotar», que presta el sonido a 漂亮.', original: papel ritual que se quema → billete; cenizas que vuelan → ligero}
+  - id: w.jipiao
+    use: hear
+    role: content
+    kind: word
+    hanzi: 机票
+    pinyin: jīpiào
+    meaning: {es: billete de avión, en: plane ticket}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 机 jī «máquina» es el mismo de 手机 «móvil» (máquina de mano) y 飞机 fēijī «avión» (máquina que vuela).}
+  - id: w.dongxi
+    use: say
+    role: content
+    kind: word
+    hanzi: 东西
+    pinyin: dōngxi
+    meaning: {es: 'cosa, cosas', en: 'thing, stuff'}
+    accept_pinyin_mismatch: segunda sílaba en tono neutro en el habla
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: Literalmente «este y oeste». 买东西 mǎi dōngxi es «ir de compras». El 西 es el de 西班牙.}
+      - {kind: mnemonic, private: false, date: '2026-09-27', text: '东: el sol 日 saliendo tras un árbol 木, por el este. 西: los pájaros vuelven al nido cuando el sol se pone, por el oeste.', original: 东 dōng = este / oriente. el sol saliendo sobre la copa de un árbol. 西 xī = oeste. nido → atardecer → oeste.}
+  - id: w.daxiao
+    use: hear
+    role: content
+    kind: word
+    hanzi: 大小
+    pinyin: dàxiǎo
+    meaning: {es: 'tamaño, talla', en: size}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: Grande + pequeño = el tamaño. Útil en tiendas de ropa.}

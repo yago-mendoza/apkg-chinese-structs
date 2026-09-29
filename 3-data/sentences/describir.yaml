@@ -25,3 +25,79 @@ sentences:
       - {text: 可爱, ref: w.keai, pinyin: kě'ài}
       - {text: 。}
     translation: {es: Es muy mono (un animal)., en: It's cute.}
+  - id: s.ta-bu-piaoliang
+    use: say
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: tā}
+      - {text: 不, ref: w.bu, pinyin: bú, sandhi: true}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: piàoliang}
+      - {text: 。}
+    translation: {es: No es guapa., en: She isn't pretty.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: s.ta-piaoliang-ma
+    use: say
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: tā}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: piàoliang}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Es guapa?', en: 'Is she pretty?'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: s.ta-piaoliang-bu-piaoliang
+    use: say
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: tā}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: piàoliang}
+      - {text: 不, ref: w.bu, pinyin: bu, sandhi: true}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: piàoliang}
+      - {text: ？}
+    translation: {es: '¿Es guapa o no?', en: 'Is she pretty or not?'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: s.ta-bu-gao
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 不, ref: w.bu, pinyin: bù}
+      - {text: 高, ref: w.gao, pinyin: gāo}
+      - {text: 。}
+    translation: {es: No es alto., en: He isn't tall.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: s.laoshi-hen-shuai
+    use: hear
+    segments:
+      - {text: 老师, ref: w.laoshi, pinyin: lǎoshī}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 帅, ref: w.shuai, pinyin: shuài}
+      - {text: 。}
+    translation: {es: El profesor es guapo., en: The teacher is handsome.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: s.beijing-hen-da
+    use: hear
+    segments:
+      - {text: 北京, ref: w.beijing, pinyin: Běijīng}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 大, ref: w.da, pinyin: dà}
+      - {text: 。}
+    translation: {es: Pekín es grande., en: Beijing is big.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.tai-hao-le
+    use: say
+    segments:
+      - {text: 太, ref: w.tai, pinyin: tài}
+      - {text: 好, ref: w.hao, pinyin: hǎo}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ！}
+    translation: {es: ¡Genial!, en: Great!}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wode-shouji-shi-bai-de
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 手机, ref: w.shouji, pinyin: shǒujī}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 白, ref: w.bai, pinyin: bái}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 。}
+    translation: {es: Mi móvil es blanco., en: My phone is white.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}

@@ -526,3 +526,23 @@ exercises:
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: ren2, hanzi: 人, pinyin: rén, meaning: persona}
     comments: []
+  - id: x.contrast.shi-master
+    added: 2026-09-29
+    type: contrast
+    targets: [c.shi.master]
+    group: g.shuai-shi
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es shī, el de 老师?'}
+    answer: {hanzi: 师, pinyin: shī, meaning: maestro; en nombres de profesiones}
+    lang: es
+    comments: []
+  - id: x.nuance.men-men
+    added: 2026-09-29
+    type: nuance
+    targets: [c.men.plural, w.men]
+    skills: [comprehension, discrimination]
+    prompt: {text: '们 y 门: ¿cuál es una palabra y cuál va siempre pegada a otra?'}
+    answer: {meaning: '门 mén (2.º tono) es palabra: «puerta». 们 men (átono) es ligada: el plural de personas, en 我们, 你们, 他们.
+        门 le presta el sonido.'}
+    lang: es
+    comments: []

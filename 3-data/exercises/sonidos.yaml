@@ -131,3 +131,45 @@ exercises:
     skills: [listening]
     lang: es
     comments: []
+  - id: x.listen.h-throat
+    added: 2026-09-29
+    type: listen
+    targets: [p.h-throat]
+    refs: [p.h-throat]
+    skills: [listening]
+    prompt: {text: 'Escucha 很好. ¿Cómo suena la h?', audio: true}
+    answer: {hanzi: 很好, pinyin: hěn hǎo, meaning: 'Áspera, desde el fondo de la garganta, como una j suave.'}
+    lang: es
+    comments: []
+  - id: x.speak.h-throat
+    added: 2026-09-29
+    type: speak
+    targets: [p.h-throat]
+    context: [w.he.drink, w.shui]
+    refs: [p.h-throat]
+    skills: [speaking]
+    prompt: {text: 'Di en voz alta, con la h desde la garganta:', hanzi: 喝水, pinyin: hē shuǐ}
+    answer: {hanzi: 喝水, meaning: beber agua}
+    lang: es
+    comments: []
+  - id: x.listen.syllables
+    added: 2026-09-29
+    type: listen
+    targets: [p.syllables]
+    refs: [p.syllables]
+    skills: [listening]
+    prompt: {text: 'Escucha 我不是学生. ¿Cuántas sílabas oyes?', audio: true}
+    answer: {hanzi: 我不是学生, meaning: 'Cinco, una por hanzi y cada una con su tono: wǒ bú shì xuésheng.'}
+    lang: es
+    comments: []
+  - id: x.speak.syllables
+    added: 2026-09-29
+    type: speak
+    targets: [p.syllables]
+    context: [w.xibanya, w.ren]
+    refs: [p.syllables]
+    skills: [speaking]
+    prompt: {text: 'Di en voz alta, sílaba a sílaba, cada una con su tono:', hanzi: 西班牙人, pinyin: Xībānyárén}
+    answer: {hanzi: 西班牙人, meaning: 'español, española'}
+    lang: es
+    comments: []

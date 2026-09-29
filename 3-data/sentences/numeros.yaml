@@ -1,0 +1,50 @@
+# Frases · numeros. Esquema: 3-data/README.md
+
+sentences:
+  - id: s.count-1-10
+    use: say
+    segments:
+      - {text: 一, ref: w.num.yi, pinyin: yī}
+      - {text: 、}
+      - {text: 二, ref: w.num.er, pinyin: èr}
+      - {text: 、}
+      - {text: 三, ref: w.num.san, pinyin: sān}
+      - {text: 、}
+      - {text: 四, ref: w.num.si, pinyin: sì}
+      - {text: 、}
+      - {text: 五, ref: w.num.wu, pinyin: wǔ}
+      - {text: 、}
+      - {text: 六, ref: w.num.liu, pinyin: liù}
+      - {text: 、}
+      - {text: 七, ref: w.num.qi, pinyin: qī}
+      - {text: 、}
+      - {text: 八, ref: w.ba, pinyin: bā}
+      - {text: 、}
+      - {text: 九, ref: w.num.jiu, pinyin: jiǔ}
+      - {text: 、}
+      - {text: 十, ref: w.num.shi, pinyin: shí}
+      - {text: 。}
+    translation: {es: 'Uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez.', en: 'One, two, three, four, five, six, seven, eight, nine, ten.'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-you-san-ge-pengyou
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 有, ref: w.you.have, pinyin: yǒu}
+      - {text: 三, ref: w.num.san, pinyin: sān}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 朋友, ref: w.pengyou, pinyin: péngyou}
+      - {text: 。}
+    translation: {es: Tengo tres amigos., en: I have three friends.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.tamen-you-liang-ge-haizi
+    use: hear
+    segments:
+      - {text: 他们, ref: w.tamen, pinyin: tāmen}
+      - {text: 有, ref: w.you.have, pinyin: yǒu}
+      - {text: 两, ref: w.liang, pinyin: liǎng}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 孩子, ref: w.haizi, pinyin: háizi}
+      - {text: 。}
+    translation: {es: Tienen dos hijos., en: They have two children.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}

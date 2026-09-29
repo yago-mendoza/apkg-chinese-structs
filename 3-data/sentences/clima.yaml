@@ -1,0 +1,56 @@
+# Frases · clima. Esquema: 3-data/README.md
+
+sentences:
+  - id: s.tianqi-hen-leng
+    use: say
+    segments:
+      - {text: 天气, ref: w.tianqi, pinyin: tiānqì}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 冷, ref: w.leng, pinyin: lěng}
+      - {text: 。}
+    translation: {es: Hace mucho frío., en: It's cold.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: s.tianqi-bu-leng
+    use: say
+    segments:
+      - {text: 天气, ref: w.tianqi, pinyin: tiānqì}
+      - {text: 不, ref: w.bu, pinyin: bù}
+      - {text: 冷, ref: w.leng, pinyin: lěng}
+      - {text: 。}
+    translation: {es: No hace frío., en: It isn't cold.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: s.tianqi-leng-ma
+    use: say
+    segments:
+      - {text: 天气, ref: w.tianqi, pinyin: tiānqì}
+      - {text: 冷, ref: w.leng, pinyin: lěng}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Hace frío?', en: 'Is it cold?'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: s.beijing-hen-re
+    use: say
+    segments:
+      - {text: 北京, ref: w.beijing, pinyin: Běijīng}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 热, ref: w.re, pinyin: rè}
+      - {text: 。}
+    translation: {es: En Pekín hace mucho calor., en: It's hot in Beijing.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: s.xiayu-le
+    use: hear
+    segments:
+      - {text: 下雨, ref: w.xiayu, pinyin: xiàyǔ}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: Se ha puesto a llover., en: It's started raining.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.beijing-xiayu-ma
+    use: hear
+    segments:
+      - {text: 北京, ref: w.beijing, pinyin: Běijīng}
+      - {text: 下雨, ref: w.xiayu, pinyin: xiàyǔ}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Llueve en Pekín?', en: 'Is it raining in Beijing?'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}

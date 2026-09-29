@@ -675,3 +675,499 @@ exercises:
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: gao1 xing4, hanzi: 高兴, pinyin: gāoxìng, meaning: contento}
     comments: []
+  - id: x.dictation.xing
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.xing]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xing4, hanzi: 姓, pinyin: xìng, meaning: apellidarse; apellido}
+    comments: []
+  - id: x.produce.xing
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.xing]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «apellidarse; apellido»? Escribe el pinyin.'}
+    answer: {typed: xing4, hanzi: 姓, pinyin: xìng, meaning: apellidarse; apellido}
+    comments: []
+  - id: x.read.xing
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.xing]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 姓}
+    answer: {hanzi: 姓, pinyin: xìng, meaning: apellidarse; apellido}
+    comments: []
+  - id: x.dictation.guixing
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [e.guixing]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gui4 xing4, hanzi: 贵姓, pinyin: guìxìng, meaning: su apellido (forma cortés)}
+    comments: []
+  - id: x.produce.guixing
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [e.guixing]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «su apellido (forma cortés)»? Escribe el pinyin.'}
+    answer: {typed: gui4 xing4, hanzi: 贵姓, pinyin: guìxìng, meaning: su apellido (forma cortés)}
+    comments: []
+  - id: x.read.guixing
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [e.guixing]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 贵姓}
+    answer: {hanzi: 贵姓, pinyin: guìxìng, meaning: su apellido (forma cortés)}
+    comments: []
+  - id: x.dictation.xingming
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.xingming]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xing4 ming2, hanzi: 姓名, pinyin: xìngmíng, meaning: nombre completo}
+    comments: []
+  - id: x.read.xingming
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.xingming]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 姓名}
+    answer: {hanzi: 姓名, pinyin: xìngmíng, meaning: nombre completo}
+    comments: []
+  - id: x.dictation.menduosa
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.menduosa]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: men2 duo1 sa4, hanzi: 门多萨, pinyin: Ménduōsà, meaning: Mendoza (mi apellido)}
+    comments: []
+  - id: x.produce.menduosa
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.menduosa]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «Mendoza (mi apellido)»? Escribe el pinyin.'}
+    answer: {typed: men2 duo1 sa4, hanzi: 门多萨, pinyin: Ménduōsà, meaning: Mendoza (mi apellido)}
+    comments: []
+  - id: x.read.menduosa
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.menduosa]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 门多萨}
+    answer: {hanzi: 门多萨, pinyin: Ménduōsà, meaning: Mendoza (mi apellido)}
+    comments: []
+  - id: x.dictation.yage
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.yage]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ya3 ge1, hanzi: 雅戈, pinyin: Yǎgē, meaning: Yago (mi nombre en chino)}
+    comments: []
+  - id: x.produce.yage
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.yage]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «Yago (mi nombre en chino)»? Escribe el pinyin.'}
+    answer: {typed: ya3 ge1, hanzi: 雅戈, pinyin: Yǎgē, meaning: Yago (mi nombre en chino)}
+    comments: []
+  - id: x.read.yage
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.yage]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 雅戈}
+    answer: {hanzi: 雅戈, pinyin: Yǎgē, meaning: Yago (mi nombre en chino)}
+    comments: []
+  - id: x.dictation.lai
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.lai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lai2, hanzi: 来, pinyin: lái, meaning: venir}
+    comments: []
+  - id: x.produce.lai
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.lai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «venir»? Escribe el pinyin.'}
+    answer: {typed: lai2, hanzi: 来, pinyin: lái, meaning: venir}
+    comments: []
+  - id: x.read.lai
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.lai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 来}
+    answer: {hanzi: 来, pinyin: lái, meaning: venir}
+    comments: []
+  - id: x.dictation.laizi
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.laizi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lai2 zi4, hanzi: 来自, pinyin: láizì, meaning: 'venir de, ser de'}
+    comments: []
+  - id: x.produce.laizi
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.laizi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «venir de, ser de»? Escribe el pinyin.'}
+    answer: {typed: lai2 zi4, hanzi: 来自, pinyin: láizì, meaning: 'venir de, ser de'}
+    comments: []
+  - id: x.read.laizi
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.laizi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 来自}
+    answer: {hanzi: 来自, pinyin: láizì, meaning: 'venir de, ser de'}
+    comments: []
+  - id: x.dictation.wen
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.wen]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wen4, hanzi: 问, pinyin: wèn, meaning: preguntar}
+    comments: []
+  - id: x.produce.wen
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.wen]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «preguntar»? Escribe el pinyin.'}
+    answer: {typed: wen4, hanzi: 问, pinyin: wèn, meaning: preguntar}
+    comments: []
+  - id: x.read.wen
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.wen]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 问}
+    answer: {hanzi: 问, pinyin: wèn, meaning: preguntar}
+    comments: []
+  - id: x.dictation.beijing
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.beijing]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bei3 jing1, hanzi: 北京, pinyin: Běijīng, meaning: Pekín}
+    comments: []
+  - id: x.produce.beijing
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.beijing]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «Pekín»? Escribe el pinyin.'}
+    answer: {typed: bei3 jing1, hanzi: 北京, pinyin: Běijīng, meaning: Pekín}
+    comments: []
+  - id: x.read.beijing
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.beijing]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 北京}
+    answer: {hanzi: 北京, pinyin: Běijīng, meaning: Pekín}
+    comments: []
+  - id: x.listen.renshi-ni-hen-gaoxing
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.renshi-ni-hen-gaoxing
+    targets: [s.renshi-ni-hen-gaoxing]
+    context: [w.renshi, w.ni, w.hen, w.gaoxing]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Encantado de conocerte!}
+    comments: []
+  - id: x.produce.renshi-ni-hen-gaoxing
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.renshi-ni-hen-gaoxing
+    targets: [s.renshi-ni-hen-gaoxing]
+    context: [w.renshi, w.ni, w.hen, w.gaoxing]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Encantado de conocerte!»'}
+    answer: {meaning: ¡Encantado de conocerte!}
+    comments: []
+  - id: x.listen.renshi-ni-wo-ye-hen-gaoxing
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.renshi-ni-wo-ye-hen-gaoxing
+    targets: [s.renshi-ni-wo-ye-hen-gaoxing]
+    context: [w.renshi, w.ni, w.wo, w.ye, w.hen, w.gaoxing]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Yo también estoy encantado de conocerte!}
+    comments: []
+  - id: x.produce.renshi-ni-wo-ye-hen-gaoxing
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.renshi-ni-wo-ye-hen-gaoxing
+    targets: [s.renshi-ni-wo-ye-hen-gaoxing]
+    context: [w.renshi, w.ni, w.wo, w.ye, w.hen, w.gaoxing]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Yo también estoy encantado de conocerte!»'}
+    answer: {meaning: ¡Yo también estoy encantado de conocerte!}
+    comments: []
+  - id: x.listen.wo-keyi-wen-ni-ma
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wo-keyi-wen-ni-ma
+    targets: [s.wo-keyi-wen-ni-ma]
+    context: [w.wo, w.keyi, w.wen, w.ni, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Te puedo preguntar algo?'}
+    comments: []
+  - id: x.produce.wo-keyi-wen-ni-ma
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.wo-keyi-wen-ni-ma
+    targets: [s.wo-keyi-wen-ni-ma]
+    context: [w.wo, w.keyi, w.wen, w.ni, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Te puedo preguntar algo?»'}
+    answer: {meaning: '¿Te puedo preguntar algo?'}
+    comments: []
+  - id: x.listen.ni-xing-shenme
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.ni-xing-shenme
+    targets: [s.ni-xing-shenme]
+    context: [w.ni, w.xing, w.shenme]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cómo te apellidas?'}
+    comments: []
+  - id: x.produce.ni-xing-shenme
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.ni-xing-shenme
+    targets: [s.ni-xing-shenme]
+    context: [w.ni, w.xing, w.shenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cómo te apellidas?»'}
+    answer: {meaning: '¿Cómo te apellidas?'}
+    comments: []
+  - id: x.listen.wo-xing-menduosa
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wo-xing-menduosa
+    targets: [s.wo-xing-menduosa]
+    context: [w.wo, w.xing, w.menduosa]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me apellido Mendoza.}
+    comments: []
+  - id: x.produce.wo-xing-menduosa
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.wo-xing-menduosa
+    targets: [s.wo-xing-menduosa]
+    context: [w.wo, w.xing, w.menduosa]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me apellido Mendoza.»'}
+    answer: {meaning: Me apellido Mendoza.}
+    comments: []
+  - id: x.listen.nin-guixing
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.nin-guixing
+    targets: [s.nin-guixing]
+    context: [w.nin, e.guixing]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuál es su apellido? (cortés)'}
+    comments: []
+  - id: x.produce.nin-guixing
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.nin-guixing
+    targets: [s.nin-guixing]
+    context: [w.nin, e.guixing]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuál es su apellido? (cortés)»'}
+    answer: {meaning: '¿Cuál es su apellido? (cortés)'}
+    comments: []
+  - id: x.listen.wo-jiao-yage
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wo-jiao-yage
+    targets: [s.wo-jiao-yage]
+    context: [w.wo, w.jiao, w.yage]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me llamo Yago.}
+    comments: []
+  - id: x.produce.wo-jiao-yage
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.wo-jiao-yage
+    targets: [s.wo-jiao-yage]
+    context: [w.wo, w.jiao, w.yage]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me llamo Yago.»'}
+    answer: {meaning: Me llamo Yago.}
+    comments: []
+  - id: x.listen.tamen-dou-laizi-meiguo-ma
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.tamen-dou-laizi-meiguo-ma
+    targets: [s.tamen-dou-laizi-meiguo-ma]
+    context: [w.tamen, w.dou, w.laizi, w.meiguo, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Son todos de Estados Unidos?'}
+    comments: []
+  - id: x.listen.wo-laizi-xibanya
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wo-laizi-xibanya
+    targets: [s.wo-laizi-xibanya]
+    context: [w.wo, w.laizi, w.xibanya]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Soy de España.}
+    comments: []
+  - id: x.produce.wo-laizi-xibanya
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.wo-laizi-xibanya
+    targets: [s.wo-laizi-xibanya]
+    context: [w.wo, w.laizi, w.xibanya]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Soy de España.»'}
+    answer: {meaning: Soy de España.}
+    comments: []
+  - id: x.listen.qingwen-ni-jiao-shenme-mingzi
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.qingwen-ni-jiao-shenme-mingzi
+    targets: [s.qingwen-ni-jiao-shenme-mingzi]
+    context: [e.qingwen, w.ni, w.jiao, w.shenme, w.mingzi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Disculpa, ¿cómo te llamas?'}
+    comments: []
+  - id: x.produce.qingwen-ni-jiao-shenme-mingzi
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.qingwen-ni-jiao-shenme-mingzi
+    targets: [s.qingwen-ni-jiao-shenme-mingzi]
+    context: [e.qingwen, w.ni, w.jiao, w.shenme, w.mingzi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Disculpa, ¿cómo te llamas?»'}
+    answer: {meaning: 'Disculpa, ¿cómo te llamas?'}
+    comments: []
+  - id: x.listen.wo-xihuan-zhongwen
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wo-xihuan-zhongwen
+    targets: [s.wo-xihuan-zhongwen]
+    context: [w.wo, w.xihuan, w.zhongwen]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me gusta el chino.}
+    comments: []
+  - id: x.produce.wo-xihuan-zhongwen
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.wo-xihuan-zhongwen
+    targets: [s.wo-xihuan-zhongwen]
+    context: [w.wo, w.xihuan, w.zhongwen]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me gusta el chino.»'}
+    answer: {meaning: Me gusta el chino.}
+    comments: []
+  - id: x.listen.mingtian-ni-lai-ma
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.mingtian-ni-lai-ma
+    targets: [s.mingtian-ni-lai-ma]
+    context: [w.mingtian, w.ni, w.lai, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Vienes mañana?'}
+    comments: []
+  - id: x.listen.dajia-dou-lai-le
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.dajia-dou-lai-le
+    targets: [s.dajia-dou-lai-le]
+    context: [w.dajia, w.dou, w.lai, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ya hemos llegado todos.}
+    comments: []
+  - id: x.nuance.gaoxing-xihuan
+    added: 2026-09-29
+    type: nuance
+    targets: [w.gaoxing, w.xihuan]
+    skills: [comprehension, discrimination]
+    prompt: {text: '高兴 o 喜欢: ¿cuál es «estar contento» y cuál «gustar»?'}
+    answer: {meaning: '高兴 gāoxìng: estar contento (我很高兴). 喜欢 xǐhuan: gustar algo o alguien (我喜欢咖啡).'}
+    lang: es
+    comments: []

@@ -33,7 +33,8 @@ entries:
     pinyin: érzi
     meaning: {es: hijo, en: son}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
-    comments: []
+    comments:
+      - {kind: note, private: false, date: '2026-09-27', text: 'En 儿子 no hace falta marcar el género: es la forma por defecto; en 女儿 sí, con 女.', original: el hjio no hace falta poner su genero proque es bovio es basico es lo que dan por default}
   - id: w.nver
     use: hear
     role: content
@@ -42,7 +43,8 @@ entries:
     pinyin: nǚ'ér
     meaning: {es: hija, en: daughter}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '女儿 = 女 «mujer» + 儿 «niño»: hija. El 儿 ér es el mismo que abre 儿子.'}
   - id: w.haizi
     use: say
     role: content
@@ -59,6 +61,19 @@ entries:
     hanzi: 小孩
     pinyin: xiǎohái
     meaning: {es: 'niño pequeño, crío', en: kid}
+    level: 1
+    level_reason: 'sinónimo coloquial de 孩子 [HSK 1]; 小 y 孩 son HSK 1'
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 孩子 es el término general; 小孩 añade 小 «pequeño».}
+  - id: g.hao-nver-erzi
+    kind: group
+    basis: visual
+    title: '好, 女儿 y 儿子'
+    explanation: 'Las mismas piezas en distinto orden: 女 «mujer», 子 «niño» y 儿 «niño pequeño».'
+    members:
+      - {ref: w.hao, cue: '女 + 子 en un solo carácter: bueno'}
+      - {ref: w.nver, cue: '女 + 儿, dos caracteres: hija'}
+      - {ref: w.erzi, cue: '儿 + 子, dos caracteres: hijo'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []

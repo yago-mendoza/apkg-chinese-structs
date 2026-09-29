@@ -198,6 +198,9 @@ Estructura: `他很 + adjetivo`. 很 sirve de enlace: sin 很 suena a comparaci�
 - 2026-09-27 · Subdecks por tema (11) y datos divididos por tema; lo que no entró pasa al review del inbox para que opines.
 - 2026-09-27 · Carpetas renumeradas: los apuntes archivados pasan de `2-raw/` a `1-inbox/history/`; `3-digests/`, `4-data/`, `5-notebook/` y `6-output/` pasan a `2-digests/`, `3-data/`, `4-notebook/` y `5-output/`.
 - 2026-09-27 · Las 68 tarjetas de escucha de palabras pasan a dictado (escribir lo oído, en pinyin o hanzi) con ID nuevo (`x.dictation.*`); las antiguas, que solo se autoevaluaban, se borran del mazo. `scaffold` ya no reutiliza IDs del último lote.
+- 2026-09-29 · Tus respuestas al review, en el lote 002: estas clases fueron el 21 y el 23 de septiembre. ⚠️ 您们 corregido: suena forzado; para un grupo con respeto, 大家好 o 各位好. 来自 sube de 🟡 a ✅. Los números del 1 al 10 entran.
+- 2026-09-29 · Niveles del HSK: cada entrada tiene nivel (14 entradas de este lote, fuera de la lista del HSK, recibieron nivel estimado con su motivo); el mazo en Anki pasa a subdecks por nivel y tema.
+- 2026-09-29 · Componentes 口, 女 y 月: la tarjeta decía «no es una palabra», y lo son (HSK 1). Ahora dice que ahí actúan como componente y que sueltos también son palabra.
 
 ## Seguimiento
 

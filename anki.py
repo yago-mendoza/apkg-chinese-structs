@@ -280,6 +280,29 @@ def standalone(e):
     return {True: "yes", False: "no"}.get(v, v) if v is not None else None
 
 
+def char_status(e):
+    """«palabra», «ligada» o «componente»: cómo se usa un carácter (None si no es un carácter suelto)."""
+    if e.get("kind") == "component":
+        return "componente"
+    if e.get("kind") in ("character", "word") and len(e.get("hanzi") or "") == 1:
+        return "ligada" if standalone(e) in ("no", "rare") else "palabra"
+    return None
+
+
+STATUS_TEXT = {"palabra": "Palabra: se usa sola.", "ligada": "Ligada: solo dentro de palabras.",
+               "componente": "Componente: solo como parte de otros caracteres; no es una palabra."}
+
+
+def status_text(e):
+    """El «Qué es» de un carácter. Un componente cuyo hanzi también es palabra suelta (口, 女, 月) lo dice, con `as_word`."""
+    st = char_status(e)
+    w = e.get("as_word")
+    if st == "componente" and w:
+        return (f"Componente aquí: como parte de otros caracteres. Suelto también es palabra: "
+                f"{e.get('hanzi')} {w.get('pinyin') or e.get('pinyin')} «{w.get('es')}».")
+    return STATUS_TEXT.get(st)
+
+
 def free_words_containing(e, entries):
     """Palabras registradas que contienen el hanzi de una entrada ligada."""
     h = e.get("hanzi")
@@ -431,7 +454,8 @@ def required_cards(item, groups_of):
         if mods & {"hear", "say"} and tone_traps(item.get("hanzi"), item.get("pinyin")):
             req.add("tones")
     elif kind in ("character", "component"):
-        if mods:
+        in_contrast = any(g.get("basis") in ("visual", "homophone") for g in groups_of.get(item.get("id"), []))
+        if mods and not in_contrast:
             req.add("recognize")
     elif kind == "pronunciation":
         if "hear" in mods:
@@ -552,6 +576,21 @@ LOG_HEADER = ("<!-- LOG del lote: qué entró, qué no y por qué, correcciones 
               "reescribe; los cambios posteriores se añaden al final. Para opinar: el review del inbox. -->")
 
 
+LEVEL_PASS = 0.8     # un nivel se da por superado con el 80 % de su vocabulario (más el juicio sobre las estructuras)
+
+
+def level_coverage(entries):
+    """[(nivel, palabras de la lista que el mazo entrena para oír o decir, total del nivel)], nivel a nivel."""
+    levels = hsk_levels()
+    trained = {e.get("hanzi") for e in entries if e.get("kind") in ("word", "expression")
+               and use_modalities(e) & {"hear", "say"}}
+    totals, have = {}, {}
+    for hanzi, lv in levels.items():
+        totals[lv] = totals.get(lv, 0) + 1
+        have[lv] = have.get(lv, 0) + (hanzi in trained)
+    return [(lv, have[lv], totals[lv]) for lv in sorted(totals)]
+
+
 def cmd_gaps():
     """Reparto del mazo: cada tarjeta cuenta una vez, por lo que practica."""
     from collections import Counter
@@ -561,6 +600,10 @@ def cmd_gaps():
     print(f"{len(exercises)} tarjetas (registrado no equivale a aprendido).\n")
     for skill, n in by_skill.most_common():
         print(f"  {skill:12} {n:4}  {100 * n / len(exercises):5.1f} %")
+    print()
+    print("Cobertura del HSK 3.0 (palabras de la lista que el mazo entrena para oír o decir):")
+    for lv, have, total in level_coverage(entries):
+        print(f"  {level_label(lv):8} {have:4} de {total:4}  {100 * have / total:5.1f} %")
     uses = Counter(use_label(e) for e in entries if e.get("kind") in ("word", "expression"))
     print("\nPalabras y expresiones por use: " + ", ".join(f"{u} {n}" for u, n in uses.most_common()))
     missing = sum(len(req - have) for _, req, have in coverage(entries, sentences, exercises))
@@ -605,9 +648,23 @@ def to_numeric(hanzi, reading):
     return " ".join(out)
 
 
+def cloze_sentence(iid, candidates, sby, eby, exercises):
+    """La frase de una tarjeta de hueco, por regla fija: ninguna otra tarjeta de hueco la usa ya; su nivel no pasa del
+    de la palabra; primero las frases para decir (say) y, entre ellas, la más corta; a igualdad, la de ID menor."""
+    levels = hsk_levels()
+    used = {x.get("sentence") for x in exercises if x.get("type") == "cloze"}
+    mine = level_of(iid, eby, sby, levels) or 99
+
+    def rank(sid):
+        lv = level_of(sid, eby, sby, levels) or 0
+        return (sid in used, lv > mine, sby[sid].get("use") != "say", len(sentence_text(sby[sid])), sid)
+    return min(candidates, key=rank)
+
+
 def scaffold_exercises(entries, sentences, exercises, today):
     """([(tema, ejercicio)], [(id, exigencia, motivo)]): tarjetas estándar para lo que falta, y lo que pide criterio."""
     sby = {x["id"]: x for x in sentences}
+    eby_all = {e["id"]: e for e in entries}
     ids = {x["id"] for x in exercises}
     base = baseline_exercises()
     if base:
@@ -679,7 +736,7 @@ def scaffold_exercises(entries, sentences, exercises, today):
                 if not containing.get(iid):
                     manual.append((iid, need, "no hay ninguna frase que la contenga: pedirla en el review"))
                     continue
-                sid = containing[iid][0]
+                sid = cloze_sentence(iid, containing[iid], sby, eby_all, exercises + [x for _, x in made])
                 sent = sby[sid]
                 made.append(make(f"x.cloze.{short}", theme, type="cloze", sentence=sid, gap=iid, targets=[iid],
                                  context=[r for r in dict.fromkeys(g.get("ref") for g in sent["segments"]) if r and r != iid],
@@ -904,6 +961,114 @@ def comment_style(c):
     return None
 
 
+HAN = re.compile(r"[\u3400-\u9fff]+")
+PRIVATE_GUARD = ROOT / "private" / "forbidden.txt"   # solo en local: nombres de fuentes que no pueden aparecer
+
+
+def private_terms():
+    if not PRIVATE_GUARD.exists():
+        return []
+    return [t.strip() for t in PRIVATE_GUARD.read_text(encoding="utf-8").splitlines() if t.strip() and not t.startswith("#")]
+
+
+def unmarked_levels(text, own_level, known_hanzi, levels):
+    """Palabras de la lista del HSK (de dos caracteres o más) que una nota menciona sin estar en el mazo, de nivel
+    superior al de su entrada y sin «[HSK n]» antes del final de la oración. Se corta el texto dando prioridad a las
+    palabras del mazo (两个人 es 两 + 个 + 人, no 个人); basta con marcar la primera mención, o una marca al final de
+    una lista. Los hanzi sueltos de una nota son piezas de un carácter: su estatus lo cubre otra regla."""
+    out, marked = [], set()
+    for m in HAN.finditer(text or ""):
+        run, i = m.group(), 0
+        while i < len(run):
+            size = next((k for k in range(min(len(run) - i, 4), 0, -1) if run[i:i + k] in known_hanzi), 0)
+            if size:
+                i += size
+                continue
+            size = next((k for k in range(min(len(run) - i, 4), 1, -1) if run[i:i + k] in levels), 0)
+            if not size:
+                i += 1
+                continue
+            w, lv = run[i:i + size], levels[run[i:i + size]]
+            rest = re.split(r"[。;]|\.\s", text[m.start() + i + size:], maxsplit=1)[0]
+            if w not in marked and lv > (own_level or 1):
+                if "[HSK" in rest:
+                    marked.add(w)
+                else:
+                    out.append(f"{w} [HSK {lv}]")
+                    marked.add(w)
+            i += size
+    return out
+
+
+def quality_rules(entries, sentences, exercises, eby, sby, errors, warnings):
+    """Reglas de calidad que no dependen del criterio de nadie (docs/design.md y docs/goal.md)."""
+    levels = hsk_levels()
+    known_hanzi = {e.get("hanzi") for e in entries if e.get("hanzi")}
+    for e in entries:
+        if e.get("kind") == "group":
+            continue
+        official = levels.get(e.get("hanzi")) if e.get("kind") != "pronunciation" else 1
+        # Niveles: oficial si está en la lista; si no, estimado con su motivo.
+        if not official and not e.get("level"):
+            errors.append(f"{e['id']}: sin nivel. No está en la lista del HSK: pon level (1–7) y level_reason (Niveles)")
+        if e.get("level") and not e.get("level_reason"):
+            errors.append(f"{e['id']}: level sin level_reason")
+        if official and e.get("level") and e.get("level") != official and e.get("kind") != "pronunciation":
+            warnings.append(f"{e['id']}: level {e['level']} distinto del oficial HSK {official}; manda el oficial")
+        lv = official or e.get("level")
+        mods = use_modalities(e)
+        if e.get("kind") in ("word", "expression") and not e.get("use_reason"):
+            if lv == 1 and mods == {"read"}:
+                warnings.append(f"{e['id']}: es HSK 1 y solo de lectura; ¿hear o say? (o use_reason)")
+            if lv == 7 and "say" in mods:
+                warnings.append(f"{e['id']}: es HSK 7 y para decir; necesita use_reason")
+        # Estatus de cada carácter: palabra, ligada o componente.
+        if e.get("kind") == "character" and e.get("standalone") is None:
+            errors.append(f"{e['id']}: carácter sin standalone (yes = palabra; no o rare = ligada)")
+        if e.get("kind") == "component" and mods & {"hear", "say"}:
+            errors.append(f"{e['id']}: un componente no se oye ni se dice: use context o read")
+        if e.get("kind") == "component" and not e.get("as_word") and (
+                levels.get(e.get("hanzi")) or e.get("hanzi") in {x.get("hanzi") for x in entries if x.get("kind") == "word"}):
+            errors.append(f"{e['id']}: {e.get('hanzi')} también es palabra suelta: añade as_word {{es: …}} para no decir que no lo es")
+        # Notas: las palabras de otros niveles que no están en el mazo llevan su marca.
+        for c in e.get("comments", []):
+            miss = unmarked_levels(c.get("text"), lv, known_hanzi, levels)
+            if miss:
+                warnings.append(f"{e['id']}: la nota menciona {', '.join(miss)} sin marcarlo; añade la marca tras la palabra")
+    # Frases completas: todo trozo en chino enlaza a una entrada.
+    for x in sentences:
+        for g in x.get("segments", []):
+            if HAN.search(g.get("text", "")) and not g.get("ref"):
+                errors.append(f"{x['id']}: «{g['text']}» no enlaza a ninguna entrada (añádela o quítala de la frase)")
+    # El pinyin por delante: lo que se oye o se produce de una palabra se escribe.
+    for ex in exercises:
+        first = eby.get((ex.get("targets") or [None])[0]) or {}
+        if first.get("kind") in ("word", "expression") and ex.get("type") in ("listen", "produce") \
+                and not (ex.get("answer") or {}).get("typed"):
+            errors.append(f"{ex['id']}: {ex['type']} de una palabra sin respuesta escrita (typed): se escribe lo oído o lo producido")
+    # Huecos: una frase por tarjeta de hueco, de nivel no superior al de la palabra.
+    seen = {}
+    for ex in exercises:
+        if ex.get("type") != "cloze" or not ex.get("sentence"):
+            continue
+        if ex["sentence"] in seen:
+            warnings.append(f"{ex['id']}: usa la misma frase que {seen[ex['sentence']]}; elige otra (cloze_sentence)")
+        seen.setdefault(ex["sentence"], ex["id"])
+        gap = level_of(ex.get("gap"), eby, sby, levels) or 0
+        if (level_of(ex["sentence"], eby, sby, levels) or 0) > gap > 0:
+            warnings.append(f"{ex['id']}: la frase es de un nivel superior al de {ex.get('gap')}")
+    # Fuentes privadas: nada versionado las nombra (lista local en private/forbidden.txt).
+    terms = private_terms()
+    if terms:
+        paths = list(DATA.rglob("*.yaml")) + list(HISTORY.rglob("*")) + list(DIGESTS.glob("*.md"))
+        for path in paths:
+            if path.is_file() and path.suffix in (".yaml", ".md", ".txt"):
+                text = path.read_text(encoding="utf-8", errors="ignore")
+                for t in terms:
+                    if t.lower() in text.lower():
+                        errors.append(f"{path.relative_to(ROOT).as_posix()}: nombra una fuente privada («{t}»)")
+
+
 def validate(entries, sentences, exercises, require_audio=True):
     errors, warnings = [], []
     ids = [x["id"] for x in entries + sentences + exercises if "id" in x]
@@ -936,8 +1101,8 @@ def validate(entries, sentences, exercises, require_audio=True):
             warnings.append(f"{e['id']}: no se usa solo y no hay ninguna palabra registrada que lo contenga")
         if e.get("kind") == "group":
             members = e.get("members") or []
-            if e.get("basis") not in ("visual", "homophone", "pattern", "set"):
-                errors.append(f"{e['id']}: basis debe ser visual, homophone, pattern o set")
+            if e.get("basis") not in ("visual", "homophone", "pattern", "set", "phonetic"):
+                errors.append(f"{e['id']}: basis debe ser visual, homophone, pattern, set o phonetic")
             if len(members) < 2:
                 errors.append(f"{e['id']}: un grupo necesita al menos 2 miembros")
             if e.get("basis") in ("visual", "homophone") and len(members) > 4:
@@ -1057,6 +1222,7 @@ def validate(entries, sentences, exercises, require_audio=True):
                             f"{theme_of[first]}; moverlo para que vaya al subdeck correcto")
     for f in stray_data_files():
         errors.append(f"{f}: el nombre no es ningún tema de 3-data/themes.yaml; su contenido no se carga")
+    quality_rules(entries, sentences, exercises, eby, sby, errors, warnings)
     # Lo que se muestra de un comentario va redactado; el apunte literal vive en `original`.
     for it in entries + sentences + exercises:
         for c in it.get("comments", []):
@@ -1292,7 +1458,7 @@ def sound(text, manifest, media_files):
     return f"[sound:{item['file']}]"
 
 
-def examples_for(ex, sby):
+def examples_for(ex, sby, eby=None):
     """Frases de ejemplo para el reverso de una tarjeta de palabra: primero las de `reveal` (elegidas a mano) y,
     hasta EXAMPLES_MAX, las frases que contienen el objetivo (por ID de entrada, así que respetan el sentido).
     Frases modelo (say) primero; entre varias, cada tarjeta toma otras distintas según su ID, para que las
@@ -1306,6 +1472,12 @@ def examples_for(ex, sby):
     pool = [s["id"] for s in sby.values()
             if s["id"] != own and s["id"] not in chosen
             and any(seg.get("ref") in targets for seg in s.get("segments", []))]
+    # Nivel: una frase de ejemplo nunca trae vocabulario de un nivel superior al de la tarjeta.
+    if eby is not None:
+        levels = hsk_levels()
+        card = max([lv for lv in (level_of(t, eby, sby, levels) for t in targets) if lv] or [0])
+        if card:
+            pool = [sid for sid in pool if (level_of(sid, eby, sby, levels) or 0) <= card]
     say = [sid for sid in pool if sby[sid].get("use") == "say"]
     pool = say if len(say) >= EXAMPLES_MAX - len(chosen) else say + [sid for sid in pool if sid not in say]
     if pool:
@@ -1368,18 +1540,26 @@ def card_fields(ex, eby, sby, manifest, media_files):
         shown_groups += [g for g in member_of if g not in shown_groups]
     targets = set(ex.get("targets", []))
     for g in shown_groups:
+        def status_tag(e):
+            st = char_status(e)
+            return f" <i>({st})</i>" if st in ("ligada", "componente") else ""
         rows = "".join(
-            f"<div{' class=\"is-target\"' if m['ref'] in targets else ''}>{esc(eby[m['ref']].get('hanzi'))} "
-            f"{esc(eby[m['ref']].get('pinyin'))} — {esc(eby[m['ref']].get('meaning', {}).get(lang))} · "
-            f"{esc(m.get('cue'))}</div>"
+            f"<div{' class=\"is-target\"' if m['ref'] in targets else ''}>{esc(eby[m['ref']].get('hanzi'))}"
+            f"{status_tag(eby[m['ref']])} {esc(eby[m['ref']].get('pinyin'))} — "
+            f"{esc(eby[m['ref']].get('meaning', {}).get(lang))} · {esc(m.get('cue'))}</div>"
             for m in g["members"])
         notes.append(f"<h4>{esc(g.get('title'))}</h4>{esc(g.get('explanation'))}{rows}")
     for tid in ex.get("targets", []):
         t = eby.get(tid, {})
-        if standalone(t) in ("no", "rare"):
+        st = char_status(t)
+        if st == "componente":
+            notes.append(f"<h4>Qué es</h4>{esc(status_text(t))}")
+        elif standalone(t) in ("no", "rare"):
             words = "、".join(w["hanzi"] for w in free_words_containing(t, list(eby.values())))
             label = "Casi no se usa solo" if standalone(t) == "rare" else "No se usa solo"
-            notes.append(f"<h4>{label}</h4>Aparece en: {esc(words)}")
+            notes.append(f"<h4>{label}</h4>Ligada: aparece en {esc(words)}.")
+        elif st == "palabra" and t.get("kind") == "character":
+            notes.append(f"<h4>Qué es</h4>{STATUS_TEXT[st]}")
     for rid in ex.get("refs", []):
         p = eby.get(rid, {})
         if p.get("kind") == "pronunciation":
@@ -1394,7 +1574,7 @@ def card_fields(ex, eby, sby, manifest, media_files):
         traps = phonetic_notes(spoken_text, spoken_pinyin) if spoken_text and spoken_pinyin else []
         if traps:
             notes.append("<h4>Pronunciación</h4>" + "".join(f"<div>{esc(t)}</div>" for t in traps))
-    examples = examples_for(ex, sby)
+    examples = examples_for(ex, sby, eby)
     if examples:
         notes.append(f"<h4>{'Ejemplo' if len(examples) == 1 else 'Ejemplos'}</h4>" + "".join(
             f"<div class=\"example\">{render_sentence(sby[sid])}<div>{esc(sby[sid]['translation'].get(lang))}</div>"
@@ -1403,7 +1583,7 @@ def card_fields(ex, eby, sby, manifest, media_files):
     comments = list(ex.get("comments", []))
     for tid in ex.get("targets", []):
         comments += eby.get(tid, {}).get("comments", [])
-    labels = {"mnemonic": "Mnemotecnia", "teacher": "Profesora", "linguistic": "Nota", "note": "Apunte",
+    labels = {"mnemonic": "Mnemotecnia · imagen para recordar, no su origen", "teacher": "Profesora", "linguistic": "Nota", "note": "Apunte",
               "sound": "Cómo suena"}
     for c in comments:
         if c.get("private", True) is False:
@@ -1434,18 +1614,38 @@ def build_note(ex, eby, sby, manifest, media_files, models):
               f["notes"]]
     return genanki.Note(model=model, fields=fields,
                         guid=genanki.guid_for(GUID_NAMESPACE, ex["id"]),
-                        tags=[f"tema::{ex.get('theme')}", f"mes::{str(ex.get('added'))[:7]}"]
+                        tags=[f"tema::{ex.get('theme')}", f"mes::{str(ex.get('added'))[:7]}",
+                              f"nivel::{exercise_level(ex, eby, sby)}"]
+                        + (["nivel::estimado"] if any(not hsk_levels().get((eby.get(t) or {}).get("hanzi"))
+                                                     and (eby.get(t) or {}).get("level") for t in ex.get("targets", [])) else [])
                         + [f"use::{use_label(eby[t]) if t in eby else use_label(sby[t])}".replace("/", "+")
                            for t in ex.get("targets", [])[:1] if t in eby or t in sby]
                         + [f"type::{ex['type']}"] + [f"skill::{s}" for s in ex.get("skills", [])])
 
 
-def theme_deck_names():
-    return {t["id"]: f"{DECK_NAME}::{n:02d} {t['title']}" for n, t in enumerate(load_themes(), 1)}
+LEVELS = range(1, 8)
 
 
-def theme_deck_id(theme_id):
-    return DECK_ID_BASE + int(hashlib.sha1(theme_id.encode("utf-8")).hexdigest()[:8], 16) % 1_000_000_000
+def level_label(level):
+    return "HSK 7-9" if level == 7 else f"HSK {level}"
+
+
+def deck_name(level, theme_id, themes=None):
+    """Subdeck de una tarjeta: el nivel primero y el tema dentro (🐉 Chino práctico::HSK 1::02 Saludos y cortesía)."""
+    themes = themes or load_themes()
+    n, t = next((n, t) for n, t in enumerate(themes, 1) if t["id"] == theme_id)
+    return f"{DECK_NAME}::{level_label(level)}::{n:02d} {t['title']}"
+
+
+def deck_id(level, theme_id):
+    return DECK_ID_BASE + int(hashlib.sha1(f"{level}:{theme_id}".encode("utf-8")).hexdigest()[:8], 16) % 1_000_000_000
+
+
+def exercise_level(ex, eby, sby, levels=None):
+    """Nivel de una tarjeta: el de su objetivo más difícil (1 si ninguno lo tiene)."""
+    levels = levels or hsk_levels()
+    found = [lv for lv in (level_of(t, eby, sby, levels) for t in ex.get("targets", [])) if lv]
+    return max(found) if found else 1
 
 
 def cmd_build(allow_missing_audio):
@@ -1468,12 +1668,12 @@ def cmd_build(allow_missing_audio):
     manifest, media_files = load_manifest(), set()
     eby = {e["id"]: e for e in entries}
     sby = {s["id"]: s for s in sentences}
-    names = theme_deck_names()
+    themes, levels = load_themes(), hsk_levels()
     for ex in exercises:
-        th = ex["theme"]
-        if th not in decks:
-            decks[th] = genanki.Deck(theme_deck_id(th), names[th])
-        decks[th].add_note(build_note(ex, eby, sby, manifest, media_files, models))
+        key = (exercise_level(ex, eby, sby, levels), ex["theme"])
+        if key not in decks:
+            decks[key] = genanki.Deck(deck_id(*key), deck_name(*key, themes))
+        decks[key].add_note(build_note(ex, eby, sby, manifest, media_files, models))
     OUTPUT.mkdir(exist_ok=True)
     pkg = genanki.Package(list(decks.values()))
     pkg.media_files = sorted(media_files)
@@ -1496,9 +1696,14 @@ EXPORT_SCHEMA = 2
 HSK_LIST = ROOT / "sources" / "hsk" / "hsk3.tsv"
 
 
+_HSK_CACHE = {}
+
+
 def hsk_levels():
-    """hanzi → nivel oficial del HSK 3.0 (1–7; el 7 agrupa 7–9), desde sources/hsk/."""
-    out = {}
+    """hanzi → nivel oficial del HSK 3.0 (1–7; el 7 agrupa 7–9), desde sources/hsk/. Se lee una vez."""
+    if _HSK_CACHE:
+        return _HSK_CACHE
+    out = _HSK_CACHE
     for line in HSK_LIST.read_text(encoding="utf-8").splitlines()[1:]:
         level, _, hanzi, _ = line.split("\t")
         out.setdefault(hanzi, int(level))
@@ -1515,7 +1720,7 @@ def level_of(item_id, eby, sby, levels):
     e = eby.get(item_id) or {}
     if e.get("kind") == "pronunciation":
         return 1
-    return levels.get(e.get("hanzi"))
+    return levels.get(e.get("hanzi")) or e.get("level")
 
 
 def deck_history(exercises, card_level, cache=None):
@@ -1789,15 +1994,16 @@ STAGE = {"read": 0, "contrast": 1, "components": 1, "nuance": 1, "listen": 2, "t
 
 
 def new_card_order(entries, sentences, exercises):
-    """Posición de cada ejercicio entre las nuevas: por tema, y cada paso (lectura, escucha, tonos,
+    """Posición de cada ejercicio entre las nuevas: por nivel del HSK primero (lo básico antes); dentro, por tema, y cada paso (lectura, escucha, tonos,
     producción) dos temas por detrás del anterior, para que las tarjetas de una misma entrada no
     salgan el mismo día (Anki solo separa hermanas de una misma nota)."""
     theme_idx = {t["id"]: i for i, t in enumerate(load_themes())}
     items = {it["id"]: (theme_idx.get(it.get("theme"), 99), n) for n, it in enumerate(entries + sentences)}
+    eby, sby, levels = {e["id"]: e for e in entries}, {x["id"]: x for x in sentences}, hsk_levels()
     def key(ex):
         th, n = items.get((ex.get("targets") or [None])[0], (99, 0))
         stage = STAGE.get(ex.get("type"), 1)
-        return (th + 2 * stage, th, n, stage, ex["id"])
+        return (exercise_level(ex, eby, sby, levels), th + 2 * stage, th, n, stage, ex["id"])
     return {ex["id"]: pos for pos, ex in enumerate(sorted(exercises, key=key))}
 
 
@@ -1862,8 +2068,10 @@ def reset_progress():
 def place_by_theme(exercises):
     """Mueve cada tarjeta al subdeck de su tema (conserva el progreso), también las de este mazo que hayan acabado
     fuera de él, y borra los subdecks propios que queden vacíos y no sean de ningún tema. Nunca toca otras notas."""
-    names = theme_deck_names()
-    want = {ex["id"]: names[ex["theme"]] for ex in exercises}
+    entries, sentences, _ = load()
+    eby, sby, themes, levels = {e["id"]: e for e in entries}, {x["id"]: x for x in sentences}, load_themes(), hsk_levels()
+    want = {ex["id"]: deck_name(exercise_level(ex, eby, sby, levels), ex["theme"], themes) for ex in exercises}
+    names = {v: v for v in want.values()}
     cards = anki_request("findCards", query=f'"deck:{DECK_NAME}"')
     # Our cards that ended up outside the deck (e.g. in the default deck) come back too; filtered decks are left alone.
     cards += anki_request("findCards", query=f'(note:"{MODEL_TYPED_NAME}" OR note:"{MODEL_SELF_NAME}") '

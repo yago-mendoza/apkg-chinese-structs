@@ -112,6 +112,65 @@ class Comments(unittest.TestCase):
         self.assertEqual(dirty, [])
 
 
+class Quality(unittest.TestCase):
+    """Reglas de calidad deterministas (anki.quality_rules y compañía)."""
+
+    def run_rules(self, entries=(), sentences=(), exercises=()):
+        errors, warnings = [], []
+        eby = {e["id"]: e for e in entries}
+        sby = {s["id"]: s for s in sentences}
+        anki.quality_rules(list(entries), list(sentences), list(exercises), eby, sby, errors, warnings)
+        return errors, warnings
+
+    def test_cross_level_words_in_notes_need_a_mark(self):
+        levels = anki.hsk_levels()
+        self.assertEqual(anki.unmarked_levels("Hablando basta 没错.", 1, set(), levels), ["没错 [HSK 4]"])
+        self.assertEqual(anki.unmarked_levels("Hablando, 没错 [HSK 4].", 1, set(), levels), [])
+        self.assertEqual(anki.unmarked_levels("两个人 «dos personas».", 1, {"两", "个", "人"}, levels), [])
+        self.assertEqual(anki.unmarked_levels("En 迎 hay una sonrisa.", 1, set(), levels), [])   # un hanzi suelto es una pieza
+
+    def test_entries_need_a_level(self):
+        e = word("w.test.x", "伍", "wǔ")          # no está en la lista del HSK
+        errors, _ = self.run_rules([e])
+        self.assertTrue(any("sin nivel" in x for x in errors))
+        errors, _ = self.run_rules([{**e, "level": 2, "level_reason": "prueba"}])
+        self.assertFalse(any("sin nivel" in x for x in errors))
+
+    def test_character_status_and_components(self):
+        errors, _ = self.run_rules([{"id": "c.test.a", "kind": "character", "hanzi": "师", "pinyin": "shī", "use": "read"}])
+        self.assertTrue(any("standalone" in x for x in errors))
+        errors, _ = self.run_rules([{"id": "c.test.b", "kind": "component", "hanzi": "扌", "pinyin": "shǒu", "use": "say",
+                                     "level": 1, "level_reason": "prueba"}])
+        self.assertTrue(any("componente no se oye" in x for x in errors))
+        mouth = {"id": "c.test.c", "kind": "component", "hanzi": "口", "pinyin": "kǒu", "use": "read"}
+        errors, _ = self.run_rules([mouth])                 # 口 también es palabra (HSK 1): no puede decir que no lo es
+        self.assertTrue(any("también es palabra" in x for x in errors))
+        errors, _ = self.run_rules([{**mouth, "as_word": {"es": "boca"}}])
+        self.assertFalse(any("también es palabra" in x for x in errors))
+        self.assertIn("Suelto también es palabra: 口 kǒu «boca»", anki.status_text({**mouth, "as_word": {"es": "boca"}}))
+
+    def test_word_listening_and_production_are_typed(self):
+        e = word("w.test.y", "你", "nǐ")
+        x = {"id": "x.test.listen", "type": "listen", "targets": ["w.test.y"], "answer": {"hanzi": "你"}}
+        errors, _ = self.run_rules([e], exercises=[x])
+        self.assertTrue(any("sin respuesta escrita" in m for m in errors))
+
+    def test_sentences_link_every_chinese_piece(self):
+        s = {"id": "s.test", "segments": [{"text": "大卫"}, {"text": "。"}]}
+        errors, _ = self.run_rules(sentences=[s])
+        self.assertTrue(any("no enlaza" in m for m in errors))
+
+    def test_cloze_sentence_is_chosen_by_rule(self):
+        entries, sentences, exercises = anki.load()
+        eby, sby = {e["id"]: e for e in entries}, {s["id"]: s for s in sentences}
+        used = {x["sentence"] for x in exercises if x.get("type") == "cloze"}
+        cands = [s["id"] for s in sentences if any(g.get("ref") == "w.le" for g in s["segments"])]
+        pick = anki.cloze_sentence("w.le", cands, sby, eby, exercises)
+        free = [c for c in cands if c not in used]
+        if free:
+            self.assertNotIn(pick, used)
+
+
 class Repository(unittest.TestCase):
     def test_current_data_is_valid(self):
         errors, _ = anki.validate(*anki.load(), require_audio=True)
@@ -140,6 +199,18 @@ class Repository(unittest.TestCase):
             self.assertNotIn("[sound:", html)
             for path in re.findall(r'data-audio="([^"]+)"', html):
                 self.assertTrue((anki.ROOT / path).exists(), path)
+
+    def test_examples_never_come_from_a_higher_level(self):
+        entries, sentences, exercises = anki.load()
+        eby, sby, levels = {e["id"]: e for e in entries}, {s["id"]: s for s in sentences}, anki.hsk_levels()
+        for ex in exercises:
+            card = max([lv for lv in (anki.level_of(t, eby, sby, levels) for t in ex.get("targets", [])) if lv] or [0])
+            if not card:
+                continue
+            for sid in anki.examples_for(ex, sby, eby):
+                if sid in ex.get("reveal", []):
+                    continue
+                self.assertLessEqual(anki.level_of(sid, eby, sby, levels) or 0, card, (ex["id"], sid))
 
     def test_history_cache_gives_the_same_days(self):
         entries, sentences, exercises = anki.load()

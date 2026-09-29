@@ -209,3 +209,33 @@ exercises:
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: xiao3 hai2, hanzi: 小孩, pinyin: xiǎohái, meaning: 'niño pequeño, crío'}
     comments: []
+  - id: x.contrast.erzi
+    added: 2026-09-29
+    lang: es
+    type: contrast
+    group: g.hao-nver-erzi
+    targets: [w.erzi]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es érzi, «hijo»?'}
+    answer: {hanzi: 儿子, pinyin: érzi, meaning: hijo}
+    comments: []
+  - id: x.contrast.nver
+    added: 2026-09-29
+    lang: es
+    type: contrast
+    group: g.hao-nver-erzi
+    targets: [w.nver]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es nǚ''ér, «hija»?'}
+    answer: {hanzi: 女儿, pinyin: nǚ'ér, meaning: hija}
+    comments: []
+  - id: x.nuance.pictograms
+    added: 2026-09-29
+    type: nuance
+    targets: [w.mama]
+    skills: [comprehension, discrimination]
+    prompt: {text: '日, 月, 山, 马: ¿cómo se llaman los caracteres que dibujan lo que significan?'}
+    answer: {meaning: 'Pictogramas. Son pocos: la mayoría combina una pieza de significado y otra de sonido, como 妈 = 女 «mujer»
+        + 马 mǎ, que da el sonido.'}
+    lang: es
+    comments: []

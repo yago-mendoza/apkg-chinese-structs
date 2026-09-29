@@ -1,0 +1,41 @@
+# Diccionario · El tiempo que hace. Esquema: 3-data/README.md
+
+entries:
+  - id: w.tianqi
+    use: say
+    role: content
+    kind: word
+    hanzi: 天气
+    pinyin: tiānqì
+    meaning: {es: el tiempo (meteorológico), en: weather}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    comments: []
+  - id: w.re
+    use: say
+    role: content
+    kind: word
+    hanzi: 热
+    pinyin: rè
+    meaning: {es: calor; caluroso, en: hot}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    comments:
+      - {kind: sound, private: false, date: '2026-09-29', text: Suena un poco a «rua»., original: ri suena (rua) un poco solo un poco sabes}
+  - id: w.leng
+    use: say
+    role: content
+    kind: word
+    hanzi: 冷
+    pinyin: lěng
+    meaning: {es: frío, en: cold}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    comments: []
+  - id: w.xiayu
+    use: say
+    role: content
+    kind: word
+    hanzi: 下雨
+    pinyin: xiàyǔ
+    meaning: {es: llover, en: to rain}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 下 «caer» + 雨 yǔ «lluvia». 雨 también está en 需 de 需要.}

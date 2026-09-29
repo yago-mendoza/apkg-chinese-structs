@@ -89,9 +89,8 @@ def ex(ex_id, theme):
 
 class AnkiSafety(unittest.TestCase):
     def setUp(self):
-        self.names = anki.theme_deck_names()
-        self.saludos = self.names["saludos"]
-        self.familia = self.names["familia"]
+        self.saludos = anki.deck_name(1, "saludos")
+        self.familia = anki.deck_name(1, "familia")
 
     def run_with(self, fake, fn, *args):
         with mock.patch.object(anki, "anki_request", fake), redirect_stdout(io.StringIO()) as out:

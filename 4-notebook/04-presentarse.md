@@ -4,11 +4,11 @@
 
 ## Vocabulario
 
-- ✅🃏 中国 Zhōngguó [ʈʂʊŋ˥ kwɔ˧˥] · China
-- ✅🃏 西班牙 Xībānyá [ɕi˥ pan˥ ja˧˥] · España · Transcripción fonética: los caracteres imitan el sonido, no el significado.
-- ✅🃏 美国 Měiguó [meɪ˧˩˧ kwɔ˧˥] · Estados Unidos
+- ✅🃏 中国 Zhōngguó [ʈʂʊŋ˥ kwɔ˧˥] · China · 国: un territorio cerrado 口 que guarda el sello de jade 玉 del rey: el país.
+- ✅🃏 西班牙 Xībānyá [ɕi˥ pan˥ ja˧˥] · España · Transcripción fonética: los caracteres imitan el sonido, no el significado. · 西 xī «oeste» es el mismo de 东西 dōngxi «cosas».
+- ✅🃏 美国 Měiguó [meɪ˧˩˧ kwɔ˧˥] · Estados Unidos · 美: 大 «persona» con 羊 «carnero» encima, como adorno de cuernos: bello. · 美国 es en parte transcripción: 美 měi imita el sonido de «América» y de paso significa «bello».
 - ✅🃏 中文 Zhōngwén [ʈʂʊŋ˥ wən˧˥] · chino (la lengua) · Modificador + núcleo: 中 «China» especifica 文 «lengua, escritura».
-- ✅🃏 是 shì [ʂɨ˥˩] · ser
+- ✅🃏 是 shì [ʂɨ˥˩] · ser · 是 une dos nombres (我是学生), no un nombre con un adjetivo: 我很高, no 我是高. Para preguntar vale 她漂亮吗？ o 她是不是很漂亮？, pero no 她是漂亮吗？.
 - ✅🃏 不 bù [pu˥˩] · no
 - ✅🃏 吗 ma [ma] · ¿…? (convierte la frase en pregunta de sí o no) · Partícula final que convierte una afirmación en una pregunta de sí o no.
 - ✅🃏 呢 ne [nɤ] · ¿y…? (devuelve la pregunta) · Tono neutro, corto y apagado, con una vocal parecida a [ə]. Tras una respuesta, devuelve la pregunta: «¿y tú?».
@@ -20,6 +20,16 @@
 - ✅🃏 名字 míngzi [miŋ˧˥ tsɯ] · nombre
 - ✅🃏 认识 rènshi [ʐən˥˩ ʂɨ] · conocer (a alguien) · 认 «reconocer» + 识 «distinguir»: conocer a alguien, estar familiarizado con algo. · 识 aporta la idea de distinguir algo de lo demás porque se conoce.
 - ✅🃏 高兴 gāoxìng [kɑʊ˥ ɕiŋ˥˩] · contento
+- ✅🃏 姓 xìng [ɕiŋ˥˩] · apellidarse; apellido · Se pregunta el apellido para poder tratar a alguien de señor o señora. · 姓 xìng «apellido» + 名字 míngzi «nombre» = 姓名 xìngmíng, el nombre completo.
+- ✅🃏 贵姓 guìxìng [kweɪ˥˩ ɕiŋ˥˩] · su apellido (forma cortés) · 您贵姓？ es la forma respetuosa de 你姓什么？ Se contesta con el apellido o con el nombre completo.
+- ✅🃏 姓名 xìngmíng [ɕiŋ˥˩ miŋ˧˥] · nombre completo
+- ✅🃏 门多萨 Ménduōsà [mən˧˥ twɔ˥ sa˥˩] · Mendoza (mi apellido) · Pura transcripción del sonido: 门 «puerta», 多 «mucho» y 萨 no forman ningún significado.
+- ✅🃏 雅戈 Yǎgē [ja˧˩˧ kɤ˥] · Yago (mi nombre en chino) · Transcripción por el sonido: 雅 «elegante» y 戈 «alabarda», sin otro significado. Solo por diversión.
+- ✅🃏 来 lái [laɪ˧˥] · venir · Su origen es el dibujo de una planta de trigo, tomado prestado por su sonido para «venir».
+- ✅🃏 来自 láizì [laɪ˧˥ tsɯ˥˩] · venir de, ser de · Algo formal. Hablando, también: 我从西班牙来 wǒ cóng Xībānyá lái.
+- ✅🃏 问 wèn [wən˥˩] · preguntar · Una boca 口 en la puerta 门, preguntando. · 门 mén le da el sonido: wèn.
+- ✅🃏 北京 Běijīng [peɪ˧˩˧ tɕiŋ˥] · Pekín · Literalmente «capital del norte»: 北 běi «norte» + 京 jīng «capital». · 京 es un edificio alto sobre una colina, la parte de arriba de 高.
+- ✅ 大卫 Dàwèi [ta˥˩ weɪ˥˩] · David (nombre de ejemplo)
 
 ## Frases
 
@@ -33,3 +43,16 @@
 - ✅🃏 我们都是学生。 · wǒmen dōu shì xuéshēng · Todos somos estudiantes.
 - ✅🃏 你们不是学生吗？ · nǐmen bú shì xuéshēng ma · ¿No sois estudiantes?
 - ✅🃏 他们都是中国人吗？ · tāmen dōu shì Zhōngguó rén ma · ¿Son todos chinos?
+- ✅🃏 认识你很高兴！ · rènshi nǐ hěn gāoxìng · ¡Encantado de conocerte!
+- ✅🃏 认识你我也很高兴！ · rènshi nǐ wǒ yě hěn gāoxìng · ¡Yo también estoy encantado de conocerte!
+- ✅🃏 我可以问你吗？ · wǒ kěyǐ wèn nǐ ma · ¿Te puedo preguntar algo?
+- ✅🃏 你姓什么？ · nǐ xìng shénme · ¿Cómo te apellidas?
+- ✅🃏 我姓门多萨。 · wǒ xìng Ménduōsà · Me apellido Mendoza.
+- ✅🃏 您贵姓？ · nín guìxìng · ¿Cuál es su apellido? (cortés)
+- ✅🃏 我叫雅戈。 · wǒ jiào Yǎgē · Me llamo Yago.
+- ✅🃏 他们都来自美国吗？ · tāmen dōu láizì Měiguó ma · ¿Son todos de Estados Unidos?
+- ✅🃏 我来自西班牙。 · wǒ láizì Xībānyá · Soy de España.
+- ✅🃏 请问，你叫什么名字？ · qǐngwèn nǐ jiào shénme míngzi · Disculpa, ¿cómo te llamas?
+- ✅🃏 我喜欢中文。 · wǒ xǐhuan Zhōngwén · Me gusta el chino.
+- ✅🃏 明天你来吗？ · míngtiān nǐ lái ma · ¿Vienes mañana?
+- ✅🃏 大家都来了。 · dàjiā dōu lái le · Ya hemos llegado todos.

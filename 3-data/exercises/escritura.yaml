@@ -100,3 +100,73 @@ exercises:
     answer: {hanzi: 牛, pinyin: niú, meaning: 'vaca, buey'}
     lang: es
     comments: []
+  - id: x.contrast.side-shou
+    added: 2026-09-29
+    type: contrast
+    targets: [c.side.shou]
+    group: g.mu-shou
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es la mano, la de 打?'}
+    answer: {hanzi: 扌, pinyin: shǒu, meaning: mano (componente)}
+    lang: es
+    comments: []
+  - id: x.contrast.side-mu
+    added: 2026-09-29
+    type: contrast
+    targets: [c.side.mu]
+    group: g.mu-shou
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es el árbol, el de 机?'}
+    answer: {hanzi: 木, pinyin: mù, meaning: 'árbol, madera'}
+    lang: es
+    comments: []
+  - id: x.contrast.side-yi
+    added: 2026-09-29
+    type: contrast
+    targets: [c.side.yi]
+    group: g.yi-shi
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es la ropa, la de 裤子?'}
+    answer: {hanzi: 衤, pinyin: yī, meaning: ropa (componente)}
+    lang: es
+    comments: []
+  - id: x.contrast.side-shi
+    added: 2026-09-29
+    type: contrast
+    targets: [c.side.shi]
+    group: g.yi-shi
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es el altar, el de 电视?'}
+    answer: {hanzi: 礻, pinyin: shì, meaning: 'altar, espíritu (componente)'}
+    lang: es
+    comments: []
+  - id: x.contrast.bei-shell
+    added: 2026-09-29
+    type: contrast
+    targets: [c.bei.shell]
+    group: g.jian-bei
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es la concha, el dinero antiguo?'}
+    answer: {hanzi: 贝, pinyin: bèi, meaning: concha (componente)}
+    lang: es
+    comments: []
+  - id: x.contrast.hu-door
+    added: 2026-09-29
+    type: contrast
+    targets: [c.hu.door]
+    group: g.men-hu
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es hù, la puerta de una sola hoja?'}
+    answer: {hanzi: 户, pinyin: hù, meaning: puerta de una hoja; hogar}
+    lang: es
+    comments: []
+  - id: x.nuance.radical-forms
+    added: 2026-09-29
+    type: nuance
+    targets: [c.side.ren, c.side.yan]
+    skills: [comprehension, discrimination]
+    prompt: {text: '¿De qué carácter vienen 亻 y 讠, y qué traen?'}
+    answer: {meaning: '亻 viene de 人 «persona» (你, 他); 讠, de 言 «palabra», y casi siempre trae la idea de hablar (请, 谢谢, 认识).
+        A la izquierda de un carácter, las piezas se estrechan.'}
+    lang: es
+    comments: []

@@ -38,3 +38,385 @@ exercises:
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: ba1, hanzi: 八, pinyin: bā, meaning: ocho}
     comments: []
+  - id: x.dictation.num.yi
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.num.yi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi1, hanzi: 一, pinyin: yī, meaning: uno}
+    comments: []
+  - id: x.produce.num.yi
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.num.yi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «uno»? Escribe el pinyin.'}
+    answer: {typed: yi1, hanzi: 一, pinyin: yī, meaning: uno}
+    comments: []
+  - id: x.read.num.yi
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.num.yi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 一}
+    answer: {hanzi: 一, pinyin: yī, meaning: uno}
+    comments: []
+  - id: x.dictation.num.er
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.num.er]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: er4, hanzi: 二, pinyin: èr, meaning: dos}
+    comments: []
+  - id: x.produce.num.er
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.num.er]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «dos»? Escribe el pinyin.'}
+    answer: {typed: er4, hanzi: 二, pinyin: èr, meaning: dos}
+    comments: []
+  - id: x.read.num.er
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.num.er]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 二}
+    answer: {hanzi: 二, pinyin: èr, meaning: dos}
+    comments: []
+  - id: x.dictation.num.san
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.num.san]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: san1, hanzi: 三, pinyin: sān, meaning: tres}
+    comments: []
+  - id: x.produce.num.san
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.num.san]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «tres»? Escribe el pinyin.'}
+    answer: {typed: san1, hanzi: 三, pinyin: sān, meaning: tres}
+    comments: []
+  - id: x.read.num.san
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.num.san]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 三}
+    answer: {hanzi: 三, pinyin: sān, meaning: tres}
+    comments: []
+  - id: x.dictation.num.si
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.num.si]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: si4, hanzi: 四, pinyin: sì, meaning: cuatro}
+    comments: []
+  - id: x.produce.num.si
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.num.si]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «cuatro»? Escribe el pinyin.'}
+    answer: {typed: si4, hanzi: 四, pinyin: sì, meaning: cuatro}
+    comments: []
+  - id: x.read.num.si
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.num.si]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 四}
+    answer: {hanzi: 四, pinyin: sì, meaning: cuatro}
+    comments: []
+  - id: x.dictation.num.wu
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.num.wu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wu3, hanzi: 五, pinyin: wǔ, meaning: cinco}
+    comments: []
+  - id: x.produce.num.wu
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.num.wu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «cinco»? Escribe el pinyin.'}
+    answer: {typed: wu3, hanzi: 五, pinyin: wǔ, meaning: cinco}
+    comments: []
+  - id: x.read.num.wu
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.num.wu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 五}
+    answer: {hanzi: 五, pinyin: wǔ, meaning: cinco}
+    comments: []
+  - id: x.dictation.num.liu
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.num.liu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: liu4, hanzi: 六, pinyin: liù, meaning: seis}
+    comments: []
+  - id: x.produce.num.liu
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.num.liu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «seis»? Escribe el pinyin.'}
+    answer: {typed: liu4, hanzi: 六, pinyin: liù, meaning: seis}
+    comments: []
+  - id: x.read.num.liu
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.num.liu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 六}
+    answer: {hanzi: 六, pinyin: liù, meaning: seis}
+    comments: []
+  - id: x.dictation.num.qi
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.num.qi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: qi1, hanzi: 七, pinyin: qī, meaning: siete}
+    comments: []
+  - id: x.produce.num.qi
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.num.qi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «siete»? Escribe el pinyin.'}
+    answer: {typed: qi1, hanzi: 七, pinyin: qī, meaning: siete}
+    comments: []
+  - id: x.read.num.qi
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.num.qi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 七}
+    answer: {hanzi: 七, pinyin: qī, meaning: siete}
+    comments: []
+  - id: x.dictation.num.jiu
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.num.jiu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jiu3, hanzi: 九, pinyin: jiǔ, meaning: nueve}
+    comments: []
+  - id: x.produce.num.jiu
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.num.jiu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «nueve»? Escribe el pinyin.'}
+    answer: {typed: jiu3, hanzi: 九, pinyin: jiǔ, meaning: nueve}
+    comments: []
+  - id: x.read.num.jiu
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.num.jiu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 九}
+    answer: {hanzi: 九, pinyin: jiǔ, meaning: nueve}
+    comments: []
+  - id: x.dictation.num.shi
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.num.shi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shi2, hanzi: 十, pinyin: shí, meaning: diez}
+    comments: []
+  - id: x.produce.num.shi
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.num.shi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «diez»? Escribe el pinyin.'}
+    answer: {typed: shi2, hanzi: 十, pinyin: shí, meaning: diez}
+    comments: []
+  - id: x.read.num.shi
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.num.shi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 十}
+    answer: {hanzi: 十, pinyin: shí, meaning: diez}
+    comments: []
+  - id: x.dictation.liang
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.liang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: liang3, hanzi: 两, pinyin: liǎng, meaning: dos (delante de un clasificador)}
+    comments: []
+  - id: x.produce.liang
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.liang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «dos (delante de un clasificador)»? Escribe el pinyin.'}
+    answer: {typed: liang3, hanzi: 两, pinyin: liǎng, meaning: dos (delante de un clasificador)}
+    comments: []
+  - id: x.read.liang
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.liang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 两}
+    answer: {hanzi: 两, pinyin: liǎng, meaning: dos (delante de un clasificador)}
+    comments: []
+  - id: x.dictation.you.have
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.you.have]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: you3, hanzi: 有, pinyin: yǒu, meaning: tener; haber}
+    comments: []
+  - id: x.produce.you.have
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.you.have]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «tener; haber»? Escribe el pinyin.'}
+    answer: {typed: you3, hanzi: 有, pinyin: yǒu, meaning: tener; haber}
+    comments: []
+  - id: x.read.you.have
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.you.have]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 有}
+    answer: {hanzi: 有, pinyin: yǒu, meaning: tener; haber}
+    comments: []
+  - id: x.dictation.ge
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.ge]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ge5, hanzi: 个, pinyin: ge, meaning: clasificador general (uno de algo)}
+    comments: []
+  - id: x.cloze.ge
+    added: 2026-09-29
+    lang: es
+    type: cloze
+    sentence: s.wo-you-san-ge-pengyou
+    gap: w.ge
+    targets: [w.ge]
+    context: [w.wo, w.you.have, w.num.san, w.pengyou]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Tengo tres amigos.»'}
+    answer: {typed: ge5, hanzi: 个, pinyin: ge, meaning: clasificador general (uno de algo)}
+    comments: []
+  - id: x.read.ge
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.ge]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 个}
+    answer: {hanzi: 个, pinyin: ge, meaning: clasificador general (uno de algo)}
+    comments: []
+  - id: x.listen.count-1-10
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.count-1-10
+    targets: [s.count-1-10]
+    context: [w.num.yi, w.num.er, w.num.san, w.num.si, w.num.wu, w.num.liu, w.num.qi, w.ba, w.num.jiu, w.num.shi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez.'}
+    comments: []
+  - id: x.produce.count-1-10
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.count-1-10
+    targets: [s.count-1-10]
+    context: [w.num.yi, w.num.er, w.num.san, w.num.si, w.num.wu, w.num.liu, w.num.qi, w.ba, w.num.jiu, w.num.shi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez.»'}
+    answer: {meaning: 'Uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez.'}
+    comments: []
+  - id: x.listen.wo-you-san-ge-pengyou
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wo-you-san-ge-pengyou
+    targets: [s.wo-you-san-ge-pengyou]
+    context: [w.wo, w.you.have, w.num.san, w.ge, w.pengyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo tres amigos.}
+    comments: []
+  - id: x.produce.wo-you-san-ge-pengyou
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.wo-you-san-ge-pengyou
+    targets: [s.wo-you-san-ge-pengyou]
+    context: [w.wo, w.you.have, w.num.san, w.ge, w.pengyou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo tres amigos.»'}
+    answer: {meaning: Tengo tres amigos.}
+    comments: []
+  - id: x.listen.tamen-you-liang-ge-haizi
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.tamen-you-liang-ge-haizi
+    targets: [s.tamen-you-liang-ge-haizi]
+    context: [w.tamen, w.you.have, w.liang, w.ge, w.haizi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tienen dos hijos.}
+    comments: []

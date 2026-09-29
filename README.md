@@ -27,7 +27,7 @@
 - **You** drop class notes in `1-inbox/`, in any format, and now and then say *process the inbox*.
 - **The agent** turns them into dictionary entries, sentences and cards, generates the audio and loads the deck into Anki.
 - **After each batch** it leaves you a review: your level, gaps, what didn't go in and why. You answer inline; your answers feed the next batch.
-- **You study** in Anki (soon, one HSK level at a time). Nothing else to maintain.
+- **You study** in Anki, one HSK level at a time. Nothing else to maintain.
 
 <p align="center">
   <img src="docs/assets/anki-card.jpg" width="300" alt="A listening card on the phone after answering: typed pinyin checked, hanzi, IPA, meaning, pronunciation traps, an example sentence and Anki's review intervals">
@@ -102,8 +102,6 @@ The deck is ordered by difficulty using the levels of the HSK 3.0 (the 2021 stan
 - **Knowing where you stand.** Every review reports how much of each level's vocabulary the deck covers. When you reach a level (at least 80% of its vocabulary, plus the agent's judgement on the sentence patterns you already handle), the agent says so clearly. Anything that arrives later from a level you already passed is flagged as a gap from that level.
 - **Gaps against a curriculum.** The review compares the deck with your current level, both the official list and the lesson-by-lesson sequence of standard courses, and suggests what is missing.
 
-Status: decided and documented; being implemented. Today the deck is still split by theme only.
-
 ## Getting started
 
 Setup, once (Windows shown; any OS with Python 3 works):
@@ -131,7 +129,7 @@ The agent pushes the deck itself. To do it by hand:
 
 ## Studying
 
-- Study the subdeck of your current level (until levels land, the parent deck). Themes are subdecks inside it, and level, theme, month and purpose are also tags for filtered sessions.
+- Study the subdeck of your current level. Themes are subdecks inside it, and level, theme, month and purpose are also tags for filtered sessions.
 - Typed answers accept pinyin with tone marks or digits (`ni3 hao3`) or hanzi from a Chinese keyboard; spaces, case and punctuation are ignored. For sentences you say aloud, typing is optional.
 - The back of each card shows pinyin, IPA, audio, pronunciation traps and, when there is one, the word's family, with the tested word marked ▸.
 - `push` sets the daily limits (`NEW_PER_DAY`, `REVIEWS_PER_DAY` in `anki.py`). Reviews settle at roughly 5 to 8 times the new cards: 20 new cards a day means about 100 to 160 reviews, around 25 to 30 minutes.

@@ -10,3 +10,62 @@ sentences:
       - {text: 书, ref: w.shu, pinyin: shū}
       - {text: 。}
     translation: {es: Estoy leyendo., en: I'm reading.}
+  - id: s.zhe-shi-wode-shouji
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: zhè}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 手机, ref: w.shouji, pinyin: shǒujī}
+      - {text: 。}
+    translation: {es: Este es mi móvil., en: This is my phone.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.na-shi-shenme
+    use: say
+    segments:
+      - {text: 那, ref: w.na.that, pinyin: nà}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 什么, ref: w.shenme, pinyin: shénme}
+      - {text: ？}
+    translation: {es: '¿Qué es eso?', en: 'What''s that?'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-hen-xihuan-wode-gongzuo
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 工作, ref: w.gongzuo, pinyin: gōngzuò}
+      - {text: 。}
+    translation: {es: Me gusta mucho mi trabajo., en: I really like my job.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-zou-le
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 走, ref: w.zou, pinyin: zǒu}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: Me voy., en: I'm off.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-cuo-le
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 错, ref: w.cuo, pinyin: cuò}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: Me he equivocado., en: I was wrong.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.xiaomao-hen-keai
+    use: hear
+    segments:
+      - {text: 小猫, ref: w.xiaomao, pinyin: xiǎomāo}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 可爱, ref: w.keai, pinyin: kě'ài}
+      - {text: 。}
+    translation: {es: El gatito es muy mono., en: The kitten is cute.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}

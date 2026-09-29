@@ -11,3 +11,114 @@ entries:
     standalone: 'yes'
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
+  - id: w.num.yi
+    use: say
+    role: content
+    kind: word
+    hanzi: 一
+    pinyin: yī
+    meaning: {es: uno, en: one}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.num.er
+    use: say
+    role: content
+    kind: word
+    hanzi: 二
+    pinyin: èr
+    meaning: {es: dos, en: two}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.num.san
+    use: say
+    role: content
+    kind: word
+    hanzi: 三
+    pinyin: sān
+    meaning: {es: tres, en: three}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.num.si
+    use: say
+    role: content
+    kind: word
+    hanzi: 四
+    pinyin: sì
+    meaning: {es: cuatro, en: four}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.num.wu
+    use: say
+    role: content
+    kind: word
+    hanzi: 五
+    pinyin: wǔ
+    meaning: {es: cinco, en: five}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.num.liu
+    use: say
+    role: content
+    kind: word
+    hanzi: 六
+    pinyin: liù
+    meaning: {es: seis, en: six}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.num.qi
+    use: say
+    role: content
+    kind: word
+    hanzi: 七
+    pinyin: qī
+    meaning: {es: siete, en: seven}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.num.jiu
+    use: say
+    role: content
+    kind: word
+    hanzi: 九
+    pinyin: jiǔ
+    meaning: {es: nueve, en: nine}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.num.shi
+    use: say
+    role: content
+    kind: word
+    hanzi: 十
+    pinyin: shí
+    meaning: {es: diez, en: ten}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.liang
+    use: say
+    role: content
+    kind: word
+    hanzi: 两
+    pinyin: liǎng
+    meaning: {es: dos (delante de un clasificador), en: two (before a measure word)}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '二 èr para contar y dentro de números (十二 «doce»); 两 delante de un clasificador: 两个人 «dos personas».'}
+  - id: w.you.have
+    use: say
+    role: content
+    kind: word
+    hanzi: 有
+    pinyin: yǒu
+    meaning: {es: tener; haber, en: to have; there is}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.ge
+    use: say
+    role: function
+    kind: word
+    hanzi: 个
+    pinyin: ge
+    meaning: {es: clasificador general (uno de algo), en: general measure word}
+    accept_pinyin_mismatch: 'clasificador átono: se dice ge'
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 'Entre el número y la cosa: 三个朋友 «tres amigos». Se dice átono.'}

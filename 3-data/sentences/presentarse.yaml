@@ -15,7 +15,7 @@ sentences:
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 叫, ref: w.jiao, pinyin: jiào}
-      - {text: 大卫, pinyin: Dàwèi}
+      - {text: 大卫, ref: w.dawei, pinyin: Dàwèi}
       - {text: 。}
     translation: {es: Me llamo David., en: My name is David.}
   - id: s.hen-gaoxing-renshi-ni
@@ -100,3 +100,132 @@ sentences:
       - {text: 吗, ref: w.ma, pinyin: ma}
       - {text: ？}
     translation: {es: '¿Son todos chinos?', en: 'Are they all Chinese?'}
+  - id: s.renshi-ni-hen-gaoxing
+    use: say
+    segments:
+      - {text: 认识, ref: w.renshi, pinyin: rènshi}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 高兴, ref: w.gaoxing, pinyin: gāoxìng}
+      - {text: ！}
+    translation: {es: ¡Encantado de conocerte!, en: Nice to meet you!}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: s.renshi-ni-wo-ye-hen-gaoxing
+    use: say
+    segments:
+      - {text: 认识, ref: w.renshi, pinyin: rènshi}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 也, ref: w.ye, pinyin: yě}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 高兴, ref: w.gaoxing, pinyin: gāoxìng}
+      - {text: ！}
+    translation: {es: ¡Yo también estoy encantado de conocerte!, en: Nice to meet you too!}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: s.wo-keyi-wen-ni-ma
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 可以, ref: w.keyi, pinyin: kěyǐ}
+      - {text: 问, ref: w.wen, pinyin: wèn}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Te puedo preguntar algo?', en: 'May I ask you something?'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.ni-xing-shenme
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 姓, ref: w.xing, pinyin: xìng}
+      - {text: 什么, ref: w.shenme, pinyin: shénme}
+      - {text: ？}
+    translation: {es: '¿Cómo te apellidas?', en: 'What''s your surname?'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: s.wo-xing-menduosa
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 姓, ref: w.xing, pinyin: xìng}
+      - {text: 门多萨, ref: w.menduosa, pinyin: Ménduōsà}
+      - {text: 。}
+    translation: {es: Me apellido Mendoza., en: My surname is Mendoza.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: s.nin-guixing
+    use: say
+    segments:
+      - {text: 您, ref: w.nin, pinyin: nín}
+      - {text: 贵姓, ref: e.guixing, pinyin: guìxìng}
+      - {text: ？}
+    translation: {es: '¿Cuál es su apellido? (cortés)', en: 'May I ask your surname?'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: s.wo-jiao-yage
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 叫, ref: w.jiao, pinyin: jiào}
+      - {text: 雅戈, ref: w.yage, pinyin: Yǎgē}
+      - {text: 。}
+    translation: {es: Me llamo Yago., en: My name is Yago.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.tamen-dou-laizi-meiguo-ma
+    use: hear
+    segments:
+      - {text: 他们, ref: w.tamen, pinyin: tāmen}
+      - {text: 都, ref: w.dou, pinyin: dōu}
+      - {text: 来自, ref: w.laizi, pinyin: láizì}
+      - {text: 美国, ref: w.meiguo, pinyin: Měiguó}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Son todos de Estados Unidos?', en: 'Are they all from the US?'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-laizi-xibanya
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 来自, ref: w.laizi, pinyin: láizì}
+      - {text: 西班牙, ref: w.xibanya, pinyin: Xībānyá}
+      - {text: 。}
+    translation: {es: Soy de España., en: I'm from Spain.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.qingwen-ni-jiao-shenme-mingzi
+    use: say
+    segments:
+      - {text: 请问, ref: e.qingwen, pinyin: qǐngwèn}
+      - {text: ，}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 叫, ref: w.jiao, pinyin: jiào}
+      - {text: 什么, ref: w.shenme, pinyin: shénme}
+      - {text: 名字, ref: w.mingzi, pinyin: míngzi}
+      - {text: ？}
+    translation: {es: 'Disculpa, ¿cómo te llamas?', en: 'Excuse me, what''s your name?'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-xihuan-zhongwen
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 中文, ref: w.zhongwen, pinyin: Zhōngwén}
+      - {text: 。}
+    translation: {es: Me gusta el chino., en: I like Chinese.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.mingtian-ni-lai-ma
+    use: hear
+    segments:
+      - {text: 明天, ref: w.mingtian, pinyin: míngtiān}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 来, ref: w.lai, pinyin: lái}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Vienes mañana?', en: 'Are you coming tomorrow?'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.dajia-dou-lai-le
+    use: hear
+    segments:
+      - {text: 大家, ref: w.dajia, pinyin: dàjiā}
+      - {text: 都, ref: w.dou, pinyin: dōu}
+      - {text: 来, ref: w.lai, pinyin: lái}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: Ya hemos llegado todos., en: Everyone is here.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}

@@ -9,7 +9,8 @@ entries:
     pinyin: Zhōngguó
     meaning: {es: China, en: China}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
-    comments: []
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-09-27', text: '国: un territorio cerrado 口 que guarda el sello de jade 玉 del rey: el país.'}
   - id: w.xibanya
     use: say
     role: content
@@ -17,9 +18,12 @@ entries:
     hanzi: 西班牙
     pinyin: Xībānyá
     meaning: {es: España, en: Spain}
+    level: 1
+    level_reason: 'mi país: lo necesito desde el primer día'
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Transcripción fonética: los caracteres imitan el sonido, no el significado.'}
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 西 xī «oeste» es el mismo de 东西 dōngxi «cosas».}
   - id: w.meiguo
     use: hear
     role: content
@@ -27,8 +31,12 @@ entries:
     hanzi: 美国
     pinyin: Měiguó
     meaning: {es: Estados Unidos, en: United States}
+    level: 1
+    level_reason: nombre de país frecuente; 国 es HSK 1
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
-    comments: []
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-09-27', text: '美: 大 «persona» con 羊 «carnero» encima, como adorno de cuernos: bello.'}
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '美国 es en parte transcripción: 美 měi imita el sonido de «América» y de paso significa «bello».'}
   - id: w.zhongwen
     use: say
     role: content
@@ -47,7 +55,8 @@ entries:
     pinyin: shì
     meaning: {es: ser, en: to be}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-29', text: '是 une dos nombres (我是学生), no un nombre con un adjetivo: 我很高, no 我是高. Para preguntar vale 她漂亮吗？ o 她是不是很漂亮？, pero no 她是漂亮吗？.'}
   - id: w.bu
     use: say
     role: function
@@ -152,5 +161,115 @@ entries:
     hanzi: 高兴
     pinyin: gāoxìng
     meaning: {es: contento, en: happy}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    comments: []
+  - id: w.xing
+    use: say
+    role: content
+    kind: word
+    hanzi: 姓
+    pinyin: xìng
+    meaning: {es: apellidarse; apellido, en: to be surnamed; surname}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    comments:
+      - {kind: teacher, private: false, date: '2026-09-29', text: Se pregunta el apellido para poder tratar a alguien de señor o señora., original: we ask surname to say 'mr' in chinese}
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '姓 xìng «apellido» + 名字 míngzi «nombre» = 姓名 xìngmíng, el nombre completo.'}
+  - id: e.guixing
+    use: say
+    role: content
+    kind: expression
+    hanzi: 贵姓
+    pinyin: guìxìng
+    meaning: {es: su apellido (forma cortés), en: your surname (polite)}
+    level: 2
+    level_reason: 'fórmula cortés que se aprende con 姓 [HSK 2]; 贵 es HSK 1'
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    comments:
+      - {kind: teacher, private: false, date: '2026-09-29', text: 您贵姓？ es la forma respetuosa de 你姓什么？ Se contesta con el apellido o con el nombre completo., original: nin gui xing -> wo jiao bai da long}
+  - id: w.xingming
+    use: hear
+    role: content
+    kind: word
+    hanzi: 姓名
+    pinyin: xìngmíng
+    meaning: {es: nombre completo, en: full name}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    comments: []
+  - id: w.menduosa
+    use: say
+    role: content
+    kind: word
+    hanzi: 门多萨
+    pinyin: Ménduōsà
+    meaning: {es: Mendoza (mi apellido), en: Mendoza (my surname)}
+    level: 1
+    level_reason: 'mi apellido: lo necesito desde el primer día'
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 'Pura transcripción del sonido: 门 «puerta», 多 «mucho» y 萨 no forman ningún significado.'}
+  - id: w.yage
+    use: say
+    role: content
+    kind: word
+    hanzi: 雅戈
+    pinyin: Yǎgē
+    meaning: {es: Yago (mi nombre en chino), en: Yago (my Chinese name)}
+    level: 1
+    level_reason: 'mi nombre: lo necesito desde el primer día'
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: note, private: false, date: '2026-09-27', text: 'Transcripción por el sonido: 雅 «elegante» y 戈 «alabarda», sin otro significado. Solo por diversión.', original: 'yage mendousa (yage = alabarda refinada) - no sginfinca nada adifenirac del nombre, es pura transcripcion for the fun of it.'}
+  - id: w.lai
+    use: say
+    role: content
+    kind: word
+    hanzi: 来
+    pinyin: lái
+    meaning: {es: venir, en: to come}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 'Su origen es el dibujo de una planta de trigo, tomado prestado por su sonido para «venir».'}
+  - id: w.laizi
+    use: say
+    role: content
+    kind: word
+    hanzi: 来自
+    pinyin: láizì
+    meaning: {es: 'venir de, ser de', en: to come from}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 'Algo formal. Hablando, también: 我从西班牙来 wǒ cóng Xībānyá lái.'}
+  - id: w.wen
+    use: say
+    role: content
+    kind: word
+    hanzi: 问
+    pinyin: wèn
+    meaning: {es: preguntar, en: to ask}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-09-27', text: 'Una boca 口 en la puerta 门, preguntando.', original: (como una boca en la puerta preuntando)}
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '门 mén le da el sonido: wèn.'}
+  - id: w.beijing
+    use: say
+    role: content
+    kind: word
+    hanzi: 北京
+    pinyin: Běijīng
+    meaning: {es: Pekín, en: Beijing}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 'Literalmente «capital del norte»: 北 běi «norte» + 京 jīng «capital».'}
+      - {kind: mnemonic, private: false, date: '2026-09-27', text: '京 es un edificio alto sobre una colina, la parte de arriba de 高.', original: Era el pictograma de un edificio alto 高 elevado sobre una colina 京 jīng}
+  - id: w.dawei
+    use: context
+    use_reason: nombre de ejemplo de la clase; solo aparece dentro de su frase
+    role: content
+    kind: word
+    hanzi: 大卫
+    pinyin: Dàwèi
+    meaning: {es: David (nombre de ejemplo), en: David (example name)}
+    level: 1
+    level_reason: nombre propio de ejemplo en la primera lección
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []

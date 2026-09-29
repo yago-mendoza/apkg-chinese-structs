@@ -17,3 +17,26 @@ sentences:
       - {text: 商店, ref: w.shangdian, pinyin: shāngdiàn}
       - {text: 。}
     translation: {es: Por la tarde voy a la tienda., en: In the afternoon I go to the shop.}
+  - id: s.shangwu-gongzuo-wanshang-kan-shu
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 上午, ref: w.shangwu, pinyin: shàngwǔ}
+      - {text: 工作, ref: w.gongzuo, pinyin: gōngzuò}
+      - {text: ，}
+      - {text: 晚上, ref: w.wanshang, pinyin: wǎnshang}
+      - {text: 看, ref: w.kan, pinyin: kàn}
+      - {text: 书, ref: w.shu, pinyin: shū}
+      - {text: 。}
+    translation: {es: Por la mañana trabajo y por la noche leo., en: I work in the morning and read in the evening.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.zhongwu-ni-qu-nar
+    use: hear
+    segments:
+      - {text: 中午, ref: w.zhongwu, pinyin: zhōngwǔ}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 哪儿, ref: w.nar, pinyin: nǎr}
+      - {text: ？}
+    translation: {es: '¿Adónde vas a mediodía?', en: 'Where are you going at noon?'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}

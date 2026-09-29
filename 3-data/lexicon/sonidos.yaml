@@ -61,3 +61,20 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Las dos series no se confunden por escrito porque no comparten finales: j, q y x solo van delante de i o ü, y zh, ch y sh nunca.', original: No se maltratan porque no comparten finales}
+  - id: p.h-throat
+    use: say
+    kind: pronunciation
+    title: 'La h, desde la garganta'
+    explanation: 'La h del pinyin es áspera, más cerca de la j española que de una h muda: el aire roza al fondo de la garganta. 喝 hē, 好 hǎo, 很 hěn.'
+    audio_text: 很好
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-25'}
+    comments: []
+  - id: p.syllables
+    use: say
+    kind: pronunciation
+    title: Piensa en sílabas
+    explanation: 'Cada hanzi es una sílaba con su tono. Dilas como golpes claros, también dentro de una palabra y aunque se junten varias (谢谢 xièxie, 我不是学生): no las encadenes como en español.'
+    audio_text: 我不是学生
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-25'}
+    comments:
+      - {kind: note, private: false, date: '2026-09-29', text: 'Es de lo más importante: pensar las sílabas una a una, aunque estén juntas en la frase.', original: 'IMPORTANTISMO BRO y sobretodo si alguns otnos estna cercanos, pensaros como uno aunque estne en dinstas partes de laroacion'}

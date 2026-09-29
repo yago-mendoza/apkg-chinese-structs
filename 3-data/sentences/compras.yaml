@@ -36,3 +36,130 @@ sentences:
       - {text: 哪儿, ref: w.nar, pinyin: nǎr}
       - {text: ？}
     translation: {es: '¿Dónde está la tienda?', en: 'Where is the shop?'}
+  - id: s.wo-xihuan-he-kafei
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 咖啡, ref: w.kafei, pinyin: kāfēi}
+      - {text: 。}
+    translation: {es: Me gusta tomar café., en: I like drinking coffee.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-xihuan-kan-shu
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 看, ref: w.kan, pinyin: kàn}
+      - {text: 书, ref: w.shu, pinyin: shū}
+      - {text: 。}
+    translation: {es: Me gusta leer., en: I like reading.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.women-dou-xihuan-da-lanqiu
+    use: hear
+    segments:
+      - {text: 我们, ref: w.women, pinyin: wǒmen}
+      - {text: 都, ref: w.dou, pinyin: dōu}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 打, ref: w.da.play, pinyin: dǎ}
+      - {text: 篮球, ref: w.lanqiu, pinyin: lánqiú}
+      - {text: 。}
+    translation: {es: A todos nos gusta jugar al baloncesto., en: We all like playing basketball.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-ai-ni
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 爱, ref: w.ai.love, pinyin: ài}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 。}
+    translation: {es: Te quiero., en: I love you.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-yao-shui
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 水, ref: w.shui, pinyin: shuǐ}
+      - {text: 。}
+    translation: {es: Quiero agua., en: I want water.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-xuyao-shui
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 需要, ref: w.xuyao, pinyin: xūyào}
+      - {text: 水, ref: w.shui, pinyin: shuǐ}
+      - {text: 。}
+    translation: {es: Necesito agua., en: I need water.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-yao-niurou
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 牛肉, ref: w.niurou, pinyin: niúròu}
+      - {text: 。}
+    translation: {es: Quiero ternera (pidiendo)., en: I'll have the beef.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-xiang-mai-dongxi
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 想, ref: w.xiang, pinyin: xiǎng}
+      - {text: 买, ref: w.mai, pinyin: mǎi}
+      - {text: 东西, ref: w.dongxi, pinyin: dōngxi}
+      - {text: 。}
+    translation: {es: Quiero ir de compras., en: I want to go shopping.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-xiang-mai-jipiao
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 想, ref: w.xiang, pinyin: xiǎng}
+      - {text: 买, ref: w.mai, pinyin: mǎi}
+      - {text: 机票, ref: w.jipiao, pinyin: jīpiào}
+      - {text: 。}
+    translation: {es: Quiero comprar un billete de avión., en: I want to buy a plane ticket.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-qu-mai-piao
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 买, ref: w.mai, pinyin: mǎi}
+      - {text: 票, ref: w.piao, pinyin: piào}
+      - {text: 。}
+    translation: {es: Voy a comprar las entradas., en: I'll go and buy the tickets.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.zhege-daxiao-keyi-ma
+    use: hear
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: zhè}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 大小, ref: w.daxiao, pinyin: dàxiǎo}
+      - {text: 可以, ref: w.keyi, pinyin: kěyǐ}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Te va bien esta talla?', en: 'Is this size OK?'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.nide-aihao-shi-shenme
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 爱好, ref: w.aihao, pinyin: àihào}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 什么, ref: w.shenme, pinyin: shénme}
+      - {text: ？}
+    translation: {es: '¿Cuál es tu afición?', en: 'What''s your hobby?'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-kankan
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 看看, ref: w.kankan, pinyin: kànkan}
+      - {text: 。}
+    translation: {es: Echo un vistazo., en: Let me have a look.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}

@@ -16,7 +16,7 @@ Fuente de verdad del mazo, mantenida por el agente. Un archivo por tema en cada 
 - `kind`: `word | expression | character | component | pronunciation | group`.
 - `use`: `read | hear | say` (escalera), o excepción con `use_reason`: lista (`[read]`, `[hear]`…), `context` (solo dentro de frases) o `drop` (descartada).
 - `role` (palabras y expresiones): `content | function`.
-- `hanzi`, `pinyin`, `meaning: {es, en}`; `standalone: yes | rare | no` (del sentido); `relations`; `accept_pinyin_mismatch` con motivo si pypinyin discrepa con razón.
+- `hanzi`, `pinyin`, `meaning: {es, en}`; `standalone: yes | rare | no` (del sentido); `as_word: {es, pinyin?}` en un componente cuyo hanzi también es palabra suelta (口, 女, 月; `check` lo exige si está en la lista del HSK o en el mazo); `relations`; `accept_pinyin_mismatch` con motivo si pypinyin discrepa con razón.
 - Grupos: `basis: visual | homophone | pattern | set`, `members: [{ref, cue}]` (cue: rasgo distintivo; máximo 4 en contraste).
 - Pronunciación: `title`, `explanation`, `audio_text`.
 - `comments: [{kind, private, date, text, original}]` (`text` redactado para mostrar; `original`, lo que escribió YAGO, solo si difiere), con `kind`: `mnemonic | teacher | linguistic | note | sound`. `private: true` por defecto; el repositorio es público, así que lo privado no se guarda aquí.

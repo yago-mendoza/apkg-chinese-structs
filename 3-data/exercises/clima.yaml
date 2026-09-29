@@ -1,0 +1,221 @@
+# Ejercicios · El tiempo que hace. Esquema: 3-data/README.md
+
+exercises:
+  - id: x.dictation.tianqi
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.tianqi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: tian1 qi4, hanzi: 天气, pinyin: tiānqì, meaning: el tiempo (meteorológico)}
+    comments: []
+  - id: x.produce.tianqi
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.tianqi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «el tiempo (meteorológico)»? Escribe el pinyin.'}
+    answer: {typed: tian1 qi4, hanzi: 天气, pinyin: tiānqì, meaning: el tiempo (meteorológico)}
+    comments: []
+  - id: x.read.tianqi
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.tianqi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 天气}
+    answer: {hanzi: 天气, pinyin: tiānqì, meaning: el tiempo (meteorológico)}
+    comments: []
+  - id: x.dictation.re
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.re]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: re4, hanzi: 热, pinyin: rè, meaning: calor; caluroso}
+    comments: []
+  - id: x.produce.re
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.re]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «calor; caluroso»? Escribe el pinyin.'}
+    answer: {typed: re4, hanzi: 热, pinyin: rè, meaning: calor; caluroso}
+    comments: []
+  - id: x.read.re
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.re]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 热}
+    answer: {hanzi: 热, pinyin: rè, meaning: calor; caluroso}
+    comments: []
+  - id: x.dictation.leng
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.leng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: leng3, hanzi: 冷, pinyin: lěng, meaning: frío}
+    comments: []
+  - id: x.produce.leng
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.leng]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «frío»? Escribe el pinyin.'}
+    answer: {typed: leng3, hanzi: 冷, pinyin: lěng, meaning: frío}
+    comments: []
+  - id: x.read.leng
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.leng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 冷}
+    answer: {hanzi: 冷, pinyin: lěng, meaning: frío}
+    comments: []
+  - id: x.dictation.xiayu
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.xiayu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xia4 yu3, hanzi: 下雨, pinyin: xiàyǔ, meaning: llover}
+    comments: []
+  - id: x.produce.xiayu
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.xiayu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «llover»? Escribe el pinyin.'}
+    answer: {typed: xia4 yu3, hanzi: 下雨, pinyin: xiàyǔ, meaning: llover}
+    comments: []
+  - id: x.read.xiayu
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.xiayu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 下雨}
+    answer: {hanzi: 下雨, pinyin: xiàyǔ, meaning: llover}
+    comments: []
+  - id: x.listen.tianqi-hen-leng
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.tianqi-hen-leng
+    targets: [s.tianqi-hen-leng]
+    context: [w.tianqi, w.hen, w.leng]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Hace mucho frío.}
+    comments: []
+  - id: x.produce.tianqi-hen-leng
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.tianqi-hen-leng
+    targets: [s.tianqi-hen-leng]
+    context: [w.tianqi, w.hen, w.leng]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hace mucho frío.»'}
+    answer: {meaning: Hace mucho frío.}
+    comments: []
+  - id: x.listen.tianqi-bu-leng
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.tianqi-bu-leng
+    targets: [s.tianqi-bu-leng]
+    context: [w.tianqi, w.bu, w.leng]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No hace frío.}
+    comments: []
+  - id: x.produce.tianqi-bu-leng
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.tianqi-bu-leng
+    targets: [s.tianqi-bu-leng]
+    context: [w.tianqi, w.bu, w.leng]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No hace frío.»'}
+    answer: {meaning: No hace frío.}
+    comments: []
+  - id: x.listen.tianqi-leng-ma
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.tianqi-leng-ma
+    targets: [s.tianqi-leng-ma]
+    context: [w.tianqi, w.leng, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Hace frío?'}
+    comments: []
+  - id: x.produce.tianqi-leng-ma
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.tianqi-leng-ma
+    targets: [s.tianqi-leng-ma]
+    context: [w.tianqi, w.leng, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Hace frío?»'}
+    answer: {meaning: '¿Hace frío?'}
+    comments: []
+  - id: x.listen.beijing-hen-re
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.beijing-hen-re
+    targets: [s.beijing-hen-re]
+    context: [w.beijing, w.hen, w.re]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: En Pekín hace mucho calor.}
+    comments: []
+  - id: x.produce.beijing-hen-re
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.beijing-hen-re
+    targets: [s.beijing-hen-re]
+    context: [w.beijing, w.hen, w.re]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «En Pekín hace mucho calor.»'}
+    answer: {meaning: En Pekín hace mucho calor.}
+    comments: []
+  - id: x.listen.xiayu-le
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.xiayu-le
+    targets: [s.xiayu-le]
+    context: [w.xiayu, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Se ha puesto a llover.}
+    comments: []
+  - id: x.listen.beijing-xiayu-ma
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.beijing-xiayu-ma
+    targets: [s.beijing-xiayu-ma]
+    context: [w.beijing, w.xiayu, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Llueve en Pekín?'}
+    comments: []

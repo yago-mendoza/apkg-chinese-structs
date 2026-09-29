@@ -341,12 +341,12 @@ exercises:
   - id: x.cloze.nar
     added: 2026-09-26
     type: cloze
-    sentence: s.shangdian-zai-nar
+    sentence: s.zhongwu-ni-qu-nar
     gap: w.nar
     targets: [w.nar]
-    context: [w.shangdian, w.zai.at]
+    context: [w.zhongwu, w.ni, w.qu]
     skills: [production, pinyin]
-    prompt: {text: 'Completa en pinyin: «¿Dónde está la tienda?»'}
+    prompt: {text: 'Completa en pinyin: «¿Adónde vas a mediodía?»'}
     answer: {typed: nar3, hanzi: 哪儿, pinyin: nǎr, meaning: dónde}
     lang: es
     comments: []
@@ -432,4 +432,500 @@ exercises:
     skills: [listening, pinyin, tones]
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: niu2 rou4, hanzi: 牛肉, pinyin: niúròu, meaning: carne de ternera}
+    comments: []
+  - id: x.contrast.nar
+    added: 2026-09-29
+    lang: es
+    type: contrast
+    group: g.na-nar
+    targets: [w.nar]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es nǎr, «dónde»?'}
+    answer: {hanzi: 哪儿, pinyin: nǎr, meaning: dónde}
+    comments: []
+  - id: x.dictation.xihuan
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.xihuan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xi3 huan5, hanzi: 喜欢, pinyin: xǐhuan, meaning: gustar}
+    comments: []
+  - id: x.produce.xihuan
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.xihuan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «gustar»? Escribe el pinyin.'}
+    answer: {typed: xi3 huan5, hanzi: 喜欢, pinyin: xǐhuan, meaning: gustar}
+    comments: []
+  - id: x.read.xihuan
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.xihuan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 喜欢}
+    answer: {hanzi: 喜欢, pinyin: xǐhuan, meaning: gustar}
+    comments: []
+  - id: x.tones.xihuan
+    added: 2026-09-29
+    lang: es
+    type: tones
+    targets: [w.xihuan]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 喜欢, pinyin: xi huan}
+    answer: {typed: '35', hanzi: 喜欢, pinyin: xǐhuan, meaning: gustar}
+    comments: []
+  - id: x.dictation.ai.love
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.ai.love]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ai4, hanzi: 爱, pinyin: ài, meaning: 'amar, querer (a alguien)'}
+    comments: []
+  - id: x.produce.ai.love
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.ai.love]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «amar, querer (a alguien)»? Escribe el pinyin.'}
+    answer: {typed: ai4, hanzi: 爱, pinyin: ài, meaning: 'amar, querer (a alguien)'}
+    comments: []
+  - id: x.read.ai.love
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.ai.love]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 爱}
+    answer: {hanzi: 爱, pinyin: ài, meaning: 'amar, querer (a alguien)'}
+    comments: []
+  - id: x.dictation.aihao
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.aihao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ai4 hao4, hanzi: 爱好, pinyin: àihào, meaning: 'afición, hobby'}
+    comments: []
+  - id: x.produce.aihao
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.aihao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «afición, hobby»? Escribe el pinyin.'}
+    answer: {typed: ai4 hao4, hanzi: 爱好, pinyin: àihào, meaning: 'afición, hobby'}
+    comments: []
+  - id: x.read.aihao
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.aihao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 爱好}
+    answer: {hanzi: 爱好, pinyin: àihào, meaning: 'afición, hobby'}
+    comments: []
+  - id: x.dictation.yao
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.yao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yao4, hanzi: 要, pinyin: yào, meaning: querer (algo); hacer falta}
+    comments: []
+  - id: x.produce.yao
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.yao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «querer (algo); hacer falta»? Escribe el pinyin.'}
+    answer: {typed: yao4, hanzi: 要, pinyin: yào, meaning: querer (algo); hacer falta}
+    comments: []
+  - id: x.read.yao
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.yao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 要}
+    answer: {hanzi: 要, pinyin: yào, meaning: querer (algo); hacer falta}
+    comments: []
+  - id: x.dictation.xuyao
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.xuyao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xu1 yao4, hanzi: 需要, pinyin: xūyào, meaning: necesitar}
+    comments: []
+  - id: x.read.xuyao
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.xuyao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 需要}
+    answer: {hanzi: 需要, pinyin: xūyào, meaning: necesitar}
+    comments: []
+  - id: x.dictation.piao
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.piao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: piao4, hanzi: 票, pinyin: piào, meaning: 'billete, entrada'}
+    comments: []
+  - id: x.read.piao
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.piao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 票}
+    answer: {hanzi: 票, pinyin: piào, meaning: 'billete, entrada'}
+    comments: []
+  - id: x.dictation.jipiao
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.jipiao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ji1 piao4, hanzi: 机票, pinyin: jīpiào, meaning: billete de avión}
+    comments: []
+  - id: x.read.jipiao
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.jipiao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 机票}
+    answer: {hanzi: 机票, pinyin: jīpiào, meaning: billete de avión}
+    comments: []
+  - id: x.dictation.dongxi
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.dongxi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dong1 xi5, hanzi: 东西, pinyin: dōngxi, meaning: 'cosa, cosas'}
+    comments: []
+  - id: x.produce.dongxi
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.dongxi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «cosa, cosas»? Escribe el pinyin.'}
+    answer: {typed: dong1 xi5, hanzi: 东西, pinyin: dōngxi, meaning: 'cosa, cosas'}
+    comments: []
+  - id: x.read.dongxi
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.dongxi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 东西}
+    answer: {hanzi: 东西, pinyin: dōngxi, meaning: 'cosa, cosas'}
+    comments: []
+  - id: x.tones.dongxi
+    added: 2026-09-29
+    lang: es
+    type: tones
+    targets: [w.dongxi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 东西, pinyin: dong xi}
+    answer: {typed: '15', hanzi: 东西, pinyin: dōngxi, meaning: 'cosa, cosas'}
+    comments: []
+  - id: x.dictation.daxiao
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.daxiao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: da4 xiao3, hanzi: 大小, pinyin: dàxiǎo, meaning: 'tamaño, talla'}
+    comments: []
+  - id: x.read.daxiao
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.daxiao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 大小}
+    answer: {hanzi: 大小, pinyin: dàxiǎo, meaning: 'tamaño, talla'}
+    comments: []
+  - id: x.listen.wo-xihuan-he-kafei
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wo-xihuan-he-kafei
+    targets: [s.wo-xihuan-he-kafei]
+    context: [w.wo, w.xihuan, w.he.drink, w.kafei]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me gusta tomar café.}
+    comments: []
+  - id: x.produce.wo-xihuan-he-kafei
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.wo-xihuan-he-kafei
+    targets: [s.wo-xihuan-he-kafei]
+    context: [w.wo, w.xihuan, w.he.drink, w.kafei]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me gusta tomar café.»'}
+    answer: {meaning: Me gusta tomar café.}
+    comments: []
+  - id: x.listen.wo-xihuan-kan-shu
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wo-xihuan-kan-shu
+    targets: [s.wo-xihuan-kan-shu]
+    context: [w.wo, w.xihuan, w.kan, w.shu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me gusta leer.}
+    comments: []
+  - id: x.produce.wo-xihuan-kan-shu
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.wo-xihuan-kan-shu
+    targets: [s.wo-xihuan-kan-shu]
+    context: [w.wo, w.xihuan, w.kan, w.shu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me gusta leer.»'}
+    answer: {meaning: Me gusta leer.}
+    comments: []
+  - id: x.listen.women-dou-xihuan-da-lanqiu
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.women-dou-xihuan-da-lanqiu
+    targets: [s.women-dou-xihuan-da-lanqiu]
+    context: [w.women, w.dou, w.xihuan, w.da.play, w.lanqiu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: A todos nos gusta jugar al baloncesto.}
+    comments: []
+  - id: x.listen.wo-ai-ni
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wo-ai-ni
+    targets: [s.wo-ai-ni]
+    context: [w.wo, w.ai.love, w.ni]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Te quiero.}
+    comments: []
+  - id: x.produce.wo-ai-ni
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.wo-ai-ni
+    targets: [s.wo-ai-ni]
+    context: [w.wo, w.ai.love, w.ni]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Te quiero.»'}
+    answer: {meaning: Te quiero.}
+    comments: []
+  - id: x.listen.wo-yao-shui
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wo-yao-shui
+    targets: [s.wo-yao-shui]
+    context: [w.wo, w.yao, w.shui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero agua.}
+    comments: []
+  - id: x.produce.wo-yao-shui
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.wo-yao-shui
+    targets: [s.wo-yao-shui]
+    context: [w.wo, w.yao, w.shui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero agua.»'}
+    answer: {meaning: Quiero agua.}
+    comments: []
+  - id: x.listen.wo-xuyao-shui
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wo-xuyao-shui
+    targets: [s.wo-xuyao-shui]
+    context: [w.wo, w.xuyao, w.shui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Necesito agua.}
+    comments: []
+  - id: x.listen.wo-yao-niurou
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wo-yao-niurou
+    targets: [s.wo-yao-niurou]
+    context: [w.wo, w.yao, w.niurou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero ternera (pidiendo).}
+    comments: []
+  - id: x.produce.wo-yao-niurou
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.wo-yao-niurou
+    targets: [s.wo-yao-niurou]
+    context: [w.wo, w.yao, w.niurou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero ternera (pidiendo).»'}
+    answer: {meaning: Quiero ternera (pidiendo).}
+    comments: []
+  - id: x.listen.wo-xiang-mai-dongxi
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wo-xiang-mai-dongxi
+    targets: [s.wo-xiang-mai-dongxi]
+    context: [w.wo, w.xiang, w.mai, w.dongxi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero ir de compras.}
+    comments: []
+  - id: x.produce.wo-xiang-mai-dongxi
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.wo-xiang-mai-dongxi
+    targets: [s.wo-xiang-mai-dongxi]
+    context: [w.wo, w.xiang, w.mai, w.dongxi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero ir de compras.»'}
+    answer: {meaning: Quiero ir de compras.}
+    comments: []
+  - id: x.listen.wo-xiang-mai-jipiao
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wo-xiang-mai-jipiao
+    targets: [s.wo-xiang-mai-jipiao]
+    context: [w.wo, w.xiang, w.mai, w.jipiao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero comprar un billete de avión.}
+    comments: []
+  - id: x.listen.wo-qu-mai-piao
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wo-qu-mai-piao
+    targets: [s.wo-qu-mai-piao]
+    context: [w.wo, w.qu, w.mai, w.piao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Voy a comprar las entradas.}
+    comments: []
+  - id: x.listen.zhege-daxiao-keyi-ma
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.zhege-daxiao-keyi-ma
+    targets: [s.zhege-daxiao-keyi-ma]
+    context: [w.zhe, w.ge, w.daxiao, w.keyi, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Te va bien esta talla?'}
+    comments: []
+  - id: x.listen.nide-aihao-shi-shenme
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.nide-aihao-shi-shenme
+    targets: [s.nide-aihao-shi-shenme]
+    context: [w.ni, w.de, w.aihao, w.shi, w.shenme]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuál es tu afición?'}
+    comments: []
+  - id: x.produce.nide-aihao-shi-shenme
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.nide-aihao-shi-shenme
+    targets: [s.nide-aihao-shi-shenme]
+    context: [w.ni, w.de, w.aihao, w.shi, w.shenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuál es tu afición?»'}
+    answer: {meaning: '¿Cuál es tu afición?'}
+    comments: []
+  - id: x.listen.wo-kankan
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wo-kankan
+    targets: [s.wo-kankan]
+    context: [w.wo, w.kankan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Echo un vistazo.}
+    comments: []
+  - id: x.produce.wo-kankan
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.wo-kankan
+    targets: [s.wo-kankan]
+    context: [w.wo, w.kankan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Echo un vistazo.»'}
+    answer: {meaning: Echo un vistazo.}
+    comments: []
+  - id: x.nuance.xiang-yao
+    added: 2026-09-29
+    type: nuance
+    targets: [w.xiang, w.yao]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我想喝水 y 我要水: ¿qué cambia?'}
+    answer: {meaning: '想 + verbo: tengo ganas de hacerlo (beber agua). 要 + cosa: la quiero, sin rodeos, como al pedir en una
+        tienda.'}
+    lang: es
+    comments: []
+  - id: x.nuance.yao-xuyao
+    added: 2026-09-29
+    type: nuance
+    targets: [w.xuyao, w.yao]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我要水 o 我需要水: ¿cuál es una necesidad?'}
+    answer: {meaning: '需要: la necesito porque la situación lo impone. 要: la quiero o me hace falta, más directo.'}
+    lang: es
+    comments: []
+  - id: x.nuance.loan-calque
+    added: 2026-09-29
+    type: nuance
+    targets: [w.kafei, w.ruanjian]
+    skills: [comprehension, discrimination]
+    prompt: {text: '咖啡 y 软件: ¿cuál imita el sonido y cuál traduce las piezas?'}
+    answer: {meaning: '咖啡 kāfēi imita «coffee»: préstamo fonético. 软件 ruǎnjiàn traduce las piezas, «blando» + «pieza»: calco.'}
+    lang: es
     comments: []

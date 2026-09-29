@@ -32,3 +32,5 @@ Con 午 «mediodía» se forman las tres del centro (上 antes, 中 en, 下 desp
 
 - ✅🃏 明天见！ · míngtiān jiàn · ¡Hasta mañana!
 - ✅🃏 下午去商店。 · xiàwǔ qù shāngdiàn · Por la tarde voy a la tienda.
+- ✅🃏 我上午工作，晚上看书。 · wǒ shàngwǔ gōngzuò wǎnshang kàn shū · Por la mañana trabajo y por la noche leo.
+- ✅🃏 中午你去哪儿？ · zhōngwǔ nǐ qù nǎr · ¿Adónde vas a mediodía?

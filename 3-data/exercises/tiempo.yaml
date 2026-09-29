@@ -213,3 +213,35 @@ exercises:
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: wan3 shang5, hanzi: 晚上, pinyin: wǎnshang, meaning: por la noche}
     comments: []
+  - id: x.contrast.jian
+    added: 2026-09-29
+    lang: es
+    type: contrast
+    group: g.jian-bei
+    targets: [w.jian]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es jiàn, «ver; verse»?'}
+    answer: {hanzi: 见, pinyin: jiàn, meaning: ver; verse}
+    comments: []
+  - id: x.listen.shangwu-gongzuo-wanshang-kan-shu
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.shangwu-gongzuo-wanshang-kan-shu
+    targets: [s.shangwu-gongzuo-wanshang-kan-shu]
+    context: [w.wo, w.shangwu, w.gongzuo, w.wanshang, w.kan, w.shu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Por la mañana trabajo y por la noche leo.}
+    comments: []
+  - id: x.listen.zhongwu-ni-qu-nar
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.zhongwu-ni-qu-nar
+    targets: [s.zhongwu-ni-qu-nar]
+    context: [w.zhongwu, w.ni, w.qu, w.nar]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Adónde vas a mediodía?'}
+    comments: []

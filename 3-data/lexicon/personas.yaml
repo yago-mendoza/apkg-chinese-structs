@@ -97,7 +97,8 @@ entries:
     pinyin: dàjiā
     meaning: {es: 'todos, todo el mundo', en: everybody}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-29', text: 'Suele ir con 都: 大家都来了 «ya estamos todos».', original: (¡ah claor es dice dajia dou'!!)}
   - id: w.laoshi
     use: say
     role: content
@@ -159,4 +160,40 @@ entries:
       - {ref: w.ta.she, cue: '女 mujer: ella'}
       - {ref: w.ta.it, cue: '宀 arriba: cosas y animales'}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    comments: []
+  - id: c.shi.master
+    use: read
+    kind: character
+    hanzi: 师
+    pinyin: shī
+    meaning: {es: maestro; experto (en nombres de profesiones), en: master; expert (in job names)}
+    standalone: 'no'
+    level: 1
+    level_reason: 'ligada de 老师 [HSK 1]'
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 'Da nombre a profesiones y a quien enseña: 老师 lǎoshī, 工程师 gōngchéngshī, 厨师 chúshī «cocinero» [HSK 3]. «Experto» en general es otra palabra: 专家 zhuānjiā [HSK 3].', original: shī (se añade a algo para singifcar experto de ... enseñanza (laoshi) o experto de ingenieria (gongchcahon... o ...}
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 'No se confunde con 者 zhě, «el que hace»: 作者 zuòzhě «autor», 记者 jìzhě «periodista» [HSK 3]. 师 es un oficio; 者, quien hace una acción.'}
+      - {kind: mnemonic, private: false, date: '2026-09-27', text: 'El maestro dirige a los alumnos bajo techo, con el pañuelo 巾 como en 帅.', original: Ahora el profesor dirige 帅 a los estudiantes bajo techo / lelvandio pañuelo}
+  - id: c.men.plural
+    use: context
+    use_reason: 'ligada: se practica dentro de 我们, 你们 y 他们'
+    kind: character
+    hanzi: 们
+    pinyin: men
+    meaning: {es: 'plural de personas (我们, 你们, 他们)', en: plural suffix for people}
+    standalone: 'no'
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-09-27', text: Muchas personas 亻 pasando por una puerta 门.}
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '门 mén le da el sonido; en 们 la sílaba pierde el tono: wǒmen, nǐmen, tāmen.'}
+  - id: g.shuai-shi
+    kind: group
+    basis: visual
+    title: 帅 y 师
+    explanation: 'Casi iguales: el pañuelo 巾 a la derecha y dos trazos a la izquierda. 师 lleva además una raya encima.'
+    members:
+      - {ref: w.shuai, cue: 'sin raya encima: shuài, hoy «guapo»'}
+      - {ref: c.shi.master, cue: 'raya encima: shī, en 老师 y 工程师'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []

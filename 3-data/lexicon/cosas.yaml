@@ -39,6 +39,8 @@ entries:
     pinyin: kànkan
     meaning: {es: echar un vistazo, en: to have a look}
     accept_pinyin_mismatch: la repetición del verbo va en tono neutro
+    level: 1
+    level_reason: 'reduplicación de 看 [HSK 1]'
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Repetir el verbo lo suaviza: «mirar un poco», no «mirar dos veces».'}
@@ -61,6 +63,7 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 手 «mano» + 机 «máquina».}
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '机 jī «máquina» (con 木 a la izquierda, no 扌): 手机 es la máquina de mano; 飞机 fēijī, la que vuela; 机票 jīpiào, su billete.'}
   - id: w.zuqiu
     use: hear
     role: content
@@ -91,3 +94,161 @@ entries:
     meaning: {es: entrada, en: entrance}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
+  - id: w.zhe
+    use: say
+    role: function
+    kind: word
+    hanzi: 这
+    pinyin: zhè
+    meaning: {es: 'este, esto', en: this}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.na.that
+    use: say
+    role: function
+    kind: word
+    hanzi: 那
+    pinyin: nà
+    meaning: {es: 'ese, eso; aquel', en: that}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: g.na-nar
+    kind: group
+    basis: visual
+    title: 那 y 哪儿
+    explanation: Mismo carácter; la boca 口 lo convierte en pregunta.
+    members:
+      - {ref: w.na.that, cue: 'sin boca: nà, eso'}
+      - {ref: w.nar, cue: 'con boca: nǎr, ¿dónde?'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.men
+    use: hear
+    role: content
+    kind: word
+    hanzi: 门
+    pinyin: mén
+    meaning: {es: puerta, en: door}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: El dibujo de una puerta de dos hojas.}
+  - id: g.men-phonetic
+    kind: group
+    basis: phonetic
+    title: 门 da el sonido
+    explanation: '门 mén presta su sonido: 们 men, 问 wèn y 闻 wén «oír, oler» [HSK 2]. Cambia el tono; la sílaba se queda.'
+    members:
+      - {ref: w.men, cue: 'la puerta: mén, 2.º tono; palabra'}
+      - {ref: c.men.plural, cue: 'persona 亻 + 门: men, átono; ligada, plural'}
+      - {ref: w.wen, cue: 'boca 口 en la puerta: wèn, preguntar; palabra'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.feiji
+    use: hear
+    role: content
+    kind: word
+    hanzi: 飞机
+    pinyin: fēijī
+    meaning: {es: avión, en: plane}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.xiaomao
+    use: hear
+    role: content
+    kind: word
+    hanzi: 小猫
+    pinyin: xiǎomāo
+    meaning: {es: gatito, en: kitten}
+    level: 2
+    level_reason: 猫 māo es HSK 2
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    comments: []
+  - id: w.gongzuo
+    use: say
+    role: content
+    kind: word
+    hanzi: 工作
+    pinyin: gōngzuò
+    meaning: {es: trabajo; trabajar, en: work; to work}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 工 gōng es el de 工程师. 恭 gōng «respetuoso» suena igual y es otro carácter.}
+  - id: w.zou
+    use: say
+    role: content
+    kind: word
+    hanzi: 走
+    pinyin: zǒu
+    meaning: {es: irse; andar, en: to leave; to walk}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.le
+    use: say
+    role: function
+    kind: word
+    hanzi: 了
+    pinyin: le
+    meaning: {es: 'partícula: algo ya pasó o ha cambiado', en: 'particle: done, or a change'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 'Al final de la frase marca un cambio o algo ya ocurrido: 我走了 «me voy», 下雨了 «se ha puesto a llover», 我错了 «me equivoqué».'}
+  - id: w.cuo
+    use: say
+    role: content
+    kind: word
+    hanzi: 错
+    pinyin: cuò
+    meaning: {es: equivocado; error, en: wrong}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '错误 cuòwù «error» [HSK 3] y 误会 wùhuì «malentendido» [HSK 4] son más formales; hablando basta 错.'}
+  - id: w.lanqiu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 篮球
+    pinyin: lánqiú
+    meaning: {es: baloncesto, en: basketball}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.da.play
+    use: hear
+    role: content
+    kind: word
+    hanzi: 打
+    pinyin: dǎ
+    meaning: {es: jugar (a deportes de pelota); golpear, en: to play (ball games); to hit}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '打 + deporte de pelota: 打篮球 «jugar al baloncesto». Lleva 扌 «mano».'}
+  - id: w.chukou
+    use: [read]
+    use_reason: 'cartel de salida, pareja de 入口: se lee más que se dice'
+    role: content
+    kind: word
+    hanzi: 出口
+    pinyin: chūkǒu
+    meaning: {es: salida, en: exit}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '出 chū «salir»: una planta que sale de un tiesto. 出口 y 入口 son la pareja de los carteles.'}
+  - id: g.ru-chu
+    kind: group
+    basis: set
+    title: 入口 y 出口
+    explanation: 'Los dos carteles: entrar y salir por la boca 口 de un lugar.'
+    members:
+      - {ref: w.rukou, cue: entrada}
+      - {ref: w.chukou, cue: salida}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.ruanjian
+    use: hear
+    role: content
+    kind: word
+    hanzi: 软件
+    pinyin: ruǎnjiàn
+    meaning: {es: software, en: software}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 'Calco: 软 «blando» + 件 «pieza», frente a 硬件 yìngjiàn «hardware», las piezas duras.'}

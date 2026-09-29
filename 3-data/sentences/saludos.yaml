@@ -37,3 +37,29 @@ sentences:
       - {text: 谢谢, ref: e.xiexie, pinyin: xièxie}
       - {text: ！}
     translation: {es: 'Vale, ¡gracias!', en: 'OK, thanks!'}
+  - id: s.qing-he-kafei
+    use: hear
+    segments:
+      - {text: 请, ref: w.qing, pinyin: qǐng}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 咖啡, ref: w.kafei, pinyin: kāfēi}
+      - {text: 。}
+    translation: {es: 'Tome un café, por favor.', en: Please have some coffee.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.huanying-ni
+    use: say
+    segments:
+      - {text: 欢迎, ref: w.huanying, pinyin: huānyíng}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: ！}
+    translation: {es: ¡Bienvenido!, en: Welcome!}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.en-xiexie
+    use: say
+    segments:
+      - {text: 嗯, ref: w.en, pinyin: èn}
+      - {text: ，}
+      - {text: 谢谢, ref: e.xiexie, pinyin: xièxie}
+      - {text: ！}
+    translation: {es: 'Sí, gracias.', en: 'Mm, thanks!'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}

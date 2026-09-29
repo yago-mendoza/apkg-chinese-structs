@@ -197,12 +197,12 @@ exercises:
   - id: x.cloze.hen
     added: 2026-09-26
     type: cloze
-    sentence: s.wo-hen-hao-ni-ne
+    sentence: s.ta-hen-gao
     gap: w.hen
     targets: [w.hen]
-    context: [w.wo, w.hao, w.ni, w.ne]
+    context: [w.ta.he, w.gao]
     skills: [production, pinyin]
-    prompt: {text: 'Completa en pinyin: «Estoy bien, ¿y tú?»'}
+    prompt: {text: 'Completa en pinyin: «Él es alto.»'}
     answer: {typed: hen3, hanzi: 很, pinyin: hěn, meaning: 'muy (con adjetivos, a menudo solo enlace)'}
     lang: es
     comments: []
@@ -333,4 +333,345 @@ exercises:
     skills: [listening, pinyin, tones]
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: you1 mo4, hanzi: 幽默, pinyin: yōumò, meaning: 'gracioso, con sentido del humor'}
+    comments: []
+  - id: x.contrast.hao
+    added: 2026-09-29
+    lang: es
+    type: contrast
+    group: g.hao-nver-erzi
+    targets: [w.hao]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es hǎo, «bien, bueno»?'}
+    answer: {hanzi: 好, pinyin: hǎo, meaning: 'bien, bueno'}
+    comments: []
+  - id: x.contrast.shuai
+    added: 2026-09-29
+    lang: es
+    type: contrast
+    group: g.shuai-shi
+    targets: [w.shuai]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es shuài, «guapo (sobre todo hombres)»?'}
+    answer: {hanzi: 帅, pinyin: shuài, meaning: guapo (sobre todo hombres)}
+    comments: []
+  - id: x.dictation.bai
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.bai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bai2, hanzi: 白, pinyin: bái, meaning: blanco; también un apellido}
+    comments: []
+  - id: x.read.bai
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.bai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 白}
+    answer: {hanzi: 白, pinyin: bái, meaning: blanco; también un apellido}
+    comments: []
+  - id: x.dictation.hei
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.hei]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hei1, hanzi: 黑, pinyin: hēi, meaning: negro}
+    comments: []
+  - id: x.read.hei
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.hei]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 黑}
+    answer: {hanzi: 黑, pinyin: hēi, meaning: negro}
+    comments: []
+  - id: x.dictation.duan
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.duan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: duan3, hanzi: 短, pinyin: duǎn, meaning: corto (de longitud o de tiempo)}
+    comments: []
+  - id: x.read.duan
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.duan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 短}
+    answer: {hanzi: 短, pinyin: duǎn, meaning: corto (de longitud o de tiempo)}
+    comments: []
+  - id: x.contrast.da
+    added: 2026-09-29
+    lang: es
+    type: contrast
+    group: g.da-tai-tian
+    targets: [w.da]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es dà, «grande»?'}
+    answer: {hanzi: 大, pinyin: dà, meaning: grande}
+    comments: []
+  - id: x.dictation.da
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.da]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: da4, hanzi: 大, pinyin: dà, meaning: grande}
+    comments: []
+  - id: x.produce.da
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.da]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «grande»? Escribe el pinyin.'}
+    answer: {typed: da4, hanzi: 大, pinyin: dà, meaning: grande}
+    comments: []
+  - id: x.read.da
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.da]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 大}
+    answer: {hanzi: 大, pinyin: dà, meaning: grande}
+    comments: []
+  - id: x.contrast.tai
+    added: 2026-09-29
+    lang: es
+    type: contrast
+    group: g.da-tai-tian
+    targets: [w.tai]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es tài, «demasiado; muy (en 太好了)»?'}
+    answer: {hanzi: 太, pinyin: tài, meaning: demasiado; muy (en 太好了)}
+    comments: []
+  - id: x.dictation.tai
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.tai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: tai4, hanzi: 太, pinyin: tài, meaning: demasiado; muy (en 太好了)}
+    comments: []
+  - id: x.cloze.tai
+    added: 2026-09-29
+    lang: es
+    type: cloze
+    sentence: s.tai-hao-le
+    gap: w.tai
+    targets: [w.tai]
+    context: [w.hao, w.le]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¡Genial!»'}
+    answer: {typed: tai4, hanzi: 太, pinyin: tài, meaning: demasiado; muy (en 太好了)}
+    comments: []
+  - id: x.read.tai
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.tai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 太}
+    answer: {hanzi: 太, pinyin: tài, meaning: demasiado; muy (en 太好了)}
+    comments: []
+  - id: x.contrast.tian
+    added: 2026-09-29
+    lang: es
+    type: contrast
+    group: g.da-tai-tian
+    targets: [w.tian]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es tiān, «día; cielo»?'}
+    answer: {hanzi: 天, pinyin: tiān, meaning: día; cielo}
+    comments: []
+  - id: x.dictation.tian
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.tian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: tian1, hanzi: 天, pinyin: tiān, meaning: día; cielo}
+    comments: []
+  - id: x.read.tian
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.tian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 天}
+    answer: {hanzi: 天, pinyin: tiān, meaning: día; cielo}
+    comments: []
+  - id: x.listen.ta-bu-piaoliang
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.ta-bu-piaoliang
+    targets: [s.ta-bu-piaoliang]
+    context: [w.ta.she, w.bu, w.piaoliang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No es guapa.}
+    comments: []
+  - id: x.produce.ta-bu-piaoliang
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.ta-bu-piaoliang
+    targets: [s.ta-bu-piaoliang]
+    context: [w.ta.she, w.bu, w.piaoliang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No es guapa.»'}
+    answer: {meaning: No es guapa.}
+    comments: []
+  - id: x.listen.ta-piaoliang-ma
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.ta-piaoliang-ma
+    targets: [s.ta-piaoliang-ma]
+    context: [w.ta.she, w.piaoliang, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Es guapa?'}
+    comments: []
+  - id: x.produce.ta-piaoliang-ma
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.ta-piaoliang-ma
+    targets: [s.ta-piaoliang-ma]
+    context: [w.ta.she, w.piaoliang, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Es guapa?»'}
+    answer: {meaning: '¿Es guapa?'}
+    comments: []
+  - id: x.listen.ta-piaoliang-bu-piaoliang
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.ta-piaoliang-bu-piaoliang
+    targets: [s.ta-piaoliang-bu-piaoliang]
+    context: [w.ta.she, w.piaoliang, w.bu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Es guapa o no?'}
+    comments: []
+  - id: x.produce.ta-piaoliang-bu-piaoliang
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.ta-piaoliang-bu-piaoliang
+    targets: [s.ta-piaoliang-bu-piaoliang]
+    context: [w.ta.she, w.piaoliang, w.bu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Es guapa o no?»'}
+    answer: {meaning: '¿Es guapa o no?'}
+    comments: []
+  - id: x.listen.ta-bu-gao
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.ta-bu-gao
+    targets: [s.ta-bu-gao]
+    context: [w.ta.he, w.bu, w.gao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No es alto.}
+    comments: []
+  - id: x.produce.ta-bu-gao
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.ta-bu-gao
+    targets: [s.ta-bu-gao]
+    context: [w.ta.he, w.bu, w.gao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No es alto.»'}
+    answer: {meaning: No es alto.}
+    comments: []
+  - id: x.listen.laoshi-hen-shuai
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.laoshi-hen-shuai
+    targets: [s.laoshi-hen-shuai]
+    context: [w.laoshi, w.hen, w.shuai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: El profesor es guapo.}
+    comments: []
+  - id: x.listen.beijing-hen-da
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.beijing-hen-da
+    targets: [s.beijing-hen-da]
+    context: [w.beijing, w.hen, w.da]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Pekín es grande.}
+    comments: []
+  - id: x.listen.tai-hao-le
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.tai-hao-le
+    targets: [s.tai-hao-le]
+    context: [w.tai, w.hao, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Genial!}
+    comments: []
+  - id: x.produce.tai-hao-le
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.tai-hao-le
+    targets: [s.tai-hao-le]
+    context: [w.tai, w.hao, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Genial!»'}
+    answer: {meaning: ¡Genial!}
+    comments: []
+  - id: x.listen.wode-shouji-shi-bai-de
+    added: 2026-09-29
+    lang: es
+    type: listen
+    sentence: s.wode-shouji-shi-bai-de
+    targets: [s.wode-shouji-shi-bai-de]
+    context: [w.wo, w.de, w.shouji, w.shi, w.bai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mi móvil es blanco.}
+    comments: []
+  - id: x.nuance.adjective-predicate
+    added: 2026-09-29
+    type: nuance
+    targets: [w.hen, w.shi]
+    skills: [comprehension, discrimination]
+    prompt: {text: '¿Cuál está bien: 她是漂亮 o 她很漂亮?'}
+    answer: {hanzi: 她很漂亮。, meaning: 'Con adjetivos no va 是. Se afirma con 很 (她很漂亮), se niega con 不
+        (她不漂亮) y se pregunta con 吗 (她漂亮吗？) o repitiendo el adjetivo (她漂亮不漂亮？).'}
+    lang: es
+    comments: []
+  - id: x.nuance.ai-duan
+    added: 2026-09-29
+    type: nuance
+    targets: [w.ai, w.duan]
+    skills: [comprehension, discrimination]
+    prompt: {text: '矮 o 短: ¿cuál dirías de una persona baja?'}
+    answer: {meaning: '矮 ǎi: bajo de estatura (personas, edificios). 短 duǎn: corto de longitud o de tiempo.'}
+    lang: es
     comments: []

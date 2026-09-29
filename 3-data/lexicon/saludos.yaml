@@ -9,6 +9,8 @@ entries:
     pinyin: nǐ hǎo
     meaning: {es: hola, en: hello}
     register: neutral
+    level: 1
+    level_reason: saludo básico; 你 y 好 son HSK 1
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     frequency: {}
     relations: [p.third-tone-sandhi]
@@ -37,6 +39,7 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Fórmula cortés: 请您 + verbo, «le ruego que…». Por ejemplo, 请您进 qǐng nín jìn, «pase, por favor».', original: 'qǐng nín [verbo] = please you <do smth> (formal)'}
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '请 = 讠 «hablar» + 青 qīng, que da el sonido. La misma pista en 清 qīng «claro» [HSK 6], 晴 qíng «despejado» [HSK 2] y 情 qíng «sentimiento» [HSK 7]; lo que aporta 青 es el sonido, no un significado de «claridad».', original: 'verde azul da como claridad y speech claridad o algo asi ?'}
   - id: w.zaijian
     use: say
     role: content
@@ -54,6 +57,8 @@ entries:
     hanzi: 拜拜
     pinyin: báibái
     meaning: {es: 'adiós (informal, del inglés bye-bye)', en: bye-bye}
+    level: 1
+    level_reason: despedida coloquial de todos los días
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: w.dui
@@ -65,7 +70,7 @@ entries:
     meaning: {es: 'correcto; sí, eso es', en: 'right, correct'}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: 'Variantes: 对啊 duì a, más natural en conversación, y 没错 méi cuò, más enfático («exacto»).', original: duì a / méi cuò (+ intenso)}
+      - {kind: note, private: false, date: 2026-09-25, text: 'Variantes: 对啊 duì a, más natural en conversación, y 没错 méi cuò [HSK 4], más enfático («exacto»).', original: duì a / méi cuò (+ intenso)}
   - id: w.zao
     use: say
     role: content
@@ -83,6 +88,8 @@ entries:
     hanzi: 好的
     pinyin: hǎo de
     meaning: {es: 'vale, de acuerdo', en: OK}
+    level: 1
+    level_reason: respuesta básica; 好 y 的 son HSK 1
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Expresa acuerdo o conformidad: «vale», «muy bien», «de acuerdo».', original: 'subjetivo, muy bien, gusto'}
@@ -93,6 +100,8 @@ entries:
     hanzi: 您好
     pinyin: nín hǎo
     meaning: {es: hola (con respeto), en: hello (polite)}
+    level: 1
+    level_reason: saludo cortés básico; 您 y 好 son HSK 1
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: e.nimenhao
@@ -102,6 +111,8 @@ entries:
     hanzi: 你们好
     pinyin: nǐmen hǎo
     meaning: {es: hola (a un grupo), en: hello (to a group)}
+    level: 1
+    level_reason: saludo a un grupo; 你们 y 好 son HSK 1
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: e.dajiahao
@@ -111,6 +122,8 @@ entries:
     hanzi: 大家好
     pinyin: dàjiā hǎo
     meaning: {es: hola a todos, en: hello everyone}
+    level: 1
+    level_reason: saludo a todos; 大家 y 好 son HSK 1
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: e.laoshihao
@@ -120,6 +133,8 @@ entries:
     hanzi: 老师好
     pinyin: lǎoshī hǎo
     meaning: {es: 'hola, profe', en: 'hello, teacher'}
+    level: 1
+    level_reason: saludo a la profesora; 老师 y 好 son HSK 1
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: g.hao-greetings
@@ -136,4 +151,90 @@ entries:
       - {ref: e.laoshihao, cue: 'a la profesora: el cargo + 好'}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: '您们好 nínmen hǎo: respetuoso, para personas mayores o profesores. 你们好 nǐmen hǎo: relajado, para un grupo de amigos que tienes delante. 大家好 dàjiā hǎo: para dirigirse a todo el mundo, más formal.', original: 'nínmen hǎo → respectful w/ seniors / teachers; nǐmen hǎo → relaxed, friends (grupo delante de mí); dàjiā hǎo → formal, group (todo el mundo)'}
+      - {kind: note, private: false, date: 2026-09-25, text: '您们 nínmen suena forzado y apenas se usa: para saludar con respeto a un grupo, 大家好 dàjiā hǎo o 各位好 gèwèi hǎo [HSK 3]. 你们好 nǐmen hǎo: relajado, para un grupo de amigos que tienes delante. 大家好 dàjiā hǎo: para dirigirse a todo el mundo, más formal.', original: 'nínmen hǎo → respectful w/ seniors / teachers; nǐmen hǎo → relaxed, friends (grupo delante de mí); dàjiā hǎo → formal, group (todo el mundo)'}
+  - id: e.qingwen
+    use: say
+    role: content
+    kind: expression
+    hanzi: 请问
+    pinyin: qǐngwèn
+    meaning: {es: disculpe (para preguntar), en: excuse me (before asking)}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '请 «por favor» + 问 wèn «preguntar»: la forma cortés de abrir una pregunta a alguien.'}
+  - id: e.qingjin
+    use: say
+    role: content
+    kind: expression
+    hanzi: 请进
+    pinyin: qǐng jìn
+    meaning: {es: 'pase, por favor', en: 'come in, please'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: e.qingzuo
+    use: say
+    role: content
+    kind: expression
+    hanzi: 请坐
+    pinyin: qǐng zuò
+    meaning: {es: 'siéntese, por favor', en: please sit down}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.huanying
+    use: say
+    role: content
+    kind: word
+    hanzi: 欢迎
+    pinyin: huānyíng
+    meaning: {es: bienvenido; dar la bienvenida, en: welcome}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-09-27', text: '迎 es salir al encuentro de alguien con una sonrisa; con 欢 «alegría»: recibir con alegría.'}
+  - id: e.shide
+    use: say
+    role: content
+    kind: expression
+    hanzi: 是的
+    pinyin: shì de
+    meaning: {es: 'sí, eso es', en: 'yes, that''s right'}
+    level: 1
+    level_reason: respuesta afirmativa de cada día; 是 y 的 son HSK 1
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    comments:
+      - {kind: note, private: false, date: '2026-09-29', text: 'Sirve para confirmar, igual que 对 y 好的.', original: 'shi de = lo es  dui = exacte  (both are godo to confirm anthgin¿?)'}
+  - id: w.en
+    use: say
+    role: content
+    kind: word
+    hanzi: 嗯
+    pinyin: èn
+    meaning: {es: 'mm, sí (asentimiento)', en: mm-hm (agreement)}
+    level: 1
+    level_reason: 'muletilla oral de asentimiento, muy frecuente al hablar'
+    accept_pinyin_mismatch: 'como asentimiento se dice cayendo, èn; pypinyin da ń, la lectura de «¿eh?»'
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    comments:
+      - {kind: note, private: false, date: '2026-09-29', text: 'Se usa como 对: para asentir mientras el otro habla.', original: 嗯 as dui}
+  - id: w.keyi
+    use: say
+    role: content
+    kind: word
+    hanzi: 可以
+    pinyin: kěyǐ
+    meaning: {es: se puede; vale, en: 'can, may; OK'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: note, private: false, date: '2026-09-29', text: 'También sirve de «vale», como 好的.', original: kê yî = okay (like ke ài) (its liek phnetical calco)}
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2].'}
+  - id: g.yes-forms
+    kind: group
+    basis: set
+    title: Formas de decir que sí
+    explanation: 'El chino no tiene un «sí» único: se confirma según lo que se responde.'
+    members:
+      - {ref: w.dui, cue: 'correcto, tienes razón'}
+      - {ref: e.shide, cue: 'sí, eso es (confirma un hecho)'}
+      - {ref: e.haode, cue: de acuerdo (aceptas algo)}
+      - {ref: w.en, cue: 'mm, te sigo (mientras hablan)'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    comments: []
