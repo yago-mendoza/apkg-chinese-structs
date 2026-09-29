@@ -1913,7 +1913,7 @@ def card_fields(ex, eby, sby, manifest, media_files):
     comments = list(ex.get("comments", []))
     for tid in ex.get("targets", []):
         comments += eby.get(tid, {}).get("comments", [])
-    labels = {"mnemonic": "Mnemotecnia · imagen para recordar, no su origen", "teacher": "Profesora", "linguistic": "Nota", "note": "Apunte",
+    labels = {"mnemonic": "Mnemotecnia · imagen para recordar, no su origen", "teacher": "En clase", "linguistic": "Nota", "note": "Apunte",
               "sound": "Cómo suena"}
     for c in comments:
         if c.get("private", True) is False:
@@ -1936,7 +1936,7 @@ def card_fields(ex, eby, sby, manifest, media_files):
             "notes": f'<div class="box">{"".join(note_section(n) for n in notes)}</div>' if notes else ""}
 
 
-NOTE_KIND = (("ejemplo", "example"), ("mnemotecnia", "mnemonic"), ("profesora", "teacher"), ("cómo suena", "sound"),
+NOTE_KIND = (("ejemplo", "example"), ("mnemotecnia", "mnemonic"), ("en clase", "teacher"), ("cómo suena", "sound"),
              ("pronunciación", "sound"), ("qué es", "status"), ("no se usa solo", "status"),
              ("casi no se usa solo", "status"))
 
