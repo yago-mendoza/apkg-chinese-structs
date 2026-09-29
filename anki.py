@@ -1518,9 +1518,12 @@ def level_of(item_id, eby, sby, levels):
     return levels.get(e.get("hanzi"))
 
 
-def deck_history(exercises, card_level):
-    """Día a día, desde git: tarjetas añadidas (por nivel), editadas y retiradas. El estado actual, si difiere del
-    último commit, cuenta como hoy (así `close-batch` exporta el lote que está cerrando)."""
+def deck_history(exercises, card_level, cache=None):
+    """Día a día, desde git: tarjetas añadidas (por nivel), editadas y retiradas. Devuelve (días, caché). La caché
+    ({upTo, days}) resume lo ya calculado hasta un commit, y viaja en la propia exportación: la siguiente solo lee los
+    commits nuevos. El estado actual, si difiere del último commit, cuenta como hoy y nunca entra en la caché (así
+    `close-batch` exporta el lote que está cerrando)."""
+    import copy
     import subprocess
 
     def git(*args):
@@ -1538,27 +1541,35 @@ def deck_history(exercises, card_level):
     def key(x):
         return json.dumps({k: v for k, v in x.items() if k not in ("theme", "added")}, sort_keys=True, default=str)
 
-    states = []
-    for line in git("log", "--reverse", "--date=short", "--format=%H %ad", "--", "*exercises*").split("\n"):
-        if line.strip():
-            commit, date = line.split()
-            states.append((date, snapshot(commit)))
-    now = {x["id"]: x for x in exercises}
-    if not states or {i: key(x) for i, x in states[-1][1].items()} != {i: key(x) for i, x in now.items()}:
-        states.append((datetime.date.today().isoformat(), now))
-    days, prev = {}, {}
-    for date, cur in states:
+    def apply(days, date, prev, cur):
         d = days.setdefault(date, {"date": date, "added": {}, "edited": 0, "removed": 0})
         for i in cur.keys() - prev.keys():
             lvl = str(card_level(cur[i]) or "unlisted")
             d["added"][lvl] = d["added"].get(lvl, 0) + 1
         d["removed"] += len(prev.keys() - cur.keys())
         d["edited"] += sum(1 for i in cur.keys() & prev.keys() if key(cur[i]) != key(prev[i]))
+
+    commits = [line.split() for line in git("log", "--reverse", "--date=short", "--format=%H %ad", "--",
+                                             "*exercises*").split("\n") if line.strip()]
+    hashes = [c for c, _ in commits]
+    if cache and cache.get("upTo") in hashes:
+        start = hashes.index(cache["upTo"]) + 1
+        days = {d["date"]: copy.deepcopy(d) for d in cache.get("days", [])}
+        prev = snapshot(cache["upTo"])
+    else:
+        start, days, prev = 0, {}, {}
+    for commit, date in commits[start:]:
+        cur = snapshot(commit)
+        apply(days, date, prev, cur)
         prev = cur
-    return list(days.values())
+    new_cache = {"upTo": hashes[-1] if hashes else None, "days": copy.deepcopy(sorted(days.values(), key=lambda d: d["date"]))}
+    now = {x["id"]: x for x in exercises}
+    if {i: key(x) for i, x in prev.items()} != {i: key(x) for i, x in now.items()}:
+        apply(days, datetime.date.today().isoformat(), prev, now)
+    return sorted(days.values(), key=lambda d: d["date"]), new_cache
 
 
-def export_dictionary(entries, sentences, exercises):
+def export_dictionary(entries, sentences, exercises, history_cache=None):
     manifest = load_manifest()
 
     def audio(text):
@@ -1609,6 +1620,7 @@ def export_dictionary(entries, sentences, exercises):
                       f'data-audio="{(MEDIA / m.group(1)).relative_to(ROOT).as_posix()}" aria-label="Play"></button>',
                       html)
 
+    history, new_cache = deck_history(exercises, card_level, history_cache)
     manifest_cards = load_manifest()
     cards = []
     for x in exercises:
@@ -1619,6 +1631,7 @@ def export_dictionary(entries, sentences, exercises):
                       "back": web_html(f["back"] + f["answer_audio"]), "notes": web_html(f["notes"])})
     return {
         "schemaVersion": EXPORT_SCHEMA,
+        "exportedAt": datetime.date.today().isoformat(),
         "source": "https://github.com/yago-mendoza/apkg-chinese-structs",
         "license": "CC BY 4.0",
         "attribution": "Yago Mendoza, «apkg-chinese-structs», https://github.com/yago-mendoza/apkg-chinese-structs, CC BY 4.0",
@@ -1626,7 +1639,7 @@ def export_dictionary(entries, sentences, exercises):
         "counts": {"entries": len(out_entries), "sentences": len(out_sentences), "cards": len(exercises)},
         "themes": [{"id": t["id"], "title": t["title"], "order": n} for n, t in enumerate(load_themes(), 1)],
         "entries": out_entries, "groups": out_groups, "sentences": out_sentences,
-        "cards": cards, "history": deck_history(exercises, card_level),
+        "cards": cards, "history": history, "historyCache": new_cache,
         "deck": {"file": APKG.relative_to(ROOT).as_posix(), "cards": len(exercises)},
     }
 
@@ -1640,7 +1653,14 @@ def cmd_export():
         print(f"`check` tiene {len(errors)} error(es): no se exporta.")
         return 1
     OUTPUT.mkdir(exist_ok=True)
-    data = export_dictionary(entries, sentences, exercises)
+    previous = {}
+    if EXPORT_PATH.exists():
+        try:
+            previous = json.loads(EXPORT_PATH.read_text(encoding="utf-8"))
+        except ValueError:
+            previous = {}
+    cache = previous.get("historyCache") if previous.get("schemaVersion") == EXPORT_SCHEMA else None
+    data = export_dictionary(entries, sentences, exercises, cache)
     EXPORT_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     c = data["counts"]
     print(f"Exportado {EXPORT_PATH.relative_to(ROOT).as_posix()}: {c['entries']} entradas, {c['sentences']} frases, "

@@ -1,0 +1,19 @@
+# After a push that changes the public export, jsDelivr is told to drop its cached copy of the branch, so
+# infraphysics.net/side-quests/chinese (which reads @main) shows the new deck within a minute or two.
+name: publish
+
+on:
+  push:
+    branches: [main]
+    paths: ["5-output/**"]
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge the jsDelivr cache for @main
+        run: |
+          for f in 5-output/dictionary.json 5-output/chino-practico.apkg; do
+            curl -fsS "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/$f" > /dev/null
+            echo "purged $f"
+          done

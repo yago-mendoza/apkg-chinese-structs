@@ -141,6 +141,14 @@ class Repository(unittest.TestCase):
             for path in re.findall(r'data-audio="([^"]+)"', html):
                 self.assertTrue((anki.ROOT / path).exists(), path)
 
+    def test_history_cache_gives_the_same_days(self):
+        entries, sentences, exercises = anki.load()
+        level = lambda x: None
+        full, cache = anki.deck_history(exercises, level)
+        again, cache2 = anki.deck_history(exercises, level, cache)
+        self.assertEqual(full, again)
+        self.assertEqual(cache, cache2)
+
     def test_close_batch_rejects_bad_names(self):
         _, errors = anki.close_batch_plan("2-foo")
         self.assertTrue(errors)

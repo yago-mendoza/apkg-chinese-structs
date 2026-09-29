@@ -1,5 +1,6 @@
 {
  "schemaVersion": 2,
+ "exportedAt": "2026-09-29",
  "source": "https://github.com/yago-mendoza/apkg-chinese-structs",
  "license": "CC BY 4.0",
  "attribution": "Yago Mendoza, «apkg-chinese-structs», https://github.com/yago-mendoza/apkg-chinese-structs, CC BY 4.0",
@@ -7468,12 +7469,12 @@
    "date": "2026-09-26",
    "added": {
     "1": 256,
-    "2": 16,
-    "unlisted": 43,
-    "3": 14,
     "5": 7,
-    "4": 8,
-    "6": 1
+    "2": 16,
+    "3": 14,
+    "unlisted": 43,
+    "6": 1,
+    "4": 8
    },
    "edited": 2,
    "removed": 3
@@ -7481,17 +7482,49 @@
   {
    "date": "2026-09-27",
    "added": {
-    "4": 4,
     "1": 43,
     "unlisted": 11,
-    "5": 3,
     "2": 3,
+    "5": 3,
+    "4": 4,
     "3": 4
    },
    "edited": 0,
    "removed": 68
   }
  ],
+ "historyCache": {
+  "upTo": "febc84f629983d6c1088f8d47629f695b46a9d97",
+  "days": [
+   {
+    "date": "2026-09-26",
+    "added": {
+     "1": 256,
+     "5": 7,
+     "2": 16,
+     "3": 14,
+     "unlisted": 43,
+     "6": 1,
+     "4": 8
+    },
+    "edited": 2,
+    "removed": 3
+   },
+   {
+    "date": "2026-09-27",
+    "added": {
+     "1": 43,
+     "unlisted": 11,
+     "2": 3,
+     "5": 3,
+     "4": 4,
+     "3": 4
+    },
+    "edited": 0,
+    "removed": 68
+   }
+  ]
+ },
  "deck": {
   "file": "5-output/chino-practico.apkg",
   "cards": 342
