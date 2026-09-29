@@ -22,58 +22,63 @@
   },
   {
    "id": "saludos",
-   "title": "Saludos y cortesía",
+   "title": "Saludos y despedidas",
    "order": 2
+  },
+  {
+   "id": "cortesia",
+   "title": "Cortesía y respuestas",
+   "order": 3
   },
   {
    "id": "personas",
    "title": "Personas y pronombres",
-   "order": 3
+   "order": 4
   },
   {
    "id": "presentarse",
    "title": "Presentarse",
-   "order": 4
+   "order": 5
   },
   {
    "id": "familia",
    "title": "Familia",
-   "order": 5
+   "order": 6
   },
   {
    "id": "describir",
    "title": "Describir",
-   "order": 6
+   "order": 7
   },
   {
    "id": "compras",
    "title": "Compras, comida y bebida",
-   "order": 7
+   "order": 8
   },
   {
    "id": "tiempo",
    "title": "Momentos del día",
-   "order": 8
+   "order": 9
   },
   {
    "id": "clima",
    "title": "El tiempo que hace",
-   "order": 9
+   "order": 10
   },
   {
    "id": "numeros",
    "title": "Números",
-   "order": 10
+   "order": 11
   },
   {
    "id": "cosas",
    "title": "Cosas y actividades",
-   "order": 11
+   "order": 12
   },
   {
    "id": "escritura",
    "title": "Caracteres y componentes",
-   "order": 12
+   "order": 13
   }
  ],
  "entries": [
@@ -83,6 +88,8 @@
    "theme": "sonidos",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "title": "Dos terceros tonos seguidos",
    "explanation": "Cuando dos sílabas en tercer tono van seguidas, la primera se pronuncia como segundo tono. Se sigue escribiendo el tono de referencia: 你好 se escribe nǐ hǎo y suena como ní hǎo.",
@@ -95,6 +102,8 @@
    "theme": "sonidos",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "note",
@@ -112,6 +121,8 @@
    "theme": "sonidos",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "note",
@@ -133,6 +144,8 @@
    "theme": "sonidos",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "title": "Tono neutro",
    "explanation": "Sílaba corta y ligera, sin contorno propio; su altura depende de la sílaba anterior. En pinyin va sin marca (ma, ne, de) y en las respuestas se escribe 5.",
@@ -145,6 +158,8 @@
    "theme": "sonidos",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "note",
@@ -162,6 +177,8 @@
    "theme": "sonidos",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "note",
@@ -179,6 +196,8 @@
    "theme": "sonidos",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "title": "La h, desde la garganta",
    "explanation": "La h del pinyin es áspera, más cerca de la j española que de una h muda: el aire roza al fondo de la garganta. 喝 hē, 好 hǎo, 很 hěn.",
@@ -191,6 +210,8 @@
    "theme": "sonidos",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "note",
@@ -208,6 +229,8 @@
    "theme": "saludos",
    "use": "say",
    "level": 1,
+   "levelEstimated": true,
+   "status": null,
    "notes": [],
    "hanzi": "你好",
    "pinyin": "nǐ hǎo",
@@ -227,65 +250,13 @@
    ]
   },
   {
-   "id": "e.xiexie",
-   "kind": "expression",
-   "theme": "saludos",
-   "use": "say",
-   "level": 1,
-   "notes": [
-    {
-     "kind": "linguistic",
-     "text": "La segunda 谢 se dice en tono neutro, corta y sin contorno propio."
-    }
-   ],
-   "hanzi": "谢谢",
-   "pinyin": "xièxie",
-   "ipa": "ɕjɛ˥˩ ɕjɛ",
-   "meaning": {
-    "es": "gracias",
-    "en": "thank you"
-   },
-   "role": "content",
-   "standalone": null,
-   "audio": "3-data/audio/acs_5df2bbf47ef21bfa.mp3",
-   "groups": [],
-   "relations": []
-  },
-  {
-   "id": "w.qing",
-   "kind": "word",
-   "theme": "saludos",
-   "use": "say",
-   "level": 1,
-   "notes": [
-    {
-     "kind": "note",
-     "text": "Fórmula cortés: 请您 + verbo, «le ruego que…». Por ejemplo, 请您进 qǐng nín jìn, «pase, por favor»."
-    },
-    {
-     "kind": "linguistic",
-     "text": "请 = 讠 «hablar» + 青 qīng, que da el sonido. La misma pista en 清 qīng «claro» [HSK 6], 晴 qíng «despejado» [HSK 2] y 情 qíng «sentimiento» [HSK 7]; lo que aporta 青 es el sonido, no un significado de «claridad»."
-    }
-   ],
-   "hanzi": "请",
-   "pinyin": "qǐng",
-   "ipa": "tɕʰiŋ˧˩˧",
-   "meaning": {
-    "es": "por favor",
-    "en": "please"
-   },
-   "role": "content",
-   "standalone": null,
-   "audio": "3-data/audio/acs_1efc69381f14893e.mp3",
-   "groups": [],
-   "relations": []
-  },
-  {
    "id": "w.zaijian",
    "kind": "expression",
    "theme": "saludos",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "note",
@@ -311,6 +282,8 @@
    "theme": "saludos",
    "use": "say",
    "level": 1,
+   "levelEstimated": true,
+   "status": null,
    "notes": [],
    "hanzi": "拜拜",
    "pinyin": "báibái",
@@ -326,38 +299,13 @@
    "relations": []
   },
   {
-   "id": "w.dui",
-   "kind": "word",
-   "theme": "saludos",
-   "use": "say",
-   "level": 1,
-   "notes": [
-    {
-     "kind": "note",
-     "text": "Variantes: 对啊 duì a, más natural en conversación, y 没错 méi cuò [HSK 4], más enfático («exacto»)."
-    }
-   ],
-   "hanzi": "对",
-   "pinyin": "duì",
-   "ipa": "tweɪ˥˩",
-   "meaning": {
-    "es": "correcto; sí, eso es",
-    "en": "right, correct"
-   },
-   "role": "content",
-   "standalone": null,
-   "audio": "3-data/audio/acs_a710b5f8661caad2.mp3",
-   "groups": [
-    "g.yes-forms"
-   ],
-   "relations": []
-  },
-  {
    "id": "w.zao",
    "kind": "expression",
    "theme": "saludos",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "note",
@@ -378,38 +326,13 @@
    "relations": []
   },
   {
-   "id": "e.haode",
-   "kind": "expression",
-   "theme": "saludos",
-   "use": "say",
-   "level": 1,
-   "notes": [
-    {
-     "kind": "note",
-     "text": "Expresa acuerdo o conformidad: «vale», «muy bien», «de acuerdo»."
-    }
-   ],
-   "hanzi": "好的",
-   "pinyin": "hǎo de",
-   "ipa": "xɑʊ˧˩˧ tɤ",
-   "meaning": {
-    "es": "vale, de acuerdo",
-    "en": "OK"
-   },
-   "role": "content",
-   "standalone": null,
-   "audio": "3-data/audio/acs_e3e116db58352045.mp3",
-   "groups": [
-    "g.yes-forms"
-   ],
-   "relations": []
-  },
-  {
    "id": "e.ninhao",
    "kind": "expression",
    "theme": "saludos",
    "use": "say",
    "level": 1,
+   "levelEstimated": true,
+   "status": null,
    "notes": [],
    "hanzi": "您好",
    "pinyin": "nín hǎo",
@@ -432,6 +355,8 @@
    "theme": "saludos",
    "use": "say",
    "level": 1,
+   "levelEstimated": true,
+   "status": null,
    "notes": [],
    "hanzi": "你们好",
    "pinyin": "nǐmen hǎo",
@@ -454,6 +379,8 @@
    "theme": "saludos",
    "use": "hear",
    "level": 1,
+   "levelEstimated": true,
+   "status": null,
    "notes": [],
    "hanzi": "大家好",
    "pinyin": "dàjiā hǎo",
@@ -476,6 +403,8 @@
    "theme": "saludos",
    "use": "say",
    "level": 1,
+   "levelEstimated": true,
+   "status": null,
    "notes": [],
    "hanzi": "老师好",
    "pinyin": "lǎoshī hǎo",
@@ -493,11 +422,156 @@
    "relations": []
   },
   {
-   "id": "e.qingwen",
-   "kind": "expression",
+   "id": "w.huanying",
+   "kind": "word",
    "theme": "saludos",
    "use": "say",
+   "level": 2,
+   "levelEstimated": false,
+   "status": null,
+   "notes": [
+    {
+     "kind": "mnemonic",
+     "text": "迎 es salir al encuentro de alguien con una sonrisa; con 欢 «alegría»: recibir con alegría."
+    }
+   ],
+   "hanzi": "欢迎",
+   "pinyin": "huānyíng",
+   "ipa": "xwan˥ iŋ˧˥",
+   "meaning": {
+    "es": "bienvenido; dar la bienvenida",
+    "en": "welcome"
+   },
+   "role": "content",
+   "standalone": null,
+   "audio": "3-data/audio/acs_06e9f9a6d4c2cfe1.mp3",
+   "groups": [],
+   "relations": []
+  },
+  {
+   "id": "e.xiexie",
+   "kind": "expression",
+   "theme": "cortesia",
+   "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
+   "notes": [
+    {
+     "kind": "linguistic",
+     "text": "La segunda 谢 se dice en tono neutro, corta y sin contorno propio."
+    }
+   ],
+   "hanzi": "谢谢",
+   "pinyin": "xièxie",
+   "ipa": "ɕjɛ˥˩ ɕjɛ",
+   "meaning": {
+    "es": "gracias",
+    "en": "thank you"
+   },
+   "role": "content",
+   "standalone": null,
+   "audio": "3-data/audio/acs_5df2bbf47ef21bfa.mp3",
+   "groups": [],
+   "relations": []
+  },
+  {
+   "id": "w.qing",
+   "kind": "word",
+   "theme": "cortesia",
+   "use": "say",
+   "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
+   "notes": [
+    {
+     "kind": "note",
+     "text": "Fórmula cortés: 请您 + verbo, «le ruego que…». Por ejemplo, 请您进 qǐng nín jìn, «pase, por favor»."
+    },
+    {
+     "kind": "linguistic",
+     "text": "请 = 讠 «hablar» + 青 qīng, que da el sonido. La misma pista en 清 qīng «claro» [HSK 6], 晴 qíng «despejado» [HSK 2] y 情 qíng «sentimiento» [HSK 7]; lo que aporta 青 es el sonido, no un significado de «claridad»."
+    }
+   ],
+   "hanzi": "请",
+   "pinyin": "qǐng",
+   "ipa": "tɕʰiŋ˧˩˧",
+   "meaning": {
+    "es": "por favor",
+    "en": "please"
+   },
+   "role": "content",
+   "standalone": null,
+   "audio": "3-data/audio/acs_1efc69381f14893e.mp3",
+   "groups": [],
+   "relations": []
+  },
+  {
+   "id": "w.dui",
+   "kind": "word",
+   "theme": "cortesia",
+   "use": "say",
+   "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
+   "notes": [
+    {
+     "kind": "note",
+     "text": "Variantes: 对啊 duì a, más natural en conversación, y 没错 méi cuò [HSK 4], más enfático («exacto»)."
+    }
+   ],
+   "hanzi": "对",
+   "pinyin": "duì",
+   "ipa": "tweɪ˥˩",
+   "meaning": {
+    "es": "correcto; sí, eso es",
+    "en": "right, correct"
+   },
+   "role": "content",
+   "standalone": null,
+   "audio": "3-data/audio/acs_a710b5f8661caad2.mp3",
+   "groups": [
+    "g.yes-forms"
+   ],
+   "relations": []
+  },
+  {
+   "id": "e.haode",
+   "kind": "expression",
+   "theme": "cortesia",
+   "use": "say",
+   "level": 1,
+   "levelEstimated": true,
+   "status": null,
+   "notes": [
+    {
+     "kind": "note",
+     "text": "Expresa acuerdo o conformidad: «vale», «muy bien», «de acuerdo»."
+    }
+   ],
+   "hanzi": "好的",
+   "pinyin": "hǎo de",
+   "ipa": "xɑʊ˧˩˧ tɤ",
+   "meaning": {
+    "es": "vale, de acuerdo",
+    "en": "OK"
+   },
+   "role": "content",
+   "standalone": null,
+   "audio": "3-data/audio/acs_e3e116db58352045.mp3",
+   "groups": [
+    "g.yes-forms"
+   ],
+   "relations": []
+  },
+  {
+   "id": "e.qingwen",
+   "kind": "expression",
+   "theme": "cortesia",
+   "use": "say",
+   "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -520,9 +594,11 @@
   {
    "id": "e.qingjin",
    "kind": "expression",
-   "theme": "saludos",
+   "theme": "cortesia",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "请进",
    "pinyin": "qǐng jìn",
@@ -540,9 +616,11 @@
   {
    "id": "e.qingzuo",
    "kind": "expression",
-   "theme": "saludos",
+   "theme": "cortesia",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "请坐",
    "pinyin": "qǐng zuò",
@@ -558,36 +636,13 @@
    "relations": []
   },
   {
-   "id": "w.huanying",
-   "kind": "word",
-   "theme": "saludos",
-   "use": "say",
-   "level": 2,
-   "notes": [
-    {
-     "kind": "mnemonic",
-     "text": "迎 es salir al encuentro de alguien con una sonrisa; con 欢 «alegría»: recibir con alegría."
-    }
-   ],
-   "hanzi": "欢迎",
-   "pinyin": "huānyíng",
-   "ipa": "xwan˥ iŋ˧˥",
-   "meaning": {
-    "es": "bienvenido; dar la bienvenida",
-    "en": "welcome"
-   },
-   "role": "content",
-   "standalone": null,
-   "audio": "3-data/audio/acs_06e9f9a6d4c2cfe1.mp3",
-   "groups": [],
-   "relations": []
-  },
-  {
    "id": "e.shide",
    "kind": "expression",
-   "theme": "saludos",
+   "theme": "cortesia",
    "use": "say",
    "level": 1,
+   "levelEstimated": true,
+   "status": null,
    "notes": [
     {
      "kind": "note",
@@ -612,9 +667,11 @@
   {
    "id": "w.en",
    "kind": "word",
-   "theme": "saludos",
+   "theme": "cortesia",
    "use": "say",
    "level": 1,
+   "levelEstimated": true,
+   "status": "palabra",
    "notes": [
     {
      "kind": "note",
@@ -639,9 +696,11 @@
   {
    "id": "w.keyi",
    "kind": "word",
-   "theme": "saludos",
+   "theme": "cortesia",
    "use": "say",
    "level": 2,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "note",
@@ -671,6 +730,8 @@
    "theme": "personas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "我",
    "pinyin": "wǒ",
@@ -691,6 +752,8 @@
    "theme": "personas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "你",
    "pinyin": "nǐ",
@@ -711,6 +774,8 @@
    "theme": "personas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "note",
@@ -736,6 +801,8 @@
    "theme": "personas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "我们",
    "pinyin": "wǒmen",
@@ -756,6 +823,8 @@
    "theme": "personas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "你们",
    "pinyin": "nǐmen",
@@ -776,6 +845,8 @@
    "theme": "personas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "他",
    "pinyin": "tā",
@@ -798,6 +869,8 @@
    "theme": "personas",
    "use": "read",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "她",
    "pinyin": "tā",
@@ -820,6 +893,8 @@
    "theme": "personas",
    "use": "read",
    "level": 2,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "note",
@@ -847,6 +922,8 @@
    "theme": "personas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "他们",
    "pinyin": "tāmen",
@@ -867,6 +944,8 @@
    "theme": "personas",
    "use": "say",
    "level": 2,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -892,6 +971,8 @@
    "theme": "personas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "老师",
    "pinyin": "lǎoshī",
@@ -914,6 +995,8 @@
    "theme": "personas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "mnemonic",
@@ -939,6 +1022,8 @@
    "theme": "personas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "朋友",
    "pinyin": "péngyou",
@@ -959,6 +1044,8 @@
    "theme": "personas",
    "use": "say",
    "level": 3,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "note",
@@ -988,6 +1075,8 @@
    "theme": "personas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "人",
    "pinyin": "rén",
@@ -1010,6 +1099,8 @@
    "theme": "personas",
    "use": "read",
    "level": 1,
+   "levelEstimated": true,
+   "status": "ligada",
    "notes": [
     {
      "kind": "linguistic",
@@ -1045,6 +1136,8 @@
    "theme": "personas",
    "use": "context",
    "level": 1,
+   "levelEstimated": false,
+   "status": "ligada",
    "notes": [
     {
      "kind": "mnemonic",
@@ -1076,6 +1169,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "mnemonic",
@@ -1101,6 +1196,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": true,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -1130,6 +1227,8 @@
    "theme": "presentarse",
    "use": "hear",
    "level": 1,
+   "levelEstimated": true,
+   "status": null,
    "notes": [
     {
      "kind": "mnemonic",
@@ -1159,6 +1258,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -1184,6 +1285,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "linguistic",
@@ -1209,6 +1312,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "不",
    "pinyin": "bù",
@@ -1231,6 +1336,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "note",
@@ -1256,6 +1363,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "note",
@@ -1281,6 +1390,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "也",
    "pinyin": "yě",
@@ -1301,6 +1412,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "都",
    "pinyin": "dōu",
@@ -1321,6 +1434,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "的",
    "pinyin": "de",
@@ -1341,6 +1456,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "叫",
    "pinyin": "jiào",
@@ -1361,6 +1478,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "什么",
    "pinyin": "shénme",
@@ -1381,6 +1500,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "名字",
    "pinyin": "míngzi",
@@ -1401,6 +1522,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "note",
@@ -1430,6 +1553,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "高兴",
    "pinyin": "gāoxìng",
@@ -1450,6 +1575,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 2,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "teacher",
@@ -1479,6 +1606,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 2,
+   "levelEstimated": true,
+   "status": null,
    "notes": [
     {
      "kind": "teacher",
@@ -1504,6 +1633,8 @@
    "theme": "presentarse",
    "use": "hear",
    "level": 2,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "姓名",
    "pinyin": "xìngmíng",
@@ -1524,6 +1655,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": true,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -1549,6 +1682,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": true,
+   "status": null,
    "notes": [
     {
      "kind": "note",
@@ -1574,6 +1709,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "linguistic",
@@ -1599,6 +1736,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 2,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -1624,6 +1763,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "mnemonic",
@@ -1655,6 +1796,8 @@
    "theme": "presentarse",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -1684,6 +1827,8 @@
    "theme": "presentarse",
    "use": "context",
    "level": 1,
+   "levelEstimated": true,
+   "status": null,
    "notes": [],
    "hanzi": "大卫",
    "pinyin": "Dàwèi",
@@ -1704,6 +1849,8 @@
    "theme": "familia",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "爸爸",
    "pinyin": "bàba",
@@ -1724,6 +1871,8 @@
    "theme": "familia",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -1753,6 +1902,8 @@
    "theme": "familia",
    "use": "hear",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "note",
@@ -1780,6 +1931,8 @@
    "theme": "familia",
    "use": "hear",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -1807,6 +1960,8 @@
    "theme": "familia",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "孩子",
    "pinyin": "háizi",
@@ -1827,6 +1982,8 @@
    "theme": "familia",
    "use": "hear",
    "level": 1,
+   "levelEstimated": true,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -1852,6 +2009,8 @@
    "theme": "describir",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "note",
@@ -1885,6 +2044,8 @@
    "theme": "describir",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "mnemonic",
@@ -1912,6 +2073,8 @@
    "theme": "describir",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "mnemonic",
@@ -1941,6 +2104,8 @@
    "theme": "describir",
    "use": "hear",
    "level": 4,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "mnemonic",
@@ -1970,6 +2135,8 @@
    "theme": "describir",
    "use": "hear",
    "level": 3,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "linguistic",
@@ -2003,6 +2170,8 @@
    "theme": "describir",
    "use": "hear",
    "level": 5,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "mnemonic",
@@ -2032,6 +2201,8 @@
    "theme": "describir",
    "use": "say",
    "level": 2,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -2061,6 +2232,8 @@
    "theme": "describir",
    "use": "hear",
    "level": 4,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "linguistic",
@@ -2088,6 +2261,8 @@
    "theme": "describir",
    "use": "hear",
    "level": 5,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "sound",
@@ -2117,6 +2292,8 @@
    "theme": "describir",
    "use": "hear",
    "level": 4,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "mnemonic",
@@ -2142,6 +2319,8 @@
    "theme": "describir",
    "use": "say",
    "level": 2,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "mnemonic",
@@ -2171,6 +2350,8 @@
    "theme": "describir",
    "use": "hear",
    "level": 5,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -2200,6 +2381,8 @@
    "theme": "describir",
    "use": "hear",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "白",
    "pinyin": "bái",
@@ -2220,6 +2403,8 @@
    "theme": "describir",
    "use": "hear",
    "level": 2,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "linguistic",
@@ -2245,6 +2430,8 @@
    "theme": "describir",
    "use": "hear",
    "level": 2,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "linguistic",
@@ -2270,6 +2457,8 @@
    "theme": "describir",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "linguistic",
@@ -2297,6 +2486,8 @@
    "theme": "describir",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "太",
    "pinyin": "tài",
@@ -2319,6 +2510,8 @@
    "theme": "describir",
    "use": "hear",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "linguistic",
@@ -2346,6 +2539,8 @@
    "theme": "compras",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "喝",
    "pinyin": "hē",
@@ -2366,6 +2561,8 @@
    "theme": "compras",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "水",
    "pinyin": "shuǐ",
@@ -2386,6 +2583,8 @@
    "theme": "compras",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "note",
@@ -2413,6 +2612,8 @@
    "theme": "compras",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "去",
    "pinyin": "qù",
@@ -2433,6 +2634,8 @@
    "theme": "compras",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "买",
    "pinyin": "mǎi",
@@ -2453,6 +2656,8 @@
    "theme": "compras",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "水果",
    "pinyin": "shuǐguǒ",
@@ -2475,6 +2680,8 @@
    "theme": "compras",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "商店",
    "pinyin": "shāngdiàn",
@@ -2495,6 +2702,8 @@
    "theme": "compras",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "在",
    "pinyin": "zài",
@@ -2515,6 +2724,8 @@
    "theme": "compras",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "哪儿",
    "pinyin": "nǎr",
@@ -2537,6 +2748,8 @@
    "theme": "compras",
    "use": "say",
    "level": 3,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -2562,6 +2775,8 @@
    "theme": "compras",
    "use": "hear",
    "level": 4,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -2587,6 +2802,8 @@
    "theme": "compras",
    "use": "say",
    "level": 2,
+   "levelEstimated": true,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -2612,6 +2829,8 @@
    "theme": "compras",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "mnemonic",
@@ -2643,6 +2862,8 @@
    "theme": "compras",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "mnemonic",
@@ -2670,6 +2891,8 @@
    "theme": "compras",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -2695,6 +2918,8 @@
    "theme": "compras",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "mnemonic",
@@ -2722,6 +2947,8 @@
    "theme": "compras",
    "use": "hear",
    "level": 3,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -2751,6 +2978,8 @@
    "theme": "compras",
    "use": "hear",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "linguistic",
@@ -2780,6 +3009,8 @@
    "theme": "compras",
    "use": "hear",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -2805,6 +3036,8 @@
    "theme": "compras",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -2834,6 +3067,8 @@
    "theme": "compras",
    "use": "hear",
    "level": 2,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -2859,6 +3094,8 @@
    "theme": "tiempo",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "上午",
    "pinyin": "shàngwǔ",
@@ -2882,6 +3119,8 @@
    "theme": "tiempo",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "中午",
    "pinyin": "zhōngwǔ",
@@ -2905,6 +3144,8 @@
    "theme": "tiempo",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "下午",
    "pinyin": "xiàwǔ",
@@ -2928,6 +3169,8 @@
    "theme": "tiempo",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "明天",
    "pinyin": "míngtiān",
@@ -2948,6 +3191,8 @@
    "theme": "tiempo",
    "use": "hear",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "mnemonic",
@@ -2975,6 +3220,8 @@
    "theme": "tiempo",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "晚上",
    "pinyin": "wǎnshang",
@@ -2999,6 +3246,8 @@
    "theme": "clima",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "天气",
    "pinyin": "tiānqì",
@@ -3019,6 +3268,8 @@
    "theme": "clima",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "sound",
@@ -3044,6 +3295,8 @@
    "theme": "clima",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "冷",
    "pinyin": "lěng",
@@ -3064,6 +3317,8 @@
    "theme": "clima",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -3089,6 +3344,8 @@
    "theme": "numeros",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "八",
    "pinyin": "bā",
@@ -3111,6 +3368,8 @@
    "theme": "numeros",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "一",
    "pinyin": "yī",
@@ -3131,6 +3390,8 @@
    "theme": "numeros",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "二",
    "pinyin": "èr",
@@ -3151,6 +3412,8 @@
    "theme": "numeros",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "三",
    "pinyin": "sān",
@@ -3171,6 +3434,8 @@
    "theme": "numeros",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "四",
    "pinyin": "sì",
@@ -3191,6 +3456,8 @@
    "theme": "numeros",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "五",
    "pinyin": "wǔ",
@@ -3211,6 +3478,8 @@
    "theme": "numeros",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "六",
    "pinyin": "liù",
@@ -3231,6 +3500,8 @@
    "theme": "numeros",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "七",
    "pinyin": "qī",
@@ -3251,6 +3522,8 @@
    "theme": "numeros",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "九",
    "pinyin": "jiǔ",
@@ -3271,6 +3544,8 @@
    "theme": "numeros",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "十",
    "pinyin": "shí",
@@ -3291,6 +3566,8 @@
    "theme": "numeros",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "linguistic",
@@ -3316,6 +3593,8 @@
    "theme": "numeros",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "有",
    "pinyin": "yǒu",
@@ -3336,6 +3615,8 @@
    "theme": "numeros",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "linguistic",
@@ -3361,6 +3642,8 @@
    "theme": "cosas",
    "use": "context",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "在",
    "pinyin": "zài",
@@ -3381,6 +3664,8 @@
    "theme": "cosas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "mnemonic",
@@ -3406,6 +3691,8 @@
    "theme": "cosas",
    "use": "hear",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -3431,6 +3718,8 @@
    "theme": "cosas",
    "use": "say",
    "level": 1,
+   "levelEstimated": true,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -3456,6 +3745,8 @@
    "theme": "cosas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "书",
    "pinyin": "shū",
@@ -3476,6 +3767,8 @@
    "theme": "cosas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -3505,6 +3798,8 @@
    "theme": "cosas",
    "use": "hear",
    "level": 3,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -3530,6 +3825,8 @@
    "theme": "cosas",
    "use": "hear",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -3555,6 +3852,8 @@
    "theme": "cosas",
    "use": "read",
    "level": 2,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "入口",
    "pinyin": "rùkǒu",
@@ -3577,6 +3876,8 @@
    "theme": "cosas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "这",
    "pinyin": "zhè",
@@ -3597,6 +3898,8 @@
    "theme": "cosas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "那",
    "pinyin": "nà",
@@ -3619,6 +3922,8 @@
    "theme": "cosas",
    "use": "hear",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "linguistic",
@@ -3647,6 +3952,8 @@
    "theme": "cosas",
    "use": "hear",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "飞机",
    "pinyin": "fēijī",
@@ -3667,6 +3974,8 @@
    "theme": "cosas",
    "use": "hear",
    "level": 2,
+   "levelEstimated": true,
+   "status": null,
    "notes": [],
    "hanzi": "小猫",
    "pinyin": "xiǎomāo",
@@ -3687,6 +3996,8 @@
    "theme": "cosas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -3712,6 +4023,8 @@
    "theme": "cosas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "走",
    "pinyin": "zǒu",
@@ -3732,6 +4045,8 @@
    "theme": "cosas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "linguistic",
@@ -3757,6 +4072,8 @@
    "theme": "cosas",
    "use": "say",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "linguistic",
@@ -3782,6 +4099,8 @@
    "theme": "cosas",
    "use": "hear",
    "level": 2,
+   "levelEstimated": false,
+   "status": null,
    "notes": [],
    "hanzi": "篮球",
    "pinyin": "lánqiú",
@@ -3802,6 +4121,8 @@
    "theme": "cosas",
    "use": "hear",
    "level": 1,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [
     {
      "kind": "linguistic",
@@ -3827,6 +4148,8 @@
    "theme": "cosas",
    "use": "read",
    "level": 2,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -3854,6 +4177,8 @@
    "theme": "cosas",
    "use": "hear",
    "level": 5,
+   "levelEstimated": false,
+   "status": null,
    "notes": [
     {
      "kind": "linguistic",
@@ -3879,6 +4204,8 @@
    "theme": "escritura",
    "use": "read",
    "level": 1,
+   "levelEstimated": true,
+   "status": "ligada",
    "notes": [],
    "hanzi": "午",
    "pinyin": "wǔ",
@@ -3901,6 +4228,8 @@
    "theme": "escritura",
    "use": "read",
    "level": 3,
+   "levelEstimated": false,
+   "status": "palabra",
    "notes": [],
    "hanzi": "牛",
    "pinyin": "niú",
@@ -3922,7 +4251,9 @@
    "kind": "character",
    "theme": "escritura",
    "use": "read",
-   "level": 2,
+   "level": 1,
+   "levelEstimated": false,
+   "status": "ligada",
    "notes": [
     {
      "kind": "mnemonic",
@@ -3949,7 +4280,9 @@
    "kind": "character",
    "theme": "escritura",
    "use": "read",
-   "level": 6,
+   "level": 2,
+   "levelEstimated": false,
+   "status": "ligada",
    "notes": [],
    "hanzi": "入",
    "pinyin": "rù",
@@ -3972,7 +4305,13 @@
    "theme": "escritura",
    "use": "read",
    "level": 1,
+   "levelEstimated": false,
+   "status": "componente",
    "notes": [],
+   "asWord": {
+    "es": "mujer, femenino (女的, 女人)",
+    "pinyin": "nǚ"
+   },
    "hanzi": "女",
    "pinyin": "nǚ",
    "ipa": null,
@@ -3992,12 +4331,18 @@
    "theme": "escritura",
    "use": "read",
    "level": 1,
+   "levelEstimated": false,
+   "status": "componente",
    "notes": [
     {
      "kind": "note",
      "text": "Como componente, aparece en caracteres relacionados con la boca o con hablar, como 叫 o 吗."
     }
    ],
+   "asWord": {
+    "es": "boca; clasificador de personas en una familia (三口人)",
+    "pinyin": "kǒu"
+   },
    "hanzi": "口",
    "pinyin": "kǒu",
    "ipa": null,
@@ -4017,12 +4362,18 @@
    "theme": "escritura",
    "use": "read",
    "level": 1,
+   "levelEstimated": false,
+   "status": "componente",
    "notes": [
     {
      "kind": "note",
      "text": "Como componente, 月 suele ser 肉 «carne» y no «luna»: aparece en partes del cuerpo, como 胖 o 脸."
     }
    ],
+   "asWord": {
+    "es": "luna; mes",
+    "pinyin": "yuè"
+   },
    "hanzi": "月",
    "pinyin": "yuè",
    "ipa": null,
@@ -4042,6 +4393,8 @@
    "theme": "escritura",
    "use": "read",
    "level": 1,
+   "levelEstimated": true,
+   "status": "componente",
    "notes": [],
    "hanzi": "目",
    "pinyin": "mù",
@@ -4062,6 +4415,8 @@
    "theme": "escritura",
    "use": "context",
    "level": 1,
+   "levelEstimated": true,
+   "status": "componente",
    "notes": [],
    "hanzi": "亻",
    "pinyin": "rén",
@@ -4082,6 +4437,8 @@
    "theme": "escritura",
    "use": "read",
    "level": 1,
+   "levelEstimated": true,
+   "status": "componente",
    "notes": [
     {
      "kind": "linguistic",
@@ -4109,6 +4466,8 @@
    "theme": "escritura",
    "use": "read",
    "level": 1,
+   "levelEstimated": true,
+   "status": "componente",
    "notes": [
     {
      "kind": "linguistic",
@@ -4136,6 +4495,8 @@
    "theme": "escritura",
    "use": "read",
    "level": 2,
+   "levelEstimated": true,
+   "status": "componente",
    "notes": [
     {
      "kind": "linguistic",
@@ -4163,6 +4524,8 @@
    "theme": "escritura",
    "use": "read",
    "level": 1,
+   "levelEstimated": true,
+   "status": "componente",
    "notes": [
     {
      "kind": "linguistic",
@@ -4190,6 +4553,8 @@
    "theme": "escritura",
    "use": "read",
    "level": 1,
+   "levelEstimated": true,
+   "status": "componente",
    "notes": [
     {
      "kind": "linguistic",
@@ -4217,12 +4582,18 @@
    "theme": "escritura",
    "use": "read",
    "level": 4,
+   "levelEstimated": false,
+   "status": "componente",
    "notes": [
     {
      "kind": "linguistic",
      "text": "户 es una sola hoja; 门, las dos. Aparece en 窗户 chuānghu «ventana» [HSK 4] y 账户 zhànghù «cuenta bancaria» [HSK 6]."
     }
    ],
+   "asWord": {
+    "es": "hogar, casa (clasificador de hogares: 三户人家)",
+    "pinyin": "hù"
+   },
    "hanzi": "户",
    "pinyin": "hù",
    "ipa": null,
@@ -4244,6 +4615,8 @@
    "theme": "escritura",
    "use": "context",
    "level": 1,
+   "levelEstimated": true,
+   "status": "componente",
    "notes": [
     {
      "kind": "linguistic",
@@ -4299,7 +4672,7 @@
    "basis": "set",
    "title": "Formas de decir que sí",
    "explanation": "El chino no tiene un «sí» único: se confirma según lo que se responde.",
-   "theme": "saludos",
+   "theme": "cortesia",
    "members": [
     {
      "ref": "w.dui",
@@ -4760,8 +5133,37 @@
    "audio": "3-data/audio/acs_83119daaa0f076d8.mp3"
   },
   {
-   "id": "s.haode-xiexie",
+   "id": "s.huanying-ni",
    "theme": "saludos",
+   "use": "say",
+   "text": "欢迎你！",
+   "pinyin": "huānyíng nǐ",
+   "segments": [
+    {
+     "text": "欢迎",
+     "ref": "w.huanying",
+     "pinyin": "huānyíng"
+    },
+    {
+     "text": "你",
+     "ref": "w.ni",
+     "pinyin": "nǐ"
+    },
+    {
+     "text": "！",
+     "ref": null,
+     "pinyin": null
+    }
+   ],
+   "translation": {
+    "es": "¡Bienvenido!",
+    "en": "Welcome!"
+   },
+   "audio": "3-data/audio/acs_ffc0572e9f292892.mp3"
+  },
+  {
+   "id": "s.haode-xiexie",
+   "theme": "cortesia",
    "use": "say",
    "text": "好的，谢谢！",
    "pinyin": "hǎo de xièxie",
@@ -4795,7 +5197,7 @@
   },
   {
    "id": "s.qing-he-kafei",
-   "theme": "saludos",
+   "theme": "cortesia",
    "use": "hear",
    "text": "请喝咖啡。",
    "pinyin": "qǐng hē kāfēi",
@@ -4828,37 +5230,8 @@
    "audio": "3-data/audio/acs_423e3ed6cf1e3ec3.mp3"
   },
   {
-   "id": "s.huanying-ni",
-   "theme": "saludos",
-   "use": "say",
-   "text": "欢迎你！",
-   "pinyin": "huānyíng nǐ",
-   "segments": [
-    {
-     "text": "欢迎",
-     "ref": "w.huanying",
-     "pinyin": "huānyíng"
-    },
-    {
-     "text": "你",
-     "ref": "w.ni",
-     "pinyin": "nǐ"
-    },
-    {
-     "text": "！",
-     "ref": null,
-     "pinyin": null
-    }
-   ],
-   "translation": {
-    "es": "¡Bienvenido!",
-    "en": "Welcome!"
-   },
-   "audio": "3-data/audio/acs_ffc0572e9f292892.mp3"
-  },
-  {
    "id": "s.en-xiexie",
-   "theme": "saludos",
+   "theme": "cortesia",
    "use": "say",
    "text": "嗯，谢谢！",
    "pinyin": "èn xièxie",
@@ -8133,28 +8506,6 @@
    "notes": "<div class=\"box\"><h4>Explicación</h4>Se escriben dos terceros tonos aunque la primera sílaba suene en segundo.<h4>Saludos con 好</h4>A quien saludas + 好. El registro cambia según a quién te diriges.<div class=\"is-target\">你好 nǐ hǎo — hola · una persona; neutro</div><div>您好 nín hǎo — hola (con respeto) · una persona mayor o de respeto (您)</div><div>你们好 nǐmen hǎo — hola (a un grupo) · un grupo que tienes delante; relajado</div><div>大家好 dàjiā hǎo — hola a todos · todo el mundo; más amplio y formal</div><div>老师好 lǎoshī hǎo — hola, profe · a la profesora: el cargo + 好</div><h4>Dos terceros tonos seguidos</h4>Cuando dos sílabas en tercer tono van seguidas, la primera se pronuncia como segundo tono. Se sigue escribiendo el tono de referencia: 你好 se escribe nǐ hǎo y suena como ní hǎo.<div>Ejemplo del fenómeno: 你好 <button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d557f9fc80756070.mp3\" aria-label=\"Play\"></button></div></div>"
   },
   {
-   "id": "x.tones.xiexie",
-   "type": "tones",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "Escribe el tono de cada sílaba (1–4, 5 = neutro).",
-   "front": "<div class=\"hanzi\">谢谢</div><div class=\"pinyin\">xie xie</div><div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div>",
-   "back": "<div class=\"hanzi\">谢谢</div><div class=\"pinyin\">xièxie</div><div class=\"ipa\">[ɕjɛ˥˩ ɕjɛ]</div><div class=\"meaning\">gracias</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_5df2bbf47ef21bfa.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Explicación</h4>Cuarto tono y después tono neutro.<h4>Pronunciación</h4><div>xiè: x suena casi como una sh suave, con la lengua plana y sonriendo [ɕjɛ˥˩]</div><h4>Ejemplos</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">èn</span><span class=\"hz\">嗯</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Sí, gracias.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0ea4ff75ec3e8a13.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div><h4>Nota</h4>La segunda 谢 se dice en tono neutro, corta y sin contorno propio.</div>"
-  },
-  {
-   "id": "x.produce.xiexie",
-   "type": "produce",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "Te sirven agua. ¿Qué dices?",
-   "front": "",
-   "back": "<div class=\"hanzi\">谢谢</div><div class=\"pinyin\">xièxie</div><div class=\"ipa\">[ɕjɛ˥˩ ɕjɛ]</div><div class=\"meaning\">gracias</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_5df2bbf47ef21bfa.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Ejemplos</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">èn</span><span class=\"hz\">嗯</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Sí, gracias.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0ea4ff75ec3e8a13.mp3\" aria-label=\"Play\"></button></div><h4>Nota</h4>La segunda 谢 se dice en tono neutro, corta y sin contorno propio.</div>"
-  },
-  {
    "id": "x.speak.nihao",
    "type": "speak",
    "theme": "saludos",
@@ -8164,17 +8515,6 @@
    "front": "<div class=\"hanzi\">你好</div><div class=\"pinyin\">nǐ hǎo</div>",
    "back": "<div class=\"hanzi\">你好</div><div class=\"pinyin\">nǐ hǎo</div><div class=\"ipa\">[ni˧˩˧ xɑʊ˧˩˧]</div><div class=\"meaning\">hola</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d557f9fc80756070.mp3\" aria-label=\"Play\"></button>",
    "notes": "<div class=\"box\"><h4>Saludos con 好</h4>A quien saludas + 好. El registro cambia según a quién te diriges.<div class=\"is-target\">你好 nǐ hǎo — hola · una persona; neutro</div><div>您好 nín hǎo — hola (con respeto) · una persona mayor o de respeto (您)</div><div>你们好 nǐmen hǎo — hola (a un grupo) · un grupo que tienes delante; relajado</div><div>大家好 dàjiā hǎo — hola a todos · todo el mundo; más amplio y formal</div><div>老师好 lǎoshī hǎo — hola, profe · a la profesora: el cargo + 好</div><h4>Dos terceros tonos seguidos</h4>Cuando dos sílabas en tercer tono van seguidas, la primera se pronuncia como segundo tono. Se sigue escribiendo el tono de referencia: 你好 se escribe nǐ hǎo y suena como ní hǎo.<div>Ejemplo del fenómeno: 你好 <button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d557f9fc80756070.mp3\" aria-label=\"Play\"></button></div><h4>Pronunciación</h4><div>hǎo: h es una jota suave, rasposa [xɑʊ˧˩˧]</div></div>"
-  },
-  {
-   "id": "x.read.qing",
-   "type": "read",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "Escribe el pinyin y recuerda el significado.",
-   "front": "<div class=\"hanzi\">请</div>",
-   "back": "<div class=\"hanzi\">请</div><div class=\"pinyin\">qǐng</div><div class=\"ipa\">[tɕʰiŋ˧˩˧]</div><div class=\"meaning\">por favor</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1efc69381f14893e.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Apunte</h4>Fórmula cortés: 请您 + verbo, «le ruego que…». Por ejemplo, 请您进 qǐng nín jìn, «pase, por favor».<h4>Nota</h4>请 = 讠 «hablar» + 青 qīng, que da el sonido. La misma pista en 清 qīng «claro» [HSK 6], 晴 qíng «despejado» [HSK 2] y 情 qíng «sentimiento» [HSK 7]; lo que aporta 青 es el sonido, no un significado de «claridad».</div>"
   },
   {
    "id": "x.read.zaijian",
@@ -8199,17 +8539,6 @@
    "notes": ""
   },
   {
-   "id": "x.read.dui",
-   "type": "read",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "Escribe el pinyin y recuerda el significado.",
-   "front": "<div class=\"hanzi\">对</div>",
-   "back": "<div class=\"hanzi\">对</div><div class=\"pinyin\">duì</div><div class=\"ipa\">[tweɪ˥˩]</div><div class=\"meaning\">correcto; sí, eso es</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a710b5f8661caad2.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div class=\"is-target\">对 duì — correcto; sí, eso es · correcto, tienes razón</div><div>是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div>好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">duì</span><span class=\"hz\">对</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c2\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c3\"><span class=\"py\">nǐmen</span><span class=\"hz\">你们</span></span><span class=\"seg c4\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c0\"><span class=\"py\">lǎoshī</span><span class=\"hz\">老师</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Sí, soy vuestro profesor.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_4b0e0c54eeed82ea.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>Variantes: 对啊 duì a, más natural en conversación, y 没错 méi cuò [HSK 4], más enfático («exacto»).</div>"
-  },
-  {
    "id": "x.read.zao",
    "type": "read",
    "theme": "saludos",
@@ -8219,17 +8548,6 @@
    "front": "<div class=\"hanzi\">早</div>",
    "back": "<div class=\"hanzi\">早</div><div class=\"pinyin\">zǎo</div><div class=\"ipa\">[tsɑʊ˧˩˧]</div><div class=\"meaning\">¡buenos días! (informal); temprano</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_cf7d86e2950eaa5e.mp3\" aria-label=\"Play\"></button>",
    "notes": "<div class=\"box\"><h4>Apunte</h4>Forma abreviada de 早上好 zǎoshang hǎo, «buenos días».</div>"
-  },
-  {
-   "id": "x.read.haode",
-   "type": "read",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "Escribe el pinyin y recuerda el significado.",
-   "front": "<div class=\"hanzi\">好的</div>",
-   "back": "<div class=\"hanzi\">好的</div><div class=\"pinyin\">hǎo de</div><div class=\"ipa\">[xɑʊ˧˩˧ tɤ]</div><div class=\"meaning\">vale, de acuerdo</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e3e116db58352045.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div>是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div class=\"is-target\">好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>Expresa acuerdo o conformidad: «vale», «muy bien», «de acuerdo».</div>"
   },
   {
    "id": "x.produce.zaijian",
@@ -8274,17 +8592,6 @@
    "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_83119daaa0f076d8.mp3\" aria-label=\"Play\"></button>",
    "back": "<div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">yě</span><span class=\"hz\">也</span></span><span class=\"seg c2\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c3\"><span class=\"py\">hǎo</span><span class=\"hz\">好</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div class=\"meaning\">Yo también estoy bien.</div>",
    "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>hěn: en suena con una e muy breve, casi «ən» [xən˧˩˧]</div><div>hěn: h es una jota suave, rasposa [xən˧˩˧]</div></div>"
-  },
-  {
-   "id": "x.listen.haode-xiexie",
-   "type": "listen",
-   "theme": "saludos",
-   "level": 1,
-   "typed": false,
-   "task": "Escucha. ¿Qué significa?",
-   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button>",
-   "back": "<div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div class=\"meaning\">Vale, ¡gracias!</div>",
-   "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>xiè: x suena casi como una sh suave, con la lengua plana y sonriendo [ɕjɛ˥˩]</div><div>de: esta e no es española: suena hacia atrás, casi como una o sin redondear [tɤ]</div><div>hǎo: h es una jota suave, rasposa [xɑʊ˧˩˧]</div></div>"
   },
   {
    "id": "x.produce.ni-hao-ma",
@@ -8375,28 +8682,6 @@
    "notes": "<div class=\"box\"><h4>Saludos con 好</h4>A quien saludas + 好. El registro cambia según a quién te diriges.<div class=\"is-target\">你好 nǐ hǎo — hola · una persona; neutro</div><div>您好 nín hǎo — hola (con respeto) · una persona mayor o de respeto (您)</div><div>你们好 nǐmen hǎo — hola (a un grupo) · un grupo que tienes delante; relajado</div><div>大家好 dàjiā hǎo — hola a todos · todo el mundo; más amplio y formal</div><div>老师好 lǎoshī hǎo — hola, profe · a la profesora: el cargo + 好</div><h4>Dos terceros tonos seguidos</h4>Cuando dos sílabas en tercer tono van seguidas, la primera se pronuncia como segundo tono. Se sigue escribiendo el tono de referencia: 你好 se escribe nǐ hǎo y suena como ní hǎo.<div>Ejemplo del fenómeno: 你好 <button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d557f9fc80756070.mp3\" aria-label=\"Play\"></button></div><h4>Pronunciación</h4><div>hǎo: h es una jota suave, rasposa [xɑʊ˧˩˧]</div></div>"
   },
   {
-   "id": "x.read.xiexie",
-   "type": "read",
-   "theme": "saludos",
-   "level": 1,
-   "typed": false,
-   "task": "Lee: pinyin y significado.",
-   "front": "<div class=\"hanzi\">谢谢</div>",
-   "back": "<div class=\"hanzi\">谢谢</div><div class=\"pinyin\">xièxie</div><div class=\"ipa\">[ɕjɛ˥˩ ɕjɛ]</div><div class=\"meaning\">gracias</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_5df2bbf47ef21bfa.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Ejemplos</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">èn</span><span class=\"hz\">嗯</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Sí, gracias.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0ea4ff75ec3e8a13.mp3\" aria-label=\"Play\"></button></div><h4>Nota</h4>La segunda 谢 se dice en tono neutro, corta y sin contorno propio.</div>"
-  },
-  {
-   "id": "x.produce.qing",
-   "type": "produce",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "¿Cómo se dice «por favor»? Escribe el pinyin.",
-   "front": "",
-   "back": "<div class=\"hanzi\">请</div><div class=\"pinyin\">qǐng</div><div class=\"ipa\">[tɕʰiŋ˧˩˧]</div><div class=\"meaning\">por favor</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1efc69381f14893e.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Apunte</h4>Fórmula cortés: 请您 + verbo, «le ruego que…». Por ejemplo, 请您进 qǐng nín jìn, «pase, por favor».<h4>Nota</h4>请 = 讠 «hablar» + 青 qīng, que da el sonido. La misma pista en 清 qīng «claro» [HSK 6], 晴 qíng «despejado» [HSK 2] y 情 qíng «sentimiento» [HSK 7]; lo que aporta 青 es el sonido, no un significado de «claridad».</div>"
-  },
-  {
    "id": "x.produce.baibai",
    "type": "produce",
    "theme": "saludos",
@@ -8408,17 +8693,6 @@
    "notes": ""
   },
   {
-   "id": "x.produce.dui",
-   "type": "produce",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "¿Cómo se dice «correcto; sí, eso es»? Escribe el pinyin.",
-   "front": "",
-   "back": "<div class=\"hanzi\">对</div><div class=\"pinyin\">duì</div><div class=\"ipa\">[tweɪ˥˩]</div><div class=\"meaning\">correcto; sí, eso es</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a710b5f8661caad2.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div class=\"is-target\">对 duì — correcto; sí, eso es · correcto, tienes razón</div><div>是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div>好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">duì</span><span class=\"hz\">对</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c2\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c3\"><span class=\"py\">nǐmen</span><span class=\"hz\">你们</span></span><span class=\"seg c4\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c0\"><span class=\"py\">lǎoshī</span><span class=\"hz\">老师</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Sí, soy vuestro profesor.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_4b0e0c54eeed82ea.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>Variantes: 对啊 duì a, más natural en conversación, y 没错 méi cuò [HSK 4], más enfático («exacto»).</div>"
-  },
-  {
    "id": "x.produce.zao",
    "type": "produce",
    "theme": "saludos",
@@ -8428,28 +8702,6 @@
    "front": "",
    "back": "<div class=\"hanzi\">早</div><div class=\"pinyin\">zǎo</div><div class=\"ipa\">[tsɑʊ˧˩˧]</div><div class=\"meaning\">¡buenos días! (informal); temprano</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_cf7d86e2950eaa5e.mp3\" aria-label=\"Play\"></button>",
    "notes": "<div class=\"box\"><h4>Apunte</h4>Forma abreviada de 早上好 zǎoshang hǎo, «buenos días».</div>"
-  },
-  {
-   "id": "x.produce.haode",
-   "type": "produce",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "¿Cómo se dice «vale, de acuerdo»? Escribe el pinyin.",
-   "front": "",
-   "back": "<div class=\"hanzi\">好的</div><div class=\"pinyin\">hǎo de</div><div class=\"ipa\">[xɑʊ˧˩˧ tɤ]</div><div class=\"meaning\">vale, de acuerdo</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e3e116db58352045.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div>是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div class=\"is-target\">好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>Expresa acuerdo o conformidad: «vale», «muy bien», «de acuerdo».</div>"
-  },
-  {
-   "id": "x.tones.haode",
-   "type": "tones",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "Escribe el tono de cada sílaba (1–4, 5 = neutro).",
-   "front": "<div class=\"hanzi\">好的</div><div class=\"pinyin\">hao de</div><div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div>",
-   "back": "<div class=\"hanzi\">好的</div><div class=\"pinyin\">hǎo de</div><div class=\"ipa\">[xɑʊ˧˩˧ tɤ]</div><div class=\"meaning\">vale, de acuerdo</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e3e116db58352045.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div>是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div class=\"is-target\">好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Tono neutro</h4>Sílaba corta y ligera, sin contorno propio; su altura depende de la sílaba anterior. En pinyin va sin marca (ma, ne, de) y en las respuestas se escribe 5.<div>Ejemplo del fenómeno: 什么 <button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0fbce95bf35e5b57.mp3\" aria-label=\"Play\"></button></div><h4>Pronunciación</h4><div>de: esta e no es española: suena hacia atrás, casi como una o sin redondear [tɤ]</div><div>hǎo: h es una jota suave, rasposa [xɑʊ˧˩˧]</div><div>de: d sin aire, casi una t española [tɤ]</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>Expresa acuerdo o conformidad: «vale», «muy bien», «de acuerdo».</div>"
   },
   {
    "id": "x.read.ninhao",
@@ -8518,17 +8770,6 @@
    "notes": ""
   },
   {
-   "id": "x.produce.haode-xiexie",
-   "type": "produce",
-   "theme": "saludos",
-   "level": 1,
-   "typed": false,
-   "task": "Dilo en chino, en voz alta: «Vale, ¡gracias!»",
-   "front": "",
-   "back": "<div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div class=\"meaning\">Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button>",
-   "notes": ""
-  },
-  {
    "id": "x.dictation.nihao",
    "type": "listen",
    "theme": "saludos",
@@ -8538,28 +8779,6 @@
    "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d557f9fc80756070.mp3\" aria-label=\"Play\"></button>",
    "back": "<div class=\"hanzi\">你好</div><div class=\"pinyin\">nǐ hǎo</div><div class=\"ipa\">[ni˧˩˧ xɑʊ˧˩˧]</div><div class=\"meaning\">hola</div>",
    "notes": "<div class=\"box\"><h4>Saludos con 好</h4>A quien saludas + 好. El registro cambia según a quién te diriges.<div class=\"is-target\">你好 nǐ hǎo — hola · una persona; neutro</div><div>您好 nín hǎo — hola (con respeto) · una persona mayor o de respeto (您)</div><div>你们好 nǐmen hǎo — hola (a un grupo) · un grupo que tienes delante; relajado</div><div>大家好 dàjiā hǎo — hola a todos · todo el mundo; más amplio y formal</div><div>老师好 lǎoshī hǎo — hola, profe · a la profesora: el cargo + 好</div><h4>Pronunciación</h4><div>hǎo: h es una jota suave, rasposa [xɑʊ˧˩˧]</div></div>"
-  },
-  {
-   "id": "x.dictation.xiexie",
-   "type": "listen",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "Escucha y escribe el pinyin.",
-   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_5df2bbf47ef21bfa.mp3\" aria-label=\"Play\"></button>",
-   "back": "<div class=\"hanzi\">谢谢</div><div class=\"pinyin\">xièxie</div><div class=\"ipa\">[ɕjɛ˥˩ ɕjɛ]</div><div class=\"meaning\">gracias</div>",
-   "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>xiè: x suena casi como una sh suave, con la lengua plana y sonriendo [ɕjɛ˥˩]</div><h4>Ejemplos</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">èn</span><span class=\"hz\">嗯</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Sí, gracias.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0ea4ff75ec3e8a13.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div><h4>Nota</h4>La segunda 谢 se dice en tono neutro, corta y sin contorno propio.</div>"
-  },
-  {
-   "id": "x.dictation.qing",
-   "type": "listen",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "Escucha y escribe el pinyin.",
-   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1efc69381f14893e.mp3\" aria-label=\"Play\"></button>",
-   "back": "<div class=\"hanzi\">请</div><div class=\"pinyin\">qǐng</div><div class=\"ipa\">[tɕʰiŋ˧˩˧]</div><div class=\"meaning\">por favor</div>",
-   "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>qǐng: q es una ch con soplo de aire y la lengua plana, no una k [tɕʰiŋ˧˩˧]</div><h4>Apunte</h4>Fórmula cortés: 请您 + verbo, «le ruego que…». Por ejemplo, 请您进 qǐng nín jìn, «pase, por favor».<h4>Nota</h4>请 = 讠 «hablar» + 青 qīng, que da el sonido. La misma pista en 清 qīng «claro» [HSK 6], 晴 qíng «despejado» [HSK 2] y 情 qíng «sentimiento» [HSK 7]; lo que aporta 青 es el sonido, no un significado de «claridad».</div>"
   },
   {
    "id": "x.dictation.zaijian",
@@ -8584,17 +8803,6 @@
    "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>bái: b sin aire, casi una p española [paɪ˧˥]</div></div>"
   },
   {
-   "id": "x.dictation.dui",
-   "type": "listen",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "Escucha y escribe el pinyin.",
-   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a710b5f8661caad2.mp3\" aria-label=\"Play\"></button>",
-   "back": "<div class=\"hanzi\">对</div><div class=\"pinyin\">duì</div><div class=\"ipa\">[tweɪ˥˩]</div><div class=\"meaning\">correcto; sí, eso es</div>",
-   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div class=\"is-target\">对 duì — correcto; sí, eso es · correcto, tienes razón</div><div>是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div>好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Pronunciación</h4><div>duì: -ui se lee «uei» [tweɪ˥˩]</div><div>duì: d sin aire, casi una t española [tweɪ˥˩]</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">duì</span><span class=\"hz\">对</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c2\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c3\"><span class=\"py\">nǐmen</span><span class=\"hz\">你们</span></span><span class=\"seg c4\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c0\"><span class=\"py\">lǎoshī</span><span class=\"hz\">老师</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Sí, soy vuestro profesor.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_4b0e0c54eeed82ea.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>Variantes: 对啊 duì a, más natural en conversación, y 没错 méi cuò [HSK 4], más enfático («exacto»).</div>"
-  },
-  {
    "id": "x.dictation.zao",
    "type": "listen",
    "theme": "saludos",
@@ -8604,17 +8812,6 @@
    "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_cf7d86e2950eaa5e.mp3\" aria-label=\"Play\"></button>",
    "back": "<div class=\"hanzi\">早</div><div class=\"pinyin\">zǎo</div><div class=\"ipa\">[tsɑʊ˧˩˧]</div><div class=\"meaning\">¡buenos días! (informal); temprano</div>",
    "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>zǎo: z suena ts, como en «pizza» [tsɑʊ˧˩˧]</div><h4>Apunte</h4>Forma abreviada de 早上好 zǎoshang hǎo, «buenos días».</div>"
-  },
-  {
-   "id": "x.dictation.haode",
-   "type": "listen",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "Escucha y escribe el pinyin.",
-   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e3e116db58352045.mp3\" aria-label=\"Play\"></button>",
-   "back": "<div class=\"hanzi\">好的</div><div class=\"pinyin\">hǎo de</div><div class=\"ipa\">[xɑʊ˧˩˧ tɤ]</div><div class=\"meaning\">vale, de acuerdo</div>",
-   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div>是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div class=\"is-target\">好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Pronunciación</h4><div>de: esta e no es española: suena hacia atrás, casi como una o sin redondear [tɤ]</div><div>hǎo: h es una jota suave, rasposa [xɑʊ˧˩˧]</div><div>de: d sin aire, casi una t española [tɤ]</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>Expresa acuerdo o conformidad: «vale», «muy bien», «de acuerdo».</div>"
   },
   {
    "id": "x.dictation.ninhao",
@@ -8661,105 +8858,6 @@
    "notes": "<div class=\"box\"><h4>Saludos con 好</h4>A quien saludas + 好. El registro cambia según a quién te diriges.<div>你好 nǐ hǎo — hola · una persona; neutro</div><div>您好 nín hǎo — hola (con respeto) · una persona mayor o de respeto (您)</div><div>你们好 nǐmen hǎo — hola (a un grupo) · un grupo que tienes delante; relajado</div><div>大家好 dàjiā hǎo — hola a todos · todo el mundo; más amplio y formal</div><div class=\"is-target\">老师好 lǎoshī hǎo — hola, profe · a la profesora: el cargo + 好</div><h4>Pronunciación</h4><div>shī: la i no suena i; se alarga la consonante, con la lengua curvada [ʂɨ˥]</div><div>hǎo: h es una jota suave, rasposa [xɑʊ˧˩˧]</div><div>shī: sh con la punta de la lengua curvada hacia atrás [ʂɨ˥]</div></div>"
   },
   {
-   "id": "x.dictation.qingwen",
-   "type": "listen",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "Escucha y escribe el pinyin.",
-   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_c57f2372072c55ca.mp3\" aria-label=\"Play\"></button>",
-   "back": "<div class=\"hanzi\">请问</div><div class=\"pinyin\">qǐngwèn</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ wən˥˩]</div><div class=\"meaning\">disculpe (para preguntar)</div>",
-   "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>qǐng: q es una ch con soplo de aire y la lengua plana, no una k [tɕʰiŋ˧˩˧]</div><div>wèn: en suena con una e muy breve, casi «ən» [wən˥˩]</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">qǐngwèn</span><span class=\"hz\">请问</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c2\"><span class=\"py\">jiào</span><span class=\"hz\">叫</span></span><span class=\"seg c3\"><span class=\"py\">shénme</span><span class=\"hz\">什么</span></span><span class=\"seg c4\"><span class=\"py\">míngzi</span><span class=\"hz\">名字</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>Disculpa, ¿cómo te llamas?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d38e52087fca5ff3.mp3\" aria-label=\"Play\"></button></div><h4>Nota</h4>请 «por favor» + 问 wèn «preguntar»: la forma cortés de abrir una pregunta a alguien.</div>"
-  },
-  {
-   "id": "x.produce.qingwen",
-   "type": "produce",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "¿Cómo se dice «disculpe (para preguntar)»? Escribe el pinyin.",
-   "front": "",
-   "back": "<div class=\"hanzi\">请问</div><div class=\"pinyin\">qǐngwèn</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ wən˥˩]</div><div class=\"meaning\">disculpe (para preguntar)</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_c57f2372072c55ca.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">qǐngwèn</span><span class=\"hz\">请问</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c2\"><span class=\"py\">jiào</span><span class=\"hz\">叫</span></span><span class=\"seg c3\"><span class=\"py\">shénme</span><span class=\"hz\">什么</span></span><span class=\"seg c4\"><span class=\"py\">míngzi</span><span class=\"hz\">名字</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>Disculpa, ¿cómo te llamas?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d38e52087fca5ff3.mp3\" aria-label=\"Play\"></button></div><h4>Nota</h4>请 «por favor» + 问 wèn «preguntar»: la forma cortés de abrir una pregunta a alguien.</div>"
-  },
-  {
-   "id": "x.read.qingwen",
-   "type": "read",
-   "theme": "saludos",
-   "level": 1,
-   "typed": false,
-   "task": "Lee: pinyin y significado.",
-   "front": "<div class=\"hanzi\">请问</div>",
-   "back": "<div class=\"hanzi\">请问</div><div class=\"pinyin\">qǐngwèn</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ wən˥˩]</div><div class=\"meaning\">disculpe (para preguntar)</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_c57f2372072c55ca.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">qǐngwèn</span><span class=\"hz\">请问</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c2\"><span class=\"py\">jiào</span><span class=\"hz\">叫</span></span><span class=\"seg c3\"><span class=\"py\">shénme</span><span class=\"hz\">什么</span></span><span class=\"seg c4\"><span class=\"py\">míngzi</span><span class=\"hz\">名字</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>Disculpa, ¿cómo te llamas?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d38e52087fca5ff3.mp3\" aria-label=\"Play\"></button></div><h4>Nota</h4>请 «por favor» + 问 wèn «preguntar»: la forma cortés de abrir una pregunta a alguien.</div>"
-  },
-  {
-   "id": "x.dictation.qingjin",
-   "type": "listen",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "Escucha y escribe el pinyin.",
-   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1240540184638af9.mp3\" aria-label=\"Play\"></button>",
-   "back": "<div class=\"hanzi\">请进</div><div class=\"pinyin\">qǐng jìn</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ tɕin˥˩]</div><div class=\"meaning\">pase, por favor</div>",
-   "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>qǐng: q es una ch con soplo de aire y la lengua plana, no una k [tɕʰiŋ˧˩˧]</div><div>jìn: j es una ch suave con la lengua plana, no una jota [tɕin˥˩]</div></div>"
-  },
-  {
-   "id": "x.produce.qingjin",
-   "type": "produce",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "¿Cómo se dice «pase, por favor»? Escribe el pinyin.",
-   "front": "",
-   "back": "<div class=\"hanzi\">请进</div><div class=\"pinyin\">qǐng jìn</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ tɕin˥˩]</div><div class=\"meaning\">pase, por favor</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1240540184638af9.mp3\" aria-label=\"Play\"></button>",
-   "notes": ""
-  },
-  {
-   "id": "x.read.qingjin",
-   "type": "read",
-   "theme": "saludos",
-   "level": 1,
-   "typed": false,
-   "task": "Lee: pinyin y significado.",
-   "front": "<div class=\"hanzi\">请进</div>",
-   "back": "<div class=\"hanzi\">请进</div><div class=\"pinyin\">qǐng jìn</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ tɕin˥˩]</div><div class=\"meaning\">pase, por favor</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1240540184638af9.mp3\" aria-label=\"Play\"></button>",
-   "notes": ""
-  },
-  {
-   "id": "x.dictation.qingzuo",
-   "type": "listen",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "Escucha y escribe el pinyin.",
-   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_fb367fa9a15256b4.mp3\" aria-label=\"Play\"></button>",
-   "back": "<div class=\"hanzi\">请坐</div><div class=\"pinyin\">qǐng zuò</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ tswɔ˥˩]</div><div class=\"meaning\">siéntese, por favor</div>",
-   "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>qǐng: q es una ch con soplo de aire y la lengua plana, no una k [tɕʰiŋ˧˩˧]</div><div>zuò: z suena ts, como en «pizza» [tswɔ˥˩]</div></div>"
-  },
-  {
-   "id": "x.produce.qingzuo",
-   "type": "produce",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "¿Cómo se dice «siéntese, por favor»? Escribe el pinyin.",
-   "front": "",
-   "back": "<div class=\"hanzi\">请坐</div><div class=\"pinyin\">qǐng zuò</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ tswɔ˥˩]</div><div class=\"meaning\">siéntese, por favor</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_fb367fa9a15256b4.mp3\" aria-label=\"Play\"></button>",
-   "notes": ""
-  },
-  {
-   "id": "x.read.qingzuo",
-   "type": "read",
-   "theme": "saludos",
-   "level": 1,
-   "typed": false,
-   "task": "Lee: pinyin y significado.",
-   "front": "<div class=\"hanzi\">请坐</div>",
-   "back": "<div class=\"hanzi\">请坐</div><div class=\"pinyin\">qǐng zuò</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ tswɔ˥˩]</div><div class=\"meaning\">siéntese, por favor</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_fb367fa9a15256b4.mp3\" aria-label=\"Play\"></button>",
-   "notes": ""
-  },
-  {
    "id": "x.dictation.huanying",
    "type": "listen",
    "theme": "saludos",
@@ -8793,116 +8891,6 @@
    "notes": "<div class=\"box\"><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">huānyíng</span><span class=\"hz\">欢迎</span></span><span class=\"seg c1\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>¡Bienvenido!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_ffc0572e9f292892.mp3\" aria-label=\"Play\"></button></div><h4>Mnemotecnia · imagen para recordar, no su origen</h4>迎 es salir al encuentro de alguien con una sonrisa; con 欢 «alegría»: recibir con alegría.</div>"
   },
   {
-   "id": "x.dictation.shide",
-   "type": "listen",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "Escucha y escribe el pinyin.",
-   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_453b0f9782e94dd6.mp3\" aria-label=\"Play\"></button>",
-   "back": "<div class=\"hanzi\">是的</div><div class=\"pinyin\">shì de</div><div class=\"ipa\">[ʂɨ˥˩ tɤ]</div><div class=\"meaning\">sí, eso es</div>",
-   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div class=\"is-target\">是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div>好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Pronunciación</h4><div>shì: la i no suena i; se alarga la consonante, con la lengua curvada [ʂɨ˥˩]</div><div>de: esta e no es española: suena hacia atrás, casi como una o sin redondear [tɤ]</div><div>shì: sh con la punta de la lengua curvada hacia atrás [ʂɨ˥˩]</div><h4>Apunte</h4>Sirve para confirmar, igual que 对 y 好的.</div>"
-  },
-  {
-   "id": "x.produce.shide",
-   "type": "produce",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "¿Cómo se dice «sí, eso es»? Escribe el pinyin.",
-   "front": "",
-   "back": "<div class=\"hanzi\">是的</div><div class=\"pinyin\">shì de</div><div class=\"ipa\">[ʂɨ˥˩ tɤ]</div><div class=\"meaning\">sí, eso es</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_453b0f9782e94dd6.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div class=\"is-target\">是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div>好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Apunte</h4>Sirve para confirmar, igual que 对 y 好的.</div>"
-  },
-  {
-   "id": "x.read.shide",
-   "type": "read",
-   "theme": "saludos",
-   "level": 1,
-   "typed": false,
-   "task": "Lee: pinyin y significado.",
-   "front": "<div class=\"hanzi\">是的</div>",
-   "back": "<div class=\"hanzi\">是的</div><div class=\"pinyin\">shì de</div><div class=\"ipa\">[ʂɨ˥˩ tɤ]</div><div class=\"meaning\">sí, eso es</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_453b0f9782e94dd6.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div class=\"is-target\">是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div>好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Apunte</h4>Sirve para confirmar, igual que 对 y 好的.</div>"
-  },
-  {
-   "id": "x.tones.shide",
-   "type": "tones",
-   "theme": "saludos",
-   "level": 1,
-   "typed": true,
-   "task": "Escribe el tono de cada sílaba (1–4, 5 = neutro).",
-   "front": "<div class=\"hanzi\">是的</div><div class=\"pinyin\">shi de</div><div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div>",
-   "back": "<div class=\"hanzi\">是的</div><div class=\"pinyin\">shì de</div><div class=\"ipa\">[ʂɨ˥˩ tɤ]</div><div class=\"meaning\">sí, eso es</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_453b0f9782e94dd6.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div class=\"is-target\">是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div>好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Tono neutro</h4>Sílaba corta y ligera, sin contorno propio; su altura depende de la sílaba anterior. En pinyin va sin marca (ma, ne, de) y en las respuestas se escribe 5.<div>Ejemplo del fenómeno: 什么 <button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0fbce95bf35e5b57.mp3\" aria-label=\"Play\"></button></div><h4>Pronunciación</h4><div>shì: la i no suena i; se alarga la consonante, con la lengua curvada [ʂɨ˥˩]</div><div>de: esta e no es española: suena hacia atrás, casi como una o sin redondear [tɤ]</div><div>shì: sh con la punta de la lengua curvada hacia atrás [ʂɨ˥˩]</div><h4>Apunte</h4>Sirve para confirmar, igual que 对 y 好的.</div>"
-  },
-  {
-   "id": "x.read.en",
-   "type": "read",
-   "theme": "saludos",
-   "level": 1,
-   "typed": false,
-   "task": "Lee: pinyin y significado.",
-   "front": "<div class=\"hanzi\">嗯</div>",
-   "back": "<div class=\"hanzi\">嗯</div><div class=\"pinyin\">èn</div><div class=\"meaning\">mm, sí (asentimiento)</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0c0dc2e78fad5455.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div>是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div>好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div class=\"is-target\">嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">èn</span><span class=\"hz\">嗯</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Sí, gracias.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0ea4ff75ec3e8a13.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>Se usa como 对: para asentir mientras el otro habla.</div>"
-  },
-  {
-   "id": "x.dictation.keyi",
-   "type": "listen",
-   "theme": "saludos",
-   "level": 2,
-   "typed": true,
-   "task": "Escucha y escribe el pinyin.",
-   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_aa7e3bce197bea4c.mp3\" aria-label=\"Play\"></button>",
-   "back": "<div class=\"hanzi\">可以</div><div class=\"pinyin\">kěyǐ</div><div class=\"ipa\">[kʰɤ˧˩˧ i˧˩˧]</div><div class=\"meaning\">se puede; vale</div>",
-   "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>kě: esta e no es española: suena hacia atrás, casi como una o sin redondear [kʰɤ˧˩˧]</div><div>kě: k con un soplo de aire claro [kʰɤ˧˩˧]</div><h4>Ejemplos</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c2\"><span class=\"py\">wèn</span><span class=\"hz\">问</span></span><span class=\"seg c3\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Te puedo preguntar algo?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_86fdcfacaaecb187.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">zhè</span><span class=\"hz\">这</span></span><span class=\"seg c1\"><span class=\"py\">ge</span><span class=\"hz\">个</span></span><span class=\"seg c2\"><span class=\"py\">dàxiǎo</span><span class=\"hz\">大小</span></span><span class=\"seg c3\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Te va bien esta talla?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_42c7e4f9437d17c2.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>También sirve de «vale», como 好的.<h4>Nota</h4>可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2].</div>"
-  },
-  {
-   "id": "x.produce.keyi",
-   "type": "produce",
-   "theme": "saludos",
-   "level": 2,
-   "typed": true,
-   "task": "¿Cómo se dice «se puede; vale»? Escribe el pinyin.",
-   "front": "",
-   "back": "<div class=\"hanzi\">可以</div><div class=\"pinyin\">kěyǐ</div><div class=\"ipa\">[kʰɤ˧˩˧ i˧˩˧]</div><div class=\"meaning\">se puede; vale</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_aa7e3bce197bea4c.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Ejemplos</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c2\"><span class=\"py\">wèn</span><span class=\"hz\">问</span></span><span class=\"seg c3\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Te puedo preguntar algo?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_86fdcfacaaecb187.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">zhè</span><span class=\"hz\">这</span></span><span class=\"seg c1\"><span class=\"py\">ge</span><span class=\"hz\">个</span></span><span class=\"seg c2\"><span class=\"py\">dàxiǎo</span><span class=\"hz\">大小</span></span><span class=\"seg c3\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Te va bien esta talla?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_42c7e4f9437d17c2.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>También sirve de «vale», como 好的.<h4>Nota</h4>可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2].</div>"
-  },
-  {
-   "id": "x.read.keyi",
-   "type": "read",
-   "theme": "saludos",
-   "level": 2,
-   "typed": false,
-   "task": "Lee: pinyin y significado.",
-   "front": "<div class=\"hanzi\">可以</div>",
-   "back": "<div class=\"hanzi\">可以</div><div class=\"pinyin\">kěyǐ</div><div class=\"ipa\">[kʰɤ˧˩˧ i˧˩˧]</div><div class=\"meaning\">se puede; vale</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_aa7e3bce197bea4c.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Ejemplos</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c2\"><span class=\"py\">wèn</span><span class=\"hz\">问</span></span><span class=\"seg c3\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Te puedo preguntar algo?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_86fdcfacaaecb187.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">zhè</span><span class=\"hz\">这</span></span><span class=\"seg c1\"><span class=\"py\">ge</span><span class=\"hz\">个</span></span><span class=\"seg c2\"><span class=\"py\">dàxiǎo</span><span class=\"hz\">大小</span></span><span class=\"seg c3\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Te va bien esta talla?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_42c7e4f9437d17c2.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>También sirve de «vale», como 好的.<h4>Nota</h4>可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2].</div>"
-  },
-  {
-   "id": "x.tones.keyi",
-   "type": "tones",
-   "theme": "saludos",
-   "level": 2,
-   "typed": true,
-   "task": "Escribe el tono de cada sílaba (1–4, 5 = neutro).",
-   "front": "<div class=\"hanzi\">可以</div><div class=\"pinyin\">ke yi</div><div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div>",
-   "back": "<div class=\"hanzi\">可以</div><div class=\"pinyin\">kěyǐ</div><div class=\"ipa\">[kʰɤ˧˩˧ i˧˩˧]</div><div class=\"meaning\">se puede; vale</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_aa7e3bce197bea4c.mp3\" aria-label=\"Play\"></button>",
-   "notes": "<div class=\"box\"><h4>Dos terceros tonos seguidos</h4>Cuando dos sílabas en tercer tono van seguidas, la primera se pronuncia como segundo tono. Se sigue escribiendo el tono de referencia: 你好 se escribe nǐ hǎo y suena como ní hǎo.<div>Ejemplo del fenómeno: 你好 <button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d557f9fc80756070.mp3\" aria-label=\"Play\"></button></div><h4>Pronunciación</h4><div>kě: esta e no es española: suena hacia atrás, casi como una o sin redondear [kʰɤ˧˩˧]</div><div>kě: k con un soplo de aire claro [kʰɤ˧˩˧]</div><h4>Ejemplos</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c2\"><span class=\"py\">wèn</span><span class=\"hz\">问</span></span><span class=\"seg c3\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Te puedo preguntar algo?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_86fdcfacaaecb187.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">zhè</span><span class=\"hz\">这</span></span><span class=\"seg c1\"><span class=\"py\">ge</span><span class=\"hz\">个</span></span><span class=\"seg c2\"><span class=\"py\">dàxiǎo</span><span class=\"hz\">大小</span></span><span class=\"seg c3\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Te va bien esta talla?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_42c7e4f9437d17c2.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>También sirve de «vale», como 好的.<h4>Nota</h4>可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2].</div>"
-  },
-  {
-   "id": "x.listen.qing-he-kafei",
-   "type": "listen",
-   "theme": "saludos",
-   "level": 3,
-   "typed": false,
-   "task": "Escucha. ¿Qué significa?",
-   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_423e3ed6cf1e3ec3.mp3\" aria-label=\"Play\"></button>",
-   "back": "<div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">qǐng</span><span class=\"hz\">请</span></span><span class=\"seg c1\"><span class=\"py\">hē</span><span class=\"hz\">喝</span></span><span class=\"seg c2\"><span class=\"py\">kāfēi</span><span class=\"hz\">咖啡</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div class=\"meaning\">Tome un café, por favor.</div>",
-   "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>qǐng: q es una ch con soplo de aire y la lengua plana, no una k [tɕʰiŋ˧˩˧]</div><div>hē: esta e no es española: suena hacia atrás, casi como una o sin redondear [xɤ˥]</div><div>kā: k con un soplo de aire claro [kʰa˥]</div></div>"
-  },
-  {
    "id": "x.listen.huanying-ni",
    "type": "listen",
    "theme": "saludos",
@@ -8925,9 +8913,394 @@
    "notes": ""
   },
   {
+   "id": "x.tones.xiexie",
+   "type": "tones",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "Escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"hanzi\">谢谢</div><div class=\"pinyin\">xie xie</div><div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div>",
+   "back": "<div class=\"hanzi\">谢谢</div><div class=\"pinyin\">xièxie</div><div class=\"ipa\">[ɕjɛ˥˩ ɕjɛ]</div><div class=\"meaning\">gracias</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_5df2bbf47ef21bfa.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Explicación</h4>Cuarto tono y después tono neutro.<h4>Pronunciación</h4><div>xiè: x suena casi como una sh suave, con la lengua plana y sonriendo [ɕjɛ˥˩]</div><h4>Ejemplos</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">èn</span><span class=\"hz\">嗯</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Sí, gracias.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0ea4ff75ec3e8a13.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div><h4>Nota</h4>La segunda 谢 se dice en tono neutro, corta y sin contorno propio.</div>"
+  },
+  {
+   "id": "x.produce.xiexie",
+   "type": "produce",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "Te sirven agua. ¿Qué dices?",
+   "front": "",
+   "back": "<div class=\"hanzi\">谢谢</div><div class=\"pinyin\">xièxie</div><div class=\"ipa\">[ɕjɛ˥˩ ɕjɛ]</div><div class=\"meaning\">gracias</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_5df2bbf47ef21bfa.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Ejemplos</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">èn</span><span class=\"hz\">嗯</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Sí, gracias.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0ea4ff75ec3e8a13.mp3\" aria-label=\"Play\"></button></div><h4>Nota</h4>La segunda 谢 se dice en tono neutro, corta y sin contorno propio.</div>"
+  },
+  {
+   "id": "x.read.qing",
+   "type": "read",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "Escribe el pinyin y recuerda el significado.",
+   "front": "<div class=\"hanzi\">请</div>",
+   "back": "<div class=\"hanzi\">请</div><div class=\"pinyin\">qǐng</div><div class=\"ipa\">[tɕʰiŋ˧˩˧]</div><div class=\"meaning\">por favor</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1efc69381f14893e.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Apunte</h4>Fórmula cortés: 请您 + verbo, «le ruego que…». Por ejemplo, 请您进 qǐng nín jìn, «pase, por favor».<h4>Nota</h4>请 = 讠 «hablar» + 青 qīng, que da el sonido. La misma pista en 清 qīng «claro» [HSK 6], 晴 qíng «despejado» [HSK 2] y 情 qíng «sentimiento» [HSK 7]; lo que aporta 青 es el sonido, no un significado de «claridad».</div>"
+  },
+  {
+   "id": "x.read.dui",
+   "type": "read",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "Escribe el pinyin y recuerda el significado.",
+   "front": "<div class=\"hanzi\">对</div>",
+   "back": "<div class=\"hanzi\">对</div><div class=\"pinyin\">duì</div><div class=\"ipa\">[tweɪ˥˩]</div><div class=\"meaning\">correcto; sí, eso es</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a710b5f8661caad2.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div class=\"is-target\">对 duì — correcto; sí, eso es · correcto, tienes razón</div><div>是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div>好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">duì</span><span class=\"hz\">对</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c2\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c3\"><span class=\"py\">nǐmen</span><span class=\"hz\">你们</span></span><span class=\"seg c4\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c0\"><span class=\"py\">lǎoshī</span><span class=\"hz\">老师</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Sí, soy vuestro profesor.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_4b0e0c54eeed82ea.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>Variantes: 对啊 duì a, más natural en conversación, y 没错 méi cuò [HSK 4], más enfático («exacto»).</div>"
+  },
+  {
+   "id": "x.read.haode",
+   "type": "read",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "Escribe el pinyin y recuerda el significado.",
+   "front": "<div class=\"hanzi\">好的</div>",
+   "back": "<div class=\"hanzi\">好的</div><div class=\"pinyin\">hǎo de</div><div class=\"ipa\">[xɑʊ˧˩˧ tɤ]</div><div class=\"meaning\">vale, de acuerdo</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e3e116db58352045.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div>是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div class=\"is-target\">好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>Expresa acuerdo o conformidad: «vale», «muy bien», «de acuerdo».</div>"
+  },
+  {
+   "id": "x.listen.haode-xiexie",
+   "type": "listen",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": false,
+   "task": "Escucha. ¿Qué significa?",
+   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div class=\"meaning\">Vale, ¡gracias!</div>",
+   "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>xiè: x suena casi como una sh suave, con la lengua plana y sonriendo [ɕjɛ˥˩]</div><div>de: esta e no es española: suena hacia atrás, casi como una o sin redondear [tɤ]</div><div>hǎo: h es una jota suave, rasposa [xɑʊ˧˩˧]</div></div>"
+  },
+  {
+   "id": "x.read.xiexie",
+   "type": "read",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": false,
+   "task": "Lee: pinyin y significado.",
+   "front": "<div class=\"hanzi\">谢谢</div>",
+   "back": "<div class=\"hanzi\">谢谢</div><div class=\"pinyin\">xièxie</div><div class=\"ipa\">[ɕjɛ˥˩ ɕjɛ]</div><div class=\"meaning\">gracias</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_5df2bbf47ef21bfa.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Ejemplos</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">èn</span><span class=\"hz\">嗯</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Sí, gracias.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0ea4ff75ec3e8a13.mp3\" aria-label=\"Play\"></button></div><h4>Nota</h4>La segunda 谢 se dice en tono neutro, corta y sin contorno propio.</div>"
+  },
+  {
+   "id": "x.produce.qing",
+   "type": "produce",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "¿Cómo se dice «por favor»? Escribe el pinyin.",
+   "front": "",
+   "back": "<div class=\"hanzi\">请</div><div class=\"pinyin\">qǐng</div><div class=\"ipa\">[tɕʰiŋ˧˩˧]</div><div class=\"meaning\">por favor</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1efc69381f14893e.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Apunte</h4>Fórmula cortés: 请您 + verbo, «le ruego que…». Por ejemplo, 请您进 qǐng nín jìn, «pase, por favor».<h4>Nota</h4>请 = 讠 «hablar» + 青 qīng, que da el sonido. La misma pista en 清 qīng «claro» [HSK 6], 晴 qíng «despejado» [HSK 2] y 情 qíng «sentimiento» [HSK 7]; lo que aporta 青 es el sonido, no un significado de «claridad».</div>"
+  },
+  {
+   "id": "x.produce.dui",
+   "type": "produce",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "¿Cómo se dice «correcto; sí, eso es»? Escribe el pinyin.",
+   "front": "",
+   "back": "<div class=\"hanzi\">对</div><div class=\"pinyin\">duì</div><div class=\"ipa\">[tweɪ˥˩]</div><div class=\"meaning\">correcto; sí, eso es</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a710b5f8661caad2.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div class=\"is-target\">对 duì — correcto; sí, eso es · correcto, tienes razón</div><div>是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div>好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">duì</span><span class=\"hz\">对</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c2\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c3\"><span class=\"py\">nǐmen</span><span class=\"hz\">你们</span></span><span class=\"seg c4\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c0\"><span class=\"py\">lǎoshī</span><span class=\"hz\">老师</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Sí, soy vuestro profesor.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_4b0e0c54eeed82ea.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>Variantes: 对啊 duì a, más natural en conversación, y 没错 méi cuò [HSK 4], más enfático («exacto»).</div>"
+  },
+  {
+   "id": "x.produce.haode",
+   "type": "produce",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "¿Cómo se dice «vale, de acuerdo»? Escribe el pinyin.",
+   "front": "",
+   "back": "<div class=\"hanzi\">好的</div><div class=\"pinyin\">hǎo de</div><div class=\"ipa\">[xɑʊ˧˩˧ tɤ]</div><div class=\"meaning\">vale, de acuerdo</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e3e116db58352045.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div>是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div class=\"is-target\">好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>Expresa acuerdo o conformidad: «vale», «muy bien», «de acuerdo».</div>"
+  },
+  {
+   "id": "x.tones.haode",
+   "type": "tones",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "Escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"hanzi\">好的</div><div class=\"pinyin\">hao de</div><div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div>",
+   "back": "<div class=\"hanzi\">好的</div><div class=\"pinyin\">hǎo de</div><div class=\"ipa\">[xɑʊ˧˩˧ tɤ]</div><div class=\"meaning\">vale, de acuerdo</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e3e116db58352045.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div>是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div class=\"is-target\">好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Tono neutro</h4>Sílaba corta y ligera, sin contorno propio; su altura depende de la sílaba anterior. En pinyin va sin marca (ma, ne, de) y en las respuestas se escribe 5.<div>Ejemplo del fenómeno: 什么 <button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0fbce95bf35e5b57.mp3\" aria-label=\"Play\"></button></div><h4>Pronunciación</h4><div>de: esta e no es española: suena hacia atrás, casi como una o sin redondear [tɤ]</div><div>hǎo: h es una jota suave, rasposa [xɑʊ˧˩˧]</div><div>de: d sin aire, casi una t española [tɤ]</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>Expresa acuerdo o conformidad: «vale», «muy bien», «de acuerdo».</div>"
+  },
+  {
+   "id": "x.produce.haode-xiexie",
+   "type": "produce",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": false,
+   "task": "Dilo en chino, en voz alta: «Vale, ¡gracias!»",
+   "front": "",
+   "back": "<div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div class=\"meaning\">Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button>",
+   "notes": ""
+  },
+  {
+   "id": "x.dictation.xiexie",
+   "type": "listen",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "Escucha y escribe el pinyin.",
+   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_5df2bbf47ef21bfa.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">谢谢</div><div class=\"pinyin\">xièxie</div><div class=\"ipa\">[ɕjɛ˥˩ ɕjɛ]</div><div class=\"meaning\">gracias</div>",
+   "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>xiè: x suena casi como una sh suave, con la lengua plana y sonriendo [ɕjɛ˥˩]</div><h4>Ejemplos</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">èn</span><span class=\"hz\">嗯</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Sí, gracias.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0ea4ff75ec3e8a13.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div><h4>Nota</h4>La segunda 谢 se dice en tono neutro, corta y sin contorno propio.</div>"
+  },
+  {
+   "id": "x.dictation.qing",
+   "type": "listen",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "Escucha y escribe el pinyin.",
+   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1efc69381f14893e.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">请</div><div class=\"pinyin\">qǐng</div><div class=\"ipa\">[tɕʰiŋ˧˩˧]</div><div class=\"meaning\">por favor</div>",
+   "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>qǐng: q es una ch con soplo de aire y la lengua plana, no una k [tɕʰiŋ˧˩˧]</div><h4>Apunte</h4>Fórmula cortés: 请您 + verbo, «le ruego que…». Por ejemplo, 请您进 qǐng nín jìn, «pase, por favor».<h4>Nota</h4>请 = 讠 «hablar» + 青 qīng, que da el sonido. La misma pista en 清 qīng «claro» [HSK 6], 晴 qíng «despejado» [HSK 2] y 情 qíng «sentimiento» [HSK 7]; lo que aporta 青 es el sonido, no un significado de «claridad».</div>"
+  },
+  {
+   "id": "x.dictation.dui",
+   "type": "listen",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "Escucha y escribe el pinyin.",
+   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a710b5f8661caad2.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">对</div><div class=\"pinyin\">duì</div><div class=\"ipa\">[tweɪ˥˩]</div><div class=\"meaning\">correcto; sí, eso es</div>",
+   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div class=\"is-target\">对 duì — correcto; sí, eso es · correcto, tienes razón</div><div>是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div>好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Pronunciación</h4><div>duì: -ui se lee «uei» [tweɪ˥˩]</div><div>duì: d sin aire, casi una t española [tweɪ˥˩]</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">duì</span><span class=\"hz\">对</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c2\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c3\"><span class=\"py\">nǐmen</span><span class=\"hz\">你们</span></span><span class=\"seg c4\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c0\"><span class=\"py\">lǎoshī</span><span class=\"hz\">老师</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Sí, soy vuestro profesor.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_4b0e0c54eeed82ea.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>Variantes: 对啊 duì a, más natural en conversación, y 没错 méi cuò [HSK 4], más enfático («exacto»).</div>"
+  },
+  {
+   "id": "x.dictation.haode",
+   "type": "listen",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "Escucha y escribe el pinyin.",
+   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e3e116db58352045.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">好的</div><div class=\"pinyin\">hǎo de</div><div class=\"ipa\">[xɑʊ˧˩˧ tɤ]</div><div class=\"meaning\">vale, de acuerdo</div>",
+   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div>是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div class=\"is-target\">好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Pronunciación</h4><div>de: esta e no es española: suena hacia atrás, casi como una o sin redondear [tɤ]</div><div>hǎo: h es una jota suave, rasposa [xɑʊ˧˩˧]</div><div>de: d sin aire, casi una t española [tɤ]</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>Expresa acuerdo o conformidad: «vale», «muy bien», «de acuerdo».</div>"
+  },
+  {
+   "id": "x.dictation.qingwen",
+   "type": "listen",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "Escucha y escribe el pinyin.",
+   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_c57f2372072c55ca.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">请问</div><div class=\"pinyin\">qǐngwèn</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ wən˥˩]</div><div class=\"meaning\">disculpe (para preguntar)</div>",
+   "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>qǐng: q es una ch con soplo de aire y la lengua plana, no una k [tɕʰiŋ˧˩˧]</div><div>wèn: en suena con una e muy breve, casi «ən» [wən˥˩]</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">qǐngwèn</span><span class=\"hz\">请问</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c2\"><span class=\"py\">jiào</span><span class=\"hz\">叫</span></span><span class=\"seg c3\"><span class=\"py\">shénme</span><span class=\"hz\">什么</span></span><span class=\"seg c4\"><span class=\"py\">míngzi</span><span class=\"hz\">名字</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>Disculpa, ¿cómo te llamas?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d38e52087fca5ff3.mp3\" aria-label=\"Play\"></button></div><h4>Nota</h4>请 «por favor» + 问 wèn «preguntar»: la forma cortés de abrir una pregunta a alguien.</div>"
+  },
+  {
+   "id": "x.produce.qingwen",
+   "type": "produce",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "¿Cómo se dice «disculpe (para preguntar)»? Escribe el pinyin.",
+   "front": "",
+   "back": "<div class=\"hanzi\">请问</div><div class=\"pinyin\">qǐngwèn</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ wən˥˩]</div><div class=\"meaning\">disculpe (para preguntar)</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_c57f2372072c55ca.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">qǐngwèn</span><span class=\"hz\">请问</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c2\"><span class=\"py\">jiào</span><span class=\"hz\">叫</span></span><span class=\"seg c3\"><span class=\"py\">shénme</span><span class=\"hz\">什么</span></span><span class=\"seg c4\"><span class=\"py\">míngzi</span><span class=\"hz\">名字</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>Disculpa, ¿cómo te llamas?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d38e52087fca5ff3.mp3\" aria-label=\"Play\"></button></div><h4>Nota</h4>请 «por favor» + 问 wèn «preguntar»: la forma cortés de abrir una pregunta a alguien.</div>"
+  },
+  {
+   "id": "x.read.qingwen",
+   "type": "read",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": false,
+   "task": "Lee: pinyin y significado.",
+   "front": "<div class=\"hanzi\">请问</div>",
+   "back": "<div class=\"hanzi\">请问</div><div class=\"pinyin\">qǐngwèn</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ wən˥˩]</div><div class=\"meaning\">disculpe (para preguntar)</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_c57f2372072c55ca.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">qǐngwèn</span><span class=\"hz\">请问</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c2\"><span class=\"py\">jiào</span><span class=\"hz\">叫</span></span><span class=\"seg c3\"><span class=\"py\">shénme</span><span class=\"hz\">什么</span></span><span class=\"seg c4\"><span class=\"py\">míngzi</span><span class=\"hz\">名字</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>Disculpa, ¿cómo te llamas?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d38e52087fca5ff3.mp3\" aria-label=\"Play\"></button></div><h4>Nota</h4>请 «por favor» + 问 wèn «preguntar»: la forma cortés de abrir una pregunta a alguien.</div>"
+  },
+  {
+   "id": "x.dictation.qingjin",
+   "type": "listen",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "Escucha y escribe el pinyin.",
+   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1240540184638af9.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">请进</div><div class=\"pinyin\">qǐng jìn</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ tɕin˥˩]</div><div class=\"meaning\">pase, por favor</div>",
+   "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>qǐng: q es una ch con soplo de aire y la lengua plana, no una k [tɕʰiŋ˧˩˧]</div><div>jìn: j es una ch suave con la lengua plana, no una jota [tɕin˥˩]</div></div>"
+  },
+  {
+   "id": "x.produce.qingjin",
+   "type": "produce",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "¿Cómo se dice «pase, por favor»? Escribe el pinyin.",
+   "front": "",
+   "back": "<div class=\"hanzi\">请进</div><div class=\"pinyin\">qǐng jìn</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ tɕin˥˩]</div><div class=\"meaning\">pase, por favor</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1240540184638af9.mp3\" aria-label=\"Play\"></button>",
+   "notes": ""
+  },
+  {
+   "id": "x.read.qingjin",
+   "type": "read",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": false,
+   "task": "Lee: pinyin y significado.",
+   "front": "<div class=\"hanzi\">请进</div>",
+   "back": "<div class=\"hanzi\">请进</div><div class=\"pinyin\">qǐng jìn</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ tɕin˥˩]</div><div class=\"meaning\">pase, por favor</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1240540184638af9.mp3\" aria-label=\"Play\"></button>",
+   "notes": ""
+  },
+  {
+   "id": "x.dictation.qingzuo",
+   "type": "listen",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "Escucha y escribe el pinyin.",
+   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_fb367fa9a15256b4.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">请坐</div><div class=\"pinyin\">qǐng zuò</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ tswɔ˥˩]</div><div class=\"meaning\">siéntese, por favor</div>",
+   "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>qǐng: q es una ch con soplo de aire y la lengua plana, no una k [tɕʰiŋ˧˩˧]</div><div>zuò: z suena ts, como en «pizza» [tswɔ˥˩]</div></div>"
+  },
+  {
+   "id": "x.produce.qingzuo",
+   "type": "produce",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "¿Cómo se dice «siéntese, por favor»? Escribe el pinyin.",
+   "front": "",
+   "back": "<div class=\"hanzi\">请坐</div><div class=\"pinyin\">qǐng zuò</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ tswɔ˥˩]</div><div class=\"meaning\">siéntese, por favor</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_fb367fa9a15256b4.mp3\" aria-label=\"Play\"></button>",
+   "notes": ""
+  },
+  {
+   "id": "x.read.qingzuo",
+   "type": "read",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": false,
+   "task": "Lee: pinyin y significado.",
+   "front": "<div class=\"hanzi\">请坐</div>",
+   "back": "<div class=\"hanzi\">请坐</div><div class=\"pinyin\">qǐng zuò</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ tswɔ˥˩]</div><div class=\"meaning\">siéntese, por favor</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_fb367fa9a15256b4.mp3\" aria-label=\"Play\"></button>",
+   "notes": ""
+  },
+  {
+   "id": "x.dictation.shide",
+   "type": "listen",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "Escucha y escribe el pinyin.",
+   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_453b0f9782e94dd6.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">是的</div><div class=\"pinyin\">shì de</div><div class=\"ipa\">[ʂɨ˥˩ tɤ]</div><div class=\"meaning\">sí, eso es</div>",
+   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div class=\"is-target\">是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div>好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Pronunciación</h4><div>shì: la i no suena i; se alarga la consonante, con la lengua curvada [ʂɨ˥˩]</div><div>de: esta e no es española: suena hacia atrás, casi como una o sin redondear [tɤ]</div><div>shì: sh con la punta de la lengua curvada hacia atrás [ʂɨ˥˩]</div><h4>Apunte</h4>Sirve para confirmar, igual que 对 y 好的.</div>"
+  },
+  {
+   "id": "x.produce.shide",
+   "type": "produce",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "¿Cómo se dice «sí, eso es»? Escribe el pinyin.",
+   "front": "",
+   "back": "<div class=\"hanzi\">是的</div><div class=\"pinyin\">shì de</div><div class=\"ipa\">[ʂɨ˥˩ tɤ]</div><div class=\"meaning\">sí, eso es</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_453b0f9782e94dd6.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div class=\"is-target\">是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div>好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Apunte</h4>Sirve para confirmar, igual que 对 y 好的.</div>"
+  },
+  {
+   "id": "x.read.shide",
+   "type": "read",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": false,
+   "task": "Lee: pinyin y significado.",
+   "front": "<div class=\"hanzi\">是的</div>",
+   "back": "<div class=\"hanzi\">是的</div><div class=\"pinyin\">shì de</div><div class=\"ipa\">[ʂɨ˥˩ tɤ]</div><div class=\"meaning\">sí, eso es</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_453b0f9782e94dd6.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div class=\"is-target\">是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div>好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Apunte</h4>Sirve para confirmar, igual que 对 y 好的.</div>"
+  },
+  {
+   "id": "x.tones.shide",
+   "type": "tones",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": true,
+   "task": "Escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"hanzi\">是的</div><div class=\"pinyin\">shi de</div><div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div>",
+   "back": "<div class=\"hanzi\">是的</div><div class=\"pinyin\">shì de</div><div class=\"ipa\">[ʂɨ˥˩ tɤ]</div><div class=\"meaning\">sí, eso es</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_453b0f9782e94dd6.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div class=\"is-target\">是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div>好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div>嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Tono neutro</h4>Sílaba corta y ligera, sin contorno propio; su altura depende de la sílaba anterior. En pinyin va sin marca (ma, ne, de) y en las respuestas se escribe 5.<div>Ejemplo del fenómeno: 什么 <button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0fbce95bf35e5b57.mp3\" aria-label=\"Play\"></button></div><h4>Pronunciación</h4><div>shì: la i no suena i; se alarga la consonante, con la lengua curvada [ʂɨ˥˩]</div><div>de: esta e no es española: suena hacia atrás, casi como una o sin redondear [tɤ]</div><div>shì: sh con la punta de la lengua curvada hacia atrás [ʂɨ˥˩]</div><h4>Apunte</h4>Sirve para confirmar, igual que 对 y 好的.</div>"
+  },
+  {
+   "id": "x.read.en",
+   "type": "read",
+   "theme": "cortesia",
+   "level": 1,
+   "typed": false,
+   "task": "Lee: pinyin y significado.",
+   "front": "<div class=\"hanzi\">嗯</div>",
+   "back": "<div class=\"hanzi\">嗯</div><div class=\"pinyin\">èn</div><div class=\"meaning\">mm, sí (asentimiento)</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0c0dc2e78fad5455.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Formas de decir que sí</h4>El chino no tiene un «sí» único: se confirma según lo que se responde.<div>对 duì — correcto; sí, eso es · correcto, tienes razón</div><div>是的 shì de — sí, eso es · sí, eso es (confirma un hecho)</div><div>好的 hǎo de — vale, de acuerdo · de acuerdo (aceptas algo)</div><div class=\"is-target\">嗯 èn — mm, sí (asentimiento) · mm, te sigo (mientras hablan)</div><h4>Ejemplo</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">èn</span><span class=\"hz\">嗯</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Sí, gracias.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0ea4ff75ec3e8a13.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>Se usa como 对: para asentir mientras el otro habla.</div>"
+  },
+  {
+   "id": "x.dictation.keyi",
+   "type": "listen",
+   "theme": "cortesia",
+   "level": 2,
+   "typed": true,
+   "task": "Escucha y escribe el pinyin.",
+   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_aa7e3bce197bea4c.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">可以</div><div class=\"pinyin\">kěyǐ</div><div class=\"ipa\">[kʰɤ˧˩˧ i˧˩˧]</div><div class=\"meaning\">se puede; vale</div>",
+   "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>kě: esta e no es española: suena hacia atrás, casi como una o sin redondear [kʰɤ˧˩˧]</div><div>kě: k con un soplo de aire claro [kʰɤ˧˩˧]</div><h4>Ejemplos</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c2\"><span class=\"py\">wèn</span><span class=\"hz\">问</span></span><span class=\"seg c3\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Te puedo preguntar algo?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_86fdcfacaaecb187.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">zhè</span><span class=\"hz\">这</span></span><span class=\"seg c1\"><span class=\"py\">ge</span><span class=\"hz\">个</span></span><span class=\"seg c2\"><span class=\"py\">dàxiǎo</span><span class=\"hz\">大小</span></span><span class=\"seg c3\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Te va bien esta talla?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_42c7e4f9437d17c2.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>También sirve de «vale», como 好的.<h4>Nota</h4>可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2].</div>"
+  },
+  {
+   "id": "x.produce.keyi",
+   "type": "produce",
+   "theme": "cortesia",
+   "level": 2,
+   "typed": true,
+   "task": "¿Cómo se dice «se puede; vale»? Escribe el pinyin.",
+   "front": "",
+   "back": "<div class=\"hanzi\">可以</div><div class=\"pinyin\">kěyǐ</div><div class=\"ipa\">[kʰɤ˧˩˧ i˧˩˧]</div><div class=\"meaning\">se puede; vale</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_aa7e3bce197bea4c.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Ejemplos</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c2\"><span class=\"py\">wèn</span><span class=\"hz\">问</span></span><span class=\"seg c3\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Te puedo preguntar algo?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_86fdcfacaaecb187.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">zhè</span><span class=\"hz\">这</span></span><span class=\"seg c1\"><span class=\"py\">ge</span><span class=\"hz\">个</span></span><span class=\"seg c2\"><span class=\"py\">dàxiǎo</span><span class=\"hz\">大小</span></span><span class=\"seg c3\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Te va bien esta talla?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_42c7e4f9437d17c2.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>También sirve de «vale», como 好的.<h4>Nota</h4>可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2].</div>"
+  },
+  {
+   "id": "x.read.keyi",
+   "type": "read",
+   "theme": "cortesia",
+   "level": 2,
+   "typed": false,
+   "task": "Lee: pinyin y significado.",
+   "front": "<div class=\"hanzi\">可以</div>",
+   "back": "<div class=\"hanzi\">可以</div><div class=\"pinyin\">kěyǐ</div><div class=\"ipa\">[kʰɤ˧˩˧ i˧˩˧]</div><div class=\"meaning\">se puede; vale</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_aa7e3bce197bea4c.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Ejemplos</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c2\"><span class=\"py\">wèn</span><span class=\"hz\">问</span></span><span class=\"seg c3\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Te puedo preguntar algo?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_86fdcfacaaecb187.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">zhè</span><span class=\"hz\">这</span></span><span class=\"seg c1\"><span class=\"py\">ge</span><span class=\"hz\">个</span></span><span class=\"seg c2\"><span class=\"py\">dàxiǎo</span><span class=\"hz\">大小</span></span><span class=\"seg c3\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Te va bien esta talla?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_42c7e4f9437d17c2.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>También sirve de «vale», como 好的.<h4>Nota</h4>可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2].</div>"
+  },
+  {
+   "id": "x.tones.keyi",
+   "type": "tones",
+   "theme": "cortesia",
+   "level": 2,
+   "typed": true,
+   "task": "Escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"hanzi\">可以</div><div class=\"pinyin\">ke yi</div><div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div>",
+   "back": "<div class=\"hanzi\">可以</div><div class=\"pinyin\">kěyǐ</div><div class=\"ipa\">[kʰɤ˧˩˧ i˧˩˧]</div><div class=\"meaning\">se puede; vale</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_aa7e3bce197bea4c.mp3\" aria-label=\"Play\"></button>",
+   "notes": "<div class=\"box\"><h4>Dos terceros tonos seguidos</h4>Cuando dos sílabas en tercer tono van seguidas, la primera se pronuncia como segundo tono. Se sigue escribiendo el tono de referencia: 你好 se escribe nǐ hǎo y suena como ní hǎo.<div>Ejemplo del fenómeno: 你好 <button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d557f9fc80756070.mp3\" aria-label=\"Play\"></button></div><h4>Pronunciación</h4><div>kě: esta e no es española: suena hacia atrás, casi como una o sin redondear [kʰɤ˧˩˧]</div><div>kě: k con un soplo de aire claro [kʰɤ˧˩˧]</div><h4>Ejemplos</h4><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c2\"><span class=\"py\">wèn</span><span class=\"hz\">问</span></span><span class=\"seg c3\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Te puedo preguntar algo?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_86fdcfacaaecb187.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">zhè</span><span class=\"hz\">这</span></span><span class=\"seg c1\"><span class=\"py\">ge</span><span class=\"hz\">个</span></span><span class=\"seg c2\"><span class=\"py\">dàxiǎo</span><span class=\"hz\">大小</span></span><span class=\"seg c3\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Te va bien esta talla?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_42c7e4f9437d17c2.mp3\" aria-label=\"Play\"></button></div><h4>Apunte</h4>También sirve de «vale», como 好的.<h4>Nota</h4>可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2].</div>"
+  },
+  {
+   "id": "x.listen.qing-he-kafei",
+   "type": "listen",
+   "theme": "cortesia",
+   "level": 3,
+   "typed": false,
+   "task": "Escucha. ¿Qué significa?",
+   "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_423e3ed6cf1e3ec3.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">qǐng</span><span class=\"hz\">请</span></span><span class=\"seg c1\"><span class=\"py\">hē</span><span class=\"hz\">喝</span></span><span class=\"seg c2\"><span class=\"py\">kāfēi</span><span class=\"hz\">咖啡</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div class=\"meaning\">Tome un café, por favor.</div>",
+   "notes": "<div class=\"box\"><h4>Pronunciación</h4><div>qǐng: q es una ch con soplo de aire y la lengua plana, no una k [tɕʰiŋ˧˩˧]</div><div>hē: esta e no es española: suena hacia atrás, casi como una o sin redondear [xɤ˥]</div><div>kā: k con un soplo de aire claro [kʰa˥]</div></div>"
+  },
+  {
    "id": "x.listen.en-xiexie",
    "type": "listen",
-   "theme": "saludos",
+   "theme": "cortesia",
    "level": 1,
    "typed": false,
    "task": "Escucha. ¿Qué significa?",
@@ -8938,7 +9311,7 @@
   {
    "id": "x.produce.en-xiexie",
    "type": "produce",
-   "theme": "saludos",
+   "theme": "cortesia",
    "level": 1,
    "typed": false,
    "task": "Dilo en chino, en voz alta: «Sí, gracias.»",
@@ -8949,7 +9322,7 @@
   {
    "id": "x.dictation.en",
    "type": "listen",
-   "theme": "saludos",
+   "theme": "cortesia",
    "level": 1,
    "typed": true,
    "task": "Escucha y escribe el pinyin.",
@@ -8960,7 +9333,7 @@
   {
    "id": "x.produce.en",
    "type": "produce",
-   "theme": "saludos",
+   "theme": "cortesia",
    "level": 1,
    "typed": true,
    "task": "¿Cómo asientes («mm, sí») mientras alguien te habla? Escribe el pinyin.",
@@ -14703,7 +15076,7 @@
    "id": "x.contrast.sheng",
    "type": "contrast",
    "theme": "escritura",
-   "level": 2,
+   "level": 1,
    "typed": false,
    "task": "¿Cuál es shēng, «vida; nacer» (el de 学生)?",
    "front": "<div class=\"hanzi\">午　牛　生</div>",
@@ -14736,7 +15109,7 @@
    "id": "x.contrast.ru",
    "type": "contrast",
    "theme": "escritura",
-   "level": 6,
+   "level": 2,
    "typed": false,
    "task": "¿Cuál es rù, «entrar»?",
    "front": "<div class=\"hanzi\">人　入　八</div>",
@@ -14908,9 +15281,9 @@
    "date": "2026-09-29",
    "added": {
     "1": 219,
+    "5": 2,
     "2": 55,
     "4": 4,
-    "5": 2,
     "3": 8
    },
    "edited": 2,
@@ -14918,7 +15291,7 @@
   }
  ],
  "historyCache": {
-  "upTo": "febc84f629983d6c1088f8d47629f695b46a9d97",
+  "upTo": "4049b1420135862c003f5eb17428c07411cb14ab",
   "days": [
    {
     "date": "2026-09-26",
@@ -14946,9 +15319,248 @@
     },
     "edited": 0,
     "removed": 68
+   },
+   {
+    "date": "2026-09-29",
+    "added": {
+     "1": 219,
+     "5": 2,
+     "2": 55,
+     "4": 4,
+     "3": 8
+    },
+    "edited": 2,
+    "removed": 0
    }
   ]
  },
+ "coverage": [
+  {
+   "level": 1,
+   "total": 506,
+   "trained": 101,
+   "inDeck": 102
+  },
+  {
+   "level": 2,
+   "total": 750,
+   "trained": 12,
+   "inDeck": 15
+  },
+  {
+   "level": 3,
+   "total": 953,
+   "trained": 5,
+   "inDeck": 6
+  },
+  {
+   "level": 4,
+   "total": 972,
+   "trained": 4,
+   "inDeck": 4
+  },
+  {
+   "level": 5,
+   "total": 1059,
+   "trained": 4,
+   "inDeck": 4
+  },
+  {
+   "level": 6,
+   "total": 1123,
+   "trained": 0,
+   "inDeck": 0
+  },
+  {
+   "level": 7,
+   "total": 5606,
+   "trained": 0,
+   "inDeck": 0
+  }
+ ],
+ "theory": [
+  {
+   "id": "t.status",
+   "group": "characters",
+   "title": {
+    "es": "Palabra, ligada o componente",
+    "en": "Word, bound or component"
+   },
+   "text": {
+    "es": "Cada carácter del mazo lleva su estatus. Palabra: se usa solo (门, 来, 爱). Ligada: solo aparece dentro de palabras (们 en 我们, 师 en 老师). Componente: solo es una pieza de otros caracteres (亻, 讠, 扌). Algunos son las dos cosas: 口 es componente en 叫 y palabra suelta, «boca».",
+    "en": "Every character in the deck carries its status. Word: used on its own (门, 来, 爱). Bound: only inside words (们 in 我们, 师 in 老师). Component: only a piece of other characters (亻, 讠, 扌). Some are both: 口 is a component in 叫 and a word of its own, «mouth»."
+   }
+  },
+  {
+   "id": "t.pictogram",
+   "group": "characters",
+   "title": {
+    "es": "Pictograma",
+    "en": "Pictogram"
+   },
+   "text": {
+    "es": "Un carácter que empezó como dibujo de lo que significa: 日 sol, 月 luna, 山 montaña, 人 persona, 马 caballo. Son los más fáciles de imaginar y los menos numerosos: unos 360 de los 9353 del diccionario clásico Shuowen, alrededor del 4 %.",
+    "en": "A character that began as a drawing of its meaning: 日 sun, 月 moon, 山 mountain, 人 person, 马 horse. The easiest to picture and the fewest: about 360 of the 9,353 in the classical Shuowen dictionary, around 4 %."
+   },
+   "examples": [
+    "日",
+    "月",
+    "山",
+    "人",
+    "马"
+   ]
+  },
+  {
+   "id": "t.indicative",
+   "group": "characters",
+   "title": {
+    "es": "Indicativo",
+    "en": "Indicative"
+   },
+   "text": {
+    "es": "Un signo abstracto, a veces un trazo añadido a un dibujo: 一 二 三, 上 y 下 (una marca encima o debajo de la línea), 本 «raíz» (una raya en la raíz de 木 «árbol»). Son muy pocos.",
+    "en": "An abstract sign, sometimes a stroke added to a drawing: 一 二 三, 上 and 下 (a mark above or below the line), 本 «root» (a stroke at the root of 木 «tree»). Very few."
+   },
+   "examples": [
+    "上",
+    "下",
+    "本"
+   ]
+  },
+  {
+   "id": "t.compound",
+   "group": "characters",
+   "title": {
+    "es": "Compuesto de significado",
+    "en": "Compound of meanings"
+   },
+   "text": {
+    "es": "Dos o más piezas que aportan significado y juntas dan uno nuevo: 好 = 女 «mujer» + 子 «niño»; 明 «claro» = 日 «sol» + 月 «luna»; 休 «descansar» = 亻 «persona» + 木 «árbol». Ninguna da el sonido.",
+    "en": "Two or more pieces that each bring meaning and together make a new one: 好 = 女 «woman» + 子 «child»; 明 «bright» = 日 «sun» + 月 «moon»; 休 «rest» = 亻 «person» + 木 «tree». None gives the sound."
+   },
+   "examples": [
+    "好",
+    "明",
+    "休"
+   ]
+  },
+  {
+   "id": "t.phonosemantic",
+   "group": "characters",
+   "title": {
+    "es": "Fonético-semántico",
+    "en": "Phono-semantic"
+   },
+   "text": {
+    "es": "Una pieza da el significado y otra el sonido: 妈 = 女 «mujer» + 马 mǎ; 请 = 讠 «hablar» + 青 qīng; 们 = 亻 «persona» + 门 mén. Son la gran mayoría: más del 80 % en el Shuowen, y más aún hoy. La pista de sonido es aproximada: a menudo cambia el tono (青 qīng → 请 qǐng) y a veces la consonante.",
+    "en": "One piece gives the meaning and another the sound: 妈 = 女 «woman» + 马 mǎ; 请 = 讠 «speech» + 青 qīng; 们 = 亻 «person» + 门 mén. The vast majority: over 80 % in the Shuowen, more today. The sound hint is approximate: the tone often changes (青 qīng → 请 qǐng), sometimes the consonant too."
+   },
+   "examples": [
+    "妈",
+    "请",
+    "们"
+   ]
+  },
+  {
+   "id": "t.phonetic-series",
+   "group": "characters",
+   "title": {
+    "es": "Serie fonética",
+    "en": "Phonetic series"
+   },
+   "text": {
+    "es": "Los caracteres que comparten la misma pieza de sonido: 门 mén → 们 men, 问 wèn, 闻 wén; 青 qīng → 请 qǐng, 清 qīng, 晴 qíng, 情 qíng. Aprenderlos juntos une el hanzi con su sonido en las dos direcciones.",
+    "en": "Characters that share the same sound piece: 门 mén → 们 men, 问 wèn, 闻 wén; 青 qīng → 请 qǐng, 清 qīng, 晴 qíng, 情 qíng. Learning them together ties the hanzi to its sound both ways."
+   }
+  },
+  {
+   "id": "t.loan",
+   "group": "characters",
+   "title": {
+    "es": "Préstamo fonético",
+    "en": "Phonetic loan"
+   },
+   "text": {
+    "es": "Un carácter tomado por su sonido para otra palabra que no tenía escritura: 来 era el dibujo de una planta de trigo y se prestó para «venir», que sonaba igual. El dibujo ya no dice nada del significado.",
+    "en": "A character borrowed for its sound to write another word that had no character: 来 was a drawing of wheat, lent to «come», which sounded the same. The picture no longer says anything about the meaning."
+   },
+   "examples": [
+    "来"
+   ]
+  },
+  {
+   "id": "t.radical",
+   "group": "characters",
+   "title": {
+    "es": "Radical y forma lateral",
+    "en": "Radical and side form"
+   },
+   "text": {
+    "es": "El radical es la pieza por la que se ordena un carácter en el diccionario, casi siempre la de significado. Muchos cambian de forma al ir a un lado: 人 → 亻, 言 → 讠, 水 → 氵, 手 → 扌, 心 → 忄, 衣 → 衤, 示 → 礻.",
+    "en": "The radical is the piece a dictionary files a character under, usually the meaning piece. Many change shape on the side: 人 → 亻, 言 → 讠, 水 → 氵, 手 → 扌, 心 → 忄, 衣 → 衤, 示 → 礻."
+   }
+  },
+  {
+   "id": "t.mnemonic",
+   "group": "characters",
+   "title": {
+    "es": "Mnemotecnia frente a origen",
+    "en": "Mnemonic versus origin"
+   },
+   "text": {
+    "es": "Una mnemotecnia es una imagen para recordar, aunque sea inventada; el origen es la historia real del carácter. Las tarjetas las separan: «Mnemotecnia» nunca pretende ser etimología.",
+    "en": "A mnemonic is an image to remember by, even if invented; the origin is the character's real history. The cards keep them apart: a «Mnemonic» never claims to be etymology."
+   }
+  },
+  {
+   "id": "t.homophones",
+   "group": "sounds",
+   "title": {
+    "es": "Homófonos",
+    "en": "Homophones"
+   },
+   "text": {
+    "es": "El mandarín tiene unas 400 sílabas distintas sin contar el tono y unas 1300 con tono, para miles de caracteres: muchos suenan igual. shì es 是 «ser», 事 «asunto», 市 «ciudad», 试 «probar», 室 «sala», 世 «mundo»… Por eso casi todas las palabras modernas tienen dos sílabas (学习, 朋友, 东西): la segunda deshace la ambigüedad. Y por eso el tono no es un adorno: cambia la palabra.",
+    "en": "Mandarin has about 400 distinct syllables without tone and about 1,300 with tone, for thousands of characters: many sound alike. shì is 是 «be», 事 «matter», 市 «city», 试 «try», 室 «room», 世 «world»… That is why most modern words have two syllables (学习, 朋友, 东西): the second removes the ambiguity. And why the tone is no ornament: it changes the word."
+   }
+  },
+  {
+   "id": "t.tones",
+   "group": "sounds",
+   "title": {
+    "es": "Los cuatro tonos y el neutro",
+    "en": "The four tones and the neutral"
+   },
+   "text": {
+    "es": "Primero alto y sostenido (mā), segundo que sube (má), tercero bajo, que en la práctica casi solo baja (mǎ), cuarto que cae de golpe (mà), y el neutro, corto y sin tono propio (ma en 吗). El tercero y el cambio de tono de 不 y 一 tienen sus reglas en esta misma pestaña.",
+    "en": "First high and level (mā), second rising (má), third low, in practice mostly just low (mǎ), fourth falling sharply (mà), and the neutral, short and toneless (ma in 吗). The third tone and the tone changes of 不 and 一 have their own rules on this tab."
+   }
+  },
+  {
+   "id": "t.syllable",
+   "group": "sounds",
+   "title": {
+    "es": "Sílaba: inicial, final y tono",
+    "en": "Syllable: initial, final and tone"
+   },
+   "text": {
+    "es": "Cada sílaba es una inicial (consonante: b, zh, x…), una final (a, ian, ong…) y un tono. Un hanzi es una sílaba. El pinyin escribe las tres cosas; aprender a oírlas por separado es lo que permite escribir lo que se oye.",
+    "en": "Each syllable is an initial (a consonant: b, zh, x…), a final (a, ian, ong…) and a tone. One hanzi is one syllable. Pinyin writes all three; learning to hear them apart is what lets you write down what you hear."
+   }
+  },
+  {
+   "id": "t.loanword",
+   "group": "words",
+   "title": {
+    "es": "Préstamo frente a calco",
+    "en": "Loanword versus calque"
+   },
+   "text": {
+    "es": "Una palabra extranjera entra de dos formas: imitando su sonido (咖啡 kāfēi «café», 沙发 shāfā «sofá») o traduciendo sus piezas (软件 «software» = blando + pieza; 电脑 «ordenador» = eléctrico + cerebro). Hay mezclas: 美国 imita «América» con 美 měi, que además significa «bello».",
+    "en": "A foreign word comes in two ways: imitating its sound (咖啡 kāfēi «coffee», 沙发 shāfā «sofa») or translating its pieces (软件 «software» = soft + piece; 电脑 «computer» = electric + brain). Some mix both: 美国 imitates «America» with 美 měi, which also means «beautiful»."
+   }
+  }
+ ],
  "deck": {
   "file": "5-output/chino-practico.apkg",
   "cards": 630

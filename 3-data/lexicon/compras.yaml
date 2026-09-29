@@ -164,7 +164,7 @@ entries:
     meaning: {es: querer (algo); hacer falta, en: to want; to need}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
-      - {kind: mnemonic, private: false, date: '2026-09-27', text: 'Unas manos que sujetan a una mujer por la cintura: desear.'}
+      - {kind: mnemonic, private: false, date: '2026-09-27', text: 'Unas manos que sujetan a una mujer por la cintura: desear.', original: originalmente unas manos sujetaban a una mujer por la cintura; de ahí pasó a idea de desear / querer.}
   - id: w.xuyao
     use: hear
     role: content
@@ -175,7 +175,7 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: '需要 es necesitar porque la situación lo impone; 要, querer o hacer falta. 我需要水 «necesito agua»; 我要水 «quiero agua».'}
-      - {kind: mnemonic, private: false, date: '2026-09-27', text: '需: una persona bajo la lluvia 雨 que necesita resguardo.'}
+      - {kind: mnemonic, private: false, date: '2026-09-27', text: '需: una persona bajo la lluvia 雨 que necesita resguardo.', original: una persona bajo la lluvia 雨 necesita protección}
   - id: g.want-like
     kind: group
     basis: set

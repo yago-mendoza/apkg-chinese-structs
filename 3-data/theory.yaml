@@ -1,0 +1,88 @@
+# Teoría: los términos que usan las tarjetas y el cuaderno, explicados una vez. Sin tarjetas propias: se leen en el
+# cuaderno (InfraPhysics, pestaña de pronunciación). Cada término en español e inglés; `examples`, hanzi que ya están
+# en el mazo o son muy básicos. Cifras solo si están comprobadas (el recuento clásico es el del diccionario Shuowen,
+# año 100, con 9353 caracteres).
+terms:
+  - id: t.status
+    group: characters
+    title: {es: 'Palabra, ligada o componente', en: 'Word, bound or component'}
+    text:
+      es: 'Cada carácter del mazo lleva su estatus. Palabra: se usa solo (门, 来, 爱). Ligada: solo aparece dentro de palabras (们 en 我们, 师 en 老师). Componente: solo es una pieza de otros caracteres (亻, 讠, 扌). Algunos son las dos cosas: 口 es componente en 叫 y palabra suelta, «boca».'
+      en: 'Every character in the deck carries its status. Word: used on its own (门, 来, 爱). Bound: only inside words (们 in 我们, 师 in 老师). Component: only a piece of other characters (亻, 讠, 扌). Some are both: 口 is a component in 叫 and a word of its own, «mouth».'
+  - id: t.pictogram
+    group: characters
+    title: {es: Pictograma, en: Pictogram}
+    text:
+      es: 'Un carácter que empezó como dibujo de lo que significa: 日 sol, 月 luna, 山 montaña, 人 persona, 马 caballo. Son los más fáciles de imaginar y los menos numerosos: unos 360 de los 9353 del diccionario clásico Shuowen, alrededor del 4 %.'
+      en: 'A character that began as a drawing of its meaning: 日 sun, 月 moon, 山 mountain, 人 person, 马 horse. The easiest to picture and the fewest: about 360 of the 9,353 in the classical Shuowen dictionary, around 4 %.'
+    examples: [日, 月, 山, 人, 马]
+  - id: t.indicative
+    group: characters
+    title: {es: Indicativo, en: Indicative}
+    text:
+      es: 'Un signo abstracto, a veces un trazo añadido a un dibujo: 一 二 三, 上 y 下 (una marca encima o debajo de la línea), 本 «raíz» (una raya en la raíz de 木 «árbol»). Son muy pocos.'
+      en: 'An abstract sign, sometimes a stroke added to a drawing: 一 二 三, 上 and 下 (a mark above or below the line), 本 «root» (a stroke at the root of 木 «tree»). Very few.'
+    examples: [上, 下, 本]
+  - id: t.compound
+    group: characters
+    title: {es: Compuesto de significado, en: Compound of meanings}
+    text:
+      es: 'Dos o más piezas que aportan significado y juntas dan uno nuevo: 好 = 女 «mujer» + 子 «niño»; 明 «claro» = 日 «sol» + 月 «luna»; 休 «descansar» = 亻 «persona» + 木 «árbol». Ninguna da el sonido.'
+      en: 'Two or more pieces that each bring meaning and together make a new one: 好 = 女 «woman» + 子 «child»; 明 «bright» = 日 «sun» + 月 «moon»; 休 «rest» = 亻 «person» + 木 «tree». None gives the sound.'
+    examples: [好, 明, 休]
+  - id: t.phonosemantic
+    group: characters
+    title: {es: 'Fonético-semántico', en: 'Phono-semantic'}
+    text:
+      es: 'Una pieza da el significado y otra el sonido: 妈 = 女 «mujer» + 马 mǎ; 请 = 讠 «hablar» + 青 qīng; 们 = 亻 «persona» + 门 mén. Son la gran mayoría: más del 80 % en el Shuowen, y más aún hoy. La pista de sonido es aproximada: a menudo cambia el tono (青 qīng → 请 qǐng) y a veces la consonante.'
+      en: 'One piece gives the meaning and another the sound: 妈 = 女 «woman» + 马 mǎ; 请 = 讠 «speech» + 青 qīng; 们 = 亻 «person» + 门 mén. The vast majority: over 80 % in the Shuowen, more today. The sound hint is approximate: the tone often changes (青 qīng → 请 qǐng), sometimes the consonant too.'
+    examples: [妈, 请, 们]
+  - id: t.phonetic-series
+    group: characters
+    title: {es: Serie fonética, en: Phonetic series}
+    text:
+      es: 'Los caracteres que comparten la misma pieza de sonido: 门 mén → 们 men, 问 wèn, 闻 wén; 青 qīng → 请 qǐng, 清 qīng, 晴 qíng, 情 qíng. Aprenderlos juntos une el hanzi con su sonido en las dos direcciones.'
+      en: 'Characters that share the same sound piece: 门 mén → 们 men, 问 wèn, 闻 wén; 青 qīng → 请 qǐng, 清 qīng, 晴 qíng, 情 qíng. Learning them together ties the hanzi to its sound both ways.'
+  - id: t.loan
+    group: characters
+    title: {es: Préstamo fonético, en: Phonetic loan}
+    text:
+      es: 'Un carácter tomado por su sonido para otra palabra que no tenía escritura: 来 era el dibujo de una planta de trigo y se prestó para «venir», que sonaba igual. El dibujo ya no dice nada del significado.'
+      en: 'A character borrowed for its sound to write another word that had no character: 来 was a drawing of wheat, lent to «come», which sounded the same. The picture no longer says anything about the meaning.'
+    examples: [来]
+  - id: t.radical
+    group: characters
+    title: {es: Radical y forma lateral, en: Radical and side form}
+    text:
+      es: 'El radical es la pieza por la que se ordena un carácter en el diccionario, casi siempre la de significado. Muchos cambian de forma al ir a un lado: 人 → 亻, 言 → 讠, 水 → 氵, 手 → 扌, 心 → 忄, 衣 → 衤, 示 → 礻.'
+      en: 'The radical is the piece a dictionary files a character under, usually the meaning piece. Many change shape on the side: 人 → 亻, 言 → 讠, 水 → 氵, 手 → 扌, 心 → 忄, 衣 → 衤, 示 → 礻.'
+  - id: t.mnemonic
+    group: characters
+    title: {es: Mnemotecnia frente a origen, en: Mnemonic versus origin}
+    text:
+      es: 'Una mnemotecnia es una imagen para recordar, aunque sea inventada; el origen es la historia real del carácter. Las tarjetas las separan: «Mnemotecnia» nunca pretende ser etimología.'
+      en: 'A mnemonic is an image to remember by, even if invented; the origin is the character''s real history. The cards keep them apart: a «Mnemonic» never claims to be etymology.'
+  - id: t.homophones
+    group: sounds
+    title: {es: Homófonos, en: Homophones}
+    text:
+      es: 'El mandarín tiene unas 400 sílabas distintas sin contar el tono y unas 1300 con tono, para miles de caracteres: muchos suenan igual. shì es 是 «ser», 事 «asunto», 市 «ciudad», 试 «probar», 室 «sala», 世 «mundo»… Por eso casi todas las palabras modernas tienen dos sílabas (学习, 朋友, 东西): la segunda deshace la ambigüedad. Y por eso el tono no es un adorno: cambia la palabra.'
+      en: 'Mandarin has about 400 distinct syllables without tone and about 1,300 with tone, for thousands of characters: many sound alike. shì is 是 «be», 事 «matter», 市 «city», 试 «try», 室 «room», 世 «world»… That is why most modern words have two syllables (学习, 朋友, 东西): the second removes the ambiguity. And why the tone is no ornament: it changes the word.'
+  - id: t.tones
+    group: sounds
+    title: {es: Los cuatro tonos y el neutro, en: The four tones and the neutral}
+    text:
+      es: 'Primero alto y sostenido (mā), segundo que sube (má), tercero bajo, que en la práctica casi solo baja (mǎ), cuarto que cae de golpe (mà), y el neutro, corto y sin tono propio (ma en 吗). El tercero y el cambio de tono de 不 y 一 tienen sus reglas en esta misma pestaña.'
+      en: 'First high and level (mā), second rising (má), third low, in practice mostly just low (mǎ), fourth falling sharply (mà), and the neutral, short and toneless (ma in 吗). The third tone and the tone changes of 不 and 一 have their own rules on this tab.'
+  - id: t.syllable
+    group: sounds
+    title: {es: 'Sílaba: inicial, final y tono', en: 'Syllable: initial, final and tone'}
+    text:
+      es: 'Cada sílaba es una inicial (consonante: b, zh, x…), una final (a, ian, ong…) y un tono. Un hanzi es una sílaba. El pinyin escribe las tres cosas; aprender a oírlas por separado es lo que permite escribir lo que se oye.'
+      en: 'Each syllable is an initial (a consonant: b, zh, x…), a final (a, ian, ong…) and a tone. One hanzi is one syllable. Pinyin writes all three; learning to hear them apart is what lets you write down what you hear.'
+  - id: t.loanword
+    group: words
+    title: {es: Préstamo frente a calco, en: Loanword versus calque}
+    text:
+      es: 'Una palabra extranjera entra de dos formas: imitando su sonido (咖啡 kāfēi «café», 沙发 shāfā «sofá») o traduciendo sus piezas (软件 «software» = blando + pieza; 电脑 «ordenador» = eléctrico + cerebro). Hay mezclas: 美国 imita «América» con 美 měi, que además significa «bello».'
+      en: 'A foreign word comes in two ways: imitating its sound (咖啡 kāfēi «coffee», 沙发 shāfā «sofa») or translating its pieces (软件 «software» = soft + piece; 电脑 «computer» = electric + brain). Some mix both: 美国 imitates «America» with 美 měi, which also means «beautiful».'

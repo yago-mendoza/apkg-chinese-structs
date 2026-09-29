@@ -200,6 +200,13 @@ class Repository(unittest.TestCase):
             for path in re.findall(r'data-audio="([^"]+)"', html):
                 self.assertTrue((anki.ROOT / path).exists(), path)
 
+    def test_bound_character_takes_the_level_of_its_word(self):
+        levels = anki.hsk_levels()
+        ru = {"id": "c.t.ru", "kind": "character", "hanzi": "入", "pinyin": "rù", "standalone": "rare"}
+        rukou = {"id": "w.t.rukou", "kind": "word", "hanzi": "入口", "pinyin": "rùkǒu"}
+        self.assertEqual(anki.level_of("c.t.ru", {"c.t.ru": ru}, {}, levels), levels["入"])
+        self.assertEqual(anki.level_of("c.t.ru", {"c.t.ru": ru, "w.t.rukou": rukou}, {}, levels), levels["入口"])
+
     def test_examples_never_come_from_a_higher_level(self):
         entries, sentences, exercises = anki.load()
         eby, sby, levels = {e["id"]: e for e in entries}, {s["id"]: s for s in sentences}, anki.hsk_levels()

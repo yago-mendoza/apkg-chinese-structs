@@ -97,7 +97,7 @@ It works as a swappable prompt module. [`docs/design.md`](docs/design.md) descri
 The deck is ordered by difficulty using the levels of the HSK 3.0 (the 2021 standard): 1 to 6, plus 7 for the advanced band (levels 7 to 9 share one vocabulary list). The HSK is the scale, not the goal: the aim is to speak, and items that are not on the official list get a level too.
 
 - **Every item has a level.** Words on the official list (`sources/hsk/`) take their official level, computed by `anki.py`. Anything else gets a level estimated by the agent, with the reason written down. A sentence takes the highest level of its words, so it never smuggles in vocabulary from a later level.
-- **Level first, theme second.** In Anki: `🐉 Chino práctico::HSK 1::02 Saludos y cortesía`. Moving an item to another level keeps its review history.
+- **Level first, theme second.** In Anki: `🐉 Chino práctico::HSK 1::02 Saludos y despedidas`. Moving an item to another level keeps its review history.
 - **One level at a time.** You study the subdeck of your current level. Anything from a higher level, even if it came from your own notes, is filed under its level and waits.
 - **Knowing where you stand.** Every review reports how much of each level's vocabulary the deck covers. When you reach a level (at least 80% of its vocabulary, plus the agent's judgement on the sentence patterns you already handle), the agent says so clearly. Anything that arrives later from a level you already passed is flagged as a gap from that level.
 - **Gaps against a curriculum.** The review compares the deck with your current level, both the official list and the lesson-by-lesson sequence of standard courses, and suggests what is missing.

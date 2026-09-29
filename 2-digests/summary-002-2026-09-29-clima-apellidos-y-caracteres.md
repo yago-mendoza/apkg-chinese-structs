@@ -153,3 +153,11 @@ Lo que este lote cambió en reglas y código, y dónde está escrito ahora:
 - El mazo ya está dividido por niveles en Anki: `HSK 1`, `HSK 2`… y dentro, los temas. Estudia el mazo entero: las nuevas ya salen primero las del HSK 1.
 - Este lote es grande (unas 290 tarjetas): a 20 nuevas al día son dos semanas. No subas el ritmo por ello.
 - La tarjeta de escucha de palabras ya es de dictado: escribes lo que oyes.
+
+## Cambios posteriores
+
+- 2026-09-29 · «Saludos y cortesía» se divide en «Saludos y despedidas» (你好, 您好, 大家好, 早, 再见, 欢迎…) y «Cortesía y respuestas» (谢谢, 请, 请问, 对, 好的, 是的, 嗯, 可以…): el tema mezclaba cosas distintas y va a crecer. Las tarjetas cambian de subdeck en Anki; el progreso se conserva (comprobado).
+- 2026-09-29 · Un carácter ligado toma el nivel de la palabra más básica del mazo que lo contiene: 入 pasa de HSK 6 (su nivel como verbo suelto) a HSK 2 (入口).
+- 2026-09-29 · Teoría (`3-data/theory.yaml`): pictograma, indicativo, compuesto de significado, fonético-semántico, serie fonética, préstamo fonético, radical, mnemotecnia frente a origen, homófonos, tonos, sílaba, préstamo frente a calco. Se lee en el cuaderno web; no genera tarjetas.
+- 2026-09-29 · Citas de libros: solo se retira la copia literal; la misma idea con otras palabras se queda, sin nombrar la fuente. El apunte archivado se rehízo con ese criterio, y dos notas recuperan tu original (要, 需).
+- 2026-09-29 · La exportación lleva, además, si el nivel es estimado, el estatus de cada carácter (palabra, ligada, componente) y la cobertura de cada lista del HSK.

@@ -1,4 +1,4 @@
-# Ejercicios · Saludos y cortesía. Esquema: 3-data/README.md
+# Ejercicios · Saludos y despedidas. Esquema: 3-data/README.md
 
 exercises:
   - id: x.read.nihao
@@ -12,25 +12,6 @@ exercises:
     refs: [p.third-tone-sandhi]
     explanation: Se escriben dos terceros tonos aunque la primera sílaba suene en segundo.
     comments: []
-  - id: x.tones.xiexie
-    added: 2026-09-25
-    type: tones
-    lang: es
-    targets: [e.xiexie]
-    skills: [tones, pinyin]
-    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 谢谢, pinyin: xie xie}
-    answer: {typed: '45', hanzi: 谢谢, pinyin: xièxie, meaning: gracias}
-    explanation: Cuarto tono y después tono neutro.
-    comments: []
-  - id: x.produce.xiexie
-    added: 2026-09-25
-    type: produce
-    lang: es
-    targets: [e.xiexie]
-    skills: [production, pinyin]
-    prompt: {text: 'Te sirven agua. ¿Qué dices?'}
-    answer: {typed: xie4 xie5, hanzi: 谢谢, pinyin: xièxie, meaning: gracias}
-    comments: []
   - id: x.speak.nihao
     added: 2026-09-25
     type: speak
@@ -40,15 +21,6 @@ exercises:
     prompt: {text: Lee en voz alta y después compara con el audio., hanzi: 你好, pinyin: nǐ hǎo}
     answer: {hanzi: 你好, pinyin: nǐ hǎo, meaning: hola}
     refs: [p.third-tone-sandhi]
-    comments: []
-  - id: x.read.qing
-    added: 2026-09-25
-    type: read
-    targets: [w.qing]
-    skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 请}
-    answer: {typed: qing3, hanzi: 请, pinyin: qǐng, meaning: por favor}
-    lang: es
     comments: []
   - id: x.read.zaijian
     added: 2026-09-25
@@ -68,15 +40,6 @@ exercises:
     answer: {typed: bai2 bai2, hanzi: 拜拜, pinyin: báibái, meaning: 'adiós (informal, del inglés bye-bye)'}
     lang: es
     comments: []
-  - id: x.read.dui
-    added: 2026-09-25
-    type: read
-    targets: [w.dui]
-    skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 对}
-    answer: {typed: dui4, hanzi: 对, pinyin: duì, meaning: 'correcto; sí, eso es'}
-    lang: es
-    comments: []
   - id: x.read.zao
     added: 2026-09-25
     type: read
@@ -84,16 +47,6 @@ exercises:
     skills: [reading, pinyin, tones]
     prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 早}
     answer: {typed: zao3, hanzi: 早, pinyin: zǎo, meaning: ¡buenos días! (informal); temprano}
-    lang: es
-    comments: []
-  - id: x.read.haode
-    added: 2026-09-25
-    type: read
-    targets: [e.haode]
-    skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 好的}
-    answer: {typed: hao3 de5, hanzi: 好的, pinyin: hǎo de, meaning: 'vale, de acuerdo'}
-    reveal: [s.haode-xiexie]
     lang: es
     comments: []
   - id: x.produce.zaijian
@@ -136,17 +89,6 @@ exercises:
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Yo también estoy bien.}
-    lang: es
-    comments: []
-  - id: x.listen.haode-xiexie
-    added: 2026-09-25
-    type: listen
-    sentence: s.haode-xiexie
-    targets: [s.haode-xiexie]
-    context: [e.haode, e.xiexie]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Vale, ¡gracias!'}
     lang: es
     comments: []
   - id: x.produce.ni-hao-ma
@@ -234,25 +176,6 @@ exercises:
     answer: {typed: '33', hanzi: 你好, pinyin: nǐ hǎo, meaning: hola}
     lang: es
     comments: []
-  - id: x.read.xiexie
-    added: 2026-09-26
-    type: read
-    targets: [e.xiexie]
-    skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 谢谢}
-    answer: {hanzi: 谢谢, pinyin: xièxie, meaning: gracias}
-    reveal: [s.haode-xiexie]
-    lang: es
-    comments: []
-  - id: x.produce.qing
-    added: 2026-09-26
-    type: produce
-    targets: [w.qing]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «por favor»? Escribe el pinyin.'}
-    answer: {typed: qing3, hanzi: 请, pinyin: qǐng, meaning: por favor}
-    lang: es
-    comments: []
   - id: x.produce.baibai
     added: 2026-09-26
     type: produce
@@ -262,15 +185,6 @@ exercises:
     answer: {typed: bai2 bai2, hanzi: 拜拜, pinyin: báibái, meaning: 'adiós (informal, del inglés bye-bye)'}
     lang: es
     comments: []
-  - id: x.produce.dui
-    added: 2026-09-26
-    type: produce
-    targets: [w.dui]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «correcto; sí, eso es»? Escribe el pinyin.'}
-    answer: {typed: dui4, hanzi: 对, pinyin: duì, meaning: 'correcto; sí, eso es'}
-    lang: es
-    comments: []
   - id: x.produce.zao
     added: 2026-09-26
     type: produce
@@ -278,25 +192,6 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: '¿Cómo se dice «¡buenos días! (informal); temprano»? Escribe el pinyin.'}
     answer: {typed: zao3, hanzi: 早, pinyin: zǎo, meaning: ¡buenos días! (informal); temprano}
-    lang: es
-    comments: []
-  - id: x.produce.haode
-    added: 2026-09-26
-    type: produce
-    targets: [e.haode]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «vale, de acuerdo»? Escribe el pinyin.'}
-    answer: {typed: hao3 de5, hanzi: 好的, pinyin: hǎo de, meaning: 'vale, de acuerdo'}
-    lang: es
-    comments: []
-  - id: x.tones.haode
-    added: 2026-09-26
-    type: tones
-    targets: [e.haode]
-    refs: [p.neutral-tone]
-    skills: [tones, pinyin]
-    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 好的, pinyin: hao de}
-    answer: {typed: '35', hanzi: 好的, pinyin: hǎo de, meaning: 'vale, de acuerdo'}
     lang: es
     comments: []
   - id: x.read.ninhao
@@ -356,17 +251,6 @@ exercises:
     answer: {meaning: Yo también estoy bien.}
     lang: es
     comments: []
-  - id: x.produce.haode-xiexie
-    added: 2026-09-26
-    type: produce
-    sentence: s.haode-xiexie
-    targets: [s.haode-xiexie]
-    context: [e.haode, e.xiexie]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Vale, ¡gracias!»'}
-    answer: {meaning: 'Vale, ¡gracias!'}
-    lang: es
-    comments: []
   - id: x.dictation.nihao
     added: 2026-09-27
     lang: es
@@ -375,24 +259,6 @@ exercises:
     skills: [listening, pinyin, tones]
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: ni3 hao3, hanzi: 你好, pinyin: nǐ hǎo, meaning: hola}
-    comments: []
-  - id: x.dictation.xiexie
-    added: 2026-09-27
-    lang: es
-    type: listen
-    targets: [e.xiexie]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: xie4 xie5, hanzi: 谢谢, pinyin: xièxie, meaning: gracias}
-    comments: []
-  - id: x.dictation.qing
-    added: 2026-09-27
-    lang: es
-    type: listen
-    targets: [w.qing]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: qing3, hanzi: 请, pinyin: qǐng, meaning: por favor}
     comments: []
   - id: x.dictation.zaijian
     added: 2026-09-27
@@ -412,15 +278,6 @@ exercises:
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: bai2 bai2, hanzi: 拜拜, pinyin: báibái, meaning: 'adiós (informal, del inglés bye-bye)'}
     comments: []
-  - id: x.dictation.dui
-    added: 2026-09-27
-    lang: es
-    type: listen
-    targets: [w.dui]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: dui4, hanzi: 对, pinyin: duì, meaning: 'correcto; sí, eso es'}
-    comments: []
   - id: x.dictation.zao
     added: 2026-09-27
     lang: es
@@ -429,15 +286,6 @@ exercises:
     skills: [listening, pinyin, tones]
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: zao3, hanzi: 早, pinyin: zǎo, meaning: ¡buenos días! (informal); temprano}
-    comments: []
-  - id: x.dictation.haode
-    added: 2026-09-27
-    lang: es
-    type: listen
-    targets: [e.haode]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: hao3 de5, hanzi: 好的, pinyin: hǎo de, meaning: 'vale, de acuerdo'}
     comments: []
   - id: x.dictation.ninhao
     added: 2026-09-27
@@ -475,87 +323,6 @@ exercises:
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: lao3 shi1 hao3, hanzi: 老师好, pinyin: lǎoshī hǎo, meaning: 'hola, profe'}
     comments: []
-  - id: x.dictation.qingwen
-    added: 2026-09-29
-    lang: es
-    type: listen
-    targets: [e.qingwen]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: qing3 wen4, hanzi: 请问, pinyin: qǐngwèn, meaning: disculpe (para preguntar)}
-    comments: []
-  - id: x.produce.qingwen
-    added: 2026-09-29
-    lang: es
-    type: produce
-    targets: [e.qingwen]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «disculpe (para preguntar)»? Escribe el pinyin.'}
-    answer: {typed: qing3 wen4, hanzi: 请问, pinyin: qǐngwèn, meaning: disculpe (para preguntar)}
-    comments: []
-  - id: x.read.qingwen
-    added: 2026-09-29
-    lang: es
-    type: read
-    targets: [e.qingwen]
-    skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 请问}
-    answer: {hanzi: 请问, pinyin: qǐngwèn, meaning: disculpe (para preguntar)}
-    comments: []
-  - id: x.dictation.qingjin
-    added: 2026-09-29
-    lang: es
-    type: listen
-    targets: [e.qingjin]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: qing3 jin4, hanzi: 请进, pinyin: qǐng jìn, meaning: 'pase, por favor'}
-    comments: []
-  - id: x.produce.qingjin
-    added: 2026-09-29
-    lang: es
-    type: produce
-    targets: [e.qingjin]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «pase, por favor»? Escribe el pinyin.'}
-    answer: {typed: qing3 jin4, hanzi: 请进, pinyin: qǐng jìn, meaning: 'pase, por favor'}
-    comments: []
-  - id: x.read.qingjin
-    added: 2026-09-29
-    lang: es
-    type: read
-    targets: [e.qingjin]
-    skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 请进}
-    answer: {hanzi: 请进, pinyin: qǐng jìn, meaning: 'pase, por favor'}
-    comments: []
-  - id: x.dictation.qingzuo
-    added: 2026-09-29
-    lang: es
-    type: listen
-    targets: [e.qingzuo]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: qing3 zuo4, hanzi: 请坐, pinyin: qǐng zuò, meaning: 'siéntese, por favor'}
-    comments: []
-  - id: x.produce.qingzuo
-    added: 2026-09-29
-    lang: es
-    type: produce
-    targets: [e.qingzuo]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «siéntese, por favor»? Escribe el pinyin.'}
-    answer: {typed: qing3 zuo4, hanzi: 请坐, pinyin: qǐng zuò, meaning: 'siéntese, por favor'}
-    comments: []
-  - id: x.read.qingzuo
-    added: 2026-09-29
-    lang: es
-    type: read
-    targets: [e.qingzuo]
-    skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 请坐}
-    answer: {hanzi: 请坐, pinyin: qǐng zuò, meaning: 'siéntese, por favor'}
-    comments: []
   - id: x.dictation.huanying
     added: 2026-09-29
     lang: es
@@ -583,100 +350,6 @@ exercises:
     prompt: {text: 'Lee: pinyin y significado.', hanzi: 欢迎}
     answer: {hanzi: 欢迎, pinyin: huānyíng, meaning: bienvenido; dar la bienvenida}
     comments: []
-  - id: x.dictation.shide
-    added: 2026-09-29
-    lang: es
-    type: listen
-    targets: [e.shide]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: shi4 de5, hanzi: 是的, pinyin: shì de, meaning: 'sí, eso es'}
-    comments: []
-  - id: x.produce.shide
-    added: 2026-09-29
-    lang: es
-    type: produce
-    targets: [e.shide]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «sí, eso es»? Escribe el pinyin.'}
-    answer: {typed: shi4 de5, hanzi: 是的, pinyin: shì de, meaning: 'sí, eso es'}
-    comments: []
-  - id: x.read.shide
-    added: 2026-09-29
-    lang: es
-    type: read
-    targets: [e.shide]
-    skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 是的}
-    answer: {hanzi: 是的, pinyin: shì de, meaning: 'sí, eso es'}
-    comments: []
-  - id: x.tones.shide
-    added: 2026-09-29
-    lang: es
-    type: tones
-    targets: [e.shide]
-    skills: [tones, pinyin]
-    refs: [p.neutral-tone]
-    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 是的, pinyin: shi de}
-    answer: {typed: '45', hanzi: 是的, pinyin: shì de, meaning: 'sí, eso es'}
-    comments: []
-  - id: x.read.en
-    added: 2026-09-29
-    lang: es
-    type: read
-    targets: [w.en]
-    skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 嗯}
-    answer: {hanzi: 嗯, pinyin: èn, meaning: 'mm, sí (asentimiento)'}
-    comments: []
-  - id: x.dictation.keyi
-    added: 2026-09-29
-    lang: es
-    type: listen
-    targets: [w.keyi]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: ke3 yi3, hanzi: 可以, pinyin: kěyǐ, meaning: se puede; vale}
-    comments: []
-  - id: x.produce.keyi
-    added: 2026-09-29
-    lang: es
-    type: produce
-    targets: [w.keyi]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «se puede; vale»? Escribe el pinyin.'}
-    answer: {typed: ke3 yi3, hanzi: 可以, pinyin: kěyǐ, meaning: se puede; vale}
-    comments: []
-  - id: x.read.keyi
-    added: 2026-09-29
-    lang: es
-    type: read
-    targets: [w.keyi]
-    skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 可以}
-    answer: {hanzi: 可以, pinyin: kěyǐ, meaning: se puede; vale}
-    comments: []
-  - id: x.tones.keyi
-    added: 2026-09-29
-    lang: es
-    type: tones
-    targets: [w.keyi]
-    skills: [tones, pinyin]
-    refs: [p.third-tone-sandhi]
-    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 可以, pinyin: ke yi}
-    answer: {typed: '33', hanzi: 可以, pinyin: kěyǐ, meaning: se puede; vale}
-    comments: []
-  - id: x.listen.qing-he-kafei
-    added: 2026-09-29
-    lang: es
-    type: listen
-    sentence: s.qing-he-kafei
-    targets: [s.qing-he-kafei]
-    context: [w.qing, w.he.drink, w.kafei]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Tome un café, por favor.'}
-    comments: []
   - id: x.listen.huanying-ni
     added: 2026-09-29
     lang: es
@@ -698,44 +371,4 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¡Bienvenido!»'}
     answer: {meaning: ¡Bienvenido!}
-    comments: []
-  - id: x.listen.en-xiexie
-    added: 2026-09-29
-    lang: es
-    type: listen
-    sentence: s.en-xiexie
-    targets: [s.en-xiexie]
-    context: [w.en, e.xiexie]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Sí, gracias.'}
-    comments: []
-  - id: x.produce.en-xiexie
-    added: 2026-09-29
-    lang: es
-    type: produce
-    sentence: s.en-xiexie
-    targets: [s.en-xiexie]
-    context: [w.en, e.xiexie]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Sí, gracias.»'}
-    answer: {meaning: 'Sí, gracias.'}
-    comments: []
-  - id: x.dictation.en
-    added: 2026-09-29
-    type: listen
-    targets: [w.en]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: en4, hanzi: 嗯, pinyin: èn, meaning: 'mm, sí (asentimiento)'}
-    lang: es
-    comments: []
-  - id: x.produce.en
-    added: 2026-09-29
-    type: produce
-    targets: [w.en]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo asientes («mm, sí») mientras alguien te habla? Escribe el pinyin.'}
-    answer: {typed: en4, hanzi: 嗯, pinyin: èn, meaning: 'mm, sí (asentimiento)'}
-    lang: es
     comments: []

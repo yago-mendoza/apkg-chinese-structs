@@ -51,7 +51,7 @@ ANKI_CONNECT = "http://127.0.0.1:8765"
 
 # Identidades estables: no cambiarlas nunca, o Anki verá un mazo/modelo nuevo.
 GUID_NAMESPACE = "apkg-chinese-structs"
-DECK_NAME = "🐉 Chino práctico"          # un subdeck por tema: "🐉 Chino práctico::02 Saludos y cortesía"
+DECK_NAME = "🐉 Chino práctico"          # subdecks por nivel y tema: "🐉 Chino práctico::HSK 1::02 Saludos y despedidas"
 DECK_ID_BASE = 1_758_800_000_000         # ID del subdeck = base + hash estable del id del tema
 MODEL_TYPED_ID = 1_758_800_101
 MODEL_SELF_ID = 1_758_800_102
@@ -579,6 +579,23 @@ LOG_HEADER = ("<!-- LOG del lote: qué entró, qué no y por qué, correcciones 
 LEVEL_PASS = 0.8     # un nivel se da por superado con el 80 % de su vocabulario (más el juicio sobre las estructuras)
 
 
+THEORY = DATA / "theory.yaml"
+
+
+def load_theory():
+    """Términos de teoría (3-data/theory.yaml): se leen en el cuaderno; no generan tarjetas."""
+    if not THEORY.exists():
+        return []
+    return (yaml.safe_load(THEORY.read_text(encoding="utf-8")) or {}).get("terms", [])
+
+
+def deck_coverage(entries):
+    """Por nivel (en el orden de level_coverage): palabras de la lista que están en el mazo, con cualquier `use`."""
+    levels = hsk_levels()
+    have = {e.get("hanzi") for e in entries if e.get("kind") in ("word", "expression") and e.get("use") != "drop"}
+    return [sum(1 for w, lv in levels.items() if lv == level and w in have) for level in LEVELS]
+
+
 def level_coverage(entries):
     """[(nivel, palabras de la lista que el mazo entrena para oír o decir, total del nivel)], nivel a nivel."""
     levels = hsk_levels()
@@ -1057,6 +1074,15 @@ def quality_rules(entries, sentences, exercises, eby, sby, errors, warnings):
         gap = level_of(ex.get("gap"), eby, sby, levels) or 0
         if (level_of(ex["sentence"], eby, sby, levels) or 0) > gap > 0:
             warnings.append(f"{ex['id']}: la frase es de un nivel superior al de {ex.get('gap')}")
+    # Teoría: cada término, con título y texto en los dos idiomas.
+    seen_t = set()
+    for t in load_theory():
+        if t.get("id") in seen_t:
+            errors.append(f"theory.yaml: {t.get('id')} repetido")
+        seen_t.add(t.get("id"))
+        for f in ("title", "text"):
+            if not all((t.get(f) or {}).get(l) for l in ("es", "en")):
+                errors.append(f"theory.yaml: {t.get('id')} sin {f} en es y en")
     # Fuentes privadas: nada versionado las nombra (lista local en private/forbidden.txt).
     terms = private_terms()
     if terms:
@@ -1631,7 +1657,7 @@ def level_label(level):
 
 
 def deck_name(level, theme_id, themes=None):
-    """Subdeck de una tarjeta: el nivel primero y el tema dentro (🐉 Chino práctico::HSK 1::02 Saludos y cortesía)."""
+    """Subdeck de una tarjeta: el nivel primero y el tema dentro (🐉 Chino práctico::HSK 1::02 Saludos y despedidas)."""
     themes = themes or load_themes()
     n, t = next((n, t) for n, t in enumerate(themes, 1) if t["id"] == theme_id)
     return f"{DECK_NAME}::{level_label(level)}::{n:02d} {t['title']}"
@@ -1711,8 +1737,10 @@ def hsk_levels():
 
 
 def level_of(item_id, eby, sby, levels):
-    """Nivel oficial de una entrada o frase; None si no está en la lista. Las reglas de pronunciación son de nivel 1;
-    una frase toma el nivel más alto de sus palabras con nivel conocido."""
+    """Nivel de una entrada o frase: el oficial si está en la lista del HSK; si no, el estimado (`level`). Las reglas de
+    pronunciación son de nivel 1; una frase toma el nivel más alto de sus palabras. Un carácter ligado (solo dentro de
+    palabras) se aprende con la palabra más básica del mazo que lo contiene: 入 es HSK 6 como verbo suelto, pero se
+    aprende en 入口 (HSK 2)."""
     if item_id in sby:
         known = [level_of(g["ref"], eby, sby, levels) for g in sby[item_id].get("segments", []) if g.get("ref")]
         known = [k for k in known if k]
@@ -1720,7 +1748,20 @@ def level_of(item_id, eby, sby, levels):
     e = eby.get(item_id) or {}
     if e.get("kind") == "pronunciation":
         return 1
-    return levels.get(e.get("hanzi")) or e.get("level")
+    own = levels.get(e.get("hanzi")) or e.get("level")
+    h = e.get("hanzi") or ""
+    if len(h) == 1 and standalone(e) in ("no", "rare"):
+        inside = [levels.get(w.get("hanzi")) or w.get("level") for w in eby.values()
+                  if w.get("kind") in ("word", "expression") and h in (w.get("hanzi") or "")]
+        inside = [lv for lv in inside if lv]
+        if inside:
+            return min([own or 99] + inside)
+    return own
+
+
+def level_estimated(e, levels):
+    """True si el nivel de la entrada no sale de la lista oficial (lo estimó el agente, con `level_reason`)."""
+    return e.get("kind") != "pronunciation" and not levels.get(e.get("hanzi"))
 
 
 def deck_history(exercises, card_level, cache=None):
@@ -1797,7 +1838,10 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
                                "members": [{"ref": m["ref"], "cue": m.get("cue")} for m in e.get("members", [])]})
             continue
         row = {"id": e["id"], "kind": e.get("kind"), "theme": e.get("theme"), "use": use_label(e),
-               "level": level_of(e["id"], eby, sby, levels), "notes": public_notes(e)}
+               "level": level_of(e["id"], eby, sby, levels), "levelEstimated": level_estimated(e, levels),
+               "status": char_status(e), "notes": public_notes(e)}
+        if e.get("as_word"):
+            row["asWord"] = {"es": e["as_word"].get("es"), "pinyin": e["as_word"].get("pinyin") or e.get("pinyin")}
         if e.get("kind") == "pronunciation":
             row |= {"title": e.get("title"), "explanation": " ".join((e.get("explanation") or "").split()),
                     "example": e.get("audio_text"), "audio": audio(e.get("audio_text"))}
@@ -1845,6 +1889,9 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
         "themes": [{"id": t["id"], "title": t["title"], "order": n} for n, t in enumerate(load_themes(), 1)],
         "entries": out_entries, "groups": out_groups, "sentences": out_sentences,
         "cards": cards, "history": history, "historyCache": new_cache,
+        "coverage": [{"level": lv, "total": total, "trained": have, "inDeck": in_deck}
+                     for (lv, have, total), in_deck in zip(level_coverage(entries), deck_coverage(entries))],
+        "theory": load_theory(),
         "deck": {"file": APKG.relative_to(ROOT).as_posix(), "cards": len(exercises)},
     }
 

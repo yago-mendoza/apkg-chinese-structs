@@ -231,7 +231,7 @@ ces 错误 cuòwù
 误 wù suele ser más verbal/formal: equivocarse, cometer por error:
 我误会你了。Wǒ wùhuì nǐ le. = Te malinterpreté.
 会 huì aquí = entender / comprender dentro de 误会 wùhuì = malinterpretar / entender mal.
-Sí. 会 huì parece [cita de un libro retirada], pero según el libro no se interpreta así.
+Sí. 会 huì parece “techo + privado”, pero según el libro no se interpreta así.
 El libro lo explica como:
 会 huì = reunirse / saber
 [cita de un libro retirada]
@@ -240,7 +240,7 @@ La parte de arriba representa personas reunidas.
 云 (pronunciado yún). (a lo mejro vincualr a yueming luna o algo asi para pensarlo 
 
 
-- 工 gōng = trabajo / trabajar → 工作 gōngzuò trabajo, 工程师 gōngchéngshī ingeniero. el libro lo trata como [cita de un libro retirada].
+- 工 gōng = trabajo / trabajar → 工作 gōngzuò trabajo, 工程师 gōngchéngshī ingeniero. el libro lo trata como “trabajar”.
 - 恭 gōng = respetuoso. el libro: [cita de un libro retirada].
 Suena igual porque en chino hay muchos caracteres homófonos: mismo sonido, distinto hanzi y significado.
 
@@ -256,11 +256,11 @@ otra de diferniace ntre pesrmaot ofentico y caloc cual es cua l: kafey vs ruanji
 yōu mò = prestamo (es mas imporatnte realmente la entonacion en este que otra cosa)
 软件 ruǎnjiàn = software
 软 ruǎn = blando / suave / flexible
-Se ve 车 [cita de un libro retirada] + 欠 [cita de un libro retirada].+ (PERO 欠 SE USA PAR DEBER DINERO 我欠你钱)   el libro lo memoriza como el interior vacío de un coche, algo no rígido/[cita de un libro retirada].
+Se ve 车 “carro” + 欠 “faltar / carecer”.+ (PERO 欠 SE USA PAR DEBER DINERO 我欠你钱)   el libro lo memoriza como el interior vacío de un coche, algo no rígido/“suave”.
 钱
 En software, “blando” se usa por oposición a lo físico: programas, datos, etc.
 件 jiàn = cosa / pieza / elemento
-Es 亻 persona + 牛 buey. el libro: persona y buey eran dos cosas de gran valor en la sociedad antigua, de ahí el sentido general de [cita de un libro retirada].
+Es 亻 persona + 牛 buey. el libro: persona y buey eran dos cosas de gran valor en la sociedad antigua, de ahí el sentido general de “cosa / elemento”.
 Por eso 软件 ≈ elementos blandos → software.
 
 Reconoce 喜欢 = gustar, 恭喜 = enhorabuena
@@ -316,9 +316,9 @@ Y 臼 jiù = mortero. Es un carácter y también puede funcionar como componente
 Así en 叟:
 臼 = mortero
 又 = mano  
-→ mano trabajando/reb叟 sǒu es un hanzi completo que significa [cita de un libro retirada], pero el libro dice que se usa poco actualmenteuscando en un mortero → 叟 = anciano.
+→ mano trabajando/reb叟 sǒu es un hanzi completo que significa “anciano”, pero el libro dice que se usa poco actualmenteuscando en un mortero → 叟 = anciano.
 瘦 shòu = delgado
-El libro lo memoriza semánticamente como [cita de un libro retirada].
+El libro lo memoriza semánticamente como “cuerpo enfermo de un anciano → flaco”.
 Y además, lingüísticamente 叟 sǒu también da una pista fonética:
 sǒu → shòu
 [cita de un libro retirada] [cita de un libro retirada] [cita de un libro retirada]
@@ -332,7 +332,7 @@ y otra nián de tian (dia)
 胖 pàng = gordo / obeso (parte de mitad es fonetica)
 月 aquí = carne/cuerpo, no luna.
 半 bàn = mitad.
-El libro lo memoriza como: [cita de un libro retirada] → gordo.
+El libro lo memoriza como: “mitad carne y mitad grasa” → gordo.
 y estas ¿? : 王	wáng	rey	tres horizontales + vertical
 玉	yù	jade
 牛

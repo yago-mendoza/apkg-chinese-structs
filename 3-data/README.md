@@ -4,10 +4,11 @@ Fuente de verdad del mazo, mantenida por el agente. Un archivo por tema en cada 
 
 | Ruta | Contenido |
 |---|---|
-| `themes.yaml` | Temas en orden de aprendizaje: `{id, title}`. Deciden los subdecks (`🐉 Chino práctico::NN Título`), el orden de las nuevas y el cuaderno (`4-notebook/`). Títulos con coma, entre comillas. `keep: <motivo>` si se decide mantener un tema aunque `check` avise de su tamaño. |
+| `themes.yaml` | Temas en orden de aprendizaje: `{id, title}`. Deciden los subdecks (`🐉 Chino práctico::HSK n::NN Título`), el orden de las nuevas y el cuaderno (`4-notebook/`). Títulos con coma, entre comillas. `keep: <motivo>` si se decide mantener un tema aunque `check` avise de su tamaño. |
 | `lexicon/<tema>.yaml` | `entries`: el diccionario. |
 | `sentences/<tema>.yaml` | `sentences`: frases, recursos en sí mismos y ejemplos reutilizables. |
 | `exercises/<tema>.yaml` | `exercises`: cada ejercicio es una tarjeta de Anki. Va en el tema de su primer objetivo. |
+| `theory.yaml` | `terms`: los términos de teoría (pictograma, fonético-semántico, homófonos…), `{id, group, title: {es, en}, text: {es, en}}`. Se exportan al cuaderno web; no generan tarjetas. |
 | `audio/` | MP3 generados por `anki.py audio` e `index.yaml` con su procedencia. No regenerar ni borrar. |
 
 ## Entradas (`lexicon/`)
