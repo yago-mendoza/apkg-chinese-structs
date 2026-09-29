@@ -1005,6 +1005,9 @@ def cmd_plan(doc=None):
     return 0
 
 
+MAINTENANCE_EVERY = 4       # cada cuántos lotes el review recuerda el mantenimiento de Anki
+
+
 def write_review_doc(batch, osm):
     """Deja en 1-inbox/ el review del lote: lo que falta (calculado) y los apartados que completa el agente.
     Cada punto lleva debajo una línea «>» para que YAGO escriba."""
@@ -1032,8 +1035,13 @@ def write_review_doc(batch, osm):
               "(`anki.py attic <lote>`) y por qué despertó -->", "",
               "## No entró, y por qué", "", "<!-- lo completa el agente: 🟡 y ❌, cada uno con su motivo; lo que "
               "se guarda va al desván -->",
-              "", "## Por verificar", "", "<!-- lo completa el agente: transcripciones dudosas y glosas corregidas -->",
-              "", "## Tus notas", "", "> ", ""]
+              "", "## Por verificar", "", "<!-- lo completa el agente: transcripciones dudosas y glosas corregidas -->", ""]
+    if int(batch[:3]) % MAINTENANCE_EVERY == 0:     # cada pocos lotes, el mantenimiento de Anki (docs/owner.md)
+        lines += ["## Mantenimiento", "", "Toca el repaso periódico de Anki (docs/owner.md, «Mantenimiento»):", "",
+                  "- En Anki desktop: Herramientas → Comprobar multimedia → Borrar no utilizados (sincroniza antes "
+                  "y después). Quita los audios que ya no usa ninguna tarjeta; no toca tarjetas ni progreso.",
+                  "  > ", ""]
+    lines += ["## Tus notas", "", "> ", ""]
     path = INBOX / f"review-{batch}.md"
     path.write_text("\n".join(lines), encoding="utf-8")
     print(f"Escrito {path.relative_to(ROOT)}")

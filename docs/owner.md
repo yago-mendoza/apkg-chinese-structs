@@ -33,6 +33,13 @@ Configuración y decisiones propias de este mazo (Yago Mendoza). Nada secreto: e
 - **`audio` falla**: comprobar las variables de entorno (reiniciar la terminal tras cambiarlas) y que el recurso de Azure sigue activo.
 - **Pocas tarjetas azules un día**: Anki cuenta las nuevas ya empezadas hoy contra el límite; se puede ampliar solo para hoy (Estudio personalizado → aumentar el límite de nuevas de hoy) o pedirlo al agente.
 
+## Mantenimiento
+
+Cada 4 lotes (el review lo recuerda con su propio apartado) o una vez al mes:
+
+- **Borrar los audios que ya no usa ninguna tarjeta**: en Anki desktop, Herramientas → Comprobar multimedia → Borrar no utilizados. Al cambiar o retirar tarjetas quedan audios huérfanos en la colección; no afecta a ninguna tarjeta ni a ningún progreso, y vale para toda la colección (solo borra lo que nada usa). Antes, sincronizar; después, sincronizar otra vez.
+- **Comprobar la base de datos** (Herramientas → Comprobar base de datos) si Anki avisa de algo raro.
+
 ## Por comprobar en uso real
 
 - Que el móvil conserva lo escrito entre anverso y reverso (si no, las tarjetas escritas quedan como autoevaluación).
