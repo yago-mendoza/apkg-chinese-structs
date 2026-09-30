@@ -44,6 +44,8 @@ MEDIA = DATA / "audio"                  # MP3 generados; no regenerar
 AUDIO_MANIFEST = MEDIA / "index.yaml"
 INBOX = ROOT / "1-inbox"                  # apuntes en bruto de YAGO
 HISTORY = INBOX / "history"                # lo que pasó por el inbox, archivado tal cual por lote
+CLASS_AUDIO = ROOT / "private" / "class-audio"  # grabaciones de clase y su transcripción: solo local
+RECORDING_EXTS = {".mp3", ".mp4", ".m4a", ".wav", ".ogg", ".opus", ".aac", ".flac", ".webm", ".mkv", ".mov"}
 DIGESTS = ROOT / "2-digests"              # histórico de cada lote
 NOTEBOOK = ROOT / "4-notebook"            # cuaderno de consulta por temas, generado
 OUTPUT = ROOT / "5-output"                # lo que sale: mazo y futuras exportaciones
@@ -2375,7 +2377,13 @@ def close_batch_plan(batch):
     for f in sorted(INBOX.iterdir()) if INBOX.exists() else []:
         if not f.is_file() or f.name == "README.md" or f.name == f"review-{batch}.md":
             continue
-        if f.name.startswith("review-"):
+        if f.suffix.lower() in RECORDING_EXTS:
+            # la grabación no se versiona (voz de la profesora; repositorio público): va con su transcripción
+            if not (CLASS_AUDIO / f.stem / "transcript.md").exists():
+                errors.append(f"1-inbox/{f.name}: grabación sin transcribir (tools/class_audio.py transcribe)")
+            else:
+                actions.append(("grabación → private/ (local)", f, CLASS_AUDIO / f.stem / f.name))
+        elif f.name.startswith("review-"):
             actions.append(("review leído → 1-inbox/history/", f, raw / f.name))
         elif NOTE_PREFIX_RE.match(f.name):
             actions.append(("apunte → 1-inbox/history/", f, raw / f.name))

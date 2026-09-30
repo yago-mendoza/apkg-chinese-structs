@@ -37,17 +37,9 @@ I built this for my own Mandarin, so the repository ships with a real, working e
 
 ## How it works
 
-```mermaid
-flowchart LR
-    notes["Your notes<br/>1-inbox/"] --> agent(["Agent"])
-    agent --> data[("Database<br/>3-data/")]
-    agent --> log["Batch log<br/>2-digests/"]
-    agent --> review["Review for you<br/>1-inbox/"]
-    review -. your answers .-> notes
-    data --> notebook["Notebook<br/>4-notebook/"]
-    data --> deck["Anki deck"]
-    data --> web["Public dictionary<br/>5-output/"]
-```
+<p align="center">
+  <img src="docs/assets/deck-pipeline.webp" alt="One batch drawn over the repository: you drop notes in 1-inbox and ask the agent to process them; the agent writes 3-data, the log and the review; anki.py plans, checks, synthesizes audio with Azure and exports; close-batch archives and tags; the deck goes to Anki and AnkiWeb, and GitHub, jsDelivr and infraphysics.net publish the dictionary">
+</p>
 
 **`1-inbox/`: where you write.** Notes exactly as they come out: phone notes, transcribed photos, half-finished lists, questions. The only thing that helps is the date you wrote each thing down. The agent's review lands here too, with a line under each point for your answer.
 
@@ -152,6 +144,7 @@ The agent pushes the deck itself. To do it by hand:
 - `docs/design.md`: the full specification (coverage, card types, audio, decisions).
 - `docs/owner.md`: my own setup and decisions for this deck.
 - `sources/`: external reference lists, each with its origin and license.
+- `tools/class_audio.py`: transcribes a class recording dropped in `1-inbox/` (local Whisper large-v3, chosen because it is the most accurate Whisper model for Chinese; the teacher's voice told apart from yours) into `private/`, as context for the batch. Separate environment: `tools/requirements-audio.txt`.
 
 **Commands** (mostly for the agent): `lookup <term>`, `plan` (missing cards), `scaffold` (writes them in the standard format), `gaps` (how the deck is distributed), `check`, `notebook`, `build`, `export` (the public dictionary), `close-batch <batch>` (archive, commit and tag), `audio`, `push`. `push --prune` removes cards whose exercise no longer exists (it lists them first and requires `--force` if there are many); `push --reset` returns the whole deck to new, with no progress. Tests: `.\.venv\Scripts\python -m unittest discover -s tests`, including a simulated AnkiConnect that checks nothing outside this deck is ever moved, deleted or reconfigured. GitHub Actions runs `check` and the tests on every push.
 

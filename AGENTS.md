@@ -2,7 +2,7 @@
 
 Leer `docs/goal.md` (objetivo del que aprende: el primer filtro de todo lo que entra) y `docs/design.md` antes de implementar o añadir contenido: diseño canónico, repertorio de ejercicios y decisiones pendientes. El mapa de carpetas y las convenciones de nombres están en `README.md`. La configuración y las decisiones propias del dueño del mazo (Azure, Anki, ritmo, fase de pruebas), en `docs/owner.md`. No duplicar ninguno de los dos aquí.
 
-- Entorno: local en Windows, `C:\Users\yagom\dev\apkg-chinese-structs`, Python en `.venv` (`.\.venv\Scripts\python anki.py ...`). No instalar dependencias fuera de `.venv`.
+- Entorno: local en Windows, `C:\Users\yagom\dev\apkg-chinese-structs`, Python en `.venv` (`.\.venv\Scripts\python anki.py ...`). No instalar dependencias fuera de `.venv`, salvo las de las grabaciones de clase, que van en `.venv-audio` (`tools/requirements-audio.txt`).
 - Prioridad: mandarín cotidiano y práctico, pinyin y tonos, audio en respuestas y ejemplos. YAGO está empezando.
 - Solo el agente edita `3-data/`. YAGO escribe en `1-inbox/` y saca resultados de `5-output/`.
 - Antes de añadir contenido: `anki.py lookup <término>` y `anki.py gaps`. Después: `anki.py check`. Revisar los avisos; no ignorarlos ni aceptarlos automáticamente (`accept_pinyin_mismatch` solo con motivo).

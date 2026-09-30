@@ -1,0 +1,11 @@
+# Entorno aparte para tools/class_audio.py (.venv-audio, Python 3.13): no se mezcla con .venv.
+# av queda en 18.1.0: la 19.0.0 la bloquea Smart App Control de Windows (DLL sin reputación todavía).
+faster-whisper==1.2.1
+ctranslate2==4.8.2
+av==18.1.0
+sherpa-onnx==1.13.8
+soundfile==0.14.0
+imageio-ffmpeg==0.6.0
+zhconv==1.4.3
+pypinyin==0.55.0
+numpy==2.5.3

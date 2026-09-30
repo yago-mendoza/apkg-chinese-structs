@@ -36,7 +36,7 @@ El modelo redacta; `anki.py` calcula y comprueba. Lo que puede calcularse (qué 
 
 Un lote es una entrega de apuntes. Se nombra `NNN-AAAA-MM-DD-tema` (número de orden de procesado, fecha, tema en palabras; nunca números de hoja). El lote solo sirve para llevar la cuenta de la procedencia: dentro del mazo cada cosa va donde le toca por tema y nivel, y un ajuste sobre algo antiguo corrige la entrada antigua.
 
-1. YAGO deja archivos en `1-inbox/`, en cualquier formato y con cualquier nombre (o los pega en el chat y el agente los guarda allí tal cual). Todo archivo salvo `README.md` y `review-*.md` es apunte pendiente. Las fechas de los apuntes, si las hay, van a `source.date` de lo que salga de cada parte; si un archivo mezcla días, se respeta la fecha de cada parte.
+1. YAGO deja archivos en `1-inbox/`, en cualquier formato y con cualquier nombre (o los pega en el chat y el agente los guarda allí tal cual). Todo archivo salvo `README.md` y `review-*.md` es apunte pendiente. Las fechas de los apuntes, si las hay, van a `source.date` de lo que salga de cada parte; si un archivo mezcla días, se respeta la fecha de cada parte. Una grabación de clase se transcribe primero y se usa como contexto (ver «Grabaciones de clase»).
 2. El agente lee también el `review-*.md` del lote anterior: cada línea «>» con texto es una instrucción de YAGO (meter, descartar, matizar, corregir); vacía, no cambia nada. Si YAGO pide una tarjeta de matiz, es `type: nuance`.
 3. Para cada elemento: `lookup` (busca también en el desván); decide si es nuevo, corrige algo, amplía una entrada o grupo, o va al desván (ver «Desván»). Con las entradas nuevas escritas, `attic <lote>`: lo que despierta entra en este lote. Lo parecido a lo existente (forma, sonido, patrón) va a esa entrada, a `relations` o a un grupo, no a tarjetas sueltas.
 4. Asigna `use` a cada entrada nueva (ver «Cobertura»), con motivo cuando se aparte de las señales de frecuencia.
@@ -277,11 +277,20 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 - Voces HD descartadas por ahora: más naturales pero menos estables para fijar tonos; se reconsiderarán para frases de escucha largas.
 - Un polífono mal leído se corrige fijando la lectura con SSML (`<phoneme alphabet="sapi">`) cuando haga falta.
 
+## Grabaciones de clase
+
+YAGO puede dejar en `1-inbox/` el audio de una clase (mp3, m4a, mp4…). No es un apunte: es contexto de cómo fue la clase.
+
+- **Transcribir**: `.venv-audio\Scripts\python tools/class_audio.py transcribe 1-inbox/<grabación>` (entorno aparte: Whisper y sus modelos pesan demasiado para `.venv`; ver `docs/owner.md`). Tarda más o menos lo que dura la clase o algo menos. Escribe `private/class-audio/<nombre>/transcript.md`: primero lo que dijo la profesora en chino (con pinyin y, entre 【】, lo que no cubre el mazo), luego las palabras del mazo que usó, lo que no está en el mazo y la clase entera.
+- **Quién habla**: por la huella de la voz, comparada con las voces guardadas en `private/class-audio/voices.json`, que cada grabación afina (la primera vez se siembran por el tono). Cuenta la voz de la profesora; lo de YAGO se transcribe mal porque está aprendiendo, así que sale marcado y fuera del resumen. Lo que la profesora dice en inglés, Whisper (forzado a chino) a veces lo traduce: se detecta y se marca «[inglés]».
+- **Cómo se usa**: para saber qué se trabajó en clase, confirmar lo que YAGO apuntó (sentido, lectura, frase exacta de la profesora) y señalar en el review lo que se enseñó y no apuntó. Una transcripción automática no es fuente segura: lo que entre por ella se comprueba como un apunte transcrito de foto (⚠️ en el log y «Por verificar» si hay duda). Lo que consta que dijo la profesora puede ir como comentario `teacher`.
+- **Privacidad**: la grabación y la transcripción llevan la voz y las palabras de la profesora y la clase entera; no se versionan nunca. `close-batch` mueve la grabación a `private/class-audio/<nombre>/`, junto a su transcripción (no a `1-inbox/history/`), y se niega a cerrar si está sin transcribir. Nada de la transcripción se copia tal cual a lo versionado; la profesora, siempre sin nombre.
+
 ## Repositorio y privacidad
 
 - Repositorio `yago-mendoza/apkg-chinese-structs`, **público**: nada privado en `3-data/`, ninguna credencial. Local en `C:\Users\yagom\dev\apkg-chinese-structs`, Python en `.venv`, UTF-8 explícito.
 - **Citas de libros en los apuntes**: si un apunte copia texto literal de un libro con derechos (citas largas, con su página), el archivo de `1-inbox/history/` guarda el apunte con esas citas retiradas y marcadas («[cita de un libro retirada]»), y el apunte íntegro se guarda en `private/` (fuera de git). Lo que YAGO escribió con sus palabras se archiva tal cual. Solo se retira la copia literal (lo que va entre comillas o con su página): una explicación de la misma idea con otras palabras, otro orden u otro idioma se queda, sin nombrar el libro (decisión de YAGO, 2026-09-29).
-- Fuera de git: los apuntes pendientes de `1-inbox/` (sí se versionan su README y el review), `5-output/` y el entorno. `1-inbox/history/` se versiona (decisión de YAGO, 2026-09-27): los apuntes no son privados. Antes de archivar un lote en `1-inbox/history/`, revisar que no haya datos sensibles (claves, correos, teléfonos).
+- Fuera de git: las grabaciones de clase y sus transcripciones (`private/class-audio/`), los apuntes pendientes de `1-inbox/` (sí se versionan su README y el review), `5-output/` y el entorno. `1-inbox/history/` se versiona (decisión de YAGO, 2026-09-27): los apuntes no son privados. Antes de archivar un lote en `1-inbox/history/`, revisar que no haya datos sensibles (claves, correos, teléfonos).
 - Commits cuando YAGO lo pida; push a GitHub solo cuando lo pida.
 - Fuentes externas versionadas: `sources/`, cada una con su origen y su licencia. Hoy, el vocabulario del HSK 3.0 de `drkameleon/complete-hsk-vocabulary` (MIT; solo nivel, frecuencia y pinyin, no sus glosas CC-CEDICT). Dong Chinese no se descarga (su `robots.txt` pide que no la rastreen programas); SUBTLEX-CH, si hace falta, solo en local.
 - Materiales solo locales: manuales de curso y libros de caracteres que no se pueden redistribuir. Viven fuera del repositorio; `private/README.md` (en `.gitignore`) dice dónde están y cómo se usan. Nada del repositorio depende de ellos, nada se copia de ellos y no se nombran en nada versionado: lo que aporten entra redactado con palabras propias y comprobado con fuentes abiertas.
@@ -309,6 +318,7 @@ Todo lo que se puede decidir con datos se decide con atributos y lo comprueba `c
 | Qué entra y para qué (`use`), nivel estimado, tema | criterio del agente con `docs/goal.md`; queda en `use_reason` y `level_reason` y en el log |
 | Frases naturales, mnemotecnias, conexiones, series fonéticas | criterio del agente; se revisan en el review |
 | Citas de libros | criterio: fuera la copia literal (en `original` y en el apunte archivado); la paráfrasis se queda, sin nombrar la fuente (ver «Repositorio y privacidad») |
+| Grabaciones de clase fuera de git | `close-batch` las mueve a `private/` con su transcripción y no cierra si falta; prueba en `tests/` |
 | Desván: nada se pierde ni se olvida | `check` (campos, un hanzi por elemento, aviso si ya está en el mazo); `attic_awake` decide qué despierta; `close-batch` no cierra con despiertos sin pasar ni `snooze` |
 | Categoría gramatical | calculada de la lista del HSK (`pos_of`); `check`: error si falta, aviso si `pos` la contradice sin `pos_reason` |
 | Estructuras bien formadas | `check` (`grammar_rules`): piezas fijas enlazadas y en orden en cada ejemplo; aviso si un hueco lo ocupa otra categoría |

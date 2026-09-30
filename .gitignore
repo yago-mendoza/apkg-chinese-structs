@@ -6,6 +6,7 @@
 
 # Python environment and generated caches
 .venv/
+.venv-audio/
 venv/
 __pycache__/
 *.py[cod]

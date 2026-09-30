@@ -292,6 +292,23 @@ class Repository(unittest.TestCase):
         _, errors = anki.close_batch_plan("2-foo")
         self.assertTrue(errors)
 
+    def test_close_batch_keeps_class_recordings_out_of_git(self):
+        import tempfile
+        from pathlib import Path
+        from unittest import mock
+        with tempfile.TemporaryDirectory() as tmp:
+            inbox, audio = Path(tmp) / "inbox", Path(tmp) / "class-audio"
+            inbox.mkdir()
+            (inbox / "clase.m4a").write_bytes(b"")
+            with mock.patch.object(anki, "INBOX", inbox), mock.patch.object(anki, "HISTORY", inbox / "history"),                     mock.patch.object(anki, "CLASS_AUDIO", audio):
+                _, errors = anki.close_batch_plan("999-2026-01-01-prueba")
+                self.assertTrue(any("sin transcribir" in e for e in errors))
+                (audio / "clase").mkdir(parents=True)
+                (audio / "clase" / "transcript.md").write_text("x", encoding="utf-8")
+                actions, _ = anki.close_batch_plan("999-2026-01-01-prueba")
+            dest = [dst for _, src, dst in actions if src.name == "clase.m4a"]
+            self.assertEqual(dest, [audio / "clase" / "clase.m4a"])
+
 
 @unittest.skipUnless(shutil.which("node"), "sin node: no se prueba el JavaScript de las tarjetas")
 class CardJavaScript(unittest.TestCase):
