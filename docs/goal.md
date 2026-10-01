@@ -52,6 +52,11 @@ Condición indispensable en todo el mazo (tarjetas, cuaderno, log y review): que
 - **Mnemotecnia frente a origen.** Una mnemotecnia es una imagen para recordar y se dice que lo es; el origen real, cuando se conoce y está comprobado, va aparte. Si el significado de una pieza vale para casi todos los caracteres donde aparece (讠 «hablar», 氵 «agua»), se dice; si solo sirve para uno, también.
 - **Series fonéticas.** Cuando una pieza da el sonido (票 piào en 漂 piào, 半 bàn en 胖 pàng, 青 qīng en 请 qǐng, 门 mén en 们 men y 问 wèn), se señala: ver el hanzi debe evocar el sonido, y el sonido, el hanzi.
 - **Conexiones cruzadas.** Relacionar lo nuevo con lo que ya hay (机 en 手机, 飞机 y 机票; 可 en 可爱 y 可以) ayuda a YAGO a recordar: se hace siempre que sea verdadero.
+- **Un recuadro de «Conexión», como mucho, por tarjeta** (YAGO, 2026-10-01). Con un código visual fijo según el tipo: 🔊 *da el sonido* (青 → 请, 清, 晴), 🧩 *da el significado* (讠 en 说, 请, 认识) o 👀 *se parece, pero no tiene que ver*. La conexión es del carácter: se escribe una vez, en su entrada propia, y la heredan las tarjetas de las palabras que lo llevan.
+- **Solo con lo que ya sabe.** Una conexión enlaza solo con caracteres que ya están en el mazo, de su nivel o inferior: refuerza lo aprendido, no añade nada nuevo.
+- **Calculado, no inventado.** Qué pieza da el sonido y cuál el significado sale de datos abiertos (`sources/hanzi/`, `anki.py hanzi`), no de la memoria del agente; el agente solo redacta. Una relación solo sale si es verdadera: el 马 de 妈 da el sonido, no el caballo.
+- **Estatus solo cuando engaña.** «No se usa solo» o «sí se usa solo» se dice cuando lo contrario parece cierto (un carácter que parece palabra y no lo es, o al revés), no en cada tarjeta.
+- **Tarjetas, solo si se confunden de verdad.** Una relación va como nota; tarjeta propia (contraste) solo si los caracteres están en el mazo, son de su nivel y de verdad se confunden. Así el mazo no se infla.
 - **Otros niveles.** Una nota puede mencionar palabras de niveles superiores para completar una familia, marcadas con su nivel entre corchetes («发票 fāpiào [HSK 4]»). Mencionarlas no las mete en el mazo.
 
 ## Orden

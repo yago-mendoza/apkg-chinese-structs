@@ -149,6 +149,7 @@ entries:
     pinyin: rén
     meaning: {es: persona, en: person}
     standalone: 'yes'
+    connection: {kind: sound, with: [认], text: '人 rén da el sonido a 认 rèn (认识), con 讠 «palabra»: reconocer a alguien.'}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
   - id: g.ta-ta-ta
@@ -184,6 +185,7 @@ entries:
     pinyin: men
     meaning: {es: 'plural de personas (我们, 你们, 他们)', en: plural suffix for people}
     standalone: 'no'
+    connection: {kind: sound, with: [门, 问], text: '门 mén «puerta» da el sonido a 们 men; también a 问 wèn «preguntar».'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: Muchas personas 亻 pasando por una puerta 门.}

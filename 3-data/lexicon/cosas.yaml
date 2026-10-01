@@ -113,6 +113,7 @@ entries:
     hanzi: 那
     pinyin: nà
     meaning: {es: 'ese, eso; aquel', en: that}
+    connection: {kind: sound, with: [哪], text: '那 nà da el sonido a 哪 nǎ; la boca 口 lo convierte en pregunta.'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
   - id: g.na-nar
@@ -133,6 +134,7 @@ entries:
     hanzi: 门
     pinyin: mén
     meaning: {es: puerta, en: door}
+    connection: {kind: sound, with: [们, 问], text: '门 mén da el sonido a 们 men y a 问 wèn: ver 门 dentro de un carácter evoca ese sonido.'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: El dibujo de una puerta de dos hojas.}

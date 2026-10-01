@@ -23,6 +23,7 @@ Fuente de verdad del mazo, mantenida por el agente. Un archivo por tema en cada 
 - Grupos: `basis: visual | homophone | soundalike | pattern | set | phonetic`, `members: [{ref, cue}]` (cue: rasgo distintivo; máximo 4 en contraste).
 - Pronunciación: `title`, `explanation`, `audio_text`.
 - Estructuras (`lexicon/estructuras.yaml`): `pattern` (`{S} + 很 + {Adj}`; huecos `{S} {N} {V} {Adj} {Num} {Nombre} {Lugar} {Tiempo} {Frase}`), `refs` (las entradas de las piezas fijas, en orden), `examples` (frases que la cumplen), `meaning: {es, en}`, `contrast: {right, wrong, why: {es, en}}` (frase buena del mazo, calco erróneo y porqué: de ahí sale su tarjeta). Sin `level`: es el de su pieza fija más difícil. Ver `docs/design.md`, «Gramática».
+- `connection: {kind: sound | meaning | looks, with: [hanzi], text}`: el recuadro de «Conexión» del carácter (uno por entrada; lo heredan las palabras que lo llevan). `with`: caracteres que ya están en el mazo. Ver `docs/goal.md`, «Cómo se explica un carácter».
 - `comments: [{kind, private, date, text, original}]` (`text` redactado para mostrar; `original`, lo que escribió YAGO, solo si difiere), con `kind`: `mnemonic | teacher | linguistic | note | sound`. `private: true` por defecto; el repositorio es público, así que lo privado no se guarda aquí.
 - `source: {origin, batch, file, date}`.
 

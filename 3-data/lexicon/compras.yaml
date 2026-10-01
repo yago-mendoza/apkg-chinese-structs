@@ -101,6 +101,7 @@ entries:
     hanzi: 咖啡
     pinyin: kāfēi
     meaning: {es: café, en: coffee}
+    connection: {kind: sound, with: [非], text: '非 fēi da el sonido a 啡; el 口 de 咖 y 啡 marca una palabra que imita un sonido extranjero (coffee).'}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: Transcripción fonética de «coffee».}

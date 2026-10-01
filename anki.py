@@ -2,6 +2,7 @@
 
 Uso:
     python anki.py lookup <hanzi|pinyin|significado>
+    python anki.py hanzi <caracteres>      piezas, sonido y significado de cada carácter, y sus conexiones en el mazo
     python anki.py plan [--doc <lote>]     tarjetas exigidas que faltan; --doc escribe 1-inbox/review-<lote>.md
     python anki.py gaps                    reparto del mazo y pendientes
     python anki.py check
@@ -1361,10 +1362,56 @@ def standard_rules(entries, sentences, eby, errors, warnings):
                                     f"en ningún grupo: ¿contrastarlos (homophone o soundalike)?")
 
 
+def connection_rules(entries, sentences, eby, sby, errors, warnings):
+    """Conexiones entre hanzi (docs/goal.md, «Cómo se explica un carácter»): un recuadro por entrada, solo con
+    caracteres que ya están en el mazo y no son de un nivel superior; y aviso cuando un carácter comparte la pieza
+    que da el sonido con otro del mazo y ni la conexión ni las notas lo dicen."""
+    levels, chars = hsk_levels(), deck_chars(entries)
+    for e in entries:
+        con = e.get("connection")
+        if not con:
+            continue
+        if con.get("kind") not in CONNECTION_KINDS:
+            errors.append(f"{e['id']}: connection.kind debe ser {', '.join(CONNECTION_KINDS)}")
+        if not con.get("with") or not con.get("text"):
+            errors.append(f"{e['id']}: connection necesita with (los hanzi con que conecta) y text")
+            continue
+        mine = level_of(e["id"], eby, sby, levels) or 99
+        for ch in con["with"]:
+            known = [x for x, _ in chars.get(ch, [])]
+            if not known:
+                errors.append(f"{e['id']}: connection con {ch}, que no está en el mazo: conecta solo con lo que ya se sabe")
+            elif min(level_of(x["id"], eby, sby, levels) or 99 for x in known) > mine:
+                warnings.append(f"{e['id']}: connection con {ch}, de un nivel superior: ¿esperar a que llegue?")
+        t = con.get("text", "")
+        if t and (t[0].islower() or not t.rstrip().endswith((".", "!", "?", "」", "»"))):
+            warnings.append(f"{e['id']}: el texto de connection debe empezar en mayúscula y acabar en punto")
+    if not hanzi_db():
+        return
+    # Una vez por carácter: en su entrada propia o, si no la tiene, en la palabra más básica que lo lleva. Una serie
+    # ya está contada si alguna nota o conexión del mazo nombra los dos caracteres.
+    texts = [c.get("text", "") for x in entries for c in x.get("comments", [])]
+    texts += [(x.get("connection") or {}).get("text", "") for x in entries]
+    told = lambda a, b: any(a in t and b in t for t in texts)
+    for ch, uses in chars.items():
+        home = char_home(ch, entries)
+        owners = [home] if home is not None else sorted((x for x, _ in uses), key=lambda x: level_of(x["id"], eby, sby, levels) or 99)
+        e = owners[0]
+        said = " ".join(c.get("text", "") for x in owners + [x for x, _ in uses] for c in x.get("comments", []))
+        said += " ".join((x.get("connection") or {}).get("text", "") for x in owners + [x for x, _ in uses])
+        mine = level_of(e["id"], eby, sby, levels) or 99
+        fam = [d for d in sound_family(ch, uses[0][1], chars) if d not in said and not told(ch, d)
+               and min(level_of(x["id"], eby, sby, levels) or 99 for x, _ in chars[d]) <= mine]
+        if fam:
+            warnings.append(f"{e['id']} {e['hanzi']}: {ch} es de la misma serie fonética que {'、'.join(fam)} "
+                            f"(`anki.py hanzi {ch}`): ¿conexión de sonido?")
+
+
 def quality_rules(entries, sentences, exercises, eby, sby, errors, warnings):
     """Reglas de calidad que no dependen del criterio de nadie (docs/design.md y docs/goal.md)."""
     grammar_rules(entries, sentences, eby, sby, errors, warnings)
     standard_rules(entries, sentences, eby, errors, warnings)
+    connection_rules(entries, sentences, eby, sby, errors, warnings)
     levels = hsk_levels()
     known_hanzi = {e.get("hanzi") for e in entries if e.get("hanzi")}
     for e in entries:
@@ -1746,6 +1793,7 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .note--group .is-target { font-weight: 700; background: rgba(179,48,29,.13); }
 .note--example { text-align: center; }
 .note--mnemonic { border-style: dashed; }
+.note--connection { border-left: 4px solid #2a9d8f; background: rgba(42,157,143,.09); }
 .note--mnemonic .note-body { font-style: italic; }
 .note--teacher { border-left: 3px solid var(--lv); }
 .example + .example { margin-top: 14px; }
@@ -2029,6 +2077,10 @@ def card_fields(ex, eby, sby, manifest, media_files):
         notes.append(f"<h4>{'Ejemplo' if len(examples) == 1 else 'Ejemplos'}</h4>" + "".join(
             f"<div class=\"example\">{render_sentence(sby[sid])}<div>{esc(sby[sid]['translation'].get(lang))}</div>"
             f"{sound(sentence_text(sby[sid]), manifest, media_files)}</div>" for sid in examples))
+    # Conexión con otros hanzi del mazo: un recuadro como mucho, el del primer objetivo (docs/goal.md).
+    con = connection_for(first, list(eby.values())) if not sent else None
+    if con and con.get("text"):
+        notes.append(f"<h4>Conexión · {CONNECTION_KINDS.get(con.get('kind'), '')}</h4>{esc(con['text'])}")
     # Comentarios: solo los marcados private: false (del ejercicio y de sus objetivos).
     comments = list(ex.get("comments", []))
     for tid in ex.get("targets", []):
@@ -2057,6 +2109,7 @@ def card_fields(ex, eby, sby, manifest, media_files):
 
 
 NOTE_KIND = (("ejemplo", "example"), ("mnemotecnia", "mnemonic"), ("en clase", "teacher"), ("cómo suena", "sound"),
+             ("conexión", "connection"),
              ("pronunciación", "sound"), ("qué es", "status"), ("no se usa solo", "status"),
              ("casi no se usa solo", "status"))
 
@@ -2180,6 +2233,121 @@ HSK_LIST = ROOT / "sources" / "hsk" / "hsk3.tsv"
 
 _HSK_CACHE = {}
 _HSK_POS = {}
+
+
+HANZI_DATA = ROOT / "sources" / "hanzi" / "dictionary.txt"   # piezas de cada carácter (Make Me a Hanzi, LGPL)
+BOOK_INDEX = ROOT / "private" / "book-index.json"             # solo local: carácter → páginas de un libro de consulta
+CONNECTION_KINDS = {"sound": "🔊 da el sonido", "meaning": "🧩 da el significado", "looks": "👀 se parece, pero no tiene que ver"}
+_HANZI_CACHE = {}
+
+
+def hanzi_db():
+    """carácter → {decomposition, radical, etymology}, desde sources/hanzi/. Se lee una vez; vacío si no está."""
+    if not _HANZI_CACHE and HANZI_DATA.exists():
+        for line in HANZI_DATA.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                d = json.loads(line)
+                _HANZI_CACHE[d["character"]] = d
+    return _HANZI_CACHE
+
+
+def phonetic_of(ch):
+    """La pieza que da el sonido a un carácter fonético-semántico, o None."""
+    return ((hanzi_db().get(ch) or {}).get("etymology") or {}).get("phonetic")
+
+
+def deck_chars(entries):
+    """carácter → [(entrada, pinyin de ese carácter)] para todo lo que no está descartado."""
+    from pypinyin import Style, lazy_pinyin
+    out = {}
+    for e in entries:
+        hz = e.get("hanzi") or ""
+        if e.get("kind") in ("group", "structure", "pronunciation") or e.get("use") == "drop" or not hz:
+            continue
+        han = [c for c in hz if "\u4e00" <= c <= "\u9fff"]
+        sy = lazy_pinyin("".join(han), style=Style.NORMAL, v_to_u=True)
+        for c, py in zip(han, sy):
+            if not any(x is e for x, _ in out.get(c, [])):
+                out.setdefault(c, []).append((e, py))
+    return out
+
+
+def sound_family(ch, py, chars):
+    """Caracteres del mazo de la misma serie fonética que `ch` (comparten la pieza que da el sonido, o uno es la
+    pieza del otro) y que suenan parecido (misma sílaba sin tono, o misma final)."""
+    final = lambda x: re.sub(r"^(zh|ch|sh|[bpmfdtnlgkhjqxrzcsyw])", "", x)
+    p = phonetic_of(ch)
+    out = []
+    for d, uses in chars.items():
+        if d == ch:
+            continue
+        pd = phonetic_of(d)
+        related = (p and (pd == p or d == p)) or pd == ch
+        if not related:
+            continue
+        dpy = uses[0][1]
+        if dpy == py or final(dpy) == final(py):
+            out.append(d)
+    return out
+
+
+def char_home(ch, entries):
+    """La entrada propia de un carácter (palabra, ligada o componente de un solo hanzi), si la hay: ahí vive su
+    conexión, y la heredan las tarjetas de las palabras que lo llevan."""
+    return next((e for e in entries if e.get("hanzi") == ch and e.get("use") != "drop"
+                 and e.get("kind") in ("word", "character", "component")), None)
+
+
+def connection_for(entry, entries):
+    """La conexión que muestra la tarjeta de una entrada: la suya o, si no tiene, la del primero de sus caracteres
+    que la tenga. Una como mucho."""
+    if entry.get("connection"):
+        return entry["connection"]
+    for ch in entry.get("hanzi") or "":
+        home = char_home(ch, entries)
+        if home is not None and home is not entry and home.get("connection"):
+            return home["connection"]
+    return None
+
+
+def book_pages(ch):
+    if not BOOK_INDEX.exists():
+        return []
+    return json.loads(BOOK_INDEX.read_text(encoding="utf-8")).get(ch, [])
+
+
+def cmd_hanzi(text):
+    """Herramienta del agente: qué es cada carácter, de qué piezas se forma y con qué se conecta en el mazo."""
+    entries, sentences, _ = load()
+    eby, sby = {e["id"]: e for e in entries}, {s["id"]: s for s in sentences}
+    levels, chars = hsk_levels(), deck_chars(entries)
+    for ch in [c for c in text if "\u4e00" <= c <= "\u9fff" or c in "亻讠扌氵忄纟钅饣犭礻衤艹宀疒辶"]:
+        d = hanzi_db().get(ch, {})
+        et = d.get("etymology") or {}
+        print(f"\n{ch}  piezas {d.get('decomposition', '?')} · radical {d.get('radical', '?')} · {et.get('type', '?')}")
+        if et.get("type") == "pictophonetic":
+            print(f"   sonido: {et.get('phonetic')} · significado: {et.get('semantic')} ({et.get('hint', '')})")
+        elif et.get("hint"):
+            print(f"   pista: {et['hint']}")
+        if ch in levels:
+            print(f"   suelto, en la lista: HSK {levels[ch]}")
+        for e, py in chars.get(ch, []):
+            print(f"   en el mazo: {e['id']} {e['hanzi']} {e.get('pinyin', '')} · {char_status(e) or e.get('kind')} · "
+                  f"HSK {level_of(e['id'], eby, sby, levels) or '?'}")
+        py = (chars.get(ch) or [(None, None)])[0][1]
+        if py:
+            fam = sound_family(ch, py, chars)
+            if fam:
+                print("   misma serie fonética en el mazo: " + ", ".join(f"{c} ({chars[c][0][1]})" for c in fam))
+        sem = et.get("semantic") or d.get("radical")
+        if sem:
+            same = [c for c in chars if c != ch and ((hanzi_db().get(c) or {}).get("etymology") or {}).get("semantic") == sem]
+            if same:
+                print(f"   también llevan {sem} como significado: " + " ".join(same[:12]))
+        pages = book_pages(ch)
+        if pages:
+            print(f"   libro local: págs. {', '.join(map(str, pages))}")
+    return 0
 
 
 def hsk_levels():
@@ -2752,6 +2920,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
     sub.add_parser("lookup").add_argument("query")
+    sub.add_parser("hanzi").add_argument("text")
     sub.add_parser("gaps")
     c = sub.add_parser("check")
     c.add_argument("--allow-missing-audio", action="store_true")
@@ -2777,6 +2946,8 @@ def main():
     sc = sub.add_parser("scaffold")
     sc.add_argument("--write", action="store_true", help="escribir las tarjetas (sin esto, solo se listan)")
     args = p.parse_args()
+    if args.cmd == "hanzi":
+        return cmd_hanzi(args.text)
     if args.cmd == "lookup":
         return cmd_lookup(args.query) or 0
     if args.cmd == "gaps":

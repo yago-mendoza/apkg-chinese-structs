@@ -75,6 +75,7 @@ entries:
     hanzi: 吧
     pinyin: 'ba'
     meaning: {es: 'partícula de propuesta (venga, vale)', en: 'suggestion particle'}
+    connection: {kind: sound, with: [爸], text: '巴 bā da el sonido a 吧 ba y a 爸 bà.'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Al final, convierte la frase en propuesta: 我们下午见吧 «nos vemos por la tarde, ¿vale?»; 买吧 «cómpralo».'}

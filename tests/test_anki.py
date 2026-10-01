@@ -320,6 +320,34 @@ class Repository(unittest.TestCase):
         anki.grammar_rules(words + [st], [s], {e["id"]: e for e in words + [st]}, {"s.t": s}, errors, warnings)
         self.assertEqual((errors, warnings), ([], []))
 
+    def test_hanzi_connections(self):
+        """La conexión es del carácter, enlaza solo con lo que ya está en el mazo, y las series fonéticas sin
+        contar se avisan (YAGO, 2026-10-01)."""
+        self.assertEqual(anki.phonetic_of("请"), "青")                   # datos de sources/hanzi/
+        men = {"id": "w.t.men", "kind": "word", "hanzi": "门", "pinyin": "mén", "use": "say"}
+        wen = {"id": "w.t.wen", "kind": "word", "hanzi": "问", "pinyin": "wèn", "use": "say"}
+        women = {"id": "w.t.women", "kind": "word", "hanzi": "我们", "pinyin": "wǒmen", "use": "say"}
+        mens = {"id": "c.t.men", "kind": "character", "hanzi": "们", "pinyin": "men", "use": "context", "standalone": "no"}
+        entries = [men, wen, women, mens]
+        chars = anki.deck_chars(entries)
+        self.assertEqual(sorted(anki.sound_family("门", "men", chars)), ["们", "问"])
+
+        def run(es):
+            errors, warnings = [], []
+            anki.connection_rules(es, [], {e["id"]: e for e in es}, {}, errors, warnings)
+            return errors, warnings
+        _, warnings = run(entries)
+        self.assertTrue(any("serie fonética" in m for m in warnings))
+        told = {**men, "connection": {"kind": "sound", "with": ["们", "问"], "text": "门 da el sonido a 们 y a 问."}}
+        self.assertEqual(run([told, wen, women, mens]), ([], []))
+        bad = {**men, "connection": {"kind": "sound", "with": ["闻"], "text": "门 da el sonido a 闻."}}
+        errors, _ = run([bad, wen, women, mens])
+        self.assertTrue(any("no está en el mazo" in m for m in errors))
+        # 我们 hereda la conexión de su carácter 们, si la tiene; una como mucho
+        home = {**mens, "connection": {"kind": "sound", "with": ["门"], "text": "门 da el sonido a 们."}}
+        self.assertIs(anki.connection_for(women, [men, wen, women, home]), home["connection"])
+        self.assertIsNone(anki.connection_for(wen, [men, wen, women, mens]))
+
     def test_scaffold_appends_to_an_empty_list(self):
         import tempfile
         from unittest import mock

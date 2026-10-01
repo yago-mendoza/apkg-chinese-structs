@@ -20,6 +20,7 @@ entries:
     pinyin: māma
     meaning: {es: mamá, en: mom}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
+    connection: {kind: sound, with: [吗], text: '马 mǎ «caballo» da el sonido a 妈 mā y a 吗 ma: el caballo solo presta su sonido.'}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: '女 «mujer» aporta el significado y 马 mǎ, el sonido. 马 significa
