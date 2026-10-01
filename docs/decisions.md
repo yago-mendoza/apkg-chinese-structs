@@ -167,3 +167,7 @@ YAGO cierra la fase de pruebas: desde hoy el progreso de Anki se conserva siempr
 ### 2026-10-01 · 30 nuevas al día
 
 Con 1.088 nuevas pendientes (unos 54 días a 20 al día), YAGO sube a 30 nuevas al día; los repasos siguen con un máximo de 300. A ritmo estable son unos 150 a 240 repasos al día, unos 40 minutos. Sigue valiendo el criterio de volumen: los próximos lotes, más ligeros. Vive en: `docs/owner.md`, `anki.py` (`NEW_PER_DAY`).
+
+### 2026-10-02 · Lo fallado vuelve en minutos
+
+YAGO notó que una tarjeta fallada no volvía hasta el día siguiente: el preset tenía un solo paso de 1 día para nuevas y para fallos. Ahora `push` fija pasos de 1 y 10 minutos para las nuevas y de 10 minutos para las falladas, solo en el preset de este mazo. Así se fija en la misma sesión, que es cuando más rinde para un idioma. El límite de nuevas se queda en 30: para un día con más ganas, Estudio personalizado (aumentar las nuevas de hoy) sin subir el límite fijo, que con días irregulares acumularía repasos. Descartado por ahora: activar FSRS, que es un ajuste de toda la colección y afectaría a los otros mazos de YAGO; si lo quiere, lo activa él. Vive en: `docs/owner.md`, `anki.py` (`LEARN_STEPS`, `RELEARN_STEPS`).

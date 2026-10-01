@@ -194,6 +194,9 @@ class AnkiSafety(unittest.TestCase):
         ours = fake.deck_conf[OURS]
         self.assertEqual(fake.configs[ours]["name"], anki.DECK_PRESET)
         self.assertEqual(fake.configs[ours]["new"]["perDay"], anki.NEW_PER_DAY)
+        self.assertEqual(fake.configs[ours]["new"]["delays"], anki.LEARN_STEPS)      # fallar: vuelve en minutos
+        self.assertEqual(fake.configs[ours]["lapse"]["delays"], anki.RELEARN_STEPS)
+        self.assertNotIn("lapse", fake.configs[1])                                    # el compartido, intacto
         self.assertEqual(fake.deck_conf["HSK 1"], 1)
         self.assertEqual(fake.configs[1]["new"]["perDay"], 20)            # el preset compartido, intacto
 

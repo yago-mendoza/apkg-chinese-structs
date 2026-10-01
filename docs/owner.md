@@ -18,7 +18,7 @@ Configuración y decisiones propias de este mazo (Yago Mendoza). Nada secreto: e
 
 - Voz `zh-CN-YunyangNeural` (elegida escuchando muestras: clara y estable para fijar tonos); voces HD descartadas por ahora.
 - Velocidad: -30 % en frases y -40 % en palabras sueltas, con 200 ms de silencio inicial.
-- Ritmo: 30 nuevas y 300 repasos al día (historia en `docs/decisions.md`). Lotes: uno por semana como costumbre, sin obligación. Se cambia en `anki.py`, no a mano en Anki, porque `push` lo vuelve a fijar.
+- Ritmo: 30 nuevas y 300 repasos al día (historia en `docs/decisions.md`). Pasos de aprendizaje: una nueva vuelve al minuto y a los 10 minutos; una fallada, a los 10 minutos. Un día con ganas de más: Estudio personalizado → aumentar el límite de nuevas de hoy, sin tocar el límite fijo. Lotes: uno por semana como costumbre, sin obligación. Se cambia en `anki.py`, no a mano en Anki, porque `push` lo vuelve a fijar.
 - No se corrige nada dentro de Anki: las correcciones se piden al agente.
 - **Fase de pruebas: cerrada.** El progreso de Anki se conserva siempre; `push --reset` se niega (`TESTING_PHASE = False` en `anki.py`) y solo lo haría con `--force` si YAGO lo pide expresamente.
 - `1-inbox/history/` se versiona: los apuntes no son privados.

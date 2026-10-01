@@ -67,6 +67,8 @@ MODEL_SELF_NAME = "Chino práctico (autoevaluación)"
 DECK_PRESET = "🐉 Chino práctico"          # preset propio: nunca tocar el de otros mazos
 NEW_PER_DAY, REVIEWS_PER_DAY = 30, 300
 TESTING_PHASE = False      # fase de pruebas cerrada (docs/owner.md): `push --reset` se niega salvo --force
+LEARN_STEPS = [1.0, 10.0]  # minutos: una nueva vuelve en la misma sesión antes de pasar a días
+RELEARN_STEPS = [10.0]     # minutos: una tarjeta fallada vuelve en la misma sesión, no al día siguiente
 THEME_MAX, THEME_MIN = 60, 3               # entradas por tema: por encima, ¿dividir?; por debajo, ¿juntar?
 EXAMPLES_MAX = 2                           # frases de ejemplo al dar la vuelta a una tarjeta de palabra
 PRUNE_MAX = 10                             # más huérfanas que esto: `push --prune` se niega sin --force
@@ -2984,10 +2986,15 @@ def ensure_limits():
         ours = anki_request("cloneDeckConfigId", name=DECK_PRESET, cloneFrom=confs[DECK_NAME]["id"])
     anki_request("setDeckConfigId", decks=decks, configId=ours)
     conf = anki_request("getDeckConfig", deck=DECK_NAME)
-    if conf["new"]["perDay"] != NEW_PER_DAY or conf["rev"]["perDay"] != REVIEWS_PER_DAY:
-        conf["new"]["perDay"], conf["rev"]["perDay"] = NEW_PER_DAY, REVIEWS_PER_DAY
+    want = {("new", "perDay"): NEW_PER_DAY, ("rev", "perDay"): REVIEWS_PER_DAY,
+            ("new", "delays"): LEARN_STEPS, ("lapse", "delays"): RELEARN_STEPS}
+    if any(conf.get(a, {}).get(b) != v for (a, b), v in want.items()):
+        for (a, b), v in want.items():
+            conf.setdefault(a, {})[b] = v
         anki_request("saveDeckConfig", config=conf)
-    return f"{NEW_PER_DAY} nuevas y {REVIEWS_PER_DAY} repasos al día (preset «{DECK_PRESET}»)"
+    steps = lambda s: " ".join(f"{m:g} min" for m in s)
+    return (f"{NEW_PER_DAY} nuevas y {REVIEWS_PER_DAY} repasos al día; pasos {steps(LEARN_STEPS)}, al fallar "
+            f"{steps(RELEARN_STEPS)} (preset «{DECK_PRESET}»)")
 
 
 def reorder_new(order):
