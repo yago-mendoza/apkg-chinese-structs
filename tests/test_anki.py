@@ -194,6 +194,9 @@ class Repository(unittest.TestCase):
             if e.get("audio"):
                 self.assertTrue((anki.ROOT / e["audio"]).exists(), e["audio"])
         self.assertEqual(len(data["cards"]), len(exercises))
+        self.assertEqual(data["cardCss"], anki.CSS.strip())
+        for slot in anki.SLOTS:                                            # cada hueco tiene su color
+            self.assertIn(f".slot-{slot} ", data["cardCss"])
         for c in data["cards"]:
             html = c["front"] + c["back"] + c["notes"]
             self.assertNotIn("[sound:", html)

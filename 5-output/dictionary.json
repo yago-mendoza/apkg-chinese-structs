@@ -32427,8 +32427,8 @@
     "1": 348,
     "2": 100,
     "4": 3,
-    "5": 4,
     "3": 2,
+    "5": 4,
     "unlisted": 1
    },
    "edited": 188,
@@ -32436,7 +32436,7 @@
   }
  ],
  "historyCache": {
-  "upTo": "45bc3288c066c863260e5d5f244e5913a29fa515",
+  "upTo": "d4202465fa98b761a5250498c0b992abc4e794ae",
   "days": [
    {
     "date": "2026-09-26",
@@ -32480,12 +32480,15 @@
    {
     "date": "2026-10-01",
     "added": {
-     "1": 139,
-     "2": 25,
-     "4": 2
+     "1": 348,
+     "2": 100,
+     "4": 3,
+     "3": 2,
+     "5": 4,
+     "unlisted": 1
     },
-    "edited": 13,
-    "removed": 25
+    "edited": 188,
+    "removed": 27
    }
   ]
  },
@@ -32760,6 +32763,7 @@
   "Tiempo": "tiempo",
   "Frase": "frase"
  },
+ "cardCss": "/* Tarjeta: papel claro o noche cálida (como el cuaderno web), una cabecera con tipo y nivel, la respuesta en su\n   bloque y las notas en secciones. CSS sencillo, sin color-mix ni trucos: AnkiDroid, AnkiMobile y escritorio. */\n.card { font-family: \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif; font-size: 20px; line-height: 1.4;\n        text-align: center; color: #1f1a16; background: #faf7ef; padding: 10px 8px 28px;\n        --muted: rgba(31,26,22,.55); --line: rgba(31,26,22,.13); --panel: rgba(31,26,22,.045); --lv: #b3301d; }\n.nightMode.card, .night_mode .card, .card.nightMode { color: #ececec; background: #1b1b1b;\n        --muted: rgba(236,236,236,.55); --line: rgba(236,236,236,.13); --panel: rgba(255,255,255,.045); }\n.meta { display: flex; justify-content: space-between; align-items: center; max-width: 30em; margin: 0 auto 14px;\n        padding-top: 7px; border-top: 3px solid var(--lv); font: 700 11px/1 Menlo, Consolas, monospace;\n        letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }\n.lv-1 { --lv: #b3301d; } .lv-2 { --lv: #d0632f; } .lv-3 { --lv: #df9340; } .lv-4 { --lv: #cdb35c; }\n.lv-5 { --lv: #8fa972; } .lv-6 { --lv: #5f9590; } .lv-7 { --lv: #557aa3; }\n.task { font-size: 17px; line-height: 1.45; max-width: 26em; margin: 0 auto 14px; color: var(--muted); }\n.task .meta { font-size: 11px; }\n.front { margin: 6px 0; }\n.hanzi { font-size: 54px; line-height: 1.2; }\n.pinyin { font-size: 24px; margin-top: 4px; }\n.meaning { font-size: 20px; margin-top: 10px; }\n.ipa { font-size: 15px; color: var(--muted); margin-top: 2px; }\n.legend { font-size: 13px; color: var(--muted); margin-top: 10px; }\n.pos { font-style: italic; }\nhr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margin: 20px auto 16px; }\n.answer { max-width: 30em; margin: 0 auto; padding: 14px 12px 16px; border-radius: 16px; background: var(--panel);\n          border: 1px solid var(--line); }\n.box { max-width: 30em; margin: 14px auto 0; text-align: left; font-size: 15px; line-height: 1.55; }\n.note { margin-top: 10px; padding: 10px 12px 11px; border-radius: 12px; border: 1px solid var(--line); background: var(--panel); }\n.note h4 { margin: 0 0 6px; font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }\n.note--group .note-body > div { padding: 5px 8px; margin: 0 -8px; border-radius: 8px; }\n.note--group .note-body > div + div { border-top: 1px solid var(--line); }\n.note--group .is-target { font-weight: 700; background: rgba(179,48,29,.13); }\n.note--example { text-align: center; }\n.note--mnemonic { border-style: dashed; }\n.note--mnemonic .note-body { font-style: italic; }\n.note--teacher { border-left: 3px solid var(--lv); }\n.example + .example { margin-top: 14px; }\n.option { margin: 10px 0; }\n.option .hanzi.small, .hanzi.small { font-size: 32px; }\n.wrong { margin: 12px 0; color: var(--muted); }\n.wrong .hz { text-decoration: line-through; font-size: 22px; }\n.sent { display: inline-flex; gap: 4px; align-items: flex-end; flex-wrap: wrap; justify-content: center; }\n.seg { display: inline-flex; flex-direction: column; align-items: center; padding: 0 2px;\n       border-bottom: 3px solid var(--c, transparent); }\n.seg .py { font-size: 15px; }\n.seg .hz { font-size: 30px; }\n.box .seg .hz { font-size: 24px; }\n.gap { min-width: 1.6em; border-bottom: 3px dashed #999; }\n.c0 { --c: #4e79a7; } .c1 { --c: #f28e2b; } .c2 { --c: #59a14f; } .c3 { --c: #b07aa1; } .c4 { --c: #9c755f; }\n.acs-in { font-size: 20px; padding: 10px 14px; width: 12em; max-width: 90%; margin-top: 14px; text-align: center;\n          border: 1px solid var(--line); border-radius: 12px; background: var(--panel); color: inherit; outline: none; }\n#acs-result { font-size: 20px; font-weight: 700; margin-bottom: 10px; }\n.acs-ok { color: #2e7d32; } .acs-bad { color: #c62828; }\n.nightMode .acs-ok, .night_mode .acs-ok { color: #7cc36f; } .nightMode .acs-bad, .night_mode .acs-bad { color: #e8845a; }\n.pattern { align-items: flex-end; gap: 6px; }\n.pattern .plus { align-self: center; color: var(--muted); font-size: 18px; }\n.slot { display: inline-flex; flex-direction: column; align-items: center; padding: 2px 8px 4px; border-radius: 8px;\n        border: 2px dashed var(--s); }\n.slot .hz { font-size: 16px; font-style: italic; color: var(--s); }\n.slot-S { --s: #4e79a7; } .slot-N { --s: #59a14f; } .slot-V { --s: #e15759; } .slot-Adj { --s: #f28e2b; }\n.slot-Num { --s: #b07aa1; } .slot-Nombre { --s: #76b7b2; } .slot-Lugar { --s: #9c755f; }\n.slot-Tiempo { --s: #edc948; } .slot-Frase { --s: #8c8c8c; }",
  "deck": {
   "file": "5-output/chino-practico.apkg",
   "cards": 1084

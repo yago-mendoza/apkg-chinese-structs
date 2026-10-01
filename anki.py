@@ -2417,6 +2417,8 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
         "theory": load_theory(),
         "posLabels": POS_LABEL,
         "slots": {k: v[0] for k, v in SLOTS.items()},
+        # El mismo CSS que lleva el modelo de Anki: la web lo aplica a las tarjetas y no copia estilos a mano.
+        "cardCss": CSS.strip(),
         "deck": {"file": APKG.relative_to(ROOT).as_posix(), "cards": len(exercises)},
     }
 
