@@ -326,6 +326,25 @@ def render_pattern(st, eby):
     return '<div class="sent pattern">' + '<span class="plus">+</span>'.join(parts) + "</div>"
 
 
+def han_only(text):
+    """Solo los hanzi de un texto (sin puntuación, pinyin ni espacios)."""
+    return re.sub(r"[^一-鿿]", "", text or "")
+
+
+def calque_options(ex, st, sby):
+    """[(hanzi, pinyin)] de la frase buena y el calco de una estructura, en orden barajado pero estable."""
+    from pypinyin import Style, pinyin
+    con = st.get("contrast") or {}
+    right = sby.get(con.get("right"))
+    opts = []
+    if right:
+        opts.append((sentence_text(right), " ".join(g["pinyin"] for g in right["segments"] if g.get("pinyin"))))
+    if con.get("wrong"):
+        hz = con["wrong"]
+        opts.append((hz, " ".join(x[0] for x in pinyin(han_only(hz), style=Style.TONE))))
+    return sorted(opts, key=lambda o: hashlib.sha1((ex["id"] + o[0]).encode()).hexdigest())
+
+
 def standalone(e):
     """yes | rare | no | None. YAML lee yes/no sin comillas como booleanos."""
     v = e.get("standalone")
@@ -890,11 +909,18 @@ def scaffold_exercises(entries, sentences, exercises, today):
                                      prompt={"text": f"Dilo en chino, en voz alta: «{es}»"}, answer={"meaning": es}))
                 continue
             if kind == "structure":
-                made.append(make(f"x.pattern.{short}", theme, type="pattern", targets=[iid],
-                                 context=list(it.get("refs", [])), reveal=list(it.get("examples", []))[:EXAMPLES_MAX],
-                                 skills=["production", "grammar", "speaking"],
-                                 prompt={"text": "Di una frase con esta estructura, en voz alta."},
-                                 answer={"meaning": (it.get("meaning") or {}).get("es", "")}))
+                # Frase buena frente a calco erróneo (YAGO, 2026-10-01: nada de «di una frase como quieras»).
+                con = it.get("contrast") or {}
+                right = sby.get(con.get("right"))
+                if not right:
+                    manual.append((iid, need, "falta contrast (frase buena y calco erróneo): se redacta a mano"))
+                    continue
+                made.append(make(f"x.calque.{short}", theme, type="pattern", targets=[iid],
+                                 context=list(it.get("refs", [])), sentence=right["id"],
+                                 reveal=[x for x in it.get("examples", []) if x != right["id"]][:EXAMPLES_MAX],
+                                 skills=["grammar", "discrimination"],
+                                 prompt={"text": f"¿Cuál se dice así en chino? «{right['translation']['es']}»"},
+                                 answer={"meaning": (con.get("why") or {}).get("es", "")}))
                 continue
             if kind in ("pronunciation", "character", "component") or need == "recognize":
                 manual.append((iid, need, "tarjeta de pronunciación o de componentes: se redacta a mano"))
@@ -962,7 +988,9 @@ def append_exercises(theme, items):
     body = yaml.dump(items, Dumper=_Dumper, allow_unicode=True, sort_keys=False, default_flow_style=None, width=120)
     block = "\n".join("  " + line if line else line for line in body.splitlines()) + "\n"
     if path.exists():
-        path.write_text(path.read_text(encoding="utf-8").rstrip("\n") + "\n" + block, encoding="utf-8")
+        # Una lista vacía (`exercises: []`) se abre para poder añadir debajo.
+        text = re.sub(r"^exercises: \[\]\s*$", "exercises:", path.read_text(encoding="utf-8"), flags=re.M)
+        path.write_text(text.rstrip("\n") + "\n" + block, encoding="utf-8")
     else:
         title = next((t["title"] for t in load_themes() if t["id"] == theme), theme)
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -1254,6 +1282,13 @@ def grammar_rules(entries, sentences, eby, sby, errors, warnings):
             errors.append(f"{sid}: una estructura necesita al menos una frase de ejemplo (examples)")
         if not (e.get("meaning") or {}).get("es"):
             errors.append(f"{sid}: falta meaning.es (qué expresa la estructura)")
+        if use_modalities(e) & {"hear", "say"}:
+            con = e.get("contrast") or {}
+            if con.get("right") not in sby or not con.get("wrong") or not (con.get("why") or {}).get("es"):
+                errors.append(f"{sid}: falta contrast {{right: frase del mazo, wrong: calco erróneo, why: {{es, en}}}}: "
+                              f"la tarjeta opone la frase buena al calco")
+            elif han_only(con["wrong"]) == han_only(sentence_text(sby[con["right"]])):
+                errors.append(f"{sid}: el calco erróneo es igual que la frase buena")
         for xid in e.get("examples", []):
             x = sby.get(xid)
             if not x:
@@ -1672,6 +1707,10 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .note--mnemonic .note-body { font-style: italic; }
 .note--teacher { border-left: 3px solid var(--lv); }
 .example + .example { margin-top: 14px; }
+.option { margin: 10px 0; }
+.option .hanzi.small, .hanzi.small { font-size: 32px; }
+.wrong { margin: 12px 0; color: var(--muted); }
+.wrong .hz { text-decoration: line-through; font-size: 22px; }
 .sent { display: inline-flex; gap: 4px; align-items: flex-end; flex-wrap: wrap; justify-content: center; }
 .seg { display: inline-flex; flex-direction: column; align-items: center; padding: 0 2px;
        border-bottom: 3px solid var(--c, transparent); }
@@ -1829,8 +1868,8 @@ def card_fields(ex, eby, sby, manifest, media_files):
         front = render_sentence(sent, gap=ex.get("gap"))
     elif ex["type"] == "pattern":
         st = eby.get((ex.get("targets") or [None])[0], {})
-        front = render_pattern(st, eby) + f'<div class="legend">{esc((st.get("meaning") or {}).get(lang, ""))}</div>'.replace(
-            '<div class="legend"></div>', "")
+        front = "".join(f'<div class="option"><div class="hanzi small">{esc(hz)}</div><div class="pinyin">{esc(py)}</div></div>'
+                        for hz, py in calque_options(ex, st, sby))
     elif prompt.get("hanzi"):
         front = f'<div class="hanzi">{esc(prompt["hanzi"])}</div>'
     if prompt.get("pinyin"):
@@ -1844,9 +1883,20 @@ def card_fields(ex, eby, sby, manifest, media_files):
         prompt_audio = '<div class="task">(audio pendiente)</div>'
 
     if ex["type"] == "pattern":
-        back = "".join(f'<div class="example">{render_sentence(sby[sid])}<div>{esc(sby[sid]["translation"].get(lang))}</div>'
-                       f'{sound(sentence_text(sby[sid]), manifest, media_files)}</div>'
-                       for sid in ex.get("reveal", []) if sid in sby)
+        st = eby.get((ex.get("targets") or [None])[0], {})
+        con = st.get("contrast") or {}
+        right = sby.get(con.get("right"))
+        back = ""
+        if right:
+            back += (f'<div class="example">✓ {render_sentence(right)}<div>{esc(right["translation"].get(lang))}</div>'
+                     f'{sound(sentence_text(right), manifest, media_files)}</div>')
+        if con.get("wrong"):
+            back += (f'<div class="wrong">✗ <span class="hz">{esc(con["wrong"])}</span> '
+                     f'{esc((con.get("why") or {}).get(lang, ""))}</div>')
+        back += render_pattern(st, eby) + f'<div class="legend">{esc((st.get("meaning") or {}).get(lang, ""))}</div>'
+        back += "".join(f'<div class="example">{render_sentence(sby[sid])}<div>{esc(sby[sid]["translation"].get(lang))}</div>'
+                        f'{sound(sentence_text(sby[sid]), manifest, media_files)}</div>'
+                        for sid in ex.get("reveal", []) if sid in sby)
         meaning = None
     elif sent:
         back = render_sentence(sent)
@@ -2247,7 +2297,8 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
             row["asWord"] = {"es": e["as_word"].get("es"), "pinyin": e["as_word"].get("pinyin") or e.get("pinyin")}
         if e.get("kind") == "structure":
             row |= {"pattern": e.get("pattern"), "tokens": [{"kind": k, "text": t} for k, t in pattern_tokens(e.get("pattern"))],
-                    "meaning": e.get("meaning") or {}, "refs": e.get("refs", []), "examples": e.get("examples", [])}
+                    "meaning": e.get("meaning") or {}, "refs": e.get("refs", []), "examples": e.get("examples", []),
+                    "contrast": e.get("contrast")}
         elif e.get("kind") == "pronunciation":
             row |= {"title": e.get("title"), "explanation": " ".join((e.get("explanation") or "").split()),
                     "example": e.get("audio_text"), "audio": audio(e.get("audio_text"))}

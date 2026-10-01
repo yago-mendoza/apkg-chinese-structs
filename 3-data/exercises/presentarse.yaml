@@ -514,6 +514,7 @@ exercises:
     type: cloze
     sentence: s.ni-jiao-shenme-mingzi
     gap: w.shenme
+    reveal: [s.ta-de-mingzi-shi-shenme]
     targets: [w.shenme]
     context: [w.ni, w.jiao, w.mingzi]
     skills: [production, pinyin]
@@ -1170,4 +1171,74 @@ exercises:
     prompt: {text: '高兴 o 喜欢: ¿cuál es «estar contento» y cuál «gustar»?'}
     answer: {meaning: '高兴 gāoxìng: estar contento (我很高兴). 喜欢 xǐhuan: gustar algo o alguien (我喜欢咖啡).'}
     lang: es
+    comments: []
+  - id: x.dictation.xiansheng
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.xiansheng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xian1 sheng5, hanzi: 先生, pinyin: xiānsheng, meaning: señor (tras el apellido)}
+    comments: []
+  - id: x.produce.xiansheng
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.xiansheng]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «señor (tras el apellido)»? Escribe el pinyin.'}
+    answer: {typed: xian1 sheng5, hanzi: 先生, pinyin: xiānsheng, meaning: señor (tras el apellido)}
+    comments: []
+  - id: x.read.xiansheng
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.xiansheng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 先生}
+    answer: {hanzi: 先生, pinyin: xiānsheng, meaning: señor (tras el apellido)}
+    comments: []
+  - id: x.tones.xiansheng
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.xiansheng]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 先生, pinyin: xian sheng}
+    answer: {typed: '15', hanzi: 先生, pinyin: xiānsheng, meaning: señor (tras el apellido)}
+    comments: []
+  - id: x.listen.ta-de-mingzi-shi-shenme
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ta-de-mingzi-shi-shenme
+    targets: [s.ta-de-mingzi-shi-shenme]
+    context: [w.ta.he, w.de, w.mingzi, w.shi, w.shenme]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuál es su nombre?'}
+    comments: []
+  - id: x.listen.menduosa-xiansheng-ninhao
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.menduosa-xiansheng-ninhao
+    targets: [s.menduosa-xiansheng-ninhao]
+    context: [w.menduosa, w.xiansheng, e.ninhao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Buenos días, señor Mendoza!'}
+    comments: []
+  - id: x.produce.menduosa-xiansheng-ninhao
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.menduosa-xiansheng-ninhao
+    targets: [s.menduosa-xiansheng-ninhao]
+    context: [w.menduosa, w.xiansheng, e.ninhao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Buenos días, señor Mendoza!»'}
+    answer: {meaning: '¡Buenos días, señor Mendoza!'}
     comments: []

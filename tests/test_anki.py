@@ -236,6 +236,46 @@ class Repository(unittest.TestCase):
         anki.grammar_rules(words + [{**st, "refs": []}], [good], {e["id"]: e for e in words}, {"s.good": good}, errors, warnings)
         self.assertTrue(any("refs deben ser" in m for m in errors))
 
+    def test_structure_cards_oppose_a_calque(self):
+        """Una estructura se practica frente a su calco erróneo, nunca con «di una frase» (YAGO, 2026-10-01)."""
+        words = [{"id": "w.ta", "kind": "word", "hanzi": "他", "pinyin": "tā"},
+                 {"id": "w.hen", "kind": "word", "hanzi": "很", "pinyin": "hěn"},
+                 {"id": "w.gao", "kind": "word", "hanzi": "高", "pinyin": "gāo"}]
+        good = {"id": "s.good", "use": "say", "theme": "describir", "translation": {"es": "Él es alto."},
+                "segments": [{"text": "他", "ref": "w.ta", "pinyin": "tā"}, {"text": "很", "ref": "w.hen", "pinyin": "hěn"},
+                             {"text": "高", "ref": "w.gao", "pinyin": "gāo"}, {"text": "。"}]}
+        st = {"id": "st.t", "kind": "structure", "use": "say", "theme": "estructuras", "pattern": "{S} + 很 + {Adj}",
+              "refs": ["w.hen"], "meaning": {"es": "describir"}, "examples": ["s.good"]}
+
+        def errors_for(s):
+            errors, warnings = [], []
+            anki.grammar_rules(words + [s], [good], {e["id"]: e for e in words + [s]}, {"s.good": good}, errors, warnings)
+            return errors
+        self.assertTrue(any("falta contrast" in m for m in errors_for(st)))
+        same = {**st, "contrast": {"right": "s.good", "wrong": "他很高。", "why": {"es": "x"}}}
+        self.assertTrue(any("igual que la frase buena" in m for m in errors_for(same)))
+        ok = {**st, "contrast": {"right": "s.good", "wrong": "他是高。", "why": {"es": "Sin 是."}}}
+        self.assertEqual(errors_for(ok), [])
+        made, _ = anki.scaffold_exercises(words + [ok], [good], [], datetime.date(2026, 10, 1))
+        cards = [ex for _, ex in made if ex["type"] == "pattern"]
+        self.assertEqual(len(cards), 1)
+        self.assertTrue(cards[0]["id"].startswith("x.calque."))
+        self.assertEqual(cards[0]["sentence"], "s.good")
+        self.assertNotIn("Di una frase", cards[0]["prompt"]["text"])
+        options = [hz for hz, _ in anki.calque_options(cards[0], ok, {"s.good": good})]
+        self.assertEqual(sorted(options), sorted(["他是高。", "他很高。"]))
+
+    def test_scaffold_appends_to_an_empty_list(self):
+        import tempfile
+        from unittest import mock
+        with tempfile.TemporaryDirectory() as tmp:
+            (Path(tmp) / "exercises").mkdir()
+            path = Path(tmp) / "exercises" / "vacio.yaml"
+            path.write_text("# Ejercicios\n\nexercises: []\n", encoding="utf-8")
+            with mock.patch.object(anki, "DATA", Path(tmp)):
+                anki.append_exercises("vacio", [{"id": "x.t", "type": "read"}])
+            self.assertEqual([x["id"] for x in anki.load_yaml(path)["exercises"]], ["x.t"])
+
     def test_attic_wakes_by_rule(self):
         gou = {"id": "a.gou", "hanzi": "狗", "links": ["猫", "动物"]}
         ri = {"id": "a.ri", "hanzi": "日", "links": ["星期"]}

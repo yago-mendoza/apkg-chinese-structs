@@ -11,6 +11,7 @@ entries:
     refs: [w.hen]
     meaning: {es: 'Describir: el adjetivo va sin 是 y con 很 delante, aunque no signifique «muy».', en: 'Describing: the adjective takes no 是, and 很 in front even when it does not mean «very».'}
     examples: [s.ta-hen-gao, s.tianqi-hen-leng, s.beijing-hen-re]
+    contrast: {right: s.ta-hen-gao, wrong: '他是高。', why: {es: '«Es alto» lleva «es» en español; en chino el adjetivo no lleva 是, sino 很.', en: '"He is tall": a Chinese adjective takes 很, not 是.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments:
       - {kind: note, private: false, date: '2026-09-29', text: 'Tu error típico: 他是高 no se dice; 他很高.'}
@@ -21,6 +22,7 @@ entries:
     refs: [w.bu]
     meaning: {es: 'Negar una descripción: 不 delante del adjetivo, sin 很 ni 是.', en: 'Denying a description: 不 before the adjective, no 很, no 是.'}
     examples: [s.ta-bu-gao, s.tianqi-bu-leng, s.ta-bu-piaoliang]
+    contrast: {right: s.ta-bu-gao, wrong: '他不是高。', why: {es: '«No es alto»: el adjetivo se niega con 不 solo, sin 是.', en: '"He is not tall": the adjective is negated with 不 alone, no 是.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.adj-ma
@@ -30,6 +32,7 @@ entries:
     refs: [w.ma]
     meaning: {es: 'Preguntar por una descripción: el adjetivo solo y 吗 al final.', en: 'Asking about a description: the bare adjective and 吗 at the end.'}
     examples: [s.tianqi-leng-ma, s.ta-piaoliang-ma]
+    contrast: {right: s.tianqi-leng-ma, wrong: '天气是冷吗？', why: {es: 'Tampoco en la pregunta lleva 是: el adjetivo solo y 吗.', en: 'No 是 in the question either: the bare adjective and 吗.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.adj-bu-adj
@@ -39,6 +42,7 @@ entries:
     refs: [w.bu]
     meaning: {es: 'Pregunta de sí o no sin 吗: el adjetivo, 不 y el adjetivo otra vez.', en: 'A yes-no question without 吗: the adjective, 不, the adjective again.'}
     examples: [s.ta-piaoliang-bu-piaoliang]
+    contrast: {right: s.ta-piaoliang-bu-piaoliang, wrong: '她漂亮不漂亮吗？', why: {es: '漂亮不漂亮 ya es la pregunta; con 吗 sobra.', en: '漂亮不漂亮 is already the question; 吗 is one too many.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.tai-adj-le
@@ -48,6 +52,7 @@ entries:
     refs: [w.tai, w.le]
     meaning: {es: 'Exclamar: ¡qué…!, ¡demasiado…!', en: 'Exclaiming: how…!, too…!'}
     examples: [s.tai-hao-le]
+    contrast: {right: s.tai-hao-le, wrong: '太好！', why: {es: 'Para exclamar, 太 pide 了 al final: 太好了！', en: 'To exclaim, 太 needs 了 at the end: 太好了！'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.ye-hen-adj
@@ -57,6 +62,7 @@ entries:
     refs: [w.ye, w.hen]
     meaning: {es: 'Yo también: 也 va detrás del sujeto y delante de 很.', en: 'Me too: 也 after the subject, before 很.'}
     examples: [s.wo-ye-hen-hao]
+    contrast: {right: s.wo-ye-hen-hao, wrong: '也我很好。', why: {es: '«También yo»: 也 no va delante del sujeto, sino detrás, antes de 很.', en: '"Also I": 也 goes after the subject, before 很, never before it.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.shi-n
@@ -66,6 +72,7 @@ entries:
     refs: [w.shi]
     meaning: {es: 'Decir qué o quién es algo: 是 une dos nombres, nunca un nombre y un adjetivo.', en: 'Saying what or who something is: 是 joins two nouns, never a noun and an adjective.'}
     examples: [s.wo-shi-gongchengshi, s.women-shi-pengyou, s.zhe-shi-wode-shouji]
+    contrast: {right: s.wo-shi-gongchengshi, wrong: '我工程师。', why: {es: 'Entre dos nombres sí hace falta 是. Lo que va sin 是 es el adjetivo.', en: 'Between two nouns 是 is needed. Only adjectives go without it.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.bu-shi-n
@@ -75,6 +82,7 @@ entries:
     refs: [w.bu, w.shi]
     meaning: {es: 'Negar lo que es algo: 不是.', en: 'Denying what something is: 不是.'}
     examples: [s.wo-bu-shi-xuesheng]
+    contrast: {right: s.wo-bu-shi-xuesheng, wrong: '我是不学生，我是老师。', why: {es: '不 va delante de 是, no detrás: 不是 «no es».', en: '不 goes before 是, not after: 不是.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.shi-ren
@@ -84,6 +92,7 @@ entries:
     refs: [w.shi, w.ren]
     meaning: {es: 'Decir la nacionalidad: país + 人.', en: 'Saying your nationality: country + 人.'}
     examples: [s.wo-shi-xibanyaren]
+    contrast: {right: s.wo-shi-xibanyaren, wrong: '我是西班牙。', why: {es: '西班牙 es el país; la persona es 西班牙人.', en: '西班牙 is the country; the person is 西班牙人.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.de-n
@@ -93,6 +102,7 @@ entries:
     refs: [w.de]
     meaning: {es: 'Posesión: el poseedor, 的 y la cosa (我的手机, mi móvil).', en: 'Possession: owner, 的, thing (我的手机, my phone).'}
     examples: [s.zhe-shi-wode-shouji]
+    contrast: {right: s.zhe-shi-wode-shouji, wrong: '这是手机我的。', why: {es: 'El poseedor va delante, con 的: 我的手机. Nunca «el móvil mío».', en: 'The owner comes first, with 的: 我的手机, never "the phone of mine".'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.jiao
@@ -102,6 +112,7 @@ entries:
     refs: [w.jiao]
     meaning: {es: 'Decir cómo se llama alguien.', en: 'Saying what someone is called.'}
     examples: [s.wo-jiao-yage]
+    contrast: {right: s.wo-jiao-yage, wrong: '我是叫雅戈。', why: {es: '叫 ya es el verbo, «llamarse»: no lleva 是.', en: '叫 is already the verb, "to be called": no 是.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.xing
@@ -111,6 +122,7 @@ entries:
     refs: [w.xing]
     meaning: {es: 'Decir el apellido.', en: 'Saying your surname.'}
     examples: [s.wo-xing-menduosa]
+    contrast: {right: s.wo-xing-menduosa, wrong: '我的姓门多萨。', why: {es: '姓 es aquí el verbo «apellidarse»: 我姓门多萨. «Mi apellido Mendoza» se queda sin verbo.', en: '姓 is the verb here, "to be surnamed": 我姓门多萨. "My surname Mendoza" has no verb.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.laizi
@@ -120,6 +132,7 @@ entries:
     refs: [w.laizi]
     meaning: {es: 'Decir de dónde eres.', en: 'Saying where you are from.'}
     examples: [s.wo-laizi-xibanya]
+    contrast: {right: s.wo-laizi-xibanya, wrong: '我来从西班牙。', why: {es: '«Vengo de España» calcado: el origen va delante del verbo (我从西班牙来, con 从 cóng [HSK 1] «desde») o detrás de 来自.', en: '"I come from Spain" copied word by word: the origin goes before the verb (我从西班牙来) or after 来自.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.ne
@@ -129,6 +142,7 @@ entries:
     refs: [w.ne]
     meaning: {es: 'Devolver la pregunta: ¿y tú?', en: 'Returning the question: and you?'}
     examples: [s.wo-hen-hao-ni-ne]
+    contrast: {right: s.wo-hen-hao-ni-ne, wrong: '我很好，和你？', why: {es: '«¿Y tú?» no se dice con 和: la pregunta se devuelve con 你呢？', en: '"And you?" is not 和: you return the question with 你呢？'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.dou-v
@@ -138,6 +152,7 @@ entries:
     refs: [w.dou]
     meaning: {es: 'Todos: 都 va detrás del sujeto y delante del verbo.', en: 'All: 都 after the subject, before the verb.'}
     examples: [s.women-dou-shi-xuesheng, s.women-dou-xihuan-da-lanqiu, s.dajia-dou-lai-le]
+    contrast: {right: s.women-dou-shi-xuesheng, wrong: '都我们是学生。', why: {es: '«Todos nosotros»: 都 va detrás del sujeto, delante del verbo.', en: '"All of us": 都 goes after the subject, before the verb.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.qing-v
@@ -147,6 +162,7 @@ entries:
     refs: [w.qing]
     meaning: {es: 'Pedir con cortesía: 请 delante del verbo.', en: 'Asking politely: 请 before the verb.'}
     examples: [s.qing-he-kafei]
+    contrast: {right: s.qing-he-kafei, wrong: '喝咖啡请。', why: {es: '«…, por favor» al final es un calco: 请 va delante del verbo.', en: '"..., please" at the end is a calque: 请 goes before the verb.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.xiang-v
@@ -156,6 +172,7 @@ entries:
     refs: [w.xiang]
     meaning: {es: 'Tener ganas de hacer algo.', en: 'Wanting to do something.'}
     examples: [s.wo-xiang-mai-dongxi, s.wo-xiang-qu-shangdian]
+    contrast: {right: s.wo-xiang-mai-dongxi, wrong: '我有想买东西。', why: {es: '«Tengo ganas de…»: las ganas son 想 solo, sin 有.', en: '"I have the wish to...": the wish is just 想, no 有.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.yao-n
@@ -165,6 +182,7 @@ entries:
     refs: [w.yao]
     meaning: {es: 'Pedir o querer una cosa.', en: 'Asking for or wanting a thing.'}
     examples: [s.wo-yao-shui, s.wo-yao-niurou]
+    contrast: {right: s.wo-yao-shui, wrong: '我想水。', why: {es: '想 delante de un nombre es «echar de menos» (我想你 «te echo de menos»); para pedir una cosa, 要.', en: '想 before a noun means "to miss" (我想你); to ask for a thing, 要.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.xihuan-v
@@ -174,6 +192,7 @@ entries:
     refs: [w.xihuan]
     meaning: {es: 'Decir que te gusta hacer algo.', en: 'Saying you like doing something.'}
     examples: [s.wo-xihuan-he-kafei, s.wo-xihuan-kan-shu]
+    contrast: {right: s.wo-xihuan-he-kafei, wrong: '喝咖啡喜欢我。', why: {es: 'En español la cosa es el sujeto («me gusta tomar café»); en chino el sujeto es quien disfruta: 我喜欢….', en: 'In Spanish the thing is the subject; in Chinese the subject is who enjoys it: 我喜欢….'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.zai-v
@@ -183,6 +202,7 @@ entries:
     refs: [w.zai.progressive]
     meaning: {es: 'Estar haciendo algo ahora: 在 delante del verbo.', en: 'Doing something right now: 在 before the verb.'}
     examples: [s.wo-zai-kan-shu]
+    contrast: {right: s.wo-zai-kan-shu, wrong: '我是看书。', why: {es: '«Estoy leyendo»: el «estar» de lo que pasa ahora es 在, no 是.', en: '"I am reading": the ongoing "be" is 在, not 是.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.v-le
@@ -192,6 +212,7 @@ entries:
     refs: [w.le]
     meaning: {es: 'Algo ya ha pasado o ha cambiado: 了 detrás del verbo.', en: 'Something has happened or changed: 了 after the verb.'}
     examples: [s.wo-zou-le, s.dajia-dou-lai-le]
+    contrast: {right: s.wo-zou-le, wrong: '我了走。', why: {es: '了 va detrás del verbo (o al final de la frase), nunca delante.', en: '了 goes after the verb (or at the end), never before it.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.num-ge-n
@@ -201,14 +222,26 @@ entries:
     refs: [w.ge]
     meaning: {es: 'Contar: número, clasificador y nombre; delante del clasificador, 两 y no 二.', en: 'Counting: number, measure word, noun; before the measure word, 两, not 二.'}
     examples: [s.wo-you-san-ge-pengyou, s.tamen-you-liang-ge-haizi]
+    contrast: {right: s.wo-you-san-ge-pengyou, wrong: '我有三朋友。', why: {es: 'Entre el número y la cosa va el clasificador: 三个朋友. Sin él se entiende, pero suena como «tengo tres amigo».', en: 'A measure word goes between number and noun: 三个朋友. Without it, it sounds like "I have three friend".'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.zai-nar
     kind: structure
     use: say
-    pattern: '{N} + 在 + 哪儿？'
-    refs: [w.zai.at, w.nar]
+    pattern: '{N} + 在 + 哪里？'
+    refs: [w.zai.at, w.nali]
     meaning: {es: 'Preguntar dónde está algo.', en: 'Asking where something is.'}
     examples: [s.shangdian-zai-nar]
+    contrast: {right: s.shangdian-zai-nar, wrong: '哪里在商店？', why: {es: '«¿Dónde está la tienda?» con el orden del español: en chino va primero lo que buscas, y 哪里 al final, en el sitio de la respuesta.', en: 'Spanish word order: in Chinese, what you look for comes first and 哪里 last, where the answer would go.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
+    comments: []
+  - id: st.n-he-n
+    kind: structure
+    use: say
+    pattern: '{N} + 和 + {N}'
+    refs: [w.he.and]
+    meaning: {es: 'Unir dos nombres: 和 es «y» solo entre nombres, nunca entre frases ni adjetivos.', en: 'Joining two nouns: 和 is "and" only between nouns, never between clauses or adjectives.'}
+    examples: [s.wo-xihuan-kafei-he-qiaokeli]
+    contrast: {right: s.wo-xihuan-kafei-he-qiaokeli, wrong: '我喜欢咖啡和我喜欢巧克力。', why: {es: '和 une nombres, no frases: 我喜欢咖啡和巧克力. Para dos frases o dos adjetivos se usa otra cosa: 他很高，也很帅.', en: '和 joins nouns, not clauses: 我喜欢咖啡和巧克力. Two clauses or adjectives take something else: 他很高，也很帅.'}}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments: []

@@ -13,7 +13,7 @@
 - 🟡🃏 她 tā [tʰa˥] · ella · _pronombre_
 - 🟡🃏 它 tā [tʰa˥] · ello (cosas, animales) · _pronombre_ · Se usa para animales y cosas.
 - ✅🃏 他们 tāmen [tʰa˥ mən] · ellos · _pronombre_
-- ✅🃏 大家 dàjiā [ta˥˩ tɕja˥] · todos, todo el mundo · _pronombre_ · Suele ir con 都: 大家都来了 «ya estamos todos».
+- ✅🃏 大家 dàjiā [ta˥˩ tɕja˥] · todos, todo el mundo · _pronombre_ · Suele ir con 都: 大家都来了 «ya estamos todos». · 大 «grande» + 家 «familia, casa»: era «la gran familia», todo el grupo, y de ahí «todos». Es el mismo 家 de 一家人 «una familia» y del clasificador de negocios: 一家饭店 «un restaurante».
 - ✅🃏 老师 lǎoshī [lɑʊ˧˩˧ ʂɨ˥] · profesor, profesora · _sustantivo_
 - ✅🃏 学生 xuéshēng [ɕɥœ˧˥ ʂɤŋ˥] · estudiante · _sustantivo_ · Un niño que estudia bajo un techo, rodeado de sus útiles de aprendizaje.
 - ✅🃏 朋友 péngyou [pʰɤŋ˧˥ joʊ] · amigo, amiga · _sustantivo_
@@ -21,6 +21,7 @@
 - ✅🃏 人 rén [ʐən˧˥] · persona · _sustantivo_
 - 🟡🃏 师 shī · maestro; experto (en nombres de profesiones) · Da nombre a profesiones y a quien enseña: 老师 lǎoshī, 工程师 gōngchéngshī, 厨师 chúshī «cocinero» [HSK 3]. «Experto» en general es otra palabra: 专家 zhuānjiā [HSK 3]. · No se confunde con 者 zhě, «el que hace»: 作者 zuòzhě «autor», 记者 jìzhě «periodista» [HSK 3]. 师 es un oficio; 者, quien hace una acción. · El maestro dirige a los alumnos bajo techo, con el pañuelo 巾 como en 帅.
 - ✅🃏 们 men · plural de personas (我们, 你们, 他们) · Muchas personas 亻 pasando por una puerta 门. · 门 mén le da el sonido; en 们 la sílaba pierde el tono: wǒmen, nǐmen, tāmen.
+- ✅🃏 谁 shéi · quién · _interrogativo_ · 谁 ocupa el sitio de la persona que no conoces, sin cambiar el orden: de 他是老师 sale 他是谁？. También se oye shuí.
 
 ## 他, 她 y 它: los tres son tā
 
@@ -43,3 +44,4 @@ Casi iguales: el pañuelo 巾 a la derecha y dos trazos a la izquierda. 师 llev
 - ✅🃏 我们是朋友。 · wǒmen shì péngyou · Somos amigos.
 - ✅🃏 您是我们的老师吗？ · nín shì wǒmen de lǎoshī ma · ¿Es usted nuestra profesora?
 - ✅🃏 对，我是你们的老师。 · duì wǒ shì nǐmen de lǎoshī · Sí, soy vuestro profesor.
+- ✅🃏 他是谁？ · tā shì shéi · ¿Quién es él?

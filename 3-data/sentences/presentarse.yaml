@@ -229,3 +229,24 @@ sentences:
       - {text: 。}
     translation: {es: Ya hemos llegado todos., en: Everyone is here.}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.ta-de-mingzi-shi-shenme
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 名字, ref: w.mingzi, pinyin: míngzi}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 什么, ref: w.shenme, pinyin: shénme}
+      - {text: ？}
+    translation: {es: '¿Cuál es su nombre?', en: 'What is his name?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.menduosa-xiansheng-ninhao
+    use: say
+    segments:
+      - {text: 门多萨, ref: w.menduosa, pinyin: Ménduōsà}
+      - {text: 先生, ref: w.xiansheng, pinyin: xiānsheng}
+      - {text: ，}
+      - {text: 您好, ref: e.ninhao, pinyin: nín hǎo}
+      - {text: ！}
+    translation: {es: '¡Buenos días, señor Mendoza!', en: 'Hello, Mr. Mendoza!'}
+    source: {origin: class-audio, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: grabación de la clase, date: '2026-09-29'}

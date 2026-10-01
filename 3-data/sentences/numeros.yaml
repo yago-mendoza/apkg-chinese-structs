@@ -48,3 +48,30 @@ sentences:
       - {text: 。}
     translation: {es: Tienen dos hijos., en: They have two children.}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-meiyou-qian
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 没有, ref: w.meiyou, pinyin: méiyǒu}
+      - {text: 钱, ref: w.qian, pinyin: qián}
+      - {text: 。}
+    translation: {es: 'No tengo dinero.', en: 'I have no money.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+  - id: s.ni-ji-sui
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 几, ref: w.ji, pinyin: jǐ}
+      - {text: 岁, ref: w.sui, pinyin: suì}
+      - {text: ？}
+    translation: {es: '¿Cuántos años tienes? (a un niño)', en: 'How old are you? (to a child)'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+  - id: s.ji-ge-ren
+    use: say
+    segments:
+      - {text: 几, ref: w.ji, pinyin: jǐ}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 人, ref: w.ren, pinyin: rén}
+      - {text: ？}
+    translation: {es: '¿Cuántas personas? (en un restaurante)', en: 'How many people? (at a restaurant)'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}

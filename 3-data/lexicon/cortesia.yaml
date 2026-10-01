@@ -110,11 +110,12 @@ entries:
     kind: word
     hanzi: 可以
     pinyin: kěyǐ
-    meaning: {es: se puede; vale, en: 'can, may; OK'}
+    meaning: {es: 'poder (está permitido); vale, sirve', en: 'can, may; OK'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: note, private: false, date: '2026-09-29', text: 'También sirve de «vale», como 好的.', original: kê yî = okay (like ke ài) (its liek phnetical calco)}
       - {kind: linguistic, private: false, date: '2026-09-27', text: '可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2].'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '可以 no es «ser capaz» (eso es 能): es que algo está permitido, vale o sirve. Pregunta y respuesta a la vez: 可以吗？ —可以。 «¿Se puede? —Sí». En una tienda, 这个大小可以吗？ «¿este tamaño está bien?». Según el contexto también se dice 行 xíng [HSK 1] o 没问题 méi wèntí [问题 HSK 2], «no hay problema».', original: 'En kêyî hay que explcar que no es lo mismo poder tener permiso que 能 (néng): poder / ser capaz de. [...] keyi estaria bien hacer hincapie en que est tanto "poder" para preguntas como respuesta como ... loksea, y expresiones sinonimss segun ctx sabes'}
   - id: g.yes-forms
     kind: group
     basis: set
@@ -126,4 +127,37 @@ entries:
       - {ref: e.haode, cue: de acuerdo (aceptas algo)}
       - {ref: w.en, cue: 'mm, te sigo (mientras hablan)'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    comments: []
+  - id: e.buhaoyisi
+    use: say
+    role: content
+    kind: expression
+    hanzi: 不好意思
+    pinyin: bù hǎoyìsi
+    meaning: {es: 'perdona; qué vergüenza; me sabe mal', en: 'sorry, excuse me; how embarrassing'}
+    accept_pinyin_mismatch: 'la última sílaba es átona: yìsi'
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Para una molestia pequeña: llegar tarde, pasar, interrumpir, pedir algo. Es muy cotidiano, también entre jóvenes, y no suena formal.'}
+  - id: w.duibuqi
+    use: say
+    role: content
+    kind: word
+    hanzi: 对不起
+    pinyin: duìbuqǐ
+    accept_pinyin_mismatch: 'el 不 de en medio es átono en el habla: duìbuqǐ'
+    meaning: {es: lo siento, en: "I'm sorry"}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Perdón de verdad, cuando has hecho algo mal: 对不起，我错了. Para una molestia pequeña basta 不好意思.'}
+  - id: g.excuse
+    kind: group
+    basis: set
+    title: 'Disculpe, perdona y lo siento'
+    explanation: 'Tres formas de pedir perdón o de abordar a alguien, según la situación.'
+    members:
+      - {ref: e.qingwen, cue: 'antes de preguntar algo: 请问，饭店在哪里？'}
+      - {ref: e.buhaoyisi, cue: 'una molestia pequeña: llegar tarde, pasar, pedir algo'}
+      - {ref: w.duibuqi, cue: 'has hecho algo mal: lo siento'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments: []

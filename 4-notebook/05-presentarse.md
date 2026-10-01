@@ -15,13 +15,13 @@
 - ✅🃏 也 yě [jɛ˧˩˧] · también · _adverbio_
 - ✅🃏 都 dōu [toʊ˥] · todos, ambos (adverbio) · _adverbio_
 - ✅🃏 的 de [tɤ] · de (posesión: 我的 = mi) · _partícula_
-- ✅🃏 叫 jiào [tɕjɑʊ˥˩] · llamarse · _verbo_
-- ✅🃏 什么 shénme [ʂən˧˥ mɤ] · qué · _interrogativo_
+- ✅🃏 叫 jiào [tɕjɑʊ˥˩] · llamarse · _verbo_ · Para confirmar si alguien es una persona se pregunta 你是张丽吗？, no 你叫张丽吗？.
+- ✅🃏 什么 shénme [ʂən˧˥ mɤ] · qué · _interrogativo_ · 什么 va donde iría la respuesta, sin cambiar el orden: 他叫什么名字？ o 他的名字是什么？ (la primera es la más corriente).
 - ✅🃏 名字 míngzi [miŋ˧˥ tsɯ] · nombre · _sustantivo_
 - ✅🃏 认识 rènshi [ʐən˥˩ ʂɨ] · conocer (a alguien) · _verbo_ · 认 «reconocer» + 识 «distinguir»: conocer a alguien, estar familiarizado con algo. · 识 aporta la idea de distinguir algo de lo demás porque se conoce.
 - ✅🃏 高兴 gāoxìng [kɑʊ˥ ɕiŋ˥˩] · contento · _adjetivo_
 - ✅🃏 姓 xìng [ɕiŋ˥˩] · apellidarse; apellido · _verbo_ · Se pregunta el apellido para poder tratar a alguien de señor o señora. · 姓 xìng «apellido» + 名字 míngzi «nombre» = 姓名 xìngmíng, el nombre completo.
-- ✅🃏 贵姓 guìxìng [kweɪ˥˩ ɕiŋ˥˩] · su apellido (forma cortés) · _expresión_ · 您贵姓？ es la forma respetuosa de 你姓什么？ Se contesta con el apellido o con el nombre completo.
+- ✅🃏 贵姓 guìxìng [kweɪ˥˩ ɕiŋ˥˩] · su apellido (forma cortés) · _expresión_ · 您贵姓？ es la forma respetuosa de 你姓什么？ Se contesta con el apellido o con el nombre completo. · 您贵姓？ es para situaciones formales, como el trabajo o los negocios. Sabiendo el apellido, se le llama con 先生 (白先生，您好) y no por el nombre completo.
 - ✅🃏 姓名 xìngmíng [ɕiŋ˥˩ miŋ˧˥] · nombre completo · _sustantivo_
 - ✅🃏 门多萨 Ménduōsà [mən˧˥ twɔ˥ sa˥˩] · Mendoza (mi apellido) · _nombre propio_ · Pura transcripción del sonido: 门 «puerta», 多 «mucho» y 萨 no forman ningún significado.
 - ✅🃏 雅戈 Yǎgē [ja˧˩˧ kɤ˥] · Yago (mi nombre en chino) · _nombre propio_ · Transcripción por el sonido: 雅 «elegante» y 戈 «alabarda», sin otro significado. Solo por diversión.
@@ -30,6 +30,7 @@
 - ✅🃏 问 wèn [wən˥˩] · preguntar · _verbo_ · Una boca 口 en la puerta 门, preguntando. · 门 mén le da el sonido: wèn.
 - ✅🃏 北京 Běijīng [peɪ˧˩˧ tɕiŋ˥] · Pekín · _nombre propio_ · Literalmente «capital del norte»: 北 běi «norte» + 京 jīng «capital». · 京 es un edificio alto sobre una colina, la parte de arriba de 高.
 - ✅ 大卫 Dàwèi [ta˥˩ weɪ˥˩] · David (nombre de ejemplo) · _nombre propio_
+- ✅🃏 先生 xiānsheng [ɕjɛn˥ ʂɤŋ] · señor (tras el apellido) · _sustantivo_ · Detrás del apellido: 白先生 «el señor Bai». Es como se llama a alguien en un trato formal; no por el nombre completo. · 先 «antes» + 生 «nacer»: el que nació antes. Ojo: la segunda sílaba se dice átona, xiānsheng.
 
 ## Frases
 
@@ -56,3 +57,5 @@
 - ✅🃏 我喜欢中文。 · wǒ xǐhuan Zhōngwén · Me gusta el chino.
 - ✅🃏 明天你来吗？ · míngtiān nǐ lái ma · ¿Vienes mañana?
 - ✅🃏 大家都来了。 · dàjiā dōu lái le · Ya hemos llegado todos.
+- ✅🃏 他的名字是什么？ · tā de míngzi shì shénme · ¿Cuál es su nombre?
+- ✅🃏 门多萨先生，您好！ · Ménduōsà xiānsheng nín hǎo · ¡Buenos días, señor Mendoza!

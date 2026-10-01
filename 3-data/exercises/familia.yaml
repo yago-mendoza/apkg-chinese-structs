@@ -239,3 +239,110 @@ exercises:
         + 马 mǎ, que da el sonido.'}
     lang: es
     comments: []
+  - id: x.produce.erzi
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.erzi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «hijo»? Escribe el pinyin.'}
+    answer: {typed: er2 zi5, hanzi: 儿子, pinyin: érzi, meaning: hijo}
+    comments: []
+  - id: x.produce.nver
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.nver]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «hija»? Escribe el pinyin.'}
+    answer: {typed: nü3 er2, hanzi: 女儿, pinyin: nǚ'ér, meaning: hija}
+    comments: []
+  - id: x.dictation.jia
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.jia]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jia1, hanzi: 家, pinyin: jiā, meaning: 'casa, hogar; familia'}
+    comments: []
+  - id: x.produce.jia
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.jia]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «casa, hogar; familia»? Escribe el pinyin.'}
+    answer: {typed: jia1, hanzi: 家, pinyin: jiā, meaning: 'casa, hogar; familia'}
+    comments: []
+  - id: x.read.jia
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.jia]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 家}
+    answer: {hanzi: 家, pinyin: jiā, meaning: 'casa, hogar; familia'}
+    comments: []
+  - id: x.listen.ta-you-erzi-he-nver
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ta-you-erzi-he-nver
+    targets: [s.ta-you-erzi-he-nver]
+    context: [w.ta.he, w.you.have, w.num.yi, w.ge, w.erzi, w.he.and, w.nver]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tiene un hijo y una hija.}
+    comments: []
+  - id: x.produce.ta-you-erzi-he-nver
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ta-you-erzi-he-nver
+    targets: [s.ta-you-erzi-he-nver]
+    context: [w.ta.he, w.you.have, w.num.yi, w.ge, w.erzi, w.he.and, w.nver]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tiene un hijo y una hija.»'}
+    answer: {meaning: Tiene un hijo y una hija.}
+    comments: []
+  - id: x.listen.women-shi-yijiaren
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.women-shi-yijiaren
+    targets: [s.women-shi-yijiaren]
+    context: [w.women, w.shi, w.num.yi, w.jia, w.ren]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Somos una familia.}
+    comments: []
+  - id: x.produce.women-shi-yijiaren
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.women-shi-yijiaren
+    targets: [s.women-shi-yijiaren]
+    context: [w.women, w.shi, w.num.yi, w.jia, w.ren]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Somos una familia.»'}
+    answer: {meaning: Somos una familia.}
+    comments: []
+  - id: x.nuance.nver-erzi
+    added: 2026-10-01
+    lang: es
+    type: nuance
+    targets: [w.nver, w.erzi]
+    skills: [comprehension, discrimination]
+    prompt: {text: '女儿 y 儿子: ¿qué pieza comparten y cómo suena cada parte?'}
+    answer: {meaning: '儿 ér «niño». 女儿 nǚ''ér = 女 nǚ «mujer» + 儿 ér: la hija lleva delante 女. 儿子 érzi = 儿 ér + 子 zi, un sufijo átono: el hijo lleva detrás 子.'}
+    comments: []
+  - id: x.nuance.mama-baba-tones
+    added: 2026-10-01
+    lang: es
+    type: nuance
+    targets: [w.mama, w.baba]
+    skills: [comprehension, discrimination]
+    prompt: {text: '妈妈 y 爸爸: ¿en qué se diferencian sus tonos?'}
+    answer: {meaning: 'māma: la primera sílaba alta y plana (primer tono). bàba: la primera cae (cuarto). En las dos, la segunda sílaba es corta y floja (tono neutro).'}
+    comments: []

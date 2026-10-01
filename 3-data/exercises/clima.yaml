@@ -219,3 +219,14 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: '¿Llueve en Pekín?'}
     comments: []
+  - id: x.listen.yao-xiayu-le
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.yao-xiayu-le
+    targets: [s.yao-xiayu-le]
+    context: [w.yao, w.xiayu, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Va a llover.}
+    comments: []

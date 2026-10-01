@@ -27,3 +27,26 @@ sentences:
       - {text: ！}
     translation: {es: 'Sí, gracias.', en: 'Mm, thanks!'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: s.buhaoyisi-wo-lai-wan-le
+    use: say
+    segments:
+      - {text: 不好意思, ref: e.buhaoyisi, pinyin: bù hǎoyìsi}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 来, ref: w.lai, pinyin: lái}
+      - {text: 晚, ref: w.wan, pinyin: wǎn}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: 'Perdona, he llegado tarde.', en: 'Sorry, I''m late.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.duibuqi-wo-cuo-le
+    use: say
+    segments:
+      - {text: 对不起, ref: w.duibuqi, pinyin: duìbuqǐ}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 错, ref: w.cuo, pinyin: cuò}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: 'Lo siento, me he equivocado.', en: 'I''m sorry, I was wrong.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}

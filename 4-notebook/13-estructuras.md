@@ -26,4 +26,5 @@
 - ✅🃏 `{S} + 在 + {V}` · Estar haciendo algo ahora: 在 delante del verbo. · 我在看书。
 - ✅🃏 `{S} + {V} + 了` · Algo ya ha pasado o ha cambiado: 了 detrás del verbo. · 大家都来了。 / 我走了。
 - ✅🃏 `{Num} + 个 + {N}` · Contar: número, clasificador y nombre; delante del clasificador, 两 y no 二. · 我有三个朋友。 / 他们有两个孩子。
-- ✅🃏 `{N} + 在 + 哪儿？` · Preguntar dónde está algo. · 商店在哪儿？
+- ✅🃏 `{N} + 在 + 哪里？` · Preguntar dónde está algo. · 商店在哪里？
+- ✅🃏 `{N} + 和 + {N}` · Unir dos nombres: 和 es «y» solo entre nombres, nunca entre frases ni adjetivos. · 我喜欢咖啡和巧克力。

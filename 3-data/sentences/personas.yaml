@@ -46,3 +46,12 @@ sentences:
       - {text: 老师, ref: w.laoshi, pinyin: lǎoshī}
       - {text: 。}
     translation: {es: 'Sí, soy vuestro profesor.', en: 'Yes, I''m your teacher.'}
+  - id: s.ta-shi-shei
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 谁, ref: w.shei, pinyin: shéi}
+      - {text: ？}
+    translation: {es: '¿Quién es él?', en: 'Who is he?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}

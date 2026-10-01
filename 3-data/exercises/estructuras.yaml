@@ -1,256 +1,293 @@
 # Ejercicios · Estructuras de frase. Esquema: 3-data/README.md
 
 exercises:
-  - id: x.pattern.hen-adj
-    added: 2026-09-29
+  - id: x.calque.hen-adj
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.hen-adj]
     context: [w.hen]
-    reveal: [s.ta-hen-gao, s.tianqi-hen-leng]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: 'Describir: el adjetivo va sin 是 y con 很 delante, aunque no signifique «muy».'}
+    sentence: s.ta-hen-gao
+    reveal: [s.tianqi-hen-leng, s.beijing-hen-re]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Él es alto.»'}
+    answer: {meaning: '«Es alto» lleva «es» en español; en chino el adjetivo no lleva 是, sino 很.'}
     comments: []
-  - id: x.pattern.bu-adj
-    added: 2026-09-29
+  - id: x.calque.bu-adj
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.bu-adj]
     context: [w.bu]
-    reveal: [s.ta-bu-gao, s.tianqi-bu-leng]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: 'Negar una descripción: 不 delante del adjetivo, sin 很 ni 是.'}
+    sentence: s.ta-bu-gao
+    reveal: [s.tianqi-bu-leng, s.ta-bu-piaoliang]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «No es alto.»'}
+    answer: {meaning: '«No es alto»: el adjetivo se niega con 不 solo, sin 是.'}
     comments: []
-  - id: x.pattern.adj-ma
-    added: 2026-09-29
+  - id: x.calque.adj-ma
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.adj-ma]
     context: [w.ma]
-    reveal: [s.tianqi-leng-ma, s.ta-piaoliang-ma]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: 'Preguntar por una descripción: el adjetivo solo y 吗 al final.'}
+    sentence: s.tianqi-leng-ma
+    reveal: [s.ta-piaoliang-ma]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «¿Hace frío?»'}
+    answer: {meaning: 'Tampoco en la pregunta lleva 是: el adjetivo solo y 吗.'}
     comments: []
-  - id: x.pattern.adj-bu-adj
-    added: 2026-09-29
+  - id: x.calque.adj-bu-adj
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.adj-bu-adj]
     context: [w.bu]
-    reveal: [s.ta-piaoliang-bu-piaoliang]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: 'Pregunta de sí o no sin 吗: el adjetivo, 不 y el adjetivo otra vez.'}
+    sentence: s.ta-piaoliang-bu-piaoliang
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «¿Es guapa o no?»'}
+    answer: {meaning: 漂亮不漂亮 ya es la pregunta; con 吗 sobra.}
     comments: []
-  - id: x.pattern.tai-adj-le
-    added: 2026-09-29
+  - id: x.calque.tai-adj-le
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.tai-adj-le]
     context: [w.tai, w.le]
-    reveal: [s.tai-hao-le]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: 'Exclamar: ¡qué…!, ¡demasiado…!'}
+    sentence: s.tai-hao-le
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «¡Genial!»'}
+    answer: {meaning: 'Para exclamar, 太 pide 了 al final: 太好了！'}
     comments: []
-  - id: x.pattern.ye-hen-adj
-    added: 2026-09-29
+  - id: x.calque.ye-hen-adj
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.ye-hen-adj]
     context: [w.ye, w.hen]
-    reveal: [s.wo-ye-hen-hao]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: 'Yo también: 也 va detrás del sujeto y delante de 很.'}
+    sentence: s.wo-ye-hen-hao
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Yo también estoy bien.»'}
+    answer: {meaning: '«También yo»: 也 no va delante del sujeto, sino detrás, antes de 很.'}
     comments: []
-  - id: x.pattern.shi-n
-    added: 2026-09-29
+  - id: x.calque.shi-n
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.shi-n]
     context: [w.shi]
-    reveal: [s.wo-shi-gongchengshi, s.women-shi-pengyou]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: 'Decir qué o quién es algo: 是 une dos nombres, nunca un nombre y un adjetivo.'}
+    sentence: s.wo-shi-gongchengshi
+    reveal: [s.women-shi-pengyou, s.zhe-shi-wode-shouji]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Soy ingeniero.»'}
+    answer: {meaning: Entre dos nombres sí hace falta 是. Lo que va sin 是 es el adjetivo.}
     comments: []
-  - id: x.pattern.bu-shi-n
-    added: 2026-09-29
+  - id: x.calque.bu-shi-n
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.bu-shi-n]
     context: [w.bu, w.shi]
-    reveal: [s.wo-bu-shi-xuesheng]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: 'Negar lo que es algo: 不是.'}
+    sentence: s.wo-bu-shi-xuesheng
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «No soy estudiante, soy profesor.»'}
+    answer: {meaning: '不 va delante de 是, no detrás: 不是 «no es».'}
     comments: []
-  - id: x.pattern.shi-ren
-    added: 2026-09-29
+  - id: x.calque.shi-ren
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.shi-ren]
     context: [w.shi, w.ren]
-    reveal: [s.wo-shi-xibanyaren]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: 'Decir la nacionalidad: país + 人.'}
+    sentence: s.wo-shi-xibanyaren
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Soy español.»'}
+    answer: {meaning: 西班牙 es el país; la persona es 西班牙人.}
     comments: []
-  - id: x.pattern.de-n
-    added: 2026-09-29
+  - id: x.calque.de-n
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.de-n]
     context: [w.de]
-    reveal: [s.zhe-shi-wode-shouji]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: 'Posesión: el poseedor, 的 y la cosa (我的手机, mi móvil).'}
+    sentence: s.zhe-shi-wode-shouji
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Este es mi móvil.»'}
+    answer: {meaning: 'El poseedor va delante, con 的: 我的手机. Nunca «el móvil mío».'}
     comments: []
-  - id: x.pattern.jiao
-    added: 2026-09-29
+  - id: x.calque.jiao
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.jiao]
     context: [w.jiao]
-    reveal: [s.wo-jiao-yage]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: Decir cómo se llama alguien.}
+    sentence: s.wo-jiao-yage
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Me llamo Yago.»'}
+    answer: {meaning: '叫 ya es el verbo, «llamarse»: no lleva 是.'}
     comments: []
-  - id: x.pattern.xing
-    added: 2026-09-29
+  - id: x.calque.xing
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.xing]
     context: [w.xing]
-    reveal: [s.wo-xing-menduosa]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: Decir el apellido.}
+    sentence: s.wo-xing-menduosa
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Me apellido Mendoza.»'}
+    answer: {meaning: '姓 es aquí el verbo «apellidarse»: 我姓门多萨. «Mi apellido Mendoza» se queda sin verbo.'}
     comments: []
-  - id: x.pattern.laizi
-    added: 2026-09-29
+  - id: x.calque.laizi
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.laizi]
     context: [w.laizi]
-    reveal: [s.wo-laizi-xibanya]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: Decir de dónde eres.}
+    sentence: s.wo-laizi-xibanya
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Soy de España.»'}
+    answer: {meaning: '«Vengo de España» calcado: el origen va delante del verbo (我从西班牙来, con 从 cóng [HSK 1] «desde») o detrás
+        de 来自.'}
     comments: []
-  - id: x.pattern.ne
-    added: 2026-09-29
+  - id: x.calque.ne
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.ne]
     context: [w.ne]
-    reveal: [s.wo-hen-hao-ni-ne]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: 'Devolver la pregunta: ¿y tú?'}
+    sentence: s.wo-hen-hao-ni-ne
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Estoy bien, ¿y tú?»'}
+    answer: {meaning: '«¿Y tú?» no se dice con 和: la pregunta se devuelve con 你呢？'}
     comments: []
-  - id: x.pattern.dou-v
-    added: 2026-09-29
+  - id: x.calque.dou-v
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.dou-v]
     context: [w.dou]
-    reveal: [s.women-dou-shi-xuesheng, s.women-dou-xihuan-da-lanqiu]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: 'Todos: 都 va detrás del sujeto y delante del verbo.'}
+    sentence: s.women-dou-shi-xuesheng
+    reveal: [s.women-dou-xihuan-da-lanqiu, s.dajia-dou-lai-le]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Todos somos estudiantes.»'}
+    answer: {meaning: '«Todos nosotros»: 都 va detrás del sujeto, delante del verbo.'}
     comments: []
-  - id: x.pattern.qing-v
-    added: 2026-09-29
+  - id: x.calque.qing-v
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.qing-v]
     context: [w.qing]
-    reveal: [s.qing-he-kafei]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: 'Pedir con cortesía: 请 delante del verbo.'}
+    sentence: s.qing-he-kafei
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Tome un café, por favor.»'}
+    answer: {meaning: '«…, por favor» al final es un calco: 请 va delante del verbo.'}
     comments: []
-  - id: x.pattern.xiang-v
-    added: 2026-09-29
+  - id: x.calque.xiang-v
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.xiang-v]
     context: [w.xiang]
-    reveal: [s.wo-xiang-mai-dongxi, s.wo-xiang-qu-shangdian]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: Tener ganas de hacer algo.}
+    sentence: s.wo-xiang-mai-dongxi
+    reveal: [s.wo-xiang-qu-shangdian]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Quiero ir de compras.»'}
+    answer: {meaning: '«Tengo ganas de…»: las ganas son 想 solo, sin 有.'}
     comments: []
-  - id: x.pattern.yao-n
-    added: 2026-09-29
+  - id: x.calque.yao-n
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.yao-n]
     context: [w.yao]
-    reveal: [s.wo-yao-shui, s.wo-yao-niurou]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: Pedir o querer una cosa.}
+    sentence: s.wo-yao-shui
+    reveal: [s.wo-yao-niurou]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Quiero agua.»'}
+    answer: {meaning: '想 delante de un nombre es «echar de menos» (我想你 «te echo de menos»); para pedir una cosa, 要.'}
     comments: []
-  - id: x.pattern.xihuan-v
-    added: 2026-09-29
+  - id: x.calque.xihuan-v
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.xihuan-v]
     context: [w.xihuan]
-    reveal: [s.wo-xihuan-he-kafei, s.wo-xihuan-kan-shu]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: Decir que te gusta hacer algo.}
+    sentence: s.wo-xihuan-he-kafei
+    reveal: [s.wo-xihuan-kan-shu]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Me gusta tomar café.»'}
+    answer: {meaning: 'En español la cosa es el sujeto («me gusta tomar café»); en chino el sujeto es quien disfruta: 我喜欢….'}
     comments: []
-  - id: x.pattern.zai-v
-    added: 2026-09-29
+  - id: x.calque.zai-v
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.zai-v]
     context: [w.zai.progressive]
-    reveal: [s.wo-zai-kan-shu]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: 'Estar haciendo algo ahora: 在 delante del verbo.'}
+    sentence: s.wo-zai-kan-shu
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Estoy leyendo.»'}
+    answer: {meaning: '«Estoy leyendo»: el «estar» de lo que pasa ahora es 在, no 是.'}
     comments: []
-  - id: x.pattern.v-le
-    added: 2026-09-29
+  - id: x.calque.v-le
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.v-le]
     context: [w.le]
-    reveal: [s.wo-zou-le, s.dajia-dou-lai-le]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: 'Algo ya ha pasado o ha cambiado: 了 detrás del verbo.'}
+    sentence: s.wo-zou-le
+    reveal: [s.dajia-dou-lai-le]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Me voy.»'}
+    answer: {meaning: '了 va detrás del verbo (o al final de la frase), nunca delante.'}
     comments: []
-  - id: x.pattern.num-ge-n
-    added: 2026-09-29
+  - id: x.calque.num-ge-n
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.num-ge-n]
     context: [w.ge]
-    reveal: [s.wo-you-san-ge-pengyou, s.tamen-you-liang-ge-haizi]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: 'Contar: número, clasificador y nombre; delante del clasificador, 两 y no 二.'}
+    sentence: s.wo-you-san-ge-pengyou
+    reveal: [s.tamen-you-liang-ge-haizi]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Tengo tres amigos.»'}
+    answer: {meaning: 'Entre el número y la cosa va el clasificador: 三个朋友. Sin él se entiende, pero suena como «tengo tres amigo».'}
     comments: []
-  - id: x.pattern.zai-nar
-    added: 2026-09-29
+  - id: x.calque.zai-nar
+    added: 2026-10-01
     lang: es
     type: pattern
     targets: [st.zai-nar]
-    context: [w.zai.at, w.nar]
-    reveal: [s.shangdian-zai-nar]
-    skills: [production, grammar, speaking]
-    prompt: {text: 'Di una frase con esta estructura, en voz alta.'}
-    answer: {meaning: Preguntar dónde está algo.}
+    context: [w.zai.at, w.nali]
+    sentence: s.shangdian-zai-nar
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «¿Dónde está la tienda?»'}
+    answer: {meaning: '«¿Dónde está la tienda?» con el orden del español: en chino va primero lo que buscas, y 哪里 al final,
+        en el sitio de la respuesta.'}
+    comments: []
+  - id: x.calque.n-he-n
+    added: 2026-10-01
+    lang: es
+    type: pattern
+    targets: [st.n-he-n]
+    context: [w.he.and]
+    sentence: s.wo-xihuan-kafei-he-qiaokeli
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Me gustan el café y el chocolate.»'}
+    answer: {meaning: '和 une nombres, no frases: 我喜欢咖啡和巧克力. Para dos frases o dos adjetivos se usa otra cosa: 他很高，也很帅.'}
     comments: []

@@ -635,3 +635,193 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: El gatito es muy mono.}
     comments: []
+  - id: x.dictation.shuo
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.shuo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shuo1, hanzi: 说, pinyin: shuō, meaning: 'hablar, decir'}
+    comments: []
+  - id: x.produce.shuo
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.shuo]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «hablar, decir»? Escribe el pinyin.'}
+    answer: {typed: shuo1, hanzi: 说, pinyin: shuō, meaning: 'hablar, decir'}
+    comments: []
+  - id: x.read.shuo
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.shuo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 说}
+    answer: {hanzi: 说, pinyin: shuō, meaning: 'hablar, decir'}
+    comments: []
+  - id: x.dictation.zenme
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.zenme]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zen3 me5, hanzi: 怎么, pinyin: zěnme, meaning: cómo}
+    comments: []
+  - id: x.cloze.zenme
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.zenme-shuo
+    gap: w.zenme
+    targets: [w.zenme]
+    context: [w.shuo]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Cómo se dice?»'}
+    answer: {typed: zen3 me5, hanzi: 怎么, pinyin: zěnme, meaning: cómo}
+    comments: []
+  - id: x.read.zenme
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.zenme]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 怎么}
+    answer: {hanzi: 怎么, pinyin: zěnme, meaning: cómo}
+    comments: []
+  - id: x.tones.zenme
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.zenme]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 怎么, pinyin: zen me}
+    answer: {typed: '35', hanzi: 怎么, pinyin: zěnme, meaning: cómo}
+    comments: []
+  - id: x.dictation.neng
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.neng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: neng2, hanzi: 能, pinyin: néng, meaning: poder (ser capaz)}
+    comments: []
+  - id: x.produce.neng
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.neng]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «poder (ser capaz)»? Escribe el pinyin.'}
+    answer: {typed: neng2, hanzi: 能, pinyin: néng, meaning: poder (ser capaz)}
+    comments: []
+  - id: x.read.neng
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.neng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 能}
+    answer: {hanzi: 能, pinyin: néng, meaning: poder (ser capaz)}
+    comments: []
+  - id: x.dictation.he.and
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.he.and]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: he2, hanzi: 和, pinyin: hé, meaning: 'y, con'}
+    comments: []
+  - id: x.cloze.he.and
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.ta-you-erzi-he-nver
+    gap: w.he.and
+    targets: [w.he.and]
+    context: [w.ta.he, w.you.have, w.num.yi, w.ge, w.erzi, w.nver]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Tiene un hijo y una hija.»'}
+    answer: {typed: he2, hanzi: 和, pinyin: hé, meaning: 'y, con'}
+    comments: []
+  - id: x.read.he.and
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.he.and]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 和}
+    answer: {hanzi: 和, pinyin: hé, meaning: 'y, con'}
+    comments: []
+  - id: x.listen.zenme-shuo
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.zenme-shuo
+    targets: [s.zenme-shuo]
+    context: [w.zenme, w.shuo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cómo se dice?'}
+    comments: []
+  - id: x.produce.zenme-shuo
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.zenme-shuo
+    targets: [s.zenme-shuo]
+    context: [w.zenme, w.shuo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cómo se dice?»'}
+    answer: {meaning: '¿Cómo se dice?'}
+    comments: []
+  - id: x.listen.ni-neng-shuo-zhongwen-ma
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ni-neng-shuo-zhongwen-ma
+    targets: [s.ni-neng-shuo-zhongwen-ma]
+    context: [w.ni, w.neng, w.shuo, w.zhongwen, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Puedes hablar chino?'}
+    comments: []
+  - id: x.produce.ni-neng-shuo-zhongwen-ma
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ni-neng-shuo-zhongwen-ma
+    targets: [s.ni-neng-shuo-zhongwen-ma]
+    context: [w.ni, w.neng, w.shuo, w.zhongwen, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Puedes hablar chino?»'}
+    answer: {meaning: '¿Puedes hablar chino?'}
+    comments: []
+  - id: x.listen.ni-shuo-cuo-le
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ni-shuo-cuo-le
+    targets: [s.ni-shuo-cuo-le]
+    context: [w.ni, w.shuo, w.cuo, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Lo has dicho mal.}
+    comments: []
+  - id: x.listen.wo-yao-gongzuo
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-yao-gongzuo
+    targets: [s.wo-yao-gongzuo]
+    context: [w.wo, w.yao, w.gongzuo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo que trabajar.}
+    comments: []

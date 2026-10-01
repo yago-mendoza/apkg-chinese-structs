@@ -83,7 +83,7 @@ exercises:
     type: produce
     targets: [w.dui]
     skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «correcto; sí, eso es»? Escribe el pinyin.'}
+    prompt: {text: 'Alguien dice algo y tiene razón: «Pekín no hace calor, ¿verdad?». ¿Cómo le das la razón? Escribe el pinyin.'}
     answer: {typed: dui4, hanzi: 对, pinyin: duì, meaning: 'correcto; sí, eso es'}
     lang: es
     comments: []
@@ -92,7 +92,7 @@ exercises:
     type: produce
     targets: [e.haode]
     skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «vale, de acuerdo»? Escribe el pinyin.'}
+    prompt: {text: 'Te proponen ir a comer. Aceptas: «vale». Escribe el pinyin.'}
     answer: {typed: hao3 de5, hanzi: 好的, pinyin: hǎo de, meaning: 'vale, de acuerdo'}
     lang: es
     comments: []
@@ -168,7 +168,7 @@ exercises:
     type: produce
     targets: [e.qingwen]
     skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «disculpe (para preguntar)»? Escribe el pinyin.'}
+    prompt: {text: 'Vas por la calle y quieres preguntar a alguien dónde hay un restaurante. ¿Con qué empiezas? Escribe el pinyin.'}
     answer: {typed: qing3 wen4, hanzi: 请问, pinyin: qǐngwèn, meaning: disculpe (para preguntar)}
     comments: []
   - id: x.read.qingwen
@@ -249,7 +249,7 @@ exercises:
     type: produce
     targets: [e.shide]
     skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «sí, eso es»? Escribe el pinyin.'}
+    prompt: {text: 'Te preguntan: «¿Eres estudiante?». Lo confirmas. Escribe el pinyin.'}
     answer: {typed: shi4 de5, hanzi: 是的, pinyin: shì de, meaning: 'sí, eso es'}
     comments: []
   - id: x.read.shide
@@ -367,4 +367,131 @@ exercises:
     prompt: {text: '¿Cómo asientes («mm, sí») mientras alguien te habla? Escribe el pinyin.'}
     answer: {typed: en4, hanzi: 嗯, pinyin: èn, meaning: 'mm, sí (asentimiento)'}
     lang: es
+    comments: []
+  - id: x.dictation.buhaoyisi
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [e.buhaoyisi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bu4 hao3 yi4 si5, hanzi: 不好意思, pinyin: bù hǎoyìsi, meaning: perdona; qué vergüenza; me sabe mal}
+    comments: []
+  - id: x.produce.buhaoyisi
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [e.buhaoyisi]
+    skills: [production, pinyin]
+    prompt: {text: 'Llegas tarde a clase, o tienes que pasar entre la gente en el metro. ¿Qué dices? Escribe el pinyin.'}
+    answer: {typed: bu4 hao3 yi4 si5, hanzi: 不好意思, pinyin: bù hǎoyìsi, meaning: perdona; qué vergüenza; me sabe mal}
+    comments: []
+  - id: x.read.buhaoyisi
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [e.buhaoyisi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 不好意思}
+    answer: {hanzi: 不好意思, pinyin: bù hǎoyìsi, meaning: perdona; qué vergüenza; me sabe mal}
+    comments: []
+  - id: x.tones.buhaoyisi
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [e.buhaoyisi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 不好意思, pinyin: bu hao yi si}
+    answer: {typed: '4345', hanzi: 不好意思, pinyin: bù hǎoyìsi, meaning: perdona; qué vergüenza; me sabe mal}
+    comments: []
+  - id: x.dictation.duibuqi
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.duibuqi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dui4 bu5 qi3, hanzi: 对不起, pinyin: duìbuqǐ, meaning: lo siento}
+    comments: []
+  - id: x.produce.duibuqi
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.duibuqi]
+    skills: [production, pinyin]
+    prompt: {text: 'Has roto algo de un amigo, o te has equivocado de verdad. ¿Qué le dices? Escribe el pinyin.'}
+    answer: {typed: dui4 bu5 qi3, hanzi: 对不起, pinyin: duìbuqǐ, meaning: lo siento}
+    comments: []
+  - id: x.read.duibuqi
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.duibuqi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 对不起}
+    answer: {hanzi: 对不起, pinyin: duìbuqǐ, meaning: lo siento}
+    comments: []
+  - id: x.tones.duibuqi
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.duibuqi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 对不起, pinyin: dui bu qi}
+    answer: {typed: '453', hanzi: 对不起, pinyin: duìbuqǐ, meaning: lo siento}
+    comments: []
+  - id: x.listen.buhaoyisi-wo-lai-wan-le
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.buhaoyisi-wo-lai-wan-le
+    targets: [s.buhaoyisi-wo-lai-wan-le]
+    context: [e.buhaoyisi, w.wo, w.lai, w.wan, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Perdona, he llegado tarde.'}
+    comments: []
+  - id: x.produce.buhaoyisi-wo-lai-wan-le
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.buhaoyisi-wo-lai-wan-le
+    targets: [s.buhaoyisi-wo-lai-wan-le]
+    context: [e.buhaoyisi, w.wo, w.lai, w.wan, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Perdona, he llegado tarde.»'}
+    answer: {meaning: 'Perdona, he llegado tarde.'}
+    comments: []
+  - id: x.listen.duibuqi-wo-cuo-le
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.duibuqi-wo-cuo-le
+    targets: [s.duibuqi-wo-cuo-le]
+    context: [w.duibuqi, w.wo, w.cuo, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Lo siento, me he equivocado.'}
+    comments: []
+  - id: x.produce.duibuqi-wo-cuo-le
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.duibuqi-wo-cuo-le
+    targets: [s.duibuqi-wo-cuo-le]
+    context: [w.duibuqi, w.wo, w.cuo, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Lo siento, me he equivocado.»'}
+    answer: {meaning: 'Lo siento, me he equivocado.'}
+    comments: []
+  - id: x.nuance.keyi-neng
+    added: 2026-10-01
+    lang: es
+    type: nuance
+    targets: [w.keyi, w.neng]
+    skills: [comprehension, discrimination]
+    prompt: {text: '可以 y 能: los dos son «poder». ¿Cuál es permiso y cuál capacidad?'}
+    answer: {meaning: '可以: está permitido o vale (我可以喝水吗？ «¿puedo beber agua?»; 可以。 «vale»). 能: eres capaz o las circunstancias lo permiten (你能说中文吗？ «¿puedes hablar chino?»).'}
     comments: []

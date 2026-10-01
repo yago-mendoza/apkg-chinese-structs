@@ -420,3 +420,153 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Tienen dos hijos.}
     comments: []
+  - id: x.dictation.meiyou
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.meiyou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mei2 you3, hanzi: 没有, pinyin: méiyǒu, meaning: no tener; no haber}
+    comments: []
+  - id: x.produce.meiyou
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.meiyou]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «no tener; no haber»? Escribe el pinyin.'}
+    answer: {typed: mei2 you3, hanzi: 没有, pinyin: méiyǒu, meaning: no tener; no haber}
+    comments: []
+  - id: x.read.meiyou
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.meiyou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 没有}
+    answer: {hanzi: 没有, pinyin: méiyǒu, meaning: no tener; no haber}
+    comments: []
+  - id: x.dictation.ji
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.ji]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ji3, hanzi: 几, pinyin: jǐ, meaning: cuántos (pocos)}
+    comments: []
+  - id: x.cloze.ji
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.ji-ge-ren
+    gap: w.ji
+    targets: [w.ji]
+    context: [w.ge, w.ren]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Cuántas personas? (en un restaurante)»'}
+    answer: {typed: ji3, hanzi: 几, pinyin: jǐ, meaning: cuántos (pocos)}
+    comments: []
+  - id: x.read.ji
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.ji]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 几}
+    answer: {hanzi: 几, pinyin: jǐ, meaning: cuántos (pocos)}
+    comments: []
+  - id: x.dictation.sui
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.sui]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: sui4, hanzi: 岁, pinyin: suì, meaning: años (de edad)}
+    comments: []
+  - id: x.produce.sui
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.sui]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «años (de edad)»? Escribe el pinyin.'}
+    answer: {typed: sui4, hanzi: 岁, pinyin: suì, meaning: años (de edad)}
+    comments: []
+  - id: x.read.sui
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.sui]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 岁}
+    answer: {hanzi: 岁, pinyin: suì, meaning: años (de edad)}
+    comments: []
+  - id: x.listen.wo-meiyou-qian
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-meiyou-qian
+    targets: [s.wo-meiyou-qian]
+    context: [w.wo, w.meiyou, w.qian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No tengo dinero.}
+    comments: []
+  - id: x.produce.wo-meiyou-qian
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.wo-meiyou-qian
+    targets: [s.wo-meiyou-qian]
+    context: [w.wo, w.meiyou, w.qian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No tengo dinero.»'}
+    answer: {meaning: No tengo dinero.}
+    comments: []
+  - id: x.listen.ni-ji-sui
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ni-ji-sui
+    targets: [s.ni-ji-sui]
+    context: [w.ni, w.ji, w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuántos años tienes? (a un niño)'}
+    comments: []
+  - id: x.produce.ni-ji-sui
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ni-ji-sui
+    targets: [s.ni-ji-sui]
+    context: [w.ni, w.ji, w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años tienes? (a un niño)»'}
+    answer: {meaning: '¿Cuántos años tienes? (a un niño)'}
+    comments: []
+  - id: x.listen.ji-ge-ren
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ji-ge-ren
+    targets: [s.ji-ge-ren]
+    context: [w.ji, w.ge, w.ren]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuántas personas? (en un restaurante)'}
+    comments: []
+  - id: x.produce.ji-ge-ren
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ji-ge-ren
+    targets: [s.ji-ge-ren]
+    context: [w.ji, w.ge, w.ren]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántas personas? (en un restaurante)»'}
+    answer: {meaning: '¿Cuántas personas? (en un restaurante)'}
+    comments: []

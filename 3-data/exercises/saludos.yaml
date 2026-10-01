@@ -372,3 +372,84 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¡Bienvenido!»'}
     answer: {meaning: ¡Bienvenido!}
     comments: []
+  - id: x.dictation.zenmeyang
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.zenmeyang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zen3 me5 yang4, hanzi: 怎么样, pinyin: zěnmeyàng, meaning: '¿qué tal?; ¿cómo?'}
+    comments: []
+  - id: x.produce.zenmeyang
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.zenmeyang]
+    skills: [production, pinyin]
+    prompt: {text: 'Ves a un amigo y le preguntas, con naturalidad, «¿qué tal?». Escribe el pinyin.'}
+    answer: {typed: zen3 me5 yang4, hanzi: 怎么样, pinyin: zěnmeyàng, meaning: '¿qué tal?; ¿cómo?'}
+    comments: []
+  - id: x.read.zenmeyang
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.zenmeyang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 怎么样}
+    answer: {hanzi: 怎么样, pinyin: zěnmeyàng, meaning: '¿qué tal?; ¿cómo?'}
+    comments: []
+  - id: x.tones.zenmeyang
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.zenmeyang]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 怎么样, pinyin: zen me yang}
+    answer: {typed: '354', hanzi: 怎么样, pinyin: zěnmeyàng, meaning: '¿qué tal?; ¿cómo?'}
+    comments: []
+  - id: x.listen.ni-zenmeyang
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ni-zenmeyang
+    targets: [s.ni-zenmeyang]
+    context: [w.ni, w.zenmeyang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Qué tal estás?'}
+    comments: []
+  - id: x.produce.ni-zenmeyang
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ni-zenmeyang
+    targets: [s.ni-zenmeyang]
+    context: [w.ni, w.zenmeyang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué tal estás?»'}
+    answer: {meaning: '¿Qué tal estás?'}
+    comments: []
+  - id: x.listen.chifan-le-ma
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.chifan-le-ma
+    targets: [s.chifan-le-ma]
+    context: [w.chifan, w.le, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Has comido? (como saludo)'}
+    comments: []
+  - id: x.produce.chifan-le-ma
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.chifan-le-ma
+    targets: [s.chifan-le-ma]
+    context: [w.chifan, w.le, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Has comido? (como saludo)»'}
+    answer: {meaning: '¿Has comido? (como saludo)'}
+    comments: []

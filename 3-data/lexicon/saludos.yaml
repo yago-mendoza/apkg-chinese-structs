@@ -115,3 +115,13 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '迎 es salir al encuentro de alguien con una sonrisa; con 欢 «alegría»: recibir con alegría.'}
+  - id: w.zenmeyang
+    use: say
+    role: content
+    kind: word
+    hanzi: 怎么样
+    pinyin: zěnmeyàng
+    meaning: {es: '¿qué tal?; ¿cómo?', en: 'how is it?, how about'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '你好吗？ es correcto, pero de libro; para preguntar cómo está alguien suena más natural 你怎么样？. También pide opinión: 这个怎么样？ «¿qué tal este?».'}

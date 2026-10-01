@@ -546,3 +546,55 @@ exercises:
         门 le presta el sonido.'}
     lang: es
     comments: []
+  - id: x.read.shei
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.shei]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 谁}
+    answer: {hanzi: 谁, pinyin: shéi, meaning: quién}
+    comments: []
+  - id: x.listen.ta-shi-shei
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ta-shi-shei
+    targets: [s.ta-shi-shei]
+    context: [w.ta.he, w.shi, w.shei]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Quién es él?'}
+    comments: []
+  - id: x.produce.ta-shi-shei
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ta-shi-shei
+    targets: [s.ta-shi-shei]
+    context: [w.ta.he, w.shi, w.shei]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Quién es él?»'}
+    answer: {meaning: '¿Quién es él?'}
+    comments: []
+  - id: x.dictation.shei
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.shei]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shei2, hanzi: 谁, pinyin: shéi, meaning: quién}
+    comments: []
+  - id: x.cloze.shei
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.ta-shi-shei
+    gap: w.shei
+    targets: [w.shei]
+    context: [w.ta.he, w.shi]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Quién es él?»'}
+    answer: {typed: shei2, hanzi: 谁, pinyin: shéi, meaning: quién}
+    comments: []

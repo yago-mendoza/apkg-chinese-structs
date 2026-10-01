@@ -84,7 +84,8 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.nar
-    use: say
+    use: hear
+    use_reason: 'variante del norte de 哪里: se entiende, pero en las tarjetas se dice 哪里 (YAGO, 2026-10-01)'
     role: function
     kind: word
     hanzi: 哪儿
@@ -168,6 +169,9 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: 'Unas manos que sujetan a una mujer por la cintura: desear.', original: originalmente unas manos sujetaban a una mujer por la cintura; de ahí pasó a idea de desear / querer.}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'El carácter antiguo dibujaba una figura con las manos en la cintura: 要 era «cintura», que después pasó a escribirse 腰 yāo [HSK 4].'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Además de «querer», 要 es «tener que» (我要工作 «tengo que trabajar») y «estar a punto de» (要下雨了 «va a llover»). Necesitar en sentido estricto es 需要.'}
+      - {kind: note, private: false, date: '2026-10-01', text: 'No lo confundas con 有 yǒu «tener»: 要 yào cae (cuarto tono) y 有 yǒu baja y sube (tercero). Y se niegan distinto: 不要 «no quiero», 没有 «no tengo».', original: 'Queerer yào Y tener yôu Ponlos cerca de slguns forma que contrasten porwue los lio peinso siempre wue son los dos _O_ you you'}
   - id: w.xuyao
     use: hear
     role: content
@@ -183,10 +187,11 @@ entries:
     kind: group
     basis: set
     title: 'Querer, gustar, amar'
-    explanation: Cuatro verbos que en español se cruzan. Cada uno pide un tipo de frase distinto.
+    explanation: Verbos que en español se cruzan. Cada uno pide un tipo de frase distinto.
     members:
       - {ref: w.xiang, cue: 'ganas de hacer algo: 我想喝水 (también «pensar»)'}
-      - {ref: w.yao, cue: 'lo quiero, me hace falta: 我要水'}
+      - {ref: w.yao, cue: 'lo quiero, dame, tengo que: 我要水'}
+      - {ref: w.xiangyao, cue: 'me gustaría tenerlo: 我想要这个'}
       - {ref: w.xihuan, cue: 'me gusta, en general: 我喜欢咖啡'}
       - {ref: w.ai.love, cue: 'amo: 我爱你'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
@@ -230,7 +235,148 @@ entries:
     kind: word
     hanzi: 大小
     pinyin: dàxiǎo
-    meaning: {es: 'tamaño, talla', en: size}
+    meaning: {es: tamaño, en: size}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-09-27', text: Grande + pequeño = el tamaño. Útil en tiendas de ropa.}
+      - {kind: linguistic, private: false, date: '2026-09-27', text: Grande + pequeño = el tamaño.}
+      - {kind: note, private: false, date: '2026-10-01', text: '大小 es el tamaño de cualquier cosa; la talla de la ropa es otra palabra, 尺码 chǐmǎ, de tienda y fuera de la lista del HSK.', original: 'Y tamaño != talla, asi que corrige eso que aho usamos tamaño no talla'}
+  - id: w.chi
+    use: say
+    role: content
+    kind: word
+    hanzi: 吃
+    pinyin: chī
+    meaning: {es: comer, en: to eat}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '口 «boca» a la izquierda, como en 喝, 吗 y 叫: lo que se hace con la boca.'}
+  - id: w.fan
+    use: hear
+    role: content
+    kind: word
+    hanzi: 饭
+    pinyin: fàn
+    meaning: {es: 'comida; arroz cocido', en: 'meal; cooked rice'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '饣 es 食 shí «comer, alimento» en su forma de lado; 反 fǎn da el sonido.'}
+      - {kind: mnemonic, private: false, date: '2026-10-01', text: 'El radical de la comida y una mano (又, dentro de 反) que la lleva a la boca.', original: 'Comer = radicla comida + manos'}
+      - {kind: note, private: false, date: '2026-10-01', text: 'Para decir «comer» lo normal es 吃饭; 饭 suelto es «la comida» o «el arroz».', original: 'Pero chifan muchisimo mas "comer"'}
+  - id: w.chifan
+    use: say
+    role: content
+    kind: word
+    hanzi: 吃饭
+    pinyin: chīfàn
+    meaning: {es: comer (una comida), en: to eat (a meal)}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Verbo y objeto, «comer comida»: es la forma normal de decir «comer» cuando no dices qué. 吃饭了吗？ es también un saludo.'}
+  - id: w.fandian
+    use: say
+    role: content
+    kind: word
+    hanzi: 饭店
+    pinyin: fàndiàn
+    meaning: {es: restaurante, en: restaurant}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '饭 «comida» + 店 «local»: el local de comida. En nombres propios suele ser un hotel (北京饭店); «restaurante» también se dice 餐厅 cāntīng [HSK 5].'}
+  - id: w.shudian
+    use: hear
+    role: content
+    kind: word
+    hanzi: 书店
+    pinyin: shūdiàn
+    meaning: {es: librería, en: bookshop}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+    comments: []
+  - id: w.dian
+    use: hear
+    role: content
+    kind: word
+    hanzi: 店
+    pinyin: diàn
+    meaning: {es: 'tienda, local', en: 'shop, store'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '广 es un tejado con una pared, un edificio abierto, y 占 zhàn da el sonido.'}
+      - {kind: mnemonic, private: false, date: '2026-10-01', text: 'Dentro del edificio 广, un espacio ocupado (占 también es «ocupar»): el local.', original: 'Y diàn = edificio cubieto. Y lo de dentro es "ocupado". Zona ocupada dentro sfificio. Local tienda'}
+  - id: g.dian-places
+    kind: group
+    basis: set
+    title: '店: los locales'
+    explanation: 'Lo que se vende + 店 «local». Igual 药店 yàodiàn «farmacia» [HSK 2], con 药 «medicina».'
+    members:
+      - {ref: w.shangdian, cue: '商 comercio: la tienda'}
+      - {ref: w.fandian, cue: '饭 comida: el restaurante'}
+      - {ref: w.shudian, cue: '书 libro: la librería'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+    comments: []
+  - id: w.qian
+    use: say
+    role: content
+    kind: word
+    hanzi: 钱
+    pinyin: qián
+    meaning: {es: dinero, en: money}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '钅 «metal» a la izquierda: el dinero era de metal.'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Va sin clasificador cuando es dinero en general (这是钱, 我没有钱); al contar, con 块: 十块钱.'}
+  - id: w.duoshao
+    use: say
+    role: function
+    kind: word
+    hanzi: 多少
+    pinyin: duōshao
+    meaning: {es: 'cuánto, cuántos', en: 'how much, how many'}
+    accept_pinyin_mismatch: 'segunda sílaba átona en el habla: duōshao'
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '多 «mucho» + 少 «poco»: ¿cuánto? Para cantidades abiertas; para pocas, 几.'}
+  - id: e.duoshaoqian
+    use: say
+    role: content
+    kind: expression
+    hanzi: 多少钱
+    pinyin: duōshao qián
+    meaning: {es: '¿cuánto cuesta?', en: 'how much is it?'}
+    level: 1
+    level_reason: 'pregunta de tienda básica; 多少 y 钱 son HSK 1'
+    accept_pinyin_mismatch: 'segunda sílaba de 多少 átona en el habla'
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+    comments: []
+  - id: w.kuai
+    use: say
+    role: function
+    kind: word
+    hanzi: 块
+    pinyin: kuài
+    meaning: {es: 'yuan (al hablar)', en: 'yuan (spoken)'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '块 es como se dice 元 yuán [HSK 1] al hablar: 十块钱 «diez yuanes».'}
+  - id: w.xiangyao
+    use: say
+    role: content
+    kind: word
+    pos: verbo
+    hanzi: 想要
+    pinyin: xiǎngyào
+    meaning: {es: 'querer (tener algo), desear', en: 'to want (to have)'}
+    level: 2
+    level_reason: 'no está en la lista; 想 y 要 son HSK 1 y se usa a diario'
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Entre 想 y 要: 我想要这个 «me gustaría este», más suave que 我要这个 «quiero este, dame este».'}
+  - id: w.nali
+    use: say
+    role: function
+    kind: word
+    hanzi: 哪里
+    pinyin: nǎlǐ
+    meaning: {es: dónde, en: where}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '哪儿 nǎr dice lo mismo, pero es del norte, sobre todo de Pekín. 哪里 se dice en toda China.'}

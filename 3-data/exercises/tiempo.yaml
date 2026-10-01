@@ -240,8 +240,44 @@ exercises:
     type: listen
     sentence: s.zhongwu-ni-qu-nar
     targets: [s.zhongwu-ni-qu-nar]
-    context: [w.zhongwu, w.ni, w.qu, w.nar]
+    context: [w.zhongwu, w.ni, w.qu, w.nali]
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: '¿Adónde vas a mediodía?'}
+    comments: []
+  - id: x.dictation.wan
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.wan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wan3, hanzi: 晚, pinyin: wǎn, meaning: tarde}
+    comments: []
+  - id: x.read.wan
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.wan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 晚}
+    answer: {hanzi: 晚, pinyin: wǎn, meaning: tarde}
+    comments: []
+  - id: x.dictation.nian
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.nian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nian2, hanzi: 年, pinyin: nián, meaning: año}
+    comments: []
+  - id: x.read.nian
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.nian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 年}
+    answer: {hanzi: 年, pinyin: nián, meaning: año}
     comments: []

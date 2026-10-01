@@ -88,3 +88,24 @@ entries:
     relations: [w.xiawu]
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
+  - id: w.wan
+    use: hear
+    role: content
+    kind: word
+    hanzi: 晚
+    pinyin: wǎn
+    meaning: {es: tarde, en: late}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '晚上 es «la noche»; 晚 suelto es «tarde»: 我来晚了 «he llegado tarde».'}
+  - id: w.nian
+    use: hear
+    role: content
+    kind: word
+    hanzi: 年
+    pinyin: nián
+    meaning: {es: año, en: year}
+    source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27', rescued: 003-2026-10-01-comer-dinero-y-contrastes}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '午 wǔ «mediodía», 牛 niú «vaca» y 年 nián «año» se parecen mucho y no suenan igual.'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Como 天, ya es una unidad y va sin clasificador: 两年 «dos años», 三天 «tres días».'}

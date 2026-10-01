@@ -54,3 +54,12 @@ sentences:
       - {text: ？}
     translation: {es: '¿Llueve en Pekín?', en: 'Is it raining in Beijing?'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.yao-xiayu-le
+    use: hear
+    segments:
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 下雨, ref: w.xiayu, pinyin: xiàyǔ}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: 'Va a llover.', en: 'It''s going to rain.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}

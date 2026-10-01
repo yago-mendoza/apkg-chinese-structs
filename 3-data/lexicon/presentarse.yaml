@@ -124,7 +124,8 @@ entries:
     pinyin: jiào
     meaning: {es: llamarse, en: to be called}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
-    comments: []
+    comments:
+      - {kind: teacher, private: false, date: '2026-10-01', text: 'Para confirmar si alguien es una persona se pregunta 你是张丽吗？, no 你叫张丽吗？.'}
   - id: w.shenme
     use: say
     role: function
@@ -133,7 +134,8 @@ entries:
     pinyin: shénme
     meaning: {es: qué, en: what}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '什么 va donde iría la respuesta, sin cambiar el orden: 他叫什么名字？ o 他的名字是什么？ (la primera es la más corriente).'}
   - id: w.mingzi
     use: say
     role: content
@@ -188,6 +190,7 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
     comments:
       - {kind: teacher, private: false, date: '2026-09-29', text: 您贵姓？ es la forma respetuosa de 你姓什么？ Se contesta con el apellido o con el nombre completo., original: nin gui xing -> wo jiao bai da long}
+      - {kind: teacher, private: false, date: '2026-10-01', text: '您贵姓？ es para situaciones formales, como el trabajo o los negocios. Sabiendo el apellido, se le llama con 先生 (白先生，您好) y no por el nombre completo.'}
   - id: w.xingming
     use: hear
     role: content
@@ -278,3 +281,15 @@ entries:
     level_reason: nombre propio de ejemplo en la primera lección
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments: []
+  - id: w.xiansheng
+    use: say
+    role: content
+    kind: word
+    hanzi: 先生
+    pinyin: xiānsheng
+    meaning: {es: 'señor (tras el apellido)', en: 'Mr.'}
+    accept_pinyin_mismatch: 'segunda sílaba átona en el habla: xiānsheng'
+    source: {origin: class-audio, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: grabación de la clase, date: '2026-09-29'}
+    comments:
+      - {kind: teacher, private: false, date: '2026-10-01', text: 'Detrás del apellido: 白先生 «el señor Bai». Es como se llama a alguien en un trato formal; no por el nombre completo.'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '先 «antes» + 生 «nacer»: el que nació antes. Ojo: la segunda sílaba se dice átona, xiānsheng.'}

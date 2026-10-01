@@ -21,18 +21,22 @@
 - ✅🃏 工作 gōngzuò [kʊŋ˥ tswɔ˥˩] · trabajo; trabajar · _verbo_ · 工 gōng es el de 工程师. 恭 gōng «respetuoso» suena igual y es otro carácter.
 - ✅🃏 走 zǒu [tsoʊ˧˩˧] · irse; andar · _verbo_
 - ✅🃏 了 le [lɤ] · partícula: algo ya pasó o ha cambiado · _partícula_ · Al final de la frase marca un cambio o algo ya ocurrido: 我走了 «me voy», 下雨了 «se ha puesto a llover», 我错了 «me equivoqué».
-- ✅🃏 错 cuò [tsʰwɔ˥˩] · equivocado; error · _adjetivo_ · 错误 cuòwù «error» [HSK 3] y 误会 wùhuì «malentendido» [HSK 4] son más formales; hablando basta 错.
+- ✅🃏 错 cuò [tsʰwɔ˥˩] · equivocado; error · _adjetivo_ · 错误 cuòwù «error» [HSK 3] y 误会 wùhuì «malentendido» [HSK 4] son más formales; hablando basta 错. · cuò: la u apenas suena, se desliza hacia la o. · Estar equivocado: 我错了 «me he equivocado» (también vale para «he cometido un error»), 你错了 «te equivocas». Detrás de un verbo, «mal»: 你说错了 «lo has dicho mal». 不错 bú cuò [HSK 2] es un elogio, «no está mal, bastante bien».
 - ✅🃏 篮球 lánqiú [lan˧˥ tɕʰjoʊ˧˥] · baloncesto · _sustantivo_
 - ✅🃏 打 dǎ [ta˧˩˧] · jugar (a deportes de pelota); golpear · _verbo_ · 打 + deporte de pelota: 打篮球 «jugar al baloncesto». Lleva 扌 «mano».
 - 🟡🃏 出口 chūkǒu [ʈʂʰu˥ kʰoʊ˧˩˧] · salida · _sustantivo_ · 出 chū «salir»: una planta que sale de un tiesto. 出口 y 入口 son la pareja de los carteles.
 - ✅🃏 软件 ruǎnjiàn [ʐwan˧˩˧ tɕjɛn˥˩] · software · _sustantivo_ · Calco: 软 «blando» + 件 «pieza», frente a 硬件 yìngjiàn «hardware», las piezas duras.
+- ✅🃏 说 shuō [ʂwɔ˥] · hablar, decir · _verbo_ · 讠 «palabra» a la izquierda, como en 请 y en 认识.
+- ✅🃏 怎么 zěnme [tsən˧˩˧ mɤ] · cómo · _interrogativo_ · 怎么 + verbo pregunta la manera: 怎么说？ «¿cómo se dice?», 怎么吃？ «¿cómo se come?».
+- ✅🃏 能 néng [nɤŋ˧˥] · poder (ser capaz) · _verbo_ · 能 es poder porque eres capaz o porque las circunstancias lo permiten: 你能说中文吗？ 可以 es poder porque está permitido o porque algo vale.
+- ✅🃏 和 hé [xɤ˧˥] · y, con · _conjunción_ · 和 solo une nombres: 咖啡和巧克力, 我和你. Dos frases o dos adjetivos no se unen con 和: 他很高，也很帅. · 禾 hé «cereal» da el sonido y 口 «boca» aporta el sentido. El sentido antiguo es «armonía, concordia»; de dos cosas que armonizan pasó a unir: A 和 B. · El cereal 禾 llega a la boca 口: comida compartida, armonía, estar juntos.
 
-## 那 y 哪儿
+## 那 y 哪里
 
 Mismo carácter; la boca 口 lo convierte en pregunta.
 
 - 那 nà · sin boca: nà, eso
-- 哪儿 nǎr · con boca: nǎr, ¿dónde?
+- 哪里 nǎlǐ · con boca: nǎ, ¿dónde? (哪里)
 
 ## 门 da el sonido
 
@@ -58,3 +62,7 @@ Los dos carteles: entrar y salir por la boca 口 de un lugar.
 - ✅🃏 我走了。 · wǒ zǒu le · Me voy.
 - ✅🃏 我错了。 · wǒ cuò le · Me he equivocado.
 - ✅🃏 小猫很可爱。 · xiǎomāo hěn kě'ài · El gatito es muy mono.
+- ✅🃏 怎么说？ · zěnme shuō · ¿Cómo se dice?
+- ✅🃏 你能说中文吗？ · nǐ néng shuō Zhōngwén ma · ¿Puedes hablar chino?
+- ✅🃏 你说错了。 · nǐ shuō cuò le · Lo has dicho mal.
+- ✅🃏 我要工作。 · wǒ yào gōngzuò · Tengo que trabajar.

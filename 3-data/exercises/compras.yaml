@@ -102,7 +102,6 @@ exercises:
     skills: [reading, pinyin, tones]
     prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 哪儿}
     answer: {typed: nar3, hanzi: 哪儿, pinyin: nǎr, meaning: dónde}
-    reveal: [s.shangdian-zai-nar]
     lang: es
     comments: []
   - id: x.read.kafei
@@ -240,7 +239,7 @@ exercises:
     type: listen
     sentence: s.shangdian-zai-nar
     targets: [s.shangdian-zai-nar]
-    context: [w.shangdian, w.zai.at, w.nar]
+    context: [w.shangdian, w.zai.at, w.nali]
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: '¿Dónde está la tienda?'}
@@ -273,7 +272,7 @@ exercises:
     type: produce
     sentence: s.shangdian-zai-nar
     targets: [s.shangdian-zai-nar]
-    context: [w.shangdian, w.zai.at, w.nar]
+    context: [w.shangdian, w.zai.at, w.nali]
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde está la tienda?»'}
     answer: {meaning: '¿Dónde está la tienda?'}
@@ -332,22 +331,10 @@ exercises:
     sentence: s.shangdian-zai-nar
     gap: w.zai.at
     targets: [w.zai.at]
-    context: [w.shangdian, w.nar]
+    context: [w.shangdian, w.nali]
     skills: [production, pinyin]
     prompt: {text: 'Completa en pinyin: «¿Dónde está la tienda?»'}
     answer: {typed: zai4, hanzi: 在, pinyin: zài, meaning: estar en (un lugar)}
-    lang: es
-    comments: []
-  - id: x.cloze.nar
-    added: 2026-09-26
-    type: cloze
-    sentence: s.zhongwu-ni-qu-nar
-    gap: w.nar
-    targets: [w.nar]
-    context: [w.zhongwu, w.ni, w.qu]
-    skills: [production, pinyin]
-    prompt: {text: 'Completa en pinyin: «¿Adónde vas a mediodía?»'}
-    answer: {typed: nar3, hanzi: 哪儿, pinyin: nǎr, meaning: dónde}
     lang: es
     comments: []
   - id: x.produce.kafei
@@ -432,16 +419,6 @@ exercises:
     skills: [listening, pinyin, tones]
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: niu2 rou4, hanzi: 牛肉, pinyin: niúròu, meaning: carne de ternera}
-    comments: []
-  - id: x.contrast.nar
-    added: 2026-09-29
-    lang: es
-    type: contrast
-    group: g.na-nar
-    targets: [w.nar]
-    skills: [reading, discrimination]
-    prompt: {text: '¿Cuál es nǎr, «dónde»?'}
-    answer: {hanzi: 哪儿, pinyin: nǎr, meaning: dónde}
     comments: []
   - id: x.dictation.xihuan
     added: 2026-09-29
@@ -659,7 +636,7 @@ exercises:
     targets: [w.daxiao]
     skills: [listening, pinyin, tones]
     prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: da4 xiao3, hanzi: 大小, pinyin: dàxiǎo, meaning: 'tamaño, talla'}
+    answer: {typed: da4 xiao3, hanzi: 大小, pinyin: dàxiǎo, meaning: tamaño}
     comments: []
   - id: x.read.daxiao
     added: 2026-09-29
@@ -668,7 +645,7 @@ exercises:
     targets: [w.daxiao]
     skills: [reading, pinyin]
     prompt: {text: 'Lee: pinyin y significado.', hanzi: 大小}
-    answer: {hanzi: 大小, pinyin: dàxiǎo, meaning: 'tamaño, talla'}
+    answer: {hanzi: 大小, pinyin: dàxiǎo, meaning: tamaño}
     comments: []
   - id: x.listen.wo-xihuan-he-kafei
     added: 2026-09-29
@@ -855,7 +832,7 @@ exercises:
     context: [w.zhe, w.ge, w.daxiao, w.keyi, w.ma]
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Te va bien esta talla?'}
+    answer: {meaning: '¿Este tamaño está bien?'}
     comments: []
   - id: x.listen.nide-aihao-shi-shenme
     added: 2026-09-29
@@ -928,4 +905,587 @@ exercises:
     prompt: {text: '咖啡 y 软件: ¿cuál imita el sonido y cuál traduce las piezas?'}
     answer: {meaning: '咖啡 kāfēi imita «coffee»: préstamo fonético. 软件 ruǎnjiàn traduce las piezas, «blando» + «pieza»: calco.'}
     lang: es
+    comments: []
+  - id: x.dictation.chi
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.chi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chi1, hanzi: 吃, pinyin: chī, meaning: comer}
+    comments: []
+  - id: x.produce.chi
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.chi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «comer»? Escribe el pinyin.'}
+    answer: {typed: chi1, hanzi: 吃, pinyin: chī, meaning: comer}
+    comments: []
+  - id: x.read.chi
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.chi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 吃}
+    answer: {hanzi: 吃, pinyin: chī, meaning: comer}
+    comments: []
+  - id: x.dictation.fan
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.fan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fan4, hanzi: 饭, pinyin: fàn, meaning: comida; arroz cocido}
+    comments: []
+  - id: x.read.fan
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.fan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 饭}
+    answer: {hanzi: 饭, pinyin: fàn, meaning: comida; arroz cocido}
+    comments: []
+  - id: x.dictation.chifan
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.chifan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chi1 fan4, hanzi: 吃饭, pinyin: chīfàn, meaning: comer (una comida)}
+    comments: []
+  - id: x.produce.chifan
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.chifan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «comer (una comida)»? Escribe el pinyin.'}
+    answer: {typed: chi1 fan4, hanzi: 吃饭, pinyin: chīfàn, meaning: comer (una comida)}
+    comments: []
+  - id: x.read.chifan
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.chifan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 吃饭}
+    answer: {hanzi: 吃饭, pinyin: chīfàn, meaning: comer (una comida)}
+    comments: []
+  - id: x.dictation.fandian
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.fandian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fan4 dian4, hanzi: 饭店, pinyin: fàndiàn, meaning: restaurante}
+    comments: []
+  - id: x.produce.fandian
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.fandian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «restaurante»? Escribe el pinyin.'}
+    answer: {typed: fan4 dian4, hanzi: 饭店, pinyin: fàndiàn, meaning: restaurante}
+    comments: []
+  - id: x.read.fandian
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.fandian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 饭店}
+    answer: {hanzi: 饭店, pinyin: fàndiàn, meaning: restaurante}
+    comments: []
+  - id: x.dictation.shudian
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.shudian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shu1 dian4, hanzi: 书店, pinyin: shūdiàn, meaning: librería}
+    comments: []
+  - id: x.read.shudian
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.shudian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 书店}
+    answer: {hanzi: 书店, pinyin: shūdiàn, meaning: librería}
+    comments: []
+  - id: x.dictation.dian
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.dian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dian4, hanzi: 店, pinyin: diàn, meaning: 'tienda, local'}
+    comments: []
+  - id: x.read.dian
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.dian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 店}
+    answer: {hanzi: 店, pinyin: diàn, meaning: 'tienda, local'}
+    comments: []
+  - id: x.dictation.qian
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.qian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: qian2, hanzi: 钱, pinyin: qián, meaning: dinero}
+    comments: []
+  - id: x.produce.qian
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.qian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «dinero»? Escribe el pinyin.'}
+    answer: {typed: qian2, hanzi: 钱, pinyin: qián, meaning: dinero}
+    comments: []
+  - id: x.read.qian
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.qian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 钱}
+    answer: {hanzi: 钱, pinyin: qián, meaning: dinero}
+    comments: []
+  - id: x.dictation.duoshao
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.duoshao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: duo1 shao5, hanzi: 多少, pinyin: duōshao, meaning: 'cuánto, cuántos'}
+    comments: []
+  - id: x.cloze.duoshao
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.ni-you-duoshao-qian
+    gap: w.duoshao
+    targets: [w.duoshao]
+    context: [w.ni, w.you.have, w.qian]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Cuánto dinero tienes?»'}
+    answer: {typed: duo1 shao5, hanzi: 多少, pinyin: duōshao, meaning: 'cuánto, cuántos'}
+    comments: []
+  - id: x.read.duoshao
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.duoshao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 多少}
+    answer: {hanzi: 多少, pinyin: duōshao, meaning: 'cuánto, cuántos'}
+    comments: []
+  - id: x.tones.duoshao
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.duoshao]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 多少, pinyin: duo shao}
+    answer: {typed: '15', hanzi: 多少, pinyin: duōshao, meaning: 'cuánto, cuántos'}
+    comments: []
+  - id: x.dictation.duoshaoqian
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [e.duoshaoqian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: duo1 shao5 qian2, hanzi: 多少钱, pinyin: duōshao qián, meaning: '¿cuánto cuesta?'}
+    comments: []
+  - id: x.produce.duoshaoqian
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [e.duoshaoqian]
+    skills: [production, pinyin]
+    prompt: {text: 'En una tienda, ¿cómo preguntas «¿cuánto cuesta?»? Escribe el pinyin.'}
+    answer: {typed: duo1 shao5 qian2, hanzi: 多少钱, pinyin: duōshao qián, meaning: '¿cuánto cuesta?'}
+    comments: []
+  - id: x.read.duoshaoqian
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [e.duoshaoqian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 多少钱}
+    answer: {hanzi: 多少钱, pinyin: duōshao qián, meaning: '¿cuánto cuesta?'}
+    comments: []
+  - id: x.tones.duoshaoqian
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [e.duoshaoqian]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 多少钱, pinyin: duo shao qian}
+    answer: {typed: '152', hanzi: 多少钱, pinyin: duōshao qián, meaning: '¿cuánto cuesta?'}
+    comments: []
+  - id: x.dictation.kuai
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.kuai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kuai4, hanzi: 块, pinyin: kuài, meaning: yuan (al hablar)}
+    comments: []
+  - id: x.cloze.kuai
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.shi-kuai-qian
+    gap: w.kuai
+    targets: [w.kuai]
+    context: [w.num.shi, w.qian]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Diez yuanes.»'}
+    answer: {typed: kuai4, hanzi: 块, pinyin: kuài, meaning: yuan (al hablar)}
+    comments: []
+  - id: x.read.kuai
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.kuai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 块}
+    answer: {hanzi: 块, pinyin: kuài, meaning: yuan (al hablar)}
+    comments: []
+  - id: x.dictation.xiangyao
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.xiangyao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiang3 yao4, hanzi: 想要, pinyin: xiǎngyào, meaning: 'querer (tener algo), desear'}
+    comments: []
+  - id: x.produce.xiangyao
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.xiangyao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «querer tener algo», más suave que 要? Escribe el pinyin.'}
+    answer: {typed: xiang3 yao4, hanzi: 想要, pinyin: xiǎngyào, meaning: 'querer (tener algo), desear'}
+    comments: []
+  - id: x.read.xiangyao
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.xiangyao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 想要}
+    answer: {hanzi: 想要, pinyin: xiǎngyào, meaning: 'querer (tener algo), desear'}
+    comments: []
+  - id: x.contrast.nali
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.na-nar
+    targets: [w.nali]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es nǎlǐ, «dónde»?'}
+    answer: {hanzi: 哪里, pinyin: nǎlǐ, meaning: dónde}
+    comments: []
+  - id: x.dictation.nali
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.nali]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: na3 li3, hanzi: 哪里, pinyin: nǎlǐ, meaning: dónde}
+    comments: []
+  - id: x.cloze.nali
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.qingwen-fandian-zai-nali
+    gap: w.nali
+    targets: [w.nali]
+    context: [e.qingwen, w.fandian, w.zai.at]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Perdone, ¿dónde hay un restaurante?»'}
+    answer: {typed: na3 li3, hanzi: 哪里, pinyin: nǎlǐ, meaning: dónde}
+    comments: []
+  - id: x.read.nali
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.nali]
+    skills: [reading, pinyin]
+    prompt: {text: 'Lee: pinyin y significado.', hanzi: 哪里}
+    answer: {hanzi: 哪里, pinyin: nǎlǐ, meaning: dónde}
+    comments: []
+  - id: x.tones.nali
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.nali]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 哪里, pinyin: na li}
+    answer: {typed: '33', hanzi: 哪里, pinyin: nǎlǐ, meaning: dónde}
+    comments: []
+  - id: x.listen.qingwen-fandian-zai-nali
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.qingwen-fandian-zai-nali
+    targets: [s.qingwen-fandian-zai-nali]
+    context: [e.qingwen, w.fandian, w.zai.at, w.nali]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Perdone, ¿dónde hay un restaurante?'}
+    comments: []
+  - id: x.produce.qingwen-fandian-zai-nali
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.qingwen-fandian-zai-nali
+    targets: [s.qingwen-fandian-zai-nali]
+    context: [e.qingwen, w.fandian, w.zai.at, w.nali]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Perdone, ¿dónde hay un restaurante?»'}
+    answer: {meaning: 'Perdone, ¿dónde hay un restaurante?'}
+    comments: []
+  - id: x.listen.zhege-duoshaoqian
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.zhege-duoshaoqian
+    targets: [s.zhege-duoshaoqian]
+    context: [w.zhe, w.ge, e.duoshaoqian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuánto cuesta esto?'}
+    comments: []
+  - id: x.produce.zhege-duoshaoqian
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.zhege-duoshaoqian
+    targets: [s.zhege-duoshaoqian]
+    context: [w.zhe, w.ge, e.duoshaoqian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuánto cuesta esto?»'}
+    answer: {meaning: '¿Cuánto cuesta esto?'}
+    comments: []
+  - id: x.listen.shi-kuai-qian
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.shi-kuai-qian
+    targets: [s.shi-kuai-qian]
+    context: [w.num.shi, w.kuai, w.qian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Diez yuanes.}
+    comments: []
+  - id: x.produce.shi-kuai-qian
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.shi-kuai-qian
+    targets: [s.shi-kuai-qian]
+    context: [w.num.shi, w.kuai, w.qian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Diez yuanes.»'}
+    answer: {meaning: Diez yuanes.}
+    comments: []
+  - id: x.listen.ni-chi-shenme
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ni-chi-shenme
+    targets: [s.ni-chi-shenme]
+    context: [w.ni, w.chi, w.shenme]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Qué vas a comer?'}
+    comments: []
+  - id: x.produce.ni-chi-shenme
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ni-chi-shenme
+    targets: [s.ni-chi-shenme]
+    context: [w.ni, w.chi, w.shenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué vas a comer?»'}
+    answer: {meaning: '¿Qué vas a comer?'}
+    comments: []
+  - id: x.listen.wo-yao-zhege
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-yao-zhege
+    targets: [s.wo-yao-zhege]
+    context: [w.wo, w.yao, w.zhe, w.ge]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero este. (Me llevo este.)}
+    comments: []
+  - id: x.produce.wo-yao-zhege
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.wo-yao-zhege
+    targets: [s.wo-yao-zhege]
+    context: [w.wo, w.yao, w.zhe, w.ge]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero este. (Me llevo este.)»'}
+    answer: {meaning: Quiero este. (Me llevo este.)}
+    comments: []
+  - id: x.listen.wo-xiangyao-zhege
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-xiangyao-zhege
+    targets: [s.wo-xiangyao-zhege]
+    context: [w.wo, w.xiangyao, w.zhe, w.ge]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me gustaría este.}
+    comments: []
+  - id: x.produce.wo-xiangyao-zhege
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.wo-xiangyao-zhege
+    targets: [s.wo-xiangyao-zhege]
+    context: [w.wo, w.xiangyao, w.zhe, w.ge]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me gustaría este.»'}
+    answer: {meaning: Me gustaría este.}
+    comments: []
+  - id: x.listen.wo-xihuan-kafei-he-qiaokeli
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-xihuan-kafei-he-qiaokeli
+    targets: [s.wo-xihuan-kafei-he-qiaokeli]
+    context: [w.wo, w.xihuan, w.kafei, w.he.and, w.qiaokeli]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me gustan el café y el chocolate.}
+    comments: []
+  - id: x.produce.wo-xihuan-kafei-he-qiaokeli
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.wo-xihuan-kafei-he-qiaokeli
+    targets: [s.wo-xihuan-kafei-he-qiaokeli]
+    context: [w.wo, w.xihuan, w.kafei, w.he.and, w.qiaokeli]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me gustan el café y el chocolate.»'}
+    answer: {meaning: Me gustan el café y el chocolate.}
+    comments: []
+  - id: x.listen.zhe-shi-yijia-fandian
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.zhe-shi-yijia-fandian
+    targets: [s.zhe-shi-yijia-fandian]
+    context: [w.zhe, w.shi, w.num.yi, w.jia, w.fandian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Esto es un restaurante.}
+    comments: []
+  - id: x.listen.wo-keyi-he-shenme
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-keyi-he-shenme
+    targets: [s.wo-keyi-he-shenme]
+    context: [w.wo, w.keyi, w.he.drink, w.shenme]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Qué puedo beber?'}
+    comments: []
+  - id: x.listen.keyi-ma-keyi
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.keyi-ma-keyi
+    targets: [s.keyi-ma-keyi]
+    context: [w.keyi, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Se puede? —Sí, se puede.'}
+    comments: []
+  - id: x.produce.keyi-ma-keyi
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.keyi-ma-keyi
+    targets: [s.keyi-ma-keyi]
+    context: [w.keyi, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Se puede? —Sí, se puede.»'}
+    answer: {meaning: '¿Se puede? —Sí, se puede.'}
+    comments: []
+  - id: x.listen.ni-you-duoshao-qian
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ni-you-duoshao-qian
+    targets: [s.ni-you-duoshao-qian]
+    context: [w.ni, w.you.have, w.duoshao, w.qian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuánto dinero tienes?'}
+    comments: []
+  - id: x.nuance.yao-you
+    added: 2026-10-01
+    lang: es
+    type: nuance
+    targets: [w.yao, w.you.have]
+    skills: [comprehension, discrimination]
+    prompt: {text: '要 y 有: ¿cuál es «querer» y cuál «tener»? Fíjate en el tono.'}
+    answer: {meaning: '要 yào cae (cuarto tono): querer, 我要水. 有 yǒu baja y sube (tercero): tener, 我有钱. También se niegan distinto: 不要 «no quiero», 没有 «no tengo».'}
+    comments: []
+  - id: x.nuance.yao-uses
+    added: 2026-10-01
+    lang: es
+    type: nuance
+    targets: [w.yao]
+    context: [w.xuyao]
+    skills: [comprehension, discrimination]
+    prompt: {text: '要 en 我要这个, 我要工作 y 要下雨了: ¿qué significa cada vez? ¿Y 需要?'}
+    answer: {meaning: 'Quiero este (me lo llevo) · tengo que trabajar · va a llover. 需要 es solo necesitar: 我需要水 «necesito agua».'}
+    comments: []
+  - id: x.nuance.xiang-xiangyao-yao
+    added: 2026-10-01
+    lang: es
+    type: nuance
+    targets: [w.xiang, w.xiangyao, w.yao]
+    skills: [comprehension, discrimination]
+    prompt: {text: '想, 想要 y 要: ¿cuál es más directo?'}
+    answer: {meaning: '想 + verbo: tengo ganas de (我想喝水). 想要 + cosa: me gustaría tenerla (我想要这个). 要: la quiero, dame (我要这个); el más directo.'}
     comments: []

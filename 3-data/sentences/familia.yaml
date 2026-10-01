@@ -23,3 +23,29 @@ sentences:
       - {text: 妈妈, ref: w.mama, pinyin: māma}
       - {text: 。}
     translation: {es: Ella es mi madre., en: She is my mom.}
+  - id: s.ta-you-erzi-he-nver
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 有, ref: w.you.have, pinyin: yǒu}
+      - {text: 一, ref: w.num.yi, pinyin: yí, sandhi: yī → yí delante de cuarto tono}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 儿子, ref: w.erzi, pinyin: érzi}
+      - {text: 和, ref: w.he.and, pinyin: hé}
+      - {text: 一, ref: w.num.yi, pinyin: yí, sandhi: yī → yí delante de cuarto tono}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 女儿, ref: w.nver, pinyin: nǚ'ér}
+      - {text: 。}
+    translation: {es: 'Tiene un hijo y una hija.', en: 'He has a son and a daughter.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.women-shi-yijiaren
+    use: say
+    segments:
+      - {text: 我们, ref: w.women, pinyin: wǒmen}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 一, ref: w.num.yi, pinyin: yì, sandhi: yī → yì delante de primer tono}
+      - {text: 家, ref: w.jia, pinyin: jiā}
+      - {text: 人, ref: w.ren, pinyin: rén}
+      - {text: 。}
+    translation: {es: 'Somos una familia.', en: 'We are one family.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}

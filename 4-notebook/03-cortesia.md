@@ -13,7 +13,9 @@
 - ✅🃏 请坐 qǐng zuò [tɕʰiŋ˧˩˧ tswɔ˥˩] · siéntese, por favor · _expresión_
 - ✅🃏 是的 shì de [ʂɨ˥˩ tɤ] · sí, eso es · _expresión_ · Sirve para confirmar, igual que 对 y 好的.
 - ✅🃏 嗯 èn · mm, sí (asentimiento) · _interjección_ · Se usa como 对: para asentir mientras el otro habla.
-- ✅🃏 可以 kěyǐ [kʰɤ˧˩˧ i˧˩˧] · se puede; vale · _verbo_ · También sirve de «vale», como 好的. · 可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2].
+- ✅🃏 可以 kěyǐ [kʰɤ˧˩˧ i˧˩˧] · poder (está permitido); vale, sirve · _verbo_ · También sirve de «vale», como 好的. · 可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2]. · 可以 no es «ser capaz» (eso es 能): es que algo está permitido, vale o sirve. Pregunta y respuesta a la vez: 可以吗？ —可以。 «¿Se puede? —Sí». En una tienda, 这个大小可以吗？ «¿este tamaño está bien?». Según el contexto también se dice 行 xíng [HSK 1] o 没问题 méi wèntí [问题 HSK 2], «no hay problema».
+- ✅🃏 不好意思 bù hǎoyìsi [pu˥˩ xɑʊ˧˩˧ i˥˩ sɯ] · perdona; qué vergüenza; me sabe mal · _expresión_ · Para una molestia pequeña: llegar tarde, pasar, interrumpir, pedir algo. Es muy cotidiano, también entre jóvenes, y no suena formal.
+- ✅🃏 对不起 duìbuqǐ [tweɪ˥˩ pu tɕʰi˧˩˧] · lo siento · _verbo_ · Perdón de verdad, cuando has hecho algo mal: 对不起，我错了. Para una molestia pequeña basta 不好意思.
 
 ## Formas de decir que sí
 
@@ -24,8 +26,18 @@ El chino no tiene un «sí» único: se confirma según lo que se responde.
 - 好的 hǎo de · de acuerdo (aceptas algo)
 - 嗯 èn · mm, te sigo (mientras hablan)
 
+## Disculpe, perdona y lo siento
+
+Tres formas de pedir perdón o de abordar a alguien, según la situación.
+
+- 请问 qǐngwèn · antes de preguntar algo: 请问，饭店在哪里？
+- 不好意思 bù hǎoyìsi · una molestia pequeña: llegar tarde, pasar, pedir algo
+- 对不起 duìbuqǐ · has hecho algo mal: lo siento
+
 ## Frases
 
 - ✅🃏 好的，谢谢！ · hǎo de xièxie · Vale, ¡gracias!
 - ✅🃏 请喝咖啡。 · qǐng hē kāfēi · Tome un café, por favor.
 - ✅🃏 嗯，谢谢！ · èn xièxie · Sí, gracias.
+- ✅🃏 不好意思，我来晚了。 · bù hǎoyìsi wǒ lái wǎn le · Perdona, he llegado tarde.
+- ✅🃏 对不起，我错了。 · duìbuqǐ wǒ cuò le · Lo siento, me he equivocado.

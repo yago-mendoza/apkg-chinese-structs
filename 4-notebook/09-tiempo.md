@@ -10,6 +10,8 @@
 - ✅🃏 明天 míngtiān [miŋ˧˥ tʰjɛn˥] · mañana (el día) · _sustantivo_
 - ✅🃏 见 jiàn [tɕjɛn˥˩] · ver; verse · _verbo_ · Un ojo 目 sobre unas piernas 儿: alguien que ve. La forma tradicional, 見, lo muestra mejor.
 - ✅🃏 晚上 wǎnshang [wan˧˩˧ ʂɑŋ] · por la noche · _sustantivo_
+- ✅🃏 晚 wǎn [wan˧˩˧] · tarde · _sustantivo_ · 晚上 es «la noche»; 晚 suelto es «tarde»: 我来晚了 «he llegado tarde».
+- ✅🃏 年 nián [njɛn˧˥] · año · _clasificador_ · 午 wǔ «mediodía», 牛 niú «vaca» y 年 nián «año» se parecen mucho y no suenan igual. · Como 天, ya es una unidad y va sin clasificador: 两年 «dos años», 三天 «tres días».
 
 ## 上 / 中 / 下 + 午
 
@@ -33,4 +35,4 @@ Con 午 «mediodía» se forman las tres del centro (上 antes, 中 en, 下 desp
 - ✅🃏 明天见！ · míngtiān jiàn · ¡Hasta mañana!
 - ✅🃏 下午去商店。 · xiàwǔ qù shāngdiàn · Por la tarde voy a la tienda.
 - ✅🃏 我上午工作，晚上看书。 · wǒ shàngwǔ gōngzuò wǎnshang kàn shū · Por la mañana trabajo y por la noche leo.
-- ✅🃏 中午你去哪儿？ · zhōngwǔ nǐ qù nǎr · ¿Adónde vas a mediodía?
+- ✅🃏 中午你去哪里？ · zhōngwǔ nǐ qù nǎlǐ · ¿Adónde vas a mediodía?

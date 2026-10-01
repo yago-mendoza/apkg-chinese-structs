@@ -99,6 +99,7 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-29', text: 'Suele ir con 都: 大家都来了 «ya estamos todos».', original: (¡ah claor es dice dajia dou'!!)}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '大 «grande» + 家 «familia, casa»: era «la gran familia», todo el grupo, y de ahí «todos». Es el mismo 家 de 一家人 «una familia» y del clasificador de negocios: 一家饭店 «un restaurante».', original: 'le vendria bien explicacion cruzada conectar con lo de que tb se usa clasificsdor de familia under roof edifico o nosek ehabias contado'}
   - id: w.laoshi
     use: say
     role: content
@@ -197,3 +198,13 @@ entries:
       - {ref: c.shi.master, cue: 'raya encima: shī, en 老师 y 工程师'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
+  - id: w.shei
+    use: say
+    role: function
+    kind: word
+    hanzi: 谁
+    pinyin: shéi
+    meaning: {es: quién, en: who}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '谁 ocupa el sitio de la persona que no conoces, sin cambiar el orden: de 他是老师 sale 他是谁？. También se oye shuí.'}

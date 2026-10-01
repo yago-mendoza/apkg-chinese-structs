@@ -37,3 +37,20 @@ sentences:
       - {text: ！}
     translation: {es: ¡Bienvenido!, en: Welcome!}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.ni-zenmeyang
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 怎么样, ref: w.zenmeyang, pinyin: zěnmeyàng}
+      - {text: ？}
+    translation: {es: '¿Qué tal estás?', en: 'How are you doing?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.chifan-le-ma
+    use: say
+    segments:
+      - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Has comido? (como saludo)', en: 'Have you eaten? (as a greeting)'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}

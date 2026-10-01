@@ -32,6 +32,13 @@ Hablar depende del pinyin y de los tonos, no de los hanzi. YAGO tiende a investi
 
 Hablar se entrena sobre todo fuera del mazo: YAGO conversa con su profesora y lee en voz alta todo lo que estudia, también las tarjetas (lo dijo él, 2026-09-29). Por eso el mazo no necesita muchas tarjetas de voz alta, y la pista de pronunciación (fase 4 en `docs/design.md`) no tiene prisa; lo que sí aporta el mazo es el oído y el pinyin: dictado, tonos y audio en todo.
 
+## Cómo se practican las frases [desde el 2026-10-01]
+
+- **Nada de producción libre.** Ninguna tarjeta pide «di una frase con esta estructura» o «inventa algo así»: obliga a ser creativo sin modelo y no educa. Una estructura se practica oponiendo la frase buena a un calco claramente erróneo del español o del inglés (他很高 frente a 他是高), o a otra frase con la que se confunde; así el oído aprende el orden del chino.
+- **Reutilizar, pero bien.** Las frases nuevas reutilizan el vocabulario del mazo siempre que se use con su sentido real; nunca se fuerza una palabra donde un nativo diría otra (大小 es «tamaño», no «talla»).
+- **Mandarín estándar.** Donde hay variante regional se elige la general: 哪里 y no 哪儿, que es del norte. La otra se entiende y se menciona, pero las tarjetas usan la estándar.
+- **Situaciones de calle.** Lo que se decide por la situación (请问, 不好意思, 对不起; 对, 是的, 好的) se pregunta con la situación delante y el grupo entero detrás, con audio.
+
 ## Cómo se explica un carácter
 
 Condición indispensable en todo el mazo (tarjetas, cuaderno, log y review): que nunca se confunda lo que se usa con lo que solo ayuda a recordar.

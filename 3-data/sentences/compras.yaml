@@ -33,7 +33,7 @@ sentences:
     segments:
       - {text: 商店, ref: w.shangdian, pinyin: shāngdiàn}
       - {text: 在, ref: w.zai.at, pinyin: zài}
-      - {text: 哪儿, ref: w.nar, pinyin: nǎr}
+      - {text: 哪里, ref: w.nali, pinyin: nǎlǐ}
       - {text: ？}
     translation: {es: '¿Dónde está la tienda?', en: 'Where is the shop?'}
   - id: s.wo-xihuan-he-kafei
@@ -142,7 +142,7 @@ sentences:
       - {text: 可以, ref: w.keyi, pinyin: kěyǐ}
       - {text: 吗, ref: w.ma, pinyin: ma}
       - {text: ？}
-    translation: {es: '¿Te va bien esta talla?', en: 'Is this size OK?'}
+    translation: {es: '¿Este tamaño está bien?', en: 'Is this size OK?'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: s.nide-aihao-shi-shenme
     use: say
@@ -163,3 +163,113 @@ sentences:
       - {text: 。}
     translation: {es: Echo un vistazo., en: Let me have a look.}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.qingwen-fandian-zai-nali
+    use: say
+    segments:
+      - {text: 请问, ref: e.qingwen, pinyin: qǐngwèn}
+      - {text: ，}
+      - {text: 饭店, ref: w.fandian, pinyin: fàndiàn}
+      - {text: 在, ref: w.zai.at, pinyin: zài}
+      - {text: 哪里, ref: w.nali, pinyin: nǎlǐ}
+      - {text: ？}
+    translation: {es: 'Perdone, ¿dónde hay un restaurante?', en: 'Excuse me, where is a restaurant?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.zhege-duoshaoqian
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: zhè}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 多少钱, ref: e.duoshaoqian, pinyin: duōshao qián}
+      - {text: ？}
+    translation: {es: '¿Cuánto cuesta esto?', en: 'How much is this?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+  - id: s.shi-kuai-qian
+    use: say
+    segments:
+      - {text: 十, ref: w.num.shi, pinyin: shí}
+      - {text: 块, ref: w.kuai, pinyin: kuài}
+      - {text: 钱, ref: w.qian, pinyin: qián}
+      - {text: 。}
+    translation: {es: 'Diez yuanes.', en: 'Ten yuan.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+  - id: s.ni-chi-shenme
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 吃, ref: w.chi, pinyin: chī}
+      - {text: 什么, ref: w.shenme, pinyin: shénme}
+      - {text: ？}
+    translation: {es: '¿Qué vas a comer?', en: 'What will you eat?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+  - id: s.wo-yao-zhege
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 这, ref: w.zhe, pinyin: zhè}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 。}
+    translation: {es: 'Quiero este. (Me llevo este.)', en: 'I''ll have this one.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.wo-xiangyao-zhege
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 想要, ref: w.xiangyao, pinyin: xiǎngyào}
+      - {text: 这, ref: w.zhe, pinyin: zhè}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 。}
+    translation: {es: 'Me gustaría este.', en: 'I''d like this one.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.wo-xihuan-kafei-he-qiaokeli
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 咖啡, ref: w.kafei, pinyin: kāfēi}
+      - {text: 和, ref: w.he.and, pinyin: hé}
+      - {text: 巧克力, ref: w.qiaokeli, pinyin: qiǎokèlì}
+      - {text: 。}
+    translation: {es: 'Me gustan el café y el chocolate.', en: 'I like coffee and chocolate.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.zhe-shi-yijia-fandian
+    use: hear
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: zhè}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 一, ref: w.num.yi, pinyin: yì, sandhi: yī → yì delante de primer tono}
+      - {text: 家, ref: w.jia, pinyin: jiā}
+      - {text: 饭店, ref: w.fandian, pinyin: fàndiàn}
+      - {text: 。}
+    translation: {es: 'Esto es un restaurante.', en: 'This is a restaurant.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.wo-keyi-he-shenme
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 可以, ref: w.keyi, pinyin: kěyǐ}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 什么, ref: w.shenme, pinyin: shénme}
+      - {text: ？}
+    translation: {es: '¿Qué puedo beber?', en: 'What can I drink?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.keyi-ma-keyi
+    use: say
+    segments:
+      - {text: 可以, ref: w.keyi, pinyin: kěyǐ}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+      - {text: 可以, ref: w.keyi, pinyin: kěyǐ}
+      - {text: 。}
+    translation: {es: '¿Se puede? —Sí, se puede.', en: 'May I? —Sure.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.ni-you-duoshao-qian
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 有, ref: w.you.have, pinyin: yǒu}
+      - {text: 多少, ref: w.duoshao, pinyin: duōshao}
+      - {text: 钱, ref: w.qian, pinyin: qián}
+      - {text: ？}
+    translation: {es: '¿Cuánto dinero tienes?', en: 'How much money do you have?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}

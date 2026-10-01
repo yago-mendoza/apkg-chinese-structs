@@ -110,7 +110,8 @@ entries:
     pinyin: yǒu
     meaning: {es: tener; haber, en: to have; there is}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-    comments: []
+    comments:
+      - {kind: note, private: false, date: '2026-10-01', text: 'No lo confundas con 要 yào «querer»: 有 yǒu baja y sube (tercer tono); 要 yào cae (cuarto). 有 se niega con 没: 没有.'}
   - id: w.ge
     use: say
     role: function
@@ -122,3 +123,34 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: 'Entre el número y la cosa: 三个朋友 «tres amigos». Se dice átono.'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'El clasificador no se omite: sin él la frase se entiende, pero suena tan mal como «yo tener tres amigo». A veces informa de la forma: 张 zhāng [HSK 3] para cosas planas, 条 tiáo [HSK 2] para alargadas. Van sin clasificador las palabras que ya son unidad, como 天 y 年: 三天 «tres días», 两年 «dos años».'}
+  - id: w.meiyou
+    use: say
+    role: content
+    kind: word
+    hanzi: 没有
+    pinyin: méiyǒu
+    meaning: {es: 'no tener; no haber', en: "not to have; there isn't"}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '有 se niega con 没, nunca con 不: 我没有钱 «no tengo dinero».'}
+  - id: w.ji
+    use: say
+    role: function
+    kind: word
+    hanzi: 几
+    pinyin: jǐ
+    meaning: {es: 'cuántos (pocos)', en: 'how many (few)'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '几 espera un número pequeño y lleva clasificador: 几个人？ Para cantidades abiertas, 多少.'}
+  - id: w.sui
+    use: say
+    role: content
+    kind: word
+    hanzi: 岁
+    pinyin: suì
+    meaning: {es: 'años (de edad)', en: 'years old'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '你几岁？ se pregunta sobre todo a niños; a un adulto se le pregunta 你多大？, con 多 «cuánto» y 大 «grande».'}

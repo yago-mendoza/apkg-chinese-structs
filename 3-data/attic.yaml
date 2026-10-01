@@ -34,6 +34,8 @@ items:
     reason: HSK 4. Muy útil en China para gastos de trabajo, pero de nivel superior.
     notes:
       - {text: '票 piào «billete, papel» da el sonido y el sentido: el papel que se emite (发) al pagar.'}
+    snooze: 003-2026-10-01-comer-dinero-y-contrastes
+    snooze_reason: 'despierta con 钱, pero es HSK 4; entra cuando lleguen pagar y la cuenta (买单, 付钱)'
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.toupiao
     hanzi: 投票
@@ -116,6 +118,8 @@ items:
     reason: HSK 5; entra cuando llegue el dinero.
     notes:
       - {text: '我欠你钱 «te debo dinero». Como pieza, en 软 ruǎn «blando».', original: '(PERO 欠 SE USA PAR DEBER DINERO 我欠你钱)'}
+    snooze: 003-2026-10-01-comer-dinero-y-contrastes
+    snooze_reason: 'despierta con 钱, pero es HSK 5; entra con 借 y 还钱'
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.wuhui
     hanzi: 误会
@@ -196,16 +200,6 @@ items:
     reason: HSK 1; entra con las fechas.
     notes:
       - {text: '9月29日 «29 de septiembre». Hablando se dice más 号: 九月二十九号.'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-  - id: a.nian
-    hanzi: 年
-    pinyin: nián
-    meaning: {es: año}
-    theme: tiempo
-    links: [今年, 去年, 明年, 新年, 岁]
-    reason: HSK 1; solo apareció como carácter parecido a 午 y 牛.
-    notes:
-      - {text: '午 wǔ «mediodía», 牛 niú «vaca» y 年 nián «año» se parecen mucho y no suenan igual.'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.ban
     hanzi: 半
