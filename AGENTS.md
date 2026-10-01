@@ -1,13 +1,15 @@
 # Trabajo en este repositorio
 
-Leer `docs/goal.md` (objetivo del que aprende: el primer filtro de todo lo que entra) y `docs/design.md` antes de implementar o añadir contenido: diseño canónico, repertorio de ejercicios y decisiones pendientes. El mapa de carpetas y las convenciones de nombres están en `README.md`. La configuración y las decisiones propias del dueño del mazo (Azure, Anki, ritmo, fase de pruebas), en `docs/owner.md`. No duplicar ninguno de los dos aquí.
+Leer `docs/goal.md` (objetivo del que aprende: el primer filtro de todo lo que entra) y `docs/design.md` antes de implementar o añadir contenido: diseño canónico, repertorio de ejercicios y lo pendiente. Antes de un lote, también `2-digests/state.md` (cómo va ahora). El mapa de carpetas y las convenciones de nombres están en `README.md`. La configuración y los valores del dueño del mazo (Azure, Anki, ritmo, fase de pruebas), en `docs/owner.md`. Por qué el sistema es como es, en `docs/decisions.md`. No duplicar nada de eso aquí.
+
+Cada documento dice al principio qué va en él y qué no; respetarlo al editar. En resumen: `goal.md` lo que depende del que aprende (intercambiable); `design.md` el mecanismo, en presente y sin fechas; `owner.md` los valores y el entorno de este mazo; `decisions.md` la historia, solo se añade; `state.md` la foto de ahora, con fuentes.
 
 - Entorno: local en Windows, `C:\Users\yagom\dev\apkg-chinese-structs`, Python en `.venv` (`.\.venv\Scripts\python anki.py ...`). No instalar dependencias fuera de `.venv`, salvo las de las grabaciones de clase, que van en `.venv-audio` (`tools/requirements-audio.txt`).
 - Prioridad: mandarín cotidiano y práctico, pinyin y tonos, audio en respuestas y ejemplos. YAGO está empezando.
 - Solo el agente edita `3-data/`. YAGO escribe en `1-inbox/` y saca resultados de `5-output/`.
 - Antes de añadir contenido: `anki.py lookup <término>` y `anki.py gaps`. Después: `anki.py check`. Revisar los avisos; no ignorarlos ni aceptarlos automáticamente (`accept_pinyin_mismatch` solo con motivo).
 - «Procesa el inbox»: seguir «Flujo de un lote» de `docs/design.md`. No cambiar el hanzi de respuestas o frases con audio salvo error (ver «Audio»).
-- La estructura no se congela: en cada lote, revisar temas, grupos y `use` y reorganizar si hace falta (`docs/design.md`, «Reorganización»), contándolo en el log del lote.
+- La estructura no se congela: en cada lote, revisar temas, grupos y `use` y reorganizar si hace falta (`docs/design.md`, «Reorganización»), contándolo en el log del lote. Las reglas del sistema, en cambio, cambian solo si algo falla en uso real o YAGO lo pide (`docs/decisions.md`); los cambios de proceso, en la retrospectiva.
 - Distinguir objetivo evaluado (`targets`), contexto (`context`) y ejemplo revelado (`reveal`).
 - El LLM redacta y revisa; la compilación consume contenido guardado sin llamar a un LLM. No regenerar ejercicios al compilar.
 - Preservar IDs. Los comentarios de YAGO se muestran bien redactados (`text`: español cuidado, mayúsculas y puntuación, sin abreviaturas de apunte) y lo que escribió se guarda tal cual en `original`; si ya estaba bien escrito, va sin cambios y sin `original` (ver «Comentarios» en `docs/design.md`). Guardar cada comentario en el ámbito que describe; separar mnemotecnia, profesora y explicación verificada.

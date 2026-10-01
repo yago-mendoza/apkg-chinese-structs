@@ -1523,3 +1523,14 @@ exercises:
     prompt: {text: '会 en 我会说中文 y en 明天会下雨: ¿qué significa cada vez?'}
     answer: {meaning: 'Saber hacer algo aprendido · ir a pasar (predicción). Ser capaz ahora es 能; tener permiso, 可以.'}
     comments: []
+  - id: x.comprehension.yago-estudia-chino
+    added: 2026-10-01
+    lang: es
+    type: comprehension
+    targets: [s.wo-jiao-yage, s.wo-shi-xibanyaren, s.wo-zai-xuexi-zhongwen, s.zhongwen-hen-nan]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Qué está haciendo Yago y qué piensa de ello?'}
+    answer: {meaning: Está estudiando chino y le parece difícil.}
+    comments: []

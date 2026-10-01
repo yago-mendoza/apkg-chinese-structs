@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://infraphysics.net/corner/chinese"><img src="docs/assets/infraphysics.svg" width="72" alt="InfraPhysics"></a>
+  <a href="https://infraphysics.net/side-quests/chinese"><img src="docs/assets/infraphysics.svg" width="72" alt="InfraPhysics"></a>
 </p>
 
 <h1 align="center">apkg-chinese-structs</h1>
@@ -17,7 +17,7 @@
 
 <p align="center">
   <b>A side project of <a href="https://infraphysics.net">InfraPhysics</a>.</b>
-  Browse the whole dictionary, with audio, at <a href="https://infraphysics.net/corner/chinese"><b>infraphysics.net/corner/chinese</b></a>
+  Browse the whole dictionary, with audio, at <a href="https://infraphysics.net/side-quests/chinese"><b>infraphysics.net/side-quests/chinese</b></a>
 </p>
 
 ---
@@ -26,7 +26,7 @@
 
 - **You** drop class notes in `1-inbox/`, in any format, and now and then say *process the inbox*.
 - **The agent** turns them into dictionary entries, sentences and cards, generates the audio and loads the deck into Anki.
-- **After each batch** it leaves you a review: your level, gaps, what didn't go in and why. You answer inline; your answers feed the next batch.
+- **After each batch** it leaves you a review. It opens with the few questions it really needs you to answer; below, your level, gaps, what didn't go in and why, for whenever you want to dig. You answer inline; your answers feed the next batch.
 - **You study** in Anki, one HSK level at a time. Nothing else to maintain.
 
 <p align="center">
@@ -45,13 +45,13 @@ I built this for my own Mandarin, so the repository ships with a real, working e
 
 **`1-inbox/history/`: the inbox's archive.** When a batch is closed, your notes and the review you answered are filed here untouched, one folder per batch.
 
-**`2-digests/`: one log per batch.** The agent's record: what went in, what did not and why, what it corrected and what it reorganized, plus a running reflection on your level, your classes and your method. Read-only; it is the system's memory.
+**`2-digests/`: one log per batch.** The agent's record: what went in, what did not and why, what it corrected and what it reorganized, what got in the way of the work, plus a running reflection on your level, your classes and your method. `state.md` is the current picture (level, classes, method, open notices), rewritten every batch, every line linked to the log it comes from. Read-only; it is the system's memory.
 
 **`3-data/`: the database.** Everything the deck knows, one file per theme: words, expressions, characters, pronunciation rules, groups of easily confused items, sentences, cards and the generated audio. Only the agent edits it. It also holds the attic (`attic.yaml`): what came in my notes but is too advanced or too loose to enter yet, kept with all its context until a later batch brings something it connects to.
 
 **`4-notebook/`: the same database, readable.** Everything learned so far, by theme. Open it to look something up without Anki.
 
-**`5-output/`: what comes out.** The compiled deck (`.apkg`, downloadable) and the public export (`dictionary.json`: entries, sentences, every card as Anki renders it, and the day-by-day history of the deck) behind [infraphysics.net/corner/chinese](https://infraphysics.net/corner/chinese).
+**`5-output/`: what comes out.** The compiled deck (`.apkg`, downloadable) and the public export (`dictionary.json`: entries, sentences, every card as Anki renders it, and the day-by-day history of the deck) behind [infraphysics.net/side-quests/chinese](https://infraphysics.net/side-quests/chinese).
 
 **Batches.** A batch is whatever is in the inbox when you ask; how often is up to you. One a week is a good habit, since the review then arrives in time for your next class, but nothing depends on it: small batches give you feedback sooner, large ones let the agent see more at once. The structure is never frozen: every batch, themes and groups are revisited and reorganized when needed, without losing your progress.
 
@@ -125,14 +125,14 @@ The agent pushes the deck itself. To do it by hand:
 - Study the subdeck of your current level. Themes are subdecks inside it, and level, theme, month and purpose are also tags for filtered sessions.
 - Typed answers accept pinyin with tone marks or digits (`ni3 hao3`) or hanzi from a Chinese keyboard; spaces, case and punctuation are ignored. For sentences you say aloud, typing is optional.
 - The back of each card shows pinyin, IPA, audio, pronunciation traps and, when there is one, the word's family, with the tested word marked ▸.
-- `push` sets the daily limits (`NEW_PER_DAY`, `REVIEWS_PER_DAY` in `anki.py`). Reviews settle at roughly 5 to 8 times the new cards: 20 new cards a day means about 100 to 160 reviews, around 25 to 30 minutes.
+- `push` sets the daily limits (`NEW_PER_DAY`, `REVIEWS_PER_DAY` in `anki.py`; this deck's values are in `docs/owner.md`). Reviews settle at roughly 5 to 8 times the new cards: 20 new cards a day means about 100 to 160 reviews, around 25 to 30 minutes.
 
 ## Using it with your own notes
 
 1. Fork or clone the repository.
-2. Empty the content but keep the structure: clear `1-inbox/history/`, `2-digests/`, `3-data/audio/` and the review in `1-inbox/` (keep each `README.md`); delete the files in `3-data/lexicon/`, `3-data/sentences/` and `3-data/exercises/`; adjust `3-data/themes.yaml`. `4-notebook/` regenerates itself.
+2. Empty the content but keep the structure: clear `1-inbox/history/`, `2-digests/` (including `state.md`), `3-data/audio/` and the review in `1-inbox/` (keep each `README.md`); delete the files in `3-data/lexicon/`, `3-data/sentences/` and `3-data/exercises/`; adjust `3-data/themes.yaml`. `4-notebook/` regenerates itself.
 3. In `anki.py`, change `DECK_NAME` and `GUID_NAMESPACE` so your deck never collides with this one.
-4. Rewrite `docs/goal.md` for yourself (who is learning, why, what should go in, in what order) and replace `docs/owner.md` with your own notes. The pronunciation traps assume a Spanish speaker.
+4. Rewrite `docs/goal.md` for yourself (who is learning, why, what should go in, in what order), replace `docs/owner.md` with your own notes and keep or empty `docs/decisions.md` (why this deck's rules are what they are). The pronunciation traps assume a Spanish speaker.
 5. Set up Azure and Anki as above, drop your first notes in `1-inbox/` and ask your agent to *process the inbox*. `AGENTS.md` tells it everything else.
 
 ## Reference
@@ -142,11 +142,12 @@ The agent pushes the deck itself. To do it by hand:
 - `AGENTS.md`: rules for any agent; the first thing it reads.
 - `docs/goal.md`: the learner's goal: the first filter for everything that goes in.
 - `docs/design.md`: the full specification (coverage, card types, audio, decisions).
-- `docs/owner.md`: my own setup and decisions for this deck.
+- `docs/owner.md`: my own setup and the values in force for this deck.
+- `docs/decisions.md`: why the system is the way it is, one dated entry per decision; the rule documents stay in the present tense.
 - `sources/`: external reference lists, each with its origin and license.
 - `tools/class_audio.py`: transcribes a class recording dropped in `1-inbox/` (local Whisper large-v3, chosen because it is the most accurate Whisper model for Chinese; the teacher's voice told apart from yours) into `private/`, as context for the batch. Separate environment: `tools/requirements-audio.txt`.
 
-**Commands** (mostly for the agent): `lookup <term>`, `plan` (missing cards), `scaffold` (writes them in the standard format), `gaps` (how the deck is distributed), `check`, `notebook`, `build`, `export` (the public dictionary), `close-batch <batch>` (archive, commit and tag), `audio`, `push`. `push --prune` removes cards whose exercise no longer exists (it lists them first and requires `--force` if there are many); `push --reset` returns the whole deck to new, with no progress. Tests: `.\.venv\Scripts\python -m unittest discover -s tests`, including a simulated AnkiConnect that checks nothing outside this deck is ever moved, deleted or reconfigured. GitHub Actions runs `check` and the tests on every push.
+**Commands** (mostly for the agent): `lookup <term>`, `hanzi <characters>` (pieces, sound and meaning of each character), `plan` (missing cards), `scaffold` (writes them in the standard format), `gaps` (how the deck is distributed), `stats` (what you fail in Anki, read-only), `retro` (the process review every 4 batches), `check`, `notebook`, `build`, `export` (the public dictionary), `close-batch <batch>` (archive, commit and tag), `audio`, `push`. `push --prune` removes cards whose exercise no longer exists (it lists them first and requires `--force` if there are many); `push --reset` returns the whole deck to new, with no progress. Tests: `.\.venv\Scripts\python -m unittest discover -s tests`, including a simulated AnkiConnect that checks nothing outside this deck is ever moved, deleted or reconfigured. GitHub Actions runs `check` and the tests on every push.
 
 **External lists.** Your notes and your goal decide what goes in. The HSK 3.0 word list (`sources/hsk/`, from [drkameleon/complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary), MIT) orders items by level and shows gaps; it is never imported wholesale. Course books and character references that cannot be redistributed are consulted locally only: nothing in the repository depends on them or copies from them.
 
@@ -162,5 +163,6 @@ The agent pushes the deck itself. To do it by hand:
 
 - **Code** (`anki.py`, `tests/`): [MIT](LICENSE).
 - **Content** (notes, data, logs, notebook, audio and documentation): [CC BY 4.0](LICENSE-CONTENT). Free for any use, including commercial, **with attribution**.
+- **`sources/`**: third-party lists, each under its own license, stated in its `README.md`.
 
 Cite as: *Yago Mendoza, «apkg-chinese-structs», https://github.com/yago-mendoza/apkg-chinese-structs, CC BY 4.0.*

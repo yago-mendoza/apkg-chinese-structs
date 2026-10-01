@@ -252,3 +252,14 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Mañana lloverá.»'}
     answer: {meaning: Mañana lloverá.}
     comments: []
+  - id: x.comprehension.beijing-calor-lluvia
+    added: 2026-10-01
+    lang: es
+    type: comprehension
+    targets: [s.beijing-hen-re, s.beijing-hen-da, s.mingtian-hui-xiayu]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta y respóndela en chino, en voz alta.'}
+    question: {sentence: s.beijing-xiayu-ma}
+    answer: {meaning: 'Hoy no: hace calor. Mañana sí (明天会下雨).'}
+    comments: []

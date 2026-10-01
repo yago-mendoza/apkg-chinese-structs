@@ -473,3 +473,14 @@ exercises:
     prompt: {text: 'Un amigo te propone algo y no puedes: no tienes tiempo. Díselo en voz alta.'}
     answer: {meaning: No tengo tiempo.}
     comments: []
+  - id: x.comprehension.mi-dia
+    added: 2026-10-01
+    lang: es
+    type: comprehension
+    targets: [s.shangwu-gongzuo-wanshang-kan-shu, s.wo-hen-xihuan-wode-gongzuo, s.wo-zuotian-zai-jia-kan-shu]
+    skills: [reading, comprehension]
+    script: both
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Qué hace por la noche, y dónde lo hizo ayer?'}
+    answer: {meaning: 'Lee; ayer leyó en casa.'}
+    comments: []

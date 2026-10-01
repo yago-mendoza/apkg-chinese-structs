@@ -432,6 +432,132 @@ class Repository(unittest.TestCase):
             dest = [dst for _, src, dst in actions if src.name == "clase.m4a"]
             self.assertEqual(dest, [audio / "clase" / "clase.m4a"])
 
+    def test_reading_comprehension(self):
+        entries, sentences, _ = anki.load()
+        eby, sby = {e["id"]: e for e in entries}, {s["id"]: s for s in sentences}
+        text = ["s.beijing-hen-re", "s.beijing-hen-da", "s.mingtian-hui-xiayu"]
+        ok = {"id": "x.comprehension.t", "type": "comprehension", "targets": text, "script": "hanzi",
+              "question": {"sentence": "s.beijing-xiayu-ma"}, "answer": {"meaning": "Mañana."}}
+        def run(ex):
+            errors, warnings = [], []
+            anki.comprehension_rules(ex, eby, sby, errors, warnings)
+            return errors
+        self.assertEqual(run(ok), [])
+        self.assertTrue(run({**ok, "targets": text[:1]}))                       # una frase sola no es un texto
+        self.assertTrue(run({**ok, "targets": text + ["w.ta"]}))                 # solo frases
+        self.assertTrue(run({**ok, "script": "pinyin"}))                         # nunca pinyin solo
+        self.assertTrue(run({**ok, "question": {}}))
+        self.assertTrue(run({**ok, "answer": {}}))
+        self.assertEqual(anki.satisfied(ok), {"comprehension"})                  # no cubre la escucha de sus frases
+        f = anki.card_fields({**ok, "lang": "es", "prompt": {"text": "Lee."}}, eby, sby, {}, set())
+        front = f["front"]
+        self.assertIn("北京很热。北京很大。明天会下雨。", front)                   # un párrafo, en hanzi
+        self.assertNotIn("Běijīng", front)                                       # sin pinyin delante
+        self.assertLess(front.index("passage"), front.index("<details"))         # la pregunta, plegada, después
+        self.assertIn("Běijīng", f["back"])                                      # el pinyin, al girar
+        both = anki.card_fields({**ok, "script": "both", "lang": "es", "prompt": {"text": "Lee."}}, eby, sby, {}, set())
+        self.assertIn("Běijīng", both["front"])
+
+    def test_markdown_anchors_like_github(self):
+        self.assertEqual(anki.md_slug("✅ Entró, con matices para ahondar"), "-entró-con-matices-para-ahondar")
+        self.assertEqual(anki.md_slug("Cómo vas"), "cómo-vas")
+        self.assertEqual(anki.md_anchors("## A\n## A\n```\n## no\n```"), {"a", "a-1"})
+
+    def test_review_starts_with_what_must_be_answered(self):
+        log = "/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md"
+        ok = (f"# Review\n\n{anki.SINE_QUA_NON}\n\n- ¿Es 行 háng o xíng? ([detalle](#por-verificar))\n  > \n"
+              f"- ¿Entra 茶? ([log]({log}#cambios-en-el-sistema))\n  > \n\n## Por verificar\n\n- 行\n  > \n")
+        self.assertEqual(anki.review_rules("004-x", ok), [])
+        self.assertEqual(anki.review_rules("004-x", f"# R\n\n{anki.SINE_QUA_NON}\n\n- (nada)\n"), [])
+        def errs(text):
+            return " ".join(anki.review_rules("004-x", text))
+        self.assertIn("primer apartado", errs("# R\n\n## Cómo vas\n\n" + anki.SINE_QUA_NON + "\n- (nada)\n"))
+        self.assertIn("vacío", errs(f"# R\n\n{anki.SINE_QUA_NON}\n\ntexto\n"))
+        self.assertIn("enlace", errs(f"# R\n\n{anki.SINE_QUA_NON}\n\n- ¿Algo?\n  > \n"))
+        self.assertIn("«>»", errs(f"# R\n\n{anki.SINE_QUA_NON}\n\n- ¿Algo? ([x](#r))\n"))
+        many = "".join(f"- ¿{i}? ([x](#r))\n  > \n" for i in range(anki.SINE_QUA_NON_MAX + 1))
+        self.assertIn("como mucho", errs(f"# R\n\n{anki.SINE_QUA_NON}\n\n{many}"))
+        self.assertIn("no existe", errs(f"# R\n\n{anki.SINE_QUA_NON}\n\n- ¿A? ([x](#nada-de-esto))\n  > \n"))
+        self.assertIn("no existe", errs(f"# R\n\n{anki.SINE_QUA_NON}\n\n- ¿A? ([x]({log}#inventado))\n  > \n"))
+        self.assertIn("desde la raíz", errs(f"# R\n\n{anki.SINE_QUA_NON}\n\n- ¿A? ([x](../2-digests/a.md))\n  > \n"))
+
+    def test_state_is_current_and_every_point_has_its_source(self):
+        batch = "003-2026-10-01-comer-dinero-y-contrastes"
+        log = f"/2-digests/summary-{batch}.md#seguimiento"
+        body = "".join(f"{s}\n\n- Algo cierto ([lote 003]({log})).\n\n" for s in anki.STATE_SECTIONS)
+        good = f"{anki.STATE_HEADER}\n\n# Estado tras el lote {batch}\n\n{body}"
+        self.assertEqual(anki.state_rules(batch, good), [])
+        self.assertTrue(any("al día" in e for e in anki.state_rules("004-2026-10-08-otro", good)))
+        self.assertTrue(any("necesita el enlace" in e for e in anki.state_rules(batch, good.replace(f" ([lote 003]({log}))", "", 1))))
+        moving = good.replace(log, f"/1-inbox/review-{batch}.md", 1)
+        self.assertTrue(any("se mueve" in e for e in anki.state_rules(batch, moving)))
+        self.assertTrue(any("falta el apartado" in e for e in anki.state_rules(batch, good.replace("## Tu método", "## Otro"))))
+
+    def test_close_batch_asks_for_frictions_review_and_state(self):
+        import tempfile
+        from pathlib import Path
+        from unittest import mock
+        batch = "999-2026-01-01-prueba"
+        with tempfile.TemporaryDirectory() as tmp:
+            inbox, digests = Path(tmp) / "inbox", Path(tmp) / "digests"
+            inbox.mkdir(); digests.mkdir()
+            (digests / f"summary-{batch}.md").write_text(anki.LOG_HEADER + "\n\n# Log\n", encoding="utf-8")
+            (inbox / f"review-{batch}.md").write_text("# Review\n\n## Cómo vas\n", encoding="utf-8")
+            with mock.patch.object(anki, "INBOX", inbox), mock.patch.object(anki, "DIGESTS", digests), \
+                    mock.patch.object(anki, "STATE", digests / "state.md"):
+                _, errors = anki.close_batch_plan(batch)
+        text = " ".join(errors)
+        self.assertIn("Fricciones del proceso", text)
+        self.assertIn("Sine qua non", text)
+        self.assertIn("state.md", text)
+
+    def test_blackbox_writes_only_where_private_exists(self):
+        import tempfile
+        from pathlib import Path
+        from unittest import mock
+        with tempfile.TemporaryDirectory() as tmp:
+            box = Path(tmp) / "private" / "blackbox.jsonl"
+            with mock.patch.object(anki, "BLACKBOX", box), mock.patch.dict("os.environ", {"ANKI_NO_BLACKBOX": ""}):
+                anki.blackbox(["check"], 0, 1.0)
+                self.assertFalse(box.exists())                 # sin private/ (CI, un fork): nada
+                box.parent.mkdir()
+                anki._RUN.update(errors=[], warnings=["w"])
+                anki.blackbox(["check"], 0, 1.0)
+                rec = json.loads(box.read_text(encoding="utf-8"))
+        self.assertEqual((rec["argv"], rec["rc"], rec["warnings"]), (["check"], 0, ["w"]))
+
+    def test_retro_reads_frictions_and_repeated_warnings(self):
+        logs = [("004-2026-10-08-a", f"# L\n\n{anki.FRICTIONS}\n\n- check tardó mucho.\n\n## Otra\n"),
+                ("005-2026-10-15-b", "# L\n")]
+        rows = [{"ts": "2026-10-08", "argv": ["check"], "rc": 0, "s": 2, "warnings": ["tema largo"]}] * 3 + \
+               [{"ts": "2026-10-09", "argv": ["push"], "rc": 1, "s": 9, "exc": "RuntimeError: x"}]
+        out = "\n".join(anki.retro_report(logs, rows))
+        self.assertIn("check tardó mucho", out)
+        self.assertIn("sin apartado", out)
+        self.assertIn("3 × tema largo", out)
+        self.assertIn("1 fallida", out)
+        self.assertIn("RuntimeError", out)
+
+    def test_stats_groups_failures_by_entry(self):
+        day = 86_400_000
+        now = 100 * day
+        exercises = [{"id": "x.a", "type": "listen", "targets": ["w.a"]}, {"id": "x.b", "type": "read", "targets": ["w.b"]}]
+        eby = {"w.a": {"hanzi": "他", "pinyin": "tā", "meaning": {"es": "él"}},
+               "w.b": {"hanzi": "她", "pinyin": "tā", "meaning": {"es": "ella"}}}
+        infos = [{"cardId": 1, "lapses": 5, "fields": {"ExerciseID": {"value": "x.a"}}},
+                 {"cardId": 2, "lapses": 0, "fields": {"ExerciseID": {"value": "x.b"}}},
+                 {"cardId": 3, "lapses": 0, "fields": {"ExerciseID": {"value": "x.ajena"}}}]
+        revs = {"1": [{"id": now - day, "ease": 1, "type": 1}, {"id": now - day, "ease": 1, "type": 2},
+                      {"id": now - 2 * day, "ease": 0, "type": 4},           # reinicio manual: no cuenta
+                      {"id": now - 90 * day, "ease": 1, "type": 1}],         # fuera del periodo
+                "2": [{"id": now - day, "ease": 3, "type": 1}], "3": [{"id": now - day, "ease": 1, "type": 1}]}
+        out = "\n".join(anki.stats_report(infos, revs, exercises, eby, 30, now))
+        self.assertIn("3 repasos de 2 tarjeta(s)", out)
+        self.assertIn("67 %", out)
+        self.assertIn("w.a 他 tā · él — 2/2 · Escuchar", out)
+        self.assertNotIn("w.b 她", out.split("Lo que más cuesta")[1].split("Olvidadas")[0])
+        self.assertIn("x.a · 5 lapsos", out)
+
 
 @unittest.skipUnless(shutil.which("node"), "sin node: no se prueba el JavaScript de las tarjetas")
 class CardJavaScript(unittest.TestCase):

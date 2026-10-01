@@ -178,3 +178,15 @@ Pediste juntarlo a este lote: `sin-fecha_pegado-en-el-chat-2.md`, archivado en `
 **En el mazo**: 1084 tarjetas. Entran 290 (111 de escucha, 60 de producción, 55 de lectura, 18 de contraste, 17 de huecos, 11 de estructura frente a calco, 10 de tonos y 8 de matiz) y salen 2 (las de 哪儿). Audio nuevo: 112 clips. HSK 1: 159 de 506 (31 %).
 
 **Volumen**: con lo que ya esperaba, hay unas 1.080 tarjetas nuevas. A 20 al día son unos dos meses, siempre primero las del HSK 1. No hace falta subir el ritmo.
+
+### 2026-10-01 · Cómo trabajamos: review, estado, caja negra, `stats` y comprensión lectora
+
+Lo pediste tras revisar los documentos del sistema. El porqué de cada cosa, en `docs/decisions.md`.
+
+- **Comprobado**: el progreso de una tarjeta sobrevive a reimportar el mazo con su texto cambiado y a cambiar de subdeck (prueba en tu Anki, sobre `x.read.tianqi`, que después volvió a nueva).
+- **Review**: empieza por «Sine qua non», lo único que hace falta contestar, con enlaces al detalle; el resto se queda. Añadido arriba de este review.
+- **Estado vivo** (`2-digests/state.md`): la foto de ahora, con la fuente de cada punto. El seguimiento se escribe desde ahí.
+- **Caja negra**: «Fricciones del proceso» en cada log, `private/blackbox.jsonl` (solo local) y `anki.py retro` cada 4 lotes.
+- **`anki.py stats`**: lo que más fallas en Anki, solo lectura. El review lo usará en «Lo que más te cuesta».
+- **Comprensión lectora** (tipo nuevo, lo pediste): un texto corto en hanzi y, al terminar, una pregunta sobre lo leído. Entran 4, con frases que ya tenías: 🃏 Yago estudia chino (presentarse), 🃏 Mi día (con el pinyin encima), 🃏 Mi familia y 🃏 Pekín (pregunta en chino: 北京下雨吗？). Sin audio nuevo.
+- **Documentos**: `docs/design.md` queda como mecanismo, en presente y sin fechas; `docs/goal.md`, solo lo tuyo (y ahora dice que leer es leer hanzi, y cuánto debe entrar por lote); la historia, en `docs/decisions.md`.

@@ -36,7 +36,8 @@ Fuente de verdad del mazo, mantenida por el agente. Un archivo por tema en cada 
 ## Ejercicios (`exercises/`)
 
 - `id` con prefijo `x.`, permanente: de él depende el progreso en Anki. Si cambia lo que pregunta, ID nuevo.
-- `type`: `read | listen | tones | cloze | produce | speak | contrast | derive | components | nuance`.
+- `type`: `read | listen | tones | cloze | produce | speak | contrast | derive | components | nuance | pattern | comprehension`.
+- Comprensión lectora (`type: comprehension`, `x.comprehension.`): `targets` son las frases del texto, en orden (al menos 12 hanzi); `script: hanzi` (solo hanzi; el pinyin, al girar) o `both` (pinyin encima), nunca pinyin solo; `question: {es}` o `{sentence: s.…}` (en chino, una frase del mazo); `answer: {meaning}`. Ver `docs/design.md`, «Tarjetas».
 - `targets` (lo que se evalúa), `context` (visible en la pregunta), `reveal` (frase fijada a mano para el reverso; sin él, se eligen solas entre las que contienen el objetivo), `refs` (entradas de pronunciación).
 - `prompt: {text, hanzi, pinyin, audio}`; `answer: {typed, hanzi, pinyin, meaning}`. `typed`: pinyin numérico (`ni3 hao3`) o, en tonos, un dígito por sílaba (`'25'`). Sin `typed`, autoevaluación.
 - `added`: fecha de creación (etiqueta `mes::` en Anki). No se cambia.

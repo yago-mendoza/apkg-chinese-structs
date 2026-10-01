@@ -49,6 +49,8 @@ class FakeAnki:
         if action == "notesInfo":
             return [{"noteId": i, "modelName": self.cards[i].get("model", MODEL),
                      "fields": {"ExerciseID": {"value": self.cards[i]["ex"]}}} for i in p["notes"]]
+        if action == "getReviewsOfCards":
+            return {str(i): self.cards[i].get("revlog", []) for i in p["cards"]}
         if action == "getDeckConfig":                     # AnkiConnect devuelve siempre una copia (JSON)
             return copy.deepcopy(self.configs[self.deck_conf[p["deck"]]])
         self.writes.append((action, p))
@@ -161,6 +163,21 @@ class AnkiSafety(unittest.TestCase):
         count, _ = self.run_with(fake, anki.reset_progress)
         self.assertEqual(count, 1)
         self.assertEqual(set(fake.touched_cards()), {1})
+
+    def test_stats_only_reads_our_deck(self):
+        fake = FakeAnki([{"id": 1, "deck": self.saludos, "ex": "x.a", "new": False},
+                         {"id": 2, "deck": "HSK 1", "ex": "x.a", "new": False}])
+        queries = []
+        def spy(action, timeout=120, **p):
+            if action == "findCards":
+                queries.append(p["query"])
+            if action == "cardsInfo":
+                self.assertNotIn(2, p["cards"])
+            return fake(action, timeout, **p)
+        with mock.patch.object(anki, "anki_ready", lambda: True):
+            self.run_with(spy, anki.cmd_stats, 30, False)
+        self.assertEqual(fake.writes, [])
+        self.assertTrue(queries and all(f'"deck:{OURS}"' in q for q in queries))
 
     def test_limits_use_our_own_preset(self):
         fake = FakeAnki([{"id": 1, "deck": self.saludos, "ex": "x.a", "new": True},

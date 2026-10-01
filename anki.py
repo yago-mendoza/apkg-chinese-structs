@@ -5,6 +5,8 @@ Uso:
     python anki.py hanzi <caracteres>      piezas, sonido y significado de cada carácter, y sus conexiones en el mazo
     python anki.py plan [--doc <lote>]     tarjetas exigidas que faltan; --doc escribe 1-inbox/review-<lote>.md
     python anki.py gaps                    reparto del mazo y pendientes
+    python anki.py stats [--days N]        lo que más se falla en Anki (solo lectura, solo este mazo)
+    python anki.py retro [--batches N]     retrospectiva: fricciones de los últimos lotes y caja negra
     python anki.py check
     python anki.py notebook                regenera 4-notebook/ desde 3-data/
     python anki.py attic [<lote>]          el desván: lo que espera y lo que despiertan las entradas del lote
@@ -561,7 +563,8 @@ def satisfied(ex):
         "contrast": {"contrast", "recognize"},
         "components": {"recognize"},
         "nuance": {"nuance"},          # matiz o confusión concreta: nunca exigido, lo pide YAGO en el review
-        "pattern": {"pattern"},        # decir una frase con una estructura
+        "pattern": {"pattern"},        # elegir entre la frase buena y su calco
+        "comprehension": {"comprehension"},   # leer un texto corto y responder: nunca exigido, a mano
     }.get(t, set())
 
 
@@ -655,7 +658,7 @@ def cmd_lookup(query):
 
 PRIMARY = {"read": "lectura", "listen": "escucha", "tones": "tonos", "produce": "producción",
            "derive": "producción", "cloze": "producción", "speak": "voz alta", "contrast": "contraste",
-           "components": "componentes", "nuance": "matiz", "pattern": "estructura"}
+           "components": "componentes", "nuance": "matiz", "pattern": "estructura", "comprehension": "comprensión"}
 GENERATED = "<!-- Generado por `anki.py notebook` desde 3-data/. No editar: se rehace en cada lote. -->"
 REVIEW_HEADER = ("<!-- REVIEW: para opinar. Debajo de cada punto hay una línea «>»: escribe lo que quieras (sí, no, "
                  "un matiz, una duda, una frase, una corrección). Lo que escribas entra en el siguiente lote; lo que "
@@ -1042,7 +1045,121 @@ def cmd_plan(doc=None):
     return 0
 
 
-MAINTENANCE_EVERY = 4       # cada cuántos lotes el review recuerda el mantenimiento de Anki
+MAINTENANCE_EVERY = 4       # cada cuántos lotes el review recuerda el mantenimiento de Anki y toca la retrospectiva
+SINE_QUA_NON = "## Sine qua non"   # primer apartado del review: lo único que hace falta contestar
+SINE_QUA_NON_MAX = 7
+FRICTIONS = "## Fricciones del proceso"   # apartado obligatorio del log: qué estorbó al trabajar
+STATE = DIGESTS / "state.md"       # estado vivo: se reescribe en cada lote; cada punto con su fuente
+STATE_HEADER = ("<!-- ESTADO: la foto de ahora (nivel, clases, método, avisos y decisiones abiertas). Se reescribe "
+                "en cada lote; lo que deja de ser cierto se quita. Cada punto enlaza al log, review archivado o "
+                "documento de donde sale. El seguimiento de cada lote se escribe desde aquí y el último log. -->")
+STATE_SECTIONS = ["## Nivel", "## Las clases", "## Tu método", "## Avisos abiertos", "## Decisiones pendientes"]
+MD_LINK = re.compile(r"\]\(([^)\s]+)\)")
+STABLE_LINK = re.compile(r"^/(2-digests|1-inbox/history|docs|3-data)/")   # lo que no se mueve al cerrar un lote
+
+
+def md_slug(heading, seen=None):
+    """Ancla de un título de Markdown como la calcula GitHub: minúsculas, sin puntuación ni emojis, espacios a
+    guiones; los repetidos llevan -1, -2…"""
+    slug = re.sub(r"[^\w\- ]", "", heading.strip().lower()).replace(" ", "-")
+    if seen is not None:
+        n = seen.get(slug, 0)
+        seen[slug] = n + 1
+        slug = f"{slug}-{n}" if n else slug
+    return slug
+
+
+def md_anchors(text):
+    seen, out, fence = {}, set(), False
+    for line in text.splitlines():
+        if line.startswith("```"):
+            fence = not fence
+        m = None if fence else re.match(r"^#{1,6} +(.+?)\s*#*$", line)
+        if m:
+            out.add(md_slug(m.group(1), seen))
+    return out
+
+
+def link_errors(where, text, stable_only):
+    """Enlaces rotos de un documento: el archivo (ruta desde la raíz, empezando por /) y su ancla tienen que existir.
+    `stable_only`: solo rutas que no cambian al cerrar lotes (el review del inbox se archiva y su ruta cambia)."""
+    errors = []
+    own = md_anchors(text)
+    for target in MD_LINK.findall(text):
+        if target.startswith(("http://", "https://")):
+            continue
+        path, _, anchor = target.partition("#")
+        if not path:
+            if anchor not in own:
+                errors.append(f"{where}: el ancla #{anchor} no existe en el propio documento")
+            continue
+        if not path.startswith("/"):
+            errors.append(f"{where}: {target}: los enlaces van desde la raíz del repositorio (/2-digests/…), "
+                          "para que no se rompan al archivar")
+            continue
+        if stable_only and not STABLE_LINK.match(path):
+            errors.append(f"{where}: {target}: enlaza a algo que se mueve al cerrar lotes; usa el log "
+                          "(/2-digests/…) o lo archivado (/1-inbox/history/…)")
+            continue
+        f = ROOT / path.lstrip("/")
+        if not f.is_file():
+            errors.append(f"{where}: {target}: el archivo no existe")
+        elif anchor and anchor not in md_anchors(f.read_text(encoding="utf-8")):
+            errors.append(f"{where}: {target}: el ancla #{anchor} no existe en {path}")
+    return errors
+
+
+def md_section(text, heading):
+    """Las líneas de un apartado «## …», hasta el siguiente del mismo nivel o superior; None si no está."""
+    lines = text.splitlines()
+    for i, line in enumerate(lines):
+        if line.strip() == heading:
+            end = next((j for j in range(i + 1, len(lines)) if re.match(r"^#{1,2} ", lines[j])), len(lines))
+            return lines[i + 1:end]
+    return None
+
+
+def review_rules(batch, text):
+    """El review empieza por «Sine qua non»: entre 1 y SINE_QUA_NON_MAX puntos (o «(nada)»), cada uno con su línea
+    «>» y un enlace a donde está el detalle; y ningún enlace del review está roto."""
+    where = f"1-inbox/review-{batch}.md"
+    first = next((line.strip() for line in text.splitlines() if line.startswith("## ")), None)
+    if first != SINE_QUA_NON:
+        return [f"{where}: el primer apartado tiene que ser «{SINE_QUA_NON[3:]}» (lo único que hace falta contestar)"]
+    errors, body = [], md_section(text, SINE_QUA_NON)
+    points = [(i, line) for i, line in enumerate(body) if line.startswith("- ")]
+    if not points:
+        errors.append(f"{where}: «{SINE_QUA_NON[3:]}» está vacío; si no hace falta nada, «- (nada)»")
+    elif not (len(points) == 1 and points[0][1].strip() == "- (nada)"):
+        if len(points) > SINE_QUA_NON_MAX:
+            errors.append(f"{where}: «{SINE_QUA_NON[3:]}» tiene {len(points)} puntos; como mucho "
+                          f"{SINE_QUA_NON_MAX}: lo demás va en su apartado")
+        for k, (i, line) in enumerate(points):
+            end = points[k + 1][0] if k + 1 < len(points) else len(body)
+            block = body[i:end]
+            if not MD_LINK.search("\n".join(block)):
+                errors.append(f"{where}: «{line[2:42]}…» necesita un enlace a donde está el detalle")
+            if not any(b.strip().startswith(">") for b in block[1:]):
+                errors.append(f"{where}: «{line[2:42]}…» necesita debajo su línea «>»")
+    return errors + link_errors(where, text, stable_only=False)
+
+
+def state_rules(batch, text):
+    """El estado vivo está al día con este lote, tiene sus apartados y cada punto enlaza a su fuente estable."""
+    errors = []
+    if not text.startswith(STATE_HEADER):
+        errors.append("2-digests/state.md debe empezar con STATE_HEADER (anki.py)")
+    if f"# Estado tras el lote {batch}" not in text.splitlines():
+        errors.append(f"2-digests/state.md no está al día: su título debe ser «# Estado tras el lote {batch}»")
+    for s in STATE_SECTIONS:
+        body = md_section(text, s)
+        if body is None:
+            errors.append(f"2-digests/state.md: falta el apartado «{s[3:]}»")
+            continue
+        for line in body:
+            if line.startswith("- ") and line.strip() != "- (nada)" and not MD_LINK.search(line):
+                errors.append(f"2-digests/state.md, «{s[3:]}»: «{line[2:42]}…» necesita el enlace a su fuente")
+    return errors + link_errors("2-digests/state.md", text, stable_only=True)
 
 
 def write_review_doc(batch, osm):
@@ -1053,9 +1170,18 @@ def write_review_doc(batch, osm):
         print(f"AVISO  ya existe review-{batch}.md: no se sobrescribe.")
         return
     lines = [REVIEW_HEADER.format(batch=batch), "", f"# Review del lote {batch}", "",
+             SINE_QUA_NON, "", "Lo único que necesito que contestes para el siguiente lote. Todo lo demás, más "
+             "abajo, es para cuando quieras ahondar.", "",
+             f"<!-- lo completa el agente: como mucho {SINE_QUA_NON_MAX} puntos, solo lo que cambia el mazo según "
+             "la respuesta (sentido o lectura dudosos, algo por verificar, una decisión). Cada punto, una pregunta "
+             "concreta, un enlace a donde está el detalle (#apartado de este review o /2-digests/…) y su línea «>». "
+             "Si no hace falta nada: «- (nada)» -->", "",
              "## Cómo vas", "",
-             "<!-- lo completa el agente, igual que «Seguimiento» en el log: nivel, las clases, tu método "
-             "(mirando los lotes anteriores) y avisos -->", "", "> ", "",
+             "<!-- lo completa el agente desde 2-digests/state.md, igual que «Seguimiento» en el log: nivel, las "
+             "clases, tu método y avisos -->", "", "> ", "",
+             "## Lo que más te cuesta", "",
+             "<!-- lo completa el agente con `anki.py stats`: lo que más fallas en Anki y qué propone (una frase, "
+             "un contraste, bajar su `use`); cada punto con su línea «>» -->", "",
              "## Huecos y propuestas", "",
              "<!-- lo completa el agente: huecos temáticos, lo básico del nivel que falta, caracteres con historia, "
              "qué investigar después; cada uno con su línea «>» -->", "",
@@ -1077,7 +1203,11 @@ def write_review_doc(batch, osm):
         lines += ["## Mantenimiento", "", "Toca el repaso periódico de Anki (docs/owner.md, «Mantenimiento»):", "",
                   "- En Anki desktop: Herramientas → Comprobar multimedia → Borrar no utilizados (sincroniza antes "
                   "y después). Quita los audios que ya no usa ninguna tarjeta; no toca tarjetas ni progreso.",
-                  "  > ", ""]
+                  "  > ", "",
+                  "## Retrospectiva", "",
+                  "<!-- lo completa el agente con `anki.py retro`: qué estorbó al trabajar en los últimos "
+                  f"{MAINTENANCE_EVERY} lotes y qué cambio de proceso propone; lo que se acepte va a "
+                  "docs/decisions.md -->", "", "> ", ""]
     lines += ["## Tus notas", "", "> ", ""]
     path = INBOX / f"review-{batch}.md"
     path.write_text("\n".join(lines), encoding="utf-8")
@@ -1178,7 +1308,7 @@ def wants_audio(ex, eby):
     """Si la respuesta lleva audio. El contraste visual (大/太/天) se decide mirando la
     forma: no lo necesita. El de homófonos y el de palabras que se parecen al oído sí, porque el
     sonido es lo que se contrasta."""
-    if ex.get("type") in ("components", "nuance", "pattern"):
+    if ex.get("type") in ("components", "nuance", "pattern", "comprehension"):   # comprensión: el audio va por frase
         return False
     if ex.get("type") == "contrast":
         return eby.get(ex.get("group"), {}).get("basis") in ("homophone", "soundalike")
@@ -1407,6 +1537,36 @@ def connection_rules(entries, sentences, eby, sby, errors, warnings):
                             f"(`anki.py hanzi {ch}`): ¿conexión de sonido?")
 
 
+COMPREHENSION_MIN = 12          # hanzi como mínimo en el texto de una tarjeta de comprensión
+COMPREHENSION_SCRIPTS = {"hanzi", "both"}   # hanzi solo (el pinyin, al girar) o con pinyin encima; nunca pinyin solo
+
+
+def comprehension_rules(ex, eby, sby, errors, warnings):
+    """Comprensión lectora (docs/goal.md, «Cómo se practican las frases»): un texto de frases del mazo, en orden, y
+    una pregunta sobre lo leído. Sin vocabulario de un nivel superior al del texto en la pregunta."""
+    xid, passage = ex["id"], [sby[t] for t in ex.get("targets", []) if t in sby]
+    if len(passage) != len(ex.get("targets", [])):
+        errors.append(f"{xid}: el texto de una comprensión son frases del mazo (targets: s.…)")
+    elif sum(len(han_only(sentence_text(s))) for s in passage) < COMPREHENSION_MIN:
+        errors.append(f"{xid}: texto demasiado corto para comprensión (mínimo {COMPREHENSION_MIN} hanzi): "
+                      "para una frase sola ya están la lectura y la escucha")
+    if ex.get("script", "hanzi") not in COMPREHENSION_SCRIPTS:
+        errors.append(f"{xid}: script debe ser {' o '.join(sorted(COMPREHENSION_SCRIPTS))} (nunca pinyin solo)")
+    q = ex.get("question") or {}
+    if not (q.get("es") or q.get("sentence")):
+        errors.append(f"{xid}: falta la pregunta (question: {{es: …}} o {{sentence: s.…}} en chino)")
+    if q.get("sentence"):
+        if q["sentence"] not in sby:
+            errors.append(f"{xid}: la pregunta {q['sentence']} no es una frase del mazo")
+        else:
+            levels = hsk_levels()
+            text = max([level_of(s["id"], eby, sby, levels) or 0 for s in passage] or [0])
+            if (level_of(q["sentence"], eby, sby, levels) or 0) > text:
+                warnings.append(f"{xid}: la pregunta es de un nivel superior al del texto")
+    if not (ex.get("answer") or {}).get("meaning"):
+        errors.append(f"{xid}: falta la respuesta (answer: {{meaning: …}})")
+
+
 def quality_rules(entries, sentences, exercises, eby, sby, errors, warnings):
     """Reglas de calidad que no dependen del criterio de nadie (docs/design.md y docs/goal.md)."""
     grammar_rules(entries, sentences, eby, sby, errors, warnings)
@@ -1545,7 +1705,7 @@ def validate(entries, sentences, exercises, require_audio=True):
         if not s.get("translation"):
             errors.append(f"{s['id']}: falta traducción")
     types = {"read", "listen", "tones", "cloze", "produce", "speak", "components", "contrast", "derive", "nuance",
-             "pattern"}
+             "pattern", "comprehension"}
     seen = {}
     for ex in exercises:
         xid = ex["id"]
@@ -1581,6 +1741,8 @@ def validate(entries, sentences, exercises, require_audio=True):
                 errors.append(f"{xid}: tonos «{typed}» no equivalen a «{ans['pinyin']}»")
         elif typed and ans.get("pinyin") and compact(numeric_to_marked(typed)) != compact(ans["pinyin"]):
             errors.append(f"{xid}: typed «{typed}» no equivale a «{ans['pinyin']}»")
+        if ex.get("type") == "comprehension":
+            comprehension_rules(ex, eby, sby, errors, warnings)
         if ex.get("type") in ("contrast", "derive"):
             g = eby.get(ex.get("group"), {})
             refs = [m.get("ref") for m in g.get("members", [])]
@@ -1691,6 +1853,7 @@ def validate(entries, sentences, exercises, require_audio=True):
 
 
 def report(errors, warnings):
+    _RUN["errors"], _RUN["warnings"] = list(errors), list(warnings)
     for w in warnings:
         print(f"AVISO  {w}")
     for e in errors:
@@ -1822,6 +1985,14 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .slot-S { --s: #4e79a7; } .slot-N { --s: #59a14f; } .slot-V { --s: #e15759; } .slot-Adj { --s: #f28e2b; }
 .slot-Num { --s: #b07aa1; } .slot-Nombre { --s: #76b7b2; } .slot-Lugar { --s: #9c755f; }
 .slot-Tiempo { --s: #edc948; } .slot-Frase { --s: #8c8c8c; }
+.passage { max-width: 26em; margin: 0 auto; text-align: left; }
+.passage .hz-line { font-size: 28px; line-height: 1.6; }
+.passage .sent { justify-content: flex-start; margin: 0 6px 6px 0; }
+details.question { max-width: 26em; margin: 18px auto 0; padding: 10px 12px; border-radius: 12px;
+                   border: 1px solid var(--line); background: var(--panel); }
+details.question summary { font: 700 12px/1.4 Menlo, Consolas, monospace; letter-spacing: .1em;
+                           text-transform: uppercase; color: var(--muted); cursor: pointer; }
+details.question .hz-line { font-size: 24px; margin-top: 8px; }
 """
 # Los colores solo alinean segmentos hanzi↔pinyin; los tonos se leen por sus marcas.
 
@@ -1978,6 +2149,18 @@ def card_fields(ex, eby, sby, manifest, media_files):
         st = eby.get((ex.get("targets") or [None])[0], {})
         front = "".join(f'<div class="option"><div class="hanzi small">{esc(hz)}</div><div class="pinyin">{esc(py)}</div></div>'
                         for hz, py in calque_options(ex, st, sby))
+    elif ex["type"] == "comprehension":
+        # Leer primero; la pregunta, plegada debajo, se abre al terminar. Pinyin encima solo con script: both.
+        both = ex.get("script") == "both"
+        text = [sby[t] for t in ex.get("targets", []) if t in sby]
+        para = lambda ss: ("".join(render_sentence(s) for s in ss) if both
+                           else f'<div class="hz-line">{esc("".join(sentence_text(s) for s in ss))}</div>')
+        line = lambda s: para([s])
+        q = ex.get("question") or {}
+        qs = sby.get(q.get("sentence"))
+        front = ('<div class="passage">' + para(text) + "</div>"
+                 + '<details class="question"><summary>Pregunta</summary>'
+                 + (line(qs) if qs else f'<div class="meaning">{esc(q.get(lang, ""))}</div>') + "</details>")
     elif prompt.get("hanzi"):
         front = f'<div class="hanzi">{esc(prompt["hanzi"])}</div>'
     if prompt.get("pinyin"):
@@ -2005,6 +2188,14 @@ def card_fields(ex, eby, sby, manifest, media_files):
         back += "".join(f'<div class="example">{render_sentence(sby[sid])}<div>{esc(sby[sid]["translation"].get(lang))}</div>'
                         f'{sound(sentence_text(sby[sid]), manifest, media_files)}</div>'
                         for sid in ex.get("reveal", []) if sid in sby)
+        meaning = None
+    elif ex["type"] == "comprehension":
+        # La respuesta y, debajo, la pregunta (si era en chino) y el texto con pinyin, traducción y audio, frase a frase.
+        q = sby.get((ex.get("question") or {}).get("sentence"))
+        back = f'<div class="meaning">{esc(ans.get("meaning", ""))}</div>' + "".join(
+            f'<div class="example">{render_sentence(s)}<div>{esc(s["translation"].get(lang))}</div>'
+            f'{sound(sentence_text(s), manifest, media_files)}</div>'
+            for s in ([q] if q else []) + [sby[t] for t in ex.get("targets", []) if t in sby])
         meaning = None
     elif sent:
         back = render_sentence(sent)
@@ -2070,7 +2261,8 @@ def card_fields(ex, eby, sby, manifest, media_files):
             notes.append("<h4>Pronunciación</h4>" + "".join(f"<div>{esc(t)}</div>" for t in traps))
     # La categoría de la palabra que se responde, en pequeño bajo el significado.
     first = eby.get((ex.get("targets") or [None])[0], {})
-    if not sent and ex["type"] not in ("pattern", "contrast") and pos_of(first) and first.get("hanzi") == ans.get("hanzi"):
+    if not sent and ex["type"] not in ("pattern", "contrast", "comprehension") and pos_of(first) \
+            and first.get("hanzi") == ans.get("hanzi"):
         back += f'<div class="legend pos">{esc(POS_LABEL[pos_of(first)])}</div>'
     examples = [] if ex["type"] == "pattern" else examples_for(ex, sby, eby)
     if examples:
@@ -2130,7 +2322,7 @@ def note_section(html_note):
 
 TYPE_ES = {"read": "Leer", "listen": "Escuchar", "produce": "Decir", "speak": "En voz alta", "tones": "Tonos",
            "cloze": "Hueco", "contrast": "Contraste", "components": "Componentes", "derive": "Deducir",
-           "nuance": "Matiz", "pattern": "Estructura"}
+           "nuance": "Matiz", "pattern": "Estructura", "comprehension": "Comprensión"}
 
 
 def card_meta(ex, eby, sby):
@@ -2650,10 +2842,22 @@ def close_batch_plan(batch):
     log = DIGESTS / f"summary-{batch}.md"
     if not log.exists():
         errors.append(f"falta 2-digests/summary-{batch}.md: el log del lote (lo escribe el agente)")
-    elif not log.read_text(encoding="utf-8").startswith(LOG_HEADER):
-        errors.append(f"2-digests/summary-{batch}.md debe empezar con LOG_HEADER (anki.py): así se sabe qué es")
-    if not (INBOX / f"review-{batch}.md").exists():
+    else:
+        text = log.read_text(encoding="utf-8")
+        if not text.startswith(LOG_HEADER):
+            errors.append(f"2-digests/summary-{batch}.md debe empezar con LOG_HEADER (anki.py): así se sabe qué es")
+        if md_section(text, FRICTIONS) is None:
+            errors.append(f"2-digests/summary-{batch}.md: falta «{FRICTIONS[3:]}» (qué estorbó al trabajar; "
+                          "«- (nada)» si nada)")
+    review = INBOX / f"review-{batch}.md"
+    if not review.exists():
         errors.append(f"falta 1-inbox/review-{batch}.md (se empieza con `plan --doc {batch}` y lo completa el agente)")
+    else:
+        errors += review_rules(batch, review.read_text(encoding="utf-8"))
+    if not STATE.exists():
+        errors.append("falta 2-digests/state.md: el estado vivo (lo escribe el agente en cada lote)")
+    else:
+        errors += state_rules(batch, STATE.read_text(encoding="utf-8"))
     raw = HISTORY / batch
     for f in sorted(INBOX.iterdir()) if INBOX.exists() else []:
         if not f.is_file() or f.name == "README.md" or f.name == f"review-{batch}.md":
@@ -2678,6 +2882,7 @@ def cmd_close_batch(batch, dry_run):
     El log del lote ya está en 2-digests/ (lo escribe el agente al procesar)."""
     import shutil
     actions, errors = close_batch_plan(batch)
+    _RUN["errors"] = list(errors)
     for desc, src, dst in actions:
         print(f"{'·' if dry_run else '→'} {desc:32} {src.relative_to(ROOT).as_posix()} → {dst.relative_to(ROOT).as_posix()}")
     for e in errors:
@@ -2741,7 +2946,7 @@ def find_anki():
 
 
 STAGE = {"read": 0, "contrast": 1, "components": 1, "nuance": 1, "listen": 2, "tones": 3,
-         "produce": 4, "derive": 4, "cloze": 4, "speak": 5, "pattern": 5}
+         "produce": 4, "derive": 4, "cloze": 4, "speak": 5, "pattern": 5, "comprehension": 5}
 
 
 def new_card_order(entries, sentences, exercises):
@@ -2914,6 +3119,167 @@ def cmd_push(allow_missing_audio, sync, prune=False, reset=False, force=False):
     return 0
 
 
+# ---------------------------------------------------------------- lo que se queda: stats
+
+STATS_DAYS = 30        # periodo por defecto de `stats`
+STATS_TOP = 15         # entradas que más cuestan, como mucho
+LEECH_LAPSES = 4       # una tarjeta que se ha olvidado tantas veces ya no se arregla repasando: pide otra cosa
+REVLOG_STUDY = {0, 1, 2, 3}   # tipos del registro de Anki que son estudio (aprender, repasar, reaprender, filtrado);
+                              # 4 y 5 son cambios manuales (reiniciar, reprogramar)
+
+
+def item_label(item):
+    """Una entrada o una frase en una línea de informe: hanzi, pinyin y significado."""
+    if item.get("segments"):
+        return f"{sentence_text(item)} {sentence_pinyin(item)} · {item.get('translation', {}).get('es', '')}"
+    return (f"{item.get('hanzi') or item.get('title', '')} {item.get('pinyin', '')} · "
+            f"{item.get('meaning', {}).get('es', '')}")
+
+
+def stats_report(infos, revs, exercises, eby, days, now_ms):
+    """Líneas del informe de `stats` a partir de lo leído de Anki. `infos`: cardsInfo; `revs`: getReviewsOfCards
+    (clave: ID de tarjeta como texto). Agrupa por entrada evaluada (`targets`), no por tarjeta."""
+    xby = {x["id"]: x for x in exercises}
+    since = now_ms - days * 86_400_000
+    total = again = studied = 0
+    days_seen, by_type, by_entry, leeches = set(), {}, {}, []
+    for c in infos:
+        x = xby.get(c.get("fields", {}).get("ExerciseID", {}).get("value"))
+        if x is None:
+            continue
+        log = [r for r in revs.get(str(c["cardId"]), []) if r.get("type") in REVLOG_STUDY and r["id"] >= since]
+        if c.get("lapses", 0) >= LEECH_LAPSES:
+            leeches.append((c["lapses"], x))
+        if not log:
+            continue
+        fails = sum(1 for r in log if r.get("ease") == 1)
+        total, again, studied = total + len(log), again + fails, studied + 1
+        days_seen |= {datetime.date.fromtimestamp(r["id"] / 1000) for r in log}
+        kind = TYPE_ES.get(x.get("type"), x.get("type"))
+        n, f = by_type.get(kind, (0, 0))
+        by_type[kind] = (n + len(log), f + fails)
+        for tid in x.get("targets", []):
+            n, f, kinds = by_entry.get(tid, (0, 0, set()))
+            by_entry[tid] = (n + len(log), f + fails, kinds | ({kind} if fails else set()))
+    lines = [f"Anki, últimos {days} días (solo {DECK_NAME}): {total} repasos de {studied} tarjeta(s) de "
+             f"{len(infos)}, en {len(days_seen)} día(s)" + (f"; {round(100 * again / total)} % «Otra vez»" if total else "")
+             + "."]
+    if not total:
+        return lines + ["Aún no hay repasos en este periodo: nada que analizar."]
+    lines += ["", "Por tipo de tarjeta («Otra vez» / repasos):"]
+    for kind, (n, f) in sorted(by_type.items(), key=lambda kv: -kv[1][1] / kv[1][0]):
+        lines.append(f"  {kind:12} {round(100 * f / n):3d} %  ({f}/{n})")
+    hard = sorted(((f, n, tid, kinds) for tid, (n, f, kinds) in by_entry.items() if f),
+                  key=lambda r: (-r[0], -r[0] / r[1], r[2]))[:STATS_TOP]
+    lines += ["", "Lo que más cuesta (por entrada: fallos / repasos, y en qué tarjetas):"]
+    for f, n, tid, kinds in hard:
+        lines.append(f"  {tid} {item_label(eby.get(tid, {}))} — {f}/{n} · {', '.join(sorted(kinds))}")
+    if not hard:
+        lines.append("  (ningún fallo)")
+    if leeches:
+        lines += ["", f"Olvidadas {LEECH_LAPSES} veces o más (repasar no basta: otra frase, un contraste, otra pista):"]
+        lines += [f"  {x['id']} · {lapses} lapsos" for lapses, x in sorted(leeches, key=lambda r: -r[0])]
+    return lines
+
+
+def cmd_stats(days=STATS_DAYS, sync=True):
+    """Qué se queda y qué no: lee de Anki el registro de repasos de este mazo. Solo lectura (salvo sincronizar, para
+    que lleguen los repasos del móvil); nunca abre Anki ni toca otros mazos."""
+    import time
+    if not anki_ready():
+        print("AnkiConnect no responde: abre Anki desktop y repite (stats no lo abre).")
+        return 1
+    if sync:
+        try:
+            anki_request("sync")
+        except RuntimeError as e:
+            print(f"Sin sincronizar ({e}): pueden faltar los repasos del móvil.")
+    cards = anki_request("findCards", query=f'"deck:{DECK_NAME}"')
+    infos, revs = [], {}
+    for i in range(0, len(cards), 500):
+        chunk = cards[i:i + 500]
+        infos += anki_request("cardsInfo", cards=chunk)
+        revs.update(anki_request("getReviewsOfCards", cards=chunk))
+    entries, sentences, exercises = load()
+    print("\n".join(stats_report(infos, revs, exercises, {i["id"]: i for i in entries + sentences}, days,
+                                 int(time.time() * 1000))))
+    return 0
+
+
+# ---------------------------------------------------------------- caja negra y retrospectiva
+
+BLACKBOX = ROOT / "private" / "blackbox.jsonl"   # una línea por orden de anki.py; solo local (private/ no va a git)
+BLACKBOX_KEEP = 100                                # errores y avisos guardados por orden, como mucho
+_RUN = {}                                          # lo que la orden en curso deja para la caja negra
+
+
+def blackbox(argv, rc, seconds, exc=None):
+    """Apunta la orden en private/blackbox.jsonl: cuándo, qué, cuánto tardó, cómo acabó, sus errores y avisos.
+    Solo si existe private/ (en local; nunca en git ni en la CI) y sin ANKI_NO_BLACKBOX. Si falla, no rompe nada."""
+    if not BLACKBOX.parent.is_dir() or os.environ.get("ANKI_NO_BLACKBOX"):
+        return
+    rec = {"ts": datetime.datetime.now().isoformat(timespec="seconds"), "argv": argv, "rc": rc,
+           "s": round(seconds, 2), "errors": [e[:200] for e in _RUN.get("errors", [])[:BLACKBOX_KEEP]],
+           "warnings": [w[:200] for w in _RUN.get("warnings", [])[:BLACKBOX_KEEP]]}
+    if exc:
+        rec["exc"] = exc
+    try:
+        with BLACKBOX.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+    except OSError:
+        pass
+
+
+def retro_report(logs, rows):
+    """Líneas de la retrospectiva: las fricciones que cada log apuntó y lo que la caja negra repite. `logs`:
+    [(lote, texto del log)]; `rows`: registros de la caja negra del mismo tramo."""
+    from collections import Counter
+    lines = [f"Retrospectiva de {len(logs)} lote(s): {logs[0][0][:3]}–{logs[-1][0][:3]}" if logs else
+             "Retrospectiva: aún no hay logs.", ""]
+    for batch, text in logs:
+        body = md_section(text, FRICTIONS)
+        lines.append(f"Fricciones del lote {batch}:")
+        lines += [f"  {line}" for line in (body or []) if line.strip()] if body is not None else \
+            ["  (sin apartado: lote anterior a la regla)"]
+    lines += ["", f"Caja negra: {len(rows)} orden(es) en el tramo."]
+    if not rows:
+        return lines
+    by_cmd = {}
+    for r in rows:
+        by_cmd.setdefault(r["argv"][0] if r["argv"] else "?", []).append(r)
+    for cmd, rs in sorted(by_cmd.items(), key=lambda kv: -len(kv[1])):
+        bad = sum(1 for r in rs if r.get("rc") not in (0, None) or r.get("exc"))
+        lines.append(f"  {cmd:12} {len(rs):4d}× · {bad} fallida(s) · "
+                     f"media {sum(r.get('s', 0) for r in rs) / len(rs):.1f} s")
+    for key, title in (("errors", "Errores"), ("warnings", "Avisos")):
+        seen = Counter(m for r in rows for m in set(r.get(key, [])))
+        common = [(n, m) for m, n in seen.most_common(10) if n >= 3]
+        if common:
+            lines += ["", f"{title} que se repiten (en cuántas órdenes):"]
+            lines += [f"  {n:3d} × {m}" for n, m in common]
+    crashes = [r for r in rows if r.get("exc")]
+    if crashes:
+        lines += ["", "Excepciones:"] + [f"  {r['ts']} {' '.join(r['argv'])}: {r['exc']}" for r in crashes[-5:]]
+    return lines
+
+
+def cmd_retro(batches=MAINTENANCE_EVERY):
+    logs = [(f.stem[len("summary-"):], f.read_text(encoding="utf-8"))
+            for f in sorted(DIGESTS.glob("summary-*.md"))[-batches:]]
+    since = logs[0][0][4:14] if logs else ""
+    rows = []
+    if BLACKBOX.exists():
+        for line in BLACKBOX.read_text(encoding="utf-8").splitlines():
+            try:
+                r = json.loads(line)
+            except ValueError:
+                continue
+            if r.get("ts", "")[:10] >= since:
+                rows.append(r)
+    print("\n".join(retro_report(logs, rows)))
+    return 0
+
+
 # ---------------------------------------------------------------- CLI
 
 def main():
@@ -2922,6 +3288,11 @@ def main():
     sub.add_parser("lookup").add_argument("query")
     sub.add_parser("hanzi").add_argument("text")
     sub.add_parser("gaps")
+    st = sub.add_parser("stats")
+    st.add_argument("--days", type=int, default=STATS_DAYS, help="periodo en días")
+    st.add_argument("--no-sync", action="store_true", help="no sincronizar antes (faltarán los repasos del móvil)")
+    rt = sub.add_parser("retro")
+    rt.add_argument("--batches", type=int, default=MAINTENANCE_EVERY, help="cuántos lotes mirar")
     c = sub.add_parser("check")
     c.add_argument("--allow-missing-audio", action="store_true")
     a = sub.add_parser("audio")
@@ -2946,6 +3317,24 @@ def main():
     sc = sub.add_parser("scaffold")
     sc.add_argument("--write", action="store_true", help="escribir las tarjetas (sin esto, solo se listan)")
     args = p.parse_args()
+    import time
+    started, rc, exc = time.time(), None, None
+    _RUN.clear()
+    try:
+        rc = run(args)
+        return rc
+    except Exception as e:      # se apunta y se deja subir: la caja negra no esconde nada
+        exc = f"{type(e).__name__}: {e}"[:300]
+        raise
+    finally:
+        blackbox(sys.argv[1:], rc, time.time() - started, exc)
+
+
+def run(args):
+    if args.cmd == "stats":
+        return cmd_stats(args.days, not args.no_sync)
+    if args.cmd == "retro":
+        return cmd_retro(args.batches)
     if args.cmd == "hanzi":
         return cmd_hanzi(args.text)
     if args.cmd == "lookup":

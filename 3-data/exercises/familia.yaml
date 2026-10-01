@@ -407,3 +407,14 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Mi hermana está leyendo el periódico.}
     comments: []
+  - id: x.comprehension.mi-familia
+    added: 2026-10-01
+    lang: es
+    type: comprehension
+    targets: [s.ta-shi-wo-de-baba, s.ta-you-erzi-he-nver, s.women-shi-yijiaren]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Cuántos hijos tiene el padre?'}
+    answer: {meaning: 'Dos: un hijo y una hija.'}
+    comments: []

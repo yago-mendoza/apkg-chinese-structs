@@ -1,6 +1,6 @@
 # Notas del dueño
 
-Configuración y decisiones propias de este mazo (Yago Mendoza). Nada secreto: el repositorio es público y las claves nunca entran aquí. Quien use el sistema con sus propios apuntes sustituye este archivo por el suyo.
+Configuración y decisiones propias de este mazo (Yago Mendoza). Nada secreto: el repositorio es público y las claves nunca entran aquí. Quien use el sistema con sus propios apuntes sustituye este archivo por el suyo. Aquí van los valores vigentes y cómo está montado el entorno; el porqué de cada decisión, en `docs/decisions.md`; lo que depende de quién aprende, en `docs/goal.md`.
 
 ## Quién estudia y cómo
 
@@ -44,4 +44,5 @@ Cada 4 lotes (el review lo recuerda con su propio apartado) o una vez al mes:
 ## Por comprobar en uso real
 
 - Que el móvil conserva lo escrito entre anverso y reverso (si no, las tarjetas escritas quedan como autoevaluación).
-- Que el historial de repaso se conserva al reimportar, cuando termine la fase de pruebas.
+
+Comprobado: el progreso se conserva al reimportar y al cambiar de subdeck (prueba en este Anki, ver `docs/decisions.md`, 2026-10-01).
