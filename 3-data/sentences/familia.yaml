@@ -3,7 +3,7 @@
 sentences:
   - id: s.ta-shi-wo-de-baba
     use: say
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     segments:
       - {text: 他, ref: w.ta.he, pinyin: tā}
       - {text: 是, ref: w.shi, pinyin: shì}
@@ -14,7 +14,7 @@ sentences:
     translation: {es: Él es mi padre., en: He is my dad.}
   - id: s.ta-shi-wo-de-mama
     use: hear
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     segments:
       - {text: 她, ref: w.ta.she, pinyin: tā}
       - {text: 是, ref: w.shi, pinyin: shì}

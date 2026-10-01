@@ -8,7 +8,7 @@ entries:
     hanzi: 很
     pinyin: hěn
     meaning: {es: 'muy (con adjetivos, a menudo solo enlace)', en: very}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Sin 很, el adjetivo suena a comparación implícita: «yo estoy bien (a diferencia de otros)».', original: Sin hěn suena a comparación tipo ‘yo estoy bien / mejor…’}
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Con un adjetivo como predicado, 很 suele ser un enlace sin énfasis: 我很好 = estoy bien.'}
@@ -20,7 +20,7 @@ entries:
     hanzi: 好
     pinyin: hǎo
     meaning: {es: 'bien, bueno', en: good}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: '女 «mujer» + 子 «niño»: una madre con su hijo, imagen de algo bueno.', original: 女 + 子 (woman + child)}
   - id: w.gao
@@ -30,7 +30,7 @@ entries:
     hanzi: 高
     pinyin: gāo
     meaning: {es: alto, en: tall}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: 'Un edificio alto: el tejado 亠, un piso 口 y, abajo, 冂 con una ventana 口.', original: 'Un edificio alto con su techo 亠, primer piso 口, y piso bajo 冂 con una ventana 口'}
       - {kind: linguistic, private: false, date: '2026-09-27', text: 'La parte de arriba se repite, recortada, en 京 jīng de 北京 y en 亮 liàng «brillante» [HSK 2].'}
@@ -41,7 +41,7 @@ entries:
     hanzi: 矮
     pinyin: ǎi
     meaning: {es: bajo (de estatura), en: short}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '矢 es una flecha, que antes servía de medida: al medir se queda corto, bajo.', original: mido con una flecha a una mujer agachada y da poca altura → bajo.}
       - {kind: linguistic, private: false, date: '2026-09-27', text: 'Para personas y edificios; para longitud o tiempo, 短 duǎn.'}
@@ -52,7 +52,7 @@ entries:
     hanzi: 胖
     pinyin: pàng
     meaning: {es: gordo, en: fat}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'El 月 de la izquierda es 肉 «carne», como en muchas partes del cuerpo; no «luna».'}
       - {kind: linguistic, private: false, date: '2026-09-27', text: '半 bàn «mitad» [HSK 1] le da el sonido: pàng. 月 es 肉 «carne».'}
@@ -64,7 +64,7 @@ entries:
     hanzi: 瘦
     pinyin: shòu
     meaning: {es: delgado, en: slim}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '疒 «enfermedad» + 叟 «anciano»: un anciano enfermo, flaco.', original: cuerpo enfermo de un anciano → flaco}
       - {kind: linguistic, private: false, date: '2026-09-27', text: '叟 sǒu «anciano» da un sonido parecido: shòu. 疒 es la pieza de las enfermedades: una cama con una persona tumbada.'}
@@ -76,7 +76,7 @@ entries:
     pinyin: piàoliang
     meaning: {es: 'guapo, bonito', en: beautiful}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: 漂 se lee piào solo en 漂亮; suelto es piāo «flotar». 票 piào «billete» le da el sonido.}
       - {kind: sound, private: false, date: '2026-09-27', text: '亮 liàng pierde el tono dentro de 漂亮: piàoliang.', original: se dice liàng pero en piao liang pierde el acento}
@@ -89,7 +89,7 @@ entries:
     hanzi: 帅
     pinyin: shuài
     meaning: {es: guapo (sobre todo hombres), en: handsome}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: 'Viene de 元帅 yuánshuài «mariscal» [HSK 7]; hoy se usa sobre todo como «guapo». Por herencia, un mariscal sería el guapo supremo.', original: 'hoy dia mariscalseria como el guapo supremo, por asi decirlo, por ehernecia'}
   - id: w.congming
@@ -100,7 +100,7 @@ entries:
     pinyin: cōngming
     meaning: {es: 'listo, inteligente', en: clever}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: sound, private: false, date: '2026-09-27', text: El acento cae en cōng; ming va átono y corto., original: cong ming el tonic oes cong no ming}
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '聪 lleva 耳 «oreja»: tener el oído fino. Con 明 «claro»: listo.', original: 聪 cōng = oído fino. 聪明 = oído fino + claridad}
@@ -111,7 +111,7 @@ entries:
     hanzi: 笨
     pinyin: bèn
     meaning: {es: 'torpe, tonto', en: stupid}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '竹 «bambú» sobre 本 «raíz»: una raíz de bambú no sirve para nada, torpe.'}
   - id: w.keai
@@ -121,7 +121,7 @@ entries:
     hanzi: 可爱
     pinyin: kě'ài
     meaning: {es: 'mono, adorable', en: cute}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: Suena como «kawaii» dicho con la boca dormida., original: like kawaii but mouth asleep}
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'El parecido con «kawaii» es solo de sonido, no histórico.'}
@@ -132,7 +132,7 @@ entries:
     hanzi: 幽默
     pinyin: yōumò
     meaning: {es: 'gracioso, con sentido del humor', en: humorous}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: Préstamo fonético del inglés «humour».}
       - {kind: sound, private: false, date: '2026-09-27', text: mò es corto y cae con fuerza., original: 'mò de 幽默 yōumò suena más como “muó” muy corto, pero con tono 4: cae fuerte.'}

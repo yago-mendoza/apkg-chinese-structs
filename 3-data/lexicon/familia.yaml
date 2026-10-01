@@ -9,7 +9,7 @@ entries:
     pinyin: bàba
     meaning: {es: papá, en: dad}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: '2026-10-01', text: 'Frente a 妈妈 māma: 爸 bà cae; 妈 mā va alto y plano. La segunda sílaba de las dos es corta y floja (tono neutro).'}
   - id: w.mama
@@ -21,7 +21,7 @@ entries:
     meaning: {es: mamá, en: mom}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
     connection: {kind: sound, with: [吗], text: '马 mǎ «caballo» da el sonido a 妈 mā y a 吗 ma: el caballo solo presta su sonido.'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: '女 «mujer» aporta el significado y 马 mǎ, el sonido. 马 significa
           «caballo», pero aquí solo presta su sonido: el caballo no tiene nada que ver con mamá.'}
@@ -35,7 +35,7 @@ entries:
     hanzi: 儿子
     pinyin: érzi
     meaning: {es: hijo, en: son}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: note, private: false, date: '2026-09-27', text: 'En 儿子 no hace falta marcar el género: es la forma por defecto; en 女儿 sí, con 女.', original: el hjio no hace falta poner su genero proque es bovio es basico es lo que dan por default}
   - id: w.nver
@@ -45,7 +45,7 @@ entries:
     hanzi: 女儿
     pinyin: nǚ'ér
     meaning: {es: hija, en: daughter}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: '女儿 = 女 «mujer» + 儿 «niño»: hija. El 儿 ér es el mismo que abre 儿子.'}
   - id: w.haizi
@@ -55,7 +55,7 @@ entries:
     hanzi: 孩子
     pinyin: háizi
     meaning: {es: 'niño, niña; hijo, hija', en: child}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments: []
   - id: w.xiaohai
     use: hear
@@ -67,7 +67,7 @@ entries:
     meaning: {es: 'niño pequeño, crío', en: kid}
     level: 1
     level_reason: 'sinónimo coloquial de 孩子 [HSK 1]; 小 y 孩 son HSK 1'
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 孩子 es el término general; 小孩 añade 小 «pequeño».}
   - id: g.hao-nver-erzi

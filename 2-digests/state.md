@@ -28,12 +28,10 @@ Escrito el 2026-10-01, al estrenar el estado vivo; resume los lotes 001 a 003.
 ## Avisos abiertos
 
 - Fase de pruebas abierta: el progreso puede reiniciarse a petición. Ya está comprobado que reimportar y reorganizar lo conservan. ([la prueba](/docs/decisions.md#2026-10-01--el-progreso-sobrevive-a-reimportar-y-reorganizar-comprobado))
-- 1.087 tarjetas nuevas pendientes: unos 54 días a 20 al día. ([criterio de volumen](/docs/decisions.md#2026-10-01--cuánto-entra-por-lote))
-- Las 110 entradas del lote 001 tienen fecha del 25 de septiembre, pero las clases fueron el 21 y el 23; falta saber qué hojas son de cada día. ([respuesta de YAGO](/1-inbox/history/002-2026-09-29-clima-apellidos-y-caracteres/review-001-2026-09-25-primeras-clases.md#por-verificar))
+- 1.088 tarjetas nuevas pendientes: unos 54 días a 20 al día. YAGO prefiere seguir con 20 y subir a 30 si se acumulan, así que los próximos lotes entran más ligeros. ([criterio de volumen](/docs/decisions.md#2026-10-01--cuánto-entra-por-lote), [lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#2026-10-01--fechas-del-lote-001))
 - Desván: 38 elementos esperando, el más antiguo del 27 de septiembre; 发票 y 欠 esperan a 买单 y a 借. ([lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#el-tiempo-y-el-desván))
 
 ## Decisiones pendientes
 
 - Cerrar la fase de pruebas. ([la prueba](/docs/decisions.md#2026-10-01--el-progreso-sobrevive-a-reimportar-y-reorganizar-comprobado))
-- Ritmo: subir las nuevas al día o hacer lotes más ligeros. ([criterio de volumen](/docs/decisions.md#2026-10-01--cuánto-entra-por-lote))
 - Cómo quiere las tarjetas de comprensión (largo, pinyin, preguntas en chino). ([comprensión lectora](/docs/decisions.md#2026-10-01--comprensión-lectora))

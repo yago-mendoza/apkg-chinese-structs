@@ -9,7 +9,7 @@ entries:
     pinyin: hē
     meaning: {es: beber, en: to drink}
     register: neutral
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     frequency: {}
     relations: []
     comments: []
@@ -21,7 +21,7 @@ entries:
     pinyin: shuǐ
     meaning: {es: agua, en: water}
     register: neutral
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     frequency: {}
     relations: []
     comments: []
@@ -32,7 +32,7 @@ entries:
     hanzi: 想
     pinyin: xiǎng
     meaning: {es: querer (hacer algo); pensar, en: to want to; to think}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Dos sentidos: «pensar» y «querer, tener ganas de».', original: think / desire}
   - id: w.qu
@@ -42,7 +42,7 @@ entries:
     hanzi: 去
     pinyin: qù
     meaning: {es: ir, en: to go}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments: []
   - id: w.mai
     use: say
@@ -51,7 +51,7 @@ entries:
     hanzi: 买
     pinyin: mǎi
     meaning: {es: comprar, en: to buy}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments: []
   - id: w.shuiguo
     use: say
@@ -61,7 +61,7 @@ entries:
     pinyin: shuǐguǒ
     meaning: {es: fruta, en: fruit}
     relations: [w.shui]
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments: []
   - id: w.shangdian
     use: say
@@ -70,7 +70,7 @@ entries:
     hanzi: 商店
     pinyin: shāngdiàn
     meaning: {es: tienda, en: shop}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments: []
   - id: w.zai.at
     use: say
@@ -81,7 +81,7 @@ entries:
     hanzi: 在
     pinyin: zài
     meaning: {es: estar en (un lugar), en: to be at}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments: []
   - id: w.nar
     use: drop
@@ -92,7 +92,7 @@ entries:
     pinyin: nǎr
     meaning: {es: dónde, en: where}
     accept_pinyin_mismatch: '儿 se funde con la sílaba anterior (erhua): nǎr'
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments: []
   - id: w.kafei
     use: say
@@ -102,7 +102,7 @@ entries:
     pinyin: kāfēi
     meaning: {es: café, en: coffee}
     connection: {kind: sound, with: [非], text: '非 fēi da el sonido a 啡; el 口 de 咖 y 啡 marca una palabra que imita un sonido extranjero (coffee).'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: Transcripción fonética de «coffee».}
   - id: w.qiaokeli
@@ -112,7 +112,7 @@ entries:
     hanzi: 巧克力
     pinyin: qiǎokèlì
     meaning: {es: chocolate, en: chocolate}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: Transcripción fonética de «chocolate».}
   - id: w.niurou
@@ -125,7 +125,7 @@ entries:
     meaning: {es: carne de ternera, en: beef}
     level: 2
     level_reason: 'comida de menú; 肉 y 牛 aparecen pronto, 牛 es HSK 3 como palabra suelta'
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Modificador + núcleo: 牛 «vaca» especifica 肉 «carne».'}
   - id: w.xihuan

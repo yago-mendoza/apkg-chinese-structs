@@ -11,7 +11,7 @@ entries:
     hanzi: 在
     pinyin: zài
     meaning: {es: estar (haciendo algo), en: (action in progress)}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.kan
     use: say
@@ -20,7 +20,7 @@ entries:
     hanzi: 看
     pinyin: kàn
     meaning: {es: mirar; leer, en: to look; to read}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: 'Una mano 手 sobre el ojo 目, como quien se hace visera para mirar a lo lejos.', original: mano sobre ojo}
   - id: w.kanjian
@@ -30,7 +30,7 @@ entries:
     hanzi: 看见
     pinyin: kànjiàn
     meaning: {es: ver (llegar a ver), en: to see}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: '看 es la acción de mirar; 见 añade el resultado: llegar a ver.'}
   - id: w.kankan
@@ -44,7 +44,7 @@ entries:
     accept_pinyin_mismatch: la repetición del verbo va en tono neutro
     level: 1
     level_reason: 'reduplicación de 看 [HSK 1]'
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Repetir el verbo lo suaviza: «mirar un poco», no «mirar dos veces».'}
   - id: w.shu
@@ -54,7 +54,7 @@ entries:
     hanzi: 书
     pinyin: shū
     meaning: {es: libro, en: book}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.shouji
     use: say
@@ -63,7 +63,7 @@ entries:
     hanzi: 手机
     pinyin: shǒujī
     meaning: {es: móvil, en: mobile phone}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 手 «mano» + 机 «máquina».}
       - {kind: linguistic, private: false, date: '2026-09-27', text: '机 jī «máquina» (con 木 a la izquierda, no 扌): 手机 es la máquina de mano; 飞机 fēijī, la que vuela; 机票 jīpiào, su billete.'}
@@ -74,7 +74,7 @@ entries:
     hanzi: 足球
     pinyin: zúqiú
     meaning: {es: fútbol, en: football}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Calco: 足 «pie» + 球 «pelota».'}
   - id: w.huoche
@@ -84,7 +84,7 @@ entries:
     hanzi: 火车
     pinyin: huǒchē
     meaning: {es: tren, en: train}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: '火 «fuego» + 车 «vehículo»: el primero especifica el segundo.'}
   - id: w.rukou
@@ -95,7 +95,7 @@ entries:
     hanzi: 入口
     pinyin: rùkǒu
     meaning: {es: entrada, en: entrance}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments: []
   - id: w.zhe
     use: say

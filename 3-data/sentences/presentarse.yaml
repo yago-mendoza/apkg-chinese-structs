@@ -69,7 +69,7 @@ sentences:
     translation: {es: Soy ingeniero., en: I'm an engineer.}
   - id: s.women-dou-shi-xuesheng
     use: say
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     segments:
       - {text: 我们, ref: w.women, pinyin: wǒmen}
       - {text: 都, ref: w.dou, pinyin: dōu}
@@ -79,7 +79,7 @@ sentences:
     translation: {es: Todos somos estudiantes., en: We are all students.}
   - id: s.nimen-bu-shi-xuesheng-ma
     use: hear
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     segments:
       - {text: 你们, ref: w.nimen, pinyin: nǐmen}
       - {text: 不, ref: w.bu, pinyin: bú, sandhi: bù → bú delante de cuarto tono}
@@ -90,7 +90,7 @@ sentences:
     translation: {es: '¿No sois estudiantes?', en: 'Aren''t you students?'}
   - id: s.tamen-dou-shi-zhongguoren-ma
     use: hear
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     segments:
       - {text: 他们, ref: w.tamen, pinyin: tāmen}
       - {text: 都, ref: w.dou, pinyin: dōu}

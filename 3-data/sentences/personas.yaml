@@ -21,7 +21,7 @@ sentences:
     translation: {es: Somos amigos., en: We are friends.}
   - id: s.nin-shi-women-de-laoshi-ma
     use: hear
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, note: 'nombre ilegible
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21', note: 'nombre ilegible
         en los apuntes (Xīm?): se ha quitado'}
     segments:
       - {text: 您, ref: w.nin, pinyin: nín}
@@ -34,7 +34,7 @@ sentences:
     translation: {es: '¿Es usted nuestra profesora?', en: 'Are you our teacher?'}
   - id: s.dui-wo-shi-nimen-de-laoshi
     use: hear
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, note: 'nombre ilegible
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21', note: 'nombre ilegible
         en los apuntes (Xīm?): se ha quitado'}
     segments:
       - {text: 对, ref: w.dui, pinyin: duì}

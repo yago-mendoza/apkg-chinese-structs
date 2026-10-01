@@ -11,7 +11,7 @@ entries:
     register: neutral
     level: 1
     level_reason: saludo básico; 你 y 好 son HSK 1
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     frequency: {}
     relations: [p.third-tone-sandhi]
     comments: []
@@ -22,7 +22,7 @@ entries:
     hanzi: 再见
     pinyin: zàijiàn
     meaning: {es: adiós, en: goodbye}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Despedida general, válida en cualquier registro.', original: formal / general ♡}
   - id: w.baibai
@@ -34,7 +34,7 @@ entries:
     meaning: {es: 'adiós (informal, del inglés bye-bye)', en: bye-bye}
     level: 1
     level_reason: despedida coloquial de todos los días
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.zao
     use: say
@@ -43,7 +43,7 @@ entries:
     hanzi: 早
     pinyin: zǎo
     meaning: {es: ¡buenos días! (informal); temprano, en: morning!; early}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Forma abreviada de 早上好 zǎoshang hǎo, «buenos días».', original: zǎo ← zǎoshang hǎo}
   - id: e.ninhao
@@ -55,7 +55,7 @@ entries:
     meaning: {es: hola (con respeto), en: hello (polite)}
     level: 1
     level_reason: saludo cortés básico; 您 y 好 son HSK 1
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: e.nimenhao
     use: say
@@ -66,7 +66,7 @@ entries:
     meaning: {es: hola (a un grupo), en: hello (to a group)}
     level: 1
     level_reason: saludo a un grupo; 你们 y 好 son HSK 1
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: e.dajiahao
     use: hear
@@ -77,7 +77,7 @@ entries:
     meaning: {es: hola a todos, en: hello everyone}
     level: 1
     level_reason: saludo a todos; 大家 y 好 son HSK 1
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: e.laoshihao
     use: say
@@ -88,7 +88,7 @@ entries:
     meaning: {es: 'hola, profe', en: 'hello, teacher'}
     level: 1
     level_reason: saludo a la profesora; 老师 y 好 son HSK 1
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: g.hao-greetings
     kind: group
@@ -102,7 +102,7 @@ entries:
       - {ref: e.nimenhao, cue: un grupo que tienes delante; relajado}
       - {ref: e.dajiahao, cue: todo el mundo; más amplio y formal}
       - {ref: e.laoshihao, cue: 'a la profesora: el cargo + 好'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: '您们 nínmen suena forzado y apenas se usa: para saludar con respeto a un grupo, 大家好 dàjiā hǎo o 各位好 gèwèi hǎo [HSK 3]. 你们好 nǐmen hǎo: relajado, para un grupo de amigos que tienes delante. 大家好 dàjiā hǎo: para dirigirse a todo el mundo, más formal.', original: 'nínmen hǎo → respectful w/ seniors / teachers; nǐmen hǎo → relaxed, friends (grupo delante de mí); dàjiā hǎo → formal, group (todo el mundo)'}
   - id: w.huanying

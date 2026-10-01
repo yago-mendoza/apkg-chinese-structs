@@ -8,7 +8,7 @@ entries:
     hanzi: 中国
     pinyin: Zhōngguó
     meaning: {es: China, en: China}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '国: un territorio cerrado 口 que guarda el sello de jade 玉 del rey: el país.'}
   - id: w.xibanya
@@ -22,7 +22,7 @@ entries:
     level: 1
     level_reason: 'mi país: lo necesito desde el primer día'
     connection: {kind: sound, with: [雅], text: '牙 yá da el sonido a 雅 yǎ, el de tu nombre, 雅戈.'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Transcripción fonética: los caracteres imitan el sonido, no el significado.'}
       - {kind: linguistic, private: false, date: '2026-09-27', text: 西 xī «oeste» es el mismo de 东西 dōngxi «cosas».}
@@ -36,7 +36,7 @@ entries:
     meaning: {es: Estados Unidos, en: United States}
     level: 1
     level_reason: nombre de país frecuente; 国 es HSK 1
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '美: 大 «persona» con 羊 «carnero» encima, como adorno de cuernos: bello.'}
       - {kind: linguistic, private: false, date: '2026-09-27', text: '美国 es en parte transcripción: 美 měi imita el sonido de «América» y de paso significa «bello».'}
@@ -47,7 +47,7 @@ entries:
     hanzi: 中文
     pinyin: Zhōngwén
     meaning: {es: chino (la lengua), en: Chinese (language)}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Modificador + núcleo: 中 «China» especifica 文 «lengua, escritura».'}
   - id: w.shi
@@ -57,7 +57,7 @@ entries:
     hanzi: 是
     pinyin: shì
     meaning: {es: ser, en: to be}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-29', text: '是 une dos nombres (我是学生), no un nombre con un adjetivo: 我很高, no 我是高. Para preguntar vale 她漂亮吗？ o 她是不是很漂亮？, pero no 她是漂亮吗？.'}
   - id: w.bu
@@ -68,7 +68,7 @@ entries:
     pinyin: bù
     meaning: {es: 'no', en: not}
     relations: [p.bu-sandhi]
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.ma
     use: say
@@ -78,7 +78,7 @@ entries:
     pinyin: ma
     meaning: {es: '¿…? (convierte la frase en pregunta de sí o no)', en: yes/no question particle}
     connection: {kind: sound, with: [妈], text: '马 mǎ «caballo» da el sonido a 吗 ma y a 妈 mā: el caballo solo presta su sonido.'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: Partícula final que convierte una afirmación en una pregunta de sí o no., original: checking for yes/no}
   - id: w.ne
@@ -88,7 +88,7 @@ entries:
     hanzi: 呢
     pinyin: ne
     meaning: {es: '¿y…? (devuelve la pregunta)', en: 'and…?'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Tono neutro, corto y apagado, con una vocal parecida a [ə]. Tras una respuesta, devuelve la pregunta: «¿y tú?».', original: 'neutral → decay, /ə/, “y tú?”'}
   - id: w.ye
@@ -98,7 +98,7 @@ entries:
     hanzi: 也
     pinyin: yě
     meaning: {es: también, en: also}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.dou
     use: say
@@ -107,7 +107,7 @@ entries:
     hanzi: 都
     pinyin: dōu
     meaning: {es: 'todos, ambos (adverbio)', en: 'all, both'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.de
     use: say
@@ -116,7 +116,7 @@ entries:
     hanzi: 的
     pinyin: de
     meaning: {es: 'de (posesión: 我的 = mi)', en: '''s (possessive)'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.jiao
     use: say
@@ -125,7 +125,7 @@ entries:
     hanzi: 叫
     pinyin: jiào
     meaning: {es: llamarse, en: to be called}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: teacher, private: false, date: '2026-10-01', text: 'Para confirmar si alguien es una persona se pregunta 你是张丽吗？, no 你叫张丽吗？.'}
   - id: w.shenme
@@ -135,7 +135,7 @@ entries:
     hanzi: 什么
     pinyin: shénme
     meaning: {es: qué, en: what}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '什么 va donde iría la respuesta, sin cambiar el orden: 他叫什么名字？ o 他的名字是什么？ (la primera es la más corriente).'}
   - id: w.mingzi
@@ -146,7 +146,7 @@ entries:
     pinyin: míngzi
     meaning: {es: nombre, en: name}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.renshi
     use: say
@@ -156,7 +156,7 @@ entries:
     pinyin: rènshi
     meaning: {es: conocer (a alguien), en: to know (someone)}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: '认 «reconocer» + 识 «distinguir»: conocer a alguien, estar familiarizado con algo.', original: 认识 = reconocer + distinguir = familiarizado con}
       - {kind: note, private: false, date: 2026-09-25, text: 识 aporta la idea de distinguir algo de lo demás porque se conoce., original: distinguir algo (de los demás) con conocimiento}
@@ -167,7 +167,7 @@ entries:
     hanzi: 高兴
     pinyin: gāoxìng
     meaning: {es: contento, en: happy}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.xing
     use: say
@@ -282,7 +282,7 @@ entries:
     meaning: {es: David (nombre de ejemplo), en: David (example name)}
     level: 1
     level_reason: nombre propio de ejemplo en la primera lección
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: 2026-09-25}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.xiansheng
     use: say

@@ -10,10 +10,10 @@ Lo único que necesito que contestes para el siguiente lote. Todo lo demás, má
   > 
 
 - **Ritmo.** Tienes 1.087 tarjetas nuevas pendientes: a 20 al día son unos 54 días, y lo de la clase de esta semana sale al final. ¿Subes a 30 nuevas al día (unos 36 días, con algo más de repaso diario), o lo dejas en 20 y los próximos lotes entran más ligeros? ([el criterio](/docs/decisions.md#2026-10-01--cuánto-entra-por-lote))
-  > 
+  > (Respondido en el chat, 2026-10-01) 20 está bien; subiría a 30 si se acumulan.
 
 - **Fechas del lote 001.** Dijiste que esas clases fueron el 21 y el 23 de septiembre, pero no sé qué hojas son de cada día, así que todo sigue con fecha del 25. ¿Hojas 1–6 el 21 y 7–15 el 23? ([lo que contestaste](/1-inbox/history/002-2026-09-29-clima-apellidos-y-caracteres/review-001-2026-09-25-primeras-clases.md#por-verificar))
-  > 
+  > (Respondido en el chat, 2026-10-01) Más o menos, sí. Aplicado.
 
 - **Comprensión lectora.** Ya hay 4 tarjetas: un texto corto en hanzi y, al terminar, una pregunta plegada (una con el pinyin encima, otra con la pregunta en chino). ¿Te sirven así, más largas o más cortas, con más preguntas en chino? ([cómo son](/docs/decisions.md#2026-10-01--comprensión-lectora))
   > 

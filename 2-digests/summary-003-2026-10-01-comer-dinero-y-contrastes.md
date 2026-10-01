@@ -190,3 +190,7 @@ Lo pediste tras revisar los documentos del sistema. El porqué de cada cosa, en 
 - **`anki.py stats`**: lo que más fallas en Anki, solo lectura. El review lo usará en «Lo que más te cuesta».
 - **Comprensión lectora** (tipo nuevo, lo pediste): un texto corto en hanzi y, al terminar, una pregunta sobre lo leído. Entran 4, con frases que ya tenías: 🃏 Yago estudia chino (presentarse), 🃏 Mi día (con el pinyin encima), 🃏 Mi familia y 🃏 Pekín (pregunta en chino: 北京下雨吗？). Sin audio nuevo.
 - **Documentos**: `docs/design.md` queda como mecanismo, en presente y sin fechas; `docs/goal.md`, solo lo tuyo (y ahora dice que leer es leer hanzi, y cuánto debe entrar por lote); la historia, en `docs/decisions.md`.
+
+### 2026-10-01 · Fechas del lote 001
+
+Confirmaste que las clases del lote 001 fueron el 21 (hojas 1 a 6) y el 23 de septiembre (hojas 7 a 15). Las 118 entradas y frases de ese lote tienen ya su fecha en `source.date` (antes, la de procesado, el 25; ocho frases no tenían ninguna). Ritmo: se queda en 20 nuevas al día; los próximos lotes, más ligeros.

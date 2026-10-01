@@ -10,7 +10,7 @@ sentences:
     translation: {es: ¡Hasta mañana!, en: See you tomorrow!}
   - id: s.xiawu-qu-shangdian
     use: say
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     segments:
       - {text: 下午, ref: w.xiawu, pinyin: xiàwǔ}
       - {text: 去, ref: w.qu, pinyin: qù}
