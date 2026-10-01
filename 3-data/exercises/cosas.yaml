@@ -6,7 +6,7 @@ exercises:
     type: read
     targets: [w.kan]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 看}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 看}
     answer: {typed: kan4, hanzi: 看, pinyin: kàn, meaning: mirar; leer}
     reveal: [s.wo-zai-kan-shu]
     lang: es
@@ -16,7 +16,7 @@ exercises:
     type: read
     targets: [w.kanjian]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 看见}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 看见}
     answer: {typed: kan4 jian4, hanzi: 看见, pinyin: kànjiàn, meaning: ver (llegar a ver)}
     lang: es
     comments: []
@@ -25,7 +25,7 @@ exercises:
     type: read
     targets: [w.kankan]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 看看}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 看看}
     answer: {typed: kan4 kan5, hanzi: 看看, pinyin: kànkan, meaning: echar un vistazo}
     lang: es
     comments: []
@@ -34,7 +34,7 @@ exercises:
     type: read
     targets: [w.shu]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 书}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 书}
     answer: {typed: shu1, hanzi: 书, pinyin: shū, meaning: libro}
     reveal: [s.wo-zai-kan-shu]
     lang: es
@@ -44,7 +44,7 @@ exercises:
     type: read
     targets: [w.shouji]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 手机}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 手机}
     answer: {typed: shou3 ji1, hanzi: 手机, pinyin: shǒujī, meaning: móvil}
     lang: es
     comments: []
@@ -53,7 +53,7 @@ exercises:
     type: read
     targets: [w.zuqiu]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 足球}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 足球}
     answer: {typed: zu2 qiu2, hanzi: 足球, pinyin: zúqiú, meaning: fútbol}
     lang: es
     comments: []
@@ -62,7 +62,7 @@ exercises:
     type: read
     targets: [w.huoche]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 火车}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 火车}
     answer: {typed: huo3 che1, hanzi: 火车, pinyin: huǒchē, meaning: tren}
     lang: es
     comments: []
@@ -71,7 +71,7 @@ exercises:
     type: read
     targets: [w.rukou]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 入口}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 入口}
     answer: {typed: ru4 kou3, hanzi: 入口, pinyin: rùkǒu, meaning: entrada}
     lang: es
     comments: []
@@ -233,7 +233,7 @@ exercises:
     type: read
     targets: [w.zhe]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 这}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 这}
     answer: {hanzi: 这, pinyin: zhè, meaning: 'este, esto'}
     comments: []
   - id: x.contrast.na.that
@@ -273,7 +273,7 @@ exercises:
     type: read
     targets: [w.na.that]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 那}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 那}
     answer: {hanzi: 那, pinyin: nà, meaning: 'ese, eso; aquel'}
     comments: []
   - id: x.contrast.men
@@ -301,7 +301,7 @@ exercises:
     type: read
     targets: [w.men]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 门}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 门}
     answer: {hanzi: 门, pinyin: mén, meaning: puerta}
     comments: []
   - id: x.dictation.feiji
@@ -319,7 +319,7 @@ exercises:
     type: read
     targets: [w.feiji]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 飞机}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 飞机}
     answer: {hanzi: 飞机, pinyin: fēijī, meaning: avión}
     comments: []
   - id: x.dictation.xiaomao
@@ -337,7 +337,7 @@ exercises:
     type: read
     targets: [w.xiaomao]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 小猫}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 小猫}
     answer: {hanzi: 小猫, pinyin: xiǎomāo, meaning: gatito}
     comments: []
   - id: x.dictation.gongzuo
@@ -364,7 +364,7 @@ exercises:
     type: read
     targets: [w.gongzuo]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 工作}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 工作}
     answer: {hanzi: 工作, pinyin: gōngzuò, meaning: trabajo; trabajar}
     comments: []
   - id: x.dictation.zou
@@ -391,7 +391,7 @@ exercises:
     type: read
     targets: [w.zou]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 走}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 走}
     answer: {hanzi: 走, pinyin: zǒu, meaning: irse; andar}
     comments: []
   - id: x.dictation.le
@@ -421,7 +421,7 @@ exercises:
     type: read
     targets: [w.le]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 了}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 了}
     answer: {hanzi: 了, pinyin: le, meaning: 'partícula: algo ya pasó o ha cambiado'}
     comments: []
   - id: x.dictation.cuo
@@ -448,7 +448,7 @@ exercises:
     type: read
     targets: [w.cuo]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 错}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 错}
     answer: {hanzi: 错, pinyin: cuò, meaning: equivocado; error}
     comments: []
   - id: x.dictation.lanqiu
@@ -466,7 +466,7 @@ exercises:
     type: read
     targets: [w.lanqiu]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 篮球}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 篮球}
     answer: {hanzi: 篮球, pinyin: lánqiú, meaning: baloncesto}
     comments: []
   - id: x.dictation.da.play
@@ -484,7 +484,7 @@ exercises:
     type: read
     targets: [w.da.play]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 打}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 打}
     answer: {hanzi: 打, pinyin: dǎ, meaning: jugar (a deportes de pelota); golpear}
     comments: []
   - id: x.read.chukou
@@ -493,7 +493,7 @@ exercises:
     type: read
     targets: [w.chukou]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 出口}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 出口}
     answer: {hanzi: 出口, pinyin: chūkǒu, meaning: salida}
     comments: []
   - id: x.dictation.ruanjian
@@ -511,7 +511,7 @@ exercises:
     type: read
     targets: [w.ruanjian]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 软件}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 软件}
     answer: {hanzi: 软件, pinyin: ruǎnjiàn, meaning: software}
     comments: []
   - id: x.listen.zhe-shi-wode-shouji
@@ -659,7 +659,7 @@ exercises:
     type: read
     targets: [w.shuo]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 说}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 说}
     answer: {hanzi: 说, pinyin: shuō, meaning: 'hablar, decir'}
     comments: []
   - id: x.dictation.zenme
@@ -689,7 +689,7 @@ exercises:
     type: read
     targets: [w.zenme]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 怎么}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 怎么}
     answer: {hanzi: 怎么, pinyin: zěnme, meaning: cómo}
     comments: []
   - id: x.tones.zenme
@@ -726,7 +726,7 @@ exercises:
     type: read
     targets: [w.neng]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 能}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 能}
     answer: {hanzi: 能, pinyin: néng, meaning: poder (ser capaz)}
     comments: []
   - id: x.dictation.he.and
@@ -756,7 +756,7 @@ exercises:
     type: read
     targets: [w.he.and]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 和}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 和}
     answer: {hanzi: 和, pinyin: hé, meaning: 'y, con'}
     comments: []
   - id: x.listen.zenme-shuo
@@ -824,4 +824,960 @@ exercises:
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Tengo que trabajar.}
+    comments: []
+  - id: x.contrast.da.play
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.da-da
+    targets: [w.da.play]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 打, pinyin: dǎ, meaning: jugar (a deportes de pelota); golpear}
+    comments: []
+  - id: x.contrast.he.and
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.he-he
+    targets: [w.he.and]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 和, pinyin: hé, meaning: 'y, con'}
+    comments: []
+  - id: x.dictation.mei
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.mei]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mei2, hanzi: 没, pinyin: méi, meaning: no (no pasó; no hay)}
+    comments: []
+  - id: x.cloze.mei
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.wo-mei-chifan
+    gap: w.mei
+    targets: [w.mei]
+    context: [w.wo, w.chifan]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «No he comido.»'}
+    answer: {typed: mei2, hanzi: 没, pinyin: méi, meaning: no (no pasó; no hay)}
+    comments: []
+  - id: x.read.mei
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.mei]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 没}
+    answer: {hanzi: 没, pinyin: méi, meaning: no (no pasó; no hay)}
+    comments: []
+  - id: x.contrast.guo.exp
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.guo-guo
+    targets: [w.guo.exp]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 过, pinyin: guo, meaning: haber (hecho alguna vez)}
+    comments: []
+  - id: x.dictation.guo.exp
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.guo.exp]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: guo5, hanzi: 过, pinyin: guo, meaning: haber (hecho alguna vez)}
+    comments: []
+  - id: x.cloze.guo.exp
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.wo-qu-guo-beijing
+    gap: w.guo.exp
+    targets: [w.guo.exp]
+    context: [w.wo, w.qu, w.beijing]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «He estado en Pekín.»'}
+    answer: {typed: guo5, hanzi: 过, pinyin: guo, meaning: haber (hecho alguna vez)}
+    comments: []
+  - id: x.read.guo.exp
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.guo.exp]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 过}
+    answer: {hanzi: 过, pinyin: guo, meaning: haber (hecho alguna vez)}
+    comments: []
+  - id: x.dictation.yong
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.yong]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yong4, hanzi: 用, pinyin: yòng, meaning: usar; con (un instrumento)}
+    comments: []
+  - id: x.produce.yong
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.yong]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «usar; con (un instrumento)»? Escribe el pinyin.'}
+    answer: {typed: yong4, hanzi: 用, pinyin: yòng, meaning: usar; con (un instrumento)}
+    comments: []
+  - id: x.read.yong
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.yong]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 用}
+    answer: {hanzi: 用, pinyin: yòng, meaning: usar; con (un instrumento)}
+    comments: []
+  - id: x.dictation.zuo.sit
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.zuo.sit]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zuo4, hanzi: 坐, pinyin: zuò, meaning: sentarse; ir en (un vehículo)}
+    comments: []
+  - id: x.produce.zuo.sit
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.zuo.sit]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «sentarse; ir en (un vehículo)»? Escribe el pinyin.'}
+    answer: {typed: zuo4, hanzi: 坐, pinyin: zuò, meaning: sentarse; ir en (un vehículo)}
+    comments: []
+  - id: x.read.zuo.sit
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.zuo.sit]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 坐}
+    answer: {hanzi: 坐, pinyin: zuò, meaning: sentarse; ir en (un vehículo)}
+    comments: []
+  - id: x.dictation.jin
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.jin]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jin4, hanzi: 进, pinyin: jìn, meaning: entrar}
+    comments: []
+  - id: x.produce.jin
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.jin]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «entrar»? Escribe el pinyin.'}
+    answer: {typed: jin4, hanzi: 进, pinyin: jìn, meaning: entrar}
+    comments: []
+  - id: x.read.jin
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.jin]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 进}
+    answer: {hanzi: 进, pinyin: jìn, meaning: entrar}
+    comments: []
+  - id: x.dictation.bie
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.bie]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bie2, hanzi: 别, pinyin: bié, meaning: 'no (hagas): prohibir'}
+    comments: []
+  - id: x.cloze.bie
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.bie-kan-wo
+    gap: w.bie
+    targets: [w.bie]
+    context: [w.kan, w.wo]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¡No me mires!»'}
+    answer: {typed: bie2, hanzi: 别, pinyin: bié, meaning: 'no (hagas): prohibir'}
+    comments: []
+  - id: x.read.bie
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.bie]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 别}
+    answer: {hanzi: 别, pinyin: bié, meaning: 'no (hagas): prohibir'}
+    comments: []
+  - id: x.dictation.ting
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.ting]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ting1, hanzi: 听, pinyin: tīng, meaning: escuchar}
+    comments: []
+  - id: x.produce.ting
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.ting]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «escuchar»? Escribe el pinyin.'}
+    answer: {typed: ting1, hanzi: 听, pinyin: tīng, meaning: escuchar}
+    comments: []
+  - id: x.read.ting
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.ting]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 听}
+    answer: {hanzi: 听, pinyin: tīng, meaning: escuchar}
+    comments: []
+  - id: x.dictation.dianying
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.dianying]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dian4 ying3, hanzi: 电影, pinyin: diànyǐng, meaning: película}
+    comments: []
+  - id: x.read.dianying
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.dianying]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 电影}
+    answer: {hanzi: 电影, pinyin: diànyǐng, meaning: película}
+    comments: []
+  - id: x.dictation.shengqi
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.shengqi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: sheng1 qi4, hanzi: 生气, pinyin: shēngqì, meaning: enfadarse; enfadado}
+    comments: []
+  - id: x.produce.shengqi
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.shengqi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «enfadarse; enfadado»? Escribe el pinyin.'}
+    answer: {typed: sheng1 qi4, hanzi: 生气, pinyin: shēngqì, meaning: enfadarse; enfadado}
+    comments: []
+  - id: x.read.shengqi
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.shengqi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 生气}
+    answer: {hanzi: 生气, pinyin: shēngqì, meaning: enfadarse; enfadado}
+    comments: []
+  - id: x.dictation.teng
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.teng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: teng2, hanzi: 疼, pinyin: téng, meaning: doler}
+    comments: []
+  - id: x.read.teng
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.teng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 疼}
+    answer: {hanzi: 疼, pinyin: téng, meaning: doler}
+    comments: []
+  - id: x.dictation.nan
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.nan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nan2, hanzi: 难, pinyin: nán, meaning: difícil}
+    comments: []
+  - id: x.produce.nan
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.nan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «difícil»? Escribe el pinyin.'}
+    answer: {typed: nan2, hanzi: 难, pinyin: nán, meaning: difícil}
+    comments: []
+  - id: x.read.nan
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.nan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 难}
+    answer: {hanzi: 难, pinyin: nán, meaning: difícil}
+    comments: []
+  - id: x.dictation.feichang
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.feichang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fei1 chang2, hanzi: 非常, pinyin: fēicháng, meaning: 'muy, muchísimo'}
+    comments: []
+  - id: x.cloze.feichang
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.feichang-hao
+    gap: w.feichang
+    targets: [w.feichang]
+    context: [w.hao]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¡Muy bien!»'}
+    answer: {typed: fei1 chang2, hanzi: 非常, pinyin: fēicháng, meaning: 'muy, muchísimo'}
+    comments: []
+  - id: x.read.feichang
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.feichang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 非常}
+    answer: {hanzi: 非常, pinyin: fēicháng, meaning: 'muy, muchísimo'}
+    comments: []
+  - id: x.contrast.daxiang
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.dajia-daxiang
+    targets: [w.daxiang]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 大象, pinyin: dàxiàng, meaning: elefante}
+    comments: []
+  - id: x.dictation.daxiang
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.daxiang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: da4 xiang4, hanzi: 大象, pinyin: dàxiàng, meaning: elefante}
+    comments: []
+  - id: x.read.daxiang
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.daxiang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 大象}
+    answer: {hanzi: 大象, pinyin: dàxiàng, meaning: elefante}
+    comments: []
+  - id: x.dictation.yinyue
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.yinyue]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yin1 yue4, hanzi: 音乐, pinyin: yīnyuè, meaning: música}
+    comments: []
+  - id: x.read.yinyue
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.yinyue]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 音乐}
+    answer: {hanzi: 音乐, pinyin: yīnyuè, meaning: música}
+    comments: []
+  - id: x.dictation.kuaizi
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.kuaizi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kuai4 zi5, hanzi: 筷子, pinyin: kuàizi, meaning: palillos}
+    comments: []
+  - id: x.read.kuaizi
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.kuaizi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 筷子}
+    answer: {hanzi: 筷子, pinyin: kuàizi, meaning: palillos}
+    comments: []
+  - id: x.tones.kuaizi
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.kuaizi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 筷子, pinyin: kuai zi}
+    answer: {typed: '45', hanzi: 筷子, pinyin: kuàizi, meaning: palillos}
+    comments: []
+  - id: x.dictation.baozhi
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.baozhi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bao4 zhi3, hanzi: 报纸, pinyin: bàozhǐ, meaning: periódico}
+    comments: []
+  - id: x.read.baozhi
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.baozhi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 报纸}
+    answer: {hanzi: 报纸, pinyin: bàozhǐ, meaning: periódico}
+    comments: []
+  - id: x.dictation.weishenme
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.weishenme]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wei4 shen2 me5, hanzi: 为什么, pinyin: wèishénme, meaning: por qué}
+    comments: []
+  - id: x.read.weishenme
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.weishenme]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 为什么}
+    answer: {hanzi: 为什么, pinyin: wèishénme, meaning: por qué}
+    comments: []
+  - id: x.tones.weishenme
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.weishenme]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 为什么, pinyin: wei shen me}
+    answer: {typed: '425', hanzi: 为什么, pinyin: wèishénme, meaning: por qué}
+    comments: []
+  - id: x.dictation.zheme
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.zheme]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhe4 me5, hanzi: 这么, pinyin: zhème, meaning: 'tan, así de'}
+    comments: []
+  - id: x.read.zheme
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.zheme]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 这么}
+    answer: {hanzi: 这么, pinyin: zhème, meaning: 'tan, así de'}
+    comments: []
+  - id: x.tones.zheme
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.zheme]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 这么, pinyin: zhe me}
+    answer: {typed: '45', hanzi: 这么, pinyin: zhème, meaning: 'tan, así de'}
+    comments: []
+  - id: x.dictation.chuqu
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.chuqu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chu1 qu5, hanzi: 出去, pinyin: chūqu, meaning: salir (hacia fuera)}
+    comments: []
+  - id: x.read.chuqu
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.chuqu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 出去}
+    answer: {hanzi: 出去, pinyin: chūqu, meaning: salir (hacia fuera)}
+    comments: []
+  - id: x.tones.chuqu
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.chuqu]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 出去, pinyin: chu qu}
+    answer: {typed: '15', hanzi: 出去, pinyin: chūqu, meaning: salir (hacia fuera)}
+    comments: []
+  - id: x.dictation.zheli
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.zheli]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhe4 li3, hanzi: 这里, pinyin: zhèlǐ, meaning: aquí}
+    comments: []
+  - id: x.read.zheli
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.zheli]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 这里}
+    answer: {hanzi: 这里, pinyin: zhèlǐ, meaning: aquí}
+    comments: []
+  - id: x.listen.wo-qu-guo-beijing
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-qu-guo-beijing
+    targets: [s.wo-qu-guo-beijing]
+    context: [w.wo, w.qu, w.guo.exp, w.beijing]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: He estado en Pekín.}
+    comments: []
+  - id: x.produce.wo-qu-guo-beijing
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.wo-qu-guo-beijing
+    targets: [s.wo-qu-guo-beijing]
+    context: [w.wo, w.qu, w.guo.exp, w.beijing]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «He estado en Pekín.»'}
+    answer: {meaning: He estado en Pekín.}
+    comments: []
+  - id: x.listen.ni-kan-guo-zhege-dianying-ma
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ni-kan-guo-zhege-dianying-ma
+    targets: [s.ni-kan-guo-zhege-dianying-ma]
+    context: [w.ni, w.kan, w.guo.exp, w.zhe, w.ge, w.dianying, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Has visto esta película?'}
+    comments: []
+  - id: x.listen.wo-zuo-feiji-qu-zhongguo
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-zuo-feiji-qu-zhongguo
+    targets: [s.wo-zuo-feiji-qu-zhongguo]
+    context: [w.wo, w.zuo.sit, w.feiji, w.qu, w.zhongguo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Voy a China en avión.}
+    comments: []
+  - id: x.produce.wo-zuo-feiji-qu-zhongguo
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.wo-zuo-feiji-qu-zhongguo
+    targets: [s.wo-zuo-feiji-qu-zhongguo]
+    context: [w.wo, w.zuo.sit, w.feiji, w.qu, w.zhongguo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Voy a China en avión.»'}
+    answer: {meaning: Voy a China en avión.}
+    comments: []
+  - id: x.listen.wo-yong-kuaizi-chifan
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-yong-kuaizi-chifan
+    targets: [s.wo-yong-kuaizi-chifan]
+    context: [w.wo, w.yong, w.kuaizi, w.chifan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Como con palillos.}
+    comments: []
+  - id: x.listen.ni-jinlai-ba
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ni-jinlai-ba
+    targets: [s.ni-jinlai-ba]
+    context: [w.ni, w.jin, w.lai, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Pasa, entra.'}
+    comments: []
+  - id: x.produce.ni-jinlai-ba
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ni-jinlai-ba
+    targets: [s.ni-jinlai-ba]
+    context: [w.ni, w.jin, w.lai, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Alguien llama a tu puerta. Dile que pase, en voz alta.'}
+    answer: {meaning: 'Pasa, entra.'}
+    comments: []
+  - id: x.listen.wo-neng-jinqu-ma
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-neng-jinqu-ma
+    targets: [s.wo-neng-jinqu-ma]
+    context: [w.wo, w.neng, w.jin, w.qu, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Puedo entrar?'}
+    comments: []
+  - id: x.produce.wo-neng-jinqu-ma
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.wo-neng-jinqu-ma
+    targets: [s.wo-neng-jinqu-ma]
+    context: [w.wo, w.neng, w.jin, w.qu, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Puedo entrar?»'}
+    answer: {meaning: '¿Puedo entrar?'}
+    comments: []
+  - id: x.listen.keyi-zuo-zheli-ma
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.keyi-zuo-zheli-ma
+    targets: [s.keyi-zuo-zheli-ma]
+    context: [w.keyi, w.zuo.sit, w.zheli, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Puedo sentarme aquí?'}
+    comments: []
+  - id: x.produce.keyi-zuo-zheli-ma
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.keyi-zuo-zheli-ma
+    targets: [s.keyi-zuo-zheli-ma]
+    context: [w.keyi, w.zuo.sit, w.zheli, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'En una cafetería llena señalas una silla libre: ¿puedo sentarme aquí? En voz alta.'}
+    answer: {meaning: '¿Puedo sentarme aquí?'}
+    comments: []
+  - id: x.listen.bie-kan-wo
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.bie-kan-wo
+    targets: [s.bie-kan-wo]
+    context: [w.bie, w.kan, w.wo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡No me mires!}
+    comments: []
+  - id: x.produce.bie-kan-wo
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.bie-kan-wo
+    targets: [s.bie-kan-wo]
+    context: [w.bie, w.kan, w.wo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡No me mires!»'}
+    answer: {meaning: ¡No me mires!}
+    comments: []
+  - id: x.listen.zheli-bu-huanying-ni
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.zheli-bu-huanying-ni
+    targets: [s.zheli-bu-huanying-ni]
+    context: [w.zheli, w.bu, w.huanying, w.ni]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Aquí no eres bienvenido.}
+    comments: []
+  - id: x.listen.lai-le-lai-le
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.lai-le-lai-le
+    targets: [s.lai-le-lai-le]
+    context: [w.lai, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Ya voy, ya voy! (o ¡ahí viene!)'}
+    comments: []
+  - id: x.listen.ta-shengqi-le
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ta-shengqi-le
+    targets: [s.ta-shengqi-le]
+    context: [w.ta.he, w.shengqi, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Se ha enfadado.}
+    comments: []
+  - id: x.produce.ta-shengqi-le
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ta-shengqi-le
+    targets: [s.ta-shengqi-le]
+    context: [w.ta.he, w.shengqi, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Se ha enfadado.»'}
+    answer: {meaning: Se ha enfadado.}
+    comments: []
+  - id: x.listen.hao-teng
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.hao-teng
+    targets: [s.hao-teng]
+    context: [w.hao, w.teng]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Qué daño!}
+    comments: []
+  - id: x.listen.zhongwen-hen-nan
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.zhongwen-hen-nan
+    targets: [s.zhongwen-hen-nan]
+    context: [w.zhongwen, w.hen, w.nan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: El chino es difícil.}
+    comments: []
+  - id: x.produce.zhongwen-hen-nan
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.zhongwen-hen-nan
+    targets: [s.zhongwen-hen-nan]
+    context: [w.zhongwen, w.hen, w.nan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «El chino es difícil.»'}
+    answer: {meaning: El chino es difícil.}
+    comments: []
+  - id: x.listen.feichang-hao
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.feichang-hao
+    targets: [s.feichang-hao]
+    context: [w.feichang, w.hao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Muy bien!}
+    comments: []
+  - id: x.produce.feichang-hao
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.feichang-hao
+    targets: [s.feichang-hao]
+    context: [w.feichang, w.hao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Muy bien!»'}
+    answer: {meaning: ¡Muy bien!}
+    comments: []
+  - id: x.listen.ta-yibian-chi-yibian-shuo
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ta-yibian-chi-yibian-shuo
+    targets: [s.ta-yibian-chi-yibian-shuo]
+    context: [w.ta.he, w.yibian, w.chi, w.shuo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Habla mientras come.}
+    comments: []
+  - id: x.produce.ta-yibian-chi-yibian-shuo
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ta-yibian-chi-yibian-shuo
+    targets: [s.ta-yibian-chi-yibian-shuo]
+    context: [w.ta.he, w.yibian, w.chi, w.shuo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Habla mientras come.»'}
+    answer: {meaning: Habla mientras come.}
+    comments: []
+  - id: x.listen.wo-yibian-kanshu-yibian-hecha
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-yibian-kanshu-yibian-hecha
+    targets: [s.wo-yibian-kanshu-yibian-hecha]
+    context: [w.wo, w.yibian, w.kan, w.shu, w.he.drink, w.cha]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Leo mientras tomo té.}
+    comments: []
+  - id: x.listen.wo-yibian-ting-yinyue-yibian-xuexi
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-yibian-ting-yinyue-yibian-xuexi
+    targets: [s.wo-yibian-ting-yinyue-yibian-xuexi]
+    context: [w.wo, w.yibian, w.ting, w.yinyue, w.xuexi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Estudio mientras escucho música.}
+    comments: []
+  - id: x.listen.daxiang-hen-da
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.daxiang-hen-da
+    targets: [s.daxiang-hen-da]
+    context: [w.daxiang, w.hen, w.da]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Los elefantes son grandes.}
+    comments: []
+  - id: x.nuance.le-mei
+    added: 2026-10-01
+    lang: es
+    type: nuance
+    targets: [w.mei, w.le]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我吃饭了 y 我没吃饭: ¿cómo se dice el pasado?'}
+    answer: {meaning: 'El chino no conjuga el verbo. 了 dice que pasó: 我吃饭了 «ya he comido». 没 dice que no pasó, y entonces sin 了: 我没吃饭 «no he comido».'}
+    comments: []
+  - id: x.nuance.le-position
+    added: 2026-10-01
+    lang: es
+    type: nuance
+    targets: [w.le]
+    context: [w.mai, w.kafei]
+    skills: [comprehension, discrimination]
+    prompt: {text: '他买了咖啡 y 他买咖啡了: ¿qué cambia?'}
+    answer: {meaning: 'Las dos son «ha comprado café». 了 detrás del verbo se fija en la acción hecha y suele pedir algo más (他买了一杯咖啡); al final cuenta una novedad: «ya ha comprado café».'}
+    comments: []
+  - id: x.nuance.bu-mei-bie
+    added: 2026-10-01
+    lang: es
+    type: nuance
+    targets: [w.bie, w.mei]
+    context: [w.bu]
+    skills: [comprehension, discrimination]
+    prompt: {text: '不, 没 y 别: tres «no». ¿Cuándo cada uno?'}
+    answer: {meaning: '不: lo que haces, quieres o eres (我不喝咖啡). 没: lo que no pasó o no hay (我没吃饭, 我没有钱). 别: pedir que alguien no lo haga (别看我！).'}
+    comments: []
+  - id: x.nuance.lai-jin
+    added: 2026-10-01
+    lang: es
+    type: nuance
+    targets: [w.jin, w.lai]
+    skills: [comprehension, discrimination]
+    prompt: {text: '来 y 进: ¿venir o entrar?'}
+    answer: {meaning: '来 es moverse hacia donde está quien habla: 你来！ «¡ven!». 进 es pasar de fuera a dentro: 请进 «pase». Juntos: 进来 «entra (hacia aquí)», 进去 «entra (hacia allí)».'}
+    comments: []
+  - id: x.cloze.zheli
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.wo-zai-zheli
+    gap: w.zheli
+    targets: [w.zheli]
+    context: [w.wo, w.zai.at]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Estoy aquí.»'}
+    answer: {typed: zhe4 li3, hanzi: 这里, pinyin: zhèlǐ, meaning: aquí}
+    comments: []
+  - id: x.listen.wo-zai-zheli
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-zai-zheli
+    targets: [s.wo-zai-zheli]
+    context: [w.wo, w.zai.at, w.zheli]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Estoy aquí.}
+    comments: []
+  - id: x.produce.wo-zai-zheli
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.wo-zai-zheli
+    targets: [s.wo-zai-zheli]
+    context: [w.wo, w.zai.at, w.zheli]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estoy aquí.»'}
+    answer: {meaning: Estoy aquí.}
+    comments: []
+  - id: x.cloze.weishenme
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.ni-weishenme-bu-qu
+    gap: w.weishenme
+    targets: [w.weishenme]
+    context: [w.ni, w.bu, w.qu]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Por qué no vas?»'}
+    answer: {typed: wei4 shen2 me5, hanzi: 为什么, pinyin: wèishénme, meaning: por qué}
+    comments: []
+  - id: x.listen.ni-weishenme-bu-qu
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ni-weishenme-bu-qu
+    targets: [s.ni-weishenme-bu-qu]
+    context: [w.ni, w.weishenme, w.bu, w.qu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Por qué no vas?'}
+    comments: []
+  - id: x.produce.ni-weishenme-bu-qu
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ni-weishenme-bu-qu
+    targets: [s.ni-weishenme-bu-qu]
+    context: [w.ni, w.weishenme, w.bu, w.qu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Por qué no vas?»'}
+    answer: {meaning: '¿Por qué no vas?'}
     comments: []

@@ -20,9 +20,9 @@ Fuente de verdad del mazo, mantenida por el agente. Un archivo por tema en cada 
 - `use`: `read | hear | say` (escalera), o excepción con `use_reason`: lista (`[read]`, `[hear]`…), `context` (solo dentro de frases) o `drop` (descartada).
 - `role` (palabras y expresiones): `content | function`.
 - `hanzi`, `pinyin`, `meaning: {es, en}`; `standalone: yes | rare | no` (del sentido); `as_word: {es, pinyin?}` en un componente cuyo hanzi también es palabra suelta (口, 女, 月; `check` lo exige si está en la lista del HSK o en el mazo); `relations`; `accept_pinyin_mismatch` con motivo si pypinyin discrepa con razón.
-- Grupos: `basis: visual | homophone | pattern | set`, `members: [{ref, cue}]` (cue: rasgo distintivo; máximo 4 en contraste).
+- Grupos: `basis: visual | homophone | soundalike | pattern | set | phonetic`, `members: [{ref, cue}]` (cue: rasgo distintivo; máximo 4 en contraste).
 - Pronunciación: `title`, `explanation`, `audio_text`.
-- Estructuras (`lexicon/estructuras.yaml`): `pattern` (`{S} + 很 + {Adj}`; huecos `{S} {N} {V} {Adj} {Num} {Nombre} {Lugar}`), `refs` (las entradas de las piezas fijas, en orden), `examples` (frases que la cumplen), `meaning: {es, en}`, `contrast: {right, wrong, why: {es, en}}` (frase buena del mazo, calco erróneo y porqué: de ahí sale su tarjeta). Sin `level`: es el de su pieza fija más difícil. Ver `docs/design.md`, «Gramática».
+- Estructuras (`lexicon/estructuras.yaml`): `pattern` (`{S} + 很 + {Adj}`; huecos `{S} {N} {V} {Adj} {Num} {Nombre} {Lugar} {Tiempo} {Frase}`), `refs` (las entradas de las piezas fijas, en orden), `examples` (frases que la cumplen), `meaning: {es, en}`, `contrast: {right, wrong, why: {es, en}}` (frase buena del mazo, calco erróneo y porqué: de ahí sale su tarjeta). Sin `level`: es el de su pieza fija más difícil. Ver `docs/design.md`, «Gramática».
 - `comments: [{kind, private, date, text, original}]` (`text` redactado para mostrar; `original`, lo que escribió YAGO, solo si difiere), con `kind`: `mnemonic | teacher | linguistic | note | sound`. `private: true` por defecto; el repositorio es público, así que lo privado no se guarda aquí.
 - `source: {origin, batch, file, date}`.
 

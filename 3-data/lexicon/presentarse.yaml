@@ -293,3 +293,69 @@ entries:
     comments:
       - {kind: teacher, private: false, date: '2026-10-01', text: 'Detrás del apellido: 白先生 «el señor Bai». Es como se llama a alguien en un trato formal; no por el nombre completo.'}
       - {kind: linguistic, private: false, date: '2026-10-01', text: '先 «antes» + 生 «nacer»: el que nació antes. Ojo: la segunda sílaba se dice átona, xiānsheng.'}
+  - id: w.na.which
+    use: say
+    role: function
+    kind: word
+    hanzi: 哪
+    pinyin: 'nǎ'
+    meaning: {es: 'qué, cuál', en: 'which'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Delante de un nombre o de un clasificador: 哪国人 «de qué país». Con 里, 哪里 «dónde».'}
+  - id: w.guo
+    use: say
+    role: content
+    kind: word
+    hanzi: 国
+    pinyin: 'guó'
+    meaning: {es: 'país', en: 'country'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'En los nombres de países: 中国, 美国. 你是哪国人？ «¿de qué país eres?».'}
+  - id: w.hui.can
+    use: say
+    role: content
+    kind: word
+    hanzi: 会
+    pinyin: 'huì'
+    meaning: {es: 'saber (hacer algo); ir a (predicción)', en: 'can (learned skill); will'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Saber hacer algo aprendido: 我会说中文. «Saber un dato» es otra palabra, 知道 zhīdào [HSK 1].'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'También predice: 明天会下雨 «mañana lloverá». Ser capaz en este momento es 能; tener permiso, 可以.'}
+  - id: w.xuexi
+    use: say
+    role: content
+    kind: word
+    hanzi: 学习
+    pinyin: 'xuéxí'
+    meaning: {es: 'estudiar, aprender', en: 'to study'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '学 «aprender» + 习 «practicar». 学生 «estudiante» lleva el mismo 学.'}
+  - id: g.shi-shi
+    kind: group
+    basis: soundalike
+    title: '是 shì y 十 shí'
+    explanation: 'Solo cambia el tono: 是 cae, 十 sube.'
+    members:
+      - {ref: w.shi, cue: 'shì, cae: ser'}
+      - {ref: w.num.shi, cue: 'shí, sube: diez'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: g.question-words
+    kind: group
+    basis: set
+    title: 'Palabras para preguntar'
+    explanation: 'Van donde iría la respuesta, sin cambiar el orden de la frase.'
+    members:
+      - {ref: w.shenme, cue: 'qué'}
+      - {ref: w.zenme, cue: 'cómo'}
+      - {ref: w.shei, cue: 'quién'}
+      - {ref: w.nali, cue: 'dónde'}
+      - {ref: w.ji, cue: 'cuántos (pocos)'}
+      - {ref: w.duoshao, cue: 'cuánto (abierto)'}
+      - {ref: w.weishenme, cue: 'por qué'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []

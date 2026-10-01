@@ -122,6 +122,7 @@ entries:
     explanation: Mismo carácter; la boca 口 lo convierte en pregunta.
     members:
       - {ref: w.na.that, cue: 'sin boca: nà, eso'}
+      - {ref: w.na.which, cue: 'con boca: nǎ, ¿cuál?'}
       - {ref: w.nali, cue: 'con boca: nǎ, ¿dónde? (哪里)'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
@@ -304,3 +305,236 @@ entries:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '和 solo une nombres: 咖啡和巧克力, 我和你. Dos frases o dos adjetivos no se unen con 和: 他很高，也很帅.'}
       - {kind: linguistic, private: false, date: '2026-10-01', text: '禾 hé «cereal» da el sonido y 口 «boca» aporta el sentido. El sentido antiguo es «armonía, concordia»; de dos cosas que armonizan pasó a unir: A 和 B.'}
       - {kind: mnemonic, private: false, date: '2026-10-01', text: 'El cereal 禾 llega a la boca 口: comida compartida, armonía, estar juntos.'}
+  - id: w.mei
+    use: say
+    role: function
+    kind: word
+    hanzi: 没
+    pinyin: 'méi'
+    meaning: {es: 'no (no pasó; no hay)', en: 'not (didn''t; there isn''t)'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '没 niega lo que pasó o lo que hay: 我没吃饭 «no he comido», 我没有钱. 不 niega lo que haces, quieres o eres: 我不吃 «no como».'}
+  - id: w.guo.exp
+    use: say
+    role: function
+    kind: word
+    hanzi: 过
+    pinyin: 'guo'
+    meaning: {es: 'haber (hecho alguna vez)', en: '(have) ever done'}
+    accept_pinyin_mismatch: 'partícula átona detrás del verbo: guo'
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Detrás del verbo: lo has hecho alguna vez. 我去过北京 «he estado en Pekín»; 你看过这个电影吗？ «¿has visto esta película?».'}
+  - id: w.yong
+    use: say
+    role: content
+    kind: word
+    hanzi: 用
+    pinyin: 'yòng'
+    meaning: {es: 'usar; con (un instrumento)', en: 'to use; with'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Va antes de la acción: 我用筷子吃饭 «como con palillos». Primero con qué, luego qué haces.'}
+  - id: w.zuo.sit
+    use: say
+    role: content
+    kind: word
+    hanzi: 坐
+    pinyin: 'zuò'
+    meaning: {es: 'sentarse; ir en (un vehículo)', en: 'to sit; to travel by'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '请坐 «siéntese»; 坐飞机 «ir en avión», 坐车 «ir en coche o autobús».'}
+  - id: w.jin
+    use: say
+    role: content
+    kind: word
+    hanzi: 进
+    pinyin: 'jìn'
+    meaning: {es: 'entrar', en: 'to enter'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Pasar de fuera a dentro: 请进 «pase». 进来 «entrar hacia aquí», 进去 «entrar hacia allí».'}
+  - id: w.bie
+    use: say
+    role: function
+    kind: word
+    hanzi: 别
+    pinyin: 'bié'
+    meaning: {es: 'no (hagas): prohibir', en: 'don''t'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Para pedir que alguien no haga algo: 别看我！ «¡no me mires!». 不 solo niega: 我不看 «no miro».'}
+  - id: w.ting
+    use: say
+    role: content
+    kind: word
+    hanzi: 听
+    pinyin: 'tīng'
+    meaning: {es: 'escuchar', en: 'to listen'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '口 «boca» a la izquierda. 听音乐 «escuchar música».'}
+  - id: w.dianying
+    use: hear
+    role: content
+    kind: word
+    hanzi: 电影
+    pinyin: 'diànyǐng'
+    meaning: {es: 'película', en: 'film'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '电 «electricidad» + 影 «sombra, imagen»: sombras eléctricas. El 电 de 电话 y 电脑.'}
+  - id: w.shengqi
+    use: say
+    role: content
+    kind: word
+    hanzi: 生气
+    pinyin: 'shēngqì'
+    meaning: {es: 'enfadarse; enfadado', en: 'to get angry'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '生 «producir» + 气 «aire, ánimo»: echar humo. 他生气了 «se ha enfadado».'}
+  - id: w.teng
+    use: hear
+    role: content
+    kind: word
+    hanzi: 疼
+    pinyin: 'téng'
+    meaning: {es: 'doler', en: 'to hurt'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '疒 «enfermedad» por fuera. 好疼！ «¡qué daño!»: 好 delante de un adjetivo es «qué…», muy coloquial.'}
+  - id: w.nan
+    use: say
+    role: content
+    kind: word
+    hanzi: 难
+    pinyin: 'nán'
+    meaning: {es: 'difícil', en: 'difficult'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: w.feichang
+    use: say
+    role: function
+    kind: word
+    hanzi: 非常
+    pinyin: 'fēicháng'
+    meaning: {es: 'muy, muchísimo', en: 'very, extremely'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Más fuerte que 很: 非常好 «muy bien». Para agradecer se dice 太谢谢你了 o 非常感谢 [HSK 2]; «非常谢谢你» suena forzado.', original: 'feichang xiexie ni'}
+  - id: w.daxiang
+    use: hear
+    role: content
+    kind: word
+    hanzi: 大象
+    pinyin: 'dàxiàng'
+    meaning: {es: 'elefante', en: 'elephant'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: note, private: false, date: '2026-10-01', text: 'No lo confundas con 大家 dàjiā «todos»: los dos empiezan por 大, y al oído solo cambia la segunda sílaba.', original: 'dajia, da xiang, todos vs elefante. cuidado estas cosas.'}
+  - id: w.yinyue
+    use: hear
+    role: content
+    kind: word
+    hanzi: 音乐
+    pinyin: 'yīnyuè'
+    meaning: {es: 'música', en: 'music'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: w.kuaizi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 筷子
+    pinyin: 'kuàizi'
+    meaning: {es: 'palillos', en: 'chopsticks'}
+    accept_pinyin_mismatch: 'sufijo átono: kuàizi'
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: w.baozhi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 报纸
+    pinyin: 'bàozhǐ'
+    meaning: {es: 'periódico', en: 'newspaper'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: w.weishenme
+    use: say
+    role: function
+    kind: word
+    hanzi: 为什么
+    pinyin: 'wèishénme'
+    meaning: {es: 'por qué', en: 'why'}
+    accept_pinyin_mismatch: 'me átono: wèishénme'
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: w.zheme
+    use: hear
+    role: function
+    kind: word
+    hanzi: 这么
+    pinyin: 'zhème'
+    meaning: {es: 'tan, así de', en: 'so, this (much)'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Delante de un adjetivo: 你为什么这么高？ «¿por qué eres tan alto?».'}
+  - id: w.chuqu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 出去
+    pinyin: 'chūqu'
+    meaning: {es: 'salir (hacia fuera)', en: 'to go out'}
+    accept_pinyin_mismatch: 'la segunda sílaba es átona en el habla'
+    source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27', rescued: 003-2026-10-01-comer-dinero-y-contrastes}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '出 es una planta que sale de un tiesto. 出来 chūlái es salir hacia aquí.'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '出去啊？ «¿sales?» es un saludo al cruzarte con alguien que se va.'}
+  - id: g.lai-qu-jin
+    kind: group
+    basis: set
+    title: 'Venir, ir, entrar y salir'
+    explanation: 'Se eligen según hacia dónde va el movimiento respecto a quien habla.'
+    members:
+      - {ref: w.lai, cue: 'hacia aquí: venir'}
+      - {ref: w.qu, cue: 'hacia allí: ir'}
+      - {ref: w.jin, cue: 'de fuera a dentro: entrar'}
+      - {ref: w.chuqu, cue: 'de dentro a fuera: salir'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: g.neg
+    kind: group
+    basis: set
+    title: '不, 没 y 别: tres «no»'
+    explanation: 'Cada uno niega una cosa distinta.'
+    members:
+      - {ref: w.bu, cue: 'lo que haces, quieres o eres: 我不喝咖啡'}
+      - {ref: w.mei, cue: 'lo que no pasó o no hay: 我没吃饭'}
+      - {ref: w.bie, cue: 'pedir que no lo hagan: 别看我！'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: w.zheli
+    use: say
+    role: function
+    kind: word
+    hanzi: 这里
+    pinyin: zhèlǐ
+    meaning: {es: aquí, en: here}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '这 «este» + 里 «dentro»: en este sitio. Como 哪里 «dónde».'}
+  - id: g.guo-guo
+    kind: group
+    basis: soundalike
+    title: '国 guó y 过 guo'
+    explanation: '国 sube y es un nombre; 过 es átono y va pegado al verbo.'
+    members:
+      - {ref: w.guo, cue: 'guó, sube: país'}
+      - {ref: w.guo.exp, cue: 'guo, átono tras el verbo: haber hecho'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []

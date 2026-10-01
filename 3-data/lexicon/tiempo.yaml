@@ -109,3 +109,52 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: '午 wǔ «mediodía», 牛 niú «vaca» y 年 nián «año» se parecen mucho y no suenan igual.'}
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Como 天, ya es una unidad y va sin clasificador: 两年 «dos años», 三天 «tres días».'}
+  - id: w.zuotian
+    use: say
+    role: content
+    kind: word
+    hanzi: 昨天
+    pinyin: 'zuótiān'
+    meaning: {es: 'ayer', en: 'yesterday'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: w.shijian
+    use: say
+    role: content
+    kind: word
+    hanzi: 时间
+    pinyin: 'shíjiān'
+    meaning: {es: 'tiempo (de reloj)', en: 'time'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'El tiempo que tienes, no el que hace (eso es 天气): 我没有时间 «no tengo tiempo».'}
+  - id: w.shuijiao
+    use: say
+    role: content
+    kind: word
+    hanzi: 睡觉
+    pinyin: 'shuìjiào'
+    meaning: {es: 'dormir, irse a dormir', en: 'to sleep'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '觉 aquí se lee jiào; en 觉得 juéde [HSK 1] «parecer, creer» se lee jué. Suena igual que 叫 jiào «llamarse», pero es otro carácter.'}
+  - id: w.huijia
+    use: say
+    role: content
+    kind: word
+    hanzi: 回家
+    pinyin: 'huíjiā'
+    meaning: {es: 'volver a casa', en: 'to go home'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '回 «volver» + 家 «casa». Encadena otra acción detrás: 我回家睡觉 «me voy a casa a dormir».'}
+  - id: w.zhengzai
+    use: hear
+    role: function
+    kind: word
+    hanzi: 正在
+    pinyin: 'zhèngzài'
+    meaning: {es: 'estar (justo ahora) haciendo', en: 'right now (doing)'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Como 在 + verbo, pero subraya «justo ahora»: 我正在学习.'}

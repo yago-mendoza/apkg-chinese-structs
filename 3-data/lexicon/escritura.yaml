@@ -239,3 +239,15 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: 'Casi siempre trae la idea de hablar: 认识, 请, 谢谢, 说 shuō «decir». No confundir con 文 wén «escritura» de 中文.'}
+  - id: c.side.bing
+    use: context
+    use_reason: 'componente: se ve dentro de 疼 y de 瘦'
+    kind: component
+    hanzi: 疒
+    pinyin: nè
+    meaning: {es: 'enfermedad (como componente)', en: 'sickness radical'}
+    level: 3
+    level_reason: 'componente; se reconoce cuando llegan 病 bìng [HSK 2] y 疼 téng [HSK 2]'
+    source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27', rescued: 003-2026-10-01-comer-dinero-y-contrastes}
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-09-27', text: 'Una cama con una persona tumbada: lo que lo lleva tiene que ver con la enfermedad, como 疼 «doler» y 瘦 «delgado».'}

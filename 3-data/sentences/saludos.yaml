@@ -54,3 +54,39 @@ sentences:
       - {text: ？}
     translation: {es: '¿Has comido? (como saludo)', en: 'Have you eaten? (as a greeting)'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.ni-huilai-le
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 回来, ref: w.huilai, pinyin: huílai}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ！}
+    translation: {es: '¡Ya has vuelto!', en: 'You''re back!'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.qu-nali-a
+    use: say
+    segments:
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 哪里, ref: w.nali, pinyin: nǎlǐ}
+      - {text: 啊, ref: w.a.particle, pinyin: a}
+      - {text: ？}
+    translation: {es: '¿Adónde vas?', en: 'Where are you off to?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.chuqu-a
+    use: hear
+    segments:
+      - {text: 出去, ref: w.chuqu, pinyin: chūqu}
+      - {text: 啊, ref: w.a.particle, pinyin: a}
+      - {text: ？}
+    translation: {es: '¿Sales?', en: 'Heading out?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.women-xiawu-jian-ba
+    use: say
+    segments:
+      - {text: 我们, ref: w.women, pinyin: wǒmen}
+      - {text: 下午, ref: w.xiawu, pinyin: xiàwǔ}
+      - {text: 见, ref: w.jian, pinyin: jiàn}
+      - {text: 吧, ref: w.ba.particle, pinyin: ba}
+      - {text: 。}
+    translation: {es: 'Nos vemos por la tarde, ¿vale?', en: 'Let''s meet in the afternoon.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}

@@ -25,7 +25,7 @@ exercises:
     type: read
     targets: [w.ba]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 八}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 八}
     answer: {hanzi: 八, pinyin: bā, meaning: ocho}
     lang: es
     comments: []
@@ -62,7 +62,7 @@ exercises:
     type: read
     targets: [w.num.yi]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 一}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 一}
     answer: {hanzi: 一, pinyin: yī, meaning: uno}
     comments: []
   - id: x.dictation.num.er
@@ -89,7 +89,7 @@ exercises:
     type: read
     targets: [w.num.er]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 二}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 二}
     answer: {hanzi: 二, pinyin: èr, meaning: dos}
     comments: []
   - id: x.dictation.num.san
@@ -116,7 +116,7 @@ exercises:
     type: read
     targets: [w.num.san]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 三}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 三}
     answer: {hanzi: 三, pinyin: sān, meaning: tres}
     comments: []
   - id: x.dictation.num.si
@@ -143,7 +143,7 @@ exercises:
     type: read
     targets: [w.num.si]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 四}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 四}
     answer: {hanzi: 四, pinyin: sì, meaning: cuatro}
     comments: []
   - id: x.dictation.num.wu
@@ -170,7 +170,7 @@ exercises:
     type: read
     targets: [w.num.wu]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 五}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 五}
     answer: {hanzi: 五, pinyin: wǔ, meaning: cinco}
     comments: []
   - id: x.dictation.num.liu
@@ -197,7 +197,7 @@ exercises:
     type: read
     targets: [w.num.liu]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 六}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 六}
     answer: {hanzi: 六, pinyin: liù, meaning: seis}
     comments: []
   - id: x.dictation.num.qi
@@ -224,7 +224,7 @@ exercises:
     type: read
     targets: [w.num.qi]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 七}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 七}
     answer: {hanzi: 七, pinyin: qī, meaning: siete}
     comments: []
   - id: x.dictation.num.jiu
@@ -251,7 +251,7 @@ exercises:
     type: read
     targets: [w.num.jiu]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 九}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 九}
     answer: {hanzi: 九, pinyin: jiǔ, meaning: nueve}
     comments: []
   - id: x.dictation.num.shi
@@ -278,7 +278,7 @@ exercises:
     type: read
     targets: [w.num.shi]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 十}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 十}
     answer: {hanzi: 十, pinyin: shí, meaning: diez}
     comments: []
   - id: x.dictation.liang
@@ -305,7 +305,7 @@ exercises:
     type: read
     targets: [w.liang]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 两}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 两}
     answer: {hanzi: 两, pinyin: liǎng, meaning: dos (delante de un clasificador)}
     comments: []
   - id: x.dictation.you.have
@@ -332,7 +332,7 @@ exercises:
     type: read
     targets: [w.you.have]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 有}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 有}
     answer: {hanzi: 有, pinyin: yǒu, meaning: tener; haber}
     comments: []
   - id: x.dictation.ge
@@ -362,7 +362,7 @@ exercises:
     type: read
     targets: [w.ge]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 个}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 个}
     answer: {hanzi: 个, pinyin: ge, meaning: clasificador general (uno de algo)}
     comments: []
   - id: x.listen.count-1-10
@@ -444,7 +444,7 @@ exercises:
     type: read
     targets: [w.meiyou]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 没有}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 没有}
     answer: {hanzi: 没有, pinyin: méiyǒu, meaning: no tener; no haber}
     comments: []
   - id: x.dictation.ji
@@ -474,7 +474,7 @@ exercises:
     type: read
     targets: [w.ji]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 几}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 几}
     answer: {hanzi: 几, pinyin: jǐ, meaning: cuántos (pocos)}
     comments: []
   - id: x.dictation.sui
@@ -501,7 +501,7 @@ exercises:
     type: read
     targets: [w.sui]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 岁}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 岁}
     answer: {hanzi: 岁, pinyin: suì, meaning: años (de edad)}
     comments: []
   - id: x.listen.wo-meiyou-qian
@@ -569,4 +569,34 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántas personas? (en un restaurante)»'}
     answer: {meaning: '¿Cuántas personas? (en un restaurante)'}
+    comments: []
+  - id: x.contrast.num.jiu
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.jiu-jiu
+    targets: [w.num.jiu]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 九, pinyin: jiǔ, meaning: nueve}
+    comments: []
+  - id: x.contrast.num.shi
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.shi-shi
+    targets: [w.num.shi]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 十, pinyin: shí, meaning: diez}
+    comments: []
+  - id: x.contrast.you.have
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.you-you-yao
+    targets: [w.you.have]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 有, pinyin: yǒu, meaning: tener; haber}
     comments: []

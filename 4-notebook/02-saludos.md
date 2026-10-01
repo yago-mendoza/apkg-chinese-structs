@@ -14,6 +14,9 @@
 - ✅🃏 老师好 lǎoshī hǎo [lɑʊ˧˩˧ ʂɨ˥ xɑʊ˧˩˧] · hola, profe · _expresión_
 - ✅🃏 欢迎 huānyíng [xwan˥ iŋ˧˥] · bienvenido; dar la bienvenida · _verbo_ · 迎 es salir al encuentro de alguien con una sonrisa; con 欢 «alegría»: recibir con alegría.
 - ✅🃏 怎么样 zěnmeyàng [tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal?; ¿cómo? · _interrogativo_ · 你好吗？ es correcto, pero de libro; para preguntar cómo está alguien suena más natural 你怎么样？. También pide opinión: 这个怎么样？ «¿qué tal este?».
+- ✅🃏 晚安 wǎn'ān [wan˧˩˧ an˥] · buenas noches (al irse a dormir) · _expresión_ · Solo para despedirse antes de dormir. Al llegar por la noche se dice 晚上好 wǎnshang hǎo.
+- ✅🃏 回来 huílai [xweɪ˧˥ laɪ] · volver (aquí) · _verbo_ · 回 «volver» + 来 «hacia aquí». 你回来了！ es un saludo al ver llegar a alguien de casa o del trabajo.
+- ✅🃏 啊 a [a] · partícula que suaviza o anima · _partícula_ · Al final de una pregunta o exclamación la hace más cálida: 去哪里啊？ suena más cercano que 去哪里？.
 
 ## Saludos con 好
 
@@ -33,3 +36,7 @@ A quien saludas + 好. El registro cambia según a quién te diriges.
 - ✅🃏 欢迎你！ · huānyíng nǐ · ¡Bienvenido!
 - ✅🃏 你怎么样？ · nǐ zěnmeyàng · ¿Qué tal estás?
 - ✅🃏 吃饭了吗？ · chīfàn le ma · ¿Has comido? (como saludo)
+- ✅🃏 你回来了！ · nǐ huílai le · ¡Ya has vuelto!
+- ✅🃏 去哪里啊？ · qù nǎlǐ a · ¿Adónde vas?
+- ✅🃏 出去啊？ · chūqu a · ¿Sales?
+- ✅🃏 我们下午见吧。 · wǒmen xiàwǔ jiàn ba · Nos vemos por la tarde, ¿vale?

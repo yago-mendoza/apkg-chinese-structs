@@ -6,7 +6,7 @@ exercises:
     type: read
     targets: [w.ni]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 你}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 你}
     answer: {typed: ni3, hanzi: 你, pinyin: nǐ, meaning: tú}
     reveal: [s.ni-hao-ma]
     lang: es
@@ -16,7 +16,7 @@ exercises:
     type: read
     targets: [w.nin]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 您}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 您}
     answer: {typed: nin2, hanzi: 您, pinyin: nín, meaning: usted (tú con respeto)}
     lang: es
     comments: []
@@ -25,7 +25,7 @@ exercises:
     type: read
     targets: [w.women]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 我们}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 我们}
     answer: {typed: wo3 men5, hanzi: 我们, pinyin: wǒmen, meaning: nosotros}
     reveal: [s.women-shi-pengyou]
     lang: es
@@ -35,7 +35,7 @@ exercises:
     type: read
     targets: [w.nimen]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 你们}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 你们}
     answer: {typed: ni3 men5, hanzi: 你们, pinyin: nǐmen, meaning: vosotros}
     lang: es
     comments: []
@@ -44,7 +44,7 @@ exercises:
     type: read
     targets: [w.tamen]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 他们}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 他们}
     answer: {typed: ta1 men5, hanzi: 他们, pinyin: tāmen, meaning: ellos}
     lang: es
     comments: []
@@ -53,7 +53,7 @@ exercises:
     type: read
     targets: [w.dajia]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 大家}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 大家}
     answer: {typed: da4 jia1, hanzi: 大家, pinyin: dàjiā, meaning: 'todos, todo el mundo'}
     lang: es
     comments: []
@@ -62,7 +62,7 @@ exercises:
     type: read
     targets: [w.laoshi]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 老师}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 老师}
     answer: {typed: lao3 shi1, hanzi: 老师, pinyin: lǎoshī, meaning: 'profesor, profesora'}
     reveal: [s.ta-shi-wo-de-laoshi]
     lang: es
@@ -72,7 +72,7 @@ exercises:
     type: read
     targets: [w.xuesheng]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 学生}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 学生}
     answer: {typed: xue2 sheng1, hanzi: 学生, pinyin: xuéshēng, meaning: estudiante}
     reveal: [s.wo-bu-shi-xuesheng]
     lang: es
@@ -82,7 +82,7 @@ exercises:
     type: read
     targets: [w.pengyou]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 朋友}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 朋友}
     answer: {typed: peng2 you5, hanzi: 朋友, pinyin: péngyou, meaning: 'amigo, amiga'}
     reveal: [s.women-shi-pengyou]
     lang: es
@@ -92,7 +92,7 @@ exercises:
     type: read
     targets: [w.gongchengshi]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 工程师}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 工程师}
     answer: {typed: gong1 cheng2 shi1, hanzi: 工程师, pinyin: gōngchéngshī, meaning: 'ingeniero, ingeniera'}
     reveal: [s.wo-shi-gongchengshi]
     lang: es
@@ -286,7 +286,7 @@ exercises:
     type: read
     targets: [w.wo]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 我}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 我}
     answer: {hanzi: 我, pinyin: wǒ, meaning: yo; me}
     reveal: [s.wo-hen-hao-ni-ne]
     lang: es
@@ -342,7 +342,7 @@ exercises:
     type: read
     targets: [w.ta.he]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 他}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 他}
     answer: {hanzi: 他, pinyin: tā, meaning: él}
     reveal: [s.ta-hen-gao]
     lang: es
@@ -352,7 +352,7 @@ exercises:
     type: read
     targets: [w.ta.she]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 她}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 她}
     answer: {hanzi: 她, pinyin: tā, meaning: ella}
     reveal: [s.ta-shi-wo-de-laoshi]
     lang: es
@@ -362,7 +362,7 @@ exercises:
     type: read
     targets: [w.ta.it]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 它}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 它}
     answer: {hanzi: 它, pinyin: tā, meaning: 'ello (cosas, animales)'}
     reveal: [s.ta-hen-keai]
     lang: es
@@ -409,7 +409,7 @@ exercises:
     type: read
     targets: [w.ren]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 人}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 人}
     answer: {hanzi: 人, pinyin: rén, meaning: persona}
     reveal: [s.wo-shi-xibanyaren]
     lang: es
@@ -552,7 +552,7 @@ exercises:
     type: read
     targets: [w.shei]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 谁}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 谁}
     answer: {hanzi: 谁, pinyin: shéi, meaning: quién}
     comments: []
   - id: x.listen.ta-shi-shei
@@ -597,4 +597,25 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: 'Completa en pinyin: «¿Quién es él?»'}
     answer: {typed: shei2, hanzi: 谁, pinyin: shéi, meaning: quién}
+    comments: []
+  - id: x.contrast.dajia
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.dajia-daxiang
+    targets: [w.dajia]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 大家, pinyin: dàjiā, meaning: 'todos, todo el mundo'}
+    comments: []
+  - id: x.listen.dlg-ni-shi-shei
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.dlg-ni-shi-shei
+    targets: [s.dlg-ni-shi-shei]
+    context: [w.ni, w.shi, w.shei, w.bu, w.dui, w.shenme, w.dongxi, w.weishenme, w.zheme, w.gao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Quién eres? No, espera: ¿qué eres? ¿Por qué eres tan alto?'}
     comments: []

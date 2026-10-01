@@ -38,6 +38,13 @@ Casi iguales: el pañuelo 巾 a la derecha y dos trazos a la izquierda. 师 llev
 - 帅 shuài · sin raya encima: shuài, hoy «guapo»
 - 师 shī · raya encima: shī, en 老师 y 工程师
 
+## 大家 y 大象
+
+Empiezan igual; la segunda sílaba lo decide.
+
+- 大家 dàjiā · dàjiā: todos
+- 大象 dàxiàng · dàxiàng: elefante
+
 ## Frases
 
 - ✅🃏 她是我的老师。 · tā shì wǒ de lǎoshī · Ella es mi profesora.
@@ -45,3 +52,4 @@ Casi iguales: el pañuelo 巾 a la derecha y dos trazos a la izquierda. 师 llev
 - ✅🃏 您是我们的老师吗？ · nín shì wǒmen de lǎoshī ma · ¿Es usted nuestra profesora?
 - ✅🃏 对，我是你们的老师。 · duì wǒ shì nǐmen de lǎoshī · Sí, soy vuestro profesor.
 - ✅🃏 他是谁？ · tā shì shéi · ¿Quién es él?
+- ✅🃏 你是谁？不对。你是什么东西？你为什么这么高？ · nǐ shì shéi bú duì nǐ shì shénme dōngxi nǐ wèishénme zhème gāo · ¿Quién eres? No, espera: ¿qué eres? ¿Por qué eres tan alto?

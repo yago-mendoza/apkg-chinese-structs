@@ -8,7 +8,7 @@ YAGO, ingeniero, hispanohablante. Empezó mandarín en septiembre de 2026 con cl
 
 ## Para qué
 
-Hablar chino. No es preparar el examen del HSK: el HSK sirve de escala para ordenar, no de meta. Llegar a un nivel equivalente a C1 con **mucho énfasis en fluidez y en pronunciación**, para:
+Hablar chino y **sonar natural** (YAGO, 2026-10-01): no solo correcto, sino como lo diría un nativo. No es preparar el examen del HSK: el HSK sirve de escala para ordenar, no de meta. Llegar a un nivel equivalente a C1 con **mucho énfasis en fluidez y en pronunciación**, para:
 
 - conversación cotidiana, con naturalidad y algo de personalidad;
 - trabajo y negocios: es ingeniero; reuniones, trato profesional, vocabulario técnico cuando llegue;
@@ -36,7 +36,12 @@ Hablar se entrena sobre todo fuera del mazo: YAGO conversa con su profesora y le
 
 - **Nada de producción libre.** Ninguna tarjeta pide «di una frase con esta estructura» o «inventa algo así»: obliga a ser creativo sin modelo y no educa. Una estructura se practica oponiendo la frase buena a un calco claramente erróneo del español o del inglés (他很高 frente a 他是高), o a otra frase con la que se confunde; así el oído aprende el orden del chino.
 - **Reutilizar, pero bien.** Las frases nuevas reutilizan el vocabulario del mazo siempre que se use con su sentido real; nunca se fuerza una palabra donde un nativo diría otra (大小 es «tamaño», no «talla»).
-- **Mandarín estándar.** Donde hay variante regional se elige la general: 哪里 y no 哪儿, que es del norte. La otra se entiende y se menciona, pero las tarjetas usan la estándar.
+- **Sonar natural.** Si un apunte trae una forma correcta pero forzada (非常谢谢你), se corrige con ⚠️ hacia la natural (太谢谢你了, 非常感谢), y se dice cómo saluda de verdad la gente (早, 你回来了, 去哪里啊) frente a la fórmula de libro (你好吗).
+- **Solo mandarín estándar** (YAGO, 2026-10-01). Las formas del norte (erhua: 哪儿, 这儿), del cantonés o de otra región no entran, no se enseñan ni se mencionan, ni se guardan en el desván: se descartan (`use: drop`). Se usa la general: 哪里.
+- **Traducir con contexto.** Además de «dilo en chino», tarjetas que ponen una situación (alguien dice que le encantó la comida y tú también: 我也喜欢) para sacar lo que uno quiere decir. A medida que suben los niveles, frases más largas que combinan lo ya aprendido (tiempos, lugares, encadenar acciones): el mazo debe leerse cada vez más como chino de verdad.
+- **Monólogos y diálogos breves, de vez en cuando.** Una o dos frases por lote que juntan varias oraciones en una miniescena (你是谁？不对。你是什么东西？你为什么这么高？), solo con vocabulario de su nivel o inferior, para escuchar. Ayudan a entender trozos seguidos y a fijar estructuras en contexto; no más, porque una tarjeta larga se evalúa peor.
+- **Lo que se confunde, contrastado sin rodeos.** Cuando dos o más cosas se parecen mucho, en el hanzi (大/太/天), en el sonido (是 shì / 十 shí, 大家 / 大象) o en la idea (来 / 进; 不 / 没 / 别), se agrupan y tienen tarjeta propia de «¿cuál es…?» con todas las opciones y el porqué; el nivel del contraste es el del miembro más difícil. Además aparecen juntas en los ejemplos del reverso.
+- **Leer en voz alta.** Las tarjetas de lectura piden decir el hanzi en voz alta antes de girar, y el audio del reverso sirve para comparar.
 - **Situaciones de calle.** Lo que se decide por la situación (请问, 不好意思, 对不起; 对, 是的, 好的) se pregunta con la situación delante y el grupo entero detrás, con audio.
 
 ## Cómo se explica un carácter

@@ -125,3 +125,34 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '你好吗？ es correcto, pero de libro; para preguntar cómo está alguien suena más natural 你怎么样？. También pide opinión: 这个怎么样？ «¿qué tal este?».'}
+  - id: e.wanan
+    use: say
+    role: content
+    kind: expression
+    hanzi: 晚安
+    pinyin: 'wǎn''ān'
+    meaning: {es: 'buenas noches (al irse a dormir)', en: 'good night'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Solo para despedirse antes de dormir. Al llegar por la noche se dice 晚上好 wǎnshang hǎo.'}
+  - id: w.huilai
+    use: say
+    role: content
+    kind: word
+    hanzi: 回来
+    pinyin: 'huílai'
+    meaning: {es: 'volver (aquí)', en: 'to come back'}
+    accept_pinyin_mismatch: 'la segunda sílaba es átona: huílai'
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '回 «volver» + 来 «hacia aquí». 你回来了！ es un saludo al ver llegar a alguien de casa o del trabajo.'}
+  - id: w.a.particle
+    use: hear
+    role: function
+    kind: word
+    hanzi: 啊
+    pinyin: 'a'
+    meaning: {es: 'partícula que suaviza o anima', en: 'softening particle'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Al final de una pregunta o exclamación la hace más cálida: 去哪里啊？ suena más cercano que 去哪里？.'}

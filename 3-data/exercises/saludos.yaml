@@ -7,7 +7,7 @@ exercises:
     lang: es
     targets: [e.nihao]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 你好}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 你好}
     answer: {typed: ni3 hao3, hanzi: 你好, pinyin: nǐ hǎo, meaning: hola}
     refs: [p.third-tone-sandhi]
     explanation: Se escriben dos terceros tonos aunque la primera sílaba suene en segundo.
@@ -27,7 +27,7 @@ exercises:
     type: read
     targets: [w.zaijian]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 再见}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 再见}
     answer: {typed: zai4 jian4, hanzi: 再见, pinyin: zàijiàn, meaning: adiós}
     lang: es
     comments: []
@@ -36,7 +36,7 @@ exercises:
     type: read
     targets: [w.baibai]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 拜拜}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 拜拜}
     answer: {typed: bai2 bai2, hanzi: 拜拜, pinyin: báibái, meaning: 'adiós (informal, del inglés bye-bye)'}
     lang: es
     comments: []
@@ -45,7 +45,7 @@ exercises:
     type: read
     targets: [w.zao]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 早}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 早}
     answer: {typed: zao3, hanzi: 早, pinyin: zǎo, meaning: ¡buenos días! (informal); temprano}
     lang: es
     comments: []
@@ -199,7 +199,7 @@ exercises:
     type: read
     targets: [e.ninhao]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 您好}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 您好}
     answer: {hanzi: 您好, pinyin: nín hǎo, meaning: hola (con respeto)}
     lang: es
     comments: []
@@ -208,7 +208,7 @@ exercises:
     type: read
     targets: [e.nimenhao]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 你们好}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 你们好}
     answer: {hanzi: 你们好, pinyin: nǐmen hǎo, meaning: hola (a un grupo)}
     lang: es
     comments: []
@@ -227,7 +227,7 @@ exercises:
     type: read
     targets: [e.dajiahao]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 大家好}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 大家好}
     answer: {hanzi: 大家好, pinyin: dàjiā hǎo, meaning: hola a todos}
     lang: es
     comments: []
@@ -236,7 +236,7 @@ exercises:
     type: read
     targets: [e.laoshihao]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 老师好}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 老师好}
     answer: {hanzi: 老师好, pinyin: lǎoshī hǎo, meaning: 'hola, profe'}
     lang: es
     comments: []
@@ -347,7 +347,7 @@ exercises:
     type: read
     targets: [w.huanying]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 欢迎}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 欢迎}
     answer: {hanzi: 欢迎, pinyin: huānyíng, meaning: bienvenido; dar la bienvenida}
     comments: []
   - id: x.listen.huanying-ni
@@ -396,7 +396,7 @@ exercises:
     type: read
     targets: [w.zenmeyang]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 怎么样}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 怎么样}
     answer: {hanzi: 怎么样, pinyin: zěnmeyàng, meaning: '¿qué tal?; ¿cómo?'}
     comments: []
   - id: x.tones.zenmeyang
@@ -452,4 +452,173 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Has comido? (como saludo)»'}
     answer: {meaning: '¿Has comido? (como saludo)'}
+    comments: []
+  - id: x.dictation.wanan
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [e.wanan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wan3 an1, hanzi: 晚安, pinyin: wǎn'ān, meaning: buenas noches (al irse a dormir)}
+    comments: []
+  - id: x.produce.wanan
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [e.wanan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «buenas noches (al irse a dormir)»? Escribe el pinyin.'}
+    answer: {typed: wan3 an1, hanzi: 晚安, pinyin: wǎn'ān, meaning: buenas noches (al irse a dormir)}
+    comments: []
+  - id: x.read.wanan
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [e.wanan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 晚安}
+    answer: {hanzi: 晚安, pinyin: wǎn'ān, meaning: buenas noches (al irse a dormir)}
+    comments: []
+  - id: x.dictation.huilai
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.huilai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hui2 lai5, hanzi: 回来, pinyin: huílai, meaning: volver (aquí)}
+    comments: []
+  - id: x.produce.huilai
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.huilai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «volver (aquí)»? Escribe el pinyin.'}
+    answer: {typed: hui2 lai5, hanzi: 回来, pinyin: huílai, meaning: volver (aquí)}
+    comments: []
+  - id: x.read.huilai
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.huilai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 回来}
+    answer: {hanzi: 回来, pinyin: huílai, meaning: volver (aquí)}
+    comments: []
+  - id: x.tones.huilai
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.huilai]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 回来, pinyin: hui lai}
+    answer: {typed: '25', hanzi: 回来, pinyin: huílai, meaning: volver (aquí)}
+    comments: []
+  - id: x.dictation.a.particle
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.a.particle]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: a5, hanzi: 啊, pinyin: a, meaning: partícula que suaviza o anima}
+    comments: []
+  - id: x.read.a.particle
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.a.particle]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 啊}
+    answer: {hanzi: 啊, pinyin: a, meaning: partícula que suaviza o anima}
+    comments: []
+  - id: x.listen.ni-huilai-le
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ni-huilai-le
+    targets: [s.ni-huilai-le]
+    context: [w.ni, w.huilai, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Ya has vuelto!}
+    comments: []
+  - id: x.produce.ni-huilai-le
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ni-huilai-le
+    targets: [s.ni-huilai-le]
+    context: [w.ni, w.huilai, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Tu compañero de piso entra por la puerta. Salúdale como lo haría un chino. En voz alta.'}
+    answer: {meaning: ¡Ya has vuelto!}
+    comments: []
+  - id: x.listen.qu-nali-a
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.qu-nali-a
+    targets: [s.qu-nali-a]
+    context: [w.qu, w.nali, w.a.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Adónde vas?'}
+    comments: []
+  - id: x.produce.qu-nali-a
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.qu-nali-a
+    targets: [s.qu-nali-a]
+    context: [w.qu, w.nali, w.a.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Te cruzas con un vecino que sale de casa. Salúdale preguntándole adónde va. En voz alta.'}
+    answer: {meaning: '¿Adónde vas?'}
+    comments: []
+  - id: x.listen.chuqu-a
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.chuqu-a
+    targets: [s.chuqu-a]
+    context: [w.chuqu, w.a.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Sales?'}
+    comments: []
+  - id: x.listen.women-xiawu-jian-ba
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.women-xiawu-jian-ba
+    targets: [s.women-xiawu-jian-ba]
+    context: [w.women, w.xiawu, w.jian, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Nos vemos por la tarde, ¿vale?'}
+    comments: []
+  - id: x.produce.women-xiawu-jian-ba
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.women-xiawu-jian-ba
+    targets: [s.women-xiawu-jian-ba]
+    context: [w.women, w.xiawu, w.jian, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Nos vemos por la tarde, ¿vale?»'}
+    answer: {meaning: 'Nos vemos por la tarde, ¿vale?'}
+    comments: []
+  - id: x.nuance.greetings
+    added: 2026-10-01
+    lang: es
+    type: nuance
+    targets: [e.nihao]
+    context: [w.huilai]
+    skills: [comprehension, discrimination]
+    prompt: {text: '你好, 你好吗 y 你回来了: ¿cuándo cada uno?'}
+    answer: {meaning: '你好: al conocer a alguien o con desconocidos. 你好吗？ «¿cómo estás?» es de libro. Con quien ya conoces se saluda con la situación: 早！, 你回来了！, 去哪里啊？, 吃饭了吗？.'}
     comments: []

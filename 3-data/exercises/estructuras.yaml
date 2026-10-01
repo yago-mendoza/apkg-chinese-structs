@@ -291,3 +291,136 @@ exercises:
     prompt: {text: '¿Cuál se dice así en chino? «Me gustan el café y el chocolate.»'}
     answer: {meaning: '和 une nombres, no frases: 我喜欢咖啡和巧克力. Para dos frases o dos adjetivos se usa otra cosa: 他很高，也很帅.'}
     comments: []
+  - id: x.calque.stpvo
+    added: 2026-10-01
+    lang: es
+    type: pattern
+    targets: [st.stpvo]
+    context: [w.zai.at]
+    sentence: s.wo-zuotian-zai-jia-kan-shu
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Ayer leí en casa.»'}
+    answer: {meaning: 'El cuándo no va al final, como en español o en inglés: va pronto, detrás del sujeto (o delante, para
+        destacarlo: 昨天我在家看书).'}
+    comments: []
+  - id: x.calque.mei-v
+    added: 2026-10-01
+    lang: es
+    type: pattern
+    targets: [st.mei-v]
+    context: [w.mei]
+    sentence: s.wo-mei-chifan
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «No he comido.»'}
+    answer: {meaning: '没 ya dice que no pasó; no lleva 了. Con 了 y sin 没 es lo contrario: 我吃饭了 «ya he comido».'}
+    comments: []
+  - id: x.calque.v-guo
+    added: 2026-10-01
+    lang: es
+    type: pattern
+    targets: [st.v-guo]
+    context: [w.guo.exp]
+    sentence: s.wo-qu-guo-beijing
+    reveal: [s.ni-kan-guo-zhege-dianying-ma]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «He estado en Pekín.»'}
+    answer: {meaning: '«He estado en Pekín» no se dice con 在: es 去过, «haber ido».'}
+    comments: []
+  - id: x.calque.bi
+    added: 2026-10-01
+    lang: es
+    type: pattern
+    targets: [st.bi]
+    context: [w.bi]
+    sentence: s.ta-bi-wo-gao
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Es más alto que yo.»'}
+    answer: {meaning: 'Con 比 el adjetivo va solo, sin 很.'}
+    comments: []
+  - id: x.calque.zui
+    added: 2026-10-01
+    lang: es
+    type: pattern
+    targets: [st.zui]
+    context: [w.zui]
+    sentence: s.wo-zui-xihuan-zhongguo-cai
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Lo que más me gusta es la comida china.»'}
+    answer: {meaning: '最 va delante del verbo, no al final como «most» o «lo que más».'}
+    comments: []
+  - id: x.calque.suiran-danshi
+    added: 2026-10-01
+    lang: es
+    type: pattern
+    targets: [st.suiran-danshi]
+    context: [w.suiran, w.danshi]
+    sentence: s.suiran-hen-lei-danshi
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Aunque estoy cansado, estoy contento.»'}
+    answer: {meaning: 'Calcado del español («aunque estoy cansado, estoy contento»): en chino la segunda parte lleva 但是.'}
+    comments: []
+  - id: x.calque.you-adj-you-adj
+    added: 2026-10-01
+    lang: es
+    type: pattern
+    targets: [st.you-adj-you-adj]
+    context: [w.you.again, w.you.again]
+    sentence: s.ta-you-gao-you-piaoliang
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Es alta y guapa.»'}
+    answer: {meaning: '和 no une adjetivos, solo nombres. Para «alta y guapa», 又高又漂亮.'}
+    comments: []
+  - id: x.calque.yibian
+    added: 2026-10-01
+    lang: es
+    type: pattern
+    targets: [st.yibian]
+    context: [w.yibian, w.yibian]
+    sentence: s.wo-yibian-kanshu-yibian-hecha
+    reveal: [s.ta-yibian-chi-yibian-shuo]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Leo mientras tomo té.»'}
+    answer: {meaning: '和 no une acciones. Para «leo y tomo té a la vez», 一边看书一边喝茶.'}
+    comments: []
+  - id: x.calque.hui-v
+    added: 2026-10-01
+    lang: es
+    type: pattern
+    targets: [st.hui-v]
+    context: [w.hui.can]
+    sentence: s.wo-hui-shuo-zhongwen
+    reveal: [s.mingtian-hui-xiayu]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Sé hablar chino.»'}
+    answer: {meaning: '«Sé hablar chino»: saber hacer algo es 会. 知道 es saber un dato.'}
+    comments: []
+  - id: x.calque.bie-v
+    added: 2026-10-01
+    lang: es
+    type: pattern
+    targets: [st.bie-v]
+    context: [w.bie]
+    sentence: s.bie-kan-wo
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «¡No me mires!»'}
+    answer: {meaning: 'Para prohibir, 别. 不看我 no es una orden: dice que alguien no me mira.'}
+    comments: []
+  - id: x.calque.action-chain
+    added: 2026-10-01
+    lang: es
+    type: pattern
+    targets: [st.action-chain]
+    context: []
+    sentence: s.wo-zuo-feiji-qu-zhongguo
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Voy a China en avión.»'}
+    answer: {meaning: 'Primero cómo (坐飞机), luego adónde (去中国). Al revés dice «voy a China a coger un avión».'}
+    comments: []

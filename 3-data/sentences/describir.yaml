@@ -101,3 +101,36 @@ sentences:
       - {text: 。}
     translation: {es: Mi móvil es blanco., en: My phone is white.}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.ta-bi-wo-gao
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 比, ref: w.bi, pinyin: bǐ}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 高, ref: w.gao, pinyin: gāo}
+      - {text: 。}
+    translation: {es: 'Es más alto que yo.', en: 'He''s taller than me.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.ta-you-gao-you-piaoliang
+    use: say
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: tā}
+      - {text: 又, ref: w.you.again, pinyin: yòu}
+      - {text: 高, ref: w.gao, pinyin: gāo}
+      - {text: 又, ref: w.you.again, pinyin: yòu}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: piàoliang}
+      - {text: 。}
+    translation: {es: 'Es alta y guapa.', en: 'She''s tall and pretty.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.ni-de-tui-hao-chang-a
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 腿, ref: w.tui, pinyin: tuǐ}
+      - {text: 好, ref: w.hao, pinyin: hǎo}
+      - {text: 长, ref: w.chang, pinyin: cháng}
+      - {text: 啊, ref: w.a.particle, pinyin: a}
+      - {text: ！}
+    translation: {es: '¡Qué piernas tan largas tienes!', en: 'Your legs are so long!'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}

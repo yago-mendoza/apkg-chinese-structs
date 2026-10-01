@@ -273,3 +273,73 @@ sentences:
       - {text: ？}
     translation: {es: '¿Cuánto dinero tienes?', en: 'How much money do you have?'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+  - id: s.wo-chifan-le
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: 'Ya he comido.', en: 'I''ve eaten.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-mei-chifan
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 没, ref: w.mei, pinyin: méi}
+      - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
+      - {text: 。}
+    translation: {es: 'No he comido.', en: 'I haven''t eaten.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-ye-xihuan
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 也, ref: w.ye, pinyin: yě}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 。}
+    translation: {es: 'A mí también me gusta.', en: 'I like it too.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-zui-xihuan-zhongguo-cai
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 最, ref: w.zui, pinyin: zuì}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 中国, ref: w.zhongguo, pinyin: Zhōngguó}
+      - {text: 菜, ref: w.cai, pinyin: cài}
+      - {text: 。}
+    translation: {es: 'Lo que más me gusta es la comida china.', en: 'Chinese food is my favourite.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-ai-chi-haochi-de-dongxi
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 爱, ref: w.ai.love, pinyin: ài}
+      - {text: 吃, ref: w.chi, pinyin: chī}
+      - {text: 好吃, ref: w.haochi, pinyin: hǎochī}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 东西, ref: w.dongxi, pinyin: dōngxi}
+      - {text: 。}
+    translation: {es: 'Me encanta comer cosas ricas.', en: 'I love eating tasty things.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.ta-mai-le-kafei
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 买, ref: w.mai, pinyin: mǎi}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 咖啡, ref: w.kafei, pinyin: kāfēi}
+      - {text: 。}
+    translation: {es: 'Ha comprado café.', en: 'He bought coffee.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.ta-mai-kafei-le
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 买, ref: w.mai, pinyin: mǎi}
+      - {text: 咖啡, ref: w.kafei, pinyin: kāfēi}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: 'Ya ha comprado café.', en: 'He has bought coffee (now).'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}

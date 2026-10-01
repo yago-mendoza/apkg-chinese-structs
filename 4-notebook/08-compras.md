@@ -12,7 +12,7 @@
 - ✅🃏 水果 shuǐguǒ [ʂweɪ˧˩˧ kwɔ˧˩˧] · fruta · _sustantivo_
 - ✅🃏 商店 shāngdiàn [ʂɑŋ˥ tjɛn˥˩] · tienda · _sustantivo_
 - ✅🃏 在 zài [tsaɪ˥˩] · estar en (un lugar) · _verbo_
-- ✅🃏 哪儿 nǎr [naɻ˧˩˧] · dónde · _interrogativo_
+- ❌ 哪儿 nǎr [naɻ˧˩˧] · dónde · _interrogativo_
 - ✅🃏 咖啡 kāfēi [kʰa˥ feɪ˥] · café · _sustantivo_ · Transcripción fonética de «coffee».
 - ✅🃏 巧克力 qiǎokèlì [tɕʰjɑʊ˧˩˧ kʰɤ˥˩ li˥˩] · chocolate · _sustantivo_ · Transcripción fonética de «chocolate».
 - ✅🃏 牛肉 niúròu [njoʊ˧˥ ʐoʊ˥˩] · carne de ternera · _sustantivo_ · Modificador + núcleo: 牛 «vaca» especifica 肉 «carne».
@@ -36,7 +36,10 @@
 - ✅🃏 多少钱 duōshao qián [twɔ˥ ʂɑʊ tɕʰjɛn˧˥] · ¿cuánto cuesta? · _expresión_
 - ✅🃏 块 kuài [kʰwaɪ˥˩] · yuan (al hablar) · _clasificador_ · 块 es como se dice 元 yuán [HSK 1] al hablar: 十块钱 «diez yuanes».
 - ✅🃏 想要 xiǎngyào [ɕjɑŋ˧˩˧ jɑʊ˥˩] · querer (tener algo), desear · _verbo_ · Entre 想 y 要: 我想要这个 «me gustaría este», más suave que 我要这个 «quiero este, dame este».
-- ✅🃏 哪里 nǎlǐ [na˧˩˧ li˧˩˧] · dónde · _interrogativo_ · 哪儿 nǎr dice lo mismo, pero es del norte, sobre todo de Pekín. 哪里 se dice en toda China.
+- ✅🃏 哪里 nǎlǐ [na˧˩˧ li˧˩˧] · dónde · _interrogativo_ · 哪 «qué, cuál» + 里 «dentro»: ¿en qué sitio? Se dice en toda China.
+- ✅🃏 好吃 hǎochī [xɑʊ˧˩˧ ʈʂʰɨ˥] · rico, bueno (de comer) · _adjetivo_ · 好 + verbo: «bueno de…». 好吃 «rico», 好看 «bonito», 好听 «agradable de oír».
+- ✅🃏 菜 cài [tsʰaɪ˥˩] · plato, comida; verdura · _sustantivo_ · 艹 «hierba» arriba: era la verdura. Hoy también «plato, cocina»: 中国菜 «comida china».
+- ✅🃏 茶 chá [ʈʂʰa˧˥] · té · _sustantivo_ · 艹 «hierba» arriba: una hoja. 喝茶 «tomar té».
 
 ## Querer, gustar, amar
 
@@ -55,6 +58,13 @@ Lo que se vende + 店 «local». Igual 药店 yàodiàn «farmacia» [HSK 2], co
 - 商店 shāngdiàn · 商 comercio: la tienda
 - 饭店 fàndiàn · 饭 comida: el restaurante
 - 书店 shūdiàn · 书 libro: la librería
+
+## 喝 hē y 和 hé
+
+Solo cambia el tono: 喝 alto y plano, 和 sube.
+
+- 喝 hē · hē, alto y plano: beber
+- 和 hé · hé, sube: y, con
 
 ## Frases
 
@@ -86,3 +96,10 @@ Lo que se vende + 店 «local». Igual 药店 yàodiàn «farmacia» [HSK 2], co
 - ✅🃏 我可以喝什么？ · wǒ kěyǐ hē shénme · ¿Qué puedo beber?
 - ✅🃏 可以吗？可以。 · kěyǐ ma kěyǐ · ¿Se puede? —Sí, se puede.
 - ✅🃏 你有多少钱？ · nǐ yǒu duōshao qián · ¿Cuánto dinero tienes?
+- ✅🃏 我吃饭了。 · wǒ chīfàn le · Ya he comido.
+- ✅🃏 我没吃饭。 · wǒ méi chīfàn · No he comido.
+- ✅🃏 我也喜欢。 · wǒ yě xǐhuan · A mí también me gusta.
+- ✅🃏 我最喜欢中国菜。 · wǒ zuì xǐhuan Zhōngguó cài · Lo que más me gusta es la comida china.
+- ✅🃏 我爱吃好吃的东西。 · wǒ ài chī hǎochī de dōngxi · Me encanta comer cosas ricas.
+- ✅🃏 他买了咖啡。 · tā mǎi le kāfēi · Ha comprado café.
+- ✅🃏 他买咖啡了。 · tā mǎi kāfēi le · Ya ha comprado café.

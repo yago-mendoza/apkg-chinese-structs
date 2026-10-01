@@ -6,7 +6,7 @@ exercises:
     type: read
     targets: [w.zhongguo]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 中国}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 中国}
     answer: {typed: zhong1 guo2, hanzi: 中国, pinyin: Zhōngguó, meaning: China}
     reveal: [s.ni-shi-zhongguoren-ma]
     lang: es
@@ -16,7 +16,7 @@ exercises:
     type: read
     targets: [w.xibanya]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 西班牙}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 西班牙}
     answer: {typed: xi1 ban1 ya2, hanzi: 西班牙, pinyin: Xībānyá, meaning: España}
     reveal: [s.wo-shi-xibanyaren]
     lang: es
@@ -26,7 +26,7 @@ exercises:
     type: read
     targets: [w.meiguo]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 美国}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 美国}
     answer: {typed: mei3 guo2, hanzi: 美国, pinyin: Měiguó, meaning: Estados Unidos}
     lang: es
     comments: []
@@ -35,7 +35,7 @@ exercises:
     type: read
     targets: [w.zhongwen]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 中文}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 中文}
     answer: {typed: zhong1 wen2, hanzi: 中文, pinyin: Zhōngwén, meaning: chino (la lengua)}
     lang: es
     comments: []
@@ -44,7 +44,7 @@ exercises:
     type: read
     targets: [w.shi]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 是}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 是}
     answer: {typed: shi4, hanzi: 是, pinyin: shì, meaning: ser}
     reveal: [s.wo-shi-xibanyaren]
     lang: es
@@ -54,7 +54,7 @@ exercises:
     type: read
     targets: [w.bu]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 不}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 不}
     answer: {typed: bu4, hanzi: 不, pinyin: bù, meaning: 'no'}
     reveal: [s.wo-bu-shi-xuesheng]
     lang: es
@@ -64,7 +64,7 @@ exercises:
     type: read
     targets: [w.ma]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 吗}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 吗}
     answer: {typed: ma5, hanzi: 吗, pinyin: ma, meaning: '¿…? (convierte la frase en pregunta de sí o no)'}
     reveal: [s.ni-hao-ma]
     lang: es
@@ -74,7 +74,7 @@ exercises:
     type: read
     targets: [w.ne]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 呢}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 呢}
     answer: {typed: ne5, hanzi: 呢, pinyin: ne, meaning: '¿y…? (devuelve la pregunta)'}
     reveal: [s.wo-hen-hao-ni-ne]
     lang: es
@@ -84,7 +84,7 @@ exercises:
     type: read
     targets: [w.ye]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 也}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 也}
     answer: {typed: ye3, hanzi: 也, pinyin: yě, meaning: también}
     reveal: [s.wo-ye-hen-hao]
     lang: es
@@ -94,7 +94,7 @@ exercises:
     type: read
     targets: [w.dou]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 都}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 都}
     answer: {typed: dou1, hanzi: 都, pinyin: dōu, meaning: 'todos, ambos (adverbio)'}
     lang: es
     comments: []
@@ -103,7 +103,7 @@ exercises:
     type: read
     targets: [w.de]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 的}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 的}
     answer: {typed: de5, hanzi: 的, pinyin: de, meaning: 'de (posesión: 我的 = mi)'}
     reveal: [s.ta-shi-wo-de-laoshi]
     lang: es
@@ -113,7 +113,7 @@ exercises:
     type: read
     targets: [w.jiao]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 叫}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 叫}
     answer: {typed: jiao4, hanzi: 叫, pinyin: jiào, meaning: llamarse}
     reveal: [s.ni-jiao-shenme-mingzi]
     lang: es
@@ -123,7 +123,7 @@ exercises:
     type: read
     targets: [w.shenme]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 什么}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 什么}
     answer: {typed: shen2 me5, hanzi: 什么, pinyin: shénme, meaning: qué}
     reveal: [s.ni-jiao-shenme-mingzi]
     lang: es
@@ -133,7 +133,7 @@ exercises:
     type: read
     targets: [w.mingzi]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 名字}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 名字}
     answer: {typed: ming2 zi5, hanzi: 名字, pinyin: míngzi, meaning: nombre}
     reveal: [s.ni-jiao-shenme-mingzi]
     lang: es
@@ -143,7 +143,7 @@ exercises:
     type: read
     targets: [w.renshi]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 认识}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 认识}
     answer: {typed: ren4 shi5, hanzi: 认识, pinyin: rènshi, meaning: conocer (a alguien)}
     reveal: [s.hen-gaoxing-renshi-ni]
     lang: es
@@ -153,7 +153,7 @@ exercises:
     type: read
     targets: [w.gaoxing]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 高兴}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 高兴}
     answer: {typed: gao1 xing4, hanzi: 高兴, pinyin: gāoxìng, meaning: contento}
     reveal: [s.hen-gaoxing-renshi-ni]
     lang: es
@@ -700,7 +700,7 @@ exercises:
     type: read
     targets: [w.xing]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 姓}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 姓}
     answer: {hanzi: 姓, pinyin: xìng, meaning: apellidarse; apellido}
     comments: []
   - id: x.dictation.guixing
@@ -727,7 +727,7 @@ exercises:
     type: read
     targets: [e.guixing]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 贵姓}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 贵姓}
     answer: {hanzi: 贵姓, pinyin: guìxìng, meaning: su apellido (forma cortés)}
     comments: []
   - id: x.dictation.xingming
@@ -745,7 +745,7 @@ exercises:
     type: read
     targets: [w.xingming]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 姓名}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 姓名}
     answer: {hanzi: 姓名, pinyin: xìngmíng, meaning: nombre completo}
     comments: []
   - id: x.dictation.menduosa
@@ -772,7 +772,7 @@ exercises:
     type: read
     targets: [w.menduosa]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 门多萨}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 门多萨}
     answer: {hanzi: 门多萨, pinyin: Ménduōsà, meaning: Mendoza (mi apellido)}
     comments: []
   - id: x.dictation.yage
@@ -799,7 +799,7 @@ exercises:
     type: read
     targets: [w.yage]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 雅戈}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 雅戈}
     answer: {hanzi: 雅戈, pinyin: Yǎgē, meaning: Yago (mi nombre en chino)}
     comments: []
   - id: x.dictation.lai
@@ -826,7 +826,7 @@ exercises:
     type: read
     targets: [w.lai]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 来}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 来}
     answer: {hanzi: 来, pinyin: lái, meaning: venir}
     comments: []
   - id: x.dictation.laizi
@@ -853,7 +853,7 @@ exercises:
     type: read
     targets: [w.laizi]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 来自}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 来自}
     answer: {hanzi: 来自, pinyin: láizì, meaning: 'venir de, ser de'}
     comments: []
   - id: x.dictation.wen
@@ -880,7 +880,7 @@ exercises:
     type: read
     targets: [w.wen]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 问}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 问}
     answer: {hanzi: 问, pinyin: wèn, meaning: preguntar}
     comments: []
   - id: x.dictation.beijing
@@ -907,7 +907,7 @@ exercises:
     type: read
     targets: [w.beijing]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 北京}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 北京}
     answer: {hanzi: 北京, pinyin: Běijīng, meaning: Pekín}
     comments: []
   - id: x.listen.renshi-ni-hen-gaoxing
@@ -1196,7 +1196,7 @@ exercises:
     type: read
     targets: [w.xiansheng]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 先生}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 先生}
     answer: {hanzi: 先生, pinyin: xiānsheng, meaning: señor (tras el apellido)}
     comments: []
   - id: x.tones.xiansheng
@@ -1241,4 +1241,285 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¡Buenos días, señor Mendoza!»'}
     answer: {meaning: '¡Buenos días, señor Mendoza!'}
+    comments: []
+  - id: x.contrast.shi
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.shi-shi
+    targets: [w.shi]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 是, pinyin: shì, meaning: ser}
+    comments: []
+  - id: x.contrast.na.which
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.na-nar
+    targets: [w.na.which]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es nǎ, «qué, cuál»?'}
+    answer: {hanzi: 哪, pinyin: nǎ, meaning: 'qué, cuál'}
+    comments: []
+  - id: x.dictation.na.which
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.na.which]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: na3, hanzi: 哪, pinyin: nǎ, meaning: 'qué, cuál'}
+    comments: []
+  - id: x.cloze.na.which
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.ni-shi-na-guo-ren
+    gap: w.na.which
+    targets: [w.na.which]
+    context: [w.ni, w.shi, w.guo, w.ren]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿De qué país eres?»'}
+    answer: {typed: na3, hanzi: 哪, pinyin: nǎ, meaning: 'qué, cuál'}
+    comments: []
+  - id: x.read.na.which
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.na.which]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 哪}
+    answer: {hanzi: 哪, pinyin: nǎ, meaning: 'qué, cuál'}
+    comments: []
+  - id: x.contrast.guo
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.guo-guo
+    targets: [w.guo]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 国, pinyin: guó, meaning: país}
+    comments: []
+  - id: x.dictation.guo
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.guo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: guo2, hanzi: 国, pinyin: guó, meaning: país}
+    comments: []
+  - id: x.produce.guo
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.guo]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «país»? Escribe el pinyin.'}
+    answer: {typed: guo2, hanzi: 国, pinyin: guó, meaning: país}
+    comments: []
+  - id: x.read.guo
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.guo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 国}
+    answer: {hanzi: 国, pinyin: guó, meaning: país}
+    comments: []
+  - id: x.dictation.hui.can
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.hui.can]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hui4, hanzi: 会, pinyin: huì, meaning: saber (hacer algo); ir a (predicción)}
+    comments: []
+  - id: x.produce.hui.can
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.hui.can]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «saber hacer algo», como en «sé nadar» o «sé hablar chino»? Escribe el pinyin.'}
+    answer: {typed: hui4, hanzi: 会, pinyin: huì, meaning: saber (hacer algo); ir a (predicción)}
+    comments: []
+  - id: x.read.hui.can
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.hui.can]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 会}
+    answer: {hanzi: 会, pinyin: huì, meaning: saber (hacer algo); ir a (predicción)}
+    comments: []
+  - id: x.dictation.xuexi
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.xuexi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xue2 xi2, hanzi: 学习, pinyin: xuéxí, meaning: 'estudiar, aprender'}
+    comments: []
+  - id: x.produce.xuexi
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.xuexi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «estudiar, aprender»? Escribe el pinyin.'}
+    answer: {typed: xue2 xi2, hanzi: 学习, pinyin: xuéxí, meaning: 'estudiar, aprender'}
+    comments: []
+  - id: x.read.xuexi
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.xuexi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 学习}
+    answer: {hanzi: 学习, pinyin: xuéxí, meaning: 'estudiar, aprender'}
+    comments: []
+  - id: x.listen.ni-shi-na-guo-ren
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ni-shi-na-guo-ren
+    targets: [s.ni-shi-na-guo-ren]
+    context: [w.ni, w.shi, w.na.which, w.guo, w.ren]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿De qué país eres?'}
+    comments: []
+  - id: x.produce.ni-shi-na-guo-ren
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ni-shi-na-guo-ren
+    targets: [s.ni-shi-na-guo-ren]
+    context: [w.ni, w.shi, w.na.which, w.guo, w.ren]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿De qué país eres?»'}
+    answer: {meaning: '¿De qué país eres?'}
+    comments: []
+  - id: x.listen.ni-zai-nali
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ni-zai-nali
+    targets: [s.ni-zai-nali]
+    context: [w.ni, w.zai.at, w.nali]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Dónde estás?'}
+    comments: []
+  - id: x.produce.ni-zai-nali
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ni-zai-nali
+    targets: [s.ni-zai-nali]
+    context: [w.ni, w.zai.at, w.nali]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde estás?»'}
+    answer: {meaning: '¿Dónde estás?'}
+    comments: []
+  - id: x.listen.wo-zai-xibanya
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-zai-xibanya
+    targets: [s.wo-zai-xibanya]
+    context: [w.wo, w.zai.at, w.xibanya]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Estoy en España.}
+    comments: []
+  - id: x.produce.wo-zai-xibanya
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.wo-zai-xibanya
+    targets: [s.wo-zai-xibanya]
+    context: [w.wo, w.zai.at, w.xibanya]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estoy en España.»'}
+    answer: {meaning: Estoy en España.}
+    comments: []
+  - id: x.listen.wo-hui-shuo-zhongwen
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-hui-shuo-zhongwen
+    targets: [s.wo-hui-shuo-zhongwen]
+    context: [w.wo, w.hui.can, w.shuo, w.zhongwen]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Sé hablar chino.}
+    comments: []
+  - id: x.produce.wo-hui-shuo-zhongwen
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.wo-hui-shuo-zhongwen
+    targets: [s.wo-hui-shuo-zhongwen]
+    context: [w.wo, w.hui.can, w.shuo, w.zhongwen]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Sé hablar chino.»'}
+    answer: {meaning: Sé hablar chino.}
+    comments: []
+  - id: x.listen.wo-bu-hui-shuo-zhongwen
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-bu-hui-shuo-zhongwen
+    targets: [s.wo-bu-hui-shuo-zhongwen]
+    context: [w.wo, w.bu, w.hui.can, w.shuo, w.zhongwen]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No sé hablar chino.}
+    comments: []
+  - id: x.listen.wo-zai-xuexi-zhongwen
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-zai-xuexi-zhongwen
+    targets: [s.wo-zai-xuexi-zhongwen]
+    context: [w.wo, w.zai.progressive, w.xuexi, w.zhongwen]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Estoy estudiando chino.}
+    comments: []
+  - id: x.produce.wo-zai-xuexi-zhongwen
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.wo-zai-xuexi-zhongwen
+    targets: [s.wo-zai-xuexi-zhongwen]
+    context: [w.wo, w.zai.progressive, w.xuexi, w.zhongwen]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estoy estudiando chino.»'}
+    answer: {meaning: Estoy estudiando chino.}
+    comments: []
+  - id: x.nuance.question-words
+    added: 2026-10-01
+    lang: es
+    type: nuance
+    targets: [w.shenme, w.zenme, w.ji, w.duoshao]
+    skills: [comprehension, discrimination]
+    prompt: {text: '什么, 怎么, 几 y 多少: ¿qué pregunta cada uno?'}
+    answer: {meaning: '什么 qué · 怎么 cómo · 几 cuántos, pocos y con clasificador · 多少 cuánto, abierto. Además 谁 quién, 哪里 dónde y 为什么 por qué. Van donde iría la respuesta.'}
+    comments: []
+  - id: x.nuance.hui-uses
+    added: 2026-10-01
+    lang: es
+    type: nuance
+    targets: [w.hui.can]
+    context: [w.neng, w.keyi]
+    skills: [comprehension, discrimination]
+    prompt: {text: '会 en 我会说中文 y en 明天会下雨: ¿qué significa cada vez?'}
+    answer: {meaning: 'Saber hacer algo aprendido · ir a pasar (predicción). Ser capaz ahora es 能; tener permiso, 可以.'}
     comments: []

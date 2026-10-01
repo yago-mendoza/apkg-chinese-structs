@@ -18,3 +18,4 @@
 - ✅🃏 下雨了。 · xiàyǔ le · Se ha puesto a llover.
 - ✅🃏 北京下雨吗？ · Běijīng xiàyǔ ma · ¿Llueve en Pekín?
 - ✅🃏 要下雨了。 · yào xiàyǔ le · Va a llover.
+- ✅🃏 明天会下雨。 · míngtiān huì xiàyǔ · Mañana lloverá.

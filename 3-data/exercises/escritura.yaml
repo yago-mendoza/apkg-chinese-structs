@@ -96,7 +96,7 @@ exercises:
     type: read
     targets: [w.niu]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 牛}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 牛}
     answer: {hanzi: 牛, pinyin: niú, meaning: 'vaca, buey'}
     lang: es
     comments: []

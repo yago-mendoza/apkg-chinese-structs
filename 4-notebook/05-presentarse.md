@@ -31,6 +31,29 @@
 - ✅🃏 北京 Běijīng [peɪ˧˩˧ tɕiŋ˥] · Pekín · _nombre propio_ · Literalmente «capital del norte»: 北 běi «norte» + 京 jīng «capital». · 京 es un edificio alto sobre una colina, la parte de arriba de 高.
 - ✅ 大卫 Dàwèi [ta˥˩ weɪ˥˩] · David (nombre de ejemplo) · _nombre propio_
 - ✅🃏 先生 xiānsheng [ɕjɛn˥ ʂɤŋ] · señor (tras el apellido) · _sustantivo_ · Detrás del apellido: 白先生 «el señor Bai». Es como se llama a alguien en un trato formal; no por el nombre completo. · 先 «antes» + 生 «nacer»: el que nació antes. Ojo: la segunda sílaba se dice átona, xiānsheng.
+- ✅🃏 哪 nǎ [na˧˩˧] · qué, cuál · _interrogativo_ · Delante de un nombre o de un clasificador: 哪国人 «de qué país». Con 里, 哪里 «dónde».
+- ✅🃏 国 guó [kwɔ˧˥] · país · _sustantivo_ · En los nombres de países: 中国, 美国. 你是哪国人？ «¿de qué país eres?».
+- ✅🃏 会 huì [xweɪ˥˩] · saber (hacer algo); ir a (predicción) · _verbo_ · Saber hacer algo aprendido: 我会说中文. «Saber un dato» es otra palabra, 知道 zhīdào [HSK 1]. · También predice: 明天会下雨 «mañana lloverá». Ser capaz en este momento es 能; tener permiso, 可以.
+- ✅🃏 学习 xuéxí [ɕɥœ˧˥ ɕi˧˥] · estudiar, aprender · _verbo_ · 学 «aprender» + 习 «practicar». 学生 «estudiante» lleva el mismo 学.
+
+## 是 shì y 十 shí
+
+Solo cambia el tono: 是 cae, 十 sube.
+
+- 是 shì · shì, cae: ser
+- 十 shí · shí, sube: diez
+
+## Palabras para preguntar
+
+Van donde iría la respuesta, sin cambiar el orden de la frase.
+
+- 什么 shénme · qué
+- 怎么 zěnme · cómo
+- 谁 shéi · quién
+- 哪里 nǎlǐ · dónde
+- 几 jǐ · cuántos (pocos)
+- 多少 duōshao · cuánto (abierto)
+- 为什么 wèishénme · por qué
 
 ## Frases
 
@@ -59,3 +82,9 @@
 - ✅🃏 大家都来了。 · dàjiā dōu lái le · Ya hemos llegado todos.
 - ✅🃏 他的名字是什么？ · tā de míngzi shì shénme · ¿Cuál es su nombre?
 - ✅🃏 门多萨先生，您好！ · Ménduōsà xiānsheng nín hǎo · ¡Buenos días, señor Mendoza!
+- ✅🃏 你是哪国人？ · nǐ shì nǎ guó rén · ¿De qué país eres?
+- ✅🃏 你在哪里？ · nǐ zài nǎlǐ · ¿Dónde estás?
+- ✅🃏 我在西班牙。 · wǒ zài Xībānyá · Estoy en España.
+- ✅🃏 我会说中文。 · wǒ huì shuō Zhōngwén · Sé hablar chino.
+- ✅🃏 我不会说中文。 · wǒ bú huì shuō Zhōngwén · No sé hablar chino.
+- ✅🃏 我在学习中文。 · wǒ zài xuéxí Zhōngwén · Estoy estudiando chino.

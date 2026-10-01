@@ -28,3 +28,14 @@
 - ✅🃏 `{Num} + 个 + {N}` · Contar: número, clasificador y nombre; delante del clasificador, 两 y no 二. · 我有三个朋友。 / 他们有两个孩子。
 - ✅🃏 `{N} + 在 + 哪里？` · Preguntar dónde está algo. · 商店在哪里？
 - ✅🃏 `{N} + 和 + {N}` · Unir dos nombres: 和 es «y» solo entre nombres, nunca entre frases ni adjetivos. · 我喜欢咖啡和巧克力。
+- ✅🃏 `{S} + {Tiempo} + 在 + {Lugar} + {V} + {N}` · El orden de la frase: sujeto, cuándo, dónde, qué haces y qué. El cuándo y el dónde van antes del verbo. · 我昨天在家看书。
+- ✅🃏 `{S} + 没 + {V}` · Lo que no pasó: 没 delante del verbo, sin 了. El chino no conjuga: 了 dice que pasó; 没, que no. · 我没吃饭。
+- ✅🃏 `{S} + {V} + 过 + {N}` · Haber hecho algo alguna vez: 过 detrás del verbo. · 我去过北京。 / 你看过这个电影吗？
+- ✅🃏 `{S} + 比 + {N} + {Adj}` · Comparar: A 比 B + adjetivo, «A es más … que B». · 他比我高。
+- ✅🃏 `{S} + 最 + {V} + {N}` · Lo que más: 最 delante del verbo o del adjetivo. · 我最喜欢中国菜。
+- ✅🃏 `虽然 + {Frase} + 但是 + {Frase}` · Aunque…, …: en chino se dicen las dos partes, 虽然 y 但是. · 虽然很累，但是我很高兴。
+- ✅🃏 `{S} + 又 + {Adj} + 又 + {Adj}` · Dos cualidades a la vez: 又 + adjetivo + 又 + adjetivo. · 她又高又漂亮。
+- ✅🃏 `{S} + 一边 + {V} + 一边 + {V}` · Dos acciones a la vez: 一边 + verbo + 一边 + verbo. · 他一边吃一边说。
+- ✅🃏 `{S} + 会 + {V}` · Saber hacer algo aprendido (y también predecir: 明天会下雨). · 我会说中文。 / 明天会下雨。
+- ✅🃏 `别 + {V}` · Pedir que alguien no haga algo: 别 delante del verbo. · 别看我！
+- ✅🃏 `{S} + {V} + {N} + {V} + {N}` · Acciones en cadena, en el orden en que pasan: primero el medio, luego la meta. · 我坐飞机去中国。

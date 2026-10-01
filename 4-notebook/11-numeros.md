@@ -21,6 +21,21 @@
 - ✅🃏 几 jǐ [tɕi˧˩˧] · cuántos (pocos) · _interrogativo_ · 几 espera un número pequeño y lleva clasificador: 几个人？ Para cantidades abiertas, 多少.
 - ✅🃏 岁 suì [sweɪ˥˩] · años (de edad) · _clasificador_ · 你几岁？ se pregunta sobre todo a niños; a un adulto se le pregunta 你多大？, con 多 «cuánto» y 大 «grande».
 
+## 九 jiǔ y 就 jiù
+
+九 baja y sube; 就 cae.
+
+- 九 jiǔ · jiǔ, baja y sube: nueve
+- 就 jiù · jiù, cae: entonces
+
+## 有 yǒu, 又 yòu y 要 yào
+
+Tres «you» que se confunden: los separan el tono y la vocal.
+
+- 有 yǒu · yǒu, baja y sube: tener
+- 又 yòu · yòu, cae: a la vez (又…又…)
+- 要 yào · yào, cae y suena «yao»: querer
+
 ## Frases
 
 - ✅🃏 一、二、三、四、五、六、七、八、九、十。 · yī èr sān sì wǔ liù qī bā jiǔ shí · Uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez.

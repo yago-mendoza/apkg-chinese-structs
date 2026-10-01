@@ -250,3 +250,63 @@ sentences:
       - {text: ！}
     translation: {es: '¡Buenos días, señor Mendoza!', en: 'Hello, Mr. Mendoza!'}
     source: {origin: class-audio, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: grabación de la clase, date: '2026-09-29'}
+  - id: s.ni-shi-na-guo-ren
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 哪, ref: w.na.which, pinyin: nǎ}
+      - {text: 国, ref: w.guo, pinyin: guó}
+      - {text: 人, ref: w.ren, pinyin: rén}
+      - {text: ？}
+    translation: {es: '¿De qué país eres?', en: 'Where are you from?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.ni-zai-nali
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 在, ref: w.zai.at, pinyin: zài}
+      - {text: 哪里, ref: w.nali, pinyin: nǎlǐ}
+      - {text: ？}
+    translation: {es: '¿Dónde estás?', en: 'Where are you?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-zai-xibanya
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 在, ref: w.zai.at, pinyin: zài}
+      - {text: 西班牙, ref: w.xibanya, pinyin: Xībānyá}
+      - {text: 。}
+    translation: {es: 'Estoy en España.', en: 'I''m in Spain.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-hui-shuo-zhongwen
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 会, ref: w.hui.can, pinyin: huì}
+      - {text: 说, ref: w.shuo, pinyin: shuō}
+      - {text: 中文, ref: w.zhongwen, pinyin: Zhōngwén}
+      - {text: 。}
+    translation: {es: 'Sé hablar chino.', en: 'I can speak Chinese.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-bu-hui-shuo-zhongwen
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 不, ref: w.bu, pinyin: bú, sandhi: bù → bú delante de cuarto tono}
+      - {text: 会, ref: w.hui.can, pinyin: huì}
+      - {text: 说, ref: w.shuo, pinyin: shuō}
+      - {text: 中文, ref: w.zhongwen, pinyin: Zhōngwén}
+      - {text: 。}
+    translation: {es: 'No sé hablar chino.', en: 'I can''t speak Chinese.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-zai-xuexi-zhongwen
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 在, ref: w.zai.progressive, pinyin: zài}
+      - {text: 学习, ref: w.xuexi, pinyin: xuéxí}
+      - {text: 中文, ref: w.zhongwen, pinyin: Zhōngwén}
+      - {text: 。}
+    translation: {es: 'Estoy estudiando chino.', en: 'I''m studying Chinese.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}

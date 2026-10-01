@@ -20,6 +20,7 @@
 - 🟡🃏 贝 bèi · concha (el dinero antiguo) · Las conchas fueron dinero: de ahí 贵 guì «caro», 买 mǎi «comprar» (forma antigua) y 货 huò «mercancía».
 - 🟡🃏 户 hù · puerta de una hoja; hogar · 户 es una sola hoja; 门, las dos. Aparece en 窗户 chuānghu «ventana» [HSK 4] y 账户 zhànghù «cuenta bancaria» [HSK 6].
 - ✅🃏 讠 yán · palabra, hablar (forma de 言 a la izquierda) · Casi siempre trae la idea de hablar: 认识, 请, 谢谢, 说 shuō «decir». No confundir con 文 wén «escritura» de 中文.
+- ✅ 疒 nè · enfermedad (como componente) · Una cama con una persona tumbada: lo que lo lleva tiene que ver con la enfermedad, como 疼 «doler» y 瘦 «delgado».
 
 ## 生, 牛 y 午
 

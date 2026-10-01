@@ -245,3 +245,113 @@ entries:
     contrast: {right: s.wo-xihuan-kafei-he-qiaokeli, wrong: '我喜欢咖啡和我喜欢巧克力。', why: {es: '和 une nombres, no frases: 我喜欢咖啡和巧克力. Para dos frases o dos adjetivos se usa otra cosa: 他很高，也很帅.', en: '和 joins nouns, not clauses: 我喜欢咖啡和巧克力. Two clauses or adjectives take something else: 他很高，也很帅.'}}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments: []
+  - id: st.stpvo
+    kind: structure
+    use: say
+    pattern: '{S} + {Tiempo} + 在 + {Lugar} + {V} + {N}'
+    refs: [w.zai.at]
+    meaning: {es: 'El orden de la frase: sujeto, cuándo, dónde, qué haces y qué. El cuándo y el dónde van antes del verbo.', en: 'Word order: subject, time, place, verb, object. Time and place come before the verb.'}
+    examples: [s.wo-zuotian-zai-jia-kan-shu]
+    contrast: {right: s.wo-zuotian-zai-jia-kan-shu, wrong: '我在家看书昨天。', why: {es: 'El cuándo no va al final, como en español o en inglés: va pronto, detrás del sujeto (o delante, para destacarlo: 昨天我在家看书).', en: 'Time does not go at the end: it comes early, after the subject (or first, for emphasis).'}}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: st.mei-v
+    kind: structure
+    use: say
+    pattern: '{S} + 没 + {V}'
+    refs: [w.mei]
+    meaning: {es: 'Lo que no pasó: 没 delante del verbo, sin 了. El chino no conjuga: 了 dice que pasó; 没, que no.', en: 'What did not happen: 没 before the verb, no 了.'}
+    examples: [s.wo-mei-chifan]
+    contrast: {right: s.wo-mei-chifan, wrong: '我没吃饭了。', why: {es: '没 ya dice que no pasó; no lleva 了. Con 了 y sin 没 es lo contrario: 我吃饭了 «ya he comido».', en: '没 already says it did not happen; no 了. With 了 and no 没 it means the opposite.'}}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: st.v-guo
+    kind: structure
+    use: say
+    pattern: '{S} + {V} + 过 + {N}'
+    refs: [w.guo.exp]
+    meaning: {es: 'Haber hecho algo alguna vez: 过 detrás del verbo.', en: 'Having done something before: 过 after the verb.'}
+    examples: [s.wo-qu-guo-beijing, s.ni-kan-guo-zhege-dianying-ma]
+    contrast: {right: s.wo-qu-guo-beijing, wrong: '我在过北京。', why: {es: '«He estado en Pekín» no se dice con 在: es 去过, «haber ido».', en: '"I have been to Beijing" is not 在: it is 去过, "have gone".'}}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: st.bi
+    kind: structure
+    use: say
+    pattern: '{S} + 比 + {N} + {Adj}'
+    refs: [w.bi]
+    meaning: {es: 'Comparar: A 比 B + adjetivo, «A es más … que B».', en: 'Comparing: A 比 B + adjective.'}
+    examples: [s.ta-bi-wo-gao]
+    contrast: {right: s.ta-bi-wo-gao, wrong: '他比我很高。', why: {es: 'Con 比 el adjetivo va solo, sin 很.', en: 'With 比 the adjective stands alone, no 很.'}}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: st.zui
+    kind: structure
+    use: say
+    pattern: '{S} + 最 + {V} + {N}'
+    refs: [w.zui]
+    meaning: {es: 'Lo que más: 最 delante del verbo o del adjetivo.', en: 'The most: 最 before the verb or adjective.'}
+    examples: [s.wo-zui-xihuan-zhongguo-cai]
+    contrast: {right: s.wo-zui-xihuan-zhongguo-cai, wrong: '我喜欢中国菜最。', why: {es: '最 va delante del verbo, no al final como «most» o «lo que más».', en: '最 goes before the verb, not at the end like "most".'}}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: st.suiran-danshi
+    kind: structure
+    use: say
+    pattern: '虽然 + {Frase} + 但是 + {Frase}'
+    refs: [w.suiran, w.danshi]
+    meaning: {es: 'Aunque…, …: en chino se dicen las dos partes, 虽然 y 但是.', en: 'Although…, …: both 虽然 and 但是 are said.'}
+    examples: [s.suiran-hen-lei-danshi]
+    contrast: {right: s.suiran-hen-lei-danshi, wrong: '虽然很累，我很高兴。', why: {es: 'Calcado del español («aunque estoy cansado, estoy contento»): en chino la segunda parte lleva 但是.', en: 'Copied from Spanish or English: in Chinese the second half takes 但是.'}}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: st.you-adj-you-adj
+    kind: structure
+    use: say
+    pattern: '{S} + 又 + {Adj} + 又 + {Adj}'
+    refs: [w.you.again, w.you.again]
+    meaning: {es: 'Dos cualidades a la vez: 又 + adjetivo + 又 + adjetivo.', en: 'Two qualities at once: 又 Adj 又 Adj.'}
+    examples: [s.ta-you-gao-you-piaoliang]
+    contrast: {right: s.ta-you-gao-you-piaoliang, wrong: '她很高和很漂亮。', why: {es: '和 no une adjetivos, solo nombres. Para «alta y guapa», 又高又漂亮.', en: '和 does not join adjectives, only nouns.'}}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: st.yibian
+    kind: structure
+    use: say
+    pattern: '{S} + 一边 + {V} + 一边 + {V}'
+    refs: [w.yibian, w.yibian]
+    meaning: {es: 'Dos acciones a la vez: 一边 + verbo + 一边 + verbo.', en: 'Two actions at once: 一边 V 一边 V.'}
+    examples: [s.ta-yibian-chi-yibian-shuo]
+    contrast: {right: s.wo-yibian-kanshu-yibian-hecha, wrong: '我在看书和喝茶。', why: {es: '和 no une acciones. Para «leo y tomo té a la vez», 一边看书一边喝茶.', en: '和 does not join actions; use 一边…一边….'}}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: st.hui-v
+    kind: structure
+    use: say
+    pattern: '{S} + 会 + {V}'
+    refs: [w.hui.can]
+    meaning: {es: 'Saber hacer algo aprendido (y también predecir: 明天会下雨).', en: 'Knowing how to do something learned (also predicting).'}
+    examples: [s.wo-hui-shuo-zhongwen, s.mingtian-hui-xiayu]
+    contrast: {right: s.wo-hui-shuo-zhongwen, wrong: '我知道说中文。', why: {es: '«Sé hablar chino»: saber hacer algo es 会. 知道 es saber un dato.', en: '"I can speak Chinese": a skill is 会; 知道 is knowing a fact.'}}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: st.bie-v
+    kind: structure
+    use: say
+    pattern: '别 + {V}'
+    refs: [w.bie]
+    meaning: {es: 'Pedir que alguien no haga algo: 别 delante del verbo.', en: 'Telling someone not to do something: 别 + verb.'}
+    examples: [s.bie-kan-wo]
+    contrast: {right: s.bie-kan-wo, wrong: '不看我！', why: {es: 'Para prohibir, 别. 不看我 no es una orden: dice que alguien no me mira.', en: 'To forbid, 别. 不看我 is a statement, not an order.'}}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: st.action-chain
+    kind: structure
+    use: say
+    pattern: '{S} + {V} + {N} + {V} + {N}'
+    refs: []
+    meaning: {es: 'Acciones en cadena, en el orden en que pasan: primero el medio, luego la meta.', en: 'Chained actions, in the order they happen: first the means, then the goal.'}
+    examples: [s.wo-zuo-feiji-qu-zhongguo]
+    contrast: {right: s.wo-zuo-feiji-qu-zhongguo, wrong: '我去中国坐飞机。', why: {es: 'Primero cómo (坐飞机), luego adónde (去中国). Al revés dice «voy a China a coger un avión».', en: 'First how, then where. The other way round means "I go to China to take a plane".'}}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []

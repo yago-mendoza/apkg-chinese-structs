@@ -161,3 +161,66 @@ entries:
       - {ref: w.duibuqi, cue: 'has hecho algo mal: lo siento'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments: []
+  - id: e.meiguanxi
+    use: say
+    role: content
+    kind: expression
+    hanzi: 没关系
+    pinyin: 'méi guānxi'
+    meaning: {es: 'no pasa nada', en: 'it''s OK, never mind'}
+    accept_pinyin_mismatch: 'la última sílaba es átona: guānxi'
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'La respuesta a 对不起 o a 不好意思: «no pasa nada». Literalmente, «no hay relación».'}
+  - id: e.bukeqi
+    use: say
+    role: content
+    kind: expression
+    hanzi: 不客气
+    pinyin: 'bù kèqi'
+    meaning: {es: 'de nada', en: 'you''re welcome'}
+    accept_pinyin_mismatch: 'la última sílaba es átona: kèqi (al hablar, 不 sube a bú)'
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'La respuesta a 谢谢. Literalmente, «no hagas cumplidos».'}
+  - id: w.bang
+    use: say
+    role: content
+    kind: word
+    hanzi: 帮
+    pinyin: 'bāng'
+    meaning: {es: 'ayudar (a alguien)', en: 'to help'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Con la persona detrás: 帮我 «ayúdame». Es la forma corriente al hablar.'}
+  - id: w.bangmang
+    use: hear
+    role: content
+    kind: word
+    hanzi: 帮忙
+    pinyin: 'bāngmáng'
+    meaning: {es: 'echar una mano', en: 'to give a hand'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'No lleva a quién detrás: 他来帮忙 «viene a echar una mano». «Ayúdame» es 帮我.'}
+  - id: w.bangzhu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 帮助
+    pinyin: 'bāngzhù'
+    meaning: {es: 'ayudar; ayuda', en: 'to help; help'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Más formal que 帮, y también sustantivo: 谢谢你的帮助 «gracias por tu ayuda».'}
+  - id: g.bang
+    kind: group
+    basis: set
+    title: 'Ayudar'
+    explanation: 'Tres formas de ayudar; al hablar, la corriente es 帮.'
+    members:
+      - {ref: w.bang, cue: 'ayudar a alguien: 你可以帮我吗？'}
+      - {ref: w.bangmang, cue: 'echar una mano, sin decir a quién'}
+      - {ref: w.bangzhu, cue: 'ayudar o la ayuda, más formal: 谢谢你的帮助'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []

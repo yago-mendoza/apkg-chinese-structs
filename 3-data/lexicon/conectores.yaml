@@ -1,0 +1,90 @@
+# Diccionario · Unir frases. Esquema: 3-data/README.md
+
+entries:
+  - id: w.yinwei
+    use: say
+    role: function
+    kind: word
+    hanzi: 因为
+    pinyin: 'yīnwèi'
+    meaning: {es: 'porque', en: 'because'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: w.suoyi
+    use: say
+    role: function
+    kind: word
+    hanzi: 所以
+    pinyin: 'suǒyǐ'
+    meaning: {es: 'así que, por eso', en: 'so'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Va con 因为: 因为下雨，所以我不去. En chino se dicen los dos, la causa primero.'}
+  - id: w.ruguo
+    use: say
+    role: function
+    kind: word
+    hanzi: 如果
+    pinyin: 'rúguǒ'
+    meaning: {es: 'si (condición)', en: 'if'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: w.jiu
+    use: say
+    role: function
+    kind: word
+    hanzi: 就
+    pinyin: 'jiù'
+    meaning: {es: 'entonces (consecuencia)', en: 'then'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Tras 如果, marca la consecuencia, detrás del sujeto: 如果你喜欢，就买吧. En inglés se omite el «then»; en chino suele decirse.'}
+  - id: w.suiran
+    use: hear
+    role: function
+    kind: word
+    hanzi: 虽然
+    pinyin: 'suīrán'
+    meaning: {es: 'aunque', en: 'although'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: w.danshi
+    use: say
+    role: function
+    kind: word
+    hanzi: 但是
+    pinyin: 'dànshì'
+    meaning: {es: 'pero', en: 'but'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Con 虽然 se dicen los dos: 虽然很累，但是我很高兴.'}
+  - id: w.yibian
+    use: say
+    role: function
+    kind: word
+    hanzi: 一边
+    pinyin: 'yībiān'
+    meaning: {es: 'mientras (一边…一边…)', en: 'while'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '一边 + verbo + 一边 + verbo: dos cosas a la vez, 他一边吃一边说. Así se dice «leo y tomo té»: 和 no une acciones.', original: 'instead of im readning and dirnking tea seria NO decir wo zai kan shu huo he cha sino wo zai kan shu, he cha una coma.¿? asi ¿?'}
+  - id: w.ba.particle
+    use: say
+    role: function
+    kind: word
+    hanzi: 吧
+    pinyin: 'ba'
+    meaning: {es: 'partícula de propuesta (venga, vale)', en: 'suggestion particle'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Al final, convierte la frase en propuesta: 我们下午见吧 «nos vemos por la tarde, ¿vale?»; 买吧 «cómpralo».'}
+  - id: g.ba-ba
+    kind: group
+    basis: soundalike
+    title: '八 bā y 吧 ba'
+    explanation: '八 es alto y plano; 吧 es átono, corto, al final de la frase.'
+    members:
+      - {ref: w.ba, cue: 'bā, alto y plano: ocho'}
+      - {ref: w.ba.particle, cue: 'ba, átono al final: ¿vale?, venga'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []

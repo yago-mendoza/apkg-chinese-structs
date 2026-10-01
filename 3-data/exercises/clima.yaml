@@ -25,7 +25,7 @@ exercises:
     type: read
     targets: [w.tianqi]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 天气}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 天气}
     answer: {hanzi: 天气, pinyin: tiānqì, meaning: el tiempo (meteorológico)}
     comments: []
   - id: x.dictation.re
@@ -52,7 +52,7 @@ exercises:
     type: read
     targets: [w.re]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 热}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 热}
     answer: {hanzi: 热, pinyin: rè, meaning: calor; caluroso}
     comments: []
   - id: x.dictation.leng
@@ -79,7 +79,7 @@ exercises:
     type: read
     targets: [w.leng]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 冷}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 冷}
     answer: {hanzi: 冷, pinyin: lěng, meaning: frío}
     comments: []
   - id: x.dictation.xiayu
@@ -106,7 +106,7 @@ exercises:
     type: read
     targets: [w.xiayu]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 下雨}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 下雨}
     answer: {hanzi: 下雨, pinyin: xiàyǔ, meaning: llover}
     comments: []
   - id: x.listen.tianqi-hen-leng
@@ -229,4 +229,26 @@ exercises:
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Va a llover.}
+    comments: []
+  - id: x.listen.mingtian-hui-xiayu
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.mingtian-hui-xiayu
+    targets: [s.mingtian-hui-xiayu]
+    context: [w.mingtian, w.hui.can, w.xiayu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mañana lloverá.}
+    comments: []
+  - id: x.produce.mingtian-hui-xiayu
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.mingtian-hui-xiayu
+    targets: [s.mingtian-hui-xiayu]
+    context: [w.mingtian, w.hui.can, w.xiayu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mañana lloverá.»'}
+    answer: {meaning: Mañana lloverá.}
     comments: []

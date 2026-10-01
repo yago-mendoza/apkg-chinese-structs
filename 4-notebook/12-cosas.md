@@ -4,7 +4,7 @@
 
 ## Vocabulario
 
-- ✅ 在 zài [tsaɪ˥˩] · estar (haciendo algo) · _adverbio_
+- ✅🃏 在 zài [tsaɪ˥˩] · estar (haciendo algo) · _adverbio_
 - ✅🃏 看 kàn [kʰan˥˩] · mirar; leer · _verbo_ · Una mano 手 sobre el ojo 目, como quien se hace visera para mirar a lo lejos.
 - ✅🃏 看见 kànjiàn [kʰan˥˩ tɕjɛn˥˩] · ver (llegar a ver) · _verbo_ · 看 es la acción de mirar; 见 añade el resultado: llegar a ver.
 - ✅🃏 看看 kànkan [kʰan˥˩ kʰan] · echar un vistazo · _verbo_ · Repetir el verbo lo suaviza: «mirar un poco», no «mirar dos veces».
@@ -30,12 +30,33 @@
 - ✅🃏 怎么 zěnme [tsən˧˩˧ mɤ] · cómo · _interrogativo_ · 怎么 + verbo pregunta la manera: 怎么说？ «¿cómo se dice?», 怎么吃？ «¿cómo se come?».
 - ✅🃏 能 néng [nɤŋ˧˥] · poder (ser capaz) · _verbo_ · 能 es poder porque eres capaz o porque las circunstancias lo permiten: 你能说中文吗？ 可以 es poder porque está permitido o porque algo vale.
 - ✅🃏 和 hé [xɤ˧˥] · y, con · _conjunción_ · 和 solo une nombres: 咖啡和巧克力, 我和你. Dos frases o dos adjetivos no se unen con 和: 他很高，也很帅. · 禾 hé «cereal» da el sonido y 口 «boca» aporta el sentido. El sentido antiguo es «armonía, concordia»; de dos cosas que armonizan pasó a unir: A 和 B. · El cereal 禾 llega a la boca 口: comida compartida, armonía, estar juntos.
+- ✅🃏 没 méi [meɪ˧˥] · no (no pasó; no hay) · _adverbio_ · 没 niega lo que pasó o lo que hay: 我没吃饭 «no he comido», 我没有钱. 不 niega lo que haces, quieres o eres: 我不吃 «no como».
+- ✅🃏 过 guo [kwɔ] · haber (hecho alguna vez) · _partícula_ · Detrás del verbo: lo has hecho alguna vez. 我去过北京 «he estado en Pekín»; 你看过这个电影吗？ «¿has visto esta película?».
+- ✅🃏 用 yòng [jʊŋ˥˩] · usar; con (un instrumento) · _verbo_ · Va antes de la acción: 我用筷子吃饭 «como con palillos». Primero con qué, luego qué haces.
+- ✅🃏 坐 zuò [tswɔ˥˩] · sentarse; ir en (un vehículo) · _verbo_ · 请坐 «siéntese»; 坐飞机 «ir en avión», 坐车 «ir en coche o autobús».
+- ✅🃏 进 jìn [tɕin˥˩] · entrar · _verbo_ · Pasar de fuera a dentro: 请进 «pase». 进来 «entrar hacia aquí», 进去 «entrar hacia allí».
+- ✅🃏 别 bié [pjɛ˧˥] · no (hagas): prohibir · _adverbio_ · Para pedir que alguien no haga algo: 别看我！ «¡no me mires!». 不 solo niega: 我不看 «no miro».
+- ✅🃏 听 tīng [tʰiŋ˥] · escuchar · _verbo_ · 口 «boca» a la izquierda. 听音乐 «escuchar música».
+- ✅🃏 电影 diànyǐng [tjɛn˥˩ iŋ˧˩˧] · película · _sustantivo_ · 电 «electricidad» + 影 «sombra, imagen»: sombras eléctricas. El 电 de 电话 y 电脑.
+- ✅🃏 生气 shēngqì [ʂɤŋ˥ tɕʰi˥˩] · enfadarse; enfadado · _adjetivo_ · 生 «producir» + 气 «aire, ánimo»: echar humo. 他生气了 «se ha enfadado».
+- ✅🃏 疼 téng [tʰɤŋ˧˥] · doler · _verbo_ · 疒 «enfermedad» por fuera. 好疼！ «¡qué daño!»: 好 delante de un adjetivo es «qué…», muy coloquial.
+- ✅🃏 难 nán [nan˧˥] · difícil · _adjetivo_
+- ✅🃏 非常 fēicháng [feɪ˥ ʈʂʰɑŋ˧˥] · muy, muchísimo · _adverbio_ · Más fuerte que 很: 非常好 «muy bien». Para agradecer se dice 太谢谢你了 o 非常感谢 [HSK 2]; «非常谢谢你» suena forzado.
+- ✅🃏 大象 dàxiàng [ta˥˩ ɕjɑŋ˥˩] · elefante · _sustantivo_ · No lo confundas con 大家 dàjiā «todos»: los dos empiezan por 大, y al oído solo cambia la segunda sílaba.
+- ✅🃏 音乐 yīnyuè [in˥ ɥœ˥˩] · música · _sustantivo_
+- ✅🃏 筷子 kuàizi [kʰwaɪ˥˩ tsɯ] · palillos · _sustantivo_
+- ✅🃏 报纸 bàozhǐ [pɑʊ˥˩ ʈʂɨ˧˩˧] · periódico · _sustantivo_
+- ✅🃏 为什么 wèishénme [weɪ˥˩ ʂən˧˥ mɤ] · por qué · _interrogativo_
+- ✅🃏 这么 zhème [ʈʂɤ˥˩ mɤ] · tan, así de · _pronombre_ · Delante de un adjetivo: 你为什么这么高？ «¿por qué eres tan alto?».
+- ✅🃏 出去 chūqu [ʈʂʰu˥ tɕʰy] · salir (hacia fuera) · _verbo_ · 出 es una planta que sale de un tiesto. 出来 chūlái es salir hacia aquí. · 出去啊？ «¿sales?» es un saludo al cruzarte con alguien que se va.
+- ✅🃏 这里 zhèlǐ [ʈʂɤ˥˩ li˧˩˧] · aquí · _pronombre_ · 这 «este» + 里 «dentro»: en este sitio. Como 哪里 «dónde».
 
 ## 那 y 哪里
 
 Mismo carácter; la boca 口 lo convierte en pregunta.
 
 - 那 nà · sin boca: nà, eso
+- 哪 nǎ · con boca: nǎ, ¿cuál?
 - 哪里 nǎlǐ · con boca: nǎ, ¿dónde? (哪里)
 
 ## 门 da el sonido
@@ -53,6 +74,30 @@ Los dos carteles: entrar y salir por la boca 口 de un lugar.
 - 入口 rùkǒu · entrada
 - 出口 chūkǒu · salida
 
+## Venir, ir, entrar y salir
+
+Se eligen según hacia dónde va el movimiento respecto a quien habla.
+
+- 来 lái · hacia aquí: venir
+- 去 qù · hacia allí: ir
+- 进 jìn · de fuera a dentro: entrar
+- 出去 chūqu · de dentro a fuera: salir
+
+## 不, 没 y 别: tres «no»
+
+Cada uno niega una cosa distinta.
+
+- 不 bù · lo que haces, quieres o eres: 我不喝咖啡
+- 没 méi · lo que no pasó o no hay: 我没吃饭
+- 别 bié · pedir que no lo hagan: 别看我！
+
+## 国 guó y 过 guo
+
+国 sube y es un nombre; 过 es átono y va pegado al verbo.
+
+- 国 guó · guó, sube: país
+- 过 guo · guo, átono tras el verbo: haber hecho
+
 ## Frases
 
 - ✅🃏 我在看书。 · wǒ zài kàn shū · Estoy leyendo.
@@ -66,3 +111,23 @@ Los dos carteles: entrar y salir por la boca 口 de un lugar.
 - ✅🃏 你能说中文吗？ · nǐ néng shuō Zhōngwén ma · ¿Puedes hablar chino?
 - ✅🃏 你说错了。 · nǐ shuō cuò le · Lo has dicho mal.
 - ✅🃏 我要工作。 · wǒ yào gōngzuò · Tengo que trabajar.
+- ✅🃏 我去过北京。 · wǒ qù guo Běijīng · He estado en Pekín.
+- ✅🃏 你看过这个电影吗？ · nǐ kàn guo zhè ge diànyǐng ma · ¿Has visto esta película?
+- ✅🃏 我坐飞机去中国。 · wǒ zuò fēijī qù Zhōngguó · Voy a China en avión.
+- ✅🃏 我用筷子吃饭。 · wǒ yòng kuàizi chīfàn · Como con palillos.
+- ✅🃏 你进来吧。 · nǐ jìn lái ba · Pasa, entra.
+- ✅🃏 我能进去吗？ · wǒ néng jìn qù ma · ¿Puedo entrar?
+- ✅🃏 可以坐这里吗？ · kěyǐ zuò zhèlǐ ma · ¿Puedo sentarme aquí?
+- ✅🃏 别看我！ · bié kàn wǒ · ¡No me mires!
+- ✅🃏 这里不欢迎你。 · zhèlǐ bù huānyíng nǐ · Aquí no eres bienvenido.
+- ✅🃏 来了，来了！ · lái le lái le · ¡Ya voy, ya voy! (o ¡ahí viene!)
+- ✅🃏 他生气了。 · tā shēngqì le · Se ha enfadado.
+- ✅🃏 好疼！ · hǎo téng · ¡Qué daño!
+- ✅🃏 中文很难。 · Zhōngwén hěn nán · El chino es difícil.
+- ✅🃏 非常好！ · fēicháng hǎo · ¡Muy bien!
+- ✅🃏 他一边吃一边说。 · tā yìbiān chī yìbiān shuō · Habla mientras come.
+- ✅🃏 我一边看书一边喝茶。 · wǒ yìbiān kàn shū yìbiān hē chá · Leo mientras tomo té.
+- ✅🃏 我一边听音乐一边学习。 · wǒ yìbiān tīng yīnyuè yìbiān xuéxí · Estudio mientras escucho música.
+- ✅🃏 大象很大。 · dàxiàng hěn dà · Los elefantes son grandes.
+- ✅🃏 我在这里。 · wǒ zài zhèlǐ · Estoy aquí.
+- ✅🃏 你为什么不去？ · nǐ wèishénme bú qù · ¿Por qué no vas?

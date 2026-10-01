@@ -86,6 +86,21 @@ Palabras que quieres decir y aún no aparecen en ninguna frase. Trae una frase d
 - ⚠️ 哪里 sustituye a 哪儿 en las tarjetas; 哪儿 queda para reconocerlo.
   > 
 
+- **Segundo apunte (juntado a este lote)**: entran unas 70 palabras, frases y estructuras: 没关系, 不客气, 会, 没 / 了, 过, 比, 最, 因为…所以…, 如果…就…, 虽然…但是…, 一边…一边…, 又…又…, 别, 来 / 进, los saludos de verdad (你回来了！, 去哪里啊？) y el orden sujeto-tiempo-lugar-verbo-objeto (我昨天在家看书). El detalle, en el log, «Cambios posteriores».
+  > 
+
+- **Contrastes nuevos que se oyen**: 是 / 十, 矮 / 爱, 大 / 打, 喝 / 和, 国 / 过, 九 / 就, 八 / 吧, 有 / 又 / 要 y 大家 / 大象. Tarjeta «Escucha: ¿cuál de estas es?». ¿Hay más parejas que te líen?
+  > 
+
+- **Minidiálogo**: 你是谁？不对。你是什么东西？你为什么这么高？ (ojo: 你是什么东西 es un insulto). ¿Quieres uno o dos así en cada lote?
+  > 
+
+- ⚠️ 非常谢谢你 → 太谢谢你了 (o 非常感谢 [HSK 2]): lo otro suena forzado.
+  > 
+
+- ⚠️ 晚安 es solo para irse a dormir; al despedirse de noche, 再见 o 明天见.
+  > 
+
 ## Pendiente: ✅ sin tarjeta todavía
 
 - 自己, 已经, 黑白, 出去 / 出来, 车票 / 门票 (del lote 002): siguen esperando una frase tuya.
@@ -113,6 +128,15 @@ Palabras que quieres decir y aún no aparecen en ninguna frase. Trae una frase d
 - ❌ 公司, 药店, 张, 条: solo mencionados en notas, con su nivel.
   > 
 
+- ❌ 去死吧 «muérete»: insulto fuerte; no sirve para tu objetivo.
+  > 
+
+- ❌ 哪儿, 这儿 y 啥: formas del norte. Por tu regla nueva, ni entran ni se guardan.
+  > 
+
+- Al desván: 胳膊 [HSK 7], 细 [HSK 4], 挑选 [HSK 4], 表演 [HSK 3], 跳舞 [HSK 3], 报告 [HSK 3] y 完蛋 [HSK 7], con tus frases como notas.
+  > 
+
 ## Por verificar
 
 - ⚠️ 先生 y las notas «En clase» de 贵姓 y 叫 salen de la transcripción automática de la grabación, no de tus apuntes. Las partes en inglés eran claras; dime si la profesora dijo otra cosa.
@@ -122,6 +146,12 @@ Palabras que quieres decir y aún no aparecen en ninguna frase. Trae una frase d
   > 
 
 - Del lote 002, sin respuesta: ¿«shi se puede usar en names» era 师 en profesiones o 是 en 我是雅戈? Y ¿tu duda de 孩子 / 儿子 / 女儿 / 小孩 quedó resuelta?
+  > 
+
+- «ni yao mao ma — wo you mei you»: no sé qué frase era. ¿你要买吗？ «¿lo quieres comprar?», o 你有没有…？ «¿tienes…?»? Dímelo y entra.
+  > 
+
+- Quedaron sin frase de tu apunte: 从哪里来，到哪里去 «de dónde vienes y adónde vas», 睡了吗？ «¿estás dormido?» y «si acabas los deberes, puedes usar el wifi». ¿Entran en el próximo lote?
   > 
 
 ## Tus notas

@@ -55,3 +55,25 @@ sentences:
       - {text: ？}
     translation: {es: '¿Quién es él?', en: 'Who is he?'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+  - id: s.dlg-ni-shi-shei
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 谁, ref: w.shei, pinyin: shéi}
+      - {text: ？}
+      - {text: 不, ref: w.bu, pinyin: bú, sandhi: bù → bú delante de cuarto tono}
+      - {text: 对, ref: w.dui, pinyin: duì}
+      - {text: 。}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 什么, ref: w.shenme, pinyin: shénme}
+      - {text: 东西, ref: w.dongxi, pinyin: dōngxi}
+      - {text: ？}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 为什么, ref: w.weishenme, pinyin: wèishénme}
+      - {text: 这么, ref: w.zheme, pinyin: zhème}
+      - {text: 高, ref: w.gao, pinyin: gāo}
+      - {text: ？}
+    translation: {es: '¿Quién eres? No, espera: ¿qué eres? ¿Por qué eres tan alto?', en: 'Who are you? No, wait: what are you? Why are you so tall?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}

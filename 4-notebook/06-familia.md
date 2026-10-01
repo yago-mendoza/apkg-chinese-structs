@@ -11,8 +11,9 @@
 - ✅🃏 孩子 háizi [xaɪ˧˥ tsɯ] · niño, niña; hijo, hija · _sustantivo_
 - ✅🃏 小孩 xiǎohái [ɕjɑʊ˧˩˧ xaɪ˧˥] · niño pequeño, crío · _sustantivo_ · 孩子 es el término general; 小孩 añade 小 «pequeño».
 - ✅🃏 家 jiā [tɕja˥] · casa, hogar; familia · _sustantivo_ · 宀 «techo» + 豕 shǐ «cerdo»: según la explicación tradicional, la casa era donde se criaba el cerdo. · De casa pasa a familia y a establecimiento; por eso es también el clasificador de negocios: 一家饭店 «un restaurante», 一家商店 «una tienda», 一家公司 [HSK 2] «una empresa».
-- ✅ 儿 ér · niño, hijo (en palabras) · 儿 ér «niño»: delante en 儿子, detrás en 女儿. Al final de muchas palabras del norte se funde con la sílaba anterior (哪儿 nǎr): es el erhua.
+- ✅ 儿 ér · niño, hijo (en palabras) · 儿 ér «niño»: delante en 儿子, detrás en 女儿.
 - ✅ 子 zi · hijo, niño; sufijo de nombres · 子 zǐ «hijo, niño»; al final de una palabra suele ser un sufijo átono: 儿子 érzi, 孩子 háizi. Con 女 forma 好.
+- ✅🃏 姐姐 jiějie [tɕjɛ˧˩˧ tɕjɛ] · hermana mayor · _sustantivo_
 
 ## 好, 女儿 y 儿子
 
@@ -28,3 +29,5 @@ Las mismas piezas en distinto orden: 女 «mujer», 子 «niño» y 儿 «niño 
 - ✅🃏 她是我的妈妈。 · tā shì wǒ de māma · Ella es mi madre.
 - ✅🃏 他有一个儿子和一个女儿。 · tā yǒu yí ge érzi hé yí ge nǚ'ér · Tiene un hijo y una hija.
 - ✅🃏 我们是一家人。 · wǒmen shì yì jiā rén · Somos una familia.
+- ✅🃏 妈妈回来了。 · māma huílai le · Mamá ha vuelto.
+- ✅🃏 姐姐在看报纸。 · jiějie zài kàn bàozhǐ · Mi hermana está leyendo el periódico.

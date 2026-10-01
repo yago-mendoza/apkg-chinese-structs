@@ -1,0 +1,68 @@
+# Frases · Unir frases. Esquema: 3-data/README.md
+
+sentences:
+  - id: s.yinwei-xiayu-suoyi-wo-bu-qu
+    use: say
+    segments:
+      - {text: 因为, ref: w.yinwei, pinyin: yīnwèi}
+      - {text: 下雨, ref: w.xiayu, pinyin: xiàyǔ}
+      - {text: ，}
+      - {text: 所以, ref: w.suoyi, pinyin: suǒyǐ}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 不, ref: w.bu, pinyin: bú, sandhi: bù → bú delante de cuarto tono}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 。}
+    translation: {es: 'Como llueve, no voy.', en: 'Because it''s raining, I''m not going.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.ruguo-ni-xihuan-jiu-mai-ba
+    use: say
+    segments:
+      - {text: 如果, ref: w.ruguo, pinyin: rúguǒ}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: ，}
+      - {text: 就, ref: w.jiu, pinyin: jiù}
+      - {text: 买, ref: w.mai, pinyin: mǎi}
+      - {text: 吧, ref: w.ba.particle, pinyin: ba}
+      - {text: 。}
+    translation: {es: 'Si te gusta, cómpralo.', en: 'If you like it, buy it.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.suiran-hen-lei-danshi
+    use: hear
+    segments:
+      - {text: 虽然, ref: w.suiran, pinyin: suīrán}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 累, ref: w.lei, pinyin: lèi}
+      - {text: ，}
+      - {text: 但是, ref: w.danshi, pinyin: dànshì}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 高兴, ref: w.gaoxing, pinyin: gāoxìng}
+      - {text: 。}
+    translation: {es: 'Aunque estoy cansado, estoy contento.', en: 'Although I''m tired, I''m happy.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-hen-lei-suoyi-huijia
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 累, ref: w.lei, pinyin: lèi}
+      - {text: ，}
+      - {text: 所以, ref: w.suoyi, pinyin: suǒyǐ}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 回家, ref: w.huijia, pinyin: huíjiā}
+      - {text: 睡觉, ref: w.shuijiao, pinyin: shuìjiào}
+      - {text: 。}
+    translation: {es: 'Estoy cansado, así que me voy a casa a dormir.', en: 'I''m tired, so I''m going home to sleep.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.ni-xihuan-jiu-mai-ba
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 就, ref: w.jiu, pinyin: jiù}
+      - {text: 买, ref: w.mai, pinyin: mǎi}
+      - {text: 吧, ref: w.ba.particle, pinyin: ba}
+      - {text: 。}
+    translation: {es: 'Si te gusta, cómpralo.', en: 'If you like it, buy it.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}

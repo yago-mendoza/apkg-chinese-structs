@@ -6,7 +6,7 @@ exercises:
     type: read
     targets: [w.baba]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 爸爸}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 爸爸}
     answer: {typed: ba4 ba5, hanzi: 爸爸, pinyin: bàba, meaning: papá}
     lang: es
     comments: []
@@ -15,7 +15,7 @@ exercises:
     type: read
     targets: [w.mama]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 妈妈}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 妈妈}
     answer: {typed: ma1 ma5, hanzi: 妈妈, pinyin: māma, meaning: mamá}
     lang: es
     comments: []
@@ -24,7 +24,7 @@ exercises:
     type: read
     targets: [w.erzi]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 儿子}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 儿子}
     answer: {typed: er2 zi5, hanzi: 儿子, pinyin: érzi, meaning: hijo}
     lang: es
     comments: []
@@ -33,7 +33,7 @@ exercises:
     type: read
     targets: [w.nver]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 女儿}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 女儿}
     answer: {typed: nv3 er2, hanzi: 女儿, pinyin: nǚ'ér, meaning: hija}
     lang: es
     comments: []
@@ -42,7 +42,7 @@ exercises:
     type: read
     targets: [w.haizi]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 孩子}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 孩子}
     answer: {typed: hai2 zi5, hanzi: 孩子, pinyin: háizi, meaning: 'niño, niña; hijo, hija'}
     lang: es
     comments: []
@@ -51,7 +51,7 @@ exercises:
     type: read
     targets: [w.xiaohai]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 小孩}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 小孩}
     answer: {typed: xiao3 hai2, hanzi: 小孩, pinyin: xiǎohái, meaning: 'niño pequeño, crío'}
     lang: es
     comments: []
@@ -281,7 +281,7 @@ exercises:
     type: read
     targets: [w.jia]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 家}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 家}
     answer: {hanzi: 家, pinyin: jiā, meaning: 'casa, hogar; familia'}
     comments: []
   - id: x.listen.ta-you-erzi-he-nver
@@ -345,4 +345,65 @@ exercises:
     skills: [comprehension, discrimination]
     prompt: {text: '妈妈 y 爸爸: ¿en qué se diferencian sus tonos?'}
     answer: {meaning: 'māma: la primera sílaba alta y plana (primer tono). bàba: la primera cae (cuarto). En las dos, la segunda sílaba es corta y floja (tono neutro).'}
+    comments: []
+  - id: x.dictation.jiejie
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.jiejie]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jie3 jie5, hanzi: 姐姐, pinyin: jiějie, meaning: hermana mayor}
+    comments: []
+  - id: x.read.jiejie
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.jiejie]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 姐姐}
+    answer: {hanzi: 姐姐, pinyin: jiějie, meaning: hermana mayor}
+    comments: []
+  - id: x.tones.jiejie
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.jiejie]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 姐姐, pinyin: jie jie}
+    answer: {typed: '35', hanzi: 姐姐, pinyin: jiějie, meaning: hermana mayor}
+    comments: []
+  - id: x.listen.mama-huilai-le
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.mama-huilai-le
+    targets: [s.mama-huilai-le]
+    context: [w.mama, w.huilai, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mamá ha vuelto.}
+    comments: []
+  - id: x.produce.mama-huilai-le
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.mama-huilai-le
+    targets: [s.mama-huilai-le]
+    context: [w.mama, w.huilai, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mamá ha vuelto.»'}
+    answer: {meaning: Mamá ha vuelto.}
+    comments: []
+  - id: x.listen.jiejie-zai-kan-baozhi
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.jiejie-zai-kan-baozhi
+    targets: [s.jiejie-zai-kan-baozhi]
+    context: [w.jiejie, w.zai.progressive, w.kan, w.baozhi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mi hermana está leyendo el periódico.}
     comments: []

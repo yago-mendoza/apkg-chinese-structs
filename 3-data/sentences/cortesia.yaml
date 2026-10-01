@@ -50,3 +50,52 @@ sentences:
       - {text: 。}
     translation: {es: 'Lo siento, me he equivocado.', en: 'I''m sorry, I was wrong.'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.duibuqi-meiguanxi
+    use: say
+    segments:
+      - {text: 对不起, ref: w.duibuqi, pinyin: duìbuqǐ}
+      - {text: ！}
+      - {text: 没关系, ref: e.meiguanxi, pinyin: méi guānxi}
+      - {text: 。}
+    translation: {es: '—¡Perdón! —No pasa nada.', en: '—Sorry! —It''s OK.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.xiexie-bukeqi
+    use: say
+    segments:
+      - {text: 谢谢, ref: e.xiexie, pinyin: xièxie}
+      - {text: ！}
+      - {text: 不客气, ref: e.bukeqi, pinyin: bú kèqi, sandhi: bù → bú delante de cuarto tono}
+      - {text: 。}
+    translation: {es: '—¡Gracias! —De nada.', en: '—Thanks! —You''re welcome.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.tai-xiexie-ni-le
+    use: say
+    segments:
+      - {text: 太, ref: w.tai, pinyin: tài}
+      - {text: 谢谢, ref: e.xiexie, pinyin: xièxie}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ！}
+    translation: {es: '¡Muchísimas gracias!', en: 'Thank you so much!'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.ni-keyi-bang-wo-ma
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 可以, ref: w.keyi, pinyin: kěyǐ}
+      - {text: 帮, ref: w.bang, pinyin: bāng}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Me puedes ayudar?', en: 'Can you help me?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.xiexie-ni-de-bangzhu
+    use: hear
+    segments:
+      - {text: 谢谢, ref: e.xiexie, pinyin: xièxie}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 帮助, ref: w.bangzhu, pinyin: bāngzhù}
+      - {text: 。}
+    translation: {es: 'Gracias por tu ayuda.', en: 'Thanks for your help.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}

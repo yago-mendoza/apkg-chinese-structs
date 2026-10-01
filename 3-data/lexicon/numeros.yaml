@@ -154,3 +154,24 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '你几岁？ se pregunta sobre todo a niños; a un adulto se le pregunta 你多大？, con 多 «cuánto» y 大 «grande».'}
+  - id: g.jiu-jiu
+    kind: group
+    basis: soundalike
+    title: '九 jiǔ y 就 jiù'
+    explanation: '九 baja y sube; 就 cae.'
+    members:
+      - {ref: w.num.jiu, cue: 'jiǔ, baja y sube: nueve'}
+      - {ref: w.jiu, cue: 'jiù, cae: entonces'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: g.you-you-yao
+    kind: group
+    basis: soundalike
+    title: '有 yǒu, 又 yòu y 要 yào'
+    explanation: 'Tres «you» que se confunden: los separan el tono y la vocal.'
+    members:
+      - {ref: w.you.have, cue: 'yǒu, baja y sube: tener'}
+      - {ref: w.you.again, cue: 'yòu, cae: a la vez (又…又…)'}
+      - {ref: w.yao, cue: 'yào, cae y suena «yao»: querer'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []

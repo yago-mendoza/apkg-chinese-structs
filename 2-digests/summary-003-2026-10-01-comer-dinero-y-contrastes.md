@@ -119,3 +119,62 @@ Formato: `汉字 pinyin · significado · pista · ejemplo`
 - Tarjetas de estructura nuevas: eliges entre dos frases, la buena y el calco. Si te parecen fáciles, dilo en el review y las cambio por calcos más finos.
 - En Anki salen 25 tarjetas que ya no existen; `push --prune` las retira (fase de pruebas).
 - El mazo en Anki ya estaba dividido por HSK. Si en el móvil no lo ves, sincroniza el móvil después de cada `push`.
+
+## Cambios posteriores
+
+### 2026-10-01 · Segundo apunte, juntado a este lote
+
+Pediste juntarlo a este lote: `sin-fecha_pegado-en-el-chat-2.md`, archivado en `1-inbox/history/003-…/`. Son tus frases de conversación, preguntas sobre gramática y los consejos de un vídeo sobre el orden de la frase.
+
+**Entró** (✅ para decir, 🟡 para oír; nivel HSK 1 salvo que se indique)
+- Cortesía: ✅🃏 没关系, ✅🃏 不客气 (minidiálogos 对不起！没关系。 y 谢谢！不客气。), ✅🃏 帮, 🟡🃏 帮忙, 🟡🃏 帮助 [HSK 2] (grupo «Ayudar»).
+- ⚠️ «非常谢谢你» suena forzado: lo natural es 太谢谢你了 o 非常感谢 [HSK 2]. Entró 太谢谢你了！.
+- Saludos naturales: ✅🃏 晚安 [HSK 2] (solo al irse a dormir; tu apunte lo tenía también como «good night» de despedida), ✅🃏 回来 (你回来了！), 🟡🃏 啊 [HSK 2] (去哪里啊？), 🟡🃏 出去 (出去啊？, **del desván**: despertó con 进). Tarjeta de matiz 你好 / 你好吗 / los saludos de verdad.
+- ⚠️ 回来啦 y 去哪儿啊: 啦 es HSK 6 y 哪儿 del norte; entran como 你回来了！ y 去哪里啊？.
+- Presentarse: ✅🃏 哪 y ✅🃏 国 (你是哪国人？), ✅🃏 在 + lugar (你在哪里？ / 我在西班牙。), ✅🃏 会 (saber hacer y predecir: 我会说中文, 明天会下雨), ✅🃏 学习 (我在学习中文).
+- El pasado: ✅🃏 没 (我没吃饭) frente a 了 (我吃饭了). Tarjeta de matiz «el chino no conjuga». ✅🃏 过 (我去过北京, 你看过这个电影吗？). Tarjeta de matiz: 他买了咖啡 / 他买咖啡了.
+- Comparar: ✅🃏 比 (他比我高), ✅🃏 最 (我最喜欢中国菜).
+- Tema nuevo **«Unir frases»**: ✅🃏 因为 / 所以 [HSK 2], ✅🃏 如果 [HSK 2] / 就, 🟡🃏 虽然 [HSK 2] / ✅🃏 但是 [HSK 2], ✅🃏 一边…一边…, ✅🃏 吧.
+- Acciones: ✅🃏 坐 (坐飞机), ✅🃏 用 (🟡 用筷子吃饭, 筷子 [HSK 2]), ✅🃏 回家, ✅🃏 睡觉 (觉 se lee jiào, como 叫, pero es otro carácter), ✅🃏 进 (你进来吧, 我能进去吗？), ✅🃏 别 (别看我！), ✅🃏 听, ✅🃏 这里 (可以坐这里吗？, 我在这里), ✅🃏 时间 (我没有时间), ✅🃏 昨天, 🟡🃏 正在.
+- Opinar y sentir: ✅🃏 好吃, ✅🃏 菜, ✅🃏 茶, ✅🃏 累, ✅🃏 难, ✅🃏 非常, ✅🃏 生气, 🟡🃏 疼 [HSK 2] (好疼！), ✅🃏 为什么 [HSK 2], 🟡🃏 这么 [HSK 2], 🟡🃏 电影, 🟡🃏 音乐 [HSK 2], 🟡🃏 报纸 [HSK 2], 🟡🃏 姐姐, 🟡🃏 腿 / 长 [HSK 2] (你的腿好长啊！), 🟡🃏 大象 [HSK 5].
+- Minidiálogo, como pediste: 你是谁？不对。你是什么东西？你为什么这么高？ (🟡; ojo: 你是什么东西 es un insulto).
+- 疒 (componente, **del desván**: despertó con 疼).
+
+**Grupos nuevos de contraste**
+- Se parecen al oído (tipo nuevo `soundalike`, tarjeta «Escucha: ¿cuál de estas es?»): 是 / 十, 矮 / 爱, 大 / 打, 喝 / 和, 国 / 过, 九 / 就, 八 / 吧, 有 / 又 / 要 (tu «you you»), 大家 / 大象.
+- Se confunden por la idea (serie, con el grupo en el reverso): 来 / 去 / 进 / 出去, 不 / 没 / 别, 帮 / 帮忙 / 帮助, y las palabras para preguntar (什么, 怎么, 谁, 哪里, 几, 多少, 为什么). 哪 entra en el grupo visual de 那.
+
+**Estructuras nuevas**, cada una frente a su calco:
+- **Sujeto, tiempo, lugar, verbo, objeto:** 我昨天在家看书, frente a 我在家看书昨天.
+- **El pasado negado:** 我没吃饭, frente a 我没吃饭了.
+- **Haber estado:** 我去过北京, frente a 我在过北京.
+- **Comparar:** 他比我高, frente a 他比我很高.
+- **Lo que más:** 我最喜欢中国菜, frente a 我喜欢中国菜最.
+- **Aunque…, pero…:** 虽然…但是…, frente a 虽然…, sin 但是.
+- **Dos cualidades:** 她又高又漂亮, frente a 她很高和很漂亮.
+- **Dos acciones a la vez:** 一边看书一边喝茶, frente a 我在看书和喝茶.
+- **Saber hacer:** 我会说中文, frente a 我知道说中文.
+- **Prohibir:** 别看我, frente a 不看我.
+- **Acciones en cadena:** 我坐飞机去中国, frente a 我去中国坐飞机.
+
+**Desván** (nivel alto y aún sin conexión): 胳膊 [HSK 7], 细 [HSK 4], 挑选 [HSK 4], 表演 [HSK 3], 跳舞 [HSK 3], 报告 [HSK 3] y 完蛋 [HSK 7], con tus frases como notas. Se quedan, aplazados: 门票 (despertó con 电影; sin frase) y 误会 (despertó con 会; HSK 4).
+
+**No entró**
+- ❌ 去死吧 «muérete»: insulto fuerte, no sirve para tu objetivo.
+- ❌ 哪儿 y 这儿, del norte: se descartan, por la regla nueva.
+- ❌ 啥 shá «qué», también del norte: el estándar es 什么.
+
+**Cambios en el sistema**
+- **Sonar natural** como objetivo (`docs/goal.md`): los apuntes correctos pero forzados se corrigen con ⚠️.
+- **Solo mandarín estándar**: lo del norte o del cantonés no entra ni se menciona; se descarta con `use: drop`. `check` da error si una forma con erhua no está descartada o si una frase usa algo descartado. 哪儿 pasa a descartado y salen sus 2 tarjetas.
+- **Lo que se confunde, contrastado**: tipo de grupo nuevo `soundalike`, con tarjeta que se oye. `check` avisa de dos palabras del mazo que suenan igual sin tonos y no comparten grupo; así salieron 9 de las parejas de arriba. El reverso de una tarjeta cuya palabra tiene pareja en un grupo muestra, como último ejemplo, una frase de la pareja (`examples_for`).
+- **Leer en voz alta**: las 176 tarjetas de lectura piden ahora decir el hanzi antes de girar; el audio del reverso sirve para comparar.
+- **Traducir con contexto y frases más largas** (`docs/goal.md`): diez tarjetas de decir con situación (你回来了, 去哪里啊, 我也喜欢, 我没有时间…). A partir del HSK 2, frases más largas con lo ya aprendido.
+- **Minidiálogos de vez en cuando** (`docs/goal.md`): uno o dos por lote, para oír, solo con vocabulario de su nivel. Ayudan a entender trozos seguidos; más no, porque una tarjeta larga se evalúa peor.
+- Huecos nuevos en las plantillas: `{Tiempo}` y `{Frase}`.
+- Teoría nueva para el cuaderno web: los sufijos 化 (-ización), 主义 (-ismo) y 学 (-logía). No todo «-ación» es 化.
+- Pruebas nuevas en `tests/` para cada regla de código.
+
+**En el mazo**: 1084 tarjetas. Entran 290 (111 de escucha, 60 de producción, 55 de lectura, 18 de contraste, 17 de huecos, 11 de estructura frente a calco, 10 de tonos y 8 de matiz) y salen 2 (las de 哪儿). Audio nuevo: 112 clips. HSK 1: 159 de 506 (31 %).
+
+**Volumen**: con lo que ya esperaba, hay unas 1.080 tarjetas nuevas. A 20 al día son unos dos meses, siempre primero las del HSK 1. No hace falta subir el ritmo.

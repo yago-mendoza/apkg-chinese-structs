@@ -63,3 +63,12 @@ sentences:
       - {text: 。}
     translation: {es: 'Va a llover.', en: 'It''s going to rain.'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.mingtian-hui-xiayu
+    use: say
+    segments:
+      - {text: 明天, ref: w.mingtian, pinyin: míngtiān}
+      - {text: 会, ref: w.hui.can, pinyin: huì}
+      - {text: 下雨, ref: w.xiayu, pinyin: xiàyǔ}
+      - {text: 。}
+    translation: {es: 'Mañana lloverá.', en: 'It will rain tomorrow.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}

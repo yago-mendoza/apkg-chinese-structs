@@ -84,8 +84,8 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: 2026-09-25}
     comments: []
   - id: w.nar
-    use: hear
-    use_reason: 'variante del norte de 哪里: se entiende, pero en las tarjetas se dice 哪里 (YAGO, 2026-10-01)'
+    use: drop
+    use_reason: 'forma del norte (erhua): el mazo es de mandarín estándar y usa 哪里 (YAGO, 2026-10-01)'
     role: function
     kind: word
     hanzi: 哪儿
@@ -379,4 +379,44 @@ entries:
     meaning: {es: dónde, en: where}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '哪儿 nǎr dice lo mismo, pero es del norte, sobre todo de Pekín. 哪里 se dice en toda China.'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '哪 «qué, cuál» + 里 «dentro»: ¿en qué sitio? Se dice en toda China.'}
+  - id: w.haochi
+    use: say
+    role: content
+    kind: word
+    hanzi: 好吃
+    pinyin: 'hǎochī'
+    meaning: {es: 'rico, bueno (de comer)', en: 'tasty'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '好 + verbo: «bueno de…». 好吃 «rico», 好看 «bonito», 好听 «agradable de oír».'}
+  - id: w.cai
+    use: say
+    role: content
+    kind: word
+    hanzi: 菜
+    pinyin: 'cài'
+    meaning: {es: 'plato, comida; verdura', en: 'dish; vegetable'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '艹 «hierba» arriba: era la verdura. Hoy también «plato, cocina»: 中国菜 «comida china».'}
+  - id: w.cha
+    use: say
+    role: content
+    kind: word
+    hanzi: 茶
+    pinyin: 'chá'
+    meaning: {es: 'té', en: 'tea'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '艹 «hierba» arriba: una hoja. 喝茶 «tomar té».'}
+  - id: g.he-he
+    kind: group
+    basis: soundalike
+    title: '喝 hē y 和 hé'
+    explanation: 'Solo cambia el tono: 喝 alto y plano, 和 sube.'
+    members:
+      - {ref: w.he.drink, cue: 'hē, alto y plano: beber'}
+      - {ref: w.he.and, cue: 'hé, sube: y, con'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []

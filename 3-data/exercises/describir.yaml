@@ -6,7 +6,7 @@ exercises:
     type: read
     targets: [w.hen]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 很}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 很}
     answer: {typed: hen3, hanzi: 很, pinyin: hěn, meaning: 'muy (con adjetivos, a menudo solo enlace)'}
     reveal: [s.wo-hen-hao-ni-ne]
     lang: es
@@ -16,7 +16,7 @@ exercises:
     type: read
     targets: [w.hao]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 好}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 好}
     answer: {typed: hao3, hanzi: 好, pinyin: hǎo, meaning: 'bien, bueno'}
     reveal: [s.wo-hen-hao-ni-ne]
     lang: es
@@ -26,7 +26,7 @@ exercises:
     type: read
     targets: [w.gao]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 高}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 高}
     answer: {typed: gao1, hanzi: 高, pinyin: gāo, meaning: alto}
     reveal: [s.ta-hen-gao]
     lang: es
@@ -36,7 +36,7 @@ exercises:
     type: read
     targets: [w.ai]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 矮}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 矮}
     answer: {typed: ai3, hanzi: 矮, pinyin: ǎi, meaning: bajo (de estatura)}
     lang: es
     comments: []
@@ -45,7 +45,7 @@ exercises:
     type: read
     targets: [w.pang]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 胖}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 胖}
     answer: {typed: pang4, hanzi: 胖, pinyin: pàng, meaning: gordo}
     lang: es
     comments: []
@@ -54,7 +54,7 @@ exercises:
     type: read
     targets: [w.shou]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 瘦}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 瘦}
     answer: {typed: shou4, hanzi: 瘦, pinyin: shòu, meaning: delgado}
     lang: es
     comments: []
@@ -63,7 +63,7 @@ exercises:
     type: read
     targets: [w.piaoliang]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 漂亮}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 漂亮}
     answer: {typed: piao4 liang5, hanzi: 漂亮, pinyin: piàoliang, meaning: 'guapo, bonito'}
     reveal: [s.ta-hen-piaoliang]
     lang: es
@@ -73,7 +73,7 @@ exercises:
     type: read
     targets: [w.shuai]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 帅}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 帅}
     answer: {typed: shuai4, hanzi: 帅, pinyin: shuài, meaning: guapo (sobre todo hombres)}
     lang: es
     comments: []
@@ -82,7 +82,7 @@ exercises:
     type: read
     targets: [w.congming]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 聪明}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 聪明}
     answer: {typed: cong1 ming5, hanzi: 聪明, pinyin: cōngming, meaning: 'listo, inteligente'}
     lang: es
     comments: []
@@ -91,7 +91,7 @@ exercises:
     type: read
     targets: [w.ben]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 笨}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 笨}
     answer: {typed: ben4, hanzi: 笨, pinyin: bèn, meaning: 'torpe, tonto'}
     lang: es
     comments: []
@@ -100,7 +100,7 @@ exercises:
     type: read
     targets: [w.keai]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 可爱}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 可爱}
     answer: {typed: ke3 ai4, hanzi: 可爱, pinyin: kě'ài, meaning: 'mono, adorable'}
     reveal: [s.ta-hen-keai]
     lang: es
@@ -110,7 +110,7 @@ exercises:
     type: read
     targets: [w.youmo]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 幽默}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 幽默}
     answer: {typed: you1 mo4, hanzi: 幽默, pinyin: yōumò, meaning: 'gracioso, con sentido del humor'}
     lang: es
     comments: []
@@ -369,7 +369,7 @@ exercises:
     type: read
     targets: [w.bai]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 白}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 白}
     answer: {hanzi: 白, pinyin: bái, meaning: blanco; también un apellido}
     comments: []
   - id: x.dictation.hei
@@ -387,7 +387,7 @@ exercises:
     type: read
     targets: [w.hei]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 黑}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 黑}
     answer: {hanzi: 黑, pinyin: hēi, meaning: negro}
     comments: []
   - id: x.dictation.duan
@@ -405,7 +405,7 @@ exercises:
     type: read
     targets: [w.duan]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 短}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 短}
     answer: {hanzi: 短, pinyin: duǎn, meaning: corto (de longitud o de tiempo)}
     comments: []
   - id: x.contrast.da
@@ -442,7 +442,7 @@ exercises:
     type: read
     targets: [w.da]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 大}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 大}
     answer: {hanzi: 大, pinyin: dà, meaning: grande}
     comments: []
   - id: x.contrast.tai
@@ -482,7 +482,7 @@ exercises:
     type: read
     targets: [w.tai]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 太}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 太}
     answer: {hanzi: 太, pinyin: tài, meaning: demasiado; muy (en 太好了)}
     comments: []
   - id: x.contrast.tian
@@ -510,7 +510,7 @@ exercises:
     type: read
     targets: [w.tian]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 天}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 天}
     answer: {hanzi: 天, pinyin: tiān, meaning: día; cielo}
     comments: []
   - id: x.listen.ta-bu-piaoliang
@@ -674,4 +674,232 @@ exercises:
     prompt: {text: '矮 o 短: ¿cuál dirías de una persona baja?'}
     answer: {meaning: '矮 ǎi: bajo de estatura (personas, edificios). 短 duǎn: corto de longitud o de tiempo.'}
     lang: es
+    comments: []
+  - id: x.contrast.ai
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.ai-ai
+    targets: [w.ai]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 矮, pinyin: ǎi, meaning: bajo (de estatura)}
+    comments: []
+  - id: x.dictation.lei
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.lei]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lei4, hanzi: 累, pinyin: lèi, meaning: cansado}
+    comments: []
+  - id: x.produce.lei
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.lei]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «cansado»? Escribe el pinyin.'}
+    answer: {typed: lei4, hanzi: 累, pinyin: lèi, meaning: cansado}
+    comments: []
+  - id: x.read.lei
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.lei]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 累}
+    answer: {hanzi: 累, pinyin: lèi, meaning: cansado}
+    comments: []
+  - id: x.dictation.tui
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.tui]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: tui3, hanzi: 腿, pinyin: tuǐ, meaning: pierna}
+    comments: []
+  - id: x.read.tui
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.tui]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 腿}
+    answer: {hanzi: 腿, pinyin: tuǐ, meaning: pierna}
+    comments: []
+  - id: x.read.chang
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.chang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 长}
+    answer: {hanzi: 长, pinyin: cháng, meaning: largo}
+    comments: []
+  - id: x.dictation.bi
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.bi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bi3, hanzi: 比, pinyin: bǐ, meaning: que (para comparar)}
+    comments: []
+  - id: x.cloze.bi
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.ta-bi-wo-gao
+    gap: w.bi
+    targets: [w.bi]
+    context: [w.ta.he, w.wo, w.gao]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Es más alto que yo.»'}
+    answer: {typed: bi3, hanzi: 比, pinyin: bǐ, meaning: que (para comparar)}
+    comments: []
+  - id: x.read.bi
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.bi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 比}
+    answer: {hanzi: 比, pinyin: bǐ, meaning: que (para comparar)}
+    comments: []
+  - id: x.dictation.zui
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.zui]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zui4, hanzi: 最, pinyin: zuì, meaning: 'el más, lo que más'}
+    comments: []
+  - id: x.cloze.zui
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.wo-zui-xihuan-zhongguo-cai
+    gap: w.zui
+    targets: [w.zui]
+    context: [w.wo, w.xihuan, w.zhongguo, w.cai]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Lo que más me gusta es la comida china.»'}
+    answer: {typed: zui4, hanzi: 最, pinyin: zuì, meaning: 'el más, lo que más'}
+    comments: []
+  - id: x.read.zui
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.zui]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 最}
+    answer: {hanzi: 最, pinyin: zuì, meaning: 'el más, lo que más'}
+    comments: []
+  - id: x.contrast.you.again
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.you-you-yao
+    targets: [w.you.again]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 又, pinyin: yòu, meaning: a la vez (又…又…)}
+    comments: []
+  - id: x.dictation.you.again
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.you.again]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: you4, hanzi: 又, pinyin: yòu, meaning: a la vez (又…又…)}
+    comments: []
+  - id: x.cloze.you.again
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.ta-you-gao-you-piaoliang
+    gap: w.you.again
+    targets: [w.you.again]
+    context: [w.ta.he, w.gao, w.shuai]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Es alta y guapa.»'}
+    answer: {typed: you4, hanzi: 又, pinyin: yòu, meaning: a la vez (又…又…)}
+    comments: []
+  - id: x.read.you.again
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.you.again]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 又}
+    answer: {hanzi: 又, pinyin: yòu, meaning: a la vez (又…又…)}
+    comments: []
+  - id: x.listen.ta-bi-wo-gao
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ta-bi-wo-gao
+    targets: [s.ta-bi-wo-gao]
+    context: [w.ta.he, w.bi, w.wo, w.gao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es más alto que yo.}
+    comments: []
+  - id: x.produce.ta-bi-wo-gao
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ta-bi-wo-gao
+    targets: [s.ta-bi-wo-gao]
+    context: [w.ta.he, w.bi, w.wo, w.gao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Es más alto que yo.»'}
+    answer: {meaning: Es más alto que yo.}
+    comments: []
+  - id: x.listen.ta-you-gao-you-piaoliang
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ta-you-gao-you-piaoliang
+    targets: [s.ta-you-gao-you-piaoliang]
+    context: [w.ta.she, w.you.again, w.gao, w.piaoliang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es alta y guapa.}
+    comments: []
+  - id: x.produce.ta-you-gao-you-piaoliang
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ta-you-gao-you-piaoliang
+    targets: [s.ta-you-gao-you-piaoliang]
+    context: [w.ta.she, w.you.again, w.gao, w.piaoliang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Es alta y guapa.»'}
+    answer: {meaning: Es alta y guapa.}
+    comments: []
+  - id: x.listen.ni-de-tui-hao-chang-a
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ni-de-tui-hao-chang-a
+    targets: [s.ni-de-tui-hao-chang-a]
+    context: [w.ni, w.de, w.tui, w.hao, w.chang, w.a.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Qué piernas tan largas tienes!}
+    comments: []
+  - id: x.dictation.chang
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.chang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chang2, hanzi: 长, pinyin: cháng, meaning: largo}
     comments: []

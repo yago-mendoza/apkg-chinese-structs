@@ -17,7 +17,7 @@ exercises:
     type: read
     targets: [w.mingtian]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 明天}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 明天}
     answer: {typed: ming2 tian1, hanzi: 明天, pinyin: míngtiān, meaning: mañana (el día)}
     reveal: [s.mingtian-jian]
     lang: es
@@ -27,7 +27,7 @@ exercises:
     type: read
     targets: [w.jian]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 见}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 见}
     answer: {typed: jian4, hanzi: 见, pinyin: jiàn, meaning: ver; verse}
     reveal: [s.mingtian-jian]
     lang: es
@@ -37,7 +37,7 @@ exercises:
     type: read
     targets: [w.wanshang]
     skills: [reading, pinyin, tones]
-    prompt: {text: Escribe el pinyin y recuerda el significado., hanzi: 晚上}
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 晚上}
     answer: {typed: wan3 shang5, hanzi: 晚上, pinyin: wǎnshang, meaning: por la noche}
     lang: es
     comments: []
@@ -87,7 +87,7 @@ exercises:
     type: read
     targets: [w.shangwu]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 上午}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 上午}
     answer: {hanzi: 上午, pinyin: shàngwǔ, meaning: por la mañana (antes de mediodía)}
     lang: es
     comments: []
@@ -105,7 +105,7 @@ exercises:
     type: read
     targets: [w.zhongwu]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 中午}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 中午}
     answer: {hanzi: 中午, pinyin: zhōngwǔ, meaning: mediodía}
     lang: es
     comments: []
@@ -114,7 +114,7 @@ exercises:
     type: read
     targets: [w.xiawu]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 下午}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 下午}
     answer: {hanzi: 下午, pinyin: xiàwǔ, meaning: por la tarde}
     reveal: [s.xiawu-qu-shangdian]
     lang: es
@@ -260,7 +260,7 @@ exercises:
     type: read
     targets: [w.wan]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 晚}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 晚}
     answer: {hanzi: 晚, pinyin: wǎn, meaning: tarde}
     comments: []
   - id: x.dictation.nian
@@ -278,6 +278,198 @@ exercises:
     type: read
     targets: [w.nian]
     skills: [reading, pinyin]
-    prompt: {text: 'Lee: pinyin y significado.', hanzi: 年}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 年}
     answer: {hanzi: 年, pinyin: nián, meaning: año}
+    comments: []
+  - id: x.dictation.zuotian
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.zuotian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zuo2 tian1, hanzi: 昨天, pinyin: zuótiān, meaning: ayer}
+    comments: []
+  - id: x.produce.zuotian
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.zuotian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «ayer»? Escribe el pinyin.'}
+    answer: {typed: zuo2 tian1, hanzi: 昨天, pinyin: zuótiān, meaning: ayer}
+    comments: []
+  - id: x.read.zuotian
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.zuotian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 昨天}
+    answer: {hanzi: 昨天, pinyin: zuótiān, meaning: ayer}
+    comments: []
+  - id: x.dictation.shijian
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.shijian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shi2 jian1, hanzi: 时间, pinyin: shíjiān, meaning: tiempo (de reloj)}
+    comments: []
+  - id: x.produce.shijian
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.shijian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «tiempo (de reloj)»? Escribe el pinyin.'}
+    answer: {typed: shi2 jian1, hanzi: 时间, pinyin: shíjiān, meaning: tiempo (de reloj)}
+    comments: []
+  - id: x.read.shijian
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.shijian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 时间}
+    answer: {hanzi: 时间, pinyin: shíjiān, meaning: tiempo (de reloj)}
+    comments: []
+  - id: x.dictation.shuijiao
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.shuijiao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shui4 jiao4, hanzi: 睡觉, pinyin: shuìjiào, meaning: 'dormir, irse a dormir'}
+    comments: []
+  - id: x.produce.shuijiao
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.shuijiao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «dormir, irse a dormir»? Escribe el pinyin.'}
+    answer: {typed: shui4 jiao4, hanzi: 睡觉, pinyin: shuìjiào, meaning: 'dormir, irse a dormir'}
+    comments: []
+  - id: x.read.shuijiao
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.shuijiao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 睡觉}
+    answer: {hanzi: 睡觉, pinyin: shuìjiào, meaning: 'dormir, irse a dormir'}
+    comments: []
+  - id: x.dictation.huijia
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.huijia]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hui2 jia1, hanzi: 回家, pinyin: huíjiā, meaning: volver a casa}
+    comments: []
+  - id: x.produce.huijia
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.huijia]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «volver a casa»? Escribe el pinyin.'}
+    answer: {typed: hui2 jia1, hanzi: 回家, pinyin: huíjiā, meaning: volver a casa}
+    comments: []
+  - id: x.read.huijia
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.huijia]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 回家}
+    answer: {hanzi: 回家, pinyin: huíjiā, meaning: volver a casa}
+    comments: []
+  - id: x.dictation.zhengzai
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.zhengzai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zheng4 zai4, hanzi: 正在, pinyin: zhèngzài, meaning: estar (justo ahora) haciendo}
+    comments: []
+  - id: x.read.zhengzai
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.zhengzai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 正在}
+    answer: {hanzi: 正在, pinyin: zhèngzài, meaning: estar (justo ahora) haciendo}
+    comments: []
+  - id: x.listen.wo-zuotian-zai-jia-kan-shu
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-zuotian-zai-jia-kan-shu
+    targets: [s.wo-zuotian-zai-jia-kan-shu]
+    context: [w.wo, w.zuotian, w.zai.at, w.jia, w.kan, w.shu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ayer leí en casa.}
+    comments: []
+  - id: x.produce.wo-zuotian-zai-jia-kan-shu
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.wo-zuotian-zai-jia-kan-shu
+    targets: [s.wo-zuotian-zai-jia-kan-shu]
+    context: [w.wo, w.zuotian, w.zai.at, w.jia, w.kan, w.shu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ayer leí en casa.»'}
+    answer: {meaning: Ayer leí en casa.}
+    comments: []
+  - id: x.listen.wo-huijia-shuijiao
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-huijia-shuijiao
+    targets: [s.wo-huijia-shuijiao]
+    context: [w.wo, w.huijia, w.shuijiao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me voy a casa a dormir.}
+    comments: []
+  - id: x.produce.wo-huijia-shuijiao
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.wo-huijia-shuijiao
+    targets: [s.wo-huijia-shuijiao]
+    context: [w.wo, w.huijia, w.shuijiao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me voy a casa a dormir.»'}
+    answer: {meaning: Me voy a casa a dormir.}
+    comments: []
+  - id: x.listen.wo-meiyou-shijian
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-meiyou-shijian
+    targets: [s.wo-meiyou-shijian]
+    context: [w.wo, w.meiyou, w.shijian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No tengo tiempo.}
+    comments: []
+  - id: x.produce.wo-meiyou-shijian
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.wo-meiyou-shijian
+    targets: [s.wo-meiyou-shijian]
+    context: [w.wo, w.meiyou, w.shijian]
+    skills: [production, speaking]
+    prompt: {text: 'Un amigo te propone algo y no puedes: no tienes tiempo. Díselo en voz alta.'}
+    answer: {meaning: No tengo tiempo.}
     comments: []

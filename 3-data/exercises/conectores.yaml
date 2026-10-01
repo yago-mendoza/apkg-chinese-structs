@@ -1,0 +1,370 @@
+# Ejercicios · Unir frases. Esquema: 3-data/README.md
+
+exercises:
+  - id: x.dictation.yinwei
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.yinwei]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yin1 wei4, hanzi: 因为, pinyin: yīnwèi, meaning: porque}
+    comments: []
+  - id: x.cloze.yinwei
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.yinwei-xiayu-suoyi-wo-bu-qu
+    gap: w.yinwei
+    targets: [w.yinwei]
+    context: [w.xiayu, w.suoyi, w.wo, w.bu, w.qu]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Como llueve, no voy.»'}
+    answer: {typed: yin1 wei4, hanzi: 因为, pinyin: yīnwèi, meaning: porque}
+    comments: []
+  - id: x.read.yinwei
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.yinwei]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 因为}
+    answer: {hanzi: 因为, pinyin: yīnwèi, meaning: porque}
+    comments: []
+  - id: x.dictation.suoyi
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.suoyi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: suo3 yi3, hanzi: 所以, pinyin: suǒyǐ, meaning: 'así que, por eso'}
+    comments: []
+  - id: x.read.suoyi
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.suoyi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 所以}
+    answer: {hanzi: 所以, pinyin: suǒyǐ, meaning: 'así que, por eso'}
+    comments: []
+  - id: x.tones.suoyi
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.suoyi]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 所以, pinyin: suo yi}
+    answer: {typed: '33', hanzi: 所以, pinyin: suǒyǐ, meaning: 'así que, por eso'}
+    comments: []
+  - id: x.dictation.ruguo
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.ruguo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ru2 guo3, hanzi: 如果, pinyin: rúguǒ, meaning: si (condición)}
+    comments: []
+  - id: x.cloze.ruguo
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.ruguo-ni-xihuan-jiu-mai-ba
+    gap: w.ruguo
+    targets: [w.ruguo]
+    context: [w.ni, w.xihuan, w.jiu, w.mai, w.ba.particle]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Si te gusta, cómpralo.»'}
+    answer: {typed: ru2 guo3, hanzi: 如果, pinyin: rúguǒ, meaning: si (condición)}
+    comments: []
+  - id: x.read.ruguo
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.ruguo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 如果}
+    answer: {hanzi: 如果, pinyin: rúguǒ, meaning: si (condición)}
+    comments: []
+  - id: x.contrast.jiu
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.jiu-jiu
+    targets: [w.jiu]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 就, pinyin: jiù, meaning: entonces (consecuencia)}
+    comments: []
+  - id: x.dictation.jiu
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.jiu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jiu4, hanzi: 就, pinyin: jiù, meaning: entonces (consecuencia)}
+    comments: []
+  - id: x.read.jiu
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.jiu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 就}
+    answer: {hanzi: 就, pinyin: jiù, meaning: entonces (consecuencia)}
+    comments: []
+  - id: x.dictation.suiran
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.suiran]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: sui1 ran2, hanzi: 虽然, pinyin: suīrán, meaning: aunque}
+    comments: []
+  - id: x.read.suiran
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.suiran]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 虽然}
+    answer: {hanzi: 虽然, pinyin: suīrán, meaning: aunque}
+    comments: []
+  - id: x.dictation.danshi
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.danshi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dan4 shi4, hanzi: 但是, pinyin: dànshì, meaning: pero}
+    comments: []
+  - id: x.cloze.danshi
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.suiran-hen-lei-danshi
+    gap: w.danshi
+    targets: [w.danshi]
+    context: [w.suiran, w.hen, w.lei, w.wo, w.gaoxing]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Aunque estoy cansado, estoy contento.»'}
+    answer: {typed: dan4 shi4, hanzi: 但是, pinyin: dànshì, meaning: pero}
+    comments: []
+  - id: x.read.danshi
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.danshi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 但是}
+    answer: {hanzi: 但是, pinyin: dànshì, meaning: pero}
+    comments: []
+  - id: x.contrast.ba.particle
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.ba-ba
+    targets: [w.ba.particle]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 吧, pinyin: ba, meaning: 'partícula de propuesta (venga, vale)'}
+    comments: []
+  - id: x.dictation.ba.particle
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.ba.particle]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ba5, hanzi: 吧, pinyin: ba, meaning: 'partícula de propuesta (venga, vale)'}
+    comments: []
+  - id: x.cloze.ba.particle
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.ni-jinlai-ba
+    gap: w.ba.particle
+    targets: [w.ba.particle]
+    context: [w.ni, w.jin, w.lai]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Pasa, entra.»'}
+    answer: {typed: ba5, hanzi: 吧, pinyin: ba, meaning: 'partícula de propuesta (venga, vale)'}
+    comments: []
+  - id: x.read.ba.particle
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.ba.particle]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 吧}
+    answer: {hanzi: 吧, pinyin: ba, meaning: 'partícula de propuesta (venga, vale)'}
+    comments: []
+  - id: x.listen.yinwei-xiayu-suoyi-wo-bu-qu
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.yinwei-xiayu-suoyi-wo-bu-qu
+    targets: [s.yinwei-xiayu-suoyi-wo-bu-qu]
+    context: [w.yinwei, w.xiayu, w.suoyi, w.wo, w.bu, w.qu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Como llueve, no voy.'}
+    comments: []
+  - id: x.produce.yinwei-xiayu-suoyi-wo-bu-qu
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.yinwei-xiayu-suoyi-wo-bu-qu
+    targets: [s.yinwei-xiayu-suoyi-wo-bu-qu]
+    context: [w.yinwei, w.xiayu, w.suoyi, w.wo, w.bu, w.qu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Como llueve, no voy.»'}
+    answer: {meaning: 'Como llueve, no voy.'}
+    comments: []
+  - id: x.listen.ruguo-ni-xihuan-jiu-mai-ba
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ruguo-ni-xihuan-jiu-mai-ba
+    targets: [s.ruguo-ni-xihuan-jiu-mai-ba]
+    context: [w.ruguo, w.ni, w.xihuan, w.jiu, w.mai, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Si te gusta, cómpralo.'}
+    comments: []
+  - id: x.produce.ruguo-ni-xihuan-jiu-mai-ba
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ruguo-ni-xihuan-jiu-mai-ba
+    targets: [s.ruguo-ni-xihuan-jiu-mai-ba]
+    context: [w.ruguo, w.ni, w.xihuan, w.jiu, w.mai, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Si te gusta, cómpralo.»'}
+    answer: {meaning: 'Si te gusta, cómpralo.'}
+    comments: []
+  - id: x.listen.suiran-hen-lei-danshi
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.suiran-hen-lei-danshi
+    targets: [s.suiran-hen-lei-danshi]
+    context: [w.suiran, w.hen, w.lei, w.danshi, w.wo, w.gaoxing]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Aunque estoy cansado, estoy contento.'}
+    comments: []
+  - id: x.cloze.suoyi
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.wo-hen-lei-suoyi-huijia
+    gap: w.suoyi
+    targets: [w.suoyi]
+    context: [w.wo, w.hen, w.lei, w.huijia, w.shuijiao]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Estoy cansado, así que me voy a casa a dormir.»'}
+    answer: {typed: suo3 yi3, hanzi: 所以, pinyin: suǒyǐ, meaning: 'así que, por eso'}
+    comments: []
+  - id: x.cloze.jiu
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.ni-xihuan-jiu-mai-ba
+    gap: w.jiu
+    targets: [w.jiu]
+    context: [w.ni, w.xihuan, w.mai, w.ba.particle]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Si te gusta, cómpralo.»'}
+    answer: {typed: jiu4, hanzi: 就, pinyin: jiù, meaning: entonces (consecuencia)}
+    comments: []
+  - id: x.listen.wo-hen-lei-suoyi-huijia
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.wo-hen-lei-suoyi-huijia
+    targets: [s.wo-hen-lei-suoyi-huijia]
+    context: [w.wo, w.hen, w.lei, w.suoyi, w.huijia, w.shuijiao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Estoy cansado, así que me voy a casa a dormir.'}
+    comments: []
+  - id: x.produce.wo-hen-lei-suoyi-huijia
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.wo-hen-lei-suoyi-huijia
+    targets: [s.wo-hen-lei-suoyi-huijia]
+    context: [w.wo, w.hen, w.lei, w.suoyi, w.huijia, w.shuijiao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estoy cansado, así que me voy a casa a dormir.»'}
+    answer: {meaning: 'Estoy cansado, así que me voy a casa a dormir.'}
+    comments: []
+  - id: x.listen.ni-xihuan-jiu-mai-ba
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.ni-xihuan-jiu-mai-ba
+    targets: [s.ni-xihuan-jiu-mai-ba]
+    context: [w.ni, w.xihuan, w.jiu, w.mai, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Si te gusta, cómpralo.'}
+    comments: []
+  - id: x.produce.ni-xihuan-jiu-mai-ba
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ni-xihuan-jiu-mai-ba
+    targets: [s.ni-xihuan-jiu-mai-ba]
+    context: [w.ni, w.xihuan, w.jiu, w.mai, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Si te gusta, cómpralo.»'}
+    answer: {meaning: 'Si te gusta, cómpralo.'}
+    comments: []
+  - id: x.dictation.yibian
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.yibian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi1 bian1, hanzi: 一边, pinyin: yībiān, meaning: mientras (一边…一边…)}
+    comments: []
+  - id: x.cloze.yibian
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.ta-yibian-chi-yibian-shuo
+    gap: w.yibian
+    targets: [w.yibian]
+    context: [w.ta.he, w.chi, w.shuo]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Habla mientras come.»'}
+    answer: {typed: yi1 bian1, hanzi: 一边, pinyin: yībiān, meaning: mientras (一边…一边…)}
+    comments: []
+  - id: x.read.yibian
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.yibian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 一边}
+    answer: {hanzi: 一边, pinyin: yībiān, meaning: mientras (一边…一边…)}
+    comments: []
+  - id: x.tones.yibian
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.yibian]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 一边, pinyin: yi bian}
+    answer: {typed: '11', hanzi: 一边, pinyin: yībiān, meaning: mientras (一边…一边…)}
+    comments: []

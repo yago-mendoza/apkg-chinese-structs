@@ -40,3 +40,33 @@ sentences:
       - {text: ？}
     translation: {es: '¿Adónde vas a mediodía?', en: 'Where are you going at noon?'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-zuotian-zai-jia-kan-shu
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 昨天, ref: w.zuotian, pinyin: zuótiān}
+      - {text: 在, ref: w.zai.at, pinyin: zài}
+      - {text: 家, ref: w.jia, pinyin: jiā}
+      - {text: 看, ref: w.kan, pinyin: kàn}
+      - {text: 书, ref: w.shu, pinyin: shū}
+      - {text: 。}
+    translation: {es: 'Ayer leí en casa.', en: 'Yesterday I read at home.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-huijia-shuijiao
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 回家, ref: w.huijia, pinyin: huíjiā}
+      - {text: 睡觉, ref: w.shuijiao, pinyin: shuìjiào}
+      - {text: 。}
+    translation: {es: 'Me voy a casa a dormir.', en: 'I''m going home to sleep.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-meiyou-shijian
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 没有, ref: w.meiyou, pinyin: méiyǒu}
+      - {text: 时间, ref: w.shijian, pinyin: shíjiān}
+      - {text: 。}
+    translation: {es: 'No tengo tiempo.', en: 'I don''t have time.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}

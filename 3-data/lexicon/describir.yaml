@@ -207,3 +207,82 @@ entries:
       - {ref: w.tian, cue: 'una raya encima: cielo, día'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
+  - id: w.lei
+    use: say
+    role: content
+    kind: word
+    hanzi: 累
+    pinyin: 'lèi'
+    meaning: {es: 'cansado', en: 'tired'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: w.tui
+    use: hear
+    role: content
+    kind: word
+    hanzi: 腿
+    pinyin: 'tuǐ'
+    meaning: {es: 'pierna', en: 'leg'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '月 a la izquierda es «carne» (partes del cuerpo), como en 胖. 你的腿好长啊！ es un piropo.'}
+  - id: w.chang
+    use: hear
+    role: content
+    kind: word
+    hanzi: 长
+    pinyin: 'cháng'
+    meaning: {es: 'largo', en: 'long'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Leído zhǎng es otro sentido, «crecer» [HSK 2]. Aquí, cháng: 好长 «qué largo».'}
+  - id: w.bi
+    use: say
+    role: function
+    kind: word
+    hanzi: 比
+    pinyin: 'bǐ'
+    meaning: {es: 'que (para comparar)', en: 'than'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'A 比 B + adjetivo, sin 很: 他比我高 «es más alto que yo».'}
+  - id: w.zui
+    use: say
+    role: function
+    kind: word
+    hanzi: 最
+    pinyin: 'zuì'
+    meaning: {es: 'el más, lo que más', en: 'most'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Delante del verbo o del adjetivo: 我最喜欢中国菜 «lo que más me gusta es la comida china».'}
+  - id: w.you.again
+    use: say
+    role: function
+    kind: word
+    hanzi: 又
+    pinyin: 'yòu'
+    meaning: {es: 'a la vez (又…又…)', en: 'both… and…'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '又 + adjetivo + 又 + adjetivo: dos cualidades a la vez, 他又高又帅. Es la forma de decir «alto y guapo»: 和 no une adjetivos.', original: 'no decir ta hen gao he hen piao liang, sino, ta you gao you piao liang'}
+  - id: g.ai-ai
+    kind: group
+    basis: soundalike
+    title: '矮 ǎi y 爱 ài'
+    explanation: 'Solo cambia el tono: 矮 baja y sube, 爱 cae.'
+    members:
+      - {ref: w.ai, cue: 'ǎi, baja y sube: bajo de estatura'}
+      - {ref: w.ai.love, cue: 'ài, cae: amar'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: g.da-da
+    kind: group
+    basis: soundalike
+    title: '大 dà y 打 dǎ'
+    explanation: 'Solo cambia el tono: 大 cae, 打 baja y sube.'
+    members:
+      - {ref: w.da, cue: 'dà, cae: grande'}
+      - {ref: w.da.play, cue: 'dǎ, baja y sube: jugar (a la pelota), golpear'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []

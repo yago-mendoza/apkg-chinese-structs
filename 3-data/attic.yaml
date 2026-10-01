@@ -64,6 +64,8 @@ items:
     reason: HSK 1, pero 票 y 机票 cubrían la idea; entra con el ocio.
     notes:
       - {text: '门 mén es el mismo de 们 y 问; aquí con su tono y su sentido de «puerta».', original: '(fijate que aqui hestá el ''men'' de nimen tamen women, solo que en esos es neutro y aqui no)'}
+    snooze: 003-2026-10-01-comer-dinero-y-contrastes
+    snooze_reason: 'despierta con 电影, pero aún sin frase tuya; 票 y 机票 cubren la idea'
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
 
   # ---------------------------------------------------------------- colores, luz, cielo
@@ -130,6 +132,8 @@ items:
     reason: HSK 4; 错 cubre «equivocarse» en este nivel.
     notes:
       - {text: '我误会你了 «te entendí mal». 误 lleva 讠 «hablar». 会 aquí es «entender».'}
+    snooze: 003-2026-10-01-comer-dinero-y-contrastes
+    snooze_reason: 'despierta con 会, pero es HSK 4; 错 cubre «equivocarse»'
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.cuowu
     hanzi: 错误
@@ -295,30 +299,6 @@ items:
     notes:
       - {text: '耳 «oreja» está en 聪 de 聪明.'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-  - id: a.bing.radical
-    hanzi: 疒
-    pinyin: nè
-    meaning: {es: 'enfermedad (componente)'}
-    theme: escritura
-    level: 3
-    level_reason: 'Componente; se reconoce cuando llegan 病 bìng [HSK 2] y 疼 téng [HSK 3].'
-    links: [病, 生病, 疼, 医院]
-    reason: Pieza; ya se explica en la nota de 瘦.
-    notes:
-      - {text: 'Una cama con una persona tumbada: todo lo que lo lleva tiene que ver con la enfermedad.'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-
-  # ---------------------------------------------------------------- verbos y otros
-  - id: a.chuqu
-    hanzi: 出去
-    pinyin: chūqù
-    meaning: {es: 'salir (hacia fuera)'}
-    theme: cosas
-    links: [进, 进来, 进去, 回来, 回去, 出来]
-    reason: HSK 1; entra con una frase de clase.
-    notes:
-      - {text: '出 es una planta que sale de un tiesto. 出来 chūlái es salir hacia aquí; 亮出来 «sacar a la vista».'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.pa
     hanzi: 怕
     pinyin: pà
@@ -349,3 +329,73 @@ items:
     notes:
       - {text: '这棵树很高 «este árbol es alto»: 棵 kē es el clasificador de los árboles.'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+  - id: a.gebo
+    hanzi: 胳膊
+    pinyin: gēbo
+    meaning: {es: 'brazo'}
+    theme: describir
+    links: [手, 腿, 身体]
+    reason: 'HSK 7; 腿 y 手 cubren el cuerpo por ahora.'
+    notes:
+      - {text: '你的胳膊好长啊！ «¡qué brazos tan largos!», como piropo, igual que 你的腿好长啊！.', original: 'ni de ge bo hao chang a! esto si'}
+    source: {batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: a.xi
+    hanzi: 细
+    pinyin: xì
+    meaning: {es: 'fino, delgado (de forma)'}
+    theme: describir
+    links: [长, 粗]
+    reason: 'HSK 4.'
+    notes:
+      - {text: '又长又细 «largo y fino»: otro ejemplo de 又…又….', original: 'you chang you xi'}
+    source: {batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: a.tiaoxuan
+    hanzi: 挑选
+    pinyin: tiāoxuǎn
+    meaning: {es: 'escoger, seleccionar'}
+    theme: compras
+    links: [选, 挑, 选择]
+    reason: 'HSK 4.'
+    notes:
+      - {text: '挑 «coger» + 选 «elegir»: escoger entre varios, por ejemplo en una tienda.', original: 'tiao xuan - pick and choose'}
+    source: {batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: a.biaoyan
+    hanzi: 表演
+    pinyin: biǎoyǎn
+    meaning: {es: 'actuar; actuación'}
+    theme: cosas
+    links: [跳舞, 唱歌, 看]
+    reason: 'HSK 3.'
+    notes:
+      - {text: '我坐飞机去中国看朋友表演 «volé a China a ver actuar a mi amigo»: una cadena de acciones larga.', original: 'wo zuo fei ji qu zhong guo kan peng you biao yan biao wu'}
+    source: {batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: a.tiaowu
+    hanzi: 跳舞
+    pinyin: tiàowǔ
+    meaning: {es: 'bailar'}
+    theme: cosas
+    links: [表演, 唱歌, 音乐]
+    reason: 'HSK 3.'
+    notes:
+      - {text: '跳 «saltar» + 舞 «danza».'}
+    source: {batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: a.baogao
+    hanzi: 报告
+    pinyin: bàogào
+    meaning: {es: 'informe'}
+    theme: cosas
+    links: [写, 报纸, 工作]
+    reason: 'HSK 3.'
+    notes:
+      - {text: '他在写报告 «está escribiendo un informe»: 在 + verbo, acción en curso.', original: 'ta zai xie bao gao --- he''s wirting a report'}
+    source: {batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: a.wandan
+    hanzi: 完蛋
+    pinyin: wándàn
+    meaning: {es: 'estar perdido, apañado (coloquial)'}
+    theme: cosas
+    links: [完, 死]
+    reason: 'HSK 7; muy coloquial.'
+    notes:
+      - {text: '完蛋了！ «¡estoy perdido!, ¡la he liado!».', original: 'wán dàn le (im screwed)'}
+    source: {batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}

@@ -287,6 +287,8 @@ SLOTS = {
     "Num": ("número", {"numero"}),
     "Nombre": ("nombre", {"nombre-propio", "sustantivo"}),
     "Lugar": ("lugar", {"nombre-propio", "sustantivo"}),
+    "Tiempo": ("tiempo", {"sustantivo"}),
+    "Frase": ("frase", set()),            # una frase entera: cualquier categoría
 }
 SLOT_RE = re.compile(r"^\{([A-Za-z]+)\}$")
 
@@ -526,7 +528,7 @@ def required_cards(item, groups_of):
         if mods & {"hear", "say"} and tone_traps(item.get("hanzi"), item.get("pinyin")):
             req.add("tones")
     elif kind in ("character", "component"):
-        in_contrast = any(g.get("basis") in ("visual", "homophone") for g in groups_of.get(item.get("id"), []))
+        in_contrast = any(g.get("basis") in ("visual", "homophone", "soundalike") for g in groups_of.get(item.get("id"), []))
         if mods and not in_contrast:
             req.add("recognize")
     elif kind == "structure":
@@ -539,7 +541,7 @@ def required_cards(item, groups_of):
             req.add("speak")
     if mods:
         for g in groups_of.get(item.get("id"), []):
-            if g.get("basis") in ("visual", "homophone"):
+            if g.get("basis") in ("visual", "homophone", "soundalike"):
                 req.add("contrast")
     return req
 
@@ -931,7 +933,7 @@ def scaffold_exercises(entries, sentences, exercises, today):
                 continue
             if need == "read":
                 made.append(make(f"x.read.{short}", theme, type="read", targets=[iid], skills=["reading", "pinyin"],
-                                 prompt={"text": "Lee: pinyin y significado.", "hanzi": it["hanzi"]}, answer=answer(it)))
+                                 prompt={"text": "Léelo en voz alta; luego, pinyin y significado.", "hanzi": it["hanzi"]}, answer=answer(it)))
             elif need == "listen":
                 if not numeric:
                     manual.append((iid, need, "el pinyin no se alinea con los hanzi: revisar la entrada"))
@@ -965,11 +967,15 @@ def scaffold_exercises(entries, sentences, exercises, today):
                                          "pinyin": " ".join(b for b, t in syl if t != "erhua")},
                                  answer=answer(it, "".join(str(t) for _, t in syl if t != "erhua"))))
             elif need == "contrast":
-                grp = next((g for g in groups_of.get(iid, []) if g.get("basis") in ("visual", "homophone")), None)
+                grp = next((g for g in groups_of.get(iid, []) if g.get("basis") in ("visual", "homophone", "soundalike")), None)
                 meaning = (it.get("meaning") or {}).get("es", "")
+                if grp.get("basis") == "soundalike":
+                    # Se parecen al oído: se oye una y se elige cuál es; el tono o la sílaba deciden.
+                    prompt, skills = {"text": "Escucha: ¿cuál de estas es?", "audio": True}, ["listening", "tones", "discrimination"]
+                else:
+                    prompt, skills = {"text": f"¿Cuál es {it['pinyin']}, «{meaning}»?"}, ["reading", "discrimination"]
                 made.append(make(f"x.contrast.{short}", theme, type="contrast", group=grp["id"], targets=[iid],
-                                 skills=["reading", "discrimination"],
-                                 prompt={"text": f"¿Cuál es {it['pinyin']}, «{meaning}»?"},
+                                 skills=skills, prompt=prompt,
                                  answer={"hanzi": it["hanzi"], "pinyin": it["pinyin"], "meaning": meaning}))
     return made, manual
 
@@ -1169,11 +1175,12 @@ def answer_hanzi(ex, sby):
 
 def wants_audio(ex, eby):
     """Si la respuesta lleva audio. El contraste visual (大/太/天) se decide mirando la
-    forma: no lo necesita. El de homófonos sí, porque el sonido es lo que se contrasta."""
+    forma: no lo necesita. El de homófonos y el de palabras que se parecen al oído sí, porque el
+    sonido es lo que se contrasta."""
     if ex.get("type") in ("components", "nuance", "pattern"):
         return False
     if ex.get("type") == "contrast":
-        return eby.get(ex.get("group"), {}).get("basis") == "homophone"
+        return eby.get(ex.get("group"), {}).get("basis") in ("homophone", "soundalike")
     return True
 
 
@@ -1315,14 +1322,49 @@ def grammar_rules(entries, sentences, eby, sby, errors, warnings):
                         k = at[n] + side
                         if 0 <= k < len(segs):
                             got = pos_of(eby.get(segs[k]["ref"], {}))
-                            if got and got not in SLOTS[toks[j][1]][1]:
+                            if got and SLOTS[toks[j][1]][1] and got not in SLOTS[toks[j][1]][1]:
                                 warnings.append(f"{sid}: en {xid}, «{segs[k]['text']}» ({POS_LABEL.get(got, got)}) ocupa el hueco "
                                                 f"{{{toks[j][1]}}}; ¿ejemplo o plantilla equivocados?")
+
+
+def is_erhua(e):
+    """Una palabra con 儿 fundido con la sílaba anterior (哪儿 nǎr): forma del norte, no del estándar."""
+    hz, py = e.get("hanzi") or "", strip_tones(e.get("pinyin") or "").lower()
+    return len(hz) > 1 and hz.endswith("儿") and py.endswith("r") and not py.endswith("er")
+
+
+def standard_rules(entries, sentences, eby, errors, warnings):
+    """Mandarín estándar y contrastes (docs/goal.md, 2026-10-01): nada de erhua ni regionalismos en el mazo,
+    y aviso de palabras que suenan igual y aún no se contrastan."""
+    for e in entries:
+        if is_erhua(e) and e.get("use") != "drop":
+            errors.append(f"{e['id']} ({e['hanzi']}): erhua, forma del norte: se descarta con use: drop y se usa la "
+                          f"estándar (哪里, no 哪儿)")
+    for s in sentences:
+        for seg in s.get("segments", []):
+            if eby.get(seg.get("ref"), {}).get("use") == "drop":
+                errors.append(f"{s['id']}: usa {seg['text']}, descartada (use: drop)")
+    together = set()
+    for g in entries:
+        if g.get("kind") == "group":
+            refs = [m["ref"] for m in g.get("members", [])]
+            together |= {(a, b) for a in refs for b in refs}
+    sound = {}
+    for e in entries:
+        if e.get("kind") in ("word", "expression") and use_modalities(e) & {"hear", "say"} and e.get("pinyin"):
+            sound.setdefault(compact(strip_tones(e["pinyin"])), []).append(e)
+    for same in sound.values():
+        for i, a in enumerate(same):
+            for b in same[i + 1:]:
+                if a.get("hanzi") != b.get("hanzi") and (a["id"], b["id"]) not in together:
+                    warnings.append(f"{a['id']} {a['hanzi']} y {b['id']} {b['hanzi']} suenan igual (sin tonos) y no están "
+                                    f"en ningún grupo: ¿contrastarlos (homophone o soundalike)?")
 
 
 def quality_rules(entries, sentences, exercises, eby, sby, errors, warnings):
     """Reglas de calidad que no dependen del criterio de nadie (docs/design.md y docs/goal.md)."""
     grammar_rules(entries, sentences, eby, sby, errors, warnings)
+    standard_rules(entries, sentences, eby, errors, warnings)
     levels = hsk_levels()
     known_hanzi = {e.get("hanzi") for e in entries if e.get("hanzi")}
     for e in entries:
@@ -1431,11 +1473,11 @@ def validate(entries, sentences, exercises, require_audio=True):
             warnings.append(f"{e['id']}: no se usa solo y no hay ninguna palabra registrada que lo contenga")
         if e.get("kind") == "group":
             members = e.get("members") or []
-            if e.get("basis") not in ("visual", "homophone", "pattern", "set", "phonetic"):
-                errors.append(f"{e['id']}: basis debe ser visual, homophone, pattern, set o phonetic")
+            if e.get("basis") not in ("visual", "homophone", "soundalike", "pattern", "set", "phonetic"):
+                errors.append(f"{e['id']}: basis debe ser visual, homophone, soundalike, pattern, set o phonetic")
             if len(members) < 2:
                 errors.append(f"{e['id']}: un grupo necesita al menos 2 miembros")
-            if e.get("basis") in ("visual", "homophone") and len(members) > 4:
+            if e.get("basis") in ("visual", "homophone", "soundalike") and len(members) > 4:
                 errors.append(f"{e['id']}: máximo 4 miembros en un grupo de contraste")
             for m in members:
                 ref(e["id"], m.get("ref"))
@@ -1731,6 +1773,7 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .slot .hz { font-size: 16px; font-style: italic; color: var(--s); }
 .slot-S { --s: #4e79a7; } .slot-N { --s: #59a14f; } .slot-V { --s: #e15759; } .slot-Adj { --s: #f28e2b; }
 .slot-Num { --s: #b07aa1; } .slot-Nombre { --s: #76b7b2; } .slot-Lugar { --s: #9c755f; }
+.slot-Tiempo { --s: #edc948; } .slot-Frase { --s: #8c8c8c; }
 """
 # Los colores solo alinean segmentos hanzi↔pinyin; los tonos se leen por sus marcas.
 
@@ -1849,7 +1892,24 @@ def examples_for(ex, sby, eby=None):
     if pool:
         k = int(hashlib.sha1(ex["id"].encode("utf-8")).hexdigest()[:8], 16) % len(pool)
         pool = pool[k:] + pool[:k]
-    return (chosen + pool)[:EXAMPLES_MAX]
+    out = (chosen + pool)[:EXAMPLES_MAX]
+    # Lo que se confunde aparece junto (YAGO, 2026-10-01): si el objetivo tiene pareja en un grupo de contraste
+    # o de serie, el último ejemplo es una frase de la pareja, si hay alguna de nivel no superior.
+    if eby is not None and not chosen:
+        partners = {m["ref"] for g in eby.values() if g.get("kind") == "group"
+                    and g.get("basis") in ("visual", "homophone", "soundalike", "set")
+                    and any(m["ref"] in targets for m in g.get("members", []))
+                    for m in g["members"]} - set(targets)
+        has = lambda sid: any(seg.get("ref") in partners for seg in sby[sid].get("segments", []))
+        if partners and not any(has(sid) for sid in out):
+            levels = hsk_levels()
+            card = max([lv for lv in (level_of(t, eby, sby, levels) for t in targets) if lv] or [0])
+            extra = sorted(sid for sid in sby if sid != own and has(sid)
+                           and (not card or (level_of(sid, eby, sby, levels) or 0) <= card))
+            if extra:
+                k = int(hashlib.sha1(ex["id"].encode("utf-8")).hexdigest()[:8], 16) % len(extra)
+                out = out[:EXAMPLES_MAX - 1] + [extra[k]]
+    return out
 
 
 def card_fields(ex, eby, sby, manifest, media_files):

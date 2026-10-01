@@ -22,6 +22,12 @@
 - ✅🃏 大 dà [ta˥˩] · grande · _adjetivo_ · Es una persona con los brazos abiertos: el gesto de «así de grande».
 - ✅🃏 太 tài [tʰaɪ˥˩] · demasiado; muy (en 太好了) · _adverbio_
 - ✅🃏 天 tiān [tʰjɛn˥] · día; cielo · _sustantivo_ · Aparece en 明天 míngtiān «mañana» y 天气 tiānqì «el tiempo».
+- ✅🃏 累 lèi [leɪ˥˩] · cansado · _adjetivo_
+- ✅🃏 腿 tuǐ [tʰweɪ˧˩˧] · pierna · _sustantivo_ · 月 a la izquierda es «carne» (partes del cuerpo), como en 胖. 你的腿好长啊！ es un piropo.
+- ✅🃏 长 cháng · largo · _adjetivo_ · Leído zhǎng es otro sentido, «crecer» [HSK 2]. Aquí, cháng: 好长 «qué largo».
+- ✅🃏 比 bǐ [pi˧˩˧] · que (para comparar) · _preposición_ · A 比 B + adjetivo, sin 很: 他比我高 «es más alto que yo».
+- ✅🃏 最 zuì [tsweɪ˥˩] · el más, lo que más · _adverbio_ · Delante del verbo o del adjetivo: 我最喜欢中国菜 «lo que más me gusta es la comida china».
+- ✅🃏 又 yòu [joʊ˥˩] · a la vez (又…又…) · _adverbio_ · 又 + adjetivo + 又 + adjetivo: dos cualidades a la vez, 他又高又帅. Es la forma de decir «alto y guapo»: 和 no une adjetivos.
 
 ## 大, 太 y 天
 
@@ -30,6 +36,20 @@ Tres veces la persona con los brazos abiertos; cambia lo que se le añade.
 - 大 dà · solo: grande
 - 太 tài · un punto debajo: demasiado
 - 天 tiān · una raya encima: cielo, día
+
+## 矮 ǎi y 爱 ài
+
+Solo cambia el tono: 矮 baja y sube, 爱 cae.
+
+- 矮 ǎi · ǎi, baja y sube: bajo de estatura
+- 爱 ài · ài, cae: amar
+
+## 大 dà y 打 dǎ
+
+Solo cambia el tono: 大 cae, 打 baja y sube.
+
+- 大 dà · dà, cae: grande
+- 打 dǎ · dǎ, baja y sube: jugar (a la pelota), golpear
 
 ## Frases
 
@@ -44,3 +64,6 @@ Tres veces la persona con los brazos abiertos; cambia lo que se le añade.
 - ✅🃏 北京很大。 · Běijīng hěn dà · Pekín es grande.
 - ✅🃏 太好了！ · tài hǎo le · ¡Genial!
 - ✅🃏 我的手机是白的。 · wǒ de shǒujī shì bái de · Mi móvil es blanco.
+- ✅🃏 他比我高。 · tā bǐ wǒ gāo · Es más alto que yo.
+- ✅🃏 她又高又漂亮。 · tā yòu gāo yòu piàoliang · Es alta y guapa.
+- ✅🃏 你的腿好长啊！ · nǐ de tuǐ hǎo cháng a · ¡Qué piernas tan largas tienes!

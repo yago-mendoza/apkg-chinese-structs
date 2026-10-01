@@ -265,6 +265,58 @@ class Repository(unittest.TestCase):
         options = [hz for hz, _ in anki.calque_options(cards[0], ok, {"s.good": good})]
         self.assertEqual(sorted(options), sorted(["他是高。", "他很高。"]))
 
+    def test_standard_mandarin_and_soundalikes(self):
+        """Nada de erhua; aviso de palabras que suenan igual sin contrastar; los parecidos al oído se contrastan
+        oyendo (YAGO, 2026-10-01)."""
+        nar = {"id": "w.t.nar", "kind": "word", "hanzi": "哪儿", "pinyin": "nǎr", "use": "hear"}
+        self.assertTrue(anki.is_erhua(nar))
+        self.assertFalse(anki.is_erhua({"hanzi": "女儿", "pinyin": "nǚ'ér"}))
+        shi = {"id": "w.t.shi", "kind": "word", "hanzi": "是", "pinyin": "shì", "use": "say", "theme": "presentarse"}
+        ten = {"id": "w.t.ten", "kind": "word", "hanzi": "十", "pinyin": "shí", "use": "say", "theme": "numeros"}
+        sent = {"id": "s.t", "segments": [{"text": "哪儿", "ref": "w.t.nar"}]}
+
+        def run(entries, sentences=()):
+            errors, warnings = [], []
+            anki.standard_rules(entries, list(sentences), {e["id"]: e for e in entries}, errors, warnings)
+            return errors, warnings
+        errors, _ = run([nar])
+        self.assertTrue(any("erhua" in m for m in errors))
+        errors, _ = run([{**nar, "use": "drop"}], [sent])
+        self.assertTrue(any("descartada" in m for m in errors))
+        _, warnings = run([shi, ten])
+        self.assertTrue(any("suenan igual" in m for m in warnings))
+        grp = {"id": "g.t", "kind": "group", "basis": "soundalike", "theme": "presentarse",
+               "members": [{"ref": "w.t.shi", "cue": "ser"}, {"ref": "w.t.ten", "cue": "diez"}]}
+        _, warnings = run([shi, ten, grp])
+        self.assertEqual(warnings, [])
+        made, _ = anki.scaffold_exercises([shi, ten, grp], [], [], datetime.date(2026, 10, 1))
+        contrast = [ex for _, ex in made if ex["type"] == "contrast"]
+        self.assertEqual(len(contrast), 2)
+        self.assertTrue(all(ex["prompt"].get("audio") for ex in contrast))      # se oye y se elige
+        self.assertTrue(anki.wants_audio(contrast[0], {"g.t": grp}))
+
+    def test_confusable_partner_appears_in_examples(self):
+        yao = {"id": "w.t.yao", "kind": "word", "hanzi": "要", "pinyin": "yào"}
+        ai = {"id": "w.t.ai", "kind": "word", "hanzi": "爱", "pinyin": "ài"}
+        grp = {"id": "g.t", "kind": "group", "basis": "set", "members": [{"ref": "w.t.yao"}, {"ref": "w.t.ai"}]}
+        sby = {f"s.y{i}": {"id": f"s.y{i}", "use": "say", "segments": [{"text": "要", "ref": "w.t.yao"}]} for i in range(3)}
+        sby["s.a"] = {"id": "s.a", "use": "say", "segments": [{"text": "爱", "ref": "w.t.ai"}]}
+        eby = {e["id"]: e for e in (yao, ai, grp)}
+        ex = {"id": "x.t", "type": "read", "targets": ["w.t.yao"]}
+        out = anki.examples_for(ex, sby, eby)
+        self.assertIn("s.a", out)
+        self.assertEqual(len(out), anki.EXAMPLES_MAX)
+
+    def test_whole_clause_slot(self):
+        words = [{"id": "w.ru", "kind": "word", "hanzi": "如果", "pinyin": "rúguǒ"},
+                 {"id": "w.ni", "kind": "word", "hanzi": "你", "pinyin": "nǐ"}]
+        st = {"id": "st.t", "kind": "structure", "pattern": "如果 + {Frase}", "refs": ["w.ru"], "meaning": {"es": "si"},
+              "examples": ["s.t"]}
+        s = {"id": "s.t", "segments": [{"text": "如果", "ref": "w.ru"}, {"text": "你", "ref": "w.ni"}]}
+        errors, warnings = [], []
+        anki.grammar_rules(words + [st], [s], {e["id"]: e for e in words + [st]}, {"s.t": s}, errors, warnings)
+        self.assertEqual((errors, warnings), ([], []))
+
     def test_scaffold_appends_to_an_empty_list(self):
         import tempfile
         from unittest import mock

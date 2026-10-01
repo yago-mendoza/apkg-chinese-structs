@@ -49,3 +49,22 @@ sentences:
       - {text: 。}
     translation: {es: 'Somos una familia.', en: 'We are one family.'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.mama-huilai-le
+    use: say
+    segments:
+      - {text: 妈妈, ref: w.mama, pinyin: māma}
+      - {text: 回来, ref: w.huilai, pinyin: huílai}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: 'Mamá ha vuelto.', en: 'Mom is back.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.jiejie-zai-kan-baozhi
+    use: hear
+    segments:
+      - {text: 姐姐, ref: w.jiejie, pinyin: jiějie}
+      - {text: 在, ref: w.zai.progressive, pinyin: zài}
+      - {text: 看, ref: w.kan, pinyin: kàn}
+      - {text: 报纸, ref: w.baozhi, pinyin: bàozhǐ}
+      - {text: 。}
+    translation: {es: 'Mi hermana está leyendo el periódico.', en: 'My sister is reading the newspaper.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}

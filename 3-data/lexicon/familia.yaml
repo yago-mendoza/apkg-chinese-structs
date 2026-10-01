@@ -103,7 +103,7 @@ entries:
     standalone: 'no'
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '儿 ér «niño»: delante en 儿子, detrás en 女儿. Al final de muchas palabras del norte se funde con la sílaba anterior (哪儿 nǎr): es el erhua.'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '儿 ér «niño»: delante en 儿子, detrás en 女儿.'}
   - id: c.zi
     use: context
     use_reason: 'ligada: se practica dentro de 儿子 y 孩子'
@@ -116,3 +116,13 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '子 zǐ «hijo, niño»; al final de una palabra suele ser un sufijo átono: 儿子 érzi, 孩子 háizi. Con 女 forma 好.'}
+  - id: w.jiejie
+    use: hear
+    role: content
+    kind: word
+    hanzi: 姐姐
+    pinyin: 'jiějie'
+    accept_pinyin_mismatch: 'la segunda sílaba es átona: jiějie'
+    meaning: {es: 'hermana mayor', en: 'older sister'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []

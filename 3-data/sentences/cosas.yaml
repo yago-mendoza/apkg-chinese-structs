@@ -107,3 +107,206 @@ sentences:
       - {text: 。}
     translation: {es: 'Tengo que trabajar.', en: 'I have to work.'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.wo-qu-guo-beijing
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 过, ref: w.guo.exp, pinyin: guo}
+      - {text: 北京, ref: w.beijing, pinyin: Běijīng}
+      - {text: 。}
+    translation: {es: 'He estado en Pekín.', en: 'I''ve been to Beijing.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.ni-kan-guo-zhege-dianying-ma
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 看, ref: w.kan, pinyin: kàn}
+      - {text: 过, ref: w.guo.exp, pinyin: guo}
+      - {text: 这, ref: w.zhe, pinyin: zhè}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 电影, ref: w.dianying, pinyin: diànyǐng}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Has visto esta película?', en: 'Have you seen this film?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-zuo-feiji-qu-zhongguo
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 坐, ref: w.zuo.sit, pinyin: zuò}
+      - {text: 飞机, ref: w.feiji, pinyin: fēijī}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 中国, ref: w.zhongguo, pinyin: Zhōngguó}
+      - {text: 。}
+    translation: {es: 'Voy a China en avión.', en: 'I''m flying to China.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-yong-kuaizi-chifan
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 用, ref: w.yong, pinyin: yòng}
+      - {text: 筷子, ref: w.kuaizi, pinyin: kuàizi}
+      - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
+      - {text: 。}
+    translation: {es: 'Como con palillos.', en: 'I eat with chopsticks.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.ni-jinlai-ba
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 进, ref: w.jin, pinyin: jìn}
+      - {text: 来, ref: w.lai, pinyin: lái}
+      - {text: 吧, ref: w.ba.particle, pinyin: ba}
+      - {text: 。}
+    translation: {es: 'Pasa, entra.', en: 'Come in.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-neng-jinqu-ma
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 能, ref: w.neng, pinyin: néng}
+      - {text: 进, ref: w.jin, pinyin: jìn}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Puedo entrar?', en: 'Can I go in?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.keyi-zuo-zheli-ma
+    use: say
+    segments:
+      - {text: 可以, ref: w.keyi, pinyin: kěyǐ}
+      - {text: 坐, ref: w.zuo.sit, pinyin: zuò}
+      - {text: 这里, ref: w.zheli, pinyin: zhèlǐ}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Puedo sentarme aquí?', en: 'May I sit here?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.bie-kan-wo
+    use: say
+    segments:
+      - {text: 别, ref: w.bie, pinyin: bié}
+      - {text: 看, ref: w.kan, pinyin: kàn}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: ！}
+    translation: {es: '¡No me mires!', en: 'Don''t look at me!'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.zheli-bu-huanying-ni
+    use: hear
+    segments:
+      - {text: 这里, ref: w.zheli, pinyin: zhèlǐ}
+      - {text: 不, ref: w.bu, pinyin: bù}
+      - {text: 欢迎, ref: w.huanying, pinyin: huānyíng}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 。}
+    translation: {es: 'Aquí no eres bienvenido.', en: 'You''re not welcome here.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.lai-le-lai-le
+    use: hear
+    segments:
+      - {text: 来, ref: w.lai, pinyin: lái}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ，}
+      - {text: 来, ref: w.lai, pinyin: lái}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ！}
+    translation: {es: '¡Ya voy, ya voy! (o ¡ahí viene!)', en: 'Coming, coming!'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.ta-shengqi-le
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 生气, ref: w.shengqi, pinyin: shēngqì}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: 'Se ha enfadado.', en: 'He got angry.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.hao-teng
+    use: hear
+    segments:
+      - {text: 好, ref: w.hao, pinyin: hǎo}
+      - {text: 疼, ref: w.teng, pinyin: téng}
+      - {text: ！}
+    translation: {es: '¡Qué daño!', en: 'That hurts!'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.zhongwen-hen-nan
+    use: say
+    segments:
+      - {text: 中文, ref: w.zhongwen, pinyin: Zhōngwén}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 难, ref: w.nan, pinyin: nán}
+      - {text: 。}
+    translation: {es: 'El chino es difícil.', en: 'Chinese is hard.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.feichang-hao
+    use: say
+    segments:
+      - {text: 非常, ref: w.feichang, pinyin: fēicháng}
+      - {text: 好, ref: w.hao, pinyin: hǎo}
+      - {text: ！}
+    translation: {es: '¡Muy bien!', en: 'Very good!'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.ta-yibian-chi-yibian-shuo
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 一边, ref: w.yibian, pinyin: yìbiān, sandhi: yī → yì delante de primer tono}
+      - {text: 吃, ref: w.chi, pinyin: chī}
+      - {text: 一边, ref: w.yibian, pinyin: yìbiān, sandhi: yī → yì delante de primer tono}
+      - {text: 说, ref: w.shuo, pinyin: shuō}
+      - {text: 。}
+    translation: {es: 'Habla mientras come.', en: 'He talks while eating.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-yibian-kanshu-yibian-hecha
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 一边, ref: w.yibian, pinyin: yìbiān, sandhi: yī → yì delante de primer tono}
+      - {text: 看, ref: w.kan, pinyin: kàn}
+      - {text: 书, ref: w.shu, pinyin: shū}
+      - {text: 一边, ref: w.yibian, pinyin: yìbiān, sandhi: yī → yì delante de primer tono}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 茶, ref: w.cha, pinyin: chá}
+      - {text: 。}
+    translation: {es: 'Leo mientras tomo té.', en: 'I read while drinking tea.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-yibian-ting-yinyue-yibian-xuexi
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 一边, ref: w.yibian, pinyin: yìbiān, sandhi: yī → yì delante de primer tono}
+      - {text: 听, ref: w.ting, pinyin: tīng}
+      - {text: 音乐, ref: w.yinyue, pinyin: yīnyuè}
+      - {text: 一边, ref: w.yibian, pinyin: yìbiān, sandhi: yī → yì delante de primer tono}
+      - {text: 学习, ref: w.xuexi, pinyin: xuéxí}
+      - {text: 。}
+    translation: {es: 'Estudio mientras escucho música.', en: 'I study while listening to music.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.daxiang-hen-da
+    use: hear
+    segments:
+      - {text: 大象, ref: w.daxiang, pinyin: dàxiàng}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 大, ref: w.da, pinyin: dà}
+      - {text: 。}
+    translation: {es: 'Los elefantes son grandes.', en: 'Elephants are big.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-zai-zheli
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 在, ref: w.zai.at, pinyin: zài}
+      - {text: 这里, ref: w.zheli, pinyin: zhèlǐ}
+      - {text: 。}
+    translation: {es: 'Estoy aquí.', en: 'I''m here.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.ni-weishenme-bu-qu
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 为什么, ref: w.weishenme, pinyin: wèishénme}
+      - {text: 不, ref: w.bu, pinyin: bú, sandhi: bù → bú delante de cuarto tono}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: ？}
+    translation: {es: '¿Por qué no vas?', en: 'Why aren''t you going?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
