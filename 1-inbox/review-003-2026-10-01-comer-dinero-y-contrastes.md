@@ -7,19 +7,19 @@
 Lo único que necesito que contestes para el siguiente lote. Todo lo demás, más abajo, es para cuando quieras ahondar.
 
 - **¿Cerramos la fase de pruebas?** Ya está comprobado en tu Anki que reimportar y reorganizar no borran el progreso. Si la cerramos, no vuelvo a usar `push --reset` y lo que estudies desde hoy cuenta para siempre. Ahora mismo, en Anki, todo está como nuevo. ([la prueba](/docs/decisions.md#2026-10-01--el-progreso-sobrevive-a-reimportar-y-reorganizar-comprobado))
-  > 
+  > (Respondido en el chat, 2026-10-01) Sí. Cerrada.
 
-- **Ritmo.** Tienes 1.087 tarjetas nuevas pendientes: a 20 al día son unos 54 días, y lo de la clase de esta semana sale al final. ¿Subes a 30 nuevas al día (unos 36 días, con algo más de repaso diario), o lo dejas en 20 y los próximos lotes entran más ligeros? ([el criterio](/docs/decisions.md#2026-10-01--cuánto-entra-por-lote))
-  > (Respondido en el chat, 2026-10-01) 20 está bien; subiría a 30 si se acumulan.
+- **Ritmo.** Tienes 1.088 tarjetas nuevas pendientes: a 20 al día son unos 54 días, y lo de la clase de esta semana sale al final. ¿Subes a 30 nuevas al día (unos 36 días, con algo más de repaso diario), o lo dejas en 20 y los próximos lotes entran más ligeros? ([el criterio](/docs/decisions.md#2026-10-01--cuánto-entra-por-lote))
+  > (Respondido en el chat, 2026-10-01) 20 está bien; subiría a 30 si se acumulan. Después pidió 30: aplicado.
 
 - **Fechas del lote 001.** Dijiste que esas clases fueron el 21 y el 23 de septiembre, pero no sé qué hojas son de cada día, así que todo sigue con fecha del 25. ¿Hojas 1–6 el 21 y 7–15 el 23? ([lo que contestaste](/1-inbox/history/002-2026-09-29-clima-apellidos-y-caracteres/review-001-2026-09-25-primeras-clases.md#por-verificar))
   > (Respondido en el chat, 2026-10-01) Más o menos, sí. Aplicado.
 
 - **Comprensión lectora.** Ya hay 4 tarjetas: un texto corto en hanzi y, al terminar, una pregunta plegada (una con el pinyin encima, otra con la pregunta en chino). ¿Te sirven así, más largas o más cortas, con más preguntas en chino? ([cómo son](/docs/decisions.md#2026-10-01--comprensión-lectora))
-  > 
+  > (Respondido en el chat, 2026-10-01) Sí, están bien, creo; las revisaré en Anki.
 
 - **«ni yao mao ma — wo you mei you»**: ¿qué frase era? ([detalle](#por-verificar))
-  > 
+  > (Respondido en el chat, 2026-10-01) No me acuerdo. Descartado.
 
 ## Cómo vas
 
@@ -168,7 +168,7 @@ Palabras que quieres decir y aún no aparecen en ninguna frase. Trae una frase d
   > 
 
 - «ni yao mao ma — wo you mei you»: no sé qué frase era. ¿你要买吗？ «¿lo quieres comprar?», o 你有没有…？ «¿tienes…?»? Dímelo y entra.
-  > 
+  > (Respondido en el chat, 2026-10-01) No me acuerdo. Descartado.
 
 - Quedaron sin frase de tu apunte: 从哪里来，到哪里去 «de dónde vienes y adónde vas», 睡了吗？ «¿estás dormido?» y «si acabas los deberes, puedes usar el wifi». ¿Entran en el próximo lote?
   > 

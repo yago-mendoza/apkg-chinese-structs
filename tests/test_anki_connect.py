@@ -164,6 +164,14 @@ class AnkiSafety(unittest.TestCase):
         self.assertEqual(count, 1)
         self.assertEqual(set(fake.touched_cards()), {1})
 
+    def test_reset_refused_once_testing_is_over(self):
+        def must_not_run(*a, **k):
+            raise AssertionError("no debía llegar a compilar ni tocar Anki")
+        with mock.patch.object(anki, "TESTING_PHASE", False), mock.patch.object(anki, "cmd_build", must_not_run), \
+                mock.patch.object(anki, "anki_request", must_not_run), redirect_stdout(io.StringIO()) as out:
+            self.assertEqual(anki.cmd_push(False, False, reset=True), 1)
+        self.assertIn("fase de pruebas", out.getvalue())
+
     def test_stats_only_reads_our_deck(self):
         fake = FakeAnki([{"id": 1, "deck": self.saludos, "ex": "x.a", "new": False},
                          {"id": 2, "deck": "HSK 1", "ex": "x.a", "new": False}])

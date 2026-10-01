@@ -8,7 +8,7 @@ Por qué el sistema es como es. Cada entrada: qué se decidió, por qué, qué s
 - No va: la regla en sí (vive en `docs/design.md`, `docs/goal.md` o `docs/owner.md`, en presente y sin historia), el contenido de un lote (su log) ni cifras que caducan (`anki.py gaps`).
 - Los documentos de reglas no llevan fechas ni «desde el…»: quien quiera saber cuándo o por qué, viene aquí.
 
-**Cuándo se cambia una regla** (desde el 2026-10-01): solo cuando algo falla en uso real o el que aprende lo pide, no sobre la marcha. Primero la entrada aquí; luego la regla en su documento, y si se puede comprobar, en `check` con su prueba. Los cambios de proceso se deciden en la retrospectiva cada 4 lotes (`docs/design.md`, «Retrospectiva»), salvo que algo esté roto.
+Cuándo y cómo se cambia una regla: `docs/design.md` (cabecera y «Retrospectiva»).
 
 ---
 
@@ -38,7 +38,7 @@ Todo el audio se generó en el nivel de pago S0. Motivo: según las condiciones 
 
 ### 2026-09-27 · Fase de pruebas
 
-Mientras el sistema no sea estable, el progreso se puede reiniciar a petición (`push --reset`). Cuando YAGO lo dé por estable, el progreso se conserva siempre. Vive en: `docs/owner.md`.
+Mientras el sistema no sea estable, el progreso se puede reiniciar a petición (`push --reset`). Cuando YAGO lo dé por estable, el progreso se conserva siempre. Vive en: `docs/owner.md`. (revocada: 2026-10-01)
 
 ### 2026-09-27 · Los apuntes se versionan
 
@@ -142,7 +142,7 @@ Prueba en el Anki real de YAGO, sobre una tarjeta (`x.read.tianqi`): tras tres r
 
 ### 2026-10-01 · El review empieza por lo imprescindible
 
-El review creció hasta 159 líneas y el del lote 002 quedó sin una sola respuesta. Se añade arriba «Sine qua non»: lo único que el agente necesita que YAGO conteste, pocas preguntas y con enlace a lo profundo. El resto se queda debajo, porque contestarlo y buscar a partir de ahí es parte de cómo aprende YAGO. Descartado: recortar el review entero. Vive en: `docs/design.md` («Log y review»), `close-batch`.
+El review creció hasta 159 líneas y el del lote 002 quedó sin una sola respuesta. Se añade arriba «Sine qua non»: lo único que el agente necesita que YAGO conteste, pocas preguntas y con enlace a lo profundo. El resto se queda debajo, porque contestarlo y buscar a partir de ahí es parte de cómo aprende YAGO. Descartado: recortar el review entero. Vive en: `docs/design.md` («Log, review y estado»), `close-batch`.
 
 ### 2026-10-01 · Estado vivo en lugar de releer todo
 
@@ -154,8 +154,16 @@ Git guarda qué cambió, no por qué ni qué costó. Tres registros: este archiv
 
 ### 2026-10-01 · `stats` antes que la pista de pronunciación
 
-El sistema medía lo que entra, no lo que se queda. `anki.py stats` lee de Anki (solo lectura, solo este mazo) los fallos y lo que cuesta, y el review lo usa como hueco del siguiente lote. Pasa por delante de la pista de pronunciación. Vive en: `docs/design.md` («Estado y fases»).
+El sistema medía lo que entra, no lo que se queda. `anki.py stats` lee de Anki (solo lectura, solo este mazo) los fallos y lo que cuesta, y el review lo usa como hueco del siguiente lote. Pasa por delante de la pista de pronunciación. Vive en: `docs/design.md` («Lo que se queda: `stats`»).
 
 ### 2026-10-01 · Diseño congelado salvo fallo
 
-El sistema crecía más deprisa que el mazo (59 commits en una semana para 3 lotes). Las reglas cambian solo cuando algo falla en uso real o YAGO lo pide, y los cambios de proceso esperan a la retrospectiva. Vive en: este archivo (cabecera).
+El sistema crecía más deprisa que el mazo (59 commits en una semana para 3 lotes). Las reglas cambian solo cuando algo falla en uso real o YAGO lo pide, y los cambios de proceso esperan a la retrospectiva. Vive en: `docs/design.md` («Retrospectiva»).
+
+### 2026-10-01 · Fin de la fase de pruebas
+
+YAGO cierra la fase de pruebas: desde hoy el progreso de Anki se conserva siempre. Ya estaba comprobado que reimportar y reorganizar no lo tocan, y en Anki casi todo estaba como nuevo, así que no se perdía nada. `push --reset` se niega salvo `--force` (`TESTING_PHASE = False`), para que un reinicio no pueda pasar por descuido. Vive en: `docs/owner.md`, `docs/design.md` («Anki»).
+
+### 2026-10-01 · 30 nuevas al día
+
+Con 1.088 nuevas pendientes (unos 54 días a 20 al día), YAGO sube a 30 nuevas al día; los repasos siguen con un máximo de 300. A ritmo estable son unos 150 a 240 repasos al día, unos 40 minutos. Sigue valiendo el criterio de volumen: los próximos lotes, más ligeros. Vive en: `docs/owner.md`, `anki.py` (`NEW_PER_DAY`).

@@ -18,7 +18,7 @@ Escrito el 2026-10-01, al estrenar el estado vivo; resume los lotes 001 a 003.
 
 ## Tu método
 
-- Tres lotes en siete días (25 de septiembre, 29 de septiembre y 1 de octubre), de unas 340, 290 y 460 tarjetas: el mazo crece mucho más deprisa de lo que entra a 20 nuevas al día. ([criterio de volumen](/docs/decisions.md#2026-10-01--cuánto-entra-por-lote))
+- Tres lotes en siete días (25 de septiembre, 29 de septiembre y 1 de octubre), de unas 340, 290 y 460 tarjetas: el mazo crece mucho más deprisa de lo que se estudia. ([lote 002](/2-digests/summary-002-2026-09-29-clima-apellidos-y-caracteres.md#cambios-en-el-sistema), [lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#2026-10-01--segundo-apunte-juntado-a-este-lote), [criterio de volumen](/docs/decisions.md#2026-10-01--cuánto-entra-por-lote))
 - Los hanzi le absorben y el pinyin se queda atrás (lote 002: unas 80 líneas de clase frente a 400 de investigación de caracteres); el mazo lo compensa poniendo el pinyin por delante. ([lote 002](/2-digests/summary-002-2026-09-29-clima-apellidos-y-caracteres.md#seguimiento))
 - El lote 003 vino casi entero de explicaciones de un asistente: buenas preguntas, pero poco de su boca y de su día. Consejo vigente: grabar cada clase y dejarla en el inbox. ([lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#seguimiento))
 - Fechas en los apuntes: el lote 002 las trajo; el 001 y el 003, no (todo «sin-fecha»). ([lote 002](/2-digests/summary-002-2026-09-29-clima-apellidos-y-caracteres.md#seguimiento))
@@ -27,11 +27,10 @@ Escrito el 2026-10-01, al estrenar el estado vivo; resume los lotes 001 a 003.
 
 ## Avisos abiertos
 
-- Fase de pruebas abierta: el progreso puede reiniciarse a petición. Ya está comprobado que reimportar y reorganizar lo conservan. ([la prueba](/docs/decisions.md#2026-10-01--el-progreso-sobrevive-a-reimportar-y-reorganizar-comprobado))
-- 1.088 tarjetas nuevas pendientes: unos 54 días a 20 al día. YAGO prefiere seguir con 20 y subir a 30 si se acumulan, así que los próximos lotes entran más ligeros. ([criterio de volumen](/docs/decisions.md#2026-10-01--cuánto-entra-por-lote), [lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#2026-10-01--fechas-del-lote-001))
+- Nuevo desde este lote: la fase de pruebas está cerrada; todo lo estudiado cuenta y no se reinicia (quitar este aviso en el lote 004). ([decisión](/docs/decisions.md#2026-10-01--fin-de-la-fase-de-pruebas))
+- 1.088 tarjetas nuevas pendientes: unos 36 días a 30 al día (YAGO subió de 20 a 30 al ver que se acumulaban). Aun así, los próximos lotes, más ligeros. ([criterio de volumen](/docs/decisions.md#2026-10-01--cuánto-entra-por-lote), [lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#2026-10-01--fechas-del-lote-001))
 - Desván: 38 elementos esperando, el más antiguo del 27 de septiembre; 发票 y 欠 esperan a 买单 y a 借. ([lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#el-tiempo-y-el-desván))
 
 ## Decisiones pendientes
 
-- Cerrar la fase de pruebas. ([la prueba](/docs/decisions.md#2026-10-01--el-progreso-sobrevive-a-reimportar-y-reorganizar-comprobado))
-- Cómo quiere las tarjetas de comprensión (largo, pinyin, preguntas en chino). ([comprensión lectora](/docs/decisions.md#2026-10-01--comprensión-lectora))
+- Las tarjetas de comprensión le parecen bien a primera vista; falta verlas en Anki. ([comprensión lectora](/docs/decisions.md#2026-10-01--comprensión-lectora))

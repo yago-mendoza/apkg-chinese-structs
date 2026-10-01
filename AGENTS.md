@@ -9,7 +9,7 @@ Cada documento dice al principio qué va en él y qué no; respetarlo al editar.
 - Solo el agente edita `3-data/`. YAGO escribe en `1-inbox/` y saca resultados de `5-output/`.
 - Antes de añadir contenido: `anki.py lookup <término>` y `anki.py gaps`. Después: `anki.py check`. Revisar los avisos; no ignorarlos ni aceptarlos automáticamente (`accept_pinyin_mismatch` solo con motivo).
 - «Procesa el inbox»: seguir «Flujo de un lote» de `docs/design.md`. No cambiar el hanzi de respuestas o frases con audio salvo error (ver «Audio»).
-- La estructura no se congela: en cada lote, revisar temas, grupos y `use` y reorganizar si hace falta (`docs/design.md`, «Reorganización»), contándolo en el log del lote. Las reglas del sistema, en cambio, cambian solo si algo falla en uso real o YAGO lo pide (`docs/decisions.md`); los cambios de proceso, en la retrospectiva.
+- La estructura no se congela: en cada lote, revisar temas, grupos y `use` y reorganizar si hace falta (`docs/design.md`, «Reorganización»), contándolo en el log del lote. Las reglas del sistema, en cambio, no cambian sobre la marcha (`docs/design.md`, «Retrospectiva»).
 - Distinguir objetivo evaluado (`targets`), contexto (`context`) y ejemplo revelado (`reveal`).
 - El LLM redacta y revisa; la compilación consume contenido guardado sin llamar a un LLM. No regenerar ejercicios al compilar.
 - Preservar IDs. Los comentarios de YAGO se muestran bien redactados (`text`: español cuidado, mayúsculas y puntuación, sin abreviaturas de apunte) y lo que escribió se guarda tal cual en `original`; si ya estaba bien escrito, va sin cambios y sin `original` (ver «Comentarios» en `docs/design.md`). Guardar cada comentario en el ámbito que describe; separar mnemotecnia, profesora y explicación verificada.
@@ -18,7 +18,7 @@ Cada documento dice al principio qué va en él y qué no; respetarlo al editar.
 - Tarjetas estándar con `anki.py scaffold`, no a mano; cierre de lote con `anki.py close-batch`. Tras cambiar `anki.py`, ejecutar las pruebas (`python -m unittest discover -s tests`).
 - UTF-8 explícito en archivos y ejecución de Python sobre Windows.
 - Si existe `private/README.md` (solo local, en `.gitignore`), leerlo: fuentes que solo se consultan en local, con sus reglas. Nada de ellas se copia ni se nombra en lo versionado.
-- El repositorio es público (comprobado 2026-09-25): no guardar comentarios privados ni credenciales. Revisar cambios antes de subirlos; no hacer push sin que YAGO lo pida.
-- Licencia elegida por YAGO (2026-09-27): MIT para el código (`LICENSE`), CC BY 4.0 para el contenido (`LICENSE-CONTENT`), con cita obligatoria. Mantener procedencia y condiciones de recursos externos; no incorporar material de terceros incompatible con CC BY.
+- El repositorio es público: no guardar comentarios privados ni credenciales. Revisar cambios antes de subirlos; no hacer push sin que YAGO lo pida.
+- Licencia: MIT para el código (`LICENSE`), CC BY 4.0 para el contenido (`LICENSE-CONTENT`), con cita obligatoria. Mantener procedencia y condiciones de recursos externos; no incorporar material de terceros incompatible con CC BY.
 - La colección de Anki de YAGO tiene otros mazos descargados (HSK, Pimsleur, Spoonfed…): son práctica aparte, independientes de este proyecto. No modificarlos ni borrarlos y no contarlos en ninguna métrica. Hoy no son fuente; más adelante (hacia HSK 7) podrán servir para explorar vocabulario, solo cuando YAGO lo pida, y lo elegido entra como un lote más. Toda operación en Anki se limita al mazo `🐉 Chino práctico`.
 - Verificar en Anki antes de afirmar que se preserva el progreso.

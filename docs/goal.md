@@ -6,7 +6,7 @@ Este documento es un módulo de prompt: la única parte del sistema que depende 
 
 ## Quién aprende
 
-YAGO, ingeniero, hispanohablante. Empezó mandarín en septiembre de 2026 con clases particulares que siguen un curso de HSK 1. Estudia en ratos sueltos, casi siempre en el móvil, con auriculares y teclado chino: el audio está disponible en cualquier sesión y puede escribir pinyin con tildes o hanzi.
+YAGO, ingeniero, hispanohablante. Está empezando mandarín, con clases particulares que siguen un curso de HSK 1. Estudia en ratos sueltos, casi siempre en el móvil, con auriculares y teclado chino: el audio está disponible en cualquier sesión y puede escribir pinyin con tildes o hanzi.
 
 ## Para qué
 

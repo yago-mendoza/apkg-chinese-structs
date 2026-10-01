@@ -91,7 +91,7 @@ The deck is ordered by difficulty using the levels of the HSK 3.0 (the 2021 stan
 
 - **Every item has a level.** Words on the official list (`sources/hsk/`) take their official level, computed by `anki.py`. Anything else gets a level estimated by the agent, with the reason written down. A sentence takes the highest level of its words, so it never smuggles in vocabulary from a later level.
 - **Level first, theme second.** In Anki: `🐉 Chino práctico::HSK 1::02 Saludos y despedidas`. Moving an item to another level keeps its review history.
-- **One level at a time.** You study the subdeck of your current level. Anything from a higher level, even if it came from your own notes, is filed under its level and waits.
+- **One level at a time.** New cards come out level by level, so you can study the whole deck (or just your current level's subdeck). Anything from a higher level, even if it came from your own notes, is filed under its level and waits.
 - **Knowing where you stand.** Every review reports how much of each level's vocabulary the deck covers. When you reach a level (at least 80% of its vocabulary, plus the agent's judgement on the sentence patterns you already handle), the agent says so clearly. Anything that arrives later from a level you already passed is flagged as a gap from that level.
 - **Gaps against a curriculum.** The review compares the deck with your current level, both the official list and the lesson-by-lesson sequence of standard courses, and suggests what is missing.
 
@@ -122,7 +122,7 @@ The agent pushes the deck itself. To do it by hand:
 
 ## Studying
 
-- Study the subdeck of your current level. Themes are subdecks inside it, and level, theme, month and purpose are also tags for filtered sessions.
+- Study the whole deck: new cards come out level by level, lowest first. Levels and themes are subdecks, and level, theme, month and purpose are also tags for filtered sessions.
 - Typed answers accept pinyin with tone marks or digits (`ni3 hao3`) or hanzi from a Chinese keyboard; spaces, case and punctuation are ignored. For sentences you say aloud, typing is optional.
 - The back of each card shows pinyin, IPA, audio, pronunciation traps and, when there is one, the word's family, with the tested word marked ▸.
 - `push` sets the daily limits (`NEW_PER_DAY`, `REVIEWS_PER_DAY` in `anki.py`; this deck's values are in `docs/owner.md`). Reviews settle at roughly 5 to 8 times the new cards: 20 new cards a day means about 100 to 160 reviews, around 25 to 30 minutes.
@@ -141,13 +141,13 @@ The agent pushes the deck itself. To do it by hand:
 
 - `AGENTS.md`: rules for any agent; the first thing it reads.
 - `docs/goal.md`: the learner's goal: the first filter for everything that goes in.
-- `docs/design.md`: the full specification (coverage, card types, audio, decisions).
+- `docs/design.md`: the full specification (coverage, card types, audio, Anki).
 - `docs/owner.md`: my own setup and the values in force for this deck.
 - `docs/decisions.md`: why the system is the way it is, one dated entry per decision; the rule documents stay in the present tense.
 - `sources/`: external reference lists, each with its origin and license.
 - `tools/class_audio.py`: transcribes a class recording dropped in `1-inbox/` (local Whisper large-v3, chosen because it is the most accurate Whisper model for Chinese; the teacher's voice told apart from yours) into `private/`, as context for the batch. Separate environment: `tools/requirements-audio.txt`.
 
-**Commands** (mostly for the agent): `lookup <term>`, `hanzi <characters>` (pieces, sound and meaning of each character), `plan` (missing cards), `scaffold` (writes them in the standard format), `gaps` (how the deck is distributed), `stats` (what you fail in Anki, read-only), `retro` (the process review every 4 batches), `check`, `notebook`, `build`, `export` (the public dictionary), `close-batch <batch>` (archive, commit and tag), `audio`, `push`. `push --prune` removes cards whose exercise no longer exists (it lists them first and requires `--force` if there are many); `push --reset` returns the whole deck to new, with no progress. Tests: `.\.venv\Scripts\python -m unittest discover -s tests`, including a simulated AnkiConnect that checks nothing outside this deck is ever moved, deleted or reconfigured. GitHub Actions runs `check` and the tests on every push.
+**Commands** (mostly for the agent): `lookup <term>`, `hanzi <characters>` (pieces, sound and meaning of each character), `plan` (missing cards), `scaffold` (writes them in the standard format), `gaps` (how the deck is distributed), `stats` (what you fail in Anki, read-only), `retro` (the process review every 4 batches), `check`, `notebook`, `build`, `export` (the public dictionary), `close-batch <batch>` (archive, commit and tag), `audio`, `push`. `push --prune` removes cards whose exercise no longer exists (it lists them first and requires `--force` if there are many); `push --reset` returns the whole deck to new, with no progress; once the testing phase is over (`TESTING_PHASE`) it refuses without `--force`. Tests: `.\.venv\Scripts\python -m unittest discover -s tests`, including a simulated AnkiConnect that checks nothing outside this deck is ever moved, deleted or reconfigured. GitHub Actions runs `check` and the tests on every push.
 
 **External lists.** Your notes and your goal decide what goes in. The HSK 3.0 word list (`sources/hsk/`, from [drkameleon/complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary), MIT) orders items by level and shows gaps; it is never imported wholesale. Course books and character references that cannot be redistributed are consulted locally only: nothing in the repository depends on them or copies from them.
 
@@ -155,7 +155,7 @@ The agent pushes the deck itself. To do it by hand:
 
 - File and folder names in English, lowercase, hyphenated. Pipeline folders carry their step number: `1-inbox` (with `history/`) → `2-digests` → `3-data` → `4-notebook` → `5-output`. Every folder's documentation is a `README.md`. This README is in English; the deck and the working documents are in Spanish.
 - Batches are named `NNN-YYYY-MM-DD-topic` (processing order, processing date, topic in words), shared by `1-inbox/history/<batch>/`, `2-digests/summary-<batch>.md` and `review-<batch>.md`. Archived notes are prefixed with the date they were written (`2026-10-03_bus-notes.txt`; `mixto_` for mixed days, `sin-fecha_` when undated).
-- Dictionary and exercise IDs carry a type prefix and never change: `w.` word, `e.` expression, `c.` character, `p.` pronunciation, `g.` group, `s.` sentence, `x.` exercise.
+- Dictionary and exercise IDs carry a type prefix and never change: `w.` word, `e.` expression, `c.` character, `p.` pronunciation, `g.` group, `st.` sentence structure, `s.` sentence, `x.` exercise.
 
 **Audio is synthetic**, generated with Azure AI Speech (voice `zh-CN-YunyangNeural`, slowed down for learners).
 

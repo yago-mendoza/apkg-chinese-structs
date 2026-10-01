@@ -5,24 +5,24 @@ Configuración y decisiones propias de este mazo (Yago Mendoza). Nada secreto: e
 ## Quién estudia y cómo
 
 - Objetivo, nivel y forma de estudiar: `docs/goal.md` (ahí se usan para decidir el contenido).
-- Escribe con teclado chino en el móvil (pinyin con tildes o hanzi) y estudia el mazo padre mezclado. Sus otros mazos de Anki (HSK, Pimsleur, Spoonfed…) son práctica aparte: no se tocan ni se cuentan.
+- Escribe con teclado chino en el móvil (pinyin con tildes o hanzi) y estudia el mazo padre entero, mezclado: las nuevas ya salen nivel a nivel. Sus otros mazos de Anki: regla en `AGENTS.md`.
 
 ## Entorno
 
 - Proyecto en `C:\Users\yagom\dev\apkg-chinese-structs`, Python en `.venv`, Windows.
 - Grabaciones de clase (`tools/class_audio.py`): entorno aparte `.venv-audio` con Python 3.13 (`py -3.13 -m venv .venv-audio`, luego `pip install -r tools/requirements-audio.txt`). PyAV fijado en 18.1.0 porque Smart App Control de Windows bloquea la DLL de la 19.0.0. La primera vez descarga los modelos (Whisper large-v3 y small en la caché de Hugging Face, unos 3,5 GB; la huella de voz en `.venv-audio/models/`). Todo en CPU: 4 trozos en paralelo, unos 40 minutos para una clase de 73.
 - Anki desktop en este PC con AnkiConnect (`2055492159`) y sesión de AnkiWeb iniciada: `push` sincroniza y el móvil recibe los cambios al sincronizar.
-- Azure AI Speech: recurso `apkg-chinese-structs`, región North Europe (West Europe no admitía clientes nuevos), nivel **S0** desde el 2026-09-27. Clave y región como variables de entorno del usuario de Windows (`AZURE_SPEECH_KEY`, `AZURE_SPEECH_REGION`). Aviso de presupuesto recomendado: 1 € al mes en Cost Management → Budgets (Azure no permite un tope que corte el gasto en pago por uso). Solo se gasta al ejecutar `anki.py audio`: unos céntimos por lote.
+- Azure AI Speech: recurso `apkg-chinese-structs`, región North Europe (West Europe no admitía clientes nuevos), nivel **S0**. Clave y región como variables de entorno del usuario de Windows (`AZURE_SPEECH_KEY`, `AZURE_SPEECH_REGION`). Aviso de presupuesto recomendado: 1 € al mes en Cost Management → Budgets (Azure no permite un tope que corte el gasto en pago por uso). Solo se gasta al ejecutar `anki.py audio`: unos céntimos por lote.
 
 ## Decisiones
 
 - Voz `zh-CN-YunyangNeural` (elegida escuchando muestras: clara y estable para fijar tonos); voces HD descartadas por ahora.
 - Velocidad: -30 % en frases y -40 % en palabras sueltas, con 200 ms de silencio inicial.
-- Ritmo: 20 nuevas y 300 repasos al día (desde el 2026-09-27; antes 30, y 15 se quedaba corto). Lotes: uno por semana como costumbre, sin obligación. Se cambia en `anki.py`, no a mano en Anki, porque `push` lo vuelve a fijar.
+- Ritmo: 30 nuevas y 300 repasos al día (historia en `docs/decisions.md`). Lotes: uno por semana como costumbre, sin obligación. Se cambia en `anki.py`, no a mano en Anki, porque `push` lo vuelve a fijar.
 - No se corrige nada dentro de Anki: las correcciones se piden al agente.
-- **Fase de pruebas**: mientras el sistema no sea estable, se reinicia el progreso a petición (`push --reset`). Cuando lo sea, el progreso se conserva.
+- **Fase de pruebas: cerrada.** El progreso de Anki se conserva siempre; `push --reset` se niega (`TESTING_PHASE = False` en `anki.py`) y solo lo haría con `--force` si YAGO lo pide expresamente.
 - `1-inbox/history/` se versiona: los apuntes no son privados.
-- Licencia: MIT para el código y CC BY 4.0 para el contenido, con cita obligatoria y uso comercial permitido (2026-09-27).
+- Licencia: MIT para el código y CC BY 4.0 para el contenido, con cita obligatoria y uso comercial permitido.
 
 ## Si algo falla
 

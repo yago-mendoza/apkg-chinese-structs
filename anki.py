@@ -65,7 +65,8 @@ AUDIO_PREFIX = "acs_"
 MODEL_TYPED_NAME = "Chino práctico (tecleada)"
 MODEL_SELF_NAME = "Chino práctico (autoevaluación)"
 DECK_PRESET = "🐉 Chino práctico"          # preset propio: nunca tocar el de otros mazos
-NEW_PER_DAY, REVIEWS_PER_DAY = 20, 300
+NEW_PER_DAY, REVIEWS_PER_DAY = 30, 300
+TESTING_PHASE = False      # fase de pruebas cerrada (docs/owner.md): `push --reset` se niega salvo --force
 THEME_MAX, THEME_MIN = 60, 3               # entradas por tema: por encima, ¿dividir?; por debajo, ¿juntar?
 EXAMPLES_MAX = 2                           # frases de ejemplo al dar la vuelta a una tarjeta de palabra
 PRUNE_MAX = 10                             # más huérfanas que esto: `push --prune` se niega sin --force
@@ -3073,6 +3074,10 @@ def orphans(exercises, prune, force=False):
 def cmd_push(allow_missing_audio, sync, prune=False, reset=False, force=False):
     import subprocess
     import time
+    if reset and not TESTING_PHASE and not force:
+        print("La fase de pruebas está cerrada (docs/owner.md): el progreso ya no se reinicia. Si de verdad hay "
+              "que hacerlo, que lo pida YAGO y repetir con --force.")
+        return 1
     if cmd_build(allow_missing_audio):
         return 1
     if not anki_ready():
@@ -3304,7 +3309,7 @@ def main():
     u.add_argument("--no-sync", action="store_true")
     u.add_argument("--prune", action="store_true", help="borrar notas del mazo cuyo ejercicio ya no existe")
     u.add_argument("--reset", action="store_true", help="fase de pruebas: todo el mazo vuelve a nuevas, sin progreso")
-    u.add_argument("--force", action="store_true", help=f"con --prune, borrar aunque haya más de {PRUNE_MAX} huérfanas")
+    u.add_argument("--force", action="store_true", help=f"con --prune, borrar aunque haya más de {PRUNE_MAX} huérfanas; con --reset, reiniciar aunque la fase de pruebas esté cerrada")
     pl = sub.add_parser("plan")
     pl.add_argument("--doc", metavar="LOTE", help="escribe 1-inbox/review-<LOTE>.md")
     sub.add_parser("notebook")

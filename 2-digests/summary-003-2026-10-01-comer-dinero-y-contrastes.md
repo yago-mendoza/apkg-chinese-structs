@@ -194,3 +194,11 @@ Lo pediste tras revisar los documentos del sistema. El porqué de cada cosa, en 
 ### 2026-10-01 · Fechas del lote 001
 
 Confirmaste que las clases del lote 001 fueron el 21 (hojas 1 a 6) y el 23 de septiembre (hojas 7 a 15). Las 118 entradas y frases de ese lote tienen ya su fecha en `source.date` (antes, la de procesado, el 25; ocho frases no tenían ninguna). Ritmo: se queda en 20 nuevas al día; los próximos lotes, más ligeros.
+
+### 2026-10-01 · Fin de la fase de pruebas
+
+Respondiste en el chat: la fase de pruebas se cierra. Desde hoy el progreso en Anki se conserva siempre; `push --reset` se niega sin `--force`. «ni yao mao ma — wo you mei you» se descarta (no recuerdas qué frase era). Las tarjetas de comprensión te parecen bien; las verás en Anki.
+
+### 2026-10-01 · 30 nuevas al día
+
+Pediste subir de 20 a 30 nuevas al día (los repasos siguen con un máximo de 300): las 1.088 nuevas pendientes pasan de unos 54 días a unos 36.

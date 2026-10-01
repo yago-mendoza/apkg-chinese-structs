@@ -274,7 +274,7 @@ El mazo se ordena por dificultad con los niveles del HSK 3.0 (la versión de 202
 
 **En Anki**: el nivel es la primera división y el tema la segunda: `🐉 Chino práctico::HSK 1::02 Saludos y despedidas` (el 7, `HSK 7-9`). El nivel de una tarjeta es el de su objetivo más difícil (`exercise_level`). Las nuevas salen por nivel primero. Etiquetas `nivel::1` y, si es estimado, `nivel::estimado`. Cambiar el nivel de algo lo mueve de subdeck conservando el progreso, igual que al reorganizar temas.
 
-**Cómo se estudia**: nivel a nivel, el subdeck del nivel actual. Lo de clase que llega de un nivel superior entra en su nivel y espera; lo investigado por su cuenta que es de un nivel superior y está poco conectado espera en el desván.
+**Cómo se estudia**: nivel a nivel. Se puede estudiar el mazo entero, porque las nuevas salen por nivel, o solo el subdeck del nivel actual (cuál, en `docs/owner.md`). Lo de clase que llega de un nivel superior entra en su nivel y espera; lo investigado por su cuenta que es de un nivel superior y está poco conectado espera en el desván.
 
 **Nivel actual y cambio de nivel**: en cada lote se calcula la cobertura de cada nivel (palabras de la lista con `use` `hear` o `say` en el mazo, frente al total del nivel; `anki.py gaps`, `level_coverage`) y va al review. Un nivel se da por superado con al menos el 80 % de su vocabulario (`LEVEL_PASS`) y el juicio del agente sobre las estructuras de frase que ya se manejan (la lista mide vocabulario, no gramática). Al cruzarlo, el agente lo anuncia en el chat y en el review, con claridad. Lo que llegue después de un nivel ya superado se señala como hueco de ese nivel.
 
@@ -302,13 +302,13 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 
 ## Anki
 
-- Mazo `🐉 Chino práctico`. **Nivel primero y tema dentro** (`🐉 Chino práctico::HSK 1::04 Presentarse`; ver «Niveles»), con los temas numerados por orden de aprendizaje a partir de `themes.yaml`. Se estudia el subdeck del nivel actual. **Etiquetas** para lo que admite varios valores: `tema::`, `mes::`, `use::`, `skill::`, `type::` y `nivel::`. La estructura de temas se revisa en cada lote (ver «Reorganización»).
+- Mazo `🐉 Chino práctico`. **Nivel primero y tema dentro** (`🐉 Chino práctico::HSK 1::04 Presentarse`; ver «Niveles»), con los temas numerados por orden de aprendizaje a partir de `themes.yaml`. **Etiquetas** para lo que admite varios valores: `tema::`, `mes::`, `use::`, `skill::`, `type::` y `nivel::`. La estructura de temas se revisa en cada lote (ver «Reorganización»).
 - **`push`**: compila, abre Anki si hace falta, importa por AnkiConnect (complemento `2055492159`) y sincroniza con AnkiWeb. Anki no mueve tarjetas de deck al reimportar: `push` las recoloca con AnkiConnect conservando el progreso (también las de este mazo que hayan acabado fuera de él, en el mazo por defecto o donde sea, salvo en mazos filtrados; las reconoce por su tipo de nota), y borra los subdecks propios que queden vacíos y no correspondan a ningún tema (renombrar un tema funciona así solo). Detecta notas del mazo cuyo ejercicio ya no existe y propone borrarlas, mostrando cuáles.
 - **Orden de nuevas**: las tarjetas de una misma entrada no se introducen el mismo día (Anki solo separa hermanas de una misma nota y aquí cada tarjeta es una nota); los básicos primero.
-- **Límites**: nuevas y repasos al día como máximo (`NEW_PER_DAY`, `REVIEWS_PER_DAY` en `anki.py`; los valores de este mazo, en `docs/owner.md`), fijados por `push` en un preset propio. A ritmo estable los repasos diarios son del orden de 5 a 8 veces las nuevas (proporcional, no geométrico: a unos 10 s por tarjeta, 20 nuevas son unos 25 a 30 minutos al día); `use` mantiene el total asumible hacia C1. Un cambio a mano en Anki se pierde en el siguiente `push`.
+- **Límites**: nuevas y repasos al día como máximo (`NEW_PER_DAY`, `REVIEWS_PER_DAY` en `anki.py`; los valores de este mazo, en `docs/owner.md`), fijados por `push` en un preset propio. A ritmo estable los repasos diarios son del orden de 5 a 8 veces las nuevas (proporcional, no geométrico: a unos 10 s por tarjeta, 20 nuevas son unos 25 a 30 minutos al día); `use` mantiene el total asumible hasta el nivel objetivo (`docs/goal.md`). Un cambio a mano en Anki se pierde en el siguiente `push`.
 - **GUID** = `guid_for("apkg-chinese-structs", id del ejercicio)`; IDs de modelo fijos en `anki.py`. Reimportar actualiza sin duplicar y conserva el progreso (ver «Lotes disruptivos»).
 - **Nunca se corrige dentro de Anki**: cada `push` sobrescribe desde `3-data/`.
-- **`push --reset`** devuelve todo el mazo a nuevas con repasos y fallos a 0. Solo este mazo; el registro de repasos de Anki se conserva. Anki sigue contando las nuevas ya empezadas ese día, así que el reinicio se nota del todo al día siguiente. Cuándo se permite: `docs/owner.md`, «Fase de pruebas».
+- **`push --reset`** devuelve todo el mazo a nuevas con repasos y fallos a 0. Solo este mazo; el registro de repasos de Anki se conserva. Anki sigue contando las nuevas ya empezadas ese día, así que el reinicio se nota del todo al día siguiente. Con la fase de pruebas cerrada (`TESTING_PHASE`; ver `docs/owner.md`) se niega salvo `--force`.
 - Los otros mazos de la colección son independientes (regla en `AGENTS.md`): nada de `anki.py` los mueve, borra, reconfigura ni cuenta.
 
 ## Audio
@@ -340,7 +340,7 @@ El que aprende puede dejar en `1-inbox/` el audio de una clase (mp3, m4a, mp4…
 
 ## Garantías: qué asegura el código y qué el criterio
 
-Todo lo que se puede decidir con datos se decide con atributos y lo comprueba `check` (error: bloquea el lote; aviso: hay que resolverlo o justificarlo antes de cerrar). Lo que necesita criterio lo decide el agente, pero deja rastro escrito que se puede revisar. Una regla nueva se escribe primero aquí o en `docs/goal.md` y, si se puede comprobar, entra en `quality_rules` (`anki.py`) con su prueba en `tests/`.
+Todo lo que se puede decidir con datos se decide con atributos y lo comprueba `check` (error: bloquea el lote; aviso: hay que resolverlo o justificarlo antes de cerrar). Lo que necesita criterio lo decide el agente, pero deja rastro escrito que se puede revisar. Una regla nueva sigue el orden de arriba (entrada en `docs/decisions.md`, regla aquí o en `docs/goal.md`) y, si se puede comprobar, entra en `quality_rules` (`anki.py`) con su prueba en `tests/`.
 
 | Regla | Cómo se asegura |
 |---|---|
@@ -376,6 +376,7 @@ Todo lo que se puede decidir con datos se decide con atributos y lo comprueba `c
 | Fricciones apuntadas | `close-batch`: el log tiene «Fricciones del proceso»; prueba en `tests/` |
 | Caja negra solo local | código (`blackbox`): solo escribe si existe `private/`; prueba en `tests/` |
 | `stats` no toca nada | solo lectura y solo este mazo; prueba contra el AnkiConnect simulado |
+| El progreso no se reinicia por descuido | código: `push --reset` se niega sin `--force` con la fase de pruebas cerrada; prueba contra el AnkiConnect simulado |
 
 ## Pruebas
 
