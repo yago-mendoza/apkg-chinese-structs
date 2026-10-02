@@ -17,7 +17,7 @@
 ## Tu método
 
 - Estudia a diario, de 20 a 40 minutos y hasta hora y media algunos días; puede hablar en voz alta en cualquier sitio. ([rutina](/docs/decisions.md#2026-10-02--rutina-de-yago))
-- Los lotes 001 a 003, de unas 340, 290 y 460 tarjetas en una semana, hicieron crecer el mazo más deprisa de lo que se estudia; el 004 (76 tarjetas, solo material de clase) ya tiene el tamaño adecuado. ([criterio de volumen](/docs/decisions.md#2026-10-01--cuánto-entra-por-lote), [lote 004](/2-digests/summary-004-2026-10-02-ser-nombres-y-describir.md#seguimiento))
+- Los lotes 001 a 003, de unas 340, 290 y 460 tarjetas en una semana, hicieron crecer el mazo más deprisa de lo que se estudia; el 004 (76 tarjetas, solo material de clase) ya tiene el tamaño adecuado. ([la mejor configuración](/docs/decisions.md#2026-10-02--la-mejor-configuración-para-su-memoria), [lote 004](/2-digests/summary-004-2026-10-02-ser-nombres-y-describir.md#seguimiento))
 - Los hanzi le absorben y el pinyin se queda atrás; el mazo lo compensa poniendo el pinyin por delante. ([lote 002](/2-digests/summary-002-2026-09-29-clima-apellidos-y-caracteres.md#seguimiento))
 - Consejo vigente: procesar el inbox después de cada clase, con las diapositivas y los deberes del día, y grabar la clase. ([lote 004](/2-digests/summary-004-2026-10-02-ser-nombres-y-describir.md#seguimiento), [lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#seguimiento))
 - En Anki aún no hay datos de retención: casi todo lo de esta semana fue primer aprendizaje, y antes las nuevas salían al azar. ([cómo se mide](/docs/design.md#lo-que-se-queda-stats), [orden de nuevas](/docs/decisions.md#2026-10-02--las-nuevas-en-el-orden-calculado))

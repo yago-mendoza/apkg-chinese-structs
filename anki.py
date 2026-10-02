@@ -72,6 +72,15 @@ TESTING_PHASE = False      # fase de pruebas cerrada (docs/owner.md): `push --re
 LEARN_STEPS = [1.0, 10.0]  # minutos: una nueva vuelve en la misma sesión antes de pasar a días
 RELEARN_STEPS = [10.0]     # minutos: una tarjeta fallada vuelve en la misma sesión, no al día siguiente
 NEW_GATHER_LOWEST_POSITION, NEW_SORT_NONE = 1, 1   # enums de Anki (deck_config.proto): por posición, sin barajar
+# Programación (docs/decisions.md, 2026-10-02, «La mejor configuración»): lo aprendido hoy se repasa mañana, tras
+# dormir (graduar a 1 día; «Fácil», 4); un fallo vuelve mañana, no a los 3 días; primero los repasos y luego las
+# nuevas, para que un día corto no deje caer lo que ya se aprende; y entre los repasos, primero lo que más se está
+# olvidando. Con FSRS (lo activa YAGO en Anki), la retención deseada.
+GRADUATING_DAYS, EASY_DAYS = 1, 4
+LAPSE_MIN_DAYS = 1
+REVIEWS_BEFORE_NEW = 1                  # enum REVIEW_MIX_AFTER_REVIEWS: las nuevas, después de los repasos
+REVIEW_ORDER_AT_RISK_FIRST = 7          # enum REVIEW_CARD_ORDER_RETRIEVABILITY_ASCENDING
+DESIRED_RETENTION = 0.90
 THEME_MAX, THEME_MIN = 60, 3               # entradas por tema: por encima, ¿dividir?; por debajo, ¿juntar?
 EXAMPLES_MAX = 2                           # frases de ejemplo al dar la vuelta a una tarjeta de palabra
 PRUNE_MAX = 10                             # más huérfanas que esto: `push --prune` se niega sin --force
@@ -3331,10 +3340,17 @@ def new_card_order(entries, sentences, exercises):
     theme_idx = {t["id"]: i for i, t in enumerate(load_themes())}
     items = {it["id"]: (theme_idx.get(it.get("theme"), 99), n) for n, it in enumerate(entries + sentences)}
     eby, sby, levels = {e["id"]: e for e in entries}, {x["id"]: x for x in sentences}, hsk_levels()
+    # Todo puede entrar en el diccionario (docs/goal.md, «Qué sale primero»): dentro de cada nivel, primero lo que se
+    # va a decir, luego lo que se va a oír y al final lo que solo se reconoce.
+    def tier(ex):
+        it = eby.get((ex.get("targets") or [None])[0]) or sby.get((ex.get("targets") or [None])[0]) or {}
+        mods = use_modalities(it)
+        return 0 if "say" in mods else 1 if "hear" in mods else 2
+
     def key(ex):
         th, n = items.get((ex.get("targets") or [None])[0], (99, 0))
         stage = STAGE.get(ex.get("type"), 1)
-        return (exercise_level(ex, eby, sby, levels), th + 2 * stage, th, n, stage, ex["id"])
+        return (exercise_level(ex, eby, sby, levels), tier(ex), th + 2 * stage, th, n, stage, ex["id"])
     return {ex["id"]: pos for pos, ex in enumerate(sorted(exercises, key=key))}
 
 
@@ -3359,10 +3375,13 @@ def ensure_limits():
     anki_request("setDeckConfigId", decks=decks, configId=ours)
     conf = anki_request("getDeckConfig", deck=DECK_NAME)
     want = {("new", "perDay"): NEW_PER_DAY, ("rev", "perDay"): REVIEWS_PER_DAY,
-            ("new", "delays"): LEARN_STEPS, ("lapse", "delays"): RELEARN_STEPS}
+            ("new", "delays"): LEARN_STEPS, ("lapse", "delays"): RELEARN_STEPS,
+            ("new", "ints"): [GRADUATING_DAYS, EASY_DAYS, 0], ("lapse", "minInt"): LAPSE_MIN_DAYS}
     # Las nuevas salen en el orden que fija reorder_new (nivel, tema, hermanas separadas): recoger por la posición
     # más baja (gather 1) y no reordenar después (sort 1, NO_SORT). Al azar (3 y 4), Anki mezclaría niveles e ignoraría ese orden.
-    top = {"newGatherPriority": NEW_GATHER_LOWEST_POSITION, "newSortOrder": NEW_SORT_NONE}
+    top = {"newGatherPriority": NEW_GATHER_LOWEST_POSITION, "newSortOrder": NEW_SORT_NONE,
+           "newMix": REVIEWS_BEFORE_NEW, "reviewOrder": REVIEW_ORDER_AT_RISK_FIRST,
+           "desiredRetention": DESIRED_RETENTION}
     if any(conf.get(a, {}).get(b) != v for (a, b), v in want.items()) or any(conf.get(k) != v for k, v in top.items()):
         for (a, b), v in want.items():
             conf.setdefault(a, {})[b] = v
@@ -3370,7 +3389,8 @@ def ensure_limits():
         anki_request("saveDeckConfig", config=conf)
     steps = lambda s: " ".join(f"{m:g} min" for m in s)
     return (f"{NEW_PER_DAY} nuevas y {REVIEWS_PER_DAY} repasos al día; pasos {steps(LEARN_STEPS)}, al fallar "
-            f"{steps(RELEARN_STEPS)} (preset «{DECK_PRESET}»)")
+            f"{steps(RELEARN_STEPS)}; gradúa a {GRADUATING_DAYS} d (fácil {EASY_DAYS} d); repasos primero "
+            f"(preset «{DECK_PRESET}»)")
 
 
 def reorder_new(order):
