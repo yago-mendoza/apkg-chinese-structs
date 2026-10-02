@@ -711,6 +711,7 @@ LEVEL_PASS = 0.8     # un nivel se da por superado con el 80 % de su vocabulario
 
 
 THEORY = DATA / "theory.yaml"
+HANZI_NOTES = DATA / "hanzi.yaml"         # el porqué de cada carácter del mazo y qué significa cada pieza (cuaderno web)
 ATTIC = DATA / "attic.yaml"
 
 
@@ -1896,6 +1897,19 @@ def validate(entries, sentences, exercises, require_audio=True):
             errors.append(f"{it['id']} ({label(it)}): falta tarjeta de {CARD_LABELS[m]} (ver `plan`)")
     for e in osmosis_gaps(entries, sentences):
         warnings.append(f"{e['id']} ({e['hanzi']}): use {use_label(e)} sin ninguna frase que la contenga (ósmosis)")
+    # El porqué de cada carácter (3-data/hanzi.yaml): todo hanzi del mazo lo tiene, y no sobra ninguno.
+    notes, _ = load_hanzi_notes()
+    if notes:
+        chars = deck_chars(entries)
+        for ch in sorted(set(chars) - set(notes)):
+            warnings.append(f"hanzi.yaml: {ch} está en el mazo y no tiene su porqué (glosa y origen)")
+        for ch in sorted(set(notes) - set(chars)):
+            warnings.append(f"hanzi.yaml: {ch} ya no está en el mazo; quitarlo o llevarlo al desván")
+        for ch, n in notes.items():
+            if not ((n.get("origin") or {}).get("es") and (n.get("gloss") or {}).get("es")):
+                errors.append(f"hanzi.yaml: {ch} sin glosa u origen en español")
+            if "—" in json.dumps(n, ensure_ascii=False):
+                errors.append(f"hanzi.yaml: {ch} lleva una raya (—); usar coma, dos puntos o paréntesis")
     if require_audio:
         manifest = load_manifest()
         for t in sorted(required_audio(entries, sentences, exercises)):
@@ -2007,7 +2021,22 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .note h4 { margin: 0 0 6px; font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
 .note--group .note-body > div { padding: 5px 8px; margin: 0 -8px; border-radius: 8px; }
 .note--group .note-body > div + div { border-top: 1px solid var(--line); }
-.note--group .is-target { font-weight: 700; background: rgba(179,48,29,.13); }
+.note--group .is-target { background: rgba(179,48,29,.13); }
+.vs-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+.vs-hz { font-size: 24px; font-weight: 400; min-width: 1.6em; }
+.vs-py { font-size: 15px; color: #b3301d; }
+.nightMode .vs-py, .night_mode .vs-py { color: #e8845a; }
+.vs-gl { font-size: 15px; }
+.vs-cue { flex-basis: 100%; font-size: 13px; font-style: italic; color: var(--muted); }
+.is-target .vs-hz { font-weight: 700; }
+.note--chars .ch-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; padding: 4px 0; }
+.note--chars .ch-row + .ch-row { border-top: 1px solid var(--line); }
+.ch-hz { font-size: 26px; font-weight: 400; min-width: 1.3em; }
+.ch-gl { font-size: 15px; }
+.ch-kind { font-size: 12px; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.ch-formula { font-size: 14px; color: #1f5f8a; }
+.nightMode .ch-formula, .night_mode .ch-formula { color: #8cc0e6; }
+.ch-why { flex-basis: 100%; font-size: 14px; color: var(--muted); }
 .note--example { text-align: center; }
 .note--mnemonic { border-style: dashed; }
 .note--connection { border-left: 4px solid #2a9d8f; background: rgba(42,157,143,.09); }
@@ -2282,10 +2311,13 @@ def card_fields(ex, eby, sby, manifest, media_files):
         def status_tag(e):
             st = char_status(e)
             return f" <i>({st})</i>" if st in ("ligada", "componente") else ""
+        # Cada miembro en su fila, por columnas: hanzi, pinyin, significado y la pista que los separa; el que se
+        # pregunta, resaltado (CSS .vs-row).
         rows = "".join(
-            f"<div{' class=\"is-target\"' if m['ref'] in targets else ''}>{esc(eby[m['ref']].get('hanzi'))}"
-            f"{status_tag(eby[m['ref']])} {esc(eby[m['ref']].get('pinyin'))} — "
-            f"{esc(eby[m['ref']].get('meaning', {}).get(lang))} · {esc(m.get('cue'))}</div>"
+            f"<div class=\"vs-row{' is-target' if m['ref'] in targets else ''}\"><b class=\"vs-hz\">{esc(eby[m['ref']].get('hanzi'))}</b>"
+            f"<span class=\"vs-py\">{esc(eby[m['ref']].get('pinyin'))}{status_tag(eby[m['ref']])}</span>"
+            f"<span class=\"vs-gl\">{esc(eby[m['ref']].get('meaning', {}).get(lang))}</span>"
+            + (f"<span class=\"vs-cue\">{esc(m.get('cue'))}</span>" if m.get('cue') else "") + "</div>"
             for m in g["members"])
         notes.append(f"<h4>{esc(g.get('title'))}</h4>{esc(g.get('explanation'))}{rows}")
     for tid in ex.get("targets", []):
@@ -2323,6 +2355,11 @@ def card_fields(ex, eby, sby, manifest, media_files):
         notes.append(f"<h4>{'Ejemplo' if len(examples) == 1 else 'Ejemplos'}</h4>" + "".join(
             f"<div class=\"example\">{render_sentence(sby[sid])}<div>{esc(sby[sid]['translation'].get(lang))}</div>"
             f"{sound(sentence_text(sby[sid]), manifest, media_files)}</div>" for sid in examples))
+    # Sus caracteres: de qué está hecho cada hanzi de la palabra que se responde (tipo, qué pieza da el significado y
+    # cuál el sonido), de 3-data/hanzi.yaml y sources/hanzi. Solo en tarjetas de palabras, nunca en las de frases.
+    chars_html = character_lines(first.get("hanzi") if not sent and first.get("kind") in ("word", "character", "expression") else "", lang)
+    if chars_html:
+        notes.append(f"<h4>{'Por qué se escribe así' if len(first.get('hanzi') or '') == 1 else 'Sus caracteres'}</h4>{chars_html}")
     # Conexión con otros hanzi del mazo: un recuadro como mucho, el del primer objetivo (docs/goal.md).
     con = connection_for(first, list(eby.values())) if not sent else None
     if con and con.get("text"):
@@ -2355,9 +2392,52 @@ def card_fields(ex, eby, sby, manifest, media_files):
 
 
 NOTE_KIND = (("ejemplo", "example"), ("mnemotecnia", "mnemonic"), ("en clase", "teacher"), ("cómo suena", "sound"),
-             ("conexión", "connection"),
+             ("conexión", "connection"), ("sus caracteres", "chars"), ("por qué se escribe así", "chars"),
              ("pronunciación", "sound"), ("qué es", "status"), ("no se usa solo", "status"),
              ("casi no se usa solo", "status"))
+
+
+CHAR_TYPE_ES = {"pictographic": "pictograma", "ideographic": "ideograma", "pictophonetic": "fonético-semántico"}
+
+
+def character_lines(hanzi, lang="es"):
+    """El reverso de una palabra explica sus caracteres, uno por línea: el hanzi, su glosa, su tipo y su fórmula
+    (王 significado + 求 qiú sonido). Para un solo carácter, además, su porqué en una frase. Vacío si no hay datos."""
+    if not hanzi:
+        return ""
+    notes, parts = load_hanzi_notes()
+    db = hanzi_db()
+    seen, lines = set(), []
+    han = [c for c in hanzi if "一" <= c <= "鿿"]
+    for ch in han:
+        if ch in seen or ch not in notes:
+            continue
+        seen.add(ch)
+        n = notes[ch]
+        et = dict((db.get(ch) or {}).get("etymology") or {})
+        if n.get("override"):
+            for k in ("type", "semantic"):
+                if k in n:
+                    et[k] = n[k]
+            if "phonetic" in n:
+                et["phonetic"], et["phonetic_pinyin"] = (n["phonetic"] or {}).get("char"), (n["phonetic"] or {}).get("pinyin")
+        kind = CHAR_TYPE_ES.get(et.get("type"), "origen incierto")
+        formula = []
+        if et.get("semantic"):
+            gl = (parts.get(et["semantic"]) or {}).get("es", "")
+            formula.append(f"significado: {esc(et['semantic'])} {esc(gl.split(';')[-1].split('(')[0].strip())}".strip())
+        if et.get("phonetic"):
+            py = et.get("phonetic_pinyin") or ((db.get(et["phonetic"]) or {}).get("pinyin") or [""])[0]
+            formula.append(f"sonido: {esc(et['phonetic'])} {esc(py)}".strip())
+        why = ""
+        if len(han) == 1:
+            why = re.sub(r"^[^:]{3,40}:\s*", "", (n.get("origin") or {}).get(lang) or "")
+            why = why[:1].upper() + why[1:]
+        lines.append(f'<div class="ch-row"><b class="ch-hz">{esc(ch)}</b><span class="ch-gl">{esc((n.get("gloss") or {}).get(lang, ""))}</span>'
+                     f'<span class="ch-kind">{kind}</span>'
+                     + (f'<span class="ch-formula">{" · ".join(formula)}</span>' if formula else "")
+                     + (f'<span class="ch-why">{esc(why)}</span>' if why else "") + "</div>")
+    return "".join(lines)
 
 
 def note_section(html_note):
@@ -2594,6 +2674,95 @@ def cmd_hanzi(text):
         if pages:
             print(f"   libro local: págs. {', '.join(map(str, pages))}")
     return 0
+
+
+def load_hanzi_notes():
+    """3-data/hanzi.yaml: `characters` (glosa, origen redactado, forma tradicional y confianza de cada carácter del mazo)
+    y `parts` (qué significa cada pieza). Lo que se calcula (tipo, piezas, cuál da el sonido) sale de sources/hanzi."""
+    if not HANZI_NOTES.exists():
+        return {}, {}
+    d = load_yaml(HANZI_NOTES) or {}
+    return d.get("characters") or {}, d.get("parts") or {}
+
+
+IDS_OPERATORS = set(chr(c) for c in range(0x2FF0, 0x3000))
+
+
+def pieces_of(decomposition):
+    """Las piezas de una descripción ⿰亻门, en orden, sin operadores ni huecos desconocidos."""
+    return [c for c in (decomposition or "") if c not in IDS_OPERATORS and c != "？"]
+
+
+def sound_match(reading, phonetic_reading):
+    """Cómo suena la pieza fonética frente al carácter, con tono: same (igual), tone (cambia el tono), initial (cambia
+    la consonante del principio), final (cambia la terminación) o far (ya no se parece)."""
+    if not reading or not phonetic_reading:
+        return None
+    a, b = reading, phonetic_reading
+    plain = lambda x: strip_tones(x).lower()
+    if a == b:
+        return "same"
+    if plain(a) == plain(b):
+        return "tone"
+    initial = lambda x: (re.match(r"^(zh|ch|sh|[bpmfdtnlgkhjqxrzcsyw])", plain(x)) or [""])[0]
+    if plain(a)[len(initial(a)):] == plain(b)[len(initial(b)):]:
+        return "initial"
+    if initial(a) and initial(a) == initial(b):
+        return "final"
+    return "far"
+
+
+def export_characters(entries, levels):
+    """Cada carácter que aparece en el mazo, para el cuaderno web: qué es, de qué piezas se forma, cuál da el sonido y
+    cuál el significado (calculado de sources/hanzi), su porqué redactado (3-data/hanzi.yaml), su entrada propia si la
+    tiene y las entradas donde aparece. No genera tarjetas."""
+    from pypinyin import Style, lazy_pinyin
+    notes, parts = load_hanzi_notes()
+    db, out = hanzi_db(), {}
+    for ch, uses in deck_chars(entries).items():
+        d = db.get(ch) or {}
+        et = dict(d.get("etymology") or {})
+        note = notes.get(ch) or {}
+        # hanzi.yaml puede corregir la fuente (tipo, pieza del sonido o del significado) cuando choca con lo comprobado;
+        # lo hace con `override` (el porqué), y la ficha muestra lo corregido.
+        if note.get("override"):
+            for k in ("type", "semantic"):
+                if k in note:
+                    et[k] = note[k]
+            if "phonetic" in note:
+                et["phonetic"] = (note["phonetic"] or {}).get("char")
+                et["phonetic_pinyin"] = (note["phonetic"] or {}).get("pinyin")
+        home = char_home(ch, entries)
+        first = uses[0][0]
+        han = [c for c in first.get("hanzi") or "" if "一" <= c <= "鿿"]
+        reading = (lazy_pinyin("".join(han), style=Style.TONE) or [None])[han.index(ch)] if ch in han else None
+        if home and len(home.get("hanzi") or "") == 1 and home.get("pinyin"):
+            reading = home["pinyin"]
+        phon = et.get("phonetic")
+        phon_reading = et.get("phonetic_pinyin") or (((db.get(phon) or {}).get("pinyin") or [None])[0] if phon else None)
+        out[ch] = {
+            "pinyin": reading,
+            "gloss": note.get("gloss") or (home or {}).get("meaning"),
+            "type": et.get("type"),
+            "decomposition": d.get("decomposition"),
+            # Las piezas de la forma de hoy; la del sonido o la del significado que no se ven tal cual en ella (el 門 de 关,
+            # el 丂 de 可) se añaden marcadas como ocultas.
+            "parts": [{"char": p, "role": "sound" if p == phon else "meaning" if p == et.get("semantic") else "form",
+                       "gloss": parts.get(p)} for p in pieces_of(d.get("decomposition"))]
+                     + [{"char": x, "role": role, "gloss": parts.get(x), "hidden": True}
+                        for x, role in ((et.get("semantic"), "meaning"), (phon, "sound"))
+                        if x and x not in pieces_of(d.get("decomposition"))],
+            "phonetic": {"char": phon, "pinyin": phon_reading, "match": sound_match(reading, phon_reading)} if phon else None,
+            "origin": note.get("origin"),
+            "traditional": note.get("traditional"),
+            "confidence": note.get("confidence"),
+            "override": note.get("override"),
+            "entry": home["id"] if home else None,
+            "status": char_status(home) if home else None,
+            "level": levels.get(ch),
+            "in": [e["id"] for e, _ in uses if e is not home],
+        }
+    return out
 
 
 def hsk_levels():
@@ -2852,6 +3021,8 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
         "coverage": [{"level": lv, "total": total, "trained": have, "inDeck": in_deck}
                      for (lv, have, total), in_deck in zip(level_coverage(entries), deck_coverage(entries))],
         "theory": load_theory(),
+        # Cada hanzi del mazo con su porqué (cuaderno web: la ficha flotante y la sección de caracteres).
+        "characters": export_characters(entries, levels),
         "posLabels": POS_LABEL,
         "slots": {k: v[0] for k, v in SLOTS.items()},
         # El mismo CSS que lleva el modelo de Anki: la web lo aplica a las tarjetas y no copia estilos a mano.

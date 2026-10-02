@@ -180,6 +180,19 @@ class Repository(unittest.TestCase):
         for t in anki.load_themes():
             self.assertTrue({"id", "title"} <= set(t) <= {"id", "title", "keep"}, t)
 
+    def test_characters_are_computed_and_explained(self):
+        entries, _, _ = anki.load()
+        chars = anki.export_characters(entries, anki.hsk_levels())
+        self.assertEqual(set(chars), set(anki.deck_chars(entries)))         # cada hanzi del mazo, y nada más
+        qiu = chars["球"]                                                    # 球 = 王 (significado) + 求 qiú (sonido)
+        self.assertEqual(qiu["type"], "pictophonetic")
+        self.assertEqual(qiu["phonetic"], {"char": "求", "pinyin": "qiú", "match": "same"})
+        self.assertIn({"char": "王", "role": "meaning"}, [{k: x[k] for k in ("char", "role")} for x in qiu["parts"]])
+        for ch, c in chars.items():
+            self.assertTrue((c["origin"] or {}).get("es"), ch)
+        self.assertEqual(anki.sound_match("mén", "mén"), "same")
+        self.assertEqual(anki.sound_match("men", "mén"), "tone")
+
     def test_export_is_public_only(self):
         entries, sentences, exercises = anki.load()
         data = anki.export_dictionary(entries, sentences, exercises)

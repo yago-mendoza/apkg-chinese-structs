@@ -34,15 +34,15 @@ terms:
     group: characters
     title: {es: 'Fonético-semántico', en: 'Phono-semantic'}
     text:
-      es: 'Una pieza da el significado y otra el sonido: 妈 = 女 «mujer» + 马 mǎ; 请 = 讠 «hablar» + 青 qīng; 们 = 亻 «persona» + 门 mén. Son la gran mayoría: más del 80 % en el Shuowen, y más aún hoy. La pista de sonido es aproximada: a menudo cambia el tono (青 qīng → 请 qǐng) y a veces la consonante.'
-      en: 'One piece gives the meaning and another the sound: 妈 = 女 «woman» + 马 mǎ; 请 = 讠 «speech» + 青 qīng; 们 = 亻 «person» + 门 mén. The vast majority: over 80 % in the Shuowen, more today. The sound hint is approximate: the tone often changes (青 qīng → 请 qǐng), sometimes the consonant too.'
+      es: 'Una pieza da el significado y otra el sonido: 妈 = 女 «mujer» + 马 mǎ; 请 = 讠 «hablar» + 青 qīng; 们 = 亻 «persona» + 门 mén. Son la gran mayoría: más del 80 % en el Shuowen, y más aún hoy. La pista de sonido es aproximada: a menudo cambia el tono (de 青 qīng a 请 qǐng) y a veces la consonante.'
+      en: 'One piece gives the meaning and another the sound: 妈 = 女 «woman» + 马 mǎ; 请 = 讠 «speech» + 青 qīng; 们 = 亻 «person» + 门 mén. The vast majority: over 80 % in the Shuowen, more today. The sound hint is approximate: the tone often changes (from 青 qīng to 请 qǐng), sometimes the consonant too.'
     examples: [妈, 请, 们]
   - id: t.phonetic-series
     group: characters
     title: {es: Serie fonética, en: Phonetic series}
     text:
-      es: 'Los caracteres que comparten la misma pieza de sonido: 门 mén → 们 men, 问 wèn, 闻 wén; 青 qīng → 请 qǐng, 清 qīng, 晴 qíng, 情 qíng. Aprenderlos juntos une el hanzi con su sonido en las dos direcciones.'
-      en: 'Characters that share the same sound piece: 门 mén → 们 men, 问 wèn, 闻 wén; 青 qīng → 请 qǐng, 清 qīng, 晴 qíng, 情 qíng. Learning them together ties the hanzi to its sound both ways.'
+      es: 'Los caracteres que comparten la misma pieza de sonido: 门 mén da el sonido a 们 men, 问 wèn y 闻 wén; 青 qīng, a 请 qǐng, 清 qīng, 晴 qíng y 情 qíng. Aprenderlos juntos une el hanzi con su sonido en las dos direcciones.'
+      en: 'Characters that share the same sound piece: 门 mén lends its sound to 们 men, 问 wèn and 闻 wén; 青 qīng, to 请 qǐng, 清 qīng, 晴 qíng and 情 qíng. Learning them together ties the hanzi to its sound both ways.'
   - id: t.loan
     group: characters
     title: {es: Préstamo fonético, en: Phonetic loan}
@@ -54,8 +54,8 @@ terms:
     group: characters
     title: {es: Radical y forma lateral, en: Radical and side form}
     text:
-      es: 'El radical es la pieza por la que se ordena un carácter en el diccionario, casi siempre la de significado. Muchos cambian de forma al ir a un lado: 人 → 亻, 言 → 讠, 水 → 氵, 手 → 扌, 心 → 忄, 衣 → 衤, 示 → 礻.'
-      en: 'The radical is the piece a dictionary files a character under, usually the meaning piece. Many change shape on the side: 人 → 亻, 言 → 讠, 水 → 氵, 手 → 扌, 心 → 忄, 衣 → 衤, 示 → 礻.'
+      es: 'El radical es la pieza por la que se ordena un carácter en el diccionario, casi siempre la de significado. Muchos cambian de forma al ir a un lado: 人 pasa a 亻; 言, a 讠; 水, a 氵; 手, a 扌; 心, a 忄; 衣, a 衤; 示, a 礻.'
+      en: 'The radical is the piece a dictionary files a character under, usually the meaning piece. Many change shape on the side: 人 becomes 亻; 言, 讠; 水, 氵; 手, 扌; 心, 忄; 衣, 衤; 示, 礻.'
   - id: t.mnemonic
     group: characters
     title: {es: Mnemotecnia frente a origen, en: Mnemonic versus origin}
