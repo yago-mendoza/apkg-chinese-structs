@@ -202,6 +202,19 @@ class Repository(unittest.TestCase):
             self.assertNotIn("[sound:", html)
             for path in re.findall(r'data-audio="([^"]+)"', html):
                 self.assertTrue((anki.ROOT / path).exists(), path)
+        # Lo que la web ya no deriva: tipo de entrada, lista del HSK, conexiones y qué entrena y enseña cada tarjeta.
+        by = {e["id"]: e for e in data["entries"]}
+        ids = set(by) | {s["id"] for s in data["sentences"]}
+        types = {"word", "charword", "bound", "component", "expression", "structure", "pronunciation"}
+        self.assertTrue(all(e["entryType"] in types for e in data["entries"]))
+        self.assertEqual((by["w.laoshi"]["entryType"], by["w.wo"]["entryType"]), ("word", "charword"))
+        self.assertEqual(by["st.hen-adj"]["entryType"], "structure")
+        self.assertFalse(by["st.hen-adj"]["levelEstimated"])
+        self.assertIsNone(by["st.hen-adj"]["onHskList"])
+        self.assertTrue(by["w.laoshi"]["onHskList"])
+        self.assertEqual(by["w.ben"]["connection"]["with"], ["本"])
+        for c in data["cards"]:
+            self.assertTrue(c["targets"] and set(c["targets"] + c["examples"]) <= ids, c["id"])
 
     def test_part_of_speech(self):
         w = lambda h, **k: {"id": "w.t", "kind": "word", "hanzi": h, **k}

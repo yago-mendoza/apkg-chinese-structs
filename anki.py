@@ -2692,6 +2692,19 @@ def deck_history(exercises, card_level, cache=None):
     return sorted(days.values(), key=lambda d: d["date"]), new_cache
 
 
+def entry_type(e):
+    """Tipo de una entrada para quien la presenta: structure, pronunciation, expression, component, bound (carácter
+    que no se usa solo), charword (un solo hanzi que es palabra) o word (palabra de varios caracteres)."""
+    kind = e.get("kind")
+    if kind in ("structure", "pronunciation", "expression"):
+        return kind
+    if kind == "component":
+        return "component"
+    if char_status(e) == "ligada" or standalone(e) in ("no", "rare"):
+        return "bound"
+    return "charword" if len(e.get("hanzi") or "") == 1 else "word"
+
+
 def export_dictionary(entries, sentences, exercises, history_cache=None):
     manifest = load_manifest()
 
@@ -2714,9 +2727,16 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
                                "explanation": e.get("explanation"), "theme": e.get("theme"),
                                "members": [{"ref": m["ref"], "cue": m.get("cue")} for m in e.get("members", [])]})
             continue
-        row = {"id": e["id"], "kind": e.get("kind"), "theme": e.get("theme"), "use": use_label(e),
-               "level": level_of(e["id"], eby, sby, levels), "levelEstimated": level_estimated(e, levels),
+        computed = e.get("kind") in ("structure", "pronunciation")   # nivel calculado de sus piezas o por regla
+        row = {"id": e["id"], "kind": e.get("kind"), "entryType": entry_type(e), "theme": e.get("theme"),
+               "use": use_label(e), "level": level_of(e["id"], eby, sby, levels),
+               "levelEstimated": False if computed else level_estimated(e, levels),
+               "onHskList": None if computed else e.get("hanzi") in levels,
                "status": char_status(e), "pos": pos_of(e), "notes": public_notes(e)}
+        if e.get("connection"):
+            con = e["connection"]
+            row["connection"] = {"kind": con.get("kind"), "label": CONNECTION_KINDS.get(con.get("kind")),
+                                 "with": con.get("with", []), "text": con.get("text")}
         if e.get("as_word"):
             row["asWord"] = {"es": e["as_word"].get("es"), "pinyin": e["as_word"].get("pinyin") or e.get("pinyin")}
         if e.get("kind") == "structure":
@@ -2760,6 +2780,9 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
         exp = {k: html.unescape(m.group(1)) for k in ("py", "hz")
                if (m := re.search(rf'<span id="acs-exp-{k}" style="display:none">(.*?)</span>', f["back"]))}
         cards.append({"id": x["id"], "type": x["type"], "theme": x.get("theme"), "level": card_level(x),
+                      "targets": x.get("targets", []), "context": x.get("context", []),
+                      # Frases que enseña el reverso, tal como las elige card_fields (las fijadas y las automáticas).
+                      "examples": [] if x["type"] in ("pattern", "comprehension") else examples_for(x, sby, eby),
                       "typed": bool(f["typed"]), "typable": "acs-typable" in f["front"],
                       "expected": {"pinyin": exp.get("py", ""), "hanzi": exp.get("hz", "")} if exp else None,
                       "task": f["task"],
