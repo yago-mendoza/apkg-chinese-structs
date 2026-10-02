@@ -200,6 +200,12 @@ class AnkiSafety(unittest.TestCase):
         self.assertEqual((fake.configs[ours]["newGatherPriority"], fake.configs[ours]["newSortOrder"]),
                          (anki.NEW_GATHER_LOWEST_POSITION, anki.NEW_SORT_NONE))       # el orden calculado, no al azar
         self.assertNotIn("newGatherPriority", fake.configs[1])
+        conf = fake.configs[ours]
+        self.assertEqual(conf["new"]["ints"][:2], [anki.GRADUATING_DAYS, anki.EASY_DAYS])  # mañana, tras dormir
+        self.assertEqual(conf["lapse"]["minInt"], anki.LAPSE_MIN_DAYS)                     # un fallo vuelve mañana
+        self.assertEqual((conf["newMix"], conf["reviewOrder"]),
+                         (anki.REVIEWS_BEFORE_NEW, anki.REVIEW_ORDER_AT_RISK_FIRST))         # repasos primero, en riesgo antes
+        self.assertNotIn("reviewOrder", fake.configs[1])
         self.assertEqual(fake.deck_conf["HSK 1"], 1)
         self.assertEqual(fake.configs[1]["new"]["perDay"], 20)            # el preset compartido, intacto
 

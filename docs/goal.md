@@ -30,9 +30,9 @@ Cada elemento de los apuntes se juzga contra el «para qué» de arriba:
 - **Queda fuera**: literario, arcaico, en desuso, variantes regionales que no son estándar y rarezas sin uso real. Se dice en el log y en el review, con el motivo, por si no está de acuerdo.
 - Lo que viene de sus apuntes se respeta aunque no esté en ninguna lista, siempre que pase el filtro: si lo apuntó, suele ser porque lo necesita.
 
-## Cuánto entra
+## Qué entra y qué sale primero
 
-Lo que entra en un lote tiene que caber en lo que puede estudiar antes del siguiente: a su ritmo de nuevas al día (`docs/owner.md`), las nuevas pendientes no deberían pasar de unas dos semanas de estudio. Si un lote trae más, primero lo de clase y lo básico de su nivel; lo demás entra con un `use` más bajo (`hear` en lugar de `say`) o espera, y el review lo dice. Un mazo con meses de nuevas pendientes retrasa justo lo que se acaba de ver en clase.
+No se limita lo que entra: YAGO avanza y aprende cosas laterales, y todo lo que pasa el filtro entra en el diccionario, aunque la cola de nuevas de Anki crezca. Una tarjeta que aún no ha visto no le cuesta nada; lo que cuesta tiempo son los repasos, y Anki absorbe al ritmo que permite su tiempo (unas 12 a 15 nuevas al día de media con 20 a 40 minutos). Lo que importa es el orden: dentro de cada nivel salen primero las tarjetas de lo que va a decir (`say`), luego lo que va a oír (`hear`) y al final lo que solo reconoce. Por eso el `use` decide también la prioridad: lo lateral que no va a decir entra como `hear` o `read`, con menos tarjetas, y lo de clase, para decir.
 
 ## El pinyin por delante
 
