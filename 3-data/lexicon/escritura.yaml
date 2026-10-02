@@ -48,6 +48,7 @@ entries:
     hanzi: 女
     pinyin: nǚ
     meaning: {es: mujer (como componente), en: woman (component)}
+    real_word: {hanzi: 女人, pinyin: nǚrén, es: 'Suelto, 女 casi solo va delante de otra palabra y significa «femenino» (女儿 «hija»). «Mujer», al hablar, es 女人.'}
     as_word: {es: 'mujer, femenino (女的, 女人)'}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
@@ -57,7 +58,8 @@ entries:
     hanzi: 口
     pinyin: kǒu
     meaning: {es: boca (como componente), en: mouth (component)}
-    as_word: {es: 'boca; clasificador de personas en una familia (三口人)'}
+    real_word: {hanzi: 嘴, pinyin: zuǐ, es: 'Suelto, 口 no es la boca al hablar: es clasificador de personas en una familia (三口人) y «entrada» en 门口 o 入口. La boca es 嘴, o 嘴巴 zuǐba [HSK 4].'}
+    as_word: {es: 'clasificador de personas en una familia (三口人); «entrada» en 门口 y 入口'}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Como componente, aparece en caracteres relacionados con la boca o con hablar, como 叫 o 吗.', original: boca habla}
@@ -67,7 +69,8 @@ entries:
     hanzi: 月
     pinyin: yuè
     meaning: {es: forma de 月 «luna»; en partes del cuerpo viene de 肉 «carne», en: flesh radical}
-    as_word: {es: luna; mes}
+    real_word: {hanzi: 月亮, pinyin: yuèliang, es: 'Suelto, 月 es «mes» (一月, 这个月). La luna, al hablar, es 月亮.'}
+    as_word: {es: 'mes (一月, 这个月)'}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Como componente, 月 suele ser 肉 «carne» y no «luna»: aparece en partes del cuerpo, como 胖 o 脸.', original: moon + meat / “radical” → 月 = muscle}
@@ -77,6 +80,7 @@ entries:
     hanzi: 目
     pinyin: mù
     meaning: {es: ojo (como componente), en: eye (component)}
+    real_word: {hanzi: 眼睛, pinyin: yǎnjing, es: '目 es la palabra clásica para «ojo» y hoy solo vive dentro de palabras (看 lleva un ojo debajo de una mano). Al hablar se dice 眼睛: 眼 «ojo» y 睛 «pupila».'}
     level: 1
     level_reason: 'aparece en 看 [HSK 1]'
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
@@ -111,6 +115,7 @@ entries:
     hanzi: 亻
     pinyin: rén
     meaning: {es: persona (forma de 人 a la izquierda), en: person (side form of 人)}
+    real_word: {hanzi: 人, pinyin: rén, es: '亻 es 人 «persona» escrito estrecho para caber a la izquierda (你, 们, 他). La palabra es 人.'}
     level: 1
     level_reason: 'aparece en 你 y 他 [HSK 1]'
     accept_pinyin_mismatch: forma lateral de 人
@@ -122,6 +127,7 @@ entries:
     hanzi: 扌
     pinyin: shǒu
     meaning: {es: mano (forma de 手 a la izquierda), en: hand (side form of 手)}
+    real_word: {hanzi: 手, pinyin: shǒu, es: '扌 es 手 «mano» encogido a la izquierda, en acciones que se hacen con la mano (打, 找). La palabra es 手, como en 手机.'}
     level: 1
     level_reason: 'aparece en 打 [HSK 1]'
     accept_pinyin_mismatch: 'forma lateral de 手, se lee como 手'
@@ -134,6 +140,7 @@ entries:
     hanzi: 木
     pinyin: mù
     meaning: {es: 'árbol, madera (a la izquierda)', en: 'tree, wood (on the left)'}
+    real_word: {hanzi: 树, pinyin: shù, es: 'Suelto, 木 apenas se usa al hablar. «Árbol» es 树, y «madera», 木头 mùtou [HSK 3].'}
     level: 1
     level_reason: 'aparece en 机 de 手机 [HSK 1]'
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
@@ -155,6 +162,7 @@ entries:
     hanzi: 衤
     pinyin: yī
     meaning: {es: ropa (forma de 衣 a la izquierda), en: clothing (side form of 衣)}
+    real_word: {hanzi: 衣服, pinyin: yīfu, es: '衤 es 衣 «ropa» a la izquierda; tiene un trazo más que 礻. La ropa, al hablar, es 衣服.'}
     level: 2
     level_reason: 'aparece en 裤子 kùzi «pantalón» [HSK 2]'
     accept_pinyin_mismatch: forma lateral de 衣
@@ -167,6 +175,7 @@ entries:
     hanzi: 礻
     pinyin: shì
     meaning: {es: altar (forma de 示 a la izquierda), en: altar (side form of 示)}
+    real_word: {es: '礻 es 示 «altar» a la izquierda, en caracteres de culto y de suerte. A veces solo da el sonido, como en 视 shì de 电视. No corresponde a ninguna palabra del día a día.'}
     level: 1
     level_reason: 'aparece en 视 de 电视 [HSK 1]'
     accept_pinyin_mismatch: forma lateral de 示
@@ -189,6 +198,7 @@ entries:
     hanzi: 贝
     pinyin: bèi
     meaning: {es: concha (el dinero antiguo), en: shell (ancient money)}
+    real_word: {hanzi: 钱, pinyin: qián, es: 'Las conchas fueron dinero, por eso 贝 sale en caracteres de comprar y de valor (贵 de 您贵姓 «caro, honorable»). El dinero, hoy, es 钱.'}
     level: 1
     level_reason: 'aparece en 贵 guì «caro» [HSK 1]'
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
@@ -210,6 +220,7 @@ entries:
     hanzi: 户
     pinyin: hù
     meaning: {es: puerta de una hoja; hogar, en: single door; household}
+    real_word: {hanzi: 门, pinyin: mén, es: 'Suelto, 户 apenas se usa: la puerta, al hablar, es 门. 户 sale como clasificador de hogares (三户人家).'}
     as_word: {es: 'hogar, casa (clasificador de hogares: 三户人家)'}
     level: 4
     level_reason: 'aparece en 窗户 chuānghu «ventana» [HSK 4]'
@@ -233,6 +244,7 @@ entries:
     hanzi: 讠
     pinyin: yán
     meaning: {es: 'palabra, hablar (forma de 言 a la izquierda)', en: speech (side form of 言)}
+    real_word: {hanzi: 说, pinyin: shuō, es: '讠 es 言 «palabra» a la izquierda, en todo lo que tiene que ver con hablar (说, 请, 认识). «Hablar, decir» es 说, y «lo que se dice», 话 huà [HSK 1].'}
     level: 1
     level_reason: 'aparece en 认识, 请 y 谢谢 [HSK 1]'
     accept_pinyin_mismatch: forma lateral de 言
@@ -246,6 +258,7 @@ entries:
     hanzi: 疒
     pinyin: nè
     meaning: {es: 'enfermedad (como componente)', en: 'sickness radical'}
+    real_word: {hanzi: 病, pinyin: bìng, es: '疒 marca enfermedad y dolor (疼). «Enfermedad» es 病, y «ponerse enfermo», 生病 shēngbìng [HSK 1].'}
     level: 3
     level_reason: 'componente; se reconoce cuando llegan 病 bìng [HSK 2] y 疼 téng [HSK 2]'
     source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27', rescued: 003-2026-10-01-comer-dinero-y-contrastes}

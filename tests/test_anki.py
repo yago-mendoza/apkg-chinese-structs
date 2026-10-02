@@ -189,7 +189,11 @@ class Repository(unittest.TestCase):
         self.assertEqual(qiu["phonetic"], {"char": "求", "pinyin": "qiú", "match": "same"})
         self.assertIn({"char": "王", "role": "meaning"}, [{k: x[k] for k in ("char", "role")} for x in qiu["parts"]])
         for ch, c in chars.items():
-            self.assertTrue((c["origin"] or {}).get("es"), ch)
+            # Todos tienen su porqué; el discutido no se publica, pero entonces tiene glosa y algo para recordarlo.
+            if c["originDisputed"]:
+                self.assertTrue((c["gloss"] or {}).get("es"), ch)
+            else:
+                self.assertTrue((c["origin"] or {}).get("es"), ch)
         self.assertEqual(anki.sound_match("mén", "mén"), "same")
         self.assertEqual(anki.sound_match("men", "mén"), "tone")
 
@@ -457,6 +461,54 @@ class Repository(unittest.TestCase):
                 actions, _ = anki.close_batch_plan("999-2026-01-01-prueba")
             dest = [dst for _, src, dst in actions if src.name == "clase.m4a"]
             self.assertEqual(dest, [audio / "clase" / "clase.m4a"])
+
+    def test_disputed_origins_are_not_told(self):
+        entries, sentences, _ = anki.load()
+        notes, _ = anki.load_hanzi_notes()
+        self.assertTrue(anki.origin_disputed({"confidence": "medium"}))
+        self.assertFalse(anki.origin_disputed({"confidence": "medium", "override": "comprobado"}))
+        html = anki.character_lines("再见", "es", entries)
+        self.assertNotIn("discutido", html)                       # el origen de 再 es discutido: no se cuenta
+        self.assertIn("Para recordarlo", html)                    # su imagen para recordarlo, sí
+        self.assertIn("ver", html)                                # y lo mínimo de cada carácter: 见 «ver»
+        chars = anki.export_characters(entries, anki.hsk_levels())
+        disputed = [c for c, n in notes.items() if anki.origin_disputed(n) and c in chars]
+        self.assertTrue(disputed)
+        self.assertTrue(all(chars[c]["origin"] is None and chars[c]["originDisputed"] for c in disputed))
+
+    def test_components_say_the_real_word(self):
+        entries, sentences, exercises = anki.load()
+        eby, sby = {e["id"]: e for e in entries}, {s["id"]: s for s in sentences}
+        comps = [e for e in entries if e.get("kind") == "component"]
+        self.assertTrue(comps and all(e.get("real_word") for e in comps))    # todos dicen la palabra de verdad
+        self.assertEqual(eby["c.mu.eye"]["real_word"]["hanzi"], "眼睛")
+        self.assertNotIn("boca", eby["c.kou.mouth"]["as_word"]["es"])        # 口 suelto no es «boca»: eso es 嘴
+        x = next(x for x in exercises if "c.mu.eye" in x.get("targets", []))
+        notes = anki.card_fields(x, eby, sby, {}, set())["notes"]
+        self.assertIn("Para decirlo", notes)
+        self.assertIn("眼睛", notes)
+        errors, warnings = [], []
+        bad = dict(eby["c.mu.eye"], real_word={"hanzi": "眼睛"})               # sin pinyin ni explicación
+        errors, warnings = anki.validate([bad if e["id"] == "c.mu.eye" else e for e in entries], sentences, exercises,
+                                         require_audio=False)
+        self.assertTrue(any("real_word" in e for e in errors))
+
+    def test_same_sound_and_other_senses(self):
+        entries, sentences, _ = anki.load()
+        eby, sby = {e["id"]: e for e in entries}, {s["id"]: s for s in sentences}
+        same, senses = anki.sound_and_senses(eby["w.shi"], entries, eby, sby)
+        self.assertTrue(any(line.startswith("十 shí") for line in same))    # shì / shí: misma sílaba, otro tono
+        zai = next(e for e in entries if e.get("hanzi") == "在" and e.get("use") != "context")
+        _, senses = anki.sound_and_senses(zai, entries, eby, sby)
+        self.assertTrue(any(line.startswith("在 ") for line in senses))     # 在 «estar en» y 在 de progresivo
+
+    def test_theory_says_one_character_one_sound_with_exceptions(self):
+        terms = {t["id"]: t for t in anki.load_theory()}
+        self.assertIn("t.polyphones", terms)
+        self.assertIn("多音字", terms["t.polyphones"]["text"]["es"])
+        self.assertIn("十 shí", terms["t.polyphones"]["text"]["es"])         # 十 no es shì: va aparte, con su tono
+        self.assertTrue(anki.matches_but_neutral("眼睛", "yǎnjing"))          # el neutro del habla vale
+        self.assertFalse(anki.matches_but_neutral("眼睛", "yánjing"))         # un tono mal en otra sílaba, no
 
     def test_tone_pairs(self):
         w = lambda i, hz, py, use="say": {"id": i, "kind": "word", "use": use, "hanzi": hz, "pinyin": py}

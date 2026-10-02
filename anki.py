@@ -265,6 +265,18 @@ def pypinyin_readings(hanzi):
     return {"".join(c) for c in combos}
 
 
+def matches_but_neutral(hanzi, reading):
+    """True si el pinyin coincide con pypinyin sílaba a sílaba salvo en las que se escriben neutras (眼睛 yǎnjing):
+    el neutro del habla es legítimo, pero un error en otra sílaba no se deja pasar."""
+    from pypinyin import Style, pinyin
+    mine = syllable_tones(hanzi, reading)
+    chars = [c for c in hanzi if "一" <= c <= "鿿"]
+    if not mine or len(mine) != len(chars):
+        return False
+    options = pinyin("".join(chars), style=Style.TONE3, heteronym=True, neutral_tone_with_five=True)
+    return all(t == 5 or f"{syl}{t}" in opts for (syl, t), opts in zip(mine, options))
+
+
 def pinyin_warning(hanzi, reading):
     if not hanzi or not reading:
         return None
@@ -1655,6 +1667,20 @@ def quality_rules(entries, sentences, exercises, eby, sby, errors, warnings):
         if e.get("kind") == "component" and not e.get("as_word") and (
                 levels.get(e.get("hanzi")) or e.get("hanzi") in {x.get("hanzi") for x in entries if x.get("kind") == "word"}):
             errors.append(f"{e['id']}: {e.get('hanzi')} también es palabra suelta: añade as_word {{es: …}} para no decir que no lo es")
+        # Un componente no es una palabra: dice cuál es la palabra de verdad para decir eso (目 no es «ojo»: 眼睛).
+        rw = e.get("real_word")
+        if e.get("kind") == "component" and not rw:
+            warnings.append(f"{e['id']}: componente sin real_word: ¿cuál es la palabra de verdad para decir «"
+                            f"{(e.get('meaning') or {}).get('es', '')}»?")
+        if rw:
+            if not (rw.get("es") or "").strip():
+                errors.append(f"{e['id']}: real_word sin explicación (es)")
+            elif comment_style({"kind": "linguistic", "text": rw["es"]}):
+                warnings.append(f"{e['id']}: real_word: " + comment_style({"kind": "linguistic", "text": rw["es"]}))
+            if rw.get("hanzi") and not rw.get("pinyin"):
+                errors.append(f"{e['id']}: real_word {rw['hanzi']} sin pinyin")
+            elif rw.get("hanzi") and pinyin_warning(rw["hanzi"], rw["pinyin"]) and not matches_but_neutral(rw["hanzi"], rw["pinyin"]):
+                warnings.append(f"{e['id']}: real_word: {pinyin_warning(rw['hanzi'], rw['pinyin'])}")
         # Notas: las palabras de otros niveles que no están en el mazo llevan su marca.
         for c in e.get("comments", []):
             miss = unmarked_levels(c.get("text"), lv, known_hanzi, levels)
@@ -2040,6 +2066,7 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .nightMode .ch-formula, .night_mode .ch-formula { color: #8cc0e6; }
 .ch-why { flex-basis: 100%; font-size: 14px; color: var(--muted); }
 .ch-memory { flex-basis: 100%; font-size: 14px; font-style: italic; color: var(--muted); }
+.ch-also { flex-basis: 100%; font-size: 13px; color: var(--muted); }
 .note--example { text-align: center; }
 .note--mnemonic { border-style: dashed; }
 .note--connection { border-left: 4px solid #2a9d8f; background: rgba(42,157,143,.09); }
@@ -2334,6 +2361,16 @@ def card_fields(ex, eby, sby, manifest, media_files):
             notes.append(f"<h4>{label}</h4>Ligada: aparece en {esc(words)}.")
         elif st == "palabra" and t.get("kind") == "character":
             notes.append(f"<h4>Qué es</h4>{STATUS_TEXT[st]}")
+        # Un componente no es una palabra: aquí, cuál es la palabra de verdad para decir eso.
+        if t.get("real_word"):
+            notes.append(f"<h4>Para decirlo</h4>{real_word_html(t['real_word'])}")
+        # Un hanzi solo: qué otros caracteres del mazo suenan así, y sus otros sentidos.
+        if len(t.get("hanzi") or "") == 1 and t.get("kind") in ("word", "character"):
+            same, senses = sound_and_senses(t, list(eby.values()), eby, sby)
+            if same:
+                notes.append("<h4>Mismo sonido</h4>" + "".join(f"<div>{esc(line)}</div>" for line in same))
+            if senses:
+                notes.append("<h4>Otros sentidos</h4>" + "".join(f"<div>{esc(line)}</div>" for line in senses))
     for rid in ex.get("refs", []):
         p = eby.get(rid, {})
         if p.get("kind") == "pronunciation":
@@ -2360,7 +2397,9 @@ def card_fields(ex, eby, sby, manifest, media_files):
             f"{sound(sentence_text(sby[sid]), manifest, media_files)}</div>" for sid in examples))
     # Sus caracteres: de qué está hecho cada hanzi de la palabra que se responde (tipo, qué pieza da el significado y
     # cuál el sonido), de 3-data/hanzi.yaml y sources/hanzi. Solo en tarjetas de palabras, nunca en las de frases.
-    chars_html = character_lines(first.get("hanzi") if not sent and first.get("kind") in ("word", "character", "expression") else "", lang)
+    card_lv = max([lv for lv in (level_of(t, eby, sby, hsk_levels()) for t in ex.get("targets", [])) if lv] or [0]) or None
+    chars_html = character_lines(first.get("hanzi") if not sent and first.get("kind") in ("word", "character", "expression") else "",
+                                 lang, list(eby.values()), card_lv)
     if chars_html:
         notes.append(f"<h4>{'Por qué se escribe así' if len(first.get('hanzi') or '') == 1 else 'Sus caracteres'}</h4>{chars_html}")
     # Conexión con otros hanzi del mazo: un recuadro como mucho, el del primer objetivo (docs/goal.md).
@@ -2403,9 +2442,72 @@ NOTE_KIND = (("ejemplo", "example"), ("mnemotecnia", "mnemonic"), ("en clase", "
 CHAR_TYPE_ES = {"pictographic": "pictograma", "ideographic": "ideograma", "pictophonetic": "fonético-semántico"}
 
 
-def character_lines(hanzi, lang="es"):
+def real_word_html(rw):
+    """La palabra de verdad de un componente o de un sentido que no se dice con ese hanzi: «目 no es "ojo" al hablar:
+    se dice 眼睛». Con su nivel del HSK si está en la lista."""
+    lv = hsk_levels().get(rw.get("hanzi")) if rw.get("hanzi") else None
+    head = (f'<div class="rw"><b>{esc(rw["hanzi"])}</b> {esc(rw.get("pinyin", ""))}'
+            + (f" [HSK {lv}]" if lv else "") + "</div>") if rw.get("hanzi") else ""
+    return head + f"<div>{esc((rw.get('es') or ''))}</div>"
+
+
+def sound_and_senses(t, entries, eby, sby):
+    """Para un hanzi solo: (mismo sonido, otros sentidos). Mismo sonido: los demás caracteres de una sílaba del mazo
+    que se leen igual, primero con el mismo tono y luego con otro. Otros sentidos: las demás entradas del mismo hanzi.
+    Nada de un nivel superior al de la tarjeta."""
+    levels = hsk_levels()
+    mine = level_of(t["id"], eby, sby, levels)
+    if not mine:                               # sin nivel no se puede asegurar que nada sea de uno superior
+        return [], []
+    py = compact(t.get("pinyin") or "")
+    plain = strip_tones(py)
+    same_tone, other_tone, senses, seen = [], [], [], set()
+    for e in entries:
+        hz = e.get("hanzi") or ""
+        if (len(hz) != 1 or e.get("kind") not in ("word", "character") or e.get("use") == "drop"
+                or (level_of(e["id"], eby, sby, levels) or 99) > mine or e["id"] == t["id"]):
+            continue
+        epy = compact(e.get("pinyin") or "")
+        meaning = (e.get("meaning") or {}).get("es", "")
+        if hz == t["hanzi"]:
+            senses.append(f"{hz} {e.get('pinyin', '')}: {meaning}")
+        elif not py or not epy:                # sin pinyin no hay sonido que comparar
+            continue
+        elif hz not in seen and epy == py:
+            same_tone.append(f"{hz} {e.get('pinyin', '')}: {meaning}")
+            seen.add(hz)
+        elif hz not in seen and strip_tones(epy) == plain:
+            other_tone.append(f"{hz} {e.get('pinyin', '')}: {meaning}")
+            seen.add(hz)
+    return (same_tone + other_tone)[:6], senses[:4]
+
+
+def origin_disputed(note):
+    """Un origen discutido (confidence: medium, sin corrección comprobada) no se cuenta: ni su historia ni su tipo.
+    Queda la glosa y, si la hay, la imagen para recordarlo, rotulada como tal (YAGO: «si es discutido, no lo digas»)."""
+    return note.get("confidence") == "medium" and not note.get("override")
+
+
+def also_in(ch, own, entries, max_level=None):
+    """Otras palabras del mazo que llevan el carácter, para ver dónde más sale (como mucho 3, nunca de un nivel
+    superior al de la tarjeta)."""
+    if not entries or not max_level:          # sin nivel de la tarjeta no hay filtro seguro: mejor nada
+        return []
+    eby, levels = {e["id"]: e for e in entries}, hsk_levels()
+    out = []
+    for e in entries:
+        hz = e.get("hanzi") or ""
+        if (e.get("kind") in ("word", "expression") and ch in hz and hz != own and len(hz) > 1
+                and e.get("use") != "drop" and hz not in out
+                and (level_of(e["id"], eby, {}, levels) or 99) <= max_level):
+            out.append(hz)
+    return out[:3]
+
+
+def character_lines(hanzi, lang="es", entries=None, max_level=None):
     """El reverso de una palabra explica sus caracteres, uno por línea: el hanzi, su glosa, su tipo y su fórmula
-    (王 significado + 求 qiú sonido). Para un solo carácter, además, su porqué en una frase. Vacío si no hay datos."""
+    (王 significado + 求 qiú sonido), y debajo una frase: su imagen para recordarlo o, si no la tiene, su porqué. Con
+    `entries`, también dónde más sale en el mazo. Si el origen es discutido, no se cuenta. Vacío si no hay datos."""
     if not hanzi:
         return ""
     notes, parts = load_hanzi_notes()
@@ -2417,6 +2519,7 @@ def character_lines(hanzi, lang="es"):
             continue
         seen.add(ch)
         n = notes[ch]
+        disputed = origin_disputed(n)
         et = dict((db.get(ch) or {}).get("etymology") or {})
         if n.get("override"):
             for k in ("type", "semantic"):
@@ -2424,25 +2527,28 @@ def character_lines(hanzi, lang="es"):
                     et[k] = n[k]
             if "phonetic" in n:
                 et["phonetic"], et["phonetic_pinyin"] = (n["phonetic"] or {}).get("char"), (n["phonetic"] or {}).get("pinyin")
-        kind = CHAR_TYPE_ES.get(et.get("type"), "origen incierto")
+        kind = "" if disputed else CHAR_TYPE_ES.get(et.get("type"), "")
         formula = []
-        if et.get("semantic"):
+        if et.get("semantic") and not disputed:
             gl = (parts.get(et["semantic"]) or {}).get("es", "")
             formula.append(f"significado: {esc(et['semantic'])} {esc(gl.split(';')[-1].split('(')[0].strip())}".strip())
-        if et.get("phonetic"):
+        if et.get("phonetic") and not disputed:
             py = et.get("phonetic_pinyin") or ((db.get(et["phonetic"]) or {}).get("pinyin") or [""])[0]
             formula.append(f"sonido: {esc(et['phonetic'])} {esc(py)}".strip())
-        why, memory = "", ""
-        if len(han) == 1 and (n.get("memory") or {}).get(lang):
-            memory = n["memory"][lang]
-        if len(han) == 1:
+        # Una frase por carácter: la imagen para recordarlo si la hay; si no, su porqué (solo si no es discutido).
+        memory = (n.get("memory") or {}).get(lang) or ""
+        why = ""
+        if not memory and not disputed:
             why = re.sub(r"^[^:]{3,40}:\s*", "", (n.get("origin") or {}).get(lang) or "")
             why = why[:1].upper() + why[1:]
+        more = also_in(ch, hanzi, entries, max_level)
         lines.append(f'<div class="ch-row"><b class="ch-hz">{esc(ch)}</b><span class="ch-gl">{esc((n.get("gloss") or {}).get(lang, ""))}</span>'
-                     f'<span class="ch-kind">{kind}</span>'
+                     + (f'<span class="ch-kind">{kind}</span>' if kind else "")
                      + (f'<span class="ch-formula">{" · ".join(formula)}</span>' if formula else "")
                      + (f'<span class="ch-why">{esc(why)}</span>' if why else "")
-                     + (f'<span class="ch-memory">Para recordarlo (no es su origen): {esc(memory)}</span>' if memory else "") + "</div>")
+                     + (f'<span class="ch-memory">Para recordarlo (no es su origen): {esc(memory)}</span>' if memory else "")
+                     + (f'<span class="ch-also">También en {"、".join(esc(w) for w in more)}</span>' if more else "")
+                     + "</div>")
     return "".join(lines)
 
 
@@ -2682,13 +2788,20 @@ def cmd_hanzi(text):
     return 0
 
 
+_HANZI_NOTES_CACHE = {}
+
+
 def load_hanzi_notes():
     """3-data/hanzi.yaml: `characters` (glosa, origen redactado, forma tradicional y confianza de cada carácter del mazo)
     y `parts` (qué significa cada pieza). Lo que se calcula (tipo, piezas, cuál da el sonido) sale de sources/hanzi."""
     if not HANZI_NOTES.exists():
         return {}, {}
-    d = load_yaml(HANZI_NOTES) or {}
-    return d.get("characters") or {}, d.get("parts") or {}
+    # Se lee una vez por versión del archivo: el reverso de cada tarjeta lo consulta, y releerlo era lo más lento.
+    stamp = (HANZI_NOTES, HANZI_NOTES.stat().st_mtime_ns)
+    if _HANZI_NOTES_CACHE.get("stamp") != stamp:
+        d = load_yaml(HANZI_NOTES) or {}
+        _HANZI_NOTES_CACHE.update(stamp=stamp, data=(d.get("characters") or {}, d.get("parts") or {}))
+    return _HANZI_NOTES_CACHE["data"]
 
 
 IDS_OPERATORS = set(chr(c) for c in range(0x2FF0, 0x3000))
@@ -2759,7 +2872,9 @@ def export_characters(entries, levels):
                         for x, role in ((et.get("semantic"), "meaning"), (phon, "sound"))
                         if x and x not in pieces_of(d.get("decomposition"))],
             "phonetic": {"char": phon, "pinyin": phon_reading, "match": sound_match(reading, phon_reading)} if phon else None,
-            "origin": note.get("origin"),
+            # Un origen discutido no se publica (origin_disputed): queda la glosa y la imagen para recordarlo.
+            "origin": None if origin_disputed(note) else note.get("origin"),
+            "originDisputed": origin_disputed(note),
             "traditional": note.get("traditional"),
             # Una imagen para recordarlo desde su forma de hoy: se rotula como tal, nunca como su origen.
             "memory": note.get("memory"),
@@ -2960,6 +3075,10 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
                "levelEstimated": False if computed else level_estimated(e, levels),
                "onHskList": None if computed else e.get("hanzi") in levels,
                "status": char_status(e), "pos": pos_of(e), "notes": public_notes(e)}
+        if e.get("real_word"):
+            rw = e["real_word"]
+            row["realWord"] = {"hanzi": rw.get("hanzi"), "pinyin": rw.get("pinyin"), "es": rw.get("es"),
+                               "level": levels.get(rw.get("hanzi")) if rw.get("hanzi") else None}
         if e.get("connection"):
             con = e["connection"]
             row["connection"] = {"kind": con.get("kind"), "label": CONNECTION_KINDS.get(con.get("kind")),

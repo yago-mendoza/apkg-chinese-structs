@@ -7,8 +7,8 @@ terms:
     group: characters
     title: {es: 'Palabra, ligada o componente', en: 'Word, bound or component'}
     text:
-      es: 'Cada carácter del mazo lleva su estatus. Palabra: se usa solo (门, 来, 爱). Ligada: solo aparece dentro de palabras (们 en 我们, 师 en 老师). Componente: solo es una pieza de otros caracteres (亻, 讠, 扌). Algunos son las dos cosas: 口 es componente en 叫 y palabra suelta, «boca».'
-      en: 'Every character in the deck carries its status. Word: used on its own (门, 来, 爱). Bound: only inside words (们 in 我们, 师 in 老师). Component: only a piece of other characters (亻, 讠, 扌). Some are both: 口 is a component in 叫 and a word of its own, «mouth».'
+      es: 'Cada carácter del mazo lleva su estatus. Palabra: se usa solo (门, 来, 爱). Ligada: solo aparece dentro de palabras (们 en 我们, 师 en 老师). Componente: solo es una pieza de otros caracteres (亻, 讠, 扌). Algunos son las dos cosas: 门 es componente en 们 (le da el sonido) y, suelto, la palabra «puerta». Y ojo con el sentido: suelto, 口 no es la boca al hablar (eso es 嘴), sino un clasificador (三口人).'
+      en: 'Every character in the deck carries its status. Word: used on its own (门, 来, 爱). Bound: only inside words (们 in 我们, 师 in 老师). Component: only a piece of other characters (亻, 讠, 扌). Some are both: 门 is a component in 们 (it gives the sound) and, on its own, the word «door». Mind the meaning: on its own, 口 is not the spoken word for mouth (that is 嘴) but a measure word (三口人).'
   - id: t.pictogram
     group: characters
     title: {es: Pictograma, en: Pictogram}
@@ -68,6 +68,13 @@ terms:
     text:
       es: 'El mandarín tiene unas 400 sílabas distintas sin contar el tono y unas 1300 con tono, para miles de caracteres: muchos suenan igual. shì es 是 «ser», 事 «asunto», 市 «ciudad», 试 «probar», 室 «sala», 世 «mundo»… Por eso casi todas las palabras modernas tienen dos sílabas (学习, 朋友, 东西): la segunda deshace la ambigüedad. Y por eso el tono no es un adorno: cambia la palabra.'
       en: 'Mandarin has about 400 distinct syllables without tone and about 1,300 with tone, for thousands of characters: many sound alike. shì is 是 «be», 事 «matter», 市 «city», 试 «try», 室 «room», 世 «world»… That is why most modern words have two syllables (学习, 朋友, 东西): the second removes the ambiguity. And why the tone is no ornament: it changes the word.'
+  - id: t.polyphones
+    group: sounds
+    title: {es: 'Un carácter, ¿un solo sonido?', en: 'One character, one sound?'}
+    text:
+      es: 'Casi siempre: un carácter se lee igual en todas las palabras en que aparece, y eso ayuda mucho. Hay excepciones, los polifónicos (多音字), que cambian de lectura con el sentido: 行 háng «fila» y xíng «vale», 觉 jiào en 睡觉 y jué en 觉得, 乐 lè «alegre» y yuè «música», 了 le y liǎo. Además, al hablar, el tono de algunos cambia por su vecino sin cambiar de carácter (不 bù y bú, 一 yī, yí, yì). Al revés no pasa: una sílaba como shì corresponde a muchos caracteres (是, 事, 市, 试); con otro tono, más todavía (十 shí). Por eso el chino se apoya en palabras de dos sílabas y en el contexto.'
+      en: 'Almost always: a character reads the same in every word it appears in, which helps a lot. The exceptions, polyphones (多音字), change their reading with the meaning: 行 háng «row» and xíng «OK», 觉 jiào in 睡觉 and jué in 觉得, 乐 lè «happy» and yuè «music», 了 le and liǎo. In speech, some also change tone next to their neighbour without changing character (不 bù and bú, 一 yī, yí, yì). The other way round does not hold: a syllable like shì matches many characters (是, 事, 市, 试), and with another tone even more (十 shí). That is why Chinese leans on two-syllable words and on context.'
+    examples: [行, 觉, 乐, 了]
   - id: t.tones
     group: sounds
     title: {es: Los cuatro tonos y el neutro, en: The four tones and the neutral}
