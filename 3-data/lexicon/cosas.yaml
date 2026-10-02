@@ -540,3 +540,43 @@ entries:
       - {ref: w.guo.exp, cue: 'guo, átono tras el verbo: haber hecho'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
+  - id: w.shu.tree
+    use: say
+    role: content
+    kind: word
+    hanzi: 树
+    pinyin: shù
+    meaning: {es: árbol, en: tree}
+    source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29', rescued: 004-2026-10-02-ser-nombres-y-describir}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-02', text: '这棵树很高 «este árbol es alto»: 棵 kē es el clasificador de los árboles. No confundir con 书 shū «libro»: suenan parecido, pero 树 es cuarto tono.'}
+  - id: w.dianshi
+    use: say
+    role: content
+    kind: word
+    hanzi: 电视
+    pinyin: diànshì
+    meaning: {es: televisión, la tele, en: television, TV}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: deberes 2026-09-24, date: '2026-09-24'}
+    connection: {kind: sound, with: [礻], text: '视 shì toma el sonido de 示 shì, que a la izquierda de un carácter se escribe 礻: por eso suenan igual.'}
+    comments: []
+  - id: w.long
+    use: hear
+    role: content
+    kind: word
+    hanzi: 龙
+    pinyin: lóng
+    meaning: {es: dragón, en: dragon}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+    comments:
+      - {kind: teacher, private: false, date: '2026-10-02', text: '龍 es su forma tradicional. Es frecuente en nombres: 成龙 «Jackie Chan», 大龙, y 李小龙 «Bruce Lee».'}
+  - id: g.shu-shu
+    kind: group
+    basis: soundalike
+    title: '书 shū / 树 shù'
+    explanation: 'Misma sílaba, distinto tono: 书 shū es «libro» (primer tono, alto y plano) y 树 shù es «árbol» (cuarto tono, cae).'
+    members:
+      - {ref: w.shu, cue: 'shū, alto y plano: libro'}
+      - {ref: w.shu.tree, cue: 'shù, cae: árbol'}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+    comments: []

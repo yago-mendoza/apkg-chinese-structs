@@ -224,3 +224,40 @@ entries:
       - {ref: w.bangzhu, cue: 'ayudar o la ayuda, más formal: 谢谢你的帮助'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
+  - id: e.nizhenbang
+    use: say
+    role: content
+    kind: expression
+    hanzi: 你真棒
+    pinyin: nǐ zhēn bàng
+    meaning: {es: '¡eres genial!, ¡qué bien lo haces!', en: 'you are great!'}
+    level: 2
+    level_reason: elogio coloquial muy frecuente; 你 y 真 son HSK 1, 棒 suelto es más alto pero aquí va fijo
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+    comments: []
+  - id: e.nalinali
+    use: hear
+    role: content
+    kind: expression
+    hanzi: 哪里哪里
+    pinyin: nǎlǐ nǎlǐ
+    meaning: {es: '¡qué va!, no es para tanto (respuesta modesta a un elogio)', en: 'not at all (modest reply to praise)'}
+    accept_pinyin_mismatch: se escribe con el tono de cita; al decirlo, el primer 哪 sube por el sandhi de tercer tono
+    level: 2
+    level_reason: respuesta fija a un elogio; 哪里 es HSK 1
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-02', text: 'Respuesta modesta a 你真棒. Suena algo tradicional: hoy, sobre todo entre jóvenes, es más común contestar 谢谢.'}
+  - id: e.zaishuoyibian
+    use: say
+    role: content
+    kind: expression
+    hanzi: 再说一遍
+    pinyin: zài shuō yí biàn
+    meaning: {es: '¿puedes repetirlo?, dilo otra vez', en: 'say it again'}
+    accept_pinyin_mismatch: '一 se lee yí delante de cuarto tono (遍 biàn)'
+    level: 1
+    level_reason: frase de clase desde el primer día; 再 y 说 son HSK 1 y 遍 solo aparece dentro de esta fórmula
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+    comments:
+      - {kind: teacher, private: false, date: '2026-10-02', text: 'Lo que se dice en clase para pedir que repitan. Para leer otra vez, 再读一遍 zài dú yí biàn.'}

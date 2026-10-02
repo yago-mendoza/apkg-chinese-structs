@@ -215,16 +215,6 @@ items:
     notes:
       - {text: 'Da el sonido a 胖 pàng y a 伴 bàn «compañero» [HSK 7].'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-  - id: a.ben.book
-    hanzi: 本
-    pinyin: běn
-    meaning: {es: 'clasificador de libros; raíz, origen'}
-    theme: cosas
-    links: [书, 本子, 词典]
-    reason: 'HSK 1: 一本书 «un libro». Llegó como raíz de 笨, sin su uso cotidiano.'
-    notes:
-      - {text: 'Un árbol 木 con una raya en la raíz. 本国 «país de origen».'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
 
   # ---------------------------------------------------------------- personas y oficios
   - id: a.zhuanjia
@@ -319,16 +309,6 @@ items:
     notes:
       - {text: '青菜 «verdura», 青年 «joven». Da el sonido a 请, 清, 晴 y 情.'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-  - id: a.tree
-    hanzi: 树
-    pinyin: shù
-    meaning: {es: árbol}
-    theme: cosas
-    links: [棵, 花, 公园, 草]
-    reason: 'HSK 1; salió en una diapositiva (这棵树很高) con 棵 [HSK 4], su clasificador.'
-    notes:
-      - {text: '这棵树很高 «este árbol es alto»: 棵 kē es el clasificador de los árboles.'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: a.gebo
     hanzi: 胳膊
     pinyin: gēbo

@@ -3158,7 +3158,7 @@ def stats_report(infos, revs, exercises, eby, days, now_ms):
     (clave: ID de tarjeta como texto). Agrupa por entrada evaluada (`targets`), no por tarjeta."""
     xby = {x["id"]: x for x in exercises}
     since = now_ms - days * 86_400_000
-    total = again = studied = 0
+    total = again = studied = rev_total = rev_again = 0
     days_seen, by_type, by_entry, leeches = set(), {}, {}, []
     for c in infos:
         x = xby.get(c.get("fields", {}).get("ExerciseID", {}).get("value"))
@@ -3171,6 +3171,8 @@ def stats_report(infos, revs, exercises, eby, days, now_ms):
             continue
         fails = sum(1 for r in log if r.get("ease") == 1)
         total, again, studied = total + len(log), again + fails, studied + 1
+        rev = [r for r in log if r.get("type") == 1]          # repaso de una tarjeta ya aprendida
+        rev_total, rev_again = rev_total + len(rev), rev_again + sum(1 for r in rev if r.get("ease") == 1)
         days_seen |= {datetime.date.fromtimestamp(r["id"] / 1000) for r in log}
         kind = TYPE_ES.get(x.get("type"), x.get("type"))
         n, f = by_type.get(kind, (0, 0))
@@ -3183,6 +3185,10 @@ def stats_report(infos, revs, exercises, eby, days, now_ms):
              + "."]
     if not total:
         return lines + ["Aún no hay repasos en este periodo: nada que analizar."]
+    # Fallar al aprender es normal; la retención se mide en los repasos de lo ya aprendido.
+    lines.append(f"Retención (solo repasos de tarjetas ya aprendidas): " + (
+        f"{100 - round(100 * rev_again / rev_total)} % acertadas ({rev_total - rev_again}/{rev_total})." if rev_total
+        else "aún no hay repasos de tarjetas aprendidas; todo es primer aprendizaje."))
     lines += ["", "Por tipo de tarjeta («Otra vez» / repasos):"]
     for kind, (n, f) in sorted(by_type.items(), key=lambda kv: -kv[1][1] / kv[1][0]):
         lines.append(f"  {kind:12} {round(100 * f / n):3d} %  ({f}/{n})")

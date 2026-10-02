@@ -51,6 +51,13 @@ Solo cambia el tono: 大 cae, 打 baja y sube.
 - 大 dà · dà, cae: grande
 - 打 dǎ · dǎ, baja y sube: jugar (a la pelota), golpear
 
+## 本 běn / 笨 bèn
+
+Casi iguales al oído: 本 běn (tercer tono) cuenta libros y 笨 bèn (cuarto tono) es «torpe». Además 本 da el sonido a 笨, que es 竹 sobre 本.
+
+- 本 běn · běn, baja y sube: clasificador de libros
+- 笨 bèn · bèn, cae: torpe
+
 ## Frases
 
 - ✅🃏 他很高。 · tā hěn gāo · Él es alto.
@@ -67,3 +74,10 @@ Solo cambia el tono: 大 cae, 打 baja y sube.
 - ✅🃏 他比我高。 · tā bǐ wǒ gāo · Es más alto que yo.
 - ✅🃏 她又高又漂亮。 · tā yòu gāo yòu piàoliang · Es alta y guapa.
 - ✅🃏 你的腿好长啊！ · nǐ de tuǐ hǎo cháng a · ¡Qué piernas tan largas tienes!
+- ✅🃏 他很高，我也很高。 · tā hěn gāo wǒ yě hěn gāo · Él es alto, y yo también.
+- ✅🃏 他们都很聪明。 · tāmen dōu hěn cōngming · Todos ellos son muy listos.
+- ✅🃏 她很漂亮，也很瘦。 · tā hěn piàoliang yě hěn shòu · Es guapa y también delgada.
+- ✅🃏 你很漂亮！ · nǐ hěn piàoliang · ¡Eres muy guapa!
+- ✅🃏 他很幽默，大家都喜欢他。 · tā hěn yōumò dàjiā dōu xǐhuan tā · Es muy gracioso: a todo el mundo le cae bien.
+- ✅🃏 我不高，也不矮。 · wǒ bù gāo yě bù ǎi · No soy ni alto ni bajo.
+- ✅🃏 他不胖，他很瘦。 · tā bú pàng tā hěn shòu · No está gordo: es muy delgado.

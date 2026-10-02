@@ -553,6 +553,7 @@ class Repository(unittest.TestCase):
                 "2": [{"id": now - day, "ease": 3, "type": 1}], "3": [{"id": now - day, "ease": 1, "type": 1}]}
         out = "\n".join(anki.stats_report(infos, revs, exercises, eby, 30, now))
         self.assertIn("3 repasos de 2 tarjeta(s)", out)
+        self.assertIn("Retención (solo repasos de tarjetas ya aprendidas): 50 %", out)
         self.assertIn("67 %", out)
         self.assertIn("w.a 他 tā · él — 2/2 · Escuchar", out)
         self.assertNotIn("w.b 她", out.split("Lo que más cuesta")[1].split("Olvidadas")[0])

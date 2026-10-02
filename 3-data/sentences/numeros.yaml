@@ -75,3 +75,14 @@ sentences:
       - {text: ？}
     translation: {es: '¿Cuántas personas? (en un restaurante)', en: 'How many people? (at a restaurant)'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+  - id: s.wo-you-yi-ben-shu
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 有, ref: w.you.have, pinyin: yǒu}
+      - {text: 一, ref: w.num.yi, pinyin: yì, sandhi: yī → yì delante de tercer tono}
+      - {text: 本, ref: w.ben.book, pinyin: běn}
+      - {text: 书, ref: w.shu, pinyin: shū}
+      - {text: 。}
+    translation: {es: 'Tengo un libro.', en: "I have a book."}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}

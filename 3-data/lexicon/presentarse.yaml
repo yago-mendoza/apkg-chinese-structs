@@ -362,3 +362,41 @@ entries:
       - {ref: w.weishenme, cue: 'por qué'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
+  - id: w.chenglong
+    use: context
+    use_reason: nombre propio de los ejemplos de clase; solo aparece dentro de sus frases
+    role: content
+    kind: word
+    pos: nombre-propio
+    hanzi: 成龙
+    pinyin: Chéng Lóng
+    meaning: {es: Jackie Chan, en: Jackie Chan}
+    level: 1
+    level_reason: nombre propio con que la clase practica 是, 不是 y 是不是
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-02', text: 'Su apellido es 成 y su nombre, 龙 «dragón»: 他姓成，叫成龙.'}
+  - id: w.yingguo
+    use: hear
+    role: content
+    kind: word
+    pos: nombre-propio
+    hanzi: 英国
+    pinyin: Yīngguó
+    meaning: {es: Reino Unido, Inglaterra, en: United Kingdom, England}
+    level: 2
+    level_reason: país muy frecuente, al nivel de 美国; 国 y 人 ya son HSK 1
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+    comments: []
+  - id: e.xinghui
+    use: hear
+    role: content
+    kind: expression
+    hanzi: 幸会
+    pinyin: xìnghuì
+    meaning: {es: encantado (de conocerle), fórmula formal, en: pleased to meet you (formal)}
+    level: 3
+    level_reason: fórmula formal de presentación, propia del trato profesional; menos frecuente que 认识你很高兴
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+    comments:
+      - {kind: teacher, private: false, date: '2026-10-02', text: 'En una presentación formal: «您好，我是…», «您贵姓？», «我姓…，叫…» y, al final, los dos dicen «幸会！».'}

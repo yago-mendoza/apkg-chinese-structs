@@ -1781,3 +1781,150 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¿Por qué no vas?»'}
     answer: {meaning: '¿Por qué no vas?'}
     comments: []
+  - id: x.dictation.shu.tree
+    added: 2026-10-02
+    lang: es
+    type: listen
+    targets: [w.shu.tree]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shu4, hanzi: 树, pinyin: shù, meaning: árbol}
+    comments: []
+  - id: x.produce.shu.tree
+    added: 2026-10-02
+    lang: es
+    type: produce
+    targets: [w.shu.tree]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «árbol»? Escribe el pinyin.'}
+    answer: {typed: shu4, hanzi: 树, pinyin: shù, meaning: árbol}
+    comments: []
+  - id: x.read.shu.tree
+    added: 2026-10-02
+    lang: es
+    type: read
+    targets: [w.shu.tree]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 树}
+    answer: {hanzi: 树, pinyin: shù, meaning: árbol}
+    comments: []
+  - id: x.dictation.dianshi
+    added: 2026-10-02
+    lang: es
+    type: listen
+    targets: [w.dianshi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dian4 shi4, hanzi: 电视, pinyin: diànshì, meaning: televisión}
+    comments: []
+  - id: x.produce.dianshi
+    added: 2026-10-02
+    lang: es
+    type: produce
+    targets: [w.dianshi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «televisión»? Escribe el pinyin.'}
+    answer: {typed: dian4 shi4, hanzi: 电视, pinyin: diànshì, meaning: televisión}
+    comments: []
+  - id: x.read.dianshi
+    added: 2026-10-02
+    lang: es
+    type: read
+    targets: [w.dianshi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 电视}
+    answer: {hanzi: 电视, pinyin: diànshì, meaning: televisión}
+    comments: []
+  - id: x.dictation.long
+    added: 2026-10-02
+    lang: es
+    type: listen
+    targets: [w.long]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: long2, hanzi: 龙, pinyin: lóng, meaning: dragón}
+    comments: []
+  - id: x.read.long
+    added: 2026-10-02
+    lang: es
+    type: read
+    targets: [w.long]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 龙}
+    answer: {hanzi: 龙, pinyin: lóng, meaning: dragón}
+    comments: []
+  - id: x.listen.zhe-ke-shu-hen-gao
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.zhe-ke-shu-hen-gao
+    targets: [s.zhe-ke-shu-hen-gao]
+    context: [w.zhe, w.ke, w.shu.tree, w.hen, w.gao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Este árbol es muy alto.}
+    comments: []
+  - id: x.listen.na-shi-shenme-shu
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.na-shi-shenme-shu
+    targets: [s.na-shi-shenme-shu]
+    context: [w.na.that, w.shi, w.shenme, w.shu.tree]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Qué árbol es ese?'}
+    comments: []
+  - id: x.produce.na-shi-shenme-shu
+    added: 2026-10-02
+    lang: es
+    type: produce
+    sentence: s.na-shi-shenme-shu
+    targets: [s.na-shi-shenme-shu]
+    context: [w.na.that, w.shi, w.shenme, w.shu.tree]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué árbol es ese?»'}
+    answer: {meaning: '¿Qué árbol es ese?'}
+    comments: []
+  - id: x.listen.wo-zai-kan-dianshi
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.wo-zai-kan-dianshi
+    targets: [s.wo-zai-kan-dianshi]
+    context: [w.wo, w.zai.progressive, w.kan, w.dianshi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Estoy viendo la tele.}
+    comments: []
+  - id: x.produce.wo-zai-kan-dianshi
+    added: 2026-10-02
+    lang: es
+    type: produce
+    sentence: s.wo-zai-kan-dianshi
+    targets: [s.wo-zai-kan-dianshi]
+    context: [w.wo, w.zai.progressive, w.kan, w.dianshi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estoy viendo la tele.»'}
+    answer: {meaning: Estoy viendo la tele.}
+    comments: []
+  - id: x.contrast.shu
+    added: 2026-10-02
+    lang: es
+    type: contrast
+    group: g.shu-shu
+    targets: [w.shu]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 书, pinyin: shū, meaning: libro}
+    comments: []
+  - id: x.contrast.shu.tree
+    added: 2026-10-02
+    lang: es
+    type: contrast
+    group: g.shu-shu
+    targets: [w.shu.tree]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 树, pinyin: shù, meaning: árbol}
+    comments: []

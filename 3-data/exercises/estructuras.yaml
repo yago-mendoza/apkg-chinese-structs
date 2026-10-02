@@ -424,3 +424,15 @@ exercises:
     prompt: {text: '¿Cuál se dice así en chino? «Voy a China en avión.»'}
     answer: {meaning: 'Primero cómo (坐飞机), luego adónde (去中国). Al revés dice «voy a China a coger un avión».'}
     comments: []
+  - id: x.calque.shi-bu-shi
+    added: 2026-10-02
+    lang: es
+    type: pattern
+    targets: [st.shi-bu-shi]
+    context: [w.shi, w.bu, w.shi]
+    sentence: s.ta-shi-bu-shi-chenglong
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «¿Es Jackie Chan o no?»'}
+    answer: {meaning: 是不是 ya es la pregunta; con 吗 sobra.}
+    comments: []

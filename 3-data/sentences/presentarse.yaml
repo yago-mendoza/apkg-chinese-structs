@@ -310,3 +310,91 @@ sentences:
       - {text: 。}
     translation: {es: 'Estoy estudiando chino.', en: 'I''m studying Chinese.'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.nimen-shi-xuesheng-ma
+    use: say
+    segments:
+      - {text: 你们, ref: w.nimen, pinyin: nǐmen}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 学生, ref: w.xuesheng, pinyin: xuéshēng}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Sois estudiantes?', en: "Are you students?"}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+
+  - id: s.wo-bu-renshi-ni
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 不, ref: w.bu, pinyin: bú, sandhi: bù → bú delante de cuarto tono}
+      - {text: 认识, ref: w.renshi, pinyin: rènshi}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: ，}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 叫, ref: w.jiao, pinyin: jiào}
+      - {text: 什么, ref: w.shenme, pinyin: shénme}
+      - {text: 名字, ref: w.mingzi, pinyin: míngzi}
+      - {text: ？}
+    translation: {es: 'No te conozco: ¿cómo te llamas?', en: "I don't know you. What's your name?"}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+
+  - id: s.wo-bu-shi-zhongguoren
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 不, ref: w.bu, pinyin: bú, sandhi: bù → bú delante de cuarto tono}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 中国, ref: w.zhongguo, pinyin: Zhōngguó}
+      - {text: 人, ref: w.ren, pinyin: rén}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 西班牙, ref: w.xibanya, pinyin: Xībānyá}
+      - {text: 人, ref: w.ren, pinyin: rén}
+      - {text: 。}
+    translation: {es: 'No soy chino, soy español.', en: "I'm not Chinese, I'm Spanish."}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: deberes 2026-09-24, date: '2026-09-24'}
+
+  - id: s.ta-shi-yingguoren
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 英国, ref: w.yingguo, pinyin: Yīngguó}
+      - {text: 人, ref: w.ren, pinyin: rén}
+      - {text: 。}
+    translation: {es: 'Es británico.', en: "He's British."}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+
+  - id: s.ta-shi-chenglong-ma
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 成龙, ref: w.chenglong, pinyin: Chéng Lóng}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Es Jackie Chan?', en: "Is he Jackie Chan?"}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: deberes 2026-09-29, date: '2026-09-29'}
+
+  - id: s.ta-bu-shi-chenglong
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 不, ref: w.bu, pinyin: bú, sandhi: bù → bú delante de cuarto tono}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 成龙, ref: w.chenglong, pinyin: Chéng Lóng}
+      - {text: 。}
+    translation: {es: 'No es Jackie Chan.', en: "He isn't Jackie Chan."}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: deberes 2026-09-29, date: '2026-09-29'}
+
+  - id: s.ta-shi-bu-shi-chenglong
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 不, ref: w.bu, pinyin: bu, sandhi: bù → bu, átono entre 是 y 是}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 成龙, ref: w.chenglong, pinyin: Chéng Lóng}
+      - {text: ？}
+    translation: {es: '¿Es Jackie Chan o no?', en: "Is he Jackie Chan or not?"}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}

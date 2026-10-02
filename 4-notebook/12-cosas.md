@@ -50,6 +50,9 @@
 - ✅🃏 这么 zhème [ʈʂɤ˥˩ mɤ] · tan, así de · _pronombre_ · Delante de un adjetivo: 你为什么这么高？ «¿por qué eres tan alto?».
 - ✅🃏 出去 chūqu [ʈʂʰu˥ tɕʰy] · salir (hacia fuera) · _verbo_ · 出 es una planta que sale de un tiesto. 出来 chūlái es salir hacia aquí. · 出去啊？ «¿sales?» es un saludo al cruzarte con alguien que se va.
 - ✅🃏 这里 zhèlǐ [ʈʂɤ˥˩ li˧˩˧] · aquí · _pronombre_ · 这 «este» + 里 «dentro»: en este sitio. Como 哪里 «dónde».
+- ✅🃏 树 shù [ʂu˥˩] · árbol · _sustantivo_ · 这棵树很高 «este árbol es alto»: 棵 kē es el clasificador de los árboles. No confundir con 书 shū «libro»: suenan parecido, pero 树 es cuarto tono.
+- ✅🃏 电视 diànshì [tjɛn˥˩ ʂɨ˥˩] · televisión · _sustantivo_
+- ✅🃏 龙 lóng [lʊŋ˧˥] · dragón · _sustantivo_ · 龍 es su forma tradicional. Es frecuente en nombres: 成龙 «Jackie Chan», 大龙, y 李小龙 «Bruce Lee».
 
 ## 那 y 哪里
 
@@ -98,6 +101,13 @@ Cada uno niega una cosa distinta.
 - 国 guó · guó, sube: país
 - 过 guo · guo, átono tras el verbo: haber hecho
 
+## 书 shū / 树 shù
+
+Misma sílaba, distinto tono: 书 shū es «libro» (primer tono, alto y plano) y 树 shù es «árbol» (cuarto tono, cae).
+
+- 书 shū · shū, alto y plano: libro
+- 树 shù · shù, cae: árbol
+
 ## Frases
 
 - ✅🃏 我在看书。 · wǒ zài kàn shū · Estoy leyendo.
@@ -131,3 +141,6 @@ Cada uno niega una cosa distinta.
 - ✅🃏 大象很大。 · dàxiàng hěn dà · Los elefantes son grandes.
 - ✅🃏 我在这里。 · wǒ zài zhèlǐ · Estoy aquí.
 - ✅🃏 你为什么不去？ · nǐ wèishénme bú qù · ¿Por qué no vas?
+- ✅🃏 这棵树很高。 · zhè kē shù hěn gāo · Este árbol es muy alto.
+- ✅🃏 那是什么树？ · nà shì shénme shù · ¿Qué árbol es ese?
+- ✅🃏 我在看电视。 · wǒ zài kàn diànshì · Estoy viendo la tele.

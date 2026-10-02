@@ -310,3 +310,36 @@ sentences:
       - {text: ？}
     translation: {es: '¿Por qué no vas?', en: 'Why aren''t you going?'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.zhe-ke-shu-hen-gao
+    use: hear
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: zhè}
+      - {text: 棵, ref: w.ke, pinyin: kē}
+      - {text: 树, ref: w.shu.tree, pinyin: shù}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 高, ref: w.gao, pinyin: gāo}
+      - {text: 。}
+    translation: {es: 'Este árbol es muy alto.', en: "This tree is very tall."}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+
+  - id: s.na-shi-shenme-shu
+    use: say
+    segments:
+      - {text: 那, ref: w.na.that, pinyin: nà}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 什么, ref: w.shenme, pinyin: shénme}
+      - {text: 树, ref: w.shu.tree, pinyin: shù}
+      - {text: ？}
+    translation: {es: '¿Qué árbol es ese?', en: "What tree is that?"}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+
+  - id: s.wo-zai-kan-dianshi
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 在, ref: w.zai.progressive, pinyin: zài}
+      - {text: 看, ref: w.kan, pinyin: kàn}
+      - {text: 电视, ref: w.dianshi, pinyin: diànshì}
+      - {text: 。}
+    translation: {es: 'Estoy viendo la tele.', en: "I'm watching TV."}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: deberes 2026-09-24, date: '2026-09-24'}

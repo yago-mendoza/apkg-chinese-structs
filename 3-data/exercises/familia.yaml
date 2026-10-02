@@ -418,3 +418,32 @@ exercises:
     question: {es: '¿Cuántos hijos tiene el padre?'}
     answer: {meaning: 'Dos: un hijo y una hija.'}
     comments: []
+  - id: x.dictation.bama
+    added: 2026-10-02
+    lang: es
+    type: listen
+    targets: [w.bama]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ba4 ma1, hanzi: 爸妈, pinyin: bàmā, meaning: 'los padres, papá y mamá (coloquial)'}
+    comments: []
+  - id: x.read.bama
+    added: 2026-10-02
+    lang: es
+    type: read
+    targets: [w.bama]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 爸妈}
+    answer: {hanzi: 爸妈, pinyin: bàmā, meaning: 'los padres, papá y mamá (coloquial)'}
+    comments: []
+  - id: x.listen.tamen-shi-wo-de-bama
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.tamen-shi-wo-de-bama
+    targets: [s.tamen-shi-wo-de-bama]
+    context: [w.tamen, w.shi, w.wo, w.de, w.bama]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Son mis padres.}
+    comments: []

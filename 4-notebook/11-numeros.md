@@ -20,6 +20,8 @@
 - ✅🃏 没有 méiyǒu [meɪ˧˥ joʊ˧˩˧] · no tener; no haber · _verbo_ · 有 se niega con 没, nunca con 不: 我没有钱 «no tengo dinero».
 - ✅🃏 几 jǐ [tɕi˧˩˧] · cuántos (pocos) · _interrogativo_ · 几 espera un número pequeño y lleva clasificador: 几个人？ Para cantidades abiertas, 多少.
 - ✅🃏 岁 suì [sweɪ˥˩] · años (de edad) · _clasificador_ · 你几岁？ se pregunta sobre todo a niños; a un adulto se le pregunta 你多大？, con 多 «cuánto» y 大 «grande».
+- ✅🃏 本 běn [pən˧˩˧] · clasificador de libros y cuadernos · _pronombre_ · Un árbol 木 con una raya en la raíz: su sentido original es «raíz, origen». Como clasificador, cuenta libros. · Como 个 para personas, 本 para libros: 一个人 «una persona», 一本书 «un libro».
+- ✅🃏 棵 kē [kʰɤ˥] · clasificador de árboles y plantas · _clasificador_ · Va entre 这, 那 o un número y la palabra: 这棵树 «este árbol», 一棵树 «un árbol».
 
 ## 九 jiǔ y 就 jiù
 
@@ -44,3 +46,4 @@ Tres «you» que se confunden: los separan el tono y la vocal.
 - ✅🃏 我没有钱。 · wǒ méiyǒu qián · No tengo dinero.
 - ✅🃏 你几岁？ · nǐ jǐ suì · ¿Cuántos años tienes? (a un niño)
 - ✅🃏 几个人？ · jǐ ge rén · ¿Cuántas personas? (en un restaurante)
+- ✅🃏 我有一本书。 · wǒ yǒu yì běn shū · Tengo un libro.

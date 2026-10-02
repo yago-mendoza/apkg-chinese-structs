@@ -35,6 +35,9 @@
 - ✅🃏 国 guó [kwɔ˧˥] · país · _sustantivo_ · En los nombres de países: 中国, 美国. 你是哪国人？ «¿de qué país eres?».
 - ✅🃏 会 huì [xweɪ˥˩] · saber (hacer algo); ir a (predicción) · _verbo_ · Saber hacer algo aprendido: 我会说中文. «Saber un dato» es otra palabra, 知道 zhīdào [HSK 1]. · También predice: 明天会下雨 «mañana lloverá». Ser capaz en este momento es 能; tener permiso, 可以.
 - ✅🃏 学习 xuéxí [ɕɥœ˧˥ ɕi˧˥] · estudiar, aprender · _verbo_ · 学 «aprender» + 习 «practicar». 学生 «estudiante» lleva el mismo 学.
+- ✅ 成龙 Chéng Lóng [ʈʂʰɤŋ˧˥ lʊŋ˧˥] · Jackie Chan · _nombre propio_ · Su apellido es 成 y su nombre, 龙 «dragón»: 他姓成，叫成龙.
+- ✅🃏 英国 Yīngguó [iŋ˥ kwɔ˧˥] · Reino Unido · _nombre propio_
+- ✅🃏 幸会 xìnghuì [ɕiŋ˥˩ xweɪ˥˩] · encantado (de conocerle) · _expresión_ · En una presentación formal: «您好，我是…», «您贵姓？», «我姓…，叫…» y, al final, los dos dicen «幸会！».
 
 ## 是 shì y 十 shí
 
@@ -88,3 +91,10 @@ Van donde iría la respuesta, sin cambiar el orden de la frase.
 - ✅🃏 我会说中文。 · wǒ huì shuō Zhōngwén · Sé hablar chino.
 - ✅🃏 我不会说中文。 · wǒ bú huì shuō Zhōngwén · No sé hablar chino.
 - ✅🃏 我在学习中文。 · wǒ zài xuéxí Zhōngwén · Estoy estudiando chino.
+- ✅🃏 你们是学生吗？ · nǐmen shì xuéshēng ma · ¿Sois estudiantes?
+- ✅🃏 我不认识你，你叫什么名字？ · wǒ bú rènshi nǐ nǐ jiào shénme míngzi · No te conozco: ¿cómo te llamas?
+- ✅🃏 我不是中国人，我是西班牙人。 · wǒ bú shì Zhōngguó rén wǒ shì Xībānyá rén · No soy chino, soy español.
+- ✅🃏 他是英国人。 · tā shì Yīngguó rén · Es británico.
+- ✅🃏 他是成龙吗？ · tā shì Chéng Lóng ma · ¿Es Jackie Chan?
+- ✅🃏 他不是成龙。 · tā bú shì Chéng Lóng · No es Jackie Chan.
+- ✅🃏 他是不是成龙？ · tā shì bu shì Chéng Lóng · ¿Es Jackie Chan o no?

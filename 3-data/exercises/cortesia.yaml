@@ -731,3 +731,96 @@ exercises:
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 不客气, pinyin: bu ke qi}
     answer: {typed: '445', hanzi: 不客气, pinyin: bù kèqi, meaning: de nada}
     comments: []
+  - id: x.dictation.nizhenbang
+    added: 2026-10-02
+    lang: es
+    type: listen
+    targets: [e.nizhenbang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ni3 zhen1 bang4, hanzi: 你真棒, pinyin: nǐ zhēn bàng, meaning: '¡eres genial!, ¡qué bien lo haces!'}
+    comments: []
+  - id: x.produce.nizhenbang
+    added: 2026-10-02
+    lang: es
+    type: produce
+    targets: [e.nizhenbang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¡eres genial!, ¡qué bien lo haces!»? Escribe el pinyin.'}
+    answer: {typed: ni3 zhen1 bang4, hanzi: 你真棒, pinyin: nǐ zhēn bàng, meaning: '¡eres genial!, ¡qué bien lo haces!'}
+    comments: []
+  - id: x.read.nizhenbang
+    added: 2026-10-02
+    lang: es
+    type: read
+    targets: [e.nizhenbang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 你真棒}
+    answer: {hanzi: 你真棒, pinyin: nǐ zhēn bàng, meaning: '¡eres genial!, ¡qué bien lo haces!'}
+    comments: []
+  - id: x.dictation.nalinali
+    added: 2026-10-02
+    lang: es
+    type: listen
+    targets: [e.nalinali]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: na3 li3 na3 li3, hanzi: 哪里哪里, pinyin: nǎlǐ nǎlǐ, meaning: '¡qué va!, no es para tanto (respuesta modesta
+        a un elogio)'}
+    comments: []
+  - id: x.read.nalinali
+    added: 2026-10-02
+    lang: es
+    type: read
+    targets: [e.nalinali]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 哪里哪里}
+    answer: {hanzi: 哪里哪里, pinyin: nǎlǐ nǎlǐ, meaning: '¡qué va!, no es para tanto (respuesta modesta a un elogio)'}
+    comments: []
+  - id: x.tones.nalinali
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [e.nalinali]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 哪里哪里, pinyin: na li na li}
+    answer: {typed: '3333', hanzi: 哪里哪里, pinyin: nǎlǐ nǎlǐ, meaning: '¡qué va!, no es para tanto (respuesta modesta a un elogio)'}
+    comments: []
+  - id: x.dictation.zaishuoyibian
+    added: 2026-10-02
+    lang: es
+    type: listen
+    targets: [e.zaishuoyibian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zai4 shuo1 yi2 bian4, hanzi: 再说一遍, pinyin: zài shuō yí biàn, meaning: '¿puedes repetirlo?, dilo otra vez'}
+    comments: []
+  - id: x.produce.zaishuoyibian
+    added: 2026-10-02
+    lang: es
+    type: produce
+    targets: [e.zaishuoyibian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¿puedes repetirlo?, dilo otra vez»? Escribe el pinyin.'}
+    answer: {typed: zai4 shuo1 yi2 bian4, hanzi: 再说一遍, pinyin: zài shuō yí biàn, meaning: '¿puedes repetirlo?, dilo otra vez'}
+    comments: []
+  - id: x.read.zaishuoyibian
+    added: 2026-10-02
+    lang: es
+    type: read
+    targets: [e.zaishuoyibian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 再说一遍}
+    answer: {hanzi: 再说一遍, pinyin: zài shuō yí biàn, meaning: '¿puedes repetirlo?, dilo otra vez'}
+    comments: []
+  - id: x.tones.zaishuoyibian
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [e.zaishuoyibian]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 再说一遍, pinyin: zai shuo yi bian}
+    answer: {typed: '4124', hanzi: 再说一遍, pinyin: zài shuō yí biàn, meaning: '¿puedes repetirlo?, dilo otra vez'}
+    comments: []

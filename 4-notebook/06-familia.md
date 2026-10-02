@@ -14,6 +14,7 @@
 - ✅ 儿 ér · niño, hijo (en palabras) · 儿 ér «niño»: delante en 儿子, detrás en 女儿.
 - ✅ 子 zi · hijo, niño; sufijo de nombres · 子 zǐ «hijo, niño»; al final de una palabra suele ser un sufijo átono: 儿子 érzi, 孩子 háizi. Con 女 forma 好.
 - ✅🃏 姐姐 jiějie [tɕjɛ˧˩˧ tɕjɛ] · hermana mayor · _sustantivo_
+- ✅🃏 爸妈 bàmā [pa˥˩ ma˥] · los padres, papá y mamá (coloquial) · _sustantivo_
 
 ## 好, 女儿 y 儿子
 
@@ -31,3 +32,4 @@ Las mismas piezas en distinto orden: 女 «mujer», 子 «niño» y 儿 «niño 
 - ✅🃏 我们是一家人。 · wǒmen shì yì jiā rén · Somos una familia.
 - ✅🃏 妈妈回来了。 · māma huílai le · Mamá ha vuelto.
 - ✅🃏 姐姐在看报纸。 · jiějie zài kàn bàozhǐ · Mi hermana está leyendo el periódico.
+- ✅🃏 他们是我的爸妈。 · tāmen shì wǒ de bàmā · Son mis padres.

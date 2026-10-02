@@ -600,3 +600,83 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 有, pinyin: yǒu, meaning: tener; haber}
     comments: []
+  - id: x.cloze.ben-book
+    added: 2026-10-02
+    lang: es
+    type: cloze
+    sentence: s.wo-you-yi-ben-shu
+    gap: w.ben.book
+    targets: [w.ben.book]
+    context: [w.wo, w.you.have, w.num.yi, w.shu]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Tengo un libro.»'}
+    answer: {typed: ben3, hanzi: 本, pinyin: běn, meaning: clasificador de libros y cuadernos}
+    comments: []
+  - id: x.dictation.ke
+    added: 2026-10-02
+    lang: es
+    type: listen
+    targets: [w.ke]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ke1, hanzi: 棵, pinyin: kē, meaning: clasificador de árboles y plantas}
+    comments: []
+  - id: x.read.ke
+    added: 2026-10-02
+    lang: es
+    type: read
+    targets: [w.ke]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 棵}
+    answer: {hanzi: 棵, pinyin: kē, meaning: clasificador de árboles y plantas}
+    comments: []
+  - id: x.listen.wo-you-yi-ben-shu
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.wo-you-yi-ben-shu
+    targets: [s.wo-you-yi-ben-shu]
+    context: [w.wo, w.you.have, w.num.yi, w.ben.book, w.shu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo un libro.}
+    comments: []
+  - id: x.produce.wo-you-yi-ben-shu
+    added: 2026-10-02
+    lang: es
+    type: produce
+    sentence: s.wo-you-yi-ben-shu
+    targets: [s.wo-you-yi-ben-shu]
+    context: [w.wo, w.you.have, w.num.yi, w.ben.book, w.shu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo un libro.»'}
+    answer: {meaning: Tengo un libro.}
+    comments: []
+  - id: x.contrast.ben.book
+    added: 2026-10-02
+    lang: es
+    type: contrast
+    group: g.ben-ben
+    targets: [w.ben.book]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 本, pinyin: běn, meaning: clasificador de libros y cuadernos}
+    comments: []
+  - id: x.dictation.ben.book
+    added: 2026-10-02
+    lang: es
+    type: listen
+    targets: [w.ben.book]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ben3, hanzi: 本, pinyin: běn, meaning: clasificador de libros y cuadernos}
+    comments: []
+  - id: x.read.ben.book
+    added: 2026-10-02
+    lang: es
+    type: read
+    targets: [w.ben.book]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 本}
+    answer: {hanzi: 本, pinyin: běn, meaning: clasificador de libros y cuadernos}
+    comments: []

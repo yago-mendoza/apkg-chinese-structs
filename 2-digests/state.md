@@ -1,36 +1,36 @@
 <!-- ESTADO: la foto de ahora (nivel, clases, método, avisos y decisiones abiertas). Se reescribe en cada lote; lo que deja de ser cierto se quita. Cada punto enlaza al log, review archivado o documento de donde sale. El seguimiento de cada lote se escribe desde aquí y el último log. -->
 
-# Estado tras el lote 003-2026-10-01-comer-dinero-y-contrastes
-
-Escrito el 2026-10-01, al estrenar el estado vivo; resume los lotes 001 a 003.
+# Estado tras el lote 004-2026-10-02-ser-nombres-y-describir
 
 ## Nivel
 
-- HSK 1: 159 de sus 506 palabras (31 %), contando el segundo apunte del lote 003; del HSK 2, 32. A 246 palabras del 80 % que da el HSK 1 por superado. ([lote 003, cambios posteriores](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#2026-10-01--segundo-apunte-juntado-a-este-lote))
-- Ritmo de cobertura: 12 % tras el lote 001, 20 % tras el 002, 31 % tras el 003. Es lo registrado en el mazo, no lo aprendido. ([lote 002](/2-digests/summary-002-2026-09-29-clima-apellidos-y-caracteres.md#seguimiento), [lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#seguimiento))
-- Ya puede sobrevivir en una tienda y un restaurante (precio, pagar, pedir) y preguntar quién, cuántos y cómo; faltan los días, la hora y 今天 / 现在. ([lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#seguimiento))
+- HSK 1: 162 de sus 506 palabras (32 %); del HSK 2, 32. A 243 palabras del 80 % que da el HSK 1 por superado. ([lote 004](/2-digests/summary-004-2026-10-02-ser-nombres-y-describir.md#seguimiento))
+- Ritmo de cobertura: 12 % tras el lote 001, 20 % tras el 002, 31 % tras el 003, 32 % tras el 004 (que refuerza con frases más que ampliar). Es lo registrado en el mazo, no lo aprendido. ([lote 002](/2-digests/summary-002-2026-09-29-clima-apellidos-y-caracteres.md#seguimiento), [lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#2026-10-01--segundo-apunte-juntado-a-este-lote))
+- Ya puede presentarse (nombre, apellido, nacionalidad), describir a alguien con 很, 也 y 都, y sobrevivir en una tienda y un restaurante. Le faltan la hora y los días de la semana. ([lote 004](/2-digests/summary-004-2026-10-02-ser-nombres-y-describir.md#seguimiento), [lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#seguimiento))
 
 ## Las clases
 
-- Clases particulares sobre un curso de HSK 1. Hasta el 29 de septiembre: saludos, tonos y pinyin; luego frases con 很, 也 y 都, el tiempo, nombres y apellidos. ([lote 002](/2-digests/summary-002-2026-09-29-clima-apellidos-y-caracteres.md#seguimiento), [lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#seguimiento))
-- Casi todo es repetición en voz alta con corrección, que encaja con el objetivo. La profesora explica mucho en inglés y YAGO responde a menudo en inglés: pendiente pedirle contestar solo en chino en los ejercicios. ([lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#seguimiento))
-- Se enseñó y no se apuntó: 再说一遍, 没问题, 住, 度; propuestos para el próximo lote. ([lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#seguimiento))
+- Clases particulares, martes y jueves, sobre un curso de HSK 1. Cuatro sesiones (17, 22, 24 y 29 de septiembre) en la lección 1-1 «Saludar»: pinyin, 是 / 不是 / 是不是, adjetivos con 很, 也 y 都, y 姓 / 叫. ([lote 004](/2-digests/summary-004-2026-10-02-ser-nombres-y-describir.md#seguimiento), [rutina](/docs/decisions.md#2026-10-02--rutina-de-yago))
+- Los deberes atacan los errores típicos (他高很, 她是很漂亮, 科比很高也). El ritmo es lento: lo siguiente debería ser números y hora, 有, y 这 / 那 con clasificadores. ([lote 004](/2-digests/summary-004-2026-10-02-ser-nombres-y-describir.md#seguimiento))
+- La profesora explica mucho en inglés y YAGO responde a menudo en inglés; pendiente pedirle contestar solo en chino (再说一遍 ya está en el mazo para eso). ([lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#seguimiento), [lote 004](/2-digests/summary-004-2026-10-02-ser-nombres-y-describir.md#saludos-y-cortesía))
 
 ## Tu método
 
-- Tres lotes en siete días (25 de septiembre, 29 de septiembre y 1 de octubre), de unas 340, 290 y 460 tarjetas: el mazo crece mucho más deprisa de lo que se estudia. ([lote 002](/2-digests/summary-002-2026-09-29-clima-apellidos-y-caracteres.md#cambios-en-el-sistema), [lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#2026-10-01--segundo-apunte-juntado-a-este-lote), [criterio de volumen](/docs/decisions.md#2026-10-01--cuánto-entra-por-lote))
-- Los hanzi le absorben y el pinyin se queda atrás (lote 002: unas 80 líneas de clase frente a 400 de investigación de caracteres); el mazo lo compensa poniendo el pinyin por delante. ([lote 002](/2-digests/summary-002-2026-09-29-clima-apellidos-y-caracteres.md#seguimiento))
-- El lote 003 vino casi entero de explicaciones de un asistente: buenas preguntas, pero poco de su boca y de su día. Consejo vigente: grabar cada clase y dejarla en el inbox. ([lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#seguimiento))
-- Fechas en los apuntes: el lote 002 las trajo; el 001 y el 003, no (todo «sin-fecha»). ([lote 002](/2-digests/summary-002-2026-09-29-clima-apellidos-y-caracteres.md#seguimiento))
-- El review del lote 001 tuvo respuesta en 37 de sus 98 puntos; el del 002, en ninguno. De ahí el «Sine qua non». ([decisión](/docs/decisions.md#2026-10-01--el-review-empieza-por-lo-imprescindible))
-- En Anki, desde el último reinicio, casi nada estudiado: 1 tarjeta en aprendizaje y el resto nuevas. Los 99 repasos anteriores (del 25 al 30 de septiembre) fallaron un 75 %, sobre todo «Decir» y «Tonos»; con tan pocos datos, no dicen aún qué cuesta. ([cómo se mide](/docs/design.md#lo-que-se-queda-stats))
+- Estudia a diario, de 20 a 40 minutos y hasta hora y media algunos días; puede hablar en voz alta en cualquier sitio. ([rutina](/docs/decisions.md#2026-10-02--rutina-de-yago))
+- Los lotes 001 a 003, de unas 340, 290 y 460 tarjetas en una semana, hicieron crecer el mazo más deprisa de lo que se estudia; el 004 (76 tarjetas, solo material de clase) ya tiene el tamaño adecuado. ([criterio de volumen](/docs/decisions.md#2026-10-01--cuánto-entra-por-lote), [lote 004](/2-digests/summary-004-2026-10-02-ser-nombres-y-describir.md#seguimiento))
+- Los hanzi le absorben y el pinyin se queda atrás; el mazo lo compensa poniendo el pinyin por delante. ([lote 002](/2-digests/summary-002-2026-09-29-clima-apellidos-y-caracteres.md#seguimiento))
+- Consejo vigente: procesar el inbox después de cada clase, con las diapositivas y los deberes del día, y grabar la clase. ([lote 004](/2-digests/summary-004-2026-10-02-ser-nombres-y-describir.md#seguimiento), [lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#seguimiento))
+- En Anki aún no hay datos de retención: casi todo lo de esta semana fue primer aprendizaje, y antes las nuevas salían al azar. ([cómo se mide](/docs/design.md#lo-que-se-queda-stats), [orden de nuevas](/docs/decisions.md#2026-10-02--las-nuevas-en-el-orden-calculado))
 
 ## Avisos abiertos
 
-- Nuevo desde este lote: la fase de pruebas está cerrada; todo lo estudiado cuenta y no se reinicia (quitar este aviso en el lote 004). ([decisión](/docs/decisions.md#2026-10-01--fin-de-la-fase-de-pruebas))
-- 1.088 tarjetas nuevas pendientes: unos 36 días a 30 al día (YAGO subió de 20 a 30 al ver que se acumulaban). Aun así, los próximos lotes, más ligeros. ([criterio de volumen](/docs/decisions.md#2026-10-01--cuánto-entra-por-lote), [lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#2026-10-01--fechas-del-lote-001))
-- Desván: 38 elementos esperando, el más antiguo del 27 de septiembre; 发票 y 欠 esperan a 买单 y a 借. ([lote 003](/2-digests/summary-003-2026-10-01-comer-dinero-y-contrastes.md#el-tiempo-y-el-desván))
+- Fase de pruebas cerrada desde el 1 de octubre: lo estudiado cuenta y no se reinicia. Quitar este aviso en el lote 005. ([decisión](/docs/decisions.md#2026-10-01--fin-de-la-fase-de-pruebas))
+- 30 nuevas al día; unas 1.150 nuevas pendientes (unos 38 días). Los lotes, pequeños. ([decisión](/docs/decisions.md#2026-10-01--30-nuevas-al-día), [lote 004](/2-digests/summary-004-2026-10-02-ser-nombres-y-describir.md#cambios-en-el-sistema))
+- Desván: 36 elementos esperando; 王 entre ellos (apellido muy común). ([lote 004](/2-digests/summary-004-2026-10-02-ser-nombres-y-describir.md#no-entró-y-por-qué))
 
 ## Decisiones pendientes
 
-- Las tarjetas de comprensión le parecen bien a primera vista; falta verlas en Anki. ([comprensión lectora](/docs/decisions.md#2026-10-01--comprensión-lectora))
+- Si 聪明, 矮, 瘦, 胖, 帅 y 幽默 se quedan para decir. ([lote 004](/2-digests/summary-004-2026-10-02-ser-nombres-y-describir.md#describir-a-alguien-很-也-y-都))
+- Si quiere tarjetas de escucha de sílabas sueltas. ([lote 004](/2-digests/summary-004-2026-10-02-ser-nombres-y-describir.md#no-entró-y-por-qué))
+- Que `scaffold` y `check` se nieguen antes de escribir si hay un ID repetido (retrospectiva). ([fricciones](/2-digests/summary-004-2026-10-02-ser-nombres-y-describir.md#fricciones-del-proceso))
+- Cómo quiere las tarjetas de comprensión, cuando las vea en Anki. ([comprensión lectora](/docs/decisions.md#2026-10-01--comprensión-lectora))

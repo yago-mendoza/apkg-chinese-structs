@@ -903,3 +903,210 @@ exercises:
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: chang2, hanzi: 长, pinyin: cháng, meaning: largo}
     comments: []
+  - id: x.produce.ai
+    added: 2026-10-02
+    lang: es
+    type: produce
+    targets: [w.ai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «bajo (de estatura)»? Escribe el pinyin.'}
+    answer: {typed: ai3, hanzi: 矮, pinyin: ǎi, meaning: bajo (de estatura)}
+    comments: []
+  - id: x.produce.pang
+    added: 2026-10-02
+    lang: es
+    type: produce
+    targets: [w.pang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «gordo»? Escribe el pinyin.'}
+    answer: {typed: pang4, hanzi: 胖, pinyin: pàng, meaning: gordo}
+    comments: []
+  - id: x.produce.shou
+    added: 2026-10-02
+    lang: es
+    type: produce
+    targets: [w.shou]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «delgado»? Escribe el pinyin.'}
+    answer: {typed: shou4, hanzi: 瘦, pinyin: shòu, meaning: delgado}
+    comments: []
+  - id: x.produce.shuai
+    added: 2026-10-02
+    lang: es
+    type: produce
+    targets: [w.shuai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «guapo (sobre todo hombres)»? Escribe el pinyin.'}
+    answer: {typed: shuai4, hanzi: 帅, pinyin: shuài, meaning: guapo (sobre todo hombres)}
+    comments: []
+  - id: x.produce.congming
+    added: 2026-10-02
+    lang: es
+    type: produce
+    targets: [w.congming]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «listo, inteligente»? Escribe el pinyin.'}
+    answer: {typed: cong1 ming5, hanzi: 聪明, pinyin: cōngming, meaning: 'listo, inteligente'}
+    comments: []
+  - id: x.produce.youmo
+    added: 2026-10-02
+    lang: es
+    type: produce
+    targets: [w.youmo]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «gracioso, con sentido del humor»? Escribe el pinyin.'}
+    answer: {typed: you1 mo4, hanzi: 幽默, pinyin: yōumò, meaning: 'gracioso, con sentido del humor'}
+    comments: []
+  - id: x.listen.ta-hen-gao-wo-ye-hen-gao
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.ta-hen-gao-wo-ye-hen-gao
+    targets: [s.ta-hen-gao-wo-ye-hen-gao]
+    context: [w.ta.he, w.hen, w.gao, w.wo, w.ye]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Él es alto, y yo también.'}
+    comments: []
+  - id: x.produce.ta-hen-gao-wo-ye-hen-gao
+    added: 2026-10-02
+    lang: es
+    type: produce
+    sentence: s.ta-hen-gao-wo-ye-hen-gao
+    targets: [s.ta-hen-gao-wo-ye-hen-gao]
+    context: [w.ta.he, w.hen, w.gao, w.wo, w.ye]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Él es alto, y yo también.»'}
+    answer: {meaning: 'Él es alto, y yo también.'}
+    comments: []
+  - id: x.listen.tamen-dou-hen-congming
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.tamen-dou-hen-congming
+    targets: [s.tamen-dou-hen-congming]
+    context: [w.tamen, w.dou, w.hen, w.congming]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Todos ellos son muy listos.}
+    comments: []
+  - id: x.produce.tamen-dou-hen-congming
+    added: 2026-10-02
+    lang: es
+    type: produce
+    sentence: s.tamen-dou-hen-congming
+    targets: [s.tamen-dou-hen-congming]
+    context: [w.tamen, w.dou, w.hen, w.congming]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Todos ellos son muy listos.»'}
+    answer: {meaning: Todos ellos son muy listos.}
+    comments: []
+  - id: x.listen.ta-hen-piaoliang-ye-hen-shou
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.ta-hen-piaoliang-ye-hen-shou
+    targets: [s.ta-hen-piaoliang-ye-hen-shou]
+    context: [w.ta.she, w.hen, w.piaoliang, w.ye, w.shou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es guapa y también delgada.}
+    comments: []
+  - id: x.produce.ta-hen-piaoliang-ye-hen-shou
+    added: 2026-10-02
+    lang: es
+    type: produce
+    sentence: s.ta-hen-piaoliang-ye-hen-shou
+    targets: [s.ta-hen-piaoliang-ye-hen-shou]
+    context: [w.ta.she, w.hen, w.piaoliang, w.ye, w.shou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Es guapa y también delgada.»'}
+    answer: {meaning: Es guapa y también delgada.}
+    comments: []
+  - id: x.listen.ni-hen-piaoliang
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.ni-hen-piaoliang
+    targets: [s.ni-hen-piaoliang]
+    context: [w.ni, w.hen, w.piaoliang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Eres muy guapa!}
+    comments: []
+  - id: x.contrast.ben
+    added: 2026-10-02
+    lang: es
+    type: contrast
+    group: g.ben-ben
+    targets: [w.ben]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 笨, pinyin: bèn, meaning: 'torpe, tonto'}
+    comments: []
+  - id: x.listen.ta-hen-youmo-dajia-dou-xihuan
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.ta-hen-youmo-dajia-dou-xihuan
+    targets: [s.ta-hen-youmo-dajia-dou-xihuan]
+    context: [w.ta.he, w.hen, w.youmo, w.dajia, w.dou, w.xihuan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Es muy gracioso: a todo el mundo le cae bien.'}
+    comments: []
+  - id: x.produce.ta-hen-youmo-dajia-dou-xihuan
+    added: 2026-10-02
+    lang: es
+    type: produce
+    sentence: s.ta-hen-youmo-dajia-dou-xihuan
+    targets: [s.ta-hen-youmo-dajia-dou-xihuan]
+    context: [w.ta.he, w.hen, w.youmo, w.dajia, w.dou, w.xihuan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Es muy gracioso: a todo el mundo le cae bien.»'}
+    answer: {meaning: 'Es muy gracioso: a todo el mundo le cae bien.'}
+    comments: []
+  - id: x.listen.wo-bu-gao-ye-bu-ai
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.wo-bu-gao-ye-bu-ai
+    targets: [s.wo-bu-gao-ye-bu-ai]
+    context: [w.wo, w.bu, w.gao, w.ye, w.ai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No soy ni alto ni bajo.}
+    comments: []
+  - id: x.produce.wo-bu-gao-ye-bu-ai
+    added: 2026-10-02
+    lang: es
+    type: produce
+    sentence: s.wo-bu-gao-ye-bu-ai
+    targets: [s.wo-bu-gao-ye-bu-ai]
+    context: [w.wo, w.bu, w.gao, w.ye, w.ai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No soy ni alto ni bajo.»'}
+    answer: {meaning: No soy ni alto ni bajo.}
+    comments: []
+  - id: x.listen.ta-bu-pang-ta-hen-shou
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.ta-bu-pang-ta-hen-shou
+    targets: [s.ta-bu-pang-ta-hen-shou]
+    context: [w.ta.he, w.bu, w.pang, w.hen, w.shou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'No está gordo: es muy delgado.'}
+    comments: []
+  - id: x.produce.ta-bu-pang-ta-hen-shou
+    added: 2026-10-02
+    lang: es
+    type: produce
+    sentence: s.ta-bu-pang-ta-hen-shou
+    targets: [s.ta-bu-pang-ta-hen-shou]
+    context: [w.ta.he, w.bu, w.pang, w.hen, w.shou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No está gordo: es muy delgado.»'}
+    answer: {meaning: 'No está gordo: es muy delgado.'}
+    comments: []

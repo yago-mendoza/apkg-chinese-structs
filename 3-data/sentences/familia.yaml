@@ -68,3 +68,14 @@ sentences:
       - {text: 。}
     translation: {es: 'Mi hermana está leyendo el periódico.', en: 'My sister is reading the newspaper.'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.tamen-shi-wo-de-bama
+    use: hear
+    segments:
+      - {text: 他们, ref: w.tamen, pinyin: tāmen}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 爸妈, ref: w.bama, pinyin: bàmā}
+      - {text: 。}
+    translation: {es: 'Son mis padres.', en: "They're my parents."}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}

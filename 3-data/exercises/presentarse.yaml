@@ -1534,3 +1534,199 @@ exercises:
     question: {es: '¿Qué está haciendo Yago y qué piensa de ello?'}
     answer: {meaning: Está estudiando chino y le parece difícil.}
     comments: []
+  - id: x.dictation.yingguo
+    added: 2026-10-02
+    lang: es
+    type: listen
+    targets: [w.yingguo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ying1 guo2, hanzi: 英国, pinyin: Yīngguó, meaning: Reino Unido}
+    comments: []
+  - id: x.read.yingguo
+    added: 2026-10-02
+    lang: es
+    type: read
+    targets: [w.yingguo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 英国}
+    answer: {hanzi: 英国, pinyin: Yīngguó, meaning: Reino Unido}
+    comments: []
+  - id: x.dictation.xinghui
+    added: 2026-10-02
+    lang: es
+    type: listen
+    targets: [e.xinghui]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xing4 hui4, hanzi: 幸会, pinyin: xìnghuì, meaning: encantado (de conocerle)}
+    comments: []
+  - id: x.read.xinghui
+    added: 2026-10-02
+    lang: es
+    type: read
+    targets: [e.xinghui]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 幸会}
+    answer: {hanzi: 幸会, pinyin: xìnghuì, meaning: encantado (de conocerle)}
+    comments: []
+  - id: x.listen.nimen-shi-xuesheng-ma
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.nimen-shi-xuesheng-ma
+    targets: [s.nimen-shi-xuesheng-ma]
+    context: [w.nimen, w.shi, w.xuesheng, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Sois estudiantes?'}
+    comments: []
+  - id: x.produce.nimen-shi-xuesheng-ma
+    added: 2026-10-02
+    lang: es
+    type: produce
+    sentence: s.nimen-shi-xuesheng-ma
+    targets: [s.nimen-shi-xuesheng-ma]
+    context: [w.nimen, w.shi, w.xuesheng, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Sois estudiantes?»'}
+    answer: {meaning: '¿Sois estudiantes?'}
+    comments: []
+  - id: x.listen.wo-bu-renshi-ni
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.wo-bu-renshi-ni
+    targets: [s.wo-bu-renshi-ni]
+    context: [w.wo, w.bu, w.renshi, w.ni, w.jiao, w.shenme, w.mingzi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'No te conozco: ¿cómo te llamas?'}
+    comments: []
+  - id: x.produce.wo-bu-renshi-ni
+    added: 2026-10-02
+    lang: es
+    type: produce
+    sentence: s.wo-bu-renshi-ni
+    targets: [s.wo-bu-renshi-ni]
+    context: [w.wo, w.bu, w.renshi, w.ni, w.jiao, w.shenme, w.mingzi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No te conozco: ¿cómo te llamas?»'}
+    answer: {meaning: 'No te conozco: ¿cómo te llamas?'}
+    comments: []
+  - id: x.listen.wo-bu-shi-zhongguoren
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.wo-bu-shi-zhongguoren
+    targets: [s.wo-bu-shi-zhongguoren]
+    context: [w.wo, w.bu, w.shi, w.zhongguo, w.ren, w.xibanya]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'No soy chino, soy español.'}
+    comments: []
+  - id: x.produce.wo-bu-shi-zhongguoren
+    added: 2026-10-02
+    lang: es
+    type: produce
+    sentence: s.wo-bu-shi-zhongguoren
+    targets: [s.wo-bu-shi-zhongguoren]
+    context: [w.wo, w.bu, w.shi, w.zhongguo, w.ren, w.xibanya]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No soy chino, soy español.»'}
+    answer: {meaning: 'No soy chino, soy español.'}
+    comments: []
+  - id: x.listen.ta-shi-yingguoren
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.ta-shi-yingguoren
+    targets: [s.ta-shi-yingguoren]
+    context: [w.ta.he, w.shi, w.yingguo, w.ren]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es británico.}
+    comments: []
+  - id: x.listen.ta-shi-chenglong-ma
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.ta-shi-chenglong-ma
+    targets: [s.ta-shi-chenglong-ma]
+    context: [w.ta.he, w.shi, w.chenglong, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Es Jackie Chan?'}
+    comments: []
+  - id: x.listen.ta-bu-shi-chenglong
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.ta-bu-shi-chenglong
+    targets: [s.ta-bu-shi-chenglong]
+    context: [w.ta.he, w.bu, w.shi, w.chenglong]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No es Jackie Chan.}
+    comments: []
+  - id: x.listen.ta-shi-bu-shi-chenglong
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.ta-shi-bu-shi-chenglong
+    targets: [s.ta-shi-bu-shi-chenglong]
+    context: [w.ta.he, w.shi, w.bu, w.chenglong]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Es Jackie Chan o no?'}
+    comments: []
+  - id: x.nuance.ye-dou-position
+    added: 2026-10-02
+    lang: es
+    type: nuance
+    targets: [w.ye, w.dou]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我很高也 y 我们很高都: ¿qué falla?'}
+    answer: {meaning: '也 y 都 van justo delante del verbo o del adjetivo (y de 很), nunca al final: 我也很高 «yo también soy alto», 我们都很高 «todos somos altos». En inglés «too» va al final; en chino, no.'}
+    comments: []
+  - id: x.nuance.bu-tone
+    added: 2026-10-02
+    lang: es
+    type: nuance
+    targets: [w.bu]
+    refs: [p.bu-sandhi]
+    skills: [comprehension, tones]
+    prompt: {text: '不是, 不看, 不去 frente a 不想, 不好, 不买: ¿cómo suena 不 en cada grupo?'}
+    answer: {meaning: 'Delante de un cuarto tono, 不 sube a bú: 不是 bú shì, 不看 bú kàn, 不去 bú qù. Delante de los demás tonos se queda en bù: 不想 bù xiǎng, 不好 bù hǎo, 不买 bù mǎi, 不能 bù néng, 不说 bù shuō.'}
+    comments: []
+  - id: x.nuance.xing-jiao-mingzi
+    added: 2026-10-02
+    lang: es
+    type: nuance
+    targets: [w.xing, w.jiao, w.mingzi]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我姓门多萨, 我叫雅戈 y 我的名字是雅戈: ¿qué dice cada una?'}
+    answer: {meaning: '姓 da solo el apellido: 我姓门多萨. 叫 da el nombre de pila o el completo: 我叫雅戈. 我的名字是雅戈 también vale, pero suena más de libro. En chino el apellido va primero, y apellido más nombre es el 姓名. Para preguntar el apellido con respeto: 您贵姓？'}
+    comments: []
+  - id: x.comprehension.renshi-ni
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.renshi-ni-hen-gaoxing, s.renshi-ni-wo-ye-hen-gaoxing, s.ni-hen-piaoliang, s.en-xiexie]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Qué le dice él a ella, y qué le contesta ella?'}
+    answer: {meaning: 'Que él también está encantado de conocerla y que es muy guapa; ella le da las gracias.'}
+    comments: []
+  - id: x.comprehension.no-es-chenglong
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.ta-bu-shi-chenglong, s.ta-shi-wo-de-baba, s.ta-hen-gao-wo-ye-hen-gao]
+    skills: [reading, comprehension]
+    script: both
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta y respóndela en chino, en voz alta.'}
+    question: {sentence: s.ta-shi-chenglong-ma}
+    answer: {meaning: '不是。No es Jackie Chan: es el padre de quien habla. Y los dos son altos.'}
+    comments: []

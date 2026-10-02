@@ -127,3 +127,15 @@ entries:
     meaning: {es: 'hermana mayor', en: 'older sister'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
+  - id: w.bama
+    use: hear
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 爸妈
+    pinyin: bàmā
+    meaning: {es: 'los padres, papá y mamá (coloquial)', en: 'parents, mum and dad (colloquial)'}
+    level: 1
+    level_reason: forma corta y coloquial de 爸爸妈妈, ambas HSK 1
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+    comments: []

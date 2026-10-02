@@ -355,3 +355,13 @@ entries:
     contrast: {right: s.wo-zuo-feiji-qu-zhongguo, wrong: '我去中国坐飞机。', why: {es: 'Primero cómo (坐飞机), luego adónde (去中国). Al revés dice «voy a China a coger un avión».', en: 'First how, then where. The other way round means "I go to China to take a plane".'}}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
+  - id: st.shi-bu-shi
+    kind: structure
+    use: say
+    pattern: '{S} + 是 + 不 + 是 + {N}？'
+    refs: [w.shi, w.bu, w.shi]
+    meaning: {es: 'Pregunta de sí o no sin 吗: 是, 不 y 是 otra vez; el 不 del medio se dice átono.', en: 'A yes-no question without 吗: 是, 不, 是 again; the 不 in the middle is unstressed.'}
+    examples: [s.ta-shi-bu-shi-chenglong]
+    contrast: {right: s.ta-shi-bu-shi-chenglong, wrong: '他是不是成龙吗？', why: {es: '是不是 ya es la pregunta; con 吗 sobra.', en: '是不是 is already the question; 吗 is one too many.'}}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+    comments: []

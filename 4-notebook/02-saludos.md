@@ -10,7 +10,7 @@
 - ✅🃏 早 zǎo [tsɑʊ˧˩˧] · ¡buenos días! (informal); temprano · _expresión_ · Forma abreviada de 早上好 zǎoshang hǎo, «buenos días».
 - ✅🃏 您好 nín hǎo [nin˧˥ xɑʊ˧˩˧] · hola (con respeto) · _expresión_
 - ✅🃏 你们好 nǐmen hǎo [ni˧˩˧ mən xɑʊ˧˩˧] · hola (a un grupo) · _expresión_
-- ✅🃏 大家好 dàjiā hǎo [ta˥˩ tɕja˥ xɑʊ˧˩˧] · hola a todos · _expresión_
+- ✅🃏 大家好 dàjiā hǎo [ta˥˩ tɕja˥ xɑʊ˧˩˧] · hola a todos · _expresión_ · Algo más formal que 你们好: sirve para abrir cuando hablas ante un grupo.
 - ✅🃏 老师好 lǎoshī hǎo [lɑʊ˧˩˧ ʂɨ˥ xɑʊ˧˩˧] · hola, profe · _expresión_
 - ✅🃏 欢迎 huānyíng [xwan˥ iŋ˧˥] · bienvenido; dar la bienvenida · _verbo_ · 迎 es salir al encuentro de alguien con una sonrisa; con 欢 «alegría»: recibir con alegría.
 - ✅🃏 怎么样 zěnmeyàng [tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal?; ¿cómo? · _interrogativo_ · 你好吗？ es correcto, pero de libro; para preguntar cómo está alguien suena más natural 你怎么样？. También pide opinión: 这个怎么样？ «¿qué tal este?».

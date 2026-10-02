@@ -21,6 +21,9 @@
 - ✅🃏 帮 bāng [pɑŋ˥] · ayudar (a alguien) · _verbo_ · Con la persona detrás: 帮我 «ayúdame». Es la forma corriente al hablar.
 - ✅🃏 帮忙 bāngmáng [pɑŋ˥ mɑŋ˧˥] · echar una mano · _verbo_ · No lleva a quién detrás: 他来帮忙 «viene a echar una mano». «Ayúdame» es 帮我.
 - ✅🃏 帮助 bāngzhù [pɑŋ˥ ʈʂu˥˩] · ayudar; ayuda · _verbo_ · Más formal que 帮, y también sustantivo: 谢谢你的帮助 «gracias por tu ayuda».
+- ✅🃏 你真棒 nǐ zhēn bàng [ni˧˩˧ ʈʂən˥ pɑŋ˥˩] · ¡eres genial!, ¡qué bien lo haces! · _expresión_
+- ✅🃏 哪里哪里 nǎlǐ nǎlǐ [na˧˩˧ li˧˩˧ na˧˩˧ li˧˩˧] · ¡qué va!, no es para tanto (respuesta modesta a un elogio) · _expresión_ · Respuesta modesta a 你真棒. Suena algo tradicional: hoy, sobre todo entre jóvenes, es más común contestar 谢谢.
+- ✅🃏 再说一遍 zài shuō yí biàn [tsaɪ˥˩ ʂwɔ˥ i˧˥ pjɛn˥˩] · ¿puedes repetirlo?, dilo otra vez · _expresión_ · Lo que se dice en clase para pedir que repitan. Para leer otra vez, 再读一遍 zài dú yí biàn.
 
 ## Formas de decir que sí
 

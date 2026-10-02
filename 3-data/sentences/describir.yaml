@@ -134,3 +134,94 @@ sentences:
       - {text: ！}
     translation: {es: '¡Qué piernas tan largas tienes!', en: 'Your legs are so long!'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.ta-hen-gao-wo-ye-hen-gao
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 高, ref: w.gao, pinyin: gāo}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 也, ref: w.ye, pinyin: yě}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 高, ref: w.gao, pinyin: gāo}
+      - {text: 。}
+    translation: {es: 'Él es alto, y yo también.', en: "He's tall, and so am I."}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+
+  - id: s.tamen-dou-hen-congming
+    use: say
+    segments:
+      - {text: 他们, ref: w.tamen, pinyin: tāmen}
+      - {text: 都, ref: w.dou, pinyin: dōu}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 聪明, ref: w.congming, pinyin: cōngming}
+      - {text: 。}
+    translation: {es: 'Todos ellos son muy listos.', en: "They're all very smart."}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: deberes 2026-09-24, date: '2026-09-24'}
+
+  - id: s.ta-hen-piaoliang-ye-hen-shou
+    use: say
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: tā}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: piàoliang}
+      - {text: ，}
+      - {text: 也, ref: w.ye, pinyin: yě}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 瘦, ref: w.shou, pinyin: shòu}
+      - {text: 。}
+    translation: {es: 'Es guapa y también delgada.', en: "She's pretty, and slim too."}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+
+  - id: s.ni-hen-piaoliang
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: piàoliang}
+      - {text: ！}
+    translation: {es: '¡Eres muy guapa!', en: "You're very pretty!"}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+  - id: s.ta-hen-youmo-dajia-dou-xihuan
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 幽默, ref: w.youmo, pinyin: yōumò}
+      - {text: ，}
+      - {text: 大家, ref: w.dajia, pinyin: dàjiā}
+      - {text: 都, ref: w.dou, pinyin: dōu}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 。}
+    translation: {es: 'Es muy gracioso: a todo el mundo le cae bien.', en: "He's very funny; everyone likes him."}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: deberes 2026-09-24, date: '2026-09-24'}
+
+  - id: s.wo-bu-gao-ye-bu-ai
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 不, ref: w.bu, pinyin: bù}
+      - {text: 高, ref: w.gao, pinyin: gāo}
+      - {text: ，}
+      - {text: 也, ref: w.ye, pinyin: yě}
+      - {text: 不, ref: w.bu, pinyin: bù}
+      - {text: 矮, ref: w.ai, pinyin: ǎi}
+      - {text: 。}
+    translation: {es: 'No soy ni alto ni bajo.', en: "I'm neither tall nor short."}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+
+  - id: s.ta-bu-pang-ta-hen-shou
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 不, ref: w.bu, pinyin: bú, sandhi: bù → bú delante de cuarto tono}
+      - {text: 胖, ref: w.pang, pinyin: pàng}
+      - {text: ，}
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 瘦, ref: w.shou, pinyin: shòu}
+      - {text: 。}
+    translation: {es: 'No está gordo: es muy delgado.', en: "He isn't fat; he's very slim."}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}

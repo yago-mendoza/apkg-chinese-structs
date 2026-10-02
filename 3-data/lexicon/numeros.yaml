@@ -175,3 +175,24 @@ entries:
       - {ref: w.yao, cue: 'yào, cae y suena «yao»: querer'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
+  - id: w.ben.book
+    use: say
+    role: function
+    kind: word
+    hanzi: 本
+    pinyin: běn
+    meaning: {es: clasificador de libros y cuadernos, en: measure word for books}
+    source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27', rescued: 004-2026-10-02-ser-nombres-y-describir}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-02', text: 'Un árbol 木 con una raya en la raíz: su sentido original es «raíz, origen». Como clasificador, cuenta libros.'}
+      - {kind: teacher, private: false, date: '2026-10-02', text: 'Como 个 para personas, 本 para libros: 一个人 «una persona», 一本书 «un libro».'}
+  - id: w.ke
+    use: hear
+    role: function
+    kind: word
+    hanzi: 棵
+    pinyin: kē
+    meaning: {es: clasificador de árboles y plantas, en: measure word for trees and plants}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-02', text: 'Va entre 这, 那 o un número y la palabra: 这棵树 «este árbol», 一棵树 «un árbol».'}
