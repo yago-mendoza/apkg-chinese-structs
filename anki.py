@@ -69,6 +69,7 @@ NEW_PER_DAY, REVIEWS_PER_DAY = 30, 300
 TESTING_PHASE = False      # fase de pruebas cerrada (docs/owner.md): `push --reset` se niega salvo --force
 LEARN_STEPS = [1.0, 10.0]  # minutos: una nueva vuelve en la misma sesión antes de pasar a días
 RELEARN_STEPS = [10.0]     # minutos: una tarjeta fallada vuelve en la misma sesión, no al día siguiente
+NEW_GATHER_LOWEST_POSITION, NEW_SORT_NONE = 1, 1   # enums de Anki (deck_config.proto): por posición, sin barajar
 THEME_MAX, THEME_MIN = 60, 3               # entradas por tema: por encima, ¿dividir?; por debajo, ¿juntar?
 EXAMPLES_MAX = 2                           # frases de ejemplo al dar la vuelta a una tarjeta de palabra
 PRUNE_MAX = 10                             # más huérfanas que esto: `push --prune` se niega sin --force
@@ -2988,9 +2989,13 @@ def ensure_limits():
     conf = anki_request("getDeckConfig", deck=DECK_NAME)
     want = {("new", "perDay"): NEW_PER_DAY, ("rev", "perDay"): REVIEWS_PER_DAY,
             ("new", "delays"): LEARN_STEPS, ("lapse", "delays"): RELEARN_STEPS}
-    if any(conf.get(a, {}).get(b) != v for (a, b), v in want.items()):
+    # Las nuevas salen en el orden que fija reorder_new (nivel, tema, hermanas separadas): recoger por la posición
+    # más baja (gather 1) y no reordenar después (sort 1, NO_SORT). Al azar (3 y 4), Anki mezclaría niveles e ignoraría ese orden.
+    top = {"newGatherPriority": NEW_GATHER_LOWEST_POSITION, "newSortOrder": NEW_SORT_NONE}
+    if any(conf.get(a, {}).get(b) != v for (a, b), v in want.items()) or any(conf.get(k) != v for k, v in top.items()):
         for (a, b), v in want.items():
             conf.setdefault(a, {})[b] = v
+        conf.update(top)
         anki_request("saveDeckConfig", config=conf)
     steps = lambda s: " ".join(f"{m:g} min" for m in s)
     return (f"{NEW_PER_DAY} nuevas y {REVIEWS_PER_DAY} repasos al día; pasos {steps(LEARN_STEPS)}, al fallar "

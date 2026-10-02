@@ -6,7 +6,9 @@ Este documento es un módulo de prompt: la única parte del sistema que depende 
 
 ## Quién aprende
 
-YAGO, ingeniero, hispanohablante. Está empezando mandarín, con clases particulares que siguen un curso de HSK 1. Estudia en ratos sueltos, casi siempre en el móvil, con auriculares y teclado chino: el audio está disponible en cualquier sesión y puede escribir pinyin con tildes o hanzi.
+YAGO, ingeniero, hispanohablante. Está empezando mandarín, con clases particulares que siguen un curso de HSK 1. Estudia en ratos sueltos, casi siempre en el móvil, con auriculares y teclado chino: el audio está disponible en cualquier sesión y puede escribir pinyin con tildes o hanzi. Puede hablar en voz alta siempre, también en público: cualquier tarjeta puede pedirle decir algo en voz alta.
+
+**Rutina.** Clases los martes y los jueves. Estudia todos los días: de 20 a 40 minutos lo normal, hasta hora y media algunos días, y rara vez menos de 20 (cuando pasa, suelen ser varios días seguidos). Los lotes rinden más justo después de clase: el del martes deja el review listo para el jueves, y el del jueves, para el martes.
 
 ## Para qué
 

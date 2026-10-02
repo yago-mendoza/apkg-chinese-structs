@@ -171,3 +171,11 @@ Con 1.088 nuevas pendientes (unos 54 días a 20 al día), YAGO sube a 30 nuevas 
 ### 2026-10-02 · Lo fallado vuelve en minutos
 
 YAGO notó que una tarjeta fallada no volvía hasta el día siguiente: el preset tenía un solo paso de 1 día para nuevas y para fallos. Ahora `push` fija pasos de 1 y 10 minutos para las nuevas y de 10 minutos para las falladas, solo en el preset de este mazo. Así se fija en la misma sesión, que es cuando más rinde para un idioma. El límite de nuevas se queda en 30: para un día con más ganas, Estudio personalizado (aumentar las nuevas de hoy) sin subir el límite fijo, que con días irregulares acumularía repasos. Descartado por ahora: activar FSRS, que es un ajuste de toda la colección y afectaría a los otros mazos de YAGO; si lo quiere, lo activa él. Vive en: `docs/owner.md`, `anki.py` (`LEARN_STEPS`, `RELEARN_STEPS`).
+
+### 2026-10-02 · Las nuevas, en el orden calculado
+
+YAGO vio salir 大家 (HSK 2) entre las primeras. Las posiciones estaban bien calculadas, pero el preset recogía las nuevas al azar (notas y tarjetas al azar), así que Anki ignoraba el orden: mezclaba niveles y juntaba tarjetas de una misma palabra. Ahora `push` fija «posición más baja» y «sin reordenar» (comprobado en el código de Anki: gather 1, sort 1); la primera nueva pasó a ser 你好. Vive en: `docs/design.md` («Anki»), `anki.py` (`ensure_limits`).
+
+### 2026-10-02 · Rutina de YAGO
+
+Clases martes y jueves; de 20 a 40 minutos al día, hasta hora y media algunos días; puede hablar en voz alta siempre. Los lotes, mejor justo después de clase, dos a la semana y ligeros. Vive en: `docs/goal.md` («Quién aprende»).
