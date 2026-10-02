@@ -57,7 +57,9 @@ ANKI_CONNECT = "http://127.0.0.1:8765"
 
 # Identidades estables: no cambiarlas nunca, o Anki verá un mazo/modelo nuevo.
 GUID_NAMESPACE = "apkg-chinese-structs"
-DECK_NAME = "🐉 Chino práctico"          # subdecks por nivel y tema: "🐉 Chino práctico::HSK 1::02 Saludos y despedidas"
+# Ruta completa del mazo en Anki: YAGO lo guarda dentro de su carpeta «🀄 Chinese», junto a otros mazos que no son
+# de este proyecto. Subdecks por nivel y tema: "🀄 Chinese::🐉 Chino práctico::HSK 1::02 Saludos y despedidas".
+DECK_NAME = "🀄 Chinese::🐉 Chino práctico"
 DECK_ID_BASE = 1_758_800_000_000         # ID del subdeck = base + hash estable del id del tema
 MODEL_TYPED_ID = 1_758_800_101
 MODEL_SELF_ID = 1_758_800_102

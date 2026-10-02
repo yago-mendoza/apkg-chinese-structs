@@ -11,6 +11,7 @@ Configuración y decisiones propias de este mazo (Yago Mendoza). Nada secreto: e
 
 - Proyecto en `C:\Users\yagom\dev\apkg-chinese-structs`, Python en `.venv`, Windows.
 - Grabaciones de clase (`tools/class_audio.py`): entorno aparte `.venv-audio` con Python 3.13 (`py -3.13 -m venv .venv-audio`, luego `pip install -r tools/requirements-audio.txt`). PyAV fijado en 18.1.0 porque Smart App Control de Windows bloquea la DLL de la 19.0.0. La primera vez descarga los modelos (Whisper large-v3 y small en la caché de Hugging Face, unos 3,5 GB; la huella de voz en `.venv-audio/models/`). Todo en CPU: 4 trozos en paralelo, unos 40 minutos para una clase de 73.
+- En Anki, el mazo vive dentro de la carpeta `🀄 Chinese`, junto a otros mazos de YAGO que no son de este proyecto: su ruta completa es `DECK_NAME` en `anki.py` (`🀄 Chinese::🐉 Chino práctico`). Si se mueve en Anki, hay que cambiar `DECK_NAME` antes del siguiente `push`, o `push` lo devolverá a la ruta antigua.
 - Anki desktop en este PC con AnkiConnect (`2055492159`) y sesión de AnkiWeb iniciada: `push` sincroniza y el móvil recibe los cambios al sincronizar.
 - Azure AI Speech: recurso `apkg-chinese-structs`, región North Europe (West Europe no admitía clientes nuevos), nivel **S0**. Clave y región como variables de entorno del usuario de Windows (`AZURE_SPEECH_KEY`, `AZURE_SPEECH_REGION`). Aviso de presupuesto recomendado: 1 € al mes en Cost Management → Budgets (Azure no permite un tope que corte el gasto en pago por uso). Solo se gasta al ejecutar `anki.py audio`: unos céntimos por lote.
 
