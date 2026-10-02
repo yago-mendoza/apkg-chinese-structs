@@ -7,13 +7,15 @@
 Lo único que necesito que contestes para el siguiente lote. Todo lo demás, más abajo, es para cuando quieras ahondar.
 
 - **Adjetivos para decir.** 聪明, 矮, 瘦, 胖, 帅 y 幽默 pasan de «oír» a «decir», porque la profesora los trabaja a fondo. Son de HSK 3 a 5 y esperan en su nivel. ¿Te parece bien, o alguno no lo usarías? ([detalle](/2-digests/summary-004-2026-10-02-ser-nombres-y-describir.md#describir-a-alguien-很-也-y-都))
-  > 
+  > aver, no me parece mal saberlos para empezar a disponer de adjetivos. yo la verdad es que los dejaria, si aparece la explicaicon esa minima ceinos de sus hanzis y tal, sino adjetivos no conoceré hasta muy tarde. y son bastante básicos, se que no es lo más básico aprender adjetivos pero los veo bastante básicos, si. por eso pensab meteor sne HSK1. de hecho lo que me enseñe la profeosr,a unque sea fuera de HSK ... estaria bine uqe lo orgnizaras con us propia cateogria de , fuera NIVEL pero por evidencia en clase, vs lo que ordenas a su debido nivel . osea lo que venga de disapsotivas homework (aparezca aunnque sea cirucntsaucelemtne en una frasdee gaps or whatveer) y lo que te dig que vine de slides o profesora, eso es cateogria HSKN siendo N el nivel en el que actualemtne me ubique. mientras que si alog realmente crees que es HSK-X aunque lo vea con mi profeosra y muy far -fetched del conteido que hago, esa cosa la peude smeter en su HSK corrpesodneinte, claro. o crees que es mejor documentar ... ose poner cada cosa en su HSK y yo poder ir mirnado HSKs... y en funcion de como veas mi progreos ANKI, decidir cunad odeslobeuqearme cards ¿? si, creo que l... bune osabes que? uqe no. que ya me gusta como lo haces, ordnea tu el nviel por HSKS, ya me parece bien. y yo haré HSK1 o decidiré hacer otros. noralent decidire hacer HSK... x para tambien caordarme de las cosas que me dice mi profesora. creo que no es mala idea. no ¿? y tulo vasm ietneo todo, donde toque ,y santas pascuas. no ¿?
+
+  y otro apnute, en inbox voy a meter matierales tmainb de calse que haya hecho ese dia. al miraor sn osolo te quede scon lo baiscos que es trabaj, sinoque si hay ejemplos o frase de gaps, el voacbualari oDENTRO de esas frsae de gaps tamibne es cpatuable como enseñanza propia y lcaisficas en HSK peritnente. enteinde ¿ 
 
 - **Sílabas sueltas.** Los deberes del 24 practican pares como sì / cì, jiā / xiā o qiú / jiǔ. ¿Quieres tarjetas de escucha solo de sílabas (oír y elegir), o con las palabras basta? ([detalle](#no-entró-y-por-qué))
-  > 
+  > tarjetas de oir y elegir tambien !!!! son de lo mas importante de hecho. proporcinonaza tambien.
 
 - **Retrospectiva.** ¿Te parece bien la propuesta de cambio de proceso? ([detalle](#retrospectiva))
-  > 
+  > creo que si.
 
 ## Cómo vas
 
@@ -35,7 +37,7 @@ Lo único que necesito que contestes para el siguiente lote. Todo lo demás, má
 ## Huecos y propuestas
 
 - **Números y hora.** La lección sigue en presentarse; tienes los números del 1 al 10, pero no la hora (点, 分, 现在) ni los días (今天, 明天 ya está, 星期). Es lo que más rinde a continuación.
-  > 
+  > pues 
 
 - **Clasificadores.** Ya tienes 个, 本 y 棵. Con 杯 bēi «vaso, taza» (我要一杯咖啡) pides en cualquier cafetería.
   > 
@@ -87,24 +89,24 @@ Palabras que quieres decir y aún no aparecen en ninguna frase. Trae una frase d
 ## No entró, y por qué
 
 - ❌ **La tabla de apellidos y nombres comunes** (李, 张, 王; 力, 丽, 伟…): es cultura general, no vocabulario que vayas a decir. 王 espera en el desván; los demás entrarán cuando salgan en una frase.
-  > 
+  > perfecto! no me intersan apellidso y nombres en paritculra, pero si las estucturas.
 
 - ❌ **Los préstamos de la diapositiva** (沙发, 香槟, 麦克风, 派对): la idea ya tiene su tarjeta de matiz con 咖啡.
-  > 
+  > perfecot.
 
 - ❌ **Los nombres de los ejercicios** (白大龙, 张丽, 姚明, 科比…): solo entra 成龙, como contexto de las frases con 是.
-  > 
+  > exacto, los ombres de jercircos o 'lea a continuacon' no son relevantes, es un tipo de lenguaje que no me servira.
 
 - ❌ **Vocabulario del aula** (热身, 生词, 我们班, 打招呼, 介绍) y notas al margen (快乐).
-  > 
+  > lo mismo que arriba, no servira, no ?
 
 - **Las sílabas sueltas del 24** (sì / cì, zuàn / suàn, jiā / xiā, xīn / qīn, qiú / jiǔ): las cubren las trampas fonéticas de cada tarjeta. Ver el «Sine qua non».
-  > 
+  > perecto.
 
 ## Por verificar
 
 - 哪里哪里 como respuesta a un elogio: el mazo lo marca como algo tradicional. Confírmalo con la profesora.
-  > 
+  > si es tradicional, entonces fuera. regla unanime. solo formal para empresas o ocloquial para calle, pero traidiconal creo que no es deseale no ?
 
 ## Mantenimiento
 

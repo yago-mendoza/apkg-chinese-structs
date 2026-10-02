@@ -183,3 +183,7 @@ Clases martes y jueves; de 20 a 40 minutos al día, hasta hora y media algunos d
 ### 2026-10-02 · Más comprensión lectora y parejas de tonos
 
 YAGO vio pequeños los tipos minoritarios. Mirados contra su objetivo, y contando lo que ya refuerzan los reversos (985 apariciones de frases de ejemplo, 313 reversos con su grupo de contraste), lo flojo era la comprensión lectora (6 tarjetas; es lo único que entrena leer chino seguido) y los tonos de dos sílabas. Entran 24 tarjetas de comprensión con frases que ya había (sin audio nuevo) y la primera parte de la pista de pronunciación: las 20 parejas de tonos, con dos palabras cada una (27 tarjetas nuevas; las demás ya existían por neutro o sandhi). La «voz alta» ya era grande: las 128 tarjetas «decir» de frases se dicen en voz alta, y ahora `gaps` las cuenta así. Descartado: quitar las lecturas sueltas de palabras de función, que al empezar, en el HSK 1, sí ayudan (lo dijo YAGO). Vive en: `docs/design.md` («Pronunciación», «Cobertura»), `docs/goal.md` («Cómo se practican las frases»).
+
+### 2026-10-02 · El mazo, dentro de «🀄 Chinese»
+
+YAGO movió el mazo en Anki a su carpeta `🀄 Chinese`. Un `push` hecho justo después con la ruta antigua lo devolvió a la raíz (recreó el árbol viejo y movió allí las tarjetas, sin perder progreso); se corrigió `DECK_NAME` a `🀄 Chinese::🐉 Chino práctico`, se recolocaron las 1215 tarjetas y se borró el árbol viejo, ya vacío. Lección: si el mazo se mueve en Anki, primero `DECK_NAME`. Vive en: `anki.py` (`DECK_NAME`), `docs/owner.md`.

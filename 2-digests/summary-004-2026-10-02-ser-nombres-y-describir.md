@@ -111,3 +111,7 @@ Lo pediste al ver el reparto de tarjetas.
 - Las lecturas de palabras sueltas como 吗, 呢 o 的 se quedan: al empezar ayudan.
 
 **En el mazo**: 1215 tarjetas (51 más).
+
+### 2026-10-02 · El mazo, dentro de «🀄 Chinese»
+
+Moviste el mazo a tu carpeta `🀄 Chinese` en Anki. Mi `push` siguiente usaba aún la ruta antigua y lo devolvió a la raíz; lo corregí: el código usa ya `🀄 Chinese::🐉 Chino práctico`, las 1215 tarjetas están ahí con su progreso (las 8 en aprendizaje, intactas) y el árbol viejo, vacío, se borró. Tus otros mazos de esa carpeta no se tocaron.
