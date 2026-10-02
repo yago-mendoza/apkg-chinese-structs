@@ -68,6 +68,7 @@ Condición indispensable en todo el mazo (tarjetas, cuaderno, log y review): que
 - **Calculado, no inventado.** Qué pieza da el sonido y cuál el significado sale de datos abiertos (`sources/hanzi/`, `anki.py hanzi`), no de la memoria del agente; el agente solo redacta. Una relación solo sale si es verdadera: el 马 de 妈 da el sonido, no el caballo.
 - **Tarjetas, solo si se confunden de verdad.** Una relación va como nota; tarjeta propia (contraste) solo si los caracteres están en el mazo, son de su nivel y de verdad se confunden. Así el mazo no se infla.
 - **Otros niveles.** Una nota puede mencionar palabras de niveles superiores para completar una familia, marcadas con su nivel entre corchetes («发票 fāpiào [HSK 4]»). Mencionarlas no las mete en el mazo.
+- **Cada hanzi, su porqué.** Todo carácter del mazo tiene en `3-data/hanzi.yaml` su origen redactado: el dibujo o la idea si es pictograma o ideograma, qué pieza da el significado y cuál el sonido si es fonético-semántico (y si ese sonido aún se parece), o que no hay historia que contar cuando solo se usa por su sonido. Lo discutido se marca. El cuaderno web lo enseña al pasar el ratón por cualquier hanzi; el reverso de las tarjetas de palabras lo resume en «Sus caracteres».
 - **«En clase».** Lo que dijo la profesora se rotula «En clase» en las tarjetas, nunca «Profesora».
 
 ## Orden
