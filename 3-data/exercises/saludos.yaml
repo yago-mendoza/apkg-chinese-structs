@@ -622,3 +622,45 @@ exercises:
     prompt: {text: '你好, 你好吗 y 你回来了: ¿cuándo cada uno?'}
     answer: {meaning: '你好: al conocer a alguien o con desconocidos. 你好吗？ «¿cómo estás?» es de libro. Con quien ya conoces se saluda con la situación: 早！, 你回来了！, 去哪里啊？, 吃饭了吗？.'}
     comments: []
+  - id: x.comprehension.saludo-y-quedada
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.ni-hao-ma, s.wo-hen-hao-ni-ne, s.wo-ye-hen-hao, s.women-xiawu-jian-ba]
+    skills: [reading, comprehension]
+    script: both
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Cómo están los dos, y cuándo se ven?'}
+    answer: {meaning: 'Los dos están bien, y quedan por la tarde.'}
+    comments: []
+  - id: x.comprehension.vuelve-a-casa
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.ni-huilai-le, s.chifan-le-ma, s.wo-mei-chifan]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Ha comido el que acaba de volver?'}
+    answer: {meaning: 'No, no ha comido.'}
+    comments: []
+  - id: x.tones.baibai
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.baibai]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '22', hanzi: 拜拜, pinyin: báibái, meaning: 'adiós (informal, del inglés bye-bye)'}
+    comments: []
+  - id: x.tones.ninhao
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [e.ninhao]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '23', hanzi: 您好, pinyin: nín hǎo, meaning: hola (con respeto)}
+    comments: []

@@ -263,3 +263,25 @@ exercises:
     question: {sentence: s.beijing-xiayu-ma}
     answer: {meaning: 'Hoy no: hace calor. Mañana sí (明天会下雨).'}
     comments: []
+  - id: x.comprehension.hace-frio
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.tianqi-leng-ma, s.tianqi-hen-leng, s.yao-xiayu-le]
+    skills: [reading, comprehension]
+    script: both
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Qué tiempo hace?'}
+    answer: {meaning: 'Hace mucho frío y va a llover.'}
+    comments: []
+  - id: x.comprehension.no-voy
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.xiayu-le, s.ni-weishenme-bu-qu, s.yinwei-xiayu-suoyi-wo-bu-qu]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Por qué no va?'}
+    answer: {meaning: 'Porque llueve.'}
+    comments: []

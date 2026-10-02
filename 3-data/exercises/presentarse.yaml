@@ -1730,3 +1730,98 @@ exercises:
     question: {sentence: s.ta-shi-chenglong-ma}
     answer: {meaning: '不是。No es Jackie Chan: es el padre de quien habla. Y los dos son altos.'}
     comments: []
+  - id: x.comprehension.de-donde-es
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.ni-jiao-shenme-mingzi, s.wo-jiao-yage, s.wo-xing-menduosa, s.wo-laizi-xibanya]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta y respóndela en chino, en voz alta.'}
+    question: {sentence: s.ni-shi-na-guo-ren}
+    answer: {meaning: '西班牙人 (es de España).'}
+    comments: []
+  - id: x.comprehension.habla-chino
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.ni-shi-zhongguoren-ma, s.wo-bu-shi-zhongguoren, s.wo-hui-shuo-zhongwen]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Es chino? ¿Habla chino?'}
+    answer: {meaning: 'No es chino, es español, pero sabe hablar chino.'}
+    comments: []
+  - id: x.comprehension.manana-no
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.mingtian-ni-lai-ma, s.wo-yao-gongzuo, s.wo-meiyou-shijian]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Viene mañana? ¿Por qué?'}
+    answer: {meaning: 'No: tiene que trabajar y no tiene tiempo.'}
+    comments: []
+  - id: x.comprehension.como-te-llamas
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.wo-bu-renshi-ni, s.wo-jiao-yage, s.hen-gaoxing-renshi-ni]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta y respóndela en chino, en voz alta.'}
+    question: {sentence: s.ta-de-mingzi-shi-shenme}
+    answer: {meaning: '他叫雅戈 (se llama Yago).'}
+    comments: []
+  - id: x.comprehension.somos-estudiantes
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.nimen-shi-xuesheng-ma, s.women-dou-shi-xuesheng, s.women-shi-pengyou]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Qué son?'}
+    answer: {meaning: 'Estudiantes, y además amigos.'}
+    comments: []
+  - id: x.tones.gaoxing
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.gaoxing]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '14', hanzi: 高兴, pinyin: gāoxìng, meaning: contento}
+    comments: []
+  - id: x.tones.xingming
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.xingming]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '42', hanzi: 姓名, pinyin: xìngmíng, meaning: nombre completo}
+    comments: []
+  - id: x.tones.laizi
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.laizi]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '24', hanzi: 来自, pinyin: láizì, meaning: 'venir de, ser de'}
+    comments: []
+  - id: x.tones.xuexi
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.xuexi]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '22', hanzi: 学习, pinyin: xuéxí, meaning: 'estudiar, aprender'}
+    comments: []

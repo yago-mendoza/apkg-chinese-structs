@@ -445,6 +445,19 @@ class Repository(unittest.TestCase):
             dest = [dst for _, src, dst in actions if src.name == "clase.m4a"]
             self.assertEqual(dest, [audio / "clase" / "clase.m4a"])
 
+    def test_tone_pairs(self):
+        w = lambda i, hz, py, use="say": {"id": i, "kind": "word", "use": use, "hanzi": hz, "pinyin": py}
+        self.assertEqual(anki.tone_pair(w("a", "电视", "diànshì")), "4-4")
+        self.assertEqual(anki.tone_pair(w("b", "谢谢", "xièxie")), "4-5")
+        self.assertIsNone(anki.tone_pair(w("c", "老师好", "lǎoshī hǎo")))          # solo dos sílabas
+        entries = [w("x1", "电视", "diànshì"), w("x2", "爱好", "àihào"), w("x3", "上课", "shàngkè"),
+                   w("x4", "电话", "diànhuà", use="read")]                          # solo para leer: no cuenta
+        picks = anki.tone_pair_picks(entries)
+        self.assertEqual(len(picks), anki.TONE_PAIR_WORDS)
+        self.assertNotIn("x4", picks)
+        self.assertIn("tones", anki.required_cards(entries[0], {}, frozenset(picks | {"x1"})))
+        self.assertEqual(len(anki.TONE_PAIRS), 20)
+
     def test_reading_comprehension(self):
         entries, sentences, _ = anki.load()
         eby, sby = {e["id"]: e for e in entries}, {s["id"]: s for s in sentences}

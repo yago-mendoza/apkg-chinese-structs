@@ -517,8 +517,40 @@ def groups_by_member(entries):
     return out
 
 
-def required_cards(item, groups_of):
-    """Tarjetas que exige una entrada o frase según su `use`, su tipo y su rol."""
+TONE_PAIR_WORDS = 2      # palabras con tarjeta de tonos por cada pareja de tonos
+TONE_PAIRS = [f"{a}-{b}" for a in "1234" for b in "12345"]   # 1-1 … 4-4 y cada tono seguido de neutro (5)
+
+
+def tone_pair(item):
+    """Pareja de tonos de una palabra o expresión de dos sílabas («3-4», «2-5»), por el tono de cita; None si no."""
+    if item.get("kind") not in ("word", "expression"):
+        return None
+    syl = syllable_tones(item.get("hanzi"), item.get("pinyin"))
+    if not syl or len(syl) != 2 or any(t == "erhua" for _, t in syl) or syl[0][1] == 5:
+        return None
+    return f"{syl[0][1]}-{syl[1][1]}"
+
+
+def tone_pair_picks(entries):
+    """Pista de pronunciación: por cada pareja de tonos, las TONE_PAIR_WORDS palabras de dos sílabas (para oír o
+    decir, sin nombres propios) que llevan tarjeta de tonos; primero las que ya la piden por neutro o sandhi, luego
+    las de nivel más bajo."""
+    levels, eby, cands = hsk_levels(), {e["id"]: e for e in entries}, {}
+    for e in entries:
+        pair = tone_pair(e) if use_modalities(e) & {"hear", "say"} and pos_of(e) != "nombre-propio" else None
+        if pair:
+            cands.setdefault(pair, []).append(e)
+    picks = set()
+    for words in cands.values():
+        words.sort(key=lambda e: (not tone_traps(e["hanzi"], e["pinyin"]), level_of(e["id"], eby, {}, levels) or 99,
+                                  e["id"]))
+        picks |= {e["id"] for e in words[:TONE_PAIR_WORDS]}
+    return picks
+
+
+def required_cards(item, groups_of, tone_picks=frozenset()):
+    """Tarjetas que exige una entrada o frase según su `use`, su tipo y su rol. `tone_picks`: las palabras elegidas
+    para cubrir las parejas de tonos (tone_pair_picks)."""
     kind, mods, req = item.get("kind"), use_modalities(item), set()
     if kind is None:                                    # frase
         if "hear" in mods:
@@ -532,7 +564,7 @@ def required_cards(item, groups_of):
             req.add("listen")
         if "say" in mods:
             req.add("produce-sentence" if item.get("role") == "function" else "produce")
-        if mods & {"hear", "say"} and tone_traps(item.get("hanzi"), item.get("pinyin")):
+        if mods & {"hear", "say"} and (tone_traps(item.get("hanzi"), item.get("pinyin")) or item.get("id") in tone_picks):
             req.add("tones")
     elif kind in ("character", "component"):
         in_contrast = any(g.get("basis") in ("visual", "homophone", "soundalike") for g in groups_of.get(item.get("id"), []))
@@ -579,7 +611,8 @@ def coverage(entries, sentences, exercises):
     for ex in exercises:
         for tid in ex.get("targets", []):
             have.setdefault(tid, set()).update(satisfied(ex))
-    return [(it, required_cards(it, groups_of), have.get(it["id"], set()))
+    picks = tone_pair_picks(entries)
+    return [(it, required_cards(it, groups_of, picks), have.get(it["id"], set()))
             for it in entries + sentences if it.get("kind") != "group"]
 
 
@@ -797,10 +830,21 @@ def cmd_gaps():
     from collections import Counter
     entries, sentences, exercises = load()
     manifest = load_manifest()
-    by_skill = Counter(PRIMARY.get(ex.get("type"), ex.get("type")) for ex in exercises)
+    sby = {s["id"]: s for s in sentences}
+    # «Decir» una frase es decirla en voz alta (escribirla es opcional): cuenta como voz alta, no como producción.
+    by_skill = Counter("voz alta" if ex.get("type") == "produce" and (ex.get("targets") or [None])[0] in sby
+                       else PRIMARY.get(ex.get("type"), ex.get("type")) for ex in exercises)
     print(f"{len(exercises)} tarjetas (registrado no equivale a aprendido).\n")
     for skill, n in by_skill.most_common():
         print(f"  {skill:12} {n:4}  {100 * n / len(exercises):5.1f} %")
+    have_tones = {t for ex in exercises if ex.get("type") == "tones" for t in ex.get("targets", [])}
+    pairs = {}
+    for e in entries:
+        if e["id"] in have_tones and tone_pair(e):
+            pairs.setdefault(tone_pair(e), []).append(e["hanzi"])
+    lacking = [p for p in TONE_PAIRS if p not in pairs]
+    print(f"\nParejas de tonos con tarjeta: {len(pairs)} de {len(TONE_PAIRS)}"
+          + (f"; faltan {', '.join(lacking)} (no hay palabras así en el mazo)" if lacking else ""))
     print()
     print("Cobertura del HSK 3.0 (palabras de la lista que el mazo entrena para oír o decir):")
     for lv, have, total in level_coverage(entries):
@@ -840,6 +884,7 @@ def cmd_gaps():
 # (pronunciación, componentes, frases que aún no existen) se lista como «a mano».
 
 TONE_PROMPT = "Escribe el tono de cada sílaba (1–4, 5 = neutro)."
+TONE_PROMPT_AUDIO = "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro)."
 
 
 def to_numeric(hanzi, reading):
@@ -968,11 +1013,14 @@ def scaffold_exercises(entries, sentences, exercises, today):
             elif need == "tones":
                 syl = syllable_tones(it["hanzi"], it["pinyin"])
                 traps = tone_traps(it["hanzi"], it["pinyin"])
+                # Con neutro o sandhi se lee y se piensa la regla; si está por su pareja de tonos, se oye.
+                prompt = ({"text": TONE_PROMPT, "hanzi": it["hanzi"],
+                           "pinyin": " ".join(b for b, t in syl if t != "erhua")} if traps
+                          else {"text": TONE_PROMPT_AUDIO, "audio": True})
                 made.append(make(f"x.tones.{short}", theme, type="tones", targets=[iid], skills=["tones", "pinyin"],
                                  refs=(["p.neutral-tone"] if "neutro" in traps else [])
                                  + (["p.third-tone-sandhi"] if "3+3" in traps else []),
-                                 prompt={"text": TONE_PROMPT, "hanzi": it["hanzi"],
-                                         "pinyin": " ".join(b for b, t in syl if t != "erhua")},
+                                 prompt=prompt,
                                  answer=answer(it, "".join(str(t) for _, t in syl if t != "erhua"))))
             elif need == "contrast":
                 grp = next((g for g in groups_of.get(iid, []) if g.get("basis") in ("visual", "homophone", "soundalike")), None)

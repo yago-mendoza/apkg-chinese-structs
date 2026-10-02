@@ -1928,3 +1928,75 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 树, pinyin: shù, meaning: árbol}
     comments: []
+  - id: x.comprehension.a-china-en-avion
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.wo-qu-guo-beijing, s.wo-zuo-feiji-qu-zhongguo, s.beijing-hen-da]
+    skills: [reading, comprehension]
+    script: both
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Ha estado en Pekín? ¿Cómo va a China?'}
+    answer: {meaning: 'Sí, ha estado; va en avión.'}
+    comments: []
+  - id: x.comprehension.puedo-entrar
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.wo-neng-jinqu-ma, s.ni-jinlai-ba, s.wo-zai-kan-dianshi]
+    skills: [reading, comprehension]
+    script: both
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Le dejan pasar? ¿Qué está haciendo el de dentro?'}
+    answer: {meaning: 'Sí; el de dentro está viendo la tele.'}
+    comments: []
+  - id: x.tones.huoche
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.huoche]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '31', hanzi: 火车, pinyin: huǒchē, meaning: tren}
+    comments: []
+  - id: x.tones.feiji
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.feiji]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '11', hanzi: 飞机, pinyin: fēijī, meaning: avión}
+    comments: []
+  - id: x.tones.dianying
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.dianying]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '43', hanzi: 电影, pinyin: diànyǐng, meaning: película}
+    comments: []
+  - id: x.tones.feichang
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.feichang]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '12', hanzi: 非常, pinyin: fēicháng, meaning: 'muy, muchísimo'}
+    comments: []
+  - id: x.tones.dianshi
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.dianshi]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '44', hanzi: 电视, pinyin: diànshì, meaning: televisión}
+    comments: []

@@ -1713,3 +1713,109 @@ exercises:
     prompt: {text: '在 en 我在家 y en 我在看书: ¿qué hace cada uno?'}
     answer: {meaning: 'Estar en un sitio · estar haciendo algo ahora. 正在 subraya «justo ahora»: 我正在学习.'}
     comments: []
+  - id: x.comprehension.en-la-tienda
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.wo-xiang-qu-shangdian, s.wo-xiang-mai-shuiguo, s.zhege-duoshaoqian, s.shi-kuai-qian]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Qué quiere comprar, y cuánto cuesta?'}
+    answer: {meaning: 'Fruta; cuesta diez yuanes.'}
+    comments: []
+  - id: x.comprehension.restaurante
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.qingwen-fandian-zai-nali, s.zhe-shi-yijia-fandian, s.ji-ge-ren]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Qué busca, y qué le preguntan al llegar?'}
+    answer: {meaning: 'Un restaurante; al llegar le preguntan cuántas personas son.'}
+    comments: []
+  - id: x.comprehension.quiere-agua
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.wo-keyi-he-shenme, s.ni-he-shui-ma, s.wo-yao-shui, s.haode-xiexie]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Qué va a beber?'}
+    answer: {meaning: 'Agua.'}
+    comments: []
+  - id: x.comprehension.lo-que-mas-gusta
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.wo-ai-chi-haochi-de-dongxi, s.wo-zui-xihuan-zhongguo-cai, s.wo-ye-xihuan]
+    skills: [reading, comprehension]
+    script: both
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Qué es lo que más le gusta?'}
+    answer: {meaning: 'La comida china (y al otro también le gusta).'}
+    comments: []
+  - id: x.comprehension.aficion
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.nide-aihao-shi-shenme, s.wo-xihuan-kan-shu, s.wo-yibian-kanshu-yibian-hecha]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Cuál es su afición, y qué hace mientras tanto?'}
+    answer: {meaning: 'Leer; mientras lee, toma té.'}
+    comments: []
+  - id: x.comprehension.sin-dinero
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.wo-xiang-mai-jipiao, s.ni-you-duoshao-qian, s.wo-meiyou-qian]
+    skills: [reading, comprehension]
+    script: both
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Puede comprar el billete de avión?'}
+    answer: {meaning: 'No: no tiene dinero.'}
+    comments: []
+  - id: x.tones.niurou
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.niurou]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '24', hanzi: 牛肉, pinyin: niúròu, meaning: carne de ternera}
+    comments: []
+  - id: x.tones.aihao
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.aihao]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '44', hanzi: 爱好, pinyin: àihào, meaning: 'afición, hobby'}
+    comments: []
+  - id: x.tones.chifan
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.chifan]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '14', hanzi: 吃饭, pinyin: chīfàn, meaning: comer (una comida)}
+    comments: []
+  - id: x.tones.haochi
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.haochi]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '31', hanzi: 好吃, pinyin: hǎochī, meaning: 'rico, bueno (de comer)'}
+    comments: []

@@ -12,7 +12,7 @@
  "counts": {
   "entries": 308,
   "sentences": 188,
-  "cards": 1164
+  "cards": 1215
  },
  "themes": [
   {
@@ -20129,6 +20129,91 @@
    "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Saludos con 好</h4><div class=\"note-body\">A quien saludas + 好. El registro cambia según a quién te diriges.<div class=\"is-target\">你好 nǐ hǎo — hola · una persona; neutro</div><div>您好 nín hǎo — hola (con respeto) · una persona mayor o de respeto (您)</div><div>你们好 nǐmen hǎo — hola (a un grupo) · un grupo que tienes delante; relajado</div><div>大家好 dàjiā hǎo — hola a todos · todo el mundo; más amplio y formal</div><div>老师好 lǎoshī hǎo — hola, profe · a la profesora: el cargo + 好</div></div></section></div>"
   },
   {
+   "id": "x.comprehension.saludo-y-quedada",
+   "type": "comprehension",
+   "theme": "saludos",
+   "level": 1,
+   "targets": [
+    "s.ni-hao-ma",
+    "s.wo-hen-hao-ni-ne",
+    "s.wo-ye-hen-hao",
+    "s.women-xiawu-jian-ba"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el diálogo en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">hǎo</span><span class=\"hz\">好</span></span><span class=\"seg c2\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c2\"><span class=\"py\">hǎo</span><span class=\"hz\">好</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c3\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c4\"><span class=\"py\">ne</span><span class=\"hz\">呢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">yě</span><span class=\"hz\">也</span></span><span class=\"seg c2\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c3\"><span class=\"py\">hǎo</span><span class=\"hz\">好</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒmen</span><span class=\"hz\">我们</span></span><span class=\"seg c1\"><span class=\"py\">xiàwǔ</span><span class=\"hz\">下午</span></span><span class=\"seg c2\"><span class=\"py\">jiàn</span><span class=\"hz\">见</span></span><span class=\"seg c3\"><span class=\"py\">ba</span><span class=\"hz\">吧</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Cómo están los dos, y cuándo se ven?</div></details>",
+   "back": "<div class=\"meaning\">Los dos están bien, y quedan por la tarde.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">hǎo</span><span class=\"hz\">好</span></span><span class=\"seg c2\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Qué tal estás?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_87fed11aba9ab3d2.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c2\"><span class=\"py\">hǎo</span><span class=\"hz\">好</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c3\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c4\"><span class=\"py\">ne</span><span class=\"hz\">呢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>Estoy bien, ¿y tú?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_520bbcf81eb0986b.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">yě</span><span class=\"hz\">也</span></span><span class=\"seg c2\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c3\"><span class=\"py\">hǎo</span><span class=\"hz\">好</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Yo también estoy bien.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_83119daaa0f076d8.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒmen</span><span class=\"hz\">我们</span></span><span class=\"seg c1\"><span class=\"py\">xiàwǔ</span><span class=\"hz\">下午</span></span><span class=\"seg c2\"><span class=\"py\">jiàn</span><span class=\"hz\">见</span></span><span class=\"seg c3\"><span class=\"py\">ba</span><span class=\"hz\">吧</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Nos vemos por la tarde, ¿vale?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_ba5b7017c9d9b8fa.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.comprehension.vuelve-a-casa",
+   "type": "comprehension",
+   "theme": "saludos",
+   "level": 1,
+   "targets": [
+    "s.ni-huilai-le",
+    "s.chifan-le-ma",
+    "s.wo-mei-chifan"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el diálogo en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"hz-line\">你回来了！吃饭了吗？我没吃饭。</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Ha comido el que acaba de volver?</div></details>",
+   "back": "<div class=\"meaning\">No, no ha comido.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">huílai</span><span class=\"hz\">回来</span></span><span class=\"seg c2\"><span class=\"py\">le</span><span class=\"hz\">了</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>¡Ya has vuelto!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d367b127d34822ad.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">chīfàn</span><span class=\"hz\">吃饭</span></span><span class=\"seg c1\"><span class=\"py\">le</span><span class=\"hz\">了</span></span><span class=\"seg c2\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Has comido? (como saludo)</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e39b0e2f45caa01c.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">méi</span><span class=\"hz\">没</span></span><span class=\"seg c2\"><span class=\"py\">chīfàn</span><span class=\"hz\">吃饭</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>No he comido.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1a9ac10ad9428640.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.tones.baibai",
+   "type": "tones",
+   "theme": "saludos",
+   "level": 1,
+   "targets": [
+    "w.baibai"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "22",
+    "hanzi": "拜拜"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_65ce66dd9083a3dd.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">拜拜</div><div class=\"pinyin\">báibái</div><div class=\"ipa\">[paɪ˧˥ paɪ˧˥]</div><div class=\"meaning\">adiós (informal, del inglés bye-bye)</div><div class=\"legend pos\">expresión</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>bái: b sin aire, casi una p española [paɪ˧˥]</div></div></section></div>"
+  },
+  {
+   "id": "x.tones.ninhao",
+   "type": "tones",
+   "theme": "saludos",
+   "level": 1,
+   "targets": [
+    "e.ninhao"
+   ],
+   "context": [],
+   "examples": [
+    "s.menduosa-xiansheng-ninhao"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "23",
+    "hanzi": "您好"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_3d0741cacbc8ddeb.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">您好</div><div class=\"pinyin\">nín hǎo</div><div class=\"ipa\">[nin˧˥ xɑʊ˧˩˧]</div><div class=\"meaning\">hola (con respeto)</div><div class=\"legend pos\">expresión</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Saludos con 好</h4><div class=\"note-body\">A quien saludas + 好. El registro cambia según a quién te diriges.<div>你好 nǐ hǎo — hola · una persona; neutro</div><div class=\"is-target\">您好 nín hǎo — hola (con respeto) · una persona mayor o de respeto (您)</div><div>你们好 nǐmen hǎo — hola (a un grupo) · un grupo que tienes delante; relajado</div><div>大家好 dàjiā hǎo — hola a todos · todo el mundo; más amplio y formal</div><div>老师好 lǎoshī hǎo — hola, profe · a la profesora: el cargo + 好</div></div></section><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>hǎo: h es una jota suave, rasposa [xɑʊ˧˩˧]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">Ménduōsà</span><span class=\"hz\">门多萨</span></span><span class=\"seg c1\"><span class=\"py\">xiānsheng</span><span class=\"hz\">先生</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c2\"><span class=\"py\">nín hǎo</span><span class=\"hz\">您好</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>¡Buenos días, señor Mendoza!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_c7ed4a6161dffde2.mp3\" aria-label=\"Play\"></button></div></div></section></div>"
+  },
+  {
    "id": "x.tones.xiexie",
    "type": "tones",
    "theme": "cortesia",
@@ -22045,6 +22130,91 @@
    "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>shuō: sh con la punta de la lengua curvada hacia atrás [ʂwɔ˥]</div><div>zài: z suena ts, como en «pizza» [tsaɪ˥˩]</div><div>biàn: -ian suena «ien», no «ian» [pjɛn˥˩]</div></div></section><section class=\"note note--teacher\"><h4>En clase</h4><div class=\"note-body\">Lo que se dice en clase para pedir que repitan. Para leer otra vez, 再读一遍 zài dú yí biàn.</div></section></div>"
   },
   {
+   "id": "x.comprehension.llega-tarde",
+   "type": "comprehension",
+   "theme": "cortesia",
+   "level": 2,
+   "targets": [
+    "s.buhaoyisi-wo-lai-wan-le",
+    "s.duibuqi-meiguanxi"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el diálogo en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"hz-line\">不好意思，我来晚了。对不起！没关系。</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Qué ha pasado, y qué le contestan?</div></details>",
+   "back": "<div class=\"meaning\">Ha llegado tarde y pide perdón; le dicen que no pasa nada.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">bù hǎoyìsi</span><span class=\"hz\">不好意思</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c2\"><span class=\"py\">lái</span><span class=\"hz\">来</span></span><span class=\"seg c3\"><span class=\"py\">wǎn</span><span class=\"hz\">晚</span></span><span class=\"seg c4\"><span class=\"py\">le</span><span class=\"hz\">了</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Perdona, he llegado tarde.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_de42e46823e232e4.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">duìbuqǐ</span><span class=\"hz\">对不起</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span><span class=\"seg c1\"><span class=\"py\">méi guānxi</span><span class=\"hz\">没关系</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>—¡Perdón! —No pasa nada.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_c1da4a2e3d1abdd4.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.tones.qingwen",
+   "type": "tones",
+   "theme": "cortesia",
+   "level": 1,
+   "targets": [
+    "e.qingwen"
+   ],
+   "context": [],
+   "examples": [
+    "s.qingwen-ni-jiao-shenme-mingzi",
+    "s.duibuqi-meiguanxi"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "34",
+    "hanzi": "请问"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_c57f2372072c55ca.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">请问</div><div class=\"pinyin\">qǐngwèn</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ wən˥˩]</div><div class=\"meaning\">disculpe (para preguntar)</div><div class=\"legend pos\">expresión</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Disculpe, perdona y lo siento</h4><div class=\"note-body\">Tres formas de pedir perdón o de abordar a alguien, según la situación.<div class=\"is-target\">请问 qǐngwèn — disculpe (para preguntar) · antes de preguntar algo: 请问，饭店在哪里？</div><div>不好意思 bù hǎoyìsi — perdona; qué vergüenza; me sabe mal · una molestia pequeña: llegar tarde, pasar, pedir algo</div><div>对不起 duìbuqǐ — lo siento · has hecho algo mal: lo siento</div></div></section><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>qǐng: q es una ch con soplo de aire y la lengua plana, no una k [tɕʰiŋ˧˩˧]</div><div>wèn: en suena con una e muy breve, casi «ən» [wən˥˩]</div></div></section><section class=\"note note--example\"><h4>Ejemplos</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">qǐngwèn</span><span class=\"hz\">请问</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c2\"><span class=\"py\">jiào</span><span class=\"hz\">叫</span></span><span class=\"seg c3\"><span class=\"py\">shénme</span><span class=\"hz\">什么</span></span><span class=\"seg c4\"><span class=\"py\">míngzi</span><span class=\"hz\">名字</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>Disculpa, ¿cómo te llamas?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d38e52087fca5ff3.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">duìbuqǐ</span><span class=\"hz\">对不起</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span><span class=\"seg c1\"><span class=\"py\">méi guānxi</span><span class=\"hz\">没关系</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>—¡Perdón! —No pasa nada.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_c1da4a2e3d1abdd4.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--connection\"><h4>Conexión · 🔊 da el sonido</h4><div class=\"note-body\">门 mén da el sonido a 问 wèn, con 口 «boca» dentro: preguntar. Igual en 们 men.</div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">请 «por favor» + 问 wèn «preguntar»: la forma cortés de abrir una pregunta a alguien.</div></section></div>"
+  },
+  {
+   "id": "x.tones.qingjin",
+   "type": "tones",
+   "theme": "cortesia",
+   "level": 1,
+   "targets": [
+    "e.qingjin"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "34",
+    "hanzi": "请进"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1240540184638af9.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">请进</div><div class=\"pinyin\">qǐng jìn</div><div class=\"ipa\">[tɕʰiŋ˧˩˧ tɕin˥˩]</div><div class=\"meaning\">pase, por favor</div><div class=\"legend pos\">expresión</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>qǐng: q es una ch con soplo de aire y la lengua plana, no una k [tɕʰiŋ˧˩˧]</div><div>jìn: j es una ch suave con la lengua plana, no una jota [tɕin˥˩]</div></div></section></div>"
+  },
+  {
+   "id": "x.tones.bangmang",
+   "type": "tones",
+   "theme": "cortesia",
+   "level": 1,
+   "targets": [
+    "w.bangmang"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "12",
+    "hanzi": "帮忙"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_3cd2577349afc6cd.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">帮忙</div><div class=\"pinyin\">bāngmáng</div><div class=\"ipa\">[pɑŋ˥ mɑŋ˧˥]</div><div class=\"meaning\">echar una mano</div><div class=\"legend pos\">verbo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Ayudar</h4><div class=\"note-body\">Tres formas de ayudar; al hablar, la corriente es 帮.<div>帮 bāng — ayudar (a alguien) · ayudar a alguien: 你可以帮我吗？</div><div class=\"is-target\">帮忙 bāngmáng — echar una mano · echar una mano, sin decir a quién</div><div>帮助 bāngzhù — ayudar; ayuda · ayudar o la ayuda, más formal: 谢谢你的帮助</div></div></section><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>bāng: b sin aire, casi una p española [pɑŋ˥]</div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">No lleva a quién detrás: 他来帮忙 «viene a echar una mano». «Ayúdame» es 帮我.</div></section></div>"
+  },
+  {
    "id": "x.read.ni",
    "type": "read",
    "theme": "personas",
@@ -23529,6 +23699,69 @@
    "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_7ad820cf77f5111e.mp3\" aria-label=\"Play\"></button>",
    "back": "<div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">shéi</span><span class=\"hz\">谁</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span><span class=\"seg c3\"><span class=\"py\">bú</span><span class=\"hz\">不</span></span><span class=\"seg c4\"><span class=\"py\">duì</span><span class=\"hz\">对</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">shénme</span><span class=\"hz\">什么</span></span><span class=\"seg c3\"><span class=\"py\">dōngxi</span><span class=\"hz\">东西</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span><span class=\"seg c4\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c0\"><span class=\"py\">wèishénme</span><span class=\"hz\">为什么</span></span><span class=\"seg c1\"><span class=\"py\">zhème</span><span class=\"hz\">这么</span></span><span class=\"seg c2\"><span class=\"py\">gāo</span><span class=\"hz\">高</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div class=\"meaning\">¿Quién eres? No, espera: ¿qué eres? ¿Por qué eres tan alto?</div>",
    "notes": ""
+  },
+  {
+   "id": "x.comprehension.la-profesora",
+   "type": "comprehension",
+   "theme": "personas",
+   "level": 1,
+   "targets": [
+    "s.nin-shi-women-de-laoshi-ma",
+    "s.dui-wo-shi-nimen-de-laoshi",
+    "s.hen-gaoxing-renshi-ni"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el diálogo en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nín</span><span class=\"hz\">您</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">wǒmen</span><span class=\"hz\">我们</span></span><span class=\"seg c3\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c4\"><span class=\"py\">lǎoshī</span><span class=\"hz\">老师</span></span><span class=\"seg c0\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">duì</span><span class=\"hz\">对</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c2\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c3\"><span class=\"py\">nǐmen</span><span class=\"hz\">你们</span></span><span class=\"seg c4\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c0\"><span class=\"py\">lǎoshī</span><span class=\"hz\">老师</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c1\"><span class=\"py\">gāoxìng</span><span class=\"hz\">高兴</span></span><span class=\"seg c2\"><span class=\"py\">rènshi</span><span class=\"hz\">认识</span></span><span class=\"seg c3\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Quién es la persona a la que preguntan?</div></details>",
+   "back": "<div class=\"meaning\">Su profesor o profesora.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nín</span><span class=\"hz\">您</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">wǒmen</span><span class=\"hz\">我们</span></span><span class=\"seg c3\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c4\"><span class=\"py\">lǎoshī</span><span class=\"hz\">老师</span></span><span class=\"seg c0\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Es usted nuestra profesora?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a8d1105404e7395f.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">duì</span><span class=\"hz\">对</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c2\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c3\"><span class=\"py\">nǐmen</span><span class=\"hz\">你们</span></span><span class=\"seg c4\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c0\"><span class=\"py\">lǎoshī</span><span class=\"hz\">老师</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Sí, soy vuestro profesor.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_4b0e0c54eeed82ea.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c1\"><span class=\"py\">gāoxìng</span><span class=\"hz\">高兴</span></span><span class=\"seg c2\"><span class=\"py\">rènshi</span><span class=\"hz\">认识</span></span><span class=\"seg c3\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Encantado de conocerte.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_78d43c05dfdfc588.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.comprehension.quien-es-el",
+   "type": "comprehension",
+   "theme": "personas",
+   "level": 1,
+   "targets": [
+    "s.ta-shi-shei",
+    "s.ta-shi-wo-de-baba",
+    "s.ta-hen-gao"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el diálogo en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"hz-line\">他是谁？他是我的爸爸。他很高。</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Quién es, y cómo es?</div></details>",
+   "back": "<div class=\"meaning\">Es el padre de quien habla, y es alto.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tā</span><span class=\"hz\">他</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">shéi</span><span class=\"hz\">谁</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Quién es él?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_965791d37c9899f3.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tā</span><span class=\"hz\">他</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c3\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c4\"><span class=\"py\">bàba</span><span class=\"hz\">爸爸</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Él es mi padre.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_c65a96cf61c178d3.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tā</span><span class=\"hz\">他</span></span><span class=\"seg c1\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c2\"><span class=\"py\">gāo</span><span class=\"hz\">高</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Él es alto.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_69a24a5fb61260c1.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.tones.dajia",
+   "type": "tones",
+   "theme": "personas",
+   "level": 2,
+   "targets": [
+    "w.dajia"
+   ],
+   "context": [],
+   "examples": [
+    "s.dajia-dou-lai-le"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "41",
+    "hanzi": "大家"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_eaf1a12e569c2667.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">大家</div><div class=\"pinyin\">dàjiā</div><div class=\"ipa\">[ta˥˩ tɕja˥]</div><div class=\"meaning\">todos, todo el mundo</div><div class=\"legend pos\">pronombre</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>大家 y 大象</h4><div class=\"note-body\">Empiezan igual; la segunda sílaba lo decide.<div class=\"is-target\">大家 dàjiā — todos, todo el mundo · dàjiā: todos</div><div>大象 dàxiàng — elefante · dàxiàng: elefante</div></div></section><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>jiā: j es una ch suave con la lengua plana, no una jota [tɕja˥]</div><div>dà: d sin aire, casi una t española [ta˥˩]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">dàjiā</span><span class=\"hz\">大家</span></span><span class=\"seg c1\"><span class=\"py\">dōu</span><span class=\"hz\">都</span></span><span class=\"seg c2\"><span class=\"py\">lái</span><span class=\"hz\">来</span></span><span class=\"seg c3\"><span class=\"py\">le</span><span class=\"hz\">了</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Ya hemos llegado todos.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_b60a9af500991791.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">Suele ir con 都: 大家都来了 «ya estamos todos».</div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">大 «grande» + 家 «familia, casa»: era «la gran familia», todo el grupo, y de ahí «todos». Es el mismo 家 de 一家人 «una familia» y del clasificador de negocios: 一家饭店 «un restaurante».</div></section></div>"
   },
   {
    "id": "x.read.zhongguo",
@@ -27550,6 +27783,199 @@
    "notes": ""
   },
   {
+   "id": "x.comprehension.de-donde-es",
+   "type": "comprehension",
+   "theme": "presentarse",
+   "level": 1,
+   "targets": [
+    "s.ni-jiao-shenme-mingzi",
+    "s.wo-jiao-yage",
+    "s.wo-xing-menduosa",
+    "s.wo-laizi-xibanya"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el texto en voz alta. Al terminar, abre la pregunta y respóndela en chino, en voz alta.",
+   "front": "<div class=\"passage\"><div class=\"hz-line\">你叫什么名字？我叫雅戈。我姓门多萨。我来自西班牙。</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"hz-line\">你是哪国人？</div></details>",
+   "back": "<div class=\"meaning\">西班牙人 (es de España).</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">nǎ</span><span class=\"hz\">哪</span></span><span class=\"seg c3\"><span class=\"py\">guó</span><span class=\"hz\">国</span></span><span class=\"seg c4\"><span class=\"py\">rén</span><span class=\"hz\">人</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿De qué país eres?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_43e3bcaf8fef7d42.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">jiào</span><span class=\"hz\">叫</span></span><span class=\"seg c2\"><span class=\"py\">shénme</span><span class=\"hz\">什么</span></span><span class=\"seg c3\"><span class=\"py\">míngzi</span><span class=\"hz\">名字</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Cómo te llamas?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_850f27fd10b2c41d.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">jiào</span><span class=\"hz\">叫</span></span><span class=\"seg c2\"><span class=\"py\">Yǎgē</span><span class=\"hz\">雅戈</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Me llamo Yago.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_b226673db40c4ec2.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">xìng</span><span class=\"hz\">姓</span></span><span class=\"seg c2\"><span class=\"py\">Ménduōsà</span><span class=\"hz\">门多萨</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Me apellido Mendoza.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_23ebad7277999ad2.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">láizì</span><span class=\"hz\">来自</span></span><span class=\"seg c2\"><span class=\"py\">Xībānyá</span><span class=\"hz\">西班牙</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Soy de España.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_3cdd03f6549971e3.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.comprehension.habla-chino",
+   "type": "comprehension",
+   "theme": "presentarse",
+   "level": 1,
+   "targets": [
+    "s.ni-shi-zhongguoren-ma",
+    "s.wo-bu-shi-zhongguoren",
+    "s.wo-hui-shuo-zhongwen"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el diálogo en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"hz-line\">你是中国人吗？我不是中国人，我是西班牙人。我会说中文。</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Es chino? ¿Habla chino?</div></details>",
+   "back": "<div class=\"meaning\">No es chino, es español, pero sabe hablar chino.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">Zhōngguó</span><span class=\"hz\">中国</span></span><span class=\"seg c3\"><span class=\"py\">rén</span><span class=\"hz\">人</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Eres chino?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_ddfaf6adda8d3f10.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">bú</span><span class=\"hz\">不</span></span><span class=\"seg c2\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c3\"><span class=\"py\">Zhōngguó</span><span class=\"hz\">中国</span></span><span class=\"seg c4\"><span class=\"py\">rén</span><span class=\"hz\">人</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">Xībānyá</span><span class=\"hz\">西班牙</span></span><span class=\"seg c3\"><span class=\"py\">rén</span><span class=\"hz\">人</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>No soy chino, soy español.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a1e40e5e9a3e3a1a.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">huì</span><span class=\"hz\">会</span></span><span class=\"seg c2\"><span class=\"py\">shuō</span><span class=\"hz\">说</span></span><span class=\"seg c3\"><span class=\"py\">Zhōngwén</span><span class=\"hz\">中文</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Sé hablar chino.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0d1146ea85151404.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.comprehension.manana-no",
+   "type": "comprehension",
+   "theme": "presentarse",
+   "level": 1,
+   "targets": [
+    "s.mingtian-ni-lai-ma",
+    "s.wo-yao-gongzuo",
+    "s.wo-meiyou-shijian"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el diálogo en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"hz-line\">明天你来吗？我要工作。我没有时间。</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Viene mañana? ¿Por qué?</div></details>",
+   "back": "<div class=\"meaning\">No: tiene que trabajar y no tiene tiempo.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">míngtiān</span><span class=\"hz\">明天</span></span><span class=\"seg c1\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c2\"><span class=\"py\">lái</span><span class=\"hz\">来</span></span><span class=\"seg c3\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Vienes mañana?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0a078f9370e56156.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">yào</span><span class=\"hz\">要</span></span><span class=\"seg c2\"><span class=\"py\">gōngzuò</span><span class=\"hz\">工作</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Tengo que trabajar.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_999e9469cb4dee98.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">méiyǒu</span><span class=\"hz\">没有</span></span><span class=\"seg c2\"><span class=\"py\">shíjiān</span><span class=\"hz\">时间</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>No tengo tiempo.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d5a19d6ac2b5029d.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.comprehension.como-te-llamas",
+   "type": "comprehension",
+   "theme": "presentarse",
+   "level": 1,
+   "targets": [
+    "s.wo-bu-renshi-ni",
+    "s.wo-jiao-yage",
+    "s.hen-gaoxing-renshi-ni"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el texto en voz alta. Al terminar, abre la pregunta y respóndela en chino, en voz alta.",
+   "front": "<div class=\"passage\"><div class=\"hz-line\">我不认识你，你叫什么名字？我叫雅戈。很高兴认识你。</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"hz-line\">他的名字是什么？</div></details>",
+   "back": "<div class=\"meaning\">他叫雅戈 (se llama Yago).</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tā</span><span class=\"hz\">他</span></span><span class=\"seg c1\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c2\"><span class=\"py\">míngzi</span><span class=\"hz\">名字</span></span><span class=\"seg c3\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c4\"><span class=\"py\">shénme</span><span class=\"hz\">什么</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Cuál es su nombre?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e9468a87c8c7c149.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">bú</span><span class=\"hz\">不</span></span><span class=\"seg c2\"><span class=\"py\">rènshi</span><span class=\"hz\">认识</span></span><span class=\"seg c3\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c4\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c0\"><span class=\"py\">jiào</span><span class=\"hz\">叫</span></span><span class=\"seg c1\"><span class=\"py\">shénme</span><span class=\"hz\">什么</span></span><span class=\"seg c2\"><span class=\"py\">míngzi</span><span class=\"hz\">名字</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>No te conozco: ¿cómo te llamas?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e4dff0e6559f6a8f.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">jiào</span><span class=\"hz\">叫</span></span><span class=\"seg c2\"><span class=\"py\">Yǎgē</span><span class=\"hz\">雅戈</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Me llamo Yago.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_b226673db40c4ec2.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c1\"><span class=\"py\">gāoxìng</span><span class=\"hz\">高兴</span></span><span class=\"seg c2\"><span class=\"py\">rènshi</span><span class=\"hz\">认识</span></span><span class=\"seg c3\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Encantado de conocerte.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_78d43c05dfdfc588.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.comprehension.somos-estudiantes",
+   "type": "comprehension",
+   "theme": "presentarse",
+   "level": 1,
+   "targets": [
+    "s.nimen-shi-xuesheng-ma",
+    "s.women-dou-shi-xuesheng",
+    "s.women-shi-pengyou"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el diálogo en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"hz-line\">你们是学生吗？我们都是学生。我们是朋友。</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Qué son?</div></details>",
+   "back": "<div class=\"meaning\">Estudiantes, y además amigos.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐmen</span><span class=\"hz\">你们</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">xuéshēng</span><span class=\"hz\">学生</span></span><span class=\"seg c3\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Sois estudiantes?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_dd16e75576b603bf.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒmen</span><span class=\"hz\">我们</span></span><span class=\"seg c1\"><span class=\"py\">dōu</span><span class=\"hz\">都</span></span><span class=\"seg c2\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c3\"><span class=\"py\">xuéshēng</span><span class=\"hz\">学生</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Todos somos estudiantes.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_92c8f15d56c8b2b9.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒmen</span><span class=\"hz\">我们</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">péngyou</span><span class=\"hz\">朋友</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Somos amigos.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_03e800bcd48448f9.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.tones.gaoxing",
+   "type": "tones",
+   "theme": "presentarse",
+   "level": 1,
+   "targets": [
+    "w.gaoxing"
+   ],
+   "context": [],
+   "examples": [
+    "s.renshi-ni-hen-gaoxing",
+    "s.renshi-ni-wo-ye-hen-gaoxing"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "14",
+    "hanzi": "高兴"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_94fa4f160cb811ac.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">高兴</div><div class=\"pinyin\">gāoxìng</div><div class=\"ipa\">[kɑʊ˥ ɕiŋ˥˩]</div><div class=\"meaning\">contento</div><div class=\"legend pos\">adjetivo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>xìng: x suena casi como una sh suave, con la lengua plana y sonriendo [ɕiŋ˥˩]</div><div>gāo: g sin aire, casi una k española [kɑʊ˥]</div></div></section><section class=\"note note--example\"><h4>Ejemplos</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">rènshi</span><span class=\"hz\">认识</span></span><span class=\"seg c1\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c2\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c3\"><span class=\"py\">gāoxìng</span><span class=\"hz\">高兴</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>¡Encantado de conocerte!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_9ff37014deb8b6e7.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">rènshi</span><span class=\"hz\">认识</span></span><span class=\"seg c1\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c2\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c3\"><span class=\"py\">yě</span><span class=\"hz\">也</span></span><span class=\"seg c4\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c0\"><span class=\"py\">gāoxìng</span><span class=\"hz\">高兴</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>¡Yo también estoy encantado de conocerte!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_629dbc1b87a01701.mp3\" aria-label=\"Play\"></button></div></div></section></div>"
+  },
+  {
+   "id": "x.tones.xingming",
+   "type": "tones",
+   "theme": "presentarse",
+   "level": 2,
+   "targets": [
+    "w.xingming"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "42",
+    "hanzi": "姓名"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_ab1010fc595de9b7.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">姓名</div><div class=\"pinyin\">xìngmíng</div><div class=\"ipa\">[ɕiŋ˥˩ miŋ˧˥]</div><div class=\"meaning\">nombre completo</div><div class=\"legend pos\">sustantivo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>xìng: x suena casi como una sh suave, con la lengua plana y sonriendo [ɕiŋ˥˩]</div></div></section></div>"
+  },
+  {
+   "id": "x.tones.laizi",
+   "type": "tones",
+   "theme": "presentarse",
+   "level": 2,
+   "targets": [
+    "w.laizi"
+   ],
+   "context": [],
+   "examples": [
+    "s.wo-laizi-xibanya",
+    "s.tamen-dou-laizi-meiguo-ma"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "24",
+    "hanzi": "来自"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_141e1db0c9175edf.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">来自</div><div class=\"pinyin\">láizì</div><div class=\"ipa\">[laɪ˧˥ tsɯ˥˩]</div><div class=\"meaning\">venir de, ser de</div><div class=\"legend pos\">verbo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>zì: la i no suena i; es un zumbido tras la consonante [tsɯ˥˩]</div><div>zì: z suena ts, como en «pizza» [tsɯ˥˩]</div></div></section><section class=\"note note--example\"><h4>Ejemplos</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">láizì</span><span class=\"hz\">来自</span></span><span class=\"seg c2\"><span class=\"py\">Xībānyá</span><span class=\"hz\">西班牙</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Soy de España.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_3cdd03f6549971e3.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tāmen</span><span class=\"hz\">他们</span></span><span class=\"seg c1\"><span class=\"py\">dōu</span><span class=\"hz\">都</span></span><span class=\"seg c2\"><span class=\"py\">láizì</span><span class=\"hz\">来自</span></span><span class=\"seg c3\"><span class=\"py\">Měiguó</span><span class=\"hz\">美国</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Son todos de Estados Unidos?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_5cc72769a2d7ec26.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">Algo formal. Hablando, también: 我从西班牙来 wǒ cóng Xībānyá lái.</div></section></div>"
+  },
+  {
+   "id": "x.tones.xuexi",
+   "type": "tones",
+   "theme": "presentarse",
+   "level": 1,
+   "targets": [
+    "w.xuexi"
+   ],
+   "context": [],
+   "examples": [
+    "s.wo-zai-xuexi-zhongwen"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "22",
+    "hanzi": "学习"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_cf0b8d1683ca1440.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">学习</div><div class=\"pinyin\">xuéxí</div><div class=\"ipa\">[ɕɥœ˧˥ ɕi˧˥]</div><div class=\"meaning\">estudiar, aprender</div><div class=\"legend pos\">verbo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>xué: tras j, q, x o y la u es una ü: labios de u y lengua de i [ɕɥœ˧˥]</div><div>xué: x suena casi como una sh suave, con la lengua plana y sonriendo [ɕɥœ˧˥]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">zài</span><span class=\"hz\">在</span></span><span class=\"seg c2\"><span class=\"py\">xuéxí</span><span class=\"hz\">学习</span></span><span class=\"seg c3\"><span class=\"py\">Zhōngwén</span><span class=\"hz\">中文</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Estoy estudiando chino.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_440c5a604de89f52.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">学 «aprender» + 习 «practicar». 学生 «estudiante» lleva el mismo 学.</div></section></div>"
+  },
+  {
    "id": "x.read.baba",
    "type": "read",
    "theme": "familia",
@@ -28594,6 +29020,93 @@
    "front": "<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_db0c946fa5bfc692.mp3\" aria-label=\"Play\"></button>",
    "back": "<div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tāmen</span><span class=\"hz\">他们</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c3\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c4\"><span class=\"py\">bàmā</span><span class=\"hz\">爸妈</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div class=\"meaning\">Son mis padres.</div>",
    "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>shì: la i no suena i; se alarga la consonante, con la lengua curvada [ʂɨ˥˩]</div><div>de: esta e no es española: suena hacia atrás, casi como una o sin redondear [tɤ]</div><div>men: en suena con una e muy breve, casi «ən» [mən]</div></div></section></div>"
+  },
+  {
+   "id": "x.comprehension.dos-hijos",
+   "type": "comprehension",
+   "theme": "familia",
+   "level": 1,
+   "targets": [
+    "s.ta-shi-wo-de-mama",
+    "s.tamen-you-liang-ge-haizi",
+    "s.mama-huilai-le"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el texto en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"hz-line\">她是我的妈妈。他们有两个孩子。妈妈回来了。</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Cuántos hijos tienen?</div></details>",
+   "back": "<div class=\"meaning\">Dos.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tā</span><span class=\"hz\">她</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c3\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c4\"><span class=\"py\">māma</span><span class=\"hz\">妈妈</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Ella es mi madre.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e418f16366d8f8d.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tāmen</span><span class=\"hz\">他们</span></span><span class=\"seg c1\"><span class=\"py\">yǒu</span><span class=\"hz\">有</span></span><span class=\"seg c2\"><span class=\"py\">liǎng</span><span class=\"hz\">两</span></span><span class=\"seg c3\"><span class=\"py\">ge</span><span class=\"hz\">个</span></span><span class=\"seg c4\"><span class=\"py\">háizi</span><span class=\"hz\">孩子</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Tienen dos hijos.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_5c4a7c7e17906e32.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">māma</span><span class=\"hz\">妈妈</span></span><span class=\"seg c1\"><span class=\"py\">huílai</span><span class=\"hz\">回来</span></span><span class=\"seg c2\"><span class=\"py\">le</span><span class=\"hz\">了</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Mamá ha vuelto.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_ff52246c12370755.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.tones.nver",
+   "type": "tones",
+   "theme": "familia",
+   "level": 1,
+   "targets": [
+    "w.nver"
+   ],
+   "context": [],
+   "examples": [
+    "s.ta-you-erzi-he-nver"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "32",
+    "hanzi": "女儿"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1b50f3f3562ab47a.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">女儿</div><div class=\"pinyin\">nǚ&#x27;ér</div><div class=\"ipa\">[ny˧˩˧ ɑɻ˧˥]</div><div class=\"meaning\">hija</div><div class=\"legend pos\">sustantivo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>好, 女儿 y 儿子</h4><div class=\"note-body\">Las mismas piezas en distinto orden: 女 «mujer», 子 «niño» y 儿 «niño pequeño».<div>好 hǎo — bien, bueno · 女 + 子 en un solo carácter: bueno</div><div class=\"is-target\">女儿 nǚ&#x27;ér — hija · 女 nǚ + 儿 ér: hija (la mujer delante)</div><div>儿子 érzi — hijo · 儿 ér + 子 zi: hijo (el 子 detrás)</div></div></section><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>nǚ: ü, labios de u y lengua de i [ny˧˩˧]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tā</span><span class=\"hz\">他</span></span><span class=\"seg c1\"><span class=\"py\">yǒu</span><span class=\"hz\">有</span></span><span class=\"seg c2\"><span class=\"py\">yí</span><span class=\"hz\">一</span></span><span class=\"seg c3\"><span class=\"py\">ge</span><span class=\"hz\">个</span></span><span class=\"seg c4\"><span class=\"py\">érzi</span><span class=\"hz\">儿子</span></span><span class=\"seg c0\"><span class=\"py\">hé</span><span class=\"hz\">和</span></span><span class=\"seg c1\"><span class=\"py\">yí</span><span class=\"hz\">一</span></span><span class=\"seg c2\"><span class=\"py\">ge</span><span class=\"hz\">个</span></span><span class=\"seg c3\"><span class=\"py\">nǚ&#x27;ér</span><span class=\"hz\">女儿</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Tiene un hijo y una hija.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_cf2b0091b4881c2d.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">女儿 = 女 «mujer» + 儿 «niño»: hija. El 儿 ér es el mismo que abre 儿子.</div></section></div>"
+  },
+  {
+   "id": "x.tones.xiaohai",
+   "type": "tones",
+   "theme": "familia",
+   "level": 1,
+   "targets": [
+    "w.xiaohai"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "32",
+    "hanzi": "小孩"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_13fbfaa8963eead7.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">小孩</div><div class=\"pinyin\">xiǎohái</div><div class=\"ipa\">[ɕjɑʊ˧˩˧ xaɪ˧˥]</div><div class=\"meaning\">niño pequeño, crío</div><div class=\"legend pos\">sustantivo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>xiǎo: x suena casi como una sh suave, con la lengua plana y sonriendo [ɕjɑʊ˧˩˧]</div><div>hái: h es una jota suave, rasposa [xaɪ˧˥]</div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">孩子 es el término general; 小孩 añade 小 «pequeño».</div></section></div>"
+  },
+  {
+   "id": "x.tones.bama",
+   "type": "tones",
+   "theme": "familia",
+   "level": 1,
+   "targets": [
+    "w.bama"
+   ],
+   "context": [],
+   "examples": [
+    "s.tamen-shi-wo-de-bama"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "41",
+    "hanzi": "爸妈"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_63420dad8354c931.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">爸妈</div><div class=\"pinyin\">bàmā</div><div class=\"ipa\">[pa˥˩ ma˥]</div><div class=\"meaning\">los padres, papá y mamá (coloquial)</div><div class=\"legend pos\">sustantivo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>bà: b sin aire, casi una p española [pa˥˩]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tāmen</span><span class=\"hz\">他们</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c3\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c4\"><span class=\"py\">bàmā</span><span class=\"hz\">爸妈</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Son mis padres.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_db0c946fa5bfc692.mp3\" aria-label=\"Play\"></button></div></div></section></div>"
   },
   {
    "id": "x.read.hen",
@@ -35146,6 +35659,221 @@
    "notes": ""
   },
   {
+   "id": "x.comprehension.en-la-tienda",
+   "type": "comprehension",
+   "theme": "compras",
+   "level": 1,
+   "targets": [
+    "s.wo-xiang-qu-shangdian",
+    "s.wo-xiang-mai-shuiguo",
+    "s.zhege-duoshaoqian",
+    "s.shi-kuai-qian"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el texto en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"hz-line\">我想去商店。我想买水果。这个多少钱？十块钱。</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Qué quiere comprar, y cuánto cuesta?</div></details>",
+   "back": "<div class=\"meaning\">Fruta; cuesta diez yuanes.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">xiǎng</span><span class=\"hz\">想</span></span><span class=\"seg c2\"><span class=\"py\">qù</span><span class=\"hz\">去</span></span><span class=\"seg c3\"><span class=\"py\">shāngdiàn</span><span class=\"hz\">商店</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Quiero ir a la tienda.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_6ec5b9b1035eaa0c.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">xiǎng</span><span class=\"hz\">想</span></span><span class=\"seg c2\"><span class=\"py\">mǎi</span><span class=\"hz\">买</span></span><span class=\"seg c3\"><span class=\"py\">shuǐguǒ</span><span class=\"hz\">水果</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Quiero comprar fruta.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0aec8ebacc92d601.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">zhè</span><span class=\"hz\">这</span></span><span class=\"seg c1\"><span class=\"py\">ge</span><span class=\"hz\">个</span></span><span class=\"seg c2\"><span class=\"py\">duōshao qián</span><span class=\"hz\">多少钱</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Cuánto cuesta esto?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a1d9f757b9b88a55.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">shí</span><span class=\"hz\">十</span></span><span class=\"seg c1\"><span class=\"py\">kuài</span><span class=\"hz\">块</span></span><span class=\"seg c2\"><span class=\"py\">qián</span><span class=\"hz\">钱</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Diez yuanes.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1e637dffbf4abf85.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.comprehension.restaurante",
+   "type": "comprehension",
+   "theme": "compras",
+   "level": 1,
+   "targets": [
+    "s.qingwen-fandian-zai-nali",
+    "s.zhe-shi-yijia-fandian",
+    "s.ji-ge-ren"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el texto en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"hz-line\">请问，饭店在哪里？这是一家饭店。几个人？</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Qué busca, y qué le preguntan al llegar?</div></details>",
+   "back": "<div class=\"meaning\">Un restaurante; al llegar le preguntan cuántas personas son.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">qǐngwèn</span><span class=\"hz\">请问</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">fàndiàn</span><span class=\"hz\">饭店</span></span><span class=\"seg c2\"><span class=\"py\">zài</span><span class=\"hz\">在</span></span><span class=\"seg c3\"><span class=\"py\">nǎlǐ</span><span class=\"hz\">哪里</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>Perdone, ¿dónde hay un restaurante?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e9883fb983756b03.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">zhè</span><span class=\"hz\">这</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">yì</span><span class=\"hz\">一</span></span><span class=\"seg c3\"><span class=\"py\">jiā</span><span class=\"hz\">家</span></span><span class=\"seg c4\"><span class=\"py\">fàndiàn</span><span class=\"hz\">饭店</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Esto es un restaurante.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_f410cb0ce2b5ebbe.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">jǐ</span><span class=\"hz\">几</span></span><span class=\"seg c1\"><span class=\"py\">ge</span><span class=\"hz\">个</span></span><span class=\"seg c2\"><span class=\"py\">rén</span><span class=\"hz\">人</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Cuántas personas? (en un restaurante)</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_8613acf6734b7f18.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.comprehension.quiere-agua",
+   "type": "comprehension",
+   "theme": "compras",
+   "level": 2,
+   "targets": [
+    "s.wo-keyi-he-shenme",
+    "s.ni-he-shui-ma",
+    "s.wo-yao-shui",
+    "s.haode-xiexie"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el diálogo en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"hz-line\">我可以喝什么？你喝水吗？我要水。好的，谢谢！</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Qué va a beber?</div></details>",
+   "back": "<div class=\"meaning\">Agua.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">kěyǐ</span><span class=\"hz\">可以</span></span><span class=\"seg c2\"><span class=\"py\">hē</span><span class=\"hz\">喝</span></span><span class=\"seg c3\"><span class=\"py\">shénme</span><span class=\"hz\">什么</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Qué puedo beber?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_573d17a56a77c622.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">hē</span><span class=\"hz\">喝</span></span><span class=\"seg c2\"><span class=\"py\">shuǐ</span><span class=\"hz\">水</span></span><span class=\"seg c3\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Bebes agua?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_cbd601ad7c16cdd0.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">yào</span><span class=\"hz\">要</span></span><span class=\"seg c2\"><span class=\"py\">shuǐ</span><span class=\"hz\">水</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Quiero agua.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0cd2a1cefddae60c.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">hǎo de</span><span class=\"hz\">好的</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">xièxie</span><span class=\"hz\">谢谢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>Vale, ¡gracias!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e3aca6484e9cdaa.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.comprehension.lo-que-mas-gusta",
+   "type": "comprehension",
+   "theme": "compras",
+   "level": 1,
+   "targets": [
+    "s.wo-ai-chi-haochi-de-dongxi",
+    "s.wo-zui-xihuan-zhongguo-cai",
+    "s.wo-ye-xihuan"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el diálogo en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">ài</span><span class=\"hz\">爱</span></span><span class=\"seg c2\"><span class=\"py\">chī</span><span class=\"hz\">吃</span></span><span class=\"seg c3\"><span class=\"py\">hǎochī</span><span class=\"hz\">好吃</span></span><span class=\"seg c4\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c0\"><span class=\"py\">dōngxi</span><span class=\"hz\">东西</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">zuì</span><span class=\"hz\">最</span></span><span class=\"seg c2\"><span class=\"py\">xǐhuan</span><span class=\"hz\">喜欢</span></span><span class=\"seg c3\"><span class=\"py\">Zhōngguó</span><span class=\"hz\">中国</span></span><span class=\"seg c4\"><span class=\"py\">cài</span><span class=\"hz\">菜</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">yě</span><span class=\"hz\">也</span></span><span class=\"seg c2\"><span class=\"py\">xǐhuan</span><span class=\"hz\">喜欢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Qué es lo que más le gusta?</div></details>",
+   "back": "<div class=\"meaning\">La comida china (y al otro también le gusta).</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">ài</span><span class=\"hz\">爱</span></span><span class=\"seg c2\"><span class=\"py\">chī</span><span class=\"hz\">吃</span></span><span class=\"seg c3\"><span class=\"py\">hǎochī</span><span class=\"hz\">好吃</span></span><span class=\"seg c4\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c0\"><span class=\"py\">dōngxi</span><span class=\"hz\">东西</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Me encanta comer cosas ricas.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_c04d58565e1b1a91.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">zuì</span><span class=\"hz\">最</span></span><span class=\"seg c2\"><span class=\"py\">xǐhuan</span><span class=\"hz\">喜欢</span></span><span class=\"seg c3\"><span class=\"py\">Zhōngguó</span><span class=\"hz\">中国</span></span><span class=\"seg c4\"><span class=\"py\">cài</span><span class=\"hz\">菜</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Lo que más me gusta es la comida china.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_3305d99fb35781ec.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">yě</span><span class=\"hz\">也</span></span><span class=\"seg c2\"><span class=\"py\">xǐhuan</span><span class=\"hz\">喜欢</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>A mí también me gusta.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e9bc87ef94d7efd.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.comprehension.aficion",
+   "type": "comprehension",
+   "theme": "compras",
+   "level": 1,
+   "targets": [
+    "s.nide-aihao-shi-shenme",
+    "s.wo-xihuan-kan-shu",
+    "s.wo-yibian-kanshu-yibian-hecha"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el diálogo en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"hz-line\">你的爱好是什么？我喜欢看书。我一边看书一边喝茶。</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Cuál es su afición, y qué hace mientras tanto?</div></details>",
+   "back": "<div class=\"meaning\">Leer; mientras lee, toma té.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c2\"><span class=\"py\">àihào</span><span class=\"hz\">爱好</span></span><span class=\"seg c3\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c4\"><span class=\"py\">shénme</span><span class=\"hz\">什么</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Cuál es tu afición?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_ab5b7690185c444b.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">xǐhuan</span><span class=\"hz\">喜欢</span></span><span class=\"seg c2\"><span class=\"py\">kàn</span><span class=\"hz\">看</span></span><span class=\"seg c3\"><span class=\"py\">shū</span><span class=\"hz\">书</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Me gusta leer.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_95313e6dbfad3d5a.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">yìbiān</span><span class=\"hz\">一边</span></span><span class=\"seg c2\"><span class=\"py\">kàn</span><span class=\"hz\">看</span></span><span class=\"seg c3\"><span class=\"py\">shū</span><span class=\"hz\">书</span></span><span class=\"seg c4\"><span class=\"py\">yìbiān</span><span class=\"hz\">一边</span></span><span class=\"seg c0\"><span class=\"py\">hē</span><span class=\"hz\">喝</span></span><span class=\"seg c1\"><span class=\"py\">chá</span><span class=\"hz\">茶</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Leo mientras tomo té.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_60c7baeb79635fd3.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.comprehension.sin-dinero",
+   "type": "comprehension",
+   "theme": "compras",
+   "level": 1,
+   "targets": [
+    "s.wo-xiang-mai-jipiao",
+    "s.ni-you-duoshao-qian",
+    "s.wo-meiyou-qian"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el diálogo en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">xiǎng</span><span class=\"hz\">想</span></span><span class=\"seg c2\"><span class=\"py\">mǎi</span><span class=\"hz\">买</span></span><span class=\"seg c3\"><span class=\"py\">jīpiào</span><span class=\"hz\">机票</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">yǒu</span><span class=\"hz\">有</span></span><span class=\"seg c2\"><span class=\"py\">duōshao</span><span class=\"hz\">多少</span></span><span class=\"seg c3\"><span class=\"py\">qián</span><span class=\"hz\">钱</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">méiyǒu</span><span class=\"hz\">没有</span></span><span class=\"seg c2\"><span class=\"py\">qián</span><span class=\"hz\">钱</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Puede comprar el billete de avión?</div></details>",
+   "back": "<div class=\"meaning\">No: no tiene dinero.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">xiǎng</span><span class=\"hz\">想</span></span><span class=\"seg c2\"><span class=\"py\">mǎi</span><span class=\"hz\">买</span></span><span class=\"seg c3\"><span class=\"py\">jīpiào</span><span class=\"hz\">机票</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Quiero comprar un billete de avión.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_663cbd9b5f627a94.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">yǒu</span><span class=\"hz\">有</span></span><span class=\"seg c2\"><span class=\"py\">duōshao</span><span class=\"hz\">多少</span></span><span class=\"seg c3\"><span class=\"py\">qián</span><span class=\"hz\">钱</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Cuánto dinero tienes?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_41f472b030c6a41e.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">méiyǒu</span><span class=\"hz\">没有</span></span><span class=\"seg c2\"><span class=\"py\">qián</span><span class=\"hz\">钱</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>No tengo dinero.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_12ebf79feb96450b.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.tones.niurou",
+   "type": "tones",
+   "theme": "compras",
+   "level": 2,
+   "targets": [
+    "w.niurou"
+   ],
+   "context": [],
+   "examples": [
+    "s.wo-yao-niurou"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "24",
+    "hanzi": "牛肉"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_410081513fb50b4a.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">牛肉</div><div class=\"pinyin\">niúròu</div><div class=\"ipa\">[njoʊ˧˥ ʐoʊ˥˩]</div><div class=\"meaning\">carne de ternera</div><div class=\"legend pos\">sustantivo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>ròu: r, entre la r inglesa y la y porteña; nunca vibra [ʐoʊ˥˩]</div><div>niú: -iu se lee «iou» [njoʊ˧˥]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">yào</span><span class=\"hz\">要</span></span><span class=\"seg c2\"><span class=\"py\">niúròu</span><span class=\"hz\">牛肉</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Quiero ternera (pidiendo).</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a068bf6079e5c893.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">Modificador + núcleo: 牛 «vaca» especifica 肉 «carne».</div></section></div>"
+  },
+  {
+   "id": "x.tones.aihao",
+   "type": "tones",
+   "theme": "compras",
+   "level": 1,
+   "targets": [
+    "w.aihao"
+   ],
+   "context": [],
+   "examples": [
+    "s.nide-aihao-shi-shenme"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "44",
+    "hanzi": "爱好"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_78bc63302a7853cc.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">爱好</div><div class=\"pinyin\">àihào</div><div class=\"ipa\">[aɪ˥˩ xɑʊ˥˩]</div><div class=\"meaning\">afición, hobby</div><div class=\"legend pos\">sustantivo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>hào: h es una jota suave, rasposa [xɑʊ˥˩]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c2\"><span class=\"py\">àihào</span><span class=\"hz\">爱好</span></span><span class=\"seg c3\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c4\"><span class=\"py\">shénme</span><span class=\"hz\">什么</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Cuál es tu afición?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_ab5b7690185c444b.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">爱 «amar» + 好 hào «que gusta»: lo que te gusta hacer. Aquí 好 se lee hào, no hǎo.</div></section></div>"
+  },
+  {
+   "id": "x.tones.chifan",
+   "type": "tones",
+   "theme": "compras",
+   "level": 1,
+   "targets": [
+    "w.chifan"
+   ],
+   "context": [],
+   "examples": [
+    "s.chifan-le-ma",
+    "s.wo-chifan-le"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "14",
+    "hanzi": "吃饭"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_69b7f0ef7dcd12d6.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">吃饭</div><div class=\"pinyin\">chīfàn</div><div class=\"ipa\">[ʈʂʰɨ˥ fan˥˩]</div><div class=\"meaning\">comer (una comida)</div><div class=\"legend pos\">verbo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>chī: la i no suena i; se alarga la consonante, con la lengua curvada [ʈʂʰɨ˥]</div><div>chī: ch con la punta de la lengua curvada hacia atrás [ʈʂʰɨ˥]</div></div></section><section class=\"note note--example\"><h4>Ejemplos</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">chīfàn</span><span class=\"hz\">吃饭</span></span><span class=\"seg c1\"><span class=\"py\">le</span><span class=\"hz\">了</span></span><span class=\"seg c2\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Has comido? (como saludo)</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e39b0e2f45caa01c.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">chīfàn</span><span class=\"hz\">吃饭</span></span><span class=\"seg c2\"><span class=\"py\">le</span><span class=\"hz\">了</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Ya he comido.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d87bf9f74dbb24bf.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">Verbo y objeto, «comer comida»: es la forma normal de decir «comer» cuando no dices qué. 吃饭了吗？ es también un saludo.</div></section></div>"
+  },
+  {
+   "id": "x.tones.haochi",
+   "type": "tones",
+   "theme": "compras",
+   "level": 1,
+   "targets": [
+    "w.haochi"
+   ],
+   "context": [],
+   "examples": [
+    "s.wo-ai-chi-haochi-de-dongxi"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "31",
+    "hanzi": "好吃"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_eb9b082219f778ce.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">好吃</div><div class=\"pinyin\">hǎochī</div><div class=\"ipa\">[xɑʊ˧˩˧ ʈʂʰɨ˥]</div><div class=\"meaning\">rico, bueno (de comer)</div><div class=\"legend pos\">adjetivo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>chī: la i no suena i; se alarga la consonante, con la lengua curvada [ʈʂʰɨ˥]</div><div>hǎo: h es una jota suave, rasposa [xɑʊ˧˩˧]</div><div>chī: ch con la punta de la lengua curvada hacia atrás [ʈʂʰɨ˥]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">ài</span><span class=\"hz\">爱</span></span><span class=\"seg c2\"><span class=\"py\">chī</span><span class=\"hz\">吃</span></span><span class=\"seg c3\"><span class=\"py\">hǎochī</span><span class=\"hz\">好吃</span></span><span class=\"seg c4\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c0\"><span class=\"py\">dōngxi</span><span class=\"hz\">东西</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Me encanta comer cosas ricas.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_c04d58565e1b1a91.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">好 + verbo: «bueno de…». 好吃 «rico», 好看 «bonito», 好听 «agradable de oír».</div></section></div>"
+  },
+  {
    "id": "x.derive.xiawu",
    "type": "derive",
    "theme": "tiempo",
@@ -36273,6 +37001,120 @@
    "notes": ""
   },
   {
+   "id": "x.comprehension.la-tarde",
+   "type": "comprehension",
+   "theme": "tiempo",
+   "level": 1,
+   "targets": [
+    "s.zhongwu-ni-qu-nar",
+    "s.xiawu-qu-shangdian",
+    "s.wo-huijia-shuijiao"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el diálogo en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">zhōngwǔ</span><span class=\"hz\">中午</span></span><span class=\"seg c1\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c2\"><span class=\"py\">qù</span><span class=\"hz\">去</span></span><span class=\"seg c3\"><span class=\"py\">nǎlǐ</span><span class=\"hz\">哪里</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">xiàwǔ</span><span class=\"hz\">下午</span></span><span class=\"seg c1\"><span class=\"py\">qù</span><span class=\"hz\">去</span></span><span class=\"seg c2\"><span class=\"py\">shāngdiàn</span><span class=\"hz\">商店</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">huíjiā</span><span class=\"hz\">回家</span></span><span class=\"seg c2\"><span class=\"py\">shuìjiào</span><span class=\"hz\">睡觉</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Adónde va por la tarde?</div></details>",
+   "back": "<div class=\"meaning\">A la tienda (y luego a casa a dormir).</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">zhōngwǔ</span><span class=\"hz\">中午</span></span><span class=\"seg c1\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c2\"><span class=\"py\">qù</span><span class=\"hz\">去</span></span><span class=\"seg c3\"><span class=\"py\">nǎlǐ</span><span class=\"hz\">哪里</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Adónde vas a mediodía?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_098be7f26c2ad3e0.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">xiàwǔ</span><span class=\"hz\">下午</span></span><span class=\"seg c1\"><span class=\"py\">qù</span><span class=\"hz\">去</span></span><span class=\"seg c2\"><span class=\"py\">shāngdiàn</span><span class=\"hz\">商店</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Por la tarde voy a la tienda.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_f644d3227c13abd5.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">huíjiā</span><span class=\"hz\">回家</span></span><span class=\"seg c2\"><span class=\"py\">shuìjiào</span><span class=\"hz\">睡觉</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Me voy a casa a dormir.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_fc6a3f4e2af46128.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.tones.shangwu",
+   "type": "tones",
+   "theme": "tiempo",
+   "level": 1,
+   "targets": [
+    "w.shangwu"
+   ],
+   "context": [],
+   "examples": [
+    "s.shangwu-gongzuo-wanshang-kan-shu"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "43",
+    "hanzi": "上午"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1ed4768e8926b873.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">上午</div><div class=\"pinyin\">shàngwǔ</div><div class=\"ipa\">[ʂɑŋ˥˩ u˧˩˧]</div><div class=\"meaning\">por la mañana (antes de mediodía)</div><div class=\"legend pos\">sustantivo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Partes del día</h4><div class=\"note-body\">Con 午 «mediodía» se forman las tres del centro (上 antes, 中 en, 下 después); la noche va aparte.<div class=\"is-target\">上午 shàngwǔ — por la mañana (antes de mediodía) · 上 «arriba, antes» + 午</div><div>中午 zhōngwǔ — mediodía · 中 «en medio» + 午</div><div>下午 xiàwǔ — por la tarde · 下 «abajo, después» + 午</div><div>晚上 wǎnshang — por la noche · 晚 «tarde, noche»; sin 午</div></div></section><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>shàng: sh con la punta de la lengua curvada hacia atrás [ʂɑŋ˥˩]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">shàngwǔ</span><span class=\"hz\">上午</span></span><span class=\"seg c2\"><span class=\"py\">gōngzuò</span><span class=\"hz\">工作</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c3\"><span class=\"py\">wǎnshang</span><span class=\"hz\">晚上</span></span><span class=\"seg c4\"><span class=\"py\">kàn</span><span class=\"hz\">看</span></span><span class=\"seg c0\"><span class=\"py\">shū</span><span class=\"hz\">书</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Por la mañana trabajo y por la noche leo.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_68716ea5c884f8e6.mp3\" aria-label=\"Play\"></button></div></div></section></div>"
+  },
+  {
+   "id": "x.tones.zhongwu",
+   "type": "tones",
+   "theme": "tiempo",
+   "level": 1,
+   "targets": [
+    "w.zhongwu"
+   ],
+   "context": [],
+   "examples": [
+    "s.zhongwu-ni-qu-nar",
+    "s.xiawu-qu-shangdian"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "13",
+    "hanzi": "中午"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1fddf12f97714b3b.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">中午</div><div class=\"pinyin\">zhōngwǔ</div><div class=\"ipa\">[ʈʂʊŋ˥ u˧˩˧]</div><div class=\"meaning\">mediodía</div><div class=\"legend pos\">sustantivo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Partes del día</h4><div class=\"note-body\">Con 午 «mediodía» se forman las tres del centro (上 antes, 中 en, 下 después); la noche va aparte.<div>上午 shàngwǔ — por la mañana (antes de mediodía) · 上 «arriba, antes» + 午</div><div class=\"is-target\">中午 zhōngwǔ — mediodía · 中 «en medio» + 午</div><div>下午 xiàwǔ — por la tarde · 下 «abajo, después» + 午</div><div>晚上 wǎnshang — por la noche · 晚 «tarde, noche»; sin 午</div></div></section><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>zhōng: zh con la punta de la lengua curvada hacia atrás [ʈʂʊŋ˥]</div><div>zhōng: -ong suena «ung» [ʈʂʊŋ˥]</div></div></section><section class=\"note note--example\"><h4>Ejemplos</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">zhōngwǔ</span><span class=\"hz\">中午</span></span><span class=\"seg c1\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c2\"><span class=\"py\">qù</span><span class=\"hz\">去</span></span><span class=\"seg c3\"><span class=\"py\">nǎlǐ</span><span class=\"hz\">哪里</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Adónde vas a mediodía?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_098be7f26c2ad3e0.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">xiàwǔ</span><span class=\"hz\">下午</span></span><span class=\"seg c1\"><span class=\"py\">qù</span><span class=\"hz\">去</span></span><span class=\"seg c2\"><span class=\"py\">shāngdiàn</span><span class=\"hz\">商店</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Por la tarde voy a la tienda.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_f644d3227c13abd5.mp3\" aria-label=\"Play\"></button></div></div></section></div>"
+  },
+  {
+   "id": "x.tones.mingtian",
+   "type": "tones",
+   "theme": "tiempo",
+   "level": 1,
+   "targets": [
+    "w.mingtian"
+   ],
+   "context": [],
+   "examples": [
+    "s.mingtian-jian",
+    "s.mingtian-hui-xiayu"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "21",
+    "hanzi": "明天"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_220d613051c0407f.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">明天</div><div class=\"pinyin\">míngtiān</div><div class=\"ipa\">[miŋ˧˥ tʰjɛn˥]</div><div class=\"meaning\">mañana (el día)</div><div class=\"legend pos\">sustantivo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>tiān: -ian suena «ien», no «ian» [tʰjɛn˥]</div><div>tiān: t con un soplo de aire claro [tʰjɛn˥]</div></div></section><section class=\"note note--example\"><h4>Ejemplos</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">míngtiān</span><span class=\"hz\">明天</span></span><span class=\"seg c1\"><span class=\"py\">jiàn</span><span class=\"hz\">见</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>¡Hasta mañana!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_c9522059fbe30f10.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">míngtiān</span><span class=\"hz\">明天</span></span><span class=\"seg c1\"><span class=\"py\">huì</span><span class=\"hz\">会</span></span><span class=\"seg c2\"><span class=\"py\">xiàyǔ</span><span class=\"hz\">下雨</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Mañana lloverá.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_f919d806acf57ad9.mp3\" aria-label=\"Play\"></button></div></div></section></div>"
+  },
+  {
+   "id": "x.tones.huijia",
+   "type": "tones",
+   "theme": "tiempo",
+   "level": 1,
+   "targets": [
+    "w.huijia"
+   ],
+   "context": [],
+   "examples": [
+    "s.wo-huijia-shuijiao"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "21",
+    "hanzi": "回家"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_afc2cee515791037.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">回家</div><div class=\"pinyin\">huíjiā</div><div class=\"ipa\">[xweɪ˧˥ tɕja˥]</div><div class=\"meaning\">volver a casa</div><div class=\"legend pos\">verbo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>jiā: j es una ch suave con la lengua plana, no una jota [tɕja˥]</div><div>huí: -ui se lee «uei» [xweɪ˧˥]</div><div>huí: h es una jota suave, rasposa [xweɪ˧˥]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">huíjiā</span><span class=\"hz\">回家</span></span><span class=\"seg c2\"><span class=\"py\">shuìjiào</span><span class=\"hz\">睡觉</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Me voy a casa a dormir.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_fc6a3f4e2af46128.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">回 «volver» + 家 «casa». Encadena otra acción detrás: 我回家睡觉 «me voy a casa a dormir».</div></section></div>"
+  },
+  {
    "id": "x.dictation.tianqi",
    "type": "listen",
    "theme": "clima",
@@ -36863,6 +37705,46 @@
    "task": "Lee el texto en voz alta. Al terminar, abre la pregunta y respóndela en chino, en voz alta.",
    "front": "<div class=\"passage\"><div class=\"hz-line\">北京很热。北京很大。明天会下雨。</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"hz-line\">北京下雨吗？</div></details>",
    "back": "<div class=\"meaning\">Hoy no: hace calor. Mañana sí (明天会下雨).</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">Běijīng</span><span class=\"hz\">北京</span></span><span class=\"seg c1\"><span class=\"py\">xiàyǔ</span><span class=\"hz\">下雨</span></span><span class=\"seg c2\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Llueve en Pekín?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_8f7feef7668dfb4d.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">Běijīng</span><span class=\"hz\">北京</span></span><span class=\"seg c1\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c2\"><span class=\"py\">rè</span><span class=\"hz\">热</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>En Pekín hace mucho calor.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d782bdd4113c3505.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">Běijīng</span><span class=\"hz\">北京</span></span><span class=\"seg c1\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c2\"><span class=\"py\">dà</span><span class=\"hz\">大</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Pekín es grande.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_dc63c9f096f9f1b9.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">míngtiān</span><span class=\"hz\">明天</span></span><span class=\"seg c1\"><span class=\"py\">huì</span><span class=\"hz\">会</span></span><span class=\"seg c2\"><span class=\"py\">xiàyǔ</span><span class=\"hz\">下雨</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Mañana lloverá.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_f919d806acf57ad9.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.comprehension.hace-frio",
+   "type": "comprehension",
+   "theme": "clima",
+   "level": 1,
+   "targets": [
+    "s.tianqi-leng-ma",
+    "s.tianqi-hen-leng",
+    "s.yao-xiayu-le"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el diálogo en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tiānqì</span><span class=\"hz\">天气</span></span><span class=\"seg c1\"><span class=\"py\">lěng</span><span class=\"hz\">冷</span></span><span class=\"seg c2\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tiānqì</span><span class=\"hz\">天气</span></span><span class=\"seg c1\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c2\"><span class=\"py\">lěng</span><span class=\"hz\">冷</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">yào</span><span class=\"hz\">要</span></span><span class=\"seg c1\"><span class=\"py\">xiàyǔ</span><span class=\"hz\">下雨</span></span><span class=\"seg c2\"><span class=\"py\">le</span><span class=\"hz\">了</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Qué tiempo hace?</div></details>",
+   "back": "<div class=\"meaning\">Hace mucho frío y va a llover.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tiānqì</span><span class=\"hz\">天气</span></span><span class=\"seg c1\"><span class=\"py\">lěng</span><span class=\"hz\">冷</span></span><span class=\"seg c2\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Hace frío?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_bdac26601d2d9a91.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tiānqì</span><span class=\"hz\">天气</span></span><span class=\"seg c1\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c2\"><span class=\"py\">lěng</span><span class=\"hz\">冷</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Hace mucho frío.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_ae42a5bf936e47fb.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">yào</span><span class=\"hz\">要</span></span><span class=\"seg c1\"><span class=\"py\">xiàyǔ</span><span class=\"hz\">下雨</span></span><span class=\"seg c2\"><span class=\"py\">le</span><span class=\"hz\">了</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Va a llover.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_b16ce8182cfdd2e6.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.comprehension.no-voy",
+   "type": "comprehension",
+   "theme": "clima",
+   "level": 1,
+   "targets": [
+    "s.xiayu-le",
+    "s.ni-weishenme-bu-qu",
+    "s.yinwei-xiayu-suoyi-wo-bu-qu"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el diálogo en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"hz-line\">下雨了。你为什么不去？因为下雨，所以我不去。</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Por qué no va?</div></details>",
+   "back": "<div class=\"meaning\">Porque llueve.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">xiàyǔ</span><span class=\"hz\">下雨</span></span><span class=\"seg c1\"><span class=\"py\">le</span><span class=\"hz\">了</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Se ha puesto a llover.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e8210b011dd887fc.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">wèishénme</span><span class=\"hz\">为什么</span></span><span class=\"seg c2\"><span class=\"py\">bú</span><span class=\"hz\">不</span></span><span class=\"seg c3\"><span class=\"py\">qù</span><span class=\"hz\">去</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Por qué no vas?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_83f7e96a2631a8b8.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">yīnwèi</span><span class=\"hz\">因为</span></span><span class=\"seg c1\"><span class=\"py\">xiàyǔ</span><span class=\"hz\">下雨</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c2\"><span class=\"py\">suǒyǐ</span><span class=\"hz\">所以</span></span><span class=\"seg c3\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c4\"><span class=\"py\">bú</span><span class=\"hz\">不</span></span><span class=\"seg c0\"><span class=\"py\">qù</span><span class=\"hz\">去</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Como llueve, no voy.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_9e8291534f3fa6f4.mp3\" aria-label=\"Play\"></button></div>",
    "notes": ""
   },
   {
@@ -38493,6 +39375,50 @@
    "front": "<div class=\"hanzi\">本</div>",
    "back": "<div class=\"hanzi\">本</div><div class=\"pinyin\">běn</div><div class=\"ipa\">[pən˧˩˧]</div><div class=\"meaning\">clasificador de libros y cuadernos</div><div class=\"legend pos\">pronombre</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a1076cf4565e95a8.mp3\" aria-label=\"Play\"></button>",
    "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>本 běn / 笨 bèn</h4><div class=\"note-body\">Casi iguales al oído: 本 běn (tercer tono) cuenta libros y 笨 bèn (cuarto tono) es «torpe». Además 本 da el sonido a 笨, que es 竹 sobre 本.<div class=\"is-target\">本 běn — clasificador de libros y cuadernos · běn, baja y sube: clasificador de libros</div><div>笨 bèn — torpe, tonto · bèn, cae: torpe</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">yǒu</span><span class=\"hz\">有</span></span><span class=\"seg c2\"><span class=\"py\">yì</span><span class=\"hz\">一</span></span><span class=\"seg c3\"><span class=\"py\">běn</span><span class=\"hz\">本</span></span><span class=\"seg c4\"><span class=\"py\">shū</span><span class=\"hz\">书</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Tengo un libro.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_aeb6ab66bd7669da.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">Un árbol 木 con una raya en la raíz: su sentido original es «raíz, origen». Como clasificador, cuenta libros.</div></section><section class=\"note note--teacher\"><h4>En clase</h4><div class=\"note-body\">Como 个 para personas, 本 para libros: 一个人 «una persona», 一本书 «un libro».</div></section></div>"
+  },
+  {
+   "id": "x.comprehension.tres-amigos",
+   "type": "comprehension",
+   "theme": "numeros",
+   "level": 1,
+   "targets": [
+    "s.wo-you-san-ge-pengyou",
+    "s.women-dou-shi-xuesheng",
+    "s.women-dou-xihuan-da-lanqiu"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el texto en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"hz-line\">我有三个朋友。我们都是学生。我们都喜欢打篮球。</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Cuántos amigos tiene, y qué les gusta?</div></details>",
+   "back": "<div class=\"meaning\">Tres; a todos les gusta jugar al baloncesto.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">yǒu</span><span class=\"hz\">有</span></span><span class=\"seg c2\"><span class=\"py\">sān</span><span class=\"hz\">三</span></span><span class=\"seg c3\"><span class=\"py\">ge</span><span class=\"hz\">个</span></span><span class=\"seg c4\"><span class=\"py\">péngyou</span><span class=\"hz\">朋友</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Tengo tres amigos.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_aa68e737fa45c35b.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒmen</span><span class=\"hz\">我们</span></span><span class=\"seg c1\"><span class=\"py\">dōu</span><span class=\"hz\">都</span></span><span class=\"seg c2\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c3\"><span class=\"py\">xuéshēng</span><span class=\"hz\">学生</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Todos somos estudiantes.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_92c8f15d56c8b2b9.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒmen</span><span class=\"hz\">我们</span></span><span class=\"seg c1\"><span class=\"py\">dōu</span><span class=\"hz\">都</span></span><span class=\"seg c2\"><span class=\"py\">xǐhuan</span><span class=\"hz\">喜欢</span></span><span class=\"seg c3\"><span class=\"py\">dǎ</span><span class=\"hz\">打</span></span><span class=\"seg c4\"><span class=\"py\">lánqiú</span><span class=\"hz\">篮球</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>A todos nos gusta jugar al baloncesto.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_dff106ea32bf9408.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.tones.meiyou",
+   "type": "tones",
+   "theme": "numeros",
+   "level": 1,
+   "targets": [
+    "w.meiyou"
+   ],
+   "context": [],
+   "examples": [
+    "s.wo-meiyou-qian",
+    "s.wo-meiyou-shijian"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "23",
+    "hanzi": "没有"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0e54fed52af7e0dc.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">没有</div><div class=\"pinyin\">méiyǒu</div><div class=\"ipa\">[meɪ˧˥ joʊ˧˩˧]</div><div class=\"meaning\">no tener; no haber</div><div class=\"legend pos\">verbo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--example\"><h4>Ejemplos</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">méiyǒu</span><span class=\"hz\">没有</span></span><span class=\"seg c2\"><span class=\"py\">qián</span><span class=\"hz\">钱</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>No tengo dinero.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_12ebf79feb96450b.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">méiyǒu</span><span class=\"hz\">没有</span></span><span class=\"seg c2\"><span class=\"py\">shíjiān</span><span class=\"hz\">时间</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>No tengo tiempo.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d5a19d6ac2b5029d.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">有 se niega con 没, nunca con 不: 我没有钱 «no tengo dinero».</div></section></div>"
   },
   {
    "id": "x.read.kan",
@@ -42931,6 +43857,159 @@
    "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>书 shū / 树 shù</h4><div class=\"note-body\">Misma sílaba, distinto tono: 书 shū es «libro» (primer tono, alto y plano) y 树 shù es «árbol» (cuarto tono, cae).<div>书 shū — libro · shū, alto y plano: libro</div><div class=\"is-target\">树 shù — árbol · shù, cae: árbol</div></div></section><section class=\"note note--example\"><h4>Ejemplos</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nà</span><span class=\"hz\">那</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">shénme</span><span class=\"hz\">什么</span></span><span class=\"seg c3\"><span class=\"py\">shù</span><span class=\"hz\">树</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Qué árbol es ese?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_68472a537f1bca4b.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">zài</span><span class=\"hz\">在</span></span><span class=\"seg c2\"><span class=\"py\">kàn</span><span class=\"hz\">看</span></span><span class=\"seg c3\"><span class=\"py\">shū</span><span class=\"hz\">书</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Estoy leyendo.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_7666257e0141d307.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">这棵树很高 «este árbol es alto»: 棵 kē es el clasificador de los árboles. No confundir con 书 shū «libro»: suenan parecido, pero 树 es cuarto tono.</div></section></div>"
   },
   {
+   "id": "x.comprehension.a-china-en-avion",
+   "type": "comprehension",
+   "theme": "cosas",
+   "level": 1,
+   "targets": [
+    "s.wo-qu-guo-beijing",
+    "s.wo-zuo-feiji-qu-zhongguo",
+    "s.beijing-hen-da"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el texto en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">qù</span><span class=\"hz\">去</span></span><span class=\"seg c2\"><span class=\"py\">guo</span><span class=\"hz\">过</span></span><span class=\"seg c3\"><span class=\"py\">Běijīng</span><span class=\"hz\">北京</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">zuò</span><span class=\"hz\">坐</span></span><span class=\"seg c2\"><span class=\"py\">fēijī</span><span class=\"hz\">飞机</span></span><span class=\"seg c3\"><span class=\"py\">qù</span><span class=\"hz\">去</span></span><span class=\"seg c4\"><span class=\"py\">Zhōngguó</span><span class=\"hz\">中国</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">Běijīng</span><span class=\"hz\">北京</span></span><span class=\"seg c1\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c2\"><span class=\"py\">dà</span><span class=\"hz\">大</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Ha estado en Pekín? ¿Cómo va a China?</div></details>",
+   "back": "<div class=\"meaning\">Sí, ha estado; va en avión.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">qù</span><span class=\"hz\">去</span></span><span class=\"seg c2\"><span class=\"py\">guo</span><span class=\"hz\">过</span></span><span class=\"seg c3\"><span class=\"py\">Běijīng</span><span class=\"hz\">北京</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>He estado en Pekín.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_6963a039f00a4622.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">zuò</span><span class=\"hz\">坐</span></span><span class=\"seg c2\"><span class=\"py\">fēijī</span><span class=\"hz\">飞机</span></span><span class=\"seg c3\"><span class=\"py\">qù</span><span class=\"hz\">去</span></span><span class=\"seg c4\"><span class=\"py\">Zhōngguó</span><span class=\"hz\">中国</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Voy a China en avión.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1ef2168c7fab2a52.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">Běijīng</span><span class=\"hz\">北京</span></span><span class=\"seg c1\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c2\"><span class=\"py\">dà</span><span class=\"hz\">大</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Pekín es grande.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_dc63c9f096f9f1b9.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.comprehension.puedo-entrar",
+   "type": "comprehension",
+   "theme": "cosas",
+   "level": 1,
+   "targets": [
+    "s.wo-neng-jinqu-ma",
+    "s.ni-jinlai-ba",
+    "s.wo-zai-kan-dianshi"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el diálogo en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">néng</span><span class=\"hz\">能</span></span><span class=\"seg c2\"><span class=\"py\">jìn</span><span class=\"hz\">进</span></span><span class=\"seg c3\"><span class=\"py\">qù</span><span class=\"hz\">去</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">jìn</span><span class=\"hz\">进</span></span><span class=\"seg c2\"><span class=\"py\">lái</span><span class=\"hz\">来</span></span><span class=\"seg c3\"><span class=\"py\">ba</span><span class=\"hz\">吧</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">zài</span><span class=\"hz\">在</span></span><span class=\"seg c2\"><span class=\"py\">kàn</span><span class=\"hz\">看</span></span><span class=\"seg c3\"><span class=\"py\">diànshì</span><span class=\"hz\">电视</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Le dejan pasar? ¿Qué está haciendo el de dentro?</div></details>",
+   "back": "<div class=\"meaning\">Sí; el de dentro está viendo la tele.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">néng</span><span class=\"hz\">能</span></span><span class=\"seg c2\"><span class=\"py\">jìn</span><span class=\"hz\">进</span></span><span class=\"seg c3\"><span class=\"py\">qù</span><span class=\"hz\">去</span></span><span class=\"seg c4\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Puedo entrar?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_88ffbe045f41f799.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">jìn</span><span class=\"hz\">进</span></span><span class=\"seg c2\"><span class=\"py\">lái</span><span class=\"hz\">来</span></span><span class=\"seg c3\"><span class=\"py\">ba</span><span class=\"hz\">吧</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Pasa, entra.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_b9fdb5579673bedc.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">zài</span><span class=\"hz\">在</span></span><span class=\"seg c2\"><span class=\"py\">kàn</span><span class=\"hz\">看</span></span><span class=\"seg c3\"><span class=\"py\">diànshì</span><span class=\"hz\">电视</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Estoy viendo la tele.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_beccacaa352a957e.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
+  },
+  {
+   "id": "x.tones.huoche",
+   "type": "tones",
+   "theme": "cosas",
+   "level": 1,
+   "targets": [
+    "w.huoche"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "31",
+    "hanzi": "火车"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_f0f5fc26f05ec8f4.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">火车</div><div class=\"pinyin\">huǒchē</div><div class=\"ipa\">[xwɔ˧˩˧ ʈʂʰɤ˥]</div><div class=\"meaning\">tren</div><div class=\"legend pos\">sustantivo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>chē: ch con la punta de la lengua curvada hacia atrás [ʈʂʰɤ˥]</div><div>huǒ: h es una jota suave, rasposa [xwɔ˧˩˧]</div><div>chē: esta e no es española: suena hacia atrás, casi como una o sin redondear [ʈʂʰɤ˥]</div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">火 «fuego» + 车 «vehículo»: el primero especifica el segundo.</div></section></div>"
+  },
+  {
+   "id": "x.tones.feiji",
+   "type": "tones",
+   "theme": "cosas",
+   "level": 1,
+   "targets": [
+    "w.feiji"
+   ],
+   "context": [],
+   "examples": [
+    "s.wo-zuo-feiji-qu-zhongguo"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "11",
+    "hanzi": "飞机"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_cb1fedce0f624b6e.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">飞机</div><div class=\"pinyin\">fēijī</div><div class=\"ipa\">[feɪ˥ tɕi˥]</div><div class=\"meaning\">avión</div><div class=\"legend pos\">sustantivo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>jī: j es una ch suave con la lengua plana, no una jota [tɕi˥]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">zuò</span><span class=\"hz\">坐</span></span><span class=\"seg c2\"><span class=\"py\">fēijī</span><span class=\"hz\">飞机</span></span><span class=\"seg c3\"><span class=\"py\">qù</span><span class=\"hz\">去</span></span><span class=\"seg c4\"><span class=\"py\">Zhōngguó</span><span class=\"hz\">中国</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Voy a China en avión.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1ef2168c7fab2a52.mp3\" aria-label=\"Play\"></button></div></div></section></div>"
+  },
+  {
+   "id": "x.tones.dianying",
+   "type": "tones",
+   "theme": "cosas",
+   "level": 1,
+   "targets": [
+    "w.dianying"
+   ],
+   "context": [],
+   "examples": [
+    "s.ni-kan-guo-zhege-dianying-ma"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "43",
+    "hanzi": "电影"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_377002a3d75d9983.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">电影</div><div class=\"pinyin\">diànyǐng</div><div class=\"ipa\">[tjɛn˥˩ iŋ˧˩˧]</div><div class=\"meaning\">película</div><div class=\"legend pos\">sustantivo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>diàn: -ian suena «ien», no «ian» [tjɛn˥˩]</div><div>diàn: d sin aire, casi una t española [tjɛn˥˩]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">nǐ</span><span class=\"hz\">你</span></span><span class=\"seg c1\"><span class=\"py\">kàn</span><span class=\"hz\">看</span></span><span class=\"seg c2\"><span class=\"py\">guo</span><span class=\"hz\">过</span></span><span class=\"seg c3\"><span class=\"py\">zhè</span><span class=\"hz\">这</span></span><span class=\"seg c4\"><span class=\"py\">ge</span><span class=\"hz\">个</span></span><span class=\"seg c0\"><span class=\"py\">diànyǐng</span><span class=\"hz\">电影</span></span><span class=\"seg c1\"><span class=\"py\">ma</span><span class=\"hz\">吗</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>¿Has visto esta película?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_3d43571b0188a64e.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">电 «electricidad» + 影 «sombra, imagen»: sombras eléctricas. El 电 de 电话 y 电脑.</div></section></div>"
+  },
+  {
+   "id": "x.tones.feichang",
+   "type": "tones",
+   "theme": "cosas",
+   "level": 1,
+   "targets": [
+    "w.feichang"
+   ],
+   "context": [],
+   "examples": [
+    "s.feichang-hao"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "12",
+    "hanzi": "非常"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_9cdfefa9a3fe870f.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">非常</div><div class=\"pinyin\">fēicháng</div><div class=\"ipa\">[feɪ˥ ʈʂʰɑŋ˧˥]</div><div class=\"meaning\">muy, muchísimo</div><div class=\"legend pos\">adverbio</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>cháng: ch con la punta de la lengua curvada hacia atrás [ʈʂʰɑŋ˧˥]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">fēicháng</span><span class=\"hz\">非常</span></span><span class=\"seg c1\"><span class=\"py\">hǎo</span><span class=\"hz\">好</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>¡Muy bien!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_ef0627f25eb7aaa2.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">Más fuerte que 很: 非常好 «muy bien». Para agradecer se dice 太谢谢你了 o 非常感谢 [HSK 2]; «非常谢谢你» suena forzado.</div></section></div>"
+  },
+  {
+   "id": "x.tones.dianshi",
+   "type": "tones",
+   "theme": "cosas",
+   "level": 1,
+   "targets": [
+    "w.dianshi"
+   ],
+   "context": [],
+   "examples": [
+    "s.wo-zai-kan-dianshi"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "44",
+    "hanzi": "电视"
+   },
+   "task": "Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).",
+   "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_685dd565b1c1891e.mp3\" aria-label=\"Play\"></button>",
+   "back": "<div class=\"hanzi\">电视</div><div class=\"pinyin\">diànshì</div><div class=\"ipa\">[tjɛn˥˩ ʂɨ˥˩]</div><div class=\"meaning\">televisión</div><div class=\"legend pos\">sustantivo</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>shì: la i no suena i; se alarga la consonante, con la lengua curvada [ʂɨ˥˩]</div><div>diàn: -ian suena «ien», no «ian» [tjɛn˥˩]</div><div>shì: sh con la punta de la lengua curvada hacia atrás [ʂɨ˥˩]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">zài</span><span class=\"hz\">在</span></span><span class=\"seg c2\"><span class=\"py\">kàn</span><span class=\"hz\">看</span></span><span class=\"seg c3\"><span class=\"py\">diànshì</span><span class=\"hz\">电视</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Estoy viendo la tele.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_beccacaa352a957e.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--connection\"><h4>Conexión · 🔊 da el sonido</h4><div class=\"note-body\">视 shì toma el sonido de 示 shì, que a la izquierda de un carácter se escribe 礻: por eso suenan igual.</div></section></div>"
+  },
+  {
    "id": "x.dictation.yinwei",
    "type": "listen",
    "theme": "conectores",
@@ -43790,6 +44869,26 @@
    "front": "<div class=\"hanzi\">一边</div><div class=\"pinyin\">yi bian</div><div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div>",
    "back": "<div class=\"hanzi\">一边</div><div class=\"pinyin\">yībiān</div><div class=\"ipa\">[i˥ pjɛn˥]</div><div class=\"meaning\">mientras (一边…一边…)</div><div class=\"legend pos\">adverbio</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_704e05969a54792f.mp3\" aria-label=\"Play\"></button>",
    "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>biān: -ian suena «ien», no «ian» [pjɛn˥]</div><div>biān: b sin aire, casi una p española [pjɛn˥]</div></div></section><section class=\"note note--example\"><h4>Ejemplos</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">yìbiān</span><span class=\"hz\">一边</span></span><span class=\"seg c2\"><span class=\"py\">kàn</span><span class=\"hz\">看</span></span><span class=\"seg c3\"><span class=\"py\">shū</span><span class=\"hz\">书</span></span><span class=\"seg c4\"><span class=\"py\">yìbiān</span><span class=\"hz\">一边</span></span><span class=\"seg c0\"><span class=\"py\">hē</span><span class=\"hz\">喝</span></span><span class=\"seg c1\"><span class=\"py\">chá</span><span class=\"hz\">茶</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Leo mientras tomo té.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_60c7baeb79635fd3.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tā</span><span class=\"hz\">他</span></span><span class=\"seg c1\"><span class=\"py\">yìbiān</span><span class=\"hz\">一边</span></span><span class=\"seg c2\"><span class=\"py\">chī</span><span class=\"hz\">吃</span></span><span class=\"seg c3\"><span class=\"py\">yìbiān</span><span class=\"hz\">一边</span></span><span class=\"seg c4\"><span class=\"py\">shuō</span><span class=\"hz\">说</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Habla mientras come.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_47db6f8027e18c0e.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">一边 + verbo + 一边 + verbo: dos cosas a la vez, 他一边吃一边说. Así se dice «leo y tomo té»: 和 no une acciones.</div></section></div>"
+  },
+  {
+   "id": "x.comprehension.cansado-pero-contento",
+   "type": "comprehension",
+   "theme": "conectores",
+   "level": 2,
+   "targets": [
+    "s.wo-hen-lei-suoyi-huijia",
+    "s.suiran-hen-lei-danshi",
+    "s.mingtian-jian"
+   ],
+   "context": [],
+   "examples": [],
+   "typed": false,
+   "typable": false,
+   "expected": null,
+   "task": "Lee el texto en voz alta. Al terminar, abre la pregunta.",
+   "front": "<div class=\"passage\"><div class=\"hz-line\">我很累，所以我回家睡觉。虽然很累，但是我很高兴。明天见！</div></div><details class=\"question\"><summary>Pregunta</summary><div class=\"meaning\">¿Cómo está, y qué va a hacer?</div></details>",
+   "back": "<div class=\"meaning\">Cansado pero contento; se va a casa a dormir.</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c2\"><span class=\"py\">lèi</span><span class=\"hz\">累</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c3\"><span class=\"py\">suǒyǐ</span><span class=\"hz\">所以</span></span><span class=\"seg c4\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c0\"><span class=\"py\">huíjiā</span><span class=\"hz\">回家</span></span><span class=\"seg c1\"><span class=\"py\">shuìjiào</span><span class=\"hz\">睡觉</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Estoy cansado, así que me voy a casa a dormir.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d12ca5a472713e1f.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">suīrán</span><span class=\"hz\">虽然</span></span><span class=\"seg c1\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c2\"><span class=\"py\">lèi</span><span class=\"hz\">累</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c3\"><span class=\"py\">dànshì</span><span class=\"hz\">但是</span></span><span class=\"seg c4\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c0\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c1\"><span class=\"py\">gāoxìng</span><span class=\"hz\">高兴</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Aunque estoy cansado, estoy contento.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1dc1770d609f74f4.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">míngtiān</span><span class=\"hz\">明天</span></span><span class=\"seg c1\"><span class=\"py\">jiàn</span><span class=\"hz\">见</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">！</span></span></div><div>¡Hasta mañana!</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_c9522059fbe30f10.mp3\" aria-label=\"Play\"></button></div>",
+   "notes": ""
   },
   {
    "id": "x.calque.hen-adj",
@@ -44900,11 +45999,11 @@
   {
    "date": "2026-10-02",
    "added": {
-    "1": 41,
+    "1": 85,
     "3": 5,
     "5": 11,
     "4": 8,
-    "2": 11
+    "2": 18
    },
    "edited": 0,
    "removed": 0
@@ -45253,6 +46352,6 @@
  "cardCss": "/* Tarjeta: papel claro o noche cálida (como el cuaderno web), una cabecera con tipo y nivel, la respuesta en su\n   bloque y las notas en secciones. CSS sencillo, sin color-mix ni trucos: AnkiDroid, AnkiMobile y escritorio. */\n.card { font-family: \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif; font-size: 20px; line-height: 1.4;\n        text-align: center; color: #1f1a16; background: #faf7ef; padding: 10px 8px 28px;\n        --muted: rgba(31,26,22,.55); --line: rgba(31,26,22,.13); --panel: rgba(31,26,22,.045); --lv: #b3301d; }\n.nightMode.card, .night_mode .card, .card.nightMode { color: #ececec; background: #1b1b1b;\n        --muted: rgba(236,236,236,.55); --line: rgba(236,236,236,.13); --panel: rgba(255,255,255,.045); }\n.meta { display: flex; justify-content: space-between; align-items: center; max-width: 30em; margin: 0 auto 14px;\n        padding-top: 7px; border-top: 3px solid var(--lv); font: 700 11px/1 Menlo, Consolas, monospace;\n        letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }\n.lv-1 { --lv: #b3301d; } .lv-2 { --lv: #d0632f; } .lv-3 { --lv: #df9340; } .lv-4 { --lv: #cdb35c; }\n.lv-5 { --lv: #8fa972; } .lv-6 { --lv: #5f9590; } .lv-7 { --lv: #557aa3; }\n.task { font-size: 17px; line-height: 1.45; max-width: 26em; margin: 0 auto 14px; color: var(--muted); }\n.task .meta { font-size: 11px; }\n.front { margin: 6px 0; }\n.hanzi { font-size: 54px; line-height: 1.2; }\n.pinyin { font-size: 24px; margin-top: 4px; }\n.meaning { font-size: 20px; margin-top: 10px; }\n.ipa { font-size: 15px; color: var(--muted); margin-top: 2px; }\n.legend { font-size: 13px; color: var(--muted); margin-top: 10px; }\n.pos { font-style: italic; }\nhr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margin: 20px auto 16px; }\n.answer { max-width: 30em; margin: 0 auto; padding: 14px 12px 16px; border-radius: 16px; background: var(--panel);\n          border: 1px solid var(--line); }\n.box { max-width: 30em; margin: 14px auto 0; text-align: left; font-size: 15px; line-height: 1.55; }\n.note { margin-top: 10px; padding: 10px 12px 11px; border-radius: 12px; border: 1px solid var(--line); background: var(--panel); }\n.note h4 { margin: 0 0 6px; font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }\n.note--group .note-body > div { padding: 5px 8px; margin: 0 -8px; border-radius: 8px; }\n.note--group .note-body > div + div { border-top: 1px solid var(--line); }\n.note--group .is-target { font-weight: 700; background: rgba(179,48,29,.13); }\n.note--example { text-align: center; }\n.note--mnemonic { border-style: dashed; }\n.note--connection { border-left: 4px solid #2a9d8f; background: rgba(42,157,143,.09); }\n.note--mnemonic .note-body { font-style: italic; }\n.note--teacher { border-left: 3px solid var(--lv); }\n.example + .example { margin-top: 14px; }\n.option { margin: 10px 0; }\n.option .hanzi.small, .hanzi.small { font-size: 32px; }\n.wrong { margin: 12px 0; color: var(--muted); }\n.wrong .hz { text-decoration: line-through; font-size: 22px; }\n.sent { display: inline-flex; gap: 4px; align-items: flex-end; flex-wrap: wrap; justify-content: center; }\n.seg { display: inline-flex; flex-direction: column; align-items: center; padding: 0 2px;\n       border-bottom: 3px solid var(--c, transparent); }\n.seg .py { font-size: 15px; }\n.seg .hz { font-size: 30px; }\n.box .seg .hz { font-size: 24px; }\n.gap { min-width: 1.6em; border-bottom: 3px dashed #999; }\n.c0 { --c: #4e79a7; } .c1 { --c: #f28e2b; } .c2 { --c: #59a14f; } .c3 { --c: #b07aa1; } .c4 { --c: #9c755f; }\n.acs-in { font-size: 20px; padding: 10px 14px; width: 12em; max-width: 90%; margin-top: 14px; text-align: center;\n          border: 1px solid var(--line); border-radius: 12px; background: var(--panel); color: inherit; outline: none; }\n#acs-result { font-size: 20px; font-weight: 700; margin-bottom: 10px; }\n.acs-ok { color: #2e7d32; } .acs-bad { color: #c62828; }\n.nightMode .acs-ok, .night_mode .acs-ok { color: #7cc36f; } .nightMode .acs-bad, .night_mode .acs-bad { color: #e8845a; }\n.pattern { align-items: flex-end; gap: 6px; }\n.pattern .plus { align-self: center; color: var(--muted); font-size: 18px; }\n.slot { display: inline-flex; flex-direction: column; align-items: center; padding: 2px 8px 4px; border-radius: 8px;\n        border: 2px dashed var(--s); }\n.slot .hz { font-size: 16px; font-style: italic; color: var(--s); }\n.slot-S { --s: #4e79a7; } .slot-N { --s: #59a14f; } .slot-V { --s: #e15759; } .slot-Adj { --s: #f28e2b; }\n.slot-Num { --s: #b07aa1; } .slot-Nombre { --s: #76b7b2; } .slot-Lugar { --s: #9c755f; }\n.slot-Tiempo { --s: #edc948; } .slot-Frase { --s: #8c8c8c; }\n.passage { max-width: 26em; margin: 0 auto; text-align: left; }\n.passage .hz-line { font-size: 28px; line-height: 1.6; }\n.passage .sent { justify-content: flex-start; margin: 0 6px 6px 0; }\ndetails.question { max-width: 26em; margin: 18px auto 0; padding: 10px 12px; border-radius: 12px;\n                   border: 1px solid var(--line); background: var(--panel); }\ndetails.question summary { font: 700 12px/1.4 Menlo, Consolas, monospace; letter-spacing: .1em;\n                           text-transform: uppercase; color: var(--muted); cursor: pointer; }\ndetails.question .hz-line { font-size: 24px; margin-top: 8px; }",
  "deck": {
   "file": "5-output/chino-practico.apkg",
-  "cards": 1164
+  "cards": 1215
  }
 }

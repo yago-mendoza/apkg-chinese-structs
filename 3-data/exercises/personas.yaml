@@ -619,3 +619,35 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: '¿Quién eres? No, espera: ¿qué eres? ¿Por qué eres tan alto?'}
     comments: []
+  - id: x.comprehension.la-profesora
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.nin-shi-women-de-laoshi-ma, s.dui-wo-shi-nimen-de-laoshi, s.hen-gaoxing-renshi-ni]
+    skills: [reading, comprehension]
+    script: both
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Quién es la persona a la que preguntan?'}
+    answer: {meaning: 'Su profesor o profesora.'}
+    comments: []
+  - id: x.comprehension.quien-es-el
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.ta-shi-shei, s.ta-shi-wo-de-baba, s.ta-hen-gao]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Quién es, y cómo es?'}
+    answer: {meaning: 'Es el padre de quien habla, y es alto.'}
+    comments: []
+  - id: x.tones.dajia
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.dajia]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '41', hanzi: 大家, pinyin: dàjiā, meaning: 'todos, todo el mundo'}
+    comments: []

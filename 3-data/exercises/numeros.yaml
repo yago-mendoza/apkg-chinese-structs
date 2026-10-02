@@ -680,3 +680,24 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 本}
     answer: {hanzi: 本, pinyin: běn, meaning: clasificador de libros y cuadernos}
     comments: []
+  - id: x.comprehension.tres-amigos
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.wo-you-san-ge-pengyou, s.women-dou-shi-xuesheng, s.women-dou-xihuan-da-lanqiu]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Cuántos amigos tiene, y qué les gusta?'}
+    answer: {meaning: 'Tres; a todos les gusta jugar al baloncesto.'}
+    comments: []
+  - id: x.tones.meiyou
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.meiyou]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '23', hanzi: 没有, pinyin: méiyǒu, meaning: no tener; no haber}
+    comments: []

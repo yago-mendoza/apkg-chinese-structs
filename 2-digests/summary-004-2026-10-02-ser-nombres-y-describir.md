@@ -98,3 +98,16 @@ Del chat de estos días (el porqué, en `docs/decisions.md`):
 - Fase de pruebas cerrada: lo que estudias desde el 1 de octubre ya cuenta para siempre.
 - 30 nuevas al día, y las nuevas salen por fin en orden: HSK 1 primero.
 - Lo que falles vuelve a los 10 minutos.
+
+## Cambios posteriores
+
+### 2026-10-02 · Más comprensión lectora y parejas de tonos
+
+Lo pediste al ver el reparto de tarjetas.
+
+- **24 tarjetas de comprensión lectora** más (30 en total), al menos una por tema: saludos, la tienda, el restaurante, el dinero, la familia, el tiempo, el trabajo… Están hechas con frases que ya tenías, así que no hay audio nuevo. Unas llevan solo hanzi y otras el pinyin encima; dos tienen la pregunta en chino (你是哪国人？, 他的名字是什么？).
+- **Parejas de tonos**: las 20 combinaciones de dos sílabas (1-1 … 4-4 y cada tono con neutro), cada una con dos palabras de tu nivel. Son 27 tarjetas nuevas de «escucha y escribe los tonos» (电视 4-4, 飞机 1-1, 请问 3-4, 学习 2-2…); las otras 11 palabras ya tenían su tarjeta de tonos por el neutro o el sandhi.
+- **El recuento** de `gaps` cuenta como voz alta las 128 tarjetas «decir» de frases, que se dicen en voz alta: son 137, no 9.
+- Las lecturas de palabras sueltas como 吗, 呢 o 的 se quedan: al empezar ayudan.
+
+**En el mazo**: 1215 tarjetas (51 más).

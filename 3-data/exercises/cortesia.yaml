@@ -824,3 +824,44 @@ exercises:
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 再说一遍, pinyin: zai shuo yi bian}
     answer: {typed: '4124', hanzi: 再说一遍, pinyin: zài shuō yí biàn, meaning: '¿puedes repetirlo?, dilo otra vez'}
     comments: []
+  - id: x.comprehension.llega-tarde
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.buhaoyisi-wo-lai-wan-le, s.duibuqi-meiguanxi]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Qué ha pasado, y qué le contestan?'}
+    answer: {meaning: 'Ha llegado tarde y pide perdón; le dicen que no pasa nada.'}
+    comments: []
+  - id: x.tones.qingwen
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [e.qingwen]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '34', hanzi: 请问, pinyin: qǐngwèn, meaning: disculpe (para preguntar)}
+    comments: []
+  - id: x.tones.qingjin
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [e.qingjin]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '34', hanzi: 请进, pinyin: qǐng jìn, meaning: 'pase, por favor'}
+    comments: []
+  - id: x.tones.bangmang
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.bangmang]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '12', hanzi: 帮忙, pinyin: bāngmáng, meaning: echar una mano}
+    comments: []

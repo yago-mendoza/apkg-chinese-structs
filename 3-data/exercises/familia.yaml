@@ -447,3 +447,44 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Son mis padres.}
     comments: []
+  - id: x.comprehension.dos-hijos
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.ta-shi-wo-de-mama, s.tamen-you-liang-ge-haizi, s.mama-huilai-le]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Cuántos hijos tienen?'}
+    answer: {meaning: 'Dos.'}
+    comments: []
+  - id: x.tones.nver
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.nver]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '32', hanzi: 女儿, pinyin: nǚ'ér, meaning: hija}
+    comments: []
+  - id: x.tones.xiaohai
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.xiaohai]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '32', hanzi: 小孩, pinyin: xiǎohái, meaning: 'niño pequeño, crío'}
+    comments: []
+  - id: x.tones.bama
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.bama]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '41', hanzi: 爸妈, pinyin: bàmā, meaning: 'los padres, papá y mamá (coloquial)'}
+    comments: []

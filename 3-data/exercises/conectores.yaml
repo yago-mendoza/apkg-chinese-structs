@@ -368,3 +368,14 @@ exercises:
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 一边, pinyin: yi bian}
     answer: {typed: '11', hanzi: 一边, pinyin: yībiān, meaning: mientras (一边…一边…)}
     comments: []
+  - id: x.comprehension.cansado-pero-contento
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.wo-hen-lei-suoyi-huijia, s.suiran-hen-lei-danshi, s.mingtian-jian]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Cómo está, y qué va a hacer?'}
+    answer: {meaning: 'Cansado pero contento; se va a casa a dormir.'}
+    comments: []

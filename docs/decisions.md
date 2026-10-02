@@ -179,3 +179,7 @@ YAGO vio salir 大家 (HSK 2) entre las primeras. Las posiciones estaban bien ca
 ### 2026-10-02 · Rutina de YAGO
 
 Clases martes y jueves; de 20 a 40 minutos al día, hasta hora y media algunos días; puede hablar en voz alta siempre. Los lotes, mejor justo después de clase, dos a la semana y ligeros. Vive en: `docs/goal.md` («Quién aprende»).
+
+### 2026-10-02 · Más comprensión lectora y parejas de tonos
+
+YAGO vio pequeños los tipos minoritarios. Mirados contra su objetivo, y contando lo que ya refuerzan los reversos (985 apariciones de frases de ejemplo, 313 reversos con su grupo de contraste), lo flojo era la comprensión lectora (6 tarjetas; es lo único que entrena leer chino seguido) y los tonos de dos sílabas. Entran 24 tarjetas de comprensión con frases que ya había (sin audio nuevo) y la primera parte de la pista de pronunciación: las 20 parejas de tonos, con dos palabras cada una (27 tarjetas nuevas; las demás ya existían por neutro o sandhi). La «voz alta» ya era grande: las 128 tarjetas «decir» de frases se dicen en voz alta, y ahora `gaps` las cuenta así. Descartado: quitar las lecturas sueltas de palabras de función, que al empezar, en el HSK 1, sí ayudan (lo dijo YAGO). Vive en: `docs/design.md` («Pronunciación», «Cobertura»), `docs/goal.md` («Cómo se practican las frases»).

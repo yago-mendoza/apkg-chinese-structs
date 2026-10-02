@@ -250,6 +250,8 @@ Además, calculado del pinyin: tarjeta de tonos para toda entrada `hear` o `say`
 
 Nunca exigidas, escritas a mano cuando sirven: `nuance` (lo pide el que aprende) y `comprehension` (ver «Tarjetas»; cuántas, según `docs/goal.md`).
 
+**Recuento** (`gaps`): cada tarjeta cuenta una vez, por lo que practica; una tarjeta «decir» de una frase cuenta como voz alta, porque se dice (escribirla es opcional).
+
 **Ósmosis**: toda palabra `say` o `context` aparece como contexto en al menos una frase; aviso si no. Las expresiones que ya son un enunciado completo (你好, 再见) no lo necesitan. Antes de pedir frases al que aprende, se buscan en sus apuntes de `1-inbox/history/`. Que una entrada reaparezca como contexto en muchas frases es deseable y no cuenta como redundancia.
 
 **Señales para `use`** (orientan, no deciden): el nivel (ver «Niveles») y la frecuencia hablada. `check` avisa cuando `use` choca con el nivel (nivel 1 marcado `read`; nivel 7 marcado `say`) y pide motivo; las necesidades del que aprende según `docs/goal.md` justifican excepciones. Nunca se importa una lista entera.
@@ -280,11 +282,12 @@ El mazo se ordena por dificultad con los niveles del HSK 3.0 (la versión de 202
 
 **Huecos y propuestas**: el review compara el mazo con el nivel actual (lista oficial y secuencias de curso) y propone qué falta, con el criterio de `docs/goal.md`. **[pendiente]** Las secuencias de curso (qué palabras y qué gramática trae cada lección) se extraen nivel a nivel de materiales que solo están en local (ver «Repositorio y privacidad»).
 
-## Pronunciación: pista propia [pendiente]
+## Pronunciación: pista propia
 
 Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesita cobertura propia, calculada:
 
-- **Parejas de tonos**: las combinaciones de dos sílabas (1-1 … 4-neutro), clasificadas automáticamente desde el pinyin; `check` exige escucha y producción de cada pareja con varias palabras.
+- **Parejas de tonos**: las 20 combinaciones de dos sílabas (`TONE_PAIRS`: 1-1 … 4-4 y cada tono seguido de neutro), clasificadas desde el pinyin por el tono de cita (`tone_pair`). Por cada pareja, las `TONE_PAIR_WORDS` palabras de dos sílabas para oír o decir (sin nombres propios) llevan tarjeta de tonos (`tone_pair_picks`): primero las que ya la piden por neutro o sandhi, luego las de nivel más bajo. Es una tarjeta exigida más, así que `plan` y `check` la vigilan; las que entran por su pareja se oyen (audio delante) y las de neutro o sandhi se leen. `gaps` dice cuántas parejas tienen tarjeta.
+- **[pendiente]** Los demás puntos de esta pista:
 - **Sonidos difíciles**: aspiración (b/p, d/t, g/k), j q x frente a zh ch sh r, ü, -n frente a -ng; pares mínimos desde el vocabulario del que aprende.
 - **Sandhi, neutro y erhua**, detectados desde el pinyin.
 - Se practican por separado el tono de cita de cada palabra y la melodía real de las frases: el sandhi y el neutro esconden el tono de cita.
@@ -389,7 +392,7 @@ Las cifras del mazo (entradas, frases, tarjetas, audio pendiente, huecos) no se 
 1. Hecho: cobertura por `use`, subdecks por tema, etiquetas, recolocación, datos por tema, frases aparte, log y review, tarjeta de matiz.
 2. Hecho: niveles del HSK 3.0 (nivel en cada elemento, subdecks y orden por nivel, ejemplos sin vocabulario superior, cobertura por nivel). **[pendiente]** Las secuencias de curso del nivel actual.
 3. Hecho: `stats` (lo que se falla, leído de Anki), estado vivo, review con «Sine qua non», caja negra y retrospectiva, comprensión lectora.
-4. **[pendiente]** Pista de pronunciación.
+4. Pista de pronunciación: parejas de tonos, hechas. **[pendiente]** Sonidos difíciles con pares mínimos y la melodía de las frases.
 
 ## Fuentes
 

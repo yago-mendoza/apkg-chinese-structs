@@ -484,3 +484,54 @@ exercises:
     question: {es: '¿Qué hace por la noche, y dónde lo hizo ayer?'}
     answer: {meaning: 'Lee; ayer leyó en casa.'}
     comments: []
+  - id: x.comprehension.la-tarde
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.zhongwu-ni-qu-nar, s.xiawu-qu-shangdian, s.wo-huijia-shuijiao]
+    skills: [reading, comprehension]
+    script: both
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Adónde va por la tarde?'}
+    answer: {meaning: 'A la tienda (y luego a casa a dormir).'}
+    comments: []
+  - id: x.tones.shangwu
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.shangwu]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '43', hanzi: 上午, pinyin: shàngwǔ, meaning: por la mañana (antes de mediodía)}
+    comments: []
+  - id: x.tones.zhongwu
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.zhongwu]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '13', hanzi: 中午, pinyin: zhōngwǔ, meaning: mediodía}
+    comments: []
+  - id: x.tones.mingtian
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.mingtian]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '21', hanzi: 明天, pinyin: míngtiān, meaning: mañana (el día)}
+    comments: []
+  - id: x.tones.huijia
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.huijia]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '21', hanzi: 回家, pinyin: huíjiā, meaning: volver a casa}
+    comments: []
