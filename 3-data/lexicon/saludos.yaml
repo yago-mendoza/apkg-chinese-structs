@@ -35,7 +35,8 @@ entries:
     level: 1
     level_reason: despedida coloquial de todos los días
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-02', text: 'En la calle se dice báibái, con dos segundos tonos, imitando el inglés, y así lo dice el audio; los diccionarios lo recogen como bàibài, con el cuarto tono de 拜 «saludar con reverencia».'}
   - id: w.zao
     use: say
     role: content

@@ -1908,6 +1908,8 @@ def validate(entries, sentences, exercises, require_audio=True):
         for ch, n in notes.items():
             if not ((n.get("origin") or {}).get("es") and (n.get("gloss") or {}).get("es")):
                 errors.append(f"hanzi.yaml: {ch} sin glosa u origen en español")
+            if n.get("memory") and not (n["memory"] or {}).get("es"):
+                errors.append(f"hanzi.yaml: {ch} lleva `memory` sin texto en español")
             if "—" in json.dumps(n, ensure_ascii=False):
                 errors.append(f"hanzi.yaml: {ch} lleva una raya (—); usar coma, dos puntos o paréntesis")
     if require_audio:
@@ -2037,6 +2039,7 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .ch-formula { font-size: 14px; color: #1f5f8a; }
 .nightMode .ch-formula, .night_mode .ch-formula { color: #8cc0e6; }
 .ch-why { flex-basis: 100%; font-size: 14px; color: var(--muted); }
+.ch-memory { flex-basis: 100%; font-size: 14px; font-style: italic; color: var(--muted); }
 .note--example { text-align: center; }
 .note--mnemonic { border-style: dashed; }
 .note--connection { border-left: 4px solid #2a9d8f; background: rgba(42,157,143,.09); }
@@ -2429,14 +2432,17 @@ def character_lines(hanzi, lang="es"):
         if et.get("phonetic"):
             py = et.get("phonetic_pinyin") or ((db.get(et["phonetic"]) or {}).get("pinyin") or [""])[0]
             formula.append(f"sonido: {esc(et['phonetic'])} {esc(py)}".strip())
-        why = ""
+        why, memory = "", ""
+        if len(han) == 1 and (n.get("memory") or {}).get(lang):
+            memory = n["memory"][lang]
         if len(han) == 1:
             why = re.sub(r"^[^:]{3,40}:\s*", "", (n.get("origin") or {}).get(lang) or "")
             why = why[:1].upper() + why[1:]
         lines.append(f'<div class="ch-row"><b class="ch-hz">{esc(ch)}</b><span class="ch-gl">{esc((n.get("gloss") or {}).get(lang, ""))}</span>'
                      f'<span class="ch-kind">{kind}</span>'
                      + (f'<span class="ch-formula">{" · ".join(formula)}</span>' if formula else "")
-                     + (f'<span class="ch-why">{esc(why)}</span>' if why else "") + "</div>")
+                     + (f'<span class="ch-why">{esc(why)}</span>' if why else "")
+                     + (f'<span class="ch-memory">Para recordarlo (no es su origen): {esc(memory)}</span>' if memory else "") + "</div>")
     return "".join(lines)
 
 
@@ -2755,6 +2761,8 @@ def export_characters(entries, levels):
             "phonetic": {"char": phon, "pinyin": phon_reading, "match": sound_match(reading, phon_reading)} if phon else None,
             "origin": note.get("origin"),
             "traditional": note.get("traditional"),
+            # Una imagen para recordarlo desde su forma de hoy: se rotula como tal, nunca como su origen.
+            "memory": note.get("memory"),
             "confidence": note.get("confidence"),
             "override": note.get("override"),
             "entry": home["id"] if home else None,
