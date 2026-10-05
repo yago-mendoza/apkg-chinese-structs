@@ -78,3 +78,19 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-25'}
     comments:
       - {kind: note, private: false, date: '2026-09-29', text: 'Es de lo más importante: pensar las sílabas una a una, aunque estén juntas en la frase.', original: 'IMPORTANTISMO BRO y sobretodo si alguns otnos estna cercanos, pensaros como uno aunque estne en dinstas partes de laroacion'}
+  - id: p.sibilants
+    use: hear
+    kind: pronunciation
+    title: z c s, zh ch sh y j q x al oído
+    explanation: 'Tres familias que el español junta en una sola s o ch. z c s: lengua plana tras los dientes (四 sì). zh ch sh: punta curvada hacia arriba, sonido más hueco (是 shì). j q x: lengua plana con la punta abajo, sonido más fino, siempre ante i o ü (西 xī). En cada familia, la segunda lleva un golpe de aire: c, ch y q.'
+    audio_text: 四，是，西
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+    comments: []
+  - id: p.n-ng
+    use: hear
+    kind: pronunciation
+    title: -n frente a -ng
+    explanation: '-n acaba con la lengua tocando detrás de los dientes, como en «pan». -ng acaba atrás, con la boca abierta, como la n de «tengo»: no suena la g. Cambia la palabra: 心 xīn «corazón», 星 xīng «estrella».'
+    audio_text: 心，星
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: review-004-2026-10-02-ser-nombres-y-describir.md, date: '2026-10-05'}
+    comments: []

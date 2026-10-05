@@ -328,7 +328,7 @@ class Repository(unittest.TestCase):
         self.assertTrue(all(ex["prompt"].get("audio") for ex in contrast))      # se oye y se elige
         self.assertTrue(anki.wants_audio(contrast[0], {"g.t": grp}))
 
-    def test_confusable_partner_appears_in_examples(self):
+    def test_confusable_partner_has_its_own_labelled_example(self):
         yao = {"id": "w.t.yao", "kind": "word", "hanzi": "要", "pinyin": "yào"}
         ai = {"id": "w.t.ai", "kind": "word", "hanzi": "爱", "pinyin": "ài"}
         grp = {"id": "g.t", "kind": "group", "basis": "set", "members": [{"ref": "w.t.yao"}, {"ref": "w.t.ai"}]}
@@ -337,8 +337,8 @@ class Repository(unittest.TestCase):
         eby = {e["id"]: e for e in (yao, ai, grp)}
         ex = {"id": "x.t", "type": "read", "targets": ["w.t.yao"]}
         out = anki.examples_for(ex, sby, eby)
-        self.assertIn("s.a", out)
-        self.assertEqual(len(out), anki.EXAMPLES_MAX)
+        self.assertNotIn("s.a", out)                    # mezclada con los ejemplos parecía un ejemplo equivocado
+        self.assertEqual(anki.partner_example(ex, sby, eby), (ai, "s.a"))
 
     def test_whole_clause_slot(self):
         words = [{"id": "w.ru", "kind": "word", "hanzi": "如果", "pinyin": "rúguǒ"},
@@ -649,6 +649,53 @@ class Repository(unittest.TestCase):
         self.assertIn("w.a 他 tā · él — 2/2 · Escuchar", out)
         self.assertNotIn("w.b 她", out.split("Lo que más cuesta")[1].split("Olvidadas")[0])
         self.assertIn("x.a · 5 lapsos", out)
+
+
+class Batch005(unittest.TestCase):
+    """Lo que pidió YAGO en el lote 005: la pareja se rotula aparte, el hueco suena entero, el matiz lleva pinyin."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.entries, cls.sentences, cls.exercises = anki.load()
+        cls.eby = {e["id"]: e for e in cls.entries}
+        cls.sby = {s["id"]: s for s in cls.sentences}
+        cls.xby = {x["id"]: x for x in cls.exercises}
+
+    def fields(self, xid):
+        return anki.card_fields(self.xby[xid], self.eby, self.sby, {}, set())
+
+    def test_partner_sentence_is_labelled_not_mixed_with_examples(self):
+        ex = self.xby["x.read.num.shi"]                      # 十 shí, en grupo con 是 shì
+        examples = anki.examples_for(ex, self.sby, self.eby)
+        self.assertFalse(any(any(seg.get("ref") == "w.shi" for seg in self.sby[s]["segments"]) and
+                             not any(seg.get("ref") == "w.num.shi" for seg in self.sby[s]["segments"]) for s in examples),
+                         "una frase de la pareja se colaba como ejemplo")
+        partner = anki.partner_example(ex, self.sby, self.eby)
+        self.assertIsNotNone(partner)
+        self.assertEqual(partner[0]["id"], "w.shi")
+        self.assertIn("Para no confundirlo con 是", json.dumps(self.fields("x.read.num.shi"), ensure_ascii=False))
+
+    def test_cloze_plays_the_whole_sentence(self):
+        cloze = next(x for x in self.exercises if x["type"] == "cloze" and x.get("sentence"))
+        whole = anki.sentence_text(self.sby[cloze["sentence"]])
+        manifest = anki.load_manifest()
+        f = anki.card_fields(cloze, self.eby, self.sby, manifest, set())
+        self.assertIn(manifest[whole]["file"], json.dumps(f))
+
+    def test_nuance_answers_carry_pinyin(self):
+        out = anki.annotate_pinyin("这个怎么样？ pide opinión; 你好 (nǐ hǎo) ya lo lleva.", self.eby, self.sby)
+        self.assertIn("这个怎么样 (zhège zěnmeyàng)", out)
+        self.assertEqual(out.count("nǐ hǎo"), 1)
+
+    def test_sound_cards_differ_by_what_sounds(self):
+        _, warnings = anki.validate(self.entries, self.sentences, self.exercises, require_audio=False)
+        self.assertFalse([w for w in warnings if w.startswith("x.syllable.") and "redundante" in w])
+
+    def test_duplicate_ids_stop_check_and_scaffold(self):
+        e = dict(self.eby["w.chi"])
+        errors, warnings = anki.validate(self.entries + [e], self.sentences, self.exercises, require_audio=False)
+        self.assertEqual(errors, ["ID repetido: w.chi"])
+        self.assertEqual(warnings, [])
 
 
 @unittest.skipUnless(shutil.which("node"), "sin node: no se prueba el JavaScript de las tarjetas")

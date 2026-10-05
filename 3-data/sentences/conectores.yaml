@@ -66,3 +66,13 @@ sentences:
       - {text: 。}
     translation: {es: 'Si te gusta, cómpralo.', en: 'If you like it, buy it.'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-mingtian-zai-lai
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 明天, ref: w.mingtian, pinyin: míngtiān}
+      - {text: 再, ref: w.zai.again, pinyin: zài}
+      - {text: 来, ref: w.lai, pinyin: lái}
+      - {text: 。}
+    translation: {es: 'Vuelvo mañana.', en: 'Ill come again tomorrow.'}
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}

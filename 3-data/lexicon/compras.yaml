@@ -170,7 +170,7 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: 'Unas manos que sujetan a una mujer por la cintura: desear.', original: originalmente unas manos sujetaban a una mujer por la cintura; de ahí pasó a idea de desear / querer.}
-      - {kind: linguistic, private: false, date: '2026-10-01', text: 'El carácter antiguo dibujaba una figura con las manos en la cintura: 要 era «cintura», que después pasó a escribirse 腰 yāo [HSK 4].'}
+      - {kind: character, private: false, date: '2026-10-01', text: 'El carácter antiguo dibujaba una figura con las manos en la cintura: 要 era «cintura», que después pasó a escribirse 腰 yāo [HSK 4].'}
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Además de «querer», 要 es «tener que» (我要工作 «tengo que trabajar») y «estar a punto de» (要下雨了 «va a llover»). Necesitar en sentido estricto es 需要.'}
       - {kind: note, private: false, date: '2026-10-01', text: 'No lo confundas con 有 yǒu «tener»: 要 yào cae (cuarto tono) y 有 yǒu baja y sube (tercero). Y se niegan distinto: 不要 «no quiero», 没有 «no tengo».', original: 'Queerer yào Y tener yôu Ponlos cerca de slguns forma que contrasten porwue los lio peinso siempre wue son los dos _O_ you you'}
   - id: w.xuyao
@@ -250,7 +250,7 @@ entries:
     meaning: {es: comer, en: to eat}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '口 «boca» a la izquierda, como en 喝, 吗 y 叫: lo que se hace con la boca.'}
+      - {kind: character, private: false, date: '2026-10-01', text: '口 «boca» a la izquierda, como en 喝, 吗 y 叫: lo que se hace con la boca.'}
   - id: w.fan
     use: hear
     role: content
@@ -260,7 +260,7 @@ entries:
     meaning: {es: 'comida; arroz cocido', en: 'meal; cooked rice'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '饣 es 食 shí «comer, alimento» en su forma de lado; 反 fǎn da el sonido.'}
+      - {kind: character, private: false, date: '2026-10-01', text: '饣 es 食 shí «comer, alimento» en su forma de lado; 反 fǎn da el sonido.'}
       - {kind: mnemonic, private: false, date: '2026-10-01', text: 'El radical de la comida y una mano (又, dentro de 反) que la lleva a la boca.', original: 'Comer = radicla comida + manos'}
       - {kind: note, private: false, date: '2026-10-01', text: 'Para decir «comer» lo normal es 吃饭; 饭 suelto es «la comida» o «el arroz».', original: 'Pero chifan muchisimo mas "comer"'}
   - id: w.chifan
@@ -301,7 +301,7 @@ entries:
     meaning: {es: 'tienda, local', en: 'shop, store'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '广 es un tejado con una pared, un edificio abierto, y 占 zhàn da el sonido.'}
+      - {kind: character, private: false, date: '2026-10-01', text: '广 es un tejado con una pared, un edificio abierto, y 占 zhàn da el sonido.'}
       - {kind: mnemonic, private: false, date: '2026-10-01', text: 'Dentro del edificio 广, un espacio ocupado (占 también es «ocupar»): el local.', original: 'Y diàn = edificio cubieto. Y lo de dentro es "ocupado". Zona ocupada dentro sfificio. Local tienda'}
   - id: g.dian-places
     kind: group
@@ -323,7 +323,7 @@ entries:
     meaning: {es: dinero, en: money}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '钅 «metal» a la izquierda: el dinero era de metal.'}
+      - {kind: character, private: false, date: '2026-10-01', text: '钅 «metal» a la izquierda: el dinero era de metal.'}
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Va sin clasificador cuando es dinero en general (这是钱, 我没有钱); al contar, con 块: 十块钱.'}
   - id: w.duoshao
     use: say
@@ -400,7 +400,7 @@ entries:
     meaning: {es: 'plato, comida; verdura', en: 'dish; vegetable'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '艹 «hierba» arriba: era la verdura. Hoy también «plato, cocina»: 中国菜 «comida china».'}
+      - {kind: character, private: false, date: '2026-10-01', text: '艹 «hierba» arriba: era la verdura. Hoy también «plato, cocina»: 中国菜 «comida china».'}
   - id: w.cha
     use: say
     role: content
@@ -410,7 +410,7 @@ entries:
     meaning: {es: 'té', en: 'tea'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '艹 «hierba» arriba: una hoja. 喝茶 «tomar té».'}
+      - {kind: character, private: false, date: '2026-10-01', text: '艹 «hierba» arriba: una hoja. 喝茶 «tomar té».'}
   - id: g.he-he
     kind: group
     basis: soundalike

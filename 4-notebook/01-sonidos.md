@@ -47,3 +47,13 @@ La h del pinyin es áspera, más cerca de la j española que de una h muda: el a
 Cada hanzi es una sílaba con su tono. Dilas como golpes claros, también dentro de una palabra y aunque se junten varias (谢谢 xièxie, 我不是学生): no las encadenes como en español.
 
 - Es de lo más importante: pensar las sílabas una a una, aunque estén juntas en la frase.
+
+## z c s, zh ch sh y j q x al oído
+
+Tres familias que el español junta en una sola s o ch. z c s: lengua plana tras los dientes (四 sì). zh ch sh: punta curvada hacia arriba, sonido más hueco (是 shì). j q x: lengua plana con la punta abajo, sonido más fino, siempre ante i o ü (西 xī). En cada familia, la segunda lleva un golpe de aire: c, ch y q.
+
+
+## -n frente a -ng
+
+-n acaba con la lengua tocando detrás de los dientes, como en «pan». -ng acaba atrás, con la boca abierta, como la n de «tengo»: no suena la g. Cambia la palabra: 心 xīn «corazón», 星 xīng «estrella».
+

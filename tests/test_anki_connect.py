@@ -172,6 +172,19 @@ class AnkiSafety(unittest.TestCase):
             self.assertEqual(anki.cmd_push(False, False, reset=True), 1)
         self.assertIn("fase de pruebas", out.getvalue())
 
+    def test_push_syncs_before_touching_cards(self):
+        """Lo estudiado en el móvil baja antes de importar o reordenar: si no, la sincronización se quedaría con la
+        tarjeta tocada aquí y se perdería el repaso."""
+        calls = []
+        def spy(action, timeout=120, **p):
+            calls.append(action)
+            if action == "sync":
+                raise RuntimeError("sin red")
+            raise AssertionError(f"no debía llegar a {action} sin haber sincronizado")
+        with mock.patch.object(anki, "cmd_build", lambda *a: 0), mock.patch.object(anki, "anki_ready", lambda: True),                 mock.patch.object(anki, "anki_request", spy), redirect_stdout(io.StringIO()):
+            self.assertEqual(anki.cmd_push(False, True), 1)
+        self.assertEqual(calls, ["sync"])
+
     def test_stats_only_reads_our_deck(self):
         fake = FakeAnki([{"id": 1, "deck": self.saludos, "ex": "x.a", "new": False},
                          {"id": 2, "deck": "HSK 1", "ex": "x.a", "new": False}])

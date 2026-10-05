@@ -104,6 +104,9 @@ entries:
       - {ref: e.nimenhao, cue: un grupo que tienes delante; relajado}
       - {ref: e.dajiahao, cue: todo el mundo; más amplio y formal}
       - {ref: e.laoshihao, cue: 'a la profesora: el cargo + 好'}
+      - {ref: e.zaoshanghao, cue: 'por la mañana: el momento + 好'}
+      - {ref: e.xiawuhao, cue: 'por la tarde, en tiendas y recepciones'}
+      - {ref: e.wanshanghao, cue: 'por la noche, al llegar (al irte, 晚安)'}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: '您们 nínmen suena forzado y apenas se usa: para saludar con respeto a un grupo, 大家好 dàjiā hǎo o 各位好 gèwèi hǎo [HSK 3]. 你们好 nǐmen hǎo: relajado, para un grupo de amigos que tienes delante. 大家好 dàjiā hǎo: para dirigirse a todo el mundo, más formal.', original: 'nínmen hǎo → respectful w/ seniors / teachers; nǐmen hǎo → relaxed, friends (grupo delante de mí); dàjiā hǎo → formal, group (todo el mundo)'}
@@ -158,3 +161,189 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Al final de una pregunta o exclamación la hace más cálida: 去哪里啊？ suena más cercano que 去哪里？.'}
+  - id: w.zaoshang
+    accept_pinyin_mismatch: 'tono neutro en el habla estándar (上 shang, 个 ge); los diccionarios dan el tono de cita'
+    use: say
+    role: content
+    kind: word
+    hanzi: 早上
+    pinyin: zǎoshang
+    meaning: {es: 'la mañana (temprano)', en: 'early morning'}
+    source: {origin: class, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-05', text: '早上 es la primera hora; 上午 shàngwǔ, la mañana hasta mediodía. Con 好 da el saludo 早上好, que se acorta en 早！.'}
+  - id: e.zaoshanghao
+    accept_pinyin_mismatch: 'tono neutro en el habla estándar (上 shang, 个 ge); los diccionarios dan el tono de cita'
+    use: say
+    role: content
+    kind: expression
+    hanzi: 早上好
+    pinyin: zǎoshang hǎo
+    meaning: {es: 'buenos días', en: 'good morning'}
+    level: 1
+    level_reason: saludo de cada mañana; 早上 y 好 son de nivel básico
+    source: {origin: class, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}
+    comments: []
+  - id: e.xiawuhao
+    use: hear
+    role: content
+    kind: expression
+    hanzi: 下午好
+    pinyin: xiàwǔ hǎo
+    meaning: {es: 'buenas tardes', en: 'good afternoon'}
+    level: 1
+    level_reason: saludo básico; 下午 y 好 son HSK 1
+    source: {origin: class, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-05', text: 'Se oye en tiendas, recepciones y al abrir una reunión. Entre amigos casi no se usa: se saluda con 你好 o con la situación.'}
+  - id: e.wanshanghao
+    accept_pinyin_mismatch: 'tono neutro en el habla estándar (上 shang, 个 ge); los diccionarios dan el tono de cita'
+    use: say
+    role: content
+    kind: expression
+    hanzi: 晚上好
+    pinyin: wǎnshang hǎo
+    meaning: {es: 'buenas noches (al llegar)', en: 'good evening'}
+    level: 1
+    level_reason: saludo básico; 晚上 y 好 son HSK 1
+    source: {origin: class, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-05', text: '晚上好 saluda al llegar por la noche; 晚安 wǎnān se dice al irse a dormir. Como «buenas noches» en español, pero son dos frases distintas.'}
+  - id: e.haojiubujian
+    use: say
+    role: content
+    kind: expression
+    hanzi: 好久不见
+    pinyin: hǎojiǔ bú jiàn
+    meaning: {es: '¡cuánto tiempo (sin vernos)!', en: 'long time no see'}
+    accept_pinyin_mismatch: 不 se lee bú delante de cuarto tono (见 jiàn)
+    level: 1
+    level_reason: saludo fijo de reencuentro, de uso diario; 好, 不 y 见 son HSK 1
+    source: {origin: class, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-05', text: 'Literalmente «mucho tiempo sin ver». Suele seguirle 最近怎么样？, como en 好久不见，最近怎么样？ «cuánto tiempo, ¿qué tal últimamente?».'}
+  - id: w.zuijin
+    use: say
+    role: content
+    kind: word
+    hanzi: 最近
+    pinyin: zuìjìn
+    meaning: {es: 'últimamente, estos días', en: 'recently, lately'}
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+    comments: []
+  - id: w.mang
+    use: say
+    role: content
+    kind: word
+    hanzi: 忙
+    pinyin: máng
+    meaning: {es: 'ocupado, atareado', en: 'busy'}
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+    comments: []
+  - id: w.hai.still
+    use: say
+    role: function
+    kind: word
+    hanzi: 还
+    pinyin: hái
+    meaning: {es: 'todavía; aún', en: 'still, yet'}
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-05', text: 'Con otra lectura, huán, es «devolver». En 你还好吗？ es «¿sigues bien?».'}
+  - id: e.nihaoma
+    use: say
+    role: content
+    kind: expression
+    hanzi: 你好吗
+    pinyin: nǐ hǎo ma
+    meaning: {es: '¿cómo estás?', en: 'how are you?'}
+    level: 1
+    level_reason: pregunta de manual; 你, 好 y 吗 son HSK 1
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-05', text: 'Correcto, pero de libro: entre amigos suena escolar. Para algo natural, 最近怎么样？.'}
+  - id: e.zuijinzenmeyang
+    use: say
+    role: content
+    kind: expression
+    hanzi: 最近怎么样
+    pinyin: zuìjìn zěnmeyàng
+    meaning: {es: '¿qué tal últimamente?', en: 'how have you been?'}
+    level: 2
+    level_reason: la pregunta más natural para interesarse por alguien; 最近 es HSK 2
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-05', text: 'La opción más versátil para preguntar qué tal: abarca trabajo, estudios y ánimo, y suena cercana sin ser íntima.'}
+  - id: e.nihaihaoma
+    use: say
+    role: content
+    kind: expression
+    hanzi: 你还好吗
+    pinyin: nǐ hái hǎo ma
+    meaning: {es: '¿estás bien?', en: 'are you OK?'}
+    level: 2
+    level_reason: se pregunta cuando algo ha pasado; 还 es HSK 1–2
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-05', text: 'Da por hecho que algo va mal: alguien se ha caído, parece triste o ha tenido un problema. Como saludo sin motivo suena alarmado.'}
+  - id: e.chifanlema
+    use: hear
+    role: content
+    kind: expression
+    hanzi: 吃饭了吗
+    pinyin: chīfàn le ma
+    meaning: {es: '¿has comido? (como saludo)', en: 'have you eaten? (greeting)'}
+    level: 1
+    level_reason: saludo de vecinos y familia; 吃饭, 了 y 吗 son HSK 1
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-05', text: 'No es una invitación a comer: es interesarse por ti, sobre todo entre vecinos, familia y gente mayor. Se contesta corto, 吃了，你呢？, y se sigue.'}
+  - id: e.zuijinmangma
+    use: say
+    role: content
+    kind: expression
+    hanzi: 最近忙吗
+    pinyin: zuìjìn máng ma
+    meaning: {es: '¿mucho lío últimamente?', en: 'busy lately?'}
+    level: 2
+    level_reason: forma natural de interesarse por alguien; 最近 es HSK 2 y 忙, HSK 1
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-05', text: 'En chino el interés suele ir a algo concreto (el trabajo, la comida, el cansancio) más que a un «¿cómo estás?» abstracto.'}
+  - id: e.zhegezenmeyang
+    accept_pinyin_mismatch: 'tono neutro en el habla estándar (上 shang, 个 ge); los diccionarios dan el tono de cita'
+    use: say
+    role: content
+    kind: expression
+    hanzi: 这个怎么样
+    pinyin: zhège zěnmeyàng
+    meaning: {es: '¿qué tal este?, ¿qué te parece?', en: 'how about this one?'}
+    level: 1
+    level_reason: pedir opinión al señalar algo; 这, 个 y 怎么样 son HSK 1
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-05', text: '怎么样 también pide opinión: 这个怎么样？ al enseñar algo, 明天怎么样？ al proponer un día.'}
+  - id: g.how-are-you
+    kind: group
+    basis: set
+    title: 'Preguntar qué tal'
+    explanation: 'Seis maneras de interesarse por alguien; cambian la situación y la cercanía, no el sentido literal.'
+    members:
+      - {ref: e.zuijinzenmeyang, cue: 'qué tal últimamente: la más versátil'}
+      - {ref: w.zenmeyang, cue: '你怎么样？: «¿y tú qué tal?», algo directo suelto'}
+      - {ref: e.nihaoma, cue: 'cómo estás: correcto, pero de libro'}
+      - {ref: e.nihaihaoma, cue: 'estás bien: cuando algo ha pasado'}
+      - {ref: e.chifanlema, cue: 'has comido: saludo de vecinos y familia'}
+      - {ref: e.zuijinmangma, cue: 'mucho lío: interés por algo concreto'}
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+    comments: []
+  - id: g.zaijian-dajiahao
+    kind: group
+    basis: soundalike
+    title: '再见 y 大家好'
+    explanation: 'Uno cierra y otro abre, y al oído se parecen: zà-jià frente a dà-jiā.'
+    members:
+      - {ref: w.zaijian, cue: 'adiós, al irte: z (como ts sin aire), dos cuartos tonos que caen'}
+      - {ref: e.dajiahao, cue: 'hola a todos, al empezar: d, cuarto, primero y tercero'}
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+    comments: []

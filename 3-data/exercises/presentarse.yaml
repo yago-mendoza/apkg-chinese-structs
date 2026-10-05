@@ -1508,10 +1508,10 @@ exercises:
     added: 2026-10-01
     lang: es
     type: nuance
-    targets: [w.shenme, w.zenme, w.ji, w.duoshao]
+    targets: [w.shenme, w.na.which, w.nali, w.shei, w.zenme, w.zenmeyang, w.ji, w.duoshao, w.weishenme]
     skills: [comprehension, discrimination]
-    prompt: {text: '什么, 怎么, 几 y 多少: ¿qué pregunta cada uno?'}
-    answer: {meaning: '什么 qué · 怎么 cómo · 几 cuántos, pocos y con clasificador · 多少 cuánto, abierto. Además 谁 quién, 哪里 dónde y 为什么 por qué. Van donde iría la respuesta.'}
+    prompt: {text: '什么, 哪, 哪里, 谁, 怎么, 怎么样, 几, 多少 y 为什么: ¿qué pregunta cada uno?'}
+    answer: {meaning: '什么 «qué» (你吃什么？ «¿qué comes?»). 哪 «cuál, qué» de un grupo, delante de un nombre (你是哪国人？ «¿de qué país eres?»). 哪里 «dónde» (你在哪里？). 谁 «quién» (他是谁？). 怎么 + verbo, «cómo» se hace (怎么说？ «¿cómo se dice?»). 怎么样 «qué tal», pide opinión o estado (这个怎么样？). 几 «cuántos», cuando se esperan pocos, con clasificador (几个？). 多少 «cuánto», abierto, y para precios (多少钱？). 为什么 «por qué». Todos van donde iría la respuesta: el orden de la frase no cambia.'}
     comments: []
   - id: x.nuance.hui-uses
     added: 2026-10-01

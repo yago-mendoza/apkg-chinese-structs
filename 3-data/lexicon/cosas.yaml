@@ -66,7 +66,7 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 手 «mano» + 机 «máquina».}
-      - {kind: linguistic, private: false, date: '2026-09-27', text: '机 jī «máquina» (con 木 a la izquierda, no 扌): 手机 es la máquina de mano; 飞机 fēijī, la que vuela; 机票 jīpiào, su billete.'}
+      - {kind: character, private: false, date: '2026-09-27', text: '机 jī «máquina» (con 木 a la izquierda, no 扌): 手机 es la máquina de mano; 飞机 fēijī, la que vuela; 机票 jīpiào, su billete.'}
   - id: w.zuqiu
     use: hear
     role: content
@@ -137,7 +137,7 @@ entries:
     connection: {kind: sound, with: [们, 问], text: '门 mén da el sonido a 们 men y a 问 wèn: ver 门 dentro de un carácter evoca ese sonido.'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-09-27', text: El dibujo de una puerta de dos hojas.}
+      - {kind: character, private: false, date: '2026-09-27', text: El dibujo de una puerta de dos hojas.}
   - id: g.men-phonetic
     kind: group
     basis: phonetic
@@ -274,7 +274,7 @@ entries:
     meaning: {es: 'hablar, decir', en: 'to speak, to say'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '讠 «palabra» a la izquierda, como en 请 y en 认识.'}
+      - {kind: character, private: false, date: '2026-10-01', text: '讠 «palabra» a la izquierda, como en 请 y en 认识.'}
   - id: w.zenme
     use: say
     role: function
@@ -305,7 +305,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '和 solo une nombres: 咖啡和巧克力, 我和你. Dos frases o dos adjetivos no se unen con 和: 他很高，也很帅.'}
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '禾 hé «cereal» da el sonido y 口 «boca» aporta el sentido. El sentido antiguo es «armonía, concordia»; de dos cosas que armonizan pasó a unir: A 和 B.'}
+      - {kind: character, private: false, date: '2026-10-01', text: '禾 hé «cereal» da el sonido y 口 «boca» aporta el sentido. El sentido antiguo es «armonía, concordia»; de dos cosas que armonizan pasó a unir: A 和 B.'}
       - {kind: mnemonic, private: false, date: '2026-10-01', text: 'El cereal 禾 llega a la boca 口: comida compartida, armonía, estar juntos.'}
   - id: w.mei
     use: say
@@ -377,7 +377,7 @@ entries:
     meaning: {es: 'escuchar', en: 'to listen'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '口 «boca» a la izquierda. 听音乐 «escuchar música».'}
+      - {kind: character, private: false, date: '2026-10-01', text: '口 «boca» a la izquierda. 听音乐 «escuchar música».'}
   - id: w.dianying
     use: hear
     role: content
@@ -436,7 +436,7 @@ entries:
     meaning: {es: 'elefante', en: 'elephant'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
-      - {kind: note, private: false, date: '2026-10-01', text: 'No lo confundas con 大家 dàjiā «todos»: los dos empiezan por 大, y al oído solo cambia la segunda sílaba.', original: 'dajia, da xiang, todos vs elefante. cuidado estas cosas.'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'No lo confundas con 大家 dàjiā «todos»: los dos empiezan por 大, y al oído solo cambia la segunda sílaba.', original: 'dajia, da xiang, todos vs elefante. cuidado estas cosas.'}
   - id: w.yinyue
     use: hear
     role: content

@@ -57,6 +57,8 @@ Van donde iría la respuesta, sin cambiar el orden de la frase.
 - 几 jǐ · cuántos (pocos)
 - 多少 duōshao · cuánto (abierto)
 - 为什么 wèishénme · por qué
+- 哪 nǎ · cuál, qué (de un grupo), delante de un nombre
+- 怎么样 zěnmeyàng · qué tal: opinión o estado
 
 ## Frases
 

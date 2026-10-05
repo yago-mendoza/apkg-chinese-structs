@@ -158,7 +158,7 @@ entries:
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: '认 «reconocer» + 识 «distinguir»: conocer a alguien, estar familiarizado con algo.', original: 认识 = reconocer + distinguir = familiarizado con}
+      - {kind: linguistic, private: false, date: 2026-09-25, text: '认 «reconocer» + 识 «distinguir»: conocer a alguien, estar familiarizado con algo.', original: 认识 = reconocer + distinguir = familiarizado con}
       - {kind: note, private: false, date: 2026-09-25, text: 识 aporta la idea de distinguir algo de lo demás porque se conoce., original: distinguir algo (de los demás) con conocimiento}
   - id: w.gaoxing
     use: say
@@ -237,7 +237,7 @@ entries:
     meaning: {es: venir, en: to come}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-09-27', text: 'Su origen es el dibujo de una planta de trigo, tomado prestado por su sonido para «venir».'}
+      - {kind: character, private: false, date: '2026-09-27', text: 'Su origen es el dibujo de una planta de trigo, tomado prestado por su sonido para «venir».'}
   - id: w.laizi
     use: say
     role: content
@@ -259,7 +259,7 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: 'Una boca 口 en la puerta 门, preguntando.', original: (como una boca en la puerta preuntando)}
-      - {kind: linguistic, private: false, date: '2026-09-27', text: '门 mén le da el sonido: wèn.'}
+      - {kind: character, private: false, date: '2026-09-27', text: '门 mén le da el sonido: wèn.'}
   - id: w.beijing
     use: say
     role: content
@@ -360,6 +360,8 @@ entries:
       - {ref: w.ji, cue: 'cuántos (pocos)'}
       - {ref: w.duoshao, cue: 'cuánto (abierto)'}
       - {ref: w.weishenme, cue: 'por qué'}
+      - {ref: w.na.which, cue: 'cuál, qué (de un grupo), delante de un nombre'}
+      - {ref: w.zenmeyang, cue: 'qué tal: opinión o estado'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
   - id: w.chenglong

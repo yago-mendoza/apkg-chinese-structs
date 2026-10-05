@@ -90,3 +90,89 @@ sentences:
       - {text: 。}
     translation: {es: 'Nos vemos por la tarde, ¿vale?', en: 'Let''s meet in the afternoon.'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.zuijin-zenmeyang
+    use: say
+    segments:
+      - {text: 最近, ref: w.zuijin, pinyin: zuìjìn}
+      - {text: 怎么样, ref: w.zenmeyang, pinyin: zěnmeyàng}
+      - {text: ？}
+    translation: {es: '¿Qué tal últimamente?', en: 'How have you been?'}
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+  - id: s.haojiu-bujian-zuijin-zenmeyang
+    use: say
+    segments:
+      - {text: 好久不见, ref: e.haojiubujian, pinyin: hǎojiǔ bú jiàn, sandhi: true}
+      - {text: ，}
+      - {text: 最近, ref: w.zuijin, pinyin: zuìjìn}
+      - {text: 怎么样, ref: w.zenmeyang, pinyin: zěnmeyàng}
+      - {text: ？}
+    translation: {es: 'Cuánto tiempo, ¿qué tal últimamente?', en: 'Long time no see, how have you been?'}
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+  - id: s.zuijin-mang-ma
+    use: say
+    segments:
+      - {text: 最近, ref: w.zuijin, pinyin: zuìjìn}
+      - {text: 忙, ref: w.mang, pinyin: máng}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Mucho lío últimamente?', en: 'Busy lately?'}
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+  - id: s.ni-hai-hao-ma
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 还, ref: w.hai.still, pinyin: hái}
+      - {text: 好, ref: w.hao, pinyin: hǎo}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Estás bien?', en: 'Are you OK?'}
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+  - id: s.chi-le-ni-ne
+    use: say
+    segments:
+      - {text: 吃, ref: w.chi, pinyin: chī}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ，}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 呢, ref: w.ne, pinyin: ne}
+      - {text: ？}
+    translation: {es: 'Sí, ya he comido, ¿y tú?', en: 'I have, and you?'}
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+  - id: s.zhege-zenmeyang
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: zhè}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 怎么样, ref: w.zenmeyang, pinyin: zěnmeyàng}
+      - {text: ？}
+    translation: {es: '¿Qué tal este?', en: 'How about this one?'}
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+  - id: s.wo-zuijin-hen-mang
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 最近, ref: w.zuijin, pinyin: zuìjìn}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 忙, ref: w.mang, pinyin: máng}
+      - {text: 。}
+    translation: {es: 'Últimamente estoy muy liado.', en: 'Ive been very busy lately.'}
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+  - id: s.zaoshang-hao-laoshi
+    use: say
+    segments:
+      - {text: 早上好, ref: e.zaoshanghao, pinyin: zǎoshang hǎo}
+      - {text: ，}
+      - {text: 老师, ref: w.laoshi, pinyin: lǎoshī}
+      - {text: ！}
+    translation: {es: '¡Buenos días, profe!', en: 'Good morning, teacher!'}
+    source: {origin: class, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}
+  - id: s.wo-zaoshang-he-cha
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 早上, ref: w.zaoshang, pinyin: zǎoshang}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 茶, ref: w.cha, pinyin: chá}
+      - {text: 。}
+    translation: {es: 'Por la mañana tomo té.', en: 'I drink tea in the morning.'}
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}

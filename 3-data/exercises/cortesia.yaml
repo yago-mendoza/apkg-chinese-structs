@@ -758,35 +758,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 你真棒}
     answer: {hanzi: 你真棒, pinyin: nǐ zhēn bàng, meaning: '¡eres genial!, ¡qué bien lo haces!'}
     comments: []
-  - id: x.dictation.nalinali
-    added: 2026-10-02
-    lang: es
-    type: listen
-    targets: [e.nalinali]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: na3 li3 na3 li3, hanzi: 哪里哪里, pinyin: nǎlǐ nǎlǐ, meaning: '¡qué va!, no es para tanto (respuesta modesta
-        a un elogio)'}
-    comments: []
-  - id: x.read.nalinali
-    added: 2026-10-02
-    lang: es
-    type: read
-    targets: [e.nalinali]
-    skills: [reading, pinyin]
-    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 哪里哪里}
-    answer: {hanzi: 哪里哪里, pinyin: nǎlǐ nǎlǐ, meaning: '¡qué va!, no es para tanto (respuesta modesta a un elogio)'}
-    comments: []
-  - id: x.tones.nalinali
-    added: 2026-10-02
-    lang: es
-    type: tones
-    targets: [e.nalinali]
-    skills: [tones, pinyin]
-    refs: [p.third-tone-sandhi]
-    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 哪里哪里, pinyin: na li na li}
-    answer: {typed: '3333', hanzi: 哪里哪里, pinyin: nǎlǐ nǎlǐ, meaning: '¡qué va!, no es para tanto (respuesta modesta a un elogio)'}
-    comments: []
   - id: x.dictation.zaishuoyibian
     added: 2026-10-02
     lang: es
@@ -864,4 +835,67 @@ exercises:
     refs: []
     prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
     answer: {typed: '12', hanzi: 帮忙, pinyin: bāngmáng, meaning: echar una mano}
+    comments: []
+  - id: x.situation.duibuqi
+    added: 2026-10-05
+    lang: es
+    type: speak
+    targets: [w.duibuqi]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Sin querer, pisas a alguien en el metro. ¿Qué le dices?'}
+    answer: {hanzi: '对不起', pinyin: 'duìbuqǐ', meaning: 'lo siento, perdón'}
+    comments: []
+  - id: x.situation.meiguanxi
+    added: 2026-10-05
+    lang: es
+    type: speak
+    targets: [e.meiguanxi]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Alguien te empuja sin querer y te dice 对不起. ¿Qué le contestas?'}
+    answer: {hanzi: '没关系', pinyin: 'méi guānxi', meaning: 'no pasa nada'}
+    comments: []
+  - id: x.situation.xiexie
+    added: 2026-10-05
+    lang: es
+    type: speak
+    targets: [e.xiexie]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Un desconocido te abre la puerta. ¿Qué le dices?'}
+    answer: {hanzi: '谢谢', pinyin: 'xièxie', meaning: 'gracias'}
+    comments: []
+  - id: x.situation.bukeqi
+    added: 2026-10-05
+    lang: es
+    type: speak
+    targets: [e.bukeqi]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Has ayudado a alguien y te dice 谢谢. ¿Qué le contestas?'}
+    answer: {hanzi: '不客气', pinyin: 'bù kèqi', meaning: 'de nada (literalmente, «no hagas cumplidos»)'}
+    comments: []
+  - id: x.situation.dui
+    added: 2026-10-05
+    lang: es
+    type: speak
+    targets: [w.dui]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Te preguntan 你是西班牙人吗？ y lo eres. Contesta corto.'}
+    answer: {hanzi: '对', pinyin: 'duì', meaning: 'sí, eso es (también vale 是)'}
+    comments: []
+  - id: x.situation.haode
+    added: 2026-10-05
+    lang: es
+    type: speak
+    targets: [e.haode]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Un amigo propone 我们下午见吧。 y te parece bien. ¿Qué contestas?'}
+    answer: {hanzi: '好的', pinyin: 'hǎo de', meaning: 'vale, de acuerdo'}
+    comments: []
+  - id: x.situation.zaishuoyibian
+    added: 2026-10-05
+    lang: es
+    type: speak
+    targets: [e.zaishuoyibian]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. La profesora dice algo y no lo has entendido. ¿Qué le pides, en chino?'}
+    answer: {hanzi: '请再说一遍。', pinyin: 'qǐng zài shuō yí biàn', meaning: '¿puede repetirlo, por favor?'}
     comments: []

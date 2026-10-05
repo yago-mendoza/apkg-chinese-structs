@@ -89,3 +89,24 @@ entries:
       - {ref: w.ba.particle, cue: 'ba, átono al final: ¿vale?, venga'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
+  - id: w.zai.again
+    use: say
+    role: function
+    kind: word
+    hanzi: 再
+    pinyin: zài
+    meaning: {es: 'otra vez, de nuevo; luego, después', en: 'again; then'}
+    relations: [w.zaijian, e.zaishuoyibian]
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-05', text: 'Es el 再 de 再见 «adiós», literalmente «volver a ver», y de 再说一遍 «dilo otra vez». Va delante del verbo y habla de algo que aún no ha pasado: 我明天再来 «vuelvo mañana».'}
+  - id: g.zai-zai
+    kind: group
+    basis: homophone
+    title: '在 y 再: los dos zài'
+    explanation: 'Suenan igual, con el mismo cuarto tono; la frase decide.'
+    members:
+      - {ref: w.zai.at, cue: '在: estar en un sitio (我在家)'}
+      - {ref: w.zai.again, cue: '再: otra vez, luego (再见, 再说一遍)'}
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+    comments: []

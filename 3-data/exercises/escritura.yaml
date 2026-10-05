@@ -170,3 +170,13 @@ exercises:
         A la izquierda de un carácter, las piezas se estrechan.'}
     lang: es
     comments: []
+  - id: x.components.qing-please
+    added: 2026-10-05
+    type: components
+    targets: [c.qing.green]
+    context: [w.qing]
+    skills: [components]
+    prompt: {text: '¿Qué aporta cada parte de este carácter?', hanzi: 请}
+    answer: {hanzi: 请, pinyin: qǐng, meaning: '讠 «hablar»: pedir es cosa de palabras; 青 qīng solo da el sonido, no el color'}
+    lang: es
+    comments: []

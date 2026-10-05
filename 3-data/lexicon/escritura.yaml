@@ -62,7 +62,7 @@ entries:
     as_word: {es: 'clasificador de personas en una familia (三口人); «entrada» en 门口 y 入口'}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: 'Como componente, aparece en caracteres relacionados con la boca o con hablar, como 叫 o 吗.', original: boca habla}
+      - {kind: character, private: false, date: 2026-09-25, text: 'Como componente, aparece en caracteres relacionados con la boca o con hablar, como 叫 o 吗.', original: boca habla}
   - id: c.rou.flesh
     use: read
     kind: component
@@ -73,7 +73,7 @@ entries:
     as_word: {es: 'mes (一月, 这个月)'}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: 'Como componente, 月 suele ser 肉 «carne» y no «luna»: aparece en partes del cuerpo, como 胖 o 脸.', original: moon + meat / “radical” → 月 = muscle}
+      - {kind: character, private: false, date: 2026-09-25, text: 'Como componente, 月 suele ser 肉 «carne» y no «luna»: aparece en partes del cuerpo, como 胖 o 脸.', original: moon + meat / “radical” → 月 = muscle}
   - id: c.mu.eye
     use: read
     kind: component
@@ -145,7 +145,7 @@ entries:
     level_reason: 'aparece en 机 de 手机 [HSK 1]'
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-09-27', text: 'En 机 jī «máquina» la pieza de la izquierda es 木, no 扌: las máquinas eran de madera.'}
+      - {kind: character, private: false, date: '2026-09-27', text: 'En 机 jī «máquina» la pieza de la izquierda es 木, no 扌: las máquinas eran de madera.'}
   - id: g.mu-shou
     kind: group
     basis: visual
@@ -264,3 +264,15 @@ entries:
     source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27', rescued: 003-2026-10-01-comer-dinero-y-contrastes}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: 'Una cama con una persona tumbada: lo que lo lleva tiene que ver con la enfermedad, como 疼 «doler» y 瘦 «delgado».'}
+  - id: c.qing.green
+    use: read
+    kind: component
+    hanzi: 青
+    pinyin: qīng
+    meaning: {es: 'verde azulado, el color de la hierba y del cielo', en: 'blue-green'}
+    real_word: {hanzi: 绿色, pinyin: lǜsè, es: 'Suelto, 青 casi no se usa al hablar: «verde» es 绿色 lǜsè [HSK 2] y «azul», 蓝色 lánsè [HSK 2]. Vive en palabras fijas, como 青菜 qīngcài «verdura de hoja» y 青年 qīngnián «joven».'}
+    as_word: {es: 'en palabras fijas: 青菜 qīngcài «verdura de hoja», 青年 qīngnián «joven»'}
+    relations: [w.qing]
+    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+    comments:
+      - {kind: character, private: false, date: '2026-10-05', text: 'Como pieza, da el sonido qing: 请 qǐng «por favor», 清 qīng «claro», 晴 qíng «despejado» y 情 qíng «sentimiento». La otra pieza da el sentido: 讠 hablar, 氵 agua, 日 sol, 忄 corazón.'}

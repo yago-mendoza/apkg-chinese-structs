@@ -25,7 +25,7 @@ Fuente de verdad del mazo, mantenida por el agente. Un archivo por tema en cada 
 - Pronunciación: `title`, `explanation`, `audio_text`.
 - Estructuras (`lexicon/estructuras.yaml`): `pattern` (`{S} + 很 + {Adj}`; huecos `{S} {N} {V} {Adj} {Num} {Nombre} {Lugar} {Tiempo} {Frase}`), `refs` (las entradas de las piezas fijas, en orden), `examples` (frases que la cumplen), `meaning: {es, en}`, `contrast: {right, wrong, why: {es, en}}` (frase buena del mazo, calco erróneo y porqué: de ahí sale su tarjeta). Sin `level`: es el de su pieza fija más difícil. Ver `docs/design.md`, «Gramática».
 - `connection: {kind: sound | meaning | looks, with: [hanzi], text}`: el recuadro de «Conexión» del carácter (uno por entrada; lo heredan las palabras que lo llevan). `with`: caracteres que ya están en el mazo. Ver `docs/goal.md`, «Cómo se explica un carácter».
-- `comments: [{kind, private, date, text, original}]` (`text` redactado para mostrar; `original`, lo que escribió YAGO, solo si difiere), con `kind`: `mnemonic | teacher | linguistic | note | sound`. `private: true` por defecto; el repositorio es público, así que lo privado no se guarda aquí.
+- `comments: [{kind, private, date, text, original}]` (`text` redactado para mostrar; `original`, lo que escribió YAGO, solo si difiere), con `kind`: `mnemonic | teacher | linguistic | character | note | sound` (`character`: el análisis del carácter, aparte del uso). `private: true` por defecto; el repositorio es público, así que lo privado no se guarda aquí.
 - `source: {origin, batch, file, date}`.
 
 ## Frases (`sentences/`)
@@ -42,3 +42,5 @@ Fuente de verdad del mazo, mantenida por el agente. Un archivo por tema en cada 
 - `targets` (lo que se evalúa), `context` (visible en la pregunta), `reveal` (frase fijada a mano para el reverso; sin él, se eligen solas entre las que contienen el objetivo), `refs` (entradas de pronunciación).
 - `prompt: {text, hanzi, pinyin, audio}`; `answer: {typed, hanzi, pinyin, meaning}`. `typed`: pinyin numérico (`ni3 hao3`) o, en tonos, un dígito por sílaba (`'25'`). Sin `typed`, autoevaluación.
 - `added`: fecha de creación (etiqueta `mes::` en Anki). No se cambia.
+- `accept_pinyin_mismatch` con motivo, como en las entradas, si la respuesta lleva tono neutro o sandhi que pypinyin no da.
+- Prefijos a mano: `x.situation.` (escena → respuesta en voz alta, `type: speak`) y `x.syllable.<a>-<b>.<cuál>` (oír una sílaba y elegir entre dos, `type: listen`). Ver `docs/design.md`, «Tarjetas».

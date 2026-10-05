@@ -1819,3 +1819,13 @@ exercises:
     prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
     answer: {typed: '31', hanzi: 好吃, pinyin: hǎochī, meaning: 'rico, bueno (de comer)'}
     comments: []
+  - id: x.contrast.zai.at
+    added: 2026-10-05
+    lang: es
+    type: contrast
+    group: g.zai-zai
+    targets: [w.zai.at]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es zài, «estar en (un lugar)»?'}
+    answer: {hanzi: 在, pinyin: zài, meaning: estar en (un lugar)}
+    comments: []

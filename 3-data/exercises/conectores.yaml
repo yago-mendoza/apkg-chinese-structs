@@ -379,3 +379,65 @@ exercises:
     question: {es: '¿Cómo está, y qué va a hacer?'}
     answer: {meaning: 'Cansado pero contento; se va a casa a dormir.'}
     comments: []
+  - id: x.contrast.zai.again
+    added: 2026-10-05
+    lang: es
+    type: contrast
+    group: g.zai-zai
+    targets: [w.zai.again]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es zài, «otra vez, de nuevo; luego, después»?'}
+    answer: {hanzi: 再, pinyin: zài, meaning: 'otra vez, de nuevo; luego, después'}
+    comments: []
+  - id: x.dictation.zai.again
+    added: 2026-10-05
+    lang: es
+    type: listen
+    targets: [w.zai.again]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zai4, hanzi: 再, pinyin: zài, meaning: 'otra vez, de nuevo; luego, después'}
+    comments: []
+  - id: x.cloze.zai.again
+    added: 2026-10-05
+    lang: es
+    type: cloze
+    sentence: s.wo-mingtian-zai-lai
+    gap: w.zai.again
+    targets: [w.zai.again]
+    context: [w.wo, w.mingtian, w.lai]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Vuelvo mañana.»'}
+    answer: {typed: zai4, hanzi: 再, pinyin: zài, meaning: 'otra vez, de nuevo; luego, después'}
+    comments: []
+  - id: x.read.zai.again
+    added: 2026-10-05
+    lang: es
+    type: read
+    targets: [w.zai.again]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 再}
+    answer: {hanzi: 再, pinyin: zài, meaning: 'otra vez, de nuevo; luego, después'}
+    comments: []
+  - id: x.listen.wo-mingtian-zai-lai
+    added: 2026-10-05
+    lang: es
+    type: listen
+    sentence: s.wo-mingtian-zai-lai
+    targets: [s.wo-mingtian-zai-lai]
+    context: [w.wo, w.mingtian, w.zai.again, w.lai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Vuelvo mañana.}
+    comments: []
+  - id: x.produce.wo-mingtian-zai-lai
+    added: 2026-10-05
+    lang: es
+    type: produce
+    sentence: s.wo-mingtian-zai-lai
+    targets: [s.wo-mingtian-zai-lai]
+    context: [w.wo, w.mingtian, w.zai.again, w.lai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Vuelvo mañana.»'}
+    answer: {meaning: Vuelvo mañana.}
+    comments: []

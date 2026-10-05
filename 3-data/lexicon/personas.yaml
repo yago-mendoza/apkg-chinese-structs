@@ -189,7 +189,7 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: Muchas personas 亻 pasando por una puerta 门.}
-      - {kind: linguistic, private: false, date: '2026-09-27', text: '门 mén le da el sonido; en 们 la sílaba pierde el tono: wǒmen, nǐmen, tāmen.'}
+      - {kind: character, private: false, date: '2026-09-27', text: '门 mén le da el sonido; en 们 la sílaba pierde el tono: wǒmen, nǐmen, tāmen.'}
   - id: g.shuai-shi
     kind: group
     basis: visual

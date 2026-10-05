@@ -24,6 +24,7 @@ nuevas, y sincroniza con AnkiWeb.
 """
 
 import argparse
+import collections
 import datetime
 import hashlib
 import html
@@ -1085,6 +1086,10 @@ def append_exercises(theme, items):
 
 def cmd_scaffold(write):
     entries, sentences, exercises = load()
+    dups = duplicate_ids(entries, sentences, exercises)
+    if dups:                       # tarjetas sobre un ID repetido acabarían colgando de la entrada equivocada
+        print("No escribo nada: hay IDs repetidos. Corrígelos primero:", ", ".join(dups))
+        return 1
     made, manual = scaffold_exercises(entries, sentences, exercises, datetime.date.today())
     for theme, ex in made:
         print(f"{'+' if write else '·'} {theme:12} {ex['id']:32} {ex['type']:8} {ex['targets'][0]}")
@@ -1371,6 +1376,28 @@ def cmd_notebook():
 
 
 # ---------------------------------------------------------------- validación
+
+PINYIN_AFTER = re.compile(r"^\s*\(?[a-zāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜü]+", re.I)
+
+
+def annotate_pinyin(text, eby, sby):
+    """Cada trozo en chino de una explicación lleva su pinyin detrás, «你好 (nǐ hǎo)», salvo si ya lo lleva. El de
+    las entradas y frases del mazo si coincide; si no, el de pypinyin."""
+    from pypinyin import Style, lazy_pinyin
+    by_hz = {sentence_text(s).rstrip("。？！?!"): sentence_pinyin(s) for s in sby.values()}
+    by_hz |= {e.get("hanzi"): e.get("pinyin") for e in eby.values() if e.get("hanzi") and e.get("pinyin")}
+    out, pos = [], 0
+    for m in HAN.finditer(text or ""):
+        out.append(text[pos:m.end()])
+        pos = m.end()
+        run = m.group(0)
+        if PINYIN_AFTER.match(text[pos:]):
+            continue
+        py = by_hz.get(run) or " ".join(lazy_pinyin(run, style=Style.TONE))
+        out.append(f" ({py})")
+    out.append(text[pos:])
+    return "".join(out)
+
 
 def answer_hanzi(ex, sby):
     if ex.get("answer", {}).get("hanzi"):
@@ -1738,11 +1765,19 @@ def quality_rules(entries, sentences, exercises, eby, sby, errors, warnings):
                         errors.append(f"{path.relative_to(ROOT).as_posix()}: nombra una fuente privada («{t}»)")
 
 
+def duplicate_ids(entries, sentences, exercises):
+    """IDs usados dos veces. Con uno repetido, todo lo que cuelga de él (tarjetas, grupos, frases) se mezcla."""
+    ids = collections.Counter(x["id"] for x in entries + sentences + exercises if "id" in x)
+    return sorted(i for i, n in ids.items() if n > 1)
+
+
 def validate(entries, sentences, exercises, require_audio=True):
     errors, warnings = [], []
+    # Un ID repetido va primero y solo (retrospectiva del lote 004): lo demás que diría check sería ruido derivado.
+    dups = duplicate_ids(entries, sentences, exercises)
+    if dups:
+        return [f"ID repetido: {d}" for d in dups], []
     ids = [x["id"] for x in entries + sentences + exercises if "id" in x]
-    for dup in sorted({i for i in ids if ids.count(i) > 1}):
-        errors.append(f"ID repetido: {dup}")
     for x in entries + sentences + exercises:
         if "id" not in x:
             errors.append(f"elemento sin id: {x}")
@@ -1801,8 +1836,11 @@ def validate(entries, sentences, exercises, require_audio=True):
         xid = ex["id"]
         if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(ex.get("added", ""))):
             errors.append(f"{xid}: falta added (AAAA-MM-DD), decide su subdeck mensual")
-        # Redundancia: mismo tipo y mismos objetivos. Repetir algo como contexto no cuenta.
-        key = (ex.get("type"), tuple(sorted(ex.get("targets", []))))
+        # Redundancia: mismo tipo y mismos objetivos. Repetir algo como contexto no cuenta. En pronunciación cada
+        # tarjeta es un sonido distinto (是 / 吃 frente a 四 / 次): cuenta también lo que suena.
+        sound_key = ((answer_hanzi(ex, sby), (ex.get("prompt") or {}).get("text"))
+                     if any(t.startswith("p.") for t in ex.get("targets", [])) else None)
+        key = (ex.get("type"), tuple(sorted(ex.get("targets", []))), sound_key)
         if key in seen:
             warnings.append(f"{xid}: evalúa lo mismo que {seen[key]} ({key[0]}); ¿redundante?")
         seen.setdefault(key, xid)
@@ -1851,8 +1889,8 @@ def validate(entries, sentences, exercises, require_audio=True):
         if (ex.get("prompt") or {}).get("audio") and not answer_hanzi(ex, sby):
             errors.append(f"{xid}: escucha sin texto chino que sonorizar")
         w = pinyin_warning(ans.get("hanzi"), ans.get("pinyin"))
-        accepted = any(e.get("accept_pinyin_mismatch") and e.get("hanzi") == ans.get("hanzi")
-                       for e in entries)
+        accepted = ex.get("accept_pinyin_mismatch") or any(
+            e.get("accept_pinyin_mismatch") and e.get("hanzi") == ans.get("hanzi") for e in entries)
         if w and not accepted:
             warnings.append(f"{xid}: {w}")
     for t in load_themes():
@@ -2233,24 +2271,36 @@ def examples_for(ex, sby, eby=None):
     if pool:
         k = int(hashlib.sha1(ex["id"].encode("utf-8")).hexdigest()[:8], 16) % len(pool)
         pool = pool[k:] + pool[:k]
-    out = (chosen + pool)[:EXAMPLES_MAX]
-    # Lo que se confunde aparece junto (YAGO, 2026-10-01): si el objetivo tiene pareja en un grupo de contraste
-    # o de serie, el último ejemplo es una frase de la pareja, si hay alguna de nivel no superior.
-    if eby is not None and not chosen:
-        partners = {m["ref"] for g in eby.values() if g.get("kind") == "group"
-                    and g.get("basis") in ("visual", "homophone", "soundalike", "set")
-                    and any(m["ref"] in targets for m in g.get("members", []))
-                    for m in g["members"]} - set(targets)
-        has = lambda sid: any(seg.get("ref") in partners for seg in sby[sid].get("segments", []))
-        if partners and not any(has(sid) for sid in out):
-            levels = hsk_levels()
-            card = max([lv for lv in (level_of(t, eby, sby, levels) for t in targets) if lv] or [0])
-            extra = sorted(sid for sid in sby if sid != own and has(sid)
-                           and (not card or (level_of(sid, eby, sby, levels) or 0) <= card))
-            if extra:
-                k = int(hashlib.sha1(ex["id"].encode("utf-8")).hexdigest()[:8], 16) % len(extra)
-                out = out[:EXAMPLES_MAX - 1] + [extra[k]]
-    return out
+    return (chosen + pool)[:EXAMPLES_MAX]
+
+
+def partner_example(ex, sby, eby):
+    """Lo que se confunde aparece junto, pero dicho: si el objetivo tiene pareja en un grupo de contraste o de serie
+    (十 / 是, 要 / 喜欢), una frase de la pareja en su propio apartado, «Para no confundirlo con 是 shì». Antes iba
+    mezclada con los ejemplos y parecía un ejemplo equivocado. (entrada de la pareja, id de la frase) o None."""
+    if ex.get("reveal") or ex.get("type") in ("cloze", "nuance", "pattern", "comprehension", "minimal"):
+        return None
+    targets = [t for t in ex.get("targets", []) if t not in sby]
+    if not targets:
+        return None
+    partners = sorted({m["ref"] for g in eby.values() if g.get("kind") == "group"
+                       and g.get("basis") in ("visual", "homophone", "soundalike", "set")
+                       and any(m["ref"] in targets for m in g.get("members", []))
+                       for m in g["members"]} - set(targets))
+    if not partners:
+        return None
+    levels = hsk_levels()
+    card = max([lv for lv in (level_of(t, eby, sby, levels) for t in targets) if lv] or [0])
+    k = int(hashlib.sha1(ex["id"].encode("utf-8")).hexdigest()[:8], 16)
+    for i in range(len(partners)):             # la pareja que toca por el ID; si no tiene frase, la siguiente
+        pid = partners[(k + i) % len(partners)]
+        pool = sorted(sid for sid in sby if sid != ex.get("sentence")
+                      and any(seg.get("ref") == pid for seg in sby[sid].get("segments", []))
+                      and not any(seg.get("ref") in targets for seg in sby[sid].get("segments", []))
+                      and (not card or (level_of(sid, eby, sby, levels) or 0) <= card))
+        if pool and pid in eby:
+            return eby[pid], pool[k % len(pool)]
+    return None
 
 
 def card_fields(ex, eby, sby, manifest, media_files):
@@ -2258,6 +2308,8 @@ def card_fields(ex, eby, sby, manifest, media_files):
     prompt, ans, lang = ex.get("prompt") or {}, ex.get("answer") or {}, ex.get("lang", "es")
     sent = sby.get(ex.get("sentence"))
     spoken = answer_hanzi(ex, sby) if wants_audio(ex, eby) else None
+    if ex["type"] == "cloze" and sent:           # el hueco se resuelve oyendo la frase entera, no la palabra suelta
+        spoken = sentence_text(sent)
 
     group = eby.get(ex.get("group"))
     front = ""
@@ -2328,6 +2380,8 @@ def card_fields(ex, eby, sby, manifest, media_files):
         if phon:
             back += f'<div class="ipa">[{esc(phon)}]</div>'
         meaning = ans.get("meaning")
+        if ex["type"] == "nuance":                # una explicación con chino: cada trozo con su pinyin
+            meaning = annotate_pinyin(meaning, eby, sby)
     if meaning:
         back += f'<div class="meaning">{esc(meaning)}</div>'
     # En lectura/producción el audio va tras revelar; en escucha ya sonó en el anverso.
@@ -2404,6 +2458,13 @@ def card_fields(ex, eby, sby, manifest, media_files):
         notes.append(f"<h4>{'Ejemplo' if len(examples) == 1 else 'Ejemplos'}</h4>" + "".join(
             f"<div class=\"example\">{render_sentence(sby[sid])}<div>{esc(sby[sid]['translation'].get(lang))}</div>"
             f"{sound(sentence_text(sby[sid]), manifest, media_files)}</div>" for sid in examples))
+    partner = partner_example(ex, sby, eby)
+    if partner:
+        p, sid = partner
+        notes.append(f"<h4>Para no confundirlo con {esc(p.get('hanzi'))} {esc(p.get('pinyin'))}</h4>"
+                     f"<div>{esc(p.get('hanzi'))} {esc(p.get('pinyin'))}: {esc((p.get('meaning') or {}).get(lang, ''))}</div>"
+                     f"<div class=\"example\">{render_sentence(sby[sid])}<div>{esc(sby[sid]['translation'].get(lang))}</div>"
+                     f"{sound(sentence_text(sby[sid]), manifest, media_files)}</div>")
     # Sus caracteres: de qué está hecho cada hanzi de la palabra que se responde (tipo, qué pieza da el significado y
     # cuál el sonido), de 3-data/hanzi.yaml y sources/hanzi. Solo en tarjetas de palabras, nunca en las de frases.
     card_lv = max([lv for lv in (level_of(t, eby, sby, hsk_levels()) for t in ex.get("targets", [])) if lv] or [0]) or None
@@ -2420,6 +2481,7 @@ def card_fields(ex, eby, sby, manifest, media_files):
     for tid in ex.get("targets", []):
         comments += eby.get(tid, {}).get("comments", [])
     labels = {"mnemonic": "Mnemotecnia · imagen para recordar, no su origen", "teacher": "En clase", "linguistic": "Nota", "note": "Apunte",
+              "character": "El carácter",
               "sound": "Cómo suena"}
     for c in comments:
         if c.get("private", True) is False:
@@ -2445,6 +2507,7 @@ def card_fields(ex, eby, sby, manifest, media_files):
 NOTE_KIND = (("ejemplo", "example"), ("mnemotecnia", "mnemonic"), ("en clase", "teacher"), ("cómo suena", "sound"),
              ("conexión", "connection"), ("sus caracteres", "chars"), ("por qué se escribe así", "chars"),
              ("pronunciación", "sound"), ("qué es", "status"), ("no se usa solo", "status"),
+             ("para no confundirlo", "confusable"), ("el carácter", "character"),
              ("casi no se usa solo", "status"))
 
 
@@ -3329,14 +3392,16 @@ def find_anki():
     return next((c for c in candidates if c and os.path.exists(c)), None)
 
 
+STAGE_LAG = 1
 STAGE = {"read": 0, "contrast": 1, "components": 1, "nuance": 1, "listen": 2, "tones": 3,
          "produce": 4, "derive": 4, "cloze": 4, "speak": 5, "pattern": 5, "comprehension": 5}
 
 
 def new_card_order(entries, sentences, exercises):
     """Posición de cada ejercicio entre las nuevas: por nivel del HSK primero (lo básico antes); dentro, por tema, y cada paso (lectura, escucha, tonos,
-    producción) dos temas por detrás del anterior, para que las tarjetas de una misma entrada no
-    salgan el mismo día (Anki solo separa hermanas de una misma nota)."""
+    producción) `STAGE_LAG` temas por detrás del anterior, para que las tarjetas de una misma entrada se repartan
+    en días distintos (Anki solo separa hermanas de una misma nota). Con 2 temas, los primeros días eran casi solo
+    lectura (YAGO, 2026-10-05); con 1, cada día mezcla leer, oír y, a los pocos días, decir."""
     theme_idx = {t["id"]: i for i, t in enumerate(load_themes())}
     items = {it["id"]: (theme_idx.get(it.get("theme"), 99), n) for n, it in enumerate(entries + sentences)}
     eby, sby, levels = {e["id"]: e for e in entries}, {x["id"]: x for x in sentences}, hsk_levels()
@@ -3350,7 +3415,7 @@ def new_card_order(entries, sentences, exercises):
     def key(ex):
         th, n = items.get((ex.get("targets") or [None])[0], (99, 0))
         stage = STAGE.get(ex.get("type"), 1)
-        return (exercise_level(ex, eby, sby, levels), tier(ex), th + 2 * stage, th, n, stage, ex["id"])
+        return (exercise_level(ex, eby, sby, levels), tier(ex), th + STAGE_LAG * stage, th, n, stage, ex["id"])
     return {ex["id"]: pos for pos, ex in enumerate(sorted(exercises, key=key))}
 
 
@@ -3499,6 +3564,16 @@ def cmd_push(allow_missing_audio, sync, prune=False, reset=False, force=False):
                       "que Anki se reinició después de instalarlo y que hay un perfil abierto.")
                 return 1
             time.sleep(1)
+    if sync:
+        # Primero bajar lo estudiado en el móvil: reordenar o recolocar una tarjeta aquí antes de sincronizar la haría
+        # más reciente que su repaso del móvil, y la sincronización se quedaría con la de aquí (se perdería el repaso).
+        try:
+            anki_request("sync")
+            print("Sincronizado con AnkiWeb antes de tocar nada.")
+        except RuntimeError as e:
+            print(f"No se pudo sincronizar antes de importar ({e}). Sin eso se podría pisar lo estudiado en otro "
+                  "dispositivo: sincroniza a mano en Anki y repite, o usa --no-sync si este es el único dispositivo.")
+            return 1
     anki_request("importPackage", path=str(APKG.resolve()))
     print(f"Importado en Anki: {APKG.name}")
     entries, sentences, exercises = load()

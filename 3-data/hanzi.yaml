@@ -1864,6 +1864,38 @@ characters:
     confidence: medium
 
 # Qué significa cada pieza cuando es pieza.
+  近:
+    gloss: {es: 'cerca; reciente', en: 'near; recent'}
+    origin:
+      es: 'Fonético-semántico: 辶 «andar» da el sentido, la distancia que se recorre, y 斤 (jīn) el sonido: suena parecido, cambia el tono.'
+      en: 'Phonetic-semantic: 辶 (walking) gives the meaning, the distance covered, and 斤 (jīn) the sound: similar, only the tone changes.'
+    confidence: high
+  还:
+    gloss: {es: 'todavía, aún; (huán) devolver', en: 'still, yet; (huán) to return'}
+    origin:
+      es: 'Fonético-semántico en el tradicional 還: 辶 «andar» da el sentido, volver, y 睘 (huán) el sonido. «Todavía», hái, es un uso posterior. El simplificado cambió 睘 por 不, que solo sustituye: no niega nada.'
+      en: 'Phonetic-semantic in the traditional 還: 辶 (walking) gives the meaning, going back, and 睘 (huán) the sound. Still, hái, is a later use. Simplification replaced 睘 with 不, a mere stand-in: it negates nothing.'
+    traditional: 還
+    confidence: high
+  久:
+    gloss: {es: 'mucho tiempo', en: 'long (time)'}
+    origin:
+      es: 'Pictograma según la lectura más citada: una persona con algo aplicado en la espalda, el sentido que hoy lleva 灸 jiǔ «moxa»; «mucho tiempo» sería un préstamo por el sonido. Se discute.'
+      en: 'Pictograph in the most cited reading: a person with something applied to the back, the sense now written 灸 jiǔ (moxa); long time would be a loan for the sound. Disputed.'
+    memory:
+      es: 'Una figura que camina inclinada, arrastrando un trazo largo detrás: lleva mucho tiempo andando.'
+      en: 'A stooping figure dragging a long stroke behind it: it has been walking for a long time.'
+    confidence: medium
+  青:
+    gloss: {es: 'verde azulado', en: 'blue-green'}
+    origin:
+      es: 'Ideograma compuesto según el diccionario clásico: arriba 生 «brotar», que da también el sonido; abajo 丹, el mineral de los pigmentos, hoy escrito como 月. El color de lo que brota. Se discute el detalle.'
+      en: 'Compound ideograph according to the classical dictionary: 生 (to sprout) on top, which also gives the sound; below 丹, the pigment mineral, now written like 月. The colour of sprouting plants. The details are disputed.'
+    memory:
+      es: 'Arriba, brotes de hierba; abajo, el cielo de la mañana: el verde azulado de los dos.'
+      en: 'Grass shoots on top, the morning sky below: the blue-green of both.'
+    confidence: medium
+
 parts:
   亻: {es: 'persona (forma de 人 a la izquierda)', en: 'person (人 on the left)'}
   尔: {es: 'tú (forma corta de 爾)', en: 'you (short form of 爾)'}

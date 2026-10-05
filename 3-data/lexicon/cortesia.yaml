@@ -24,8 +24,8 @@ entries:
     meaning: {es: por favor, en: please}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: 'Fórmula cortés: 请您 + verbo, «le ruego que…». Por ejemplo, 请您进 qǐng nín jìn, «pase, por favor».', original: 'qǐng nín [verbo] = please you <do smth> (formal)'}
-      - {kind: linguistic, private: false, date: '2026-09-27', text: '请 = 讠 «hablar» + 青 qīng, que da el sonido. La misma pista en 清 qīng «claro» [HSK 6], 晴 qíng «despejado» [HSK 2] y 情 qíng «sentimiento» [HSK 7]; lo que aporta 青 es el sonido, no un significado de «claridad».', original: 'verde azul da como claridad y speech claridad o algo asi ?'}
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 'Fórmula cortés: 请您 + verbo, «le ruego que…». Por ejemplo, 请您进 qǐng nín jìn, «pase, por favor».', original: 'qǐng nín [verbo] = please you <do smth> (formal)'}
+      - {kind: character, private: false, date: '2026-09-27', text: '请 = 讠 «hablar» + 青 qīng, que da el sonido. La misma pista en 清 qīng «claro» [HSK 6], 晴 qíng «despejado» [HSK 2] y 情 qíng «sentimiento» [HSK 7]; lo que aporta 青 es el sonido, no un significado de «claridad».', original: 'verde azul da como claridad y speech claridad o algo asi ?'}
   - id: w.dui
     use: say
     role: content
@@ -236,7 +236,8 @@ entries:
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
     comments: []
   - id: e.nalinali
-    use: hear
+    use: drop
+    use_reason: 'tradicional: YAGO quiere lo formal de trabajo o lo coloquial de la calle, no lo tradicional (review del lote 004). Hoy se contesta a un elogio con 谢谢.'
     role: content
     kind: expression
     hanzi: 哪里哪里

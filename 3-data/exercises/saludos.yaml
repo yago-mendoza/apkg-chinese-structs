@@ -620,7 +620,7 @@ exercises:
     context: [w.huilai]
     skills: [comprehension, discrimination]
     prompt: {text: '你好, 你好吗 y 你回来了: ¿cuándo cada uno?'}
-    answer: {meaning: '你好: al conocer a alguien o con desconocidos. 你好吗？ «¿cómo estás?» es de libro. Con quien ya conoces se saluda con la situación: 早！, 你回来了！, 去哪里啊？, 吃饭了吗？.'}
+    answer: {meaning: '你好 «hola»: con desconocidos o al conocer a alguien; con amigos suena distante. 你好吗？ «¿cómo estás?»: correcto pero de libro; para interesarte de verdad, 最近怎么样？. 你回来了！ «¡ya has vuelto!»: saludo de casa, al ver llegar a alguien. Con quien ya conoces se saluda nombrando la situación: 早！ por la mañana, 去哪里啊？ si va a algún sitio, 吃饭了吗？ a la hora de comer.'}
     comments: []
   - id: x.comprehension.saludo-y-quedada
     added: 2026-10-02
@@ -663,4 +663,790 @@ exercises:
     refs: []
     prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
     answer: {typed: '23', hanzi: 您好, pinyin: nín hǎo, meaning: hola (con respeto)}
+    comments: []
+  - id: x.nuance.how-are-you
+    added: 2026-10-05
+    lang: es
+    type: nuance
+    targets: [e.zuijinzenmeyang, w.zenmeyang]
+    context: [e.nihaoma, e.nihaihaoma, e.chifanlema, e.zuijinmangma]
+    skills: [comprehension, discrimination]
+    prompt: {text: '你好吗, 你怎么样, 最近怎么样, 你还好吗, 吃饭了吗 y 最近忙吗: ¿cuándo cada uno?'}
+    answer: {meaning: '最近怎么样？ «¿qué tal últimamente?»: la más versátil, para cualquiera que conoces. 你怎么样？ «¿y tú qué tal?»: se entiende, pero suelto suena algo directo; va bien después de contar lo tuyo. 你好吗？ «¿cómo estás?»: correcto, de libro. 你还好吗？ «¿estás bien?»: solo si algo ha pasado; sin motivo, alarma. 吃饭了吗？ «¿has comido?»: saludo de vecinos y familia, no una invitación; se contesta 吃了，你呢？. 最近忙吗？ «¿mucho lío?»: interés por algo concreto, muy natural.'}
+    comments: []
+  - id: x.nuance.zaijian-dajiahao
+    added: 2026-10-05
+    lang: es
+    type: nuance
+    targets: [w.zaijian, e.dajiahao]
+    skills: [comprehension, discrimination]
+    prompt: {text: '再见 y 大家好: ¿cuál es para llegar y cuál para irte, y en qué se distinguen al oído?'}
+    answer: {meaning: '大家好 «hola a todos» abre: al empezar a hablar ante un grupo. 再见 «adiós» cierra: al irte. Al oído: 再见 empieza por z (una ts sin aire) y son dos cuartos tonos que caen; 大家好 empieza por d y son tres sílabas, cuarto, primero y tercero.'}
+    comments: []
+  - id: x.contrast.zaijian
+    added: 2026-10-05
+    lang: es
+    type: contrast
+    group: g.zaijian-dajiahao
+    targets: [w.zaijian]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 再见, pinyin: zàijiàn, meaning: adiós}
+    comments: []
+  - id: x.contrast.dajiahao
+    added: 2026-10-05
+    lang: es
+    type: contrast
+    group: g.zaijian-dajiahao
+    targets: [e.dajiahao]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 大家好, pinyin: dàjiā hǎo, meaning: hola a todos}
+    comments: []
+  - id: x.dictation.zaoshang
+    added: 2026-10-05
+    lang: es
+    type: listen
+    targets: [w.zaoshang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zao3 shang5, hanzi: 早上, pinyin: zǎoshang, meaning: la mañana (temprano)}
+    comments: []
+  - id: x.produce.zaoshang
+    added: 2026-10-05
+    lang: es
+    type: produce
+    targets: [w.zaoshang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «la mañana (temprano)»? Escribe el pinyin.'}
+    answer: {typed: zao3 shang5, hanzi: 早上, pinyin: zǎoshang, meaning: la mañana (temprano)}
+    comments: []
+  - id: x.read.zaoshang
+    added: 2026-10-05
+    lang: es
+    type: read
+    targets: [w.zaoshang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 早上}
+    answer: {hanzi: 早上, pinyin: zǎoshang, meaning: la mañana (temprano)}
+    comments: []
+  - id: x.tones.zaoshang
+    added: 2026-10-05
+    lang: es
+    type: tones
+    targets: [w.zaoshang]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 早上, pinyin: zao shang}
+    answer: {typed: '35', hanzi: 早上, pinyin: zǎoshang, meaning: la mañana (temprano)}
+    comments: []
+  - id: x.dictation.zaoshanghao
+    added: 2026-10-05
+    lang: es
+    type: listen
+    targets: [e.zaoshanghao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zao3 shang5 hao3, hanzi: 早上好, pinyin: zǎoshang hǎo, meaning: buenos días}
+    comments: []
+  - id: x.read.zaoshanghao
+    added: 2026-10-05
+    lang: es
+    type: read
+    targets: [e.zaoshanghao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 早上好}
+    answer: {hanzi: 早上好, pinyin: zǎoshang hǎo, meaning: buenos días}
+    comments: []
+  - id: x.tones.zaoshanghao
+    added: 2026-10-05
+    lang: es
+    type: tones
+    targets: [e.zaoshanghao]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 早上好, pinyin: zao shang hao}
+    answer: {typed: '353', hanzi: 早上好, pinyin: zǎoshang hǎo, meaning: buenos días}
+    comments: []
+  - id: x.dictation.xiawuhao
+    added: 2026-10-05
+    lang: es
+    type: listen
+    targets: [e.xiawuhao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xia4 wu3 hao3, hanzi: 下午好, pinyin: xiàwǔ hǎo, meaning: buenas tardes}
+    comments: []
+  - id: x.read.xiawuhao
+    added: 2026-10-05
+    lang: es
+    type: read
+    targets: [e.xiawuhao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 下午好}
+    answer: {hanzi: 下午好, pinyin: xiàwǔ hǎo, meaning: buenas tardes}
+    comments: []
+  - id: x.tones.xiawuhao
+    added: 2026-10-05
+    lang: es
+    type: tones
+    targets: [e.xiawuhao]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 下午好, pinyin: xia wu hao}
+    answer: {typed: '433', hanzi: 下午好, pinyin: xiàwǔ hǎo, meaning: buenas tardes}
+    comments: []
+  - id: x.dictation.wanshanghao
+    added: 2026-10-05
+    lang: es
+    type: listen
+    targets: [e.wanshanghao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wan3 shang5 hao3, hanzi: 晚上好, pinyin: wǎnshang hǎo, meaning: buenas noches (al llegar)}
+    comments: []
+  - id: x.produce.wanshanghao
+    added: 2026-10-05
+    lang: es
+    type: produce
+    targets: [e.wanshanghao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «buenas noches (al llegar)»? Escribe el pinyin.'}
+    answer: {typed: wan3 shang5 hao3, hanzi: 晚上好, pinyin: wǎnshang hǎo, meaning: buenas noches (al llegar)}
+    comments: []
+  - id: x.read.wanshanghao
+    added: 2026-10-05
+    lang: es
+    type: read
+    targets: [e.wanshanghao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 晚上好}
+    answer: {hanzi: 晚上好, pinyin: wǎnshang hǎo, meaning: buenas noches (al llegar)}
+    comments: []
+  - id: x.tones.wanshanghao
+    added: 2026-10-05
+    lang: es
+    type: tones
+    targets: [e.wanshanghao]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 晚上好, pinyin: wan shang hao}
+    answer: {typed: '353', hanzi: 晚上好, pinyin: wǎnshang hǎo, meaning: buenas noches (al llegar)}
+    comments: []
+  - id: x.dictation.haojiubujian
+    added: 2026-10-05
+    lang: es
+    type: listen
+    targets: [e.haojiubujian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hao3 jiu3 bu2 jian4, hanzi: 好久不见, pinyin: hǎojiǔ bú jiàn, meaning: ¡cuánto tiempo (sin vernos)!}
+    comments: []
+  - id: x.read.haojiubujian
+    added: 2026-10-05
+    lang: es
+    type: read
+    targets: [e.haojiubujian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 好久不见}
+    answer: {hanzi: 好久不见, pinyin: hǎojiǔ bú jiàn, meaning: ¡cuánto tiempo (sin vernos)!}
+    comments: []
+  - id: x.tones.haojiubujian
+    added: 2026-10-05
+    lang: es
+    type: tones
+    targets: [e.haojiubujian]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 好久不见, pinyin: hao jiu bu jian}
+    answer: {typed: '3324', hanzi: 好久不见, pinyin: hǎojiǔ bú jiàn, meaning: ¡cuánto tiempo (sin vernos)!}
+    comments: []
+  - id: x.dictation.zuijin
+    added: 2026-10-05
+    lang: es
+    type: listen
+    targets: [w.zuijin]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zui4 jin4, hanzi: 最近, pinyin: zuìjìn, meaning: 'últimamente, estos días'}
+    comments: []
+  - id: x.produce.zuijin
+    added: 2026-10-05
+    lang: es
+    type: produce
+    targets: [w.zuijin]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «últimamente, estos días»? Escribe el pinyin.'}
+    answer: {typed: zui4 jin4, hanzi: 最近, pinyin: zuìjìn, meaning: 'últimamente, estos días'}
+    comments: []
+  - id: x.read.zuijin
+    added: 2026-10-05
+    lang: es
+    type: read
+    targets: [w.zuijin]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 最近}
+    answer: {hanzi: 最近, pinyin: zuìjìn, meaning: 'últimamente, estos días'}
+    comments: []
+  - id: x.dictation.mang
+    added: 2026-10-05
+    lang: es
+    type: listen
+    targets: [w.mang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mang2, hanzi: 忙, pinyin: máng, meaning: 'ocupado, atareado'}
+    comments: []
+  - id: x.produce.mang
+    added: 2026-10-05
+    lang: es
+    type: produce
+    targets: [w.mang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «ocupado, atareado»? Escribe el pinyin.'}
+    answer: {typed: mang2, hanzi: 忙, pinyin: máng, meaning: 'ocupado, atareado'}
+    comments: []
+  - id: x.read.mang
+    added: 2026-10-05
+    lang: es
+    type: read
+    targets: [w.mang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 忙}
+    answer: {hanzi: 忙, pinyin: máng, meaning: 'ocupado, atareado'}
+    comments: []
+  - id: x.dictation.hai.still
+    added: 2026-10-05
+    lang: es
+    type: listen
+    targets: [w.hai.still]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hai2, hanzi: 还, pinyin: hái, meaning: todavía; aún}
+    comments: []
+  - id: x.cloze.hai.still
+    added: 2026-10-05
+    lang: es
+    type: cloze
+    sentence: s.ni-hai-hao-ma
+    gap: w.hai.still
+    targets: [w.hai.still]
+    context: [w.ni, w.hao, w.ma]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Estás bien?»'}
+    answer: {typed: hai2, hanzi: 还, pinyin: hái, meaning: todavía; aún}
+    comments: []
+  - id: x.read.hai.still
+    added: 2026-10-05
+    lang: es
+    type: read
+    targets: [w.hai.still]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 还}
+    answer: {hanzi: 还, pinyin: hái, meaning: todavía; aún}
+    comments: []
+  - id: x.dictation.nihaoma
+    added: 2026-10-05
+    lang: es
+    type: listen
+    targets: [e.nihaoma]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ni3 hao3 ma5, hanzi: 你好吗, pinyin: nǐ hǎo ma, meaning: '¿cómo estás?'}
+    comments: []
+  - id: x.produce.nihaoma
+    added: 2026-10-05
+    lang: es
+    type: produce
+    targets: [e.nihaoma]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¿cómo estás?»? Escribe el pinyin.'}
+    answer: {typed: ni3 hao3 ma5, hanzi: 你好吗, pinyin: nǐ hǎo ma, meaning: '¿cómo estás?'}
+    comments: []
+  - id: x.read.nihaoma
+    added: 2026-10-05
+    lang: es
+    type: read
+    targets: [e.nihaoma]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 你好吗}
+    answer: {hanzi: 你好吗, pinyin: nǐ hǎo ma, meaning: '¿cómo estás?'}
+    comments: []
+  - id: x.tones.nihaoma
+    added: 2026-10-05
+    lang: es
+    type: tones
+    targets: [e.nihaoma]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone, p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 你好吗, pinyin: ni hao ma}
+    answer: {typed: '335', hanzi: 你好吗, pinyin: nǐ hǎo ma, meaning: '¿cómo estás?'}
+    comments: []
+  - id: x.dictation.zuijinzenmeyang
+    added: 2026-10-05
+    lang: es
+    type: listen
+    targets: [e.zuijinzenmeyang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zui4 jin4 zen3 me5 yang4, hanzi: 最近怎么样, pinyin: zuìjìn zěnmeyàng, meaning: '¿qué tal últimamente?'}
+    comments: []
+  - id: x.produce.zuijinzenmeyang
+    added: 2026-10-05
+    lang: es
+    type: produce
+    targets: [e.zuijinzenmeyang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¿qué tal últimamente?»? Escribe el pinyin.'}
+    answer: {typed: zui4 jin4 zen3 me5 yang4, hanzi: 最近怎么样, pinyin: zuìjìn zěnmeyàng, meaning: '¿qué tal últimamente?'}
+    comments: []
+  - id: x.read.zuijinzenmeyang
+    added: 2026-10-05
+    lang: es
+    type: read
+    targets: [e.zuijinzenmeyang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 最近怎么样}
+    answer: {hanzi: 最近怎么样, pinyin: zuìjìn zěnmeyàng, meaning: '¿qué tal últimamente?'}
+    comments: []
+  - id: x.tones.zuijinzenmeyang
+    added: 2026-10-05
+    lang: es
+    type: tones
+    targets: [e.zuijinzenmeyang]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 最近怎么样, pinyin: zui jin zen me yang}
+    answer: {typed: '44354', hanzi: 最近怎么样, pinyin: zuìjìn zěnmeyàng, meaning: '¿qué tal últimamente?'}
+    comments: []
+  - id: x.dictation.nihaihaoma
+    added: 2026-10-05
+    lang: es
+    type: listen
+    targets: [e.nihaihaoma]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ni3 hai2 hao3 ma5, hanzi: 你还好吗, pinyin: nǐ hái hǎo ma, meaning: '¿estás bien?'}
+    comments: []
+  - id: x.read.nihaihaoma
+    added: 2026-10-05
+    lang: es
+    type: read
+    targets: [e.nihaihaoma]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 你还好吗}
+    answer: {hanzi: 你还好吗, pinyin: nǐ hái hǎo ma, meaning: '¿estás bien?'}
+    comments: []
+  - id: x.tones.nihaihaoma
+    added: 2026-10-05
+    lang: es
+    type: tones
+    targets: [e.nihaihaoma]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 你还好吗, pinyin: ni hai hao ma}
+    answer: {typed: '3235', hanzi: 你还好吗, pinyin: nǐ hái hǎo ma, meaning: '¿estás bien?'}
+    comments: []
+  - id: x.dictation.chifanlema
+    added: 2026-10-05
+    lang: es
+    type: listen
+    targets: [e.chifanlema]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chi1 fan4 le5 ma5, hanzi: 吃饭了吗, pinyin: chīfàn le ma, meaning: '¿has comido? (como saludo)'}
+    comments: []
+  - id: x.read.chifanlema
+    added: 2026-10-05
+    lang: es
+    type: read
+    targets: [e.chifanlema]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 吃饭了吗}
+    answer: {hanzi: 吃饭了吗, pinyin: chīfàn le ma, meaning: '¿has comido? (como saludo)'}
+    comments: []
+  - id: x.tones.chifanlema
+    added: 2026-10-05
+    lang: es
+    type: tones
+    targets: [e.chifanlema]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 吃饭了吗, pinyin: chi fan le ma}
+    answer: {typed: '1455', hanzi: 吃饭了吗, pinyin: chīfàn le ma, meaning: '¿has comido? (como saludo)'}
+    comments: []
+  - id: x.dictation.zuijinmangma
+    added: 2026-10-05
+    lang: es
+    type: listen
+    targets: [e.zuijinmangma]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zui4 jin4 mang2 ma5, hanzi: 最近忙吗, pinyin: zuìjìn máng ma, meaning: '¿mucho lío últimamente?'}
+    comments: []
+  - id: x.produce.zuijinmangma
+    added: 2026-10-05
+    lang: es
+    type: produce
+    targets: [e.zuijinmangma]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¿mucho lío últimamente?»? Escribe el pinyin.'}
+    answer: {typed: zui4 jin4 mang2 ma5, hanzi: 最近忙吗, pinyin: zuìjìn máng ma, meaning: '¿mucho lío últimamente?'}
+    comments: []
+  - id: x.read.zuijinmangma
+    added: 2026-10-05
+    lang: es
+    type: read
+    targets: [e.zuijinmangma]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 最近忙吗}
+    answer: {hanzi: 最近忙吗, pinyin: zuìjìn máng ma, meaning: '¿mucho lío últimamente?'}
+    comments: []
+  - id: x.tones.zuijinmangma
+    added: 2026-10-05
+    lang: es
+    type: tones
+    targets: [e.zuijinmangma]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 最近忙吗, pinyin: zui jin mang ma}
+    answer: {typed: '4425', hanzi: 最近忙吗, pinyin: zuìjìn máng ma, meaning: '¿mucho lío últimamente?'}
+    comments: []
+  - id: x.dictation.zhegezenmeyang
+    added: 2026-10-05
+    lang: es
+    type: listen
+    targets: [e.zhegezenmeyang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhe4 ge5 zen3 me5 yang4, hanzi: 这个怎么样, pinyin: zhège zěnmeyàng, meaning: '¿qué tal este?, ¿qué te parece?'}
+    comments: []
+  - id: x.read.zhegezenmeyang
+    added: 2026-10-05
+    lang: es
+    type: read
+    targets: [e.zhegezenmeyang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 这个怎么样}
+    answer: {hanzi: 这个怎么样, pinyin: zhège zěnmeyàng, meaning: '¿qué tal este?, ¿qué te parece?'}
+    comments: []
+  - id: x.tones.zhegezenmeyang
+    added: 2026-10-05
+    lang: es
+    type: tones
+    targets: [e.zhegezenmeyang]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 这个怎么样, pinyin: zhe ge zen me yang}
+    answer: {typed: '45354', hanzi: 这个怎么样, pinyin: zhège zěnmeyàng, meaning: '¿qué tal este?, ¿qué te parece?'}
+    comments: []
+  - id: x.listen.zuijin-zenmeyang
+    added: 2026-10-05
+    lang: es
+    type: listen
+    sentence: s.zuijin-zenmeyang
+    targets: [s.zuijin-zenmeyang]
+    context: [w.zuijin, w.zenmeyang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Qué tal últimamente?'}
+    comments: []
+  - id: x.produce.zuijin-zenmeyang
+    added: 2026-10-05
+    lang: es
+    type: produce
+    sentence: s.zuijin-zenmeyang
+    targets: [s.zuijin-zenmeyang]
+    context: [w.zuijin, w.zenmeyang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué tal últimamente?»'}
+    answer: {meaning: '¿Qué tal últimamente?'}
+    comments: []
+  - id: x.listen.haojiu-bujian-zuijin-zenmeyang
+    added: 2026-10-05
+    lang: es
+    type: listen
+    sentence: s.haojiu-bujian-zuijin-zenmeyang
+    targets: [s.haojiu-bujian-zuijin-zenmeyang]
+    context: [e.haojiubujian, w.zuijin, w.zenmeyang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Cuánto tiempo, ¿qué tal últimamente?'}
+    comments: []
+  - id: x.produce.haojiu-bujian-zuijin-zenmeyang
+    added: 2026-10-05
+    lang: es
+    type: produce
+    sentence: s.haojiu-bujian-zuijin-zenmeyang
+    targets: [s.haojiu-bujian-zuijin-zenmeyang]
+    context: [e.haojiubujian, w.zuijin, w.zenmeyang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Cuánto tiempo, ¿qué tal últimamente?»'}
+    answer: {meaning: 'Cuánto tiempo, ¿qué tal últimamente?'}
+    comments: []
+  - id: x.listen.zuijin-mang-ma
+    added: 2026-10-05
+    lang: es
+    type: listen
+    sentence: s.zuijin-mang-ma
+    targets: [s.zuijin-mang-ma]
+    context: [w.zuijin, w.mang, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Mucho lío últimamente?'}
+    comments: []
+  - id: x.produce.zuijin-mang-ma
+    added: 2026-10-05
+    lang: es
+    type: produce
+    sentence: s.zuijin-mang-ma
+    targets: [s.zuijin-mang-ma]
+    context: [w.zuijin, w.mang, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Mucho lío últimamente?»'}
+    answer: {meaning: '¿Mucho lío últimamente?'}
+    comments: []
+  - id: x.listen.ni-hai-hao-ma
+    added: 2026-10-05
+    lang: es
+    type: listen
+    sentence: s.ni-hai-hao-ma
+    targets: [s.ni-hai-hao-ma]
+    context: [w.ni, w.hai.still, w.hao, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Estás bien?'}
+    comments: []
+  - id: x.produce.ni-hai-hao-ma
+    added: 2026-10-05
+    lang: es
+    type: produce
+    sentence: s.ni-hai-hao-ma
+    targets: [s.ni-hai-hao-ma]
+    context: [w.ni, w.hai.still, w.hao, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Estás bien?»'}
+    answer: {meaning: '¿Estás bien?'}
+    comments: []
+  - id: x.listen.chi-le-ni-ne
+    added: 2026-10-05
+    lang: es
+    type: listen
+    sentence: s.chi-le-ni-ne
+    targets: [s.chi-le-ni-ne]
+    context: [w.chi, w.le, w.ni, w.ne]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Sí, ya he comido, ¿y tú?'}
+    comments: []
+  - id: x.produce.chi-le-ni-ne
+    added: 2026-10-05
+    lang: es
+    type: produce
+    sentence: s.chi-le-ni-ne
+    targets: [s.chi-le-ni-ne]
+    context: [w.chi, w.le, w.ni, w.ne]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Sí, ya he comido, ¿y tú?»'}
+    answer: {meaning: 'Sí, ya he comido, ¿y tú?'}
+    comments: []
+  - id: x.listen.zhege-zenmeyang
+    added: 2026-10-05
+    lang: es
+    type: listen
+    sentence: s.zhege-zenmeyang
+    targets: [s.zhege-zenmeyang]
+    context: [w.zhe, w.ge, w.zenmeyang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Qué tal este?'}
+    comments: []
+  - id: x.produce.zhege-zenmeyang
+    added: 2026-10-05
+    lang: es
+    type: produce
+    sentence: s.zhege-zenmeyang
+    targets: [s.zhege-zenmeyang]
+    context: [w.zhe, w.ge, w.zenmeyang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué tal este?»'}
+    answer: {meaning: '¿Qué tal este?'}
+    comments: []
+  - id: x.listen.wo-zuijin-hen-mang
+    added: 2026-10-05
+    lang: es
+    type: listen
+    sentence: s.wo-zuijin-hen-mang
+    targets: [s.wo-zuijin-hen-mang]
+    context: [w.wo, w.zuijin, w.hen, w.mang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Últimamente estoy muy liado.}
+    comments: []
+  - id: x.produce.wo-zuijin-hen-mang
+    added: 2026-10-05
+    lang: es
+    type: produce
+    sentence: s.wo-zuijin-hen-mang
+    targets: [s.wo-zuijin-hen-mang]
+    context: [w.wo, w.zuijin, w.hen, w.mang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Últimamente estoy muy liado.»'}
+    answer: {meaning: Últimamente estoy muy liado.}
+    comments: []
+  - id: x.listen.zaoshang-hao-laoshi
+    added: 2026-10-05
+    lang: es
+    type: listen
+    sentence: s.zaoshang-hao-laoshi
+    targets: [s.zaoshang-hao-laoshi]
+    context: [e.zaoshanghao, w.laoshi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Buenos días, profe!'}
+    comments: []
+  - id: x.produce.zaoshang-hao-laoshi
+    added: 2026-10-05
+    lang: es
+    type: produce
+    sentence: s.zaoshang-hao-laoshi
+    targets: [s.zaoshang-hao-laoshi]
+    context: [e.zaoshanghao, w.laoshi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Buenos días, profe!»'}
+    answer: {meaning: '¡Buenos días, profe!'}
+    comments: []
+  - id: x.situation.zhege-zenmeyang
+    added: 2026-10-05
+    accept_pinyin_mismatch: '个 y 么 en tono neutro, como en la entrada 这个怎么样'
+    lang: es
+    type: speak
+    targets: [e.zhegezenmeyang]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. En una tienda, enseñas una camiseta a un amigo y quieres su opinión. ¿Qué le preguntas?'}
+    answer: {hanzi: '这个怎么样？', pinyin: 'zhège zěnmeyàng', meaning: '¿qué tal este?'}
+    comments: []
+  - id: x.situation.huilaile
+    added: 2026-10-05
+    accept_pinyin_mismatch: '来 y 了 en tono neutro en el habla'
+    lang: es
+    type: speak
+    targets: [w.huilai]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Tu compañero de piso entra por la puerta al volver del trabajo. Salúdale como lo haría un chino.'}
+    answer: {hanzi: '你回来了！', pinyin: 'nǐ huílai le', meaning: '¡ya has vuelto! (el saludo es notar que llega)'}
+    comments: []
+  - id: x.situation.chile-nine
+    added: 2026-10-05
+    lang: es
+    type: speak
+    targets: [e.chifanlema]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Una vecina te saluda con 吃饭了吗？ y ya has comido. ¿Qué contestas?'}
+    answer: {hanzi: '吃了，你呢？', pinyin: 'chī le nǐ ne', meaning: 'sí, ¿y tú? (y se sigue andando: es un saludo)'}
+    comments: []
+  - id: x.situation.haojiubujian
+    added: 2026-10-05
+    accept_pinyin_mismatch: '不 se lee bú delante de cuarto tono (见 jiàn)'
+    lang: es
+    type: speak
+    targets: [e.haojiubujian]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Te encuentras a un amigo al que no ves desde hace meses. ¿Qué le dices?'}
+    answer: {hanzi: '好久不见！最近怎么样？', pinyin: 'hǎojiǔ bú jiàn zuìjìn zěnmeyàng', meaning: '¡cuánto tiempo! ¿qué tal últimamente?'}
+    comments: []
+  - id: x.situation.nihaihaoma
+    added: 2026-10-05
+    lang: es
+    type: speak
+    targets: [e.nihaihaoma]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Tu amigo se acaba de caer de la bici. ¿Qué le preguntas?'}
+    answer: {hanzi: '你还好吗？', pinyin: 'nǐ hái hǎo ma', meaning: '¿estás bien?'}
+    comments: []
+  - id: x.situation.dajiahao
+    added: 2026-10-05
+    lang: es
+    type: speak
+    targets: [e.dajiahao]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Vas a hablar delante de toda la clase. ¿Cómo empiezas?'}
+    answer: {hanzi: '大家好！', pinyin: 'dàjiā hǎo', meaning: '¡hola a todos!'}
+    comments: []
+  - id: x.situation.zaijian
+    added: 2026-10-05
+    lang: es
+    type: speak
+    targets: [w.zaijian]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Termina la clase y te vas. ¿Qué le dices a la profesora?'}
+    answer: {hanzi: '老师再见！', pinyin: 'lǎoshī zàijiàn', meaning: '¡adiós, profe!'}
+    comments: []
+  - id: x.situation.zaoshanghao
+    added: 2026-10-05
+    accept_pinyin_mismatch: '上 en tono neutro en el habla, como en la entrada 早上'
+    lang: es
+    type: speak
+    targets: [e.zaoshanghao]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Llegas a clase a las ocho de la mañana. ¿Cómo saludas a la profesora?'}
+    answer: {hanzi: '早上好，老师！', pinyin: 'zǎoshang hǎo lǎoshī', meaning: '¡buenos días, profe! (entre amigos, solo 早！)'}
+    comments: []
+  - id: x.produce.zaoshanghao
+    added: 2026-10-05
+    lang: es
+    type: produce
+    targets: [e.zaoshanghao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «buenos días»? Escribe el pinyin.'}
+    answer: {typed: zao3 shang5 hao3, hanzi: 早上好, pinyin: zǎoshang hǎo, meaning: buenos días}
+    comments: []
+  - id: x.produce.haojiubujian
+    added: 2026-10-05
+    lang: es
+    type: produce
+    targets: [e.haojiubujian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¡cuánto tiempo (sin vernos)!»? Escribe el pinyin.'}
+    answer: {typed: hao3 jiu3 bu2 jian4, hanzi: 好久不见, pinyin: hǎojiǔ bú jiàn, meaning: ¡cuánto tiempo (sin vernos)!}
+    comments: []
+  - id: x.produce.nihaihaoma
+    added: 2026-10-05
+    lang: es
+    type: produce
+    targets: [e.nihaihaoma]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¿estás bien?»? Escribe el pinyin.'}
+    answer: {typed: ni3 hai2 hao3 ma5, hanzi: 你还好吗, pinyin: nǐ hái hǎo ma, meaning: '¿estás bien?'}
+    comments: []
+  - id: x.produce.zhegezenmeyang
+    added: 2026-10-05
+    lang: es
+    type: produce
+    targets: [e.zhegezenmeyang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¿qué tal este?, ¿qué te parece?»? Escribe el pinyin.'}
+    answer: {typed: zhe4 ge5 zen3 me5 yang4, hanzi: 这个怎么样, pinyin: zhège zěnmeyàng, meaning: '¿qué tal este?, ¿qué te parece?'}
+    comments: []
+  - id: x.listen.wo-zaoshang-he-cha
+    added: 2026-10-05
+    lang: es
+    type: listen
+    sentence: s.wo-zaoshang-he-cha
+    targets: [s.wo-zaoshang-he-cha]
+    context: [w.wo, w.zaoshang, w.he.drink, w.cha]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Por la mañana tomo té.}
+    comments: []
+  - id: x.produce.wo-zaoshang-he-cha
+    added: 2026-10-05
+    lang: es
+    type: produce
+    sentence: s.wo-zaoshang-he-cha
+    targets: [s.wo-zaoshang-he-cha]
+    context: [w.wo, w.zaoshang, w.he.drink, w.cha]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Por la mañana tomo té.»'}
+    answer: {meaning: Por la mañana tomo té.}
     comments: []
