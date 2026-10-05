@@ -376,6 +376,7 @@ Todo lo que se puede decidir con datos se decide con atributos y lo comprueba `c
 | Solo mandarín estándar | `check`: error si una forma con erhua (哪儿) no está descartada o si una frase usa algo descartado (`standard_rules`); prueba en `tests/` |
 | Lo que suena igual, contrastado | `check`: aviso si dos palabras del mazo suenan igual sin tonos y no comparten grupo; los grupos `soundalike` y `homophone` exigen tarjeta de contraste con audio; prueba en `tests/` |
 | Lo que se confunde aparece junto, y rotulado | código (`partner_example`): si el objetivo tiene pareja en un grupo de contraste o de serie, el reverso trae una frase de la pareja (de nivel no superior) en su apartado «Para no confundirlo con…», fuera de los ejemplos; prueba en `tests/` |
+| Lo difícil de recordar lleva su imagen | código (`needs_memory`): `check` avisa de todo hanzi de origen discutido o usado solo por su sonido sin `memory` en `3-data/hanzi.yaml`; prueba en `tests/` |
 | Un ID repetido para todo | código: `check` lo da como único error y `scaffold` no escribe nada hasta que se corrija (`duplicate_ids`); prueba en `tests/` |
 | La palabra de verdad de cada componente | `check`: aviso si un componente no lleva `real_word`; error si le falta la explicación o el pinyin; prueba en `tests/` |
 | Un origen discutido no se cuenta | código (`origin_disputed`): ni en el reverso ni en la exportación (`originDisputed`); prueba en `tests/` |

@@ -691,6 +691,14 @@ class Batch005(unittest.TestCase):
         _, warnings = anki.validate(self.entries, self.sentences, self.exercises, require_audio=False)
         self.assertFalse([w for w in warnings if w.startswith("x.syllable.") and "redundante" in w])
 
+    def test_hard_hanzi_have_an_image_to_remember_them(self):
+        notes, _ = anki.load_hanzi_notes()
+        missing = [ch for ch, n in notes.items() if anki.needs_memory(n) and not n.get("memory")]
+        self.assertEqual(missing, [])
+        self.assertTrue(anki.needs_memory({"confidence": "medium", "origin": {"es": "x"}}))
+        self.assertTrue(anki.needs_memory({"confidence": "high", "origin": {"es": "«Venir» es un préstamo."}}))
+        self.assertFalse(anki.needs_memory({"confidence": "high", "origin": {"es": "Pictograma: una puerta."}}))
+
     def test_duplicate_ids_stop_check_and_scaffold(self):
         e = dict(self.eby["w.chi"])
         errors, warnings = anki.validate(self.entries + [e], self.sentences, self.exercises, require_audio=False)

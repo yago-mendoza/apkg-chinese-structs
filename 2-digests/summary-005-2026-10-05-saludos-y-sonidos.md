@@ -146,3 +146,13 @@ Salen 6: las tres de 哪里哪里 y las tres preguntas de «¿cómo suena?». Au
 **Tu método.** Estudiando en Anki y en la web has encontrado fallos de verdad: los de este lote salen de ahí, y es la mejor fuente de mejoras. Que en estos días solo te salieran tarjetas de leer hanzi era cierto: lo he comprobado en tu Anki, y las próximas 50 nuevas eran casi todas de lectura. Cada palabra empieza por leerse, y las de oír y decir iban dos temas por detrás. Ahora van un tema por detrás: cada día mezcla leer y oír, y decir llega a los pocos días.
 
 **Consejo.** Las sílabas para oír y elegir funcionan si las haces con audio y sin mirar el pinyin antes de contestar. Cuando falles una, escucha también la otra del par: es la diferencia la que entrena el oído.
+
+## Cambios posteriores
+
+### 2026-10-05 · Subido, el nombre fuera del historial, la web y las mnemotecnias
+
+- Subido a Anki tras sincronizar tu móvil: tus 52 tarjetas estudiadas que siguen en el mazo, sin un solo cambio en su programación. Salen las 6 que pediste quitar.
+- El historial de GitHub se reescribió desde el 2 de octubre para quitar el nombre de la fuente local que aparecía en tu respuesta al review 004.
+- Cuaderno web: las frases se dibujan con su propio corte en palabras (东西 es un solo enlace) y el análisis del carácter tiene su rótulo, «El carácter».
+- **Cada hanzi difícil, con su imagen para recordarlo**: norma nueva, vigilada por `check`. Se escribieron 44 imágenes, para los de origen discutido o usados solo por su sonido (来, 我, 也, 就, 了, 的, 么, los números…).
+

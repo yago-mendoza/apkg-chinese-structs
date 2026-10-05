@@ -1983,6 +1983,9 @@ def validate(entries, sentences, exercises, require_audio=True):
                 errors.append(f"hanzi.yaml: {ch} sin glosa u origen en español")
             if n.get("memory") and not (n["memory"] or {}).get("es"):
                 errors.append(f"hanzi.yaml: {ch} lleva `memory` sin texto en español")
+            if needs_memory(n) and not n.get("memory"):
+                warnings.append(f"hanzi.yaml: {ch} es difícil de recordar (origen discutido o usado por su sonido) y no "
+                                "tiene imagen para recordarlo (`memory`)")
             if "—" in json.dumps(n, ensure_ascii=False):
                 errors.append(f"hanzi.yaml: {ch} lleva una raya (—); usar coma, dos puntos o paréntesis")
     if require_audio:
@@ -2552,6 +2555,15 @@ def sound_and_senses(t, entries, eby, sby):
             other_tone.append(f"{hz} {e.get('pinyin', '')}: {meaning}")
             seen.add(hz)
     return (same_tone + other_tone)[:6], senses[:4]
+
+
+HARD_ORIGIN = re.compile(r"prestad|préstamo|por (?:el|su) sonido|solo sustituye|no hay historia|Sin historia")
+
+
+def needs_memory(note):
+    """Un hanzi cuyo porqué no ayuda a recordarlo (YAGO, 2026-10-05: «importantísimo») lleva su imagen para recordarlo:
+    si el origen es discutido (no se cuenta) o si se usa solo por su sonido (el dibujo no dice lo que significa)."""
+    return origin_disputed(note) or bool(HARD_ORIGIN.search((note.get("origin") or {}).get("es", "")))
 
 
 def origin_disputed(note):
