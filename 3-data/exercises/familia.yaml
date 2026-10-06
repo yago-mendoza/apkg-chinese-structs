@@ -488,3 +488,60 @@ exercises:
     prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
     answer: {typed: '41', hanzi: 爸妈, pinyin: bàmā, meaning: 'los padres, papá y mamá (coloquial)'}
     comments: []
+  - id: x.charsound.er
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.erzi, w.nver]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 儿}
+    answer: {typed: er2, hanzi: 儿, pinyin: ér, meaning: 'Sale en 儿子 érzi «hijo», 女儿 nǚ''ér «hija».'}
+    comments: []
+  - id: x.charsound.ma
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.mama, w.bama]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 妈}
+    answer: {typed: ma1, hanzi: 妈, pinyin: mā, meaning: 'Sale en 妈妈 māma «mamá», 爸妈 bàmā «los padres, papá y mamá (coloquial)».'}
+    comments: []
+  - id: x.charsound.zi
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.erzi, w.haizi, w.kuaizi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 子}
+    answer: {typed: zi5, hanzi: 子, pinyin: zi, meaning: 'Sale en 儿子 érzi «hijo», 孩子 háizi «niño, niña; hijo, hija», 筷子 kuàizi
+        «palillos».'}
+    comments: []
+  - id: x.charsound.hai
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.haizi, w.xiaohai]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 孩}
+    answer: {typed: hai2, hanzi: 孩, pinyin: hái, meaning: 'Sale en 孩子 háizi «niño, niña; hijo, hija», 小孩 xiǎohái «niño pequeño,
+        crío».'}
+    comments: []
+  - id: x.charsound.xiao
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.xiaohai, w.daxiao, w.xiaomao]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 小}
+    answer: {typed: xiao3, hanzi: 小, pinyin: xiǎo, meaning: 'Sale en 小孩 xiǎohái «niño pequeño, crío», 大小 dàxiǎo «tamaño», 小猫
+        xiǎomāo «gatito».'}
+    comments: []
+  - id: x.charsound.ba
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.baba, w.bama]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 爸}
+    answer: {typed: ba4, hanzi: 爸, pinyin: bà, meaning: 'Sale en 爸爸 bàba «papá», 爸妈 bàmā «los padres, papá y mamá (coloquial)».'}
+    comments: []

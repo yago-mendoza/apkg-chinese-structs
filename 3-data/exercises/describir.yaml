@@ -1110,3 +1110,13 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «No está gordo: es muy delgado.»'}
     answer: {meaning: 'No está gordo: es muy delgado.'}
     comments: []
+  - id: x.charsound.ming-2
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.congming, w.mingtian]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 明}
+    answer: {typed: ming2, hanzi: 明, pinyin: míng, meaning: 'Sale en 聪明 cōngming «listo, inteligente», 明天 míngtiān «mañana (el
+        día)».'}
+    comments: []

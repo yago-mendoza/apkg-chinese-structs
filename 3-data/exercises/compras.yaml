@@ -1829,3 +1829,40 @@ exercises:
     prompt: {text: '¿Cuál es zài, «estar en (un lugar)»?'}
     answer: {hanzi: 在, pinyin: zài, meaning: estar en (un lugar)}
     comments: []
+  - id: x.charsound.shao
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.duoshao, e.duoshaoqian]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 少}
+    answer: {typed: shao3, hanzi: 少, pinyin: shǎo, meaning: 'Sale en 多少 duōshao «cuánto, cuántos», 多少钱 duōshao qián «¿cuánto
+        cuesta?».'}
+    comments: []
+  - id: x.charsound.ji
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.jipiao, w.shouji, w.feiji]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 机}
+    answer: {typed: ji1, hanzi: 机, pinyin: jī, meaning: 'Sale en 机票 jīpiào «billete de avión», 手机 shǒujī «móvil», 飞机 fēijī «avión».'}
+    comments: []
+  - id: x.charsound.guo
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.shuiguo, w.ruguo]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 果}
+    answer: {typed: guo3, hanzi: 果, pinyin: guǒ, meaning: 'Sale en 水果 shuǐguǒ «fruta», 如果 rúguǒ «si (condición)».'}
+    comments: []
+  - id: x.charsound.li
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.nali, w.zheli]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 里}
+    answer: {typed: li3, hanzi: 里, pinyin: lǐ, meaning: 'Sale en 哪里 nǎlǐ «dónde», 这里 zhèlǐ «aquí».'}
+    comments: []

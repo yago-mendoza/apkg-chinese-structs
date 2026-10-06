@@ -1450,3 +1450,101 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Por la mañana tomo té.»'}
     answer: {meaning: Por la mañana tomo té.}
     comments: []
+  - id: x.charsound.shang
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.zaoshang, e.zaoshanghao, e.wanshanghao, w.shangwu, w.wanshang]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 上}
+    answer: {typed: shang4, hanzi: 上, pinyin: shàng, meaning: 'Sale en 早上 zǎoshang «la mañana (temprano)», 早上好 zǎoshang hǎo
+        «buenos días», 晚上好 wǎnshang hǎo «buenas noches (al llegar)», 上午 shàngwǔ «por la mañana (antes de mediodía)».'}
+    comments: []
+  - id: x.charsound.xia
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [e.xiawuhao, w.xiawu, w.xiayu]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 下}
+    answer: {typed: xia4, hanzi: 下, pinyin: xià, meaning: 'Sale en 下午好 xiàwǔ hǎo «buenas tardes», 下午 xiàwǔ «por la tarde», 下雨
+        xiàyǔ «llover».'}
+    comments: []
+  - id: x.charsound.me
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.zenmeyang, e.zuijinzenmeyang, e.zhegezenmeyang, w.shenme, w.zenme, w.weishenme, w.zheme]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 么}
+    answer: {typed: me5, hanzi: 么, pinyin: me, meaning: 'Sale en 怎么样 zěnmeyàng «¿qué tal?; ¿cómo?», 最近怎么样 zuìjìn zěnmeyàng «¿qué
+        tal últimamente?», 这个怎么样 zhège zěnmeyàng «¿qué tal este?, ¿qué te parece?», 什么 shénme «qué».'}
+    comments: []
+  - id: x.charsound.men
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [e.nimenhao, w.women, w.nimen, w.tamen]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 们}
+    answer: {typed: men5, hanzi: 们, pinyin: men, meaning: 'Sale en 你们好 nǐmen hǎo «hola (a un grupo)», 我们 wǒmen «nosotros», 你们
+        nǐmen «vosotros», 他们 tāmen «ellos».'}
+    comments: []
+  - id: x.charsound.hui
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.huilai, w.huijia]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 回}
+    answer: {typed: hui2, hanzi: 回, pinyin: huí, meaning: 'Sale en 回来 huílai «volver (aquí)», 回家 huíjiā «volver a casa».'}
+    comments: []
+  - id: x.charsound.zen
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.zenmeyang, e.zuijinzenmeyang, e.zhegezenmeyang, w.zenme]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 怎}
+    answer: {typed: zen3, hanzi: 怎, pinyin: zěn, meaning: 'Sale en 怎么样 zěnmeyàng «¿qué tal?; ¿cómo?», 最近怎么样 zuìjìn zěnmeyàng
+        «¿qué tal últimamente?», 这个怎么样 zhège zěnmeyàng «¿qué tal este?, ¿qué te parece?», 怎么 zěnme «cómo».'}
+    comments: []
+  - id: x.charsound.yang
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.zenmeyang, e.zuijinzenmeyang, e.zhegezenmeyang]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 样}
+    answer: {typed: yang4, hanzi: 样, pinyin: yàng, meaning: 'Sale en 怎么样 zěnmeyàng «¿qué tal?; ¿cómo?», 最近怎么样 zuìjìn zěnmeyàng
+        «¿qué tal últimamente?», 这个怎么样 zhège zěnmeyàng «¿qué tal este?, ¿qué te parece?».'}
+    comments: []
+  - id: x.charsound.huan
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.huanying, w.xihuan]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 欢}
+    answer: {typed: huan1, hanzi: 欢, pinyin: huān, meaning: 'Sale en 欢迎 huānyíng «bienvenido; dar la bienvenida», 喜欢 xǐhuan
+        «gustar».'}
+    comments: []
+  - id: x.charsound.lao
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [e.laoshihao, w.laoshi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 老}
+    answer: {typed: lao3, hanzi: 老, pinyin: lǎo, meaning: 'Sale en 老师好 lǎoshī hǎo «hola, profe», 老师 lǎoshī «profesor, profesora».'}
+    comments: []
+  - id: x.charsound.jin
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.zuijin, e.zuijinzenmeyang, e.zuijinmangma]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 近}
+    answer: {typed: jin4, hanzi: 近, pinyin: jìn, meaning: 'Sale en 最近 zuìjìn «últimamente, estos días», 最近怎么样 zuìjìn zěnmeyàng
+        «¿qué tal últimamente?», 最近忙吗 zuìjìn máng ma «¿mucho lío últimamente?».'}
+    comments: []

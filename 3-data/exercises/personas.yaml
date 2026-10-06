@@ -651,3 +651,22 @@ exercises:
     prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
     answer: {typed: '41', hanzi: 大家, pinyin: dàjiā, meaning: 'todos, todo el mundo'}
     comments: []
+  - id: x.charsound.xue
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.xuesheng, w.xuexi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 学}
+    answer: {typed: xue2, hanzi: 学, pinyin: xué, meaning: 'Sale en 学生 xuéshēng «estudiante», 学习 xuéxí «estudiar, aprender».'}
+    comments: []
+  - id: x.charsound.gong
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.gongchengshi, w.gongzuo]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 工}
+    answer: {typed: gong1, hanzi: 工, pinyin: gōng, meaning: 'Sale en 工程师 gōngchéngshī «ingeniero, ingeniera», 工作 gōngzuò «trabajo;
+        trabajar».'}
+    comments: []

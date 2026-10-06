@@ -1,6 +1,6 @@
 {
  "schemaVersion": 2,
- "exportedAt": "2026-10-05",
+ "exportedAt": "2026-10-06",
  "source": "https://github.com/yago-mendoza/apkg-chinese-structs",
  "license": "CC BY 4.0",
  "attribution": "Yago Mendoza, «apkg-chinese-structs», https://github.com/yago-mendoza/apkg-chinese-structs, CC BY 4.0",
@@ -12,7 +12,7 @@
  "counts": {
   "entries": 325,
   "sentences": 198,
-  "cards": 1331
+  "cards": 1365
  },
  "themes": [
   {
@@ -23406,6 +23406,271 @@
    "notes": ""
   },
   {
+   "id": "x.charsound.shang",
+   "type": "charsound",
+   "theme": "saludos",
+   "level": 1,
+   "targets": [
+    "w.zaoshang",
+    "e.zaoshanghao",
+    "e.wanshanghao",
+    "w.shangwu",
+    "w.wanshang"
+   ],
+   "context": [],
+   "examples": [
+    "s.wo-zaoshang-he-cha",
+    "s.zaoshang-hao-laoshi"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "shang4",
+    "hanzi": "上"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">上</div>",
+   "back": "<div class=\"hanzi\">上</div><div class=\"pinyin\">shàng</div><div class=\"ipa\">[ʂɑŋ˥˩]</div><div class=\"meaning\">Sale en 早上 zǎoshang «la mañana (temprano)», 早上好 zǎoshang hǎo «buenos días», 晚上好 wǎnshang hǎo «buenas noches (al llegar)», 上午 shàngwǔ «por la mañana (antes de mediodía)».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">早上</span> zǎoshang · la mañana (temprano)<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0f99e6bac45e21c4.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">早上好</span> zǎoshang hǎo · buenos días<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_d05846270543e2cb.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">晚上好</span> wǎnshang hǎo · buenas noches (al llegar)<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_576ca89dffae61ab.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">上午</span> shàngwǔ · por la mañana (antes de mediodía)<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1ed4768e8926b873.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">晚上</span> wǎnshang · por la noche<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_939a3a12af529021.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">上</b><span class=\"ch-gl\">arriba; subir</span><span class=\"ch-kind\">ideograma</span><span class=\"ch-why\">Una raya corta por encima de una línea de base: «arriba». 下 es el mismo signo al revés.</span><span class=\"ch-also\">También en 早上、早上好、晚上好</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.xia",
+   "type": "charsound",
+   "theme": "saludos",
+   "level": 1,
+   "targets": [
+    "e.xiawuhao",
+    "w.xiawu",
+    "w.xiayu"
+   ],
+   "context": [],
+   "examples": [
+    "s.xiawu-qu-shangdian",
+    "s.mingtian-hui-xiayu"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "xia4",
+    "hanzi": "下"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">下</div>",
+   "back": "<div class=\"hanzi\">下</div><div class=\"pinyin\">xià</div><div class=\"ipa\">[ɕja˥˩]</div><div class=\"meaning\">Sale en 下午好 xiàwǔ hǎo «buenas tardes», 下午 xiàwǔ «por la tarde», 下雨 xiàyǔ «llover».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">下午好</span> xiàwǔ hǎo · buenas tardes<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_476922da31b9a713.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">下午</span> xiàwǔ · por la tarde<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_bad8f936a4fe25a5.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">下雨</span> xiàyǔ · llover<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_81cb68b6a5d7418f.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">下</b><span class=\"ch-gl\">abajo; bajar</span><span class=\"ch-kind\">ideograma</span><span class=\"ch-why\">Una raya corta por debajo de una línea de base: «abajo». 上 es el mismo signo al revés.</span><span class=\"ch-also\">También en 下午好、下午、下雨</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.me",
+   "type": "charsound",
+   "theme": "saludos",
+   "level": 2,
+   "targets": [
+    "w.zenmeyang",
+    "e.zuijinzenmeyang",
+    "e.zhegezenmeyang",
+    "w.shenme",
+    "w.zenme",
+    "w.weishenme",
+    "w.zheme"
+   ],
+   "context": [],
+   "examples": [
+    "s.ni-weishenme-bu-qu",
+    "s.na-shi-shenme-shu"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "me5",
+    "hanzi": "么"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">么</div>",
+   "back": "<div class=\"hanzi\">么</div><div class=\"pinyin\">me</div><div class=\"ipa\">[mɤ]</div><div class=\"meaning\">Sale en 怎么样 zěnmeyàng «¿qué tal?; ¿cómo?», 最近怎么样 zuìjìn zěnmeyàng «¿qué tal últimamente?», 这个怎么样 zhège zěnmeyàng «¿qué tal este?, ¿qué te parece?», 什么 shénme «qué».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">怎么样</span> zěnmeyàng · ¿qué tal?; ¿cómo?<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e7605500ec1bdc34.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">最近怎么样</span> zuìjìn zěnmeyàng · ¿qué tal últimamente?<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_9b5432eeb16787e9.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">这个怎么样</span> zhège zěnmeyàng · ¿qué tal este?, ¿qué te parece?<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_276fccf04dac0841.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">什么</span> shénme · qué<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0fbce95bf35e5b57.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">怎么</span> zěnme · cómo<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a1aa4aeed5cc637c.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">为什么</span> wèishénme · por qué<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_57ded13effa86c23.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">这么</span> zhème · tan, así de<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e6193a7dd8f45a10.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">么</b><span class=\"ch-gl\">partícula (什么, 怎么)</span><span class=\"ch-memory\">Para recordarlo (no es su origen): Un hilo fino 丿 que se enrosca en un nudo 厶: la colita que se pega detrás de 什 y de 怎.</span><span class=\"ch-also\">También en 怎么样、最近怎么样、这个怎么样</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.men",
+   "type": "charsound",
+   "theme": "saludos",
+   "level": 1,
+   "targets": [
+    "e.nimenhao",
+    "w.women",
+    "w.nimen",
+    "w.tamen"
+   ],
+   "context": [],
+   "examples": [
+    "s.women-shi-pengyou",
+    "s.women-dou-shi-xuesheng"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "men5",
+    "hanzi": "们"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">们</div>",
+   "back": "<div class=\"hanzi\">们</div><div class=\"pinyin\">men</div><div class=\"ipa\">[mən]</div><div class=\"meaning\">Sale en 你们好 nǐmen hǎo «hola (a un grupo)», 我们 wǒmen «nosotros», 你们 nǐmen «vosotros», 他们 tāmen «ellos».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">你们好</span> nǐmen hǎo · hola (a un grupo)<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_8d8d0a30f57c830b.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">我们</span> wǒmen · nosotros<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_fdca7c1ea2701026.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">你们</span> nǐmen · vosotros<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_7ceb9e04c7669658.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">他们</span> tāmen · ellos<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_5b140df9841fb78b.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">们</b><span class=\"ch-gl\">plural de personas</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 亻 persona · sonido: 门 mén</span><span class=\"ch-why\">亻 «persona» da el sentido (marca un grupo de personas) y 门 (mén) el sonido: suena parecido, cambia el tono. Tradicional: 們.</span><span class=\"ch-also\">También en 你们好、我们、你们</span></div></div></section><section class=\"note note--connection\"><h4>Conexión · 🔊 da el sonido</h4><div class=\"note-body\">门 mén «puerta» da el sonido a 们 men; también a 问 wèn «preguntar».</div></section></div>"
+  },
+  {
+   "id": "x.charsound.hui",
+   "type": "charsound",
+   "theme": "saludos",
+   "level": 1,
+   "targets": [
+    "w.huilai",
+    "w.huijia"
+   ],
+   "context": [],
+   "examples": [
+    "s.mama-huilai-le",
+    "s.wo-huijia-shuijiao"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "hui2",
+    "hanzi": "回"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">回</div>",
+   "back": "<div class=\"hanzi\">回</div><div class=\"pinyin\">huí</div><div class=\"ipa\">[xweɪ˧˥]</div><div class=\"meaning\">Sale en 回来 huílai «volver (aquí)», 回家 huíjiā «volver a casa».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">回来</span> huílai · volver (aquí)<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_5ba7721a1a505e90.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">回家</span> huíjiā · volver a casa<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_afc2cee515791037.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">回</b><span class=\"ch-gl\">volver</span><span class=\"ch-kind\">pictograma</span><span class=\"ch-why\">Era una espiral, un remolino que vuelve sobre sí. Al cuadrarse la escritura quedó un cuadrado dentro de otro; no tiene que ver con 口 «boca».</span><span class=\"ch-also\">También en 回来、回家</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.zen",
+   "type": "charsound",
+   "theme": "saludos",
+   "level": 2,
+   "targets": [
+    "w.zenmeyang",
+    "e.zuijinzenmeyang",
+    "e.zhegezenmeyang",
+    "w.zenme"
+   ],
+   "context": [],
+   "examples": [
+    "s.zuijin-zenmeyang",
+    "s.haojiu-bujian-zuijin-zenmeyang"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "zen3",
+    "hanzi": "怎"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">怎</div>",
+   "back": "<div class=\"hanzi\">怎</div><div class=\"pinyin\">zěn</div><div class=\"ipa\">[tsən˧˩˧]</div><div class=\"meaning\">Sale en 怎么样 zěnmeyàng «¿qué tal?; ¿cómo?», 最近怎么样 zuìjìn zěnmeyàng «¿qué tal últimamente?», 这个怎么样 zhège zěnmeyàng «¿qué tal este?, ¿qué te parece?», 怎么 zěnme «cómo».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">怎么样</span> zěnmeyàng · ¿qué tal?; ¿cómo?<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e7605500ec1bdc34.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">最近怎么样</span> zuìjìn zěnmeyàng · ¿qué tal últimamente?<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_9b5432eeb16787e9.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">这个怎么样</span> zhège zěnmeyàng · ¿qué tal este?, ¿qué te parece?<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_276fccf04dac0841.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">怎么</span> zěnme · cómo<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a1aa4aeed5cc637c.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">怎</b><span class=\"ch-gl\">cómo</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 心 corazón, mente · sonido: 乍 zhà</span><span class=\"ch-why\">心 «corazón» solo da la categoría (pensar, dudar) y 乍 (zhà) el sonido, que ya no se parece a zěn en mandarín moderno.</span><span class=\"ch-also\">También en 怎么样、最近怎么样、这个怎么样</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.yang",
+   "type": "charsound",
+   "theme": "saludos",
+   "level": 2,
+   "targets": [
+    "w.zenmeyang",
+    "e.zuijinzenmeyang",
+    "e.zhegezenmeyang"
+   ],
+   "context": [],
+   "examples": [
+    "s.zuijin-zenmeyang",
+    "s.haojiu-bujian-zuijin-zenmeyang"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "yang4",
+    "hanzi": "样"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">样</div>",
+   "back": "<div class=\"hanzi\">样</div><div class=\"pinyin\">yàng</div><div class=\"ipa\">[jɑŋ˥˩]</div><div class=\"meaning\">Sale en 怎么样 zěnmeyàng «¿qué tal?; ¿cómo?», 最近怎么样 zuìjìn zěnmeyàng «¿qué tal últimamente?», 这个怎么样 zhège zěnmeyàng «¿qué tal este?, ¿qué te parece?».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">怎么样</span> zěnmeyàng · ¿qué tal?; ¿cómo?<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e7605500ec1bdc34.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">最近怎么样</span> zuìjìn zěnmeyàng · ¿qué tal últimamente?<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_9b5432eeb16787e9.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">这个怎么样</span> zhège zěnmeyàng · ¿qué tal este?, ¿qué te parece?<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_276fccf04dac0841.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">样</b><span class=\"ch-gl\">forma, manera</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 木 árbol, madera · sonido: 羊 yáng</span><span class=\"ch-why\">木 «árbol» solo da la categoría (el sentido original era otro) y 羊 (yáng) el sonido: suena parecido, cambia el tono. Tradicional: 樣.</span><span class=\"ch-also\">También en 怎么样、最近怎么样、这个怎么样</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.huan",
+   "type": "charsound",
+   "theme": "saludos",
+   "level": 2,
+   "targets": [
+    "w.huanying",
+    "w.xihuan"
+   ],
+   "context": [],
+   "examples": [
+    "s.wo-xihuan-kan-shu",
+    "s.wo-ye-xihuan"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "huan1",
+    "hanzi": "欢"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">欢</div>",
+   "back": "<div class=\"hanzi\">欢</div><div class=\"pinyin\">huān</div><div class=\"ipa\">[xwan˥]</div><div class=\"meaning\">Sale en 欢迎 huānyíng «bienvenido; dar la bienvenida», 喜欢 xǐhuan «gustar».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">欢迎</span> huānyíng · bienvenido; dar la bienvenida<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_06e9f9a6d4c2cfe1.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">喜欢</span> xǐhuan · gustar<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1aa99b8ba4bd7a29.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">欢</b><span class=\"ch-gl\">alegre, contento</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 欠 deber · sonido: 雚 guàn</span><span class=\"ch-memory\">Para recordarlo (no es su origen): Una mano 又 que se agita junto a alguien que abre la boca 欠 para reír: alegría.</span><span class=\"ch-also\">También en 欢迎、喜欢</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.lao",
+   "type": "charsound",
+   "theme": "saludos",
+   "level": 1,
+   "targets": [
+    "e.laoshihao",
+    "w.laoshi"
+   ],
+   "context": [],
+   "examples": [
+    "s.zaoshang-hao-laoshi",
+    "s.wo-bu-shi-xuesheng"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "lao3",
+    "hanzi": "老"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">老</div>",
+   "back": "<div class=\"hanzi\">老</div><div class=\"pinyin\">lǎo</div><div class=\"ipa\">[lɑʊ˧˩˧]</div><div class=\"meaning\">Sale en 老师好 lǎoshī hǎo «hola, profe», 老师 lǎoshī «profesor, profesora».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">老师好</span> lǎoshī hǎo · hola, profe<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_cd5162a5ed1c1bfd.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">老师</span> lǎoshī · profesor, profesora<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_fa4f18a2cdecb315.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">老</b><span class=\"ch-gl\">viejo, mayor</span><span class=\"ch-kind\">pictograma</span><span class=\"ch-why\">Una persona encorvada, de pelo largo, apoyada en un bastón. Abajo, 匕 no es «cuchara»: es lo que queda del bastón y la figura doblada.</span><span class=\"ch-also\">También en 老师好、老师</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.jin",
+   "type": "charsound",
+   "theme": "saludos",
+   "level": 2,
+   "targets": [
+    "w.zuijin",
+    "e.zuijinzenmeyang",
+    "e.zuijinmangma"
+   ],
+   "context": [],
+   "examples": [
+    "s.haojiu-bujian-zuijin-zenmeyang",
+    "s.zuijin-mang-ma"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "jin4",
+    "hanzi": "近"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">近</div>",
+   "back": "<div class=\"hanzi\">近</div><div class=\"pinyin\">jìn</div><div class=\"ipa\">[tɕin˥˩]</div><div class=\"meaning\">Sale en 最近 zuìjìn «últimamente, estos días», 最近怎么样 zuìjìn zěnmeyàng «¿qué tal últimamente?», 最近忙吗 zuìjìn máng ma «¿mucho lío últimamente?».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">最近</span> zuìjìn · últimamente, estos días<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_4e574f1d5b93fcc9.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">最近怎么样</span> zuìjìn zěnmeyàng · ¿qué tal últimamente?<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_9b5432eeb16787e9.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">最近忙吗</span> zuìjìn máng ma · ¿mucho lío últimamente?<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a90b0748e185ba6e.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">近</b><span class=\"ch-gl\">cerca; reciente</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 辶 caminar, avanzar · sonido: 斤 jīn</span><span class=\"ch-why\">辶 «andar» da el sentido, la distancia que se recorre, y 斤 (jīn) el sonido: suena parecido, cambia el tono.</span><span class=\"ch-also\">También en 最近、最近怎么样、最近忙吗</span></div></div></section></div>"
+  },
+  {
    "id": "x.tones.xiexie",
    "type": "tones",
    "theme": "cortesia",
@@ -25464,6 +25729,82 @@
    "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>qǐng: q es una ch con soplo de aire y la lengua plana, no una k [tɕʰiŋ˧˩˧]</div><div>shuō: sh con la punta de la lengua curvada hacia atrás [ʂwɔ˥]</div><div>zài: z suena ts, como en «pizza» [tsaɪ˥˩]</div></div></section><section class=\"note note--chars\"><h4>Sus caracteres</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">再</b><span class=\"ch-gl\">otra vez</span><span class=\"ch-memory\">Para recordarlo (no es su origen): Dos rayas 二 sobre algo que parece una balanza: lo que se pesa por segunda vez, otra vez.</span><span class=\"ch-also\">También en 再见</span></div><div class=\"ch-row\"><b class=\"ch-hz\">说</b><span class=\"ch-gl\">hablar, decir</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 讠 hablar · sonido: 兑 duì</span><span class=\"ch-why\">讠 «palabra» da el sentido y 兑 (duì) el sonido, que ya no se parece a shuō en mandarín moderno. Tradicional: 說.</span></div><div class=\"ch-row\"><b class=\"ch-hz\">一</b><span class=\"ch-gl\">uno</span><span class=\"ch-kind\">ideograma</span><span class=\"ch-why\">Un solo trazo horizontal para el número uno.</span><span class=\"ch-also\">También en 一边</span></div><div class=\"ch-row\"><b class=\"ch-hz\">遍</b><span class=\"ch-gl\">vez (de principio a fin)</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 辶 caminar, avanzar · sonido: 扁 biǎn</span><span class=\"ch-why\">辶 «andar» da el sentido (recorrer algo entero, una pasada) y 扁 (biǎn) el sonido: suena parecido, cambia el tono.</span></div></div></section><section class=\"note note--teacher\"><h4>En clase</h4><div class=\"note-body\">Lo que se dice en clase para pedir que repitan. Para leer otra vez, 再读一遍 zài dú yí biàn.</div></section></div>"
   },
   {
+   "id": "x.charsound.yi",
+   "type": "charsound",
+   "theme": "cortesia",
+   "level": 2,
+   "targets": [
+    "w.keyi",
+    "w.suoyi"
+   ],
+   "context": [],
+   "examples": [
+    "s.yinwei-xiayu-suoyi-wo-bu-qu",
+    "s.wo-hen-lei-suoyi-huijia"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "yi3",
+    "hanzi": "以"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">以</div>",
+   "back": "<div class=\"hanzi\">以</div><div class=\"pinyin\">yǐ</div><div class=\"ipa\">[i˧˩˧]</div><div class=\"meaning\">Sale en 可以 kěyǐ «poder (está permitido); vale, sirve», 所以 suǒyǐ «así que, por eso».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">可以</span> kěyǐ · poder (está permitido); vale, sirve<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_aa7e3bce197bea4c.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">所以</span> suǒyǐ · así que, por eso<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_9e829315de5f0430.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">以</b><span class=\"ch-gl\">con, mediante</span><span class=\"ch-memory\">Para recordarlo (no es su origen): Una herramienta a la izquierda y una persona 人 a la derecha que la usa: hacer algo con algo.</span><span class=\"ch-also\">También en 可以、所以</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.ke",
+   "type": "charsound",
+   "theme": "cortesia",
+   "level": 2,
+   "targets": [
+    "w.keyi",
+    "w.keai"
+   ],
+   "context": [],
+   "examples": [
+    "s.wo-keyi-wen-ni-ma",
+    "s.keyi-ma-keyi"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "ke3",
+    "hanzi": "可"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">可</div>",
+   "back": "<div class=\"hanzi\">可</div><div class=\"pinyin\">kě</div><div class=\"ipa\">[kʰɤ˧˩˧]</div><div class=\"meaning\">Sale en 可以 kěyǐ «poder (está permitido); vale, sirve», 可爱 kě&#x27;ài «mono, adorable».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">可以</span> kěyǐ · poder (está permitido); vale, sirve<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_aa7e3bce197bea4c.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">可爱</span> kě&#x27;ài · mono, adorable<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_2370d41b8a487216.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">可</b><span class=\"ch-gl\">poder; aprobar</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 口 boca · sonido: 丂 kǎo</span><span class=\"ch-memory\">Para recordarlo (no es su origen): Una boca 口 bajo un techo con un gancho: alguien asiente desde la puerta, «sí, se puede».</span><span class=\"ch-also\">También en 可以、可爱</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.qi",
+   "type": "charsound",
+   "theme": "cortesia",
+   "level": 1,
+   "targets": [
+    "e.bukeqi",
+    "w.tianqi",
+    "w.shengqi"
+   ],
+   "context": [],
+   "examples": [
+    "s.tianqi-hen-leng",
+    "s.tianqi-bu-leng"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "qi4",
+    "hanzi": "气"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">气</div>",
+   "back": "<div class=\"hanzi\">气</div><div class=\"pinyin\">qì</div><div class=\"ipa\">[tɕʰi˥˩]</div><div class=\"meaning\">Sale en 不客气 bù kèqi «de nada», 天气 tiānqì «el tiempo (meteorológico)», 生气 shēngqì «enfadarse; enfadado».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">不客气</span> bù kèqi · de nada<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_2744d075242a3113.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">天气</span> tiānqì · el tiempo (meteorológico)<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_df1c7d15364e4fc1.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">生气</span> shēngqì · enfadarse; enfadado<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_de08ee42476381c0.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">气</b><span class=\"ch-gl\">aire, gas; ánimo</span><span class=\"ch-kind\">pictograma</span><span class=\"ch-why\">Líneas de vapor o de nubes que flotan. La forma tradicional, 氣, añade debajo 米 «arroz».</span><span class=\"ch-also\">También en 不客气、天气、生气</span></div></div></section></div>"
+  },
+  {
    "id": "x.read.ni",
    "type": "read",
    "theme": "personas",
@@ -27008,6 +27349,56 @@
    "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_eaf1a12e569c2667.mp3\" aria-label=\"Play\"></button>",
    "back": "<div class=\"hanzi\">大家</div><div class=\"pinyin\">dàjiā</div><div class=\"ipa\">[ta˥˩ tɕja˥]</div><div class=\"meaning\">todos, todo el mundo</div><div class=\"legend pos\">pronombre</div>",
    "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>大家 y 大象</h4><div class=\"note-body\">Empiezan igual; la segunda sílaba lo decide.<div class=\"vs-row is-target\"><b class=\"vs-hz\">大家</b><span class=\"vs-py\">dàjiā</span><span class=\"vs-gl\">todos, todo el mundo</span><span class=\"vs-cue\">dàjiā: todos</span></div><div class=\"vs-row\"><b class=\"vs-hz\">大象</b><span class=\"vs-py\">dàxiàng</span><span class=\"vs-gl\">elefante</span><span class=\"vs-cue\">dàxiàng: elefante</span></div></div></section><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>jiā: j es una ch suave con la lengua plana, no una jota [tɕja˥]</div><div>dà: d sin aire, casi una t española [ta˥˩]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">dàjiā</span><span class=\"hz\">大家</span></span><span class=\"seg c1\"><span class=\"py\">dōu</span><span class=\"hz\">都</span></span><span class=\"seg c2\"><span class=\"py\">lái</span><span class=\"hz\">来</span></span><span class=\"seg c3\"><span class=\"py\">le</span><span class=\"hz\">了</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Ya hemos llegado todos.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_b60a9af500991791.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Sus caracteres</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">大</b><span class=\"ch-gl\">grande</span><span class=\"ch-kind\">pictograma</span><span class=\"ch-why\">Una persona de frente con los brazos y las piernas abiertos, ocupando todo el espacio que puede.</span><span class=\"ch-also\">También en 大家好、大卫、大小</span></div><div class=\"ch-row\"><b class=\"ch-hz\">家</b><span class=\"ch-gl\">casa, hogar; familia</span><span class=\"ch-memory\">Para recordarlo (no es su origen): Un techo 宀 y debajo un cerdo 豕: la casa es donde se cría el cerdo de la familia.</span><span class=\"ch-also\">También en 大家好、回家</span></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">Suele ir con 都: 大家都来了 «ya estamos todos».</div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">大 «grande» + 家 «familia, casa»: era «la gran familia», todo el grupo, y de ahí «todos». Es el mismo 家 de 一家人 «una familia» y del clasificador de negocios: 一家饭店 «un restaurante».</div></section></div>"
+  },
+  {
+   "id": "x.charsound.xue",
+   "type": "charsound",
+   "theme": "personas",
+   "level": 1,
+   "targets": [
+    "w.xuesheng",
+    "w.xuexi"
+   ],
+   "context": [],
+   "examples": [
+    "s.nimen-shi-xuesheng-ma",
+    "s.wo-bu-shi-xuesheng"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "xue2",
+    "hanzi": "学"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">学</div>",
+   "back": "<div class=\"hanzi\">学</div><div class=\"pinyin\">xué</div><div class=\"ipa\">[ɕɥœ˧˥]</div><div class=\"meaning\">Sale en 学生 xuéshēng «estudiante», 学习 xuéxí «estudiar, aprender».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">学生</span> xuéshēng · estudiante<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_56e7d0bb19356c85.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">学习</span> xuéxí · estudiar, aprender<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_cf0b8d1683ca1440.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">学</b><span class=\"ch-gl\">estudiar, aprender</span><span class=\"ch-kind\">ideograma</span><span class=\"ch-why\">Un niño 子 bajo un techo 冖. En la forma tradicional 學, arriba había dos manos alrededor de 爻; la simplificación lo redujo a tres trazos ⺍.</span><span class=\"ch-also\">También en 学生、学习</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.gong",
+   "type": "charsound",
+   "theme": "personas",
+   "level": 3,
+   "targets": [
+    "w.gongchengshi",
+    "w.gongzuo"
+   ],
+   "context": [],
+   "examples": [
+    "s.wo-shi-gongchengshi",
+    "s.wo-hen-xihuan-wode-gongzuo"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "gong1",
+    "hanzi": "工"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">工</div>",
+   "back": "<div class=\"hanzi\">工</div><div class=\"pinyin\">gōng</div><div class=\"ipa\">[kʊŋ˥]</div><div class=\"meaning\">Sale en 工程师 gōngchéngshī «ingeniero, ingeniera», 工作 gōngzuò «trabajo; trabajar».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">工程师</span> gōngchéngshī · ingeniero, ingeniera<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_46aaa49d7bfbbedc.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">工作</span> gōngzuò · trabajo; trabajar<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e246fcdd9f847d44.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">工</b><span class=\"ch-gl\">trabajo; obrero</span><span class=\"ch-kind\">pictograma</span><span class=\"ch-why\">Una herramienta de trabajo (se discute si una escuadra de carpintero o un pisón). De ahí «trabajo».</span><span class=\"ch-also\">También en 工程师、工作</span></div></div></section></div>"
   },
   {
    "id": "x.read.zhongguo",
@@ -31222,6 +31613,133 @@
    "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>xué: tras j, q, x o y la u es una ü: labios de u y lengua de i [ɕɥœ˧˥]</div><div>xué: x suena casi como una sh suave, con la lengua plana y sonriendo [ɕɥœ˧˥]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">zài</span><span class=\"hz\">在</span></span><span class=\"seg c2\"><span class=\"py\">xuéxí</span><span class=\"hz\">学习</span></span><span class=\"seg c3\"><span class=\"py\">Zhōngwén</span><span class=\"hz\">中文</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Estoy estudiando chino.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_440c5a604de89f52.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Sus caracteres</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">学</b><span class=\"ch-gl\">estudiar, aprender</span><span class=\"ch-kind\">ideograma</span><span class=\"ch-why\">Un niño 子 bajo un techo 冖. En la forma tradicional 學, arriba había dos manos alrededor de 爻; la simplificación lo redujo a tres trazos ⺍.</span><span class=\"ch-also\">También en 学生</span></div><div class=\"ch-row\"><b class=\"ch-hz\">习</b><span class=\"ch-gl\">practicar</span><span class=\"ch-kind\">ideograma</span><span class=\"ch-why\">Forma simplificada de 習. En las formas antiguas eran 羽 «alas» sobre 日 «día», luego escrito 白: batir las alas día tras día hasta volar, «practicar». 习 conserva solo media 羽.</span></div></div></section><section class=\"note note--text\"><h4>Nota</h4><div class=\"note-body\">学 «aprender» + 习 «practicar». 学生 «estudiante» lleva el mismo 学.</div></section></div>"
   },
   {
+   "id": "x.charsound.zhong",
+   "type": "charsound",
+   "theme": "presentarse",
+   "level": 1,
+   "targets": [
+    "w.zhongguo",
+    "w.zhongwen",
+    "w.zhongwu"
+   ],
+   "context": [],
+   "examples": [
+    "s.wo-bu-shi-zhongguoren",
+    "s.wo-zui-xihuan-zhongguo-cai"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "zhong1",
+    "hanzi": "中"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">中</div>",
+   "back": "<div class=\"hanzi\">中</div><div class=\"pinyin\">zhōng</div><div class=\"ipa\">[ʈʂʊŋ˥]</div><div class=\"meaning\">Sale en 中国 Zhōngguó «China», 中文 Zhōngwén «chino (la lengua)», 中午 zhōngwǔ «mediodía».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">中国</span> Zhōngguó · China<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_3f042a30d11fff79.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">中文</span> Zhōngwén · chino (la lengua)<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_04a6381e184eea1c.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">中午</span> zhōngwǔ · mediodía<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1fddf12f97714b3b.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">中</b><span class=\"ch-gl\">centro, medio</span><span class=\"ch-kind\">pictograma</span><span class=\"ch-why\">Un mástil con banderolas clavado en el centro de un recinto. La forma moderna lo reduce a una línea 丨 que cruza un cuadro; no es una boca 口.</span><span class=\"ch-also\">También en 中国、中文、中午</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.shen",
+   "type": "charsound",
+   "theme": "presentarse",
+   "level": 1,
+   "targets": [
+    "w.shenme",
+    "w.weishenme"
+   ],
+   "context": [],
+   "examples": [
+    "s.qingwen-ni-jiao-shenme-mingzi",
+    "s.wo-bu-renshi-ni"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "shen2",
+    "hanzi": "什"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">什</div>",
+   "back": "<div class=\"hanzi\">什</div><div class=\"pinyin\">shén</div><div class=\"ipa\">[ʂən˧˥]</div><div class=\"meaning\">Sale en 什么 shénme «qué», 为什么 wèishénme «por qué».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">什么</span> shénme · qué<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0fbce95bf35e5b57.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">为什么</span> wèishénme · por qué<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_57ded13effa86c23.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">什</b><span class=\"ch-gl\">qué (en 什么)</span><span class=\"ch-kind\">ideograma</span><span class=\"ch-memory\">Para recordarlo (no es su origen): Una persona 亻 con diez 十 dedos que pregunta: ¿qué?</span><span class=\"ch-also\">También en 什么、为什么</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.ming",
+   "type": "charsound",
+   "theme": "presentarse",
+   "level": 1,
+   "targets": [
+    "w.mingzi",
+    "w.xingming"
+   ],
+   "context": [],
+   "examples": [
+    "s.wo-bu-renshi-ni",
+    "s.ni-jiao-shenme-mingzi"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "ming2",
+    "hanzi": "名"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">名</div>",
+   "back": "<div class=\"hanzi\">名</div><div class=\"pinyin\">míng</div><div class=\"ipa\">[miŋ˧˥]</div><div class=\"meaning\">Sale en 名字 míngzi «nombre», 姓名 xìngmíng «nombre completo».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">名字</span> míngzi · nombre<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_88561bccc034a4a0.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">姓名</span> xìngmíng · nombre completo<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_ab1010fc595de9b7.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">名</b><span class=\"ch-gl\">nombre</span><span class=\"ch-kind\">ideograma</span><span class=\"ch-why\">夕 «anochecer» y 口 «boca». De noche no se ve a nadie, así que uno dice su nombre en voz alta.</span><span class=\"ch-also\">También en 名字、姓名</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.duo",
+   "type": "charsound",
+   "theme": "presentarse",
+   "level": 1,
+   "targets": [
+    "w.menduosa",
+    "w.duoshao",
+    "e.duoshaoqian"
+   ],
+   "context": [],
+   "examples": [
+    "s.menduosa-xiansheng-ninhao",
+    "s.zhege-duoshaoqian"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "duo1",
+    "hanzi": "多"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">多</div>",
+   "back": "<div class=\"hanzi\">多</div><div class=\"pinyin\">duō</div><div class=\"ipa\">[twɔ˥]</div><div class=\"meaning\">Sale en 门多萨 Ménduōsà «Mendoza (mi apellido)», 多少 duōshao «cuánto, cuántos», 多少钱 duōshao qián «¿cuánto cuesta?».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">门多萨</span> Ménduōsà · Mendoza (mi apellido)<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a87c51ee18f30ed3.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">多少</span> duōshao · cuánto, cuántos<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0d5cdf0d8fecba8e.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">多少钱</span> duōshao qián · ¿cuánto cuesta?<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a5edb2e59e562519.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">多</b><span class=\"ch-gl\">mucho</span><span class=\"ch-kind\">ideograma</span><span class=\"ch-why\">Dos piezas iguales apiladas, que hoy se leen como dos 夕 «anochecer»; en las formas antiguas quizá eran dos trozos de carne. Repetir la pieza da la idea de «mucho».</span><span class=\"ch-also\">También en 门多萨、多少、多少钱</span></div></div></section><section class=\"note note--connection\"><h4>Conexión · 🔊 da el sonido</h4><div class=\"note-body\">门 mén da el sonido a 们 men y a 问 wèn: ver 门 dentro de un carácter evoca ese sonido.</div></section></div>"
+  },
+  {
+   "id": "x.charsound.xi",
+   "type": "charsound",
+   "theme": "presentarse",
+   "level": 1,
+   "targets": [
+    "w.xibanya",
+    "w.dongxi"
+   ],
+   "context": [],
+   "examples": [
+    "s.wo-bu-shi-zhongguoren",
+    "s.wo-xiang-mai-dongxi"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "xi1",
+    "hanzi": "西"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">西</div>",
+   "back": "<div class=\"hanzi\">西</div><div class=\"pinyin\">xī</div><div class=\"ipa\">[ɕi˥]</div><div class=\"meaning\">Sale en 西班牙 Xībānyá «España», 东西 dōngxi «cosa, cosas».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">西班牙</span> Xībānyá · España<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_6724c1df88e5de92.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">东西</span> dōngxi · cosa, cosas<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_f4d40e3f43b62064.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">西</b><span class=\"ch-gl\">oeste</span><span class=\"ch-kind\">pictograma</span><span class=\"ch-memory\">Para recordarlo (no es su origen): Una cesta con tapa en la que el pájaro vuelve a su nido cuando el sol se pone por el oeste.</span><span class=\"ch-also\">También en 西班牙、东西</span></div></div></section><section class=\"note note--connection\"><h4>Conexión · 🔊 da el sonido</h4><div class=\"note-body\">牙 yá da el sonido a 雅 yǎ, el de tu nombre, 雅戈.</div></section></div>"
+  },
+  {
    "id": "x.read.baba",
    "type": "read",
    "theme": "familia",
@@ -32353,6 +32871,156 @@
    "front": "<div class=\"legend\">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · 5 a neutro, corto</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_63420dad8354c931.mp3\" aria-label=\"Play\"></button>",
    "back": "<div class=\"hanzi\">爸妈</div><div class=\"pinyin\">bàmā</div><div class=\"ipa\">[pa˥˩ ma˥]</div><div class=\"meaning\">los padres, papá y mamá (coloquial)</div><div class=\"legend pos\">sustantivo</div>",
    "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>bà: b sin aire, casi una p española [pa˥˩]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tāmen</span><span class=\"hz\">他们</span></span><span class=\"seg c1\"><span class=\"py\">shì</span><span class=\"hz\">是</span></span><span class=\"seg c2\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c3\"><span class=\"py\">de</span><span class=\"hz\">的</span></span><span class=\"seg c4\"><span class=\"py\">bàmā</span><span class=\"hz\">爸妈</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Son mis padres.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_db0c946fa5bfc692.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Sus caracteres</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">爸</b><span class=\"ch-gl\">papá</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 父 padre · sonido: 巴 bā</span><span class=\"ch-why\">父 «padre» da el sentido; 巴 bā da el sonido: suena parecido (cambia el tono).</span><span class=\"ch-also\">También en 爸爸</span></div><div class=\"ch-row\"><b class=\"ch-hz\">妈</b><span class=\"ch-gl\">mamá</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 女 mujer · sonido: 马 mǎ</span><span class=\"ch-why\">女 «mujer» da el sentido; 马 mǎ «caballo» da solo el sonido: suena parecido (cambia el tono). Forma tradicional 媽.</span><span class=\"ch-also\">También en 妈妈</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.er",
+   "type": "charsound",
+   "theme": "familia",
+   "level": 1,
+   "targets": [
+    "w.erzi",
+    "w.nver"
+   ],
+   "context": [],
+   "examples": [
+    "s.ta-you-erzi-he-nver"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "er2",
+    "hanzi": "儿"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">儿</div>",
+   "back": "<div class=\"hanzi\">儿</div><div class=\"pinyin\">ér</div><div class=\"ipa\">[ɑɻ˧˥]</div><div class=\"meaning\">Sale en 儿子 érzi «hijo», 女儿 nǚ&#x27;ér «hija».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">儿子</span> érzi · hijo<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e425467754082bf7.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">女儿</span> nǚ&#x27;ér · hija<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1b50f3f3562ab47a.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">儿</b><span class=\"ch-gl\">niño, hijo</span><span class=\"ch-kind\">pictograma</span><span class=\"ch-why\">En la forma tradicional 兒 se veía un niño de cabeza grande, con la fontanela aún abierta, sobre dos piernas. 儿 conserva solo las piernas, y como pieza suele indicar una persona.</span><span class=\"ch-also\">También en 儿子、女儿</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.ma",
+   "type": "charsound",
+   "theme": "familia",
+   "level": 1,
+   "targets": [
+    "w.mama",
+    "w.bama"
+   ],
+   "context": [],
+   "examples": [
+    "s.tamen-shi-wo-de-bama",
+    "s.mama-huilai-le"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "ma1",
+    "hanzi": "妈"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">妈</div>",
+   "back": "<div class=\"hanzi\">妈</div><div class=\"pinyin\">mā</div><div class=\"ipa\">[ma˥]</div><div class=\"meaning\">Sale en 妈妈 māma «mamá», 爸妈 bàmā «los padres, papá y mamá (coloquial)».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">妈妈</span> māma · mamá<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_66a4b2d8bbbdee23.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">爸妈</span> bàmā · los padres, papá y mamá (coloquial)<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_63420dad8354c931.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">妈</b><span class=\"ch-gl\">mamá</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 女 mujer · sonido: 马 mǎ</span><span class=\"ch-why\">女 «mujer» da el sentido; 马 mǎ «caballo» da solo el sonido: suena parecido (cambia el tono). Forma tradicional 媽.</span><span class=\"ch-also\">También en 妈妈、爸妈</span></div></div></section><section class=\"note note--connection\"><h4>Conexión · 🔊 da el sonido</h4><div class=\"note-body\">马 mǎ «caballo» da el sonido a 妈 mā y a 吗 ma: el caballo solo presta su sonido.</div></section></div>"
+  },
+  {
+   "id": "x.charsound.zi",
+   "type": "charsound",
+   "theme": "familia",
+   "level": 1,
+   "targets": [
+    "w.erzi",
+    "w.haizi",
+    "w.kuaizi"
+   ],
+   "context": [],
+   "examples": [
+    "s.ta-you-erzi-he-nver",
+    "s.tamen-you-liang-ge-haizi"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "zi5",
+    "hanzi": "子"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">子</div>",
+   "back": "<div class=\"hanzi\">子</div><div class=\"pinyin\">zi</div><div class=\"ipa\">[tsɯ]</div><div class=\"meaning\">Sale en 儿子 érzi «hijo», 孩子 háizi «niño, niña; hijo, hija», 筷子 kuàizi «palillos».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">儿子</span> érzi · hijo<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e425467754082bf7.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">孩子</span> háizi · niño, niña; hijo, hija<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_3e3bd52afa13064a.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">筷子</span> kuàizi · palillos<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_02d2cacb4a961f6d.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">子</b><span class=\"ch-gl\">hijo, niño; sufijo</span><span class=\"ch-kind\">pictograma</span><span class=\"ch-why\">Un bebé fajado: la cabeza arriba, los brazos abiertos en el trazo horizontal y el cuerpo envuelto, sin piernas a la vista. En 儿子 o 筷子 también funciona como sufijo de nombres.</span><span class=\"ch-also\">También en 儿子、孩子、筷子</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.hai",
+   "type": "charsound",
+   "theme": "familia",
+   "level": 1,
+   "targets": [
+    "w.haizi",
+    "w.xiaohai"
+   ],
+   "context": [],
+   "examples": [
+    "s.tamen-you-liang-ge-haizi"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "hai2",
+    "hanzi": "孩"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">孩</div>",
+   "back": "<div class=\"hanzi\">孩</div><div class=\"pinyin\">hái</div><div class=\"ipa\">[xaɪ˧˥]</div><div class=\"meaning\">Sale en 孩子 háizi «niño, niña; hijo, hija», 小孩 xiǎohái «niño pequeño, crío».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">孩子</span> háizi · niño, niña; hijo, hija<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_3e3bd52afa13064a.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">小孩</span> xiǎohái · niño pequeño, crío<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_13fbfaa8963eead7.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">孩</b><span class=\"ch-gl\">niño</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 子 niño, hijo · sonido: 亥 hài</span><span class=\"ch-why\">子 «niño» da el sentido; 亥 hài da el sonido: suena parecido (cambia el tono).</span><span class=\"ch-also\">También en 孩子、小孩</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.xiao",
+   "type": "charsound",
+   "theme": "familia",
+   "level": 1,
+   "targets": [
+    "w.xiaohai",
+    "w.daxiao",
+    "w.xiaomao"
+   ],
+   "context": [],
+   "examples": [
+    "s.zhege-daxiao-keyi-ma",
+    "s.xiaomao-hen-keai"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "xiao3",
+    "hanzi": "小"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">小</div>",
+   "back": "<div class=\"hanzi\">小</div><div class=\"pinyin\">xiǎo</div><div class=\"ipa\">[ɕjɑʊ˧˩˧]</div><div class=\"meaning\">Sale en 小孩 xiǎohái «niño pequeño, crío», 大小 dàxiǎo «tamaño», 小猫 xiǎomāo «gatito».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">小孩</span> xiǎohái · niño pequeño, crío<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_13fbfaa8963eead7.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">大小</span> dàxiǎo · tamaño<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_35c830cf94d20d70.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">小猫</span> xiǎomāo · gatito<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0b3845cc467a6eba.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">小</b><span class=\"ch-gl\">pequeño</span><span class=\"ch-kind\">ideograma</span><span class=\"ch-why\">En las formas antiguas eran tres puntitos, como granos menudos, para indicar lo pequeño. Hoy se escribe como un gancho central con un trazo a cada lado.</span><span class=\"ch-also\">También en 小孩、大小、小猫</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.ba",
+   "type": "charsound",
+   "theme": "familia",
+   "level": 1,
+   "targets": [
+    "w.baba",
+    "w.bama"
+   ],
+   "context": [],
+   "examples": [
+    "s.tamen-shi-wo-de-bama",
+    "s.ta-shi-wo-de-baba"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "ba4",
+    "hanzi": "爸"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">爸</div>",
+   "back": "<div class=\"hanzi\">爸</div><div class=\"pinyin\">bà</div><div class=\"ipa\">[pa˥˩]</div><div class=\"meaning\">Sale en 爸爸 bàba «papá», 爸妈 bàmā «los padres, papá y mamá (coloquial)».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">爸爸</span> bàba · papá<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_29de54088629b9e5.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">爸妈</span> bàmā · los padres, papá y mamá (coloquial)<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_63420dad8354c931.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">爸</b><span class=\"ch-gl\">papá</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 父 padre · sonido: 巴 bā</span><span class=\"ch-why\">父 «padre» da el sentido; 巴 bā da el sonido: suena parecido (cambia el tono).</span><span class=\"ch-also\">También en 爸爸、爸妈</span></div></div></section></div>"
   },
   {
    "id": "x.read.hen",
@@ -34900,6 +35568,31 @@
    "front": "",
    "back": "<div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">tā</span><span class=\"hz\">他</span></span><span class=\"seg c1\"><span class=\"py\">bú</span><span class=\"hz\">不</span></span><span class=\"seg c2\"><span class=\"py\">pàng</span><span class=\"hz\">胖</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c3\"><span class=\"py\">tā</span><span class=\"hz\">他</span></span><span class=\"seg c4\"><span class=\"py\">hěn</span><span class=\"hz\">很</span></span><span class=\"seg c0\"><span class=\"py\">shòu</span><span class=\"hz\">瘦</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div class=\"meaning\">No está gordo: es muy delgado.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_df339ff0cd48105b.mp3\" aria-label=\"Play\"></button>",
    "notes": ""
+  },
+  {
+   "id": "x.charsound.ming-2",
+   "type": "charsound",
+   "theme": "describir",
+   "level": 5,
+   "targets": [
+    "w.congming",
+    "w.mingtian"
+   ],
+   "context": [],
+   "examples": [
+    "s.mingtian-jian",
+    "s.mingtian-hui-xiayu"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "ming2",
+    "hanzi": "明"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">明</div>",
+   "back": "<div class=\"hanzi\">明</div><div class=\"pinyin\">míng</div><div class=\"ipa\">[miŋ˧˥]</div><div class=\"meaning\">Sale en 聪明 cōngming «listo, inteligente», 明天 míngtiān «mañana (el día)».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">聪明</span> cōngming · listo, inteligente<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_589541309c80c105.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">明天</span> míngtiān · mañana (el día)<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_220d613051c0407f.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">明</b><span class=\"ch-gl\">claro, brillante</span><span class=\"ch-kind\">ideograma</span><span class=\"ch-why\">El sol 日 junto a la luna 月, las dos luces del cielo: «claro, brillante». En 明天 pasa a «el día que viene».</span><span class=\"ch-also\">También en 聪明、明天</span></div></div></section></div>"
   },
   {
    "id": "x.read.he",
@@ -39109,6 +39802,107 @@
    "front": "<div class=\"hanzi\">再　在</div>",
    "back": "<div class=\"hanzi\">在</div><div class=\"pinyin\">zài</div><div class=\"ipa\">[tsaɪ˥˩]</div><div class=\"meaning\">estar en (un lugar)</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e1cc7b6d8f8ca4eb.mp3\" aria-label=\"Play\"></button>",
    "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>在 y 再: los dos zài</h4><div class=\"note-body\">Suenan igual, con el mismo cuarto tono; la frase decide.<div class=\"vs-row is-target\"><b class=\"vs-hz\">在</b><span class=\"vs-py\">zài</span><span class=\"vs-gl\">estar en (un lugar)</span><span class=\"vs-cue\">在: estar en un sitio (我在家)</span></div><div class=\"vs-row\"><b class=\"vs-hz\">再</b><span class=\"vs-py\">zài</span><span class=\"vs-gl\">otra vez, de nuevo; luego, después</span><span class=\"vs-cue\">再: otra vez, luego (再见, 再说一遍)</span></div></div></section><section class=\"note note--group\"><h4>Mismo sonido</h4><div class=\"note-body\"><div>再 zài: otra vez, de nuevo; luego, después</div></div></section><section class=\"note note--group\"><h4>Otros sentidos</h4><div class=\"note-body\"><div>在 zài: estar (haciendo algo)</div></div></section><section class=\"note note--example\"><h4>Ejemplos</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">qǐngwèn</span><span class=\"hz\">请问</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">，</span></span><span class=\"seg c1\"><span class=\"py\">fàndiàn</span><span class=\"hz\">饭店</span></span><span class=\"seg c2\"><span class=\"py\">zài</span><span class=\"hz\">在</span></span><span class=\"seg c3\"><span class=\"py\">nǎlǐ</span><span class=\"hz\">哪里</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">？</span></span></div><div>Perdone, ¿dónde hay un restaurante?</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e9883fb983756b03.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">zuótiān</span><span class=\"hz\">昨天</span></span><span class=\"seg c2\"><span class=\"py\">zài</span><span class=\"hz\">在</span></span><span class=\"seg c3\"><span class=\"py\">jiā</span><span class=\"hz\">家</span></span><span class=\"seg c4\"><span class=\"py\">kàn</span><span class=\"hz\">看</span></span><span class=\"seg c0\"><span class=\"py\">shū</span><span class=\"hz\">书</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Ayer leí en casa.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1affc27ff5ff57fa.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--confusable\"><h4>Para no confundirlo con 再 zài</h4><div class=\"note-body\"><div>再 zài: otra vez, de nuevo; luego, después</div><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">míngtiān</span><span class=\"hz\">明天</span></span><span class=\"seg c2\"><span class=\"py\">zài</span><span class=\"hz\">再</span></span><span class=\"seg c3\"><span class=\"py\">lái</span><span class=\"hz\">来</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Vuelvo mañana.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_1563b873dfc2de35.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">在</b><span class=\"ch-gl\">estar en</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 土 tierra · sonido: 才 cái</span><span class=\"ch-why\">土 «tierra» da la categoría; 才 cái, reducido arriba a la izquierda, da el sonido: suena parecido (cambian la inicial y el tono).</span><span class=\"ch-also\">También en 正在</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.shao",
+   "type": "charsound",
+   "theme": "compras",
+   "level": 1,
+   "targets": [
+    "w.duoshao",
+    "e.duoshaoqian"
+   ],
+   "context": [],
+   "examples": [
+    "s.zhege-duoshaoqian",
+    "s.ni-you-duoshao-qian"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "shao3",
+    "hanzi": "少"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">少</div>",
+   "back": "<div class=\"hanzi\">少</div><div class=\"pinyin\">shǎo</div><div class=\"ipa\">[ʂɑʊ˧˩˧]</div><div class=\"meaning\">Sale en 多少 duōshao «cuánto, cuántos», 多少钱 duōshao qián «¿cuánto cuesta?».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">多少</span> duōshao · cuánto, cuántos<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0d5cdf0d8fecba8e.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">多少钱</span> duōshao qián · ¿cuánto cuesta?<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_a5edb2e59e562519.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">少</b><span class=\"ch-gl\">poco</span><span class=\"ch-kind\">ideograma</span><span class=\"ch-why\">小 «pequeño» con un trazo más debajo. Al principio 小 y 少 eran casi el mismo dibujo de granitos; luego se separaron y 少 quedó para «poco».</span><span class=\"ch-also\">También en 多少、多少钱</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.ji",
+   "type": "charsound",
+   "theme": "compras",
+   "level": 1,
+   "targets": [
+    "w.jipiao",
+    "w.shouji",
+    "w.feiji"
+   ],
+   "context": [],
+   "examples": [
+    "s.wo-zuo-feiji-qu-zhongguo",
+    "s.zhe-shi-wode-shouji"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "ji1",
+    "hanzi": "机"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">机</div>",
+   "back": "<div class=\"hanzi\">机</div><div class=\"pinyin\">jī</div><div class=\"ipa\">[tɕi˥]</div><div class=\"meaning\">Sale en 机票 jīpiào «billete de avión», 手机 shǒujī «móvil», 飞机 fēijī «avión».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">机票</span> jīpiào · billete de avión<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_4f5490c5aba7c8f1.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">手机</span> shǒujī · móvil<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_3810434eb018ed3f.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">飞机</span> fēijī · avión<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_cb1fedce0f624b6e.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">机</b><span class=\"ch-gl\">máquina</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 木 árbol, madera · sonido: 几 jī</span><span class=\"ch-why\">木 «madera» da la categoría y 几 jī «mesita» da el sonido: suena igual. 机 era un carácter aparte, que la simplificación usó en lugar de 機 «mecanismo».</span><span class=\"ch-also\">También en 机票、手机、飞机</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.guo",
+   "type": "charsound",
+   "theme": "compras",
+   "level": 1,
+   "targets": [
+    "w.shuiguo",
+    "w.ruguo"
+   ],
+   "context": [],
+   "examples": [
+    "s.ruguo-ni-xihuan-jiu-mai-ba",
+    "s.wo-xiang-mai-shuiguo"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "guo3",
+    "hanzi": "果"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">果</div>",
+   "back": "<div class=\"hanzi\">果</div><div class=\"pinyin\">guǒ</div><div class=\"ipa\">[kwɔ˧˩˧]</div><div class=\"meaning\">Sale en 水果 shuǐguǒ «fruta», 如果 rúguǒ «si (condición)».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">水果</span> shuǐguǒ · fruta<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_b2706ce5d9c05277.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">如果</span> rúguǒ · si (condición)<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_5cf160bdbbcefe07.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">果</b><span class=\"ch-gl\">fruto; resultado</span><span class=\"ch-kind\">pictograma</span><span class=\"ch-why\">Un árbol 木 con un fruto en lo alto; el fruto es 田, que aquí no es «campo». Del fruto sale también «resultado», y en 如果 «si».</span><span class=\"ch-also\">También en 水果、如果</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.li",
+   "type": "charsound",
+   "theme": "compras",
+   "level": 1,
+   "targets": [
+    "w.nali",
+    "w.zheli"
+   ],
+   "context": [],
+   "examples": [
+    "s.qingwen-fandian-zai-nali",
+    "s.wo-zai-zheli"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "li3",
+    "hanzi": "里"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">里</div>",
+   "back": "<div class=\"hanzi\">里</div><div class=\"pinyin\">lǐ</div><div class=\"ipa\">[li˧˩˧]</div><div class=\"meaning\">Sale en 哪里 nǎlǐ «dónde», 这里 zhèlǐ «aquí».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">哪里</span> nǎlǐ · dónde<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_e70ad18230645c18.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">这里</span> zhèlǐ · aquí<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_0f1b375a153f8755.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">里</b><span class=\"ch-gl\">dentro; aldea</span><span class=\"ch-kind\">ideograma</span><span class=\"ch-why\">田 «campo» sobre 土 «tierra», un lugar habitado, una aldea. Como «dentro» (哪里, 这里) sustituye a la forma tradicional 裡, que lleva 衣 «ropa».</span><span class=\"ch-also\">También en 哪里、这里</span></div></div></section></div>"
   },
   {
    "id": "x.derive.xiawu",
@@ -47206,6 +48000,80 @@
    "notes": "<div class=\"box\"><section class=\"note note--sound\"><h4>Pronunciación</h4><div class=\"note-body\"><div>shì: la i no suena i; se alarga la consonante, con la lengua curvada [ʂɨ˥˩]</div><div>diàn: -ian suena «ien», no «ian» [tjɛn˥˩]</div><div>shì: sh con la punta de la lengua curvada hacia atrás [ʂɨ˥˩]</div></div></section><section class=\"note note--example\"><h4>Ejemplo</h4><div class=\"note-body\"><div class=\"example\"><div class=\"sent\"><span class=\"seg c0\"><span class=\"py\">wǒ</span><span class=\"hz\">我</span></span><span class=\"seg c1\"><span class=\"py\">zài</span><span class=\"hz\">在</span></span><span class=\"seg c2\"><span class=\"py\">kàn</span><span class=\"hz\">看</span></span><span class=\"seg c3\"><span class=\"py\">diànshì</span><span class=\"hz\">电视</span></span><span class=\"seg\"><span class=\"py\"></span><span class=\"hz\">。</span></span></div><div>Estoy viendo la tele.</div><button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_beccacaa352a957e.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Sus caracteres</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">电</b><span class=\"ch-gl\">electricidad</span><span class=\"ch-kind\">ideograma</span><span class=\"ch-why\">El tradicional 電 es la lluvia 雨 sobre un rayo 申 que zigzaguea. El simplificado conservó solo el rayo, de ahí «electricidad».</span><span class=\"ch-also\">También en 电影</span></div><div class=\"ch-row\"><b class=\"ch-hz\">视</b><span class=\"ch-gl\">mirar</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 见 ver · sonido: 礻 shì</span><span class=\"ch-why\">见 «ver» da el sentido; 礻, que es 示 (shì), da el sonido, que suena igual. Aquí 礻 no habla de altares.</span></div></div></section><section class=\"note note--connection\"><h4>Conexión · 🔊 da el sonido</h4><div class=\"note-body\">视 shì toma el sonido de 示 shì, que a la izquierda de un carácter se escribe 礻: por eso suenan igual.</div></section></div>"
   },
   {
+   "id": "x.charsound.wei",
+   "type": "charsound",
+   "theme": "cosas",
+   "level": 2,
+   "targets": [
+    "w.weishenme",
+    "w.yinwei"
+   ],
+   "context": [],
+   "examples": [
+    "s.yinwei-xiayu-suoyi-wo-bu-qu",
+    "s.ni-weishenme-bu-qu"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "wei4",
+    "hanzi": "为"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">为</div>",
+   "back": "<div class=\"hanzi\">为</div><div class=\"pinyin\">wèi</div><div class=\"ipa\">[weɪ˥˩]</div><div class=\"meaning\">Sale en 为什么 wèishénme «por qué», 因为 yīnwèi «porque».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">为什么</span> wèishénme · por qué<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_57ded13effa86c23.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">因为</span> yīnwèi · porque<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_4170073870b617c2.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">为</b><span class=\"ch-gl\">por, para</span><span class=\"ch-kind\">ideograma</span><span class=\"ch-why\">El tradicional 為 dibujaba una mano que guía a un elefante, la idea de «hacer, trabajar». El 为 simplificado ya no lo deja ver; el 力 de dentro no es «fuerza».</span><span class=\"ch-also\">También en 为什么、因为</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.qiu",
+   "type": "charsound",
+   "theme": "cosas",
+   "level": 3,
+   "targets": [
+    "w.zuqiu",
+    "w.lanqiu"
+   ],
+   "context": [],
+   "examples": [
+    "s.women-dou-xihuan-da-lanqiu"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "qiu2",
+    "hanzi": "球"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">球</div>",
+   "back": "<div class=\"hanzi\">球</div><div class=\"pinyin\">qiú</div><div class=\"ipa\">[tɕʰjoʊ˧˥]</div><div class=\"meaning\">Sale en 足球 zúqiú «fútbol», 篮球 lánqiú «baloncesto».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">足球</span> zúqiú · fútbol<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_36d4bddf0b50f100.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">篮球</span> lánqiú · baloncesto<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_4936bb6fac47b92f.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">球</b><span class=\"ch-gl\">pelota, bola</span><span class=\"ch-kind\">fonético-semántico</span><span class=\"ch-formula\">significado: 王 jade · sonido: 求 qiú</span><span class=\"ch-why\">王, que aquí es 玉 «jade», solo da la categoría (el vínculo con «pelota» es histórico); 求 (qiú) da el sonido, que suena igual.</span><span class=\"ch-also\">También en 足球、篮球</span></div></div></section></div>"
+  },
+  {
+   "id": "x.charsound.dian",
+   "type": "charsound",
+   "theme": "cosas",
+   "level": 1,
+   "targets": [
+    "w.dianying",
+    "w.dianshi"
+   ],
+   "context": [],
+   "examples": [
+    "s.ni-kan-guo-zhege-dianying-ma",
+    "s.wo-zai-kan-dianshi"
+   ],
+   "typed": true,
+   "typable": false,
+   "expected": {
+    "pinyin": "dian4",
+    "hanzi": "电"
+   },
+   "task": "¿Cómo suena este hanzi? Escribe la sílaba con su tono.",
+   "front": "<div class=\"hanzi\">电</div>",
+   "back": "<div class=\"hanzi\">电</div><div class=\"pinyin\">diàn</div><div class=\"ipa\">[tjɛn˥˩]</div><div class=\"meaning\">Sale en 电影 diànyǐng «película», 电视 diànshì «televisión».</div>",
+   "notes": "<div class=\"box\"><section class=\"note note--group\"><h4>Dónde sale</h4><div class=\"note-body\"><div class=\"example\"><span class=\"hz\">电影</span> diànyǐng · película<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_377002a3d75d9983.mp3\" aria-label=\"Play\"></button></div><div class=\"example\"><span class=\"hz\">电视</span> diànshì · televisión<button class=\"zh-sound\" type=\"button\" data-audio=\"3-data/audio/acs_685dd565b1c1891e.mp3\" aria-label=\"Play\"></button></div></div></section><section class=\"note note--chars\"><h4>Por qué se escribe así</h4><div class=\"note-body\"><div class=\"ch-row\"><b class=\"ch-hz\">电</b><span class=\"ch-gl\">electricidad</span><span class=\"ch-kind\">ideograma</span><span class=\"ch-why\">El tradicional 電 es la lluvia 雨 sobre un rayo 申 que zigzaguea. El simplificado conservó solo el rayo, de ahí «electricidad».</span><span class=\"ch-also\">También en 电影、电视</span></div></div></section></div>"
+  },
+  {
    "id": "x.dictation.yinwei",
    "type": "listen",
    "theme": "conectores",
@@ -49360,6 +50228,17 @@
    },
    "edited": 3,
    "removed": 6
+  },
+  {
+   "date": "2026-10-06",
+   "added": {
+    "3": 2,
+    "1": 23,
+    "2": 8,
+    "5": 1
+   },
+   "edited": 0,
+   "removed": 0
   }
  ],
  "historyCache": {
@@ -61128,6 +62007,6 @@
  "cardCss": "/* Tarjeta: papel claro o noche cálida (como el cuaderno web), una cabecera con tipo y nivel, la respuesta en su\n   bloque y las notas en secciones. CSS sencillo, sin color-mix ni trucos: AnkiDroid, AnkiMobile y escritorio. */\n.card { font-family: \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif; font-size: 20px; line-height: 1.4;\n        text-align: center; color: #1f1a16; background: #faf7ef; padding: 10px 8px 28px;\n        --muted: rgba(31,26,22,.55); --line: rgba(31,26,22,.13); --panel: rgba(31,26,22,.045); --lv: #b3301d; }\n.nightMode.card, .night_mode .card, .card.nightMode { color: #ececec; background: #1b1b1b;\n        --muted: rgba(236,236,236,.55); --line: rgba(236,236,236,.13); --panel: rgba(255,255,255,.045); }\n.meta { display: flex; justify-content: space-between; align-items: center; max-width: 30em; margin: 0 auto 14px;\n        padding-top: 7px; border-top: 3px solid var(--lv); font: 700 11px/1 Menlo, Consolas, monospace;\n        letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }\n.lv-1 { --lv: #b3301d; } .lv-2 { --lv: #d0632f; } .lv-3 { --lv: #df9340; } .lv-4 { --lv: #cdb35c; }\n.lv-5 { --lv: #8fa972; } .lv-6 { --lv: #5f9590; } .lv-7 { --lv: #557aa3; }\n.task { font-size: 17px; line-height: 1.45; max-width: 26em; margin: 0 auto 14px; color: var(--muted); }\n.task .meta { font-size: 11px; }\n.front { margin: 6px 0; }\n.hanzi { font-size: 54px; line-height: 1.2; }\n.pinyin { font-size: 24px; margin-top: 4px; }\n.meaning { font-size: 20px; margin-top: 10px; }\n.ipa { font-size: 15px; color: var(--muted); margin-top: 2px; }\n.legend { font-size: 13px; color: var(--muted); margin-top: 10px; }\n.pos { font-style: italic; }\nhr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margin: 20px auto 16px; }\n.answer { max-width: 30em; margin: 0 auto; padding: 14px 12px 16px; border-radius: 16px; background: var(--panel);\n          border: 1px solid var(--line); }\n.box { max-width: 30em; margin: 14px auto 0; text-align: left; font-size: 15px; line-height: 1.55; }\n.note { margin-top: 10px; padding: 10px 12px 11px; border-radius: 12px; border: 1px solid var(--line); background: var(--panel); }\n.note h4 { margin: 0 0 6px; font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }\n.note--group .note-body > div { padding: 5px 8px; margin: 0 -8px; border-radius: 8px; }\n.note--group .note-body > div + div { border-top: 1px solid var(--line); }\n.note--group .is-target { background: rgba(179,48,29,.13); }\n.vs-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }\n.vs-hz { font-size: 24px; font-weight: 400; min-width: 1.6em; }\n.vs-py { font-size: 15px; color: #b3301d; }\n.nightMode .vs-py, .night_mode .vs-py { color: #e8845a; }\n.vs-gl { font-size: 15px; }\n.vs-cue { flex-basis: 100%; font-size: 13px; font-style: italic; color: var(--muted); }\n.is-target .vs-hz { font-weight: 700; }\n.note--chars .ch-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; padding: 4px 0; }\n.note--chars .ch-row + .ch-row { border-top: 1px solid var(--line); }\n.ch-hz { font-size: 26px; font-weight: 400; min-width: 1.3em; }\n.ch-gl { font-size: 15px; }\n.ch-kind { font-size: 12px; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }\n.ch-formula { font-size: 14px; color: #1f5f8a; }\n.nightMode .ch-formula, .night_mode .ch-formula { color: #8cc0e6; }\n.ch-why { flex-basis: 100%; font-size: 14px; color: var(--muted); }\n.ch-memory { flex-basis: 100%; font-size: 14px; font-style: italic; color: var(--muted); }\n.ch-also { flex-basis: 100%; font-size: 13px; color: var(--muted); }\n.note--example { text-align: center; }\n.note--mnemonic { border-style: dashed; }\n.note--connection { border-left: 4px solid #2a9d8f; background: rgba(42,157,143,.09); }\n.note--mnemonic .note-body { font-style: italic; }\n.note--teacher { border-left: 3px solid var(--lv); }\n.example + .example { margin-top: 14px; }\n.option { margin: 10px 0; }\n.option .hanzi.small, .hanzi.small { font-size: 32px; }\n.wrong { margin: 12px 0; color: var(--muted); }\n.wrong .hz { text-decoration: line-through; font-size: 22px; }\n.sent { display: inline-flex; gap: 4px; align-items: flex-end; flex-wrap: wrap; justify-content: center; }\n.seg { display: inline-flex; flex-direction: column; align-items: center; padding: 0 2px;\n       border-bottom: 3px solid var(--c, transparent); }\n.seg .py { font-size: 15px; }\n.seg .hz { font-size: 30px; }\n.box .seg .hz { font-size: 24px; }\n.gap { min-width: 1.6em; border-bottom: 3px dashed #999; }\n.c0 { --c: #4e79a7; } .c1 { --c: #f28e2b; } .c2 { --c: #59a14f; } .c3 { --c: #b07aa1; } .c4 { --c: #9c755f; }\n.acs-in { font-size: 20px; padding: 10px 14px; width: 12em; max-width: 90%; margin-top: 14px; text-align: center;\n          border: 1px solid var(--line); border-radius: 12px; background: var(--panel); color: inherit; outline: none; }\n#acs-result { font-size: 20px; font-weight: 700; margin-bottom: 10px; }\n.acs-ok { color: #2e7d32; } .acs-bad { color: #c62828; }\n.nightMode .acs-ok, .night_mode .acs-ok { color: #7cc36f; } .nightMode .acs-bad, .night_mode .acs-bad { color: #e8845a; }\n.pattern { align-items: flex-end; gap: 6px; }\n.pattern .plus { align-self: center; color: var(--muted); font-size: 18px; }\n.slot { display: inline-flex; flex-direction: column; align-items: center; padding: 2px 8px 4px; border-radius: 8px;\n        border: 2px dashed var(--s); }\n.slot .hz { font-size: 16px; font-style: italic; color: var(--s); }\n.slot-S { --s: #4e79a7; } .slot-N { --s: #59a14f; } .slot-V { --s: #e15759; } .slot-Adj { --s: #f28e2b; }\n.slot-Num { --s: #b07aa1; } .slot-Nombre { --s: #76b7b2; } .slot-Lugar { --s: #9c755f; }\n.slot-Tiempo { --s: #edc948; } .slot-Frase { --s: #8c8c8c; }\n.passage { max-width: 26em; margin: 0 auto; text-align: left; }\n.passage .hz-line { font-size: 28px; line-height: 1.6; }\n.passage .sent { justify-content: flex-start; margin: 0 6px 6px 0; }\ndetails.question { max-width: 26em; margin: 18px auto 0; padding: 10px 12px; border-radius: 12px;\n                   border: 1px solid var(--line); background: var(--panel); }\ndetails.question summary { font: 700 12px/1.4 Menlo, Consolas, monospace; letter-spacing: .1em;\n                           text-transform: uppercase; color: var(--muted); cursor: pointer; }\ndetails.question .hz-line { font-size: 24px; margin-top: 8px; }",
  "deck": {
   "file": "5-output/chino-practico.apkg",
-  "cards": 1331
+  "cards": 1365
  }
 }

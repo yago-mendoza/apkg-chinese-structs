@@ -2000,3 +2000,30 @@ exercises:
     prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
     answer: {typed: '44', hanzi: 电视, pinyin: diànshì, meaning: televisión}
     comments: []
+  - id: x.charsound.wei
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.weishenme, w.yinwei]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 为}
+    answer: {typed: wei4, hanzi: 为, pinyin: wèi, meaning: 'Sale en 为什么 wèishénme «por qué», 因为 yīnwèi «porque».'}
+    comments: []
+  - id: x.charsound.qiu
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.zuqiu, w.lanqiu]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 球}
+    answer: {typed: qiu2, hanzi: 球, pinyin: qiú, meaning: 'Sale en 足球 zúqiú «fútbol», 篮球 lánqiú «baloncesto».'}
+    comments: []
+  - id: x.charsound.dian
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.dianying, w.dianshi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 电}
+    answer: {typed: dian4, hanzi: 电, pinyin: diàn, meaning: 'Sale en 电影 diànyǐng «película», 电视 diànshì «televisión».'}
+    comments: []

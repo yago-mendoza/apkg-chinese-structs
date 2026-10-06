@@ -85,8 +85,10 @@ class Coverage(unittest.TestCase):
         new["accept_pinyin_mismatch"] = "prueba"
         entries = entries + [new]
         made, manual = anki.scaffold_exercises(entries, sentences, exercises, datetime.date(2026, 1, 1))
-        types = sorted(ex["type"] for _, ex in made)
+        types = sorted(ex["type"] for _, ex in made if ex["type"] != "charsound")
         self.assertEqual(types, ["listen", "produce", "read", "tones"])
+        # 朋友 ya estaba: con la de prueba, 朋 y 友 salen en dos palabras y piden su tarjeta de sonido
+        self.assertTrue(all(ex["prompt"]["hanzi"] in "朋友" for _, ex in made if ex["type"] == "charsound"))
         self.assertEqual(manual, [])
         listen = next(ex for _, ex in made if ex["type"] == "listen")
         self.assertEqual(listen["answer"].get("typed"), "peng2 you5")        # lo que se oye se escribe
@@ -711,6 +713,19 @@ class Batch005(unittest.TestCase):
             self.assertTrue(any("prueba-privada" in e and "fuente privada" in e for e in errors))
         finally:
             tmp.unlink()
+
+    def test_lone_hanzi_sound_cards_grow_with_the_deck(self):
+        picks = anki.char_sound_picks(self.entries)
+        self.assertIn("学", picks)                          # 学生, 学习: sin palabra propia
+        self.assertNotIn("好", picks)                       # 好 ya es palabra con su tarjeta
+        self.assertTrue(all(len(v["words"]) >= anki.CHAR_SOUND_MIN_WORDS for v in picks.values()))
+        new = [{"id": "w.t.a", "kind": "word", "use": "say", "hanzi": "学校", "pinyin": "xuéxiào"},
+               {"id": "w.t.b", "kind": "word", "use": "say", "hanzi": "校长", "pinyin": "xiàozhǎng"}]
+        self.assertIn("校", anki.char_sound_picks(self.entries + new))   # al crecer el mazo, aparece solo
+        x = next(x for x in self.exercises if x["type"] == "charsound" and x["prompt"]["hanzi"] == "学")
+        f = self.fields(x["id"])
+        self.assertIn("Dónde sale", f["notes"])
+        self.assertFalse(anki.wants_audio(x, self.eby))     # el hanzi suelto no suena: suenan sus palabras
 
     def test_duplicate_ids_stop_check_and_scaffold(self):
         e = dict(self.eby["w.chi"])

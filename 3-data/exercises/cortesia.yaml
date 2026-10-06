@@ -899,3 +899,33 @@ exercises:
     prompt: {text: 'Situación. La profesora dice algo y no lo has entendido. ¿Qué le pides, en chino?'}
     answer: {hanzi: '请再说一遍。', pinyin: 'qǐng zài shuō yí biàn', meaning: '¿puede repetirlo, por favor?'}
     comments: []
+  - id: x.charsound.yi
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.keyi, w.suoyi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 以}
+    answer: {typed: yi3, hanzi: 以, pinyin: yǐ, meaning: 'Sale en 可以 kěyǐ «poder (está permitido); vale, sirve», 所以 suǒyǐ «así
+        que, por eso».'}
+    comments: []
+  - id: x.charsound.ke
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.keyi, w.keai]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 可}
+    answer: {typed: ke3, hanzi: 可, pinyin: kě, meaning: 'Sale en 可以 kěyǐ «poder (está permitido); vale, sirve», 可爱 kě''ài «mono,
+        adorable».'}
+    comments: []
+  - id: x.charsound.qi
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [e.bukeqi, w.tianqi, w.shengqi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 气}
+    answer: {typed: qi4, hanzi: 气, pinyin: qì, meaning: 'Sale en 不客气 bù kèqi «de nada», 天气 tiānqì «el tiempo (meteorológico)»,
+        生气 shēngqì «enfadarse; enfadado».'}
+    comments: []

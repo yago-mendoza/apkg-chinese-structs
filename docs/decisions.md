@@ -221,3 +221,8 @@ YAGO quería ver cómo va todo a la vez: abrir las tarjetas del mazo, saber qué
 ### 2026-10-06 · Materiales de clase, cuaderno de deberes y a qué nivel se arregla
 
 YAGO pidió que cada lote revise la carpeta de materiales de clase, recuerde qué se procesó y resuelva los ejercicios para sacar de las soluciones frases y vocabulario; un documento fijo en el inbox para lo que anota al hacer los deberes; y que ante cada sugerencia se busque el nivel del arreglo (una nota, cómo se muestra, el tipo de tarjeta y, casi nunca, el esquema, sin romper el cuaderno web). Además, `close-batch` comprueba ahora los nombres privados antes de archivar: en el lote 005 los comprobaba después y uno llegó al commit. Vive en: `docs/design.md` («Flujo de un lote»), `anki.py` (`materials`, `HOMEWORK`, `close_batch_plan`), `1-inbox/README.md`.
+
+### 2026-10-06 · Hanzi sueltos con su sílaba
+
+YAGO propuso asociar hanzi sueltos con su sonido, porque el mazo le hace leer mucho. Para no inflarlo, solo los que salen en dos o más palabras del mazo y no son palabra propia: 34 al empezar (学, 们, 怎, 么, 机…), y más a medida que crece el mazo, que es lo que pidió. El hanzi suelto no lleva audio (la voz sintética leería mal 什 o 么); suenan sus palabras. Vive en: `anki.py` (`char_sound_picks`, tipo `charsound`), `docs/design.md` («Tarjetas»), `docs/goal.md` («Cómo se explica un carácter»).
+

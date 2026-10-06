@@ -1825,3 +1825,50 @@ exercises:
     prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
     answer: {typed: '22', hanzi: 学习, pinyin: xuéxí, meaning: 'estudiar, aprender'}
     comments: []
+  - id: x.charsound.zhong
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.zhongguo, w.zhongwen, w.zhongwu]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 中}
+    answer: {typed: zhong1, hanzi: 中, pinyin: zhōng, meaning: 'Sale en 中国 Zhōngguó «China», 中文 Zhōngwén «chino (la lengua)»,
+        中午 zhōngwǔ «mediodía».'}
+    comments: []
+  - id: x.charsound.shen
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.shenme, w.weishenme]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 什}
+    answer: {typed: shen2, hanzi: 什, pinyin: shén, meaning: 'Sale en 什么 shénme «qué», 为什么 wèishénme «por qué».'}
+    comments: []
+  - id: x.charsound.ming
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.mingzi, w.xingming]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 名}
+    answer: {typed: ming2, hanzi: 名, pinyin: míng, meaning: 'Sale en 名字 míngzi «nombre», 姓名 xìngmíng «nombre completo».'}
+    comments: []
+  - id: x.charsound.duo
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.menduosa, w.duoshao, e.duoshaoqian]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 多}
+    answer: {typed: duo1, hanzi: 多, pinyin: duō, meaning: 'Sale en 门多萨 Ménduōsà «Mendoza (mi apellido)», 多少 duōshao «cuánto,
+        cuántos», 多少钱 duōshao qián «¿cuánto cuesta?».'}
+    comments: []
+  - id: x.charsound.xi
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.xibanya, w.dongxi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 西}
+    answer: {typed: xi1, hanzi: 西, pinyin: xī, meaning: 'Sale en 西班牙 Xībānyá «España», 东西 dōngxi «cosa, cosas».'}
+    comments: []

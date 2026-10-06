@@ -563,6 +563,40 @@ def tone_pair(item):
     return f"{syl[0][1]}-{syl[1][1]}"
 
 
+CHAR_SOUND_MIN_WORDS = 2   # un hanzi sin palabra propia en el mazo que sale en tantas palabras tiene tarjeta de sonido
+
+
+def char_sound_picks(entries):
+    """Hanzi sueltos para asociar con su sílaba (YAGO, 2026-10-06): los que salen en CHAR_SOUND_MIN_WORDS o más palabras
+    del mazo para oír o decir y no son ya palabra propia (好 tiene su tarjeta; 学, de 学生 y 学习, no). Crece solo con el
+    mazo. {hanzi: {"words": [ids], "readings": [pinyin de cita, sin repetir]}}."""
+    from pypinyin import Style, pinyin as py
+    own = {e["hanzi"] for e in entries if e.get("hanzi") and len(e["hanzi"]) == 1 and use_modalities(e)
+           and e.get("kind") in ("word", "expression", "character")}
+    found = {}
+    for e in entries:
+        if e.get("kind") not in ("word", "expression") or not use_modalities(e) & {"hear", "say"}:
+            continue
+        chars = [c for c in e.get("hanzi") or "" if "一" <= c <= "鿿"]
+        syl = syllable_tones(e.get("hanzi"), e.get("pinyin"))
+        if len(chars) < 2 or not syl or len(syl) != len(chars):
+            continue
+        for ch, (bare, tone) in zip(chars, syl):
+            if ch in own or tone == "erhua":
+                continue
+            cands = [c for c in py(ch, style=Style.TONE, heteronym=True)[0] if strip_tones(c) == bare]
+            if not cands:
+                continue
+            same = [c for c in cands if next((UNMARK[x][1] for x in c if x in UNMARK), 5) == tone]
+            reading = (same or cands)[0] if tone != 5 and ch not in "不一" else cands[0]
+            item = found.setdefault(ch, {"words": [], "readings": []})
+            if e["id"] not in item["words"]:
+                item["words"].append(e["id"])
+            if reading not in item["readings"]:
+                item["readings"].append(reading)
+    return {ch: v for ch, v in found.items() if len(v["words"]) >= CHAR_SOUND_MIN_WORDS}
+
+
 def tone_pair_picks(entries):
     """Pista de pronunciación: por cada pareja de tonos, las TONE_PAIR_WORDS palabras de dos sílabas (para oír o
     decir, sin nombres propios) que llevan tarjeta de tonos; primero las que ya la piden por neutro o sandhi, luego
@@ -633,6 +667,7 @@ def satisfied(ex):
         "nuance": {"nuance"},          # matiz o confusión concreta: nunca exigido, lo pide YAGO en el review
         "pattern": {"pattern"},        # elegir entre la frase buena y su calco
         "comprehension": {"comprehension"},   # leer un texto corto y responder: nunca exigido, a mano
+        "charsound": set(),            # un hanzi suelto y su sílaba: lo exige char_sound_picks, no las entradas
     }.get(t, set())
 
 
@@ -727,7 +762,8 @@ def cmd_lookup(query):
 
 PRIMARY = {"read": "lectura", "listen": "escucha", "tones": "tonos", "produce": "producción",
            "derive": "producción", "cloze": "producción", "speak": "voz alta", "contrast": "contraste",
-           "components": "componentes", "nuance": "matiz", "pattern": "estructura", "comprehension": "comprensión"}
+           "components": "componentes", "nuance": "matiz", "pattern": "estructura", "comprehension": "comprensión",
+           "charsound": "sonido del hanzi"}
 GENERATED = "<!-- Generado por `anki.py notebook` desde 3-data/. No editar: se rehace en cada lote. -->"
 REVIEW_HEADER = ("<!-- REVIEW: para opinar. Debajo de cada punto hay una línea «>»: escribe lo que quieras (sí, no, "
                  "un matiz, una duda, una frase, una corrección). Lo que escribas entra en el siguiente lote; lo que "
@@ -1066,6 +1102,22 @@ def scaffold_exercises(entries, sentences, exercises, today):
                 made.append(make(f"x.contrast.{short}", theme, type="contrast", group=grp["id"], targets=[iid],
                                  skills=skills, prompt=prompt,
                                  answer={"hanzi": it["hanzi"], "pinyin": it["pinyin"], "meaning": meaning}))
+    # Hanzi sueltos con su sílaba: salen después de sus palabras (STAGE) y en el tema de la primera.
+    have_chars = {(ex.get("prompt") or {}).get("hanzi") for ex in exercises if ex.get("type") == "charsound"}
+    for ch, info in sorted(char_sound_picks(entries).items()):
+        if ch in have_chars:
+            continue
+        words = [eby_all[w] for w in info["words"]]
+        seen = "Sale en " + ", ".join(f"{w['hanzi']} {w['pinyin']} «{(w.get('meaning') or {}).get('es', '')}»" for w in words[:4]) + "."
+        one = len(info["readings"]) == 1
+        answer = {"hanzi": ch, "pinyin": " / ".join(info["readings"]), "meaning": seen}
+        if one:
+            answer = {"typed": to_numeric(ch, info["readings"][0])} | answer
+        made.append(make(f"x.charsound.{strip_tones(info['readings'][0])}", words[0].get("theme"), type="charsound",
+                         targets=info["words"], skills=["reading", "pinyin", "tones"],
+                         prompt={"text": "¿Cómo suena este hanzi? Escribe la sílaba con su tono." if one else
+                                 "¿Cómo suena este hanzi? Tiene más de una lectura: dilas.", "hanzi": ch},
+                         answer=answer))
     return made, manual
 
 
@@ -1420,6 +1472,9 @@ def wants_audio(ex, eby):
     forma: no lo necesita. El de homófonos y el de palabras que se parecen al oído sí, porque el
     sonido es lo que se contrasta."""
     if ex.get("type") in ("components", "nuance", "pattern", "comprehension"):   # comprensión: el audio va por frase
+        return False
+    if ex.get("type") == "charsound":
+        # Un hanzi suelto se lee mal en voz sintética si tiene otra lectura (什 shí, 么 yāo): suenan sus palabras.
         return False
     if ex.get("type") == "contrast":
         return eby.get(ex.get("group"), {}).get("basis") in ("homophone", "soundalike")
@@ -1838,7 +1893,7 @@ def validate(entries, sentences, exercises, require_audio=True):
         if not s.get("translation"):
             errors.append(f"{s['id']}: falta traducción")
     types = {"read", "listen", "tones", "cloze", "produce", "speak", "components", "contrast", "derive", "nuance",
-             "pattern", "comprehension"}
+             "pattern", "comprehension", "charsound"}
     seen = {}
     for ex in exercises:
         xid = ex["id"]
@@ -1976,6 +2031,9 @@ def validate(entries, sentences, exercises, require_audio=True):
     for it, req, have in coverage(entries, sentences, exercises):
         for m in sorted(req - have):
             errors.append(f"{it['id']} ({label(it)}): falta tarjeta de {CARD_LABELS[m]} (ver `plan`)")
+    have_chars = {(ex.get("prompt") or {}).get("hanzi") for ex in exercises if ex.get("type") == "charsound"}
+    for ch in sorted(set(char_sound_picks(entries)) - have_chars):
+        errors.append(f"{ch}: sale en varias palabras y le falta su tarjeta de sonido del hanzi (ver `scaffold`)")
     for e in osmosis_gaps(entries, sentences):
         warnings.append(f"{e['id']} ({e['hanzi']}): use {use_label(e)} sin ninguna frase que la contenga (ósmosis)")
     # El porqué de cada carácter (3-data/hanzi.yaml): todo hanzi del mazo lo tiene, y no sobra ninguno.
@@ -2289,7 +2347,7 @@ def partner_example(ex, sby, eby):
     """Lo que se confunde aparece junto, pero dicho: si el objetivo tiene pareja en un grupo de contraste o de serie
     (十 / 是, 要 / 喜欢), una frase de la pareja en su propio apartado, «Para no confundirlo con 是 shì». Antes iba
     mezclada con los ejemplos y parecía un ejemplo equivocado. (entrada de la pareja, id de la frase) o None."""
-    if ex.get("reveal") or ex.get("type") in ("cloze", "nuance", "pattern", "comprehension", "minimal"):
+    if ex.get("reveal") or ex.get("type") in ("cloze", "nuance", "pattern", "comprehension", "charsound"):
         return None
     targets = [t for t in ex.get("targets", []) if t not in sby]
     if not targets:
@@ -2404,7 +2462,9 @@ def card_fields(ex, eby, sby, manifest, media_files):
     # Grupos: el del ejercicio y los de sus objetivos (se recuerda mejor por contraste). Si un objetivo
     # está en un conjunto (set) y en un patrón, basta el conjunto.
     shown_groups = [group] if group else []
-    for tid in ex.get("targets", []):
+    # Un hanzi suelto evalúa su sonido, no sus palabras: el reverso no trae los grupos ni las notas de cada una.
+    note_targets = [] if ex["type"] == "charsound" else ex.get("targets", [])
+    for tid in note_targets:
         member_of = [g for g in eby.values() if g.get("kind") == "group"
                      and any(m.get("ref") == tid for m in g.get("members", []))]
         if any(g.get("basis") == "set" for g in member_of):
@@ -2424,7 +2484,7 @@ def card_fields(ex, eby, sby, manifest, media_files):
             + (f"<span class=\"vs-cue\">{esc(m.get('cue'))}</span>" if m.get('cue') else "") + "</div>"
             for m in g["members"])
         notes.append(f"<h4>{esc(g.get('title'))}</h4>{esc(g.get('explanation'))}{rows}")
-    for tid in ex.get("targets", []):
+    for tid in note_targets:
         t = eby.get(tid, {})
         st = char_status(t)
         if st == "componente":
@@ -2464,7 +2524,12 @@ def card_fields(ex, eby, sby, manifest, media_files):
     if not sent and ex["type"] not in ("pattern", "contrast", "comprehension") and pos_of(first) \
             and first.get("hanzi") == ans.get("hanzi"):
         back += f'<div class="legend pos">{esc(POS_LABEL[pos_of(first)])}</div>'
-    examples = [] if ex["type"] == "pattern" else examples_for(ex, sby, eby)
+    if ex["type"] == "charsound":
+        notes.append("<h4>Dónde sale</h4>" + "".join(
+            f"<div class=\"example\"><span class=\"hz\">{esc(eby[w]['hanzi'])}</span> {esc(eby[w].get('pinyin'))} · "
+            f"{esc((eby[w].get('meaning') or {}).get(lang, ''))}{sound(eby[w]['hanzi'], manifest, media_files)}</div>"
+            for w in ex.get("targets", []) if w in eby))
+    examples = [] if ex["type"] in ("pattern", "charsound") else examples_for(ex, sby, eby)
     if examples:
         notes.append(f"<h4>{'Ejemplo' if len(examples) == 1 else 'Ejemplos'}</h4>" + "".join(
             f"<div class=\"example\">{render_sentence(sby[sid])}<div>{esc(sby[sid]['translation'].get(lang))}</div>"
@@ -2479,17 +2544,18 @@ def card_fields(ex, eby, sby, manifest, media_files):
     # Sus caracteres: de qué está hecho cada hanzi de la palabra que se responde (tipo, qué pieza da el significado y
     # cuál el sonido), de 3-data/hanzi.yaml y sources/hanzi. Solo en tarjetas de palabras, nunca en las de frases.
     card_lv = max([lv for lv in (level_of(t, eby, sby, hsk_levels()) for t in ex.get("targets", [])) if lv] or [0]) or None
-    chars_html = character_lines(first.get("hanzi") if not sent and first.get("kind") in ("word", "character", "expression") else "",
-                                 lang, list(eby.values()), card_lv)
+    shown_hz = (prompt.get("hanzi") if ex["type"] == "charsound"            # el hanzi suelto, no su primera palabra
+                else first.get("hanzi") if not sent and first.get("kind") in ("word", "character", "expression") else "")
+    chars_html = character_lines(shown_hz, lang, list(eby.values()), card_lv)
     if chars_html:
-        notes.append(f"<h4>{'Por qué se escribe así' if len(first.get('hanzi') or '') == 1 else 'Sus caracteres'}</h4>{chars_html}")
+        notes.append(f"<h4>{'Por qué se escribe así' if len(shown_hz or '') == 1 else 'Sus caracteres'}</h4>{chars_html}")
     # Conexión con otros hanzi del mazo: un recuadro como mucho, el del primer objetivo (docs/goal.md).
     con = connection_for(first, list(eby.values())) if not sent else None
     if con and con.get("text"):
         notes.append(f"<h4>Conexión · {CONNECTION_KINDS.get(con.get('kind'), '')}</h4>{esc(con['text'])}")
     # Comentarios: solo los marcados private: false (del ejercicio y de sus objetivos).
     comments = list(ex.get("comments", []))
-    for tid in ex.get("targets", []):
+    for tid in note_targets:
         comments += eby.get(tid, {}).get("comments", [])
     labels = {"mnemonic": "Mnemotecnia · imagen para recordar, no su origen", "teacher": "En clase", "linguistic": "Nota", "note": "Apunte",
               "character": "El carácter",
@@ -2660,7 +2726,8 @@ def note_section(html_note):
 
 TYPE_ES = {"read": "Leer", "listen": "Escuchar", "produce": "Decir", "speak": "En voz alta", "tones": "Tonos",
            "cloze": "Hueco", "contrast": "Contraste", "components": "Componentes", "derive": "Deducir",
-           "nuance": "Matiz", "pattern": "Estructura", "comprehension": "Comprensión"}
+           "nuance": "Matiz", "pattern": "Estructura", "comprehension": "Comprensión",
+           "charsound": "Sonido del hanzi"}
 
 
 def card_meta(ex, eby, sby):
@@ -3461,7 +3528,7 @@ def find_anki():
 
 STAGE_LAG = 1
 STAGE = {"read": 0, "contrast": 1, "components": 1, "nuance": 1, "listen": 2, "tones": 3,
-         "produce": 4, "derive": 4, "cloze": 4, "speak": 5, "pattern": 5, "comprehension": 5}
+         "produce": 4, "derive": 4, "cloze": 4, "speak": 5, "pattern": 5, "comprehension": 5, "charsound": 3}
 
 
 def new_card_order(entries, sentences, exercises):
