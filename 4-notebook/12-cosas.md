@@ -53,6 +53,11 @@
 - ✅🃏 树 shù [ʂu˥˩] · árbol · _sustantivo_ · 这棵树很高 «este árbol es alto»: 棵 kē es el clasificador de los árboles. No confundir con 书 shū «libro»: suenan parecido, pero 树 es cuarto tono.
 - ✅🃏 电视 diànshì [tjɛn˥˩ ʂɨ˥˩] · televisión · _sustantivo_
 - ✅🃏 龙 lóng [lʊŋ˧˥] · dragón · _sustantivo_ · 龍 es su forma tradicional. Es frecuente en nombres: 成龙 «Jackie Chan», 大龙, y 李小龙 «Bruce Lee».
+- ✅🃏 笔 bǐ [pi˧˩˧] · bolígrafo, lápiz · _clasificador_
+- ✅🃏 杯子 bēizi [peɪ˥ tsɯ] · vaso, taza · _sustantivo_
+- ✅🃏 电话 diànhuà [tjɛn˥˩ xwa˥˩] · teléfono · _sustantivo_
+- ✅🃏 左 zuǒ [tswɔ˧˩˧] · izquierda · _sustantivo_
+- ✅🃏 右 yòu [joʊ˥˩] · derecha · _sustantivo_ · 左 «izquierda» + 右 «derecha» = 左右 «más o menos», detrás de un número.
 
 ## 那 y 哪里
 
@@ -101,12 +106,35 @@ Cada uno niega una cosa distinta.
 - 国 guó · guó, sube: país
 - 过 guo · guo, átono tras el verbo: haber hecho
 
-## 书 shū / 树 shù
+## 书 shū, 树 shù, 鼠 y 属 shǔ
 
-Misma sílaba, distinto tono: 书 shū es «libro» (primer tono, alto y plano) y 树 shù es «árbol» (cuarto tono, cae).
+Misma sílaba, distinto tono: 书 shū «libro» (alto y plano), 树 shù «árbol» (cae), y con tercer tono (baja y sube) 鼠 «rata» y 属 «ser de un signo», que suenan igual: 我属鼠.
 
 - 书 shū · shū, alto y plano: libro
 - 树 shù · shù, cae: árbol
+- 鼠 shǔ · shǔ, baja y sube: rata (zodiaco)
+- 属 shǔ · shǔ, baja y sube: ser de un signo (我属马)
+
+## 哪 y 都
+
+Comparten 阝 a la derecha; la izquierda los separa.
+
+- 哪 nǎ · 哪 nǎ «cuál»: 口 boca a la izquierda, porque pregunta
+- 都 dōu · 都 dōu «todos»: 者 a la izquierda
+
+## 比 y 笔: los dos bǐ
+
+Suenan igual: la frase decide. 比 compara (他比我高); 笔 es el bolígrafo.
+
+- 比 bǐ · 比: comparar (A 比 B)
+- 笔 bǐ · 笔: bolígrafo, lápiz
+
+## 左 zuǒ y 坐 zuò
+
+左 baja y sube; 坐 cae.
+
+- 左 zuǒ · zuǒ, baja y sube: izquierda
+- 坐 zuò · zuò, cae: sentarse
 
 ## Frases
 
@@ -144,3 +172,6 @@ Misma sílaba, distinto tono: 书 shū es «libro» (primer tono, alto y plano) 
 - ✅🃏 这棵树很高。 · zhè kē shù hěn gāo · Este árbol es muy alto.
 - ✅🃏 那是什么树？ · nà shì shénme shù · ¿Qué árbol es ese?
 - ✅🃏 我在看电视。 · wǒ zài kàn diànshì · Estoy viendo la tele.
+- ✅🃏 这是我的书。 · zhè shì wǒ de shū · Este es mi libro.
+- ✅🃏 那是你的笔吗？ · nà shì nǐ de bǐ ma · ¿Ese es tu bolígrafo?
+- ✅🃏 这是我的杯子。 · zhè shì wǒ de bēizi · Esta es mi taza.

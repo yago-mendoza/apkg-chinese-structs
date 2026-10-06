@@ -365,3 +365,13 @@ entries:
     contrast: {right: s.ta-shi-bu-shi-chenglong, wrong: '他是不是成龙吗？', why: {es: '是不是 ya es la pregunta; con 吗 sobra.', en: '是不是 is already the question; 吗 is one too many.'}}
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
     comments: []
+  - id: st.age-no-shi
+    kind: structure
+    use: say
+    pattern: '{S} + {Num} + 岁'
+    refs: [w.sui]
+    meaning: {es: 'La edad va sin 是: 我二十三岁. Igual la fecha: 今天八号.', en: 'Age takes no 是: 我二十三岁. Same with dates.'}
+    examples: [s.wo-ershisan-sui]
+    contrast: {right: s.wo-ershisan-sui, wrong: '我是二十三岁。', why: {es: '«Tengo 23 años» no lleva verbo en chino: la edad hace de predicado sin 是.', en: 'Age is the predicate itself, without 是.'}}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []

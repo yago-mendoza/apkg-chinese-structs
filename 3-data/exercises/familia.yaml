@@ -545,3 +545,322 @@ exercises:
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 爸}
     answer: {typed: ba4, hanzi: 爸, pinyin: bà, meaning: 'Sale en 爸爸 bàba «papá», 爸妈 bàmā «los padres, papá y mamá (coloquial)».'}
     comments: []
+  - id: x.situation.ayi-hao
+    added: 2026-10-06
+    lang: es
+    type: speak
+    targets: [w.ayi]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Entras en casa de un amigo y te recibe su madre. ¿Cómo la saludas?'}
+    answer: {hanzi: '阿姨好！', pinyin: 'āyí hǎo', meaning: '¡hola, señora!'}
+    comments: []
+  - id: x.dictation.ayi
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.ayi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: a1 yi2, hanzi: 阿姨, pinyin: āyí, meaning: tía; señora (de la edad de tus padres)}
+    comments: []
+  - id: x.produce.ayi
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.ayi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «tía; señora (de la edad de tus padres)»? Escribe el pinyin.'}
+    answer: {typed: a1 yi2, hanzi: 阿姨, pinyin: āyí, meaning: tía; señora (de la edad de tus padres)}
+    comments: []
+  - id: x.read.ayi
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.ayi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 阿姨}
+    answer: {hanzi: 阿姨, pinyin: āyí, meaning: tía; señora (de la edad de tus padres)}
+    comments: []
+  - id: x.dictation.shushu
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.shushu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shu1 shu5, hanzi: 叔叔, pinyin: shūshu, meaning: tío; señor (de la edad de tus padres)}
+    comments: []
+  - id: x.produce.shushu
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.shushu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «tío; señor (de la edad de tus padres)»? Escribe el pinyin.'}
+    answer: {typed: shu1 shu5, hanzi: 叔叔, pinyin: shūshu, meaning: tío; señor (de la edad de tus padres)}
+    comments: []
+  - id: x.read.shushu
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.shushu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 叔叔}
+    answer: {hanzi: 叔叔, pinyin: shūshu, meaning: tío; señor (de la edad de tus padres)}
+    comments: []
+  - id: x.tones.shushu
+    added: 2026-10-06
+    lang: es
+    type: tones
+    targets: [w.shushu]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 叔叔, pinyin: shu shu}
+    answer: {typed: '15', hanzi: 叔叔, pinyin: shūshu, meaning: tío; señor (de la edad de tus padres)}
+    comments: []
+  - id: x.dictation.yeye
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.yeye]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ye2 ye5, hanzi: 爷爷, pinyin: yéye, meaning: abuelo (paterno)}
+    comments: []
+  - id: x.produce.yeye
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.yeye]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «abuelo (paterno)»? Escribe el pinyin.'}
+    answer: {typed: ye2 ye5, hanzi: 爷爷, pinyin: yéye, meaning: abuelo (paterno)}
+    comments: []
+  - id: x.read.yeye
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.yeye]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 爷爷}
+    answer: {hanzi: 爷爷, pinyin: yéye, meaning: abuelo (paterno)}
+    comments: []
+  - id: x.tones.yeye
+    added: 2026-10-06
+    lang: es
+    type: tones
+    targets: [w.yeye]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 爷爷, pinyin: ye ye}
+    answer: {typed: '25', hanzi: 爷爷, pinyin: yéye, meaning: abuelo (paterno)}
+    comments: []
+  - id: x.dictation.nainai
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.nainai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nai3 nai5, hanzi: 奶奶, pinyin: nǎinai, meaning: abuela (paterna)}
+    comments: []
+  - id: x.produce.nainai
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.nainai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «abuela (paterna)»? Escribe el pinyin.'}
+    answer: {typed: nai3 nai5, hanzi: 奶奶, pinyin: nǎinai, meaning: abuela (paterna)}
+    comments: []
+  - id: x.read.nainai
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.nainai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 奶奶}
+    answer: {hanzi: 奶奶, pinyin: nǎinai, meaning: abuela (paterna)}
+    comments: []
+  - id: x.tones.nainai
+    added: 2026-10-06
+    lang: es
+    type: tones
+    targets: [w.nainai]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 奶奶, pinyin: nai nai}
+    answer: {typed: '35', hanzi: 奶奶, pinyin: nǎinai, meaning: abuela (paterna)}
+    comments: []
+  - id: x.dictation.fumu
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.fumu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fu4 mu3, hanzi: 父母, pinyin: fùmǔ, meaning: los padres}
+    comments: []
+  - id: x.read.fumu
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.fumu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 父母}
+    answer: {hanzi: 父母, pinyin: fùmǔ, meaning: los padres}
+    comments: []
+  - id: x.listen.wo-baba-shi-laoshi
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.wo-baba-shi-laoshi
+    targets: [s.wo-baba-shi-laoshi]
+    context: [w.wo, w.baba, w.shi, w.laoshi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mi padre es profesor.}
+    comments: []
+  - id: x.produce.wo-baba-shi-laoshi
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.wo-baba-shi-laoshi
+    targets: [s.wo-baba-shi-laoshi]
+    context: [w.wo, w.baba, w.shi, w.laoshi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mi padre es profesor.»'}
+    answer: {meaning: Mi padre es profesor.}
+    comments: []
+  - id: x.listen.wo-mama-shi-yisheng
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.wo-mama-shi-yisheng
+    targets: [s.wo-mama-shi-yisheng]
+    context: [w.wo, w.mama, w.shi, w.yisheng]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mi madre es médica.}
+    comments: []
+  - id: x.produce.wo-mama-shi-yisheng
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.wo-mama-shi-yisheng
+    targets: [s.wo-mama-shi-yisheng]
+    context: [w.wo, w.mama, w.shi, w.yisheng]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mi madre es médica.»'}
+    answer: {meaning: Mi madre es médica.}
+    comments: []
+  - id: x.listen.ni-hao-ayi
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.ni-hao-ayi
+    targets: [s.ni-hao-ayi]
+    context: [e.nihao, w.ayi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Hola, señora!'}
+    comments: []
+  - id: x.produce.ni-hao-ayi
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.ni-hao-ayi
+    targets: [s.ni-hao-ayi]
+    context: [e.nihao, w.ayi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Hola, señora!»'}
+    answer: {meaning: '¡Hola, señora!'}
+    comments: []
+  - id: x.listen.nage-ren-shi-ni-de-baba-ma
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.nage-ren-shi-ni-de-baba-ma
+    targets: [s.nage-ren-shi-ni-de-baba-ma]
+    context: [w.na.that, w.ge, w.ren, w.shi, w.ni, w.de, w.baba, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Esa persona es tu padre?'}
+    comments: []
+  - id: x.produce.nage-ren-shi-ni-de-baba-ma
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.nage-ren-shi-ni-de-baba-ma
+    targets: [s.nage-ren-shi-ni-de-baba-ma]
+    context: [w.na.that, w.ge, w.ren, w.shi, w.ni, w.de, w.baba, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Esa persona es tu padre?»'}
+    answer: {meaning: '¿Esa persona es tu padre?'}
+    comments: []
+  - id: x.listen.baba-he-mama-dou-hen-gao
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.baba-he-mama-dou-hen-gao
+    targets: [s.baba-he-mama-dou-hen-gao]
+    context: [w.baba, w.he.and, w.mama, w.dou, w.hen, w.gao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Papá y mamá son altos los dos.}
+    comments: []
+  - id: x.produce.baba-he-mama-dou-hen-gao
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.baba-he-mama-dou-hen-gao
+    targets: [s.baba-he-mama-dou-hen-gao]
+    context: [w.baba, w.he.and, w.mama, w.dou, w.hen, w.gao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Papá y mamá son altos los dos.»'}
+    answer: {meaning: Papá y mamá son altos los dos.}
+    comments: []
+  - id: x.listen.shushu-ayi-hao
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.shushu-ayi-hao
+    targets: [s.shushu-ayi-hao]
+    context: [w.shushu, w.ayi, w.hao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Hola, señores!'}
+    comments: []
+  - id: x.produce.shushu-ayi-hao
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.shushu-ayi-hao
+    targets: [s.shushu-ayi-hao]
+    context: [w.shushu, w.ayi, w.hao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Hola, señores!»'}
+    answer: {meaning: '¡Hola, señores!'}
+    comments: []
+  - id: x.listen.wo-yeye-he-nainai-dou-hen-hao
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.wo-yeye-he-nainai-dou-hen-hao
+    targets: [s.wo-yeye-he-nainai-dou-hen-hao]
+    context: [w.wo, w.yeye, w.he.and, w.nainai, w.dou, w.hen, w.hao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mis abuelos están bien los dos.}
+    comments: []
+  - id: x.produce.wo-yeye-he-nainai-dou-hen-hao
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.wo-yeye-he-nainai-dou-hen-hao
+    targets: [s.wo-yeye-he-nainai-dou-hen-hao]
+    context: [w.wo, w.yeye, w.he.and, w.nainai, w.dou, w.hen, w.hao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mis abuelos están bien los dos.»'}
+    answer: {meaning: Mis abuelos están bien los dos.}
+    comments: []

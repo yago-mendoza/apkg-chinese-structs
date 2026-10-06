@@ -11,7 +11,7 @@
 - ✅🃏 胖 pàng [pʰɑŋ˥˩] · gordo · _adjetivo_ · El 月 de la izquierda es 肉 «carne», como en muchas partes del cuerpo; no «luna». · 半 bàn «mitad» [HSK 1] le da el sonido: pàng. 月 es 肉 «carne». · Mitad carne, mitad grasa: gordo.
 - ✅🃏 瘦 shòu [ʂoʊ˥˩] · delgado · _adjetivo_ · 疒 «enfermedad» + 叟 «anciano»: un anciano enfermo, flaco. · 叟 sǒu «anciano» da un sonido parecido: shòu. 疒 es la pieza de las enfermedades: una cama con una persona tumbada.
 - ✅🃏 漂亮 piàoliang [pʰjɑʊ˥˩ ljɑŋ] · guapo, bonito · _adjetivo_ · 漂 se lee piào solo en 漂亮; suelto es piāo «flotar». 票 piào «billete» le da el sonido. · 亮 liàng pierde el tono dentro de 漂亮: piàoliang.
-- ✅🃏 帅 shuài [ʂwaɪ˥˩] · guapo (sobre todo hombres) · _adjetivo_ · Viene de 元帅 yuánshuài «mariscal» [HSK 7]; hoy se usa sobre todo como «guapo». Por herencia, un mariscal sería el guapo supremo.
+- ✅🃏 帅 shuài [ʂwaɪ˥˩] · guapo (sobre todo hombres) · _adjetivo_ · Viene de 元帅 yuánshuài «mariscal» [HSK 7]; hoy se usa sobre todo como «guapo». Por herencia, un mariscal sería el guapo supremo. · shuài suena «shuai»; no lo confundas con 水 shuǐ, que suena casi «shuei».
 - ✅🃏 聪明 cōngming [tsʰʊŋ˥ miŋ] · listo, inteligente · _adjetivo_ · El acento cae en cōng; ming va átono y corto. · 聪 lleva 耳 «oreja»: tener el oído fino. Con 明 «claro»: listo.
 - ✅🃏 笨 bèn [pən˥˩] · torpe, tonto · _adjetivo_ · 竹 «bambú» sobre 本 «raíz»: una raíz de bambú no sirve para nada, torpe.
 - ✅🃏 可爱 kě'ài [kʰɤ˧˩˧ aɪ˥˩] · mono, adorable · _adjetivo_ · Suena como «kawaii» dicho con la boca dormida. · El parecido con «kawaii» es solo de sonido, no histórico.
@@ -28,6 +28,7 @@
 - ✅🃏 比 bǐ [pi˧˩˧] · que (para comparar) · _preposición_ · A 比 B + adjetivo, sin 很: 他比我高 «es más alto que yo».
 - ✅🃏 最 zuì [tsweɪ˥˩] · el más, lo que más · _adverbio_ · Delante del verbo o del adjetivo: 我最喜欢中国菜 «lo que más me gusta es la comida china».
 - ✅🃏 又 yòu [joʊ˥˩] · a la vez (又…又…) · _adverbio_ · 又 + adjetivo + 又 + adjetivo: dos cualidades a la vez, 他又高又帅. Es la forma de decir «alto y guapo»: 和 no une adjetivos.
+- ✅🃏 真 zhēn [ʈʂən˥] · de verdad; ¡qué…! · _adverbio_ · 真 + adjetivo exclama: 这个苹果真大！ «¡qué grande!». 很 + adjetivo solo describe.
 
 ## 大, 太 y 天
 
@@ -81,3 +82,5 @@ Casi iguales al oído: 本 běn (tercer tono) cuenta libros y 笨 bèn (cuarto t
 - ✅🃏 他很幽默，大家都喜欢他。 · tā hěn yōumò dàjiā dōu xǐhuan tā · Es muy gracioso: a todo el mundo le cae bien.
 - ✅🃏 我不高，也不矮。 · wǒ bù gāo yě bù ǎi · No soy ni alto ni bajo.
 - ✅🃏 他不胖，他很瘦。 · tā bú pàng tā hěn shòu · No está gordo: es muy delgado.
+- ✅🃏 这个苹果真大！ · zhè ge píngguǒ zhēn dà · ¡Qué grande es esta manzana!
+- ✅🃏 阿姨，您很年轻！ · āyí nín hěn niánqīng · ¡Señora, qué joven es usted!

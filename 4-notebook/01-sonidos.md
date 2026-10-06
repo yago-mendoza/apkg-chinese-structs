@@ -57,3 +57,8 @@ Tres familias que el español junta en una sola s o ch. z c s: lengua plana tras
 
 -n acaba con la lengua tocando detrás de los dientes, como en «pan». -ng acaba atrás, con la boca abierta, como la n de «tengo»: no suena la g. Cambia la palabra: 心 xīn «corazón», 星 xīng «estrella».
 
+
+## 一: yī, yí o yì
+
+Suelto, contando o en un número, yī (第一, 十一). Delante de un cuarto tono, yí: 一个 yí ge. Delante de los demás tonos, yì: 一本 yì běn, 一百 yì bǎi. En números de teléfono, yāo, para no confundirlo con 七 qī.
+

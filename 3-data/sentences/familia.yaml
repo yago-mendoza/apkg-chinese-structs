@@ -79,3 +79,81 @@ sentences:
       - {text: 。}
     translation: {es: 'Son mis padres.', en: "They're my parents."}
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+  - id: s.wo-baba-shi-laoshi
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 爸爸, ref: w.baba, pinyin: 'bàba'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 老师, ref: w.laoshi, pinyin: 'lǎoshī'}
+      - {text: 。}
+    translation: {es: 'Mi padre es profesor.', en: 'My father is a teacher.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: deberes 2026-10-06, date: '2026-10-06'}
+  - id: s.wo-mama-shi-yisheng
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 妈妈, ref: w.mama, pinyin: 'māma'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 医生, ref: w.yisheng, pinyin: 'yīshēng'}
+      - {text: 。}
+    translation: {es: 'Mi madre es médica.', en: 'My mother is a doctor.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: deberes 2026-10-06, date: '2026-10-06'}
+  - id: s.ni-hao-ayi
+    use: say
+    segments:
+      - {text: 你好, ref: e.nihao, pinyin: 'nǐ hǎo'}
+      - {text: ，}
+      - {text: 阿姨, ref: w.ayi, pinyin: 'āyí'}
+      - {text: ！}
+    translation: {es: '¡Hola, señora!', en: 'Hello, auntie!'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: deberes 2026-10-06, date: '2026-10-06'}
+  - id: s.nage-ren-shi-ni-de-baba-ma
+    use: say
+    segments:
+      - {text: 那, ref: w.na.that, pinyin: 'nà'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 爸爸, ref: w.baba, pinyin: 'bàba'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Esa persona es tu padre?', en: 'Is that person your father?'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.baba-he-mama-dou-hen-gao
+    use: say
+    segments:
+      - {text: 爸爸, ref: w.baba, pinyin: 'bàba'}
+      - {text: 和, ref: w.he.and, pinyin: 'hé'}
+      - {text: 妈妈, ref: w.mama, pinyin: 'māma'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 高, ref: w.gao, pinyin: 'gāo'}
+      - {text: 。}
+    translation: {es: 'Papá y mamá son altos los dos.', en: 'Dad and mom are both tall.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.shushu-ayi-hao
+    use: say
+    segments:
+      - {text: 叔叔, ref: w.shushu, pinyin: 'shūshu'}
+      - {text: 、}
+      - {text: 阿姨, ref: w.ayi, pinyin: 'āyí'}
+      - {text: 好, ref: w.hao, pinyin: 'hǎo'}
+      - {text: ！}
+    translation: {es: '¡Hola, señores!', en: 'Hello, uncle and auntie!'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.wo-yeye-he-nainai-dou-hen-hao
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 爷爷, ref: w.yeye, pinyin: 'yéye'}
+      - {text: 和, ref: w.he.and, pinyin: 'hé'}
+      - {text: 奶奶, ref: w.nainai, pinyin: 'nǎinai'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 好, ref: w.hao, pinyin: 'hǎo'}
+      - {text: 。}
+    translation: {es: 'Mis abuelos están bien los dos.', en: 'My grandparents are both well.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}

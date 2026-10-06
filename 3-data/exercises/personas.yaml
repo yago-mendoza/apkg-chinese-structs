@@ -670,3 +670,196 @@ exercises:
     answer: {typed: gong1, hanzi: 工, pinyin: gōng, meaning: 'Sale en 工程师 gōngchéngshī «ingeniero, ingeniera», 工作 gōngzuò «trabajo;
         trabajar».'}
     comments: []
+  - id: x.situation.fuwuyuan
+    added: 2026-10-06
+    lang: es
+    type: speak
+    targets: [w.fuwuyuan]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. En un restaurante quieres que venga el camarero. ¿Cómo le llamas?'}
+    answer: {hanzi: '服务员！', pinyin: 'fúwùyuán', meaning: '¡camarero!'}
+    comments: []
+  - id: x.contrast.xuesheng
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.xiansheng-xuesheng
+    targets: [w.xuesheng]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 学生, pinyin: xuéshēng, meaning: estudiante}
+    comments: []
+  - id: x.dictation.yisheng
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.yisheng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi1 sheng1, hanzi: 医生, pinyin: yīshēng, meaning: 'médico, médica'}
+    comments: []
+  - id: x.produce.yisheng
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.yisheng]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «médico, médica»? Escribe el pinyin.'}
+    answer: {typed: yi1 sheng1, hanzi: 医生, pinyin: yīshēng, meaning: 'médico, médica'}
+    comments: []
+  - id: x.read.yisheng
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.yisheng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 医生}
+    answer: {hanzi: 医生, pinyin: yīshēng, meaning: 'médico, médica'}
+    comments: []
+  - id: x.dictation.fuwuyuan
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.fuwuyuan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fu2 wu4 yuan2, hanzi: 服务员, pinyin: fúwùyuán, meaning: 'camarero, camarera'}
+    comments: []
+  - id: x.produce.fuwuyuan
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.fuwuyuan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «camarero, camarera»? Escribe el pinyin.'}
+    answer: {typed: fu2 wu4 yuan2, hanzi: 服务员, pinyin: fúwùyuán, meaning: 'camarero, camarera'}
+    comments: []
+  - id: x.read.fuwuyuan
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.fuwuyuan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 服务员}
+    answer: {hanzi: 服务员, pinyin: fúwùyuán, meaning: 'camarero, camarera'}
+    comments: []
+  - id: x.dictation.xiaojie
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.xiaojie]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiao3 jie3, hanzi: 小姐, pinyin: xiǎojiě, meaning: señorita (tras el apellido)}
+    comments: []
+  - id: x.read.xiaojie
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.xiaojie]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 小姐}
+    answer: {hanzi: 小姐, pinyin: xiǎojiě, meaning: señorita (tras el apellido)}
+    comments: []
+  - id: x.tones.xiaojie
+    added: 2026-10-06
+    lang: es
+    type: tones
+    targets: [w.xiaojie]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 小姐, pinyin: xiao jie}
+    answer: {typed: '33', hanzi: 小姐, pinyin: xiǎojiě, meaning: señorita (tras el apellido)}
+    comments: []
+  - id: x.dictation.xiaopengyou
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.xiaopengyou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiao3 peng2 you3, hanzi: 小朋友, pinyin: xiǎopéngyǒu, meaning: 'niño, niña (al hablarle)'}
+    comments: []
+  - id: x.read.xiaopengyou
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.xiaopengyou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 小朋友}
+    answer: {hanzi: 小朋友, pinyin: xiǎopéngyǒu, meaning: 'niño, niña (al hablarle)'}
+    comments: []
+  - id: x.listen.zhege-ren-shi-wo-de-pengyou
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.zhege-ren-shi-wo-de-pengyou
+    targets: [s.zhege-ren-shi-wo-de-pengyou]
+    context: [w.zhe, w.ge, w.ren, w.shi, w.wo, w.de, w.pengyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Esta persona es mi amigo.}
+    comments: []
+  - id: x.produce.zhege-ren-shi-wo-de-pengyou
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.zhege-ren-shi-wo-de-pengyou
+    targets: [s.zhege-ren-shi-wo-de-pengyou]
+    context: [w.zhe, w.ge, w.ren, w.shi, w.wo, w.de, w.pengyou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Esta persona es mi amigo.»'}
+    answer: {meaning: Esta persona es mi amigo.}
+    comments: []
+  - id: x.listen.fuwuyuan-wo-yao-zhege
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.fuwuyuan-wo-yao-zhege
+    targets: [s.fuwuyuan-wo-yao-zhege]
+    context: [w.fuwuyuan, w.wo, w.yao, w.zhe, w.ge]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Camarero, quiero este.'}
+    comments: []
+  - id: x.produce.fuwuyuan-wo-yao-zhege
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.fuwuyuan-wo-yao-zhege
+    targets: [s.fuwuyuan-wo-yao-zhege]
+    context: [w.fuwuyuan, w.wo, w.yao, w.zhe, w.ge]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Camarero, quiero este.»'}
+    answer: {meaning: 'Camarero, quiero este.'}
+    comments: []
+  - id: x.charsound.you
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.pengyou, w.xiaopengyou]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 友}
+    answer: {typed: you3, hanzi: 友, pinyin: yǒu, meaning: 'Sale en 朋友 péngyou «amigo, amiga», 小朋友 xiǎopéngyǒu «niño, niña (al
+        hablarle)».'}
+    comments: []
+  - id: x.charsound.jie
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.xiaojie, w.jiejie]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 姐}
+    answer: {typed: jie3, hanzi: 姐, pinyin: jiě, meaning: 'Sale en 小姐 xiǎojiě «señorita (tras el apellido)», 姐姐 jiějie «hermana
+        mayor».'}
+    comments: []
+  - id: x.charsound.peng
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.pengyou, w.xiaopengyou]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 朋}
+    answer: {typed: peng2, hanzi: 朋, pinyin: péng, meaning: 'Sale en 朋友 péngyou «amigo, amiga», 小朋友 xiǎopéngyǒu «niño, niña
+        (al hablarle)».'}
+    comments: []

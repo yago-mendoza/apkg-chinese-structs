@@ -2027,6 +2027,414 @@ characters:
       es: 'Arriba, brotes de hierba; abajo, el cielo de la mañana: el verde azulado de los dos.'
       en: 'Grass shoots on top, the morning sky below: the blue-green of both.'
     confidence: medium
+  万:
+    gloss: {es: 'diez mil', en: 'ten thousand'}
+    origin:
+      es: 'Pictograma: la forma tradicional 萬 dibujaba un escorpión, con las pinzas arriba y la cola abajo. «Diez mil» es un préstamo por el sonido. 万 es una variante antigua y simple que ya no deja ver el dibujo.'
+      en: 'Pictograph: the traditional form 萬 drew a scorpion, pincers on top and tail below. Ten thousand is a loan for the sound. 万 is an old, simple variant that no longer shows the drawing.'
+    traditional: 萬
+    memory:
+      es: 'Una raya 一 arriba y debajo una figura que se aleja corriendo: diez mil, tantos que no se pueden contar.'
+      en: 'A stroke 一 on top and below a figure running away: ten thousand, too many to count.'
+    type: pictographic
+    override: 'La fuente no da tipo; la forma tradicional 萬 es el dibujo de un escorpión.'
+    confidence: high
+  今:
+    gloss: {es: 'ahora, actual (今天, 今年)', en: 'now, present (今天, 今年)'}
+    origin:
+      es: 'El origen de su forma se discute: unos ven una tapa o un techo sobre algo; otros, una boca vuelta hacia abajo. «Ahora» es su sentido desde muy antiguo.'
+      en: 'The origin of its shape is disputed: some see a lid or roof over something; others, a mouth turned downwards. Now has been its meaning since very early times.'
+    memory:
+      es: 'Un tejado 人 y debajo una raya y un gancho, como la aguja de un reloj: la hora de ahora, hoy.'
+      en: 'A roof 人 with a stroke and a hook below, like the hand of a clock: the time right now, today.'
+    confidence: medium
+  兔:
+    gloss: {es: 'conejo, liebre', en: 'rabbit, hare'}
+    origin:
+      es: 'Pictograma: un conejo de perfil, con las orejas largas arriba, las patas abajo y el punto final como la cola corta.'
+      en: 'Pictograph: a rabbit in profile, long ears on top, legs below and the final dot as its short tail.'
+    memory:
+      es: 'Es 免 con un punto 丶: la colita del conejo que se escapa.'
+      en: 'It is 免 with a dot 丶: the little tail of a rabbit running away.'
+    confidence: high
+  务:
+    gloss: {es: 'asunto, tarea', en: 'affair, task'}
+    origin:
+      es: 'Fonético-semántico en la forma tradicional 務: 力 «fuerza» da el sentido (esforzarse en algo) y 敄 (wù) el sonido: suena igual. La simplificación dejó de 敄 solo 夂.'
+      en: 'Phonetic-semantic in the traditional form 務: 力 (strength) gives the meaning (putting effort into something) and 敄 (wù) the sound: it sounds the same. Simplification kept only 夂 of 敄.'
+    traditional: 務
+    memory:
+      es: 'Alguien que llega 夂 y pone toda su fuerza 力: la tarea que le toca.'
+      en: 'Someone arriving 夂 and putting all their strength 力 into it: the task at hand.'
+    type: pictophonetic
+    phonetic: {char: 敄, pinyin: 'wù'}
+    semantic: 力
+    override: 'La fuente no da tipo; en la forma tradicional 務 es fonético-semántico, con 力 como sentido y 敄 como sonido.'
+    confidence: high
+  医:
+    gloss: {es: 'medicina, médico', en: 'medicine, doctor'}
+    origin:
+      es: 'Ideograma compuesto: 矢 «flecha» dentro de 匸, una caja abierta: era la aljaba donde se guardan las flechas. Hoy es la forma simplificada de 醫 «médico», que llevaba debajo 酉, la vasija del vino medicinal; la simplificación se quedó solo con la parte de arriba.'
+      en: 'Compound ideograph: 矢 (arrow) inside 匸, an open box: it was the quiver where arrows are kept. Today it is the simplified form of 醫 (doctor), which had 酉 below, the jar of medicinal wine; simplification kept only the top part.'
+    traditional: 醫
+    memory:
+      es: 'Una flecha 矢 guardada en su caja 匸: el médico saca la flecha de la herida y la guarda.'
+      en: 'An arrow 矢 put away in its box 匸: the doctor pulls the arrow out of the wound and puts it away.'
+    type: ideographic
+    phonetic: null
+    semantic: null
+    override: 'No es fonético-semántico: 矢 dentro de 匸 dibuja una aljaba, y 匸 no da el sonido.'
+    confidence: high
+  千:
+    gloss: {es: 'mil', en: 'thousand'}
+    origin:
+      es: 'Fonético-semántico en las formas antiguas: una raya 一 cruzada sobre 人 «persona», que daba el sonido (entonces parecido; hoy rén ya no suena como qiān). Con dos rayas era «dos mil». Hoy se ve como un trazo inclinado sobre 十.'
+      en: 'Phonetic-semantic in the ancient forms: a stroke 一 across 人 (person), which gave the sound (close back then; today rén no longer sounds like qiān). With two strokes it meant two thousand. Today it looks like a slanted stroke over 十.'
+    memory:
+      es: 'Diez 十 con un sombrero inclinado encima: un diez importante, cien veces mayor, mil.'
+      en: 'Ten 十 wearing a tilted hat: an important ten, a hundred times bigger, a thousand.'
+    type: pictophonetic
+    phonetic: {char: 人, pinyin: 'rén'}
+    semantic: 一
+    override: 'La fuente no da tipo; en las formas antiguas es 人 (sonido) con una raya 一 que marca el número.'
+    confidence: high
+  叔:
+    gloss: {es: 'tío (hermano menor del padre); señor', en: 'uncle (father''s younger brother); mister'}
+    origin:
+      es: 'Fonético-semántico: 又 «mano» da el sentido original, recoger (legumbres), y 尗 (shū) el sonido: suena igual. «Tío» es un uso prestado por el sonido.'
+      en: 'Phonetic-semantic: 又 (hand) gives the original meaning, to gather (beans), and 尗 (shū) the sound: it sounds the same. Uncle is a use borrowed for the sound.'
+    memory:
+      es: 'A la izquierda, 上 sobre 小: un mayor arriba y un pequeño abajo; a la derecha, una mano 又 que lo coge. El tío que cuida al sobrino.'
+      en: 'On the left, 上 over 小: a grown-up on top and a little one below; on the right, a hand 又 holding him. The uncle looking after his nephew.'
+    type: pictophonetic
+    phonetic: {char: 尗, pinyin: 'shū'}
+    semantic: 又
+    override: 'La explicación clásica lo da como 又 (sentido) y 尗 (sonido), no como «hermano pequeño».'
+    confidence: high
+  右:
+    gloss: {es: 'derecha', en: 'right (side)'}
+    origin:
+      es: 'Ideograma compuesto: arriba, una mano derecha (la forma antigua de 又); debajo, 口 «boca». Al principio la mano sola ya decía «derecha»; 口 se añadió para distinguirlo, y se suele explicar como ayudar con la mano y con la palabra.'
+      en: 'Compound ideograph: on top, a right hand (the old form of 又); below, 口 (mouth). At first the hand alone meant right; 口 was added to tell it apart, usually explained as helping with hand and word.'
+    memory:
+      es: 'La mano derecha es la que come: lleva 口 «boca» debajo. La izquierda, 左, sostiene la herramienta 工.'
+      en: 'The right hand is the one you eat with: it has 口 (mouth) underneath. The left, 左, holds the tool 工.'
+    type: ideographic
+    override: 'La fuente no da tipo; es una mano derecha con 口 añadido.'
+    confidence: high
+  号:
+    gloss: {es: 'número; día del mes', en: 'number; day of the month'}
+    origin:
+      es: 'Se discute: la explicación clásica lo lee como 口 «boca» sobre 丂, un aliento que sale con esfuerzo (gritar, llamar); otros ven en 丂 solo el sonido. La forma tradicional 號 añade 虎 «tigre», el rugido. De llamar en voz alta vienen «nombre» y «número».'
+      en: 'Disputed: the classical account reads it as 口 (mouth) over 丂, breath forced out (to shout, to call); others take 丂 as just the sound. The traditional form 號 adds 虎 (tiger), the roar. From calling out come name and number.'
+    traditional: 號
+    memory:
+      es: 'Una boca 口 que grita, y debajo el aire que sale doblado 丂: en la cola, alguien canta tu número.'
+      en: 'A mouth 口 shouting, with the breath coming out bent 丂 below: in the queue, someone calls your number.'
+    confidence: medium
+  员:
+    gloss: {es: 'miembro, persona de un oficio', en: 'member, person in a job'}
+    origin:
+      es: 'Ideograma compuesto en la forma tradicional 員: un círculo 口 sobre un caldero 鼎, que con el tiempo se escribió 貝. La boca redonda del caldero: «redondo» (hoy 圆, que lo lleva dentro). «Miembro, persona de un oficio» es un uso posterior, prestado.'
+      en: 'Compound ideograph in the traditional form 員: a circle 口 over a cauldron 鼎, later written 貝. The round mouth of the cauldron: round (now 圆, which contains it). Member, person in a job is a later, borrowed use.'
+    traditional: 員
+    memory:
+      es: 'Una boca 口 sobre el dinero 贝: el empleado, que trabaja para ganarse el sueldo.'
+      en: 'A mouth 口 over money 贝: the employee, who works to earn a wage.'
+    type: ideographic
+    phonetic: null
+    semantic: null
+    override: 'La fuente lo marca fonético-semántico sin sonido; en las formas antiguas es un círculo sobre un caldero.'
+    confidence: high
+  奶:
+    gloss: {es: 'leche; abuela (奶奶)', en: 'milk; grandma (奶奶)'}
+    origin:
+      es: 'Fonético-semántico: 女 «mujer» da el sentido (la madre que amamanta) y 乃 (nǎi) el sonido: suena igual.'
+      en: 'Phonetic-semantic: 女 (woman) gives the meaning (the mother who breastfeeds) and 乃 (nǎi) the sound: it sounds the same.'
+    confidence: high
+  姨:
+    gloss: {es: 'tía (hermana de la madre)', en: 'aunt (mother''s sister)'}
+    origin:
+      es: 'Fonético-semántico: 女 «mujer» da el sentido y 夷 (yí) el sonido: suena igual.'
+      en: 'Phonetic-semantic: 女 (woman) gives the meaning and 夷 (yí) the sound: it sounds the same.'
+    confidence: high
+  寿:
+    gloss: {es: 'longevidad; edad (de un mayor)', en: 'longevity; age (of an elder)'}
+    origin:
+      es: 'Fonético-semántico en la forma tradicional 壽: arriba, 老 «viejo» recortado da el sentido, y la pieza de abajo daba el sonido, hoy distinto. La simplificación dejó solo el contorno: rayas arriba y 寸 abajo.'
+      en: 'Phonetic-semantic in the traditional form 壽: on top, a cut-down 老 (old) gives the meaning, and the piece below gave the sound, now different. Simplification kept only the outline: strokes on top and 寸 below.'
+    traditional: 壽
+    memory:
+      es: 'Muchas rayas, como arrugas, sobre una mano 寸 que sujeta el bastón: una vida larga.'
+      en: 'Many strokes, like wrinkles, over a hand 寸 holding a walking stick: a long life.'
+    type: pictophonetic
+    semantic: 老
+    phonetic: null
+    override: 'La explicación clásica de 壽 lleva 老 como sentido y una pieza de sonido abajo; no es solo «forma alterada de 老».'
+    confidence: high
+  属:
+    gloss: {es: 'pertenecer; ser del signo (del zodiaco)', en: 'to belong; to be born in the year of'}
+    origin:
+      es: 'Fonético-semántico en la forma tradicional 屬: 尾 «cola» da el sentido (ir pegado detrás, unido a algo) y 蜀 (shǔ) el sonido: suena igual. La simplificación cambió la parte de abajo por 禹, que solo sustituye.'
+      en: 'Phonetic-semantic in the traditional form 屬: 尾 (tail) gives the meaning (following close behind, joined to something) and 蜀 (shǔ) the sound: it sounds the same. Simplification replaced the lower part with 禹, a mere stand-in.'
+    traditional: 屬
+    memory:
+      es: 'Bajo un techo 尸 vive un bicho enroscado 禹: el animal del zodiaco al que perteneces.'
+      en: 'Under a roof 尸 lives a coiled creature 禹: the zodiac animal you belong to.'
+    type: pictophonetic
+    phonetic: {char: 蜀, pinyin: 'shǔ'}
+    semantic: 尾
+    override: 'En la forma tradicional 屬 el sentido es 尾 y el sonido 蜀; 尸 y 禹 de la forma simplificada solo sustituyen.'
+    confidence: high
+  左:
+    gloss: {es: 'izquierda', en: 'left (side)'}
+    origin:
+      es: 'Ideograma compuesto: arriba, una mano izquierda; debajo, 工, una herramienta (la escuadra del carpintero). Al principio la mano sola ya decía «izquierda»; con 工, la mano que ayuda a trabajar.'
+      en: 'Compound ideograph: on top, a left hand; below, 工, a tool (the carpenter''s square). At first the hand alone meant left; with 工, the hand that helps with the work.'
+    memory:
+      es: 'La mano izquierda sostiene la herramienta 工. La derecha, 右, es la que come: lleva 口 «boca».'
+      en: 'The left hand holds the tool 工. The right, 右, is the one you eat with: it has 口 (mouth).'
+    type: ideographic
+    override: 'Es una mano izquierda con 工 añadido, no un dibujo único.'
+    confidence: high
+  得:
+    gloss: {es: 'obtener; partícula de (觉得); děi tener que', en: 'to obtain; particle de (觉得); děi must'}
+    origin:
+      es: 'Ideograma compuesto: una mano 寸 que coge una concha 贝, el dinero antiguo (hoy deformada en 旦), junto a 彳 «camino»: encontrar algo por el camino y quedárselo, «obtener». En 觉得 se lee de, sin tono.'
+      en: 'Compound ideograph: a hand 寸 grabbing a shell 贝, the ancient money (now distorted into 旦), beside 彳 (road): finding something on the way and keeping it, to obtain. In 觉得 it is read de, toneless.'
+    memory:
+      es: 'Por el camino 彳, al amanecer 旦, una mano 寸 coge algo: lo obtiene.'
+      en: 'On the road 彳, at dawn 旦, a hand 寸 picks something up: it gets it.'
+    confidence: high
+  心:
+    gloss: {es: 'corazón; mente', en: 'heart; mind'}
+    origin:
+      es: 'Pictograma: un corazón, con sus cavidades y vasos. Para los antiguos chinos era también el lugar donde se piensa y se siente.'
+      en: 'Pictograph: a heart, with its chambers and vessels. For the ancient Chinese it was also where one thinks and feels.'
+    confidence: high
+  忘:
+    gloss: {es: 'olvidar', en: 'to forget'}
+    origin:
+      es: 'Fonético-semántico: 心 «corazón, mente» da el sentido y 亡 (wáng) «perderse» el sonido, y también la idea: lo que se pierde de la mente. Suena parecido, cambia el tono.'
+      en: 'Phonetic-semantic: 心 (heart, mind) gives the meaning and 亡 (wáng, to be lost) the sound, and the idea too: what is lost from the mind. Similar sound, only the tone changes.'
+    confidence: high
+  服:
+    gloss: {es: 'servir; ropa (衣服)', en: 'to serve; clothes (衣服)'}
+    origin:
+      es: 'Fonético-semántico: a la derecha, 𠬝 (fú), una mano 又 que somete a una persona arrodillada 卩, da el sonido (suena igual) y la idea de servir; a la izquierda iba 舟 «barca», hoy escrita como 月. De «servir» viene 服务; también significa «ropa» (衣服).'
+      en: 'Phonetic-semantic: on the right, 𠬝 (fú), a hand 又 subduing a kneeling person 卩, gives the sound (it sounds the same) and the idea of serving; on the left was 舟 (boat), now written like 月. From serving comes 服务; it also means clothes (衣服).'
+    memory:
+      es: 'Alguien arrodillado 卩 con la mano 又 tendida para servir, junto al cuerpo 月 que viste: servicio y ropa.'
+      en: 'Someone kneeling 卩 with a hand 又 held out to serve, beside the body 月 being dressed: service and clothes.'
+    type: pictophonetic
+    phonetic: {char: 𠬝, pinyin: 'fú'}
+    semantic: null
+    override: 'La parte derecha 𠬝 (fú) da el sonido; el 月 de la izquierda era 舟 «barca», no una prenda.'
+    confidence: high
+  杯:
+    gloss: {es: 'vaso, taza; clasificador de bebidas', en: 'cup, glass; measure word for drinks'}
+    origin:
+      es: 'Fonético-semántico: 木 «madera» da el sentido (los primeros vasos eran de madera) y 不 (bù) el sonido, hoy lejano de bēi.'
+      en: 'Phonetic-semantic: 木 (wood) gives the meaning (the first cups were wooden) and 不 (bù) the sound, now far from bēi.'
+    confidence: high
+  母:
+    gloss: {es: 'madre', en: 'mother'}
+    origin:
+      es: 'Pictograma: una mujer 女 arrodillada con dos puntos en el pecho, los senos: la que amamanta, la madre. Al hablar se dice 妈妈; 母 va en palabras como 父母.'
+      en: 'Pictograph: a kneeling woman 女 with two dots on the chest, the breasts: the one who breastfeeds, the mother. In speech one says 妈妈; 母 appears in words like 父母.'
+    confidence: high
+  父:
+    gloss: {es: 'padre', en: 'father'}
+    origin:
+      es: 'Ideograma: una mano que sostiene un hacha de piedra o un bastón, el que trabaja y manda en la casa. Al hablar se dice 爸爸; 父 va en palabras como 父母.'
+      en: 'Ideograph: a hand holding a stone axe or a stick, the one who works and rules the house. In speech one says 爸爸; 父 appears in words like 父母.'
+    confidence: high
+  爷:
+    gloss: {es: 'abuelo (padre del padre)', en: 'grandpa (father''s father)'}
+    origin:
+      es: 'Fonético-semántico en la forma tradicional 爺: 父 «padre» da el sentido y 耶 (yé) el sonido: suena igual. La simplificación cambió 耶 por 卩, que solo sustituye.'
+      en: 'Phonetic-semantic in the traditional form 爺: 父 (father) gives the meaning and 耶 (yé) the sound: it sounds the same. Simplification replaced 耶 with 卩, a mere stand-in.'
+    traditional: 爺
+    memory:
+      es: 'Un padre 父 encorvado sobre su bastón 卩: el abuelo.'
+      en: 'A father 父 stooping over his walking stick 卩: grandpa.'
+    confidence: high
+  狗:
+    gloss: {es: 'perro', en: 'dog'}
+    origin:
+      es: 'Fonético-semántico: 犭 «perro, animal» da el sentido y 句 el sonido (antiguamente gōu, hoy sobre todo jù): parecido, cambia el tono.'
+      en: 'Phonetic-semantic: 犭 (dog, animal) gives the meaning and 句 the sound (formerly gōu, today mostly jù): similar, only the tone changes.'
+    confidence: high
+  猜:
+    gloss: {es: 'adivinar; sospechar', en: 'to guess; to suspect'}
+    origin:
+      es: 'Fonético-semántico: 犭 «perro, animal» da el sentido original, recelar como un animal desconfiado, y 青 (qīng) el sonido, hoy lejano de cāi. De sospechar viene «adivinar».'
+      en: 'Phonetic-semantic: 犭 (dog, animal) gives the original meaning, to be wary like a suspicious animal, and 青 (qīng) the sound, now far from cāi. From suspecting comes to guess.'
+    confidence: high
+  猪:
+    gloss: {es: 'cerdo', en: 'pig'}
+    origin:
+      es: 'Fonético-semántico: 犭 «animal» da el sentido y 者 (zhě) el sonido: parecido, cambian la vocal y el tono. La forma tradicional 豬 llevaba 豕 «cerdo».'
+      en: 'Phonetic-semantic: 犭 (animal) gives the meaning and 者 (zhě) the sound: similar, the vowel and tone change. The traditional form 豬 had 豕 (pig).'
+    confidence: high
+  猴:
+    gloss: {es: 'mono', en: 'monkey'}
+    origin:
+      es: 'Fonético-semántico: 犭 «animal» da el sentido y 侯 (hóu) el sonido: suena igual.'
+      en: 'Phonetic-semantic: 犭 (animal) gives the meaning and 侯 (hóu) the sound: it sounds the same.'
+    confidence: high
+  百:
+    gloss: {es: 'cien', en: 'hundred'}
+    origin:
+      es: 'Fonético-semántico: 一 «uno» marca el número (un centenar) y 白 (bái) da el sonido: parecido, cambia el tono.'
+      en: 'Phonetic-semantic: 一 (one) marks the number (one hundred) and 白 (bái) gives the sound: similar, only the tone changes.'
+    confidence: high
+  相:
+    gloss: {es: 'mutuo; aspecto (属相)', en: 'mutual; appearance (属相)'}
+    origin:
+      es: 'Ideograma compuesto: un ojo 目 junto a un árbol 木, mirar con atención, observar. De ahí «aspecto» (xiàng, en 属相 sin tono) y «mutuo» (xiāng).'
+      en: 'Compound ideograph: an eye 目 beside a tree 木, looking closely, observing. Hence appearance (xiàng, toneless in 属相) and mutual (xiāng).'
+    confidence: high
+  知:
+    gloss: {es: 'saber', en: 'to know'}
+    origin:
+      es: 'Fonético-semántico: 口 «boca» da el sentido (decir lo que se sabe) y 矢 (shǐ) «flecha» el sonido, parecido a zhī: cambian la inicial y el tono.'
+      en: 'Phonetic-semantic: 口 (mouth) gives the meaning (saying what one knows) and 矢 (shǐ, arrow) the sound, close to zhī: the initial and tone change.'
+    memory:
+      es: 'Saber es hablar 口 directo, como una flecha 矢 que da en el blanco.'
+      en: 'Knowing is speaking 口 straight, like an arrow 矢 hitting the target.'
+    confidence: high
+  码:
+    gloss: {es: 'número, código (号码)', en: 'number, code (号码)'}
+    origin:
+      es: 'Fonético-semántico: 石 «piedra» solo da la categoría y 马 (mǎ) el sonido: suena igual. Tradicional: 碼.'
+      en: 'Phonetic-semantic: 石 (stone) only gives the category and 马 (mǎ) the sound: it sounds the same. Traditional: 碼.'
+    confidence: high
+  笔:
+    gloss: {es: 'pincel, bolígrafo, lápiz', en: 'brush, pen, pencil'}
+    origin:
+      es: 'Ideograma compuesto: ⺮ «bambú» sobre 毛 «pelo»: el pincel, una caña de bambú con pelo en la punta. La forma tradicional 筆 llevaba 聿, una mano que sostiene el pincel.'
+      en: 'Compound ideograph: ⺮ (bamboo) over 毛 (hair): the brush, a bamboo stick with hair at the tip. The traditional form 筆 had 聿, a hand holding the brush.'
+    confidence: high
+  纪:
+    gloss: {es: 'edad; época; norma (年纪)', en: 'age; era; rule (年纪)'}
+    origin:
+      es: 'Fonético-semántico: 纟 «hilo» da el sentido original, el cabo con que se ordena una madeja, y de ahí «orden, registro»; 己 (jǐ) da el sonido: parecido, cambia el tono. Tradicional: 紀.'
+      en: 'Phonetic-semantic: 纟 (thread) gives the original meaning, the end used to sort out a skein, hence order, record; 己 (jǐ) gives the sound: similar, only the tone changes. Traditional: 紀.'
+    confidence: high
+  羊:
+    gloss: {es: 'oveja, cabra', en: 'sheep, goat'}
+    origin:
+      es: 'Pictograma: la cabeza de una oveja vista de frente, con los dos cuernos arriba.'
+      en: 'Pictograph: the head of a sheep seen from the front, with its two horns on top.'
+    confidence: high
+  苹:
+    gloss: {es: 'manzana (苹果)', en: 'apple (苹果)'}
+    origin:
+      es: 'Fonético-semántico: 艹 «hierba, planta» da el sentido y 平 (píng) el sonido: suena igual. Era el nombre antiguo de otra planta; en la forma tradicional, la manzana se escribe 蘋果.'
+      en: 'Phonetic-semantic: 艹 (grass, plant) gives the meaning and 平 (píng) the sound: it sounds the same. It was the old name of another plant; in traditional writing, apple is 蘋果.'
+    confidence: high
+  虎:
+    gloss: {es: 'tigre', en: 'tiger'}
+    origin:
+      es: 'Pictograma: un tigre puesto en vertical, con la cabeza, las fauces y las rayas arriba (虍) y las patas y la cola abajo, que hoy parecen 几.'
+      en: 'Pictograph: a tiger standing on end, head, jaws and stripes on top (虍) and legs and tail below, which now look like 几.'
+    type: pictographic
+    phonetic: null
+    semantic: null
+    override: 'Es el dibujo de un tigre entero; 几 es su parte de abajo, no una roca.'
+    confidence: high
+  蛇:
+    gloss: {es: 'serpiente', en: 'snake'}
+    origin:
+      es: 'Fonético-semántico: 虫 «bicho» da el sentido y 它, que era el dibujo de una serpiente, el sonido antiguo (hoy tā, lejano de shé). Cuando 它 pasó a usarse como «ello», se le añadió 虫 para la serpiente.'
+      en: 'Phonetic-semantic: 虫 (creature) gives the meaning and 它, which was the drawing of a snake, the old sound (now tā, far from shé). When 它 came to be used for it, 虫 was added for the snake.'
+    confidence: high
+  话:
+    gloss: {es: 'palabras, habla; idioma', en: 'words, speech; language'}
+    origin:
+      es: 'Fonético-semántico en la forma tradicional 話: 言 «palabra» da el sentido y la derecha daba el sonido; con el tiempo esa pieza se escribió igual que 舌 «lengua», con la que no tiene que ver.'
+      en: 'Phonetic-semantic in the traditional form 話: 言 (speech) gives the meaning and the right side gave the sound; over time that piece came to be written like 舌 (tongue), which it has nothing to do with.'
+    traditional: 話
+    memory:
+      es: 'Las palabras 讠 que mueve la lengua 舌: hablar.'
+      en: 'Words 讠 moved by the tongue 舌: speech.'
+    type: pictophonetic
+    semantic: 讠
+    phonetic: null
+    override: 'El 舌 de hoy es una deformación de la antigua pieza del sonido; ni es la lengua ni da el sonido hoy.'
+    confidence: high
+  轻:
+    gloss: {es: 'ligero; joven (年轻)', en: 'light; young (年轻)'}
+    origin:
+      es: 'Fonético-semántico en la forma tradicional 輕: 車 «carro» da el sentido (un carro ligero) y 巠 (jīng) el sonido: parecido, cambia la inicial. La simplificación escribe 巠 como 又 sobre 工.'
+      en: 'Phonetic-semantic in the traditional form 輕: 車 (cart) gives the meaning (a light cart) and 巠 (jīng) the sound: similar, only the initial changes. Simplification writes 巠 as 又 over 工.'
+    traditional: 輕
+    type: pictophonetic
+    phonetic: {char: 巠, pinyin: 'jīng'}
+    semantic: 车
+    override: 'El sonido lo da 巠 (jīng), que la simplificación escribe 又 sobre 工; 工 solo no es la pieza del sonido.'
+    confidence: high
+  道:
+    gloss: {es: 'camino; decir', en: 'road, way; to say'}
+    origin:
+      es: 'Ideograma compuesto: 辶 «caminar» y 首 «cabeza»: ir con la cabeza por delante, el camino. Algunos ven en 首 también el sonido, hoy lejano. En 知道 se lee dao, sin tono.'
+      en: 'Compound ideograph: 辶 (walk) and 首 (head): going head first, the road. Some also see 首 as the sound, now far off. In 知道 it is read dao, toneless.'
+    type: ideographic
+    phonetic: null
+    override: 'En la explicación clásica 首 «cabeza» aporta el sentido; que dé también el sonido se discute.'
+    confidence: high
+  阿:
+    gloss: {es: 'prefijo cariñoso (阿姨)', en: 'affectionate prefix (阿姨)'}
+    origin:
+      es: 'Fonético-semántico: 阝 a la izquierda (una colina) da el sentido original, una ladera o recodo, y 可 (kě) el sonido, hoy lejano de ā. Como prefijo cariñoso (阿姨) se usa por su sonido.'
+      en: 'Phonetic-semantic: 阝 on the left (a hill) gives the original meaning, a slope or bend, and 可 (kě) the sound, now far from ā. As an affectionate prefix (阿姨) it is used for its sound.'
+    memory:
+      es: 'Junto a la colina 阝, alguien llama con la boca 口 de 可: «¡A!», como quien llama a la tía.'
+      en: 'Beside the hill 阝, someone calls out with the mouth 口 of 可: A!, like calling for auntie.'
+    type: pictophonetic
+    semantic: 阝
+    override: 'El 阝 de la izquierda es la colina (阜), no la ciudad.'
+    confidence: high
+  零:
+    gloss: {es: 'cero', en: 'zero'}
+    origin:
+      es: 'Fonético-semántico: 雨 «lluvia» da el sentido original, caer gotas sueltas, y 令 (lìng) el sonido: parecido, cambia el tono. De gotas sueltas vienen «suelto, fracción» y luego «cero».'
+      en: 'Phonetic-semantic: 雨 (rain) gives the original meaning, scattered drops falling, and 令 (lìng) the sound: similar, only the tone changes. From scattered drops come loose, fraction, and later zero.'
+    confidence: high
+  题:
+    gloss: {es: 'tema, pregunta (问题)', en: 'topic, question (问题)'}
+    origin:
+      es: 'Fonético-semántico: 页 «cabeza» da el sentido original, la frente, y 是 (shì) el sonido, hoy lejano de tí. De la frente, lo que va al principio: el título y el tema. Tradicional: 題.'
+      en: 'Phonetic-semantic: 页 (head) gives the original meaning, the forehead, and 是 (shì) the sound, now far from tí. From the forehead, what comes first: the title and the topic. Traditional: 題.'
+    confidence: high
+  马:
+    gloss: {es: 'caballo', en: 'horse'}
+    origin:
+      es: 'Pictograma: la forma tradicional 馬 dibuja un caballo de pie, con la crin arriba, las cuatro patas abajo y la cola. La simplificación lo redujo a unos pocos trazos.'
+      en: 'Pictograph: the traditional form 馬 draws a standing horse, mane on top, four legs below and the tail. Simplification reduced it to a few strokes.'
+    traditional: 馬
+    confidence: high
+  鸡:
+    gloss: {es: 'gallina, pollo', en: 'chicken'}
+    origin:
+      es: 'Fonético-semántico en la forma tradicional 雞: el ave da el sentido y 奚 (xī) el sonido, parecido a jī: cambia la inicial. La simplificación cambió 奚 por 又, que solo sustituye.'
+      en: 'Phonetic-semantic in the traditional form 雞: the bird gives the meaning and 奚 (xī) the sound, close to jī: only the initial changes. Simplification replaced 奚 with 又, a mere stand-in.'
+    traditional: 雞
+    memory:
+      es: 'Un pájaro 鸟 con una mano 又 al lado que le echa grano: la gallina del corral.'
+      en: 'A bird 鸟 with a hand 又 beside it scattering grain: the farmyard chicken.'
+    type: pictophonetic
+    phonetic: {char: 奚, pinyin: 'xī'}
+    semantic: 鸟
+    override: 'En la forma tradicional 雞 el sonido es 奚; el 又 simplificado solo sustituye, no significa «otro».'
+    confidence: high
+  鼠:
+    gloss: {es: 'ratón, rata', en: 'mouse, rat'}
+    origin:
+      es: 'Pictograma: un ratón, con los dientes arriba (parecen 臼) y abajo el cuerpo, las patas y la cola.'
+      en: 'Pictograph: a mouse, teeth on top (they look like 臼) and body, paws and tail below.'
+    confidence: high
 
 parts:
   亻: {es: 'persona (forma de 人 a la izquierda)', en: 'person (人 on the left)'}

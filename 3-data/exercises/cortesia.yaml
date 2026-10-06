@@ -929,3 +929,386 @@ exercises:
     answer: {typed: qi4, hanzi: 气, pinyin: qì, meaning: 'Sale en 不客气 bù kèqi «de nada», 天气 tiānqì «el tiempo (meteorológico)»,
         生气 shēngqì «enfadarse; enfadado».'}
     comments: []
+  - id: x.nuance.meiwenti-meiguanxi
+    added: 2026-10-06
+    lang: es
+    type: nuance
+    targets: [e.meiwenti, e.meiguanxi]
+    skills: [comprehension, discrimination]
+    prompt: {text: '没问题 y 没关系: ¿cuándo cada uno?'}
+    answer: {meaning: '没问题 «sin problema»: aceptas lo que te piden (¿me ayudas? 没问题). 没关系 «no pasa nada»: quitas importancia a algo que ya ha pasado (对不起 → 没关系).'}
+    comments: []
+  - id: x.situation.bu-zhidao
+    added: 2026-10-06
+    accept_pinyin_mismatch: '知道 lleva la segunda sílaba átona en el habla'
+    lang: es
+    type: speak
+    targets: [w.zhidao]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Te preguntan dónde está una tienda y no tienes ni idea. ¿Qué dices?'}
+    answer: {hanzi: '我不知道。', pinyin: 'wǒ bù zhīdao', meaning: 'no lo sé'}
+    comments: []
+  - id: x.situation.zhendema
+    added: 2026-10-06
+    lang: es
+    type: speak
+    targets: [e.zhendema]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Un amigo te cuenta algo que te cuesta creer. ¿Cómo reaccionas?'}
+    answer: {hanzi: '真的吗？', pinyin: 'zhēn de ma', meaning: '¿de verdad?'}
+    comments: []
+  - id: x.situation.wangle
+    added: 2026-10-06
+    accept_pinyin_mismatch: '对不起 y 了 con sílaba átona; 不 sin cambio de tono delante de 起'
+    lang: es
+    type: speak
+    targets: [w.wang.forget]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. La profesora te pide los deberes y no los has traído porque se te olvidaron. ¿Qué dices?'}
+    answer: {hanzi: '对不起，我忘了。', pinyin: 'duìbuqǐ wǒ wàng le', meaning: 'perdón, se me ha olvidado'}
+    comments: []
+  - id: x.situation.xiaoxin
+    added: 2026-10-06
+    lang: es
+    type: speak
+    targets: [w.xiaoxin]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Tu amigo va a cruzar y viene una moto. ¿Qué le gritas?'}
+    answer: {hanzi: '小心！', pinyin: 'xiǎoxīn', meaning: '¡cuidado!'}
+    comments: []
+  - id: x.situation.meiwenti
+    added: 2026-10-06
+    lang: es
+    type: speak
+    targets: [e.meiwenti]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Un compañero te pide que le ayudes con algo y te parece bien. ¿Qué contestas?'}
+    answer: {hanzi: '没问题！', pinyin: 'méi wèntí', meaning: '¡sin problema!'}
+    comments: []
+  - id: x.situation.mingbaile
+    added: 2026-10-06
+    accept_pinyin_mismatch: '明白 lleva la segunda sílaba átona en el habla'
+    lang: es
+    type: speak
+    targets: [w.mingbai]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. La profesora te explica algo dos veces y por fin lo entiendes. ¿Qué dices?'}
+    answer: {hanzi: '我明白了。', pinyin: 'wǒ míngbai le', meaning: 'ya lo entiendo'}
+    comments: []
+  - id: x.dictation.zhidao
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.zhidao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhi1 dao5, hanzi: 知道, pinyin: zhīdao, meaning: saber}
+    comments: []
+  - id: x.produce.zhidao
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.zhidao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «saber»? Escribe el pinyin.'}
+    answer: {typed: zhi1 dao5, hanzi: 知道, pinyin: zhīdao, meaning: saber}
+    comments: []
+  - id: x.read.zhidao
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.zhidao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 知道}
+    answer: {hanzi: 知道, pinyin: zhīdao, meaning: saber}
+    comments: []
+  - id: x.tones.zhidao
+    added: 2026-10-06
+    lang: es
+    type: tones
+    targets: [w.zhidao]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 知道, pinyin: zhi dao}
+    answer: {typed: '15', hanzi: 知道, pinyin: zhīdao, meaning: saber}
+    comments: []
+  - id: x.dictation.zhendema
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [e.zhendema]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhen1 de5 ma5, hanzi: 真的吗, pinyin: zhēn de ma, meaning: '¿de verdad?'}
+    comments: []
+  - id: x.produce.zhendema
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [e.zhendema]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¿de verdad?»? Escribe el pinyin.'}
+    answer: {typed: zhen1 de5 ma5, hanzi: 真的吗, pinyin: zhēn de ma, meaning: '¿de verdad?'}
+    comments: []
+  - id: x.read.zhendema
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [e.zhendema]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 真的吗}
+    answer: {hanzi: 真的吗, pinyin: zhēn de ma, meaning: '¿de verdad?'}
+    comments: []
+  - id: x.tones.zhendema
+    added: 2026-10-06
+    lang: es
+    type: tones
+    targets: [e.zhendema]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 真的吗, pinyin: zhen de ma}
+    answer: {typed: '155', hanzi: 真的吗, pinyin: zhēn de ma, meaning: '¿de verdad?'}
+    comments: []
+  - id: x.dictation.wang.forget
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.wang.forget]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wang4, hanzi: 忘, pinyin: wàng, meaning: olvidar}
+    comments: []
+  - id: x.produce.wang.forget
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.wang.forget]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «olvidar»? Escribe el pinyin.'}
+    answer: {typed: wang4, hanzi: 忘, pinyin: wàng, meaning: olvidar}
+    comments: []
+  - id: x.read.wang.forget
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.wang.forget]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 忘}
+    answer: {hanzi: 忘, pinyin: wàng, meaning: olvidar}
+    comments: []
+  - id: x.dictation.xiaoxin
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.xiaoxin]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiao3 xin1, hanzi: 小心, pinyin: xiǎoxīn, meaning: ¡cuidado!; tener cuidado}
+    comments: []
+  - id: x.produce.xiaoxin
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.xiaoxin]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¡cuidado!; tener cuidado»? Escribe el pinyin.'}
+    answer: {typed: xiao3 xin1, hanzi: 小心, pinyin: xiǎoxīn, meaning: ¡cuidado!; tener cuidado}
+    comments: []
+  - id: x.read.xiaoxin
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.xiaoxin]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 小心}
+    answer: {hanzi: 小心, pinyin: xiǎoxīn, meaning: ¡cuidado!; tener cuidado}
+    comments: []
+  - id: x.dictation.duide
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [e.duide]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dui4 de5, hanzi: 对的, pinyin: duì de, meaning: 'eso es, correcto'}
+    comments: []
+  - id: x.produce.duide
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [e.duide]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «eso es, correcto»? Escribe el pinyin.'}
+    answer: {typed: dui4 de5, hanzi: 对的, pinyin: duì de, meaning: 'eso es, correcto'}
+    comments: []
+  - id: x.read.duide
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [e.duide]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 对的}
+    answer: {hanzi: 对的, pinyin: duì de, meaning: 'eso es, correcto'}
+    comments: []
+  - id: x.tones.duide
+    added: 2026-10-06
+    lang: es
+    type: tones
+    targets: [e.duide]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 对的, pinyin: dui de}
+    answer: {typed: '45', hanzi: 对的, pinyin: duì de, meaning: 'eso es, correcto'}
+    comments: []
+  - id: x.dictation.meiwenti
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [e.meiwenti]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mei2 wen4 ti2, hanzi: 没问题, pinyin: méi wèntí, meaning: sin problema}
+    comments: []
+  - id: x.produce.meiwenti
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [e.meiwenti]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «sin problema»? Escribe el pinyin.'}
+    answer: {typed: mei2 wen4 ti2, hanzi: 没问题, pinyin: méi wèntí, meaning: sin problema}
+    comments: []
+  - id: x.read.meiwenti
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [e.meiwenti]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 没问题}
+    answer: {hanzi: 没问题, pinyin: méi wèntí, meaning: sin problema}
+    comments: []
+  - id: x.dictation.mingbai
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.mingbai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ming2 bai5, hanzi: 明白, pinyin: míngbai, meaning: 'entender, tener claro'}
+    comments: []
+  - id: x.produce.mingbai
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.mingbai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «entender, tener claro»? Escribe el pinyin.'}
+    answer: {typed: ming2 bai5, hanzi: 明白, pinyin: míngbai, meaning: 'entender, tener claro'}
+    comments: []
+  - id: x.read.mingbai
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.mingbai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 明白}
+    answer: {hanzi: 明白, pinyin: míngbai, meaning: 'entender, tener claro'}
+    comments: []
+  - id: x.tones.mingbai
+    added: 2026-10-06
+    lang: es
+    type: tones
+    targets: [w.mingbai]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 明白, pinyin: ming bai}
+    answer: {typed: '25', hanzi: 明白, pinyin: míngbai, meaning: 'entender, tener claro'}
+    comments: []
+  - id: x.listen.wo-bu-zhidao
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.wo-bu-zhidao
+    targets: [s.wo-bu-zhidao]
+    context: [w.wo, w.bu, w.zhidao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No lo sé.}
+    comments: []
+  - id: x.produce.wo-bu-zhidao
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.wo-bu-zhidao
+    targets: [s.wo-bu-zhidao]
+    context: [w.wo, w.bu, w.zhidao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No lo sé.»'}
+    answer: {meaning: No lo sé.}
+    comments: []
+  - id: x.listen.wo-wang-le
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.wo-wang-le
+    targets: [s.wo-wang-le]
+    context: [w.wo, w.wang.forget, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Se me ha olvidado.}
+    comments: []
+  - id: x.produce.wo-wang-le
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.wo-wang-le
+    targets: [s.wo-wang-le]
+    context: [w.wo, w.wang.forget, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Se me ha olvidado.»'}
+    answer: {meaning: Se me ha olvidado.}
+    comments: []
+  - id: x.listen.wo-mingbai-le
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.wo-mingbai-le
+    targets: [s.wo-mingbai-le]
+    context: [w.wo, w.mingbai, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ya lo entiendo.}
+    comments: []
+  - id: x.produce.wo-mingbai-le
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.wo-mingbai-le
+    targets: [s.wo-mingbai-le]
+    context: [w.wo, w.mingbai, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ya lo entiendo.»'}
+    answer: {meaning: Ya lo entiendo.}
+    comments: []
+  - id: x.listen.xiaoxin
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.xiaoxin
+    targets: [s.xiaoxin]
+    context: [w.xiaoxin]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Cuidado!}
+    comments: []
+  - id: x.produce.xiaoxin-2
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.xiaoxin
+    targets: [s.xiaoxin]
+    context: [w.xiaoxin]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Cuidado!»'}
+    answer: {meaning: ¡Cuidado!}
+    comments: []

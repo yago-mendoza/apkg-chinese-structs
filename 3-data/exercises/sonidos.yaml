@@ -403,3 +403,98 @@ exercises:
     prompt: {text: 'Escucha y escribe el pinyin.', audio: true}
     answer: {typed: he1 shui3, hanzi: 喝水, pinyin: hē shuǐ, meaning: 'beber agua: la h, áspera desde la garganta'}
     comments: []
+  - id: x.syllable.bu.bu-shi
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [p.bu-sandhi]
+    refs: [p.bu-sandhi]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿bù o bú?', audio: true}
+    answer: {hanzi: 不是, pinyin: 'bú shì', meaning: 'bú: Delante de un cuarto tono, 不 sube: bú.'}
+    comments: []
+  - id: x.syllable.bu.bu-kan
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [p.bu-sandhi]
+    refs: [p.bu-sandhi]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿bù o bú?', audio: true}
+    answer: {hanzi: 不看, pinyin: 'bú kàn', meaning: 'bú: Delante de un cuarto tono, 不 sube: bú.'}
+    comments: []
+  - id: x.syllable.bu.bu-hao
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [p.bu-sandhi]
+    refs: [p.bu-sandhi]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿bù o bú?', audio: true}
+    answer: {hanzi: 不好, pinyin: 'bù hǎo', meaning: 'bù: Delante de los demás tonos, 不 se queda en bù.'}
+    comments: []
+  - id: x.syllable.bu.bu-mai
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [p.bu-sandhi]
+    refs: [p.bu-sandhi]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿bù o bú?', audio: true}
+    answer: {hanzi: 不买, pinyin: 'bù mǎi', meaning: 'bù: Delante de los demás tonos, 不 se queda en bù.'}
+    comments: []
+  - id: x.syllable.yi.ge
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [p.yi-sandhi]
+    refs: [p.yi-sandhi]
+    accept_pinyin_mismatch: 'se escribe el tono realizado de 一 (sandhi), que es lo que se pregunta'
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿yī, yí o yì?', audio: true}
+    answer: {hanzi: 一个, pinyin: 'yí ge', meaning: 'yí: Delante de un cuarto tono, 一 sube: yí.'}
+    comments: []
+  - id: x.syllable.yi.ci
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [p.yi-sandhi]
+    refs: [p.yi-sandhi]
+    accept_pinyin_mismatch: 'se escribe el tono realizado de 一 (sandhi), que es lo que se pregunta'
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿yī, yí o yì?', audio: true}
+    answer: {hanzi: 一次, pinyin: 'yí cì', meaning: 'yí: Delante de un cuarto tono, 一 sube: yí.'}
+    comments: []
+  - id: x.syllable.yi.ben
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [p.yi-sandhi]
+    refs: [p.yi-sandhi]
+    accept_pinyin_mismatch: 'se escribe el tono realizado de 一 (sandhi), que es lo que se pregunta'
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿yī, yí o yì?', audio: true}
+    answer: {hanzi: 一本, pinyin: 'yì běn', meaning: 'yì: Delante de los demás tonos, 一 cae: yì.'}
+    comments: []
+  - id: x.syllable.yi.bai
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [p.yi-sandhi]
+    refs: [p.yi-sandhi]
+    accept_pinyin_mismatch: 'se escribe el tono realizado de 一 (sandhi), que es lo que se pregunta'
+    skills: [listening, tones]
+    prompt: {text: 'Escucha. ¿yī, yí o yì?', audio: true}
+    answer: {hanzi: 一百, pinyin: 'yì bǎi', meaning: 'yì: Delante de los demás tonos, 一 cae: yì.'}
+    comments: []
+  - id: x.speak.yi-sandhi
+    added: 2026-10-06
+    lang: es
+    type: speak
+    targets: [p.yi-sandhi]
+    refs: [p.yi-sandhi]
+    accept_pinyin_mismatch: 'se escribe el tono realizado de 一 (sandhi), que es lo que se practica'
+    skills: [speaking, tones]
+    prompt: {text: 'Lee en voz alta y compara con el audio.', hanzi: 一个，一本，一百}
+    answer: {hanzi: 一个，一本，一百, pinyin: 'yí ge, yì běn, yì bǎi', meaning: 'un, un libro, cien: yí delante de cuarto tono; yì delante de los demás'}
+    comments: []

@@ -220,3 +220,42 @@ entries:
       - {ref: w.daxiang, cue: 'dàxiàng: elefante'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
+  - id: w.yisheng
+    use: say
+    role: content
+    kind: word
+    hanzi: 医生
+    pinyin: 'yīshēng'
+    meaning: {es: 'médico, médica', en: 'doctor'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.fuwuyuan
+    use: say
+    role: content
+    kind: word
+    hanzi: 服务员
+    pinyin: 'fúwùyuán'
+    meaning: {es: 'camarero, camarera', en: 'waiter'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Para llamarle se dice 服务员！ 小姐 «señorita» ya no se usa para eso: puede sonar mal.'}
+  - id: w.xiaojie
+    use: hear
+    role: content
+    kind: word
+    hanzi: 小姐
+    pinyin: 'xiǎojiě'
+    meaning: {es: 'señorita (tras el apellido)', en: 'Miss'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.xiaopengyou
+    use: hear
+    role: content
+    kind: word
+    hanzi: 小朋友
+    pinyin: 'xiǎopéngyǒu'
+    meaning: {es: 'niño, niña (al hablarle)', en: 'little one (to a child)'}
+    accept_pinyin_mismatch: 'en 小朋友 la última sílaba conserva el tercer tono en la cita; al hablar suena neutra'
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Así se llama a un niño que no conoces: 小朋友，你几岁？.'}

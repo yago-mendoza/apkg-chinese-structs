@@ -1,0 +1,348 @@
+# Ejercicios · Animales y zodiaco. Esquema: 3-data/README.md
+
+exercises:
+  - id: x.contrast.ma.horse
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.ma-ma
+    targets: [w.ma.horse]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 马, pinyin: mǎ, meaning: caballo}
+    comments: []
+  - id: x.dictation.ma.horse
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.ma.horse]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ma3, hanzi: 马, pinyin: mǎ, meaning: caballo}
+    comments: []
+  - id: x.produce.ma.horse
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.ma.horse]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «caballo»? Escribe el pinyin.'}
+    answer: {typed: ma3, hanzi: 马, pinyin: mǎ, meaning: caballo}
+    comments: []
+  - id: x.read.ma.horse
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.ma.horse]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 马}
+    answer: {hanzi: 马, pinyin: mǎ, meaning: caballo}
+    comments: []
+  - id: x.dictation.gou
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.gou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gou3, hanzi: 狗, pinyin: gǒu, meaning: perro}
+    comments: []
+  - id: x.produce.gou
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.gou]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «perro»? Escribe el pinyin.'}
+    answer: {typed: gou3, hanzi: 狗, pinyin: gǒu, meaning: perro}
+    comments: []
+  - id: x.read.gou
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.gou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 狗}
+    answer: {hanzi: 狗, pinyin: gǒu, meaning: perro}
+    comments: []
+  - id: x.dictation.mao
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.mao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mao1, hanzi: 猫, pinyin: māo, meaning: gato}
+    comments: []
+  - id: x.produce.mao
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.mao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «gato»? Escribe el pinyin.'}
+    answer: {typed: mao1, hanzi: 猫, pinyin: māo, meaning: gato}
+    comments: []
+  - id: x.read.mao
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.mao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 猫}
+    answer: {hanzi: 猫, pinyin: māo, meaning: gato}
+    comments: []
+  - id: x.dictation.zhu
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.zhu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhu1, hanzi: 猪, pinyin: zhū, meaning: cerdo}
+    comments: []
+  - id: x.produce.zhu
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.zhu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «cerdo»? Escribe el pinyin.'}
+    answer: {typed: zhu1, hanzi: 猪, pinyin: zhū, meaning: cerdo}
+    comments: []
+  - id: x.read.zhu
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.zhu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 猪}
+    answer: {hanzi: 猪, pinyin: zhū, meaning: cerdo}
+    comments: []
+  - id: x.contrast.ji.chicken
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.ji-ji
+    targets: [w.ji.chicken]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 鸡, pinyin: jī, meaning: 'gallo, pollo'}
+    comments: []
+  - id: x.dictation.ji.chicken
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.ji.chicken]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ji1, hanzi: 鸡, pinyin: jī, meaning: 'gallo, pollo'}
+    comments: []
+  - id: x.produce.ji.chicken
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.ji.chicken]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «gallo, pollo»? Escribe el pinyin.'}
+    answer: {typed: ji1, hanzi: 鸡, pinyin: jī, meaning: 'gallo, pollo'}
+    comments: []
+  - id: x.read.ji.chicken
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.ji.chicken]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 鸡}
+    answer: {hanzi: 鸡, pinyin: jī, meaning: 'gallo, pollo'}
+    comments: []
+  - id: x.dictation.yang.sheep
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.yang.sheep]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yang2, hanzi: 羊, pinyin: yáng, meaning: 'oveja, cabra'}
+    comments: []
+  - id: x.read.yang.sheep
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.yang.sheep]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 羊}
+    answer: {hanzi: 羊, pinyin: yáng, meaning: 'oveja, cabra'}
+    comments: []
+  - id: x.contrast.shu.mouse
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.shu-shu
+    targets: [w.shu.mouse]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 鼠, pinyin: shǔ, meaning: rata (en el zodiaco)}
+    comments: []
+  - id: x.dictation.shu.mouse
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.shu.mouse]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shu3, hanzi: 鼠, pinyin: shǔ, meaning: rata (en el zodiaco)}
+    comments: []
+  - id: x.read.shu.mouse
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.shu.mouse]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 鼠}
+    answer: {hanzi: 鼠, pinyin: shǔ, meaning: rata (en el zodiaco)}
+    comments: []
+  - id: x.dictation.hu
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.hu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hu3, hanzi: 虎, pinyin: hǔ, meaning: tigre (en el zodiaco)}
+    comments: []
+  - id: x.read.hu
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.hu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 虎}
+    answer: {hanzi: 虎, pinyin: hǔ, meaning: tigre (en el zodiaco)}
+    comments: []
+  - id: x.dictation.tu
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.tu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: tu4, hanzi: 兔, pinyin: tù, meaning: conejo (en el zodiaco)}
+    comments: []
+  - id: x.read.tu
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.tu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 兔}
+    answer: {hanzi: 兔, pinyin: tù, meaning: conejo (en el zodiaco)}
+    comments: []
+  - id: x.dictation.she
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.she]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: she2, hanzi: 蛇, pinyin: shé, meaning: serpiente}
+    comments: []
+  - id: x.read.she
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.she]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 蛇}
+    answer: {hanzi: 蛇, pinyin: shé, meaning: serpiente}
+    comments: []
+  - id: x.dictation.hou
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.hou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hou2, hanzi: 猴, pinyin: hóu, meaning: mono (en el zodiaco)}
+    comments: []
+  - id: x.read.hou
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.hou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 猴}
+    answer: {hanzi: 猴, pinyin: hóu, meaning: mono (en el zodiaco)}
+    comments: []
+  - id: x.dictation.shuxiang
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.shuxiang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shu3 xiang5, hanzi: 属相, pinyin: shǔxiang, meaning: signo del zodiaco chino}
+    comments: []
+  - id: x.read.shuxiang
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.shuxiang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 属相}
+    answer: {hanzi: 属相, pinyin: shǔxiang, meaning: signo del zodiaco chino}
+    comments: []
+  - id: x.tones.shuxiang
+    added: 2026-10-06
+    lang: es
+    type: tones
+    targets: [w.shuxiang]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 属相, pinyin: shu xiang}
+    answer: {typed: '35', hanzi: 属相, pinyin: shǔxiang, meaning: signo del zodiaco chino}
+    comments: []
+  - id: x.listen.wo-xihuan-gou-ye-xihuan-mao
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.wo-xihuan-gou-ye-xihuan-mao
+    targets: [s.wo-xihuan-gou-ye-xihuan-mao]
+    context: [w.wo, w.xihuan, w.gou, w.ye, w.mao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Me gustan los perros, y también los gatos.'}
+    comments: []
+  - id: x.produce.wo-xihuan-gou-ye-xihuan-mao
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.wo-xihuan-gou-ye-xihuan-mao
+    targets: [s.wo-xihuan-gou-ye-xihuan-mao]
+    context: [w.wo, w.xihuan, w.gou, w.ye, w.mao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me gustan los perros, y también los gatos.»'}
+    answer: {meaning: 'Me gustan los perros, y también los gatos.'}
+    comments: []
+  - id: x.listen.mama-shu-ji-baba-shu-zhu
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.mama-shu-ji-baba-shu-zhu
+    targets: [s.mama-shu-ji-baba-shu-zhu]
+    context: [w.wo, w.mama, w.shu.belong, w.ji.chicken, w.baba, w.zhu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Mi madre es gallo y mi padre, cerdo.'}
+    comments: []
+  - id: x.produce.mama-shu-ji-baba-shu-zhu
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.mama-shu-ji-baba-shu-zhu
+    targets: [s.mama-shu-ji-baba-shu-zhu]
+    context: [w.wo, w.mama, w.shu.belong, w.ji.chicken, w.baba, w.zhu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mi madre es gallo y mi padre, cerdo.»'}
+    answer: {meaning: 'Mi madre es gallo y mi padre, cerdo.'}
+    comments: []

@@ -17,6 +17,9 @@
 - ✅🃏 睡觉 shuìjiào [ʂweɪ˥˩ tɕjɑʊ˥˩] · dormir, irse a dormir · _verbo_ · 觉 aquí se lee jiào; en 觉得 juéde [HSK 1] «parecer, creer» se lee jué. Suena igual que 叫 jiào «llamarse», pero es otro carácter.
 - ✅🃏 回家 huíjiā [xweɪ˧˥ tɕja˥] · volver a casa · _verbo_ · 回 «volver» + 家 «casa». Encadena otra acción detrás: 我回家睡觉 «me voy a casa a dormir».
 - ✅🃏 正在 zhèngzài [ʈʂɤŋ˥˩ tsaɪ˥˩] · estar (justo ahora) haciendo · _adverbio_ · Como 在 + verbo, pero subraya «justo ahora»: 我正在学习.
+- ✅🃏 今天 jīntiān [tɕin˥ tʰjɛn˥] · hoy · _sustantivo_
+- ✅🃏 今年 jīnnián [tɕin˥ njɛn˧˥] · este año · _sustantivo_
+- ✅🃏 明年 míngnián [miŋ˧˥ njɛn˧˥] · el año que viene · _sustantivo_
 
 ## 上 / 中 / 下 + 午
 
@@ -44,3 +47,6 @@ Con 午 «mediodía» se forman las tres del centro (上 antes, 中 en, 下 desp
 - ✅🃏 我昨天在家看书。 · wǒ zuótiān zài jiā kàn shū · Ayer leí en casa.
 - ✅🃏 我回家睡觉。 · wǒ huíjiā shuìjiào · Me voy a casa a dormir.
 - ✅🃏 我没有时间。 · wǒ méiyǒu shíjiān · No tengo tiempo.
+- ✅🃏 今年是马年。 · jīnnián shì mǎ nián · Este año es el del caballo.
+- ✅🃏 今天很冷。 · jīntiān hěn lěng · Hoy hace frío.
+- ✅🃏 明年我去中国。 · míngnián wǒ qù Zhōngguó · El año que viene voy a China.

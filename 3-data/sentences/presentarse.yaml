@@ -398,3 +398,54 @@ sentences:
       - {text: ？}
     translation: {es: '¿Es Jackie Chan o no?', en: "Is he Jackie Chan or not?"}
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+  - id: s.ni-shu-shenme
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 属, ref: w.shu.belong, pinyin: 'shǔ'}
+      - {text: 什么, ref: w.shenme, pinyin: 'shénme'}
+      - {text: ？}
+    translation: {es: '¿De qué signo eres?', en: 'What''s your zodiac sign?'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.wo-shu-ma
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 属, ref: w.shu.belong, pinyin: 'shǔ'}
+      - {text: 马, ref: w.ma.horse, pinyin: 'mǎ'}
+      - {text: 。}
+    translation: {es: 'Soy caballo.', en: 'I was born in the year of the horse.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.wo-chusheng-zai-beijing
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 出生, ref: w.chusheng, pinyin: 'chūshēng'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 北京, ref: w.beijing, pinyin: 'Běijīng'}
+      - {text: 。}
+    translation: {es: 'Nací en Pekín.', en: 'I was born in Beijing.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.ni-cai-ta-duoda
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 猜, ref: w.cai.guess, pinyin: 'cāi'}
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 多大, ref: w.duoda, pinyin: 'duō dà'}
+      - {text: ？}
+    translation: {es: '¿Cuántos años crees que tiene?', en: 'Guess how old he is.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.wo-juede-ta-sishi-sui-zuoyou
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 四, ref: w.num.si, pinyin: 'sì'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 左右, ref: w.zuoyou, pinyin: 'zuǒyòu'}
+      - {text: 。}
+    translation: {es: 'Creo que tiene unos cuarenta.', en: 'I think he''s about forty.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}

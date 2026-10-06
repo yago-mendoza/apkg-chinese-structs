@@ -1872,3 +1872,338 @@ exercises:
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 西}
     answer: {typed: xi1, hanzi: 西, pinyin: xī, meaning: 'Sale en 西班牙 Xībānyá «España», 东西 dōngxi «cosa, cosas».'}
     comments: []
+  - id: x.nuance.shi-jiao
+    added: 2026-10-06
+    lang: es
+    type: nuance
+    targets: [w.shi, w.jiao]
+    skills: [comprehension, discrimination]
+    prompt: {text: '他是成龙 y 他叫成龙: ¿valen las dos?'}
+    answer: {meaning: 'Sí. 他是成龙 «es Jackie Chan» dice quién es; 他叫成龙 «se llama Jackie Chan» da su nombre. Con 姓 solo va el apellido: 他姓成.'}
+    comments: []
+  - id: x.nuance.wo-ba
+    added: 2026-10-06
+    lang: es
+    type: nuance
+    targets: [w.de]
+    context: [w.baba, w.pengyou, w.bi.pen]
+    skills: [comprehension, discrimination]
+    prompt: {text: '¿Por qué 我爸 y 我朋友 pero 我的笔?'}
+    answer: {meaning: 'Con la gente cercana (familia, amigos) el 的 se puede quitar: 我爸 = 我的爸爸, 我朋友 = 我的朋友. Con las cosas no: 我的笔, 我的书.'}
+    comments: []
+  - id: x.nuance.ye-dou-two
+    added: 2026-10-06
+    lang: es
+    type: nuance
+    targets: [w.dou]
+    context: [w.ye]
+    skills: [comprehension, discrimination]
+    prompt: {text: '姚明和科比__很高: ¿也 o 都?'}
+    answer: {meaning: '都: el sujeto ya son dos (姚明和科比), y 都 dice «los dos». 也 «también» compara con algo dicho antes: 姚明很高，科比也很高.'}
+    comments: []
+  - id: x.nuance.gaoxing
+    added: 2026-10-06
+    lang: es
+    type: nuance
+    targets: [w.gaoxing]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我是高兴 o 我很高兴, y ¿qué puede ir detrás de 很高兴?'}
+    answer: {meaning: '我很高兴: un adjetivo va con 很 y sin 是. Detrás, lo que te alegra: 很高兴认识你 «encantado de conocerte», 很高兴见到你 «me alegro de verte»; no cualquier verbo. Para contestar basta 我也很高兴.'}
+    comments: []
+  - id: x.contrast.ma
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.ma-ma
+    targets: [w.ma]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 吗, pinyin: ma, meaning: '¿…? (convierte la frase en pregunta de sí o no)'}
+    comments: []
+  - id: x.contrast.dou
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.na-dou
+    targets: [w.dou]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es dōu, «todos, ambos (adverbio)»?'}
+    answer: {hanzi: 都, pinyin: dōu, meaning: 'todos, ambos (adverbio)'}
+    comments: []
+  - id: x.contrast.xiansheng
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.xiansheng-xuesheng
+    targets: [w.xiansheng]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 先生, pinyin: xiānsheng, meaning: señor (tras el apellido)}
+    comments: []
+  - id: x.dictation.chusheng
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.chusheng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chu1 sheng1, hanzi: 出生, pinyin: chūshēng, meaning: nacer}
+    comments: []
+  - id: x.produce.chusheng
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.chusheng]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «nacer»? Escribe el pinyin.'}
+    answer: {typed: chu1 sheng1, hanzi: 出生, pinyin: chūshēng, meaning: nacer}
+    comments: []
+  - id: x.read.chusheng
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.chusheng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 出生}
+    answer: {hanzi: 出生, pinyin: chūshēng, meaning: nacer}
+    comments: []
+  - id: x.contrast.shu.belong
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.shu-shu
+    targets: [w.shu.belong]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 属, pinyin: shǔ, meaning: ser (de un signo del zodiaco)}
+    comments: []
+  - id: x.dictation.shu.belong
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.shu.belong]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shu3, hanzi: 属, pinyin: shǔ, meaning: ser (de un signo del zodiaco)}
+    comments: []
+  - id: x.produce.shu.belong
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.shu.belong]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «ser (de un signo del zodiaco)»? Escribe el pinyin.'}
+    answer: {typed: shu3, hanzi: 属, pinyin: shǔ, meaning: ser (de un signo del zodiaco)}
+    comments: []
+  - id: x.read.shu.belong
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.shu.belong]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 属}
+    answer: {hanzi: 属, pinyin: shǔ, meaning: ser (de un signo del zodiaco)}
+    comments: []
+  - id: x.contrast.cai.guess
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.cai-cai
+    targets: [w.cai.guess]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 猜, pinyin: cāi, meaning: adivinar}
+    comments: []
+  - id: x.dictation.cai.guess
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.cai.guess]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: cai1, hanzi: 猜, pinyin: cāi, meaning: adivinar}
+    comments: []
+  - id: x.produce.cai.guess
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.cai.guess]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «adivinar»? Escribe el pinyin.'}
+    answer: {typed: cai1, hanzi: 猜, pinyin: cāi, meaning: adivinar}
+    comments: []
+  - id: x.read.cai.guess
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.cai.guess]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 猜}
+    answer: {hanzi: 猜, pinyin: cāi, meaning: adivinar}
+    comments: []
+  - id: x.dictation.juede
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.juede]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jue2 de5, hanzi: 觉得, pinyin: juéde, meaning: 'creer, parecerle a uno'}
+    comments: []
+  - id: x.produce.juede
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.juede]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «creer, parecerle a uno»? Escribe el pinyin.'}
+    answer: {typed: jue2 de5, hanzi: 觉得, pinyin: juéde, meaning: 'creer, parecerle a uno'}
+    comments: []
+  - id: x.read.juede
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.juede]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 觉得}
+    answer: {hanzi: 觉得, pinyin: juéde, meaning: 'creer, parecerle a uno'}
+    comments: []
+  - id: x.tones.juede
+    added: 2026-10-06
+    lang: es
+    type: tones
+    targets: [w.juede]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 觉得, pinyin: jue de}
+    answer: {typed: '25', hanzi: 觉得, pinyin: juéde, meaning: 'creer, parecerle a uno'}
+    comments: []
+  - id: x.listen.ni-shu-shenme
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.ni-shu-shenme
+    targets: [s.ni-shu-shenme]
+    context: [w.ni, w.shu.belong, w.shenme]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿De qué signo eres?'}
+    comments: []
+  - id: x.produce.ni-shu-shenme
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.ni-shu-shenme
+    targets: [s.ni-shu-shenme]
+    context: [w.ni, w.shu.belong, w.shenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿De qué signo eres?»'}
+    answer: {meaning: '¿De qué signo eres?'}
+    comments: []
+  - id: x.listen.wo-shu-ma
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.wo-shu-ma
+    targets: [s.wo-shu-ma]
+    context: [w.wo, w.shu.belong, w.ma.horse]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Soy caballo.}
+    comments: []
+  - id: x.produce.wo-shu-ma
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.wo-shu-ma
+    targets: [s.wo-shu-ma]
+    context: [w.wo, w.shu.belong, w.ma.horse]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Soy caballo.»'}
+    answer: {meaning: Soy caballo.}
+    comments: []
+  - id: x.listen.wo-chusheng-zai-beijing
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.wo-chusheng-zai-beijing
+    targets: [s.wo-chusheng-zai-beijing]
+    context: [w.wo, w.chusheng, w.zai.at, w.beijing]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Nací en Pekín.}
+    comments: []
+  - id: x.produce.wo-chusheng-zai-beijing
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.wo-chusheng-zai-beijing
+    targets: [s.wo-chusheng-zai-beijing]
+    context: [w.wo, w.chusheng, w.zai.at, w.beijing]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Nací en Pekín.»'}
+    answer: {meaning: Nací en Pekín.}
+    comments: []
+  - id: x.listen.ni-cai-ta-duoda
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.ni-cai-ta-duoda
+    targets: [s.ni-cai-ta-duoda]
+    context: [w.ni, w.cai.guess, w.ta.he, w.duoda]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuántos años crees que tiene?'}
+    comments: []
+  - id: x.produce.ni-cai-ta-duoda
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.ni-cai-ta-duoda
+    targets: [s.ni-cai-ta-duoda]
+    context: [w.ni, w.cai.guess, w.ta.he, w.duoda]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años crees que tiene?»'}
+    answer: {meaning: '¿Cuántos años crees que tiene?'}
+    comments: []
+  - id: x.listen.wo-juede-ta-sishi-sui-zuoyou
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.wo-juede-ta-sishi-sui-zuoyou
+    targets: [s.wo-juede-ta-sishi-sui-zuoyou]
+    context: [w.wo, w.juede, w.ta.he, w.num.si, w.num.shi, w.sui, w.zuoyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Creo que tiene unos cuarenta.}
+    comments: []
+  - id: x.produce.wo-juede-ta-sishi-sui-zuoyou
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.wo-juede-ta-sishi-sui-zuoyou
+    targets: [s.wo-juede-ta-sishi-sui-zuoyou]
+    context: [w.wo, w.juede, w.ta.he, w.num.si, w.num.shi, w.sui, w.zuoyou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Creo que tiene unos cuarenta.»'}
+    answer: {meaning: Creo que tiene unos cuarenta.}
+    comments: []
+  - id: x.charsound.chu
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.chusheng, w.chuqu]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 出}
+    answer: {typed: chu1, hanzi: 出, pinyin: chū, meaning: 'Sale en 出生 chūshēng «nacer», 出去 chūqu «salir (hacia fuera)».'}
+    comments: []
+  - id: x.charsound.jue
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.juede, w.shuijiao]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Tiene más de una lectura: dilas.', hanzi: 觉}
+    answer: {hanzi: 觉, pinyin: jué / jiào, meaning: 'Sale en 觉得 juéde «creer, parecerle a uno», 睡觉 shuìjiào «dormir, irse a
+        dormir».'}
+    comments: []

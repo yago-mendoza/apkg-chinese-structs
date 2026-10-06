@@ -701,3 +701,603 @@ exercises:
     prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
     answer: {typed: '23', hanzi: 没有, pinyin: méiyǒu, meaning: no tener; no haber}
     comments: []
+  - id: x.nuance.age-questions
+    added: 2026-10-06
+    lang: es
+    type: nuance
+    targets: [w.duoda, w.ji, w.nianji]
+    context: [e.ningaoshou]
+    skills: [comprehension, discrimination]
+    prompt: {text: '你多大？, 你几岁？, 您多大年纪了？ y 您高寿？: ¿a quién se le pregunta cada una?'}
+    answer: {meaning: '你多大？ a alguien de tu edad. 你几岁？ a un niño (menos de diez años: 几 espera un número pequeño). 您多大年纪了？ a una persona mayor o de respeto. 您高寿？ solo a mayores de 70: a un niño sonaría absurdo.'}
+    comments: []
+  - id: x.nuance.er-liang
+    added: 2026-10-06
+    lang: es
+    type: nuance
+    targets: [w.num.er, w.liang]
+    skills: [comprehension, discrimination]
+    prompt: {text: '二 o 两: 十_, 第_, _月, _个人, _本书, _百'}
+    answer: {meaning: '十二, 第二, 二月: contar, ordenar y fechas llevan 二. 两个人, 两本书: delante de un clasificador, 两. Y al hablar, 两百 y 两千.'}
+    comments: []
+  - id: x.situation.ni-duoda
+    added: 2026-10-06
+    lang: es
+    type: speak
+    targets: [w.duoda]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Conoces a alguien de tu edad y quieres saber cuántos años tiene. ¿Qué le preguntas?'}
+    answer: {hanzi: '你多大？', pinyin: 'nǐ duō dà', meaning: '¿cuántos años tienes?'}
+    comments: []
+  - id: x.situation.xiaopengyou-jisui
+    added: 2026-10-06
+    lang: es
+    type: speak
+    targets: [w.ji]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Hablas con un niño pequeño y quieres saber su edad. ¿Qué le preguntas?'}
+    answer: {hanzi: '小朋友，你几岁？', pinyin: 'xiǎopéngyǒu nǐ jǐ suì', meaning: 'pequeño, ¿cuántos años tienes?'}
+    comments: []
+  - id: x.situation.nin-duoda-nianji
+    added: 2026-10-06
+    lang: es
+    type: speak
+    targets: [w.nianji]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Hablas con la abuela de un amigo y quieres saber su edad, con respeto. ¿Qué le preguntas?'}
+    answer: {hanzi: '您多大年纪了？', pinyin: 'nín duō dà niánjì le', meaning: '¿cuántos años tiene usted?'}
+    comments: []
+  - id: x.comprehension.duoda
+    added: 2026-10-06
+    lang: es
+    type: comprehension
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    targets: [s.ni-duoda, s.wo-shiba-sui-ni-ne, s.wo-ye-shiba-sui]
+    script: both
+    question: {es: '¿Cuántos años tiene cada una?'}
+    answer: {meaning: 'Dieciocho, las dos.'}
+    skills: [reading, comprehension]
+    comments: []
+  - id: x.contrast.num.liu
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.liu-jiu
+    targets: [w.num.liu]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 六, pinyin: liù, meaning: seis}
+    comments: []
+  - id: x.contrast.ji
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.ji-ji
+    targets: [w.ji]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 几, pinyin: jǐ, meaning: cuántos (pocos)}
+    comments: []
+  - id: x.dictation.ling
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.ling]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ling2, hanzi: 零, pinyin: líng, meaning: cero}
+    comments: []
+  - id: x.produce.ling
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.ling]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «cero»? Escribe el pinyin.'}
+    answer: {typed: ling2, hanzi: 零, pinyin: líng, meaning: cero}
+    comments: []
+  - id: x.read.ling
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.ling]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 零}
+    answer: {hanzi: 零, pinyin: líng, meaning: cero}
+    comments: []
+  - id: x.contrast.bai.hundred
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.bai-bai
+    targets: [w.bai.hundred]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 百, pinyin: bǎi, meaning: cien}
+    comments: []
+  - id: x.dictation.bai.hundred
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.bai.hundred]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bai3, hanzi: 百, pinyin: bǎi, meaning: cien}
+    comments: []
+  - id: x.produce.bai.hundred
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.bai.hundred]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «cien»? Escribe el pinyin.'}
+    answer: {typed: bai3, hanzi: 百, pinyin: bǎi, meaning: cien}
+    comments: []
+  - id: x.read.bai.hundred
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.bai.hundred]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 百}
+    answer: {hanzi: 百, pinyin: bǎi, meaning: cien}
+    comments: []
+  - id: x.contrast.qian.thousand
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.qian-qian
+    targets: [w.qian.thousand]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 千, pinyin: qiān, meaning: mil}
+    comments: []
+  - id: x.dictation.qian.thousand
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.qian.thousand]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: qian1, hanzi: 千, pinyin: qiān, meaning: mil}
+    comments: []
+  - id: x.produce.qian.thousand
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.qian.thousand]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «mil»? Escribe el pinyin.'}
+    answer: {typed: qian1, hanzi: 千, pinyin: qiān, meaning: mil}
+    comments: []
+  - id: x.read.qian.thousand
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.qian.thousand]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 千}
+    answer: {hanzi: 千, pinyin: qiān, meaning: mil}
+    comments: []
+  - id: x.contrast.wan.tenk
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.wan-wan
+    targets: [w.wan.tenk]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 万, pinyin: wàn, meaning: diez mil}
+    comments: []
+  - id: x.dictation.wan.tenk
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.wan.tenk]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wan4, hanzi: 万, pinyin: wàn, meaning: diez mil}
+    comments: []
+  - id: x.produce.wan.tenk
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.wan.tenk]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «diez mil»? Escribe el pinyin.'}
+    answer: {typed: wan4, hanzi: 万, pinyin: wàn, meaning: diez mil}
+    comments: []
+  - id: x.read.wan.tenk
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.wan.tenk]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 万}
+    answer: {hanzi: 万, pinyin: wàn, meaning: diez mil}
+    comments: []
+  - id: x.dictation.duoda
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.duoda]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: duo1 da4, hanzi: 多大, pinyin: duō dà, meaning: '¿cuántos años? (entre adultos)'}
+    comments: []
+  - id: x.produce.duoda
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.duoda]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¿cuántos años? (entre adultos)»? Escribe el pinyin.'}
+    answer: {typed: duo1 da4, hanzi: 多大, pinyin: duō dà, meaning: '¿cuántos años? (entre adultos)'}
+    comments: []
+  - id: x.read.duoda
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.duoda]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 多大}
+    answer: {hanzi: 多大, pinyin: duō dà, meaning: '¿cuántos años? (entre adultos)'}
+    comments: []
+  - id: x.tones.duoda
+    added: 2026-10-06
+    lang: es
+    type: tones
+    targets: [w.duoda]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '14', hanzi: 多大, pinyin: duō dà, meaning: '¿cuántos años? (entre adultos)'}
+    comments: []
+  - id: x.dictation.nianji
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.nianji]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nian2 ji4, hanzi: 年纪, pinyin: niánjì, meaning: edad (con respeto)}
+    comments: []
+  - id: x.read.nianji
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.nianji]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 年纪}
+    answer: {hanzi: 年纪, pinyin: niánjì, meaning: edad (con respeto)}
+    comments: []
+  - id: x.dictation.ningaoshou
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [e.ningaoshou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nin2 gao1 shou4, hanzi: 您高寿, pinyin: nín gāoshòu, meaning: '¿cuántos años tiene usted? (a mayores de 70)'}
+    comments: []
+  - id: x.read.ningaoshou
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [e.ningaoshou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 您高寿}
+    answer: {hanzi: 您高寿, pinyin: nín gāoshòu, meaning: '¿cuántos años tiene usted? (a mayores de 70)'}
+    comments: []
+  - id: x.dictation.nianqing
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.nianqing]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nian2 qing1, hanzi: 年轻, pinyin: niánqīng, meaning: joven}
+    comments: []
+  - id: x.produce.nianqing
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.nianqing]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «joven»? Escribe el pinyin.'}
+    answer: {typed: nian2 qing1, hanzi: 年轻, pinyin: niánqīng, meaning: joven}
+    comments: []
+  - id: x.read.nianqing
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.nianqing]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 年轻}
+    answer: {hanzi: 年轻, pinyin: niánqīng, meaning: joven}
+    comments: []
+  - id: x.dictation.zuoyou
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.zuoyou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zuo3 you4, hanzi: 左右, pinyin: zuǒyòu, meaning: 'más o menos, aproximadamente'}
+    comments: []
+  - id: x.produce.zuoyou
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.zuoyou]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «más o menos, aproximadamente»? Escribe el pinyin.'}
+    answer: {typed: zuo3 you4, hanzi: 左右, pinyin: zuǒyòu, meaning: 'más o menos, aproximadamente'}
+    comments: []
+  - id: x.read.zuoyou
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.zuoyou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 左右}
+    answer: {hanzi: 左右, pinyin: zuǒyòu, meaning: 'más o menos, aproximadamente'}
+    comments: []
+  - id: x.dictation.haoma
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.haoma]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hao4 ma3, hanzi: 号码, pinyin: hàomǎ, meaning: 'número (de teléfono, de pasaporte…)'}
+    comments: []
+  - id: x.produce.haoma
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.haoma]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «número (de teléfono, de pasaporte…)»? Escribe el pinyin.'}
+    answer: {typed: hao4 ma3, hanzi: 号码, pinyin: hàomǎ, meaning: 'número (de teléfono, de pasaporte…)'}
+    comments: []
+  - id: x.read.haoma
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.haoma]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 号码}
+    answer: {hanzi: 号码, pinyin: hàomǎ, meaning: 'número (de teléfono, de pasaporte…)'}
+    comments: []
+  - id: x.listen.ni-duoda
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.ni-duoda
+    targets: [s.ni-duoda]
+    context: [w.ni, w.duoda]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuántos años tienes?'}
+    comments: []
+  - id: x.produce.ni-duoda
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.ni-duoda
+    targets: [s.ni-duoda]
+    context: [w.ni, w.duoda]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años tienes?»'}
+    answer: {meaning: '¿Cuántos años tienes?'}
+    comments: []
+  - id: x.listen.wo-shiba-sui-ni-ne
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.wo-shiba-sui-ni-ne
+    targets: [s.wo-shiba-sui-ni-ne]
+    context: [w.wo, w.num.shi, w.ba, w.sui, w.ni, w.ne]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Tengo dieciocho. ¿Y tú?'}
+    comments: []
+  - id: x.produce.wo-shiba-sui-ni-ne
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.wo-shiba-sui-ni-ne
+    targets: [s.wo-shiba-sui-ni-ne]
+    context: [w.wo, w.num.shi, w.ba, w.sui, w.ni, w.ne]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo dieciocho. ¿Y tú?»'}
+    answer: {meaning: 'Tengo dieciocho. ¿Y tú?'}
+    comments: []
+  - id: x.listen.wo-ye-shiba-sui
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.wo-ye-shiba-sui
+    targets: [s.wo-ye-shiba-sui]
+    context: [w.wo, w.ye, w.num.shi, w.ba, w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Yo también tengo dieciocho.}
+    comments: []
+  - id: x.produce.wo-ye-shiba-sui
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.wo-ye-shiba-sui
+    targets: [s.wo-ye-shiba-sui]
+    context: [w.wo, w.ye, w.num.shi, w.ba, w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Yo también tengo dieciocho.»'}
+    answer: {meaning: Yo también tengo dieciocho.}
+    comments: []
+  - id: x.listen.ni-jinnian-ji-sui-le
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.ni-jinnian-ji-sui-le
+    targets: [s.ni-jinnian-ji-sui-le]
+    context: [w.ni, w.jinnian, w.ji, w.sui, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuántos años tienes ya? (a un niño)'}
+    comments: []
+  - id: x.produce.ni-jinnian-ji-sui-le
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.ni-jinnian-ji-sui-le
+    targets: [s.ni-jinnian-ji-sui-le]
+    context: [w.ni, w.jinnian, w.ji, w.sui, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años tienes ya? (a un niño)»'}
+    answer: {meaning: '¿Cuántos años tienes ya? (a un niño)'}
+    comments: []
+  - id: x.listen.nin-duoda-nianji-le
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.nin-duoda-nianji-le
+    targets: [s.nin-duoda-nianji-le]
+    context: [w.nin, w.duoda, w.nianji, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuántos años tiene usted?'}
+    comments: []
+  - id: x.listen.wo-ershisan-sui
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.wo-ershisan-sui
+    targets: [s.wo-ershisan-sui]
+    context: [w.wo, w.num.er, w.num.shi, w.num.san, w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo veintitrés años.}
+    comments: []
+  - id: x.produce.wo-ershisan-sui
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.wo-ershisan-sui
+    targets: [s.wo-ershisan-sui]
+    context: [w.wo, w.num.er, w.num.shi, w.num.san, w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo veintitrés años.»'}
+    answer: {meaning: Tengo veintitrés años.}
+    comments: []
+  - id: x.listen.ta-de-dianhua-haoma-shi-duoshao
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.ta-de-dianhua-haoma-shi-duoshao
+    targets: [s.ta-de-dianhua-haoma-shi-duoshao]
+    context: [w.ta.he, w.de, w.dianhua, w.haoma, w.shi, w.duoshao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuál es su número de teléfono?'}
+    comments: []
+  - id: x.produce.ta-de-dianhua-haoma-shi-duoshao
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.ta-de-dianhua-haoma-shi-duoshao
+    targets: [s.ta-de-dianhua-haoma-shi-duoshao]
+    context: [w.ta.he, w.de, w.dianhua, w.haoma, w.shi, w.duoshao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuál es su número de teléfono?»'}
+    answer: {meaning: '¿Cuál es su número de teléfono?'}
+    comments: []
+  - id: x.listen.wo-you-liang-ben-shu
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.wo-you-liang-ben-shu
+    targets: [s.wo-you-liang-ben-shu]
+    context: [w.wo, w.you.have, w.liang, w.ben.book, w.shu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo dos libros.}
+    comments: []
+  - id: x.produce.wo-you-liang-ben-shu
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.wo-you-liang-ben-shu
+    targets: [s.wo-you-liang-ben-shu]
+    context: [w.wo, w.you.have, w.liang, w.ben.book, w.shu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo dos libros.»'}
+    answer: {meaning: Tengo dos libros.}
+    comments: []
+  - id: x.listen.yibai-lingwu-kuai
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.yibai-lingwu-kuai
+    targets: [s.yibai-lingwu-kuai]
+    context: [w.num.yi, w.bai.hundred, w.ling, w.num.wu, w.kuai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ciento cinco yuanes.}
+    comments: []
+  - id: x.produce.yibai-lingwu-kuai
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.yibai-lingwu-kuai
+    targets: [s.yibai-lingwu-kuai]
+    context: [w.num.yi, w.bai.hundred, w.ling, w.num.wu, w.kuai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ciento cinco yuanes.»'}
+    answer: {meaning: Ciento cinco yuanes.}
+    comments: []
+  - id: x.listen.liangqian-kuai
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.liangqian-kuai
+    targets: [s.liangqian-kuai]
+    context: [w.liang, w.qian.thousand, w.kuai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Dos mil yuanes.}
+    comments: []
+  - id: x.produce.liangqian-kuai
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.liangqian-kuai
+    targets: [s.liangqian-kuai]
+    context: [w.liang, w.qian.thousand, w.kuai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Dos mil yuanes.»'}
+    answer: {meaning: Dos mil yuanes.}
+    comments: []
+  - id: x.listen.yiwan-kuai-qian
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.yiwan-kuai-qian
+    targets: [s.yiwan-kuai-qian]
+    context: [w.num.yi, w.wan.tenk, w.kuai, w.qian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Diez mil yuanes.}
+    comments: []
+  - id: x.produce.yiwan-kuai-qian
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.yiwan-kuai-qian
+    targets: [s.yiwan-kuai-qian]
+    context: [w.num.yi, w.wan.tenk, w.kuai, w.qian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Diez mil yuanes.»'}
+    answer: {meaning: Diez mil yuanes.}
+    comments: []

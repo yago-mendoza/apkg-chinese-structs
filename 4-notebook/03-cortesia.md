@@ -15,15 +15,22 @@
 - ✅🃏 嗯 èn · mm, sí (asentimiento) · _interjección_ · Se usa como 对: para asentir mientras el otro habla.
 - ✅🃏 可以 kěyǐ [kʰɤ˧˩˧ i˧˩˧] · poder (está permitido); vale, sirve · _verbo_ · También sirve de «vale», como 好的. · 可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2]. · 可以 no es «ser capaz» (eso es 能): es que algo está permitido, vale o sirve. Pregunta y respuesta a la vez: 可以吗？ —可以。 «¿Se puede? —Sí». En una tienda, 这个大小可以吗？ «¿este tamaño está bien?». Según el contexto también se dice 行 xíng [HSK 1] o 没问题 méi wèntí [问题 HSK 2], «no hay problema».
 - ✅🃏 不好意思 bù hǎoyìsi [pu˥˩ xɑʊ˧˩˧ i˥˩ sɯ] · perdona; qué vergüenza; me sabe mal · _expresión_ · Para una molestia pequeña: llegar tarde, pasar, interrumpir, pedir algo. Es muy cotidiano, también entre jóvenes, y no suena formal.
-- ✅🃏 对不起 duìbuqǐ [tweɪ˥˩ pu tɕʰi˧˩˧] · lo siento · _verbo_ · Perdón de verdad, cuando has hecho algo mal: 对不起，我错了. Para una molestia pequeña basta 不好意思.
-- ✅🃏 没关系 méi guānxi [meɪ˧˥ kwan˥ ɕi] · no pasa nada · _expresión_ · La respuesta a 对不起 o a 不好意思: «no pasa nada». Literalmente, «no hay relación».
-- ✅🃏 不客气 bù kèqi [pu˥˩ kʰɤ˥˩ tɕʰi] · de nada · _expresión_ · La respuesta a 谢谢. Literalmente, «no hagas cumplidos».
+- ✅🃏 对不起 duìbuqǐ [tweɪ˥˩ pu tɕʰi˧˩˧] · lo siento · _verbo_ · Perdón de verdad, cuando has hecho algo mal: 对不起，我错了. Para una molestia pequeña basta 不好意思. · 对得起 es estar a la altura con alguien; 对不起, no estarlo: te he fallado, perdón.
+- ✅🃏 没关系 méi guānxi [meɪ˧˥ kwan˥ ɕi] · no pasa nada · _expresión_ · La respuesta a 对不起 o a 不好意思: «no pasa nada». Literalmente, «no hay relación». · 没 «no hay» + 关系 [HSK 3] «relación»: no tiene que ver, no importa. Para quitar importancia a algo que ha pasado; para aceptar algo que te piden, 没问题.
+- ✅🃏 不客气 bù kèqi [pu˥˩ kʰɤ˥˩ tɕʰi] · de nada · _expresión_ · La respuesta a 谢谢. Literalmente, «no hagas cumplidos». · 客气 [HSK 5] es tener cumplidos, como un invitado 客; 不客气, «no hace falta cumplido». Su 气 qi no es el 起 qǐ de 对不起: son caracteres distintos.
 - ✅🃏 帮 bāng [pɑŋ˥] · ayudar (a alguien) · _verbo_ · Con la persona detrás: 帮我 «ayúdame». Es la forma corriente al hablar.
 - ✅🃏 帮忙 bāngmáng [pɑŋ˥ mɑŋ˧˥] · echar una mano · _verbo_ · No lleva a quién detrás: 他来帮忙 «viene a echar una mano». «Ayúdame» es 帮我.
 - ✅🃏 帮助 bāngzhù [pɑŋ˥ ʈʂu˥˩] · ayudar; ayuda · _verbo_ · Más formal que 帮, y también sustantivo: 谢谢你的帮助 «gracias por tu ayuda».
 - ✅🃏 你真棒 nǐ zhēn bàng [ni˧˩˧ ʈʂən˥ pɑŋ˥˩] · ¡eres genial!, ¡qué bien lo haces! · _expresión_
 - ❌ 哪里哪里 nǎlǐ nǎlǐ [na˧˩˧ li˧˩˧ na˧˩˧ li˧˩˧] · ¡qué va!, no es para tanto (respuesta modesta a un elogio) · _expresión_ · Respuesta modesta a 你真棒. Suena algo tradicional: hoy, sobre todo entre jóvenes, es más común contestar 谢谢.
 - ✅🃏 再说一遍 zài shuō yí biàn [tsaɪ˥˩ ʂwɔ˥ i˧˥ pjɛn˥˩] · ¿puedes repetirlo?, dilo otra vez · _expresión_ · Lo que se dice en clase para pedir que repitan. Para leer otra vez, 再读一遍 zài dú yí biàn.
+- ✅🃏 知道 zhīdao [ʈʂɨ˥ tɑʊ] · saber · _verbo_ · 我不知道 «no lo sé».
+- ✅🃏 真的吗 zhēn de ma [ʈʂən˥ tɤ ma] · ¿de verdad? · _expresión_
+- ✅🃏 忘 wàng [wɑŋ˥˩] · olvidar · _verbo_ · 我忘了 «se me ha olvidado»: 了 dice que ya ha pasado.
+- ✅🃏 小心 xiǎoxīn [ɕjɑʊ˧˩˧ ɕin˥] · ¡cuidado!; tener cuidado · _adjetivo_ · 小 «pequeño» + 心 «corazón»: con el corazón encogido, atento.
+- ✅🃏 对的 duì de [tweɪ˥˩ tɤ] · eso es, correcto · _expresión_ · Como 对, algo más enfático y coloquial.
+- ✅🃏 没问题 méi wèntí [meɪ˧˥ wən˥˩ tʰi˧˥] · sin problema · _expresión_ · 没 «no hay» + 问题 «problema». Para aceptar algo que te piden; para quitar importancia a algo que ha pasado, 没关系.
+- ✅🃏 明白 míngbai [miŋ˧˥ paɪ] · entender, tener claro · _verbo_ · 明 «claro» + 白 «blanco»: claro como el día. 我明白了 «ya lo entiendo».
 
 ## Formas de decir que sí
 
@@ -62,3 +69,7 @@ Tres formas de ayudar; al hablar, la corriente es 帮.
 - ✅🃏 太谢谢你了！ · tài xièxie nǐ le · ¡Muchísimas gracias!
 - ✅🃏 你可以帮我吗？ · nǐ kěyǐ bāng wǒ ma · ¿Me puedes ayudar?
 - ✅🃏 谢谢你的帮助。 · xièxie nǐ de bāngzhù · Gracias por tu ayuda.
+- ✅🃏 我不知道。 · wǒ bù zhīdao · No lo sé.
+- ✅🃏 我忘了。 · wǒ wàng le · Se me ha olvidado.
+- ✅🃏 我明白了。 · wǒ míngbai le · Ya lo entiendo.
+- ✅🃏 小心！ · xiǎoxīn · ¡Cuidado!

@@ -15,6 +15,11 @@
 - ✅ 子 zi · hijo, niño; sufijo de nombres · 子 zǐ «hijo, niño»; al final de una palabra suele ser un sufijo átono: 儿子 érzi, 孩子 háizi. Con 女 forma 好.
 - ✅🃏 姐姐 jiějie [tɕjɛ˧˩˧ tɕjɛ] · hermana mayor · _sustantivo_
 - ✅🃏 爸妈 bàmā [pa˥˩ ma˥] · los padres, papá y mamá (coloquial) · _sustantivo_
+- ✅🃏 阿姨 āyí [a˥ i˧˥] · tía; señora (de la edad de tus padres) · _sustantivo_ · No solo «tía»: así se llama a cualquier mujer de la edad de tus padres. 王阿姨 es «la señora Wang».
+- ✅🃏 叔叔 shūshu [ʂu˥ ʂu] · tío; señor (de la edad de tus padres) · _sustantivo_ · Como 阿姨, para cualquier hombre de la edad de tus padres. Los niños lo dicen a los amigos de sus padres.
+- ✅🃏 爷爷 yéye [jɛ˧˥ jɛ] · abuelo (paterno) · _sustantivo_
+- ✅🃏 奶奶 nǎinai [naɪ˧˩˧ naɪ] · abuela (paterna) · _sustantivo_
+- ✅🃏 父母 fùmǔ [fu˥˩ mu˧˩˧] · los padres · _sustantivo_
 
 ## 好, 女儿 y 儿子
 
@@ -23,6 +28,18 @@ Las mismas piezas en distinto orden: 女 «mujer», 子 «niño» y 儿 «niño 
 - 好 hǎo · 女 + 子 en un solo carácter: bueno
 - 女儿 nǚ'ér · 女 nǚ + 儿 ér: hija (la mujer delante)
 - 儿子 érzi · 儿 ér + 子 zi: hijo (el 子 detrás)
+
+## Cómo llamar a la gente
+
+Se llama a la gente por lo que es para ti, no por su nombre.
+
+- 爷爷 yéye · abuelo; un señor mayor
+- 奶奶 nǎinai · abuela; una señora mayor
+- 叔叔 shūshu · un hombre de la edad de tus padres
+- 阿姨 āyí · una mujer de la edad de tus padres
+- 先生 xiānsheng · señor, tras el apellido
+- 服务员 fúwùyuán · para llamar al camarero
+- 小朋友 xiǎopéngyǒu · a un niño que no conoces
 
 ## Frases
 
@@ -33,3 +50,10 @@ Las mismas piezas en distinto orden: 女 «mujer», 子 «niño» y 儿 «niño 
 - ✅🃏 妈妈回来了。 · māma huílai le · Mamá ha vuelto.
 - ✅🃏 姐姐在看报纸。 · jiějie zài kàn bàozhǐ · Mi hermana está leyendo el periódico.
 - ✅🃏 他们是我的爸妈。 · tāmen shì wǒ de bàmā · Son mis padres.
+- ✅🃏 我爸爸是老师。 · wǒ bàba shì lǎoshī · Mi padre es profesor.
+- ✅🃏 我妈妈是医生。 · wǒ māma shì yīshēng · Mi madre es médica.
+- ✅🃏 你好，阿姨！ · nǐ hǎo āyí · ¡Hola, señora!
+- ✅🃏 那个人是你的爸爸吗？ · nà ge rén shì nǐ de bàba ma · ¿Esa persona es tu padre?
+- ✅🃏 爸爸和妈妈都很高。 · bàba hé māma dōu hěn gāo · Papá y mamá son altos los dos.
+- ✅🃏 叔叔、阿姨好！ · shūshu āyí hǎo · ¡Hola, señores!
+- ✅🃏 我爷爷和奶奶都很好。 · wǒ yéye hé nǎinai dōu hěn hǎo · Mis abuelos están bien los dos.

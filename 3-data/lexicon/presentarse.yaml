@@ -168,7 +168,8 @@ entries:
     pinyin: gāoxìng
     meaning: {es: contento, en: happy}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Con 很 y sin 是: 我很高兴, nunca 我是高兴. Para contestar a 认识你很高兴 basta 我也很高兴.'}
   - id: w.xing
     use: say
     role: content
@@ -180,6 +181,7 @@ entries:
     comments:
       - {kind: teacher, private: false, date: '2026-09-29', text: Se pregunta el apellido para poder tratar a alguien de señor o señora., original: we ask surname to say 'mr' in chinese}
       - {kind: linguistic, private: false, date: '2026-09-27', text: '姓 xìng «apellido» + 名字 míngzi «nombre» = 姓名 xìngmíng, el nombre completo.'}
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'No lo confundas con 星 xīng «estrella» (明星 «famoso», 巨星 [HSK 7] «gran estrella»), en primer tono; 姓 cae.'}
   - id: e.guixing
     use: say
     role: content
@@ -402,3 +404,61 @@ entries:
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
     comments:
       - {kind: teacher, private: false, date: '2026-10-02', text: 'En una presentación formal: «您好，我是…», «您贵姓？», «我姓…，叫…» y, al final, los dos dicen «幸会！».'}
+  - id: w.chusheng
+    use: say
+    role: content
+    kind: word
+    hanzi: 出生
+    pinyin: 'chūshēng'
+    meaning: {es: 'nacer', en: 'to be born'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.shu.belong
+    use: say
+    role: content
+    kind: word
+    hanzi: 属
+    pinyin: 'shǔ'
+    meaning: {es: 'ser (de un signo del zodiaco)', en: 'to be born in the year of'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: '我属马 «soy caballo»: el signo del año en que naciste. Se pregunta 你属什么？.'}
+  - id: w.cai.guess
+    use: say
+    role: content
+    kind: word
+    hanzi: 猜
+    pinyin: 'cāi'
+    meaning: {es: 'adivinar', en: 'to guess'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.juede
+    use: say
+    role: content
+    kind: word
+    hanzi: 觉得
+    pinyin: 'juéde'
+    meaning: {es: 'creer, parecerle a uno', en: 'to think, to feel'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Para dar tu opinión: 我觉得很好 «me parece bien». 你觉得怎么样？ «¿qué te parece?».'}
+  - id: g.xiansheng-xuesheng
+    kind: group
+    basis: soundalike
+    title: '先生 y 学生'
+    explanation: 'Los dos acaban en 生 átono; empiezan distinto.'
+    members:
+      - {ref: w.xiansheng, cue: 'xiān: señor; 先 «antes», con primer tono'}
+      - {ref: w.xuesheng, cue: 'xué: estudiante; 学 «estudiar», que sube'}
+    source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
+    comments: []
+  - id: g.cai-cai
+    kind: group
+    basis: soundalike
+    title: '猜 cāi y 菜 cài'
+    explanation: '猜 es alto y plano; 菜 cae.'
+    members:
+      - {ref: w.cai.guess, cue: 'cāi, alto y plano: adivinar'}
+      - {ref: w.cai, cue: 'cài, cae: plato, verdura'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []

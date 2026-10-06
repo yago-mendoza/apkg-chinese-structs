@@ -86,3 +86,120 @@ sentences:
       - {text: 。}
     translation: {es: 'Tengo un libro.', en: "I have a book."}
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+  - id: s.ni-duoda
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 多大, ref: w.duoda, pinyin: 'duō dà'}
+      - {text: ？}
+    translation: {es: '¿Cuántos años tienes?', en: 'How old are you?'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.wo-shiba-sui-ni-ne
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 八, ref: w.ba, pinyin: 'bā'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 。}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 呢, ref: w.ne, pinyin: 'ne'}
+      - {text: ？}
+    translation: {es: 'Tengo dieciocho. ¿Y tú?', en: 'I''m eighteen. And you?'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.wo-ye-shiba-sui
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 也, ref: w.ye, pinyin: 'yě'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 八, ref: w.ba, pinyin: 'bā'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 。}
+    translation: {es: 'Yo también tengo dieciocho.', en: 'I''m eighteen too.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.ni-jinnian-ji-sui-le
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
+      - {text: 几, ref: w.ji, pinyin: 'jǐ'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: ？}
+    translation: {es: '¿Cuántos años tienes ya? (a un niño)', en: 'How old are you now?'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: deberes 2026-10-06, date: '2026-10-06'}
+  - id: s.nin-duoda-nianji-le
+    use: hear
+    segments:
+      - {text: 您, ref: w.nin, pinyin: 'nín'}
+      - {text: 多大, ref: w.duoda, pinyin: 'duō dà'}
+      - {text: 年纪, ref: w.nianji, pinyin: 'niánjì'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: ？}
+    translation: {es: '¿Cuántos años tiene usted?', en: 'How old are you? (polite)'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.wo-ershisan-sui
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 三, ref: w.num.san, pinyin: 'sān'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 。}
+    translation: {es: 'Tengo veintitrés años.', en: 'I''m twenty-three.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.ta-de-dianhua-haoma-shi-duoshao
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 电话, ref: w.dianhua, pinyin: 'diànhuà'}
+      - {text: 号码, ref: w.haoma, pinyin: 'hàomǎ'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 多少, ref: w.duoshao, pinyin: 'duōshao'}
+      - {text: ？}
+    translation: {es: '¿Cuál es su número de teléfono?', en: 'What''s his phone number?'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.wo-you-liang-ben-shu
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 两, ref: w.liang, pinyin: 'liǎng'}
+      - {text: 本, ref: w.ben.book, pinyin: 'běn'}
+      - {text: 书, ref: w.shu, pinyin: 'shū'}
+      - {text: 。}
+    translation: {es: 'Tengo dos libros.', en: 'I have two books.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.yibai-lingwu-kuai
+    use: say
+    segments:
+      - {text: 一, ref: w.num.yi, pinyin: 'yì', sandhi: true}
+      - {text: 百, ref: w.bai.hundred, pinyin: 'bǎi'}
+      - {text: 零, ref: w.ling, pinyin: 'líng'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 块, ref: w.kuai, pinyin: 'kuài'}
+      - {text: 。}
+    translation: {es: 'Ciento cinco yuanes.', en: 'A hundred and five yuan.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.liangqian-kuai
+    use: say
+    segments:
+      - {text: 两, ref: w.liang, pinyin: 'liǎng'}
+      - {text: 千, ref: w.qian.thousand, pinyin: 'qiān'}
+      - {text: 块, ref: w.kuai, pinyin: 'kuài'}
+      - {text: 。}
+    translation: {es: 'Dos mil yuanes.', en: 'Two thousand yuan.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.yiwan-kuai-qian
+    use: say
+    segments:
+      - {text: 一, ref: w.num.yi, pinyin: 'yí', sandhi: true}
+      - {text: 万, ref: w.wan.tenk, pinyin: 'wàn'}
+      - {text: 块, ref: w.kuai, pinyin: 'kuài'}
+      - {text: 钱, ref: w.qian, pinyin: 'qián'}
+      - {text: 。}
+    translation: {es: 'Diez mil yuanes.', en: 'Ten thousand yuan.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}

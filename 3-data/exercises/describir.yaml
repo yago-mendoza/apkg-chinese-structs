@@ -1120,3 +1120,103 @@ exercises:
     answer: {typed: ming2, hanzi: 明, pinyin: míng, meaning: 'Sale en 聪明 cōngming «listo, inteligente», 明天 míngtiān «mañana (el
         día)».'}
     comments: []
+  - id: x.nuance.zhen-hen
+    added: 2026-10-06
+    lang: es
+    type: nuance
+    targets: [w.zhen, w.hen]
+    skills: [comprehension, discrimination]
+    prompt: {text: '这个苹果真大 y 这个苹果很大: ¿qué cambia?'}
+    answer: {meaning: '很大 describe: es grande. 真大 exclama: ¡qué grande! Con 真 hablas de lo que te sorprende.'}
+    comments: []
+  - id: x.contrast.bai
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.bai-bai
+    targets: [w.bai]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 白, pinyin: bái, meaning: blanco; también un apellido}
+    comments: []
+  - id: x.contrast.bi
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.bi-bi
+    targets: [w.bi]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es bǐ, «que (para comparar)»?'}
+    answer: {hanzi: 比, pinyin: bǐ, meaning: que (para comparar)}
+    comments: []
+  - id: x.dictation.zhen
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.zhen]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhen1, hanzi: 真, pinyin: zhēn, meaning: de verdad; ¡qué…!}
+    comments: []
+  - id: x.produce.zhen
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.zhen]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «de verdad; ¡qué…!»? Escribe el pinyin.'}
+    answer: {typed: zhen1, hanzi: 真, pinyin: zhēn, meaning: de verdad; ¡qué…!}
+    comments: []
+  - id: x.read.zhen
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.zhen]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 真}
+    answer: {hanzi: 真, pinyin: zhēn, meaning: de verdad; ¡qué…!}
+    comments: []
+  - id: x.listen.zhege-pingguo-zhen-da
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.zhege-pingguo-zhen-da
+    targets: [s.zhege-pingguo-zhen-da]
+    context: [w.zhe, w.ge, w.pingguo, w.zhen, w.da]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Qué grande es esta manzana!}
+    comments: []
+  - id: x.produce.zhege-pingguo-zhen-da
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.zhege-pingguo-zhen-da
+    targets: [s.zhege-pingguo-zhen-da]
+    context: [w.zhe, w.ge, w.pingguo, w.zhen, w.da]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Qué grande es esta manzana!»'}
+    answer: {meaning: ¡Qué grande es esta manzana!}
+    comments: []
+  - id: x.listen.ayi-nin-hen-nianqing
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.ayi-nin-hen-nianqing
+    targets: [s.ayi-nin-hen-nianqing]
+    context: [w.ayi, w.nin, w.hen, w.nianqing]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Señora, qué joven es usted!'}
+    comments: []
+  - id: x.produce.ayi-nin-hen-nianqing
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.ayi-nin-hen-nianqing
+    targets: [s.ayi-nin-hen-nianqing]
+    context: [w.ayi, w.nin, w.hen, w.nianqing]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Señora, qué joven es usted!»'}
+    answer: {meaning: '¡Señora, qué joven es usted!'}
+    comments: []

@@ -1,0 +1,31 @@
+# Frases · Animales y zodiaco. Esquema: 3-data/README.md
+
+sentences:
+  - id: s.wo-xihuan-gou-ye-xihuan-mao
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 狗, ref: w.gou, pinyin: 'gǒu'}
+      - {text: ，}
+      - {text: 也, ref: w.ye, pinyin: 'yě'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 猫, ref: w.mao, pinyin: 'māo'}
+      - {text: 。}
+    translation: {es: 'Me gustan los perros, y también los gatos.', en: 'I like dogs, and cats too.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.mama-shu-ji-baba-shu-zhu
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 妈妈, ref: w.mama, pinyin: 'māma'}
+      - {text: 属, ref: w.shu.belong, pinyin: 'shǔ'}
+      - {text: 鸡, ref: w.ji.chicken, pinyin: 'jī'}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 爸爸, ref: w.baba, pinyin: 'bàba'}
+      - {text: 属, ref: w.shu.belong, pinyin: 'shǔ'}
+      - {text: 猪, ref: w.zhu, pinyin: 'zhū'}
+      - {text: 。}
+    translation: {es: 'Mi madre es gallo y mi padre, cerdo.', en: 'My mother is a rooster and my father a pig.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}

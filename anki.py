@@ -1902,7 +1902,7 @@ def validate(entries, sentences, exercises, require_audio=True):
         # Redundancia: mismo tipo y mismos objetivos. Repetir algo como contexto no cuenta. En pronunciación cada
         # tarjeta es un sonido distinto (是 / 吃 frente a 四 / 次): cuenta también lo que suena.
         sound_key = ((answer_hanzi(ex, sby), (ex.get("prompt") or {}).get("text"))
-                     if any(t.startswith("p.") for t in ex.get("targets", [])) else None)
+                     if any(t.startswith("p.") for t in ex.get("targets", [])) or ex.get("type") == "charsound" else None)
         key = (ex.get("type"), tuple(sorted(ex.get("targets", []))), sound_key)
         if key in seen:
             warnings.append(f"{xid}: evalúa lo mismo que {seen[key]} ({key[0]}); ¿redundante?")
@@ -1952,6 +1952,8 @@ def validate(entries, sentences, exercises, require_audio=True):
         if (ex.get("prompt") or {}).get("audio") and not answer_hanzi(ex, sby):
             errors.append(f"{xid}: escucha sin texto chino que sonorizar")
         w = pinyin_warning(ans.get("hanzi"), ans.get("pinyin"))
+        if ex.get("type") == "charsound" and " / " in (ans.get("pinyin") or ""):   # varias lecturas, una por una
+            w = next((pinyin_warning(ans["hanzi"], r) for r in ans["pinyin"].split(" / ") if pinyin_warning(ans["hanzi"], r)), None)
         accepted = ex.get("accept_pinyin_mismatch") or any(
             e.get("accept_pinyin_mismatch") and e.get("hanzi") == ans.get("hanzi") for e in entries)
         if w and not accepted:

@@ -70,3 +70,32 @@ sentences:
       - {text: 。}
     translation: {es: 'No tengo tiempo.', en: 'I don''t have time.'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.jinnian-shi-ma-nian
+    use: say
+    segments:
+      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 马, ref: w.ma.horse, pinyin: 'mǎ'}
+      - {text: 年, ref: w.nian, pinyin: 'nián'}
+      - {text: 。}
+    translation: {es: 'Este año es el del caballo.', en: 'This year is the year of the horse.'}
+    source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
+  - id: s.jintian-hen-leng
+    use: say
+    segments:
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 冷, ref: w.leng, pinyin: 'lěng'}
+      - {text: 。}
+    translation: {es: 'Hoy hace frío.', en: 'It''s cold today.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.mingnian-wo-qu-zhongguo
+    use: say
+    segments:
+      - {text: 明年, ref: w.mingnian, pinyin: 'míngnián'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 中国, ref: w.zhongguo, pinyin: 'Zhōngguó'}
+      - {text: 。}
+    translation: {es: 'El año que viene voy a China.', en: 'Next year I am going to China.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}

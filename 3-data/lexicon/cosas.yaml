@@ -573,10 +573,88 @@ entries:
   - id: g.shu-shu
     kind: group
     basis: soundalike
-    title: '书 shū / 树 shù'
-    explanation: 'Misma sílaba, distinto tono: 书 shū es «libro» (primer tono, alto y plano) y 树 shù es «árbol» (cuarto tono, cae).'
+    title: '书 shū, 树 shù, 鼠 y 属 shǔ'
+    explanation: 'Misma sílaba, distinto tono: 书 shū «libro» (alto y plano), 树 shù «árbol» (cae), y con tercer tono (baja y sube) 鼠 «rata» y 属 «ser de un signo», que suenan igual: 我属鼠.'
     members:
       - {ref: w.shu, cue: 'shū, alto y plano: libro'}
       - {ref: w.shu.tree, cue: 'shù, cae: árbol'}
+      - {ref: w.shu.mouse, cue: 'shǔ, baja y sube: rata (zodiaco)'}
+      - {ref: w.shu.belong, cue: 'shǔ, baja y sube: ser de un signo (我属马)'}
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+    comments: []
+  - id: w.bi.pen
+    use: say
+    role: content
+    kind: word
+    hanzi: 笔
+    pinyin: 'bǐ'
+    meaning: {es: 'bolígrafo, lápiz', en: 'pen'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.beizi
+    use: say
+    role: content
+    kind: word
+    hanzi: 杯子
+    pinyin: 'bēizi'
+    meaning: {es: 'vaso, taza', en: 'cup, glass'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.dianhua
+    use: say
+    role: content
+    kind: word
+    hanzi: 电话
+    pinyin: 'diànhuà'
+    meaning: {es: 'teléfono', en: 'telephone'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: g.na-dou
+    kind: group
+    basis: visual
+    title: '哪 y 都'
+    explanation: 'Comparten 阝 a la derecha; la izquierda los separa.'
+    members:
+      - {ref: w.na.which, cue: '哪 nǎ «cuál»: 口 boca a la izquierda, porque pregunta'}
+      - {ref: w.dou, cue: '都 dōu «todos»: 者 a la izquierda'}
+    source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
+    comments: []
+  - id: g.bi-bi
+    kind: group
+    basis: homophone
+    title: '比 y 笔: los dos bǐ'
+    explanation: 'Suenan igual: la frase decide. 比 compara (他比我高); 笔 es el bolígrafo.'
+    members:
+      - {ref: w.bi, cue: '比: comparar (A 比 B)'}
+      - {ref: w.bi.pen, cue: '笔: bolígrafo, lápiz'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.zuo.left
+    use: hear
+    role: content
+    kind: word
+    hanzi: 左
+    pinyin: 'zuǒ'
+    meaning: {es: 'izquierda', en: 'left'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.you.right
+    use: hear
+    role: content
+    kind: word
+    hanzi: 右
+    pinyin: 'yòu'
+    meaning: {es: 'derecha', en: 'right'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: '左 «izquierda» + 右 «derecha» = 左右 «más o menos», detrás de un número.'}
+  - id: g.zuo-zuo
+    kind: group
+    basis: soundalike
+    title: '左 zuǒ y 坐 zuò'
+    explanation: '左 baja y sube; 坐 cae.'
+    members:
+      - {ref: w.zuo.left, cue: 'zuǒ, baja y sube: izquierda'}
+      - {ref: w.zuo.sit, cue: 'zuò, cae: sentarse'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []

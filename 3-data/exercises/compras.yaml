@@ -1866,3 +1866,50 @@ exercises:
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 里}
     answer: {typed: li3, hanzi: 里, pinyin: lǐ, meaning: 'Sale en 哪里 nǎlǐ «dónde», 这里 zhèlǐ «aquí».'}
     comments: []
+  - id: x.contrast.qian
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.qian-qian
+    targets: [w.qian]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 钱, pinyin: qián, meaning: dinero}
+    comments: []
+  - id: x.contrast.cai
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.cai-cai
+    targets: [w.cai]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 菜, pinyin: cài, meaning: 'plato, comida; verdura'}
+    comments: []
+  - id: x.dictation.pingguo
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.pingguo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ping2 guo3, hanzi: 苹果, pinyin: píngguǒ, meaning: manzana}
+    comments: []
+  - id: x.produce.pingguo
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.pingguo]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «manzana»? Escribe el pinyin.'}
+    answer: {typed: ping2 guo3, hanzi: 苹果, pinyin: píngguǒ, meaning: manzana}
+    comments: []
+  - id: x.read.pingguo
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.pingguo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 苹果}
+    answer: {hanzi: 苹果, pinyin: píngguǒ, meaning: manzana}
+    comments: []

@@ -139,3 +139,69 @@ entries:
     level_reason: forma corta y coloquial de 爸爸妈妈, ambas HSK 1
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
     comments: []
+  - id: w.ayi
+    use: say
+    role: content
+    kind: word
+    hanzi: 阿姨
+    pinyin: 'āyí'
+    meaning: {es: 'tía; señora (de la edad de tus padres)', en: 'aunt; auntie'}
+    connection: {kind: sound, with: [啊], text: '阿 ā da el sonido a 啊 a, la partícula de las exclamaciones.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'No solo «tía»: así se llama a cualquier mujer de la edad de tus padres. 王阿姨 es «la señora Wang».'}
+  - id: w.shushu
+    use: say
+    role: content
+    kind: word
+    hanzi: 叔叔
+    pinyin: 'shūshu'
+    meaning: {es: 'tío; señor (de la edad de tus padres)', en: 'uncle'}
+    accept_pinyin_mismatch: 'la segunda sílaba se dice átona en el habla'
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Como 阿姨, para cualquier hombre de la edad de tus padres. Los niños lo dicen a los amigos de sus padres.'}
+  - id: w.yeye
+    use: say
+    role: content
+    kind: word
+    hanzi: 爷爷
+    pinyin: 'yéye'
+    meaning: {es: 'abuelo (paterno)', en: 'grandpa'}
+    accept_pinyin_mismatch: 'la segunda sílaba se dice átona en el habla'
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.nainai
+    use: say
+    role: content
+    kind: word
+    hanzi: 奶奶
+    pinyin: 'nǎinai'
+    meaning: {es: 'abuela (paterna)', en: 'grandma'}
+    accept_pinyin_mismatch: 'la segunda sílaba se dice átona en el habla'
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.fumu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 父母
+    pinyin: 'fùmǔ'
+    meaning: {es: 'los padres', en: 'parents'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: g.titles
+    kind: group
+    basis: set
+    title: 'Cómo llamar a la gente'
+    explanation: 'Se llama a la gente por lo que es para ti, no por su nombre.'
+    members:
+      - {ref: w.yeye, cue: 'abuelo; un señor mayor'}
+      - {ref: w.nainai, cue: 'abuela; una señora mayor'}
+      - {ref: w.shushu, cue: 'un hombre de la edad de tus padres'}
+      - {ref: w.ayi, cue: 'una mujer de la edad de tus padres'}
+      - {ref: w.xiansheng, cue: 'señor, tras el apellido'}
+      - {ref: w.fuwuyuan, cue: 'para llamar al camarero'}
+      - {ref: w.xiaopengyou, cue: 'a un niño que no conoces'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []

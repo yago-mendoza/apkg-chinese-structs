@@ -436,3 +436,15 @@ exercises:
     prompt: {text: '¿Cuál se dice así en chino? «¿Es Jackie Chan o no?»'}
     answer: {meaning: 是不是 ya es la pregunta; con 吗 sobra.}
     comments: []
+  - id: x.calque.age-no-shi
+    added: 2026-10-06
+    lang: es
+    type: pattern
+    targets: [st.age-no-shi]
+    context: [w.sui]
+    sentence: s.wo-ershisan-sui
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Tengo veintitrés años.»'}
+    answer: {meaning: '«Tengo 23 años» no lleva verbo en chino: la edad hace de predicado sin 是.'}
+    comments: []

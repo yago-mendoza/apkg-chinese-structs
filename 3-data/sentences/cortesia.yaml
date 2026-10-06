@@ -99,3 +99,37 @@ sentences:
       - {text: 。}
     translation: {es: 'Gracias por tu ayuda.', en: 'Thanks for your help.'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-bu-zhidao
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 知道, ref: w.zhidao, pinyin: 'zhīdao'}
+      - {text: 。}
+    translation: {es: 'No lo sé.', en: 'I don''t know.'}
+    source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
+  - id: s.wo-wang-le
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 忘, ref: w.wang.forget, pinyin: 'wàng'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'Se me ha olvidado.', en: 'I forgot.'}
+    source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
+  - id: s.wo-mingbai-le
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 明白, ref: w.mingbai, pinyin: 'míngbai'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'Ya lo entiendo.', en: 'I get it.'}
+    source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
+  - id: s.xiaoxin
+    use: say
+    segments:
+      - {text: 小心, ref: w.xiaoxin, pinyin: 'xiǎoxīn'}
+      - {text: ！}
+    translation: {es: '¡Cuidado!', en: 'Careful!'}
+    source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}

@@ -102,6 +102,7 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: '二 èr para contar y dentro de números (十二 «doce»); 两 delante de un clasificador: 两个人 «dos personas».'}
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Al hablar, 两 también va delante de 百, 千 y 万: 两百, 两千. 二 sigue en los números: 十二, 二十.'}
   - id: w.you.have
     use: say
     role: content
@@ -173,6 +174,7 @@ entries:
       - {ref: w.you.have, cue: 'yǒu, baja y sube: tener'}
       - {ref: w.you.again, cue: 'yòu, cae: a la vez (又…又…)'}
       - {ref: w.yao, cue: 'yào, cae y suena «yao»: querer'}
+      - {ref: w.you.right, cue: 'yòu, cae, igual que 又: derecha (左右)'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
   - id: w.ben.book
@@ -196,3 +198,165 @@ entries:
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-02', text: 'Va entre 这, 那 o un número y la palabra: 这棵树 «este árbol», 一棵树 «un árbol».'}
+  - id: w.ling
+    use: say
+    role: content
+    kind: word
+    hanzi: 零
+    pinyin: 'líng'
+    meaning: {es: 'cero', en: 'zero'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.bai.hundred
+    use: say
+    role: content
+    kind: word
+    hanzi: 百
+    pinyin: 'bǎi'
+    meaning: {es: 'cien', en: 'hundred'}
+    connection: {kind: sound, with: [白], text: '白 bái da el sonido a 百 bǎi; encima, 一.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.qian.thousand
+    use: say
+    role: content
+    kind: word
+    hanzi: 千
+    pinyin: 'qiān'
+    meaning: {es: 'mil', en: 'thousand'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.wan.tenk
+    use: say
+    role: content
+    kind: word
+    hanzi: 万
+    pinyin: 'wàn'
+    meaning: {es: 'diez mil', en: 'ten thousand'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: '万 es una unidad propia, 10 000: 三万 son 30 000 y 十万, 100 000. El chino agrupa las cifras de cuatro en cuatro, no de tres en tres.'}
+  - id: w.duoda
+    use: say
+    role: content
+    kind: word
+    pos: interrogativo
+    hanzi: 多大
+    pinyin: 'duō dà'
+    meaning: {es: '¿cuántos años? (entre adultos)', en: 'how old'}
+    level: 1
+    level_reason: '多 y 大 son HSK 1; es la pregunta por la edad entre adultos'
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: '你多大？ a alguien de tu edad; 你几岁？ a un niño; 您多大年纪了？ a una persona mayor o de respeto.'}
+  - id: w.nianji
+    use: hear
+    role: content
+    kind: word
+    hanzi: 年纪
+    pinyin: 'niánjì'
+    meaning: {es: 'edad (con respeto)', en: 'age'}
+    connection: {kind: sound, with: [起], text: '己 jǐ da el sonido a 纪 jì y, cambiado, a 起 qǐ.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: e.ningaoshou
+    use: hear
+    role: content
+    kind: expression
+    hanzi: 您高寿
+    pinyin: 'nín gāoshòu'
+    meaning: {es: '¿cuántos años tiene usted? (a mayores de 70)', en: 'how old are you (to the elderly)'}
+    level: 4
+    level_reason: 'fórmula de respeto para personas muy mayores; 寿 «larga vida» es de nivel alto'
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.nianqing
+    use: say
+    role: content
+    kind: word
+    hanzi: 年轻
+    pinyin: 'niánqīng'
+    meaning: {es: 'joven', en: 'young'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.zuoyou
+    use: say
+    role: content
+    kind: word
+    hanzi: 左右
+    pinyin: 'zuǒyòu'
+    meaning: {es: 'más o menos, aproximadamente', en: 'about, approximately'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Va detrás del número: 四十岁左右 «unos cuarenta años». Suelto, 左右 es «izquierda y derecha».'}
+  - id: w.haoma
+    use: say
+    role: content
+    kind: word
+    hanzi: 号码
+    pinyin: 'hàomǎ'
+    meaning: {es: 'número (de teléfono, de pasaporte…)', en: 'number (phone, ID)'}
+    connection: {kind: sound, with: [马, 吗, 妈], text: '马 mǎ da el sonido a 码 mǎ, como a 吗 y a 妈.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Al dar un número de teléfono, 一 se lee yāo para no confundirlo con 七 qī: 110 se dice yāo yāo líng.'}
+  - id: g.er-liang
+    kind: group
+    basis: set
+    title: '二 o 两'
+    explanation: 'Los dos son «dos»: 二 para contar y ordenar, 两 para cuántos.'
+    members:
+      - {ref: w.num.er, cue: 'contar, números, orden y fechas: 十二, 第二, 二月'}
+      - {ref: w.liang, cue: 'cuántos, delante de un clasificador: 两个人, 两本书; al hablar, 两百 y 两千'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: g.liu-jiu
+    kind: group
+    basis: soundalike
+    title: '六 y 九'
+    explanation: 'Los dos acaban en -iu (dicho «iou»): los separan la consonante y el tono.'
+    members:
+      - {ref: w.num.liu, cue: 'liù: l y cae (cuarto tono)'}
+      - {ref: w.num.jiu, cue: 'jiǔ: j y baja y sube (tercer tono)'}
+    source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
+    comments: []
+  - id: g.qian-qian
+    kind: group
+    basis: soundalike
+    title: '千 qiān y 钱 qián'
+    explanation: 'Salen juntos al hablar de dinero (两千块钱): 千 es alto y plano, 钱 sube.'
+    members:
+      - {ref: w.qian.thousand, cue: 'qiān, alto y plano: mil'}
+      - {ref: w.qian, cue: 'qián, sube: dinero'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: g.bai-bai
+    kind: group
+    basis: soundalike
+    title: '百 bǎi y 白 bái'
+    explanation: '白 da el sonido a 百 (一 encima de 白): 百 baja y sube, 白 sube.'
+    members:
+      - {ref: w.bai.hundred, cue: 'bǎi, baja y sube: cien'}
+      - {ref: w.bai, cue: 'bái, sube: blanco'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: g.wan-wan
+    kind: group
+    basis: soundalike
+    title: '万 wàn y 晚 wǎn'
+    explanation: '万 cae; 晚 baja y sube (晚上).'
+    members:
+      - {ref: w.wan.tenk, cue: 'wàn, cae: diez mil'}
+      - {ref: w.wan, cue: 'wǎn, baja y sube: tarde, noche'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: g.ji-ji
+    kind: group
+    basis: soundalike
+    title: '几 jǐ y 鸡 jī'
+    explanation: '几 baja y sube (几岁); 鸡 es alto y plano.'
+    members:
+      - {ref: w.ji, cue: 'jǐ, baja y sube: cuántos'}
+      - {ref: w.ji.chicken, cue: 'jī, alto y plano: gallo'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []

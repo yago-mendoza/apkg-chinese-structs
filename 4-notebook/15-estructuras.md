@@ -40,3 +40,4 @@
 - ✅🃏 `别 + {V}` · Pedir que alguien no haga algo: 别 delante del verbo. · 别看我！
 - ✅🃏 `{S} + {V} + {N} + {V} + {N}` · Acciones en cadena, en el orden en que pasan: primero el medio, luego la meta. · 我坐飞机去中国。
 - ✅🃏 `{S} + 是 + 不 + 是 + {N}？` · Pregunta de sí o no sin 吗: 是, 不 y 是 otra vez; el 不 del medio se dice átono. · 他是不是成龙？
+- ✅🃏 `{S} + {Num} + 岁` · La edad va sin 是: 我二十三岁. Igual la fecha: 今天八号. · 我二十三岁。

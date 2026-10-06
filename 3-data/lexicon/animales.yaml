@@ -1,0 +1,154 @@
+# entries · Animales y signos del zodiaco. Esquema: 3-data/README.md
+
+entries:
+  - id: w.ma.horse
+    use: say
+    role: content
+    kind: word
+    hanzi: 马
+    pinyin: 'mǎ'
+    meaning: {es: 'caballo', en: 'horse'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-06', text: '马年, «año del caballo»: 2026 lo es, así que caballo y año van juntos.'}
+  - id: w.gou
+    use: say
+    role: content
+    kind: word
+    hanzi: 狗
+    pinyin: 'gǒu'
+    meaning: {es: 'perro', en: 'dog'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.mao
+    use: say
+    role: content
+    kind: word
+    hanzi: 猫
+    pinyin: 'māo'
+    meaning: {es: 'gato', en: 'cat'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.zhu
+    use: say
+    role: content
+    kind: word
+    hanzi: 猪
+    pinyin: 'zhū'
+    meaning: {es: 'cerdo', en: 'pig'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.ji.chicken
+    use: say
+    role: content
+    kind: word
+    hanzi: 鸡
+    pinyin: 'jī'
+    meaning: {es: 'gallo, pollo', en: 'chicken'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.yang.sheep
+    use: hear
+    role: content
+    kind: word
+    hanzi: 羊
+    pinyin: 'yáng'
+    meaning: {es: 'oveja, cabra', en: 'sheep'}
+    connection: {kind: sound, with: [样], text: '羊 yáng da el sonido a 样 yàng, el de 怎么样.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.shu.mouse
+    use: hear
+    role: content
+    kind: word
+    hanzi: 鼠
+    pinyin: 'shǔ'
+    meaning: {es: 'rata (en el zodiaco)', en: 'rat'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Al hablar, la rata o el ratón es 老鼠 lǎoshǔ; 鼠 solo, en el zodiaco (属鼠).'}
+  - id: w.hu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 虎
+    pinyin: 'hǔ'
+    meaning: {es: 'tigre (en el zodiaco)', en: 'tiger'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Al hablar, el tigre es 老虎 lǎohǔ; 虎 solo, en el zodiaco (属虎).'}
+  - id: w.tu
+    use: hear
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 兔
+    pinyin: 'tù'
+    meaning: {es: 'conejo (en el zodiaco)', en: 'rabbit'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Al hablar, el conejo es 兔子 tùzi; 兔 solo, en el zodiaco (属兔).'}
+  - id: w.she
+    use: hear
+    role: content
+    kind: word
+    hanzi: 蛇
+    pinyin: 'shé'
+    meaning: {es: 'serpiente', en: 'snake'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.hou
+    use: hear
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 猴
+    pinyin: 'hóu'
+    meaning: {es: 'mono (en el zodiaco)', en: 'monkey'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Al hablar, el mono es 猴子 hóuzi; 猴 solo, en el zodiaco (属猴).'}
+  - id: w.shuxiang
+    use: hear
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 属相
+    pinyin: 'shǔxiang'
+    meaning: {es: 'signo del zodiaco chino', en: 'zodiac animal'}
+    level: 3
+    level_reason: 'tema cultural; 属 es HSK 3'
+    accept_pinyin_mismatch: 'la segunda sílaba se dice átona'
+    connection: {kind: sound, with: [想], text: '相 xiāng da el sonido a 想 xiǎng; debajo, 心 «corazón»: pensar.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: g.zodiac
+    kind: group
+    basis: set
+    title: 'Los doce signos'
+    explanation: 'Cada año es un animal, en este orden; el de 2026 es el caballo.'
+    members:
+      - {ref: w.shu.mouse, cue: '1 rata'}
+      - {ref: w.niu, cue: '2 buey'}
+      - {ref: w.hu, cue: '3 tigre'}
+      - {ref: w.tu, cue: '4 conejo'}
+      - {ref: w.long, cue: '5 dragón'}
+      - {ref: w.she, cue: '6 serpiente'}
+      - {ref: w.ma.horse, cue: '7 caballo (2026)'}
+      - {ref: w.yang.sheep, cue: '8 cabra'}
+      - {ref: w.hou, cue: '9 mono'}
+      - {ref: w.ji.chicken, cue: '10 gallo'}
+      - {ref: w.gou, cue: '11 perro'}
+      - {ref: w.zhu, cue: '12 cerdo'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: g.ma-ma
+    kind: group
+    basis: soundalike
+    title: '吗 ma y 马 mǎ'
+    explanation: 'La misma sílaba: 吗 es átona y cierra preguntas; 马 baja y sube. 马 da además el sonido a 吗 y a 妈.'
+    members:
+      - {ref: w.ma, cue: 'ma, átona: partícula de pregunta'}
+      - {ref: w.ma.horse, cue: 'mǎ, baja y sube: caballo'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []

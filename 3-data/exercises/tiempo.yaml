@@ -535,3 +535,179 @@ exercises:
     prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
     answer: {typed: '21', hanzi: 回家, pinyin: huíjiā, meaning: volver a casa}
     comments: []
+  - id: x.contrast.wan
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.wan-wan
+    targets: [w.wan]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 晚, pinyin: wǎn, meaning: tarde}
+    comments: []
+  - id: x.dictation.jintian
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.jintian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jin1 tian1, hanzi: 今天, pinyin: jīntiān, meaning: hoy}
+    comments: []
+  - id: x.produce.jintian
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.jintian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «hoy»? Escribe el pinyin.'}
+    answer: {typed: jin1 tian1, hanzi: 今天, pinyin: jīntiān, meaning: hoy}
+    comments: []
+  - id: x.read.jintian
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.jintian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 今天}
+    answer: {hanzi: 今天, pinyin: jīntiān, meaning: hoy}
+    comments: []
+  - id: x.dictation.jinnian
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.jinnian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jin1 nian2, hanzi: 今年, pinyin: jīnnián, meaning: este año}
+    comments: []
+  - id: x.produce.jinnian
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.jinnian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «este año»? Escribe el pinyin.'}
+    answer: {typed: jin1 nian2, hanzi: 今年, pinyin: jīnnián, meaning: este año}
+    comments: []
+  - id: x.read.jinnian
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.jinnian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 今年}
+    answer: {hanzi: 今年, pinyin: jīnnián, meaning: este año}
+    comments: []
+  - id: x.dictation.mingnian
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.mingnian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ming2 nian2, hanzi: 明年, pinyin: míngnián, meaning: el año que viene}
+    comments: []
+  - id: x.produce.mingnian
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.mingnian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «el año que viene»? Escribe el pinyin.'}
+    answer: {typed: ming2 nian2, hanzi: 明年, pinyin: míngnián, meaning: el año que viene}
+    comments: []
+  - id: x.read.mingnian
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.mingnian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 明年}
+    answer: {hanzi: 明年, pinyin: míngnián, meaning: el año que viene}
+    comments: []
+  - id: x.tones.mingnian
+    added: 2026-10-06
+    lang: es
+    type: tones
+    targets: [w.mingnian]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '22', hanzi: 明年, pinyin: míngnián, meaning: el año que viene}
+    comments: []
+  - id: x.listen.jinnian-shi-ma-nian
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.jinnian-shi-ma-nian
+    targets: [s.jinnian-shi-ma-nian]
+    context: [w.jinnian, w.shi, w.ma.horse, w.nian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Este año es el del caballo.}
+    comments: []
+  - id: x.produce.jinnian-shi-ma-nian
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.jinnian-shi-ma-nian
+    targets: [s.jinnian-shi-ma-nian]
+    context: [w.jinnian, w.shi, w.ma.horse, w.nian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Este año es el del caballo.»'}
+    answer: {meaning: Este año es el del caballo.}
+    comments: []
+  - id: x.listen.jintian-hen-leng
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.jintian-hen-leng
+    targets: [s.jintian-hen-leng]
+    context: [w.jintian, w.hen, w.leng]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Hoy hace frío.}
+    comments: []
+  - id: x.produce.jintian-hen-leng
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.jintian-hen-leng
+    targets: [s.jintian-hen-leng]
+    context: [w.jintian, w.hen, w.leng]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hoy hace frío.»'}
+    answer: {meaning: Hoy hace frío.}
+    comments: []
+  - id: x.listen.mingnian-wo-qu-zhongguo
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.mingnian-wo-qu-zhongguo
+    targets: [s.mingnian-wo-qu-zhongguo]
+    context: [w.mingnian, w.wo, w.qu, w.zhongguo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: El año que viene voy a China.}
+    comments: []
+  - id: x.produce.mingnian-wo-qu-zhongguo
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.mingnian-wo-qu-zhongguo
+    targets: [s.mingnian-wo-qu-zhongguo]
+    context: [w.mingnian, w.wo, w.qu, w.zhongguo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «El año que viene voy a China.»'}
+    answer: {meaning: El año que viene voy a China.}
+    comments: []
+  - id: x.charsound.jin-2
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.jintian, w.jinnian]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 今}
+    answer: {typed: jin1, hanzi: 今, pinyin: jīn, meaning: 'Sale en 今天 jīntiān «hoy», 今年 jīnnián «este año».'}
+    comments: []

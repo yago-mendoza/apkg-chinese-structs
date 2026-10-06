@@ -343,3 +343,37 @@ sentences:
       - {text: 。}
     translation: {es: 'Estoy viendo la tele.', en: "I'm watching TV."}
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: deberes 2026-09-24, date: '2026-09-24'}
+  - id: s.zhe-shi-wo-de-shu
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 书, ref: w.shu, pinyin: 'shū'}
+      - {text: 。}
+    translation: {es: 'Este es mi libro.', en: 'This is my book.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: deberes 2026-10-06, date: '2026-10-06'}
+  - id: s.na-shi-ni-de-bi-ma
+    use: say
+    segments:
+      - {text: 那, ref: w.na.that, pinyin: 'nà'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 笔, ref: w.bi.pen, pinyin: 'bǐ'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Ese es tu bolígrafo?', en: 'Is that your pen?'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: deberes 2026-10-06, date: '2026-10-06'}
+  - id: s.zhe-shi-wo-de-beizi
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 杯子, ref: w.beizi, pinyin: 'bēizi'}
+      - {text: 。}
+    translation: {es: 'Esta es mi taza.', en: 'This is my cup.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}

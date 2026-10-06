@@ -225,3 +225,25 @@ sentences:
       - {text: 。}
     translation: {es: 'No está gordo: es muy delgado.', en: "He isn't fat; he's very slim."}
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+  - id: s.zhege-pingguo-zhen-da
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 苹果, ref: w.pingguo, pinyin: 'píngguǒ'}
+      - {text: 真, ref: w.zhen, pinyin: 'zhēn'}
+      - {text: 大, ref: w.da, pinyin: 'dà'}
+      - {text: ！}
+    translation: {es: '¡Qué grande es esta manzana!', en: 'This apple is so big!'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.ayi-nin-hen-nianqing
+    use: say
+    segments:
+      - {text: 阿姨, ref: w.ayi, pinyin: 'āyí'}
+      - {text: ，}
+      - {text: 您, ref: w.nin, pinyin: 'nín'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 年轻, ref: w.nianqing, pinyin: 'niánqīng'}
+      - {text: ！}
+    translation: {es: '¡Señora, qué joven es usted!', en: 'Auntie, you look so young!'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}

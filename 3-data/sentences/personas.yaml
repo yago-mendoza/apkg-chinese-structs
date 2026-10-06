@@ -77,3 +77,28 @@ sentences:
       - {text: ？}
     translation: {es: '¿Quién eres? No, espera: ¿qué eres? ¿Por qué eres tan alto?', en: 'Who are you? No, wait: what are you? Why are you so tall?'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.zhege-ren-shi-wo-de-pengyou
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 朋友, ref: w.pengyou, pinyin: 'péngyou'}
+      - {text: 。}
+    translation: {es: 'Esta persona es mi amigo.', en: 'This person is my friend.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.fuwuyuan-wo-yao-zhege
+    use: say
+    segments:
+      - {text: 服务员, ref: w.fuwuyuan, pinyin: 'fúwùyuán'}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 。}
+    translation: {es: 'Camarero, quiero este.', en: 'Waiter, I want this one.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}

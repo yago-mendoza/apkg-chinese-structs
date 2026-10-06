@@ -150,6 +150,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Perdón de verdad, cuando has hecho algo mal: 对不起，我错了. Para una molestia pequeña basta 不好意思.'}
+      - {kind: linguistic, private: false, date: '2026-10-06', text: '对得起 es estar a la altura con alguien; 对不起, no estarlo: te he fallado, perdón.'}
   - id: g.excuse
     kind: group
     basis: set
@@ -172,6 +173,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'La respuesta a 对不起 o a 不好意思: «no pasa nada». Literalmente, «no hay relación».'}
+      - {kind: linguistic, private: false, date: '2026-10-06', text: '没 «no hay» + 关系 [HSK 3] «relación»: no tiene que ver, no importa. Para quitar importancia a algo que ha pasado; para aceptar algo que te piden, 没问题.'}
   - id: e.bukeqi
     use: say
     role: content
@@ -183,6 +185,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'La respuesta a 谢谢. Literalmente, «no hagas cumplidos».'}
+      - {kind: linguistic, private: false, date: '2026-10-06', text: '客气 [HSK 5] es tener cumplidos, como un invitado 客; 不客气, «no hace falta cumplido». Su 气 qi no es el 起 qǐ de 对不起: son caracteres distintos.'}
   - id: w.bang
     use: say
     role: content
@@ -262,3 +265,81 @@ entries:
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
     comments:
       - {kind: teacher, private: false, date: '2026-10-02', text: 'Lo que se dice en clase para pedir que repitan. Para leer otra vez, 再读一遍 zài dú yí biàn.'}
+  - id: w.zhidao
+    use: say
+    role: content
+    kind: word
+    hanzi: 知道
+    pinyin: 'zhīdao'
+    meaning: {es: 'saber', en: 'to know'}
+    accept_pinyin_mismatch: 'la segunda sílaba se dice átona en el habla'
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: '我不知道 «no lo sé».'}
+  - id: e.zhendema
+    use: say
+    role: content
+    kind: expression
+    hanzi: 真的吗
+    pinyin: 'zhēn de ma'
+    meaning: {es: '¿de verdad?', en: 'really?'}
+    level: 1
+    level_reason: '真, 的 y 吗 son HSK 1; reacción de todos los días'
+    source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
+    comments: []
+  - id: w.wang.forget
+    use: say
+    role: content
+    kind: word
+    hanzi: 忘
+    pinyin: 'wàng'
+    meaning: {es: 'olvidar', en: 'to forget'}
+    source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: '我忘了 «se me ha olvidado»: 了 dice que ya ha pasado.'}
+  - id: w.xiaoxin
+    use: say
+    role: content
+    kind: word
+    hanzi: 小心
+    pinyin: 'xiǎoxīn'
+    meaning: {es: '¡cuidado!; tener cuidado', en: 'careful'}
+    source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: '小 «pequeño» + 心 «corazón»: con el corazón encogido, atento.'}
+  - id: e.duide
+    use: say
+    role: content
+    kind: expression
+    hanzi: 对的
+    pinyin: 'duì de'
+    meaning: {es: 'eso es, correcto', en: 'that''s right'}
+    level: 1
+    level_reason: '对 y 的 son HSK 1'
+    source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Como 对, algo más enfático y coloquial.'}
+  - id: e.meiwenti
+    use: say
+    role: content
+    kind: expression
+    hanzi: 没问题
+    pinyin: 'méi wèntí'
+    meaning: {es: 'sin problema', en: 'no problem'}
+    level: 1
+    level_reason: '没 y 问题 son de nivel básico; respuesta de todos los días'
+    connection: {kind: sound, with: [是], text: '是 shì da el sonido, de lejos, a 题 tí; 页 «cabeza» da el sentido.'}
+    source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: '没 «no hay» + 问题 «problema». Para aceptar algo que te piden; para quitar importancia a algo que ha pasado, 没关系.'}
+  - id: w.mingbai
+    use: say
+    role: content
+    kind: word
+    hanzi: 明白
+    pinyin: 'míngbai'
+    meaning: {es: 'entender, tener claro', en: 'to understand'}
+    accept_pinyin_mismatch: 'la segunda sílaba se dice átona en el habla'
+    source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-06', text: '明 «claro» + 白 «blanco»: claro como el día. 我明白了 «ya lo entiendo».'}

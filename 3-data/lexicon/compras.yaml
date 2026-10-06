@@ -421,3 +421,12 @@ entries:
       - {ref: w.he.and, cue: 'hé, sube: y, con'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
+  - id: w.pingguo
+    use: say
+    role: content
+    kind: word
+    hanzi: 苹果
+    pinyin: 'píngguǒ'
+    meaning: {es: 'manzana', en: 'apple'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []

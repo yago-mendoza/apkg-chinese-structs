@@ -136,6 +136,8 @@ items:
     snooze_reason: 'despierta con 会, pero es HSK 4; 错 cubre «equivocarse»'
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.cuowu
+    snooze: 006-2026-10-06-edad-numeros-y-familia
+    snooze_reason: 'HSK 2 y de registro escrito; 不对 y 错 bastan al hablar'
     hanzi: 错误
     pinyin: cuòwù
     meaning: {es: error}
@@ -146,25 +148,6 @@ items:
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
 
   # ---------------------------------------------------------------- lugares, direcciones, países
-  - id: a.zuo
-    hanzi: 左
-    pinyin: zuǒ
-    meaning: {es: izquierda}
-    theme: cosas
-    links: [右, 边, 往, 前面, 后面, 旁边, 拐]
-    reason: HSK 1, pero llegó suelto; entra con las direcciones.
-    notes: []
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
-  - id: a.you.right
-    hanzi: 右
-    pinyin: yòu
-    meaning: {es: derecha}
-    theme: cosas
-    links: [左, 边, 往, 前面, 后面, 旁边, 拐]
-    reason: HSK 1, pero llegó suelto; entra con las direcciones.
-    notes:
-      - {text: '左右 zuǒyòu [HSK 3] es «más o menos»: 十个左右 «unos diez».'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: a.guojia
     hanzi: 国家
     pinyin: guójiā
@@ -196,6 +179,8 @@ items:
 
   # ---------------------------------------------------------------- tiempo y números
   - id: a.ri
+    snooze: 006-2026-10-06-edad-numeros-y-familia
+    snooze_reason: 'las fechas llegan con la hora y los días de la semana, en otra lección'
     hanzi: 日
     pinyin: rì
     meaning: {es: 'día (en fechas, escrito)'}
@@ -218,6 +203,8 @@ items:
 
   # ---------------------------------------------------------------- personas y oficios
   - id: a.zhuanjia
+    snooze: 006-2026-10-06-edad-numeros-y-familia
+    snooze_reason: 'HSK 3; 医生 basta por ahora'
     hanzi: 专家
     pinyin: zhuānjiā
     meaning: {es: experto}
@@ -259,26 +246,6 @@ items:
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
 
   # ---------------------------------------------------------------- animales, cuerpo
-  - id: a.gou
-    hanzi: 狗
-    pinyin: gǒu
-    meaning: {es: perro}
-    theme: cosas
-    links: [动物, 小狗, 猫, 养]
-    reason: 'HSK 2; llegó a través de 犬, que solo vive como pieza 犭.'
-    notes:
-      - {text: '犬 quǎn «perro» es culto y como pieza se escribe 犭; hablando, 狗.'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-  - id: a.yang
-    hanzi: 羊
-    pinyin: yáng
-    meaning: {es: 'oveja, cordero'}
-    theme: compras
-    links: [羊肉, 动物, 猪肉, 鸡肉]
-    reason: HSK 3; entra con 羊肉 «cordero» (comida).
-    notes:
-      - {text: 'Da sonido y parte de sentido a 洋 yáng «océano» [HSK 6] y está en 美 «bello».'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.erduo
     hanzi: 耳朵
     pinyin: ěrduo
