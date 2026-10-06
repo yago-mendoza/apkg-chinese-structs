@@ -1,3 +1,3 @@
 # records
 
-What the review app (`tools/review/serve.py`) records of YAGO: `review-log.jsonl`, one JSON event per line, append only. Events: `approved` and `unapproved` (with the hash of the text he approved), `note` (a request, with its text) and `cleared`, `applied` (a request attended) and `caused` (that request made the agent change or create another item: `from`, `to`, `what`). The history of the data is not stored here: the app derives it from git each time.
+`history.json`, written by `anki.py close-batch` (or `tools/history.py --write`) from git: the columns (each lote and the adjustments between two), every item's history as `[column, created|changed|removed]`, what it rests on, and a summary per column and overall. Never edited by hand; rewritten whole each time.

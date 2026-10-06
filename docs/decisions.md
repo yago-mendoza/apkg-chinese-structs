@@ -226,3 +226,6 @@ YAGO pidió que cada lote revise la carpeta de materiales de clase, recuerde qu�
 
 YAGO propuso asociar hanzi sueltos con su sonido, porque el mazo le hace leer mucho. Para no inflarlo, solo los que salen en dos o más palabras del mazo y no son palabra propia: 34 al empezar (学, 们, 怎, 么, 机…), y más a medida que crece el mazo, que es lo que pidió. El hanzi suelto no lleva audio (la voz sintética leería mal 什 o 么); suenan sus palabras. Vive en: `anki.py` (`char_sound_picks`, tipo `charsound`), `docs/design.md` («Tarjetas»), `docs/goal.md` («Cómo se explica un carácter»).
 
+### 2026-10-06 · Sin app de revisión: solo la historia
+
+La app de revisión del mismo día se quitó. Aquí siempre edita el agente y YAGO no aprueba nada: su opinión llega por la bandeja, así que un visto bueno por tarjeta, los pedidos y el aviso de por revisar duplicaban lo que ya hace el lote. Se queda lo que sí aporta, la historia de cada elemento por lote, escrita en `records/history.json` al cerrar cada lote, para poder ver si un lote se ensaña con unas pocas tarjetas o crea demasiado a partir de una entrada.

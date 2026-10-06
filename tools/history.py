@@ -1,4 +1,7 @@
-"""La historia de cada entrada, frase y ejercicio, lote a lote, sacada de git.
+r"""La historia de cada entrada, frase y ejercicio, lote a lote, sacada de git, y lo que se ve en ella.
+
+    .\.venv\Scripts\python tools\history.py           resumen por lote en la terminal
+    .\.venv\Scripts\python tools\history.py --write   además escribe records/history.json (close-batch lo hace solo)
 
 Cada commit que toca 3-data/ (diccionario, frases, ejercicios) se carga entero y se compara por id con el
 anterior: qué nació, qué cambió y qué desapareció. Los commits de un lote (los que contiene su etiqueta
@@ -14,7 +17,7 @@ import subprocess
 
 import yaml
 
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FOLDERS = {"lexicon": "entries", "sentences": "sentences", "exercises": "exercises"}
 PATHS = [f"3-data/{f}" for f in FOLDERS]
 Loader = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
@@ -79,7 +82,7 @@ def lote_tags():
     return sorted(out)
 
 
-def build():
+def build(local_label=None):
     tags = lote_tags()
     log = git("log", "--reverse", "--format=%H\t%aI\t%s", "--", *PATHS).decode("utf-8").splitlines()
     # A lote is the commit that closes it: the tagged one, or the one named `lote NNN-...`.
@@ -117,8 +120,11 @@ def build():
                         "date": date, "commits": 1, "subjects": [subject]})
         return len(columns) - 1
 
+    folders = {}
+
     def compare(col, now):
         for uid, u in now.items():
+            folders[uid] = u["folder"]
             if uid not in prev:
                 units.setdefault(uid, []).append({"col": col, "k": "created"})
             elif prev[uid]["hash"] != u["hash"]:
@@ -135,15 +141,86 @@ def build():
         prev = now
     local = working_tree()
     if any(uid not in prev or prev[uid]["hash"] != u["hash"] for uid, u in local.items()) or any(uid not in local for uid in prev):
-        columns.append({"id": "local", "kind": "local", "label": "Sin commit todavía", "date": None, "commits": 0})
+        # Closing a lote, its changes are still uncommitted: they are that lote.
+        columns.append({"id": f"lote-{local_label[:3]}", "kind": "lote", "label": f"Lote {local_label[:3]}", "title": local_label, "date": None, "commits": 0} if local_label
+                       else {"id": "local", "kind": "local", "label": "Sin commit todavía", "date": None, "commits": 0})
         compare(len(columns) - 1, local)
-    return {"columns": columns, "history": units, "current": local}
+    return {"columns": columns, "history": units, "current": local, "folders": folders}
+
+
+def links_of(u):
+    """What an item rests on: an exercise on its targets, context and reveal; a sentence on the words it is cut into."""
+    it = u["item"]
+    if u["folder"] == "exercises":
+        return list(dict.fromkeys([*(it.get("targets") or []), *(it.get("context") or []), *(it.get("reveal") or [])]))
+    if u["folder"] == "sentences":
+        return sorted({s["ref"] for s in it.get("segments") or [] if s.get("ref")})
+    return []
+
+
+def summarize(h):
+    """Per column and overall: how much was born, changed and removed; how much of each change came with a change of
+    what holds it; which items keep being changed; which entries spawn the most. What a lote does, in numbers."""
+    cols, cur, hist = h["columns"], h["current"], h["history"]
+    links = {uid: links_of(u) for uid, u in cur.items()}
+    folder = lambda uid: h["folders"].get(uid, "?")
+    at = {(uid, x["col"]): x["k"] for uid, hs in hist.items() for x in hs}
+    per = []
+    for c, col in enumerate(cols):
+        row = {"column": col["label"], "kind": col["kind"], "title": col.get("title", ""), "date": col["date"],
+               "created": {}, "changed": {}, "removed": {}, "changed_with_what_holds_it": 0, "born_from": {}}
+        for uid, hs in hist.items():
+            for x in hs:
+                if x["col"] != c:
+                    continue
+                row[x["k"]][folder(uid)] = row[x["k"]].get(folder(uid), 0) + 1
+                if x["k"] == "changed" and any(at.get((l, c)) == "changed" for l in links.get(uid, [])):
+                    row["changed_with_what_holds_it"] += 1
+                if x["k"] == "created" and folder(uid) == "exercises":
+                    for l in links.get(uid, [])[:1]:
+                        row["born_from"][l] = row["born_from"].get(l, 0) + 1
+        row["born_from"] = dict(sorted(row["born_from"].items(), key=lambda kv: -kv[1])[:10])
+        per.append(row)
+    changes = sorted(((sum(1 for x in hs if x["k"] == "changed"), uid) for uid, hs in hist.items()), reverse=True)
+    total = sum(n for n, _ in changes)
+    acc, carriers = 0, 0
+    for n, _ in changes:
+        if acc >= total / 2:
+            break
+        acc, carriers = acc + n, carriers + 1
+    spawn = {}
+    for uid, u in cur.items():
+        if u["folder"] == "exercises":
+            for l in links[uid][:1]:
+                spawn[l] = spawn.get(l, 0) + 1
+    return {"columns": per, "items": len(cur), "changes": total,
+            "half_of_changes_in": carriers, "most_changed": [{"id": uid, "changes": n, "folder": folder(uid)} for n, uid in changes[:25] if n],
+            "most_exercises_from": [{"id": k, "exercises": v} for k, v in sorted(spawn.items(), key=lambda kv: -kv[1])[:25]]}
+
+
+def write_records(local_label=None):
+    """records/history.json: every item's history by column, and the summary. Derived from git; rewritten whole."""
+    h = build(local_label)
+    out = {"columns": h["columns"], "summary": summarize(h),
+           "history": {uid: [[x["col"], x["k"]] for x in hs] for uid, hs in sorted(h["history"].items())},
+           "items": {uid: {"folder": u["folder"], "theme": u["theme"], "links": links_of(u)} for uid, u in sorted(h["current"].items())}}
+    os.makedirs(os.path.join(ROOT, "records"), exist_ok=True)
+    with open(os.path.join(ROOT, "records", "history.json"), "w", encoding="utf-8", newline="\n") as fh:
+        json.dump(out, fh, ensure_ascii=False, separators=(",", ":"))
+        fh.write("\n")
+    return out
+
+
+def report(s):
+    for c in s["columns"]:
+        f = lambda d: ", ".join(f"{v} {k}" for k, v in d.items()) or "nada"
+        print(f"{c['column']:<22} nace: {f(c['created'])} · cambia: {f(c['changed'])} ({c['changed_with_what_holds_it']} con lo que lo sostiene) · desaparece: {f(c['removed'])}")
+    print(f"\n{s['changes']} cambios sobre {s['items']} elementos; la mitad recae en {s['half_of_changes_in']} de ellos.")
+    print("Los más cambiados: " + ", ".join(f"{m['id']} ({m['changes']})" for m in s["most_changed"][:10]))
+    print("Las que más ejercicios sostienen: " + ", ".join(f"{m['id']} ({m['exercises']})" for m in s["most_exercises_from"][:10]))
 
 
 if __name__ == "__main__":
-    import time
-    t = time.time()
-    h = build()
-    print(len(h["columns"]), "columnas,", len(h["current"]), "elementos,", f"{time.time() - t:.1f} s")
-    for c in h["columns"]:
-        print(" ", c["label"], c.get("title", ""), c["commits"])
+    import sys
+    s = write_records()["summary"] if "--write" in sys.argv else summarize(build())
+    report(s)

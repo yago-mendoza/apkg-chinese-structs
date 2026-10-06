@@ -3455,6 +3455,15 @@ def cmd_materials():
     return 0
 
 
+def write_history(batch=None):
+    """records/history.json: what each lote did to every entry, sentence and exercise (tools/history.py, from git)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("history", ROOT / "tools" / "history.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod.write_records(local_label=batch)
+
+
 def cmd_close_batch(batch, dry_run):
     """Cierra un lote: archiva el review leído y los apuntes, regenera el cuaderno, commit y etiqueta lote-NNN.
     El log del lote ya está en 2-digests/ (lo escribe el agente al procesar)."""
@@ -3483,6 +3492,7 @@ def cmd_close_batch(batch, dry_run):
             shutil.move(str(src), str(dst))
     cmd_notebook()
     cmd_export()
+    write_history(batch)
     _git("add", "-A")
     _git("commit", "-q", "-m", f"lote {batch}\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>")
     tag = f"lote-{batch[:3]}"
