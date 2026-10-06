@@ -50,6 +50,11 @@ section { border-left: 1px solid var(--line); }
 .row .links { cursor: help; }
 .row .links.none { color: var(--yellow); }
 .row .links.idle { opacity: .35; }
+.row .links { border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 1px 8px; justify-self: end; color: var(--text); }
+.row .links.due { border-color: #e08a5a; }
+.row .links.due::before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #e08a5a; margin-right: 6px; vertical-align: 1px; }
+.duedot { width: 9px; height: 9px; border-radius: 50%; background: #e08a5a; display: inline-block; }
+.duebox { border: 1px solid rgba(224,138,90,.45); background: rgba(224,138,90,.07); border-radius: 6px; padding: 10px 12px; }
 .tick { width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--faint); background: none; color: transparent; font-size: 11px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; padding: 0; }
 .tick.ok { background: var(--green); border-color: var(--green); color: #0d0d0d; }
 .tick.lote { background: var(--blue); border-color: var(--blue); color: #0d0d0d; }
@@ -122,7 +127,7 @@ const save = () => { try { localStorage.setItem('zh-review', JSON.stringify({ ..
 const LABEL = { ok: 'con tu verde', lote: 'cambiada en un lote', ajuste: 'cambiada entre lotes', none: 'sin mirar' };
 const HELP = { ok: 'Verde: te gusta como está ahora.', lote: 'Azul: cambiada en un lote, a partir de lo que dejaste en la bandeja.', ajuste: 'Amarillo: cambiada entre lotes, en un ajuste del agente.', none: 'Gris: todavía sin mirar.' };
 const colKind = c => D.columns[c]?.kind === 'lote' ? 'lote' : 'ajuste';
-const colTime = c => Date.parse(D.columns[c]?.date || '') || Date.now();
+const colTime = c => Date.parse(D.columns[c]?.date || '') || Date.parse(D.built); // uncommitted: when the data was read
 function att(u) {
   if (u._att && u._att.n === events.length) return u._att;
   let approved = null; const notes = new Map(), done = new Set(), marks = [];
@@ -142,6 +147,20 @@ function att(u) {
 }
 const tickHtml = (s, cls = '') => `<span class="tick ${s} ${cls}">✓</span>`;
 const isCard = u => u.kind === 'card';
+// What changed on the other side after this one was last touched or checked (same rule as `serve.py --stale`).
+let STALE = new Map();
+function computeStale() {
+  const start = Math.min(...events.filter(e => e.type === 'start').map(e => Date.parse(e.t)), Infinity), t0 = start === Infinity ? Date.now() : start;
+  const changed = new Map(), born = new Map(), checked = new Map();
+  for (const u of units) for (const h of u.history) { const t = colTime(h.col); if (h.k === 'changed' && t > t0) changed.set(u.id, Math.max(changed.get(u.id) || 0, t)); if (h.k === 'created' && !born.has(u.id)) born.set(u.id, t); }
+  for (const e of events) if (e.type === 'checked') { const k = e.unit + '\u0000' + e.against; checked.set(k, Math.max(checked.get(k) || 0, Date.parse(e.t))); }
+  STALE = new Map();
+  for (const u of units) for (const l of u.links) if (byId.has(l)) for (const [a, b] of [[u.id, l], [l, u.id]]) {
+    const at = changed.get(b) || 0;
+    if (at > Math.max(changed.get(a) || 0, born.get(a) || 0, checked.get(a + '\u0000' + b) || 0, t0)) { if (!STALE.has(a)) STALE.set(a, new Set()); STALE.get(a).add(b); }
+  }
+}
+const dueOf = u => [...(STALE.get(u.id) || [])];
 const themeTitle = id => D.themes.find(t => t.id === id)?.title || id;
 const themeIdx = id => { const i = D.themes.findIndex(t => t.id === id); return i < 0 ? 999 : i; };
 const KIND_ES = { entry: 'entrada', sentence: 'frase', card: 'tarjeta' };
@@ -151,12 +170,14 @@ const TABS = {
   cards: { items: () => units.filter(isCard), facets: [
     { key: 'theme', title: 'Tema', of: u => themeTitle(u.theme), order: () => D.themes.map(t => t.title) },
     { key: 'type', title: 'Tipo de tarjeta', of: u => u.type },
+    { key: 'due', title: 'Al día con sus fichas', of: u => dueOf(u).length ? 'por revisar: cambió una ficha suya' : 'al día' },
     { key: 'back', title: 'Respaldo', of: u => u.links.some(l => byId.has(l)) ? (u.links.every(l => byId.has(l)) ? 'todo en fichas' : 'con alguna ficha que falta') : 'sin ninguna ficha' },
     { key: 'state', title: 'Estado', of: u => LABEL[att(u).status], order: () => Object.values(LABEL) },
   ] },
   fichas: { items: () => units.filter(u => !isCard(u)), facets: [
     { key: 'theme', title: 'Tema', of: u => themeTitle(u.theme), order: () => D.themes.map(t => t.title) },
     { key: 'kind', title: 'Clase', of: u => u.kind === 'sentence' ? 'frase' : (u.type || 'entrada') },
+    { key: 'due', title: 'Al día con sus tarjetas', of: u => dueOf(u).length ? 'por revisar: cambió una tarjeta suya' : 'al día' },
     { key: 'used', title: 'Tarjetas que la usan', of: u => (usedBy.get(u.id) || []).filter(isCard).length ? 'con tarjetas' : 'sin tarjetas' },
     { key: 'state', title: 'Estado', of: u => LABEL[att(u).status], order: () => Object.values(LABEL) },
   ] },
@@ -190,12 +211,14 @@ function renderCounts() {
   const by = {}; for (const u of shown) { const s = att(u).status; by[s] = (by[s] || 0) + 1; }
   const asks = shown.filter(u => att(u).open.length).length, scope = N === M ? `de ${M}` : `de las ${N} que deja ver el filtro (${M} en total)`;
   $('#counts').innerHTML = ['ok', 'lote', 'ajuste', 'none'].map(s => `<span title="${HELP[s]} ${by[s] || 0} ${scope}.">${tickHtml(s, 'sm')}${of(by[s] || 0)}</span>`).join('')
+    + `<span title="Por revisar: cambió algo de lo que la sostiene, o algo que la usa, después que ella. ${shown.filter(u => dueOf(u).length).length} ${scope}."><i class="duedot"></i>${of(shown.filter(u => dueOf(u).length).length)}</span>`
     + `<span title="Pedidos tuyos sin atender: ${asks} ${scope}."><span class="trail"><i class="ask"></i></span>${of(asks)}</span>`;
 }
 const trailHtml = u => { const a = att(u); return `<span class="trail">${a.trail.slice(-14).map(m => `<i class="${m.k}"></i>`).join('')}${a.open.length ? '<i class="ask"></i>' : ''}</span>`; };
 const linksCell = u => {
-  if (isCard(u)) { const ok = u.links.filter(l => byId.has(l)).length; return `<span class="links${ok ? '' : ' none'}" data-hover="${esc(u.id)}">${ok}${ok < u.links.length ? `+${u.links.length - ok}` : ''} fichas</span>`; }
-  const n = (usedBy.get(u.id) || []).filter(isCard).length; return `<span class="links${n ? '' : ' idle'}" data-hover="${esc(u.id)}">${n} tarj.</span>`;
+  const due = dueOf(u).length ? ' due' : '';
+  if (isCard(u)) { const ok = u.links.filter(l => byId.has(l)).length; return `<span class="links${ok ? '' : ' none'}${due}" data-hover="${esc(u.id)}">${ok}${ok < u.links.length ? `+${u.links.length - ok}` : ''} fichas</span>`; }
+  const n = (usedBy.get(u.id) || []).filter(isCard).length; return `<span class="links${n ? '' : ' idle'}${due}" data-hover="${esc(u.id)}">${n} tarj.</span>`;
 };
 const colShort = c => { const col = D.columns[c]; return col ? (col.kind === 'lote' ? 'L' + col.id.split('-').pop() : col.kind === 'local' ? 'local' : 'aj.') : ''; };
 const rowHtml = u => `<div class="row${state.current[state.tab] === u.id ? ' sel' : ''}" data-u="${esc(u.id)}"><button class="tick ${att(u).status}" data-approve="${esc(u.id)}" title="${att(u).status === 'ok' ? 'Quitar tu verde' : 'Dar tu verde: me gusta como está'}">✓</button><span class="id">${esc(u.id)}</span><span class="q"><span class="hz">${esc(u.name)}</span><span class="g">${esc(u.gloss)}</span></span>${trailHtml(u)}${linksCell(u)}<span class="num" title="nació en">${colShort(att(u).born)}</span></div>`;
@@ -216,7 +239,7 @@ async function cardPreview(u) {
   if (!r.found) { box.innerHTML = `<p class="hint">Esta tarjeta todavía no está en Anki (falta un push).</p>`; return; }
   const doc = html => `<!doctype html><html><head><meta charset="utf-8"><base href="/media/"><style>${r.css || ''} body{margin:0;padding:14px}</style></head><body class="card">${String(html).replace(/\[sound:([^\]]+)\]/g, (_, f) => `<audio controls src="${f}" style="height:30px;max-width:100%"></audio>`)}</body></html>`;
   box.innerHTML = `<iframe class="cardframe" id="fr1"></iframe><iframe class="cardframe" id="fr2"></iframe><div class="stats">repasos ${r.reps} · fallos ${r.lapses} · intervalo ${r.interval} d · ${esc(r.deck)}</div>`;
-  for (const [id, html] of [['fr1', r.question], ['fr2', r.answer]]) { const f = $('#' + id); f.srcdoc = doc(html); f.onload = () => { try { f.style.height = (f.contentDocument.documentElement.scrollHeight + 4) + 'px'; } catch {} }; }
+  for (const [id, html] of [['fr1', r.question], ['fr2', r.answer]]) { const f = $('#' + id); if (!f) return; f.srcdoc = doc(html); f.onload = () => { try { f.style.height = (f.contentDocument.documentElement.scrollHeight + 4) + 'px'; } catch {} }; }
 }
 function renderDetail() {
   if (state.tab === 'log') { $('#detail').innerHTML = `<div class="detail"><div class="sec"><h4>Cómo leerlo</h4><p class="hint">Cada fila es una tarjeta, una entrada o una frase, de la más antigua arriba a la más nueva abajo. Cada columna es un lote (lo que procesaste de la bandeja de golpe) o los ajustes que hubo entre dos lotes. Gris: nació ahí; azul: cambió en un lote; amarillo: cambió en un ajuste; rojo: desapareció; verde: tu visto bueno. Arriba, cuánto se movió en cada columna.</p><p class="hint">Las matrices cruzadas ponen las mismas filas en los dos ejes: la casilla de la fila A y la columna B cuenta las veces que A provocó un cambio (o la creación) de B. La diagonal es una que cambió o nació por sí misma. Fuera de ella: una tarjeta que nace de su entrada, una frase o tarjeta que cambia en el mismo lote que la entrada que la sostiene, o lo que el agente apunte al atender un pedido.</p></div></div>`; return; }
@@ -228,6 +251,7 @@ function renderDetail() {
     <div class="dhead"><span class="mono">${esc(u.id)}</span><span class="where">${esc(themeTitle(u.theme))} · ${esc(isCard(u) ? u.type : KIND_ES[u.kind])}</span></div>
     <div class="big hz">${esc(u.name)}</div><div class="hint">${esc(u.gloss)}</div>
     <div class="btns"><button class="btn${a.status === 'ok' ? ' ok' : ''}" data-approve="${esc(u.id)}">✓ ${a.status === 'ok' ? 'Tienes tu verde puesto' : 'Me gusta como está'}</button>${isCard(u) ? `<button class="btn" id="browse">Abrir en Anki</button>` : ''}</div>
+    ${dueOf(u).length ? `<div class="sec"><h4>Por revisar contra ${isCard(u) ? 'sus fichas' : 'sus tarjetas'}</h4><div class="duebox"><p class="hint" style="margin:0 0 8px">${isCard(u) ? 'Estas entradas o frases cambiaron después que la tarjeta. Mira si la tarjeta sigue preguntando lo mismo que ellas.' : 'Estas tarjetas cambiaron después que la ficha. Si una pregunta algo que la ficha no recoge, eso va primero a la ficha.'}</p><div class="list">${dueOf(u).map(id => linkBtn(byId.get(id))).join('')}</div><div class="btns" style="margin:10px 0 0"><button class="btn" data-checked="${esc(u.id)}">Revisada: no hacía falta cambiar nada</button></div></div></div>` : ''}
     ${isCard(u) ? `<div class="sec"><h4>En Anki</h4><div id="anki"><p class="hint">Preguntando a Anki…</p></div></div>` : ''}
     ${isCard(u) ? `<div class="sec"><h4>Fichas que la respaldan (${linked.length})</h4><div class="list">${linked.map(linkBtn).join('') || '<p class="hint">ninguna</p>'}</div></div>`
       : `<div class="sec"><h4>Tarjetas y frases que la usan (${users.length})</h4><div class="list">${users.map(linkBtn).join('') || '<p class="hint">ninguna</p>'}</div></div>${linked.length ? `<div class="sec"><h4>Palabras de la frase</h4><div class="list">${linked.map(linkBtn).join('')}</div></div>` : ''}`}
@@ -243,7 +267,7 @@ function renderDetail() {
 async function post(evs) {
   const stamped = evs.map(e => ({ t: new Date().toISOString(), ...e })); events.push(...stamped);
   await fetch('/api/log', { method: 'POST', body: JSON.stringify({ events: evs }) }).catch(() => toast('No se pudo guardar'));
-  renderCounts(); repaintRow(evs[0].unit);
+  computeStale(); renderCounts(); repaintRow(evs[0].unit);
 }
 function repaintRow(id) { const el = document.querySelector(`.row[data-u="${CSS.escape(id)}"]`), u = byId.get(id); if (el && u) el.outerHTML = rowHtml(u); }
 
@@ -355,6 +379,7 @@ window.addEventListener('resize', () => { if (state.tab === 'log') renderLog(); 
 document.addEventListener('click', e => {
   const ap = e.target.closest('[data-approve]');
   if (ap) { e.stopPropagation(); const u = byId.get(ap.dataset.approve); const on = att(u).status === 'ok'; post([{ type: on ? 'unapproved' : 'approved', unit: u.id, hash: u.hash }]).then(() => { if (state.current[state.tab] === u.id) renderDetail(); }); return; }
+  const ck = e.target.closest('[data-checked]'); if (ck) { const u = byId.get(ck.dataset.checked); post(dueOf(u).map(o => ({ type: 'checked', unit: u.id, against: o }))).then(() => { renderFacets(); renderDetail(); toast('Apuntada como revisada'); }); return; }
   const j = e.target.closest('[data-jump]'); if (j) { jump(j.dataset.jump); return; }
   const f = e.target.closest('[data-f]'); if (f) { const s = (sel()[f.dataset.f] ||= new Set()); s.has(f.dataset.v) ? s.delete(f.dataset.v) : s.add(f.dataset.v); renderFacets(); renderMain(); save(); return; }
   const c = e.target.closest('[data-clear]'); if (c) { sel()[c.dataset.clear]?.clear(); renderFacets(); renderMain(); save(); return; }
@@ -364,6 +389,7 @@ document.addEventListener('click', e => {
 fetch('/api/data').then(r => r.json()).then(data => {
   D = data; units = D.units; events = D.events; byId = new Map(units.map(u => [u.id, u]));
   usedBy = new Map(); for (const u of units) for (const l of u.links) { if (!usedBy.has(l)) usedBy.set(l, []); usedBy.get(l).push(u); }
+  computeStale();
   $('#q').value = state.text || ''; syncTabs(); update();
 });
 </script>

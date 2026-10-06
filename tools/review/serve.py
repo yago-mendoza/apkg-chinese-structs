@@ -4,6 +4,8 @@ historia de todo, lote a lote.
     .\\.venv\\Scripts\\python tools\\review\\serve.py            arranca en http://127.0.0.1:5198/ y la abre
     .\\.venv\\Scripts\\python tools\\review\\serve.py --no-open  sin abrir el navegador
     .\\.venv\\Scripts\\python tools\\review\\serve.py --pending  lista los pedidos de YAGO aún sin atender
+    .\\.venv\\Scripts\\python tools\\review\\serve.py --stale    tarjetas cuya entrada o frase cambió después que ellas, y al revés
+    .\\.venv\\Scripts\\python tools\\review\\serve.py --checked <id> ...   revisada: no hacía falta cambiar nada
 
 La historia sale de git (tools/review/history.py). Lo que YAGO hace en la app (su visto bueno, sus pedidos) se
 apunta en records/review-log.jsonl, un evento por línea; records/ se versiona con el resto del
@@ -161,8 +163,8 @@ class Handler(BaseHTTPRequestHandler):
         except ValueError:
             return self.send(400, {"ok": False})
         if path == "/api/log":
-            ok = {"approved", "unapproved", "note", "cleared", "view", "caused"}
-            ev = [{k: (str(v)[:5000] if isinstance(v, str) else v) for k, v in e.items() if k in ("type", "unit", "hash", "text", "id", "from", "to", "what")}
+            ok = {"approved", "unapproved", "note", "cleared", "view", "caused", "checked", "start"}
+            ev = [{k: (str(v)[:5000] if isinstance(v, str) else v) for k, v in e.items() if k in ("type", "unit", "hash", "text", "id", "from", "to", "what", "against")}
                   for e in b.get("events", []) if e.get("type") in ok and (e.get("unit") or e.get("id"))]
             append(ev)
             return self.send(200, {"ok": True, "written": len(ev)})
@@ -173,6 +175,40 @@ class Handler(BaseHTTPRequestHandler):
             except Exception as e:
                 return self.send(200, {"ok": False, "error": str(e)})
         self.send(404, {"ok": False})
+
+
+def stale(h=None, log=None):
+    """Unit -> [(other, column)]: what changed on the other side after this one was last touched or checked.
+
+    A tarjeta only asks what its entries and sentences hold, so when one of them changes later, the tarjeta is due for
+    a look against it, and the other way round. Changes before the review began (the first `start` event) do not
+    count: those lotes were validated by `anki.py check` when they closed."""
+    h = h or history.build()
+    log = read_log() if log is None else log
+    cols = h["columns"]
+    start = min((datetime.fromisoformat(e["t"]).timestamp() for e in log if e["type"] == "start"), default=None)
+    when = lambda c: datetime.fromisoformat(cols[c]["date"]).timestamp() if cols[c]["date"] else datetime.now(timezone.utc).timestamp()
+    changed, born, checked = {}, {}, {}
+    for uid, hs in h["history"].items():
+        for x in hs:
+            t = when(x["col"])
+            if x["k"] == "changed" and (start is None or t > start):
+                changed[uid] = max(changed.get(uid, 0), t)
+            if x["k"] == "created" and uid not in born:
+                born[uid] = t
+    for e in log:
+        if e["type"] == "checked":
+            k = (e["unit"], e.get("against"))
+            checked[k] = max(checked.get(k, 0), datetime.fromisoformat(e["t"]).timestamp())
+    out = {}
+    for uid, u in h["current"].items():
+        for l in describe(uid, u)["links"]:
+            if l not in h["current"]:
+                continue
+            for a, b in ((uid, l), (l, uid)):
+                if changed.get(b, 0) > max(changed.get(a, 0), born.get(a, 0), checked.get((a, b), 0), start or 0):
+                    out.setdefault(a, set()).add(b)
+    return out
 
 
 def pending():
@@ -192,6 +228,19 @@ if __name__ == "__main__":
     if "--pending" in sys.argv:
         pending()
         sys.exit(0)
+    if "--stale" in sys.argv or "--checked" in sys.argv:
+        if not any(e["type"] == "start" for e in read_log()):
+            append([{"type": "start", "unit": "*"}])
+        due = stale()
+        if "--checked" in sys.argv:
+            ids = [a for a in sys.argv[sys.argv.index("--checked") + 1:] if not a.startswith("--")]
+            append([{"type": "checked", "unit": i, "against": o} for i in ids for o in sorted(due.get(i, ()))])
+            print(f"{sum(len(due.get(i, ())) for i in ids)} revisiones apuntadas.")
+        else:
+            for uid in sorted(due):
+                print(uid, "\n    " + "\n    ".join(sorted(due[uid])))
+            print(f"{len(due)} por revisar." if due else "Nada por revisar: cada tarjeta está al día con sus entradas y frases.")
+        sys.exit(0)
     if "--done" in sys.argv:
         # Mark requests done: --done <id> ... [--touched <id> ...] [--created <id> ...]; the cross matrices read these.
         def after(flag):
@@ -210,6 +259,8 @@ if __name__ == "__main__":
                                            *[{"type": "caused", "id": i, "from": notes[i]["unit"], "to": t, "what": "create"} for t in after("--created")]]])
         print(f"{len(ids)} pedidos marcados como atendidos.")
         sys.exit(0)
+    if not any(e["type"] == "start" for e in read_log()):
+        append([{"type": "start", "unit": "*"}])  # the review begins: only changes after this count as due
     port = 5198
     for port in range(5198, 5210):
         try:

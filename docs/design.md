@@ -268,6 +268,8 @@ Nunca exigidas, escritas a mano cuando sirven: `nuance` (lo pide el que aprende)
 
 Estado de cada fila, un color: verde, YAGO dio su visto bueno al texto de ahora; azul, cambió en un lote (a partir de su bandeja); amarillo, cambió en un ajuste entre lotes; gris, nadie lo miró. Su visto bueno y sus pedidos se apuntan en `records/review-log.jsonl`, un evento por línea, versionado como el resto (YAGO lo quiso visible en el repositorio, 2026-10-06). `serve.py --pending` lista los pedidos sin atender; un lote los lee junto con la bandeja.
 
+Una tarjeta pregunta lo que sostienen sus entradas y frases: si cambia una de ellas después que la tarjeta, la tarjeta queda **por revisar** contra ella (un aro naranja en su píldora, un filtro, una cifra arriba y un aviso al abrirla), y al revés, una entrada o frase queda por revisar si cambió después una tarjeta que la usa. La marca se va cuando cambia esa misma tarjeta o ficha, o con *Revisada: no hacía falta cambiar nada* (`serve.py --checked <id>`). `serve.py --stale` lista lo pendiente. Solo cuenta lo que cambió desde que empezó la revisión (el evento `start`, 2026-10-06): lo anterior ya lo validó `check` al cerrar cada lote.
+
 ## Niveles (HSK)
 
 El mazo se ordena por dificultad con los niveles del HSK 3.0 (la versión de 2021): del 1 al 6, y el 7 para los niveles 7, 8 y 9, que comparten lista de vocabulario. El HSK es la escala, no la meta (`docs/goal.md`), y lo que no está en la lista también lleva nivel.

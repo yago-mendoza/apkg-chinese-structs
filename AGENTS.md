@@ -7,6 +7,7 @@ Cada documento dice al principio qué va en él y qué no; respetarlo al editar.
 - Entorno: local en Windows, `C:\Users\yagom\dev\apkg-chinese-structs`, Python en `.venv` (`.\.venv\Scripts\python anki.py ...`). No instalar dependencias fuera de `.venv`, salvo las de las grabaciones de clase, que van en `.venv-audio` (`tools/requirements-audio.txt`).
 - Prioridad: mandarín cotidiano y práctico, pinyin y tonos, audio en respuestas y ejemplos. YAGO está empezando.
 - Solo el agente edita `3-data/`. YAGO escribe en `1-inbox/` y saca resultados de `5-output/`.
+- Al cambiar una entrada o una frase, releer las tarjetas que la usan; al cambiar una tarjeta, sus entradas y frases (lo que pregunte de más va primero a la entrada). `tools/review/serve.py --stale` lista lo pendiente; `--checked <id>` cierra lo que no necesitaba cambio.
 - Antes de añadir contenido: `anki.py lookup <término>` y `anki.py gaps`. Después: `anki.py check`. Revisar los avisos; no ignorarlos ni aceptarlos automáticamente (`accept_pinyin_mismatch` solo con motivo).
 - «Procesa el inbox»: seguir «Flujo de un lote» de `docs/design.md`. No cambiar el hanzi de respuestas o frases con audio salvo error (ver «Audio»).
 - La estructura no se congela: en cada lote, revisar temas, grupos y `use` y reorganizar si hace falta (`docs/design.md`, «Reorganización»), contándolo en el log del lote. Las reglas del sistema, en cambio, no cambian sobre la marcha (`docs/design.md`, «Retrospectiva»).
