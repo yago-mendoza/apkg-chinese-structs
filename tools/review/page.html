@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revisión · Chino práctico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #0d0d0d; --panel: #151515; --line: #232323; --ink: #ececec; --text: #cfcfcf; --dim: #8d8d8d; --faint: #5f5f5f;
+  --accent: #d9534f; --accent-bg: rgba(217,83,79,.10); --green: #6fcf8e; --blue: #6aa8f0; --yellow: #f2d64b; --red: #ef6a5b; }
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font: 14px/1.45 'IBM Plex Sans', system-ui, sans-serif; }
+.hz { font-family: 'Noto Sans SC', 'IBM Plex Sans', sans-serif; }
+.mono { font-family: 'IBM Plex Mono', monospace; }
+.app { display: grid; grid-template-columns: 280px minmax(0, 1fr) minmax(420px, 36%); grid-template-rows: auto minmax(0, 1fr); height: 100vh; }
+header { grid-column: 1 / -1; display: flex; align-items: center; gap: 18px; padding: 0 14px; border-bottom: 1px solid var(--line); height: 46px; }
+header h1 { margin: 0; font-size: 15px; color: var(--ink); font-weight: 600; white-space: nowrap; }
+#tabs { display: flex; height: 100%; }
+#tabs button { background: none; border: 0; color: var(--dim); font: inherit; padding: 0 14px; cursor: pointer; border-bottom: 2px solid transparent; }
+#tabs button.on { color: var(--ink); border-bottom-color: var(--accent); font-weight: 500; }
+.grow { flex: 1; }
+.counts { display: flex; gap: 14px; font: 12px 'IBM Plex Mono', monospace; color: var(--dim); }
+.counts > span { display: inline-flex; align-items: center; gap: 5px; cursor: help; white-space: nowrap; }
+.of { color: var(--faint); }
+.search { width: 260px; background: var(--panel); border: 1px solid var(--line); color: var(--ink); border-radius: 6px; padding: 6px 10px; font: inherit; }
+aside, main, section { overflow: auto; min-height: 0; }
+aside { border-right: 1px solid var(--line); padding: 10px 12px 30px; }
+section { border-left: 1px solid var(--line); }
+.facet { padding: 8px 0 12px; border-bottom: 1px solid var(--line); }
+.facet h3 { margin: 4px 0 6px; font: 10.5px 'IBM Plex Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); font-weight: 400; display: flex; justify-content: space-between; }
+.facet h3 button { background: none; border: 0; color: var(--accent); font: inherit; cursor: pointer; }
+.node { display: grid; grid-template-columns: minmax(0, 1fr) 48px; gap: 6px; align-items: center; padding: 2px 6px; margin: 0 -6px; border-radius: 4px; cursor: pointer; font-size: 13px; }
+.node:hover { background: var(--panel); }
+.node.on { background: var(--accent-bg); color: var(--ink); }
+.node .lbl { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.node .n { font: 11px 'IBM Plex Mono', monospace; color: var(--faint); text-align: right; }
+.legend { padding: 12px 0; display: grid; gap: 6px; font-size: 12px; color: var(--dim); }
+.legend span { display: flex; align-items: center; gap: 8px; }
+.hint { color: var(--faint); font-size: 12px; }
+.bar { position: sticky; top: 0; z-index: 2; background: var(--bg); display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-bottom: 1px solid var(--line); font-size: 12.5px; color: var(--dim); }
+.bar select { background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 5px; padding: 3px 6px; font: inherit; }
+.row { display: grid; grid-template-columns: 30px 128px minmax(0, 1fr) 120px 70px 56px; gap: 10px; align-items: center; height: 34px; padding: 0 12px; border-bottom: 1px solid var(--line); cursor: pointer; }
+.row:hover { background: var(--panel); }
+.row.sel { background: var(--accent-bg); box-shadow: inset 2px 0 0 var(--accent); }
+.row .id { font: 11px 'IBM Plex Mono', monospace; color: var(--dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.row .q { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--ink); }
+.row .q .g { color: var(--faint); font-size: 12.5px; margin-left: 8px; }
+.row .num, .row .links { font: 11.5px 'IBM Plex Mono', monospace; color: var(--dim); text-align: right; white-space: nowrap; }
+.row .links { cursor: help; }
+.row .links.none { color: var(--yellow); }
+.row .links.idle { opacity: .35; }
+.tick { width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--faint); background: none; color: transparent; font-size: 11px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; padding: 0; }
+.tick.ok { background: var(--green); border-color: var(--green); color: #0d0d0d; }
+.tick.lote { background: var(--blue); border-color: var(--blue); color: #0d0d0d; }
+.tick.ajuste { background: var(--yellow); border-color: var(--yellow); color: #0d0d0d; }
+.tick.sm { width: 14px; height: 14px; font-size: 8px; cursor: default; }
+.trail { display: flex; gap: 3px; align-items: center; overflow: hidden; }
+.trail i { width: 7px; height: 7px; border-radius: 50%; display: inline-block; flex: none; }
+.trail i.created { background: #9a9a9a; width: 5px; height: 5px; }
+.trail i.lote { background: var(--blue); }
+.trail i.ajuste { background: var(--yellow); }
+.trail i.removed { background: var(--red); }
+.trail i.ok { background: var(--green); }
+.trail i.ask { border: 1.5px dashed var(--blue); width: 9px; height: 9px; }
+.detail { padding: 14px 16px 40px; }
+.dhead { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; }
+.dhead .mono { color: var(--ink); font-size: 13px; }
+.dhead .where { color: var(--faint); font-size: 12px; }
+.big { font-size: 30px; color: var(--ink); margin: 2px 0; }
+.btns { display: flex; gap: 8px; margin: 10px 0 14px; flex-wrap: wrap; }
+.btn { background: var(--panel); border: 1px solid var(--line); color: var(--ink); border-radius: 6px; padding: 6px 12px; font: inherit; cursor: pointer; display: inline-flex; gap: 7px; align-items: center; }
+.btn:hover { border-color: var(--dim); }
+.btn.ok { background: var(--green); color: #0d0d0d; border-color: var(--green); }
+.sec { margin: 16px 0; }
+.sec h4 { margin: 0 0 6px; font: 10.5px 'IBM Plex Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); font-weight: 400; }
+.cardframe { width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; min-height: 120px; display: block; margin-bottom: 8px; }
+.stats { font: 11.5px 'IBM Plex Mono', monospace; color: var(--dim); }
+.list button { display: flex; width: 100%; gap: 10px; text-align: left; background: none; border: 0; border-bottom: 1px solid var(--line); color: var(--text); padding: 5px 0; font: inherit; cursor: pointer; }
+.list button:hover { color: var(--ink); }
+.list .mono { color: var(--dim); font-size: 11px; min-width: 120px; }
+textarea { width: 100%; min-height: 70px; background: var(--panel); border: 1px solid var(--line); color: var(--ink); border-radius: 6px; padding: 8px; font: inherit; resize: vertical; }
+pre { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 10px; font: 12px/1.5 'IBM Plex Mono', 'Noto Sans SC', monospace; white-space: pre-wrap; color: var(--text); margin: 0; }
+.htip, .mx-tip { position: fixed; pointer-events: none; z-index: 20; display: none; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; max-width: 460px; box-shadow: 0 8px 24px rgba(0,0,0,.45); font-size: 12.5px; color: var(--ink); }
+.htip h5 { margin: 0 0 5px; font: 10.5px 'IBM Plex Mono', monospace; color: var(--faint); text-transform: uppercase; letter-spacing: .06em; font-weight: 400; }
+.htip div { display: flex; justify-content: space-between; gap: 14px; padding: 2px 0; }
+.htip div span:last-child { color: var(--faint); font: 11px 'IBM Plex Mono', monospace; white-space: nowrap; }
+.htip .miss { color: var(--yellow); }
+.mx-wrap { padding: 10px 12px 30px; overflow: auto; }
+.mx-wrap canvas { display: block; cursor: crosshair; }
+.mx-cols { display: flex; font: 10.5px 'IBM Plex Mono', monospace; color: var(--faint); }
+.mx-cols span { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding-right: 4px; }
+.toast { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 6px 14px; border-radius: 6px; opacity: 0; transition: opacity .2s; pointer-events: none; }
+.toast.on { opacity: 1; }
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <h1>🐉 Revisión</h1>
+    <nav id="tabs"><button data-tab="cards" class="on">Tarjetas</button><button data-tab="fichas">Fichas</button><button data-tab="log">Registro</button></nav>
+    <span class="grow"></span>
+    <span class="counts" id="counts"></span>
+    <input class="search" id="q" placeholder="Buscar (/)">
+  </header>
+  <aside id="facets"></aside>
+  <main id="main"></main>
+  <section id="detail"></section>
+</div>
+<div class="htip" id="htip"></div><div class="mx-tip" id="mxTip"></div><div class="toast" id="toast"></div>
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+const toast = t => { const el = $('#toast'); el.textContent = t; el.classList.add('on'); setTimeout(() => el.classList.remove('on'), 1600); };
+let D, units, byId, usedBy, events = [];
+const state = Object.assign({ tab: 'cards', sel: {}, text: '', sort: 'theme', current: {}, mxView: 'timeline', mxUnits: 'cards', mxOrder: 'age' },
+  (() => { try { const s = JSON.parse(localStorage.getItem('zh-review') || '{}'); for (const k in s.sel || {}) s.sel[k] = new Set(s.sel[k]); return s; } catch { return {}; } })());
+const save = () => { try { localStorage.setItem('zh-review', JSON.stringify({ ...state, sel: Object.fromEntries(Object.entries(state.sel).map(([k, v]) => [k, [...v]])) })); } catch {} };
+
+// ── The states: green his approval of the text as it is now; blue changed in a lote (from his inbox); yellow changed between lotes; grey never looked.
+const LABEL = { ok: 'con tu verde', lote: 'cambiada en un lote', ajuste: 'cambiada entre lotes', none: 'sin mirar' };
+const HELP = { ok: 'Verde: te gusta como está ahora.', lote: 'Azul: cambiada en un lote, a partir de lo que dejaste en la bandeja.', ajuste: 'Amarillo: cambiada entre lotes, en un ajuste del agente.', none: 'Gris: todavía sin mirar.' };
+const colKind = c => D.columns[c]?.kind === 'lote' ? 'lote' : 'ajuste';
+const colTime = c => Date.parse(D.columns[c]?.date || '') || Date.now();
+function att(u) {
+  if (u._att && u._att.n === events.length) return u._att;
+  let approved = null; const notes = new Map(), done = new Set(), marks = [];
+  for (const e of events) if (e.unit === u.id || notes.has(e.id)) {
+    if (e.type === 'approved') { approved = e.hash; marks.push({ t: Date.parse(e.t), k: 'ok' }); }
+    else if (e.type === 'unapproved') approved = null;
+    else if (e.type === 'note') notes.set(e.id, e);
+    else if (e.type === 'cleared' || e.type === 'applied') done.add(e.id);
+  }
+  const hist = u.history.map(h => ({ t: colTime(h.col), col: h.col, k: h.k === 'changed' ? colKind(h.col) : h.k }));
+  const trail = [...hist, ...marks].sort((a, b) => a.t - b.t);
+  const open = [...notes.values()].filter(n => !done.has(n.id) && n.text);
+  const lastChange = [...hist].reverse().find(h => h.k === 'lote' || h.k === 'ajuste');
+  const status = approved === u.hash ? 'ok' : lastChange ? lastChange.k : 'none';
+  return u._att = { n: events.length, status, trail, open, note: [...notes.values()].filter(n => !done.has(n.id)).pop(), born: u.history.find(h => h.k === 'created')?.col ?? 0,
+    edits: hist.filter(h => h.k === 'lote' || h.k === 'ajuste').length };
+}
+const tickHtml = (s, cls = '') => `<span class="tick ${s} ${cls}">✓</span>`;
+const isCard = u => u.kind === 'card';
+const themeTitle = id => D.themes.find(t => t.id === id)?.title || id;
+const themeIdx = id => { const i = D.themes.findIndex(t => t.id === id); return i < 0 ? 999 : i; };
+const KIND_ES = { entry: 'entrada', sentence: 'frase', card: 'tarjeta' };
+
+// ── Tabs and filters
+const TABS = {
+  cards: { items: () => units.filter(isCard), facets: [
+    { key: 'theme', title: 'Tema', of: u => themeTitle(u.theme), order: () => D.themes.map(t => t.title) },
+    { key: 'type', title: 'Tipo de tarjeta', of: u => u.type },
+    { key: 'back', title: 'Respaldo', of: u => u.links.some(l => byId.has(l)) ? (u.links.every(l => byId.has(l)) ? 'todo en fichas' : 'con alguna ficha que falta') : 'sin ninguna ficha' },
+    { key: 'state', title: 'Estado', of: u => LABEL[att(u).status], order: () => Object.values(LABEL) },
+  ] },
+  fichas: { items: () => units.filter(u => !isCard(u)), facets: [
+    { key: 'theme', title: 'Tema', of: u => themeTitle(u.theme), order: () => D.themes.map(t => t.title) },
+    { key: 'kind', title: 'Clase', of: u => u.kind === 'sentence' ? 'frase' : (u.type || 'entrada') },
+    { key: 'used', title: 'Tarjetas que la usan', of: u => (usedBy.get(u.id) || []).filter(isCard).length ? 'con tarjetas' : 'sin tarjetas' },
+    { key: 'state', title: 'Estado', of: u => LABEL[att(u).status], order: () => Object.values(LABEL) },
+  ] },
+};
+const hay = u => u._hay ??= norm(`${u.id} ${u.name} ${u.gloss} ${themeTitle(u.theme)}`);
+const sel = () => (state.sel[state.tab] ||= {});
+const passes = (u, skip) => (!state.text || hay(u).includes(norm(state.text))) && TABS[state.tab].facets.every(f => f.key === skip || !sel()[f.key]?.size || sel()[f.key].has(f.of(u)));
+const SORTS = {
+  theme: ['Por tema', (a, b) => themeIdx(a.theme) - themeIdx(b.theme) || a.id.localeCompare(b.id)],
+  newest: ['Más nuevas', (a, b) => att(b).born - att(a).born || a.id.localeCompare(b.id)],
+  edits: ['Más cambiadas', (a, b) => att(b).edits - att(a).edits || a.id.localeCompare(b.id)],
+  waiting: ['Esperan tu verde', (a, b) => (att(a).status === 'ok') - (att(b).status === 'ok') || a.id.localeCompare(b.id)],
+  id: ['Por id', (a, b) => a.id.localeCompare(b.id)],
+};
+let list = [];
+
+function renderFacets() {
+  if (state.tab === 'log') return renderLogFacets();
+  const items = TABS[state.tab].items();
+  $('#facets').innerHTML = TABS[state.tab].facets.map(f => {
+    const count = new Map(); for (const u of items) if (passes(u, f.key)) { const v = f.of(u); count.set(v, (count.get(v) || 0) + 1); }
+    const all = new Map(); for (const u of items) { const v = f.of(u); all.set(v, (all.get(v) || 0) + 1); }
+    const order = f.order ? f.order().filter(v => all.has(v)) : [...all.keys()].sort((a, b) => all.get(b) - all.get(a));
+    const s = sel()[f.key];
+    return `<div class="facet"><h3><span>${f.title}</span>${s?.size ? `<button data-clear="${f.key}">limpiar</button>` : ''}</h3>${order.map(v => `<div class="node${s?.has(v) ? ' on' : ''}" data-f="${f.key}" data-v="${esc(v)}"><span class="lbl">${esc(v || '—')}</span><span class="n">${count.get(v) || 0}/${all.get(v)}</span></div>`).join('')}</div>`;
+  }).join('') + `<div class="legend">${['ok', 'lote', 'ajuste', 'none'].map(s => `<span>${tickHtml(s, 'sm')} ${HELP[s]}</span>`).join('')}<span><span class="trail"><i class="ask"></i></span> Pedido tuyo sin atender.</span><span class="hint">La fila de puntos de cada una es su historia, de izquierda a derecha: el gris pequeño es cuando nació.</span></div>`;
+}
+function renderCounts() {
+  const tab = state.tab === 'log' ? 'cards' : state.tab, items = TABS[tab].items(), shown = state.tab === 'log' ? items : list, N = shown.length, M = items.length;
+  const of = x => `<span>${x}<span class="of">/${N}${N === M ? '' : `/${M}`}</span></span>`;
+  const by = {}; for (const u of shown) { const s = att(u).status; by[s] = (by[s] || 0) + 1; }
+  const asks = shown.filter(u => att(u).open.length).length, scope = N === M ? `de ${M}` : `de las ${N} que deja ver el filtro (${M} en total)`;
+  $('#counts').innerHTML = ['ok', 'lote', 'ajuste', 'none'].map(s => `<span title="${HELP[s]} ${by[s] || 0} ${scope}.">${tickHtml(s, 'sm')}${of(by[s] || 0)}</span>`).join('')
+    + `<span title="Pedidos tuyos sin atender: ${asks} ${scope}."><span class="trail"><i class="ask"></i></span>${of(asks)}</span>`;
+}
+const trailHtml = u => { const a = att(u); return `<span class="trail">${a.trail.slice(-14).map(m => `<i class="${m.k}"></i>`).join('')}${a.open.length ? '<i class="ask"></i>' : ''}</span>`; };
+const linksCell = u => {
+  if (isCard(u)) { const ok = u.links.filter(l => byId.has(l)).length; return `<span class="links${ok ? '' : ' none'}" data-hover="${esc(u.id)}">${ok}${ok < u.links.length ? `+${u.links.length - ok}` : ''} fichas</span>`; }
+  const n = (usedBy.get(u.id) || []).filter(isCard).length; return `<span class="links${n ? '' : ' idle'}" data-hover="${esc(u.id)}">${n} tarj.</span>`;
+};
+const colShort = c => { const col = D.columns[c]; return col ? (col.kind === 'lote' ? 'L' + col.id.split('-').pop() : col.kind === 'local' ? 'local' : 'aj.') : ''; };
+const rowHtml = u => `<div class="row${state.current[state.tab] === u.id ? ' sel' : ''}" data-u="${esc(u.id)}"><button class="tick ${att(u).status}" data-approve="${esc(u.id)}" title="${att(u).status === 'ok' ? 'Quitar tu verde' : 'Dar tu verde: me gusta como está'}">✓</button><span class="id">${esc(u.id)}</span><span class="q"><span class="hz">${esc(u.name)}</span><span class="g">${esc(u.gloss)}</span></span>${trailHtml(u)}${linksCell(u)}<span class="num" title="nació en">${colShort(att(u).born)}</span></div>`;
+function renderMain() {
+  if (state.tab === 'log') return renderLog();
+  list = TABS[state.tab].items().filter(u => passes(u)).sort(SORTS[state.sort]?.[1] || SORTS.theme[1]);
+  $('#main').innerHTML = `<div class="bar"><span>${list.length} de ${TABS[state.tab].items().length}</span><span class="grow"></span><span>ordenar</span><select id="sort">${Object.entries(SORTS).map(([k, [l]]) => `<option value="${k}"${state.sort === k ? ' selected' : ''}>${l}</option>`).join('')}</select></div><div id="rows">${list.slice(0, 600).map(rowHtml).join('')}</div>${list.length > 600 ? `<p class="hint" style="padding:10px 12px">Se muestran 600 de ${list.length}: filtra o busca para ver el resto.</p>` : ''}`;
+  $('#sort').onchange = e => { state.sort = e.target.value; renderMain(); save(); };
+  renderCounts();
+}
+
+// ── Detail
+async function cardPreview(u) {
+  const box = $('#anki'); if (!box) return;
+  const r = await fetch(`/api/card?id=${encodeURIComponent(u.id)}`).then(r => r.json()).catch(() => ({ ok: false }));
+  if (state.current.cards !== u.id || !$('#anki')) return;
+  if (!r.ok) { box.innerHTML = `<p class="hint">Anki no responde: ábrelo para ver la tarjeta como la dibuja Anki. Abajo, sus datos.</p>`; return; }
+  if (!r.found) { box.innerHTML = `<p class="hint">Esta tarjeta todavía no está en Anki (falta un push).</p>`; return; }
+  const doc = html => `<!doctype html><html><head><meta charset="utf-8"><base href="/media/"><style>${r.css || ''} body{margin:0;padding:14px}</style></head><body class="card">${String(html).replace(/\[sound:([^\]]+)\]/g, (_, f) => `<audio controls src="${f}" style="height:30px;max-width:100%"></audio>`)}</body></html>`;
+  box.innerHTML = `<iframe class="cardframe" id="fr1"></iframe><iframe class="cardframe" id="fr2"></iframe><div class="stats">repasos ${r.reps} · fallos ${r.lapses} · intervalo ${r.interval} d · ${esc(r.deck)}</div>`;
+  for (const [id, html] of [['fr1', r.question], ['fr2', r.answer]]) { const f = $('#' + id); f.srcdoc = doc(html); f.onload = () => { try { f.style.height = (f.contentDocument.documentElement.scrollHeight + 4) + 'px'; } catch {} }; }
+}
+function renderDetail() {
+  if (state.tab === 'log') { $('#detail').innerHTML = `<div class="detail"><div class="sec"><h4>Cómo leerlo</h4><p class="hint">Cada fila es una tarjeta, una entrada o una frase, de la más antigua arriba a la más nueva abajo. Cada columna es un lote (lo que procesaste de la bandeja de golpe) o los ajustes que hubo entre dos lotes. Gris: nació ahí; azul: cambió en un lote; amarillo: cambió en un ajuste; rojo: desapareció; verde: tu visto bueno. Arriba, cuánto se movió en cada columna.</p><p class="hint">Las matrices cruzadas ponen las mismas filas en los dos ejes: la casilla de la fila A y la columna B cuenta las veces que A provocó un cambio (o la creación) de B. La diagonal es una que cambió o nació por sí misma. Fuera de ella: una tarjeta que nace de su entrada, una frase o tarjeta que cambia en el mismo lote que la entrada que la sostiene, o lo que el agente apunte al atender un pedido.</p></div></div>`; return; }
+  const u = byId.get(state.current[state.tab]);
+  if (!u) { $('#detail').innerHTML = `<div class="detail"><p class="hint">Elige una ${state.tab === 'cards' ? 'tarjeta' : 'ficha'} de la lista.</p></div>`; return; }
+  const a = att(u), linked = u.links.map(l => byId.get(l) || { id: l, missing: true }), users = (usedBy.get(u.id) || []);
+  const linkBtn = x => `<button data-jump="${esc(x.id)}"${x.missing ? ' disabled' : ''}><span class="mono">${esc(x.id)}</span><span class="hz">${x.missing ? 'no existe' : esc(x.name)}</span><span class="hint">${esc(x.gloss || '')}</span></button>`;
+  $('#detail').innerHTML = `<div class="detail">
+    <div class="dhead"><span class="mono">${esc(u.id)}</span><span class="where">${esc(themeTitle(u.theme))} · ${esc(isCard(u) ? u.type : KIND_ES[u.kind])}</span></div>
+    <div class="big hz">${esc(u.name)}</div><div class="hint">${esc(u.gloss)}</div>
+    <div class="btns"><button class="btn${a.status === 'ok' ? ' ok' : ''}" data-approve="${esc(u.id)}">✓ ${a.status === 'ok' ? 'Tienes tu verde puesto' : 'Me gusta como está'}</button>${isCard(u) ? `<button class="btn" id="browse">Abrir en Anki</button>` : ''}</div>
+    ${isCard(u) ? `<div class="sec"><h4>En Anki</h4><div id="anki"><p class="hint">Preguntando a Anki…</p></div></div>` : ''}
+    ${isCard(u) ? `<div class="sec"><h4>Fichas que la respaldan (${linked.length})</h4><div class="list">${linked.map(linkBtn).join('') || '<p class="hint">ninguna</p>'}</div></div>`
+      : `<div class="sec"><h4>Tarjetas y frases que la usan (${users.length})</h4><div class="list">${users.map(linkBtn).join('') || '<p class="hint">ninguna</p>'}</div></div>${linked.length ? `<div class="sec"><h4>Palabras de la frase</h4><div class="list">${linked.map(linkBtn).join('')}</div></div>` : ''}`}
+    <div class="sec"><h4>Pedido para el agente</h4><textarea id="note" placeholder="Qué cambiarías. Se apunta solo; el agente lo atiende en el próximo lote.">${esc(a.note?.text || '')}</textarea></div>
+    <div class="sec"><h4>Historia</h4><div class="list">${u.history.map(h => `<button disabled><span class="mono">${esc(D.columns[h.col]?.label || '')}</span><span>${{ created: 'nace', changed: 'cambia', removed: 'desaparece' }[h.k]}</span><span class="hint">${esc(D.columns[h.col]?.title || '')}</span></button>`).join('')}</div></div>
+    <div class="sec"><h4>Datos (3-data)</h4><pre>${esc(u.raw)}</pre></div></div>`;
+  if (isCard(u)) { cardPreview(u); $('#browse').onclick = () => fetch('/api/browse', { method: 'POST', body: JSON.stringify({ id: u.id }) }).then(r => r.json()).then(r => toast(r.ok ? 'Abierta en el navegador de Anki' : 'Anki no responde')); }
+  let timer; $('#note').oninput = e => { clearTimeout(timer); timer = setTimeout(() => {
+    const text = e.target.value.trim(), id = a.note?.id || `n-${Date.now().toString(36)}`;
+    post([text ? { type: 'note', unit: u.id, id, text } : { type: 'cleared', id, unit: u.id }]);
+  }, 700); };
+}
+async function post(evs) {
+  const stamped = evs.map(e => ({ t: new Date().toISOString(), ...e })); events.push(...stamped);
+  await fetch('/api/log', { method: 'POST', body: JSON.stringify({ events: evs }) }).catch(() => toast('No se pudo guardar'));
+  renderCounts(); repaintRow(evs[0].unit);
+}
+function repaintRow(id) { const el = document.querySelector(`.row[data-u="${CSS.escape(id)}"]`), u = byId.get(id); if (el && u) el.outerHTML = rowHtml(u); }
+
+// ── Register: rows by age down, lotes across; cross matrices
+const THEME_COLORS = ['#e08a5a', '#8ccfa6', '#6aa8f0', '#c792ea', '#f2d64b', '#ef6a5b', '#7fd4d4', '#d4a373', '#a3be8c', '#f78fb3', '#9aa5ce', '#e5c07b', '#b8b8b8', '#ff9e64'];
+function renderLogFacets() {
+  const opt = (key, k, l) => `<div class="node${state[key] === k ? ' on' : ''}" data-mx="${key}:${k}"><span class="lbl">${l}</span><span></span></div>`;
+  $('#facets').innerHTML = `<div class="facet"><h3><span>Vista</span></h3>${opt('mxView', 'timeline', 'Por lotes')}${opt('mxView', 'edits', 'Ediciones cruzadas')}${opt('mxView', 'creations', 'Creaciones cruzadas')}</div>
+    <div class="facet"><h3><span>Qué filas</span></h3>${opt('mxUnits', 'cards', 'Tarjetas')}${opt('mxUnits', 'fichas', 'Entradas y frases')}${opt('mxUnits', 'all', 'Todo')}</div>
+    <div class="facet"><h3><span>Orden</span></h3>${opt('mxOrder', 'age', 'Por antigüedad')}${opt('mxOrder', 'theme', 'Por tema, y dentro por antigüedad')}${opt('mxOrder', 'busy', 'Las más cambiadas arriba')}</div>
+    <div class="legend"><span><span class="trail"><i class="created"></i></span> nace</span><span><span class="trail"><i class="lote"></i></span> cambia en un lote</span><span><span class="trail"><i class="ajuste"></i></span> cambia en un ajuste</span><span><span class="trail"><i class="removed"></i></span> desaparece</span><span><span class="trail"><i class="ok"></i></span> tu verde</span><span class="hint">La franja de la izquierda es el tema.</span></div>`;
+}
+function mxRows() {
+  const items = state.mxUnits === 'cards' ? units.filter(isCard) : state.mxUnits === 'fichas' ? units.filter(u => !isCard(u)) : units;
+  const rows = items.filter(u => !state.text || hay(u).includes(norm(state.text)));
+  const age = (a, b) => att(a).born - att(b).born || themeIdx(a.theme) - themeIdx(b.theme) || a.id.localeCompare(b.id);
+  return rows.sort(state.mxOrder === 'theme' ? (a, b) => themeIdx(a.theme) - themeIdx(b.theme) || age(a, b) : state.mxOrder === 'busy' ? (a, b) => att(b).edits - att(a).edits || age(a, b) : age);
+}
+const themeColor = t => THEME_COLORS[Math.max(0, themeIdx(t)) % THEME_COLORS.length];
+const C = { created: '#8a8a8a', lote: '#6aa8f0', ajuste: '#f2d64b', removed: '#ef6a5b', ok: '#6fcf8e' };
+function tipAt(e, html) { const tip = $('#mxTip'); if (!html) { tip.style.display = 'none'; return; } tip.innerHTML = html; tip.style.display = 'block'; tip.style.left = Math.min(window.innerWidth - 470, e.clientX + 14) + 'px'; tip.style.top = Math.min(window.innerHeight - tip.offsetHeight - 8, e.clientY + 14) + 'px'; }
+function renderLog() {
+  renderCounts();
+  if (state.mxView !== 'timeline') return renderCross(state.mxView);
+  const rows = mxRows(), cols = D.columns, n = cols.length;
+  const W = Math.max(300, $('#main').clientWidth - 30), STRIP = 8, x0 = STRIP + 6, cw = Math.max(18, Math.min(90, Math.floor((W - x0) / n)));
+  const rowH = Math.max(1, Math.min(6, Math.floor((window.innerHeight - 200) / Math.max(1, rows.length)))), HIST = 54, GAP = 6;
+  const H = HIST + GAP + rows.length * rowH, dpr = window.devicePixelRatio || 1;
+  $('#main').innerHTML = `<div class="bar"><span>${rows.length} filas · ${n} columnas: ${cols.filter(c => c.kind === 'lote').length} lotes y los ajustes entre ellos</span></div><div class="mx-wrap"><div class="mx-cols" style="margin-left:${x0}px">${cols.map(c => `<span style="width:${cw}px" title="${esc(c.label)}${c.title ? ' · ' + esc(c.title) : ''}${c.subjects ? '\n' + esc(c.subjects.join('\n')) : ''}">${esc(c.kind === 'lote' ? 'L' + c.id.split('-').pop() : c.kind === 'local' ? 'local' : '·aj')}</span>`).join('')}</div><canvas id="mx"></canvas></div>`;
+  const cv = $('#mx'), Wc = x0 + n * cw; cv.width = Wc * dpr; cv.height = H * dpr; cv.style.width = Wc + 'px'; cv.style.height = H + 'px';
+  const g = cv.getContext('2d'); g.scale(dpr, dpr);
+  const per = cols.map(() => ({ created: 0, lote: 0, ajuste: 0, removed: 0, ok: 0 }));
+  const colOfTime = t => { let c = 0; for (let i = 0; i < n; i++) if ((Date.parse(cols[i].date || '') || Date.now()) <= t) c = i; return c; };
+  const cellsOf = r => { const a = att(r); return a.trail.map(m => ({ col: m.k === 'ok' ? colOfTime(m.t) : m.col, k: m.k })); };
+  for (const r of rows) for (const m of cellsOf(r)) per[m.col][m.k]++;
+  const peak = Math.max(1, ...per.map(p => p.created + p.lote + p.ajuste + p.removed + p.ok));
+  per.forEach((p, i) => { let y = HIST; for (const k of ['created', 'lote', 'ajuste', 'removed', 'ok']) { const h = p[k] / peak * (HIST - 4); if (h) { g.fillStyle = C[k]; g.fillRect(x0 + i * cw + 2, y - h, cw - 4, h); y -= h; } } });
+  const h1 = Math.max(1, rowH - (rowH > 2 ? 1 : 0));
+  rows.forEach((r, i) => {
+    const y = HIST + GAP + i * rowH, born = att(r).born;
+    g.fillStyle = themeColor(r.theme); g.fillRect(0, y, STRIP, h1);
+    g.fillStyle = 'rgba(255,255,255,.05)'; g.fillRect(x0 + born * cw, y, (n - born) * cw, h1);
+    for (const m of cellsOf(r)) { g.fillStyle = C[m.k]; const w = m.k === 'ok' ? Math.max(2, cw / 4) : cw - 2; g.fillRect(x0 + m.col * cw + (m.k === 'ok' ? cw - w - 1 : 1), y, w, h1); }
+  });
+  const hit = e => { const b = cv.getBoundingClientRect(); return { r: rows[Math.floor((e.clientY - b.top - HIST - GAP) / rowH)], c: Math.floor((e.clientX - b.left - x0) / cw) }; };
+  cv.onmousemove = e => { const { r, c } = hit(e); if (!r || !cols[c]) return tipAt(e); const at = cellsOf(r).filter(m => m.col === c);
+    tipAt(e, `<b class="hz">${esc(r.name)}</b> <span class="hint">${esc(r.id)}</span><br>${esc(themeTitle(r.theme))} · ${esc(cols[c].label)}${cols[c].title ? ' · ' + esc(cols[c].title) : ''}${at.length ? '<br>' + at.map(m => ({ created: 'nace', lote: 'cambia en el lote', ajuste: 'cambia en un ajuste', removed: 'desaparece', ok: 'tu verde' }[m.k])).join(' · ') : ''}`); };
+  cv.onmouseleave = () => tipAt();
+  cv.onclick = e => { const { r } = hit(e); if (r) jump(r.id); };
+}
+function renderCross(kind) {
+  const rows = mxRows(), N = rows.length, index = new Map(rows.map((r, i) => [r.id, i]));
+  const cells = new Map(), add = (i, j) => { const k = i * N + j; cells.set(k, (cells.get(k) || 0) + 1); };
+  const evAt = new Map(); for (const u of units) for (const h of u.history) evAt.set(`${u.id}@${h.col}`, h.k);
+  let self = 0, cross = 0;
+  for (const r of rows) {
+    const j = index.get(r.id);
+    for (const h of r.history) {
+      if (kind === 'edits' ? h.k !== 'changed' : h.k !== 'created') continue;
+      // A card is born from what it trains; anything changes along with what holds it when both move in the same column.
+      const causes = r.links.filter(l => index.has(l) && (kind === 'creations' ? (isCard(r) || evAt.get(`${l}@${h.col}`) === 'created') : evAt.get(`${l}@${h.col}`) === 'changed'));
+      if (causes.length) for (const l of causes) { add(index.get(l), j); cross++; } else { add(j, j); self++; }
+    }
+  }
+  for (const e of events.filter(e => e.type === 'caused' && e.what === (kind === 'edits' ? 'edit' : 'create'))) if (index.has(e.from) && index.has(e.to)) { add(index.get(e.from), index.get(e.to)); cross++; }
+  const what = kind === 'edits' ? 'cambios' : 'nacimientos';
+  $('#main').innerHTML = `<div class="bar"><span>${N} × ${N} · ${self} ${what} por sí mismas (diagonal) · ${cross} a raíz de otra</span></div><div class="mx-wrap"><canvas id="mx"></canvas></div>`;
+  const avail = Math.min($('#main').clientWidth - 40, window.innerHeight - 120), cell = Math.max(1, Math.floor(avail / Math.max(1, N))), S = 8, o = S + 4;
+  const size = o + N * cell, dpr = window.devicePixelRatio || 1, cv = $('#mx');
+  cv.width = size * dpr; cv.height = size * dpr; cv.style.width = size + 'px'; cv.style.height = size + 'px';
+  const g = cv.getContext('2d'); g.scale(dpr, dpr); const c1 = Math.max(1, cell - (cell > 2 ? 1 : 0));
+  rows.forEach((r, i) => { g.fillStyle = themeColor(r.theme); g.fillRect(0, o + i * cell, S, c1); g.fillRect(o + i * cell, 0, c1, S); });
+  g.fillStyle = 'rgba(255,255,255,.03)'; g.fillRect(o, o, N * cell, N * cell);
+  g.strokeStyle = 'rgba(255,255,255,.12)'; g.beginPath(); g.moveTo(o, o); g.lineTo(o + N * cell, o + N * cell); g.stroke();
+  const peak = Math.max(1, ...cells.values());
+  for (const [k, v] of cells) { const i = Math.floor(k / N), j = k % N, a = .4 + .6 * Math.log(1 + v) / Math.log(1 + peak);
+    g.fillStyle = i === j ? `rgba(242,214,75,${a})` : `rgba(106,168,240,${a})`; g.fillRect(o + j * cell, o + i * cell, Math.max(c1, 2), Math.max(c1, 2)); }
+  const hit = e => { const b = cv.getBoundingClientRect(); return { i: Math.floor((e.clientY - b.top - o) / cell), j: Math.floor((e.clientX - b.left - o) / cell) }; };
+  const nm = r => `<b class="hz">${esc(r.name)}</b> <span class="hint">${esc(r.id)}</span>`;
+  cv.onmousemove = e => { const { i, j } = hit(e), a = rows[i], b = rows[j]; if (!a || !b) return tipAt(e); const v = cells.get(i * N + j) || 0;
+    tipAt(e, i === j ? `${nm(a)}<br>${v} ${what} por sí misma` : `${nm(a)}<br>provocó ${v} ${what} en<br>${nm(b)}`); };
+  cv.onmouseleave = () => tipAt();
+  cv.onclick = e => { const { j } = hit(e); if (rows[j]) jump(rows[j].id); };
+}
+
+// ── Hover: what a card rests on, and what rests on a ficha
+document.addEventListener('mouseover', e => {
+  const tip = $('#htip'), el = e.target.closest('[data-hover]');
+  if (!el) { tip.style.display = 'none'; return; }
+  const u = byId.get(el.dataset.hover); if (!u) return;
+  const line = x => x ? `<div><span class="hz">${esc(x.name)} <span class="hint">${esc(x.gloss || '')}</span></span><span>${esc(x.id)} · ${(usedBy.get(x.id) || []).filter(isCard).length} tarj.</span></div>` : '';
+  tip.innerHTML = isCard(u)
+    ? `<h5>Fichas que respaldan esta tarjeta</h5>${u.links.map(l => byId.has(l) ? line(byId.get(l)) : `<div class="miss"><span>${esc(l)}</span><span>no existe</span></div>`).join('') || '<div class="miss"><span>Ninguna: lo que pregunta no está en ninguna ficha</span></div>'}`
+    : `<h5>Tarjetas que usan esta ficha</h5>${(usedBy.get(u.id) || []).filter(isCard).map(c => `<div><span class="hz">${esc(c.name)} <span class="hint">${esc(c.type)}</span></span><span>${esc(c.id)}</span></div>`).join('') || '<div class="miss"><span>Ninguna tarjeta la usa</span></div>'}`;
+  tip.style.display = 'block';
+  const r = el.getBoundingClientRect(), w = tip.offsetWidth, h = tip.offsetHeight;
+  tip.style.left = Math.max(8, Math.min(window.innerWidth - w - 8, r.right - w)) + 'px';
+  tip.style.top = (r.bottom + 6 + h > window.innerHeight ? r.top - h - 6 : r.bottom + 6) + 'px';
+});
+
+// ── Wiring
+function update() { renderFacets(); renderMain(); renderDetail(); save(); }
+function syncTabs() { document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.tab === state.tab)); }
+function jump(id) { const u = byId.get(id); if (!u) return; state.tab = isCard(u) ? 'cards' : 'fichas'; state.current[state.tab] = id; syncTabs(); update(); document.querySelector('.row.sel')?.scrollIntoView({ block: 'center' }); }
+$('#tabs').onclick = e => { const b = e.target.closest('button'); if (!b) return; state.tab = b.dataset.tab; syncTabs(); update(); };
+let qt; $('#q').oninput = e => { clearTimeout(qt); qt = setTimeout(() => { state.text = e.target.value; renderFacets(); renderMain(); save(); }, 150); };
+document.addEventListener('keydown', e => { if (e.key === '/' && document.activeElement.tagName !== 'TEXTAREA' && document.activeElement.tagName !== 'INPUT') { e.preventDefault(); $('#q').focus(); } });
+window.addEventListener('resize', () => { if (state.tab === 'log') renderLog(); });
+document.addEventListener('click', e => {
+  const ap = e.target.closest('[data-approve]');
+  if (ap) { e.stopPropagation(); const u = byId.get(ap.dataset.approve); const on = att(u).status === 'ok'; post([{ type: on ? 'unapproved' : 'approved', unit: u.id, hash: u.hash }]).then(() => { if (state.current[state.tab] === u.id) renderDetail(); }); return; }
+  const j = e.target.closest('[data-jump]'); if (j) { jump(j.dataset.jump); return; }
+  const f = e.target.closest('[data-f]'); if (f) { const s = (sel()[f.dataset.f] ||= new Set()); s.has(f.dataset.v) ? s.delete(f.dataset.v) : s.add(f.dataset.v); renderFacets(); renderMain(); save(); return; }
+  const c = e.target.closest('[data-clear]'); if (c) { sel()[c.dataset.clear]?.clear(); renderFacets(); renderMain(); save(); return; }
+  const mx = e.target.closest('[data-mx]'); if (mx) { const [k, v] = mx.dataset.mx.split(':'); state[k] = v; update(); return; }
+  const row = e.target.closest('.row[data-u]'); if (row) { state.current[state.tab] = row.dataset.u; document.querySelectorAll('.row.sel').forEach(r => r.classList.remove('sel')); row.classList.add('sel'); renderDetail(); save(); }
+});
+fetch('/api/data').then(r => r.json()).then(data => {
+  D = data; units = D.units; events = D.events; byId = new Map(units.map(u => [u.id, u]));
+  usedBy = new Map(); for (const u of units) for (const l of u.links) { if (!usedBy.has(l)) usedBy.set(l, []); usedBy.get(l).push(u); }
+  $('#q').value = state.text || ''; syncTabs(); update();
+});
+</script>
+</body>
+</html>

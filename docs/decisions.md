@@ -213,3 +213,7 @@ YAGO vio en la tarjeta de 十 la frase 我不是中国人，我是西班牙人 y
 ### 2026-10-05 · Cada hanzi difícil, con su imagen para recordarlo
 
 YAGO preguntó si el mazo inventa mnemotecnias propias para los hanzi difíciles de recordar, y lo pidió como «importantísimo». No era una norma: solo 30 de 258 caracteres tenían imagen para recordarlo. Ahora lo es: todo hanzi cuyo porqué no ayuda (origen discutido, que no se cuenta, o usado solo por su sonido) lleva una, inventada desde su forma de hoy y rotulada como imagen, nunca como origen; `check` avisa si falta. Se escribieron las 44 que faltaban. Vive en: `docs/goal.md` («Cómo se explica un carácter»), `anki.py` (`needs_memory`), `3-data/hanzi.yaml`.
+
+### 2026-10-06 · Una app para revisar, y la historia por lotes
+
+YAGO quería ver cómo va todo a la vez: abrir las tarjetas del mazo, saber qué entrada respalda cada una y cuándo cambió qué. Como el repositorio trabaja por lotes explícitos (lo que entra en la bandeja se procesa de golpe), el eje del tiempo son los lotes y los ajustes entre lotes, no las horas. La historia no se guarda: sale de git cada vez, porque git ya la tiene entera. Lo único que se guarda es lo que solo YAGO sabe (su visto bueno, sus pedidos), en `records/`, versionado: YAGO lo quiso visible en el repositorio aunque sea público. Las relaciones entre elementos (qué provocó el cambio o el nacimiento de qué) se deducen de los datos donde se puede (una tarjeta nace de su entrada) y se apuntan al atender un pedido; no se inventan.
