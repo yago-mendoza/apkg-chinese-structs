@@ -2207,3 +2207,223 @@ exercises:
     answer: {hanzi: 觉, pinyin: jué / jiào, meaning: 'Sale en 觉得 juéde «creer, parecerle a uno», 睡觉 shuìjiào «dormir, irse a
         dormir».'}
     comments: []
+  - id: x.comprehension.wo-de-ziwojieshao
+    added: 2026-10-07
+    lang: es
+    type: comprehension
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    targets: [s.wo-chusheng-shu-tu-ershiliu, s.wo-de-shengri-shi-shiyiyue-shiyihao]
+    script: hanzi
+    question: {es: '¿En qué año nació, de qué signo es, cuántos años tiene y cuándo es su cumpleaños?'}
+    answer: {meaning: 'En 1999; es conejo; tiene veintiséis; su cumpleaños es el 11 de noviembre.'}
+    skills: [reading, comprehension]
+    comments: []
+  - id: x.listen.wo-shu-tu
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.wo-shu-tu
+    targets: [s.wo-shu-tu]
+    context: [w.wo, w.shu.belong, w.tu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Soy conejo.}
+    comments: []
+  - id: x.produce.wo-shu-tu
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.wo-shu-tu
+    targets: [s.wo-shu-tu]
+    context: [w.wo, w.shu.belong, w.tu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Soy conejo.»'}
+    answer: {meaning: Soy conejo.}
+    comments: []
+  - id: x.listen.wo-1999-nian-chusheng
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.wo-1999-nian-chusheng
+    targets: [s.wo-1999-nian-chusheng]
+    context: [w.wo, w.num.yi, w.num.jiu, w.nian, w.chusheng]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Nací en 1999.}
+    comments: []
+  - id: x.produce.wo-1999-nian-chusheng
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.wo-1999-nian-chusheng
+    targets: [s.wo-1999-nian-chusheng]
+    context: [w.wo, w.num.yi, w.num.jiu, w.nian, w.chusheng]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Nací en 1999.»'}
+    answer: {meaning: Nací en 1999.}
+    comments: []
+  - id: x.listen.wo-ershiliu-sui
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.wo-ershiliu-sui
+    targets: [s.wo-ershiliu-sui]
+    context: [w.wo, w.num.er, w.num.shi, w.num.liu, w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo veintiséis años.}
+    comments: []
+  - id: x.produce.wo-ershiliu-sui
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.wo-ershiliu-sui
+    targets: [s.wo-ershiliu-sui]
+    context: [w.wo, w.num.er, w.num.shi, w.num.liu, w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo veintiséis años.»'}
+    answer: {meaning: Tengo veintiséis años.}
+    comments: []
+  - id: x.listen.wo-chusheng-shu-tu-ershiliu
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.wo-chusheng-shu-tu-ershiliu
+    targets: [s.wo-chusheng-shu-tu-ershiliu]
+    context: [w.wo, w.num.yi, w.num.jiu, w.nian, w.chusheng, w.shu.belong, w.tu, w.jinnian, w.num.er, w.num.shi, w.num.liu,
+      w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Nací en 1999, soy conejo y este año cumplo veintiséis.'}
+    comments: []
+  - id: x.produce.wo-chusheng-shu-tu-ershiliu
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.wo-chusheng-shu-tu-ershiliu
+    targets: [s.wo-chusheng-shu-tu-ershiliu]
+    context: [w.wo, w.num.yi, w.num.jiu, w.nian, w.chusheng, w.shu.belong, w.tu, w.jinnian, w.num.er, w.num.shi, w.num.liu,
+      w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Nací en 1999, soy conejo y este año cumplo veintiséis.»'}
+    answer: {meaning: 'Nací en 1999, soy conejo y este año cumplo veintiséis.'}
+    comments: []
+  - id: x.listen.ta-jinnian-duoda
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.ta-jinnian-duoda
+    targets: [s.ta-jinnian-duoda]
+    context: [w.ta.he, w.jinnian, w.duoda]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuántos años tiene (él) este año?'}
+    comments: []
+  - id: x.produce.ta-jinnian-duoda
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.ta-jinnian-duoda
+    targets: [s.ta-jinnian-duoda]
+    context: [w.ta.he, w.jinnian, w.duoda]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años tiene (él) este año?»'}
+    answer: {meaning: '¿Cuántos años tiene (él) este año?'}
+    comments: []
+  - id: x.listen.ni-baba-duoda-nianji-le
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.ni-baba-duoda-nianji-le
+    targets: [s.ni-baba-duoda-nianji-le]
+    context: [w.ni, w.baba, w.duoda, w.nianji, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuántos años tiene tu padre?'}
+    comments: []
+  - id: x.produce.ni-baba-duoda-nianji-le
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.ni-baba-duoda-nianji-le
+    targets: [s.ni-baba-duoda-nianji-le]
+    context: [w.ni, w.baba, w.duoda, w.nianji, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años tiene tu padre?»'}
+    answer: {meaning: '¿Cuántos años tiene tu padre?'}
+    comments: []
+  - id: x.listen.wo-mama-wushiwu-sui
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.wo-mama-wushiwu-sui
+    targets: [s.wo-mama-wushiwu-sui]
+    context: [w.wo, w.mama, w.num.wu, w.num.shi, w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mi madre tiene cincuenta y cinco.}
+    comments: []
+  - id: x.produce.wo-mama-wushiwu-sui
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.wo-mama-wushiwu-sui
+    targets: [s.wo-mama-wushiwu-sui]
+    context: [w.wo, w.mama, w.num.wu, w.num.shi, w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mi madre tiene cincuenta y cinco.»'}
+    answer: {meaning: Mi madre tiene cincuenta y cinco.}
+    comments: []
+  - id: x.listen.ni-de-shengri-shi-ji-yue-ji-hao
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.ni-de-shengri-shi-ji-yue-ji-hao
+    targets: [s.ni-de-shengri-shi-ji-yue-ji-hao]
+    context: [w.ni, w.de, w.shengri, w.shi, w.ji, w.yue.month, w.hao.date]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuándo es tu cumpleaños?'}
+    comments: []
+  - id: x.produce.ni-de-shengri-shi-ji-yue-ji-hao
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.ni-de-shengri-shi-ji-yue-ji-hao
+    targets: [s.ni-de-shengri-shi-ji-yue-ji-hao]
+    context: [w.ni, w.de, w.shengri, w.shi, w.ji, w.yue.month, w.hao.date]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuándo es tu cumpleaños?»'}
+    answer: {meaning: '¿Cuándo es tu cumpleaños?'}
+    comments: []
+  - id: x.listen.wo-de-shengri-shi-shiyiyue-shiyihao
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.wo-de-shengri-shi-shiyiyue-shiyihao
+    targets: [s.wo-de-shengri-shi-shiyiyue-shiyihao]
+    context: [w.wo, w.de, w.shengri, w.shi, w.num.shi, w.num.yi, w.yue.month, w.hao.date]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mi cumpleaños es el 11 de noviembre.}
+    comments: []
+  - id: x.produce.wo-de-shengri-shi-shiyiyue-shiyihao
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.wo-de-shengri-shi-shiyiyue-shiyihao
+    targets: [s.wo-de-shengri-shi-shiyiyue-shiyihao]
+    context: [w.wo, w.de, w.shengri, w.shi, w.num.shi, w.num.yi, w.yue.month, w.hao.date]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mi cumpleaños es el 11 de noviembre.»'}
+    answer: {meaning: Mi cumpleaños es el 11 de noviembre.}
+    comments: []
+  - id: x.charsound.xi-2
+    added: 2026-10-07
+    lang: es
+    type: charsound
+    targets: [w.xuexi, w.lianxi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 习}
+    answer: {typed: xi2, hanzi: 习, pinyin: xí, meaning: 'Sale en 学习 xuéxí «estudiar, aprender», 练习 liànxí «practicar; ejercicio».'}
+    comments: []

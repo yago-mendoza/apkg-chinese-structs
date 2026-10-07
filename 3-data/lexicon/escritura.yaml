@@ -276,3 +276,82 @@ entries:
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments:
       - {kind: character, private: false, date: '2026-10-05', text: 'Como pieza, da el sonido qing: 请 qǐng «por favor», 清 qīng «claro», 晴 qíng «despejado» y 情 qíng «sentimiento». La otra pieza da el sentido: 讠 hablar, 氵 agua, 日 sol, 忄 corazón.'}
+  - id: w.zi.char
+    use: say
+    role: content
+    kind: word
+    hanzi: 字
+    pinyin: 'zì'
+    meaning: {es: 'carácter (hanzi)', en: 'character'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Un 字 es un carácter; un 词 es una palabra, de uno o más caracteres. 名字 «nombre» lleva este 字.'}
+  - id: w.ci.word
+    use: hear
+    role: content
+    kind: word
+    hanzi: 词
+    pinyin: 'cí'
+    meaning: {es: 'palabra', en: 'word'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []
+  - id: w.hanzi
+    use: say
+    role: content
+    kind: word
+    hanzi: 汉字
+    pinyin: 'hànzì'
+    meaning: {es: 'carácter chino', en: 'Chinese character'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: '汉 «Han», la etnia y la lengua china + 字 «carácter».'}
+  - id: w.pinyin
+    use: say
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 拼音
+    pinyin: 'pīnyīn'
+    meaning: {es: 'pinyin', en: 'pinyin'}
+    level: 1
+    level_reason: 'herramienta básica desde la primera clase'
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: '拼 «juntar» + 音 «sonido»: sonidos juntados, la escritura con letras.'}
+  - id: w.xie
+    use: say
+    role: content
+    kind: word
+    hanzi: 写
+    pinyin: 'xiě'
+    meaning: {es: 'escribir', en: 'to write'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []
+  - id: w.lianxi
+    use: say
+    role: content
+    kind: word
+    hanzi: 练习
+    pinyin: 'liànxí'
+    meaning: {es: 'practicar; ejercicio', en: 'to practise; exercise'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []
+  - id: w.juzi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 句子
+    pinyin: 'jùzi'
+    meaning: {es: 'frase', en: 'sentence'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []
+  - id: g.zi-ci
+    kind: group
+    basis: set
+    title: '字 y 词'
+    explanation: 'Carácter frente a palabra.'
+    members:
+      - {ref: w.zi.char, cue: '字: un carácter (汉字)'}
+      - {ref: w.ci.word, cue: '词: una palabra, de uno o más 字'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []

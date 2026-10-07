@@ -28,10 +28,16 @@
 - ✅🃏 万 wàn [wan˥˩] · diez mil · _número_ · 万 es una unidad propia, 10 000: 三万 son 30 000 y 十万, 100 000. El chino agrupa las cifras de cuatro en cuatro, no de tres en tres.
 - ✅🃏 多大 duō dà [twɔ˥ ta˥˩] · ¿cuántos años? (entre adultos) · _interrogativo_ · 你多大？ a alguien de tu edad; 你几岁？ a un niño; 您多大年纪了？ a una persona mayor o de respeto.
 - ✅🃏 年纪 niánjì [njɛn˧˥ tɕi˥˩] · edad (con respeto) · _sustantivo_
-- ✅🃏 您高寿 nín gāoshòu [nin˧˥ kɑʊ˥ ʂoʊ˥˩] · ¿cuántos años tiene usted? (a mayores de 70) · _expresión_
+- ✅🃏 您高寿 nín gāoshòu [nin˧˥ kɑʊ˥ ʂoʊ˥˩] · ¿cuántos años tiene usted? (a mayores de 70) · _expresión_ · Palabra a palabra: 您 «usted» + 高 «alto» + 寿 «años de vida»: «sus muchos años».
 - ✅🃏 年轻 niánqīng [njɛn˧˥ tɕʰiŋ˥] · joven · _adjetivo_
 - ✅🃏 左右 zuǒyòu [tswɔ˧˩˧ joʊ˥˩] · más o menos, aproximadamente · _número_ · Va detrás del número: 四十岁左右 «unos cuarenta años». Suelto, 左右 es «izquierda y derecha».
 - ✅🃏 号码 hàomǎ [xɑʊ˥˩ ma˧˩˧] · número (de teléfono, de pasaporte…) · _sustantivo_ · Al dar un número de teléfono, 一 se lee yāo para no confundirlo con 七 qī: 110 se dice yāo yāo líng.
+- ✅🃏 第 dì [ti˥˩] · prefijo de los ordinales · _número_ · 第 + número = ordinal: 第一 «primero», 第二 «segundo», 第三天 «el tercer día». Con ordinales siempre 二, nunca 两.
+- ✅🃏 亿 yì [i˥˩] · cien millones · _número_ · Después de 万 viene 亿: 一亿 son cien millones y 十四亿, mil cuatrocientos millones (la población de China). 十万 «cien mil», 百万 «un millón».
+- ✅🃏 只 zhī [ʈʂɨ˥] · clasificador de animales; uno de un par · _adverbio_ · 两只猫 «dos gatos». Con otra lectura, zhǐ, es «solo»: 只有 «solo hay».
+- ✅🃏 张 zhāng [ʈʂɑŋ˥] · clasificador de cosas planas (papel, mesas, billetes) · _clasificador_ · 一张纸 «una hoja», 一张桌子 «una mesa». También es un apellido muy común: 张阿姨.
+- ✅🃏 杯 bēi [peɪ˥] · vaso de, taza de (clasificador) · _clasificador_ · 一杯茶 «una taza de té», 两杯水 «dos vasos de agua». El vaso como objeto es 杯子.
+- ✅🃏 件 jiàn [tɕjɛn˥˩] · clasificador de ropa y de asuntos · _clasificador_ · 一件衣服 «una prenda». También para asuntos: 一件事 «una cosa, un asunto».
 
 ## 九 jiǔ y 就 jiù
 
@@ -91,6 +97,47 @@ Salen juntos al hablar de dinero (两千块钱): 千 es alto y plano, 钱 sube.
 - 几 jǐ · jǐ, baja y sube: cuántos
 - 鸡 jī · jī, alto y plano: gallo
 
+## Clasificadores básicos
+
+Número + clasificador + cosa: el clasificador depende de la forma o del tipo de cosa.
+
+- 个 ge · 个: el general, y personas (一个人)
+- 本 běn · 本: libros (一本书)
+- 杯 bēi · 杯: lo que se bebe en vaso o taza (一杯茶)
+- 张 zhāng · 张: cosas planas (一张纸)
+- 只 zhī · 只: animales (一只猫)
+- 件 jiàn · 件: ropa y asuntos (一件衣服)
+- 块 kuài · 块: trozos y dinero (十块钱)
+- 棵 kē · 棵: árboles y plantas (一棵树)
+
+## 好 hǎo y 号 hào
+
+好 baja y sube; 号 cae: 十月八号.
+
+- 好 hǎo · hǎo, baja y sube: bien
+- 号 hào · hào, cae: día del mes
+
+## 一 y 亿
+
+一 suele decirse yì delante de otro tono (一百 yì bǎi) y entonces suena igual que 亿 yì «cien millones». El contexto decide.
+
+- 一 yī · yī, o yì / yí según lo que siga: uno
+- 亿 yì · yì, siempre: cien millones
+
+## 只 zhī y 纸 zhǐ
+
+只 alto y plano (clasificador); 纸 baja y sube (papel).
+
+- 只 zhī · zhī, alto y plano: clasificador de animales
+- 纸 zhǐ · zhǐ, baja y sube: papel
+
+## 见 y 件: los dos jiàn
+
+Suenan igual: 见 «ver» (再见), 件 clasificador de ropa (一件衣服).
+
+- 见 jiàn · 见: ver, encontrarse
+- 件 jiàn · 件: clasificador de ropa y asuntos
+
 ## Frases
 
 - ✅🃏 一、二、三、四、五、六、七、八、九、十。 · yī èr sān sì wǔ liù qī bā jiǔ shí · Uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez.
@@ -111,3 +158,10 @@ Salen juntos al hablar de dinero (两千块钱): 千 es alto y plano, 钱 sube.
 - ✅🃏 一百零五块。 · yì bǎi líng wǔ kuài · Ciento cinco yuanes.
 - ✅🃏 两千块。 · liǎng qiān kuài · Dos mil yuanes.
 - ✅🃏 一万块钱。 · yí wàn kuài qián · Diez mil yuanes.
+- ✅🃏 第一天。 · dì yī tiān · El primer día.
+- ✅🃏 他是第二个。 · tā shì dì èr ge · Él es el segundo.
+- ✅🃏 我有两只猫。 · wǒ yǒu liǎng zhī māo · Tengo dos gatos.
+- ✅🃏 我要两杯茶。 · wǒ yào liǎng bēi chá · Quiero dos tés.
+- ✅🃏 这件衣服很漂亮。 · zhè jiàn yīfu hěn piàoliang · Esta prenda es muy bonita.
+- ✅🃏 中国有十四亿人。 · Zhōngguó yǒu shí sì yì rén · China tiene mil cuatrocientos millones de habitantes.
+- ✅🃏 我要一张纸。 · wǒ yào yì zhāng zhǐ · Quiero una hoja de papel.

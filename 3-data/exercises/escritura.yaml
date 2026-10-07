@@ -180,3 +180,269 @@ exercises:
     answer: {hanzi: 请, pinyin: qǐng, meaning: '讠 «hablar»: pedir es cosa de palabras; 青 qīng solo da el sonido, no el color'}
     lang: es
     comments: []
+  - id: x.nuance.zi-ci
+    added: 2026-10-07
+    lang: es
+    type: nuance
+    targets: [w.zi.char, w.ci.word]
+    skills: [comprehension, discrimination]
+    prompt: {text: '字 y 词: ¿qué diferencia hay?'}
+    answer: {meaning: '字 es un carácter, una sílaba escrita (学). 词 es una palabra, de uno o más caracteres (学生). 汉字 «caracteres chinos»; 生词 «palabras nuevas».'}
+    comments: []
+  - id: x.dictation.zi.char
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.zi.char]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zi4, hanzi: 字, pinyin: zì, meaning: carácter (hanzi)}
+    comments: []
+  - id: x.produce.zi.char
+    added: 2026-10-07
+    lang: es
+    type: produce
+    targets: [w.zi.char]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «carácter (hanzi)»? Escribe el pinyin.'}
+    answer: {typed: zi4, hanzi: 字, pinyin: zì, meaning: carácter (hanzi)}
+    comments: []
+  - id: x.read.zi.char
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.zi.char]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 字}
+    answer: {hanzi: 字, pinyin: zì, meaning: carácter (hanzi)}
+    comments: []
+  - id: x.dictation.ci.word
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.ci.word]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ci2, hanzi: 词, pinyin: cí, meaning: palabra}
+    comments: []
+  - id: x.read.ci.word
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.ci.word]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 词}
+    answer: {hanzi: 词, pinyin: cí, meaning: palabra}
+    comments: []
+  - id: x.dictation.hanzi
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.hanzi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: han4 zi4, hanzi: 汉字, pinyin: hànzì, meaning: carácter chino}
+    comments: []
+  - id: x.produce.hanzi
+    added: 2026-10-07
+    lang: es
+    type: produce
+    targets: [w.hanzi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «carácter chino»? Escribe el pinyin.'}
+    answer: {typed: han4 zi4, hanzi: 汉字, pinyin: hànzì, meaning: carácter chino}
+    comments: []
+  - id: x.read.hanzi
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.hanzi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 汉字}
+    answer: {hanzi: 汉字, pinyin: hànzì, meaning: carácter chino}
+    comments: []
+  - id: x.dictation.pinyin
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.pinyin]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: pin1 yin1, hanzi: 拼音, pinyin: pīnyīn, meaning: pinyin}
+    comments: []
+  - id: x.produce.pinyin
+    added: 2026-10-07
+    lang: es
+    type: produce
+    targets: [w.pinyin]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «pinyin»? Escribe el pinyin.'}
+    answer: {typed: pin1 yin1, hanzi: 拼音, pinyin: pīnyīn, meaning: pinyin}
+    comments: []
+  - id: x.read.pinyin
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.pinyin]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 拼音}
+    answer: {hanzi: 拼音, pinyin: pīnyīn, meaning: pinyin}
+    comments: []
+  - id: x.dictation.xie
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.xie]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xie3, hanzi: 写, pinyin: xiě, meaning: escribir}
+    comments: []
+  - id: x.produce.xie
+    added: 2026-10-07
+    lang: es
+    type: produce
+    targets: [w.xie]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «escribir»? Escribe el pinyin.'}
+    answer: {typed: xie3, hanzi: 写, pinyin: xiě, meaning: escribir}
+    comments: []
+  - id: x.read.xie
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.xie]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 写}
+    answer: {hanzi: 写, pinyin: xiě, meaning: escribir}
+    comments: []
+  - id: x.dictation.lianxi
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.lianxi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lian4 xi2, hanzi: 练习, pinyin: liànxí, meaning: practicar; ejercicio}
+    comments: []
+  - id: x.produce.lianxi
+    added: 2026-10-07
+    lang: es
+    type: produce
+    targets: [w.lianxi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «practicar; ejercicio»? Escribe el pinyin.'}
+    answer: {typed: lian4 xi2, hanzi: 练习, pinyin: liànxí, meaning: practicar; ejercicio}
+    comments: []
+  - id: x.read.lianxi
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.lianxi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 练习}
+    answer: {hanzi: 练习, pinyin: liànxí, meaning: practicar; ejercicio}
+    comments: []
+  - id: x.tones.lianxi
+    added: 2026-10-07
+    lang: es
+    type: tones
+    targets: [w.lianxi]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '42', hanzi: 练习, pinyin: liànxí, meaning: practicar; ejercicio}
+    comments: []
+  - id: x.dictation.juzi
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.juzi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ju4 zi5, hanzi: 句子, pinyin: jùzi, meaning: frase}
+    comments: []
+  - id: x.read.juzi
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.juzi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 句子}
+    answer: {hanzi: 句子, pinyin: jùzi, meaning: frase}
+    comments: []
+  - id: x.tones.juzi
+    added: 2026-10-07
+    lang: es
+    type: tones
+    targets: [w.juzi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 句子, pinyin: ju zi}
+    answer: {typed: '45', hanzi: 句子, pinyin: jùzi, meaning: frase}
+    comments: []
+  - id: x.listen.wo-xie-hanzi
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.wo-xie-hanzi
+    targets: [s.wo-xie-hanzi]
+    context: [w.wo, w.xie, w.hanzi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Escribo caracteres chinos.}
+    comments: []
+  - id: x.produce.wo-xie-hanzi
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.wo-xie-hanzi
+    targets: [s.wo-xie-hanzi]
+    context: [w.wo, w.xie, w.hanzi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Escribo caracteres chinos.»'}
+    answer: {meaning: Escribo caracteres chinos.}
+    comments: []
+  - id: x.listen.wo-lianxi-pinyin
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.wo-lianxi-pinyin
+    targets: [s.wo-lianxi-pinyin]
+    context: [w.wo, w.lianxi, w.pinyin]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Practico pinyin.}
+    comments: []
+  - id: x.produce.wo-lianxi-pinyin
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.wo-lianxi-pinyin
+    targets: [s.wo-lianxi-pinyin]
+    context: [w.wo, w.lianxi, w.pinyin]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Practico pinyin.»'}
+    answer: {meaning: Practico pinyin.}
+    comments: []
+  - id: x.listen.zhege-zi-zenme-shuo
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.zhege-zi-zenme-shuo
+    targets: [s.zhege-zi-zenme-shuo]
+    context: [w.zhe, w.ge, w.zi.char, w.zenme, w.shuo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cómo se dice este carácter?'}
+    comments: []
+  - id: x.produce.zhege-zi-zenme-shuo
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.zhege-zi-zenme-shuo
+    targets: [s.zhege-zi-zenme-shuo]
+    context: [w.zhe, w.ge, w.zi.char, w.zenme, w.shuo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cómo se dice este carácter?»'}
+    answer: {meaning: '¿Cómo se dice este carácter?'}
+    comments: []

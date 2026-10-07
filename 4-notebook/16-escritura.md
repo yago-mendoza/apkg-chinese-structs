@@ -22,6 +22,13 @@
 - ✅🃏 讠 yán · palabra, hablar (forma de 言 a la izquierda) · Casi siempre trae la idea de hablar: 认识, 请, 谢谢, 说 shuō «decir». No confundir con 文 wén «escritura» de 中文.
 - ✅ 疒 nè · enfermedad (como componente) · Una cama con una persona tumbada: lo que lo lleva tiene que ver con la enfermedad, como 疼 «doler» y 瘦 «delgado».
 - 🟡🃏 青 qīng · verde azulado, el color de la hierba y del cielo · Como pieza, da el sonido qing: 请 qǐng «por favor», 清 qīng «claro», 晴 qíng «despejado» y 情 qíng «sentimiento». La otra pieza da el sentido: 讠 hablar, 氵 agua, 日 sol, 忄 corazón.
+- ✅🃏 字 zì [tsɯ˥˩] · carácter (hanzi) · _sustantivo_ · Un 字 es un carácter; un 词 es una palabra, de uno o más caracteres. 名字 «nombre» lleva este 字.
+- ✅🃏 词 cí [tsʰɯ˧˥] · palabra · _sustantivo_
+- ✅🃏 汉字 hànzì [xan˥˩ tsɯ˥˩] · carácter chino · _nombre propio_ · 汉 «Han», la etnia y la lengua china + 字 «carácter».
+- ✅🃏 拼音 pīnyīn [pʰin˥ in˥] · pinyin · _sustantivo_ · 拼 «juntar» + 音 «sonido»: sonidos juntados, la escritura con letras.
+- ✅🃏 写 xiě [ɕjɛ˧˩˧] · escribir · _verbo_
+- ✅🃏 练习 liànxí [ljɛn˥˩ ɕi˧˥] · practicar; ejercicio · _verbo_
+- ✅🃏 句子 jùzi [tɕy˥˩ tsɯ] · frase · _sustantivo_
 
 ## 生, 牛 y 午
 
@@ -66,3 +73,16 @@ Dos puertas: 门 tiene dos hojas; 户, una sola con un punto encima.
 
 - 门 mén · dos hojas: puerta, mén
 - 户 hù · una hoja con un punto: hù, hogar, ventana
+
+## 字 y 词
+
+Carácter frente a palabra.
+
+- 字 zì · 字: un carácter (汉字)
+- 词 cí · 词: una palabra, de uno o más 字
+
+## Frases
+
+- ✅🃏 我写汉字。 · wǒ xiě hànzì · Escribo caracteres chinos.
+- ✅🃏 我练习拼音。 · wǒ liànxí pīnyīn · Practico pinyin.
+- ✅🃏 这个字怎么说？ · zhè ge zì zěnme shuō · ¿Cómo se dice este carácter?

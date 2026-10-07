@@ -711,3 +711,326 @@ exercises:
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 今}
     answer: {typed: jin1, hanzi: 今, pinyin: jīn, meaning: 'Sale en 今天 jīntiān «hoy», 今年 jīnnián «este año».'}
     comments: []
+  - id: x.nuance.date-order
+    added: 2026-10-07
+    lang: es
+    type: nuance
+    targets: [w.yue.month, w.hao.date]
+    context: [w.nian, w.xingqi]
+    skills: [comprehension, discrimination]
+    prompt: {text: '¿En qué orden se dice una fecha completa en chino?'}
+    answer: {meaning: 'De lo grande a lo pequeño: año, mes, día y día de la semana. 二零二六年十月八号，星期四 «jueves, 8 de octubre de 2026». El año se lee cifra a cifra.'}
+    comments: []
+  - id: x.dictation.yue.month
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.yue.month]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yue4, hanzi: 月, pinyin: yuè, meaning: mes}
+    comments: []
+  - id: x.produce.yue.month
+    added: 2026-10-07
+    lang: es
+    type: produce
+    targets: [w.yue.month]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «mes»? Escribe el pinyin.'}
+    answer: {typed: yue4, hanzi: 月, pinyin: yuè, meaning: mes}
+    comments: []
+  - id: x.read.yue.month
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.yue.month]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 月}
+    answer: {hanzi: 月, pinyin: yuè, meaning: mes}
+    comments: []
+  - id: x.contrast.hao.date
+    added: 2026-10-07
+    lang: es
+    type: contrast
+    group: g.hao-hao
+    targets: [w.hao.date]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 号, pinyin: hào, meaning: día del mes (al hablar)}
+    comments: []
+  - id: x.dictation.hao.date
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.hao.date]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hao4, hanzi: 号, pinyin: hào, meaning: día del mes (al hablar)}
+    comments: []
+  - id: x.produce.hao.date
+    added: 2026-10-07
+    lang: es
+    type: produce
+    targets: [w.hao.date]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «día del mes (al hablar)»? Escribe el pinyin.'}
+    answer: {typed: hao4, hanzi: 号, pinyin: hào, meaning: día del mes (al hablar)}
+    comments: []
+  - id: x.read.hao.date
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.hao.date]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 号}
+    answer: {hanzi: 号, pinyin: hào, meaning: día del mes (al hablar)}
+    comments: []
+  - id: x.dictation.xingqi
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.xingqi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xing1 qi1, hanzi: 星期, pinyin: xīngqī, meaning: semana; día de la semana}
+    comments: []
+  - id: x.produce.xingqi
+    added: 2026-10-07
+    lang: es
+    type: produce
+    targets: [w.xingqi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «semana; día de la semana»? Escribe el pinyin.'}
+    answer: {typed: xing1 qi1, hanzi: 星期, pinyin: xīngqī, meaning: semana; día de la semana}
+    comments: []
+  - id: x.read.xingqi
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.xingqi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 星期}
+    answer: {hanzi: 星期, pinyin: xīngqī, meaning: semana; día de la semana}
+    comments: []
+  - id: x.dictation.xingqitian
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.xingqitian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xing1 qi1 tian1, hanzi: 星期天, pinyin: xīngqītiān, meaning: domingo}
+    comments: []
+  - id: x.produce.xingqitian
+    added: 2026-10-07
+    lang: es
+    type: produce
+    targets: [w.xingqitian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «domingo»? Escribe el pinyin.'}
+    answer: {typed: xing1 qi1 tian1, hanzi: 星期天, pinyin: xīngqītiān, meaning: domingo}
+    comments: []
+  - id: x.read.xingqitian
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.xingqitian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 星期天}
+    answer: {hanzi: 星期天, pinyin: xīngqītiān, meaning: domingo}
+    comments: []
+  - id: x.dictation.shengri
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.shengri]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: sheng1 ri4, hanzi: 生日, pinyin: shēngrì, meaning: cumpleaños}
+    comments: []
+  - id: x.produce.shengri
+    added: 2026-10-07
+    lang: es
+    type: produce
+    targets: [w.shengri]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «cumpleaños»? Escribe el pinyin.'}
+    answer: {typed: sheng1 ri4, hanzi: 生日, pinyin: shēngrì, meaning: cumpleaños}
+    comments: []
+  - id: x.read.shengri
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.shengri]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 生日}
+    answer: {hanzi: 生日, pinyin: shēngrì, meaning: cumpleaños}
+    comments: []
+  - id: x.dictation.ri.day
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.ri.day]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ri4, hanzi: 日, pinyin: rì, meaning: día (en fechas escritas); sol}
+    comments: []
+  - id: x.read.ri.day
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.ri.day]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 日}
+    answer: {hanzi: 日, pinyin: rì, meaning: día (en fechas escritas); sol}
+    comments: []
+  - id: x.listen.jintian-ji-yue-ji-hao
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.jintian-ji-yue-ji-hao
+    targets: [s.jintian-ji-yue-ji-hao]
+    context: [w.jintian, w.ji, w.yue.month, w.hao.date]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Qué día es hoy?'}
+    comments: []
+  - id: x.produce.jintian-ji-yue-ji-hao
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.jintian-ji-yue-ji-hao
+    targets: [s.jintian-ji-yue-ji-hao]
+    context: [w.jintian, w.ji, w.yue.month, w.hao.date]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué día es hoy?»'}
+    answer: {meaning: '¿Qué día es hoy?'}
+    comments: []
+  - id: x.listen.jintian-shiyue-bahao
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.jintian-shiyue-bahao
+    targets: [s.jintian-shiyue-bahao]
+    context: [w.jintian, w.num.shi, w.yue.month, w.ba, w.hao.date]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Hoy es 8 de octubre.}
+    comments: []
+  - id: x.produce.jintian-shiyue-bahao
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.jintian-shiyue-bahao
+    targets: [s.jintian-shiyue-bahao]
+    context: [w.jintian, w.num.shi, w.yue.month, w.ba, w.hao.date]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hoy es 8 de octubre.»'}
+    answer: {meaning: Hoy es 8 de octubre.}
+    comments: []
+  - id: x.listen.jintian-xingqi-ji
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.jintian-xingqi-ji
+    targets: [s.jintian-xingqi-ji]
+    context: [w.jintian, w.xingqi, w.ji]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Qué día de la semana es hoy?'}
+    comments: []
+  - id: x.produce.jintian-xingqi-ji
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.jintian-xingqi-ji
+    targets: [s.jintian-xingqi-ji]
+    context: [w.jintian, w.xingqi, w.ji]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué día de la semana es hoy?»'}
+    answer: {meaning: '¿Qué día de la semana es hoy?'}
+    comments: []
+  - id: x.listen.jintian-xingqisi
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.jintian-xingqisi
+    targets: [s.jintian-xingqisi]
+    context: [w.jintian, w.xingqi, w.num.si]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Hoy es jueves.}
+    comments: []
+  - id: x.produce.jintian-xingqisi
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.jintian-xingqisi
+    targets: [s.jintian-xingqisi]
+    context: [w.jintian, w.xingqi, w.num.si]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hoy es jueves.»'}
+    answer: {meaning: Hoy es jueves.}
+    comments: []
+  - id: x.listen.mingtian-xingqitian
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.mingtian-xingqitian
+    targets: [s.mingtian-xingqitian]
+    context: [w.mingtian, w.xingqitian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mañana es domingo.}
+    comments: []
+  - id: x.produce.mingtian-xingqitian
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.mingtian-xingqitian
+    targets: [s.mingtian-xingqitian]
+    context: [w.mingtian, w.xingqitian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mañana es domingo.»'}
+    answer: {meaning: Mañana es domingo.}
+    comments: []
+  - id: x.listen.jinnian-shi-2026-nian
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.jinnian-shi-2026-nian
+    targets: [s.jinnian-shi-2026-nian]
+    context: [w.jinnian, w.shi, w.num.er, w.ling, w.num.liu, w.nian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Este año es 2026.}
+    comments: []
+  - id: x.produce.jinnian-shi-2026-nian
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.jinnian-shi-2026-nian
+    targets: [s.jinnian-shi-2026-nian]
+    context: [w.jinnian, w.shi, w.num.er, w.ling, w.num.liu, w.nian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Este año es 2026.»'}
+    answer: {meaning: Este año es 2026.}
+    comments: []
+  - id: x.charsound.xing
+    added: 2026-10-07
+    lang: es
+    type: charsound
+    targets: [w.xingqi, w.xingqitian]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 星}
+    answer: {typed: xing1, hanzi: 星, pinyin: xīng, meaning: 'Sale en 星期 xīngqī «semana; día de la semana», 星期天 xīngqītiān «domingo».'}
+    comments: []
+  - id: x.charsound.qi-2
+    added: 2026-10-07
+    lang: es
+    type: charsound
+    targets: [w.xingqi, w.xingqitian]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 期}
+    answer: {typed: qi1, hanzi: 期, pinyin: qī, meaning: 'Sale en 星期 xīngqī «semana; día de la semana», 星期天 xīngqītiān «domingo».'}
+    comments: []

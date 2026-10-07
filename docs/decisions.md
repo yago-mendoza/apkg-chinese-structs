@@ -229,3 +229,7 @@ YAGO propuso asociar hanzi sueltos con su sonido, porque el mazo le hace leer mu
 ### 2026-10-06 · Sin app de revisión: solo la historia
 
 La app de revisión del mismo día se quitó. Aquí siempre edita el agente y YAGO no aprueba nada: su opinión llega por la bandeja, así que un visto bueno por tarjeta, los pedidos y el aviso de por revisar duplicaban lo que ya hace el lote. Se queda lo que sí aporta, la historia de cada elemento por lote, escrita en `records/history.json` al cerrar cada lote, para poder ver si un lote se ensaña con unas pocas tarjetas o crea demasiado a partir de una entrada.
+
+### 2026-10-07 · Las expresiones, palabra a palabra
+
+YAGO pidió entender las expresiones hechas a través de las palabras que las forman, con su traducción literal, y no solo de memoria. Ahora toda expresión lleva una línea «Palabra a palabra», y `check` avisa si falta. Vive en: `docs/goal.md` («Cómo se explica un carácter»), `anki.py` (`validate`).

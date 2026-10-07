@@ -20,6 +20,12 @@
 - ✅🃏 今天 jīntiān [tɕin˥ tʰjɛn˥] · hoy · _sustantivo_
 - ✅🃏 今年 jīnnián [tɕin˥ njɛn˧˥] · este año · _sustantivo_
 - ✅🃏 明年 míngnián [miŋ˧˥ njɛn˧˥] · el año que viene · _sustantivo_
+- ✅🃏 月 yuè [ɥœ˥˩] · mes · _sustantivo_ · Los meses son número + 月: 一月 «enero», 十月 «octubre», 十二月 «diciembre». Sin nombres propios.
+- ✅🃏 号 hào [xɑʊ˥˩] · día del mes (al hablar) · _clasificador_ · La fecha va de lo grande a lo pequeño: 十月八号 «8 de octubre». Por escrito se usa 日 rì; al hablar, 号.
+- ✅🃏 星期 xīngqī [ɕiŋ˥ tɕʰi˥] · semana; día de la semana · _sustantivo_ · Los días son 星期 + número: 星期一 «lunes» … 星期六 «sábado». El domingo no lleva número: 星期天, o 星期日 por escrito.
+- ✅🃏 星期天 xīngqītiān [ɕiŋ˥ tɕʰi˥ tʰjɛn˥] · domingo · _sustantivo_
+- ✅🃏 生日 shēngrì [ʂɤŋ˥ ʐɨ˥˩] · cumpleaños · _sustantivo_ · 生 «nacer» + 日 «día»: el día en que naciste.
+- ✅🃏 日 rì [ʐɨ˥˩] · día (en fechas escritas); sol · _sustantivo_ · Por escrito, 10月8日; al hablar, 十月八号.
 
 ## 上 / 中 / 下 + 午
 
@@ -50,3 +56,9 @@ Con 午 «mediodía» se forman las tres del centro (上 antes, 中 en, 下 desp
 - ✅🃏 今年是马年。 · jīnnián shì mǎ nián · Este año es el del caballo.
 - ✅🃏 今天很冷。 · jīntiān hěn lěng · Hoy hace frío.
 - ✅🃏 明年我去中国。 · míngnián wǒ qù Zhōngguó · El año que viene voy a China.
+- ✅🃏 今天几月几号？ · jīntiān jǐ yuè jǐ hào · ¿Qué día es hoy?
+- ✅🃏 今天十月八号。 · jīntiān shí yuè bā hào · Hoy es 8 de octubre.
+- ✅🃏 今天星期几？ · jīntiān xīngqī jǐ · ¿Qué día de la semana es hoy?
+- ✅🃏 今天星期四。 · jīntiān xīngqī sì · Hoy es jueves.
+- ✅🃏 明天星期天。 · míngtiān xīngqītiān · Mañana es domingo.
+- ✅🃏 今年是二零二六年。 · jīnnián shì èr líng èr liù nián · Este año es 2026.

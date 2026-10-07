@@ -269,7 +269,8 @@ entries:
     level: 4
     level_reason: 'fórmula de respeto para personas muy mayores; 寿 «larga vida» es de nivel alto'
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 您 «usted» + 高 «alto» + 寿 «años de vida»: «sus muchos años».'}
   - id: w.nianqing
     use: say
     role: content
@@ -359,4 +360,122 @@ entries:
       - {ref: w.ji, cue: 'jǐ, baja y sube: cuántos'}
       - {ref: w.ji.chicken, cue: 'jī, alto y plano: gallo'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.di.ordinal
+    use: say
+    role: function
+    kind: word
+    hanzi: 第
+    pinyin: 'dì'
+    meaning: {es: 'prefijo de los ordinales', en: 'ordinal prefix'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: '第 + número = ordinal: 第一 «primero», 第二 «segundo», 第三天 «el tercer día». Con ordinales siempre 二, nunca 两.'}
+  - id: w.yi.hundredmillion
+    use: hear
+    role: content
+    kind: word
+    hanzi: 亿
+    pinyin: 'yì'
+    meaning: {es: 'cien millones', en: 'hundred million'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Después de 万 viene 亿: 一亿 son cien millones y 十四亿, mil cuatrocientos millones (la población de China). 十万 «cien mil», 百万 «un millón».'}
+  - id: w.zhi.cl
+    use: say
+    role: function
+    kind: word
+    hanzi: 只
+    pinyin: 'zhī'
+    meaning: {es: 'clasificador de animales; uno de un par', en: 'measure word for animals'}
+    connection: {kind: sound, with: [识], text: '只 zhī da el sonido a 识 shi, el de 认识.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: '两只猫 «dos gatos». Con otra lectura, zhǐ, es «solo»: 只有 «solo hay».'}
+  - id: w.zhang.cl
+    use: say
+    role: function
+    kind: word
+    hanzi: 张
+    pinyin: 'zhāng'
+    meaning: {es: 'clasificador de cosas planas (papel, mesas, billetes)', en: 'measure word for flat things'}
+    connection: {kind: sound, with: [长], text: '长 cháng da el sonido a 张 zhāng; 弓 «arco» a la izquierda.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: '一张纸 «una hoja», 一张桌子 «una mesa». También es un apellido muy común: 张阿姨.'}
+  - id: w.bei.cl
+    use: say
+    role: function
+    kind: word
+    hanzi: 杯
+    pinyin: 'bēi'
+    meaning: {es: 'vaso de, taza de (clasificador)', en: 'cup of'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: '一杯茶 «una taza de té», 两杯水 «dos vasos de agua». El vaso como objeto es 杯子.'}
+  - id: w.jian.cl
+    use: say
+    role: function
+    kind: word
+    hanzi: 件
+    pinyin: 'jiàn'
+    meaning: {es: 'clasificador de ropa y de asuntos', en: 'measure word for clothes'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: '一件衣服 «una prenda». También para asuntos: 一件事 «una cosa, un asunto».'}
+  - id: g.classifiers
+    kind: group
+    basis: set
+    title: 'Clasificadores básicos'
+    explanation: 'Número + clasificador + cosa: el clasificador depende de la forma o del tipo de cosa.'
+    members:
+      - {ref: w.ge, cue: '个: el general, y personas (一个人)'}
+      - {ref: w.ben.book, cue: '本: libros (一本书)'}
+      - {ref: w.bei.cl, cue: '杯: lo que se bebe en vaso o taza (一杯茶)'}
+      - {ref: w.zhang.cl, cue: '张: cosas planas (一张纸)'}
+      - {ref: w.zhi.cl, cue: '只: animales (一只猫)'}
+      - {ref: w.jian.cl, cue: '件: ropa y asuntos (一件衣服)'}
+      - {ref: w.kuai, cue: '块: trozos y dinero (十块钱)'}
+      - {ref: w.ke, cue: '棵: árboles y plantas (一棵树)'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []
+  - id: g.hao-hao
+    kind: group
+    basis: soundalike
+    title: '好 hǎo y 号 hào'
+    explanation: '好 baja y sube; 号 cae: 十月八号.'
+    members:
+      - {ref: w.hao, cue: 'hǎo, baja y sube: bien'}
+      - {ref: w.hao.date, cue: 'hào, cae: día del mes'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []
+  - id: g.yi-yi
+    kind: group
+    basis: soundalike
+    title: '一 y 亿'
+    explanation: '一 suele decirse yì delante de otro tono (一百 yì bǎi) y entonces suena igual que 亿 yì «cien millones». El contexto decide.'
+    members:
+      - {ref: w.num.yi, cue: 'yī, o yì / yí según lo que siga: uno'}
+      - {ref: w.yi.hundredmillion, cue: 'yì, siempre: cien millones'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []
+  - id: g.zhi-zhi
+    kind: group
+    basis: soundalike
+    title: '只 zhī y 纸 zhǐ'
+    explanation: '只 alto y plano (clasificador); 纸 baja y sube (papel).'
+    members:
+      - {ref: w.zhi.cl, cue: 'zhī, alto y plano: clasificador de animales'}
+      - {ref: w.zhi.paper, cue: 'zhǐ, baja y sube: papel'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []
+  - id: g.jian-jian
+    kind: group
+    basis: homophone
+    title: '见 y 件: los dos jiàn'
+    explanation: 'Suenan igual: 见 «ver» (再见), 件 clasificador de ropa (一件衣服).'
+    members:
+      - {ref: w.jian, cue: '见: ver, encontrarse'}
+      - {ref: w.jian.cl, cue: '件: clasificador de ropa y asuntos'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
     comments: []

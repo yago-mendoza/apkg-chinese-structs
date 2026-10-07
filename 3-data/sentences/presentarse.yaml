@@ -449,3 +449,120 @@ sentences:
       - {text: 。}
     translation: {es: 'Creo que tiene unos cuarenta.', en: 'I think he''s about forty.'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.wo-shu-tu
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 属, ref: w.shu.belong, pinyin: 'shǔ'}
+      - {text: 兔, ref: w.tu, pinyin: 'tù'}
+      - {text: 。}
+    translation: {es: 'Soy conejo.', en: 'I was born in the year of the rabbit.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.wo-1999-nian-chusheng
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yī'}
+      - {text: 九, ref: w.num.jiu, pinyin: 'jiǔ'}
+      - {text: 九, ref: w.num.jiu, pinyin: 'jiǔ'}
+      - {text: 九, ref: w.num.jiu, pinyin: 'jiǔ'}
+      - {text: 年, ref: w.nian, pinyin: 'nián'}
+      - {text: 出生, ref: w.chusheng, pinyin: 'chūshēng'}
+      - {text: 。}
+    translation: {es: 'Nací en 1999.', en: 'I was born in 1999.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.wo-ershiliu-sui
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 六, ref: w.num.liu, pinyin: 'liù'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 。}
+    translation: {es: 'Tengo veintiséis años.', en: 'I''m twenty-six.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.wo-chusheng-shu-tu-ershiliu
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yī'}
+      - {text: 九, ref: w.num.jiu, pinyin: 'jiǔ'}
+      - {text: 九, ref: w.num.jiu, pinyin: 'jiǔ'}
+      - {text: 九, ref: w.num.jiu, pinyin: 'jiǔ'}
+      - {text: 年, ref: w.nian, pinyin: 'nián'}
+      - {text: 出生, ref: w.chusheng, pinyin: 'chūshēng'}
+      - {text: ，}
+      - {text: 属, ref: w.shu.belong, pinyin: 'shǔ'}
+      - {text: 兔, ref: w.tu, pinyin: 'tù'}
+      - {text: ，}
+      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 六, ref: w.num.liu, pinyin: 'liù'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 。}
+    translation: {es: 'Nací en 1999, soy conejo y este año cumplo veintiséis.', en: 'I was born in 1999, I''m a rabbit, and I''m twenty-six this year.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.ta-jinnian-duoda
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
+      - {text: 多大, ref: w.duoda, pinyin: 'duō dà'}
+      - {text: ？}
+    translation: {es: '¿Cuántos años tiene (él) este año?', en: 'How old is he this year?'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.ni-baba-duoda-nianji-le
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 爸爸, ref: w.baba, pinyin: 'bàba'}
+      - {text: 多大, ref: w.duoda, pinyin: 'duō dà'}
+      - {text: 年纪, ref: w.nianji, pinyin: 'niánjì'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: ？}
+    translation: {es: '¿Cuántos años tiene tu padre?', en: 'How old is your father?'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.wo-mama-wushiwu-sui
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 妈妈, ref: w.mama, pinyin: 'māma'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 。}
+    translation: {es: 'Mi madre tiene cincuenta y cinco.', en: 'My mother is fifty-five.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.ni-de-shengri-shi-ji-yue-ji-hao
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 生日, ref: w.shengri, pinyin: 'shēngrì'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 几, ref: w.ji, pinyin: 'jǐ'}
+      - {text: 月, ref: w.yue.month, pinyin: 'yuè'}
+      - {text: 几, ref: w.ji, pinyin: 'jǐ'}
+      - {text: 号, ref: w.hao.date, pinyin: 'hào'}
+      - {text: ？}
+    translation: {es: '¿Cuándo es tu cumpleaños?', en: 'When is your birthday?'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.wo-de-shengri-shi-shiyiyue-shiyihao
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 生日, ref: w.shengri, pinyin: 'shēngrì'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yī'}
+      - {text: 月, ref: w.yue.month, pinyin: 'yuè'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yī'}
+      - {text: 号, ref: w.hao.date, pinyin: 'hào'}
+      - {text: 。}
+    translation: {es: 'Mi cumpleaños es el 11 de noviembre.', en: 'My birthday is November 11th.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}

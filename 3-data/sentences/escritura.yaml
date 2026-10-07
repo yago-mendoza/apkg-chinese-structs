@@ -1,0 +1,32 @@
+# Frases · Caracteres y escritura. Esquema: 3-data/README.md
+
+sentences:
+  - id: s.wo-xie-hanzi
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 写, ref: w.xie, pinyin: 'xiě'}
+      - {text: 汉字, ref: w.hanzi, pinyin: 'hànzì'}
+      - {text: 。}
+    translation: {es: 'Escribo caracteres chinos.', en: 'I write Chinese characters.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.wo-lianxi-pinyin
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 练习, ref: w.lianxi, pinyin: 'liànxí'}
+      - {text: 拼音, ref: w.pinyin, pinyin: 'pīnyīn'}
+      - {text: 。}
+    translation: {es: 'Practico pinyin.', en: 'I practise pinyin.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.zhege-zi-zenme-shuo
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 字, ref: w.zi.char, pinyin: 'zì'}
+      - {text: 怎么, ref: w.zenme, pinyin: 'zěnme'}
+      - {text: 说, ref: w.shuo, pinyin: 'shuō'}
+      - {text: ？}
+    translation: {es: '¿Cómo se dice este carácter?', en: 'How do you say this character?'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}

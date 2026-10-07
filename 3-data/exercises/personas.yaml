@@ -863,3 +863,31 @@ exercises:
     answer: {typed: peng2, hanzi: 朋, pinyin: péng, meaning: 'Sale en 朋友 péngyou «amigo, amiga», 小朋友 xiǎopéngyǒu «niño, niña
         (al hablarle)».'}
     comments: []
+  - id: x.nuance.sheng-tone
+    added: 2026-10-07
+    lang: es
+    type: nuance
+    targets: [w.yisheng, w.xuesheng, w.xiansheng]
+    skills: [comprehension, discrimination]
+    prompt: {text: '医生, 学生 y 先生: ¿el 生 lleva tono?'}
+    answer: {meaning: 'Depende de cada palabra, no del carácter: 医生 yīshēng lo mantiene; 先生 xiānsheng lo pierde, y 学生 se oye a menudo xuésheng, átono.'}
+    comments: []
+  - id: x.contrast.yisheng
+    added: 2026-10-07
+    lang: es
+    type: contrast
+    group: g.yi-guo
+    targets: [w.yisheng]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es yīshēng, «médico, médica»?'}
+    answer: {hanzi: 医生, pinyin: yīshēng, meaning: 'médico, médica'}
+    comments: []
+  - id: x.charsound.fu
+    added: 2026-10-07
+    lang: es
+    type: charsound
+    targets: [w.fuwuyuan, w.yifu]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 服}
+    answer: {typed: fu2, hanzi: 服, pinyin: fú, meaning: 'Sale en 服务员 fúwùyuán «camarero, camarera», 衣服 yīfu «ropa».'}
+    comments: []

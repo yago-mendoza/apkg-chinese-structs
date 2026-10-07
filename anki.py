@@ -2038,6 +2038,11 @@ def validate(entries, sentences, exercises, require_audio=True):
         errors.append(f"{ch}: sale en varias palabras y le falta su tarjeta de sonido del hanzi (ver `scaffold`)")
     for e in osmosis_gaps(entries, sentences):
         warnings.append(f"{e['id']} ({e['hanzi']}): use {use_label(e)} sin ninguna frase que la contenga (ósmosis)")
+    # Una expresión hecha se entiende por sus palabras (YAGO, 2026-10-07): cada una lleva su «Palabra a palabra».
+    for e in entries:
+        if (e.get("kind") == "expression" and len(e.get("hanzi") or "") > 1 and e.get("use") not in ("drop", "context")
+                and not any((c.get("text") or "").startswith("Palabra a palabra:") for c in e.get("comments", []))):
+            warnings.append(f"{e['id']} ({e['hanzi']}): expresión sin «Palabra a palabra: …» (qué aporta cada palabra)")
     # El porqué de cada carácter (3-data/hanzi.yaml): todo hanzi del mazo lo tiene, y no sobra ninguno.
     notes, _ = load_hanzi_notes()
     if notes:

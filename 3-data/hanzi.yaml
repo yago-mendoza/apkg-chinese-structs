@@ -2435,6 +2435,114 @@ characters:
       es: 'Pictograma: un ratón, con los dientes arriba (parecen 臼) y abajo el cuerpo, las patas y la cola.'
       en: 'Pictograph: a mouse, teeth on top (they look like 臼) and body, paws and tail below.'
     confidence: high
+  亿:
+    gloss: {es: 'cien millones', en: 'hundred million'}
+    origin:
+      es: 'Fonético-semántico: 亻 «persona» da el sentido, una cantidad enorme de gente, y 乙 (yǐ) el sonido: parecido, cambia el tono. La forma tradicional es 億.'
+      en: 'Phonetic-semantic: 亻 (person) gives the meaning, a huge number of people, and 乙 (yǐ) the sound: similar, only the tone changes. Traditional: 億.'
+    traditional: 億
+    confidence: high
+  写:
+    gloss: {es: 'escribir', en: 'to write'}
+    origin:
+      es: 'Fonético-semántico en el tradicional 寫: 宀 «casa» da el sentido original, colocar algo dentro, y 舄 (xì) el sonido. «Escribir» es un sentido posterior; el simplificado lo abrevió en 冖 y 与. Se discute el detalle.'
+      en: 'Phonetic-semantic in the traditional 寫: 宀 (house) gives the old meaning, placing something inside, and 舄 (xì) the sound. To write is a later sense; simplification shortened it to 冖 and 与. The details are disputed.'
+    memory:
+      es: 'Una tapa 冖 y debajo 与, un pincel que se desliza haciendo un gancho: escribir.'
+      en: 'A cover 冖 with 与 below, a brush sliding into a hook: to write.'
+    confidence: medium
+  句:
+    gloss: {es: 'frase', en: 'sentence'}
+    origin:
+      es: 'Ideograma compuesto según la explicación clásica: 口 «boca» envuelto por 勹, algo curvado que lo cierra: las palabras dichas que se cierran en una frase. Se discute.'
+      en: 'Compound ideograph in the classical reading: 口 (mouth) wrapped by 勹, a curve that closes it: spoken words closed into a sentence. Disputed.'
+    memory:
+      es: 'Una boca 口 dentro de un gancho 勹: lo que dices, envuelto en una frase.'
+      en: 'A mouth 口 inside a hook 勹: what you say, wrapped into a sentence.'
+    confidence: medium
+  只:
+    gloss: {es: 'clasificador de animales; (zhǐ) solo', en: 'measure word for animals; (zhǐ) only'}
+    origin:
+      es: 'Ideograma en el tradicional 隻: una mano 又 que sujeta un pájaro 隹, un solo pájaro; de ahí el clasificador de animales. La forma 只 era otro carácter, «solo», con el que el simplificado lo juntó.'
+      en: 'Ideograph in the traditional 隻: a hand 又 holding one bird 隹; hence the measure word for animals. The form 只 was another character, only, merged with it in simplification.'
+    traditional: 隻
+    memory:
+      es: 'Una boca 口 sobre dos patitas 八: un animalito.'
+      en: 'A mouth 口 on two little legs 八: a small animal.'
+    confidence: high
+  张:
+    gloss: {es: 'clasificador de cosas planas; tensar; apellido Zhang', en: 'measure word for flat things; to stretch; surname'}
+    origin:
+      es: 'Fonético-semántico: 弓 «arco» da el sentido, tensar el arco, y 长 (cháng) el sonido: parecido, cambia la inicial. De lo que se extiende plano viene el clasificador.'
+      en: 'Phonetic-semantic: 弓 (bow) gives the meaning, drawing a bow, and 长 (cháng) the sound: similar, the initial changes. From things stretched flat comes the measure word.'
+    traditional: 張
+    confidence: high
+  拼:
+    gloss: {es: 'juntar, unir', en: 'to put together'}
+    origin:
+      es: 'Fonético-semántico: 扌 «mano» da el sentido, juntar piezas con la mano, y 并 (bìng) el sonido, hoy lejano.'
+      en: 'Phonetic-semantic: 扌 (hand) gives the meaning, putting pieces together by hand, and 并 (bìng) the sound, now distant.'
+    confidence: high
+  日:
+    gloss: {es: 'sol; día', en: 'sun; day'}
+    origin:
+      es: 'Pictograma: el sol, un círculo con un punto en medio que con el tiempo se hizo cuadrado. De «sol» viene «día».'
+      en: 'Pictograph: the sun, a circle with a dot in the middle that became square over time. From sun comes day.'
+    confidence: high
+  星:
+    gloss: {es: 'estrella', en: 'star'}
+    origin:
+      es: 'Fonético-semántico: arriba 日, que en su origen eran varios soles pequeños, las estrellas; debajo 生 (shēng) da el sonido: parecido, cambia la inicial.'
+      en: 'Phonetic-semantic: 日 on top, originally several little suns, the stars; below, 生 (shēng) gives the sound: similar, the initial changes.'
+    confidence: high
+  期:
+    gloss: {es: 'periodo; plazo', en: 'period, term'}
+    origin:
+      es: 'Fonético-semántico: 月 «luna» da el sentido, un periodo que se cuenta por lunas, y 其 (qí) el sonido: parecido, cambia el tono.'
+      en: 'Phonetic-semantic: 月 (moon) gives the meaning, a period counted by moons, and 其 (qí) the sound: similar, only the tone changes.'
+    confidence: high
+  汉:
+    gloss: {es: 'Han; chino', en: 'Han; Chinese'}
+    origin:
+      es: 'Fonético-semántico en el tradicional 漢: 氵 «agua» da el sentido, el río Han, y la derecha daba el sonido. Del río viene la dinastía Han y de ella el nombre de los chinos. El simplificado puso 又, que solo sustituye.'
+      en: 'Phonetic-semantic in the traditional 漢: 氵 (water) gives the meaning, the Han river, and the right part gave the sound. From the river comes the Han dynasty and from it the name of the Chinese. Simplification uses 又, a mere stand-in.'
+    traditional: 漢
+    memory:
+      es: 'El agua 氵 del río Han y una mano 又 que la señala: lo chino.'
+      en: 'The water 氵 of the Han river and a hand 又 pointing at it: Chinese.'
+    confidence: high
+  第:
+    gloss: {es: 'prefijo de los ordinales', en: 'ordinal prefix'}
+    origin:
+      es: 'Fonético-semántico: ⺮ «bambú» da el sentido, las tiras de bambú atadas en orden, y 弟 (dì) el sonido: suena igual.'
+      en: 'Phonetic-semantic: ⺮ (bamboo) gives the meaning, bamboo strips bound in order, and 弟 (dì) the sound: identical.'
+    confidence: high
+  练:
+    gloss: {es: 'practicar; entrenar', en: 'to practise'}
+    origin:
+      es: 'Fonético-semántico en el tradicional 練: 纟 «hilo, seda» da el sentido original, cocer la seda para refinarla, y 柬 (jiǎn) el sonido. De refinar viene practicar.'
+      en: 'Phonetic-semantic in the traditional 練: 纟 (silk thread) gives the old meaning, boiling silk to refine it, and 柬 (jiǎn) the sound. From refining comes practising.'
+    traditional: 練
+    confidence: high
+  肖:
+    gloss: {es: 'parecerse; (en 生肖) signo', en: 'to resemble; zodiac (in 生肖)'}
+    origin:
+      es: 'Fonético-semántico: ⺼ «carne» da el sentido, parecerse en el cuerpo, y arriba ⺌, que es 小 (xiǎo), el sonido: parecido, cambia el tono.'
+      en: 'Phonetic-semantic: ⺼ (flesh) gives the meaning, resembling in body, and ⺌ above, that is 小 (xiǎo), the sound: similar, only the tone changes.'
+    confidence: high
+  衣:
+    gloss: {es: 'ropa', en: 'clothing'}
+    origin:
+      es: 'Pictograma: una prenda vista de frente, con el cuello arriba y las mangas y los faldones abajo.'
+      en: 'Pictograph: a garment seen from the front, with the collar on top and sleeves and skirts below.'
+    confidence: high
+  词:
+    gloss: {es: 'palabra', en: 'word'}
+    origin:
+      es: 'Fonético-semántico: 讠 «palabra, hablar» da el sentido y 司 (sī) el sonido: parecido, cambian la inicial y el tono. Tradicional: 詞.'
+      en: 'Phonetic-semantic: 讠 (speech) gives the meaning and 司 (sī) the sound: similar, initial and tone change. Traditional: 詞.'
+    traditional: 詞
+    confidence: high
 
 parts:
   亻: {es: 'persona (forma de 人 a la izquierda)', en: 'person (人 on the left)'}

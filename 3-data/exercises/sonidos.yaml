@@ -498,3 +498,23 @@ exercises:
     prompt: {text: 'Lee en voz alta y compara con el audio.', hanzi: 一个，一本，一百}
     answer: {hanzi: 一个，一本，一百, pinyin: 'yí ge, yì běn, yì bǎi', meaning: 'un, un libro, cien: yí delante de cuarto tono; yì delante de los demás'}
     comments: []
+  - id: x.speak.vowels
+    added: 2026-10-07
+    lang: es
+    type: speak
+    targets: [p.vowels]
+    refs: [p.vowels]
+    skills: [speaking, pinyin]
+    prompt: {text: 'Lee en voz alta y compara con el audio. Fíjate en la i, la e y la o.', hanzi: 四，是，你；的，谢，很}
+    answer: {hanzi: 四，是，你；的，谢，很, pinyin: 'sì shì nǐ de xiè hěn', meaning: 'tres i distintas (zumbido, zumbido curvado, i) y tres e distintas (o sin redondear, e, vocal neutra)'}
+    comments: []
+  - id: x.dictation.vowels
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [p.vowels]
+    refs: [p.vowels]
+    skills: [listening, pinyin]
+    prompt: {text: 'Escucha y escribe el pinyin.', audio: true}
+    answer: {typed: he1 cha2, hanzi: 喝茶, pinyin: hē chá, meaning: 'tomar té: la e de hē es una o sin redondear'}
+    comments: []

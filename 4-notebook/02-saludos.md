@@ -4,33 +4,33 @@
 
 ## Vocabulario
 
-- ✅🃏 你好 nǐ hǎo [ni˧˩˧ xɑʊ˧˩˧] · hola · _expresión_
-- ✅🃏 再见 zàijiàn [tsaɪ˥˩ tɕjɛn˥˩] · adiós · _expresión_ · Despedida general, válida en cualquier registro.
-- ✅🃏 拜拜 báibái [paɪ˧˥ paɪ˧˥] · adiós (informal, del inglés bye-bye) · _expresión_ · En la calle se dice báibái, con dos segundos tonos, imitando el inglés, y así lo dice el audio; los diccionarios lo recogen como bàibài, con el cuarto tono de 拜 «saludar con reverencia».
+- ✅🃏 你好 nǐ hǎo [ni˧˩˧ xɑʊ˧˩˧] · hola · _expresión_ · Palabra a palabra: 你 «tú» + 好 «bien»: «tú, bien», un deseo más que una pregunta.
+- ✅🃏 再见 zàijiàn [tsaɪ˥˩ tɕjɛn˥˩] · adiós · _expresión_ · Palabra a palabra: 再 «otra vez» + 见 «ver»: «volver a vernos». · Despedida general, válida en cualquier registro.
+- ✅🃏 拜拜 báibái [paɪ˧˥ paɪ˧˥] · adiós (informal, del inglés bye-bye) · _expresión_ · Palabra a palabra: Imita el inglés bye-bye: 拜 «saludar con reverencia» solo presta el sonido. · En la calle se dice báibái, con dos segundos tonos, imitando el inglés, y así lo dice el audio; los diccionarios lo recogen como bàibài, con el cuarto tono de 拜 «saludar con reverencia».
 - ✅🃏 早 zǎo [tsɑʊ˧˩˧] · ¡buenos días! (informal); temprano · _expresión_ · Forma abreviada de 早上好 zǎoshang hǎo, «buenos días».
-- ✅🃏 您好 nín hǎo [nin˧˥ xɑʊ˧˩˧] · hola (con respeto) · _expresión_
-- ✅🃏 你们好 nǐmen hǎo [ni˧˩˧ mən xɑʊ˧˩˧] · hola (a un grupo) · _expresión_
-- ✅🃏 大家好 dàjiā hǎo [ta˥˩ tɕja˥ xɑʊ˧˩˧] · hola a todos · _expresión_ · Algo más formal que 你们好: sirve para abrir cuando hablas ante un grupo.
-- ✅🃏 老师好 lǎoshī hǎo [lɑʊ˧˩˧ ʂɨ˥ xɑʊ˧˩˧] · hola, profe · _expresión_
+- ✅🃏 您好 nín hǎo [nin˧˥ xɑʊ˧˩˧] · hola (con respeto) · _expresión_ · Palabra a palabra: 您 «usted» + 好 «bien».
+- ✅🃏 你们好 nǐmen hǎo [ni˧˩˧ mən xɑʊ˧˩˧] · hola (a un grupo) · _expresión_ · Palabra a palabra: 你们 «vosotros» + 好 «bien».
+- ✅🃏 大家好 dàjiā hǎo [ta˥˩ tɕja˥ xɑʊ˧˩˧] · hola a todos · _expresión_ · Palabra a palabra: 大家 «todos» + 好 «bien». · Algo más formal que 你们好: sirve para abrir cuando hablas ante un grupo.
+- ✅🃏 老师好 lǎoshī hǎo [lɑʊ˧˩˧ ʂɨ˥ xɑʊ˧˩˧] · hola, profe · _expresión_ · Palabra a palabra: 老师 «profesora» + 好 «bien»: el cargo en lugar del nombre.
 - ✅🃏 欢迎 huānyíng [xwan˥ iŋ˧˥] · bienvenido; dar la bienvenida · _verbo_ · 迎 es salir al encuentro de alguien con una sonrisa; con 欢 «alegría»: recibir con alegría.
 - ✅🃏 怎么样 zěnmeyàng [tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal?; ¿cómo? · _interrogativo_ · 你好吗？ es correcto, pero de libro; para preguntar cómo está alguien suena más natural 你怎么样？. También pide opinión: 这个怎么样？ «¿qué tal este?».
-- ✅🃏 晚安 wǎn'ān [wan˧˩˧ an˥] · buenas noches (al irse a dormir) · _expresión_ · Solo para despedirse antes de dormir. Al llegar por la noche se dice 晚上好 wǎnshang hǎo.
+- ✅🃏 晚安 wǎn'ān [wan˧˩˧ an˥] · buenas noches (al irse a dormir) · _expresión_ · Palabra a palabra: 晚 «noche» + 安 «paz»: «noche tranquila». · Solo para despedirse antes de dormir. Al llegar por la noche se dice 晚上好 wǎnshang hǎo.
 - ✅🃏 回来 huílai [xweɪ˧˥ laɪ] · volver (aquí) · _verbo_ · 回 «volver» + 来 «hacia aquí». 你回来了！ es un saludo al ver llegar a alguien de casa o del trabajo.
 - ✅🃏 啊 a [a] · partícula que suaviza o anima · _partícula_ · Al final de una pregunta o exclamación la hace más cálida: 去哪里啊？ suena más cercano que 去哪里？.
 - ✅🃏 早上 zǎoshang [tsɑʊ˧˩˧ ʂɑŋ] · la mañana (temprano) · _sustantivo_ · 早上 es la primera hora; 上午 shàngwǔ, la mañana hasta mediodía. Con 好 da el saludo 早上好, que se acorta en 早！.
-- ✅🃏 早上好 zǎoshang hǎo [tsɑʊ˧˩˧ ʂɑŋ xɑʊ˧˩˧] · buenos días · _expresión_
-- ✅🃏 下午好 xiàwǔ hǎo [ɕja˥˩ u˧˩˧ xɑʊ˧˩˧] · buenas tardes · _expresión_ · Se oye en tiendas, recepciones y al abrir una reunión. Entre amigos casi no se usa: se saluda con 你好 o con la situación.
-- ✅🃏 晚上好 wǎnshang hǎo [wan˧˩˧ ʂɑŋ xɑʊ˧˩˧] · buenas noches (al llegar) · _expresión_ · 晚上好 saluda al llegar por la noche; 晚安 wǎnān se dice al irse a dormir. Como «buenas noches» en español, pero son dos frases distintas.
-- ✅🃏 好久不见 hǎojiǔ bú jiàn [xɑʊ˧˩˧ tɕjoʊ˧˩˧ pu˧˥ tɕjɛn˥˩] · ¡cuánto tiempo (sin vernos)! · _expresión_ · Literalmente «mucho tiempo sin ver». Suele seguirle 最近怎么样？, como en 好久不见，最近怎么样？ «cuánto tiempo, ¿qué tal últimamente?».
+- ✅🃏 早上好 zǎoshang hǎo [tsɑʊ˧˩˧ ʂɑŋ xɑʊ˧˩˧] · buenos días · _expresión_ · Palabra a palabra: 早上 «primera hora» + 好 «bien».
+- ✅🃏 下午好 xiàwǔ hǎo [ɕja˥˩ u˧˩˧ xɑʊ˧˩˧] · buenas tardes · _expresión_ · Palabra a palabra: 下午 «tarde» (下 «después» + 午 «mediodía») + 好 «bien». · Se oye en tiendas, recepciones y al abrir una reunión. Entre amigos casi no se usa: se saluda con 你好 o con la situación.
+- ✅🃏 晚上好 wǎnshang hǎo [wan˧˩˧ ʂɑŋ xɑʊ˧˩˧] · buenas noches (al llegar) · _expresión_ · Palabra a palabra: 晚上 «noche» + 好 «bien». · 晚上好 saluda al llegar por la noche; 晚安 wǎnān se dice al irse a dormir. Como «buenas noches» en español, pero son dos frases distintas.
+- ✅🃏 好久不见 hǎojiǔ bú jiàn [xɑʊ˧˩˧ tɕjoʊ˧˩˧ pu˧˥ tɕjɛn˥˩] · ¡cuánto tiempo (sin vernos)! · _expresión_ · Palabra a palabra: 好久 «mucho tiempo» + 不见 «sin verse». Suele seguirle 最近怎么样？, como en 好久不见，最近怎么样？ «cuánto tiempo, ¿qué tal últimamente?».
 - ✅🃏 最近 zuìjìn [tsweɪ˥˩ tɕin˥˩] · últimamente, estos días · _sustantivo_
 - ✅🃏 忙 máng [mɑŋ˧˥] · ocupado, atareado · _verbo_
 - ✅🃏 还 hái [xaɪ˧˥] · todavía; aún · _adverbio_ · Con otra lectura, huán, es «devolver». En 你还好吗？ es «¿sigues bien?».
-- ✅🃏 你好吗 nǐ hǎo ma [ni˧˩˧ xɑʊ˧˩˧ ma] · ¿cómo estás? · _expresión_ · Correcto, pero de libro: entre amigos suena escolar. Para algo natural, 最近怎么样？.
-- ✅🃏 最近怎么样 zuìjìn zěnmeyàng [tsweɪ˥˩ tɕin˥˩ tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal últimamente? · _expresión_ · La opción más versátil para preguntar qué tal: abarca trabajo, estudios y ánimo, y suena cercana sin ser íntima.
-- ✅🃏 你还好吗 nǐ hái hǎo ma [ni˧˩˧ xaɪ˧˥ xɑʊ˧˩˧ ma] · ¿estás bien? · _expresión_ · Da por hecho que algo va mal: alguien se ha caído, parece triste o ha tenido un problema. Como saludo sin motivo suena alarmado.
-- ✅🃏 吃饭了吗 chīfàn le ma [ʈʂʰɨ˥ fan˥˩ lɤ ma] · ¿has comido? (como saludo) · _expresión_ · No es una invitación a comer: es interesarse por ti, sobre todo entre vecinos, familia y gente mayor. Se contesta corto, 吃了，你呢？, y se sigue.
-- ✅🃏 最近忙吗 zuìjìn máng ma [tsweɪ˥˩ tɕin˥˩ mɑŋ˧˥ ma] · ¿mucho lío últimamente? · _expresión_ · En chino el interés suele ir a algo concreto (el trabajo, la comida, el cansancio) más que a un «¿cómo estás?» abstracto.
-- ✅🃏 这个怎么样 zhège zěnmeyàng [ʈʂɤ˥˩ kɤ tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal este?, ¿qué te parece? · _expresión_ · 怎么样 también pide opinión: 这个怎么样？ al enseñar algo, 明天怎么样？ al proponer un día.
+- ✅🃏 你好吗 nǐ hǎo ma [ni˧˩˧ xɑʊ˧˩˧ ma] · ¿cómo estás? · _expresión_ · Palabra a palabra: 你 «tú» + 好 «bien» + 吗 (pregunta): «¿tú, bien?». · Correcto, pero de libro: entre amigos suena escolar. Para algo natural, 最近怎么样？.
+- ✅🃏 最近怎么样 zuìjìn zěnmeyàng [tsweɪ˥˩ tɕin˥˩ tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal últimamente? · _expresión_ · Palabra a palabra: 最近 «últimamente» + 怎么样 «¿qué tal?». · La opción más versátil para preguntar qué tal: abarca trabajo, estudios y ánimo, y suena cercana sin ser íntima.
+- ✅🃏 你还好吗 nǐ hái hǎo ma [ni˧˩˧ xaɪ˧˥ xɑʊ˧˩˧ ma] · ¿estás bien? · _expresión_ · Palabra a palabra: 你 «tú» + 还 «todavía» + 好 «bien» + 吗: «¿sigues bien?». · Da por hecho que algo va mal: alguien se ha caído, parece triste o ha tenido un problema. Como saludo sin motivo suena alarmado.
+- ✅🃏 吃饭了吗 chīfàn le ma [ʈʂʰɨ˥ fan˥˩ lɤ ma] · ¿has comido? (como saludo) · _expresión_ · Palabra a palabra: 吃饭 «comer» + 了 «ya» + 吗: «¿ya has comido?». · No es una invitación a comer: es interesarse por ti, sobre todo entre vecinos, familia y gente mayor. Se contesta corto, 吃了，你呢？, y se sigue.
+- ✅🃏 最近忙吗 zuìjìn máng ma [tsweɪ˥˩ tɕin˥˩ mɑŋ˧˥ ma] · ¿mucho lío últimamente? · _expresión_ · Palabra a palabra: 最近 «últimamente» + 忙 «ocupado» + 吗: «¿ocupado últimamente?». · En chino el interés suele ir a algo concreto (el trabajo, la comida, el cansancio) más que a un «¿cómo estás?» abstracto.
+- ✅🃏 这个怎么样 zhège zěnmeyàng [ʈʂɤ˥˩ kɤ tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal este?, ¿qué te parece? · _expresión_ · Palabra a palabra: 这个 «este» + 怎么样 «¿qué tal?». · 怎么样 también pide opinión: 这个怎么样？ al enseñar algo, 明天怎么样？ al proponer un día.
 
 ## Saludos con 好
 

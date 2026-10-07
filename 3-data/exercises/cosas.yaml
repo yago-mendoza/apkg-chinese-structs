@@ -2281,3 +2281,86 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 右, pinyin: yòu, meaning: derecha}
     comments: []
+  - id: x.contrast.zhi.paper
+    added: 2026-10-07
+    lang: es
+    type: contrast
+    group: g.zhi-zhi
+    targets: [w.zhi.paper]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 纸, pinyin: zhǐ, meaning: papel}
+    comments: []
+  - id: x.dictation.zhi.paper
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.zhi.paper]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhi3, hanzi: 纸, pinyin: zhǐ, meaning: papel}
+    comments: []
+  - id: x.produce.zhi.paper
+    added: 2026-10-07
+    lang: es
+    type: produce
+    targets: [w.zhi.paper]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «papel»? Escribe el pinyin.'}
+    answer: {typed: zhi3, hanzi: 纸, pinyin: zhǐ, meaning: papel}
+    comments: []
+  - id: x.read.zhi.paper
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.zhi.paper]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 纸}
+    answer: {hanzi: 纸, pinyin: zhǐ, meaning: papel}
+    comments: []
+  - id: x.dictation.yifu
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.yifu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi1 fu5, hanzi: 衣服, pinyin: yīfu, meaning: ropa}
+    comments: []
+  - id: x.produce.yifu
+    added: 2026-10-07
+    lang: es
+    type: produce
+    targets: [w.yifu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «ropa»? Escribe el pinyin.'}
+    answer: {typed: yi1 fu5, hanzi: 衣服, pinyin: yīfu, meaning: ropa}
+    comments: []
+  - id: x.read.yifu
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.yifu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 衣服}
+    answer: {hanzi: 衣服, pinyin: yīfu, meaning: ropa}
+    comments: []
+  - id: x.tones.yifu
+    added: 2026-10-07
+    lang: es
+    type: tones
+    targets: [w.yifu]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 衣服, pinyin: yi fu}
+    answer: {typed: '15', hanzi: 衣服, pinyin: yīfu, meaning: ropa}
+    comments: []
+  - id: x.charsound.yin
+    added: 2026-10-07
+    lang: es
+    type: charsound
+    targets: [w.yinyue, w.pinyin]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 音}
+    answer: {typed: yin1, hanzi: 音, pinyin: yīn, meaning: 'Sale en 音乐 yīnyuè «música», 拼音 pīnyīn «pinyin».'}
+    comments: []

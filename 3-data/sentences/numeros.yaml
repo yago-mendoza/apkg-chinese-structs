@@ -203,3 +203,79 @@ sentences:
       - {text: 。}
     translation: {es: 'Diez mil yuanes.', en: 'Ten thousand yuan.'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.di-yi-tian
+    use: say
+    segments:
+      - {text: 第, ref: w.di.ordinal, pinyin: 'dì'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yī'}
+      - {text: 天, ref: w.tian, pinyin: 'tiān'}
+      - {text: 。}
+    translation: {es: 'El primer día.', en: 'The first day.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.ta-shi-di-er-ge
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 第, ref: w.di.ordinal, pinyin: 'dì'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 。}
+    translation: {es: 'Él es el segundo.', en: 'He''s the second one.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.liang-zhi-mao
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 两, ref: w.liang, pinyin: 'liǎng'}
+      - {text: 只, ref: w.zhi.cl, pinyin: 'zhī'}
+      - {text: 猫, ref: w.mao, pinyin: 'māo'}
+      - {text: 。}
+    translation: {es: 'Tengo dos gatos.', en: 'I have two cats.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.liang-bei-cha
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 两, ref: w.liang, pinyin: 'liǎng'}
+      - {text: 杯, ref: w.bei.cl, pinyin: 'bēi'}
+      - {text: 茶, ref: w.cha, pinyin: 'chá'}
+      - {text: 。}
+    translation: {es: 'Quiero dos tés.', en: 'I want two cups of tea.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.zhe-jian-yifu-hen-piaoliang
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 件, ref: w.jian.cl, pinyin: 'jiàn'}
+      - {text: 衣服, ref: w.yifu, pinyin: 'yīfu'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: 'piàoliang'}
+      - {text: 。}
+    translation: {es: 'Esta prenda es muy bonita.', en: 'This piece of clothing is very pretty.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.zhongguo-you-shisi-yi-ren
+    use: hear
+    segments:
+      - {text: 中国, ref: w.zhongguo, pinyin: 'Zhōngguó'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 四, ref: w.num.si, pinyin: 'sì'}
+      - {text: 亿, ref: w.yi.hundredmillion, pinyin: 'yì'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: 。}
+    translation: {es: 'China tiene mil cuatrocientos millones de habitantes.', en: 'China has 1.4 billion people.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.wo-yao-yi-zhang-zhi
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yì', sandhi: true}
+      - {text: 张, ref: w.zhang.cl, pinyin: 'zhāng'}
+      - {text: 纸, ref: w.zhi.paper, pinyin: 'zhǐ'}
+      - {text: 。}
+    translation: {es: 'Quiero una hoja de papel.', en: 'I want a sheet of paper.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}

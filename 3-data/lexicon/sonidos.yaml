@@ -102,3 +102,11 @@ entries:
     audio_text: 一个，一百
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
+  - id: p.vowels
+    use: say
+    kind: pronunciation
+    title: 'e, i y o: cuándo no suenan como en español'
+    explanation: 'i: suena i (你 nǐ, 西 xī), salvo tras z c s, donde es un zumbido sin vocal (四 sì, 字 zì), y tras zh ch sh r, el mismo zumbido con la lengua curvada (是 shì, 吃 chī). e: sola o tras consonante es una o sin redondear los labios (的 de, 喝 hē); en ie, üe y ei suena e (谢 xiè, 学 xué, 北 běi); en en y eng, una vocal neutra corta (很 hěn, 冷 lěng). o: tras b p m f suena «uo» (我 wǒ); ou suena «ou» (都 dōu); ong suena casi «ung» (中 zhōng).'
+    audio_text: 四，是，你；的，谢，很
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []

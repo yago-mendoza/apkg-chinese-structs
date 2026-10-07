@@ -62,3 +62,8 @@ Tres familias que el español junta en una sola s o ch. z c s: lengua plana tras
 
 Suelto, contando o en un número, yī (第一, 十一). Delante de un cuarto tono, yí: 一个 yí ge. Delante de los demás tonos, yì: 一本 yì běn, 一百 yì bǎi. En números de teléfono, yāo, para no confundirlo con 七 qī.
 
+
+## e, i y o: cuándo no suenan como en español
+
+i: suena i (你 nǐ, 西 xī), salvo tras z c s, donde es un zumbido sin vocal (四 sì, 字 zì), y tras zh ch sh r, el mismo zumbido con la lengua curvada (是 shì, 吃 chī). e: sola o tras consonante es una o sin redondear los labios (的 de, 喝 hē); en ie, üe y ei suena e (谢 xiè, 学 xué, 北 běi); en en y eng, una vocal neutra corta (很 hěn, 冷 lěng). o: tras b p m f suena «uo» (我 wǒ); ou suena «ou» (都 dōu); ong suena casi «ung» (中 zhōng).
+

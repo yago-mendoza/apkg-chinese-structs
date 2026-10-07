@@ -1301,3 +1301,429 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Diez mil yuanes.»'}
     answer: {meaning: Diez mil yuanes.}
     comments: []
+  - id: x.tones.num-14
+    added: 2026-10-07
+    lang: es
+    type: tones
+    targets: [w.num.shi]
+    context: [w.num.si]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '24', hanzi: 十四, pinyin: shísì, meaning: 'catorce'}
+    comments: []
+  - id: x.tones.num-40
+    added: 2026-10-07
+    lang: es
+    type: tones
+    targets: [w.num.si]
+    context: [w.num.shi]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '42', hanzi: 四十, pinyin: sìshí, meaning: 'cuarenta'}
+    comments: []
+  - id: x.tones.num-33
+    added: 2026-10-07
+    lang: es
+    type: tones
+    targets: [w.num.san, w.num.shi]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '121', hanzi: 三十三, pinyin: sānshísān, meaning: 'treinta y tres'}
+    comments: []
+  - id: x.tones.num-78
+    added: 2026-10-07
+    lang: es
+    type: tones
+    targets: [w.num.qi, w.num.shi, w.ba]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '121', hanzi: 七十八, pinyin: qīshíbā, meaning: 'setenta y ocho'}
+    comments: []
+  - id: x.tones.num-99
+    added: 2026-10-07
+    lang: es
+    type: tones
+    targets: [w.num.jiu, w.num.shi]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '323', hanzi: 九十九, pinyin: jiǔshíjiǔ, meaning: 'noventa y nueve'}
+    comments: []
+  - id: x.tones.num-26
+    added: 2026-10-07
+    lang: es
+    type: tones
+    targets: [w.num.er, w.num.shi, w.num.liu]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '424', hanzi: 二十六, pinyin: èrshíliù, meaning: 'veintiséis'}
+    comments: []
+  - id: x.tones.num-2000
+    added: 2026-10-07
+    lang: es
+    type: tones
+    targets: [w.liang, w.qian.thousand]
+    skills: [listening, tones]
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '31', hanzi: 两千, pinyin: liǎngqiān, meaning: 'dos mil'}
+    comments: []
+  - id: x.tones.num-100
+    added: 2026-10-07
+    lang: es
+    type: tones
+    targets: [w.num.yi, w.bai.hundred]
+    accept_pinyin_mismatch: '一 delante de tercer tono se dice yì (sandhi)'
+    skills: [listening, tones]
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '43', hanzi: 一百, pinyin: yìbǎi, meaning: 'cien'}
+    comments: []
+  - id: x.contrast.num.yi
+    added: 2026-10-07
+    lang: es
+    type: contrast
+    group: g.yi-yi
+    targets: [w.num.yi]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 一, pinyin: yī, meaning: uno}
+    comments: []
+  - id: x.dictation.di.ordinal
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.di.ordinal]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: di4, hanzi: 第, pinyin: dì, meaning: prefijo de los ordinales}
+    comments: []
+  - id: x.cloze.di.ordinal
+    added: 2026-10-07
+    lang: es
+    type: cloze
+    sentence: s.di-yi-tian
+    gap: w.di.ordinal
+    targets: [w.di.ordinal]
+    context: [w.num.yi, w.tian]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «El primer día.»'}
+    answer: {typed: di4, hanzi: 第, pinyin: dì, meaning: prefijo de los ordinales}
+    comments: []
+  - id: x.read.di.ordinal
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.di.ordinal]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 第}
+    answer: {hanzi: 第, pinyin: dì, meaning: prefijo de los ordinales}
+    comments: []
+  - id: x.contrast.yi.hundredmillion
+    added: 2026-10-07
+    lang: es
+    type: contrast
+    group: g.yi-yi
+    targets: [w.yi.hundredmillion]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 亿, pinyin: yì, meaning: cien millones}
+    comments: []
+  - id: x.dictation.yi.hundredmillion
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.yi.hundredmillion]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi4, hanzi: 亿, pinyin: yì, meaning: cien millones}
+    comments: []
+  - id: x.read.yi.hundredmillion
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.yi.hundredmillion]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 亿}
+    answer: {hanzi: 亿, pinyin: yì, meaning: cien millones}
+    comments: []
+  - id: x.contrast.zhi.cl
+    added: 2026-10-07
+    lang: es
+    type: contrast
+    group: g.zhi-zhi
+    targets: [w.zhi.cl]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 只, pinyin: zhī, meaning: clasificador de animales; uno de un par}
+    comments: []
+  - id: x.dictation.zhi.cl
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.zhi.cl]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhi1, hanzi: 只, pinyin: zhī, meaning: clasificador de animales; uno de un par}
+    comments: []
+  - id: x.cloze.zhi.cl
+    added: 2026-10-07
+    lang: es
+    type: cloze
+    sentence: s.liang-zhi-mao
+    gap: w.zhi.cl
+    targets: [w.zhi.cl]
+    context: [w.wo, w.you.have, w.liang, w.mao]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Tengo dos gatos.»'}
+    answer: {typed: zhi1, hanzi: 只, pinyin: zhī, meaning: clasificador de animales; uno de un par}
+    comments: []
+  - id: x.read.zhi.cl
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.zhi.cl]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 只}
+    answer: {hanzi: 只, pinyin: zhī, meaning: clasificador de animales; uno de un par}
+    comments: []
+  - id: x.dictation.zhang.cl
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.zhang.cl]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhang1, hanzi: 张, pinyin: zhāng, meaning: 'clasificador de cosas planas (papel, mesas, billetes)'}
+    comments: []
+  - id: x.cloze.zhang.cl
+    added: 2026-10-07
+    lang: es
+    type: cloze
+    sentence: s.wo-yao-yi-zhang-zhi
+    gap: w.zhang.cl
+    targets: [w.zhang.cl]
+    context: [w.wo, w.yao, w.num.yi, w.zhi.paper]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Quiero una hoja de papel.»'}
+    answer: {typed: zhang1, hanzi: 张, pinyin: zhāng, meaning: 'clasificador de cosas planas (papel, mesas, billetes)'}
+    comments: []
+  - id: x.read.zhang.cl
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.zhang.cl]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 张}
+    answer: {hanzi: 张, pinyin: zhāng, meaning: 'clasificador de cosas planas (papel, mesas, billetes)'}
+    comments: []
+  - id: x.dictation.bei.cl
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.bei.cl]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bei1, hanzi: 杯, pinyin: bēi, meaning: 'vaso de, taza de (clasificador)'}
+    comments: []
+  - id: x.cloze.bei.cl
+    added: 2026-10-07
+    lang: es
+    type: cloze
+    sentence: s.liang-bei-cha
+    gap: w.bei.cl
+    targets: [w.bei.cl]
+    context: [w.wo, w.yao, w.liang, w.cha]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Quiero dos tés.»'}
+    answer: {typed: bei1, hanzi: 杯, pinyin: bēi, meaning: 'vaso de, taza de (clasificador)'}
+    comments: []
+  - id: x.read.bei.cl
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.bei.cl]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 杯}
+    answer: {hanzi: 杯, pinyin: bēi, meaning: 'vaso de, taza de (clasificador)'}
+    comments: []
+  - id: x.contrast.jian.cl
+    added: 2026-10-07
+    lang: es
+    type: contrast
+    group: g.jian-jian
+    targets: [w.jian.cl]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es jiàn, «clasificador de ropa y de asuntos»?'}
+    answer: {hanzi: 件, pinyin: jiàn, meaning: clasificador de ropa y de asuntos}
+    comments: []
+  - id: x.dictation.jian.cl
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.jian.cl]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jian4, hanzi: 件, pinyin: jiàn, meaning: clasificador de ropa y de asuntos}
+    comments: []
+  - id: x.cloze.jian.cl
+    added: 2026-10-07
+    lang: es
+    type: cloze
+    sentence: s.zhe-jian-yifu-hen-piaoliang
+    gap: w.jian.cl
+    targets: [w.jian.cl]
+    context: [w.zhe, w.yifu, w.hen, w.piaoliang]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Esta prenda es muy bonita.»'}
+    answer: {typed: jian4, hanzi: 件, pinyin: jiàn, meaning: clasificador de ropa y de asuntos}
+    comments: []
+  - id: x.read.jian.cl
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.jian.cl]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 件}
+    answer: {hanzi: 件, pinyin: jiàn, meaning: clasificador de ropa y de asuntos}
+    comments: []
+  - id: x.listen.di-yi-tian
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.di-yi-tian
+    targets: [s.di-yi-tian]
+    context: [w.di.ordinal, w.num.yi, w.tian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: El primer día.}
+    comments: []
+  - id: x.produce.di-yi-tian
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.di-yi-tian
+    targets: [s.di-yi-tian]
+    context: [w.di.ordinal, w.num.yi, w.tian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «El primer día.»'}
+    answer: {meaning: El primer día.}
+    comments: []
+  - id: x.listen.ta-shi-di-er-ge
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.ta-shi-di-er-ge
+    targets: [s.ta-shi-di-er-ge]
+    context: [w.ta.he, w.shi, w.di.ordinal, w.num.er, w.ge]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Él es el segundo.}
+    comments: []
+  - id: x.produce.ta-shi-di-er-ge
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.ta-shi-di-er-ge
+    targets: [s.ta-shi-di-er-ge]
+    context: [w.ta.he, w.shi, w.di.ordinal, w.num.er, w.ge]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Él es el segundo.»'}
+    answer: {meaning: Él es el segundo.}
+    comments: []
+  - id: x.listen.liang-zhi-mao
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.liang-zhi-mao
+    targets: [s.liang-zhi-mao]
+    context: [w.wo, w.you.have, w.liang, w.zhi.cl, w.mao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo dos gatos.}
+    comments: []
+  - id: x.produce.liang-zhi-mao
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.liang-zhi-mao
+    targets: [s.liang-zhi-mao]
+    context: [w.wo, w.you.have, w.liang, w.zhi.cl, w.mao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo dos gatos.»'}
+    answer: {meaning: Tengo dos gatos.}
+    comments: []
+  - id: x.listen.liang-bei-cha
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.liang-bei-cha
+    targets: [s.liang-bei-cha]
+    context: [w.wo, w.yao, w.liang, w.bei.cl, w.cha]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero dos tés.}
+    comments: []
+  - id: x.produce.liang-bei-cha
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.liang-bei-cha
+    targets: [s.liang-bei-cha]
+    context: [w.wo, w.yao, w.liang, w.bei.cl, w.cha]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero dos tés.»'}
+    answer: {meaning: Quiero dos tés.}
+    comments: []
+  - id: x.listen.zhe-jian-yifu-hen-piaoliang
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.zhe-jian-yifu-hen-piaoliang
+    targets: [s.zhe-jian-yifu-hen-piaoliang]
+    context: [w.zhe, w.jian.cl, w.yifu, w.hen, w.piaoliang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Esta prenda es muy bonita.}
+    comments: []
+  - id: x.produce.zhe-jian-yifu-hen-piaoliang
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.zhe-jian-yifu-hen-piaoliang
+    targets: [s.zhe-jian-yifu-hen-piaoliang]
+    context: [w.zhe, w.jian.cl, w.yifu, w.hen, w.piaoliang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Esta prenda es muy bonita.»'}
+    answer: {meaning: Esta prenda es muy bonita.}
+    comments: []
+  - id: x.listen.zhongguo-you-shisi-yi-ren
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.zhongguo-you-shisi-yi-ren
+    targets: [s.zhongguo-you-shisi-yi-ren]
+    context: [w.zhongguo, w.you.have, w.num.shi, w.num.si, w.yi.hundredmillion, w.ren]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: China tiene mil cuatrocientos millones de habitantes.}
+    comments: []
+  - id: x.listen.wo-yao-yi-zhang-zhi
+    added: 2026-10-07
+    lang: es
+    type: listen
+    sentence: s.wo-yao-yi-zhang-zhi
+    targets: [s.wo-yao-yi-zhang-zhi]
+    context: [w.wo, w.yao, w.num.yi, w.zhang.cl, w.zhi.paper]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero una hoja de papel.}
+    comments: []
+  - id: x.produce.wo-yao-yi-zhang-zhi
+    added: 2026-10-07
+    lang: es
+    type: produce
+    sentence: s.wo-yao-yi-zhang-zhi
+    targets: [s.wo-yao-yi-zhang-zhi]
+    context: [w.wo, w.yao, w.num.yi, w.zhang.cl, w.zhi.paper]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero una hoja de papel.»'}
+    answer: {meaning: Quiero una hoja de papel.}
+    comments: []

@@ -161,3 +161,10 @@ En la 1-2 llegasteis hasta la diapositiva 11 (阿姨). El resto de la lección e
 **Tu método.** Tus deberes muestran dónde fallas: 也 frente a 都 con dos sujetos, la negación 不 y el 吗 final. Los tonos de 不 los tienes. Las anotaciones de clase que traes son muy útiles. Pásalas como apunte suelto o en `homework-feedback.md`, no dentro del review: así no se mezclan con tus respuestas.
 
 **Consejo.** Con dos personas o más, piensa «los dos» y usa 都 (爸爸和妈妈都很高); 也 es solo «también», cuando comparas con algo ya dicho.
+
+## Cambios posteriores
+
+### 2026-10-07 · Corrección: la clase fue el martes
+
+El 6 de octubre fue martes, no lunes como dice el origen de este log. Corregido en `2-digests/state.md` del lote 007.
+

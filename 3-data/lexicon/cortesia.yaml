@@ -14,6 +14,7 @@ entries:
     relations: []
     accept_pinyin_mismatch: segunda sílaba en tono neutro en el habla estándar
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 谢 «agradecer», repetido: la repetición lo hace más amable.'}
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'La segunda 谢 se dice en tono neutro, corta y sin contorno propio.'}
   - id: w.qing
     use: say
@@ -49,6 +50,7 @@ entries:
     level_reason: respuesta básica; 好 y 的 son HSK 1
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 好 «bien» + 的: «bien, vale».'}
       - {kind: note, private: false, date: 2026-09-25, text: 'Expresa acuerdo o conformidad: «vale», «muy bien», «de acuerdo».', original: 'subjetivo, muy bien, gusto'}
   - id: e.qingwen
     use: say
@@ -59,7 +61,7 @@ entries:
     meaning: {es: disculpe (para preguntar), en: excuse me (before asking)}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-09-27', text: '请 «por favor» + 问 wèn «preguntar»: la forma cortés de abrir una pregunta a alguien.'}
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 'Palabra a palabra: 请 «por favor» + 问 wèn «preguntar»: la forma cortés de abrir una pregunta a alguien.'}
   - id: e.qingjin
     use: say
     role: content
@@ -68,7 +70,8 @@ entries:
     pinyin: qǐng jìn
     meaning: {es: 'pase, por favor', en: 'come in, please'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 请 «por favor» + 进 «entrar».'}
   - id: e.qingzuo
     use: say
     role: content
@@ -77,7 +80,8 @@ entries:
     pinyin: qǐng zuò
     meaning: {es: 'siéntese, por favor', en: please sit down}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 请 «por favor» + 坐 «sentarse».'}
   - id: e.shide
     use: say
     role: content
@@ -89,6 +93,7 @@ entries:
     level_reason: respuesta afirmativa de cada día; 是 y 的 son HSK 1
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 是 «ser» + 的: «así es».'}
       - {kind: note, private: false, date: '2026-09-29', text: 'Sirve para confirmar, igual que 对 y 好的.', original: 'shi de = lo es  dui = exacte  (both are godo to confirm anthgin¿?)'}
   - id: w.en
     use: say
@@ -138,6 +143,7 @@ entries:
     accept_pinyin_mismatch: 'la última sílaba es átona: yìsi'
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 不 «no» + 好意思 «tener cara para algo»: «no tengo cara», qué apuro.'}
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Para una molestia pequeña: llegar tarde, pasar, interrumpir, pedir algo. Es muy cotidiano, también entre jóvenes, y no suena formal.'}
   - id: w.duibuqi
     use: say
@@ -173,7 +179,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'La respuesta a 对不起 o a 不好意思: «no pasa nada». Literalmente, «no hay relación».'}
-      - {kind: linguistic, private: false, date: '2026-10-06', text: '没 «no hay» + 关系 [HSK 3] «relación»: no tiene que ver, no importa. Para quitar importancia a algo que ha pasado; para aceptar algo que te piden, 没问题.'}
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Palabra a palabra: 没 «no hay» + 关系 [HSK 3] «relación»: no tiene que ver, no importa. Para quitar importancia a algo que ha pasado; para aceptar algo que te piden, 没问题.'}
   - id: e.bukeqi
     use: say
     role: content
@@ -185,7 +191,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'La respuesta a 谢谢. Literalmente, «no hagas cumplidos».'}
-      - {kind: linguistic, private: false, date: '2026-10-06', text: '客气 [HSK 5] es tener cumplidos, como un invitado 客; 不客气, «no hace falta cumplido». Su 气 qi no es el 起 qǐ de 对不起: son caracteres distintos.'}
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Palabra a palabra: 客气 [HSK 5] es tener cumplidos, como un invitado 客; 不客气, «no hace falta cumplido». Su 气 qi no es el 起 qǐ de 对不起: son caracteres distintos.'}
   - id: w.bang
     use: say
     role: content
@@ -237,7 +243,8 @@ entries:
     level: 2
     level_reason: elogio coloquial muy frecuente; 你 y 真 son HSK 1, 棒 suelto es más alto pero aquí va fijo
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 你 «tú» + 真 «de verdad» + 棒 «estupendo»: «eres estupendo de verdad».'}
   - id: e.nalinali
     use: drop
     use_reason: 'tradicional: YAGO quiere lo formal de trabajo o lo coloquial de la calle, no lo tradicional (review del lote 004). Hoy se contesta a un elogio con 谢谢.'
@@ -264,6 +271,7 @@ entries:
     level_reason: frase de clase desde el primer día; 再 y 说 son HSK 1 y 遍 solo aparece dentro de esta fórmula
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 再 «otra vez» + 说 «decir» + 一遍 «una vez entera»: «dilo otra vez entero».'}
       - {kind: teacher, private: false, date: '2026-10-02', text: 'Lo que se dice en clase para pedir que repitan. Para leer otra vez, 再读一遍 zài dú yí biàn.'}
   - id: w.zhidao
     use: say
@@ -286,7 +294,8 @@ entries:
     level: 1
     level_reason: '真, 的 y 吗 son HSK 1; reacción de todos los días'
     source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 真的 «de verdad» + 吗: «¿de verdad?».'}
   - id: w.wang.forget
     use: say
     role: content
@@ -318,6 +327,7 @@ entries:
     level_reason: '对 y 的 son HSK 1'
     source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 对 «correcto» + 的: «eso es».'}
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Como 对, algo más enfático y coloquial.'}
   - id: e.meiwenti
     use: say
@@ -331,7 +341,7 @@ entries:
     connection: {kind: sound, with: [是], text: '是 shì da el sonido, de lejos, a 题 tí; 页 «cabeza» da el sentido.'}
     source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-06', text: '没 «no hay» + 问题 «problema». Para aceptar algo que te piden; para quitar importancia a algo que ha pasado, 没关系.'}
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Palabra a palabra: 没 «no hay» + 问题 «problema». Para aceptar algo que te piden; para quitar importancia a algo que ha pasado, 没关系.'}
   - id: w.mingbai
     use: say
     role: content

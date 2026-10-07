@@ -21,7 +21,7 @@
 - ✅🃏 认识 rènshi [ʐən˥˩ ʂɨ] · conocer (a alguien) · _verbo_ · 认 «reconocer» + 识 «distinguir»: conocer a alguien, estar familiarizado con algo. · 识 aporta la idea de distinguir algo de lo demás porque se conoce.
 - ✅🃏 高兴 gāoxìng [kɑʊ˥ ɕiŋ˥˩] · contento · _adjetivo_ · Con 很 y sin 是: 我很高兴, nunca 我是高兴. Para contestar a 认识你很高兴 basta 我也很高兴.
 - ✅🃏 姓 xìng [ɕiŋ˥˩] · apellidarse; apellido · _verbo_ · Se pregunta el apellido para poder tratar a alguien de señor o señora. · 姓 xìng «apellido» + 名字 míngzi «nombre» = 姓名 xìngmíng, el nombre completo. · No lo confundas con 星 xīng «estrella» (明星 «famoso», 巨星 [HSK 7] «gran estrella»), en primer tono; 姓 cae.
-- ✅🃏 贵姓 guìxìng [kweɪ˥˩ ɕiŋ˥˩] · su apellido (forma cortés) · _expresión_ · 您贵姓？ es la forma respetuosa de 你姓什么？ Se contesta con el apellido o con el nombre completo. · 您贵姓？ es para situaciones formales, como el trabajo o los negocios. Sabiendo el apellido, se le llama con 先生 (白先生，您好) y no por el nombre completo.
+- ✅🃏 贵姓 guìxìng [kweɪ˥˩ ɕiŋ˥˩] · su apellido (forma cortés) · _expresión_ · Palabra a palabra: 贵 «valioso, honorable» + 姓 «apellido»: «su honorable apellido». · 您贵姓？ es la forma respetuosa de 你姓什么？ Se contesta con el apellido o con el nombre completo. · 您贵姓？ es para situaciones formales, como el trabajo o los negocios. Sabiendo el apellido, se le llama con 先生 (白先生，您好) y no por el nombre completo.
 - ✅🃏 姓名 xìngmíng [ɕiŋ˥˩ miŋ˧˥] · nombre completo · _sustantivo_
 - ✅🃏 门多萨 Ménduōsà [mən˧˥ twɔ˥ sa˥˩] · Mendoza (mi apellido) · _nombre propio_ · Pura transcripción del sonido: 门 «puerta», 多 «mucho» y 萨 no forman ningún significado.
 - ✅🃏 雅戈 Yǎgē [ja˧˩˧ kɤ˥] · Yago (mi nombre en chino) · _nombre propio_ · Transcripción por el sonido: 雅 «elegante» y 戈 «alabarda», sin otro significado. Solo por diversión.
@@ -37,8 +37,8 @@
 - ✅🃏 学习 xuéxí [ɕɥœ˧˥ ɕi˧˥] · estudiar, aprender · _verbo_ · 学 «aprender» + 习 «practicar». 学生 «estudiante» lleva el mismo 学.
 - ✅ 成龙 Chéng Lóng [ʈʂʰɤŋ˧˥ lʊŋ˧˥] · Jackie Chan · _nombre propio_ · Su apellido es 成 y su nombre, 龙 «dragón»: 他姓成，叫成龙.
 - ✅🃏 英国 Yīngguó [iŋ˥ kwɔ˧˥] · Reino Unido · _nombre propio_
-- ✅🃏 幸会 xìnghuì [ɕiŋ˥˩ xweɪ˥˩] · encantado (de conocerle) · _expresión_ · En una presentación formal: «您好，我是…», «您贵姓？», «我姓…，叫…» y, al final, los dos dicen «幸会！».
-- ✅🃏 出生 chūshēng [ʈʂʰu˥ ʂɤŋ˥] · nacer · _verbo_
+- ✅🃏 幸会 xìnghuì [ɕiŋ˥˩ xweɪ˥˩] · encantado (de conocerle) · _expresión_ · Palabra a palabra: 幸 «suerte» + 会 «encontrarse»: «qué suerte encontrarle». · En una presentación formal: «您好，我是…», «您贵姓？», «我姓…，叫…» y, al final, los dos dicen «幸会！».
+- ✅🃏 出生 chūshēng [ʈʂʰu˥ ʂɤŋ˥] · nacer · _verbo_ · 出 «salir» + 生 «nacer»: salir al mundo.
 - ✅🃏 属 shǔ [ʂu˧˩˧] · ser (de un signo del zodiaco) · _verbo_ · 我属马 «soy caballo»: el signo del año en que naciste. Se pregunta 你属什么？.
 - ✅🃏 猜 cāi [tsʰaɪ˥] · adivinar · _verbo_
 - ✅🃏 觉得 juéde [tɕɥœ˧˥ tɤ] · creer, parecerle a uno · _verbo_ · Para dar tu opinión: 我觉得很好 «me parece bien». 你觉得怎么样？ «¿qué te parece?».
@@ -123,3 +123,12 @@ Los dos acaban en 生 átono; empiezan distinto.
 - ✅🃏 我出生在北京。 · wǒ chūshēng zài Běijīng · Nací en Pekín.
 - ✅🃏 你猜他多大？ · nǐ cāi tā duō dà · ¿Cuántos años crees que tiene?
 - ✅🃏 我觉得他四十岁左右。 · wǒ juéde tā sì shí suì zuǒyòu · Creo que tiene unos cuarenta.
+- ✅🃏 我属兔。 · wǒ shǔ tù · Soy conejo.
+- ✅🃏 我一九九九年出生。 · wǒ yī jiǔ jiǔ jiǔ nián chūshēng · Nací en 1999.
+- ✅🃏 我二十六岁。 · wǒ èr shí liù suì · Tengo veintiséis años.
+- ✅🃏 我一九九九年出生，属兔，今年二十六岁。 · wǒ yī jiǔ jiǔ jiǔ nián chūshēng shǔ tù jīnnián èr shí liù suì · Nací en 1999, soy conejo y este año cumplo veintiséis.
+- ✅🃏 他今年多大？ · tā jīnnián duō dà · ¿Cuántos años tiene (él) este año?
+- ✅🃏 你爸爸多大年纪了？ · nǐ bàba duō dà niánjì le · ¿Cuántos años tiene tu padre?
+- ✅🃏 我妈妈五十五岁。 · wǒ māma wǔ shí wǔ suì · Mi madre tiene cincuenta y cinco.
+- ✅🃏 你的生日是几月几号？ · nǐ de shēngrì shì jǐ yuè jǐ hào · ¿Cuándo es tu cumpleaños?
+- ✅🃏 我的生日是十一月十一号。 · wǒ de shēngrì shì shí yī yuè shí yī hào · Mi cumpleaños es el 11 de noviembre.

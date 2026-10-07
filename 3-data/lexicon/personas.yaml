@@ -228,7 +228,8 @@ entries:
     pinyin: 'yīshēng'
     meaning: {es: 'médico, médica', en: 'doctor'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: '生 lleva su tono en 医生 yīshēng; en 先生 xiānsheng y, a menudo, en 学生 xuésheng se dice átono. No depende del carácter, sino de cada palabra.'}
   - id: w.fuwuyuan
     use: say
     role: content
@@ -259,3 +260,13 @@ entries:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Así se llama a un niño que no conoces: 小朋友，你几岁？.'}
+  - id: g.yi-guo
+    kind: group
+    basis: visual
+    title: '医 y 国: dos cajas'
+    explanation: 'Los dos encierran algo: 医 en una caja abierta a la derecha, 国 en un cuadro cerrado.'
+    members:
+      - {ref: w.yisheng, cue: '医 (医生): caja abierta 匸 con una flecha 矢 dentro'}
+      - {ref: w.guo, cue: '国: cuadro cerrado 囗 con 玉 «jade» dentro'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []

@@ -694,6 +694,13 @@ class Batch005(unittest.TestCase):
         _, warnings = anki.validate(self.entries, self.sentences, self.exercises, require_audio=False)
         self.assertFalse([w for w in warnings if w.startswith("x.syllable.") and "redundante" in w])
 
+    def test_expressions_explain_their_words(self):
+        bare = {"id": "e.t", "kind": "expression", "use": "say", "hanzi": "你好", "pinyin": "nǐ hǎo", "meaning": {"es": "hola"},
+                "comments": [], "theme": "saludos"}
+        _, warnings = anki.validate(self.entries + [bare], self.sentences, self.exercises, require_audio=False)
+        self.assertTrue(any(w.startswith("e.t ") and "Palabra a palabra" in w for w in warnings))
+        self.assertFalse([w for w in warnings if "Palabra a palabra" in w and not w.startswith("e.t ")])
+
     def test_hard_hanzi_have_an_image_to_remember_them(self):
         notes, _ = anki.load_hanzi_notes()
         missing = [ch for ch, n in notes.items() if anki.needs_memory(n) and not n.get("memory")]

@@ -33,7 +33,7 @@
 - ✅🃏 店 diàn [tjɛn˥˩] · tienda, local · _sustantivo_ · 广 es un tejado con una pared, un edificio abierto, y 占 zhàn da el sonido. · Dentro del edificio 广, un espacio ocupado (占 también es «ocupar»): el local.
 - ✅🃏 钱 qián [tɕʰjɛn˧˥] · dinero · _sustantivo_ · 钅 «metal» a la izquierda: el dinero era de metal. · Va sin clasificador cuando es dinero en general (这是钱, 我没有钱); al contar, con 块: 十块钱.
 - ✅🃏 多少 duōshao [twɔ˥ ʂɑʊ] · cuánto, cuántos · _interrogativo_ · 多 «mucho» + 少 «poco»: ¿cuánto? Para cantidades abiertas; para pocas, 几.
-- ✅🃏 多少钱 duōshao qián [twɔ˥ ʂɑʊ tɕʰjɛn˧˥] · ¿cuánto cuesta? · _expresión_
+- ✅🃏 多少钱 duōshao qián [twɔ˥ ʂɑʊ tɕʰjɛn˧˥] · ¿cuánto cuesta? · _expresión_ · Palabra a palabra: 多少 «cuánto» + 钱 «dinero».
 - ✅🃏 块 kuài [kʰwaɪ˥˩] · yuan (al hablar) · _clasificador_ · 块 es como se dice 元 yuán [HSK 1] al hablar: 十块钱 «diez yuanes».
 - ✅🃏 想要 xiǎngyào [ɕjɑŋ˧˩˧ jɑʊ˥˩] · querer (tener algo), desear · _verbo_ · Entre 想 y 要: 我想要这个 «me gustaría este», más suave que 我要这个 «quiero este, dame este».
 - ✅🃏 哪里 nǎlǐ [na˧˩˧ li˧˩˧] · dónde · _interrogativo_ · 哪 «qué, cuál» + 里 «dentro»: ¿en qué sitio? Se dice en toda China.

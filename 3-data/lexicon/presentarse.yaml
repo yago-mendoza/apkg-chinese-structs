@@ -193,6 +193,7 @@ entries:
     level_reason: 'fórmula cortés que se aprende con 姓 [HSK 2]; 贵 es HSK 1'
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 贵 «valioso, honorable» + 姓 «apellido»: «su honorable apellido».'}
       - {kind: teacher, private: false, date: '2026-09-29', text: 您贵姓？ es la forma respetuosa de 你姓什么？ Se contesta con el apellido o con el nombre completo., original: nin gui xing -> wo jiao bai da long}
       - {kind: teacher, private: false, date: '2026-10-01', text: '您贵姓？ es para situaciones formales, como el trabajo o los negocios. Sabiendo el apellido, se le llama con 先生 (白先生，您好) y no por el nombre completo.'}
   - id: w.xingming
@@ -403,6 +404,7 @@ entries:
     level_reason: fórmula formal de presentación, propia del trato profesional; menos frecuente que 认识你很高兴
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 幸 «suerte» + 会 «encontrarse»: «qué suerte encontrarle».'}
       - {kind: teacher, private: false, date: '2026-10-02', text: 'En una presentación formal: «您好，我是…», «您贵姓？», «我姓…，叫…» y, al final, los dos dicen «幸会！».'}
   - id: w.chusheng
     use: say
@@ -412,7 +414,8 @@ entries:
     pinyin: 'chūshēng'
     meaning: {es: 'nacer', en: 'to be born'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: '出 «salir» + 生 «nacer»: salir al mundo.'}
   - id: w.shu.belong
     use: say
     role: content

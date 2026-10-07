@@ -14,7 +14,8 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     frequency: {}
     relations: [p.third-tone-sandhi]
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 你 «tú» + 好 «bien»: «tú, bien», un deseo más que una pregunta.'}
   - id: w.zaijian
     use: say
     role: content
@@ -24,6 +25,7 @@ entries:
     meaning: {es: adiós, en: goodbye}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 再 «otra vez» + 见 «ver»: «volver a vernos».'}
       - {kind: note, private: false, date: 2026-09-25, text: 'Despedida general, válida en cualquier registro.', original: formal / general ♡}
   - id: w.baibai
     use: say
@@ -36,6 +38,7 @@ entries:
     level_reason: despedida coloquial de todos los días
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: Imita el inglés bye-bye: 拜 «saludar con reverencia» solo presta el sonido.'}
       - {kind: linguistic, private: false, date: '2026-10-02', text: 'En la calle se dice báibái, con dos segundos tonos, imitando el inglés, y así lo dice el audio; los diccionarios lo recogen como bàibài, con el cuarto tono de 拜 «saludar con reverencia».'}
   - id: w.zao
     use: say
@@ -57,7 +60,8 @@ entries:
     level: 1
     level_reason: saludo cortés básico; 您 y 好 son HSK 1
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 您 «usted» + 好 «bien».'}
   - id: e.nimenhao
     use: say
     role: content
@@ -68,7 +72,8 @@ entries:
     level: 1
     level_reason: saludo a un grupo; 你们 y 好 son HSK 1
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 你们 «vosotros» + 好 «bien».'}
   - id: e.dajiahao
     use: hear
     role: content
@@ -80,6 +85,7 @@ entries:
     level_reason: saludo a todos; 大家 y 好 son HSK 1
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 大家 «todos» + 好 «bien».'}
       - {kind: teacher, private: false, date: '2026-10-02', text: 'Algo más formal que 你们好: sirve para abrir cuando hablas ante un grupo.'}
   - id: e.laoshihao
     use: say
@@ -91,7 +97,8 @@ entries:
     level: 1
     level_reason: saludo a la profesora; 老师 y 好 son HSK 1
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 老师 «profesora» + 好 «bien»: el cargo en lugar del nombre.'}
   - id: g.hao-greetings
     kind: group
     basis: pattern
@@ -139,6 +146,7 @@ entries:
     meaning: {es: 'buenas noches (al irse a dormir)', en: 'good night'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 晚 «noche» + 安 «paz»: «noche tranquila».'}
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Solo para despedirse antes de dormir. Al llegar por la noche se dice 晚上好 wǎnshang hǎo.'}
   - id: w.huilai
     use: say
@@ -183,7 +191,8 @@ entries:
     level: 1
     level_reason: saludo de cada mañana; 早上 y 好 son de nivel básico
     source: {origin: class, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 早上 «primera hora» + 好 «bien».'}
   - id: e.xiawuhao
     use: hear
     role: content
@@ -195,6 +204,7 @@ entries:
     level_reason: saludo básico; 下午 y 好 son HSK 1
     source: {origin: class, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 下午 «tarde» (下 «después» + 午 «mediodía») + 好 «bien».'}
       - {kind: linguistic, private: false, date: '2026-10-05', text: 'Se oye en tiendas, recepciones y al abrir una reunión. Entre amigos casi no se usa: se saluda con 你好 o con la situación.'}
   - id: e.wanshanghao
     accept_pinyin_mismatch: 'tono neutro en el habla estándar (上 shang, 个 ge); los diccionarios dan el tono de cita'
@@ -208,6 +218,7 @@ entries:
     level_reason: saludo básico; 晚上 y 好 son HSK 1
     source: {origin: class, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 晚上 «noche» + 好 «bien».'}
       - {kind: linguistic, private: false, date: '2026-10-05', text: '晚上好 saluda al llegar por la noche; 晚安 wǎnān se dice al irse a dormir. Como «buenas noches» en español, pero son dos frases distintas.'}
   - id: e.haojiubujian
     use: say
@@ -221,7 +232,7 @@ entries:
     level_reason: saludo fijo de reencuentro, de uso diario; 好, 不 y 见 son HSK 1
     source: {origin: class, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-05', text: 'Literalmente «mucho tiempo sin ver». Suele seguirle 最近怎么样？, como en 好久不见，最近怎么样？ «cuánto tiempo, ¿qué tal últimamente?».'}
+      - {kind: linguistic, private: false, date: '2026-10-05', text: 'Palabra a palabra: 好久 «mucho tiempo» + 不见 «sin verse». Suele seguirle 最近怎么样？, como en 好久不见，最近怎么样？ «cuánto tiempo, ¿qué tal últimamente?».'}
   - id: w.zuijin
     use: say
     role: content
@@ -261,6 +272,7 @@ entries:
     level_reason: pregunta de manual; 你, 好 y 吗 son HSK 1
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 你 «tú» + 好 «bien» + 吗 (pregunta): «¿tú, bien?».'}
       - {kind: linguistic, private: false, date: '2026-10-05', text: 'Correcto, pero de libro: entre amigos suena escolar. Para algo natural, 最近怎么样？.'}
   - id: e.zuijinzenmeyang
     use: say
@@ -273,6 +285,7 @@ entries:
     level_reason: la pregunta más natural para interesarse por alguien; 最近 es HSK 2
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 最近 «últimamente» + 怎么样 «¿qué tal?».'}
       - {kind: linguistic, private: false, date: '2026-10-05', text: 'La opción más versátil para preguntar qué tal: abarca trabajo, estudios y ánimo, y suena cercana sin ser íntima.'}
   - id: e.nihaihaoma
     use: say
@@ -285,6 +298,7 @@ entries:
     level_reason: se pregunta cuando algo ha pasado; 还 es HSK 1–2
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 你 «tú» + 还 «todavía» + 好 «bien» + 吗: «¿sigues bien?».'}
       - {kind: linguistic, private: false, date: '2026-10-05', text: 'Da por hecho que algo va mal: alguien se ha caído, parece triste o ha tenido un problema. Como saludo sin motivo suena alarmado.'}
   - id: e.chifanlema
     use: hear
@@ -297,6 +311,7 @@ entries:
     level_reason: saludo de vecinos y familia; 吃饭, 了 y 吗 son HSK 1
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 吃饭 «comer» + 了 «ya» + 吗: «¿ya has comido?».'}
       - {kind: linguistic, private: false, date: '2026-10-05', text: 'No es una invitación a comer: es interesarse por ti, sobre todo entre vecinos, familia y gente mayor. Se contesta corto, 吃了，你呢？, y se sigue.'}
   - id: e.zuijinmangma
     use: say
@@ -309,6 +324,7 @@ entries:
     level_reason: forma natural de interesarse por alguien; 最近 es HSK 2 y 忙, HSK 1
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 最近 «últimamente» + 忙 «ocupado» + 吗: «¿ocupado últimamente?».'}
       - {kind: linguistic, private: false, date: '2026-10-05', text: 'En chino el interés suele ir a algo concreto (el trabajo, la comida, el cansancio) más que a un «¿cómo estás?» abstracto.'}
   - id: e.zhegezenmeyang
     accept_pinyin_mismatch: 'tono neutro en el habla estándar (上 shang, 个 ge); los diccionarios dan el tono de cita'
@@ -322,6 +338,7 @@ entries:
     level_reason: pedir opinión al señalar algo; 这, 个 y 怎么样 son HSK 1
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 这个 «este» + 怎么样 «¿qué tal?».'}
       - {kind: linguistic, private: false, date: '2026-10-05', text: '怎么样 también pide opinión: 这个怎么样？ al enseñar algo, 明天怎么样？ al proponer un día.'}
   - id: g.how-are-you
     kind: group

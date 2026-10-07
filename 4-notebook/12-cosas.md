@@ -58,6 +58,8 @@
 - ✅🃏 电话 diànhuà [tjɛn˥˩ xwa˥˩] · teléfono · _sustantivo_
 - ✅🃏 左 zuǒ [tswɔ˧˩˧] · izquierda · _sustantivo_
 - ✅🃏 右 yòu [joʊ˥˩] · derecha · _sustantivo_ · 左 «izquierda» + 右 «derecha» = 左右 «más o menos», detrás de un número.
+- ✅🃏 纸 zhǐ [ʈʂɨ˧˩˧] · papel · _sustantivo_
+- ✅🃏 衣服 yīfu [i˥ fu] · ropa · _sustantivo_
 
 ## 那 y 哪里
 

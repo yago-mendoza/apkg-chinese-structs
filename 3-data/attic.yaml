@@ -178,18 +178,6 @@ items:
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
 
   # ---------------------------------------------------------------- tiempo y números
-  - id: a.ri
-    snooze: 006-2026-10-06-edad-numeros-y-familia
-    snooze_reason: 'las fechas llegan con la hora y los días de la semana, en otra lección'
-    hanzi: 日
-    pinyin: rì
-    meaning: {es: 'día (en fechas, escrito)'}
-    theme: tiempo
-    links: [号, 月, 星期, 生日, 今天]
-    reason: HSK 1; entra con las fechas.
-    notes:
-      - {text: '9月29日 «29 de septiembre». Hablando se dice más 号: 九月二十九号.'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.ban
     hanzi: 半
     pinyin: bàn
@@ -235,6 +223,8 @@ items:
       - {text: '玉 yù «jade» [HSK 4] es 王 con un punto.'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.gongxi
+    snooze: 007-2026-10-07-fechas-ordinales-y-clasificadores
+    snooze_reason: 'entra con las felicitaciones (生日快乐), en otro lote'
     hanzi: 恭喜
     pinyin: gōngxǐ
     meaning: {es: ¡enhorabuena!}
@@ -317,6 +307,8 @@ items:
       - {text: '跳 «saltar» + 舞 «danza».'}
     source: {batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: a.baogao
+    snooze: 007-2026-10-07-fechas-ordinales-y-clasificadores
+    snooze_reason: 'HSK 3, de registro escolar o de trabajo'
     hanzi: 报告
     pinyin: bàogào
     meaning: {es: 'informe'}

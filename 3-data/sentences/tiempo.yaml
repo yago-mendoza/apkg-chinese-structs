@@ -99,3 +99,64 @@ sentences:
       - {text: 。}
     translation: {es: 'El año que viene voy a China.', en: 'Next year I am going to China.'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.jintian-ji-yue-ji-hao
+    use: say
+    segments:
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 几, ref: w.ji, pinyin: 'jǐ'}
+      - {text: 月, ref: w.yue.month, pinyin: 'yuè'}
+      - {text: 几, ref: w.ji, pinyin: 'jǐ'}
+      - {text: 号, ref: w.hao.date, pinyin: 'hào'}
+      - {text: ？}
+    translation: {es: '¿Qué día es hoy?', en: 'What''s the date today?'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.jintian-shiyue-bahao
+    use: say
+    segments:
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 月, ref: w.yue.month, pinyin: 'yuè'}
+      - {text: 八, ref: w.ba, pinyin: 'bā'}
+      - {text: 号, ref: w.hao.date, pinyin: 'hào'}
+      - {text: 。}
+    translation: {es: 'Hoy es 8 de octubre.', en: 'Today is October 8th.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.jintian-xingqi-ji
+    use: say
+    segments:
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 星期, ref: w.xingqi, pinyin: 'xīngqī'}
+      - {text: 几, ref: w.ji, pinyin: 'jǐ'}
+      - {text: ？}
+    translation: {es: '¿Qué día de la semana es hoy?', en: 'What day is it today?'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.jintian-xingqisi
+    use: say
+    segments:
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 星期, ref: w.xingqi, pinyin: 'xīngqī'}
+      - {text: 四, ref: w.num.si, pinyin: 'sì'}
+      - {text: 。}
+    translation: {es: 'Hoy es jueves.', en: 'Today is Thursday.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.mingtian-xingqitian
+    use: say
+    segments:
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 星期天, ref: w.xingqitian, pinyin: 'xīngqītiān'}
+      - {text: 。}
+    translation: {es: 'Mañana es domingo.', en: 'Tomorrow is Sunday.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.jinnian-shi-2026-nian
+    use: say
+    segments:
+      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 零, ref: w.ling, pinyin: 'líng'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 六, ref: w.num.liu, pinyin: 'liù'}
+      - {text: 年, ref: w.nian, pinyin: 'nián'}
+      - {text: 。}
+    translation: {es: 'Este año es 2026.', en: 'This year is 2026.'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}

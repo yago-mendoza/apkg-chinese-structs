@@ -16,6 +16,7 @@
 - ✅🃏 蛇 shé [ʂɤ˧˥] · serpiente · _sustantivo_
 - ✅🃏 猴 hóu [xoʊ˧˥] · mono (en el zodiaco) · _sustantivo_ · Al hablar, el mono es 猴子 hóuzi; 猴 solo, en el zodiaco (属猴).
 - ✅🃏 属相 shǔxiang [ʂu˧˩˧ ɕjɑŋ] · signo del zodiaco chino · _sustantivo_
+- ✅🃏 生肖 shēngxiào [ʂɤŋ˥ ɕjɑʊ˥˩] · zodiaco chino; signo · _sustantivo_ · 十二生肖 son los doce signos. Al hablar se pregunta 你属什么？; 属相 es la palabra coloquial para el signo.
 
 ## Los doce signos
 

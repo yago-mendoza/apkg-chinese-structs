@@ -185,3 +185,62 @@ entries:
     meaning: {es: 'el año que viene', en: 'next year'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
+  - id: w.yue.month
+    use: say
+    role: content
+    kind: word
+    hanzi: 月
+    pinyin: 'yuè'
+    meaning: {es: 'mes', en: 'month'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Los meses son número + 月: 一月 «enero», 十月 «octubre», 十二月 «diciembre». Sin nombres propios.'}
+  - id: w.hao.date
+    use: say
+    role: content
+    kind: word
+    hanzi: 号
+    pinyin: 'hào'
+    meaning: {es: 'día del mes (al hablar)', en: 'day of the month'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'La fecha va de lo grande a lo pequeño: 十月八号 «8 de octubre». Por escrito se usa 日 rì; al hablar, 号.'}
+  - id: w.xingqi
+    use: say
+    role: content
+    kind: word
+    hanzi: 星期
+    pinyin: 'xīngqī'
+    meaning: {es: 'semana; día de la semana', en: 'week; weekday'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Los días son 星期 + número: 星期一 «lunes» … 星期六 «sábado». El domingo no lleva número: 星期天, o 星期日 por escrito.'}
+  - id: w.xingqitian
+    use: say
+    role: content
+    kind: word
+    hanzi: 星期天
+    pinyin: 'xīngqītiān'
+    meaning: {es: 'domingo', en: 'Sunday'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []
+  - id: w.shengri
+    use: say
+    role: content
+    kind: word
+    hanzi: 生日
+    pinyin: 'shēngrì'
+    meaning: {es: 'cumpleaños', en: 'birthday'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: '生 «nacer» + 日 «día»: el día en que naciste.'}
+  - id: w.ri.day
+    use: hear
+    role: content
+    kind: word
+    hanzi: 日
+    pinyin: 'rì'
+    meaning: {es: 'día (en fechas escritas); sol', en: 'day (written dates); sun'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Por escrito, 10月8日; al hablar, 十月八号.'}

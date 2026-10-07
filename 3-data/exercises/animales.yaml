@@ -346,3 +346,30 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Mi madre es gallo y mi padre, cerdo.»'}
     answer: {meaning: 'Mi madre es gallo y mi padre, cerdo.'}
     comments: []
+  - id: x.produce.tu
+    added: 2026-10-07
+    lang: es
+    type: produce
+    targets: [w.tu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «conejo (en el zodiaco)»? Escribe el pinyin.'}
+    answer: {typed: tu4, hanzi: 兔, pinyin: tù, meaning: conejo (en el zodiaco)}
+    comments: []
+  - id: x.dictation.shengxiao
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.shengxiao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: sheng1 xiao4, hanzi: 生肖, pinyin: shēngxiào, meaning: zodiaco chino; signo}
+    comments: []
+  - id: x.read.shengxiao
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.shengxiao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 生肖}
+    answer: {hanzi: 生肖, pinyin: shēngxiào, meaning: zodiaco chino; signo}
+    comments: []

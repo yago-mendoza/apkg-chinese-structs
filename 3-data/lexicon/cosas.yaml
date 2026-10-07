@@ -658,3 +658,22 @@ entries:
       - {ref: w.zuo.sit, cue: 'zuò, cae: sentarse'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
+  - id: w.zhi.paper
+    use: say
+    role: content
+    kind: word
+    hanzi: 纸
+    pinyin: 'zhǐ'
+    meaning: {es: 'papel', en: 'paper'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []
+  - id: w.yifu
+    use: say
+    role: content
+    kind: word
+    hanzi: 衣服
+    pinyin: 'yīfu'
+    meaning: {es: 'ropa', en: 'clothes'}
+    accept_pinyin_mismatch: 'la segunda sílaba se dice átona'
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []

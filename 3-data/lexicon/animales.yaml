@@ -78,7 +78,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Al hablar, el tigre es 老虎 lǎohǔ; 虎 solo, en el zodiaco (属虎).'}
   - id: w.tu
-    use: hear
+    use: say
     role: content
     kind: word
     pos: sustantivo
@@ -152,3 +152,16 @@ entries:
       - {ref: w.ma.horse, cue: 'mǎ, baja y sube: caballo'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
+  - id: w.shengxiao
+    use: hear
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 生肖
+    pinyin: 'shēngxiào'
+    meaning: {es: 'zodiaco chino; signo', en: 'Chinese zodiac'}
+    level: 3
+    level_reason: 'tema cultural frecuente; 属相 es la palabra coloquial'
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-07', text: '十二生肖 son los doce signos. Al hablar se pregunta 你属什么？; 属相 es la palabra coloquial para el signo.'}

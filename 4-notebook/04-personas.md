@@ -22,7 +22,7 @@
 - 🟡🃏 师 shī · maestro; experto (en nombres de profesiones) · Da nombre a profesiones y a quien enseña: 老师 lǎoshī, 工程师 gōngchéngshī, 厨师 chúshī «cocinero» [HSK 3]. «Experto» en general es otra palabra: 专家 zhuānjiā [HSK 3]. · No se confunde con 者 zhě, «el que hace»: 作者 zuòzhě «autor», 记者 jìzhě «periodista» [HSK 3]. 师 es un oficio; 者, quien hace una acción. · El maestro dirige a los alumnos bajo techo, con el pañuelo 巾 como en 帅.
 - ✅🃏 们 men · plural de personas (我们, 你们, 他们) · Muchas personas 亻 pasando por una puerta 门. · 门 mén le da el sonido; en 们 la sílaba pierde el tono: wǒmen, nǐmen, tāmen.
 - ✅🃏 谁 shéi · quién · _interrogativo_ · 谁 ocupa el sitio de la persona que no conoces, sin cambiar el orden: de 他是老师 sale 他是谁？. También se oye shuí.
-- ✅🃏 医生 yīshēng [i˥ ʂɤŋ˥] · médico, médica · _sustantivo_
+- ✅🃏 医生 yīshēng [i˥ ʂɤŋ˥] · médico, médica · _sustantivo_ · 生 lleva su tono en 医生 yīshēng; en 先生 xiānsheng y, a menudo, en 学生 xuésheng se dice átono. No depende del carácter, sino de cada palabra.
 - ✅🃏 服务员 fúwùyuán [fu˧˥ u˥˩ ɥœn˧˥] · camarero, camarera · _sustantivo_ · Para llamarle se dice 服务员！ 小姐 «señorita» ya no se usa para eso: puede sonar mal.
 - ✅🃏 小姐 xiǎojiě [ɕjɑʊ˧˩˧ tɕjɛ˧˩˧] · señorita (tras el apellido) · _sustantivo_
 - ✅🃏 小朋友 xiǎopéngyǒu [ɕjɑʊ˧˩˧ pʰɤŋ˧˥ joʊ˧˩˧] · niño, niña (al hablarle) · _sustantivo_ · Así se llama a un niño que no conoces: 小朋友，你几岁？.
@@ -48,6 +48,13 @@ Empiezan igual; la segunda sílaba lo decide.
 
 - 大家 dàjiā · dàjiā: todos
 - 大象 dàxiàng · dàxiàng: elefante
+
+## 医 y 国: dos cajas
+
+Los dos encierran algo: 医 en una caja abierta a la derecha, 国 en un cuadro cerrado.
+
+- 医生 yīshēng · 医 (医生): caja abierta 匸 con una flecha 矢 dentro
+- 国 guó · 国: cuadro cerrado 囗 con 玉 «jade» dentro
 
 ## Frases
 
