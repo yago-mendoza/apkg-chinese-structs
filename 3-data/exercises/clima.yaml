@@ -285,3 +285,241 @@ exercises:
     question: {es: '¿Por qué no va?'}
     answer: {meaning: 'Porque llueve.'}
     comments: []
+  - id: x.contrast.re
+    added: 2026-10-08
+    lang: es
+    type: contrast
+    group: g.re-ri
+    targets: [w.re]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 热, pinyin: rè, meaning: calor; caluroso}
+    comments: []
+  - id: x.dictation.yun
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.yun]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yun2, hanzi: 云, pinyin: yún, meaning: nube}
+    comments: []
+  - id: x.read.yun
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.yun]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 云}
+    answer: {hanzi: 云, pinyin: yún, meaning: nube}
+    comments: []
+  - id: x.dictation.xingxing
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.xingxing]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xing1 xing5, hanzi: 星星, pinyin: xīngxing, meaning: estrella}
+    comments: []
+  - id: x.read.xingxing
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.xingxing]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 星星}
+    answer: {hanzi: 星星, pinyin: xīngxing, meaning: estrella}
+    comments: []
+  - id: x.tones.xingxing
+    added: 2026-10-08
+    lang: es
+    type: tones
+    targets: [w.xingxing]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 星星, pinyin: xing xing}
+    answer: {typed: '15', hanzi: 星星, pinyin: xīngxing, meaning: estrella}
+    comments: []
+  - id: x.dictation.yueliang
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.yueliang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yue4 liang5, hanzi: 月亮, pinyin: yuèliang, meaning: luna}
+    comments: []
+  - id: x.read.yueliang
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.yueliang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 月亮}
+    answer: {hanzi: 月亮, pinyin: yuèliang, meaning: luna}
+    comments: []
+  - id: x.tones.yueliang
+    added: 2026-10-08
+    lang: es
+    type: tones
+    targets: [w.yueliang]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 月亮, pinyin: yue liang}
+    answer: {typed: '45', hanzi: 月亮, pinyin: yuèliang, meaning: luna}
+    comments: []
+  - id: x.dictation.xue.snow
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.xue.snow]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xue3, hanzi: 雪, pinyin: xuě, meaning: nieve}
+    comments: []
+  - id: x.read.xue.snow
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.xue.snow]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 雪}
+    answer: {hanzi: 雪, pinyin: xuě, meaning: nieve}
+    comments: []
+  - id: x.dictation.xiaxue
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.xiaxue]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xia4 xue3, hanzi: 下雪, pinyin: xiàxuě, meaning: nevar}
+    comments: []
+  - id: x.produce.xiaxue
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.xiaxue]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «nevar»? Escribe el pinyin.'}
+    answer: {typed: xia4 xue3, hanzi: 下雪, pinyin: xiàxuě, meaning: nevar}
+    comments: []
+  - id: x.read.xiaxue
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.xiaxue]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 下雪}
+    answer: {hanzi: 下雪, pinyin: xiàxuě, meaning: nevar}
+    comments: []
+  - id: x.dictation.shan
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.shan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shan1, hanzi: 山, pinyin: shān, meaning: montaña}
+    comments: []
+  - id: x.read.shan
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.shan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 山}
+    answer: {hanzi: 山, pinyin: shān, meaning: montaña}
+    comments: []
+  - id: x.dictation.dao
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.dao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dao3, hanzi: 岛, pinyin: dǎo, meaning: isla}
+    comments: []
+  - id: x.read.dao
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.dao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 岛}
+    answer: {hanzi: 岛, pinyin: dǎo, meaning: isla}
+    comments: []
+  - id: x.dictation.hua.flower
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.hua.flower]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hua1, hanzi: 花, pinyin: huā, meaning: flor}
+    comments: []
+  - id: x.read.hua.flower
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.hua.flower]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 花}
+    answer: {hanzi: 花, pinyin: huā, meaning: flor}
+    comments: []
+  - id: x.listen.tianqi-zhen-hao
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.tianqi-zhen-hao
+    targets: [s.tianqi-zhen-hao]
+    context: [w.tianqi, w.zhen, w.hao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Qué buen tiempo hace!}
+    comments: []
+  - id: x.produce.tianqi-zhen-hao
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.tianqi-zhen-hao
+    targets: [s.tianqi-zhen-hao]
+    context: [w.tianqi, w.zhen, w.hao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Qué buen tiempo hace!»'}
+    answer: {meaning: ¡Qué buen tiempo hace!}
+    comments: []
+  - id: x.listen.beijing-xiaxue-le
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.beijing-xiaxue-le
+    targets: [s.beijing-xiaxue-le]
+    context: [w.beijing, w.xiaxue, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Está nevando en Pekín.}
+    comments: []
+  - id: x.produce.beijing-xiaxue-le
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.beijing-xiaxue-le
+    targets: [s.beijing-xiaxue-le]
+    context: [w.beijing, w.xiaxue, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Está nevando en Pekín.»'}
+    answer: {meaning: Está nevando en Pekín.}
+    comments: []
+  - id: x.comprehension.un-plan
+    added: 2026-10-08
+    lang: es
+    type: comprehension
+    targets: [s.tianqi-zhen-hao, s.ni-xiang-gen-wo-yiqi-chifan-ma, s.ni-you-shijian-de-shihou-gei-wo-da-dianhua]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Qué te propone y qué te pide?'}
+    answer: {meaning: 'Comer juntos; que le llames cuando tengas tiempo.'}
+    comments: []

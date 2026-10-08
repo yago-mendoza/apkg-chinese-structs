@@ -446,3 +446,127 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¿Cómo se dice este carácter?»'}
     answer: {meaning: '¿Cómo se dice este carácter?'}
     comments: []
+  - id: x.contrast.ci.word
+    added: 2026-10-08
+    lang: es
+    type: contrast
+    group: g.ci-ci
+    targets: [w.ci.word]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 词, pinyin: cí, meaning: palabra}
+    comments: []
+  - id: x.contrast.xie
+    added: 2026-10-08
+    lang: es
+    type: contrast
+    group: g.xie-xie
+    targets: [w.xie]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 写, pinyin: xiě, meaning: escribir}
+    comments: []
+  - id: x.dictation.fuxi
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.fuxi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fu4 xi2, hanzi: 复习, pinyin: fùxí, meaning: repasar}
+    comments: []
+  - id: x.produce.fuxi
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.fuxi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «repasar»? Escribe el pinyin.'}
+    answer: {typed: fu4 xi2, hanzi: 复习, pinyin: fùxí, meaning: repasar}
+    comments: []
+  - id: x.read.fuxi
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.fuxi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 复习}
+    answer: {hanzi: 复习, pinyin: fùxí, meaning: repasar}
+    comments: []
+  - id: x.tones.fuxi
+    added: 2026-10-08
+    lang: es
+    type: tones
+    targets: [w.fuxi]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '42', hanzi: 复习, pinyin: fùxí, meaning: repasar}
+    comments: []
+  - id: x.dictation.biji
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.biji]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bi3 ji4, hanzi: 笔记, pinyin: bǐjì, meaning: 'apuntes, notas'}
+    comments: []
+  - id: x.produce.biji
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.biji]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «apuntes, notas»? Escribe el pinyin.'}
+    answer: {typed: bi3 ji4, hanzi: 笔记, pinyin: bǐjì, meaning: 'apuntes, notas'}
+    comments: []
+  - id: x.read.biji
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.biji]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 笔记}
+    answer: {hanzi: 笔记, pinyin: bǐjì, meaning: 'apuntes, notas'}
+    comments: []
+  - id: x.dictation.maobi
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.maobi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mao2 bi3, hanzi: 毛笔, pinyin: máobǐ, meaning: pincel (de caligrafía)}
+    comments: []
+  - id: x.read.maobi
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.maobi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 毛笔}
+    answer: {hanzi: 毛笔, pinyin: máobǐ, meaning: pincel (de caligrafía)}
+    comments: []
+  - id: x.listen.wo-dei-xian-fuxi-yixia-biji
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.wo-dei-xian-fuxi-yixia-biji
+    targets: [s.wo-dei-xian-fuxi-yixia-biji]
+    context: [w.wo, w.dei, w.xian.first, w.fuxi, w.yixia, w.biji]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Antes tengo que repasar los apuntes.}
+    comments: []
+  - id: x.produce.wo-dei-xian-fuxi-yixia-biji
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.wo-dei-xian-fuxi-yixia-biji
+    targets: [s.wo-dei-xian-fuxi-yixia-biji]
+    context: [w.wo, w.dei, w.xian.first, w.fuxi, w.yixia, w.biji]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Antes tengo que repasar los apuntes.»'}
+    answer: {meaning: Antes tengo que repasar los apuntes.}
+    comments: []

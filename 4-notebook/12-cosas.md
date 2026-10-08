@@ -8,15 +8,9 @@
 - ✅🃏 看 kàn [kʰan˥˩] · mirar; leer · _verbo_ · Una mano 手 sobre el ojo 目, como quien se hace visera para mirar a lo lejos.
 - ✅🃏 看见 kànjiàn [kʰan˥˩ tɕjɛn˥˩] · ver (llegar a ver) · _verbo_ · 看 es la acción de mirar; 见 añade el resultado: llegar a ver.
 - ✅🃏 看看 kànkan [kʰan˥˩ kʰan] · echar un vistazo · _verbo_ · Repetir el verbo lo suaviza: «mirar un poco», no «mirar dos veces».
-- ✅🃏 书 shū [ʂu˥] · libro · _sustantivo_
-- ✅🃏 手机 shǒujī [ʂoʊ˧˩˧ tɕi˥] · móvil · _sustantivo_ · 手 «mano» + 机 «máquina». · 机 jī «máquina» (con 木 a la izquierda, no 扌): 手机 es la máquina de mano; 飞机 fēijī, la que vuela; 机票 jīpiào, su billete.
 - ✅🃏 足球 zúqiú [tsu˧˥ tɕʰjoʊ˧˥] · fútbol · _sustantivo_ · Calco: 足 «pie» + 球 «pelota».
-- ✅🃏 火车 huǒchē [xwɔ˧˩˧ ʈʂʰɤ˥] · tren · _sustantivo_ · 火 «fuego» + 车 «vehículo»: el primero especifica el segundo.
-- 🟡🃏 入口 rùkǒu [ʐu˥˩ kʰoʊ˧˩˧] · entrada · _sustantivo_
 - ✅🃏 这 zhè [ʈʂɤ˥˩] · este, esto · _pronombre_
 - ✅🃏 那 nà [na˥˩] · ese, eso; aquel · _pronombre_
-- ✅🃏 门 mén [mən˧˥] · puerta · _sustantivo_ · El dibujo de una puerta de dos hojas.
-- ✅🃏 飞机 fēijī [feɪ˥ tɕi˥] · avión · _sustantivo_
 - ✅🃏 小猫 xiǎomāo [ɕjɑʊ˧˩˧ mɑʊ˥] · gatito · _sustantivo_
 - ✅🃏 工作 gōngzuò [kʊŋ˥ tswɔ˥˩] · trabajo; trabajar · _verbo_ · 工 gōng es el de 工程师. 恭 gōng «respetuoso» suena igual y es otro carácter.
 - ✅🃏 走 zǒu [tsoʊ˧˩˧] · irse; andar · _verbo_
@@ -24,7 +18,6 @@
 - ✅🃏 错 cuò [tsʰwɔ˥˩] · equivocado; error · _adjetivo_ · 错误 cuòwù «error» [HSK 3] y 误会 wùhuì «malentendido» [HSK 4] son más formales; hablando basta 错. · cuò: la u apenas suena, se desliza hacia la o. · Estar equivocado: 我错了 «me he equivocado» (también vale para «he cometido un error»), 你错了 «te equivocas». Detrás de un verbo, «mal»: 你说错了 «lo has dicho mal». 不错 bú cuò [HSK 2] es un elogio, «no está mal, bastante bien».
 - ✅🃏 篮球 lánqiú [lan˧˥ tɕʰjoʊ˧˥] · baloncesto · _sustantivo_
 - ✅🃏 打 dǎ [ta˧˩˧] · jugar (a deportes de pelota); golpear · _verbo_ · 打 + deporte de pelota: 打篮球 «jugar al baloncesto». Lleva 扌 «mano».
-- 🟡🃏 出口 chūkǒu [ʈʂʰu˥ kʰoʊ˧˩˧] · salida · _sustantivo_ · 出 chū «salir»: una planta que sale de un tiesto. 出口 y 入口 son la pareja de los carteles.
 - ✅🃏 软件 ruǎnjiàn [ʐwan˧˩˧ tɕjɛn˥˩] · software · _sustantivo_ · Calco: 软 «blando» + 件 «pieza», frente a 硬件 yìngjiàn «hardware», las piezas duras.
 - ✅🃏 说 shuō [ʂwɔ˥] · hablar, decir · _verbo_ · 讠 «palabra» a la izquierda, como en 请 y en 认识.
 - ✅🃏 怎么 zěnme [tsən˧˩˧ mɤ] · cómo · _interrogativo_ · 怎么 + verbo pregunta la manera: 怎么说？ «¿cómo se dice?», 怎么吃？ «¿cómo se come?».
@@ -44,22 +37,28 @@
 - ✅🃏 非常 fēicháng [feɪ˥ ʈʂʰɑŋ˧˥] · muy, muchísimo · _adverbio_ · Más fuerte que 很: 非常好 «muy bien». Para agradecer se dice 太谢谢你了 o 非常感谢 [HSK 2]; «非常谢谢你» suena forzado.
 - ✅🃏 大象 dàxiàng [ta˥˩ ɕjɑŋ˥˩] · elefante · _sustantivo_ · No lo confundas con 大家 dàjiā «todos»: los dos empiezan por 大, y al oído solo cambia la segunda sílaba.
 - ✅🃏 音乐 yīnyuè [in˥ ɥœ˥˩] · música · _sustantivo_
-- ✅🃏 筷子 kuàizi [kʰwaɪ˥˩ tsɯ] · palillos · _sustantivo_
-- ✅🃏 报纸 bàozhǐ [pɑʊ˥˩ ʈʂɨ˧˩˧] · periódico · _sustantivo_
 - ✅🃏 为什么 wèishénme [weɪ˥˩ ʂən˧˥ mɤ] · por qué · _interrogativo_
 - ✅🃏 这么 zhème [ʈʂɤ˥˩ mɤ] · tan, así de · _pronombre_ · Delante de un adjetivo: 你为什么这么高？ «¿por qué eres tan alto?».
 - ✅🃏 出去 chūqu [ʈʂʰu˥ tɕʰy] · salir (hacia fuera) · _verbo_ · 出 es una planta que sale de un tiesto. 出来 chūlái es salir hacia aquí. · 出去啊？ «¿sales?» es un saludo al cruzarte con alguien que se va.
-- ✅🃏 这里 zhèlǐ [ʈʂɤ˥˩ li˧˩˧] · aquí · _pronombre_ · 这 «este» + 里 «dentro»: en este sitio. Como 哪里 «dónde».
 - ✅🃏 树 shù [ʂu˥˩] · árbol · _sustantivo_ · 这棵树很高 «este árbol es alto»: 棵 kē es el clasificador de los árboles. No confundir con 书 shū «libro»: suenan parecido, pero 树 es cuarto tono.
-- ✅🃏 电视 diànshì [tjɛn˥˩ ʂɨ˥˩] · televisión · _sustantivo_
 - ✅🃏 龙 lóng [lʊŋ˧˥] · dragón · _sustantivo_ · 龍 es su forma tradicional. Es frecuente en nombres: 成龙 «Jackie Chan», 大龙, y 李小龙 «Bruce Lee».
-- ✅🃏 笔 bǐ [pi˧˩˧] · bolígrafo, lápiz · _clasificador_
-- ✅🃏 杯子 bēizi [peɪ˥ tsɯ] · vaso, taza · _sustantivo_
-- ✅🃏 电话 diànhuà [tjɛn˥˩ xwa˥˩] · teléfono · _sustantivo_
 - ✅🃏 左 zuǒ [tswɔ˧˩˧] · izquierda · _sustantivo_
 - ✅🃏 右 yòu [joʊ˥˩] · derecha · _sustantivo_ · 左 «izquierda» + 右 «derecha» = 左右 «más o menos», detrás de un número.
-- ✅🃏 纸 zhǐ [ʈʂɨ˧˩˧] · papel · _sustantivo_
-- ✅🃏 衣服 yīfu [i˥ fu] · ropa · _sustantivo_
+- ✅🃏 试 shì [ʂɨ˥˩] · probar, intentar · _verbo_ · 我可以试一下吗？ «¿puedo probármelo?», en una tienda. 试试 y 试一下 son «probar un poco». · Suena exactamente igual que 是 shì: solo el contexto los separa.
+- ✅🃏 等 děng [tɤŋ˧˩˧] · esperar · _verbo_ · 你等一下 «espera un momento» es de lo que más se oye.
+- ✅🃏 休息 xiūxi [ɕjoʊ˥ ɕi] · descansar · _verbo_
+- ✅🃏 找 zhǎo [ʈʂɑʊ˧˩˧] · buscar · _verbo_ · 我在找我的手机 «estoy buscando mi móvil». Pedirlo: 帮我找一下.
+- ✅🃏 拿 ná [na˧˥] · coger, llevar (en la mano) · _verbo_ · 帮我拿一下 «sujétamelo un momento».
+- ✅🃏 得 děi · tener que · _verbo_ · Con esta lectura, děi, es «tener que», muy de hablar: 我得先复习一下笔记. El mismo hanzi se lee de, sin tono, en 觉得.
+- ✅🃏 爬山 páshān [pʰa˧˥ ʂan˥] · subir a la montaña, hacer senderismo · _verbo_ · Palabra a palabra: 爬 «trepar» + 山 «montaña». · 巴 bā da el sonido a 爬 pá, a 爸 bà, a 吧 ba y a 芭 bā; en 爬, 爪 «garra» da el sentido: trepar con las manos.
+- ✅🃏 跑步 pǎobù [pʰɑʊ˧˩˧ pu˥˩] · correr (hacer deporte) · _verbo_ · Palabra a palabra: 跑 «correr» + 步 «paso».
+- ✅🃏 跳舞 tiàowǔ [tʰjɑʊ˥˩ u˧˩˧] · bailar · _verbo_ · Palabra a palabra: 跳 «saltar» + 舞 «danza».
+- ✅🃏 吉他 jítā [tɕi˧˥ tʰa˥] · guitarra · _sustantivo_ · Préstamo por el sonido del inglés guitar, como 咖啡 de coffee.
+- ✅🃏 芭蕾 bālěi [pa˥ leɪ˧˩˧] · ballet · _sustantivo_ · Préstamo por el sonido del francés ballet.
+- ✅🃏 机会 jīhuì [tɕi˥ xweɪ˥˩] · oportunidad · _sustantivo_ · El mismo 机 de 手机 y 飞机.
+- ✅🃏 离开 líkāi [li˧˥ kʰaɪ˥] · irse de, dejar (un sitio) · _verbo_ · Palabra a palabra: 离 «separarse» + 开 «abrir, partir».
+- ✅🃏 回答 huídá [xweɪ˧˥ ta˧˥] · responder · _verbo_ · Palabra a palabra: 回 «volver» + 答 «contestar»: devolver la palabra. 回答问题 «contestar una pregunta».
+- ✅🃏 表达 biǎodá [pjɑʊ˧˩˧ ta˧˥] · expresar · _verbo_ · Comparte 表 «mostrar» con 手表; en la escritura tradicional eran dos caracteres distintos. · 大 dà da el sonido a 达 dá.
 
 ## 那 y 哪里
 
@@ -138,6 +137,22 @@ Suenan igual: la frase decide. 比 compara (他比我高); 笔 es el bolígrafo.
 - 左 zuǒ · zuǒ, baja y sube: izquierda
 - 坐 zuò · zuò, cae: sentarse
 
+## 是, 试 y 十: shì y shí
+
+是 y 试 suenan exactamente igual, shì con cuarto tono: solo el contexto los separa. 十 shí sube.
+
+- 是 shì · ser: 我是学生
+- 试 shì · probar: 我可以试一下吗？
+- 十 shí · shí, sube: diez
+
+## 拿 ná, 哪 nǎ y 那 nà
+
+La misma sílaba, na; solo el tono los separa.
+
+- 拿 ná · ná, sube: coger
+- 哪 nǎ · nǎ, baja y sube: ¿cuál?
+- 那 nà · nà, cae: eso, aquel
+
 ## Frases
 
 - ✅🃏 我在看书。 · wǒ zài kàn shū · Estoy leyendo.
@@ -177,3 +192,9 @@ Suenan igual: la frase decide. 比 compara (他比我高); 笔 es el bolígrafo.
 - ✅🃏 这是我的书。 · zhè shì wǒ de shū · Este es mi libro.
 - ✅🃏 那是你的笔吗？ · nà shì nǐ de bǐ ma · ¿Ese es tu bolígrafo?
 - ✅🃏 这是我的杯子。 · zhè shì wǒ de bēizi · Esta es mi taza.
+- ✅🃏 那是一棵树。 · nà shì yì kē shù · Eso es un árbol.
+- ✅🃏 我喜欢爬山。 · wǒ xǐhuan páshān · Me gusta subir a la montaña.
+- ✅🃏 我可以试一下吗？ · wǒ kěyǐ shì yíxià ma · ¿Puedo probármelo?
+- ✅🃏 我们休息一下吧。 · wǒmen xiūxi yíxià ba · Descansemos un momento.
+- ✅🃏 我在找我的手机。 · wǒ zài zhǎo wǒ de shǒujī · Estoy buscando mi móvil.
+- ✅🃏 今天天气真好！你想跟我一起去爬山吗？ · jīntiān tiānqì zhēn hǎo nǐ xiǎng gēn wǒ yìqǐ qù páshān ma · ¡Qué buen tiempo hace hoy! ¿Quieres venir a la montaña conmigo?

@@ -160,3 +160,18 @@ sentences:
       - {text: 。}
     translation: {es: 'Este año es 2026.', en: 'This year is 2026.'}
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.ni-you-shijian-de-shihou-gei-wo-da-dianhua
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 时间, ref: w.shijian, pinyin: 'shíjiān'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 时候, ref: w.shihou, pinyin: 'shíhou'}
+      - {text: ，}
+      - {text: 给, ref: w.gei.to, pinyin: 'gěi'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 打电话, ref: w.dadianhua, pinyin: 'dǎ diànhuà'}
+      - {text: 。}
+    translation: {es: 'Cuando tengas tiempo, llámame.', en: 'Call me when you have time.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}

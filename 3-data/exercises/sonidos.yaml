@@ -518,3 +518,23 @@ exercises:
     prompt: {text: 'Escucha y escribe el pinyin.', audio: true}
     answer: {typed: he1 cha2, hanzi: 喝茶, pinyin: hē chá, meaning: 'tomar té: la e de hē es una o sin redondear'}
     comments: []
+  - id: x.speak.y-w-u
+    added: 2026-10-08
+    lang: es
+    type: speak
+    targets: [p.y-w-u]
+    refs: [p.y-w-u]
+    skills: [speaking, pinyin]
+    prompt: {text: 'Lee en voz alta y compara con el audio. Fíjate en la y, la w y la u que suena ü.', hanzi: 一，五，鱼，去}
+    answer: {hanzi: 一，五，鱼，去, pinyin: 'yī wǔ yú qù', meaning: 'uno, cinco, pez, ir: yi es i y wu es u; yu y qu llevan ü aunque no se vea'}
+    comments: []
+  - id: x.dictation.y-w-u
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [p.y-w-u]
+    refs: [p.y-w-u]
+    skills: [listening, pinyin]
+    prompt: {text: 'Escucha y escribe el pinyin.', audio: true}
+    answer: {typed: qu4 xue2 xiao4, hanzi: 去学校, pinyin: 'qù xuéxiào', meaning: 'ir a la escuela: qu y xue suenan con ü, pero se escriben con u'}
+    comments: []

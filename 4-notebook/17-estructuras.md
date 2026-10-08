@@ -35,9 +35,11 @@
 - ✅🃏 `{S} + 最 + {V} + {N}` · Lo que más: 最 delante del verbo o del adjetivo. · 我最喜欢中国菜。
 - ✅🃏 `虽然 + {Frase} + 但是 + {Frase}` · Aunque…, …: en chino se dicen las dos partes, 虽然 y 但是. · 虽然很累，但是我很高兴。
 - ✅🃏 `{S} + 又 + {Adj} + 又 + {Adj}` · Dos cualidades a la vez: 又 + adjetivo + 又 + adjetivo. · 她又高又漂亮。
-- ✅🃏 `{S} + 一边 + {V} + 一边 + {V}` · Dos acciones a la vez: 一边 + verbo + 一边 + verbo. · 他一边吃一边说。
+- ✅🃏 `{S} + 一边 + {V} + 一边 + {V}` · Dos acciones a la vez: 一边 + verbo + 一边 + verbo. · 他一边吃一边说。 / 我一边吃饭，一边看手机。
 - ✅🃏 `{S} + 会 + {V}` · Saber hacer algo aprendido (y también predecir: 明天会下雨). · 我会说中文。 / 明天会下雨。
 - ✅🃏 `别 + {V}` · Pedir que alguien no haga algo: 别 delante del verbo. · 别看我！
 - ✅🃏 `{S} + {V} + {N} + {V} + {N}` · Acciones en cadena, en el orden en que pasan: primero el medio, luego la meta. · 我坐飞机去中国。
 - ✅🃏 `{S} + 是 + 不 + 是 + {N}？` · Pregunta de sí o no sin 吗: 是, 不 y 是 otra vez; el 不 del medio se dice átono. · 他是不是成龙？
 - ✅🃏 `{S} + {Num} + 岁` · La edad va sin 是: 我二十三岁. Igual la fecha: 今天八号. · 我二十三岁。
+- ✅🃏 `{V} + 一下` · Hacer algo un momento, probar a ver o pedirlo con suavidad: 一下 va justo detrás del verbo, delante de lo que se mira o se pide. · 你等一下。 / 我想问一下。 / 请你看一下。 / 我可以试一下吗？ / 我们休息一下吧。
+- ✅🃏 `{S} + 没有 + {N}` · No tener o no haber algo: 有 se niega siempre con 没. · 我没有时间。 / 我没有钱。 / 我没有手表。

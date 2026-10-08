@@ -441,3 +441,53 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Vuelvo mañana.»'}
     answer: {meaning: Vuelvo mañana.}
     comments: []
+  - id: x.dictation.yexu
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.yexu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ye3 xu3, hanzi: 也许, pinyin: yěxǔ, meaning: quizá}
+    comments: []
+  - id: x.read.yexu
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.yexu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 也许}
+    answer: {hanzi: 也许, pinyin: yěxǔ, meaning: quizá}
+    comments: []
+  - id: x.tones.yexu
+    added: 2026-10-08
+    lang: es
+    type: tones
+    targets: [w.yexu]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 也许, pinyin: ye xu}
+    answer: {typed: '33', hanzi: 也许, pinyin: yěxǔ, meaning: quizá}
+    comments: []
+  - id: x.listen.wo-yibian-chifan-yibian-kan-shouji
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.wo-yibian-chifan-yibian-kan-shouji
+    targets: [s.wo-yibian-chifan-yibian-kan-shouji]
+    context: [w.wo, w.yibian, w.chifan, w.kan, w.shouji]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Como mientras miro el móvil.}
+    comments: []
+  - id: x.produce.wo-yibian-chifan-yibian-kan-shouji
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.wo-yibian-chifan-yibian-kan-shouji
+    targets: [s.wo-yibian-chifan-yibian-kan-shouji]
+    context: [w.wo, w.yibian, w.chifan, w.kan, w.shouji]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Como mientras miro el móvil.»'}
+    answer: {meaning: Como mientras miro el móvil.}
+    comments: []

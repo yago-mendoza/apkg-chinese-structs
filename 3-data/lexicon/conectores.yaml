@@ -110,3 +110,14 @@ entries:
       - {ref: w.zai.again, cue: '再: otra vez, luego (再见, 再说一遍)'}
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments: []
+  - id: w.yexu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 也许
+    pinyin: 'yěxǔ'
+    meaning: {es: 'quizá', en: 'perhaps'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Va delante del verbo: 也许他不来 «quizá no venga».'}
+      - {kind: character, private: false, date: '2026-10-08', text: '午 wǔ da el sonido a 许 xǔ: mismo tono, aunque hoy la vocal es otra (xu lleva ü).'}

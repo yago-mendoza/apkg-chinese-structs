@@ -29,6 +29,12 @@
 - ✅🃏 最 zuì [tsweɪ˥˩] · el más, lo que más · _adverbio_ · Delante del verbo o del adjetivo: 我最喜欢中国菜 «lo que más me gusta es la comida china».
 - ✅🃏 又 yòu [joʊ˥˩] · a la vez (又…又…) · _adverbio_ · 又 + adjetivo + 又 + adjetivo: dos cualidades a la vez, 他又高又帅. Es la forma de decir «alto y guapo»: 和 no une adjetivos.
 - ✅🃏 真 zhēn [ʈʂən˥] · de verdad; ¡qué…! · _adverbio_ · 真 + adjetivo exclama: 这个苹果真大！ «¡qué grande!». 很 + adjetivo solo describe.
+- ✅🃏 手 shǒu [ʂoʊ˧˩˧] · mano · _sustantivo_ · Está en 手机 «móvil» y 手表 «reloj»: lo que se lleva en la mano o en la muñeca.
+- ✅🃏 耳朵 ěrduo [ɑɻ˧˩˧ twɔ] · oreja · _sustantivo_ · 耳 «oreja» está en 聪 de 聪明 y en 耳机 «auriculares».
+- ✅🃏 好看 hǎokàn [xɑʊ˧˩˧ kʰan˥˩] · bonito, que se ve bien · _adjetivo_ · Palabra a palabra: 好 «bien» + 看 «mirar»: «bueno de ver». Para ropa, cosas y películas; para personas, también 漂亮.
+- ✅🃏 有趣 yǒuqù [joʊ˧˩˧ tɕʰy˥˩] · interesante, divertido · _adjetivo_ · Palabra a palabra: 有 «tener» + 趣 «gracia». Un poco más escrito que 有意思. · En clase: 那本书真有趣！ «¡qué interesante es ese libro!».
+- ✅🃏 有意思 yǒuyìsi [joʊ˧˩˧ i˥˩ sɯ] · interesante · _expresión_ · Palabra a palabra: 有 «tener» + 意思 «sentido»: «que tiene gracia». Es lo más corriente al hablar: 中文很有意思.
+- ✅🃏 特别 tèbié [tʰɤ˥˩ pjɛ˧˥] · especialmente, muy · _adverbio_ · Delante de un adjetivo es más fuerte que 很: 今天特别冷 «hoy hace muchísimo frío».
 
 ## 大, 太 y 天
 
@@ -59,6 +65,20 @@ Casi iguales al oído: 本 běn (tercer tono) cuenta libros y 笨 bèn (cuarto t
 - 本 běn · běn, baja y sube: clasificador de libros
 - 笨 bèn · bèn, cae: torpe
 
+## Interesante
+
+Dos formas de «interesante»; al hablar, la corriente es 有意思.
+
+- 有意思 yǒuyìsi · lo más corriente al hablar: 中文很有意思
+- 有趣 yǒuqù · interesante, divertido; algo más escrito: 那本书真有趣！
+
+## 手 shǒu y 瘦 shòu
+
+Solo cambia el tono: 手 baja y sube, 瘦 cae.
+
+- 手 shǒu · shǒu, baja y sube: mano
+- 瘦 shòu · shòu, cae: delgado
+
 ## Frases
 
 - ✅🃏 他很高。 · tā hěn gāo · Él es alto.
@@ -84,3 +104,8 @@ Casi iguales al oído: 本 běn (tercer tono) cuenta libros y 笨 bèn (cuarto t
 - ✅🃏 他不胖，他很瘦。 · tā bú pàng tā hěn shòu · No está gordo: es muy delgado.
 - ✅🃏 这个苹果真大！ · zhè ge píngguǒ zhēn dà · ¡Qué grande es esta manzana!
 - ✅🃏 阿姨，您很年轻！ · āyí nín hěn niánqīng · ¡Señora, qué joven es usted!
+- ✅🃏 她真漂亮！ · tā zhēn piàoliang · ¡Qué guapa es!
+- ✅🃏 这件衣服不好看。 · zhè jiàn yīfu bù hǎokàn · Esta ropa no es bonita.
+- ✅🃏 那本书真有趣！ · nà běn shū zhēn yǒuqù · ¡Qué interesante es ese libro!
+- ✅🃏 今天特别冷。 · jīntiān tèbié lěng · Hoy hace muchísimo frío.
+- ✅🃏 中文很有意思。 · Zhōngwén hěn yǒuyìsi · El chino es muy interesante.

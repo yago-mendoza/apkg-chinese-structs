@@ -1548,3 +1548,162 @@ exercises:
     answer: {typed: jin4, hanzi: 近, pinyin: jìn, meaning: 'Sale en 最近 zuìjìn «últimamente, estos días», 最近怎么样 zuìjìn zěnmeyàng
         «¿qué tal últimamente?», 最近忙吗 zuìjìn máng ma «¿mucho lío últimamente?».'}
     comments: []
+  - id: x.dictation.kuaile
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.kuaile]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kuai4 le4, hanzi: 快乐, pinyin: kuàilè, meaning: 'feliz, alegre'}
+    comments: []
+  - id: x.read.kuaile
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.kuaile]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 快乐}
+    answer: {hanzi: 快乐, pinyin: kuàilè, meaning: 'feliz, alegre'}
+    comments: []
+  - id: x.dictation.shengrikuaile
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [e.shengrikuaile]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: sheng1 ri4 kuai4 le4, hanzi: 生日快乐, pinyin: shēngrì kuàilè, meaning: ¡feliz cumpleaños!}
+    comments: []
+  - id: x.produce.shengrikuaile
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [e.shengrikuaile]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¡feliz cumpleaños!»? Escribe el pinyin.'}
+    answer: {typed: sheng1 ri4 kuai4 le4, hanzi: 生日快乐, pinyin: shēngrì kuàilè, meaning: ¡feliz cumpleaños!}
+    comments: []
+  - id: x.read.shengrikuaile
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [e.shengrikuaile]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 生日快乐}
+    answer: {hanzi: 生日快乐, pinyin: shēngrì kuàilè, meaning: ¡feliz cumpleaños!}
+    comments: []
+  - id: x.dictation.liwu
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.liwu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: li3 wu4, hanzi: 礼物, pinyin: lǐwù, meaning: regalo}
+    comments: []
+  - id: x.produce.liwu
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.liwu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «regalo»? Escribe el pinyin.'}
+    answer: {typed: li3 wu4, hanzi: 礼物, pinyin: lǐwù, meaning: regalo}
+    comments: []
+  - id: x.read.liwu
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.liwu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 礼物}
+    answer: {hanzi: 礼物, pinyin: lǐwù, meaning: regalo}
+    comments: []
+  - id: x.dictation.gongxi
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [e.gongxi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gong1 xi3, hanzi: 恭喜, pinyin: gōngxǐ, meaning: ¡enhorabuena!}
+    comments: []
+  - id: x.read.gongxi
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [e.gongxi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 恭喜}
+    answer: {hanzi: 恭喜, pinyin: gōngxǐ, meaning: ¡enhorabuena!}
+    comments: []
+  - id: x.listen.xiexie-ni-de-liwu
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.xiexie-ni-de-liwu
+    targets: [s.xiexie-ni-de-liwu]
+    context: [e.xiexie, w.ni, w.de, w.liwu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Gracias por tu regalo!}
+    comments: []
+  - id: x.produce.xiexie-ni-de-liwu
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.xiexie-ni-de-liwu
+    targets: [s.xiexie-ni-de-liwu]
+    context: [e.xiexie, w.ni, w.de, w.liwu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Gracias por tu regalo!»'}
+    answer: {meaning: ¡Gracias por tu regalo!}
+    comments: []
+  - id: x.charsound.le
+    added: 2026-10-08
+    lang: es
+    type: charsound
+    targets: [w.kuaile, e.shengrikuaile, w.kele, w.yinyue]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Tiene más de una lectura: dilas.', hanzi: 乐}
+    answer: {hanzi: 乐, pinyin: lè / yuè, meaning: 'Sale en 快乐 kuàilè «feliz, alegre», 生日快乐 shēngrì kuàilè «¡feliz cumpleaños!»,
+        可乐 kělè «refresco de cola», 音乐 yīnyuè «música».'}
+    comments: []
+  - id: x.charsound.xi-3
+    added: 2026-10-08
+    lang: es
+    type: charsound
+    targets: [e.gongxi, w.xihuan]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 喜}
+    answer: {typed: xi3, hanzi: 喜, pinyin: xǐ, meaning: 'Sale en 恭喜 gōngxǐ «¡enhorabuena!», 喜欢 xǐhuan «gustar».'}
+    comments: []
+  - id: x.charsound.kuai
+    added: 2026-10-08
+    lang: es
+    type: charsound
+    targets: [w.kuaile, e.shengrikuaile]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 快}
+    answer: {typed: kuai4, hanzi: 快, pinyin: kuài, meaning: 'Sale en 快乐 kuàilè «feliz, alegre», 生日快乐 shēngrì kuàilè «¡feliz
+        cumpleaños!».'}
+    comments: []
+  - id: x.charsound.wu
+    added: 2026-10-08
+    lang: es
+    type: charsound
+    targets: [w.liwu, w.shiwu]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 物}
+    answer: {typed: wu4, hanzi: 物, pinyin: wù, meaning: 'Sale en 礼物 lǐwù «regalo», 食物 shíwù «alimentos, comida (lo que se come)».'}
+    comments: []
+  - id: x.situation.shengrikuaile
+    added: 2026-10-08
+    lang: es
+    type: speak
+    targets: [e.shengrikuaile]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Es el cumpleaños de una amiga y te la encuentras por la mañana. ¿Qué le dices?'}
+    answer: {hanzi: '生日快乐！', pinyin: 'shēngrì kuàilè', meaning: '¡feliz cumpleaños!'}
+    comments: []

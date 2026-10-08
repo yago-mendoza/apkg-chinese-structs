@@ -1,0 +1,43 @@
+# Frases · Casa y objetos. Esquema: 3-data/README.md
+
+sentences:
+  - id: s.bingxiang-li-you-jidan-ma
+    use: say
+    segments:
+      - {text: 冰箱, ref: w.bingxiang, pinyin: 'bīngxiāng'}
+      - {text: 里, ref: w.li.inside, pinyin: 'lǐ'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 鸡蛋, ref: w.jidan, pinyin: 'jīdàn'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Hay huevos en la nevera?', en: 'Are there any eggs in the fridge?'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.wo-meiyou-shoubiao
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 没有, ref: w.meiyou, pinyin: 'méiyǒu'}
+      - {text: 手表, ref: w.shoubiao, pinyin: 'shǒubiǎo'}
+      - {text: 。}
+    translation: {es: 'No tengo reloj.', en: 'I don''t have a watch.'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+  - id: s.wo-de-erji-ne
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 耳机, ref: w.erji, pinyin: 'ěrjī'}
+      - {text: 呢, ref: w.ne, pinyin: 'ne'}
+      - {text: ？}
+    translation: {es: '¿Dónde están mis auriculares?', en: 'Where are my earphones?'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.wo-zai-fangjian-li
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 房间, ref: w.fangjian, pinyin: 'fángjiān'}
+      - {text: 里, ref: w.li.inside, pinyin: 'lǐ'}
+      - {text: 。}
+    translation: {es: 'Estoy en la habitación.', en: 'I''m in my room.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}

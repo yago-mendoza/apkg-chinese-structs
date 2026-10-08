@@ -355,3 +355,33 @@ entries:
       - {ref: w.ci.word, cue: '词: una palabra, de uno o más 字'}
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
     comments: []
+  - id: w.fuxi
+    use: say
+    role: content
+    kind: word
+    hanzi: 复习
+    pinyin: 'fùxí'
+    meaning: {es: 'repasar', en: 'to review'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '复习 es repasar lo que ya se vio; 学习, estudiar algo nuevo. Comparten 习.'}
+  - id: w.biji
+    use: say
+    role: content
+    kind: word
+    hanzi: 笔记
+    pinyin: 'bǐjì'
+    meaning: {es: 'apuntes, notas', en: 'notes'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 笔 «bolígrafo» + 记 «anotar».'}
+  - id: w.maobi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 毛笔
+    pinyin: 'máobǐ'
+    meaning: {es: 'pincel (de caligrafía)', en: 'writing brush'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 毛 «pelo» + 笔 «instrumento para escribir»: el pincel de pelo.'}

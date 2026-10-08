@@ -26,6 +26,9 @@
 - ✅🃏 服务员 fúwùyuán [fu˧˥ u˥˩ ɥœn˧˥] · camarero, camarera · _sustantivo_ · Para llamarle se dice 服务员！ 小姐 «señorita» ya no se usa para eso: puede sonar mal.
 - ✅🃏 小姐 xiǎojiě [ɕjɑʊ˧˩˧ tɕjɛ˧˩˧] · señorita (tras el apellido) · _sustantivo_
 - ✅🃏 小朋友 xiǎopéngyǒu [ɕjɑʊ˧˩˧ pʰɤŋ˧˥ joʊ˧˩˧] · niño, niña (al hablarle) · _sustantivo_ · Así se llama a un niño que no conoces: 小朋友，你几岁？.
+- ✅🃏 跟 gēn [kən˥] · con (alguien) · _preposición_ · 跟 + persona + verbo: 你想跟我一起吃饭吗？ «¿quieres comer conmigo?». Suele ir con 一起.
+- ✅🃏 一起 yīqǐ [i˥ tɕʰi˧˩˧] · juntos · _sustantivo_ · Va delante del verbo: 一起吃饭 «comer juntos». Con 一 delante de tercer tono, se lee yìqǐ.
+- ✅🃏 给 gěi [keɪ˧˩˧] · a, para (alguien) · _preposición_ · 给 + persona va delante del verbo: 给我打电话 «llámame». Suelto, el verbo 给 es «dar».
 
 ## 他, 她 y 它: los tres son tā
 
@@ -66,3 +69,6 @@ Los dos encierran algo: 医 en una caja abierta a la derecha, 国 en un cuadro c
 - ✅🃏 你是谁？不对。你是什么东西？你为什么这么高？ · nǐ shì shéi bú duì nǐ shì shénme dōngxi nǐ wèishénme zhème gāo · ¿Quién eres? No, espera: ¿qué eres? ¿Por qué eres tan alto?
 - ✅🃏 这个人是我的朋友。 · zhè ge rén shì wǒ de péngyou · Esta persona es mi amigo.
 - ✅🃏 服务员，我要这个。 · fúwùyuán wǒ yào zhè ge · Camarero, quiero este.
+- ✅🃏 他不是我的老师。 · tā bú shì wǒ de lǎoshī · No es mi profesor.
+- ✅🃏 你想跟我一起吃饭吗？ · nǐ xiǎng gēn wǒ yìqǐ chīfàn ma · ¿Quieres comer conmigo?
+- ✅🃏 谁来了？ · shéi lái le · ¿Quién ha venido?

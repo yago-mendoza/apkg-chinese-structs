@@ -1,0 +1,617 @@
+# Ejercicios · Lugares y transporte. Esquema: 3-data/README.md
+
+exercises:
+  - id: x.contrast.nali
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.na-nar
+    targets: [w.nali]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es nǎlǐ, «dónde»?'}
+    answer: {hanzi: 哪里, pinyin: nǎlǐ, meaning: dónde}
+    comments: []
+  - id: x.dictation.nali
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.nali]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: na3 li3, hanzi: 哪里, pinyin: nǎlǐ, meaning: dónde}
+    comments: []
+  - id: x.cloze.nali
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.qingwen-fandian-zai-nali
+    gap: w.nali
+    targets: [w.nali]
+    context: [e.qingwen, w.fandian, w.zai.at]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Perdone, ¿dónde hay un restaurante?»'}
+    answer: {typed: na3 li3, hanzi: 哪里, pinyin: nǎlǐ, meaning: dónde}
+    comments: []
+  - id: x.read.nali
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.nali]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 哪里}
+    answer: {hanzi: 哪里, pinyin: nǎlǐ, meaning: dónde}
+    comments: []
+  - id: x.tones.nali
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.nali]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 哪里, pinyin: na li}
+    answer: {typed: '33', hanzi: 哪里, pinyin: nǎlǐ, meaning: dónde}
+    comments: []
+  - id: x.charsound.li
+    added: 2026-10-06
+    lang: es
+    type: charsound
+    targets: [w.nali, w.zheli]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 里}
+    answer: {typed: li3, hanzi: 里, pinyin: lǐ, meaning: 'Sale en 哪里 nǎlǐ «dónde», 这里 zhèlǐ «aquí».'}
+    comments: []
+  - id: x.read.huoche
+    added: 2026-09-25
+    type: read
+    targets: [w.huoche]
+    skills: [reading, pinyin, tones]
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 火车}
+    answer: {typed: huo3 che1, hanzi: 火车, pinyin: huǒchē, meaning: tren}
+    lang: es
+    comments: []
+  - id: x.read.rukou
+    added: 2026-09-25
+    type: read
+    targets: [w.rukou]
+    skills: [reading, pinyin, tones]
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 入口}
+    answer: {typed: ru4 kou3, hanzi: 入口, pinyin: rùkǒu, meaning: entrada}
+    lang: es
+    comments: []
+  - id: x.dictation.huoche
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.huoche]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: huo3 che1, hanzi: 火车, pinyin: huǒchē, meaning: tren}
+    comments: []
+  - id: x.dictation.feiji
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.feiji]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fei1 ji1, hanzi: 飞机, pinyin: fēijī, meaning: avión}
+    comments: []
+  - id: x.read.feiji
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.feiji]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 飞机}
+    answer: {hanzi: 飞机, pinyin: fēijī, meaning: avión}
+    comments: []
+  - id: x.read.chukou
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.chukou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 出口}
+    answer: {hanzi: 出口, pinyin: chūkǒu, meaning: salida}
+    comments: []
+  - id: x.dictation.zheli
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.zheli]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhe4 li3, hanzi: 这里, pinyin: zhèlǐ, meaning: aquí}
+    comments: []
+  - id: x.read.zheli
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.zheli]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 这里}
+    answer: {hanzi: 这里, pinyin: zhèlǐ, meaning: aquí}
+    comments: []
+  - id: x.cloze.zheli
+    added: 2026-10-01
+    lang: es
+    type: cloze
+    sentence: s.wo-zai-zheli
+    gap: w.zheli
+    targets: [w.zheli]
+    context: [w.wo, w.zai.at]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Estoy aquí.»'}
+    answer: {typed: zhe4 li3, hanzi: 这里, pinyin: zhèlǐ, meaning: aquí}
+    comments: []
+  - id: x.tones.huoche
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.huoche]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '31', hanzi: 火车, pinyin: huǒchē, meaning: tren}
+    comments: []
+  - id: x.tones.feiji
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.feiji]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '11', hanzi: 飞机, pinyin: fēijī, meaning: avión}
+    comments: []
+  - id: x.dictation.jichang
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.jichang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ji1 chang3, hanzi: 机场, pinyin: jīchǎng, meaning: aeropuerto}
+    comments: []
+  - id: x.produce.jichang
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.jichang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «aeropuerto»? Escribe el pinyin.'}
+    answer: {typed: ji1 chang3, hanzi: 机场, pinyin: jīchǎng, meaning: aeropuerto}
+    comments: []
+  - id: x.read.jichang
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.jichang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 机场}
+    answer: {hanzi: 机场, pinyin: jīchǎng, meaning: aeropuerto}
+    comments: []
+  - id: x.tones.jichang
+    added: 2026-10-08
+    lang: es
+    type: tones
+    targets: [w.jichang]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '13', hanzi: 机场, pinyin: jīchǎng, meaning: aeropuerto}
+    comments: []
+  - id: x.dictation.ditie
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.ditie]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: di4 tie3, hanzi: 地铁, pinyin: dìtiě, meaning: metro}
+    comments: []
+  - id: x.produce.ditie
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.ditie]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «metro»? Escribe el pinyin.'}
+    answer: {typed: di4 tie3, hanzi: 地铁, pinyin: dìtiě, meaning: metro}
+    comments: []
+  - id: x.read.ditie
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.ditie]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 地铁}
+    answer: {hanzi: 地铁, pinyin: dìtiě, meaning: metro}
+    comments: []
+  - id: x.dictation.siji
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.siji]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: si1 ji1, hanzi: 司机, pinyin: sījī, meaning: 'conductor (de taxi, de autobús)'}
+    comments: []
+  - id: x.produce.siji
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.siji]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «conductor (de taxi, de autobús)»? Escribe el pinyin.'}
+    answer: {typed: si1 ji1, hanzi: 司机, pinyin: sījī, meaning: 'conductor (de taxi, de autobús)'}
+    comments: []
+  - id: x.read.siji
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.siji]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 司机}
+    answer: {hanzi: 司机, pinyin: sījī, meaning: 'conductor (de taxi, de autobús)'}
+    comments: []
+  - id: x.dictation.ditu
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.ditu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: di4 tu2, hanzi: 地图, pinyin: dìtú, meaning: mapa}
+    comments: []
+  - id: x.read.ditu
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.ditu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 地图}
+    answer: {hanzi: 地图, pinyin: dìtú, meaning: mapa}
+    comments: []
+  - id: x.tones.ditu
+    added: 2026-10-08
+    lang: es
+    type: tones
+    targets: [w.ditu]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '42', hanzi: 地图, pinyin: dìtú, meaning: mapa}
+    comments: []
+  - id: x.dictation.chuan
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.chuan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chuan2, hanzi: 船, pinyin: chuán, meaning: barco}
+    comments: []
+  - id: x.read.chuan
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.chuan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 船}
+    answer: {hanzi: 船, pinyin: chuán, meaning: barco}
+    comments: []
+  - id: x.dictation.xuexiao
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.xuexiao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xue2 xiao4, hanzi: 学校, pinyin: xuéxiào, meaning: 'escuela, colegio'}
+    comments: []
+  - id: x.produce.xuexiao
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.xuexiao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «escuela, colegio»? Escribe el pinyin.'}
+    answer: {typed: xue2 xiao4, hanzi: 学校, pinyin: xuéxiào, meaning: 'escuela, colegio'}
+    comments: []
+  - id: x.read.xuexiao
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.xuexiao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 学校}
+    answer: {hanzi: 学校, pinyin: xuéxiào, meaning: 'escuela, colegio'}
+    comments: []
+  - id: x.tones.xuexiao
+    added: 2026-10-08
+    lang: es
+    type: tones
+    targets: [w.xuexiao]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '24', hanzi: 学校, pinyin: xuéxiào, meaning: 'escuela, colegio'}
+    comments: []
+  - id: x.dictation.nali.there
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.nali.there]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: na4 li3, hanzi: 那里, pinyin: nàlǐ, meaning: allí}
+    comments: []
+  - id: x.cloze.nali.there
+    added: 2026-10-08
+    lang: es
+    type: cloze
+    sentence: s.ta-zai-nali
+    gap: w.nali.there
+    targets: [w.nali.there]
+    context: [w.ta.he, w.zai.at]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Está allí.»'}
+    answer: {typed: na4 li3, hanzi: 那里, pinyin: nàlǐ, meaning: allí}
+    comments: []
+  - id: x.read.nali.there
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.nali.there]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 那里}
+    answer: {hanzi: 那里, pinyin: nàlǐ, meaning: allí}
+    comments: []
+  - id: x.tones.nali.there
+    added: 2026-10-08
+    lang: es
+    type: tones
+    targets: [w.nali.there]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '43', hanzi: 那里, pinyin: nàlǐ, meaning: allí}
+    comments: []
+  - id: x.dictation.li.inside
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.li.inside]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: li3, hanzi: 里, pinyin: lǐ, meaning: 'dentro, en (detrás de un lugar)'}
+    comments: []
+  - id: x.cloze.li.inside
+    added: 2026-10-08
+    lang: es
+    type: cloze
+    sentence: s.wo-zai-fangjian-li
+    gap: w.li.inside
+    targets: [w.li.inside]
+    context: [w.wo, w.zai.at, w.fangjian]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Estoy en la habitación.»'}
+    answer: {typed: li3, hanzi: 里, pinyin: lǐ, meaning: 'dentro, en (detrás de un lugar)'}
+    comments: []
+  - id: x.read.li.inside
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.li.inside]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 里}
+    answer: {hanzi: 里, pinyin: lǐ, meaning: 'dentro, en (detrás de un lugar)'}
+    comments: []
+  - id: x.dictation.jiedao
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.jiedao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jie1 dao4, hanzi: 街道, pinyin: jiēdào, meaning: calle}
+    comments: []
+  - id: x.read.jiedao
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.jiedao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 街道}
+    answer: {hanzi: 街道, pinyin: jiēdào, meaning: calle}
+    comments: []
+  - id: x.dictation.chepiao
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.chepiao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: che1 piao4, hanzi: 车票, pinyin: chēpiào, meaning: billete (de tren o autobús)}
+    comments: []
+  - id: x.read.chepiao
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.chepiao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 车票}
+    answer: {hanzi: 车票, pinyin: chēpiào, meaning: billete (de tren o autobús)}
+    comments: []
+  - id: x.tones.chepiao
+    added: 2026-10-08
+    lang: es
+    type: tones
+    targets: [w.chepiao]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '14', hanzi: 车票, pinyin: chēpiào, meaning: billete (de tren o autobús)}
+    comments: []
+  - id: x.listen.ta-zai-jichang
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.ta-zai-jichang
+    targets: [s.ta-zai-jichang]
+    context: [w.ta.she, w.zai.at, w.jichang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Está en el aeropuerto.}
+    comments: []
+  - id: x.produce.ta-zai-jichang
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.ta-zai-jichang
+    targets: [s.ta-zai-jichang]
+    context: [w.ta.she, w.zai.at, w.jichang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Está en el aeropuerto.»'}
+    answer: {meaning: Está en el aeropuerto.}
+    comments: []
+  - id: x.listen.ta-shi-siji
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.ta-shi-siji
+    targets: [s.ta-shi-siji]
+    context: [w.ta.he, w.shi, w.siji]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es conductor.}
+    comments: []
+  - id: x.produce.ta-shi-siji
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.ta-shi-siji
+    targets: [s.ta-shi-siji]
+    context: [w.ta.he, w.shi, w.siji]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Es conductor.»'}
+    answer: {meaning: Es conductor.}
+    comments: []
+  - id: x.listen.wo-zuo-ditie-qu-jichang
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.wo-zuo-ditie-qu-jichang
+    targets: [s.wo-zuo-ditie-qu-jichang]
+    context: [w.wo, w.zuo.sit, w.ditie, w.qu, w.jichang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Voy al aeropuerto en metro.}
+    comments: []
+  - id: x.produce.wo-zuo-ditie-qu-jichang
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.wo-zuo-ditie-qu-jichang
+    targets: [s.wo-zuo-ditie-qu-jichang]
+    context: [w.wo, w.zuo.sit, w.ditie, w.qu, w.jichang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Voy al aeropuerto en metro.»'}
+    answer: {meaning: Voy al aeropuerto en metro.}
+    comments: []
+  - id: x.listen.ta-zai-xuexiao
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.ta-zai-xuexiao
+    targets: [s.ta-zai-xuexiao]
+    context: [w.ta.he, w.zai.at, w.xuexiao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Está en la escuela.}
+    comments: []
+  - id: x.produce.ta-zai-xuexiao
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.ta-zai-xuexiao
+    targets: [s.ta-zai-xuexiao]
+    context: [w.ta.he, w.zai.at, w.xuexiao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Está en la escuela.»'}
+    answer: {meaning: Está en la escuela.}
+    comments: []
+  - id: x.listen.nali-you-liang-zhi-xiongmao
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.nali-you-liang-zhi-xiongmao
+    targets: [s.nali-you-liang-zhi-xiongmao]
+    context: [w.nali.there, w.you.have, w.liang, w.zhi.cl, w.xiongmao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Allí hay dos pandas.}
+    comments: []
+  - id: x.produce.nali-you-liang-zhi-xiongmao
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.nali-you-liang-zhi-xiongmao
+    targets: [s.nali-you-liang-zhi-xiongmao]
+    context: [w.nali.there, w.you.have, w.liang, w.zhi.cl, w.xiongmao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Allí hay dos pandas.»'}
+    answer: {meaning: Allí hay dos pandas.}
+    comments: []
+  - id: x.charsound.di
+    added: 2026-10-08
+    lang: es
+    type: charsound
+    targets: [w.ditie, w.ditu]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 地}
+    answer: {typed: di4, hanzi: 地, pinyin: dì, meaning: 'Sale en 地铁 dìtiě «metro», 地图 dìtú «mapa».'}
+    comments: []
+  - id: x.charsound.che
+    added: 2026-10-08
+    lang: es
+    type: charsound
+    targets: [w.huoche, w.chepiao]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 车}
+    answer: {typed: che1, hanzi: 车, pinyin: chē, meaning: 'Sale en 火车 huǒchē «tren», 车票 chēpiào «billete (de tren o autobús)».'}
+    comments: []
+  - id: x.listen.ta-zai-nali
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.ta-zai-nali
+    targets: [s.ta-zai-nali]
+    context: [w.ta.he, w.zai.at, w.nali.there]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Está allí.}
+    comments: []
+  - id: x.produce.ta-zai-nali
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.ta-zai-nali
+    targets: [s.ta-zai-nali]
+    context: [w.ta.he, w.zai.at, w.nali.there]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Está allí.»'}
+    answer: {meaning: Está allí.}
+    comments: []
+  - id: x.comprehension.al-aeropuerto
+    added: 2026-10-08
+    lang: es
+    type: comprehension
+    targets: [s.ta-zai-jichang, s.wo-zuo-ditie-qu-jichang, s.mingtian-jian]
+    skills: [reading, comprehension]
+    script: both
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Dónde está ella, y cómo va hasta allí quien habla?'}
+    answer: {meaning: 'Ella está en el aeropuerto; quien habla va en metro y se despide hasta mañana.'}
+    comments: []

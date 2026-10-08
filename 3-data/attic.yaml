@@ -46,15 +46,6 @@ items:
     reason: HSK 6; poco útil para el día a día.
     notes: []
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-  - id: a.chepiao
-    hanzi: 车票
-    pinyin: chēpiào
-    meaning: {es: 'billete (de tren o autobús)'}
-    theme: compras
-    links: [车, 火车, 公共汽车, 地铁, 坐车]
-    reason: HSK 1, pero 票 y 机票 cubrían la idea; entra con el transporte.
-    notes: []
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.menpiao
     hanzi: 门票
     pinyin: ménpiào
@@ -79,16 +70,6 @@ items:
     notes:
       - {text: '灰 huī es «ceniza»: el color de la ceniza.'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-  - id: a.yueliang
-    hanzi: 月亮
-    pinyin: yuèliang
-    meaning: {es: luna}
-    theme: clima
-    links: [太阳, 星星, 天空, 亮]
-    reason: HSK 2; mencionado en notas, sin frase.
-    notes:
-      - {text: '月 ya es «luna» (y «mes»); 月亮 es la palabra corriente para la luna. 亮 pierde el tono: yuèliang.'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.liang
     hanzi: 亮
     pinyin: liàng
@@ -98,16 +79,6 @@ items:
     reason: HSK 2; de momento solo vive dentro de 漂亮.
     notes:
       - {text: 'La parte de arriba es la de 高, recortada. 很亮 «hay mucha luz». 亮出来 «sacar a la vista».'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-  - id: a.yun
-    hanzi: 云
-    pinyin: yún
-    meaning: {es: nube}
-    theme: clima
-    links: [阴, 晴, 下雪, 刮风, 太阳]
-    reason: HSK 2; entra con más tiempo meteorológico.
-    notes:
-      - {text: 'Aparece en la parte de abajo de 会 huì.'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
 
   # ---------------------------------------------------------------- dinero, errores
@@ -213,6 +184,8 @@ items:
       - {text: 'Forma oficios que ejercen una acción: 记者 «periodista», 作者 «autor». No es el 师 de 老师. 或者 «o bien» no es de agente.'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.wang
+    snooze: 008-2026-10-08-pedir-ayuda-lugares-y-finales
+    snooze_reason: 'llegó un Wang (王阿姨, en clase), pero anki.py le daría el nivel de la lista para «rey», HSK 4, y como apellido es de nivel 1: entra cuando el nivel pueda fijarse por sentido (propuesta en el review)'
     hanzi: 王
     pinyin: wáng
     meaning: {es: 'rey; Wang (apellido)'}
@@ -222,30 +195,8 @@ items:
     notes:
       - {text: '玉 yù «jade» [HSK 4] es 王 con un punto.'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-  - id: a.gongxi
-    snooze: 007-2026-10-07-fechas-ordinales-y-clasificadores
-    snooze_reason: 'entra con las felicitaciones (生日快乐), en otro lote'
-    hanzi: 恭喜
-    pinyin: gōngxǐ
-    meaning: {es: ¡enhorabuena!}
-    theme: saludos
-    links: [祝, 生日, 新年, 快乐, 结婚]
-    reason: 'HSK 7 en la lista, pero se oye mucho (恭喜发财 en Año Nuevo): entra con las felicitaciones.'
-    notes:
-      - {text: '恭 «respetuoso» + 喜 «alegría», el mismo de 喜欢.'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
 
   # ---------------------------------------------------------------- animales, cuerpo
-  - id: a.erduo
-    hanzi: 耳朵
-    pinyin: ěrduo
-    meaning: {es: oreja}
-    theme: describir
-    links: [眼睛, 鼻子, 嘴, 头, 身体]
-    reason: HSK 5; entra con el cuerpo.
-    notes:
-      - {text: '耳 «oreja» está en 聪 de 聪明.'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.pa
     hanzi: 怕
     pinyin: pà
@@ -257,6 +208,8 @@ items:
       - {text: '忄 «corazón» + 白 bái, que da un sonido parecido.'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.gebo
+    snooze: 008-2026-10-08-pedir-ayuda-lugares-y-finales
+    snooze_reason: 'despierta por 手, que llegó suelta en un ejercicio de pinyin; 胳膊 es HSK 7 y espera a que el cuerpo entre de verdad'
     hanzi: 胳膊
     pinyin: gēbo
     meaning: {es: 'brazo'}
@@ -296,16 +249,6 @@ items:
     notes:
       - {text: '我坐飞机去中国看朋友表演 «volé a China a ver actuar a mi amigo»: una cadena de acciones larga.', original: 'wo zuo fei ji qu zhong guo kan peng you biao yan biao wu'}
     source: {batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
-  - id: a.tiaowu
-    hanzi: 跳舞
-    pinyin: tiàowǔ
-    meaning: {es: 'bailar'}
-    theme: cosas
-    links: [表演, 唱歌, 音乐]
-    reason: 'HSK 3.'
-    notes:
-      - {text: '跳 «saltar» + 舞 «danza».'}
-    source: {batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: a.baogao
     snooze: 007-2026-10-07-fechas-ordinales-y-clasificadores
     snooze_reason: 'HSK 3, de registro escolar o de trabajo'
@@ -328,3 +271,25 @@ items:
     notes:
       - {text: '完蛋了！ «¡estoy perdido!, ¡la he liado!».', original: 'wán dàn le (im screwed)'}
     source: {batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+
+  # ---------------------------------------------------------------- lote 008
+  - id: a.sanbu
+    hanzi: 散步
+    pinyin: sànbù
+    meaning: {es: 'pasear, dar un paseo'}
+    theme: cosas
+    links: [走走, 公园, 晚饭]
+    reason: 'HSK 3 y de tu investigación; para proponer un plan ya entra 你想跟我一起吃饭吗？, de nivel 1.'
+    notes:
+      - {text: '走走 zǒuzou, «andar un poco», es 走 repetido: 你想跟我一起走走吗？ «¿damos una vuelta?».'}
+    source: {batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: a.nong
+    hanzi: 弄
+    pinyin: nòng
+    meaning: {es: 'hacer, apañar, manipular (verbo comodín)'}
+    theme: cosas
+    links: [弄好, 弄坏, 弄错]
+    reason: 'HSK 2, muy coloquial, pero comodín sin sentido fijo: entra con una frase de clase o tuya.'
+    notes:
+      - {text: '你帮我弄一下这个 «ayúdame un momento con esto»: más natural que 你帮我一下这个.'}
+    source: {batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}

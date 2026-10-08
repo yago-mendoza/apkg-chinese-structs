@@ -72,3 +72,21 @@ sentences:
       - {text: 。}
     translation: {es: 'Mañana lloverá.', en: 'It will rain tomorrow.'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.tianqi-zhen-hao
+    use: say
+    segments:
+      - {text: 天气, ref: w.tianqi, pinyin: 'tiānqì'}
+      - {text: 真, ref: w.zhen, pinyin: 'zhēn'}
+      - {text: 好, ref: w.hao, pinyin: 'hǎo'}
+      - {text: ！}
+    translation: {es: '¡Qué buen tiempo hace!', en: 'What lovely weather!'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+  - id: s.beijing-xiaxue-le
+    use: say
+    segments:
+      - {text: 北京, ref: w.beijing, pinyin: 'Běijīng'}
+      - {text: 下雪, ref: w.xiaxue, pinyin: 'xiàxuě'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'Está nevando en Pekín.', en: 'It''s snowing in Beijing.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}

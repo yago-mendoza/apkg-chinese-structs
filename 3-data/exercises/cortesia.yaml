@@ -1312,3 +1312,426 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¡Cuidado!»'}
     answer: {meaning: ¡Cuidado!}
     comments: []
+  - id: x.dictation.yixia
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.yixia]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi1 xia4, hanzi: 一下, pinyin: yīxià, meaning: 'un momento, un poco (detrás del verbo)'}
+    comments: []
+  - id: x.cloze.yixia
+    added: 2026-10-08
+    lang: es
+    type: cloze
+    sentence: s.ni-deng-yixia
+    gap: w.yixia
+    targets: [w.yixia]
+    context: [w.ni, w.deng]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Espera un momento.»'}
+    answer: {typed: yi1 xia4, hanzi: 一下, pinyin: yīxià, meaning: 'un momento, un poco (detrás del verbo)'}
+    comments: []
+  - id: x.read.yixia
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.yixia]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 一下}
+    answer: {hanzi: 一下, pinyin: yīxià, meaning: 'un momento, un poco (detrás del verbo)'}
+    comments: []
+  - id: x.tones.yixia
+    added: 2026-10-08
+    lang: es
+    type: tones
+    targets: [w.yixia]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 一下, pinyin: yi xia}
+    answer: {typed: '14', hanzi: 一下, pinyin: yīxià, meaning: 'un momento, un poco (detrás del verbo)'}
+    comments: []
+  - id: x.dictation.rang
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.rang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: rang4, hanzi: 让, pinyin: ràng, meaning: 'dejar, hacer que'}
+    comments: []
+  - id: x.produce.rang
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.rang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «dejar, hacer que»? Escribe el pinyin.'}
+    answer: {typed: rang4, hanzi: 让, pinyin: ràng, meaning: 'dejar, hacer que'}
+    comments: []
+  - id: x.read.rang
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.rang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 让}
+    answer: {hanzi: 让, pinyin: ràng, meaning: 'dejar, hacer que'}
+    comments: []
+  - id: x.dictation.jieshi
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.jieshi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jie3 shi4, hanzi: 解释, pinyin: jiěshì, meaning: explicar}
+    comments: []
+  - id: x.produce.jieshi
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.jieshi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «explicar»? Escribe el pinyin.'}
+    answer: {typed: jie3 shi4, hanzi: 解释, pinyin: jiěshì, meaning: explicar}
+    comments: []
+  - id: x.read.jieshi
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.jieshi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 解释}
+    answer: {hanzi: 解释, pinyin: jiěshì, meaning: explicar}
+    comments: []
+  - id: x.dictation.fanyi
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.fanyi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fan1 yi4, hanzi: 翻译, pinyin: fānyì, meaning: traducir; traductor}
+    comments: []
+  - id: x.read.fanyi
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.fanyi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 翻译}
+    answer: {hanzi: 翻译, pinyin: fānyì, meaning: traducir; traductor}
+    comments: []
+  - id: x.dictation.meicuo
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [e.meicuo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mei2 cuo4, hanzi: 没错, pinyin: méi cuò, meaning: '¡exacto!, eso es'}
+    comments: []
+  - id: x.produce.meicuo
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [e.meicuo]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¡exacto!, eso es»? Escribe el pinyin.'}
+    answer: {typed: mei2 cuo4, hanzi: 没错, pinyin: méi cuò, meaning: '¡exacto!, eso es'}
+    comments: []
+  - id: x.read.meicuo
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [e.meicuo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 没错}
+    answer: {hanzi: 没错, pinyin: méi cuò, meaning: '¡exacto!, eso es'}
+    comments: []
+  - id: x.listen.ni-deng-yixia
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.ni-deng-yixia
+    targets: [s.ni-deng-yixia]
+    context: [w.ni, w.deng, w.yixia]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Espera un momento.}
+    comments: []
+  - id: x.produce.ni-deng-yixia
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.ni-deng-yixia
+    targets: [s.ni-deng-yixia]
+    context: [w.ni, w.deng, w.yixia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Espera un momento.»'}
+    answer: {meaning: Espera un momento.}
+    comments: []
+  - id: x.listen.wo-xiang-wen-yixia
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.wo-xiang-wen-yixia
+    targets: [s.wo-xiang-wen-yixia]
+    context: [w.wo, w.xiang, w.wen, w.yixia]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quería preguntar una cosa.}
+    comments: []
+  - id: x.produce.wo-xiang-wen-yixia
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.wo-xiang-wen-yixia
+    targets: [s.wo-xiang-wen-yixia]
+    context: [w.wo, w.xiang, w.wen, w.yixia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quería preguntar una cosa.»'}
+    answer: {meaning: Quería preguntar una cosa.}
+    comments: []
+  - id: x.listen.rang-wo-xiang-yixia
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.rang-wo-xiang-yixia
+    targets: [s.rang-wo-xiang-yixia]
+    context: [w.rang, w.wo, w.xiang, w.yixia]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Déjame pensarlo un momento.}
+    comments: []
+  - id: x.produce.rang-wo-xiang-yixia
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.rang-wo-xiang-yixia
+    targets: [s.rang-wo-xiang-yixia]
+    context: [w.rang, w.wo, w.xiang, w.yixia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Déjame pensarlo un momento.»'}
+    answer: {meaning: Déjame pensarlo un momento.}
+    comments: []
+  - id: x.listen.qing-ni-kan-yixia
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.qing-ni-kan-yixia
+    targets: [s.qing-ni-kan-yixia]
+    context: [w.qing, w.ni, w.kan, w.yixia]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Échale un vistazo, por favor.'}
+    comments: []
+  - id: x.produce.qing-ni-kan-yixia
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.qing-ni-kan-yixia
+    targets: [s.qing-ni-kan-yixia]
+    context: [w.qing, w.ni, w.kan, w.yixia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Échale un vistazo, por favor.»'}
+    answer: {meaning: 'Échale un vistazo, por favor.'}
+    comments: []
+  - id: x.listen.ni-keyi-jieshi-yixia-ma
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.ni-keyi-jieshi-yixia-ma
+    targets: [s.ni-keyi-jieshi-yixia-ma]
+    context: [w.ni, w.keyi, w.jieshi, w.yixia, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Me lo puedes explicar?'}
+    comments: []
+  - id: x.produce.ni-keyi-jieshi-yixia-ma
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.ni-keyi-jieshi-yixia-ma
+    targets: [s.ni-keyi-jieshi-yixia-ma]
+    context: [w.ni, w.keyi, w.jieshi, w.yixia, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Me lo puedes explicar?»'}
+    answer: {meaning: '¿Me lo puedes explicar?'}
+    comments: []
+  - id: x.listen.bang-wo-na-yixia
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.bang-wo-na-yixia
+    targets: [s.bang-wo-na-yixia]
+    context: [w.bang, w.wo, w.na.take, w.yixia]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Sujétamelo un momento.}
+    comments: []
+  - id: x.produce.bang-wo-na-yixia
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.bang-wo-na-yixia
+    targets: [s.bang-wo-na-yixia]
+    context: [w.bang, w.wo, w.na.take, w.yixia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Sujétamelo un momento.»'}
+    answer: {meaning: Sujétamelo un momento.}
+    comments: []
+  - id: x.listen.shei-lai-bangbang-wo
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.shei-lai-bangbang-wo
+    targets: [s.shei-lai-bangbang-wo]
+    context: [w.shei, w.lai, w.bang, w.wo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Quién me echa una mano?'}
+    comments: []
+  - id: x.produce.shei-lai-bangbang-wo
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.shei-lai-bangbang-wo
+    targets: [s.shei-lai-bangbang-wo]
+    context: [w.shei, w.lai, w.bang, w.wo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Quién me echa una mano?»'}
+    answer: {meaning: '¿Quién me echa una mano?'}
+    comments: []
+  - id: x.listen.dou-dui-le
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.dou-dui-le
+    targets: [s.dou-dui-le]
+    context: [w.dou, w.dui, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Está todo bien!}
+    comments: []
+  - id: x.produce.dou-dui-le
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.dou-dui-le
+    targets: [s.dou-dui-le]
+    context: [w.dou, w.dui, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Está todo bien!»'}
+    answer: {meaning: ¡Está todo bien!}
+    comments: []
+  - id: x.listen.ni-xuyao-bangzhu-ma
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.ni-xuyao-bangzhu-ma
+    targets: [s.ni-xuyao-bangzhu-ma]
+    context: [w.ni, w.xuyao, w.bangzhu, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Necesitas ayuda?'}
+    comments: []
+  - id: x.listen.dlg-shei-lai-bang-wo
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.dlg-shei-lai-bang-wo
+    targets: [s.dlg-shei-lai-bang-wo]
+    context: [w.shei, w.lai, w.bang, w.wo, w.ni, w.deng, w.yixia]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Quién me echa una mano? —¡Yo! Espera un momento.'}
+    comments: []
+  - id: x.charsound.si
+    added: 2026-10-08
+    lang: es
+    type: charsound
+    targets: [e.buhaoyisi, w.youyisi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 思}
+    answer: {typed: si1, hanzi: 思, pinyin: sī, meaning: 'Sale en 不好意思 bù hǎoyìsi «perdona; qué vergüenza; me sabe mal», 有意思
+        yǒuyìsi «interesante».'}
+    comments: []
+  - id: x.charsound.yi-2
+    added: 2026-10-08
+    lang: es
+    type: charsound
+    targets: [e.buhaoyisi, w.youyisi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 意}
+    answer: {typed: yi4, hanzi: 意, pinyin: yì, meaning: 'Sale en 不好意思 bù hǎoyìsi «perdona; qué vergüenza; me sabe mal», 有意思
+        yǒuyìsi «interesante».'}
+    comments: []
+  - id: x.charsound.qi-3
+    added: 2026-10-08
+    lang: es
+    type: charsound
+    targets: [w.duibuqi, w.yiqi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 起}
+    answer: {typed: qi3, hanzi: 起, pinyin: qǐ, meaning: 'Sale en 对不起 duìbuqǐ «lo siento», 一起 yīqǐ «juntos».'}
+    comments: []
+  - id: x.charsound.dao
+    added: 2026-10-08
+    lang: es
+    type: charsound
+    targets: [w.zhidao, w.jiedao]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 道}
+    answer: {typed: dao4, hanzi: 道, pinyin: dào, meaning: 'Sale en 知道 zhīdao «saber», 街道 jiēdào «calle».'}
+    comments: []
+  - id: x.nuance.bang-forms
+    added: 2026-10-08
+    lang: es
+    type: nuance
+    targets: [w.bang, w.bangmang, w.bangzhu]
+    skills: [comprehension, discrimination]
+    prompt: {text: '帮我, 帮帮我, 帮忙 y 帮助: ¿cuál lleva a la persona detrás, cuál no, y cuál suena a súplica?'}
+    answer: {meaning: '帮 + persona (+ verbo) es lo corriente: 帮我拿一下 «sujétamelo un momento». 帮帮我 es más cercano, casi una súplica. 帮忙 no lleva a nadie detrás: 他来帮忙 «viene a echar una mano»; es tan básico como 帮. 帮助 es más formal y también es «la ayuda»: 谢谢你的帮助.'}
+    comments: []
+  - id: x.nuance.kan-yixia
+    added: 2026-10-08
+    lang: es
+    type: nuance
+    targets: [w.yixia, w.kan]
+    skills: [comprehension, discrimination]
+    prompt: {text: '你看！, 你看一下。 y 请你看一下。: ordénalas de más brusca a más amable.'}
+    answer: {meaning: '你看！ es una orden: «¡mira!». 你看一下。 la suaviza: «echa un vistazo». 请你看一下。 la suaviza dos veces, con 请 y con 一下: «échale un vistazo, por favor».'}
+    comments: []
+  - id: x.situation.meicuo
+    added: 2026-10-08
+    lang: es
+    type: speak
+    targets: [e.meicuo]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Le explicas algo a un amigo y él lo resume justo como querías decirlo. ¿Qué le contestas, con énfasis?'}
+    answer: {hanzi: '没错！', pinyin: 'méi cuò', meaning: '¡exacto!'}
+    comments: []
+  - id: x.situation.bangbangwo
+    added: 2026-10-08
+    lang: es
+    type: speak
+    targets: [w.bang]
+    accept_pinyin_mismatch: 'el verbo repetido va en tono neutro'
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Llevas tres bolsas pesadas y se te caen las llaves. Pides ayuda a quien esté cerca, casi suplicando. ¿Qué dices?'}
+    answer: {hanzi: '帮帮我！', pinyin: 'bāngbang wǒ', meaning: '¡ayúdame, por favor!'}
+    comments: []
+  - id: x.comprehension.busco-el-movil
+    added: 2026-10-08
+    lang: es
+    type: comprehension
+    targets: [s.ni-deng-yixia, s.wo-zai-zhao-wo-de-shouji, s.ni-keyi-bang-wo-ma]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Qué está buscando y qué te pide?'}
+    answer: {meaning: 'Su móvil; te pide que esperes un momento y que le ayudes.'}
+    comments: []

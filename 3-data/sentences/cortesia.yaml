@@ -133,3 +133,110 @@ sentences:
       - {text: ！}
     translation: {es: '¡Cuidado!', en: 'Careful!'}
     source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
+  - id: s.ni-deng-yixia
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 等, ref: w.deng, pinyin: 'děng'}
+      - {text: 一下, ref: w.yixia, pinyin: 'yíxià', sandhi: true}
+      - {text: 。}
+    translation: {es: 'Espera un momento.', en: 'Wait a moment.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.wo-xiang-wen-yixia
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 问, ref: w.wen, pinyin: 'wèn'}
+      - {text: 一下, ref: w.yixia, pinyin: 'yíxià', sandhi: true}
+      - {text: 。}
+    translation: {es: 'Quería preguntar una cosa.', en: 'I''d like to ask something.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.rang-wo-xiang-yixia
+    use: say
+    segments:
+      - {text: 让, ref: w.rang, pinyin: 'ràng'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 一下, ref: w.yixia, pinyin: 'yíxià', sandhi: true}
+      - {text: 。}
+    translation: {es: 'Déjame pensarlo un momento.', en: 'Let me think for a moment.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.qing-ni-kan-yixia
+    use: say
+    segments:
+      - {text: 请, ref: w.qing, pinyin: 'qǐng'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 看, ref: w.kan, pinyin: 'kàn'}
+      - {text: 一下, ref: w.yixia, pinyin: 'yíxià', sandhi: true}
+      - {text: 。}
+    translation: {es: 'Échale un vistazo, por favor.', en: 'Please take a look.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.ni-keyi-jieshi-yixia-ma
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 可以, ref: w.keyi, pinyin: 'kěyǐ'}
+      - {text: 解释, ref: w.jieshi, pinyin: 'jiěshì'}
+      - {text: 一下, ref: w.yixia, pinyin: 'yíxià', sandhi: true}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Me lo puedes explicar?', en: 'Could you explain it?'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.bang-wo-na-yixia
+    use: say
+    segments:
+      - {text: 帮, ref: w.bang, pinyin: 'bāng'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 拿, ref: w.na.take, pinyin: 'ná'}
+      - {text: 一下, ref: w.yixia, pinyin: 'yíxià', sandhi: true}
+      - {text: 。}
+    translation: {es: 'Sujétamelo un momento.', en: 'Hold this for me a moment.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-08'}
+  - id: s.shei-lai-bangbang-wo
+    use: say
+    segments:
+      - {text: 谁, ref: w.shei, pinyin: 'shéi'}
+      - {text: 来, ref: w.lai, pinyin: 'lái'}
+      - {text: 帮, ref: w.bang, pinyin: 'bāng'}
+      - {text: 帮, ref: w.bang, pinyin: 'bang', sandhi: 'el verbo repetido va en tono neutro'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: ？}
+    translation: {es: '¿Quién me echa una mano?', en: 'Who can give me a hand?'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-08'}
+  - id: s.dou-dui-le
+    use: say
+    segments:
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 对, ref: w.dui, pinyin: 'duì'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: ！}
+    translation: {es: '¡Está todo bien!', en: 'It''s all correct!'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.ni-xuyao-bangzhu-ma
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 需要, ref: w.xuyao, pinyin: 'xūyào'}
+      - {text: 帮助, ref: w.bangzhu, pinyin: 'bāngzhù'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Necesitas ayuda?', en: 'Do you need help?'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.dlg-shei-lai-bang-wo
+    use: hear
+    segments:
+      - {text: 谁, ref: w.shei, pinyin: 'shéi'}
+      - {text: 来, ref: w.lai, pinyin: 'lái'}
+      - {text: 帮, ref: w.bang, pinyin: 'bāng'}
+      - {text: 帮, ref: w.bang, pinyin: 'bang', sandhi: 'el verbo repetido va en tono neutro'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: ？}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 来, ref: w.lai, pinyin: 'lái'}
+      - {text: ！}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 等, ref: w.deng, pinyin: 'děng'}
+      - {text: 一下, ref: w.yixia, pinyin: 'yíxià', sandhi: true}
+      - {text: 。}
+    translation: {es: '—¿Quién me echa una mano? —¡Yo! Espera un momento.', en: '—Who can give me a hand? —Me! Wait a moment.'}

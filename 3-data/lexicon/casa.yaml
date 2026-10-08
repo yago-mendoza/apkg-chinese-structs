@@ -1,0 +1,185 @@
+# Diccionario · Casa y objetos. Esquema: 3-data/README.md
+
+entries:
+  - id: w.shu
+    use: say
+    role: content
+    kind: word
+    hanzi: 书
+    pinyin: shū
+    meaning: {es: libro, en: book}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    comments: []
+  - id: w.shouji
+    use: say
+    role: content
+    kind: word
+    hanzi: 手机
+    pinyin: shǒujī
+    meaning: {es: móvil, en: mobile phone}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 手 «mano» + 机 «máquina».}
+      - {kind: character, private: false, date: '2026-09-27', text: '机 jī «máquina» (con 木 a la izquierda, no 扌): 手机 es la máquina de mano; 飞机 fēijī, la que vuela; 机票 jīpiào, su billete.'}
+  - id: w.men
+    use: hear
+    role: content
+    kind: word
+    hanzi: 门
+    pinyin: mén
+    meaning: {es: puerta, en: door}
+    connection: {kind: sound, with: [们, 问], text: '门 mén da el sonido a 们 men y a 问 wèn: ver 门 dentro de un carácter evoca ese sonido.'}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: character, private: false, date: '2026-09-27', text: El dibujo de una puerta de dos hojas.}
+  - id: w.kuaizi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 筷子
+    pinyin: 'kuàizi'
+    meaning: {es: 'palillos', en: 'chopsticks'}
+    accept_pinyin_mismatch: 'sufijo átono: kuàizi'
+    connection: {kind: sound, with: [快], text: '快 kuài «rápido» da el sonido a 筷 kuài, con ⺮ «bambú» encima.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: w.baozhi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 报纸
+    pinyin: 'bàozhǐ'
+    meaning: {es: 'periódico', en: 'newspaper'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: w.dianshi
+    use: say
+    role: content
+    kind: word
+    hanzi: 电视
+    pinyin: diànshì
+    meaning: {es: televisión, la tele, en: television, TV}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: deberes 2026-09-24, date: '2026-09-24'}
+    connection: {kind: sound, with: [礻], text: '视 shì toma el sonido de 示 shì, que a la izquierda de un carácter se escribe 礻: por eso suenan igual.'}
+    comments: []
+  - id: w.bi.pen
+    use: say
+    role: content
+    kind: word
+    hanzi: 笔
+    pinyin: 'bǐ'
+    meaning: {es: 'bolígrafo, lápiz', en: 'pen'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.beizi
+    use: say
+    role: content
+    kind: word
+    hanzi: 杯子
+    pinyin: 'bēizi'
+    meaning: {es: 'vaso, taza', en: 'cup, glass'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.dianhua
+    use: say
+    role: content
+    kind: word
+    hanzi: 电话
+    pinyin: 'diànhuà'
+    meaning: {es: 'teléfono', en: 'telephone'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.zhi.paper
+    use: say
+    role: content
+    kind: word
+    hanzi: 纸
+    pinyin: 'zhǐ'
+    meaning: {es: 'papel', en: 'paper'}
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []
+  - id: w.yifu
+    use: say
+    role: content
+    kind: word
+    hanzi: 衣服
+    pinyin: 'yīfu'
+    meaning: {es: 'ropa', en: 'clothes'}
+    accept_pinyin_mismatch: 'la segunda sílaba se dice átona'
+    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []
+  - id: w.bingxiang
+    use: say
+    role: content
+    kind: word
+    hanzi: 冰箱
+    pinyin: 'bīngxiāng'
+    meaning: {es: 'nevera', en: 'fridge'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 冰 «hielo» + 箱 «caja»: «caja de hielo».'}
+      - {kind: teacher, private: false, date: '2026-10-08', text: 'En clase: 这是一个冰箱。 «Esto es una nevera.» 个 es su clasificador.'}
+      - {kind: character, private: false, date: '2026-10-08', text: '相 xiāng da el sonido a 箱 xiāng y a 想 xiǎng; ⺮ «bambú» da el sentido de 箱: las cajas eran de bambú.'}
+  - id: w.chuang
+    use: hear
+    role: content
+    kind: word
+    hanzi: 床
+    pinyin: 'chuáng'
+    meaning: {es: 'cama', en: 'bed'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '起床 qǐchuáng «levantarse» lleva 床: «salir de la cama».'}
+  - id: w.zhong.clock
+    use: hear
+    role: content
+    kind: word
+    hanzi: 钟
+    pinyin: 'zhōng'
+    meaning: {es: 'reloj (de pared)', en: 'clock'}
+    connection: {kind: sound, with: [中], text: '中 zhōng da el sonido a 钟 zhōng; 钅 «metal» da el sentido: era la campana de bronce.'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '钟 es el reloj de pared o el de una torre; el de pulsera es 手表.'}
+  - id: w.shoubiao
+    use: say
+    role: content
+    kind: word
+    hanzi: 手表
+    pinyin: 'shǒubiǎo'
+    meaning: {es: 'reloj (de pulsera)', en: 'watch'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 手 «mano» + 表 «indicador». Dos terceros tonos: se dice shóubiǎo.'}
+      - {kind: teacher, private: false, date: '2026-10-08', text: 'En clase: 我没有手表。 «No tengo reloj.»'}
+      - {kind: sound, private: false, date: '2026-10-08', text: 'En biǎo, la a bien marcada y la o floja.', original: 'shoubiao, la a es pija  y la o floja'}
+  - id: w.erji
+    use: say
+    role: content
+    kind: word
+    hanzi: 耳机
+    pinyin: 'ěrjī'
+    meaning: {es: 'auriculares', en: 'earphones'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 耳 «oreja» + 机 «aparato».'}
+  - id: w.fangjian
+    use: say
+    role: content
+    kind: word
+    hanzi: 房间
+    pinyin: 'fángjiān'
+    meaning: {es: 'habitación', en: 'room'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Con un lugar, 在 + sitio + 里: 我在房间里 «estoy en la habitación».'}
+  - id: w.dadianhua
+    use: say
+    role: content
+    kind: word
+    hanzi: 打电话
+    pinyin: 'dǎ diànhuà'
+    meaning: {es: 'llamar por teléfono', en: 'to make a phone call'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 打 «dar, golpear» + 电话 «teléfono». A quién se llama va delante, con 给: 给我打电话 «llámame».'}

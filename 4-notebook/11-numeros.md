@@ -4,17 +4,17 @@
 
 ## Vocabulario
 
-- ✅🃏 八 bā [pa˥] · ocho · _número_
+- ✅🃏 八 bā [pa˥] · ocho · _número_ · 八 es como la entrada de una cueva.
 - ✅🃏 一 yī [i˥] · uno · _número_
 - ✅🃏 二 èr [ɑɻ˥˩] · dos · _número_
 - ✅🃏 三 sān [san˥] · tres · _número_
 - ✅🃏 四 sì [sɯ˥˩] · cuatro · _número_
-- ✅🃏 五 wǔ [u˧˩˧] · cinco · _número_
+- ✅🃏 五 wǔ [u˧˩˧] · cinco · _número_ · 五 se parece un poco a un 5. · Me recuerda a un lago que he visto por ahí.
 - ✅🃏 六 liù [ljoʊ˥˩] · seis · _número_
 - ✅🃏 七 qī [tɕʰi˥] · siete · _número_
-- ✅🃏 九 jiǔ [tɕjoʊ˧˩˧] · nueve · _número_
-- ✅🃏 十 shí [ʂɨ˧˥] · diez · _número_
-- ✅🃏 两 liǎng [ljɑŋ˧˩˧] · dos (delante de un clasificador) · _número_ · 二 èr para contar y dentro de números (十二 «doce»); 两 delante de un clasificador: 两个人 «dos personas». · Al hablar, 两 también va delante de 百, 千 y 万: 两百, 两千. 二 sigue en los números: 十二, 二十.
+- ✅🃏 九 jiǔ [tɕjoʊ˧˩˧] · nueve · _número_ · 九 se parece, misteriosamente, a una mesa. · Es elegante y se parece un poco a 万: conviene contrastarlos.
+- ✅🃏 十 shí [ʂɨ˧˥] · diez · _número_ · Al principio de un número, 十 va solo: 十二 (12). Dentro de un número lleva siempre 一 delante: 一百一十三 (113), 五百一十二 (512). · En clase, en el repaso de números: 512 es 五百一十二, con 一 delante de 十.
+- ✅🃏 两 liǎng [ljɑŋ˧˩˧] · dos (delante de un clasificador) · _número_ · 二 èr para contar y dentro de números (十二 «doce»); 两 delante de un clasificador: 两个人 «dos personas». · Al hablar, 两 también va delante de 百, 千 y 万: 两百, 两千. 二 sigue en los números: 十二, 二十. · El 20 es 二十, nunca 两十; 22 000 es 两万两千, pero 200 000 es 二十万, porque ese 2 es el de 二十. 102 es 一百零二: 二 al final de un número.
 - ✅🃏 有 yǒu [joʊ˧˩˧] · tener; haber · _verbo_ · No lo confundas con 要 yào «querer»: 有 yǒu baja y sube (tercer tono); 要 yào cae (cuarto). 有 se niega con 没: 没有.
 - ✅🃏 个 ge [kɤ] · clasificador general (uno de algo) · _clasificador_ · Entre el número y la cosa: 三个朋友 «tres amigos». Se dice átono. · El clasificador no se omite: sin él la frase se entiende, pero suena tan mal como «yo tener tres amigo». A veces informa de la forma: 张 zhāng [HSK 3] para cosas planas, 条 tiáo [HSK 2] para alargadas. Van sin clasificador las palabras que ya son unidad, como 天 y 年: 三天 «tres días», 两年 «dos años».
 - ✅🃏 没有 méiyǒu [meɪ˧˥ joʊ˧˩˧] · no tener; no haber · _verbo_ · 有 se niega con 没, nunca con 不: 我没有钱 «no tengo dinero».
@@ -22,7 +22,7 @@
 - ✅🃏 岁 suì [sweɪ˥˩] · años (de edad) · _clasificador_ · 你几岁？ se pregunta sobre todo a niños; a un adulto se le pregunta 你多大？, con 多 «cuánto» y 大 «grande».
 - ✅🃏 本 běn [pən˧˩˧] · clasificador de libros y cuadernos · _pronombre_ · Un árbol 木 con una raya en la raíz: su sentido original es «raíz, origen». Como clasificador, cuenta libros. · Como 个 para personas, 本 para libros: 一个人 «una persona», 一本书 «un libro».
 - ✅🃏 棵 kē [kʰɤ˥] · clasificador de árboles y plantas · _clasificador_ · Va entre 这, 那 o un número y la palabra: 这棵树 «este árbol», 一棵树 «un árbol».
-- ✅🃏 零 líng [liŋ˧˥] · cero · _número_
+- ✅🃏 零 líng [liŋ˧˥] · cero · _número_ · 零 marca las cifras vacías: 一百零五 (105), 一千零五十 (1050), 七千零三 (7003). Aunque falten varias seguidas, se dice un solo 零. · Tiene una forma rarísima.
 - ✅🃏 百 bǎi [paɪ˧˩˧] · cien · _número_
 - ✅🃏 千 qiān [tɕʰjɛn˥] · mil · _número_
 - ✅🃏 万 wàn [wan˥˩] · diez mil · _número_ · 万 es una unidad propia, 10 000: 三万 son 30 000 y 十万, 100 000. El chino agrupa las cifras de cuatro en cuatro, no de tres en tres.
@@ -38,6 +38,8 @@
 - ✅🃏 张 zhāng [ʈʂɑŋ˥] · clasificador de cosas planas (papel, mesas, billetes) · _clasificador_ · 一张纸 «una hoja», 一张桌子 «una mesa». También es un apellido muy común: 张阿姨.
 - ✅🃏 杯 bēi [peɪ˥] · vaso de, taza de (clasificador) · _clasificador_ · 一杯茶 «una taza de té», 两杯水 «dos vasos de agua». El vaso como objeto es 杯子.
 - ✅🃏 件 jiàn [tɕjɛn˥˩] · clasificador de ropa y de asuntos · _clasificador_ · 一件衣服 «una prenda». También para asuntos: 一件事 «una cosa, un asunto».
+- ✅🃏 次 cì [tsʰɯ˥˩] · vez (cuántas veces pasa algo) · _clasificador_ · Cuenta ocasiones, detrás del verbo: 他来过两次 «ha venido dos veces». Ir a un sitio siempre se cuenta con 次.
+- ✅🃏 遍 biàn [pjɛn˥˩] · vez (de principio a fin) · _clasificador_ · Cuenta las veces que se hace algo entero: 这本书我看了两遍 «me he leído este libro dos veces enteras»; 再说一遍 «dilo otra vez».
 
 ## 九 jiǔ y 就 jiù
 
@@ -138,6 +140,27 @@ Suenan igual: 见 «ver» (再见), 件 clasificador de ropa (一件衣服).
 - 见 jiàn · 见: ver, encontrarse
 - 件 jiàn · 件: clasificador de ropa y asuntos
 
+## 次 y 遍: cuántas veces
+
+Los dos cuentan veces, detrás del verbo; 遍 subraya que se hizo entero.
+
+- 次 cì · ocasiones: 他来过两次
+- 遍 biàn · de principio a fin: 这本书我看了两遍
+
+## 九 y 万
+
+Los dos terminan en un trazo que se dobla con un gancho; 万 lleva además una raya arriba.
+
+- 九 jiǔ · 九 jiǔ «nueve»: sin raya arriba; el gancho sube hacia fuera
+- 万 wàn · 万 wàn «diez mil»: una raya 一 arriba; el gancho baja hacia dentro
+
+## 次 cì y 词 cí
+
+Solo cambia el tono: 次 cae, 词 sube.
+
+- 次 cì · cì, cae: vez
+- 词 cí · cí, sube: palabra
+
 ## Frases
 
 - ✅🃏 一、二、三、四、五、六、七、八、九、十。 · yī èr sān sì wǔ liù qī bā jiǔ shí · Uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez.
@@ -165,3 +188,5 @@ Suenan igual: 见 «ver» (再见), 件 clasificador de ropa (一件衣服).
 - ✅🃏 这件衣服很漂亮。 · zhè jiàn yīfu hěn piàoliang · Esta prenda es muy bonita.
 - ✅🃏 中国有十四亿人。 · Zhōngguó yǒu shí sì yì rén · China tiene mil cuatrocientos millones de habitantes.
 - ✅🃏 我要一张纸。 · wǒ yào yì zhāng zhǐ · Quiero una hoja de papel.
+- ✅🃏 他来过两次。 · tā lái guo liǎng cì · Ha venido dos veces.
+- ✅🃏 这本书我看了两遍。 · zhè běn shū wǒ kàn le liǎng biàn · Este libro lo he leído dos veces, entero.

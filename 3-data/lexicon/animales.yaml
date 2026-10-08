@@ -165,3 +165,27 @@ entries:
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: '十二生肖 son los doce signos. Al hablar se pregunta 你属什么？; 属相 es la palabra coloquial para el signo.'}
+  - id: w.xiong
+    use: hear
+    role: content
+    kind: word
+    hanzi: 熊
+    pinyin: 'xióng'
+    meaning: {es: 'oso', en: 'bear'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '熊猫 «panda» lleva 熊 delante: «oso-gato».'}
+  - id: w.xiongmao
+    use: say
+    role: content
+    kind: word
+    pos: sustantivo
+    level: 3
+    level_reason: 'no está en la lista; muy frecuente (es el símbolo de China), pero 熊 es HSK 5: nivel 3 estimado'
+    hanzi: 熊猫
+    pinyin: 'xióngmāo'
+    meaning: {es: 'panda', en: 'panda'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 熊 «oso» + 猫 «gato».'}
+      - {kind: teacher, private: false, date: '2026-10-08', text: 'En clase: 两只熊猫 «dos pandas», con 只, el clasificador de los animales.'}

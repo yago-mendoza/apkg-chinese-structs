@@ -31,6 +31,10 @@
 - ✅🃏 吃饭了吗 chīfàn le ma [ʈʂʰɨ˥ fan˥˩ lɤ ma] · ¿has comido? (como saludo) · _expresión_ · Palabra a palabra: 吃饭 «comer» + 了 «ya» + 吗: «¿ya has comido?». · No es una invitación a comer: es interesarse por ti, sobre todo entre vecinos, familia y gente mayor. Se contesta corto, 吃了，你呢？, y se sigue.
 - ✅🃏 最近忙吗 zuìjìn máng ma [tsweɪ˥˩ tɕin˥˩ mɑŋ˧˥ ma] · ¿mucho lío últimamente? · _expresión_ · Palabra a palabra: 最近 «últimamente» + 忙 «ocupado» + 吗: «¿ocupado últimamente?». · En chino el interés suele ir a algo concreto (el trabajo, la comida, el cansancio) más que a un «¿cómo estás?» abstracto.
 - ✅🃏 这个怎么样 zhège zěnmeyàng [ʈʂɤ˥˩ kɤ tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal este?, ¿qué te parece? · _expresión_ · Palabra a palabra: 这个 «este» + 怎么样 «¿qué tal?». · 怎么样 también pide opinión: 这个怎么样？ al enseñar algo, 明天怎么样？ al proponer un día.
+- ✅🃏 快乐 kuàilè [kʰwaɪ˥˩ lɤ˥˩] · feliz, alegre · _adjetivo_ · Se oye sobre todo en las felicitaciones: 生日快乐, 新年快乐.
+- ✅🃏 生日快乐 shēngrì kuàilè [ʂɤŋ˥ ʐɨ˥˩ kʰwaɪ˥˩ lɤ˥˩] · ¡feliz cumpleaños! · _expresión_ · Palabra a palabra: 生日 «cumpleaños» + 快乐 «feliz»: «cumpleaños feliz».
+- ✅🃏 礼物 lǐwù [li˧˩˧ u˥˩] · regalo · _sustantivo_ · 谢谢你的礼物！ «¡gracias por tu regalo!».
+- ✅🃏 恭喜 gōngxǐ [kʊŋ˥ ɕi˧˩˧] · ¡enhorabuena! · _expresión_ · Palabra a palabra: 恭 «respetuoso» + 喜 «alegría», el mismo de 喜欢. · Se oye mucho: 恭喜发财 en el Año Nuevo chino. En la lista es de nivel 7.
 
 ## Saludos con 好
 
@@ -84,3 +88,4 @@ Uno cierra y otro abre, y al oído se parecen: zà-jià frente a dà-jiā.
 - ✅🃏 我最近很忙。 · wǒ zuìjìn hěn máng · Últimamente estoy muy liado.
 - ✅🃏 早上好，老师！ · zǎoshang hǎo lǎoshī · ¡Buenos días, profe!
 - ✅🃏 我早上喝茶。 · wǒ zǎoshang hē chá · Por la mañana tomo té.
+- ✅🃏 谢谢你的礼物！ · xièxie nǐ de lǐwù · ¡Gracias por tu regalo!

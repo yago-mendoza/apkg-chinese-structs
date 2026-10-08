@@ -891,3 +891,166 @@ exercises:
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 服}
     answer: {typed: fu2, hanzi: 服, pinyin: fú, meaning: 'Sale en 服务员 fúwùyuán «camarero, camarera», 衣服 yīfu «ropa».'}
     comments: []
+  - id: x.dictation.gen
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.gen]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gen1, hanzi: 跟, pinyin: gēn, meaning: con (alguien)}
+    comments: []
+  - id: x.cloze.gen
+    added: 2026-10-08
+    lang: es
+    type: cloze
+    sentence: s.ni-xiang-gen-wo-yiqi-chifan-ma
+    gap: w.gen
+    targets: [w.gen]
+    context: [w.ni, w.xiang, w.wo, w.yiqi, w.chifan, w.ma]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Quieres comer conmigo?»'}
+    answer: {typed: gen1, hanzi: 跟, pinyin: gēn, meaning: con (alguien)}
+    comments: []
+  - id: x.read.gen
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.gen]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 跟}
+    answer: {hanzi: 跟, pinyin: gēn, meaning: con (alguien)}
+    comments: []
+  - id: x.dictation.yiqi
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.yiqi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi1 qi3, hanzi: 一起, pinyin: yīqǐ, meaning: juntos}
+    comments: []
+  - id: x.produce.yiqi
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.yiqi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «juntos»? Escribe el pinyin.'}
+    answer: {typed: yi1 qi3, hanzi: 一起, pinyin: yīqǐ, meaning: juntos}
+    comments: []
+  - id: x.read.yiqi
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.yiqi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 一起}
+    answer: {hanzi: 一起, pinyin: yīqǐ, meaning: juntos}
+    comments: []
+  - id: x.tones.yiqi
+    added: 2026-10-08
+    lang: es
+    type: tones
+    targets: [w.yiqi]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 一起, pinyin: yi qi}
+    answer: {typed: '13', hanzi: 一起, pinyin: yīqǐ, meaning: juntos}
+    comments: []
+  - id: x.dictation.gei.to
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.gei.to]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gei3, hanzi: 给, pinyin: gěi, meaning: 'a, para (alguien)'}
+    comments: []
+  - id: x.cloze.gei.to
+    added: 2026-10-08
+    lang: es
+    type: cloze
+    sentence: s.ni-you-shijian-de-shihou-gei-wo-da-dianhua
+    gap: w.gei.to
+    targets: [w.gei.to]
+    context: [w.ni, w.you.have, w.shijian, w.de, w.shihou, w.wo, w.dadianhua]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Cuando tengas tiempo, llámame.»'}
+    answer: {typed: gei3, hanzi: 给, pinyin: gěi, meaning: 'a, para (alguien)'}
+    comments: []
+  - id: x.read.gei.to
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.gei.to]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 给}
+    answer: {hanzi: 给, pinyin: gěi, meaning: 'a, para (alguien)'}
+    comments: []
+  - id: x.listen.ta-bu-shi-wo-de-laoshi
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.ta-bu-shi-wo-de-laoshi
+    targets: [s.ta-bu-shi-wo-de-laoshi]
+    context: [w.ta.he, w.bu, w.shi, w.wo, w.de, w.laoshi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No es mi profesor.}
+    comments: []
+  - id: x.produce.ta-bu-shi-wo-de-laoshi
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.ta-bu-shi-wo-de-laoshi
+    targets: [s.ta-bu-shi-wo-de-laoshi]
+    context: [w.ta.he, w.bu, w.shi, w.wo, w.de, w.laoshi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No es mi profesor.»'}
+    answer: {meaning: No es mi profesor.}
+    comments: []
+  - id: x.listen.ni-xiang-gen-wo-yiqi-chifan-ma
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.ni-xiang-gen-wo-yiqi-chifan-ma
+    targets: [s.ni-xiang-gen-wo-yiqi-chifan-ma]
+    context: [w.ni, w.xiang, w.gen, w.wo, w.yiqi, w.chifan, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Quieres comer conmigo?'}
+    comments: []
+  - id: x.produce.ni-xiang-gen-wo-yiqi-chifan-ma
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.ni-xiang-gen-wo-yiqi-chifan-ma
+    targets: [s.ni-xiang-gen-wo-yiqi-chifan-ma]
+    context: [w.ni, w.xiang, w.gen, w.wo, w.yiqi, w.chifan, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Quieres comer conmigo?»'}
+    answer: {meaning: '¿Quieres comer conmigo?'}
+    comments: []
+  - id: x.listen.shei-lai-le
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.shei-lai-le
+    targets: [s.shei-lai-le]
+    context: [w.shei, w.lai, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Quién ha venido?'}
+    comments: []
+  - id: x.produce.shei-lai-le
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.shei-lai-le
+    targets: [s.shei-lai-le]
+    context: [w.shei, w.lai, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Quién ha venido?»'}
+    answer: {meaning: '¿Quién ha venido?'}
+    comments: []

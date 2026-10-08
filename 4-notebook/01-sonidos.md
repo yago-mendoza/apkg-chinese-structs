@@ -55,8 +55,11 @@ Tres familias que el español junta en una sola s o ch. z c s: lengua plana tras
 
 ## -n frente a -ng
 
--n acaba con la lengua tocando detrás de los dientes, como en «pan». -ng acaba atrás, con la boca abierta, como la n de «tengo»: no suena la g. Cambia la palabra: 心 xīn «corazón», 星 xīng «estrella».
+-n acaba con la lengua tocando detrás de los dientes, como en «pan». -ng acaba atrás, con la boca abierta, como la n de «tengo»: no suena la g. Cambia la palabra: 心 xīn «corazón», 星 xīng «estrella». La vocal también cambia: delante de -n, la a es clara, y en ian y üan casi una e (先 xiān suena casi «sien»); delante de -ng, la a es oscura, de atrás (想 xiǎng). eng y ueng no son ang y uang: llevan una vocal neutra, cerrada.
 
+- La a de xian me suena abierta y plana; la de xiang, más cerrada, tirando a o. Es la -ng, que lleva la vocal hacia atrás.
+- Al oído, ing suena a veces casi «ieng» (星 xīng): es el paso hacia la -ng de atrás.
+- En el estándar, yuan (元) se acerca a «yüen», igual que yan suena casi «yen»; algunos hablantes abren más la a.
 
 ## 一: yī, yí o yì
 
@@ -67,3 +70,12 @@ Suelto, contando o en un número, yī (第一, 十一). Delante de un cuarto ton
 
 i: suena i (你 nǐ, 西 xī), salvo tras z c s, donde es un zumbido sin vocal (四 sì, 字 zì), y tras zh ch sh r, el mismo zumbido con la lengua curvada (是 shì, 吃 chī). e: sola o tras consonante es una o sin redondear los labios (的 de, 喝 hē); en ie, üe y ei suena e (谢 xiè, 学 xué, 北 běi); en en y eng, una vocal neutra corta (很 hěn, 冷 lěng). o: tras b p m f suena «uo» (我 wǒ); ou suena «ou» (都 dōu); ong suena casi «ung» (中 zhōng).
 
+- La o no es nunca la ò abierta del catalán en ou y ong (都 dōu, 中 zhōng): ahí es cerrada. En uo (我 wǒ, 多 duō) sí es más abierta.
+
+## y, w y la ü escondida
+
+y y w no son sonidos propios: escriben i y u al principio de sílaba. yi suena i (一 yī), wu suena u (五 wǔ), ya es ia y wo es uo. Tras j, q, x e y, la ü pierde los puntos: ju, qu, xu y yu suenan con ü (去 qù, 鱼 yú), aunque se escriban con u, y el tono se marca igual. Solo tras l y n se ven los puntos (女 nǚ), porque allí también existe la u.
+
+- En clase: w se lee u (五 wǔ) e y se lee i (一 yī); con j, q, x e y va siempre la ü.
+- Importante: tras j, q, x e y, la u se lee ü aunque se escriba u. El tono se marca igual (qù), pero suena ü.
+- La sílaba yi suena «i», no una y suelta; y la w, «u».

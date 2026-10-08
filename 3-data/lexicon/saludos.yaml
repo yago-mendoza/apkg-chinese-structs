@@ -364,3 +364,46 @@ entries:
       - {ref: e.dajiahao, cue: 'hola a todos, al empezar: d, cuarto, primero y tercero'}
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments: []
+  - id: w.kuaile
+    use: hear
+    role: content
+    kind: word
+    hanzi: 快乐
+    pinyin: 'kuàilè'
+    meaning: {es: 'feliz, alegre', en: 'happy'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Se oye sobre todo en las felicitaciones: 生日快乐, 新年快乐.'}
+  - id: e.shengrikuaile
+    use: say
+    role: content
+    kind: expression
+    level: 2
+    level_reason: 'no está en la lista como unidad; 生日 es HSK 1 y 快乐 HSK 2'
+    hanzi: 生日快乐
+    pinyin: 'shēngrì kuàilè'
+    meaning: {es: '¡feliz cumpleaños!', en: 'happy birthday'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 生日 «cumpleaños» + 快乐 «feliz»: «cumpleaños feliz».'}
+  - id: w.liwu
+    use: say
+    role: content
+    kind: word
+    hanzi: 礼物
+    pinyin: 'lǐwù'
+    meaning: {es: 'regalo', en: 'gift'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '谢谢你的礼物！ «¡gracias por tu regalo!».'}
+  - id: e.gongxi
+    use: hear
+    role: content
+    kind: expression
+    hanzi: 恭喜
+    pinyin: 'gōngxǐ'
+    meaning: {es: '¡enhorabuena!', en: 'congratulations'}
+    source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27', rescued: 008-2026-10-08-pedir-ayuda-lugares-y-finales}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 'Palabra a palabra: 恭 «respetuoso» + 喜 «alegría», el mismo de 喜欢.'}
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Se oye mucho: 恭喜发财 en el Año Nuevo chino. En la lista es de nivel 7.'}

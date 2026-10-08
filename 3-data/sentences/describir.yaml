@@ -247,3 +247,52 @@ sentences:
       - {text: ！}
     translation: {es: '¡Señora, qué joven es usted!', en: 'Auntie, you look so young!'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.ta-zhen-piaoliang
+    use: say
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 真, ref: w.zhen, pinyin: 'zhēn'}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: 'piàoliang'}
+      - {text: ！}
+    translation: {es: '¡Qué guapa es!', en: 'She is so pretty!'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+  - id: s.zhe-jian-yifu-bu-haokan
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 件, ref: w.jian.cl, pinyin: 'jiàn'}
+      - {text: 衣服, ref: w.yifu, pinyin: 'yīfu'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 好看, ref: w.haokan, pinyin: 'hǎokàn'}
+      - {text: 。}
+    translation: {es: 'Esta ropa no es bonita.', en: 'These clothes don''t look good.'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+  - id: s.na-ben-shu-zhen-youqu
+    use: say
+    segments:
+      - {text: 那, ref: w.na.that, pinyin: 'nà'}
+      - {text: 本, ref: w.ben.book, pinyin: 'běn'}
+      - {text: 书, ref: w.shu, pinyin: 'shū'}
+      - {text: 真, ref: w.zhen, pinyin: 'zhēn'}
+      - {text: 有趣, ref: w.youqu, pinyin: 'yǒuqù'}
+      - {text: ！}
+    translation: {es: '¡Qué interesante es ese libro!', en: 'That book is so interesting!'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+  - id: s.jintian-tebie-leng
+    use: say
+    segments:
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 特别, ref: w.tebie, pinyin: 'tèbié'}
+      - {text: 冷, ref: w.leng, pinyin: 'lěng'}
+      - {text: 。}
+    translation: {es: 'Hoy hace muchísimo frío.', en: 'It''s especially cold today.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.zhongwen-hen-youyisi
+    use: say
+    segments:
+      - {text: 中文, ref: w.zhongwen, pinyin: 'Zhōngwén'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 有意思, ref: w.youyisi, pinyin: 'yǒuyìsi'}
+      - {text: 。}
+    translation: {es: 'El chino es muy interesante.', en: 'Chinese is very interesting.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}

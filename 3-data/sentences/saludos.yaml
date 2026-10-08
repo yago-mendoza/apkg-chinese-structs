@@ -176,3 +176,13 @@ sentences:
       - {text: 。}
     translation: {es: 'Por la mañana tomo té.', en: 'I drink tea in the morning.'}
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}
+  - id: s.xiexie-ni-de-liwu
+    use: say
+    segments:
+      - {text: 谢谢, ref: e.xiexie, pinyin: 'xièxie'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 礼物, ref: w.liwu, pinyin: 'lǐwù'}
+      - {text: ！}
+    translation: {es: '¡Gracias por tu regalo!', en: 'Thank you for your gift!'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}

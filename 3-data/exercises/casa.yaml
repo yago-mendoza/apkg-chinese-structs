@@ -1,0 +1,663 @@
+# Ejercicios · Casa y objetos. Esquema: 3-data/README.md
+
+exercises:
+  - id: x.read.shu
+    added: 2026-09-25
+    type: read
+    targets: [w.shu]
+    skills: [reading, pinyin, tones]
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 书}
+    answer: {typed: shu1, hanzi: 书, pinyin: shū, meaning: libro}
+    reveal: [s.wo-zai-kan-shu]
+    lang: es
+    comments: []
+  - id: x.read.shouji
+    added: 2026-09-25
+    type: read
+    targets: [w.shouji]
+    skills: [reading, pinyin, tones]
+    prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 手机}
+    answer: {typed: shou3 ji1, hanzi: 手机, pinyin: shǒujī, meaning: móvil}
+    lang: es
+    comments: []
+  - id: x.produce.shu
+    added: 2026-09-26
+    type: produce
+    targets: [w.shu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «libro»? Escribe el pinyin.'}
+    answer: {typed: shu1, hanzi: 书, pinyin: shū, meaning: libro}
+    lang: es
+    comments: []
+  - id: x.produce.shouji
+    added: 2026-09-26
+    type: produce
+    targets: [w.shouji]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «móvil»? Escribe el pinyin.'}
+    answer: {typed: shou3 ji1, hanzi: 手机, pinyin: shǒujī, meaning: móvil}
+    lang: es
+    comments: []
+  - id: x.dictation.shu
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.shu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shu1, hanzi: 书, pinyin: shū, meaning: libro}
+    comments: []
+  - id: x.dictation.shouji
+    added: 2026-09-27
+    lang: es
+    type: listen
+    targets: [w.shouji]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shou3 ji1, hanzi: 手机, pinyin: shǒujī, meaning: móvil}
+    comments: []
+  - id: x.contrast.men
+    added: 2026-09-29
+    lang: es
+    type: contrast
+    group: g.men-hu
+    targets: [w.men]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es mén, «puerta»?'}
+    answer: {hanzi: 门, pinyin: mén, meaning: puerta}
+    comments: []
+  - id: x.dictation.men
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.men]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: men2, hanzi: 门, pinyin: mén, meaning: puerta}
+    comments: []
+  - id: x.read.men
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.men]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 门}
+    answer: {hanzi: 门, pinyin: mén, meaning: puerta}
+    comments: []
+  - id: x.dictation.kuaizi
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.kuaizi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kuai4 zi5, hanzi: 筷子, pinyin: kuàizi, meaning: palillos}
+    comments: []
+  - id: x.read.kuaizi
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.kuaizi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 筷子}
+    answer: {hanzi: 筷子, pinyin: kuàizi, meaning: palillos}
+    comments: []
+  - id: x.tones.kuaizi
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.kuaizi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 筷子, pinyin: kuai zi}
+    answer: {typed: '45', hanzi: 筷子, pinyin: kuàizi, meaning: palillos}
+    comments: []
+  - id: x.dictation.baozhi
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.baozhi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bao4 zhi3, hanzi: 报纸, pinyin: bàozhǐ, meaning: periódico}
+    comments: []
+  - id: x.read.baozhi
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.baozhi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 报纸}
+    answer: {hanzi: 报纸, pinyin: bàozhǐ, meaning: periódico}
+    comments: []
+  - id: x.dictation.dianshi
+    added: 2026-10-02
+    lang: es
+    type: listen
+    targets: [w.dianshi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dian4 shi4, hanzi: 电视, pinyin: diànshì, meaning: televisión}
+    comments: []
+  - id: x.produce.dianshi
+    added: 2026-10-02
+    lang: es
+    type: produce
+    targets: [w.dianshi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «televisión»? Escribe el pinyin.'}
+    answer: {typed: dian4 shi4, hanzi: 电视, pinyin: diànshì, meaning: televisión}
+    comments: []
+  - id: x.read.dianshi
+    added: 2026-10-02
+    lang: es
+    type: read
+    targets: [w.dianshi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 电视}
+    answer: {hanzi: 电视, pinyin: diànshì, meaning: televisión}
+    comments: []
+  - id: x.contrast.shu
+    added: 2026-10-02
+    lang: es
+    type: contrast
+    group: g.shu-shu
+    targets: [w.shu]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 书, pinyin: shū, meaning: libro}
+    comments: []
+  - id: x.tones.dianshi
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.dianshi]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '44', hanzi: 电视, pinyin: diànshì, meaning: televisión}
+    comments: []
+  - id: x.contrast.bi.pen
+    added: 2026-10-06
+    lang: es
+    type: contrast
+    group: g.bi-bi
+    targets: [w.bi.pen]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es bǐ, «bolígrafo, lápiz»?'}
+    answer: {hanzi: 笔, pinyin: bǐ, meaning: 'bolígrafo, lápiz'}
+    comments: []
+  - id: x.dictation.bi.pen
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.bi.pen]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bi3, hanzi: 笔, pinyin: bǐ, meaning: 'bolígrafo, lápiz'}
+    comments: []
+  - id: x.produce.bi.pen
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.bi.pen]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «bolígrafo, lápiz»? Escribe el pinyin.'}
+    answer: {typed: bi3, hanzi: 笔, pinyin: bǐ, meaning: 'bolígrafo, lápiz'}
+    comments: []
+  - id: x.read.bi.pen
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.bi.pen]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 笔}
+    answer: {hanzi: 笔, pinyin: bǐ, meaning: 'bolígrafo, lápiz'}
+    comments: []
+  - id: x.dictation.beizi
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.beizi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bei1 zi5, hanzi: 杯子, pinyin: bēizi, meaning: 'vaso, taza'}
+    comments: []
+  - id: x.produce.beizi
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.beizi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «vaso, taza»? Escribe el pinyin.'}
+    answer: {typed: bei1 zi5, hanzi: 杯子, pinyin: bēizi, meaning: 'vaso, taza'}
+    comments: []
+  - id: x.read.beizi
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.beizi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 杯子}
+    answer: {hanzi: 杯子, pinyin: bēizi, meaning: 'vaso, taza'}
+    comments: []
+  - id: x.tones.beizi
+    added: 2026-10-06
+    lang: es
+    type: tones
+    targets: [w.beizi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 杯子, pinyin: bei zi}
+    answer: {typed: '15', hanzi: 杯子, pinyin: bēizi, meaning: 'vaso, taza'}
+    comments: []
+  - id: x.dictation.dianhua
+    added: 2026-10-06
+    lang: es
+    type: listen
+    targets: [w.dianhua]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dian4 hua4, hanzi: 电话, pinyin: diànhuà, meaning: teléfono}
+    comments: []
+  - id: x.produce.dianhua
+    added: 2026-10-06
+    lang: es
+    type: produce
+    targets: [w.dianhua]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «teléfono»? Escribe el pinyin.'}
+    answer: {typed: dian4 hua4, hanzi: 电话, pinyin: diànhuà, meaning: teléfono}
+    comments: []
+  - id: x.read.dianhua
+    added: 2026-10-06
+    lang: es
+    type: read
+    targets: [w.dianhua]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 电话}
+    answer: {hanzi: 电话, pinyin: diànhuà, meaning: teléfono}
+    comments: []
+  - id: x.tones.dianhua
+    added: 2026-10-06
+    lang: es
+    type: tones
+    targets: [w.dianhua]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '44', hanzi: 电话, pinyin: diànhuà, meaning: teléfono}
+    comments: []
+  - id: x.contrast.zhi.paper
+    added: 2026-10-07
+    lang: es
+    type: contrast
+    group: g.zhi-zhi
+    targets: [w.zhi.paper]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 纸, pinyin: zhǐ, meaning: papel}
+    comments: []
+  - id: x.dictation.zhi.paper
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.zhi.paper]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhi3, hanzi: 纸, pinyin: zhǐ, meaning: papel}
+    comments: []
+  - id: x.produce.zhi.paper
+    added: 2026-10-07
+    lang: es
+    type: produce
+    targets: [w.zhi.paper]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «papel»? Escribe el pinyin.'}
+    answer: {typed: zhi3, hanzi: 纸, pinyin: zhǐ, meaning: papel}
+    comments: []
+  - id: x.read.zhi.paper
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.zhi.paper]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 纸}
+    answer: {hanzi: 纸, pinyin: zhǐ, meaning: papel}
+    comments: []
+  - id: x.dictation.yifu
+    added: 2026-10-07
+    lang: es
+    type: listen
+    targets: [w.yifu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi1 fu5, hanzi: 衣服, pinyin: yīfu, meaning: ropa}
+    comments: []
+  - id: x.produce.yifu
+    added: 2026-10-07
+    lang: es
+    type: produce
+    targets: [w.yifu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «ropa»? Escribe el pinyin.'}
+    answer: {typed: yi1 fu5, hanzi: 衣服, pinyin: yīfu, meaning: ropa}
+    comments: []
+  - id: x.read.yifu
+    added: 2026-10-07
+    lang: es
+    type: read
+    targets: [w.yifu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 衣服}
+    answer: {hanzi: 衣服, pinyin: yīfu, meaning: ropa}
+    comments: []
+  - id: x.tones.yifu
+    added: 2026-10-07
+    lang: es
+    type: tones
+    targets: [w.yifu]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 衣服, pinyin: yi fu}
+    answer: {typed: '15', hanzi: 衣服, pinyin: yīfu, meaning: ropa}
+    comments: []
+  - id: x.dictation.bingxiang
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.bingxiang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bing1 xiang1, hanzi: 冰箱, pinyin: bīngxiāng, meaning: nevera}
+    comments: []
+  - id: x.produce.bingxiang
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.bingxiang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «nevera»? Escribe el pinyin.'}
+    answer: {typed: bing1 xiang1, hanzi: 冰箱, pinyin: bīngxiāng, meaning: nevera}
+    comments: []
+  - id: x.read.bingxiang
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.bingxiang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 冰箱}
+    answer: {hanzi: 冰箱, pinyin: bīngxiāng, meaning: nevera}
+    comments: []
+  - id: x.dictation.chuang
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.chuang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chuang2, hanzi: 床, pinyin: chuáng, meaning: cama}
+    comments: []
+  - id: x.read.chuang
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.chuang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 床}
+    answer: {hanzi: 床, pinyin: chuáng, meaning: cama}
+    comments: []
+  - id: x.dictation.zhong.clock
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.zhong.clock]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhong1, hanzi: 钟, pinyin: zhōng, meaning: reloj (de pared)}
+    comments: []
+  - id: x.read.zhong.clock
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.zhong.clock]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 钟}
+    answer: {hanzi: 钟, pinyin: zhōng, meaning: reloj (de pared)}
+    comments: []
+  - id: x.dictation.shoubiao
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.shoubiao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shou3 biao3, hanzi: 手表, pinyin: shǒubiǎo, meaning: reloj (de pulsera)}
+    comments: []
+  - id: x.produce.shoubiao
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.shoubiao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «reloj (de pulsera)»? Escribe el pinyin.'}
+    answer: {typed: shou3 biao3, hanzi: 手表, pinyin: shǒubiǎo, meaning: reloj (de pulsera)}
+    comments: []
+  - id: x.read.shoubiao
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.shoubiao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 手表}
+    answer: {hanzi: 手表, pinyin: shǒubiǎo, meaning: reloj (de pulsera)}
+    comments: []
+  - id: x.tones.shoubiao
+    added: 2026-10-08
+    lang: es
+    type: tones
+    targets: [w.shoubiao]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 手表, pinyin: shou biao}
+    answer: {typed: '33', hanzi: 手表, pinyin: shǒubiǎo, meaning: reloj (de pulsera)}
+    comments: []
+  - id: x.dictation.erji
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.erji]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: er3 ji1, hanzi: 耳机, pinyin: ěrjī, meaning: auriculares}
+    comments: []
+  - id: x.produce.erji
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.erji]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «auriculares»? Escribe el pinyin.'}
+    answer: {typed: er3 ji1, hanzi: 耳机, pinyin: ěrjī, meaning: auriculares}
+    comments: []
+  - id: x.read.erji
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.erji]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 耳机}
+    answer: {hanzi: 耳机, pinyin: ěrjī, meaning: auriculares}
+    comments: []
+  - id: x.dictation.fangjian
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.fangjian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fang2 jian1, hanzi: 房间, pinyin: fángjiān, meaning: habitación}
+    comments: []
+  - id: x.produce.fangjian
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.fangjian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «habitación»? Escribe el pinyin.'}
+    answer: {typed: fang2 jian1, hanzi: 房间, pinyin: fángjiān, meaning: habitación}
+    comments: []
+  - id: x.read.fangjian
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.fangjian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 房间}
+    answer: {hanzi: 房间, pinyin: fángjiān, meaning: habitación}
+    comments: []
+  - id: x.tones.fangjian
+    added: 2026-10-08
+    lang: es
+    type: tones
+    targets: [w.fangjian]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '21', hanzi: 房间, pinyin: fángjiān, meaning: habitación}
+    comments: []
+  - id: x.dictation.dadianhua
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.dadianhua]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: da3 dian4 hua4, hanzi: 打电话, pinyin: dǎ diànhuà, meaning: llamar por teléfono}
+    comments: []
+  - id: x.produce.dadianhua
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.dadianhua]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «llamar por teléfono»? Escribe el pinyin.'}
+    answer: {typed: da3 dian4 hua4, hanzi: 打电话, pinyin: dǎ diànhuà, meaning: llamar por teléfono}
+    comments: []
+  - id: x.read.dadianhua
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.dadianhua]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 打电话}
+    answer: {hanzi: 打电话, pinyin: dǎ diànhuà, meaning: llamar por teléfono}
+    comments: []
+  - id: x.listen.bingxiang-li-you-jidan-ma
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.bingxiang-li-you-jidan-ma
+    targets: [s.bingxiang-li-you-jidan-ma]
+    context: [w.bingxiang, w.li.inside, w.you.have, w.jidan, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Hay huevos en la nevera?'}
+    comments: []
+  - id: x.produce.bingxiang-li-you-jidan-ma
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.bingxiang-li-you-jidan-ma
+    targets: [s.bingxiang-li-you-jidan-ma]
+    context: [w.bingxiang, w.li.inside, w.you.have, w.jidan, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Hay huevos en la nevera?»'}
+    answer: {meaning: '¿Hay huevos en la nevera?'}
+    comments: []
+  - id: x.listen.wo-meiyou-shoubiao
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.wo-meiyou-shoubiao
+    targets: [s.wo-meiyou-shoubiao]
+    context: [w.wo, w.meiyou, w.shoubiao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No tengo reloj.}
+    comments: []
+  - id: x.produce.wo-meiyou-shoubiao
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.wo-meiyou-shoubiao
+    targets: [s.wo-meiyou-shoubiao]
+    context: [w.wo, w.meiyou, w.shoubiao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No tengo reloj.»'}
+    answer: {meaning: No tengo reloj.}
+    comments: []
+  - id: x.listen.wo-de-erji-ne
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.wo-de-erji-ne
+    targets: [s.wo-de-erji-ne]
+    context: [w.wo, w.de, w.erji, w.ne]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Dónde están mis auriculares?'}
+    comments: []
+  - id: x.produce.wo-de-erji-ne
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.wo-de-erji-ne
+    targets: [s.wo-de-erji-ne]
+    context: [w.wo, w.de, w.erji, w.ne]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde están mis auriculares?»'}
+    answer: {meaning: '¿Dónde están mis auriculares?'}
+    comments: []
+  - id: x.listen.wo-zai-fangjian-li
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.wo-zai-fangjian-li
+    targets: [s.wo-zai-fangjian-li]
+    context: [w.wo, w.zai.at, w.fangjian, w.li.inside]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Estoy en la habitación.}
+    comments: []
+  - id: x.produce.wo-zai-fangjian-li
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.wo-zai-fangjian-li
+    targets: [s.wo-zai-fangjian-li]
+    context: [w.wo, w.zai.at, w.fangjian, w.li.inside]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estoy en la habitación.»'}
+    answer: {meaning: Estoy en la habitación.}
+    comments: []
+  - id: x.charsound.hua
+    added: 2026-10-08
+    lang: es
+    type: charsound
+    targets: [w.dianhua, w.dadianhua]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 话}
+    answer: {typed: hua4, hanzi: 话, pinyin: huà, meaning: 'Sale en 电话 diànhuà «teléfono», 打电话 dǎ diànhuà «llamar por teléfono».'}
+    comments: []
+  - id: x.comprehension.en-casa
+    added: 2026-10-08
+    lang: es
+    type: comprehension
+    targets: [s.wo-zai-fangjian-li, s.wo-de-erji-ne, s.bingxiang-li-you-jidan-ma]
+    skills: [reading, comprehension]
+    script: both
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Dónde está quien habla, qué busca y qué pregunta?'}
+    answer: {meaning: 'Está en su habitación, busca sus auriculares y pregunta si hay huevos en la nevera.'}
+    comments: []

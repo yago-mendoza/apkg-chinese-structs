@@ -1,0 +1,61 @@
+# Frases · Lugares y transporte. Esquema: 3-data/README.md
+
+sentences:
+  - id: s.ta-zai-jichang
+    use: say
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 机场, ref: w.jichang, pinyin: 'jīchǎng'}
+      - {text: 。}
+    translation: {es: 'Está en el aeropuerto.', en: 'She is at the airport.'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+  - id: s.ta-shi-siji
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 司机, ref: w.siji, pinyin: 'sījī'}
+      - {text: 。}
+    translation: {es: 'Es conductor.', en: 'He is a driver.'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+  - id: s.wo-zuo-ditie-qu-jichang
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 坐, ref: w.zuo.sit, pinyin: 'zuò'}
+      - {text: 地铁, ref: w.ditie, pinyin: 'dìtiě'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 机场, ref: w.jichang, pinyin: 'jīchǎng'}
+      - {text: 。}
+    translation: {es: 'Voy al aeropuerto en metro.', en: 'I take the subway to the airport.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.ta-zai-xuexiao
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 学校, ref: w.xuexiao, pinyin: 'xuéxiào'}
+      - {text: 。}
+    translation: {es: 'Está en la escuela.', en: 'He is at school.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.nali-you-liang-zhi-xiongmao
+    use: say
+    segments:
+      - {text: 那里, ref: w.nali.there, pinyin: 'nàlǐ'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 两, ref: w.liang, pinyin: 'liǎng'}
+      - {text: 只, ref: w.zhi.cl, pinyin: 'zhī'}
+      - {text: 熊猫, ref: w.xiongmao, pinyin: 'xióngmāo'}
+      - {text: 。}
+    translation: {es: 'Allí hay dos pandas.', en: 'There are two pandas over there.'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+  - id: s.ta-zai-nali
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 那里, ref: w.nali.there, pinyin: 'nàlǐ'}
+      - {text: 。}
+    translation: {es: 'Está allí.', en: 'He is over there.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}

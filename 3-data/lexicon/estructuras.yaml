@@ -321,7 +321,7 @@ entries:
     pattern: '{S} + 一边 + {V} + 一边 + {V}'
     refs: [w.yibian, w.yibian]
     meaning: {es: 'Dos acciones a la vez: 一边 + verbo + 一边 + verbo.', en: 'Two actions at once: 一边 V 一边 V.'}
-    examples: [s.ta-yibian-chi-yibian-shuo]
+    examples: [s.wo-yibian-chifan-yibian-kan-shouji, s.ta-yibian-chi-yibian-shuo]
     contrast: {right: s.wo-yibian-kanshu-yibian-hecha, wrong: '我在看书和喝茶。', why: {es: '和 no une acciones. Para «leo y tomo té a la vez», 一边看书一边喝茶.', en: '和 does not join actions; use 一边…一边….'}}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
@@ -375,3 +375,24 @@ entries:
     contrast: {right: s.wo-ershisan-sui, wrong: '我是二十三岁。', why: {es: '«Tengo 23 años» no lleva verbo en chino: la edad hace de predicado sin 是.', en: 'Age is the predicate itself, without 是.'}}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
+  - id: st.v-yixia
+    kind: structure
+    use: say
+    pattern: '{V} + 一下'
+    refs: [w.yixia]
+    meaning: {es: 'Hacer algo un momento, probar a ver o pedirlo con suavidad: 一下 va justo detrás del verbo, delante de lo que se mira o se pide.', en: 'Doing something briefly, trying it, or asking softly: 一下 right after the verb.'}
+    examples: [s.ni-deng-yixia, s.wo-xiang-wen-yixia, s.qing-ni-kan-yixia, s.women-xiuxi-yixia-ba, s.wo-keyi-shi-yixia-ma]
+    contrast: {right: s.ni-deng-yixia, wrong: '你等一点。', why: {es: '«Un poco» de una acción es 一下, detrás del verbo. 一点 es «un poco» de una cantidad (多一点 «un poco más»), y no va detrás de 等.', en: 'A little of an action is 一下 after the verb; 一点 is a little of an amount.'}}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments: []
+  - id: st.meiyou-n
+    kind: structure
+    use: say
+    pattern: '{S} + 没有 + {N}'
+    refs: [w.meiyou]
+    meaning: {es: 'No tener o no haber algo: 有 se niega siempre con 没.', en: 'Not having something: 有 is always negated with 没.'}
+    examples: [s.wo-meiyou-shoubiao, s.wo-meiyou-qian, s.wo-meiyou-shijian]
+    contrast: {right: s.wo-meiyou-shoubiao, wrong: '我不有手表。', why: {es: '有 es el único verbo que nunca se niega con 不: siempre 没有.', en: '有 is the one verb never negated with 不: always 没有.'}}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: note, private: false, date: '2026-10-08', text: 'Nunca 不有: con 有, siempre 没有.', original: 'mei you / nunca bu you!'}

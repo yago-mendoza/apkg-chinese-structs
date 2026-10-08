@@ -373,3 +373,70 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 生肖}
     answer: {hanzi: 生肖, pinyin: shēngxiào, meaning: zodiaco chino; signo}
     comments: []
+  - id: x.dictation.xiong
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.xiong]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiong2, hanzi: 熊, pinyin: xióng, meaning: oso}
+    comments: []
+  - id: x.read.xiong
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.xiong]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 熊}
+    answer: {hanzi: 熊, pinyin: xióng, meaning: oso}
+    comments: []
+  - id: x.dictation.xiongmao
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.xiongmao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiong2 mao1, hanzi: 熊猫, pinyin: xióngmāo, meaning: panda}
+    comments: []
+  - id: x.produce.xiongmao
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.xiongmao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «panda»? Escribe el pinyin.'}
+    answer: {typed: xiong2 mao1, hanzi: 熊猫, pinyin: xióngmāo, meaning: panda}
+    comments: []
+  - id: x.read.xiongmao
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.xiongmao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 熊猫}
+    answer: {hanzi: 熊猫, pinyin: xióngmāo, meaning: panda}
+    comments: []
+  - id: x.listen.wo-xiang-qu-kan-xiongmao
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.wo-xiang-qu-kan-xiongmao
+    targets: [s.wo-xiang-qu-kan-xiongmao]
+    context: [w.wo, w.xiang, w.qu, w.kan, w.xiongmao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero ir a ver pandas.}
+    comments: []
+  - id: x.produce.wo-xiang-qu-kan-xiongmao
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.wo-xiang-qu-kan-xiongmao
+    targets: [s.wo-xiang-qu-kan-xiongmao]
+    context: [w.wo, w.xiang, w.qu, w.kan, w.xiongmao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero ir a ver pandas.»'}
+    answer: {meaning: Quiero ir a ver pandas.}
+    comments: []

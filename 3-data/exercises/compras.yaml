@@ -1184,56 +1184,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 想要}
     answer: {hanzi: 想要, pinyin: xiǎngyào, meaning: 'querer (tener algo), desear'}
     comments: []
-  - id: x.contrast.nali
-    added: 2026-10-01
-    lang: es
-    type: contrast
-    group: g.na-nar
-    targets: [w.nali]
-    skills: [reading, discrimination]
-    prompt: {text: '¿Cuál es nǎlǐ, «dónde»?'}
-    answer: {hanzi: 哪里, pinyin: nǎlǐ, meaning: dónde}
-    comments: []
-  - id: x.dictation.nali
-    added: 2026-10-01
-    lang: es
-    type: listen
-    targets: [w.nali]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: na3 li3, hanzi: 哪里, pinyin: nǎlǐ, meaning: dónde}
-    comments: []
-  - id: x.cloze.nali
-    added: 2026-10-01
-    lang: es
-    type: cloze
-    sentence: s.qingwen-fandian-zai-nali
-    gap: w.nali
-    targets: [w.nali]
-    context: [e.qingwen, w.fandian, w.zai.at]
-    skills: [production, pinyin]
-    prompt: {text: 'Completa en pinyin: «Perdone, ¿dónde hay un restaurante?»'}
-    answer: {typed: na3 li3, hanzi: 哪里, pinyin: nǎlǐ, meaning: dónde}
-    comments: []
-  - id: x.read.nali
-    added: 2026-10-01
-    lang: es
-    type: read
-    targets: [w.nali]
-    skills: [reading, pinyin]
-    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 哪里}
-    answer: {hanzi: 哪里, pinyin: nǎlǐ, meaning: dónde}
-    comments: []
-  - id: x.tones.nali
-    added: 2026-10-01
-    lang: es
-    type: tones
-    targets: [w.nali]
-    skills: [tones, pinyin]
-    refs: [p.third-tone-sandhi]
-    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 哪里, pinyin: na li}
-    answer: {typed: '33', hanzi: 哪里, pinyin: nǎlǐ, meaning: dónde}
-    comments: []
   - id: x.listen.qingwen-fandian-zai-nali
     added: 2026-10-01
     lang: es
@@ -1857,15 +1807,6 @@ exercises:
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 果}
     answer: {typed: guo3, hanzi: 果, pinyin: guǒ, meaning: 'Sale en 水果 shuǐguǒ «fruta», 如果 rúguǒ «si (condición)».'}
     comments: []
-  - id: x.charsound.li
-    added: 2026-10-06
-    lang: es
-    type: charsound
-    targets: [w.nali, w.zheli]
-    skills: [reading, pinyin, tones]
-    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 里}
-    answer: {typed: li3, hanzi: 里, pinyin: lǐ, meaning: 'Sale en 哪里 nǎlǐ «dónde», 这里 zhèlǐ «aquí».'}
-    comments: []
   - id: x.contrast.qian
     added: 2026-10-06
     lang: es
@@ -1912,4 +1853,340 @@ exercises:
     skills: [reading, pinyin]
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 苹果}
     answer: {hanzi: 苹果, pinyin: píngguǒ, meaning: manzana}
+    comments: []
+  - id: x.dictation.yu.fish
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.yu.fish]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yu2, hanzi: 鱼, pinyin: yú, meaning: pez; pescado}
+    comments: []
+  - id: x.produce.yu.fish
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.yu.fish]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «pez; pescado»? Escribe el pinyin.'}
+    answer: {typed: yu2, hanzi: 鱼, pinyin: yú, meaning: pez; pescado}
+    comments: []
+  - id: x.read.yu.fish
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.yu.fish]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 鱼}
+    answer: {hanzi: 鱼, pinyin: yú, meaning: pez; pescado}
+    comments: []
+  - id: x.dictation.jidan
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.jidan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ji1 dan4, hanzi: 鸡蛋, pinyin: jīdàn, meaning: huevo (de gallina)}
+    comments: []
+  - id: x.produce.jidan
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.jidan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «huevo (de gallina)»? Escribe el pinyin.'}
+    answer: {typed: ji1 dan4, hanzi: 鸡蛋, pinyin: jīdàn, meaning: huevo (de gallina)}
+    comments: []
+  - id: x.read.jidan
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.jidan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 鸡蛋}
+    answer: {hanzi: 鸡蛋, pinyin: jīdàn, meaning: huevo (de gallina)}
+    comments: []
+  - id: x.dictation.kele
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.kele]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ke3 le4, hanzi: 可乐, pinyin: kělè, meaning: refresco de cola}
+    comments: []
+  - id: x.produce.kele
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.kele]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «refresco de cola»? Escribe el pinyin.'}
+    answer: {typed: ke3 le4, hanzi: 可乐, pinyin: kělè, meaning: refresco de cola}
+    comments: []
+  - id: x.read.kele
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.kele]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 可乐}
+    answer: {hanzi: 可乐, pinyin: kělè, meaning: refresco de cola}
+    comments: []
+  - id: x.dictation.kaoya
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.kaoya]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kao3 ya1, hanzi: 烤鸭, pinyin: kǎoyā, meaning: pato asado}
+    comments: []
+  - id: x.read.kaoya
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.kaoya]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 烤鸭}
+    answer: {hanzi: 烤鸭, pinyin: kǎoyā, meaning: pato asado}
+    comments: []
+  - id: x.dictation.huoguo
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.huoguo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: huo3 guo1, hanzi: 火锅, pinyin: huǒguō, meaning: olla caliente (hot pot)}
+    comments: []
+  - id: x.read.huoguo
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.huoguo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 火锅}
+    answer: {hanzi: 火锅, pinyin: huǒguō, meaning: olla caliente (hot pot)}
+    comments: []
+  - id: x.dictation.shiwu
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.shiwu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shi2 wu4, hanzi: 食物, pinyin: shíwù, meaning: 'alimentos, comida (lo que se come)'}
+    comments: []
+  - id: x.read.shiwu
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.shiwu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 食物}
+    answer: {hanzi: 食物, pinyin: shíwù, meaning: 'alimentos, comida (lo que se come)'}
+    comments: []
+  - id: x.dictation.pai.pie
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.pai.pie]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: pai4, hanzi: 派, pinyin: pài, meaning: tarta (pie)}
+    comments: []
+  - id: x.read.pai.pie
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.pai.pie]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 派}
+    answer: {hanzi: 派, pinyin: pài, meaning: tarta (pie)}
+    comments: []
+  - id: x.dictation.yuan.money
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.yuan.money]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yuan2, hanzi: 元, pinyin: yuán, meaning: yuan (por escrito)}
+    comments: []
+  - id: x.read.yuan.money
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.yuan.money]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 元}
+    answer: {hanzi: 元, pinyin: yuán, meaning: yuan (por escrito)}
+    comments: []
+  - id: x.contrast.xie.shoes
+    added: 2026-10-08
+    lang: es
+    type: contrast
+    group: g.xie-xie
+    targets: [w.xie.shoes]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 鞋, pinyin: xié, meaning: 'zapato, calzado'}
+    comments: []
+  - id: x.dictation.xie.shoes
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.xie.shoes]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xie2, hanzi: 鞋, pinyin: xié, meaning: 'zapato, calzado'}
+    comments: []
+  - id: x.produce.xie.shoes
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.xie.shoes]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «zapato, calzado»? Escribe el pinyin.'}
+    answer: {typed: xie2, hanzi: 鞋, pinyin: xié, meaning: 'zapato, calzado'}
+    comments: []
+  - id: x.read.xie.shoes
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.xie.shoes]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 鞋}
+    answer: {hanzi: 鞋, pinyin: xié, meaning: 'zapato, calzado'}
+    comments: []
+  - id: x.listen.zhe-shi-yi-ge-jidan
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.zhe-shi-yi-ge-jidan
+    targets: [s.zhe-shi-yi-ge-jidan]
+    context: [w.zhe, w.shi, w.num.yi, w.ge, w.jidan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Esto es un huevo.}
+    comments: []
+  - id: x.produce.zhe-shi-yi-ge-jidan
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.zhe-shi-yi-ge-jidan
+    targets: [s.zhe-shi-yi-ge-jidan]
+    context: [w.zhe, w.shi, w.num.yi, w.ge, w.jidan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Esto es un huevo.»'}
+    answer: {meaning: Esto es un huevo.}
+    comments: []
+  - id: x.listen.wo-xihuan-chi-yu
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.wo-xihuan-chi-yu
+    targets: [s.wo-xihuan-chi-yu]
+    context: [w.wo, w.xihuan, w.chi, w.yu.fish]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me gusta el pescado.}
+    comments: []
+  - id: x.produce.wo-xihuan-chi-yu
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.wo-xihuan-chi-yu
+    targets: [s.wo-xihuan-chi-yu]
+    context: [w.wo, w.xihuan, w.chi, w.yu.fish]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me gusta el pescado.»'}
+    answer: {meaning: Me gusta el pescado.}
+    comments: []
+  - id: x.listen.wo-yao-mai-xie
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.wo-yao-mai-xie
+    targets: [s.wo-yao-mai-xie]
+    context: [w.wo, w.yao, w.mai, w.xie.shoes]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero comprar zapatos.}
+    comments: []
+  - id: x.produce.wo-yao-mai-xie
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.wo-yao-mai-xie
+    targets: [s.wo-yao-mai-xie]
+    context: [w.wo, w.yao, w.mai, w.xie.shoes]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero comprar zapatos.»'}
+    answer: {meaning: Quiero comprar zapatos.}
+    comments: []
+  - id: x.listen.wo-yao-yi-bei-kele
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.wo-yao-yi-bei-kele
+    targets: [s.wo-yao-yi-bei-kele]
+    context: [w.wo, w.yao, w.num.yi, w.bei.cl, w.kele]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero una cola.}
+    comments: []
+  - id: x.produce.wo-yao-yi-bei-kele
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.wo-yao-yi-bei-kele
+    targets: [s.wo-yao-yi-bei-kele]
+    context: [w.wo, w.yao, w.num.yi, w.bei.cl, w.kele]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero una cola.»'}
+    answer: {meaning: Quiero una cola.}
+    comments: []
+  - id: x.listen.ni-yao-na-ge
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.ni-yao-na-ge
+    targets: [s.ni-yao-na-ge]
+    context: [w.ni, w.yao, w.na.which, w.ge]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuál quieres?'}
+    comments: []
+  - id: x.produce.ni-yao-na-ge
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.ni-yao-na-ge
+    targets: [s.ni-yao-na-ge]
+    context: [w.ni, w.yao, w.na.which, w.ge]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuál quieres?»'}
+    answer: {meaning: '¿Cuál quieres?'}
+    comments: []
+  - id: x.charsound.huo
+    added: 2026-10-08
+    lang: es
+    type: charsound
+    targets: [w.huoguo, w.huoche]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 火}
+    answer: {typed: huo3, hanzi: 火, pinyin: huǒ, meaning: 'Sale en 火锅 huǒguō «olla caliente (hot pot)», 火车 huǒchē «tren».'}
+    comments: []
+  - id: x.nuance.fan-shiwu
+    added: 2026-10-08
+    lang: es
+    type: nuance
+    targets: [w.fan, w.chifan, w.shiwu]
+    skills: [comprehension, discrimination]
+    prompt: {text: '饭, 吃饭 y 食物: ¿cuál es «comer» y cuál la comida que hay en la nevera?'}
+    answer: {meaning: '吃饭 es comer, hacer una comida: 我们去吃饭吧. 饭 es el arroz cocido y cada comida del día. 食物 son los alimentos y suena escrito; al hablar, en la nevera hay 吃的 «cosas de comer».'}
     comments: []

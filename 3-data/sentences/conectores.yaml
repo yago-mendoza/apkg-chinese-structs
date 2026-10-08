@@ -76,3 +76,16 @@ sentences:
       - {text: 。}
     translation: {es: 'Vuelvo mañana.', en: 'Ill come again tomorrow.'}
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+  - id: s.wo-yibian-chifan-yibian-kan-shouji
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 一边, ref: w.yibian, pinyin: 'yìbiān', sandhi: 'yī → yì delante de primer tono'}
+      - {text: 吃饭, ref: w.chifan, pinyin: 'chīfàn'}
+      - {text: ，}
+      - {text: 一边, ref: w.yibian, pinyin: 'yìbiān', sandhi: 'yī → yì delante de primer tono'}
+      - {text: 看, ref: w.kan, pinyin: 'kàn'}
+      - {text: 手机, ref: w.shouji, pinyin: 'shǒujī'}
+      - {text: 。}
+    translation: {es: 'Como mientras miro el móvil.', en: 'I look at my phone while I eat.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}

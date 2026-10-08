@@ -270,3 +270,36 @@ entries:
       - {ref: w.guo, cue: '国: cuadro cerrado 囗 con 玉 «jade» dentro'}
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
     comments: []
+  - id: w.gen
+    use: say
+    role: function
+    kind: word
+    hanzi: 跟
+    pinyin: 'gēn'
+    meaning: {es: 'con (alguien)', en: 'with'}
+    connection: {kind: sound, with: [很], text: '艮 da el sonido a 跟 gēn y a 很 hěn: los dos acaban en -en. 足 «pie» da el sentido de 跟: era el talón, luego «seguir» y «con».'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '跟 + persona + verbo: 你想跟我一起吃饭吗？ «¿quieres comer conmigo?». Suele ir con 一起.'}
+  - id: w.yiqi
+    use: say
+    role: content
+    kind: word
+    hanzi: 一起
+    pinyin: 'yīqǐ'
+    meaning: {es: 'juntos', en: 'together'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Va delante del verbo: 一起吃饭 «comer juntos». Con 一 delante de tercer tono, se lee yìqǐ.'}
+  - id: w.gei.to
+    use: say
+    role: function
+    kind: word
+    pos: preposicion
+    pos_reason: 'en el mazo es «a, para» delante del verbo; la lista lo da antes como verbo («dar»)'
+    hanzi: 给
+    pinyin: 'gěi'
+    meaning: {es: 'a, para (alguien)', en: 'to, for'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '给 + persona va delante del verbo: 给我打电话 «llámame». Suelto, el verbo 给 es «dar».'}

@@ -1034,3 +1034,118 @@ exercises:
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 期}
     answer: {typed: qi1, hanzi: 期, pinyin: qī, meaning: 'Sale en 星期 xīngqī «semana; día de la semana», 星期天 xīngqītiān «domingo».'}
     comments: []
+  - id: x.contrast.ri.day
+    added: 2026-10-08
+    lang: es
+    type: contrast
+    group: g.re-ri
+    targets: [w.ri.day]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 日, pinyin: rì, meaning: día (en fechas escritas); sol}
+    comments: []
+  - id: x.dictation.shihou
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.shihou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shi2 hou5, hanzi: 时候, pinyin: shíhou, meaning: momento; cuando (…的时候)}
+    comments: []
+  - id: x.produce.shihou
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.shihou]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «momento; cuando (…的时候)»? Escribe el pinyin.'}
+    answer: {typed: shi2 hou5, hanzi: 时候, pinyin: shíhou, meaning: momento; cuando (…的时候)}
+    comments: []
+  - id: x.read.shihou
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.shihou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 时候}
+    answer: {hanzi: 时候, pinyin: shíhou, meaning: momento; cuando (…的时候)}
+    comments: []
+  - id: x.tones.shihou
+    added: 2026-10-08
+    lang: es
+    type: tones
+    targets: [w.shihou]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 时候, pinyin: shi hou}
+    answer: {typed: '25', hanzi: 时候, pinyin: shíhou, meaning: momento; cuando (…的时候)}
+    comments: []
+  - id: x.dictation.xian.first
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.xian.first]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xian1, hanzi: 先, pinyin: xiān, meaning: 'primero, antes'}
+    comments: []
+  - id: x.produce.xian.first
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.xian.first]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «primero, antes»? Escribe el pinyin.'}
+    answer: {typed: xian1, hanzi: 先, pinyin: xiān, meaning: 'primero, antes'}
+    comments: []
+  - id: x.read.xian.first
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.xian.first]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 先}
+    answer: {hanzi: 先, pinyin: xiān, meaning: 'primero, antes'}
+    comments: []
+  - id: x.listen.ni-you-shijian-de-shihou-gei-wo-da-dianhua
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.ni-you-shijian-de-shihou-gei-wo-da-dianhua
+    targets: [s.ni-you-shijian-de-shihou-gei-wo-da-dianhua]
+    context: [w.ni, w.you.have, w.shijian, w.de, w.shihou, w.gei.to, w.wo, w.dadianhua]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Cuando tengas tiempo, llámame.'}
+    comments: []
+  - id: x.produce.ni-you-shijian-de-shihou-gei-wo-da-dianhua
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.ni-you-shijian-de-shihou-gei-wo-da-dianhua
+    targets: [s.ni-you-shijian-de-shihou-gei-wo-da-dianhua]
+    context: [w.ni, w.you.have, w.shijian, w.de, w.shihou, w.gei.to, w.wo, w.dadianhua]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Cuando tengas tiempo, llámame.»'}
+    answer: {meaning: 'Cuando tengas tiempo, llámame.'}
+    comments: []
+  - id: x.charsound.shi
+    added: 2026-10-08
+    lang: es
+    type: charsound
+    targets: [w.shijian, w.shihou]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 时}
+    answer: {typed: shi2, hanzi: 时, pinyin: shí, meaning: 'Sale en 时间 shíjiān «tiempo (de reloj)», 时候 shíhou «momento; cuando
+        (…的时候)».'}
+    comments: []
+  - id: x.charsound.jian
+    added: 2026-10-08
+    lang: es
+    type: charsound
+    targets: [w.shijian, w.fangjian]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 间}
+    answer: {typed: jian1, hanzi: 间, pinyin: jiān, meaning: 'Sale en 时间 shíjiān «tiempo (de reloj)», 房间 fángjiān «habitación».'}
+    comments: []

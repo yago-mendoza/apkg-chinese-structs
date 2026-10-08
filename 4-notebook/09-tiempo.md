@@ -26,6 +26,8 @@
 - ✅🃏 星期天 xīngqītiān [ɕiŋ˥ tɕʰi˥ tʰjɛn˥] · domingo · _sustantivo_
 - ✅🃏 生日 shēngrì [ʂɤŋ˥ ʐɨ˥˩] · cumpleaños · _sustantivo_ · 生 «nacer» + 日 «día»: el día en que naciste.
 - ✅🃏 日 rì [ʐɨ˥˩] · día (en fechas escritas); sol · _sustantivo_ · Por escrito, 10月8日; al hablar, 十月八号.
+- ✅🃏 时候 shíhou [ʂɨ˧˥ xoʊ] · momento; cuando (…的时候) · _sustantivo_ · …的时候 es «cuando…»: va detrás de lo que pasa. 你有时间的时候 «cuando tengas tiempo».
+- ✅🃏 先 xiān [ɕjɛn˥] · primero, antes · _adverbio_ · Delante del verbo: 我得先复习一下笔记 «antes tengo que repasar los apuntes». Es el mismo 先 de 先生.
 
 ## 上 / 中 / 下 + 午
 
@@ -62,3 +64,4 @@ Con 午 «mediodía» se forman las tres del centro (上 antes, 中 en, 下 desp
 - ✅🃏 今天星期四。 · jīntiān xīngqī sì · Hoy es jueves.
 - ✅🃏 明天星期天。 · míngtiān xīngqītiān · Mañana es domingo.
 - ✅🃏 今年是二零二六年。 · jīnnián shì èr líng èr liù nián · Este año es 2026.
+- ✅🃏 你有时间的时候，给我打电话。 · nǐ yǒu shíjiān de shíhou gěi wǒ dǎ diànhuà · Cuando tengas tiempo, llámame.

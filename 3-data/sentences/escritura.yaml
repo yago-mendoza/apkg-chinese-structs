@@ -30,3 +30,15 @@ sentences:
       - {text: ？}
     translation: {es: '¿Cómo se dice este carácter?', en: 'How do you say this character?'}
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.wo-dei-xian-fuxi-yixia-biji
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 得, ref: w.dei, pinyin: 'děi'}
+      - {text: 先, ref: w.xian.first, pinyin: 'xiān'}
+      - {text: 复习, ref: w.fuxi, pinyin: 'fùxí'}
+      - {text: 一下, ref: w.yixia, pinyin: 'yíxià', sandhi: true}
+      - {text: 笔记, ref: w.biji, pinyin: 'bǐjì'}
+      - {text: 。}
+    translation: {es: 'Antes tengo que repasar los apuntes.', en: 'I need to go over my notes first.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}

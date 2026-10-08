@@ -36,19 +36,28 @@
 - ✅🃏 多少钱 duōshao qián [twɔ˥ ʂɑʊ tɕʰjɛn˧˥] · ¿cuánto cuesta? · _expresión_ · Palabra a palabra: 多少 «cuánto» + 钱 «dinero».
 - ✅🃏 块 kuài [kʰwaɪ˥˩] · yuan (al hablar) · _clasificador_ · 块 es como se dice 元 yuán [HSK 1] al hablar: 十块钱 «diez yuanes».
 - ✅🃏 想要 xiǎngyào [ɕjɑŋ˧˩˧ jɑʊ˥˩] · querer (tener algo), desear · _verbo_ · Entre 想 y 要: 我想要这个 «me gustaría este», más suave que 我要这个 «quiero este, dame este».
-- ✅🃏 哪里 nǎlǐ [na˧˩˧ li˧˩˧] · dónde · _interrogativo_ · 哪 «qué, cuál» + 里 «dentro»: ¿en qué sitio? Se dice en toda China.
 - ✅🃏 好吃 hǎochī [xɑʊ˧˩˧ ʈʂʰɨ˥] · rico, bueno (de comer) · _adjetivo_ · 好 + verbo: «bueno de…». 好吃 «rico», 好看 «bonito», 好听 «agradable de oír».
 - ✅🃏 菜 cài [tsʰaɪ˥˩] · plato, comida; verdura · _sustantivo_ · 艹 «hierba» arriba: era la verdura. Hoy también «plato, cocina»: 中国菜 «comida china».
 - ✅🃏 茶 chá [ʈʂʰa˧˥] · té · _sustantivo_ · 艹 «hierba» arriba: una hoja. 喝茶 «tomar té».
 - ✅🃏 苹果 píngguǒ [pʰiŋ˧˥ kwɔ˧˩˧] · manzana · _sustantivo_
+- ✅🃏 鱼 yú [y˧˥] · pez; pescado · _sustantivo_ · Es a la vez el animal y el pescado que se come: 我喜欢吃鱼 «me gusta el pescado».
+- ✅🃏 鸡蛋 jīdàn [tɕi˥ tan˥˩] · huevo (de gallina) · _sustantivo_ · Palabra a palabra: 鸡 «gallina» + 蛋 «huevo». En la cocina, un huevo es siempre 鸡蛋. · En clase: 这是一个鸡蛋。 «Esto es un huevo.»
+- ✅🃏 可乐 kělè [kʰɤ˧˩˧ lɤ˥˩] · refresco de cola · _sustantivo_ · Préstamo por el sonido, con hanzi elegidos por su sentido: 可 «poder» + 乐 «alegría».
+- ✅🃏 烤鸭 kǎoyā [kʰɑʊ˧˩˧ ja˥] · pato asado · _sustantivo_ · Palabra a palabra: 烤 «asar» + 鸭 «pato». 北京烤鸭 es el pato a la pekinesa.
+- ✅🃏 火锅 huǒguō [xwɔ˧˩˧ kwɔ˥] · olla caliente (hot pot) · _sustantivo_ · Palabra a palabra: 火 «fuego» + 锅 «olla»: una olla de caldo hirviendo en medio de la mesa, donde cada uno cuece lo suyo. En la lista es de nivel 7, pero en China se come y se nombra a todas horas.
+- ✅🃏 食物 shíwù [ʂɨ˧˥ u˥˩] · alimentos, comida (lo que se come) · _sustantivo_ · 食物 son los alimentos, y suena algo escrito. Al hablar, «hay comida en la nevera» es 冰箱里有吃的; «comer» es 吃饭, y 饭 es el arroz cocido y cada comida del día.
+- ✅🃏 派 pài [pʰaɪ˥˩] · tarta (pie) · _sustantivo_ · Préstamo del inglés pie: 苹果派 «tarta de manzana». El mismo hanzi es también «enviar» y «facción», otros sentidos.
+- ✅🃏 元 yuán [ɥœn˧˥] · yuan (por escrito) · _clasificador_ · 元 es lo que pone en los precios y en los billetes; al hablar se dice 块: 五元 se lee 五块.
+- ✅🃏 鞋 xié [ɕjɛ˧˥] · zapato, calzado · _sustantivo_ · Lo mismo un zapato que el calzado en general: 我要买鞋 «quiero comprar zapatos». Suena igual que 谢 xiè salvo el tono.
 
-## Querer, gustar, amar
+## Querer, necesitar, gustar, amar
 
 Verbos que en español se cruzan. Cada uno pide un tipo de frase distinto.
 
 - 想 xiǎng · ganas de hacer algo: 我想喝水 (también «pensar»)
 - 要 yào · lo quiero, dame, tengo que: 我要水
 - 想要 xiǎngyào · me gustaría tenerlo: 我想要这个
+- 需要 xūyào · necesitar, hace falta: 我需要水
 - 喜欢 xǐhuan · me gusta, en general: 我喜欢咖啡
 - 爱 ài · amo: 我爱你
 
@@ -66,6 +75,13 @@ Solo cambia el tono: 喝 alto y plano, 和 sube.
 
 - 喝 hē · hē, alto y plano: beber
 - 和 hé · hé, sube: y, con
+
+## 鞋 xié y 写 xiě
+
+Solo cambia el tono: 鞋 sube, 写 baja y sube.
+
+- 鞋 xié · xié, sube: zapato
+- 写 xiě · xiě, baja y sube: escribir
 
 ## Frases
 
@@ -104,3 +120,8 @@ Solo cambia el tono: 喝 alto y plano, 和 sube.
 - ✅🃏 我爱吃好吃的东西。 · wǒ ài chī hǎochī de dōngxi · Me encanta comer cosas ricas.
 - ✅🃏 他买了咖啡。 · tā mǎi le kāfēi · Ha comprado café.
 - ✅🃏 他买咖啡了。 · tā mǎi kāfēi le · Ya ha comprado café.
+- ✅🃏 这是一个鸡蛋。 · zhè shì yí ge jīdàn · Esto es un huevo.
+- ✅🃏 我喜欢吃鱼。 · wǒ xǐhuan chī yú · Me gusta el pescado.
+- ✅🃏 我要买鞋。 · wǒ yào mǎi xié · Quiero comprar zapatos.
+- ✅🃏 我要一杯可乐。 · wǒ yào yì bēi kělè · Quiero una cola.
+- ✅🃏 你要哪个？ · nǐ yào nǎ ge · ¿Cuál quieres?

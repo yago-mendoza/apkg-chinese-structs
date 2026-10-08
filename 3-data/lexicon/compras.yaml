@@ -187,12 +187,13 @@ entries:
   - id: g.want-like
     kind: group
     basis: set
-    title: 'Querer, gustar, amar'
+    title: 'Querer, necesitar, gustar, amar'
     explanation: Verbos que en español se cruzan. Cada uno pide un tipo de frase distinto.
     members:
       - {ref: w.xiang, cue: 'ganas de hacer algo: 我想喝水 (también «pensar»)'}
       - {ref: w.yao, cue: 'lo quiero, dame, tengo que: 我要水'}
       - {ref: w.xiangyao, cue: 'me gustaría tenerlo: 我想要这个'}
+      - {ref: w.xuyao, cue: 'necesitar, hace falta: 我需要水'}
       - {ref: w.xihuan, cue: 'me gusta, en general: 我喜欢咖啡'}
       - {ref: w.ai.love, cue: 'amo: 我爱你'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
@@ -372,16 +373,6 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Entre 想 y 要: 我想要这个 «me gustaría este», más suave que 我要这个 «quiero este, dame este».'}
-  - id: w.nali
-    use: say
-    role: function
-    kind: word
-    hanzi: 哪里
-    pinyin: nǎlǐ
-    meaning: {es: dónde, en: where}
-    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '哪 «qué, cuál» + 里 «dentro»: ¿en qué sitio? Se dice en toda China.'}
   - id: w.haochi
     use: say
     role: content
@@ -430,4 +421,107 @@ entries:
     pinyin: 'píngguǒ'
     meaning: {es: 'manzana', en: 'apple'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.yu.fish
+    use: say
+    role: content
+    kind: word
+    hanzi: 鱼
+    pinyin: 'yú'
+    meaning: {es: 'pez; pescado', en: 'fish'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Es a la vez el animal y el pescado que se come: 我喜欢吃鱼 «me gusta el pescado».'}
+  - id: w.jidan
+    use: say
+    role: content
+    kind: word
+    hanzi: 鸡蛋
+    pinyin: 'jīdàn'
+    meaning: {es: 'huevo (de gallina)', en: 'egg'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 鸡 «gallina» + 蛋 «huevo». En la cocina, un huevo es siempre 鸡蛋.'}
+      - {kind: teacher, private: false, date: '2026-10-08', text: 'En clase: 这是一个鸡蛋。 «Esto es un huevo.»'}
+  - id: w.kele
+    use: say
+    role: content
+    kind: word
+    hanzi: 可乐
+    pinyin: 'kělè'
+    meaning: {es: 'refresco de cola', en: 'cola'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Préstamo por el sonido, con hanzi elegidos por su sentido: 可 «poder» + 乐 «alegría».'}
+  - id: w.kaoya
+    use: hear
+    role: content
+    kind: word
+    hanzi: 烤鸭
+    pinyin: 'kǎoyā'
+    meaning: {es: 'pato asado', en: 'roast duck'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 烤 «asar» + 鸭 «pato». 北京烤鸭 es el pato a la pekinesa.'}
+  - id: w.huoguo
+    use: hear
+    role: content
+    kind: word
+    hanzi: 火锅
+    pinyin: 'huǒguō'
+    meaning: {es: 'olla caliente (hot pot)', en: 'hot pot'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 火 «fuego» + 锅 «olla»: una olla de caldo hirviendo en medio de la mesa, donde cada uno cuece lo suyo. En la lista es de nivel 7, pero en China se come y se nombra a todas horas.'}
+  - id: w.shiwu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 食物
+    pinyin: 'shíwù'
+    meaning: {es: 'alimentos, comida (lo que se come)', en: 'food'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '食物 son los alimentos, y suena algo escrito. Al hablar, «hay comida en la nevera» es 冰箱里有吃的; «comer» es 吃饭, y 饭 es el arroz cocido y cada comida del día.'}
+  - id: w.pai.pie
+    use: hear
+    role: content
+    kind: word
+    pos: sustantivo
+    pos_reason: 'en el mazo es la tarta (préstamo); la lista lo da antes como verbo, «enviar»'
+    hanzi: 派
+    pinyin: 'pài'
+    meaning: {es: 'tarta (pie)', en: 'pie'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Préstamo del inglés pie: 苹果派 «tarta de manzana». El mismo hanzi es también «enviar» y «facción», otros sentidos.'}
+  - id: w.yuan.money
+    use: hear
+    role: content
+    kind: word
+    hanzi: 元
+    pinyin: 'yuán'
+    meaning: {es: 'yuan (por escrito)', en: 'yuan (written)'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '元 es lo que pone en los precios y en los billetes; al hablar se dice 块: 五元 se lee 五块.'}
+  - id: w.xie.shoes
+    use: say
+    role: content
+    kind: word
+    hanzi: 鞋
+    pinyin: 'xié'
+    meaning: {es: 'zapato, calzado', en: 'shoe'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Lo mismo un zapato que el calzado en general: 我要买鞋 «quiero comprar zapatos». Suena igual que 谢 xiè salvo el tono.'}
+  - id: g.xie-xie
+    kind: group
+    basis: soundalike
+    title: '鞋 xié y 写 xiě'
+    explanation: 'Solo cambia el tono: 鞋 sube, 写 baja y sube.'
+    members:
+      - {ref: w.xie.shoes, cue: 'xié, sube: zapato'}
+      - {ref: w.xie, cue: 'xiě, baja y sube: escribir'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
     comments: []

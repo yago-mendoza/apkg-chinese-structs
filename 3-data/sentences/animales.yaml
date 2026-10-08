@@ -29,3 +29,14 @@ sentences:
       - {text: 。}
     translation: {es: 'Mi madre es gallo y mi padre, cerdo.', en: 'My mother is a rooster and my father a pig.'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.wo-xiang-qu-kan-xiongmao
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 看, ref: w.kan, pinyin: 'kàn'}
+      - {text: 熊猫, ref: w.xiongmao, pinyin: 'xióngmāo'}
+      - {text: 。}
+    translation: {es: 'Quiero ir a ver pandas.', en: 'I want to go and see pandas.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}

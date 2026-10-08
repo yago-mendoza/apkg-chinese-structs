@@ -279,3 +279,28 @@ sentences:
       - {text: 。}
     translation: {es: 'Quiero una hoja de papel.', en: 'I want a sheet of paper.'}
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.ta-lai-guo-liang-ci
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 来, ref: w.lai, pinyin: 'lái'}
+      - {text: 过, ref: w.guo.exp, pinyin: 'guo'}
+      - {text: 两, ref: w.liang, pinyin: 'liǎng'}
+      - {text: 次, ref: w.ci, pinyin: 'cì'}
+      - {text: 。}
+    translation: {es: 'Ha venido dos veces.', en: 'He has been here twice.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.zhe-ben-shu-wo-kan-le-liang-bian
+    use: hear
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 本, ref: w.ben.book, pinyin: 'běn'}
+      - {text: 书, ref: w.shu, pinyin: 'shū'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 看, ref: w.kan, pinyin: 'kàn'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 两, ref: w.liang, pinyin: 'liǎng'}
+      - {text: 遍, ref: w.bian, pinyin: 'biàn'}
+      - {text: 。}
+    translation: {es: 'Este libro lo he leído dos veces, entero.', en: 'I''ve read this book twice, cover to cover.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}

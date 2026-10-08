@@ -343,3 +343,55 @@ sentences:
       - {text: 。}
     translation: {es: 'Ya ha comprado café.', en: 'He has bought coffee (now).'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.zhe-shi-yi-ge-jidan
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yí', sandhi: true}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 鸡蛋, ref: w.jidan, pinyin: 'jīdàn'}
+      - {text: 。}
+    translation: {es: 'Esto es un huevo.', en: 'This is an egg.'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+  - id: s.wo-xihuan-chi-yu
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 吃, ref: w.chi, pinyin: 'chī'}
+      - {text: 鱼, ref: w.yu.fish, pinyin: 'yú'}
+      - {text: 。}
+    translation: {es: 'Me gusta el pescado.', en: 'I like fish.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.wo-yao-mai-xie
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 买, ref: w.mai, pinyin: 'mǎi'}
+      - {text: 鞋, ref: w.xie.shoes, pinyin: 'xié'}
+      - {text: 。}
+    translation: {es: 'Quiero comprar zapatos.', en: 'I want to buy shoes.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.wo-yao-yi-bei-kele
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yì', sandhi: true}
+      - {text: 杯, ref: w.bei.cl, pinyin: 'bēi'}
+      - {text: 可乐, ref: w.kele, pinyin: 'kělè'}
+      - {text: 。}
+    translation: {es: 'Quiero una cola.', en: 'I would like a cola.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.ni-yao-na-ge
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 哪, ref: w.na.which, pinyin: 'nǎ'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: ？}
+    translation: {es: '¿Cuál quieres?', en: 'Which one do you want?'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}

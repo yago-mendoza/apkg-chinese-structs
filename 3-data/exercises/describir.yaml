@@ -1220,3 +1220,315 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¡Señora, qué joven es usted!»'}
     answer: {meaning: '¡Señora, qué joven es usted!'}
     comments: []
+  - id: x.contrast.shou
+    added: 2026-10-08
+    lang: es
+    type: contrast
+    group: g.shou-shou
+    targets: [w.shou]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 瘦, pinyin: shòu, meaning: delgado}
+    comments: []
+  - id: x.contrast.shou.hand
+    added: 2026-10-08
+    lang: es
+    type: contrast
+    group: g.shou-shou
+    targets: [w.shou.hand]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 手, pinyin: shǒu, meaning: mano}
+    comments: []
+  - id: x.dictation.shou.hand
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.shou.hand]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shou3, hanzi: 手, pinyin: shǒu, meaning: mano}
+    comments: []
+  - id: x.read.shou.hand
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.shou.hand]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 手}
+    answer: {hanzi: 手, pinyin: shǒu, meaning: mano}
+    comments: []
+  - id: x.dictation.erduo
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.erduo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: er3 duo5, hanzi: 耳朵, pinyin: ěrduo, meaning: oreja}
+    comments: []
+  - id: x.read.erduo
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.erduo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 耳朵}
+    answer: {hanzi: 耳朵, pinyin: ěrduo, meaning: oreja}
+    comments: []
+  - id: x.tones.erduo
+    added: 2026-10-08
+    lang: es
+    type: tones
+    targets: [w.erduo]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 耳朵, pinyin: er duo}
+    answer: {typed: '35', hanzi: 耳朵, pinyin: ěrduo, meaning: oreja}
+    comments: []
+  - id: x.dictation.haokan
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.haokan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hao3 kan4, hanzi: 好看, pinyin: hǎokàn, meaning: 'bonito, que se ve bien'}
+    comments: []
+  - id: x.produce.haokan
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.haokan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «bonito, que se ve bien»? Escribe el pinyin.'}
+    answer: {typed: hao3 kan4, hanzi: 好看, pinyin: hǎokàn, meaning: 'bonito, que se ve bien'}
+    comments: []
+  - id: x.read.haokan
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.haokan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 好看}
+    answer: {hanzi: 好看, pinyin: hǎokàn, meaning: 'bonito, que se ve bien'}
+    comments: []
+  - id: x.dictation.youqu
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.youqu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: you3 qu4, hanzi: 有趣, pinyin: yǒuqù, meaning: 'interesante, divertido'}
+    comments: []
+  - id: x.produce.youqu
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.youqu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «interesante, divertido»? Escribe el pinyin.'}
+    answer: {typed: you3 qu4, hanzi: 有趣, pinyin: yǒuqù, meaning: 'interesante, divertido'}
+    comments: []
+  - id: x.read.youqu
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.youqu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 有趣}
+    answer: {hanzi: 有趣, pinyin: yǒuqù, meaning: 'interesante, divertido'}
+    comments: []
+  - id: x.dictation.youyisi
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.youyisi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: you3 yi4 si5, hanzi: 有意思, pinyin: yǒuyìsi, meaning: interesante}
+    comments: []
+  - id: x.produce.youyisi
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.youyisi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «interesante»? Escribe el pinyin.'}
+    answer: {typed: you3 yi4 si5, hanzi: 有意思, pinyin: yǒuyìsi, meaning: interesante}
+    comments: []
+  - id: x.read.youyisi
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.youyisi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 有意思}
+    answer: {hanzi: 有意思, pinyin: yǒuyìsi, meaning: interesante}
+    comments: []
+  - id: x.tones.youyisi
+    added: 2026-10-08
+    lang: es
+    type: tones
+    targets: [w.youyisi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 有意思, pinyin: you yi si}
+    answer: {typed: '345', hanzi: 有意思, pinyin: yǒuyìsi, meaning: interesante}
+    comments: []
+  - id: x.dictation.tebie
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.tebie]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: te4 bie2, hanzi: 特别, pinyin: tèbié, meaning: 'especialmente, muy'}
+    comments: []
+  - id: x.produce.tebie
+    added: 2026-10-08
+    lang: es
+    type: produce
+    targets: [w.tebie]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «especialmente, muy»? Escribe el pinyin.'}
+    answer: {typed: te4 bie2, hanzi: 特别, pinyin: tèbié, meaning: 'especialmente, muy'}
+    comments: []
+  - id: x.read.tebie
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.tebie]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 特别}
+    answer: {hanzi: 特别, pinyin: tèbié, meaning: 'especialmente, muy'}
+    comments: []
+  - id: x.listen.ta-zhen-piaoliang
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.ta-zhen-piaoliang
+    targets: [s.ta-zhen-piaoliang]
+    context: [w.ta.she, w.zhen, w.piaoliang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Qué guapa es!}
+    comments: []
+  - id: x.produce.ta-zhen-piaoliang
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.ta-zhen-piaoliang
+    targets: [s.ta-zhen-piaoliang]
+    context: [w.ta.she, w.zhen, w.piaoliang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Qué guapa es!»'}
+    answer: {meaning: ¡Qué guapa es!}
+    comments: []
+  - id: x.listen.zhe-jian-yifu-bu-haokan
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.zhe-jian-yifu-bu-haokan
+    targets: [s.zhe-jian-yifu-bu-haokan]
+    context: [w.zhe, w.jian.cl, w.yifu, w.bu, w.haokan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Esta ropa no es bonita.}
+    comments: []
+  - id: x.produce.zhe-jian-yifu-bu-haokan
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.zhe-jian-yifu-bu-haokan
+    targets: [s.zhe-jian-yifu-bu-haokan]
+    context: [w.zhe, w.jian.cl, w.yifu, w.bu, w.haokan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Esta ropa no es bonita.»'}
+    answer: {meaning: Esta ropa no es bonita.}
+    comments: []
+  - id: x.listen.na-ben-shu-zhen-youqu
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.na-ben-shu-zhen-youqu
+    targets: [s.na-ben-shu-zhen-youqu]
+    context: [w.na.that, w.ben.book, w.shu, w.zhen, w.youqu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Qué interesante es ese libro!}
+    comments: []
+  - id: x.produce.na-ben-shu-zhen-youqu
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.na-ben-shu-zhen-youqu
+    targets: [s.na-ben-shu-zhen-youqu]
+    context: [w.na.that, w.ben.book, w.shu, w.zhen, w.youqu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Qué interesante es ese libro!»'}
+    answer: {meaning: ¡Qué interesante es ese libro!}
+    comments: []
+  - id: x.listen.jintian-tebie-leng
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.jintian-tebie-leng
+    targets: [s.jintian-tebie-leng]
+    context: [w.jintian, w.tebie, w.leng]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Hoy hace muchísimo frío.}
+    comments: []
+  - id: x.produce.jintian-tebie-leng
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.jintian-tebie-leng
+    targets: [s.jintian-tebie-leng]
+    context: [w.jintian, w.tebie, w.leng]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hoy hace muchísimo frío.»'}
+    answer: {meaning: Hoy hace muchísimo frío.}
+    comments: []
+  - id: x.listen.zhongwen-hen-youyisi
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.zhongwen-hen-youyisi
+    targets: [s.zhongwen-hen-youyisi]
+    context: [w.zhongwen, w.hen, w.youyisi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: El chino es muy interesante.}
+    comments: []
+  - id: x.produce.zhongwen-hen-youyisi
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.zhongwen-hen-youyisi
+    targets: [s.zhongwen-hen-youyisi]
+    context: [w.zhongwen, w.hen, w.youyisi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «El chino es muy interesante.»'}
+    answer: {meaning: El chino es muy interesante.}
+    comments: []
+  - id: x.charsound.liang
+    added: 2026-10-08
+    lang: es
+    type: charsound
+    targets: [w.piaoliang, w.yueliang]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 亮}
+    answer: {typed: liang4, hanzi: 亮, pinyin: liàng, meaning: 'Sale en 漂亮 piàoliang «guapo, bonito», 月亮 yuèliang «luna».'}
+    comments: []
+  - id: x.charsound.er-2
+    added: 2026-10-08
+    lang: es
+    type: charsound
+    targets: [w.erduo, w.erji]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 耳}
+    answer: {typed: er3, hanzi: 耳, pinyin: ěr, meaning: 'Sale en 耳朵 ěrduo «oreja», 耳机 ěrjī «auriculares».'}
+    comments: []

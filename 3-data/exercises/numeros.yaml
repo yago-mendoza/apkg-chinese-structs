@@ -1727,3 +1727,130 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Quiero una hoja de papel.»'}
     answer: {meaning: Quiero una hoja de papel.}
     comments: []
+  - id: x.contrast.ci
+    added: 2026-10-08
+    lang: es
+    type: contrast
+    group: g.ci-ci
+    targets: [w.ci]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 次, pinyin: cì, meaning: vez (cuántas veces pasa algo)}
+    comments: []
+  - id: x.dictation.ci
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.ci]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ci4, hanzi: 次, pinyin: cì, meaning: vez (cuántas veces pasa algo)}
+    comments: []
+  - id: x.cloze.ci
+    added: 2026-10-08
+    lang: es
+    type: cloze
+    sentence: s.ta-lai-guo-liang-ci
+    gap: w.ci
+    targets: [w.ci]
+    context: [w.ta.he, w.lai, w.guo.exp, w.liang]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Ha venido dos veces.»'}
+    answer: {typed: ci4, hanzi: 次, pinyin: cì, meaning: vez (cuántas veces pasa algo)}
+    comments: []
+  - id: x.read.ci
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.ci]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 次}
+    answer: {hanzi: 次, pinyin: cì, meaning: vez (cuántas veces pasa algo)}
+    comments: []
+  - id: x.dictation.bian
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.bian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bian4, hanzi: 遍, pinyin: biàn, meaning: vez (de principio a fin)}
+    comments: []
+  - id: x.read.bian
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.bian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 遍}
+    answer: {hanzi: 遍, pinyin: biàn, meaning: vez (de principio a fin)}
+    comments: []
+  - id: x.listen.ta-lai-guo-liang-ci
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.ta-lai-guo-liang-ci
+    targets: [s.ta-lai-guo-liang-ci]
+    context: [w.ta.he, w.lai, w.guo.exp, w.liang, w.ci]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ha venido dos veces.}
+    comments: []
+  - id: x.produce.ta-lai-guo-liang-ci
+    added: 2026-10-08
+    lang: es
+    type: produce
+    sentence: s.ta-lai-guo-liang-ci
+    targets: [s.ta-lai-guo-liang-ci]
+    context: [w.ta.he, w.lai, w.guo.exp, w.liang, w.ci]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ha venido dos veces.»'}
+    answer: {meaning: Ha venido dos veces.}
+    comments: []
+  - id: x.listen.zhe-ben-shu-wo-kan-le-liang-bian
+    added: 2026-10-08
+    lang: es
+    type: listen
+    sentence: s.zhe-ben-shu-wo-kan-le-liang-bian
+    targets: [s.zhe-ben-shu-wo-kan-le-liang-bian]
+    context: [w.zhe, w.ben.book, w.shu, w.wo, w.kan, w.le, w.liang, w.bian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Este libro lo he leído dos veces, entero.'}
+    comments: []
+  - id: x.nuance.ci-bian
+    added: 2026-10-08
+    lang: es
+    type: nuance
+    targets: [w.ci, w.bian]
+    skills: [comprehension, discrimination]
+    prompt: {text: '次 y 遍: ¿cuál cuenta las veces que haces algo entero, de principio a fin?'}
+    answer: {meaning: '遍: 这本书我看了两遍 «me he leído este libro dos veces, entero»; 再说一遍 «dilo otra vez». 次 cuenta ocasiones: 他来过两次 «ha venido dos veces»; ir a un sitio siempre es 次. Y 说一遍 es decirlo entero; 说一下, comentarlo un momento.'}
+    comments: []
+  - id: x.nuance.yi-shi
+    added: 2026-10-08
+    lang: es
+    type: nuance
+    targets: [w.num.shi, w.num.yi]
+    skills: [comprehension, discrimination]
+    prompt: {text: '¿Cómo se dicen 12, 112 y 512?'}
+    answer: {meaning: '十二, 一百一十二, 五百一十二. Al principio del número, 十 va solo (十二); dentro, siempre con 一 delante: 一百一十二, nunca 一百十二.'}
+    comments: []
+  - id: x.nuance.qian-ling
+    added: 2026-10-08
+    lang: es
+    type: nuance
+    targets: [w.ling, w.qian.thousand]
+    skills: [comprehension, discrimination]
+    prompt: {text: '一千二百 y 一千零二: ¿cuál es 1200 y cuál 1002?'}
+    answer: {meaning: '一千二百 es 1200 (al hablar, también 一千二). 一千零二 es 1002: 零 marca el hueco de las cifras que faltan, como en 一百零五 (105) y 七千零三 (7003).'}
+    comments: []
+  - id: x.nuance.ui-iu
+    added: 2026-10-08
+    lang: es
+    type: nuance
+    targets: [w.sui, w.dui, w.num.liu, w.num.jiu]
+    skills: [comprehension, discrimination]
+    prompt: {text: '岁, 对, 六 y 九: ¿cuáles se escriben -ui y cuáles -iu, y cómo suena cada final?'}
+    answer: {meaning: 'ui abrevia uei: 岁 suì y 对 duì suenan casi «suei», «duei». iu abrevia iou: 六 liù y 九 jiǔ suenan casi «liou», «jiou». El tono va sobre la segunda letra.'}
+    comments: []

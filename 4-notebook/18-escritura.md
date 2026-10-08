@@ -29,6 +29,9 @@
 - ✅🃏 写 xiě [ɕjɛ˧˩˧] · escribir · _verbo_
 - ✅🃏 练习 liànxí [ljɛn˥˩ ɕi˧˥] · practicar; ejercicio · _verbo_
 - ✅🃏 句子 jùzi [tɕy˥˩ tsɯ] · frase · _sustantivo_
+- ✅🃏 复习 fùxí [fu˥˩ ɕi˧˥] · repasar · _verbo_ · 复习 es repasar lo que ya se vio; 学习, estudiar algo nuevo. Comparten 习.
+- ✅🃏 笔记 bǐjì [pi˧˩˧ tɕi˥˩] · apuntes, notas · _sustantivo_ · Palabra a palabra: 笔 «bolígrafo» + 记 «anotar».
+- ✅🃏 毛笔 máobǐ [mɑʊ˧˥ pi˧˩˧] · pincel (de caligrafía) · _sustantivo_ · Palabra a palabra: 毛 «pelo» + 笔 «instrumento para escribir»: el pincel de pelo.
 
 ## 生, 牛 y 午
 
@@ -86,3 +89,4 @@ Carácter frente a palabra.
 - ✅🃏 我写汉字。 · wǒ xiě hànzì · Escribo caracteres chinos.
 - ✅🃏 我练习拼音。 · wǒ liànxí pīnyīn · Practico pinyin.
 - ✅🃏 这个字怎么说？ · zhè ge zì zěnme shuō · ¿Cómo se dice este carácter?
+- ✅🃏 我得先复习一下笔记。 · wǒ děi xiān fùxí yíxià bǐjì · Antes tengo que repasar los apuntes.

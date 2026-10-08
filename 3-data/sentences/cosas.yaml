@@ -377,3 +377,74 @@ sentences:
       - {text: 。}
     translation: {es: 'Esta es mi taza.', en: 'This is my cup.'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.na-shi-yi-ke-shu
+    use: say
+    segments:
+      - {text: 那, ref: w.na.that, pinyin: 'nà'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yì', sandhi: true}
+      - {text: 棵, ref: w.ke, pinyin: 'kē'}
+      - {text: 树, ref: w.shu.tree, pinyin: 'shù'}
+      - {text: 。}
+    translation: {es: 'Eso es un árbol.', en: 'That is a tree.'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+  - id: s.wo-xihuan-pashan
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 爬山, ref: w.pashan, pinyin: 'páshān'}
+      - {text: 。}
+    translation: {es: 'Me gusta subir a la montaña.', en: 'I like hiking.'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+  - id: s.wo-keyi-shi-yixia-ma
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 可以, ref: w.keyi, pinyin: 'kěyǐ'}
+      - {text: 试, ref: w.shi.try, pinyin: 'shì'}
+      - {text: 一下, ref: w.yixia, pinyin: 'yíxià', sandhi: true}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Puedo probármelo?', en: 'Can I try it on?'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.women-xiuxi-yixia-ba
+    use: say
+    segments:
+      - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
+      - {text: 休息, ref: w.xiuxi, pinyin: 'xiūxi'}
+      - {text: 一下, ref: w.yixia, pinyin: 'yíxià', sandhi: true}
+      - {text: 吧, ref: w.ba.particle, pinyin: 'ba'}
+      - {text: 。}
+    translation: {es: 'Descansemos un momento.', en: 'Let''s take a short break.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.wo-zai-zhao-wo-de-shouji
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 在, ref: w.zai.progressive, pinyin: 'zài'}
+      - {text: 找, ref: w.zhao, pinyin: 'zhǎo'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 手机, ref: w.shouji, pinyin: 'shǒujī'}
+      - {text: 。}
+    translation: {es: 'Estoy buscando mi móvil.', en: 'I''m looking for my phone.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-08'}
+  - id: s.dlg-tianqi-pashan
+    use: hear
+    segments:
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 天气, ref: w.tianqi, pinyin: 'tiānqì'}
+      - {text: 真, ref: w.zhen, pinyin: 'zhēn'}
+      - {text: 好, ref: w.hao, pinyin: 'hǎo'}
+      - {text: ！}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 跟, ref: w.gen, pinyin: 'gēn'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 一起, ref: w.yiqi, pinyin: 'yìqǐ', sandhi: true}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 爬山, ref: w.pashan, pinyin: 'páshān'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¡Qué buen tiempo hace hoy! ¿Quieres venir a la montaña conmigo?', en: 'The weather is great today! Do you want to go hiking with me?'}

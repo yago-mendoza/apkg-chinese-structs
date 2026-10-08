@@ -244,3 +244,24 @@ entries:
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Por escrito, 10月8日; al hablar, 十月八号.'}
+  - id: w.shihou
+    use: say
+    role: content
+    kind: word
+    accept_pinyin_mismatch: '候 va en tono neutro dentro de 时候'
+    hanzi: 时候
+    pinyin: 'shíhou'
+    meaning: {es: 'momento; cuando (…的时候)', en: 'time, moment; when'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '…的时候 es «cuando…»: va detrás de lo que pasa. 你有时间的时候 «cuando tengas tiempo».'}
+  - id: w.xian.first
+    use: say
+    role: content
+    kind: word
+    hanzi: 先
+    pinyin: 'xiān'
+    meaning: {es: 'primero, antes', en: 'first'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Delante del verbo: 我得先复习一下笔记 «antes tengo que repasar los apuntes». Es el mismo 先 de 先生.'}

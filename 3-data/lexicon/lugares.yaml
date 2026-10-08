@@ -1,0 +1,181 @@
+# Diccionario · Lugares y transporte. Esquema: 3-data/README.md
+
+entries:
+  - id: w.nali
+    use: say
+    role: function
+    kind: word
+    hanzi: 哪里
+    pinyin: nǎlǐ
+    meaning: {es: dónde, en: where}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '哪 «qué, cuál» + 里 «dentro»: ¿en qué sitio? Se dice en toda China.'}
+  - id: w.huoche
+    use: hear
+    role: content
+    kind: word
+    hanzi: 火车
+    pinyin: huǒchē
+    meaning: {es: tren, en: train}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: '火 «fuego» + 车 «vehículo»: el primero especifica el segundo.'}
+  - id: w.rukou
+    use: [read]
+    role: content
+    use_reason: se lee en carteles; casi nunca se dice
+    kind: word
+    hanzi: 入口
+    pinyin: rùkǒu
+    meaning: {es: entrada, en: entrance}
+    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    comments: []
+  - id: w.feiji
+    use: hear
+    role: content
+    kind: word
+    hanzi: 飞机
+    pinyin: fēijī
+    meaning: {es: avión, en: plane}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.chukou
+    use: [read]
+    use_reason: 'cartel de salida, pareja de 入口: se lee más que se dice'
+    role: content
+    kind: word
+    pos: sustantivo
+    pos_reason: '«salida» de un cartel; la lista lo da antes como verbo («exportar»)'
+    hanzi: 出口
+    pinyin: chūkǒu
+    meaning: {es: salida, en: exit}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '出 chū «salir»: una planta que sale de un tiesto. 出口 y 入口 son la pareja de los carteles.'}
+  - id: w.zheli
+    use: say
+    role: function
+    kind: word
+    hanzi: 这里
+    pinyin: zhèlǐ
+    meaning: {es: aquí, en: here}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '这 «este» + 里 «dentro»: en este sitio. Como 哪里 «dónde».'}
+  - id: w.jichang
+    use: say
+    role: content
+    kind: word
+    hanzi: 机场
+    pinyin: 'jīchǎng'
+    meaning: {es: 'aeropuerto', en: 'airport'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 机 «avión» (de 飞机) + 场 «explanada».'}
+      - {kind: teacher, private: false, date: '2026-10-08', text: 'En clase: 她在机场。 «Está en el aeropuerto.»'}
+  - id: w.ditie
+    use: say
+    role: content
+    kind: word
+    hanzi: 地铁
+    pinyin: 'dìtiě'
+    meaning: {es: 'metro', en: 'subway'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 地 «tierra» + 铁 «hierro»: el tren de hierro bajo tierra.'}
+  - id: w.siji
+    use: say
+    role: content
+    kind: word
+    hanzi: 司机
+    pinyin: 'sījī'
+    meaning: {es: 'conductor (de taxi, de autobús)', en: 'driver'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Es el oficio. Al taxista, al hablarle, no se le llama 司机 sino 师傅 shīfu [HSK 5].'}
+      - {kind: character, private: false, date: '2026-10-08', text: '司 sī da el sonido a 词 cí, que lleva además 讠 «palabra».'}
+  - id: w.ditu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 地图
+    pinyin: 'dìtú'
+    meaning: {es: 'mapa', en: 'map'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 地 «tierra» + 图 «dibujo». También la aplicación de mapas del móvil.'}
+  - id: w.chuan
+    use: hear
+    role: content
+    kind: word
+    hanzi: 船
+    pinyin: 'chuán'
+    meaning: {es: 'barco', en: 'boat'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Se va en barco como en avión, con 坐: 坐船.'}
+  - id: w.xuexiao
+    use: say
+    role: content
+    kind: word
+    hanzi: 学校
+    pinyin: 'xuéxiào'
+    meaning: {es: 'escuela, colegio', en: 'school'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 学 «estudiar» + 校 «escuela».'}
+  - id: w.nali.there
+    use: say
+    role: function
+    kind: word
+    hanzi: 那里
+    pinyin: 'nàlǐ'
+    meaning: {es: 'allí', en: 'there'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '这里 «aquí», 那里 «allí», 哪里 «¿dónde?»: 这, 那 y 哪 + 里 «lugar». Solo cambia el primer hanzi.'}
+  - id: w.li.inside
+    use: say
+    role: function
+    kind: word
+    pos: sustantivo
+    pos_reason: 'aquí es «dentro», una palabra de lugar; la lista lo da también como clasificador (li, medida de distancia)'
+    hanzi: 里
+    pinyin: 'lǐ'
+    meaning: {es: 'dentro, en (detrás de un lugar)', en: 'inside, in'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Va detrás del sitio: 冰箱里 «en la nevera», 房间里 «en la habitación».'}
+  - id: w.jiedao
+    use: hear
+    role: content
+    kind: word
+    hanzi: 街道
+    pinyin: 'jiēdào'
+    meaning: {es: 'calle', en: 'street'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 街 «calle» + 道 «camino».'}
+      - {kind: character, private: false, date: '2026-10-08', text: '圭 da el sonido a 街 jiē y a 鞋 xié: suenan parecido.'}
+  - id: w.chepiao
+    use: hear
+    role: content
+    kind: word
+    hanzi: 车票
+    pinyin: 'chēpiào'
+    meaning: {es: 'billete (de tren o autobús)', en: 'ticket (train, bus)'}
+    source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27', rescued: 008-2026-10-08-pedir-ayuda-lugares-y-finales}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 车 «vehículo» + 票 «billete». Para el avión, 机票.'}
+  - id: g.here-there
+    kind: group
+    basis: set
+    title: 'Aquí, allí, ¿dónde?'
+    explanation: '这, 那 y 哪 + 里 «lugar»: solo cambia el primer hanzi.'
+    members:
+      - {ref: w.zheli, cue: '这里 zhèlǐ, aquí: 我在这里'}
+      - {ref: w.nali.there, cue: '那里 nàlǐ, allí: 那里有两只熊猫'}
+      - {ref: w.nali, cue: '哪里 nǎlǐ, ¿dónde?: 你在哪里？'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments: []

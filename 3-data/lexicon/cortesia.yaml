@@ -39,6 +39,7 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Variantes: 对啊 duì a, más natural en conversación, y 没错 méi cuò [HSK 4], más enfático («exacto»).', original: duì a / méi cuò (+ intenso)}
+      - {kind: sound, private: false, date: '2026-10-08', text: 'Suena casi «duei», alargando la e.', original: 'dui sonuds like dueee'}
   - id: e.haode
     use: say
     role: content
@@ -130,6 +131,7 @@ entries:
       - {ref: w.dui, cue: 'correcto, tienes razón'}
       - {ref: e.shide, cue: 'sí, eso es (confirma un hecho)'}
       - {ref: e.haode, cue: de acuerdo (aceptas algo)}
+      - {ref: e.meicuo, cue: '¡exacto!, más enfático que 对'}
       - {ref: w.en, cue: 'mm, te sigo (mientras hablan)'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
     comments: []
@@ -226,7 +228,7 @@ entries:
     kind: group
     basis: set
     title: 'Ayudar'
-    explanation: 'Tres formas de ayudar; al hablar, la corriente es 帮.'
+    explanation: 'Tres formas de ayudar; al hablar, la corriente es 帮. 帮忙 es tan básico como 帮 (los dos, HSK 1); 帮助, un poco más formal.'
     members:
       - {ref: w.bang, cue: 'ayudar a alguien: 你可以帮我吗？'}
       - {ref: w.bangmang, cue: 'echar una mano, sin decir a quién'}
@@ -353,3 +355,72 @@ entries:
     source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: '明 «claro» + 白 «blanco»: claro como el día. 我明白了 «ya lo entiendo».'}
+  - id: w.yixia
+    use: say
+    role: function
+    kind: word
+    pos: clasificador
+    pos_reason: 'no está en la lista sin erhua; es 一 + 下, un clasificador de acciones'
+    level: 1
+    level_reason: 'la lista lo da como 一下儿 [HSK 1]; el mazo usa la forma sin erhua'
+    hanzi: 一下
+    pinyin: 'yīxià'
+    meaning: {es: 'un momento, un poco (detrás del verbo)', en: 'a bit, for a moment (after a verb)'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Detrás del verbo: 等一下 «espera un momento», 看一下 «echa un vistazo». Sirve para tres cosas: hacer algo un momento, probar a ver qué pasa y suavizar una petición. A menudo no se traduce.'}
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Si hay algo detrás, 一下 va antes: 看一下你的手机 «déjame ver tu móvil». Con 一下 se lee yíxià, porque 下 es cuarto tono.'}
+      - {kind: note, private: false, date: '2026-10-08', text: 'No es lo mismo que 一遍: 说一遍 es decirlo entero; 说一下, comentarlo un momento.'}
+  - id: w.rang
+    use: say
+    role: content
+    kind: word
+    hanzi: 让
+    pinyin: 'ràng'
+    meaning: {es: 'dejar, hacer que', en: 'to let'}
+    connection: {kind: sound, with: [上], text: '上 shàng da el sonido a 让 ràng: riman; 讠 «palabra» da el sentido.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '让 + persona + verbo: 让我想一下 «déjame pensarlo un momento».'}
+  - id: w.jieshi
+    use: say
+    role: content
+    kind: word
+    hanzi: 解释
+    pinyin: 'jiěshì'
+    meaning: {es: 'explicar', en: 'to explain'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '你可以解释一下吗？ «¿me lo puedes explicar?»: para clase y para el trabajo.'}
+  - id: w.fanyi
+    use: hear
+    role: content
+    kind: word
+    pos: verbo
+    hanzi: 翻译
+    pinyin: 'fānyì'
+    meaning: {es: 'traducir; traductor', en: 'to translate; translator'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '帮我翻译一下 «tradúcemelo, por favor».'}
+  - id: e.meicuo
+    use: say
+    role: content
+    kind: expression
+    hanzi: 没错
+    pinyin: 'méi cuò'
+    meaning: {es: '¡exacto!, eso es', en: 'exactly'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 没 «no hay» + 错 «error»: «no hay error», ¡exacto! Más enfático que 对.'}
+  - id: g.can
+    kind: group
+    basis: set
+    title: '会, 能 y 可以: tres «poder»'
+    explanation: 'El español dice «poder» para los tres; el chino separa saber, ser capaz y tener permiso.'
+    members:
+      - {ref: w.hui.can, cue: 'saber hacerlo, porque lo aprendiste: 我会说中文'}
+      - {ref: w.neng, cue: 'ser capaz, o que la situación lo permita: 你能说中文吗？'}
+      - {ref: w.keyi, cue: 'tener permiso, estar bien: 可以坐这里吗？'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments: []

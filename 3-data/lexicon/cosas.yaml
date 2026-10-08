@@ -47,26 +47,6 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Repetir el verbo lo suaviza: «mirar un poco», no «mirar dos veces».'}
-  - id: w.shu
-    use: say
-    role: content
-    kind: word
-    hanzi: 书
-    pinyin: shū
-    meaning: {es: libro, en: book}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
-    comments: []
-  - id: w.shouji
-    use: say
-    role: content
-    kind: word
-    hanzi: 手机
-    pinyin: shǒujī
-    meaning: {es: móvil, en: mobile phone}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
-    comments:
-      - {kind: linguistic, private: false, date: 2026-09-25, text: 手 «mano» + 机 «máquina».}
-      - {kind: character, private: false, date: '2026-09-27', text: '机 jī «máquina» (con 木 a la izquierda, no 扌): 手机 es la máquina de mano; 飞机 fēijī, la que vuela; 机票 jīpiào, su billete.'}
   - id: w.zuqiu
     use: hear
     role: content
@@ -77,26 +57,6 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Calco: 足 «pie» + 球 «pelota».'}
-  - id: w.huoche
-    use: hear
-    role: content
-    kind: word
-    hanzi: 火车
-    pinyin: huǒchē
-    meaning: {es: tren, en: train}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
-    comments:
-      - {kind: linguistic, private: false, date: 2026-09-25, text: '火 «fuego» + 车 «vehículo»: el primero especifica el segundo.'}
-  - id: w.rukou
-    use: [read]
-    role: content
-    use_reason: se lee en carteles; casi nunca se dice
-    kind: word
-    hanzi: 入口
-    pinyin: rùkǒu
-    meaning: {es: entrada, en: entrance}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
-    comments: []
   - id: w.zhe
     use: say
     role: function
@@ -127,17 +87,6 @@ entries:
       - {ref: w.nali, cue: 'con boca: nǎ, ¿dónde? (哪里)'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
-  - id: w.men
-    use: hear
-    role: content
-    kind: word
-    hanzi: 门
-    pinyin: mén
-    meaning: {es: puerta, en: door}
-    connection: {kind: sound, with: [们, 问], text: '门 mén da el sonido a 们 men y a 问 wèn: ver 门 dentro de un carácter evoca ese sonido.'}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-    comments:
-      - {kind: character, private: false, date: '2026-09-27', text: El dibujo de una puerta de dos hojas.}
   - id: g.men-phonetic
     kind: group
     basis: phonetic
@@ -147,15 +96,6 @@ entries:
       - {ref: w.men, cue: 'la puerta: mén, 2.º tono; palabra'}
       - {ref: c.men.plural, cue: 'persona 亻 + 门: men, átono; ligada, plural'}
       - {ref: w.wen, cue: 'boca 口 en la puerta: wèn, preguntar; palabra'}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-    comments: []
-  - id: w.feiji
-    use: hear
-    role: content
-    kind: word
-    hanzi: 飞机
-    pinyin: fēijī
-    meaning: {es: avión, en: plane}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
   - id: w.xiaomao
@@ -232,19 +172,6 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: '打 + deporte de pelota: 打篮球 «jugar al baloncesto». Lleva 扌 «mano».'}
-  - id: w.chukou
-    use: [read]
-    use_reason: 'cartel de salida, pareja de 入口: se lee más que se dice'
-    role: content
-    kind: word
-    pos: sustantivo
-    pos_reason: '«salida» de un cartel; la lista lo da antes como verbo («exportar»)'
-    hanzi: 出口
-    pinyin: chūkǒu
-    meaning: {es: salida, en: exit}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-09-27', text: '出 chū «salir»: una planta que sale de un tiesto. 出口 y 入口 son la pareja de los carteles.'}
   - id: g.ru-chu
     kind: group
     basis: set
@@ -446,25 +373,6 @@ entries:
     meaning: {es: 'música', en: 'music'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
-  - id: w.kuaizi
-    use: hear
-    role: content
-    kind: word
-    hanzi: 筷子
-    pinyin: 'kuàizi'
-    meaning: {es: 'palillos', en: 'chopsticks'}
-    accept_pinyin_mismatch: 'sufijo átono: kuàizi'
-    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
-    comments: []
-  - id: w.baozhi
-    use: hear
-    role: content
-    kind: word
-    hanzi: 报纸
-    pinyin: 'bàozhǐ'
-    meaning: {es: 'periódico', en: 'newspaper'}
-    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
-    comments: []
   - id: w.weishenme
     use: say
     role: function
@@ -520,16 +428,6 @@ entries:
       - {ref: w.bie, cue: 'pedir que no lo hagan: 别看我！'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
-  - id: w.zheli
-    use: say
-    role: function
-    kind: word
-    hanzi: 这里
-    pinyin: zhèlǐ
-    meaning: {es: aquí, en: here}
-    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '这 «este» + 里 «dentro»: en este sitio. Como 哪里 «dónde».'}
   - id: g.guo-guo
     kind: group
     basis: soundalike
@@ -550,16 +448,6 @@ entries:
     source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29', rescued: 004-2026-10-02-ser-nombres-y-describir}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-02', text: '这棵树很高 «este árbol es alto»: 棵 kē es el clasificador de los árboles. No confundir con 书 shū «libro»: suenan parecido, pero 树 es cuarto tono.'}
-  - id: w.dianshi
-    use: say
-    role: content
-    kind: word
-    hanzi: 电视
-    pinyin: diànshì
-    meaning: {es: televisión, la tele, en: television, TV}
-    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: deberes 2026-09-24, date: '2026-09-24'}
-    connection: {kind: sound, with: [礻], text: '视 shì toma el sonido de 示 shì, que a la izquierda de un carácter se escribe 礻: por eso suenan igual.'}
-    comments: []
   - id: w.long
     use: hear
     role: content
@@ -581,33 +469,6 @@ entries:
       - {ref: w.shu.mouse, cue: 'shǔ, baja y sube: rata (zodiaco)'}
       - {ref: w.shu.belong, cue: 'shǔ, baja y sube: ser de un signo (我属马)'}
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
-    comments: []
-  - id: w.bi.pen
-    use: say
-    role: content
-    kind: word
-    hanzi: 笔
-    pinyin: 'bǐ'
-    meaning: {es: 'bolígrafo, lápiz', en: 'pen'}
-    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-    comments: []
-  - id: w.beizi
-    use: say
-    role: content
-    kind: word
-    hanzi: 杯子
-    pinyin: 'bēizi'
-    meaning: {es: 'vaso, taza', en: 'cup, glass'}
-    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-    comments: []
-  - id: w.dianhua
-    use: say
-    role: content
-    kind: word
-    hanzi: 电话
-    pinyin: 'diànhuà'
-    meaning: {es: 'teléfono', en: 'telephone'}
-    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
   - id: g.na-dou
     kind: group
@@ -658,22 +519,180 @@ entries:
       - {ref: w.zuo.sit, cue: 'zuò, cae: sentarse'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
-  - id: w.zhi.paper
+  - id: w.shi.try
     use: say
     role: content
     kind: word
-    hanzi: 纸
-    pinyin: 'zhǐ'
-    meaning: {es: 'papel', en: 'paper'}
-    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    hanzi: 试
+    pinyin: 'shì'
+    meaning: {es: 'probar, intentar', en: 'to try'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '我可以试一下吗？ «¿puedo probármelo?», en una tienda. 试试 y 试一下 son «probar un poco».'}
+      - {kind: note, private: false, date: '2026-10-08', text: 'Suena exactamente igual que 是 shì: solo el contexto los separa.'}
+  - id: w.deng
+    use: say
+    role: content
+    kind: word
+    hanzi: 等
+    pinyin: 'děng'
+    meaning: {es: 'esperar', en: 'to wait'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '你等一下 «espera un momento» es de lo que más se oye.'}
+  - id: w.xiuxi
+    use: say
+    role: content
+    kind: word
+    accept_pinyin_mismatch: '息 va en tono neutro dentro de 休息'
+    hanzi: 休息
+    pinyin: 'xiūxi'
+    meaning: {es: 'descansar', en: 'to rest'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments: []
-  - id: w.yifu
+  - id: w.zhao
     use: say
     role: content
     kind: word
-    hanzi: 衣服
-    pinyin: 'yīfu'
-    meaning: {es: 'ropa', en: 'clothes'}
-    accept_pinyin_mismatch: 'la segunda sílaba se dice átona'
-    source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    hanzi: 找
+    pinyin: 'zhǎo'
+    meaning: {es: 'buscar', en: 'to look for'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '我在找我的手机 «estoy buscando mi móvil». Pedirlo: 帮我找一下.'}
+  - id: w.na.take
+    use: say
+    role: content
+    kind: word
+    hanzi: 拿
+    pinyin: 'ná'
+    meaning: {es: 'coger, llevar (en la mano)', en: 'to take, to hold'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '帮我拿一下 «sujétamelo un momento».'}
+  - id: w.dei
+    use: say
+    role: content
+    kind: word
+    pos: verbo
+    pos_reason: 'en el mazo es děi «tener que»; la lista lo da antes como partícula (de)'
+    hanzi: 得
+    pinyin: 'děi'
+    meaning: {es: 'tener que', en: 'to have to'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Con esta lectura, děi, es «tener que», muy de hablar: 我得先复习一下笔记. El mismo hanzi se lee de, sin tono, en 觉得.'}
+  - id: w.pashan
+    use: say
+    role: content
+    kind: word
+    hanzi: 爬山
+    pinyin: 'páshān'
+    meaning: {es: 'subir a la montaña, hacer senderismo', en: 'to go hiking'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 爬 «trepar» + 山 «montaña».'}
+      - {kind: character, private: false, date: '2026-10-08', text: '巴 bā da el sonido a 爬 pá, a 爸 bà, a 吧 ba y a 芭 bā; en 爬, 爪 «garra» da el sentido: trepar con las manos.'}
+  - id: w.paobu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 跑步
+    pinyin: 'pǎobù'
+    meaning: {es: 'correr (hacer deporte)', en: 'to run, to jog'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 跑 «correr» + 步 «paso».'}
+  - id: w.tiaowu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 跳舞
+    pinyin: 'tiàowǔ'
+    meaning: {es: 'bailar', en: 'to dance'}
+    source: {origin: attic, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01', rescued: 008-2026-10-08-pedir-ayuda-lugares-y-finales}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Palabra a palabra: 跳 «saltar» + 舞 «danza».'}
+  - id: w.jita
+    use: hear
+    role: content
+    kind: word
+    hanzi: 吉他
+    pinyin: 'jítā'
+    meaning: {es: 'guitarra', en: 'guitar'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Préstamo por el sonido del inglés guitar, como 咖啡 de coffee.'}
+  - id: w.balei
+    use: hear
+    role: content
+    kind: word
+    hanzi: 芭蕾
+    pinyin: 'bālěi'
+    meaning: {es: 'ballet', en: 'ballet'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Préstamo por el sonido del francés ballet.'}
+  - id: w.jihui
+    use: hear
+    role: content
+    kind: word
+    hanzi: 机会
+    pinyin: 'jīhuì'
+    meaning: {es: 'oportunidad', en: 'opportunity'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'El mismo 机 de 手机 y 飞机.'}
+  - id: w.likai
+    use: hear
+    role: content
+    kind: word
+    hanzi: 离开
+    pinyin: 'líkāi'
+    meaning: {es: 'irse de, dejar (un sitio)', en: 'to leave'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 离 «separarse» + 开 «abrir, partir».'}
+  - id: w.huida
+    use: hear
+    role: content
+    kind: word
+    hanzi: 回答
+    pinyin: 'huídá'
+    meaning: {es: 'responder', en: 'to answer'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 回 «volver» + 答 «contestar»: devolver la palabra. 回答问题 «contestar una pregunta».'}
+  - id: w.biaoda
+    use: hear
+    role: content
+    kind: word
+    hanzi: 表达
+    pinyin: 'biǎodá'
+    meaning: {es: 'expresar', en: 'to express'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Comparte 表 «mostrar» con 手表; en la escritura tradicional eran dos caracteres distintos.'}
+      - {kind: character, private: false, date: '2026-10-08', text: '大 dà da el sonido a 达 dá.'}
+  - id: g.shi-try
+    kind: group
+    basis: homophone
+    title: '是, 试 y 十: shì y shí'
+    explanation: '是 y 试 suenan exactamente igual, shì con cuarto tono: solo el contexto los separa. 十 shí sube.'
+    members:
+      - {ref: w.shi, cue: 'ser: 我是学生'}
+      - {ref: w.shi.try, cue: 'probar: 我可以试一下吗？'}
+      - {ref: w.num.shi, cue: 'shí, sube: diez'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments: []
+  - id: g.na-tones
+    kind: group
+    basis: soundalike
+    title: '拿 ná, 哪 nǎ y 那 nà'
+    explanation: 'La misma sílaba, na; solo el tono los separa.'
+    members:
+      - {ref: w.na.take, cue: 'ná, sube: coger'}
+      - {ref: w.na.which, cue: 'nǎ, baja y sube: ¿cuál?'}
+      - {ref: w.na.that, cue: 'nà, cae: eso, aquel'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-08'}
     comments: []

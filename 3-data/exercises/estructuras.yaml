@@ -448,3 +448,28 @@ exercises:
     prompt: {text: '¿Cuál se dice así en chino? «Tengo veintitrés años.»'}
     answer: {meaning: '«Tengo 23 años» no lleva verbo en chino: la edad hace de predicado sin 是.'}
     comments: []
+  - id: x.calque.v-yixia
+    added: 2026-10-08
+    lang: es
+    type: pattern
+    targets: [st.v-yixia]
+    context: [w.yixia]
+    sentence: s.ni-deng-yixia
+    reveal: [s.wo-xiang-wen-yixia, s.qing-ni-kan-yixia]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Espera un momento.»'}
+    answer: {meaning: '«Un poco» de una acción es 一下, detrás del verbo. 一点 es «un poco» de una cantidad (多一点 «un poco más»),
+        y no va detrás de 等.'}
+    comments: []
+  - id: x.calque.meiyou-n
+    added: 2026-10-08
+    lang: es
+    type: pattern
+    targets: [st.meiyou-n]
+    context: [w.meiyou]
+    sentence: s.wo-meiyou-shoubiao
+    reveal: [s.wo-meiyou-qian, s.wo-meiyou-shijian]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «No tengo reloj.»'}
+    answer: {meaning: '有 es el único verbo que nunca se niega con 不: siempre 没有.'}
+    comments: []

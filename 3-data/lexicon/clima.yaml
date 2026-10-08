@@ -20,6 +20,7 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
     comments:
       - {kind: sound, private: false, date: '2026-09-29', text: Suena un poco a «rua»., original: ri suena (rua) un poco solo un poco sabes}
+      - {kind: sound, private: false, date: '2026-10-08', text: 'Suena casi «reoa», muy rápido.', original: 'se proncuca ''reoa'' pero rapido'}
   - id: w.leng
     use: say
     role: content
@@ -39,3 +40,94 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: 下 «caer» + 雨 yǔ «lluvia». 雨 también está en 需 de 需要.}
+  - id: w.yun
+    use: hear
+    role: content
+    kind: word
+    hanzi: 云
+    pinyin: 'yún'
+    meaning: {es: 'nube', en: 'cloud'}
+    source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27', rescued: 008-2026-10-08-pedir-ayuda-lugares-y-finales}
+    comments:
+      - {kind: character, private: false, date: '2026-09-27', text: 'Aparece en la parte de abajo de 会 huì.'}
+  - id: w.xingxing
+    use: hear
+    role: content
+    kind: word
+    accept_pinyin_mismatch: 'la sílaba repetida va en tono neutro'
+    hanzi: 星星
+    pinyin: 'xīngxing'
+    meaning: {es: 'estrella', en: 'star'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '星 suelto casi no se usa: al hablar, 星星. Es el mismo 星 de 星期.'}
+  - id: w.yueliang
+    use: hear
+    role: content
+    kind: word
+    accept_pinyin_mismatch: '亮 va en tono neutro dentro de 月亮'
+    hanzi: 月亮
+    pinyin: 'yuèliang'
+    meaning: {es: 'luna', en: 'moon'}
+    source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27', rescued: 008-2026-10-08-pedir-ayuda-lugares-y-finales}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '月 ya es «luna» (y «mes»); 月亮 es la palabra corriente para la luna. 亮 pierde el tono: yuèliang.'}
+  - id: w.xue.snow
+    use: hear
+    role: content
+    kind: word
+    hanzi: 雪
+    pinyin: 'xuě'
+    meaning: {es: 'nieve', en: 'snow'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '«Nieva» es 下雪, igual que 下雨 «llueve».'}
+  - id: w.xiaxue
+    use: say
+    role: content
+    kind: word
+    hanzi: 下雪
+    pinyin: 'xiàxuě'
+    meaning: {es: 'nevar', en: 'to snow'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 下 «caer, bajar» + 雪 «nieve». Como 下雨: 北京下雪了 «está nevando en Pekín».'}
+  - id: w.shan
+    use: hear
+    role: content
+    kind: word
+    hanzi: 山
+    pinyin: 'shān'
+    meaning: {es: 'montaña', en: 'mountain'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '爬山 «subir a la montaña» es una afición muy común en China.'}
+  - id: w.dao
+    use: hear
+    role: content
+    kind: word
+    hanzi: 岛
+    pinyin: 'dǎo'
+    meaning: {es: 'isla', en: 'island'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments: []
+  - id: w.hua.flower
+    use: hear
+    role: content
+    kind: word
+    hanzi: 花
+    pinyin: 'huā'
+    meaning: {es: 'flor', en: 'flower'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Como verbo es «gastar»: 花钱 «gastar dinero».'}
+  - id: g.re-ri
+    kind: group
+    basis: soundalike
+    title: '热 rè y 日 rì'
+    explanation: 'Casi iguales al oído y con el mismo tono: solo cambia la vocal. En 热, la e oscura del chino; en 日, el zumbido de la i tras r.'
+    members:
+      - {ref: w.re, cue: 'rè, «calor»: e oscura'}
+      - {ref: w.ri.day, cue: 'rì, «día» (por escrito): zumbido, sin vocal'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments: []

@@ -10,7 +10,8 @@ entries:
     meaning: {es: ocho, en: eight}
     standalone: 'yes'
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
-    comments: []
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-08', text: '八 es como la entrada de una cueva.', original: 'el  ba es como 8 un acueva'}
   - id: w.num.yi
     use: say
     role: content
@@ -55,7 +56,9 @@ entries:
     pinyin: wǔ
     meaning: {es: cinco, en: five}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-    comments: []
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-08', text: '五 se parece un poco a un 5.', original: 'el numeor 5 en hanzi un poco parece un 5'}
+      - {kind: mnemonic, private: false, date: '2026-10-08', text: 'Me recuerda a un lago que he visto por ahí.', original: 'el 5 me recuerda a lago que h evisto poray'}
   - id: w.num.liu
     use: say
     role: content
@@ -82,7 +85,9 @@ entries:
     pinyin: jiǔ
     meaning: {es: nueve, en: nine}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-    comments: []
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-08', text: '九 se parece, misteriosamente, a una mesa.', original: 'el 9 hanzi se parece misteirosamente a una mesa'}
+      - {kind: note, private: false, date: '2026-10-08', text: 'Es elegante y se parece un poco a 万: conviene contrastarlos.', original: 'pero 9 es elegante el hazni un poco parecido al de 10000 pero mas se parece aun el 5 ... asi que contrastar bien esos 2'}
   - id: w.num.shi
     use: say
     role: content
@@ -91,7 +96,9 @@ entries:
     pinyin: shí
     meaning: {es: diez, en: ten}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Al principio de un número, 十 va solo: 十二 (12). Dentro de un número lleva siempre 一 delante: 一百一十三 (113), 五百一十二 (512).', original: 'tb esta bien refoerzra la idea de que el yi empenzaod un numero grnade solo se pone siempre y solo obvia del 11 al 19'}
+      - {kind: teacher, private: false, date: '2026-10-08', text: 'En clase, en el repaso de números: 512 es 五百一十二, con 一 delante de 十.'}
   - id: w.liang
     use: say
     role: content
@@ -103,6 +110,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: '二 èr para contar y dentro de números (十二 «doce»); 两 delante de un clasificador: 两个人 «dos personas».'}
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Al hablar, 两 también va delante de 百, 千 y 万: 两百, 两千. 二 sigue en los números: 十二, 二十.'}
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'El 20 es 二十, nunca 两十; 22 000 es 两万两千, pero 200 000 es 二十万, porque ese 2 es el de 二十. 102 es 一百零二: 二 al final de un número.'}
   - id: w.you.have
     use: say
     role: content
@@ -206,7 +214,9 @@ entries:
     pinyin: 'líng'
     meaning: {es: 'cero', en: 'zero'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '零 marca las cifras vacías: 一百零五 (105), 一千零五十 (1050), 七千零三 (7003). Aunque falten varias seguidas, se dice un solo 零.'}
+      - {kind: note, private: false, date: '2026-10-08', text: 'Tiene una forma rarísima.', original: 'el cero ling tiene una forma extrisima damn'}
   - id: w.bai.hundred
     use: say
     role: content
@@ -478,4 +488,54 @@ entries:
       - {ref: w.jian, cue: '见: ver, encontrarse'}
       - {ref: w.jian.cl, cue: '件: clasificador de ropa y asuntos'}
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+    comments: []
+  - id: w.ci
+    use: say
+    role: function
+    kind: word
+    hanzi: 次
+    pinyin: 'cì'
+    meaning: {es: 'vez (cuántas veces pasa algo)', en: 'time (occurrence)'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Cuenta ocasiones, detrás del verbo: 他来过两次 «ha venido dos veces». Ir a un sitio siempre se cuenta con 次.'}
+  - id: w.bian
+    use: hear
+    role: function
+    kind: word
+    hanzi: 遍
+    pinyin: 'biàn'
+    meaning: {es: 'vez (de principio a fin)', en: 'time (from start to finish)'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Cuenta las veces que se hace algo entero: 这本书我看了两遍 «me he leído este libro dos veces enteras»; 再说一遍 «dilo otra vez».'}
+  - id: g.ci-bian
+    kind: group
+    basis: set
+    title: '次 y 遍: cuántas veces'
+    explanation: 'Los dos cuentan veces, detrás del verbo; 遍 subraya que se hizo entero.'
+    members:
+      - {ref: w.ci, cue: 'ocasiones: 他来过两次'}
+      - {ref: w.bian, cue: 'de principio a fin: 这本书我看了两遍'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments: []
+  - id: g.jiu-wan
+    kind: group
+    basis: visual
+    title: '九 y 万'
+    explanation: 'Los dos terminan en un trazo que se dobla con un gancho; 万 lleva además una raya arriba.'
+    members:
+      - {ref: w.num.jiu, cue: '九 jiǔ «nueve»: sin raya arriba; el gancho sube hacia fuera'}
+      - {ref: w.wan.tenk, cue: '万 wàn «diez mil»: una raya 一 arriba; el gancho baja hacia dentro'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-08'}
+    comments: []
+  - id: g.ci-ci
+    kind: group
+    basis: soundalike
+    title: '次 cì y 词 cí'
+    explanation: 'Solo cambia el tono: 次 cae, 词 sube.'
+    members:
+      - {ref: w.ci, cue: 'cì, cae: vez'}
+      - {ref: w.ci.word, cue: 'cí, sube: palabra'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments: []

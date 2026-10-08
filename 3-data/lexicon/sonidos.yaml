@@ -90,10 +90,13 @@ entries:
     use: hear
     kind: pronunciation
     title: -n frente a -ng
-    explanation: '-n acaba con la lengua tocando detrás de los dientes, como en «pan». -ng acaba atrás, con la boca abierta, como la n de «tengo»: no suena la g. Cambia la palabra: 心 xīn «corazón», 星 xīng «estrella».'
+    explanation: '-n acaba con la lengua tocando detrás de los dientes, como en «pan». -ng acaba atrás, con la boca abierta, como la n de «tengo»: no suena la g. Cambia la palabra: 心 xīn «corazón», 星 xīng «estrella». La vocal también cambia: delante de -n, la a es clara, y en ian y üan casi una e (先 xiān suena casi «sien»); delante de -ng, la a es oscura, de atrás (想 xiǎng). eng y ueng no son ang y uang: llevan una vocal neutra, cerrada.'
     audio_text: 心，星
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: review-004-2026-10-02-ser-nombres-y-describir.md, date: '2026-10-05'}
-    comments: []
+    comments:
+      - {kind: note, private: false, date: '2026-10-08', text: 'La a de xian me suena abierta y plana; la de xiang, más cerrada, tirando a o. Es la -ng, que lleva la vocal hacia atrás.', original: 'xiáng (close, sonuds a bit o to my ear ... la a de xian me suena como mas pura abierta plana que la de xiang que me suena cerrad atinraod a ó pero puede ser que sea cosa de la ng vs la n)'}
+      - {kind: note, private: false, date: '2026-10-08', text: 'Al oído, ing suena a veces casi «ieng» (星 xīng): es el paso hacia la -ng de atrás.', original: 'xing (primero tono) es mas xieng'}
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'En el estándar, yuan (元) se acerca a «yüen», igual que yan suena casi «yen»; algunos hablantes abren más la a.'}
   - id: p.yi-sandhi
     use: say
     kind: pronunciation
@@ -109,4 +112,16 @@ entries:
     explanation: 'i: suena i (你 nǐ, 西 xī), salvo tras z c s, donde es un zumbido sin vocal (四 sì, 字 zì), y tras zh ch sh r, el mismo zumbido con la lengua curvada (是 shì, 吃 chī). e: sola o tras consonante es una o sin redondear los labios (的 de, 喝 hē); en ie, üe y ei suena e (谢 xiè, 学 xué, 北 běi); en en y eng, una vocal neutra corta (很 hěn, 冷 lěng). o: tras b p m f suena «uo» (我 wǒ); ou suena «ou» (都 dōu); ong suena casi «ung» (中 zhōng).'
     audio_text: 四，是，你；的，谢，很
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
-    comments: []
+    comments:
+      - {kind: note, private: false, date: '2026-10-08', text: 'La o no es nunca la ò abierta del catalán en ou y ong (都 dōu, 中 zhōng): ahí es cerrada. En uo (我 wǒ, 多 duō) sí es más abierta.', original: 'en chino (observcion) la o nunca suena abierta ocmo catala ò sino isemre cerrada ó'}
+  - id: p.y-w-u
+    use: say
+    kind: pronunciation
+    title: 'y, w y la ü escondida'
+    explanation: 'y y w no son sonidos propios: escriben i y u al principio de sílaba. yi suena i (一 yī), wu suena u (五 wǔ), ya es ia y wo es uo. Tras j, q, x e y, la ü pierde los puntos: ju, qu, xu y yu suenan con ü (去 qù, 鱼 yú), aunque se escriban con u, y el tono se marca igual. Solo tras l y n se ven los puntos (女 nǚ), porque allí también existe la u.'
+    audio_text: 一，五，鱼，去
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: teacher, private: false, date: '2026-10-08', text: 'En clase: w se lee u (五 wǔ) e y se lee i (一 yī); con j, q, x e y va siempre la ü.'}
+      - {kind: note, private: false, date: '2026-10-08', text: 'Importante: tras j, q, x e y, la u se lee ü aunque se escriba u. El tono se marca igual (qù), pero suena ü.', original: 'IMPORNTATE siempre que la ''u'' sale detras de jqxy, se lee como ü pero se esrcibira con tonos ú y da igual, osea el ton ose hace pero suena ü, que se sepa.'}
+      - {kind: note, private: false, date: '2026-10-08', text: 'La sílaba yi suena «i», no una y suelta; y la w, «u».', original: 'u = w / y = i / pero yi suena ''yi'' no ''y'' sabes / en chin osiempre u=w'}
