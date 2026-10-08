@@ -3609,18 +3609,71 @@ def ensure_limits():
             f"(preset «{DECK_PRESET}»)")
 
 
+NEW_DUE_GAP = 100          # hueco entre posiciones de nuevas al renumerar: lo nuevo cabe sin desplazar lo que ya está
+NEW_DUE_MAX = 900_000      # Anki corrige las posiciones de nuevas por encima de 1 000 000 (Comprobar base de datos)
+
+
+def new_due_plan(dues):
+    """Qué nuevas mover y a qué posición. `dues`: la posición actual de cada nueva, en el orden deseado. Devuelve
+    {índice: posición nueva} tocando lo mínimo: se quedan quietas las que ya están en buen orden entre sí (la
+    subsecuencia creciente más larga) y las demás se colocan en los huecos entre sus vecinas. Solo si algún hueco
+    no tiene sitio se renumera todo, con `NEW_DUE_GAP` entre posiciones, para que los lotes siguientes quepan.
+    Mover una nueva la marca como modificada, y al sincronizar gana la versión modificada más tarde: si el móvil la
+    estaba aprendiendo sin haber sincronizado, perdería ese progreso (lote 008). Por eso se toca lo menos posible."""
+    import bisect
+    n = len(dues)
+    if not n:
+        return {}
+    # Subsecuencia estrictamente creciente más larga; a igualdad, la que conserva las primeras de la cola (las que
+    # se están estudiando). starts[i]: la más larga que empieza en i, calculada de atrás adelante (O(n log n)).
+    tails, starts = [], [0] * n
+    for i in range(n - 1, -1, -1):
+        k = bisect.bisect_left(tails, -dues[i])
+        if k == len(tails):
+            tails.append(-dues[i])
+        else:
+            tails[k] = -dues[i]
+        starts[i] = k + 1
+    keep, need, last = set(), len(tails), None
+    for i in range(n):
+        if need and starts[i] == need and (last is None or dues[i] > last):
+            keep.add(i)
+            need, last = need - 1, dues[i]
+    plan, run = {}, []
+    lo = 0
+    for i in range(n + 1):
+        if i < n and i not in keep:
+            run.append(i)
+            continue
+        if run:
+            hi = dues[i] if i < n else None
+            if hi is None:                       # al final: detrás de la última, con hueco
+                vals = [lo + NEW_DUE_GAP * (j + 1) for j in range(len(run))]
+                ok = vals[-1] <= NEW_DUE_MAX
+            else:
+                ok = hi - lo - 1 >= len(run)
+                vals = [lo + (j + 1) * (hi - lo) // (len(run) + 1) for j in range(len(run))] if ok else []
+            if not ok:
+                gap = max(1, min(NEW_DUE_GAP, NEW_DUE_MAX // (n + 1)))
+                return {k: (k + 1) * gap for k in range(n) if dues[k] != (k + 1) * gap}
+            plan.update(zip(run, vals))
+            run = []
+        if i < n:
+            lo = dues[i]
+    return plan
+
+
 def reorder_new(order):
+    """Coloca las nuevas en el orden de `new_card_order`, moviendo solo las que están fuera de su sitio."""
     cards = anki_request("findCards", query=f'"deck:{DECK_NAME}" is:new')
     if not cards:
         return 0
     info = anki_request("cardsInfo", cards=cards)
-    base = min(c["due"] for c in info)
-    actions = []
-    for c in info:
-        pos = order.get(c["fields"].get("ExerciseID", {}).get("value"))
-        if pos is not None and c["due"] != base + pos:
-            actions.append({"action": "setSpecificValueOfCard",
-                            "params": {"card": c["cardId"], "keys": ["due"], "newValues": [base + pos]}})
+    placed = sorted((pos, c["cardId"], c["due"]) for c in info
+                    if (pos := order.get(c["fields"].get("ExerciseID", {}).get("value"))) is not None)
+    plan = new_due_plan([due for _, _, due in placed])
+    actions = [{"action": "setSpecificValueOfCard",
+                "params": {"card": placed[k][1], "keys": ["due"], "newValues": [due]}} for k, due in sorted(plan.items())]
     for i in range(0, len(actions), 200):
         anki_request("multi", actions=actions[i:i + 200])
     return len(actions)

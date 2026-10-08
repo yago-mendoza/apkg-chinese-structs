@@ -292,3 +292,8 @@ Después, 这, 那, 爸, 妈, 阿姨, 真 y 不, con práctica de huecos. Es jus
 - En Anki, 288 repasos en 10 de los últimos 14 días. Fallas poco al leer (19 % «Otra vez»), la mitad al escuchar (50 %) y mucho al decir (71 %). Coincide con lo que dices.
 
 **Consejo.** Cuando falles una tarjeta de escuchar, no pases sin más: vuelve a oírla con el pinyin delante y repítela dos veces en voz alta. Es lo que convierte un fallo en oído.
+
+## Cambios posteriores
+
+**2026-10-09.** La subida de este lote devolvió a nuevas 98 tarjetas que estabas aprendiendo en el móvil sin haber sincronizado: las 29 de HSK 2 y las 20 de HSK 3 que empezaste entrando en esos subdecks, y 64 de HSK 1, entre otras. Ninguna ya aprendida; el registro de repasos se conserva. «Comprobado en Anki» arriba valía para las tarjetas que cambiaron de tema, no para esto. `push` ahora solo mueve las nuevas que están fuera de su sitio, y el procedimiento para sincronizar está en `docs/owner.md` ([decisión](/docs/decisions.md#2026-10-09--push-toca-solo-las-nuevas-que-cambian-de-sitio)).
+

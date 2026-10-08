@@ -771,3 +771,41 @@ class CardJavaScript(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class NewDuePlan(unittest.TestCase):
+    """reorder_new toca lo mínimo (lote 008): cada nueva que se mueve puede pisar lo aprendido en otro dispositivo."""
+
+    def test_already_ordered_touches_nothing(self):
+        self.assertEqual(anki.new_due_plan([100, 200, 300]), {})
+
+    def test_inserted_card_fits_in_the_gap(self):
+        dues = [100, 200, 401, 300, 400]          # importada detrás de la última, va entre 200 y 300
+        plan = anki.new_due_plan(dues)
+        final = [plan.get(i, d) for i, d in enumerate(dues)]
+        self.assertEqual(len(plan), 1)
+        self.assertEqual(final, sorted(final))
+
+    def test_new_cards_at_the_end_go_after_the_last(self):
+        self.assertEqual(anki.new_due_plan([100, 200, 5, 7]), {2: 300, 3: 400})
+
+    def test_ties_keep_the_front_of_the_queue(self):
+        """Las primeras de la cola son las que se están estudiando: a igualdad, se quedan quietas ellas."""
+        self.assertEqual(set(anki.new_due_plan([10, 20, 1, 2, 30])), {2, 3})
+
+    def test_no_room_renumbers_everything_with_gaps(self):
+        dues = [1, 2, 3, 4, 5, 6, 7, 8]
+        order = [0, 1, 2, 7, 3, 4, 5, 6]          # la última pasa al medio y no cabe entre 3 y 4
+        plan = anki.new_due_plan([dues[k] for k in order])
+        final = [plan.get(i, dues[k]) for i, k in enumerate(order)]
+        self.assertEqual(final, [anki.NEW_DUE_GAP * k for k in range(1, 9)])
+
+    def test_result_is_always_in_order(self):
+        import random
+        rnd = random.Random(8)
+        for _ in range(200):
+            dues = [rnd.randrange(0, 50) for _ in range(rnd.randrange(1, 30))]
+            plan = anki.new_due_plan(dues)
+            final = [plan.get(i, d) for i, d in enumerate(dues)]
+            self.assertEqual(final, sorted(set(final)), dues)
+

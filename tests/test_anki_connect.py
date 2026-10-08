@@ -75,6 +75,10 @@ class FakeAnki:
                 self.deck_conf[d] = p["configId"]
         elif action == "saveDeckConfig":
             self.configs[p["config"]["id"]] = copy.deepcopy(p["config"])
+        elif action == "multi":
+            for a in p["actions"]:
+                if a["action"] == "setSpecificValueOfCard" and a["params"]["keys"] == ["due"]:
+                    self.cards[a["params"]["card"]]["due"] = a["params"]["newValues"][0]
         return None
 
     def touched_cards(self):
@@ -184,6 +188,26 @@ class AnkiSafety(unittest.TestCase):
         with mock.patch.object(anki, "cmd_build", lambda *a: 0), mock.patch.object(anki, "anki_ready", lambda: True),                 mock.patch.object(anki, "anki_request", spy), redirect_stdout(io.StringIO()):
             self.assertEqual(anki.cmd_push(False, True), 1)
         self.assertEqual(calls, ["sync"])
+
+    def test_reorder_new_leaves_well_placed_cards_alone(self):
+        """Lote 008: mover una nueva la marca como modificada y, al sincronizar, pisa lo aprendido en el móvil sin
+        sincronizar. Una segunda subida sin cambios no toca nada; una tarjeta nueva intercalada solo se mueve ella."""
+        cards = [{"id": i, "deck": self.saludos, "ex": f"x.{i}", "new": True, "due": [3, 1, 2, 6, 4, 5][i - 1]}
+                 for i in range(1, 7)]
+        fake = FakeAnki(cards)
+        order = {f"x.{i}": i for i in range(1, 7)}
+        self.run_with(fake, anki.reorder_new, order)          # desordenadas y sin sitio: renumera con huecos
+        dues = [fake.cards[i]["due"] for i in range(1, 7)]
+        self.assertEqual(dues, [anki.NEW_DUE_GAP * k for k in range(1, 7)])
+        fake.writes.clear()
+        moved, _ = self.run_with(fake, anki.reorder_new, order)
+        self.assertEqual((moved, fake.writes), (0, []))
+        fake.cards[9] = {"id": 9, "deck": self.saludos, "ex": "x.new", "new": True, "due": 99999}
+        order = {"x.1": 0, "x.2": 1, "x.3": 2, "x.new": 3, "x.4": 4, "x.5": 5, "x.6": 6}
+        moved, _ = self.run_with(fake, anki.reorder_new, order)
+        self.assertEqual((moved, fake.touched_cards()), (1, [9]))
+        self.assertLess(fake.cards[3]["due"], fake.cards[9]["due"])
+        self.assertLess(fake.cards[9]["due"], fake.cards[4]["due"])
 
     def test_stats_only_reads_our_deck(self):
         fake = FakeAnki([{"id": 1, "deck": self.saludos, "ex": "x.a", "new": False},

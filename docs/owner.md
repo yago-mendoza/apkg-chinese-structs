@@ -25,6 +25,15 @@ Configuración y decisiones propias de este mazo (Yago Mendoza). Nada secreto: e
 - `1-inbox/history/` se versiona: los apuntes no son privados.
 - Licencia: MIT para el código y CC BY 4.0 para el contenido, con cita obligatoria y uso comercial permitido.
 
+## Sincronizar sin perder nada
+
+Al sincronizar, si la misma tarjeta cambió en dos sitios, Anki se queda con la versión modificada más tarde. Lo estudiado en el móvil y aún no sincronizado puede perderse si el agente sube el mazo entre medias.
+
+- En el móvil, sincronización automática al abrir y al cerrar Anki (AnkiMobile: Preferencias → Sincronización; AnkiDroid: Ajustes → Sincronización). Y al terminar cada sesión, sincronizar a mano y esperar a que acabe.
+- Antes de pedir un lote («procesa el inbox»), sincronizar el móvil. Mientras el agente trabaja, no estudiar en el móvil.
+- Cuando el agente termina (`push` sincroniza al empezar y al acabar), sincronizar el móvil antes de estudiar.
+- Si Anki pide una sincronización completa, elegir la dirección con cuidado: descargar de AnkiWeb, salvo que se sepa que el dispositivo tiene lo más nuevo.
+
 ## Si algo falla
 
 - **`push` dice que AnkiConnect no responde**: abrir Anki en el PC; si ya estaba abierto, cerrarlo del todo y reabrirlo (el complemento se carga al arrancar).
