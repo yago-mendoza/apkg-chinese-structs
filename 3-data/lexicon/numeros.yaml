@@ -87,7 +87,6 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-10-08', text: '九 se parece, misteriosamente, a una mesa.', original: 'el 9 hanzi se parece misteirosamente a una mesa'}
-      - {kind: note, private: false, date: '2026-10-08', text: 'Es elegante y se parece un poco a 万: conviene contrastarlos.', original: 'pero 9 es elegante el hazni un poco parecido al de 10000 pero mas se parece aun el 5 ... asi que contrastar bien esos 2'}
   - id: w.num.shi
     use: say
     role: content
@@ -108,8 +107,6 @@ entries:
     meaning: {es: dos (delante de un clasificador), en: two (before a measure word)}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-09-27', text: '二 èr para contar y dentro de números (十二 «doce»); 两 delante de un clasificador: 两个人 «dos personas».'}
-      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Al hablar, 两 también va delante de 百, 千 y 万: 两百, 两千. 二 sigue en los números: 十二, 二十.'}
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'El 20 es 二十, nunca 两十; 22 000 es 两万两千, pero 200 000 es 二十万, porque ese 2 es el de 二十. 102 es 一百零二: 二 al final de un número.'}
   - id: w.you.have
     use: say
@@ -120,7 +117,7 @@ entries:
     meaning: {es: tener; haber, en: to have; there is}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
-      - {kind: note, private: false, date: '2026-10-01', text: 'No lo confundas con 要 yào «querer»: 有 yǒu baja y sube (tercer tono); 要 yào cae (cuarto). 有 se niega con 没: 没有.'}
+      - {kind: note, private: false, date: '2026-10-01', text: 'Se niega con 没: 没有.'}
   - id: w.ge
     use: say
     role: function
@@ -151,8 +148,6 @@ entries:
     pinyin: jǐ
     meaning: {es: 'cuántos (pocos)', en: 'how many (few)'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '几 espera un número pequeño y lleva clasificador: 几个人？ Para cantidades abiertas, 多少.'}
   - id: w.sui
     use: say
     role: content
@@ -169,8 +164,8 @@ entries:
     title: '九 jiǔ y 就 jiù'
     explanation: '九 baja y sube; 就 cae.'
     members:
-      - {ref: w.num.jiu, cue: 'jiǔ, baja y sube: nueve'}
-      - {ref: w.jiu, cue: 'jiù, cae: entonces'}
+      - {ref: w.num.jiu, cue: 'baja y sube'}
+      - {ref: w.jiu, cue: 'cae'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
   - id: g.you-you-yao
@@ -179,10 +174,10 @@ entries:
     title: '有 yǒu, 又 yòu y 要 yào'
     explanation: 'Tres «you» que se confunden: los separan el tono y la vocal.'
     members:
-      - {ref: w.you.have, cue: 'yǒu, baja y sube: tener'}
-      - {ref: w.you.again, cue: 'yòu, cae: a la vez (又…又…)'}
-      - {ref: w.yao, cue: 'yào, cae y suena «yao»: querer'}
-      - {ref: w.you.right, cue: 'yòu, cae, igual que 又: derecha (左右)'}
+      - {ref: w.you.have, cue: 'baja y sube'}
+      - {ref: w.you.again, cue: 'cae'}
+      - {ref: w.yao, cue: 'cae, y suena «yao»'}
+      - {ref: w.you.right, cue: 'cae, igual que 又 (左右)'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
   - id: w.ben.book
@@ -327,8 +322,8 @@ entries:
     title: '六 y 九'
     explanation: 'Los dos acaban en -iu (dicho «iou»): los separan la consonante y el tono.'
     members:
-      - {ref: w.num.liu, cue: 'liù: l y cae (cuarto tono)'}
-      - {ref: w.num.jiu, cue: 'jiǔ: j y baja y sube (tercer tono)'}
+      - {ref: w.num.liu, cue: 'l, y cae'}
+      - {ref: w.num.jiu, cue: 'j, y baja y sube'}
     source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
     comments: []
   - id: g.qian-qian
@@ -337,8 +332,8 @@ entries:
     title: '千 qiān y 钱 qián'
     explanation: 'Salen juntos al hablar de dinero (两千块钱): 千 es alto y plano, 钱 sube.'
     members:
-      - {ref: w.qian.thousand, cue: 'qiān, alto y plano: mil'}
-      - {ref: w.qian, cue: 'qián, sube: dinero'}
+      - {ref: w.qian.thousand, cue: 'alto y plano'}
+      - {ref: w.qian, cue: 'sube'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
   - id: g.bai-bai
@@ -347,8 +342,8 @@ entries:
     title: '百 bǎi y 白 bái'
     explanation: '白 da el sonido a 百 (一 encima de 白): 百 baja y sube, 白 sube.'
     members:
-      - {ref: w.bai.hundred, cue: 'bǎi, baja y sube: cien'}
-      - {ref: w.bai, cue: 'bái, sube: blanco'}
+      - {ref: w.bai.hundred, cue: 'baja y sube'}
+      - {ref: w.bai, cue: 'sube'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
   - id: g.wan-wan
@@ -357,8 +352,8 @@ entries:
     title: '万 wàn y 晚 wǎn'
     explanation: '万 cae; 晚 baja y sube (晚上).'
     members:
-      - {ref: w.wan.tenk, cue: 'wàn, cae: diez mil'}
-      - {ref: w.wan, cue: 'wǎn, baja y sube: tarde, noche'}
+      - {ref: w.wan.tenk, cue: 'cae'}
+      - {ref: w.wan, cue: 'baja y sube'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
   - id: g.ji-ji
@@ -367,8 +362,8 @@ entries:
     title: '几 jǐ y 鸡 jī'
     explanation: '几 baja y sube (几岁); 鸡 es alto y plano.'
     members:
-      - {ref: w.ji, cue: 'jǐ, baja y sube: cuántos'}
-      - {ref: w.ji.chicken, cue: 'jī, alto y plano: gallo'}
+      - {ref: w.ji, cue: 'baja y sube'}
+      - {ref: w.ji.chicken, cue: 'alto y plano'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
   - id: w.di.ordinal
@@ -455,8 +450,8 @@ entries:
     title: '好 hǎo y 号 hào'
     explanation: '好 baja y sube; 号 cae: 十月八号.'
     members:
-      - {ref: w.hao, cue: 'hǎo, baja y sube: bien'}
-      - {ref: w.hao.date, cue: 'hào, cae: día del mes'}
+      - {ref: w.hao, cue: 'baja y sube'}
+      - {ref: w.hao.date, cue: 'cae'}
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
     comments: []
   - id: g.yi-yi
@@ -465,8 +460,8 @@ entries:
     title: '一 y 亿'
     explanation: '一 suele decirse yì delante de otro tono (一百 yì bǎi) y entonces suena igual que 亿 yì «cien millones». El contexto decide.'
     members:
-      - {ref: w.num.yi, cue: 'yī, o yì / yí según lo que siga: uno'}
-      - {ref: w.yi.hundredmillion, cue: 'yì, siempre: cien millones'}
+      - {ref: w.num.yi, cue: 'alto y plano; yì o yí según lo que siga'}
+      - {ref: w.yi.hundredmillion, cue: 'siempre cae'}
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
     comments: []
   - id: g.zhi-zhi
@@ -475,8 +470,8 @@ entries:
     title: '只 zhī y 纸 zhǐ'
     explanation: '只 alto y plano (clasificador); 纸 baja y sube (papel).'
     members:
-      - {ref: w.zhi.cl, cue: 'zhī, alto y plano: clasificador de animales'}
-      - {ref: w.zhi.paper, cue: 'zhǐ, baja y sube: papel'}
+      - {ref: w.zhi.cl, cue: 'alto y plano'}
+      - {ref: w.zhi.paper, cue: 'baja y sube'}
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
     comments: []
   - id: g.jian-jian
@@ -485,8 +480,8 @@ entries:
     title: '见 y 件: los dos jiàn'
     explanation: 'Suenan igual: 见 «ver» (再见), 件 clasificador de ropa (一件衣服).'
     members:
-      - {ref: w.jian, cue: '见: ver, encontrarse'}
-      - {ref: w.jian.cl, cue: '件: clasificador de ropa y asuntos'}
+      - {ref: w.jian, cue: '再见, 看见'}
+      - {ref: w.jian.cl, cue: '一件衣服'}
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
     comments: []
   - id: w.ci
@@ -525,8 +520,8 @@ entries:
     title: '九 y 万'
     explanation: 'Los dos terminan en un trazo que se dobla con un gancho; 万 lleva además una raya arriba.'
     members:
-      - {ref: w.num.jiu, cue: '九 jiǔ «nueve»: sin raya arriba; el gancho sube hacia fuera'}
-      - {ref: w.wan.tenk, cue: '万 wàn «diez mil»: una raya 一 arriba; el gancho baja hacia dentro'}
+      - {ref: w.num.jiu, cue: 'sin raya arriba; el gancho sube hacia fuera'}
+      - {ref: w.wan.tenk, cue: 'una raya 一 arriba; el gancho baja hacia dentro'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-08'}
     comments: []
   - id: g.ci-ci
@@ -535,7 +530,7 @@ entries:
     title: '次 cì y 词 cí'
     explanation: 'Solo cambia el tono: 次 cae, 词 sube.'
     members:
-      - {ref: w.ci, cue: 'cì, cae: vez'}
-      - {ref: w.ci.word, cue: 'cí, sube: palabra'}
+      - {ref: w.ci, cue: 'cae'}
+      - {ref: w.ci.word, cue: 'sube'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments: []

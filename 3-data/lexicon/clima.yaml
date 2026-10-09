@@ -127,7 +127,7 @@ entries:
     title: '热 rè y 日 rì'
     explanation: 'Casi iguales al oído y con el mismo tono: solo cambia la vocal. En 热, la e oscura del chino; en 日, el zumbido de la i tras r.'
     members:
-      - {ref: w.re, cue: 'rè, «calor»: e oscura'}
-      - {ref: w.ri.day, cue: 'rì, «día» (por escrito): zumbido, sin vocal'}
+      - {ref: w.re, cue: 'e oscura'}
+      - {ref: w.ri.day, cue: 'zumbido, sin vocal'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments: []

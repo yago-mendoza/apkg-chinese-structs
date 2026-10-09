@@ -12,13 +12,13 @@
 - ✅🃏 五 wǔ [u˧˩˧] · cinco · _número_ · 五 se parece un poco a un 5. · Me recuerda a un lago que he visto por ahí.
 - ✅🃏 六 liù [ljoʊ˥˩] · seis · _número_
 - ✅🃏 七 qī [tɕʰi˥] · siete · _número_
-- ✅🃏 九 jiǔ [tɕjoʊ˧˩˧] · nueve · _número_ · 九 se parece, misteriosamente, a una mesa. · Es elegante y se parece un poco a 万: conviene contrastarlos.
+- ✅🃏 九 jiǔ [tɕjoʊ˧˩˧] · nueve · _número_ · 九 se parece, misteriosamente, a una mesa.
 - ✅🃏 十 shí [ʂɨ˧˥] · diez · _número_ · Al principio de un número, 十 va solo: 十二 (12). Dentro de un número lleva siempre 一 delante: 一百一十三 (113), 五百一十二 (512). · En clase, en el repaso de números: 512 es 五百一十二, con 一 delante de 十.
-- ✅🃏 两 liǎng [ljɑŋ˧˩˧] · dos (delante de un clasificador) · _número_ · 二 èr para contar y dentro de números (十二 «doce»); 两 delante de un clasificador: 两个人 «dos personas». · Al hablar, 两 también va delante de 百, 千 y 万: 两百, 两千. 二 sigue en los números: 十二, 二十. · El 20 es 二十, nunca 两十; 22 000 es 两万两千, pero 200 000 es 二十万, porque ese 2 es el de 二十. 102 es 一百零二: 二 al final de un número.
-- ✅🃏 有 yǒu [joʊ˧˩˧] · tener; haber · _verbo_ · No lo confundas con 要 yào «querer»: 有 yǒu baja y sube (tercer tono); 要 yào cae (cuarto). 有 se niega con 没: 没有.
+- ✅🃏 两 liǎng [ljɑŋ˧˩˧] · dos (delante de un clasificador) · _número_ · El 20 es 二十, nunca 两十; 22 000 es 两万两千, pero 200 000 es 二十万, porque ese 2 es el de 二十. 102 es 一百零二: 二 al final de un número.
+- ✅🃏 有 yǒu [joʊ˧˩˧] · tener; haber · _verbo_ · Se niega con 没: 没有.
 - ✅🃏 个 ge [kɤ] · clasificador general (uno de algo) · _clasificador_ · Entre el número y la cosa: 三个朋友 «tres amigos». Se dice átono. · El clasificador no se omite: sin él la frase se entiende, pero suena tan mal como «yo tener tres amigo». A veces informa de la forma: 张 zhāng [HSK 3] para cosas planas, 条 tiáo [HSK 2] para alargadas. Van sin clasificador las palabras que ya son unidad, como 天 y 年: 三天 «tres días», 两年 «dos años».
 - ✅🃏 没有 méiyǒu [meɪ˧˥ joʊ˧˩˧] · no tener; no haber · _verbo_ · 有 se niega con 没, nunca con 不: 我没有钱 «no tengo dinero».
-- ✅🃏 几 jǐ [tɕi˧˩˧] · cuántos (pocos) · _interrogativo_ · 几 espera un número pequeño y lleva clasificador: 几个人？ Para cantidades abiertas, 多少.
+- ✅🃏 几 jǐ [tɕi˧˩˧] · cuántos (pocos) · _interrogativo_
 - ✅🃏 岁 suì [sweɪ˥˩] · años (de edad) · _clasificador_ · 你几岁？ se pregunta sobre todo a niños; a un adulto se le pregunta 你多大？, con 多 «cuánto» y 大 «grande».
 - ✅🃏 本 běn [pən˧˩˧] · clasificador de libros y cuadernos · _pronombre_ · Un árbol 木 con una raya en la raíz: su sentido original es «raíz, origen». Como clasificador, cuenta libros. · Como 个 para personas, 本 para libros: 一个人 «una persona», 一本书 «un libro».
 - ✅🃏 棵 kē [kʰɤ˥] · clasificador de árboles y plantas · _clasificador_ · Va entre 这, 那 o un número y la palabra: 这棵树 «este árbol», 一棵树 «un árbol».
@@ -45,17 +45,17 @@
 
 九 baja y sube; 就 cae.
 
-- 九 jiǔ · jiǔ, baja y sube: nueve
-- 就 jiù · jiù, cae: entonces
+- 九 jiǔ · baja y sube
+- 就 jiù · cae
 
 ## 有 yǒu, 又 yòu y 要 yào
 
 Tres «you» que se confunden: los separan el tono y la vocal.
 
-- 有 yǒu · yǒu, baja y sube: tener
-- 又 yòu · yòu, cae: a la vez (又…又…)
-- 要 yào · yào, cae y suena «yao»: querer
-- 右 yòu · yòu, cae, igual que 又: derecha (左右)
+- 有 yǒu · baja y sube
+- 又 yòu · cae
+- 要 yào · cae, y suena «yao»
+- 右 yòu · cae, igual que 又 (左右)
 
 ## 二 o 两
 
@@ -68,36 +68,36 @@ Los dos son «dos»: 二 para contar y ordenar, 两 para cuántos.
 
 Los dos acaban en -iu (dicho «iou»): los separan la consonante y el tono.
 
-- 六 liù · liù: l y cae (cuarto tono)
-- 九 jiǔ · jiǔ: j y baja y sube (tercer tono)
+- 六 liù · l, y cae
+- 九 jiǔ · j, y baja y sube
 
 ## 千 qiān y 钱 qián
 
 Salen juntos al hablar de dinero (两千块钱): 千 es alto y plano, 钱 sube.
 
-- 千 qiān · qiān, alto y plano: mil
-- 钱 qián · qián, sube: dinero
+- 千 qiān · alto y plano
+- 钱 qián · sube
 
 ## 百 bǎi y 白 bái
 
 白 da el sonido a 百 (一 encima de 白): 百 baja y sube, 白 sube.
 
-- 百 bǎi · bǎi, baja y sube: cien
-- 白 bái · bái, sube: blanco
+- 百 bǎi · baja y sube
+- 白 bái · sube
 
 ## 万 wàn y 晚 wǎn
 
 万 cae; 晚 baja y sube (晚上).
 
-- 万 wàn · wàn, cae: diez mil
-- 晚 wǎn · wǎn, baja y sube: tarde, noche
+- 万 wàn · cae
+- 晚 wǎn · baja y sube
 
 ## 几 jǐ y 鸡 jī
 
 几 baja y sube (几岁); 鸡 es alto y plano.
 
-- 几 jǐ · jǐ, baja y sube: cuántos
-- 鸡 jī · jī, alto y plano: gallo
+- 几 jǐ · baja y sube
+- 鸡 jī · alto y plano
 
 ## Clasificadores básicos
 
@@ -116,29 +116,29 @@ Número + clasificador + cosa: el clasificador depende de la forma o del tipo de
 
 好 baja y sube; 号 cae: 十月八号.
 
-- 好 hǎo · hǎo, baja y sube: bien
-- 号 hào · hào, cae: día del mes
+- 好 hǎo · baja y sube
+- 号 hào · cae
 
 ## 一 y 亿
 
 一 suele decirse yì delante de otro tono (一百 yì bǎi) y entonces suena igual que 亿 yì «cien millones». El contexto decide.
 
-- 一 yī · yī, o yì / yí según lo que siga: uno
-- 亿 yì · yì, siempre: cien millones
+- 一 yī · alto y plano; yì o yí según lo que siga
+- 亿 yì · siempre cae
 
 ## 只 zhī y 纸 zhǐ
 
 只 alto y plano (clasificador); 纸 baja y sube (papel).
 
-- 只 zhī · zhī, alto y plano: clasificador de animales
-- 纸 zhǐ · zhǐ, baja y sube: papel
+- 只 zhī · alto y plano
+- 纸 zhǐ · baja y sube
 
 ## 见 y 件: los dos jiàn
 
 Suenan igual: 见 «ver» (再见), 件 clasificador de ropa (一件衣服).
 
-- 见 jiàn · 见: ver, encontrarse
-- 件 jiàn · 件: clasificador de ropa y asuntos
+- 见 jiàn · 再见, 看见
+- 件 jiàn · 一件衣服
 
 ## 次 y 遍: cuántas veces
 
@@ -151,15 +151,15 @@ Los dos cuentan veces, detrás del verbo; 遍 subraya que se hizo entero.
 
 Los dos terminan en un trazo que se dobla con un gancho; 万 lleva además una raya arriba.
 
-- 九 jiǔ · 九 jiǔ «nueve»: sin raya arriba; el gancho sube hacia fuera
-- 万 wàn · 万 wàn «diez mil»: una raya 一 arriba; el gancho baja hacia dentro
+- 九 jiǔ · sin raya arriba; el gancho sube hacia fuera
+- 万 wàn · una raya 一 arriba; el gancho baja hacia dentro
 
 ## 次 cì y 词 cí
 
 Solo cambia el tono: 次 cae, 词 sube.
 
-- 次 cì · cì, cae: vez
-- 词 cí · cí, sube: palabra
+- 次 cì · cae
+- 词 cí · sube
 
 ## Frases
 

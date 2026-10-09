@@ -85,8 +85,8 @@ entries:
     title: '八 bā y 吧 ba'
     explanation: '八 es alto y plano; 吧 es átono, corto, al final de la frase.'
     members:
-      - {ref: w.ba, cue: 'bā, alto y plano: ocho'}
-      - {ref: w.ba.particle, cue: 'ba, átono al final: ¿vale?, venga'}
+      - {ref: w.ba, cue: 'alto y plano'}
+      - {ref: w.ba.particle, cue: 'átono, corto, al final'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
   - id: w.zai.again
@@ -106,8 +106,8 @@ entries:
     title: '在 y 再: los dos zài'
     explanation: 'Suenan igual, con el mismo cuarto tono; la frase decide.'
     members:
-      - {ref: w.zai.at, cue: '在: estar en un sitio (我在家)'}
-      - {ref: w.zai.again, cue: '再: otra vez, luego (再见, 再说一遍)'}
+      - {ref: w.zai.at, cue: '我在家'}
+      - {ref: w.zai.again, cue: '再见, 再说一遍'}
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments: []
   - id: w.yexu

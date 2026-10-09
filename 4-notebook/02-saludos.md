@@ -13,7 +13,7 @@
 - ✅🃏 大家好 dàjiā hǎo [ta˥˩ tɕja˥ xɑʊ˧˩˧] · hola a todos · _expresión_ · Palabra a palabra: 大家 «todos» + 好 «bien». · Algo más formal que 你们好: sirve para abrir cuando hablas ante un grupo.
 - ✅🃏 老师好 lǎoshī hǎo [lɑʊ˧˩˧ ʂɨ˥ xɑʊ˧˩˧] · hola, profe · _expresión_ · Palabra a palabra: 老师 «profesora» + 好 «bien»: el cargo en lugar del nombre.
 - ✅🃏 欢迎 huānyíng [xwan˥ iŋ˧˥] · bienvenido; dar la bienvenida · _verbo_ · 迎 es salir al encuentro de alguien con una sonrisa; con 欢 «alegría»: recibir con alegría.
-- ✅🃏 怎么样 zěnmeyàng [tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal?; ¿cómo? · _interrogativo_ · 你好吗？ es correcto, pero de libro; para preguntar cómo está alguien suena más natural 你怎么样？. También pide opinión: 这个怎么样？ «¿qué tal este?».
+- ✅🃏 怎么样 zěnmeyàng [tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal?; ¿cómo? · _interrogativo_
 - ✅🃏 晚安 wǎn'ān [wan˧˩˧ an˥] · buenas noches (al irse a dormir) · _expresión_ · Palabra a palabra: 晚 «noche» + 安 «paz»: «noche tranquila». · Solo para despedirse antes de dormir. Al llegar por la noche se dice 晚上好 wǎnshang hǎo.
 - ✅🃏 回来 huílai [xweɪ˧˥ laɪ] · volver (aquí) · _verbo_ · 回 «volver» + 来 «hacia aquí». 你回来了！ es un saludo al ver llegar a alguien de casa o del trabajo.
 - ✅🃏 啊 a [a] · partícula que suaviza o anima · _partícula_ · Al final de una pregunta o exclamación la hace más cálida: 去哪里啊？ suena más cercano que 去哪里？.
@@ -25,7 +25,7 @@
 - ✅🃏 最近 zuìjìn [tsweɪ˥˩ tɕin˥˩] · últimamente, estos días · _sustantivo_
 - ✅🃏 忙 máng [mɑŋ˧˥] · ocupado, atareado · _verbo_
 - ✅🃏 还 hái [xaɪ˧˥] · todavía; aún · _adverbio_ · Con otra lectura, huán, es «devolver». En 你还好吗？ es «¿sigues bien?».
-- ✅🃏 你好吗 nǐ hǎo ma [ni˧˩˧ xɑʊ˧˩˧ ma] · ¿cómo estás? · _expresión_ · Palabra a palabra: 你 «tú» + 好 «bien» + 吗 (pregunta): «¿tú, bien?». · Correcto, pero de libro: entre amigos suena escolar. Para algo natural, 最近怎么样？.
+- ✅🃏 你好吗 nǐ hǎo ma [ni˧˩˧ xɑʊ˧˩˧ ma] · ¿cómo estás? · _expresión_ · Palabra a palabra: 你 «tú» + 好 «bien» + 吗 (pregunta): «¿tú, bien?». · Entre amigos suena escolar: mejor 最近怎么样？.
 - ✅🃏 最近怎么样 zuìjìn zěnmeyàng [tsweɪ˥˩ tɕin˥˩ tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal últimamente? · _expresión_ · Palabra a palabra: 最近 «últimamente» + 怎么样 «¿qué tal?». · La opción más versátil para preguntar qué tal: abarca trabajo, estudios y ánimo, y suena cercana sin ser íntima.
 - ✅🃏 你还好吗 nǐ hái hǎo ma [ni˧˩˧ xaɪ˧˥ xɑʊ˧˩˧ ma] · ¿estás bien? · _expresión_ · Palabra a palabra: 你 «tú» + 还 «todavía» + 好 «bien» + 吗: «¿sigues bien?». · Da por hecho que algo va mal: alguien se ha caído, parece triste o ha tenido un problema. Como saludo sin motivo suena alarmado.
 - ✅🃏 吃饭了吗 chīfàn le ma [ʈʂʰɨ˥ fan˥˩ lɤ ma] · ¿has comido? (como saludo) · _expresión_ · Palabra a palabra: 吃饭 «comer» + 了 «ya» + 吗: «¿ya has comido?». · No es una invitación a comer: es interesarse por ti, sobre todo entre vecinos, familia y gente mayor. Se contesta corto, 吃了，你呢？, y se sigue.
@@ -53,19 +53,19 @@ A quien saludas + 好. El registro cambia según a quién te diriges.
 
 Seis maneras de interesarse por alguien; cambian la situación y la cercanía, no el sentido literal.
 
-- 最近怎么样 zuìjìn zěnmeyàng · qué tal últimamente: la más versátil
-- 怎么样 zěnmeyàng · 你怎么样？: «¿y tú qué tal?», algo directo suelto
-- 你好吗 nǐ hǎo ma · cómo estás: correcto, pero de libro
-- 你还好吗 nǐ hái hǎo ma · estás bien: cuando algo ha pasado
-- 吃饭了吗 chīfàn le ma · has comido: saludo de vecinos y familia
-- 最近忙吗 zuìjìn máng ma · mucho lío: interés por algo concreto
+- 最近怎么样 zuìjìn zěnmeyàng · la más versátil
+- 怎么样 zěnmeyàng · suelto y directo: 你怎么样？ «¿y tú qué tal?»
+- 你好吗 nǐ hǎo ma · correcto, pero de libro
+- 你还好吗 nǐ hái hǎo ma · cuando algo ha pasado
+- 吃饭了吗 chīfàn le ma · saludo de vecinos y familia
+- 最近忙吗 zuìjìn máng ma · interés por algo concreto
 
 ## 再见 y 大家好
 
 Uno cierra y otro abre, y al oído se parecen: zà-jià frente a dà-jiā.
 
-- 再见 zàijiàn · adiós, al irte: z (como ts sin aire), dos cuartos tonos que caen
-- 大家好 dàjiā hǎo · hola a todos, al empezar: d, cuarto, primero y tercero
+- 再见 zàijiàn · al irte: z (como ts sin aire), dos cuartos tonos que caen
+- 大家好 dàjiā hǎo · al empezar: d, cuarto, primero y tercero
 
 ## Frases
 

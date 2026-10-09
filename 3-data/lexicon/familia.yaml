@@ -46,8 +46,6 @@ entries:
     pinyin: nǚ'ér
     meaning: {es: hija, en: daughter}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-09-27', text: '女儿 = 女 «mujer» + 儿 «niño»: hija. El 儿 ér es el mismo que abre 儿子.'}
   - id: w.haizi
     use: say
     role: content
@@ -76,9 +74,9 @@ entries:
     title: '好, 女儿 y 儿子'
     explanation: 'Las mismas piezas en distinto orden: 女 «mujer», 子 «niño» y 儿 «niño pequeño».'
     members:
-      - {ref: w.hao, cue: '女 + 子 en un solo carácter: bueno'}
-      - {ref: w.nver, cue: '女 nǚ + 儿 ér: hija (la mujer delante)'}
-      - {ref: w.erzi, cue: '儿 ér + 子 zi: hijo (el 子 detrás)'}
+      - {ref: w.hao, cue: '女 + 子 en un solo carácter'}
+      - {ref: w.nver, cue: '女 delante, 儿 detrás'}
+      - {ref: w.erzi, cue: '儿 delante, 子 detrás'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
   - id: w.jia
@@ -160,7 +158,7 @@ entries:
     accept_pinyin_mismatch: 'la segunda sílaba se dice átona en el habla'
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Como 阿姨, para cualquier hombre de la edad de tus padres. Los niños lo dicen a los amigos de sus padres.'}
+      - {kind: linguistic, private: false, date: '2026-10-06', text: 'Los niños lo dicen a los amigos de sus padres.'}
   - id: w.yeye
     use: say
     role: content
@@ -196,12 +194,12 @@ entries:
     title: 'Cómo llamar a la gente'
     explanation: 'Se llama a la gente por lo que es para ti, no por su nombre.'
     members:
-      - {ref: w.yeye, cue: 'abuelo; un señor mayor'}
-      - {ref: w.nainai, cue: 'abuela; una señora mayor'}
-      - {ref: w.shushu, cue: 'un hombre de la edad de tus padres'}
-      - {ref: w.ayi, cue: 'una mujer de la edad de tus padres'}
-      - {ref: w.xiansheng, cue: 'señor, tras el apellido'}
-      - {ref: w.fuwuyuan, cue: 'para llamar al camarero'}
-      - {ref: w.xiaopengyou, cue: 'a un niño que no conoces'}
+      - {ref: w.yeye, cue: 'también a un señor mayor'}
+      - {ref: w.nainai, cue: 'también a una señora mayor'}
+      - {ref: w.shushu, cue: 'a un desconocido de la edad de tus padres'}
+      - {ref: w.ayi, cue: 'a una desconocida de la edad de tus padres'}
+      - {ref: w.xiansheng, cue: 'tras el apellido: 王先生'}
+      - {ref: w.fuwuyuan, cue: 'se dice en voz alta para llamarle'}
+      - {ref: w.xiaopengyou, cue: 'a uno que no conoces'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []

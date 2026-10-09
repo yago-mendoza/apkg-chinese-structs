@@ -1878,6 +1878,9 @@ def validate(entries, sentences, exercises, require_audio=True):
                 ref(e["id"], m.get("ref"))
                 if not m.get("cue"):
                     warnings.append(f"{e['id']}: {m.get('ref')} sin rasgo distintivo (cue)")
+                elif cue_repeats(m["cue"], eby.get(m.get("ref"), {})):
+                    warnings.append(f"{e['id']}: la pista de {m.get('ref')} repite su pinyin o su significado, que ya "
+                                    f"salen en la fila; debe decir solo lo que lo separa")
             if e.get("piece"):
                 ref(e["id"], e["piece"])
     for s in sentences:
@@ -2179,6 +2182,7 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .nightMode .vs-py, .night_mode .vs-py { color: #e8845a; }
 .vs-gl { font-size: 15px; }
 .vs-cue { flex-basis: 100%; font-size: 13px; font-style: italic; color: var(--muted); }
+.vs-ex { flex-basis: 100%; margin-top: 4px; }
 .is-target .vs-hz { font-weight: 700; }
 .note--chars .ch-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; padding: 4px 0; }
 .note--chars .ch-row + .ch-row { border-top: 1px solid var(--line); }
@@ -2350,6 +2354,27 @@ def examples_for(ex, sby, eby=None):
     return (chosen + pool)[:EXAMPLES_MAX]
 
 
+def cue_repeats(cue, entry):
+    """Si la pista de un miembro de grupo repite lo que su fila ya enseña: el pinyin (cāi) o el primer sentido del
+    significado («adivinar»). La pista existe para lo que separa a los miembros (el tono, la pieza, el uso)."""
+    low = cue.lower()
+    has = lambda part: re.search(rf"(?<!\w){re.escape(part)}(?!\w)", low) is not None
+    py = (entry.get("pinyin") or "").lower()
+    first = re.split(r"[;,(]", ((entry.get("meaning") or {}).get("es") or "").lower())[0].strip()
+    return bool(py) and has(py) or len(first) > 2 and has(first)       # «no» es demasiado corto para contar
+
+
+def covered_groups_dropped(groups):
+    """Los recuadros de una tarjeta, sin los que no añaden a nadie: un grupo cuyos miembros están todos en otro
+    recuadro mayor o anterior (十 / 是 dentro de 是 / 试 / 十) contrastaría dos veces lo mismo."""
+    refs = [{m["ref"] for m in g.get("members", [])} for g in groups]
+    keep = []
+    for i, g in enumerate(groups):
+        if not any(j != i and refs[i] <= refs[j] and (len(refs[j]) > len(refs[i]) or j < i) for j in range(len(groups))):
+            keep.append(g)
+    return keep
+
+
 def partner_example(ex, sby, eby):
     """Lo que se confunde aparece junto, pero dicho: si el objetivo tiene pareja en un grupo de contraste o de serie
     (十 / 是, 要 / 喜欢), una frase de la pareja en su propio apartado, «Para no confundirlo con 是 shì». Antes iba
@@ -2452,9 +2477,6 @@ def card_fields(ex, eby, sby, manifest, media_files):
         meaning = sent.get("translation", {}).get(lang) if ex["type"] == "cloze" else ans.get("meaning")
     else:
         back = f'<div class="hanzi">{esc(ans.get("hanzi", ""))}</div><div class="pinyin">{esc(ans.get("pinyin", ""))}</div>'
-        phon = ipa(ans.get("hanzi"), ans.get("pinyin"))
-        if phon:
-            back += f'<div class="ipa">[{esc(phon)}]</div>'
         meaning = ans.get("meaning")
         if ex["type"] == "nuance":                # una explicación con chino: cada trozo con su pinyin
             meaning = annotate_pinyin(meaning, eby, sby)
@@ -2471,25 +2493,45 @@ def card_fields(ex, eby, sby, manifest, media_files):
     shown_groups = [group] if group else []
     # Un hanzi suelto evalúa su sonido, no sus palabras: el reverso no trae los grupos ni las notas de cada una.
     note_targets = [] if ex["type"] == "charsound" else ex.get("targets", [])
-    for tid in note_targets:
+    # Una tarjeta de matiz ya es la comparación: su respuesta no se repite en recuadros. Una de contraste trae
+    # solo el suyo. Un grupo cuyos miembros ya están todos en otro recuadro de la tarjeta no se repite.
+    group_targets = [] if ex["type"] in ("nuance", "contrast") else note_targets
+    if ex["type"] == "nuance":
+        shown_groups = []
+    for tid in group_targets:
         member_of = [g for g in eby.values() if g.get("kind") == "group"
                      and any(m.get("ref") == tid for m in g.get("members", []))]
         if any(g.get("basis") == "set" for g in member_of):
             member_of = [g for g in member_of if g.get("basis") != "pattern"]
         shown_groups += [g for g in member_of if g not in shown_groups]
+    shown_groups = covered_groups_dropped(shown_groups)
     targets = set(ex.get("targets", []))
+    # La pareja con la que se confunde lleva su frase dentro de su fila, no en un apartado aparte que la repita.
+    partner = partner_example(ex, sby, eby)
+    partner_html = ""
+    if partner:
+        p, sid = partner
+        partner_html = (f"<div class=\"example vs-ex\">{render_sentence(sby[sid])}<div>{esc(sby[sid]['translation'].get(lang))}</div>"
+                        f"{sound(sentence_text(sby[sid]), manifest, media_files)}</div>")
+    partner_ref = partner[0].get("id") if partner else None
+
+    def status_tag(e):
+        st = char_status(e)
+        return f" <i>({st})</i>" if st in ("ligada", "componente") else ""
     for g in shown_groups:
-        def status_tag(e):
-            st = char_status(e)
-            return f" <i>({st})</i>" if st in ("ligada", "componente") else ""
         # Cada miembro en su fila, por columnas: hanzi, pinyin, significado y la pista que los separa; el que se
-        # pregunta, resaltado (CSS .vs-row).
-        rows = "".join(
-            f"<div class=\"vs-row{' is-target' if m['ref'] in targets else ''}\"><b class=\"vs-hz\">{esc(eby[m['ref']].get('hanzi'))}</b>"
-            f"<span class=\"vs-py\">{esc(eby[m['ref']].get('pinyin'))}{status_tag(eby[m['ref']])}</span>"
-            f"<span class=\"vs-gl\">{esc(eby[m['ref']].get('meaning', {}).get(lang))}</span>"
-            + (f"<span class=\"vs-cue\">{esc(m.get('cue'))}</span>" if m.get('cue') else "") + "</div>"
-            for m in g["members"])
+        # pregunta, resaltado (CSS .vs-row). La pareja lleva su frase en su fila, en el primer recuadro en que sale.
+        rows = ""
+        for m in g["members"]:
+            e = eby[m["ref"]]
+            rows += (f"<div class=\"vs-row{' is-target' if m['ref'] in targets else ''}\"><b class=\"vs-hz\">{esc(e.get('hanzi'))}</b>"
+                     f"<span class=\"vs-py\">{esc(e.get('pinyin'))}{status_tag(e)}</span>"
+                     f"<span class=\"vs-gl\">{esc(e.get('meaning', {}).get(lang))}</span>"
+                     + (f"<span class=\"vs-cue\">{esc(m.get('cue'))}</span>" if m.get("cue") else ""))
+            if m["ref"] == partner_ref:
+                rows += partner_html
+                partner_ref = None
+            rows += "</div>"
         notes.append(f"<h4>{esc(g.get('title'))}</h4>{esc(g.get('explanation'))}{rows}")
     for tid in note_targets:
         t = eby.get(tid, {})
@@ -2541,19 +2583,16 @@ def card_fields(ex, eby, sby, manifest, media_files):
         notes.append(f"<h4>{'Ejemplo' if len(examples) == 1 else 'Ejemplos'}</h4>" + "".join(
             f"<div class=\"example\">{render_sentence(sby[sid])}<div>{esc(sby[sid]['translation'].get(lang))}</div>"
             f"{sound(sentence_text(sby[sid]), manifest, media_files)}</div>" for sid in examples))
-    partner = partner_example(ex, sby, eby)
-    if partner:
-        p, sid = partner
-        notes.append(f"<h4>Para no confundirlo con {esc(p.get('hanzi'))} {esc(p.get('pinyin'))}</h4>"
-                     f"<div>{esc(p.get('hanzi'))} {esc(p.get('pinyin'))}: {esc((p.get('meaning') or {}).get(lang, ''))}</div>"
-                     f"<div class=\"example\">{render_sentence(sby[sid])}<div>{esc(sby[sid]['translation'].get(lang))}</div>"
-                     f"{sound(sentence_text(sby[sid]), manifest, media_files)}</div>")
     # Sus caracteres: de qué está hecho cada hanzi de la palabra que se responde (tipo, qué pieza da el significado y
     # cuál el sonido), de 3-data/hanzi.yaml y sources/hanzi. Solo en tarjetas de palabras, nunca en las de frases.
     card_lv = max([lv for lv in (level_of(t, eby, sby, hsk_levels()) for t in ex.get("targets", [])) if lv] or [0]) or None
     shown_hz = (prompt.get("hanzi") if ex["type"] == "charsound"            # el hanzi suelto, no su primera palabra
                 else first.get("hanzi") if not sent and first.get("kind") in ("word", "character", "expression") else "")
-    chars_html = character_lines(shown_hz, lang, list(eby.values()), card_lv)
+    # Lo que una entrada de la tarjeta ya explica de un carácter (需要 y 要 juntos: la imagen propia de 要) no se repite.
+    own = lambda kind: {ch for t in note_targets for ch in memory_chars(eby.get(t, {}).get("hanzi"),
+                                                                         eby.get(t, {}).get("comments", []), kind)}
+    chars_html = character_lines(shown_hz, lang, list(eby.values()), card_lv, own_memory=own("mnemonic"),
+                                 own_origin=own("character"))
     if chars_html:
         notes.append(f"<h4>{'Por qué se escribe así' if len(shown_hz or '') == 1 else 'Sus caracteres'}</h4>{chars_html}")
     # Conexión con otros hanzi del mazo: un recuadro como mucho, el del primer objetivo (docs/goal.md).
@@ -2669,10 +2708,30 @@ def also_in(ch, own, entries, max_level=None):
     return out[:3]
 
 
-def character_lines(hanzi, lang="es", entries=None, max_level=None):
+def memory_chars(hanzi, comments, kind="mnemonic"):
+    """Los caracteres de `hanzi` que un comentario público de la entrada ya explica (`kind`: `mnemonic`, su imagen;
+    `character`, su origen): todos, si la palabra es un solo hanzi (八 «la entrada de una cueva»); si son varios, los
+    que el comentario rotula («美: …»). Una imagen del sonido de la palabra entera (可爱 «kawaii») no ocupa el sitio
+    de la de ningún carácter."""
+    out = set()
+    for c in comments:
+        if c.get("kind") != kind or c.get("private", True) is not False:
+            continue
+        text = c.get("text") or ""
+        if len(hanzi or "") == 1:
+            out.add(hanzi)
+        else:
+            out |= {ch for ch in hanzi if f"{ch}:" in text or f"{ch}：" in text}
+    return out
+
+
+def character_lines(hanzi, lang="es", entries=None, max_level=None, own_memory=(), own_origin=()):
     """El reverso de una palabra explica sus caracteres, uno por línea: el hanzi, su glosa, su tipo y su fórmula
     (王 significado + 求 qiú sonido), y debajo una frase: su imagen para recordarlo o, si no la tiene, su porqué. Con
-    `entries`, también dónde más sale en el mazo. Si el origen es discutido, no se cuenta. Vacío si no hay datos."""
+    `entries`, también dónde más sale en el mazo. Si el origen es discutido, no se cuenta. Vacío si no hay datos.
+    `own_memory`: caracteres para los que la entrada ya trae su propia imagen (un comentario `mnemonic`); de esos no
+    se muestra la de hanzi.yaml, para que cada hanzi tenga una sola imagen en la tarjeta. `own_origin`: los que la
+    entrada ya explica en un comentario `character`; de esos no se repite el porqué."""
     if not hanzi:
         return ""
     notes, parts = load_hanzi_notes()
@@ -2701,9 +2760,9 @@ def character_lines(hanzi, lang="es", entries=None, max_level=None):
             py = et.get("phonetic_pinyin") or ((db.get(et["phonetic"]) or {}).get("pinyin") or [""])[0]
             formula.append(f"sonido: {esc(et['phonetic'])} {esc(py)}".strip())
         # Una frase por carácter: la imagen para recordarlo si la hay; si no, su porqué (solo si no es discutido).
-        memory = (n.get("memory") or {}).get(lang) or ""
+        memory = "" if ch in own_memory else (n.get("memory") or {}).get(lang) or ""
         why = ""
-        if not memory and not disputed:
+        if not memory and not disputed and ch not in own_origin:
             why = re.sub(r"^[^:]{3,40}:\s*", "", (n.get("origin") or {}).get(lang) or "")
             why = why[:1].upper() + why[1:]
         more = also_in(ch, hanzi, entries, max_level)

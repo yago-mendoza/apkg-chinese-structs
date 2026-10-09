@@ -32,7 +32,7 @@
 - ✅🃏 手 shǒu [ʂoʊ˧˩˧] · mano · _sustantivo_ · Está en 手机 «móvil» y 手表 «reloj»: lo que se lleva en la mano o en la muñeca.
 - ✅🃏 耳朵 ěrduo [ɑɻ˧˩˧ twɔ] · oreja · _sustantivo_ · 耳 «oreja» está en 聪 de 聪明 y en 耳机 «auriculares».
 - ✅🃏 好看 hǎokàn [xɑʊ˧˩˧ kʰan˥˩] · bonito, que se ve bien · _adjetivo_ · Palabra a palabra: 好 «bien» + 看 «mirar»: «bueno de ver». Para ropa, cosas y películas; para personas, también 漂亮.
-- ✅🃏 有趣 yǒuqù [joʊ˧˩˧ tɕʰy˥˩] · interesante, divertido · _adjetivo_ · Palabra a palabra: 有 «tener» + 趣 «gracia». Un poco más escrito que 有意思. · En clase: 那本书真有趣！ «¡qué interesante es ese libro!».
+- ✅🃏 有趣 yǒuqù [joʊ˧˩˧ tɕʰy˥˩] · interesante, divertido · _adjetivo_ · Palabra a palabra: 有 «tener» + 趣 «gracia». · En clase: 那本书真有趣！ «¡qué interesante es ese libro!».
 - ✅🃏 有意思 yǒuyìsi [joʊ˧˩˧ i˥˩ sɯ] · interesante · _expresión_ · Palabra a palabra: 有 «tener» + 意思 «sentido»: «que tiene gracia». Es lo más corriente al hablar: 中文很有意思.
 - ✅🃏 特别 tèbié [tʰɤ˥˩ pjɛ˧˥] · especialmente, muy · _adverbio_ · Delante de un adjetivo es más fuerte que 很: 今天特别冷 «hoy hace muchísimo frío».
 
@@ -40,44 +40,44 @@
 
 Tres veces la persona con los brazos abiertos; cambia lo que se le añade.
 
-- 大 dà · solo: grande
-- 太 tài · un punto debajo: demasiado
-- 天 tiān · una raya encima: cielo, día
+- 大 dà · solo
+- 太 tài · un punto debajo
+- 天 tiān · una raya encima
 
 ## 矮 ǎi y 爱 ài
 
 Solo cambia el tono: 矮 baja y sube, 爱 cae.
 
-- 矮 ǎi · ǎi, baja y sube: bajo de estatura
-- 爱 ài · ài, cae: amar
+- 矮 ǎi · baja y sube
+- 爱 ài · cae
 
 ## 大 dà y 打 dǎ
 
 Solo cambia el tono: 大 cae, 打 baja y sube.
 
-- 大 dà · dà, cae: grande
-- 打 dǎ · dǎ, baja y sube: jugar (a la pelota), golpear
+- 大 dà · cae
+- 打 dǎ · baja y sube
 
 ## 本 běn / 笨 bèn
 
 Casi iguales al oído: 本 běn (tercer tono) cuenta libros y 笨 bèn (cuarto tono) es «torpe». Además 本 da el sonido a 笨, que es 竹 sobre 本.
 
-- 本 běn · běn, baja y sube: clasificador de libros
-- 笨 bèn · bèn, cae: torpe
+- 本 běn · baja y sube
+- 笨 bèn · cae
 
 ## Interesante
 
 Dos formas de «interesante»; al hablar, la corriente es 有意思.
 
 - 有意思 yǒuyìsi · lo más corriente al hablar: 中文很有意思
-- 有趣 yǒuqù · interesante, divertido; algo más escrito: 那本书真有趣！
+- 有趣 yǒuqù · algo más escrito: 那本书真有趣！
 
 ## 手 shǒu y 瘦 shòu
 
 Solo cambia el tono: 手 baja y sube, 瘦 cae.
 
-- 手 shǒu · shǒu, baja y sube: mano
-- 瘦 shòu · shòu, cae: delgado
+- 手 shǒu · baja y sube
+- 瘦 shòu · cae
 
 ## Frases
 

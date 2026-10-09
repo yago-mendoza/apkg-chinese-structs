@@ -24,25 +24,25 @@
 
 Cada año es un animal, en este orden; el de 2026 es el caballo.
 
-- 鼠 shǔ · 1 rata
-- 牛 niú · 2 buey
-- 虎 hǔ · 3 tigre
-- 兔 tù · 4 conejo
-- 龙 lóng · 5 dragón
-- 蛇 shé · 6 serpiente
-- 马 mǎ · 7 caballo (2026)
-- 羊 yáng · 8 cabra
-- 猴 hóu · 9 mono
-- 鸡 jī · 10 gallo
-- 狗 gǒu · 11 perro
-- 猪 zhū · 12 cerdo
+- 鼠 shǔ · 1.º
+- 牛 niú · 2.º
+- 虎 hǔ · 3.º
+- 兔 tù · 4.º
+- 龙 lóng · 5.º
+- 蛇 shé · 6.º
+- 马 mǎ · 7.º (2026)
+- 羊 yáng · 8.º
+- 猴 hóu · 9.º
+- 鸡 jī · 10.º
+- 狗 gǒu · 11.º
+- 猪 zhū · 12.º
 
 ## 吗 ma y 马 mǎ
 
 La misma sílaba: 吗 es átona y cierra preguntas; 马 baja y sube. 马 da además el sonido a 吗 y a 妈.
 
-- 吗 ma · ma, átona: partícula de pregunta
-- 马 mǎ · mǎ, baja y sube: caballo
+- 吗 ma · átona, cierra la pregunta
+- 马 mǎ · baja y sube
 
 ## Frases
 

@@ -6,16 +6,16 @@
 
 - ✅🃏 谢谢 xièxie [ɕjɛ˥˩ ɕjɛ] · gracias · _expresión_ · Palabra a palabra: 谢 «agradecer», repetido: la repetición lo hace más amable. · La segunda 谢 se dice en tono neutro, corta y sin contorno propio.
 - ✅🃏 请 qǐng [tɕʰiŋ˧˩˧] · por favor · _verbo_ · Fórmula cortés: 请您 + verbo, «le ruego que…». Por ejemplo, 请您进 qǐng nín jìn, «pase, por favor». · 请 = 讠 «hablar» + 青 qīng, que da el sonido. La misma pista en 清 qīng «claro» [HSK 6], 晴 qíng «despejado» [HSK 2] y 情 qíng «sentimiento» [HSK 7]; lo que aporta 青 es el sonido, no un significado de «claridad».
-- ✅🃏 对 duì [tweɪ˥˩] · correcto; sí, eso es · _adjetivo_ · Variantes: 对啊 duì a, más natural en conversación, y 没错 méi cuò [HSK 4], más enfático («exacto»). · Suena casi «duei», alargando la e.
+- ✅🃏 对 duì [tweɪ˥˩] · correcto; sí, eso es · _adjetivo_ · Variante más natural en conversación: 对啊 duì a. · Suena casi «duei», alargando la e.
 - ✅🃏 好的 hǎo de [xɑʊ˧˩˧ tɤ] · vale, de acuerdo · _expresión_ · Palabra a palabra: 好 «bien» + 的: «bien, vale». · Expresa acuerdo o conformidad: «vale», «muy bien», «de acuerdo».
 - ✅🃏 请问 qǐngwèn [tɕʰiŋ˧˩˧ wən˥˩] · disculpe (para preguntar) · _expresión_ · Palabra a palabra: 请 «por favor» + 问 wèn «preguntar»: la forma cortés de abrir una pregunta a alguien.
 - ✅🃏 请进 qǐng jìn [tɕʰiŋ˧˩˧ tɕin˥˩] · pase, por favor · _expresión_ · Palabra a palabra: 请 «por favor» + 进 «entrar».
 - ✅🃏 请坐 qǐng zuò [tɕʰiŋ˧˩˧ tswɔ˥˩] · siéntese, por favor · _expresión_ · Palabra a palabra: 请 «por favor» + 坐 «sentarse».
-- ✅🃏 是的 shì de [ʂɨ˥˩ tɤ] · sí, eso es · _expresión_ · Palabra a palabra: 是 «ser» + 的: «así es». · Sirve para confirmar, igual que 对 y 好的.
-- ✅🃏 嗯 èn · mm, sí (asentimiento) · _interjección_ · Se usa como 对: para asentir mientras el otro habla.
-- ✅🃏 可以 kěyǐ [kʰɤ˧˩˧ i˧˩˧] · poder (está permitido); vale, sirve · _verbo_ · También sirve de «vale», como 好的. · 可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2]. · 可以 no es «ser capaz» (eso es 能): es que algo está permitido, vale o sirve. Pregunta y respuesta a la vez: 可以吗？ —可以。 «¿Se puede? —Sí». En una tienda, 这个大小可以吗？ «¿este tamaño está bien?». Según el contexto también se dice 行 xíng [HSK 1] o 没问题 méi wèntí [问题 HSK 2], «no hay problema».
+- ✅🃏 是的 shì de [ʂɨ˥˩ tɤ] · sí, eso es · _expresión_ · Palabra a palabra: 是 «ser» + 的: «así es».
+- ✅🃏 嗯 èn · mm, sí (asentimiento) · _interjección_
+- ✅🃏 可以 kěyǐ [kʰɤ˧˩˧ i˧˩˧] · poder (está permitido); vale, sirve · _verbo_ · También sirve de «vale», como 好的. · 可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2]. · Pregunta y respuesta a la vez: 可以吗？ —可以。 «¿Se puede? —Sí». En una tienda, 这个大小可以吗？ «¿este tamaño está bien?». Según el contexto también se dice 行 xíng [HSK 1] o 没问题 méi wèntí [问题 HSK 2], «no hay problema».
 - ✅🃏 不好意思 bù hǎoyìsi [pu˥˩ xɑʊ˧˩˧ i˥˩ sɯ] · perdona; qué vergüenza; me sabe mal · _expresión_ · Palabra a palabra: 不 «no» + 好意思 «tener cara para algo»: «no tengo cara», qué apuro. · Para una molestia pequeña: llegar tarde, pasar, interrumpir, pedir algo. Es muy cotidiano, también entre jóvenes, y no suena formal.
-- ✅🃏 对不起 duìbuqǐ [tweɪ˥˩ pu tɕʰi˧˩˧] · lo siento · _verbo_ · Perdón de verdad, cuando has hecho algo mal: 对不起，我错了. Para una molestia pequeña basta 不好意思. · 对得起 es estar a la altura con alguien; 对不起, no estarlo: te he fallado, perdón.
+- ✅🃏 对不起 duìbuqǐ [tweɪ˥˩ pu tɕʰi˧˩˧] · lo siento · _verbo_ · 对得起 es estar a la altura con alguien; 对不起, no estarlo: te he fallado, perdón.
 - ✅🃏 没关系 méi guānxi [meɪ˧˥ kwan˥ ɕi] · no pasa nada · _expresión_ · La respuesta a 对不起 o a 不好意思: «no pasa nada». Literalmente, «no hay relación». · Palabra a palabra: 没 «no hay» + 关系 [HSK 3] «relación»: no tiene que ver, no importa. Para quitar importancia a algo que ha pasado; para aceptar algo que te piden, 没问题.
 - ✅🃏 不客气 bù kèqi [pu˥˩ kʰɤ˥˩ tɕʰi] · de nada · _expresión_ · La respuesta a 谢谢. Literalmente, «no hagas cumplidos». · Palabra a palabra: 客气 [HSK 5] es tener cumplidos, como un invitado 客; 不客气, «no hace falta cumplido». Su 气 qi no es el 起 qǐ de 对不起: son caracteres distintos.
 - ✅🃏 帮 bāng [pɑŋ˥] · ayudar (a alguien) · _verbo_ · Con la persona detrás: 帮我 «ayúdame». Es la forma corriente al hablar.
@@ -35,17 +35,17 @@
 - ✅🃏 让 ràng [ʐɑŋ˥˩] · dejar, hacer que · _verbo_ · 让 + persona + verbo: 让我想一下 «déjame pensarlo un momento».
 - ✅🃏 解释 jiěshì [tɕjɛ˧˩˧ ʂɨ˥˩] · explicar · _verbo_ · 你可以解释一下吗？ «¿me lo puedes explicar?»: para clase y para el trabajo.
 - ✅🃏 翻译 fānyì [fan˥ i˥˩] · traducir; traductor · _verbo_ · 帮我翻译一下 «tradúcemelo, por favor».
-- ✅🃏 没错 méi cuò [meɪ˧˥ tsʰwɔ˥˩] · ¡exacto!, eso es · _expresión_ · Palabra a palabra: 没 «no hay» + 错 «error»: «no hay error», ¡exacto! Más enfático que 对.
+- ✅🃏 没错 méi cuò [meɪ˧˥ tsʰwɔ˥˩] · ¡exacto!, eso es · _expresión_ · Palabra a palabra: 没 «no hay» + 错 «error»: «no hay error», ¡exacto!
 
 ## Formas de decir que sí
 
 El chino no tiene un «sí» único: se confirma según lo que se responde.
 
-- 对 duì · correcto, tienes razón
-- 是的 shì de · sí, eso es (confirma un hecho)
-- 好的 hǎo de · de acuerdo (aceptas algo)
-- 没错 méi cuò · ¡exacto!, más enfático que 对
-- 嗯 èn · mm, te sigo (mientras hablan)
+- 对 duì · tienes razón
+- 是的 shì de · confirma un hecho
+- 好的 hǎo de · aceptas algo
+- 没错 méi cuò · más enfático que 对
+- 嗯 èn · te sigo, mientras el otro habla
 
 ## Disculpe, perdona y lo siento
 
@@ -53,22 +53,22 @@ Tres formas de pedir perdón o de abordar a alguien, según la situación.
 
 - 请问 qǐngwèn · antes de preguntar algo: 请问，饭店在哪里？
 - 不好意思 bù hǎoyìsi · una molestia pequeña: llegar tarde, pasar, pedir algo
-- 对不起 duìbuqǐ · has hecho algo mal: lo siento
+- 对不起 duìbuqǐ · has hecho algo mal
 
 ## Ayudar
 
 Tres formas de ayudar; al hablar, la corriente es 帮. 帮忙 es tan básico como 帮 (los dos, HSK 1); 帮助, un poco más formal.
 
-- 帮 bāng · ayudar a alguien: 你可以帮我吗？
-- 帮忙 bāngmáng · echar una mano, sin decir a quién
-- 帮助 bāngzhù · ayudar o la ayuda, más formal: 谢谢你的帮助
+- 帮 bāng · con a quién detrás: 你可以帮我吗？
+- 帮忙 bāngmáng · sin decir a quién: no lleva nada detrás
+- 帮助 bāngzhù · también es nombre, y más formal: 谢谢你的帮助
 
 ## 会, 能 y 可以: tres «poder»
 
 El español dice «poder» para los tres; el chino separa saber, ser capaz y tener permiso.
 
-- 会 huì · saber hacerlo, porque lo aprendiste: 我会说中文
-- 能 néng · ser capaz, o que la situación lo permita: 你能说中文吗？
+- 会 huì · porque lo aprendiste: 我会说中文
+- 能 néng · por capacidad, o porque la situación lo permite: 你能说中文吗？
 - 可以 kěyǐ · tener permiso, estar bien: 可以坐这里吗？
 
 ## Frases

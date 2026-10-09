@@ -52,7 +52,7 @@ entries:
     meaning: {es: salida, en: exit}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-09-27', text: '出 chū «salir»: una planta que sale de un tiesto. 出口 y 入口 son la pareja de los carteles.'}
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '出 chū «salir»: una planta que sale de un tiesto.'}
   - id: w.zheli
     use: say
     role: function
@@ -61,8 +61,6 @@ entries:
     pinyin: zhèlǐ
     meaning: {es: aquí, en: here}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '这 «este» + 里 «dentro»: en este sitio. Como 哪里 «dónde».'}
   - id: w.jichang
     use: say
     role: content
@@ -133,8 +131,6 @@ entries:
     pinyin: 'nàlǐ'
     meaning: {es: 'allí', en: 'there'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-08', text: '这里 «aquí», 那里 «allí», 哪里 «¿dónde?»: 这, 那 y 哪 + 里 «lugar». Solo cambia el primer hanzi.'}
   - id: w.li.inside
     use: say
     role: function
@@ -174,8 +170,8 @@ entries:
     title: 'Aquí, allí, ¿dónde?'
     explanation: '这, 那 y 哪 + 里 «lugar»: solo cambia el primer hanzi.'
     members:
-      - {ref: w.zheli, cue: '这里 zhèlǐ, aquí: 我在这里'}
-      - {ref: w.nali.there, cue: '那里 nàlǐ, allí: 那里有两只熊猫'}
-      - {ref: w.nali, cue: '哪里 nǎlǐ, ¿dónde?: 你在哪里？'}
+      - {ref: w.zheli, cue: '我在这里'}
+      - {ref: w.nali.there, cue: '那里有两只熊猫'}
+      - {ref: w.nali, cue: '你在哪里？'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments: []

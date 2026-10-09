@@ -19,15 +19,15 @@
 
 八 es alto y plano; 吧 es átono, corto, al final de la frase.
 
-- 八 bā · bā, alto y plano: ocho
-- 吧 ba · ba, átono al final: ¿vale?, venga
+- 八 bā · alto y plano
+- 吧 ba · átono, corto, al final
 
 ## 在 y 再: los dos zài
 
 Suenan igual, con el mismo cuarto tono; la frase decide.
 
-- 在 zài · 在: estar en un sitio (我在家)
-- 再 zài · 再: otra vez, luego (再见, 再说一遍)
+- 在 zài · 我在家
+- 再 zài · 再见, 再说一遍
 
 ## Frases
 

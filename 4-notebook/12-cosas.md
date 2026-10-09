@@ -21,30 +21,30 @@
 - ✅🃏 软件 ruǎnjiàn [ʐwan˧˩˧ tɕjɛn˥˩] · software · _sustantivo_ · Calco: 软 «blando» + 件 «pieza», frente a 硬件 yìngjiàn «hardware», las piezas duras.
 - ✅🃏 说 shuō [ʂwɔ˥] · hablar, decir · _verbo_ · 讠 «palabra» a la izquierda, como en 请 y en 认识.
 - ✅🃏 怎么 zěnme [tsən˧˩˧ mɤ] · cómo · _interrogativo_ · 怎么 + verbo pregunta la manera: 怎么说？ «¿cómo se dice?», 怎么吃？ «¿cómo se come?».
-- ✅🃏 能 néng [nɤŋ˧˥] · poder (ser capaz) · _verbo_ · 能 es poder porque eres capaz o porque las circunstancias lo permiten: 你能说中文吗？ 可以 es poder porque está permitido o porque algo vale.
+- ✅🃏 能 néng [nɤŋ˧˥] · poder (ser capaz) · _verbo_
 - ✅🃏 和 hé [xɤ˧˥] · y, con · _conjunción_ · 和 solo une nombres: 咖啡和巧克力, 我和你. Dos frases o dos adjetivos no se unen con 和: 他很高，也很帅. · 禾 hé «cereal» da el sonido y 口 «boca» aporta el sentido. El sentido antiguo es «armonía, concordia»; de dos cosas que armonizan pasó a unir: A 和 B. · El cereal 禾 llega a la boca 口: comida compartida, armonía, estar juntos.
-- ✅🃏 没 méi [meɪ˧˥] · no (no pasó; no hay) · _adverbio_ · 没 niega lo que pasó o lo que hay: 我没吃饭 «no he comido», 我没有钱. 不 niega lo que haces, quieres o eres: 我不吃 «no como».
+- ✅🃏 没 méi [meɪ˧˥] · no (no pasó; no hay) · _adverbio_
 - ✅🃏 过 guo [kwɔ] · haber (hecho alguna vez) · _partícula_ · Detrás del verbo: lo has hecho alguna vez. 我去过北京 «he estado en Pekín»; 你看过这个电影吗？ «¿has visto esta película?».
 - ✅🃏 用 yòng [jʊŋ˥˩] · usar; con (un instrumento) · _verbo_ · Va antes de la acción: 我用筷子吃饭 «como con palillos». Primero con qué, luego qué haces.
 - ✅🃏 坐 zuò [tswɔ˥˩] · sentarse; ir en (un vehículo) · _verbo_ · 请坐 «siéntese»; 坐飞机 «ir en avión», 坐车 «ir en coche o autobús».
 - ✅🃏 进 jìn [tɕin˥˩] · entrar · _verbo_ · Pasar de fuera a dentro: 请进 «pase». 进来 «entrar hacia aquí», 进去 «entrar hacia allí».
-- ✅🃏 别 bié [pjɛ˧˥] · no (hagas): prohibir · _adverbio_ · Para pedir que alguien no haga algo: 别看我！ «¡no me mires!». 不 solo niega: 我不看 «no miro».
+- ✅🃏 别 bié [pjɛ˧˥] · no (hagas): prohibir · _adverbio_
 - ✅🃏 听 tīng [tʰiŋ˥] · escuchar · _verbo_ · 口 «boca» a la izquierda. 听音乐 «escuchar música».
 - ✅🃏 电影 diànyǐng [tjɛn˥˩ iŋ˧˩˧] · película · _sustantivo_ · 电 «electricidad» + 影 «sombra, imagen»: sombras eléctricas. El 电 de 电话 y 电脑.
 - ✅🃏 生气 shēngqì [ʂɤŋ˥ tɕʰi˥˩] · enfadarse; enfadado · _adjetivo_ · 生 «producir» + 气 «aire, ánimo»: echar humo. 他生气了 «se ha enfadado».
 - ✅🃏 疼 téng [tʰɤŋ˧˥] · doler · _verbo_ · 疒 «enfermedad» por fuera. 好疼！ «¡qué daño!»: 好 delante de un adjetivo es «qué…», muy coloquial.
 - ✅🃏 难 nán [nan˧˥] · difícil · _adjetivo_
 - ✅🃏 非常 fēicháng [feɪ˥ ʈʂʰɑŋ˧˥] · muy, muchísimo · _adverbio_ · Más fuerte que 很: 非常好 «muy bien». Para agradecer se dice 太谢谢你了 o 非常感谢 [HSK 2]; «非常谢谢你» suena forzado.
-- ✅🃏 大象 dàxiàng [ta˥˩ ɕjɑŋ˥˩] · elefante · _sustantivo_ · No lo confundas con 大家 dàjiā «todos»: los dos empiezan por 大, y al oído solo cambia la segunda sílaba.
+- ✅🃏 大象 dàxiàng [ta˥˩ ɕjɑŋ˥˩] · elefante · _sustantivo_
 - ✅🃏 音乐 yīnyuè [in˥ ɥœ˥˩] · música · _sustantivo_
 - ✅🃏 为什么 wèishénme [weɪ˥˩ ʂən˧˥ mɤ] · por qué · _interrogativo_
 - ✅🃏 这么 zhème [ʈʂɤ˥˩ mɤ] · tan, así de · _pronombre_ · Delante de un adjetivo: 你为什么这么高？ «¿por qué eres tan alto?».
 - ✅🃏 出去 chūqu [ʈʂʰu˥ tɕʰy] · salir (hacia fuera) · _verbo_ · 出 es una planta que sale de un tiesto. 出来 chūlái es salir hacia aquí. · 出去啊？ «¿sales?» es un saludo al cruzarte con alguien que se va.
-- ✅🃏 树 shù [ʂu˥˩] · árbol · _sustantivo_ · 这棵树很高 «este árbol es alto»: 棵 kē es el clasificador de los árboles. No confundir con 书 shū «libro»: suenan parecido, pero 树 es cuarto tono.
+- ✅🃏 树 shù [ʂu˥˩] · árbol · _sustantivo_ · 这棵树很高 «este árbol es alto»: 棵 kē es el clasificador de los árboles.
 - ✅🃏 龙 lóng [lʊŋ˧˥] · dragón · _sustantivo_ · 龍 es su forma tradicional. Es frecuente en nombres: 成龙 «Jackie Chan», 大龙, y 李小龙 «Bruce Lee».
 - ✅🃏 左 zuǒ [tswɔ˧˩˧] · izquierda · _sustantivo_
 - ✅🃏 右 yòu [joʊ˥˩] · derecha · _sustantivo_ · 左 «izquierda» + 右 «derecha» = 左右 «más o menos», detrás de un número.
-- ✅🃏 试 shì [ʂɨ˥˩] · probar, intentar · _verbo_ · 我可以试一下吗？ «¿puedo probármelo?», en una tienda. 试试 y 试一下 son «probar un poco». · Suena exactamente igual que 是 shì: solo el contexto los separa.
+- ✅🃏 试 shì [ʂɨ˥˩] · probar, intentar · _verbo_ · 我可以试一下吗？ «¿puedo probármelo?», en una tienda. 试试 y 试一下 son «probar un poco».
 - ✅🃏 等 děng [tɤŋ˧˩˧] · esperar · _verbo_ · 你等一下 «espera un momento» es de lo que más se oye.
 - ✅🃏 休息 xiūxi [ɕjoʊ˥ ɕi] · descansar · _verbo_
 - ✅🃏 找 zhǎo [ʈʂɑʊ˧˩˧] · buscar · _verbo_ · 我在找我的手机 «estoy buscando mi móvil». Pedirlo: 帮我找一下.
@@ -64,33 +64,33 @@
 
 Mismo carácter; la boca 口 lo convierte en pregunta.
 
-- 那 nà · sin boca: nà, eso
-- 哪 nǎ · con boca: nǎ, ¿cuál?
-- 哪里 nǎlǐ · con boca: nǎ, ¿dónde? (哪里)
+- 那 nà · sin boca
+- 哪 nǎ · con boca 口
+- 哪里 nǎlǐ · con boca, + 里 «lugar»
 
 ## 门 da el sonido
 
 门 mén presta su sonido: 们 men, 问 wèn y 闻 wén «oír, oler» [HSK 2]. Cambia el tono; la sílaba se queda.
 
-- 门 mén · la puerta: mén, 2.º tono; palabra
-- 们 men · persona 亻 + 门: men, átono; ligada, plural
-- 问 wèn · boca 口 en la puerta: wèn, preguntar; palabra
+- 门 mén · sube; palabra suelta
+- 们 men · persona 亻 + 门; átono, va pegado
+- 问 wèn · boca 口 en la puerta; cae
 
 ## 入口 y 出口
 
 Los dos carteles: entrar y salir por la boca 口 de un lugar.
 
-- 入口 rùkǒu · entrada
-- 出口 chūkǒu · salida
+- 入口 rùkǒu · 入 «entrar» + 口
+- 出口 chūkǒu · 出 «salir» + 口
 
 ## Venir, ir, entrar y salir
 
 Se eligen según hacia dónde va el movimiento respecto a quien habla.
 
-- 来 lái · hacia aquí: venir
-- 去 qù · hacia allí: ir
-- 进 jìn · de fuera a dentro: entrar
-- 出去 chūqu · de dentro a fuera: salir
+- 来 lái · hacia quien habla
+- 去 qù · lejos de quien habla
+- 进 jìn · de fuera a dentro
+- 出去 chūqu · de dentro a fuera
 
 ## 不, 没 y 别: tres «no»
 
@@ -104,54 +104,54 @@ Cada uno niega una cosa distinta.
 
 国 sube y es un nombre; 过 es átono y va pegado al verbo.
 
-- 国 guó · guó, sube: país
-- 过 guo · guo, átono tras el verbo: haber hecho
+- 国 guó · sube
+- 过 guo · átono, pegado al verbo
 
 ## 书 shū, 树 shù, 鼠 y 属 shǔ
 
 Misma sílaba, distinto tono: 书 shū «libro» (alto y plano), 树 shù «árbol» (cae), y con tercer tono (baja y sube) 鼠 «rata» y 属 «ser de un signo», que suenan igual: 我属鼠.
 
-- 书 shū · shū, alto y plano: libro
-- 树 shù · shù, cae: árbol
-- 鼠 shǔ · shǔ, baja y sube: rata (zodiaco)
-- 属 shǔ · shǔ, baja y sube: ser de un signo (我属马)
+- 书 shū · alto y plano
+- 树 shù · cae
+- 鼠 shǔ · baja y sube; animal del zodiaco
+- 属 shǔ · baja y sube; suena igual que 鼠: 我属马
 
 ## 哪 y 都
 
 Comparten 阝 a la derecha; la izquierda los separa.
 
-- 哪 nǎ · 哪 nǎ «cuál»: 口 boca a la izquierda, porque pregunta
-- 都 dōu · 都 dōu «todos»: 者 a la izquierda
+- 哪 nǎ · 口 boca a la izquierda, porque pregunta
+- 都 dōu · 者 a la izquierda
 
 ## 比 y 笔: los dos bǐ
 
 Suenan igual: la frase decide. 比 compara (他比我高); 笔 es el bolígrafo.
 
-- 比 bǐ · 比: comparar (A 比 B)
-- 笔 bǐ · 笔: bolígrafo, lápiz
+- 比 bǐ · A 比 B: 他比我高
+- 笔 bǐ · un objeto: 这是我的笔
 
 ## 左 zuǒ y 坐 zuò
 
 左 baja y sube; 坐 cae.
 
-- 左 zuǒ · zuǒ, baja y sube: izquierda
-- 坐 zuò · zuò, cae: sentarse
+- 左 zuǒ · baja y sube
+- 坐 zuò · cae
 
 ## 是, 试 y 十: shì y shí
 
 是 y 试 suenan exactamente igual, shì con cuarto tono: solo el contexto los separa. 十 shí sube.
 
-- 是 shì · ser: 我是学生
-- 试 shì · probar: 我可以试一下吗？
-- 十 shí · shí, sube: diez
+- 是 shì · 我是学生
+- 试 shì · 我可以试一下吗？
+- 十 shí · sube
 
 ## 拿 ná, 哪 nǎ y 那 nà
 
 La misma sílaba, na; solo el tono los separa.
 
-- 拿 ná · ná, sube: coger
-- 哪 nǎ · nǎ, baja y sube: ¿cuál?
-- 那 nà · nà, cae: eso, aquel
+- 拿 ná · sube
+- 哪 nǎ · baja y sube
+- 那 nà · cae
 
 ## Frases
 

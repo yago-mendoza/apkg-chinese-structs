@@ -21,6 +21,7 @@
 - Escribe sus apuntes en «Tus notas» del review, no en `homework-feedback.md`, desde hace tres lotes. ([lote 008](/2-digests/summary-008-2026-10-08-pedir-ayuda-lugares-y-finales.md#fricciones-del-proceso))
 - Investiga a fondo con consultas que pega en sus notas: más de la mitad del lote 008 fue eso. ([lote 008](/2-digests/summary-008-2026-10-08-pedir-ayuda-lugares-y-finales.md#seguimiento))
 - En Anki, 288 repasos en 10 de 14 días; falla poco al leer (19 % «Otra vez»), la mitad al escuchar y mucho al decir (71 %). Lo que más le cuesta, según él, es entender frases seguidas al oído. ([lote 008](/2-digests/summary-008-2026-10-08-pedir-ayuda-lugares-y-finales.md#seguimiento))
+- En las tarjetas de decir no teclea: responde de cabeza, mira la respuesta y se puntúa; ese 71 % es su propia nota. ([cada cosa, una vez](/docs/decisions.md#2026-10-09--cada-cosa-una-vez-por-tarjeta))
 - Le cuestan el primer tono al cambiar rápido, las vocales e, i y o, las finales -n / -ng, la ü escondida y 也 / 都 con dos sujetos. ([lote 008](/2-digests/summary-008-2026-10-08-pedir-ayuda-lugares-y-finales.md#lo-que-te-cuesta-y-w-la-ü-y-las-finales), [lote 007](/2-digests/summary-007-2026-10-07-fechas-ordinales-y-clasificadores.md#lo-que-te-cuesta-vocales-y-tonos))
 - Quiere entender por dentro: el porqué de cada hanzi, una imagen para recordar los difíciles y, en las expresiones, palabra a palabra. ([lote 008](/2-digests/summary-008-2026-10-08-pedir-ayuda-lugares-y-finales.md#entender-por-dentro))
 

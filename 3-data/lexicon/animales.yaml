@@ -128,18 +128,18 @@ entries:
     title: 'Los doce signos'
     explanation: 'Cada año es un animal, en este orden; el de 2026 es el caballo.'
     members:
-      - {ref: w.shu.mouse, cue: '1 rata'}
-      - {ref: w.niu, cue: '2 buey'}
-      - {ref: w.hu, cue: '3 tigre'}
-      - {ref: w.tu, cue: '4 conejo'}
-      - {ref: w.long, cue: '5 dragón'}
-      - {ref: w.she, cue: '6 serpiente'}
-      - {ref: w.ma.horse, cue: '7 caballo (2026)'}
-      - {ref: w.yang.sheep, cue: '8 cabra'}
-      - {ref: w.hou, cue: '9 mono'}
-      - {ref: w.ji.chicken, cue: '10 gallo'}
-      - {ref: w.gou, cue: '11 perro'}
-      - {ref: w.zhu, cue: '12 cerdo'}
+      - {ref: w.shu.mouse, cue: '1.º'}
+      - {ref: w.niu, cue: '2.º'}
+      - {ref: w.hu, cue: '3.º'}
+      - {ref: w.tu, cue: '4.º'}
+      - {ref: w.long, cue: '5.º'}
+      - {ref: w.she, cue: '6.º'}
+      - {ref: w.ma.horse, cue: '7.º (2026)'}
+      - {ref: w.yang.sheep, cue: '8.º'}
+      - {ref: w.hou, cue: '9.º'}
+      - {ref: w.ji.chicken, cue: '10.º'}
+      - {ref: w.gou, cue: '11.º'}
+      - {ref: w.zhu, cue: '12.º'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
   - id: g.ma-ma
@@ -148,8 +148,8 @@ entries:
     title: '吗 ma y 马 mǎ'
     explanation: 'La misma sílaba: 吗 es átona y cierra preguntas; 马 baja y sube. 马 da además el sonido a 吗 y a 妈.'
     members:
-      - {ref: w.ma, cue: 'ma, átona: partícula de pregunta'}
-      - {ref: w.ma.horse, cue: 'mǎ, baja y sube: caballo'}
+      - {ref: w.ma, cue: 'átona, cierra la pregunta'}
+      - {ref: w.ma.horse, cue: 'baja y sube'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
   - id: w.shengxiao

@@ -21,8 +21,8 @@
 
 Casi iguales al oído y con el mismo tono: solo cambia la vocal. En 热, la e oscura del chino; en 日, el zumbido de la i tras r.
 
-- 热 rè · rè, «calor»: e oscura
-- 日 rì · rì, «día» (por escrito): zumbido, sin vocal
+- 热 rè · e oscura
+- 日 rì · zumbido, sin vocal
 
 ## Frases
 

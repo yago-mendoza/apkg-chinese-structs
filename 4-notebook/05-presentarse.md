@@ -31,9 +31,9 @@
 - ✅🃏 北京 Běijīng [peɪ˧˩˧ tɕiŋ˥] · Pekín · _nombre propio_ · Literalmente «capital del norte»: 北 běi «norte» + 京 jīng «capital». · 京 es un edificio alto sobre una colina, la parte de arriba de 高.
 - ✅ 大卫 Dàwèi [ta˥˩ weɪ˥˩] · David (nombre de ejemplo) · _nombre propio_
 - ✅🃏 先生 xiānsheng [ɕjɛn˥ ʂɤŋ] · señor (tras el apellido) · _sustantivo_ · Detrás del apellido: 白先生 «el señor Bai». Es como se llama a alguien en un trato formal; no por el nombre completo. · 先 «antes» + 生 «nacer»: el que nació antes. Ojo: la segunda sílaba se dice átona, xiānsheng.
-- ✅🃏 哪 nǎ [na˧˩˧] · qué, cuál · _interrogativo_ · Delante de un nombre o de un clasificador: 哪国人 «de qué país». Con 里, 哪里 «dónde».
+- ✅🃏 哪 nǎ [na˧˩˧] · qué, cuál · _interrogativo_
 - ✅🃏 国 guó [kwɔ˧˥] · país · _sustantivo_ · En los nombres de países: 中国, 美国. 你是哪国人？ «¿de qué país eres?».
-- ✅🃏 会 huì [xweɪ˥˩] · saber (hacer algo); ir a (predicción) · _verbo_ · Saber hacer algo aprendido: 我会说中文. «Saber un dato» es otra palabra, 知道 zhīdào [HSK 1]. · También predice: 明天会下雨 «mañana lloverá». Ser capaz en este momento es 能; tener permiso, 可以.
+- ✅🃏 会 huì [xweɪ˥˩] · saber (hacer algo); ir a (predicción) · _verbo_ · Saber hacer algo aprendido: 我会说中文. «Saber un dato» es otra palabra, 知道 zhīdào [HSK 1]. · También predice: 明天会下雨 «mañana lloverá».
 - ✅🃏 学习 xuéxí [ɕɥœ˧˥ ɕi˧˥] · estudiar, aprender · _verbo_ · 学 «aprender» + 习 «practicar». 学生 «estudiante» lleva el mismo 学.
 - ✅ 成龙 Chéng Lóng [ʈʂʰɤŋ˧˥ lʊŋ˧˥] · Jackie Chan · _nombre propio_ · Su apellido es 成 y su nombre, 龙 «dragón»: 他姓成，叫成龙.
 - ✅🃏 英国 Yīngguó [iŋ˥ kwɔ˧˥] · Reino Unido · _nombre propio_
@@ -47,36 +47,36 @@
 
 Solo cambia el tono: 是 cae, 十 sube.
 
-- 是 shì · shì, cae: ser
-- 十 shí · shí, sube: diez
+- 是 shì · cae
+- 十 shí · sube
 
 ## Palabras para preguntar
 
 Van donde iría la respuesta, sin cambiar el orden de la frase.
 
-- 什么 shénme · qué
-- 怎么 zěnme · cómo
-- 谁 shéi · quién
-- 哪里 nǎlǐ · dónde
-- 几 jǐ · cuántos (pocos)
-- 多少 duōshao · cuánto (abierto)
-- 为什么 wèishénme · por qué
-- 哪 nǎ · cuál, qué (de un grupo), delante de un nombre
-- 怎么样 zěnmeyàng · qué tal: opinión o estado
+- 什么 shénme · una cosa, o el tipo de algo: 什么菜？
+- 怎么 zěnme · + verbo, la manera: 怎么说？
+- 谁 shéi · qué persona: 他是谁？
+- 哪里 nǎlǐ · qué lugar: 你在哪里？
+- 几 jǐ · se esperan pocos, con clasificador: 几个？
+- 多少 duōshao · abierto, y para precios: 多少钱？
+- 为什么 wèishénme · pide la causa: 你为什么学中文？
+- 哪 nǎ · uno de un grupo, delante de un nombre: 哪国人？
+- 怎么样 zěnmeyàng · pide opinión o estado: 这个怎么样？
 
 ## 先生 y 学生
 
 Los dos acaban en 生 átono; empiezan distinto.
 
-- 先生 xiānsheng · xiān: señor; 先 «antes», con primer tono
-- 学生 xuéshēng · xué: estudiante; 学 «estudiar», que sube
+- 先生 xiānsheng · 先 «antes», alto y plano
+- 学生 xuéshēng · 学 «estudiar», sube
 
 ## 猜 cāi y 菜 cài
 
 猜 es alto y plano; 菜 cae.
 
-- 猜 cāi · cāi, alto y plano: adivinar
-- 菜 cài · cài, cae: plato, verdura
+- 猜 cāi · alto y plano
+- 菜 cài · cae
 
 ## Frases
 

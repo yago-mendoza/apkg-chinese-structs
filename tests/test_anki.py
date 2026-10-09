@@ -676,7 +676,44 @@ class Batch005(unittest.TestCase):
         partner = anki.partner_example(ex, self.sby, self.eby)
         self.assertIsNotNone(partner)
         self.assertEqual(partner[0]["id"], "w.shi")
-        self.assertIn("Para no confundirlo con 是", json.dumps(self.fields("x.read.num.shi"), ensure_ascii=False))
+        notes = self.fields("x.read.num.shi")["notes"]
+        self.assertNotIn("Para no confundirlo", notes)            # la frase va en la fila de 是, no en otro apartado
+        row = notes.split('class="vs-hz">是</b>')[1].split('<div class="vs-row')[0]
+        self.assertIn("vs-ex", row)
+        self.assertEqual(notes.count("vs-ex"), 1)
+
+    def test_a_card_contrasts_each_pair_once(self):
+        notes = self.fields("x.read.num.shi")["notes"]           # 十: 是 / 十 cabe dentro de 是 / 试 / 十
+        self.assertEqual(notes.count('class="vs-hz">是</b>'), 1)
+        g = lambda gid, refs: {"id": gid, "members": [{"ref": r} for r in refs]}
+        small, big, other = g("a", ["x", "y"]), g("b", ["x", "y", "z"]), g("c", ["x", "w"])
+        self.assertEqual(anki.covered_groups_dropped([small, big, other]), [big, other])
+        self.assertEqual(anki.covered_groups_dropped([small, g("d", ["y", "x"])]), [small])   # iguales: queda el primero
+
+    def test_nuance_cards_do_not_repeat_their_answer_in_boxes(self):
+        nuance = next(x for x in self.exercises if x["type"] == "nuance")
+        self.assertNotIn("vs-row", anki.card_fields(nuance, self.eby, self.sby, {}, set())["notes"])
+
+    def test_word_backs_have_no_ipa_line(self):
+        self.assertNotIn('class="ipa"', self.fields("x.read.num.shi")["back"])
+
+    def test_cue_says_only_what_separates(self):
+        e = {"pinyin": "cāi", "meaning": {"es": "adivinar"}}
+        self.assertTrue(anki.cue_repeats("cāi, alto y plano: adivinar", e))
+        self.assertTrue(anki.cue_repeats("adivinar", e))
+        self.assertFalse(anki.cue_repeats("alto y plano", e))
+        self.assertFalse(anki.cue_repeats("lo que no pasó", {"pinyin": "méi", "meaning": {"es": "no (no pasó)"}}))
+        self.assertFalse(anki.cue_repeats("el general", {"pinyin": "ge", "meaning": {"es": "clasificador general"}}))
+
+    def test_one_image_per_hanzi(self):
+        own = [{"kind": "mnemonic", "private": False, "text": "八 es como la entrada de una cueva."}]
+        self.assertEqual(anki.memory_chars("八", own), {"八"})
+        self.assertEqual(anki.memory_chars("美国", [{"kind": "mnemonic", "private": False, "text": "美: un adorno."}]), {"美"})
+        self.assertEqual(anki.memory_chars("可爱", [{"kind": "mnemonic", "private": False, "text": "Suena como «kawaii»."}]), set())
+        self.assertEqual(anki.memory_chars("八", [dict(own[0], private=True)]), set())
+        entries, _, _ = anki.load()
+        self.assertIn("Para recordarlo", anki.character_lines("八", "es", entries))
+        self.assertNotIn("Para recordarlo", anki.character_lines("八", "es", entries, own_memory={"八"}))
 
     def test_cloze_plays_the_whole_sentence(self):
         cloze = next(x for x in self.exercises if x["type"] == "cloze" and x.get("sentence"))

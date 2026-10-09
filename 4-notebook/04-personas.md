@@ -34,23 +34,23 @@
 
 Suenan igual; solo la escritura distingue a quién se refiere.
 
-- 他 tā · 亻 persona: él (y grupos mixtos: 他们)
-- 她 tā · 女 mujer: ella
-- 它 tā · 宀 arriba: cosas y animales
+- 他 tā · 亻 persona; también grupos mixtos (他们)
+- 她 tā · 女 mujer
+- 它 tā · 宀 arriba
 
 ## 帅 y 师
 
 Casi iguales: el pañuelo 巾 a la derecha y dos trazos a la izquierda. 师 lleva además una raya encima.
 
-- 帅 shuài · sin raya encima: shuài, hoy «guapo»
-- 师 shī · raya encima: shī, en 老师 y 工程师
+- 帅 shuài · sin raya encima
+- 师 shī · raya encima; en 老师 y 工程师
 
 ## 大家 y 大象
 
 Empiezan igual; la segunda sílaba lo decide.
 
-- 大家 dàjiā · dàjiā: todos
-- 大象 dàxiàng · dàxiàng: elefante
+- 大家 dàjiā · jiā, alto y plano
+- 大象 dàxiàng · xiàng, cae
 
 ## 医 y 国: dos cajas
 

@@ -135,8 +135,6 @@ entries:
     pinyin: zěnmeyàng
     meaning: {es: '¿qué tal?; ¿cómo?', en: 'how is it?, how about'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '你好吗？ es correcto, pero de libro; para preguntar cómo está alguien suena más natural 你怎么样？. También pide opinión: 这个怎么样？ «¿qué tal este?».'}
   - id: e.wanan
     use: say
     role: content
@@ -273,7 +271,7 @@ entries:
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 你 «tú» + 好 «bien» + 吗 (pregunta): «¿tú, bien?».'}
-      - {kind: linguistic, private: false, date: '2026-10-05', text: 'Correcto, pero de libro: entre amigos suena escolar. Para algo natural, 最近怎么样？.'}
+      - {kind: linguistic, private: false, date: '2026-10-05', text: 'Entre amigos suena escolar: mejor 最近怎么样？.'}
   - id: e.zuijinzenmeyang
     use: say
     role: content
@@ -346,12 +344,12 @@ entries:
     title: 'Preguntar qué tal'
     explanation: 'Seis maneras de interesarse por alguien; cambian la situación y la cercanía, no el sentido literal.'
     members:
-      - {ref: e.zuijinzenmeyang, cue: 'qué tal últimamente: la más versátil'}
-      - {ref: w.zenmeyang, cue: '你怎么样？: «¿y tú qué tal?», algo directo suelto'}
-      - {ref: e.nihaoma, cue: 'cómo estás: correcto, pero de libro'}
-      - {ref: e.nihaihaoma, cue: 'estás bien: cuando algo ha pasado'}
-      - {ref: e.chifanlema, cue: 'has comido: saludo de vecinos y familia'}
-      - {ref: e.zuijinmangma, cue: 'mucho lío: interés por algo concreto'}
+      - {ref: e.zuijinzenmeyang, cue: 'la más versátil'}
+      - {ref: w.zenmeyang, cue: 'suelto y directo: 你怎么样？ «¿y tú qué tal?»'}
+      - {ref: e.nihaoma, cue: 'correcto, pero de libro'}
+      - {ref: e.nihaihaoma, cue: 'cuando algo ha pasado'}
+      - {ref: e.chifanlema, cue: 'saludo de vecinos y familia'}
+      - {ref: e.zuijinmangma, cue: 'interés por algo concreto'}
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments: []
   - id: g.zaijian-dajiahao
@@ -360,8 +358,8 @@ entries:
     title: '再见 y 大家好'
     explanation: 'Uno cierra y otro abre, y al oído se parecen: zà-jià frente a dà-jiā.'
     members:
-      - {ref: w.zaijian, cue: 'adiós, al irte: z (como ts sin aire), dos cuartos tonos que caen'}
-      - {ref: e.dajiahao, cue: 'hola a todos, al empezar: d, cuarto, primero y tercero'}
+      - {ref: w.zaijian, cue: 'al irte: z (como ts sin aire), dos cuartos tonos que caen'}
+      - {ref: e.dajiahao, cue: 'al empezar: d, cuarto, primero y tercero'}
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments: []
   - id: w.kuaile

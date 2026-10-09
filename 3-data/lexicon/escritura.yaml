@@ -152,8 +152,8 @@ entries:
     title: 木 y 扌 a la izquierda
     explanation: 'A la izquierda se parecen: 木 tiene la raya vertical recta y dos patas; 扌, un gancho abajo y la raya de arriba cruzada.'
     members:
-      - {ref: c.side.mu, cue: 'árbol: vertical recta con dos patas, como en 机'}
-      - {ref: c.side.shou, cue: 'mano: vertical con gancho, como en 打'}
+      - {ref: c.side.mu, cue: 'vertical recta con dos patas, como en 机'}
+      - {ref: c.side.shou, cue: 'vertical con gancho, como en 打'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
   - id: c.side.yi
@@ -188,8 +188,8 @@ entries:
     title: 衤 y 礻
     explanation: 'Solo cambia un trazo: 衤 lleva dos puntos a la derecha; 礻, uno.'
     members:
-      - {ref: c.side.yi, cue: 'dos puntos: ropa'}
-      - {ref: c.side.shi, cue: 'un punto: altar, espíritu'}
+      - {ref: c.side.yi, cue: 'dos puntos'}
+      - {ref: c.side.shi, cue: 'un punto'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
   - id: c.bei.shell
@@ -210,8 +210,8 @@ entries:
     title: 见 y 贝
     explanation: 'Arriba el mismo marco; abajo, piernas o patas.'
     members:
-      - {ref: w.jian, cue: 'piernas 儿 abajo: ver'}
-      - {ref: c.bei.shell, cue: 'dos patas cortas 八 abajo: concha, dinero'}
+      - {ref: w.jian, cue: 'piernas 儿 abajo'}
+      - {ref: c.bei.shell, cue: 'dos patas cortas 八 abajo'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
   - id: c.hu.door
@@ -233,8 +233,8 @@ entries:
     title: 门 y 户
     explanation: 'Dos puertas: 门 tiene dos hojas; 户, una sola con un punto encima.'
     members:
-      - {ref: w.men, cue: 'dos hojas: puerta, mén'}
-      - {ref: c.hu.door, cue: 'una hoja con un punto: hù, hogar, ventana'}
+      - {ref: w.men, cue: 'dos hojas'}
+      - {ref: c.hu.door, cue: 'una hoja con un punto encima; en 窗户 «ventana»'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
   - id: c.side.yan
@@ -285,7 +285,7 @@ entries:
     meaning: {es: 'carácter (hanzi)', en: 'character'}
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-07', text: 'Un 字 es un carácter; un 词 es una palabra, de uno o más caracteres. 名字 «nombre» lleva este 字.'}
+      - {kind: linguistic, private: false, date: '2026-10-07', text: '名字 «nombre» lleva este 字.'}
   - id: w.ci.word
     use: hear
     role: content
@@ -351,8 +351,8 @@ entries:
     title: '字 y 词'
     explanation: 'Carácter frente a palabra.'
     members:
-      - {ref: w.zi.char, cue: '字: un carácter (汉字)'}
-      - {ref: w.ci.word, cue: '词: una palabra, de uno o más 字'}
+      - {ref: w.zi.char, cue: '汉字'}
+      - {ref: w.ci.word, cue: 'uno o más 字 juntos'}
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
     comments: []
   - id: w.fuxi

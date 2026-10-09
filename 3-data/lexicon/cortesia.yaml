@@ -38,7 +38,7 @@ entries:
     meaning: {es: 'correcto; sí, eso es', en: 'right, correct'}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: 'Variantes: 对啊 duì a, más natural en conversación, y 没错 méi cuò [HSK 4], más enfático («exacto»).', original: duì a / méi cuò (+ intenso)}
+      - {kind: note, private: false, date: 2026-09-25, text: 'Variante más natural en conversación: 对啊 duì a.', original: duì a / méi cuò (+ intenso)}
       - {kind: sound, private: false, date: '2026-10-08', text: 'Suena casi «duei», alargando la e.', original: 'dui sonuds like dueee'}
   - id: e.haode
     use: say
@@ -95,7 +95,6 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 是 «ser» + 的: «así es».'}
-      - {kind: note, private: false, date: '2026-09-29', text: 'Sirve para confirmar, igual que 对 y 好的.', original: 'shi de = lo es  dui = exacte  (both are godo to confirm anthgin¿?)'}
   - id: w.en
     use: say
     role: content
@@ -108,8 +107,6 @@ entries:
     level_reason: 'muletilla oral de asentimiento, muy frecuente al hablar'
     accept_pinyin_mismatch: 'como asentimiento se dice cayendo, èn; pypinyin da ń, la lectura de «¿eh?»'
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
-    comments:
-      - {kind: note, private: false, date: '2026-09-29', text: 'Se usa como 对: para asentir mientras el otro habla.', original: 嗯 as dui}
   - id: w.keyi
     use: say
     role: content
@@ -121,18 +118,18 @@ entries:
     comments:
       - {kind: note, private: false, date: '2026-09-29', text: 'También sirve de «vale», como 好的.', original: kê yî = okay (like ke ài) (its liek phnetical calco)}
       - {kind: linguistic, private: false, date: '2026-09-27', text: '可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2].'}
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '可以 no es «ser capaz» (eso es 能): es que algo está permitido, vale o sirve. Pregunta y respuesta a la vez: 可以吗？ —可以。 «¿Se puede? —Sí». En una tienda, 这个大小可以吗？ «¿este tamaño está bien?». Según el contexto también se dice 行 xíng [HSK 1] o 没问题 méi wèntí [问题 HSK 2], «no hay problema».', original: 'En kêyî hay que explcar que no es lo mismo poder tener permiso que 能 (néng): poder / ser capaz de. [...] keyi estaria bien hacer hincapie en que est tanto "poder" para preguntas como respuesta como ... loksea, y expresiones sinonimss segun ctx sabes'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Pregunta y respuesta a la vez: 可以吗？ —可以。 «¿Se puede? —Sí». En una tienda, 这个大小可以吗？ «¿este tamaño está bien?». Según el contexto también se dice 行 xíng [HSK 1] o 没问题 méi wèntí [问题 HSK 2], «no hay problema».', original: 'En kêyî hay que explcar que no es lo mismo poder tener permiso que 能 (néng): poder / ser capaz de. [...] keyi estaria bien hacer hincapie en que est tanto "poder" para preguntas como respuesta como ... loksea, y expresiones sinonimss segun ctx sabes'}
   - id: g.yes-forms
     kind: group
     basis: set
     title: Formas de decir que sí
     explanation: 'El chino no tiene un «sí» único: se confirma según lo que se responde.'
     members:
-      - {ref: w.dui, cue: 'correcto, tienes razón'}
-      - {ref: e.shide, cue: 'sí, eso es (confirma un hecho)'}
-      - {ref: e.haode, cue: de acuerdo (aceptas algo)}
-      - {ref: e.meicuo, cue: '¡exacto!, más enfático que 对'}
-      - {ref: w.en, cue: 'mm, te sigo (mientras hablan)'}
+      - {ref: w.dui, cue: 'tienes razón'}
+      - {ref: e.shide, cue: 'confirma un hecho'}
+      - {ref: e.haode, cue: 'aceptas algo'}
+      - {ref: e.meicuo, cue: 'más enfático que 对'}
+      - {ref: w.en, cue: 'te sigo, mientras el otro habla'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
     comments: []
   - id: e.buhaoyisi
@@ -157,7 +154,6 @@ entries:
     meaning: {es: lo siento, en: "I'm sorry"}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Perdón de verdad, cuando has hecho algo mal: 对不起，我错了. Para una molestia pequeña basta 不好意思.'}
       - {kind: linguistic, private: false, date: '2026-10-06', text: '对得起 es estar a la altura con alguien; 对不起, no estarlo: te he fallado, perdón.'}
   - id: g.excuse
     kind: group
@@ -167,7 +163,7 @@ entries:
     members:
       - {ref: e.qingwen, cue: 'antes de preguntar algo: 请问，饭店在哪里？'}
       - {ref: e.buhaoyisi, cue: 'una molestia pequeña: llegar tarde, pasar, pedir algo'}
-      - {ref: w.duibuqi, cue: 'has hecho algo mal: lo siento'}
+      - {ref: w.duibuqi, cue: 'has hecho algo mal'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments: []
   - id: e.meiguanxi
@@ -230,9 +226,9 @@ entries:
     title: 'Ayudar'
     explanation: 'Tres formas de ayudar; al hablar, la corriente es 帮. 帮忙 es tan básico como 帮 (los dos, HSK 1); 帮助, un poco más formal.'
     members:
-      - {ref: w.bang, cue: 'ayudar a alguien: 你可以帮我吗？'}
-      - {ref: w.bangmang, cue: 'echar una mano, sin decir a quién'}
-      - {ref: w.bangzhu, cue: 'ayudar o la ayuda, más formal: 谢谢你的帮助'}
+      - {ref: w.bang, cue: 'con a quién detrás: 你可以帮我吗？'}
+      - {ref: w.bangmang, cue: 'sin decir a quién: no lleva nada detrás'}
+      - {ref: w.bangzhu, cue: 'también es nombre, y más formal: 谢谢你的帮助'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
   - id: e.nizhenbang
@@ -412,15 +408,15 @@ entries:
     meaning: {es: '¡exacto!, eso es', en: 'exactly'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 没 «no hay» + 错 «error»: «no hay error», ¡exacto! Más enfático que 对.'}
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 没 «no hay» + 错 «error»: «no hay error», ¡exacto!'}
   - id: g.can
     kind: group
     basis: set
     title: '会, 能 y 可以: tres «poder»'
     explanation: 'El español dice «poder» para los tres; el chino separa saber, ser capaz y tener permiso.'
     members:
-      - {ref: w.hui.can, cue: 'saber hacerlo, porque lo aprendiste: 我会说中文'}
-      - {ref: w.neng, cue: 'ser capaz, o que la situación lo permita: 你能说中文吗？'}
+      - {ref: w.hui.can, cue: 'porque lo aprendiste: 我会说中文'}
+      - {ref: w.neng, cue: 'por capacidad, o porque la situación lo permite: 你能说中文吗？'}
       - {ref: w.keyi, cue: 'tener permiso, estar bien: 可以坐这里吗？'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments: []

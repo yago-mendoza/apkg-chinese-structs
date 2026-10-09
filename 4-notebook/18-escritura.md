@@ -22,7 +22,7 @@
 - ✅🃏 讠 yán · palabra, hablar (forma de 言 a la izquierda) · Casi siempre trae la idea de hablar: 认识, 请, 谢谢, 说 shuō «decir». No confundir con 文 wén «escritura» de 中文.
 - ✅ 疒 nè · enfermedad (como componente) · Una cama con una persona tumbada: lo que lo lleva tiene que ver con la enfermedad, como 疼 «doler» y 瘦 «delgado».
 - 🟡🃏 青 qīng · verde azulado, el color de la hierba y del cielo · Como pieza, da el sonido qing: 请 qǐng «por favor», 清 qīng «claro», 晴 qíng «despejado» y 情 qíng «sentimiento». La otra pieza da el sentido: 讠 hablar, 氵 agua, 日 sol, 忄 corazón.
-- ✅🃏 字 zì [tsɯ˥˩] · carácter (hanzi) · _sustantivo_ · Un 字 es un carácter; un 词 es una palabra, de uno o más caracteres. 名字 «nombre» lleva este 字.
+- ✅🃏 字 zì [tsɯ˥˩] · carácter (hanzi) · _sustantivo_ · 名字 «nombre» lleva este 字.
 - ✅🃏 词 cí [tsʰɯ˧˥] · palabra · _sustantivo_
 - ✅🃏 汉字 hànzì [xan˥˩ tsɯ˥˩] · carácter chino · _nombre propio_ · 汉 «Han», la etnia y la lengua china + 字 «carácter».
 - ✅🃏 拼音 pīnyīn [pʰin˥ in˥] · pinyin · _sustantivo_ · 拼 «juntar» + 音 «sonido»: sonidos juntados, la escritura con letras.
@@ -53,36 +53,36 @@ Dos trazos en los tres; cambia cuál domina y si se tocan.
 
 A la izquierda se parecen: 木 tiene la raya vertical recta y dos patas; 扌, un gancho abajo y la raya de arriba cruzada.
 
-- 木 mù · árbol: vertical recta con dos patas, como en 机
-- 扌 shǒu · mano: vertical con gancho, como en 打
+- 木 mù · vertical recta con dos patas, como en 机
+- 扌 shǒu · vertical con gancho, como en 打
 
 ## 衤 y 礻
 
 Solo cambia un trazo: 衤 lleva dos puntos a la derecha; 礻, uno.
 
-- 衤 yī · dos puntos: ropa
-- 礻 shì · un punto: altar, espíritu
+- 衤 yī · dos puntos
+- 礻 shì · un punto
 
 ## 见 y 贝
 
 Arriba el mismo marco; abajo, piernas o patas.
 
-- 见 jiàn · piernas 儿 abajo: ver
-- 贝 bèi · dos patas cortas 八 abajo: concha, dinero
+- 见 jiàn · piernas 儿 abajo
+- 贝 bèi · dos patas cortas 八 abajo
 
 ## 门 y 户
 
 Dos puertas: 门 tiene dos hojas; 户, una sola con un punto encima.
 
-- 门 mén · dos hojas: puerta, mén
-- 户 hù · una hoja con un punto: hù, hogar, ventana
+- 门 mén · dos hojas
+- 户 hù · una hoja con un punto encima; en 窗户 «ventana»
 
 ## 字 y 词
 
 Carácter frente a palabra.
 
-- 字 zì · 字: un carácter (汉字)
-- 词 cí · 词: una palabra, de uno o más 字
+- 字 zì · 汉字
+- 词 cí · uno o más 字 juntos
 
 ## Frases
 

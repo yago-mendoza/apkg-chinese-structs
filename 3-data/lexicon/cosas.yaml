@@ -82,9 +82,9 @@ entries:
     title: 那 y 哪里
     explanation: Mismo carácter; la boca 口 lo convierte en pregunta.
     members:
-      - {ref: w.na.that, cue: 'sin boca: nà, eso'}
-      - {ref: w.na.which, cue: 'con boca: nǎ, ¿cuál?'}
-      - {ref: w.nali, cue: 'con boca: nǎ, ¿dónde? (哪里)'}
+      - {ref: w.na.that, cue: 'sin boca'}
+      - {ref: w.na.which, cue: 'con boca 口'}
+      - {ref: w.nali, cue: 'con boca, + 里 «lugar»'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
   - id: g.men-phonetic
@@ -93,9 +93,9 @@ entries:
     title: 门 da el sonido
     explanation: '门 mén presta su sonido: 们 men, 问 wèn y 闻 wén «oír, oler» [HSK 2]. Cambia el tono; la sílaba se queda.'
     members:
-      - {ref: w.men, cue: 'la puerta: mén, 2.º tono; palabra'}
-      - {ref: c.men.plural, cue: 'persona 亻 + 门: men, átono; ligada, plural'}
-      - {ref: w.wen, cue: 'boca 口 en la puerta: wèn, preguntar; palabra'}
+      - {ref: w.men, cue: 'sube; palabra suelta'}
+      - {ref: c.men.plural, cue: 'persona 亻 + 门; átono, va pegado'}
+      - {ref: w.wen, cue: 'boca 口 en la puerta; cae'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
   - id: w.xiaomao
@@ -178,8 +178,8 @@ entries:
     title: 入口 y 出口
     explanation: 'Los dos carteles: entrar y salir por la boca 口 de un lugar.'
     members:
-      - {ref: w.rukou, cue: entrada}
-      - {ref: w.chukou, cue: salida}
+      - {ref: w.rukou, cue: '入 «entrar» + 口'}
+      - {ref: w.chukou, cue: '出 «salir» + 口'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
   - id: w.ruanjian
@@ -220,8 +220,6 @@ entries:
     pinyin: néng
     meaning: {es: 'poder (ser capaz)', en: 'can, to be able to'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '能 es poder porque eres capaz o porque las circunstancias lo permiten: 你能说中文吗？ 可以 es poder porque está permitido o porque algo vale.'}
   - id: w.he.and
     use: say
     role: function
@@ -242,8 +240,6 @@ entries:
     pinyin: 'méi'
     meaning: {es: 'no (no pasó; no hay)', en: 'not (didn''t; there isn''t)'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '没 niega lo que pasó o lo que hay: 我没吃饭 «no he comido», 我没有钱. 不 niega lo que haces, quieres o eres: 我不吃 «no como».'}
   - id: w.guo.exp
     use: say
     role: function
@@ -293,8 +289,6 @@ entries:
     pinyin: 'bié'
     meaning: {es: 'no (hagas): prohibir', en: 'don''t'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Para pedir que alguien no haga algo: 别看我！ «¡no me mires!». 不 solo niega: 我不看 «no miro».'}
   - id: w.ting
     use: say
     role: content
@@ -362,8 +356,6 @@ entries:
     pinyin: 'dàxiàng'
     meaning: {es: 'elefante', en: 'elephant'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: 'No lo confundas con 大家 dàjiā «todos»: los dos empiezan por 大, y al oído solo cambia la segunda sílaba.', original: 'dajia, da xiang, todos vs elefante. cuidado estas cosas.'}
   - id: w.yinyue
     use: hear
     role: content
@@ -411,10 +403,10 @@ entries:
     title: 'Venir, ir, entrar y salir'
     explanation: 'Se eligen según hacia dónde va el movimiento respecto a quien habla.'
     members:
-      - {ref: w.lai, cue: 'hacia aquí: venir'}
-      - {ref: w.qu, cue: 'hacia allí: ir'}
-      - {ref: w.jin, cue: 'de fuera a dentro: entrar'}
-      - {ref: w.chuqu, cue: 'de dentro a fuera: salir'}
+      - {ref: w.lai, cue: 'hacia quien habla'}
+      - {ref: w.qu, cue: 'lejos de quien habla'}
+      - {ref: w.jin, cue: 'de fuera a dentro'}
+      - {ref: w.chuqu, cue: 'de dentro a fuera'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
   - id: g.neg
@@ -434,8 +426,8 @@ entries:
     title: '国 guó y 过 guo'
     explanation: '国 sube y es un nombre; 过 es átono y va pegado al verbo.'
     members:
-      - {ref: w.guo, cue: 'guó, sube: país'}
-      - {ref: w.guo.exp, cue: 'guo, átono tras el verbo: haber hecho'}
+      - {ref: w.guo, cue: 'sube'}
+      - {ref: w.guo.exp, cue: 'átono, pegado al verbo'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
   - id: w.shu.tree
@@ -447,7 +439,7 @@ entries:
     meaning: {es: árbol, en: tree}
     source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29', rescued: 004-2026-10-02-ser-nombres-y-describir}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-02', text: '这棵树很高 «este árbol es alto»: 棵 kē es el clasificador de los árboles. No confundir con 书 shū «libro»: suenan parecido, pero 树 es cuarto tono.'}
+      - {kind: linguistic, private: false, date: '2026-10-02', text: '这棵树很高 «este árbol es alto»: 棵 kē es el clasificador de los árboles.'}
   - id: w.long
     use: hear
     role: content
@@ -464,10 +456,10 @@ entries:
     title: '书 shū, 树 shù, 鼠 y 属 shǔ'
     explanation: 'Misma sílaba, distinto tono: 书 shū «libro» (alto y plano), 树 shù «árbol» (cae), y con tercer tono (baja y sube) 鼠 «rata» y 属 «ser de un signo», que suenan igual: 我属鼠.'
     members:
-      - {ref: w.shu, cue: 'shū, alto y plano: libro'}
-      - {ref: w.shu.tree, cue: 'shù, cae: árbol'}
-      - {ref: w.shu.mouse, cue: 'shǔ, baja y sube: rata (zodiaco)'}
-      - {ref: w.shu.belong, cue: 'shǔ, baja y sube: ser de un signo (我属马)'}
+      - {ref: w.shu, cue: 'alto y plano'}
+      - {ref: w.shu.tree, cue: 'cae'}
+      - {ref: w.shu.mouse, cue: 'baja y sube; animal del zodiaco'}
+      - {ref: w.shu.belong, cue: 'baja y sube; suena igual que 鼠: 我属马'}
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
     comments: []
   - id: g.na-dou
@@ -476,8 +468,8 @@ entries:
     title: '哪 y 都'
     explanation: 'Comparten 阝 a la derecha; la izquierda los separa.'
     members:
-      - {ref: w.na.which, cue: '哪 nǎ «cuál»: 口 boca a la izquierda, porque pregunta'}
-      - {ref: w.dou, cue: '都 dōu «todos»: 者 a la izquierda'}
+      - {ref: w.na.which, cue: '口 boca a la izquierda, porque pregunta'}
+      - {ref: w.dou, cue: '者 a la izquierda'}
     source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
     comments: []
   - id: g.bi-bi
@@ -486,8 +478,8 @@ entries:
     title: '比 y 笔: los dos bǐ'
     explanation: 'Suenan igual: la frase decide. 比 compara (他比我高); 笔 es el bolígrafo.'
     members:
-      - {ref: w.bi, cue: '比: comparar (A 比 B)'}
-      - {ref: w.bi.pen, cue: '笔: bolígrafo, lápiz'}
+      - {ref: w.bi, cue: 'A 比 B: 他比我高'}
+      - {ref: w.bi.pen, cue: 'un objeto: 这是我的笔'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
   - id: w.zuo.left
@@ -515,8 +507,8 @@ entries:
     title: '左 zuǒ y 坐 zuò'
     explanation: '左 baja y sube; 坐 cae.'
     members:
-      - {ref: w.zuo.left, cue: 'zuǒ, baja y sube: izquierda'}
-      - {ref: w.zuo.sit, cue: 'zuò, cae: sentarse'}
+      - {ref: w.zuo.left, cue: 'baja y sube'}
+      - {ref: w.zuo.sit, cue: 'cae'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
   - id: w.shi.try
@@ -529,7 +521,6 @@ entries:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: '我可以试一下吗？ «¿puedo probármelo?», en una tienda. 试试 y 试一下 son «probar un poco».'}
-      - {kind: note, private: false, date: '2026-10-08', text: 'Suena exactamente igual que 是 shì: solo el contexto los separa.'}
   - id: w.deng
     use: say
     role: content
@@ -680,9 +671,9 @@ entries:
     title: '是, 试 y 十: shì y shí'
     explanation: '是 y 试 suenan exactamente igual, shì con cuarto tono: solo el contexto los separa. 十 shí sube.'
     members:
-      - {ref: w.shi, cue: 'ser: 我是学生'}
-      - {ref: w.shi.try, cue: 'probar: 我可以试一下吗？'}
-      - {ref: w.num.shi, cue: 'shí, sube: diez'}
+      - {ref: w.shi, cue: '我是学生'}
+      - {ref: w.shi.try, cue: '我可以试一下吗？'}
+      - {ref: w.num.shi, cue: 'sube'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments: []
   - id: g.na-tones
@@ -691,8 +682,8 @@ entries:
     title: '拿 ná, 哪 nǎ y 那 nà'
     explanation: 'La misma sílaba, na; solo el tono los separa.'
     members:
-      - {ref: w.na.take, cue: 'ná, sube: coger'}
-      - {ref: w.na.which, cue: 'nǎ, baja y sube: ¿cuál?'}
-      - {ref: w.na.that, cue: 'nà, cae: eso, aquel'}
+      - {ref: w.na.take, cue: 'sube'}
+      - {ref: w.na.which, cue: 'baja y sube'}
+      - {ref: w.na.that, cue: 'cae'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-08'}
     comments: []

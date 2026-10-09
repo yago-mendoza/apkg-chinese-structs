@@ -204,9 +204,9 @@ entries:
     title: '大, 太 y 天'
     explanation: Tres veces la persona con los brazos abiertos; cambia lo que se le añade.
     members:
-      - {ref: w.da, cue: 'solo: grande'}
-      - {ref: w.tai, cue: 'un punto debajo: demasiado'}
-      - {ref: w.tian, cue: 'una raya encima: cielo, día'}
+      - {ref: w.da, cue: 'solo'}
+      - {ref: w.tai, cue: 'un punto debajo'}
+      - {ref: w.tian, cue: 'una raya encima'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
   - id: w.lei
@@ -274,8 +274,8 @@ entries:
     title: '矮 ǎi y 爱 ài'
     explanation: 'Solo cambia el tono: 矮 baja y sube, 爱 cae.'
     members:
-      - {ref: w.ai, cue: 'ǎi, baja y sube: bajo de estatura'}
-      - {ref: w.ai.love, cue: 'ài, cae: amar'}
+      - {ref: w.ai, cue: 'baja y sube'}
+      - {ref: w.ai.love, cue: 'cae'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
   - id: g.da-da
@@ -284,8 +284,8 @@ entries:
     title: '大 dà y 打 dǎ'
     explanation: 'Solo cambia el tono: 大 cae, 打 baja y sube.'
     members:
-      - {ref: w.da, cue: 'dà, cae: grande'}
-      - {ref: w.da.play, cue: 'dǎ, baja y sube: jugar (a la pelota), golpear'}
+      - {ref: w.da, cue: 'cae'}
+      - {ref: w.da.play, cue: 'baja y sube'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
   - id: g.ben-ben
@@ -294,8 +294,8 @@ entries:
     title: '本 běn / 笨 bèn'
     explanation: 'Casi iguales al oído: 本 běn (tercer tono) cuenta libros y 笨 bèn (cuarto tono) es «torpe». Además 本 da el sonido a 笨, que es 竹 sobre 本.'
     members:
-      - {ref: w.ben.book, cue: 'běn, baja y sube: clasificador de libros'}
-      - {ref: w.ben, cue: 'bèn, cae: torpe'}
+      - {ref: w.ben.book, cue: 'baja y sube'}
+      - {ref: w.ben, cue: 'cae'}
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
     comments: []
   - id: w.zhen
@@ -348,7 +348,7 @@ entries:
     meaning: {es: 'interesante, divertido', en: 'interesting, fun'}
     source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 有 «tener» + 趣 «gracia». Un poco más escrito que 有意思.'}
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 有 «tener» + 趣 «gracia».'}
       - {kind: teacher, private: false, date: '2026-10-08', text: 'En clase: 那本书真有趣！ «¡qué interesante es ese libro!».'}
   - id: w.youyisi
     use: say
@@ -378,7 +378,7 @@ entries:
     explanation: 'Dos formas de «interesante»; al hablar, la corriente es 有意思.'
     members:
       - {ref: w.youyisi, cue: 'lo más corriente al hablar: 中文很有意思'}
-      - {ref: w.youqu, cue: 'interesante, divertido; algo más escrito: 那本书真有趣！'}
+      - {ref: w.youqu, cue: 'algo más escrito: 那本书真有趣！'}
     source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
     comments: []
   - id: g.shou-shou
@@ -387,7 +387,7 @@ entries:
     title: '手 shǒu y 瘦 shòu'
     explanation: 'Solo cambia el tono: 手 baja y sube, 瘦 cae.'
     members:
-      - {ref: w.shou.hand, cue: 'shǒu, baja y sube: mano'}
-      - {ref: w.shou, cue: 'shòu, cae: delgado'}
+      - {ref: w.shou.hand, cue: 'baja y sube'}
+      - {ref: w.shou, cue: 'cae'}
     source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
     comments: []

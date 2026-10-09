@@ -19,7 +19,7 @@
 - ✅🃏 喜欢 xǐhuan [ɕi˧˩˧ xwan] · gustar · _verbo_ · 喜: un tambor sobre una boca que canta: alegría. · 欢 es ligada: aparece en 喜欢 y en 欢迎 huānyíng «bienvenido». 喜 también en 恭喜 gōngxǐ «¡enhorabuena!» [HSK 7], muy frecuente al hablar.
 - ✅🃏 爱 ài [aɪ˥˩] · amar, querer (a alguien) · _verbo_ · Una mano 爫 que cubre 冖 al amigo 友: amar.
 - ✅🃏 爱好 àihào [aɪ˥˩ xɑʊ˥˩] · afición, hobby · _sustantivo_ · 爱 «amar» + 好 hào «que gusta»: lo que te gusta hacer. Aquí 好 se lee hào, no hǎo.
-- ✅🃏 要 yào [jɑʊ˥˩] · querer (algo); hacer falta · _verbo_ · Unas manos que sujetan a una mujer por la cintura: desear. · El carácter antiguo dibujaba una figura con las manos en la cintura: 要 era «cintura», que después pasó a escribirse 腰 yāo [HSK 4]. · Además de «querer», 要 es «tener que» (我要工作 «tengo que trabajar») y «estar a punto de» (要下雨了 «va a llover»). Necesitar en sentido estricto es 需要. · No lo confundas con 有 yǒu «tener»: 要 yào cae (cuarto tono) y 有 yǒu baja y sube (tercero). Y se niegan distinto: 不要 «no quiero», 没有 «no tengo».
+- ✅🃏 要 yào [jɑʊ˥˩] · querer (algo); hacer falta · _verbo_ · Unas manos que sujetan a una mujer por la cintura: desear. · El carácter antiguo dibujaba una figura con las manos en la cintura: 要 era «cintura», que después pasó a escribirse 腰 yāo [HSK 4]. · Además de «querer», 要 es «tener que» (我要工作 «tengo que trabajar») y «estar a punto de» (要下雨了 «va a llover»). · Se niega distinto que 有: 不要 «no quiero», 没有 «no tengo».
 - ✅🃏 需要 xūyào [ɕy˥ jɑʊ˥˩] · necesitar · _verbo_ · 需要 es necesitar porque la situación lo impone; 要, querer o hacer falta. 我需要水 «necesito agua»; 我要水 «quiero agua». · 需: una persona bajo la lluvia 雨 que necesita resguardo.
 - ✅🃏 票 piào [pʰjɑʊ˥˩] · billete, entrada · _sustantivo_ · Familia: 车票 chēpiào «billete de tren o autobús», 机票 jīpiào «billete de avión», 门票 ménpiào «entrada» [HSK 1]; 发票 fāpiào «factura» [HSK 4]; 投票 tóupiào «votar» [HSK 6]. En 发票 va 发 fā «emitir» (la factura se emite); en 投票, 投 tóu «lanzar, meter» (el voto se mete en la urna). · Un papel ritual que se quemaba: de ahí «billete»; sus cenizas flotando dan 漂 piāo «flotar», que presta el sonido a 漂亮.
 - ✅🃏 机票 jīpiào [tɕi˥ pʰjɑʊ˥˩] · billete de avión · _sustantivo_ · 机 jī «máquina» es el mismo de 手机 «móvil» (máquina de mano) y 飞机 fēijī «avión» (máquina que vuela).
@@ -32,7 +32,7 @@
 - ✅🃏 书店 shūdiàn [ʂu˥ tjɛn˥˩] · librería · _sustantivo_
 - ✅🃏 店 diàn [tjɛn˥˩] · tienda, local · _sustantivo_ · 广 es un tejado con una pared, un edificio abierto, y 占 zhàn da el sonido. · Dentro del edificio 广, un espacio ocupado (占 también es «ocupar»): el local.
 - ✅🃏 钱 qián [tɕʰjɛn˧˥] · dinero · _sustantivo_ · 钅 «metal» a la izquierda: el dinero era de metal. · Va sin clasificador cuando es dinero en general (这是钱, 我没有钱); al contar, con 块: 十块钱.
-- ✅🃏 多少 duōshao [twɔ˥ ʂɑʊ] · cuánto, cuántos · _interrogativo_ · 多 «mucho» + 少 «poco»: ¿cuánto? Para cantidades abiertas; para pocas, 几.
+- ✅🃏 多少 duōshao [twɔ˥ ʂɑʊ] · cuánto, cuántos · _interrogativo_ · Palabra a palabra: 多 «mucho» + 少 «poco»: ¿cuánto?
 - ✅🃏 多少钱 duōshao qián [twɔ˥ ʂɑʊ tɕʰjɛn˧˥] · ¿cuánto cuesta? · _expresión_ · Palabra a palabra: 多少 «cuánto» + 钱 «dinero».
 - ✅🃏 块 kuài [kʰwaɪ˥˩] · yuan (al hablar) · _clasificador_ · 块 es como se dice 元 yuán [HSK 1] al hablar: 十块钱 «diez yuanes».
 - ✅🃏 想要 xiǎngyào [ɕjɑŋ˧˩˧ jɑʊ˥˩] · querer (tener algo), desear · _verbo_ · Entre 想 y 要: 我想要这个 «me gustaría este», más suave que 我要这个 «quiero este, dame este».
@@ -54,34 +54,34 @@
 
 Verbos que en español se cruzan. Cada uno pide un tipo de frase distinto.
 
-- 想 xiǎng · ganas de hacer algo: 我想喝水 (también «pensar»)
+- 想 xiǎng · ganas de hacer algo: 我想喝水
 - 要 yào · lo quiero, dame, tengo que: 我要水
 - 想要 xiǎngyào · me gustaría tenerlo: 我想要这个
-- 需要 xūyào · necesitar, hace falta: 我需要水
+- 需要 xūyào · necesidad real, más fuerte que 要: 我需要水
 - 喜欢 xǐhuan · me gusta, en general: 我喜欢咖啡
-- 爱 ài · amo: 我爱你
+- 爱 ài · a personas, con fuerza: 我爱你
 
 ## 店: los locales
 
 Lo que se vende + 店 «local». Igual 药店 yàodiàn «farmacia» [HSK 2], con 药 «medicina».
 
-- 商店 shāngdiàn · 商 comercio: la tienda
-- 饭店 fàndiàn · 饭 comida: el restaurante
-- 书店 shūdiàn · 书 libro: la librería
+- 商店 shāngdiàn · 商 comercio
+- 饭店 fàndiàn · 饭 comida
+- 书店 shūdiàn · 书 libro
 
 ## 喝 hē y 和 hé
 
 Solo cambia el tono: 喝 alto y plano, 和 sube.
 
-- 喝 hē · hē, alto y plano: beber
-- 和 hé · hé, sube: y, con
+- 喝 hē · alto y plano
+- 和 hé · sube
 
 ## 鞋 xié y 写 xiě
 
 Solo cambia el tono: 鞋 sube, 写 baja y sube.
 
-- 鞋 xié · xié, sube: zapato
-- 写 xiě · xiě, baja y sube: escribir
+- 鞋 xié · sube
+- 写 xiě · baja y sube
 
 ## Frases
 

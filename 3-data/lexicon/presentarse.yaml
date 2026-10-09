@@ -307,8 +307,6 @@ entries:
     pinyin: 'nǎ'
     meaning: {es: 'qué, cuál', en: 'which'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Delante de un nombre o de un clasificador: 哪国人 «de qué país». Con 里, 哪里 «dónde».'}
   - id: w.guo
     use: say
     role: content
@@ -329,7 +327,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Saber hacer algo aprendido: 我会说中文. «Saber un dato» es otra palabra, 知道 zhīdào [HSK 1].'}
-      - {kind: linguistic, private: false, date: '2026-10-01', text: 'También predice: 明天会下雨 «mañana lloverá». Ser capaz en este momento es 能; tener permiso, 可以.'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'También predice: 明天会下雨 «mañana lloverá».'}
   - id: w.xuexi
     use: say
     role: content
@@ -346,8 +344,8 @@ entries:
     title: '是 shì y 十 shí'
     explanation: 'Solo cambia el tono: 是 cae, 十 sube.'
     members:
-      - {ref: w.shi, cue: 'shì, cae: ser'}
-      - {ref: w.num.shi, cue: 'shí, sube: diez'}
+      - {ref: w.shi, cue: 'cae'}
+      - {ref: w.num.shi, cue: 'sube'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
   - id: g.question-words
@@ -356,15 +354,15 @@ entries:
     title: 'Palabras para preguntar'
     explanation: 'Van donde iría la respuesta, sin cambiar el orden de la frase.'
     members:
-      - {ref: w.shenme, cue: 'qué'}
-      - {ref: w.zenme, cue: 'cómo'}
-      - {ref: w.shei, cue: 'quién'}
-      - {ref: w.nali, cue: 'dónde'}
-      - {ref: w.ji, cue: 'cuántos (pocos)'}
-      - {ref: w.duoshao, cue: 'cuánto (abierto)'}
-      - {ref: w.weishenme, cue: 'por qué'}
-      - {ref: w.na.which, cue: 'cuál, qué (de un grupo), delante de un nombre'}
-      - {ref: w.zenmeyang, cue: 'qué tal: opinión o estado'}
+      - {ref: w.shenme, cue: 'una cosa, o el tipo de algo: 什么菜？'}
+      - {ref: w.zenme, cue: '+ verbo, la manera: 怎么说？'}
+      - {ref: w.shei, cue: 'qué persona: 他是谁？'}
+      - {ref: w.nali, cue: 'qué lugar: 你在哪里？'}
+      - {ref: w.ji, cue: 'se esperan pocos, con clasificador: 几个？'}
+      - {ref: w.duoshao, cue: 'abierto, y para precios: 多少钱？'}
+      - {ref: w.weishenme, cue: 'pide la causa: 你为什么学中文？'}
+      - {ref: w.na.which, cue: 'uno de un grupo, delante de un nombre: 哪国人？'}
+      - {ref: w.zenmeyang, cue: 'pide opinión o estado: 这个怎么样？'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments: []
   - id: w.chenglong
@@ -451,8 +449,8 @@ entries:
     title: '先生 y 学生'
     explanation: 'Los dos acaban en 生 átono; empiezan distinto.'
     members:
-      - {ref: w.xiansheng, cue: 'xiān: señor; 先 «antes», con primer tono'}
-      - {ref: w.xuesheng, cue: 'xué: estudiante; 学 «estudiar», que sube'}
+      - {ref: w.xiansheng, cue: '先 «antes», alto y plano'}
+      - {ref: w.xuesheng, cue: '学 «estudiar», sube'}
     source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
     comments: []
   - id: g.cai-cai
@@ -461,7 +459,7 @@ entries:
     title: '猜 cāi y 菜 cài'
     explanation: '猜 es alto y plano; 菜 cae.'
     members:
-      - {ref: w.cai.guess, cue: 'cāi, alto y plano: adivinar'}
-      - {ref: w.cai, cue: 'cài, cae: plato, verdura'}
+      - {ref: w.cai.guess, cue: 'alto y plano'}
+      - {ref: w.cai, cue: 'cae'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []

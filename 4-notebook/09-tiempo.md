@@ -34,7 +34,7 @@
 午 es el mediodía; 上 lo pone antes, 中 en el centro y 下 después.
 
 - 上午 shàngwǔ · 上 antes del mediodía
-- 中午 zhōngwǔ · 中 en el mediodía
+- 中午 zhōngwǔ · 中 en medio
 - 下午 xiàwǔ · 下 después del mediodía
 
 ## Partes del día

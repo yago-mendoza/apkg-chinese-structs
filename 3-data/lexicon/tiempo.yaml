@@ -42,7 +42,7 @@ entries:
     explanation: 午 es el mediodía; 上 lo pone antes, 中 en el centro y 下 después.
     members:
       - {ref: w.shangwu, cue: 上 antes del mediodía}
-      - {ref: w.zhongwu, cue: 中 en el mediodía}
+      - {ref: w.zhongwu, cue: 中 en medio}
       - {ref: w.xiawu, cue: 下 después del mediodía}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
