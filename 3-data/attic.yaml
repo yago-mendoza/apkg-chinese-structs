@@ -183,18 +183,6 @@ items:
     notes:
       - {text: 'Forma oficios que ejercen una acción: 记者 «periodista», 作者 «autor». No es el 师 de 老师. 或者 «o bien» no es de agente.'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-  - id: a.wang
-    snooze: 008-2026-10-08-pedir-ayuda-lugares-y-finales
-    snooze_reason: 'llegó un Wang (王阿姨, en clase), pero anki.py le daría el nivel de la lista para «rey», HSK 4, y como apellido es de nivel 1: entra cuando el nivel pueda fijarse por sentido (propuesta en el review)'
-    hanzi: 王
-    pinyin: wáng
-    meaning: {es: 'rey; Wang (apellido)'}
-    theme: presentarse
-    links: [姓王, 老王, 小王, 国王]
-    reason: 'HSK 4 como «rey», pero como apellido es de los más comunes: entra en cuanto aparezca un Wang.'
-    notes:
-      - {text: '玉 yù «jade» [HSK 4] es 王 con un punto.'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
 
   # ---------------------------------------------------------------- animales, cuerpo
   - id: a.pa
@@ -293,3 +281,152 @@ items:
     notes:
       - {text: '你帮我弄一下这个 «ayúdame un momento con esto»: más natural que 你帮我一下这个.'}
     source: {batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+
+  # ---------------------------------------------------------------- lote 009
+  - id: a.lijie
+    hanzi: 理解
+    pinyin: lǐjiě
+    meaning: {es: 'entender, comprender (a alguien)'}
+    theme: cortesia
+    links: [我理解, 懂, 明白]
+    reason: HSK 3, de tu lista de 16 frases de conversación (我理解, 你确定吗, 我同意, 好主意…), investigada por tu cuenta. Para «entiendo» ya tienes 明白; entra con su nivel o si sale en clase.
+    notes:
+      - {text: '我理解 «te entiendo»: comprender a alguien o sus razones, más que entender una frase (eso es 明白 o 懂).'}
+    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: a.queding
+    hanzi: 确定
+    pinyin: quèdìng
+    meaning: {es: seguro; asegurarse}
+    theme: cortesia
+    links: [你确定吗, 一定]
+    reason: HSK 3, de tu lista de 16 frases de conversación (我理解, 你确定吗, 我同意, 好主意…), investigada por tu cuenta.
+    notes:
+      - {text: '你确定吗？ «¿estás seguro?».'}
+    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: a.tongyi
+    hanzi: 同意
+    pinyin: tóngyì
+    meaning: {es: estar de acuerdo}
+    theme: cortesia
+    links: [我同意, 同学]
+    reason: HSK 3, de tu lista de 16 frases de conversación (我理解, 你确定吗, 我同意, 好主意…), investigada por tu cuenta.
+    notes:
+      - {text: 我同意 «estoy de acuerdo». Para contestar rápido ya tienes 对 y 好的.}
+    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: a.zhuyi
+    hanzi: 主意
+    pinyin: zhǔyi
+    meaning: {es: 'idea, plan'}
+    theme: cortesia
+    links: [好主意, 注意]
+    reason: HSK 3, de tu lista de 16 frases de conversación (我理解, 你确定吗, 我同意, 好主意…), investigada por tu cuenta. Entraría como 好主意 «¡buena idea!».
+    notes:
+      - {text: '好主意！ «¡buena idea!». No confundir con 注意 zhùyì «atención, cuidado», que suena casi igual.'}
+    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: a.daoqian
+    hanzi: 道歉
+    pinyin: dàoqiàn
+    meaning: {es: 'pedir perdón, disculparse'}
+    theme: cortesia
+    links: [对不起, 我道歉]
+    reason: HSK 6, de tu lista de 16 frases de conversación (我理解, 你确定吗, 我同意, 好主意…), investigada por tu cuenta. Para pedir perdón ya tienes 对不起 y 不好意思.
+    notes:
+      - {text: '我道歉 «pido disculpas» es más formal que 对不起. 道 aquí es «decir»: decir el 歉, la falta.'}
+    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: a.yuanliang
+    hanzi: 原谅
+    pinyin: yuánliàng
+    meaning: {es: perdonar}
+    theme: cortesia
+    links: [原谅我, 对不起]
+    reason: HSK 6, de tu lista de 16 frases de conversación (我理解, 你确定吗, 我同意, 好主意…), investigada por tu cuenta.
+    notes:
+      - {text: 原谅我 «perdóname».}
+    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: a.limian
+    hanzi: 里面
+    pinyin: lǐmiàn
+    meaning: {es: dentro}
+    theme: lugares
+    links: [外面, 上面, 面]
+    reason: HSK 3. Las posiciones con 面 entran juntas cuando lleguen en clase; dentro ya lo dices con 里 (房间里).
+    notes:
+      - {text: '面 «cara, lado» forma las posiciones: 上面 «encima», 下面 «debajo», 里面 «dentro», 外面 «fuera», 前面 «delante», 后面 «detrás». 我在里面 «estoy dentro».'}
+    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: a.waimian
+    hanzi: 外面
+    pinyin: wàimiàn
+    meaning: {es: fuera}
+    theme: lugares
+    links: [里面, 面]
+    reason: HSK 3; con las demás posiciones con 面.
+    notes:
+      - {text: '你在外面吗？ «¿estás fuera?».'}
+    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: a.shangmian
+    hanzi: 上面
+    pinyin: shàngmiàn
+    meaning: {es: 'encima, arriba'}
+    theme: lugares
+    links: [下面, 面]
+    reason: HSK 3; con las demás posiciones con 面.
+    notes: []
+    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: a.xiamian
+    hanzi: 下面
+    pinyin: xiàmiàn
+    meaning: {es: 'debajo, abajo'}
+    theme: lugares
+    links: [上面, 面]
+    reason: HSK 3; con las demás posiciones con 面.
+    notes:
+      - {text: 猫在桌子下面 «el gato está debajo de la mesa».}
+    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: a.qianmian
+    hanzi: 前面
+    pinyin: qiánmiàn
+    meaning: {es: delante}
+    theme: lugares
+    links: [后面, 面]
+    reason: HSK 3; con las demás posiciones con 面.
+    notes: []
+    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: a.houmian
+    hanzi: 后面
+    pinyin: hòumiàn
+    meaning: {es: detrás}
+    theme: lugares
+    links: [前面, 面]
+    reason: HSK 3; con las demás posiciones con 面.
+    notes: []
+    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: a.lian
+    hanzi: 脸
+    pinyin: liǎn
+    meaning: {es: cara}
+    theme: describir
+    links: [脚, 头, 眼睛]
+    reason: HSK 2; las partes del cuerpo entrarán juntas.
+    notes:
+      - {text: '月 a la izquierda es «carne»: parte del cuerpo. Para recordarlo (no es su origen): a la derecha, 人 arriba es el pelo, los dos puntos los ojos y la raya de abajo la boca.'}
+    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: a.jiao
+    hanzi: 脚
+    pinyin: jiǎo
+    meaning: {es: pie}
+    theme: describir
+    links: [脸, 腿, 头]
+    reason: HSK 2; con las demás partes del cuerpo.
+    notes:
+      - {text: '月 «carne» + 却, que lleva 去 «irse»: el pie que se va.'}
+    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: a.jing
+    hanzi: 井
+    pinyin: jǐng
+    meaning: {es: pozo}
+    theme: escritura
+    links: [水井, 进]
+    reason: HSK 6; de momento basta saber que da el sonido a 进 jìn.
+    notes:
+      - {text: 'Parece un pozo visto desde arriba, con cuatro bordes que se cruzan. Es la pieza que da el sonido a 进.'}
+    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}

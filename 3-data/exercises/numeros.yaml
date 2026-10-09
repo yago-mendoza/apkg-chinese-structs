@@ -701,16 +701,6 @@ exercises:
     prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
     answer: {typed: '23', hanzi: 没有, pinyin: méiyǒu, meaning: no tener; no haber}
     comments: []
-  - id: x.nuance.age-questions
-    added: 2026-10-06
-    lang: es
-    type: nuance
-    targets: [w.duoda, w.ji, w.nianji]
-    context: [e.ningaoshou]
-    skills: [comprehension, discrimination]
-    prompt: {text: '你多大？, 你几岁？, 您多大年纪了？ y 您高寿？: ¿a quién se le pregunta cada una?'}
-    answer: {meaning: '你多大？ a alguien de tu edad. 你几岁？ a un niño (menos de diez años: 几 espera un número pequeño). 您多大年纪了？ a una persona mayor o de respeto. 您高寿？ solo a mayores de 70: a un niño sonaría absurdo.'}
-    comments: []
   - id: x.nuance.er-liang
     added: 2026-10-06
     lang: es
@@ -1825,7 +1815,7 @@ exercises:
     targets: [w.ci, w.bian]
     skills: [comprehension, discrimination]
     prompt: {text: '次 y 遍: ¿cuál cuenta las veces que haces algo entero, de principio a fin?'}
-    answer: {meaning: '遍: 这本书我看了两遍 «me he leído este libro dos veces, entero»; 再说一遍 «dilo otra vez». 次 cuenta ocasiones: 他来过两次 «ha venido dos veces»; ir a un sitio siempre es 次. Y 说一遍 es decirlo entero; 说一下, comentarlo un momento.'}
+    answer: {meaning: '遍: algo entero, de principio a fin (再说一遍 «dilo otra vez»). 次: ocasiones (他来过两次 «ha venido dos veces»).'}
     comments: []
   - id: x.nuance.yi-shi
     added: 2026-10-08
@@ -1853,4 +1843,60 @@ exercises:
     skills: [comprehension, discrimination]
     prompt: {text: '岁, 对, 六 y 九: ¿cuáles se escriben -ui y cuáles -iu, y cómo suena cada final?'}
     answer: {meaning: 'ui abrevia uei: 岁 suì y 对 duì suenan casi «suei», «duei». iu abrevia iou: 六 liù y 九 jiǔ suenan casi «liou», «jiou». El tono va sobre la segunda letra.'}
+    comments: []
+  - id: x.cloze.meiyou.water
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.wo-meiyou-shui
+    gap: w.meiyou
+    targets: [w.meiyou]
+    context: [w.wo, w.shui]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se niega 有? «No tengo agua.»'}
+    answer: {typed: mei2 you3, hanzi: 没有, pinyin: méiyǒu, meaning: '有 se niega siempre con 没: 没有, nunca 不有.'}
+    comments: []
+  - id: x.cloze.you.cats
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.wo-you-shijian
+    gap: w.you.have
+    targets: [w.you.have]
+    context: [w.wo, w.shijian]
+    skills: [production, pinyin]
+    prompt: {text: '¿要 o 有? «Tengo tiempo.»'}
+    answer: {typed: you3, hanzi: 有, pinyin: yǒu, meaning: '有 yǒu, baja y sube: tener. 要 yào, que cae, es querer.'}
+    comments: []
+  - id: x.contrast.num.si
+    added: 2026-10-10
+    lang: es
+    type: contrast
+    group: g.xi-si
+    targets: [w.num.si]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es sì, «cuatro»?'}
+    answer: {hanzi: 四, pinyin: sì, meaning: cuatro}
+    comments: []
+  - id: x.listen.wo-you-shijian
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-you-shijian
+    targets: [s.wo-you-shijian]
+    context: [w.wo, w.you.have, w.shijian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo tiempo.}
+    comments: []
+  - id: x.produce.wo-you-shijian
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.wo-you-shijian
+    targets: [s.wo-you-shijian]
+    context: [w.wo, w.you.have, w.shijian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo tiempo.»'}
+    answer: {meaning: Tengo tiempo.}
     comments: []

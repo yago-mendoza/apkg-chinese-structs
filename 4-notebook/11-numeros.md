@@ -190,3 +190,4 @@ Solo cambia el tono: 次 cae, 词 sube.
 - ✅🃏 我要一张纸。 · wǒ yào yì zhāng zhǐ · Quiero una hoja de papel.
 - ✅🃏 他来过两次。 · tā lái guo liǎng cì · Ha venido dos veces.
 - ✅🃏 这本书我看了两遍。 · zhè běn shū wǒ kàn le liǎng biàn · Este libro lo he leído dos veces, entero.
+- ✅🃏 我有时间。 · wǒ yǒu shíjiān · Tengo tiempo.

@@ -13,7 +13,7 @@
 - ✅🃏 大家好 dàjiā hǎo [ta˥˩ tɕja˥ xɑʊ˧˩˧] · hola a todos · _expresión_ · Palabra a palabra: 大家 «todos» + 好 «bien». · Algo más formal que 你们好: sirve para abrir cuando hablas ante un grupo.
 - ✅🃏 老师好 lǎoshī hǎo [lɑʊ˧˩˧ ʂɨ˥ xɑʊ˧˩˧] · hola, profe · _expresión_ · Palabra a palabra: 老师 «profesora» + 好 «bien»: el cargo en lugar del nombre.
 - ✅🃏 欢迎 huānyíng [xwan˥ iŋ˧˥] · bienvenido; dar la bienvenida · _verbo_ · 迎 es salir al encuentro de alguien con una sonrisa; con 欢 «alegría»: recibir con alegría.
-- ✅🃏 怎么样 zěnmeyàng [tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal?; ¿cómo? · _interrogativo_
+- ✅🃏 怎么样 zěnmeyàng [tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal?; ¿cómo? · _interrogativo_ · Es el «¿qué tal?» chino; lo de delante dice de qué: 你怎么样？ «¿qué tal estás?», 这个怎么样？ «¿qué te parece esto?», 我们明天去，怎么样？ «¿qué tal si vamos mañana?».
 - ✅🃏 晚安 wǎn'ān [wan˧˩˧ an˥] · buenas noches (al irse a dormir) · _expresión_ · Palabra a palabra: 晚 «noche» + 安 «paz»: «noche tranquila». · Solo para despedirse antes de dormir. Al llegar por la noche se dice 晚上好 wǎnshang hǎo.
 - ✅🃏 回来 huílai [xweɪ˧˥ laɪ] · volver (aquí) · _verbo_ · 回 «volver» + 来 «hacia aquí». 你回来了！ es un saludo al ver llegar a alguien de casa o del trabajo.
 - ✅🃏 啊 a [a] · partícula que suaviza o anima · _partícula_ · Al final de una pregunta o exclamación la hace más cálida: 去哪里啊？ suena más cercano que 去哪里？.
@@ -35,6 +35,8 @@
 - ✅🃏 生日快乐 shēngrì kuàilè [ʂɤŋ˥ ʐɨ˥˩ kʰwaɪ˥˩ lɤ˥˩] · ¡feliz cumpleaños! · _expresión_ · Palabra a palabra: 生日 «cumpleaños» + 快乐 «feliz»: «cumpleaños feliz».
 - ✅🃏 礼物 lǐwù [li˧˩˧ u˥˩] · regalo · _sustantivo_ · 谢谢你的礼物！ «¡gracias por tu regalo!».
 - ✅🃏 恭喜 gōngxǐ [kʊŋ˥ ɕi˧˩˧] · ¡enhorabuena! · _expresión_ · Palabra a palabra: 恭 «respetuoso» + 喜 «alegría», el mismo de 喜欢. · Se oye mucho: 恭喜发财 en el Año Nuevo chino. En la lista es de nivel 7.
+- ✅🃏 怎么了 zěnme le [tsən˧˩˧ mɤ lɤ] · ¿qué pasa?, ¿qué te pasa? · _expresión_ · Palabra a palabra: 怎么 «cómo» + 了, que marca que algo ha cambiado: «¿qué ha pasado?».
+- 🟡🃏 近 jìn [tɕin˥˩] · cerca · _adjetivo_
 
 ## Saludos con 好
 
@@ -67,6 +69,21 @@ Uno cierra y otro abre, y al oído se parecen: zà-jià frente a dà-jiā.
 - 再见 zàijiàn · al irte: z (como ts sin aire), dos cuartos tonos que caen
 - 大家好 dàjiā hǎo · al empezar: d, cuarto, primero y tercero
 
+## 进, 近 y 今
+
+进 y 近 suenan igual, jìn; 今 es jīn, plano. Los separa la pieza y la palabra en que salen.
+
+- 进 jìn · 辶 con 井 dentro: 请进
+- 近 jìn · 辶 con 斤 dentro: 最近
+- 今 jīn · sin 辶, tono plano: 今天
+
+## 最近 y 再见
+
+Dos sílabas que caen y empiezan por z: cambian las vocales.
+
+- 最近 zuìjìn · zuì, con u: para preguntar cómo va
+- 再见 zàijiàn · zài, con a, y jiàn con a: para irte
+
 ## Frases
 
 - ✅🃏 你好吗？ · nǐ hǎo ma · ¿Qué tal estás?
@@ -89,3 +106,7 @@ Uno cierra y otro abre, y al oído se parecen: zà-jià frente a dà-jiā.
 - ✅🃏 早上好，老师！ · zǎoshang hǎo lǎoshī · ¡Buenos días, profe!
 - ✅🃏 我早上喝茶。 · wǒ zǎoshang hē chá · Por la mañana tomo té.
 - ✅🃏 谢谢你的礼物！ · xièxie nǐ de lǐwù · ¡Gracias por tu regalo!
+- ✅🃏 我们明天去，怎么样？ · wǒmen míngtiān qù zěnmeyàng · ¿Qué tal si vamos mañana?
+- ✅🃏 欢迎回来！ · huānyíng huílai · ¡Bienvenido de nuevo!
+- ✅🃏 你还在吗？ · nǐ hái zài ma · ¿Sigues ahí?
+- ✅🃏 你回来了！我回来了。今天好冷！ · nǐ huílai le wǒ huílai le jīntiān hǎo lěng · —¡Ya has vuelto! —Ya estoy aquí. ¡Qué frío hace hoy!

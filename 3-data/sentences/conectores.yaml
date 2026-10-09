@@ -89,3 +89,12 @@ sentences:
       - {text: 。}
     translation: {es: 'Como mientras miro el móvil.', en: 'I look at my phone while I eat.'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.mingtian-zai-shuo
+    use: hear
+    segments:
+      - {text: 明天, ref: w.mingtian, pinyin: míngtiān}
+      - {text: 再, ref: w.zai.again, pinyin: zài}
+      - {text: 说, ref: w.shuo, pinyin: shuō}
+      - {text: 。}
+    translation: {es: Ya lo hablamos mañana., en: Let's talk about it tomorrow.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}

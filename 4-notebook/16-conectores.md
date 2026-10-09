@@ -38,3 +38,4 @@ Suenan igual, con el mismo cuarto tono; la frase decide.
 - ✅🃏 你喜欢就买吧。 · nǐ xǐhuan jiù mǎi ba · Si te gusta, cómpralo.
 - ✅🃏 我明天再来。 · wǒ míngtiān zài lái · Vuelvo mañana.
 - ✅🃏 我一边吃饭，一边看手机。 · wǒ yìbiān chīfàn yìbiān kàn shǒujī · Como mientras miro el móvil.
+- ✅🃏 明天再说。 · míngtiān zài shuō · Ya lo hablamos mañana.

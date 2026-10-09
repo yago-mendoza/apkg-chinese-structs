@@ -615,3 +615,191 @@ exercises:
     question: {es: '¿Dónde está ella, y cómo va hasta allí quien habla?'}
     answer: {meaning: 'Ella está en el aeropuerto; quien habla va en metro y se despide hasta mañana.'}
     comments: []
+  - id: x.cloze.hui.return
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.wo-hui-hui-jia
+    gap: w.hui.return
+    targets: [w.hui.return]
+    context: [w.wo, w.hui.can, w.jia]
+    skills: [production, pinyin]
+    prompt: {text: '¿huì o huí? «Volveré a casa.»'}
+    answer: {typed: hui2, hanzi: 回, pinyin: huí, meaning: '回 huí, sube: volver. El 会 huì de delante, que cae, dice que pasará.'}
+    comments: []
+  - id: x.contrast.hui.return
+    added: 2026-10-10
+    lang: es
+    type: contrast
+    group: g.hui-hui
+    targets: [w.hui.return]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 回, pinyin: huí, meaning: volver (a un sitio)}
+    comments: []
+  - id: x.dictation.hui.return
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [w.hui.return]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hui2, hanzi: 回, pinyin: huí, meaning: volver (a un sitio)}
+    comments: []
+  - id: x.read.hui.return
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [w.hui.return]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 回}
+    answer: {hanzi: 回, pinyin: huí, meaning: volver (a un sitio)}
+    comments: []
+  - id: x.dictation.chu
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [w.chu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chu1, hanzi: 出, pinyin: chū, meaning: salir}
+    comments: []
+  - id: x.read.chu
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [w.chu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 出}
+    answer: {hanzi: 出, pinyin: chū, meaning: salir}
+    comments: []
+  - id: x.dictation.kaiche
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [w.kaiche]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kai1 che1, hanzi: 开车, pinyin: kāichē, meaning: conducir}
+    comments: []
+  - id: x.read.kaiche
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [w.kaiche]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 开车}
+    answer: {hanzi: 开车, pinyin: kāichē, meaning: conducir}
+    comments: []
+  - id: x.dictation.pangbian
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [w.pangbian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: pang2 bian1, hanzi: 旁边, pinyin: pángbiān, meaning: al lado}
+    comments: []
+  - id: x.read.pangbian
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [w.pangbian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 旁边}
+    answer: {hanzi: 旁边, pinyin: pángbiān, meaning: al lado}
+    comments: []
+  - id: x.contrast.xi.west
+    added: 2026-10-10
+    lang: es
+    type: contrast
+    group: g.xi-si
+    targets: [w.xi.west]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es xī, «oeste»?'}
+    answer: {hanzi: 西, pinyin: xī, meaning: oeste}
+    comments: []
+  - id: x.read.xi.west
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [w.xi.west]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 西}
+    answer: {hanzi: 西, pinyin: xī, meaning: oeste}
+    comments: []
+  - id: x.listen.wo-hui-hui-jia
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-hui-hui-jia
+    targets: [s.wo-hui-hui-jia]
+    context: [w.wo, w.hui.can, w.hui.return, w.jia]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Volveré a casa.}
+    comments: []
+  - id: x.produce.wo-hui-hui-jia
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.wo-hui-hui-jia
+    targets: [s.wo-hui-hui-jia]
+    context: [w.wo, w.hui.can, w.hui.return, w.jia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Volveré a casa.»'}
+    answer: {meaning: Volveré a casa.}
+    comments: []
+  - id: x.listen.wo-hui-huilai
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-hui-huilai
+    targets: [s.wo-hui-huilai]
+    context: [w.wo, w.hui.can, w.huilai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Volveré.}
+    comments: []
+  - id: x.listen.wo-kaiche-qu
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-kaiche-qu
+    targets: [s.wo-kaiche-qu]
+    context: [w.wo, w.kaiche, w.qu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Voy en coche (conduzco yo).}
+    comments: []
+  - id: x.listen.ta-zai-wo-pangbian
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.ta-zai-wo-pangbian
+    targets: [s.ta-zai-wo-pangbian]
+    context: [w.ta.he, w.zai.at, w.wo, w.pangbian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Está a mi lado.}
+    comments: []
+  - id: x.listen.ta-chuqu-le
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.ta-chuqu-le
+    targets: [s.ta-chuqu-le]
+    context: [w.ta.he, w.chuqu, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ha salido.}
+    comments: []
+  - id: x.charsound.bian
+    added: 2026-10-10
+    lang: es
+    type: charsound
+    targets: [w.pangbian, w.yibian]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 边}
+    answer: {typed: bian1, hanzi: 边, pinyin: biān, meaning: 'Sale en 旁边 pángbiān «al lado», 一边 yībiān «mientras (一边…一边…)».'}
+    comments: []

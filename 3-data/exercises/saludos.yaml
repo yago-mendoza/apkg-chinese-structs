@@ -612,16 +612,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Nos vemos por la tarde, ¿vale?»'}
     answer: {meaning: 'Nos vemos por la tarde, ¿vale?'}
     comments: []
-  - id: x.nuance.greetings
-    added: 2026-10-01
-    lang: es
-    type: nuance
-    targets: [e.nihao]
-    context: [w.huilai]
-    skills: [comprehension, discrimination]
-    prompt: {text: '你好, 你好吗 y 你回来了: ¿cuándo cada uno?'}
-    answer: {meaning: '你好 «hola»: con desconocidos o al conocer a alguien; con amigos suena distante. 你好吗？ «¿cómo estás?»: correcto pero de libro; para interesarte de verdad, 最近怎么样？. 你回来了！ «¡ya has vuelto!»: saludo de casa, al ver llegar a alguien. Con quien ya conoces se saluda nombrando la situación: 早！ por la mañana, 去哪里啊？ si va a algún sitio, 吃饭了吗？ a la hora de comer.'}
-    comments: []
   - id: x.comprehension.saludo-y-quedada
     added: 2026-10-02
     lang: es
@@ -663,25 +653,6 @@ exercises:
     refs: []
     prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
     answer: {typed: '23', hanzi: 您好, pinyin: nín hǎo, meaning: hola (con respeto)}
-    comments: []
-  - id: x.nuance.how-are-you
-    added: 2026-10-05
-    lang: es
-    type: nuance
-    targets: [e.zuijinzenmeyang, w.zenmeyang]
-    context: [e.nihaoma, e.nihaihaoma, e.chifanlema, e.zuijinmangma]
-    skills: [comprehension, discrimination]
-    prompt: {text: '你好吗, 你怎么样, 最近怎么样, 你还好吗, 吃饭了吗 y 最近忙吗: ¿cuándo cada uno?'}
-    answer: {meaning: '最近怎么样？ «¿qué tal últimamente?»: la más versátil, para cualquiera que conoces. 你怎么样？ «¿y tú qué tal?»: se entiende, pero suelto suena algo directo; va bien después de contar lo tuyo. 你好吗？ «¿cómo estás?»: correcto, de libro. 你还好吗？ «¿estás bien?»: solo si algo ha pasado; sin motivo, alarma. 吃饭了吗？ «¿has comido?»: saludo de vecinos y familia, no una invitación; se contesta 吃了，你呢？. 最近忙吗？ «¿mucho lío?»: interés por algo concreto, muy natural.'}
-    comments: []
-  - id: x.nuance.zaijian-dajiahao
-    added: 2026-10-05
-    lang: es
-    type: nuance
-    targets: [w.zaijian, e.dajiahao]
-    skills: [comprehension, discrimination]
-    prompt: {text: '再见 y 大家好: ¿cuál es para llegar y cuál para irte, y en qué se distinguen al oído?'}
-    answer: {meaning: '大家好 «hola a todos» abre: al empezar a hablar ante un grupo. 再见 «adiós» cierra: al irte. Al oído: 再见 empieza por z (una ts sin aire) y son dos cuartos tonos que caen; 大家好 empieza por d y son tres sílabas, cuarto, primero y tercero.'}
     comments: []
   - id: x.contrast.zaijian
     added: 2026-10-05
@@ -1706,4 +1677,242 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Situación. Es el cumpleaños de una amiga y te la encuentras por la mañana. ¿Qué le dices?'}
     answer: {hanzi: '生日快乐！', pinyin: 'shēngrì kuàilè', meaning: '¡feliz cumpleaños!'}
+    comments: []
+  - id: x.cloze.zenmeyang
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.women-mingtian-qu-zenmeyang
+    gap: w.zenmeyang
+    targets: [w.zenmeyang]
+    context: [w.women, w.mingtian, w.qu]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa: «¿Qué tal si vamos mañana?»'}
+    answer: {typed: zen3 me5 yang4, hanzi: 怎么样, pinyin: zěnmeyàng, meaning: 怎么样 al final propone y pide opinión.}
+    comments: []
+  - id: x.situation.nihao-shop
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [e.nihao]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Entras en una tienda y saludas a la dependienta, a la que no conoces.'}
+    answer: {hanzi: 你好, pinyin: nǐ hǎo, meaning: hola}
+    comments: []
+  - id: x.situation.chifanlema
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [e.chifanlema]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. A mediodía te cruzas con tu vecina, que vuelve de la compra. Salúdala como lo haría un vecino chino.'}
+    answer: {hanzi: 吃饭了吗, pinyin: chīfàn le ma, meaning: '¿has comido? (un saludo, no una invitación)'}
+    comments: []
+  - id: x.situation.qu-nali-a
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    sentence: s.qu-nali-a
+    targets: [s.qu-nali-a]
+    skills: [production, speaking]
+    prompt: {text: Situación. Ves a un conocido que sale de casa con prisa. Salúdalo preguntándole adónde va.}
+    answer: {meaning: '¿adónde vas?'}
+    comments: []
+  - id: x.situation.zuijin-zenmeyang
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [e.zuijinzenmeyang]
+    skills: [production, speaking]
+    prompt: {text: Situación. Te encuentras con un amigo al que no ves desde hace semanas. Pregúntale qué tal le va últimamente.}
+    answer: {hanzi: 最近怎么样, pinyin: zuìjìn zěnmeyàng, meaning: '¿qué tal últimamente?'}
+    comments: []
+  - id: x.situation.zuijin-mangma
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [e.zuijinmangma]
+    skills: [production, speaking]
+    prompt: {text: Situación. Una compañera lleva días con mucho trabajo. Pregúntale si anda liada estos días.}
+    answer: {hanzi: 最近忙吗, pinyin: zuìjìn máng ma, meaning: '¿estás liada estos días?'}
+    comments: []
+  - id: x.situation.ni-ne
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    sentence: s.wo-hen-hao-ni-ne
+    targets: [s.wo-hen-hao-ni-ne]
+    skills: [production, speaking]
+    prompt: {text: Situación. Te preguntan 你好吗？. Contesta que bien y devuélvele la pregunta.}
+    answer: {meaning: 'estoy bien, ¿y tú?'}
+    comments: []
+  - id: x.situation.mingtian-zenmeyang
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    sentence: s.women-mingtian-qu-zenmeyang
+    targets: [s.women-mingtian-qu-zenmeyang]
+    skills: [production, speaking]
+    prompt: {text: Situación. Propones a un amigo ir juntos mañana. Pregúntale qué le parece.}
+    answer: {meaning: '¿qué tal si vamos mañana?'}
+    comments: []
+  - id: x.situation.zenmele
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [e.zenmele]
+    skills: [production, speaking]
+    prompt: {text: Situación. Tu amiga pone mala cara de repente. Pregúntale qué le pasa.}
+    answer: {hanzi: 怎么了, pinyin: zěnme le, meaning: '¿qué te pasa?'}
+    comments: []
+  - id: x.situation.huanying-huilai
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    sentence: s.huanying-huilai
+    targets: [s.huanying-huilai]
+    skills: [production, speaking]
+    prompt: {text: Situación. Tu amiga vuelve de un viaje. Dale la bienvenida.}
+    answer: {meaning: ¡bienvenida de nuevo!}
+    comments: []
+  - id: x.contrast.zuijin
+    added: 2026-10-10
+    lang: es
+    type: contrast
+    group: g.zuijin-zaijian
+    targets: [w.zuijin]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 最近, pinyin: zuìjìn, meaning: 'últimamente, estos días'}
+    comments: []
+  - id: x.dictation.zenmele
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [e.zenmele]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zen3 me5 le5, hanzi: 怎么了, pinyin: zěnme le, meaning: '¿qué pasa?, ¿qué te pasa?'}
+    comments: []
+  - id: x.produce.zenmele
+    added: 2026-10-10
+    lang: es
+    type: produce
+    targets: [e.zenmele]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¿qué pasa?, ¿qué te pasa?»? Escribe el pinyin.'}
+    answer: {typed: zen3 me5 le5, hanzi: 怎么了, pinyin: zěnme le, meaning: '¿qué pasa?, ¿qué te pasa?'}
+    comments: []
+  - id: x.read.zenmele
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [e.zenmele]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 怎么了}
+    answer: {hanzi: 怎么了, pinyin: zěnme le, meaning: '¿qué pasa?, ¿qué te pasa?'}
+    comments: []
+  - id: x.tones.zenmele
+    added: 2026-10-10
+    lang: es
+    type: tones
+    targets: [e.zenmele]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 怎么了, pinyin: zen me le}
+    answer: {typed: '355', hanzi: 怎么了, pinyin: zěnme le, meaning: '¿qué pasa?, ¿qué te pasa?'}
+    comments: []
+  - id: x.contrast.jin.near
+    added: 2026-10-10
+    lang: es
+    type: contrast
+    group: g.jin-jin
+    targets: [w.jin.near]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es jìn, «cerca»?'}
+    answer: {hanzi: 近, pinyin: jìn, meaning: cerca}
+    comments: []
+  - id: x.read.jin.near
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [w.jin.near]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 近}
+    answer: {hanzi: 近, pinyin: jìn, meaning: cerca}
+    comments: []
+  - id: x.listen.women-mingtian-qu-zenmeyang
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.women-mingtian-qu-zenmeyang
+    targets: [s.women-mingtian-qu-zenmeyang]
+    context: [w.women, w.mingtian, w.qu, w.zenmeyang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Qué tal si vamos mañana?'}
+    comments: []
+  - id: x.produce.women-mingtian-qu-zenmeyang
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.women-mingtian-qu-zenmeyang
+    targets: [s.women-mingtian-qu-zenmeyang]
+    context: [w.women, w.mingtian, w.qu, w.zenmeyang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué tal si vamos mañana?»'}
+    answer: {meaning: '¿Qué tal si vamos mañana?'}
+    comments: []
+  - id: x.listen.huanying-huilai
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.huanying-huilai
+    targets: [s.huanying-huilai]
+    context: [w.huanying, w.huilai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Bienvenido de nuevo!}
+    comments: []
+  - id: x.produce.huanying-huilai
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.huanying-huilai
+    targets: [s.huanying-huilai]
+    context: [w.huanying, w.huilai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Bienvenido de nuevo!»'}
+    answer: {meaning: ¡Bienvenido de nuevo!}
+    comments: []
+  - id: x.listen.ni-hai-zai-ma
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.ni-hai-zai-ma
+    targets: [s.ni-hai-zai-ma]
+    context: [w.ni, w.hai.still, w.zai.at, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Sigues ahí?'}
+    comments: []
+  - id: x.listen.dlg-huilai
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.dlg-huilai
+    targets: [s.dlg-huilai]
+    context: [w.ni, w.huilai, w.le, w.wo, w.jintian, w.hao, w.leng]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: —¡Ya has vuelto! —Ya estoy aquí. ¡Qué frío hace hoy!}
+    comments: []
+  - id: x.nuance.zaoshang-mingtian
+    added: '2026-10-10'
+    lang: es
+    type: nuance
+    targets: [w.zaoshang, w.mingtian]
+    skills: [comprehension]
+    prompt: {text: '早上 y 明天: los dos se traducen «mañana». ¿Cuál es cada uno?'}
+    answer: {meaning: '早上: la mañana, temprano (早上好). 明天: el día de mañana (明天见). Juntos, 明天早上: mañana por la mañana.'}
     comments: []

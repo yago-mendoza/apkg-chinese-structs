@@ -296,3 +296,13 @@ sentences:
       - {text: 。}
     translation: {es: 'El chino es muy interesante.', en: 'Chinese is very interesting.'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.jintian-ren-hen-duo
+    use: hear
+    segments:
+      - {text: 今天, ref: w.jintian, pinyin: jīntiān}
+      - {text: 人, ref: w.ren, pinyin: rén}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 多, ref: w.duo, pinyin: duō}
+      - {text: 。}
+    translation: {es: Hoy hay mucha gente., en: There are a lot of people today.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}

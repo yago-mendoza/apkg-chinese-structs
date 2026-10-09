@@ -385,3 +385,47 @@ entries:
     source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 毛 «pelo» + 笔 «instrumento para escribir»: el pincel de pelo.'}
+  - id: g.xi-si
+    kind: group
+    basis: visual
+    title: 西 y 四
+    explanation: Los dos parecen una caja con dos trazos dentro.
+    members:
+      - {ref: w.xi.west, cue: 'la raya de arriba sobresale y la caja está abierta por arriba; dentro, dos trazos rectos'}
+      - {ref: w.num.si, cue: 'caja cerrada; dentro, dos trazos que se curvan'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []
+  - id: g.you-kan
+    kind: group
+    basis: visual
+    title: 有 y 看
+    explanation: Los dos empiezan arriba con una mano inclinada y debajo tienen una caja con rayas.
+    members:
+      - {ref: w.you.have, cue: 'debajo, 月: dos rayas dentro y patas abiertas'}
+      - {ref: w.kan, cue: 'debajo, 目, el ojo: más alto, tres rayas dentro; encima, una mano 手 con más rayas'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []
+  - id: g.side-pieces
+    kind: group
+    basis: visual
+    title: 对, 时, 的 y 狗
+    explanation: Una pieza estrecha a la izquierda y otra que parece un conejito de perfil a la derecha.
+    members:
+      - {ref: w.dui, cue: 又 a la izquierda; 寸 a la derecha}
+      - {ref: c.shi.time, cue: 日 a la izquierda; 寸 a la derecha}
+      - {ref: w.de, cue: '白 a la izquierda; 勺, una cuchara con una gota, a la derecha'}
+      - {ref: w.gou, cue: '犭, el animal, a la izquierda; 句 a la derecha'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []
+  - id: g.ri-bai-mu
+    kind: group
+    basis: visual
+    title: 日, 白, 百 y 目
+    explanation: 日 con un trazo encima es 白; 白 con una raya encima es 百. 目 es más alto.
+    members:
+      - {ref: w.ri.day, cue: una raya dentro}
+      - {ref: w.bai, cue: 日 con un trazo corto encima}
+      - {ref: w.bai.hundred, cue: 白 con una raya larga encima}
+      - {ref: c.mu.eye, cue: 'más alto y estrecho: dos rayas dentro'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []

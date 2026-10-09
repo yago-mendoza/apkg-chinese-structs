@@ -14,7 +14,7 @@
 - ✅🃏 呢 ne [nɤ] · ¿y…? (devuelve la pregunta) · _partícula_ · Tono neutro, corto y apagado, con una vocal parecida a [ə]. Tras una respuesta, devuelve la pregunta: «¿y tú?».
 - ✅🃏 也 yě [jɛ˧˩˧] · también · _adverbio_
 - ✅🃏 都 dōu [toʊ˥] · todos, ambos (adverbio) · _adverbio_
-- ✅🃏 的 de [tɤ] · de (posesión: 我的 = mi) · _partícula_
+- ✅🃏 的 de [tɤ] · de (posesión: 我的 = mi) · _partícula_ · No tiene una sola traducción: 我的 «mío», 这是我的 «es mío», 真的 «de verdad». Une lo que describe con lo descrito.
 - ✅🃏 叫 jiào [tɕjɑʊ˥˩] · llamarse · _verbo_ · Para confirmar si alguien es una persona se pregunta 你是张丽吗？, no 你叫张丽吗？.
 - ✅🃏 什么 shénme [ʂən˧˥ mɤ] · qué · _interrogativo_ · 什么 va donde iría la respuesta, sin cambiar el orden: 他叫什么名字？ o 他的名字是什么？ (la primera es la más corriente).
 - ✅🃏 名字 míngzi [miŋ˧˥ tsɯ] · nombre · _sustantivo_
@@ -27,7 +27,7 @@
 - ✅🃏 雅戈 Yǎgē [ja˧˩˧ kɤ˥] · Yago (mi nombre en chino) · _nombre propio_ · Transcripción por el sonido: 雅 «elegante» y 戈 «alabarda», sin otro significado. Solo por diversión.
 - ✅🃏 来 lái [laɪ˧˥] · venir · _verbo_ · Su origen es el dibujo de una planta de trigo, tomado prestado por su sonido para «venir».
 - ✅🃏 来自 láizì [laɪ˧˥ tsɯ˥˩] · venir de, ser de · _verbo_ · Algo formal. Hablando, también: 我从西班牙来 wǒ cóng Xībānyá lái.
-- ✅🃏 问 wèn [wən˥˩] · preguntar · _verbo_ · Una boca 口 en la puerta 门, preguntando. · 门 mén le da el sonido: wèn.
+- ✅🃏 问 wèn [wən˥˩] · preguntar · _verbo_ · Una boca 口 en la puerta 门, preguntando. · 门 mén le da el sonido: wèn. · Preguntar es wèn, con -n al final; no confundir con wèi, el 为 de 为什么.
 - ✅🃏 北京 Běijīng [peɪ˧˩˧ tɕiŋ˥] · Pekín · _nombre propio_ · Literalmente «capital del norte»: 北 běi «norte» + 京 jīng «capital». · 京 es un edificio alto sobre una colina, la parte de arriba de 高.
 - ✅ 大卫 Dàwèi [ta˥˩ weɪ˥˩] · David (nombre de ejemplo) · _nombre propio_
 - ✅🃏 先生 xiānsheng [ɕjɛn˥ ʂɤŋ] · señor (tras el apellido) · _sustantivo_ · Detrás del apellido: 白先生 «el señor Bai». Es como se llama a alguien en un trato formal; no por el nombre completo. · 先 «antes» + 生 «nacer»: el que nació antes. Ojo: la segunda sílaba se dice átona, xiānsheng.
@@ -42,6 +42,7 @@
 - ✅🃏 属 shǔ [ʂu˧˩˧] · ser (de un signo del zodiaco) · _verbo_ · 我属马 «soy caballo»: el signo del año en que naciste. Se pregunta 你属什么？.
 - ✅🃏 猜 cāi [tsʰaɪ˥] · adivinar · _verbo_
 - ✅🃏 觉得 juéde [tɕɥœ˧˥ tɤ] · creer, parecerle a uno · _verbo_ · Para dar tu opinión: 我觉得很好 «me parece bien». 你觉得怎么样？ «¿qué te parece?».
+- ✅🃏 王 Wáng [wɑŋ˧˥] · Wang (apellido) · _sustantivo_ · Como palabra suelta, 王 es «rey» [HSK 4]; aquí es el apellido.
 
 ## 是 shì y 十 shí
 
@@ -77,6 +78,13 @@ Los dos acaban en 生 átono; empiezan distinto.
 
 - 猜 cāi · alto y plano
 - 菜 cài · cae
+
+## 王 y 忘
+
+Misma sílaba, distinto tono.
+
+- 王 Wáng · sube (2.º): el apellido, 王阿姨
+- 忘 wàng · cae (4.º): 我忘了
 
 ## Frases
 
@@ -132,3 +140,7 @@ Los dos acaban en 生 átono; empiezan distinto.
 - ✅🃏 我妈妈五十五岁。 · wǒ māma wǔ shí wǔ suì · Mi madre tiene cincuenta y cinco.
 - ✅🃏 你的生日是几月几号？ · nǐ de shēngrì shì jǐ yuè jǐ hào · ¿Cuándo es tu cumpleaños?
 - ✅🃏 我的生日是十一月十一号。 · wǒ de shēngrì shì shí yī yuè shí yī hào · Mi cumpleaños es el 11 de noviembre.
+- ✅🃏 我不忙。 · wǒ bù máng · No estoy ocupado.
+- ✅🃏 王阿姨好！ · Wáng āyí hǎo · ¡Hola, señora Wang!
+- ✅🃏 我和他是朋友。 · wǒ hé tā shì péngyou · Él y yo somos amigos.
+- ✅🃏 我会说中文。真的吗？真的！我在学习中文。 · wǒ huì shuō Zhōngwén zhēn de ma zhēnde wǒ zài xuéxí Zhōngwén · —Hablo chino. —¿En serio? —¡De verdad! Lo estoy estudiando.

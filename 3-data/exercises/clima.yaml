@@ -523,3 +523,14 @@ exercises:
     question: {es: '¿Qué te propone y qué te pide?'}
     answer: {meaning: 'Comer juntos; que le llames cuando tengas tiempo.'}
     comments: []
+  - id: x.listen.hao-leng
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.hao-leng
+    targets: [s.hao-leng]
+    context: [w.hao, w.leng]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Qué frío!}
+    comments: []

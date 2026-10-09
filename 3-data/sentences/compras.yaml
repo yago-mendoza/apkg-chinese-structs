@@ -395,3 +395,123 @@ sentences:
       - {text: ？}
     translation: {es: '¿Cuál quieres?', en: 'Which one do you want?'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.wo-bu-he-cha
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 不, ref: w.bu, pinyin: bù}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 茶, ref: w.cha, pinyin: chá}
+      - {text: 。}
+    translation: {es: No tomo té., en: I don't drink tea.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-hai-mei-chifan
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 还, ref: w.hai.still, pinyin: hái}
+      - {text: 没, ref: w.mei, pinyin: méi}
+      - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
+      - {text: 。}
+    translation: {es: Todavía no he comido., en: I haven't eaten yet.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-bu-yao-shui
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 不, ref: w.bu, pinyin: bú, sandhi: true}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 水, ref: w.shui, pinyin: shuǐ}
+      - {text: 。}
+    translation: {es: No quiero agua., en: I don't want water.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-meiyou-shui
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 没有, ref: w.meiyou, pinyin: méiyǒu}
+      - {text: 水, ref: w.shui, pinyin: shuǐ}
+      - {text: 。}
+    translation: {es: No tengo agua., en: I don't have water.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-xiang-he-cha
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 想, ref: w.xiang, pinyin: xiǎng}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 茶, ref: w.cha, pinyin: chá}
+      - {text: 。}
+    translation: {es: Me apetece un té., en: I feel like a tea.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-yao-yi-bei-shui
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 一, ref: w.num.yi, pinyin: yì, sandhi: true}
+      - {text: 杯, ref: w.bei.cl, pinyin: bēi}
+      - {text: 水, ref: w.shui, pinyin: shuǐ}
+      - {text: 。}
+    translation: {es: 'Un vaso de agua, por favor.', en: 'A glass of water, please.'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-xihuan-cha-xiang-he-yi-bei
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 茶, ref: w.cha, pinyin: chá}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 想, ref: w.xiang, pinyin: xiǎng}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 一, ref: w.num.yi, pinyin: yì, sandhi: true}
+      - {text: 杯, ref: w.bei.cl, pinyin: bēi}
+      - {text: 。}
+    translation: {es: 'Me gusta el té: me apetece una taza.', en: 'I like tea: I feel like a cup.'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.hao-gui
+    use: hear
+    segments:
+      - {text: 好, ref: w.hao, pinyin: hǎo}
+      - {text: 贵, ref: w.gui, pinyin: guì}
+      - {text: ！}
+    translation: {es: ¡Qué caro!, en: So expensive!}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-qingke
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 请客, ref: w.qingke, pinyin: qǐngkè}
+      - {text: ！}
+    translation: {es: ¡Invito yo!, en: My treat!}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.dlg-zenmele
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 怎么了, ref: e.zenmele, pinyin: zěnme le}
+      - {text: ？}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 还, ref: w.hai.still, pinyin: hái}
+      - {text: 没, ref: w.mei, pinyin: méi}
+      - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
+      - {text: 。}
+      - {text: 走吧, ref: e.zouba, pinyin: zǒu ba}
+      - {text: ，}
+      - {text: 我们, ref: w.women, pinyin: wǒmen}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
+      - {text: ！}
+    translation: {es: '—¿Qué te pasa? —Todavía no he comido. —Venga, ¡vamos a comer!', en: '—What''s wrong? —I haven''t eaten yet. —Come on, let''s go eat!'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-xihuan-he-cha
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 茶, ref: w.cha, pinyin: chá}
+      - {text: 。}
+    translation: {es: Me gusta el té., en: I like tea.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}

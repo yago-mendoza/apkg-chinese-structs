@@ -240,3 +240,20 @@ sentences:
       - {text: 一下, ref: w.yixia, pinyin: 'yíxià', sandhi: true}
       - {text: 。}
     translation: {es: '—¿Quién me echa una mano? —¡Yo! Espera un momento.', en: '—Who can give me a hand? —Me! Wait a moment.'}
+  - id: s.qing-shaodeng
+    use: say
+    segments:
+      - {text: 请, ref: w.qing, pinyin: qǐng}
+      - {text: 稍等, ref: e.shaodeng, pinyin: shāo děng}
+      - {text: 。}
+    translation: {es: 'Espere un momento, por favor.', en: 'One moment, please.'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.ni-yao-xiaoxin
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 小心, ref: w.xiaoxin, pinyin: xiǎoxīn}
+      - {text: 。}
+    translation: {es: Tienes que tener cuidado., en: You must be careful.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}

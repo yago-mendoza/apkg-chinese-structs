@@ -780,7 +780,7 @@ class Batch005(unittest.TestCase):
 
     def test_sound_cards_differ_by_what_sounds(self):
         _, warnings = anki.validate(self.entries, self.sentences, self.exercises, require_audio=False)
-        self.assertFalse([w for w in warnings if w.startswith("x.syllable.") and "redundante" in w])
+        self.assertFalse([w for w in warnings if w.startswith(("x.pair.", "x.rule.", "x.vowels.")) and "redundante" in w])
 
     def test_expressions_explain_their_words(self):
         bare = {"id": "e.t", "kind": "expression", "use": "say", "hanzi": "你好", "pinyin": "nǐ hǎo", "meaning": {"es": "hola"},
@@ -897,3 +897,90 @@ class NewDuePlan(unittest.TestCase):
             final = [plan.get(i, d) for i, d in enumerate(dues)]
             self.assertEqual(final, sorted(set(final)), dues)
 
+
+class Batch009(unittest.TestCase):
+    """Lo que pidió YAGO en el review 008: nuevas siempre mezcladas, respuestas que se puntúan de cabeza, parejas que
+    suenan juntas, recuadros sin listas ni otro nivel, reverso por importancia y el nivel de un sentido."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.entries, cls.sentences, cls.exercises = anki.load()
+        cls.eby = {e["id"]: e for e in cls.entries}
+        cls.sby = {s["id"]: s for s in cls.sentences}
+        cls.xby = {x["id"]: x for x in cls.exercises}
+
+    def fields(self, xid):
+        return anki.card_fields(self.xby[xid], self.eby, self.sby, {}, set())
+
+    def test_new_cards_are_always_mixed(self):
+        ex = lambda xid, t, target: {"id": xid, "type": t, "targets": [target]}
+        cards = [ex(f"x.{t}.{i}", t, f"w.{i}") for i in range(30) for t in ("read", "listen", "produce")]
+        key = lambda x: (int(x["targets"][0][2:]), anki.STAGE[x["type"]], x["id"])
+        order = anki.interleave_streams(cards, key, gap=6)
+        pos = {xid: i for i, xid in enumerate(order)}
+        self.assertEqual(sorted(order), sorted(c["id"] for c in cards))
+        for start in range(12, len(order) - 9, 3):       # pasado el arranque (solo hay lecturas listas), cualquier
+                                                           # tramo de 9 trae de las tres colas
+            self.assertEqual(len({x.split(".")[1] for x in order[start:start + 9]}), 3, order[start:start + 9])
+        for i in range(26):          # y los pasos de una palabra, en orden y separados (salvo al final, sin nada más)
+            self.assertGreaterEqual(pos[f"x.listen.{i}"] - pos[f"x.read.{i}"], 6)
+            self.assertGreaterEqual(pos[f"x.produce.{i}"] - pos[f"x.listen.{i}"], 6)
+
+    def test_the_real_queue_starts_mixed(self):
+        order = anki.new_card_order(self.entries, self.sentences, self.exercises)
+        first = sorted(order, key=order.get)[:60]
+        skills = {anki.skill_of(self.xby[x]) for x in first}
+        self.assertTrue({"oír", "decir", "leer"} <= skills, skills)
+
+    def test_answers_can_be_graded_from_memory(self):
+        long = dict(next(x for x in self.exercises if x["type"] == "nuance"), id="x.nuance.long",
+                    answer={"meaning": "a" * (anki.ANSWER_MAX + 1)})
+        _, warnings = anki.validate(self.entries, self.sentences, self.exercises + [long], require_audio=False)
+        self.assertTrue(any(w.startswith("x.nuance.long:") and "máximo" in w for w in warnings))
+        self.assertFalse([w for w in warnings if "máximo" in w and not w.startswith("x.nuance.long:")])
+
+    def test_a_pair_plays_both_and_is_checked(self):
+        manifest = anki.load_manifest()
+        f = anki.card_fields(self.xby["x.pair.chi-qi"], self.eby, self.sby, manifest, set())
+        self.assertEqual(f["prompt_audio"].count("[sound:"), 2)          # suenan las dos
+        self.assertEqual(f["back"].count("[sound:"), 2)                  # y detrás, otra vez
+        self.assertIn("七", f["back"])
+        self.assertIn("吃", f["back"])
+        bad = dict(self.xby["x.pair.chi-qi"], id="x.pair.bad", pair=[{"hanzi": "七", "pinyin": "qī", "meaning": "siete"}])
+        errors, _ = anki.validate(self.entries, self.sentences, self.exercises + [bad], require_audio=False)
+        self.assertTrue(any(e.startswith("x.pair.bad:") for e in errors))
+        self.assertIn("七", anki.required_audio(self.entries, self.sentences, self.exercises))
+
+    def test_long_groups_and_higher_levels_stay_off_word_backs(self):
+        notes = self.fields("x.read.shei")["notes"]                       # 谁: el grupo de nueve no se muestra
+        self.assertNotIn('class="vs-hz">多少</b>', notes)
+        contrast = self.fields("x.contrast.dui")["notes"]                  # en su propia tarjeta sí, entero
+        self.assertIn('class="vs-hz">狗</b>', contrast)
+        g = {"id": "g.t", "kind": "group", "basis": "set", "title": "t", "members": [{"ref": "w.bang"}, {"ref": "w.bangzhu"}]}
+        eby = dict(self.eby, **{"g.t": g})
+        levels = anki.hsk_levels()
+        self.assertGreater(anki.level_of("w.bangzhu", eby, self.sby, levels), anki.level_of("w.bang", eby, self.sby, levels))
+        ex = self.xby["x.read.bang"]
+        notes = anki.card_fields(ex, eby, self.sby, {}, set())["notes"]
+        self.assertNotIn('class="vs-hz">帮助</b>', notes)                # 帮助 es de un nivel superior a 帮
+
+    def test_back_goes_from_most_to_least_important(self):
+        notes = self.fields("x.read.dui")["notes"]
+        self.assertLess(notes.index("note--example"), notes.index("note--chars"))
+        self.assertLess(notes.index("note--example"), notes.index("vs-row"))
+        self.assertIn('class="ch-py">duì</span>', notes)                 # cada carácter, con su sílaba
+
+    def test_a_sense_can_fix_its_level(self):
+        levels = anki.hsk_levels()
+        self.assertEqual(levels.get("王"), 4)
+        self.assertEqual(anki.level_of("w.wang.surname", self.eby, self.sby, levels), 1)
+        bad = dict(self.eby["w.wang.surname"], id="w.t", level_reason=None)
+        errors, _ = anki.validate(self.entries + [bad], self.sentences, self.exercises, require_audio=False)
+        self.assertTrue(any(e.startswith("w.t:") and "sense_level" in e for e in errors))
+
+    def test_several_clozes_of_a_rule_are_not_redundant(self):
+        _, warnings = anki.validate(self.entries, self.sentences, self.exercises, require_audio=False)
+        self.assertFalse([w for w in warnings if w.startswith("x.cloze.") and "redundante" in w])
+        twin = dict(self.xby["x.cloze.bu.habit"], id="x.cloze.twin")
+        _, warnings = anki.validate(self.entries, self.sentences, self.exercises + [twin], require_audio=False)
+        self.assertTrue(any(w.startswith("x.cloze.twin:") and "redundante" in w for w in warnings))

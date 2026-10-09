@@ -23,6 +23,7 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: '女 «mujer» + 子 «niño»: una madre con su hijo, imagen de algo bueno.', original: 女 + 子 (woman + child)}
+      - {kind: linguistic, private: false, date: '2026-10-09', text: 'Delante de un adjetivo, 好 es «qué…»: 好冷！ «¡qué frío!», 好贵！ «¡qué caro!». Es el mismo de 好久不见.'}
   - id: w.gao
     use: say
     role: content
@@ -228,6 +229,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: character, private: false, date: '2026-10-01', text: '月 a la izquierda es «carne» (partes del cuerpo), como en 胖. 你的腿好长啊！ es un piropo.'}
+      - {kind: character, private: false, date: '2026-10-09', text: 'El mismo 月 «carne» está en 脸 «cara» [HSK 2], 脚 «pie» [HSK 2] y 脑 «cerebro», el de 电脑 «ordenador».'}
   - id: w.chang
     use: hear
     role: content
@@ -391,3 +393,23 @@ entries:
       - {ref: w.shou, cue: 'cae'}
     source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
     comments: []
+  - id: w.duo
+    use: say
+    role: content
+    kind: word
+    hanzi: 多
+    pinyin: duō
+    meaning: {es: 'mucho, muchos', en: 'many, much'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: 'Delante de una medida pregunta cuánto: 多大 «qué edad, qué tamaño», 多少 «cuánto».'}
+  - id: w.zhende
+    use: say
+    role: content
+    kind: word
+    hanzi: 真的
+    pinyin: zhēnde
+    meaning: {es: 'de verdad, en serio', en: 'really, truly'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: '真 delante de un adjetivo es «qué…»: 真好. 真的 es «de verdad»: 我真的知道 «de verdad que lo sé»; 真的？, con tono de pregunta, ya es «¿en serio?».'}

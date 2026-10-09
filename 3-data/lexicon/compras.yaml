@@ -173,6 +173,7 @@ entries:
       - {kind: character, private: false, date: '2026-10-01', text: 'El carácter antiguo dibujaba una figura con las manos en la cintura: 要 era «cintura», que después pasó a escribirse 腰 yāo [HSK 4].'}
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Además de «querer», 要 es «tener que» (我要工作 «tengo que trabajar») y «estar a punto de» (要下雨了 «va a llover»).'}
       - {kind: note, private: false, date: '2026-10-01', text: 'Se niega distinto que 有: 不要 «no quiero», 没有 «no tengo».', original: 'Queerer yào Y tener yôu Ponlos cerca de slguns forma que contrasten porwue los lio peinso siempre wue son los dos _O_ you you'}
+    accept_cards: los huecos de 要 frente a 想, 想要, 需要, 不要 y 有 practican la confusión que señaló en el review 008
   - id: w.xuyao
     use: hear
     role: content
@@ -231,6 +232,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: Literalmente «este y oeste». 买东西 mǎi dōngxi es «ir de compras». El 西 es el de 西班牙.}
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '东: el sol 日 saliendo tras un árbol 木, por el este. 西: los pájaros vuelven al nido cuando el sol se pone, por el oeste.', original: 东 dōng = este / oriente. el sol saliendo sobre la copa de un árbol. 西 xī = oeste. nido → atardecer → oeste.}
+      - {kind: mnemonic, private: false, date: '2026-10-09', text: 'Todo lo que hay entre el este 东 y el oeste 西: las cosas.', original: 'Todo lo que hay entre oeste este son claramente COSAS sabes?'}
   - id: w.daxiao
     use: hear
     role: content
@@ -274,6 +276,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Verbo y objeto, «comer comida»: es la forma normal de decir «comer» cuando no dices qué. 吃饭了吗？ es también un saludo.'}
+      - {kind: linguistic, private: false, date: '2026-10-09', text: '吃饭 es comer, la comida en general; 米饭 es el arroz cocido. De alguien que no come nada, como un enfermo, se dice 他不吃东西.'}
   - id: w.fandian
     use: say
     role: content
@@ -373,6 +376,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Entre 想 y 要: 我想要这个 «me gustaría este», más suave que 我要这个 «quiero este, dame este».'}
+      - {kind: linguistic, private: false, date: '2026-10-09', text: '想要 + cosa: quieres conseguirla (我想要这个). 想有, que es 想 + 有, quiere tenerla como parte de tu vida: 我想有一个家 «me gustaría tener una familia».'}
   - id: w.haochi
     use: say
     role: content
@@ -525,3 +529,22 @@ entries:
       - {ref: w.xie, cue: 'baja y sube'}
     source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
     comments: []
+  - id: w.gui
+    use: say
+    role: content
+    kind: word
+    hanzi: 贵
+    pinyin: guì
+    meaning: {es: caro, en: expensive}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []
+  - id: w.qingke
+    use: say
+    role: content
+    kind: word
+    hanzi: 请客
+    pinyin: qǐngkè
+    meaning: {es: invitar (pagar tú), en: 'to treat, to pay for others'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: '我请客！ «¡invito yo!»: pagas tú la cuenta de todos.'}

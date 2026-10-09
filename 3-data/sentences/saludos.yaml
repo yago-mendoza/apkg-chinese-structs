@@ -186,3 +186,49 @@ sentences:
       - {text: ！}
     translation: {es: '¡Gracias por tu regalo!', en: 'Thank you for your gift!'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.women-mingtian-qu-zenmeyang
+    use: say
+    segments:
+      - {text: 我们, ref: w.women, pinyin: wǒmen}
+      - {text: 明天, ref: w.mingtian, pinyin: míngtiān}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: ，}
+      - {text: 怎么样, ref: w.zenmeyang, pinyin: zěnmeyàng}
+      - {text: ？}
+    translation: {es: '¿Qué tal si vamos mañana?', en: 'How about going tomorrow?'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.huanying-huilai
+    use: say
+    segments:
+      - {text: 欢迎, ref: w.huanying, pinyin: huānyíng}
+      - {text: 回来, ref: w.huilai, pinyin: huílai}
+      - {text: ！}
+    translation: {es: ¡Bienvenido de nuevo!, en: Welcome back!}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.ni-hai-zai-ma
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 还, ref: w.hai.still, pinyin: hái}
+      - {text: 在, ref: w.zai.at, pinyin: zài}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Sigues ahí?', en: 'Are you still there?'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.dlg-huilai
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 回来, ref: w.huilai, pinyin: huílai}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ！}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 回来, ref: w.huilai, pinyin: huílai}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+      - {text: 今天, ref: w.jintian, pinyin: jīntiān}
+      - {text: 好, ref: w.hao, pinyin: hǎo}
+      - {text: 冷, ref: w.leng, pinyin: lěng}
+      - {text: ！}
+    translation: {es: —¡Ya has vuelto! —Ya estoy aquí. ¡Qué frío hace hoy!, en: —You're back! —I'm back. It's so cold today!}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}

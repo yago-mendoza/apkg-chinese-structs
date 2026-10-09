@@ -232,6 +232,7 @@ exercises:
     answer: {meaning: Somos amigos.}
     lang: es
     comments: []
+    also: [s.wo-he-ta-shi-pengyou]
   - id: x.contrast.ta-he
     added: 2026-09-25
     type: contrast
@@ -907,7 +908,7 @@ exercises:
     sentence: s.ni-xiang-gen-wo-yiqi-chifan-ma
     gap: w.gen
     targets: [w.gen]
-    context: [w.ni, w.xiang, w.wo, w.yiqi, w.chifan, w.ma]
+    context: [w.ni, w.xiang, w.wo, w.chifan, w.ma]
     skills: [production, pinyin]
     prompt: {text: 'Completa en pinyin: «¿Quieres comer conmigo?»'}
     answer: {typed: gen1, hanzi: 跟, pinyin: gēn, meaning: con (alguien)}

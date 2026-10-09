@@ -491,3 +491,14 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Como mientras miro el móvil.»'}
     answer: {meaning: Como mientras miro el móvil.}
     comments: []
+  - id: x.listen.mingtian-zai-shuo
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.mingtian-zai-shuo
+    targets: [s.mingtian-zai-shuo]
+    context: [w.mingtian, w.zai.again, w.shuo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ya lo hablamos mañana.}
+    comments: []

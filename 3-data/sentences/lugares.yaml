@@ -59,3 +59,50 @@ sentences:
       - {text: 。}
     translation: {es: 'Está allí.', en: 'He is over there.'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.wo-hui-hui-jia
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 会, ref: w.hui.can, pinyin: huì}
+      - {text: 回, ref: w.hui.return, pinyin: huí}
+      - {text: 家, ref: w.jia, pinyin: jiā}
+      - {text: 。}
+    translation: {es: Volveré a casa., en: I'll go back home.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-hui-huilai
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 会, ref: w.hui.can, pinyin: huì}
+      - {text: 回来, ref: w.huilai, pinyin: huílai}
+      - {text: 。}
+    translation: {es: Volveré., en: I'll be back.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-kaiche-qu
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 开车, ref: w.kaiche, pinyin: kāichē}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 。}
+    translation: {es: Voy en coche (conduzco yo)., en: I'll drive there.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.ta-zai-wo-pangbian
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 在, ref: w.zai.at, pinyin: zài}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 旁边, ref: w.pangbian, pinyin: pángbiān}
+      - {text: 。}
+    translation: {es: Está a mi lado., en: He is next to me.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.ta-chuqu-le
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 出去, ref: w.chuqu, pinyin: chūqu}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: Ha salido., en: He went out.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}

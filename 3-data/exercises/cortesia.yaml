@@ -929,15 +929,6 @@ exercises:
     answer: {typed: qi4, hanzi: 气, pinyin: qì, meaning: 'Sale en 不客气 bù kèqi «de nada», 天气 tiānqì «el tiempo (meteorológico)»,
         生气 shēngqì «enfadarse; enfadado».'}
     comments: []
-  - id: x.nuance.meiwenti-meiguanxi
-    added: 2026-10-06
-    lang: es
-    type: nuance
-    targets: [e.meiwenti, e.meiguanxi]
-    skills: [comprehension, discrimination]
-    prompt: {text: '没问题 y 没关系: ¿cuándo cada uno?'}
-    answer: {meaning: '没问题 «sin problema»: aceptas lo que te piden (¿me ayudas? 没问题). 没关系 «no pasa nada»: quitas importancia a algo que ya ha pasado (对不起 → 没关系).'}
-    comments: []
   - id: x.situation.bu-zhidao
     added: 2026-10-06
     accept_pinyin_mismatch: '知道 lleva la segunda sílaba átona en el habla'
@@ -1687,24 +1678,6 @@ exercises:
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 道}
     answer: {typed: dao4, hanzi: 道, pinyin: dào, meaning: 'Sale en 知道 zhīdao «saber», 街道 jiēdào «calle».'}
     comments: []
-  - id: x.nuance.bang-forms
-    added: 2026-10-08
-    lang: es
-    type: nuance
-    targets: [w.bang, w.bangmang, w.bangzhu]
-    skills: [comprehension, discrimination]
-    prompt: {text: '帮我, 帮帮我, 帮忙 y 帮助: ¿cuál lleva a la persona detrás, cuál no, y cuál suena a súplica?'}
-    answer: {meaning: '帮 + persona (+ verbo) es lo corriente: 帮我拿一下 «sujétamelo un momento». 帮帮我 es más cercano, casi una súplica. 帮忙 no lleva a nadie detrás: 他来帮忙 «viene a echar una mano»; es tan básico como 帮. 帮助 es más formal y también es «la ayuda»: 谢谢你的帮助.'}
-    comments: []
-  - id: x.nuance.kan-yixia
-    added: 2026-10-08
-    lang: es
-    type: nuance
-    targets: [w.yixia, w.kan]
-    skills: [comprehension, discrimination]
-    prompt: {text: '你看！, 你看一下。 y 请你看一下。: ordénalas de más brusca a más amable.'}
-    answer: {meaning: '你看！ es una orden: «¡mira!». 你看一下。 la suaviza: «echa un vistazo». 请你看一下。 la suaviza dos veces, con 请 y con 一下: «échale un vistazo, por favor».'}
-    comments: []
   - id: x.situation.meicuo
     added: 2026-10-08
     lang: es
@@ -1734,4 +1707,215 @@ exercises:
     prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
     question: {es: '¿Qué está buscando y qué te pide?'}
     answer: {meaning: 'Su móvil; te pide que esperes un momento y que le ayudes.'}
+    comments: []
+  - id: x.situation.bang-wo-na
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    sentence: s.bang-wo-na-yixia
+    targets: [s.bang-wo-na-yixia]
+    skills: [production, speaking]
+    prompt: {text: Situación. Llevas muchas bolsas. Pide a un amigo que te sujete una un momento.}
+    answer: {meaning: sujétamelo un momento}
+    comments: []
+  - id: x.situation.qing-kan-yixia
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    sentence: s.qing-ni-kan-yixia
+    targets: [s.qing-ni-kan-yixia]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Pides a tu profesora, con amabilidad, que eche un vistazo a tus deberes.'}
+    answer: {meaning: 'échale un vistazo, por favor'}
+    comments: []
+  - id: x.situation.zouba
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [e.zouba]
+    skills: [production, speaking]
+    prompt: {text: Situación. Habéis terminado de comer y quieres irte con tu amigo. Díselo.}
+    answer: {hanzi: 走吧, pinyin: zǒu ba, meaning: ¡vamos!}
+    comments: []
+  - id: x.situation.wodecuo
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [e.wodecuo]
+    skills: [production, speaking]
+    prompt: {text: Situación. Has roto un vaso de tu amigo. Reconoce que ha sido culpa tuya.}
+    answer: {hanzi: 我的错, pinyin: wǒ de cuò, meaning: es culpa mía}
+    comments: []
+  - id: x.situation.shaodeng
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    sentence: s.qing-shaodeng
+    targets: [s.qing-shaodeng]
+    skills: [production, speaking]
+    prompt: {text: Situación. Trabajas en una tienda y un cliente te llama mientras atiendes a otro. Pídele que espere un momento.}
+    answer: {meaning: 'espere un momento, por favor'}
+    comments: []
+  - id: x.contrast.dui
+    added: 2026-10-10
+    lang: es
+    type: contrast
+    group: g.side-pieces
+    targets: [w.dui]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es duì, «correcto; sí, eso es»?'}
+    answer: {hanzi: 对, pinyin: duì, meaning: 'correcto; sí, eso es'}
+    comments: []
+  - id: x.dictation.zouba
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [e.zouba]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zou3 ba5, hanzi: 走吧, pinyin: zǒu ba, meaning: '¡vamos!, vámonos'}
+    comments: []
+  - id: x.produce.zouba
+    added: 2026-10-10
+    lang: es
+    type: produce
+    targets: [e.zouba]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¡vamos!, vámonos»? Escribe el pinyin.'}
+    answer: {typed: zou3 ba5, hanzi: 走吧, pinyin: zǒu ba, meaning: '¡vamos!, vámonos'}
+    comments: []
+  - id: x.read.zouba
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [e.zouba]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 走吧}
+    answer: {hanzi: 走吧, pinyin: zǒu ba, meaning: '¡vamos!, vámonos'}
+    comments: []
+  - id: x.tones.zouba
+    added: 2026-10-10
+    lang: es
+    type: tones
+    targets: [e.zouba]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 走吧, pinyin: zou ba}
+    answer: {typed: '35', hanzi: 走吧, pinyin: zǒu ba, meaning: '¡vamos!, vámonos'}
+    comments: []
+  - id: x.dictation.wodecuo
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [e.wodecuo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wo3 de5 cuo4, hanzi: 我的错, pinyin: wǒ de cuò, meaning: es culpa mía}
+    comments: []
+  - id: x.produce.wodecuo
+    added: 2026-10-10
+    lang: es
+    type: produce
+    targets: [e.wodecuo]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «es culpa mía»? Escribe el pinyin.'}
+    answer: {typed: wo3 de5 cuo4, hanzi: 我的错, pinyin: wǒ de cuò, meaning: es culpa mía}
+    comments: []
+  - id: x.read.wodecuo
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [e.wodecuo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 我的错}
+    answer: {hanzi: 我的错, pinyin: wǒ de cuò, meaning: es culpa mía}
+    comments: []
+  - id: x.tones.wodecuo
+    added: 2026-10-10
+    lang: es
+    type: tones
+    targets: [e.wodecuo]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 我的错, pinyin: wo de cuo}
+    answer: {typed: '354', hanzi: 我的错, pinyin: wǒ de cuò, meaning: es culpa mía}
+    comments: []
+  - id: x.dictation.shaodeng
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [e.shaodeng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shao1 deng3, hanzi: 稍等, pinyin: shāo děng, meaning: un momento (espere)}
+    comments: []
+  - id: x.produce.shaodeng
+    added: 2026-10-10
+    lang: es
+    type: produce
+    targets: [e.shaodeng]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «un momento (espere)»? Escribe el pinyin.'}
+    answer: {typed: shao1 deng3, hanzi: 稍等, pinyin: shāo děng, meaning: un momento (espere)}
+    comments: []
+  - id: x.read.shaodeng
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [e.shaodeng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 稍等}
+    answer: {hanzi: 稍等, pinyin: shāo děng, meaning: un momento (espere)}
+    comments: []
+  - id: x.listen.qing-shaodeng
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.qing-shaodeng
+    targets: [s.qing-shaodeng]
+    context: [w.qing, e.shaodeng]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Espere un momento, por favor.'}
+    comments: []
+  - id: x.produce.qing-shaodeng
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.qing-shaodeng
+    targets: [s.qing-shaodeng]
+    context: [w.qing, e.shaodeng]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Espere un momento, por favor.»'}
+    answer: {meaning: 'Espere un momento, por favor.'}
+    comments: []
+  - id: x.listen.ni-yao-xiaoxin
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.ni-yao-xiaoxin
+    targets: [s.ni-yao-xiaoxin]
+    context: [w.ni, w.yao, w.xiaoxin]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tienes que tener cuidado.}
+    comments: []
+  - id: x.charsound.ke-2
+    added: 2026-10-10
+    lang: es
+    type: charsound
+    targets: [e.bukeqi, w.qingke]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 客}
+    answer: {typed: ke4, hanzi: 客, pinyin: kè, meaning: 'Sale en 不客气 bù kèqi «de nada», 请客 qǐngkè «invitar (pagar tú)».'}
+    comments: []
+  - id: x.contrast.wang.forget
+    added: 2026-10-10
+    lang: es
+    type: contrast
+    group: g.wang-wang
+    targets: [w.wang.forget]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 忘, pinyin: wàng, meaning: olvidar}
     comments: []

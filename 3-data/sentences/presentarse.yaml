@@ -566,3 +566,51 @@ sentences:
       - {text: 。}
     translation: {es: 'Mi cumpleaños es el 11 de noviembre.', en: 'My birthday is November 11th.'}
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
+  - id: s.wo-bu-mang
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 不, ref: w.bu, pinyin: bù}
+      - {text: 忙, ref: w.mang, pinyin: máng}
+      - {text: 。}
+    translation: {es: No estoy ocupado., en: I'm not busy.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wang-ayi-hao
+    use: hear
+    segments:
+      - {text: 王, ref: w.wang.surname, pinyin: Wáng}
+      - {text: 阿姨, ref: w.ayi, pinyin: āyí}
+      - {text: 好, ref: w.hao, pinyin: hǎo}
+      - {text: ！}
+    translation: {es: '¡Hola, señora Wang!', en: 'Hello, Auntie Wang!'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-he-ta-shi-pengyou
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 和, ref: w.he.and, pinyin: hé}
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 朋友, ref: w.pengyou, pinyin: péngyou}
+      - {text: 。}
+    translation: {es: Él y yo somos amigos., en: He and I are friends.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.dlg-zhende
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 会, ref: w.hui.can, pinyin: huì}
+      - {text: 说, ref: w.shuo, pinyin: shuō}
+      - {text: 中文, ref: w.zhongwen, pinyin: Zhōngwén}
+      - {text: 。}
+      - {text: 真的吗, ref: e.zhendema, pinyin: zhēn de ma}
+      - {text: ？}
+      - {text: 真的, ref: w.zhende, pinyin: zhēnde}
+      - {text: ！}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 在, ref: w.zai.progressive, pinyin: zài}
+      - {text: 学习, ref: w.xuexi, pinyin: xuéxí}
+      - {text: 中文, ref: w.zhongwen, pinyin: Zhōngwén}
+      - {text: 。}
+    translation: {es: '—Hablo chino. —¿En serio? —¡De verdad! Lo estoy estudiando.', en: '—I speak Chinese. —Really? —Really! I''m studying it.'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}

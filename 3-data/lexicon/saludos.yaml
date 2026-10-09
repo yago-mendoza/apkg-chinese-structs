@@ -135,6 +135,8 @@ entries:
     pinyin: zěnmeyàng
     meaning: {es: '¿qué tal?; ¿cómo?', en: 'how is it?, how about'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: 'Es el «¿qué tal?» chino; lo de delante dice de qué: 你怎么样？ «¿qué tal estás?», 这个怎么样？ «¿qué te parece esto?», 我们明天去，怎么样？ «¿qué tal si vamos mañana?».', original: Es "QUE TAL" chinos conceptualizan el "Que tal" mentslmente en estos escrnarios y nada mas}
   - id: e.wanan
     use: say
     role: content
@@ -405,3 +407,46 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: 'Palabra a palabra: 恭 «respetuoso» + 喜 «alegría», el mismo de 喜欢.'}
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Se oye mucho: 恭喜发财 en el Año Nuevo chino. En la lista es de nivel 7.'}
+  - id: e.zenmele
+    use: say
+    role: content
+    kind: expression
+    hanzi: 怎么了
+    pinyin: zěnme le
+    meaning: {es: '¿qué pasa?, ¿qué te pasa?', en: 'what''s wrong?'}
+    level: 1
+    level_reason: 怎么 y 了 son HSK 1; pregunta corriente al ver que algo va mal
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: 'Palabra a palabra: 怎么 «cómo» + 了, que marca que algo ha cambiado: «¿qué ha pasado?».'}
+  - id: w.jin.near
+    use: read
+    use_reason: se aprende dentro de 最近; suelto (很近 «está cerca») llegará con su nivel
+    role: content
+    kind: word
+    hanzi: 近
+    pinyin: jìn
+    meaning: {es: cerca, en: near}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []
+  - id: g.jin-jin
+    kind: group
+    basis: homophone
+    title: 进, 近 y 今
+    explanation: 进 y 近 suenan igual, jìn; 今 es jīn, plano. Los separa la pieza y la palabra en que salen.
+    members:
+      - {ref: w.jin, cue: '辶 con 井 dentro: 请进'}
+      - {ref: w.jin.near, cue: '辶 con 斤 dentro: 最近'}
+      - {ref: c.jin.now, cue: 'sin 辶, tono plano: 今天'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []
+  - id: g.zuijin-zaijian
+    kind: group
+    basis: soundalike
+    title: 最近 y 再见
+    explanation: 'Dos sílabas que caen y empiezan por z: cambian las vocales.'
+    members:
+      - {ref: w.zuijin, cue: 'zuì, con u: para preguntar cómo va'}
+      - {ref: w.zaijian, cue: 'zài, con a, y jiàn con a: para irte'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []

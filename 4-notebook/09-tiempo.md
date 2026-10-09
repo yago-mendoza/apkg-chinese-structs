@@ -28,6 +28,9 @@
 - ✅🃏 日 rì [ʐɨ˥˩] · día (en fechas escritas); sol · _sustantivo_ · Por escrito, 10月8日; al hablar, 十月八号.
 - ✅🃏 时候 shíhou [ʂɨ˧˥ xoʊ] · momento; cuando (…的时候) · _sustantivo_ · …的时候 es «cuando…»: va detrás de lo que pasa. 你有时间的时候 «cuando tengas tiempo».
 - ✅🃏 先 xiān [ɕjɛn˥] · primero, antes · _adverbio_ · Delante del verbo: 我得先复习一下笔记 «antes tengo que repasar los apuntes». Es el mismo 先 de 先生.
+- ✅🃏 什么时候 shénme shíhou [ʂən˧˥ mɤ ʂɨ˧˥ xoʊ] · cuándo · _expresión_ · Palabra a palabra: 什么 «qué» + 时候 «momento». Va donde iría la respuesta: 你什么时候来？ «¿cuándo vienes?».
+- 🟡🃏 时 shí · tiempo, hora (en 时候, 时间)
+- 🟡🃏 今 jīn · ahora, actual (en 今天, 今年)
 
 ## 上 / 中 / 下 + 午
 
@@ -65,3 +68,5 @@ Con 午 «mediodía» se forman las tres del centro (上 antes, 中 en, 下 desp
 - ✅🃏 明天星期天。 · míngtiān xīngqītiān · Mañana es domingo.
 - ✅🃏 今年是二零二六年。 · jīnnián shì èr líng èr liù nián · Este año es 2026.
 - ✅🃏 你有时间的时候，给我打电话。 · nǐ yǒu shíjiān de shíhou gěi wǒ dǎ diànhuà · Cuando tengas tiempo, llámame.
+- ✅🃏 你什么时候来？ · nǐ shénme shíhou lái · ¿Cuándo vienes?
+- ✅🃏 你什么时候去中国？明年。我想坐飞机去。 · nǐ shénme shíhou qù Zhōngguó míngnián wǒ xiǎng zuò fēijī qù · —¿Cuándo vas a China? —El año que viene. Quiero ir en avión.

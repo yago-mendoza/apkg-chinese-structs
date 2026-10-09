@@ -1149,3 +1149,129 @@ exercises:
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 间}
     answer: {typed: jian1, hanzi: 间, pinyin: jiān, meaning: 'Sale en 时间 shíjiān «tiempo (de reloj)», 房间 fángjiān «habitación».'}
     comments: []
+  - id: x.situation.shenme-shihou
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    sentence: s.ni-shenme-shihou-lai
+    targets: [s.ni-shenme-shihou-lai]
+    skills: [production, speaking]
+    prompt: {text: Situación. Un amigo dice que vendrá a verte. Pregúntale cuándo.}
+    answer: {meaning: '¿cuándo vienes?'}
+    comments: []
+  - id: x.nuance.day-parts-chars
+    added: '2026-10-10'
+    lang: es
+    type: nuance
+    targets: [w.shangwu, w.zhongwu, w.xiawu]
+    context: [w.zaoshang, w.wanshang]
+    skills: [reading]
+    prompt: {text: '早上, 上午, 中午, 下午 y 晚上: ¿cuáles acaban en 上 y cuáles en 午?'}
+    answer: {meaning: 'En 上: 早上 y 晚上. En 午, el mediodía: 上午, 中午 y 下午, antes, en y después del mediodía.'}
+    comments: []
+  - id: x.dictation.shenmeshihou
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [e.shenmeshihou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shen2 me5 shi2 hou5, hanzi: 什么时候, pinyin: shénme shíhou, meaning: cuándo}
+    comments: []
+    accept_pinyin_mismatch: '么 y 候 van en tono neutro: shénme shíhou'
+  - id: x.cloze.shenmeshihou
+    added: 2026-10-10
+    lang: es
+    type: cloze
+    sentence: s.ni-shenme-shihou-lai
+    gap: e.shenmeshihou
+    targets: [e.shenmeshihou]
+    context: [w.ni, w.lai]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Cuándo vienes?»'}
+    answer: {typed: shen2 me5 shi2 hou5, hanzi: 什么时候, pinyin: shénme shíhou, meaning: cuándo}
+    comments: []
+    accept_pinyin_mismatch: '么 y 候 van en tono neutro: shénme shíhou'
+  - id: x.read.shenmeshihou
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [e.shenmeshihou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 什么时候}
+    answer: {hanzi: 什么时候, pinyin: shénme shíhou, meaning: cuándo}
+    comments: []
+    accept_pinyin_mismatch: '么 y 候 van en tono neutro: shénme shíhou'
+  - id: x.tones.shenmeshihou
+    added: 2026-10-10
+    lang: es
+    type: tones
+    targets: [e.shenmeshihou]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 什么时候, pinyin: shen me shi hou}
+    answer: {typed: '2525', hanzi: 什么时候, pinyin: shénme shíhou, meaning: cuándo}
+    comments: []
+    accept_pinyin_mismatch: '么 y 候 van en tono neutro: shénme shíhou'
+  - id: x.listen.ni-shenme-shihou-lai
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.ni-shenme-shihou-lai
+    targets: [s.ni-shenme-shihou-lai]
+    context: [w.ni, e.shenmeshihou, w.lai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuándo vienes?'}
+    comments: []
+  - id: x.produce.ni-shenme-shihou-lai
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.ni-shenme-shihou-lai
+    targets: [s.ni-shenme-shihou-lai]
+    context: [w.ni, e.shenmeshihou, w.lai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuándo vienes?»'}
+    answer: {meaning: '¿Cuándo vienes?'}
+    comments: []
+  - id: x.listen.dlg-shenmeshihou
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.dlg-shenmeshihou
+    targets: [s.dlg-shenmeshihou]
+    context: [w.ni, e.shenmeshihou, w.qu, w.zhongguo, w.mingnian, w.wo, w.xiang, w.zuo.sit, w.feiji]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Cuándo vas a China? —El año que viene. Quiero ir en avión.'}
+    comments: []
+  - id: x.charsound.hou
+    added: 2026-10-10
+    lang: es
+    type: charsound
+    targets: [w.shihou, e.shenmeshihou]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 候}
+    answer: {typed: hou4, hanzi: 候, pinyin: hòu, meaning: 'Sale en 时候 shíhou «momento; cuando (…的时候)», 什么时候 shénme shíhou «cuándo».'}
+    comments: []
+  - id: x.contrast.shi.time
+    added: '2026-10-10'
+    lang: es
+    type: contrast
+    group: g.side-pieces
+    targets: [c.shi.time]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es shí, «tiempo, hora (en 时候, 时间)»?'}
+    answer: {hanzi: 时, pinyin: shí, meaning: 'tiempo, hora (en 时候, 时间)'}
+    comments: []
+  - id: x.contrast.jin.now
+    added: '2026-10-10'
+    lang: es
+    type: contrast
+    group: g.jin-jin
+    targets: [c.jin.now]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es jīn, «ahora, actual (en 今天, 今年)»?'}
+    answer: {hanzi: 今, pinyin: jīn, meaning: 'ahora, actual (en 今天, 今年)'}
+    comments: []

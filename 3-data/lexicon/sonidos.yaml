@@ -8,6 +8,7 @@ entries:
     explanation: 'Cuando dos sílabas en tercer tono van seguidas, la primera se pronuncia como segundo tono. Se sigue escribiendo
       el tono de referencia: 你好 se escribe nǐ hǎo y suena como ní hǎo.'
     audio_text: 你好
+    audio_pinyin: 'nǐ hǎo (suena ní hǎo)'
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: p.bu-sandhi
@@ -17,6 +18,7 @@ entries:
     explanation: '不 es bù, pero delante de otro cuarto tono pasa a segundo: 不是 se dice bú shì. En pinyin se suele escribir
       ya cambiado.'
     audio_text: 不是
+    audio_pinyin: 'bú shì'
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Dos cuartos tonos seguidos: el primero pasa a segundo (4 + 4 se pronuncia 2 + 4). Por ejemplo, bù shì se dice bú shì.', original: '4 + 4 → 2 + 4. Ej.: bú shì ← bù shì'}
@@ -27,6 +29,7 @@ entries:
     explanation: 'Delante de un 1.º, 2.º, 4.º o neutro, el tercer tono solo baja y no vuelve a subir: en 老师 la sílaba lǎo
       solo baja. El tercer tono completo aparece sobre todo en una sílaba aislada o con énfasis.'
     audio_text: 老师
+    audio_pinyin: 'lǎoshī'
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'En la práctica, el tercer tono completo (bajar y volver a subir) apenas se oye: aparece sobre todo al enfatizar o en una sílaba aislada.', original: 'in fact, ǎ accent is usually varying / subtle; it’s like we don’t do it besides when emphasis'}
@@ -38,6 +41,7 @@ entries:
     explanation: Sílaba corta y ligera, sin contorno propio; su altura depende de la sílaba anterior. En pinyin va sin marca
       (ma, ne, de) y en las respuestas se escribe 5.
     audio_text: 什么
+    audio_pinyin: 'shénme'
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: p.aspiration
@@ -47,6 +51,7 @@ entries:
     explanation: 'La diferencia no es sonora/sorda como en español: b, d y g van sin aire [p t k]; p, t y k llevan un soplo
       [pʰ tʰ kʰ]. 爸 bà [pa˥˩], sin aire; 朋 péng [pʰɤŋ˧˥], con aire.'
     audio_text: 爸爸，朋友
+    audio_pinyin: 'bàba, péngyou'
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Para practicar, pon una hoja de papel delante de la boca: con p, t y k debe moverse; con b, d y g, no.', original: use paper to practice!}
@@ -58,6 +63,7 @@ entries:
       r [ʈʂ ʈʂʰ ʂ ʐ]: punta de la lengua curvada hacia arriba (生 shēng [ʂɤŋ˥]). En la escritura no se confunden: j, q, x solo
       van delante de i o ü.'
     audio_text: 学生
+    audio_pinyin: 'xuésheng'
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Las dos series no se confunden por escrito porque no comparten finales: j, q y x solo van delante de i o ü, y zh, ch y sh nunca.', original: No se maltratan porque no comparten finales}
@@ -67,6 +73,7 @@ entries:
     title: 'La h, desde la garganta'
     explanation: 'La h del pinyin es áspera, más cerca de la j española que de una h muda: el aire roza al fondo de la garganta. 喝 hē, 好 hǎo, 很 hěn.'
     audio_text: 很好
+    audio_pinyin: 'hěn hǎo'
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-25'}
     comments: []
   - id: p.syllables
@@ -75,6 +82,7 @@ entries:
     title: Piensa en sílabas
     explanation: 'Cada hanzi es una sílaba con su tono. Dilas como golpes claros, también dentro de una palabra y aunque se junten varias (谢谢 xièxie, 我不是学生): no las encadenes como en español.'
     audio_text: 我不是学生
+    audio_pinyin: 'wǒ bú shì xuésheng'
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-25'}
     comments:
       - {kind: note, private: false, date: '2026-09-29', text: 'Es de lo más importante: pensar las sílabas una a una, aunque estén juntas en la frase.', original: 'IMPORTANTISMO BRO y sobretodo si alguns otnos estna cercanos, pensaros como uno aunque estne en dinstas partes de laroacion'}
@@ -84,6 +92,7 @@ entries:
     title: z c s, zh ch sh y j q x al oído
     explanation: 'Tres familias que el español junta en una sola s o ch. z c s: lengua plana tras los dientes (四 sì). zh ch sh: punta curvada hacia arriba, sonido más hueco (是 shì). j q x: lengua plana con la punta abajo, sonido más fino, siempre ante i o ü (西 xī). En cada familia, la segunda lleva un golpe de aire: c, ch y q.'
     audio_text: 四，是，西
+    audio_pinyin: 'sì, shì, xī'
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments: []
   - id: p.n-ng
@@ -92,6 +101,7 @@ entries:
     title: -n frente a -ng
     explanation: '-n acaba con la lengua tocando detrás de los dientes, como en «pan». -ng acaba atrás, con la boca abierta, como la n de «tengo»: no suena la g. Cambia la palabra: 心 xīn «corazón», 星 xīng «estrella». La vocal también cambia: delante de -n, la a es clara, y en ian y üan casi una e (先 xiān suena casi «sien»); delante de -ng, la a es oscura, de atrás (想 xiǎng). eng y ueng no son ang y uang: llevan una vocal neutra, cerrada.'
     audio_text: 心，星
+    audio_pinyin: 'xīn, xīng'
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: review-004-2026-10-02-ser-nombres-y-describir.md, date: '2026-10-05'}
     comments:
       - {kind: note, private: false, date: '2026-10-08', text: 'La a de xian me suena abierta y plana; la de xiang, más cerrada, tirando a o. Es la -ng, que lleva la vocal hacia atrás.', original: 'xiáng (close, sonuds a bit o to my ear ... la a de xian me suena como mas pura abierta plana que la de xiang que me suena cerrad atinraod a ó pero puede ser que sea cosa de la ng vs la n)'}
@@ -103,6 +113,7 @@ entries:
     title: '一: yī, yí o yì'
     explanation: 'Suelto, contando o en un número, yī (第一, 十一). Delante de un cuarto tono, yí: 一个 yí ge. Delante de los demás tonos, yì: 一本 yì běn, 一百 yì bǎi. En números de teléfono, yāo, para no confundirlo con 七 qī.'
     audio_text: 一个，一百
+    audio_pinyin: 'yí ge, yì bǎi'
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
   - id: p.vowels
@@ -111,6 +122,7 @@ entries:
     title: 'e, i y o: cuándo no suenan como en español'
     explanation: 'i: suena i (你 nǐ, 西 xī), salvo tras z c s, donde es un zumbido sin vocal (四 sì, 字 zì), y tras zh ch sh r, el mismo zumbido con la lengua curvada (是 shì, 吃 chī). e: sola o tras consonante es una o sin redondear los labios (的 de, 喝 hē); en ie, üe y ei suena e (谢 xiè, 学 xué, 北 běi); en en y eng, una vocal neutra corta (很 hěn, 冷 lěng). o: tras b p m f suena «uo» (我 wǒ); ou suena «ou» (都 dōu); ong suena casi «ung» (中 zhōng).'
     audio_text: 四，是，你；的，谢，很
+    audio_pinyin: 'sì, shì, nǐ; de, xiè, hěn'
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
     comments:
       - {kind: note, private: false, date: '2026-10-08', text: 'La o no es nunca la ò abierta del catalán en ou y ong (都 dōu, 中 zhōng): ahí es cerrada. En uo (我 wǒ, 多 duō) sí es más abierta.', original: 'en chino (observcion) la o nunca suena abierta ocmo catala ò sino isemre cerrada ó'}
@@ -120,6 +132,7 @@ entries:
     title: 'y, w y la ü escondida'
     explanation: 'y y w no son sonidos propios: escriben i y u al principio de sílaba. yi suena i (一 yī), wu suena u (五 wǔ), ya es ia y wo es uo. Tras j, q, x e y, la ü pierde los puntos: ju, qu, xu y yu suenan con ü (去 qù, 鱼 yú), aunque se escriban con u, y el tono se marca igual. Solo tras l y n se ven los puntos (女 nǚ), porque allí también existe la u.'
     audio_text: 一，五，鱼，去
+    audio_pinyin: 'yī, wǔ, yú, qù'
     source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
     comments:
       - {kind: teacher, private: false, date: '2026-10-08', text: 'En clase: w se lee u (五 wǔ) e y se lee i (一 yī); con j, q, x e y va siempre la ü.'}

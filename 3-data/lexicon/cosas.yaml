@@ -75,7 +75,8 @@ entries:
     meaning: {es: 'ese, eso; aquel', en: that}
     connection: {kind: sound, with: [哪], text: '那 nà da el sonido a 哪 nǎ; la boca 口 lo convierte en pregunta.'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: 'Al hablar se oye mucho nèige: es 那个 contraído de 那一个, lo mismo que nàge.'}
   - id: g.na-nar
     kind: group
     basis: visual
@@ -240,6 +241,7 @@ entries:
     pinyin: 'méi'
     meaning: {es: 'no (no pasó; no hay)', en: 'not (didn''t; there isn''t)'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    accept_cards: 'los huecos de 不 / 没 practican la regla que más confunde (review 008: «debería haber varias tarjetas de huecos»)'
   - id: w.guo.exp
     use: say
     role: function
@@ -251,6 +253,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Detrás del verbo: lo has hecho alguna vez. 我去过北京 «he estado en Pekín»; 你看过这个电影吗？ «¿has visto esta película?».'}
+      - {kind: mnemonic, private: false, date: '2026-10-09', text: '过 es atravesar: un puente o una experiencia. Detrás del verbo es como un sello en el pasaporte: 我去过北京.'}
   - id: w.yong
     use: say
     role: content
@@ -374,7 +377,8 @@ entries:
     meaning: {es: 'por qué', en: 'why'}
     accept_pinyin_mismatch: 'me átono: wèishénme'
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: '为 wèi «para, por» + 什么 «qué»: «¿por qué?». 为 suelto: 我为你高兴 «me alegro por ti».'}
   - id: w.zheme
     use: hear
     role: function
@@ -686,4 +690,45 @@ entries:
       - {ref: w.na.which, cue: 'baja y sube'}
       - {ref: w.na.that, cue: 'cae'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-08'}
+    comments: []
+  - id: w.jinlai
+    use: say
+    role: content
+    kind: word
+    hanzi: 进来
+    pinyin: jìnlái
+    meaning: {es: entrar (hacia aquí), en: to come in}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: '进来 es entrar hacia donde está quien habla; 进去, entrar alejándose, hacia allí. El 来 y el 去 dicen hacia dónde: 来 «venir», 去 «ir».'}
+  - id: w.jinqu
+    use: say
+    role: content
+    kind: word
+    hanzi: 进去
+    pinyin: jìnqù
+    meaning: {es: entrar (hacia allí), en: to go in}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []
+  - id: w.zuo.do
+    use: say
+    role: content
+    kind: word
+    hanzi: 做
+    pinyin: zuò
+    meaning: {es: hacer, en: 'to do, to make'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: 'Hacer algo: 做饭 «cocinar». 你在做什么？ «¿qué estás haciendo?» es de las preguntas más útiles.'}
+      - {kind: mnemonic, private: false, date: '2026-10-09', text: '做 lleva 亻 «persona»: una persona haciendo algo. 坐 «sentarse», que suena igual, son dos personas 人 sentadas en el suelo 土.'}
+  - id: g.zuo-do
+    kind: group
+    basis: homophone
+    title: 坐, 做 y 左
+    explanation: 坐 y 做 suenan igual, zuò; 左 baja y sube. Los separa la pieza.
+    members:
+      - {ref: w.zuo.sit, cue: 'dos 人 sobre 土, el suelo'}
+      - {ref: w.zuo.do, cue: 亻 a la izquierda}
+      - {ref: w.zuo.left, cue: baja y sube; 工 abajo}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
     comments: []

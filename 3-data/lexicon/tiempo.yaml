@@ -265,3 +265,38 @@ entries:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Delante del verbo: 我得先复习一下笔记 «antes tengo que repasar los apuntes». Es el mismo 先 de 先生.'}
+  - id: e.shenmeshihou
+    use: say
+    role: function
+    kind: expression
+    hanzi: 什么时候
+    pinyin: shénme shíhou
+    meaning: {es: cuándo, en: when}
+    level: 1
+    level_reason: 什么 y 时候 son HSK 1; es la forma corriente de preguntar «cuándo»
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: 'Palabra a palabra: 什么 «qué» + 时候 «momento». Va donde iría la respuesta: 你什么时候来？ «¿cuándo vienes?».'}
+    accept_pinyin_mismatch: '么 y 候 van en tono neutro: shénme shíhou'
+  - id: c.shi.time
+    use: read
+    use_reason: 'ligado: se aprende dentro de 时候 y 时间; aquí, para no confundirlo con 的 y 对'
+    kind: character
+    hanzi: 时
+    pinyin: shí
+    meaning: {es: 'tiempo, hora (en 时候, 时间)', en: 'time, hour'}
+    standalone: 'no'
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []
+  - id: c.jin.now
+    use: read
+    use_reason: 'ligado: se aprende dentro de 今天 y 今年'
+    kind: character
+    hanzi: 今
+    pinyin: jīn
+    meaning: {es: 'ahora, actual (en 今天, 今年)', en: 'now, present'}
+    standalone: 'no'
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []
+    level: 1
+    level_reason: 'ligado: se aprende en 今天 y 今年, HSK 1'

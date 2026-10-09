@@ -175,3 +175,63 @@ entries:
       - {ref: w.nali, cue: '你在哪里？'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments: []
+  - id: w.hui.return
+    use: say
+    role: content
+    kind: word
+    hanzi: 回
+    pinyin: huí
+    meaning: {es: volver (a un sitio), en: to return}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: '回家 «volver a casa», 回来 «volver aquí». No confundir con 会 huì, que cae: 我会回来 «volveré».'}
+  - id: w.chu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 出
+    pinyin: chū
+    meaning: {es: salir, en: to go out}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []
+  - id: w.kaiche
+    use: hear
+    role: content
+    kind: word
+    hanzi: 开车
+    pinyin: kāichē
+    meaning: {es: conducir, en: to drive}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: 'Para ir en un transporte se dice 坐 «sentarse»: 坐飞机, 坐火车. Si conduces tú, 开车.'}
+  - id: w.pangbian
+    use: hear
+    role: content
+    kind: word
+    hanzi: 旁边
+    pinyin: pángbiān
+    meaning: {es: al lado, en: 'beside, next to'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []
+    connection: {kind: sound, with: [房], text: '方 fāng da el sonido a 旁 páng y a 房 fáng, el de 房间.'}
+  - id: w.xi.west
+    use: read
+    use_reason: como dirección casi no se dice suelto; aquí se reconoce dentro de 东西 y 西班牙
+    role: content
+    kind: word
+    hanzi: 西
+    pinyin: xī
+    meaning: {es: oeste, en: west}
+    standalone: rare
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []
+  - id: g.hui-hui
+    kind: group
+    basis: soundalike
+    title: 会 y 回
+    explanation: 'Misma sílaba, distinto tono: 我会回来 «volveré» lleva los dos.'
+    members:
+      - {ref: w.hui.can, cue: 'cae (4.º); va delante de un verbo'}
+      - {ref: w.hui.return, cue: 'sube (2.º): a un sitio, 回家'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []

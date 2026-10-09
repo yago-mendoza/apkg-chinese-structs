@@ -149,6 +149,9 @@ characters:
     phonetic: {char: 免, pinyin: 'miǎn'}
     semantic: 日
     override: 'La propia pista de la fuente dice que 免 da el sonido, así que es fonético-semántico.'
+    memory:
+      es: 'El sol 日 se libra 免 de trabajar y se va a dormir: se hace de noche.'
+      en: 'The sun 日 gets off 免 work and goes to sleep: night falls.'
     confidence: high
   安:
     gloss: {es: 'tranquilo, a salvo', en: 'peaceful, safe'}
@@ -377,6 +380,9 @@ characters:
     phonetic: {char: 亡, pinyin: 'wáng'}
     semantic: 忄
     override: 'La propia pista de la fuente dice que 亡 da el sonido, así que es fonético-semántico.'
+    memory:
+      es: 'Un corazón 忄 junto a una papelera 亡 llena de trabajo: estar liado, sea faena pesada o algo que te gusta.'
+      en: 'A heart 忄 next to a bin 亡 full of work: being busy, whether it is a chore or something you love.'
     confidence: high
   助:
     gloss: {es: 'ayudar', en: 'to help'}
@@ -780,6 +786,9 @@ characters:
     traditional: 習
     type: ideographic
     override: 'El dataset no da tipo; se explica por la forma tradicional 習, un ideograma.'
+    memory:
+      es: 'Un ala que se mueve una y otra vez: el pájaro practica hasta que vuela.'
+      en: 'A wing flapping again and again: the bird practises until it flies.'
     confidence: high
   成:
     gloss: {es: 'lograr; volverse', en: 'to accomplish; to become'}
@@ -2389,6 +2398,9 @@ characters:
     type: ideographic
     phonetic: null
     override: 'En la explicación clásica 首 «cabeza» aporta el sentido; que dé también el sonido se discute.'
+    memory:
+      es: Una cabeza 首 que avanza 辶 y va abriendo el camino.
+      en: A head 首 moving forward 辶, opening up the road.
     confidence: high
   阿:
     gloss: {es: 'prefijo cariñoso (阿姨)', en: 'affectionate prefix (阿姨)'}
@@ -3169,6 +3181,43 @@ characters:
     memory:
       es: 'Un pájaro 鸟 con caparazón 甲: el pato, rechoncho y bien protegido.'
       en: 'A bird 鸟 with a shell 甲: the duck, plump and well protected.'
+    confidence: high
+  做:
+    gloss: {es: 'hacer', en: 'to do, to make'}
+    origin:
+      es: 'Fonético-semántico: 亻 «persona» da el sentido, alguien que hace algo, y 故 (gù) el sonido, hoy lejano. Es una forma tardía de 作, que también se lee zuò y significa «hacer».'
+      en: 'Phonetic-semantic: 亻 (person) gives the meaning, someone doing something, and 故 (gù) the sound, now far off. It is a later form of 作, also read zuò and meaning to do.'
+    type: pictophonetic
+    phonetic: {char: 故, pinyin: 'gù'}
+    semantic: 亻
+    override: 'La propia pista de la fuente dice que 故 da el sonido, así que es fonético-semántico.'
+    confidence: high
+  旁:
+    gloss: {es: 'lado', en: 'side'}
+    origin:
+      es: 'Fonético-semántico: 方 (fāng) da el sonido, parecido a páng: cambian la inicial y el tono. Lo de arriba, que hoy parece 立, era otra pieza cuyo sentido se discute.'
+      en: 'Phonetic-semantic: 方 (fāng) gives the sound, close to páng: the initial and the tone change. The top, which looks like 立 today, was another piece whose meaning is disputed.'
+    memory:
+      es: 'Alguien de pie 立 al lado de un cuadrado 方: está al lado.'
+      en: 'Someone standing 立 beside a square 方: right next to it.'
+    confidence: medium
+  王:
+    gloss: {es: 'rey; Wang (apellido)', en: 'king; Wang (surname)'}
+    origin:
+      es: 'Pictograma: la hoja de un hacha grande, símbolo del poder del rey. La explicación clásica, tres rayas (cielo, persona y tierra) unidas por una vertical, es posterior.'
+      en: 'Pictograph: the blade of a large axe, a symbol of royal power. The classical explanation, three strokes (heaven, man and earth) joined by a vertical one, came later.'
+    type: pictographic
+    override: 'La fuente da la explicación clásica (ideograma); las formas más antiguas dibujan un hacha.'
+    confidence: high
+  稍:
+    gloss: {es: 'un poco', en: 'a little'}
+    origin:
+      es: 'Fonético-semántico: 禾 «cereal» da la categoría y 肖 (xiāo) el sonido, parecido a shāo: mismo tono, cambia la inicial.'
+      en: 'Phonetic-semantic: 禾 (grain) gives the category and 肖 (xiāo) the sound, close to shāo: same tone, different initial.'
+    type: pictophonetic
+    phonetic: {char: 肖, pinyin: 'xiāo'}
+    semantic: 禾
+    override: 'La propia pista de la fuente dice que 肖 da el sonido, así que es fonético-semántico.'
     confidence: high
 
 parts:

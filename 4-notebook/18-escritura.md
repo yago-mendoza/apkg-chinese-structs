@@ -84,6 +84,38 @@ Carácter frente a palabra.
 - 字 zì · 汉字
 - 词 cí · uno o más 字 juntos
 
+## 西 y 四
+
+Los dos parecen una caja con dos trazos dentro.
+
+- 西 xī · la raya de arriba sobresale y la caja está abierta por arriba; dentro, dos trazos rectos
+- 四 sì · caja cerrada; dentro, dos trazos que se curvan
+
+## 有 y 看
+
+Los dos empiezan arriba con una mano inclinada y debajo tienen una caja con rayas.
+
+- 有 yǒu · debajo, 月: dos rayas dentro y patas abiertas
+- 看 kàn · debajo, 目, el ojo: más alto, tres rayas dentro; encima, una mano 手 con más rayas
+
+## 对, 时, 的 y 狗
+
+Una pieza estrecha a la izquierda y otra que parece un conejito de perfil a la derecha.
+
+- 对 duì · 又 a la izquierda; 寸 a la derecha
+- 时 shí · 日 a la izquierda; 寸 a la derecha
+- 的 de · 白 a la izquierda; 勺, una cuchara con una gota, a la derecha
+- 狗 gǒu · 犭, el animal, a la izquierda; 句 a la derecha
+
+## 日, 白, 百 y 目
+
+日 con un trazo encima es 白; 白 con una raya encima es 百. 目 es más alto.
+
+- 日 rì · una raya dentro
+- 白 bái · 日 con un trazo corto encima
+- 百 bǎi · 白 con una raya larga encima
+- 目 mù · más alto y estrecho: dos rayas dentro
+
 ## Frases
 
 - ✅🃏 我写汉字。 · wǒ xiě hànzì · Escribo caracteres chinos.

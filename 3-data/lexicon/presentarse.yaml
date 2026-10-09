@@ -70,6 +70,7 @@ entries:
     relations: [p.bu-sandhi]
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
+    accept_cards: 'los huecos de 不 / 没 practican la regla que más confunde (review 008: «debería haber varias tarjetas de huecos»)'
   - id: w.ma
     use: say
     role: function
@@ -117,7 +118,8 @@ entries:
     pinyin: de
     meaning: {es: 'de (posesión: 我的 = mi)', en: '''s (possessive)'}
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: 'No tiene una sola traducción: 我的 «mío», 这是我的 «es mío», 真的 «de verdad». Une lo que describe con lo descrito.'}
   - id: w.jiao
     use: say
     role: content
@@ -263,6 +265,7 @@ entries:
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: 'Una boca 口 en la puerta 门, preguntando.', original: (como una boca en la puerta preuntando)}
       - {kind: character, private: false, date: '2026-09-27', text: '门 mén le da el sonido: wèn.'}
+      - {kind: note, private: false, date: '2026-10-09', text: 'Preguntar es wèn, con -n al final; no confundir con wèi, el 为 de 为什么.', original: 'Preguntar es wen, no wei (OJO ANKI)'}
   - id: w.beijing
     use: say
     role: content
@@ -462,4 +465,27 @@ entries:
       - {ref: w.cai.guess, cue: 'alto y plano'}
       - {ref: w.cai, cue: 'cae'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.wang.surname
+    use: hear
+    role: content
+    kind: word
+    hanzi: 王
+    pinyin: Wáng
+    meaning: {es: Wang (apellido), en: Wang (surname)}
+    sense_level: la lista del HSK da 王 por «rey» (HSK 4); como apellido es de los más comunes y sale desde el principio
+    level: 1
+    level_reason: 'apellido muy común: 王阿姨, 王老师'
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: 'Como palabra suelta, 王 es «rey» [HSK 4]; aquí es el apellido.'}
+  - id: g.wang-wang
+    kind: group
+    basis: soundalike
+    title: 王 y 忘
+    explanation: Misma sílaba, distinto tono.
+    members:
+      - {ref: w.wang.surname, cue: 'sube (2.º): el apellido, 王阿姨'}
+      - {ref: w.wang.forget, cue: 'cae (4.º): 我忘了'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
     comments: []

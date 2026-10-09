@@ -36,3 +36,4 @@ Casi iguales al oído y con el mismo tono: solo cambia la vocal. En 热, la e os
 - ✅🃏 明天会下雨。 · míngtiān huì xiàyǔ · Mañana lloverá.
 - ✅🃏 天气真好！ · tiānqì zhēn hǎo · ¡Qué buen tiempo hace!
 - ✅🃏 北京下雪了。 · Běijīng xiàxuě le · Está nevando en Pekín.
+- ✅🃏 好冷！ · hǎo lěng · ¡Qué frío!

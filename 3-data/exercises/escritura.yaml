@@ -570,3 +570,13 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Antes tengo que repasar los apuntes.»'}
     answer: {meaning: Antes tengo que repasar los apuntes.}
     comments: []
+  - id: x.contrast.mu.eye
+    added: '2026-10-10'
+    lang: es
+    type: contrast
+    group: g.ri-bai-mu
+    targets: [c.mu.eye]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es mù, «ojo (como componente)»?'}
+    answer: {hanzi: 目, pinyin: mù, meaning: ojo (como componente)}
+    comments: []

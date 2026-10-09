@@ -119,6 +119,7 @@ entries:
       - {kind: note, private: false, date: '2026-09-29', text: 'También sirve de «vale», como 好的.', original: kê yî = okay (like ke ài) (its liek phnetical calco)}
       - {kind: linguistic, private: false, date: '2026-09-27', text: '可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2].'}
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Pregunta y respuesta a la vez: 可以吗？ —可以。 «¿Se puede? —Sí». En una tienda, 这个大小可以吗？ «¿este tamaño está bien?». Según el contexto también se dice 行 xíng [HSK 1] o 没问题 méi wèntí [问题 HSK 2], «no hay problema».', original: 'En kêyî hay que explcar que no es lo mismo poder tener permiso que 能 (néng): poder / ser capaz de. [...] keyi estaria bien hacer hincapie en que est tanto "poder" para preguntas como respuesta como ... loksea, y expresiones sinonimss segun ctx sabes'}
+      - {kind: mnemonic, private: false, date: '2026-10-09', text: 'Kěyǐ suena un poco a «can», «poder» en inglés.', original: Sound a bit like can  (jeje pa recorfar)}
   - id: g.yes-forms
     kind: group
     basis: set
@@ -155,6 +156,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: '对得起 es estar a la altura con alguien; 对不起, no estarlo: te he fallado, perdón.'}
+      - {kind: mnemonic, private: false, date: '2026-10-09', text: '对不起 empieza por 对 «sí, correcto»: al pedir perdón juntas las manos, como quien afirma y reza. El que empieza por 不 «no», 不客气, es la mano que dice que no: «no hay de qué».', original: 'Cuando digo duibuqi y bukeqi me confundo. Duibuqi, bukeqi. Pero si lo pienso, el que empieza por bu, que es no. Si lo hago con la mano, como diciendo que no con la mano, es como de nada, está claro. Bukeqi. Pero si digo duibuqi, pedir perdón es como juntar las manos, como si fuera a rezar, lo cual se parece más a afirmar algo, como dui. Dui. Dui. Duibuqi. y así me acuerdo. Podrías apuntar eso en la card que toque'}
   - id: g.excuse
     kind: group
     basis: set
@@ -176,8 +178,9 @@ entries:
     accept_pinyin_mismatch: 'la última sílaba es átona: guānxi'
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: 'La respuesta a 对不起 o a 不好意思: «no pasa nada». Literalmente, «no hay relación».'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'La respuesta a 对不起 o a 不好意思: «no pasa nada».'}
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Palabra a palabra: 没 «no hay» + 关系 [HSK 3] «relación»: no tiene que ver, no importa. Para quitar importancia a algo que ha pasado; para aceptar algo que te piden, 没问题.'}
+      - {kind: mnemonic, private: false, date: '2026-10-09', text: 'Truco: «¡eso no tiene relación con nada importante!».', original: 'SUSTITUYE en el Anki la trad explicación mejor por: 🧠 Truco: «¡Eso no tiene ninguna relación con nada importante!».'}
   - id: e.bukeqi
     use: say
     role: content
@@ -282,6 +285,7 @@ entries:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: '我不知道 «no lo sé».'}
+      - {kind: linguistic, private: false, date: '2026-10-09', text: '知 suelto (不知) suena literario: al hablar, 知道.'}
   - id: e.zhendema
     use: say
     role: content
@@ -420,3 +424,41 @@ entries:
       - {ref: w.keyi, cue: 'tener permiso, estar bien: 可以坐这里吗？'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments: []
+  - id: e.zouba
+    use: say
+    role: content
+    kind: expression
+    hanzi: 走吧
+    pinyin: zǒu ba
+    meaning: {es: '¡vamos!, vámonos', en: let's go}
+    level: 1
+    level_reason: 走 y 吧 son HSK 1; propuesta de todos los días
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: 'Palabra a palabra: 走 «irse, andar» + 吧, que lo propone: «vámonos».'}
+  - id: e.wodecuo
+    use: say
+    role: content
+    kind: expression
+    hanzi: 我的错
+    pinyin: wǒ de cuò
+    meaning: {es: es culpa mía, en: my fault}
+    level: 1
+    level_reason: 我, 的 y 错 son HSK 1
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: 我的错 «culpa mía» asume la culpa; 我错了 «me he equivocado» reconoce un error.}
+      - {kind: linguistic, private: false, date: '2026-10-09', text: 'Palabra a palabra: 我的 «mi» + 错 «error»: «mi error».'}
+  - id: e.shaodeng
+    use: say
+    role: content
+    kind: expression
+    hanzi: 稍等
+    pinyin: shāo děng
+    meaning: {es: un momento (espere), en: just a moment}
+    level: 2
+    level_reason: 稍 no es de los primeros niveles, pero 稍等 se oye en cada tienda y restaurante; 等 es HSK 1
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: 'Más cortés que 等一下: lo dice el que atiende. 请稍等 «espere un momento, por favor».'}
+      - {kind: linguistic, private: false, date: '2026-10-09', text: 'Palabra a palabra: 稍 «un poco» + 等 «esperar»: «espere un poco».'}

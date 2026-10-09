@@ -175,3 +175,30 @@ sentences:
       - {text: 。}
     translation: {es: 'Cuando tengas tiempo, llámame.', en: 'Call me when you have time.'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.ni-shenme-shihou-lai
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 什么时候, ref: e.shenmeshihou, pinyin: shénme shíhou}
+      - {text: 来, ref: w.lai, pinyin: lái}
+      - {text: ？}
+    translation: {es: '¿Cuándo vienes?', en: 'When are you coming?'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.dlg-shenmeshihou
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 什么时候, ref: e.shenmeshihou, pinyin: shénme shíhou}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 中国, ref: w.zhongguo, pinyin: Zhōngguó}
+      - {text: ？}
+      - {text: 明年, ref: w.mingnian, pinyin: míngnián}
+      - {text: 。}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 想, ref: w.xiang, pinyin: xiǎng}
+      - {text: 坐, ref: w.zuo.sit, pinyin: zuò}
+      - {text: 飞机, ref: w.feiji, pinyin: fēijī}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 。}
+    translation: {es: '—¿Cuándo vas a China? —El año que viene. Quiero ir en avión.', en: '—When are you going to China? —Next year. I want to fly.'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}

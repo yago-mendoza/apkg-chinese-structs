@@ -448,3 +448,86 @@ sentences:
       - {text: 吗, ref: w.ma, pinyin: 'ma'}
       - {text: ？}
     translation: {es: '¡Qué buen tiempo hace hoy! ¿Quieres venir a la montaña conmigo?', en: 'The weather is great today! Do you want to go hiking with me?'}
+  - id: s.ta-hai-mei-lai
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 还, ref: w.hai.still, pinyin: hái}
+      - {text: 没, ref: w.mei, pinyin: méi}
+      - {text: 来, ref: w.lai, pinyin: lái}
+      - {text: 。}
+    translation: {es: Todavía no ha venido., en: He hasn't come yet.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-mingtian-bu-qu
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 明天, ref: w.mingtian, pinyin: míngtiān}
+      - {text: 不, ref: w.bu, pinyin: bú, sandhi: true}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 。}
+    translation: {es: Mañana no voy., en: I'm not going tomorrow.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.qing-jinlai
+    use: say
+    segments:
+      - {text: 请, ref: w.qing, pinyin: qǐng}
+      - {text: 进来, ref: w.jinlai, pinyin: jìnlái}
+      - {text: 。}
+    translation: {es: 'Pasa, por favor (entra aquí).', en: Please come in.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.bie-jinqu
+    use: say
+    segments:
+      - {text: 别, ref: w.bie, pinyin: bié}
+      - {text: 进去, ref: w.jinqu, pinyin: jìnqù}
+      - {text: ！}
+    translation: {es: ¡No entres ahí!, en: Don't go in there!}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.ni-zai-zuo-shenme
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 在, ref: w.zai.progressive, pinyin: zài}
+      - {text: 做, ref: w.zuo.do, pinyin: zuò}
+      - {text: 什么, ref: w.shenme, pinyin: shénme}
+      - {text: ？}
+    translation: {es: '¿Qué estás haciendo?', en: 'What are you doing?'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-zuo-fan
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 做, ref: w.zuo.do, pinyin: zuò}
+      - {text: 饭, ref: w.fan, pinyin: fàn}
+      - {text: 。}
+    translation: {es: Yo cocino., en: I'll cook.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-zhidao
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 知道, ref: w.zhidao, pinyin: zhīdao}
+      - {text: 。}
+    translation: {es: Ya lo sé., en: I know.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-zhende-zhidao
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 真的, ref: w.zhende, pinyin: zhēnde}
+      - {text: 知道, ref: w.zhidao, pinyin: zhīdao}
+      - {text: 。}
+    translation: {es: De verdad que lo sé., en: I really do know.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-mei-qu-guo-zhongguo
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 没, ref: w.mei, pinyin: méi}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 过, ref: w.guo.exp, pinyin: guo}
+      - {text: 中国, ref: w.zhongguo, pinyin: Zhōngguó}
+      - {text: 。}
+    translation: {es: Nunca he ido a China., en: I've never been to China.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}

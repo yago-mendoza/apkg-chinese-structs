@@ -5,7 +5,7 @@
 ## Vocabulario
 
 - ✅🃏 很 hěn [xən˧˩˧] · muy (con adjetivos, a menudo solo enlace) · _adverbio_ · Sin 很, el adjetivo suena a comparación implícita: «yo estoy bien (a diferencia de otros)». · Con un adjetivo como predicado, 很 suele ser un enlace sin énfasis: 我很好 = estoy bien. · Con adjetivos no se usa 是: 他很高 «es alto», 他不高 «no es alto», 他高吗？ o 他高不高？ «¿es alto?». Decir 他是高 es un error típico.
-- ✅🃏 好 hǎo [xɑʊ˧˩˧] · bien, bueno · _adjetivo_ · 女 «mujer» + 子 «niño»: una madre con su hijo, imagen de algo bueno.
+- ✅🃏 好 hǎo [xɑʊ˧˩˧] · bien, bueno · _adjetivo_ · 女 «mujer» + 子 «niño»: una madre con su hijo, imagen de algo bueno. · Delante de un adjetivo, 好 es «qué…»: 好冷！ «¡qué frío!», 好贵！ «¡qué caro!». Es el mismo de 好久不见.
 - ✅🃏 高 gāo [kɑʊ˥] · alto · _adjetivo_ · Un edificio alto: el tejado 亠, un piso 口 y, abajo, 冂 con una ventana 口. · La parte de arriba se repite, recortada, en 京 jīng de 北京 y en 亮 liàng «brillante» [HSK 2].
 - ✅🃏 矮 ǎi [aɪ˧˩˧] · bajo (de estatura) · _adjetivo_ · 矢 es una flecha, que antes servía de medida: al medir se queda corto, bajo. · Para personas y edificios; para longitud o tiempo, 短 duǎn.
 - ✅🃏 胖 pàng [pʰɑŋ˥˩] · gordo · _adjetivo_ · El 月 de la izquierda es 肉 «carne», como en muchas partes del cuerpo; no «luna». · 半 bàn «mitad» [HSK 1] le da el sonido: pàng. 月 es 肉 «carne». · Mitad carne, mitad grasa: gordo.
@@ -23,7 +23,7 @@
 - ✅🃏 太 tài [tʰaɪ˥˩] · demasiado; muy (en 太好了) · _adverbio_
 - ✅🃏 天 tiān [tʰjɛn˥] · día; cielo · _sustantivo_ · Aparece en 明天 míngtiān «mañana» y 天气 tiānqì «el tiempo».
 - ✅🃏 累 lèi [leɪ˥˩] · cansado · _adjetivo_
-- ✅🃏 腿 tuǐ [tʰweɪ˧˩˧] · pierna · _sustantivo_ · 月 a la izquierda es «carne» (partes del cuerpo), como en 胖. 你的腿好长啊！ es un piropo.
+- ✅🃏 腿 tuǐ [tʰweɪ˧˩˧] · pierna · _sustantivo_ · 月 a la izquierda es «carne» (partes del cuerpo), como en 胖. 你的腿好长啊！ es un piropo. · El mismo 月 «carne» está en 脸 «cara» [HSK 2], 脚 «pie» [HSK 2] y 脑 «cerebro», el de 电脑 «ordenador».
 - ✅🃏 长 cháng · largo · _adjetivo_ · Leído zhǎng es otro sentido, «crecer» [HSK 2]. Aquí, cháng: 好长 «qué largo».
 - ✅🃏 比 bǐ [pi˧˩˧] · que (para comparar) · _preposición_ · A 比 B + adjetivo, sin 很: 他比我高 «es más alto que yo».
 - ✅🃏 最 zuì [tsweɪ˥˩] · el más, lo que más · _adverbio_ · Delante del verbo o del adjetivo: 我最喜欢中国菜 «lo que más me gusta es la comida china».
@@ -35,6 +35,8 @@
 - ✅🃏 有趣 yǒuqù [joʊ˧˩˧ tɕʰy˥˩] · interesante, divertido · _adjetivo_ · Palabra a palabra: 有 «tener» + 趣 «gracia». · En clase: 那本书真有趣！ «¡qué interesante es ese libro!».
 - ✅🃏 有意思 yǒuyìsi [joʊ˧˩˧ i˥˩ sɯ] · interesante · _expresión_ · Palabra a palabra: 有 «tener» + 意思 «sentido»: «que tiene gracia». Es lo más corriente al hablar: 中文很有意思.
 - ✅🃏 特别 tèbié [tʰɤ˥˩ pjɛ˧˥] · especialmente, muy · _adverbio_ · Delante de un adjetivo es más fuerte que 很: 今天特别冷 «hoy hace muchísimo frío».
+- ✅🃏 多 duō [twɔ˥] · mucho, muchos · _adjetivo_ · Delante de una medida pregunta cuánto: 多大 «qué edad, qué tamaño», 多少 «cuánto».
+- ✅🃏 真的 zhēnde [ʈʂən˥ tɤ] · de verdad, en serio · _adverbio_ · 真 delante de un adjetivo es «qué…»: 真好. 真的 es «de verdad»: 我真的知道 «de verdad que lo sé»; 真的？, con tono de pregunta, ya es «¿en serio?».
 
 ## 大, 太 y 天
 
@@ -109,3 +111,4 @@ Solo cambia el tono: 手 baja y sube, 瘦 cae.
 - ✅🃏 那本书真有趣！ · nà běn shū zhēn yǒuqù · ¡Qué interesante es ese libro!
 - ✅🃏 今天特别冷。 · jīntiān tèbié lěng · Hoy hace muchísimo frío.
 - ✅🃏 中文很有意思。 · Zhōngwén hěn yǒuyìsi · El chino es muy interesante.
+- ✅🃏 今天人很多。 · jīntiān rén hěn duō · Hoy hay mucha gente.

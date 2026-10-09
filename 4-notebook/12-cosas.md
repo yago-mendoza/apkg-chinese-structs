@@ -10,7 +10,7 @@
 - ✅🃏 看看 kànkan [kʰan˥˩ kʰan] · echar un vistazo · _verbo_ · Repetir el verbo lo suaviza: «mirar un poco», no «mirar dos veces».
 - ✅🃏 足球 zúqiú [tsu˧˥ tɕʰjoʊ˧˥] · fútbol · _sustantivo_ · Calco: 足 «pie» + 球 «pelota».
 - ✅🃏 这 zhè [ʈʂɤ˥˩] · este, esto · _pronombre_
-- ✅🃏 那 nà [na˥˩] · ese, eso; aquel · _pronombre_
+- ✅🃏 那 nà [na˥˩] · ese, eso; aquel · _pronombre_ · Al hablar se oye mucho nèige: es 那个 contraído de 那一个, lo mismo que nàge.
 - ✅🃏 小猫 xiǎomāo [ɕjɑʊ˧˩˧ mɑʊ˥] · gatito · _sustantivo_
 - ✅🃏 工作 gōngzuò [kʊŋ˥ tswɔ˥˩] · trabajo; trabajar · _verbo_ · 工 gōng es el de 工程师. 恭 gōng «respetuoso» suena igual y es otro carácter.
 - ✅🃏 走 zǒu [tsoʊ˧˩˧] · irse; andar · _verbo_
@@ -24,7 +24,7 @@
 - ✅🃏 能 néng [nɤŋ˧˥] · poder (ser capaz) · _verbo_
 - ✅🃏 和 hé [xɤ˧˥] · y, con · _conjunción_ · 和 solo une nombres: 咖啡和巧克力, 我和你. Dos frases o dos adjetivos no se unen con 和: 他很高，也很帅. · 禾 hé «cereal» da el sonido y 口 «boca» aporta el sentido. El sentido antiguo es «armonía, concordia»; de dos cosas que armonizan pasó a unir: A 和 B. · El cereal 禾 llega a la boca 口: comida compartida, armonía, estar juntos.
 - ✅🃏 没 méi [meɪ˧˥] · no (no pasó; no hay) · _adverbio_
-- ✅🃏 过 guo [kwɔ] · haber (hecho alguna vez) · _partícula_ · Detrás del verbo: lo has hecho alguna vez. 我去过北京 «he estado en Pekín»; 你看过这个电影吗？ «¿has visto esta película?».
+- ✅🃏 过 guo [kwɔ] · haber (hecho alguna vez) · _partícula_ · Detrás del verbo: lo has hecho alguna vez. 我去过北京 «he estado en Pekín»; 你看过这个电影吗？ «¿has visto esta película?». · 过 es atravesar: un puente o una experiencia. Detrás del verbo es como un sello en el pasaporte: 我去过北京.
 - ✅🃏 用 yòng [jʊŋ˥˩] · usar; con (un instrumento) · _verbo_ · Va antes de la acción: 我用筷子吃饭 «como con palillos». Primero con qué, luego qué haces.
 - ✅🃏 坐 zuò [tswɔ˥˩] · sentarse; ir en (un vehículo) · _verbo_ · 请坐 «siéntese»; 坐飞机 «ir en avión», 坐车 «ir en coche o autobús».
 - ✅🃏 进 jìn [tɕin˥˩] · entrar · _verbo_ · Pasar de fuera a dentro: 请进 «pase». 进来 «entrar hacia aquí», 进去 «entrar hacia allí».
@@ -37,7 +37,7 @@
 - ✅🃏 非常 fēicháng [feɪ˥ ʈʂʰɑŋ˧˥] · muy, muchísimo · _adverbio_ · Más fuerte que 很: 非常好 «muy bien». Para agradecer se dice 太谢谢你了 o 非常感谢 [HSK 2]; «非常谢谢你» suena forzado.
 - ✅🃏 大象 dàxiàng [ta˥˩ ɕjɑŋ˥˩] · elefante · _sustantivo_
 - ✅🃏 音乐 yīnyuè [in˥ ɥœ˥˩] · música · _sustantivo_
-- ✅🃏 为什么 wèishénme [weɪ˥˩ ʂən˧˥ mɤ] · por qué · _interrogativo_
+- ✅🃏 为什么 wèishénme [weɪ˥˩ ʂən˧˥ mɤ] · por qué · _interrogativo_ · 为 wèi «para, por» + 什么 «qué»: «¿por qué?». 为 suelto: 我为你高兴 «me alegro por ti».
 - ✅🃏 这么 zhème [ʈʂɤ˥˩ mɤ] · tan, así de · _pronombre_ · Delante de un adjetivo: 你为什么这么高？ «¿por qué eres tan alto?».
 - ✅🃏 出去 chūqu [ʈʂʰu˥ tɕʰy] · salir (hacia fuera) · _verbo_ · 出 es una planta que sale de un tiesto. 出来 chūlái es salir hacia aquí. · 出去啊？ «¿sales?» es un saludo al cruzarte con alguien que se va.
 - ✅🃏 树 shù [ʂu˥˩] · árbol · _sustantivo_ · 这棵树很高 «este árbol es alto»: 棵 kē es el clasificador de los árboles.
@@ -59,6 +59,9 @@
 - ✅🃏 离开 líkāi [li˧˥ kʰaɪ˥] · irse de, dejar (un sitio) · _verbo_ · Palabra a palabra: 离 «separarse» + 开 «abrir, partir».
 - ✅🃏 回答 huídá [xweɪ˧˥ ta˧˥] · responder · _verbo_ · Palabra a palabra: 回 «volver» + 答 «contestar»: devolver la palabra. 回答问题 «contestar una pregunta».
 - ✅🃏 表达 biǎodá [pjɑʊ˧˩˧ ta˧˥] · expresar · _verbo_ · Comparte 表 «mostrar» con 手表; en la escritura tradicional eran dos caracteres distintos. · 大 dà da el sonido a 达 dá.
+- ✅🃏 进来 jìnlái [tɕin˥˩ laɪ˧˥] · entrar (hacia aquí) · _verbo_ · 进来 es entrar hacia donde está quien habla; 进去, entrar alejándose, hacia allí. El 来 y el 去 dicen hacia dónde: 来 «venir», 去 «ir».
+- ✅🃏 进去 jìnqù [tɕin˥˩ tɕʰy˥˩] · entrar (hacia allí) · _verbo_
+- ✅🃏 做 zuò [tswɔ˥˩] · hacer · _verbo_ · Hacer algo: 做饭 «cocinar». 你在做什么？ «¿qué estás haciendo?» es de las preguntas más útiles. · 做 lleva 亻 «persona»: una persona haciendo algo. 坐 «sentarse», que suena igual, son dos personas 人 sentadas en el suelo 土.
 
 ## 那 y 哪里
 
@@ -153,6 +156,14 @@ La misma sílaba, na; solo el tono los separa.
 - 哪 nǎ · baja y sube
 - 那 nà · cae
 
+## 坐, 做 y 左
+
+坐 y 做 suenan igual, zuò; 左 baja y sube. Los separa la pieza.
+
+- 坐 zuò · dos 人 sobre 土, el suelo
+- 做 zuò · 亻 a la izquierda
+- 左 zuǒ · baja y sube; 工 abajo
+
 ## Frases
 
 - ✅🃏 我在看书。 · wǒ zài kàn shū · Estoy leyendo.
@@ -198,3 +209,12 @@ La misma sílaba, na; solo el tono los separa.
 - ✅🃏 我们休息一下吧。 · wǒmen xiūxi yíxià ba · Descansemos un momento.
 - ✅🃏 我在找我的手机。 · wǒ zài zhǎo wǒ de shǒujī · Estoy buscando mi móvil.
 - ✅🃏 今天天气真好！你想跟我一起去爬山吗？ · jīntiān tiānqì zhēn hǎo nǐ xiǎng gēn wǒ yìqǐ qù páshān ma · ¡Qué buen tiempo hace hoy! ¿Quieres venir a la montaña conmigo?
+- ✅🃏 他还没来。 · tā hái méi lái · Todavía no ha venido.
+- ✅🃏 我明天不去。 · wǒ míngtiān bú qù · Mañana no voy.
+- ✅🃏 请进来。 · qǐng jìnlái · Pasa, por favor (entra aquí).
+- ✅🃏 别进去！ · bié jìnqù · ¡No entres ahí!
+- ✅🃏 你在做什么？ · nǐ zài zuò shénme · ¿Qué estás haciendo?
+- ✅🃏 我做饭。 · wǒ zuò fàn · Yo cocino.
+- ✅🃏 我知道。 · wǒ zhīdao · Ya lo sé.
+- ✅🃏 我真的知道。 · wǒ zhēnde zhīdao · De verdad que lo sé.
+- ✅🃏 我没去过中国。 · wǒ méi qù guo Zhōngguó · Nunca he ido a China.

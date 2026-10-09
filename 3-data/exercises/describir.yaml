@@ -1532,3 +1532,78 @@ exercises:
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 耳}
     answer: {typed: er3, hanzi: 耳, pinyin: ěr, meaning: 'Sale en 耳朵 ěrduo «oreja», 耳机 ěrjī «auriculares».'}
     comments: []
+  - id: x.dictation.duo
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [w.duo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: duo1, hanzi: 多, pinyin: duō, meaning: 'mucho, muchos'}
+    comments: []
+  - id: x.produce.duo
+    added: 2026-10-10
+    lang: es
+    type: produce
+    targets: [w.duo]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «mucho, muchos»? Escribe el pinyin.'}
+    answer: {typed: duo1, hanzi: 多, pinyin: duō, meaning: 'mucho, muchos'}
+    comments: []
+  - id: x.read.duo
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [w.duo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 多}
+    answer: {hanzi: 多, pinyin: duō, meaning: 'mucho, muchos'}
+    comments: []
+  - id: x.dictation.zhende
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [w.zhende]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhen1 de5, hanzi: 真的, pinyin: zhēnde, meaning: 'de verdad, en serio'}
+    comments: []
+  - id: x.produce.zhende
+    added: 2026-10-10
+    lang: es
+    type: produce
+    targets: [w.zhende]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «de verdad, en serio»? Escribe el pinyin.'}
+    answer: {typed: zhen1 de5, hanzi: 真的, pinyin: zhēnde, meaning: 'de verdad, en serio'}
+    comments: []
+  - id: x.read.zhende
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [w.zhende]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 真的}
+    answer: {hanzi: 真的, pinyin: zhēnde, meaning: 'de verdad, en serio'}
+    comments: []
+  - id: x.tones.zhende
+    added: 2026-10-10
+    lang: es
+    type: tones
+    targets: [w.zhende]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 真的, pinyin: zhen de}
+    answer: {typed: '15', hanzi: 真的, pinyin: zhēnde, meaning: 'de verdad, en serio'}
+    comments: []
+  - id: x.listen.jintian-ren-hen-duo
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.jintian-ren-hen-duo
+    targets: [s.jintian-ren-hen-duo]
+    context: [w.jintian, w.ren, w.hen, w.duo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Hoy hay mucha gente.}
+    comments: []

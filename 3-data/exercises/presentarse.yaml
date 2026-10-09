@@ -1504,15 +1504,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Estoy estudiando chino.»'}
     answer: {meaning: Estoy estudiando chino.}
     comments: []
-  - id: x.nuance.question-words
-    added: 2026-10-01
-    lang: es
-    type: nuance
-    targets: [w.shenme, w.na.which, w.nali, w.shei, w.zenme, w.zenmeyang, w.ji, w.duoshao, w.weishenme]
-    skills: [comprehension, discrimination]
-    prompt: {text: '什么, 哪, 哪里, 谁, 怎么, 怎么样, 几, 多少 y 为什么: ¿qué pregunta cada uno?'}
-    answer: {meaning: '什么 «qué» (你吃什么？ «¿qué comes?»). 哪 «cuál, qué» de un grupo, delante de un nombre (你是哪国人？ «¿de qué país eres?»). 哪里 «dónde» (你在哪里？). 谁 «quién» (他是谁？). 怎么 + verbo, «cómo» se hace (怎么说？ «¿cómo se dice?»). 怎么样 «qué tal», pide opinión o estado (这个怎么样？). 几 «cuántos», cuando se esperan pocos, con clasificador (几个？). 多少 «cuánto», abierto, y para precios (多少钱？). 为什么 «por qué». Todos van donde iría la respuesta: el orden de la frase no cambia.'}
-    comments: []
   - id: x.nuance.hui-uses
     added: 2026-10-01
     lang: es
@@ -1687,26 +1678,7 @@ exercises:
     targets: [w.ye, w.dou]
     skills: [comprehension, discrimination]
     prompt: {text: '我很高也 y 我们很高都: ¿qué falla?'}
-    answer: {meaning: '也 y 都 van justo delante del verbo o del adjetivo (y de 很), nunca al final: 我也很高 «yo también soy alto», 我们都很高 «todos somos altos». En inglés «too» va al final; en chino, no.'}
-    comments: []
-  - id: x.nuance.bu-tone
-    added: 2026-10-02
-    lang: es
-    type: nuance
-    targets: [w.bu]
-    refs: [p.bu-sandhi]
-    skills: [comprehension, tones]
-    prompt: {text: '不是, 不看, 不去 frente a 不想, 不好, 不买: ¿cómo suena 不 en cada grupo?'}
-    answer: {meaning: 'Delante de un cuarto tono, 不 sube a bú: 不是 bú shì, 不看 bú kàn, 不去 bú qù. Delante de los demás tonos se queda en bù: 不想 bù xiǎng, 不好 bù hǎo, 不买 bù mǎi, 不能 bù néng, 不说 bù shuō.'}
-    comments: []
-  - id: x.nuance.xing-jiao-mingzi
-    added: 2026-10-02
-    lang: es
-    type: nuance
-    targets: [w.xing, w.jiao, w.mingzi]
-    skills: [comprehension, discrimination]
-    prompt: {text: '我姓门多萨, 我叫雅戈 y 我的名字是雅戈: ¿qué dice cada una?'}
-    answer: {meaning: '姓 da solo el apellido: 我姓门多萨. 叫 da el nombre de pila o el completo: 我叫雅戈. 我的名字是雅戈 también vale, pero suena más de libro. En chino el apellido va primero, y apellido más nombre es el 姓名. Para preguntar el apellido con respeto: 您贵姓？'}
+    answer: {meaning: '也 y 都 van delante del verbo o de 很, nunca al final: 我也很高 «yo también soy alto», 我们都很高 «todos somos altos».'}
     comments: []
   - id: x.comprehension.renshi-ni
     added: 2026-10-02
@@ -1908,7 +1880,7 @@ exercises:
     targets: [w.gaoxing]
     skills: [comprehension, discrimination]
     prompt: {text: '我是高兴 o 我很高兴, y ¿qué puede ir detrás de 很高兴?'}
-    answer: {meaning: '我很高兴: un adjetivo va con 很 y sin 是. Detrás, lo que te alegra: 很高兴认识你 «encantado de conocerte», 很高兴见到你 «me alegro de verte»; no cualquier verbo. Para contestar basta 我也很高兴.'}
+    answer: {meaning: '我很高兴: un adjetivo va con 很, sin 是. Detrás, lo que te alegra: 很高兴认识你 «encantado de conocerte».'}
     comments: []
   - id: x.contrast.ma
     added: 2026-10-06
@@ -2426,4 +2398,195 @@ exercises:
     skills: [reading, pinyin, tones]
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 习}
     answer: {typed: xi2, hanzi: 习, pinyin: xí, meaning: 'Sale en 学习 xuéxí «estudiar, aprender», 练习 liànxí «practicar; ejercicio».'}
+    comments: []
+  - id: x.cloze.bu.habit
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.wo-bu-he-cha
+    gap: w.bu
+    targets: [w.bu]
+    context: [w.wo, w.he.drink, w.cha]
+    skills: [production, pinyin]
+    prompt: {text: '¿不 o 没? «No tomo té.»'}
+    answer: {typed: bu4, hanzi: 不, pinyin: bù, meaning: '不: lo que haces o no haces, por costumbre.'}
+    comments: []
+  - id: x.cloze.bu.adj
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.wo-bu-mang
+    gap: w.bu
+    targets: [w.bu]
+    context: [w.wo, w.mang]
+    skills: [production, pinyin]
+    prompt: {text: '¿不 o 没? «No estoy ocupado.»'}
+    answer: {typed: bu4, hanzi: 不, pinyin: bù, meaning: '不: con un adjetivo, siempre.'}
+    comments: []
+  - id: x.cloze.bu.decide
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.wo-mingtian-bu-qu
+    gap: w.bu
+    targets: [w.bu]
+    context: [w.wo, w.mingtian, w.qu]
+    skills: [production, pinyin]
+    prompt: {text: '¿不 o 没? «Mañana no voy.»'}
+    answer: {typed: bu2, hanzi: 不, pinyin: bú, meaning: '不: una decisión. Aquí bú, delante de cuarto tono.'}
+    comments: []
+  - id: x.cloze.bu.yao
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.wo-bu-yao-shui
+    gap: w.bu
+    targets: [w.bu]
+    context: [w.wo, w.yao, w.shui]
+    skills: [production, pinyin]
+    prompt: {text: '¿不 o 没? «No quiero agua.»'}
+    answer: {typed: bu2, hanzi: 不, pinyin: bú, meaning: '要 se niega con 不: 不要 «no quiero».'}
+    comments: []
+  - id: x.situation.wo-xing
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    sentence: s.wo-xing-menduosa
+    targets: [s.wo-xing-menduosa]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Te preguntan 你姓什么？. Contesta con tu apellido, Mendoza (门多萨).'}
+    answer: {meaning: me apellido Mendoza}
+    comments: []
+  - id: x.situation.wo-jiao
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    sentence: s.wo-jiao-yage
+    targets: [s.wo-jiao-yage]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Te presentas a un compañero de clase. Dile tu nombre, Yago (雅戈).'}
+    answer: {meaning: me llamo Yago}
+    comments: []
+  - id: x.situation.nin-guixing
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [e.guixing]
+    skills: [production, speaking]
+    prompt: {text: Situación. Pregunta con respeto a un señor mayor cuál es su apellido.}
+    answer: {hanzi: 您贵姓, pinyin: nín guìxìng, meaning: '¿cuál es su apellido? (con respeto)'}
+    comments: []
+  - id: x.contrast.de
+    added: 2026-10-10
+    lang: es
+    type: contrast
+    group: g.side-pieces
+    targets: [w.de]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es de, «de (posesión: 我的 = mi)»?'}
+    answer: {hanzi: 的, pinyin: de, meaning: 'de (posesión: 我的 = mi)'}
+    comments: []
+  - id: x.contrast.hui.can
+    added: 2026-10-10
+    lang: es
+    type: contrast
+    group: g.hui-hui
+    targets: [w.hui.can]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 会, pinyin: huì, meaning: saber (hacer algo); ir a (predicción)}
+    comments: []
+  - id: x.dictation.wang.surname
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [w.wang.surname]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wang2, hanzi: 王, pinyin: Wáng, meaning: Wang (apellido)}
+    comments: []
+  - id: x.read.wang.surname
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [w.wang.surname]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 王}
+    answer: {hanzi: 王, pinyin: Wáng, meaning: Wang (apellido)}
+    comments: []
+  - id: x.listen.wo-bu-mang
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-bu-mang
+    targets: [s.wo-bu-mang]
+    context: [w.wo, w.bu, w.mang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No estoy ocupado.}
+    comments: []
+  - id: x.produce.wo-bu-mang
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.wo-bu-mang
+    targets: [s.wo-bu-mang]
+    context: [w.wo, w.bu, w.mang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No estoy ocupado.»'}
+    answer: {meaning: No estoy ocupado.}
+    comments: []
+  - id: x.listen.wang-ayi-hao
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wang-ayi-hao
+    targets: [s.wang-ayi-hao]
+    context: [w.wang.surname, w.ayi, w.hao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Hola, señora Wang!'}
+    comments: []
+  - id: x.listen.wo-he-ta-shi-pengyou
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-he-ta-shi-pengyou
+    targets: [s.wo-he-ta-shi-pengyou]
+    context: [w.wo, w.he.and, w.ta.he, w.shi, w.pengyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Él y yo somos amigos.}
+    comments: []
+  - id: x.produce.wo-he-ta-shi-pengyou
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.wo-he-ta-shi-pengyou
+    targets: [s.wo-he-ta-shi-pengyou]
+    context: [w.wo, w.he.and, w.ta.he, w.shi, w.pengyou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Él y yo somos amigos.»'}
+    answer: {meaning: Él y yo somos amigos.}
+    comments: []
+  - id: x.listen.dlg-zhende
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.dlg-zhende
+    targets: [s.dlg-zhende]
+    context: [w.wo, w.hui.can, w.shuo, w.zhongwen, e.zhendema, w.zhende, w.zai.progressive, w.xuexi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—Hablo chino. —¿En serio? —¡De verdad! Lo estoy estudiando.'}
+    comments: []
+  - id: x.contrast.wang.surname
+    added: 2026-10-10
+    lang: es
+    type: contrast
+    group: g.wang-wang
+    targets: [w.wang.surname]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 王, pinyin: Wáng, meaning: Wang (apellido)}
     comments: []

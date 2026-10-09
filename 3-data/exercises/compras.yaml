@@ -860,25 +860,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Echo un vistazo.»'}
     answer: {meaning: Echo un vistazo.}
     comments: []
-  - id: x.nuance.xiang-yao
-    added: 2026-09-29
-    type: nuance
-    targets: [w.xiang, w.yao]
-    skills: [comprehension, discrimination]
-    prompt: {text: '我想喝水 y 我要水: ¿qué cambia?'}
-    answer: {meaning: '想 + verbo: tengo ganas de hacerlo (beber agua). 要 + cosa: la quiero, sin rodeos, como al pedir en una
-        tienda.'}
-    lang: es
-    comments: []
-  - id: x.nuance.yao-xuyao
-    added: 2026-09-29
-    type: nuance
-    targets: [w.xuyao, w.yao]
-    skills: [comprehension, discrimination]
-    prompt: {text: '我要水 o 我需要水: ¿cuál es una necesidad?'}
-    answer: {meaning: '需要: la necesito porque la situación lo impone. 要: la quiero o me hace falta, más directo.'}
-    lang: es
-    comments: []
   - id: x.nuance.loan-calque
     added: 2026-09-29
     type: nuance
@@ -1411,15 +1392,6 @@ exercises:
     skills: [comprehension, discrimination]
     prompt: {text: '要 en 我要这个, 我要工作 y 要下雨了: ¿qué significa cada vez? ¿Y 需要?'}
     answer: {meaning: 'Quiero este (me lo llevo) · tengo que trabajar · va a llover. 需要 es solo necesitar: 我需要水 «necesito agua».'}
-    comments: []
-  - id: x.nuance.xiang-xiangyao-yao
-    added: 2026-10-01
-    lang: es
-    type: nuance
-    targets: [w.xiang, w.xiangyao, w.yao]
-    skills: [comprehension, discrimination]
-    prompt: {text: '想, 想要 y 要: ¿cuál es más directo?'}
-    answer: {meaning: '想 + verbo: tengo ganas de (我想喝水). 想要 + cosa: me gustaría tenerla (我想要这个). 要: la quiero, dame (我要这个); el más directo.'}
     comments: []
   - id: x.contrast.he.drink
     added: 2026-10-01
@@ -2188,5 +2160,328 @@ exercises:
     targets: [w.fan, w.chifan, w.shiwu]
     skills: [comprehension, discrimination]
     prompt: {text: '饭, 吃饭 y 食物: ¿cuál es «comer» y cuál la comida que hay en la nevera?'}
-    answer: {meaning: '吃饭 es comer, hacer una comida: 我们去吃饭吧. 饭 es el arroz cocido y cada comida del día. 食物 son los alimentos y suena escrito; al hablar, en la nevera hay 吃的 «cosas de comer».'}
+    answer: {meaning: '吃饭 es comer; 饭, el arroz y cada comida del día. 食物 son «alimentos» y suena escrito: en la nevera hay 吃的.'}
+    comments: []
+  - id: x.cloze.xiang.drink
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.wo-xiang-he-cha
+    gap: w.xiang
+    targets: [w.xiang]
+    context: [w.wo, w.he.drink, w.cha]
+    reveal: [s.wo-xihuan-cha-xiang-he-yi-bei]
+    skills: [production, pinyin]
+    prompt: {text: '¿想, 要, 想要, 需要 o 喜欢? «Me apetece un té.»'}
+    answer: {typed: xiang3, hanzi: 想, pinyin: xiǎng, meaning: '想 + verbo: tener ganas de hacerlo.'}
+    comments: []
+  - id: x.cloze.yao.order
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.wo-yao-yi-bei-shui
+    gap: w.yao
+    targets: [w.yao]
+    context: [w.wo, w.num.yi, w.bei.cl, w.shui]
+    skills: [production, pinyin]
+    prompt: {text: '¿想, 要, 想要, 需要 o 喜欢? «Un vaso de agua, por favor.» (pidiendo en un bar)'}
+    answer: {typed: yao4, hanzi: 要, pinyin: yào, meaning: '要 + cosa: pedirla sin rodeos.'}
+    comments: []
+  - id: x.cloze.xiangyao
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.wo-xiangyao-zhege
+    gap: w.xiangyao
+    targets: [w.xiangyao]
+    context: [w.wo, w.zhe, w.ge]
+    skills: [production, pinyin]
+    prompt: {text: '¿想, 要, 想要, 需要 o 喜欢? «Me gustaría tener este.»'}
+    answer: {typed: xiang3 yao4, hanzi: 想要, pinyin: xiǎngyào, meaning: '想要 + cosa: te gustaría conseguirla.'}
+    comments: []
+  - id: x.cloze.xuyao
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.wo-xuyao-shui
+    gap: w.xuyao
+    targets: [w.xuyao]
+    context: [w.wo, w.shui]
+    skills: [production, pinyin]
+    prompt: {text: '¿想, 要, 想要, 需要 o 喜欢? «Necesito agua.»'}
+    answer: {typed: xu1 yao4, hanzi: 需要, pinyin: xūyào, meaning: '需要: te hace falta de verdad.'}
+    comments: []
+  - id: x.cloze.xihuan.coffee
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.wo-xihuan-he-cha
+    gap: w.xihuan
+    targets: [w.xihuan]
+    context: [w.wo, w.he.drink, w.cha]
+    skills: [production, pinyin]
+    prompt: {text: '¿想, 要, 想要, 需要 o 喜欢? «Me gusta el té.»'}
+    answer: {typed: xi3 huan5, hanzi: 喜欢, pinyin: xǐhuan, meaning: '喜欢: un gusto, no unas ganas de ahora.'}
+    comments: []
+  - id: x.situation.qingke
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    sentence: s.wo-qingke
+    targets: [s.wo-qingke]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. En el restaurante, quieres pagar tú la cuenta de todos.'}
+    answer: {meaning: ¡invito yo!}
+    comments: []
+  - id: x.dictation.gui
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [w.gui]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gui4, hanzi: 贵, pinyin: guì, meaning: caro}
+    comments: []
+  - id: x.produce.gui
+    added: 2026-10-10
+    lang: es
+    type: produce
+    targets: [w.gui]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «caro»? Escribe el pinyin.'}
+    answer: {typed: gui4, hanzi: 贵, pinyin: guì, meaning: caro}
+    comments: []
+  - id: x.read.gui
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [w.gui]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 贵}
+    answer: {hanzi: 贵, pinyin: guì, meaning: caro}
+    comments: []
+  - id: x.dictation.qingke
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [w.qingke]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: qing3 ke4, hanzi: 请客, pinyin: qǐngkè, meaning: invitar (pagar tú)}
+    comments: []
+  - id: x.produce.qingke
+    added: 2026-10-10
+    lang: es
+    type: produce
+    targets: [w.qingke]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «invitar (pagar tú)»? Escribe el pinyin.'}
+    answer: {typed: qing3 ke4, hanzi: 请客, pinyin: qǐngkè, meaning: invitar (pagar tú)}
+    comments: []
+  - id: x.read.qingke
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [w.qingke]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 请客}
+    answer: {hanzi: 请客, pinyin: qǐngkè, meaning: invitar (pagar tú)}
+    comments: []
+  - id: x.listen.wo-hai-mei-chifan
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-hai-mei-chifan
+    targets: [s.wo-hai-mei-chifan]
+    context: [w.wo, w.hai.still, w.mei, w.chifan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Todavía no he comido.}
+    comments: []
+  - id: x.listen.wo-bu-yao-shui
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-bu-yao-shui
+    targets: [s.wo-bu-yao-shui]
+    context: [w.wo, w.bu, w.yao, w.shui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No quiero agua.}
+    comments: []
+  - id: x.produce.wo-bu-yao-shui
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.wo-bu-yao-shui
+    targets: [s.wo-bu-yao-shui]
+    context: [w.wo, w.bu, w.yao, w.shui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No quiero agua.»'}
+    answer: {meaning: No quiero agua.}
+    comments: []
+  - id: x.listen.wo-meiyou-shui
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-meiyou-shui
+    targets: [s.wo-meiyou-shui]
+    context: [w.wo, w.meiyou, w.shui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No tengo agua.}
+    comments: []
+  - id: x.produce.wo-meiyou-shui
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.wo-meiyou-shui
+    targets: [s.wo-meiyou-shui]
+    context: [w.wo, w.meiyou, w.shui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No tengo agua.»'}
+    answer: {meaning: No tengo agua.}
+    comments: []
+  - id: x.listen.wo-yao-yi-bei-shui
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-yao-yi-bei-shui
+    targets: [s.wo-yao-yi-bei-shui]
+    context: [w.wo, w.yao, w.num.yi, w.bei.cl, w.shui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Un vaso de agua, por favor.'}
+    comments: []
+  - id: x.produce.wo-yao-yi-bei-shui
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.wo-yao-yi-bei-shui
+    targets: [s.wo-yao-yi-bei-shui]
+    context: [w.wo, w.yao, w.num.yi, w.bei.cl, w.shui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Un vaso de agua, por favor.»'}
+    answer: {meaning: 'Un vaso de agua, por favor.'}
+    comments: []
+  - id: x.listen.hao-gui
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.hao-gui
+    targets: [s.hao-gui]
+    context: [w.hao, w.gui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Qué caro!}
+    comments: []
+  - id: x.listen.wo-qingke
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-qingke
+    targets: [s.wo-qingke]
+    context: [w.wo, w.qingke]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Invito yo!}
+    comments: []
+  - id: x.produce.wo-qingke
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.wo-qingke
+    targets: [s.wo-qingke]
+    context: [w.wo, w.qingke]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Invito yo!»'}
+    answer: {meaning: ¡Invito yo!}
+    comments: []
+  - id: x.listen.dlg-zenmele
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.dlg-zenmele
+    targets: [s.dlg-zenmele]
+    context: [w.ni, e.zenmele, w.wo, w.hai.still, w.mei, w.chifan, e.zouba, w.women, w.qu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Qué te pasa? —Todavía no he comido. —Venga, ¡vamos a comer!'}
+    comments: []
+  - id: x.listen.wo-bu-he-cha
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-bu-he-cha
+    targets: [s.wo-bu-he-cha]
+    context: [w.wo, w.bu, w.he.drink, w.cha]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No tomo té.}
+    comments: []
+  - id: x.produce.wo-bu-he-cha
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.wo-bu-he-cha
+    targets: [s.wo-bu-he-cha]
+    context: [w.wo, w.bu, w.he.drink, w.cha]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No tomo té.»'}
+    answer: {meaning: No tomo té.}
+    comments: []
+  - id: x.listen.wo-xiang-he-cha
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-xiang-he-cha
+    targets: [s.wo-xiang-he-cha]
+    context: [w.wo, w.xiang, w.he.drink, w.cha]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me apetece un té.}
+    comments: []
+  - id: x.produce.wo-xiang-he-cha
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.wo-xiang-he-cha
+    targets: [s.wo-xiang-he-cha]
+    context: [w.wo, w.xiang, w.he.drink, w.cha]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me apetece un té.»'}
+    answer: {meaning: Me apetece un té.}
+    comments: []
+  - id: x.listen.wo-xihuan-cha-xiang-he-yi-bei
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-xihuan-cha-xiang-he-yi-bei
+    targets: [s.wo-xihuan-cha-xiang-he-yi-bei]
+    context: [w.wo, w.xihuan, w.cha, w.xiang, w.he.drink, w.num.yi, w.bei.cl]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Me gusta el té: me apetece una taza.'}
+    comments: []
+  - id: x.listen.wo-xihuan-he-cha
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-xihuan-he-cha
+    targets: [s.wo-xihuan-he-cha]
+    context: [w.wo, w.xihuan, w.he.drink, w.cha]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me gusta el té.}
+    comments: []
+  - id: x.produce.wo-xihuan-he-cha
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.wo-xihuan-he-cha
+    targets: [s.wo-xihuan-he-cha]
+    context: [w.wo, w.xihuan, w.he.drink, w.cha]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me gusta el té.»'}
+    answer: {meaning: Me gusta el té.}
     comments: []

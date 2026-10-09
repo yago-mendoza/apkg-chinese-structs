@@ -440,3 +440,13 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Quiero ir a ver pandas.»'}
     answer: {meaning: Quiero ir a ver pandas.}
     comments: []
+  - id: x.contrast.gou
+    added: 2026-10-10
+    lang: es
+    type: contrast
+    group: g.side-pieces
+    targets: [w.gou]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es gǒu, «perro»?'}
+    answer: {hanzi: 狗, pinyin: gǒu, meaning: perro}
+    comments: []

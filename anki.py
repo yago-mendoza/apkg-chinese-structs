@@ -91,7 +91,8 @@ REVIEWS_BEFORE_NEW = 1                  # enum REVIEW_MIX_AFTER_REVIEWS: las nue
 REVIEW_ORDER_AT_RISK_FIRST = 7          # enum REVIEW_CARD_ORDER_RETRIEVABILITY_ASCENDING
 DESIRED_RETENTION = 0.90
 THEME_MAX, THEME_MIN = 60, 3               # entradas por tema: por encima, ¿dividir?; por debajo, ¿juntar?
-EXAMPLES_MAX = 2                           # frases de ejemplo al dar la vuelta a una tarjeta de palabra
+GROUP_ROWS_MAX = 4                         # filas de un recuadro de grupo fuera de su propia tarjeta
+EXAMPLES_MAX = 3                           # frases de ejemplo al dar la vuelta a una tarjeta de palabra
 PRUNE_MAX = 10                             # más huérfanas que esto: `push --prune` se niega sin --force
 
 AZURE_VOICE = os.environ.get("AZURE_SPEECH_VOICE", "zh-CN-YunyangNeural")
@@ -1503,6 +1504,8 @@ def required_audio(entries, sentences, exercises):
     for ex in exercises:
         if answer_hanzi(ex, sby) and wants_audio(ex, eby):
             texts.add(answer_hanzi(ex, sby))
+        for it in ex.get("pair", []):     # pareja para oír: suenan las dos
+            texts.add(it["hanzi"])
     for s in sentences:                   # toda frase puede salir como ejemplo en cualquier tarjeta
         texts.add(sentence_text(s))
     for e in entries:
@@ -1763,9 +1766,12 @@ def quality_rules(entries, sentences, exercises, eby, sby, errors, warnings):
             errors.append(f"{e['id']}: sin nivel. No está en la lista del HSK: pon level (1–7) y level_reason (Niveles)")
         if e.get("level") and not e.get("level_reason"):
             errors.append(f"{e['id']}: level sin level_reason")
-        if official and e.get("level") and e.get("level") != official and e.get("kind") != "pronunciation":
-            warnings.append(f"{e['id']}: level {e['level']} distinto del oficial HSK {official}; manda el oficial")
-        lv = official or e.get("level")
+        if e.get("sense_level") and not (e.get("level") and e.get("level_reason")):
+            errors.append(f"{e['id']}: sense_level necesita level y level_reason (el nivel de este sentido)")
+        if official and e.get("level") and e.get("level") != official and e.get("kind") != "pronunciation"                 and not e.get("sense_level"):
+            warnings.append(f"{e['id']}: level {e['level']} distinto del oficial HSK {official}; manda el oficial "
+                            f"(salvo sense_level, si el sentido no es el de la lista)")
+        lv = (e.get("level") if e.get("sense_level") else None) or official or e.get("level")
         mods = use_modalities(e)
         if e.get("kind") in ("word", "expression") and not e.get("use_reason"):
             if lv == 1 and mods == {"read"}:
@@ -1848,6 +1854,9 @@ def duplicate_ids(entries, sentences, exercises):
     return sorted(i for i, n in ids.items() if n > 1)
 
 
+ANSWER_MAX = 160                 # caracteres de la respuesta de un matiz o una situación: se contesta de cabeza
+
+
 def validate(entries, sentences, exercises, require_audio=True):
     errors, warnings = [], []
     # Un ID repetido va primero y solo (retrospectiva del lote 004): lo demás que diría check sería ruido derivado.
@@ -1920,6 +1929,10 @@ def validate(entries, sentences, exercises, require_audio=True):
         # tarjeta es un sonido distinto (是 / 吃 frente a 四 / 次): cuenta también lo que suena.
         sound_key = ((answer_hanzi(ex, sby), (ex.get("prompt") or {}).get("text"))
                      if any(t.startswith("p.") for t in ex.get("targets", [])) or ex.get("type") == "charsound" else None)
+        # Varios huecos de una palabra, cada uno en su frase, practican usos distintos (不 / 没 en hábitos, en lo
+        # que no pasó, con adjetivos): no son redundancia. Igual las situaciones, cada una con su escena.
+        if ex.get("type") == "cloze" or xid.startswith("x.situation."):
+            sound_key = (ex.get("sentence"), (ex.get("prompt") or {}).get("text"))
         key = (ex.get("type"), tuple(sorted(ex.get("targets", []))), sound_key)
         if key in seen:
             warnings.append(f"{xid}: evalúa lo mismo que {seen[key]} ({key[0]}); ¿redundante?")
@@ -1930,7 +1943,7 @@ def validate(entries, sentences, exercises, require_audio=True):
             errors.append(f"{xid}: sin objetivos (targets)")
         if not ex.get("skills"):
             errors.append(f"{xid}: sin capacidades evaluadas (skills)")
-        for rid in ex.get("targets", []) + ex.get("context", []) + ex.get("refs", []) + ex.get("reveal", []):
+        for rid in ex.get("targets", []) + ex.get("context", []) + ex.get("refs", []) + ex.get("reveal", []) + ex.get("also", []):
             ref(xid, rid)
         if ex.get("sentence"):
             ref(xid, ex["sentence"])
@@ -1951,6 +1964,19 @@ def validate(entries, sentences, exercises, require_audio=True):
             errors.append(f"{xid}: typed «{typed}» no equivale a «{ans['pinyin']}»")
         if ex.get("type") == "comprehension":
             comprehension_rules(ex, eby, sby, errors, warnings)
+        if "pair" in ex:
+            pair = ex["pair"] or []
+            if len(pair) != 2 or not all(it.get("hanzi") and it.get("pinyin") and it.get("meaning") for it in pair):
+                errors.append(f"{xid}: una pareja para oír lleva dos sílabas, cada una con hanzi, pinyin y significado")
+            for it in pair:
+                warn = None if ex.get("accept_pinyin_mismatch") else pinyin_warning(it.get("hanzi"), it.get("pinyin"))
+                if warn:
+                    warnings.append(f"{xid}: {warn}")
+        # Una tarjeta se contesta de cabeza y se puntúa: su respuesta es corta (review 008: «cards como esta,
+        # bórralas»). Un matiz que necesita un párrafo se parte en situaciones o huecos.
+        if ex.get("type") in ("nuance", "speak") and len(ans.get("meaning") or "") > ANSWER_MAX:
+            warnings.append(f"{xid}: respuesta de {len(ans['meaning'])} caracteres (máximo {ANSWER_MAX}): una "
+                            f"respuesta que se puede puntuar es corta; partirla en situaciones o huecos")
         if ex.get("type") in ("contrast", "derive"):
             g = eby.get(ex.get("group"), {})
             refs = [m.get("ref") for m in g.get("members", [])]
@@ -1966,7 +1992,7 @@ def validate(entries, sentences, exercises, require_audio=True):
             segs = sby.get(ex.get("sentence"), {}).get("segments", [])
             if not any(seg.get("ref") == ex.get("gap") for seg in segs):
                 errors.append(f"{xid}: el hueco «{ex.get('gap')}» no está en la frase")
-        if (ex.get("prompt") or {}).get("audio") and not answer_hanzi(ex, sby):
+        if (ex.get("prompt") or {}).get("audio") and not answer_hanzi(ex, sby) and not ex.get("pair"):
             errors.append(f"{xid}: escucha sin texto chino que sonorizar")
         w = pinyin_warning(ans.get("hanzi"), ans.get("pinyin"))
         if ex.get("type") == "charsound" and " / " in (ans.get("pinyin") or ""):   # varias lecturas, una por una
@@ -2207,6 +2233,9 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .note--chars .ch-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; padding: 4px 0; }
 .note--chars .ch-row + .ch-row { border-top: 1px solid var(--line); }
 .ch-hz { font-size: 26px; font-weight: 400; min-width: 1.3em; }
+.ch-py { font-size: 15px; color: var(--muted); }
+.pair-n { font-weight: 600; margin: 0 4px 0 10px; color: var(--muted); }
+.pair-row { display: flex; align-items: baseline; gap: 10px; justify-content: center; padding: 4px 0; }
 .ch-gl { font-size: 15px; }
 .ch-kind { font-size: 12px; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
 .ch-formula { font-size: 14px; color: #1f5f8a; }
@@ -2464,6 +2493,11 @@ def card_fields(ex, eby, sby, manifest, media_files):
         front += ('<div class="legend">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · '
                   '5 a neutro, corto</div>')
     prompt_audio = sound(spoken, manifest, media_files) if prompt.get("audio") else ""
+    if ex.get("pair"):
+        # Pareja para oír (review 008: «si no puedo contrastar de oído en una misma tarjeta, no me sirve»): suenan
+        # las dos, una tras otra, y se pregunta cuál es cuál; detrás, las dos con su audio para volver a compararlas.
+        prompt_audio = " ".join(f'<span class="pair-n">{i}</span>{sound(it["hanzi"], manifest, media_files)}'
+                                for i, it in enumerate(ex["pair"], 1))
     if prompt.get("audio") and not prompt_audio:
         # Solo ocurre con --allow-missing-audio: que la tarjeta no parezca rota.
         prompt_audio = '<div class="task">(audio pendiente)</div>'
@@ -2492,6 +2526,11 @@ def card_fields(ex, eby, sby, manifest, media_files):
             f'{sound(sentence_text(s), manifest, media_files)}</div>'
             for s in ([q] if q else []) + [sby[t] for t in ex.get("targets", []) if t in sby])
         meaning = None
+    elif ex.get("pair"):
+        back = "".join(f'<div class="pair-row"><span class="pair-n">{i}</span><b class="vs-hz">{esc(it["hanzi"])}</b>'
+                       f'<span class="vs-py">{esc(it["pinyin"])}</span><span class="vs-gl">{esc(it.get("meaning", ""))}</span>'
+                       f'{sound(it["hanzi"], manifest, media_files)}</div>' for i, it in enumerate(ex["pair"], 1))
+        meaning = ans.get("meaning")
     elif sent:
         back = render_sentence(sent)
         meaning = sent.get("translation", {}).get(lang) if ex["type"] == "cloze" else ans.get("meaning")
@@ -2502,12 +2541,18 @@ def card_fields(ex, eby, sby, manifest, media_files):
             meaning = annotate_pinyin(meaning, eby, sby)
     if meaning:
         back += f'<div class="meaning">{esc(meaning)}</div>'
+    # Otras formas igual de buenas de decirlo (我们是朋友 / 我和他是朋友): se dan por buenas al puntuarse.
+    for sid in ex.get("also", []):
+        if sid in sby:
+            back += (f'<div class="example also">También vale: {render_sentence(sby[sid])}'
+                     f'<div>{esc(sby[sid]["translation"].get(lang))}</div>{sound(sentence_text(sby[sid]), manifest, media_files)}</div>')
     # En lectura/producción el audio va tras revelar; en escucha ya sonó en el anverso.
     answer_audio = sound(spoken, manifest, media_files) if spoken and not prompt.get("audio") else ""
 
     notes = []
+    add = lambda rank, html_note: notes.append((rank, len(notes), html_note))
     if ex.get("explanation"):
-        notes.append(f"<h4>Explicación</h4>{esc(ex['explanation'])}")
+        add(0, f"<h4>Explicación</h4>{esc(ex['explanation'])}")
     # Grupos: el del ejercicio y los de sus objetivos (se recuerda mejor por contraste). Si un objetivo
     # está en un conjunto (set) y en un patrón, basta el conjunto.
     shown_groups = [group] if group else []
@@ -2523,8 +2568,11 @@ def card_fields(ex, eby, sby, manifest, media_files):
                      and any(m.get("ref") == tid for m in g.get("members", []))]
         if any(g.get("basis") == "set" for g in member_of):
             member_of = [g for g in member_of if g.get("basis") != "pattern"]
-        shown_groups += [g for g in member_of if g not in shown_groups]
+        # Fuera de su propia tarjeta, un grupo largo es una lista, no un contraste (谁 con las nueve palabras de
+        # pregunta): no se muestra; su sitio son sus tarjetas de contraste, de matiz y de hueco.
+        shown_groups += [g for g in member_of if g not in shown_groups and len(g.get("members", [])) <= GROUP_ROWS_MAX]
     shown_groups = covered_groups_dropped(shown_groups)
+    card_lv = max([lv for lv in (level_of(t, eby, sby, hsk_levels()) for t in ex.get("targets", [])) if lv] or [0]) or None
     targets = set(ex.get("targets", []))
     # La pareja con la que se confunde lleva su frase dentro de su fila, no en un apartado aparte que la repita.
     partner = partner_example(ex, sby, eby)
@@ -2542,7 +2590,13 @@ def card_fields(ex, eby, sby, manifest, media_files):
         # Cada miembro en su fila, por columnas: hanzi, pinyin, significado y la pista que los separa; el que se
         # pregunta, resaltado (CSS .vs-row). La pareja lleva su frase en su fila, en el primer recuadro en que sale.
         rows = ""
-        for m in g["members"]:
+        # Nada de un nivel superior al de la tarjeta, tampoco en los recuadros (review 008); salvo el grupo de la
+        # propia tarjeta de contraste, que es la pregunta y ya sale entero delante.
+        members = [m for m in g["members"] if g is group or m["ref"] in targets or not card_lv
+                   or (level_of(m["ref"], eby, sby, hsk_levels()) or 0) <= card_lv]
+        if len(members) < 2:
+            continue
+        for m in members:
             e = eby[m["ref"]]
             rows += (f"<div class=\"vs-row{' is-target' if m['ref'] in targets else ''}\"><b class=\"vs-hz\">{esc(e.get('hanzi'))}</b>"
                      f"<span class=\"vs-py\">{esc(e.get('pinyin'))}{status_tag(e)}</span>"
@@ -2552,34 +2606,35 @@ def card_fields(ex, eby, sby, manifest, media_files):
                 rows += partner_html
                 partner_ref = None
             rows += "</div>"
-        notes.append(f"<h4>{esc(g.get('title'))}</h4>{esc(g.get('explanation'))}{rows}")
+        add(4, f"<h4>{esc(g.get('title'))}</h4>{esc(g.get('explanation'))}{rows}")
     for tid in note_targets:
         t = eby.get(tid, {})
         st = char_status(t)
         if st == "componente":
-            notes.append(f"<h4>Qué es</h4>{esc(status_text(t))}")
+            add(8, f"<h4>Qué es</h4>{esc(status_text(t))}")
         elif standalone(t) in ("no", "rare"):
             words = "、".join(w["hanzi"] for w in free_words_containing(t, list(eby.values())))
             label = "Casi no se usa solo" if standalone(t) == "rare" else "No se usa solo"
-            notes.append(f"<h4>{label}</h4>Ligada: aparece en {esc(words)}.")
+            add(8, f"<h4>{label}</h4>Ligada: aparece en {esc(words)}.")
         elif st == "palabra" and t.get("kind") == "character":
-            notes.append(f"<h4>Qué es</h4>{STATUS_TEXT[st]}")
+            add(8, f"<h4>Qué es</h4>{STATUS_TEXT[st]}")
         # Un componente no es una palabra: aquí, cuál es la palabra de verdad para decir eso.
         if t.get("real_word"):
-            notes.append(f"<h4>Para decirlo</h4>{real_word_html(t['real_word'])}")
+            add(8, f"<h4>Para decirlo</h4>{real_word_html(t['real_word'])}")
         # Un hanzi solo: qué otros caracteres del mazo suenan así, y sus otros sentidos.
         if len(t.get("hanzi") or "") == 1 and t.get("kind") in ("word", "character"):
             same, senses = sound_and_senses(t, list(eby.values()), eby, sby)
             if same:
-                notes.append("<h4>Mismo sonido</h4>" + "".join(f"<div>{esc(line)}</div>" for line in same))
+                add(8, "<h4>Mismo sonido</h4>" + "".join(f"<div>{esc(line)}</div>" for line in same))
             if senses:
-                notes.append("<h4>Otros sentidos</h4>" + "".join(f"<div>{esc(line)}</div>" for line in senses))
+                add(8, "<h4>Otros sentidos</h4>" + "".join(f"<div>{esc(line)}</div>" for line in senses))
     for rid in ex.get("refs", []):
         p = eby.get(rid, {})
         if p.get("kind") == "pronunciation":
-            example = (f"<div>Ejemplo del fenómeno: {esc(p.get('audio_text'))} "
-                       f"{sound(p.get('audio_text'), manifest, media_files)}</div>") if p.get("audio_text") else ""
-            notes.append(f"<h4>{esc(p.get('title'))}</h4>{esc(p.get('explanation'))}{example}")
+            example = (f"<div>Ejemplo: {esc(p.get('audio_text'))}"
+                       + (f" · {esc(p['audio_pinyin'])}" if p.get("audio_pinyin") else "")
+                       + f" {sound(p.get('audio_text'), manifest, media_files)}</div>") if p.get("audio_text") else ""
+            add(9, f"<h4>{esc(p.get('title'))}</h4>{esc(p.get('explanation'))}{example}")
     # Trampas fonéticas en las tarjetas de pronunciar o reconocer por el oído.
     if ex["type"] in ("listen", "speak", "tones"):
         spoken_text = sentence_text(sent) if sent else ans.get("hanzi")
@@ -2587,38 +2642,38 @@ def card_fields(ex, eby, sby, manifest, media_files):
             else ans.get("pinyin")
         traps = phonetic_notes(spoken_text, spoken_pinyin) if spoken_text and spoken_pinyin else []
         if traps:
-            notes.append("<h4>Pronunciación</h4>" + "".join(f"<div>{esc(t)}</div>" for t in traps))
+            add(5, "<h4>Pronunciación</h4>" + "".join(f"<div>{esc(t)}</div>" for t in traps))
     # La categoría de la palabra que se responde, en pequeño bajo el significado.
     first = eby.get((ex.get("targets") or [None])[0], {})
     if not sent and ex["type"] not in ("pattern", "contrast", "comprehension") and pos_of(first) \
             and first.get("hanzi") == ans.get("hanzi"):
         back += f'<div class="legend pos">{esc(POS_LABEL[pos_of(first)])}</div>'
     if ex["type"] == "charsound":
-        notes.append("<h4>Dónde sale</h4>" + "".join(
+        add(1, "<h4>Dónde sale</h4>" + "".join(
             f"<div class=\"example\"><span class=\"hz\">{esc(eby[w]['hanzi'])}</span> {esc(eby[w].get('pinyin'))} · "
             f"{esc((eby[w].get('meaning') or {}).get(lang, ''))}{sound(eby[w]['hanzi'], manifest, media_files)}</div>"
             for w in ex.get("targets", []) if w in eby))
     examples = [] if ex["type"] in ("pattern", "charsound") else examples_for(ex, sby, eby)
     if examples:
-        notes.append(f"<h4>{'Ejemplo' if len(examples) == 1 else 'Ejemplos'}</h4>" + "".join(
+        add(2, f"<h4>{'Ejemplo' if len(examples) == 1 else 'Ejemplos'}</h4>" + "".join(
             f"<div class=\"example\">{render_sentence(sby[sid])}<div>{esc(sby[sid]['translation'].get(lang))}</div>"
             f"{sound(sentence_text(sby[sid]), manifest, media_files)}</div>" for sid in examples))
     # Sus caracteres: de qué está hecho cada hanzi de la palabra que se responde (tipo, qué pieza da el significado y
     # cuál el sonido), de 3-data/hanzi.yaml y sources/hanzi. Solo en tarjetas de palabras, nunca en las de frases.
-    card_lv = max([lv for lv in (level_of(t, eby, sby, hsk_levels()) for t in ex.get("targets", [])) if lv] or [0]) or None
     shown_hz = (prompt.get("hanzi") if ex["type"] == "charsound"            # el hanzi suelto, no su primera palabra
                 else first.get("hanzi") if not sent and first.get("kind") in ("word", "character", "expression") else "")
     # Lo que una entrada de la tarjeta ya explica de un carácter (需要 y 要 juntos: la imagen propia de 要) no se repite.
     own = lambda kind: {ch for t in note_targets for ch in memory_chars(eby.get(t, {}).get("hanzi"),
                                                                          eby.get(t, {}).get("comments", []), kind)}
     chars_html = character_lines(shown_hz, lang, list(eby.values()), card_lv, own_memory=own("mnemonic"),
-                                 own_origin=own("character"))
+                                 own_origin=own("character"),
+                                 reading=ans.get("pinyin") if ex["type"] == "charsound" else first.get("pinyin"))
     if chars_html:
-        notes.append(f"<h4>{'Por qué se escribe así' if len(shown_hz or '') == 1 else 'Sus caracteres'}</h4>{chars_html}")
+        add(6, f"<h4>{'Por qué se escribe así' if len(shown_hz or '') == 1 else 'Sus caracteres'}</h4>{chars_html}")
     # Conexión con otros hanzi del mazo: un recuadro como mucho, el del primer objetivo (docs/goal.md).
     con = connection_for(first, list(eby.values())) if not sent else None
     if con and con.get("text"):
-        notes.append(f"<h4>Conexión · {CONNECTION_KINDS.get(con.get('kind'), '')}</h4>{esc(con['text'])}")
+        add(7, f"<h4>Conexión · {CONNECTION_KINDS.get(con.get('kind'), '')}</h4>{esc(con['text'])}")
     # Comentarios: solo los marcados private: false (del ejercicio y de sus objetivos).
     comments = list(ex.get("comments", []))
     for tid in note_targets:
@@ -2628,7 +2683,7 @@ def card_fields(ex, eby, sby, manifest, media_files):
               "sound": "Cómo suena"}
     for c in comments:
         if c.get("private", True) is False:
-            notes.append(f"<h4>{labels.get(c.get('kind'), 'Comentario')}</h4>{esc(c.get('text'))}")
+            add(3, f"<h4>{labels.get(c.get('kind'), 'Comentario')}</h4>{esc(c.get('text'))}")
 
     typed = ans.get("typed", "")
     # Lo esperado para comparar lo escrito: tecleadas y frases para decir (en estas, escribir es opcional).
@@ -2644,7 +2699,7 @@ def card_fields(ex, eby, sby, manifest, media_files):
                 f'<span id="acs-exp-hz" style="display:none">{esc(exp_hz)}</span>') + back
     return {"typed": typed, "task": esc(prompt.get("text")), "front": front, "prompt_audio": prompt_audio,
             "back": back, "answer_audio": answer_audio,
-            "notes": f'<div class="box">{"".join(note_section(n) for n in notes)}</div>' if notes else ""}
+            "notes": f'<div class="box">{"".join(note_section(n) for *_, n in sorted(notes))}</div>' if notes else ""}
 
 
 NOTE_KIND = (("ejemplo", "example"), ("mnemotecnia", "mnemonic"), ("en clase", "teacher"), ("cómo suena", "sound"),
@@ -2745,7 +2800,7 @@ def memory_chars(hanzi, comments, kind="mnemonic"):
     return out
 
 
-def character_lines(hanzi, lang="es", entries=None, max_level=None, own_memory=(), own_origin=()):
+def character_lines(hanzi, lang="es", entries=None, max_level=None, own_memory=(), own_origin=(), reading=None):
     """El reverso de una palabra explica sus caracteres, uno por línea: el hanzi, su glosa, su tipo y su fórmula
     (王 significado + 求 qiú sonido), y debajo una frase: su imagen para recordarlo o, si no la tiene, su porqué. Con
     `entries`, también dónde más sale en el mazo. Si el origen es discutido, no se cuenta. Vacío si no hay datos.
@@ -2758,6 +2813,13 @@ def character_lines(hanzi, lang="es", entries=None, max_level=None, own_memory=(
     db = hanzi_db()
     seen, lines = set(), []
     han = [c for c in hanzi if "一" <= c <= "鿿"]
+    # Cada carácter con su sílaba (review 008: «los pinyin de sílabas no aparecen»): la de la palabra, con su tono
+    # en ella; si no alinea, la primera lectura del diccionario de caracteres.
+    syl = syllable_tones(hanzi, reading) if reading else None
+    py_of = {}
+    if syl and len(syl) == len(han):
+        for ch, (bare, tone) in zip(han, syl):
+            py_of.setdefault(ch, numeric_to_marked(f"{bare}{tone}") if tone in (1, 2, 3, 4) else bare)
     for ch in han:
         if ch in seen or ch not in notes:
             continue
@@ -2786,7 +2848,8 @@ def character_lines(hanzi, lang="es", entries=None, max_level=None, own_memory=(
             why = re.sub(r"^[^:]{3,40}:\s*", "", (n.get("origin") or {}).get(lang) or "")
             why = why[:1].upper() + why[1:]
         more = also_in(ch, hanzi, entries, max_level)
-        lines.append(f'<div class="ch-row"><b class="ch-hz">{esc(ch)}</b><span class="ch-gl">{esc((n.get("gloss") or {}).get(lang, ""))}</span>'
+        chpy = py_of.get(ch) or ((db.get(ch) or {}).get("pinyin") or [""])[0]
+        lines.append(f'<div class="ch-row"><b class="ch-hz">{esc(ch)}</b><span class="ch-py">{esc(chpy)}</span><span class="ch-gl">{esc((n.get("gloss") or {}).get(lang, ""))}</span>'
                      + (f'<span class="ch-kind">{kind}</span>' if kind else "")
                      + (f'<span class="ch-formula">{" · ".join(formula)}</span>' if formula else "")
                      + (f'<span class="ch-why">{esc(why)}</span>' if why else "")
@@ -3212,7 +3275,9 @@ def level_of(item_id, eby, sby, levels):
         known = [level_of(r, eby, sby, levels) for r in e.get("refs", [])]
         known = [k for k in known if k]
         return max(known) if known else e.get("level")
-    own = levels.get(e.get("hanzi")) or e.get("level")
+    # `sense_level` (con su motivo): el sentido de la entrada no es el de la lista (王 apellido frente a 王 «rey», HSK 4),
+    # así que manda su `level`.
+    own = (e.get("level") if e.get("sense_level") else None) or levels.get(e.get("hanzi")) or e.get("level")
     h = e.get("hanzi") or ""
     if len(h) == 1 and standalone(e) in ("no", "rare"):
         inside = [levels.get(w.get("hanzi")) or w.get("level") for w in eby.values()
@@ -3225,7 +3290,7 @@ def level_of(item_id, eby, sby, levels):
 
 def level_estimated(e, levels):
     """True si el nivel de la entrada no sale de la lista oficial (lo estimó el agente, con `level_reason`)."""
-    return e.get("kind") != "pronunciation" and not levels.get(e.get("hanzi"))
+    return e.get("kind") != "pronunciation" and (bool(e.get("sense_level")) or not levels.get(e.get("hanzi")))
 
 
 def deck_history(exercises, card_level, cache=None):
@@ -3625,18 +3690,24 @@ def find_anki():
 STAGE_LAG = 1
 STAGE = {"read": 0, "contrast": 1, "components": 1, "nuance": 1, "listen": 2, "tones": 3,
          "produce": 4, "derive": 4, "cloze": 4, "speak": 5, "pattern": 5, "comprehension": 5, "charsound": 3}
+STAGE_GAP = 15     # posiciones (unas 15 nuevas: un día de estudio) entre un paso de una entrada y el siguiente
 
 
-def new_card_order(entries, sentences, exercises):
-    """Posición de cada ejercicio entre las nuevas: por nivel del HSK primero (lo básico antes); dentro, por tema, y cada paso (lectura, escucha, tonos,
-    producción) `STAGE_LAG` temas por detrás del anterior, para que las tarjetas de una misma entrada se repartan
-    en días distintos (Anki solo separa hermanas de una misma nota). Con 2 temas, los primeros días eran casi solo
-    lectura (YAGO, 2026-10-05); con 1, cada día mezcla leer, oír y, a los pocos días, decir."""
+def new_card_order(entries, sentences, exercises, pending=None):
+    """Posición de cada ejercicio entre las nuevas. Por nivel del HSK primero (lo básico antes). Dentro de cada nivel,
+    siempre mezclado por tipo (YAGO, 2026-10-10: «el mazo siempre debe estar mezclado»): las tarjetas forman cuatro
+    colas (oír, decir, leer, otros; `skill_of`) y se van tomando de la que va más retrasada en proporción a su tamaño,
+    así que cualquier tramo trae de todas. Cada cola va en su orden: primero lo que se va a decir, luego lo que se va a
+    oír y al final lo que solo se reconoce, y por tema. Y un paso de una entrada (leer, oír, tonos, decir) no sale
+    hasta `STAGE_GAP` posiciones después del anterior de esa misma entrada: Anki solo separa hermanas de una misma
+    nota, y aquí cada tarjeta es una nota. Con `pending` (los ids que siguen nuevos en Anki), se ordenan solo esas: un
+    paso ya estudiado no hace esperar a nadie."""
+    if pending is not None:
+        exercises = [x for x in exercises if x["id"] in pending]
     theme_idx = {t["id"]: i for i, t in enumerate(load_themes())}
     items = {it["id"]: (theme_idx.get(it.get("theme"), 99), n) for n, it in enumerate(entries + sentences)}
     eby, sby, levels = {e["id"]: e for e in entries}, {x["id"]: x for x in sentences}, hsk_levels()
-    # Todo puede entrar en el diccionario (docs/goal.md, «Qué sale primero»): dentro de cada nivel, primero lo que se
-    # va a decir, luego lo que se va a oír y al final lo que solo se reconoce.
+
     def tier(ex):
         it = eby.get((ex.get("targets") or [None])[0]) or sby.get((ex.get("targets") or [None])[0]) or {}
         mods = use_modalities(it)
@@ -3645,8 +3716,84 @@ def new_card_order(entries, sentences, exercises):
     def key(ex):
         th, n = items.get((ex.get("targets") or [None])[0], (99, 0))
         stage = STAGE.get(ex.get("type"), 1)
-        return (exercise_level(ex, eby, sby, levels), tier(ex), th + STAGE_LAG * stage, th, n, stage, ex["id"])
-    return {ex["id"]: pos for pos, ex in enumerate(sorted(exercises, key=key))}
+        return (tier(ex), th + STAGE_LAG * stage, th, n, stage, ex["id"])
+
+    by_level = {}
+    for ex in exercises:
+        by_level.setdefault(exercise_level(ex, eby, sby, levels), []).append(ex)
+    order = []
+    for lv in sorted(by_level, key=lambda v: (v is None, v or 0)):
+        order += interleave_streams(by_level[lv], key)
+    return {ex_id: pos for pos, ex_id in enumerate(order)}
+
+
+CHAIN = {"read", "listen", "tones", "produce", "derive", "cloze", "speak"}   # los pasos de una entrada, en orden STAGE
+STREAM_RUN = 2          # tarjetas seguidas de una misma cola, como mucho, si otra tiene algo listo
+STREAM_LOOKAHEAD = 40   # si la siguiente de una cola espera a un paso anterior, puede salir otra de las 40 siguientes
+
+
+PRON_SHARE = 0.1        # la cola de pronunciación sale como si fuera, al menos, una décima parte del nivel
+
+
+def stream_of(ex):
+    """La cola de una tarjeta al mezclar: las de pronunciación (objetivo `p.`) aparte; las demás, por `skill_of`."""
+    return "pron" if any(t.startswith("p.") for t in ex.get("targets", [])) else skill_of(ex)
+
+
+def interleave_streams(cards, key, gap=STAGE_GAP):
+    """Ids de `cards` en orden mezclado: una cola por `skill_of`, cada una ordenada por `key`; en cada paso sale la
+    cola que menos ha avanzado en proporción. De ella, la primera tarjeta (entre las `STREAM_LOOKAHEAD` siguientes) que
+    no espera a un paso anterior de su entrada (`CHAIN`: leer, oír, tonos, decir) sin colocar o colocado hace menos de
+    `gap` posiciones; si en esa cola no hay ninguna, prueba la siguiente cola; si en ninguna, la más retrasada. Los
+    contrastes, matices y demás no esperan ni hacen esperar."""
+    streams = {}
+    for ex in sorted(cards, key=key):
+        streams.setdefault(stream_of(ex), []).append(ex)
+    stages = {}                                  # objetivo → [(paso, id)] de los pasos de la cadena
+    for ex in cards:
+        if ex.get("type") in CHAIN:
+            for t in ex.get("targets", []):
+                stages.setdefault(t, []).append((STAGE[ex["type"]], ex["id"]))
+    placed, out, total = {}, [], len(cards)
+
+    def ready(ex):
+        if ex.get("type") not in CHAIN:
+            return True
+        st = STAGE[ex["type"]]
+        return all(not (s2 < st and (other not in placed or len(out) - placed[other] < gap))
+                   for t in ex.get("targets", []) for s2, other in stages.get(t, []))
+    def wait(ex):
+        st = STAGE.get(ex.get("type"), 1)
+        return max([0] + [(gap - (len(out) - placed[o])) if o in placed else 10 ** 6
+                          for t in ex.get("targets", []) for s2, o in stages.get(t, []) if s2 < st])             if ex.get("type") in CHAIN else 0
+    size = {k: len(v) for k, v in streams.items()}
+    # Peso de cada cola: su tamaño; la de pronunciación, al menos PRON_SHARE del total, para que lo básico de cómo
+    # suena salga repartido al principio del nivel y no al final, ni todo junto.
+    weight = {k: max(n, PRON_SHARE * total) if k == "pron" else n for k, n in size.items()}
+    last, run = None, 0
+    while len(out) < total:
+        live = sorted((k for k in streams if streams[k]),
+                      key=lambda k: ((size[k] - len(streams[k]) + 0.5) / weight[k], k))
+        # Una cola que esperaba no recupera de golpe: como mucho STREAM_RUN seguidas si otra tiene algo listo.
+        if run >= STREAM_RUN:
+            live = [k for k in live if k != last] + [k for k in live if k == last]
+        pick = None
+        for k in live:
+            i = next((i for i, ex in enumerate(streams[k][:STREAM_LOOKAHEAD]) if ready(ex)), None)
+            if i is not None:
+                pick = (k, i)
+                break
+        if pick is None:
+            # Nada listo: la tarjeta a la que menos le falta para estarlo (antes que romper el orden de sus pasos).
+            pick = min(((k, i) for k in live for i in range(min(len(streams[k]), STREAM_LOOKAHEAD))),
+                       key=lambda ki: wait(streams[ki[0]][ki[1]]))
+        k, i = pick
+        run = run + 1 if k == last else 1
+        last = k
+        ex = streams[k].pop(i)
+        placed[ex["id"]] = len(out)
+        out.append(ex["id"])
+    return out
 
 
 def our_decks():
@@ -3742,12 +3889,15 @@ def new_due_plan(dues):
     return plan
 
 
-def reorder_new(order):
-    """Coloca las nuevas en el orden de `new_card_order`, moviendo solo las que están fuera de su sitio."""
+def reorder_new(order_for):
+    """Coloca las nuevas en el orden de `new_card_order`, moviendo solo las que están fuera de su sitio.
+    `order_for(pending)` da ese orden calculado solo sobre las que siguen nuevas en Anki: la mezcla es de lo que
+    queda por estudiar, no de lo ya visto."""
     cards = anki_request("findCards", query=f'"deck:{DECK_NAME}" is:new')
     if not cards:
         return 0
     info = anki_request("cardsInfo", cards=cards)
+    order = order_for({c["fields"].get("ExerciseID", {}).get("value") for c in info})
     placed = sorted((pos, c["cardId"], c["due"]) for c in info
                     if (pos := order.get(c["fields"].get("ExerciseID", {}).get("value"))) is not None)
     plan = new_due_plan([due for _, _, due in placed])
@@ -3863,7 +4013,7 @@ def cmd_push(allow_missing_audio, sync, prune=False, reset=False, force=False):
     sync_templates()
     if reset:
         print(f"Progreso reiniciado: {reset_progress()} tarjeta(s) vuelven a nuevas.")
-    moved = reorder_new(new_card_order(entries, sentences, exercises))
+    moved = reorder_new(lambda pending: new_card_order(entries, sentences, exercises, pending))
     print(f"Orden de nuevas: {moved} tarjeta(s) recolocada(s).")
     orphans(exercises, prune, force)
     moved_decks, removed = place_by_theme(exercises)

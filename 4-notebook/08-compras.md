@@ -23,11 +23,11 @@
 - ✅🃏 需要 xūyào [ɕy˥ jɑʊ˥˩] · necesitar · _verbo_ · 需要 es necesitar porque la situación lo impone; 要, querer o hacer falta. 我需要水 «necesito agua»; 我要水 «quiero agua». · 需: una persona bajo la lluvia 雨 que necesita resguardo.
 - ✅🃏 票 piào [pʰjɑʊ˥˩] · billete, entrada · _sustantivo_ · Familia: 车票 chēpiào «billete de tren o autobús», 机票 jīpiào «billete de avión», 门票 ménpiào «entrada» [HSK 1]; 发票 fāpiào «factura» [HSK 4]; 投票 tóupiào «votar» [HSK 6]. En 发票 va 发 fā «emitir» (la factura se emite); en 投票, 投 tóu «lanzar, meter» (el voto se mete en la urna). · Un papel ritual que se quemaba: de ahí «billete»; sus cenizas flotando dan 漂 piāo «flotar», que presta el sonido a 漂亮.
 - ✅🃏 机票 jīpiào [tɕi˥ pʰjɑʊ˥˩] · billete de avión · _sustantivo_ · 机 jī «máquina» es el mismo de 手机 «móvil» (máquina de mano) y 飞机 fēijī «avión» (máquina que vuela).
-- ✅🃏 东西 dōngxi [tʊŋ˥ ɕi] · cosa, cosas · _sustantivo_ · Literalmente «este y oeste». 买东西 mǎi dōngxi es «ir de compras». El 西 es el de 西班牙. · 东: el sol 日 saliendo tras un árbol 木, por el este. 西: los pájaros vuelven al nido cuando el sol se pone, por el oeste.
+- ✅🃏 东西 dōngxi [tʊŋ˥ ɕi] · cosa, cosas · _sustantivo_ · Literalmente «este y oeste». 买东西 mǎi dōngxi es «ir de compras». El 西 es el de 西班牙. · 东: el sol 日 saliendo tras un árbol 木, por el este. 西: los pájaros vuelven al nido cuando el sol se pone, por el oeste. · Todo lo que hay entre el este 东 y el oeste 西: las cosas.
 - ✅🃏 大小 dàxiǎo [ta˥˩ ɕjɑʊ˧˩˧] · tamaño · _sustantivo_ · Grande + pequeño = el tamaño. · 大小 es el tamaño de cualquier cosa; la talla de la ropa es otra palabra, 尺码 chǐmǎ, de tienda y fuera de la lista del HSK.
 - ✅🃏 吃 chī [ʈʂʰɨ˥] · comer · _verbo_ · 口 «boca» a la izquierda, como en 喝, 吗 y 叫: lo que se hace con la boca.
 - ✅🃏 饭 fàn [fan˥˩] · comida; arroz cocido · _sustantivo_ · 饣 es 食 shí «comer, alimento» en su forma de lado; 反 fǎn da el sonido. · El radical de la comida y una mano (又, dentro de 反) que la lleva a la boca. · Para decir «comer» lo normal es 吃饭; 饭 suelto es «la comida» o «el arroz».
-- ✅🃏 吃饭 chīfàn [ʈʂʰɨ˥ fan˥˩] · comer (una comida) · _verbo_ · Verbo y objeto, «comer comida»: es la forma normal de decir «comer» cuando no dices qué. 吃饭了吗？ es también un saludo.
+- ✅🃏 吃饭 chīfàn [ʈʂʰɨ˥ fan˥˩] · comer (una comida) · _verbo_ · Verbo y objeto, «comer comida»: es la forma normal de decir «comer» cuando no dices qué. 吃饭了吗？ es también un saludo. · 吃饭 es comer, la comida en general; 米饭 es el arroz cocido. De alguien que no come nada, como un enfermo, se dice 他不吃东西.
 - ✅🃏 饭店 fàndiàn [fan˥˩ tjɛn˥˩] · restaurante · _sustantivo_ · 饭 «comida» + 店 «local»: el local de comida. En nombres propios suele ser un hotel (北京饭店); «restaurante» también se dice 餐厅 cāntīng [HSK 5].
 - ✅🃏 书店 shūdiàn [ʂu˥ tjɛn˥˩] · librería · _sustantivo_
 - ✅🃏 店 diàn [tjɛn˥˩] · tienda, local · _sustantivo_ · 广 es un tejado con una pared, un edificio abierto, y 占 zhàn da el sonido. · Dentro del edificio 广, un espacio ocupado (占 también es «ocupar»): el local.
@@ -35,7 +35,7 @@
 - ✅🃏 多少 duōshao [twɔ˥ ʂɑʊ] · cuánto, cuántos · _interrogativo_ · Palabra a palabra: 多 «mucho» + 少 «poco»: ¿cuánto?
 - ✅🃏 多少钱 duōshao qián [twɔ˥ ʂɑʊ tɕʰjɛn˧˥] · ¿cuánto cuesta? · _expresión_ · Palabra a palabra: 多少 «cuánto» + 钱 «dinero».
 - ✅🃏 块 kuài [kʰwaɪ˥˩] · yuan (al hablar) · _clasificador_ · 块 es como se dice 元 yuán [HSK 1] al hablar: 十块钱 «diez yuanes».
-- ✅🃏 想要 xiǎngyào [ɕjɑŋ˧˩˧ jɑʊ˥˩] · querer (tener algo), desear · _verbo_ · Entre 想 y 要: 我想要这个 «me gustaría este», más suave que 我要这个 «quiero este, dame este».
+- ✅🃏 想要 xiǎngyào [ɕjɑŋ˧˩˧ jɑʊ˥˩] · querer (tener algo), desear · _verbo_ · Entre 想 y 要: 我想要这个 «me gustaría este», más suave que 我要这个 «quiero este, dame este». · 想要 + cosa: quieres conseguirla (我想要这个). 想有, que es 想 + 有, quiere tenerla como parte de tu vida: 我想有一个家 «me gustaría tener una familia».
 - ✅🃏 好吃 hǎochī [xɑʊ˧˩˧ ʈʂʰɨ˥] · rico, bueno (de comer) · _adjetivo_ · 好 + verbo: «bueno de…». 好吃 «rico», 好看 «bonito», 好听 «agradable de oír».
 - ✅🃏 菜 cài [tsʰaɪ˥˩] · plato, comida; verdura · _sustantivo_ · 艹 «hierba» arriba: era la verdura. Hoy también «plato, cocina»: 中国菜 «comida china».
 - ✅🃏 茶 chá [ʈʂʰa˧˥] · té · _sustantivo_ · 艹 «hierba» arriba: una hoja. 喝茶 «tomar té».
@@ -49,6 +49,8 @@
 - ✅🃏 派 pài [pʰaɪ˥˩] · tarta (pie) · _sustantivo_ · Préstamo del inglés pie: 苹果派 «tarta de manzana». El mismo hanzi es también «enviar» y «facción», otros sentidos.
 - ✅🃏 元 yuán [ɥœn˧˥] · yuan (por escrito) · _clasificador_ · 元 es lo que pone en los precios y en los billetes; al hablar se dice 块: 五元 se lee 五块.
 - ✅🃏 鞋 xié [ɕjɛ˧˥] · zapato, calzado · _sustantivo_ · Lo mismo un zapato que el calzado en general: 我要买鞋 «quiero comprar zapatos». Suena igual que 谢 xiè salvo el tono.
+- ✅🃏 贵 guì [kweɪ˥˩] · caro · _adjetivo_
+- ✅🃏 请客 qǐngkè [tɕʰiŋ˧˩˧ kʰɤ˥˩] · invitar (pagar tú) · _verbo_ · 我请客！ «¡invito yo!»: pagas tú la cuenta de todos.
 
 ## Querer, necesitar, gustar, amar
 
@@ -125,3 +127,14 @@ Solo cambia el tono: 鞋 sube, 写 baja y sube.
 - ✅🃏 我要买鞋。 · wǒ yào mǎi xié · Quiero comprar zapatos.
 - ✅🃏 我要一杯可乐。 · wǒ yào yì bēi kělè · Quiero una cola.
 - ✅🃏 你要哪个？ · nǐ yào nǎ ge · ¿Cuál quieres?
+- ✅🃏 我不喝茶。 · wǒ bù hē chá · No tomo té.
+- ✅🃏 我还没吃饭。 · wǒ hái méi chīfàn · Todavía no he comido.
+- ✅🃏 我不要水。 · wǒ bú yào shuǐ · No quiero agua.
+- ✅🃏 我没有水。 · wǒ méiyǒu shuǐ · No tengo agua.
+- ✅🃏 我想喝茶。 · wǒ xiǎng hē chá · Me apetece un té.
+- ✅🃏 我要一杯水。 · wǒ yào yì bēi shuǐ · Un vaso de agua, por favor.
+- ✅🃏 我喜欢茶，我想喝一杯。 · wǒ xǐhuan chá wǒ xiǎng hē yì bēi · Me gusta el té: me apetece una taza.
+- ✅🃏 好贵！ · hǎo guì · ¡Qué caro!
+- ✅🃏 我请客！ · wǒ qǐngkè · ¡Invito yo!
+- ✅🃏 你怎么了？我还没吃饭。走吧，我们去吃饭！ · nǐ zěnme le wǒ hái méi chīfàn zǒu ba wǒmen qù chīfàn · —¿Qué te pasa? —Todavía no he comido. —Venga, ¡vamos a comer!
+- ✅🃏 我喜欢喝茶。 · wǒ xǐhuan hē chá · Me gusta el té.

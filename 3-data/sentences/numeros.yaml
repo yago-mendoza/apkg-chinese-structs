@@ -304,3 +304,12 @@ sentences:
       - {text: 。}
     translation: {es: 'Este libro lo he leído dos veces, entero.', en: 'I''ve read this book twice, cover to cover.'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.wo-you-shijian
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 有, ref: w.you.have, pinyin: yǒu}
+      - {text: 时间, ref: w.shijian, pinyin: shíjiān}
+      - {text: 。}
+    translation: {es: Tengo tiempo., en: I have time.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}

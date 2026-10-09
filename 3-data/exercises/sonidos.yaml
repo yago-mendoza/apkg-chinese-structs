@@ -13,63 +13,6 @@ exercises:
     refs: [p.third-tone-sandhi]
     explanation: Oyes ní hǎo, pero se escribe nǐ hǎo.
     comments: []
-  - id: x.speak.aspiration
-    added: 2026-09-25
-    type: speak
-    targets: [p.aspiration]
-    context: [w.baba, w.pengyou]
-    refs: [p.aspiration]
-    skills: [speaking]
-    prompt: {text: 'Lee en voz alta con un papel delante de la boca: solo la p debe moverlo.', hanzi: 爸爸，朋友, pinyin: 'bàba,
-        péngyou'}
-    answer: {hanzi: 爸爸，朋友, meaning: 'papá, amigo'}
-    lang: es
-    comments: []
-  - id: x.speak.bu-shi
-    added: 2026-09-25
-    type: speak
-    sentence: s.wo-bu-shi-xuesheng
-    targets: [p.bu-sandhi]
-    context: [w.bu, w.shi, w.xuesheng, w.laoshi]
-    refs: [p.bu-sandhi]
-    skills: [speaking, tones]
-    prompt: {text: Lee en voz alta y después compara con el audio., hanzi: 我不是学生，我是老师。, pinyin: 'Wǒ bú shì xuéshēng, wǒ shì
-        lǎoshī.'}
-    answer: {meaning: 'No soy estudiante, soy profesor.'}
-    lang: es
-    comments: []
-  - id: x.speak.laoshihao
-    added: 2026-09-25
-    type: speak
-    targets: [p.third-tone-half]
-    context: [e.laoshihao]
-    refs: [p.third-tone-half]
-    skills: [speaking, tones]
-    prompt: {text: 'Lee en voz alta: lǎo solo baja, no sube.', hanzi: 老师好, pinyin: lǎoshī hǎo}
-    answer: {hanzi: 老师好, pinyin: lǎoshī hǎo, meaning: 'hola, profe'}
-    lang: es
-    comments: []
-  - id: x.speak.jqx-zhchsh
-    added: 2026-09-25
-    type: speak
-    targets: [p.jqx-zhchsh]
-    context: [w.xuesheng]
-    refs: [p.jqx-zhchsh]
-    skills: [speaking]
-    prompt: {text: 'Lee en voz alta y después compara con el audio.', hanzi: 学生, pinyin: xuéshēng}
-    answer: {hanzi: 学生, pinyin: xuéshēng, meaning: estudiante}
-    lang: es
-    comments: []
-  - id: x.speak.third-tone-sandhi
-    added: 2026-09-26
-    type: speak
-    targets: [p.third-tone-sandhi]
-    refs: [p.third-tone-sandhi]
-    prompt: {text: 'Lee en voz alta: dos terceros tonos seguidos, la primera sube. Compara con el audio.', hanzi: 水果, pinyin: shuǐguǒ}
-    answer: {hanzi: 水果, pinyin: shuǐguǒ, meaning: 'fruta: suena shuíguǒ'}
-    skills: [speaking, tones]
-    lang: es
-    comments: []
   - id: x.listen.bu-sandhi
     added: 2026-09-26
     type: listen
@@ -90,17 +33,6 @@ exercises:
     skills: [listening, tones]
     lang: es
     comments: []
-  - id: x.speak.neutral-tone
-    added: 2026-09-26
-    type: speak
-    targets: [p.neutral-tone]
-    refs: [p.neutral-tone]
-    prompt: {text: 'Lee en voz alta: la segunda sílaba, corta y ligera. Compara con el audio.', hanzi: 朋友，名字, pinyin: 'péngyou,
-        míngzi'}
-    answer: {hanzi: 朋友，名字, meaning: 'amigo, nombre'}
-    skills: [speaking, tones]
-    lang: es
-    comments: []
   - id: x.listen.aspiration
     added: 2026-09-26
     type: listen
@@ -109,17 +41,6 @@ exercises:
     prompt: {text: 'Escucha 爸爸，朋友. ¿Cuál empieza con un soplo de aire?', audio: true}
     answer: {hanzi: 爸爸，朋友, meaning: '朋 (p): con aire. 爸 (b): sin aire'}
     skills: [listening]
-    lang: es
-    comments: []
-  - id: x.speak.h-throat
-    added: 2026-09-29
-    type: speak
-    targets: [p.h-throat]
-    context: [w.he.drink, w.shui]
-    refs: [p.h-throat]
-    skills: [speaking]
-    prompt: {text: 'Di en voz alta, con la h desde la garganta:', hanzi: 喝水, pinyin: hē shuǐ}
-    answer: {hanzi: 喝水, meaning: beber agua}
     lang: es
     comments: []
   - id: x.listen.syllables
@@ -131,257 +52,6 @@ exercises:
     prompt: {text: 'Escucha 我不是学生. ¿Cuántas sílabas oyes?', audio: true}
     answer: {hanzi: 我不是学生, meaning: 'Cinco, una por hanzi y cada una con su tono: wǒ bú shì xuésheng.'}
     lang: es
-    comments: []
-  - id: x.speak.syllables
-    added: 2026-09-29
-    type: speak
-    targets: [p.syllables]
-    context: [w.xibanya, w.ren]
-    refs: [p.syllables]
-    skills: [speaking]
-    prompt: {text: 'Di en voz alta, sílaba a sílaba, cada una con su tono:', hanzi: 西班牙人, pinyin: Xībānyárén}
-    answer: {hanzi: 西班牙人, meaning: 'español, española'}
-    lang: es
-    comments: []
-  - id: x.syllable.shi-chi.shi
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.sibilants]
-    refs: [p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿shì o chī?', audio: true}
-    answer: {hanzi: '是', pinyin: 'shì', meaning: 'shì 是 «ser», no chī 吃 «comer». sh es un soplo continuo; ch empieza con un golpe, como «ch» con aire. Además, shì cae (4.º) y chī se mantiene alto (1.º).'}
-    comments: []
-  - id: x.syllable.shi-chi.chi
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.sibilants]
-    refs: [p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿shì o chī?', audio: true}
-    answer: {hanzi: '吃', pinyin: 'chī', meaning: 'chī 吃 «comer», no shì 是 «ser». sh es un soplo continuo; ch empieza con un golpe, como «ch» con aire. Además, shì cae (4.º) y chī se mantiene alto (1.º).'}
-    comments: []
-  - id: x.syllable.shi-si.shi
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.sibilants]
-    refs: [p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿shì o sì?', audio: true}
-    answer: {hanzi: '是', pinyin: 'shì', meaning: 'shì 是 «ser», no sì 四 «cuatro». sh, con la punta curvada hacia arriba, suena más hueca; s, con la lengua plana, es la s española.'}
-    comments: []
-  - id: x.syllable.shi-si.si
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.sibilants]
-    refs: [p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿shì o sì?', audio: true}
-    answer: {hanzi: '四', pinyin: 'sì', meaning: 'sì 四 «cuatro», no shì 是 «ser». sh, con la punta curvada hacia arriba, suena más hueca; s, con la lengua plana, es la s española.'}
-    comments: []
-  - id: x.syllable.chi-qi.chi
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.jqx-zhchsh]
-    refs: [p.jqx-zhchsh, p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿chī o qī?', audio: true}
-    answer: {hanzi: '吃', pinyin: 'chī', meaning: 'chī 吃 «comer», no qī 七 «siete». ch, con la punta curvada, suena hueca; q, con la lengua plana y la punta abajo, más fina, como «chi» sonriendo.'}
-    comments: []
-  - id: x.syllable.chi-qi.qi
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.jqx-zhchsh]
-    refs: [p.jqx-zhchsh, p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿chī o qī?', audio: true}
-    answer: {hanzi: '七', pinyin: 'qī', meaning: 'qī 七 «siete», no chī 吃 «comer». ch, con la punta curvada, suena hueca; q, con la lengua plana y la punta abajo, más fina, como «chi» sonriendo.'}
-    comments: []
-  - id: x.syllable.si-ci.si
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.sibilants]
-    refs: [p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿sì o cì?', audio: true}
-    answer: {hanzi: '四', pinyin: 'sì', meaning: 'sì 四 «cuatro», no cì 次 «vez». s es una s seguida; c es «ts» con un golpe de aire.'}
-    comments: []
-  - id: x.syllable.si-ci.ci
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.sibilants]
-    refs: [p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿sì o cì?', audio: true}
-    answer: {hanzi: '次', pinyin: 'cì', meaning: 'cì 次 «vez», no sì 四 «cuatro». s es una s seguida; c es «ts» con un golpe de aire.'}
-    comments: []
-  - id: x.syllable.shi-xi.shi
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.jqx-zhchsh]
-    refs: [p.jqx-zhchsh, p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿shī o xī?', audio: true}
-    answer: {hanzi: '师', pinyin: 'shī', meaning: 'shī 师 «maestro (el de 老师)», no xī 西 «oeste (el de 西班牙)». sh, punta curvada arriba, hueca; x, lengua plana con la punta abajo, fina, casi «si» sonriendo.'}
-    comments: []
-  - id: x.syllable.shi-xi.xi
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.jqx-zhchsh]
-    refs: [p.jqx-zhchsh, p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿shī o xī?', audio: true}
-    answer: {hanzi: '西', pinyin: 'xī', meaning: 'xī 西 «oeste (el de 西班牙)», no shī 师 «maestro (el de 老师)». sh, punta curvada arriba, hueca; x, lengua plana con la punta abajo, fina, casi «si» sonriendo.'}
-    comments: []
-  - id: x.syllable.zhao-zao.zhao
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.sibilants]
-    refs: [p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿zhǎo o zǎo?', audio: true}
-    answer: {hanzi: '找', pinyin: 'zhǎo', meaning: 'zhǎo 找 «buscar», no zǎo 早 «temprano». zh, punta curvada arriba, suena hueca, como una «ch» sin aire; z, lengua plana, como «ts».'}
-    comments: []
-  - id: x.syllable.zhao-zao.zao
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.sibilants]
-    refs: [p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿zhǎo o zǎo?', audio: true}
-    answer: {hanzi: '早', pinyin: 'zǎo', meaning: 'zǎo 早 «temprano», no zhǎo 找 «buscar». zh, punta curvada arriba, suena hueca, como una «ch» sin aire; z, lengua plana, como «ts».'}
-    comments: []
-  - id: x.syllable.chao-cao.chao
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.sibilants]
-    refs: [p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿chǎo o cǎo?', audio: true}
-    answer: {hanzi: '吵', pinyin: 'chǎo', meaning: 'chǎo 吵 «ruidoso», no cǎo 草 «hierba». ch, punta curvada arriba; c, lengua plana, «ts» con aire. Las dos llevan el golpe de aire.'}
-    comments: []
-  - id: x.syllable.chao-cao.cao
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.sibilants]
-    refs: [p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿chǎo o cǎo?', audio: true}
-    answer: {hanzi: '草', pinyin: 'cǎo', meaning: 'cǎo 草 «hierba», no chǎo 吵 «ruidoso». ch, punta curvada arriba; c, lengua plana, «ts» con aire. Las dos llevan el golpe de aire.'}
-    comments: []
-  - id: x.syllable.jia-xia.jia
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.sibilants]
-    refs: [p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿jiā o xiā?', audio: true}
-    answer: {hanzi: '家', pinyin: 'jiā', meaning: 'jiā 家 «casa», no xiā 虾 «gamba». j empieza con un cierre suave, como una «ch» floja; x es un soplo continuo, sin cierre.'}
-    comments: []
-  - id: x.syllable.jia-xia.xia
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.sibilants]
-    refs: [p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿jiā o xiā?', audio: true}
-    answer: {hanzi: '虾', pinyin: 'xiā', meaning: 'xiā 虾 «gamba», no jiā 家 «casa». j empieza con un cierre suave, como una «ch» floja; x es un soplo continuo, sin cierre.'}
-    comments: []
-  - id: x.syllable.xin-qin.xin
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.sibilants]
-    refs: [p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿xīn o qīn?', audio: true}
-    answer: {hanzi: '新', pinyin: 'xīn', meaning: 'xīn 新 «nuevo», no qīn 亲 «pariente, querido». x es un soplo continuo; q empieza con un golpe de aire.'}
-    comments: []
-  - id: x.syllable.xin-qin.qin
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.sibilants]
-    refs: [p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿xīn o qīn?', audio: true}
-    answer: {hanzi: '亲', pinyin: 'qīn', meaning: 'qīn 亲 «pariente, querido», no xīn 新 «nuevo». x es un soplo continuo; q empieza con un golpe de aire.'}
-    comments: []
-  - id: x.syllable.qiu-jiu.qiu
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.sibilants]
-    refs: [p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿qiú o jiǔ?', audio: true}
-    answer: {hanzi: '球', pinyin: 'qiú', meaning: 'qiú 球 «pelota», no jiǔ 九 «nueve». q lleva golpe de aire y j no. Además, qiú sube (2.º) y jiǔ baja (3.º).'}
-    comments: []
-  - id: x.syllable.qiu-jiu.jiu
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.sibilants]
-    refs: [p.sibilants]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿qiú o jiǔ?', audio: true}
-    answer: {hanzi: '九', pinyin: 'jiǔ', meaning: 'jiǔ 九 «nueve», no qiú 球 «pelota». q lleva golpe de aire y j no. Además, qiú sube (2.º) y jiǔ baja (3.º).'}
-    comments: []
-  - id: x.syllable.xin-xing.xin
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.n-ng]
-    refs: [p.n-ng]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿xīn o xīng?', audio: true}
-    answer: {hanzi: '心', pinyin: 'xīn', meaning: 'xīn 心 «corazón», no xīng 星 «estrella». -n acaba con la lengua tras los dientes; -ng acaba atrás, con la boca abierta, sin que suene la g.'}
-    comments: []
-  - id: x.syllable.xin-xing.xing
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.n-ng]
-    refs: [p.n-ng]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿xīn o xīng?', audio: true}
-    answer: {hanzi: '星', pinyin: 'xīng', meaning: 'xīng 星 «estrella», no xīn 心 «corazón». -n acaba con la lengua tras los dientes; -ng acaba atrás, con la boca abierta, sin que suene la g.'}
-    comments: []
-  - id: x.syllable.fan-fang.fan
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.n-ng]
-    refs: [p.n-ng]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿fàn o fàng?', audio: true}
-    answer: {hanzi: '饭', pinyin: 'fàn', meaning: 'fàn 饭 «comida», no fàng 放 «poner». -n acaba con la lengua tras los dientes; -ng acaba atrás, con la boca abierta, sin que suene la g.'}
-    comments: []
-  - id: x.syllable.fan-fang.fang
-    added: 2026-10-05
-    lang: es
-    type: listen
-    targets: [p.n-ng]
-    refs: [p.n-ng]
-    skills: [listening, discrimination]
-    prompt: {text: 'Escucha: ¿fàn o fàng?', audio: true}
-    answer: {hanzi: '放', pinyin: 'fàng', meaning: 'fàng 放 «poner», no fàn 饭 «comida». -n acaba con la lengua tras los dientes; -ng acaba atrás, con la boca abierta, sin que suene la g.'}
     comments: []
   - id: x.tones.neutral-pengyou
     added: 2026-10-05
@@ -403,111 +73,6 @@ exercises:
     prompt: {text: 'Escucha y escribe el pinyin.', audio: true}
     answer: {typed: he1 shui3, hanzi: 喝水, pinyin: hē shuǐ, meaning: 'beber agua: la h, áspera desde la garganta'}
     comments: []
-  - id: x.syllable.bu.bu-shi
-    added: 2026-10-06
-    lang: es
-    type: listen
-    targets: [p.bu-sandhi]
-    refs: [p.bu-sandhi]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿bù o bú?', audio: true}
-    answer: {hanzi: 不是, pinyin: 'bú shì', meaning: 'bú: Delante de un cuarto tono, 不 sube: bú.'}
-    comments: []
-  - id: x.syllable.bu.bu-kan
-    added: 2026-10-06
-    lang: es
-    type: listen
-    targets: [p.bu-sandhi]
-    refs: [p.bu-sandhi]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿bù o bú?', audio: true}
-    answer: {hanzi: 不看, pinyin: 'bú kàn', meaning: 'bú: Delante de un cuarto tono, 不 sube: bú.'}
-    comments: []
-  - id: x.syllable.bu.bu-hao
-    added: 2026-10-06
-    lang: es
-    type: listen
-    targets: [p.bu-sandhi]
-    refs: [p.bu-sandhi]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿bù o bú?', audio: true}
-    answer: {hanzi: 不好, pinyin: 'bù hǎo', meaning: 'bù: Delante de los demás tonos, 不 se queda en bù.'}
-    comments: []
-  - id: x.syllable.bu.bu-mai
-    added: 2026-10-06
-    lang: es
-    type: listen
-    targets: [p.bu-sandhi]
-    refs: [p.bu-sandhi]
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿bù o bú?', audio: true}
-    answer: {hanzi: 不买, pinyin: 'bù mǎi', meaning: 'bù: Delante de los demás tonos, 不 se queda en bù.'}
-    comments: []
-  - id: x.syllable.yi.ge
-    added: 2026-10-06
-    lang: es
-    type: listen
-    targets: [p.yi-sandhi]
-    refs: [p.yi-sandhi]
-    accept_pinyin_mismatch: 'se escribe el tono realizado de 一 (sandhi), que es lo que se pregunta'
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿yī, yí o yì?', audio: true}
-    answer: {hanzi: 一个, pinyin: 'yí ge', meaning: 'yí: Delante de un cuarto tono, 一 sube: yí.'}
-    comments: []
-  - id: x.syllable.yi.ci
-    added: 2026-10-06
-    lang: es
-    type: listen
-    targets: [p.yi-sandhi]
-    refs: [p.yi-sandhi]
-    accept_pinyin_mismatch: 'se escribe el tono realizado de 一 (sandhi), que es lo que se pregunta'
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿yī, yí o yì?', audio: true}
-    answer: {hanzi: 一次, pinyin: 'yí cì', meaning: 'yí: Delante de un cuarto tono, 一 sube: yí.'}
-    comments: []
-  - id: x.syllable.yi.ben
-    added: 2026-10-06
-    lang: es
-    type: listen
-    targets: [p.yi-sandhi]
-    refs: [p.yi-sandhi]
-    accept_pinyin_mismatch: 'se escribe el tono realizado de 一 (sandhi), que es lo que se pregunta'
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿yī, yí o yì?', audio: true}
-    answer: {hanzi: 一本, pinyin: 'yì běn', meaning: 'yì: Delante de los demás tonos, 一 cae: yì.'}
-    comments: []
-  - id: x.syllable.yi.bai
-    added: 2026-10-06
-    lang: es
-    type: listen
-    targets: [p.yi-sandhi]
-    refs: [p.yi-sandhi]
-    accept_pinyin_mismatch: 'se escribe el tono realizado de 一 (sandhi), que es lo que se pregunta'
-    skills: [listening, tones]
-    prompt: {text: 'Escucha. ¿yī, yí o yì?', audio: true}
-    answer: {hanzi: 一百, pinyin: 'yì bǎi', meaning: 'yì: Delante de los demás tonos, 一 cae: yì.'}
-    comments: []
-  - id: x.speak.yi-sandhi
-    added: 2026-10-06
-    lang: es
-    type: speak
-    targets: [p.yi-sandhi]
-    refs: [p.yi-sandhi]
-    accept_pinyin_mismatch: 'se escribe el tono realizado de 一 (sandhi), que es lo que se practica'
-    skills: [speaking, tones]
-    prompt: {text: 'Lee en voz alta y compara con el audio.', hanzi: 一个，一本，一百}
-    answer: {hanzi: 一个，一本，一百, pinyin: 'yí ge, yì běn, yì bǎi', meaning: 'un, un libro, cien: yí delante de cuarto tono; yì delante de los demás'}
-    comments: []
-  - id: x.speak.vowels
-    added: 2026-10-07
-    lang: es
-    type: speak
-    targets: [p.vowels]
-    refs: [p.vowels]
-    skills: [speaking, pinyin]
-    prompt: {text: 'Lee en voz alta y compara con el audio. Fíjate en la i, la e y la o.', hanzi: 四，是，你；的，谢，很}
-    answer: {hanzi: 四，是，你；的，谢，很, pinyin: 'sì shì nǐ de xiè hěn', meaning: 'tres i distintas (zumbido, zumbido curvado, i) y tres e distintas (o sin redondear, e, vocal neutra)'}
-    comments: []
   - id: x.dictation.vowels
     added: 2026-10-07
     lang: es
@@ -518,16 +83,6 @@ exercises:
     prompt: {text: 'Escucha y escribe el pinyin.', audio: true}
     answer: {typed: he1 cha2, hanzi: 喝茶, pinyin: hē chá, meaning: 'tomar té: la e de hē es una o sin redondear'}
     comments: []
-  - id: x.speak.y-w-u
-    added: 2026-10-08
-    lang: es
-    type: speak
-    targets: [p.y-w-u]
-    refs: [p.y-w-u]
-    skills: [speaking, pinyin]
-    prompt: {text: 'Lee en voz alta y compara con el audio. Fíjate en la y, la w y la u que suena ü.', hanzi: 一，五，鱼，去}
-    answer: {hanzi: 一，五，鱼，去, pinyin: 'yī wǔ yú qù', meaning: 'uno, cinco, pez, ir: yi es i y wu es u; yu y qu llevan ü aunque no se vea'}
-    comments: []
   - id: x.dictation.y-w-u
     added: 2026-10-08
     lang: es
@@ -537,4 +92,411 @@ exercises:
     skills: [listening, pinyin]
     prompt: {text: 'Escucha y escribe el pinyin.', audio: true}
     answer: {typed: qu4 xue2 xiao4, hanzi: 去学校, pinyin: 'qù xuéxiào', meaning: 'ir a la escuela: qu y xue suenan con ü, pero se escriben con u'}
+    comments: []
+  - id: x.pair.shi-chi
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.sibilants]
+    refs: [p.sibilants]
+    pair: [{hanzi: 是, pinyin: shì, meaning: ser}, {hanzi: 吃, pinyin: chī, meaning: comer}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos sílabas. ¿Cuál es chī, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: chī 吃. ch empieza con un golpe de aire; sh (是 shì) es un soplo seguido.'}
+    comments: []
+  - id: x.pair.shi-si
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.sibilants]
+    refs: [p.sibilants]
+    pair: [{hanzi: 四, pinyin: sì, meaning: cuatro}, {hanzi: 是, pinyin: shì, meaning: ser}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos sílabas. ¿Cuál es sì, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 1.ª: sì 四, lengua plana, la s española. shì 是 suena más hueca, con la punta curvada.'}
+    comments: []
+  - id: x.pair.chi-qi
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.jqx-zhchsh]
+    refs: [p.jqx-zhchsh, p.sibilants]
+    pair: [{hanzi: 七, pinyin: qī, meaning: siete}, {hanzi: 吃, pinyin: chī, meaning: comer}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos sílabas. ¿Cuál es chī, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: chī 吃. Su i no es i: un zumbido con la lengua curvada. En qī 七 es una i de verdad.'}
+    comments: []
+  - id: x.pair.si-ci
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.sibilants]
+    refs: [p.sibilants]
+    pair: [{hanzi: 次, pinyin: cì, meaning: vez}, {hanzi: 四, pinyin: sì, meaning: cuatro}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos sílabas. ¿Cuál es cì, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 1.ª: cì 次, «ts» con un golpe de aire. sì 四 es una s seguida.'}
+    comments: []
+  - id: x.pair.shi-xi
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.jqx-zhchsh]
+    refs: [p.jqx-zhchsh, p.sibilants]
+    pair: [{hanzi: 师, pinyin: shī, meaning: maestro}, {hanzi: 西, pinyin: xī, meaning: oeste}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos sílabas. ¿Cuál es xī, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: xī 西, lengua plana y una i de verdad. En shī 师, zumbido con la lengua curvada.'}
+    comments: []
+  - id: x.pair.zhao-zao
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.sibilants]
+    refs: [p.sibilants]
+    pair: [{hanzi: 找, pinyin: zhǎo, meaning: buscar}, {hanzi: 早, pinyin: zǎo, meaning: temprano}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos sílabas. ¿Cuál es zhǎo, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 1.ª: zhǎo 找, punta curvada, hueca. zǎo 早 es «ts», lengua plana.'}
+    comments: []
+  - id: x.pair.chao-cao
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.sibilants]
+    refs: [p.sibilants]
+    pair: [{hanzi: 草, pinyin: cǎo, meaning: hierba}, {hanzi: 吵, pinyin: chǎo, meaning: ruidoso}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos sílabas. ¿Cuál es cǎo, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 1.ª: cǎo 草, lengua plana, «ts» con aire. chǎo 吵 lleva la punta curvada.'}
+    comments: []
+  - id: x.pair.jia-xia
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.sibilants]
+    refs: [p.sibilants]
+    pair: [{hanzi: 虾, pinyin: xiā, meaning: gamba}, {hanzi: 家, pinyin: jiā, meaning: casa}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos sílabas. ¿Cuál es jiā, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: jiā 家, empieza con un cierre suave. xiā 虾 es un soplo seguido.'}
+    comments: []
+  - id: x.pair.xin-qin
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.sibilants]
+    refs: [p.sibilants]
+    pair: [{hanzi: 新, pinyin: xīn, meaning: nuevo}, {hanzi: 亲, pinyin: qīn, meaning: pariente}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos sílabas. ¿Cuál es qīn, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: qīn 亲, con un golpe de aire. xīn 新 es un soplo seguido.'}
+    comments: []
+  - id: x.pair.qiu-jiu
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.sibilants]
+    refs: [p.sibilants]
+    pair: [{hanzi: 球, pinyin: qiú, meaning: pelota}, {hanzi: 九, pinyin: jiǔ, meaning: nueve}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos sílabas. ¿Cuál es jiǔ, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: jiǔ 九, sin aire y baja. qiú 球 lleva golpe de aire y sube.'}
+    comments: []
+  - id: x.pair.xin-xing
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.n-ng]
+    refs: [p.n-ng]
+    pair: [{hanzi: 星, pinyin: xīng, meaning: estrella}, {hanzi: 心, pinyin: xīn, meaning: corazón}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos sílabas. ¿Cuál es xīn, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: xīn 心, acaba con la lengua tras los dientes. xīng 星 acaba atrás, -ng.'}
+    comments: []
+  - id: x.pair.fan-fang
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.n-ng]
+    refs: [p.n-ng]
+    pair: [{hanzi: 饭, pinyin: fàn, meaning: comida}, {hanzi: 放, pinyin: fàng, meaning: poner}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos sílabas. ¿Cuál es fàng, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: fàng 放, acaba atrás, con la boca abierta. fàn 饭 acaba en -n, la a más clara.'}
+    comments: []
+  - id: x.pair.chu-qu
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.y-w-u]
+    refs: [p.y-w-u]
+    pair: [{hanzi: 去, pinyin: qù, meaning: ir}, {hanzi: 出, pinyin: chū, meaning: salir}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos sílabas. ¿Cuál es chū, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: chū 出, una u de verdad, como en «tú». En qù 去 es ü: labios de u y lengua de i.'}
+    comments: []
+  - id: x.pair.yi-ben-ge
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.yi-sandhi]
+    refs: [p.yi-sandhi]
+    pair: [{hanzi: 一本, pinyin: yì běn, meaning: un (libro)}, {hanzi: 一个, pinyin: yí ge, meaning: 'uno, un'}]
+    skills: [listening, tones]
+    prompt: {text: 'Suenan dos. ¿En cuál 一 sube (yí), la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: 一个 yí ge, porque 个 es cuarto tono. En 一本 yì běn, 一 cae.'}
+    comments: []
+    accept_pinyin_mismatch: 'se escribe lo que suena: yí delante de cuarto tono y 个 átono'
+  - id: x.pair.bu-shi-hao
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.bu-sandhi]
+    refs: [p.bu-sandhi]
+    pair: [{hanzi: 不是, pinyin: bú shì, meaning: no ser}, {hanzi: 不好, pinyin: bù hǎo, meaning: no está bien}]
+    skills: [listening, tones]
+    prompt: {text: 'Suenan dos. ¿En cuál 不 sube (bú), la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 1.ª: 不是 bú shì, porque 是 es cuarto tono. En 不好 bù hǎo, 不 no cambia.'}
+    comments: []
+  - id: x.rule.yi.ge
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.yi-sandhi]
+    refs: [p.yi-sandhi]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Cómo suena 一 aquí?', hanzi: 一个}
+    answer: {hanzi: 一个, pinyin: yí ge, meaning: 'yí: delante de un cuarto tono (个), 一 sube.'}
+    comments: []
+    accept_pinyin_mismatch: 'se escribe lo que suena: yí delante de cuarto tono y 个 átono'
+  - id: x.rule.yi.ben
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.yi-sandhi]
+    refs: [p.yi-sandhi]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Cómo suena 一 aquí?', hanzi: 一本}
+    answer: {hanzi: 一本, pinyin: yì běn, meaning: 'yì: delante de los demás tonos, 一 cae.'}
+    comments: []
+  - id: x.rule.yi.di
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.yi-sandhi]
+    refs: [p.yi-sandhi]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Cómo suena 一 aquí?', hanzi: 第一}
+    answer: {hanzi: 第一, pinyin: dì yī, meaning: 'yī: al final, contando o en un número, 一 no cambia.'}
+    comments: []
+  - id: x.rule.bu.shi
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.bu-sandhi]
+    refs: [p.bu-sandhi]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Cómo suena 不 aquí?', hanzi: 不是}
+    answer: {hanzi: 不是, pinyin: bú shì, meaning: 'bú: delante de un cuarto tono, 不 sube.'}
+    comments: []
+  - id: x.rule.bu.hao
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.bu-sandhi]
+    refs: [p.bu-sandhi]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Cómo suena 不 aquí?', hanzi: 不好}
+    answer: {hanzi: 不好, pinyin: bù hǎo, meaning: 'bù: delante de los demás tonos, 不 no cambia.'}
+    comments: []
+  - id: x.rule.shuiguo
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.third-tone-sandhi]
+    refs: [p.third-tone-sandhi]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Cómo suena 水 aquí?', hanzi: 水果}
+    answer: {hanzi: 水果, pinyin: shuǐguǒ, meaning: 'Suena shuí: dos terceros seguidos, el primero sube. Se escribe shuǐ.'}
+    comments: []
+  - id: x.rule.laoshi
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.third-tone-half]
+    refs: [p.third-tone-half]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿El tercer tono de 老 baja y vuelve a subir, o solo baja?', hanzi: 老师}
+    answer: {hanzi: 老师, pinyin: lǎoshī, meaning: 'Solo baja: delante de otra sílaba, el tercero se queda a medias. Entero, solo suelto o con énfasis.'}
+    comments: []
+  - id: x.rule.pengyou
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.neutral-tone]
+    refs: [p.neutral-tone]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Qué sílaba no lleva tono?', hanzi: 朋友}
+    answer: {hanzi: 朋友, pinyin: péngyou, meaning: '友 you: corta y ligera, sin tono.'}
+    comments: []
+  - id: x.rule.ta
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.aspiration]
+    refs: [p.aspiration]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Empieza con un soplo de aire o sin él?', hanzi: 他}
+    answer: {hanzi: 他, pinyin: tā, meaning: 'Con soplo: t lleva aire. d (大 dà), no.'}
+    comments: []
+  - id: x.rule.hen
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.h-throat]
+    refs: [p.h-throat]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Cómo suena la h?', hanzi: 很}
+    answer: {hanzi: 很, pinyin: hěn, meaning: 'Áspera, desde la garganta: casi una j española suave.'}
+    comments: []
+  - id: x.rule.xibanyaren
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.syllables]
+    refs: [p.syllables]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Cuántas sílabas tiene y con qué tonos?', hanzi: 西班牙人}
+    answer: {hanzi: 西班牙人, pinyin: Xībānyárén, meaning: 'Cuatro, una por hanzi: 1, 1, 2 y 2.'}
+    comments: []
+  - id: x.rule.xuesheng
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.jqx-zhchsh]
+    refs: [p.jqx-zhchsh]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Qué sílaba lleva la lengua curvada hacia arriba?', hanzi: 学生}
+    answer: {hanzi: 学生, pinyin: xuéshēng, meaning: '生 shēng (sh). 学 xué, con la lengua plana y la punta abajo.'}
+    comments: []
+  - id: x.rule.i.si
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.vowels]
+    refs: [p.vowels]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Cómo suena la i?', hanzi: 四}
+    answer: {hanzi: 四, pinyin: sì, meaning: 'No es i: es un zumbido de la s, sin vocal, como en 字 zì.'}
+    comments: []
+  - id: x.rule.i.shi
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.vowels]
+    refs: [p.vowels]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Cómo suena la i?', hanzi: 是}
+    answer: {hanzi: 是, pinyin: shì, meaning: Es un zumbido con la lengua curvada hacia arriba. En 西 xī sí es una i.}
+    comments: []
+  - id: x.rule.e.he
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.vowels]
+    refs: [p.vowels]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Cómo suena la e?', hanzi: 喝}
+    answer: {hanzi: 喝, pinyin: hē, meaning: 'Como una o sin redondear los labios, no una e.'}
+    comments: []
+  - id: x.rule.e.xie
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.vowels]
+    refs: [p.vowels]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Cómo suena la e?', hanzi: 谢}
+    answer: {hanzi: 谢, pinyin: xiè, meaning: 'Una e de verdad: en ie, üe y ei suena e.'}
+    comments: []
+  - id: x.rule.u.qu
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.y-w-u]
+    refs: [p.y-w-u]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Cómo suena la u?', hanzi: 去}
+    answer: {hanzi: 去, pinyin: qù, meaning: 'Como ü: tras j, q, x e y, la u se escribe sin puntos, pero suena ü.'}
+    comments: []
+  - id: x.rule.o.wo
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    targets: [p.vowels]
+    refs: [p.vowels]
+    skills: [speaking, pinyin]
+    prompt: {text: '¿Cómo suena la o?', hanzi: 我}
+    answer: {hanzi: 我, pinyin: wǒ, meaning: 'Casi «uo»: la w es una u, así que wǒ es u + o.'}
+    comments: []
+  - id: x.vowels.pengyou
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.vowels]
+    refs: [p.vowels]
+    skills: [listening, pinyin]
+    prompt: {text: 'Escucha y completa las vocales: p_ngy_u', audio: true}
+    answer: {hanzi: 朋友, pinyin: péngyou, meaning: 'péngyou: e y o.'}
+    comments: []
+  - id: x.vowels.he
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.vowels]
+    refs: [p.vowels]
+    skills: [listening, pinyin]
+    prompt: {text: 'Escucha y completa las vocales: h_', audio: true}
+    answer: {hanzi: 喝, pinyin: hē, meaning: 'hē: e, que suena como una o sin redondear.'}
+    comments: []
+  - id: x.vowels.xiexie
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.vowels]
+    refs: [p.vowels]
+    skills: [listening, pinyin]
+    prompt: {text: 'Escucha y completa las vocales: x__x__', audio: true}
+    answer: {hanzi: 谢谢, pinyin: xièxie, meaning: 'xièxie: ie, con una e de verdad.'}
+    comments: []
+  - id: x.vowels.hen
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.vowels]
+    refs: [p.vowels]
+    skills: [listening, pinyin]
+    prompt: {text: 'Escucha y completa las vocales: h_n', audio: true}
+    answer: {hanzi: 很, pinyin: hěn, meaning: 'hěn: e, una vocal neutra y corta.'}
+    comments: []
+  - id: x.vowels.xue
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.y-w-u]
+    refs: [p.y-w-u]
+    skills: [listening, pinyin]
+    prompt: {text: 'Escucha y completa las vocales: x__', audio: true}
+    answer: {hanzi: 学, pinyin: xué, meaning: 'xué: ue, que suena üe.'}
+    comments: []
+  - id: x.vowels.qu
+    added: '2026-10-10'
+    lang: es
+    type: listen
+    targets: [p.y-w-u]
+    refs: [p.y-w-u]
+    skills: [listening, pinyin]
+    prompt: {text: 'Escucha y completa las vocales: q_', audio: true}
+    answer: {hanzi: 去, pinyin: qù, meaning: 'qù: u, que suena ü.'}
     comments: []

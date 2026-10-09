@@ -1491,7 +1491,7 @@ exercises:
     context: [w.mai, w.kafei]
     skills: [comprehension, discrimination]
     prompt: {text: '他买了咖啡 y 他买咖啡了: ¿qué cambia?'}
-    answer: {meaning: 'Las dos son «ha comprado café». 了 detrás del verbo se fija en la acción hecha y suele pedir algo más (他买了一杯咖啡); al final cuenta una novedad: «ya ha comprado café».'}
+    answer: {meaning: 'Las dos: «ha comprado café». 了 tras el verbo mira la acción hecha (他买了一杯咖啡); al final, cuenta una novedad.'}
     comments: []
   - id: x.nuance.bu-mei-bie
     added: 2026-10-01
@@ -2413,4 +2413,338 @@ exercises:
     skills: [comprehension, discrimination]
     prompt: {text: '这 y 那: ¿cuál es «este libro» y cuál «aquel libro»?'}
     answer: {meaning: '这本书 «este libro», el que está cerca de ti. 那本书 «ese, aquel libro», el que está lejos. Lo mismo en 这里 «aquí» y 那里 «allí».'}
+    comments: []
+  - id: x.cloze.mei.notyet
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.wo-hai-mei-chifan
+    gap: w.mei
+    targets: [w.mei]
+    context: [w.wo, w.hai.still, w.chifan]
+    skills: [production, pinyin]
+    prompt: {text: '¿不 o 没? «Todavía no he comido.»'}
+    answer: {typed: mei2, hanzi: 没, pinyin: méi, meaning: '没: lo que no ha pasado.'}
+    comments: []
+  - id: x.cloze.mei.lai
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.ta-hai-mei-lai
+    gap: w.mei
+    targets: [w.mei]
+    context: [w.ta.he, w.hai.still, w.lai]
+    skills: [production, pinyin]
+    prompt: {text: '¿不 o 没? «Todavía no ha venido.»'}
+    answer: {typed: mei2, hanzi: 没, pinyin: méi, meaning: '没: lo que no ha pasado (todavía).'}
+    comments: []
+  - id: x.cloze.jinlai
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.qing-jinlai
+    gap: w.jinlai
+    targets: [w.jinlai]
+    context: [w.qing]
+    skills: [production, pinyin]
+    prompt: {text: '¿进来 o 进去? «Pasa, por favor.» (entra aquí, donde estoy)'}
+    answer: {typed: jin4 lai2, hanzi: 进来, pinyin: jìnlái, meaning: '进来: hacia donde está quien habla.'}
+    comments: []
+  - id: x.cloze.jinqu
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.bie-jinqu
+    gap: w.jinqu
+    targets: [w.jinqu]
+    context: [w.bie]
+    skills: [production, pinyin]
+    prompt: {text: '¿进来 o 进去? «¡No entres ahí!»'}
+    answer: {typed: jin4 qu4, hanzi: 进去, pinyin: jìnqù, meaning: '进去: alejándose de quien habla, hacia allí.'}
+    comments: []
+  - id: x.situation.zai-zuo-shenme
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    sentence: s.ni-zai-zuo-shenme
+    targets: [s.ni-zai-zuo-shenme]
+    skills: [production, speaking]
+    prompt: {text: Situación. Llamas a un amigo y oyes mucho ruido. Pregúntale qué está haciendo.}
+    answer: {meaning: '¿qué estás haciendo?'}
+    comments: []
+  - id: x.contrast.kan
+    added: 2026-10-10
+    lang: es
+    type: contrast
+    group: g.you-kan
+    targets: [w.kan]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es kàn, «mirar; leer»?'}
+    answer: {hanzi: 看, pinyin: kàn, meaning: mirar; leer}
+    comments: []
+  - id: x.contrast.jin
+    added: 2026-10-10
+    lang: es
+    type: contrast
+    group: g.jin-jin
+    targets: [w.jin]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es jìn, «entrar»?'}
+    answer: {hanzi: 进, pinyin: jìn, meaning: entrar}
+    comments: []
+  - id: x.dictation.jinlai
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [w.jinlai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jin4 lai2, hanzi: 进来, pinyin: jìnlái, meaning: entrar (hacia aquí)}
+    comments: []
+  - id: x.read.jinlai
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [w.jinlai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 进来}
+    answer: {hanzi: 进来, pinyin: jìnlái, meaning: entrar (hacia aquí)}
+    comments: []
+  - id: x.tones.jinlai
+    added: 2026-10-10
+    lang: es
+    type: tones
+    targets: [w.jinlai]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '42', hanzi: 进来, pinyin: jìnlái, meaning: entrar (hacia aquí)}
+    comments: []
+  - id: x.dictation.jinqu
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [w.jinqu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jin4 qu4, hanzi: 进去, pinyin: jìnqù, meaning: entrar (hacia allí)}
+    comments: []
+  - id: x.read.jinqu
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [w.jinqu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 进去}
+    answer: {hanzi: 进去, pinyin: jìnqù, meaning: entrar (hacia allí)}
+    comments: []
+  - id: x.dictation.zuo.do
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [w.zuo.do]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zuo4, hanzi: 做, pinyin: zuò, meaning: hacer}
+    comments: []
+  - id: x.produce.zuo.do
+    added: 2026-10-10
+    lang: es
+    type: produce
+    targets: [w.zuo.do]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «hacer»? Escribe el pinyin.'}
+    answer: {typed: zuo4, hanzi: 做, pinyin: zuò, meaning: hacer}
+    comments: []
+  - id: x.read.zuo.do
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [w.zuo.do]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 做}
+    answer: {hanzi: 做, pinyin: zuò, meaning: hacer}
+    comments: []
+  - id: x.listen.ta-hai-mei-lai
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.ta-hai-mei-lai
+    targets: [s.ta-hai-mei-lai]
+    context: [w.ta.he, w.hai.still, w.mei, w.lai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Todavía no ha venido.}
+    comments: []
+  - id: x.listen.wo-mingtian-bu-qu
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-mingtian-bu-qu
+    targets: [s.wo-mingtian-bu-qu]
+    context: [w.wo, w.mingtian, w.bu, w.qu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mañana no voy.}
+    comments: []
+  - id: x.produce.wo-mingtian-bu-qu
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.wo-mingtian-bu-qu
+    targets: [s.wo-mingtian-bu-qu]
+    context: [w.wo, w.mingtian, w.bu, w.qu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mañana no voy.»'}
+    answer: {meaning: Mañana no voy.}
+    comments: []
+  - id: x.listen.qing-jinlai
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.qing-jinlai
+    targets: [s.qing-jinlai]
+    context: [w.qing, w.jinlai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Pasa, por favor (entra aquí).'}
+    comments: []
+  - id: x.produce.qing-jinlai
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.qing-jinlai
+    targets: [s.qing-jinlai]
+    context: [w.qing, w.jinlai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Pasa, por favor (entra aquí).»'}
+    answer: {meaning: 'Pasa, por favor (entra aquí).'}
+    comments: []
+  - id: x.listen.bie-jinqu
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.bie-jinqu
+    targets: [s.bie-jinqu]
+    context: [w.bie, w.jinqu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡No entres ahí!}
+    comments: []
+  - id: x.produce.bie-jinqu
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.bie-jinqu
+    targets: [s.bie-jinqu]
+    context: [w.bie, w.jinqu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡No entres ahí!»'}
+    answer: {meaning: ¡No entres ahí!}
+    comments: []
+  - id: x.listen.ni-zai-zuo-shenme
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.ni-zai-zuo-shenme
+    targets: [s.ni-zai-zuo-shenme]
+    context: [w.ni, w.zai.progressive, w.zuo.do, w.shenme]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Qué estás haciendo?'}
+    comments: []
+  - id: x.produce.ni-zai-zuo-shenme
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.ni-zai-zuo-shenme
+    targets: [s.ni-zai-zuo-shenme]
+    context: [w.ni, w.zai.progressive, w.zuo.do, w.shenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué estás haciendo?»'}
+    answer: {meaning: '¿Qué estás haciendo?'}
+    comments: []
+  - id: x.listen.wo-zuo-fan
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-zuo-fan
+    targets: [s.wo-zuo-fan]
+    context: [w.wo, w.zuo.do, w.fan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Yo cocino.}
+    comments: []
+  - id: x.listen.wo-zhidao
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-zhidao
+    targets: [s.wo-zhidao]
+    context: [w.wo, w.zhidao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ya lo sé.}
+    comments: []
+  - id: x.produce.wo-zhidao
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.wo-zhidao
+    targets: [s.wo-zhidao]
+    context: [w.wo, w.zhidao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ya lo sé.»'}
+    answer: {meaning: Ya lo sé.}
+    comments: []
+  - id: x.listen.wo-zhende-zhidao
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-zhende-zhidao
+    targets: [s.wo-zhende-zhidao]
+    context: [w.wo, w.zhende, w.zhidao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: De verdad que lo sé.}
+    comments: []
+  - id: x.listen.wo-mei-qu-guo-zhongguo
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-mei-qu-guo-zhongguo
+    targets: [s.wo-mei-qu-guo-zhongguo]
+    context: [w.wo, w.mei, w.qu, w.guo.exp, w.zhongguo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Nunca he ido a China.}
+    comments: []
+  - id: x.charsound.kai
+    added: 2026-10-10
+    lang: es
+    type: charsound
+    targets: [w.likai, w.kaiche]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 开}
+    answer: {typed: kai1, hanzi: 开, pinyin: kāi, meaning: 'Sale en 离开 líkāi «irse de, dejar (un sitio)», 开车 kāichē «conducir».'}
+    comments: []
+  - id: x.situation.wo-zhidao
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    sentence: s.wo-zhidao
+    targets: [s.wo-zhidao]
+    skills: [production, speaking]
+    prompt: {text: Situación. Te recuerdan algo que ya sabías. Contesta que ya lo sabes.}
+    answer: {meaning: ya lo sé}
+    comments: []
+  - id: x.contrast.zuo.do
+    added: 2026-10-10
+    lang: es
+    type: contrast
+    group: g.zuo-do
+    targets: [w.zuo.do]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es zuò, «hacer»?'}
+    answer: {hanzi: 做, pinyin: zuò, meaning: hacer}
     comments: []

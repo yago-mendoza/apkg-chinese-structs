@@ -70,5 +70,5 @@ Los dos encierran algo: 医 en una caja abierta a la derecha, 国 en un cuadro c
 - ✅🃏 这个人是我的朋友。 · zhè ge rén shì wǒ de péngyou · Esta persona es mi amigo.
 - ✅🃏 服务员，我要这个。 · fúwùyuán wǒ yào zhè ge · Camarero, quiero este.
 - ✅🃏 他不是我的老师。 · tā bú shì wǒ de lǎoshī · No es mi profesor.
-- ✅🃏 你想跟我一起吃饭吗？ · nǐ xiǎng gēn wǒ yìqǐ chīfàn ma · ¿Quieres comer conmigo?
+- ✅🃏 你想跟我吃饭吗？ · nǐ xiǎng gēn wǒ chīfàn ma · ¿Quieres comer conmigo?
 - ✅🃏 谁来了？ · shéi lái le · ¿Quién ha venido?
