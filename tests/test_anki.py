@@ -653,6 +653,57 @@ class Repository(unittest.TestCase):
         self.assertNotIn("w.b 她", out.split("Lo que más cuesta")[1].split("Olvidadas")[0])
         self.assertIn("x.a · 5 lapsos", out)
 
+    def test_balance_measures_load_queue_and_the_mix_ahead(self):
+        day, minute = 86_400_000, 60_000
+        now = 100 * day
+        w = lambda i, hz: {"id": i, "kind": "word", "hanzi": hz, "pinyin": "", "meaning": {"es": ""}}
+        eby = {"w.a": w("w.a", "他"), "w.b": w("w.b", "她"), "w.c": w("w.c", "大")}
+        exercises = [{"id": "x.a", "type": "listen", "targets": ["w.a"]},
+                     {"id": "x.b", "type": "read", "targets": ["w.b"]},
+                     {"id": "x.c1", "type": "read", "targets": ["w.c"]},
+                     {"id": "x.c2", "type": "read", "targets": ["w.c"]}]
+        card = lambda cid, xid, t, due=0: {"cardId": cid, "type": t, "due": due,
+                                           "fields": {"ExerciseID": {"value": xid}}}
+        infos = [card(1, "x.a", 2), card(2, "x.b", 2), card(3, "x.c1", 0, 5), card(4, "x.c2", 0, 6)]
+        revs = {"1": [{"id": now - day, "ease": 3, "type": 0, "time": 10 * minute}],          # nueva en el periodo
+                "2": [{"id": now - 50 * day, "ease": 3, "type": 0, "time": minute},           # vista antes
+                      {"id": now - day, "ease": 3, "type": 1, "time": 4 * minute}]}
+        lines, warns = anki.balance_report(infos, revs, exercises, eby, {}, now, days=14)
+        out = "\n".join(lines)
+        self.assertIn("1 día(s) de estudio, 14 min por día", out)
+        self.assertIn("1 nuevas y 1.0 palabras nuevas", out)          # 他 es nueva; 她 ya se había visto
+        self.assertIn("Cola de nuevas de tu nivel (HSK 1): 2", out)
+        self.assertIn("leer 100 %", out)
+        self.assertTrue(any("leer es el 100 %" in x for x in warns))  # por encima del ≤ 25 %
+        self.assertTrue(any("oír es el 0 %" in x for x in warns))     # por debajo del ≥ 33 %
+        self.assertFalse(any("cola" in x.lower() for x in warns))     # 2 nuevas: menos de un día
+
+    def test_review_balance_section(self):
+        from unittest import mock
+        with mock.patch.object(anki, "balance_from_anki", return_value=None):
+            self.assertIn("anki.py stats", anki.balance_section()[0])          # sin Anki: lo completa el agente
+        with mock.patch.object(anki, "balance_from_anki", return_value=(["Carga: 14 min"], ["Cola de 47 días"])):
+            out = anki.balance_section()
+        self.assertEqual(out, ["- Carga: 14 min", "", "- ⚠ Cola de 47 días", "  > "])   # cada aviso, su línea «>»
+
+    def test_skills_and_cards_per_word(self):
+        self.assertEqual(anki.skill_of({"type": "tones", "prompt": {"audio": True}}), "oír")
+        self.assertEqual(anki.skill_of({"type": "tones", "prompt": {}}), "otros")
+        self.assertEqual(anki.skill_of({"type": "cloze"}), "decir")
+        eby = {"w.a": {"kind": "word"}, "s.a": {}}
+        xs = [{"id": "x1", "type": "read", "targets": ["w.a"]}, {"id": "x2", "type": "charsound", "targets": ["w.a"]},
+              {"id": "x3", "type": "listen", "targets": ["s.a"]}]
+        self.assertEqual({k: [x["id"] for x in v] for k, v in anki.cards_per_item(xs, eby).items()}, {"w.a": ["x1"]})
+
+    def test_card_cap_stops_only_what_enters_after_the_rule(self):
+        entries, sentences, exercises = anki.load()
+        word = next(e for e in entries if e["id"] == "w.num.shi")        # 十: 10 tarjetas, todas anteriores
+        _, warnings = anki.validate(entries, sentences, exercises, require_audio=False)
+        self.assertFalse(any(w.startswith("w.num.shi:") and "tope" in w for w in warnings))
+        extra = dict(next(x for x in exercises if word["id"] in x.get("targets", [])), id="x.extra", added="2026-12-01")
+        _, warnings = anki.validate(entries, sentences, exercises + [extra], require_audio=False)
+        self.assertTrue(any(w.startswith("w.num.shi:") and "tope" in w for w in warnings))
+
 
 class Batch005(unittest.TestCase):
     """Lo que pidió YAGO en el lote 005: la pareja se rotula aparte, el hueco suena entero, el matiz lleva pinyin."""

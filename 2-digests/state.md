@@ -29,6 +29,7 @@
 
 - Sincronizar el móvil antes de cada subida a Anki; `push` ya sincroniza primero. ([lote 005](/2-digests/summary-005-2026-10-05-saludos-y-sonidos.md#cambios-en-el-sistema))
 - 30 nuevas al día; 352 entraron en el lote 008 y las de nivel 2 en adelante esperan a su nivel. No se limita lo que entra: se prioriza lo que sale. ([la mejor configuración](/docs/decisions.md#2026-10-02--la-mejor-configuración-para-su-memoria), [lote 008](/2-digests/summary-008-2026-10-08-pedir-ayuda-lugares-y-finales.md#reorganización))
+- La cola de nuevas de su nivel son unos 47 días (aviso por encima de 21): estudia unos 14 minutos y 15 nuevas por día de estudio, 9,5 palabras nuevas. La mezcla de lo que viene está dentro del objetivo (oír 40 %, decir 28 %, leer 15 %). ([equilibrio medido](/docs/decisions.md#2026-10-09--equilibrio-medido-tope-por-palabra-mezcla-de-lo-que-viene-y-cola))
 - En unas semanas, pulsar «Optimize Current Preset» de FSRS en el preset del mazo. ([la mejor configuración](/docs/decisions.md#2026-10-02--la-mejor-configuración-para-su-memoria))
 - Las pruebas tardan más de diez minutos y la exportación unos nueve. ([lote 007](/2-digests/summary-007-2026-10-07-fechas-ordinales-y-clasificadores.md#fricciones-del-proceso), [lote 008](/2-digests/summary-008-2026-10-08-pedir-ayuda-lugares-y-finales.md#fricciones-del-proceso))
 - La voz sintética no puede fijar la lectura de un polífono suelto (得, 只): el SSML que prevé el diseño no está hecho. ([lote 008](/2-digests/summary-008-2026-10-08-pedir-ayuda-lugares-y-finales.md#fricciones-del-proceso), [audio](/docs/design.md#audio))
@@ -40,4 +41,5 @@
 - Si «Tus notas» del review pasa a ser el sitio oficial de sus apuntes y se quita `homework-feedback.md`. ([lote 008](/2-digests/summary-008-2026-10-08-pedir-ayuda-lugares-y-finales.md#fricciones-del-proceso))
 - Si una entrada puede fijar su nivel cuando su sentido no es el de la lista (王 apellido, en el desván por eso). ([lote 008](/2-digests/summary-008-2026-10-08-pedir-ayuda-lugares-y-finales.md#del-desván))
 - Si repasar los materiales antiguos de la 1-1 en un lote tranquilo, junto con la lentitud y el SSML. ([lote 006](/2-digests/summary-006-2026-10-06-edad-numeros-y-familia.md#no-entró-y-por-qué))
+- Si las tarjetas de decir de una palabra salen unos días después de las de leer y escuchar, en vez del mismo día. ([equilibrio medido](/docs/decisions.md#2026-10-09--equilibrio-medido-tope-por-palabra-mezcla-de-lo-que-viene-y-cola))
 - Cómo quiere las tarjetas de comprensión, cuando las vea en Anki. ([comprensión lectora](/docs/decisions.md#2026-10-01--comprensión-lectora))

@@ -1303,6 +1303,19 @@ def state_rules(batch, text):
     return errors + link_errors("2-digests/state.md", text, stable_only=True)
 
 
+def balance_section():
+    """El apartado «Carga y equilibrio» del review, calculado de Anki al escribirlo: los números y, por cada aviso, un
+    punto con su línea «>». Sin Anki abierto, queda la indicación para que el agente lo complete con `stats`."""
+    got = balance_from_anki()
+    if got is None:
+        return ["<!-- Anki no respondía al escribir el review: lo completa el agente con «Carga y equilibrio» de "
+                "`anki.py stats`, y cada aviso con su línea «>» -->"]
+    lines, warns = got
+    points = [x for w in warns for x in (f"- ⚠ {w}", "  > ")]
+    return [f"- {line}" for line in lines] + [""] + (
+        points or ["Todo dentro de lo previsto (docs/goal.md, «Cuánto y en qué proporción»)."])
+
+
 def write_review_doc(batch, osm):
     """Deja en 1-inbox/ el review del lote: lo que falta (calculado) y los apartados que completa el agente.
     Cada punto lleva debajo una línea «>» para que YAGO escriba."""
@@ -1323,6 +1336,7 @@ def write_review_doc(batch, osm):
              "## Lo que más te cuesta", "",
              "<!-- lo completa el agente con `anki.py stats`: lo que más fallas en Anki y qué propone (una frase, "
              "un contraste, bajar su `use`); cada punto con su línea «>» -->", "",
+             "## Carga y equilibrio", "", *balance_section(), "",
              "## Huecos y propuestas", "",
              "<!-- lo completa el agente: huecos temáticos, lo básico del nivel que falta, caracteres con historia, "
              "qué investigar después; cada uno con su línea «>» -->", "",
@@ -2002,6 +2016,12 @@ def validate(entries, sentences, exercises, require_audio=True):
         errors.append(f"{f}: el nombre no es ningún tema de 3-data/themes.yaml; su contenido no se carga")
     quality_rules(entries, sentences, exercises, eby, sby, errors, warnings)
     attic_rules(load_attic(), entries, errors, warnings)
+    # Tope de tarjetas por palabra: frena lo que entra desde la regla; un exceso justificado lleva `accept_cards`.
+    for tid, xs in cards_per_item(exercises, eby).items():
+        if len(xs) > CARDS_PER_ITEM_MAX and not eby[tid].get("accept_cards") and \
+                any(str(x.get("added", "")) >= CARDS_CAP_SINCE for x in xs):
+            warnings.append(f"{tid}: {len(xs)} tarjetas la evalúan (tope {CARDS_PER_ITEM_MAX}). Quitar una extra o "
+                            f"justificarla en accept_cards (un fallo visto en stats, algo de clase)")
     # Lo que se muestra de un comentario va redactado; el apunte literal vive en `original`.
     for it in entries + sentences + exercises:
         for c in it.get("comments", []):
@@ -3934,6 +3954,120 @@ def stats_report(infos, revs, exercises, eby, days, now_ms):
     return lines
 
 
+# Equilibrio (docs/goal.md, «Cuánto y en qué proporción»): el presupuesto es su tiempo; de él salen las nuevas al
+# día, y de ahí cuántas tarjetas por palabra y en qué mezcla. Valores aquí; el porqué, en goal.md.
+CARDS_PER_ITEM_MAX = 6          # tarjetas que evalúan una palabra (sin contar las de sonido de un hanzi suelto)
+CARDS_CAP_SINCE = "2026-10-09"  # la regla frena lo que entra desde entonces; lo anterior lleva progreso y se queda
+SKILL_TARGETS = {"oír": (1 / 3, None), "decir": (1 / 4, None), "leer": (None, 1 / 4), "otros": (None, 1 / 4)}
+UPCOMING_NEW = 400              # nuevas próximas sobre las que se mide la mezcla: lo que va a estudiar, no el mazo
+QUEUE_DAYS_MAX = 21             # días de nuevas de su nivel en cola: por encima, aviso
+BALANCE_DAYS = 14               # periodo de la carga diaria
+
+
+def skill_of(ex):
+    """Qué entrena una tarjeta, en las cuatro casillas del equilibrio: oír, decir, leer u otros (contraste, matiz,
+    estructura, tonos leídos, sonido de un hanzi)."""
+    t, audio = ex.get("type"), (ex.get("prompt") or {}).get("audio")
+    if t == "listen" or (t == "tones" and audio):
+        return "oír"
+    if t in ("produce", "speak", "derive", "cloze"):
+        return "decir"
+    if t in ("read", "comprehension", "components"):
+        return "leer"
+    return "otros"
+
+
+def cards_per_item(exercises, eby):
+    """{entrada: [ejercicios que la evalúan]} para palabras y expresiones. Las tarjetas de sonido de un hanzi suelto
+    no cuentan: sus objetivos son las palabras donde sale, como ejemplo, no lo que se pregunta."""
+    out = {}
+    for ex in exercises:
+        if ex.get("type") == "charsound":
+            continue
+        for t in ex.get("targets", []):
+            if (eby.get(t) or {}).get("kind") in ("word", "expression"):
+                out.setdefault(t, []).append(ex)
+    return out
+
+
+def current_level(entries):
+    """El nivel que está estudiando: el primero cuya lista no ha cubierto aún en un LEVEL_PASS."""
+    for lv, have, total in level_coverage(entries):
+        if total and have / total < LEVEL_PASS:
+            return lv
+    return None
+
+
+def balance_report(infos, revs, exercises, eby, sby, now_ms, days=BALANCE_DAYS):
+    """Carga y equilibrio, de lo leído de Anki: (líneas, avisos). Minutos al día de estudio, nuevas y palabras nuevas
+    al día, días de cola del nivel actual y la mezcla de las próximas nuevas frente a SKILL_TARGETS."""
+    from collections import Counter
+    xby = {x["id"]: x for x in exercises}
+    since = now_ms - days * 86_400_000
+    levels = hsk_levels()
+    lv_now = current_level(list(eby.values()))
+    ms, study_days, fresh, fresh_items, seen_before = 0, set(), 0, set(), set()
+    queue, upcoming = 0, []
+    for c in infos:
+        x = xby.get(c.get("fields", {}).get("ExerciseID", {}).get("value"))
+        if x is None:
+            continue
+        log = [r for r in revs.get(str(c["cardId"]), []) if r.get("type") in REVLOG_STUDY]
+        recent = [r for r in log if r["id"] >= since]
+        ms += sum(r.get("time", 0) for r in recent)
+        study_days |= {datetime.date.fromtimestamp(r["id"] / 1000) for r in recent}
+        items = [t for t in x.get("targets", []) if (eby.get(t) or {}).get("kind") in ("word", "expression")]
+        if log and min(r["id"] for r in log) >= since:
+            fresh += 1
+            fresh_items |= set(items)
+        elif log:
+            seen_before |= set(items)
+        if c.get("type") == 0:
+            upcoming.append((c.get("due", 0), x))
+            if lv_now and exercise_level(x, eby, sby, levels) <= lv_now:
+                queue += 1
+    nd = max(len(study_days), 1)
+    words = len(fresh_items - seen_before)
+    lines = [f"Carga, últimos {days} días: {len(study_days)} día(s) de estudio, {round(ms / 60000 / nd)} min por día "
+             f"de estudio; {round(fresh / nd)} nuevas y {round(words / nd, 1)} palabras nuevas por día de estudio."]
+    warnings = []
+    qdays = round(queue / NEW_PER_DAY)
+    lines.append(f"Cola de nuevas de tu nivel (HSK {lv_now}): {queue}, unos {qdays} días a {NEW_PER_DAY} al día; "
+                 f"{len(upcoming)} nuevas en total.")
+    if qdays > QUEUE_DAYS_MAX:
+        warnings.append(f"La cola de tu nivel son {qdays} días de nuevas (más de {QUEUE_DAYS_MAX}): lo que entra en "
+                        f"el mazo va más rápido de lo que se estudia.")
+    upcoming = [x for _, x in sorted(upcoming, key=lambda r: r[0])[:UPCOMING_NEW]]
+    if upcoming:
+        mix = Counter(skill_of(x) for x in upcoming)
+        parts = []
+        for sk, (lo, hi) in SKILL_TARGETS.items():
+            share = mix[sk] / len(upcoming)
+            aim = (f"≥ {round(100 * lo)} %" if lo is not None else "") + (f"≤ {round(100 * hi)} %" if hi is not None else "")
+            parts.append(f"{sk} {round(100 * share)} % ({aim})")
+            if (lo is not None and share < lo) or (hi is not None and share > hi):
+                warnings.append(f"En las próximas {len(upcoming)} nuevas, {sk} es el {round(100 * share)} %; el "
+                                f"objetivo es {aim}.")
+        lines.append(f"Mezcla de las próximas {len(upcoming)} nuevas: " + ", ".join(parts) + ".")
+    return lines, warnings
+
+
+def balance_from_anki():
+    """balance_report leyendo Anki (solo lectura, sin sincronizar). None si AnkiConnect no responde."""
+    import time
+    if not anki_ready():
+        return None
+    cards = anki_request("findCards", query=f'"deck:{DECK_NAME}"')
+    infos, revs = [], {}
+    for i in range(0, len(cards), 500):
+        chunk = cards[i:i + 500]
+        infos += anki_request("cardsInfo", cards=chunk)
+        revs.update(anki_request("getReviewsOfCards", cards=chunk))
+    entries, sentences, exercises = load()
+    return balance_report(infos, revs, exercises, {e["id"]: e for e in entries}, {s["id"]: s for s in sentences},
+                          int(time.time() * 1000))
+
+
 def cmd_stats(days=STATS_DAYS, sync=True):
     """Qué se queda y qué no: lee de Anki el registro de repasos de este mazo. Solo lectura (salvo sincronizar, para
     que lleguen los repasos del móvil); nunca abre Anki ni toca otros mazos."""
@@ -3953,8 +4087,11 @@ def cmd_stats(days=STATS_DAYS, sync=True):
         infos += anki_request("cardsInfo", cards=chunk)
         revs.update(anki_request("getReviewsOfCards", cards=chunk))
     entries, sentences, exercises = load()
-    print("\n".join(stats_report(infos, revs, exercises, {i["id"]: i for i in entries + sentences}, days,
-                                 int(time.time() * 1000))))
+    now = int(time.time() * 1000)
+    print("\n".join(stats_report(infos, revs, exercises, {i["id"]: i for i in entries + sentences}, days, now)))
+    lines, warns = balance_report(infos, revs, exercises, {e["id"]: e for e in entries},
+                                  {s["id"]: s for s in sentences}, now)
+    print("\n".join(["", "Carga y equilibrio:"] + [f"  {line}" for line in lines] + [f"  AVISO  {w}" for w in warns]))
     return 0
 
 

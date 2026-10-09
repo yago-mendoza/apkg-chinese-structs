@@ -35,6 +35,16 @@ Cada elemento de los apuntes se juzga contra el «para qué» de arriba:
 
 No se limita lo que entra: YAGO avanza y aprende cosas laterales, y todo lo que pasa el filtro entra en el diccionario, aunque la cola de nuevas de Anki crezca. Una tarjeta que aún no ha visto no le cuesta nada; lo que cuesta tiempo son los repasos, y Anki absorbe al ritmo que permite su tiempo (unas 12 a 15 nuevas al día de media con 20 a 40 minutos). Lo que importa es el orden: dentro de cada nivel salen primero las tarjetas de lo que va a decir (`say`), luego lo que va a oír (`hear`) y al final lo que solo reconoce. Por eso el `use` decide también la prioridad: lo lateral que no va a decir entra como `hear` o `read`, con menos tarjetas, y lo de clase, para decir.
 
+## Cuánto y en qué proporción
+
+El presupuesto es su tiempo, no el tamaño del mazo: de 20 a 40 minutos al día. De ahí salen las nuevas que puede abrir, y cada tarjeta de más en una palabra es una palabra nueva menos al día. Por eso se cuida la cifra que importa, palabras nuevas al día, con tres reglas que el código mide (los valores, en `anki.py`):
+
+- **Tarjetas por palabra**: la base la fija su `use`; encima, los extras (tonos de una pareja, un matiz, otro contraste) solo con un motivo visto: que la ha confundido, que `stats` muestra que la falla o que sale en clase. Tope: `CARDS_PER_ITEM_MAX`; pasarlo exige escribir el motivo (`accept_cards`).
+- **Mezcla de lo que viene**: en las próximas `UPCOMING_NEW` nuevas, no en el mazo entero (con semanas de cola, el mazo no es lo que estudia), oír al menos un tercio, decir al menos un cuarto, leer como mucho un cuarto y el resto (contrastes, matices, estructuras) como mucho otro cuarto (`SKILL_TARGETS`). Es el pinyin por delante, en números.
+- **Cola de su nivel**: si las nuevas de su nivel pasan de `QUEUE_DAYS_MAX` días, lo que entra va más rápido de lo que estudia; no se frena la entrada (ver arriba), se mira qué sobra o qué baja de `use`.
+
+Cada review trae, calculado, «Carga y equilibrio»: minutos al día, nuevas y palabras nuevas al día, días de cola y la mezcla frente al objetivo, con un punto por cada aviso. Las cifras se revisan con datos en la retrospectiva, no a ojo.
+
 ## El pinyin por delante
 
 Hablar depende del pinyin y de los tonos, no de los hanzi. YAGO tiende a investigar a fondo los caracteres después de clase y a descuidar el pinyin, así que el mazo compensa: lo nuevo se practica primero oyéndolo y diciéndolo (dictado, producción, tonos, frases en voz alta); el análisis de caracteres (componentes, origen, mnemotecnias) va como apoyo en el reverso y casi nunca como tarjeta propia. Las estructuras del pinyin (sílabas, finales, pares que se confunden) cuentan tanto como las palabras.
