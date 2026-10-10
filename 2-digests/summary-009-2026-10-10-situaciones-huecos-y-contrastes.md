@@ -195,6 +195,16 @@ Sin cambios de temas. Grupos nuevos: los siete contrastes de arriba y 王 / 忘.
 - **La primera subida dejó la pronunciación en bloque al frente.** La mezcla se calculaba con todas las tarjetas, también las ya vistas, y casi todas las de leer del principio ya lo estaban. Se vio en Anki y se corrigió: se calcula solo con las nuevas, y la pronunciación va en su propia cola, repartida.
 - **La prueba de la mezcla destapó dos fallos del nuevo orden.** Al soltarse una cola que esperaba, salían seis de decir seguidas; se arregló limitando las rachas. Y al final de un nivel no queda con qué separar los últimos pasos.
 
+## Añadido tras el cierre
+
+Al repasar el review 008 punto por punto quedaban cosas sin hacer:
+- **Dos frases que marcaste con «!!!»**, para decir y oír: 你真的知道吗？ y 请问，你需要什么帮助？, esta también como situación (atiendes en una tienda).
+- **Los huecos que faltaban del banco de palabras:** 爱 frente a 喜欢 (我爱你) y 想有 frente a 想要 (我想有一个家).
+- **El cuaderno de deberes, fuera**, como pediste: tus apuntes van en «Tus notas» del review.
+- **Tus imágenes de 腿** (la pierna que da pasos atrás, 退) **y de 肚** (月 «carne» + 土 «tierra»); 肚子 [HSK 3] espera en el desván.
+
+El contraste 晚 / 万 ya existía desde el lote 006.
+
 ## Seguimiento
 
 **Nivel.**

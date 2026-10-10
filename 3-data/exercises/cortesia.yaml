@@ -1919,3 +1919,35 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 忘, pinyin: wàng, meaning: olvidar}
     comments: []
+  - id: x.situation.xuyao-shenme-bangzhu
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    sentence: s.qingwen-ni-xuyao-shenme-bangzhu
+    targets: [s.qingwen-ni-xuyao-shenme-bangzhu]
+    skills: [production, speaking]
+    prompt: {text: Situación. Trabajas en una tienda y un cliente parece perdido. Pregúntale con educación qué ayuda necesita.}
+    answer: {meaning: 'Disculpe, ¿qué ayuda necesita?'}
+    comments: []
+  - id: x.listen.qingwen-ni-xuyao-shenme-bangzhu
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.qingwen-ni-xuyao-shenme-bangzhu
+    targets: [s.qingwen-ni-xuyao-shenme-bangzhu]
+    context: [e.qingwen, w.ni, w.xuyao, w.shenme, w.bangzhu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Disculpe, ¿qué ayuda necesita?'}
+    comments: []
+  - id: x.produce.qingwen-ni-xuyao-shenme-bangzhu
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.qingwen-ni-xuyao-shenme-bangzhu
+    targets: [s.qingwen-ni-xuyao-shenme-bangzhu]
+    context: [e.qingwen, w.ni, w.xuyao, w.shenme, w.bangzhu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Disculpe, ¿qué ayuda necesita?»'}
+    answer: {meaning: 'Disculpe, ¿qué ayuda necesita?'}
+    comments: []

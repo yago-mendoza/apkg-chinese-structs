@@ -515,3 +515,15 @@ sentences:
       - {text: 。}
     translation: {es: Me gusta el té., en: I like tea.}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-xiang-you-yi-ge-jia
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 想, ref: w.xiang, pinyin: xiǎng}
+      - {text: 有, ref: w.you.have, pinyin: yǒu}
+      - {text: 一, ref: w.num.yi, pinyin: yí, sandhi: yī → yí delante de cuarto tono}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 家, ref: w.jia, pinyin: jiā}
+      - {text: 。}
+    translation: {es: Me gustaría tener una familia., en: I'd like to have a family.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}

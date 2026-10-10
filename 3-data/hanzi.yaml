@@ -1030,6 +1030,9 @@ characters:
     phonetic: {char: 退, pinyin: 'tuì'}
     semantic: ⺼
     override: 'El propio dataset dice que 退 da el sonido: es fonético-semántico.'
+    memory:
+      es: 'Una pierna 月 que da pasos hacia atrás, 退 «retroceder».'
+      en: 'A leg 月 taking steps back, 退 (to retreat).'
     confidence: high
   长:
     gloss: {es: 'largo', en: 'long'}

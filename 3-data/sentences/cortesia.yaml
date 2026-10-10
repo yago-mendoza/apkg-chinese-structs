@@ -257,3 +257,15 @@ sentences:
       - {text: 。}
     translation: {es: Tienes que tener cuidado., en: You must be careful.}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.qingwen-ni-xuyao-shenme-bangzhu
+    use: say
+    segments:
+      - {text: 请问, ref: e.qingwen, pinyin: qǐngwèn}
+      - {text: ，}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 需要, ref: w.xuyao, pinyin: xūyào}
+      - {text: 什么, ref: w.shenme, pinyin: shénme}
+      - {text: 帮助, ref: w.bangzhu, pinyin: bāngzhù}
+      - {text: ？}
+    translation: {es: 'Disculpe, ¿qué ayuda necesita?', en: 'Excuse me, what help do you need?'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}

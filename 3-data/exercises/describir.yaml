@@ -1607,3 +1607,25 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Hoy hay mucha gente.}
     comments: []
+  - id: x.listen.ni-zhende-zhidao-ma
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.ni-zhende-zhidao-ma
+    targets: [s.ni-zhende-zhidao-ma]
+    context: [w.ni, w.zhende, w.zhidao, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿De verdad lo sabes?'}
+    comments: []
+  - id: x.produce.ni-zhende-zhidao-ma
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.ni-zhende-zhidao-ma
+    targets: [s.ni-zhende-zhidao-ma]
+    context: [w.ni, w.zhende, w.zhidao, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿De verdad lo sabes?»'}
+    answer: {meaning: '¿De verdad lo sabes?'}
+    comments: []

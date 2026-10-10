@@ -1900,3 +1900,16 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Tengo tiempo.»'}
     answer: {meaning: Tengo tiempo.}
     comments: []
+  - id: x.cloze.xiang-you
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.wo-xiang-you-yi-ge-jia
+    gap: w.you.have
+    targets: [w.you.have]
+    context: [w.wo, w.xiang, w.num.yi, w.ge, w.jia]
+    reveal: [s.wo-xiangyao-zhege]
+    skills: [production, pinyin]
+    prompt: {text: '¿要 o 有? «Me gustaría tener una familia.» (tenerla en tu vida)'}
+    answer: {typed: you3, hanzi: 有, pinyin: yǒu, meaning: '想有: querer tenerlo como parte de tu vida. 想要 + cosa es conseguirla: 我想要这个.'}
+    comments: []

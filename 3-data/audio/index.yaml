@@ -1296,6 +1296,14 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  你真的知道吗？:
+    date: '2026-10-10'
+    file: acs_6d1de4cae274a620.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   你等一下。:
     date: '2026-10-08'
     file: acs_98560fffbf731e75.mp3
@@ -3864,6 +3872,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  我想有一个家。:
+    date: '2026-10-10'
+    file: acs_ad889d4da3f305ad.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   我想要这个。:
     date: '2026-10-01'
     file: acs_7452f236c7f0d2e7.mp3
@@ -5971,6 +5987,14 @@ audio:
   请问，你叫什么名字？:
     date: '2026-09-29'
     file: acs_d38e52087fca5ff3.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  请问，你需要什么帮助？:
+    date: '2026-10-10'
+    file: acs_085140c59dc1a954.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%

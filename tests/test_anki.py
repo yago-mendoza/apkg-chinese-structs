@@ -797,9 +797,7 @@ class Batch005(unittest.TestCase):
         self.assertTrue(anki.needs_memory({"confidence": "high", "origin": {"es": "«Venir» es un préstamo."}}))
         self.assertFalse(anki.needs_memory({"confidence": "high", "origin": {"es": "Pictograma: una puerta."}}))
 
-    def test_homework_notebook_stays_and_private_names_stop_the_close(self):
-        self.assertEqual(anki.homework_notes(anki.HOMEWORK_TEMPLATE), "")
-        self.assertEqual(anki.homework_notes(anki.HOMEWORK_TEMPLATE + "6 oct: 再 o 在?"), "6 oct: 再 o 在?")
+    def test_private_names_stop_the_close(self):
         tmp = Path(anki.ROOT / "1-inbox" / "2099-01-01_prueba-privada.md")
         try:
             tmp.write_text("una nota que nombra Fuente-Secreta-X", encoding="utf-8")

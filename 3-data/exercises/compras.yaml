@@ -2485,3 +2485,37 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Me gusta el té.»'}
     answer: {meaning: Me gusta el té.}
     comments: []
+  - id: x.cloze.ai.love
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.wo-ai-ni
+    gap: w.ai.love
+    targets: [w.ai.love]
+    context: [w.wo, w.ni]
+    skills: [production, pinyin]
+    prompt: {text: '¿喜欢 o 爱? «Te quiero.» (a tu pareja)'}
+    answer: {typed: ai4, hanzi: 爱, pinyin: ài, meaning: '爱: amor, a una persona. 喜欢 es un gusto: 我喜欢茶.'}
+    comments: []
+  - id: x.listen.wo-xiang-you-yi-ge-jia
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wo-xiang-you-yi-ge-jia
+    targets: [s.wo-xiang-you-yi-ge-jia]
+    context: [w.wo, w.xiang, w.you.have, w.num.yi, w.ge, w.jia]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me gustaría tener una familia.}
+    comments: []
+  - id: x.produce.wo-xiang-you-yi-ge-jia
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.wo-xiang-you-yi-ge-jia
+    targets: [s.wo-xiang-you-yi-ge-jia]
+    context: [w.wo, w.xiang, w.you.have, w.num.yi, w.ge, w.jia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me gustaría tener una familia.»'}
+    answer: {meaning: Me gustaría tener una familia.}
+    comments: []

@@ -50,12 +50,6 @@ AUDIO_MANIFEST = MEDIA / "index.yaml"
 INBOX = ROOT / "1-inbox"                  # apuntes en bruto de YAGO
 HISTORY = INBOX / "history"                # lo que pasó por el inbox, archivado tal cual por lote
 CLASS_AUDIO = ROOT / "private" / "class-audio"  # grabaciones de clase y su transcripción: solo local
-HOMEWORK = INBOX / "homework-feedback.md"           # cuaderno fijo de YAGO para lo que anota al hacer los deberes
-HOMEWORK_TEMPLATE = """<!-- DEBERES: este archivo se queda siempre aquí. Escribe debajo lo que vayas anotando al hacer los deberes para la próxima clase (dudas, palabras, frases, lo que no entiendas), con la fecha delante de cada día. Al cerrar cada lote, el agente se lleva lo escrito al historial y lo deja otra vez en blanco. -->
-
-# Deberes
-
-"""
 MATERIALS = ROOT / "private" / "class-materials.json"   # solo local: dónde están los materiales de clase y qué se procesó
 RECORDING_EXTS = {".mp3", ".mp4", ".m4a", ".wav", ".ogg", ".opus", ".aac", ".flac", ".webm", ".mkv", ".mov"}
 DIGESTS = ROOT / "2-digests"              # histórico de cada lote
@@ -3544,11 +3538,8 @@ def close_batch_plan(batch):
     else:
         errors += state_rules(batch, STATE.read_text(encoding="utf-8"))
     raw = HISTORY / batch
-    if HOMEWORK.exists() and homework_notes(HOMEWORK.read_text(encoding="utf-8")):
-        # El cuaderno de deberes no se mueve: se archiva una copia con la fecha del cierre y vuelve a quedar en blanco.
-        actions.append(("deberes → 1-inbox/history/", HOMEWORK, raw / f"{m.group(2)}_homework-feedback.md"))
     for f in sorted(INBOX.iterdir()) if INBOX.exists() else []:
-        if not f.is_file() or f.name in ("README.md", HOMEWORK.name) or f.name == f"review-{batch}.md":
+        if not f.is_file() or f.name == "README.md" or f.name == f"review-{batch}.md":
             continue
         if f.suffix.lower() in RECORDING_EXTS:
             # la grabación no se versiona (voz de la profesora; repositorio público): va con su transcripción
@@ -3574,11 +3565,6 @@ def close_batch_plan(batch):
                 errors.append(f"{src.relative_to(ROOT).as_posix()}: nombra una fuente privada; retirarla antes de "
                               "archivar (copia íntegra en private/notes-full/)")
     return actions, errors
-
-
-def homework_notes(text):
-    """Lo que YAGO escribió en el cuaderno de deberes, sin la plantilla."""
-    return text.replace(HOMEWORK_TEMPLATE, "").strip()
 
 
 def class_materials():
@@ -3634,10 +3620,7 @@ def cmd_close_batch(batch, dry_run):
     for _, src, dst in actions:
         dst.parent.mkdir(parents=True, exist_ok=True)
         tracked = bool(_git("ls-files", src.relative_to(ROOT).as_posix(), check=False).strip())
-        if src == HOMEWORK:
-            dst.write_text(HOMEWORK_TEMPLATE + homework_notes(src.read_text(encoding="utf-8")) + "\n", encoding="utf-8")
-            src.write_text(HOMEWORK_TEMPLATE, encoding="utf-8")
-        elif tracked:
+        if tracked:
             _git("mv", src.relative_to(ROOT).as_posix(), dst.relative_to(ROOT).as_posix())
         else:
             shutil.move(str(src), str(dst))
