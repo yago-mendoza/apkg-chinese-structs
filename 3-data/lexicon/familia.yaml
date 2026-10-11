@@ -11,7 +11,7 @@ entries:
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
-      - {kind: note, private: false, date: '2026-10-01', text: 'Frente a 妈妈 māma: 爸 bà cae; 妈 mā va alto y plano. La segunda sílaba de las dos es corta y floja (tono neutro).'}
+      - {kind: note, private: false, date: '2026-10-01', text: 'Frente a 妈妈 māma: 爸 bà cae; 妈 mā va alto y plano.'}
   - id: w.mama
     use: say
     role: content
@@ -27,7 +27,7 @@ entries:
           «caballo», pero aquí solo presta su sonido: el caballo no tiene nada que ver con mamá.'}
       - {kind: linguistic, private: false, date: 2026-09-26, text: 'También se dice 妈 mā sola, sobre todo para llamarla (妈！).
           爸妈 bàmā son papá y mamá juntos, en registro coloquial.'}
-      - {kind: note, private: false, date: '2026-10-01', text: 'Frente a 爸爸 bàba: 妈 mā va alto y plano; 爸 bà cae. La segunda sílaba de las dos es corta y floja (tono neutro).', original: 'En el de mama bama baba ebserva los tonos y ponlo de manifesto contrastando'}
+      - {kind: note, private: false, date: '2026-10-01', text: 'Frente a 爸爸 bàba: 妈 mā va alto y plano; 爸 bà cae.', original: 'En el de mama bama baba ebserva los tonos y ponlo de manifesto contrastando'}
   - id: w.erzi
     use: say
     role: content
@@ -114,7 +114,7 @@ entries:
     accept_pinyin_mismatch: 'sufijo átono en 儿子 y 孩子; el tono de cita es zǐ'
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '子 zǐ «hijo, niño»; al final de una palabra suele ser un sufijo átono: 儿子 érzi, 孩子 háizi. Con 女 forma 好.'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '子 zǐ «hijo, niño»; al final de una palabra suele ser un sufijo: 儿子 érzi, 孩子 háizi. Con 女 forma 好.'}
   - id: w.jiejie
     use: hear
     role: content

@@ -79,6 +79,8 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Al final, convierte la frase en propuesta: 我们下午见吧 «nos vemos por la tarde, ¿vale?»; 买吧 «cómpralo».'}
+      - {kind: mnemonic, private: false, date: '2026-10-11', text: '吧 es como el «va» de «vinga, va»: anima a hacerlo, sin mandar.', original: 'el ''ba'' de zou ba m recuerda al ''va'' en caltan, de ''vinga, va'' sabes ¿? ayuda a entneder un poco mas no?¿'}
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Tres usos: propone (我们走吧 «vámonos»), suaviza una orden (你坐吧 «siéntate, anda») y supone (你累了吧？ «estarás cansado, ¿no?»). 走吧 sin sujeto vale para «vámonos» y para «vete»: 我们走吧, 你走吧.'}
   - id: g.ba-ba
     kind: group
     basis: soundalike
@@ -121,3 +123,25 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Va delante del verbo: 也许他不来 «quizá no venga».'}
       - {kind: character, private: false, date: '2026-10-08', text: '午 wǔ da el sonido a 许 xǔ: mismo tono, aunque hoy la vocal es otra (xu lleva ü).'}
+  - id: e.haoba
+    use: say
+    role: content
+    kind: expression
+    hanzi: 好吧
+    pinyin: hǎo ba
+    meaning: {es: 'bueno, vale (aceptando)', en: 'well, OK'}
+    level: 1
+    level_reason: 好 y 吧 son HSK 1; respuesta muy corriente.
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Palabra a palabra: 好 «bien» + 吧 «venga». Aceptas, a veces sin muchas ganas: «bueno, vale». 好的 es un «vale» sin más.'}
+  - id: g.zai-zhen
+    kind: group
+    basis: visual
+    title: 再 y 真
+    explanation: Los dos son una caja con rayas; se separan por arriba y por abajo.
+    members:
+      - {ref: w.zai.again, cue: una raya larga arriba y otra que atraviesa la caja}
+      - {ref: w.zhen, cue: 'abajo, dos patitas'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []

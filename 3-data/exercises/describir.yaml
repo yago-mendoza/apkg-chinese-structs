@@ -1629,3 +1629,441 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¿De verdad lo sabes?»'}
     answer: {meaning: '¿De verdad lo sabes?'}
     comments: []
+  - id: x.choice.intensity
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    targets: [s.wo-tai-gaoxing-le]
+    skills: [reading, grammar]
+    prompt: {text: 'Elige. «¡Estoy contentísimo!», con mucha emoción.', options: [我很高兴。, 我太高兴了！, 我是高兴。, 我高兴很。]}
+    answer: {choice: b, hanzi: 我太高兴了！, pinyin: wǒ tài gāoxìng le, meaning: '太…了 exclama. 很 es neutro, y 是 no va con adjetivos.'}
+    comments: []
+  - id: x.cloze.de.complement
+    added: '2026-10-11'
+    lang: es
+    type: cloze
+    sentence: s.ni-shuo-de-hen-hao
+    gap: w.de.complement
+    targets: [w.de.complement]
+    context: [w.ni, w.shuo, w.hen, w.hao]
+    skills: [production, pinyin]
+    prompt: {text: '¿的 o 得? «Hablas muy bien.»'}
+    answer: {typed: de, hanzi: 得, pinyin: de, meaning: '得: detrás de un verbo, para decir cómo sale (说得很好).'}
+    comments: []
+  - id: x.situation.ni-lai-de-zhen-zao
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    sentence: s.ni-lai-de-zhen-zao
+    targets: [s.ni-lai-de-zhen-zao]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Has quedado a las ocho con un amigo y a las siete y media ya está allí. Díselo, sorprendido.'}
+    answer: {meaning: ¡Qué pronto has llegado!}
+    comments: []
+  - id: x.nuance.xihuan-intensity
+    added: '2026-10-11'
+    lang: es
+    type: nuance
+    targets: [w.hen, w.zhen, w.zhende]
+    reveal: [s.wo-zhende-hen-xihuan]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我很喜欢, 我真喜欢 y 我真的喜欢: ¿qué añade cada uno?'}
+    answer: {meaning: '很: cuánto, «me gusta mucho». 真: emoción, «¡qué…!». 真的: sinceridad, «de verdad, no lo digo por decir».'}
+    comments: []
+  - id: x.contrast.gao
+    added: 2026-10-11
+    lang: es
+    type: contrast
+    group: g.gao-liang
+    targets: [w.gao]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es gāo, «alto»?'}
+    answer: {hanzi: 高, pinyin: gāo, meaning: alto}
+    comments: []
+  - id: x.contrast.zhen
+    added: 2026-10-11
+    lang: es
+    type: contrast
+    group: g.zai-zhen
+    targets: [w.zhen]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es zhēn, «de verdad; ¡qué…!»?'}
+    answer: {hanzi: 真, pinyin: zhēn, meaning: de verdad; ¡qué…!}
+    comments: []
+  - id: x.dictation.kuai.fast
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.kuai.fast]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kuai4, hanzi: 快, pinyin: kuài, meaning: rápido; pronto}
+    comments: []
+  - id: x.produce.kuai.fast
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.kuai.fast]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «rápido; pronto»? Escribe el pinyin.'}
+    answer: {typed: kuai4, hanzi: 快, pinyin: kuài, meaning: rápido; pronto}
+    comments: []
+  - id: x.read.kuai.fast
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.kuai.fast]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 快}
+    answer: {hanzi: 快, pinyin: kuài, meaning: rápido; pronto}
+    comments: []
+  - id: x.dictation.pao
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.pao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: pao3, hanzi: 跑, pinyin: pǎo, meaning: correr}
+    comments: []
+  - id: x.read.pao
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.pao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 跑}
+    answer: {hanzi: 跑, pinyin: pǎo, meaning: correr}
+    comments: []
+  - id: x.contrast.de.complement
+    added: 2026-10-11
+    lang: es
+    type: contrast
+    group: g.de-de
+    targets: [w.de.complement]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es de, «partícula: cómo se hace algo (说得很好)»?'}
+    answer: {hanzi: 得, pinyin: de, meaning: 'partícula: cómo se hace algo (说得很好)'}
+    comments: []
+  - id: x.dictation.de.complement
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.de.complement]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: de5, hanzi: 得, pinyin: de, meaning: 'partícula: cómo se hace algo (说得很好)'}
+    comments: []
+  - id: x.read.de.complement
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.de.complement]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 得}
+    answer: {hanzi: 得, pinyin: de, meaning: 'partícula: cómo se hace algo (说得很好)'}
+    comments: []
+  - id: x.contrast.liang.bright
+    added: 2026-10-11
+    lang: es
+    type: contrast
+    group: g.gao-liang
+    targets: [w.liang.bright]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es liàng, «brillante, con luz»?'}
+    answer: {hanzi: 亮, pinyin: liàng, meaning: 'brillante, con luz'}
+    comments: []
+  - id: x.read.liang.bright
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.liang.bright]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 亮}
+    answer: {hanzi: 亮, pinyin: liàng, meaning: 'brillante, con luz'}
+    comments: []
+  - id: x.listen.ni-lai-de-hen-zao
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ni-lai-de-hen-zao
+    targets: [s.ni-lai-de-hen-zao]
+    context: [w.ni, w.lai, w.de.complement, w.hen, w.zao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Has llegado temprano.}
+    comments: []
+  - id: x.produce.ni-lai-de-hen-zao
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.ni-lai-de-hen-zao
+    targets: [s.ni-lai-de-hen-zao]
+    context: [w.ni, w.lai, w.de.complement, w.hen, w.zao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Has llegado temprano.»'}
+    answer: {meaning: Has llegado temprano.}
+    comments: []
+  - id: x.listen.ni-lai-de-zhen-zao
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ni-lai-de-zhen-zao
+    targets: [s.ni-lai-de-zhen-zao]
+    context: [w.ni, w.lai, w.de.complement, w.zhen, w.zao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Qué pronto has llegado!}
+    comments: []
+  - id: x.produce.ni-lai-de-zhen-zao
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.ni-lai-de-zhen-zao
+    targets: [s.ni-lai-de-zhen-zao]
+    context: [w.ni, w.lai, w.de.complement, w.zhen, w.zao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Qué pronto has llegado!»'}
+    answer: {meaning: ¡Qué pronto has llegado!}
+    comments: []
+  - id: x.listen.ni-shuo-de-hen-hao
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ni-shuo-de-hen-hao
+    targets: [s.ni-shuo-de-hen-hao]
+    context: [w.ni, w.shuo, w.de.complement, w.hen, w.hao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Hablas muy bien.}
+    comments: []
+  - id: x.produce.ni-shuo-de-hen-hao
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.ni-shuo-de-hen-hao
+    targets: [s.ni-shuo-de-hen-hao]
+    context: [w.ni, w.shuo, w.de.complement, w.hen, w.hao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hablas muy bien.»'}
+    answer: {meaning: Hablas muy bien.}
+    comments: []
+  - id: x.listen.ta-pao-de-hen-kuai
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ta-pao-de-hen-kuai
+    targets: [s.ta-pao-de-hen-kuai]
+    context: [w.ta.he, w.pao, w.de.complement, w.hen, w.kuai.fast]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Corre muy rápido.}
+    comments: []
+  - id: x.listen.ni-xie-de-hen-hao
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ni-xie-de-hen-hao
+    targets: [s.ni-xie-de-hen-hao]
+    context: [w.ni, w.xie, w.de.complement, w.hen, w.hao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Escribes muy bien.}
+    comments: []
+  - id: x.listen.zhe-shi-yi-zhi-piaoliang-de-mao
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.zhe-shi-yi-zhi-piaoliang-de-mao
+    targets: [s.zhe-shi-yi-zhi-piaoliang-de-mao]
+    context: [w.zhe, w.shi, w.num.yi, w.zhi.cl, w.piaoliang, w.de, w.mao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es un gato precioso.}
+    comments: []
+  - id: x.produce.zhe-shi-yi-zhi-piaoliang-de-mao
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.zhe-shi-yi-zhi-piaoliang-de-mao
+    targets: [s.zhe-shi-yi-zhi-piaoliang-de-mao]
+    context: [w.zhe, w.shi, w.num.yi, w.zhi.cl, w.piaoliang, w.de, w.mao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Es un gato precioso.»'}
+    answer: {meaning: Es un gato precioso.}
+    comments: []
+  - id: x.listen.ni-hao-piaoliang
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ni-hao-piaoliang
+    targets: [s.ni-hao-piaoliang]
+    context: [w.ni, w.hao, w.piaoliang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Qué guapa estás!}
+    comments: []
+  - id: x.produce.ni-hao-piaoliang
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.ni-hao-piaoliang
+    targets: [s.ni-hao-piaoliang]
+    context: [w.ni, w.hao, w.piaoliang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Qué guapa estás!»'}
+    answer: {meaning: ¡Qué guapa estás!}
+    comments: []
+  - id: x.listen.ni-zhen-piaoliang
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ni-zhen-piaoliang
+    targets: [s.ni-zhen-piaoliang]
+    context: [w.ni, w.zhen, w.piaoliang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Qué guapa eres!}
+    comments: []
+  - id: x.produce.ni-zhen-piaoliang
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.ni-zhen-piaoliang
+    targets: [s.ni-zhen-piaoliang]
+    context: [w.ni, w.zhen, w.piaoliang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Qué guapa eres!»'}
+    answer: {meaning: ¡Qué guapa eres!}
+    comments: []
+  - id: x.listen.wo-bu-gaoxing
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-bu-gaoxing
+    targets: [s.wo-bu-gaoxing]
+    context: [w.wo, w.bu, w.gaoxing]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No estoy contento.}
+    comments: []
+  - id: x.produce.wo-bu-gaoxing
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-bu-gaoxing
+    targets: [s.wo-bu-gaoxing]
+    context: [w.wo, w.bu, w.gaoxing]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No estoy contento.»'}
+    answer: {meaning: No estoy contento.}
+    comments: []
+  - id: x.listen.wo-tai-lei-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-tai-lei-le
+    targets: [s.wo-tai-lei-le]
+    context: [w.wo, w.tai, w.lei, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Estoy agotado!}
+    comments: []
+  - id: x.produce.wo-tai-lei-le
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-tai-lei-le
+    targets: [s.wo-tai-lei-le]
+    context: [w.wo, w.tai, w.lei, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Estoy agotado!»'}
+    answer: {meaning: ¡Estoy agotado!}
+    comments: []
+  - id: x.listen.tai-wan-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.tai-wan-le
+    targets: [s.tai-wan-le]
+    context: [w.tai, w.wan, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Qué tarde es!}
+    comments: []
+  - id: x.listen.tai-nan-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.tai-nan-le
+    targets: [s.tai-nan-le]
+    context: [w.tai, w.nan, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Es dificilísimo!}
+    comments: []
+  - id: x.listen.zhe-zhi-mao-tai-keai-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.zhe-zhi-mao-tai-keai-le
+    targets: [s.zhe-zhi-mao-tai-keai-le]
+    context: [w.zhe, w.zhi.cl, w.mao, w.tai, w.keai, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Qué gato tan mono!}
+    comments: []
+  - id: x.listen.wo-tai-gaoxing-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-tai-gaoxing-le
+    targets: [s.wo-tai-gaoxing-le]
+    context: [w.wo, w.tai, w.gaoxing, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Estoy contentísimo!}
+    comments: []
+  - id: x.produce.wo-tai-gaoxing-le
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-tai-gaoxing-le
+    targets: [s.wo-tai-gaoxing-le]
+    context: [w.wo, w.tai, w.gaoxing, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Estoy contentísimo!»'}
+    answer: {meaning: ¡Estoy contentísimo!}
+    comments: []
+  - id: x.listen.wo-zhen-gaoxing
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-zhen-gaoxing
+    targets: [s.wo-zhen-gaoxing]
+    context: [w.wo, w.zhen, w.gaoxing]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Qué contento estoy!}
+    comments: []
+  - id: x.listen.wo-zhende-hen-xihuan
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-zhende-hen-xihuan
+    targets: [s.wo-zhende-hen-xihuan]
+    context: [w.wo, w.zhende, w.hen, w.xihuan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: De verdad que me gusta mucho.}
+    comments: []
+  - id: x.contrast.kuai.fast
+    added: 2026-10-11
+    lang: es
+    type: contrast
+    group: g.kuai-kuai
+    targets: [w.kuai.fast]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 快, pinyin: kuài, meaning: rápido; pronto}
+    comments: []

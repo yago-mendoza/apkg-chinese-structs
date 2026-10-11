@@ -106,3 +106,73 @@ sentences:
       - {text: 。}
     translation: {es: Ha salido., en: He went out.}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-yao-huiqu-le
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 回去, ref: w.huiqu, pinyin: huíqu}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: Tengo que volver., en: I have to go back.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.ta-huilai-le
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 回来, ref: w.huilai, pinyin: huílai}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: Ha vuelto., en: He's back.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-qu-nabian-zuo
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 那边, ref: w.nabian, pinyin: nàbiān}
+      - {text: 坐, ref: w.zuo.sit, pinyin: zuò}
+      - {text: 。}
+    translation: {es: Voy a sentarme allí., en: I'll go sit over there.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.xishoujian-zai-nabian
+    use: say
+    segments:
+      - {text: 洗手间, ref: w.xishoujian, pinyin: xǐshǒujiān}
+      - {text: 在, ref: w.zai.at, pinyin: zài}
+      - {text: 那边, ref: w.nabian, pinyin: nàbiān}
+      - {text: 。}
+    translation: {es: El baño está por allí., en: The restroom is over there.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.zhebian-zou
+    use: hear
+    segments:
+      - {text: 这边, ref: w.zhebian, pinyin: zhèbiān}
+      - {text: 走, ref: w.zou, pinyin: zǒu}
+      - {text: ！}
+    translation: {es: ¡Por aquí!, en: This way!}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.zai-zhebian-ni-gen-wo-zou-ba
+    use: hear
+    segments:
+      - {text: 在, ref: w.zai.at, pinyin: zài}
+      - {text: 这边, ref: w.zhebian, pinyin: zhèbiān}
+      - {text: ，}
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 跟, ref: w.gen, pinyin: gēn}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 走, ref: w.zou, pinyin: zǒu}
+      - {text: 吧, ref: w.ba.particle, pinyin: ba}
+      - {text: 。}
+    translation: {es: 'Está por aquí, ven conmigo.', en: 'It''s this way, come with me.'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-zai-zheli-xiache
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 在, ref: w.zai.at, pinyin: zài}
+      - {text: 这里, ref: w.zheli, pinyin: zhèlǐ}
+      - {text: 下车, ref: w.xiache, pinyin: xià chē}
+      - {text: 。}
+    translation: {es: Me bajo aquí., en: I'll get off here.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}

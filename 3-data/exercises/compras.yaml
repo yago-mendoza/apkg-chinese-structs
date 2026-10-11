@@ -10,7 +10,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 喝}
     answer: {typed: he1, hanzi: 喝, pinyin: hē, meaning: beber}
     reveal: [s.ni-he-shui-ma]
-    explanation: Primer tono, alto y sostenido.
     comments: []
   - id: x.listen.shui
     added: 2026-09-25
@@ -21,7 +20,6 @@ exercises:
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: shui3, hanzi: 水, pinyin: shuǐ, meaning: agua}
     reveal: [s.ni-he-shui-ma]
-    explanation: Tercer tono aislado, baja y vuelve a subir.
     comments: []
   - id: x.listen.ni-he-shui-ma
     added: 2026-09-25
@@ -2518,4 +2516,401 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Me gustaría tener una familia.»'}
     answer: {meaning: Me gustaría tener una familia.}
+    comments: []
+  - id: x.compose.cena-mesa-al-lado
+    added: '2026-10-11'
+    lang: es
+    type: compose
+    targets: [s.qingwen-na-shi-shenme, s.wo-ye-xiang-chi-nage, s.wo-yao-nage]
+    words: [e.qingwen, w.na.that, w.shenme, w.xiang, w.chi, w.yao]
+    skills: [production, speaking]
+    prompt: {text: Construye. Cenas solo en un restaurante. A la mesa de al lado le acaban de servir algo que tiene una pinta buenísima. Llamas al camarero.}
+    answer: {meaning: 'Para algo que no está a tu lado, 那 o 那个: «eso, aquello».'}
+    comments: []
+  - id: x.compose.tienda-caro
+    added: '2026-10-11'
+    lang: es
+    type: compose
+    targets: [s.tai-gui-le, s.neng-shao-yidian-ma, s.tai-gui-le-shao-yidian-ba]
+    words: [w.tai, w.gui, w.neng, w.shao, w.yidian]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. En un mercado, la camiseta que te gusta cuesta el doble de lo que pensabas. Regatea con estas palabras o con otras.'}
+    answer: {meaning: 太…了 exclama; 少一点 pide que baje un poco.}
+    comments: []
+  - id: x.nuance.qu-zou-hui
+    added: '2026-10-11'
+    lang: es
+    type: nuance
+    targets: [w.qu, w.zou, w.hui.return]
+    skills: [comprehension, discrimination]
+    prompt: {text: '去, 走 y 回: ¿qué dice cada uno?'}
+    answer: {meaning: '去: ir a un sitio (我去商店). 走: irse, sin decir adónde (我走了). 回: volver adonde ya estabas (我回家).'}
+    comments: []
+  - id: x.dictation.ke.thirsty
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.ke.thirsty]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ke3, hanzi: 渴, pinyin: kě, meaning: 'tener sed, sediento'}
+    comments: []
+  - id: x.produce.ke.thirsty
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.ke.thirsty]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «tener sed, sediento»? Escribe el pinyin.'}
+    answer: {typed: ke3, hanzi: 渴, pinyin: kě, meaning: 'tener sed, sediento'}
+    comments: []
+  - id: x.read.ke.thirsty
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.ke.thirsty]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 渴}
+    answer: {hanzi: 渴, pinyin: kě, meaning: 'tener sed, sediento'}
+    comments: []
+  - id: x.dictation.e.hungry
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.e.hungry]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: e4, hanzi: 饿, pinyin: è, meaning: 'tener hambre, hambriento'}
+    comments: []
+  - id: x.produce.e.hungry
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.e.hungry]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «tener hambre, hambriento»? Escribe el pinyin.'}
+    answer: {typed: e4, hanzi: 饿, pinyin: è, meaning: 'tener hambre, hambriento'}
+    comments: []
+  - id: x.read.e.hungry
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.e.hungry]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 饿}
+    answer: {hanzi: 饿, pinyin: è, meaning: 'tener hambre, hambriento'}
+    comments: []
+  - id: x.dictation.pianyi
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.pianyi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: pian2 yi5, hanzi: 便宜, pinyin: piányi, meaning: barato}
+    comments: []
+  - id: x.produce.pianyi
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.pianyi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «barato»? Escribe el pinyin.'}
+    answer: {typed: pian2 yi5, hanzi: 便宜, pinyin: piányi, meaning: barato}
+    comments: []
+  - id: x.read.pianyi
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.pianyi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 便宜}
+    answer: {hanzi: 便宜, pinyin: piányi, meaning: barato}
+    comments: []
+  - id: x.tones.pianyi
+    added: 2026-10-11
+    lang: es
+    type: tones
+    targets: [w.pianyi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 便宜, pinyin: pian yi}
+    answer: {typed: '25', hanzi: 便宜, pinyin: piányi, meaning: barato}
+    comments: []
+  - id: x.listen.wo-ke-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-ke-le
+    targets: [s.wo-ke-le]
+    context: [w.wo, w.ke.thirsty, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo sed.}
+    comments: []
+  - id: x.produce.wo-ke-le
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-ke-le
+    targets: [s.wo-ke-le]
+    context: [w.wo, w.ke.thirsty, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo sed.»'}
+    answer: {meaning: Tengo sed.}
+    comments: []
+  - id: x.listen.wo-tai-ke-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-tai-ke-le
+    targets: [s.wo-tai-ke-le]
+    context: [w.wo, w.tai, w.ke.thirsty, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Me muero de sed!}
+    comments: []
+  - id: x.listen.wo-e-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-e-le
+    targets: [s.wo-e-le]
+    context: [w.wo, w.e.hungry, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo hambre.}
+    comments: []
+  - id: x.produce.wo-e-le
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-e-le
+    targets: [s.wo-e-le]
+    context: [w.wo, w.e.hungry, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo hambre.»'}
+    answer: {meaning: Tengo hambre.}
+    comments: []
+  - id: x.listen.wo-bu-chi-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-bu-chi-le
+    targets: [s.wo-bu-chi-le]
+    context: [w.wo, w.bu, w.chi, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ya no como más.}
+    comments: []
+  - id: x.produce.wo-bu-chi-le
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-bu-chi-le
+    targets: [s.wo-bu-chi-le]
+    context: [w.wo, w.bu, w.chi, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ya no como más.»'}
+    answer: {meaning: Ya no como más.}
+    comments: []
+  - id: x.listen.tai-gui-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.tai-gui-le
+    targets: [s.tai-gui-le]
+    context: [w.tai, w.gui, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Es carísimo!}
+    comments: []
+  - id: x.produce.tai-gui-le
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.tai-gui-le
+    targets: [s.tai-gui-le]
+    context: [w.tai, w.gui, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Es carísimo!»'}
+    answer: {meaning: ¡Es carísimo!}
+    comments: []
+  - id: x.listen.keyi-pianyi-yidian-ma
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.keyi-pianyi-yidian-ma
+    targets: [s.keyi-pianyi-yidian-ma]
+    context: [w.keyi, w.pianyi, w.yidian, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Me lo deja un poco más barato?'}
+    comments: []
+  - id: x.produce.keyi-pianyi-yidian-ma
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.keyi-pianyi-yidian-ma
+    targets: [s.keyi-pianyi-yidian-ma]
+    context: [w.keyi, w.pianyi, w.yidian, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Me lo deja un poco más barato?»'}
+    answer: {meaning: '¿Me lo deja un poco más barato?'}
+    comments: []
+  - id: x.listen.wo-dei-mai-xie
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-dei-mai-xie
+    targets: [s.wo-dei-mai-xie]
+    context: [w.wo, w.dei, w.mai, w.xie.shoes]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo que comprar zapatos.}
+    comments: []
+  - id: x.produce.wo-dei-mai-xie
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-dei-mai-xie
+    targets: [s.wo-dei-mai-xie]
+    context: [w.wo, w.dei, w.mai, w.xie.shoes]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo que comprar zapatos.»'}
+    answer: {meaning: Tengo que comprar zapatos.}
+    comments: []
+  - id: x.listen.wo-ye-xiang-chi-nage
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-ye-xiang-chi-nage
+    targets: [s.wo-ye-xiang-chi-nage]
+    context: [w.wo, w.ye, w.xiang, w.chi, w.na.that, w.ge]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Yo también quiero comer eso.}
+    comments: []
+  - id: x.listen.wo-yao-nage
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-yao-nage
+    targets: [s.wo-yao-nage]
+    context: [w.wo, w.yao, w.na.that, w.ge]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero ese.}
+    comments: []
+  - id: x.listen.dlg-shui
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.dlg-shui
+    targets: [s.dlg-shui]
+    context: [w.ni, w.yao, w.shui, w.ma, w.bu, e.xiexie, e.meiwenti, w.yinwei, w.wo, w.ye, w.meiyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Quieres agua? —No, gracias. —Sin problema, ¡porque yo tampoco tengo agua!'}
+    comments: []
+  - id: x.contrast.dian
+    added: 2026-10-11
+    lang: es
+    type: contrast
+    group: g.dian-dian
+    targets: [w.dian]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 店, pinyin: diàn, meaning: 'tienda, local'}
+    comments: []
+  - id: x.contrast.kuai
+    added: 2026-10-11
+    lang: es
+    type: contrast
+    group: g.kuai-kuai
+    targets: [w.kuai]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 块, pinyin: kuài, meaning: yuan (al hablar)}
+    comments: []
+  - id: x.contrast.ke.thirsty
+    added: 2026-10-11
+    lang: es
+    type: contrast
+    group: g.ke-ke
+    targets: [w.ke.thirsty]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 渴, pinyin: kě, meaning: 'tener sed, sediento'}
+    comments: []
+  - id: x.dictation.shao
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.shao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shao3, hanzi: 少, pinyin: shǎo, meaning: poco; menos}
+    comments: []
+  - id: x.produce.shao
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.shao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «poco; menos»? Escribe el pinyin.'}
+    answer: {typed: shao3, hanzi: 少, pinyin: shǎo, meaning: poco; menos}
+    comments: []
+  - id: x.read.shao
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.shao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 少}
+    answer: {hanzi: 少, pinyin: shǎo, meaning: poco; menos}
+    comments: []
+  - id: x.listen.qingwen-na-shi-shenme
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.qingwen-na-shi-shenme
+    targets: [s.qingwen-na-shi-shenme]
+    context: [e.qingwen, w.na.that, w.shi, w.shenme]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Perdone, ¿qué es eso?'}
+    comments: []
+  - id: x.listen.neng-shao-yidian-ma
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.neng-shao-yidian-ma
+    targets: [s.neng-shao-yidian-ma]
+    context: [w.neng, w.shao, w.yidian, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Puede dejarlo en menos?'}
+    comments: []
+  - id: x.produce.neng-shao-yidian-ma
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.neng-shao-yidian-ma
+    targets: [s.neng-shao-yidian-ma]
+    context: [w.neng, w.shao, w.yidian, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Puede dejarlo en menos?»'}
+    answer: {meaning: '¿Puede dejarlo en menos?'}
+    comments: []
+  - id: x.listen.tai-gui-le-shao-yidian-ba
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.tai-gui-le-shao-yidian-ba
+    targets: [s.tai-gui-le-shao-yidian-ba]
+    context: [w.tai, w.gui, w.le, w.shao, w.yidian, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Es demasiado caro, ¡déjelo en menos!'}
     comments: []

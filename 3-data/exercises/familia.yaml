@@ -337,15 +337,6 @@ exercises:
     prompt: {text: '女儿 y 儿子: ¿qué pieza comparten y cómo suena cada parte?'}
     answer: {meaning: '儿 ér «niño». 女儿 nǚ''ér = 女 nǚ «mujer» + 儿 ér: la hija lleva delante 女. 儿子 érzi = 儿 ér + 子 zi, un sufijo átono: el hijo lleva detrás 子.'}
     comments: []
-  - id: x.nuance.mama-baba-tones
-    added: 2026-10-01
-    lang: es
-    type: nuance
-    targets: [w.mama, w.baba]
-    skills: [comprehension, discrimination]
-    prompt: {text: '妈妈 y 爸爸: ¿en qué se diferencian sus tonos?'}
-    answer: {meaning: 'māma: la primera sílaba alta y plana (primer tono). bàba: la primera cae (cuarto). En las dos, la segunda sílaba es corta y floja (tono neutro).'}
-    comments: []
   - id: x.dictation.jiejie
     added: 2026-10-01
     lang: es

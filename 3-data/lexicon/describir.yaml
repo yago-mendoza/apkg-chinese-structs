@@ -310,6 +310,7 @@ entries:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: '真 + adjetivo exclama: 这个苹果真大！ «¡qué grande!». 很 + adjetivo solo describe.'}
+      - {kind: mnemonic, private: false, date: '2026-10-11', text: 'Si a 真 le quitas las dos patitas de abajo, queda 直 zhí «recto» [HSK 3]: la verdad, sin patas, es una línea recta.', original: '¡Exacto! Si a 真 (zhēn), «really / verdadero», le quitas los dos palitos inferiores, obtienes 直 (zhí).'}
   - id: w.shou.hand
     use: hear
     role: content
@@ -413,3 +414,91 @@ entries:
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-09', text: '真 delante de un adjetivo es «qué…»: 真好. 真的 es «de verdad»: 我真的知道 «de verdad que lo sé»; 真的？, con tono de pregunta, ya es «¿en serio?».'}
+  - id: w.kuai.fast
+    use: say
+    role: content
+    kind: word
+    hanzi: 快
+    pinyin: kuài
+    meaning: {es: rápido; pronto, en: fast; soon}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '他跑得很快 «corre muy rápido». Con 了, «ya casi»: 快八点了 «son casi las ocho». Lo contrario es 慢 màn.'}
+  - id: w.pao
+    use: hear
+    role: content
+    kind: word
+    hanzi: 跑
+    pinyin: pǎo
+    meaning: {es: correr, en: to run}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 他跑得很快 «corre muy rápido». 足 a la izquierda es «pie».}
+  - id: w.de.complement
+    use: say
+    role: function
+    kind: word
+    hanzi: 得
+    pinyin: de
+    meaning: {es: 'partícula: cómo se hace algo (说得很好)', en: 'particle: how something is done'}
+    pos: particula
+    pos_reason: Aquí es la partícula átona de 说得很好, no 得 děi «tener que».
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Verbo + 得 + cómo: 你说得很好 «hablas muy bien»; 你来得很早 «has llegado temprano». Valora cómo sale la acción. «你很早» no es la forma de decir que alguien llegó temprano.'}
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Se escribe distinto que 的 (mi libro: 我的书) aunque suene igual: 得 va detrás de un verbo; 的, delante de un sustantivo.'}
+    relations: [w.dei]
+    accept_pinyin_mismatch: 'partícula átona: de'
+  - id: w.liang.bright
+    use: read
+    role: content
+    kind: word
+    hanzi: 亮
+    pinyin: liàng
+    meaning: {es: 'brillante, con luz', en: bright}
+    use_reason: HSK 2; para reconocerlo frente a 高 y dentro de 漂亮 y 月亮
+    source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27', rescued: 010-2026-10-11-construir-numeros-y-movimiento}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Arriba lleva la parte de arriba de 高, recortada. 很亮 «hay mucha luz».'}
+  - id: g.intensity
+    kind: group
+    basis: set
+    title: '很, 真, 非常 y 太: cuánto'
+    explanation: Los cuatro van delante del adjetivo, pero no dicen lo mismo.
+    members:
+      - {ref: w.hen, cue: 'neutro: a menudo solo une, 我很好'}
+      - {ref: w.zhen, cue: 'con emoción sincera: 你真漂亮！'}
+      - {ref: w.feichang, cue: 'más grado, también por escrito: 非常好'}
+      - {ref: w.tai, cue: 'exclama, con 了 al final: 太好了！'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []
+  - id: g.de-de
+    kind: group
+    basis: homophone
+    title: '的 y 得: los dos de'
+    explanation: Suenan igual, átonos, y se escriben distinto.
+    members:
+      - {ref: w.de, cue: 'va antes del sustantivo: 我的书, 漂亮的猫'}
+      - {ref: w.de.complement, cue: 'va tras un verbo: 说得很好'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []
+  - id: g.gao-liang
+    kind: group
+    basis: visual
+    title: 高 y 亮
+    explanation: La parte de arriba es la misma; cambia lo de abajo.
+    members:
+      - {ref: w.gao, cue: 'abajo, otra caja: un edificio'}
+      - {ref: w.liang.bright, cue: 'abajo, 几: una persona'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []
+  - id: g.kuai-kuai
+    kind: group
+    basis: soundalike
+    title: 快 kuài y 块 kuài
+    explanation: 'Suenan igual: el de la izquierda decide.'
+    members:
+      - {ref: w.kuai.fast, cue: '忄 a la izquierda: el ánimo'}
+      - {ref: w.kuai, cue: '土 a la izquierda: un trozo de tierra'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []

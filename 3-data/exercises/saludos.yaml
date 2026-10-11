@@ -10,7 +10,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta y escribe el pinyin; recuerda el significado.', hanzi: 你好}
     answer: {typed: ni3 hao3, hanzi: 你好, pinyin: nǐ hǎo, meaning: hola}
     refs: [p.third-tone-sandhi]
-    explanation: Se escriben dos terceros tonos aunque la primera sílaba suene en segundo.
     comments: []
   - id: x.speak.nihao
     added: 2026-09-25
@@ -1915,4 +1914,122 @@ exercises:
     skills: [comprehension]
     prompt: {text: '早上 y 明天: los dos se traducen «mañana». ¿Cuál es cada uno?'}
     answer: {meaning: '早上: la mañana, temprano (早上好). 明天: el día de mañana (明天见). Juntos, 明天早上: mañana por la mañana.'}
+    comments: []
+  - id: x.situation.wanan-choice
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    targets: [e.wanan]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. Son las 23:00 y te despides de tus amigos porque te vas a dormir.', options: [晚上好！, 早上好！, 晚安！, 下午好！, 你好吗？]}
+    answer: {choice: c, hanzi: 晚安！, pinyin: wǎn'ān, meaning: Para irse a dormir. 晚上好 es al llegar por la noche.}
+    comments: []
+  - id: x.situation.xiawuhao-choice
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    targets: [e.xiawuhao]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. Son las 15:00, entras en una tienda y la dependienta te saluda.', options: [早上好！, 晚安！, 晚上好！, 下午好！, 再见！]}
+    answer: {choice: d, hanzi: 下午好！, pinyin: xiàwǔ hǎo, meaning: 'Por la tarde. Lo más corriente, en cualquier momento, es 你好.'}
+    comments: []
+  - id: x.choice.zenmele
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    targets: [e.zenmele]
+    skills: [production, speaking]
+    prompt: {text: Elige. Tu amigo tiene mala cara y le preguntas qué le pasa., options: [你怎么样？, 你怎么了？, 怎么办？, 你叫什么？]}
+    answer: {choice: b, hanzi: 你怎么了？, pinyin: nǐ zěnme le, meaning: '怎么了: ¿qué ha pasado? 怎么样 pregunta qué tal; 怎么办, qué hacer.'}
+    comments: []
+  - id: x.situation.ni-xianzai-mang-ma
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    sentence: s.ni-xianzai-mang-ma
+    targets: [s.ni-xianzai-mang-ma]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. En el trabajo quieres preguntarle algo a una compañera que está tecleando sin parar. Antes, pregúntale si está ocupada ahora.'}
+    answer: {meaning: '¿Estás ocupada ahora?'}
+    comments: []
+  - id: x.listen.ni-xianzai-mang-ma
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ni-xianzai-mang-ma
+    targets: [s.ni-xianzai-mang-ma]
+    context: [w.ni, w.xianzai, w.mang, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Estás ocupado ahora?'}
+    comments: []
+  - id: x.produce.ni-xianzai-mang-ma
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.ni-xianzai-mang-ma
+    targets: [s.ni-xianzai-mang-ma]
+    context: [w.ni, w.xianzai, w.mang, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Estás ocupado ahora?»'}
+    answer: {meaning: '¿Estás ocupado ahora?'}
+    comments: []
+  - id: x.listen.xiaci-jian
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.xiaci-jian
+    targets: [s.xiaci-jian]
+    context: [w.xiaci, w.jian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Hasta la próxima!}
+    comments: []
+  - id: x.produce.xiaci-jian
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.xiaci-jian
+    targets: [s.xiaci-jian]
+    context: [w.xiaci, w.jian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Hasta la próxima!»'}
+    answer: {meaning: ¡Hasta la próxima!}
+    comments: []
+  - id: x.charsound.jiu
+    added: 2026-10-11
+    lang: es
+    type: charsound
+    targets: [e.haojiubujian, w.duojiu]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 久}
+    answer: {typed: jiu3, hanzi: 久, pinyin: jiǔ, meaning: 'Sale en 好久不见 hǎojiǔ bú jiàn «¡cuánto tiempo (sin vernos)!», 多久 duōjiǔ
+        «¿cuánto tiempo?».'}
+    comments: []
+  - id: x.dictation.zao.early
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.zao.early]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zao3, hanzi: 早, pinyin: zǎo, meaning: 'temprano, pronto'}
+    comments: []
+  - id: x.produce.zao.early
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.zao.early]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «temprano, pronto»? Escribe el pinyin.'}
+    answer: {typed: zao3, hanzi: 早, pinyin: zǎo, meaning: 'temprano, pronto'}
+    comments: []
+  - id: x.read.zao.early
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.zao.early]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 早}
+    answer: {hanzi: 早, pinyin: zǎo, meaning: 'temprano, pronto'}
     comments: []

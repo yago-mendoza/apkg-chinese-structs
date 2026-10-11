@@ -70,16 +70,6 @@ items:
     notes:
       - {text: '灰 huī es «ceniza»: el color de la ceniza.'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-  - id: a.liang
-    hanzi: 亮
-    pinyin: liàng
-    meaning: {es: 'brillante, con luz'}
-    theme: describir
-    links: [月亮, 灯, 光, 暗]
-    reason: HSK 2; de momento solo vive dentro de 漂亮.
-    notes:
-      - {text: 'La parte de arriba es la de 高, recortada. 很亮 «hay mucha luz». 亮出来 «sacar a la vista».'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
 
   # ---------------------------------------------------------------- dinero, errores
   - id: a.qian.owe
@@ -107,8 +97,8 @@ items:
     snooze_reason: 'despierta con 会, pero es HSK 4; 错 cubre «equivocarse»'
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.cuowu
-    snooze: 006-2026-10-06-edad-numeros-y-familia
-    snooze_reason: 'HSK 2 y de registro escrito; 不对 y 错 bastan al hablar'
+    snooze: 010-2026-10-11-construir-numeros-y-movimiento
+    snooze_reason: 'despierta con 问题, pero es de registro escrito; 不对 y 错 bastan al hablar'
     hanzi: 错误
     pinyin: cuòwù
     meaning: {es: error}
@@ -149,16 +139,6 @@ items:
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
 
   # ---------------------------------------------------------------- tiempo y números
-  - id: a.ban
-    hanzi: 半
-    pinyin: bàn
-    meaning: {es: 'mitad; y media'}
-    theme: numeros
-    links: [点, 一半, 半天, 小时]
-    reason: HSK 1; entra con las horas (三点半 «las tres y media»).
-    notes:
-      - {text: 'Da el sonido a 胖 pàng y a 伴 bàn «compañero» [HSK 7].'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
 
   # ---------------------------------------------------------------- personas y oficios
   - id: a.zhuanjia
@@ -284,6 +264,8 @@ items:
 
   # ---------------------------------------------------------------- lote 009
   - id: a.lijie
+    snooze: 010-2026-10-11-construir-numeros-y-movimiento
+    snooze_reason: 'despierta con 懂, pero es HSK 3: para «entiendo» bastan 明白 y 懂'
     hanzi: 理解
     pinyin: lǐjiě
     meaning: {es: 'entender, comprender (a alguien)'}
@@ -304,6 +286,8 @@ items:
       - {text: '你确定吗？ «¿estás seguro?».'}
     source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
   - id: a.tongyi
+    snooze: 010-2026-10-11-construir-numeros-y-movimiento
+    snooze_reason: 'despierta con 同学, pero es HSK 3: para contestar bastan 对 y 好的'
     hanzi: 同意
     pinyin: tóngyì
     meaning: {es: estar de acuerdo}
@@ -440,3 +424,117 @@ items:
     notes:
       - {text: '月 «carne» + 土 «tierra»: en la tierra se plantan semillas y en el vientre crece un niño.', original: Tierra porque se plantnsemillad en la toerra y en el vientre tb crece niño por tantovientre eso}
     source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+
+  # ---------------------------------------------------------------- lote 010
+  - id: a.yizhi
+    hanzi: 一直
+    pinyin: yìzhí
+    meaning: {es: 'todo el rato, sin parar; todo recto'}
+    theme: tiempo
+    links: [直, 走, 一直走]
+    reason: 'HSK 2; llegó de una consulta tuya, sin frase de clase.'
+    notes:
+      - {text: 'Viene de 直 zhí «recto» [HSK 3], que es 真 sin las dos patitas de abajo: 一直走 «sigue todo recto».'}
+    source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: a.mingxing
+    hanzi: 明星
+    pinyin: míngxīng
+    meaning: {es: 'estrella (famosa), celebridad'}
+    theme: personas
+    links: [星, 电影, 唱歌]
+    reason: 'HSK 2; suelto, sin frase.'
+    notes:
+      - {text: '明 «brillante» + 星 «estrella»: el mismo 星 de 星期 y 星星.'}
+    source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: a.dao.cl
+    hanzi: 道
+    pinyin: dào
+    meaning: {es: 'clasificador de preguntas y ejercicios (一道题)'}
+    theme: numeros
+    links: [题, 题目, 考试]
+    reason: 'HSK 2 como clasificador; de momento basta 问题.'
+    notes:
+      - {text: '这道题太难了！ «¡este ejercicio es dificilísimo!». 题目 «enunciado» [HSK 3] y 话题 «tema de conversación» [HSK 3] llevan el mismo 题 de 问题.'}
+    source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: a.mafan
+    hanzi: 麻烦
+    pinyin: máfan
+    meaning: {es: 'molestia; molestar'}
+    theme: cortesia
+    links: [请, 帮, 不好意思]
+    reason: 'HSK 3; de tu lista de consultas, sin frase de clase.'
+    notes:
+      - {text: '麻烦你了 «perdona las molestias»; 太麻烦了 «¡qué lío!». Para pedir un favor ya tienes 请 y 不好意思.'}
+    source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: a.tongshi.sametime
+    hanzi: 同时
+    pinyin: tóngshí
+    meaning: {es: 'al mismo tiempo'}
+    theme: conectores
+    links: [一边…一边, 同事]
+    reason: 'HSK 2; para hacer dos cosas a la vez ya tienes 一边…一边….'
+    notes:
+      - {text: '同时: dos cosas pasan a la vez (我们同时到了 «llegamos a la vez»). 一边…一边…: una persona hace dos cosas a la vez (我一边吃饭，一边看电视).'}
+    source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: a.weishengjian
+    hanzi: 卫生间
+    pinyin: wèishēngjiān
+    meaning: {es: 'baño (en casas, hoteles y oficinas)'}
+    theme: lugares
+    links: [卫生, 厕所]
+    reason: 'HSK 3; para preguntar ya tienes 洗手间.'
+    notes:
+      - {text: '卫生 «higiene» + 间 «sala». Es lo que se lee en casas, hoteles y oficinas; 洗手间, en restaurantes y centros comerciales.'}
+    source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: a.cesuo
+    hanzi: 厕所
+    pinyin: cèsuǒ
+    meaning: {es: 'baño, retrete (el de la calle)'}
+    theme: lugares
+    links: [卫生间, 公厕]
+    reason: 'HSK 6 en la lista, aunque se lee en cualquier calle; para preguntar ya tienes 洗手间.'
+    notes:
+      - {text: 'En la calle se ve 公厕 «baño público». 厕所在哪里？ se entiende siempre, pero 洗手间 suena más educado.'}
+    source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: a.guolai
+    hanzi: 过来
+    pinyin: guòlai
+    meaning: {es: 'venir (hasta aquí)'}
+    theme: lugares
+    links: [过去, 走过来, 上来, 下去]
+    reason: 'HSK 2; sigue la misma regla que 回来 y 出来, que ya están.'
+    notes:
+      - {text: '过 «pasar, cruzar» + 来 «hacia aquí»: 走过来 «venir andando hasta aquí», 跑过来 «venir corriendo». Con 去, hacia allí: 走过去. Igual funcionan 上来, 上去, 下来 y 下去 [HSK 3].'}
+    source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: a.saoma
+    hanzi: 扫码
+    pinyin: sǎo mǎ
+    meaning: {es: 'escanear el código (para pagar)'}
+    theme: compras
+    links: [付钱, 手机, 微信, 支付宝]
+    reason: 'Para pagar, cuando llegue cómo se paga; ahora mismo es un hueco: «Pagar».'
+    level: 3
+    level_reason: 'No está en la lista; es de pagar en tiendas, que llegará en HSK 2 o 3.'
+    notes:
+      - {text: '刷卡还是扫码？ «¿con tarjeta o con el código?». En China casi todo se paga escaneando un código QR con el móvil.'}
+    source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: a.dabao
+    hanzi: 打包
+    pinyin: dǎbāo
+    meaning: {es: 'envolver para llevar (las sobras)'}
+    theme: compras
+    links: [饭, 吃饭, 服务员]
+    reason: 'HSK 5; muy útil en restaurantes, pero sin conexión aún.'
+    notes:
+      - {text: '可以帮我打包吗？ «¿me lo pone para llevar?». En China es normal llevarse lo que sobra.'}
+    source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: a.zu
+    hanzi: 足
+    pinyin: zú
+    meaning: {es: 'pie (en palabras como 足球)'}
+    theme: escritura
+    links: [足球, 跳, 脚]
+    reason: 'HSK 6 suelto; ya está dentro de 足球, 跑 y 跟.'
+    notes:
+      - {text: 'Un pie con el talón detrás y la pierna arriba. Se parece a la parte de abajo de 是: no confundirlos.', original: 'zú foot looks like a pie con un talón detras y una pierna hgorda arriba, se parece much oa shì, no confundir'}
+    source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}

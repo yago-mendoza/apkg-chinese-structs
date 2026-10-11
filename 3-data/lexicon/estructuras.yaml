@@ -396,3 +396,33 @@ entries:
     source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
     comments:
       - {kind: note, private: false, date: '2026-10-08', text: 'Nunca 不有: con 有, siempre 没有.', original: 'mei you / nunca bu you!'}
+  - id: st.v-de-hen-adj
+    kind: structure
+    use: say
+    pattern: '{V} + 得 + 很 + {Adj}'
+    refs: [w.de.complement, w.hen]
+    meaning: {es: 'Cómo sale una acción: el verbo, 得 y la valoración (说得很好 «hablas muy bien»).', en: 'How an action turns out: verb, 得 and the assessment.'}
+    examples: [s.ni-lai-de-hen-zao, s.ni-shuo-de-hen-hao, s.ta-pao-de-hen-kuai, s.ni-xie-de-hen-hao]
+    contrast: {right: s.ni-lai-de-hen-zao, wrong: 你很早来。, why: {es: 'Para valorar cómo salió la acción, el verbo va primero y 得 lo une con cómo: 你来得很早.', en: 'To assess how an action went, the verb comes first and 得 links it to how: 你来得很早.'}}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []
+  - id: st.adj-de-n
+    kind: structure
+    use: say
+    pattern: '{Adj} + 的 + {N}'
+    refs: [w.de]
+    meaning: {es: 'Un adjetivo de dos sílabas delante de un sustantivo lleva 的 (漂亮的猫); uno de una sílaba, muchas veces no (小猫).', en: A two-syllable adjective before a noun takes 的; a one-syllable one often doesn't.}
+    examples: [s.zhe-shi-yi-zhi-piaoliang-de-mao]
+    contrast: {right: s.zhe-shi-yi-zhi-piaoliang-de-mao, wrong: 这是一只漂亮猫。, why: {es: '漂亮 tiene dos sílabas: delante de 猫 pide 的. 小猫 o 大猫 van sin él.', en: '漂亮 has two syllables, so it needs 的 before 猫; 小猫 does not.'}}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []
+  - id: st.time-qian
+    kind: structure
+    use: say
+    pattern: '{S} + {Num} + 天 + 前 + {V}'
+    refs: [w.tian, w.qian.before]
+    meaning: {es: 'Hace tantos días: el número, 天 y 前, delante del verbo, como todo lo que dice cuándo.', en: 'X days ago: number, 天 and 前, before the verb, like any time expression.'}
+    examples: [s.wo-liang-tian-qian-qu-le-shangdian]
+    contrast: {right: s.wo-liang-tian-qian-qu-le-shangdian, wrong: 我去了商店两天前。, why: {es: '«Hace dos días» va delante del verbo, no al final como en español: 我两天前去了商店.', en: '«Two days ago» goes before the verb, not at the end: 我两天前去了商店.'}}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []

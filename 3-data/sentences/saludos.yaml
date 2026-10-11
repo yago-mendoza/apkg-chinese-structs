@@ -232,3 +232,21 @@ sentences:
       - {text: ！}
     translation: {es: —¡Ya has vuelto! —Ya estoy aquí. ¡Qué frío hace hoy!, en: —You're back! —I'm back. It's so cold today!}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.ni-xianzai-mang-ma
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 现在, ref: w.xianzai, pinyin: xiànzài}
+      - {text: 忙, ref: w.mang, pinyin: máng}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Estás ocupado ahora?', en: 'Are you busy now?'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.xiaci-jian
+    use: say
+    segments:
+      - {text: 下次, ref: w.xiaci, pinyin: xiàcì}
+      - {text: 见, ref: w.jian, pinyin: jiàn}
+      - {text: ！}
+    translation: {es: ¡Hasta la próxima!, en: See you next time!}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}

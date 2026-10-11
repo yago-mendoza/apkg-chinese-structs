@@ -1,0 +1,90 @@
+# Diccionario · Entender y preguntar. Esquema: 3-data/README.md
+
+entries:
+  - id: w.wenti
+    use: say
+    role: content
+    kind: word
+    hanzi: 问题
+    pinyin: wèntí
+    meaning: {es: pregunta; problema, en: question; problem}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Palabra a palabra: 问 «preguntar» + 题 «tema, ejercicio». Es «pregunta» y también «problema»: 我有一个问题 «tengo una pregunta»; 没问题 «no hay problema».'}
+      - {kind: character, private: false, date: '2026-10-11', text: '题 lleva 是 a la izquierda, que le daba el sonido (hoy ya no se parece: tí), y 页 «página» a la derecha.', original: EN MEI WENTI EL 'tí' es shì hanzi + yè hanzi (pagína de libro o clasificador)}
+  - id: w.dong
+    use: say
+    role: content
+    kind: word
+    hanzi: 懂
+    pinyin: dǒng
+    meaning: {es: 'entender, comprender', en: to understand}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Solo es verbo: 我懂了 «ya lo entiendo»; 听不懂 «no lo entiendo (al oírlo)». 明白 es lo mismo, y además puede ser adjetivo, «claro»: 很明白 «muy claro».'}
+  - id: w.yisi
+    use: say
+    role: content
+    kind: word
+    hanzi: 意思
+    pinyin: yìsi
+    meaning: {es: 'significado, sentido', en: meaning}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '这个是什么意思？ «¿qué significa esto?». Es el mismo 意思 de 不好意思, literalmente «no es buena intención».'}
+    accept_pinyin_mismatch: '思 va en tono neutro en el habla: yìsi'
+  - id: w.qingchu
+    use: say
+    role: content
+    kind: word
+    hanzi: 清楚
+    pinyin: qīngchu
+    meaning: {es: 'claro, nítido (que se ve o se oye bien)', en: clear}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '我没听清楚 «no lo he oído bien»: el problema es el sonido, no entenderlo. 清 lleva 青 qīng, que le da el sonido, como a 请 qǐng.'}
+    accept_pinyin_mismatch: '楚 va en tono neutro en el habla: qīngchu'
+  - id: w.du
+    use: say
+    role: content
+    kind: word
+    hanzi: 读
+    pinyin: dú
+    meaning: {es: leer (en voz alta), en: to read (aloud)}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '这个字怎么读？ «¿cómo se lee este carácter?». Leer para uno mismo, en silencio, también es 看: 看书 «leer un libro».'}
+  - id: w.man
+    use: say
+    role: content
+    kind: word
+    hanzi: 慢
+    pinyin: màn
+    meaning: {es: 'lento, despacio', en: slow}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '请说慢一点 «hable un poco más despacio, por favor». Lo contrario es 快 kuài «rápido».'}
+  - id: w.yidian
+    use: say
+    role: function
+    kind: word
+    hanzi: 一点
+    pinyin: yīdiǎn
+    meaning: {es: un poco (de una cantidad o de una cualidad), en: a little}
+    level: 1
+    level_reason: 'Es 一点儿, HSK 1, sin el erhua del norte: en mandarín estándar se dice y se escribe 一点.'
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Va detrás de un adjetivo para pedir «un poco más así»: 慢一点 «más despacio», 便宜一点 «más barato». «Un poco» de una acción es 一下: 等一下.'}
+    pos: adverbio
+    pos_reason: 'Detrás de un adjetivo, «un poco (más)»: 慢一点.'
+  - id: w.zheyang
+    use: say
+    role: content
+    kind: word
+    hanzi: 这样
+    pinyin: zhèyàng
+    meaning: {es: 'así, de esta manera', en: 'like this, this way'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '这样说对吗？ «¿se dice así?». 那样 nàyàng es «así, como eso».'}

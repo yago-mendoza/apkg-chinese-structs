@@ -384,7 +384,7 @@ exercises:
     targets: [s.count-1-10]
     context: [w.num.yi, w.num.er, w.num.san, w.num.si, w.num.wu, w.num.liu, w.num.qi, w.ba, w.num.jiu, w.num.shi]
     skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez.»'}
+    prompt: {text: 'De corrido: cuenta del 1 al 10 en voz alta, lo más rápido que puedas.'}
     answer: {meaning: 'Uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez.'}
     comments: []
   - id: x.listen.wo-you-san-ge-pengyou
@@ -1835,15 +1835,6 @@ exercises:
     prompt: {text: '一千二百 y 一千零二: ¿cuál es 1200 y cuál 1002?'}
     answer: {meaning: '一千二百 es 1200 (al hablar, también 一千二). 一千零二 es 1002: 零 marca el hueco de las cifras que faltan, como en 一百零五 (105) y 七千零三 (7003).'}
     comments: []
-  - id: x.nuance.ui-iu
-    added: 2026-10-08
-    lang: es
-    type: nuance
-    targets: [w.sui, w.dui, w.num.liu, w.num.jiu]
-    skills: [comprehension, discrimination]
-    prompt: {text: '岁, 对, 六 y 九: ¿cuáles se escriben -ui y cuáles -iu, y cómo suena cada final?'}
-    answer: {meaning: 'ui abrevia uei: 岁 suì y 对 duì suenan casi «suei», «duei». iu abrevia iou: 六 liù y 九 jiǔ suenan casi «liou», «jiou». El tono va sobre la segunda letra.'}
-    comments: []
   - id: x.cloze.meiyou.water
     added: '2026-10-10'
     lang: es
@@ -1912,4 +1903,222 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: '¿要 o 有? «Me gustaría tener una familia.» (tenerla en tu vida)'}
     answer: {typed: you3, hanzi: 有, pinyin: yǒu, meaning: '想有: querer tenerlo como parte de tu vida. 想要 + cosa es conseguirla: 我想要这个.'}
+    comments: []
+  - id: x.choice.dian-decimal
+    added: '2026-10-11'
+    lang: es
+    type: nuance
+    targets: [w.dian.decimal]
+    skills: [reading, comprehension]
+    prompt: {text: 'Elige. ¿Qué es 三点五?', options: [las tres y cinco, 'tres coma cinco (3,5)', las cinco y tres]}
+    answer: {choice: b, meaning: '点 es la coma: 3,5. «Las tres y cinco» sería 三点五分.'}
+    comments: []
+  - id: x.cloze.dian.decimal
+    added: '2026-10-11'
+    lang: es
+    type: cloze
+    sentence: s.drill-decimal
+    gap: w.dian.decimal
+    targets: [w.dian.decimal]
+    context: [w.num.san, w.num.wu, w.ling, w.ba, w.num.shi, w.num.er]
+    skills: [production, pinyin]
+    prompt: {text: '¿天, 年 o 点? «3,5; 0,8; 12,3.»'}
+    answer: {typed: dian3, hanzi: 点, pinyin: diǎn, meaning: '点: la coma decimal.'}
+    comments: []
+  - id: x.drill.tens
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    sentence: s.drill-tens
+    targets: [s.drill-tens]
+    skills: [production, speaking, numbers]
+    prompt: {text: 'De corrido. Di rápido, en voz alta: 53 · 22 · 72 · 99 · 18 · 41'}
+    answer: {meaning: 'Decena, 十 y unidad: 五十三.'}
+    comments: []
+  - id: x.drill.hundreds
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    sentence: s.drill-hundreds
+    targets: [s.drill-hundreds]
+    skills: [production, speaking, numbers]
+    prompt: {text: 'De corrido. Di rápido, en voz alta: 105 · 320 · 999 · 200 · 608'}
+    answer: {meaning: 'Un hueco en medio se dice 零: 一百零五. 200 es 两百.'}
+    comments: []
+  - id: x.drill.big
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    sentence: s.drill-big
+    targets: [s.drill-big]
+    skills: [production, speaking, numbers]
+    prompt: {text: 'De corrido. Di rápido, en voz alta: 2026 · 10 005 · 3500 · 11 · mil millones'}
+    answer: {meaning: 十一 «once» y 十亿 «mil millones» solo se separan por el tono del final.}
+    comments: []
+  - id: x.drill.phone
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    sentence: s.drill-phone
+    targets: [s.drill-phone]
+    skills: [production, speaking, numbers]
+    prompt: {text: 'De corrido. Dicta este teléfono: 138 0215 6943'}
+    answer: {meaning: 'Cifra a cifra, y el 1 es yāo.'}
+    comments: []
+  - id: x.drill.decimal
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    sentence: s.drill-decimal
+    targets: [s.drill-decimal]
+    skills: [production, speaking, numbers]
+    prompt: {text: 'De corrido. Di en voz alta: 3,5 · 0,8 · 12,3'}
+    answer: {meaning: La coma es 点.}
+    comments: []
+  - id: x.drill.years
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    sentence: s.drill-years
+    targets: [s.drill-years]
+    skills: [production, speaking, numbers]
+    prompt: {text: 'De corrido. Di estos años: 1988 · 2026 · 2008'}
+    answer: {meaning: 'Los años, cifra a cifra, y 年 al final.'}
+    comments: []
+  - id: x.pair.shiyi-shiyi
+    added: '2026-10-11'
+    lang: es
+    type: listen
+    targets: [w.yi.hundredmillion]
+    pair: [{hanzi: 十亿, pinyin: shíyì, meaning: mil millones}, {hanzi: 十一, pinyin: shíyī, meaning: once}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es «once», la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: shíyī 十一.'}
+    comments: []
+  - id: x.dictation.yao.one
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.yao.one]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yao1, hanzi: 幺, pinyin: yāo, meaning: uno (al dar teléfonos y números de habitación)}
+    comments: []
+  - id: x.read.yao.one
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.yao.one]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 幺}
+    answer: {hanzi: 幺, pinyin: yāo, meaning: uno (al dar teléfonos y números de habitación)}
+    comments: []
+  - id: x.listen.drill-tens
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.drill-tens
+    targets: [s.drill-tens]
+    context: [w.num.wu, w.num.shi, w.num.san, w.num.er, w.num.qi, w.num.jiu, w.ba, w.num.si, w.num.yi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '53, 22, 72, 99, 18, 41.'}
+    comments: []
+  - id: x.listen.drill-hundreds
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.drill-hundreds
+    targets: [s.drill-hundreds]
+    context: [w.num.yi, w.bai.hundred, w.ling, w.num.wu, w.num.san, w.num.er, w.num.shi, w.num.jiu, w.liang, w.num.liu, w.ba]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '105, 320, 999, 200, 608.'}
+    comments: []
+  - id: x.listen.drill-big
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.drill-big
+    targets: [s.drill-big]
+    context: [w.liang, w.qian.thousand, w.ling, w.num.er, w.num.shi, w.num.liu, w.num.yi, w.wan.tenk, w.num.wu, w.num.san, w.bai.hundred,
+      w.yi.hundredmillion]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '2026, 10.005, 3500, 11, mil millones.'}
+    comments: []
+  - id: x.listen.drill-phone
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.drill-phone
+    targets: [s.drill-phone]
+    context: [w.yao.one, w.num.san, w.ba, w.ling, w.num.er, w.num.wu, w.num.liu, w.num.jiu, w.num.si]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 138 0215 6943 (un número de teléfono).}
+    comments: []
+  - id: x.listen.drill-decimal
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.drill-decimal
+    targets: [s.drill-decimal]
+    context: [w.num.san, w.dian.decimal, w.num.wu, w.ling, w.ba, w.num.shi, w.num.er]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '3,5; 0,8; 12,3.'}
+    comments: []
+  - id: x.listen.drill-years
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.drill-years
+    targets: [s.drill-years]
+    context: [w.num.yi, w.num.jiu, w.ba, w.nian, w.num.er, w.ling, w.num.liu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '1988, 2026, 2008.'}
+    comments: []
+  - id: x.listen.ni-mingtian-neng-lai-ma
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ni-mingtian-neng-lai-ma
+    targets: [s.ni-mingtian-neng-lai-ma]
+    context: [w.ni, w.mingtian, w.neng, w.lai, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Puedes venir mañana?'}
+    comments: []
+  - id: x.produce.ni-mingtian-neng-lai-ma
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.ni-mingtian-neng-lai-ma
+    targets: [s.ni-mingtian-neng-lai-ma]
+    context: [w.ni, w.mingtian, w.neng, w.lai, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Puedes venir mañana?»'}
+    answer: {meaning: '¿Puedes venir mañana?'}
+    comments: []
+  - id: x.contrast.ke
+    added: 2026-10-11
+    lang: es
+    type: contrast
+    group: g.ke-ke
+    targets: [w.ke]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 棵, pinyin: kē, meaning: clasificador de árboles y plantas}
+    comments: []
+  - id: x.contrast.yao.one
+    added: 2026-10-11
+    lang: es
+    type: contrast
+    group: g.yao-yao
+    targets: [w.yao.one]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 幺, pinyin: yāo, meaning: uno (al dar teléfonos y números de habitación)}
     comments: []

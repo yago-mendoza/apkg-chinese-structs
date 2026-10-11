@@ -437,7 +437,6 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: 'Completa en pinyin: «No soy estudiante, soy profesor.»'}
     answer: {typed: bu4, hanzi: 不, pinyin: bù, meaning: 'no'}
-    explanation: Se escribe bù; delante de cuarto tono suena bú.
     lang: es
     comments: []
   - id: x.cloze.ma
@@ -2433,7 +2432,7 @@ exercises:
     context: [w.wo, w.mingtian, w.qu]
     skills: [production, pinyin]
     prompt: {text: '¿不 o 没? «Mañana no voy.»'}
-    answer: {typed: bu2, hanzi: 不, pinyin: bú, meaning: '不: una decisión. Aquí bú, delante de cuarto tono.'}
+    answer: {typed: bu2, hanzi: 不, pinyin: bú, meaning: '不: una decisión.'}
     comments: []
   - id: x.cloze.bu.yao
     added: '2026-10-10'
@@ -2589,4 +2588,70 @@ exercises:
     skills: [listening, tones, discrimination]
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 王, pinyin: Wáng, meaning: Wang (apellido)}
+    comments: []
+  - id: x.cloze.hui.can.modal
+    added: '2026-10-11'
+    lang: es
+    type: cloze
+    sentence: s.wo-hui-shuo-zhongwen
+    gap: w.hui.can
+    targets: [w.hui.can]
+    context: [w.wo, w.shuo, w.zhongwen]
+    skills: [production, pinyin]
+    prompt: {text: '¿会, 能, 可以 o 得? «Sé hablar chino.» (lo aprendiste)'}
+    answer: {typed: hui4, hanzi: 会, pinyin: huì, meaning: '会: saber hacer algo porque lo aprendiste.'}
+    comments: []
+  - id: x.cloze.de.adj-n
+    added: '2026-10-11'
+    lang: es
+    type: cloze
+    sentence: s.ta-shi-yi-ge-hen-hao-de-laoshi
+    gap: w.de
+    targets: [w.de]
+    context: [w.ta.he, w.shi, w.num.yi, w.ge, w.hen, w.hao, w.laoshi]
+    skills: [production, pinyin]
+    prompt: {text: '¿的 o 得? «Es un profesor muy bueno.»'}
+    answer: {typed: de, hanzi: 的, pinyin: de, meaning: '的: delante de un sustantivo (很好的老师, 漂亮的猫).'}
+    comments: []
+  - id: x.pair.wen-wei
+    added: '2026-10-11'
+    lang: es
+    type: listen
+    targets: [w.wen]
+    pair: [{hanzi: 问, pinyin: wèn, meaning: preguntar}, {hanzi: 为, pinyin: wèi, meaning: 'para, por'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es wèn, «preguntar», la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 1.ª: wèn 问.'}
+    comments: []
+  - id: x.nuance.bu-adj-mei-v
+    added: '2026-10-11'
+    lang: es
+    type: nuance
+    targets: [w.bu, w.mei]
+    reveal: [s.wo-bu-gaoxing, s.wo-bu-chi-le]
+    skills: [comprehension, discrimination]
+    prompt: {text: '¿不 o 没 delante de un adjetivo? ¿Y delante de un verbo?'}
+    answer: {meaning: 'Adjetivo: siempre 不 (不高, 不贵). Verbo: 没 si no pasó (我没吃); 不 si no lo haces o no quieres (我不吃).'}
+    comments: []
+  - id: x.listen.ta-shi-yi-ge-hen-hao-de-laoshi
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ta-shi-yi-ge-hen-hao-de-laoshi
+    targets: [s.ta-shi-yi-ge-hen-hao-de-laoshi]
+    context: [w.ta.he, w.shi, w.num.yi, w.ge, w.hen, w.hao, w.de, w.laoshi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es un profesor muy bueno.}
+    comments: []
+  - id: x.produce.ta-shi-yi-ge-hen-hao-de-laoshi
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.ta-shi-yi-ge-hen-hao-de-laoshi
+    targets: [s.ta-shi-yi-ge-hen-hao-de-laoshi]
+    context: [w.ta.he, w.shi, w.num.yi, w.ge, w.hen, w.hao, w.de, w.laoshi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Es un profesor muy bueno.»'}
+    answer: {meaning: Es un profesor muy bueno.}
     comments: []

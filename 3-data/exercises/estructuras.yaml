@@ -473,3 +473,39 @@ exercises:
     prompt: {text: '¿Cuál se dice así en chino? «No tengo reloj.»'}
     answer: {meaning: '有 es el único verbo que nunca se niega con 不: siempre 没有.'}
     comments: []
+  - id: x.calque.v-de-hen-adj
+    added: 2026-10-11
+    lang: es
+    type: pattern
+    targets: [st.v-de-hen-adj]
+    context: [w.de.complement, w.hen]
+    sentence: s.ni-lai-de-hen-zao
+    reveal: [s.ni-shuo-de-hen-hao, s.ta-pao-de-hen-kuai, s.ni-xie-de-hen-hao]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Has llegado temprano.»'}
+    answer: {meaning: 'Para valorar cómo salió la acción, el verbo va primero y 得 lo une con cómo: 你来得很早.'}
+    comments: []
+  - id: x.calque.adj-de-n
+    added: 2026-10-11
+    lang: es
+    type: pattern
+    targets: [st.adj-de-n]
+    context: [w.de]
+    sentence: s.zhe-shi-yi-zhi-piaoliang-de-mao
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Es un gato precioso.»'}
+    answer: {meaning: '漂亮 tiene dos sílabas: delante de 猫 pide 的. 小猫 o 大猫 van sin él.'}
+    comments: []
+  - id: x.calque.time-qian
+    added: 2026-10-11
+    lang: es
+    type: pattern
+    targets: [st.time-qian]
+    context: [w.tian, w.qian.before]
+    sentence: s.wo-liang-tian-qian-qu-le-shangdian
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Hace dos días fui a la tienda.»'}
+    answer: {meaning: '«Hace dos días» va delante del verbo, no al final como en español: 我两天前去了商店.'}
+    comments: []

@@ -135,3 +135,14 @@ sentences:
       - {text: ？}
     translation: {es: '¿Quién ha venido?', en: 'Who''s here?'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.ta-shi-wo-de-tongxue
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 同学, ref: w.tongxue, pinyin: tóngxué}
+      - {text: 。}
+    translation: {es: Es mi compañero de clase., en: He's my classmate.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}

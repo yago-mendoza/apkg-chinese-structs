@@ -129,7 +129,8 @@ entries:
     pinyin: zǒu
     meaning: {es: irse; andar, en: to leave; to walk}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '走 es irse o andar, sin decir adónde: 我走了 «me voy». Para ir a un sitio, 去: 我去商店. Y no es 坐 zuò «sentarse».', original: 'no coufndir zou con zuo, irse con sentarse!!!!'}
   - id: w.le
     use: say
     role: function
@@ -140,6 +141,8 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: 'Al final de la frase marca un cambio o algo ya ocurrido: 我走了 «me voy», 下雨了 «se ha puesto a llover», 我错了 «me equivoqué».'}
+      - {kind: note, private: false, date: '2026-10-11', text: '了 al final: algo que pasa ahora y sigue así a partir de ahora.', original: baismcantee 'le' expresa uqe algo ocurre haora y para ap artir de ahora siempre}
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Al final de la frase marca un cambio: 我渴了 «me ha entrado sed», 我不吃了 «ya no como más», 快八点了 «ya casi son las ocho», 我会说中文了 «ya sé hablar chino». No es un tiempo pasado.'}
   - id: w.cuo
     use: say
     role: content
@@ -213,6 +216,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '怎么 + verbo pregunta la manera: 怎么说？ «¿cómo se dice?», 怎么吃？ «¿cómo se come?».'}
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '怎么 pregunta por la manera o por la situación; 什么, por una cosa. Por eso «¿qué hago?» es 怎么办 y «¿qué te pasa?», 怎么了: no preguntas por un objeto.'}
   - id: w.neng
     use: say
     role: content
@@ -390,7 +394,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Delante de un adjetivo: 你为什么这么高？ «¿por qué eres tan alto?».'}
   - id: w.chuqu
-    use: hear
+    use: say
     role: content
     kind: word
     hanzi: 出去
@@ -731,4 +735,45 @@ entries:
       - {ref: w.zuo.do, cue: 亻 a la izquierda}
       - {ref: w.zuo.left, cue: baja y sube; 工 abajo}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []
+  - id: w.chulai
+    use: say
+    role: content
+    kind: word
+    hanzi: 出来
+    pinyin: chūlai
+    meaning: {es: salir (hacia aquí), en: to come out}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '出 «salir» + 来 «hacia aquí»: sales hacia donde está quien habla. 快出来！ «¡sal ya!», si te esperan fuera. 出去 es salir alejándose.'}
+    accept_pinyin_mismatch: '来 va átono detrás de un verbo: chūlai'
+  - id: w.zenmeban
+    use: say
+    role: content
+    kind: word
+    hanzi: 怎么办
+    pinyin: zěnmebàn
+    meaning: {es: '¿qué hago?, ¿qué hacemos?', en: 'what to do?'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Palabra a palabra: 怎么 «cómo» + 办 «resolver, hacer»: «¿cómo lo arreglo?». 我忘了，怎么办？ «se me ha olvidado, ¿qué hago?».'}
+  - id: g.zou-zuo
+    kind: group
+    basis: soundalike
+    title: 走 zǒu y 坐 zuò
+    explanation: 'Se parecen al oído y no tienen nada que ver: uno se va y el otro se queda sentado.'
+    members:
+      - {ref: w.zou, cue: 'baja y sube; abajo, un pie que echa a andar'}
+      - {ref: w.zuo.sit, cue: cae; dos personas sobre la tierra}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []
+  - id: g.chu-direction
+    kind: group
+    basis: set
+    title: 出来 y 出去
+    explanation: 出 es salir; 来 y 去 dicen hacia dónde.
+    members:
+      - {ref: w.chulai, cue: 'hacia quien habla, que espera fuera'}
+      - {ref: w.chuqu, cue: alejándose de quien habla}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments: []

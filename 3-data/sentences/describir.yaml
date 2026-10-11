@@ -316,3 +316,167 @@ sentences:
       - {text: ？}
     translation: {es: '¿De verdad lo sabes?', en: 'Do you really know?'}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.ni-lai-de-hen-zao
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 来, ref: w.lai, pinyin: lái}
+      - {text: 得, ref: w.de.complement, pinyin: de}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 早, ref: w.zao.early, pinyin: zǎo}
+      - {text: 。}
+    translation: {es: Has llegado temprano., en: You came early.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.ni-lai-de-zhen-zao
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 来, ref: w.lai, pinyin: lái}
+      - {text: 得, ref: w.de.complement, pinyin: de}
+      - {text: 真, ref: w.zhen, pinyin: zhēn}
+      - {text: 早, ref: w.zao.early, pinyin: zǎo}
+      - {text: ！}
+    translation: {es: ¡Qué pronto has llegado!, en: You're really early!}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.ni-shuo-de-hen-hao
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 说, ref: w.shuo, pinyin: shuō}
+      - {text: 得, ref: w.de.complement, pinyin: de}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 好, ref: w.hao, pinyin: hǎo}
+      - {text: 。}
+    translation: {es: Hablas muy bien., en: You speak very well.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.ta-pao-de-hen-kuai
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 跑, ref: w.pao, pinyin: pǎo}
+      - {text: 得, ref: w.de.complement, pinyin: de}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 快, ref: w.kuai.fast, pinyin: kuài}
+      - {text: 。}
+    translation: {es: Corre muy rápido., en: He runs very fast.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.ni-xie-de-hen-hao
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 写, ref: w.xie, pinyin: xiě}
+      - {text: 得, ref: w.de.complement, pinyin: de}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 好, ref: w.hao, pinyin: hǎo}
+      - {text: 。}
+    translation: {es: Escribes muy bien., en: You write very well.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.zhe-shi-yi-zhi-piaoliang-de-mao
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: zhè}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 一, ref: w.num.yi, pinyin: yì, sandhi: true}
+      - {text: 只, ref: w.zhi.cl, pinyin: zhī}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: piàoliang}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 猫, ref: w.mao, pinyin: māo}
+      - {text: 。}
+    translation: {es: Es un gato precioso., en: It's a beautiful cat.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.ni-hao-piaoliang
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 好, ref: w.hao, pinyin: hǎo}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: piàoliang}
+      - {text: ！}
+    translation: {es: ¡Qué guapa estás!, en: You look so pretty!}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.ni-zhen-piaoliang
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 真, ref: w.zhen, pinyin: zhēn}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: piàoliang}
+      - {text: ！}
+    translation: {es: ¡Qué guapa eres!, en: You're really pretty!}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-bu-gaoxing
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 不, ref: w.bu, pinyin: bù}
+      - {text: 高兴, ref: w.gaoxing, pinyin: gāoxìng}
+      - {text: 。}
+    translation: {es: No estoy contento., en: I'm not happy.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-tai-lei-le
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 太, ref: w.tai, pinyin: tài}
+      - {text: 累, ref: w.lei, pinyin: lèi}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ！}
+    translation: {es: ¡Estoy agotado!, en: I'm exhausted!}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.tai-wan-le
+    use: hear
+    segments:
+      - {text: 太, ref: w.tai, pinyin: tài}
+      - {text: 晚, ref: w.wan, pinyin: wǎn}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ！}
+    translation: {es: ¡Qué tarde es!, en: It's so late!}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.tai-nan-le
+    use: hear
+    segments:
+      - {text: 太, ref: w.tai, pinyin: tài}
+      - {text: 难, ref: w.nan, pinyin: nán}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ！}
+    translation: {es: ¡Es dificilísimo!, en: It's too hard!}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.zhe-zhi-mao-tai-keai-le
+    use: hear
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: zhè}
+      - {text: 只, ref: w.zhi.cl, pinyin: zhī}
+      - {text: 猫, ref: w.mao, pinyin: māo}
+      - {text: 太, ref: w.tai, pinyin: tài}
+      - {text: 可爱, ref: w.keai, pinyin: kě'ài}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ！}
+    translation: {es: ¡Qué gato tan mono!, en: What a cute cat!}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-tai-gaoxing-le
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 太, ref: w.tai, pinyin: tài}
+      - {text: 高兴, ref: w.gaoxing, pinyin: gāoxìng}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ！}
+    translation: {es: ¡Estoy contentísimo!, en: I'm so happy!}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-zhen-gaoxing
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 真, ref: w.zhen, pinyin: zhēn}
+      - {text: 高兴, ref: w.gaoxing, pinyin: gāoxìng}
+      - {text: ！}
+    translation: {es: ¡Qué contento estoy!, en: I'm really happy!}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-zhende-hen-xihuan
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 真的, ref: w.zhende, pinyin: zhēnde}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 。}
+    translation: {es: De verdad que me gusta mucho., en: I really like it a lot.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}

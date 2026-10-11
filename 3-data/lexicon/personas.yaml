@@ -229,7 +229,7 @@ entries:
     meaning: {es: 'médico, médica', en: 'doctor'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-07', text: '生 lleva su tono en 医生 yīshēng; en 先生 xiānsheng y, a menudo, en 学生 xuésheng se dice átono. No depende del carácter, sino de cada palabra.'}
+      - {kind: mnemonic, private: false, date: '2026-10-11', text: 'En 医, la flecha 矢 dentro de una caja es una bala extraída, en una bandeja; 生 es la vida: el que te la salva.', original: El componente de flecha en el cuadrado (yī） de yisheng doctor es como una flecha en una bandeja  ñtipo bala extraida dabes Y lo de vida pues por supuesto}
   - id: w.fuwuyuan
     use: say
     role: content
@@ -290,7 +290,7 @@ entries:
     meaning: {es: 'juntos', en: 'together'}
     source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Va delante del verbo: 一起吃饭 «comer juntos». Con 一 delante de tercer tono, se lee yìqǐ.'}
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Va delante del verbo: 一起吃饭 «comer juntos».'}
   - id: w.gei.to
     use: say
     role: function
@@ -303,3 +303,53 @@ entries:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: '给 + persona va delante del verbo: 给我打电话 «llámame». Suelto, el verbo 给 es «dar».'}
+  - id: w.nan.male
+    use: hear
+    role: content
+    kind: word
+    hanzi: 男
+    pinyin: nán
+    meaning: {es: 'hombre, masculino (en carteles: 男)', en: 'man, male'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'En las puertas de los baños: 男 «hombres», 女 «mujeres». 男朋友 «novio».'}
+  - id: w.nv.female
+    use: hear
+    role: content
+    kind: word
+    hanzi: 女
+    pinyin: nǚ
+    meaning: {es: 'mujer, femenino (en carteles: 女)', en: 'woman, female'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'En las puertas de los baños: 女 «mujeres», 男 «hombres». 女朋友 «novia»; 女儿 «hija».'}
+  - id: w.tongxue
+    use: say
+    role: content
+    kind: word
+    hanzi: 同学
+    pinyin: tóngxué
+    meaning: {es: compañero de clase, en: classmate}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Palabra a palabra: 同 «mismo» + 学 «estudiar»: el que estudia contigo. Con 同 «mismo» también se forman 同事 tóngshì «compañero de trabajo» [HSK 2] y 同时 «al mismo tiempo» [HSK 2].'}
+  - id: g.nan-nv
+    kind: group
+    basis: set
+    title: 男 y 女
+    explanation: En las puertas de los baños y en los formularios.
+    members:
+      - {ref: w.nan.male, cue: 'arriba un campo, abajo la fuerza'}
+      - {ref: w.nv.female, cue: una figura con las piernas cruzadas}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []
+  - id: g.nan-nan
+    kind: group
+    basis: soundalike
+    title: 男 nán y 难 nán
+    explanation: Suenan igual; se separan por la forma y por el sentido.
+    members:
+      - {ref: w.nan.male, cue: un campo 田 sobre la fuerza 力}
+      - {ref: w.nan, cue: 'a la derecha, un pájaro 隹'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []

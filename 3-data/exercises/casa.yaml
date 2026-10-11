@@ -661,3 +661,21 @@ exercises:
     question: {es: '¿Dónde está quien habla, qué busca y qué pregunta?'}
     answer: {meaning: 'Está en su habitación, busca sus auriculares y pregunta si hay huevos en la nevera.'}
     comments: []
+  - id: x.dictation.guan
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.guan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: guan1, hanzi: 关, pinyin: guān, meaning: cerrar; apagar}
+    comments: []
+  - id: x.read.guan
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.guan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 关}
+    answer: {hanzi: 关, pinyin: guān, meaning: cerrar; apagar}
+    comments: []

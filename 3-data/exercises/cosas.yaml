@@ -2748,3 +2748,502 @@ exercises:
     prompt: {text: '¿Cuál es zuò, «hacer»?'}
     answer: {hanzi: 做, pinyin: zuò, meaning: hacer}
     comments: []
+  - id: x.compose.tienda-reloj
+    added: '2026-10-11'
+    lang: es
+    type: compose
+    targets: [s.wo-neng-kan-yixia-ma, s.wo-neng-shi-yixia-ma, s.qing-gei-wo-kan-yixia]
+    words: [w.neng, w.kan, w.shi.try, w.yixia, w.qing]
+    skills: [production, speaking]
+    prompt: {text: Construye. En una tienda ves un reloj en el escaparate y quieres verlo de cerca y probártelo. Pídelo con estas palabras o con otras.}
+    answer: {meaning: '能…吗？ pregunta si se puede; 一下, que será un momento.'}
+    comments: []
+  - id: x.choice.zhe-shi-shu
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    targets: [s.zhe-shi-shu]
+    skills: [reading, grammar]
+    prompt: {text: Elige. «Esto es un libro.», options: [这是书。, 这本是书。, 这本书。]}
+    answer: {choice: a, hanzi: 这是书。, pinyin: zhè shì shū, meaning: 'Aquí 这 es «esto», solo: sin clasificador. 这本书 es «este libro».'}
+    comments: []
+  - id: x.cloze.neng.modal
+    added: '2026-10-11'
+    lang: es
+    type: cloze
+    sentence: s.ni-mingtian-neng-lai-ma
+    gap: w.neng
+    targets: [w.neng]
+    context: [w.ni, w.mingtian, w.lai, w.ma]
+    skills: [production, pinyin]
+    prompt: {text: '¿会, 能, 可以 o 得? «¿Puedes venir mañana?» (si te viene bien)'}
+    answer: {typed: neng2, hanzi: 能, pinyin: néng, meaning: '能: ser capaz, o que la situación lo permite.'}
+    comments: []
+  - id: x.cloze.dei.modal
+    added: '2026-10-11'
+    lang: es
+    type: cloze
+    sentence: s.wo-dei-mai-xie
+    gap: w.dei
+    targets: [w.dei]
+    context: [w.wo, w.mai, w.xie.shoes]
+    skills: [production, pinyin]
+    prompt: {text: '¿会, 能, 可以 o 得? «Tengo que comprar zapatos.»'}
+    answer: {typed: dei3, hanzi: 得, pinyin: děi, meaning: '得 děi: tener que.'}
+    comments: []
+  - id: x.cloze.chulai
+    added: '2026-10-11'
+    lang: es
+    type: cloze
+    sentence: s.kuai-chulai
+    gap: w.chulai
+    targets: [w.chulai]
+    context: [w.kuai.fast]
+    skills: [production, pinyin]
+    prompt: {text: '¿出来 o 出去? «¡Sal ya!» (te espero fuera)'}
+    answer: {typed: chu1 lai, hanzi: 出来, pinyin: chūlai, meaning: '出来: sales hacia donde está quien habla.'}
+    comments: []
+  - id: x.cloze.chuqu
+    added: '2026-10-11'
+    lang: es
+    type: cloze
+    sentence: s.women-chuqu-ba
+    gap: w.chuqu
+    targets: [w.chuqu]
+    context: [w.women, w.ba.particle]
+    skills: [production, pinyin]
+    prompt: {text: '¿出来 o 出去? «Salgamos.» (estáis dentro)'}
+    answer: {typed: chu1 qu, hanzi: 出去, pinyin: chūqu, meaning: '出去: salir alejándose de donde estáis.'}
+    comments: []
+  - id: x.situation.wo-zhende-zhidao
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    sentence: s.wo-zhende-zhidao
+    targets: [s.wo-zhende-zhidao]
+    skills: [production, speaking]
+    prompt: {text: Situación. Tu amigo no se cree que sepas dónde está el restaurante. Insístele.}
+    answer: {meaning: ¡De verdad que lo sé!}
+    comments: []
+  - id: x.situation.ni-lai-ba
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    sentence: s.ni-lai-ba
+    targets: [s.ni-lai-ba]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Un amigo duda si venir a cenar con vosotros. Anímale, sin presionar.'}
+    answer: {meaning: '¡Ven, anda!'}
+    comments: []
+  - id: x.situation.ni-zuo-ba
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    sentence: s.ni-zuo-ba
+    targets: [s.ni-zuo-ba]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Un invitado entra en tu casa y se queda de pie, sin saber dónde ponerse. Invítale a sentarse.'}
+    answer: {meaning: 'Siéntate, anda.'}
+    comments: []
+  - id: x.situation.wo-wang-le-zenmeban
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    sentence: s.wo-wang-le-zenmeban
+    targets: [s.wo-wang-le-zenmeban]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Llegas al aeropuerto y te das cuenta de que te has dejado el pasaporte en casa. Díselo a tu amigo, agobiado.'}
+    answer: {meaning: 'Se me ha olvidado, ¿qué hago?'}
+    comments: []
+  - id: x.nuance.le-change
+    added: '2026-10-11'
+    lang: es
+    type: nuance
+    targets: [w.le]
+    reveal: [s.wo-ke-le, s.kuai-ba-dian-le]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我渴了, 我不吃了 y 快八点了: ¿qué tienen en común?'}
+    answer: {meaning: 'El 了 final marca un cambio: ahora tengo sed, ya no como más, ya casi son las ocho.'}
+    comments: []
+  - id: x.contrast.zou
+    added: 2026-10-11
+    lang: es
+    type: contrast
+    group: g.zou-zuo
+    targets: [w.zou]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 走, pinyin: zǒu, meaning: irse; andar}
+    comments: []
+  - id: x.dictation.chulai
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.chulai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chu1 lai5, hanzi: 出来, pinyin: chūlai, meaning: salir (hacia aquí)}
+    comments: []
+  - id: x.read.chulai
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.chulai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 出来}
+    answer: {hanzi: 出来, pinyin: chūlai, meaning: salir (hacia aquí)}
+    comments: []
+  - id: x.tones.chulai
+    added: 2026-10-11
+    lang: es
+    type: tones
+    targets: [w.chulai]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 出来, pinyin: chu lai}
+    answer: {typed: '15', hanzi: 出来, pinyin: chūlai, meaning: salir (hacia aquí)}
+    comments: []
+  - id: x.dictation.zenmeban
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.zenmeban]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zen3 me5 ban4, hanzi: 怎么办, pinyin: zěnmebàn, meaning: '¿qué hago?, ¿qué hacemos?'}
+    comments: []
+  - id: x.produce.zenmeban
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.zenmeban]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¿qué hago?, ¿qué hacemos?»? Escribe el pinyin.'}
+    answer: {typed: zen3 me5 ban4, hanzi: 怎么办, pinyin: zěnmebàn, meaning: '¿qué hago?, ¿qué hacemos?'}
+    comments: []
+  - id: x.read.zenmeban
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.zenmeban]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 怎么办}
+    answer: {hanzi: 怎么办, pinyin: zěnmebàn, meaning: '¿qué hago?, ¿qué hacemos?'}
+    comments: []
+  - id: x.tones.zenmeban
+    added: 2026-10-11
+    lang: es
+    type: tones
+    targets: [w.zenmeban]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 怎么办, pinyin: zen me ban}
+    answer: {typed: '354', hanzi: 怎么办, pinyin: zěnmebàn, meaning: '¿qué hago?, ¿qué hacemos?'}
+    comments: []
+  - id: x.listen.wo-bu-qu-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-bu-qu-le
+    targets: [s.wo-bu-qu-le]
+    context: [w.wo, w.bu, w.qu, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Al final no voy.}
+    comments: []
+  - id: x.listen.wo-hui-shuo-zhongwen-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-hui-shuo-zhongwen-le
+    targets: [s.wo-hui-shuo-zhongwen-le]
+    context: [w.wo, w.hui.can, w.shuo, w.zhongwen, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Ya sé hablar chino!}
+    comments: []
+  - id: x.produce.wo-hui-shuo-zhongwen-le
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-hui-shuo-zhongwen-le
+    targets: [s.wo-hui-shuo-zhongwen-le]
+    context: [w.wo, w.hui.can, w.shuo, w.zhongwen, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Ya sé hablar chino!»'}
+    answer: {meaning: ¡Ya sé hablar chino!}
+    comments: []
+  - id: x.listen.tian-hei-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.tian-hei-le
+    targets: [s.tian-hei-le]
+    context: [w.tian, w.hei, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ya es de noche.}
+    comments: []
+  - id: x.listen.wo-yao-zou-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-yao-zou-le
+    targets: [s.wo-yao-zou-le]
+    context: [w.wo, w.yao, w.zou, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me tengo que ir.}
+    comments: []
+  - id: x.produce.wo-yao-zou-le
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-yao-zou-le
+    targets: [s.wo-yao-zou-le]
+    context: [w.wo, w.yao, w.zou, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me tengo que ir.»'}
+    answer: {meaning: Me tengo que ir.}
+    comments: []
+  - id: x.listen.kuai-chulai
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.kuai-chulai
+    targets: [s.kuai-chulai]
+    context: [w.kuai.fast, w.chulai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Sal ya!}
+    comments: []
+  - id: x.produce.kuai-chulai
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.kuai-chulai
+    targets: [s.kuai-chulai]
+    context: [w.kuai.fast, w.chulai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Sal ya!»'}
+    answer: {meaning: ¡Sal ya!}
+    comments: []
+  - id: x.listen.women-chuqu-ba
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.women-chuqu-ba
+    targets: [s.women-chuqu-ba]
+    context: [w.women, w.chuqu, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Salgamos.}
+    comments: []
+  - id: x.produce.women-chuqu-ba
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.women-chuqu-ba
+    targets: [s.women-chuqu-ba]
+    context: [w.women, w.chuqu, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Salgamos.»'}
+    answer: {meaning: Salgamos.}
+    comments: []
+  - id: x.listen.ni-zuo-ba
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ni-zuo-ba
+    targets: [s.ni-zuo-ba]
+    context: [w.ni, w.zuo.sit, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Siéntate, anda.'}
+    comments: []
+  - id: x.produce.ni-zuo-ba
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.ni-zuo-ba
+    targets: [s.ni-zuo-ba]
+    context: [w.ni, w.zuo.sit, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Siéntate, anda.»'}
+    answer: {meaning: 'Siéntate, anda.'}
+    comments: []
+  - id: x.listen.ni-lai-ba
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ni-lai-ba
+    targets: [s.ni-lai-ba]
+    context: [w.ni, w.lai, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Ven, anda!'}
+    comments: []
+  - id: x.produce.ni-lai-ba
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.ni-lai-ba
+    targets: [s.ni-lai-ba]
+    context: [w.ni, w.lai, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Ven, anda!»'}
+    answer: {meaning: '¡Ven, anda!'}
+    comments: []
+  - id: x.listen.ni-zou-ba
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ni-zou-ba
+    targets: [s.ni-zou-ba]
+    context: [w.ni, w.zou, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Vete, ya puedes irte.'}
+    comments: []
+  - id: x.listen.ni-lei-le-ba
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ni-lei-le-ba
+    targets: [s.ni-lei-le-ba]
+    context: [w.ni, w.lei, w.le, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Estarás cansado, ¿no?'}
+    comments: []
+  - id: x.listen.wo-wang-le-zenmeban
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-wang-le-zenmeban
+    targets: [s.wo-wang-le-zenmeban]
+    context: [w.wo, w.wang.forget, w.le, w.zenmeban]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Se me ha olvidado, ¿qué hago?'}
+    comments: []
+  - id: x.produce.wo-wang-le-zenmeban
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-wang-le-zenmeban
+    targets: [s.wo-wang-le-zenmeban]
+    context: [w.wo, w.wang.forget, w.le, w.zenmeban]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Se me ha olvidado, ¿qué hago?»'}
+    answer: {meaning: 'Se me ha olvidado, ¿qué hago?'}
+    comments: []
+  - id: x.listen.zhe-shi-shu
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.zhe-shi-shu
+    targets: [s.zhe-shi-shu]
+    context: [w.zhe, w.shi, w.shu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Esto es un libro.}
+    comments: []
+  - id: x.listen.zhe-ben-shu-hen-hao
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.zhe-ben-shu-hen-hao
+    targets: [s.zhe-ben-shu-hen-hao]
+    context: [w.zhe, w.ben.book, w.shu, w.hen, w.hao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Este libro es muy bueno.}
+    comments: []
+  - id: x.listen.qing-guan-men
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.qing-guan-men
+    targets: [s.qing-guan-men]
+    context: [w.qing, w.guan, w.men]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Cierra la puerta, por favor.'}
+    comments: []
+  - id: x.listen.wo-kan-yixia
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-kan-yixia
+    targets: [s.wo-kan-yixia]
+    context: [w.wo, w.kan, w.yixia]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Déjame ver.}
+    comments: []
+  - id: x.listen.women-deng-yixia-ba
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.women-deng-yixia-ba
+    targets: [s.women-deng-yixia-ba]
+    context: [w.women, w.deng, w.yixia, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Esperemos un momento.}
+    comments: []
+  - id: x.listen.qing-gei-wo-kan-yixia
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.qing-gei-wo-kan-yixia
+    targets: [s.qing-gei-wo-kan-yixia]
+    context: [w.qing, w.gei.to, w.wo, w.kan, w.yixia]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Déjemelo ver, por favor.'}
+    comments: []
+  - id: x.listen.dlg-e-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.dlg-e-le
+    targets: [s.dlg-e-le]
+    context: [w.ni, e.zenmele, w.wo, w.e.hungry, w.le, w.ye, w.women, w.qu, w.chifan, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Qué te pasa? —Tengo hambre. —Yo también, ¡vamos a comer!'}
+    comments: []
+  - id: x.contrast.nan
+    added: 2026-10-11
+    lang: es
+    type: contrast
+    group: g.nan-nan
+    targets: [w.nan]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 难, pinyin: nán, meaning: difícil}
+    comments: []
+  - id: x.listen.wo-neng-kan-yixia-ma
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-neng-kan-yixia-ma
+    targets: [s.wo-neng-kan-yixia-ma]
+    context: [w.wo, w.neng, w.kan, w.yixia, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Puedo echarle un vistazo?'}
+    comments: []
+  - id: x.listen.wo-neng-shi-yixia-ma
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-neng-shi-yixia-ma
+    targets: [s.wo-neng-shi-yixia-ma]
+    context: [w.wo, w.neng, w.shi.try, w.yixia, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Puedo probármelo?'}
+    comments: []

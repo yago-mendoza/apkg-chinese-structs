@@ -15,7 +15,7 @@ entries:
     accept_pinyin_mismatch: segunda sílaba en tono neutro en el habla estándar
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 谢 «agradecer», repetido: la repetición lo hace más amable.'}
-      - {kind: linguistic, private: false, date: 2026-09-25, text: 'La segunda 谢 se dice en tono neutro, corta y sin contorno propio.'}
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'A 谢谢 se responde 不客气 o 不用谢. 没关系 es para 对不起, y 没问题, para un favor que te piden.'}
   - id: w.qing
     use: say
     role: content
@@ -181,6 +181,8 @@ entries:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'La respuesta a 对不起 o a 不好意思: «no pasa nada».'}
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Palabra a palabra: 没 «no hay» + 关系 [HSK 3] «relación»: no tiene que ver, no importa. Para quitar importancia a algo que ha pasado; para aceptar algo que te piden, 没问题.'}
       - {kind: mnemonic, private: false, date: '2026-10-09', text: 'Truco: «¡eso no tiene relación con nada importante!».', original: 'SUSTITUYE en el Anki la trad explicación mejor por: 🧠 Truco: «¡Eso no tiene ninguna relación con nada importante!».'}
+      - {kind: character, private: false, date: '2026-10-11', text: '关 «cerrar» y 系 «atar»: lo que está cerrado y atado a otra cosa tiene 关系, «relación». 关 sale solo en 关门 «cerrar la puerta».'}
+    accept_cards: 'YAGO las confunde y pidió reforzarlas (review 009): elegir entre las cuatro respuestas hechas y un matiz corto.'
   - id: e.bukeqi
     use: say
     role: content
@@ -193,6 +195,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'La respuesta a 谢谢. Literalmente, «no hagas cumplidos».'}
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Palabra a palabra: 客气 [HSK 5] es tener cumplidos, como un invitado 客; 不客气, «no hace falta cumplido». Su 气 qi no es el 起 qǐ de 对不起: son caracteres distintos.'}
+    accept_cards: 'YAGO las confunde y pidió reforzarlas (review 009): elegir entre las cuatro respuestas hechas y un matiz corto.'
   - id: w.bang
     use: say
     role: content
@@ -308,6 +311,7 @@ entries:
     source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: '我忘了 «se me ha olvidado»: 了 dice que ya ha pasado.'}
+      - {kind: mnemonic, private: false, date: '2026-10-11', text: 'Arriba, una papelera; abajo, el corazón 心, que en chino también es la mente: tirar algo de la cabeza a la papelera. En 忙 «ocupado» la papelera está al lado del corazón 忄.', original: Curioso que wàng olvidar es el equivalente (parece) un cubo de basura encima de unn corazon como tirar corazon (en chino tambien representa mente) a la basura}
   - id: w.xiaoxin
     use: say
     role: content
@@ -344,6 +348,7 @@ entries:
     source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Palabra a palabra: 没 «no hay» + 问题 «problema». Para aceptar algo que te piden; para quitar importancia a algo que ha pasado, 没关系.'}
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'No es la respuesta a 谢谢 (eso es 不客气): se dice cuando te piden algo y aceptas. como a «¿me ayudas?».'}
   - id: w.mingbai
     use: say
     role: content
@@ -355,6 +360,7 @@ entries:
     source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: '明 «claro» + 白 «blanco»: claro como el día. 我明白了 «ya lo entiendo».'}
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Es verbo y adjetivo: 我明白 «entiendo»; 很明白 «muy claro». 我明白了 «ahora lo entiendo»: el 了 dice que antes no lo entendías. 懂 solo es verbo.'}
   - id: w.yixia
     use: say
     role: function
@@ -369,8 +375,9 @@ entries:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Detrás del verbo: 等一下 «espera un momento», 看一下 «echa un vistazo». Sirve para tres cosas: hacer algo un momento, probar a ver qué pasa y suavizar una petición. A menudo no se traduce.'}
-      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Si hay algo detrás, 一下 va antes: 看一下你的手机 «déjame ver tu móvil». Con 一下 se lee yíxià, porque 下 es cuarto tono.'}
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Si hay algo detrás, 一下 va antes: 看一下你的手机 «déjame ver tu móvil».'}
       - {kind: note, private: false, date: '2026-10-08', text: 'No es lo mismo que 一遍: 说一遍 es decirlo entero; 说一下, comentarlo un momento.'}
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'No dice que la acción sea superficial: la presenta como breve o ligera, y así suaviza lo que pides. 我想问一下 «quería preguntar una cosa», sin 你; 帮我拿一下 «sujétamelo un momento».'}
   - id: w.rang
     use: say
     role: content
@@ -416,12 +423,13 @@ entries:
   - id: g.can
     kind: group
     basis: set
-    title: '会, 能 y 可以: tres «poder»'
-    explanation: 'El español dice «poder» para los tres; el chino separa saber, ser capaz y tener permiso.'
+    title: '会, 能, 可以 y 得: poder y tener que'
+    explanation: 'El español dice «poder» para los tres primeros; el chino separa saber, ser capaz y tener permiso. 得 es «tener que».'
     members:
       - {ref: w.hui.can, cue: 'porque lo aprendiste: 我会说中文'}
       - {ref: w.neng, cue: 'por capacidad, o porque la situación lo permite: 你能说中文吗？'}
       - {ref: w.keyi, cue: 'tener permiso, estar bien: 可以坐这里吗？'}
+      - {ref: w.dei, cue: 'obligación: 我得走了'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments: []
   - id: e.zouba
@@ -462,3 +470,27 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-09', text: 'Más cortés que 等一下: lo dice el que atiende. 请稍等 «espere un momento, por favor».'}
       - {kind: linguistic, private: false, date: '2026-10-09', text: 'Palabra a palabra: 稍 «un poco» + 等 «esperar»: «espere un poco».'}
+  - id: e.buyongxie
+    use: hear
+    role: content
+    kind: expression
+    hanzi: 不用谢
+    pinyin: bù yòng xiè
+    meaning: {es: de nada (no hace falta dar las gracias), en: no need to thank me}
+    level: 1
+    level_reason: 不用 es HSK 1 y 谢 está en 谢谢; respuesta corriente a 谢谢.
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Palabra a palabra: 不用 «no hace falta» + 谢 «agradecer». Responde a 谢谢, como 不客气.'}
+  - id: g.replies
+    kind: group
+    basis: set
+    title: 'Respuestas hechas: a qué responde cada una'
+    explanation: 'Cada una contesta a una cosa distinta: a unas gracias, a una disculpa o a un favor que te piden.'
+    members:
+      - {ref: e.bukeqi, cue: responde a 谢谢}
+      - {ref: e.meiguanxi, cue: responde a 对不起}
+      - {ref: e.meiwenti, cue: 'responde a «¿me ayudas?»'}
+      - {ref: e.buyongxie, cue: 'responde a 谢谢, igual que 不客气'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []

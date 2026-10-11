@@ -269,3 +269,37 @@ sentences:
       - {text: ？}
     translation: {es: 'Disculpe, ¿qué ayuda necesita?', en: 'Excuse me, what help do you need?'}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.duibuqi-wo-lai-wan-le
+    use: say
+    segments:
+      - {text: 对不起, ref: w.duibuqi, pinyin: duìbuqǐ}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 来, ref: w.lai, pinyin: lái}
+      - {text: 晚, ref: w.wan, pinyin: wǎn}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ！}
+    translation: {es: '¡Perdón, llego tarde!', en: Sorry I'm late!}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.nimen-chifan-le-ma
+    use: hear
+    segments:
+      - {text: 你们, ref: w.nimen, pinyin: nǐmen}
+      - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Ya habéis comido?', en: 'Have you eaten yet?'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.duibuqi-nimen-chifan-le-ma
+    use: hear
+    segments:
+      - {text: 对不起, ref: w.duibuqi, pinyin: duìbuqǐ}
+      - {text: ，}
+      - {text: 你们, ref: w.nimen, pinyin: nǐmen}
+      - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: 'Perdón, ¿ya habéis empezado a comer?', en: 'Sorry, have you started eating?'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}

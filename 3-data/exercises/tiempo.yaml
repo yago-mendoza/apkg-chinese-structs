@@ -1275,3 +1275,749 @@ exercises:
     prompt: {text: '¿Cuál es jīn, «ahora, actual (en 今天, 今年)»?'}
     answer: {hanzi: 今, pinyin: jīn, meaning: 'ahora, actual (en 今天, 今年)'}
     comments: []
+  - id: x.choice.sunday
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    targets: [w.xingqitian]
+    skills: [reading, production]
+    prompt: {text: 'Elige. ¿Cómo se dice «domingo»?', options: [星期七, 星期天, 天星期, 七星期]}
+    answer: {choice: b, hanzi: 星期天, pinyin: xīngqītiān, meaning: 'El domingo no es «el séptimo»: 星期天, o 星期日 por escrito.'}
+    comments: []
+  - id: x.situation.mingtianjian-choice
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    targets: [s.mingtian-jian]
+    skills: [production, speaking]
+    prompt: {text: Elige. Te despides de un compañero al que verás mañana., options: [晚上好！, 早上好！, 你好！, 欢迎！, 明天见！]}
+    answer: {choice: e, hanzi: 明天见！, pinyin: míngtiān jiàn, meaning: '«Hasta mañana»: 明天 «mañana» + 见 «ver».'}
+    comments: []
+  - id: x.cloze.duojiu
+    added: '2026-10-11'
+    lang: es
+    type: cloze
+    sentence: s.ni-deng-le-duojiu
+    gap: w.duojiu
+    targets: [w.duojiu]
+    context: [w.ni, w.deng, w.le]
+    skills: [production, pinyin]
+    prompt: {text: '¿多久 o 什么时候? «¿Cuánto tiempo has esperado?»'}
+    answer: {typed: duo1 jiu3, hanzi: 多久, pinyin: duōjiǔ, meaning: '多久: cuánto dura. 什么时候 es en qué momento.'}
+    comments: []
+  - id: x.cloze.qian.before
+    added: '2026-10-11'
+    lang: es
+    type: cloze
+    sentence: s.wo-liang-tian-qian-qu-le-shangdian
+    gap: w.qian.before
+    targets: [w.qian.before]
+    context: [w.wo, w.liang, w.tian, w.qu, w.le, w.shangdian]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Hace dos días fui a la tienda.»'}
+    answer: {typed: qian2, hanzi: 前, pinyin: qián, meaning: '前 detrás de un tiempo: «hace». Va delante del verbo.'}
+    comments: []
+  - id: x.cloze.nian.year
+    added: '2026-10-11'
+    lang: es
+    type: cloze
+    sentence: s.date-2026-10-08
+    gap: w.nian
+    targets: [w.nian]
+    context: [w.num.er, w.ling, w.num.liu, w.num.shi, w.yue.month, w.ba, w.hao.date, w.xingqi, w.num.si]
+    skills: [production, pinyin]
+    prompt: {text: '¿天, 年 o 点? «Jueves, 8 de octubre de 2026.»'}
+    answer: {typed: nian2, hanzi: 年, pinyin: nián, meaning: '年: el año. Se dice cifra a cifra: 二零二六年.'}
+    comments: []
+  - id: x.drill.date
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    sentence: s.date-2026-10-08
+    targets: [s.date-2026-10-08]
+    skills: [production, speaking, numbers]
+    prompt: {text: 'De corrido. Di la fecha: jueves, 8 de octubre de 2026.'}
+    answer: {meaning: 'Año, mes y día, de lo grande a lo pequeño; el día de la semana, al final.'}
+    comments: []
+  - id: x.situation.month-november
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    targets: [w.yue.month]
+    skills: [production, speaking]
+    prompt: {text: '¿Cómo se dice «noviembre»? Los meses son número + 月.'}
+    answer: {hanzi: 十一月, pinyin: shíyīyuè, meaning: 'noviembre: el mes once.'}
+    comments: []
+  - id: x.situation.weekday-thursday
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    targets: [w.xingqi]
+    skills: [production, speaking]
+    prompt: {text: '¿Y «jueves»? Los días de la semana van al revés que los meses: 星期 + número.'}
+    answer: {hanzi: 星期四, pinyin: xīngqīsì, meaning: 'jueves: el cuarto día de la semana.'}
+    comments: []
+  - id: x.comprehension.horario
+    added: '2026-10-11'
+    lang: es
+    type: comprehension
+    targets: [s.wo-zaoshang-qi-dian-qu-gongzuo, s.wo-xiawu-wu-dian-ban-huijia, s.wo-youshihou-hen-lei]
+    script: hanzi
+    question: {es: '¿A qué hora vuelve a casa?'}
+    skills: [reading, comprehension]
+    prompt: {text: Lee en voz alta y responde.}
+    answer: {meaning: A las cinco y media de la tarde.}
+    comments: []
+  - id: x.comprehension.esperar
+    added: '2026-10-11'
+    lang: es
+    type: comprehension
+    targets: [s.xianzai-ba-dian-shi-fen, s.wo-deng-le-yi-ge-xiaoshi, s.tai-wan-le]
+    script: both
+    question: {es: '¿Cuánto tiempo ha esperado y qué le parece?'}
+    skills: [reading, comprehension]
+    prompt: {text: Lee en voz alta y responde.}
+    answer: {meaning: Una hora; y le parece tardísimo.}
+    comments: []
+  - id: x.dictation.dian.oclock
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.dian.oclock]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dian3, hanzi: 点, pinyin: diǎn, meaning: la hora en punto (las tres, las cinco…)}
+    comments: []
+  - id: x.produce.dian.oclock
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.dian.oclock]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «la hora en punto (las tres, las cinco…)»? Escribe el pinyin.'}
+    answer: {typed: dian3, hanzi: 点, pinyin: diǎn, meaning: la hora en punto (las tres, las cinco…)}
+    comments: []
+  - id: x.read.dian.oclock
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.dian.oclock]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 点}
+    answer: {hanzi: 点, pinyin: diǎn, meaning: la hora en punto (las tres, las cinco…)}
+    comments: []
+  - id: x.dictation.ban
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.ban]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ban4, hanzi: 半, pinyin: bàn, meaning: y media; mitad}
+    comments: []
+  - id: x.produce.ban
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.ban]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «y media; mitad»? Escribe el pinyin.'}
+    answer: {typed: ban4, hanzi: 半, pinyin: bàn, meaning: y media; mitad}
+    comments: []
+  - id: x.read.ban
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.ban]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 半}
+    answer: {hanzi: 半, pinyin: bàn, meaning: y media; mitad}
+    comments: []
+  - id: x.dictation.fen.minute
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.fen.minute]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fen1, hanzi: 分, pinyin: fēn, meaning: 'minuto (en la hora: las ocho y diez)'}
+    comments: []
+  - id: x.produce.fen.minute
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.fen.minute]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «minuto (en la hora: las ocho y diez)»? Escribe el pinyin.'}
+    answer: {typed: fen1, hanzi: 分, pinyin: fēn, meaning: 'minuto (en la hora: las ocho y diez)'}
+    comments: []
+  - id: x.read.fen.minute
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.fen.minute]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 分}
+    answer: {hanzi: 分, pinyin: fēn, meaning: 'minuto (en la hora: las ocho y diez)'}
+    comments: []
+  - id: x.dictation.fenzhong
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.fenzhong]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fen1 zhong1, hanzi: 分钟, pinyin: fēnzhōng, meaning: minuto (de duración)}
+    comments: []
+  - id: x.produce.fenzhong
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.fenzhong]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «minuto (de duración)»? Escribe el pinyin.'}
+    answer: {typed: fen1 zhong1, hanzi: 分钟, pinyin: fēnzhōng, meaning: minuto (de duración)}
+    comments: []
+  - id: x.read.fenzhong
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.fenzhong]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 分钟}
+    answer: {hanzi: 分钟, pinyin: fēnzhōng, meaning: minuto (de duración)}
+    comments: []
+  - id: x.dictation.xiaoshi
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.xiaoshi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiao3 shi2, hanzi: 小时, pinyin: xiǎoshí, meaning: hora (de duración)}
+    comments: []
+  - id: x.produce.xiaoshi
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.xiaoshi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «hora (de duración)»? Escribe el pinyin.'}
+    answer: {typed: xiao3 shi2, hanzi: 小时, pinyin: xiǎoshí, meaning: hora (de duración)}
+    comments: []
+  - id: x.read.xiaoshi
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.xiaoshi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 小时}
+    answer: {hanzi: 小时, pinyin: xiǎoshí, meaning: hora (de duración)}
+    comments: []
+  - id: x.dictation.xianzai
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.xianzai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xian4 zai4, hanzi: 现在, pinyin: xiànzài, meaning: ahora}
+    comments: []
+  - id: x.produce.xianzai
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.xianzai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «ahora»? Escribe el pinyin.'}
+    answer: {typed: xian4 zai4, hanzi: 现在, pinyin: xiànzài, meaning: ahora}
+    comments: []
+  - id: x.read.xianzai
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.xianzai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 现在}
+    answer: {hanzi: 现在, pinyin: xiànzài, meaning: ahora}
+    comments: []
+  - id: x.dictation.shangci
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.shangci]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shang4 ci4, hanzi: 上次, pinyin: shàngcì, meaning: 'la última vez, la vez anterior'}
+    comments: []
+  - id: x.produce.shangci
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.shangci]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «la última vez, la vez anterior»? Escribe el pinyin.'}
+    answer: {typed: shang4 ci4, hanzi: 上次, pinyin: shàngcì, meaning: 'la última vez, la vez anterior'}
+    comments: []
+  - id: x.read.shangci
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.shangci]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 上次}
+    answer: {hanzi: 上次, pinyin: shàngcì, meaning: 'la última vez, la vez anterior'}
+    comments: []
+  - id: x.dictation.xiaci
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.xiaci]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xia4 ci4, hanzi: 下次, pinyin: xiàcì, meaning: la próxima vez}
+    comments: []
+  - id: x.produce.xiaci
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.xiaci]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «la próxima vez»? Escribe el pinyin.'}
+    answer: {typed: xia4 ci4, hanzi: 下次, pinyin: xiàcì, meaning: la próxima vez}
+    comments: []
+  - id: x.read.xiaci
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.xiaci]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 下次}
+    answer: {hanzi: 下次, pinyin: xiàcì, meaning: la próxima vez}
+    comments: []
+  - id: x.dictation.zheci
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.zheci]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhe4 ci4, hanzi: 这次, pinyin: zhècì, meaning: esta vez}
+    comments: []
+  - id: x.read.zheci
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.zheci]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 这次}
+    answer: {hanzi: 这次, pinyin: zhècì, meaning: esta vez}
+    comments: []
+  - id: x.dictation.xingqiri
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.xingqiri]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xing1 qi1 ri4, hanzi: 星期日, pinyin: xīngqīrì, meaning: domingo (por escrito)}
+    comments: []
+  - id: x.read.xingqiri
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.xingqiri]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 星期日}
+    answer: {hanzi: 星期日, pinyin: xīngqīrì, meaning: domingo (por escrito)}
+    comments: []
+  - id: x.dictation.qian.before
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.qian.before]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: qian2, hanzi: 前, pinyin: qián, meaning: antes; hace (两天前 = hace dos días)}
+    comments: []
+  - id: x.read.qian.before
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.qian.before]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 前}
+    answer: {hanzi: 前, pinyin: qián, meaning: antes; hace (两天前 = hace dos días)}
+    comments: []
+  - id: x.dictation.duojiu
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.duojiu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: duo1 jiu3, hanzi: 多久, pinyin: duōjiǔ, meaning: '¿cuánto tiempo?'}
+    comments: []
+  - id: x.read.duojiu
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.duojiu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 多久}
+    answer: {hanzi: 多久, pinyin: duōjiǔ, meaning: '¿cuánto tiempo?'}
+    comments: []
+  - id: x.dictation.youshihou
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.youshihou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: you3 shi2 hou5, hanzi: 有时候, pinyin: yǒushíhou, meaning: a veces}
+    comments: []
+  - id: x.produce.youshihou
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.youshihou]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «a veces»? Escribe el pinyin.'}
+    answer: {typed: you3 shi2 hou5, hanzi: 有时候, pinyin: yǒushíhou, meaning: a veces}
+    comments: []
+  - id: x.read.youshihou
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.youshihou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 有时候}
+    answer: {hanzi: 有时候, pinyin: yǒushíhou, meaning: a veces}
+    comments: []
+  - id: x.tones.youshihou
+    added: 2026-10-11
+    lang: es
+    type: tones
+    targets: [w.youshihou]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 有时候, pinyin: you shi hou}
+    answer: {typed: '325', hanzi: 有时候, pinyin: yǒushíhou, meaning: a veces}
+    comments: []
+  - id: x.listen.xianzai-ji-dian
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.xianzai-ji-dian
+    targets: [s.xianzai-ji-dian]
+    context: [w.xianzai, w.ji, w.dian.oclock]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Qué hora es?'}
+    comments: []
+  - id: x.produce.xianzai-ji-dian
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.xianzai-ji-dian
+    targets: [s.xianzai-ji-dian]
+    context: [w.xianzai, w.ji, w.dian.oclock]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué hora es?»'}
+    answer: {meaning: '¿Qué hora es?'}
+    comments: []
+  - id: x.listen.xianzai-san-dian
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.xianzai-san-dian
+    targets: [s.xianzai-san-dian]
+    context: [w.xianzai, w.num.san, w.dian.oclock]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Son las tres.}
+    comments: []
+  - id: x.produce.xianzai-san-dian
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.xianzai-san-dian
+    targets: [s.xianzai-san-dian]
+    context: [w.xianzai, w.num.san, w.dian.oclock]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Son las tres.»'}
+    answer: {meaning: Son las tres.}
+    comments: []
+  - id: x.listen.xianzai-ba-dian-shi-fen
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.xianzai-ba-dian-shi-fen
+    targets: [s.xianzai-ba-dian-shi-fen]
+    context: [w.xianzai, w.ba, w.dian.oclock, w.num.shi, w.fen.minute]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Son las ocho y diez.}
+    comments: []
+  - id: x.listen.wo-zaoshang-qi-dian-qu-gongzuo
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-zaoshang-qi-dian-qu-gongzuo
+    targets: [s.wo-zaoshang-qi-dian-qu-gongzuo]
+    context: [w.wo, w.zaoshang, w.num.qi, w.dian.oclock, w.qu, w.gongzuo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Voy a trabajar a las siete de la mañana.}
+    comments: []
+  - id: x.listen.women-shangwu-shiyi-dian-jian
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.women-shangwu-shiyi-dian-jian
+    targets: [s.women-shangwu-shiyi-dian-jian]
+    context: [w.women, w.shangwu, w.num.shi, w.num.yi, w.dian.oclock, w.jian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Nos vemos a las once de la mañana.}
+    comments: []
+  - id: x.listen.wo-xiawu-wu-dian-ban-huijia
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-xiawu-wu-dian-ban-huijia
+    targets: [s.wo-xiawu-wu-dian-ban-huijia]
+    context: [w.wo, w.xiawu, w.num.wu, w.dian.oclock, w.ban, w.hui.return, w.jia]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Vuelvo a casa a las cinco y media de la tarde.}
+    comments: []
+  - id: x.produce.wo-xiawu-wu-dian-ban-huijia
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-xiawu-wu-dian-ban-huijia
+    targets: [s.wo-xiawu-wu-dian-ban-huijia]
+    context: [w.wo, w.xiawu, w.num.wu, w.dian.oclock, w.ban, w.hui.return, w.jia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Vuelvo a casa a las cinco y media de la tarde.»'}
+    answer: {meaning: Vuelvo a casa a las cinco y media de la tarde.}
+    comments: []
+  - id: x.listen.wo-deng-le-yi-ge-xiaoshi
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-deng-le-yi-ge-xiaoshi
+    targets: [s.wo-deng-le-yi-ge-xiaoshi]
+    context: [w.wo, w.deng, w.le, w.num.yi, w.ge, w.xiaoshi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: He esperado una hora.}
+    comments: []
+  - id: x.produce.wo-deng-le-yi-ge-xiaoshi
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-deng-le-yi-ge-xiaoshi
+    targets: [s.wo-deng-le-yi-ge-xiaoshi]
+    context: [w.wo, w.deng, w.le, w.num.yi, w.ge, w.xiaoshi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «He esperado una hora.»'}
+    answer: {meaning: He esperado una hora.}
+    comments: []
+  - id: x.listen.wo-deng-le-shi-fenzhong
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-deng-le-shi-fenzhong
+    targets: [s.wo-deng-le-shi-fenzhong]
+    context: [w.wo, w.deng, w.le, w.num.shi, w.fenzhong]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: He esperado diez minutos.}
+    comments: []
+  - id: x.listen.ni-deng-le-duojiu
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ni-deng-le-duojiu
+    targets: [s.ni-deng-le-duojiu]
+    context: [w.ni, w.deng, w.le, w.duojiu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuánto tiempo has esperado?'}
+    comments: []
+  - id: x.produce.ni-deng-le-duojiu
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.ni-deng-le-duojiu
+    targets: [s.ni-deng-le-duojiu]
+    context: [w.ni, w.deng, w.le, w.duojiu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuánto tiempo has esperado?»'}
+    answer: {meaning: '¿Cuánto tiempo has esperado?'}
+    comments: []
+  - id: x.listen.shangci-wo-mei-qu
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.shangci-wo-mei-qu
+    targets: [s.shangci-wo-mei-qu]
+    context: [w.shangci, w.wo, w.mei, w.qu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: La última vez no fui.}
+    comments: []
+  - id: x.listen.zheci-wo-qu
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.zheci-wo-qu
+    targets: [s.zheci-wo-qu]
+    context: [w.zheci, w.wo, w.qu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Esta vez voy yo.}
+    comments: []
+  - id: x.listen.wo-liang-tian-qian-qu-le-shangdian
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-liang-tian-qian-qu-le-shangdian
+    targets: [s.wo-liang-tian-qian-qu-le-shangdian]
+    context: [w.wo, w.liang, w.tian, w.qian.before, w.qu, w.le, w.shangdian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Hace dos días fui a la tienda.}
+    comments: []
+  - id: x.produce.wo-liang-tian-qian-qu-le-shangdian
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-liang-tian-qian-qu-le-shangdian
+    targets: [s.wo-liang-tian-qian-qu-le-shangdian]
+    context: [w.wo, w.liang, w.tian, w.qian.before, w.qu, w.le, w.shangdian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hace dos días fui a la tienda.»'}
+    answer: {meaning: Hace dos días fui a la tienda.}
+    comments: []
+  - id: x.listen.wo-youshihou-hen-lei
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-youshihou-hen-lei
+    targets: [s.wo-youshihou-hen-lei]
+    context: [w.wo, w.youshihou, w.hen, w.lei]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: A veces estoy muy cansado.}
+    comments: []
+  - id: x.produce.wo-youshihou-hen-lei
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-youshihou-hen-lei
+    targets: [s.wo-youshihou-hen-lei]
+    context: [w.wo, w.youshihou, w.hen, w.lei]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «A veces estoy muy cansado.»'}
+    answer: {meaning: A veces estoy muy cansado.}
+    comments: []
+  - id: x.listen.ta-youshihou-bu-mingbai
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ta-youshihou-bu-mingbai
+    targets: [s.ta-youshihou-bu-mingbai]
+    context: [w.ta.he, w.youshihou, w.bu, w.mingbai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: A veces no entiende.}
+    comments: []
+  - id: x.listen.kuai-ba-dian-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.kuai-ba-dian-le
+    targets: [s.kuai-ba-dian-le]
+    context: [w.kuai.fast, w.ba, w.dian.oclock, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Son casi las ocho.}
+    comments: []
+  - id: x.listen.xingqiri-wo-bu-gongzuo
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.xingqiri-wo-bu-gongzuo
+    targets: [s.xingqiri-wo-bu-gongzuo]
+    context: [w.xingqiri, w.wo, w.bu, w.gongzuo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Los domingos no trabajo.}
+    comments: []
+  - id: x.listen.date-2026-10-08
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.date-2026-10-08
+    targets: [s.date-2026-10-08]
+    context: [w.num.er, w.ling, w.num.liu, w.nian, w.num.shi, w.yue.month, w.ba, w.hao.date, w.xingqi, w.num.si]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Jueves, 8 de octubre de 2026.'}
+    comments: []
+  - id: x.produce.date-2026-10-08
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.date-2026-10-08
+    targets: [s.date-2026-10-08]
+    context: [w.num.er, w.ling, w.num.liu, w.nian, w.num.shi, w.yue.month, w.ba, w.hao.date, w.xingqi, w.num.si]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Jueves, 8 de octubre de 2026.»'}
+    answer: {meaning: 'Jueves, 8 de octubre de 2026.'}
+    comments: []
+  - id: x.listen.date-2025-03-02
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.date-2025-03-02
+    targets: [s.date-2025-03-02]
+    context: [w.num.er, w.ling, w.num.wu, w.nian, w.num.san, w.yue.month, w.hao.date, w.xingqitian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Domingo, 2 de marzo de 2025.'}
+    comments: []
+  - id: x.listen.dlg-ji-dian
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.dlg-ji-dian
+    targets: [s.dlg-ji-dian]
+    context: [w.xianzai, w.ji, w.dian.oclock, w.ba, w.ban, w.tai, w.wan, w.le, w.women, w.zou, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Qué hora es? —Las ocho y media. —Es tardísimo, ¡vámonos!'}
+    comments: []
+  - id: x.contrast.dian.oclock
+    added: 2026-10-11
+    lang: es
+    type: contrast
+    group: g.dian-dian
+    targets: [w.dian.oclock]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 点, pinyin: diǎn, meaning: la hora en punto (las tres, las cinco…)}
+    comments: []
+  - id: x.contrast.qian.before
+    added: 2026-10-11
+    lang: es
+    type: contrast
+    group: g.qian-qian
+    targets: [w.qian.before]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 前, pinyin: qián, meaning: antes; hace (两天前 = hace dos días)}
+    comments: []

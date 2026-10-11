@@ -9,7 +9,6 @@ exercises:
     skills: [tones, pinyin]
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 谢谢, pinyin: xie xie}
     answer: {typed: '45', hanzi: 谢谢, pinyin: xièxie, meaning: gracias}
-    explanation: Cuarto tono y después tono neutro.
     comments: []
   - id: x.produce.xiexie
     added: 2026-09-25
@@ -1950,4 +1949,164 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Disculpe, ¿qué ayuda necesita?»'}
     answer: {meaning: 'Disculpe, ¿qué ayuda necesita?'}
+    comments: []
+  - id: x.compose.llegar-tarde
+    added: '2026-10-11'
+    lang: es
+    type: compose
+    targets: [s.duibuqi-wo-lai-wan-le, s.nimen-chifan-le-ma, s.duibuqi-nimen-chifan-le-ma]
+    words: [w.duibuqi, w.lai, w.wan, w.nimen, w.chifan]
+    skills: [production, speaking]
+    prompt: {text: Construye. Llegas tarde a una cena con amigos que llevan un buen rato esperándote. Discúlpate y pregunta si ya han empezado, con estas palabras o con otras.}
+    answer: {meaning: '来晚了 «he llegado tarde»: el 了 dice que ya ha pasado.'}
+    comments: []
+  - id: x.choice.reply-xiexie
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    targets: [e.bukeqi]
+    skills: [production, speaking]
+    prompt: {text: Elige. Has ayudado a una señora con las bolsas y te dice 谢谢., options: [没关系, 不客气, 对不起, 没问题]}
+    answer: {choice: b, hanzi: 不客气, pinyin: bú kèqi, meaning: 'A 谢谢, 不客气 (o 不用谢). 没关系 es para 对不起.'}
+    comments: []
+    accept_pinyin_mismatch: 'se escribe lo que suena: bú delante de cuarto tono y 气 átono'
+  - id: x.choice.reply-duibuqi
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    targets: [e.meiguanxi]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. En el metro, alguien te pisa y te dice 对不起.', options: [不客气, 没问题, 没关系, 谢谢]}
+    answer: {choice: c, hanzi: 没关系, pinyin: méi guānxi, meaning: 'A una disculpa, 没关系: no pasa nada.'}
+    comments: []
+  - id: x.choice.reply-favor
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    targets: [e.meiwenti]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. Un compañero te pregunta: 你能帮我一下吗？', options: [没关系, 不客气, 没问题, 对不起]}
+    answer: {choice: c, hanzi: 没问题, pinyin: méi wèntí, meaning: 'Aceptas lo que te piden: sin problema.'}
+    comments: []
+  - id: x.cloze.keyi.modal
+    added: '2026-10-11'
+    lang: es
+    type: cloze
+    sentence: s.keyi-zuo-zheli-ma
+    gap: w.keyi
+    targets: [w.keyi]
+    context: [w.zuo.sit, w.zheli, w.ma]
+    skills: [production, pinyin]
+    prompt: {text: '¿会, 能, 可以 o 得? «¿Puedo sentarme aquí?» (pides permiso)'}
+    answer: {typed: ke3 yi3, hanzi: 可以, pinyin: kěyǐ, meaning: '可以: tener permiso, estar bien.'}
+    comments: []
+  - id: x.nuance.replies
+    added: '2026-10-11'
+    lang: es
+    type: nuance
+    targets: [e.bukeqi, e.meiguanxi, e.meiwenti]
+    skills: [comprehension, discrimination]
+    prompt: {text: '不客气, 没关系 y 没问题: ¿a qué responde cada uno?'}
+    answer: {meaning: '不客气: a 谢谢. 没关系: a 对不起. 没问题: a un favor que te piden («¿me ayudas?»).'}
+    comments: []
+  - id: x.dictation.buyongxie
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [e.buyongxie]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bu4 yong4 xie4, hanzi: 不用谢, pinyin: bù yòng xiè, meaning: de nada (no hace falta dar las gracias)}
+    comments: []
+  - id: x.read.buyongxie
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [e.buyongxie]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 不用谢}
+    answer: {hanzi: 不用谢, pinyin: bù yòng xiè, meaning: de nada (no hace falta dar las gracias)}
+    comments: []
+  - id: x.tones.buyongxie
+    added: 2026-10-11
+    lang: es
+    type: tones
+    targets: [e.buyongxie]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 不用谢, pinyin: bu yong xie}
+    answer: {typed: '444', hanzi: 不用谢, pinyin: bù yòng xiè, meaning: de nada (no hace falta dar las gracias)}
+    comments: []
+  - id: x.listen.duibuqi-wo-lai-wan-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.duibuqi-wo-lai-wan-le
+    targets: [s.duibuqi-wo-lai-wan-le]
+    context: [w.duibuqi, w.wo, w.lai, w.wan, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Perdón, llego tarde!'}
+    comments: []
+  - id: x.produce.duibuqi-wo-lai-wan-le
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.duibuqi-wo-lai-wan-le
+    targets: [s.duibuqi-wo-lai-wan-le]
+    context: [w.duibuqi, w.wo, w.lai, w.wan, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Perdón, llego tarde!»'}
+    answer: {meaning: '¡Perdón, llego tarde!'}
+    comments: []
+  - id: x.charsound.xie
+    added: 2026-10-11
+    lang: es
+    type: charsound
+    targets: [e.xiexie, e.buyongxie]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 谢}
+    answer: {typed: xie4, hanzi: 谢, pinyin: xiè, meaning: 'Sale en 谢谢 xièxie «gracias», 不用谢 bù yòng xiè «de nada (no hace falta
+        dar las gracias)».'}
+    comments: []
+  - id: x.charsound.ti
+    added: 2026-10-11
+    lang: es
+    type: charsound
+    targets: [e.meiwenti, w.wenti]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 题}
+    answer: {typed: ti2, hanzi: 题, pinyin: tí, meaning: 'Sale en 没问题 méi wèntí «sin problema», 问题 wèntí «pregunta; problema».'}
+    comments: []
+  - id: x.listen.nimen-chifan-le-ma
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.nimen-chifan-le-ma
+    targets: [s.nimen-chifan-le-ma]
+    context: [w.nimen, w.chifan, w.le, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Ya habéis comido?'}
+    comments: []
+  - id: x.listen.duibuqi-nimen-chifan-le-ma
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.duibuqi-nimen-chifan-le-ma
+    targets: [s.duibuqi-nimen-chifan-le-ma]
+    context: [w.duibuqi, w.nimen, w.chifan, w.le, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Perdón, ¿ya habéis empezado a comer?'}
+    comments: []
+  - id: x.compose.reunion-proyector
+    added: '2026-10-11'
+    lang: es
+    type: compose
+    targets: [s.ni-deng-yixia, s.wo-kan-yixia, s.women-deng-yixia-ba]
+    words: [w.ni, w.women, w.deng, w.kan, w.yixia]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. Antes de empezar una reunión, el proyector no se enciende y todos te miran. Di algo con estas palabras o con otras que sepas.'}
+    answer: {meaning: Con 一下 lo que pides suena breve y amable.}
     comments: []

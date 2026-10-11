@@ -98,3 +98,14 @@ sentences:
       - {text: ！}
     translation: {es: ¡Qué frío!, en: So cold!}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.jintian-de-yueliang-hen-liang
+    use: hear
+    segments:
+      - {text: 今天, ref: w.jintian, pinyin: jīntiān}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 月亮, ref: w.yueliang, pinyin: yuèliang}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 亮, ref: w.liang.bright, pinyin: liàng}
+      - {text: 。}
+    translation: {es: Hoy la luna brilla mucho., en: The moon is very bright tonight.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}

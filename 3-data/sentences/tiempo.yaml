@@ -202,3 +202,230 @@ sentences:
       - {text: 。}
     translation: {es: '—¿Cuándo vas a China? —El año que viene. Quiero ir en avión.', en: '—When are you going to China? —Next year. I want to fly.'}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.xianzai-ji-dian
+    use: say
+    segments:
+      - {text: 现在, ref: w.xianzai, pinyin: xiànzài}
+      - {text: 几, ref: w.ji, pinyin: jǐ}
+      - {text: 点, ref: w.dian.oclock, pinyin: diǎn}
+      - {text: ？}
+    translation: {es: '¿Qué hora es?', en: 'What time is it?'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.xianzai-san-dian
+    use: say
+    segments:
+      - {text: 现在, ref: w.xianzai, pinyin: xiànzài}
+      - {text: 三, ref: w.num.san, pinyin: sān}
+      - {text: 点, ref: w.dian.oclock, pinyin: diǎn}
+      - {text: 。}
+    translation: {es: Son las tres., en: It's three o'clock.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.xianzai-ba-dian-shi-fen
+    use: hear
+    segments:
+      - {text: 现在, ref: w.xianzai, pinyin: xiànzài}
+      - {text: 八, ref: w.ba, pinyin: bā}
+      - {text: 点, ref: w.dian.oclock, pinyin: diǎn}
+      - {text: 十, ref: w.num.shi, pinyin: shí}
+      - {text: 分, ref: w.fen.minute, pinyin: fēn}
+      - {text: 。}
+    translation: {es: Son las ocho y diez., en: It's ten past eight.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-zaoshang-qi-dian-qu-gongzuo
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 早上, ref: w.zaoshang, pinyin: zǎoshang}
+      - {text: 七, ref: w.num.qi, pinyin: qī}
+      - {text: 点, ref: w.dian.oclock, pinyin: diǎn}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 工作, ref: w.gongzuo, pinyin: gōngzuò}
+      - {text: 。}
+    translation: {es: Voy a trabajar a las siete de la mañana., en: I go to work at seven in the morning.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.women-shangwu-shiyi-dian-jian
+    use: hear
+    segments:
+      - {text: 我们, ref: w.women, pinyin: wǒmen}
+      - {text: 上午, ref: w.shangwu, pinyin: shàngwǔ}
+      - {text: 十, ref: w.num.shi, pinyin: shí}
+      - {text: 一, ref: w.num.yi, pinyin: yī}
+      - {text: 点, ref: w.dian.oclock, pinyin: diǎn}
+      - {text: 见, ref: w.jian, pinyin: jiàn}
+      - {text: 。}
+    translation: {es: Nos vemos a las once de la mañana., en: See you at eleven in the morning.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-xiawu-wu-dian-ban-huijia
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 下午, ref: w.xiawu, pinyin: xiàwǔ}
+      - {text: 五, ref: w.num.wu, pinyin: wǔ}
+      - {text: 点, ref: w.dian.oclock, pinyin: diǎn}
+      - {text: 半, ref: w.ban, pinyin: bàn}
+      - {text: 回, ref: w.hui.return, pinyin: huí}
+      - {text: 家, ref: w.jia, pinyin: jiā}
+      - {text: 。}
+    translation: {es: Vuelvo a casa a las cinco y media de la tarde., en: I go home at half past five in the afternoon.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-deng-le-yi-ge-xiaoshi
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 等, ref: w.deng, pinyin: děng}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 一, ref: w.num.yi, pinyin: yí, sandhi: true}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 小时, ref: w.xiaoshi, pinyin: xiǎoshí}
+      - {text: 。}
+    translation: {es: He esperado una hora., en: I waited for an hour.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-deng-le-shi-fenzhong
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 等, ref: w.deng, pinyin: děng}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 十, ref: w.num.shi, pinyin: shí}
+      - {text: 分钟, ref: w.fenzhong, pinyin: fēnzhōng}
+      - {text: 。}
+    translation: {es: He esperado diez minutos., en: I waited ten minutes.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.ni-deng-le-duojiu
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 等, ref: w.deng, pinyin: děng}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 多久, ref: w.duojiu, pinyin: duōjiǔ}
+      - {text: ？}
+    translation: {es: '¿Cuánto tiempo has esperado?', en: 'How long did you wait?'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.shangci-wo-mei-qu
+    use: hear
+    segments:
+      - {text: 上次, ref: w.shangci, pinyin: shàngcì}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 没, ref: w.mei, pinyin: méi}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 。}
+    translation: {es: La última vez no fui., en: Last time I didn't go.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.zheci-wo-qu
+    use: hear
+    segments:
+      - {text: 这次, ref: w.zheci, pinyin: zhècì}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 。}
+    translation: {es: Esta vez voy yo., en: This time I'm going.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-liang-tian-qian-qu-le-shangdian
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 两, ref: w.liang, pinyin: liǎng}
+      - {text: 天, ref: w.tian, pinyin: tiān}
+      - {text: 前, ref: w.qian.before, pinyin: qián}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 商店, ref: w.shangdian, pinyin: shāngdiàn}
+      - {text: 。}
+    translation: {es: Hace dos días fui a la tienda., en: Two days ago I went to the shop.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-youshihou-hen-lei
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 有时候, ref: w.youshihou, pinyin: yǒushíhou}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 累, ref: w.lei, pinyin: lèi}
+      - {text: 。}
+    translation: {es: A veces estoy muy cansado., en: Sometimes I'm very tired.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.ta-youshihou-bu-mingbai
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 有时候, ref: w.youshihou, pinyin: yǒushíhou}
+      - {text: 不, ref: w.bu, pinyin: bù}
+      - {text: 明白, ref: w.mingbai, pinyin: míngbai}
+      - {text: 。}
+    translation: {es: A veces no entiende., en: Sometimes he doesn't understand.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.kuai-ba-dian-le
+    use: hear
+    segments:
+      - {text: 快, ref: w.kuai.fast, pinyin: kuài}
+      - {text: 八, ref: w.ba, pinyin: bā}
+      - {text: 点, ref: w.dian.oclock, pinyin: diǎn}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: Son casi las ocho., en: It's almost eight.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.xingqiri-wo-bu-gongzuo
+    use: hear
+    segments:
+      - {text: 星期日, ref: w.xingqiri, pinyin: xīngqīrì}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 不, ref: w.bu, pinyin: bù}
+      - {text: 工作, ref: w.gongzuo, pinyin: gōngzuò}
+      - {text: 。}
+    translation: {es: Los domingos no trabajo., en: I don't work on Sundays.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.date-2026-10-08
+    use: say
+    segments:
+      - {text: 二, ref: w.num.er, pinyin: èr}
+      - {text: 零, ref: w.ling, pinyin: líng}
+      - {text: 二, ref: w.num.er, pinyin: èr}
+      - {text: 六, ref: w.num.liu, pinyin: liù}
+      - {text: 年, ref: w.nian, pinyin: nián}
+      - {text: 十, ref: w.num.shi, pinyin: shí}
+      - {text: 月, ref: w.yue.month, pinyin: yuè}
+      - {text: 八, ref: w.ba, pinyin: bā}
+      - {text: 号, ref: w.hao.date, pinyin: hào}
+      - {text: ，}
+      - {text: 星期, ref: w.xingqi, pinyin: xīngqī}
+      - {text: 四, ref: w.num.si, pinyin: sì}
+      - {text: 。}
+    translation: {es: 'Jueves, 8 de octubre de 2026.', en: 'Thursday, October 8, 2026.'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.date-2025-03-02
+    use: hear
+    segments:
+      - {text: 二, ref: w.num.er, pinyin: èr}
+      - {text: 零, ref: w.ling, pinyin: líng}
+      - {text: 二, ref: w.num.er, pinyin: èr}
+      - {text: 五, ref: w.num.wu, pinyin: wǔ}
+      - {text: 年, ref: w.nian, pinyin: nián}
+      - {text: 三, ref: w.num.san, pinyin: sān}
+      - {text: 月, ref: w.yue.month, pinyin: yuè}
+      - {text: 二, ref: w.num.er, pinyin: èr}
+      - {text: 号, ref: w.hao.date, pinyin: hào}
+      - {text: ，}
+      - {text: 星期天, ref: w.xingqitian, pinyin: xīngqītiān}
+      - {text: 。}
+    translation: {es: 'Domingo, 2 de marzo de 2025.', en: 'Sunday, March 2, 2025.'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.dlg-ji-dian
+    use: hear
+    segments:
+      - {text: 现在, ref: w.xianzai, pinyin: xiànzài}
+      - {text: 几, ref: w.ji, pinyin: jǐ}
+      - {text: 点, ref: w.dian.oclock, pinyin: diǎn}
+      - {text: ？}
+      - {text: 八, ref: w.ba, pinyin: bā}
+      - {text: 点, ref: w.dian.oclock, pinyin: diǎn}
+      - {text: 半, ref: w.ban, pinyin: bàn}
+      - {text: 。}
+      - {text: 太, ref: w.tai, pinyin: tài}
+      - {text: 晚, ref: w.wan, pinyin: wǎn}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ，}
+      - {text: 我们, ref: w.women, pinyin: wǒmen}
+      - {text: 走, ref: w.zou, pinyin: zǒu}
+      - {text: 吧, ref: w.ba.particle, pinyin: ba}
+      - {text: ！}
+    translation: {es: '—¿Qué hora es? —Las ocho y media. —Es tardísimo, ¡vámonos!', en: '—What time is it? —Half past eight. —It''s too late, let''s go!'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}

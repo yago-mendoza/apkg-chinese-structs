@@ -307,6 +307,7 @@ entries:
     comments:
       - {kind: character, private: false, date: '2026-10-01', text: '广 es un tejado con una pared, un edificio abierto, y 占 zhàn da el sonido.'}
       - {kind: mnemonic, private: false, date: '2026-10-01', text: 'Dentro del edificio 广, un espacio ocupado (占 también es «ocupar»): el local.', original: 'Y diàn = edificio cubieto. Y lo de dentro es "ocupado". Zona ocupada dentro sfificio. Local tienda'}
+    connection: {kind: sound, with: [点], text: '占 da el sonido a 店 diàn y a 点 diǎn: suenan casi igual.'}
   - id: g.dian-places
     kind: group
     basis: set
@@ -548,3 +549,55 @@ entries:
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-09', text: '我请客！ «¡invito yo!»: pagas tú la cuenta de todos.'}
+  - id: w.ke.thirsty
+    use: say
+    role: content
+    kind: word
+    hanzi: 渴
+    pinyin: kě
+    meaning: {es: 'tener sed, sediento', en: thirsty}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '我渴了 «me ha entrado sed»: el 了 dice que es algo nuevo. 我很渴 «tengo mucha sed».'}
+      - {kind: mnemonic, private: false, date: '2026-10-11', text: 'A la derecha, un sol 日 arriba y debajo una persona metida en una cueva: tiene sed. Con 氵 «agua» es tener sed, 渴; si cambias el agua por la boca 口, es beber, 喝.', original: 'para recordar el comprante derehca es ''sol'' encima y debjao nua persona en una cueva. tener sed es agua mas ese comoente (o escena sol perosan seindeite necuev) y beber s cunado sustumiso el radical de agua por el simbolo de la boca, entendes¿'}
+  - id: w.e.hungry
+    use: say
+    role: content
+    kind: word
+    hanzi: 饿
+    pinyin: è
+    meaning: {es: 'tener hambre, hambriento', en: hungry}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '我饿了 «me ha entrado hambre». 饣 a la izquierda es «comida», como en 饭.'}
+  - id: w.pianyi
+    use: say
+    role: content
+    kind: word
+    hanzi: 便宜
+    pinyin: piányi
+    meaning: {es: barato, en: cheap}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '可以便宜一点吗？ «¿me lo deja un poco más barato?»: así se regatea. Lo contrario es 贵 «caro».'}
+    accept_pinyin_mismatch: '宜 va en tono neutro en el habla: piányi'
+  - id: g.ke-ke
+    kind: group
+    basis: soundalike
+    title: 渴 kě y 棵 kē
+    explanation: Se parecen al oído; uno tiene agua y el otro, un árbol.
+    members:
+      - {ref: w.ke.thirsty, cue: baja y sube; 氵 «agua»}
+      - {ref: w.ke, cue: alto y plano; 木 «árbol»}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []
+  - id: w.shao
+    use: say
+    role: content
+    kind: word
+    hanzi: 少
+    pinyin: shǎo
+    meaning: {es: poco; menos, en: 'few, little; less'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Para regatear: 能少一点吗？ «¿puede dejarlo en menos?». Es el 少 de 多少 «cuánto», literalmente «mucho-poco».'}

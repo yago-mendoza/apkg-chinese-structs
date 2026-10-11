@@ -41,12 +41,6 @@ class Pinyin(unittest.TestCase):
         self.assertEqual(anki.ipa("先生", "xiānsheng"), "ɕjɛn˥ ʂɤŋ")
         self.assertEqual(anki.ipa("哪儿", "nǎr"), "naɻ˧˩˧")
 
-    def test_phonetic_traps(self):
-        self.assertIn("x suena", anki.phonetic_notes("谢谢", "xièxie")[0])
-        notes = anki.phonetic_notes("你是中国人吗", "nǐ shì Zhōngguó rén ma")
-        self.assertEqual(len(notes), 3)
-        self.assertEqual(len({n.split(":")[0] for n in notes}), 3, "una nota por sílaba distinta primero")
-
     def test_audio_rate(self):
         self.assertEqual(anki.audio_rate("上午"), anki.AZURE_RATE_WORD)
         self.assertEqual(anki.audio_rate("你好吗？"), anki.AZURE_RATE)
@@ -982,3 +976,60 @@ class Batch009(unittest.TestCase):
         twin = dict(self.xby["x.cloze.bu.habit"], id="x.cloze.twin")
         _, warnings = anki.validate(self.entries, self.sentences, self.exercises + [twin], require_audio=False)
         self.assertTrue(any(w.startswith("x.cloze.twin:") and "redundante" in w for w in warnings))
+
+
+class Batch010(unittest.TestCase):
+    """Lo que pidió YAGO en el review 009: sin teoría de pronunciación en las tarjetas, construir con palabras y
+    modelos, y elegir entre opciones con letra."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.entries, cls.sentences, cls.exercises = anki.load()
+        cls.eby = {e["id"]: e for e in cls.entries}
+        cls.sby = {s["id"]: s for s in cls.sentences}
+        cls.xby = {x["id"]: x for x in cls.exercises}
+
+    def fields(self, ex):
+        return anki.card_fields(ex, self.eby, self.sby, {}, set())
+
+    def test_no_pronunciation_theory_on_cards(self):
+        for xid in ("x.pair.chi-qi", "x.dictation.wen", "x.tones.neutral-pengyou"):
+            notes = self.fields(self.xby[xid])["notes"]
+            self.assertNotIn("<h4>Pronunciación</h4>", notes, xid)
+            for p in (e for e in self.entries if e.get("kind") == "pronunciation"):
+                self.assertNotIn(p["title"], notes, xid)
+        self.assertFalse([x for x in self.xby if x.startswith("x.rule.")])
+        rule = dict(self.xby["x.pair.chi-qi"], id="x.rule.t", type="speak")
+        errors, _ = anki.validate(self.entries, self.sentences, self.exercises + [rule], require_audio=False)
+        self.assertTrue(any(e.startswith("x.rule.t:") for e in errors))
+        p = next(e for e in self.entries if e.get("kind") == "pronunciation" and e.get("use") == "hear")
+        self.assertEqual(anki.required_cards(dict(p, use="say"), {}), {"listen"})     # decirla no pide tarjeta de regla
+
+    def test_compose_gives_words_and_models(self):
+        ex = next(x for x in self.exercises if x["type"] == "compose")
+        f = self.fields(ex)
+        for w in ex["words"]:
+            self.assertIn(self.eby[w]["hanzi"], f["front"])
+        for sid in ex["targets"]:
+            self.assertIn(self.sby[sid]["translation"]["es"], f["back"])
+        self.assertEqual(anki.skill_of(ex), "decir")
+        errors, warnings = anki.validate(self.entries, self.sentences, self.exercises, require_audio=False)
+        self.assertFalse([e for e in errors + warnings if e.startswith("x.compose.")])
+        few = dict(ex, id="x.compose.few", words=ex["words"][:2])
+        loose = dict(ex, id="x.compose.loose", targets=[ex["words"][0]])
+        twin = dict(ex, id="x.compose.twin", targets=[ex["targets"][0], ex["targets"][0]], prompt={"text": "otra escena"})
+        errors, warnings = anki.validate(self.entries, self.sentences, self.exercises + [few, loose, twin], require_audio=False)
+        self.assertTrue(any(e.startswith("x.compose.few:") for e in errors))
+        self.assertTrue(any(e.startswith("x.compose.loose:") for e in errors))
+        self.assertTrue(any(w.startswith("x.compose.twin:") and "mezcla" in w for w in warnings))
+
+    def test_choices_carry_their_letter(self):
+        ex = self.xby["x.situation.wanan-choice"]
+        f = self.fields(ex)
+        self.assertIn('<span class="opt">c)</span> 晚安！', f["front"])
+        self.assertTrue(f["back"].startswith('<div class="choice-ok">c) 晚安！'))
+        self.assertIn("text-align: left", anki.CSS.split(".task {")[1].split("}")[0])      # consignas a la izquierda
+        bad = dict(ex, id="x.situation.bad", answer=dict(ex["answer"], choice="z"))
+        errors, _ = anki.validate(self.entries, self.sentences, self.exercises + [bad], require_audio=False)
+        self.assertTrue(any(e.startswith("x.situation.bad:") for e in errors))
+

@@ -159,6 +159,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '回 «volver» + 来 «hacia aquí». 你回来了！ es un saludo al ver llegar a alguien de casa o del trabajo.'}
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '回 «volver» + 来 «hacia aquí»: volver adonde está quien habla. Venir solo se puede hacia aquí, así que el 来 pone el «aquí». 我回来了 «ya estoy aquí».', original: 'y luego que juntos huilai es ''volver aqui'' algo asi, y el aqui se repsenrta con ''venir'', que no se puede venir a otra parte (''venir'') que no sea ''aqui'' por el hablante'}
   - id: w.a.particle
     use: hear
     role: function
@@ -180,6 +181,7 @@ entries:
     source: {origin: class, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-05', text: '早上 es la primera hora; 上午 shàngwǔ, la mañana hasta mediodía. Con 好 da el saludo 早上好, que se acorta en 早！.'}
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '早上 es la primera hora, del despertar hasta las ocho o las nueve; 上午 es toda la mañana, hasta el mediodía. En catalán: 早上, la matinada; 上午, el matí. 早上七点 «las siete de la mañana».', original: 'en zaoshang o shangwu cards hacer mencion de que zaoshang es la early morning y que shangwu es toda la parte del dia antes del mediodia, en catalan de hehco es matinada zaoshang, matí es shangwu'}
   - id: e.zaoshanghao
     accept_pinyin_mismatch: 'tono neutro en el habla estándar (上 shang, 个 ge); los diccionarios dan el tono de cita'
     use: say
@@ -233,6 +235,7 @@ entries:
     source: {origin: class, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-05', text: 'Palabra a palabra: 好久 «mucho tiempo» + 不见 «sin verse». Suele seguirle 最近怎么样？, como en 好久不见，最近怎么样？ «cuánto tiempo, ¿qué tal últimamente?».'}
+      - {kind: mnemonic, private: false, date: '2026-10-11', text: '久 es una grulla de cuello largo, con una pata levantada, esperando un pez sin moverse: mucho tiempo.', original: ¡Una grulla! Me gusta más esa imagen para 久 (jiǔ).}
   - id: w.zuijin
     use: say
     role: content
@@ -450,3 +453,16 @@ entries:
       - {ref: w.zaijian, cue: 'zài, con a, y jiàn con a: para irte'}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
     comments: []
+  - id: w.zao.early
+    use: say
+    role: content
+    kind: word
+    hanzi: 早
+    pinyin: zǎo
+    meaning: {es: 'temprano, pronto', en: early}
+    pos: adjetivo
+    pos_reason: Aquí es «temprano», no el saludo.
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    relations: [w.zao]
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '你来得很早 «has llegado temprano»: con 得, tras el verbo. Suelto, por la mañana, 早！ es «¡buenos días!».'}

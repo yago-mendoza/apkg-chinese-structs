@@ -62,7 +62,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: '星 suelto casi no se usa: al hablar, 星星. Es el mismo 星 de 星期.'}
   - id: w.yueliang
-    use: hear
+    use: say
     role: content
     kind: word
     accept_pinyin_mismatch: '亮 va en tono neutro dentro de 月亮'
@@ -72,6 +72,7 @@ entries:
     source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27', rescued: 008-2026-10-08-pedir-ayuda-lugares-y-finales}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: '月 ya es «luna» (y «mes»); 月亮 es la palabra corriente para la luna. 亮 pierde el tono: yuèliang.'}
+      - {kind: mnemonic, private: false, date: '2026-10-11', text: 'La luna 月 brilla en lo alto: 亮 «brillante» lleva arriba la parte de arriba de 高 «alto».'}
   - id: w.xue.snow
     use: hear
     role: content

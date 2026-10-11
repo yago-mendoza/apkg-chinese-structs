@@ -534,3 +534,23 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: ¡Qué frío!}
     comments: []
+  - id: x.produce.yueliang
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.yueliang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «luna»? Escribe el pinyin.'}
+    answer: {typed: yue4 liang5, hanzi: 月亮, pinyin: yuèliang, meaning: luna}
+    comments: []
+  - id: x.listen.jintian-de-yueliang-hen-liang
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.jintian-de-yueliang-hen-liang
+    targets: [s.jintian-de-yueliang-hen-liang]
+    context: [w.jintian, w.de, w.yueliang, w.hen, w.liang.bright]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Hoy la luna brilla mucho.}
+    comments: []

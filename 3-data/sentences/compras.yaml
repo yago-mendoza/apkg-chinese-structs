@@ -453,7 +453,7 @@ sentences:
       - {text: 杯, ref: w.bei.cl, pinyin: bēi}
       - {text: 水, ref: w.shui, pinyin: shuǐ}
       - {text: 。}
-    translation: {es: 'Un vaso de agua, por favor.', en: 'A glass of water, please.'}
+    translation: {es: 'Quiero un vaso de agua.', en: 'I''d like a glass of water.'}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
   - id: s.wo-xihuan-cha-xiang-he-yi-bei
     use: hear
@@ -527,3 +527,149 @@ sentences:
       - {text: 。}
     translation: {es: Me gustaría tener una familia., en: I'd like to have a family.}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-ke-le
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 渴, ref: w.ke.thirsty, pinyin: kě}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: Tengo sed., en: I'm thirsty.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-tai-ke-le
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 太, ref: w.tai, pinyin: tài}
+      - {text: 渴, ref: w.ke.thirsty, pinyin: kě}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ！}
+    translation: {es: ¡Me muero de sed!, en: I'm so thirsty!}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-e-le
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 饿, ref: w.e.hungry, pinyin: è}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: Tengo hambre., en: I'm hungry.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-bu-chi-le
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 不, ref: w.bu, pinyin: bù}
+      - {text: 吃, ref: w.chi, pinyin: chī}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: Ya no como más., en: I won't eat any more.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.tai-gui-le
+    use: say
+    segments:
+      - {text: 太, ref: w.tai, pinyin: tài}
+      - {text: 贵, ref: w.gui, pinyin: guì}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ！}
+    translation: {es: ¡Es carísimo!, en: It's too expensive!}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.keyi-pianyi-yidian-ma
+    use: say
+    segments:
+      - {text: 可以, ref: w.keyi, pinyin: kěyǐ}
+      - {text: 便宜, ref: w.pianyi, pinyin: piányi}
+      - {text: 一点, ref: w.yidian, pinyin: yìdiǎn, sandhi: true}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Me lo deja un poco más barato?', en: 'Could you make it a bit cheaper?'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-dei-mai-xie
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 得, ref: w.dei, pinyin: děi}
+      - {text: 买, ref: w.mai, pinyin: mǎi}
+      - {text: 鞋, ref: w.xie.shoes, pinyin: xié}
+      - {text: 。}
+    translation: {es: Tengo que comprar zapatos., en: I have to buy shoes.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-ye-xiang-chi-nage
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 也, ref: w.ye, pinyin: yě}
+      - {text: 想, ref: w.xiang, pinyin: xiǎng}
+      - {text: 吃, ref: w.chi, pinyin: chī}
+      - {text: 那, ref: w.na.that, pinyin: nà}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 。}
+    translation: {es: Yo también quiero comer eso., en: I'd like to eat that too.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-yao-nage
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 那, ref: w.na.that, pinyin: nà}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 。}
+    translation: {es: Quiero ese., en: I'll have that one.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.dlg-shui
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 水, ref: w.shui, pinyin: shuǐ}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+      - {text: 不, ref: w.bu, pinyin: bú, sandhi: true}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: ，}
+      - {text: 谢谢, ref: e.xiexie, pinyin: xièxie}
+      - {text: 。}
+      - {text: 没问题, ref: e.meiwenti, pinyin: méi wèntí}
+      - {text: ，}
+      - {text: 因为, ref: w.yinwei, pinyin: yīnwèi}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 也, ref: w.ye, pinyin: yě}
+      - {text: 没有, ref: w.meiyou, pinyin: méiyǒu}
+      - {text: 水, ref: w.shui, pinyin: shuǐ}
+      - {text: ！}
+    translation: {es: '—¿Quieres agua? —No, gracias. —Sin problema, ¡porque yo tampoco tengo agua!', en: '—Do you want water? —No, thanks. —No problem, because I don''t have any water either!'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.qingwen-na-shi-shenme
+    use: hear
+    segments:
+      - {text: 请问, ref: e.qingwen, pinyin: qǐngwèn}
+      - {text: ，}
+      - {text: 那, ref: w.na.that, pinyin: nà}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 什么, ref: w.shenme, pinyin: shénme}
+      - {text: ？}
+    translation: {es: 'Perdone, ¿qué es eso?', en: 'Excuse me, what''s that?'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.neng-shao-yidian-ma
+    use: say
+    segments:
+      - {text: 能, ref: w.neng, pinyin: néng}
+      - {text: 少, ref: w.shao, pinyin: shǎo}
+      - {text: 一点, ref: w.yidian, pinyin: yìdiǎn, sandhi: true}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Puede dejarlo en menos?', en: 'Can you lower it a bit?'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.tai-gui-le-shao-yidian-ba
+    use: hear
+    segments:
+      - {text: 太, ref: w.tai, pinyin: tài}
+      - {text: 贵, ref: w.gui, pinyin: guì}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ，}
+      - {text: 少, ref: w.shao, pinyin: shǎo}
+      - {text: 一点, ref: w.yidian, pinyin: yìdiǎn, sandhi: true}
+      - {text: 吧, ref: w.ba.particle, pinyin: ba}
+      - {text: ！}
+    translation: {es: 'Es demasiado caro, ¡déjelo en menos!', en: 'It''s too expensive, lower it a bit!'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}

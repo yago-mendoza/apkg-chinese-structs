@@ -614,3 +614,17 @@ sentences:
       - {text: 。}
     translation: {es: '—Hablo chino. —¿En serio? —¡De verdad! Lo estoy estudiando.', en: '—I speak Chinese. —Really? —Really! I''m studying it.'}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.ta-shi-yi-ge-hen-hao-de-laoshi
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: tā}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 一, ref: w.num.yi, pinyin: yí, sandhi: true}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 好, ref: w.hao, pinyin: hǎo}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 老师, ref: w.laoshi, pinyin: lǎoshī}
+      - {text: 。}
+    translation: {es: Es un profesor muy bueno., en: He's a very good teacher.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}

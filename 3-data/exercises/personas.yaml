@@ -864,15 +864,6 @@ exercises:
     answer: {typed: peng2, hanzi: 朋, pinyin: péng, meaning: 'Sale en 朋友 péngyou «amigo, amiga», 小朋友 xiǎopéngyǒu «niño, niña
         (al hablarle)».'}
     comments: []
-  - id: x.nuance.sheng-tone
-    added: 2026-10-07
-    lang: es
-    type: nuance
-    targets: [w.yisheng, w.xuesheng, w.xiansheng]
-    skills: [comprehension, discrimination]
-    prompt: {text: '医生, 学生 y 先生: ¿el 生 lleva tono?'}
-    answer: {meaning: 'Depende de cada palabra, no del carácter: 医生 yīshēng lo mantiene; 先生 xiānsheng lo pierde, y 学生 se oye a menudo xuésheng, átono.'}
-    comments: []
   - id: x.contrast.yisheng
     added: 2026-10-07
     lang: es
@@ -1054,4 +1045,88 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Quién ha venido?»'}
     answer: {meaning: '¿Quién ha venido?'}
+    comments: []
+  - id: x.dictation.nan.male
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.nan.male]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nan2, hanzi: 男, pinyin: nán, meaning: 'hombre, masculino (en carteles: 男)'}
+    comments: []
+  - id: x.read.nan.male
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.nan.male]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 男}
+    answer: {hanzi: 男, pinyin: nán, meaning: 'hombre, masculino (en carteles: 男)'}
+    comments: []
+  - id: x.dictation.nv.female
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.nv.female]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nü3, hanzi: 女, pinyin: nǚ, meaning: 'mujer, femenino (en carteles: 女)'}
+    comments: []
+  - id: x.read.nv.female
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.nv.female]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 女}
+    answer: {hanzi: 女, pinyin: nǚ, meaning: 'mujer, femenino (en carteles: 女)'}
+    comments: []
+  - id: x.dictation.tongxue
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.tongxue]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: tong2 xue2, hanzi: 同学, pinyin: tóngxué, meaning: compañero de clase}
+    comments: []
+  - id: x.produce.tongxue
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.tongxue]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «compañero de clase»? Escribe el pinyin.'}
+    answer: {typed: tong2 xue2, hanzi: 同学, pinyin: tóngxué, meaning: compañero de clase}
+    comments: []
+  - id: x.read.tongxue
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.tongxue]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 同学}
+    answer: {hanzi: 同学, pinyin: tóngxué, meaning: compañero de clase}
+    comments: []
+  - id: x.contrast.nan.male
+    added: 2026-10-11
+    lang: es
+    type: contrast
+    group: g.nan-nan
+    targets: [w.nan.male]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 男, pinyin: nán, meaning: 'hombre, masculino (en carteles: 男)'}
+    comments: []
+  - id: x.listen.ta-shi-wo-de-tongxue
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ta-shi-wo-de-tongxue
+    targets: [s.ta-shi-wo-de-tongxue]
+    context: [w.ta.he, w.shi, w.wo, w.de, w.tongxue]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es mi compañero de clase.}
     comments: []

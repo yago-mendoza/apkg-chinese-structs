@@ -502,3 +502,40 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Ya lo hablamos mañana.}
     comments: []
+  - id: x.dictation.haoba
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [e.haoba]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hao3 ba5, hanzi: 好吧, pinyin: hǎo ba, meaning: 'bueno, vale (aceptando)'}
+    comments: []
+  - id: x.produce.haoba
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [e.haoba]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «bueno, vale (aceptando)»? Escribe el pinyin.'}
+    answer: {typed: hao3 ba5, hanzi: 好吧, pinyin: hǎo ba, meaning: 'bueno, vale (aceptando)'}
+    comments: []
+  - id: x.read.haoba
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [e.haoba]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 好吧}
+    answer: {hanzi: 好吧, pinyin: hǎo ba, meaning: 'bueno, vale (aceptando)'}
+    comments: []
+  - id: x.tones.haoba
+    added: 2026-10-11
+    lang: es
+    type: tones
+    targets: [e.haoba]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 好吧, pinyin: hao ba}
+    answer: {typed: '35', hanzi: 好吧, pinyin: hǎo ba, meaning: 'bueno, vale (aceptando)'}
+    comments: []

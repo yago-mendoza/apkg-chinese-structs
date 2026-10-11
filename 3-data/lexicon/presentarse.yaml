@@ -120,6 +120,7 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-09', text: 'No tiene una sola traducción: 我的 «mío», 这是我的 «es mío», 真的 «de verdad». Une lo que describe con lo descrito.'}
+      - {kind: mnemonic, private: false, date: '2026-10-11', text: 'Como los otros «conejitos» (对, 时, 狗), 的 lleva una pieza a cada lado; aquí, un palito encima las une, como 的 une al dueño con lo suyo: 我的书.', original: '(idea, el conejito de ''de'' posesivo lleva sus dos compentes aencima nu palito porque estas vinculandolos, esto de esta persona, sabes ¿? de.)'}
   - id: w.jiao
     use: say
     role: content
@@ -243,6 +244,7 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: character, private: false, date: '2026-09-27', text: 'Su origen es el dibujo de una planta de trigo, tomado prestado por su sonido para «venir».'}
+      - {kind: mnemonic, private: false, date: '2026-10-11', text: '来 es como una marca bonita en el mapa: el sitio donde estás tú. Por eso solo se puede venir hacia aquí.', original: mientras que 'lai' es venir porque es como una marca bonita de donde estsa. venirrrr}
   - id: w.laizi
     use: say
     role: content
@@ -301,7 +303,7 @@ entries:
     source: {origin: class-audio, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: grabación de la clase, date: '2026-09-29'}
     comments:
       - {kind: teacher, private: false, date: '2026-10-01', text: 'Detrás del apellido: 白先生 «el señor Bai». Es como se llama a alguien en un trato formal; no por el nombre completo.'}
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '先 «antes» + 生 «nacer»: el que nació antes. Ojo: la segunda sílaba se dice átona, xiānsheng.'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '先 «antes» + 生 «nacer»: el que nació antes.'}
   - id: w.na.which
     use: say
     role: function

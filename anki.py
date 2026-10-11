@@ -443,69 +443,6 @@ def exercise_roles(ex, sentences_by_id, entries_by_id=None):
     return roles
 
 
-# ---------------------------------------------------------------- trampas fonéticas
-#
-# Letras del pinyin que un hispanohablante lee mal. Se detectan en cada sílaba y se muestran solas
-# en las tarjetas de pronunciar o reconocer por el oído (escucha, voz alta, tonos), como mucho
-# PHONETIC_MAX por tarjeta, de más a menos engañosa. Las pistas propias de YAGO van aparte, como
-# comentario `sound`.
-
-PHONETIC_MAX = 3
-INITIAL = re.compile(r"^(zh|ch|sh|[bpmfdtnlgkhjqxrzcsyw])?(.*)$")
-PHONETIC_TRAPS = [  # (clave, condición sobre (inicial, final), texto)
-    ("i-muda-retro", lambda i, f: i in ("zh", "ch", "sh", "r") and f == "i",
-     "{s}: la i no suena i; se alarga la consonante, con la lengua curvada [{ipa}]"),
-    ("i-muda-dental", lambda i, f: i in ("z", "c", "s") and f == "i",
-     "{s}: la i no suena i; es un zumbido tras la consonante [{ipa}]"),
-    ("u-es-ü", lambda i, f: i in ("j", "q", "x", "y") and f.startswith("u"),
-     "{s}: tras j, q, x o y la u es una ü: labios de u y lengua de i [{ipa}]"),
-    ("ü", lambda i, f: "ü" in f, "{s}: ü, labios de u y lengua de i [{ipa}]"),
-    ("x", lambda i, f: i == "x", "{s}: x suena casi como una sh suave, con la lengua plana y sonriendo [{ipa}]"),
-    ("q", lambda i, f: i == "q", "{s}: q es una ch con soplo de aire y la lengua plana, no una k [{ipa}]"),
-    ("j", lambda i, f: i == "j", "{s}: j es una ch suave con la lengua plana, no una jota [{ipa}]"),
-    ("r", lambda i, f: i == "r", "{s}: r, entre la r inglesa y la y porteña; nunca vibra [{ipa}]"),
-    ("zh-ch-sh", lambda i, f: i in ("zh", "ch", "sh"), "{s}: {i} con la punta de la lengua curvada hacia atrás [{ipa}]"),
-    ("z-c", lambda i, f: i in ("z", "c"), "{s}: {i} suena ts{aire}, como en «pizza» [{ipa}]"),
-    ("e-no-española", lambda i, f: f in ("e", "eng") and i not in ("y",),
-     "{s}: esta e no es española: suena hacia atrás, casi como una o sin redondear [{ipa}]"),
-    ("en", lambda i, f: f == "en", "{s}: en suena con una e muy breve, casi «ən» [{ipa}]"),
-    ("ian", lambda i, f: f in ("ian", "yan") or (i == "y" and f == "an"), "{s}: -ian suena «ien», no «ian» [{ipa}]"),
-    ("ui", lambda i, f: f == "ui", "{s}: -ui se lee «uei» [{ipa}]"),
-    ("iu", lambda i, f: f == "iu", "{s}: -iu se lee «iou» [{ipa}]"),
-    ("un", lambda i, f: f == "un" and i not in ("j", "q", "x", "y"), "{s}: -un se lee «uen» [{ipa}]"),
-    ("ong", lambda i, f: f in ("ong", "iong"), "{s}: -ong suena «ung» [{ipa}]"),
-    ("h", lambda i, f: i == "h", "{s}: h es una jota suave, rasposa [{ipa}]"),
-    ("b-d-g", lambda i, f: i in ("b", "d", "g"), "{s}: {i} sin aire, casi una {sorda} española [{ipa}]"),
-    ("p-t-k", lambda i, f: i in ("p", "t", "k"), "{s}: {i} con un soplo de aire claro [{ipa}]"),
-]
-SORDA = {"b": "p", "d": "t", "g": "k"}
-
-
-def phonetic_notes(hanzi, reading):
-    """Trampas fonéticas de una palabra o frase, sin repetir regla y en orden de importancia."""
-    syl = syllable_tones(hanzi, reading)
-    if not syl:
-        return []
-    found = {}
-    for bare, tone in syl:
-        if tone == "erhua":
-            continue
-        i, f = INITIAL.match(bare).groups()
-        i = i or ""
-        for n, (key, cond, text) in enumerate(PHONETIC_TRAPS):
-            if key not in found and cond(i, f):
-                marked = numeric_to_marked(f"{bare}{tone}")
-                phon = pinyin_to_ipa(f"{bare}{tone}")
-                found[key] = (n, bare, text.format(s=marked, i=i, ipa=phon, sorda=SORDA.get(i, ""),
-                                                   aire=" con aire" if i == "c" else "").replace(" []", ""))
-    # Primero una nota por sílaba distinta (la más engañosa de cada una); luego el resto.
-    ranked, used, rest = [], set(), []
-    for n, bare, t in sorted(found.values()):
-        (rest if bare in used else ranked).append(t)
-        used.add(bare)
-    return (ranked + rest)[:PHONETIC_MAX]
-
-
 # ---------------------------------------------------------------- cobertura
 #
 # Cada entrada y frase declara `use`: para qué la necesita YAGO. Escalera read ⊂ hear ⊂ say, o
@@ -635,10 +572,10 @@ def required_cards(item, groups_of, tone_picks=frozenset()):
         if mods & {"hear", "say"}:
             req.add("pattern")
     elif kind == "pronunciation":
-        if "hear" in mods:
+        # Se practica de oído, nunca como teoría (docs/goal.md, «El pinyin por delante»): decirla no pide tarjeta
+        # de regla.
+        if mods & {"hear", "say"}:
             req.add("listen")
-        if "say" in mods:
-            req.add("speak")
     if mods:
         for g in groups_of.get(item.get("id"), []):
             if g.get("basis") in ("visual", "homophone", "soundalike"):
@@ -663,6 +600,7 @@ def satisfied(ex):
         "pattern": {"pattern"},        # elegir entre la frase buena y su calco
         "comprehension": {"comprehension"},   # leer un texto corto y responder: nunca exigido, a mano
         "charsound": set(),            # un hanzi suelto y su sílaba: lo exige char_sound_picks, no las entradas
+        "compose": {"compose"},        # construir con unas palabras en una escena: nunca exigido, a mano
     }.get(t, set())
 
 
@@ -758,7 +696,7 @@ def cmd_lookup(query):
 PRIMARY = {"read": "lectura", "listen": "escucha", "tones": "tonos", "produce": "producción",
            "derive": "producción", "cloze": "producción", "speak": "voz alta", "contrast": "contraste",
            "components": "componentes", "nuance": "matiz", "pattern": "estructura", "comprehension": "comprensión",
-           "charsound": "sonido del hanzi"}
+           "charsound": "sonido del hanzi", "compose": "construir"}
 GENERATED = "<!-- Generado por `anki.py notebook` desde 3-data/. No editar: se rehace en cada lote. -->"
 REVIEW_HEADER = ("<!-- REVIEW: para opinar. Debajo de cada punto hay una línea «>»: escribe lo que quieras (sí, no, "
                  "un matiz, una duda, una frase, una corrección). Lo que escribas entra en el siguiente lote; lo que "
@@ -1480,8 +1418,8 @@ def wants_audio(ex, eby):
     """Si la respuesta lleva audio. El contraste visual (大/太/天) se decide mirando la
     forma: no lo necesita. El de homófonos y el de palabras que se parecen al oído sí, porque el
     sonido es lo que se contrasta."""
-    if ex.get("type") in ("components", "nuance", "pattern", "comprehension"):   # comprensión: el audio va por frase
-        return False
+    if ex.get("type") in ("components", "nuance", "pattern", "comprehension", "compose"):   # comprensión y construir:
+        return False                                                                         # el audio va por frase
     if ex.get("type") == "charsound":
         # Un hanzi suelto se lee mal en voz sintética si tiene otra lectura (什 shí, 么 yāo): suenan sus palabras.
         return False
@@ -1744,6 +1682,54 @@ def comprehension_rules(ex, eby, sby, errors, warnings):
         errors.append(f"{xid}: falta la respuesta (answer: {{meaning: …}})")
 
 
+COMPOSE_WORDS = (3, 6)          # palabras que da una tarjeta de construir: material para mezclar, no una lista
+COMPOSE_MODELS_MIN = 2          # frases modelo como mínimo, cada una con otra mezcla
+
+
+def compose_rules(ex, eby, sby, errors, warnings):
+    """Construir (docs/goal.md, «Cómo se practican las frases»): unas palabras que ya sabe y una escena; dice algo que
+    encaje, con esas u otras. Detrás, varias frases del mazo que lo resuelven, cada una con otra mezcla de palabras."""
+    xid, words = ex["id"], ex.get("words") or []
+    lo, hi = COMPOSE_WORDS
+    if not lo <= len(words) <= hi:
+        errors.append(f"{xid}: una tarjeta de construir da entre {lo} y {hi} palabras (words)")
+    for w in words:
+        if (eby.get(w) or {}).get("kind") not in ("word", "expression"):
+            errors.append(f"{xid}: {w} no es una palabra del mazo")
+    models = [sby[t] for t in ex.get("targets", []) if t in sby]
+    if len(models) != len(ex.get("targets", [])) or len(models) < COMPOSE_MODELS_MIN:
+        errors.append(f"{xid}: las respuestas modelo son frases del mazo (targets: s.…), al menos {COMPOSE_MODELS_MIN}")
+    mixes = []
+    for s in models:
+        used = frozenset(seg.get("ref") for seg in s.get("segments", [])) & set(words)
+        if len(used) < 2:
+            warnings.append(f"{xid}: {s['id']} usa menos de dos de sus palabras: no enseña a combinarlas")
+        if used in mixes:
+            warnings.append(f"{xid}: {s['id']} repite la mezcla de palabras de otra respuesta")
+        mixes.append(used)
+    if not (ex.get("prompt") or {}).get("text"):
+        errors.append(f"{xid}: falta la escena (prompt: {{text: …}})")
+
+
+def choice_rules(ex, errors, warnings):
+    """Elegir entre opciones (a, b, c…): de dos a cinco, y la respuesta es una de ellas."""
+    xid, opts = ex["id"], (ex.get("prompt") or {}).get("options") or []
+    ans = ex.get("answer") or {}
+    if not 2 <= len(opts) <= len(CHOICE_LETTERS) or not all(isinstance(o, str) and o.strip() for o in opts):
+        errors.append(f"{xid}: las opciones son de 2 a {len(CHOICE_LETTERS)} textos (prompt: {{options: […]}})")
+        return
+    letter = ans.get("choice")
+    if letter not in CHOICE_LETTERS[:len(opts)]:
+        errors.append(f"{xid}: answer.choice debe ser la letra de una opción (a–{CHOICE_LETTERS[len(opts) - 1]})")
+    elif ans.get("hanzi") and han_only(ans["hanzi"]) != han_only(opts[CHOICE_LETTERS.index(letter)]):
+        warnings.append(f"{xid}: la respuesta no es la opción {letter}")
+    if len(set(opts)) != len(opts):
+        errors.append(f"{xid}: hay opciones repetidas")
+
+
+CHOICE_LETTERS = "abcde"
+
+
 def quality_rules(entries, sentences, exercises, eby, sby, errors, warnings):
     """Reglas de calidad que no dependen del criterio de nadie (docs/design.md y docs/goal.md)."""
     grammar_rules(entries, sentences, eby, sby, errors, warnings)
@@ -1808,7 +1794,7 @@ def quality_rules(entries, sentences, exercises, eby, sby, errors, warnings):
     for ex in exercises:
         first = eby.get((ex.get("targets") or [None])[0]) or {}
         if first.get("kind") in ("word", "expression") and ex.get("type") in ("listen", "produce") \
-                and not (ex.get("answer") or {}).get("typed"):
+                and not (ex.get("answer") or {}).get("typed") and not ex.get("pair"):   # una pareja se elige: 1.ª o 2.ª
             errors.append(f"{ex['id']}: {ex['type']} de una palabra sin respuesta escrita (typed): se escribe lo oído o lo producido")
     # Huecos: una frase por tarjeta de hueco, de nivel no superior al de la palabra.
     seen = {}
@@ -1913,7 +1899,7 @@ def validate(entries, sentences, exercises, require_audio=True):
         if not s.get("translation"):
             errors.append(f"{s['id']}: falta traducción")
     types = {"read", "listen", "tones", "cloze", "produce", "speak", "components", "contrast", "derive", "nuance",
-             "pattern", "comprehension", "charsound"}
+             "pattern", "comprehension", "charsound", "compose"}
     seen = {}
     for ex in exercises:
         xid = ex["id"]
@@ -1927,12 +1913,25 @@ def validate(entries, sentences, exercises, require_audio=True):
         # que no pasó, con adjetivos): no son redundancia. Igual las situaciones, cada una con su escena.
         if ex.get("type") == "cloze" or xid.startswith("x.situation."):
             sound_key = (ex.get("sentence"), (ex.get("prompt") or {}).get("text"))
+        # Una pareja para oír es lo que suena; un matiz, su pregunta.
+        if ex.get("pair"):
+            sound_key = tuple(it.get("hanzi") for it in ex["pair"])
+        if ex.get("type") == "nuance":
+            sound_key = (ex.get("prompt") or {}).get("text")
+        # Construir: cada tarjeta es su escena y sus palabras. Elegir: cada una, sus opciones.
+        if ex.get("type") == "compose":
+            sound_key = ((ex.get("prompt") or {}).get("text"), tuple(ex.get("words", [])))
+        if (ex.get("prompt") or {}).get("options"):
+            sound_key = ((ex.get("prompt") or {}).get("text"), tuple(ex["prompt"]["options"]))
         key = (ex.get("type"), tuple(sorted(ex.get("targets", []))), sound_key)
         if key in seen:
             warnings.append(f"{xid}: evalúa lo mismo que {seen[key]} ({key[0]}); ¿redundante?")
         seen.setdefault(key, xid)
         if ex.get("type") not in types:
             errors.append(f"{xid}: tipo desconocido «{ex.get('type')}»")
+        # La teoría de pronunciación no tiene tarjetas propias (docs/goal.md, «El pinyin por delante»).
+        if xid.startswith("x.rule."):
+            errors.append(f"{xid}: no hay tarjetas de regla de pronunciación; se practica de oído (parejas, dictados)")
         if not ex.get("targets"):
             errors.append(f"{xid}: sin objetivos (targets)")
         if not ex.get("skills"):
@@ -1958,6 +1957,10 @@ def validate(entries, sentences, exercises, require_audio=True):
             errors.append(f"{xid}: typed «{typed}» no equivale a «{ans['pinyin']}»")
         if ex.get("type") == "comprehension":
             comprehension_rules(ex, eby, sby, errors, warnings)
+        if ex.get("type") == "compose":
+            compose_rules(ex, eby, sby, errors, warnings)
+        if "options" in (ex.get("prompt") or {}):
+            choice_rules(ex, errors, warnings)
         if "pair" in ex:
             pair = ex["pair"] or []
             if len(pair) != 2 or not all(it.get("hanzi") and it.get("pinyin") and it.get("meaning") for it in pair):
@@ -2198,7 +2201,7 @@ CSS = """
         letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
 .lv-1 { --lv: #b3301d; } .lv-2 { --lv: #d0632f; } .lv-3 { --lv: #df9340; } .lv-4 { --lv: #cdb35c; }
 .lv-5 { --lv: #8fa972; } .lv-6 { --lv: #5f9590; } .lv-7 { --lv: #557aa3; }
-.task { font-size: 17px; line-height: 1.45; max-width: 26em; margin: 0 auto 14px; color: var(--muted); }
+.task { font-size: 17px; line-height: 1.45; max-width: 26em; margin: 0 auto 14px; color: var(--muted); text-align: left; }
 .task .meta { font-size: 11px; }
 .front { margin: 6px 0; }
 .hanzi { font-size: 54px; line-height: 1.2; }
@@ -2269,6 +2272,14 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .slot-Num { --s: #b07aa1; } .slot-Nombre { --s: #76b7b2; } .slot-Lugar { --s: #9c755f; }
 .slot-Tiempo { --s: #edc948; } .slot-Frase { --s: #8c8c8c; }
 .passage { max-width: 26em; margin: 0 auto; text-align: left; }
+.choices { max-width: 26em; margin: 12px auto 0; padding: 0; list-style: none; text-align: left; }
+.choices li { font-size: 24px; padding: 4px 0; }
+.choices .opt, .choice-ok { font: 700 15px/1 Menlo, Consolas, monospace; color: var(--muted); margin-right: 6px; }
+.choice-ok { font-size: 20px; color: inherit; margin: 0 0 10px; }
+.words { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; max-width: 26em; margin: 8px auto 0; }
+.word { display: inline-flex; flex-direction: column; align-items: center; padding: 6px 10px; border-radius: 10px;
+        border: 1px solid var(--line); background: var(--panel); }
+.word .hz { font-size: 28px; } .word .py { font-size: 14px; color: var(--muted); }
 .passage .hz-line { font-size: 28px; line-height: 1.6; }
 .passage .sent { justify-content: flex-start; margin: 0 6px 6px 0; }
 details.question { max-width: 26em; margin: 18px auto 0; padding: 10px 12px; border-radius: 12px;
@@ -2422,7 +2433,7 @@ def partner_example(ex, sby, eby):
     """Lo que se confunde aparece junto, pero dicho: si el objetivo tiene pareja en un grupo de contraste o de serie
     (十 / 是, 要 / 喜欢), una frase de la pareja en su propio apartado, «Para no confundirlo con 是 shì». Antes iba
     mezclada con los ejemplos y parecía un ejemplo equivocado. (entrada de la pareja, id de la frase) o None."""
-    if ex.get("reveal") or ex.get("type") in ("cloze", "nuance", "pattern", "comprehension", "charsound"):
+    if ex.get("reveal") or ex.get("type") in ("cloze", "nuance", "pattern", "comprehension", "charsound", "compose"):
         return None
     targets = [t for t in ex.get("targets", []) if t not in sby]
     if not targets:
@@ -2479,10 +2490,20 @@ def card_fields(ex, eby, sby, manifest, media_files):
         front = ('<div class="passage">' + para(text) + "</div>"
                  + '<details class="question"><summary>Pregunta</summary>'
                  + (line(qs) if qs else f'<div class="meaning">{esc(q.get(lang, ""))}</div>') + "</details>")
+    elif ex["type"] == "compose":
+        # Construir: las palabras, como material; la escena ya va en la consigna. Con su pinyin: son palabras que ya
+        # sabe, y lo que se practica es juntarlas.
+        front = '<div class="words">' + "".join(
+            f'<span class="word"><span class="hz">{esc(eby[w]["hanzi"])}</span><span class="py">{esc(eby[w].get("pinyin"))}</span></span>'
+            for w in ex.get("words", []) if w in eby) + "</div>"
     elif prompt.get("hanzi"):
         front = f'<div class="hanzi">{esc(prompt["hanzi"])}</div>'
     if prompt.get("pinyin"):
         front += f'<div class="pinyin">{esc(prompt["pinyin"])}</div>'
+    if prompt.get("options"):
+        # Elegir: las opciones con su letra, alineadas a la izquierda (review 009).
+        front += '<ol class="choices">' + "".join(
+            f'<li><span class="opt">{CHOICE_LETTERS[i]})</span> {esc(o)}</li>' for i, o in enumerate(prompt["options"])) + "</ol>"
     if ex["type"] == "tones":
         front += ('<div class="legend">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · '
                   '5 a neutro, corto</div>')
@@ -2520,6 +2541,11 @@ def card_fields(ex, eby, sby, manifest, media_files):
             f'{sound(sentence_text(s), manifest, media_files)}</div>'
             for s in ([q] if q else []) + [sby[t] for t in ex.get("targets", []) if t in sby])
         meaning = None
+    elif ex["type"] == "compose":
+        # Varias formas de resolver la escena, cada una con su audio: lo que se compara con lo que uno dijo.
+        back = "".join(f'<div class="example">{render_sentence(sby[t])}<div>{esc(sby[t]["translation"].get(lang))}</div>'
+                       f'{sound(sentence_text(sby[t]), manifest, media_files)}</div>' for t in ex.get("targets", []) if t in sby)
+        meaning = ans.get("meaning")
     elif ex.get("pair"):
         back = "".join(f'<div class="pair-row"><span class="pair-n">{i}</span><b class="vs-hz">{esc(it["hanzi"])}</b>'
                        f'<span class="vs-py">{esc(it["pinyin"])}</span><span class="vs-gl">{esc(it.get("meaning", ""))}</span>'
@@ -2535,6 +2561,10 @@ def card_fields(ex, eby, sby, manifest, media_files):
             meaning = annotate_pinyin(meaning, eby, sby)
     if meaning:
         back += f'<div class="meaning">{esc(meaning)}</div>'
+    if prompt.get("options") and ans.get("choice") in CHOICE_LETTERS:
+        n = CHOICE_LETTERS.index(ans["choice"])
+        if n < len(prompt["options"]):
+            back = f'<div class="choice-ok">{ans["choice"]}) {esc(prompt["options"][n])}</div>' + back
     # Otras formas igual de buenas de decirlo (我们是朋友 / 我和他是朋友): se dan por buenas al puntuarse.
     for sid in ex.get("also", []):
         if sid in sby:
@@ -2622,21 +2652,8 @@ def card_fields(ex, eby, sby, manifest, media_files):
                 add(8, "<h4>Mismo sonido</h4>" + "".join(f"<div>{esc(line)}</div>" for line in same))
             if senses:
                 add(8, "<h4>Otros sentidos</h4>" + "".join(f"<div>{esc(line)}</div>" for line in senses))
-    for rid in ex.get("refs", []):
-        p = eby.get(rid, {})
-        if p.get("kind") == "pronunciation":
-            example = (f"<div>Ejemplo: {esc(p.get('audio_text'))}"
-                       + (f" · {esc(p['audio_pinyin'])}" if p.get("audio_pinyin") else "")
-                       + f" {sound(p.get('audio_text'), manifest, media_files)}</div>") if p.get("audio_text") else ""
-            add(9, f"<h4>{esc(p.get('title'))}</h4>{esc(p.get('explanation'))}{example}")
-    # Trampas fonéticas en las tarjetas de pronunciar o reconocer por el oído.
-    if ex["type"] in ("listen", "speak", "tones"):
-        spoken_text = sentence_text(sent) if sent else ans.get("hanzi")
-        spoken_pinyin = " ".join(seg["pinyin"] for seg in sent["segments"] if seg.get("pinyin")) if sent \
-            else ans.get("pinyin")
-        traps = phonetic_notes(spoken_text, spoken_pinyin) if spoken_text and spoken_pinyin else []
-        if traps:
-            add(5, "<h4>Pronunciación</h4>" + "".join(f"<div>{esc(t)}</div>" for t in traps))
+    # La teoría de pronunciación (reglas de las entradas p., trampas del pinyin) no sale en las tarjetas: el que
+    # aprende la estudia aparte (lote 010). Las tarjetas de pronunciación son de oído: parejas, dictados y tonos.
     # La categoría de la palabra que se responde, en pequeño bajo el significado.
     first = eby.get((ex.get("targets") or [None])[0], {})
     if not sent and ex["type"] not in ("pattern", "contrast", "comprehension") and pos_of(first) \
@@ -2647,7 +2664,7 @@ def card_fields(ex, eby, sby, manifest, media_files):
             f"<div class=\"example\"><span class=\"hz\">{esc(eby[w]['hanzi'])}</span> {esc(eby[w].get('pinyin'))} · "
             f"{esc((eby[w].get('meaning') or {}).get(lang, ''))}{sound(eby[w]['hanzi'], manifest, media_files)}</div>"
             for w in ex.get("targets", []) if w in eby))
-    examples = [] if ex["type"] in ("pattern", "charsound") else examples_for(ex, sby, eby)
+    examples = [] if ex["type"] in ("pattern", "charsound", "compose") else examples_for(ex, sby, eby)
     if examples:
         add(2, f"<h4>{'Ejemplo' if len(examples) == 1 else 'Ejemplos'}</h4>" + "".join(
             f"<div class=\"example\">{render_sentence(sby[sid])}<div>{esc(sby[sid]['translation'].get(lang))}</div>"
@@ -2870,7 +2887,7 @@ def note_section(html_note):
 TYPE_ES = {"read": "Leer", "listen": "Escuchar", "produce": "Decir", "speak": "En voz alta", "tones": "Tonos",
            "cloze": "Hueco", "contrast": "Contraste", "components": "Componentes", "derive": "Deducir",
            "nuance": "Matiz", "pattern": "Estructura", "comprehension": "Comprensión",
-           "charsound": "Sonido del hanzi"}
+           "charsound": "Sonido del hanzi", "compose": "Construir"}
 
 
 def card_meta(ex, eby, sby):
@@ -3672,7 +3689,8 @@ def find_anki():
 
 STAGE_LAG = 1
 STAGE = {"read": 0, "contrast": 1, "components": 1, "nuance": 1, "listen": 2, "tones": 3,
-         "produce": 4, "derive": 4, "cloze": 4, "speak": 5, "pattern": 5, "comprehension": 5, "charsound": 3}
+         "produce": 4, "derive": 4, "cloze": 4, "speak": 5, "pattern": 5, "comprehension": 5, "charsound": 3,
+         "compose": 5}
 STAGE_GAP = 15     # posiciones (unas 15 nuevas: un día de estudio) entre un paso de una entrada y el siguiente
 
 
@@ -4103,7 +4121,7 @@ def skill_of(ex):
     t, audio = ex.get("type"), (ex.get("prompt") or {}).get("audio")
     if t == "listen" or (t == "tones" and audio):
         return "oír"
-    if t in ("produce", "speak", "derive", "cloze"):
+    if t in ("produce", "speak", "derive", "cloze", "compose"):
         return "decir"
     if t in ("read", "comprehension", "components"):
         return "leer"

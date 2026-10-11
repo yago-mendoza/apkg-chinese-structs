@@ -129,8 +129,9 @@ entries:
     accept_pinyin_mismatch: 'clasificador átono: se dice ge'
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-09-27', text: 'Entre el número y la cosa: 三个朋友 «tres amigos». Se dice átono.'}
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 'Entre el número y la cosa: 三个朋友 «tres amigos».'}
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'El clasificador no se omite: sin él la frase se entiende, pero suena tan mal como «yo tener tres amigo». A veces informa de la forma: 张 zhāng [HSK 3] para cosas planas, 条 tiáo [HSK 2] para alargadas. Van sin clasificador las palabras que ya son unidad, como 天 y 年: 三天 «tres días», 两年 «dos años».'}
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Además de con números, el clasificador va detrás de 这, 那, 哪, 每 [HSK 3] y 几: 那个人 «esa persona», 哪本书？ «¿qué libro?», 几个人？ «¿cuántas personas?». Pero 这 solo, «esto», no lo lleva: 这是书 «esto es un libro».'}
   - id: w.meiyou
     use: say
     role: content
@@ -330,11 +331,12 @@ entries:
   - id: g.qian-qian
     kind: group
     basis: soundalike
-    title: '千 qiān y 钱 qián'
+    title: '千 qiān, 钱 qián y 前 qián'
     explanation: 'Salen juntos al hablar de dinero (两千块钱): 千 es alto y plano, 钱 sube.'
     members:
       - {ref: w.qian.thousand, cue: 'alto y plano'}
       - {ref: w.qian, cue: 'sube'}
+      - {ref: w.qian.before, cue: 'sube, como 钱; delante o «hace»: 两天前'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
   - id: g.bai-bai
@@ -534,4 +536,42 @@ entries:
       - {ref: w.ci, cue: 'cae'}
       - {ref: w.ci.word, cue: 'sube'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments: []
+  - id: w.dian.decimal
+    use: context
+    role: content
+    kind: word
+    hanzi: 点
+    pinyin: diǎn
+    meaning: {es: 'coma decimal (三点五 = 3,5)', en: decimal point}
+    pos: sustantivo
+    pos_reason: 'Aquí no es la hora: es la coma de los decimales.'
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '三点五 «3,5»; 零点八 «0,8». En una hora, en cambio, 三点 son «las tres»: lo que sigue a 点 decide (三点五分 «las tres y cinco»).'}
+    relations: [w.dian.oclock]
+    use_reason: 'Solo dentro de números (三点五): se practica en las cifras de corrido y en un hueco.'
+  - id: w.yao.one
+    use: hear
+    role: content
+    kind: word
+    hanzi: 幺
+    pinyin: yāo
+    meaning: {es: uno (al dar teléfonos y números de habitación), en: one (in phone numbers)}
+    level: 1
+    level_reason: No está en la lista, pero se oye siempre al dar un teléfono (电话号码 es HSK 1) o un número de habitación.
+    pos: numero
+    pos_reason: Es el 1 al dictar cifras.
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Al dictar cifras sueltas, el 1 se dice yāo para no confundirlo con 七 qī: 110 es yāo yāo líng. Contando o en una cantidad, 一 yī.'}
+  - id: g.yao-yao
+    kind: group
+    basis: soundalike
+    title: '要 yào y 幺 yāo'
+    explanation: 'Se parecen al oído; el tono los separa.'
+    members:
+      - {ref: w.yao, cue: 'cae'}
+      - {ref: w.yao.one, cue: 'alto y plano; solo al dictar cifras'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments: []

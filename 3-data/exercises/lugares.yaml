@@ -803,3 +803,282 @@ exercises:
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 边}
     answer: {typed: bian1, hanzi: 边, pinyin: biān, meaning: 'Sale en 旁边 pángbiān «al lado», 一边 yībiān «mientras (一边…一边…)».'}
     comments: []
+  - id: x.compose.oficina-bano
+    added: '2026-10-11'
+    lang: es
+    type: compose
+    targets: [s.xishoujian-zai-nabian, s.zhebian-zou, s.zai-zhebian-ni-gen-wo-zou-ba]
+    words: [w.xishoujian, w.zai.at, w.nabian, w.zhebian, w.zou]
+    skills: [production, speaking]
+    prompt: {text: Construye. Es el primer día de un compañero nuevo en la oficina y te pregunta dónde está el baño. Indícaselo con estas palabras o con otras.}
+    answer: {meaning: '这边 y 那边: «por aquí» y «por allí».'}
+    comments: []
+  - id: x.cloze.huiqu
+    added: '2026-10-11'
+    lang: es
+    type: cloze
+    sentence: s.wo-yao-huiqu-le
+    gap: w.huiqu
+    targets: [w.huiqu]
+    context: [w.wo, w.yao, w.le]
+    skills: [production, pinyin]
+    prompt: {text: '¿回来 o 回去? «Tengo que volver.» (a casa, lejos de aquí)'}
+    answer: {typed: hui2 qu, hanzi: 回去, pinyin: huíqu, meaning: '回去: volver alejándose de quien habla.'}
+    comments: []
+  - id: x.dictation.huiqu
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.huiqu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hui2 qu5, hanzi: 回去, pinyin: huíqu, meaning: volver (allí)}
+    comments: []
+  - id: x.read.huiqu
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.huiqu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 回去}
+    answer: {hanzi: 回去, pinyin: huíqu, meaning: volver (allí)}
+    comments: []
+  - id: x.tones.huiqu
+    added: 2026-10-11
+    lang: es
+    type: tones
+    targets: [w.huiqu]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 回去, pinyin: hui qu}
+    answer: {typed: '25', hanzi: 回去, pinyin: huíqu, meaning: volver (allí)}
+    comments: []
+  - id: x.dictation.nabian
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.nabian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: na4 bian1, hanzi: 那边, pinyin: nàbiān, meaning: 'allí, por allí'}
+    comments: []
+  - id: x.produce.nabian
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.nabian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «allí, por allí»? Escribe el pinyin.'}
+    answer: {typed: na4 bian1, hanzi: 那边, pinyin: nàbiān, meaning: 'allí, por allí'}
+    comments: []
+  - id: x.read.nabian
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.nabian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 那边}
+    answer: {hanzi: 那边, pinyin: nàbiān, meaning: 'allí, por allí'}
+    comments: []
+  - id: x.tones.nabian
+    added: 2026-10-11
+    lang: es
+    type: tones
+    targets: [w.nabian]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '41', hanzi: 那边, pinyin: nàbiān, meaning: 'allí, por allí'}
+    comments: []
+  - id: x.dictation.zhebian
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.zhebian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhe4 bian1, hanzi: 这边, pinyin: zhèbiān, meaning: 'aquí, por aquí'}
+    comments: []
+  - id: x.produce.zhebian
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.zhebian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «aquí, por aquí»? Escribe el pinyin.'}
+    answer: {typed: zhe4 bian1, hanzi: 这边, pinyin: zhèbiān, meaning: 'aquí, por aquí'}
+    comments: []
+  - id: x.read.zhebian
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.zhebian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 这边}
+    answer: {hanzi: 这边, pinyin: zhèbiān, meaning: 'aquí, por aquí'}
+    comments: []
+  - id: x.dictation.xishoujian
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.xishoujian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xi3 shou3 jian1, hanzi: 洗手间, pinyin: xǐshǒujiān, meaning: 'baño, aseo'}
+    comments: []
+  - id: x.produce.xishoujian
+    added: 2026-10-11
+    lang: es
+    type: produce
+    targets: [w.xishoujian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «baño, aseo»? Escribe el pinyin.'}
+    answer: {typed: xi3 shou3 jian1, hanzi: 洗手间, pinyin: xǐshǒujiān, meaning: 'baño, aseo'}
+    comments: []
+  - id: x.read.xishoujian
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.xishoujian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 洗手间}
+    answer: {hanzi: 洗手间, pinyin: xǐshǒujiān, meaning: 'baño, aseo'}
+    comments: []
+  - id: x.tones.xishoujian
+    added: 2026-10-11
+    lang: es
+    type: tones
+    targets: [w.xishoujian]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 洗手间, pinyin: xi shou jian}
+    answer: {typed: '331', hanzi: 洗手间, pinyin: xǐshǒujiān, meaning: 'baño, aseo'}
+    comments: []
+  - id: x.dictation.xiache
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.xiache]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xia4 che1, hanzi: 下车, pinyin: xià chē, meaning: bajarse (de un vehículo)}
+    comments: []
+  - id: x.read.xiache
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.xiache]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 下车}
+    answer: {hanzi: 下车, pinyin: xià chē, meaning: bajarse (de un vehículo)}
+    comments: []
+  - id: x.listen.wo-yao-huiqu-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-yao-huiqu-le
+    targets: [s.wo-yao-huiqu-le]
+    context: [w.wo, w.yao, w.huiqu, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo que volver.}
+    comments: []
+  - id: x.produce.wo-yao-huiqu-le
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-yao-huiqu-le
+    targets: [s.wo-yao-huiqu-le]
+    context: [w.wo, w.yao, w.huiqu, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo que volver.»'}
+    answer: {meaning: Tengo que volver.}
+    comments: []
+  - id: x.listen.ta-huilai-le
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.ta-huilai-le
+    targets: [s.ta-huilai-le]
+    context: [w.ta.he, w.huilai, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ha vuelto.}
+    comments: []
+  - id: x.listen.wo-qu-nabian-zuo
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-qu-nabian-zuo
+    targets: [s.wo-qu-nabian-zuo]
+    context: [w.wo, w.qu, w.nabian, w.zuo.sit]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Voy a sentarme allí.}
+    comments: []
+  - id: x.produce.wo-qu-nabian-zuo
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-qu-nabian-zuo
+    targets: [s.wo-qu-nabian-zuo]
+    context: [w.wo, w.qu, w.nabian, w.zuo.sit]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Voy a sentarme allí.»'}
+    answer: {meaning: Voy a sentarme allí.}
+    comments: []
+  - id: x.listen.xishoujian-zai-nabian
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.xishoujian-zai-nabian
+    targets: [s.xishoujian-zai-nabian]
+    context: [w.xishoujian, w.zai.at, w.nabian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: El baño está por allí.}
+    comments: []
+  - id: x.produce.xishoujian-zai-nabian
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.xishoujian-zai-nabian
+    targets: [s.xishoujian-zai-nabian]
+    context: [w.xishoujian, w.zai.at, w.nabian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «El baño está por allí.»'}
+    answer: {meaning: El baño está por allí.}
+    comments: []
+  - id: x.listen.zhebian-zou
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.zhebian-zou
+    targets: [s.zhebian-zou]
+    context: [w.zhebian, w.zou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Por aquí!}
+    comments: []
+  - id: x.listen.zai-zhebian-ni-gen-wo-zou-ba
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.zai-zhebian-ni-gen-wo-zou-ba
+    targets: [s.zai-zhebian-ni-gen-wo-zou-ba]
+    context: [w.zai.at, w.zhebian, w.ni, w.gen, w.wo, w.zou, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Está por aquí, ven conmigo.'}
+    comments: []
+  - id: x.listen.wo-zai-zheli-xiache
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-zai-zheli-xiache
+    targets: [s.wo-zai-zheli-xiache]
+    context: [w.wo, w.zai.at, w.zheli, w.xiache]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me bajo aquí.}
+    comments: []

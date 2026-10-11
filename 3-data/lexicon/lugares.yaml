@@ -185,6 +185,8 @@ entries:
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-09', text: '回家 «volver a casa», 回来 «volver aquí». No confundir con 会 huì, que cae: 我会回来 «volveré».'}
+      - {kind: mnemonic, private: false, date: '2026-10-11', text: '回 parece la marca de la base en el minimapa de un videojuego: volver a la base. O una boca dentro de otra que grita «¡vuelve!».', original: 'mnemotenica para el hanz ide volver, es como una marca de minimapa del call of duty, volver a al base, base, parece una base, sabes, volver. o tmaibne parece nua boca dentro de otra gritnado, VOLVER !!!'}
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Con un destino, 回 va solo: 回家 «volver a casa», 回中国 «volver a China». Sin destino lleva 来 o 去, que dicen hacia dónde: 他回来了 «ha vuelto (aquí)», 我要回去了 «tengo que volver (allí)».', original: 'ademsa volver aparece imsepre como huilai, hui solo enciesta el ''le'' para volver al igual que habitiacon necesita el ''espacio'' para ser habitaicon sabesa'}
   - id: w.chu
     use: hear
     role: content
@@ -234,4 +236,66 @@ entries:
       - {ref: w.hui.can, cue: 'cae (4.º); va delante de un verbo'}
       - {ref: w.hui.return, cue: 'sube (2.º): a un sitio, 回家'}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []
+  - id: w.huiqu
+    use: say
+    role: content
+    kind: word
+    hanzi: 回去
+    pinyin: huíqu
+    meaning: {es: volver (allí), en: to go back (there)}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '回 «volver» + 去 «hacia allí»: volver alejándose de quien habla. 我要回去了 «tengo que volver». 回来 es volver hacia aquí.'}
+    accept_pinyin_mismatch: '去 va átono detrás de un verbo: huíqu'
+  - id: w.nabian
+    use: say
+    role: content
+    kind: word
+    hanzi: 那边
+    pinyin: nàbiān
+    meaning: {es: 'allí, por allí', en: over there}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Palabra a palabra: 那 «ese, aquel» + 边 «lado»: «aquel lado». 洗手间在那边 «el baño está por allí».'}
+  - id: w.zhebian
+    use: say
+    role: content
+    kind: word
+    hanzi: 这边
+    pinyin: zhèbiān
+    meaning: {es: 'aquí, por aquí', en: over here}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Palabra a palabra: 这 «este» + 边 «lado». 这边请 «por aquí, por favor», lo que dice quien te acompaña a la mesa.'}
+  - id: w.xishoujian
+    use: say
+    role: content
+    kind: word
+    hanzi: 洗手间
+    pinyin: xǐshǒujiān
+    meaning: {es: 'baño, aseo', en: restroom}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Palabra a palabra: 洗 «lavar» + 手 «mano» + 间 «sala»: «la sala de lavarse las manos». Es la forma educada, la de restaurantes y centros comerciales. En casas y hoteles se lee 卫生间 [HSK 3]; en la calle, 厕所 [HSK 6].'}
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'En las puertas, 男 «hombres» y 女 «mujeres».'}
+  - id: w.xiache
+    use: hear
+    role: content
+    kind: word
+    hanzi: 下车
+    pinyin: xià chē
+    meaning: {es: bajarse (de un vehículo), en: to get off}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Palabra a palabra: 下 «bajar» + 车 «coche»: bajarse del taxi, del autobús o del tren. 我在这里下车 «me bajo aquí».'}
+  - id: g.hui-direction
+    kind: group
+    basis: set
+    title: 回来 y 回去
+    explanation: 回 es volver; 来 y 去 dicen hacia dónde.
+    members:
+      - {ref: w.huilai, cue: 'hacia quien habla: 我回来了'}
+      - {ref: w.huiqu, cue: 'lejos de quien habla: 我要回去了'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments: []

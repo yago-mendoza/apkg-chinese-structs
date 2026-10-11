@@ -173,6 +173,7 @@ entries:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Con un lugar, 在 + sitio + 里: 我在房间里 «estoy en la habitación».'}
+      - {kind: linguistic, private: false, date: '2026-10-11', text: 'Palabra a palabra: 房 «casa» + 间 «sala, espacio». El chino suele precisar con una segunda pieza: 洗手间 es «la sala de lavarse las manos». 空间 kōngjiān [HSK 4] es «espacio».', original: 'CLARO Y YO AUQ IDIRIA ,peor porque o solo fàng si ya es hab ... porque fáng es habiticaon is pero como competne entonces par ocnifmar que es la palabra, en efecto, usamos el jian, fangjian, habitacon como espacio'}
   - id: w.dadianhua
     use: say
     role: content
@@ -183,3 +184,13 @@ entries:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 打 «dar, golpear» + 电话 «teléfono». A quién se llama va delante, con 给: 给我打电话 «llámame».'}
+  - id: w.guan
+    use: hear
+    role: content
+    kind: word
+    hanzi: 关
+    pinyin: guān
+    meaning: {es: cerrar; apagar, en: to close; to turn off}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '关门 «cerrar la puerta»; 关手机 «apagar el móvil». Es el 关 de 没关系: 关系 guānxi [HSK 3] es «relación».'}

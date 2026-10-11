@@ -2,7 +2,8 @@
 
 entries:
   - id: p.third-tone-sandhi
-    use: say
+    use: [read]
+    use_reason: 'Sin tarjetas: la teoría de pronunciación no va en las tarjetas (YAGO la estudia en su cuaderno); queda en el diccionario.'
     kind: pronunciation
     title: Dos terceros tonos seguidos
     explanation: 'Cuando dos sílabas en tercer tono van seguidas, la primera se pronuncia como segundo tono. Se sigue escribiendo
@@ -12,7 +13,8 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: p.bu-sandhi
-    use: say
+    use: [read]
+    use_reason: 'Sin tarjetas: la teoría de pronunciación no va en las tarjetas (YAGO la estudia en su cuaderno); queda en el diccionario.'
     kind: pronunciation
     title: 不 delante de cuarto tono
     explanation: '不 es bù, pero delante de otro cuarto tono pasa a segundo: 不是 se dice bú shì. En pinyin se suele escribir
@@ -23,7 +25,8 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Dos cuartos tonos seguidos: el primero pasa a segundo (4 + 4 se pronuncia 2 + 4). Por ejemplo, bù shì se dice bú shì.', original: '4 + 4 → 2 + 4. Ej.: bú shì ← bù shì'}
   - id: p.third-tone-half
-    use: say
+    use: [read]
+    use_reason: 'Sin tarjetas: la teoría de pronunciación no va en las tarjetas (YAGO la estudia en su cuaderno); queda en el diccionario.'
     kind: pronunciation
     title: El tercer tono, a medias
     explanation: 'Delante de un 1.º, 2.º, 4.º o neutro, el tercer tono solo baja y no vuelve a subir: en 老师 la sílaba lǎo
@@ -35,7 +38,7 @@ entries:
       - {kind: note, private: false, date: 2026-09-25, text: 'En la práctica, el tercer tono completo (bajar y volver a subir) apenas se oye: aparece sobre todo al enfatizar o en una sílaba aislada.', original: 'in fact, ǎ accent is usually varying / subtle; it’s like we don’t do it besides when emphasis'}
       - {kind: note, private: false, date: 2026-09-25, text: 'No exageres la bajada: importa más el contraste con los tonos que la rodean que lo grave que llegues.', original: 'No exageres ↓ tono: CONTRASTE >>> ↓ tono'}
   - id: p.neutral-tone
-    use: say
+    use: hear
     kind: pronunciation
     title: Tono neutro
     explanation: Sílaba corta y ligera, sin contorno propio; su altura depende de la sílaba anterior. En pinyin va sin marca
@@ -45,7 +48,8 @@ entries:
     source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: p.aspiration
-    use: say
+    use: [read]
+    use_reason: 'Sin tarjetas: la teoría de pronunciación no va en las tarjetas (YAGO la estudia en su cuaderno); queda en el diccionario.'
     kind: pronunciation
     title: 'b/p, d/t, g/k: aire, no voz'
     explanation: 'La diferencia no es sonora/sorda como en español: b, d y g van sin aire [p t k]; p, t y k llevan un soplo
@@ -56,7 +60,7 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Para practicar, pon una hoja de papel delante de la boca: con p, t y k debe moverse; con b, d y g, no.', original: use paper to practice!}
   - id: p.jqx-zhchsh
-    use: say
+    use: hear
     kind: pronunciation
     title: j q x frente a zh ch sh r
     explanation: 'j, q, x [tɕ tɕʰ ɕ]: lengua plana, con la punta abajo, detrás de los dientes (学 xué [ɕɥœ˧˥]). zh, ch, sh,
@@ -68,7 +72,7 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Las dos series no se confunden por escrito porque no comparten finales: j, q y x solo van delante de i o ü, y zh, ch y sh nunca.', original: No se maltratan porque no comparten finales}
   - id: p.h-throat
-    use: say
+    use: hear
     kind: pronunciation
     title: 'La h, desde la garganta'
     explanation: 'La h del pinyin es áspera, más cerca de la j española que de una h muda: el aire roza al fondo de la garganta. 喝 hē, 好 hǎo, 很 hěn.'
@@ -77,7 +81,8 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-25'}
     comments: []
   - id: p.syllables
-    use: say
+    use: [read]
+    use_reason: 'Sin tarjetas: la teoría de pronunciación no va en las tarjetas (YAGO la estudia en su cuaderno); queda en el diccionario.'
     kind: pronunciation
     title: Piensa en sílabas
     explanation: 'Cada hanzi es una sílaba con su tono. Dilas como golpes claros, también dentro de una palabra y aunque se junten varias (谢谢 xièxie, 我不是学生): no las encadenes como en español.'
@@ -108,7 +113,8 @@ entries:
       - {kind: note, private: false, date: '2026-10-08', text: 'Al oído, ing suena a veces casi «ieng» (星 xīng): es el paso hacia la -ng de atrás.', original: 'xing (primero tono) es mas xieng'}
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'En el estándar, yuan (元) se acerca a «yüen», igual que yan suena casi «yen»; algunos hablantes abren más la a.'}
   - id: p.yi-sandhi
-    use: say
+    use: [read]
+    use_reason: 'Sin tarjetas: la teoría de pronunciación no va en las tarjetas (YAGO la estudia en su cuaderno); queda en el diccionario.'
     kind: pronunciation
     title: '一: yī, yí o yì'
     explanation: 'Suelto, contando o en un número, yī (第一, 十一). Delante de un cuarto tono, yí: 一个 yí ge. Delante de los demás tonos, yì: 一本 yì běn, 一百 yì bǎi. En números de teléfono, yāo, para no confundirlo con 七 qī.'
@@ -117,7 +123,7 @@ entries:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
   - id: p.vowels
-    use: say
+    use: hear
     kind: pronunciation
     title: 'e, i y o: cuándo no suenan como en español'
     explanation: 'i: suena i (你 nǐ, 西 xī), salvo tras z c s, donde es un zumbido sin vocal (四 sì, 字 zì), y tras zh ch sh r, el mismo zumbido con la lengua curvada (是 shì, 吃 chī). e: sola o tras consonante es una o sin redondear los labios (的 de, 喝 hē); en ie, üe y ei suena e (谢 xiè, 学 xué, 北 běi); en en y eng, una vocal neutra corta (很 hěn, 冷 lěng). o: tras b p m f suena «uo» (我 wǒ); ou suena «ou» (都 dōu); ong suena casi «ung» (中 zhōng).'
@@ -127,7 +133,7 @@ entries:
     comments:
       - {kind: note, private: false, date: '2026-10-08', text: 'La o no es nunca la ò abierta del catalán en ou y ong (都 dōu, 中 zhōng): ahí es cerrada. En uo (我 wǒ, 多 duō) sí es más abierta.', original: 'en chino (observcion) la o nunca suena abierta ocmo catala ò sino isemre cerrada ó'}
   - id: p.y-w-u
-    use: say
+    use: hear
     kind: pronunciation
     title: 'y, w y la ü escondida'
     explanation: 'y y w no son sonidos propios: escriben i y u al principio de sílaba. yi suena i (一 yī), wu suena u (五 wǔ), ya es ia y wo es uo. Tras j, q, x e y, la ü pierde los puntos: ju, qu, xu y yu suenan con ü (去 qù, 鱼 yú), aunque se escriban con u, y el tono se marca igual. Solo tras l y n se ven los puntos (女 nǚ), porque allí también existe la u.'

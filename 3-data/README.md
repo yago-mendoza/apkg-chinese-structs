@@ -38,10 +38,12 @@ Fuente de verdad del mazo, mantenida por el agente. Un archivo por tema en cada 
 ## Ejercicios (`exercises/`)
 
 - `id` con prefijo `x.`, permanente: de él depende el progreso en Anki. Si cambia lo que pregunta, ID nuevo.
-- `type`: `read | listen | tones | cloze | produce | speak | contrast | derive | components | nuance | pattern | comprehension | charsound` (`charsound`: un hanzi suelto y su sílaba; lo escribe `scaffold`).
+- `type`: `read | listen | tones | cloze | produce | speak | contrast | derive | components | nuance | pattern | comprehension | charsound | compose` (`charsound`: un hanzi suelto y su sílaba; lo escribe `scaffold`).
 - Comprensión lectora (`type: comprehension`, `x.comprehension.`): `targets` son las frases del texto, en orden (al menos 12 hanzi); `script: hanzi` (solo hanzi; el pinyin, al girar) o `both` (pinyin encima), nunca pinyin solo; `question: {es}` o `{sentence: s.…}` (en chino, una frase del mazo); `answer: {meaning}`. Ver `docs/design.md`, «Tarjetas».
 - `targets` (lo que se evalúa), `context` (visible en la pregunta), `reveal` (frase fijada a mano para el reverso; sin él, se eligen solas entre las que contienen el objetivo), `refs` (entradas de pronunciación).
 - `prompt: {text, hanzi, pinyin, audio}`; `answer: {typed, hanzi, pinyin, meaning}`. `typed`: pinyin numérico (`ni3 hao3`) o, en tonos, un dígito por sílaba (`'25'`). Sin `typed`, autoevaluación.
 - `added`: fecha de creación (etiqueta `mes::` en Anki). No se cambia.
 - `accept_pinyin_mismatch` con motivo, como en las entradas, si la respuesta lleva tono neutro o sandhi que pypinyin no da.
-- Prefijos a mano: `x.situation.` (escena → respuesta en voz alta, `type: speak`; con `sentence` si la respuesta es una frase del mazo), `x.pair.<a>-<b>` (`type: listen`, `pair: [{hanzi, pinyin, meaning}, …]` en el orden en que suenan: oír las dos y decir cuál es cuál), `x.rule.` (`type: speak`: una pregunta directa sobre un sonido concreto) y `x.vowels.` (`type: listen`: oír y completar las vocales). En una tarjeta de decir una frase, `also: [s.…]`: otras frases igual de buenas. Ver `docs/design.md`, «Tarjetas».
+- Construir (`type: compose`, `x.compose.`): `prompt: {text}` es la escena; `words` (de 3 a 6 entradas del mazo) el material; `targets`, las frases modelo (al menos dos). Ver `docs/design.md`, «Tarjetas».
+- Elegir: cualquier tarjeta puede llevar `prompt.options` (de 2 a 5 textos) y `answer.choice` (la letra de la buena, `a`–`e`).
+- Prefijos a mano: `x.situation.` (escena → respuesta en voz alta, `type: speak`; con `sentence` si la respuesta es una frase del mazo), `x.pair.<a>-<b>` (`type: listen`, `pair: [{hanzi, pinyin, meaning}, …]` en el orden en que suenan: oír las dos y decir cuál es cuál) y `x.vowels.` (`type: listen`: oír y completar las vocales). En una tarjeta de decir una frase, `also: [s.…]`: otras frases igual de buenas. Ver `docs/design.md`, «Tarjetas».
