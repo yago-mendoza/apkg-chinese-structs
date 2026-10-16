@@ -301,6 +301,176 @@ def pinyin_warning(hanzi, reading):
     return f"«{reading}» no coincide con pypinyin ({' / '.join(sorted(known))})"
 
 
+# ---------------------------------------------------------------- colores por tono
+
+# Cada sílaba con el color de su tono, en el pinyin y en su hanzi (YAGO, 2026-10-16: «colores por tono en todo el
+# mazo»). Un hanzi solo se colorea donde su pinyin se ve en el mismo lado de la tarjeta: así el color nunca adelanta
+# un tono que la tarjeta pregunta (el anverso de 你好 en una de tonos sigue en negro). Se aplica al final de
+# `card_fields`, sobre el HTML ya hecho: las parejas hanzi/pinyin de las tarjetas y, en el texto, «你好 (nǐ hǎo)».
+TONE_CLASS = {1: "t1", 2: "t2", 3: "t3", 4: "t4", 5: "t5"}
+HZ_CLASSES = r"(?:hz|hanzi|hanzi small|vs-hz|ch-hz)"
+PY_CLASSES = r"(?:py|pinyin|vs-py|ch-py)"
+_HZ_THEN_PY = re.compile(r'(<(span|div|b) class="' + HZ_CLASSES + r'">)([^<]*)(</\2>\s*<(?:span|div) class="'
+                         + PY_CLASSES + r'">)([^<]*)')
+_PY_THEN_HZ = re.compile(r'(<(span|div) class="' + PY_CLASSES + r'">)([^<]*)(</\2>\s*<(?:span|div|b) class="'
+                         + HZ_CLASSES + r'">)([^<]*)')
+# Un hanzi en negrita o en su span y el pinyin detrás, en el texto («<b>眼睛</b> yǎnjing», «<span class="hz">汉</span> hàn»).
+_HZ_TAG_THEN_TEXT = re.compile(r'(<(b|span)(?: class="hz")?>)([㐀-鿿]+)(</\2>)(\s*\(?)([^<]*)')
+_HZ_IN_TEXT = re.compile(r"([㐀-鿿]+)(\s*\(?)([^㐀-鿿<]*)")
+_TAG = re.compile(r"(<[^>]+>)")
+
+
+def tone_syllables(hanzi, reading, strict=True):
+    """[(sílaba, tono)] de cada hanzi de `hanzi` según el pinyin escrito (5 neutro; un 儿 fundido, 哪儿 nǎr, lleva el
+    de su sílaba), o None si no alinean. Un pinyin sin ninguna tilde es neutro (个 ge, 的 de) salvo con `strict`, que
+    entonces lo exige también a pypinyin: «ni hao» sin tildes, la pregunta de una tarjeta de tonos, no es neutro."""
+    reading = html.unescape(reading or "")
+    letters = "".join(c for c in unicodedata.normalize("NFC", reading) if c.isalpha())
+    if not letters:
+        return None
+    if strict and not any(c in UNMARK for c in letters.lower()) and not _all_neutral(hanzi):
+        return None
+    syl = _syllable_tones_cached(hanzi, letters)
+    if not syl or len(syl) != sum(1 for c in hanzi if "㐀" <= c <= "鿿"):
+        return None
+    out = []
+    for bare, t in syl:
+        out.append((bare, (out[-1][1] if out else None) if t == "erhua" else t))
+    return out
+
+
+@__import__("functools").lru_cache(maxsize=None)
+def _all_neutral(hanzi):
+    """True si todas las sílabas de `hanzi` son neutras para pypinyin (吗 ma, 们 men): su pinyin va sin tildes."""
+    from pypinyin import Style, lazy_pinyin
+    chars = "".join(c for c in hanzi if "㐀" <= c <= "鿿")
+    return bool(chars) and all(s.endswith("5") for s in lazy_pinyin(chars, style=Style.TONE3,
+                                                                       neutral_tone_with_five=True))
+
+
+@__import__("functools").lru_cache(maxsize=None)
+def _syllable_tones_cached(hanzi, letters):
+    """Como `syllable_tones`, pero probando todas las lecturas de cada hanzi (谁 shéi, 得 děi, 长 cháng): el pinyin
+    escrito decide cuál es."""
+    found = syllable_tones(hanzi, letters)
+    if found:
+        return found
+    from pypinyin import Style, pinyin
+    chars = [c for c in hanzi if "㐀" <= c <= "鿿"]
+    options = [sorted(set(o), key=len, reverse=True)
+               for o in pinyin(chars, style=Style.NORMAL, heteronym=True, v_to_u=True)]
+    marked = compact(letters)
+
+    def walk(i, pos):
+        if i == len(chars):
+            return [] if pos == len(marked) else None
+        for bare in options[i] + (["r"] if chars[i] == "儿" else []):
+            seg = marked[pos:pos + len(bare)]
+            if strip_tones(seg) == bare:
+                tone = "erhua" if bare == "r" and chars[i] == "儿" else next((UNMARK[c][1] for c in seg if c in UNMARK), 5)
+                rest = walk(i + 1, pos + len(bare))
+                if rest is not None:
+                    return [(bare, tone)] + rest
+        return None
+    return walk(0, 0)
+
+
+def _tone_span(text, tone):
+    return f'<span class="{TONE_CLASS[tone]}">{text}</span>' if tone else text
+
+
+def color_hanzi(hanzi, syl):
+    """`hanzi` (escapado) con cada carácter en el color de su sílaba."""
+    out, k = [], 0
+    for c in hanzi:
+        if "㐀" <= c <= "鿿":
+            out.append(_tone_span(c, syl[k][1]))
+            k += 1
+        else:
+            out.append(c)
+    return "".join(out)
+
+
+def color_pinyin(reading, syl):
+    """`reading` (escapado) con cada sílaba en el color de su tono; espacios, apóstrofos y signos quedan igual."""
+    text = html.unescape(reading)
+    out, k, buf, need = [], 0, "", len(syl[0][0]) if syl else 0
+    for c in unicodedata.normalize("NFC", text):
+        if c.isalpha() and k < len(syl):
+            buf += c
+            if len(buf) == need:
+                out.append(_tone_span(esc(buf), syl[k][1]))
+                k, buf = k + 1, ""
+                need = len(syl[k][0]) if k < len(syl) else 0
+        else:
+            if buf:
+                out.append(esc(buf))
+                buf = ""
+            out.append(esc(c))
+    out.append(esc(buf))
+    return "".join(out)
+
+
+def _pinyin_prefix(hanzi, text):
+    """La parte de `text` (el texto que sigue a un hanzi) que es su pinyin: tantas palabras como alineen con él."""
+    words = text.split(" ")
+    for k in range(1, min(len(words), len(hanzi) + 1) + 1):
+        cand = " ".join(words[:k])
+        core = cand.rstrip(" ),.;:·")
+        syl = tone_syllables(hanzi, core) if core else None
+        if syl:
+            return core, syl
+    return None, None
+
+
+def _color_text_node(text):
+    def pair(m):
+        hz, sep, rest = m.groups()
+        core, syl = _pinyin_prefix(hz, rest)
+        if not syl:
+            return m.group(0)
+        return color_hanzi(hz, syl) + sep + color_pinyin(core, syl) + rest[len(core):]
+    return _HZ_IN_TEXT.sub(pair, text)
+
+
+def strip_tone_spans(html_text):
+    """El HTML sin los colores de tono (para comparar contenido)."""
+    return re.sub(r'<span class="t[1-5]">([^<]*)</span>', lambda m: m.group(1), html_text or "")
+
+
+def tone_color(html_text):
+    """Colores por tono en el HTML de una tarjeta: primero las parejas hanzi/pinyin de las plantillas; después, en el
+    texto, cada hanzi seguido de su pinyin. Lo que no alinea se queda como estaba."""
+    if not html_text:
+        return html_text
+
+    # El pinyin grande (`.pinyin`, el de la pregunta o la respuesta) sin tildes puede ser una pregunta de tonos; el de
+    # una palabra en una frase o en un recuadro siempre lleva sus tildes, así que ahí sin tildes es neutro.
+    loose = lambda tag: 'class="pinyin"' not in tag
+
+    def hz_py(m):
+        open_hz, _, hz, mid, py = m.groups()
+        syl = tone_syllables(hz, py, strict=not loose(mid))
+        return m.group(0) if not syl else open_hz + color_hanzi(hz, syl) + mid + color_pinyin(py, syl)
+
+    def py_hz(m):
+        open_py, _, py, mid, hz = m.groups()
+        syl = tone_syllables(hz, py, strict=not loose(open_py))
+        return m.group(0) if not syl else open_py + color_pinyin(py, syl) + mid + color_hanzi(hz, syl)
+
+    def tag_text(m):
+        open_hz, _, hz, close, sep, rest = m.groups()
+        core, syl = _pinyin_prefix(hz, rest)
+        if not syl:
+            return m.group(0)
+        return open_hz + color_hanzi(hz, syl) + close + sep + color_pinyin(core, syl) + rest[len(core):]
+
+    out = _PY_THEN_HZ.sub(py_hz, _HZ_THEN_PY.sub(hz_py, html_text))
+    out = _HZ_TAG_THEN_TEXT.sub(tag_text, out)
+    # En el texto suelto, fuera de las etiquetas (y de lo ya coloreado: un hanzi dentro de su span va solo).
+    return "".join(part if part.startswith("<") else _color_text_node(part) for part in _TAG.split(out))
+
+
 # ---------------------------------------------------------------- consultas
 
 def sentence_text(s):
@@ -2237,8 +2407,7 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .note--group .is-target { background: rgba(179,48,29,.13); }
 .vs-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
 .vs-hz { font-size: 24px; font-weight: 400; min-width: 1.6em; }
-.vs-py { font-size: 15px; color: #b3301d; }
-.nightMode .vs-py, .night_mode .vs-py { color: #e8845a; }
+.vs-py { font-size: 15px; }
 .vs-gl { font-size: 15px; }
 .vs-cue { flex-basis: 100%; font-size: 13px; font-style: italic; color: var(--muted); }
 .vs-ex { flex-basis: 100%; margin-top: 4px; }
@@ -2273,7 +2442,15 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .seg .hz { font-size: 30px; }
 .box .seg .hz { font-size: 24px; }
 .gap { min-width: 1.6em; border-bottom: 3px dashed #999; }
-.c0 { --c: #4e79a7; } .c1 { --c: #f28e2b; } .c2 { --c: #59a14f; } .c3 { --c: #b07aa1; } .c4 { --c: #9c755f; }
+/* Alinear hanzi y pinyin: un subrayado gris, alterno entre palabras; el color es del tono. */
+.c0, .c2, .c4 { --c: rgba(31,26,22,.32); } .c1, .c3 { --c: rgba(31,26,22,.12); }
+.nightMode .c0, .nightMode .c2, .nightMode .c4, .night_mode .c0, .night_mode .c2, .night_mode .c4 { --c: rgba(236,236,236,.36); }
+.nightMode .c1, .nightMode .c3, .night_mode .c1, .night_mode .c3 { --c: rgba(236,236,236,.14); }
+/* Colores por tono (TONE_CLASS): 1 rojo, 2 verde, 3 azul, 4 morado; el neutro, del color del texto (blanco de
+   noche, negro de día: YAGO, 2026-10-16). */
+.t1 { color: #d1342b; } .t2 { color: #23893a; } .t3 { color: #2563c9; } .t4 { color: #8a3fb0; } .t5 { color: inherit; }
+.nightMode .t1, .night_mode .t1 { color: #ff7e72; } .nightMode .t2, .night_mode .t2 { color: #6fd07f; }
+.nightMode .t3, .night_mode .t3 { color: #82acff; } .nightMode .t4, .night_mode .t4 { color: #cf95f2; }
 .acs-in { font-size: 20px; padding: 10px 14px; width: 12em; max-width: 90%; margin-top: 14px; text-align: center;
           border: 1px solid var(--line); border-radius: 12px; background: var(--panel); color: inherit; outline: none; }
 #acs-result { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
@@ -2304,7 +2481,7 @@ details.question summary { font: 700 12px/1.4 Menlo, Consolas, monospace; letter
                            text-transform: uppercase; color: var(--muted); cursor: pointer; }
 details.question .hz-line { font-size: 24px; margin-top: 8px; }
 """
-# Los colores solo alinean segmentos hanzi↔pinyin; los tonos se leen por sus marcas.
+# Color de texto = tono de la sílaba (`tone_color`); el subrayado gris solo alinea segmentos hanzi↔pinyin.
 
 FIELDS = ["ExerciseID", "Task", "Front", "PromptAudio", "Answer", "Back", "AnswerAudio", "Notes"]
 
@@ -2521,8 +2698,9 @@ def card_fields(ex, eby, sby, manifest, media_files):
         front += '<ol class="choices">' + "".join(
             f'<li><span class="opt">{CHOICE_LETTERS[i]})</span> {esc(o)}</li>' for i, o in enumerate(prompt["options"])) + "</ol>"
     if ex["type"] == "tones":
-        front += ('<div class="legend">1 ā alto y plano · 2 á sube · 3 ǎ baja (y sube) · 4 à baja fuerte · '
-                  '5 a neutro, corto</div>')
+        front += ('<div class="legend"><span class="t1">1 ā alto y plano</span> · <span class="t2">2 á sube</span> · '
+                  '<span class="t3">3 ǎ baja (y sube)</span> · <span class="t4">4 à baja fuerte</span> · '
+                  '<span class="t5">5 a neutro, corto</span></div>')
     prompt_audio = sound(spoken, manifest, media_files) if prompt.get("audio") else ""
     if ex.get("pair"):
         # Pareja para oír (review 008: «si no puedo contrastar de oído en una misma tarjeta, no me sirve»): suenan
@@ -2724,9 +2902,10 @@ def card_fields(ex, eby, sby, manifest, media_files):
     if exp_py or exp_hz:
         back = (f'<span id="acs-exp-py" style="display:none">{esc(exp_py)}</span>'
                 f'<span id="acs-exp-hz" style="display:none">{esc(exp_hz)}</span>') + back
-    return {"typed": typed, "task": esc(prompt.get("text")), "front": front, "prompt_audio": prompt_audio,
-            "back": back, "answer_audio": answer_audio,
-            "notes": f'<div class="box">{"".join(note_section(n) for *_, n in sorted(notes))}</div>' if notes else ""}
+    return {"typed": typed, "task": esc(prompt.get("text")), "front": tone_color(front), "prompt_audio": prompt_audio,
+            "back": tone_color(back), "answer_audio": answer_audio,
+            "notes": tone_color(f'<div class="box">{"".join(note_section(n) for *_, n in sorted(notes))}</div>')
+            if notes else ""}
 
 
 NOTE_KIND = (("ejemplo", "example"), ("mnemotecnia", "mnemonic"), ("en clase", "teacher"), ("cómo suena", "sound"),

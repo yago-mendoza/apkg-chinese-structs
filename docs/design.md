@@ -314,7 +314,8 @@ Las listas de frecuencia ordenan palabras, no sonidos; la pronunciación necesit
 - **Audio**: escucha, tonos y pronunciación lo llevan delante; lectura, producción y deducción, tras revelar; el contraste visual y los componentes no llevan (se deciden por la forma); el de homófonos sí. Frases de ejemplo, textos de comprensión, modelos de construir y entradas `p.`, siempre.
 - **AFI** (transcripción fonética del tono de cita) en `4-notebook/` y en la exportación, no en las tarjetas (allí la pronunciación se explica en palabras), calculada del pinyin con dragonmapper al compilar; nunca se guarda en `3-data/`. No refleja el sandhi: eso lo explican las entradas `p.`, en el cuaderno y la web. Las pistas propias del que aprende van como comentario `sound` y aparecen en tarjetas, cuaderno y log.
 - **Tarjetas de tonos**: llevan el recordatorio de qué número es cada tono.
-- **Pinyin** siempre visible en las soluciones. Colores solo para alinear hanzi y pinyin, nunca para marcar tonos. No se promete corregir el habla: `speak` es autoevaluación.
+- **Pinyin** siempre visible en las soluciones. No se promete corregir el habla: `speak` es autoevaluación.
+- **Colores por tono** en todas las tarjetas (`tone_color`, al final de `card_fields`): cada sílaba del pinyin y su hanzi van del color de su tono (1 rojo, 2 verde, 3 azul, 4 morado; el neutro, del color del texto). Un hanzi solo se colorea donde su pinyin se ve en el mismo lado de la tarjeta, así que el color nunca adelanta un tono que se pregunta (el anverso de una tarjeta de tonos o de leer sigue en negro). Un pinyin grande (`.pinyin`) sin ninguna tilde no se colorea salvo que pypinyin lo dé por neutro: es la pregunta de una tarjeta de tonos. Lo que no alinea (嗯 èn) se queda sin color. Alinear hanzi y pinyin en las frases es cosa del subrayado gris, alterno entre palabras.
 
 ## Anki
 

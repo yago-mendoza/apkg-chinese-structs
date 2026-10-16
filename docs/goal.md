@@ -63,6 +63,8 @@ Hablar depende del pinyin y de los tonos, no de los hanzi. YAGO tiende a investi
 
 El pinyin es para él una herramienta, una forma de fijar lo que suena o lo que escribe antes de pasarlo a hanzi; no un sistema de escritura para leer. Por eso **leer es leer hanzi**: ninguna tarjeta le da a leer un texto solo en pinyin.
 
+**Los tonos, también por color.** Recordar el tono de cada palabra es lo que más le cuesta, así que cada sílaba y su hanzi llevan el color de su tono allí donde se ve su pinyin, nunca donde la tarjeta lo pregunta. Hipótesis en prueba en `docs/hypotheses.md`.
+
 Hablar se entrena sobre todo fuera del mazo: YAGO conversa con su profesora y lee en voz alta todo lo que estudia, también las tarjetas. Lo que aporta el mazo es el oído y el pinyin: dictado, tonos y audio en todo, y las parejas de tonos de dos sílabas, que son la base de sonar natural.
 
 ## Cómo se practican las frases

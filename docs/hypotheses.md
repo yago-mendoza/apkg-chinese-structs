@@ -23,6 +23,12 @@ Lo que creemos que ayuda a aprender a quien estudia con este mazo, cómo se comp
 - **Cómo se mide**: el porcentaje de «Otra vez» en las de oír en las próximas semanas, frente al 24 % general del lote 010, y los ejercicios de escucha de los deberes.
 - **Regla**: `docs/goal.md`, «Las de oír, retos».
 
+### 🧪 Ver el tono en color le ayuda a recordarlo
+
+- **Desde**: 2026-10-16, entre los lotes 011 y 012. **De dónde**: le cuesta recordar el tono de cada palabra; lo propuso el agente y él lo pidió para todo el mazo.
+- **Cómo se mide**: en `anki.py stats`, el «Otra vez» de las tarjetas de tonos y de decir en las próximas semanas, frente al 64 % de «Otra vez» al decir del lote 011, y lo que diga en el review.
+- **Regla**: `docs/goal.md`, «Los tonos, también por color».
+
 ### 🧪 Construir (palabras y escena, con modelos detrás) enseña a hilar frases
 
 - **Desde**: lote 010 (2026-10-11). **De dónde**: su propuesta en el chat.

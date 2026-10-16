@@ -14,6 +14,11 @@ sys.path.insert(0, str(ROOT))
 import anki  # noqa: E402
 
 
+def plain(fields):
+    """Los campos de una tarjeta sin los colores de tono: las pruebas de contenido no dependen de ellos."""
+    return {k: anki.strip_tone_spans(v) if isinstance(v, str) else v for k, v in fields.items()}
+
+
 class Pinyin(unittest.TestCase):
     def test_numeric_to_marked(self):
         for numeric, marked in [("ni3 hao3", "nǐ hǎo"), ("xie4 xie5", "xiè xie"), ("nv3", "nǚ"),
@@ -537,13 +542,13 @@ class Repository(unittest.TestCase):
         self.assertTrue(run({**ok, "question": {}}))
         self.assertTrue(run({**ok, "answer": {}}))
         self.assertEqual(anki.satisfied(ok), {"comprehension"})                  # no cubre la escucha de sus frases
-        f = anki.card_fields({**ok, "lang": "es", "prompt": {"text": "Lee."}}, eby, sby, {}, set())
+        f = plain(anki.card_fields({**ok, "lang": "es", "prompt": {"text": "Lee."}}, eby, sby, {}, set()))
         front = f["front"]
         self.assertIn("北京很热。北京很大。明天会下雨。", front)                   # un párrafo, en hanzi
         self.assertNotIn("Běijīng", front)                                       # sin pinyin delante
         self.assertLess(front.index("passage"), front.index("<details"))         # la pregunta, plegada, después
         self.assertIn("Běijīng", f["back"])                                      # el pinyin, al girar
-        both = anki.card_fields({**ok, "script": "both", "lang": "es", "prompt": {"text": "Lee."}}, eby, sby, {}, set())
+        both = plain(anki.card_fields({**ok, "script": "both", "lang": "es", "prompt": {"text": "Lee."}}, eby, sby, {}, set()))
         self.assertIn("Běijīng", both["front"])
 
     def test_markdown_anchors_like_github(self):
@@ -710,7 +715,7 @@ class Batch005(unittest.TestCase):
         cls.xby = {x["id"]: x for x in cls.exercises}
 
     def fields(self, xid):
-        return anki.card_fields(self.xby[xid], self.eby, self.sby, {}, set())
+        return plain(anki.card_fields(self.xby[xid], self.eby, self.sby, {}, set()))
 
     def test_partner_sentence_is_labelled_not_mixed_with_examples(self):
         ex = self.xby["x.read.num.shi"]                      # 十 shí, en grupo con 是 shì
@@ -902,7 +907,7 @@ class Batch009(unittest.TestCase):
         cls.xby = {x["id"]: x for x in cls.exercises}
 
     def fields(self, xid):
-        return anki.card_fields(self.xby[xid], self.eby, self.sby, {}, set())
+        return plain(anki.card_fields(self.xby[xid], self.eby, self.sby, {}, set()))
 
     def test_new_cards_are_always_mixed(self):
         ex = lambda xid, t, target: {"id": xid, "type": t, "targets": [target]}
@@ -991,7 +996,7 @@ class Batch010(unittest.TestCase):
         cls.xby = {x["id"]: x for x in cls.exercises}
 
     def fields(self, ex):
-        return anki.card_fields(ex, self.eby, self.sby, {}, set())
+        return plain(anki.card_fields(ex, self.eby, self.sby, {}, set()))
 
     def test_no_pronunciation_theory_on_cards(self):
         for xid in ("x.pair.chi-qi", "x.dictation.wen", "x.tones.neutral-pengyou"):
@@ -1076,3 +1081,38 @@ class Batch011(unittest.TestCase):
         share = sum(anki.skill_of(x) == "oír" for x in first) / len(first)
         self.assertLess(share, 0.36, share)
         self.assertGreaterEqual(share, anki.SKILL_TARGETS["oír"][0])
+
+
+class ToneColors(unittest.TestCase):
+    """Colores por tono (YAGO, 2026-10-16): cada sílaba y su hanzi con el color de su tono, sin adelantar nunca un
+    tono que la tarjeta pregunta."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.entries, cls.sentences, cls.exercises = anki.load()
+        cls.eby = {e["id"]: e for e in cls.entries}
+        cls.sby = {s["id"]: s for s in cls.sentences}
+
+    def test_hanzi_and_pinyin_share_the_tone(self):
+        out = anki.tone_color('<span class="seg c0"><span class="py">péngyou</span><span class="hz">朋友</span></span>')
+        self.assertIn('<span class="t2">péng</span><span class="t5">you</span>', out)
+        self.assertIn('<span class="t2">朋</span><span class="t5">友</span>', out)
+        self.assertEqual(anki.strip_tone_spans(out),
+                         '<span class="seg c0"><span class="py">péngyou</span><span class="hz">朋友</span></span>')
+
+    def test_text_pairs_and_readings(self):
+        self.assertIn('<span class="t3">nǐ</span>', anki.tone_color("Se dice 你好 (nǐ hǎo)."))
+        self.assertEqual(anki.tone_color("吗 más, 他 es"), "吗 más, 他 es")               # el español no es pinyin
+        self.assertIn('<span class="t2">shéi</span>', anki.tone_color('<b class="vs-hz">谁</b><span class="vs-py">shéi</span>'))
+        self.assertIn('<span class="t5">ge</span>', anki.tone_color('<span class="py">ge</span><span class="hz">个</span>'))
+
+    def test_no_tone_given_away_on_the_front(self):
+        bare = '<div class="hanzi">你好</div><div class="pinyin">ni hao</div>'     # la pregunta de una de tonos
+        self.assertEqual(anki.tone_color(bare), bare)
+        for ex in self.exercises:
+            if ex["type"] not in ("tones", "read", "contrast", "listen", "dictation", "charsound"):
+                continue
+            front = anki.card_fields(ex, self.eby, self.sby, {}, set())["front"]
+            front = re.sub(r'<div class="legend">.*?</div>', "", front)
+            if re.search(r'class="t[1-5]"', front):
+                self.assertRegex(front, r'class="(?:py|pinyin)"><span class="t', ex["id"])
