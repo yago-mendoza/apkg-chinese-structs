@@ -8,7 +8,7 @@ entries:
     hanzi: 中国
     pinyin: Zhōngguó
     meaning: {es: China, en: China}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '国: un territorio cerrado 口 que guarda el sello de jade 玉 del rey: el país.'}
   - id: w.xibanya
@@ -22,7 +22,7 @@ entries:
     level: 1
     level_reason: 'mi país: lo necesito desde el primer día'
     connection: {kind: sound, with: [雅], text: '牙 yá da el sonido a 雅 yǎ, el de tu nombre, 雅戈.'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Transcripción fonética: los caracteres imitan el sonido, no el significado.'}
       - {kind: linguistic, private: false, date: '2026-09-27', text: 西 xī «oeste» es el mismo de 东西 dōngxi «cosas».}
@@ -36,7 +36,7 @@ entries:
     meaning: {es: Estados Unidos, en: United States}
     level: 1
     level_reason: nombre de país frecuente; 国 es HSK 1
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '美: 大 «persona» con 羊 «carnero» encima, como adorno de cuernos: bello.'}
       - {kind: linguistic, private: false, date: '2026-09-27', text: '美国 es en parte transcripción: 美 měi imita el sonido de «América» y de paso significa «bello».'}
@@ -47,7 +47,7 @@ entries:
     hanzi: 中文
     pinyin: Zhōngwén
     meaning: {es: chino (la lengua), en: Chinese (language)}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Modificador + núcleo: 中 «China» especifica 文 «lengua, escritura».'}
   - id: w.shi
@@ -57,7 +57,7 @@ entries:
     hanzi: 是
     pinyin: shì
     meaning: {es: ser, en: to be}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-29', text: '是 une dos nombres (我是学生), no un nombre con un adjetivo: 我很高, no 我是高. Para preguntar vale 她漂亮吗？ o 她是不是很漂亮？, pero no 她是漂亮吗？.'}
   - id: w.bu
@@ -68,7 +68,7 @@ entries:
     pinyin: bù
     meaning: {es: 'no', en: not}
     relations: [p.bu-sandhi]
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
     accept_cards: 'los huecos de 不 / 没 practican la regla que más confunde (review 008: «debería haber varias tarjetas de huecos»)'
   - id: w.ma
@@ -79,7 +79,7 @@ entries:
     pinyin: ma
     meaning: {es: '¿…? (convierte la frase en pregunta de sí o no)', en: yes/no question particle}
     connection: {kind: sound, with: [妈], text: '马 mǎ «caballo» da el sonido a 吗 ma y a 妈 mā: el caballo solo presta su sonido.'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: Partícula final que convierte una afirmación en una pregunta de sí o no., original: checking for yes/no}
   - id: w.ne
@@ -89,7 +89,7 @@ entries:
     hanzi: 呢
     pinyin: ne
     meaning: {es: '¿y…? (devuelve la pregunta)', en: 'and…?'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Tono neutro, corto y apagado, con una vocal parecida a [ə]. Tras una respuesta, devuelve la pregunta: «¿y tú?».', original: 'neutral → decay, /ə/, “y tú?”'}
   - id: w.ye
@@ -99,7 +99,7 @@ entries:
     hanzi: 也
     pinyin: yě
     meaning: {es: también, en: also}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.dou
     use: say
@@ -108,7 +108,7 @@ entries:
     hanzi: 都
     pinyin: dōu
     meaning: {es: 'todos, ambos (adverbio)', en: 'all, both'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.de
     use: say
@@ -117,7 +117,7 @@ entries:
     hanzi: 的
     pinyin: de
     meaning: {es: 'de (posesión: 我的 = mi)', en: '''s (possessive)'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-09', text: 'No tiene una sola traducción: 我的 «mío», 这是我的 «es mío», 真的 «de verdad». Une lo que describe con lo descrito.'}
       - {kind: mnemonic, private: false, date: '2026-10-11', text: 'Como los otros «conejitos» (对, 时, 狗), 的 lleva una pieza a cada lado; aquí, un palito encima las une, como 的 une al dueño con lo suyo: 我的书.', original: '(idea, el conejito de ''de'' posesivo lleva sus dos compentes aencima nu palito porque estas vinculandolos, esto de esta persona, sabes ¿? de.)'}
@@ -128,7 +128,7 @@ entries:
     hanzi: 叫
     pinyin: jiào
     meaning: {es: llamarse, en: to be called}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: teacher, private: false, date: '2026-10-01', text: 'Para confirmar si alguien es una persona se pregunta 你是张丽吗？, no 你叫张丽吗？.'}
   - id: w.shenme
@@ -138,7 +138,7 @@ entries:
     hanzi: 什么
     pinyin: shénme
     meaning: {es: qué, en: what}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '什么 va donde iría la respuesta, sin cambiar el orden: 他叫什么名字？ o 他的名字是什么？ (la primera es la más corriente).'}
   - id: w.mingzi
@@ -149,7 +149,7 @@ entries:
     pinyin: míngzi
     meaning: {es: nombre, en: name}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.renshi
     use: say
@@ -159,7 +159,7 @@ entries:
     pinyin: rènshi
     meaning: {es: conocer (a alguien), en: to know (someone)}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: '认 «reconocer» + 识 «distinguir»: conocer a alguien, estar familiarizado con algo.', original: 认识 = reconocer + distinguir = familiarizado con}
       - {kind: note, private: false, date: 2026-09-25, text: 识 aporta la idea de distinguir algo de lo demás porque se conoce., original: distinguir algo (de los demás) con conocimiento}
@@ -170,7 +170,7 @@ entries:
     hanzi: 高兴
     pinyin: gāoxìng
     meaning: {es: contento, en: happy}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Con 很 y sin 是: 我很高兴, nunca 我是高兴. Para contestar a 认识你很高兴 basta 我也很高兴.'}
   - id: w.xing
@@ -180,7 +180,7 @@ entries:
     hanzi: 姓
     pinyin: xìng
     meaning: {es: apellidarse; apellido, en: to be surnamed; surname}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
     comments:
       - {kind: teacher, private: false, date: '2026-09-29', text: Se pregunta el apellido para poder tratar a alguien de señor o señora., original: we ask surname to say 'mr' in chinese}
       - {kind: linguistic, private: false, date: '2026-09-27', text: '姓 xìng «apellido» + 名字 míngzi «nombre» = 姓名 xìngmíng, el nombre completo.'}
@@ -194,7 +194,7 @@ entries:
     meaning: {es: su apellido (forma cortés), en: your surname (polite)}
     level: 2
     level_reason: 'fórmula cortés que se aprende con 姓 [HSK 2]; 贵 es HSK 1'
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 贵 «valioso, honorable» + 姓 «apellido»: «su honorable apellido».'}
       - {kind: teacher, private: false, date: '2026-09-29', text: 您贵姓？ es la forma respetuosa de 你姓什么？ Se contesta con el apellido o con el nombre completo., original: nin gui xing -> wo jiao bai da long}
@@ -206,7 +206,7 @@ entries:
     hanzi: 姓名
     pinyin: xìngmíng
     meaning: {es: nombre completo, en: full name}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
     comments: []
   - id: w.menduosa
     use: say
@@ -275,7 +275,7 @@ entries:
     hanzi: 北京
     pinyin: Běijīng
     meaning: {es: Pekín, en: Beijing}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: 'Literalmente «capital del norte»: 北 běi «norte» + 京 jīng «capital».'}
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '京 es un edificio alto sobre una colina, la parte de arriba de 高.', original: Era el pictograma de un edificio alto 高 elevado sobre una colina 京 jīng}
@@ -290,7 +290,7 @@ entries:
     meaning: {es: David (nombre de ejemplo), en: David (example name)}
     level: 1
     level_reason: nombre propio de ejemplo en la primera lección
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.xiansheng
     use: say
@@ -491,3 +491,50 @@ entries:
       - {ref: w.wang.forget, cue: 'cae (4.º): 我忘了'}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
     comments: []
+  - id: w.nage
+    use: say
+    role: content
+    kind: word
+    pos: interrogativo
+    hanzi: 哪个
+    pinyin: 'nǎge'
+    accept_pinyin_mismatch: '哪个 se dice nǎge, con 个 átono; pypinyin no lo reconoce como palabra'
+    meaning: {es: 'cuál, qué (de varios)', en: 'which (one)'}
+    level: 1
+    level_reason: '哪 y 个 son HSK 1; es la forma corriente de preguntar «cuál».'
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-15', text: 'Palabra a palabra: 哪 «cuál» + 个, el clasificador. Para elegir entre varios: 哪个人？ «¿qué persona?», 哪个国家？ «¿qué país?».'}
+  - id: w.guojia
+    use: say
+    role: content
+    kind: word
+    hanzi: 国家
+    pinyin: 'guójiā'
+    meaning: {es: 'país', en: 'country'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-15', text: 'Palabra a palabra: 国 «país» + 家 «casa». Para preguntar de dónde es alguien basta con 你是哪国人；国家 es la palabra entera, como en 你来自哪个国家.'}
+  - id: w.riben
+    use: hear
+    role: content
+    kind: word
+    pos: nombre-propio
+    hanzi: 日本
+    pinyin: 'Rìběn'
+    meaning: {es: 'Japón', en: 'Japan'}
+    level: 2
+    level_reason: 'Nombre de país muy corriente; 日 y 本 son HSK 1.'
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-09-22', date: '2026-09-22'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-22', text: 'Palabra a palabra: 日 «sol» + 本 «origen»: el país donde nace el sol. 日本人 «japonés».'}
+  - id: w.waiguo
+    use: say
+    role: content
+    kind: word
+    hanzi: 外国
+    pinyin: 'wàiguó'
+    meaning: {es: 'el extranjero; extranjero (de otro país)', en: 'foreign country; foreign'}
+    source: {origin: attic, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'mixto_29_y_hoy la de hace 2 dias.md', date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-16', text: 'Palabra a palabra: 外 «fuera» + 国 «país». 外国人 es el extranjero, como tú en China: 我是外国人.'}

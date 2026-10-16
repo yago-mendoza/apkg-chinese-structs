@@ -11,7 +11,7 @@ entries:
     hanzi: 在
     pinyin: zài
     meaning: {es: estar (haciendo algo), en: (action in progress)}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.kan
     use: say
@@ -20,7 +20,7 @@ entries:
     hanzi: 看
     pinyin: kàn
     meaning: {es: mirar; leer, en: to look; to read}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: 'Una mano 手 sobre el ojo 目, como quien se hace visera para mirar a lo lejos.', original: mano sobre ojo}
   - id: w.kanjian
@@ -30,7 +30,7 @@ entries:
     hanzi: 看见
     pinyin: kànjiàn
     meaning: {es: ver (llegar a ver), en: to see}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: '看 es la acción de mirar; 见 añade el resultado: llegar a ver.'}
   - id: w.kankan
@@ -44,19 +44,9 @@ entries:
     accept_pinyin_mismatch: la repetición del verbo va en tono neutro
     level: 1
     level_reason: 'reduplicación de 看 [HSK 1]'
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Repetir el verbo lo suaviza: «mirar un poco», no «mirar dos veces».'}
-  - id: w.zuqiu
-    use: hear
-    role: content
-    kind: word
-    hanzi: 足球
-    pinyin: zúqiú
-    meaning: {es: fútbol, en: football}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
-    comments:
-      - {kind: linguistic, private: false, date: 2026-09-25, text: 'Calco: 足 «pie» + 球 «pelota».'}
   - id: w.zhe
     use: say
     role: function
@@ -99,28 +89,6 @@ entries:
       - {ref: w.wen, cue: 'boca 口 en la puerta; cae'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
-  - id: w.xiaomao
-    use: hear
-    role: content
-    kind: word
-    pos: sustantivo
-    hanzi: 小猫
-    pinyin: xiǎomāo
-    meaning: {es: gatito, en: kitten}
-    level: 2
-    level_reason: 猫 māo es HSK 2
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
-    comments: []
-  - id: w.gongzuo
-    use: say
-    role: content
-    kind: word
-    hanzi: 工作
-    pinyin: gōngzuò
-    meaning: {es: trabajo; trabajar, en: work; to work}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-09-27', text: 工 gōng es el de 工程师. 恭 gōng «respetuoso» suena igual y es otro carácter.}
   - id: w.zou
     use: say
     role: content
@@ -157,25 +125,6 @@ entries:
       - {kind: linguistic, private: false, date: '2026-09-27', text: '错误 cuòwù «error» [HSK 3] y 误会 wùhuì «malentendido» [HSK 4] son más formales; hablando basta 错.'}
       - {kind: sound, private: false, date: '2026-10-01', text: 'cuò: la u apenas suena, se desliza hacia la o.', original: 'Cuò decir que la "u" apenas suena en notas'}
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Estar equivocado: 我错了 «me he equivocado» (también vale para «he cometido un error»), 你错了 «te equivocas». Detrás de un verbo, «mal»: 你说错了 «lo has dicho mal». 不错 bú cuò [HSK 2] es un elogio, «no está mal, bastante bien».'}
-  - id: w.lanqiu
-    use: hear
-    role: content
-    kind: word
-    hanzi: 篮球
-    pinyin: lánqiú
-    meaning: {es: baloncesto, en: basketball}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-    comments: []
-  - id: w.da.play
-    use: hear
-    role: content
-    kind: word
-    hanzi: 打
-    pinyin: dǎ
-    meaning: {es: jugar (a deportes de pelota); golpear, en: to play (ball games); to hit}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-09-27', text: '打 + deporte de pelota: 打篮球 «jugar al baloncesto». Lleva 扌 «mano».'}
   - id: g.ru-chu
     kind: group
     basis: set
@@ -186,16 +135,6 @@ entries:
       - {ref: w.chukou, cue: '出 «salir» + 口'}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
-  - id: w.ruanjian
-    use: hear
-    role: content
-    kind: word
-    hanzi: 软件
-    pinyin: ruǎnjiàn
-    meaning: {es: software, en: software}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-09-27', text: 'Calco: 软 «blando» + 件 «pieza», frente a 硬件 yìngjiàn «hardware», las piezas duras.'}
   - id: w.shuo
     use: say
     role: content
@@ -306,16 +245,6 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: character, private: false, date: '2026-10-01', text: '口 «boca» a la izquierda. 听音乐 «escuchar música».'}
-  - id: w.dianying
-    use: hear
-    role: content
-    kind: word
-    hanzi: 电影
-    pinyin: 'diànyǐng'
-    meaning: {es: 'película', en: 'film'}
-    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '电 «electricidad» + 影 «sombra, imagen»: sombras eléctricas. El 电 de 电话 y 电脑.'}
   - id: w.shengqi
     use: say
     role: content
@@ -355,23 +284,6 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Más fuerte que 很: 非常好 «muy bien». Para agradecer se dice 太谢谢你了 o 非常感谢 [HSK 2]; «非常谢谢你» suena forzado.', original: 'feichang xiexie ni'}
-  - id: w.daxiang
-    use: hear
-    role: content
-    kind: word
-    hanzi: 大象
-    pinyin: 'dàxiàng'
-    meaning: {es: 'elefante', en: 'elephant'}
-    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
-  - id: w.yinyue
-    use: hear
-    role: content
-    kind: word
-    hanzi: 音乐
-    pinyin: 'yīnyuè'
-    meaning: {es: 'música', en: 'music'}
-    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
-    comments: []
   - id: w.weishenme
     use: say
     role: function
@@ -448,16 +360,6 @@ entries:
     source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29', rescued: 004-2026-10-02-ser-nombres-y-describir}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-02', text: '这棵树很高 «este árbol es alto»: 棵 kē es el clasificador de los árboles.'}
-  - id: w.long
-    use: hear
-    role: content
-    kind: word
-    hanzi: 龙
-    pinyin: lóng
-    meaning: {es: dragón, en: dragon}
-    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
-    comments:
-      - {kind: teacher, private: false, date: '2026-10-02', text: '龍 es su forma tradicional. Es frecuente en nombres: 成龙 «Jackie Chan», 大龙, y 李小龙 «Bruce Lee».'}
   - id: g.shu-shu
     kind: group
     basis: soundalike
@@ -581,67 +483,6 @@ entries:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Con esta lectura, děi, es «tener que», muy de hablar: 我得先复习一下笔记. El mismo hanzi se lee de, sin tono, en 觉得.'}
-  - id: w.pashan
-    use: say
-    role: content
-    kind: word
-    hanzi: 爬山
-    pinyin: 'páshān'
-    meaning: {es: 'subir a la montaña, hacer senderismo', en: 'to go hiking'}
-    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 爬 «trepar» + 山 «montaña».'}
-      - {kind: character, private: false, date: '2026-10-08', text: '巴 bā da el sonido a 爬 pá, a 爸 bà, a 吧 ba y a 芭 bā; en 爬, 爪 «garra» da el sentido: trepar con las manos.'}
-  - id: w.paobu
-    use: hear
-    role: content
-    kind: word
-    hanzi: 跑步
-    pinyin: 'pǎobù'
-    meaning: {es: 'correr (hacer deporte)', en: 'to run, to jog'}
-    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 跑 «correr» + 步 «paso».'}
-  - id: w.tiaowu
-    use: hear
-    role: content
-    kind: word
-    hanzi: 跳舞
-    pinyin: 'tiàowǔ'
-    meaning: {es: 'bailar', en: 'to dance'}
-    source: {origin: attic, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01', rescued: 008-2026-10-08-pedir-ayuda-lugares-y-finales}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Palabra a palabra: 跳 «saltar» + 舞 «danza».'}
-  - id: w.jita
-    use: hear
-    role: content
-    kind: word
-    hanzi: 吉他
-    pinyin: 'jítā'
-    meaning: {es: 'guitarra', en: 'guitar'}
-    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Préstamo por el sonido del inglés guitar, como 咖啡 de coffee.'}
-  - id: w.balei
-    use: hear
-    role: content
-    kind: word
-    hanzi: 芭蕾
-    pinyin: 'bālěi'
-    meaning: {es: 'ballet', en: 'ballet'}
-    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Préstamo por el sonido del francés ballet.'}
-  - id: w.jihui
-    use: hear
-    role: content
-    kind: word
-    hanzi: 机会
-    pinyin: 'jīhuì'
-    meaning: {es: 'oportunidad', en: 'opportunity'}
-    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-08', text: 'El mismo 机 de 手机 y 飞机.'}
   - id: w.likai
     use: hear
     role: content
@@ -776,4 +617,43 @@ entries:
       - {ref: w.chulai, cue: 'hacia quien habla, que espera fuera'}
       - {ref: w.chuqu, cue: alejándose de quien habla}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []
+  - id: w.xizao
+    use: hear
+    role: content
+    kind: word
+    hanzi: 洗澡
+    pinyin: 'xǐzǎo'
+    meaning: {es: 'ducharse, bañarse', en: 'to shower, to bathe'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+    comments: []
+  - id: w.shiqing
+    use: hear
+    role: content
+    kind: word
+    hanzi: 事情
+    pinyin: 'shìqing'
+    accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
+    meaning: {es: 'asunto, cosa (que pasa o hay que hacer)', en: 'matter, thing'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+    comments: []
+  - id: w.dao.reach
+    use: say
+    role: content
+    kind: word
+    hanzi: 到
+    pinyin: 'dào'
+    meaning: {es: 'llegar; llegar a (una cifra, un sitio)', en: 'to arrive; to reach'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+    comments:
+      - {kind: teacher, private: false, date: '2026-10-15', text: '我还不到二十八岁 «aún no tengo veintiocho»: 不到 es «no llegar a».'}
+  - id: g.dao-dao
+    kind: group
+    basis: soundalike
+    title: '岛 dǎo y 到 dào'
+    explanation: 'Mismo sonido, otro tono: 岛 baja y sube; 到 cae.'
+    members:
+      - {ref: w.dao, cue: 'baja y sube (3.º), sustantivo'}
+      - {ref: w.dao.reach, cue: 'cae (4.º), verbo: 不到二十八岁'}
+    source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
     comments: []

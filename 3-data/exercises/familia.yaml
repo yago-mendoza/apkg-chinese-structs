@@ -855,3 +855,282 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Mis abuelos están bien los dos.»'}
     answer: {meaning: Mis abuelos están bien los dos.}
     comments: []
+  - id: x.produce.jiejie
+    added: 2026-10-16
+    lang: es
+    type: produce
+    targets: [w.jiejie]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «hermana mayor»? Escribe el pinyin.'}
+    answer: {typed: jie3 jie5, hanzi: 姐姐, pinyin: jiějie, meaning: hermana mayor}
+    comments: []
+  - id: x.dictation.gege
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.gege]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ge1 ge5, hanzi: 哥哥, pinyin: gēge, meaning: hermano mayor}
+    comments: []
+  - id: x.produce.gege
+    added: 2026-10-16
+    lang: es
+    type: produce
+    targets: [w.gege]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «hermano mayor»? Escribe el pinyin.'}
+    answer: {typed: ge1 ge5, hanzi: 哥哥, pinyin: gēge, meaning: hermano mayor}
+    comments: []
+  - id: x.read.gege
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.gege]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 哥哥}
+    answer: {hanzi: 哥哥, pinyin: gēge, meaning: hermano mayor}
+    comments: []
+  - id: x.tones.gege
+    added: 2026-10-16
+    lang: es
+    type: tones
+    targets: [w.gege]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 哥哥, pinyin: ge ge}
+    answer: {typed: '15', hanzi: 哥哥, pinyin: gēge, meaning: hermano mayor}
+    comments: []
+  - id: x.dictation.didi
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.didi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: di4 di5, hanzi: 弟弟, pinyin: dìdi, meaning: hermano menor}
+    comments: []
+  - id: x.produce.didi
+    added: 2026-10-16
+    lang: es
+    type: produce
+    targets: [w.didi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «hermano menor»? Escribe el pinyin.'}
+    answer: {typed: di4 di5, hanzi: 弟弟, pinyin: dìdi, meaning: hermano menor}
+    comments: []
+  - id: x.read.didi
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.didi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 弟弟}
+    answer: {hanzi: 弟弟, pinyin: dìdi, meaning: hermano menor}
+    comments: []
+  - id: x.tones.didi
+    added: 2026-10-16
+    lang: es
+    type: tones
+    targets: [w.didi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 弟弟, pinyin: di di}
+    answer: {typed: '45', hanzi: 弟弟, pinyin: dìdi, meaning: hermano menor}
+    comments: []
+  - id: x.listen.ta-shi-wang-ayi
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-shi-wang-ayi
+    targets: [s.ta-shi-wang-ayi]
+    context: [w.ta.she, w.shi, w.wang.surname, w.ayi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es la señora Wang.}
+    comments: []
+  - id: x.produce.ta-shi-wang-ayi
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ta-shi-wang-ayi
+    targets: [s.ta-shi-wang-ayi]
+    context: [w.ta.she, w.shi, w.wang.surname, w.ayi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Es la señora Wang.»'}
+    answer: {meaning: Es la señora Wang.}
+    comments: []
+  - id: x.listen.ta-shi-wo-ayi
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-shi-wo-ayi
+    targets: [s.ta-shi-wo-ayi]
+    context: [w.ta.she, w.shi, w.wo, w.ayi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es mi tía.}
+    comments: []
+  - id: x.produce.ta-shi-wo-ayi
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ta-shi-wo-ayi
+    targets: [s.ta-shi-wo-ayi]
+    context: [w.ta.she, w.shi, w.wo, w.ayi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Es mi tía.»'}
+    answer: {meaning: Es mi tía.}
+    comments: []
+  - id: x.listen.wo-you-jiejie
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-you-jiejie
+    targets: [s.wo-you-jiejie]
+    context: [w.wo, w.you.have, w.jiejie]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo una hermana mayor.}
+    comments: []
+  - id: x.produce.wo-you-jiejie
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.wo-you-jiejie
+    targets: [s.wo-you-jiejie]
+    context: [w.wo, w.you.have, w.jiejie]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo una hermana mayor.»'}
+    answer: {meaning: Tengo una hermana mayor.}
+    comments: []
+  - id: x.listen.wo-meiyou-jiejie
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-meiyou-jiejie
+    targets: [s.wo-meiyou-jiejie]
+    context: [w.wo, w.meiyou, w.jiejie]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No tengo hermana mayor.}
+    comments: []
+  - id: x.produce.wo-meiyou-jiejie
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.wo-meiyou-jiejie
+    targets: [s.wo-meiyou-jiejie]
+    context: [w.wo, w.meiyou, w.jiejie]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No tengo hermana mayor.»'}
+    answer: {meaning: No tengo hermana mayor.}
+    comments: []
+  - id: x.listen.wo-ye-meiyou-jiejie
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-ye-meiyou-jiejie
+    targets: [s.wo-ye-meiyou-jiejie]
+    context: [w.wo, w.ye, w.meiyou, w.jiejie]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Yo tampoco tengo hermana mayor.}
+    comments: []
+  - id: x.produce.wo-ye-meiyou-jiejie
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.wo-ye-meiyou-jiejie
+    targets: [s.wo-ye-meiyou-jiejie]
+    context: [w.wo, w.ye, w.meiyou, w.jiejie]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Yo tampoco tengo hermana mayor.»'}
+    answer: {meaning: Yo tampoco tengo hermana mayor.}
+    comments: []
+  - id: x.listen.women-dou-meiyou-jiejie
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.women-dou-meiyou-jiejie
+    targets: [s.women-dou-meiyou-jiejie]
+    context: [w.women, w.dou, w.meiyou, w.jiejie]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ninguno de nosotros tiene hermana mayor.}
+    comments: []
+  - id: x.produce.women-dou-meiyou-jiejie
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.women-dou-meiyou-jiejie
+    targets: [s.women-dou-meiyou-jiejie]
+    context: [w.women, w.dou, w.meiyou, w.jiejie]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ninguno de nosotros tiene hermana mayor.»'}
+    answer: {meaning: Ninguno de nosotros tiene hermana mayor.}
+    comments: []
+  - id: x.listen.ta-you-meiyou-didi
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-you-meiyou-didi
+    targets: [s.ta-you-meiyou-didi]
+    context: [w.ta.he, w.you.have, w.mei, w.didi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Tiene hermano pequeño?'}
+    comments: []
+  - id: x.produce.ta-you-meiyou-didi
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ta-you-meiyou-didi
+    targets: [s.ta-you-meiyou-didi]
+    context: [w.ta.he, w.you.have, w.mei, w.didi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Tiene hermano pequeño?»'}
+    answer: {meaning: '¿Tiene hermano pequeño?'}
+    comments: []
+  - id: x.listen.zhe-shi-ta-de-gege
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.zhe-shi-ta-de-gege
+    targets: [s.zhe-shi-ta-de-gege]
+    context: [w.zhe, w.shi, w.ta.he, w.de, w.gege]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Este es su hermano mayor.}
+    comments: []
+  - id: x.produce.zhe-shi-ta-de-gege
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.zhe-shi-ta-de-gege
+    targets: [s.zhe-shi-ta-de-gege]
+    context: [w.zhe, w.shi, w.ta.he, w.de, w.gege]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Este es su hermano mayor.»'}
+    answer: {meaning: Este es su hermano mayor.}
+    comments: []
+  - id: x.charsound.nai
+    added: 2026-10-16
+    lang: es
+    type: charsound
+    targets: [w.nainai, w.niunai]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 奶}
+    answer: {typed: nai3, hanzi: 奶, pinyin: nǎi, meaning: 'Sale en 奶奶 nǎinai «abuela (paterna)», 牛奶 niúnǎi «leche».'}
+    comments: []
+  - id: x.comprehension.tia-joven
+    added: '2026-10-16'
+    lang: es
+    type: comprehension
+    targets: [s.ta-shi-wo-ayi, s.ta-kanqilai-hen-nianqing, s.ni-cai-ta-duoda.she, s.wo-juede-ta-ershi-sui-zuoyou]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Quién es la mujer y cuántos años cree el que habla que tiene?'}
+    answer: {meaning: 'Es su tía; cree que tiene unos veinte años, porque parece muy joven.'}
+    comments: []

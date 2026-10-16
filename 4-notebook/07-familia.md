@@ -20,6 +20,8 @@
 - ✅🃏 爷爷 yéye [jɛ˧˥ jɛ] · abuelo (paterno) · _sustantivo_
 - ✅🃏 奶奶 nǎinai [naɪ˧˩˧ naɪ] · abuela (paterna) · _sustantivo_
 - ✅🃏 父母 fùmǔ [fu˥˩ mu˧˩˧] · los padres · _sustantivo_
+- ✅🃏 哥哥 gēge [kɤ˥ kɤ] · hermano mayor · _sustantivo_
+- ✅🃏 弟弟 dìdi [ti˥˩ ti] · hermano menor · _sustantivo_
 
 ## 好, 女儿 y 儿子
 
@@ -57,3 +59,11 @@ Se llama a la gente por lo que es para ti, no por su nombre.
 - ✅🃏 爸爸和妈妈都很高。 · bàba hé māma dōu hěn gāo · Papá y mamá son altos los dos.
 - ✅🃏 叔叔、阿姨好！ · shūshu āyí hǎo · ¡Hola, señores!
 - ✅🃏 我爷爷和奶奶都很好。 · wǒ yéye hé nǎinai dōu hěn hǎo · Mis abuelos están bien los dos.
+- ✅🃏 她是王阿姨。 · tā shì Wáng āyí · Es la señora Wang.
+- ✅🃏 她是我阿姨。 · tā shì wǒ āyí · Es mi tía.
+- ✅🃏 我有姐姐。 · wǒ yǒu jiějie · Tengo una hermana mayor.
+- ✅🃏 我没有姐姐。 · wǒ méiyǒu jiějie · No tengo hermana mayor.
+- ✅🃏 我也没有姐姐。 · wǒ yě méiyǒu jiějie · Yo tampoco tengo hermana mayor.
+- ✅🃏 我们都没有姐姐。 · wǒmen dōu méiyǒu jiějie · Ninguno de nosotros tiene hermana mayor.
+- ✅🃏 他有没有弟弟？ · tā yǒu méi yǒu dìdi · ¿Tiene hermano pequeño?
+- ✅🃏 这是他的哥哥。 · zhè shì tā de gēge · Este es su hermano mayor.

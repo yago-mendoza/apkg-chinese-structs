@@ -673,3 +673,76 @@ sentences:
       - {text: ！}
     translation: {es: 'Es demasiado caro, ¡déjelo en menos!', en: 'It''s too expensive, lower it a bit!'}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.zhe-ben-shu-duoshao-qian
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 本, ref: w.ben.book, pinyin: 'běn'}
+      - {text: 书, ref: w.shu, pinyin: 'shū'}
+      - {text: 多少, ref: w.duoshao, pinyin: 'duōshao'}
+      - {text: 钱, ref: w.qian, pinyin: 'qián'}
+      - {text: ？}
+    translation: {es: '¿Cuánto cuesta este libro?', en: 'How much is this book?'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: s.zhege-you-ershi-jin-zuoyou
+    use: hear
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 斤, ref: w.jin.weight, pinyin: 'jīn'}
+      - {text: 左右, ref: w.zuoyou, pinyin: 'zuǒyòu'}
+      - {text: 。}
+    translation: {es: 'Esto pesa unos diez kilos.', en: 'This weighs about ten kilos.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: s.ni-juede-zhege-zenmeyang
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 怎么样, ref: w.zenmeyang, pinyin: 'zěnmeyàng'}
+      - {text: ？}
+    translation: {es: '¿Qué te parece esto?', en: 'What do you think of this?'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: s.zhe-ben-shu-ershi-kuai-zuoyou
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 本, ref: w.ben.book, pinyin: 'běn'}
+      - {text: 书, ref: w.shu, pinyin: 'shū'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 块, ref: w.kuai, pinyin: 'kuài'}
+      - {text: 左右, ref: w.zuoyou, pinyin: 'zuǒyòu'}
+      - {text: 。}
+    translation: {es: 'Este libro cuesta unos veinte yuanes.', en: 'This book is about twenty yuan.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-15', date: '2026-10-15'}
+  - id: s.xiawu-qu-shangdian-mai-yixie-shuiguo
+    use: hear
+    segments:
+      - {text: 下午, ref: w.xiawu, pinyin: 'xiàwǔ'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 商店, ref: w.shangdian, pinyin: 'shāngdiàn'}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 买, ref: w.mai, pinyin: 'mǎi'}
+      - {text: 一些, ref: w.yixie, pinyin: 'yìxiē'}
+      - {text: 水果, ref: w.shuiguo, pinyin: 'shuǐguǒ'}
+      - {text: 。}
+    translation: {es: 'Esta tarde voy a la tienda: quiero comprar algo de fruta.', en: 'This afternoon I''m going to the shop; I want to buy some fruit.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'audio de los deberes 2026-09-22', date: '2026-09-22'}
+  - id: s.ta-mai-shuiguo
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 卖, ref: w.mai.sell, pinyin: 'mài'}
+      - {text: 水果, ref: w.shuiguo, pinyin: 'shuǐguǒ'}
+      - {text: 。}
+    translation: {es: 'Vende fruta.', en: 'He sells fruit.'}
+    source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}

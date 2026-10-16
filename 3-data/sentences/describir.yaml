@@ -33,7 +33,7 @@ sentences:
       - {text: 漂亮, ref: w.piaoliang, pinyin: piàoliang}
       - {text: 。}
     translation: {es: No es guapa., en: She isn't pretty.}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.ta-piaoliang-ma
     use: say
     segments:
@@ -42,7 +42,7 @@ sentences:
       - {text: 吗, ref: w.ma, pinyin: ma}
       - {text: ？}
     translation: {es: '¿Es guapa?', en: 'Is she pretty?'}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.ta-piaoliang-bu-piaoliang
     use: say
     segments:
@@ -52,7 +52,7 @@ sentences:
       - {text: 漂亮, ref: w.piaoliang, pinyin: piàoliang}
       - {text: ？}
     translation: {es: '¿Es guapa o no?', en: 'Is she pretty or not?'}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.ta-bu-gao
     use: say
     segments:
@@ -61,7 +61,7 @@ sentences:
       - {text: 高, ref: w.gao, pinyin: gāo}
       - {text: 。}
     translation: {es: No es alto., en: He isn't tall.}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.laoshi-hen-shuai
     use: hear
     segments:
@@ -70,7 +70,7 @@ sentences:
       - {text: 帅, ref: w.shuai, pinyin: shuài}
       - {text: 。}
     translation: {es: El profesor es guapo., en: The teacher is handsome.}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.beijing-hen-da
     use: hear
     segments:
@@ -480,3 +480,132 @@ sentences:
       - {text: 。}
     translation: {es: De verdad que me gusta mucho., en: I really like it a lot.}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.ta-kanqilai-hen-nianqing
+    use: say
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 看起来, ref: w.kanqilai, pinyin: 'kànqǐlai'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 年轻, ref: w.nianqing, pinyin: 'niánqīng'}
+      - {text: 。}
+    translation: {es: 'Parece muy joven.', en: 'She looks very young.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+  - id: s.ta-hen-piaoliang-ni-juede-ne
+    use: say
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: 'piàoliang'}
+      - {text: ，}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
+      - {text: 呢, ref: w.ne, pinyin: 'ne'}
+      - {text: ？}
+    translation: {es: 'Es muy guapa, ¿no te parece?', en: 'She''s very pretty, don''t you think?'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: s.dlg-yifu-zhen-haokan
+    use: hear
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 件, ref: w.jian.cl, pinyin: 'jiàn'}
+      - {text: 衣服, ref: w.yifu, pinyin: 'yīfu'}
+      - {text: 真, ref: w.zhen, pinyin: 'zhēn'}
+      - {text: 好看, ref: w.haokan, pinyin: 'hǎokàn'}
+      - {text: ！}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 说, ref: w.shuo, pinyin: 'shuō'}
+      - {text: 得, ref: w.de.complement, pinyin: 'de'}
+      - {text: 对, ref: w.dui, pinyin: 'duì'}
+      - {text: 。}
+    translation: {es: '—¡Qué bonita es esta prenda! —Tienes razón.', en: 'This piece of clothing looks great! You''re right.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-15', date: '2026-10-15'}
+  - id: s.wo-juede-zhe-ben-shu-zhen-youqu
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 本, ref: w.ben.book, pinyin: 'běn'}
+      - {text: 书, ref: w.shu, pinyin: 'shū'}
+      - {text: 真, ref: w.zhen, pinyin: 'zhēn'}
+      - {text: 有趣, ref: w.youqu, pinyin: 'yǒuqù'}
+      - {text: 。}
+    translation: {es: 'Este libro me parece muy interesante.', en: 'I think this book is really interesting.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-15', date: '2026-10-15'}
+  - id: s.ta-hen-piaoliang-dajia-dou-xihuan-ta
+    use: hear
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: 'piàoliang'}
+      - {text: ，}
+      - {text: 大家, ref: w.dajia, pinyin: 'dàjiā'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 。}
+    translation: {es: 'Es muy guapa y cae bien a todos.', en: 'She''s pretty; everybody likes her.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-09-22', date: '2026-09-22'}
+  - id: s.ta-hen-gao-xihuan-da-lanqiu
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 高, ref: w.gao, pinyin: 'gāo'}
+      - {text: ，}
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 打, ref: w.da.play, pinyin: 'dǎ'}
+      - {text: 篮球, ref: w.lanqiu, pinyin: 'lánqiú'}
+      - {text: 。}
+    translation: {es: 'Es alto y le gusta jugar al baloncesto.', en: 'He''s tall; he likes playing basketball.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-09-22', date: '2026-09-22'}
+  - id: s.ta-hen-congming-baba-mama-dou-xihuan
+    use: hear
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 聪明, ref: w.congming, pinyin: 'cōngming'}
+      - {text: ，}
+      - {text: 爸爸, ref: w.baba, pinyin: 'bàba'}
+      - {text: 和, ref: w.he.and, pinyin: 'hé'}
+      - {text: 妈妈, ref: w.mama, pinyin: 'māma'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 。}
+    translation: {es: 'Es muy lista; su padre y su madre la adoran.', en: 'She''s clever; her mum and dad both love her.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-09-22', date: '2026-09-22'}
+  - id: s.ta-hen-shuai-nvsheng-dou-xihuan
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 帅, ref: w.shuai, pinyin: 'shuài'}
+      - {text: ，}
+      - {text: 女生, ref: w.nvsheng, pinyin: 'nǚshēng'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 。}
+    translation: {es: 'Es muy guapo; les gusta a todas las chicas.', en: 'He''s handsome; all the girls like him.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-09-22', date: '2026-09-22'}
+  - id: s.ta-hen-congming
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 聪明, ref: w.congming, pinyin: 'cōngming'}
+      - {text: 。}
+    translation: {es: 'Es muy listo.', en: 'He''s very clever.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'chat: dictados de la profesora al empezar la clase', date: '2026-10-15'}
+  - id: s.tamen-dou-hen-ben
+    use: hear
+    segments:
+      - {text: 他们, ref: w.tamen, pinyin: 'tāmen'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 笨, ref: w.ben, pinyin: 'bèn'}
+      - {text: 。}
+    translation: {es: 'Son todos tontos.', en: 'They''re all stupid.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'chat: dictados de la profesora al empezar la clase', date: '2026-10-15'}

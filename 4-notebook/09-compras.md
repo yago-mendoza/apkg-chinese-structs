@@ -55,6 +55,14 @@
 - ✅🃏 饿 è [ɤ˥˩] · tener hambre, hambriento · _verbo_ · 我饿了 «me ha entrado hambre». 饣 a la izquierda es «comida», como en 饭.
 - ✅🃏 便宜 piányi [pʰjɛn˧˥ i] · barato · _adjetivo_ · 可以便宜一点吗？ «¿me lo deja un poco más barato?»: así se regatea. Lo contrario es 贵 «caro».
 - ✅🃏 少 shǎo [ʂɑʊ˧˩˧] · poco; menos · _adjetivo_ · Para regatear: 能少一点吗？ «¿puede dejarlo en menos?». Es el 少 de 多少 «cuánto», literalmente «mucho-poco».
+- ✅🃏 卖 mài [maɪ˥˩] · vender · _verbo_ · 卖 es 买 con 十 encima: cuando tienes de más, lo vendes. · 买 mǎi «comprar», tercer tono; 卖 mài «vender», cuarto. 他卖水果 «vende fruta».
+- ✅🃏 一些 yìxiē [i˥˩ ɕjɛ˥] · algunos, un poco de · _número_ · Va delante del nombre: 买一些水果 «comprar algo de fruta».
+- ✅🃏 斤 jīn [tɕin˥] · medio kilo (unidad de peso) · _clasificador_ · 1 公斤 = 2 斤: en el mercado se pesa en 斤. 一斤苹果 es medio kilo de manzanas. · 斤 jīn da el sonido a 近 jìn «cerca»: mismo sonido, otro tono.
+- ✅🃏 公斤 gōngjīn [kʊŋ˥ tɕin˥] · kilo · _clasificador_
+- ✅🃏 牛奶 niúnǎi [njoʊ˧˥ naɪ˧˩˧] · leche · _sustantivo_
+- ✅🃏 啤酒 píjiǔ [pʰi˧˥ tɕjoʊ˧˩˧] · cerveza · _sustantivo_
+- ✅🃏 香蕉 xiāngjiāo [ɕjɑŋ˥ tɕjɑʊ˥] · plátano · _sustantivo_
+- ✅🃏 汉堡 hànbǎo [xan˥˩ pɑʊ˧˩˧] · hamburguesa · _sustantivo_
 
 ## Querer, necesitar, gustar, amar
 
@@ -95,6 +103,13 @@ Se parecen al oído; uno tiene agua y el otro, un árbol.
 
 - 渴 kě · baja y sube; 氵 «agua»
 - 棵 kē · alto y plano; 木 «árbol»
+
+## 买 mǎi y 卖 mài: comprar y vender
+
+Solo los separa el tono: 买 baja y sube (3.º); 卖 cae (4.º).
+
+- 买 mǎi · baja y sube (3.º): 我想买水果
+- 卖 mài · cae (4.º): 他卖水果
 
 ## Frases
 
@@ -163,3 +178,9 @@ Se parecen al oído; uno tiene agua y el otro, un árbol.
 - ✅🃏 请问，那是什么？ · qǐngwèn nà shì shénme · Perdone, ¿qué es eso?
 - ✅🃏 能少一点吗？ · néng shǎo yìdiǎn ma · ¿Puede dejarlo en menos?
 - ✅🃏 太贵了，少一点吧！ · tài guì le shǎo yìdiǎn ba · Es demasiado caro, ¡déjelo en menos!
+- ✅🃏 这本书多少钱？ · zhè běn shū duōshao qián · ¿Cuánto cuesta este libro?
+- ✅🃏 这个有二十斤左右。 · zhè ge yǒu èr shí jīn zuǒyòu · Esto pesa unos diez kilos.
+- ✅🃏 你觉得这个怎么样？ · nǐ juéde zhè ge zěnmeyàng · ¿Qué te parece esto?
+- ✅🃏 这本书二十块左右。 · zhè běn shū èr shí kuài zuǒyòu · Este libro cuesta unos veinte yuanes.
+- ✅🃏 下午我去商店，我想买一些水果。 · xiàwǔ wǒ qù shāngdiàn wǒ xiǎng mǎi yìxiē shuǐguǒ · Esta tarde voy a la tienda: quiero comprar algo de fruta.
+- ✅🃏 他卖水果。 · tā mài shuǐguǒ · Vende fruta.

@@ -21,7 +21,7 @@ sentences:
     translation: {es: Somos amigos., en: We are friends.}
   - id: s.nin-shi-women-de-laoshi-ma
     use: hear
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21', note: 'nombre ilegible
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21', note: 'nombre ilegible
         en los apuntes (Xīm?): se ha quitado'}
     segments:
       - {text: 您, ref: w.nin, pinyin: nín}
@@ -34,7 +34,7 @@ sentences:
     translation: {es: '¿Es usted nuestra profesora?', en: 'Are you our teacher?'}
   - id: s.dui-wo-shi-nimen-de-laoshi
     use: hear
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21', note: 'nombre ilegible
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21', note: 'nombre ilegible
         en los apuntes (Xīm?): se ha quitado'}
     segments:
       - {text: 对, ref: w.dui, pinyin: duì}
@@ -146,3 +146,54 @@ sentences:
       - {text: 。}
     translation: {es: Es mi compañero de clase., en: He's my classmate.}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.tamen-dou-shi-nianqingren
+    use: say
+    segments:
+      - {text: 他们, ref: w.tamen, pinyin: 'tāmen'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 年轻人, ref: w.nianqingren, pinyin: 'niánqīngrén'}
+      - {text: 。}
+    translation: {es: 'Todos ellos son jóvenes.', en: 'They''re all young people.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+  - id: s.zhege-shi-ni-de-pengyou-ma
+    use: hear
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 朋友, ref: w.pengyou, pinyin: 'péngyou'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Este es tu amigo?', en: 'Is this your friend?'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'chat: dictados de la profesora al empezar la clase', date: '2026-10-15'}
+  - id: s.zhege-ren-shi-bu-shi-ni-de-pengyou
+    use: hear
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 不, ref: w.bu, pinyin: 'bu', sandhi: 'bù → bu, átono entre 是 y 是'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 朋友, ref: w.pengyou, pinyin: 'péngyou'}
+      - {text: ？}
+    translation: {es: '¿Esta persona es amiga tuya o no?', en: 'Is this person your friend or not?'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'chat: dictados de la profesora al empezar la clase', date: '2026-10-15'}
+  - id: s.na-ge-ren-shi-ni-de-pengyou
+    use: hear
+    segments:
+      - {text: 那, ref: w.na.that, pinyin: 'nà'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 朋友, ref: w.pengyou, pinyin: 'péngyou'}
+      - {text: 。}
+    translation: {es: 'Esa persona es tu amiga.', en: 'That person is your friend.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'chat: dictados de la profesora al empezar la clase', date: '2026-10-15'}

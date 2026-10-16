@@ -210,3 +210,14 @@ sentences:
       - {text: 。}
     translation: {es: No lo he entendido (al oírlo)., en: I didn't catch that.}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.qing-zai-shuo-liang-bian
+    use: hear
+    segments:
+      - {text: 请, ref: w.qing, pinyin: 'qǐng'}
+      - {text: 再, ref: w.zai.again, pinyin: 'zài'}
+      - {text: 说, ref: w.shuo, pinyin: 'shuō'}
+      - {text: 两, ref: w.liang, pinyin: 'liǎng'}
+      - {text: 遍, ref: w.bian, pinyin: 'biàn'}
+      - {text: 。}
+    translation: {es: 'Dilo otras dos veces, por favor.', en: 'Please say it twice more.'}
+    source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}

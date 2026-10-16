@@ -10,7 +10,7 @@ sentences:
     translation: {es: ¡Hasta mañana!, en: See you tomorrow!}
   - id: s.xiawu-qu-shangdian
     use: say
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     segments:
       - {text: 下午, ref: w.xiawu, pinyin: xiàwǔ}
       - {text: 去, ref: w.qu, pinyin: qù}
@@ -429,3 +429,49 @@ sentences:
       - {text: ！}
     translation: {es: '—¿Qué hora es? —Las ocho y media. —Es tardísimo, ¡vámonos!', en: '—What time is it? —Half past eight. —It''s too late, let''s go!'}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.qunian-wo-ershiwu-sui
+    use: say
+    segments:
+      - {text: 去年, ref: w.qunian, pinyin: 'qùnián'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 。}
+    translation: {es: 'El año pasado tenía veinticinco años.', en: 'Last year I was twenty-five.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+  - id: s.shi-dian-zuoyou
+    use: say
+    segments:
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 点, ref: w.dian.oclock, pinyin: 'diǎn'}
+      - {text: 左右, ref: w.zuoyou, pinyin: 'zuǒyòu'}
+      - {text: 。}
+    translation: {es: 'Sobre las diez.', en: 'Around ten o''clock.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: s.drill-times-zuoyou
+    use: hear
+    segments:
+      - {text: 九, ref: w.num.jiu, pinyin: 'jiǔ'}
+      - {text: 点, ref: w.dian.oclock, pinyin: 'diǎn'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 分, ref: w.fen.minute, pinyin: 'fēn'}
+      - {text: ，}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 点, ref: w.dian.oclock, pinyin: 'diǎn'}
+      - {text: 零, ref: w.ling, pinyin: 'líng'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 分, ref: w.fen.minute, pinyin: 'fēn'}
+      - {text: ，}
+      - {text: 下午, ref: w.xiawu, pinyin: 'xiàwǔ'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 点, ref: w.dian.oclock, pinyin: 'diǎn'}
+      - {text: 零, ref: w.ling, pinyin: 'líng'}
+      - {text: 八, ref: w.ba, pinyin: 'bā'}
+      - {text: 分, ref: w.fen.minute, pinyin: 'fēn'}
+      - {text: 。}
+    translation: {es: 'Las diez menos cinco, las diez y cinco, las cinco y ocho de la tarde.', en: '9:55, 10:05, 5:08 p.m.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}

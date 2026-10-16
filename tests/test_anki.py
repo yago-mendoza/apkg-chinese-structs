@@ -908,7 +908,8 @@ class Batch009(unittest.TestCase):
         ex = lambda xid, t, target: {"id": xid, "type": t, "targets": [target]}
         cards = [ex(f"x.{t}.{i}", t, f"w.{i}") for i in range(30) for t in ("read", "listen", "produce")]
         key = lambda x: (int(x["targets"][0][2:]), anki.STAGE[x["type"]], x["id"])
-        order = anki.interleave_streams(cards, key, gap=6)
+        with mock.patch.dict(anki.STREAM_WEIGHT, clear=True):      # la mezcla en sí; el peso de oír, en Batch011
+            order = anki.interleave_streams(cards, key, gap=6)
         pos = {xid: i for i, xid in enumerate(order)}
         self.assertEqual(sorted(order), sorted(c["id"] for c in cards))
         for start in range(12, len(order) - 9, 3):       # pasado el arranque (solo hay lecturas listas), cualquier
@@ -1033,3 +1034,45 @@ class Batch010(unittest.TestCase):
         errors, _ = anki.validate(self.entries, self.sentences, self.exercises + [bad], require_audio=False)
         self.assertTrue(any(e.startswith("x.situation.bad:") for e in errors))
 
+
+
+class Batch011(unittest.TestCase):
+    """Lo que pidió YAGO en el review 010: lo de clase sale antes que nada, sea del nivel que sea; y las de oír son
+    retos (frases que mezclan vocabulario), no fórmulas, y salen menos a menudo."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.entries, cls.sentences, cls.exercises = anki.load()
+        cls.eby = {e["id"]: e for e in cls.entries}
+        cls.sby = {s["id"]: s for s in cls.sentences}
+        cls.xby = {x["id"]: x for x in cls.exercises}
+
+    def test_class_comes_first_whatever_the_level(self):
+        order = anki.new_card_order(self.entries, self.sentences, self.exercises)
+        cai = min(order[x["id"]] for x in self.exercises if x.get("targets", [None])[0] == "w.cai.guess")   # HSK 5, de clase
+        gei = min(order[x["id"]] for x in self.exercises if x.get("targets", [None])[0] == "w.gei.to")      # HSK 1, no
+        self.assertLess(cai, gei)
+        dates = [anki.class_date(x, self.eby, self.sby) for x in sorted(self.exercises, key=lambda x: order[x["id"]])]
+        seen = [d for d in dates if d]
+        self.assertEqual(dates[:len(seen)], seen)                      # el bloque de clase va delante, entero
+        firsts = {}
+        for i, d in enumerate(seen):
+            firsts.setdefault(d, i)
+        self.assertEqual(sorted(firsts), list(firsts))                  # y por clases, de la primera a la última
+
+    def test_a_listening_card_is_a_challenge_not_a_formula(self):
+        self.assertFalse(anki.listen_challenge(self.sby["s.xiexie-bukeqi"], self.eby))     # 谢谢！不客气。
+        self.assertTrue(anki.listen_challenge(self.sby["s.nin-guixing"], self.eby))        # corta, pero mezcla
+        self.assertTrue(anki.listen_challenge(self.sby["s.ta-ershier-sui"], self.eby))     # 他二十二岁。
+        forced = dict(self.sby["s.xiexie-bukeqi"], listen=True, listen_reason="prueba")
+        self.assertTrue(anki.listen_challenge(forced, self.eby))
+        bad = dict(self.sby["s.xiexie-bukeqi"], listen=True)
+        errors, _ = anki.validate(self.entries, self.sentences + [dict(bad, id="s.t")], self.exercises, require_audio=False)
+        self.assertTrue(any(e.startswith("s.t:") and "listen_reason" in e for e in errors))
+
+    def test_listening_comes_less_often(self):
+        order = anki.new_card_order(self.entries, self.sentences, self.exercises)
+        first = sorted(self.exercises, key=lambda x: order[x["id"]])[:400]
+        share = sum(anki.skill_of(x) == "oír" for x in first) / len(first)
+        self.assertLess(share, 0.36, share)
+        self.assertGreaterEqual(share, anki.SKILL_TARGETS["oír"][0])

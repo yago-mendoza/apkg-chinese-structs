@@ -1,0 +1,89 @@
+# Diccionario · Trabajo y estudio. Esquema: 3-data/README.md
+
+entries:
+  - id: w.cidian
+    use: hear
+    role: content
+    kind: word
+    hanzi: 词典
+    pinyin: 'cídiǎn'
+    meaning: {es: 'diccionario', en: 'dictionary'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+    comments: []
+  - id: w.gongzuo
+    use: say
+    role: content
+    kind: word
+    hanzi: 工作
+    pinyin: gōngzuò
+    meaning: {es: trabajo; trabajar, en: work; to work}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 工 gōng es el de 工程师. 恭 gōng «respetuoso» suena igual y es otro carácter.}
+  - id: w.ruanjian
+    use: hear
+    role: content
+    kind: word
+    hanzi: 软件
+    pinyin: ruǎnjiàn
+    meaning: {es: software, en: software}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: 'Calco: 软 «blando» + 件 «pieza», frente a 硬件 yìngjiàn «hardware», las piezas duras.'}
+  - id: w.jihui
+    use: hear
+    role: content
+    kind: word
+    hanzi: 机会
+    pinyin: 'jīhuì'
+    meaning: {es: 'oportunidad', en: 'opportunity'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'El mismo 机 de 手机 y 飞机.'}
+  - id: w.gongsi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 公司
+    pinyin: 'gōngsī'
+    meaning: {es: 'empresa', en: 'company'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+    comments: []
+  - id: w.kaihui
+    use: hear
+    role: content
+    kind: word
+    hanzi: 开会
+    pinyin: 'kāihuì'
+    meaning: {es: 'tener una reunión', en: 'to have a meeting'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+    comments: []
+  - id: w.taolun
+    use: hear
+    role: content
+    kind: word
+    hanzi: 讨论
+    pinyin: 'tǎolùn'
+    meaning: {es: 'hablar de, discutir (un tema)', en: 'to discuss'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+    comments: []
+  - id: w.kaoshi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 考试
+    pinyin: 'kǎoshì'
+    meaning: {es: 'examen; examinarse', en: 'exam'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+    comments:
+      - {kind: character, private: false, date: '2026-10-13', text: '考 kǎo da el sonido a 烤 kǎo, el de 烤鸭. 号 hào lleva la misma pieza abajo, pero hoy ya no suena igual.'}
+  - id: w.tongshi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 同事
+    pinyin: 'tóngshì'
+    meaning: {es: 'compañero de trabajo', en: 'colleague'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-13', text: '同 «mismo»: 同学 es quien estudia contigo y 同事, quien trabaja contigo.'}

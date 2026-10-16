@@ -41,6 +41,9 @@
 - ✅🃏 跑 pǎo [pʰɑʊ˧˩˧] · correr · _verbo_ · 他跑得很快 «corre muy rápido». 足 a la izquierda es «pie».
 - ✅🃏 得 de [tɤ] · partícula: cómo se hace algo (说得很好) · _partícula_ · Verbo + 得 + cómo: 你说得很好 «hablas muy bien»; 你来得很早 «has llegado temprano». Valora cómo sale la acción. «你很早» no es la forma de decir que alguien llegó temprano. · Se escribe distinto que 的 (mi libro: 我的书) aunque suene igual: 得 va detrás de un verbo; 的, delante de un sustantivo.
 - 🟡🃏 亮 liàng [ljɑŋ˥˩] · brillante, con luz · _verbo_ · Arriba lleva la parte de arriba de 高, recortada. 很亮 «hay mucha luz».
+- ✅🃏 看起来 kànqǐlai [kʰan˥˩ tɕʰi˧˩˧ laɪ] · parecer (por el aspecto) · _verbo_ · Lo que se ve por fuera: 她看起来很年轻 «parece muy joven». Palabra a palabra: 看 «mirar» + 起来 «al ponerse a»: «al mirarla, resulta…».
+- ✅🃏 认真 rènzhēn [ʐən˥˩ ʈʂən˥] · serio, aplicado (que se toma las cosas en serio) · _adjetivo_
+- ✅🃏 顺利 shùnlì [ʂwən˥˩ li˥˩] · sin problemas, que va bien · _adjetivo_ · Se oye mucho como deseo: 一切顺利！ «¡que todo vaya bien!».
 
 ## 大, 太 y 天
 
@@ -163,3 +166,13 @@ Suenan igual: el de la izquierda decide.
 - ✅🃏 我太高兴了！ · wǒ tài gāoxìng le · ¡Estoy contentísimo!
 - ✅🃏 我真高兴！ · wǒ zhēn gāoxìng · ¡Qué contento estoy!
 - ✅🃏 我真的很喜欢。 · wǒ zhēnde hěn xǐhuan · De verdad que me gusta mucho.
+- ✅🃏 她看起来很年轻。 · tā kànqǐlai hěn niánqīng · Parece muy joven.
+- ✅🃏 她很漂亮，你觉得呢？ · tā hěn piàoliang nǐ juéde ne · Es muy guapa, ¿no te parece?
+- ✅🃏 这件衣服真好看！你说得对。 · zhè jiàn yīfu zhēn hǎokàn nǐ shuō de duì · —¡Qué bonita es esta prenda! —Tienes razón.
+- ✅🃏 我觉得这本书真有趣。 · wǒ juéde zhè běn shū zhēn yǒuqù · Este libro me parece muy interesante.
+- ✅🃏 她很漂亮，大家都喜欢她。 · tā hěn piàoliang dàjiā dōu xǐhuan tā · Es muy guapa y cae bien a todos.
+- ✅🃏 他很高，他喜欢打篮球。 · tā hěn gāo tā xǐhuan dǎ lánqiú · Es alto y le gusta jugar al baloncesto.
+- ✅🃏 她很聪明，爸爸和妈妈都喜欢她。 · tā hěn cōngming bàba hé māma dōu xǐhuan tā · Es muy lista; su padre y su madre la adoran.
+- ✅🃏 他很帅，女生都喜欢他。 · tā hěn shuài nǚshēng dōu xǐhuan tā · Es muy guapo; les gusta a todas las chicas.
+- ✅🃏 他很聪明。 · tā hěn cōngming · Es muy listo.
+- ✅🃏 他们都很笨。 · tāmen dōu hěn bèn · Son todos tontos.

@@ -15,6 +15,7 @@
 - ✅🃏 再 zài [tsaɪ˥˩] · otra vez, de nuevo; luego, después · _adverbio_ · Es el 再 de 再见 «adiós», literalmente «volver a ver», y de 再说一遍 «dilo otra vez». Va delante del verbo y habla de algo que aún no ha pasado: 我明天再来 «vuelvo mañana».
 - ✅🃏 也许 yěxǔ [jɛ˧˩˧ ɕy˧˩˧] · quizá · _adverbio_ · Va delante del verbo: 也许他不来 «quizá no venga». · 午 wǔ da el sonido a 许 xǔ: mismo tono, aunque hoy la vocal es otra (xu lleva ü).
 - ✅🃏 好吧 hǎo ba [xɑʊ˧˩˧ pa] · bueno, vale (aceptando) · _expresión_ · Palabra a palabra: 好 «bien» + 吧 «venga». Aceptas, a veces sin muchas ganas: «bueno, vale». 好的 es un «vale» sin más.
+- ✅🃏 又 yòu [joʊ˥˩] · otra vez (lo que ya ha pasado) · _adverbio_ · 又 cuenta una repetición que ya ha ocurrido: 他又来了 «ha vuelto a venir». Para lo que aún no ha pasado se usa 再: 我明天再来.
 
 ## 八 bā y 吧 ba
 
@@ -37,6 +38,14 @@ Los dos son una caja con rayas; se separan por arriba y por abajo.
 - 再 zài · una raya larga arriba y otra que atraviesa la caja
 - 真 zhēn · abajo, dos patitas
 
+## 有 yǒu, 又 yòu y 右 yòu
+
+Las tres son you: 有 lleva tercer tono; 又 y 右 suenan igual y las separa la frase.
+
+- 有 yǒu · baja y sube (3.º): 我有姐姐
+- 又 yòu · cae (4.º), delante del verbo: 他又来了
+- 右 yòu · cae (4.º), lado: 左右
+
 ## Frases
 
 - ✅🃏 因为下雨，所以我不去。 · yīnwèi xiàyǔ suǒyǐ wǒ bú qù · Como llueve, no voy.
@@ -47,3 +56,5 @@ Los dos son una caja con rayas; se separan por arriba y por abajo.
 - ✅🃏 我明天再来。 · wǒ míngtiān zài lái · Vuelvo mañana.
 - ✅🃏 我一边吃饭，一边看手机。 · wǒ yìbiān chīfàn yìbiān kàn shǒujī · Como mientras miro el móvil.
 - ✅🃏 明天再说。 · míngtiān zài shuō · Ya lo hablamos mañana.
+- ✅🃏 我明天再学习中文。 · wǒ míngtiān zài xuéxí Zhōngwén · Mañana vuelvo a estudiar chino.
+- ✅🃏 他又来了。 · tā yòu lái le · Ha vuelto a venir.

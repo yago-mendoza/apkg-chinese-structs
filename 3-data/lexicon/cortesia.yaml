@@ -9,7 +9,7 @@ entries:
     pinyin: xièxie
     meaning: {es: gracias, en: thank you}
     register: neutral
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     frequency: {}
     relations: []
     accept_pinyin_mismatch: segunda sílaba en tono neutro en el habla estándar
@@ -23,7 +23,7 @@ entries:
     hanzi: 请
     pinyin: qǐng
     meaning: {es: por favor, en: please}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Fórmula cortés: 请您 + verbo, «le ruego que…». Por ejemplo, 请您进 qǐng nín jìn, «pase, por favor».', original: 'qǐng nín [verbo] = please you <do smth> (formal)'}
       - {kind: character, private: false, date: '2026-09-27', text: '请 = 讠 «hablar» + 青 qīng, que da el sonido. La misma pista en 清 qīng «claro» [HSK 6], 晴 qíng «despejado» [HSK 2] y 情 qíng «sentimiento» [HSK 7]; lo que aporta 青 es el sonido, no un significado de «claridad».', original: 'verde azul da como claridad y speech claridad o algo asi ?'}
@@ -36,7 +36,7 @@ entries:
     hanzi: 对
     pinyin: duì
     meaning: {es: 'correcto; sí, eso es', en: 'right, correct'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Variante más natural en conversación: 对啊 duì a.', original: duì a / méi cuò (+ intenso)}
       - {kind: sound, private: false, date: '2026-10-08', text: 'Suena casi «duei», alargando la e.', original: 'dui sonuds like dueee'}
@@ -49,7 +49,7 @@ entries:
     meaning: {es: 'vale, de acuerdo', en: OK}
     level: 1
     level_reason: respuesta básica; 好 y 的 son HSK 1
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 好 «bien» + 的: «bien, vale».'}
       - {kind: note, private: false, date: 2026-09-25, text: 'Expresa acuerdo o conformidad: «vale», «muy bien», «de acuerdo».', original: 'subjetivo, muy bien, gusto'}
@@ -92,7 +92,7 @@ entries:
     meaning: {es: 'sí, eso es', en: 'yes, that''s right'}
     level: 1
     level_reason: respuesta afirmativa de cada día; 是 y 的 son HSK 1
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 是 «ser» + 的: «así es».'}
   - id: w.en
@@ -106,7 +106,7 @@ entries:
     level: 1
     level_reason: 'muletilla oral de asentimiento, muy frecuente al hablar'
     accept_pinyin_mismatch: 'como asentimiento se dice cayendo, èn; pypinyin da ń, la lectura de «¿eh?»'
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: w.keyi
     use: say
     role: content
@@ -131,7 +131,7 @@ entries:
       - {ref: e.haode, cue: 'aceptas algo'}
       - {ref: e.meicuo, cue: 'más enfático que 对'}
       - {ref: w.en, cue: 'te sigo, mientras el otro habla'}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
     comments: []
   - id: e.buhaoyisi
     use: say

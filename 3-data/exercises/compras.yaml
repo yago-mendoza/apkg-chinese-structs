@@ -2914,3 +2914,343 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: 'Es demasiado caro, ¡déjelo en menos!'}
     comments: []
+  - id: x.contrast.mai
+    added: 2026-10-16
+    lang: es
+    type: contrast
+    group: g.mai-mai
+    targets: [w.mai]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 买, pinyin: mǎi, meaning: comprar}
+    comments: []
+  - id: x.contrast.mai.sell
+    added: 2026-10-16
+    lang: es
+    type: contrast
+    group: g.mai-mai
+    targets: [w.mai.sell]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 卖, pinyin: mài, meaning: vender}
+    comments: []
+  - id: x.dictation.mai.sell
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.mai.sell]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mai4, hanzi: 卖, pinyin: mài, meaning: vender}
+    comments: []
+  - id: x.produce.mai.sell
+    added: 2026-10-16
+    lang: es
+    type: produce
+    targets: [w.mai.sell]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «vender»? Escribe el pinyin.'}
+    answer: {typed: mai4, hanzi: 卖, pinyin: mài, meaning: vender}
+    comments: []
+  - id: x.read.mai.sell
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.mai.sell]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 卖}
+    answer: {hanzi: 卖, pinyin: mài, meaning: vender}
+    comments: []
+  - id: x.dictation.yixie
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.yixie]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi4 xie1, hanzi: 一些, pinyin: yìxiē, meaning: 'algunos, un poco de'}
+    comments: []
+  - id: x.produce.yixie
+    added: 2026-10-16
+    lang: es
+    type: produce
+    targets: [w.yixie]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «algunos, un poco de»? Escribe el pinyin.'}
+    answer: {typed: yi4 xie1, hanzi: 一些, pinyin: yìxiē, meaning: 'algunos, un poco de'}
+    comments: []
+  - id: x.read.yixie
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.yixie]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 一些}
+    answer: {hanzi: 一些, pinyin: yìxiē, meaning: 'algunos, un poco de'}
+    comments: []
+  - id: x.tones.yixie
+    added: 2026-10-16
+    lang: es
+    type: tones
+    targets: [w.yixie]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 一些, pinyin: yi xie}
+    answer: {typed: '41', hanzi: 一些, pinyin: yìxiē, meaning: 'algunos, un poco de'}
+    comments: []
+  - id: x.contrast.jin.weight
+    added: 2026-10-16
+    lang: es
+    type: contrast
+    group: g.jin-jin
+    targets: [w.jin.weight]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es jīn, «medio kilo (unidad de peso)»?'}
+    answer: {hanzi: 斤, pinyin: jīn, meaning: medio kilo (unidad de peso)}
+    comments: []
+  - id: x.dictation.jin.weight
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.jin.weight]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jin1, hanzi: 斤, pinyin: jīn, meaning: medio kilo (unidad de peso)}
+    comments: []
+  - id: x.read.jin.weight
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.jin.weight]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 斤}
+    answer: {hanzi: 斤, pinyin: jīn, meaning: medio kilo (unidad de peso)}
+    comments: []
+  - id: x.dictation.gongjin
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.gongjin]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gong1 jin1, hanzi: 公斤, pinyin: gōngjīn, meaning: kilo}
+    comments: []
+  - id: x.read.gongjin
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.gongjin]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 公斤}
+    answer: {hanzi: 公斤, pinyin: gōngjīn, meaning: kilo}
+    comments: []
+  - id: x.dictation.niunai
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.niunai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: niu2 nai3, hanzi: 牛奶, pinyin: niúnǎi, meaning: leche}
+    comments: []
+  - id: x.read.niunai
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.niunai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 牛奶}
+    answer: {hanzi: 牛奶, pinyin: niúnǎi, meaning: leche}
+    comments: []
+  - id: x.dictation.pijiu
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.pijiu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: pi2 jiu3, hanzi: 啤酒, pinyin: píjiǔ, meaning: cerveza}
+    comments: []
+  - id: x.read.pijiu
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.pijiu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 啤酒}
+    answer: {hanzi: 啤酒, pinyin: píjiǔ, meaning: cerveza}
+    comments: []
+  - id: x.dictation.xiangjiao
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.xiangjiao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiang1 jiao1, hanzi: 香蕉, pinyin: xiāngjiāo, meaning: plátano}
+    comments: []
+  - id: x.read.xiangjiao
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.xiangjiao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 香蕉}
+    answer: {hanzi: 香蕉, pinyin: xiāngjiāo, meaning: plátano}
+    comments: []
+  - id: x.dictation.hanbao
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.hanbao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: han4 bao3, hanzi: 汉堡, pinyin: hànbǎo, meaning: hamburguesa}
+    comments: []
+  - id: x.read.hanbao
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.hanbao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 汉堡}
+    answer: {hanzi: 汉堡, pinyin: hànbǎo, meaning: hamburguesa}
+    comments: []
+  - id: x.listen.zhe-ben-shu-duoshao-qian
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.zhe-ben-shu-duoshao-qian
+    targets: [s.zhe-ben-shu-duoshao-qian]
+    context: [w.zhe, w.ben.book, w.shu, w.duoshao, w.qian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuánto cuesta este libro?'}
+    comments: []
+  - id: x.produce.zhe-ben-shu-duoshao-qian
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.zhe-ben-shu-duoshao-qian
+    targets: [s.zhe-ben-shu-duoshao-qian]
+    context: [w.zhe, w.ben.book, w.shu, w.duoshao, w.qian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuánto cuesta este libro?»'}
+    answer: {meaning: '¿Cuánto cuesta este libro?'}
+    comments: []
+  - id: x.listen.zhege-you-ershi-jin-zuoyou
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.zhege-you-ershi-jin-zuoyou
+    targets: [s.zhege-you-ershi-jin-zuoyou]
+    context: [w.zhe, w.ge, w.you.have, w.num.er, w.num.shi, w.jin.weight, w.zuoyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Esto pesa unos diez kilos.}
+    comments: []
+  - id: x.listen.ni-juede-zhege-zenmeyang
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ni-juede-zhege-zenmeyang
+    targets: [s.ni-juede-zhege-zenmeyang]
+    context: [w.ni, w.juede, w.zhe, w.ge, w.zenmeyang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Qué te parece esto?'}
+    comments: []
+  - id: x.produce.ni-juede-zhege-zenmeyang
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ni-juede-zhege-zenmeyang
+    targets: [s.ni-juede-zhege-zenmeyang]
+    context: [w.ni, w.juede, w.zhe, w.ge, w.zenmeyang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué te parece esto?»'}
+    answer: {meaning: '¿Qué te parece esto?'}
+    comments: []
+  - id: x.listen.zhe-ben-shu-ershi-kuai-zuoyou
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.zhe-ben-shu-ershi-kuai-zuoyou
+    targets: [s.zhe-ben-shu-ershi-kuai-zuoyou]
+    context: [w.zhe, w.ben.book, w.shu, w.num.er, w.num.shi, w.kuai, w.zuoyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Este libro cuesta unos veinte yuanes.}
+    comments: []
+  - id: x.produce.zhe-ben-shu-ershi-kuai-zuoyou
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.zhe-ben-shu-ershi-kuai-zuoyou
+    targets: [s.zhe-ben-shu-ershi-kuai-zuoyou]
+    context: [w.zhe, w.ben.book, w.shu, w.num.er, w.num.shi, w.kuai, w.zuoyou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Este libro cuesta unos veinte yuanes.»'}
+    answer: {meaning: Este libro cuesta unos veinte yuanes.}
+    comments: []
+  - id: x.listen.xiawu-qu-shangdian-mai-yixie-shuiguo
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.xiawu-qu-shangdian-mai-yixie-shuiguo
+    targets: [s.xiawu-qu-shangdian-mai-yixie-shuiguo]
+    context: [w.xiawu, w.wo, w.qu, w.shangdian, w.xiang, w.mai, w.yixie, w.shuiguo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Esta tarde voy a la tienda: quiero comprar algo de fruta.'}
+    comments: []
+  - id: x.listen.ta-mai-shuiguo
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-mai-shuiguo
+    targets: [s.ta-mai-shuiguo]
+    context: [w.ta.he, w.mai.sell, w.shuiguo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Vende fruta.}
+    comments: []
+  - id: x.produce.ta-mai-shuiguo
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ta-mai-shuiguo
+    targets: [s.ta-mai-shuiguo]
+    context: [w.ta.he, w.mai.sell, w.shuiguo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Vende fruta.»'}
+    answer: {meaning: Vende fruta.}
+    comments: []
+  - id: x.charsound.gong-2
+    added: 2026-10-16
+    lang: es
+    type: charsound
+    targets: [w.gongjin, w.gongsi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 公}
+    answer: {typed: gong1, hanzi: 公, pinyin: gōng, meaning: 'Sale en 公斤 gōngjīn «kilo», 公司 gōngsī «empresa».'}
+    comments: []
+  - id: x.charsound.han
+    added: 2026-10-16
+    lang: es
+    type: charsound
+    targets: [w.hanbao, w.hanzi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 汉}
+    answer: {typed: han4, hanzi: 汉, pinyin: hàn, meaning: 'Sale en 汉堡 hànbǎo «hamburguesa», 汉字 hànzì «carácter chino».'}
+    comments: []
+  - id: x.compose.mercado-peso
+    added: '2026-10-16'
+    lang: es
+    type: compose
+    targets: [s.zhege-you-ershi-jin-zuoyou, s.ni-juede-zhege-zenmeyang]
+    words: [w.zhe, w.you.have, w.jin.weight, w.zuoyou, w.duoshao, w.juede]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. En un mercado de Pekín vas con una amiga y ves una sandía enorme. Calculas cuánto pesa, preguntas el precio y le pides su opinión.'}
+    answer: {meaning: '斤 es medio kilo; 左右 va detrás de la cifra; 你觉得…怎么样？ pide opinión.'}
+    comments: []

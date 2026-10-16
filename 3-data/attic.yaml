@@ -15,6 +15,8 @@ items:
     notes:
       - {text: '发 es hacer salir algo de ti hacia fuera: enviar, emitir. 投 es lanzar o meter algo hacia un destino. De ahí 发票 «factura» (el papel que se emite) frente a 投票 «votar» (el papel que se mete en la urna).', original: 'Así que 发 es más “send/emit”; 投 más “throw/cast/put into”. (esto relaciaonadlo con lo de voto vs factura)'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    snooze: 011-2026-10-16-clase-primero-edad-y-opiniones
+    snooze_reason: 'despierta con 头发, pero es otro sentido (el pelo); 发 «enviar» entra con 发短信 o 发微信'
   - id: a.tou
     hanzi: 投
     pinyin: tóu
@@ -109,24 +111,6 @@ items:
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
 
   # ---------------------------------------------------------------- lugares, direcciones, países
-  - id: a.guojia
-    hanzi: 国家
-    pinyin: guójiā
-    meaning: {es: país}
-    theme: presentarse
-    links: [外国, 外国人, 哪国]
-    reason: HSK 1, mencionado solo como ejemplo de 国.
-    notes: []
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-  - id: a.waiguo
-    hanzi: 外国
-    pinyin: wàiguó
-    meaning: {es: extranjero (país)}
-    theme: presentarse
-    links: [外国人, 国家, 外]
-    reason: HSK 1, mencionado solo como ejemplo de 国.
-    notes: []
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.shi.city
     hanzi: 市
     pinyin: shì
@@ -176,8 +160,6 @@ items:
       - {text: '忄 «corazón» + 白 bái, que da un sonido parecido.'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.gebo
-    snooze: 008-2026-10-08-pedir-ayuda-lugares-y-finales
-    snooze_reason: 'despierta por 手, que llegó suelta en un ejercicio de pinyin; 胳膊 es HSK 7 y espera a que el cuerpo entre de verdad'
     hanzi: 胳膊
     pinyin: gēbo
     meaning: {es: 'brazo'}
@@ -187,6 +169,8 @@ items:
     notes:
       - {text: '你的胳膊好长啊！ «¡qué brazos tan largos!», como piropo, igual que 你的腿好长啊！.', original: 'ni de ge bo hao chang a! esto si'}
     source: {batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    snooze: 011-2026-10-16-clase-primero-edad-y-opiniones
+    snooze_reason: 'despierta con 身体, pero es HSK 7: el review 010 pide no adelantar nada que no sea de clase o HSK 1'
   - id: a.xi
     hanzi: 细
     pinyin: xì
@@ -384,26 +368,6 @@ items:
     reason: HSK 3; con las demás posiciones con 面.
     notes: []
     source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
-  - id: a.lian
-    hanzi: 脸
-    pinyin: liǎn
-    meaning: {es: cara}
-    theme: describir
-    links: [脚, 头, 眼睛]
-    reason: HSK 2; las partes del cuerpo entrarán juntas.
-    notes:
-      - {text: '月 a la izquierda es «carne»: parte del cuerpo. Para recordarlo (no es su origen): a la derecha, 人 arriba es el pelo, los dos puntos los ojos y la raya de abajo la boca.'}
-    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
-  - id: a.jiao
-    hanzi: 脚
-    pinyin: jiǎo
-    meaning: {es: pie}
-    theme: describir
-    links: [脸, 腿, 头]
-    reason: HSK 2; con las demás partes del cuerpo.
-    notes:
-      - {text: '月 «carne» + 却, que lleva 去 «irse»: el pie que se va.'}
-    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
   - id: a.jing
     hanzi: 井
     pinyin: jǐng
@@ -424,6 +388,8 @@ items:
     notes:
       - {text: '月 «carne» + 土 «tierra»: en la tierra se plantan semillas y en el vientre crece un niño.', original: Tierra porque se plantnsemillad en la toerra y en el vientre tb crece niño por tantovientre eso}
     source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    snooze: 011-2026-10-16-clase-primero-edad-y-opiniones
+    snooze_reason: 'despierta con 脸, pero no salió en clase: el cuerpo entra de momento solo para oír lo de clase'
 
   # ---------------------------------------------------------------- lote 010
   - id: a.yizhi
@@ -456,6 +422,8 @@ items:
     notes:
       - {text: '这道题太难了！ «¡este ejercicio es dificilísimo!». 题目 «enunciado» [HSK 3] y 话题 «tema de conversación» [HSK 3] llevan el mismo 题 de 问题.'}
     source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    snooze: 011-2026-10-16-clase-primero-edad-y-opiniones
+    snooze_reason: 'despierta con 考试 (这道题), pero es HSK 2 y no salió en clase'
   - id: a.mafan
     hanzi: 麻烦
     pinyin: máfan
@@ -476,6 +444,8 @@ items:
     notes:
       - {text: '同时: dos cosas pasan a la vez (我们同时到了 «llegamos a la vez»). 一边…一边…: una persona hace dos cosas a la vez (我一边吃饭，一边看电视).'}
     source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    snooze: 011-2026-10-16-clase-primero-edad-y-opiniones
+    snooze_reason: 'despierta con 同事, que solo comparte el 同; HSK 2 y no salió en clase'
   - id: a.weishengjian
     hanzi: 卫生间
     pinyin: wèishēngjiān
@@ -538,3 +508,172 @@ items:
     notes:
       - {text: 'Un pie con el talón detrás y la pierna arriba. Se parece a la parte de abajo de 是: no confundirlos.', original: 'zú foot looks like a pie con un talón detras y una pierna hgorda arriba, se parece much oa shì, no confundir'}
     source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    snooze: 011-2026-10-16-clase-primero-edad-y-opiniones
+    snooze_reason: 'despierta con 脚; HSK 2 y de registro escrito (足球 ya está)'
+  # ---------------------------------------------------------------- palabras de los ejercicios de pinyin (lote 011)
+  - id: a.guizi
+    hanzi: 柜子
+    pinyin: guìzi
+    meaning: {es: 'armario'}
+    theme: casa
+    links: [衣柜, 书柜]
+    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 5 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+  - id: a.zhongyu
+    hanzi: 终于
+    pinyin: zhōngyú
+    meaning: {es: 'por fin'}
+    theme: conectores
+    links: [最后]
+    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 3 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+  - id: a.lunchuan
+    hanzi: 轮船
+    pinyin: lúnchuán
+    meaning: {es: 'barco (de vapor)'}
+    theme: lugares
+    links: [船]
+    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 4 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+  - id: a.liuyan
+    hanzi: 留言
+    pinyin: liúyán
+    meaning: {es: 'dejar un mensaje; mensaje'}
+    theme: cosas
+    links: [短信, 微信]
+    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 6 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+  - id: a.jiji
+    hanzi: 积极
+    pinyin: jījí
+    meaning: {es: 'activo, positivo (con ganas)'}
+    theme: describir
+    links: [努力]
+    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 3 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: a.jiqi
+    hanzi: 机器
+    pinyin: jīqì
+    meaning: {es: 'máquina'}
+    theme: trabajo
+    links: [机器人]
+    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 3 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: a.xiaoqu
+    hanzi: 小区
+    pinyin: xiǎoqū
+    meaning: {es: 'urbanización, complejo de pisos'}
+    theme: casa
+    links: [住, 门口]
+    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 7 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: a.xingqu
+    hanzi: 兴趣
+    pinyin: xìngqù
+    meaning: {es: 'interés (por algo)'}
+    theme: ocio
+    links: [感兴趣, 爱好]
+    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 4 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: a.jixu
+    hanzi: 继续
+    pinyin: jìxù
+    meaning: {es: 'seguir, continuar'}
+    theme: cosas
+    links: [开始, 停]
+    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 3 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: a.dasao
+    hanzi: 打扫
+    pinyin: dǎsǎo
+    meaning: {es: 'limpiar (la casa)'}
+    theme: casa
+    links: [房间, 干净]
+    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 4 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: a.caochang
+    hanzi: 操场
+    pinyin: cāochǎng
+    meaning: {es: 'patio de deportes (de un colegio)'}
+    theme: lugares
+    links: [运动, 体育]
+    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 4 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: a.yinliao
+    hanzi: 饮料
+    pinyin: yǐnliào
+    meaning: {es: 'bebida (refresco, zumo…)'}
+    theme: compras
+    links: [果汁, 可乐]
+    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 5 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+  - id: a.zhaoji
+    hanzi: 着急
+    pinyin: zháojí
+    meaning: {es: 'tener prisa; estar nervioso, agobiado'}
+    theme: describir
+    links: [急]
+    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 4 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+  - id: a.turan
+    hanzi: 突然
+    pinyin: tūrán
+    meaning: {es: 'de repente'}
+    theme: conectores
+    links: [忽然, 一下子]
+    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 3 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+  - id: a.zhangfu
+    hanzi: 丈夫
+    pinyin: zhàngfu
+    meaning: {es: 'marido'}
+    theme: familia
+    links: [妻子, 老公, 结婚]
+    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 4 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+  - id: a.maikefeng
+    hanzi: 麦克风
+    pinyin: màikèfēng
+    meaning: {es: 'micrófono'}
+    theme: trabajo
+    links: [话筒]
+    level: 5
+    level_reason: 'Préstamo (micro-phone) poco frecuente al hablar.'
+    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 5 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+  - id: a.miyu
+    hanzi: 谜语
+    pinyin: míyǔ
+    meaning: {es: 'adivinanza'}
+    theme: ocio
+    links: [谜, 猜谜]
+    reason: 'Ejemplo de una diapositiva de clase (猜谜语 «adivinar adivinanzas»); de HSK 7-9. Espera a que vuelva a salir.'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: a.chushengdi
+    hanzi: 出生地
+    pinyin: chūshēngdì
+    meaning: {es: 'lugar de nacimiento'}
+    theme: presentarse
+    links: [地方, 地址]
+    level: 4
+    level_reason: 'Palabra de formularios; 出生 es HSK 2 y 地 «lugar», más alto.'
+    reason: 'Ejemplo de una diapositiva de clase (出生地 «lugar de nacimiento»): de formularios, se lee más que se dice. Espera a que haga falta.'
+    notes: []
+    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}

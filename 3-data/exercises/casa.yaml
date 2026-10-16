@@ -679,3 +679,154 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 关}
     answer: {hanzi: 关, pinyin: guān, meaning: cerrar; apagar}
     comments: []
+  - id: x.dictation.zhuozi
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.zhuozi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhuo1 zi5, hanzi: 桌子, pinyin: zhuōzi, meaning: mesa}
+    comments: []
+  - id: x.read.zhuozi
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.zhuozi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 桌子}
+    answer: {hanzi: 桌子, pinyin: zhuōzi, meaning: mesa}
+    comments: []
+  - id: x.tones.zhuozi
+    added: 2026-10-16
+    lang: es
+    type: tones
+    targets: [w.zhuozi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 桌子, pinyin: zhuo zi}
+    answer: {typed: '15', hanzi: 桌子, pinyin: zhuōzi, meaning: mesa}
+    comments: []
+  - id: x.dictation.fangzi
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.fangzi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fang2 zi5, hanzi: 房子, pinyin: fángzi, meaning: casa (el edificio)}
+    comments: []
+  - id: x.read.fangzi
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.fangzi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 房子}
+    answer: {hanzi: 房子, pinyin: fángzi, meaning: casa (el edificio)}
+    comments: []
+  - id: x.tones.fangzi
+    added: 2026-10-16
+    lang: es
+    type: tones
+    targets: [w.fangzi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 房子, pinyin: fang zi}
+    answer: {typed: '25', hanzi: 房子, pinyin: fángzi, meaning: casa (el edificio)}
+    comments: []
+  - id: x.dictation.yizi
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.yizi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi3 zi5, hanzi: 椅子, pinyin: yǐzi, meaning: silla}
+    comments: []
+  - id: x.read.yizi
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.yizi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 椅子}
+    answer: {hanzi: 椅子, pinyin: yǐzi, meaning: silla}
+    comments: []
+  - id: x.tones.yizi
+    added: 2026-10-16
+    lang: es
+    type: tones
+    targets: [w.yizi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 椅子, pinyin: yi zi}
+    answer: {typed: '35', hanzi: 椅子, pinyin: yǐzi, meaning: silla}
+    comments: []
+  - id: x.dictation.shafa
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.shafa]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: sha1 fa1, hanzi: 沙发, pinyin: shāfā, meaning: sofá}
+    comments: []
+  - id: x.read.shafa
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.shafa]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 沙发}
+    answer: {hanzi: 沙发, pinyin: shāfā, meaning: sofá}
+    comments: []
+  - id: x.dictation.zhaopian
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.zhaopian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhao4 pian4, hanzi: 照片, pinyin: zhàopiàn, meaning: foto}
+    comments: []
+  - id: x.read.zhaopian
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.zhaopian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 照片}
+    answer: {hanzi: 照片, pinyin: zhàopiàn, meaning: foto}
+    comments: []
+  - id: x.listen.zhe-bu-shi-wo-de-beizi
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.zhe-bu-shi-wo-de-beizi
+    targets: [s.zhe-bu-shi-wo-de-beizi]
+    context: [w.zhe, w.bu, w.shi, w.wo, w.de, w.beizi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Este vaso no es mío.}
+    comments: []
+  - id: x.produce.zhe-bu-shi-wo-de-beizi
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.zhe-bu-shi-wo-de-beizi
+    targets: [s.zhe-bu-shi-wo-de-beizi]
+    context: [w.zhe, w.bu, w.shi, w.wo, w.de, w.beizi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Este vaso no es mío.»'}
+    answer: {meaning: Este vaso no es mío.}
+    comments: []
+  - id: x.charsound.fang
+    added: 2026-10-16
+    lang: es
+    type: charsound
+    targets: [w.fangjian, w.fangzi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 房}
+    answer: {typed: fang2, hanzi: 房, pinyin: fáng, meaning: 'Sale en 房间 fángjiān «habitación», 房子 fángzi «casa (el edificio)».'}
+    comments: []

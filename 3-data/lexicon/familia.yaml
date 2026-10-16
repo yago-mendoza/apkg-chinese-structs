@@ -9,7 +9,7 @@ entries:
     pinyin: bàba
     meaning: {es: papá, en: dad}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: '2026-10-01', text: 'Frente a 妈妈 māma: 爸 bà cae; 妈 mā va alto y plano.'}
   - id: w.mama
@@ -21,7 +21,7 @@ entries:
     meaning: {es: mamá, en: mom}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
     connection: {kind: sound, with: [吗], text: '马 mǎ «caballo» da el sonido a 妈 mā y a 吗 ma: el caballo solo presta su sonido.'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: '女 «mujer» aporta el significado y 马 mǎ, el sonido. 马 significa
           «caballo», pero aquí solo presta su sonido: el caballo no tiene nada que ver con mamá.'}
@@ -35,7 +35,7 @@ entries:
     hanzi: 儿子
     pinyin: érzi
     meaning: {es: hijo, en: son}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: note, private: false, date: '2026-09-27', text: 'En 儿子 no hace falta marcar el género: es la forma por defecto; en 女儿 sí, con 女.', original: el hjio no hace falta poner su genero proque es bovio es basico es lo que dan por default}
   - id: w.nver
@@ -45,7 +45,7 @@ entries:
     hanzi: 女儿
     pinyin: nǚ'ér
     meaning: {es: hija, en: daughter}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
   - id: w.haizi
     use: say
     role: content
@@ -53,7 +53,7 @@ entries:
     hanzi: 孩子
     pinyin: háizi
     meaning: {es: 'niño, niña; hijo, hija', en: child}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments: []
   - id: w.xiaohai
     use: hear
@@ -65,7 +65,7 @@ entries:
     meaning: {es: 'niño pequeño, crío', en: kid}
     level: 1
     level_reason: 'sinónimo coloquial de 孩子 [HSK 1]; 小 y 孩 son HSK 1'
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 孩子 es el término general; 小孩 añade 小 «pequeño».}
   - id: g.hao-nver-erzi
@@ -116,7 +116,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '子 zǐ «hijo, niño»; al final de una palabra suele ser un sufijo: 儿子 érzi, 孩子 háizi. Con 女 forma 好.'}
   - id: w.jiejie
-    use: hear
+    use: say
     role: content
     kind: word
     hanzi: 姐姐
@@ -202,4 +202,24 @@ entries:
       - {ref: w.fuwuyuan, cue: 'se dice en voz alta para llamarle'}
       - {ref: w.xiaopengyou, cue: 'a uno que no conoces'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.gege
+    use: say
+    role: content
+    kind: word
+    hanzi: 哥哥
+    pinyin: 'gēge'
+    accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
+    meaning: {es: 'hermano mayor', en: 'older brother'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md (tus notas: hoja de clase de la familia)', date: '2026-10-15'}
+    comments: []
+  - id: w.didi
+    use: say
+    role: content
+    kind: word
+    hanzi: 弟弟
+    pinyin: 'dìdi'
+    accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
+    meaning: {es: 'hermano menor', en: 'younger brother'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md (tus notas: hoja de clase de la familia)', date: '2026-10-15'}
     comments: []

@@ -41,3 +41,15 @@ sentences:
       - {text: 。}
     translation: {es: 'Estoy en la habitación.', en: 'I''m in my room.'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.zhe-bu-shi-wo-de-beizi
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 不, ref: w.bu, pinyin: 'bú', sandhi: 'bù → bú delante de cuarto tono'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 杯子, ref: w.beizi, pinyin: 'bēizi'}
+      - {text: 。}
+    translation: {es: 'Este vaso no es mío.', en: 'This isn''t my cup.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}

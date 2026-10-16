@@ -539,3 +539,109 @@ exercises:
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 好吧, pinyin: hao ba}
     answer: {typed: '35', hanzi: 好吧, pinyin: hǎo ba, meaning: 'bueno, vale (aceptando)'}
     comments: []
+  - id: x.contrast.you.repeat
+    added: 2026-10-16
+    lang: es
+    type: contrast
+    group: g.you-you
+    targets: [w.you.repeat]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 又, pinyin: yòu, meaning: otra vez (lo que ya ha pasado)}
+    comments: []
+  - id: x.dictation.you.repeat
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.you.repeat]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: you4, hanzi: 又, pinyin: yòu, meaning: otra vez (lo que ya ha pasado)}
+    comments: []
+  - id: x.cloze.you.repeat
+    added: 2026-10-16
+    lang: es
+    type: cloze
+    sentence: s.ta-you-lai-le
+    gap: w.you.repeat
+    targets: [w.you.repeat]
+    context: [w.ta.he, w.lai, w.le]
+    skills: [production, pinyin]
+    prompt: {text: '¿在, 再 o 又? Completa en pinyin: 他＿来了。 «Ha vuelto a venir.»'}
+    answer: {typed: you4, hanzi: 又, pinyin: yòu, meaning: otra vez (lo que ya ha pasado)}
+    comments: []
+  - id: x.read.you.repeat
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.you.repeat]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 又}
+    answer: {hanzi: 又, pinyin: yòu, meaning: otra vez (lo que ya ha pasado)}
+    comments: []
+  - id: x.listen.wo-mingtian-zai-xuexi-zhongwen
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-mingtian-zai-xuexi-zhongwen
+    targets: [s.wo-mingtian-zai-xuexi-zhongwen]
+    context: [w.wo, w.mingtian, w.zai.again, w.xuexi, w.zhongwen]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mañana vuelvo a estudiar chino.}
+    comments: []
+  - id: x.produce.wo-mingtian-zai-xuexi-zhongwen
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.wo-mingtian-zai-xuexi-zhongwen
+    targets: [s.wo-mingtian-zai-xuexi-zhongwen]
+    context: [w.wo, w.mingtian, w.zai.again, w.xuexi, w.zhongwen]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mañana vuelvo a estudiar chino.»'}
+    answer: {meaning: Mañana vuelvo a estudiar chino.}
+    comments: []
+  - id: x.listen.ta-you-lai-le
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-you-lai-le
+    targets: [s.ta-you-lai-le]
+    context: [w.ta.he, w.you.repeat, w.lai, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ha vuelto a venir.}
+    comments: []
+  - id: x.produce.ta-you-lai-le
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ta-you-lai-le
+    targets: [s.ta-you-lai-le]
+    context: [w.ta.he, w.you.repeat, w.lai, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ha vuelto a venir.»'}
+    answer: {meaning: Ha vuelto a venir.}
+    comments: []
+  - id: x.choice.zai-zai-you.again
+    added: '2026-10-16'
+    lang: es
+    type: cloze
+    sentence: s.wo-mingtian-zai-xuexi-zhongwen
+    gap: w.zai.again
+    targets: [w.zai.again]
+    context: [w.wo, w.mingtian, w.xuexi, w.zhongwen]
+    skills: [production, discrimination]
+    prompt: {text: 'Elige. 我明天＿学习中文。 «Mañana vuelvo a estudiar chino.»', options: [在, 再, 又]}
+    answer: {choice: b, hanzi: 再, pinyin: zài, meaning: '再: repetir algo que aún no ha pasado.'}
+    comments: []
+  - id: x.nuance.zai-you
+    added: '2026-10-16'
+    lang: es
+    type: nuance
+    targets: [w.zai.again, w.you.repeat]
+    context: [w.zai.progressive]
+    skills: [comprehension, discrimination]
+    prompt: {text: '再 y 又, los dos «otra vez»: ¿cuándo cada uno?'}
+    answer: {meaning: '再: lo que aún no ha pasado (我明天再来). 又: lo que ya se ha repetido (他又来了). El otro zài, 在, es «estar».'}
+    comments: []

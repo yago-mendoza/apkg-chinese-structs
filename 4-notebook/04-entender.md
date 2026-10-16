@@ -33,3 +33,4 @@
 - ✅🃏 那个……我想问一下。 · nèi ge wǒ xiǎng wèn yíxià · Esto… quería preguntar una cosa.
 - ✅🃏 这个是什么意思？我也不知道。没关系，我们问一下老师吧！ · zhè ge shì shénme yìsi wǒ yě bù zhīdao méi guānxi wǒmen wèn yíxià lǎoshī ba · —¿Qué significa esto? —Yo tampoco lo sé. —No pasa nada, ¡preguntemos a la profesora!
 - ✅🃏 我没听明白。 · wǒ méi tīng míngbai · No lo he entendido (al oírlo).
+- ✅🃏 请再说两遍。 · qǐng zài shuō liǎng biàn · Dilo otras dos veces, por favor.

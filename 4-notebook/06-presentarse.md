@@ -43,6 +43,10 @@
 - ✅🃏 猜 cāi [tsʰaɪ˥] · adivinar · _verbo_
 - ✅🃏 觉得 juéde [tɕɥœ˧˥ tɤ] · creer, parecerle a uno · _verbo_ · Para dar tu opinión: 我觉得很好 «me parece bien». 你觉得怎么样？ «¿qué te parece?».
 - ✅🃏 王 Wáng [wɑŋ˧˥] · Wang (apellido) · _sustantivo_ · Como palabra suelta, 王 es «rey» [HSK 4]; aquí es el apellido.
+- ✅🃏 哪个 nǎge [na˧˩˧ kɤ] · cuál, qué (de varios) · _interrogativo_ · Palabra a palabra: 哪 «cuál» + 个, el clasificador. Para elegir entre varios: 哪个人？ «¿qué persona?», 哪个国家？ «¿qué país?».
+- ✅🃏 国家 guójiā [kwɔ˧˥ tɕja˥] · país · _sustantivo_ · Palabra a palabra: 国 «país» + 家 «casa». Para preguntar de dónde es alguien basta con 你是哪国人；国家 es la palabra entera, como en 你来自哪个国家.
+- ✅🃏 日本 Rìběn [ʐɨ˥˩ pən˧˩˧] · Japón · _nombre propio_ · Palabra a palabra: 日 «sol» + 本 «origen»: el país donde nace el sol. 日本人 «japonés».
+- ✅🃏 外国 wàiguó [waɪ˥˩ kwɔ˧˥] · el extranjero; extranjero (de otro país) · _sustantivo_ · Palabra a palabra: 外 «fuera» + 国 «país». 外国人 es el extranjero, como tú en China: 我是外国人.
 
 ## 是 shì y 十 shí
 
@@ -145,3 +149,17 @@ Misma sílaba, distinto tono.
 - ✅🃏 我和他是朋友。 · wǒ hé tā shì péngyou · Él y yo somos amigos.
 - ✅🃏 我会说中文。真的吗？真的！我在学习中文。 · wǒ huì shuō Zhōngwén zhēn de ma zhēnde wǒ zài xuéxí Zhōngwén · —Hablo chino. —¿En serio? —¡De verdad! Lo estoy estudiando.
 - ✅🃏 他是一个很好的老师。 · tā shì yí ge hěn hǎo de lǎoshī · Es un profesor muy bueno.
+- ✅🃏 你猜一猜他是谁？ · nǐ cāi yi cāi tā shì shéi · Adivina quién es.
+- ✅🃏 你猜她多大？ · nǐ cāi tā duō dà · ¿Cuántos años crees que tiene?
+- ✅🃏 我觉得很好。 · wǒ juéde hěn hǎo · Me parece muy bien.
+- ✅🃏 哪个人是你的朋友？ · nǎge rén shì nǐ de péngyou · ¿Cuál es tu amigo?
+- ✅🃏 你来自哪个国家？ · nǐ láizì nǎge guójiā · ¿De qué país eres?
+- ✅🃏 你是中国学生吗？不是，我是美国学生。 · nǐ shì Zhōngguó xuéshēng ma bú shì wǒ shì Měiguó xuéshēng · —¿Eres estudiante chino? —No, soy estudiante estadounidense.
+- ✅🃏 你是学生吗？不是，我是老师。 · nǐ shì xuéshēng ma bú shì wǒ shì lǎoshī · —¿Eres estudiante? —No, soy profesora.
+- ✅🃏 大卫是美国人，他是学生。 · Dàwèi shì Měiguó rén tā shì xuéshēng · David es estadounidense y es estudiante.
+- ✅🃏 她是哪国人？ · tā shì nǎ guó rén · ¿De dónde es ella?
+- ✅🃏 他不是西班牙人，他是中国人。 · tā bú shì Xībānyá rén tā shì Zhōngguó rén · No es español, es chino.
+- ✅🃏 我认识她，她是我的老师。 · wǒ rènshi tā tā shì wǒ de lǎoshī · La conozco: es mi profesora.
+- ✅🃏 你叫什么名字？我叫大卫。 · nǐ jiào shénme míngzi wǒ jiào Dàwèi · —¿Cómo te llamas? —Me llamo David.
+- ✅🃏 您叫什么名字？ · nín jiào shénme míngzi · ¿Cómo se llama usted?
+- ✅🃏 我是外国人。 · wǒ shì wàiguó rén · Soy extranjero.

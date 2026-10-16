@@ -3,7 +3,7 @@
 sentences:
   - id: s.ta-shi-wo-de-baba
     use: say
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     segments:
       - {text: 他, ref: w.ta.he, pinyin: tā}
       - {text: 是, ref: w.shi, pinyin: shì}
@@ -14,7 +14,7 @@ sentences:
     translation: {es: Él es mi padre., en: He is my dad.}
   - id: s.ta-shi-wo-de-mama
     use: hear
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     segments:
       - {text: 她, ref: w.ta.she, pinyin: tā}
       - {text: 是, ref: w.shi, pinyin: shì}
@@ -157,3 +157,83 @@ sentences:
       - {text: 。}
     translation: {es: 'Mis abuelos están bien los dos.', en: 'My grandparents are both well.'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.ta-shi-wang-ayi
+    use: say
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 王, ref: w.wang.surname, pinyin: 'Wáng'}
+      - {text: 阿姨, ref: w.ayi, pinyin: 'āyí'}
+      - {text: 。}
+    translation: {es: 'Es la señora Wang.', en: 'She''s Auntie Wang.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+  - id: s.ta-shi-wo-ayi
+    use: say
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 阿姨, ref: w.ayi, pinyin: 'āyí'}
+      - {text: 。}
+    translation: {es: 'Es mi tía.', en: 'She''s my aunt.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-15', date: '2026-10-15'}
+  - id: s.wo-you-jiejie
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 姐姐, ref: w.jiejie, pinyin: 'jiějie'}
+      - {text: 。}
+    translation: {es: 'Tengo una hermana mayor.', en: 'I have an older sister.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md (tus notas: hoja de clase de la familia)', date: '2026-10-15'}
+  - id: s.wo-meiyou-jiejie
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 没有, ref: w.meiyou, pinyin: 'méiyǒu'}
+      - {text: 姐姐, ref: w.jiejie, pinyin: 'jiějie'}
+      - {text: 。}
+    translation: {es: 'No tengo hermana mayor.', en: 'I don''t have an older sister.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md (tus notas: hoja de clase de la familia)', date: '2026-10-15'}
+  - id: s.wo-ye-meiyou-jiejie
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 也, ref: w.ye, pinyin: 'yě'}
+      - {text: 没有, ref: w.meiyou, pinyin: 'méiyǒu'}
+      - {text: 姐姐, ref: w.jiejie, pinyin: 'jiějie'}
+      - {text: 。}
+    translation: {es: 'Yo tampoco tengo hermana mayor.', en: 'I don''t have an older sister either.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md (tus notas: hoja de clase de la familia)', date: '2026-10-15'}
+  - id: s.women-dou-meiyou-jiejie
+    use: say
+    segments:
+      - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 没有, ref: w.meiyou, pinyin: 'méiyǒu'}
+      - {text: 姐姐, ref: w.jiejie, pinyin: 'jiějie'}
+      - {text: 。}
+    translation: {es: 'Ninguno de nosotros tiene hermana mayor.', en: 'None of us has an older sister.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md (tus notas: hoja de clase de la familia)', date: '2026-10-15'}
+  - id: s.ta-you-meiyou-didi
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 没, ref: w.mei, pinyin: 'méi'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 弟弟, ref: w.didi, pinyin: 'dìdi'}
+      - {text: ？}
+    translation: {es: '¿Tiene hermano pequeño?', en: 'Does he have a younger brother?'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md (tus notas: hoja de clase de la familia)', date: '2026-10-15'}
+  - id: s.zhe-shi-ta-de-gege
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 哥哥, ref: w.gege, pinyin: 'gēge'}
+      - {text: 。}
+    translation: {es: 'Este es su hermano mayor.', en: 'This is his older brother.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md (tus notas: hoja de clase de la familia)', date: '2026-10-15'}

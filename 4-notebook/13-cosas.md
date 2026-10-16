@@ -8,17 +8,11 @@
 - ✅🃏 看 kàn [kʰan˥˩] · mirar; leer · _verbo_ · Una mano 手 sobre el ojo 目, como quien se hace visera para mirar a lo lejos.
 - ✅🃏 看见 kànjiàn [kʰan˥˩ tɕjɛn˥˩] · ver (llegar a ver) · _verbo_ · 看 es la acción de mirar; 见 añade el resultado: llegar a ver.
 - ✅🃏 看看 kànkan [kʰan˥˩ kʰan] · echar un vistazo · _verbo_ · Repetir el verbo lo suaviza: «mirar un poco», no «mirar dos veces».
-- ✅🃏 足球 zúqiú [tsu˧˥ tɕʰjoʊ˧˥] · fútbol · _sustantivo_ · Calco: 足 «pie» + 球 «pelota».
 - ✅🃏 这 zhè [ʈʂɤ˥˩] · este, esto · _pronombre_
 - ✅🃏 那 nà [na˥˩] · ese, eso; aquel · _pronombre_ · Al hablar se oye mucho nèige: es 那个 contraído de 那一个, lo mismo que nàge.
-- ✅🃏 小猫 xiǎomāo [ɕjɑʊ˧˩˧ mɑʊ˥] · gatito · _sustantivo_
-- ✅🃏 工作 gōngzuò [kʊŋ˥ tswɔ˥˩] · trabajo; trabajar · _verbo_ · 工 gōng es el de 工程师. 恭 gōng «respetuoso» suena igual y es otro carácter.
 - ✅🃏 走 zǒu [tsoʊ˧˩˧] · irse; andar · _verbo_ · 走 es irse o andar, sin decir adónde: 我走了 «me voy». Para ir a un sitio, 去: 我去商店. Y no es 坐 zuò «sentarse».
 - ✅🃏 了 le [lɤ] · partícula: algo ya pasó o ha cambiado · _partícula_ · Al final de la frase marca un cambio o algo ya ocurrido: 我走了 «me voy», 下雨了 «se ha puesto a llover», 我错了 «me equivoqué». · 了 al final: algo que pasa ahora y sigue así a partir de ahora. · Al final de la frase marca un cambio: 我渴了 «me ha entrado sed», 我不吃了 «ya no como más», 快八点了 «ya casi son las ocho», 我会说中文了 «ya sé hablar chino». No es un tiempo pasado.
 - ✅🃏 错 cuò [tsʰwɔ˥˩] · equivocado; error · _adjetivo_ · 错误 cuòwù «error» [HSK 3] y 误会 wùhuì «malentendido» [HSK 4] son más formales; hablando basta 错. · cuò: la u apenas suena, se desliza hacia la o. · Estar equivocado: 我错了 «me he equivocado» (también vale para «he cometido un error»), 你错了 «te equivocas». Detrás de un verbo, «mal»: 你说错了 «lo has dicho mal». 不错 bú cuò [HSK 2] es un elogio, «no está mal, bastante bien».
-- ✅🃏 篮球 lánqiú [lan˧˥ tɕʰjoʊ˧˥] · baloncesto · _sustantivo_
-- ✅🃏 打 dǎ [ta˧˩˧] · jugar (a deportes de pelota); golpear · _verbo_ · 打 + deporte de pelota: 打篮球 «jugar al baloncesto». Lleva 扌 «mano».
-- ✅🃏 软件 ruǎnjiàn [ʐwan˧˩˧ tɕjɛn˥˩] · software · _sustantivo_ · Calco: 软 «blando» + 件 «pieza», frente a 硬件 yìngjiàn «hardware», las piezas duras.
 - ✅🃏 说 shuō [ʂwɔ˥] · hablar, decir · _verbo_ · 讠 «palabra» a la izquierda, como en 请 y en 认识.
 - ✅🃏 怎么 zěnme [tsən˧˩˧ mɤ] · cómo · _interrogativo_ · 怎么 + verbo pregunta la manera: 怎么说？ «¿cómo se dice?», 怎么吃？ «¿cómo se come?». · 怎么 pregunta por la manera o por la situación; 什么, por una cosa. Por eso «¿qué hago?» es 怎么办 y «¿qué te pasa?», 怎么了: no preguntas por un objeto.
 - ✅🃏 能 néng [nɤŋ˧˥] · poder (ser capaz) · _verbo_
@@ -30,18 +24,14 @@
 - ✅🃏 进 jìn [tɕin˥˩] · entrar · _verbo_ · Pasar de fuera a dentro: 请进 «pase». 进来 «entrar hacia aquí», 进去 «entrar hacia allí».
 - ✅🃏 别 bié [pjɛ˧˥] · no (hagas): prohibir · _adverbio_
 - ✅🃏 听 tīng [tʰiŋ˥] · escuchar · _verbo_ · 口 «boca» a la izquierda. 听音乐 «escuchar música».
-- ✅🃏 电影 diànyǐng [tjɛn˥˩ iŋ˧˩˧] · película · _sustantivo_ · 电 «electricidad» + 影 «sombra, imagen»: sombras eléctricas. El 电 de 电话 y 电脑.
 - ✅🃏 生气 shēngqì [ʂɤŋ˥ tɕʰi˥˩] · enfadarse; enfadado · _adjetivo_ · 生 «producir» + 气 «aire, ánimo»: echar humo. 他生气了 «se ha enfadado».
 - ✅🃏 疼 téng [tʰɤŋ˧˥] · doler · _verbo_ · 疒 «enfermedad» por fuera. 好疼！ «¡qué daño!»: 好 delante de un adjetivo es «qué…», muy coloquial.
 - ✅🃏 难 nán [nan˧˥] · difícil · _adjetivo_
 - ✅🃏 非常 fēicháng [feɪ˥ ʈʂʰɑŋ˧˥] · muy, muchísimo · _adverbio_ · Más fuerte que 很: 非常好 «muy bien». Para agradecer se dice 太谢谢你了 o 非常感谢 [HSK 2]; «非常谢谢你» suena forzado.
-- ✅🃏 大象 dàxiàng [ta˥˩ ɕjɑŋ˥˩] · elefante · _sustantivo_
-- ✅🃏 音乐 yīnyuè [in˥ ɥœ˥˩] · música · _sustantivo_
 - ✅🃏 为什么 wèishénme [weɪ˥˩ ʂən˧˥ mɤ] · por qué · _interrogativo_ · 为 wèi «para, por» + 什么 «qué»: «¿por qué?». 为 suelto: 我为你高兴 «me alegro por ti».
 - ✅🃏 这么 zhème [ʈʂɤ˥˩ mɤ] · tan, así de · _pronombre_ · Delante de un adjetivo: 你为什么这么高？ «¿por qué eres tan alto?».
 - ✅🃏 出去 chūqu [ʈʂʰu˥ tɕʰy] · salir (hacia fuera) · _verbo_ · 出 es una planta que sale de un tiesto. 出来 chūlái es salir hacia aquí. · 出去啊？ «¿sales?» es un saludo al cruzarte con alguien que se va.
 - ✅🃏 树 shù [ʂu˥˩] · árbol · _sustantivo_ · 这棵树很高 «este árbol es alto»: 棵 kē es el clasificador de los árboles.
-- ✅🃏 龙 lóng [lʊŋ˧˥] · dragón · _sustantivo_ · 龍 es su forma tradicional. Es frecuente en nombres: 成龙 «Jackie Chan», 大龙, y 李小龙 «Bruce Lee».
 - ✅🃏 左 zuǒ [tswɔ˧˩˧] · izquierda · _sustantivo_
 - ✅🃏 右 yòu [joʊ˥˩] · derecha · _sustantivo_ · 左 «izquierda» + 右 «derecha» = 左右 «más o menos», detrás de un número.
 - ✅🃏 试 shì [ʂɨ˥˩] · probar, intentar · _verbo_ · 我可以试一下吗？ «¿puedo probármelo?», en una tienda. 试试 y 试一下 son «probar un poco».
@@ -50,12 +40,6 @@
 - ✅🃏 找 zhǎo [ʈʂɑʊ˧˩˧] · buscar · _verbo_ · 我在找我的手机 «estoy buscando mi móvil». Pedirlo: 帮我找一下.
 - ✅🃏 拿 ná [na˧˥] · coger, llevar (en la mano) · _verbo_ · 帮我拿一下 «sujétamelo un momento».
 - ✅🃏 得 děi · tener que · _verbo_ · Con esta lectura, děi, es «tener que», muy de hablar: 我得先复习一下笔记. El mismo hanzi se lee de, sin tono, en 觉得.
-- ✅🃏 爬山 páshān [pʰa˧˥ ʂan˥] · subir a la montaña, hacer senderismo · _verbo_ · Palabra a palabra: 爬 «trepar» + 山 «montaña». · 巴 bā da el sonido a 爬 pá, a 爸 bà, a 吧 ba y a 芭 bā; en 爬, 爪 «garra» da el sentido: trepar con las manos.
-- ✅🃏 跑步 pǎobù [pʰɑʊ˧˩˧ pu˥˩] · correr (hacer deporte) · _verbo_ · Palabra a palabra: 跑 «correr» + 步 «paso».
-- ✅🃏 跳舞 tiàowǔ [tʰjɑʊ˥˩ u˧˩˧] · bailar · _verbo_ · Palabra a palabra: 跳 «saltar» + 舞 «danza».
-- ✅🃏 吉他 jítā [tɕi˧˥ tʰa˥] · guitarra · _sustantivo_ · Préstamo por el sonido del inglés guitar, como 咖啡 de coffee.
-- ✅🃏 芭蕾 bālěi [pa˥ leɪ˧˩˧] · ballet · _sustantivo_ · Préstamo por el sonido del francés ballet.
-- ✅🃏 机会 jīhuì [tɕi˥ xweɪ˥˩] · oportunidad · _sustantivo_ · El mismo 机 de 手机 y 飞机.
 - ✅🃏 离开 líkāi [li˧˥ kʰaɪ˥] · irse de, dejar (un sitio) · _verbo_ · Palabra a palabra: 离 «separarse» + 开 «abrir, partir».
 - ✅🃏 回答 huídá [xweɪ˧˥ ta˧˥] · responder · _verbo_ · Palabra a palabra: 回 «volver» + 答 «contestar»: devolver la palabra. 回答问题 «contestar una pregunta».
 - ✅🃏 表达 biǎodá [pjɑʊ˧˩˧ ta˧˥] · expresar · _verbo_ · Comparte 表 «mostrar» con 手表; en la escritura tradicional eran dos caracteres distintos. · 大 dà da el sonido a 达 dá.
@@ -64,6 +48,9 @@
 - ✅🃏 做 zuò [tswɔ˥˩] · hacer · _verbo_ · Hacer algo: 做饭 «cocinar». 你在做什么？ «¿qué estás haciendo?» es de las preguntas más útiles. · 做 lleva 亻 «persona»: una persona haciendo algo. 坐 «sentarse», que suena igual, son dos personas 人 sentadas en el suelo 土.
 - ✅🃏 出来 chūlai [ʈʂʰu˥ laɪ] · salir (hacia aquí) · _verbo_ · 出 «salir» + 来 «hacia aquí»: sales hacia donde está quien habla. 快出来！ «¡sal ya!», si te esperan fuera. 出去 es salir alejándose.
 - ✅🃏 怎么办 zěnmebàn [tsən˧˩˧ mɤ pan˥˩] · ¿qué hago?, ¿qué hacemos? · _pronombre_ · Palabra a palabra: 怎么 «cómo» + 办 «resolver, hacer»: «¿cómo lo arreglo?». 我忘了，怎么办？ «se me ha olvidado, ¿qué hago?».
+- ✅🃏 洗澡 xǐzǎo [ɕi˧˩˧ tsɑʊ˧˩˧] · ducharse, bañarse · _verbo_
+- ✅🃏 事情 shìqing [ʂɨ˥˩ tɕʰiŋ] · asunto, cosa (que pasa o hay que hacer) · _sustantivo_
+- ✅🃏 到 dào [tɑʊ˥˩] · llegar; llegar a (una cifra, un sitio) · _verbo_ · 我还不到二十八岁 «aún no tengo veintiocho»: 不到 es «no llegar a».
 
 ## 那 y 哪里
 
@@ -179,6 +166,13 @@ Se parecen al oído y no tienen nada que ver: uno se va y el otro se queda senta
 
 - 出来 chūlai · hacia quien habla, que espera fuera
 - 出去 chūqu · alejándose de quien habla
+
+## 岛 dǎo y 到 dào
+
+Mismo sonido, otro tono: 岛 baja y sube; 到 cae.
+
+- 岛 dǎo · baja y sube (3.º), sustantivo
+- 到 dào · cae (4.º), verbo: 不到二十八岁
 
 ## Frases
 

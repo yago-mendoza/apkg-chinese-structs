@@ -23,6 +23,11 @@
 - ✅🃏 房间 fángjiān [fɑŋ˧˥ tɕjɛn˥] · habitación · _sustantivo_ · Con un lugar, 在 + sitio + 里: 我在房间里 «estoy en la habitación». · Palabra a palabra: 房 «casa» + 间 «sala, espacio». El chino suele precisar con una segunda pieza: 洗手间 es «la sala de lavarse las manos». 空间 kōngjiān [HSK 4] es «espacio».
 - ✅🃏 打电话 dǎ diànhuà [ta˧˩˧ tjɛn˥˩ xwa˥˩] · llamar por teléfono · _verbo_ · Palabra a palabra: 打 «dar, golpear» + 电话 «teléfono». A quién se llama va delante, con 给: 给我打电话 «llámame».
 - ✅🃏 关 guān [kwan˥] · cerrar; apagar · _verbo_ · 关门 «cerrar la puerta»; 关手机 «apagar el móvil». Es el 关 de 没关系: 关系 guānxi [HSK 3] es «relación».
+- ✅🃏 桌子 zhuōzi [ʈʂwɔ˥ tsɯ] · mesa · _sustantivo_
+- ✅🃏 房子 fángzi [fɑŋ˧˥ tsɯ] · casa (el edificio) · _sustantivo_ · El edificio; tu hogar es 家.
+- ✅🃏 椅子 yǐzi [i˧˩˧ tsɯ] · silla · _sustantivo_
+- ✅🃏 沙发 shāfā [ʂa˥ fa˥] · sofá · _sustantivo_ · Préstamo del inglés sofa: suena casi igual.
+- ✅🃏 照片 zhàopiàn [ʈʂɑʊ˥˩ pʰjɛn˥˩] · foto · _sustantivo_
 
 ## Frases
 
@@ -30,3 +35,4 @@
 - ✅🃏 我没有手表。 · wǒ méiyǒu shǒubiǎo · No tengo reloj.
 - ✅🃏 我的耳机呢？ · wǒ de ěrjī ne · ¿Dónde están mis auriculares?
 - ✅🃏 我在房间里。 · wǒ zài fángjiān lǐ · Estoy en la habitación.
+- ✅🃏 这不是我的杯子。 · zhè bú shì wǒ de bēizi · Este vaso no es mío.

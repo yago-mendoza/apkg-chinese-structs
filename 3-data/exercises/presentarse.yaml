@@ -2655,3 +2655,394 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Es un profesor muy bueno.»'}
     answer: {meaning: Es un profesor muy bueno.}
     comments: []
+  - id: x.dictation.nage
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.nage]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: na3 ge5, hanzi: 哪个, pinyin: nǎge, meaning: 'cuál, qué (de varios)'}
+    comments: []
+  - id: x.produce.nage
+    added: 2026-10-16
+    lang: es
+    type: produce
+    targets: [w.nage]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «cuál, qué (de varios)»? Escribe el pinyin.'}
+    answer: {typed: na3 ge5, hanzi: 哪个, pinyin: nǎge, meaning: 'cuál, qué (de varios)'}
+    comments: []
+  - id: x.read.nage
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.nage]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 哪个}
+    answer: {hanzi: 哪个, pinyin: nǎge, meaning: 'cuál, qué (de varios)'}
+    comments: []
+  - id: x.tones.nage
+    added: 2026-10-16
+    lang: es
+    type: tones
+    targets: [w.nage]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 哪个, pinyin: na ge}
+    answer: {typed: '35', hanzi: 哪个, pinyin: nǎge, meaning: 'cuál, qué (de varios)'}
+    comments: []
+  - id: x.dictation.guojia
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.guojia]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: guo2 jia1, hanzi: 国家, pinyin: guójiā, meaning: país}
+    comments: []
+  - id: x.produce.guojia
+    added: 2026-10-16
+    lang: es
+    type: produce
+    targets: [w.guojia]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «país»? Escribe el pinyin.'}
+    answer: {typed: guo2 jia1, hanzi: 国家, pinyin: guójiā, meaning: país}
+    comments: []
+  - id: x.read.guojia
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.guojia]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 国家}
+    answer: {hanzi: 国家, pinyin: guójiā, meaning: país}
+    comments: []
+  - id: x.tones.guojia
+    added: 2026-10-16
+    lang: es
+    type: tones
+    targets: [w.guojia]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '21', hanzi: 国家, pinyin: guójiā, meaning: país}
+    comments: []
+  - id: x.dictation.riben
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.riben]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ri4 ben3, hanzi: 日本, pinyin: Rìběn, meaning: Japón}
+    comments: []
+  - id: x.read.riben
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.riben]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 日本}
+    answer: {hanzi: 日本, pinyin: Rìběn, meaning: Japón}
+    comments: []
+  - id: x.listen.ni-cai-yi-cai-ta-shi-shei
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ni-cai-yi-cai-ta-shi-shei
+    targets: [s.ni-cai-yi-cai-ta-shi-shei]
+    context: [w.ni, w.cai.guess, w.num.yi, w.ta.he, w.shi, w.shei]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Adivina quién es.}
+    comments: []
+  - id: x.produce.ni-cai-yi-cai-ta-shi-shei
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ni-cai-yi-cai-ta-shi-shei
+    targets: [s.ni-cai-yi-cai-ta-shi-shei]
+    context: [w.ni, w.cai.guess, w.num.yi, w.ta.he, w.shi, w.shei]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Adivina quién es.»'}
+    answer: {meaning: Adivina quién es.}
+    comments: []
+  - id: x.listen.ni-cai-ta-duoda.she
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ni-cai-ta-duoda.she
+    targets: [s.ni-cai-ta-duoda.she]
+    context: [w.ni, w.cai.guess, w.ta.she, w.duoda]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuántos años crees que tiene?'}
+    comments: []
+  - id: x.produce.ni-cai-ta-duoda.she
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ni-cai-ta-duoda.she
+    targets: [s.ni-cai-ta-duoda.she]
+    context: [w.ni, w.cai.guess, w.ta.she, w.duoda]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años crees que tiene?»'}
+    answer: {meaning: '¿Cuántos años crees que tiene?'}
+    comments: []
+  - id: x.listen.wo-juede-hen-hao
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-juede-hen-hao
+    targets: [s.wo-juede-hen-hao]
+    context: [w.wo, w.juede, w.hen, w.hao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me parece muy bien.}
+    comments: []
+  - id: x.produce.wo-juede-hen-hao
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.wo-juede-hen-hao
+    targets: [s.wo-juede-hen-hao]
+    context: [w.wo, w.juede, w.hen, w.hao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me parece muy bien.»'}
+    answer: {meaning: Me parece muy bien.}
+    comments: []
+  - id: x.listen.nage-ren-shi-ni-de-pengyou
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.nage-ren-shi-ni-de-pengyou
+    targets: [s.nage-ren-shi-ni-de-pengyou]
+    context: [w.nage, w.ren, w.shi, w.ni, w.de, w.pengyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuál es tu amigo?'}
+    comments: []
+  - id: x.produce.nage-ren-shi-ni-de-pengyou
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.nage-ren-shi-ni-de-pengyou
+    targets: [s.nage-ren-shi-ni-de-pengyou]
+    context: [w.nage, w.ren, w.shi, w.ni, w.de, w.pengyou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuál es tu amigo?»'}
+    answer: {meaning: '¿Cuál es tu amigo?'}
+    comments: []
+  - id: x.listen.ni-laizi-nage-guojia
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ni-laizi-nage-guojia
+    targets: [s.ni-laizi-nage-guojia]
+    context: [w.ni, w.laizi, w.nage, w.guojia]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿De qué país eres?'}
+    comments: []
+  - id: x.produce.ni-laizi-nage-guojia
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ni-laizi-nage-guojia
+    targets: [s.ni-laizi-nage-guojia]
+    context: [w.ni, w.laizi, w.nage, w.guojia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿De qué país eres?»'}
+    answer: {meaning: '¿De qué país eres?'}
+    comments: []
+  - id: x.listen.dlg-zhongguo-xuesheng-ma
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.dlg-zhongguo-xuesheng-ma
+    targets: [s.dlg-zhongguo-xuesheng-ma]
+    context: [w.ni, w.shi, w.zhongguo, w.xuesheng, w.ma, w.bu, w.wo, w.meiguo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Eres estudiante chino? —No, soy estudiante estadounidense.'}
+    comments: []
+  - id: x.listen.dlg-ni-shi-xuesheng-ma
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.dlg-ni-shi-xuesheng-ma
+    targets: [s.dlg-ni-shi-xuesheng-ma]
+    context: [w.ni, w.shi, w.xuesheng, w.ma, w.bu, w.wo, w.laoshi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Eres estudiante? —No, soy profesora.'}
+    comments: []
+  - id: x.listen.dawei-shi-meiguoren
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.dawei-shi-meiguoren
+    targets: [s.dawei-shi-meiguoren]
+    context: [w.dawei, w.shi, w.meiguo, w.ren, w.ta.he, w.xuesheng]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: David es estadounidense y es estudiante.}
+    comments: []
+  - id: x.listen.ta-shi-na-guo-ren
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-shi-na-guo-ren
+    targets: [s.ta-shi-na-guo-ren]
+    context: [w.ta.she, w.shi, w.na.which, w.guo, w.ren]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿De dónde es ella?'}
+    comments: []
+  - id: x.listen.ta-bu-shi-xibanyaren-shi-zhongguoren
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-bu-shi-xibanyaren-shi-zhongguoren
+    targets: [s.ta-bu-shi-xibanyaren-shi-zhongguoren]
+    context: [w.ta.he, w.bu, w.shi, w.xibanya, w.ren, w.zhongguo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'No es español, es chino.'}
+    comments: []
+  - id: x.listen.wo-renshi-ta-ta-shi-wo-de-laoshi
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-renshi-ta-ta-shi-wo-de-laoshi
+    targets: [s.wo-renshi-ta-ta-shi-wo-de-laoshi]
+    context: [w.wo, w.renshi, w.ta.she, w.shi, w.de, w.laoshi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'La conozco: es mi profesora.'}
+    comments: []
+  - id: x.listen.ni-jiao-shenme-wo-jiao-dawei
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ni-jiao-shenme-wo-jiao-dawei
+    targets: [s.ni-jiao-shenme-wo-jiao-dawei]
+    context: [w.ni, w.jiao, w.shenme, w.mingzi, w.wo, w.dawei]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Cómo te llamas? —Me llamo David.'}
+    comments: []
+  - id: x.listen.nin-jiao-shenme-mingzi
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.nin-jiao-shenme-mingzi
+    targets: [s.nin-jiao-shenme-mingzi]
+    context: [w.nin, w.jiao, w.shenme, w.mingzi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cómo se llama usted?'}
+    comments: []
+  - id: x.produce.nin-jiao-shenme-mingzi
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.nin-jiao-shenme-mingzi
+    targets: [s.nin-jiao-shenme-mingzi]
+    context: [w.nin, w.jiao, w.shenme, w.mingzi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cómo se llama usted?»'}
+    answer: {meaning: '¿Cómo se llama usted?'}
+    comments: []
+  - id: x.charsound.ren
+    added: 2026-10-16
+    lang: es
+    type: charsound
+    targets: [w.renshi, w.renzhen]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 认}
+    answer: {typed: ren4, hanzi: 认, pinyin: rèn, meaning: 'Sale en 认识 rènshi «conocer (a alguien)», 认真 rènzhēn «serio, aplicado
+        (que se toma las cosas en serio)».'}
+    comments: []
+  - id: x.compose.boda-edad
+    added: '2026-10-16'
+    lang: es
+    type: compose
+    targets: [s.ni-cai-ta-duoda.she, s.wo-juede-ta-ershi-sui-zuoyou, s.ta-sanshi-sui-zuoyou]
+    words: [w.cai.guess, w.juede, w.zuoyou, w.duoda, w.sui, w.kanqilai]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. En una boda, tu amigo señala a una mujer que parece jovencísima y te reta a adivinar cuántos años tiene. Contéstale con estas palabras o con otras.'}
+    answer: {meaning: '猜 pide adivinar; 左右 va detrás de la cifra; 看起来, lo que parece.'}
+    comments: []
+  - id: x.comprehension.nacimiento-signo
+    added: '2026-10-16'
+    lang: es
+    type: comprehension
+    targets: [s.wo-1999-nian-chusheng, s.wo-de-shuxiang-shi-tu, s.qunian-wo-ershiwu-sui]
+    skills: [reading, comprehension]
+    script: both
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿En qué año nació, de qué signo es y cuántos años tenía el año pasado?'}
+    answer: {meaning: 'Nació en 1999, es del año del conejo y el año pasado tenía veinticinco.'}
+    comments: []
+  - id: x.dictation.waiguo
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.waiguo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wai4 guo2, hanzi: 外国, pinyin: wàiguó, meaning: el extranjero; extranjero (de otro país)}
+    comments: []
+  - id: x.produce.waiguo
+    added: 2026-10-16
+    lang: es
+    type: produce
+    targets: [w.waiguo]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «el extranjero; extranjero (de otro país)»? Escribe el pinyin.'}
+    answer: {typed: wai4 guo2, hanzi: 外国, pinyin: wàiguó, meaning: el extranjero; extranjero (de otro país)}
+    comments: []
+  - id: x.read.waiguo
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.waiguo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 外国}
+    answer: {hanzi: 外国, pinyin: wàiguó, meaning: el extranjero; extranjero (de otro país)}
+    comments: []
+  - id: x.listen.wo-shi-waiguoren
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-shi-waiguoren
+    targets: [s.wo-shi-waiguoren]
+    context: [w.wo, w.shi, w.waiguo, w.ren]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Soy extranjero.}
+    comments: []
+  - id: x.produce.wo-shi-waiguoren
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.wo-shi-waiguoren
+    targets: [s.wo-shi-waiguoren]
+    context: [w.wo, w.shi, w.waiguo, w.ren]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Soy extranjero.»'}
+    answer: {meaning: Soy extranjero.}
+    comments: []
+  - id: x.contrast.jiao
+    added: 2026-10-16
+    lang: es
+    type: contrast
+    group: g.jiao-jiao
+    targets: [w.jiao]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 叫, pinyin: jiào, meaning: llamarse}
+    comments: []

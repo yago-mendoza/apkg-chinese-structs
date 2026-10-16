@@ -450,3 +450,155 @@ exercises:
     prompt: {text: '¿Cuál es gǒu, «perro»?'}
     answer: {hanzi: 狗, pinyin: gǒu, meaning: perro}
     comments: []
+  - id: x.dictation.xiaomao
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.xiaomao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiao3 mao1, hanzi: 小猫, pinyin: xiǎomāo, meaning: gatito}
+    comments: []
+  - id: x.read.xiaomao
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.xiaomao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 小猫}
+    answer: {hanzi: 小猫, pinyin: xiǎomāo, meaning: gatito}
+    comments: []
+  - id: x.contrast.daxiang
+    added: 2026-10-01
+    lang: es
+    type: contrast
+    group: g.dajia-daxiang
+    targets: [w.daxiang]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 大象, pinyin: dàxiàng, meaning: elefante}
+    comments: []
+  - id: x.dictation.daxiang
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.daxiang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: da4 xiang4, hanzi: 大象, pinyin: dàxiàng, meaning: elefante}
+    comments: []
+  - id: x.read.daxiang
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.daxiang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 大象}
+    answer: {hanzi: 大象, pinyin: dàxiàng, meaning: elefante}
+    comments: []
+  - id: x.dictation.long
+    added: 2026-10-02
+    lang: es
+    type: listen
+    targets: [w.long]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: long2, hanzi: 龙, pinyin: lóng, meaning: dragón}
+    comments: []
+  - id: x.read.long
+    added: 2026-10-02
+    lang: es
+    type: read
+    targets: [w.long]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 龙}
+    answer: {hanzi: 龙, pinyin: lóng, meaning: dragón}
+    comments: []
+  - id: x.listen.ni-de-shuxiang-shi-shenme
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ni-de-shuxiang-shi-shenme
+    targets: [s.ni-de-shuxiang-shi-shenme]
+    context: [w.ni, w.de, w.shuxiang, w.shi, w.shenme]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuál es tu signo del zodiaco chino?'}
+    comments: []
+  - id: x.produce.ni-de-shuxiang-shi-shenme
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ni-de-shuxiang-shi-shenme
+    targets: [s.ni-de-shuxiang-shi-shenme]
+    context: [w.ni, w.de, w.shuxiang, w.shi, w.shenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuál es tu signo del zodiaco chino?»'}
+    answer: {meaning: '¿Cuál es tu signo del zodiaco chino?'}
+    comments: []
+  - id: x.listen.wo-de-shuxiang-shi-tu
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-de-shuxiang-shi-tu
+    targets: [s.wo-de-shuxiang-shi-tu]
+    context: [w.wo, w.de, w.shuxiang, w.shi, w.tu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mi signo es el conejo.}
+    comments: []
+  - id: x.produce.wo-de-shuxiang-shi-tu
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.wo-de-shuxiang-shi-tu
+    targets: [s.wo-de-shuxiang-shi-tu]
+    context: [w.wo, w.de, w.shuxiang, w.shi, w.tu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mi signo es el conejo.»'}
+    answer: {meaning: Mi signo es el conejo.}
+    comments: []
+  - id: x.listen.ta-shu-gou
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-shu-gou
+    targets: [s.ta-shu-gou]
+    context: [w.ta.he, w.shu.belong, w.gou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es del año del perro.}
+    comments: []
+  - id: x.produce.ta-shu-gou
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ta-shu-gou
+    targets: [s.ta-shu-gou]
+    context: [w.ta.he, w.shu.belong, w.gou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Es del año del perro.»'}
+    answer: {meaning: Es del año del perro.}
+    comments: []
+  - id: x.listen.nin-shu-shenme
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.nin-shu-shenme
+    targets: [s.nin-shu-shenme]
+    context: [w.nin, w.shu.belong, w.shenme]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿De qué signo es usted?'}
+    comments: []
+  - id: x.produce.nin-shu-shenme
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.nin-shu-shenme
+    targets: [s.nin-shu-shenme]
+    context: [w.nin, w.shu.belong, w.shenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿De qué signo es usted?»'}
+    answer: {meaning: '¿De qué signo es usted?'}
+    comments: []

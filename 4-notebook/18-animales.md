@@ -19,6 +19,9 @@
 - ✅🃏 生肖 shēngxiào [ʂɤŋ˥ ɕjɑʊ˥˩] · zodiaco chino; signo · _sustantivo_ · 十二生肖 son los doce signos. Al hablar se pregunta 你属什么？; 属相 es la palabra coloquial para el signo.
 - ✅🃏 熊 xióng [ɕjʊŋ˧˥] · oso · _sustantivo_ · 熊猫 «panda» lleva 熊 delante: «oso-gato».
 - ✅🃏 熊猫 xióngmāo [ɕjʊŋ˧˥ mɑʊ˥] · panda · _sustantivo_ · Palabra a palabra: 熊 «oso» + 猫 «gato». · En clase: 两只熊猫 «dos pandas», con 只, el clasificador de los animales.
+- ✅🃏 小猫 xiǎomāo [ɕjɑʊ˧˩˧ mɑʊ˥] · gatito · _sustantivo_
+- ✅🃏 大象 dàxiàng [ta˥˩ ɕjɑŋ˥˩] · elefante · _sustantivo_
+- ✅🃏 龙 lóng [lʊŋ˧˥] · dragón · _sustantivo_ · 龍 es su forma tradicional. Es frecuente en nombres: 成龙 «Jackie Chan», 大龙, y 李小龙 «Bruce Lee».
 
 ## Los doce signos
 
@@ -49,3 +52,7 @@ La misma sílaba: 吗 es átona y cierra preguntas; 马 baja y sube. 马 da adem
 - ✅🃏 我喜欢狗，也喜欢猫。 · wǒ xǐhuan gǒu yě xǐhuan māo · Me gustan los perros, y también los gatos.
 - ✅🃏 我妈妈属鸡，我爸爸属猪。 · wǒ māma shǔ jī wǒ bàba shǔ zhū · Mi madre es gallo y mi padre, cerdo.
 - ✅🃏 我想去看熊猫。 · wǒ xiǎng qù kàn xióngmāo · Quiero ir a ver pandas.
+- ✅🃏 你的属相是什么？ · nǐ de shǔxiang shì shénme · ¿Cuál es tu signo del zodiaco chino?
+- ✅🃏 我的属相是兔。 · wǒ de shǔxiang shì tù · Mi signo es el conejo.
+- ✅🃏 他属狗。 · tā shǔ gǒu · Es del año del perro.
+- ✅🃏 您属什么？ · nín shǔ shénme · ¿De qué signo es usted?

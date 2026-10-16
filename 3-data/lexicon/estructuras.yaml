@@ -371,10 +371,11 @@ entries:
     pattern: '{S} + {Num} + 岁'
     refs: [w.sui]
     meaning: {es: 'La edad va sin 是: 我二十三岁. Igual la fecha: 今天八号.', en: 'Age takes no 是: 我二十三岁. Same with dates.'}
-    examples: [s.wo-ershisan-sui]
+    examples: [s.wo-ershisan-sui, s.ta-baba-wushisan-sui]
     contrast: {right: s.wo-ershisan-sui, wrong: '我是二十三岁。', why: {es: '«Tengo 23 años» no lleva verbo en chino: la edad hace de predicado sin 是.', en: 'Age is the predicate itself, without 是.'}}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-16', text: 'Persona, cifra y 岁, sin nada en medio: 他爸爸五十三岁. Ni 是 ni 有: el «tener» del español no se traduce, y 我有二十三岁 está mal.', original: 'Exactly! No connector is needed. 他爸爸五十三岁。 In Chinese, you put the person + age + 岁 (suì) directly. You don''t need 是 (shì) or any other verb.'}
   - id: st.v-yixia
     kind: structure
     use: say

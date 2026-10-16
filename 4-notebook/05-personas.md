@@ -32,6 +32,15 @@
 - ✅🃏 男 nán [nan˧˥] · hombre, masculino (en carteles: 男) · _adjetivo_ · En las puertas de los baños: 男 «hombres», 女 «mujeres». 男朋友 «novio».
 - ✅🃏 女 nǚ [ny˧˩˧] · mujer, femenino (en carteles: 女) · _adjetivo_ · En las puertas de los baños: 女 «mujeres», 男 «hombres». 女朋友 «novia»; 女儿 «hija».
 - ✅🃏 同学 tóngxué [tʰʊŋ˧˥ ɕɥœ˧˥] · compañero de clase · _sustantivo_ · Palabra a palabra: 同 «mismo» + 学 «estudiar»: el que estudia contigo. Con 同 «mismo» también se forman 同事 tóngshì «compañero de trabajo» [HSK 2] y 同时 «al mismo tiempo» [HSK 2].
+- ✅🃏 年轻人 niánqīngrén [njɛn˧˥ tɕʰiŋ˥ ʐən˧˥] · joven; los jóvenes · _sustantivo_
+- ✅🃏 人们 rénmen [ʐən˧˥ mən] · la gente · _sustantivo_
+- ✅🃏 自己 zìjǐ [tsɯ˥˩ tɕi˧˩˧] · uno mismo (yo mismo, tú mismo…) · _pronombre_
+- ✅🃏 女生 nǚshēng [ny˧˩˧ ʂɤŋ˥] · chica (sobre todo estudiante) · _sustantivo_
+- ✅🃏 身体 shēntǐ [ʂən˥ tʰi˧˩˧] · cuerpo; salud · _sustantivo_ · Se usa mucho por «salud»: 你身体好吗？ «¿qué tal estás de salud?».
+- ✅🃏 眼睛 yǎnjing [jɛn˧˩˧ tɕiŋ] · ojo, ojos · _sustantivo_
+- ✅🃏 头发 tóufa [tʰoʊ˧˥ fa] · pelo (de la cabeza) · _sustantivo_
+- ✅🃏 脸 liǎn [ljɛn˧˩˧] · cara · _sustantivo_ · 月 a la izquierda es «carne»: parte del cuerpo. A la derecha, 人 arriba es el pelo, los dos puntos los ojos y la raya de abajo la boca.
+- ✅🃏 脚 jiǎo [tɕjɑʊ˧˩˧] · pie · _sustantivo_ · 月 «carne» + 却, que lleva 去 «irse»: el pie, que es con lo que te vas.
 
 ## 他, 她 y 它: los tres son tā
 
@@ -76,6 +85,13 @@ Suenan igual; se separan por la forma y por el sentido.
 - 男 nán · un campo 田 sobre la fuerza 力
 - 难 nán · a la derecha, un pájaro 隹
 
+## 叫 jiào y 脚 jiǎo
+
+Mismo sonido, otro tono: 叫 cae; 脚 baja y sube.
+
+- 叫 jiào · cae (4.º), verbo: 我叫大卫
+- 脚 jiǎo · baja y sube (3.º), parte del cuerpo
+
 ## Frases
 
 - ✅🃏 她是我的老师。 · tā shì wǒ de lǎoshī · Ella es mi profesora.
@@ -90,3 +106,7 @@ Suenan igual; se separan por la forma y por el sentido.
 - ✅🃏 你想跟我吃饭吗？ · nǐ xiǎng gēn wǒ chīfàn ma · ¿Quieres comer conmigo?
 - ✅🃏 谁来了？ · shéi lái le · ¿Quién ha venido?
 - ✅🃏 他是我的同学。 · tā shì wǒ de tóngxué · Es mi compañero de clase.
+- ✅🃏 他们都是年轻人。 · tāmen dōu shì niánqīngrén · Todos ellos son jóvenes.
+- ✅🃏 这个是你的朋友吗？ · zhè ge shì nǐ de péngyou ma · ¿Este es tu amigo?
+- ✅🃏 这个人是不是你的朋友？ · zhè ge rén shì bu shì nǐ de péngyou · ¿Esta persona es amiga tuya o no?
+- ✅🃏 那个人是你的朋友。 · nà ge rén shì nǐ de péngyou · Esa persona es tu amiga.

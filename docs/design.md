@@ -96,7 +96,8 @@ Cada `MAINTENANCE_EVERY` lotes (o antes, si algo está roto), el agente revisa c
 
 - `anki.py retro` junta las «Fricciones del proceso» de los últimos lotes y lo que repite la caja negra (`private/blackbox.jsonl`): cada orden de `anki.py`, con su duración, cómo acabó, sus errores y sus avisos. La caja negra solo existe en local (si hay `private/`); nunca va a git ni a la CI.
 - Las transcripciones de las sesiones del agente quedan además en el equipo del que trabaja; se miran solo si una fricción no se entiende con lo anterior.
-- El agente propone en el review («Retrospectiva») los cambios de proceso que salgan; lo aceptado entra en `docs/decisions.md` y en su documento. Las reglas no cambian sobre la marcha fuera de aquí, salvo que algo falle en uso real o el que aprende lo pida.
+- El agente propone en el review («Retrospectiva») los cambios de proceso que salgan; lo aceptado entra en `docs/decisions.md` y en su documento.
+- `docs/hypotheses.md` lleva las hipótesis de aprendizaje (qué creemos que le funciona), con cómo se mide cada una y su estado: en prueba, confirmada o descartada, con la prueba. Cada review trae «¿Funciona?» con las abiertas que ya se pueden juzgar; la retrospectiva las cierra. Una regla que nace de una hipótesis la enlaza. Las reglas no cambian sobre la marcha fuera de aquí, salvo que algo falle en uso real o el que aprende lo pida.
 
 ## Integración de lo nuevo
 
@@ -241,13 +242,15 @@ Es una escalera, con **excepciones siempre que hagan falta**: una lista explíci
 |---|---|---|---|
 | palabra `content` | lectura | + escucha | + producción |
 | palabra `function` | lectura | + escucha | + producción en frase (hueco) |
-| frase o frase hecha | — | escucha | + decirla en voz alta con el audio |
+| frase o frase hecha | — | escucha, si oírla es un reto | + decirla en voz alta con el audio |
 | carácter o componente | componentes (o solo el contraste, si está en un grupo `visual`) | — | — |
 | pronunciación `p.` | — | escucha (parejas, dictados, vocales) | escucha (sin tarjeta de regla) |
 
 Además, calculado del pinyin: tarjeta de tonos para toda entrada `hear` o `say` con tono neutro o sandhi (3+3, 不, 一). El erhua se detecta pero lo trata la pista de pronunciación. La producción suelta tecleada se reserva para el núcleo; el peso de la producción va a frases y frases hechas, que son lo más rentable para tonos en contexto y fluidez.
 
 Nunca exigidas, escritas a mano cuando sirven: `nuance` (lo pide el que aprende) y `comprehension` (ver «Tarjetas»; cuántas, según `docs/goal.md`).
+
+**Oír una frase, solo si es un reto** (`listen_challenge`): una frase pide tarjeta de escucha salvo que sea una fórmula hecha, toda de expresiones o de palabras de los temas de saludo y cortesía (`FORMULA_THEMES`). `listen: true | false` en la frase decide a mano, con `listen_reason`. Al mezclar, la cola de oír pesa menos (`STREAM_WEIGHT`), así que sale menos a menudo.
 
 **Recuento** (`gaps`): cada tarjeta cuenta una vez, por lo que practica; una tarjeta «decir» de una frase cuenta como voz alta, porque se dice (escribirla es opcional).
 
@@ -277,9 +280,9 @@ El mazo se ordena por dificultad con los niveles del HSK 3.0 (la versión de 202
 - **Frases**: el nivel más alto de sus palabras. Una frase nunca adelanta vocabulario de un nivel superior: los ejemplos automáticos del reverso solo toman frases de nivel igual o inferior al de la tarjeta (`examples_for`).
 - **Ejercicios**: el nivel más alto de sus objetivos.
 
-**En Anki**: el nivel es la primera división y el tema la segunda: `🐉 Chino práctico::HSK 1::02 Saludos y despedidas` (el 7, `HSK 7-9`). El nivel de una tarjeta es el de su objetivo más difícil (`exercise_level`). Las nuevas salen por nivel primero. Etiquetas `nivel::1` y, si es estimado, `nivel::estimado`. Cambiar el nivel de algo lo mueve de subdeck conservando el progreso, igual que al reorganizar temas.
+**En Anki**: el nivel es la primera división y el tema la segunda: `🐉 Chino práctico::HSK 1::02 Saludos y despedidas` (el 7, `HSK 7-9`). El nivel de una tarjeta es el de su objetivo más difícil (`exercise_level`). Las nuevas salen primero las de clase (`class_date`: algún objetivo con `source.origin` `class` o `class-audio`), de la primera clase a la última y mezcladas como siempre dentro de cada clase, sea del nivel que sea; después, el resto por nivel (`new_card_order`). Etiquetas `nivel::1` y, si es estimado, `nivel::estimado`. Cambiar el nivel de algo lo mueve de subdeck conservando el progreso, igual que al reorganizar temas.
 
-**Cómo se estudia**: nivel a nivel. Se puede estudiar el mazo entero, porque las nuevas salen por nivel, o solo el subdeck del nivel actual (cuál, en `docs/owner.md`). Lo de clase que llega de un nivel superior entra en su nivel y espera; lo investigado por su cuenta que es de un nivel superior y está poco conectado espera en el desván.
+**Cómo se estudia**: el mazo entero, porque las nuevas salen con lo de clase delante y luego por nivel (cuál, en `docs/owner.md`). Lo de clase que llega de un nivel superior entra en su nivel, pero sale con lo de clase; lo investigado por su cuenta que es de un nivel superior y está poco conectado espera en el desván.
 
 **Nivel actual y cambio de nivel**: en cada lote se calcula la cobertura de cada nivel (palabras de la lista con `use` `hear` o `say` en el mazo, frente al total del nivel; `anki.py gaps`, `level_coverage`) y va al review. Un nivel se da por superado con al menos el 80 % de su vocabulario (`LEVEL_PASS`) y el juicio del agente sobre las estructuras de frase que ya se manejan (la lista mide vocabulario, no gramática). Al cruzarlo, el agente lo anuncia en el chat y en el review, con claridad. Lo que llegue después de un nivel ya superado se señala como hueco de ese nivel.
 

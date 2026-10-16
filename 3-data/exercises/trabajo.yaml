@@ -1,0 +1,183 @@
+# Ejercicios · Trabajo y estudio. Esquema: 3-data/README.md
+
+exercises:
+  - id: x.dictation.gongzuo
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.gongzuo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gong1 zuo4, hanzi: 工作, pinyin: gōngzuò, meaning: trabajo; trabajar}
+    comments: []
+  - id: x.produce.gongzuo
+    added: 2026-09-29
+    lang: es
+    type: produce
+    targets: [w.gongzuo]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «trabajo; trabajar»? Escribe el pinyin.'}
+    answer: {typed: gong1 zuo4, hanzi: 工作, pinyin: gōngzuò, meaning: trabajo; trabajar}
+    comments: []
+  - id: x.read.gongzuo
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.gongzuo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 工作}
+    answer: {hanzi: 工作, pinyin: gōngzuò, meaning: trabajo; trabajar}
+    comments: []
+  - id: x.dictation.ruanjian
+    added: 2026-09-29
+    lang: es
+    type: listen
+    targets: [w.ruanjian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ruan3 jian4, hanzi: 软件, pinyin: ruǎnjiàn, meaning: software}
+    comments: []
+  - id: x.read.ruanjian
+    added: 2026-09-29
+    lang: es
+    type: read
+    targets: [w.ruanjian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 软件}
+    answer: {hanzi: 软件, pinyin: ruǎnjiàn, meaning: software}
+    comments: []
+  - id: x.dictation.jihui
+    added: 2026-10-08
+    lang: es
+    type: listen
+    targets: [w.jihui]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ji1 hui4, hanzi: 机会, pinyin: jīhuì, meaning: oportunidad}
+    comments: []
+  - id: x.read.jihui
+    added: 2026-10-08
+    lang: es
+    type: read
+    targets: [w.jihui]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 机会}
+    answer: {hanzi: 机会, pinyin: jīhuì, meaning: oportunidad}
+    comments: []
+  - id: x.dictation.cidian
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.cidian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ci2 dian3, hanzi: 词典, pinyin: cídiǎn, meaning: diccionario}
+    comments: []
+  - id: x.read.cidian
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.cidian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 词典}
+    answer: {hanzi: 词典, pinyin: cídiǎn, meaning: diccionario}
+    comments: []
+  - id: x.dictation.gongsi
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.gongsi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gong1 si1, hanzi: 公司, pinyin: gōngsī, meaning: empresa}
+    comments: []
+  - id: x.read.gongsi
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.gongsi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 公司}
+    answer: {hanzi: 公司, pinyin: gōngsī, meaning: empresa}
+    comments: []
+  - id: x.dictation.kaihui
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.kaihui]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kai1 hui4, hanzi: 开会, pinyin: kāihuì, meaning: tener una reunión}
+    comments: []
+  - id: x.read.kaihui
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.kaihui]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 开会}
+    answer: {hanzi: 开会, pinyin: kāihuì, meaning: tener una reunión}
+    comments: []
+  - id: x.dictation.taolun
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.taolun]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: tao3 lun4, hanzi: 讨论, pinyin: tǎolùn, meaning: 'hablar de, discutir (un tema)'}
+    comments: []
+  - id: x.read.taolun
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.taolun]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 讨论}
+    answer: {hanzi: 讨论, pinyin: tǎolùn, meaning: 'hablar de, discutir (un tema)'}
+    comments: []
+  - id: x.dictation.kaoshi
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.kaoshi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kao3 shi4, hanzi: 考试, pinyin: kǎoshì, meaning: examen; examinarse}
+    comments: []
+  - id: x.read.kaoshi
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.kaoshi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 考试}
+    answer: {hanzi: 考试, pinyin: kǎoshì, meaning: examen; examinarse}
+    comments: []
+  - id: x.dictation.tongshi
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.tongshi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: tong2 shi4, hanzi: 同事, pinyin: tóngshì, meaning: compañero de trabajo}
+    comments: []
+  - id: x.read.tongshi
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.tongshi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 同事}
+    answer: {hanzi: 同事, pinyin: tóngshì, meaning: compañero de trabajo}
+    comments: []
+  - id: x.charsound.si-2
+    added: 2026-10-16
+    lang: es
+    type: charsound
+    targets: [w.gongsi, w.siji]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 司}
+    answer: {typed: si1, hanzi: 司, pinyin: sī, meaning: 'Sale en 公司 gōngsī «empresa», 司机 sījī «conductor (de taxi, de autobús)».'}
+    comments: []

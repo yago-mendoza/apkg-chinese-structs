@@ -8,7 +8,7 @@ entries:
     hanzi: 书
     pinyin: shū
     meaning: {es: libro, en: book}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.shouji
     use: say
@@ -17,7 +17,7 @@ entries:
     hanzi: 手机
     pinyin: shǒujī
     meaning: {es: móvil, en: mobile phone}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 手 «mano» + 机 «máquina».}
       - {kind: character, private: false, date: '2026-09-27', text: '机 jī «máquina» (con 木 a la izquierda, no 扌): 手机 es la máquina de mano; 飞机 fēijī, la que vuela; 机票 jīpiào, su billete.'}
@@ -194,3 +194,50 @@ entries:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: '关门 «cerrar la puerta»; 关手机 «apagar el móvil». Es el 关 de 没关系: 关系 guānxi [HSK 3] es «relación».'}
+  - id: w.zhuozi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 桌子
+    pinyin: 'zhuōzi'
+    meaning: {es: 'mesa', en: 'table'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+    comments: []
+  - id: w.fangzi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 房子
+    pinyin: 'fángzi'
+    meaning: {es: 'casa (el edificio)', en: 'house'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-13', text: 'El edificio; tu hogar es 家.'}
+  - id: w.yizi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 椅子
+    pinyin: 'yǐzi'
+    meaning: {es: 'silla', en: 'chair'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+    comments: []
+  - id: w.shafa
+    use: hear
+    role: content
+    kind: word
+    hanzi: 沙发
+    pinyin: 'shāfā'
+    meaning: {es: 'sofá', en: 'sofa'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-13', text: 'Préstamo del inglés sofa: suena casi igual.'}
+  - id: w.zhaopian
+    use: hear
+    role: content
+    kind: word
+    hanzi: 照片
+    pinyin: 'zhàopiàn'
+    meaning: {es: 'foto', en: 'photo'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+    comments: []

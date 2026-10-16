@@ -546,12 +546,26 @@ def tone_pair_picks(entries):
     return picks
 
 
-def required_cards(item, groups_of, tone_picks=frozenset()):
+FORMULA_THEMES = {"saludos", "cortesia"}   # las fórmulas de saludo y cortesía: se entienden sin esfuerzo
+
+
+def listen_challenge(sentence, eby):
+    """Si oír esta frase sirve de algo (YAGO, review 010: «las de oír deben ser desafíos, no lo obvio; no puro
+    entender 对不起»). Lo es una frase que mezcla vocabulario, aunque sea corta, como las que dicta la profesora al
+    empezar la clase (您贵姓？, 这个人是不是你的朋友？); no lo es una fórmula hecha, toda de expresiones o de palabras
+    de saludo y cortesía (谢谢！不客气。). `listen: true | false` en la frase decide a mano, con `listen_reason`."""
+    if "listen" in sentence:
+        return bool(sentence["listen"])
+    refs = [s["ref"] for s in sentence.get("segments", []) if s.get("ref")]
+    return not refs or not all(r.startswith("e.") or (eby.get(r) or {}).get("theme") in FORMULA_THEMES for r in refs)
+
+
+def required_cards(item, groups_of, tone_picks=frozenset(), eby=None):
     """Tarjetas que exige una entrada o frase según su `use`, su tipo y su rol. `tone_picks`: las palabras elegidas
-    para cubrir las parejas de tonos (tone_pair_picks)."""
+    para cubrir las parejas de tonos (tone_pair_picks); `eby`, las entradas, para saber si una frase es una fórmula."""
     kind, mods, req = item.get("kind"), use_modalities(item), set()
     if kind is None:                                    # frase
-        if "hear" in mods:
+        if "hear" in mods and listen_challenge(item, eby or {}):
             req.add("listen")
         if "say" in mods:
             req.add("produce")
@@ -611,8 +625,8 @@ def coverage(entries, sentences, exercises):
     for ex in exercises:
         for tid in ex.get("targets", []):
             have.setdefault(tid, set()).update(satisfied(ex))
-    picks = tone_pair_picks(entries)
-    return [(it, required_cards(it, groups_of, picks), have.get(it["id"], set()))
+    picks, eby = tone_pair_picks(entries), {e["id"]: e for e in entries}
+    return [(it, required_cards(it, groups_of, picks, eby), have.get(it["id"], set()))
             for it in entries + sentences if it.get("kind") != "group"]
 
 
@@ -1896,6 +1910,8 @@ def validate(entries, sentences, exercises, require_audio=True):
                 if target.get("pinyin") and seg.get("pinyin") and not seg.get("sandhi") and \
                         compact(target["pinyin"]) != compact(seg["pinyin"]):
                     warnings.append(f"{s['id']}: pinyin de «{seg['text']}» distinto de {seg['ref']}")
+        if "listen" in s and (not isinstance(s["listen"], bool) or not s.get("listen_reason")):
+            errors.append(f"{s['id']}: listen (true | false) decide a mano si oírla es un reto y necesita listen_reason")
         if not s.get("translation"):
             errors.append(f"{s['id']}: falta traducción")
     types = {"read", "listen", "tones", "cloze", "produce", "speak", "components", "contrast", "derive", "nuance",
@@ -3695,7 +3711,8 @@ STAGE_GAP = 15     # posiciones (unas 15 nuevas: un día de estudio) entre un pa
 
 
 def new_card_order(entries, sentences, exercises, pending=None):
-    """Posición de cada ejercicio entre las nuevas. Por nivel del HSK primero (lo básico antes). Dentro de cada nivel,
+    """Posición de cada ejercicio entre las nuevas. Primero lo de clase, de la primera clase a la última y sea del
+    nivel que sea (`class_date`); después, por nivel del HSK (lo básico antes). Dentro de cada bloque,
     siempre mezclado por tipo (YAGO, 2026-10-10: «el mazo siempre debe estar mezclado»): las tarjetas forman cuatro
     colas (oír, decir, leer, otros; `skill_of`) y se van tomando de la que va más retrasada en proporción a su tamaño,
     así que cualquier tramo trae de todas. Cada cola va en su orden: primero lo que se va a decir, luego lo que se va a
@@ -3719,13 +3736,31 @@ def new_card_order(entries, sentences, exercises, pending=None):
         stage = STAGE.get(ex.get("type"), 1)
         return (tier(ex), th + STAGE_LAG * stage, th, n, stage, ex["id"])
 
+    # Lo de clase, antes que nada y sea del nivel que sea (YAGO, review 010): de la primera clase a la última, y
+    # dentro de cada clase, mezclado como el resto. Después, lo demás, nivel a nivel.
+    dates = {ex["id"]: class_date(ex, eby, sby) for ex in exercises}
+    order = []
+    for day in sorted({d for d in dates.values() if d}):
+        order += interleave_streams([ex for ex in exercises if dates[ex["id"]] == day], key)
     by_level = {}
     for ex in exercises:
-        by_level.setdefault(exercise_level(ex, eby, sby, levels), []).append(ex)
-    order = []
+        if not dates[ex["id"]]:
+            by_level.setdefault(exercise_level(ex, eby, sby, levels), []).append(ex)
     for lv in sorted(by_level, key=lambda v: (v is None, v or 0)):
         order += interleave_streams(by_level[lv], key)
     return {ex_id: pos for pos, ex_id in enumerate(order)}
+
+
+CLASS_ORIGINS = {"class", "class-audio"}   # source.origin de lo que viene de clase: diapositivas, deberes, apuntes
+
+
+def class_date(ex, eby, sby):
+    """Fecha de la clase de la que sale una tarjeta (la más antigua de sus objetivos de clase), o None si ninguno
+    viene de clase. Lo de clase sale primero en Anki, en el orden de las clases."""
+    found = [str((it.get("source") or {}).get("date") or (it.get("source") or {}).get("batch", "")[4:14])
+             for t in ex.get("targets", []) if (it := eby.get(t) or sby.get(t))
+             and (it.get("source") or {}).get("origin") in CLASS_ORIGINS]
+    return min(found) if found else None
 
 
 CHAIN = {"read", "listen", "tones", "produce", "derive", "cloze", "speak"}   # los pasos de una entrada, en orden STAGE
@@ -3734,6 +3769,9 @@ STREAM_LOOKAHEAD = 40   # si la siguiente de una cola espera a un paso anterior,
 
 
 PRON_SHARE = 0.1        # la cola de pronunciación sale como si fuera, al menos, una décima parte del nivel
+# Oír, menos a menudo (YAGO, review 010: «no puede haber tantas»): su cola sale como si fuera más pequeña, así que en
+# cada tramo hay menos de oír y lo que sobra queda al final del bloque, sin borrar nada.
+STREAM_WEIGHT = {"oír": 0.6}
 
 
 def stream_of(ex):
@@ -3770,7 +3808,7 @@ def interleave_streams(cards, key, gap=STAGE_GAP):
     size = {k: len(v) for k, v in streams.items()}
     # Peso de cada cola: su tamaño; la de pronunciación, al menos PRON_SHARE del total, para que lo básico de cómo
     # suena salga repartido al principio del nivel y no al final, ni todo junto.
-    weight = {k: max(n, PRON_SHARE * total) if k == "pron" else n for k, n in size.items()}
+    weight = {k: max(n, PRON_SHARE * total) if k == "pron" else n * STREAM_WEIGHT.get(k, 1) for k, n in size.items()}
     last, run = None, 0
     while len(out) < total:
         live = sorted((k for k in streams if streams[k]),
@@ -4109,8 +4147,10 @@ def stats_report(infos, revs, exercises, eby, days, now_ms):
 # día, y de ahí cuántas tarjetas por palabra y en qué mezcla. Valores aquí; el porqué, en goal.md.
 CARDS_PER_ITEM_MAX = 6          # tarjetas que evalúan una palabra (sin contar las de sonido de un hanzi suelto)
 CARDS_CAP_SINCE = "2026-10-09"  # la regla frena lo que entra desde entonces; lo anterior lleva progreso y se queda
-SKILL_TARGETS = {"oír": (1 / 3, None), "decir": (1 / 4, None), "leer": (None, 1 / 4), "otros": (None, 1 / 4)}
+# Oír, menos y más difícil (YAGO, review 010): ahora toca aprender palabras y sus hanzi; las de oír, retos.
+SKILL_TARGETS = {"oír": (1 / 4, None), "decir": (1 / 4, None), "leer": (None, 1 / 3), "otros": (None, 1 / 4)}
 UPCOMING_NEW = 400              # nuevas próximas sobre las que se mide la mezcla: lo que va a estudiar, no el mazo
+STUDY_PACE = 20                 # nuevas que abre al día de verdad (docs/owner.md); el límite de Anki es NEW_PER_DAY
 QUEUE_DAYS_MAX = 21             # días de nuevas de su nivel en cola: por encima, aviso
 BALANCE_DAYS = 14               # periodo de la carga diaria
 
@@ -4158,7 +4198,7 @@ def balance_report(infos, revs, exercises, eby, sby, now_ms, days=BALANCE_DAYS):
     levels = hsk_levels()
     lv_now = current_level(list(eby.values()))
     ms, study_days, fresh, fresh_items, seen_before = 0, set(), 0, set(), set()
-    queue, upcoming = 0, []
+    queue, upcoming, from_class = 0, [], 0
     for c in infos:
         x = xby.get(c.get("fields", {}).get("ExerciseID", {}).get("value"))
         if x is None:
@@ -4175,6 +4215,7 @@ def balance_report(infos, revs, exercises, eby, sby, now_ms, days=BALANCE_DAYS):
             seen_before |= set(items)
         if c.get("type") == 0:
             upcoming.append((c.get("due", 0), x))
+            from_class += class_date(x, eby, sby) is not None
             if lv_now and exercise_level(x, eby, sby, levels) <= lv_now:
                 queue += 1
     nd = max(len(study_days), 1)
@@ -4182,9 +4223,12 @@ def balance_report(infos, revs, exercises, eby, sby, now_ms, days=BALANCE_DAYS):
     lines = [f"Carga, últimos {days} días: {len(study_days)} día(s) de estudio, {round(ms / 60000 / nd)} min por día "
              f"de estudio; {round(fresh / nd)} nuevas y {round(words / nd, 1)} palabras nuevas por día de estudio."]
     warnings = []
-    qdays = round(queue / NEW_PER_DAY)
-    lines.append(f"Cola de nuevas de tu nivel (HSK {lv_now}): {queue}, unos {qdays} días a {NEW_PER_DAY} al día; "
+    qdays = round(queue / STUDY_PACE)
+    lines.append(f"Cola de nuevas de tu nivel (HSK {lv_now}): {queue}, unos {qdays} días a {STUDY_PACE} al día; "
                  f"{len(upcoming)} nuevas en total.")
+    if from_class:
+        lines.append(f"Lo de clase sale primero: {from_class} nuevas, unos {round(from_class / STUDY_PACE)} días a "
+                     f"{STUDY_PACE} al día.")
     if qdays > QUEUE_DAYS_MAX:
         warnings.append(f"La cola de tu nivel son {qdays} días de nuevas (más de {QUEUE_DAYS_MAX}): lo que entra en "
                         f"el mazo va más rápido de lo que se estudia.")

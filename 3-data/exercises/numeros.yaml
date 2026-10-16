@@ -2122,3 +2122,306 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 幺, pinyin: yāo, meaning: uno (al dar teléfonos y números de habitación)}
     comments: []
+  - id: x.listen.ta-ershi-sui-ta-hen-nianqing
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-ershi-sui-ta-hen-nianqing
+    targets: [s.ta-ershi-sui-ta-hen-nianqing]
+    context: [w.ta.he, w.num.er, w.num.shi, w.sui, w.hen, w.nianqing]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tiene veinte años; es muy joven.}
+    comments: []
+  - id: x.produce.ta-ershi-sui-ta-hen-nianqing
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ta-ershi-sui-ta-hen-nianqing
+    targets: [s.ta-ershi-sui-ta-hen-nianqing]
+    context: [w.ta.he, w.num.er, w.num.shi, w.sui, w.hen, w.nianqing]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tiene veinte años; es muy joven.»'}
+    answer: {meaning: Tiene veinte años; es muy joven.}
+    comments: []
+  - id: x.listen.ni-duoda-le
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ni-duoda-le
+    targets: [s.ni-duoda-le]
+    context: [w.ni, w.duoda, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuántos años tienes?'}
+    comments: []
+  - id: x.produce.ni-duoda-le
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ni-duoda-le
+    targets: [s.ni-duoda-le]
+    context: [w.ni, w.duoda, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años tienes?»'}
+    answer: {meaning: '¿Cuántos años tienes?'}
+    comments: []
+  - id: x.listen.ta-duoda-nianji-le
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-duoda-nianji-le
+    targets: [s.ta-duoda-nianji-le]
+    context: [w.ta.he, w.duoda, w.nianji, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuántos años tiene? (de alguien mayor)'}
+    comments: []
+  - id: x.listen.wo-sanshier-sui
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-sanshier-sui
+    targets: [s.wo-sanshier-sui]
+    context: [w.wo, w.num.san, w.num.shi, w.num.er, w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo treinta y dos años.}
+    comments: []
+  - id: x.produce.wo-sanshier-sui
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.wo-sanshier-sui
+    targets: [s.wo-sanshier-sui]
+    context: [w.wo, w.num.san, w.num.shi, w.num.er, w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo treinta y dos años.»'}
+    answer: {meaning: Tengo treinta y dos años.}
+    comments: []
+  - id: x.listen.wo-shi-sui
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-shi-sui
+    targets: [s.wo-shi-sui]
+    context: [w.wo, w.num.shi, w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo diez años.}
+    comments: []
+  - id: x.produce.wo-shi-sui
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.wo-shi-sui
+    targets: [s.wo-shi-sui]
+    context: [w.wo, w.num.shi, w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo diez años.»'}
+    answer: {meaning: Tengo diez años.}
+    comments: []
+  - id: x.listen.ta-nianji-da-le
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-nianji-da-le
+    targets: [s.ta-nianji-da-le]
+    context: [w.ta.he, w.nianji, w.da, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ya es mayor.}
+    comments: []
+  - id: x.produce.ta-nianji-da-le
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ta-nianji-da-le
+    targets: [s.ta-nianji-da-le]
+    context: [w.ta.he, w.nianji, w.da, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ya es mayor.»'}
+    answer: {meaning: Ya es mayor.}
+    comments: []
+  - id: x.listen.wo-chusheng-zai-1980-nian
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-chusheng-zai-1980-nian
+    targets: [s.wo-chusheng-zai-1980-nian]
+    context: [w.wo, w.chusheng, w.zai.at, w.num.yi, w.num.jiu, w.ba, w.ling, w.nian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Nací en 1980.}
+    comments: []
+  - id: x.listen.wo-jinnian-ershi-sui
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-jinnian-ershi-sui
+    targets: [s.wo-jinnian-ershi-sui]
+    context: [w.wo, w.jinnian, w.num.er, w.num.shi, w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo veinte años.}
+    comments: []
+  - id: x.produce.wo-jinnian-ershi-sui
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.wo-jinnian-ershi-sui
+    targets: [s.wo-jinnian-ershi-sui]
+    context: [w.wo, w.jinnian, w.num.er, w.num.shi, w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo veinte años.»'}
+    answer: {meaning: Tengo veinte años.}
+    comments: []
+  - id: x.listen.ta-sanshi-sui-zuoyou
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-sanshi-sui-zuoyou
+    targets: [s.ta-sanshi-sui-zuoyou]
+    context: [w.ta.he, w.num.san, w.num.shi, w.sui, w.zuoyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tiene unos treinta años.}
+    comments: []
+  - id: x.produce.ta-sanshi-sui-zuoyou
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ta-sanshi-sui-zuoyou
+    targets: [s.ta-sanshi-sui-zuoyou]
+    context: [w.ta.he, w.num.san, w.num.shi, w.sui, w.zuoyou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tiene unos treinta años.»'}
+    answer: {meaning: Tiene unos treinta años.}
+    comments: []
+  - id: x.listen.wo-hai-bu-dao-ershiba-sui
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-hai-bu-dao-ershiba-sui
+    targets: [s.wo-hai-bu-dao-ershiba-sui]
+    context: [w.wo, w.hai.still, w.bu, w.dao.reach, w.num.er, w.num.shi, w.ba, w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Todavía no tengo veintiocho años.}
+    comments: []
+  - id: x.produce.wo-hai-bu-dao-ershiba-sui
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.wo-hai-bu-dao-ershiba-sui
+    targets: [s.wo-hai-bu-dao-ershiba-sui]
+    context: [w.wo, w.hai.still, w.bu, w.dao.reach, w.num.er, w.num.shi, w.ba, w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Todavía no tengo veintiocho años.»'}
+    answer: {meaning: Todavía no tengo veintiocho años.}
+    comments: []
+  - id: x.listen.ni-de-pengyou-ershiba-sui-le
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ni-de-pengyou-ershiba-sui-le
+    targets: [s.ni-de-pengyou-ershiba-sui-le]
+    context: [w.ni, w.de, w.pengyou, w.num.er, w.num.shi, w.ba, w.sui, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tu amigo ya tiene veintiocho años.}
+    comments: []
+  - id: x.listen.wo-juede-ta-ershi-sui-zuoyou
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-juede-ta-ershi-sui-zuoyou
+    targets: [s.wo-juede-ta-ershi-sui-zuoyou]
+    context: [w.wo, w.juede, w.ta.she, w.num.er, w.num.shi, w.sui, w.zuoyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Creo que tiene unos veinte años.}
+    comments: []
+  - id: x.produce.wo-juede-ta-ershi-sui-zuoyou
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.wo-juede-ta-ershi-sui-zuoyou
+    targets: [s.wo-juede-ta-ershi-sui-zuoyou]
+    context: [w.wo, w.juede, w.ta.she, w.num.er, w.num.shi, w.sui, w.zuoyou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Creo que tiene unos veinte años.»'}
+    answer: {meaning: Creo que tiene unos veinte años.}
+    comments: []
+  - id: x.listen.ta-ershier-sui
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-ershier-sui
+    targets: [s.ta-ershier-sui]
+    context: [w.ta.he, w.num.er, w.num.shi, w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tiene veintidós años.}
+    comments: []
+  - id: x.listen.ta-baba-wushisan-sui
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-baba-wushisan-sui
+    targets: [s.ta-baba-wushisan-sui]
+    context: [w.ta.he, w.baba, w.num.wu, w.num.shi, w.num.san, w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Su padre tiene cincuenta y tres años.}
+    comments: []
+  - id: x.produce.ta-baba-wushisan-sui
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ta-baba-wushisan-sui
+    targets: [s.ta-baba-wushisan-sui]
+    context: [w.ta.he, w.baba, w.num.wu, w.num.shi, w.num.san, w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Su padre tiene cincuenta y tres años.»'}
+    answer: {meaning: Su padre tiene cincuenta y tres años.}
+    comments: []
+  - id: x.choice.age-child
+    added: '2026-10-16'
+    lang: es
+    type: speak
+    targets: [s.ni-jinnian-ji-sui-le]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. Le preguntas la edad a un niño de unos ocho años.', options: [你多大了？, 你今年几岁了？, 您多大年纪了？]}
+    answer: {choice: b, hanzi: 你今年几岁了？, pinyin: nǐ jīnnián jǐ suì le, meaning: '几岁: a un niño, cuando esperas una cifra pequeña.'}
+    comments: []
+  - id: x.choice.age-adult
+    added: '2026-10-16'
+    lang: es
+    type: speak
+    targets: [s.ni-duoda-le]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. Le preguntas la edad a un compañero de clase.', options: [您多大年纪了？, 你今年几岁了？, 你多大了？]}
+    answer: {choice: c, hanzi: 你多大了？, pinyin: nǐ duō dà le, meaning: '多大: a un adulto de tu edad o más joven.'}
+    comments: []
+  - id: x.choice.age-elder
+    added: '2026-10-16'
+    lang: es
+    type: speak
+    targets: [s.nin-duoda-nianji-le]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. Le preguntas la edad a la abuela de un amigo.', options: [您多大年纪了？, 你多大了？, 你今年几岁了？]}
+    answer: {choice: a, hanzi: 您多大年纪了？, pinyin: nín duō dà niánjì le, meaning: '多大年纪, con 您: a una persona mayor, con respeto.'}
+    comments: []
+  - id: x.cloze.bian.times
+    added: '2026-10-16'
+    lang: es
+    type: cloze
+    sentence: s.qing-zai-shuo-liang-bian
+    gap: w.bian
+    targets: [w.bian]
+    context: [w.qing, w.zai.again, w.shuo, w.liang]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: 请再说两＿。 «Dilo otras dos veces, por favor.»'}
+    answer: {typed: bian4, hanzi: 遍, pinyin: biàn, meaning: '遍 cuenta las veces que se hace algo entero: 说一遍, 再说两遍.'}
+    comments: []

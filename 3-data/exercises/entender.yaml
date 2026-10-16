@@ -282,17 +282,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «No lo entiendo (al oírlo).»'}
     answer: {meaning: No lo entiendo (al oírlo).}
     comments: []
-  - id: x.listen.qing-zai-shuo-yi-bian
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.qing-zai-shuo-yi-bian
-    targets: [s.qing-zai-shuo-yi-bian]
-    context: [w.qing, e.zaishuoyibian]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Puede repetirlo, por favor?'}
-    comments: []
   - id: x.produce.qing-zai-shuo-yi-bian
     added: 2026-10-11
     lang: es
@@ -634,4 +623,15 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «No lo he entendido (al oírlo).»'}
     answer: {meaning: No lo he entendido (al oírlo).}
+    comments: []
+  - id: x.listen.qing-zai-shuo-liang-bian
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.qing-zai-shuo-liang-bian
+    targets: [s.qing-zai-shuo-liang-bian]
+    context: [w.qing, w.zai.again, w.shuo, w.liang, w.bian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Dilo otras dos veces, por favor.'}
     comments: []

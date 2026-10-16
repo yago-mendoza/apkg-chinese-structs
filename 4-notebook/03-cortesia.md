@@ -117,3 +117,4 @@ Cada una contesta a una cosa distinta: a unas gracias, a una disculpa o a un fav
 - ✅🃏 对不起，我来晚了！ · duìbuqǐ wǒ lái wǎn le · ¡Perdón, llego tarde!
 - ✅🃏 你们吃饭了吗？ · nǐmen chīfàn le ma · ¿Ya habéis comido?
 - ✅🃏 对不起，你们吃饭了吗？ · duìbuqǐ nǐmen chīfàn le ma · Perdón, ¿ya habéis empezado a comer?
+- ✅🃏 你说得对。 · nǐ shuō de duì · Tienes razón.

@@ -8,7 +8,7 @@ entries:
     hanzi: 很
     pinyin: hěn
     meaning: {es: 'muy (con adjetivos, a menudo solo enlace)', en: very}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Sin 很, el adjetivo suena a comparación implícita: «yo estoy bien (a diferencia de otros)».', original: Sin hěn suena a comparación tipo ‘yo estoy bien / mejor…’}
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Con un adjetivo como predicado, 很 suele ser un enlace sin énfasis: 我很好 = estoy bien.'}
@@ -20,7 +20,7 @@ entries:
     hanzi: 好
     pinyin: hǎo
     meaning: {es: 'bien, bueno', en: good}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: '女 «mujer» + 子 «niño»: una madre con su hijo, imagen de algo bueno.', original: 女 + 子 (woman + child)}
       - {kind: linguistic, private: false, date: '2026-10-09', text: 'Delante de un adjetivo, 好 es «qué…»: 好冷！ «¡qué frío!», 好贵！ «¡qué caro!». Es el mismo de 好久不见.'}
@@ -31,7 +31,7 @@ entries:
     hanzi: 高
     pinyin: gāo
     meaning: {es: alto, en: tall}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: 'Un edificio alto: el tejado 亠, un piso 口 y, abajo, 冂 con una ventana 口.', original: 'Un edificio alto con su techo 亠, primer piso 口, y piso bajo 冂 con una ventana 口'}
       - {kind: character, private: false, date: '2026-09-27', text: 'La parte de arriba se repite, recortada, en 京 jīng de 北京 y en 亮 liàng «brillante» [HSK 2].'}
@@ -42,7 +42,7 @@ entries:
     hanzi: 矮
     pinyin: ǎi
     meaning: {es: bajo (de estatura), en: short}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '矢 es una flecha, que antes servía de medida: al medir se queda corto, bajo.', original: mido con una flecha a una mujer agachada y da poca altura → bajo.}
       - {kind: linguistic, private: false, date: '2026-09-27', text: 'Para personas y edificios; para longitud o tiempo, 短 duǎn.'}
@@ -53,7 +53,7 @@ entries:
     hanzi: 胖
     pinyin: pàng
     meaning: {es: gordo, en: fat}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'El 月 de la izquierda es 肉 «carne», como en muchas partes del cuerpo; no «luna».'}
       - {kind: character, private: false, date: '2026-09-27', text: '半 bàn «mitad» [HSK 1] le da el sonido: pàng. 月 es 肉 «carne».'}
@@ -65,7 +65,7 @@ entries:
     hanzi: 瘦
     pinyin: shòu
     meaning: {es: delgado, en: slim}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '疒 «enfermedad» + 叟 «anciano»: un anciano enfermo, flaco.', original: cuerpo enfermo de un anciano → flaco}
       - {kind: character, private: false, date: '2026-09-27', text: '叟 sǒu «anciano» da un sonido parecido: shòu. 疒 es la pieza de las enfermedades: una cama con una persona tumbada.'}
@@ -77,7 +77,7 @@ entries:
     pinyin: piàoliang
     meaning: {es: 'guapo, bonito', en: beautiful}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: character, private: false, date: '2026-09-27', text: 漂 se lee piào solo en 漂亮; suelto es piāo «flotar». 票 piào «billete» le da el sonido.}
       - {kind: sound, private: false, date: '2026-09-27', text: '亮 liàng pierde el tono dentro de 漂亮: piàoliang.', original: se dice liàng pero en piao liang pierde el acento}
@@ -90,7 +90,7 @@ entries:
     hanzi: 帅
     pinyin: shuài
     meaning: {es: guapo (sobre todo hombres), en: handsome}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: 'Viene de 元帅 yuánshuài «mariscal» [HSK 7]; hoy se usa sobre todo como «guapo». Por herencia, un mariscal sería el guapo supremo.', original: 'hoy dia mariscalseria como el guapo supremo, por asi decirlo, por ehernecia'}
       - {kind: sound, private: false, date: '2026-10-06', text: 'shuài suena «shuai»; no lo confundas con 水 shuǐ, que suena casi «shuei».'}
@@ -102,7 +102,7 @@ entries:
     pinyin: cōngming
     meaning: {es: 'listo, inteligente', en: clever}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: sound, private: false, date: '2026-09-27', text: El acento cae en cōng; ming va átono y corto., original: cong ming el tonic oes cong no ming}
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '聪 lleva 耳 «oreja»: tener el oído fino. Con 明 «claro»: listo.', original: 聪 cōng = oído fino. 聪明 = oído fino + claridad}
@@ -113,7 +113,7 @@ entries:
     hanzi: 笨
     pinyin: bèn
     meaning: {es: 'torpe, tonto', en: stupid}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     connection: {kind: sound, with: [本], text: '本 běn le da el sonido: 笨 bèn es 竹 «bambú» arriba y 本 abajo.'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '竹 «bambú» sobre 本 «raíz»: una raíz de bambú no sirve para nada, torpe.'}
@@ -124,7 +124,7 @@ entries:
     hanzi: 可爱
     pinyin: kě'ài
     meaning: {es: 'mono, adorable', en: cute}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: Suena como «kawaii» dicho con la boca dormida., original: like kawaii but mouth asleep}
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'El parecido con «kawaii» es solo de sonido, no histórico.'}
@@ -135,7 +135,7 @@ entries:
     hanzi: 幽默
     pinyin: yōumò
     meaning: {es: 'gracioso, con sentido del humor', en: humorous}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: Préstamo fonético del inglés «humour».}
       - {kind: sound, private: false, date: '2026-09-27', text: mò es corto y cae con fuerza., original: 'mò de 幽默 yōumò suena más como “muó” muy corto, pero con tono 4: cae fuerte.'}
@@ -146,7 +146,7 @@ entries:
     hanzi: 白
     pinyin: bái
     meaning: {es: blanco; también un apellido, en: white; also a surname}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
     comments: []
   - id: w.hei
     use: hear
@@ -502,3 +502,33 @@ entries:
       - {ref: w.kuai, cue: '土 a la izquierda: un trozo de tierra'}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments: []
+  - id: w.kanqilai
+    use: say
+    role: content
+    kind: word
+    hanzi: 看起来
+    pinyin: 'kànqǐlai'
+    meaning: {es: 'parecer (por el aspecto)', en: 'to look, to seem'}
+    accept_pinyin_mismatch: 'La profesora y el habla corriente dejan 来 átono en 看起来.'
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-13', text: 'Lo que se ve por fuera: 她看起来很年轻 «parece muy joven». Palabra a palabra: 看 «mirar» + 起来 «al ponerse a»: «al mirarla, resulta…».'}
+  - id: w.renzhen
+    use: hear
+    role: content
+    kind: word
+    hanzi: 认真
+    pinyin: 'rènzhēn'
+    meaning: {es: 'serio, aplicado (que se toma las cosas en serio)', en: 'serious, conscientious'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+    comments: []
+  - id: w.shunli
+    use: hear
+    role: content
+    kind: word
+    hanzi: 顺利
+    pinyin: 'shùnlì'
+    meaning: {es: 'sin problemas, que va bien', en: 'smooth, without problems'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-13', text: 'Se oye mucho como deseo: 一切顺利！ «¡que todo vaya bien!».'}

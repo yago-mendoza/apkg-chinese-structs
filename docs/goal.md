@@ -26,26 +26,34 @@ Cada elemento de los apuntes se juzga contra el «para qué» de arriba:
 
 - **Entra para decir** (`say`): lo que usaría hablando en esas situaciones.
 - **Entra para entender** (`hear` o `read`): lo que oirá o leerá pero no necesita producir (registro formal, carteles, fórmulas escritas).
-- **Espera en el desván**: lo de su investigación propia que es de un nivel superior y está poco conectado, o lo que llega suelto sin frase. No entra aún, pero se guarda con todas sus notas y entra solo cuando llegue algo con lo que conecte (`docs/design.md`, «Desván»). Lo de clase nunca va al desván.
+- **Espera en el desván**: lo de su investigación propia que es de un nivel superior y está poco conectado, o lo que llega suelto sin frase. No entra aún, pero se guarda con todas sus notas y entra solo cuando llegue algo con lo que conecte (`docs/design.md`, «Desván»). Lo de clase nunca va al desván, salvo las palabras que salen solo para practicar sonidos (ver abajo).
 - **Queda fuera**: literario, arcaico, en desuso, lo tradicional que hoy suena anticuado (哪里哪里 ante un elogio: hoy se dice 谢谢), variantes regionales que no son estándar y rarezas sin uso real. Vale lo formal de trabajo y lo coloquial de la calle. Se dice en el log y en el review, con el motivo, por si no está de acuerdo.
 - Lo que viene de sus apuntes se respeta aunque no esté en ninguna lista, siempre que pase el filtro: si lo apuntó, suele ser porque lo necesita.
 - **Lo de clase incluye lo que va dentro de los ejercicios.** El vocabulario de las frases de huecos, los ejemplos de las diapositivas y los deberes cuenta como enseñado en clase, aunque solo salga de pasada, y se clasifica en su nivel del HSK como todo lo demás. Los nombres propios de los ejercicios y el vocabulario del aula (热身, 生词) no entran.
+- **Las palabras de los ejercicios de pinyin** (listas para leer en voz alta, para oír tonos o finales: 篮球, 轮船, 惭愧) se enseñan por cómo suenan, no por lo que significan. Las útiles de HSK 1 y 2, y las muy cotidianas de HSK 3 (啤酒, 香蕉), entran para oír (`hear`), con su significado detrás; las demás esperan en el desván a que salgan en clase con su sentido, y las literarias o de registro escrito quedan fuera.
 
 ## Qué entra y qué sale primero
 
-No se limita lo que entra: YAGO avanza y aprende cosas laterales, y todo lo que pasa el filtro entra en el diccionario, aunque la cola de nuevas de Anki crezca. Una tarjeta que aún no ha visto no le cuesta nada; lo que cuesta tiempo son los repasos, y Anki absorbe al ritmo que permite su tiempo (unas 12 a 15 nuevas al día de media con 20 a 40 minutos). Lo que importa es el orden: dentro de cada nivel salen primero las tarjetas de lo que va a decir (`say`), luego lo que va a oír (`hear`) y al final lo que solo reconoce. Por eso el `use` decide también la prioridad: lo lateral que no va a decir entra como `hear` o `read`, con menos tarjetas, y lo de clase, para decir.
+No se limita lo que entra: YAGO avanza y aprende cosas laterales, y todo lo que pasa el filtro entra en el diccionario, aunque la cola de nuevas de Anki crezca. Una tarjeta que aún no ha visto no le cuesta nada; lo que cuesta tiempo son los repasos, y Anki absorbe al ritmo que permite su tiempo (unas 12 a 15 nuevas al día de media con 20 a 40 minutos). Lo que importa es el orden:
+
+1. **Lo de clase, antes que nada y sea del nivel que sea.** Todo lo que viene de clase (diapositivas, deberes, sus apuntes de clase, lo que dijo la profesora) sale en Anki lo antes posible, de la primera clase a la última: es lo que trabaja con su profesora y lo que necesita para seguirla. Un 猜 de HSK 5 que salió el jueves va antes que un 给 de HSK 1 que aún no ha salido en clase.
+2. **Después, el resto nivel a nivel**, con mucho énfasis en el HSK 1: dentro de cada nivel salen primero las tarjetas de lo que va a decir (`say`), luego lo que va a oír (`hear`) y al final lo que solo reconoce.
+
+Por eso el `use` decide también la prioridad: lo lateral que no va a decir entra como `hear` o `read`, con menos tarjetas, y lo de clase, para decir.
 
 ## Cuánto y en qué proporción
 
 El presupuesto es su tiempo, no el tamaño del mazo: de 20 a 40 minutos al día. De ahí salen las nuevas que puede abrir, y cada tarjeta de más en una palabra es una palabra nueva menos al día. Por eso se cuida la cifra que importa, palabras nuevas al día, con tres reglas que el código mide (los valores, en `anki.py`):
 
 - **Tarjetas por palabra**: la base la fija su `use`; encima, los extras (tonos de una pareja, un matiz, otro contraste) solo con un motivo visto: que la ha confundido, que `stats` muestra que la falla o que sale en clase. Tope: `CARDS_PER_ITEM_MAX`; pasarlo exige escribir el motivo (`accept_cards`).
-- **Mezcla de lo que viene**: en las próximas `UPCOMING_NEW` nuevas, no en el mazo entero (con semanas de cola, el mazo no es lo que estudia), oír al menos un tercio, decir al menos un cuarto, leer como mucho un cuarto y el resto (contrastes, matices, estructuras) como mucho otro cuarto (`SKILL_TARGETS`). Es el pinyin por delante, en números.
+- **Mezcla de lo que viene**: en las próximas `UPCOMING_NEW` nuevas, no en el mazo entero (con semanas de cola, el mazo no es lo que estudia), oír al menos un cuarto, decir al menos un cuarto, leer como mucho un tercio y el resto (contrastes, matices, estructuras) como mucho otro cuarto (`SKILL_TARGETS`). Es el pinyin por delante, en números; ahora toca aprender muchas palabras y sus hanzi, así que oír pesa menos que al principio y sale menos a menudo (`STREAM_WEIGHT`).
 - **Cola de su nivel**: si las nuevas de su nivel pasan de `QUEUE_DAYS_MAX` días, lo que entra va más rápido de lo que estudia; no se frena la entrada (ver arriba), se mira qué sobra o qué baja de `use`.
 
 **Siempre mezclado.** Cualquier tramo de nuevas trae de todo: oír, decir, leer y contrastes, y las frases desde el principio, no en bloques de un solo tipo (YAGO estudia de arriba abajo y un bloque de dictados seguidos cansa y no enseña a decir). Los pasos de una misma palabra (leer, oír, decir) salen separados un día de estudio.
 
 Cada review trae, calculado, «Carga y equilibrio»: minutos al día, nuevas y palabras nuevas al día, días de cola y la mezcla frente al objetivo, con un punto por cada aviso. Las cifras se revisan con datos en la retrospectiva, no a ojo.
+
+**Las de oír, retos.** Una tarjeta de oír tiene que costar: frases que mezclan vocabulario, aunque sean cortas, como las que dicta la profesora al empezar la clase (您贵姓？, 这个人是不是你的朋友？, 他二十二岁。), con números o con algo que se confunde al oído. Las fórmulas hechas que entiende cualquiera (谢谢！不客气。) no tienen tarjeta de oír. Más adelante, cuando toque entender más que aprender palabras nuevas, las de oír crecerán.
 
 ## El pinyin por delante
 
@@ -120,6 +128,9 @@ Los apuntes mezclan lo que da la profesora con lo que YAGO investiga por su cuen
 ## Cómo se le habla: el review
 
 El review empieza por lo imprescindible, «Sine qua non»: lo poco que necesita contestar para que el siguiente lote salga bien, cada punto con su enlace al detalle. Todo lo demás se queda debajo, completo: contestar lo que le interese y buscar a partir de ahí es parte de cómo aprende. Directo y útil, no complaciente.
+
+- **Cada punto, con su contexto**: de dónde viene (qué clase, qué diapositiva, qué apunte suyo, qué tarjeta), qué se hizo y por qué, para entenderlo sin abrir el log.
+- **Una minilección en cada review** («Para entender»): lo que el agente cree que le falta por entender, a partir de sus deberes corregidos, sus fallos en Anki y lo que se dio en clase, explicado en corto y con ejemplos del mazo. Son los ruedines de la profesora: no sustituyen a la clase, la acompañan.
 
 ## El sistema se ajusta
 

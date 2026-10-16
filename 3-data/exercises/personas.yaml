@@ -1130,3 +1130,316 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Es mi compañero de clase.}
     comments: []
+  - id: x.dictation.nianqingren
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.nianqingren]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nian2 qing1 ren2, hanzi: 年轻人, pinyin: niánqīngrén, meaning: joven; los jóvenes}
+    comments: []
+  - id: x.produce.nianqingren
+    added: 2026-10-16
+    lang: es
+    type: produce
+    targets: [w.nianqingren]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «joven; los jóvenes»? Escribe el pinyin.'}
+    answer: {typed: nian2 qing1 ren2, hanzi: 年轻人, pinyin: niánqīngrén, meaning: joven; los jóvenes}
+    comments: []
+  - id: x.read.nianqingren
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.nianqingren]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 年轻人}
+    answer: {hanzi: 年轻人, pinyin: niánqīngrén, meaning: joven; los jóvenes}
+    comments: []
+  - id: x.dictation.renmen
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.renmen]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ren2 men5, hanzi: 人们, pinyin: rénmen, meaning: la gente}
+    comments: []
+  - id: x.read.renmen
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.renmen]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 人们}
+    answer: {hanzi: 人们, pinyin: rénmen, meaning: la gente}
+    comments: []
+  - id: x.tones.renmen
+    added: 2026-10-16
+    lang: es
+    type: tones
+    targets: [w.renmen]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 人们, pinyin: ren men}
+    answer: {typed: '25', hanzi: 人们, pinyin: rénmen, meaning: la gente}
+    comments: []
+  - id: x.dictation.ziji
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.ziji]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zi4 ji3, hanzi: 自己, pinyin: zìjǐ, meaning: 'uno mismo (yo mismo, tú mismo…)'}
+    comments: []
+  - id: x.read.ziji
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.ziji]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 自己}
+    answer: {hanzi: 自己, pinyin: zìjǐ, meaning: 'uno mismo (yo mismo, tú mismo…)'}
+    comments: []
+  - id: x.dictation.nvsheng
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.nvsheng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nü3 sheng1, hanzi: 女生, pinyin: nǚshēng, meaning: chica (sobre todo estudiante)}
+    comments: []
+  - id: x.read.nvsheng
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.nvsheng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 女生}
+    answer: {hanzi: 女生, pinyin: nǚshēng, meaning: chica (sobre todo estudiante)}
+    comments: []
+  - id: x.dictation.shenti
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.shenti]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shen1 ti3, hanzi: 身体, pinyin: shēntǐ, meaning: cuerpo; salud}
+    comments: []
+  - id: x.read.shenti
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.shenti]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 身体}
+    answer: {hanzi: 身体, pinyin: shēntǐ, meaning: cuerpo; salud}
+    comments: []
+  - id: x.dictation.yanjing
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.yanjing]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yan3 jing5, hanzi: 眼睛, pinyin: yǎnjing, meaning: 'ojo, ojos'}
+    comments: []
+  - id: x.read.yanjing
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.yanjing]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 眼睛}
+    answer: {hanzi: 眼睛, pinyin: yǎnjing, meaning: 'ojo, ojos'}
+    comments: []
+  - id: x.tones.yanjing
+    added: 2026-10-16
+    lang: es
+    type: tones
+    targets: [w.yanjing]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 眼睛, pinyin: yan jing}
+    answer: {typed: '35', hanzi: 眼睛, pinyin: yǎnjing, meaning: 'ojo, ojos'}
+    comments: []
+  - id: x.dictation.toufa
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.toufa]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: tou2 fa5, hanzi: 头发, pinyin: tóufa, meaning: pelo (de la cabeza)}
+    comments: []
+  - id: x.read.toufa
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.toufa]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 头发}
+    answer: {hanzi: 头发, pinyin: tóufa, meaning: pelo (de la cabeza)}
+    comments: []
+  - id: x.tones.toufa
+    added: 2026-10-16
+    lang: es
+    type: tones
+    targets: [w.toufa]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 头发, pinyin: tou fa}
+    answer: {typed: '25', hanzi: 头发, pinyin: tóufa, meaning: pelo (de la cabeza)}
+    comments: []
+  - id: x.listen.tamen-dou-shi-nianqingren
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.tamen-dou-shi-nianqingren
+    targets: [s.tamen-dou-shi-nianqingren]
+    context: [w.tamen, w.dou, w.shi, w.nianqingren]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Todos ellos son jóvenes.}
+    comments: []
+  - id: x.produce.tamen-dou-shi-nianqingren
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.tamen-dou-shi-nianqingren
+    targets: [s.tamen-dou-shi-nianqingren]
+    context: [w.tamen, w.dou, w.shi, w.nianqingren]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Todos ellos son jóvenes.»'}
+    answer: {meaning: Todos ellos son jóvenes.}
+    comments: []
+  - id: x.listen.zhege-shi-ni-de-pengyou-ma
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.zhege-shi-ni-de-pengyou-ma
+    targets: [s.zhege-shi-ni-de-pengyou-ma]
+    context: [w.zhe, w.ge, w.shi, w.ni, w.de, w.pengyou, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Este es tu amigo?'}
+    comments: []
+  - id: x.listen.zhege-ren-shi-bu-shi-ni-de-pengyou
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.zhege-ren-shi-bu-shi-ni-de-pengyou
+    targets: [s.zhege-ren-shi-bu-shi-ni-de-pengyou]
+    context: [w.zhe, w.ge, w.ren, w.shi, w.bu, w.ni, w.de, w.pengyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Esta persona es amiga tuya o no?'}
+    comments: []
+  - id: x.listen.na-ge-ren-shi-ni-de-pengyou
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.na-ge-ren-shi-ni-de-pengyou
+    targets: [s.na-ge-ren-shi-ni-de-pengyou]
+    context: [w.na.that, w.ge, w.ren, w.shi, w.ni, w.de, w.pengyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Esa persona es tu amiga.}
+    comments: []
+  - id: x.charsound.yi-3
+    added: 2026-10-16
+    lang: es
+    type: charsound
+    targets: [w.yisheng, w.yiyuan]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 医}
+    answer: {typed: yi1, hanzi: 医, pinyin: yī, meaning: 'Sale en 医生 yīshēng «médico, médica», 医院 yīyuàn «hospital».'}
+    comments: []
+  - id: x.charsound.fa
+    added: 2026-10-16
+    lang: es
+    type: charsound
+    targets: [w.toufa, w.shafa]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 发}
+    answer: {typed: fa1, hanzi: 发, pinyin: fā, meaning: 'Sale en 头发 tóufa «pelo (de la cabeza)», 沙发 shāfā «sofá».'}
+    comments: []
+  - id: x.charsound.tong
+    added: 2026-10-16
+    lang: es
+    type: charsound
+    targets: [w.tongxue, w.tongshi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 同}
+    answer: {typed: tong2, hanzi: 同, pinyin: tóng, meaning: 'Sale en 同学 tóngxué «compañero de clase», 同事 tóngshì «compañero
+        de trabajo».'}
+    comments: []
+  - id: x.charsound.zi-2
+    added: 2026-10-16
+    lang: es
+    type: charsound
+    targets: [w.ziji, w.laizi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 自}
+    answer: {typed: zi4, hanzi: 自, pinyin: zì, meaning: 'Sale en 自己 zìjǐ «uno mismo (yo mismo, tú mismo…)», 来自 láizì «venir
+        de, ser de».'}
+    comments: []
+  - id: x.charsound.qing
+    added: 2026-10-16
+    lang: es
+    type: charsound
+    targets: [w.nianqingren, w.nianqing]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 轻}
+    answer: {typed: qing1, hanzi: 轻, pinyin: qīng, meaning: 'Sale en 年轻人 niánqīngrén «joven; los jóvenes», 年轻 niánqīng «joven».'}
+    comments: []
+  - id: x.dictation.lian
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.lian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lian3, hanzi: 脸, pinyin: liǎn, meaning: cara}
+    comments: []
+  - id: x.read.lian
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.lian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 脸}
+    answer: {hanzi: 脸, pinyin: liǎn, meaning: cara}
+    comments: []
+  - id: x.dictation.jiao.foot
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.jiao.foot]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jiao3, hanzi: 脚, pinyin: jiǎo, meaning: pie}
+    comments: []
+  - id: x.read.jiao.foot
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.jiao.foot]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 脚}
+    answer: {hanzi: 脚, pinyin: jiǎo, meaning: pie}
+    comments: []
+  - id: x.contrast.jiao.foot
+    added: 2026-10-16
+    lang: es
+    type: contrast
+    group: g.jiao-jiao
+    targets: [w.jiao.foot]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 脚, pinyin: jiǎo, meaning: pie}
+    comments: []

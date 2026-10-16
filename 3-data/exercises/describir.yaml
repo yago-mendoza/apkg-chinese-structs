@@ -2067,3 +2067,229 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 快, pinyin: kuài, meaning: rápido; pronto}
     comments: []
+  - id: x.dictation.kanqilai
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.kanqilai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kan4 qi3 lai5, hanzi: 看起来, pinyin: kànqǐlai, meaning: parecer (por el aspecto)}
+    comments: []
+  - id: x.produce.kanqilai
+    added: 2026-10-16
+    lang: es
+    type: produce
+    targets: [w.kanqilai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «parecer (por el aspecto)»? Escribe el pinyin.'}
+    answer: {typed: kan4 qi3 lai5, hanzi: 看起来, pinyin: kànqǐlai, meaning: parecer (por el aspecto)}
+    comments: []
+  - id: x.read.kanqilai
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.kanqilai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 看起来}
+    answer: {hanzi: 看起来, pinyin: kànqǐlai, meaning: parecer (por el aspecto)}
+    comments: []
+  - id: x.tones.kanqilai
+    added: 2026-10-16
+    lang: es
+    type: tones
+    targets: [w.kanqilai]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 看起来, pinyin: kan qi lai}
+    answer: {typed: '435', hanzi: 看起来, pinyin: kànqǐlai, meaning: parecer (por el aspecto)}
+    comments: []
+  - id: x.dictation.renzhen
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.renzhen]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ren4 zhen1, hanzi: 认真, pinyin: rènzhēn, meaning: 'serio, aplicado (que se toma las cosas en serio)'}
+    comments: []
+  - id: x.read.renzhen
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.renzhen]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 认真}
+    answer: {hanzi: 认真, pinyin: rènzhēn, meaning: 'serio, aplicado (que se toma las cosas en serio)'}
+    comments: []
+  - id: x.dictation.shunli
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.shunli]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shun4 li4, hanzi: 顺利, pinyin: shùnlì, meaning: 'sin problemas, que va bien'}
+    comments: []
+  - id: x.read.shunli
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.shunli]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 顺利}
+    answer: {hanzi: 顺利, pinyin: shùnlì, meaning: 'sin problemas, que va bien'}
+    comments: []
+  - id: x.listen.ta-kanqilai-hen-nianqing
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-kanqilai-hen-nianqing
+    targets: [s.ta-kanqilai-hen-nianqing]
+    context: [w.ta.she, w.kanqilai, w.hen, w.nianqing]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Parece muy joven.}
+    comments: []
+  - id: x.produce.ta-kanqilai-hen-nianqing
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ta-kanqilai-hen-nianqing
+    targets: [s.ta-kanqilai-hen-nianqing]
+    context: [w.ta.she, w.kanqilai, w.hen, w.nianqing]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Parece muy joven.»'}
+    answer: {meaning: Parece muy joven.}
+    comments: []
+  - id: x.listen.ta-hen-piaoliang-ni-juede-ne
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-hen-piaoliang-ni-juede-ne
+    targets: [s.ta-hen-piaoliang-ni-juede-ne]
+    context: [w.ta.she, w.hen, w.piaoliang, w.ni, w.juede, w.ne]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Es muy guapa, ¿no te parece?'}
+    comments: []
+  - id: x.produce.ta-hen-piaoliang-ni-juede-ne
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ta-hen-piaoliang-ni-juede-ne
+    targets: [s.ta-hen-piaoliang-ni-juede-ne]
+    context: [w.ta.she, w.hen, w.piaoliang, w.ni, w.juede, w.ne]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Es muy guapa, ¿no te parece?»'}
+    answer: {meaning: 'Es muy guapa, ¿no te parece?'}
+    comments: []
+  - id: x.listen.dlg-yifu-zhen-haokan
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.dlg-yifu-zhen-haokan
+    targets: [s.dlg-yifu-zhen-haokan]
+    context: [w.zhe, w.jian.cl, w.yifu, w.zhen, w.haokan, w.ni, w.shuo, w.de.complement, w.dui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: —¡Qué bonita es esta prenda! —Tienes razón.}
+    comments: []
+  - id: x.listen.wo-juede-zhe-ben-shu-zhen-youqu
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-juede-zhe-ben-shu-zhen-youqu
+    targets: [s.wo-juede-zhe-ben-shu-zhen-youqu]
+    context: [w.wo, w.juede, w.zhe, w.ben.book, w.shu, w.zhen, w.youqu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Este libro me parece muy interesante.}
+    comments: []
+  - id: x.produce.wo-juede-zhe-ben-shu-zhen-youqu
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.wo-juede-zhe-ben-shu-zhen-youqu
+    targets: [s.wo-juede-zhe-ben-shu-zhen-youqu]
+    context: [w.wo, w.juede, w.zhe, w.ben.book, w.shu, w.zhen, w.youqu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Este libro me parece muy interesante.»'}
+    answer: {meaning: Este libro me parece muy interesante.}
+    comments: []
+  - id: x.listen.ta-hen-piaoliang-dajia-dou-xihuan-ta
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-hen-piaoliang-dajia-dou-xihuan-ta
+    targets: [s.ta-hen-piaoliang-dajia-dou-xihuan-ta]
+    context: [w.ta.she, w.hen, w.piaoliang, w.dajia, w.dou, w.xihuan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es muy guapa y cae bien a todos.}
+    comments: []
+  - id: x.listen.ta-hen-gao-xihuan-da-lanqiu
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-hen-gao-xihuan-da-lanqiu
+    targets: [s.ta-hen-gao-xihuan-da-lanqiu]
+    context: [w.ta.he, w.hen, w.gao, w.xihuan, w.da.play, w.lanqiu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es alto y le gusta jugar al baloncesto.}
+    comments: []
+  - id: x.listen.ta-hen-congming-baba-mama-dou-xihuan
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-hen-congming-baba-mama-dou-xihuan
+    targets: [s.ta-hen-congming-baba-mama-dou-xihuan]
+    context: [w.ta.she, w.hen, w.congming, w.baba, w.he.and, w.mama, w.dou, w.xihuan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es muy lista; su padre y su madre la adoran.}
+    comments: []
+  - id: x.listen.ta-hen-shuai-nvsheng-dou-xihuan
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-hen-shuai-nvsheng-dou-xihuan
+    targets: [s.ta-hen-shuai-nvsheng-dou-xihuan]
+    context: [w.ta.he, w.hen, w.shuai, w.nvsheng, w.dou, w.xihuan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es muy guapo; les gusta a todas las chicas.}
+    comments: []
+  - id: x.listen.ta-hen-congming
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-hen-congming
+    targets: [s.ta-hen-congming]
+    context: [w.ta.he, w.hen, w.congming]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es muy listo.}
+    comments: []
+  - id: x.listen.tamen-dou-hen-ben
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.tamen-dou-hen-ben
+    targets: [s.tamen-dou-hen-ben]
+    context: [w.tamen, w.dou, w.hen, w.ben]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Son todos tontos.}
+    comments: []
+  - id: x.compose.libreria-opinar
+    added: '2026-10-16'
+    lang: es
+    type: compose
+    targets: [s.wo-juede-zhe-ben-shu-zhen-youqu, s.zhe-ben-shu-duoshao-qian, s.zhe-ben-shu-ershi-kuai-zuoyou]
+    words: [w.juede, w.zhen, w.youqu, w.ben.book, w.duoshao, w.zuoyou]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. En una librería, una amiga te enseña un libro que quiere regalar a su hermano y te pregunta qué te parece. Tú también miras el precio.'}
+    answer: {meaning: '这本书: 本 es el clasificador de los libros. 真 + adjetivo exclama.'}
+    comments: []

@@ -1,0 +1,111 @@
+# Diccionario · Tiempo libre y deporte. Esquema: 3-data/README.md
+
+entries:
+  - id: w.zuqiu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 足球
+    pinyin: zúqiú
+    meaning: {es: fútbol, en: football}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 'Calco: 足 «pie» + 球 «pelota».'}
+  - id: w.lanqiu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 篮球
+    pinyin: lánqiú
+    meaning: {es: baloncesto, en: basketball}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments: []
+  - id: w.da.play
+    use: hear
+    role: content
+    kind: word
+    hanzi: 打
+    pinyin: dǎ
+    meaning: {es: jugar (a deportes de pelota); golpear, en: to play (ball games); to hit}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-27', text: '打 + deporte de pelota: 打篮球 «jugar al baloncesto». Lleva 扌 «mano».'}
+  - id: w.dianying
+    use: hear
+    role: content
+    kind: word
+    hanzi: 电影
+    pinyin: 'diànyǐng'
+    meaning: {es: 'película', en: 'film'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '电 «electricidad» + 影 «sombra, imagen»: sombras eléctricas. El 电 de 电话 y 电脑.'}
+  - id: w.yinyue
+    use: hear
+    role: content
+    kind: word
+    hanzi: 音乐
+    pinyin: 'yīnyuè'
+    meaning: {es: 'música', en: 'music'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: w.pashan
+    use: say
+    role: content
+    kind: word
+    hanzi: 爬山
+    pinyin: 'páshān'
+    meaning: {es: 'subir a la montaña, hacer senderismo', en: 'to go hiking'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 爬 «trepar» + 山 «montaña».'}
+      - {kind: character, private: false, date: '2026-10-08', text: '巴 bā da el sonido a 爬 pá, a 爸 bà, a 吧 ba y a 芭 bā; en 爬, 爪 «garra» da el sentido: trepar con las manos.'}
+  - id: w.paobu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 跑步
+    pinyin: 'pǎobù'
+    meaning: {es: 'correr (hacer deporte)', en: 'to run, to jog'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 跑 «correr» + 步 «paso».'}
+  - id: w.tiaowu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 跳舞
+    pinyin: 'tiàowǔ'
+    meaning: {es: 'bailar', en: 'to dance'}
+    source: {origin: attic, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01', rescued: 008-2026-10-08-pedir-ayuda-lugares-y-finales}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Palabra a palabra: 跳 «saltar» + 舞 «danza».'}
+  - id: w.jita
+    use: hear
+    role: content
+    kind: word
+    hanzi: 吉他
+    pinyin: 'jítā'
+    meaning: {es: 'guitarra', en: 'guitar'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Préstamo por el sonido del inglés guitar, como 咖啡 de coffee.'}
+  - id: w.balei
+    use: hear
+    role: content
+    kind: word
+    hanzi: 芭蕾
+    pinyin: 'bālěi'
+    meaning: {es: 'ballet', en: 'ballet'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Préstamo por el sonido del francés ballet.'}
+  - id: w.youyong
+    use: hear
+    role: content
+    kind: word
+    hanzi: 游泳
+    pinyin: 'yóuyǒng'
+    meaning: {es: 'nadar', en: 'to swim'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+    comments: []

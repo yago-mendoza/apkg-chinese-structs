@@ -10,7 +10,7 @@ entries:
     meaning: {es: por la mañana (antes de mediodía), en: morning; a.m.}
     standalone: true
     register: neutral
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Toda la mañana, hasta el mediodía: 上午十一点 «las once de la mañana». La primera hora es 早上. En catalán: 上午, el matí; 早上, la matinada.'}
   - id: w.zhongwu
@@ -22,7 +22,7 @@ entries:
     meaning: {es: mediodía, en: noon}
     standalone: true
     register: neutral
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.xiawu
     use: say
@@ -33,7 +33,7 @@ entries:
     meaning: {es: por la tarde, en: afternoon; p.m.}
     standalone: true
     register: neutral
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Más o menos de la una a las seis: 下午五点半 «las cinco y media de la tarde».'}
   - id: g.wu-day-parts
@@ -46,7 +46,7 @@ entries:
       - {ref: w.shangwu, cue: 上 antes del mediodía}
       - {ref: w.zhongwu, cue: 中 en medio}
       - {ref: w.xiawu, cue: 下 después del mediodía}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: g.day-parts
     kind: group
@@ -58,7 +58,7 @@ entries:
       - {ref: w.zhongwu, cue: 中 «en medio» + 午}
       - {ref: w.xiawu, cue: '下 «abajo, después» + 午'}
       - {ref: w.wanshang, cue: '晚 «tarde, noche»; sin 午'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments: []
   - id: w.mingtian
     use: say
@@ -67,7 +67,7 @@ entries:
     hanzi: 明天
     pinyin: míngtiān
     meaning: {es: mañana (el día), en: tomorrow}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.jian
     use: hear
@@ -76,7 +76,7 @@ entries:
     hanzi: 见
     pinyin: jiàn
     meaning: {es: ver; verse, en: to see; to meet}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: 'Un ojo 目 sobre unas piernas 儿: alguien que ve. La forma tradicional, 見, lo muestra mejor.', original: 目 + 儿 → 见 = see}
   - id: w.wanshang
@@ -88,7 +88,7 @@ entries:
     meaning: {es: por la noche, en: evening}
     accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar; los diccionarios dan el tono de cita
     relations: [w.xiawu]
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Desde las seis, más o menos: 晚上八点 «las ocho de la tarde». Al llegar se saluda con 晚上好; al irse a dormir, 晚安.'}
   - id: w.wan
@@ -483,4 +483,32 @@ entries:
       - {ref: w.dian, cue: 'cae; con techo 广: un local'}
       - {ref: w.dian.oclock, cue: baja y sube; con fuego 灬 debajo}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []
+  - id: w.qunian
+    use: say
+    role: content
+    kind: word
+    hanzi: 去年
+    pinyin: 'qùnián'
+    meaning: {es: 'el año pasado', en: 'last year'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-13', text: '去年, 今年, 明年: el año pasado, este y el que viene. Como 昨天, 今天, 明天 con los días, pero el pasado es 去 «irse»: el año que se fue.'}
+  - id: w.yiqian
+    use: hear
+    role: content
+    kind: word
+    hanzi: 以前
+    pinyin: 'yǐqián'
+    meaning: {es: 'antes; hace tiempo', en: 'before; in the past'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+    comments: []
+  - id: w.yihou
+    use: hear
+    role: content
+    kind: word
+    hanzi: 以后
+    pinyin: 'yǐhòu'
+    meaning: {es: 'después; en el futuro', en: 'after; in the future'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
     comments: []

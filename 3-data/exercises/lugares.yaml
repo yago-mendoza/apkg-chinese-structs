@@ -1082,3 +1082,43 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Me bajo aquí.}
     comments: []
+  - id: x.dictation.yiyuan
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.yiyuan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi1 yuan4, hanzi: 医院, pinyin: yīyuàn, meaning: hospital}
+    comments: []
+  - id: x.read.yiyuan
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.yiyuan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 医院}
+    answer: {hanzi: 医院, pinyin: yīyuàn, meaning: hospital}
+    comments: []
+  - id: x.listen.wo-de-shu-zai-nali
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-de-shu-zai-nali
+    targets: [s.wo-de-shu-zai-nali]
+    context: [w.wo, w.de, w.shu, w.zai.at, w.nali]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Dónde está mi libro?'}
+    comments: []
+  - id: x.produce.wo-de-shu-zai-nali
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.wo-de-shu-zai-nali
+    targets: [s.wo-de-shu-zai-nali]
+    context: [w.wo, w.de, w.shu, w.zai.at, w.nali]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde está mi libro?»'}
+    answer: {meaning: '¿Dónde está mi libro?'}
+    comments: []

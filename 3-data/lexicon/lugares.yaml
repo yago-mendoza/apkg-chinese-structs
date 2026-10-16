@@ -18,7 +18,7 @@ entries:
     hanzi: 火车
     pinyin: huǒchē
     meaning: {es: tren, en: train}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: '火 «fuego» + 车 «vehículo»: el primero especifica el segundo.'}
   - id: w.rukou
@@ -29,7 +29,7 @@ entries:
     hanzi: 入口
     pinyin: rùkǒu
     meaning: {es: entrada, en: entrance}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments: []
   - id: w.feiji
     use: hear
@@ -299,3 +299,13 @@ entries:
       - {ref: w.huiqu, cue: 'lejos de quien habla: 我要回去了'}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments: []
+  - id: w.yiyuan
+    use: hear
+    role: content
+    kind: word
+    hanzi: 医院
+    pinyin: 'yīyuàn'
+    meaning: {es: 'hospital', en: 'hospital'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-09-22', date: '2026-09-22'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-09-22', text: '医 «medicina» + 院 «patio, recinto»; el mismo 医 de 医生.'}

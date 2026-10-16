@@ -208,3 +208,17 @@ Se parecen al oído; el tono los separa.
 - ✅🃏 三点五，零点八，十二点三。 · sān diǎn wǔ líng diǎn bā shí èr diǎn sān · 3,5; 0,8; 12,3.
 - ✅🃏 一九八八年，二零二六年，二零零八年。 · yī jiǔ bā bā nián èr líng èr liù nián èr líng líng bā nián · 1988, 2026, 2008.
 - ✅🃏 你明天能来吗？ · nǐ míngtiān néng lái ma · ¿Puedes venir mañana?
+- ✅🃏 他二十岁，他很年轻。 · tā èr shí suì tā hěn niánqīng · Tiene veinte años; es muy joven.
+- ✅🃏 你多大了？ · nǐ duō dà le · ¿Cuántos años tienes?
+- ✅🃏 他多大年纪了？ · tā duō dà niánjì le · ¿Cuántos años tiene? (de alguien mayor)
+- ✅🃏 我三十二岁。 · wǒ sān shí èr suì · Tengo treinta y dos años.
+- ✅🃏 我十岁。 · wǒ shí suì · Tengo diez años.
+- ✅🃏 他年纪大了。 · tā niánjì dà le · Ya es mayor.
+- ✅🃏 我出生在一九八零年。 · wǒ chūshēng zài yī jiǔ bā líng nián · Nací en 1980.
+- ✅🃏 我今年二十岁。 · wǒ jīnnián èr shí suì · Tengo veinte años.
+- ✅🃏 他三十岁左右。 · tā sān shí suì zuǒyòu · Tiene unos treinta años.
+- ✅🃏 我还不到二十八岁。 · wǒ hái bú dào èr shí bā suì · Todavía no tengo veintiocho años.
+- ✅🃏 你的朋友二十八岁了。 · nǐ de péngyou èr shí bā suì le · Tu amigo ya tiene veintiocho años.
+- ✅🃏 我觉得她二十岁左右。 · wǒ juéde tā èr shí suì zuǒyòu · Creo que tiene unos veinte años.
+- ✅🃏 他二十二岁。 · tā èr shí èr suì · Tiene veintidós años.
+- ✅🃏 他爸爸五十三岁。 · tā bàba wǔ shí sān suì · Su padre tiene cincuenta y tres años.

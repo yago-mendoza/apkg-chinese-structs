@@ -116,6 +116,13 @@ Una pieza estrecha a la izquierda y otra que parece un conejito de perfil a la d
 - 百 bǎi · 白 con una raya larga encima
 - 目 mù · más alto y estrecho: dos rayas dentro
 
+## 知 (知道) y 医 (医生)
+
+Los dos llevan 矢 «flecha»; los separa dónde va la flecha.
+
+- 知道 zhīdao · 知: la flecha a la izquierda y 口 a la derecha
+- 医生 yīshēng · 医: la flecha dentro de una caja abierta por la derecha
+
 ## Frases
 
 - ✅🃏 我写汉字。 · wǒ xiě hànzì · Escribo caracteres chinos.

@@ -9,7 +9,7 @@ sentences:
       - {text: 冷, ref: w.leng, pinyin: lěng}
       - {text: 。}
     translation: {es: Hace mucho frío., en: It's cold.}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.tianqi-bu-leng
     use: say
     segments:
@@ -18,7 +18,7 @@ sentences:
       - {text: 冷, ref: w.leng, pinyin: lěng}
       - {text: 。}
     translation: {es: No hace frío., en: It isn't cold.}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.tianqi-leng-ma
     use: say
     segments:
@@ -27,7 +27,7 @@ sentences:
       - {text: 吗, ref: w.ma, pinyin: ma}
       - {text: ？}
     translation: {es: '¿Hace frío?', en: 'Is it cold?'}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.beijing-hen-re
     use: say
     segments:
@@ -36,7 +36,7 @@ sentences:
       - {text: 热, ref: w.re, pinyin: rè}
       - {text: 。}
     translation: {es: En Pekín hace mucho calor., en: It's hot in Beijing.}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.xiayu-le
     use: hear
     segments:
@@ -109,3 +109,14 @@ sentences:
       - {text: 。}
     translation: {es: Hoy la luna brilla mucho., en: The moon is very bright tonight.}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.ni-juede-jintian-re-ma
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 热, ref: w.re, pinyin: 'rè'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Te parece que hoy hace calor?', en: 'Do you think it''s hot today?'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}

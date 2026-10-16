@@ -2021,3 +2021,121 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 前, pinyin: qián, meaning: antes; hace (两天前 = hace dos días)}
     comments: []
+  - id: x.dictation.qunian
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.qunian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: qu4 nian2, hanzi: 去年, pinyin: qùnián, meaning: el año pasado}
+    comments: []
+  - id: x.produce.qunian
+    added: 2026-10-16
+    lang: es
+    type: produce
+    targets: [w.qunian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «el año pasado»? Escribe el pinyin.'}
+    answer: {typed: qu4 nian2, hanzi: 去年, pinyin: qùnián, meaning: el año pasado}
+    comments: []
+  - id: x.read.qunian
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.qunian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 去年}
+    answer: {hanzi: 去年, pinyin: qùnián, meaning: el año pasado}
+    comments: []
+  - id: x.dictation.yiqian
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.yiqian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi3 qian2, hanzi: 以前, pinyin: yǐqián, meaning: antes; hace tiempo}
+    comments: []
+  - id: x.read.yiqian
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.yiqian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 以前}
+    answer: {hanzi: 以前, pinyin: yǐqián, meaning: antes; hace tiempo}
+    comments: []
+  - id: x.dictation.yihou
+    added: 2026-10-16
+    lang: es
+    type: listen
+    targets: [w.yihou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi3 hou4, hanzi: 以后, pinyin: yǐhòu, meaning: después; en el futuro}
+    comments: []
+  - id: x.read.yihou
+    added: 2026-10-16
+    lang: es
+    type: read
+    targets: [w.yihou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 以后}
+    answer: {hanzi: 以后, pinyin: yǐhòu, meaning: después; en el futuro}
+    comments: []
+  - id: x.listen.qunian-wo-ershiwu-sui
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.qunian-wo-ershiwu-sui
+    targets: [s.qunian-wo-ershiwu-sui]
+    context: [w.qunian, w.wo, w.num.er, w.num.shi, w.num.wu, w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: El año pasado tenía veinticinco años.}
+    comments: []
+  - id: x.produce.qunian-wo-ershiwu-sui
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.qunian-wo-ershiwu-sui
+    targets: [s.qunian-wo-ershiwu-sui]
+    context: [w.qunian, w.wo, w.num.er, w.num.shi, w.num.wu, w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «El año pasado tenía veinticinco años.»'}
+    answer: {meaning: El año pasado tenía veinticinco años.}
+    comments: []
+  - id: x.listen.shi-dian-zuoyou
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.shi-dian-zuoyou
+    targets: [s.shi-dian-zuoyou]
+    context: [w.num.shi, w.dian.oclock, w.zuoyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Sobre las diez.}
+    comments: []
+  - id: x.produce.shi-dian-zuoyou
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.shi-dian-zuoyou
+    targets: [s.shi-dian-zuoyou]
+    context: [w.num.shi, w.dian.oclock, w.zuoyou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Sobre las diez.»'}
+    answer: {meaning: Sobre las diez.}
+    comments: []
+  - id: x.listen.drill-times-zuoyou
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.drill-times-zuoyou
+    targets: [s.drill-times-zuoyou]
+    context: [w.num.jiu, w.dian.oclock, w.num.wu, w.num.shi, w.fen.minute, w.ling, w.xiawu, w.ba]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Las diez menos cinco, las diez y cinco, las cinco y ocho de la tarde.'}
+    comments: []

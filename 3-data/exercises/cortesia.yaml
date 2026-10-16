@@ -47,17 +47,6 @@ exercises:
     reveal: [s.haode-xiexie]
     lang: es
     comments: []
-  - id: x.listen.haode-xiexie
-    added: 2026-09-25
-    type: listen
-    sentence: s.haode-xiexie
-    targets: [s.haode-xiexie]
-    context: [e.haode, e.xiexie]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Vale, ¡gracias!'}
-    lang: es
-    comments: []
   - id: x.read.xiexie
     added: 2026-09-26
     type: read
@@ -327,17 +316,6 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: 'Tome un café, por favor.'}
     comments: []
-  - id: x.listen.en-xiexie
-    added: 2026-09-29
-    lang: es
-    type: listen
-    sentence: s.en-xiexie
-    targets: [s.en-xiexie]
-    context: [w.en, e.xiexie]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Sí, gracias.'}
-    comments: []
   - id: x.produce.en-xiexie
     added: 2026-09-29
     lang: es
@@ -594,17 +572,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 帮助}
     answer: {hanzi: 帮助, pinyin: bāngzhù, meaning: ayudar; ayuda}
     comments: []
-  - id: x.listen.duibuqi-meiguanxi
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.duibuqi-meiguanxi
-    targets: [s.duibuqi-meiguanxi]
-    context: [w.duibuqi, e.meiguanxi]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: —¡Perdón! —No pasa nada.}
-    comments: []
   - id: x.produce.duibuqi-meiguanxi
     added: 2026-10-01
     lang: es
@@ -615,17 +582,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Alguien te pide perdón y le quitas importancia. Di los dos turnos en voz alta: «¡Perdón! —No pasa nada.»'}
     answer: {meaning: —¡Perdón! —No pasa nada.}
-    comments: []
-  - id: x.listen.xiexie-bukeqi
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.xiexie-bukeqi
-    targets: [s.xiexie-bukeqi]
-    context: [e.xiexie, e.bukeqi]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: —¡Gracias! —De nada.}
     comments: []
   - id: x.produce.xiexie-bukeqi
     added: 2026-10-01
@@ -1280,17 +1236,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Ya lo entiendo.»'}
     answer: {meaning: Ya lo entiendo.}
     comments: []
-  - id: x.listen.xiaoxin
-    added: 2026-10-06
-    lang: es
-    type: listen
-    sentence: s.xiaoxin
-    targets: [s.xiaoxin]
-    context: [w.xiaoxin]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: ¡Cuidado!}
-    comments: []
   - id: x.produce.xiaoxin-2
     added: 2026-10-06
     lang: es
@@ -1866,17 +1811,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 稍等}
     answer: {hanzi: 稍等, pinyin: shāo děng, meaning: un momento (espere)}
     comments: []
-  - id: x.listen.qing-shaodeng
-    added: 2026-10-10
-    lang: es
-    type: listen
-    sentence: s.qing-shaodeng
-    targets: [s.qing-shaodeng]
-    context: [w.qing, e.shaodeng]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Espere un momento, por favor.'}
-    comments: []
   - id: x.produce.qing-shaodeng
     added: 2026-10-10
     lang: es
@@ -2109,4 +2043,36 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Construye. Antes de empezar una reunión, el proyector no se enciende y todos te miran. Di algo con estas palabras o con otras que sepas.'}
     answer: {meaning: Con 一下 lo que pides suena breve y amable.}
+    comments: []
+  - id: x.listen.ni-shuo-de-dui
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ni-shuo-de-dui
+    targets: [s.ni-shuo-de-dui]
+    context: [w.ni, w.shuo, w.de.complement, w.dui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tienes razón.}
+    comments: []
+  - id: x.produce.ni-shuo-de-dui
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ni-shuo-de-dui
+    targets: [s.ni-shuo-de-dui]
+    context: [w.ni, w.shuo, w.de.complement, w.dui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tienes razón.»'}
+    answer: {meaning: Tienes razón.}
+    comments: []
+  - id: x.contrast.zhidao
+    added: 2026-10-16
+    lang: es
+    type: contrast
+    group: g.zhi-yi
+    targets: [w.zhidao]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es zhīdao, «saber»?'}
+    answer: {hanzi: 知道, pinyin: zhīdao, meaning: saber}
     comments: []

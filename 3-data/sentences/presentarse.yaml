@@ -69,7 +69,7 @@ sentences:
     translation: {es: Soy ingeniero., en: I'm an engineer.}
   - id: s.women-dou-shi-xuesheng
     use: say
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     segments:
       - {text: 我们, ref: w.women, pinyin: wǒmen}
       - {text: 都, ref: w.dou, pinyin: dōu}
@@ -79,7 +79,7 @@ sentences:
     translation: {es: Todos somos estudiantes., en: We are all students.}
   - id: s.nimen-bu-shi-xuesheng-ma
     use: hear
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     segments:
       - {text: 你们, ref: w.nimen, pinyin: nǐmen}
       - {text: 不, ref: w.bu, pinyin: bú, sandhi: bù → bú delante de cuarto tono}
@@ -90,7 +90,7 @@ sentences:
     translation: {es: '¿No sois estudiantes?', en: 'Aren''t you students?'}
   - id: s.tamen-dou-shi-zhongguoren-ma
     use: hear
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     segments:
       - {text: 他们, ref: w.tamen, pinyin: tāmen}
       - {text: 都, ref: w.dou, pinyin: dōu}
@@ -109,7 +109,7 @@ sentences:
       - {text: 高兴, ref: w.gaoxing, pinyin: gāoxìng}
       - {text: ！}
     translation: {es: ¡Encantado de conocerte!, en: Nice to meet you!}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.renshi-ni-wo-ye-hen-gaoxing
     use: say
     segments:
@@ -121,7 +121,7 @@ sentences:
       - {text: 高兴, ref: w.gaoxing, pinyin: gāoxìng}
       - {text: ！}
     translation: {es: ¡Yo también estoy encantado de conocerte!, en: Nice to meet you too!}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.wo-keyi-wen-ni-ma
     use: say
     segments:
@@ -141,7 +141,7 @@ sentences:
       - {text: 什么, ref: w.shenme, pinyin: shénme}
       - {text: ？}
     translation: {es: '¿Cómo te apellidas?', en: 'What''s your surname?'}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.wo-xing-menduosa
     use: say
     segments:
@@ -150,7 +150,7 @@ sentences:
       - {text: 门多萨, ref: w.menduosa, pinyin: Ménduōsà}
       - {text: 。}
     translation: {es: Me apellido Mendoza., en: My surname is Mendoza.}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.nin-guixing
     use: say
     segments:
@@ -158,7 +158,7 @@ sentences:
       - {text: 贵姓, ref: e.guixing, pinyin: guìxìng}
       - {text: ？}
     translation: {es: '¿Cuál es su apellido? (cortés)', en: 'May I ask your surname?'}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.wo-jiao-yage
     use: say
     segments:
@@ -628,3 +628,184 @@ sentences:
       - {text: 。}
     translation: {es: Es un profesor muy bueno., en: He's a very good teacher.}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.ni-cai-yi-cai-ta-shi-shei
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 猜, ref: w.cai.guess, pinyin: 'cāi'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yi', sandhi: 'yī → yi, átono en 猜一猜'}
+      - {text: 猜, ref: w.cai.guess, pinyin: 'cāi'}
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 谁, ref: w.shei, pinyin: 'shéi'}
+      - {text: ？}
+    translation: {es: 'Adivina quién es.', en: 'Guess who he is.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: s.ni-cai-ta-duoda.she
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 猜, ref: w.cai.guess, pinyin: 'cāi'}
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 多大, ref: w.duoda, pinyin: 'duō dà'}
+      - {text: ？}
+    translation: {es: '¿Cuántos años crees que tiene?', en: 'Guess how old she is.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-15', date: '2026-10-15'}
+  - id: s.wo-juede-hen-hao
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 好, ref: w.hao, pinyin: 'hǎo'}
+      - {text: 。}
+    translation: {es: 'Me parece muy bien.', en: 'I think it''s great.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: s.nage-ren-shi-ni-de-pengyou
+    use: say
+    segments:
+      - {text: 哪个, ref: w.nage, pinyin: 'nǎge'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 朋友, ref: w.pengyou, pinyin: 'péngyou'}
+      - {text: ？}
+    translation: {es: '¿Cuál es tu amigo?', en: 'Which one is your friend?'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: s.ni-laizi-nage-guojia
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 来自, ref: w.laizi, pinyin: 'láizì'}
+      - {text: 哪个, ref: w.nage, pinyin: 'nǎge'}
+      - {text: 国家, ref: w.guojia, pinyin: 'guójiā'}
+      - {text: ？}
+    translation: {es: '¿De qué país eres?', en: 'Which country are you from?'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: s.dlg-zhongguo-xuesheng-ma
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 中国, ref: w.zhongguo, pinyin: 'Zhōngguó'}
+      - {text: 学生, ref: w.xuesheng, pinyin: 'xuéshēng'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+      - {text: 不, ref: w.bu, pinyin: 'bú', sandhi: 'bù → bú delante de cuarto tono'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 美国, ref: w.meiguo, pinyin: 'Měiguó'}
+      - {text: 学生, ref: w.xuesheng, pinyin: 'xuéshēng'}
+      - {text: 。}
+    translation: {es: '—¿Eres estudiante chino? —No, soy estudiante estadounidense.', en: 'Are you a Chinese student? No, I''m an American student.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'audio de los deberes 2026-09-22', date: '2026-09-22'}
+  - id: s.dlg-ni-shi-xuesheng-ma
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 学生, ref: w.xuesheng, pinyin: 'xuéshēng'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+      - {text: 不, ref: w.bu, pinyin: 'bú', sandhi: 'bù → bú delante de cuarto tono'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 老师, ref: w.laoshi, pinyin: 'lǎoshī'}
+      - {text: 。}
+    translation: {es: '—¿Eres estudiante? —No, soy profesora.', en: 'Are you a student? No, I''m a teacher.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'audio de los deberes 2026-09-22', date: '2026-09-22'}
+  - id: s.dawei-shi-meiguoren
+    use: hear
+    segments:
+      - {text: 大卫, ref: w.dawei, pinyin: 'Dàwèi'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 美国, ref: w.meiguo, pinyin: 'Měiguó'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: ，}
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 学生, ref: w.xuesheng, pinyin: 'xuéshēng'}
+      - {text: 。}
+    translation: {es: 'David es estadounidense y es estudiante.', en: 'David is American; he''s a student.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'audio de los deberes 2026-09-22', date: '2026-09-22'}
+  - id: s.ta-shi-na-guo-ren
+    use: hear
+    segments:
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 哪, ref: w.na.which, pinyin: 'nǎ'}
+      - {text: 国, ref: w.guo, pinyin: 'guó'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: ？}
+    translation: {es: '¿De dónde es ella?', en: 'Where is she from?'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'audio de los deberes 2026-09-22', date: '2026-09-22'}
+  - id: s.ta-bu-shi-xibanyaren-shi-zhongguoren
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 不, ref: w.bu, pinyin: 'bú', sandhi: 'bù → bú delante de cuarto tono'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 西班牙, ref: w.xibanya, pinyin: 'Xībānyá'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: ，}
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 中国, ref: w.zhongguo, pinyin: 'Zhōngguó'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: 。}
+    translation: {es: 'No es español, es chino.', en: 'He isn''t Spanish, he''s Chinese.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-09-17', date: '2026-09-17'}
+  - id: s.wo-renshi-ta-ta-shi-wo-de-laoshi
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 认识, ref: w.renshi, pinyin: 'rènshi'}
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: ，}
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 老师, ref: w.laoshi, pinyin: 'lǎoshī'}
+      - {text: 。}
+    translation: {es: 'La conozco: es mi profesora.', en: 'I know her; she''s my teacher.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-09-17', date: '2026-09-17'}
+  - id: s.ni-jiao-shenme-wo-jiao-dawei
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 叫, ref: w.jiao, pinyin: 'jiào'}
+      - {text: 什么, ref: w.shenme, pinyin: 'shénme'}
+      - {text: 名字, ref: w.mingzi, pinyin: 'míngzi'}
+      - {text: ？}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 叫, ref: w.jiao, pinyin: 'jiào'}
+      - {text: 大卫, ref: w.dawei, pinyin: 'Dàwèi'}
+      - {text: 。}
+    translation: {es: '—¿Cómo te llamas? —Me llamo David.', en: 'What''s your name? I''m David.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-09-17', date: '2026-09-17'}
+  - id: s.nin-jiao-shenme-mingzi
+    use: say
+    segments:
+      - {text: 您, ref: w.nin, pinyin: 'nín'}
+      - {text: 叫, ref: w.jiao, pinyin: 'jiào'}
+      - {text: 什么, ref: w.shenme, pinyin: 'shénme'}
+      - {text: 名字, ref: w.mingzi, pinyin: 'míngzi'}
+      - {text: ？}
+    translation: {es: '¿Cómo se llama usted?', en: 'What''s your name? (polite)'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'chat: dictados de la profesora al empezar la clase', date: '2026-10-15'}
+  - id: s.wo-shi-waiguoren
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 外国, ref: w.waiguo, pinyin: 'wàiguó'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: 。}
+    translation: {es: 'Soy extranjero.', en: 'I''m a foreigner.'}
+    source: {origin: attic, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'mixto_29_y_hoy la de hace 2 dias.md', date: '2026-10-16'}

@@ -11,7 +11,7 @@ entries:
     register: neutral
     level: 1
     level_reason: saludo básico; 你 y 好 son HSK 1
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     frequency: {}
     relations: [p.third-tone-sandhi]
     comments:
@@ -23,7 +23,7 @@ entries:
     hanzi: 再见
     pinyin: zàijiàn
     meaning: {es: adiós, en: goodbye}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 再 «otra vez» + 见 «ver»: «volver a vernos».'}
       - {kind: note, private: false, date: 2026-09-25, text: 'Despedida general, válida en cualquier registro.', original: formal / general ♡}
@@ -36,7 +36,7 @@ entries:
     meaning: {es: 'adiós (informal, del inglés bye-bye)', en: bye-bye}
     level: 1
     level_reason: despedida coloquial de todos los días
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: Imita el inglés bye-bye: 拜 «saludar con reverencia» solo presta el sonido.'}
       - {kind: linguistic, private: false, date: '2026-10-02', text: 'En la calle se dice báibái, con dos segundos tonos, imitando el inglés, y así lo dice el audio; los diccionarios lo recogen como bàibài, con el cuarto tono de 拜 «saludar con reverencia».'}
@@ -47,7 +47,7 @@ entries:
     hanzi: 早
     pinyin: zǎo
     meaning: {es: ¡buenos días! (informal); temprano, en: morning!; early}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Forma abreviada de 早上好 zǎoshang hǎo, «buenos días».', original: zǎo ← zǎoshang hǎo}
   - id: e.ninhao
@@ -59,7 +59,7 @@ entries:
     meaning: {es: hola (con respeto), en: hello (polite)}
     level: 1
     level_reason: saludo cortés básico; 您 y 好 son HSK 1
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 您 «usted» + 好 «bien».'}
   - id: e.nimenhao
@@ -71,7 +71,7 @@ entries:
     meaning: {es: hola (a un grupo), en: hello (to a group)}
     level: 1
     level_reason: saludo a un grupo; 你们 y 好 son HSK 1
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 你们 «vosotros» + 好 «bien».'}
   - id: e.dajiahao
@@ -83,7 +83,7 @@ entries:
     meaning: {es: hola a todos, en: hello everyone}
     level: 1
     level_reason: saludo a todos; 大家 y 好 son HSK 1
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 大家 «todos» + 好 «bien».'}
       - {kind: teacher, private: false, date: '2026-10-02', text: 'Algo más formal que 你们好: sirve para abrir cuando hablas ante un grupo.'}
@@ -96,7 +96,7 @@ entries:
     meaning: {es: 'hola, profe', en: 'hello, teacher'}
     level: 1
     level_reason: saludo a la profesora; 老师 y 好 son HSK 1
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 老师 «profesora» + 好 «bien»: el cargo en lugar del nombre.'}
   - id: g.hao-greetings
@@ -114,7 +114,7 @@ entries:
       - {ref: e.zaoshanghao, cue: 'por la mañana: el momento + 好'}
       - {ref: e.xiawuhao, cue: 'por la tarde, en tiendas y recepciones'}
       - {ref: e.wanshanghao, cue: 'por la noche, al llegar (al irte, 晚安)'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: '您们 nínmen suena forzado y apenas se usa: para saludar con respeto a un grupo, 大家好 dàjiā hǎo o 各位好 gèwèi hǎo [HSK 3]. 你们好 nǐmen hǎo: relajado, para un grupo de amigos que tienes delante. 大家好 dàjiā hǎo: para dirigirse a todo el mundo, más formal.', original: 'nínmen hǎo → respectful w/ seniors / teachers; nǐmen hǎo → relaxed, friends (grupo delante de mí); dàjiā hǎo → formal, group (todo el mundo)'}
   - id: w.huanying
@@ -127,6 +127,7 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '迎 es salir al encuentro de alguien con una sonrisa; con 欢 «alegría»: recibir con alegría.'}
+      - {kind: mnemonic, private: false, date: '2026-10-16', text: 'Tu imagen: 欢 es una persona con un cuchillo, y 迎 te recuerda a una pierna que camina hacia ti, como en una historia: alguien que sale a darte la bienvenida.', original: 'el segundo hanzi me recuerda una pierna/historia, por eso el bienvenido; y el primero es persona con cuchillo'}
   - id: w.zenmeyang
     use: say
     role: content
@@ -435,12 +436,13 @@ entries:
   - id: g.jin-jin
     kind: group
     basis: homophone
-    title: 进, 近 y 今
-    explanation: 进 y 近 suenan igual, jìn; 今 es jīn, plano. Los separa la pieza y la palabra en que salen.
+    title: 进, 近, 今 y 斤
+    explanation: 进 y 近 suenan igual, jìn; 今 y 斤 son jīn, plano. Los separa la pieza y la palabra en que salen.
     members:
       - {ref: w.jin, cue: '辶 con 井 dentro: 请进'}
       - {ref: w.jin.near, cue: '辶 con 斤 dentro: 最近'}
       - {ref: c.jin.now, cue: 'sin 辶, tono plano: 今天'}
+      - {ref: w.jin.weight, cue: 'sin 辶, tono plano, peso: 二十斤'}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
     comments: []
   - id: g.zuijin-zaijian

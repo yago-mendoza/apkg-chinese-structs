@@ -38,3 +38,4 @@ Casi iguales al oído y con el mismo tono: solo cambia la vocal. En 热, la e os
 - ✅🃏 北京下雪了。 · Běijīng xiàxuě le · Está nevando en Pekín.
 - ✅🃏 好冷！ · hǎo lěng · ¡Qué frío!
 - ✅🃏 今天的月亮很亮。 · jīntiān de yuèliang hěn liàng · Hoy la luna brilla mucho.
+- ✅🃏 你觉得今天热吗？ · nǐ juéde jīntiān rè ma · ¿Te parece que hoy hace calor?

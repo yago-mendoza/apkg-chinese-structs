@@ -44,6 +44,9 @@
 - ✅🃏 前 qián [tɕʰjɛn˧˥] · antes; hace (两天前 = hace dos días) · _sustantivo_ · Detrás de un tiempo es «hace»: 两天前 «hace dos días», 一年前 «hace un año». Delante de un lugar es «delante»: 门前 «delante de la puerta».
 - ✅🃏 多久 duōjiǔ [twɔ˥ tɕjoʊ˧˩˧] · ¿cuánto tiempo? · _pronombre_ · Palabra a palabra: 多 «cuánto» + 久 «mucho tiempo». Pregunta lo que dura: 你等了多久？ «¿cuánto tiempo has esperado?». En qué momento es 什么时候.
 - ✅🃏 有时候 yǒushíhou [joʊ˧˩˧ ʂɨ˧˥ xoʊ] · a veces · _adverbio_ · Palabra a palabra: 有 «hay» + 时候 «momentos»: «hay veces que». Va delante del verbo o al principio: 我有时候很累 «a veces estoy muy cansado». Más corto, 有时.
+- ✅🃏 去年 qùnián [tɕʰy˥˩ njɛn˧˥] · el año pasado · _sustantivo_ · 去年, 今年, 明年: el año pasado, este y el que viene. Como 昨天, 今天, 明天 con los días, pero el pasado es 去 «irse»: el año que se fue.
+- ✅🃏 以前 yǐqián [i˧˩˧ tɕʰjɛn˧˥] · antes; hace tiempo · _sustantivo_
+- ✅🃏 以后 yǐhòu [i˧˩˧ xoʊ˥˩] · después; en el futuro · _sustantivo_
 
 ## 上 / 中 / 下 + 午
 
@@ -124,3 +127,6 @@ Se parecen al oído y comparten 占, que les da el sonido.
 - ✅🃏 二零二六年十月八号，星期四。 · èr líng èr liù nián shí yuè bā hào xīngqī sì · Jueves, 8 de octubre de 2026.
 - ✅🃏 二零二五年三月二号，星期天。 · èr líng èr wǔ nián sān yuè èr hào xīngqītiān · Domingo, 2 de marzo de 2025.
 - ✅🃏 现在几点？八点半。太晚了，我们走吧！ · xiànzài jǐ diǎn bā diǎn bàn tài wǎn le wǒmen zǒu ba · —¿Qué hora es? —Las ocho y media. —Es tardísimo, ¡vámonos!
+- ✅🃏 去年我二十五岁。 · qùnián wǒ èr shí wǔ suì · El año pasado tenía veinticinco años.
+- ✅🃏 十点左右。 · shí diǎn zuǒyòu · Sobre las diez.
+- ✅🃏 九点五十五分，十点零五分，下午五点零八分。 · jiǔ diǎn wǔ shí wǔ fēn shí diǎn líng wǔ fēn xiàwǔ wǔ diǎn líng bā fēn · Las diez menos cinco, las diez y cinco, las cinco y ocho de la tarde.

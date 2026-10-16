@@ -145,3 +145,24 @@ entries:
       - {ref: w.zhen, cue: 'abajo, dos patitas'}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments: []
+  - id: w.you.repeat
+    use: say
+    role: function
+    kind: word
+    hanzi: 又
+    pinyin: 'yòu'
+    meaning: {es: 'otra vez (lo que ya ha pasado)', en: 'again (already happened)'}
+    source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-16', text: '又 cuenta una repetición que ya ha ocurrido: 他又来了 «ha vuelto a venir». Para lo que aún no ha pasado se usa 再: 我明天再来.'}
+  - id: g.you-you
+    kind: group
+    basis: soundalike
+    title: '有 yǒu, 又 yòu y 右 yòu'
+    explanation: 'Las tres son you: 有 lleva tercer tono; 又 y 右 suenan igual y las separa la frase.'
+    members:
+      - {ref: w.you.have, cue: 'baja y sube (3.º): 我有姐姐'}
+      - {ref: w.you.repeat, cue: 'cae (4.º), delante del verbo: 他又来了'}
+      - {ref: w.you.right, cue: 'cae (4.º), lado: 左右'}
+    source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
+    comments: []

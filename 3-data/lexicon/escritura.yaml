@@ -11,7 +11,7 @@ entries:
     register: neutral
     level: 1
     level_reason: 'aparece en 中午 y 下午 [HSK 1]'
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.niu
     use: read
@@ -21,7 +21,7 @@ entries:
     pinyin: niú
     meaning: {es: 'vaca, buey', en: cow}
     standalone: 'yes'
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: c.sheng.life
     use: read
@@ -30,7 +30,7 @@ entries:
     pinyin: shēng
     meaning: {es: vida; nacer, en: life; to be born}
     standalone: rare
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: mnemonic, private: false, date: 2026-09-25, text: Una planta que brota de la tierra., original: some plant emerging}
   - id: c.ru.enter
@@ -40,7 +40,7 @@ entries:
     pinyin: rù
     meaning: {es: entrar, en: to enter}
     standalone: rare
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments: []
   - id: c.nv.woman
     use: read
@@ -50,7 +50,7 @@ entries:
     meaning: {es: mujer (como componente), en: woman (component)}
     real_word: {hanzi: 女人, pinyin: nǚrén, es: 'Suelto, 女 casi solo va delante de otra palabra y significa «femenino» (女儿 «hija»). «Mujer», al hablar, es 女人.'}
     as_word: {es: 'mujer, femenino (女的, 女人)'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: c.kou.mouth
     use: read
@@ -60,7 +60,7 @@ entries:
     meaning: {es: boca (como componente), en: mouth (component)}
     real_word: {hanzi: 嘴, pinyin: zuǐ, es: 'Suelto, 口 no es la boca al hablar: es clasificador de personas en una familia (三口人) y «entrada» en 门口 o 入口. La boca es 嘴, o 嘴巴 zuǐba [HSK 4].'}
     as_word: {es: 'clasificador de personas en una familia (三口人); «entrada» en 门口 y 入口'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: character, private: false, date: 2026-09-25, text: 'Como componente, aparece en caracteres relacionados con la boca o con hablar, como 叫 o 吗.', original: boca habla}
   - id: c.rou.flesh
@@ -71,7 +71,7 @@ entries:
     meaning: {es: forma de 月 «luna»; en partes del cuerpo viene de 肉 «carne», en: flesh radical}
     real_word: {hanzi: 月亮, pinyin: yuèliang, es: 'Suelto, 月 es «mes» (一月, 这个月). La luna, al hablar, es 月亮.'}
     as_word: {es: 'mes (一月, 这个月)'}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments:
       - {kind: character, private: false, date: 2026-09-25, text: 'Como componente, 月 suele ser 肉 «carne» y no «luna»: aparece en partes del cuerpo, como 胖 o 脸.', original: moon + meat / “radical” → 月 = muscle}
   - id: c.mu.eye
@@ -83,7 +83,7 @@ entries:
     real_word: {hanzi: 眼睛, pinyin: yǎnjing, es: '目 es la palabra clásica para «ojo» y hoy solo vive dentro de palabras (看 lleva un ojo debajo de una mano). Al hablar se dice 眼睛: 眼 «ojo» y 睛 «pupila».'}
     level: 1
     level_reason: 'aparece en 看 [HSK 1]'
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: g.sheng-niu-wu
     kind: group
@@ -95,7 +95,7 @@ entries:
       - {ref: c.sheng.life, cue: 'tres horizontales; la de abajo, la más larga'}
       - {ref: w.niu, cue: dos horizontales; el vertical sobresale por arriba}
       - {ref: c.wu.noon, cue: dos horizontales; el vertical no sobresale}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: g.ren-ru-ba
     kind: group
@@ -106,7 +106,7 @@ entries:
       - {ref: w.ren, cue: el trazo izquierdo es el largo; el derecho sale de su mitad}
       - {ref: c.ru.enter, cue: 'el trazo derecho es el largo; el izquierdo, corto, sale de su punta'}
       - {ref: w.ba, cue: los dos trazos no se tocan}
-    source: {origin: inbox, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments: []
   - id: c.side.ren
     use: context
@@ -429,3 +429,14 @@ entries:
       - {ref: c.mu.eye, cue: 'más alto y estrecho: dos rayas dentro'}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
     comments: []
+  - id: g.zhi-yi
+    kind: group
+    basis: visual
+    title: '知 (知道) y 医 (医生)'
+    explanation: 'Los dos llevan 矢 «flecha»; los separa dónde va la flecha.'
+    members:
+      - {ref: w.zhidao, cue: '知: la flecha a la izquierda y 口 a la derecha'}
+      - {ref: w.yisheng, cue: '医: la flecha dentro de una caja abierta por la derecha'}
+    source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
+    comments:
+      - {kind: note, private: false, date: '2026-10-16', text: 'No confundir el zhī de 知道 con el yī de 医生: el primer hanzi de cada uno se parece mucho.', original: 'No confundir el zhi de zhidao saber con el yi de yisheng de doctor porque el primer hanzi es muy parecido'}

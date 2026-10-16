@@ -26,7 +26,7 @@ sentences:
       - {text: 谢谢, ref: e.xiexie, pinyin: xièxie}
       - {text: ！}
     translation: {es: 'Sí, gracias.', en: 'Mm, thanks!'}
-    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.buhaoyisi-wo-lai-wan-le
     use: say
     segments:
@@ -303,3 +303,13 @@ sentences:
       - {text: ？}
     translation: {es: 'Perdón, ¿ya habéis empezado a comer?', en: 'Sorry, have you started eating?'}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.ni-shuo-de-dui
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 说, ref: w.shuo, pinyin: 'shuō'}
+      - {text: 得, ref: w.de.complement, pinyin: 'de'}
+      - {text: 对, ref: w.dui, pinyin: 'duì'}
+      - {text: 。}
+    translation: {es: 'Tienes razón.', en: 'You''re right.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}

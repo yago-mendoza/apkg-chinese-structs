@@ -189,3 +189,33 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 熊 «oso» + 猫 «gato».'}
       - {kind: teacher, private: false, date: '2026-10-08', text: 'En clase: 两只熊猫 «dos pandas», con 只, el clasificador de los animales.'}
+  - id: w.xiaomao
+    use: hear
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 小猫
+    pinyin: xiǎomāo
+    meaning: {es: gatito, en: kitten}
+    level: 2
+    level_reason: 猫 māo es HSK 2
+    source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    comments: []
+  - id: w.daxiang
+    use: hear
+    role: content
+    kind: word
+    hanzi: 大象
+    pinyin: 'dàxiàng'
+    meaning: {es: 'elefante', en: 'elephant'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: w.long
+    use: hear
+    role: content
+    kind: word
+    hanzi: 龙
+    pinyin: lóng
+    meaning: {es: dragón, en: dragon}
+    source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
+    comments:
+      - {kind: teacher, private: false, date: '2026-10-02', text: '龍 es su forma tradicional. Es frecuente en nombres: 成龙 «Jackie Chan», 大龙, y 李小龙 «Bruce Lee».'}

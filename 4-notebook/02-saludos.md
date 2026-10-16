@@ -12,7 +12,7 @@
 - ✅🃏 你们好 nǐmen hǎo [ni˧˩˧ mən xɑʊ˧˩˧] · hola (a un grupo) · _expresión_ · Palabra a palabra: 你们 «vosotros» + 好 «bien».
 - ✅🃏 大家好 dàjiā hǎo [ta˥˩ tɕja˥ xɑʊ˧˩˧] · hola a todos · _expresión_ · Palabra a palabra: 大家 «todos» + 好 «bien». · Algo más formal que 你们好: sirve para abrir cuando hablas ante un grupo.
 - ✅🃏 老师好 lǎoshī hǎo [lɑʊ˧˩˧ ʂɨ˥ xɑʊ˧˩˧] · hola, profe · _expresión_ · Palabra a palabra: 老师 «profesora» + 好 «bien»: el cargo en lugar del nombre.
-- ✅🃏 欢迎 huānyíng [xwan˥ iŋ˧˥] · bienvenido; dar la bienvenida · _verbo_ · 迎 es salir al encuentro de alguien con una sonrisa; con 欢 «alegría»: recibir con alegría.
+- ✅🃏 欢迎 huānyíng [xwan˥ iŋ˧˥] · bienvenido; dar la bienvenida · _verbo_ · 迎 es salir al encuentro de alguien con una sonrisa; con 欢 «alegría»: recibir con alegría. · Tu imagen: 欢 es una persona con un cuchillo, y 迎 te recuerda a una pierna que camina hacia ti, como en una historia: alguien que sale a darte la bienvenida.
 - ✅🃏 怎么样 zěnmeyàng [tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal?; ¿cómo? · _interrogativo_ · Es el «¿qué tal?» chino; lo de delante dice de qué: 你怎么样？ «¿qué tal estás?», 这个怎么样？ «¿qué te parece esto?», 我们明天去，怎么样？ «¿qué tal si vamos mañana?».
 - ✅🃏 晚安 wǎn'ān [wan˧˩˧ an˥] · buenas noches (al irse a dormir) · _expresión_ · Palabra a palabra: 晚 «noche» + 安 «paz»: «noche tranquila». · Solo para despedirse antes de dormir. Al llegar por la noche se dice 晚上好 wǎnshang hǎo.
 - ✅🃏 回来 huílai [xweɪ˧˥ laɪ] · volver (aquí) · _verbo_ · 回 «volver» + 来 «hacia aquí». 你回来了！ es un saludo al ver llegar a alguien de casa o del trabajo. · 回 «volver» + 来 «hacia aquí»: volver adonde está quien habla. Venir solo se puede hacia aquí, así que el 来 pone el «aquí». 我回来了 «ya estoy aquí».
@@ -70,13 +70,14 @@ Uno cierra y otro abre, y al oído se parecen: zà-jià frente a dà-jiā.
 - 再见 zàijiàn · al irte: z (como ts sin aire), dos cuartos tonos que caen
 - 大家好 dàjiā hǎo · al empezar: d, cuarto, primero y tercero
 
-## 进, 近 y 今
+## 进, 近, 今 y 斤
 
-进 y 近 suenan igual, jìn; 今 es jīn, plano. Los separa la pieza y la palabra en que salen.
+进 y 近 suenan igual, jìn; 今 y 斤 son jīn, plano. Los separa la pieza y la palabra en que salen.
 
 - 进 jìn · 辶 con 井 dentro: 请进
 - 近 jìn · 辶 con 斤 dentro: 最近
 - 今 jīn · sin 辶, tono plano: 今天
+- 斤 jīn · sin 辶, tono plano, peso: 二十斤
 
 ## 最近 y 再见
 

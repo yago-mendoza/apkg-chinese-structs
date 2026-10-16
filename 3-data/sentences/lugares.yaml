@@ -176,3 +176,14 @@ sentences:
       - {text: 。}
     translation: {es: Me bajo aquí., en: I'll get off here.}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-de-shu-zai-nali
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 书, ref: w.shu, pinyin: 'shū'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 哪里, ref: w.nali, pinyin: 'nǎlǐ'}
+      - {text: ？}
+    translation: {es: '¿Dónde está mi libro?', en: 'Where''s my book?'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}

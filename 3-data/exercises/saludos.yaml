@@ -1110,17 +1110,6 @@ exercises:
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 这个怎么样, pinyin: zhe ge zen me yang}
     answer: {typed: '45354', hanzi: 这个怎么样, pinyin: zhège zěnmeyàng, meaning: '¿qué tal este?, ¿qué te parece?'}
     comments: []
-  - id: x.listen.zuijin-zenmeyang
-    added: 2026-10-05
-    lang: es
-    type: listen
-    sentence: s.zuijin-zenmeyang
-    targets: [s.zuijin-zenmeyang]
-    context: [w.zuijin, w.zenmeyang]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Qué tal últimamente?'}
-    comments: []
   - id: x.produce.zuijin-zenmeyang
     added: 2026-10-05
     lang: es
@@ -1131,17 +1120,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Qué tal últimamente?»'}
     answer: {meaning: '¿Qué tal últimamente?'}
-    comments: []
-  - id: x.listen.haojiu-bujian-zuijin-zenmeyang
-    added: 2026-10-05
-    lang: es
-    type: listen
-    sentence: s.haojiu-bujian-zuijin-zenmeyang
-    targets: [s.haojiu-bujian-zuijin-zenmeyang]
-    context: [e.haojiubujian, w.zuijin, w.zenmeyang]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Cuánto tiempo, ¿qué tal últimamente?'}
     comments: []
   - id: x.produce.haojiu-bujian-zuijin-zenmeyang
     added: 2026-10-05
@@ -1861,17 +1839,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Qué tal si vamos mañana?»'}
     answer: {meaning: '¿Qué tal si vamos mañana?'}
-    comments: []
-  - id: x.listen.huanying-huilai
-    added: 2026-10-10
-    lang: es
-    type: listen
-    sentence: s.huanying-huilai
-    targets: [s.huanying-huilai]
-    context: [w.huanying, w.huilai]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: ¡Bienvenido de nuevo!}
     comments: []
   - id: x.produce.huanying-huilai
     added: 2026-10-10

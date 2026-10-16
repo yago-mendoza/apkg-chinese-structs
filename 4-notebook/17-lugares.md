@@ -30,6 +30,7 @@
 - ✅🃏 这边 zhèbiān [ʈʂɤ˥˩ pjɛn˥] · aquí, por aquí · _pronombre_ · Palabra a palabra: 这 «este» + 边 «lado». 这边请 «por aquí, por favor», lo que dice quien te acompaña a la mesa.
 - ✅🃏 洗手间 xǐshǒujiān [ɕi˧˩˧ ʂoʊ˧˩˧ tɕjɛn˥] · baño, aseo · _sustantivo_ · Palabra a palabra: 洗 «lavar» + 手 «mano» + 间 «sala»: «la sala de lavarse las manos». Es la forma educada, la de restaurantes y centros comerciales. En casas y hoteles se lee 卫生间 [HSK 3]; en la calle, 厕所 [HSK 6]. · En las puertas, 男 «hombres» y 女 «mujeres».
 - ✅🃏 下车 xià chē [ɕja˥˩ ʈʂʰɤ˥] · bajarse (de un vehículo) · _verbo_ · Palabra a palabra: 下 «bajar» + 车 «coche»: bajarse del taxi, del autobús o del tren. 我在这里下车 «me bajo aquí».
+- ✅🃏 医院 yīyuàn [i˥ ɥœn˥˩] · hospital · _sustantivo_ · 医 «medicina» + 院 «patio, recinto»; el mismo 医 de 医生.
 
 ## Aquí, allí, ¿dónde?
 
@@ -73,3 +74,4 @@ Misma sílaba, distinto tono: 我会回来 «volveré» lleva los dos.
 - ✅🃏 这边走！ · zhèbiān zǒu · ¡Por aquí!
 - ✅🃏 在这边，你跟我走吧。 · zài zhèbiān nǐ gēn wǒ zǒu ba · Está por aquí, ven conmigo.
 - ✅🃏 我在这里下车。 · wǒ zài zhèlǐ xià chē · Me bajo aquí.
+- ✅🃏 我的书在哪里？ · wǒ de shū zài nǎlǐ · ¿Dónde está mi libro?

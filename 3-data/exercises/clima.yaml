@@ -554,3 +554,35 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Hoy la luna brilla mucho.}
     comments: []
+  - id: x.contrast.dao
+    added: 2026-10-16
+    lang: es
+    type: contrast
+    group: g.dao-dao
+    targets: [w.dao]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 岛, pinyin: dǎo, meaning: isla}
+    comments: []
+  - id: x.listen.ni-juede-jintian-re-ma
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ni-juede-jintian-re-ma
+    targets: [s.ni-juede-jintian-re-ma]
+    context: [w.ni, w.juede, w.jintian, w.re, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Te parece que hoy hace calor?'}
+    comments: []
+  - id: x.produce.ni-juede-jintian-re-ma
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ni-juede-jintian-re-ma
+    targets: [s.ni-juede-jintian-re-ma]
+    context: [w.ni, w.juede, w.jintian, w.re, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Te parece que hoy hace calor?»'}
+    answer: {meaning: '¿Te parece que hoy hace calor?'}
+    comments: []

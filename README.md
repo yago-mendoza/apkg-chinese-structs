@@ -145,6 +145,7 @@ The agent pushes the deck itself. To do it by hand:
 - `docs/design.md`: the full specification (coverage, card types, audio, Anki).
 - `docs/owner.md`: my own setup and the values in force for this deck.
 - `docs/decisions.md`: why the system is the way it is, one dated entry per decision; the rule documents stay in the present tense.
+- `docs/hypotheses.md`: what we believe helps the learner, how each belief is measured, and whether it was confirmed or rejected.
 - `sources/`: external reference lists, each with its origin and license.
 - `tools/history.py`: what each batch did to every entry, sentence and exercise, from git; `close-batch` writes it to `records/history.json`.
 - `tools/class_audio.py`: transcribes a class recording dropped in `1-inbox/` (local Whisper large-v3, chosen because it is the most accurate Whisper model for Chinese; the teacher's voice told apart from yours) into `private/`, as context for the batch. Separate environment: `tools/requirements-audio.txt`.

@@ -469,3 +469,166 @@ sentences:
       - {text: ？}
     translation: {es: '¿Puedes venir mañana?', en: 'Can you come tomorrow?'}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.ta-ershi-sui-ta-hen-nianqing
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: ，}
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 年轻, ref: w.nianqing, pinyin: 'niánqīng'}
+      - {text: 。}
+    translation: {es: 'Tiene veinte años; es muy joven.', en: 'He''s twenty; he''s very young.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+  - id: s.ni-duoda-le
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 多大, ref: w.duoda, pinyin: 'duō dà'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: ？}
+    translation: {es: '¿Cuántos años tienes?', en: 'How old are you?'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+  - id: s.ta-duoda-nianji-le
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 多大, ref: w.duoda, pinyin: 'duō dà'}
+      - {text: 年纪, ref: w.nianji, pinyin: 'niánjì'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: ？}
+    translation: {es: '¿Cuántos años tiene? (de alguien mayor)', en: 'How old is he? (of an older person)'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+  - id: s.wo-sanshier-sui
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 三, ref: w.num.san, pinyin: 'sān'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 。}
+    translation: {es: 'Tengo treinta y dos años.', en: 'I''m thirty-two.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+  - id: s.wo-shi-sui
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 。}
+    translation: {es: 'Tengo diez años.', en: 'I''m ten.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+  - id: s.ta-nianji-da-le
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 年纪, ref: w.nianji, pinyin: 'niánjì'}
+      - {text: 大, ref: w.da, pinyin: 'dà'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'Ya es mayor.', en: 'He''s getting on in years.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+  - id: s.wo-chusheng-zai-1980-nian
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 出生, ref: w.chusheng, pinyin: 'chūshēng'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yī'}
+      - {text: 九, ref: w.num.jiu, pinyin: 'jiǔ'}
+      - {text: 八, ref: w.ba, pinyin: 'bā'}
+      - {text: 零, ref: w.ling, pinyin: 'líng'}
+      - {text: 年, ref: w.nian, pinyin: 'nián'}
+      - {text: 。}
+    translation: {es: 'Nací en 1980.', en: 'I was born in 1980.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+  - id: s.wo-jinnian-ershi-sui
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 。}
+    translation: {es: 'Tengo veinte años.', en: 'I''m twenty (this year).'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+  - id: s.ta-sanshi-sui-zuoyou
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 三, ref: w.num.san, pinyin: 'sān'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 左右, ref: w.zuoyou, pinyin: 'zuǒyòu'}
+      - {text: 。}
+    translation: {es: 'Tiene unos treinta años.', en: 'He''s about thirty.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: s.wo-hai-bu-dao-ershiba-sui
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 还, ref: w.hai.still, pinyin: 'hái'}
+      - {text: 不, ref: w.bu, pinyin: 'bú', sandhi: 'bù → bú delante de cuarto tono'}
+      - {text: 到, ref: w.dao.reach, pinyin: 'dào'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 八, ref: w.ba, pinyin: 'bā'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 。}
+    translation: {es: 'Todavía no tengo veintiocho años.', en: 'I''m not twenty-eight yet.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: s.ni-de-pengyou-ershiba-sui-le
+    use: hear
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 朋友, ref: w.pengyou, pinyin: 'péngyou'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 八, ref: w.ba, pinyin: 'bā'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'Tu amigo ya tiene veintiocho años.', en: 'Your friend is twenty-eight now.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: s.wo-juede-ta-ershi-sui-zuoyou
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 左右, ref: w.zuoyou, pinyin: 'zuǒyòu'}
+      - {text: 。}
+    translation: {es: 'Creo que tiene unos veinte años.', en: 'I think she''s about twenty.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-15', date: '2026-10-15'}
+  - id: s.ta-ershier-sui
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 。}
+    translation: {es: 'Tiene veintidós años.', en: 'He''s twenty-two.'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'chat: dictados de la profesora al empezar la clase', date: '2026-10-15'}
+  - id: s.ta-baba-wushisan-sui
+    use: say
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 爸爸, ref: w.baba, pinyin: 'bàba'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 三, ref: w.num.san, pinyin: 'sān'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 。}
+    translation: {es: 'Su padre tiene cincuenta y tres años.', en: 'His father is fifty-three.'}
+    source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
