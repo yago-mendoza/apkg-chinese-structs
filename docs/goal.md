@@ -127,6 +127,14 @@ Y le avisa, con claridad y sin rebajarlo, cuando cruce de un nivel al siguiente.
 
 Los apuntes mezclan lo que da la profesora con lo que YAGO investiga por su cuenta, sobre todo caracteres. Lo de clase es lo prioritario y lo que marca el ritmo; lo investigado entra si pasa el filtro y conecta con lo que ya tiene, en su nivel; lo que es de más arriba y no conecta va al desván, y lo que solo explica otra palabra se queda como nota de esa palabra. Qué está dando la profesora en cada tramo se lleva en `2-digests/state.md`.
 
+**Lo que pega de sus consultas.** Los exámenes, chuletas y explicaciones que le escribe un asistente y pega en «Tus notas» son investigación propia, no clase:
+
+- entra lo de su nivel o uno por encima (hoy, HSK 1 y 2), con prioridad para los contrastes (las palabras que se confunden, cada una en su frase) y las frases cortas que combinan lo que ya sabe;
+- lo de más arriba espera en el desván, con su explicación como nota;
+- nada de ello adelanta a lo de clase en la cola;
+- las explicaciones largas no pasan a las tarjetas: se resumen en una nota, un matiz o un hueco;
+- una frase poco natural o de registro escrito se corrige o se descarta, como cualquier apunte.
+
 **Los deberes son material.** Las hojas de deberes son material de la profesora para crear tarjetas: el agente las resuelve y usa sus soluciones como lo demás de clase, sin esperar ni pedir que YAGO las haga. Resolverlas y corregirlas es cosa de la profesora y de él; si una copia hecha trae sus respuestas, pueden servir para «Para entender».
 
 ## Cómo se le habla: el review
