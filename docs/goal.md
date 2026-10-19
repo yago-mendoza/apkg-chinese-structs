@@ -8,7 +8,7 @@ Este documento es un módulo de prompt: la única parte del sistema que depende 
 
 YAGO, ingeniero, hispanohablante. Está empezando mandarín, con clases particulares que siguen un curso de HSK 1. Estudia en ratos sueltos, casi siempre en el móvil, con auriculares y teclado chino: el audio está disponible en cualquier sesión y puede escribir pinyin con tildes o hanzi. Puede hablar en voz alta siempre, también en público: cualquier tarjeta puede pedirle decir algo en voz alta.
 
-**Rutina.** Clases los martes y los jueves. Estudia todos los días: de 20 a 40 minutos lo normal, hasta hora y media algunos días, y rara vez menos de 20 (cuando pasa, suelen ser varios días seguidos). Los lotes rinden más justo después de clase: el del martes deja el review listo para el jueves, y el del jueves, para el martes.
+**Rutina.** Clases los martes y los jueves. Estudia todos los días: de 20 a 40 minutos lo normal, hasta hora y media algunos días, y rara vez menos de 20 (cuando pasa, suelen ser varios días seguidos). Los lotes, cuando él los pide: no hay costumbre fija.
 
 ## Para qué
 
@@ -43,13 +43,13 @@ Por eso el `use` decide también la prioridad: lo lateral que no va a decir entr
 
 ## Cuánto y en qué proporción
 
-El presupuesto es su tiempo, no el tamaño del mazo: de 20 a 40 minutos al día. De ahí salen las nuevas que puede abrir, y cada tarjeta de más en una palabra es una palabra nueva menos al día. Por eso se cuida la cifra que importa, palabras nuevas al día, con tres reglas que el código mide (los valores, en `anki.py`):
+El presupuesto es su tiempo, no el tamaño del mazo: de 20 a 40 minutos al día. De ahí salen las nuevas que puede abrir; lo que se vigila son los minutos al día y la mezcla, con tres reglas que el código mide (los valores, en `anki.py`):
 
-- **Tarjetas por palabra**: la base la fija su `use`; encima, los extras (tonos de una pareja, un matiz, otro contraste) solo con un motivo visto: que la ha confundido, que `stats` muestra que la falla o que sale en clase. Tope: `CARDS_PER_ITEM_MAX`; pasarlo exige escribir el motivo (`accept_cards`).
+- **Tarjetas de más, sin miedo**: la base la fija su `use`; encima, el agente crea toda tarjeta que vea útil para él (contrastes, matices, huecos, construir, oír las dos…) sin esperar a que la pida y sin ser parco. Las que crea por iniciativa propia las cuenta en el review, por si alguna sobra. `CARDS_PER_ITEM_MAX` queda como alarma para no inflar una palabra por descuido: pasarlo pide anotar el motivo (`accept_cards`), y que le sea útil basta.
 - **Mezcla de lo que viene**: en las próximas `UPCOMING_NEW` nuevas, no en el mazo entero (con semanas de cola, el mazo no es lo que estudia), oír al menos un cuarto, decir al menos un cuarto, leer como mucho un tercio y el resto (contrastes, matices, estructuras) como mucho otro cuarto (`SKILL_TARGETS`). Es el pinyin por delante, en números; mientras toca aprender muchas palabras y sus hanzi, oír pesa menos y sale menos a menudo (`STREAM_WEIGHT`).
 - **Cola de su nivel**: si las nuevas de su nivel pasan de `QUEUE_DAYS_MAX` días, lo que entra va más rápido de lo que estudia; no se frena la entrada (ver arriba), se mira qué sobra o qué baja de `use`.
 
-**Siempre mezclado.** Cualquier tramo de nuevas trae de todo: oír, decir, leer y contrastes, y las frases desde el principio, no en bloques de un solo tipo (YAGO estudia de arriba abajo y un bloque de dictados seguidos cansa y no enseña a decir). Los pasos de una misma palabra (leer, oír, decir) salen separados un día de estudio.
+**Siempre mezclado.** Cualquier tramo de nuevas trae de todo: oír, decir, leer y contrastes, y las frases desde el principio, no en bloques de un solo tipo (YAGO estudia de arriba abajo y un bloque de dictados seguidos cansa y no enseña a decir). Los pasos de una misma palabra (leer, oír, decir) salen separados un día de estudio (`STAGE_GAP` nuevas, las de un día a su ritmo).
 
 Cada review trae, calculado, «Carga y equilibrio»: minutos al día, nuevas y palabras nuevas al día, días de cola y la mezcla frente al objetivo, con un punto por cada aviso. Las cifras se revisan con datos en la retrospectiva, no a ojo.
 

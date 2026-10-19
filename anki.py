@@ -4098,7 +4098,7 @@ STAGE_LAG = 1
 STAGE = {"read": 0, "contrast": 1, "components": 1, "nuance": 1, "listen": 2, "tones": 3,
          "produce": 4, "derive": 4, "cloze": 4, "speak": 5, "pattern": 5, "comprehension": 5, "charsound": 3,
          "compose": 5}
-STAGE_GAP = 15     # posiciones (unas 15 nuevas: un día de estudio) entre un paso de una entrada y el siguiente
+STAGE_GAP = 30     # posiciones (las nuevas de un día, STUDY_PACE) entre un paso de una entrada y el siguiente
 
 
 def new_card_order(entries, sentences, exercises, pending=None):
