@@ -1196,3 +1196,22 @@ class ClassQueues(unittest.TestCase):
         self.assertLess(first(0), 5)                   # lo más antiguo avanza desde el principio
         recent = sum(1 for x in out[:100] if x.split(".")[0] in ("d5", "d4"))
         self.assertTrue(65 <= recent <= 75, recent)    # 7 de cada 10, de la cola reciente
+
+
+class NearSoundalikes(unittest.TestCase):
+    """Lote 012: lo que suena parecido sin ser igual (休息 / 学习) se propone en el review para contrastarlo."""
+
+    def test_syllables(self):
+        self.assertEqual(anki.near_syllables("xiu", "xue"), "iu / ue")
+        self.assertEqual(anki.near_syllables("zhen", "zheng"), "en / eng")
+        self.assertEqual(anki.near_syllables("shi", "si"), "sh / s")
+        self.assertIsNone(anki.near_syllables("ma", "na"))          # m / n se oye bien: no se propone
+
+    def test_pairs_skip_what_is_already_contrasted(self):
+        w = lambda i, hz, py: {"id": i, "kind": "word", "hanzi": hz, "pinyin": py, "use": "say", "meaning": {"es": "x"}}
+        entries = [w("w.a", "休息", "xiūxi"), w("w.b", "学习", "xuéxí"), w("w.c", "四", "sì"), w("w.d", "十", "shí")]
+        pairs = {(a["hanzi"], b["hanzi"]) for a, b, _ in anki.near_soundalikes(entries, [])}
+        self.assertEqual(pairs, {("休息", "学习"), ("四", "十")})
+        group = {"id": "g.x", "kind": "group", "members": [{"ref": "w.a"}, {"ref": "w.b"}]}
+        pair = {"id": "x.pair.si-shi", "pair": [{"hanzi": "四"}, {"hanzi": "十"}]}
+        self.assertEqual(anki.near_soundalikes(entries + [group], [pair]), [])

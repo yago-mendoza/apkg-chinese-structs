@@ -1460,6 +1460,10 @@ def write_review_doc(batch, osm):
              "## Huecos y propuestas", "",
              "<!-- lo completa el agente: huecos temáticos, lo básico del nivel que falta, caracteres con historia, "
              "qué investigar después; cada uno con su línea «>» -->", "",
+             "## Suenan parecido", "", "Palabras del mazo que solo se separan por algo que cuesta oír (zh / z / j, "
+             "-n / -ng, u / ü…) y aún no tienen contraste. Marca las que confundes y el lote siguiente les hace su "
+             "tarjeta de oír las dos.", "",
+             *near_review_lines(),
              "## Falta", "", "Palabras que quieres decir y aún no aparecen en ninguna frase. Trae una frase de clase "
              "o de tu día a día que las use, o escríbela aquí.", ""]
     for e in osm:
@@ -1792,6 +1796,68 @@ def standard_rules(entries, sentences, eby, errors, warnings):
                 if a.get("hanzi") != b.get("hanzi") and (a["id"], b["id"]) not in together:
                     warnings.append(f"{a['id']} {a['hanzi']} y {b['id']} {b['hanzi']} suenan igual (sin tonos) y no están "
                                     f"en ningún grupo: ¿contrastarlos (homophone o soundalike)?")
+
+
+PINYIN_INITIALS = sorted("b p m f d t n l g k h j q x zh ch sh r z c s y w".split(), key=len, reverse=True)
+# Lo que a un hispanohablante le cuesta separar de oído (YAGO, review 011: «detectar las palabras que suenan
+# similar, de forma sistemática»): iniciales que se confunden y finales que se confunden.
+NEAR_INITIALS = [{"zh", "z", "j"}, {"ch", "c", "q"}, {"sh", "s", "x"}, {"b", "p"}, {"d", "t"}, {"g", "k"}]
+NEAR_FINALS = [{"an", "ang"}, {"en", "eng"}, {"in", "ing"}, {"ian", "iang"}, {"uan", "uang"}, {"u", "ü"}, {"iu", "ue"}]
+NEAR_MAX = 12   # parejas que propone cada review, como mucho
+
+
+def near_syllables(a, b):
+    """Si dos sílabas sin tono solo se separan por algo que se confunde: la inicial (zh / z / j…) o la final (-n / -ng,
+    u / ü, iu / ue). Devuelve qué las separa, o None."""
+    def split(syl):
+        initial = next((i for i in PINYIN_INITIALS if syl.startswith(i)), "")
+        return initial, syl[len(initial):]
+    (ia, fa), (ib, fb) = split(a), split(b)
+    if fa == fb and ia != ib and any({ia, ib} <= g for g in NEAR_INITIALS):
+        return f"{ia} / {ib}"
+    if ia == ib and fa != fb and any({fa, fb} <= g for g in NEAR_FINALS):
+        return f"{fa} / {fb}"
+    return None
+
+
+def near_soundalikes(entries, exercises):
+    """[(a, b, qué las separa)]: palabras del mazo para oír o decir con las mismas sílabas salvo una, que solo se
+    separa por algo que se confunde (`near_syllables`). Sin las que ya están en un mismo grupo o en una pareja para
+    oír (`x.pair.`), una vez por pareja de hanzi y lo más básico primero. Lo idéntico sin tonos lo vigila `check`."""
+    together = set()
+    for g in entries:
+        if g.get("kind") == "group":
+            hz = {(next((e for e in entries if e.get("id") == m["ref"]), {}) or {}).get("hanzi") for m in g["members"]}
+            together |= {frozenset((a, b)) for a in hz for b in hz if a and b}
+    for ex in exercises:
+        hz = [it.get("hanzi") for it in ex.get("pair") or []]
+        together |= {frozenset((a, b)) for a in hz for b in hz if a and b}
+    levels, eby = hsk_levels(), {e["id"]: e for e in entries}
+    words = {}
+    for e in entries:
+        if e.get("kind") in ("word", "expression") and use_modalities(e) & {"hear", "say"} and e.get("hanzi") not in words:
+            syl = syllable_tones(e["hanzi"], e.get("pinyin"))
+            if syl and all(t != "erhua" for _, t in syl):
+                words[e["hanzi"]] = (e, [s for s, _ in syl])
+    out = []
+    for (ha, (a, sa)), (hb, (b, sb)) in itertools.combinations(words.items(), 2):
+        if len(sa) != len(sb) or frozenset((ha, hb)) in together:
+            continue
+        diff = [k for k in range(len(sa)) if sa[k] != sb[k]]
+        why = len(diff) == 1 and near_syllables(sa[diff[0]], sb[diff[0]])
+        if why:
+            out.append((a, b, why))
+    lv = lambda e: level_of(e["id"], eby, {}, levels) or 9
+    return sorted(out, key=lambda t: (max(lv(t[0]), lv(t[1])), t[0]["id"], t[1]["id"]))
+
+
+def near_review_lines():
+    """El apartado «Suenan parecido» del review: hasta `NEAR_MAX` parejas, cada una con su línea «>»."""
+    entries, _, exercises = load()
+    lines = []
+    for a, b, why in near_soundalikes(entries, exercises)[:NEAR_MAX]:
+        lines += [f"- {a['hanzi']} {a.get('pinyin', '')} / {b['hanzi']} {b.get('pinyin', '')} ({why})", "  > ", ""]
+    return lines or ["- (nada)", ""]
 
 
 def connection_rules(entries, sentences, eby, sby, errors, warnings):

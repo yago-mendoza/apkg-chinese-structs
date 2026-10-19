@@ -118,6 +118,7 @@ El agente no se limita a procesar lo que llega. En cada review señala, con crit
 - huecos temáticos: tiene mañana y noche, pero no tarde; sabe pedir, pero no pagar;
 - lo básico de su nivel que aún falta (palabras, estructuras de frase, pronunciación);
 - lo que más falla en Anki (`anki.py stats`) y qué cambiaría para fijarlo;
+- las palabras del mazo que suenan parecido y aún no se contrastan (休息 / 学习), para que marque las que confunde;
 - caracteres con una historia o descomposición que ayude a recordarlos;
 - de vez en cuando, qué investigar a continuación para su nivel.
 
