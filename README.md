@@ -123,6 +123,11 @@ The agent pushes the deck itself. To do it by hand:
 
 ## Studying
 
+> [!IMPORTANT]
+> **Sync your phone the moment you stop studying.** Finished a session on the toilet? Sync before you flush. Two stops from home on the metro? Sync before the doors open. The waiter is coming with your noodles? Sync before the chopsticks touch the bowl.
+>
+> Anki keeps the newest version of each card. If your phone holds reviews it never uploaded and you then process a new batch from your desk, the desk's version wins and those reviews are gone: it already happened to 142 cards here. Sync, then eat.
+
 - Study the whole deck: new cards from your classes come out first, then the rest level by level, lowest first. Levels and themes are subdecks, and level, theme, month and purpose are also tags for filtered sessions.
 - Typed answers accept pinyin with tone marks or digits (`ni3 hao3`) or hanzi from a Chinese keyboard; spaces, case and punctuation are ignored. For sentences you say aloud, typing is optional.
 - The back of each card shows the answer with pinyin and audio, example sentences with audio, your notes and mnemonics and, when there is one, the word's family, with the tested word highlighted.
