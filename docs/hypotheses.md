@@ -16,7 +16,7 @@ Lo que creemos que ayuda a aprender a quien estudia con este mazo, cómo se comp
 - **Desde**: lote 011 (2026-10-16). **De dónde**: review 010, «lo que viene de clase debe aparecer lo antes posible, sin importar el HSK».
 - **Cómo se mide**: en `anki.py stats`, el porcentaje de «Otra vez» en lo de clase frente al resto, y lo que diga en el review sobre si llega a clase con lo de la semana ya visto.
 - **Regla**: `docs/goal.md`, «Qué entra y qué sale primero».
-- **Lote 012 (2026-10-19)**: la última clase pasa delante de las anteriores, que siguen de la primera a la última. Se mide igual, y además si lo de la semana le sale antes de la clase siguiente.
+- **Lote 012 (2026-10-19)**: lo de clase sale por dos colas, la reciente (7 de cada 10) y la atrasada (3 de cada 10). Se mide igual, y además si lo de la semana le sale antes de la clase siguiente y si la cola de clase baja.
 
 ### 🧪 Menos tarjetas de oír, y más difíciles, no le quitan oído
 

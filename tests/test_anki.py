@@ -1071,9 +1071,18 @@ class Batch011(unittest.TestCase):
         firsts = {}
         for i, d in enumerate(seen):
             firsts.setdefault(d, i)
-        days = list(firsts)
-        # La última clase, delante; detrás, lo atrasado de la primera a la última (review 011).
-        self.assertEqual(days, sorted(days)[-1:] + sorted(days)[:-1])
+        # Dos colas (lote 012): el grueso de las clases recientes sale de la más nueva hacia atrás (por la mediana:
+        # una tarjeta suelta puede adelantarse al mezclar por tipo), y la más antigua sale enseguida, porque la cola
+        # atrasada avanza siempre.
+        import statistics
+        pos = {}
+        for i, d in enumerate(seen):
+            pos.setdefault(d, []).append(i)
+        recent = sorted(pos, reverse=True)
+        self.assertEqual(seen[0], recent[0])
+        medians = [statistics.median(pos[d]) for d in recent[:3]]
+        self.assertEqual(medians, sorted(medians))
+        self.assertLess(firsts[min(firsts)], 10)
 
     def test_a_listening_card_is_a_challenge_not_a_formula(self):
         self.assertFalse(anki.listen_challenge(self.sby["s.xiexie-bukeqi"], self.eby))     # 谢谢！不客气。
@@ -1171,3 +1180,19 @@ class SentenceKindTest(unittest.TestCase):
         bad = [dict(sentences[0], kind="saludo")] + sentences[1:]
         errors, _ = anki.validate(entries, bad, exercises, require_audio=False)
         self.assertTrue(any("kind es formula" in e for e in errors))
+
+
+class ClassQueues(unittest.TestCase):
+    """Lote 012: lo de clase sale por dos colas, la reciente y la atrasada, 7 de cada 10 de la reciente."""
+
+    def test_neighbouring_classes_stay_close_and_old_ones_advance(self):
+        days = [[f"d{d}.{i}" for i in range(100)] for d in range(6)]          # d0 la más antigua, d5 la más nueva
+        out = anki.class_queues(list(reversed(days)), days)
+        self.assertEqual(sorted(out), sorted(x for d in days for x in d))     # todas, una sola vez
+        pos = {x: n for n, x in enumerate(out)}
+        first = lambda d: min(pos[x] for x in days[d])
+        self.assertEqual(first(5), 0)
+        self.assertLess(first(4), 160)                 # la clase anterior, justo detrás (no al final del bloque)
+        self.assertLess(first(0), 5)                   # lo más antiguo avanza desde el principio
+        recent = sum(1 for x in out[:100] if x.split(".")[0] in ("d5", "d4"))
+        self.assertTrue(65 <= recent <= 75, recent)    # 7 de cada 10, de la cola reciente

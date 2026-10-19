@@ -4036,8 +4036,8 @@ STAGE_GAP = 15     # posiciones (unas 15 nuevas: un día de estudio) entre un pa
 
 
 def new_card_order(entries, sentences, exercises, pending=None):
-    """Posición de cada ejercicio entre las nuevas. Primero lo de clase, de la primera clase a la última y sea del
-    nivel que sea (`class_date`); después, por nivel del HSK (lo básico antes). Dentro de cada bloque,
+    """Posición de cada ejercicio entre las nuevas. Primero lo de clase, sea del nivel que sea (`class_date`), por
+    dos colas a la vez (`class_queues`); después, por nivel del HSK (lo básico antes). Dentro de cada bloque,
     siempre mezclado por tipo (YAGO, 2026-10-10: «el mazo siempre debe estar mezclado»): las tarjetas forman cuatro
     colas (oír, decir, leer, otros; `skill_of`) y se van tomando de la que va más retrasada en proporción a su tamaño,
     así que cualquier tramo trae de todas. Cada cola va en su orden: primero lo que se va a decir, luego lo que se va a
@@ -4061,14 +4061,19 @@ def new_card_order(entries, sentences, exercises, pending=None):
         stage = STAGE.get(ex.get("type"), 1)
         return (tier(ex), th + STAGE_LAG * stage, th, n, stage, ex["id"])
 
-    # Lo de clase, antes que nada y sea del nivel que sea (YAGO, review 010): de la primera clase a la última, y
-    # dentro de cada clase, mezclado como el resto. Después, lo demás, nivel a nivel.
+    # Lo de clase, antes que nada y sea del nivel que sea (YAGO, review 010), cada clase mezclada como el resto.
+    # Las clases salen por dos colas a la vez (lote 012): la reciente, de la clase más nueva hacia atrás, para que lo
+    # de esta semana salga enseguida y sus clases juntas; y la atrasada, de la más antigua hacia delante, para que lo
+    # antiguo avance siempre aunque entre más de lo que se estudia. De cada 10, `CLASS_RECENT_SHARE` de la reciente;
+    # se encuentran en el medio. Después, lo demás, nivel a nivel.
     dates = {ex["id"]: class_date(ex, eby, sby) for ex in exercises}
-    order, days = [], sorted({d for d in dates.values() if d})
-    # La última clase, delante de todo; detrás, lo atrasado, de la primera clase a la última (YAGO, review 011: cada
-    # clase trae más de lo que estudia en una semana, y en orden cronológico lo último quedaría cada vez más lejos).
-    for day in days[-1:] + days[:-1]:
-        order += interleave_streams([ex for ex in exercises if dates[ex["id"]] == day], key)
+    days = sorted({d for d in dates.values() if d})
+    block = {d: interleave_streams([ex for ex in exercises if dates[ex["id"]] == d], key) for d in days}
+    merged = class_queues([block[d] for d in reversed(days)], [block[d] for d in days])
+    # Y otra pasada de mezcla por tipo sobre el bloque entero, respetando dentro de cada tipo el orden de las colas:
+    # al juntar dos principios de clase no se amontonan las de oír.
+    at, xby = {x: n for n, x in enumerate(merged)}, {ex["id"]: ex for ex in exercises}
+    order = interleave_streams([xby[x] for x in merged], lambda ex: at[ex["id"]])
     by_level = {}
     for ex in exercises:
         if not dates[ex["id"]]:
@@ -4076,6 +4081,34 @@ def new_card_order(entries, sentences, exercises, pending=None):
     for lv in sorted(by_level, key=lambda v: (v is None, v or 0)):
         order += interleave_streams(by_level[lv], key)
     return {ex_id: pos for pos, ex_id in enumerate(order)}
+
+
+CLASS_RECENT_SHARE = 0.7   # de cada 10 nuevas de clase, 7 de la cola reciente y 3 de la atrasada (YAGO, lote 012)
+
+
+def class_queues(recent, backlog, share=None):
+    """Junta las dos colas de clase. `recent` y `backlog` son las mismas clases (listas de ids ya mezcladas),
+    de la más nueva a la más antigua y al revés. En cada posición sale la cola que va por debajo de su parte
+    (`share` para la reciente, el resto para la atrasada), saltando lo que la otra ya sacó; acaban encontrándose."""
+    share = CLASS_RECENT_SHARE if share is None else share
+    a = [x for blk in recent for x in blk]
+    b = [x for blk in backlog for x in blk]
+    out, seen, i, j, na, nb = [], set(), 0, 0, 0, 0
+    while True:
+        while i < len(a) and a[i] in seen:
+            i += 1
+        while j < len(b) and b[j] in seen:
+            j += 1
+        if i >= len(a) and j >= len(b):
+            return out
+        take_recent = j >= len(b) or (i < len(a) and na * (1 - share) <= nb * share)
+        x = a[i] if take_recent else b[j]
+        out.append(x)
+        seen.add(x)
+        if take_recent:
+            na += 1
+        else:
+            nb += 1
 
 
 CLASS_ORIGINS = {"class", "class-audio"}   # source.origin de lo que viene de clase: diapositivas, deberes, apuntes
