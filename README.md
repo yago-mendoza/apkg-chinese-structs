@@ -27,7 +27,7 @@
 - **You** drop class notes in `1-inbox/`, in any format, and now and then say *process the inbox*.
 - **The agent** turns them into dictionary entries, sentences and cards, generates the audio and loads the deck into Anki.
 - **After each batch** it leaves you a review. It opens with the few questions it really needs you to answer; below, your level, gaps, what didn't go in and why, for whenever you want to dig. You answer inline; your answers feed the next batch.
-- **You study** in Anki, one HSK level at a time. Nothing else to maintain.
+- **You study** in Anki: what you saw in class first, then the rest, one HSK level at a time. Nothing else to maintain.
 
 <p align="center">
   <img src="docs/assets/anki-card.jpg" width="300" alt="A listening card on the phone after answering: typed pinyin checked, hanzi, IPA, meaning, pronunciation traps, an example sentence and Anki's review intervals">
@@ -92,9 +92,9 @@ The deck is ordered by difficulty using the levels of the HSK 3.0 (the 2021 stan
 
 - **Every item has a level.** Words on the official list (`sources/hsk/`) take their official level, computed by `anki.py`. Anything else gets a level estimated by the agent, with the reason written down. A sentence takes the highest level of its words, so it never smuggles in vocabulary from a later level.
 - **Level first, theme second.** In Anki: `🐉 Chino práctico::HSK 1::02 Saludos y despedidas`. Moving an item to another level keeps its review history.
-- **One level at a time.** New cards come out level by level, so you can study the whole deck (or just your current level's subdeck). Anything from a higher level, even if it came from your own notes, is filed under its level and waits.
+- **Class first, then one level at a time.** New cards from your classes come out first, whatever their level: the latest classes and the oldest pending ones, mixed, so neither waits for long. Everything else comes out level by level, so you study the whole deck. Anything from a higher level is filed under its level: from class, it still comes out with the class; from your own research, it waits.
 - **Knowing where you stand.** Every review reports how much of each level's vocabulary the deck covers. When you reach a level (at least 80% of its vocabulary, plus the agent's judgement on the sentence patterns you already handle), the agent says so clearly. Anything that arrives later from a level you already passed is flagged as a gap from that level.
-- **Gaps against a curriculum.** The review compares the deck with your current level, both the official list and the lesson-by-lesson sequence of standard courses, and suggests what is missing.
+- **Gaps against a curriculum.** The review compares the deck with your current level's official list and suggests what is missing (lesson-by-lesson course sequences are planned).
 
 ## Getting started
 
@@ -118,22 +118,22 @@ The agent pushes the deck itself. To do it by hand:
 
 ```powershell
 .\.venv\Scripts\python anki.py audio   # synthesize only the missing audio
-.\.venv\Scripts\python anki.py push    # build, open Anki, import, set limits and order, sync
+.\.venv\Scripts\python anki.py push --phone-synced   # after syncing your phone: build, open Anki, import, set limits and order, sync
 ```
 
 ## Studying
 
-- Study the whole deck: new cards come out level by level, lowest first. Levels and themes are subdecks, and level, theme, month and purpose are also tags for filtered sessions.
+- Study the whole deck: new cards from your classes come out first, then the rest level by level, lowest first. Levels and themes are subdecks, and level, theme, month and purpose are also tags for filtered sessions.
 - Typed answers accept pinyin with tone marks or digits (`ni3 hao3`) or hanzi from a Chinese keyboard; spaces, case and punctuation are ignored. For sentences you say aloud, typing is optional.
-- The back of each card shows pinyin, IPA, audio, pronunciation traps and, when there is one, the word's family, with the tested word marked ▸.
-- `push` sets the daily limits (`NEW_PER_DAY`, `REVIEWS_PER_DAY` in `anki.py`; this deck's values are in `docs/owner.md`). Reviews settle at roughly 5 to 8 times the new cards: 20 new cards a day means about 100 to 160 reviews, around 25 to 30 minutes.
+- The back of each card shows the answer with pinyin and audio, example sentences with audio, your notes and mnemonics and, when there is one, the word's family, with the tested word highlighted.
+- `push` sets the daily limits (`NEW_PER_DAY`, `REVIEWS_PER_DAY` in `anki.py`; this deck's values are in `docs/owner.md`). Reviews settle at roughly 5 to 8 times the new cards: 30 new cards a day means about 150 to 240 reviews, around 30 to 45 minutes.
 
 ## Using it with your own notes
 
 1. Fork or clone the repository.
 2. Empty the content but keep the structure: clear `1-inbox/history/`, `2-digests/` (including `state.md`), `3-data/audio/` and the review in `1-inbox/` (keep each `README.md`); delete the files in `3-data/lexicon/`, `3-data/sentences/` and `3-data/exercises/`; adjust `3-data/themes.yaml`. `4-notebook/` regenerates itself.
 3. In `anki.py`, change `DECK_NAME` and `GUID_NAMESPACE` so your deck never collides with this one.
-4. Rewrite `docs/goal.md` for yourself (who is learning, why, what should go in, in what order), replace `docs/owner.md` with your own notes and keep or empty `docs/decisions.md` (why this deck's rules are what they are). The pronunciation traps assume a Spanish speaker.
+4. Rewrite `docs/goal.md` for yourself (who is learning, why, what should go in, in what order), replace `docs/owner.md` with your own notes and keep or empty `docs/decisions.md` (why this deck's rules are what they are). The sound-alike pairs it proposes (`near_soundalikes`) assume a Spanish speaker.
 5. Set up Azure and Anki as above, drop your first notes in `1-inbox/` and ask your agent to *process the inbox*. `AGENTS.md` tells it everything else.
 
 ## Reference
@@ -150,7 +150,7 @@ The agent pushes the deck itself. To do it by hand:
 - `tools/history.py`: what each batch did to every entry, sentence and exercise, from git; `close-batch` writes it to `records/history.json`.
 - `tools/class_audio.py`: transcribes a class recording dropped in `1-inbox/` (local Whisper large-v3, chosen because it is the most accurate Whisper model for Chinese; the teacher's voice told apart from yours) into `private/`, as context for the batch. Separate environment: `tools/requirements-audio.txt`.
 
-**Commands** (mostly for the agent): `lookup <term>`, `hanzi <characters>` (pieces, sound and meaning of each character), `plan` (missing cards), `scaffold` (writes them in the standard format), `gaps` (how the deck is distributed), `stats` (what you fail in Anki, read-only), `retro` (the process review every 4 batches), `check`, `notebook`, `build`, `export` (the public dictionary), `close-batch <batch>` (archive, commit and tag), `audio`, `push`. `push --prune` removes cards whose exercise no longer exists (it lists them first and requires `--force` if there are many); `push --reset` returns the whole deck to new, with no progress; once the testing phase is over (`TESTING_PHASE`) it refuses without `--force`. Tests: `.\.venv\Scripts\python -m unittest discover -s tests`, including a simulated AnkiConnect that checks nothing outside this deck is ever moved, deleted or reconfigured. GitHub Actions runs `check` and the tests on every push.
+**Commands** (mostly for the agent): `lookup <term>`, `hanzi <characters>` (pieces, sound and meaning of each character), `plan` (missing cards), `scaffold` (writes them in the standard format), `gaps` (how the deck is distributed), `stats` (what you fail in Anki, read-only), `retro` (the process review every 4 batches), `check`, `notebook`, `build`, `export` (the public dictionary), `close-batch <batch>` (archive, commit and tag), `audio`, `push`. `push` refuses to run until you confirm your phone has synced (`--phone-synced`), so what you studied on the phone is never overwritten. `push --prune` removes cards whose exercise no longer exists (it lists them first, requires `--force` if there are many and never deletes a card with real reviews in its history); `push --reset` returns the whole deck to new, with no progress; once the testing phase is over (`TESTING_PHASE`) it refuses without `--force`. Tests: `.\.venv\Scripts\python -m unittest discover -s tests`, including a simulated AnkiConnect that checks nothing outside this deck is ever moved, deleted or reconfigured. GitHub Actions runs `check` and the tests on every push.
 
 **External lists.** Your notes and your goal decide what goes in. The HSK 3.0 word list (`sources/hsk/`, from [drkameleon/complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary), MIT) orders items by level and shows gaps; it is never imported wholesale. Course books and character references that cannot be redistributed are consulted locally only: nothing in the repository depends on them or copies from them.
 

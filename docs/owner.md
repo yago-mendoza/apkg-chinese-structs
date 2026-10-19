@@ -5,7 +5,7 @@ Configuración y decisiones propias de este mazo (Yago Mendoza). Nada secreto: e
 ## Quién estudia y cómo
 
 - Objetivo, nivel y forma de estudiar: `docs/goal.md` (ahí se usan para decidir el contenido).
-- Escribe con teclado chino en el móvil (pinyin con tildes o hanzi) y estudia el mazo padre entero, mezclado: las nuevas ya salen nivel a nivel. Sus otros mazos de Anki: regla en `AGENTS.md`.
+- Escribe con teclado chino en el móvil (pinyin con tildes o hanzi) y estudia el mazo padre entero, mezclado: las nuevas ya salen en orden (lo de clase primero y después nivel a nivel; `docs/goal.md`). Sus otros mazos de Anki: regla en `AGENTS.md`.
 
 ## Entorno
 
@@ -31,7 +31,7 @@ Al sincronizar, si la misma tarjeta cambió en dos sitios, Anki se queda con la 
 
 - En el móvil, sincronización automática al abrir y al cerrar Anki (AnkiMobile: Preferencias → Sincronización; AnkiDroid: Ajustes → Sincronización); en el iPhone de YAGO no funciona. Y al terminar cada sesión, sincronizar a mano y esperar a que acabe.
 - Antes de pedir un lote («procesa el inbox»), sincronizar el móvil. Mientras el agente trabaja, no estudiar en el móvil.
-- **El agente no sube nada sin la confirmación de YAGO de que el móvil está sincronizado**, aunque haya pedido subirlo al acabar: lo pregunta y espera, y solo entonces pasa `--phone-synced` a `push` (sin él, `push` se niega). Si YAGO no está, no sube; deja dicho que está listo para subir (`docs/decisions.md`, 2026-10-16).
+- **El agente no sube nada sin la confirmación de YAGO de que el móvil está sincronizado**, aunque haya pedido subirlo al acabar: lo pregunta y espera, y solo entonces pasa `--phone-synced` a `push` (sin él, `push` se niega). Si YAGO no está, no sube; deja dicho que está listo para subir (`docs/decisions.md`, 2026-10-16 y 2026-10-19).
 - Cuando el agente termina (`push` sincroniza al empezar y al acabar), sincronizar el móvil antes de estudiar.
 - Si Anki pide una sincronización completa, elegir la dirección con cuidado: descargar de AnkiWeb, salvo que se sepa que el dispositivo tiene lo más nuevo.
 
@@ -39,8 +39,7 @@ Al sincronizar, si la misma tarjeta cambió en dos sitios, Anki se queda con la 
 
 - **`push` dice que AnkiConnect no responde**: abrir Anki en el PC; si ya estaba abierto, cerrarlo del todo y reabrirlo (el complemento se carga al arrancar).
 - **Sin sincronizar**: iniciar sesión en AnkiWeb desde el botón Sincronizar de Anki desktop.
-- **El móvil muestra algo viejo**: sincronizar el móvil después de cada `push`.
-- **Antes de un lote grande**: sincronizar el móvil primero, para que AnkiWeb tenga los repasos del día antes de que `push` suba cambios (si Anki pidiera una sincronización completa, no se pierde nada del móvil).
+- **El móvil muestra algo viejo, o va a empezar un lote**: ver «Sincronizar sin perder nada».
 - **Un lote salió mal**: volver a la etiqueta del lote anterior (`lote-NNN`) y hacer `push` (ver «Lotes disruptivos» en `docs/design.md`).
 - **`audio` falla**: comprobar las variables de entorno (reiniciar la terminal tras cambiarlas) y que el recurso de Azure sigue activo.
 - **Pocas tarjetas azules un día**: Anki cuenta las nuevas ya empezadas hoy contra el límite; se puede ampliar solo para hoy (Estudio personalizado → aumentar el límite de nuevas de hoy) o pedirlo al agente.

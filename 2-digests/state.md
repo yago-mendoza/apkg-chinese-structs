@@ -18,7 +18,7 @@
 ## Tu método
 
 - Estudia casi a diario: 13 de los últimos 14 días, unos 18 minutos por día, sobre todo en el móvil. Desde el lote 012, 30 nuevas al día. ([lote 012](/2-digests/summary-012-2026-10-19-querer-poder-y-matices.md#seguimiento), [30 al día](/docs/decisions.md#2026-10-19--30-nuevas-al-día))
-- Lo de clase sale primero, con la última clase delante y lo atrasado detrás, de la primera a la última. ([la última clase](/docs/decisions.md#2026-10-19--la-última-clase-delante))
+- Lo de clase sale primero, por dos colas: 7 de cada 10 de las clases recientes y 3 de lo atrasado. ([dos colas](/docs/decisions.md#2026-10-19--lo-de-clase-por-dos-colas))
 - Las de oír tienen que ser retos; en las frases que ya practica para decir, solo las de clase. ([oír](/docs/decisions.md#2026-10-19--oír-una-frase-para-decir-solo-si-es-de-clase))
 - Investiga con un asistente y pega en «Tus notas» lo que le convence, con sus comentarios; rinde más con contrastes que con listas. ([lote 012](/2-digests/summary-012-2026-10-19-querer-poder-y-matices.md#seguimiento))
 - Quiere el pinyin junto a cada hanzi en el review, sus mnemotecnias en todas partes y diagramas cuando ayuden. ([review en goal](/docs/goal.md#cómo-se-le-habla-el-review), [el reverso](/docs/decisions.md#2026-10-19--el-reverso-en-orden-y-sin-notas-dobles))
@@ -43,4 +43,6 @@
 - Si quitar las 10 tarjetas de oír con algún repaso que se quedaron al aplicar la regla de clase. ([lote 012](/2-digests/summary-012-2026-10-19-querer-poder-y-matices.md#cambios-en-el-sistema))
 - El banquillo: lo poco útil, apuntado pero fuera de la cola. ([lote 012](/2-digests/summary-012-2026-10-19-querer-poder-y-matices.md#seguimiento))
 - Pagar: si lo trae de clase o entra ya (扫码 espera en el desván). ([lote 010](/2-digests/summary-010-2026-10-11-construir-numeros-y-movimiento.md#seguimiento))
+- Tres reglas que la limpieza de las directrices dejó para él: separar los pasos de una palabra un día entero a 30 nuevas al día, si el agente puede crear un matiz por su cuenta y cuántos lotes a la semana con su nuevo horario. ([limpieza](/docs/decisions.md#2026-10-19--limpieza-de-las-directrices-sin-cambiar-reglas))
+- Las clases pasan a una por semana (viernes a las 12:00, del 30 de octubre al 1 de enero) y después a dos (jueves y viernes, del 7 de enero al 5 de febrero); la rutina de `docs/goal.md` se actualiza cuando empiece. ([lote 012](/2-digests/summary-012-2026-10-19-querer-poder-y-matices.md#cambios-posteriores))
 - Cómo quiere las tarjetas de comprensión y de construir, cuando las vea en Anki. ([comprensión lectora](/docs/decisions.md#2026-10-01--comprensión-lectora), [construir](/docs/decisions.md#2026-10-11--construir-producción-libre-con-material-y-modelos))

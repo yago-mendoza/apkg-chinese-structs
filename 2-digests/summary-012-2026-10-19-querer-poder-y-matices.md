@@ -133,3 +133,15 @@ En cifras: 338 tarjetas nuevas y 232 retiradas (231 de oír y una con nombres qu
 **Avisos.**
 - Antes de estudiar, sincroniza el móvil: este lote movió y borró tarjetas.
 - 10 tarjetas de oír se quedan esperando tu decisión (ver el review).
+
+## Cambios posteriores
+
+**2026-10-19, después del cierre**, en el chat, con su «sí»:
+
+- **Lo de clase, por dos colas.** Con su prueba de 她看起来很年轻 (deberes del 13) se vio que la clase del 13 quedaba unos 33 días por detrás de la del 15. Ahora lo de clase sale por dos colas, 7 de cada 10 de la reciente (de la clase más nueva hacia atrás) y 3 de la atrasada (de la más antigua hacia delante), y el bloque se vuelve a mezclar por tipo. La clase del 13 pasa a empezar hacia la nueva 106 y lo de septiembre sale desde el principio. ([decisión](/docs/decisions.md#2026-10-19--lo-de-clase-por-dos-colas))
+- **Lo que pega de sus consultas** tiene regla escrita: investigación propia, de su nivel o uno por encima, contrastes primero, nunca delante de lo de clase. ([decisión](/docs/decisions.md#2026-10-19--lo-que-pega-de-sus-consultas))
+- **Lo que suena parecido, buscado solo**: el review trae «Suenan parecido», hasta 12 parejas sin contraste (帮 / 半, 四 / 十, 几 / 字…) para que marque las que confunde. Hoy salen 42. ([decisión](/docs/decisions.md#2026-10-19--lo-que-suena-parecido-buscado-solo))
+- **Limpieza de las directrices**: 27 arreglos sin cambiar reglas; tres quedan para que decida él. ([decisión](/docs/decisions.md#2026-10-19--limpieza-de-las-directrices-sin-cambiar-reglas))
+- **Las clases cambian de ritmo** (lo contó en el chat): una por semana, los viernes a las 12:00, del 30 de octubre al 1 de enero, para que Anki se ponga al día; después, dos por semana (jueves y viernes a las 12:00), del 7 de enero al 5 de febrero. Le pedirá a la profesora más pronunciación, tonos y hablar, y menos vocabulario nuevo.
+- El review 012 no se tocó (ya estaba contestando). Todo esto llega en el review 013.
+
