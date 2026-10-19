@@ -553,17 +553,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 打电话}
     answer: {hanzi: 打电话, pinyin: dǎ diànhuà, meaning: llamar por teléfono}
     comments: []
-  - id: x.listen.bingxiang-li-you-jidan-ma
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.bingxiang-li-you-jidan-ma
-    targets: [s.bingxiang-li-you-jidan-ma]
-    context: [w.bingxiang, w.li.inside, w.you.have, w.jidan, w.ma]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Hay huevos en la nevera?'}
-    comments: []
   - id: x.produce.bingxiang-li-you-jidan-ma
     added: 2026-10-08
     lang: es
@@ -597,17 +586,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «No tengo reloj.»'}
     answer: {meaning: No tengo reloj.}
     comments: []
-  - id: x.listen.wo-de-erji-ne
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.wo-de-erji-ne
-    targets: [s.wo-de-erji-ne]
-    context: [w.wo, w.de, w.erji, w.ne]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Dónde están mis auriculares?'}
-    comments: []
   - id: x.produce.wo-de-erji-ne
     added: 2026-10-08
     lang: es
@@ -618,17 +596,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde están mis auriculares?»'}
     answer: {meaning: '¿Dónde están mis auriculares?'}
-    comments: []
-  - id: x.listen.wo-zai-fangjian-li
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.wo-zai-fangjian-li
-    targets: [s.wo-zai-fangjian-li]
-    context: [w.wo, w.zai.at, w.fangjian, w.li.inside]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Estoy en la habitación.}
     comments: []
   - id: x.produce.wo-zai-fangjian-li
     added: 2026-10-08
@@ -829,4 +796,129 @@ exercises:
     skills: [reading, pinyin, tones]
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 房}
     answer: {typed: fang2, hanzi: 房, pinyin: fáng, meaning: 'Sale en 房间 fángjiān «habitación», 房子 fángzi «casa (el edificio)».'}
+    comments: []
+  - id: x.dictation.maikefeng
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.maikefeng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mai4 ke4 feng1, hanzi: 麦克风, pinyin: màikèfēng, meaning: micrófono}
+    comments: []
+  - id: x.read.maikefeng
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.maikefeng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 麦克风}
+    answer: {hanzi: 麦克风, pinyin: màikèfēng, meaning: micrófono}
+    comments: []
+  - id: x.listen.maikefeng-zai-nali
+    added: 2026-10-19
+    lang: es
+    type: listen
+    sentence: s.maikefeng-zai-nali
+    targets: [s.maikefeng-zai-nali]
+    context: [w.maikefeng, w.zai.at, w.nali]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Dónde está el micrófono?'}
+    comments: []
+  - id: x.dictation.zhu.live
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.zhu.live]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhu4, hanzi: 住, pinyin: zhù, meaning: vivir (en un sitio); alojarse}
+    comments: []
+  - id: x.produce.zhu.live
+    added: 2026-10-19
+    lang: es
+    type: produce
+    targets: [w.zhu.live]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «vivir (en un sitio); alojarse»? Escribe el pinyin.'}
+    answer: {typed: zhu4, hanzi: 住, pinyin: zhù, meaning: vivir (en un sitio); alojarse}
+    comments: []
+  - id: x.read.zhu.live
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.zhu.live]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 住}
+    answer: {hanzi: 住, pinyin: zhù, meaning: vivir (en un sitio); alojarse}
+    comments: []
+  - id: x.dictation.chuan.wear
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.chuan.wear]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chuan1, hanzi: 穿, pinyin: chuān, meaning: 'ponerse, llevar puesto (ropa)'}
+    comments: []
+  - id: x.produce.chuan.wear
+    added: 2026-10-19
+    lang: es
+    type: produce
+    targets: [w.chuan.wear]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «ponerse, llevar puesto (ropa)»? Escribe el pinyin.'}
+    answer: {typed: chuan1, hanzi: 穿, pinyin: chuān, meaning: 'ponerse, llevar puesto (ropa)'}
+    comments: []
+  - id: x.read.chuan.wear
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.chuan.wear]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 穿}
+    answer: {hanzi: 穿, pinyin: chuān, meaning: 'ponerse, llevar puesto (ropa)'}
+    comments: []
+  - id: x.produce.ni-zhu-zai-nali
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.ni-zhu-zai-nali
+    targets: [s.ni-zhu-zai-nali]
+    context: [w.ni, w.zhu.live, w.zai.at, w.nali]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde vives?»'}
+    answer: {meaning: '¿Dónde vives?'}
+    comments: []
+  - id: x.produce.wo-chuan-zhe-jian
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.wo-chuan-zhe-jian
+    targets: [s.wo-chuan-zhe-jian]
+    context: [w.wo, w.chuan.wear, w.zhe, w.jian.cl]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me pongo esta (prenda).»'}
+    answer: {meaning: Me pongo esta (prenda).}
+    comments: []
+  - id: x.contrast.zhu.live
+    added: 2026-10-19
+    lang: es
+    type: contrast
+    group: g.zhu-zhu
+    targets: [w.zhu.live]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 住, pinyin: zhù, meaning: vivir (en un sitio); alojarse}
+    comments: []
+  - id: x.contrast.chuan.wear
+    added: 2026-10-19
+    lang: es
+    type: contrast
+    group: g.chuan-chuan
+    targets: [w.chuan.wear]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 穿, pinyin: chuān, meaning: 'ponerse, llevar puesto (ropa)'}
     comments: []

@@ -81,6 +81,7 @@ entries:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Al final, convierte la frase en propuesta: 我们下午见吧 «nos vemos por la tarde, ¿vale?»; 买吧 «cómpralo».'}
       - {kind: mnemonic, private: false, date: '2026-10-11', text: '吧 es como el «va» de «vinga, va»: anima a hacerlo, sin mandar.', original: 'el ''ba'' de zou ba m recuerda al ''va'' en caltan, de ''vinga, va'' sabes ¿? ayuda a entneder un poco mas no?¿'}
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Tres usos: propone (我们走吧 «vámonos»), suaviza una orden (你坐吧 «siéntate, anda») y supone (你累了吧？ «estarás cansado, ¿no?»). 走吧 sin sujeto vale para «vámonos» y para «vete»: 我们走吧, 你走吧.'}
+      - {kind: mnemonic, private: false, date: '2026-10-19', text: 'Una boca 口 junto a media puerta 巴: «venga, vámonos», mientras la empuja para salir.', original: 'Y luego al lao boca y media puerta del oeste (el ba) sabes? Esta mnemotecnia es buenisima.'}
   - id: g.ba-ba
     kind: group
     basis: soundalike
@@ -166,3 +167,44 @@ entries:
       - {ref: w.you.right, cue: 'cae (4.º), lado: 左右'}
     source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
     comments: []
+  - id: w.haishi
+    use: say
+    role: function
+    kind: word
+    hanzi: 还是
+    pinyin: háishi
+    meaning: {es: o (en una pregunta entre dos), en: or (in questions)}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    accept_pinyin_mismatch: '是 va en tono neutro: háishi'
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Solo en preguntas que dan a elegir: 你喝茶还是喝咖啡？ «¿tomas té o café?». La pregunta ya está en 还是: no lleva 吗.'}
+  - id: g.ba-ne.look
+    kind: group
+    basis: visual
+    title: '吧 y 呢'
+    explanation: 'Las dos partículas llevan 口 a la izquierda; la derecha las separa.'
+    members:
+      - {ref: w.ba.particle, cue: '巴 a la derecha: media puerta (走吧)'}
+      - {ref: w.ne, cue: '尼 a la derecha: alguien sentado bajo un techo (你呢？)'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments: []
+  - id: w.zuihao
+    use: say
+    role: function
+    kind: word
+    hanzi: 最好
+    pinyin: zuìhǎo
+    meaning: {es: 'lo mejor es (hacer algo); mejor', en: 'had better; best'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Delante del verbo, aconseja: 你最好问一下老师 «mejor pregúntale a la profesora».'}
+  - id: w.haiyou
+    use: say
+    role: function
+    kind: word
+    hanzi: 还有
+    pinyin: háiyǒu
+    meaning: {es: 'y además; todavía hay', en: 'also; there is still'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Para añadir algo: 还有，我明天不来 «y otra cosa: mañana no vengo». En una tienda, 还有吗？ «¿queda más?».'}

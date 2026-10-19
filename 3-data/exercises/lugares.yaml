@@ -498,17 +498,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Es conductor.»'}
     answer: {meaning: Es conductor.}
     comments: []
-  - id: x.listen.wo-zuo-ditie-qu-jichang
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.wo-zuo-ditie-qu-jichang
-    targets: [s.wo-zuo-ditie-qu-jichang]
-    context: [w.wo, w.zuo.sit, w.ditie, w.qu, w.jichang]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Voy al aeropuerto en metro.}
-    comments: []
   - id: x.produce.wo-zuo-ditie-qu-jichang
     added: 2026-10-08
     lang: es
@@ -519,17 +508,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Voy al aeropuerto en metro.»'}
     answer: {meaning: Voy al aeropuerto en metro.}
-    comments: []
-  - id: x.listen.ta-zai-xuexiao
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.ta-zai-xuexiao
-    targets: [s.ta-zai-xuexiao]
-    context: [w.ta.he, w.zai.at, w.xuexiao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Está en la escuela.}
     comments: []
   - id: x.produce.ta-zai-xuexiao
     added: 2026-10-08
@@ -581,17 +559,6 @@ exercises:
     skills: [reading, pinyin, tones]
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 车}
     answer: {typed: che1, hanzi: 车, pinyin: chē, meaning: 'Sale en 火车 huǒchē «tren», 车票 chēpiào «billete (de tren o autobús)».'}
-    comments: []
-  - id: x.listen.ta-zai-nali
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.ta-zai-nali
-    targets: [s.ta-zai-nali]
-    context: [w.ta.he, w.zai.at, w.nali.there]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Está allí.}
     comments: []
   - id: x.produce.ta-zai-nali
     added: 2026-10-08
@@ -727,17 +694,6 @@ exercises:
     skills: [reading, pinyin]
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 西}
     answer: {hanzi: 西, pinyin: xī, meaning: oeste}
-    comments: []
-  - id: x.listen.wo-hui-hui-jia
-    added: 2026-10-10
-    lang: es
-    type: listen
-    sentence: s.wo-hui-hui-jia
-    targets: [s.wo-hui-hui-jia]
-    context: [w.wo, w.hui.can, w.hui.return, w.jia]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Volveré a casa.}
     comments: []
   - id: x.produce.wo-hui-hui-jia
     added: 2026-10-10
@@ -972,17 +928,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 下车}
     answer: {hanzi: 下车, pinyin: xià chē, meaning: bajarse (de un vehículo)}
     comments: []
-  - id: x.listen.wo-yao-huiqu-le
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.wo-yao-huiqu-le
-    targets: [s.wo-yao-huiqu-le]
-    context: [w.wo, w.yao, w.huiqu, w.le]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Tengo que volver.}
-    comments: []
   - id: x.produce.wo-yao-huiqu-le
     added: 2026-10-11
     lang: es
@@ -1005,17 +950,6 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Ha vuelto.}
     comments: []
-  - id: x.listen.wo-qu-nabian-zuo
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.wo-qu-nabian-zuo
-    targets: [s.wo-qu-nabian-zuo]
-    context: [w.wo, w.qu, w.nabian, w.zuo.sit]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Voy a sentarme allí.}
-    comments: []
   - id: x.produce.wo-qu-nabian-zuo
     added: 2026-10-11
     lang: es
@@ -1026,17 +960,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Voy a sentarme allí.»'}
     answer: {meaning: Voy a sentarme allí.}
-    comments: []
-  - id: x.listen.xishoujian-zai-nabian
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.xishoujian-zai-nabian
-    targets: [s.xishoujian-zai-nabian]
-    context: [w.xishoujian, w.zai.at, w.nabian]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: El baño está por allí.}
     comments: []
   - id: x.produce.xishoujian-zai-nabian
     added: 2026-10-11
@@ -1121,4 +1044,168 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde está mi libro?»'}
     answer: {meaning: '¿Dónde está mi libro?'}
+    comments: []
+  - id: x.dictation.huiguo
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.huiguo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hui2 guo2, hanzi: 回国, pinyin: huíguó, meaning: volver a su país}
+    comments: []
+  - id: x.read.huiguo
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.huiguo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 回国}
+    answer: {hanzi: 回国, pinyin: huíguó, meaning: volver a su país}
+    comments: []
+  - id: x.listen.ta-mingnian-huiguo
+    added: 2026-10-19
+    lang: es
+    type: listen
+    sentence: s.ta-mingnian-huiguo
+    targets: [s.ta-mingnian-huiguo]
+    context: [w.ta.he, w.mingnian, w.huiguo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: El año que viene vuelve a su país.}
+    comments: []
+  - id: x.contrast.liu
+    added: 2026-10-19
+    lang: es
+    type: contrast
+    group: g.liu-liu
+    targets: [w.liu]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 留, pinyin: liú, meaning: quedarse; dejar (algo para alguien)}
+    comments: []
+  - id: x.dictation.liu
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.liu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: liu2, hanzi: 留, pinyin: liú, meaning: quedarse; dejar (algo para alguien)}
+    comments: []
+  - id: x.read.liu
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.liu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 留}
+    answer: {hanzi: 留, pinyin: liú, meaning: quedarse; dejar (algo para alguien)}
+    comments: []
+  - id: x.listen.ta-xiang-liu-zai-zhongguo
+    added: 2026-10-19
+    lang: es
+    type: listen
+    sentence: s.ta-xiang-liu-zai-zhongguo
+    targets: [s.ta-xiang-liu-zai-zhongguo]
+    context: [w.ta.he, w.xiang, w.liu, w.zai.at, w.zhongguo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiere quedarse en China.}
+    comments: []
+  - id: x.dictation.difang
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.difang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: di4 fang5, hanzi: 地方, pinyin: dìfang, meaning: 'sitio, lugar'}
+    comments: []
+  - id: x.produce.difang
+    added: 2026-10-19
+    lang: es
+    type: produce
+    targets: [w.difang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «sitio, lugar»? Escribe el pinyin.'}
+    answer: {typed: di4 fang5, hanzi: 地方, pinyin: dìfang, meaning: 'sitio, lugar'}
+    comments: []
+  - id: x.read.difang
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.difang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 地方}
+    answer: {hanzi: 地方, pinyin: dìfang, meaning: 'sitio, lugar'}
+    comments: []
+  - id: x.tones.difang
+    added: 2026-10-19
+    lang: es
+    type: tones
+    targets: [w.difang]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 地方, pinyin: di fang}
+    answer: {typed: '45', hanzi: 地方, pinyin: dìfang, meaning: 'sitio, lugar'}
+    comments: []
+  - id: x.dictation.lu
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.lu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lu4, hanzi: 路, pinyin: lù, meaning: 'camino, calle'}
+    comments: []
+  - id: x.produce.lu
+    added: 2026-10-19
+    lang: es
+    type: produce
+    targets: [w.lu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «camino, calle»? Escribe el pinyin.'}
+    answer: {typed: lu4, hanzi: 路, pinyin: lù, meaning: 'camino, calle'}
+    comments: []
+  - id: x.read.lu
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.lu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 路}
+    answer: {hanzi: 路, pinyin: lù, meaning: 'camino, calle'}
+    comments: []
+  - id: x.produce.zhege-difang-hen-piaoliang
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.zhege-difang-hen-piaoliang
+    targets: [s.zhege-difang-hen-piaoliang]
+    context: [w.zhe, w.ge, w.difang, w.hen, w.piaoliang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Este sitio es muy bonito.»'}
+    answer: {meaning: Este sitio es muy bonito.}
+    comments: []
+  - id: x.produce.wo-renshi-lu
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.wo-renshi-lu
+    targets: [s.wo-renshi-lu]
+    context: [w.wo, w.renshi, w.lu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Sé el camino.»'}
+    answer: {meaning: Sé el camino.}
+    comments: []
+  - id: x.contrast.chuan
+    added: 2026-10-19
+    lang: es
+    type: contrast
+    group: g.chuan-chuan
+    targets: [w.chuan]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 船, pinyin: chuán, meaning: barco}
     comments: []

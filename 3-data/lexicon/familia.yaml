@@ -12,6 +12,7 @@ entries:
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: '2026-10-01', text: 'Frente a 妈妈 māma: 爸 bà cae; 妈 mā va alto y plano.'}
+      - {kind: mnemonic, private: false, date: '2026-10-19', text: '爸: arriba, dos martillos cruzados (父 «padre»); abajo, media puerta de bar (巴), la misma del 吧 de 走吧.', original: 'bàba mnemotecnia, dos martillos y una puerta de bar (una mitad de la puerta, como en el "ba" de zou ba)'}
   - id: w.mama
     use: say
     role: content

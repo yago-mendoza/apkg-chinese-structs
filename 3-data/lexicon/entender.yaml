@@ -88,3 +88,59 @@ entries:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: '这样说对吗？ «¿se dice así?». 那样 nàyàng es «así, como eso».'}
+  - id: w.shuohua
+    use: say
+    role: content
+    kind: word
+    hanzi: 说话
+    pinyin: shuōhuà
+    meaning: {es: hablar (con alguien), en: to talk}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 说 «decir» + 话 «palabras»: hablar, sin decir de qué. Con un idioma va 说 solo: 说中文. 别说话 «no hables», «calla».'}
+  - id: w.liaotian
+    use: say
+    role: content
+    kind: word
+    hanzi: 聊天
+    pinyin: liáotiān
+    meaning: {es: charlar, en: to chat}
+    level: 2
+    level_reason: 'no está en la lista del HSK 3.0, pero es como se dice charlar a diario (y en los mensajes); 天 es HSK 1'
+    pos: verbo
+    pos_reason: no está en la lista del HSK
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 聊 «charlar» + 天 «cielo, día»: hablar del tiempo, de cualquier cosa. 跟你聊天 «charlar contigo».'}
+  - id: w.gaosu
+    use: say
+    role: content
+    kind: word
+    hanzi: 告诉
+    pinyin: gàosu
+    meaning: {es: 'decir (a alguien), contar', en: 'to tell'}
+    accept_pinyin_mismatch: '诉 va en tono neutro: gàosu'
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Con la persona detrás: 告诉我 «dime», 请告诉我 «dímelo, por favor». 说 dice algo; 告诉 se lo cuenta a alguien.'}
+  - id: w.jide
+    use: say
+    role: content
+    kind: word
+    hanzi: 记得
+    pinyin: jìde
+    meaning: {es: 'acordarse, recordar', en: 'to remember'}
+    accept_pinyin_mismatch: '得 va en tono neutro: jìde'
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 记 «apuntar en la memoria» + 得 «lograr». 你还记得我吗？ «¿te acuerdas de mí?». Lo contrario, 忘记.'}
+  - id: w.wangji
+    use: say
+    role: content
+    kind: word
+    hanzi: 忘记
+    pinyin: wàngjì
+    meaning: {es: 'olvidar', en: 'to forget'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: '我忘记了 «se me ha olvidado». Al hablar se oye mucho 忘了 a secas.'}

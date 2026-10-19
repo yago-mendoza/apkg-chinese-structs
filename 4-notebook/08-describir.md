@@ -44,6 +44,11 @@
 - ✅🃏 看起来 kànqǐlai [kʰan˥˩ tɕʰi˧˩˧ laɪ] · parecer (por el aspecto) · _verbo_ · Lo que se ve por fuera: 她看起来很年轻 «parece muy joven». Palabra a palabra: 看 «mirar» + 起来 «al ponerse a»: «al mirarla, resulta…».
 - ✅🃏 认真 rènzhēn [ʐən˥˩ ʈʂən˥] · serio, aplicado (que se toma las cosas en serio) · _adjetivo_
 - ✅🃏 顺利 shùnlì [ʂwən˥˩ li˥˩] · sin problemas, que va bien · _adjetivo_ · Se oye mucho como deseo: 一切顺利！ «¡que todo vaya bien!».
+- ✅🃏 马马虎虎 mǎmǎhūhū [ma˧˩˧ ma˧˩˧ xu˥ xu˥] · regular, así así · _expresión_ · Palabra a palabra: 马 «caballo» y 虎 «tigre», repetidos: «ni caballo ni tigre», ni una cosa ni otra. Suena a modestia: 我的中文马马虎虎 «mi chino es regular». Para decir que algo no está mal, 还可以 o 还行.
+- ❌ 不咋滴 bù zǎ di [pu˥˩ tsa˧˩˧ ti] · no muy bueno (regional) · _expresión_ · Palabra a palabra: 不 «no» + 咋 «cómo» (regional) + 滴: «no gran cosa».
+- ✅🃏 一切 yíqiè [i˧˥ tɕʰjɛ˥˩] · todo (en general, la situación) · _pronombre_ · Todo lo que pasa, en general: 一切都很好 «todo va bien». Para las cosas de un grupo concreto basta 都: 都对了 «todas están bien».
+- ✅🃏 一样 yíyàng [i˧˥ jɑŋ˥˩] · igual, lo mismo · _partícula_ · Palabra a palabra: 一 «uno» + 样 «forma»: «de una misma forma». 我们一样大 «tenemos la misma edad».
+- ✅🃏 重要 zhòngyào [ʈʂʊŋ˥˩ jɑʊ˥˩] · importante · _adjetivo_ · Palabra a palabra: 重 «pesado» + 要 «necesario»: lo que pesa. 这个很重要 «esto es muy importante».
 
 ## 大, 太 y 天
 
@@ -118,6 +123,13 @@ Suenan igual: el de la izquierda decide.
 - 快 kuài · 忄 a la izquierda: el ánimo
 - 块 kuài · 土 a la izquierda: un trozo de tierra
 
+## 真的 y 正在
+
+Empiezan casi igual: -n o -ng y el tono los separan.
+
+- 真的 zhēnde · acaba en -n y va alto y plano (1.º): 真的吗？
+- 正在 zhèngzài · acaba en -ng y baja fuerte (4.º): 我正在学习
+
 ## Frases
 
 - ✅🃏 他很高。 · tā hěn gāo · Él es alto.
@@ -176,3 +188,9 @@ Suenan igual: el de la izquierda decide.
 - ✅🃏 他很帅，女生都喜欢他。 · tā hěn shuài nǚshēng dōu xǐhuan tā · Es muy guapo; les gusta a todas las chicas.
 - ✅🃏 他很聪明。 · tā hěn cōngming · Es muy listo.
 - ✅🃏 他们都很笨。 · tāmen dōu hěn bèn · Son todos tontos.
+- ✅🃏 一切都很好。 · yíqiè dōu hěn hǎo · Todo va bien.
+- ✅🃏 别太累了！ · bié tài lèi le · ¡No te canses demasiado!
+- ✅🃏 太漂亮了！ · tài piàoliang le · ¡Qué bonito!
+- ✅🃏 我的中文马马虎虎。 · wǒ de Zhōngwén mǎmǎhūhū · Mi chino es regular.
+- ✅🃏 我们一样大。 · wǒmen yíyàng dà · Tenemos la misma edad.
+- ✅🃏 这个很重要。 · zhè ge hěn zhòngyào · Esto es muy importante.

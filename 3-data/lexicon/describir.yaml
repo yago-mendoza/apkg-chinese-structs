@@ -532,3 +532,71 @@ entries:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-13', text: 'Se oye mucho como deseo: 一切顺利！ «¡que todo vaya bien!».'}
+  - id: e.mamahuhu
+    use: hear
+    role: content
+    kind: expression
+    hanzi: 马马虎虎
+    pinyin: mǎmǎhūhū
+    meaning: {es: 'regular, así así', en: so-so}
+    level: 3
+    level_reason: '马虎 «descuidado» es HSK 7, pero 马马虎虎 «así así» se oye desde el principio (我的中文马马虎虎); 马 es HSK 1'
+    accept_pinyin_mismatch: '虎虎 se lee hūhū en esta expresión (马马虎虎 mǎmǎhūhū)'
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 马 «caballo» y 虎 «tigre», repetidos: «ni caballo ni tigre», ni una cosa ni otra. Suena a modestia: 我的中文马马虎虎 «mi chino es regular». Para decir que algo no está mal, 还可以 o 还行.'}
+  - id: e.buzadi
+    use: drop
+    use_reason: 'habla del noreste (不咋地), no del mandarín estándar; se dice 不怎么样'
+    role: content
+    kind: expression
+    hanzi: 不咋滴
+    pinyin: bù zǎ di
+    meaning: {es: no muy bueno (regional), en: not great (regional)}
+    level: 7
+    level_reason: 'coloquial del noreste, fuera de la lista del HSK'
+    accept_pinyin_mismatch: '咋 zǎ «cómo» en el habla del noreste; descartada'
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 不 «no» + 咋 «cómo» (regional) + 滴: «no gran cosa».'}
+  - id: w.yiqie
+    use: hear
+    role: content
+    kind: word
+    hanzi: 一切
+    pinyin: yíqiè
+    meaning: {es: 'todo (en general, la situación)', en: everything}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Todo lo que pasa, en general: 一切都很好 «todo va bien». Para las cosas de un grupo concreto basta 都: 都对了 «todas están bien».'}
+  - id: g.zhende-zhengzai
+    kind: group
+    basis: soundalike
+    title: '真的 y 正在'
+    explanation: 'Empiezan casi igual: -n o -ng y el tono los separan.'
+    members:
+      - {ref: w.zhende, cue: 'acaba en -n y va alto y plano (1.º): 真的吗？'}
+      - {ref: w.zhengzai, cue: 'acaba en -ng y baja fuerte (4.º): 我正在学习'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments: []
+  - id: w.yiyang
+    use: say
+    role: content
+    kind: word
+    hanzi: 一样
+    pinyin: yíyàng
+    meaning: {es: 'igual, lo mismo', en: 'the same'}
+    accept_pinyin_mismatch: '一 delante de cuarto tono se dice yí: yíyàng'
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 一 «uno» + 样 «forma»: «de una misma forma». 我们一样大 «tenemos la misma edad».'}
+  - id: w.zhongyao
+    use: say
+    role: content
+    kind: word
+    hanzi: 重要
+    pinyin: zhòngyào
+    meaning: {es: 'importante', en: 'important'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 重 «pesado» + 要 «necesario»: lo que pesa. 这个很重要 «esto es muy importante».'}

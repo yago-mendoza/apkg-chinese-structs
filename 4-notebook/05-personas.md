@@ -40,7 +40,10 @@
 - ✅🃏 眼睛 yǎnjing [jɛn˧˩˧ tɕiŋ] · ojo, ojos · _sustantivo_
 - ✅🃏 头发 tóufa [tʰoʊ˧˥ fa] · pelo (de la cabeza) · _sustantivo_
 - ✅🃏 脸 liǎn [ljɛn˧˩˧] · cara · _sustantivo_ · 月 a la izquierda es «carne»: parte del cuerpo. A la derecha, 人 arriba es el pelo, los dos puntos los ojos y la raya de abajo la boca.
-- ✅🃏 脚 jiǎo [tɕjɑʊ˧˩˧] · pie · _sustantivo_ · 月 «carne» + 却, que lleva 去 «irse»: el pie, que es con lo que te vas.
+- ✅🃏 脚 jiǎo [tɕjɑʊ˧˩˧] · pie · _sustantivo_ · 月 es «carne» (una parte del cuerpo). A la derecha, 去 «irse» y 卩, una persona arrodillada: para irte andando y para levantarte después de arrodillarte necesitas el pie.
+- ✅🃏 生病 shēngbìng [ʂɤŋ˥ piŋ˥˩] · ponerse enfermo; estar enfermo · _verbo_ · Palabra a palabra: 生 «producir, tener» + 病 «enfermedad»: «coger una enfermedad». Con 了, ya ha pasado: 我生病了 «me he puesto enfermo».
+- ✅🃏 关系 guānxi [kwan˥ ɕi] · relación (entre personas o cosas) · _sustantivo_ · Es el 关系 de 没关系 «no pasa nada», literalmente «no tiene relación». 我们关系很好 «nos llevamos muy bien»; 跟你没关系 «no tiene nada que ver contigo». No confundir con 关心 guānxīn «preocuparse por alguien» [HSK 2].
+- ✅🃏 别人 biéren [pjɛ˧˥ ʐən] · los demás, otra gente · _pronombre_ · Palabra a palabra: 别 «otro» + 人 «persona». 别人都来了 «los demás ya han venido». No es el 别 de «no hagas».
 
 ## 他, 她 y 它: los tres son tā
 
@@ -110,3 +113,8 @@ Mismo sonido, otro tono: 叫 cae; 脚 baja y sube.
 - ✅🃏 这个是你的朋友吗？ · zhè ge shì nǐ de péngyou ma · ¿Este es tu amigo?
 - ✅🃏 这个人是不是你的朋友？ · zhè ge rén shì bu shì nǐ de péngyou · ¿Esta persona es amiga tuya o no?
 - ✅🃏 那个人是你的朋友。 · nà ge rén shì nǐ de péngyou · Esa persona es tu amiga.
+- ✅🃏 我喜欢游泳，但是今天我生病了，不能游泳。 · wǒ xǐhuan yóuyǒng dànshì jīntiān wǒ shēngbìng le bù néng yóuyǒng · Me gusta nadar, pero hoy estoy enfermo y no puedo.
+- ✅🃏 这跟你没关系。 · zhè gēn nǐ méi guānxi · Esto no tiene nada que ver contigo.
+- ✅🃏 我们关系很好。 · wǒmen guānxi hěn hǎo · Nos llevamos muy bien.
+- ✅🃏 你是谁？ · nǐ shì shéi · ¿Quién eres?
+- ✅🃏 别人都来了。 · biéren dōu lái le · Los demás ya han venido.

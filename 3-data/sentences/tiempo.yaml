@@ -475,3 +475,135 @@ sentences:
       - {text: 。}
     translation: {es: 'Las diez menos cinco, las diez y cinco, las cinco y ocho de la tarde.', en: '9:55, 10:05, 5:08 p.m.'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: s.wo-yao-shuijiao-le
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 睡觉, ref: w.shuijiao, pinyin: 'shuìjiào'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'Me voy a dormir.', en: 'I''m going to bed.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-juede-kuaiyao-xiayu-le
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
+      - {text: 快要, ref: w.kuaiyao, pinyin: 'kuàiyào'}
+      - {text: 下雨, ref: w.xiayu, pinyin: 'xiàyǔ'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'Me parece que va a llover enseguida.', en: 'I think it''s about to rain.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-yijing-mai-le
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 已经, ref: w.yijing, pinyin: 'yǐjīng'}
+      - {text: 买, ref: w.mai, pinyin: 'mǎi'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'Ya lo he comprado.', en: 'I''ve already bought it.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-hai-mei-mai
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 还, ref: w.hai.still, pinyin: 'hái'}
+      - {text: 没, ref: w.mei, pinyin: 'méi'}
+      - {text: 买, ref: w.mai, pinyin: 'mǎi'}
+      - {text: 。}
+    translation: {es: 'Todavía no lo he comprado.', en: 'I haven''t bought it yet.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-changchang-he-cha
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 常常, ref: w.changchang, pinyin: 'chángcháng'}
+      - {text: 喝, ref: w.he.drink, pinyin: 'hē'}
+      - {text: 茶, ref: w.cha, pinyin: 'chá'}
+      - {text: 。}
+    translation: {es: 'Tomo té a menudo.', en: 'I often drink tea.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-zhengzai-xuexi
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 正在, ref: w.zhengzai, pinyin: 'zhèngzài'}
+      - {text: 学习, ref: w.xuexi, pinyin: 'xuéxí'}
+      - {text: 。}
+    translation: {es: 'Estoy estudiando justo ahora.', en: 'I''m studying right now.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-gang-dao
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 刚, ref: w.gang, pinyin: 'gāng'}
+      - {text: 到, ref: w.dao.reach, pinyin: 'dào'}
+      - {text: 。}
+    translation: {es: 'Acabo de llegar.', en: 'I''ve just arrived.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-mashang-lai
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 马上, ref: w.mashang, pinyin: 'mǎshàng'}
+      - {text: 来, ref: w.lai, pinyin: 'lái'}
+      - {text: 。}
+    translation: {es: 'Voy enseguida.', en: 'I''ll be right there.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-mei-tian-dou-xuexi-zhongwen
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 每, ref: w.mei.each, pinyin: 'měi'}
+      - {text: 天, ref: w.tian, pinyin: 'tiān'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 学习, ref: w.xuexi, pinyin: 'xuéxí'}
+      - {text: 中文, ref: w.zhongwen, pinyin: 'Zhōngwén'}
+      - {text: 。}
+    translation: {es: 'Estudio chino todos los días.', en: 'I study Chinese every day.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-dasuan-mingnian-qu-zhongguo
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 打算, ref: w.dasuan, pinyin: 'dǎsuàn'}
+      - {text: 明年, ref: w.mingnian, pinyin: 'míngnián'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 中国, ref: w.zhongguo, pinyin: 'Zhōngguó'}
+      - {text: 。}
+    translation: {es: 'Pienso ir a China el año que viene.', en: 'I''m planning to go to China next year.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-chi-wan-le
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 吃, ref: w.chi, pinyin: 'chī'}
+      - {text: 完, ref: w.wan.finish, pinyin: 'wán'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'He terminado de comer.', en: 'I''ve finished eating.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-shi-zuihou-yi-ge
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 最后, ref: w.zuihou, pinyin: 'zuìhòu'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yí', sandhi: true}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 。}
+    translation: {es: 'Soy el último.', en: 'I''m the last one.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.women-mingtian-jianmian-ba
+    use: say
+    segments:
+      - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 见面, ref: w.jianmian, pinyin: 'jiànmiàn'}
+      - {text: 吧, ref: w.ba.particle, pinyin: 'ba'}
+      - {text: 。}
+    translation: {es: 'Quedamos mañana.', en: 'Let''s meet tomorrow.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}

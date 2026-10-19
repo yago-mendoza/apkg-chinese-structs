@@ -130,7 +130,7 @@ sentences:
     translation: {es: '¿Cuántos años tienes ya? (a un niño)', en: 'How old are you now?'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: deberes 2026-10-06, date: '2026-10-06'}
   - id: s.nin-duoda-nianji-le
-    use: hear
+    use: say
     segments:
       - {text: 您, ref: w.nin, pinyin: 'nín'}
       - {text: 多大, ref: w.duoda, pinyin: 'duō dà'}
@@ -632,3 +632,120 @@ sentences:
       - {text: 。}
     translation: {es: 'Su padre tiene cincuenta y tres años.', en: 'His father is fifty-three.'}
     source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
+  - id: s.num-35781
+    use: say
+    listen: true
+    listen_reason: 'Dictado de números: oír uno grande y escribir sus cifras (review 011: «más claro y automático 万, 千, 百, 十»).'
+    segments:
+      - {text: 三, ref: w.num.san, pinyin: 'sān'}
+      - {text: 万, ref: w.wan.tenk, pinyin: 'wàn'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 千, ref: w.qian.thousand, pinyin: 'qiān'}
+      - {text: 七, ref: w.num.qi, pinyin: 'qī'}
+      - {text: 百, ref: w.bai.hundred, pinyin: 'bǎi'}
+      - {text: 八, ref: w.ba, pinyin: 'bā'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yī'}
+      - {text: 。}
+    translation: {es: '35 781', en: '35,781'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.num-106234
+    use: say
+    listen: true
+    listen_reason: 'Dictado de números: oír uno grande y escribir sus cifras (review 011: «más claro y automático 万, 千, 百, 十»).'
+    segments:
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 万, ref: w.wan.tenk, pinyin: 'wàn'}
+      - {text: 六, ref: w.num.liu, pinyin: 'liù'}
+      - {text: 千, ref: w.qian.thousand, pinyin: 'qiān'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 百, ref: w.bai.hundred, pinyin: 'bǎi'}
+      - {text: 三, ref: w.num.san, pinyin: 'sān'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 四, ref: w.num.si, pinyin: 'sì'}
+      - {text: 。}
+    translation: {es: '106 234', en: '106,234'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.num-20050
+    use: say
+    listen: true
+    listen_reason: 'Dictado de números: oír uno grande y escribir sus cifras (review 011: «más claro y automático 万, 千, 百, 十»).'
+    segments:
+      - {text: 两, ref: w.liang, pinyin: 'liǎng'}
+      - {text: 万, ref: w.wan.tenk, pinyin: 'wàn'}
+      - {text: 零, ref: w.ling, pinyin: 'líng'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 。}
+    translation: {es: '20 050', en: '20,050'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.num-8600
+    use: say
+    listen: true
+    listen_reason: 'Dictado de números: oír uno grande y escribir sus cifras (review 011: «más claro y automático 万, 千, 百, 十»).'
+    segments:
+      - {text: 八, ref: w.ba, pinyin: 'bā'}
+      - {text: 千, ref: w.qian.thousand, pinyin: 'qiān'}
+      - {text: 六, ref: w.num.liu, pinyin: 'liù'}
+      - {text: 百, ref: w.bai.hundred, pinyin: 'bǎi'}
+      - {text: 。}
+    translation: {es: '8600', en: '8,600'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.num-12000
+    use: say
+    listen: true
+    listen_reason: 'Dictado de números: oír uno grande y escribir sus cifras (review 011: «más claro y automático 万, 千, 百, 十»).'
+    segments:
+      - {text: 一, ref: w.num.yi, pinyin: 'yí', sandhi: true}
+      - {text: 万, ref: w.wan.tenk, pinyin: 'wàn'}
+      - {text: 两, ref: w.liang, pinyin: 'liǎng'}
+      - {text: 千, ref: w.qian.thousand, pinyin: 'qiān'}
+      - {text: 。}
+    translation: {es: '12 000', en: '12,000'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.num-6080
+    use: say
+    listen: true
+    listen_reason: 'Dictado de números: oír uno grande y escribir sus cifras (review 011: «más claro y automático 万, 千, 百, 十»).'
+    segments:
+      - {text: 六, ref: w.num.liu, pinyin: 'liù'}
+      - {text: 千, ref: w.qian.thousand, pinyin: 'qiān'}
+      - {text: 零, ref: w.ling, pinyin: 'líng'}
+      - {text: 八, ref: w.ba, pinyin: 'bā'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 。}
+    translation: {es: '6080', en: '6,080'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.num-990
+    use: say
+    listen: true
+    listen_reason: 'Dictado de números: oír uno grande y escribir sus cifras (review 011: «más claro y automático 万, 千, 百, 十»).'
+    segments:
+      - {text: 九, ref: w.num.jiu, pinyin: 'jiǔ'}
+      - {text: 百, ref: w.bai.hundred, pinyin: 'bǎi'}
+      - {text: 九, ref: w.num.jiu, pinyin: 'jiǔ'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 。}
+    translation: {es: '990', en: '990'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.num-250000
+    use: say
+    listen: true
+    listen_reason: 'Dictado de números: oír uno grande y escribir sus cifras (review 011: «más claro y automático 万, 千, 百, 十»).'
+    segments:
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 万, ref: w.wan.tenk, pinyin: 'wàn'}
+      - {text: 。}
+    translation: {es: '250 000', en: '250,000'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-yao-yiban
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 一半, ref: w.yiban, pinyin: 'yíbàn'}
+      - {text: 。}
+    translation: {es: 'Quiero la mitad.', en: 'I want half.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}

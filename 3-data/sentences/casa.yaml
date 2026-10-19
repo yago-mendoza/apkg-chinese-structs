@@ -53,3 +53,32 @@ sentences:
       - {text: 。}
     translation: {es: 'Este vaso no es mío.', en: 'This isn''t my cup.'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+  - id: s.maikefeng-zai-nali
+    use: hear
+    segments:
+      - {text: 麦克风, ref: w.maikefeng, pinyin: 'màikèfēng'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 哪里, ref: w.nali, pinyin: 'nǎlǐ'}
+      - {text: ？}
+    translation: {es: '¿Dónde está el micrófono?', en: 'Where''s the microphone?'}
+    source: {origin: class, batch: 012-2026-10-19-querer-poder-y-matices, file: 'deberes 2026-10-13', date: '2026-10-13'}
+  - id: s.ni-zhu-zai-nali
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 住, ref: w.zhu.live, pinyin: 'zhù'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 哪里, ref: w.nali, pinyin: 'nǎlǐ'}
+      - {text: ？}
+    translation: {es: '¿Dónde vives?', en: 'Where do you live?'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.wo-chuan-zhe-jian
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 穿, ref: w.chuan.wear, pinyin: 'chuān'}
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 件, ref: w.jian.cl, pinyin: 'jiàn'}
+      - {text: 。}
+    translation: {es: 'Me pongo esta (prenda).', en: 'I''ll wear this one.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}

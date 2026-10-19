@@ -79,17 +79,6 @@ exercises:
     answer: {meaning: 'Estoy bien, ¿y tú?'}
     lang: es
     comments: []
-  - id: x.listen.wo-ye-hen-hao
-    added: 2026-09-25
-    type: listen
-    sentence: s.wo-ye-hen-hao
-    targets: [s.wo-ye-hen-hao]
-    context: [w.wo, w.ye, w.hen, w.hao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Yo también estoy bien.}
-    lang: es
-    comments: []
   - id: x.produce.ni-hao-ma
     added: 2026-09-25
     type: produce
@@ -430,17 +419,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¿Qué tal estás?»'}
     answer: {meaning: '¿Qué tal estás?'}
     comments: []
-  - id: x.listen.chifan-le-ma
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.chifan-le-ma
-    targets: [s.chifan-le-ma]
-    context: [w.chifan, w.le, w.ma]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Has comido? (como saludo)'}
-    comments: []
   - id: x.produce.chifan-le-ma
     added: 2026-10-01
     lang: es
@@ -534,17 +512,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 啊}
     answer: {hanzi: 啊, pinyin: a, meaning: partícula que suaviza o anima}
     comments: []
-  - id: x.listen.ni-huilai-le
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.ni-huilai-le
-    targets: [s.ni-huilai-le]
-    context: [w.ni, w.huilai, w.le]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: ¡Ya has vuelto!}
-    comments: []
   - id: x.produce.ni-huilai-le
     added: 2026-10-01
     lang: es
@@ -588,17 +555,6 @@ exercises:
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: '¿Sales?'}
-    comments: []
-  - id: x.listen.women-xiawu-jian-ba
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.women-xiawu-jian-ba
-    targets: [s.women-xiawu-jian-ba]
-    context: [w.women, w.xiawu, w.jian, w.ba.particle]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Nos vemos por la tarde, ¿vale?'}
     comments: []
   - id: x.produce.women-xiawu-jian-ba
     added: 2026-10-01
@@ -1154,17 +1110,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¿Mucho lío últimamente?»'}
     answer: {meaning: '¿Mucho lío últimamente?'}
     comments: []
-  - id: x.listen.ni-hai-hao-ma
-    added: 2026-10-05
-    lang: es
-    type: listen
-    sentence: s.ni-hai-hao-ma
-    targets: [s.ni-hai-hao-ma]
-    context: [w.ni, w.hai.still, w.hao, w.ma]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Estás bien?'}
-    comments: []
   - id: x.produce.ni-hai-hao-ma
     added: 2026-10-05
     lang: es
@@ -1175,17 +1120,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Estás bien?»'}
     answer: {meaning: '¿Estás bien?'}
-    comments: []
-  - id: x.listen.chi-le-ni-ne
-    added: 2026-10-05
-    lang: es
-    type: listen
-    sentence: s.chi-le-ni-ne
-    targets: [s.chi-le-ni-ne]
-    context: [w.chi, w.le, w.ni, w.ne]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Sí, ya he comido, ¿y tú?'}
     comments: []
   - id: x.produce.chi-le-ni-ne
     added: 2026-10-05
@@ -1375,17 +1309,6 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: '¿Cómo se dice «¿qué tal este?, ¿qué te parece?»? Escribe el pinyin.'}
     answer: {typed: zhe4 ge5 zen3 me5 yang4, hanzi: 这个怎么样, pinyin: zhège zěnmeyàng, meaning: '¿qué tal este?, ¿qué te parece?'}
-    comments: []
-  - id: x.listen.wo-zaoshang-he-cha
-    added: 2026-10-05
-    lang: es
-    type: listen
-    sentence: s.wo-zaoshang-he-cha
-    targets: [s.wo-zaoshang-he-cha]
-    context: [w.wo, w.zaoshang, w.he.drink, w.cha]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Por la mañana tomo té.}
     comments: []
   - id: x.produce.wo-zaoshang-he-cha
     added: 2026-10-05
@@ -1585,17 +1508,6 @@ exercises:
     skills: [reading, pinyin]
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 恭喜}
     answer: {hanzi: 恭喜, pinyin: gōngxǐ, meaning: ¡enhorabuena!}
-    comments: []
-  - id: x.listen.xiexie-ni-de-liwu
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.xiexie-ni-de-liwu
-    targets: [s.xiexie-ni-de-liwu]
-    context: [e.xiexie, w.ni, w.de, w.liwu]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: ¡Gracias por tu regalo!}
     comments: []
   - id: x.produce.xiexie-ni-de-liwu
     added: 2026-10-08
@@ -1818,17 +1730,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 近}
     answer: {hanzi: 近, pinyin: jìn, meaning: cerca}
     comments: []
-  - id: x.listen.women-mingtian-qu-zenmeyang
-    added: 2026-10-10
-    lang: es
-    type: listen
-    sentence: s.women-mingtian-qu-zenmeyang
-    targets: [s.women-mingtian-qu-zenmeyang]
-    context: [w.women, w.mingtian, w.qu, w.zenmeyang]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Qué tal si vamos mañana?'}
-    comments: []
   - id: x.produce.women-mingtian-qu-zenmeyang
     added: 2026-10-10
     lang: es
@@ -1919,17 +1820,6 @@ exercises:
     prompt: {text: 'Situación. En el trabajo quieres preguntarle algo a una compañera que está tecleando sin parar. Antes, pregúntale si está ocupada ahora.'}
     answer: {meaning: '¿Estás ocupada ahora?'}
     comments: []
-  - id: x.listen.ni-xianzai-mang-ma
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.ni-xianzai-mang-ma
-    targets: [s.ni-xianzai-mang-ma]
-    context: [w.ni, w.xianzai, w.mang, w.ma]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Estás ocupado ahora?'}
-    comments: []
   - id: x.produce.ni-xianzai-mang-ma
     added: 2026-10-11
     lang: es
@@ -1940,17 +1830,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Estás ocupado ahora?»'}
     answer: {meaning: '¿Estás ocupado ahora?'}
-    comments: []
-  - id: x.listen.xiaci-jian
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.xiaci-jian
-    targets: [s.xiaci-jian]
-    context: [w.xiaci, w.jian]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: ¡Hasta la próxima!}
     comments: []
   - id: x.produce.xiaci-jian
     added: 2026-10-11
@@ -1999,4 +1878,103 @@ exercises:
     skills: [reading, pinyin]
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 早}
     answer: {hanzi: 早, pinyin: zǎo, meaning: 'temprano, pronto'}
+    comments: []
+  - id: x.dictation.halou
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.halou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ha1 lou5, hanzi: 哈喽, pinyin: hālou, meaning: hola (informal)}
+    comments: []
+  - id: x.read.halou
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.halou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 哈喽}
+    answer: {hanzi: 哈喽, pinyin: hālou, meaning: hola (informal)}
+    comments: []
+  - id: x.tones.halou
+    added: 2026-10-19
+    lang: es
+    type: tones
+    targets: [w.halou]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 哈喽, pinyin: ha lou}
+    answer: {typed: '15', hanzi: 哈喽, pinyin: hālou, meaning: hola (informal)}
+    comments: []
+  - id: x.dictation.hai.hi
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.hai.hi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hai1, hanzi: 嗨, pinyin: hāi, meaning: ¡hola! (informal)}
+    comments: []
+  - id: x.read.hai.hi
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.hai.hi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 嗨}
+    answer: {hanzi: 嗨, pinyin: hāi, meaning: ¡hola! (informal)}
+    comments: []
+  - id: x.produce.ni-zai-mang-shenme
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.ni-zai-mang-shenme
+    targets: [s.ni-zai-mang-shenme]
+    context: [w.ni, w.zai.progressive, w.mang, w.shenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿En qué andas liado?»'}
+    answer: {meaning: '¿En qué andas liado?'}
+    comments: []
+  - id: x.produce.ni-xian-mang-ba
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.ni-xian-mang-ba
+    targets: [s.ni-xian-mang-ba]
+    context: [w.ni, w.xian.first, w.mang, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Sigue con lo tuyo (no te entretengo).»'}
+    answer: {meaning: Sigue con lo tuyo (no te entretengo).}
+    comments: []
+  - id: x.produce.zuijin-hai-hao-ma
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.zuijin-hai-hao-ma
+    targets: [s.zuijin-hai-hao-ma]
+    context: [w.zuijin, w.hai.still, w.hao, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Todo bien últimamente?»'}
+    answer: {meaning: '¿Todo bien últimamente?'}
+    comments: []
+  - id: x.contrast.hai.still
+    added: 2026-10-19
+    lang: es
+    type: contrast
+    group: g.hai-hai
+    targets: [w.hai.still]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 还, pinyin: hái, meaning: todavía; aún}
+    comments: []
+  - id: x.contrast.hai.hi
+    added: 2026-10-19
+    lang: es
+    type: contrast
+    group: g.hai-hai
+    targets: [w.hai.hi]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 嗨, pinyin: hāi, meaning: ¡hola! (informal)}
     comments: []

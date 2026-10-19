@@ -58,7 +58,7 @@ entries:
     kind: word
     hanzi: 电视
     pinyin: diànshì
-    meaning: {es: televisión, la tele, en: television, TV}
+    meaning: {es: 'televisión, la tele', en: 'television, TV'}
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: deberes 2026-09-24, date: '2026-09-24'}
     connection: {kind: sound, with: [礻], text: '视 shì toma el sonido de 示 shì, que a la izquierda de un carácter se escribe 礻: por eso suenan igual.'}
     comments: []
@@ -240,4 +240,58 @@ entries:
     pinyin: 'zhàopiàn'
     meaning: {es: 'foto', en: 'photo'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+    comments: []
+  - id: w.maikefeng
+    use: hear
+    role: content
+    kind: word
+    hanzi: 麦克风
+    pinyin: màikèfēng
+    meaning: {es: micrófono, en: microphone}
+    level: 4
+    level_reason: 'no está en la lista del HSK 3.0; préstamo de microphone, frecuente en reuniones y karaoke; 风 es HSK 1'
+    pos: sustantivo
+    pos_reason: no está en la lista del HSK
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13', rescued: 012-2026-10-19-querer-poder-y-matices}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Préstamo: 麦克 imita «micro» y 风, «phone». Para recordarlo: el «viento» de la voz entra por el micro. En las videollamadas se oye 麦 a secas: 开麦 «abre el micro».'}
+  - id: w.zhu.live
+    use: say
+    role: content
+    kind: word
+    hanzi: 住
+    pinyin: zhù
+    meaning: {es: 'vivir (en un sitio); alojarse', en: 'to live (somewhere); to stay'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Dónde se vive o se duerme: 你住在哪里？ «¿dónde vives?». Para «vivir» en el sentido de la vida, 生活 [HSK 2].'}
+  - id: w.chuan.wear
+    use: say
+    role: content
+    kind: word
+    hanzi: 穿
+    pinyin: chuān
+    meaning: {es: 'ponerse, llevar puesto (ropa)', en: 'to wear'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Ropa y zapatos: 穿衣服 «vestirse»; 我穿这件 «me pongo esta».'}
+  - id: g.zhu-zhu
+    kind: group
+    basis: soundalike
+    title: '住 y 猪'
+    explanation: 'La misma sílaba: solo los separa el tono.'
+    members:
+      - {ref: w.zhu.live, cue: 'baja fuerte (4.º): 你住在哪里？'}
+      - {ref: w.zhu, cue: 'alto y plano (1.º): 属猪'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments: []
+  - id: g.chuan-chuan
+    kind: group
+    basis: soundalike
+    title: '穿 y 船'
+    explanation: 'La misma sílaba: solo los separa el tono.'
+    members:
+      - {ref: w.chuan.wear, cue: 'alto y plano (1.º): 穿衣服'}
+      - {ref: w.chuan, cue: 'sube (2.º): 坐船'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments: []

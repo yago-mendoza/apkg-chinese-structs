@@ -181,7 +181,7 @@ entries:
     meaning: {es: 'la mañana (temprano)', en: 'early morning'}
     source: {origin: class, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}
     comments:
-      - {kind: linguistic, private: false, date: '2026-10-05', text: '早上 es la primera hora; 上午 shàngwǔ, la mañana hasta mediodía. Con 好 da el saludo 早上好, que se acorta en 早！.'}
+      - {kind: linguistic, private: false, date: '2026-10-05', text: 'Con 好 da el saludo 早上好, que se acorta en 早！.'}
       - {kind: linguistic, private: false, date: '2026-10-11', text: '早上 es la primera hora, del despertar hasta las ocho o las nueve; 上午 es toda la mañana, hasta el mediodía. En catalán: 早上, la matinada; 上午, el matí. 早上七点 «las siete de la mañana».', original: 'en zaoshang o shangwu cards hacer mencion de que zaoshang es la early morning y que shangwu es toda la parte del dia antes del mediodia, en catalan de hehco es matinada zaoshang, matí es shangwu'}
   - id: e.zaoshanghao
     accept_pinyin_mismatch: 'tono neutro en el habla estándar (上 shang, 个 ge); los diccionarios dan el tono de cita'
@@ -468,3 +468,43 @@ entries:
     relations: [w.zao]
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: '你来得很早 «has llegado temprano»: con 得, tras el verbo. Suelto, por la mañana, 早！ es «¡buenos días!».'}
+  - id: w.halou
+    use: hear
+    role: content
+    kind: word
+    hanzi: 哈喽
+    pinyin: hālou
+    meaning: {es: hola (informal), en: hello (informal)}
+    level: 2
+    level_reason: 'no está en la lista del HSK 3.0; préstamo del inglés hello, muy oído entre jóvenes y en mensajes'
+    pos: interjeccion
+    pos_reason: no está en la lista del HSK
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 哈 hā y 喽 lou solo imitan el sonido de hello. Informal y simpático; con desconocidos, 你好.'}
+      - {kind: character, private: false, date: '2026-10-19', text: '哈 y 拿 llevan 合 hé, que ya no da su sonido.'}
+  - id: w.hai.hi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 嗨
+    pinyin: hāi
+    meaning: {es: '¡hola! (informal)', en: hi}
+    level: 2
+    level_reason: 'no está en la lista del HSK 3.0; préstamo del inglés hi, frecuente entre amigos'
+    pos: interjeccion
+    pos_reason: no está en la lista del HSK
+    standalone: 'yes'
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Préstamo del inglés hi, como 哈喽 de hello: entre amigos. Entre amigos también se saluda solo con el nombre.'}
+  - id: g.hai-hai
+    kind: group
+    basis: soundalike
+    title: '还 y 嗨'
+    explanation: 'La misma sílaba: solo los separa el tono.'
+    members:
+      - {ref: w.hai.still, cue: 'sube (2.º tono): 你还好吗'}
+      - {ref: w.hai.hi, cue: 'alto y plano (1.º): 嗨，你好！'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments: []

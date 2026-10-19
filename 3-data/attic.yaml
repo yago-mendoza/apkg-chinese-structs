@@ -48,18 +48,6 @@ items:
     reason: HSK 6; poco útil para el día a día.
     notes: []
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-  - id: a.menpiao
-    hanzi: 门票
-    pinyin: ménpiào
-    meaning: {es: 'entrada (a un museo, un parque)'}
-    theme: compras
-    links: [公园, 博物馆, 电影, 电影院]
-    reason: HSK 1, pero 票 y 机票 cubrían la idea; entra con el ocio.
-    notes:
-      - {text: '门 mén es el mismo de 们 y 问; aquí con su tono y su sentido de «puerta».', original: '(fijate que aqui hestá el ''men'' de nimen tamen women, solo que en esos es neutro y aqui no)'}
-    snooze: 003-2026-10-01-comer-dinero-y-contrastes
-    snooze_reason: 'despierta con 电影, pero aún sin frase tuya; 票 y 机票 cubren la idea'
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
 
   # ---------------------------------------------------------------- colores, luz, cielo
   - id: a.huise
@@ -222,6 +210,8 @@ items:
     reason: 'HSK 7; muy coloquial.'
     notes:
       - {text: '完蛋了！ «¡estoy perdido!, ¡la he liado!».', original: 'wán dàn le (im screwed)'}
+    snooze: 012-2026-10-19-querer-poder-y-matices
+    snooze_reason: 'despierta con 完 «terminar», pero 完蛋 es muy coloquial y de HSK 7'
     source: {batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
 
   # ---------------------------------------------------------------- lote 008
@@ -268,6 +258,7 @@ items:
     reason: HSK 3, de tu lista de 16 frases de conversación (我理解, 你确定吗, 我同意, 好主意…), investigada por tu cuenta.
     notes:
       - {text: '你确定吗？ «¿estás seguro?».'}
+      - {text: 'Volvió en el examen de 想 y 觉得 del review 011: 我还不确定 «todavía no estoy seguro», 不确定今天能不能做 «no sé seguro si hoy podré hacerlo».'}
     source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
   - id: a.tongyi
     snooze: 010-2026-10-11-construir-numeros-y-movimiento
@@ -528,6 +519,8 @@ items:
     links: [最后]
     reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 3 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
     notes: []
+    snooze: 012-2026-10-19-querer-poder-y-matices
+    snooze_reason: 'despierta con 最后, pero es una palabra de un ejercicio de pinyin: espera a salir en clase con su sentido'
     source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
   - id: a.lunchuan
     hanzi: 轮船
@@ -573,6 +566,8 @@ items:
     links: [住, 门口]
     reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 7 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
     notes: []
+    snooze: 012-2026-10-19-querer-poder-y-matices
+    snooze_reason: 'despierta con 住, pero es una palabra de un ejercicio de pinyin: espera a salir en clase con su sentido (se le propone en el review)'
     source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
   - id: a.xingqu
     hanzi: 兴趣
@@ -646,17 +641,6 @@ items:
     reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 4 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
     notes: []
     source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
-  - id: a.maikefeng
-    hanzi: 麦克风
-    pinyin: màikèfēng
-    meaning: {es: 'micrófono'}
-    theme: trabajo
-    links: [话筒]
-    level: 5
-    level_reason: 'Préstamo (micro-phone) poco frecuente al hablar.'
-    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 5 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
-    notes: []
-    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
   - id: a.miyu
     hanzi: 谜语
     pinyin: míyǔ
@@ -676,4 +660,108 @@ items:
     level_reason: 'Palabra de formularios; 出生 es HSK 2 y 地 «lugar», más alto.'
     reason: 'Ejemplo de una diapositiva de clase (出生地 «lugar de nacimiento»): de formularios, se lee más que se dice. Espera a que haga falta.'
     notes: []
+    snooze: 012-2026-10-19-querer-poder-y-matices
+    snooze_reason: 'despierta con 地方, pero es de formularios: se lee más que se dice'
     source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+  - id: a.xigua
+    hanzi: 西瓜
+    pinyin: xīguā
+    meaning: {es: 'sandía'}
+    theme: compras
+    links: [水果, 瓜]
+    reason: 'Palabra de una lista para leer pinyin (material de una clase de prueba, sin significado en la hoja); HSK 4. Espera a que salgan las frutas en clase.'
+    notes: []
+    source: {batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
+  - id: a.shuang
+    hanzi: 双
+    pinyin: shuāng
+    meaning: {es: 'par (clasificador: 一双鞋 «un par de zapatos»)'}
+    theme: numeros
+    links: [鞋, 筷子]
+    reason: 'Palabra de una lista para leer pinyin (material de una clase de prueba); HSK 3 y sin frase. Despierta con 筷子 o al comprar zapatos.'
+    notes: []
+    source: {batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
+  - id: a.meinv
+    hanzi: 美女
+    pinyin: měinǚ
+    meaning: {es: 'chica guapa; (al llamar a una dependienta) señorita'}
+    theme: personas
+    links: [帅哥]
+    reason: 'Palabra de una lista para leer pinyin (material de una clase de prueba); HSK 4. Útil para entender cómo se llama a la gente en la calle (帅哥, 美女): espera a ese tema.'
+    notes: []
+    source: {batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
+  - id: a.hua
+    hanzi: 滑
+    pinyin: huá
+    meaning: {es: 'resbalar; resbaladizo'}
+    theme: cosas
+    links: [滑雪]
+    reason: 'Sílaba de una lista para leer pinyin (material de una clase de prueba), sin frase; HSK 5.'
+    notes: []
+    source: {batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
+  - id: a.jueding
+    hanzi: 决定
+    pinyin: juédìng
+    meaning: {es: 'decidir; decisión'}
+    theme: cosas
+    links: [决心, 确定]
+    reason: 'HSK 3, del examen de 想 y 觉得 que pegaste en el review 011.'
+    notes:
+      - {text: '我已经决定要买了 «ya he decidido comprarlo»: puedes querer algo (想) sin haberlo decidido (决定).'}
+    snooze: 012-2026-10-19-querer-poder-y-matices
+    snooze_reason: 'entró al desván en este mismo lote, al filtrar su examen a HSK 1-2'
+    source: {batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: a.zongshi
+    hanzi: 总是
+    pinyin: zǒngshì
+    meaning: {es: 'siempre'}
+    theme: tiempo
+    links: [总, 一直]
+    reason: 'HSK 3, de tu resumen de gramática.'
+    notes:
+      - {text: '我总是喝茶 «siempre tomo té»: más que 常常 «a menudo».'}
+    snooze: 012-2026-10-19-querer-poder-y-matices
+    snooze_reason: 'entró al desván en este mismo lote, al filtrar su examen a HSK 1-2'
+    source: {batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: a.conglai
+    hanzi: 从来
+    pinyin: cónglái
+    meaning: {es: 'nunca (con 没/不); siempre (hasta ahora)'}
+    theme: tiempo
+    links: [过, 没]
+    reason: 'HSK 3, del examen y del resumen de gramática.'
+    notes:
+      - {text: 'Casi siempre negativo: 我从来没去过 «no he ido nunca»; refuerza 没…过.'}
+    source: {batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: a.buzai
+    hanzi: 不再
+    pinyin: búzài
+    meaning: {es: 'ya no (dejar de hacer algo)'}
+    theme: tiempo
+    links: [再]
+    reason: 'HSK 6 como palabra, de tu resumen de gramática; al hablar se oye más 不…了: 我不抽烟了 «ya no fumo».'
+    notes:
+      - {text: '我不再抽烟了 «ya no fumo».'}
+    source: {batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: a.yitiandaowan
+    hanzi: 一天到晚
+    pinyin: yìtiāndàowǎn
+    meaning: {es: 'todo el día, de la mañana a la noche'}
+    theme: tiempo
+    links: [每天]
+    reason: 'Expresión de nivel alto (HSK 7-9), de tu nota sobre las formas de «todo».'
+    notes:
+      - {text: '我一天到晚都很忙 «estoy ocupado todo el día»; 每天 es «cada día».'}
+    source: {batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: a.changchang.taste
+    hanzi: 尝尝
+    pinyin: chángchang
+    meaning: {es: 'probar un poco (comida)'}
+    theme: compras
+    links: [尝]
+    level: 5
+    level_reason: 'no está en la lista; 尝 es HSK 5'
+    reason: '尝 es HSK 5, del examen de 想 y 觉得.'
+    notes:
+      - {text: 'No confundir con 常常 chángcháng «a menudo» (ya en el mazo).'}
+    source: {batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}

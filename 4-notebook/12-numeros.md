@@ -42,6 +42,7 @@
 - ✅🃏 遍 biàn [pjɛn˥˩] · vez (de principio a fin) · _clasificador_ · Cuenta las veces que se hace algo entero: 这本书我看了两遍 «me he leído este libro dos veces enteras»; 再说一遍 «dilo otra vez».
 - ✅🃏 点 diǎn [tjɛn˧˩˧] · coma decimal (三点五 = 3,5) · _sustantivo_ · 三点五 «3,5»; 零点八 «0,8». En una hora, en cambio, 三点 son «las tres»: lo que sigue a 点 decide (三点五分 «las tres y cinco»).
 - ✅🃏 幺 yāo [jɑʊ˥] · uno (al dar teléfonos y números de habitación) · _número_ · Al dictar cifras sueltas, el 1 se dice yāo para no confundirlo con 七 qī: 110 es yāo yāo líng. Contando o en una cantidad, 一 yī.
+- ✅🃏 一半 yíbàn [i˧˥ pan˥˩] · la mitad · _número_ · 我要一半 «quiero la mitad». 一斤 es la mitad de un 公斤.
 
 ## 九 jiǔ y 就 jiù
 
@@ -171,6 +172,13 @@ Se parecen al oído; el tono los separa.
 - 要 yào · cae
 - 幺 yāo · alto y plano; solo al dictar cifras
 
+## 六 y 留
+
+La misma sílaba: solo los separa el tono.
+
+- 六 liù · baja fuerte (4.º): 六个人
+- 留 liú · sube (2.º): 留在中国
+
 ## Frases
 
 - ✅🃏 一、二、三、四、五、六、七、八、九、十。 · yī èr sān sì wǔ liù qī bā jiǔ shí · Uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez.
@@ -222,3 +230,12 @@ Se parecen al oído; el tono los separa.
 - ✅🃏 我觉得她二十岁左右。 · wǒ juéde tā èr shí suì zuǒyòu · Creo que tiene unos veinte años.
 - ✅🃏 他二十二岁。 · tā èr shí èr suì · Tiene veintidós años.
 - ✅🃏 他爸爸五十三岁。 · tā bàba wǔ shí sān suì · Su padre tiene cincuenta y tres años.
+- ✅🃏 三万五千七百八十一。 · sān wàn wǔ qiān qī bǎi bā shí yī · 35 781
+- ✅🃏 十万六千二百三十四。 · shí wàn liù qiān èr bǎi sān shí sì · 106 234
+- ✅🃏 两万零五十。 · liǎng wàn líng wǔ shí · 20 050
+- ✅🃏 八千六百。 · bā qiān liù bǎi · 8600
+- ✅🃏 一万两千。 · yí wàn liǎng qiān · 12 000
+- ✅🃏 六千零八十。 · liù qiān líng bā shí · 6080
+- ✅🃏 九百九十。 · jiǔ bǎi jiǔ shí · 990
+- ✅🃏 二十五万。 · èr shí wǔ wàn · 250 000
+- ✅🃏 我要一半。 · wǒ yào yíbàn · Quiero la mitad.

@@ -161,17 +161,6 @@ exercises:
     answer: {typed: '15', hanzi: 聪明, pinyin: cōngming, meaning: 'listo, inteligente'}
     lang: es
     comments: []
-  - id: x.listen.ta-hen-gao
-    added: 2026-09-25
-    type: listen
-    sentence: s.ta-hen-gao
-    targets: [s.ta-hen-gao]
-    context: [w.ta.he, w.hen, w.gao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Él es alto.}
-    lang: es
-    comments: []
   - id: x.listen.ta-hen-piaoliang
     added: 2026-09-25
     type: listen
@@ -623,17 +612,6 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Pekín es grande.}
     comments: []
-  - id: x.listen.tai-hao-le
-    added: 2026-09-29
-    lang: es
-    type: listen
-    sentence: s.tai-hao-le
-    targets: [s.tai-hao-le]
-    context: [w.tai, w.hao, w.le]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: ¡Genial!}
-    comments: []
   - id: x.produce.tai-hao-le
     added: 2026-09-29
     lang: es
@@ -839,17 +817,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 又}
     answer: {hanzi: 又, pinyin: yòu, meaning: a la vez (又…又…)}
     comments: []
-  - id: x.listen.ta-bi-wo-gao
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.ta-bi-wo-gao
-    targets: [s.ta-bi-wo-gao]
-    context: [w.ta.he, w.bi, w.wo, w.gao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Es más alto que yo.}
-    comments: []
   - id: x.produce.ta-bi-wo-gao
     added: 2026-10-01
     lang: es
@@ -860,17 +827,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Es más alto que yo.»'}
     answer: {meaning: Es más alto que yo.}
-    comments: []
-  - id: x.listen.ta-you-gao-you-piaoliang
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.ta-you-gao-you-piaoliang
-    targets: [s.ta-you-gao-you-piaoliang]
-    context: [w.ta.she, w.you.again, w.gao, w.piaoliang]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Es alta y guapa.}
     comments: []
   - id: x.produce.ta-you-gao-you-piaoliang
     added: 2026-10-01
@@ -1470,17 +1426,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¡Qué interesante es ese libro!»'}
     answer: {meaning: ¡Qué interesante es ese libro!}
     comments: []
-  - id: x.listen.jintian-tebie-leng
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.jintian-tebie-leng
-    targets: [s.jintian-tebie-leng]
-    context: [w.jintian, w.tebie, w.leng]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Hoy hace muchísimo frío.}
-    comments: []
   - id: x.produce.jintian-tebie-leng
     added: 2026-10-08
     lang: es
@@ -1491,17 +1436,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Hoy hace muchísimo frío.»'}
     answer: {meaning: Hoy hace muchísimo frío.}
-    comments: []
-  - id: x.listen.zhongwen-hen-youyisi
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.zhongwen-hen-youyisi
-    targets: [s.zhongwen-hen-youyisi]
-    context: [w.zhongwen, w.hen, w.youyisi]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: El chino es muy interesante.}
     comments: []
   - id: x.produce.zhongwen-hen-youyisi
     added: 2026-10-08
@@ -1606,17 +1540,6 @@ exercises:
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Hoy hay mucha gente.}
-    comments: []
-  - id: x.listen.ni-zhende-zhidao-ma
-    added: 2026-10-10
-    lang: es
-    type: listen
-    sentence: s.ni-zhende-zhidao-ma
-    targets: [s.ni-zhende-zhidao-ma]
-    context: [w.ni, w.zhende, w.zhidao, w.ma]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿De verdad lo sabes?'}
     comments: []
   - id: x.produce.ni-zhende-zhidao-ma
     added: 2026-10-10
@@ -1782,17 +1705,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 亮}
     answer: {hanzi: 亮, pinyin: liàng, meaning: 'brillante, con luz'}
     comments: []
-  - id: x.listen.ni-lai-de-hen-zao
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.ni-lai-de-hen-zao
-    targets: [s.ni-lai-de-hen-zao]
-    context: [w.ni, w.lai, w.de.complement, w.hen, w.zao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Has llegado temprano.}
-    comments: []
   - id: x.produce.ni-lai-de-hen-zao
     added: 2026-10-11
     lang: es
@@ -1804,17 +1716,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Has llegado temprano.»'}
     answer: {meaning: Has llegado temprano.}
     comments: []
-  - id: x.listen.ni-lai-de-zhen-zao
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.ni-lai-de-zhen-zao
-    targets: [s.ni-lai-de-zhen-zao]
-    context: [w.ni, w.lai, w.de.complement, w.zhen, w.zao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: ¡Qué pronto has llegado!}
-    comments: []
   - id: x.produce.ni-lai-de-zhen-zao
     added: 2026-10-11
     lang: es
@@ -1825,17 +1726,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¡Qué pronto has llegado!»'}
     answer: {meaning: ¡Qué pronto has llegado!}
-    comments: []
-  - id: x.listen.ni-shuo-de-hen-hao
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.ni-shuo-de-hen-hao
-    targets: [s.ni-shuo-de-hen-hao]
-    context: [w.ni, w.shuo, w.de.complement, w.hen, w.hao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Hablas muy bien.}
     comments: []
   - id: x.produce.ni-shuo-de-hen-hao
     added: 2026-10-11
@@ -1870,17 +1760,6 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Escribes muy bien.}
     comments: []
-  - id: x.listen.zhe-shi-yi-zhi-piaoliang-de-mao
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.zhe-shi-yi-zhi-piaoliang-de-mao
-    targets: [s.zhe-shi-yi-zhi-piaoliang-de-mao]
-    context: [w.zhe, w.shi, w.num.yi, w.zhi.cl, w.piaoliang, w.de, w.mao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Es un gato precioso.}
-    comments: []
   - id: x.produce.zhe-shi-yi-zhi-piaoliang-de-mao
     added: 2026-10-11
     lang: es
@@ -1891,17 +1770,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Es un gato precioso.»'}
     answer: {meaning: Es un gato precioso.}
-    comments: []
-  - id: x.listen.ni-hao-piaoliang
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.ni-hao-piaoliang
-    targets: [s.ni-hao-piaoliang]
-    context: [w.ni, w.hao, w.piaoliang]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: ¡Qué guapa estás!}
     comments: []
   - id: x.produce.ni-hao-piaoliang
     added: 2026-10-11
@@ -1914,17 +1782,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¡Qué guapa estás!»'}
     answer: {meaning: ¡Qué guapa estás!}
     comments: []
-  - id: x.listen.ni-zhen-piaoliang
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.ni-zhen-piaoliang
-    targets: [s.ni-zhen-piaoliang]
-    context: [w.ni, w.zhen, w.piaoliang]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: ¡Qué guapa eres!}
-    comments: []
   - id: x.produce.ni-zhen-piaoliang
     added: 2026-10-11
     lang: es
@@ -1936,17 +1793,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¡Qué guapa eres!»'}
     answer: {meaning: ¡Qué guapa eres!}
     comments: []
-  - id: x.listen.wo-bu-gaoxing
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.wo-bu-gaoxing
-    targets: [s.wo-bu-gaoxing]
-    context: [w.wo, w.bu, w.gaoxing]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: No estoy contento.}
-    comments: []
   - id: x.produce.wo-bu-gaoxing
     added: 2026-10-11
     lang: es
@@ -1957,17 +1803,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «No estoy contento.»'}
     answer: {meaning: No estoy contento.}
-    comments: []
-  - id: x.listen.wo-tai-lei-le
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.wo-tai-lei-le
-    targets: [s.wo-tai-lei-le]
-    context: [w.wo, w.tai, w.lei, w.le]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: ¡Estoy agotado!}
     comments: []
   - id: x.produce.wo-tai-lei-le
     added: 2026-10-11
@@ -2012,17 +1847,6 @@ exercises:
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: ¡Qué gato tan mono!}
-    comments: []
-  - id: x.listen.wo-tai-gaoxing-le
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.wo-tai-gaoxing-le
-    targets: [s.wo-tai-gaoxing-le]
-    context: [w.wo, w.tai, w.gaoxing, w.le]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: ¡Estoy contentísimo!}
     comments: []
   - id: x.produce.wo-tai-gaoxing-le
     added: 2026-10-11
@@ -2292,4 +2116,213 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Construye. En una librería, una amiga te enseña un libro que quiere regalar a su hermano y te pregunta qué te parece. Tú también miras el precio.'}
     answer: {meaning: '这本书: 本 es el clasificador de los libros. 真 + adjetivo exclama.'}
+    comments: []
+  - id: x.dictation.mamahuhu
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [e.mamahuhu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ma3 ma3 hu1 hu1, hanzi: 马马虎虎, pinyin: mǎmǎhūhū, meaning: 'regular, así así'}
+    accept_pinyin_mismatch: '虎虎 se lee hūhū en esta expresión'
+    comments: []
+  - id: x.read.mamahuhu
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [e.mamahuhu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 马马虎虎}
+    answer: {hanzi: 马马虎虎, pinyin: mǎmǎhūhū, meaning: 'regular, así así'}
+    accept_pinyin_mismatch: '虎虎 se lee hūhū en esta expresión'
+    comments: []
+  - id: x.tones.mamahuhu
+    added: 2026-10-19
+    lang: es
+    type: tones
+    targets: [e.mamahuhu]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 马马虎虎, pinyin: ma ma hu hu}
+    answer: {typed: '3311', hanzi: 马马虎虎, pinyin: mǎmǎhūhū, meaning: 'regular, así así'}
+    accept_pinyin_mismatch: '虎虎 se lee hūhū en esta expresión'
+    comments: []
+  - id: x.dictation.yiqie
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.yiqie]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi2 qie4, hanzi: 一切, pinyin: yíqiè, meaning: 'todo (en general, la situación)'}
+    comments: []
+  - id: x.read.yiqie
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.yiqie]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 一切}
+    answer: {hanzi: 一切, pinyin: yíqiè, meaning: 'todo (en general, la situación)'}
+    comments: []
+  - id: x.tones.yiqie
+    added: 2026-10-19
+    lang: es
+    type: tones
+    targets: [w.yiqie]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 一切, pinyin: yi qie}
+    answer: {typed: '24', hanzi: 一切, pinyin: yíqiè, meaning: 'todo (en general, la situación)'}
+    comments: []
+  - id: x.listen.yiqie-dou-hen-hao
+    added: 2026-10-19
+    lang: es
+    type: listen
+    sentence: s.yiqie-dou-hen-hao
+    targets: [s.yiqie-dou-hen-hao]
+    context: [w.yiqie, w.dou, w.hen, w.hao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Todo va bien.}
+    comments: []
+  - id: x.produce.bie-tai-lei-le
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.bie-tai-lei-le
+    targets: [s.bie-tai-lei-le]
+    context: [w.bie, w.tai, w.lei, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡No te canses demasiado!»'}
+    answer: {meaning: ¡No te canses demasiado!}
+    comments: []
+  - id: x.produce.tai-piaoliang-le
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.tai-piaoliang-le
+    targets: [s.tai-piaoliang-le]
+    context: [w.tai, w.piaoliang, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Qué bonito!»'}
+    answer: {meaning: ¡Qué bonito!}
+    comments: []
+  - id: x.listen.wo-de-zhongwen-mamahuhu
+    added: 2026-10-19
+    lang: es
+    type: listen
+    sentence: s.wo-de-zhongwen-mamahuhu
+    targets: [s.wo-de-zhongwen-mamahuhu]
+    context: [w.wo, w.de, w.zhongwen, e.mamahuhu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mi chino es regular.}
+    comments: []
+  - id: x.nuance.dou-dui-le-yiqie
+    added: '2026-10-19'
+    lang: es
+    type: nuance
+    targets: [w.yiqie]
+    context: [w.dou]
+    skills: [comprehension, discrimination]
+    prompt: {text: '都对了 y 一切都很好, los dos con «todo»: ¿cuándo cada uno?'}
+    answer: {meaning: '都对了: todas las de algo concreto están bien (las respuestas de un ejercicio). 一切都很好: todo en general, cómo va la vida.'}
+    comments: []
+  - id: x.contrast.zhende
+    added: 2026-10-19
+    lang: es
+    type: contrast
+    group: g.zhende-zhengzai
+    targets: [w.zhende]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 真的, pinyin: zhēnde, meaning: 'de verdad, en serio'}
+    comments: []
+  - id: x.dictation.yiyang
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.yiyang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi2 yang4, hanzi: 一样, pinyin: yíyàng, meaning: 'igual, lo mismo'}
+    comments: []
+  - id: x.produce.yiyang
+    added: 2026-10-19
+    lang: es
+    type: produce
+    targets: [w.yiyang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «igual, lo mismo»? Escribe el pinyin.'}
+    answer: {typed: yi2 yang4, hanzi: 一样, pinyin: yíyàng, meaning: 'igual, lo mismo'}
+    comments: []
+  - id: x.read.yiyang
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.yiyang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 一样}
+    answer: {hanzi: 一样, pinyin: yíyàng, meaning: 'igual, lo mismo'}
+    comments: []
+  - id: x.tones.yiyang
+    added: 2026-10-19
+    lang: es
+    type: tones
+    targets: [w.yiyang]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 一样, pinyin: yi yang}
+    answer: {typed: '24', hanzi: 一样, pinyin: yíyàng, meaning: 'igual, lo mismo'}
+    comments: []
+  - id: x.dictation.zhongyao
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.zhongyao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhong4 yao4, hanzi: 重要, pinyin: zhòngyào, meaning: importante}
+    comments: []
+  - id: x.produce.zhongyao
+    added: 2026-10-19
+    lang: es
+    type: produce
+    targets: [w.zhongyao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «importante»? Escribe el pinyin.'}
+    answer: {typed: zhong4 yao4, hanzi: 重要, pinyin: zhòngyào, meaning: importante}
+    comments: []
+  - id: x.read.zhongyao
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.zhongyao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 重要}
+    answer: {hanzi: 重要, pinyin: zhòngyào, meaning: importante}
+    comments: []
+  - id: x.produce.women-yiyang-da
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.women-yiyang-da
+    targets: [s.women-yiyang-da]
+    context: [w.women, w.yiyang, w.da]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tenemos la misma edad.»'}
+    answer: {meaning: Tenemos la misma edad.}
+    comments: []
+  - id: x.produce.zhege-hen-zhongyao
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.zhege-hen-zhongyao
+    targets: [s.zhege-hen-zhongyao]
+    context: [w.zhe, w.ge, w.hen, w.zhongyao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Esto es muy importante.»'}
+    answer: {meaning: Esto es muy importante.}
     comments: []

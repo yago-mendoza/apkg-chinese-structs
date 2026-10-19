@@ -145,6 +145,17 @@ class AnkiSafety(unittest.TestCase):
         self.run_with(fake, anki.orphans, [], True, True)
         self.assertEqual(fake.cards, {})
 
+    def test_prune_keeps_cards_with_real_reviews(self):
+        """Lote 012: una tarjeta que perdió su progreso parece nueva, pero su historial dice que se estudió."""
+        fake = FakeAnki([
+            {"id": 1, "deck": self.saludos, "ex": "x.lost", "new": True,
+             "revlog": [{"type": 0, "ease": 3, "ivl": 1}, {"type": 4, "ease": 0, "ivl": 0}]},
+            {"id": 2, "deck": self.saludos, "ex": "x.lost2", "new": True, "revlog": [{"type": 4, "ease": 0, "ivl": 0}]},
+        ])
+        _, out = self.run_with(fake, anki.orphans, [], True, False)
+        self.assertEqual(sorted(fake.cards), [1])
+        self.assertIn("no se borra: x.lost", out)
+
     def test_prune_ignores_other_note_types_and_other_decks(self):
         fake = FakeAnki([
             {"id": 1, "deck": self.saludos, "ex": "x.lost", "new": True},
@@ -173,8 +184,16 @@ class AnkiSafety(unittest.TestCase):
             raise AssertionError("no debía llegar a compilar ni tocar Anki")
         with mock.patch.object(anki, "TESTING_PHASE", False), mock.patch.object(anki, "cmd_build", must_not_run), \
                 mock.patch.object(anki, "anki_request", must_not_run), redirect_stdout(io.StringIO()) as out:
-            self.assertEqual(anki.cmd_push(False, False, reset=True), 1)
+            self.assertEqual(anki.cmd_push(False, False, reset=True, phone_synced=True), 1)
         self.assertIn("fase de pruebas", out.getvalue())
+
+    def test_push_refused_without_phone_sync(self):
+        """Lotes 011 y 012: sin el «ya» de YAGO de que el móvil sincronizó, push no compila ni toca Anki."""
+        def must_not_run(*a, **k):
+            raise AssertionError("no debía llegar a compilar ni tocar Anki")
+        with mock.patch.object(anki, "cmd_build", must_not_run), mock.patch.object(anki, "anki_request", must_not_run),                 redirect_stdout(io.StringIO()) as out:
+            self.assertEqual(anki.cmd_push(False, True), 1)
+        self.assertIn("--phone-synced", out.getvalue())
 
     def test_push_syncs_before_touching_cards(self):
         """Lo estudiado en el móvil baja antes de importar o reordenar: si no, la sincronización se quedaría con la
@@ -186,7 +205,7 @@ class AnkiSafety(unittest.TestCase):
                 raise RuntimeError("sin red")
             raise AssertionError(f"no debía llegar a {action} sin haber sincronizado")
         with mock.patch.object(anki, "cmd_build", lambda *a: 0), mock.patch.object(anki, "anki_ready", lambda: True),                 mock.patch.object(anki, "anki_request", spy), redirect_stdout(io.StringIO()):
-            self.assertEqual(anki.cmd_push(False, True), 1)
+            self.assertEqual(anki.cmd_push(False, True, phone_synced=True), 1)
         self.assertEqual(calls, ["sync"])
 
     def test_reorder_new_leaves_well_placed_cards_alone(self):

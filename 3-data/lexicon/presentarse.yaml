@@ -91,7 +91,7 @@ entries:
     meaning: {es: '¿y…? (devuelve la pregunta)', en: 'and…?'}
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
-      - {kind: note, private: false, date: 2026-09-25, text: 'Tono neutro, corto y apagado, con una vocal parecida a [ə]. Tras una respuesta, devuelve la pregunta: «¿y tú?».', original: 'neutral → decay, /ə/, “y tú?”'}
+      - {kind: mnemonic, private: false, date: '2026-10-19', text: 'Una boca 口 ve a alguien sentado 匕 bajo un techo 尸 (juntos, 尼) y le devuelve la pregunta: «¿y tú?».', original: 'Una boca 口 ve a alguien sentado 匕 bajo un techo 尸 y le pregunta: «¿Y TÚ, qué haces ahí?»'}
   - id: w.ye
     use: say
     role: function
@@ -108,6 +108,7 @@ entries:
     hanzi: 都
     pinyin: dōu
     meaning: {es: 'todos, ambos (adverbio)', en: 'all, both'}
+    accept_cards: 'las formas de «todo» (都, 什么都, 一切) que pidió en el review 011'
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments: []
   - id: w.de
@@ -312,6 +313,8 @@ entries:
     pinyin: 'nǎ'
     meaning: {es: 'qué, cuál', en: 'which'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-19', text: 'Ves varias cosas y abres la boca 口 para preguntar: «¿cuál de esas 那 quieres?». La boca convierte «ese» en una pregunta, y el tono también cambia: 那 nà baja, 哪 nǎ baja y sube.', original: 'Mnemotecnia: imagina que ves varias cosas y usas tu boca (口) para preguntar: «¿CUÁL de esas (那) quieres?». Así recordarás que 口 + 那 = 哪, y que al añadir la boca conviertes «ese» en una pregunta: «¿cuál?». Recuerda también el cambio de tono: nà (4.º tono) → nǎ (3.º tono).'}
   - id: w.guo
     use: say
     role: content
@@ -329,6 +332,7 @@ entries:
     hanzi: 会
     pinyin: 'huì'
     meaning: {es: 'saber (hacer algo); ir a (predicción)', en: 'can (learned skill); will'}
+    accept_cards: '会, 能 y 可以 con el mismo verbo, la confusión central de su examen del review 011'
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Saber hacer algo aprendido: 我会说中文. «Saber un dato» es otra palabra, 知道 zhīdào [HSK 1].'}
@@ -391,7 +395,7 @@ entries:
     pos: nombre-propio
     hanzi: 英国
     pinyin: Yīngguó
-    meaning: {es: Reino Unido, Inglaterra, en: United Kingdom, England}
+    meaning: {es: 'Reino Unido, Inglaterra', en: 'United Kingdom, England'}
     level: 2
     level_reason: país muy frecuente, al nivel de 美国; 国 y 人 ya son HSK 1
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
@@ -402,7 +406,7 @@ entries:
     kind: expression
     hanzi: 幸会
     pinyin: xìnghuì
-    meaning: {es: encantado (de conocerle), fórmula formal, en: pleased to meet you (formal)}
+    meaning: {es: 'encantado (de conocerle), fórmula formal', en: pleased to meet you (formal)}
     level: 3
     level_reason: fórmula formal de presentación, propia del trato profesional; menos frecuente que 认识你很高兴
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
@@ -538,3 +542,47 @@ entries:
     source: {origin: attic, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'mixto_29_y_hoy la de hace 2 dias.md', date: '2026-09-27'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-16', text: 'Palabra a palabra: 外 «fuera» + 国 «país». 外国人 es el extranjero, como tú en China: 我是外国人.'}
+  - id: w.hanyu
+    use: say
+    role: content
+    kind: word
+    hanzi: 汉语
+    pinyin: Hànyǔ
+    meaning: {es: chino (el idioma; más formal que 中文), en: Chinese (language)}
+    source: {origin: inbox, batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 汉 «los han», el pueblo chino + 语 «lengua». Es el nombre de la asignatura y del examen (汉语水平考试, el HSK); al hablar se oye más 中文: 我在学习中文.'}
+  - id: w.deguo
+    use: hear
+    role: content
+    kind: word
+    pos: nombre-propio
+    hanzi: 德国
+    pinyin: Déguó
+    meaning: {es: Alemania, en: Germany}
+    level: 2
+    level_reason: país muy frecuente, al nivel de 英国; 国 es HSK 1
+    source: {origin: inbox, batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
+    comments: []
+  - id: w.baxi
+    use: hear
+    role: content
+    kind: word
+    pos: nombre-propio
+    hanzi: 巴西
+    pinyin: Bāxī
+    meaning: {es: Brasil, en: Brazil}
+    level: 2
+    level_reason: país frecuente; préstamo por el sonido (Ba-xi, Brasil); 西 es HSK 1
+    source: {origin: inbox, batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
+    comments: []
+  - id: w.jieshao
+    use: say
+    role: content
+    kind: word
+    hanzi: 介绍
+    pinyin: jièshào
+    meaning: {es: 'presentar (a alguien)', en: 'to introduce'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: '我介绍一下 «os presento»: antes de decir quién es alguien o quién eres tú.'}

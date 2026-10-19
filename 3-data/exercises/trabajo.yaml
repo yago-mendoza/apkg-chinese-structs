@@ -181,3 +181,127 @@ exercises:
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 司}
     answer: {typed: si1, hanzi: 司, pinyin: sī, meaning: 'Sale en 公司 gōngsī «empresa», 司机 sījī «conductor (de taxi, de autobús)».'}
     comments: []
+  - id: x.dictation.zhunbei
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.zhunbei]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhun3 bei4, hanzi: 准备, pinyin: zhǔnbèi, meaning: preparar(se)}
+    comments: []
+  - id: x.produce.zhunbei
+    added: 2026-10-19
+    lang: es
+    type: produce
+    targets: [w.zhunbei]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «preparar(se)»? Escribe el pinyin.'}
+    answer: {typed: zhun3 bei4, hanzi: 准备, pinyin: zhǔnbèi, meaning: preparar(se)}
+    comments: []
+  - id: x.read.zhunbei
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.zhunbei]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 准备}
+    answer: {hanzi: 准备, pinyin: zhǔnbèi, meaning: preparar(se)}
+    comments: []
+  - id: x.dictation.diannao
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.diannao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dian4 nao3, hanzi: 电脑, pinyin: diànnǎo, meaning: ordenador}
+    comments: []
+  - id: x.produce.diannao
+    added: 2026-10-19
+    lang: es
+    type: produce
+    targets: [w.diannao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «ordenador»? Escribe el pinyin.'}
+    answer: {typed: dian4 nao3, hanzi: 电脑, pinyin: diànnǎo, meaning: ordenador}
+    comments: []
+  - id: x.read.diannao
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.diannao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 电脑}
+    answer: {hanzi: 电脑, pinyin: diànnǎo, meaning: ordenador}
+    comments: []
+  - id: x.tones.diannao
+    added: 2026-10-19
+    lang: es
+    type: tones
+    targets: [w.diannao]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '43', hanzi: 电脑, pinyin: diànnǎo, meaning: ordenador}
+    comments: []
+  - id: x.dictation.shangban
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.shangban]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shang4 ban1, hanzi: 上班, pinyin: shàngbān, meaning: 'ir a trabajar, estar trabajando'}
+    comments: []
+  - id: x.produce.shangban
+    added: 2026-10-19
+    lang: es
+    type: produce
+    targets: [w.shangban]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «ir a trabajar, estar trabajando»? Escribe el pinyin.'}
+    answer: {typed: shang4 ban1, hanzi: 上班, pinyin: shàngbān, meaning: 'ir a trabajar, estar trabajando'}
+    comments: []
+  - id: x.read.shangban
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.shangban]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 上班}
+    answer: {hanzi: 上班, pinyin: shàngbān, meaning: 'ir a trabajar, estar trabajando'}
+    comments: []
+  - id: x.produce.ni-zhunbei-hao-le-ma
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.ni-zhunbei-hao-le-ma
+    targets: [s.ni-zhunbei-hao-le-ma]
+    context: [w.ni, w.zhunbei, w.hao, w.le, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Estás listo?»'}
+    answer: {meaning: '¿Estás listo?'}
+    comments: []
+  - id: x.produce.wo-de-diannao-hen-man
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.wo-de-diannao-hen-man
+    targets: [s.wo-de-diannao-hen-man]
+    context: [w.wo, w.de, w.diannao, w.hen, w.man]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mi ordenador va muy lento.»'}
+    answer: {meaning: Mi ordenador va muy lento.}
+    comments: []
+  - id: x.produce.wo-mingtian-shangban
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.wo-mingtian-shangban
+    targets: [s.wo-mingtian-shangban]
+    context: [w.wo, w.mingtian, w.shangban]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mañana trabajo.»'}
+    answer: {meaning: Mañana trabajo.}
+    comments: []

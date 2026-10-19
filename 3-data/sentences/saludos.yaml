@@ -3,6 +3,8 @@
 sentences:
   - id: s.ni-hao-ma
     use: say
+    listen: true
+    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 好, ref: w.hao, pinyin: hǎo}
@@ -11,6 +13,8 @@ sentences:
     translation: {es: '¿Qué tal estás?', en: 'How are you?'}
   - id: s.wo-hen-hao-ni-ne
     use: say
+    listen: true
+    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 很, ref: w.hen, pinyin: hěn}
@@ -31,6 +35,8 @@ sentences:
     translation: {es: Yo también estoy bien., en: I'm fine too.}
   - id: s.huanying-ni
     use: say
+    listen: true
+    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 欢迎, ref: w.huanying, pinyin: huānyíng}
       - {text: 你, ref: w.ni, pinyin: nǐ}
@@ -39,6 +45,8 @@ sentences:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: s.ni-zenmeyang
     use: say
+    listen: true
+    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 怎么样, ref: w.zenmeyang, pinyin: zěnmeyàng}
@@ -65,6 +73,8 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.qu-nali-a
     use: say
+    listen: true
+    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 去, ref: w.qu, pinyin: qù}
       - {text: 哪里, ref: w.nali, pinyin: nǎlǐ}
@@ -110,6 +120,8 @@ sentences:
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
   - id: s.zuijin-mang-ma
     use: say
+    listen: true
+    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 最近, ref: w.zuijin, pinyin: zuìjìn}
       - {text: 忙, ref: w.mang, pinyin: máng}
@@ -140,6 +152,8 @@ sentences:
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
   - id: s.zhege-zenmeyang
     use: say
+    listen: true
+    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 这, ref: w.zhe, pinyin: zhè}
       - {text: 个, ref: w.ge, pinyin: ge}
@@ -149,6 +163,8 @@ sentences:
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
   - id: s.wo-zuijin-hen-mang
     use: say
+    listen: true
+    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 最近, ref: w.zuijin, pinyin: zuìjìn}
@@ -250,3 +266,33 @@ sentences:
       - {text: ！}
     translation: {es: ¡Hasta la próxima!, en: See you next time!}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.ni-zai-mang-shenme
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 在, ref: w.zai.progressive, pinyin: 'zài'}
+      - {text: 忙, ref: w.mang, pinyin: 'máng'}
+      - {text: 什么, ref: w.shenme, pinyin: 'shénme'}
+      - {text: ？}
+    translation: {es: '¿En qué andas liado?', en: 'What are you busy with?'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.ni-xian-mang-ba
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 先, ref: w.xian.first, pinyin: 'xiān'}
+      - {text: 忙, ref: w.mang, pinyin: 'máng'}
+      - {text: 吧, ref: w.ba.particle, pinyin: 'ba'}
+      - {text: 。}
+    translation: {es: 'Sigue con lo tuyo (no te entretengo).', en: 'Go ahead with what you''re doing.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.zuijin-hai-hao-ma
+    use: say
+    segments:
+      - {text: 最近, ref: w.zuijin, pinyin: 'zuìjìn'}
+      - {text: 还, ref: w.hai.still, pinyin: 'hái'}
+      - {text: 好, ref: w.hao, pinyin: 'hǎo'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Todo bien últimamente?', en: 'Is everything OK lately?'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}

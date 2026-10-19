@@ -197,3 +197,62 @@ sentences:
       - {text: 。}
     translation: {es: 'Esa persona es tu amiga.', en: 'That person is your friend.'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'chat: dictados de la profesora al empezar la clase', date: '2026-10-15'}
+  - id: s.shengbing-bu-neng-youyong
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 游泳, ref: w.youyong, pinyin: 'yóuyǒng'}
+      - {text: ，}
+      - {text: 但是, ref: w.danshi, pinyin: 'dànshì'}
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 生病, ref: w.shengbing, pinyin: 'shēngbìng'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: ，}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 能, ref: w.neng, pinyin: 'néng'}
+      - {text: 游泳, ref: w.youyong, pinyin: 'yóuyǒng'}
+      - {text: 。}
+    translation: {es: 'Me gusta nadar, pero hoy estoy enfermo y no puedo.', en: 'I like swimming, but I''m sick today and can''t swim.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.zhe-gen-ni-mei-guanxi
+    use: hear
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 跟, ref: w.gen, pinyin: 'gēn'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 没, ref: w.mei, pinyin: 'méi'}
+      - {text: 关系, ref: w.guanxi, pinyin: 'guānxi'}
+      - {text: 。}
+    translation: {es: 'Esto no tiene nada que ver contigo.', en: 'This has nothing to do with you.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.women-guanxi-hen-hao
+    use: hear
+    segments:
+      - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
+      - {text: 关系, ref: w.guanxi, pinyin: 'guānxi'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 好, ref: w.hao, pinyin: 'hǎo'}
+      - {text: 。}
+    translation: {es: 'Nos llevamos muy bien.', en: 'We get along very well.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.ni-shi-shei
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 谁, ref: w.shei, pinyin: 'shéi'}
+      - {text: ？}
+    translation: {es: '¿Quién eres?', en: 'Who are you?'}
+    source: {origin: inbox, batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
+  - id: s.bieren-dou-lai-le
+    use: say
+    segments:
+      - {text: 别人, ref: w.bieren, pinyin: 'biéren'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 来, ref: w.lai, pinyin: 'lái'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'Los demás ya han venido.', en: 'The others have already come.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}

@@ -1,0 +1,34 @@
+# Frases · Trabajo y estudio. Esquema: 3-data/README.md
+
+sentences:
+  - id: s.ni-zhunbei-hao-le-ma
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 准备, ref: w.zhunbei, pinyin: 'zhǔnbèi'}
+      - {text: 好, ref: w.hao, pinyin: 'hǎo'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Estás listo?', en: 'Are you ready?'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.wo-de-diannao-hen-man
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 电脑, ref: w.diannao, pinyin: 'diànnǎo'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 慢, ref: w.man, pinyin: 'màn'}
+      - {text: 。}
+    translation: {es: 'Mi ordenador va muy lento.', en: 'My computer is very slow.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.wo-mingtian-shangban
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 上班, ref: w.shangban, pinyin: 'shàngbān'}
+      - {text: 。}
+    translation: {es: 'Mañana trabajo.', en: 'I work tomorrow.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}

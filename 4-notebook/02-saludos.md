@@ -17,7 +17,7 @@
 - ✅🃏 晚安 wǎn'ān [wan˧˩˧ an˥] · buenas noches (al irse a dormir) · _expresión_ · Palabra a palabra: 晚 «noche» + 安 «paz»: «noche tranquila». · Solo para despedirse antes de dormir. Al llegar por la noche se dice 晚上好 wǎnshang hǎo.
 - ✅🃏 回来 huílai [xweɪ˧˥ laɪ] · volver (aquí) · _verbo_ · 回 «volver» + 来 «hacia aquí». 你回来了！ es un saludo al ver llegar a alguien de casa o del trabajo. · 回 «volver» + 来 «hacia aquí»: volver adonde está quien habla. Venir solo se puede hacia aquí, así que el 来 pone el «aquí». 我回来了 «ya estoy aquí».
 - ✅🃏 啊 a [a] · partícula que suaviza o anima · _partícula_ · Al final de una pregunta o exclamación la hace más cálida: 去哪里啊？ suena más cercano que 去哪里？.
-- ✅🃏 早上 zǎoshang [tsɑʊ˧˩˧ ʂɑŋ] · la mañana (temprano) · _sustantivo_ · 早上 es la primera hora; 上午 shàngwǔ, la mañana hasta mediodía. Con 好 da el saludo 早上好, que se acorta en 早！. · 早上 es la primera hora, del despertar hasta las ocho o las nueve; 上午 es toda la mañana, hasta el mediodía. En catalán: 早上, la matinada; 上午, el matí. 早上七点 «las siete de la mañana».
+- ✅🃏 早上 zǎoshang [tsɑʊ˧˩˧ ʂɑŋ] · la mañana (temprano) · _sustantivo_ · Con 好 da el saludo 早上好, que se acorta en 早！. · 早上 es la primera hora, del despertar hasta las ocho o las nueve; 上午 es toda la mañana, hasta el mediodía. En catalán: 早上, la matinada; 上午, el matí. 早上七点 «las siete de la mañana».
 - ✅🃏 早上好 zǎoshang hǎo [tsɑʊ˧˩˧ ʂɑŋ xɑʊ˧˩˧] · buenos días · _expresión_ · Palabra a palabra: 早上 «primera hora» + 好 «bien».
 - ✅🃏 下午好 xiàwǔ hǎo [ɕja˥˩ u˧˩˧ xɑʊ˧˩˧] · buenas tardes · _expresión_ · Palabra a palabra: 下午 «tarde» (下 «después» + 午 «mediodía») + 好 «bien». · Se oye en tiendas, recepciones y al abrir una reunión. Entre amigos casi no se usa: se saluda con 你好 o con la situación.
 - ✅🃏 晚上好 wǎnshang hǎo [wan˧˩˧ ʂɑŋ xɑʊ˧˩˧] · buenas noches (al llegar) · _expresión_ · Palabra a palabra: 晚上 «noche» + 好 «bien». · 晚上好 saluda al llegar por la noche; 晚安 wǎnān se dice al irse a dormir. Como «buenas noches» en español, pero son dos frases distintas.
@@ -38,6 +38,8 @@
 - ✅🃏 怎么了 zěnme le [tsən˧˩˧ mɤ lɤ] · ¿qué pasa?, ¿qué te pasa? · _expresión_ · Palabra a palabra: 怎么 «cómo» + 了, que marca que algo ha cambiado: «¿qué ha pasado?».
 - 🟡🃏 近 jìn [tɕin˥˩] · cerca · _adjetivo_
 - ✅🃏 早 zǎo [tsɑʊ˧˩˧] · temprano, pronto · _adjetivo_ · 你来得很早 «has llegado temprano»: con 得, tras el verbo. Suelto, por la mañana, 早！ es «¡buenos días!».
+- ✅🃏 哈喽 hālou [xa˥ loʊ] · hola (informal) · _interjección_ · Palabra a palabra: 哈 hā y 喽 lou solo imitan el sonido de hello. Informal y simpático; con desconocidos, 你好. · 哈 y 拿 llevan 合 hé, que ya no da su sonido.
+- ✅🃏 嗨 hāi [xaɪ˥] · ¡hola! (informal) · _interjección_ · Préstamo del inglés hi, como 哈喽 de hello: entre amigos. Entre amigos también se saluda solo con el nombre.
 
 ## Saludos con 好
 
@@ -86,6 +88,13 @@ Dos sílabas que caen y empiezan por z: cambian las vocales.
 - 最近 zuìjìn · zuì, con u: para preguntar cómo va
 - 再见 zàijiàn · zài, con a, y jiàn con a: para irte
 
+## 还 y 嗨
+
+La misma sílaba: solo los separa el tono.
+
+- 还 hái · sube (2.º tono): 你还好吗
+- 嗨 hāi · alto y plano (1.º): 嗨，你好！
+
 ## Frases
 
 - ✅🃏 你好吗？ · nǐ hǎo ma · ¿Qué tal estás?
@@ -114,3 +123,6 @@ Dos sílabas que caen y empiezan por z: cambian las vocales.
 - ✅🃏 你回来了！我回来了。今天好冷！ · nǐ huílai le wǒ huílai le jīntiān hǎo lěng · —¡Ya has vuelto! —Ya estoy aquí. ¡Qué frío hace hoy!
 - ✅🃏 你现在忙吗？ · nǐ xiànzài máng ma · ¿Estás ocupado ahora?
 - ✅🃏 下次见！ · xiàcì jiàn · ¡Hasta la próxima!
+- ✅🃏 你在忙什么？ · nǐ zài máng shénme · ¿En qué andas liado?
+- ✅🃏 你先忙吧。 · nǐ xiān máng ba · Sigue con lo tuyo (no te entretengo).
+- ✅🃏 最近还好吗？ · zuìjìn hái hǎo ma · ¿Todo bien últimamente?

@@ -313,3 +313,81 @@ sentences:
       - {text: 。}
     translation: {es: 'Tienes razón.', en: 'You''re right.'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: s.wo-keyi-youyong-ma
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 可以, ref: w.keyi, pinyin: 'kěyǐ'}
+      - {text: 游泳, ref: w.youyong, pinyin: 'yóuyǒng'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Puedo nadar? (¿me dejan?)', en: 'May I swim?'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.keyi-qu-hai-bu-zhidao
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 可以, ref: w.keyi, pinyin: 'kěyǐ'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: ，}
+      - {text: 但是, ref: w.danshi, pinyin: 'dànshì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 还, ref: w.hai.still, pinyin: 'hái'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 知道, ref: w.zhidao, pinyin: 'zhīdao'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 。}
+    translation: {es: 'Puedo ir, pero todavía no sé si quiero.', en: 'I''m allowed to go, but I still don''t know if I want to.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.yinggai-shi
+    use: say
+    segments:
+      - {text: 应该, ref: w.yinggai, pinyin: 'yīnggāi'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 。}
+    translation: {es: 'Seguramente sí.', en: 'Probably.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-zhidao-danshi-bu-mingbai
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 知道, ref: w.zhidao, pinyin: 'zhīdao'}
+      - {text: ，}
+      - {text: 但是, ref: w.danshi, pinyin: 'dànshì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 明白, ref: w.mingbai, pinyin: 'míngbai'}
+      - {text: 。}
+    translation: {es: 'Lo sé, pero no lo entiendo.', en: 'I know, but I don''t understand it.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-keyi-kaiche-ma
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 可以, ref: w.keyi, pinyin: 'kěyǐ'}
+      - {text: 开车, ref: w.kaiche, pinyin: 'kāichē'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Puedo conducir? (¿me dejas?)', en: 'May I drive?'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.buyong-le-xiexie
+    use: say
+    segments:
+      - {text: 不用, ref: w.buyong, pinyin: 'búyòng'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: ，}
+      - {text: 谢谢, ref: e.xiexie, pinyin: 'xièxie'}
+      - {text: 。}
+    translation: {es: 'No hace falta, gracias.', en: 'No need, thanks.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.meishenme
+    use: say
+    segments:
+      - {text: 没什么, ref: e.meishenme, pinyin: 'méi shénme'}
+      - {text: 。}
+    translation: {es: 'No es nada.', en: 'It''s nothing.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}

@@ -11,7 +11,7 @@
 - ✅🃏 是 shì [ʂɨ˥˩] · ser · _verbo_ · 是 une dos nombres (我是学生), no un nombre con un adjetivo: 我很高, no 我是高. Para preguntar vale 她漂亮吗？ o 她是不是很漂亮？, pero no 她是漂亮吗？.
 - ✅🃏 不 bù [pu˥˩] · no · _adverbio_
 - ✅🃏 吗 ma [ma] · ¿…? (convierte la frase en pregunta de sí o no) · _partícula_ · Partícula final que convierte una afirmación en una pregunta de sí o no.
-- ✅🃏 呢 ne [nɤ] · ¿y…? (devuelve la pregunta) · _partícula_ · Tono neutro, corto y apagado, con una vocal parecida a [ə]. Tras una respuesta, devuelve la pregunta: «¿y tú?».
+- ✅🃏 呢 ne [nɤ] · ¿y…? (devuelve la pregunta) · _partícula_ · Una boca 口 ve a alguien sentado 匕 bajo un techo 尸 (juntos, 尼) y le devuelve la pregunta: «¿y tú?».
 - ✅🃏 也 yě [jɛ˧˩˧] · también · _adverbio_
 - ✅🃏 都 dōu [toʊ˥] · todos, ambos (adverbio) · _adverbio_
 - ✅🃏 的 de [tɤ] · de (posesión: 我的 = mi) · _partícula_ · No tiene una sola traducción: 我的 «mío», 这是我的 «es mío», 真的 «de verdad». Une lo que describe con lo descrito. · Como los otros «conejitos» (对, 时, 狗), 的 lleva una pieza a cada lado; aquí, un palito encima las une, como 的 une al dueño con lo suyo: 我的书.
@@ -31,13 +31,13 @@
 - ✅🃏 北京 Běijīng [peɪ˧˩˧ tɕiŋ˥] · Pekín · _nombre propio_ · Literalmente «capital del norte»: 北 běi «norte» + 京 jīng «capital». · 京 es un edificio alto sobre una colina, la parte de arriba de 高.
 - ✅ 大卫 Dàwèi [ta˥˩ weɪ˥˩] · David (nombre de ejemplo) · _nombre propio_
 - ✅🃏 先生 xiānsheng [ɕjɛn˥ ʂɤŋ] · señor (tras el apellido) · _sustantivo_ · Detrás del apellido: 白先生 «el señor Bai». Es como se llama a alguien en un trato formal; no por el nombre completo. · 先 «antes» + 生 «nacer»: el que nació antes.
-- ✅🃏 哪 nǎ [na˧˩˧] · qué, cuál · _interrogativo_
+- ✅🃏 哪 nǎ [na˧˩˧] · qué, cuál · _interrogativo_ · Ves varias cosas y abres la boca 口 para preguntar: «¿cuál de esas 那 quieres?». La boca convierte «ese» en una pregunta, y el tono también cambia: 那 nà baja, 哪 nǎ baja y sube.
 - ✅🃏 国 guó [kwɔ˧˥] · país · _sustantivo_ · En los nombres de países: 中国, 美国. 你是哪国人？ «¿de qué país eres?».
 - ✅🃏 会 huì [xweɪ˥˩] · saber (hacer algo); ir a (predicción) · _verbo_ · Saber hacer algo aprendido: 我会说中文. «Saber un dato» es otra palabra, 知道 zhīdào [HSK 1]. · También predice: 明天会下雨 «mañana lloverá».
 - ✅🃏 学习 xuéxí [ɕɥœ˧˥ ɕi˧˥] · estudiar, aprender · _verbo_ · 学 «aprender» + 习 «practicar». 学生 «estudiante» lleva el mismo 学.
 - ✅ 成龙 Chéng Lóng [ʈʂʰɤŋ˧˥ lʊŋ˧˥] · Jackie Chan · _nombre propio_ · Su apellido es 成 y su nombre, 龙 «dragón»: 他姓成，叫成龙.
-- ✅🃏 英国 Yīngguó [iŋ˥ kwɔ˧˥] · Reino Unido · _nombre propio_
-- ✅🃏 幸会 xìnghuì [ɕiŋ˥˩ xweɪ˥˩] · encantado (de conocerle) · _expresión_ · Palabra a palabra: 幸 «suerte» + 会 «encontrarse»: «qué suerte encontrarle». · En una presentación formal: «您好，我是…», «您贵姓？», «我姓…，叫…» y, al final, los dos dicen «幸会！».
+- ✅🃏 英国 Yīngguó [iŋ˥ kwɔ˧˥] · Reino Unido, Inglaterra · _nombre propio_
+- ✅🃏 幸会 xìnghuì [ɕiŋ˥˩ xweɪ˥˩] · encantado (de conocerle), fórmula formal · _expresión_ · Palabra a palabra: 幸 «suerte» + 会 «encontrarse»: «qué suerte encontrarle». · En una presentación formal: «您好，我是…», «您贵姓？», «我姓…，叫…» y, al final, los dos dicen «幸会！».
 - ✅🃏 出生 chūshēng [ʈʂʰu˥ ʂɤŋ˥] · nacer · _verbo_ · 出 «salir» + 生 «nacer»: salir al mundo.
 - ✅🃏 属 shǔ [ʂu˧˩˧] · ser (de un signo del zodiaco) · _verbo_ · 我属马 «soy caballo»: el signo del año en que naciste. Se pregunta 你属什么？.
 - ✅🃏 猜 cāi [tsʰaɪ˥] · adivinar · _verbo_
@@ -47,6 +47,10 @@
 - ✅🃏 国家 guójiā [kwɔ˧˥ tɕja˥] · país · _sustantivo_ · Palabra a palabra: 国 «país» + 家 «casa». Para preguntar de dónde es alguien basta con 你是哪国人；国家 es la palabra entera, como en 你来自哪个国家.
 - ✅🃏 日本 Rìběn [ʐɨ˥˩ pən˧˩˧] · Japón · _nombre propio_ · Palabra a palabra: 日 «sol» + 本 «origen»: el país donde nace el sol. 日本人 «japonés».
 - ✅🃏 外国 wàiguó [waɪ˥˩ kwɔ˧˥] · el extranjero; extranjero (de otro país) · _sustantivo_ · Palabra a palabra: 外 «fuera» + 国 «país». 外国人 es el extranjero, como tú en China: 我是外国人.
+- ✅🃏 汉语 Hànyǔ [xan˥˩ y˧˩˧] · chino (el idioma; más formal que 中文) · _nombre propio_ · Palabra a palabra: 汉 «los han», el pueblo chino + 语 «lengua». Es el nombre de la asignatura y del examen (汉语水平考试, el HSK); al hablar se oye más 中文: 我在学习中文.
+- ✅🃏 德国 Déguó [tɤ˧˥ kwɔ˧˥] · Alemania · _nombre propio_
+- ✅🃏 巴西 Bāxī [pa˥ ɕi˥] · Brasil · _nombre propio_
+- ✅🃏 介绍 jièshào [tɕjɛ˥˩ ʂɑʊ˥˩] · presentar (a alguien) · _verbo_ · 我介绍一下 «os presento»: antes de decir quién es alguien o quién eres tú.
 
 ## 是 shì y 十 shí
 
@@ -163,3 +167,15 @@ Misma sílaba, distinto tono.
 - ✅🃏 你叫什么名字？我叫大卫。 · nǐ jiào shénme míngzi wǒ jiào Dàwèi · —¿Cómo te llamas? —Me llamo David.
 - ✅🃏 您叫什么名字？ · nín jiào shénme míngzi · ¿Cómo se llama usted?
 - ✅🃏 我是外国人。 · wǒ shì wàiguó rén · Soy extranjero.
+- ✅🃏 我觉得明天会下雨。 · wǒ juéde míngtiān huì xiàyǔ · Creo que mañana lloverá.
+- ✅🃏 我会游泳。 · wǒ huì yóuyǒng · Sé nadar.
+- ✅🃏 我觉得她的房子很漂亮。 · wǒ juéde tā de fángzi hěn piàoliang · Creo que su casa es muy bonita.
+- ✅🃏 我觉得她喜欢我，但是我不知道她想不想见我。 · wǒ juéde tā xǐhuan wǒ dànshì wǒ bù zhīdao tā xiǎng bù xiǎng jiàn wǒ · Creo que le gusto, pero no sé si quiere verme.
+- ✅🃏 我以前不会游泳，但是现在会了。 · wǒ yǐqián bú huì yóuyǒng dànshì xiànzài huì le · Antes no sabía nadar, pero ahora sí.
+- ✅🃏 我会做饭，但是今天不想做。 · wǒ huì zuò fàn dànshì jīntiān bù xiǎng zuò · Sé cocinar, pero hoy no me apetece.
+- ✅🃏 我什么都喜欢。 · wǒ shénme dōu xǐhuan · Me gusta todo.
+- ✅🃏 我都喜欢。 · wǒ dōu xǐhuan · Me gustan todos (los que estamos viendo).
+- ✅🃏 你们都是哪国人？ · nǐmen dōu shì nǎ guó rén · ¿De dónde sois todos?
+- ✅🃏 我在学习汉语。 · wǒ zài xuéxí Hànyǔ · Estoy estudiando chino.
+- ✅🃏 我会开车。 · wǒ huì kāichē · Sé conducir.
+- ✅🃏 我介绍一下。 · wǒ jièshào yīxià · Os presento (os hago las presentaciones).

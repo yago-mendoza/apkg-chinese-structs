@@ -440,3 +440,37 @@ entries:
     source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
     comments:
       - {kind: note, private: false, date: '2026-10-16', text: 'No confundir el zhī de 知道 con el yī de 医生: el primer hanzi de cada uno se parece mucho.', original: 'No confundir el zhi de zhidao saber con el yi de yisheng de doctor porque el primer hanzi es muy parecido'}
+  - id: c.side.chuo
+    use: context
+    use_reason: 'componente: se ve en 这, 还, 过, 进, 近 y 道'
+    kind: component
+    hanzi: 辶
+    pinyin: chuò
+    meaning: {es: 'caminar, avanzar (como componente)', en: walking radical}
+    real_word: {hanzi: 走, pinyin: zǒu, es: '辶 es un pie en marcha, en lo que se mueve o tiene que ver con un camino (进, 过, 道). Para «andar, irse» se dice 走.'}
+    level: 1
+    level_reason: 'aparece en 这, 还, 过 y 进 [HSK 1]'
+    accept_pinyin_mismatch: 'componente: chuò es su nombre, no se dice suelto'
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Rodea el carácter por abajo y por la izquierda, como un camino. No confundir con 讠 «hablar», que va solo a la izquierda: 请 pide hablando; 进 entra caminando.'}
+  - id: g.qing-qing.look
+    kind: group
+    basis: visual
+    title: '青 y 请'
+    explanation: '青 da el sonido; 讠 delante lo convierte en pedir.'
+    members:
+      - {ref: c.qing.green, cue: 'solo, sin nada a la izquierda'}
+      - {ref: w.qing, cue: '讠 hablar a la izquierda: se pide hablando'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments: []
+  - id: g.yan-chuo.look
+    kind: group
+    basis: visual
+    title: '讠 y 辶'
+    explanation: 'Dos piezas que se confunden de lejos: una habla, la otra camina.'
+    members:
+      - {ref: c.side.yan, cue: 'solo a la izquierda, un punto y un trazo que baja y gira (请, 说)'}
+      - {ref: c.side.chuo, cue: 'rodea por la izquierda y por abajo, como un camino (这, 过)'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments: []

@@ -16,12 +16,14 @@ Lo que creemos que ayuda a aprender a quien estudia con este mazo, cómo se comp
 - **Desde**: lote 011 (2026-10-16). **De dónde**: review 010, «lo que viene de clase debe aparecer lo antes posible, sin importar el HSK».
 - **Cómo se mide**: en `anki.py stats`, el porcentaje de «Otra vez» en lo de clase frente al resto, y lo que diga en el review sobre si llega a clase con lo de la semana ya visto.
 - **Regla**: `docs/goal.md`, «Qué entra y qué sale primero».
+- **Lote 012 (2026-10-19)**: la última clase pasa delante de las anteriores, que siguen de la primera a la última. Se mide igual, y además si lo de la semana le sale antes de la clase siguiente.
 
 ### 🧪 Menos tarjetas de oír, y más difíciles, no le quitan oído
 
 - **Desde**: lote 011 (2026-10-16). **De dónde**: review 010, «las de oír deben ser desafíos» y «no puede haber tantas».
 - **Cómo se mide**: el porcentaje de «Otra vez» en las de oír en las próximas semanas, frente al 24 % general del lote 010, y los ejercicios de escucha de los deberes.
 - **Regla**: `docs/goal.md`, «Las de oír, retos».
+- **Lote 012 (2026-10-19)**: fuera de lo de clase, las frases que se practican para decir ya no llevan tarjeta de oír (231 menos).
 
 ### 🧪 Ver el tono en color le ayuda a recordarlo
 
@@ -39,7 +41,20 @@ Lo que creemos que ayuda a aprender a quien estudia con este mazo, cómo se comp
 
 - **Desde**: lote 003 (2026-10-01). **De dónde**: sus apuntes.
 - **Cómo se mide**: `stats` sobre los contrastes que más falla. 他 / 她 / 它 sigue fallándose (4 de 7 en el lote 010): si no mejora, pasar a pareja para oír con su frase.
+- **Lote 012 (2026-10-19)**: entran cinco parejas que solo separa el tono (还 / 嗨, 鱼 / 雨, 晚 / 完 / 万, 没 / 每, 六 / 留) y los contrastes que pidió (吧 / 呢, 休息 / 学习, 青 / 请, 讠 / 辶, 喝 / 渴, 真的 / 正在).
 - **Regla**: `docs/goal.md`, «Lo que se confunde, contrastado sin rodeos».
+
+### 🧪 Sus propias mnemotecnias, en todas partes, le ayudan a recordar
+
+- **Desde**: lote 012 (2026-10-19). **De dónde**: lo pidió en el chat del 16 y en el review 011 («la parte de mnemotecnia debería ser más clara», «en las frases, el bloquecito de cada mnemotecnia»).
+- **Cómo se mide**: el «Otra vez» de las palabras con mnemotecnia propia frente a las que no la tienen, y lo que diga en el review.
+- **Regla**: `docs/design.md`, «Tarjetas» (reverso).
+
+### 🧪 Un dibujo explica mejor que una nota lo que se reparte en el tiempo
+
+- **Desde**: lote 012 (2026-10-19). **De dónde**: review 011, «¿no podrías currarte mini diagramas que ayuden a entender?», con 早上 y 上午.
+- **Cómo se mide**: si deja de confundir 早上 y 上午 en `stats` y lo que diga de la franja.
+- **Regla**: `docs/design.md`, «Tarjetas» (franja del día).
 
 ## Confirmadas
 

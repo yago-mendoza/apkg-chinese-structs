@@ -58,6 +58,12 @@ entries:
       - {ref: w.zhongwu, cue: 中 «en medio» + 午}
       - {ref: w.xiawu, cue: '下 «abajo, después» + 午'}
       - {ref: w.wanshang, cue: '晚 «tarde, noche»; sin 午'}
+    timeline:
+      - {ref: w.zaoshang, from: 5, to: 9}
+      - {ref: w.shangwu, from: 8, to: 12}
+      - {ref: w.zhongwu, from: 12, to: 14}
+      - {ref: w.xiawu, from: 14, to: 18}
+      - {ref: w.wanshang, from: 18, to: 24}
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
     comments: []
   - id: w.mingtian
@@ -318,7 +324,7 @@ entries:
     kind: word
     hanzi: 点
     pinyin: diǎn
-    meaning: {es: la hora en punto (las tres, las cinco…), en: o'clock}
+    meaning: {es: 'la hora en punto (las tres, las cinco…)', en: o'clock}
     pos: clasificador
     pos_reason: 'En la hora cuenta como un clasificador: número + 点.'
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
@@ -512,3 +518,117 @@ entries:
     meaning: {es: 'después; en el futuro', en: 'after; in the future'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
     comments: []
+  - id: w.changchang
+    use: say
+    role: function
+    kind: word
+    hanzi: 常常
+    pinyin: chángcháng
+    meaning: {es: a menudo, en: often}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Va delante del verbo: 我常常喝茶 «tomo té a menudo». Más que 有时候 «a veces».'}
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'No confundir con 尝尝 chángchang «probar un poco» [HSK 5], que repite el verbo 尝 «probar».'}
+  - id: w.yijing
+    use: say
+    role: function
+    kind: word
+    hanzi: 已经
+    pinyin: yǐjīng
+    meaning: {es: ya, en: already}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Casi siempre con 了: 我已经买了 «ya lo he comprado». Lo contrario es 还没: 我还没买 «aún no lo he comprado», sin 了.'}
+      - {kind: character, private: false, date: '2026-10-19', text: '经 jīng y 轻 qīng comparten la parte derecha, que les da el final -ing.'}
+  - id: w.kuaiyao
+    use: say
+    role: function
+    kind: word
+    hanzi: 快要
+    pinyin: kuàiyào
+    meaning: {es: 'estar a punto de (con 了 al final)', en: 'to be about to (with 了)'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 快 «pronto» + 要 «ir a»: «va a ser ya». Se cierra con 了: 快要下雨了 «está a punto de llover». Sin 快, 要…了 dice lo mismo con menos prisa: 我要睡觉了 «me voy a dormir».'}
+  - id: w.mashang
+    use: say
+    role: content
+    kind: word
+    hanzi: 马上
+    pinyin: mǎshàng
+    meaning: {es: 'enseguida, ahora mismo', en: right away}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 马 «caballo» + 上 «encima»: «ya subido al caballo», listo para salir. 我马上来 «voy enseguida».'}
+  - id: w.mei.each
+    use: say
+    use_reason: 'HSK 3, pero 每天 y 每个 se dicen a diario desde el principio'
+    role: function
+    kind: word
+    hanzi: 每
+    pinyin: měi
+    meaning: {es: cada, en: every}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Va delante de lo que se repite, y casi siempre con 都 detrás: 我每天都学习 «estudio todos los días».'}
+  - id: w.gang
+    use: say
+    role: function
+    kind: word
+    hanzi: 刚
+    pinyin: gāng
+    meaning: {es: acabar de (hace muy poco), en: just (a moment ago)}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Delante del verbo: 我刚到 «acabo de llegar». Sin 了: el «hace un momento» ya lo dice 刚.'}
+  - id: w.dasuan
+    use: say
+    role: content
+    kind: word
+    hanzi: 打算
+    pinyin: dǎsuàn
+    meaning: {es: 'planear, tener previsto (hacer algo)', en: to plan to}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 打 «hacer» + 算 «calcular»: «echar las cuentas». Un plan, no un deseo: 我打算明年去中国 «pienso ir a China el año que viene»; 想 es tener ganas.'}
+  - id: w.wan.finish
+    use: say
+    role: function
+    kind: word
+    hanzi: 完
+    pinyin: wán
+    meaning: {es: 'terminar (detrás del verbo: 吃完)', en: to finish (after a verb)}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Detrás del verbo dice que se ha terminado: 我吃完了 «he terminado de comer»; 我看完了 «ya lo he visto entero».'}
+  - id: g.wan-wan-wan
+    kind: group
+    basis: soundalike
+    title: '晚, 完 y 万'
+    explanation: 'La misma sílaba: solo los separa el tono.'
+    members:
+      - {ref: w.wan, cue: 'baja y sube (3.º): 晚上, 太晚了'}
+      - {ref: w.wan.finish, cue: 'sube (2.º): detrás del verbo, 吃完了'}
+      - {ref: w.wan.tenk, cue: 'baja fuerte (4.º): 一万'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments: []
+  - id: w.zuihou
+    use: say
+    role: content
+    kind: word
+    hanzi: 最后
+    pinyin: zuìhòu
+    meaning: {es: 'al final; el último', en: 'finally; last'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 最 «lo más» + 后 «detrás»: lo que va más atrás. 我是最后一个 «soy el último».'}
+  - id: w.jianmian
+    use: say
+    role: content
+    kind: word
+    hanzi: 见面
+    pinyin: jiànmiàn
+    meaning: {es: 'verse, quedar (con alguien)', en: 'to meet'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 见 «ver» + 面 «cara»: verse las caras. 我们明天见面吧 «quedamos mañana».'}

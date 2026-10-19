@@ -569,7 +569,7 @@ sentences:
       - {text: 走, ref: w.zou, pinyin: zǒu}
       - {text: 了, ref: w.le, pinyin: le}
       - {text: 。}
-    translation: {es: Me tengo que ir., en: I have to go.}
+    translation: {es: 'Ya me voy (me tengo que ir).', en: 'I have to go.'}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.kuai-chulai
     use: say
@@ -739,3 +739,117 @@ sentences:
       - {text: ？}
     translation: {es: '¿Puedo probármelo?', en: 'Can I try it on?'}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-jintian-bu-neng-youyong
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 能, ref: w.neng, pinyin: 'néng'}
+      - {text: 游泳, ref: w.youyong, pinyin: 'yóuyǒng'}
+      - {text: 。}
+    translation: {es: 'Hoy no puedo nadar.', en: 'I can''t swim today.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-mingtian-dei-gongzuo
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 得, ref: w.dei, pinyin: 'děi'}
+      - {text: 工作, ref: w.gongzuo, pinyin: 'gōngzuò'}
+      - {text: 。}
+    translation: {es: 'Mañana tengo que trabajar.', en: 'I have to work tomorrow.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.dei-xuexi-bu-xiang
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 得, ref: w.dei, pinyin: 'děi'}
+      - {text: 学习, ref: w.xuexi, pinyin: 'xuéxí'}
+      - {text: ，}
+      - {text: 但是, ref: w.danshi, pinyin: 'dànshì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 学习, ref: w.xuexi, pinyin: 'xuéxí'}
+      - {text: 。}
+    translation: {es: 'Mañana tengo que estudiar, pero no me apetece.', en: 'I have to study tomorrow, but I don''t feel like it.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.mingtian-neng-qu-jintian-bu-neng
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 能, ref: w.neng, pinyin: 'néng'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: ，}
+      - {text: 但是, ref: w.danshi, pinyin: 'dànshì'}
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 能, ref: w.neng, pinyin: 'néng'}
+      - {text: 。}
+    translation: {es: 'Creo que mañana podré ir, pero hoy no.', en: 'I think I can go tomorrow, but not today.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-mei-cuo
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 没, ref: w.mei, pinyin: 'méi'}
+      - {text: 错, ref: w.cuo, pinyin: 'cuò'}
+      - {text: 。}
+    translation: {es: 'No me he equivocado (no es culpa mía).', en: 'I''m not wrong.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.qing-kai-men
+    use: say
+    segments:
+      - {text: 请, ref: w.qing, pinyin: 'qǐng'}
+      - {text: 开, ref: w.kai, pinyin: 'kāi'}
+      - {text: 门, ref: w.men, pinyin: 'mén'}
+      - {text: 。}
+    translation: {es: 'Abre la puerta, por favor.', en: 'Please open the door.'}
+    source: {origin: inbox, batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
+  - id: s.ni-mingtian-bixu-lai
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 必须, ref: w.bixu, pinyin: 'bìxū'}
+      - {text: 来, ref: w.lai, pinyin: 'lái'}
+      - {text: 。}
+    translation: {es: 'Mañana tienes que venir sí o sí.', en: 'You must come tomorrow.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-jintian-bu-neng-kaiche
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 能, ref: w.neng, pinyin: 'néng'}
+      - {text: 开车, ref: w.kaiche, pinyin: 'kāichē'}
+      - {text: 。}
+    translation: {es: 'Hoy no puedo conducir (he bebido).', en: 'I can''t drive today.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.zhexie-shi-wo-de-shu
+    use: say
+    segments:
+      - {text: 这些, ref: w.zhexie, pinyin: 'zhèxiē'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 书, ref: w.shu, pinyin: 'shū'}
+      - {text: 。}
+    translation: {es: 'Estos son mis libros.', en: 'These are my books.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.naxie-ren-shi-shei
+    use: say
+    segments:
+      - {text: 那些, ref: w.naxie, pinyin: 'nàxiē'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 谁, ref: w.shei, pinyin: 'shéi'}
+      - {text: ？}
+    translation: {es: '¿Quién es esa gente?', en: 'Who are those people?'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}

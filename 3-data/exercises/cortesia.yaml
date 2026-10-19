@@ -419,17 +419,6 @@ exercises:
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 对不起, pinyin: dui bu qi}
     answer: {typed: '453', hanzi: 对不起, pinyin: duìbuqǐ, meaning: lo siento}
     comments: []
-  - id: x.listen.buhaoyisi-wo-lai-wan-le
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.buhaoyisi-wo-lai-wan-le
-    targets: [s.buhaoyisi-wo-lai-wan-le]
-    context: [e.buhaoyisi, w.wo, w.lai, w.wan, w.le]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Perdona, he llegado tarde.'}
-    comments: []
   - id: x.produce.buhaoyisi-wo-lai-wan-le
     added: 2026-10-01
     lang: es
@@ -440,17 +429,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Perdona, he llegado tarde.»'}
     answer: {meaning: 'Perdona, he llegado tarde.'}
-    comments: []
-  - id: x.listen.duibuqi-wo-cuo-le
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.duibuqi-wo-cuo-le
-    targets: [s.duibuqi-wo-cuo-le]
-    context: [w.duibuqi, w.wo, w.cuo, w.le]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Lo siento, me he equivocado.'}
     comments: []
   - id: x.produce.duibuqi-wo-cuo-le
     added: 2026-10-01
@@ -594,17 +572,6 @@ exercises:
     prompt: {text: 'Te dan las gracias y respondes. Di los dos turnos en voz alta: «¡Gracias! —De nada.»'}
     answer: {meaning: —¡Gracias! —De nada.}
     comments: []
-  - id: x.listen.tai-xiexie-ni-le
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.tai-xiexie-ni-le
-    targets: [s.tai-xiexie-ni-le]
-    context: [w.tai, e.xiexie, w.ni, w.le]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: ¡Muchísimas gracias!}
-    comments: []
   - id: x.produce.tai-xiexie-ni-le
     added: 2026-10-01
     lang: es
@@ -615,17 +582,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Te han hecho un gran favor. Dale las gracias de verdad, en voz alta.'}
     answer: {meaning: ¡Muchísimas gracias!}
-    comments: []
-  - id: x.listen.ni-keyi-bang-wo-ma
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.ni-keyi-bang-wo-ma
-    targets: [s.ni-keyi-bang-wo-ma]
-    context: [w.ni, w.keyi, w.bang, w.wo, w.ma]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Me puedes ayudar?'}
     comments: []
   - id: x.produce.ni-keyi-bang-wo-ma
     added: 2026-10-01
@@ -1170,17 +1126,6 @@ exercises:
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 明白, pinyin: ming bai}
     answer: {typed: '25', hanzi: 明白, pinyin: míngbai, meaning: 'entender, tener claro'}
     comments: []
-  - id: x.listen.wo-bu-zhidao
-    added: 2026-10-06
-    lang: es
-    type: listen
-    sentence: s.wo-bu-zhidao
-    targets: [s.wo-bu-zhidao]
-    context: [w.wo, w.bu, w.zhidao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: No lo sé.}
-    comments: []
   - id: x.produce.wo-bu-zhidao
     added: 2026-10-06
     lang: es
@@ -1192,17 +1137,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «No lo sé.»'}
     answer: {meaning: No lo sé.}
     comments: []
-  - id: x.listen.wo-wang-le
-    added: 2026-10-06
-    lang: es
-    type: listen
-    sentence: s.wo-wang-le
-    targets: [s.wo-wang-le]
-    context: [w.wo, w.wang.forget, w.le]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Se me ha olvidado.}
-    comments: []
   - id: x.produce.wo-wang-le
     added: 2026-10-06
     lang: es
@@ -1213,17 +1147,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Se me ha olvidado.»'}
     answer: {meaning: Se me ha olvidado.}
-    comments: []
-  - id: x.listen.wo-mingbai-le
-    added: 2026-10-06
-    lang: es
-    type: listen
-    sentence: s.wo-mingbai-le
-    targets: [s.wo-mingbai-le]
-    context: [w.wo, w.mingbai, w.le]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Ya lo entiendo.}
     comments: []
   - id: x.produce.wo-mingbai-le
     added: 2026-10-06
@@ -1386,17 +1309,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 没错}
     answer: {hanzi: 没错, pinyin: méi cuò, meaning: '¡exacto!, eso es'}
     comments: []
-  - id: x.listen.ni-deng-yixia
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.ni-deng-yixia
-    targets: [s.ni-deng-yixia]
-    context: [w.ni, w.deng, w.yixia]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Espera un momento.}
-    comments: []
   - id: x.produce.ni-deng-yixia
     added: 2026-10-08
     lang: es
@@ -1407,17 +1319,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Espera un momento.»'}
     answer: {meaning: Espera un momento.}
-    comments: []
-  - id: x.listen.wo-xiang-wen-yixia
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.wo-xiang-wen-yixia
-    targets: [s.wo-xiang-wen-yixia]
-    context: [w.wo, w.xiang, w.wen, w.yixia]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Quería preguntar una cosa.}
     comments: []
   - id: x.produce.wo-xiang-wen-yixia
     added: 2026-10-08
@@ -1430,17 +1331,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Quería preguntar una cosa.»'}
     answer: {meaning: Quería preguntar una cosa.}
     comments: []
-  - id: x.listen.rang-wo-xiang-yixia
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.rang-wo-xiang-yixia
-    targets: [s.rang-wo-xiang-yixia]
-    context: [w.rang, w.wo, w.xiang, w.yixia]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Déjame pensarlo un momento.}
-    comments: []
   - id: x.produce.rang-wo-xiang-yixia
     added: 2026-10-08
     lang: es
@@ -1451,17 +1341,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Déjame pensarlo un momento.»'}
     answer: {meaning: Déjame pensarlo un momento.}
-    comments: []
-  - id: x.listen.qing-ni-kan-yixia
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.qing-ni-kan-yixia
-    targets: [s.qing-ni-kan-yixia]
-    context: [w.qing, w.ni, w.kan, w.yixia]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Échale un vistazo, por favor.'}
     comments: []
   - id: x.produce.qing-ni-kan-yixia
     added: 2026-10-08
@@ -1474,17 +1353,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Échale un vistazo, por favor.»'}
     answer: {meaning: 'Échale un vistazo, por favor.'}
     comments: []
-  - id: x.listen.ni-keyi-jieshi-yixia-ma
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.ni-keyi-jieshi-yixia-ma
-    targets: [s.ni-keyi-jieshi-yixia-ma]
-    context: [w.ni, w.keyi, w.jieshi, w.yixia, w.ma]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Me lo puedes explicar?'}
-    comments: []
   - id: x.produce.ni-keyi-jieshi-yixia-ma
     added: 2026-10-08
     lang: es
@@ -1495,17 +1363,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Me lo puedes explicar?»'}
     answer: {meaning: '¿Me lo puedes explicar?'}
-    comments: []
-  - id: x.listen.bang-wo-na-yixia
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.bang-wo-na-yixia
-    targets: [s.bang-wo-na-yixia]
-    context: [w.bang, w.wo, w.na.take, w.yixia]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Sujétamelo un momento.}
     comments: []
   - id: x.produce.bang-wo-na-yixia
     added: 2026-10-08
@@ -1518,17 +1375,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Sujétamelo un momento.»'}
     answer: {meaning: Sujétamelo un momento.}
     comments: []
-  - id: x.listen.shei-lai-bangbang-wo
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.shei-lai-bangbang-wo
-    targets: [s.shei-lai-bangbang-wo]
-    context: [w.shei, w.lai, w.bang, w.wo]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Quién me echa una mano?'}
-    comments: []
   - id: x.produce.shei-lai-bangbang-wo
     added: 2026-10-08
     lang: es
@@ -1539,17 +1385,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Quién me echa una mano?»'}
     answer: {meaning: '¿Quién me echa una mano?'}
-    comments: []
-  - id: x.listen.dou-dui-le
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.dou-dui-le
-    targets: [s.dou-dui-le]
-    context: [w.dou, w.dui, w.le]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: ¡Está todo bien!}
     comments: []
   - id: x.produce.dou-dui-le
     added: 2026-10-08
@@ -1862,17 +1697,6 @@ exercises:
     prompt: {text: Situación. Trabajas en una tienda y un cliente parece perdido. Pregúntale con educación qué ayuda necesita.}
     answer: {meaning: 'Disculpe, ¿qué ayuda necesita?'}
     comments: []
-  - id: x.listen.qingwen-ni-xuyao-shenme-bangzhu
-    added: 2026-10-10
-    lang: es
-    type: listen
-    sentence: s.qingwen-ni-xuyao-shenme-bangzhu
-    targets: [s.qingwen-ni-xuyao-shenme-bangzhu]
-    context: [e.qingwen, w.ni, w.xuyao, w.shenme, w.bangzhu]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Disculpe, ¿qué ayuda necesita?'}
-    comments: []
   - id: x.produce.qingwen-ni-xuyao-shenme-bangzhu
     added: 2026-10-10
     lang: es
@@ -1891,7 +1715,7 @@ exercises:
     targets: [s.duibuqi-wo-lai-wan-le, s.nimen-chifan-le-ma, s.duibuqi-nimen-chifan-le-ma]
     words: [w.duibuqi, w.lai, w.wan, w.nimen, w.chifan]
     skills: [production, speaking]
-    prompt: {text: Construye. Llegas tarde a una cena con amigos que llevan un buen rato esperándote. Discúlpate y pregunta si ya han empezado, con estas palabras o con otras.}
+    prompt: {text: 'Construye. Llegas tarde a una cena con amigos que llevan un buen rato esperándote. Discúlpate y pregunta si ya han empezado, con estas palabras o con otras.'}
     answer: {meaning: '来晚了 «he llegado tarde»: el 了 dice que ya ha pasado.'}
     comments: []
   - id: x.choice.reply-xiexie
@@ -1970,17 +1794,6 @@ exercises:
     refs: []
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 不用谢, pinyin: bu yong xie}
     answer: {typed: '444', hanzi: 不用谢, pinyin: bù yòng xiè, meaning: de nada (no hace falta dar las gracias)}
-    comments: []
-  - id: x.listen.duibuqi-wo-lai-wan-le
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.duibuqi-wo-lai-wan-le
-    targets: [s.duibuqi-wo-lai-wan-le]
-    context: [w.duibuqi, w.wo, w.lai, w.wan, w.le]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¡Perdón, llego tarde!'}
     comments: []
   - id: x.produce.duibuqi-wo-lai-wan-le
     added: 2026-10-11
@@ -2075,4 +1888,230 @@ exercises:
     skills: [reading, discrimination]
     prompt: {text: '¿Cuál es zhīdao, «saber»?'}
     answer: {hanzi: 知道, pinyin: zhīdao, meaning: saber}
+    comments: []
+  - id: x.dictation.yinggai
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.yinggai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ying1 gai1, hanzi: 应该, pinyin: yīnggāi, meaning: deber (lo que toca hacer); seguramente}
+    comments: []
+  - id: x.cloze.yinggai
+    added: 2026-10-19
+    lang: es
+    type: cloze
+    sentence: s.yinggai-shi
+    gap: w.yinggai
+    targets: [w.yinggai]
+    context: [w.shi]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Seguramente sí.»'}
+    answer: {typed: ying1 gai1, hanzi: 应该, pinyin: yīnggāi, meaning: deber (lo que toca hacer); seguramente}
+    comments: []
+  - id: x.read.yinggai
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.yinggai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 应该}
+    answer: {hanzi: 应该, pinyin: yīnggāi, meaning: deber (lo que toca hacer); seguramente}
+    comments: []
+  - id: x.produce.wo-keyi-youyong-ma
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.wo-keyi-youyong-ma
+    targets: [s.wo-keyi-youyong-ma]
+    context: [w.wo, w.keyi, w.youyong, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Puedo nadar? (¿me dejan?)»'}
+    answer: {meaning: '¿Puedo nadar? (¿me dejan?)'}
+    comments: []
+  - id: x.produce.keyi-qu-hai-bu-zhidao
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.keyi-qu-hai-bu-zhidao
+    targets: [s.keyi-qu-hai-bu-zhidao]
+    context: [w.wo, w.keyi, w.qu, w.danshi, w.hai.still, w.bu, w.zhidao, w.xiang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Puedo ir, pero todavía no sé si quiero.»'}
+    answer: {meaning: 'Puedo ir, pero todavía no sé si quiero.'}
+    comments: []
+  - id: x.produce.yinggai-shi
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.yinggai-shi
+    targets: [s.yinggai-shi]
+    context: [w.yinggai, w.shi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Seguramente sí.»'}
+    answer: {meaning: Seguramente sí.}
+    comments: []
+  - id: x.produce.wo-zhidao-danshi-bu-mingbai
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.wo-zhidao-danshi-bu-mingbai
+    targets: [s.wo-zhidao-danshi-bu-mingbai]
+    context: [w.wo, w.zhidao, w.danshi, w.bu, w.mingbai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Lo sé, pero no lo entiendo.»'}
+    answer: {meaning: 'Lo sé, pero no lo entiendo.'}
+    comments: []
+  - id: x.charsound.xi-5
+    added: 2026-10-19
+    lang: es
+    type: charsound
+    targets: [e.meiguanxi, w.guanxi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 系}
+    answer: {typed: xi4, hanzi: 系, pinyin: xì, meaning: 'Sale en 没关系 méi guānxi «no pasa nada», 关系 guānxi «relación (entre personas
+        o cosas)».'}
+    comments: []
+  - id: x.cloze.keyi.drive
+    added: '2026-10-19'
+    lang: es
+    type: cloze
+    sentence: s.wo-keyi-kaiche-ma
+    gap: w.keyi
+    targets: [w.keyi]
+    context: [w.hui.can, w.neng]
+    skills: [production, pinyin]
+    prompt: {text: '¿会, 能, 可以 o 得? Completa en pinyin: 我＿开车吗？ «¿Me dejas conducir?»'}
+    answer: {typed: ke3 yi3, hanzi: 可以, pinyin: kěyǐ, meaning: 'poder: está permitido'}
+    comments: []
+  - id: x.nuance.zhidao-mingbai
+    added: '2026-10-19'
+    lang: es
+    type: nuance
+    targets: [w.mingbai]
+    context: [w.zhidao]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我知道，但是我不明白: ¿qué separa 知道 de 明白?'}
+    answer: {meaning: '知道: saber, tener el dato. 明白: entenderlo, que te quede claro. Se puede saber algo sin entenderlo: «lo sé, pero no lo entiendo».'}
+    comments: []
+  - id: x.contrast.qing
+    added: 2026-10-19
+    lang: es
+    type: contrast
+    group: g.qing-qing.look
+    targets: [w.qing]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es qǐng, «por favor»?'}
+    answer: {hanzi: 请, pinyin: qǐng, meaning: por favor}
+    comments: []
+  - id: x.produce.wo-keyi-kaiche-ma
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.wo-keyi-kaiche-ma
+    targets: [s.wo-keyi-kaiche-ma]
+    context: [w.wo, w.keyi, w.kaiche, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Puedo conducir? (¿me dejas?)»'}
+    answer: {meaning: '¿Puedo conducir? (¿me dejas?)'}
+    comments: []
+  - id: x.dictation.buyong
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.buyong]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bu2 yong4, hanzi: 不用, pinyin: búyòng, meaning: no hace falta}
+    comments: []
+  - id: x.read.buyong
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.buyong]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 不用}
+    answer: {hanzi: 不用, pinyin: búyòng, meaning: no hace falta}
+    comments: []
+  - id: x.tones.buyong
+    added: 2026-10-19
+    lang: es
+    type: tones
+    targets: [w.buyong]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 不用, pinyin: bu yong}
+    answer: {typed: '24', hanzi: 不用, pinyin: búyòng, meaning: no hace falta}
+    comments: []
+  - id: x.dictation.meishenme
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [e.meishenme]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mei2 shen2 me5, hanzi: 没什么, pinyin: méi shénme, meaning: no es nada; no pasa nada}
+    comments: []
+  - id: x.produce.meishenme
+    added: 2026-10-19
+    lang: es
+    type: produce
+    targets: [e.meishenme]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «no es nada; no pasa nada»? Escribe el pinyin.'}
+    answer: {typed: mei2 shen2 me5, hanzi: 没什么, pinyin: méi shénme, meaning: no es nada; no pasa nada}
+    comments: []
+  - id: x.read.meishenme
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [e.meishenme]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 没什么}
+    answer: {hanzi: 没什么, pinyin: méi shénme, meaning: no es nada; no pasa nada}
+    comments: []
+  - id: x.tones.meishenme
+    added: 2026-10-19
+    lang: es
+    type: tones
+    targets: [e.meishenme]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 没什么, pinyin: mei shen me}
+    answer: {typed: '225', hanzi: 没什么, pinyin: méi shénme, meaning: no es nada; no pasa nada}
+    comments: []
+  - id: x.cloze.buyong
+    added: 2026-10-19
+    lang: es
+    type: cloze
+    sentence: s.buyong-le-xiexie
+    gap: w.buyong
+    targets: [w.buyong]
+    context: [w.le, e.xiexie]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «No hace falta, gracias.»'}
+    answer: {typed: bu2 yong4, hanzi: 不用, pinyin: búyòng, meaning: no hace falta}
+    comments: []
+  - id: x.produce.buyong-le-xiexie
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.buyong-le-xiexie
+    targets: [s.buyong-le-xiexie]
+    context: [w.buyong, w.le, e.xiexie]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No hace falta, gracias.»'}
+    answer: {meaning: 'No hace falta, gracias.'}
+    comments: []
+  - id: x.produce.meishenme-2
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.meishenme
+    targets: [s.meishenme]
+    context: [e.meishenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No es nada.»'}
+    answer: {meaning: No es nada.}
     comments: []

@@ -19,6 +19,7 @@ entries:
     hanzi: 一
     pinyin: yī
     meaning: {es: uno, en: one}
+    accept_cards: 'el tono de cada número, del uno al diez, que pidió en el review 011'
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments: []
   - id: w.num.er
@@ -94,6 +95,7 @@ entries:
     hanzi: 十
     pinyin: shí
     meaning: {es: diez, en: ten}
+    accept_cards: 'el tono de cada número (la serie del 1 al 10 y 百, 千, 万…), que pidió en el review 011'
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Al principio de un número, 十 va solo: 十二 (12). Dentro de un número lleva siempre 一 delante: 一百一十三 (113), 五百一十二 (512).', original: 'tb esta bien refoerzra la idea de que el yi empenzaod un numero grnade solo se pone siempre y solo obvia del 11 al 19'}
@@ -231,6 +233,7 @@ entries:
     hanzi: 千
     pinyin: 'qiān'
     meaning: {es: 'mil', en: 'thousand'}
+    accept_cards: 'el tono de cada número (la serie del 1 al 10 y 百, 千, 万…), que pidió en el review 011'
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
   - id: w.wan.tenk
@@ -575,3 +578,24 @@ entries:
       - {ref: w.yao.one, cue: 'alto y plano; solo al dictar cifras'}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments: []
+  - id: g.liu-liu
+    kind: group
+    basis: soundalike
+    title: '六 y 留'
+    explanation: 'La misma sílaba: solo los separa el tono.'
+    members:
+      - {ref: w.num.liu, cue: 'baja fuerte (4.º): 六个人'}
+      - {ref: w.liu, cue: 'sube (2.º): 留在中国'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments: []
+  - id: w.yiban
+    use: say
+    role: content
+    kind: word
+    hanzi: 一半
+    pinyin: yíbàn
+    meaning: {es: 'la mitad', en: 'half'}
+    accept_pinyin_mismatch: '一 delante de cuarto tono se dice yí: yíbàn'
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: '我要一半 «quiero la mitad». 一斤 es la mitad de un 公斤.'}

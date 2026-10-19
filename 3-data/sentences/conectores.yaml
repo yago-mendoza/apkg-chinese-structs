@@ -119,3 +119,78 @@ sentences:
       - {text: 。}
     translation: {es: 'Ha vuelto a venir.', en: 'He''s come again.'}
     source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
+  - id: s.gen-wo-yiqi-qu-haishi-zai-jia
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 跟, ref: w.gen, pinyin: 'gēn'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 一起, ref: w.yiqi, pinyin: 'yīqǐ'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: ，}
+      - {text: 还是, ref: w.haishi, pinyin: 'háishi'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 家, ref: w.jia, pinyin: 'jiā'}
+      - {text: ？}
+    translation: {es: '¿Quieres venir conmigo o prefieres quedarte en casa?', en: 'Do you want to come with me, or stay at home?'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.ruguo-you-shijian-xiang-qu-kan-ni
+    use: say
+    segments:
+      - {text: 如果, ref: w.ruguo, pinyin: 'rúguǒ'}
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 时间, ref: w.shijian, pinyin: 'shíjiān'}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 看, ref: w.kan, pinyin: 'kàn'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 。}
+    translation: {es: 'Si mañana tengo tiempo, me gustaría ir a verte.', en: 'If I have time tomorrow, I''d like to come and see you.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-mingtian-zai-zuo
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 再, ref: w.zai.again, pinyin: 'zài'}
+      - {text: 做, ref: w.zuo.do, pinyin: 'zuò'}
+      - {text: 。}
+    translation: {es: 'Ya lo haré mañana.', en: 'I''ll do it tomorrow.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.shi-nan-de-haishi-nv-de
+    use: say
+    segments:
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 男, ref: w.nan.male, pinyin: 'nán'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 还是, ref: w.haishi, pinyin: 'háishi'}
+      - {text: 女, ref: w.nv.female, pinyin: 'nǚ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: ？}
+    translation: {es: '¿Es hombre o mujer?', en: 'Is it a man or a woman?'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.ni-zuihao-wen-yixia-laoshi
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 最好, ref: w.zuihao, pinyin: 'zuìhǎo'}
+      - {text: 问, ref: w.wen, pinyin: 'wèn'}
+      - {text: 一下, ref: w.yixia, pinyin: 'yīxià'}
+      - {text: 老师, ref: w.laoshi, pinyin: 'lǎoshī'}
+      - {text: 。}
+    translation: {es: 'Mejor pregúntale a la profesora.', en: 'You''d better ask the teacher.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.hai-you-ma
+    use: say
+    segments:
+      - {text: 还有, ref: w.haiyou, pinyin: 'háiyǒu'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Queda más? (¿hay más?)', en: 'Is there any more?'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}

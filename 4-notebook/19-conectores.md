@@ -11,11 +11,14 @@
 - ✅🃏 虽然 suīrán [sweɪ˥ ʐan˧˥] · aunque · _conjunción_
 - ✅🃏 但是 dànshì [tan˥˩ ʂɨ˥˩] · pero · _conjunción_ · Con 虽然 se dicen los dos: 虽然很累，但是我很高兴.
 - ✅🃏 一边 yībiān [i˥ pjɛn˥] · mientras (一边…一边…) · _adverbio_ · 一边 + verbo + 一边 + verbo: dos cosas a la vez, 他一边吃一边说. Así se dice «leo y tomo té»: 和 no une acciones.
-- ✅🃏 吧 ba [pa] · partícula de propuesta (venga, vale) · _partícula_ · Al final, convierte la frase en propuesta: 我们下午见吧 «nos vemos por la tarde, ¿vale?»; 买吧 «cómpralo». · 吧 es como el «va» de «vinga, va»: anima a hacerlo, sin mandar. · Tres usos: propone (我们走吧 «vámonos»), suaviza una orden (你坐吧 «siéntate, anda») y supone (你累了吧？ «estarás cansado, ¿no?»). 走吧 sin sujeto vale para «vámonos» y para «vete»: 我们走吧, 你走吧.
+- ✅🃏 吧 ba [pa] · partícula de propuesta (venga, vale) · _partícula_ · Al final, convierte la frase en propuesta: 我们下午见吧 «nos vemos por la tarde, ¿vale?»; 买吧 «cómpralo». · 吧 es como el «va» de «vinga, va»: anima a hacerlo, sin mandar. · Tres usos: propone (我们走吧 «vámonos»), suaviza una orden (你坐吧 «siéntate, anda») y supone (你累了吧？ «estarás cansado, ¿no?»). 走吧 sin sujeto vale para «vámonos» y para «vete»: 我们走吧, 你走吧. · Una boca 口 junto a media puerta 巴: «venga, vámonos», mientras la empuja para salir.
 - ✅🃏 再 zài [tsaɪ˥˩] · otra vez, de nuevo; luego, después · _adverbio_ · Es el 再 de 再见 «adiós», literalmente «volver a ver», y de 再说一遍 «dilo otra vez». Va delante del verbo y habla de algo que aún no ha pasado: 我明天再来 «vuelvo mañana».
 - ✅🃏 也许 yěxǔ [jɛ˧˩˧ ɕy˧˩˧] · quizá · _adverbio_ · Va delante del verbo: 也许他不来 «quizá no venga». · 午 wǔ da el sonido a 许 xǔ: mismo tono, aunque hoy la vocal es otra (xu lleva ü).
 - ✅🃏 好吧 hǎo ba [xɑʊ˧˩˧ pa] · bueno, vale (aceptando) · _expresión_ · Palabra a palabra: 好 «bien» + 吧 «venga». Aceptas, a veces sin muchas ganas: «bueno, vale». 好的 es un «vale» sin más.
 - ✅🃏 又 yòu [joʊ˥˩] · otra vez (lo que ya ha pasado) · _adverbio_ · 又 cuenta una repetición que ya ha ocurrido: 他又来了 «ha vuelto a venir». Para lo que aún no ha pasado se usa 再: 我明天再来.
+- ✅🃏 还是 háishi [xaɪ˧˥ ʂɨ] · o (en una pregunta entre dos) · _conjunción_ · Solo en preguntas que dan a elegir: 你喝茶还是喝咖啡？ «¿tomas té o café?». La pregunta ya está en 还是: no lleva 吗.
+- ✅🃏 最好 zuìhǎo [tsweɪ˥˩ xɑʊ˧˩˧] · lo mejor es (hacer algo); mejor · _adverbio_ · Delante del verbo, aconseja: 你最好问一下老师 «mejor pregúntale a la profesora».
+- ✅🃏 还有 háiyǒu [xaɪ˧˥ joʊ˧˩˧] · y además; todavía hay · _verbo_ · Para añadir algo: 还有，我明天不来 «y otra cosa: mañana no vengo». En una tienda, 还有吗？ «¿queda más?».
 
 ## 八 bā y 吧 ba
 
@@ -46,6 +49,13 @@ Las tres son you: 有 lleva tercer tono; 又 y 右 suenan igual y las separa la 
 - 又 yòu · cae (4.º), delante del verbo: 他又来了
 - 右 yòu · cae (4.º), lado: 左右
 
+## 吧 y 呢
+
+Las dos partículas llevan 口 a la izquierda; la derecha las separa.
+
+- 吧 ba · 巴 a la derecha: media puerta (走吧)
+- 呢 ne · 尼 a la derecha: alguien sentado bajo un techo (你呢？)
+
 ## Frases
 
 - ✅🃏 因为下雨，所以我不去。 · yīnwèi xiàyǔ suǒyǐ wǒ bú qù · Como llueve, no voy.
@@ -58,3 +68,9 @@ Las tres son you: 有 lleva tercer tono; 又 y 右 suenan igual y las separa la 
 - ✅🃏 明天再说。 · míngtiān zài shuō · Ya lo hablamos mañana.
 - ✅🃏 我明天再学习中文。 · wǒ míngtiān zài xuéxí Zhōngwén · Mañana vuelvo a estudiar chino.
 - ✅🃏 他又来了。 · tā yòu lái le · Ha vuelto a venir.
+- ✅🃏 你想跟我一起去，还是想在家？ · nǐ xiǎng gēn wǒ yīqǐ qù háishi xiǎng zài jiā · ¿Quieres venir conmigo o prefieres quedarte en casa?
+- ✅🃏 如果明天我有时间，我想去看你。 · rúguǒ míngtiān wǒ yǒu shíjiān wǒ xiǎng qù kàn nǐ · Si mañana tengo tiempo, me gustaría ir a verte.
+- ✅🃏 我明天再做。 · wǒ míngtiān zài zuò · Ya lo haré mañana.
+- ✅🃏 是男的还是女的？ · shì nán de háishi nǚ de · ¿Es hombre o mujer?
+- ✅🃏 你最好问一下老师。 · nǐ zuìhǎo wèn yīxià lǎoshī · Mejor pregúntale a la profesora.
+- ✅🃏 还有吗？ · háiyǒu ma · ¿Queda más? (¿hay más?)

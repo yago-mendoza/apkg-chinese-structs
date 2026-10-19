@@ -87,3 +87,33 @@ entries:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-13', text: '同 «mismo»: 同学 es quien estudia contigo y 同事, quien trabaja contigo.'}
+  - id: w.zhunbei
+    use: say
+    role: content
+    kind: word
+    hanzi: 准备
+    pinyin: zhǔnbèi
+    meaning: {es: 'preparar(se)', en: 'to prepare'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 准 «exacto» + 备 «tener listo». 你准备好了吗？ «¿estás listo?».'}
+  - id: w.diannao
+    use: say
+    role: content
+    kind: word
+    hanzi: 电脑
+    pinyin: diànnǎo
+    meaning: {es: 'ordenador', en: 'computer'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 电 «electricidad» + 脑 «cerebro»: el cerebro eléctrico.'}
+  - id: w.shangban
+    use: say
+    role: content
+    kind: word
+    hanzi: 上班
+    pinyin: shàngbān
+    meaning: {es: 'ir a trabajar, estar trabajando', en: 'to go to work'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 上 «subir, empezar» + 班 «turno». 我明天上班 «mañana trabajo». Al salir, 下班.'}

@@ -10,9 +10,9 @@
 - ✅🃏 看看 kànkan [kʰan˥˩ kʰan] · echar un vistazo · _verbo_ · Repetir el verbo lo suaviza: «mirar un poco», no «mirar dos veces».
 - ✅🃏 这 zhè [ʈʂɤ˥˩] · este, esto · _pronombre_
 - ✅🃏 那 nà [na˥˩] · ese, eso; aquel · _pronombre_ · Al hablar se oye mucho nèige: es 那个 contraído de 那一个, lo mismo que nàge.
-- ✅🃏 走 zǒu [tsoʊ˧˩˧] · irse; andar · _verbo_ · 走 es irse o andar, sin decir adónde: 我走了 «me voy». Para ir a un sitio, 去: 我去商店. Y no es 坐 zuò «sentarse».
+- ✅🃏 走 zǒu [tsoʊ˧˩˧] · irse; andar · _verbo_ · 走 es irse o andar, sin decir adónde: 我走了 «me voy». Para ir a un sitio, 去: 我去商店. Y no es 坐 zuò «sentarse». · 走 se parece a 是, pero arriba, en vez del sol 日, alguien balancea los brazos 土 al andar.
 - ✅🃏 了 le [lɤ] · partícula: algo ya pasó o ha cambiado · _partícula_ · Al final de la frase marca un cambio o algo ya ocurrido: 我走了 «me voy», 下雨了 «se ha puesto a llover», 我错了 «me equivoqué». · 了 al final: algo que pasa ahora y sigue así a partir de ahora. · Al final de la frase marca un cambio: 我渴了 «me ha entrado sed», 我不吃了 «ya no como más», 快八点了 «ya casi son las ocho», 我会说中文了 «ya sé hablar chino». No es un tiempo pasado.
-- ✅🃏 错 cuò [tsʰwɔ˥˩] · equivocado; error · _adjetivo_ · 错误 cuòwù «error» [HSK 3] y 误会 wùhuì «malentendido» [HSK 4] son más formales; hablando basta 错. · cuò: la u apenas suena, se desliza hacia la o. · Estar equivocado: 我错了 «me he equivocado» (también vale para «he cometido un error»), 你错了 «te equivocas». Detrás de un verbo, «mal»: 你说错了 «lo has dicho mal». 不错 bú cuò [HSK 2] es un elogio, «no está mal, bastante bien».
+- ✅🃏 错 cuò [tsʰwɔ˥˩] · equivocado; error · _adjetivo_ · 错误 cuòwù «error» [HSK 3] y 误会 wùhuì «malentendido» [HSK 4] son más formales; hablando basta 错. · cuò: la u apenas suena, se desliza hacia la o. · Estar equivocado: 我错了 «me he equivocado» (también vale para «he cometido un error»), 你错了 «te equivocas». Detrás de un verbo, «mal»: 你说错了 «lo has dicho mal». 不错 bú cuò [HSK 2] es un elogio, «no está mal, bastante bien». · Un concurso: el presentador golpea una campana de metal 钅 delante del marcador 昔 y grita «¡cuò!», con un tono que cae de golpe, como el cuarto: ¡error!
 - ✅🃏 说 shuō [ʂwɔ˥] · hablar, decir · _verbo_ · 讠 «palabra» a la izquierda, como en 请 y en 认识.
 - ✅🃏 怎么 zěnme [tsən˧˩˧ mɤ] · cómo · _interrogativo_ · 怎么 + verbo pregunta la manera: 怎么说？ «¿cómo se dice?», 怎么吃？ «¿cómo se come?». · 怎么 pregunta por la manera o por la situación; 什么, por una cosa. Por eso «¿qué hago?» es 怎么办 y «¿qué te pasa?», 怎么了: no preguntas por un objeto.
 - ✅🃏 能 néng [nɤŋ˧˥] · poder (ser capaz) · _verbo_
@@ -51,6 +51,10 @@
 - ✅🃏 洗澡 xǐzǎo [ɕi˧˩˧ tsɑʊ˧˩˧] · ducharse, bañarse · _verbo_
 - ✅🃏 事情 shìqing [ʂɨ˥˩ tɕʰiŋ] · asunto, cosa (que pasa o hay que hacer) · _sustantivo_
 - ✅🃏 到 dào [tɑʊ˥˩] · llegar; llegar a (una cifra, un sitio) · _verbo_ · 我还不到二十八岁 «aún no tengo veintiocho»: 不到 es «no llegar a».
+- ✅🃏 开 kāi [kʰaɪ˥] · abrir; encender; conducir (开车) · _verbo_ · Poner algo en marcha: 开门 «abrir la puerta», 开车 «conducir», 开会 «tener una reunión». Lo contrario, 关 guān «cerrar, apagar» [HSK 1].
+- ✅🃏 必须 bìxū [pi˥˩ ɕy˥] · tener que (sin remedio) · _adverbio_ · Más fuerte que 得 děi: una obligación sin excusa, de normas y avisos. 你明天必须来 «mañana tienes que venir sí o sí». Hablando, 得 es lo normal.
+- ✅🃏 这些 zhèxiē [ʈʂɤ˥˩ ɕjɛ˥] · estos, estas · _pronombre_ · Plural de 这: 这些是我的书 «estos son mis libros». No lleva clasificador.
+- ✅🃏 那些 nàxiē [na˥˩ ɕjɛ˥] · esos, aquellos · _pronombre_ · Plural de 那: 那些人 «esa gente».
 
 ## 那 y 哪里
 
@@ -174,6 +178,20 @@ Mismo sonido, otro tono: 岛 baja y sube; 到 cae.
 - 岛 dǎo · baja y sube (3.º), sustantivo
 - 到 dào · cae (4.º), verbo: 不到二十八岁
 
+## 没 y 每
+
+La misma sílaba: solo los separa el tono.
+
+- 没 méi · sube (2.º): 我没去
+- 每 měi · baja y sube (3.º): 每天
+
+## 休息 y 学习
+
+Se oyen casi igual; descansar o estudiar.
+
+- 休息 xiūxi · empieza alto y plano (1.º), y la segunda sílaba es neutra
+- 学习 xuéxí · empieza subiendo (2.º), con ü
+
 ## Frases
 
 - ✅🃏 我在看书。 · wǒ zài kàn shū · Estoy leyendo.
@@ -231,7 +249,7 @@ Mismo sonido, otro tono: 岛 baja y sube; 到 cae.
 - ✅🃏 我不去了。 · wǒ bú qù le · Al final no voy.
 - ✅🃏 我会说中文了！ · wǒ huì shuō Zhōngwén le · ¡Ya sé hablar chino!
 - ✅🃏 天黑了。 · tiān hēi le · Ya es de noche.
-- ✅🃏 我要走了。 · wǒ yào zǒu le · Me tengo que ir.
+- ✅🃏 我要走了。 · wǒ yào zǒu le · Ya me voy (me tengo que ir).
 - ✅🃏 快出来！ · kuài chūlai · ¡Sal ya!
 - ✅🃏 我们出去吧。 · wǒmen chūqu ba · Salgamos.
 - ✅🃏 你坐吧。 · nǐ zuò ba · Siéntate, anda.
@@ -248,3 +266,13 @@ Mismo sonido, otro tono: 岛 baja y sube; 到 cae.
 - ✅🃏 你怎么了？我饿了。我也饿了，我们去吃饭吧！ · nǐ zěnme le wǒ è le wǒ yě è le wǒmen qù chīfàn ba · —¿Qué te pasa? —Tengo hambre. —Yo también, ¡vamos a comer!
 - ✅🃏 我能看一下吗？ · wǒ néng kàn yíxià ma · ¿Puedo echarle un vistazo?
 - ✅🃏 我能试一下吗？ · wǒ néng shì yíxià ma · ¿Puedo probármelo?
+- ✅🃏 我今天不能游泳。 · wǒ jīntiān bù néng yóuyǒng · Hoy no puedo nadar.
+- ✅🃏 我明天得工作。 · wǒ míngtiān děi gōngzuò · Mañana tengo que trabajar.
+- ✅🃏 我明天得学习，但是我不想学习。 · wǒ míngtiān děi xuéxí dànshì wǒ bù xiǎng xuéxí · Mañana tengo que estudiar, pero no me apetece.
+- ✅🃏 我觉得明天我能去，但是今天不能。 · wǒ juéde míngtiān wǒ néng qù dànshì jīntiān bù néng · Creo que mañana podré ir, pero hoy no.
+- ✅🃏 我没错。 · wǒ méi cuò · No me he equivocado (no es culpa mía).
+- ✅🃏 请开门。 · qǐng kāi mén · Abre la puerta, por favor.
+- ✅🃏 你明天必须来。 · nǐ míngtiān bìxū lái · Mañana tienes que venir sí o sí.
+- ✅🃏 我今天不能开车。 · wǒ jīntiān bù néng kāichē · Hoy no puedo conducir (he bebido).
+- ✅🃏 这些是我的书。 · zhèxiē shì wǒ de shū · Estos son mis libros.
+- ✅🃏 那些人是谁？ · nàxiē rén shì shéi · ¿Quién es esa gente?

@@ -12,7 +12,8 @@ entries:
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     frequency: {}
     relations: []
-    comments: []
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-19', text: 'Una boca 口 abierta a la izquierda; a la derecha, un sol 日 abrasador y debajo alguien encogido, muerto de sed: abre la boca para beber.', original: 'Mejor imagina esto para 喝 (hē) — beber: 口 (izquierda): una boca abierta. 日 (arriba): un sol abrasador. Debajo del sol: una persona 人 encogida, muerta de sed.'}
   - id: w.shui
     use: say
     role: content
@@ -31,7 +32,7 @@ entries:
     kind: word
     hanzi: 想
     pinyin: xiǎng
-    meaning: {es: querer (hacer algo); pensar, en: to want to; to think}
+    meaning: {es: querer o tener pensado (hacer algo); pensar, en: to want to; to think}
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Dos sentidos: «pensar» y «querer, tener ganas de».', original: think / desire}
@@ -408,6 +409,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: character, private: false, date: '2026-10-01', text: '艹 «hierba» arriba: una hoja. 喝茶 «tomar té».'}
+      - {kind: mnemonic, private: false, date: '2026-10-19', text: 'Hierba 艹 que se corta a trocitos dentro de una casa: las hojas del té.', original: 'Para "te" menmotencia Cortar hierba en una casa a trocitos pequeños'}
   - id: g.he-he
     kind: group
     basis: soundalike
@@ -584,11 +586,12 @@ entries:
   - id: g.ke-ke
     kind: group
     basis: soundalike
-    title: 渴 kě y 棵 kē
-    explanation: Se parecen al oído; uno tiene agua y el otro, un árbol.
+    title: 渴, 棵 y 克
+    explanation: 'La misma sílaba, ke: el tono y la pieza los separan.'
     members:
       - {ref: w.ke.thirsty, cue: baja y sube; 氵 «agua»}
       - {ref: w.ke, cue: alto y plano; 木 «árbol»}
+      - {ref: w.ke.gram, cue: 'baja fuerte (4.º): 一百克'}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments: []
   - id: w.shao
@@ -624,7 +627,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-09-22', text: 'Va delante del nombre: 买一些水果 «comprar algo de fruta».'}
   - id: w.jin.weight
-    use: hear
+    use: say
     role: content
     kind: word
     hanzi: 斤
@@ -635,14 +638,15 @@ entries:
       - {kind: teacher, private: false, date: '2026-10-15', text: '1 公斤 = 2 斤: en el mercado se pesa en 斤. 一斤苹果 es medio kilo de manzanas.'}
       - {kind: character, private: false, date: '2026-10-15', text: '斤 jīn da el sonido a 近 jìn «cerca»: mismo sonido, otro tono.'}
   - id: w.gongjin
-    use: hear
+    use: say
     role: content
     kind: word
     hanzi: 公斤
     pinyin: 'gōngjīn'
     meaning: {es: 'kilo', en: 'kilogram'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 公 «oficial» + 斤: el 斤 oficial, el del sistema métrico, que pesa el doble. Es el kilo al hablar; en las etiquetas pone 千克.'}
   - id: w.niunai
     use: hear
     role: content
@@ -692,3 +696,115 @@ entries:
       - {ref: w.mai.sell, cue: 'cae (4.º): 他卖水果'}
     source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
     comments: []
+  - id: w.shangchang
+    use: say
+    role: content
+    kind: word
+    hanzi: 商场
+    pinyin: shāngchǎng
+    meaning: {es: centro comercial, en: shopping mall}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 商 «comercio» + 场 «recinto»: el sitio grande de las tiendas. 商店 es una tienda.'}
+  - id: w.quanbu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 全部
+    pinyin: quánbù
+    meaning: {es: 'todo, la totalidad (de un conjunto)', en: all; the whole}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Todos los de un conjunto que se tiene delante: 我全部都要 «me lo llevo todo». 都 refuerza que no falta ninguno.'}
+  - id: w.xiangbin
+    use: hear
+    role: content
+    kind: word
+    hanzi: 香槟
+    pinyin: xiāngbīn
+    meaning: {es: champán, en: champagne}
+    level: 4
+    level_reason: 'no está en la lista del HSK 3.0; préstamo del francés champagne, poco frecuente; 香 es HSK 3'
+    pos: sustantivo
+    pos_reason: no está en la lista del HSK
+    source: {origin: class, batch: 012-2026-10-19-querer-poder-y-matices, file: 'deberes 2026-10-13', date: '2026-10-13'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Préstamo que imita el sonido de champagne, como 咖啡 o 沙发. 香 «perfumado» además ayuda a recordarlo.'}
+  - id: g.yu-yu
+    kind: group
+    basis: soundalike
+    title: '鱼 y 雨'
+    explanation: 'La misma sílaba: solo los separa el tono.'
+    members:
+      - {ref: w.yu.fish, cue: 'sube (2.º tono): 我喜欢吃鱼'}
+      - {ref: w.yu.rain, cue: 'baja (3.º tono): 下雨'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments: []
+  - id: g.he-ke.look
+    kind: group
+    basis: visual
+    title: '喝 y 渴'
+    explanation: 'La misma derecha; la izquierda dice de qué va.'
+    members:
+      - {ref: w.he.drink, cue: '口 boca a la izquierda'}
+      - {ref: w.ke.thirsty, cue: '氵 agua a la izquierda: la que falta'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments: []
+  - id: w.ke.gram
+    use: hear
+    role: content
+    kind: word
+    hanzi: 克
+    pinyin: kè
+    meaning: {es: gramo, en: gram}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19', with_class: '2026-10-15'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'En recetas, etiquetas y la báscula: 一百克 «cien gramos». 一斤 son 500 克.'}
+  - id: w.qianke
+    use: hear
+    role: content
+    kind: word
+    hanzi: 千克
+    pinyin: qiānkè
+    meaning: {es: 'kilo (en etiquetas y textos)', en: kilogram (written)}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19', with_class: '2026-10-15'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 千 «mil» + 克 «gramo»: mil gramos. Se lee en etiquetas y básculas; al hablar se dice 公斤.'}
+  - id: w.liang.weight
+    use: hear
+    role: content
+    kind: word
+    hanzi: 两
+    pinyin: liǎng
+    meaning: {es: '50 gramos (peso tradicional)', en: liang (50 grams)}
+    level: 3
+    level_reason: 'como número 两 es HSK 1; como peso se oye en mercados y en los restaurantes de fideos (二两面 «100 g de fideos»)'
+    sense_level: 'el peso de 50 g no es el sentido de la lista (el número «dos»)'
+    pos: clasificador
+    pos_reason: 'como peso, mide; la lista lo da como número'
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19', with_class: '2026-10-15'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Diez 两 hacen un 斤. Ojo: 两斤 es «dos 斤» (un kilo), con 两 como número.'}
+  - id: g.weights
+    kind: group
+    basis: set
+    title: 'Los pesos, de menor a mayor'
+    explanation: '1 两 = 50 克; 1 斤 = 10 两 = 500 克; 1 公斤 = 2 斤 = 1000 克 (en las etiquetas, 千克). En el mercado se pesa en 斤.'
+    members:
+      - {ref: w.ke.gram, cue: 'el más pequeño: 一百克'}
+      - {ref: w.liang.weight, cue: 'tradicional: 二两面'}
+      - {ref: w.jin.weight, cue: 'el del mercado: 一斤苹果'}
+      - {ref: w.gongjin, cue: 'el del sistema métrico: 一公斤'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19', with_class: '2026-10-15'}
+    comments: []
+  - id: w.menpiao
+    use: say
+    role: content
+    kind: word
+    hanzi: 门票
+    pinyin: ménpiào
+    meaning: {es: 'entrada (a un museo, un parque)', en: 'admission ticket'}
+    source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: 'mixto_29_y_hoy la de hace 2 dias.md', date: '2026-09-27', rescued: 012-2026-10-19-querer-poder-y-matices}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 门 «puerta» + 票 «billete»: el billete para pasar la puerta. Para el avión, 机票.'}
+      - {kind: note, private: false, date: '2026-09-27', text: '门 mén es el mismo de 们 y 问; aquí con su tono y su sentido de «puerta».', original: '(fijate que aqui hestá el ''men'' de nimen tamen women, solo que en esos es neutro y aqui no)'}

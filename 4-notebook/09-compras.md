@@ -4,9 +4,9 @@
 
 ## Vocabulario
 
-- ✅🃏 喝 hē [xɤ˥] · beber · _verbo_
+- ✅🃏 喝 hē [xɤ˥] · beber · _verbo_ · Una boca 口 abierta a la izquierda; a la derecha, un sol 日 abrasador y debajo alguien encogido, muerto de sed: abre la boca para beber.
 - ✅🃏 水 shuǐ [ʂweɪ˧˩˧] · agua · _sustantivo_
-- ✅🃏 想 xiǎng [ɕjɑŋ˧˩˧] · querer (hacer algo); pensar · _verbo_ · Dos sentidos: «pensar» y «querer, tener ganas de».
+- ✅🃏 想 xiǎng [ɕjɑŋ˧˩˧] · querer o tener pensado (hacer algo); pensar · _verbo_ · Dos sentidos: «pensar» y «querer, tener ganas de».
 - ✅🃏 去 qù [tɕʰy˥˩] · ir · _verbo_
 - ✅🃏 买 mǎi [maɪ˧˩˧] · comprar · _verbo_
 - ✅🃏 水果 shuǐguǒ [ʂweɪ˧˩˧ kwɔ˧˩˧] · fruta · _sustantivo_
@@ -38,7 +38,7 @@
 - ✅🃏 想要 xiǎngyào [ɕjɑŋ˧˩˧ jɑʊ˥˩] · querer (tener algo), desear · _verbo_ · Entre 想 y 要: 我想要这个 «me gustaría este», más suave que 我要这个 «quiero este, dame este». · 想要 + cosa: quieres conseguirla (我想要这个). 想有, que es 想 + 有, quiere tenerla como parte de tu vida: 我想有一个家 «me gustaría tener una familia».
 - ✅🃏 好吃 hǎochī [xɑʊ˧˩˧ ʈʂʰɨ˥] · rico, bueno (de comer) · _adjetivo_ · 好 + verbo: «bueno de…». 好吃 «rico», 好看 «bonito», 好听 «agradable de oír».
 - ✅🃏 菜 cài [tsʰaɪ˥˩] · plato, comida; verdura · _sustantivo_ · 艹 «hierba» arriba: era la verdura. Hoy también «plato, cocina»: 中国菜 «comida china».
-- ✅🃏 茶 chá [ʈʂʰa˧˥] · té · _sustantivo_ · 艹 «hierba» arriba: una hoja. 喝茶 «tomar té».
+- ✅🃏 茶 chá [ʈʂʰa˧˥] · té · _sustantivo_ · 艹 «hierba» arriba: una hoja. 喝茶 «tomar té». · Hierba 艹 que se corta a trocitos dentro de una casa: las hojas del té.
 - ✅🃏 苹果 píngguǒ [pʰiŋ˧˥ kwɔ˧˩˧] · manzana · _sustantivo_
 - ✅🃏 鱼 yú [y˧˥] · pez; pescado · _sustantivo_ · Es a la vez el animal y el pescado que se come: 我喜欢吃鱼 «me gusta el pescado».
 - ✅🃏 鸡蛋 jīdàn [tɕi˥ tan˥˩] · huevo (de gallina) · _sustantivo_ · Palabra a palabra: 鸡 «gallina» + 蛋 «huevo». En la cocina, un huevo es siempre 鸡蛋. · En clase: 这是一个鸡蛋。 «Esto es un huevo.»
@@ -58,11 +58,18 @@
 - ✅🃏 卖 mài [maɪ˥˩] · vender · _verbo_ · 卖 es 买 con 十 encima: cuando tienes de más, lo vendes. · 买 mǎi «comprar», tercer tono; 卖 mài «vender», cuarto. 他卖水果 «vende fruta».
 - ✅🃏 一些 yìxiē [i˥˩ ɕjɛ˥] · algunos, un poco de · _número_ · Va delante del nombre: 买一些水果 «comprar algo de fruta».
 - ✅🃏 斤 jīn [tɕin˥] · medio kilo (unidad de peso) · _clasificador_ · 1 公斤 = 2 斤: en el mercado se pesa en 斤. 一斤苹果 es medio kilo de manzanas. · 斤 jīn da el sonido a 近 jìn «cerca»: mismo sonido, otro tono.
-- ✅🃏 公斤 gōngjīn [kʊŋ˥ tɕin˥] · kilo · _clasificador_
+- ✅🃏 公斤 gōngjīn [kʊŋ˥ tɕin˥] · kilo · _clasificador_ · Palabra a palabra: 公 «oficial» + 斤: el 斤 oficial, el del sistema métrico, que pesa el doble. Es el kilo al hablar; en las etiquetas pone 千克.
 - ✅🃏 牛奶 niúnǎi [njoʊ˧˥ naɪ˧˩˧] · leche · _sustantivo_
 - ✅🃏 啤酒 píjiǔ [pʰi˧˥ tɕjoʊ˧˩˧] · cerveza · _sustantivo_
 - ✅🃏 香蕉 xiāngjiāo [ɕjɑŋ˥ tɕjɑʊ˥] · plátano · _sustantivo_
 - ✅🃏 汉堡 hànbǎo [xan˥˩ pɑʊ˧˩˧] · hamburguesa · _sustantivo_
+- ✅🃏 商场 shāngchǎng [ʂɑŋ˥ ʈʂʰɑŋ˧˩˧] · centro comercial · _sustantivo_ · Palabra a palabra: 商 «comercio» + 场 «recinto»: el sitio grande de las tiendas. 商店 es una tienda.
+- ✅🃏 全部 quánbù [tɕʰɥœn˧˥ pu˥˩] · todo, la totalidad (de un conjunto) · _número_ · Todos los de un conjunto que se tiene delante: 我全部都要 «me lo llevo todo». 都 refuerza que no falta ninguno.
+- ✅🃏 香槟 xiāngbīn [ɕjɑŋ˥ pin˥] · champán · _sustantivo_ · Préstamo que imita el sonido de champagne, como 咖啡 o 沙发. 香 «perfumado» además ayuda a recordarlo.
+- ✅🃏 克 kè [kʰɤ˥˩] · gramo · _clasificador_ · En recetas, etiquetas y la báscula: 一百克 «cien gramos». 一斤 son 500 克.
+- ✅🃏 千克 qiānkè [tɕʰjɛn˥ kʰɤ˥˩] · kilo (en etiquetas y textos) · _clasificador_ · Palabra a palabra: 千 «mil» + 克 «gramo»: mil gramos. Se lee en etiquetas y básculas; al hablar se dice 公斤.
+- ✅🃏 两 liǎng [ljɑŋ˧˩˧] · 50 gramos (peso tradicional) · _clasificador_ · Diez 两 hacen un 斤. Ojo: 两斤 es «dos 斤» (un kilo), con 两 como número.
+- ✅🃏 门票 ménpiào [mən˧˥ pʰjɑʊ˥˩] · entrada (a un museo, un parque) · _sustantivo_ · Palabra a palabra: 门 «puerta» + 票 «billete»: el billete para pasar la puerta. Para el avión, 机票. · 门 mén es el mismo de 们 y 问; aquí con su tono y su sentido de «puerta».
 
 ## Querer, necesitar, gustar, amar
 
@@ -97,12 +104,13 @@ Solo cambia el tono: 鞋 sube, 写 baja y sube.
 - 鞋 xié · sube
 - 写 xiě · baja y sube
 
-## 渴 kě y 棵 kē
+## 渴, 棵 y 克
 
-Se parecen al oído; uno tiene agua y el otro, un árbol.
+La misma sílaba, ke: el tono y la pieza los separan.
 
 - 渴 kě · baja y sube; 氵 «agua»
 - 棵 kē · alto y plano; 木 «árbol»
+- 克 kè · baja fuerte (4.º): 一百克
 
 ## 买 mǎi y 卖 mài: comprar y vender
 
@@ -110,6 +118,29 @@ Solo los separa el tono: 买 baja y sube (3.º); 卖 cae (4.º).
 
 - 买 mǎi · baja y sube (3.º): 我想买水果
 - 卖 mài · cae (4.º): 他卖水果
+
+## 鱼 y 雨
+
+La misma sílaba: solo los separa el tono.
+
+- 鱼 yú · sube (2.º tono): 我喜欢吃鱼
+- 雨 yǔ · baja (3.º tono): 下雨
+
+## 喝 y 渴
+
+La misma derecha; la izquierda dice de qué va.
+
+- 喝 hē · 口 boca a la izquierda
+- 渴 kě · 氵 agua a la izquierda: la que falta
+
+## Los pesos, de menor a mayor
+
+1 两 = 50 克; 1 斤 = 10 两 = 500 克; 1 公斤 = 2 斤 = 1000 克 (en las etiquetas, 千克). En el mercado se pesa en 斤.
+
+- 克 kè · el más pequeño: 一百克
+- 两 liǎng · tradicional: 二两面
+- 斤 jīn · el del mercado: 一斤苹果
+- 公斤 gōngjīn · el del sistema métrico: 一公斤
 
 ## Frases
 
@@ -184,3 +215,21 @@ Solo los separa el tono: 买 baja y sube (3.º); 卖 cae (4.º).
 - ✅🃏 这本书二十块左右。 · zhè běn shū èr shí kuài zuǒyòu · Este libro cuesta unos veinte yuanes.
 - ✅🃏 下午我去商店，我想买一些水果。 · xiàwǔ wǒ qù shāngdiàn wǒ xiǎng mǎi yìxiē shuǐguǒ · Esta tarde voy a la tienda: quiero comprar algo de fruta.
 - ✅🃏 他卖水果。 · tā mài shuǐguǒ · Vende fruta.
+- ✅🃏 我喜欢吃汉堡。 · wǒ xǐhuan chī hànbǎo · Me gustan las hamburguesas.
+- ✅🃏 我想吃汉堡。 · wǒ xiǎng chī hànbǎo · Me apetece una hamburguesa.
+- ✅🃏 我要一个汉堡。 · wǒ yào yí ge hànbǎo · Quiero una hamburguesa.
+- ✅🃏 我想你。 · wǒ xiǎng nǐ · Te echo de menos.
+- ✅🃏 我明天要去中国。 · wǒ míngtiān yào qù Zhōngguó · Mañana me voy a China.
+- ✅🃏 我喜欢游泳。 · wǒ xǐhuan yóuyǒng · Me gusta nadar.
+- ✅🃏 我很想去中国，但是我觉得我得工作。 · wǒ hěn xiǎng qù Zhōngguó dànshì wǒ juéde wǒ děi gōngzuò · Tengo muchas ganas de ir a China, pero creo que tendré que trabajar.
+- ✅🃏 我以前想买，但是现在不想买了。 · wǒ yǐqián xiǎng mǎi dànshì xiànzài bù xiǎng mǎi le · Antes quería comprarlo, pero ahora ya no.
+- ✅🃏 我在想。 · wǒ zài xiǎng · Estoy pensando.
+- ✅🃏 我全部都要。 · wǒ quánbù dōu yào · Me lo llevo todo.
+- ✅🃏 这是香槟吗？ · zhè shì xiāngbīn ma · ¿Esto es champán?
+- ✅🃏 一斤苹果多少钱？ · yì jīn píngguǒ duōshao qián · ¿Cuánto cuesta medio kilo de manzanas?
+- ✅🃏 我要两斤。 · wǒ yào liǎng jīn · Póngame un kilo (dos 斤).
+- ✅🃏 一公斤是两斤。 · yì gōngjīn shì liǎng jīn · Un kilo son dos 斤.
+- ✅🃏 一斤是五百克。 · yì jīn shì wǔ bǎi kè · Un 斤 son quinientos gramos.
+- ✅🃏 这个有两公斤左右。 · zhè ge yǒu liǎng gōngjīn zuǒyòu · Esto pesa unos dos kilos.
+- ✅🃏 我们去商场吧。 · wǒmen qù shāngchǎng ba · Vamos al centro comercial.
+- ✅🃏 门票多少钱？ · ménpiào duōshao qián · ¿Cuánto cuesta la entrada?

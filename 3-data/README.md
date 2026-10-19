@@ -22,16 +22,16 @@ Fuente de verdad del mazo, mantenida por el agente. Un archivo por tema en cada 
 - `use`: `read | hear | say` (escalera), o excepción con `use_reason`: lista (`[read]`, `[hear]`…), `context` (solo dentro de frases) o `drop` (descartada).
 - `role` (palabras y expresiones): `content | function`.
 - `hanzi`, `pinyin`, `meaning: {es, en}`; `standalone: yes | rare | no` (del sentido); `as_word: {es, pinyin?}` en un componente cuyo hanzi también es palabra suelta (口, 女, 月; `check` lo exige si está en la lista del HSK o en el mazo); `real_word: {hanzi?, pinyin?, es}` en todo componente: la palabra que se usa al hablar para ese sentido y por qué (目 → 眼睛); `relations`; `accept_pinyin_mismatch` con motivo si pypinyin discrepa con razón.
-- Grupos: `basis: visual | homophone | soundalike | pattern | set | phonetic`, `members: [{ref, cue}]` (cue: rasgo distintivo; máximo 4 en contraste).
+- Grupos: `basis: visual | homophone | soundalike | pattern | set | phonetic`, `members: [{ref, cue}]` (cue: rasgo distintivo; máximo 4 en contraste). `timeline: [{ref, from, to}]` (horas de 0 a 24): una franja del día dibujada en el reverso.
 - Pronunciación: `title`, `explanation`, `audio_text` y su `audio_pinyin` (el pinyin tal como suena, que el reverso pone junto al ejemplo).
 - Estructuras (`lexicon/estructuras.yaml`): `pattern` (`{S} + 很 + {Adj}`; huecos `{S} {N} {V} {Adj} {Num} {Nombre} {Lugar} {Tiempo} {Frase}`), `refs` (las entradas de las piezas fijas, en orden), `examples` (frases que la cumplen), `meaning: {es, en}`, `contrast: {right, wrong, why: {es, en}}` (frase buena del mazo, calco erróneo y porqué: de ahí sale su tarjeta). Sin `level`: es el de su pieza fija más difícil. Ver `docs/design.md`, «Gramática».
 - `connection: {kind: sound | meaning | looks, with: [hanzi], text}`: el recuadro de «Conexión» del carácter (uno por entrada; lo heredan las palabras que lo llevan). `with`: caracteres que ya están en el mazo. Ver `docs/goal.md`, «Cómo se explica un carácter».
 - `comments: [{kind, private, date, text, original}]` (`text` redactado para mostrar; `original`, lo que escribió YAGO, solo si difiere), con `kind`: `mnemonic | teacher | linguistic | character | note | sound` (`character`: el análisis del carácter, aparte del uso). `private: true` por defecto; el repositorio es público, así que lo privado no se guarda aquí.
-- `source: {origin, batch, file, date}`.
+- `source: {origin, batch, file, date}` (`origin`: `class` o `class-audio`, de clase; `inbox` o `review`, sus apuntes; `attic`, del desván; `gaps`, propuesta del agente por frecuencia); `with_class: <fecha>` si no es de clase pero va muy ligado a esa clase (sale con ella en Anki).
 
 ## Frases (`sentences/`)
 
-- `id` con prefijo `s.`; `use: say` (frase modelo, se practica diciéndola) o `hear` (de ejemplo, se practica escuchándola).
+- `id` con prefijo `s.`; `use: say` (frase modelo, se practica diciéndola) o `hear` (de ejemplo, se practica escuchándola). `kind: formula | example`: fórmula que se usa tal cual en una situación, o ejemplo que enseña una palabra o estructura (`docs/design.md`, «Datos»). `listen: true | false` con `listen_reason` decide a mano la tarjeta de oír.
 - `segments: [{text, ref, pinyin, sandhi}]`: cada trozo enlaza a su entrada; `sandhi` si el pinyin escrito es el realizado (不 → bú).
 - `translation: {es, en}`; `source`.
 

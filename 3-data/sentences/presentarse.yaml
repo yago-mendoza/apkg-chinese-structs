@@ -61,6 +61,8 @@ sentences:
     translation: {es: 'No soy estudiante, soy profesor.', en: 'I''m not a student, I''m a teacher.'}
   - id: s.wo-shi-gongchengshi
     use: say
+    listen: true
+    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 是, ref: w.shi, pinyin: shì}
@@ -190,6 +192,8 @@ sentences:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: s.qingwen-ni-jiao-shenme-mingzi
     use: say
+    listen: true
+    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 请问, ref: e.qingwen, pinyin: qǐngwèn}
       - {text: ，}
@@ -392,7 +396,7 @@ sentences:
     segments:
       - {text: 他, ref: w.ta.he, pinyin: tā}
       - {text: 是, ref: w.shi, pinyin: shì}
-      - {text: 不, ref: w.bu, pinyin: bu, sandhi: bù → bu, átono entre 是 y 是}
+      - {text: 不, ref: w.bu, pinyin: bu, sandhi: 'bù → bu, átono entre 是 y 是'}
       - {text: 是, ref: w.shi, pinyin: shì}
       - {text: 成龙, ref: w.chenglong, pinyin: Chéng Lóng}
       - {text: ？}
@@ -809,3 +813,149 @@ sentences:
       - {text: 。}
     translation: {es: 'Soy extranjero.', en: 'I''m a foreigner.'}
     source: {origin: attic, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'mixto_29_y_hoy la de hace 2 dias.md', date: '2026-10-16'}
+  - id: s.wo-juede-mingtian-hui-xiayu
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 会, ref: w.hui.can, pinyin: 'huì'}
+      - {text: 下雨, ref: w.xiayu, pinyin: 'xiàyǔ'}
+      - {text: 。}
+    translation: {es: 'Creo que mañana lloverá.', en: 'I think it will rain tomorrow.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-hui-youyong
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 会, ref: w.hui.can, pinyin: 'huì'}
+      - {text: 游泳, ref: w.youyong, pinyin: 'yóuyǒng'}
+      - {text: 。}
+    translation: {es: 'Sé nadar.', en: 'I can swim.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-juede-ta-de-fangzi-hen-piaoliang
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 房子, ref: w.fangzi, pinyin: 'fángzi'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: 'piàoliang'}
+      - {text: 。}
+    translation: {es: 'Creo que su casa es muy bonita.', en: 'I think her house is very pretty.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.ta-xiang-bu-xiang-jian-wo
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: ，}
+      - {text: 但是, ref: w.danshi, pinyin: 'dànshì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 知道, ref: w.zhidao, pinyin: 'zhīdao'}
+      - {text: 她, ref: w.ta.she, pinyin: 'tā'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 见, ref: w.jian, pinyin: 'jiàn'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 。}
+    translation: {es: 'Creo que le gusto, pero no sé si quiere verme.', en: 'I think she likes me, but I don''t know if she wants to see me.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.yiqian-bu-hui-youyong
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 以前, ref: w.yiqian, pinyin: 'yǐqián'}
+      - {text: 不, ref: w.bu, pinyin: 'bú', sandhi: true}
+      - {text: 会, ref: w.hui.can, pinyin: 'huì'}
+      - {text: 游泳, ref: w.youyong, pinyin: 'yóuyǒng'}
+      - {text: ，}
+      - {text: 但是, ref: w.danshi, pinyin: 'dànshì'}
+      - {text: 现在, ref: w.xianzai, pinyin: 'xiànzài'}
+      - {text: 会, ref: w.hui.can, pinyin: 'huì'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'Antes no sabía nadar, pero ahora sí.', en: 'I couldn''t swim before, but now I can.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.hui-zuofan-bu-xiang-zuo
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 会, ref: w.hui.can, pinyin: 'huì'}
+      - {text: 做, ref: w.zuo.do, pinyin: 'zuò'}
+      - {text: 饭, ref: w.fan, pinyin: 'fàn'}
+      - {text: ，}
+      - {text: 但是, ref: w.danshi, pinyin: 'dànshì'}
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 做, ref: w.zuo.do, pinyin: 'zuò'}
+      - {text: 。}
+    translation: {es: 'Sé cocinar, pero hoy no me apetece.', en: 'I can cook, but I don''t feel like it today.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-shenme-dou-xihuan
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 什么, ref: w.shenme, pinyin: 'shénme'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 。}
+    translation: {es: 'Me gusta todo.', en: 'I like everything.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-dou-xihuan
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 。}
+    translation: {es: 'Me gustan todos (los que estamos viendo).', en: 'I like them all.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.nimen-dou-shi-na-guo-ren
+    use: say
+    segments:
+      - {text: 你们, ref: w.nimen, pinyin: 'nǐmen'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 哪, ref: w.na.which, pinyin: 'nǎ'}
+      - {text: 国, ref: w.guo, pinyin: 'guó'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: ？}
+    translation: {es: '¿De dónde sois todos?', en: 'Where are you all from?'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-zai-xuexi-hanyu
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 在, ref: w.zai.progressive, pinyin: 'zài'}
+      - {text: 学习, ref: w.xuexi, pinyin: 'xuéxí'}
+      - {text: 汉语, ref: w.hanyu, pinyin: 'Hànyǔ'}
+      - {text: 。}
+    translation: {es: 'Estoy estudiando chino.', en: 'I''m studying Chinese.'}
+    source: {origin: inbox, batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
+  - id: s.wo-hui-kaiche
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 会, ref: w.hui.can, pinyin: 'huì'}
+      - {text: 开车, ref: w.kaiche, pinyin: 'kāichē'}
+      - {text: 。}
+    translation: {es: 'Sé conducir.', en: 'I can drive.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-jieshao-yixia
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 介绍, ref: w.jieshao, pinyin: 'jièshào'}
+      - {text: 一下, ref: w.yixia, pinyin: 'yīxià'}
+      - {text: 。}
+    translation: {es: 'Os presento (os hago las presentaciones).', en: 'Let me introduce.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}

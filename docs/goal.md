@@ -36,7 +36,7 @@ Cada elemento de los apuntes se juzga contra el «para qué» de arriba:
 
 No se limita lo que entra: YAGO avanza y aprende cosas laterales, y todo lo que pasa el filtro entra en el diccionario, aunque la cola de nuevas de Anki crezca. Una tarjeta que aún no ha visto no le cuesta nada; lo que cuesta tiempo son los repasos, y Anki absorbe al ritmo que permite su tiempo (unas 12 a 15 nuevas al día de media con 20 a 40 minutos). Lo que importa es el orden:
 
-1. **Lo de clase, antes que nada y sea del nivel que sea.** Todo lo que viene de clase (diapositivas, deberes, sus apuntes de clase, lo que dijo la profesora) sale en Anki lo antes posible, de la primera clase a la última: es lo que trabaja con su profesora y lo que necesita para seguirla. Un 猜 de HSK 5 que salió el jueves va antes que un 给 de HSK 1 que aún no ha salido en clase.
+1. **Lo de clase, antes que nada y sea del nivel que sea.** Todo lo que viene de clase (diapositivas, deberes, sus apuntes de clase, lo que dijo la profesora) sale en Anki lo antes posible: es lo que trabaja con su profesora y lo que necesita para seguirla. Un 猜 de HSK 5 que salió el jueves va antes que un 给 de HSK 1 que aún no ha salido en clase. La última clase va delante de todo; detrás, lo atrasado, de la primera clase a la última: cada clase trae más de lo que estudia en una semana, y en orden cronológico lo último quedaría cada vez más lejos. Lo que no es de clase pero va muy ligado a algo de una clase (lo que apunta en el review a raíz de ella) sale con esa clase.
 2. **Después, el resto nivel a nivel**, con mucho énfasis en el HSK 1: dentro de cada nivel salen primero las tarjetas de lo que va a decir (`say`), luego lo que va a oír (`hear`) y al final lo que solo reconoce.
 
 Por eso el `use` decide también la prioridad: lo lateral que no va a decir entra como `hear` o `read`, con menos tarjetas, y lo de clase, para decir.
@@ -53,7 +53,7 @@ El presupuesto es su tiempo, no el tamaño del mazo: de 20 a 40 minutos al día.
 
 Cada review trae, calculado, «Carga y equilibrio»: minutos al día, nuevas y palabras nuevas al día, días de cola y la mezcla frente al objetivo, con un punto por cada aviso. Las cifras se revisan con datos en la retrospectiva, no a ojo.
 
-**Las de oír, retos.** Una tarjeta de oír tiene que costar: frases que mezclan vocabulario, aunque sean cortas, como las que dicta la profesora al empezar la clase (您贵姓？, 这个人是不是你的朋友？, 他二十二岁。), con números o con algo que se confunde al oído. Las fórmulas hechas que entiende cualquiera (谢谢！不客气。) no tienen tarjeta de oír. Más adelante, cuando toque entender más que aprender palabras nuevas, las de oír crecerán.
+**Las de oír, retos.** Una tarjeta de oír tiene que costar: frases que mezclan vocabulario, aunque sean cortas, como las que dicta la profesora al empezar la clase (您贵姓？, 这个人是不是你的朋友？, 他二十二岁。), con números o con algo que se confunde al oído. Las fórmulas hechas que entiende cualquiera (谢谢！不客气。) no tienen tarjeta de oír. Una frase que ya practica para decir lleva la de oír solo si es de clase: al girar la de decir ya suena, pero descifrarla sin saber qué dice es lo que entrena el dictado de la profesora. Más adelante, cuando toque entender más que aprender palabras nuevas, las de oír crecerán.
 
 ## El pinyin por delante
 
@@ -127,11 +127,14 @@ Y le avisa, con claridad y sin rebajarlo, cuando cruce de un nivel al siguiente.
 
 Los apuntes mezclan lo que da la profesora con lo que YAGO investiga por su cuenta, sobre todo caracteres. Lo de clase es lo prioritario y lo que marca el ritmo; lo investigado entra si pasa el filtro y conecta con lo que ya tiene, en su nivel; lo que es de más arriba y no conecta va al desván, y lo que solo explica otra palabra se queda como nota de esa palabra. Qué está dando la profesora en cada tramo se lleva en `2-digests/state.md`.
 
+**Los deberes son material.** Las hojas de deberes son material de la profesora para crear tarjetas: el agente las resuelve y usa sus soluciones como lo demás de clase, sin esperar ni pedir que YAGO las haga. Resolverlas y corregirlas es cosa de la profesora y de él; si una copia hecha trae sus respuestas, pueden servir para «Para entender».
+
 ## Cómo se le habla: el review
 
 El review empieza por lo imprescindible, «Sine qua non»: lo poco que necesita contestar para que el siguiente lote salga bien, cada punto con su enlace al detalle. Todo lo demás se queda debajo, completo: contestar lo que le interese y buscar a partir de ahí es parte de cómo aprende. Directo y útil, no complaciente.
 
 - **Cada punto, con su contexto**: de dónde viene (qué clase, qué diapositiva, qué apunte suyo, qué tarjeta), qué se hizo y por qué, para entenderlo sin abrir el log.
+- **Con pinyin**: cada palabra en chino del review lleva su pinyin al lado (觉得 juéde), para leerlo sin buscar y para que el hanzi se asocie a su sonido.
 - **Una minilección en cada review** («Para entender»): lo que el agente cree que le falta por entender, a partir de sus deberes corregidos, sus fallos en Anki y lo que se dio en clase, explicado en corto y con ejemplos del mazo. Son los ruedines de la profesora: no sustituyen a la clase, la acompañan.
 
 ## El sistema se ajusta

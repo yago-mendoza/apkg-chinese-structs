@@ -746,3 +746,202 @@ sentences:
       - {text: 。}
     translation: {es: 'Vende fruta.', en: 'He sells fruit.'}
     source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
+  - id: s.wo-xihuan-chi-hanbao
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 吃, ref: w.chi, pinyin: 'chī'}
+      - {text: 汉堡, ref: w.hanbao, pinyin: 'hànbǎo'}
+      - {text: 。}
+    translation: {es: 'Me gustan las hamburguesas.', en: 'I like hamburgers.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-xiang-chi-hanbao
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 吃, ref: w.chi, pinyin: 'chī'}
+      - {text: 汉堡, ref: w.hanbao, pinyin: 'hànbǎo'}
+      - {text: 。}
+    translation: {es: 'Me apetece una hamburguesa.', en: 'I feel like having a hamburger.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-yao-yi-ge-hanbao
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yí', sandhi: true}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 汉堡, ref: w.hanbao, pinyin: 'hànbǎo'}
+      - {text: 。}
+    translation: {es: 'Quiero una hamburguesa.', en: 'I''ll have a hamburger.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-xiang-ni
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 。}
+    translation: {es: 'Te echo de menos.', en: 'I miss you.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-mingtian-yao-qu-zhongguo
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 中国, ref: w.zhongguo, pinyin: 'Zhōngguó'}
+      - {text: 。}
+    translation: {es: 'Mañana me voy a China.', en: 'I''m going to China tomorrow.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-xihuan-youyong
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 游泳, ref: w.youyong, pinyin: 'yóuyǒng'}
+      - {text: 。}
+    translation: {es: 'Me gusta nadar.', en: 'I like swimming.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.hen-xiang-qu-zhongguo-dei-gongzuo
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 中国, ref: w.zhongguo, pinyin: 'Zhōngguó'}
+      - {text: ，}
+      - {text: 但是, ref: w.danshi, pinyin: 'dànshì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 得, ref: w.dei, pinyin: 'děi'}
+      - {text: 工作, ref: w.gongzuo, pinyin: 'gōngzuò'}
+      - {text: 。}
+    translation: {es: 'Tengo muchas ganas de ir a China, pero creo que tendré que trabajar.', en: 'I really want to go to China, but I think I''ll have to work.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.yiqian-xiang-mai-xianzai-bu-xiang
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 以前, ref: w.yiqian, pinyin: 'yǐqián'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 买, ref: w.mai, pinyin: 'mǎi'}
+      - {text: ，}
+      - {text: 但是, ref: w.danshi, pinyin: 'dànshì'}
+      - {text: 现在, ref: w.xianzai, pinyin: 'xiànzài'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 买, ref: w.mai, pinyin: 'mǎi'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'Antes quería comprarlo, pero ahora ya no.', en: 'I wanted to buy it before, but not anymore.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-zai-xiang
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 在, ref: w.zai.progressive, pinyin: 'zài'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 。}
+    translation: {es: 'Estoy pensando.', en: 'I''m thinking.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-quanbu-dou-yao
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 全部, ref: w.quanbu, pinyin: 'quánbù'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 。}
+    translation: {es: 'Me lo llevo todo.', en: 'I''ll take all of them.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.zhe-shi-xiangbin
+    use: hear
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 香槟, ref: w.xiangbin, pinyin: 'xiāngbīn'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Esto es champán?', en: 'Is this champagne?'}
+    source: {origin: class, batch: 012-2026-10-19-querer-poder-y-matices, file: 'deberes 2026-10-13', date: '2026-10-13'}
+  - id: s.yi-jin-pingguo-duoshao-qian
+    use: say
+    segments:
+      - {text: 一, ref: w.num.yi, pinyin: 'yì', sandhi: true}
+      - {text: 斤, ref: w.jin.weight, pinyin: 'jīn'}
+      - {text: 苹果, ref: w.pingguo, pinyin: 'píngguǒ'}
+      - {text: 多少, ref: w.duoshao, pinyin: 'duōshao'}
+      - {text: 钱, ref: w.qian, pinyin: 'qián'}
+      - {text: ？}
+    translation: {es: '¿Cuánto cuesta medio kilo de manzanas?', en: 'How much is a jin of apples?'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19', with_class: '2026-10-15'}
+  - id: s.wo-yao-liang-jin
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 两, ref: w.liang, pinyin: 'liǎng'}
+      - {text: 斤, ref: w.jin.weight, pinyin: 'jīn'}
+      - {text: 。}
+    translation: {es: 'Póngame un kilo (dos 斤).', en: 'I''ll take two jin.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19', with_class: '2026-10-15'}
+  - id: s.yi-gongjin-shi-liang-jin
+    use: hear
+    segments:
+      - {text: 一, ref: w.num.yi, pinyin: 'yì', sandhi: true}
+      - {text: 公斤, ref: w.gongjin, pinyin: 'gōngjīn'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 两, ref: w.liang, pinyin: 'liǎng'}
+      - {text: 斤, ref: w.jin.weight, pinyin: 'jīn'}
+      - {text: 。}
+    translation: {es: 'Un kilo son dos 斤.', en: 'One kilo is two jin.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19', with_class: '2026-10-15'}
+  - id: s.yi-jin-shi-wubai-ke
+    use: hear
+    segments:
+      - {text: 一, ref: w.num.yi, pinyin: 'yì', sandhi: true}
+      - {text: 斤, ref: w.jin.weight, pinyin: 'jīn'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 百, ref: w.bai.hundred, pinyin: 'bǎi'}
+      - {text: 克, ref: w.ke.gram, pinyin: 'kè'}
+      - {text: 。}
+    translation: {es: 'Un 斤 son quinientos gramos.', en: 'One jin is five hundred grams.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19', with_class: '2026-10-15'}
+  - id: s.zhege-you-liang-gongjin-zuoyou
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 两, ref: w.liang, pinyin: 'liǎng'}
+      - {text: 公斤, ref: w.gongjin, pinyin: 'gōngjīn'}
+      - {text: 左右, ref: w.zuoyou, pinyin: 'zuǒyòu'}
+      - {text: 。}
+    translation: {es: 'Esto pesa unos dos kilos.', en: 'This weighs about two kilos.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19', with_class: '2026-10-15'}
+  - id: s.women-qu-shangchang-ba
+    use: say
+    segments:
+      - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 商场, ref: w.shangchang, pinyin: 'shāngchǎng'}
+      - {text: 吧, ref: w.ba.particle, pinyin: 'ba'}
+      - {text: 。}
+    translation: {es: 'Vamos al centro comercial.', en: 'Let''s go to the mall.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.menpiao-duoshao-qian
+    use: say
+    segments:
+      - {text: 门票, ref: w.menpiao, pinyin: 'ménpiào'}
+      - {text: 多少, ref: w.duoshao, pinyin: 'duōshao'}
+      - {text: 钱, ref: w.qian, pinyin: 'qián'}
+      - {text: ？}
+    translation: {es: '¿Cuánto cuesta la entrada?', en: 'How much is the ticket?'}
+    source: {origin: attic, batch: 012-2026-10-19-querer-poder-y-matices, file: 'mixto_29_y_hoy la de hace 2 dias.md', date: '2026-09-27'}

@@ -12,6 +12,11 @@
 - ✅🃏 慢 màn [man˥˩] · lento, despacio · _adjetivo_ · 请说慢一点 «hable un poco más despacio, por favor». Lo contrario es 快 kuài «rápido».
 - ✅🃏 一点 yīdiǎn [i˥ tjɛn˧˩˧] · un poco (de una cantidad o de una cualidad) · _adverbio_ · Va detrás de un adjetivo para pedir «un poco más así»: 慢一点 «más despacio», 便宜一点 «más barato». «Un poco» de una acción es 一下: 等一下.
 - ✅🃏 这样 zhèyàng [ʈʂɤ˥˩ jɑŋ˥˩] · así, de esta manera · _pronombre_ · 这样说对吗？ «¿se dice así?». 那样 nàyàng es «así, como eso».
+- ✅🃏 说话 shuōhuà [ʂwɔ˥ xwa˥˩] · hablar (con alguien) · _verbo_ · Palabra a palabra: 说 «decir» + 话 «palabras»: hablar, sin decir de qué. Con un idioma va 说 solo: 说中文. 别说话 «no hables», «calla».
+- ✅🃏 聊天 liáotiān [ljɑʊ˧˥ tʰjɛn˥] · charlar · _verbo_ · Palabra a palabra: 聊 «charlar» + 天 «cielo, día»: hablar del tiempo, de cualquier cosa. 跟你聊天 «charlar contigo».
+- ✅🃏 告诉 gàosu [kɑʊ˥˩ su] · decir (a alguien), contar · _verbo_ · Con la persona detrás: 告诉我 «dime», 请告诉我 «dímelo, por favor». 说 dice algo; 告诉 se lo cuenta a alguien.
+- ✅🃏 记得 jìde [tɕi˥˩ tɤ] · acordarse, recordar · _verbo_ · Palabra a palabra: 记 «apuntar en la memoria» + 得 «lograr». 你还记得我吗？ «¿te acuerdas de mí?». Lo contrario, 忘记.
+- ✅🃏 忘记 wàngjì [wɑŋ˥˩ tɕi˥˩] · olvidar · _verbo_ · 我忘记了 «se me ha olvidado». Al hablar se oye mucho 忘了 a secas.
 
 ## Frases
 
@@ -34,3 +39,9 @@
 - ✅🃏 这个是什么意思？我也不知道。没关系，我们问一下老师吧！ · zhè ge shì shénme yìsi wǒ yě bù zhīdao méi guānxi wǒmen wèn yíxià lǎoshī ba · —¿Qué significa esto? —Yo tampoco lo sé. —No pasa nada, ¡preguntemos a la profesora!
 - ✅🃏 我没听明白。 · wǒ méi tīng míngbai · No lo he entendido (al oírlo).
 - ✅🃏 请再说两遍。 · qǐng zài shuō liǎng biàn · Dilo otras dos veces, por favor.
+- ✅🃏 我要睡觉了，但是我还想跟你聊天。 · wǒ yào shuìjiào le dànshì wǒ hái xiǎng gēn nǐ liáotiān · Me voy a dormir, pero aún me apetece seguir charlando contigo.
+- ✅🃏 别说话！ · bié shuōhuà · ¡No hables! (¡Calla!)
+- ✅🃏 有问题吗？ · yǒu wèntí ma · ¿Hay algún problema? (¿alguna pregunta?)
+- ✅🃏 请告诉我。 · qǐng gàosu wǒ · Dímelo, por favor.
+- ✅🃏 你还记得我吗？ · nǐ hái jìde wǒ ma · ¿Te acuerdas de mí?
+- ✅🃏 我忘记了。 · wǒ wàngjì le · Se me ha olvidado.

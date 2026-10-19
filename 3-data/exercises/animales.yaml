@@ -418,17 +418,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 熊猫}
     answer: {hanzi: 熊猫, pinyin: xióngmāo, meaning: panda}
     comments: []
-  - id: x.listen.wo-xiang-qu-kan-xiongmao
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.wo-xiang-qu-kan-xiongmao
-    targets: [s.wo-xiang-qu-kan-xiongmao]
-    context: [w.wo, w.xiang, w.qu, w.kan, w.xiongmao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Quiero ir a ver pandas.}
-    comments: []
   - id: x.produce.wo-xiang-qu-kan-xiongmao
     added: 2026-10-08
     lang: es
@@ -601,4 +590,25 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿De qué signo es usted?»'}
     answer: {meaning: '¿De qué signo es usted?'}
+    comments: []
+  - id: x.produce.ni-you-mao-ma
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.ni-you-mao-ma
+    targets: [s.ni-you-mao-ma]
+    context: [w.ni, w.you.have, w.mao, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Tienes gato?»'}
+    answer: {meaning: '¿Tienes gato?'}
+    comments: []
+  - id: x.contrast.zhu
+    added: 2026-10-19
+    lang: es
+    type: contrast
+    group: g.zhu-zhu
+    targets: [w.zhu]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 猪, pinyin: zhū, meaning: cerdo}
     comments: []

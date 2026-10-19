@@ -230,17 +230,6 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Va a llover.}
     comments: []
-  - id: x.listen.mingtian-hui-xiayu
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.mingtian-hui-xiayu
-    targets: [s.mingtian-hui-xiayu]
-    context: [w.mingtian, w.hui.can, w.xiayu]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Mañana lloverá.}
-    comments: []
   - id: x.produce.mingtian-hui-xiayu
     added: 2026-10-01
     lang: es
@@ -490,17 +479,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¡Qué buen tiempo hace!»'}
     answer: {meaning: ¡Qué buen tiempo hace!}
     comments: []
-  - id: x.listen.beijing-xiaxue-le
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.beijing-xiaxue-le
-    targets: [s.beijing-xiaxue-le]
-    context: [w.beijing, w.xiaxue, w.le]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Está nevando en Pekín.}
-    comments: []
   - id: x.produce.beijing-xiaxue-le
     added: 2026-10-08
     lang: es
@@ -585,4 +563,32 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Te parece que hoy hace calor?»'}
     answer: {meaning: '¿Te parece que hoy hace calor?'}
+    comments: []
+  - id: x.contrast.yu.rain
+    added: 2026-10-19
+    lang: es
+    type: contrast
+    group: g.yu-yu
+    targets: [w.yu.rain]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 雨, pinyin: yǔ, meaning: lluvia}
+    comments: []
+  - id: x.dictation.yu.rain
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.yu.rain]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yu3, hanzi: 雨, pinyin: yǔ, meaning: lluvia}
+    comments: []
+  - id: x.read.yu.rain
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.yu.rain]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 雨}
+    answer: {hanzi: 雨, pinyin: yǔ, meaning: lluvia}
     comments: []

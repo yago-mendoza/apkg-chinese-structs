@@ -365,17 +365,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 个}
     answer: {hanzi: 个, pinyin: ge, meaning: clasificador general (uno de algo)}
     comments: []
-  - id: x.listen.count-1-10
-    added: 2026-09-29
-    lang: es
-    type: listen
-    sentence: s.count-1-10
-    targets: [s.count-1-10]
-    context: [w.num.yi, w.num.er, w.num.san, w.num.si, w.num.wu, w.num.liu, w.num.qi, w.ba, w.num.jiu, w.num.shi]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez.'}
-    comments: []
   - id: x.produce.count-1-10
     added: 2026-09-29
     lang: es
@@ -386,17 +375,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'De corrido: cuenta del 1 al 10 en voz alta, lo más rápido que puedas.'}
     answer: {meaning: 'Uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez.'}
-    comments: []
-  - id: x.listen.wo-you-san-ge-pengyou
-    added: 2026-09-29
-    lang: es
-    type: listen
-    sentence: s.wo-you-san-ge-pengyou
-    targets: [s.wo-you-san-ge-pengyou]
-    context: [w.wo, w.you.have, w.num.san, w.ge, w.pengyou]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Tengo tres amigos.}
     comments: []
   - id: x.produce.wo-you-san-ge-pengyou
     added: 2026-09-29
@@ -504,17 +482,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 岁}
     answer: {hanzi: 岁, pinyin: suì, meaning: años (de edad)}
     comments: []
-  - id: x.listen.wo-meiyou-qian
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.wo-meiyou-qian
-    targets: [s.wo-meiyou-qian]
-    context: [w.wo, w.meiyou, w.qian]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: No tengo dinero.}
-    comments: []
   - id: x.produce.wo-meiyou-qian
     added: 2026-10-01
     lang: es
@@ -526,17 +493,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «No tengo dinero.»'}
     answer: {meaning: No tengo dinero.}
     comments: []
-  - id: x.listen.ni-ji-sui
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.ni-ji-sui
-    targets: [s.ni-ji-sui]
-    context: [w.ni, w.ji, w.sui]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Cuántos años tienes? (a un niño)'}
-    comments: []
   - id: x.produce.ni-ji-sui
     added: 2026-10-01
     lang: es
@@ -547,17 +503,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años tienes? (a un niño)»'}
     answer: {meaning: '¿Cuántos años tienes? (a un niño)'}
-    comments: []
-  - id: x.listen.ji-ge-ren
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.ji-ge-ren
-    targets: [s.ji-ge-ren]
-    context: [w.ji, w.ge, w.ren]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Cuántas personas? (en un restaurante)'}
     comments: []
   - id: x.produce.ji-ge-ren
     added: 2026-10-01
@@ -1574,17 +1519,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 件}
     answer: {hanzi: 件, pinyin: jiàn, meaning: clasificador de ropa y de asuntos}
     comments: []
-  - id: x.listen.di-yi-tian
-    added: 2026-10-07
-    lang: es
-    type: listen
-    sentence: s.di-yi-tian
-    targets: [s.di-yi-tian]
-    context: [w.di.ordinal, w.num.yi, w.tian]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: El primer día.}
-    comments: []
   - id: x.produce.di-yi-tian
     added: 2026-10-07
     lang: es
@@ -1595,17 +1529,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «El primer día.»'}
     answer: {meaning: El primer día.}
-    comments: []
-  - id: x.listen.ta-shi-di-er-ge
-    added: 2026-10-07
-    lang: es
-    type: listen
-    sentence: s.ta-shi-di-er-ge
-    targets: [s.ta-shi-di-er-ge]
-    context: [w.ta.he, w.shi, w.di.ordinal, w.num.er, w.ge]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Él es el segundo.}
     comments: []
   - id: x.produce.ta-shi-di-er-ge
     added: 2026-10-07
@@ -1618,17 +1541,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Él es el segundo.»'}
     answer: {meaning: Él es el segundo.}
     comments: []
-  - id: x.listen.liang-zhi-mao
-    added: 2026-10-07
-    lang: es
-    type: listen
-    sentence: s.liang-zhi-mao
-    targets: [s.liang-zhi-mao]
-    context: [w.wo, w.you.have, w.liang, w.zhi.cl, w.mao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Tengo dos gatos.}
-    comments: []
   - id: x.produce.liang-zhi-mao
     added: 2026-10-07
     lang: es
@@ -1640,17 +1552,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Tengo dos gatos.»'}
     answer: {meaning: Tengo dos gatos.}
     comments: []
-  - id: x.listen.liang-bei-cha
-    added: 2026-10-07
-    lang: es
-    type: listen
-    sentence: s.liang-bei-cha
-    targets: [s.liang-bei-cha]
-    context: [w.wo, w.yao, w.liang, w.bei.cl, w.cha]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Quiero dos tés.}
-    comments: []
   - id: x.produce.liang-bei-cha
     added: 2026-10-07
     lang: es
@@ -1661,17 +1562,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Quiero dos tés.»'}
     answer: {meaning: Quiero dos tés.}
-    comments: []
-  - id: x.listen.zhe-jian-yifu-hen-piaoliang
-    added: 2026-10-07
-    lang: es
-    type: listen
-    sentence: s.zhe-jian-yifu-hen-piaoliang
-    targets: [s.zhe-jian-yifu-hen-piaoliang]
-    context: [w.zhe, w.jian.cl, w.yifu, w.hen, w.piaoliang]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Esta prenda es muy bonita.}
     comments: []
   - id: x.produce.zhe-jian-yifu-hen-piaoliang
     added: 2026-10-07
@@ -1694,17 +1584,6 @@ exercises:
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: China tiene mil cuatrocientos millones de habitantes.}
-    comments: []
-  - id: x.listen.wo-yao-yi-zhang-zhi
-    added: 2026-10-07
-    lang: es
-    type: listen
-    sentence: s.wo-yao-yi-zhang-zhi
-    targets: [s.wo-yao-yi-zhang-zhi]
-    context: [w.wo, w.yao, w.num.yi, w.zhang.cl, w.zhi.paper]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Quiero una hoja de papel.}
     comments: []
   - id: x.produce.wo-yao-yi-zhang-zhi
     added: 2026-10-07
@@ -1774,17 +1653,6 @@ exercises:
     skills: [reading, pinyin]
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 遍}
     answer: {hanzi: 遍, pinyin: biàn, meaning: vez (de principio a fin)}
-    comments: []
-  - id: x.listen.ta-lai-guo-liang-ci
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.ta-lai-guo-liang-ci
-    targets: [s.ta-lai-guo-liang-ci]
-    context: [w.ta.he, w.lai, w.guo.exp, w.liang, w.ci]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Ha venido dos veces.}
     comments: []
   - id: x.produce.ta-lai-guo-liang-ci
     added: 2026-10-08
@@ -1868,17 +1736,6 @@ exercises:
     skills: [reading, discrimination]
     prompt: {text: '¿Cuál es sì, «cuatro»?'}
     answer: {hanzi: 四, pinyin: sì, meaning: cuatro}
-    comments: []
-  - id: x.listen.wo-you-shijian
-    added: 2026-10-10
-    lang: es
-    type: listen
-    sentence: s.wo-you-shijian
-    targets: [s.wo-you-shijian]
-    context: [w.wo, w.you.have, w.shijian]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Tengo tiempo.}
     comments: []
   - id: x.produce.wo-you-shijian
     added: 2026-10-10
@@ -2079,17 +1936,6 @@ exercises:
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: '1988, 2026, 2008.'}
-    comments: []
-  - id: x.listen.ni-mingtian-neng-lai-ma
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.ni-mingtian-neng-lai-ma
-    targets: [s.ni-mingtian-neng-lai-ma]
-    context: [w.ni, w.mingtian, w.neng, w.lai, w.ma]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Puedes venir mañana?'}
     comments: []
   - id: x.produce.ni-mingtian-neng-lai-ma
     added: 2026-10-11
@@ -2364,17 +2210,6 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Tiene veintidós años.}
     comments: []
-  - id: x.listen.ta-baba-wushisan-sui
-    added: 2026-10-16
-    lang: es
-    type: listen
-    sentence: s.ta-baba-wushisan-sui
-    targets: [s.ta-baba-wushisan-sui]
-    context: [w.ta.he, w.baba, w.num.wu, w.num.shi, w.num.san, w.sui]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Su padre tiene cincuenta y tres años.}
-    comments: []
   - id: x.produce.ta-baba-wushisan-sui
     added: 2026-10-16
     lang: es
@@ -2424,4 +2259,269 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: 'Completa en pinyin: 请再说两＿。 «Dilo otras dos veces, por favor.»'}
     answer: {typed: bian4, hanzi: 遍, pinyin: biàn, meaning: '遍 cuenta las veces que se hace algo entero: 说一遍, 再说两遍.'}
+    comments: []
+  - id: x.tones.digits-1-10
+    added: '2026-10-19'
+    lang: es
+    type: tones
+    targets: [w.num.yi, w.num.er, w.num.san, w.num.si, w.num.wu, w.num.liu, w.num.qi, w.ba, w.num.jiu, w.num.shi]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada número, del uno al diez (1–4).', hanzi: 一二三四五六七八九十, pinyin: yi er san si wu liu qi ba jiu shi}
+    answer: {typed: '1414341132', hanzi: 一二三四五六七八九十, pinyin: yī èr sān sì wǔ liù qī bā jiǔ shí, meaning: del uno al diez}
+    comments: []
+  - id: x.tones.big-units
+    added: '2026-10-19'
+    lang: es
+    type: tones
+    targets: [w.bai.hundred, w.qian.thousand, w.wan.tenk, w.yi.hundredmillion, w.ling, w.liang]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada uno (1–4).', hanzi: 百千万亿零两, pinyin: bai qian wan yi ling liang}
+    answer: {typed: '314423', hanzi: 百千万亿零两, pinyin: bǎi qiān wàn yì líng liǎng, meaning: 'cien, mil, diez mil, cien millones, cero, dos'}
+    comments: []
+  - id: x.compose.fiesta-edad
+    added: '2026-10-19'
+    lang: es
+    type: compose
+    targets: [s.wo-shiba-sui-ni-ne, s.ni-cai-ta-duoda, s.wo-juede-ta-sishi-sui-zuoyou]
+    words: [w.duoda, w.sui, w.ne, w.cai.guess, w.juede, w.zuoyou]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. En una fiesta, alguien de tu edad te pregunta cuántos años tienes. Contestas, le devuelves la pregunta y luego jugáis a adivinar la edad del anfitrión.'}
+    answer: {meaning: 'Entre gente de tu edad, 多大; para adivinar, 我觉得… 左右, con 左右 detrás de la cifra.'}
+    comments: []
+  - id: x.listen.num-35781
+    added: 2026-10-19
+    lang: es
+    type: listen
+    sentence: s.num-35781
+    targets: [s.num-35781]
+    context: [w.num.san, w.wan.tenk, w.num.wu, w.qian.thousand, w.num.qi, w.bai.hundred, w.ba, w.num.shi, w.num.yi]
+    skills: [listening, comprehension]
+    prompt: {text: Escucha y escribe el número en cifras., audio: true}
+    answer: {meaning: 35 781}
+    comments: []
+  - id: x.produce.num-35781
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.num-35781
+    targets: [s.num-35781]
+    context: [w.num.san, w.wan.tenk, w.num.wu, w.qian.thousand, w.num.qi, w.bai.hundred, w.ba, w.num.shi, w.num.yi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «35 781»'}
+    answer: {meaning: 35 781}
+    comments: []
+  - id: x.listen.num-106234
+    added: 2026-10-19
+    lang: es
+    type: listen
+    sentence: s.num-106234
+    targets: [s.num-106234]
+    context: [w.num.shi, w.wan.tenk, w.num.liu, w.qian.thousand, w.num.er, w.bai.hundred, w.num.san, w.num.si]
+    skills: [listening, comprehension]
+    prompt: {text: Escucha y escribe el número en cifras., audio: true}
+    answer: {meaning: 106 234}
+    comments: []
+  - id: x.produce.num-106234
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.num-106234
+    targets: [s.num-106234]
+    context: [w.num.shi, w.wan.tenk, w.num.liu, w.qian.thousand, w.num.er, w.bai.hundred, w.num.san, w.num.si]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «106 234»'}
+    answer: {meaning: 106 234}
+    comments: []
+  - id: x.listen.num-20050
+    added: 2026-10-19
+    lang: es
+    type: listen
+    sentence: s.num-20050
+    targets: [s.num-20050]
+    context: [w.liang, w.wan.tenk, w.ling, w.num.wu, w.num.shi]
+    skills: [listening, comprehension]
+    prompt: {text: Escucha y escribe el número en cifras., audio: true}
+    answer: {meaning: 20 050}
+    comments: []
+  - id: x.produce.num-20050
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.num-20050
+    targets: [s.num-20050]
+    context: [w.liang, w.wan.tenk, w.ling, w.num.wu, w.num.shi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «20 050»'}
+    answer: {meaning: 20 050}
+    comments: []
+  - id: x.listen.num-8600
+    added: 2026-10-19
+    lang: es
+    type: listen
+    sentence: s.num-8600
+    targets: [s.num-8600]
+    context: [w.ba, w.qian.thousand, w.num.liu, w.bai.hundred]
+    skills: [listening, comprehension]
+    prompt: {text: Escucha y escribe el número en cifras., audio: true}
+    answer: {meaning: '8600'}
+    comments: []
+  - id: x.produce.num-8600
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.num-8600
+    targets: [s.num-8600]
+    context: [w.ba, w.qian.thousand, w.num.liu, w.bai.hundred]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «8600»'}
+    answer: {meaning: '8600'}
+    comments: []
+  - id: x.listen.num-12000
+    added: 2026-10-19
+    lang: es
+    type: listen
+    sentence: s.num-12000
+    targets: [s.num-12000]
+    context: [w.num.yi, w.wan.tenk, w.liang, w.qian.thousand]
+    skills: [listening, comprehension]
+    prompt: {text: Escucha y escribe el número en cifras., audio: true}
+    answer: {meaning: 12 000}
+    comments: []
+  - id: x.produce.num-12000
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.num-12000
+    targets: [s.num-12000]
+    context: [w.num.yi, w.wan.tenk, w.liang, w.qian.thousand]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «12 000»'}
+    answer: {meaning: 12 000}
+    comments: []
+  - id: x.listen.num-6080
+    added: 2026-10-19
+    lang: es
+    type: listen
+    sentence: s.num-6080
+    targets: [s.num-6080]
+    context: [w.num.liu, w.qian.thousand, w.ling, w.ba, w.num.shi]
+    skills: [listening, comprehension]
+    prompt: {text: Escucha y escribe el número en cifras., audio: true}
+    answer: {meaning: '6080'}
+    comments: []
+  - id: x.produce.num-6080
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.num-6080
+    targets: [s.num-6080]
+    context: [w.num.liu, w.qian.thousand, w.ling, w.ba, w.num.shi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «6080»'}
+    answer: {meaning: '6080'}
+    comments: []
+  - id: x.listen.num-990
+    added: 2026-10-19
+    lang: es
+    type: listen
+    sentence: s.num-990
+    targets: [s.num-990]
+    context: [w.num.jiu, w.bai.hundred, w.num.shi]
+    skills: [listening, comprehension]
+    prompt: {text: Escucha y escribe el número en cifras., audio: true}
+    answer: {meaning: '990'}
+    comments: []
+  - id: x.produce.num-990
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.num-990
+    targets: [s.num-990]
+    context: [w.num.jiu, w.bai.hundred, w.num.shi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «990»'}
+    answer: {meaning: '990'}
+    comments: []
+  - id: x.listen.num-250000
+    added: 2026-10-19
+    lang: es
+    type: listen
+    sentence: s.num-250000
+    targets: [s.num-250000]
+    context: [w.num.er, w.num.shi, w.num.wu, w.wan.tenk]
+    skills: [listening, comprehension]
+    prompt: {text: Escucha y escribe el número en cifras., audio: true}
+    answer: {meaning: 250 000}
+    comments: []
+  - id: x.produce.num-250000
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.num-250000
+    targets: [s.num-250000]
+    context: [w.num.er, w.num.shi, w.num.wu, w.wan.tenk]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «250 000»'}
+    answer: {meaning: 250 000}
+    comments: []
+  - id: x.dictation.yiban
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.yiban]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi2 ban4, hanzi: 一半, pinyin: yíbàn, meaning: la mitad}
+    comments: []
+  - id: x.produce.yiban
+    added: 2026-10-19
+    lang: es
+    type: produce
+    targets: [w.yiban]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «la mitad»? Escribe el pinyin.'}
+    answer: {typed: yi2 ban4, hanzi: 一半, pinyin: yíbàn, meaning: la mitad}
+    comments: []
+  - id: x.read.yiban
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.yiban]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 一半}
+    answer: {hanzi: 一半, pinyin: yíbàn, meaning: la mitad}
+    comments: []
+  - id: x.tones.yiban
+    added: 2026-10-19
+    lang: es
+    type: tones
+    targets: [w.yiban]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 一半, pinyin: yi ban}
+    answer: {typed: '24', hanzi: 一半, pinyin: yíbàn, meaning: la mitad}
+    comments: []
+  - id: x.produce.wo-yao-yiban
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.wo-yao-yiban
+    targets: [s.wo-yao-yiban]
+    context: [w.wo, w.yao, w.yiban]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero la mitad.»'}
+    answer: {meaning: Quiero la mitad.}
+    comments: []
+  - id: x.produce.nin-duoda-nianji-le
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.nin-duoda-nianji-le
+    targets: [s.nin-duoda-nianji-le]
+    context: [w.nin, w.duoda, w.nianji, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años tiene usted?»'}
+    answer: {meaning: '¿Cuántos años tiene usted?'}
     comments: []

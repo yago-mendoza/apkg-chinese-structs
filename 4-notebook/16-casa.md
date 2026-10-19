@@ -9,7 +9,7 @@
 - ✅🃏 门 mén [mən˧˥] · puerta · _sustantivo_ · El dibujo de una puerta de dos hojas.
 - ✅🃏 筷子 kuàizi [kʰwaɪ˥˩ tsɯ] · palillos · _sustantivo_
 - ✅🃏 报纸 bàozhǐ [pɑʊ˥˩ ʈʂɨ˧˩˧] · periódico · _sustantivo_
-- ✅🃏 电视 diànshì [tjɛn˥˩ ʂɨ˥˩] · televisión · _sustantivo_
+- ✅🃏 电视 diànshì [tjɛn˥˩ ʂɨ˥˩] · televisión, la tele · _sustantivo_
 - ✅🃏 笔 bǐ [pi˧˩˧] · bolígrafo, lápiz · _clasificador_
 - ✅🃏 杯子 bēizi [peɪ˥ tsɯ] · vaso, taza · _sustantivo_
 - ✅🃏 电话 diànhuà [tjɛn˥˩ xwa˥˩] · teléfono · _sustantivo_
@@ -28,6 +28,23 @@
 - ✅🃏 椅子 yǐzi [i˧˩˧ tsɯ] · silla · _sustantivo_
 - ✅🃏 沙发 shāfā [ʂa˥ fa˥] · sofá · _sustantivo_ · Préstamo del inglés sofa: suena casi igual.
 - ✅🃏 照片 zhàopiàn [ʈʂɑʊ˥˩ pʰjɛn˥˩] · foto · _sustantivo_
+- ✅🃏 麦克风 màikèfēng [maɪ˥˩ kʰɤ˥˩ fɤŋ˥] · micrófono · _sustantivo_ · Préstamo: 麦克 imita «micro» y 风, «phone». Para recordarlo: el «viento» de la voz entra por el micro. En las videollamadas se oye 麦 a secas: 开麦 «abre el micro».
+- ✅🃏 住 zhù [ʈʂu˥˩] · vivir (en un sitio); alojarse · _verbo_ · Dónde se vive o se duerme: 你住在哪里？ «¿dónde vives?». Para «vivir» en el sentido de la vida, 生活 [HSK 2].
+- ✅🃏 穿 chuān [ʈʂʰwan˥] · ponerse, llevar puesto (ropa) · _verbo_ · Ropa y zapatos: 穿衣服 «vestirse»; 我穿这件 «me pongo esta».
+
+## 住 y 猪
+
+La misma sílaba: solo los separa el tono.
+
+- 住 zhù · baja fuerte (4.º): 你住在哪里？
+- 猪 zhū · alto y plano (1.º): 属猪
+
+## 穿 y 船
+
+La misma sílaba: solo los separa el tono.
+
+- 穿 chuān · alto y plano (1.º): 穿衣服
+- 船 chuán · sube (2.º): 坐船
 
 ## Frases
 
@@ -36,3 +53,6 @@
 - ✅🃏 我的耳机呢？ · wǒ de ěrjī ne · ¿Dónde están mis auriculares?
 - ✅🃏 我在房间里。 · wǒ zài fángjiān lǐ · Estoy en la habitación.
 - ✅🃏 这不是我的杯子。 · zhè bú shì wǒ de bēizi · Este vaso no es mío.
+- ✅🃏 麦克风在哪里？ · màikèfēng zài nǎlǐ · ¿Dónde está el micrófono?
+- ✅🃏 你住在哪里？ · nǐ zhù zài nǎlǐ · ¿Dónde vives?
+- ✅🃏 我穿这件。 · wǒ chuān zhè jiàn · Me pongo esta (prenda).

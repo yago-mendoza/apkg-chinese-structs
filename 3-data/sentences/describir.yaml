@@ -609,3 +609,61 @@ sentences:
       - {text: 。}
     translation: {es: 'Son todos tontos.', en: 'They''re all stupid.'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'chat: dictados de la profesora al empezar la clase', date: '2026-10-15'}
+  - id: s.yiqie-dou-hen-hao
+    use: hear
+    segments:
+      - {text: 一切, ref: w.yiqie, pinyin: 'yíqiè'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 好, ref: w.hao, pinyin: 'hǎo'}
+      - {text: 。}
+    translation: {es: 'Todo va bien.', en: 'Everything is fine.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.bie-tai-lei-le
+    use: say
+    segments:
+      - {text: 别, ref: w.bie, pinyin: 'bié'}
+      - {text: 太, ref: w.tai, pinyin: 'tài'}
+      - {text: 累, ref: w.lei, pinyin: 'lèi'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: ！}
+    translation: {es: '¡No te canses demasiado!', en: 'Don''t wear yourself out!'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.tai-piaoliang-le
+    use: say
+    segments:
+      - {text: 太, ref: w.tai, pinyin: 'tài'}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: 'piàoliang'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: ！}
+    translation: {es: '¡Qué bonito!', en: 'How beautiful!'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-de-zhongwen-mamahuhu
+    use: hear
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 中文, ref: w.zhongwen, pinyin: 'Zhōngwén'}
+      - {text: 马马虎虎, ref: e.mamahuhu, pinyin: 'mǎmǎhūhū'}
+      - {text: 。}
+    translation: {es: 'Mi chino es regular.', en: 'My Chinese is so-so.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.women-yiyang-da
+    use: say
+    segments:
+      - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
+      - {text: 一样, ref: w.yiyang, pinyin: 'yíyàng'}
+      - {text: 大, ref: w.da, pinyin: 'dà'}
+      - {text: 。}
+    translation: {es: 'Tenemos la misma edad.', en: 'We''re the same age.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.zhege-hen-zhongyao
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 重要, ref: w.zhongyao, pinyin: 'zhòngyào'}
+      - {text: 。}
+    translation: {es: 'Esto es muy importante.', en: 'This is very important.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}

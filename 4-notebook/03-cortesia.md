@@ -12,13 +12,13 @@
 - ✅🃏 请进 qǐng jìn [tɕʰiŋ˧˩˧ tɕin˥˩] · pase, por favor · _expresión_ · Palabra a palabra: 请 «por favor» + 进 «entrar».
 - ✅🃏 请坐 qǐng zuò [tɕʰiŋ˧˩˧ tswɔ˥˩] · siéntese, por favor · _expresión_ · Palabra a palabra: 请 «por favor» + 坐 «sentarse».
 - ✅🃏 是的 shì de [ʂɨ˥˩ tɤ] · sí, eso es · _expresión_ · Palabra a palabra: 是 «ser» + 的: «así es».
-- ✅🃏 嗯 èn · mm, sí (asentimiento) · _interjección_
+- ✅🃏 嗯 èn · mm, sí (asentimiento) · _interjección_ · Una boca 口 junto a un corazón 心 con alguien dentro: el «mm» de quien escucha sin decir nada; según el tono, sí, extrañeza o «me da igual». · Repetido, 嗯嗯 es el «ajá, ajá» de quien sigue la conversación; dicho seco, puede sonar a indiferencia.
 - ✅🃏 可以 kěyǐ [kʰɤ˧˩˧ i˧˩˧] · poder (está permitido); vale, sirve · _verbo_ · También sirve de «vale», como 好的. · 可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2]. · Pregunta y respuesta a la vez: 可以吗？ —可以。 «¿Se puede? —Sí». En una tienda, 这个大小可以吗？ «¿este tamaño está bien?». Según el contexto también se dice 行 xíng [HSK 1] o 没问题 méi wèntí [问题 HSK 2], «no hay problema». · Kěyǐ suena un poco a «can», «poder» en inglés.
 - ✅🃏 不好意思 bù hǎoyìsi [pu˥˩ xɑʊ˧˩˧ i˥˩ sɯ] · perdona; qué vergüenza; me sabe mal · _expresión_ · Palabra a palabra: 不 «no» + 好意思 «tener cara para algo»: «no tengo cara», qué apuro. · Para una molestia pequeña: llegar tarde, pasar, interrumpir, pedir algo. Es muy cotidiano, también entre jóvenes, y no suena formal.
 - ✅🃏 对不起 duìbuqǐ [tweɪ˥˩ pu tɕʰi˧˩˧] · lo siento · _verbo_ · 对得起 es estar a la altura con alguien; 对不起, no estarlo: te he fallado, perdón. · 对不起 empieza por 对 «sí, correcto»: al pedir perdón juntas las manos, como quien afirma y reza. El que empieza por 不 «no», 不客气, es la mano que dice que no: «no hay de qué».
 - ✅🃏 没关系 méi guānxi [meɪ˧˥ kwan˥ ɕi] · no pasa nada · _expresión_ · La respuesta a 对不起 o a 不好意思: «no pasa nada». · Palabra a palabra: 没 «no hay» + 关系 [HSK 3] «relación»: no tiene que ver, no importa. Para quitar importancia a algo que ha pasado; para aceptar algo que te piden, 没问题. · Truco: «¡eso no tiene relación con nada importante!». · 关 «cerrar» y 系 «atar»: lo que está cerrado y atado a otra cosa tiene 关系, «relación». 关 sale solo en 关门 «cerrar la puerta».
 - ✅🃏 不客气 bù kèqi [pu˥˩ kʰɤ˥˩ tɕʰi] · de nada · _expresión_ · La respuesta a 谢谢. Literalmente, «no hagas cumplidos». · Palabra a palabra: 客气 [HSK 5] es tener cumplidos, como un invitado 客; 不客气, «no hace falta cumplido». Su 气 qi no es el 起 qǐ de 对不起: son caracteres distintos.
-- ✅🃏 帮 bāng [pɑŋ˥] · ayudar (a alguien) · _verbo_ · Con la persona detrás: 帮我 «ayúdame». Es la forma corriente al hablar.
+- ✅🃏 帮 bāng [pɑŋ˥] · ayudar (a alguien) · _verbo_ · Con la persona detrás: 帮我 «ayúdame». Es la forma corriente al hablar. · Una ciudad 阝 tan próspera 丰 que reparte telas 巾 a quien las necesita: eso es ayudar.
 - ✅🃏 帮忙 bāngmáng [pɑŋ˥ mɑŋ˧˥] · echar una mano · _verbo_ · No lleva a quién detrás: 他来帮忙 «viene a echar una mano». «Ayúdame» es 帮我.
 - ✅🃏 帮助 bāngzhù [pɑŋ˥ ʈʂu˥˩] · ayudar; ayuda · _verbo_ · Más formal que 帮, y también sustantivo: 谢谢你的帮助 «gracias por tu ayuda».
 - ✅🃏 你真棒 nǐ zhēn bàng [ni˧˩˧ ʈʂən˥ pɑŋ˥˩] · ¡eres genial!, ¡qué bien lo haces! · _expresión_ · Palabra a palabra: 你 «tú» + 真 «de verdad» + 棒 «estupendo»: «eres estupendo de verdad».
@@ -37,9 +37,12 @@
 - ✅🃏 翻译 fānyì [fan˥ i˥˩] · traducir; traductor · _verbo_ · 帮我翻译一下 «tradúcemelo, por favor».
 - ✅🃏 没错 méi cuò [meɪ˧˥ tsʰwɔ˥˩] · ¡exacto!, eso es · _expresión_ · Palabra a palabra: 没 «no hay» + 错 «error»: «no hay error», ¡exacto!
 - ✅🃏 走吧 zǒu ba [tsoʊ˧˩˧ pa] · ¡vamos!, vámonos · _expresión_ · Palabra a palabra: 走 «irse, andar» + 吧, que lo propone: «vámonos».
-- ✅🃏 我的错 wǒ de cuò [wɔ˧˩˧ tɤ tsʰwɔ˥˩] · es culpa mía · _expresión_ · 我的错 «culpa mía» asume la culpa; 我错了 «me he equivocado» reconoce un error. · Palabra a palabra: 我的 «mi» + 错 «error»: «mi error».
+- ✅🃏 我的错 wǒ de cuò [wɔ˧˩˧ tɤ tsʰwɔ˥˩] · es culpa mía · _expresión_ · 我的错 «culpa mía» asume la culpa; 我错了 «me he equivocado» reconoce un error. · Palabra a palabra: 我的 «mi» + 错 «error»: «mi error», que es como se dice «culpa mía» en chino.
 - ✅🃏 稍等 shāo děng [ʂɑʊ˥ tɤŋ˧˩˧] · un momento (espere) · _expresión_ · Más cortés que 等一下: lo dice el que atiende. 请稍等 «espere un momento, por favor». · Palabra a palabra: 稍 «un poco» + 等 «esperar»: «espere un poco».
 - ✅🃏 不用谢 bù yòng xiè [pu˥˩ jʊŋ˥˩ ɕjɛ˥˩] · de nada (no hace falta dar las gracias) · _expresión_ · Palabra a palabra: 不用 «no hace falta» + 谢 «agradecer». Responde a 谢谢, como 不客气.
+- ✅🃏 应该 yīnggāi [iŋ˥ kaɪ˥] · deber (lo que toca hacer); seguramente · _verbo_ · Dos usos: lo que toca, 你应该休息 «deberías descansar»; y lo que se cree, 应该是 «seguramente sí». Para una obligación de verdad, 得 děi. · 该 gāi y 孩 hái llevan 亥 hài, que les da el sonido: -ai en los tres.
+- ✅🃏 不用 búyòng [pu˧˥ jʊŋ˥˩] · no hace falta · _adverbio_ · 不用谢 «de nada» (no hace falta dar las gracias); 不用了 «no, gracias, no hace falta».
+- ✅🃏 没什么 méi shénme [meɪ˧˥ ʂən˧˥ mɤ] · no es nada; no pasa nada · _expresión_ · Palabra a palabra: 没 «no hay» + 什么 «nada»: «no hay nada». Ante un 谢谢 o una pregunta preocupada.
 
 ## Formas de decir que sí
 
@@ -118,3 +121,10 @@ Cada una contesta a una cosa distinta: a unas gracias, a una disculpa o a un fav
 - ✅🃏 你们吃饭了吗？ · nǐmen chīfàn le ma · ¿Ya habéis comido?
 - ✅🃏 对不起，你们吃饭了吗？ · duìbuqǐ nǐmen chīfàn le ma · Perdón, ¿ya habéis empezado a comer?
 - ✅🃏 你说得对。 · nǐ shuō de duì · Tienes razón.
+- ✅🃏 我可以游泳吗？ · wǒ kěyǐ yóuyǒng ma · ¿Puedo nadar? (¿me dejan?)
+- ✅🃏 我可以去，但是我还不知道我想不想去。 · wǒ kěyǐ qù dànshì wǒ hái bù zhīdao wǒ xiǎng bù xiǎng qù · Puedo ir, pero todavía no sé si quiero.
+- ✅🃏 应该是。 · yīnggāi shì · Seguramente sí.
+- ✅🃏 我知道，但是我不明白。 · wǒ zhīdao dànshì wǒ bù míngbai · Lo sé, pero no lo entiendo.
+- ✅🃏 我可以开车吗？ · wǒ kěyǐ kāichē ma · ¿Puedo conducir? (¿me dejas?)
+- ✅🃏 不用了，谢谢。 · búyòng le xièxie · No hace falta, gracias.
+- ✅🃏 没什么。 · méi shénme · No es nada.

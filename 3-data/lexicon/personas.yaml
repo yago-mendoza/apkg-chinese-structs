@@ -442,7 +442,7 @@ entries:
     meaning: {es: 'pie', en: 'foot'}
     source: {origin: attic, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md', date: '2026-10-09'}
     comments:
-      - {kind: mnemonic, private: false, date: '2026-10-09', text: '月 «carne» + 却, que lleva 去 «irse»: el pie, que es con lo que te vas.'}
+      - {kind: mnemonic, private: false, date: '2026-10-19', text: '月 es «carne» (una parte del cuerpo). A la derecha, 去 «irse» y 卩, una persona arrodillada: para irte andando y para levantarte después de arrodillarte necesitas el pie.', original: 'Mnemotecnia: 脚 (jiǎo) = pie. El componente 月 representa la carne (肉), aunque no lo parezca, y nos indica que es una parte del cuerpo. A la derecha tenemos 去, que significa «irse», y 卩, que representa a una persona arrodillada. La mnemotecnia es que, tanto para andar e irte como para levantarte después de estar arrodillado, necesitas utilizar el pie (脚).'}
   - id: g.jiao-jiao
     kind: group
     basis: soundalike
@@ -453,3 +453,35 @@ entries:
       - {ref: w.jiao.foot, cue: 'baja y sube (3.º), parte del cuerpo'}
     source: {origin: attic, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md', date: '2026-10-16'}
     comments: []
+  - id: w.shengbing
+    use: say
+    role: content
+    kind: word
+    hanzi: 生病
+    pinyin: shēngbìng
+    meaning: {es: ponerse enfermo; estar enfermo, en: to get sick; to be ill}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 生 «producir, tener» + 病 «enfermedad»: «coger una enfermedad». Con 了, ya ha pasado: 我生病了 «me he puesto enfermo».'}
+  - id: w.guanxi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 关系
+    pinyin: guānxi
+    meaning: {es: relación (entre personas o cosas), en: relationship; connection}
+    accept_pinyin_mismatch: '系 va en tono neutro: guānxi'
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Es el 关系 de 没关系 «no pasa nada», literalmente «no tiene relación». 我们关系很好 «nos llevamos muy bien»; 跟你没关系 «no tiene nada que ver contigo». No confundir con 关心 guānxīn «preocuparse por alguien» [HSK 2].'}
+  - id: w.bieren
+    use: say
+    role: content
+    kind: word
+    hanzi: 别人
+    pinyin: biéren
+    meaning: {es: 'los demás, otra gente', en: 'others'}
+    accept_pinyin_mismatch: '人 va en tono neutro: biéren'
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 别 «otro» + 人 «persona». 别人都来了 «los demás ya han venido». No es el 别 de «no hagas».'}

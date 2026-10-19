@@ -64,7 +64,11 @@ class Coverage(unittest.TestCase):
         self.assertEqual(req(word("w.c", "什么", "shénme", role="function")),
                          {"read", "listen", "produce-sentence", "tones"})
         self.assertEqual(req(word("w.d", "入口", "rùkǒu", use=["read"])), {"read"})
-        self.assertEqual(req({"id": "s.a", "use": "say", "segments": []}), {"listen", "produce"})
+        # Oír una frase para decir, solo si es de clase o se decide a mano (review 011).
+        self.assertEqual(req({"id": "s.a", "use": "say", "segments": []}), {"produce"})
+        self.assertEqual(req({"id": "s.c", "use": "say", "segments": [], "source": {"origin": "class"}}),
+                         {"listen", "produce"})
+        self.assertEqual(req({"id": "s.d", "use": "say", "segments": [], "listen": True}), {"listen", "produce"})
         self.assertEqual(req({"id": "s.b", "use": "hear", "segments": []}), {"listen"})
 
     def test_tones_from_audio_count_as_listening(self):
@@ -696,12 +700,16 @@ class Repository(unittest.TestCase):
 
     def test_card_cap_stops_only_what_enters_after_the_rule(self):
         entries, sentences, exercises = anki.load()
-        word = next(e for e in entries if e["id"] == "w.num.shi")        # 十: 10 tarjetas, todas anteriores
+        eby = {e["id"]: e for e in entries}
+        per = anki.cards_per_item(exercises, eby)
+        # Una palabra en el tope o por encima solo con tarjetas anteriores a la regla, y sin justificarlo.
+        wid = next(w for w, xs in per.items() if len(xs) >= anki.CARDS_PER_ITEM_MAX and not eby[w].get("accept_cards")
+                   and all(str(x.get("added")) < str(anki.CARDS_CAP_SINCE) for x in xs))
         _, warnings = anki.validate(entries, sentences, exercises, require_audio=False)
-        self.assertFalse(any(w.startswith("w.num.shi:") and "tope" in w for w in warnings))
-        extra = dict(next(x for x in exercises if word["id"] in x.get("targets", [])), id="x.extra", added="2026-12-01")
+        self.assertFalse(any(w.startswith(f"{wid}:") and "tope" in w for w in warnings))
+        extra = dict(per[wid][0], id="x.extra", added="2026-12-01")
         _, warnings = anki.validate(entries, sentences, exercises + [extra], require_audio=False)
-        self.assertTrue(any(w.startswith("w.num.shi:") and "tope" in w for w in warnings))
+        self.assertTrue(any(w.startswith(f"{wid}:") and "tope" in w for w in warnings))
 
 
 class Batch005(unittest.TestCase):
@@ -1063,7 +1071,9 @@ class Batch011(unittest.TestCase):
         firsts = {}
         for i, d in enumerate(seen):
             firsts.setdefault(d, i)
-        self.assertEqual(sorted(firsts), list(firsts))                  # y por clases, de la primera a la última
+        days = list(firsts)
+        # La última clase, delante; detrás, lo atrasado de la primera a la última (review 011).
+        self.assertEqual(days, sorted(days)[-1:] + sorted(days)[:-1])
 
     def test_a_listening_card_is_a_challenge_not_a_formula(self):
         self.assertFalse(anki.listen_challenge(self.sby["s.xiexie-bukeqi"], self.eby))     # 谢谢！不客气。
@@ -1116,3 +1126,48 @@ class ToneColors(unittest.TestCase):
             front = re.sub(r'<div class="legend">.*?</div>', "", front)
             if re.search(r'class="t[1-5]"', front):
                 self.assertRegex(front, r'class="(?:py|pinyin)"><span class="t', ex["id"])
+
+
+class SplitValuesTest(unittest.TestCase):
+    def test_comma_inside_braces_is_caught(self):
+        """Lote 012: `{meaning: hē, beber.}` perdía «beber.» sin que nada avisara."""
+        import yaml
+        data = yaml.safe_load("exercises:\n  - {id: x.a, answer: {hanzi: 喝, meaning: hē, beber.}}\n")["exercises"]
+        self.assertEqual(anki.split_values(data), [("x.a", "beber.")])
+        word = yaml.safe_load("entries:\n  - {id: w.a, meaning: {es: Reino Unido, Inglaterra, en: UK}}\n")["entries"]
+        self.assertEqual(anki.split_values(word), [("w.a", "Inglaterra")])
+        ok = yaml.safe_load("exercises:\n  - {id: x.b, answer: {hanzi: 喝, meaning: 'hē, beber'}}\n")["exercises"]
+        self.assertEqual(anki.split_values(ok), [])
+
+
+class TimelineTest(unittest.TestCase):
+    """Lote 012: una franja del día en el reverso (review 011: «mini diagramas que ayuden a entender»)."""
+
+    def test_bars_and_target(self):
+        eby = {"w.a": {"id": "w.a", "hanzi": "早上"}, "w.b": {"id": "w.b", "hanzi": "上午"}}
+        g = {"id": "g.t", "timeline": [{"ref": "w.a", "from": 5, "to": 9}, {"ref": "w.b", "from": 8, "to": 12}]}
+        out = anki.timeline_html(g, eby, {"w.a"})
+        self.assertEqual(out.count("tl-bar"), 2)
+        self.assertIn('is-target" style="left:0.0%', out)
+
+    def test_bad_hours_are_an_error(self):
+        g = {"id": "g.t", "kind": "group", "theme": "tiempo", "members": [], "timeline": [{"ref": "w.zz", "from": 9, "to": 5}]}
+        errors, _ = anki.validate([g], [], [], require_audio=False)
+        self.assertTrue(any("from < to" in e for e in errors))
+        self.assertTrue(any("referencia rota" in e for e in errors))
+
+
+class SentenceKindTest(unittest.TestCase):
+    """Lote 012: cada frase será fórmula o ejemplo; check avisa de las que falten en cuanto empiece la clasificación."""
+
+    def test_kind(self):
+        entries, sentences, exercises = anki.load()
+        _, warnings = anki.validate(entries, sentences, exercises, require_audio=False)
+        if not any("kind" in s for s in sentences):
+            self.assertFalse(any("frase sin kind" in w for w in warnings))
+        one = [dict(sentences[0], kind="formula")] + sentences[1:]
+        errors, warnings = anki.validate(entries, one, exercises, require_audio=False)
+        self.assertTrue(any("frase sin kind" in w for w in warnings))
+        bad = [dict(sentences[0], kind="saludo")] + sentences[1:]
+        errors, _ = anki.validate(entries, bad, exercises, require_audio=False)
+        self.assertTrue(any("kind es formula" in e for e in errors))

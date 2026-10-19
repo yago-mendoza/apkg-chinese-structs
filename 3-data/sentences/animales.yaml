@@ -80,3 +80,13 @@ sentences:
       - {text: ？}
     translation: {es: '¿De qué signo es usted?', en: 'What''s your sign? (polite)'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+  - id: s.ni-you-mao-ma
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 猫, ref: w.mao, pinyin: 'māo'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Tienes gato?', en: 'Do you have a cat?'}
+    source: {origin: inbox, batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}

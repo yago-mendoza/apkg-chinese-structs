@@ -4,7 +4,7 @@
 
 ## Vocabulario
 
-- ✅🃏 爸爸 bàba [pa˥˩ pa] · papá · _sustantivo_ · Frente a 妈妈 māma: 爸 bà cae; 妈 mā va alto y plano.
+- ✅🃏 爸爸 bàba [pa˥˩ pa] · papá · _sustantivo_ · Frente a 妈妈 māma: 爸 bà cae; 妈 mā va alto y plano. · 爸: arriba, dos martillos cruzados (父 «padre»); abajo, media puerta de bar (巴), la misma del 吧 de 走吧.
 - ✅🃏 妈妈 māma [ma˥ ma] · mamá · _sustantivo_ · 女 «mujer» aporta el significado y 马 mǎ, el sonido. 马 significa «caballo», pero aquí solo presta su sonido: el caballo no tiene nada que ver con mamá. · También se dice 妈 mā sola, sobre todo para llamarla (妈！). 爸妈 bàmā son papá y mamá juntos, en registro coloquial. · Frente a 爸爸 bàba: 妈 mā va alto y plano; 爸 bà cae.
 - ✅🃏 儿子 érzi [ɑɻ˧˥ tsɯ] · hijo · _sustantivo_ · En 儿子 no hace falta marcar el género: es la forma por defecto; en 女儿 sí, con 女.
 - ✅🃏 女儿 nǚ'ér [ny˧˩˧ ɑɻ˧˥] · hija · _sustantivo_

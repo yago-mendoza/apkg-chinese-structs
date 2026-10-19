@@ -284,17 +284,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 家}
     answer: {hanzi: 家, pinyin: jiā, meaning: 'casa, hogar; familia'}
     comments: []
-  - id: x.listen.ta-you-erzi-he-nver
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.ta-you-erzi-he-nver
-    targets: [s.ta-you-erzi-he-nver]
-    context: [w.ta.he, w.you.have, w.num.yi, w.ge, w.erzi, w.he.and, w.nver]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Tiene un hijo y una hija.}
-    comments: []
   - id: x.produce.ta-you-erzi-he-nver
     added: 2026-10-01
     lang: es
@@ -305,17 +294,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Tiene un hijo y una hija.»'}
     answer: {meaning: Tiene un hijo y una hija.}
-    comments: []
-  - id: x.listen.women-shi-yijiaren
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.women-shi-yijiaren
-    targets: [s.women-shi-yijiaren]
-    context: [w.women, w.shi, w.num.yi, w.jia, w.ren]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Somos una familia.}
     comments: []
   - id: x.produce.women-shi-yijiaren
     added: 2026-10-01
@@ -364,17 +342,6 @@ exercises:
     refs: [p.neutral-tone]
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 姐姐, pinyin: jie jie}
     answer: {typed: '35', hanzi: 姐姐, pinyin: jiějie, meaning: hermana mayor}
-    comments: []
-  - id: x.listen.mama-huilai-le
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.mama-huilai-le
-    targets: [s.mama-huilai-le]
-    context: [w.mama, w.huilai, w.le]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Mamá ha vuelto.}
     comments: []
   - id: x.produce.mama-huilai-le
     added: 2026-10-01

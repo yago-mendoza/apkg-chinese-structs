@@ -187,3 +187,43 @@ sentences:
       - {text: ？}
     translation: {es: '¿Dónde está mi libro?', en: 'Where''s my book?'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: s.ta-mingnian-huiguo
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 明年, ref: w.mingnian, pinyin: 'míngnián'}
+      - {text: 回国, ref: w.huiguo, pinyin: 'huíguó'}
+      - {text: 。}
+    translation: {es: 'El año que viene vuelve a su país.', en: 'He''s going back to his country next year.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.ta-xiang-liu-zai-zhongguo
+    use: hear
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 留, ref: w.liu, pinyin: 'liú'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 中国, ref: w.zhongguo, pinyin: 'Zhōngguó'}
+      - {text: 。}
+    translation: {es: 'Quiere quedarse en China.', en: 'He wants to stay in China.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.zhege-difang-hen-piaoliang
+    use: say
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 地方, ref: w.difang, pinyin: 'dìfang'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 漂亮, ref: w.piaoliang, pinyin: 'piàoliang'}
+      - {text: 。}
+    translation: {es: 'Este sitio es muy bonito.', en: 'This place is very beautiful.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.wo-renshi-lu
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 认识, ref: w.renshi, pinyin: 'rènshi'}
+      - {text: 路, ref: w.lu, pinyin: 'lù'}
+      - {text: 。}
+    translation: {es: 'Sé el camino.', en: 'I know the way.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}

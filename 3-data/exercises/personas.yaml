@@ -210,17 +210,6 @@ exercises:
     answer: {meaning: Ella es mi profesora.}
     lang: es
     comments: []
-  - id: x.listen.women-shi-pengyou
-    added: 2026-09-25
-    type: listen
-    sentence: s.women-shi-pengyou
-    targets: [s.women-shi-pengyou]
-    context: [w.women, w.shi, w.pengyou]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Somos amigos.}
-    lang: es
-    comments: []
   - id: x.produce.women-shi-pengyou
     added: 2026-09-25
     type: produce
@@ -555,17 +544,6 @@ exercises:
     skills: [reading, pinyin]
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 谁}
     answer: {hanzi: 谁, pinyin: shéi, meaning: quién}
-    comments: []
-  - id: x.listen.ta-shi-shei
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.ta-shi-shei
-    targets: [s.ta-shi-shei]
-    context: [w.ta.he, w.shi, w.shei]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Quién es él?'}
     comments: []
   - id: x.produce.ta-shi-shei
     added: 2026-10-01
@@ -1002,17 +980,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «No es mi profesor.»'}
     answer: {meaning: No es mi profesor.}
     comments: []
-  - id: x.listen.ni-xiang-gen-wo-yiqi-chifan-ma
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.ni-xiang-gen-wo-yiqi-chifan-ma
-    targets: [s.ni-xiang-gen-wo-yiqi-chifan-ma]
-    context: [w.ni, w.xiang, w.gen, w.wo, w.yiqi, w.chifan, w.ma]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Quieres comer conmigo?'}
-    comments: []
   - id: x.produce.ni-xiang-gen-wo-yiqi-chifan-ma
     added: 2026-10-08
     lang: es
@@ -1023,17 +990,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Quieres comer conmigo?»'}
     answer: {meaning: '¿Quieres comer conmigo?'}
-    comments: []
-  - id: x.listen.shei-lai-le
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.shei-lai-le
-    targets: [s.shei-lai-le]
-    context: [w.shei, w.lai, w.le]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Quién ha venido?'}
     comments: []
   - id: x.produce.shei-lai-le
     added: 2026-10-08
@@ -1442,4 +1398,154 @@ exercises:
     skills: [listening, tones, discrimination]
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 脚, pinyin: jiǎo, meaning: pie}
+    comments: []
+  - id: x.dictation.shengbing
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.shengbing]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: sheng1 bing4, hanzi: 生病, pinyin: shēngbìng, meaning: ponerse enfermo; estar enfermo}
+    comments: []
+  - id: x.produce.shengbing
+    added: 2026-10-19
+    lang: es
+    type: produce
+    targets: [w.shengbing]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «ponerse enfermo; estar enfermo»? Escribe el pinyin.'}
+    answer: {typed: sheng1 bing4, hanzi: 生病, pinyin: shēngbìng, meaning: ponerse enfermo; estar enfermo}
+    comments: []
+  - id: x.read.shengbing
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.shengbing]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 生病}
+    answer: {hanzi: 生病, pinyin: shēngbìng, meaning: ponerse enfermo; estar enfermo}
+    comments: []
+  - id: x.dictation.guanxi
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.guanxi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: guan1 xi5, hanzi: 关系, pinyin: guānxi, meaning: relación (entre personas o cosas)}
+    accept_pinyin_mismatch: '系 va en tono neutro: guānxi'
+    comments: []
+  - id: x.read.guanxi
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.guanxi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 关系}
+    answer: {hanzi: 关系, pinyin: guānxi, meaning: relación (entre personas o cosas)}
+    accept_pinyin_mismatch: '系 va en tono neutro: guānxi'
+    comments: []
+  - id: x.tones.guanxi
+    added: 2026-10-19
+    lang: es
+    type: tones
+    targets: [w.guanxi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 关系, pinyin: guan xi}
+    answer: {typed: '15', hanzi: 关系, pinyin: guānxi, meaning: relación (entre personas o cosas)}
+    accept_pinyin_mismatch: '系 va en tono neutro: guānxi'
+    comments: []
+  - id: x.produce.shengbing-bu-neng-youyong
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.shengbing-bu-neng-youyong
+    targets: [s.shengbing-bu-neng-youyong]
+    context: [w.wo, w.xihuan, w.youyong, w.danshi, w.jintian, w.shengbing, w.le, w.bu, w.neng]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me gusta nadar, pero hoy estoy enfermo y no puedo.»'}
+    answer: {meaning: 'Me gusta nadar, pero hoy estoy enfermo y no puedo.'}
+    comments: []
+  - id: x.listen.zhe-gen-ni-mei-guanxi
+    added: 2026-10-19
+    lang: es
+    type: listen
+    sentence: s.zhe-gen-ni-mei-guanxi
+    targets: [s.zhe-gen-ni-mei-guanxi]
+    context: [w.zhe, w.gen, w.ni, w.mei, w.guanxi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Esto no tiene nada que ver contigo.}
+    comments: []
+  - id: x.listen.women-guanxi-hen-hao
+    added: 2026-10-19
+    lang: es
+    type: listen
+    sentence: s.women-guanxi-hen-hao
+    targets: [s.women-guanxi-hen-hao]
+    context: [w.women, w.guanxi, w.hen, w.hao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Nos llevamos muy bien.}
+    comments: []
+  - id: x.produce.ni-shi-shei
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.ni-shi-shei
+    targets: [s.ni-shi-shei]
+    context: [w.ni, w.shi, w.shei]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Quién eres?»'}
+    answer: {meaning: '¿Quién eres?'}
+    comments: []
+  - id: x.dictation.bieren
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.bieren]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bie2 ren5, hanzi: 别人, pinyin: biéren, meaning: 'los demás, otra gente'}
+    comments: []
+  - id: x.produce.bieren
+    added: 2026-10-19
+    lang: es
+    type: produce
+    targets: [w.bieren]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «los demás, otra gente»? Escribe el pinyin.'}
+    answer: {typed: bie2 ren5, hanzi: 别人, pinyin: biéren, meaning: 'los demás, otra gente'}
+    comments: []
+  - id: x.read.bieren
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.bieren]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 别人}
+    answer: {hanzi: 别人, pinyin: biéren, meaning: 'los demás, otra gente'}
+    comments: []
+  - id: x.tones.bieren
+    added: 2026-10-19
+    lang: es
+    type: tones
+    targets: [w.bieren]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 别人, pinyin: bie ren}
+    answer: {typed: '25', hanzi: 别人, pinyin: biéren, meaning: 'los demás, otra gente'}
+    comments: []
+  - id: x.produce.bieren-dou-lai-le
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.bieren-dou-lai-le
+    targets: [s.bieren-dou-lai-le]
+    context: [w.bieren, w.dou, w.lai, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Los demás ya han venido.»'}
+    answer: {meaning: Los demás ya han venido.}
     comments: []

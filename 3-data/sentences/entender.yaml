@@ -221,3 +221,67 @@ sentences:
       - {text: 。}
     translation: {es: 'Dilo otras dos veces, por favor.', en: 'Please say it twice more.'}
     source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
+  - id: s.yao-shuijiao-hai-xiang-liaotian
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 睡觉, ref: w.shuijiao, pinyin: 'shuìjiào'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: ，}
+      - {text: 但是, ref: w.danshi, pinyin: 'dànshì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 还, ref: w.hai.still, pinyin: 'hái'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 跟, ref: w.gen, pinyin: 'gēn'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 聊天, ref: w.liaotian, pinyin: 'liáotiān'}
+      - {text: 。}
+    translation: {es: 'Me voy a dormir, pero aún me apetece seguir charlando contigo.', en: 'I''m going to bed, but I''d still like to keep chatting with you.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.bie-shuohua
+    use: say
+    segments:
+      - {text: 别, ref: w.bie, pinyin: 'bié'}
+      - {text: 说话, ref: w.shuohua, pinyin: 'shuōhuà'}
+      - {text: ！}
+    translation: {es: '¡No hables! (¡Calla!)', en: 'Don''t talk!'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.you-wenti-ma
+    use: say
+    segments:
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 问题, ref: w.wenti, pinyin: 'wèntí'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Hay algún problema? (¿alguna pregunta?)', en: 'Any problems? (Any questions?)'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.qing-gaosu-wo
+    use: say
+    segments:
+      - {text: 请, ref: w.qing, pinyin: 'qǐng'}
+      - {text: 告诉, ref: w.gaosu, pinyin: 'gàosu'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 。}
+    translation: {es: 'Dímelo, por favor.', en: 'Please tell me.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.ni-hai-jide-wo-ma
+    use: say
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 还, ref: w.hai.still, pinyin: 'hái'}
+      - {text: 记得, ref: w.jide, pinyin: 'jìde'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Te acuerdas de mí?', en: 'Do you still remember me?'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.wo-wangji-le
+    use: say
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 忘记, ref: w.wangji, pinyin: 'wàngjì'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'Se me ha olvidado.', en: 'I forgot.'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}

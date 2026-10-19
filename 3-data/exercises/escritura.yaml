@@ -380,17 +380,6 @@ exercises:
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 句子, pinyin: ju zi}
     answer: {typed: '45', hanzi: 句子, pinyin: jùzi, meaning: frase}
     comments: []
-  - id: x.listen.wo-xie-hanzi
-    added: 2026-10-07
-    lang: es
-    type: listen
-    sentence: s.wo-xie-hanzi
-    targets: [s.wo-xie-hanzi]
-    context: [w.wo, w.xie, w.hanzi]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Escribo caracteres chinos.}
-    comments: []
   - id: x.produce.wo-xie-hanzi
     added: 2026-10-07
     lang: es
@@ -402,17 +391,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Escribo caracteres chinos.»'}
     answer: {meaning: Escribo caracteres chinos.}
     comments: []
-  - id: x.listen.wo-lianxi-pinyin
-    added: 2026-10-07
-    lang: es
-    type: listen
-    sentence: s.wo-lianxi-pinyin
-    targets: [s.wo-lianxi-pinyin]
-    context: [w.wo, w.lianxi, w.pinyin]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Practico pinyin.}
-    comments: []
   - id: x.produce.wo-lianxi-pinyin
     added: 2026-10-07
     lang: es
@@ -423,17 +401,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Practico pinyin.»'}
     answer: {meaning: Practico pinyin.}
-    comments: []
-  - id: x.listen.zhege-zi-zenme-shuo
-    added: 2026-10-07
-    lang: es
-    type: listen
-    sentence: s.zhege-zi-zenme-shuo
-    targets: [s.zhege-zi-zenme-shuo]
-    context: [w.zhe, w.ge, w.zi.char, w.zenme, w.shuo]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Cómo se dice este carácter?'}
     comments: []
   - id: x.produce.zhege-zi-zenme-shuo
     added: 2026-10-07
@@ -548,17 +515,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 毛笔}
     answer: {hanzi: 毛笔, pinyin: máobǐ, meaning: pincel (de caligrafía)}
     comments: []
-  - id: x.listen.wo-dei-xian-fuxi-yixia-biji
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.wo-dei-xian-fuxi-yixia-biji
-    targets: [s.wo-dei-xian-fuxi-yixia-biji]
-    context: [w.wo, w.dei, w.xian.first, w.fuxi, w.yixia, w.biji]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Antes tengo que repasar los apuntes.}
-    comments: []
   - id: x.produce.wo-dei-xian-fuxi-yixia-biji
     added: 2026-10-08
     lang: es
@@ -579,4 +535,34 @@ exercises:
     skills: [reading, discrimination]
     prompt: {text: '¿Cuál es mù, «ojo (como componente)»?'}
     answer: {hanzi: 目, pinyin: mù, meaning: ojo (como componente)}
+    comments: []
+  - id: x.contrast.qing.green
+    added: '2026-10-19'
+    lang: es
+    type: contrast
+    group: g.qing-qing.look
+    targets: [c.qing.green]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es la pieza que da el sonido qing, «verde azulado»?'}
+    answer: {hanzi: 青, pinyin: qīng, meaning: 'verde azulado (como pieza, da el sonido qing)'}
+    comments: []
+  - id: x.contrast.side.chuo
+    added: '2026-10-19'
+    lang: es
+    type: contrast
+    group: g.yan-chuo.look
+    targets: [c.side.chuo]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es la pieza de caminar (la de 这 y 过)?'}
+    answer: {hanzi: 辶, pinyin: chuò, meaning: 'caminar, avanzar (como componente)'}
+    comments: []
+  - id: x.contrast.side.yan
+    added: '2026-10-19'
+    lang: es
+    type: contrast
+    group: g.yan-chuo.look
+    targets: [c.side.yan]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es la pieza de hablar (la de 请 y 说)?'}
+    answer: {hanzi: 讠, pinyin: yán, meaning: 'palabra, hablar (como componente)'}
     comments: []

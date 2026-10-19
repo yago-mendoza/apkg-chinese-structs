@@ -123,6 +123,7 @@ entries:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 学 «estudiar» + 校 «escuela».'}
+      - {kind: mnemonic, private: false, date: '2026-10-19', text: '校: un árbol 木 junto a 交, seis 六 sobre unas piernas cruzadas 乂: seis alumnos se cruzan bajo el árbol de la entrada del colegio.', original: 'Mnemotecnia para 校 (xiào): «Seis alumnos padres se cruzan bajo un árbol (木) a la entrada del colegio».'}
   - id: w.nali.there
     use: say
     role: function
@@ -309,3 +310,44 @@ entries:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-09-22', date: '2026-09-22'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-22', text: '医 «medicina» + 院 «patio, recinto»; el mismo 医 de 医生.'}
+  - id: w.huiguo
+    use: hear
+    role: content
+    kind: word
+    hanzi: 回国
+    pinyin: huíguó
+    meaning: {es: volver a su país, en: to return to one's country}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 回 «volver» + 国 «país». Del país de quien habla: 他明年回国 «vuelve a su país el año que viene».'}
+  - id: w.liu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 留
+    pinyin: liú
+    meaning: {es: quedarse; dejar (algo para alguien), en: to stay; to leave (something)}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Quedarse en un sitio en vez de irse: 留在中国 «quedarse en China».'}
+  - id: w.difang
+    use: say
+    role: content
+    kind: word
+    hanzi: 地方
+    pinyin: dìfang
+    meaning: {es: 'sitio, lugar', en: 'place'}
+    accept_pinyin_mismatch: '方 va en tono neutro: dìfang'
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 地 «tierra» + 方 «lado»: un sitio. 这个地方很漂亮 «este sitio es muy bonito».'}
+  - id: w.lu
+    use: say
+    role: content
+    kind: word
+    hanzi: 路
+    pinyin: lù
+    meaning: {es: 'camino, calle', en: 'road, way'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: '我认识路 «sé el camino». 路上 «por el camino».'}

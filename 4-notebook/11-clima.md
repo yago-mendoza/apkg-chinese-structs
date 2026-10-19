@@ -16,6 +16,7 @@
 - ✅🃏 山 shān [ʂan˥] · montaña · _sustantivo_ · 爬山 «subir a la montaña» es una afición muy común en China.
 - ✅🃏 岛 dǎo [tɑʊ˧˩˧] · isla · _sustantivo_
 - ✅🃏 花 huā [xwa˥] · flor · _verbo_ · Como verbo es «gastar»: 花钱 «gastar dinero».
+- ✅🃏 雨 yǔ [y˧˩˧] · lluvia · _sustantivo_ · Llover es 下雨 «cae la lluvia»: 下雨了 «está lloviendo».
 
 ## 热 rè y 日 rì
 

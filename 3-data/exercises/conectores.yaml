@@ -205,17 +205,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 吧}
     answer: {hanzi: 吧, pinyin: ba, meaning: 'partícula de propuesta (venga, vale)'}
     comments: []
-  - id: x.listen.yinwei-xiayu-suoyi-wo-bu-qu
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.yinwei-xiayu-suoyi-wo-bu-qu
-    targets: [s.yinwei-xiayu-suoyi-wo-bu-qu]
-    context: [w.yinwei, w.xiayu, w.suoyi, w.wo, w.bu, w.qu]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Como llueve, no voy.'}
-    comments: []
   - id: x.produce.yinwei-xiayu-suoyi-wo-bu-qu
     added: 2026-10-01
     lang: es
@@ -226,17 +215,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Como llueve, no voy.»'}
     answer: {meaning: 'Como llueve, no voy.'}
-    comments: []
-  - id: x.listen.ruguo-ni-xihuan-jiu-mai-ba
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.ruguo-ni-xihuan-jiu-mai-ba
-    targets: [s.ruguo-ni-xihuan-jiu-mai-ba]
-    context: [w.ruguo, w.ni, w.xihuan, w.jiu, w.mai, w.ba.particle]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Si te gusta, cómpralo.'}
     comments: []
   - id: x.produce.ruguo-ni-xihuan-jiu-mai-ba
     added: 2026-10-01
@@ -284,17 +262,6 @@ exercises:
     prompt: {text: 'Completa en pinyin: «Si te gusta, cómpralo.»'}
     answer: {typed: jiu4, hanzi: 就, pinyin: jiù, meaning: entonces (consecuencia)}
     comments: []
-  - id: x.listen.wo-hen-lei-suoyi-huijia
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.wo-hen-lei-suoyi-huijia
-    targets: [s.wo-hen-lei-suoyi-huijia]
-    context: [w.wo, w.hen, w.lei, w.suoyi, w.huijia, w.shuijiao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Estoy cansado, así que me voy a casa a dormir.'}
-    comments: []
   - id: x.produce.wo-hen-lei-suoyi-huijia
     added: 2026-10-01
     lang: es
@@ -305,17 +272,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Estoy cansado, así que me voy a casa a dormir.»'}
     answer: {meaning: 'Estoy cansado, así que me voy a casa a dormir.'}
-    comments: []
-  - id: x.listen.ni-xihuan-jiu-mai-ba
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.ni-xihuan-jiu-mai-ba
-    targets: [s.ni-xihuan-jiu-mai-ba]
-    context: [w.ni, w.xihuan, w.jiu, w.mai, w.ba.particle]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Si te gusta, cómpralo.'}
     comments: []
   - id: x.produce.ni-xihuan-jiu-mai-ba
     added: 2026-10-01
@@ -419,17 +375,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 再}
     answer: {hanzi: 再, pinyin: zài, meaning: 'otra vez, de nuevo; luego, después'}
     comments: []
-  - id: x.listen.wo-mingtian-zai-lai
-    added: 2026-10-05
-    lang: es
-    type: listen
-    sentence: s.wo-mingtian-zai-lai
-    targets: [s.wo-mingtian-zai-lai]
-    context: [w.wo, w.mingtian, w.zai.again, w.lai]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Vuelvo mañana.}
-    comments: []
   - id: x.produce.wo-mingtian-zai-lai
     added: 2026-10-05
     lang: es
@@ -468,17 +413,6 @@ exercises:
     refs: [p.third-tone-sandhi]
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 也许, pinyin: ye xu}
     answer: {typed: '33', hanzi: 也许, pinyin: yěxǔ, meaning: quizá}
-    comments: []
-  - id: x.listen.wo-yibian-chifan-yibian-kan-shouji
-    added: 2026-10-08
-    lang: es
-    type: listen
-    sentence: s.wo-yibian-chifan-yibian-kan-shouji
-    targets: [s.wo-yibian-chifan-yibian-kan-shouji]
-    context: [w.wo, w.yibian, w.chifan, w.kan, w.shouji]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Como mientras miro el móvil.}
     comments: []
   - id: x.produce.wo-yibian-chifan-yibian-kan-shouji
     added: 2026-10-08
@@ -579,17 +513,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 又}
     answer: {hanzi: 又, pinyin: yòu, meaning: otra vez (lo que ya ha pasado)}
     comments: []
-  - id: x.listen.wo-mingtian-zai-xuexi-zhongwen
-    added: 2026-10-16
-    lang: es
-    type: listen
-    sentence: s.wo-mingtian-zai-xuexi-zhongwen
-    targets: [s.wo-mingtian-zai-xuexi-zhongwen]
-    context: [w.wo, w.mingtian, w.zai.again, w.xuexi, w.zhongwen]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Mañana vuelvo a estudiar chino.}
-    comments: []
   - id: x.produce.wo-mingtian-zai-xuexi-zhongwen
     added: 2026-10-16
     lang: es
@@ -600,17 +523,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Mañana vuelvo a estudiar chino.»'}
     answer: {meaning: Mañana vuelvo a estudiar chino.}
-    comments: []
-  - id: x.listen.ta-you-lai-le
-    added: 2026-10-16
-    lang: es
-    type: listen
-    sentence: s.ta-you-lai-le
-    targets: [s.ta-you-lai-le]
-    context: [w.ta.he, w.you.repeat, w.lai, w.le]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Ha vuelto a venir.}
     comments: []
   - id: x.produce.ta-you-lai-le
     added: 2026-10-16
@@ -644,4 +556,180 @@ exercises:
     skills: [comprehension, discrimination]
     prompt: {text: '再 y 又, los dos «otra vez»: ¿cuándo cada uno?'}
     answer: {meaning: '再: lo que aún no ha pasado (我明天再来). 又: lo que ya se ha repetido (他又来了). El otro zài, 在, es «estar».'}
+    comments: []
+  - id: x.dictation.haishi
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.haishi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hai2 shi5, hanzi: 还是, pinyin: háishi, meaning: o (en una pregunta entre dos)}
+    comments: []
+  - id: x.cloze.haishi
+    added: 2026-10-19
+    lang: es
+    type: cloze
+    sentence: s.shi-nan-de-haishi-nv-de
+    gap: w.haishi
+    targets: [w.haishi]
+    context: [w.shi, w.nan.male, w.de, w.nv.female]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Es hombre o mujer?»'}
+    answer: {typed: hai2 shi5, hanzi: 还是, pinyin: háishi, meaning: o (en una pregunta entre dos)}
+    comments: []
+  - id: x.read.haishi
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.haishi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 还是}
+    answer: {hanzi: 还是, pinyin: háishi, meaning: o (en una pregunta entre dos)}
+    comments: []
+  - id: x.tones.haishi
+    added: 2026-10-19
+    lang: es
+    type: tones
+    targets: [w.haishi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 还是, pinyin: hai shi}
+    answer: {typed: '25', hanzi: 还是, pinyin: háishi, meaning: o (en una pregunta entre dos)}
+    comments: []
+  - id: x.produce.gen-wo-yiqi-qu-haishi-zai-jia
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.gen-wo-yiqi-qu-haishi-zai-jia
+    targets: [s.gen-wo-yiqi-qu-haishi-zai-jia]
+    context: [w.ni, w.xiang, w.gen, w.wo, w.yiqi, w.qu, w.haishi, w.zai.at, w.jia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Quieres venir conmigo o prefieres quedarte en casa?»'}
+    answer: {meaning: '¿Quieres venir conmigo o prefieres quedarte en casa?'}
+    comments: []
+  - id: x.produce.ruguo-you-shijian-xiang-qu-kan-ni
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.ruguo-you-shijian-xiang-qu-kan-ni
+    targets: [s.ruguo-you-shijian-xiang-qu-kan-ni]
+    context: [w.ruguo, w.mingtian, w.wo, w.you.have, w.shijian, w.xiang, w.qu, w.kan, w.ni]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Si mañana tengo tiempo, me gustaría ir a verte.»'}
+    answer: {meaning: 'Si mañana tengo tiempo, me gustaría ir a verte.'}
+    comments: []
+  - id: x.produce.wo-mingtian-zai-zuo
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.wo-mingtian-zai-zuo
+    targets: [s.wo-mingtian-zai-zuo]
+    context: [w.wo, w.mingtian, w.zai.again, w.zuo.do]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ya lo haré mañana.»'}
+    answer: {meaning: Ya lo haré mañana.}
+    comments: []
+  - id: x.produce.shi-nan-de-haishi-nv-de
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.shi-nan-de-haishi-nv-de
+    targets: [s.shi-nan-de-haishi-nv-de]
+    context: [w.shi, w.nan.male, w.de, w.haishi, w.nv.female]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Es hombre o mujer?»'}
+    answer: {meaning: '¿Es hombre o mujer?'}
+    comments: []
+  - id: x.dictation.zuihao
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.zuihao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zui4 hao3, hanzi: 最好, pinyin: zuìhǎo, meaning: lo mejor es (hacer algo); mejor}
+    comments: []
+  - id: x.read.zuihao
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.zuihao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 最好}
+    answer: {hanzi: 最好, pinyin: zuìhǎo, meaning: lo mejor es (hacer algo); mejor}
+    comments: []
+  - id: x.dictation.haiyou
+    added: 2026-10-19
+    lang: es
+    type: listen
+    targets: [w.haiyou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hai2 you3, hanzi: 还有, pinyin: háiyǒu, meaning: y además; todavía hay}
+    comments: []
+  - id: x.read.haiyou
+    added: 2026-10-19
+    lang: es
+    type: read
+    targets: [w.haiyou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 还有}
+    answer: {hanzi: 还有, pinyin: háiyǒu, meaning: y además; todavía hay}
+    comments: []
+  - id: x.tones.haiyou
+    added: 2026-10-19
+    lang: es
+    type: tones
+    targets: [w.haiyou]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '23', hanzi: 还有, pinyin: háiyǒu, meaning: y además; todavía hay}
+    comments: []
+  - id: x.cloze.zuihao
+    added: 2026-10-19
+    lang: es
+    type: cloze
+    sentence: s.ni-zuihao-wen-yixia-laoshi
+    gap: w.zuihao
+    targets: [w.zuihao]
+    context: [w.ni, w.wen, w.yixia, w.laoshi]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Mejor pregúntale a la profesora.»'}
+    answer: {typed: zui4 hao3, hanzi: 最好, pinyin: zuìhǎo, meaning: lo mejor es (hacer algo); mejor}
+    comments: []
+  - id: x.cloze.haiyou
+    added: 2026-10-19
+    lang: es
+    type: cloze
+    sentence: s.hai-you-ma
+    gap: w.haiyou
+    targets: [w.haiyou]
+    context: [w.ma]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Queda más? (¿hay más?)»'}
+    answer: {typed: hai2 you3, hanzi: 还有, pinyin: háiyǒu, meaning: y además; todavía hay}
+    comments: []
+  - id: x.produce.ni-zuihao-wen-yixia-laoshi
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.ni-zuihao-wen-yixia-laoshi
+    targets: [s.ni-zuihao-wen-yixia-laoshi]
+    context: [w.ni, w.zuihao, w.wen, w.yixia, w.laoshi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mejor pregúntale a la profesora.»'}
+    answer: {meaning: Mejor pregúntale a la profesora.}
+    comments: []
+  - id: x.produce.hai-you-ma
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.hai-you-ma
+    targets: [s.hai-you-ma]
+    context: [w.haiyou, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Queda más? (¿hay más?)»'}
+    answer: {meaning: '¿Queda más? (¿hay más?)'}
     comments: []

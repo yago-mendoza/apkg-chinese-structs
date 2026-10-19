@@ -132,3 +132,13 @@ entries:
       - {ref: w.ri.day, cue: 'zumbido, sin vocal'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments: []
+  - id: w.yu.rain
+    use: hear
+    role: content
+    kind: word
+    hanzi: 雨
+    pinyin: yǔ
+    meaning: {es: lluvia, en: rain}
+    source: {origin: inbox, batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Llover es 下雨 «cae la lluvia»: 下雨了 «está lloviendo».'}

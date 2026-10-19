@@ -99,6 +99,7 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: '走 es irse o andar, sin decir adónde: 我走了 «me voy». Para ir a un sitio, 去: 我去商店. Y no es 坐 zuò «sentarse».', original: 'no coufndir zou con zuo, irse con sentarse!!!!'}
+      - {kind: mnemonic, private: false, date: '2026-10-19', text: '走 se parece a 是, pero arriba, en vez del sol 日, alguien balancea los brazos 土 al andar.', original: 'Primero me gusta la mnemotenciande alguien siendo (de parece a eso shì) pero arriba balancea brazos en vez de poner un sol.'}
   - id: w.le
     use: say
     role: function
@@ -125,6 +126,7 @@ entries:
       - {kind: linguistic, private: false, date: '2026-09-27', text: '错误 cuòwù «error» [HSK 3] y 误会 wùhuì «malentendido» [HSK 4] son más formales; hablando basta 错.'}
       - {kind: sound, private: false, date: '2026-10-01', text: 'cuò: la u apenas suena, se desliza hacia la o.', original: 'Cuò decir que la "u" apenas suena en notas'}
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Estar equivocado: 我错了 «me he equivocado» (también vale para «he cometido un error»), 你错了 «te equivocas». Detrás de un verbo, «mal»: 你说错了 «lo has dicho mal». 不错 bú cuò [HSK 2] es un elogio, «no está mal, bastante bien».'}
+      - {kind: mnemonic, private: false, date: '2026-10-19', text: 'Un concurso: el presentador golpea una campana de metal 钅 delante del marcador 昔 y grita «¡cuò!», con un tono que cae de golpe, como el cuarto: ¡error!', original: 'Imagina un concurso donde un presentador sostiene una campana de metal y alguien da una respuesta equivocada. El presentador golpea la campana y grita: «¡CUÒ! ¡ERROR!»'}
   - id: g.ru-chu
     kind: group
     basis: set
@@ -657,3 +659,63 @@ entries:
       - {ref: w.dao.reach, cue: 'cae (4.º), verbo: 不到二十八岁'}
     source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
     comments: []
+  - id: w.kai
+    use: say
+    role: content
+    kind: word
+    hanzi: 开
+    pinyin: kāi
+    meaning: {es: abrir; encender; conducir (开车), en: to open; to turn on; to drive}
+    source: {origin: inbox, batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Poner algo en marcha: 开门 «abrir la puerta», 开车 «conducir», 开会 «tener una reunión». Lo contrario, 关 guān «cerrar, apagar» [HSK 1].'}
+  - id: w.bixu
+    use: say
+    role: function
+    kind: word
+    hanzi: 必须
+    pinyin: bìxū
+    meaning: {es: tener que (sin remedio), en: must}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Más fuerte que 得 děi: una obligación sin excusa, de normas y avisos. 你明天必须来 «mañana tienes que venir sí o sí». Hablando, 得 es lo normal.'}
+  - id: g.mei-mei
+    kind: group
+    basis: soundalike
+    title: '没 y 每'
+    explanation: 'La misma sílaba: solo los separa el tono.'
+    members:
+      - {ref: w.mei, cue: 'sube (2.º): 我没去'}
+      - {ref: w.mei.each, cue: 'baja y sube (3.º): 每天'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments: []
+  - id: g.xiuxi-xuexi
+    kind: group
+    basis: soundalike
+    title: '休息 y 学习'
+    explanation: 'Se oyen casi igual; descansar o estudiar.'
+    members:
+      - {ref: w.xiuxi, cue: 'empieza alto y plano (1.º), y la segunda sílaba es neutra'}
+      - {ref: w.xuexi, cue: 'empieza subiendo (2.º), con ü'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments: []
+  - id: w.zhexie
+    use: say
+    role: content
+    kind: word
+    hanzi: 这些
+    pinyin: zhèxiē
+    meaning: {es: 'estos, estas', en: 'these'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Plural de 这: 这些是我的书 «estos son mis libros». No lleva clasificador.'}
+  - id: w.naxie
+    use: say
+    role: content
+    kind: word
+    hanzi: 那些
+    pinyin: nàxiē
+    meaning: {es: 'esos, aquellos', en: 'those'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Plural de 那: 那些人 «esa gente».'}

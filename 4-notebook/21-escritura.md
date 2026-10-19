@@ -32,6 +32,7 @@
 - ✅🃏 复习 fùxí [fu˥˩ ɕi˧˥] · repasar · _verbo_ · 复习 es repasar lo que ya se vio; 学习, estudiar algo nuevo. Comparten 习.
 - ✅🃏 笔记 bǐjì [pi˧˩˧ tɕi˥˩] · apuntes, notas · _sustantivo_ · Palabra a palabra: 笔 «bolígrafo» + 记 «anotar».
 - ✅🃏 毛笔 máobǐ [mɑʊ˧˥ pi˧˩˧] · pincel (de caligrafía) · _sustantivo_ · Palabra a palabra: 毛 «pelo» + 笔 «instrumento para escribir»: el pincel de pelo.
+- ✅🃏 辶 chuò · caminar, avanzar (como componente) · Rodea el carácter por abajo y por la izquierda, como un camino. No confundir con 讠 «hablar», que va solo a la izquierda: 请 pide hablando; 进 entra caminando.
 
 ## 生, 牛 y 午
 
@@ -122,6 +123,20 @@ Los dos llevan 矢 «flecha»; los separa dónde va la flecha.
 
 - 知道 zhīdao · 知: la flecha a la izquierda y 口 a la derecha
 - 医生 yīshēng · 医: la flecha dentro de una caja abierta por la derecha
+
+## 青 y 请
+
+青 da el sonido; 讠 delante lo convierte en pedir.
+
+- 青 qīng · solo, sin nada a la izquierda
+- 请 qǐng · 讠 hablar a la izquierda: se pide hablando
+
+## 讠 y 辶
+
+Dos piezas que se confunden de lejos: una habla, la otra camina.
+
+- 讠 yán · solo a la izquierda, un punto y un trazo que baja y gira (请, 说)
+- 辶 chuò · rodea por la izquierda y por abajo, como un camino (这, 过)
 
 ## Frases
 

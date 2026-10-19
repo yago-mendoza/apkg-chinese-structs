@@ -15,7 +15,7 @@
 - ✅🃏 司机 sījī [sɯ˥ tɕi˥] · conductor (de taxi, de autobús) · _sustantivo_ · Es el oficio. Al taxista, al hablarle, no se le llama 司机 sino 师傅 shīfu [HSK 5]. · 司 sī da el sonido a 词 cí, que lleva además 讠 «palabra».
 - ✅🃏 地图 dìtú [ti˥˩ tʰu˧˥] · mapa · _sustantivo_ · Palabra a palabra: 地 «tierra» + 图 «dibujo». También la aplicación de mapas del móvil.
 - ✅🃏 船 chuán [ʈʂʰwan˧˥] · barco · _sustantivo_ · Se va en barco como en avión, con 坐: 坐船.
-- ✅🃏 学校 xuéxiào [ɕɥœ˧˥ ɕjɑʊ˥˩] · escuela, colegio · _sustantivo_ · Palabra a palabra: 学 «estudiar» + 校 «escuela».
+- ✅🃏 学校 xuéxiào [ɕɥœ˧˥ ɕjɑʊ˥˩] · escuela, colegio · _sustantivo_ · Palabra a palabra: 学 «estudiar» + 校 «escuela». · 校: un árbol 木 junto a 交, seis 六 sobre unas piernas cruzadas 乂: seis alumnos se cruzan bajo el árbol de la entrada del colegio.
 - ✅🃏 那里 nàlǐ [na˥˩ li˧˩˧] · allí · _pronombre_
 - ✅🃏 里 lǐ [li˧˩˧] · dentro, en (detrás de un lugar) · _sustantivo_ · Va detrás del sitio: 冰箱里 «en la nevera», 房间里 «en la habitación».
 - ✅🃏 街道 jiēdào [tɕjɛ˥ tɑʊ˥˩] · calle · _sustantivo_ · Palabra a palabra: 街 «calle» + 道 «camino». · 圭 da el sonido a 街 jiē y a 鞋 xié: suenan parecido.
@@ -31,6 +31,10 @@
 - ✅🃏 洗手间 xǐshǒujiān [ɕi˧˩˧ ʂoʊ˧˩˧ tɕjɛn˥] · baño, aseo · _sustantivo_ · Palabra a palabra: 洗 «lavar» + 手 «mano» + 间 «sala»: «la sala de lavarse las manos». Es la forma educada, la de restaurantes y centros comerciales. En casas y hoteles se lee 卫生间 [HSK 3]; en la calle, 厕所 [HSK 6]. · En las puertas, 男 «hombres» y 女 «mujeres».
 - ✅🃏 下车 xià chē [ɕja˥˩ ʈʂʰɤ˥] · bajarse (de un vehículo) · _verbo_ · Palabra a palabra: 下 «bajar» + 车 «coche»: bajarse del taxi, del autobús o del tren. 我在这里下车 «me bajo aquí».
 - ✅🃏 医院 yīyuàn [i˥ ɥœn˥˩] · hospital · _sustantivo_ · 医 «medicina» + 院 «patio, recinto»; el mismo 医 de 医生.
+- ✅🃏 回国 huíguó [xweɪ˧˥ kwɔ˧˥] · volver a su país · _verbo_ · Palabra a palabra: 回 «volver» + 国 «país». Del país de quien habla: 他明年回国 «vuelve a su país el año que viene».
+- ✅🃏 留 liú [ljoʊ˧˥] · quedarse; dejar (algo para alguien) · _verbo_ · Quedarse en un sitio en vez de irse: 留在中国 «quedarse en China».
+- ✅🃏 地方 dìfang [ti˥˩ fɑŋ] · sitio, lugar · _sustantivo_ · Palabra a palabra: 地 «tierra» + 方 «lado»: un sitio. 这个地方很漂亮 «este sitio es muy bonito».
+- ✅🃏 路 lù [lu˥˩] · camino, calle · _sustantivo_ · 我认识路 «sé el camino». 路上 «por el camino».
 
 ## Aquí, allí, ¿dónde?
 
@@ -75,3 +79,7 @@ Misma sílaba, distinto tono: 我会回来 «volveré» lleva los dos.
 - ✅🃏 在这边，你跟我走吧。 · zài zhèbiān nǐ gēn wǒ zǒu ba · Está por aquí, ven conmigo.
 - ✅🃏 我在这里下车。 · wǒ zài zhèlǐ xià chē · Me bajo aquí.
 - ✅🃏 我的书在哪里？ · wǒ de shū zài nǎlǐ · ¿Dónde está mi libro?
+- ✅🃏 他明年回国。 · tā míngnián huíguó · El año que viene vuelve a su país.
+- ✅🃏 他想留在中国。 · tā xiǎng liú zài Zhōngguó · Quiere quedarse en China.
+- ✅🃏 这个地方很漂亮。 · zhè ge dìfang hěn piàoliang · Este sitio es muy bonito.
+- ✅🃏 我认识路。 · wǒ rènshi lù · Sé el camino.

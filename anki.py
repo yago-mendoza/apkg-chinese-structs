@@ -16,7 +16,7 @@ Uso:
     python anki.py close-batch <lote> [--dry-run]  archiva review leído y apuntes; cuaderno; commit y etiqueta
     python anki.py audio [--dry-run]
     python anki.py build [--allow-missing-audio]
-    python anki.py push [--allow-missing-audio] [--no-sync] [--prune] [--reset]
+    python anki.py push --phone-synced [--allow-missing-audio] [--no-sync] [--prune] [--reset]
 
 No llama a ningún LLM. `audio` usa la red (Azure Speech) y nunca repite audios
 ya guardados en 3-data/audio/. `push` compila, importa en Anki desktop (abriéndolo si
@@ -735,7 +735,10 @@ def required_cards(item, groups_of, tone_picks=frozenset(), eby=None):
     para cubrir las parejas de tonos (tone_pair_picks); `eby`, las entradas, para saber si una frase es una fórmula."""
     kind, mods, req = item.get("kind"), use_modalities(item), set()
     if kind is None:                                    # frase
-        if "hear" in mods and listen_challenge(item, eby or {}):
+        # Oír una frase que ya se practica para decir, solo si es de clase (YAGO, review 011): al girar la de decir ya
+        # suena, pero descifrarla sin saber qué dice es otro ejercicio, el de los dictados de la profesora.
+        if "hear" in mods and listen_challenge(item, eby or {}) and (
+                "say" not in mods or "listen" in item or (item.get("source") or {}).get("origin") in CLASS_ORIGINS):
             req.add("listen")
         if "say" in mods:
             req.add("produce")
@@ -2021,8 +2024,37 @@ def duplicate_ids(entries, sentences, exercises):
 ANSWER_MAX = 160                 # caracteres de la respuesta de un matiz o una situación: se contesta de cabeza
 
 
+SENTENCE_KINDS = {"formula", "example"}   # fórmula: se usa tal cual en una situación; ejemplo: enseña una palabra
+NULLABLE_KEYS = {"phonetic", "semantic", "type"}   # en hanzi.yaml, «la fuente no da ninguno»: vacías a propósito
+
+
+def split_values(obj, owner="", out=None):
+    """Valores que el YAML partió por una coma sin comillas dentro de llaves (`{meaning: hē, beber.}` deja «beber.»
+    como una clave vacía y el significado se pierde; lote 012): toda clave sin valor salvo las de `NULLABLE_KEYS`."""
+    out = [] if out is None else out
+    if isinstance(obj, dict):
+        owner = obj.get("id", owner) if isinstance(obj.get("id"), str) else owner
+        for k, v in obj.items():
+            if v is None and k not in NULLABLE_KEYS:
+                out.append((owner, k))
+            split_values(v, owner, out)
+    elif isinstance(obj, list):
+        for v in obj:
+            split_values(v, owner, out)
+    return out
+
+
 def validate(entries, sentences, exercises, require_audio=True):
     errors, warnings = [], []
+    for g in entries:
+        for t in g.get("timeline") or []:
+            if not (isinstance(t.get("from"), (int, float)) and isinstance(t.get("to"), (int, float))
+                    and 0 <= t["from"] < t["to"] <= 24):
+                errors.append(f"{g['id']}: timeline de {t.get('ref')}: from y to son horas, de 0 a 24, y from < to")
+            if t.get("ref") not in {e.get("id") for e in entries}:
+                errors.append(f"{g['id']}: timeline con una referencia rota «{t.get('ref')}»")
+    for owner, k in split_values(entries + sentences + exercises):
+        errors.append(f"{owner}: «{k}» quedó como clave vacía: un texto con coma dentro de {{…}} necesita comillas")
     # Un ID repetido va primero y solo (retrospectiva del lote 004): lo demás que diría check sería ruido derivado.
     dups = duplicate_ids(entries, sentences, exercises)
     if dups:
@@ -2084,6 +2116,12 @@ def validate(entries, sentences, exercises, require_audio=True):
             errors.append(f"{s['id']}: listen (true | false) decide a mano si oírla es un reto y necesita listen_reason")
         if not s.get("translation"):
             errors.append(f"{s['id']}: falta traducción")
+        if "kind" in s and s["kind"] not in SENTENCE_KINDS:
+            errors.append(f"{s['id']}: kind es formula (se usa tal cual en una situación) o example (enseña una palabra o "
+                          f"una estructura)")
+    # Fórmula o ejemplo (docs/design.md, «Datos»): en cuanto se clasifican, ninguna frase se queda sin decidir.
+    if any("kind" in s for s in sentences):
+        warnings += [f"{s['id']}: frase sin kind (formula o example)" for s in sentences if "kind" not in s]
     types = {"read", "listen", "tones", "cloze", "produce", "speak", "components", "contrast", "derive", "nuance",
              "pattern", "comprehension", "charsound", "compose"}
     seen = {}
@@ -2426,9 +2464,20 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .ch-memory { flex-basis: 100%; font-size: 14px; font-style: italic; color: var(--muted); }
 .ch-also { flex-basis: 100%; font-size: 13px; color: var(--muted); }
 .note--example { text-align: center; }
-.note--mnemonic { border-style: dashed; }
+.note--mnemonic { border: 1px dashed #c98a12; background: rgba(233,168,40,.10); }
+.timeline { margin: 8px 0 2px; }
+.tl-row { position: relative; height: 22px; }
+.tl-bar { position: absolute; top: 2px; height: 18px; line-height: 18px; border-radius: 9px; font-size: 13px; text-align: center; background: rgba(127,127,127,.18); white-space: nowrap; overflow: hidden; }
+.tl-bar.is-target { background: rgba(179,48,29,.25); font-weight: bold; }
+.tl-ticks { position: relative; height: 14px; font-size: 10px; opacity: .7; }
+.tl-ticks span { position: absolute; transform: translateX(-50%); }
+.nuance-words { margin-top: 10px; text-align: left; }
+.nuance-words .vs-row { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; padding: 4px 0; }
+.nuance-words .vs-row + .vs-row { border-top: 1px solid var(--line); }
+.note-body p { margin: 0; }
+.note-body p + p { margin-top: 6px; }
+.note--mnemonic h4::before { content: "🧠 "; }
 .note--connection { border-left: 4px solid #2a9d8f; background: rgba(42,157,143,.09); }
-.note--mnemonic .note-body { font-style: italic; }
 .note--teacher { border-left: 3px solid var(--lv); }
 .example + .example { margin-top: 14px; }
 .option { margin: 10px 0; }
@@ -2611,6 +2660,22 @@ def cue_repeats(cue, entry):
     return bool(py) and has(py) or len(first) > 2 and has(first)       # «no» es demasiado corto para contar
 
 
+def timeline_html(g, eby, targets=()):
+    """La franja horaria de un grupo (`timeline: [{ref, from, to}]`, en horas): una barra por palabra, colocada entre
+    las 5 y las 24, con la que se pregunta resaltada. Se ve de un vistazo dónde empieza y acaba cada parte del día."""
+    rows = g.get("timeline") or []
+    if not rows:
+        return ""
+    start, end = 5, 24
+    pct = lambda h: round(100 * (max(start, min(end, h)) - start) / (end - start), 1)
+    bars = "".join(
+        f'<div class="tl-row"><span class="tl-bar{" is-target" if t["ref"] in targets else ""}" '
+        f'style="left:{pct(t["from"])}%;width:{pct(t["to"]) - pct(t["from"])}%">'
+        f'{esc(eby[t["ref"]]["hanzi"])}</span></div>' for t in rows if t["ref"] in eby)
+    ticks = "".join(f'<span style="left:{pct(h)}%">{h}</span>' for h in (6, 9, 12, 14, 18, 24))
+    return f'<div class="timeline">{bars}<div class="tl-ticks">{ticks}</div></div>'
+
+
 def covered_groups_dropped(groups):
     """Los recuadros de una tarjeta, sin los que no añaden a nadie: un grupo cuyos miembros están todos en otro
     recuadro mayor o anterior (十 / 是 dentro de 是 / 试 / 十) contrastaría dos veces lo mismo."""
@@ -2753,6 +2818,16 @@ def card_fields(ex, eby, sby, manifest, media_files):
         meaning = ans.get("meaning")
         if ex["type"] == "nuance":                # una explicación con chino: cada trozo con su pinyin
             meaning = annotate_pinyin(meaning, eby, sby)
+            # Y cada palabra que compara, en su fila con su audio, todas igual (review 011: «faltan sonidos y las
+            # explicaciones de abajo no están equilibradas»).
+            rows = "".join(
+                f'<div class="vs-row"><b class="vs-hz">{esc(e["hanzi"])}</b><span class="vs-py">{esc(e.get("pinyin"))}</span>'
+                f'<span class="vs-gl">{esc((e.get("meaning") or {}).get(lang, ""))}</span>{sound(e["hanzi"], manifest, media_files)}</div>'
+                for t in ex.get("targets", []) if (e := eby.get(t)) and e.get("kind") in ("word", "expression", "character"))
+            if rows:
+                meaning = None
+                back = (f'<div class="meaning">{esc(annotate_pinyin(ans.get("meaning"), eby, sby))}</div>'
+                        f'<div class="nuance-words">{rows}</div>')
     if meaning:
         back += f'<div class="meaning">{esc(meaning)}</div>'
     if prompt.get("options") and ans.get("choice") in CHOICE_LETTERS:
@@ -2824,7 +2899,12 @@ def card_fields(ex, eby, sby, manifest, media_files):
                 rows += partner_html
                 partner_ref = None
             rows += "</div>"
-        add(4, f"<h4>{esc(g.get('title'))}</h4>{esc(g.get('explanation'))}{rows}")
+        add(4, f"<h4>{esc(g.get('title'))}</h4>{esc(g.get('explanation'))}{rows}{timeline_html(g, eby, targets)}")
+    # Una franja (review 011: «mini diagramas que ayuden a entender», con 早上 y 上午): también en las tarjetas de
+    # una palabra de la franja cuyo grupo no sale en la tarjeta.
+    for g in eby.values():
+        if g.get("timeline") and g not in shown_groups and targets & {t["ref"] for t in g["timeline"]}                 and ex["type"] != "contrast":
+            add(4, f"<h4>{esc(g.get('title'))}</h4>{timeline_html(g, eby, targets)}")
     for tid in note_targets:
         t = eby.get(tid, {})
         st = char_status(t)
@@ -2866,11 +2946,14 @@ def card_fields(ex, eby, sby, manifest, media_files):
     # Sus caracteres: de qué está hecho cada hanzi de la palabra que se responde (tipo, qué pieza da el significado y
     # cuál el sonido), de 3-data/hanzi.yaml y sources/hanzi. Solo en tarjetas de palabras, nunca en las de frases.
     shown_hz = (prompt.get("hanzi") if ex["type"] == "charsound"            # el hanzi suelto, no su primera palabra
+                else "" if ex["type"] == "nuance"                            # un matiz compara: no solo la primera
                 else first.get("hanzi") if not sent and first.get("kind") in ("word", "character", "expression") else "")
     # Lo que una entrada de la tarjeta ya explica de un carácter (需要 y 要 juntos: la imagen propia de 要) no se repite.
     own = lambda kind: {ch for t in note_targets for ch in memory_chars(eby.get(t, {}).get("hanzi"),
                                                                          eby.get(t, {}).get("comments", []), kind)}
-    chars_html = character_lines(shown_hz, lang, list(eby.values()), card_lv, own_memory=own("mnemonic"),
+    spread = spread_mnemonics(ex, eby, sby, note_targets)
+    chars_html = character_lines(shown_hz, lang, list(eby.values()), card_lv,
+                                 own_memory=own("mnemonic") | {hz for hz, _, _ in spread if len(hz) == 1},
                                  own_origin=own("character"),
                                  reading=ans.get("pinyin") if ex["type"] == "charsound" else first.get("pinyin"))
     if chars_html:
@@ -2882,13 +2965,41 @@ def card_fields(ex, eby, sby, manifest, media_files):
     # Comentarios: solo los marcados private: false (del ejercicio y de sus objetivos).
     comments = list(ex.get("comments", []))
     for tid in note_targets:
-        comments += eby.get(tid, {}).get("comments", [])
-    labels = {"mnemonic": "Mnemotecnia · imagen para recordar, no su origen", "teacher": "En clase", "linguistic": "Nota", "note": "Apunte",
-              "character": "El carácter",
-              "sound": "Cómo suena"}
+        # Un matiz ya es la comparación: de sus palabras, solo lo de clase y las imágenes para recordar, no las notas
+        # de una sola de ellas, que desequilibran (早上 traía dos y 明天 ninguna).
+        comments += [c for c in eby.get(tid, {}).get("comments", [])
+                     if ex["type"] != "nuance" or c.get("kind") in ("teacher", "mnemonic")]
+    labels = {"mnemonic": "Mnemotecnia", "teacher": "En clase", "linguistic": "Nota", "note": "Apunte",
+              "character": "El carácter", "sound": "Cómo suena"}
+    # Cada bloque en su sitio, siempre el mismo (review 011: «los bloques se apilan sin orden ni concierto»): lo de
+    # clase, luego la imagen para recordar, cómo suena y las notas; el análisis del carácter, junto a sus caracteres.
+    rank = {"teacher": 3.0, "mnemonic": 3.1, "sound": 3.2, "linguistic": 3.3, "note": 3.4, "character": 5.9}
+    # La teoría de pronunciación no sale en las tarjetas (docs/goal.md): de una entrada p., solo sus pistas de sonido.
+    ptheory = {id(c) for t in note_targets if t.startswith("p.") for c in eby.get(t, {}).get("comments", [])
+               if c.get("kind") != "sound"}
+    word_of = {id(c): eby[t].get("hanzi") for t in note_targets if t in eby for c in eby[t].get("comments", [])}
+    # Las notas de una misma entrada, en un solo bloque (review 011: «no dos NOTA, debería ser una única»), con
+    # «Palabra a palabra» delante: primero qué dice por dentro, luego cómo se usa.
+    merged = {}
     for c in comments:
-        if c.get("private", True) is False:
-            add(3, f"<h4>{labels.get(c.get('kind'), 'Comentario')}</h4>{esc(c.get('text'))}")
+        if c.get("private", True) is False and c.get("kind") == "linguistic" and id(c) not in ptheory:
+            merged.setdefault(word_of.get(id(c), ""), []).append(c.get("text", ""))
+    for texts in merged.values():
+        texts.sort(key=lambda t: not t.startswith("Palabra a palabra"))
+        add(rank["linguistic"], "<h4>Nota</h4>" + "".join(f"<p>{esc(t)}</p>" for t in texts))
+    for c in comments:
+        if c.get("kind") == "linguistic":
+            continue
+        if c.get("private", True) is False and id(c) not in ptheory:
+            head = labels.get(c.get("kind"), "Comentario")
+            if c.get("kind") == "mnemonic":
+                hz = word_of.get(id(c)) or ans.get("hanzi") or ""
+                head = f"Mnemotecnia · {hz} · imagen para recordar, no su origen" if hz else head + " · imagen para recordar, no su origen"
+            add(rank.get(c.get("kind"), 3.5), f"<h4>{esc(head)}</h4>{esc(c.get('text'))}")
+    # Las mnemotecnias de las palabras que salen en la tarjeta sin ser su objetivo (review 011: «tus mnemotecnias,
+    # en todas partes»): en una frase, las de sus palabras; en una palabra, las de sus caracteres.
+    for hz, py, text in spread:
+        add(3.15, f"<h4>{esc(f'Mnemotecnia · {hz} {py} · imagen para recordar, no su origen')}</h4>{esc(text)}")
 
     typed = ans.get("typed", "")
     # Lo esperado para comparar lo escrito: tecleadas y frases para decir (en estas, escribir es opcional).
@@ -2906,6 +3017,40 @@ def card_fields(ex, eby, sby, manifest, media_files):
             "back": tone_color(back), "answer_audio": answer_audio,
             "notes": tone_color(f'<div class="box">{"".join(note_section(n) for *_, n in sorted(notes))}</div>')
             if notes else ""}
+
+
+SPREAD_MAX = 3   # mnemotecnias de otras palabras en una tarjeta, como mucho
+
+
+def spread_mnemonics(ex, eby, sby, shown):
+    """[(hanzi, pinyin, texto)]: las mnemotecnias del que aprende (comentarios `mnemonic` públicos) de lo que aparece
+    en la tarjeta sin ser su objetivo: en una frase, sus palabras; en una palabra de varios hanzi, sus caracteres
+    (como palabra suelta o como carácter). Sin las de los objetivos (`shown`, ya salen) y sin repetir hanzi."""
+    if ex.get("type") in ("charsound", "nuance", "contrast", "pattern"):
+        return []
+    sids = [ex["sentence"]] if ex.get("sentence") in sby else []
+    sids += [t for t in ex.get("targets", []) if t in sby and t not in sids]
+    refs = [seg["ref"] for sid in sids for seg in sby[sid].get("segments", []) if seg.get("ref")]
+    by_hz = {}
+    for e in eby.values():
+        if len(e.get("hanzi") or "") == 1 and e.get("kind") in ("word", "character"):
+            by_hz.setdefault(e["hanzi"], []).append(e)
+    for t in ex.get("targets", []):
+        hz = (eby.get(t) or {}).get("hanzi") or ""
+        if len(hz) > 1:
+            refs += [e["id"] for ch in hz for e in by_hz.get(ch, [])]
+    shown_hz = {(eby.get(t) or {}).get("hanzi") for t in shown}
+    out, seen = [], set()
+    for r in refs:
+        e = eby.get(r) or {}
+        if r in shown or e.get("hanzi") in seen or e.get("hanzi") in shown_hz:
+            continue
+        for c in e.get("comments", []):
+            if c.get("kind") == "mnemonic" and c.get("private", True) is False:
+                out.append((e["hanzi"], e.get("pinyin", ""), c.get("text", "")))
+                seen.add(e["hanzi"])
+                break
+    return out[:SPREAD_MAX]
 
 
 NOTE_KIND = (("ejemplo", "example"), ("mnemotecnia", "mnemonic"), ("en clase", "teacher"), ("cómo suena", "sound"),
@@ -3619,7 +3764,8 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
                       "pinyin": sentence_pinyin(x),
                       "segments": [{"text": g["text"], "ref": g.get("ref"), "pinyin": g.get("pinyin")}
                                    for g in x.get("segments", [])],
-                      "translation": x.get("translation") or {}, "audio": audio(sentence_text(x))}
+                      "translation": x.get("translation") or {}, "audio": audio(sentence_text(x)),
+                      "kind": x.get("kind")}
                      for x in sentences if x.get("use") != "drop"]
     def card_level(x):
         return level_of((x.get("targets") or [None])[0], eby, sby, levels)
@@ -3918,8 +4064,10 @@ def new_card_order(entries, sentences, exercises, pending=None):
     # Lo de clase, antes que nada y sea del nivel que sea (YAGO, review 010): de la primera clase a la última, y
     # dentro de cada clase, mezclado como el resto. Después, lo demás, nivel a nivel.
     dates = {ex["id"]: class_date(ex, eby, sby) for ex in exercises}
-    order = []
-    for day in sorted({d for d in dates.values() if d}):
+    order, days = [], sorted({d for d in dates.values() if d})
+    # La última clase, delante de todo; detrás, lo atrasado, de la primera clase a la última (YAGO, review 011: cada
+    # clase trae más de lo que estudia en una semana, y en orden cronológico lo último quedaría cada vez más lejos).
+    for day in days[-1:] + days[:-1]:
         order += interleave_streams([ex for ex in exercises if dates[ex["id"]] == day], key)
     by_level = {}
     for ex in exercises:
@@ -3939,6 +4087,9 @@ def class_date(ex, eby, sby):
     found = [str((it.get("source") or {}).get("date") or (it.get("source") or {}).get("batch", "")[4:14])
              for t in ex.get("targets", []) if (it := eby.get(t) or sby.get(t))
              and (it.get("source") or {}).get("origin") in CLASS_ORIGINS]
+    # Lo que no es de clase pero va muy ligado a algo de una clase (lo pidió YAGO en el review), sale con esa clase.
+    found += [str(it["source"]["with_class"]) for t in ex.get("targets", []) if (it := eby.get(t) or sby.get(t))
+              and (it.get("source") or {}).get("with_class")]
     return min(found) if found else None
 
 
@@ -4180,6 +4331,17 @@ def orphans(exercises, prune, force=False):
             and n["fields"]["ExerciseID"]["value"] not in ids]
     for n in lost:
         print(f"  huérfana: {n['fields']['ExerciseID']['value']}")
+    # Una huérfana con repasos de verdad en el historial no se borra nunca sola, aunque hoy parezca nueva: pudo perder su
+    # progreso al sincronizar (lote 012: 请问你叫什么名字 parecía sin estudiar y tenía dos repasos). Se avisa y se queda.
+    if lost and prune:
+        cards = {c: n["noteId"] for n in lost for c in n.get("cards", [n["noteId"]])}
+        revs = anki_request("getReviewsOfCards", cards=list(cards)) or {}
+        studied = {cards[int(c)] for c, rs in revs.items() if any(r.get("type") in (0, 1, 2, 3) and r.get("ease", 0) > 0
+                                                                  for r in rs or [])}
+        for n in lost:
+            if n["noteId"] in studied:
+                print(f"  con repasos en el historial, no se borra: {n['fields']['ExerciseID']['value']}")
+        lost = [n for n in lost if n["noteId"] not in studied]
     if lost and prune and len(lost) > PRUNE_MAX and not force:
         print(f"{len(lost)} huérfanas son muchas (más de {PRUNE_MAX}): no borro nada. Si es intencionado, repetir con "
               "--prune --force. Si no, algo ha cambiado IDs: revisar `check` antes.")
@@ -4190,9 +4352,16 @@ def orphans(exercises, prune, force=False):
         print(f"{len(lost)} nota(s) del mazo ya no existen en 3-data/. Revisar y repetir con --prune para borrarlas.")
 
 
-def cmd_push(allow_missing_audio, sync, prune=False, reset=False, force=False):
+def cmd_push(allow_missing_audio, sync, prune=False, reset=False, force=False, phone_synced=False):
     import subprocess
     import time
+    if not phone_synced:
+        # Lo estudiado en el móvil sin sincronizar se pierde si se sube antes (docs/owner.md, «Sincronizar sin perder
+        # nada»): 95 tarjetas del 1 al 8 de octubre y 47 del 11 al 15. Sincronizar aquí no baja lo que el móvil no
+        # subió, así que hace falta que YAGO lo confirme.
+        print("Antes de subir, YAGO tiene que sincronizar el móvil y confirmarlo. Con su «ya», repetir con "
+              "--phone-synced.")
+        return 1
     if reset and not TESTING_PHASE and not force:
         print("La fase de pruebas está cerrada (docs/owner.md): el progreso ya no se reinicia. Si de verdad hay "
               "que hacerlo, que lo pida YAGO y repetir con --force.")
@@ -4329,7 +4498,7 @@ CARDS_CAP_SINCE = "2026-10-09"  # la regla frena lo que entra desde entonces; lo
 # Oír, menos y más difícil (YAGO, review 010): ahora toca aprender palabras y sus hanzi; las de oír, retos.
 SKILL_TARGETS = {"oír": (1 / 4, None), "decir": (1 / 4, None), "leer": (None, 1 / 3), "otros": (None, 1 / 4)}
 UPCOMING_NEW = 400              # nuevas próximas sobre las que se mide la mezcla: lo que va a estudiar, no el mazo
-STUDY_PACE = 20                 # nuevas que abre al día de verdad (docs/owner.md); el límite de Anki es NEW_PER_DAY
+STUDY_PACE = 30                 # nuevas que abre al día de verdad (docs/owner.md); el límite de Anki es NEW_PER_DAY
 QUEUE_DAYS_MAX = 21             # días de nuevas de su nivel en cola: por encima, aviso
 BALANCE_DAYS = 14               # periodo de la carga diaria
 
@@ -4565,6 +4734,7 @@ def main():
     u = sub.add_parser("push")
     u.add_argument("--allow-missing-audio", action="store_true")
     u.add_argument("--no-sync", action="store_true")
+    u.add_argument("--phone-synced", action="store_true", help="YAGO confirmó que el móvil está sincronizado")
     u.add_argument("--prune", action="store_true", help="borrar notas del mazo cuyo ejercicio ya no existe")
     u.add_argument("--reset", action="store_true", help="fase de pruebas: todo el mazo vuelve a nuevas, sin progreso")
     u.add_argument("--force", action="store_true", help=f"con --prune, borrar aunque haya más de {PRUNE_MAX} huérfanas; con --reset, reiniciar aunque la fase de pruebas esté cerrada")
@@ -4610,7 +4780,8 @@ def run(args):
     if args.cmd == "audio":
         return cmd_audio(args.dry_run)
     if args.cmd == "push":
-        return cmd_push(args.allow_missing_audio, not args.no_sync, args.prune, args.reset, args.force)
+        return cmd_push(args.allow_missing_audio, not args.no_sync, args.prune, args.reset, args.force,
+                        args.phone_synced)
     if args.cmd == "plan":
         return cmd_plan(args.doc)
     if args.cmd == "notebook":

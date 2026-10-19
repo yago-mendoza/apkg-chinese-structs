@@ -56,3 +56,4 @@ La misma sílaba: 吗 es átona y cierra preguntas; 马 baja y sube. 马 da adem
 - ✅🃏 我的属相是兔。 · wǒ de shǔxiang shì tù · Mi signo es el conejo.
 - ✅🃏 他属狗。 · tā shǔ gǒu · Es del año del perro.
 - ✅🃏 您属什么？ · nín shǔ shénme · ¿De qué signo es usted?
+- ✅🃏 你有猫吗？ · nǐ yǒu māo ma · ¿Tienes gato?

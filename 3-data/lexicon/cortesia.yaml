@@ -107,6 +107,9 @@ entries:
     level_reason: 'muletilla oral de asentimiento, muy frecuente al hablar'
     accept_pinyin_mismatch: 'como asentimiento se dice cayendo, èn; pypinyin da ń, la lectura de «¿eh?»'
     source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-19', text: 'Una boca 口 junto a un corazón 心 con alguien dentro: el «mm» de quien escucha sin decir nada; según el tono, sí, extrañeza o «me da igual».', original: 'El èn es lit 嗯 tipo boca y corazon y un palitroque de una persona tipo el inocente que te deja como, mm, sabes, indiferente etre extañado t te da igual'}
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Repetido, 嗯嗯 es el «ajá, ajá» de quien sigue la conversación; dicho seco, puede sonar a indiferencia.'}
   - id: w.keyi
     use: say
     role: content
@@ -114,6 +117,7 @@ entries:
     hanzi: 可以
     pinyin: kěyǐ
     meaning: {es: 'poder (está permitido); vale, sirve', en: 'can, may; OK'}
+    accept_cards: '会, 能 y 可以 con el mismo verbo, la confusión central de su examen del review 011'
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: note, private: false, date: '2026-09-29', text: 'También sirve de «vale», como 好的.', original: kê yî = okay (like ke ài) (its liek phnetical calco)}
@@ -206,6 +210,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Con la persona detrás: 帮我 «ayúdame». Es la forma corriente al hablar.'}
+      - {kind: mnemonic, private: false, date: '2026-10-19', text: 'Una ciudad 阝 tan próspera 丰 que reparte telas 巾 a quien las necesita: eso es ayudar.', original: '«Una ciudad tan abundante y próspera que reparte telas entre quienes las necesitan para AYUDARLOS».'}
   - id: w.bangmang
     use: hear
     role: content
@@ -456,7 +461,7 @@ entries:
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-09', text: 我的错 «culpa mía» asume la culpa; 我错了 «me he equivocado» reconoce un error.}
-      - {kind: linguistic, private: false, date: '2026-10-09', text: 'Palabra a palabra: 我的 «mi» + 错 «error»: «mi error».'}
+      - {kind: linguistic, private: false, date: '2026-10-09', text: 'Palabra a palabra: 我的 «mi» + 错 «error»: «mi error», que es como se dice «culpa mía» en chino.'}
   - id: e.shaodeng
     use: say
     role: content
@@ -494,3 +499,35 @@ entries:
       - {ref: e.buyongxie, cue: 'responde a 谢谢, igual que 不客气'}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments: []
+  - id: w.yinggai
+    use: say
+    role: function
+    kind: word
+    hanzi: 应该
+    pinyin: yīnggāi
+    meaning: {es: deber (lo que toca hacer); seguramente, en: should; probably}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Dos usos: lo que toca, 你应该休息 «deberías descansar»; y lo que se cree, 应该是 «seguramente sí». Para una obligación de verdad, 得 děi.'}
+      - {kind: character, private: false, date: '2026-10-19', text: '该 gāi y 孩 hái llevan 亥 hài, que les da el sonido: -ai en los tres.'}
+  - id: w.buyong
+    use: say
+    role: function
+    kind: word
+    hanzi: 不用
+    pinyin: búyòng
+    meaning: {es: 'no hace falta', en: 'no need'}
+    accept_pinyin_mismatch: '不 delante de cuarto tono se dice bú: búyòng'
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: '不用谢 «de nada» (no hace falta dar las gracias); 不用了 «no, gracias, no hace falta».'}
+  - id: e.meishenme
+    use: say
+    role: content
+    kind: expression
+    hanzi: 没什么
+    pinyin: méi shénme
+    meaning: {es: 'no es nada; no pasa nada', en: 'it''s nothing'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 没 «no hay» + 什么 «nada»: «no hay nada». Ante un 谢谢 o una pregunta preocupada.'}
