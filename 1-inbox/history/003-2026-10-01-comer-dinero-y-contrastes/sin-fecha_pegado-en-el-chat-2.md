@@ -103,7 +103,7 @@ ni wei shen me zhe me gao - why are u so tall!
 
 ves ¿? lengauje faiclito pero confomra nua mini lectura consisnte coehrente sabes ¿? esot es desable para mia prendijzae nvez de solamente puras sueltas sabe.s que uselas esta bine pero al o mejro tmainbe puedes calibrar algorimatcete para que lal ongitud de ... bueno nsoe, exceisvo hacer esto algraimtico pero acordarte de que quiero tb de vez nenucado ver esto, tendras que fomrarlo quizas. MINI MINI dialgoso o letcuritas o idalgos de uno sabes monoglos mini. ESO ES MONOLOGUILLOS OCAISONALES. Asjtate en isntruccion cómo enforcearlo sin romper nada de lequilibior, nose si como prpecntaje si como solo un consejo ocaisonal si ... loque cosnideres pero preimo relfeixona cuan realmente va eso a mejorar poartamre ne mi rendemiento de parendiajje
 
-ni de tou hao xiao a! (algo asi pero mas util para ligar por ejemplo no eso tan raro)
+ni de tou hao xiao a!
 ni de ge bo hao chang a! esto si
 ni de tui ye hao chang a!
 
