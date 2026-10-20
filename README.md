@@ -38,7 +38,7 @@ I built this for my own Mandarin, so the repository ships with a real, working e
 ## How it works
 
 <p align="center">
-  <img src="docs/assets/deck-pipeline.webp" alt="One batch drawn over the repository: you drop notes in 1-inbox and ask the agent to process them; the agent writes 3-data, the log and the review; anki.py plans, checks, synthesizes audio with Azure and exports; close-batch archives and tags; the deck goes to Anki and AnkiWeb, and GitHub, jsDelivr and infraphysics.net publish the dictionary">
+  <img src="docs/assets/deck-pipeline.webp" alt="One batch as a loop: your notes go into 1-inbox; the agent reads AGENTS.md, goal.md and design.md; it writes the data (lexicon, sentences, exercises, hanzi) and goes back and forth with anki.py check until it is clean; Azure gives the new text a voice; the deck reaches Anki and your phone; the review you answer goes back into the inbox for the next batch, and GitHub publishes to infraphysics.net">
 </p>
 
 **`1-inbox/`: where you write.** Notes exactly as they come out: phone notes, transcribed photos, half-finished lists, questions. The only thing that helps is the date you wrote each thing down. The agent's review lands here too, with a line under each point for your answer.
@@ -53,7 +53,7 @@ I built this for my own Mandarin, so the repository ships with a real, working e
 
 **`5-output/`: what comes out.** The compiled deck (`.apkg`, downloadable) and the public export (`dictionary.json`: entries, sentences, every card as Anki renders it, and the day-by-day history of the deck) behind [infraphysics.net/side-quests/chinese](https://infraphysics.net/side-quests/chinese).
 
-**Batches.** A batch is whatever is in the inbox when you ask; how often is up to you. One a week is a good habit, since the review then arrives in time for your next class, but nothing depends on it: small batches give you feedback sooner, large ones let the agent see more at once. The structure is never frozen: every batch, themes and groups are revisited and reorganized when needed, without losing your progress.
+**Batches.** A batch is whatever is in the inbox when you ask; how often is up to you, with no fixed rhythm (asking right after a class means the review arrives before the next one): small batches give you feedback sooner, large ones let the agent see more at once. The structure is never frozen: every batch, themes and groups are revisited and reorganized when needed, without losing your progress.
 
 **Nothing drifts out of sync.** `3-data/` is the single source of truth; the notebook, the deck and the dictionary are generated from it. `anki.py check` validates every change before it reaches Anki, and every closed batch is committed and tagged, so any earlier state can be recovered.
 
@@ -114,7 +114,7 @@ Then, for each batch:
 2. Open a coding agent in the repository and ask it to *process the inbox*.
 3. Answer the review it leaves in `1-inbox/` whenever you like; your answers go into the next batch.
 
-The agent pushes the deck itself. To do it by hand:
+The agent pushes the deck itself, but only after you confirm your phone has synced; if you are not there, it leaves the deck ready and says so. To do it by hand:
 
 ```powershell
 .\.venv\Scripts\python anki.py audio   # synthesize only the missing audio
@@ -155,7 +155,7 @@ The agent pushes the deck itself. To do it by hand:
 - `tools/history.py`: what each batch did to every entry, sentence and exercise, from git; `close-batch` writes it to `records/history.json`.
 - `tools/class_audio.py`: transcribes a class recording dropped in `1-inbox/` (local Whisper large-v3, chosen because it is the most accurate Whisper model for Chinese; the teacher's voice told apart from yours) into `private/`, as context for the batch. Separate environment: `tools/requirements-audio.txt`.
 
-**Commands** (mostly for the agent): `lookup <term>`, `hanzi <characters>` (pieces, sound and meaning of each character), `plan` (missing cards), `scaffold` (writes them in the standard format), `gaps` (how the deck is distributed), `stats` (what you fail in Anki, read-only), `retro` (the process review every 4 batches), `check`, `notebook`, `build`, `export` (the public dictionary), `close-batch <batch>` (archive, commit and tag), `audio`, `push`. `push` refuses to run until you confirm your phone has synced (`--phone-synced`), so what you studied on the phone is never overwritten. `push --prune` removes cards whose exercise no longer exists (it lists them first, requires `--force` if there are many and never deletes a card with real reviews in its history); `push --reset` returns the whole deck to new, with no progress; once the testing phase is over (`TESTING_PHASE`) it refuses without `--force`. Tests: `.\.venv\Scripts\python -m unittest discover -s tests`, including a simulated AnkiConnect that checks nothing outside this deck is ever moved, deleted or reconfigured. GitHub Actions runs `check` and the tests on every push.
+**Commands** (mostly for the agent): `lookup <term>`, `hanzi <characters>` (pieces, sound and meaning of each character), `plan` (missing cards), `scaffold` (writes them in the standard format), `gaps` (how the deck is distributed), `stats` (what you fail in Anki, read-only), `retro` (the process review every 4 batches), `check`, `notebook`, `build`, `export` (the public dictionary), `close-batch <batch>` (archive, commit and tag), `materials` (class materials no batch has read yet), `attic <batch>` (what wakes up from the attic), `audio`, `push`. `push` refuses to run until you confirm your phone has synced (`--phone-synced`), so what you studied on the phone is never overwritten. `push --prune` removes cards whose exercise no longer exists (it lists them first, requires `--force` if there are many and never deletes a card with real reviews in its history); `push --reset` returns the whole deck to new, with no progress; once the testing phase is over (`TESTING_PHASE`) it refuses without `--force`. Tests: `.\.venv\Scripts\python -m unittest discover -s tests`, including a simulated AnkiConnect that checks nothing outside this deck is ever moved, deleted or reconfigured. GitHub Actions runs `check` and the tests on every push.
 
 **External lists.** Your notes and your goal decide what goes in. The HSK 3.0 word list (`sources/hsk/`, from [drkameleon/complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary), MIT) orders items by level and shows gaps; it is never imported wholesale. Course books and character references that cannot be redistributed are consulted locally only: nothing in the repository depends on them or copies from them.
 

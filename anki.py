@@ -4025,6 +4025,10 @@ def write_history(batch=None):
     return mod.write_records(local_label=batch)
 
 
+# Folders whose new files a batch commit may add (close-batch); everything else must already be tracked.
+BATCH_COMMIT_PATHS = ("1-inbox/history", "2-digests", "3-data", "4-notebook", "5-output", "records", "docs")
+
+
 def cmd_close_batch(batch, dry_run):
     """Cierra un lote: archiva el review leído y los apuntes, regenera el cuaderno, commit y etiqueta lote-NNN.
     El log del lote ya está en 2-digests/ (lo escribe el agente al procesar)."""
@@ -4051,8 +4055,11 @@ def cmd_close_batch(batch, dry_run):
     cmd_notebook()
     cmd_export()
     write_history(batch)
-    _git("add", "-A")
-    _git("commit", "-q", "-m", f"lote {batch}\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>")
+    # Never `git add -A` (AGENTS.md): tracked changes anywhere, new files only inside the pipeline folders,
+    # so a stray file at the root never rides along in the batch commit.
+    _git("add", "-u")
+    _git("add", "-A", "--", *[p for p in BATCH_COMMIT_PATHS if (ROOT / p).exists()])
+    _git("commit", "-q", "-m", f"lote {batch}\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>")
     tag = f"lote-{batch[:3]}"
     _git("tag", "-a", tag, "-m", f"Lote {batch}: estado tras procesarlo")
     print(f"Lote cerrado: commit y etiqueta {tag}. Subir a GitHub: git push && git push origin {tag}")

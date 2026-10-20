@@ -34,7 +34,7 @@ Todo el audio se generó en el nivel de pago S0. Motivo: según las condiciones 
 
 ### 2026-09-27 · Ritmo de estudio
 
-20 nuevas y 300 repasos al día como máximo (primero fueron 30; 15 se quedaba corto). Un lote por semana como costumbre, sin obligación. Fijado por `push`, nunca a mano en Anki. Vive en: `docs/owner.md`, `anki.py` (`NEW_PER_DAY`, `REVIEWS_PER_DAY`).
+20 nuevas y 300 repasos al día como máximo (primero fueron 30; 15 se quedaba corto). Un lote por semana como costumbre, sin obligación. Fijado por `push`, nunca a mano en Anki. Vive en: `docs/owner.md`, `anki.py` (`NEW_PER_DAY`, `REVIEWS_PER_DAY`). (revocada: 2026-10-19)
 
 ### 2026-09-27 · Fase de pruebas
 
@@ -114,7 +114,7 @@ Una grabación se transcribe en local (Whisper large-v3, el más preciso para ch
 
 ### 2026-10-01 · Nada de producción libre
 
-Las tarjetas «di una frase con esta estructura» se retiraron: obligaban a inventar sin modelo y no educaban. Cada estructura se practica oponiendo la frase buena a un calco erróneo. Vive en: `docs/goal.md`, `docs/design.md` («Gramática»).
+Las tarjetas «di una frase con esta estructura» se retiraron: obligaban a inventar sin modelo y no educaban. Cada estructura se practica oponiendo la frase buena a un calco erróneo. Vive en: `docs/goal.md`, `docs/design.md` («Gramática»). (revocada: 2026-10-11)
 
 ### 2026-10-01 · Sonar natural y solo mandarín estándar
 
@@ -166,7 +166,7 @@ YAGO cierra la fase de pruebas: desde hoy el progreso de Anki se conserva siempr
 
 ### 2026-10-01 · 30 nuevas al día
 
-Con 1.088 nuevas pendientes (unos 54 días a 20 al día), YAGO sube a 30 nuevas al día; los repasos siguen con un máximo de 300. A ritmo estable son unos 150 a 240 repasos al día, unos 40 minutos. Sigue valiendo el criterio de volumen: los próximos lotes, más ligeros. Vive en: `docs/owner.md`, `anki.py` (`NEW_PER_DAY`).
+Con 1.088 nuevas pendientes (unos 54 días a 20 al día), YAGO sube a 30 nuevas al día; los repasos siguen con un máximo de 300. A ritmo estable son unos 150 a 240 repasos al día, unos 40 minutos. Sigue valiendo el criterio de volumen: los próximos lotes, más ligeros. Vive en: `docs/owner.md`, `anki.py` (`NEW_PER_DAY`). (revocada: 2026-10-16)
 
 ### 2026-10-02 · Lo fallado vuelve en minutos
 
@@ -178,7 +178,7 @@ YAGO vio salir 大家 (HSK 2) entre las primeras. Las posiciones estaban bien ca
 
 ### 2026-10-02 · Rutina de YAGO
 
-Clases martes y jueves; de 20 a 40 minutos al día, hasta hora y media algunos días; puede hablar en voz alta siempre. Los lotes, mejor justo después de clase, dos a la semana y ligeros. Vive en: `docs/goal.md` («Quién aprende»).
+Clases martes y jueves; de 20 a 40 minutos al día, hasta hora y media algunos días; puede hablar en voz alta siempre. Los lotes, mejor justo después de clase, dos a la semana y ligeros. Vive en: `docs/goal.md` («Quién aprende»). (revocada en parte, el ritmo de lotes: 2026-10-19)
 
 ### 2026-10-02 · Más comprensión lectora y parejas de tonos
 
@@ -216,11 +216,11 @@ YAGO preguntó si el mazo inventa mnemotecnias propias para los hanzi difíciles
 
 ### 2026-10-06 · Una app para revisar, y la historia por lotes
 
-YAGO quería ver cómo va todo a la vez: abrir las tarjetas del mazo, saber qué entrada respalda cada una y cuándo cambió qué. Como el repositorio trabaja por lotes explícitos (lo que entra en la bandeja se procesa de golpe), el eje del tiempo son los lotes y los ajustes entre lotes, no las horas. La historia no se guarda: sale de git cada vez, porque git ya la tiene entera. Lo único que se guarda es lo que solo YAGO sabe (su visto bueno, sus pedidos), en `records/`, versionado: YAGO lo quiso visible en el repositorio aunque sea público. Las relaciones entre elementos (qué provocó el cambio o el nacimiento de qué) se deducen de los datos donde se puede (una tarjeta nace de su entrada) y se apuntan al atender un pedido; no se inventan.
+YAGO quería ver cómo va todo a la vez: abrir las tarjetas del mazo, saber qué entrada respalda cada una y cuándo cambió qué. Como el repositorio trabaja por lotes explícitos (lo que entra en la bandeja se procesa de golpe), el eje del tiempo son los lotes y los ajustes entre lotes, no las horas. La historia no se guarda: sale de git cada vez, porque git ya la tiene entera. Lo único que se guarda es lo que solo YAGO sabe (su visto bueno, sus pedidos), en `records/`, versionado: YAGO lo quiso visible en el repositorio aunque sea público. Las relaciones entre elementos (qué provocó el cambio o el nacimiento de qué) se deducen de los datos donde se puede (una tarjeta nace de su entrada) y se apuntan al atender un pedido; no se inventan. (revocada en parte, la app de revisión: 2026-10-06)
 
 ### 2026-10-06 · Materiales de clase, cuaderno de deberes y a qué nivel se arregla
 
-YAGO pidió que cada lote revise la carpeta de materiales de clase, recuerde qué se procesó y resuelva los ejercicios para sacar de las soluciones frases y vocabulario; un documento fijo en el inbox para lo que anota al hacer los deberes; y que ante cada sugerencia se busque el nivel del arreglo (una nota, cómo se muestra, el tipo de tarjeta y, casi nunca, el esquema, sin romper el cuaderno web). Además, `close-batch` comprueba ahora los nombres privados antes de archivar: en el lote 005 los comprobaba después y uno llegó al commit. Vive en: `docs/design.md` («Flujo de un lote»), `anki.py` (`materials`, `HOMEWORK`, `close_batch_plan`), `1-inbox/README.md`.
+YAGO pidió que cada lote revise la carpeta de materiales de clase, recuerde qué se procesó y resuelva los ejercicios para sacar de las soluciones frases y vocabulario; un documento fijo en el inbox para lo que anota al hacer los deberes; y que ante cada sugerencia se busque el nivel del arreglo (una nota, cómo se muestra, el tipo de tarjeta y, casi nunca, el esquema, sin romper el cuaderno web). Además, `close-batch` comprueba ahora los nombres privados antes de archivar: en el lote 005 los comprobaba después y uno llegó al commit. Vive en: `docs/design.md` («Flujo de un lote»), `anki.py` (`materials`, `HOMEWORK`, `close_batch_plan`), `1-inbox/README.md`. (revocada en parte, el cuaderno de deberes: 2026-10-10)
 
 ### 2026-10-06 · Hanzi sueltos con su sílaba
 
@@ -342,3 +342,6 @@ Al revisar las directrices tras el lote 012, YAGO aceptó una pasada de limpieza
 
 Las tres reglas que dejó para él la limpieza de las directrices. **Tarjetas**: «literalmente cualquier tarjeta que veas que es útil para mí, créala, sin intentar ser parco… me ayudas mucho». La regla decía que los extras de una palabra solo entraban con un motivo visto y que el matiz lo pedía él. Decidido: el agente crea toda tarjeta que vea útil (contrastes, matices, huecos, construir, oír las dos) sin esperar a que la pida, y cuenta en el review las que crea por iniciativa propia; el tope por palabra queda como alarma, con «le es útil» como motivo suficiente; lo que vigila la carga son los minutos al día y la mezcla. **Lotes**: «cada vez que te los pida, no va a haber medida»: sin costumbre fija. **Pasos de una palabra**: «lo que creas mejor»: un día de estudio, como se decidió el 2026-10-10; `STAGE_GAP` pasa de 15 a 30, las nuevas de un día a 30 al día, para que la segunda tarjeta llegue cuando recordar ya cuesta. Vive en: `docs/goal.md` («Quién aprende», «Cuánto y en qué proporción»), `docs/design.md` («Cobertura», «Tarjetas»), `docs/owner.md` («Decisiones»), `anki.py` (`STAGE_GAP`).
 
+### 2026-10-20 · Coherencia entre documentos y `close-batch` sin `git add -A`
+
+Una revisión de todos los documentos encontró reglas que decían cosas distintas en sitios distintos, sin cambiar ninguna regla vigente. Las entradas superadas llevan ahora su «(revocada)»; el README ya no recomienda un lote por semana y dice que la subida espera al móvil sincronizado; el flujo de `docs/design.md` pide `gaps` junto a `lookup`, espera el «ya» del móvil antes de `push` y nombra en su sitio los apartados del review que solo vivían en otros documentos («Lo que cambió en tu mazo», «Para entender», «¿Funciona?»). Además, `close-batch` hacía `git add -A`, lo que `AGENTS.md` prohíbe: ahora añade lo ya versionado que cambió y lo nuevo solo dentro de las carpetas del flujo, así que un archivo suelto en la raíz nunca entra en el commit del lote. Vive en: `README.md`, `docs/design.md`, `AGENTS.md`, `anki.py` (`cmd_close_batch`, `BATCH_COMMIT_PATHS`).
