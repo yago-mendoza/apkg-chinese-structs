@@ -349,3 +349,7 @@ Una revisión de todos los documentos encontró reglas que decían cosas distint
 ### 2026-10-20 · Un apunte archivado, retocado a petición de YAGO
 
 Los apuntes se archivan intactos, pero el repositorio es público y YAGO pidió quitar de un apunte del lote 003 (`sin-fecha_pegado-en-el-chat-2.md`) un comentario suyo entre paréntesis que no aportaba nada al mazo ni a ninguna decisión. Se quitó solo ese paréntesis; la frase en chino que lo acompañaba sigue. El historial de git no se reescribe (rompería las etiquetas `lote-NNN` y la versión que fija infraphysics), así que el texto anterior sigue en el commit de entonces. Es una excepción, no una regla nueva: cualquier otro retoque de un apunte archivado lo pide YAGO.
+
+### 2026-10-21 · FSRS optimizado, cada 10 lotes
+
+La decisión del 2 de octubre dejaba pendiente, «en unas semanas», optimizar FSRS con los repasos de YAGO. El 21 de octubre, con 835 repasos del mazo en el ordenador (unos 420 de un día posterior al primero), lo pulsó él: el optimizador usó 670 y sustituyó los parámetros por defecto. Los tres primeros salen en 0,04 días: una palabra recién vista le dura poco más de una hora, coherente con su 21 % de «Otra vez». Con tan pocos repasos el ajuste es aproximado, así que se repite: YAGO pidió que se le recuerde cada 10 lotes más o menos. Sin reprogramar lo ya programado («Reschedule cards on change» apagado): cada tarjeta adopta los parámetros en su siguiente repaso, sin avalancha. Vive en: `docs/owner.md` (cómo y cuándo), `2-digests/state.md` (el próximo).

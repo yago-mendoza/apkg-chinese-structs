@@ -33,7 +33,7 @@
 - A 30 nuevas al día, se vuelve a 20 si los repasos pasan de una hora o el «Otra vez» del 30 %. ([30 al día](/docs/decisions.md#2026-10-19--30-nuevas-al-día))
 - La cola de nuevas de su nivel son unos 60 días a 30 al día, y lo de clase, unos 37 (aviso por encima de 21). ([lote 012](/2-digests/summary-012-2026-10-19-querer-poder-y-matices.md#seguimiento))
 - El tema de compras pasa de 60 entradas: se divide en el lote 013, junto con fórmulas y ejemplos. ([lote 012](/2-digests/summary-012-2026-10-19-querer-poder-y-matices.md#reorganización))
-- En unas semanas, pulsar «Optimize Current Preset» de FSRS en el preset del mazo. ([la mejor configuración](/docs/decisions.md#2026-10-02--la-mejor-configuración-para-su-memoria))
+- FSRS optimizado el 21 de octubre con 670 repasos; se repite hacia el lote 022, cada 10 lotes más o menos. ([FSRS](/docs/decisions.md#2026-10-21--fsrs-optimizado-cada-10-lotes))
 - Las pruebas tardan más de 10 minutos. ([lote 012](/2-digests/summary-012-2026-10-19-querer-poder-y-matices.md#fricciones-del-proceso))
 - La voz sintética no puede fijar la lectura de un polífono suelto (得, 只): el SSML que prevé el diseño no está hecho. ([lote 008](/2-digests/summary-008-2026-10-08-pedir-ayuda-lugares-y-finales.md#fricciones-del-proceso), [audio](/docs/design.md#audio))
 
