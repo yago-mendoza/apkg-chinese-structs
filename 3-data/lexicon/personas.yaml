@@ -485,3 +485,13 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 别 «otro» + 人 «persona». 别人都来了 «los demás ya han venido». No es el 别 de «no hagas».'}
+  - id: g.pengyou-pingguo
+    kind: group
+    basis: soundalike
+    title: 朋友 péngyou y 苹果 píngguǒ
+    explanation: 'Empiezan casi igual y se confunden al oído y al decirlos.'
+    members:
+      - {ref: w.pengyou, cue: 'péng con e; la segunda sílaba, átona'}
+      - {ref: w.pingguo, cue: 'píng con i; la segunda, guǒ, con su tercer tono'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+    comments: []

@@ -3,6 +3,7 @@
 sentences:
   - id: s.tianqi-hen-leng
     use: say
+    kind: example
     segments:
       - {text: 天气, ref: w.tianqi, pinyin: tiānqì}
       - {text: 很, ref: w.hen, pinyin: hěn}
@@ -12,6 +13,7 @@ sentences:
     source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.tianqi-bu-leng
     use: say
+    kind: example
     segments:
       - {text: 天气, ref: w.tianqi, pinyin: tiānqì}
       - {text: 不, ref: w.bu, pinyin: bù}
@@ -21,6 +23,7 @@ sentences:
     source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.tianqi-leng-ma
     use: say
+    kind: example
     segments:
       - {text: 天气, ref: w.tianqi, pinyin: tiānqì}
       - {text: 冷, ref: w.leng, pinyin: lěng}
@@ -30,6 +33,7 @@ sentences:
     source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.beijing-hen-re
     use: say
+    kind: example
     segments:
       - {text: 北京, ref: w.beijing, pinyin: Běijīng}
       - {text: 很, ref: w.hen, pinyin: hěn}
@@ -39,6 +43,7 @@ sentences:
     source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
   - id: s.xiayu-le
     use: hear
+    kind: example
     segments:
       - {text: 下雨, ref: w.xiayu, pinyin: xiàyǔ}
       - {text: 了, ref: w.le, pinyin: le}
@@ -47,6 +52,7 @@ sentences:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: s.beijing-xiayu-ma
     use: hear
+    kind: example
     segments:
       - {text: 北京, ref: w.beijing, pinyin: Běijīng}
       - {text: 下雨, ref: w.xiayu, pinyin: xiàyǔ}
@@ -56,6 +62,7 @@ sentences:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: s.yao-xiayu-le
     use: hear
+    kind: example
     segments:
       - {text: 要, ref: w.yao, pinyin: yào}
       - {text: 下雨, ref: w.xiayu, pinyin: xiàyǔ}
@@ -65,6 +72,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
   - id: s.mingtian-hui-xiayu
     use: say
+    kind: example
     segments:
       - {text: 明天, ref: w.mingtian, pinyin: míngtiān}
       - {text: 会, ref: w.hui.can, pinyin: huì}
@@ -74,6 +82,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.tianqi-zhen-hao
     use: say
+    kind: formula
     segments:
       - {text: 天气, ref: w.tianqi, pinyin: 'tiānqì'}
       - {text: 真, ref: w.zhen, pinyin: 'zhēn'}
@@ -83,6 +92,7 @@ sentences:
     source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
   - id: s.beijing-xiaxue-le
     use: say
+    kind: example
     segments:
       - {text: 北京, ref: w.beijing, pinyin: 'Běijīng'}
       - {text: 下雪, ref: w.xiaxue, pinyin: 'xiàxuě'}
@@ -92,6 +102,7 @@ sentences:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
   - id: s.hao-leng
     use: hear
+    kind: formula
     segments:
       - {text: 好, ref: w.hao, pinyin: hǎo}
       - {text: 冷, ref: w.leng, pinyin: lěng}
@@ -100,6 +111,7 @@ sentences:
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
   - id: s.jintian-de-yueliang-hen-liang
     use: hear
+    kind: example
     segments:
       - {text: 今天, ref: w.jintian, pinyin: jīntiān}
       - {text: 的, ref: w.de, pinyin: de}
@@ -111,6 +123,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.ni-juede-jintian-re-ma
     use: say
+    kind: example
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
@@ -120,3 +133,52 @@ sentences:
       - {text: ？}
     translation: {es: '¿Te parece que hoy hace calor?', en: 'Do you think it''s hot today?'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+  - id: s.jintian-tianqi-bu-leng-bu-re
+    use: hear
+    kind: example
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 天气, ref: w.tianqi, pinyin: 'tiānqì'}
+      - {text: 怎么样, ref: w.zenmeyang, pinyin: 'zěnmeyàng'}
+      - {text: ？}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 天气, ref: w.tianqi, pinyin: 'tiānqì'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 好, ref: w.hao, pinyin: 'hǎo'}
+      - {text: ，}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 冷, ref: w.leng, pinyin: 'lěng'}
+      - {text: 不, ref: w.bu, pinyin: 'bù', sandhi: 'bù → bú delante de cuarto tono'}
+      - {text: 热, ref: w.re, pinyin: 'rè'}
+      - {text: 。}
+    translation: {es: '—¿Qué te parece el tiempo hoy? —Muy bueno: ni frío ni calor.', en: '—What do you think of today''s weather? —Very nice: neither cold nor hot.'}
+    source: {origin: class, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
+  - id: s.jintian-feng-hen-da
+    use: say
+    kind: example
+    segments:
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 风, ref: w.feng, pinyin: 'fēng'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 大, ref: w.da, pinyin: 'dà'}
+      - {text: 。}
+    translation: {es: 'Hoy hace mucho viento.', en: 'It''s very windy today.'}
+    source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+  - id: s.women-dao-dao-shang-le
+    use: hear
+    kind: example
+    segments:
+      - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
+      - {text: 到, ref: w.dao.reach, pinyin: 'dào'}
+      - {text: 岛, ref: w.dao, pinyin: 'dǎo'}
+      - {text: 上, ref: w.shang.on, pinyin: 'shàng'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: ！}
+    translation: {es: '¡Hemos llegado a la isla!', en: 'We''ve arrived on the island!'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}

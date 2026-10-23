@@ -124,6 +124,8 @@ entries:
       - {kind: linguistic, private: false, date: '2026-09-27', text: '可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2].'}
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Pregunta y respuesta a la vez: 可以吗？ —可以。 «¿Se puede? —Sí». En una tienda, 这个大小可以吗？ «¿este tamaño está bien?». Según el contexto también se dice 行 xíng [HSK 1] o 没问题 méi wèntí [问题 HSK 2], «no hay problema».', original: 'En kêyî hay que explcar que no es lo mismo poder tener permiso que 能 (néng): poder / ser capaz de. [...] keyi estaria bien hacer hincapie en que est tanto "poder" para preguntas como respuesta como ... loksea, y expresiones sinonimss segun ctx sabes'}
       - {kind: mnemonic, private: false, date: '2026-10-09', text: 'Kěyǐ suena un poco a «can», «poder» en inglés.', original: Sound a bit like can  (jeje pa recorfar)}
+      - {kind: mnemonic, private: false, date: '2026-10-21', text: '可以: 可 es un plato sobre una mesa que hay que retirar; 以, un camarero con una patilla larga y cara triste. El camarero ve el plato y pregunta: «¿Puedo retirarlo?». ¡Sí, puede!'}
+      - {kind: mnemonic, private: false, date: '2026-10-21', text: '可 también parece el ojo de un sapo mágico que da cualidades a las cosas: 可爱, 可以.', original: 'El plato tambien me recuerda como al ojonde un sapo magiconque hacenlas cosas -iblencomo querible dabes? Adjetivozanverbos prancosas, saponque tenda culidades hahahaha sabes un poco hoax'}
   - id: g.yes-forms
     kind: group
     basis: set
@@ -531,3 +533,15 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 没 «no hay» + 什么 «nada»: «no hay nada». Ante un 谢谢 o una pregunta preocupada.'}
+  - id: w.tongyi
+    use: say
+    role: content
+    kind: word
+    hanzi: 同意
+    pinyin: tóngyì
+    meaning: {es: 'estar de acuerdo', en: 'to agree'}
+    use_reason: 'HSK 3, pero muy frecuente en una conversación; lo volvió a investigar en sus notas del review 012'
+    source: {origin: attic, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09', rescued: 013-2026-10-23-pagar-opinar-y-contrastes}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: '我同意 «estoy de acuerdo», 我不同意 «no estoy de acuerdo», 你同意吗？ «¿estás de acuerdo?». Para contestar rápido también valen 对 y 好的.'}
+      - {kind: mnemonic, private: false, date: '2026-10-21', text: '同 «mismo» + 意 «idea»: tenemos la misma idea, así que estamos de acuerdo.', original: 'Tenemos la misma idea, así que estamos de acuerdo'}

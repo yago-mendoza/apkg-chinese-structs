@@ -111,8 +111,8 @@ entries:
     pattern: '{S} + 叫 + {Nombre}'
     refs: [w.jiao]
     meaning: {es: 'Decir cómo se llama alguien.', en: 'Saying what someone is called.'}
-    examples: [s.wo-jiao-yage]
-    contrast: {right: s.wo-jiao-yage, wrong: '我是叫雅戈。', why: {es: '叫 ya es el verbo, «llamarse»: no lleva 是.', en: '叫 is already the verb, "to be called": no 是.'}}
+    examples: [s.wo-jiao-mengyichen]
+    contrast: {right: s.wo-jiao-mengyichen, wrong: '我是叫孟逸辰。', why: {es: '叫 ya es el verbo, «llamarse»: no lleva 是.', en: '叫 is already the verb, "to be called": no 是.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.xing
@@ -121,8 +121,8 @@ entries:
     pattern: '{S} + 姓 + {Nombre}'
     refs: [w.xing]
     meaning: {es: 'Decir el apellido.', en: 'Saying your surname.'}
-    examples: [s.wo-xing-menduosa]
-    contrast: {right: s.wo-xing-menduosa, wrong: '我的姓门多萨。', why: {es: '姓 es aquí el verbo «apellidarse»: 我姓门多萨. «Mi apellido Mendoza» se queda sin verbo.', en: '姓 is the verb here, "to be surnamed": 我姓门多萨. "My surname Mendoza" has no verb.'}}
+    examples: [s.wo-xing-meng]
+    contrast: {right: s.wo-xing-meng, wrong: '我的姓孟。', why: {es: '姓 es aquí el verbo «apellidarse»: 我姓孟. «Mi apellido Mèng» se queda sin verbo.', en: '姓 is the verb here, "to be surnamed": 我姓门多萨. "My surname Mendoza" has no verb.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.laizi
@@ -403,7 +403,7 @@ entries:
     pattern: '{V} + 得 + 很 + {Adj}'
     refs: [w.de.complement, w.hen]
     meaning: {es: 'Cómo sale una acción: el verbo, 得 y la valoración (说得很好 «hablas muy bien»).', en: 'How an action turns out: verb, 得 and the assessment.'}
-    examples: [s.ni-lai-de-hen-zao, s.ni-shuo-de-hen-hao, s.ta-pao-de-hen-kuai, s.ni-xie-de-hen-hao]
+    examples: [s.ni-lai-de-hen-zao, s.ni-shuo-de-hen-hao, s.ta-pao-de-hen-kuai, s.ni-xie-de-hen-hao, s.ni-zuo-de-hen-hao, s.ta-chang-de-hen-hao]
     contrast: {right: s.ni-lai-de-hen-zao, wrong: 你很早来。, why: {es: 'Para valorar cómo salió la acción, el verbo va primero y 得 lo une con cómo: 你来得很早.', en: 'To assess how an action went, the verb comes first and 得 links it to how: 你来得很早.'}}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments: []
@@ -426,4 +426,34 @@ entries:
     examples: [s.wo-liang-tian-qian-qu-le-shangdian]
     contrast: {right: s.wo-liang-tian-qian-qu-le-shangdian, wrong: 我去了商店两天前。, why: {es: '«Hace dos días» va delante del verbo, no al final como en español: 我两天前去了商店.', en: '«Two days ago» goes before the verb, not at the end: 我两天前去了商店.'}}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []
+  - id: st.num-jin-n
+    kind: structure
+    use: say
+    pattern: '{Num} + 斤 + {N}'
+    refs: [w.jin.weight]
+    meaning: {es: 'Pesar en el mercado: el número, 斤 y lo que se compra (三斤苹果 «tres 斤 de manzanas»).', en: 'Weighing at the market: number, 斤 and what is bought.'}
+    examples: [s.wo-yao-san-jin-pingguo, s.wo-yao-yi-jin-pingguo]
+    contrast: {right: s.wo-yao-yi-jin-pingguo, wrong: '我要一个斤苹果。', why: {es: '斤 ya es la medida: va en el sitio de 个, nunca los dos juntos.', en: '斤 is already the measure word: it takes the place of 个, never both.'}}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+    comments: []
+  - id: st.lugar-you-n
+    kind: structure
+    use: say
+    pattern: '{Lugar} + 有 + {N}'
+    refs: [w.you.have]
+    meaning: {es: '«Hay»: el sitio y 有, sin nadie que tenga (商店有水吗？ «¿hay agua en la tienda?»). Con alguien delante, 有 es «tener».', en: '"There is": the place and 有, with no owner. With a person before it, 有 means "to have".'}
+    examples: [s.shangdian-you-shui-ma, s.fandian-you-yu-ma]
+    contrast: {right: s.shangdian-you-shui-ma, wrong: '商店是水吗？', why: {es: '«Hay» es 有. 是 iguala dos cosas: 商店是水吗 preguntaría si la tienda es agua.', en: '"There is" is 有. 是 equates two things.'}}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+    comments: []
+  - id: st.v-de-bu-adj
+    kind: structure
+    use: say
+    pattern: '{V} + 得 + 不 + {Adj}'
+    refs: [w.de.complement, w.bu]
+    meaning: {es: 'Cómo sale una acción, en negativo: 说得不对 «lo que dices no es correcto».', en: 'How an action turns out, negated: 说得不对.'}
+    examples: [s.ni-shuo-de-bu-dui]
+    contrast: {right: s.ni-shuo-de-bu-dui, wrong: '你说不是对。', why: {es: 'Para valorar lo que alguien dice va 得; y 不对 ya es «incorrecto», sin 是.', en: 'To judge what someone says, use 得; and 不对 already means "wrong", no 是.'}}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-20'}
     comments: []

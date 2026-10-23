@@ -474,3 +474,44 @@ entries:
       - {ref: c.side.chuo, cue: 'rodea por la izquierda y por abajo, como un camino (这, 过)'}
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
     comments: []
+  - id: c.huan.joy
+    use: read
+    kind: character
+    hanzi: 欢
+    pinyin: huān
+    meaning: {es: alegría, en: joy}
+    standalone: false
+    level: 1
+    level_reason: 'aparece en 喜欢 y en 欢迎 [HSK 1]'
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+    comments: []
+  - id: g.ni-huan
+    kind: group
+    basis: visual
+    title: 你 nǐ y 欢 huān
+    explanation: 'Los dos tienen a la derecha algo parecido, pero a la izquierda uno lleva una persona y el otro una mano.'
+    members:
+      - {ref: w.ni, cue: '亻 «persona» a la izquierda; a la derecha, 尔'}
+      - {ref: c.huan.joy, cue: '又 «mano» a la izquierda; a la derecha, 欠, alguien con la boca abierta'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+    comments: []
+  - id: g.kai-jin
+    kind: group
+    basis: visual
+    title: 开 kāi y 进 jìn
+    explanation: '进 lleva dentro 井, que se parece mucho a 开, y alrededor 辶 «andar»: entrar es andar hacia dentro.'
+    members:
+      - {ref: w.kai, cue: 'solo, sin 辶'}
+      - {ref: w.jin, cue: '井 dentro de 辶 «andar»'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-22'}
+    comments: []
+  - id: g.hen-gen
+    kind: group
+    basis: phonetic
+    title: 很 hěn y 跟 gēn
+    explanation: 'Comparten 艮 a la derecha, que les da el final -en; la izquierda dice de qué va cada uno.'
+    members:
+      - {ref: w.hen, cue: '彳 «paso» a la izquierda; baja y sube'}
+      - {ref: w.gen, cue: '足 «pie» a la izquierda; plano'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-20'}
+    comments: []

@@ -109,3 +109,13 @@ entries:
     meaning: {es: 'nadar', en: 'to swim'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
     comments: []
+  - id: w.chang.sing
+    use: say
+    role: content
+    kind: word
+    hanzi: 唱
+    pinyin: chàng
+    meaning: {es: 'cantar', en: 'to sing'}
+    source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: 'Cantar una canción es 唱歌 chànggē; el mismo 唱 que en tus deberes del 13 (chàng, con -ng).'}

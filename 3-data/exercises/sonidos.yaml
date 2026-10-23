@@ -244,3 +244,146 @@ exercises:
     prompt: {text: 'Escucha y completa las vocales: q_', audio: true}
     answer: {hanzi: 去, pinyin: qù, meaning: ir}
     comments: []
+  - id: x.pair.zhang-jiang
+    added: '2026-10-23'
+    lang: es
+    type: listen
+    targets: [p.jqx-zhchsh]
+    refs: [p.jqx-zhchsh]
+    pair: [{hanzi: 江, pinyin: jiāng, meaning: 'río'}, {hanzi: 张, pinyin: zhāng, meaning: 'Zhang (apellido)'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es zhāng, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: zhāng 张, con la lengua doblada hacia arriba. 江 jiāng tiene la lengua abajo y suena más fina.'}
+    comments: []
+  - id: x.pair.re-zhe
+    added: '2026-10-23'
+    lang: es
+    type: listen
+    targets: [p.jqx-zhchsh]
+    refs: [p.jqx-zhchsh]
+    pair: [{hanzi: 热, pinyin: rè, meaning: 'calor'}, {hanzi: 这, pinyin: zhè, meaning: 'este'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es rè, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 1.ª: rè 热, que zumba y se alarga. 这 zhè es un golpe corto.'}
+    comments: []
+  - id: x.pair.ge-ke
+    added: '2026-10-23'
+    lang: es
+    type: listen
+    targets: [p.aspiration]
+    refs: [p.aspiration]
+    pair: [{hanzi: 课, pinyin: kè, meaning: 'clase'}, {hanzi: 个, pinyin: gè, meaning: 'clasificador general'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es gè, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: gè 个, sin soplo. 课 kè suelta aire.'}
+    comments: []
+  - id: x.pair.zi-ci
+    added: '2026-10-23'
+    lang: es
+    type: listen
+    targets: [p.aspiration]
+    refs: [p.aspiration]
+    pair: [{hanzi: 字, pinyin: zì, meaning: 'carácter'}, {hanzi: 次, pinyin: cì, meaning: 'vez'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es zì, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 1.ª: zì 字, sin soplo. 次 cì sale con aire.'}
+    comments: []
+  - id: x.pair.nai-mai
+    added: '2026-10-23'
+    lang: es
+    type: listen
+    targets: [p.syllables]
+    refs: [p.syllables]
+    pair: [{hanzi: 买, pinyin: mǎi, meaning: 'comprar'}, {hanzi: 奶, pinyin: nǎi, meaning: 'leche (en 牛奶)'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es nǎi, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: nǎi 奶, con la lengua arriba. 买 mǎi empieza con los labios cerrados.'}
+    comments: []
+  - id: x.pair.feng-fen
+    added: '2026-10-23'
+    lang: es
+    type: listen
+    targets: [p.n-ng]
+    refs: [p.n-ng]
+    pair: [{hanzi: 分, pinyin: fēn, meaning: 'minuto, céntimo'}, {hanzi: 风, pinyin: fēng, meaning: 'viento'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es fēng, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: fēng 风, que acaba atrás y resuena. 分 fēn acaba corto, con la lengua arriba.'}
+    comments: []
+  - id: x.pair.lv-lu
+    added: '2026-10-23'
+    lang: es
+    type: listen
+    targets: [p.y-w-u]
+    refs: [p.y-w-u]
+    pair: [{hanzi: 路, pinyin: lù, meaning: 'camino'}, {hanzi: 绿, pinyin: lǜ, meaning: 'verde'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es lǜ, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: lǜ 绿, con los labios redondos y la lengua de i. 路 lù es una u de verdad.'}
+    comments: []
+  - id: x.pair.huai-hui
+    added: '2026-10-23'
+    lang: es
+    type: listen
+    targets: [p.vowels]
+    refs: [p.vowels]
+    pair: [{hanzi: 会, pinyin: huì, meaning: 'saber (hacer)'}, {hanzi: 坏, pinyin: huài, meaning: 'estropeado'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es huài, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: huài 坏, con la a bien abierta en medio. 会 huì no tiene a.'}
+    comments: []
+  - id: x.pair.xian-xie
+    added: '2026-10-23'
+    lang: es
+    type: listen
+    targets: [p.vowels]
+    refs: [p.vowels]
+    pair: [{hanzi: 先, pinyin: xiān, meaning: 'primero'}, {hanzi: 些, pinyin: xiē, meaning: 'algunos (en 一些)'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es xiān, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 1.ª: xiān 先, que acaba en n. 些 xiē se queda en la e.'}
+    comments: []
+  - id: x.pair.duo-dou
+    added: '2026-10-23'
+    lang: es
+    type: listen
+    targets: [p.vowels]
+    refs: [p.vowels]
+    pair: [{hanzi: 都, pinyin: dōu, meaning: 'todos'}, {hanzi: 多, pinyin: duō, meaning: 'mucho'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es duō, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: duō 多, que acaba con la boca abierta en o. 都 dōu acaba cerrándose en u.'}
+    comments: []
+  - id: x.pair.zou-zuo
+    added: '2026-10-23'
+    lang: es
+    type: listen
+    targets: [p.vowels]
+    refs: [p.vowels]
+    pair: [{hanzi: 坐, pinyin: zuò, meaning: 'sentarse'}, {hanzi: 走, pinyin: zǒu, meaning: 'andar, irse'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es zǒu, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: zǒu 走, que baja y acaba en u. 坐 zuò cae y acaba en o.'}
+    comments: []
+  - id: x.pair.zao-zou
+    added: '2026-10-23'
+    lang: es
+    type: listen
+    targets: [p.vowels]
+    refs: [p.vowels]
+    pair: [{hanzi: 走, pinyin: zǒu, meaning: 'andar, irse'}, {hanzi: 早, pinyin: zǎo, meaning: 'temprano'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es zǎo, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: zǎo 早, con la a abierta. 走 zǒu se cierra en u.'}
+    comments: []
+  - id: x.pair.chi-qu
+    added: '2026-10-23'
+    lang: es
+    type: listen
+    targets: [p.jqx-zhchsh]
+    refs: [p.jqx-zhchsh]
+    pair: [{hanzi: 去, pinyin: qù, meaning: 'ir'}, {hanzi: 吃, pinyin: chī, meaning: 'comer'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es chī, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: chī 吃, plana y alta, con la lengua doblada. 去 qù cae y lleva ü.'}
+    comments: []

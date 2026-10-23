@@ -703,60 +703,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 姓名}
     answer: {hanzi: 姓名, pinyin: xìngmíng, meaning: nombre completo}
     comments: []
-  - id: x.dictation.menduosa
-    added: 2026-09-29
-    lang: es
-    type: listen
-    targets: [w.menduosa]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: men2 duo1 sa4, hanzi: 门多萨, pinyin: Ménduōsà, meaning: Mendoza (mi apellido)}
-    comments: []
-  - id: x.produce.menduosa
-    added: 2026-09-29
-    lang: es
-    type: produce
-    targets: [w.menduosa]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «Mendoza (mi apellido)»? Escribe el pinyin.'}
-    answer: {typed: men2 duo1 sa4, hanzi: 门多萨, pinyin: Ménduōsà, meaning: Mendoza (mi apellido)}
-    comments: []
-  - id: x.read.menduosa
-    added: 2026-09-29
-    lang: es
-    type: read
-    targets: [w.menduosa]
-    skills: [reading, pinyin]
-    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 门多萨}
-    answer: {hanzi: 门多萨, pinyin: Ménduōsà, meaning: Mendoza (mi apellido)}
-    comments: []
-  - id: x.dictation.yage
-    added: 2026-09-29
-    lang: es
-    type: listen
-    targets: [w.yage]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: ya3 ge1, hanzi: 雅戈, pinyin: Yǎgē, meaning: Yago (mi nombre en chino)}
-    comments: []
-  - id: x.produce.yage
-    added: 2026-09-29
-    lang: es
-    type: produce
-    targets: [w.yage]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «Yago (mi nombre en chino)»? Escribe el pinyin.'}
-    answer: {typed: ya3 ge1, hanzi: 雅戈, pinyin: Yǎgē, meaning: Yago (mi nombre en chino)}
-    comments: []
-  - id: x.read.yage
-    added: 2026-09-29
-    lang: es
-    type: read
-    targets: [w.yage]
-    skills: [reading, pinyin]
-    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 雅戈}
-    answer: {hanzi: 雅戈, pinyin: Yǎgē, meaning: Yago (mi nombre en chino)}
-    comments: []
   - id: x.dictation.lai
     added: 2026-09-29
     lang: es
@@ -909,17 +855,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¡Yo también estoy encantado de conocerte!»'}
     answer: {meaning: ¡Yo también estoy encantado de conocerte!}
     comments: []
-  - id: x.produce.wo-keyi-wen-ni-ma
-    added: 2026-09-29
-    lang: es
-    type: produce
-    sentence: s.wo-keyi-wen-ni-ma
-    targets: [s.wo-keyi-wen-ni-ma]
-    context: [w.wo, w.keyi, w.wen, w.ni, w.ma]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿Te puedo preguntar algo?»'}
-    answer: {meaning: '¿Te puedo preguntar algo?'}
-    comments: []
   - id: x.listen.ni-xing-shenme
     added: 2026-09-29
     lang: es
@@ -942,28 +877,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¿Cómo te apellidas?»'}
     answer: {meaning: '¿Cómo te apellidas?'}
     comments: []
-  - id: x.listen.wo-xing-menduosa
-    added: 2026-09-29
-    lang: es
-    type: listen
-    sentence: s.wo-xing-menduosa
-    targets: [s.wo-xing-menduosa]
-    context: [w.wo, w.xing, w.menduosa]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Me apellido Mendoza.}
-    comments: []
-  - id: x.produce.wo-xing-menduosa
-    added: 2026-09-29
-    lang: es
-    type: produce
-    sentence: s.wo-xing-menduosa
-    targets: [s.wo-xing-menduosa]
-    context: [w.wo, w.xing, w.menduosa]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Me apellido Mendoza.»'}
-    answer: {meaning: Me apellido Mendoza.}
-    comments: []
   - id: x.listen.nin-guixing
     added: 2026-09-29
     lang: es
@@ -985,17 +898,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Cuál es su apellido? (cortés)»'}
     answer: {meaning: '¿Cuál es su apellido? (cortés)'}
-    comments: []
-  - id: x.produce.wo-jiao-yage
-    added: 2026-09-29
-    lang: es
-    type: produce
-    sentence: s.wo-jiao-yage
-    targets: [s.wo-jiao-yage]
-    context: [w.wo, w.jiao, w.yage]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Me llamo Yago.»'}
-    answer: {meaning: Me llamo Yago.}
     comments: []
   - id: x.listen.tamen-dou-laizi-meiguo-ma
     added: 2026-09-29
@@ -1130,28 +1032,6 @@ exercises:
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: '¿Cuál es su nombre?'}
-    comments: []
-  - id: x.listen.menduosa-xiansheng-ninhao
-    added: 2026-10-01
-    lang: es
-    type: listen
-    sentence: s.menduosa-xiansheng-ninhao
-    targets: [s.menduosa-xiansheng-ninhao]
-    context: [w.menduosa, w.xiansheng, e.ninhao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¡Buenos días, señor Mendoza!'}
-    comments: []
-  - id: x.produce.menduosa-xiansheng-ninhao
-    added: 2026-10-01
-    lang: es
-    type: produce
-    sentence: s.menduosa-xiansheng-ninhao
-    targets: [s.menduosa-xiansheng-ninhao]
-    context: [w.menduosa, w.xiansheng, e.ninhao]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¡Buenos días, señor Mendoza!»'}
-    answer: {meaning: '¡Buenos días, señor Mendoza!'}
     comments: []
   - id: x.contrast.shi
     added: 2026-10-01
@@ -1305,17 +1185,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¿De qué país eres?»'}
     answer: {meaning: '¿De qué país eres?'}
     comments: []
-  - id: x.produce.ni-zai-nali
-    added: 2026-10-01
-    lang: es
-    type: produce
-    sentence: s.ni-zai-nali
-    targets: [s.ni-zai-nali]
-    context: [w.ni, w.zai.at, w.nali]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde estás?»'}
-    answer: {meaning: '¿Dónde estás?'}
-    comments: []
   - id: x.produce.wo-zai-xibanya
     added: 2026-10-01
     lang: es
@@ -1374,7 +1243,7 @@ exercises:
     added: 2026-10-01
     lang: es
     type: comprehension
-    targets: [s.wo-jiao-yage, s.wo-shi-xibanyaren, s.wo-zai-xuexi-zhongwen, s.zhongwen-hen-nan]
+    targets: [s.wo-jiao-mengyichen, s.wo-shi-xibanyaren, s.wo-zai-xuexi-zhongwen, s.zhongwen-hen-nan]
     skills: [reading, comprehension]
     script: hanzi
     prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
@@ -1562,7 +1431,7 @@ exercises:
     added: 2026-10-02
     lang: es
     type: comprehension
-    targets: [s.ni-jiao-shenme-mingzi, s.wo-jiao-yage, s.wo-xing-menduosa, s.wo-laizi-xibanya]
+    targets: [s.ni-jiao-shenme-mingzi, s.wo-jiao-mengyichen, s.wo-xing-meng, s.wo-laizi-xibanya]
     skills: [reading, comprehension]
     script: hanzi
     prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta y respóndela en chino, en voz alta.'}
@@ -1595,12 +1464,12 @@ exercises:
     added: 2026-10-02
     lang: es
     type: comprehension
-    targets: [s.wo-bu-renshi-ni, s.wo-jiao-yage, s.hen-gaoxing-renshi-ni]
+    targets: [s.wo-bu-renshi-ni, s.wo-jiao-mengyichen, s.hen-gaoxing-renshi-ni]
     skills: [reading, comprehension]
     script: hanzi
     prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta y respóndela en chino, en voz alta.'}
     question: {sentence: s.ta-de-mingzi-shi-shenme}
-    answer: {meaning: '他叫雅戈 (se llama Yago).'}
+    answer: {meaning: '他叫孟逸辰 (se llama Mèng Yìchén).'}
     comments: []
   - id: x.comprehension.somos-estudiantes
     added: 2026-10-02
@@ -1680,16 +1549,6 @@ exercises:
     skills: [reading, pinyin, tones]
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 名}
     answer: {typed: ming2, hanzi: 名, pinyin: míng, meaning: 'Sale en 名字 míngzi «nombre», 姓名 xìngmíng «nombre completo».'}
-    comments: []
-  - id: x.charsound.duo
-    added: 2026-10-06
-    lang: es
-    type: charsound
-    targets: [w.menduosa, w.duoshao, e.duoshaoqian]
-    skills: [reading, pinyin, tones]
-    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 多}
-    answer: {typed: duo1, hanzi: 多, pinyin: duō, meaning: 'Sale en 门多萨 Ménduōsà «Mendoza (mi apellido)», 多少 duōshao «cuánto,
-        cuántos», 多少钱 duōshao qián «¿cuánto cuesta?».'}
     comments: []
   - id: x.charsound.xi
     added: 2026-10-06
@@ -1959,6 +1818,7 @@ exercises:
     sentence: s.wo-chusheng-zai-beijing
     targets: [s.wo-chusheng-zai-beijing]
     context: [w.wo, w.chusheng, w.zai.at, w.beijing]
+    also: [s.wo-zai-beijing-chusheng]
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Nací en Pekín.»'}
     answer: {meaning: Nací en Pekín.}
@@ -2194,26 +2054,6 @@ exercises:
     prompt: {text: '¿不 o 没? «No quiero agua.»'}
     answer: {typed: bu2, hanzi: 不, pinyin: bú, meaning: '要 se niega con 不: 不要 «no quiero».'}
     comments: []
-  - id: x.situation.wo-xing
-    added: '2026-10-10'
-    lang: es
-    type: speak
-    sentence: s.wo-xing-menduosa
-    targets: [s.wo-xing-menduosa]
-    skills: [production, speaking]
-    prompt: {text: 'Situación. Te preguntan 你姓什么？. Contesta con tu apellido, Mendoza (门多萨).'}
-    answer: {meaning: me apellido Mendoza}
-    comments: []
-  - id: x.situation.wo-jiao
-    added: '2026-10-10'
-    lang: es
-    type: speak
-    sentence: s.wo-jiao-yage
-    targets: [s.wo-jiao-yage]
-    skills: [production, speaking]
-    prompt: {text: 'Situación. Te presentas a un compañero de clase. Dile tu nombre, Yago (雅戈).'}
-    answer: {meaning: me llamo Yago}
-    comments: []
   - id: x.situation.nin-guixing
     added: '2026-10-10'
     lang: es
@@ -2271,17 +2111,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «No estoy ocupado.»'}
     answer: {meaning: No estoy ocupado.}
-    comments: []
-  - id: x.listen.wang-ayi-hao
-    added: 2026-10-10
-    lang: es
-    type: listen
-    sentence: s.wang-ayi-hao
-    targets: [s.wang-ayi-hao]
-    context: [w.wang.surname, w.ayi, w.hao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¡Hola, señora Wang!'}
     comments: []
   - id: x.produce.wo-he-ta-shi-pengyou
     added: 2026-10-10
@@ -2505,28 +2334,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años crees que tiene?»'}
     answer: {meaning: '¿Cuántos años crees que tiene?'}
-    comments: []
-  - id: x.listen.wo-juede-hen-hao
-    added: 2026-10-16
-    lang: es
-    type: listen
-    sentence: s.wo-juede-hen-hao
-    targets: [s.wo-juede-hen-hao]
-    context: [w.wo, w.juede, w.hen, w.hao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Me parece muy bien.}
-    comments: []
-  - id: x.produce.wo-juede-hen-hao
-    added: 2026-10-16
-    lang: es
-    type: produce
-    sentence: s.wo-juede-hen-hao
-    targets: [s.wo-juede-hen-hao]
-    context: [w.wo, w.juede, w.hen, w.hao]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Me parece muy bien.»'}
-    answer: {meaning: Me parece muy bien.}
     comments: []
   - id: x.listen.nage-ren-shi-ni-de-pengyou
     added: 2026-10-16
@@ -3044,4 +2851,652 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Os presento (os hago las presentaciones).»'}
     answer: {meaning: Os presento (os hago las presentaciones).}
+    comments: []
+  - id: x.produce.ni-zhu-zai-nali
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.ni-zhu-zai-nali
+    targets: [s.ni-zhu-zai-nali]
+    context: [w.ni, w.zhu.live, w.zai.at, w.nali]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde vives?»'}
+    answer: {meaning: '¿Dónde vives?'}
+    comments: []
+  - id: x.produce.ta-shi-shei
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ta-shi-shei
+    targets: [s.ta-shi-shei]
+    context: [w.ta.he, w.shi, w.shei]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Quién es él?»'}
+    answer: {meaning: '¿Quién es él?'}
+    comments: []
+  - id: x.comprehension.quien-es-el
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.ta-shi-shei, s.ta-shi-wo-de-baba, s.ta-hen-gao]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Quién es, y cómo es?'}
+    answer: {meaning: 'Es el padre de quien habla, y es alto.'}
+    comments: []
+  - id: x.produce.nide-aihao-shi-shenme
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.nide-aihao-shi-shenme
+    targets: [s.nide-aihao-shi-shenme]
+    context: [w.ni, w.de, w.aihao, w.shi, w.shenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuál es tu afición?»'}
+    answer: {meaning: '¿Cuál es tu afición?'}
+    comments: []
+  - id: x.comprehension.aficion
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.nide-aihao-shi-shenme, s.wo-xihuan-kan-shu, s.wo-yibian-kanshu-yibian-hecha]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Cuál es su afición, y qué hace mientras tanto?'}
+    answer: {meaning: 'Leer; mientras lee, toma té.'}
+    comments: []
+  - id: x.produce.ni-ji-sui
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ni-ji-sui
+    targets: [s.ni-ji-sui]
+    context: [w.ni, w.ji, w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años tienes? (a un niño)»'}
+    answer: {meaning: '¿Cuántos años tienes? (a un niño)'}
+    comments: []
+  - id: x.comprehension.duoda
+    added: 2026-10-06
+    lang: es
+    type: comprehension
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    targets: [s.ni-duoda, s.wo-shiba-sui-ni-ne, s.wo-ye-shiba-sui]
+    script: both
+    question: {es: '¿Cuántos años tiene cada una?'}
+    answer: {meaning: 'Dieciocho, las dos.'}
+    skills: [reading, comprehension]
+    comments: []
+  - id: x.listen.ni-duoda
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.ni-duoda
+    targets: [s.ni-duoda]
+    context: [w.ni, w.duoda]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuántos años tienes?'}
+    comments: []
+  - id: x.produce.ni-duoda
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.ni-duoda
+    targets: [s.ni-duoda]
+    context: [w.ni, w.duoda]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años tienes?»'}
+    answer: {meaning: '¿Cuántos años tienes?'}
+    comments: []
+  - id: x.listen.ni-jinnian-ji-sui-le
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.ni-jinnian-ji-sui-le
+    targets: [s.ni-jinnian-ji-sui-le]
+    context: [w.ni, w.jinnian, w.ji, w.sui, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuántos años tienes ya? (a un niño)'}
+    comments: []
+  - id: x.produce.ni-jinnian-ji-sui-le
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.ni-jinnian-ji-sui-le
+    targets: [s.ni-jinnian-ji-sui-le]
+    context: [w.ni, w.jinnian, w.ji, w.sui, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años tienes ya? (a un niño)»'}
+    answer: {meaning: '¿Cuántos años tienes ya? (a un niño)'}
+    comments: []
+  - id: x.choice.age-child
+    added: '2026-10-16'
+    lang: es
+    type: speak
+    targets: [s.ni-jinnian-ji-sui-le]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. Le preguntas la edad a un niño de unos ocho años.', options: [你多大了？, 你今年几岁了？, 您多大年纪了？]}
+    answer: {choice: b, hanzi: 你今年几岁了？, pinyin: nǐ jīnnián jǐ suì le, meaning: '几岁: a un niño, cuando esperas una cifra pequeña.'}
+    comments: []
+  - id: x.listen.nin-duoda-nianji-le
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.nin-duoda-nianji-le
+    targets: [s.nin-duoda-nianji-le]
+    context: [w.nin, w.duoda, w.nianji, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuántos años tiene usted?'}
+    comments: []
+  - id: x.choice.age-elder
+    added: '2026-10-16'
+    lang: es
+    type: speak
+    targets: [s.nin-duoda-nianji-le]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. Le preguntas la edad a la abuela de un amigo.', options: [您多大年纪了？, 你多大了？, 你今年几岁了？]}
+    answer: {choice: a, hanzi: 您多大年纪了？, pinyin: nín duō dà niánjì le, meaning: '多大年纪, con 您: a una persona mayor, con respeto.'}
+    comments: []
+  - id: x.produce.nin-duoda-nianji-le
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.nin-duoda-nianji-le
+    targets: [s.nin-duoda-nianji-le]
+    context: [w.nin, w.duoda, w.nianji, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años tiene usted?»'}
+    answer: {meaning: '¿Cuántos años tiene usted?'}
+    comments: []
+  - id: x.listen.ta-de-dianhua-haoma-shi-duoshao
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.ta-de-dianhua-haoma-shi-duoshao
+    targets: [s.ta-de-dianhua-haoma-shi-duoshao]
+    context: [w.ta.he, w.de, w.dianhua, w.haoma, w.shi, w.duoshao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuál es su número de teléfono?'}
+    comments: []
+  - id: x.produce.ta-de-dianhua-haoma-shi-duoshao
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.ta-de-dianhua-haoma-shi-duoshao
+    targets: [s.ta-de-dianhua-haoma-shi-duoshao]
+    context: [w.ta.he, w.de, w.dianhua, w.haoma, w.shi, w.duoshao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuál es su número de teléfono?»'}
+    answer: {meaning: '¿Cuál es su número de teléfono?'}
+    comments: []
+  - id: x.listen.ni-duoda-le
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ni-duoda-le
+    targets: [s.ni-duoda-le]
+    context: [w.ni, w.duoda, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuántos años tienes?'}
+    comments: []
+  - id: x.produce.ni-duoda-le
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ni-duoda-le
+    targets: [s.ni-duoda-le]
+    context: [w.ni, w.duoda, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años tienes?»'}
+    answer: {meaning: '¿Cuántos años tienes?'}
+    comments: []
+  - id: x.choice.age-adult
+    added: '2026-10-16'
+    lang: es
+    type: speak
+    targets: [s.ni-duoda-le]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. Le preguntas la edad a un compañero de clase.', options: [您多大年纪了？, 你今年几岁了？, 你多大了？]}
+    answer: {choice: c, hanzi: 你多大了？, pinyin: nǐ duō dà le, meaning: '多大: a un adulto de tu edad o más joven.'}
+    comments: []
+  - id: x.listen.ta-duoda-nianji-le
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ta-duoda-nianji-le
+    targets: [s.ta-duoda-nianji-le]
+    context: [w.ta.he, w.duoda, w.nianji, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuántos años tiene? (de alguien mayor)'}
+    comments: []
+  - id: x.listen.ni-de-shuxiang-shi-shenme
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.ni-de-shuxiang-shi-shenme
+    targets: [s.ni-de-shuxiang-shi-shenme]
+    context: [w.ni, w.de, w.shuxiang, w.shi, w.shenme]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuál es tu signo del zodiaco chino?'}
+    comments: []
+  - id: x.produce.ni-de-shuxiang-shi-shenme
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.ni-de-shuxiang-shi-shenme
+    targets: [s.ni-de-shuxiang-shi-shenme]
+    context: [w.ni, w.de, w.shuxiang, w.shi, w.shenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuál es tu signo del zodiaco chino?»'}
+    answer: {meaning: '¿Cuál es tu signo del zodiaco chino?'}
+    comments: []
+  - id: x.listen.nin-shu-shenme
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.nin-shu-shenme
+    targets: [s.nin-shu-shenme]
+    context: [w.nin, w.shu.belong, w.shenme]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿De qué signo es usted?'}
+    comments: []
+  - id: x.produce.nin-shu-shenme
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.nin-shu-shenme
+    targets: [s.nin-shu-shenme]
+    context: [w.nin, w.shu.belong, w.shenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿De qué signo es usted?»'}
+    answer: {meaning: '¿De qué signo es usted?'}
+    comments: []
+  - id: x.nuance.zhongguo-zhong-guo
+    added: '2026-10-23'
+    lang: es
+    type: nuance
+    targets: [w.zhongguo]
+    skills: [comprehension, discrimination]
+    prompt: {text: 'En 中国, ¿cuál es guó?'}
+    answer: {meaning: '国, el segundo: «país» (la caja con jade dentro). 中 zhōng «centro» va delante: el país del centro.'}
+    comments: []
+  - id: x.nuance.nage-naben
+    added: '2026-10-23'
+    lang: es
+    type: nuance
+    targets: [w.nage]
+    skills: [comprehension, discrimination]
+    prompt: {text: '哪个国家 y 哪本书: ¿por qué no 哪个书?'}
+    answer: {meaning: 'Entre 哪 y la cosa va su clasificador: 个 para casi todo, 本 para libros. 哪本书？ «¿qué libro?».'}
+    comments: []
+  - id: x.pair.guo-guo
+    added: '2026-10-23'
+    lang: es
+    type: listen
+    targets: [w.guo]
+    pair: [{hanzi: 果, pinyin: guǒ, meaning: 'fruto (en 苹果)'}, {hanzi: 国, pinyin: guó, meaning: 'país'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es guó, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: guó 国, que sube de golpe. 果 guǒ baja primero.'}
+    comments: []
+  - id: x.dictation.meng
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.meng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: meng4, hanzi: 孟, pinyin: Mèng, meaning: Mèng (tu apellido en chino)}
+    comments: []
+  - id: x.produce.meng
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.meng]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «Mèng (tu apellido en chino)»? Escribe el pinyin.'}
+    answer: {typed: meng4, hanzi: 孟, pinyin: Mèng, meaning: Mèng (tu apellido en chino)}
+    comments: []
+  - id: x.read.meng
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.meng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 孟}
+    answer: {hanzi: 孟, pinyin: Mèng, meaning: Mèng (tu apellido en chino)}
+    comments: []
+  - id: x.dictation.mengyichen
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.mengyichen]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: meng4 yi4 chen2, hanzi: 孟逸辰, pinyin: Mèng Yìchén, meaning: Mèng Yìchén (tu nombre en chino)}
+    comments: []
+  - id: x.produce.mengyichen
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.mengyichen]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «Mèng Yìchén (tu nombre en chino)»? Escribe el pinyin.'}
+    answer: {typed: meng4 yi4 chen2, hanzi: 孟逸辰, pinyin: Mèng Yìchén, meaning: Mèng Yìchén (tu nombre en chino)}
+    comments: []
+  - id: x.read.mengyichen
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.mengyichen]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 孟逸辰}
+    answer: {hanzi: 孟逸辰, pinyin: Mèng Yìchén, meaning: Mèng Yìchén (tu nombre en chino)}
+    comments: []
+  - id: x.charsound.shi-3
+    added: 2026-10-23
+    lang: es
+    type: charsound
+    targets: [w.renshi, w.zhishi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 识}
+    answer: {typed: shi2, hanzi: 识, pinyin: shí, meaning: 'Sale en 认识 rènshi «conocer (a alguien)», 知识 zhīshi «conocimiento,
+        saber».'}
+    comments: []
+  - id: x.situation.wo-xing-meng
+    added: '2026-10-23'
+    lang: es
+    type: speak
+    sentence: s.wo-xing-meng
+    targets: [s.wo-xing-meng]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Te preguntan esto. Contesta con tu apellido en chino.', said: 你姓什么？}
+    answer: {meaning: me apellido Mèng}
+    comments: []
+  - id: x.situation.wo-jiao-mengyichen
+    added: '2026-10-23'
+    lang: es
+    type: speak
+    sentence: s.wo-jiao-mengyichen
+    targets: [s.wo-jiao-mengyichen]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Te presentas a un compañero de clase. Dile tu nombre en chino.'}
+    answer: {meaning: me llamo Mèng Yìchén}
+    comments: []
+  - id: x.listen.ni-cai-ta-duo-da-le
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.ni-cai-ta-duo-da-le
+    targets: [s.ni-cai-ta-duo-da-le]
+    context: [w.ni, w.cai.guess, w.ta.he, w.duoda, w.le, w.wo, w.jinnian, w.num.er, w.num.shi, w.sui, w.zuoyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Cuántos años crees que tiene? —Creo que tiene unos veinte.'}
+    comments: []
+  - id: x.listen.pengyou-na-nian-chusheng
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.pengyou-na-nian-chusheng
+    targets: [s.pengyou-na-nian-chusheng]
+    context: [w.ni, w.de, w.pengyou, w.shi, w.na.which, w.nian, w.chusheng, w.ta.he, w.num.yi, w.num.jiu, w.num.wu, w.shu.belong,
+      w.zhu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿En qué año nació tu amigo? —En 1995; es cerdo.'}
+    comments: []
+  - id: x.listen.ba-ma-wo-lai-jieshao
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.ba-ma-wo-lai-jieshao
+    targets: [s.ba-ma-wo-lai-jieshao]
+    context: [w.ba.dad, w.ma.mom, w.wo, w.lai, w.jieshao, w.yixia, w.zhe, w.shi, w.de, w.tongxue]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Papá, mamá, os presento: es mi compañero de clase.'}
+    comments: []
+  - id: x.produce.ba-ma-wo-lai-jieshao
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.ba-ma-wo-lai-jieshao
+    targets: [s.ba-ma-wo-lai-jieshao]
+    context: [w.ba.dad, w.ma.mom, w.wo, w.lai, w.jieshao, w.yixia, w.zhe, w.shi, w.de, w.tongxue]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Papá, mamá, os presento: es mi compañero de clase.»'}
+    answer: {meaning: 'Papá, mamá, os presento: es mi compañero de clase.'}
+    comments: []
+  - id: x.listen.o-ni-shu-shenme
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.o-ni-shu-shenme
+    targets: [s.o-ni-shu-shenme]
+    context: [w.o.interj, w.ni, w.shu.belong, w.shenme]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Ah, ¿y de qué signo eres?'}
+    comments: []
+  - id: x.listen.wo-shu-long-jinnian-ershisi
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.wo-shu-long-jinnian-ershisi
+    targets: [s.wo-shu-long-jinnian-ershisi]
+    context: [w.wo, w.shu.belong, w.long, w.jinnian, w.num.er, w.num.shi, w.num.si, w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Soy dragón; tengo veinticuatro años.}
+    comments: []
+  - id: x.produce.wo-shu-long-jinnian-ershisi
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-shu-long-jinnian-ershisi
+    targets: [s.wo-shu-long-jinnian-ershisi]
+    context: [w.wo, w.shu.belong, w.long, w.jinnian, w.num.er, w.num.shi, w.num.si, w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Soy dragón; tengo veinticuatro años.»'}
+    answer: {meaning: Soy dragón; tengo veinticuatro años.}
+    comments: []
+  - id: x.listen.ta-jinnian-ershi-sui
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.ta-jinnian-ershi-sui
+    targets: [s.ta-jinnian-ershi-sui]
+    context: [w.ta.he, w.jinnian, w.num.er, w.num.shi, w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tiene veinte años.}
+    comments: []
+  - id: x.produce.ta-jinnian-ershi-sui
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.ta-jinnian-ershi-sui
+    targets: [s.ta-jinnian-ershi-sui]
+    context: [w.ta.he, w.jinnian, w.num.er, w.num.shi, w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tiene veinte años.»'}
+    answer: {meaning: Tiene veinte años.}
+    comments: []
+  - id: x.listen.wo-jinnian-ershiwu-sui
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.wo-jinnian-ershiwu-sui
+    targets: [s.wo-jinnian-ershiwu-sui]
+    context: [w.wo, w.jinnian, w.num.er, w.num.shi, w.num.wu, w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo veinticinco años.}
+    comments: []
+  - id: x.produce.wo-jinnian-ershiwu-sui
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-jinnian-ershiwu-sui
+    targets: [s.wo-jinnian-ershiwu-sui]
+    context: [w.wo, w.jinnian, w.num.er, w.num.shi, w.num.wu, w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo veinticinco años.»'}
+    answer: {meaning: Tengo veinticinco años.}
+    comments: []
+  - id: x.listen.wo-1996-nian-chusheng
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.wo-1996-nian-chusheng
+    targets: [s.wo-1996-nian-chusheng]
+    context: [w.wo, w.num.yi, w.num.jiu, w.num.liu, w.nian, w.chusheng]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Nací en 1996.}
+    comments: []
+  - id: x.produce.wo-1996-nian-chusheng
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-1996-nian-chusheng
+    targets: [s.wo-1996-nian-chusheng]
+    context: [w.wo, w.num.yi, w.num.jiu, w.num.liu, w.nian, w.chusheng]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Nací en 1996.»'}
+    answer: {meaning: Nací en 1996.}
+    comments: []
+  - id: x.listen.wo-zai-beijing-chusheng
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.wo-zai-beijing-chusheng
+    targets: [s.wo-zai-beijing-chusheng]
+    context: [w.wo, w.zai.at, w.beijing, w.chusheng]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Nací en Pekín.}
+    comments: []
+  - id: x.produce.wo-zai-beijing-chusheng
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-zai-beijing-chusheng
+    targets: [s.wo-zai-beijing-chusheng]
+    context: [w.wo, w.zai.at, w.beijing, w.chusheng]
+    also: [s.wo-chusheng-zai-beijing]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Nací en Pekín.»'}
+    answer: {meaning: Nací en Pekín.}
+    comments: []
+  - id: x.listen.ni-cai-ta-shi-shei
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.ni-cai-ta-shi-shei
+    targets: [s.ni-cai-ta-shi-shei]
+    context: [w.ni, w.cai.guess, w.ta.he, w.shi, w.shei]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿A que no sabes quién es?'}
+    comments: []
+  - id: x.produce.ni-cai-ta-shi-shei
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.ni-cai-ta-shi-shei
+    targets: [s.ni-cai-ta-shi-shei]
+    context: [w.ni, w.cai.guess, w.ta.he, w.shi, w.shei]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿A que no sabes quién es?»'}
+    answer: {meaning: '¿A que no sabes quién es?'}
+    comments: []
+  - id: x.listen.ta-ershi-sui-zuoyou
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.ta-ershi-sui-zuoyou
+    targets: [s.ta-ershi-sui-zuoyou]
+    context: [w.ta.he, w.num.er, w.num.shi, w.sui, w.zuoyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tiene unos veinte años.}
+    comments: []
+  - id: x.produce.ta-ershi-sui-zuoyou
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.ta-ershi-sui-zuoyou
+    targets: [s.ta-ershi-sui-zuoyou]
+    context: [w.ta.he, w.num.er, w.num.shi, w.sui, w.zuoyou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tiene unos veinte años.»'}
+    answer: {meaning: Tiene unos veinte años.}
+    comments: []
+  - id: x.produce.wo-xing-meng
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-xing-meng
+    targets: [s.wo-xing-meng]
+    context: [w.wo, w.xing, w.meng]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me apellido Mèng.»'}
+    answer: {meaning: Me apellido Mèng.}
+    comments: []
+  - id: x.produce.wo-jiao-mengyichen
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-jiao-mengyichen
+    targets: [s.wo-jiao-mengyichen]
+    context: [w.wo, w.jiao, w.mengyichen]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me llamo Mèng Yìchén.»'}
+    answer: {meaning: Me llamo Mèng Yìchén.}
+    comments: []
+  - id: x.produce.wo-cong-xibanya-lai
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-cong-xibanya-lai
+    targets: [s.wo-cong-xibanya-lai]
+    context: [w.wo, w.cong, w.xibanya, w.lai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Vengo de España (soy de España).»'}
+    answer: {meaning: Vengo de España (soy de España).}
+    comments: []
+  - id: x.listen.dlg-o-wo-ye-shu-long
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.dlg-o-wo-ye-shu-long
+    targets: [s.dlg-o-wo-ye-shu-long]
+    context: [w.ni, w.shu.belong, w.shenme, w.wo, w.long, w.o.interj, w.ye]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿De qué signo eres? —Dragón. —¡Anda, yo también!'}
+    comments: []
+  - id: x.listen.mono-wo-jiao-mengyichen
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.mono-wo-jiao-mengyichen
+    targets: [s.mono-wo-jiao-mengyichen]
+    context: [w.wo, w.jiao, w.mengyichen, w.cong, w.xibanya, w.lai, w.shi, w.gongchengshi, w.zai.progressive, w.xuexi, w.zhongwen,
+      w.juede, w.hen, w.youyisi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Me llamo Mèng Yìchén, soy de España y soy ingeniero. Estoy aprendiendo chino y me parece muy interesante.'}
     comments: []

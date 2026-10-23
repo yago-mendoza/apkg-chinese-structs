@@ -117,3 +117,24 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 上 «subir, empezar» + 班 «turno». 我明天上班 «mañana trabajo». Al salir, 下班.'}
+  - id: w.zhishi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 知识
+    pinyin: zhīshi
+    meaning: {es: 'conocimiento, saber', en: 'knowledge'}
+    accept_pinyin_mismatch: '识 suena átono en 知识 zhīshi, como en la diapositiva y al hablar'
+    source: {origin: class, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: 'Palabra a palabra: 知 «saber» (el de 知道) + 识 «conocer» (el de 认识).'}
+  - id: w.shi.matter
+    use: say
+    role: content
+    kind: word
+    hanzi: 事
+    pinyin: shì
+    meaning: {es: 'asunto, cosa (que hacer)', en: 'matter, thing (to do)'}
+    source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: '我今天有事 «hoy tengo cosas que hacer». 没事 méi shì «no pasa nada, estoy bien».'}

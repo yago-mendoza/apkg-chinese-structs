@@ -23,8 +23,8 @@
 - ✅🃏 姓 xìng [ɕiŋ˥˩] · apellidarse; apellido · _verbo_ · Se pregunta el apellido para poder tratar a alguien de señor o señora. · 姓 xìng «apellido» + 名字 míngzi «nombre» = 姓名 xìngmíng, el nombre completo. · No lo confundas con 星 xīng «estrella» (明星 «famoso», 巨星 [HSK 7] «gran estrella»), en primer tono; 姓 cae.
 - ✅🃏 贵姓 guìxìng [kweɪ˥˩ ɕiŋ˥˩] · su apellido (forma cortés) · _expresión_ · Palabra a palabra: 贵 «valioso, honorable» + 姓 «apellido»: «su honorable apellido». · 您贵姓？ es la forma respetuosa de 你姓什么？ Se contesta con el apellido o con el nombre completo. · 您贵姓？ es para situaciones formales, como el trabajo o los negocios. Sabiendo el apellido, se le llama con 先生 (白先生，您好) y no por el nombre completo.
 - ✅🃏 姓名 xìngmíng [ɕiŋ˥˩ miŋ˧˥] · nombre completo · _sustantivo_
-- ✅🃏 门多萨 Ménduōsà [mən˧˥ twɔ˥ sa˥˩] · Mendoza (mi apellido) · _nombre propio_ · Pura transcripción del sonido: 门 «puerta», 多 «mucho» y 萨 no forman ningún significado.
-- ✅🃏 雅戈 Yǎgē [ja˧˩˧ kɤ˥] · Yago (mi nombre en chino) · _nombre propio_ · Transcripción por el sonido: 雅 «elegante» y 戈 «alabarda», sin otro significado. Solo por diversión.
+- ❌ 门多萨 Ménduōsà [mən˧˥ twɔ˥ sa˥˩] · Mendoza (mi apellido) · _nombre propio_ · Pura transcripción del sonido: 门 «puerta», 多 «mucho» y 萨 no forman ningún significado.
+- ❌ 雅戈 Yǎgē [ja˧˩˧ kɤ˥] · Yago (mi nombre en chino) · _nombre propio_ · Transcripción por el sonido: 雅 «elegante» y 戈 «alabarda», sin otro significado. Solo por diversión.
 - ✅🃏 来 lái [laɪ˧˥] · venir · _verbo_ · Su origen es el dibujo de una planta de trigo, tomado prestado por su sonido para «venir». · 来 es como una marca bonita en el mapa: el sitio donde estás tú. Por eso solo se puede venir hacia aquí.
 - ✅🃏 来自 láizì [laɪ˧˥ tsɯ˥˩] · venir de, ser de · _verbo_ · Algo formal. Hablando, también: 我从西班牙来 wǒ cóng Xībānyá lái.
 - ✅🃏 问 wèn [wən˥˩] · preguntar · _verbo_ · Una boca 口 en la puerta 门, preguntando. · 门 mén le da el sonido: wèn. · Preguntar es wèn, con -n al final; no confundir con wèi, el 为 de 为什么.
@@ -32,7 +32,7 @@
 - ✅ 大卫 Dàwèi [ta˥˩ weɪ˥˩] · David (nombre de ejemplo) · _nombre propio_
 - ✅🃏 先生 xiānsheng [ɕjɛn˥ ʂɤŋ] · señor (tras el apellido) · _sustantivo_ · Detrás del apellido: 白先生 «el señor Bai». Es como se llama a alguien en un trato formal; no por el nombre completo. · 先 «antes» + 生 «nacer»: el que nació antes.
 - ✅🃏 哪 nǎ [na˧˩˧] · qué, cuál · _interrogativo_ · Ves varias cosas y abres la boca 口 para preguntar: «¿cuál de esas 那 quieres?». La boca convierte «ese» en una pregunta, y el tono también cambia: 那 nà baja, 哪 nǎ baja y sube.
-- ✅🃏 国 guó [kwɔ˧˥] · país · _sustantivo_ · En los nombres de países: 中国, 美国. 你是哪国人？ «¿de qué país eres?».
+- ✅🃏 国 guó [kwɔ˧˥] · país · _sustantivo_ · En los nombres de países: 中国, 美国. 你是哪国人？ «¿de qué país eres?». · En 中国, 中 zhōng «centro» va delante y 国 guó «país» detrás: «el país del centro».
 - ✅🃏 会 huì [xweɪ˥˩] · saber (hacer algo); ir a (predicción) · _verbo_ · Saber hacer algo aprendido: 我会说中文. «Saber un dato» es otra palabra, 知道 zhīdào [HSK 1]. · También predice: 明天会下雨 «mañana lloverá».
 - ✅🃏 学习 xuéxí [ɕɥœ˧˥ ɕi˧˥] · estudiar, aprender · _verbo_ · 学 «aprender» + 习 «practicar». 学生 «estudiante» lleva el mismo 学.
 - ✅ 成龙 Chéng Lóng [ʈʂʰɤŋ˧˥ lʊŋ˧˥] · Jackie Chan · _nombre propio_ · Su apellido es 成 y su nombre, 龙 «dragón»: 他姓成，叫成龙.
@@ -51,6 +51,8 @@
 - ✅🃏 德国 Déguó [tɤ˧˥ kwɔ˧˥] · Alemania · _nombre propio_
 - ✅🃏 巴西 Bāxī [pa˥ ɕi˥] · Brasil · _nombre propio_
 - ✅🃏 介绍 jièshào [tɕjɛ˥˩ ʂɑʊ˥˩] · presentar (a alguien) · _verbo_ · 我介绍一下 «os presento»: antes de decir quién es alguien o quién eres tú.
+- ✅🃏 孟 Mèng [mɤŋ˥˩] · Mèng (tu apellido en chino) · _nombre propio_ · Un apellido chino de verdad, el de Mencio, 孟子 Mèngzǐ. Se dice 我姓孟 «me apellido Mèng».
+- ✅🃏 孟逸辰 Mèng Yìchén [mɤŋ˥˩ i˥˩ ʈʂʰən˧˥] · Mèng Yìchén (tu nombre en chino) · _nombre propio_ · Primero el apellido, 孟 Mèng, y luego el nombre, 逸辰 Yìchén: 逸 «sosegado, libre» y 辰 «los astros; la hora». Suena moderno y natural.
 
 ## 是 shì y 十 shí
 
@@ -108,11 +110,8 @@ Misma sílaba, distinto tono.
 - ✅🃏 他们都是中国人吗？ · tāmen dōu shì Zhōngguó rén ma · ¿Son todos chinos?
 - ✅🃏 认识你很高兴！ · rènshi nǐ hěn gāoxìng · ¡Encantado de conocerte!
 - ✅🃏 认识你我也很高兴！ · rènshi nǐ wǒ yě hěn gāoxìng · ¡Yo también estoy encantado de conocerte!
-- ✅🃏 我可以问你吗？ · wǒ kěyǐ wèn nǐ ma · ¿Te puedo preguntar algo?
 - ✅🃏 你姓什么？ · nǐ xìng shénme · ¿Cómo te apellidas?
-- ✅🃏 我姓门多萨。 · wǒ xìng Ménduōsà · Me apellido Mendoza.
 - ✅🃏 您贵姓？ · nín guìxìng · ¿Cuál es su apellido? (cortés)
-- ✅🃏 我叫雅戈。 · wǒ jiào Yǎgē · Me llamo Yago.
 - ✅🃏 他们都来自美国吗？ · tāmen dōu láizì Měiguó ma · ¿Son todos de Estados Unidos?
 - ✅🃏 我来自西班牙。 · wǒ láizì Xībānyá · Soy de España.
 - ✅🃏 请问，你叫什么名字？ · qǐngwèn nǐ jiào shénme míngzi · Disculpa, ¿cómo te llamas?
@@ -120,9 +119,7 @@ Misma sílaba, distinto tono.
 - ✅🃏 明天你来吗？ · míngtiān nǐ lái ma · ¿Vienes mañana?
 - ✅🃏 大家都来了。 · dàjiā dōu lái le · Ya hemos llegado todos.
 - ✅🃏 他的名字是什么？ · tā de míngzi shì shénme · ¿Cuál es su nombre?
-- ✅🃏 门多萨先生，您好！ · Ménduōsà xiānsheng nín hǎo · ¡Buenos días, señor Mendoza!
 - ✅🃏 你是哪国人？ · nǐ shì nǎ guó rén · ¿De qué país eres?
-- ✅🃏 你在哪里？ · nǐ zài nǎlǐ · ¿Dónde estás?
 - ✅🃏 我在西班牙。 · wǒ zài Xībānyá · Estoy en España.
 - ✅🃏 我会说中文。 · wǒ huì shuō Zhōngwén · Sé hablar chino.
 - ✅🃏 我不会说中文。 · wǒ bú huì shuō Zhōngwén · No sé hablar chino.
@@ -149,13 +146,11 @@ Misma sílaba, distinto tono.
 - ✅🃏 你的生日是几月几号？ · nǐ de shēngrì shì jǐ yuè jǐ hào · ¿Cuándo es tu cumpleaños?
 - ✅🃏 我的生日是十一月十一号。 · wǒ de shēngrì shì shí yī yuè shí yī hào · Mi cumpleaños es el 11 de noviembre.
 - ✅🃏 我不忙。 · wǒ bù máng · No estoy ocupado.
-- ✅🃏 王阿姨好！ · Wáng āyí hǎo · ¡Hola, señora Wang!
 - ✅🃏 我和他是朋友。 · wǒ hé tā shì péngyou · Él y yo somos amigos.
 - ✅🃏 我会说中文。真的吗？真的！我在学习中文。 · wǒ huì shuō Zhōngwén zhēn de ma zhēnde wǒ zài xuéxí Zhōngwén · —Hablo chino. —¿En serio? —¡De verdad! Lo estoy estudiando.
 - ✅🃏 他是一个很好的老师。 · tā shì yí ge hěn hǎo de lǎoshī · Es un profesor muy bueno.
 - ✅🃏 你猜一猜他是谁？ · nǐ cāi yi cāi tā shì shéi · Adivina quién es.
 - ✅🃏 你猜她多大？ · nǐ cāi tā duō dà · ¿Cuántos años crees que tiene?
-- ✅🃏 我觉得很好。 · wǒ juéde hěn hǎo · Me parece muy bien.
 - ✅🃏 哪个人是你的朋友？ · nǎge rén shì nǐ de péngyou · ¿Cuál es tu amigo?
 - ✅🃏 你来自哪个国家？ · nǐ láizì nǎge guójiā · ¿De qué país eres?
 - ✅🃏 你是中国学生吗？不是，我是美国学生。 · nǐ shì Zhōngguó xuéshēng ma bú shì wǒ shì Měiguó xuéshēng · —¿Eres estudiante chino? —No, soy estudiante estadounidense.
@@ -179,3 +174,31 @@ Misma sílaba, distinto tono.
 - ✅🃏 我在学习汉语。 · wǒ zài xuéxí Hànyǔ · Estoy estudiando chino.
 - ✅🃏 我会开车。 · wǒ huì kāichē · Sé conducir.
 - ✅🃏 我介绍一下。 · wǒ jièshào yīxià · Os presento (os hago las presentaciones).
+- ✅🃏 你住在哪里？ · nǐ zhù zài nǎlǐ · ¿Dónde vives?
+- ✅🃏 他是谁？ · tā shì shéi · ¿Quién es él?
+- ✅🃏 你的爱好是什么？ · nǐ de àihào shì shénme · ¿Cuál es tu afición?
+- ✅🃏 你几岁？ · nǐ jǐ suì · ¿Cuántos años tienes? (a un niño)
+- ✅🃏 你多大？ · nǐ duō dà · ¿Cuántos años tienes?
+- ✅🃏 你今年几岁了？ · nǐ jīnnián jǐ suì le · ¿Cuántos años tienes ya? (a un niño)
+- ✅🃏 您多大年纪了？ · nín duō dà niánjì le · ¿Cuántos años tiene usted?
+- ✅🃏 他的电话号码是多少？ · tā de diànhuà hàomǎ shì duōshao · ¿Cuál es su número de teléfono?
+- ✅🃏 你多大了？ · nǐ duō dà le · ¿Cuántos años tienes?
+- ✅🃏 他多大年纪了？ · tā duō dà niánjì le · ¿Cuántos años tiene? (de alguien mayor)
+- ✅🃏 你的属相是什么？ · nǐ de shǔxiang shì shénme · ¿Cuál es tu signo del zodiaco chino?
+- ✅🃏 您属什么？ · nín shǔ shénme · ¿De qué signo es usted?
+- ✅🃏 你猜他多大了？我猜他今年二十岁左右。 · nǐ cāi tā duō dà le wǒ cāi tā jīnnián èr shí suì zuǒyòu · —¿Cuántos años crees que tiene? —Creo que tiene unos veinte.
+- ✅🃏 你的朋友是哪年出生的？他是一九九五年出生的，他属猪。 · nǐ de péngyou shì nǎ nián chūshēng de tā shì yī jiǔ jiǔ wǔ nián chūshēng de tā shǔ zhū · —¿En qué año nació tu amigo? —En 1995; es cerdo.
+- ✅🃏 爸，妈，我来介绍一下，这是我的同学。 · bà mā wǒ lái jièshào yīxià zhè shì wǒ de tóngxué · Papá, mamá, os presento: es mi compañero de clase.
+- ✅🃏 哦，你属什么？ · ò nǐ shǔ shénme · Ah, ¿y de qué signo eres?
+- ✅🃏 我属龙，今年二十四岁。 · wǒ shǔ lóng jīnnián èr shí sì suì · Soy dragón; tengo veinticuatro años.
+- ✅🃏 他今年二十岁。 · tā jīnnián èr shí suì · Tiene veinte años.
+- ✅🃏 我今年二十五岁。 · wǒ jīnnián èr shí wǔ suì · Tengo veinticinco años.
+- ✅🃏 我一九九六年出生。 · wǒ yī jiǔ jiǔ liù nián chūshēng · Nací en 1996.
+- ✅🃏 我在北京出生。 · wǒ zài Běijīng chūshēng · Nací en Pekín.
+- ✅🃏 你猜他是谁？ · nǐ cāi tā shì shéi · ¿A que no sabes quién es?
+- ✅🃏 他二十岁左右。 · tā èr shí suì zuǒyòu · Tiene unos veinte años.
+- ✅🃏 我姓孟。 · wǒ xìng Mèng · Me apellido Mèng.
+- ✅🃏 我叫孟逸辰。 · wǒ jiào Mèng Yìchén · Me llamo Mèng Yìchén.
+- ✅🃏 我从西班牙来。 · wǒ cóng Xībānyá lái · Vengo de España (soy de España).
+- ✅🃏 你属什么？我属龙。哦，我也属龙！ · nǐ shǔ shénme wǒ shǔ lóng ò wǒ yě shǔ lóng · —¿De qué signo eres? —Dragón. —¡Anda, yo también!
+- ✅🃏 我叫孟逸辰，我从西班牙来，我是工程师。我在学习中文，我觉得中文很有意思。 · wǒ jiào Mèng Yìchén wǒ cóng Xībānyá lái wǒ shì gōngchéngshī wǒ zài xuéxí Zhōngwén wǒ juéde Zhōngwén hěn yǒuyìsi · Me llamo Mèng Yìchén, soy de España y soy ingeniero. Estoy aprendiendo chino y me parece muy interesante.

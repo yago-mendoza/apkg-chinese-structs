@@ -255,3 +255,40 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 游泳}
     answer: {hanzi: 游泳, pinyin: yóuyǒng, meaning: nadar}
     comments: []
+  - id: x.dictation.chang.sing
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.chang.sing]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chang4, hanzi: 唱, pinyin: chàng, meaning: cantar}
+    comments: []
+  - id: x.produce.chang.sing
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.chang.sing]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «cantar»? Escribe el pinyin.'}
+    answer: {typed: chang4, hanzi: 唱, pinyin: chàng, meaning: cantar}
+    comments: []
+  - id: x.read.chang.sing
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.chang.sing]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 唱}
+    answer: {hanzi: 唱, pinyin: chàng, meaning: cantar}
+    comments: []
+  - id: x.contrast.chang.sing
+    added: 2026-10-23
+    lang: es
+    type: contrast
+    group: g.chang-chang
+    targets: [w.chang.sing]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 唱, pinyin: chàng, meaning: cantar}
+    comments: []

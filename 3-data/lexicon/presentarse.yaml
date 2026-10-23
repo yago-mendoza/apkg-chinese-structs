@@ -21,7 +21,6 @@ entries:
     meaning: {es: España, en: Spain}
     level: 1
     level_reason: 'mi país: lo necesito desde el primer día'
-    connection: {kind: sound, with: [雅], text: '牙 yá da el sonido a 雅 yǎ, el de tu nombre, 雅戈.'}
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Transcripción fonética: los caracteres imitan el sonido, no el significado.'}
@@ -210,7 +209,8 @@ entries:
     source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
     comments: []
   - id: w.menduosa
-    use: say
+    use: drop
+    use_reason: 'sustituido por tu nombre en chino, 孟逸辰 Mèng Yìchén (review 012)'
     role: content
     kind: word
     pos: nombre-propio
@@ -223,7 +223,8 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: 'Pura transcripción del sonido: 门 «puerta», 多 «mucho» y 萨 no forman ningún significado.'}
   - id: w.yage
-    use: say
+    use: drop
+    use_reason: 'sustituido por tu nombre en chino, 孟逸辰 Mèng Yìchén (review 012)'
     role: content
     kind: word
     pos: nombre-propio
@@ -325,6 +326,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'En los nombres de países: 中国, 美国. 你是哪国人？ «¿de qué país eres?».'}
+      - {kind: linguistic, private: false, date: '2026-10-21', text: 'En 中国, 中 zhōng «centro» va delante y 国 guó «país» detrás: «el país del centro».'}
   - id: w.hui.can
     use: say
     role: content
@@ -586,3 +588,31 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: '我介绍一下 «os presento»: antes de decir quién es alguien o quién eres tú.'}
+  - id: w.meng
+    use: say
+    role: content
+    kind: word
+    hanzi: 孟
+    pinyin: Mèng
+    meaning: {es: 'Mèng (tu apellido en chino)', en: 'Meng (your Chinese surname)'}
+    level: 1
+    level_reason: 'tu apellido: se dice desde el primer día'
+    pos: nombre-propio
+    pos_reason: 'apellido; no está en la lista del HSK'
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-20'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: 'Un apellido chino de verdad, el de Mencio, 孟子 Mèngzǐ. Se dice 我姓孟 «me apellido Mèng».'}
+  - id: w.mengyichen
+    use: say
+    role: content
+    kind: word
+    hanzi: 孟逸辰
+    pinyin: Mèng Yìchén
+    meaning: {es: 'Mèng Yìchén (tu nombre en chino)', en: 'Meng Yichen (your Chinese name)'}
+    level: 1
+    level_reason: 'tu nombre: se dice desde el primer día'
+    pos: nombre-propio
+    pos_reason: 'nombre propio; no está en la lista del HSK'
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-20'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: 'Primero el apellido, 孟 Mèng, y luego el nombre, 逸辰 Yìchén: 逸 «sosegado, libre» y 辰 «los astros; la hora». Suena moderno y natural.'}

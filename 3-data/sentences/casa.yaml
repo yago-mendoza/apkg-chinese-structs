@@ -3,6 +3,7 @@
 sentences:
   - id: s.bingxiang-li-you-jidan-ma
     use: say
+    kind: example
     segments:
       - {text: 冰箱, ref: w.bingxiang, pinyin: 'bīngxiāng'}
       - {text: 里, ref: w.li.inside, pinyin: 'lǐ'}
@@ -14,6 +15,7 @@ sentences:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
   - id: s.wo-meiyou-shoubiao
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 没有, ref: w.meiyou, pinyin: 'méiyǒu'}
@@ -23,6 +25,7 @@ sentences:
     source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
   - id: s.wo-de-erji-ne
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 的, ref: w.de, pinyin: 'de'}
@@ -33,6 +36,7 @@ sentences:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
   - id: s.wo-zai-fangjian-li
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 在, ref: w.zai.at, pinyin: 'zài'}
@@ -43,6 +47,7 @@ sentences:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
   - id: s.zhe-bu-shi-wo-de-beizi
     use: say
+    kind: example
     segments:
       - {text: 这, ref: w.zhe, pinyin: 'zhè'}
       - {text: 不, ref: w.bu, pinyin: 'bú', sandhi: 'bù → bú delante de cuarto tono'}
@@ -55,6 +60,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
   - id: s.maikefeng-zai-nali
     use: hear
+    kind: formula
     segments:
       - {text: 麦克风, ref: w.maikefeng, pinyin: 'màikèfēng'}
       - {text: 在, ref: w.zai.at, pinyin: 'zài'}
@@ -62,18 +68,9 @@ sentences:
       - {text: ？}
     translation: {es: '¿Dónde está el micrófono?', en: 'Where''s the microphone?'}
     source: {origin: class, batch: 012-2026-10-19-querer-poder-y-matices, file: 'deberes 2026-10-13', date: '2026-10-13'}
-  - id: s.ni-zhu-zai-nali
-    use: say
-    segments:
-      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
-      - {text: 住, ref: w.zhu.live, pinyin: 'zhù'}
-      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
-      - {text: 哪里, ref: w.nali, pinyin: 'nǎlǐ'}
-      - {text: ？}
-    translation: {es: '¿Dónde vives?', en: 'Where do you live?'}
-    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
   - id: s.wo-chuan-zhe-jian
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 穿, ref: w.chuan.wear, pinyin: 'chuān'}

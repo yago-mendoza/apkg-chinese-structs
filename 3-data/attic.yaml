@@ -28,6 +28,8 @@ items:
       - {text: '扌 «mano»: lanzar con la mano. Contraste con 发 en la nota de 发.'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.fapiao
+    snooze: 013-2026-10-23-pagar-opinar-y-contrastes
+    snooze_reason: 'despierta con 付钱, pero es HSK 4 y está metiendo mucho nivel alto: para pagar en el día a día bastan 付钱 y 扫码'
     hanzi: 发票
     pinyin: fāpiào
     meaning: {es: factura}
@@ -36,8 +38,6 @@ items:
     reason: HSK 4. Muy útil en China para gastos de trabajo, pero de nivel superior.
     notes:
       - {text: '票 piào «billete, papel» da el sonido y el sentido: el papel que se emite (发) al pagar.'}
-    snooze: 003-2026-10-01-comer-dinero-y-contrastes
-    snooze_reason: 'despierta con 钱, pero es HSK 4; entra cuando lleguen pagar y la cuenta (买单, 付钱)'
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.toupiao
     hanzi: 投票
@@ -99,20 +99,6 @@ items:
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
 
   # ---------------------------------------------------------------- lugares, direcciones, países
-  - id: a.shi.city
-    hanzi: 市
-    pinyin: shì
-    meaning: {es: 'ciudad; mercado'}
-    theme: cosas
-    links: [城市, 超市, 市场]
-    reason: 'HSK 2; suelto casi no se usa: entra con 超市 o 城市.'
-    notes:
-      - {text: 'Lleva 巾 «tela» con un tejado 亠: un puesto con toldo. No confundir con 师, 帅, 币 y 布, que también llevan 巾.'}
-    source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-
-  # ---------------------------------------------------------------- tiempo y números
-
-  # ---------------------------------------------------------------- personas y oficios
   - id: a.zhuanjia
     snooze: 006-2026-10-06-edad-numeros-y-familia
     snooze_reason: 'HSK 3; 医生 basta por ahora'
@@ -250,6 +236,8 @@ items:
       - {text: '我理解 «te entiendo»: comprender a alguien o sus razones, más que entender una frase (eso es 明白 o 懂).'}
     source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
   - id: a.queding
+    snooze: 013-2026-10-23-pagar-opinar-y-contrastes
+    snooze_reason: 'despierta con 一定, que ya cubre «seguro»; 确定 es HSK 3 y espera a que suba el HSK 2'
     hanzi: 确定
     pinyin: quèdìng
     meaning: {es: seguro; asegurarse}
@@ -259,18 +247,6 @@ items:
     notes:
       - {text: '你确定吗？ «¿estás seguro?».'}
       - {text: 'Volvió en el examen de 想 y 觉得 del review 011: 我还不确定 «todavía no estoy seguro», 不确定今天能不能做 «no sé seguro si hoy podré hacerlo».'}
-    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
-  - id: a.tongyi
-    snooze: 010-2026-10-11-construir-numeros-y-movimiento
-    snooze_reason: 'despierta con 同学, pero es HSK 3: para contestar bastan 对 y 好的'
-    hanzi: 同意
-    pinyin: tóngyì
-    meaning: {es: estar de acuerdo}
-    theme: cortesia
-    links: [我同意, 同学]
-    reason: HSK 3, de tu lista de 16 frases de conversación (我理解, 你确定吗, 我同意, 好主意…), investigada por tu cuenta.
-    notes:
-      - {text: 我同意 «estoy de acuerdo». Para contestar rápido ya tienes 对 y 好的.}
     source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
   - id: a.zhuyi
     hanzi: 主意
@@ -467,18 +443,6 @@ items:
     notes:
       - {text: '过 «pasar, cruzar» + 来 «hacia aquí»: 走过来 «venir andando hasta aquí», 跑过来 «venir corriendo». Con 去, hacia allí: 走过去. Igual funcionan 上来, 上去, 下来 y 下去 [HSK 3].'}
     source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
-  - id: a.saoma
-    hanzi: 扫码
-    pinyin: sǎo mǎ
-    meaning: {es: 'escanear el código (para pagar)'}
-    theme: compras
-    links: [付钱, 手机, 微信, 支付宝]
-    reason: 'Para pagar, cuando llegue cómo se paga; ahora mismo es un hueco: «Pagar».'
-    level: 3
-    level_reason: 'No está en la lista; es de pagar en tiendas, que llegará en HSK 2 o 3.'
-    notes:
-      - {text: '刷卡还是扫码？ «¿con tarjeta o con el código?». En China casi todo se paga escaneando un código QR con el móvil.'}
-    source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: a.dabao
     hanzi: 打包
     pinyin: dǎbāo
@@ -579,6 +543,8 @@ items:
     notes: []
     source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
   - id: a.jixu
+    snooze: 013-2026-10-23-pagar-opinar-y-contrastes
+    snooze_reason: 'despierta con 开始, pero es palabra de un ejercicio de pinyin: espera a salir en clase con su sentido'
     hanzi: 继续
     pinyin: jìxù
     meaning: {es: 'seguir, continuar'}
@@ -765,3 +731,118 @@ items:
     notes:
       - {text: 'No confundir con 常常 chángcháng «a menudo» (ya en el mazo).'}
     source: {batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: a.sikao
+    hanzi: 思考
+    pinyin: sīkǎo
+    meaning: {es: 'reflexionar, pensar a fondo'}
+    theme: entender
+    links: [思想, 想一想]
+    reason: 'HSK 4, de tu consulta sobre 意 y 思. Para pensar en el día a día basta 想 (让我想一下).'
+    notes:
+      - {text: '我需要思考一下 «necesito reflexionarlo». Más formal que 想.'}
+    source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+  - id: a.sixiang
+    hanzi: 思想
+    pinyin: sīxiǎng
+    meaning: {es: 'pensamiento, ideas, mentalidad'}
+    theme: entender
+    links: [思考, 传统]
+    reason: 'HSK 3, de tu consulta sobre 意 y 思; se usa para ideas e ideología, no para lo que piensas ahora.'
+    notes:
+      - {text: '他的思想很传统 «tiene ideas muy tradicionales». Para «creo que…», 我觉得.'}
+    source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+  - id: a.dagai
+    hanzi: 大概
+    pinyin: dàgài
+    meaning: {es: 'aproximadamente; probablemente'}
+    theme: numeros
+    links: [大约]
+    reason: 'HSK 3, de tu consulta sobre los kilos. Para aproximar ya tienes 左右 (三公斤左右).'
+    notes:
+      - {text: '大概三公斤 «unos tres kilos», delante de la cantidad; 左右 va detrás.'}
+    source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+  - id: a.renao
+    hanzi: 热闹
+    pinyin: rènao
+    meaning: {es: 'animado, con mucho bullicio'}
+    theme: describir
+    links: [热闹的]
+    reason: 'HSK 4, de la lista de pinyin zh / ch / sh / r de la clase del 23: espera a salir en clase con su sentido.'
+    notes: []
+    source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
+  - id: a.chuchai
+    hanzi: 出差
+    pinyin: chūchāi
+    meaning: {es: 'viajar por trabajo'}
+    theme: trabajo
+    links: [出差了]
+    reason: 'HSK 5, de la lista de pinyin de la clase del 23. Útil en el trabajo; espera a que llegue el vocabulario de oficina.'
+    notes: []
+    source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
+  - id: a.chushi
+    hanzi: 厨师
+    pinyin: chúshī
+    meaning: {es: 'cocinero'}
+    theme: trabajo
+    links: [做饭]
+    reason: 'HSK 6, de la lista de pinyin de la clase del 23.'
+    notes: []
+    source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
+  - id: a.changshi
+    snooze: 013-2026-10-23-pagar-opinar-y-contrastes
+    snooze_reason: 'despierta con 知识, que entra hoy para oír; es HSK 4 y de un ejercicio de pinyin: espera a salir en clase'
+    hanzi: 常识
+    pinyin: chángshí
+    meaning: {es: 'sentido común; cultura general'}
+    theme: entender
+    links: [知识]
+    reason: 'HSK 4, de la lista de pinyin de la clase del 23.'
+    notes: []
+    source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
+  - id: a.shishi
+    hanzi: 事实
+    pinyin: shìshí
+    meaning: {es: 'hecho, realidad'}
+    theme: entender
+    links: [其实]
+    reason: 'HSK 3, de la lista de pinyin de la clase del 23.'
+    notes: []
+    source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
+  - id: a.shoushu
+    hanzi: 手术
+    pinyin: shǒushù
+    meaning: {es: 'operación (quirúrgica)'}
+    theme: describir
+    links: [医院, 医生]
+    reason: 'HSK 4, de la lista de pinyin de la clase del 23; entra cuando llegue la salud.'
+    notes: []
+    source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
+  - id: a.chongzhi
+    hanzi: 充值
+    pinyin: chōngzhí
+    meaning: {es: 'recargar (el móvil, una tarjeta)'}
+    theme: compras
+    links: [手机, 扫码]
+    reason: 'De la lista de pinyin de la clase del 23. En China se usa a diario (recargar el móvil o la tarjeta del metro); espera a salir con su sentido.'
+    level: 4
+    level_reason: 'no está en la lista del HSK; es vocabulario de servicios y aplicaciones'
+    notes: []
+    source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
+  - id: a.changcheng
+    hanzi: 长城
+    pinyin: Chángchéng
+    meaning: {es: 'la Gran Muralla'}
+    theme: lugares
+    links: [北京, 爬山]
+    reason: 'HSK 3, de la lista de pinyin de la clase del 23; espera a hablar de viajes por China.'
+    notes: []
+    source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
+  - id: a.ranshao
+    hanzi: 燃烧
+    pinyin: ránshāo
+    meaning: {es: 'arder, quemar'}
+    theme: clima
+    links: [火]
+    reason: 'HSK 4, de la lista de pinyin de la clase del 23; poco de día a día.'
+    notes: []
+    source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}

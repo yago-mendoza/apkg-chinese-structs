@@ -353,3 +353,27 @@ Los apuntes se archivan intactos, pero el repositorio es público y YAGO pidió 
 ### 2026-10-21 · FSRS optimizado, cada 10 lotes
 
 La decisión del 2 de octubre dejaba pendiente, «en unas semanas», optimizar FSRS con los repasos de YAGO. El 21 de octubre, con 835 repasos del mazo en el ordenador (unos 420 de un día posterior al primero), lo pulsó él: el optimizador usó 670 y sustituyó los parámetros por defecto. Los tres primeros salen en 0,04 días: una palabra recién vista le dura poco más de una hora, coherente con su 21 % de «Otra vez». Con tan pocos repasos el ajuste es aproximado, así que se repite: YAGO pidió que se le recuerde cada 10 lotes más o menos. Sin reprogramar lo ya programado («Reschedule cards on change» apagado): cada tarjeta adopta los parámetros en su siguiente repaso, sin avalancha. Vive en: `docs/owner.md` (cómo y cuándo), `2-digests/state.md` (el próximo).
+
+### 2026-10-23 · Fórmula o ejemplo, aplicado; Compras se divide
+
+La clasificación propuesta en el review 012 se aplica tal cual (no corrigió ninguna fila), con sus tres dudas resueltas como proponía: los diálogos y las ristras de números son ejemplos, y las preguntas fijas en tercera persona, fórmulas. Las 638 frases llevan su `kind`; las 63 fórmulas que vivían en un tema que no era su situación se mueven a él con sus 88 tarjetas. A la vez, Compras se divide en «Compras» (tiendas, precios, pesos, entradas) y «Comida y bebida», como se anunció, para que las tarjetas cambien de subdeck una sola vez. Al aplicarlo salió un fallo: el código reconocía una frase porque no tenía `kind`, así que, clasificadas todas, ninguna exigía ya tarjetas, sin aviso; ahora se reconoce por sus segmentos (`is_sentence`), con su prueba. Vive en: `3-data/`, `anki.py` (`is_sentence`, `required_cards`, `cmd_scaffold`).
+
+### 2026-10-23 · El contexto que se ve, antes que la tarjeta
+
+YAGO (inbox del lote 013): le salió el matiz «我都喜欢 y 我什么都喜欢» sin haber visto nunca 喜欢, que solo iba de contexto en sus 58 tarjetas; propuso que una tarjeta no salga antes que su contexto. Decidido, con un matiz que da la medida: cuenta lo que la tarjeta enseña escrito en el anverso (la consigna y sus opciones, el material de construir y el contexto de las que muestran hanzi: huecos, matices, contrastes, estructuras, comprensión), no las palabras que suenan en una de oír ni las que hay que decir en una frase, porque ver frases desde el principio es una regla suya. Al mezclar, una tarjeta espera a que haya salido alguna de cada palabra que enseña si esa palabra está en el mismo tramo; si está en otro (otro nivel), su primera tarjeta se adelanta delante. Descartado adelantar sin más todas las palabras de contexto: leer subía al 43 % de las próximas 400 nuevas y decir bajaba al 14 %. Con la regla dentro de la mezcla, la proporción no cambia y ninguna tarjeta enseña una palabra sin ver. Vive en: `docs/goal.md` («Siempre mezclado»), `docs/design.md` («Anki», «Garantías»), `anki.py` (`shown_context`, `prompt_words_finder`, `interleave_streams`, `context_first`), pruebas en `tests/`.
+
+### 2026-10-23 · Lo que te dicen, en un bocadillo; el chino de matices y contrastes, grande
+
+En las notas del review 012, sobre una tarjeta de situación («Alguien dice algo… «Pekín no hace calor, ¿verdad?»»): que lo que te dicen salga como un bocadillo, con el hanzi y el pinyin grandes, y debajo otro bocadillo con «…», en todas; y sobre 我们下午见吧, que detrás le traduzca lo que le dijeron. Sobre los matices y contrastes: «no las escribas en formato línea, que se ve pequeño», grandes y con una línea solo para «/» entre medio. Decidido: un campo `said` en la consigna (el chino que te dicen; si es una frase del mazo, con su formato y su audio; si no, con `said_es` para traducirlo), que la tarjeta dibuja delante con su audio y detrás con su traducción; las 15 tarjetas donde alguien decía algo, pasadas a él. El chino de la consigna de un matiz y los miembros de un contraste, uno debajo de otro, grandes, con «/» entre medio. Vive en: `docs/design.md` («Tarjetas»), `anki.py` (`card_fields`, `stack_html`, `nuance_pieces`, `said_translation`), `check` y pruebas.
+
+### 2026-10-23 · «Uso real», un recuadro propio
+
+YAGO preguntó si los comentarios de uso coloquial (机票 frente a 飞机票, 吃饭了吗 como saludo) podían tener su propio recuadro. Decidido: un tipo de comentario `usage`, «Uso real», con su color, entre la mnemotecnia y las notas: cómo se dice de verdad, separado de la explicación verificada. Vive en: `docs/design.md` («Comentarios»), `3-data/README.md`, `anki.py` (`card_fields`, CSS).
+
+### 2026-10-23 · La trampa del hueco vacío
+
+YAGO pidió una tarjeta «exactamente como una trampa», un hueco en el que no va nada (大家都＿忙: ni 是 ni hace falta 很). Un hueco tapaba siempre una palabra de la frase. Decidido: un hueco puede ser un sitio vacío detrás de una palabra (`gap_after`), con las opciones en la consigna y «(nada)» entre ellas; `check` exige que esa palabra esté en la frase. Vive en: `docs/design.md` («Tarjetas»), `anki.py` (`render_sentence`, `validate`), pruebas en `tests/`.
+
+### 2026-10-23 · Su nombre en chino, 孟逸辰
+
+YAGO pidió cambiar 雅戈 Yǎgē y 门多萨 Ménduōsà por 孟逸辰 Mèng Yìchén. Cambia la respuesta de las tarjetas, así que van con IDs nuevos: las 13 tarjetas del nombre antiguo se retiran del mazo (en Anki, `--prune` no borra las que tienen repasos) y 门多萨 y 雅戈 quedan descartados con su motivo. Las lecturas de comprensión, el sonido de 多 y los calcos de 叫 y 姓, que lo usaban de ejemplo, pasan al nombre nuevo conservando su ID: lo que preguntan no cambia. Vive en: `3-data/`.

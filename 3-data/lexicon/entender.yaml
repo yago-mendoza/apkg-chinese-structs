@@ -32,6 +32,8 @@ entries:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: '这个是什么意思？ «¿qué significa esto?». Es el mismo 意思 de 不好意思, literalmente «no es buena intención».'}
+      - {kind: mnemonic, private: false, date: '2026-10-21', text: '意: una voz 音 que sale del corazón 心: una intención. 思: un campo 田 de ideas cultivado en el corazón 心: pensar.'}
+      - {kind: linguistic, private: false, date: '2026-10-21', text: '什么意思？ «¿qué significa?»; 我的意思是… «lo que quiero decir es…». 你是什么意思？ puede sonar desafiante; para preguntar sin tensión, 你是说…？ «¿quieres decir que…?». 意 y 思 casi nunca van solos.'}
     accept_pinyin_mismatch: '思 va en tono neutro en el habla: yìsi'
   - id: w.qingchu
     use: say
@@ -76,6 +78,7 @@ entries:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Va detrás de un adjetivo para pedir «un poco más así»: 慢一点 «más despacio», 便宜一点 «más barato». «Un poco» de una acción es 一下: 等一下.'}
+      - {kind: linguistic, private: false, date: '2026-10-22', text: 'Delante de un nombre, «un poco de»: 一点水. Detrás de un verbo, «un poco»: 吃一点. Con 有 delante del adjetivo es una queja: 有点贵 «es un poco caro», frente a 贵一点 «un poco más caro». Lo contrario de 一点 es 很多.'}
     pos: adverbio
     pos_reason: 'Detrás de un adjetivo, «un poco (más)»: 慢一点.'
   - id: w.zheyang
@@ -144,3 +147,64 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: '我忘记了 «se me ha olvidado». Al hablar se oye mucho 忘了 a secas.'}
+  - id: w.hua.words
+    use: say
+    role: content
+    kind: word
+    hanzi: 话
+    pinyin: huà
+    meaning: {es: 'palabras, lo que se dice', en: 'words, what is said'}
+    source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: 'El mismo 话 de 说话 «hablar» y 电话 «teléfono»: 我不明白他的话 «no entiendo lo que dice».'}
+  - id: w.biede
+    use: say
+    role: function
+    kind: word
+    hanzi: 别的
+    pinyin: biéde
+    meaning: {es: 'otro, otra cosa', en: 'other, something else'}
+    source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: '我想看看别的 «quiero ver otra cosa». No confundir con 别 «no (lo hagas)».'}
+  - id: w.o.interj
+    use: hear
+    role: function
+    kind: word
+    hanzi: 哦
+    pinyin: ò
+    meaning: {es: '¡ah!, ya veo', en: 'oh, I see'}
+    connection: {kind: sound, with: [我], text: '我 wǒ da el sonido a 哦 ò: la boca 口 dice «¡oh!».'}
+    use_reason: 'interjección de la clase (哦，你属什么？); la lista la pone en HSK 7, pero se oye en cualquier conversación'
+    source: {origin: class, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
+    comments: []
+  - id: g.hua-hua
+    kind: group
+    basis: soundalike
+    title: 话 huà y 花 huā
+    explanation: 'La misma sílaba: 话 cae; 花 es alto y plano.'
+    members:
+      - {ref: w.hua.words, cue: 'cae: 说话, 电话'}
+      - {ref: w.hua.flower, cue: 'alto y plano'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-23'}
+    comments: []
+  - id: w.kandao
+    use: say
+    role: content
+    kind: word
+    hanzi: 看到
+    pinyin: kàndào
+    meaning: {es: 'ver (llegar a ver)', en: 'to see, to catch sight of'}
+    source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: 'Palabra a palabra: 看 «mirar» + 到 «llegar»: mirar y conseguirlo. 我看到你了！ «¡te he visto!».'}
+  - id: w.tingdao
+    use: say
+    role: content
+    kind: word
+    hanzi: 听到
+    pinyin: tīngdào
+    meaning: {es: 'oír (llegar a oír)', en: 'to hear'}
+    source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: 'Como 看到: 听 «escuchar» + 到 «llegar». 你听到了吗？ «¿lo has oído?».'}

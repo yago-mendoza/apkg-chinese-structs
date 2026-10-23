@@ -712,28 +712,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Mi madre es médica.»'}
     answer: {meaning: Mi madre es médica.}
     comments: []
-  - id: x.listen.ni-hao-ayi
-    added: 2026-10-06
-    lang: es
-    type: listen
-    sentence: s.ni-hao-ayi
-    targets: [s.ni-hao-ayi]
-    context: [e.nihao, w.ayi]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¡Hola, señora!'}
-    comments: []
-  - id: x.produce.ni-hao-ayi
-    added: 2026-10-06
-    lang: es
-    type: produce
-    sentence: s.ni-hao-ayi
-    targets: [s.ni-hao-ayi]
-    context: [e.nihao, w.ayi]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¡Hola, señora!»'}
-    answer: {meaning: '¡Hola, señora!'}
-    comments: []
   - id: x.listen.nage-ren-shi-ni-de-baba-ma
     added: 2026-10-06
     lang: es
@@ -777,28 +755,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Papá y mamá son altos los dos.»'}
     answer: {meaning: Papá y mamá son altos los dos.}
-    comments: []
-  - id: x.listen.shushu-ayi-hao
-    added: 2026-10-06
-    lang: es
-    type: listen
-    sentence: s.shushu-ayi-hao
-    targets: [s.shushu-ayi-hao]
-    context: [w.shushu, w.ayi, w.hao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¡Hola, señores!'}
-    comments: []
-  - id: x.produce.shushu-ayi-hao
-    added: 2026-10-06
-    lang: es
-    type: produce
-    sentence: s.shushu-ayi-hao
-    targets: [s.shushu-ayi-hao]
-    context: [w.shushu, w.ayi, w.hao]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¡Hola, señores!»'}
-    answer: {meaning: '¡Hola, señores!'}
     comments: []
   - id: x.listen.wo-yeye-he-nainai-dou-hen-hao
     added: 2026-10-06
@@ -1100,4 +1056,133 @@ exercises:
     prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
     question: {es: '¿Quién es la mujer y cuántos años cree el que habla que tiene?'}
     answer: {meaning: 'Es su tía; cree que tiene unos veinte años, porque parece muy joven.'}
+    comments: []
+  - id: x.dictation.ba.dad
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.ba.dad]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ba4, hanzi: 爸, pinyin: bà, meaning: papá (al llamarlo)}
+    comments: []
+  - id: x.produce.ba.dad
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.ba.dad]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «papá (al llamarlo)»? Escribe el pinyin.'}
+    answer: {typed: ba4, hanzi: 爸, pinyin: bà, meaning: papá (al llamarlo)}
+    comments: []
+  - id: x.read.ba.dad
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.ba.dad]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 爸}
+    answer: {hanzi: 爸, pinyin: bà, meaning: papá (al llamarlo)}
+    comments: []
+  - id: x.dictation.ma.mom
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.ma.mom]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ma1, hanzi: 妈, pinyin: mā, meaning: mamá (al llamarla)}
+    comments: []
+  - id: x.produce.ma.mom
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.ma.mom]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «mamá (al llamarla)»? Escribe el pinyin.'}
+    answer: {typed: ma1, hanzi: 妈, pinyin: mā, meaning: mamá (al llamarla)}
+    comments: []
+  - id: x.read.ma.mom
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.ma.mom]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 妈}
+    answer: {hanzi: 妈, pinyin: mā, meaning: mamá (al llamarla)}
+    comments: []
+  - id: x.contrast.ba.dad
+    added: 2026-10-23
+    lang: es
+    type: contrast
+    group: g.ba-ba
+    targets: [w.ba.dad]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 爸, pinyin: bà, meaning: papá (al llamarlo)}
+    comments: []
+  - id: x.contrast.ma.mom
+    added: 2026-10-23
+    lang: es
+    type: contrast
+    group: g.ma-ma
+    targets: [w.ma.mom]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 妈, pinyin: mā, meaning: mamá (al llamarla)}
+    comments: []
+  - id: x.listen.ni-fumu-duo-da-nianji-le
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.ni-fumu-duo-da-nianji-le
+    targets: [s.ni-fumu-duo-da-nianji-le]
+    context: [w.ni, w.fumu, w.duoda, w.nianji, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Qué edad tienen tus padres?'}
+    comments: []
+  - id: x.produce.ni-fumu-duo-da-nianji-le
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.ni-fumu-duo-da-nianji-le
+    targets: [s.ni-fumu-duo-da-nianji-le]
+    context: [w.ni, w.fumu, w.duoda, w.nianji, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué edad tienen tus padres?»'}
+    answer: {meaning: '¿Qué edad tienen tus padres?'}
+    comments: []
+  - id: x.listen.wo-baba-wushier-mama-wushi
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.wo-baba-wushier-mama-wushi
+    targets: [s.wo-baba-wushier-mama-wushi]
+    context: [w.wo, w.baba, w.num.wu, w.num.shi, w.num.er, w.sui, w.mama]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Mi padre tiene cincuenta y dos años, y mi madre, cincuenta.'}
+    comments: []
+  - id: x.produce.wo-baba-wushier-mama-wushi
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-baba-wushier-mama-wushi
+    targets: [s.wo-baba-wushier-mama-wushi]
+    context: [w.wo, w.baba, w.num.wu, w.num.shi, w.num.er, w.sui, w.mama]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mi padre tiene cincuenta y dos años, y mi madre, cincuenta.»'}
+    answer: {meaning: 'Mi padre tiene cincuenta y dos años, y mi madre, cincuenta.'}
+    comments: []
+  - id: x.listen.wo-yeye-jiushisan-sui-le
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.wo-yeye-jiushisan-sui-le
+    targets: [s.wo-yeye-jiushisan-sui-le]
+    context: [w.wo, w.yeye, w.num.jiu, w.num.shi, w.num.san, w.sui, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mi abuelo tiene ya noventa y tres años.}
     comments: []

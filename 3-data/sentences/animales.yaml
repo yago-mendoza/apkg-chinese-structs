@@ -3,6 +3,7 @@
 sentences:
   - id: s.wo-xihuan-gou-ye-xihuan-mao
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
@@ -16,6 +17,7 @@ sentences:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
   - id: s.mama-shu-ji-baba-shu-zhu
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 妈妈, ref: w.mama, pinyin: 'māma'}
@@ -31,6 +33,7 @@ sentences:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
   - id: s.wo-xiang-qu-kan-xiongmao
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
@@ -40,19 +43,9 @@ sentences:
       - {text: 。}
     translation: {es: 'Quiero ir a ver pandas.', en: 'I want to go and see pandas.'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
-  - id: s.ni-de-shuxiang-shi-shenme
-    use: say
-    segments:
-      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
-      - {text: 的, ref: w.de, pinyin: 'de'}
-      - {text: 属相, ref: w.shuxiang, pinyin: 'shǔxiang'}
-      - {text: 是, ref: w.shi, pinyin: 'shì'}
-      - {text: 什么, ref: w.shenme, pinyin: 'shénme'}
-      - {text: ？}
-    translation: {es: '¿Cuál es tu signo del zodiaco chino?', en: 'What''s your Chinese zodiac sign?'}
-    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
   - id: s.wo-de-shuxiang-shi-tu
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 的, ref: w.de, pinyin: 'de'}
@@ -64,6 +57,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
   - id: s.ta-shu-gou
     use: say
+    kind: example
     segments:
       - {text: 他, ref: w.ta.he, pinyin: 'tā'}
       - {text: 属, ref: w.shu.belong, pinyin: 'shǔ'}
@@ -71,17 +65,9 @@ sentences:
       - {text: 。}
     translation: {es: 'Es del año del perro.', en: 'He was born in the year of the dog.'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
-  - id: s.nin-shu-shenme
-    use: say
-    segments:
-      - {text: 您, ref: w.nin, pinyin: 'nín'}
-      - {text: 属, ref: w.shu.belong, pinyin: 'shǔ'}
-      - {text: 什么, ref: w.shenme, pinyin: 'shénme'}
-      - {text: ？}
-    translation: {es: '¿De qué signo es usted?', en: 'What''s your sign? (polite)'}
-    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
   - id: s.ni-you-mao-ma
     use: say
+    kind: example
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 有, ref: w.you.have, pinyin: 'yǒu'}

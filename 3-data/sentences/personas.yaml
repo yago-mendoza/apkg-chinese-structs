@@ -3,6 +3,7 @@
 sentences:
   - id: s.ta-shi-wo-de-laoshi
     use: hear
+    kind: example
     segments:
       - {text: 她, ref: w.ta.she, pinyin: tā}
       - {text: 是, ref: w.shi, pinyin: shì}
@@ -13,6 +14,7 @@ sentences:
     translation: {es: Ella es mi profesora., en: She is my teacher.}
   - id: s.women-shi-pengyou
     use: say
+    kind: example
     segments:
       - {text: 我们, ref: w.women, pinyin: wǒmen}
       - {text: 是, ref: w.shi, pinyin: shì}
@@ -21,6 +23,7 @@ sentences:
     translation: {es: Somos amigos., en: We are friends.}
   - id: s.nin-shi-women-de-laoshi-ma
     use: hear
+    kind: example
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21', note: 'nombre ilegible
         en los apuntes (Xīm?): se ha quitado'}
     segments:
@@ -34,6 +37,7 @@ sentences:
     translation: {es: '¿Es usted nuestra profesora?', en: 'Are you our teacher?'}
   - id: s.dui-wo-shi-nimen-de-laoshi
     use: hear
+    kind: example
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21', note: 'nombre ilegible
         en los apuntes (Xīm?): se ha quitado'}
     segments:
@@ -46,17 +50,9 @@ sentences:
       - {text: 老师, ref: w.laoshi, pinyin: lǎoshī}
       - {text: 。}
     translation: {es: 'Sí, soy vuestro profesor.', en: 'Yes, I''m your teacher.'}
-  - id: s.ta-shi-shei
-    use: say
-    segments:
-      - {text: 他, ref: w.ta.he, pinyin: tā}
-      - {text: 是, ref: w.shi, pinyin: shì}
-      - {text: 谁, ref: w.shei, pinyin: shéi}
-      - {text: ？}
-    translation: {es: '¿Quién es él?', en: 'Who is he?'}
-    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
   - id: s.dlg-ni-shi-shei
     use: hear
+    kind: example
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 是, ref: w.shi, pinyin: shì}
@@ -79,6 +75,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.zhege-ren-shi-wo-de-pengyou
     use: say
+    kind: example
     segments:
       - {text: 这, ref: w.zhe, pinyin: 'zhè'}
       - {text: 个, ref: w.ge, pinyin: 'ge'}
@@ -90,20 +87,9 @@ sentences:
       - {text: 。}
     translation: {es: 'Esta persona es mi amigo.', en: 'This person is my friend.'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-  - id: s.fuwuyuan-wo-yao-zhege
-    use: say
-    segments:
-      - {text: 服务员, ref: w.fuwuyuan, pinyin: 'fúwùyuán'}
-      - {text: ，}
-      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
-      - {text: 要, ref: w.yao, pinyin: 'yào'}
-      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
-      - {text: 个, ref: w.ge, pinyin: 'ge'}
-      - {text: 。}
-    translation: {es: 'Camarero, quiero este.', en: 'Waiter, I want this one.'}
-    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
   - id: s.ta-bu-shi-wo-de-laoshi
     use: say
+    kind: example
     segments:
       - {text: 他, ref: w.ta.he, pinyin: 'tā'}
       - {text: 不, ref: w.bu, pinyin: 'bú', sandhi: true}
@@ -116,6 +102,7 @@ sentences:
     source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
   - id: s.ni-xiang-gen-wo-yiqi-chifan-ma
     use: say
+    kind: example
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
@@ -128,6 +115,7 @@ sentences:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
   - id: s.shei-lai-le
     use: say
+    kind: example
     segments:
       - {text: 谁, ref: w.shei, pinyin: 'shéi'}
       - {text: 来, ref: w.lai, pinyin: 'lái'}
@@ -137,6 +125,7 @@ sentences:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
   - id: s.ta-shi-wo-de-tongxue
     use: hear
+    kind: example
     segments:
       - {text: 他, ref: w.ta.he, pinyin: tā}
       - {text: 是, ref: w.shi, pinyin: shì}
@@ -148,6 +137,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.tamen-dou-shi-nianqingren
     use: say
+    kind: example
     segments:
       - {text: 他们, ref: w.tamen, pinyin: 'tāmen'}
       - {text: 都, ref: w.dou, pinyin: 'dōu'}
@@ -158,6 +148,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
   - id: s.zhege-shi-ni-de-pengyou-ma
     use: hear
+    kind: example
     segments:
       - {text: 这, ref: w.zhe, pinyin: 'zhè'}
       - {text: 个, ref: w.ge, pinyin: 'ge'}
@@ -171,6 +162,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'chat: dictados de la profesora al empezar la clase', date: '2026-10-15'}
   - id: s.zhege-ren-shi-bu-shi-ni-de-pengyou
     use: hear
+    kind: example
     segments:
       - {text: 这, ref: w.zhe, pinyin: 'zhè'}
       - {text: 个, ref: w.ge, pinyin: 'ge'}
@@ -186,6 +178,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'chat: dictados de la profesora al empezar la clase', date: '2026-10-15'}
   - id: s.na-ge-ren-shi-ni-de-pengyou
     use: hear
+    kind: example
     segments:
       - {text: 那, ref: w.na.that, pinyin: 'nà'}
       - {text: 个, ref: w.ge, pinyin: 'ge'}
@@ -199,6 +192,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'chat: dictados de la profesora al empezar la clase', date: '2026-10-15'}
   - id: s.shengbing-bu-neng-youyong
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
@@ -218,6 +212,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.zhe-gen-ni-mei-guanxi
     use: hear
+    kind: example
     segments:
       - {text: 这, ref: w.zhe, pinyin: 'zhè'}
       - {text: 跟, ref: w.gen, pinyin: 'gēn'}
@@ -229,6 +224,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.women-guanxi-hen-hao
     use: hear
+    kind: example
     segments:
       - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
       - {text: 关系, ref: w.guanxi, pinyin: 'guānxi'}
@@ -239,6 +235,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.ni-shi-shei
     use: say
+    kind: formula
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 是, ref: w.shi, pinyin: 'shì'}
@@ -248,11 +245,12 @@ sentences:
     source: {origin: inbox, batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
   - id: s.bieren-dou-lai-le
     use: say
+    kind: example
     segments:
       - {text: 别人, ref: w.bieren, pinyin: 'biéren'}
       - {text: 都, ref: w.dou, pinyin: 'dōu'}
       - {text: 来, ref: w.lai, pinyin: 'lái'}
       - {text: 了, ref: w.le, pinyin: 'le'}
       - {text: 。}
-    translation: {es: 'Los demás ya han venido.', en: 'The others have already come.'}
+    translation: {es: 'Todos los demás ya han venido.', en: 'The others have already come.'}
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}

@@ -3,6 +3,7 @@
 sentences:
   - id: s.ni-hao-ma
     use: say
+    kind: formula
     listen: true
     listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
@@ -13,6 +14,7 @@ sentences:
     translation: {es: '¿Qué tal estás?', en: 'How are you?'}
   - id: s.wo-hen-hao-ni-ne
     use: say
+    kind: formula
     listen: true
     listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
@@ -26,6 +28,7 @@ sentences:
     translation: {es: 'Estoy bien, ¿y tú?', en: 'I''m fine, and you?'}
   - id: s.wo-ye-hen-hao
     use: say
+    kind: formula
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 也, ref: w.ye, pinyin: yě}
@@ -35,6 +38,7 @@ sentences:
     translation: {es: Yo también estoy bien., en: I'm fine too.}
   - id: s.huanying-ni
     use: say
+    kind: formula
     listen: true
     listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
@@ -45,6 +49,7 @@ sentences:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: s.ni-zenmeyang
     use: say
+    kind: formula
     listen: true
     listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
@@ -55,6 +60,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
   - id: s.chifan-le-ma
     use: say
+    kind: formula
     segments:
       - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
       - {text: 了, ref: w.le, pinyin: le}
@@ -64,6 +70,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
   - id: s.ni-huilai-le
     use: say
+    kind: formula
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 回来, ref: w.huilai, pinyin: huílai}
@@ -73,6 +80,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.qu-nali-a
     use: say
+    kind: formula
     listen: true
     listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
@@ -84,6 +92,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.chuqu-a
     use: hear
+    kind: formula
     segments:
       - {text: 出去, ref: w.chuqu, pinyin: chūqu}
       - {text: 啊, ref: w.a.particle, pinyin: a}
@@ -92,6 +101,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.women-xiawu-jian-ba
     use: say
+    kind: formula
     segments:
       - {text: 我们, ref: w.women, pinyin: wǒmen}
       - {text: 下午, ref: w.xiawu, pinyin: xiàwǔ}
@@ -102,6 +112,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.zuijin-zenmeyang
     use: say
+    kind: formula
     segments:
       - {text: 最近, ref: w.zuijin, pinyin: zuìjìn}
       - {text: 怎么样, ref: w.zenmeyang, pinyin: zěnmeyàng}
@@ -110,6 +121,7 @@ sentences:
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
   - id: s.haojiu-bujian-zuijin-zenmeyang
     use: say
+    kind: formula
     segments:
       - {text: 好久不见, ref: e.haojiubujian, pinyin: hǎojiǔ bú jiàn, sandhi: true}
       - {text: ，}
@@ -120,6 +132,7 @@ sentences:
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
   - id: s.zuijin-mang-ma
     use: say
+    kind: formula
     listen: true
     listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
@@ -131,16 +144,18 @@ sentences:
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
   - id: s.ni-hai-hao-ma
     use: say
+    kind: formula
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 还, ref: w.hai.still, pinyin: hái}
       - {text: 好, ref: w.hao, pinyin: hǎo}
       - {text: 吗, ref: w.ma, pinyin: ma}
       - {text: ？}
-    translation: {es: '¿Estás bien?', en: 'Are you OK?'}
+    translation: {es: '¿Estás bien? (preguntado con preocupación)', en: 'Are you OK?'}
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
   - id: s.chi-le-ni-ne
     use: say
+    kind: formula
     segments:
       - {text: 吃, ref: w.chi, pinyin: chī}
       - {text: 了, ref: w.le, pinyin: le}
@@ -150,19 +165,9 @@ sentences:
       - {text: ？}
     translation: {es: 'Sí, ya he comido, ¿y tú?', en: 'I have, and you?'}
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
-  - id: s.zhege-zenmeyang
-    use: say
-    listen: true
-    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
-    segments:
-      - {text: 这, ref: w.zhe, pinyin: zhè}
-      - {text: 个, ref: w.ge, pinyin: ge}
-      - {text: 怎么样, ref: w.zenmeyang, pinyin: zěnmeyàng}
-      - {text: ？}
-    translation: {es: '¿Qué tal este?', en: 'How about this one?'}
-    source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
   - id: s.wo-zuijin-hen-mang
     use: say
+    kind: formula
     listen: true
     listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
@@ -175,6 +180,7 @@ sentences:
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
   - id: s.zaoshang-hao-laoshi
     use: say
+    kind: formula
     segments:
       - {text: 早上好, ref: e.zaoshanghao, pinyin: zǎoshang hǎo}
       - {text: ，}
@@ -184,6 +190,7 @@ sentences:
     source: {origin: class, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}
   - id: s.wo-zaoshang-he-cha
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 早上, ref: w.zaoshang, pinyin: zǎoshang}
@@ -194,6 +201,7 @@ sentences:
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: sin-fecha_videos_de_mi_teacher.md, date: '2026-10-05'}
   - id: s.xiexie-ni-de-liwu
     use: say
+    kind: example
     segments:
       - {text: 谢谢, ref: e.xiexie, pinyin: 'xièxie'}
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
@@ -204,6 +212,7 @@ sentences:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
   - id: s.women-mingtian-qu-zenmeyang
     use: say
+    kind: formula
     segments:
       - {text: 我们, ref: w.women, pinyin: wǒmen}
       - {text: 明天, ref: w.mingtian, pinyin: míngtiān}
@@ -215,6 +224,7 @@ sentences:
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
   - id: s.huanying-huilai
     use: say
+    kind: formula
     segments:
       - {text: 欢迎, ref: w.huanying, pinyin: huānyíng}
       - {text: 回来, ref: w.huilai, pinyin: huílai}
@@ -223,6 +233,7 @@ sentences:
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
   - id: s.ni-hai-zai-ma
     use: hear
+    kind: formula
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 还, ref: w.hai.still, pinyin: hái}
@@ -233,6 +244,7 @@ sentences:
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
   - id: s.dlg-huilai
     use: hear
+    kind: example
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 回来, ref: w.huilai, pinyin: huílai}
@@ -250,6 +262,7 @@ sentences:
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
   - id: s.ni-xianzai-mang-ma
     use: say
+    kind: formula
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 现在, ref: w.xianzai, pinyin: xiànzài}
@@ -260,6 +273,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.xiaci-jian
     use: say
+    kind: formula
     segments:
       - {text: 下次, ref: w.xiaci, pinyin: xiàcì}
       - {text: 见, ref: w.jian, pinyin: jiàn}
@@ -268,6 +282,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.ni-zai-mang-shenme
     use: say
+    kind: formula
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 在, ref: w.zai.progressive, pinyin: 'zài'}
@@ -278,6 +293,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.ni-xian-mang-ba
     use: say
+    kind: formula
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 先, ref: w.xian.first, pinyin: 'xiān'}
@@ -288,11 +304,128 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.zuijin-hai-hao-ma
     use: say
+    kind: formula
     segments:
       - {text: 最近, ref: w.zuijin, pinyin: 'zuìjìn'}
       - {text: 还, ref: w.hai.still, pinyin: 'hái'}
       - {text: 好, ref: w.hao, pinyin: 'hǎo'}
       - {text: 吗, ref: w.ma, pinyin: 'ma'}
       - {text: ？}
-    translation: {es: '¿Todo bien últimamente?', en: 'Is everything OK lately?'}
+    translation: {es: '¿Sigue todo bien últimamente?', en: 'Is everything OK lately?'}
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.ni-hai-jide-wo-ma
+    use: say
+    kind: formula
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 还, ref: w.hai.still, pinyin: 'hái'}
+      - {text: 记得, ref: w.jide, pinyin: 'jìde'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Todavía te acuerdas de mí?', en: 'Do you still remember me?'}
+    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.yiqie-dou-hen-hao
+    use: hear
+    kind: formula
+    segments:
+      - {text: 一切, ref: w.yiqie, pinyin: 'yíqiè'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 好, ref: w.hao, pinyin: 'hǎo'}
+      - {text: 。}
+    translation: {es: 'Todo va bien.', en: 'Everything is fine.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.nimen-chifan-le-ma
+    use: hear
+    kind: formula
+    segments:
+      - {text: 你们, ref: w.nimen, pinyin: nǐmen}
+      - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Ya habéis comido?', en: 'Have you eaten yet?'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wang-ayi-hao
+    use: hear
+    kind: formula
+    segments:
+      - {text: 王, ref: w.wang.surname, pinyin: Wáng}
+      - {text: 阿姨, ref: w.ayi, pinyin: āyí}
+      - {text: 好, ref: w.hao, pinyin: hǎo}
+      - {text: ！}
+    translation: {es: '¡Hola, señora Wang!', en: 'Hello, Auntie Wang!'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.ni-hao-ayi
+    use: say
+    kind: formula
+    segments:
+      - {text: 你好, ref: e.nihao, pinyin: 'nǐ hǎo'}
+      - {text: ，}
+      - {text: 阿姨, ref: w.ayi, pinyin: 'āyí'}
+      - {text: ！}
+    translation: {es: '¡Hola, señora!', en: 'Hello, auntie!'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: deberes 2026-10-06, date: '2026-10-06'}
+  - id: s.shushu-ayi-hao
+    use: say
+    kind: formula
+    segments:
+      - {text: 叔叔, ref: w.shushu, pinyin: 'shūshu'}
+      - {text: 、}
+      - {text: 阿姨, ref: w.ayi, pinyin: 'āyí'}
+      - {text: 好, ref: w.hao, pinyin: 'hǎo'}
+      - {text: ！}
+    translation: {es: '¡Hola, señores!', en: 'Hello, uncle and auntie!'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.mingtian-jian
+    use: say
+    kind: formula
+    segments:
+      - {text: 明天, ref: w.mingtian, pinyin: míngtiān}
+      - {text: 见, ref: w.jian, pinyin: jiàn}
+      - {text: ！}
+    translation: {es: ¡Hasta mañana!, en: See you tomorrow!}
+  - id: s.wo-zou-le
+    use: say
+    kind: formula
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 走, ref: w.zou, pinyin: zǒu}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: Me voy., en: I'm off.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-yao-zou-le
+    use: say
+    kind: formula
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 走, ref: w.zou, pinyin: zǒu}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: 'Ya me voy (me tengo que ir).', en: 'I have to go.'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-yao-huiqu-le
+    use: say
+    kind: formula
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 回去, ref: w.huiqu, pinyin: huíqu}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: Tengo que volver., en: I have to go back.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.meng-xiansheng-ninhao
+    use: say
+    kind: formula
+    segments:
+      - {text: 孟, ref: w.meng, pinyin: 'Mèng'}
+      - {text: 先生, ref: w.xiansheng, pinyin: 'xiānsheng'}
+      - {text: ，}
+      - {text: 您好, ref: e.ninhao, pinyin: 'nín hǎo'}
+      - {text: ！}
+    translation: {es: '¡Buenos días, señor Mèng!', en: 'Hello, Mr Meng!'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-20'}

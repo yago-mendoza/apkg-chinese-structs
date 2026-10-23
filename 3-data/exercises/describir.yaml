@@ -612,17 +612,6 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Pekín es grande.}
     comments: []
-  - id: x.produce.tai-hao-le
-    added: 2026-09-29
-    lang: es
-    type: produce
-    sentence: s.tai-hao-le
-    targets: [s.tai-hao-le]
-    context: [w.tai, w.hao, w.le]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¡Genial!»'}
-    answer: {meaning: ¡Genial!}
-    comments: []
   - id: x.listen.wode-shouji-shi-bai-de
     added: 2026-09-29
     lang: es
@@ -978,17 +967,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Es guapa y también delgada.»'}
     answer: {meaning: Es guapa y también delgada.}
-    comments: []
-  - id: x.listen.ni-hen-piaoliang
-    added: 2026-10-02
-    lang: es
-    type: listen
-    sentence: s.ni-hen-piaoliang
-    targets: [s.ni-hen-piaoliang]
-    context: [w.ni, w.hen, w.piaoliang]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: ¡Eres muy guapa!}
     comments: []
   - id: x.contrast.ben
     added: 2026-10-02
@@ -1727,17 +1705,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¡Qué pronto has llegado!»'}
     answer: {meaning: ¡Qué pronto has llegado!}
     comments: []
-  - id: x.produce.ni-shuo-de-hen-hao
-    added: 2026-10-11
-    lang: es
-    type: produce
-    sentence: s.ni-shuo-de-hen-hao
-    targets: [s.ni-shuo-de-hen-hao]
-    context: [w.ni, w.shuo, w.de.complement, w.hen, w.hao]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Hablas muy bien.»'}
-    answer: {meaning: Hablas muy bien.}
-    comments: []
   - id: x.listen.ta-pao-de-hen-kuai
     added: 2026-10-11
     lang: es
@@ -1770,28 +1737,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Es un gato precioso.»'}
     answer: {meaning: Es un gato precioso.}
-    comments: []
-  - id: x.produce.ni-hao-piaoliang
-    added: 2026-10-11
-    lang: es
-    type: produce
-    sentence: s.ni-hao-piaoliang
-    targets: [s.ni-hao-piaoliang]
-    context: [w.ni, w.hao, w.piaoliang]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¡Qué guapa estás!»'}
-    answer: {meaning: ¡Qué guapa estás!}
-    comments: []
-  - id: x.produce.ni-zhen-piaoliang
-    added: 2026-10-11
-    lang: es
-    type: produce
-    sentence: s.ni-zhen-piaoliang
-    targets: [s.ni-zhen-piaoliang]
-    context: [w.ni, w.zhen, w.piaoliang]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¡Qué guapa eres!»'}
-    answer: {meaning: ¡Qué guapa eres!}
     comments: []
   - id: x.produce.wo-bu-gaoxing
     added: 2026-10-11
@@ -2176,28 +2121,6 @@ exercises:
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 一切, pinyin: yi qie}
     answer: {typed: '24', hanzi: 一切, pinyin: yíqiè, meaning: 'todo (en general, la situación)'}
     comments: []
-  - id: x.listen.yiqie-dou-hen-hao
-    added: 2026-10-19
-    lang: es
-    type: listen
-    sentence: s.yiqie-dou-hen-hao
-    targets: [s.yiqie-dou-hen-hao]
-    context: [w.yiqie, w.dou, w.hen, w.hao]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Todo va bien.}
-    comments: []
-  - id: x.produce.bie-tai-lei-le
-    added: 2026-10-19
-    lang: es
-    type: produce
-    sentence: s.bie-tai-lei-le
-    targets: [s.bie-tai-lei-le]
-    context: [w.bie, w.tai, w.lei, w.le]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¡No te canses demasiado!»'}
-    answer: {meaning: ¡No te canses demasiado!}
-    comments: []
   - id: x.produce.tai-piaoliang-le
     added: 2026-10-19
     lang: es
@@ -2325,4 +2248,637 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Esto es muy importante.»'}
     answer: {meaning: Esto es muy importante.}
+    comments: []
+  - id: x.nuance.youqu-youyisi
+    added: '2026-10-23'
+    lang: es
+    type: nuance
+    targets: [w.youqu, w.youyisi]
+    skills: [comprehension, discrimination]
+    prompt: {text: '有趣 y 有意思: ¿cuál se oye más hablando?'}
+    answer: {meaning: '有意思: más coloquial y para todo (这个人很有意思 «tiene gracia»). 有趣 destaca lo entretenido o curioso.'}
+    comments: []
+  - id: x.compose.fotos-de-un-viaje
+    added: '2026-10-23'
+    lang: es
+    type: compose
+    targets: [s.wo-juede-bucuo, s.hen-you-yisi, s.wo-juede-yiban]
+    words: [w.juede, w.bucuo, w.youyisi, w.hen, w.yiban.ordinary]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. Una amiga te enseña en el móvil las fotos de su viaje. Unas te encantan y otras te dejan igual.'}
+    answer: {meaning: 'Tres grados de opinión: 很有意思 (te encanta), 不错 (bien), 一般 (normalito).'}
+    comments: []
+  - id: x.nuance.shuo-de-bu-hao-bu-dui
+    added: '2026-10-23'
+    lang: es
+    type: nuance
+    targets: [w.de.complement]
+    skills: [comprehension, discrimination]
+    prompt: {text: '你说得不好 y 你说得不对: ¿qué cambia?'}
+    answer: {meaning: '说得不好: hablas mal (pronunciación, soltura). 说得不对: lo que dices es incorrecto. Si no entiendes a alguien, 我不明白.'}
+    comments: []
+  - id: x.nuance.zhege-budui-shuode-budui
+    added: '2026-10-23'
+    lang: es
+    type: nuance
+    targets: [w.de.complement, w.dui]
+    skills: [comprehension, discrimination]
+    prompt: {text: '这个不对 y 你说得不对: ¿por qué solo uno lleva 得?'}
+    answer: {meaning: '这个不对 juzga una cosa: «esto está mal». 你说得不对 juzga cómo sale una acción: verbo + 得 + valoración.'}
+    comments: []
+  - id: x.contrast.duo
+    added: 2026-10-23
+    lang: es
+    type: contrast
+    group: g.duo-dou
+    targets: [w.duo]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 多, pinyin: duō, meaning: 'mucho, muchos'}
+    comments: []
+  - id: x.dictation.bucuo
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.bucuo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bu2 cuo4, hanzi: 不错, pinyin: búcuò, meaning: 'nada mal, bastante bien'}
+    comments: []
+  - id: x.produce.bucuo
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.bucuo]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «nada mal, bastante bien»? Escribe el pinyin.'}
+    answer: {typed: bu2 cuo4, hanzi: 不错, pinyin: búcuò, meaning: 'nada mal, bastante bien'}
+    comments: []
+  - id: x.read.bucuo
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.bucuo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 不错}
+    answer: {hanzi: 不错, pinyin: búcuò, meaning: 'nada mal, bastante bien'}
+    comments: []
+  - id: x.tones.bucuo
+    added: 2026-10-23
+    lang: es
+    type: tones
+    targets: [w.bucuo]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 不错, pinyin: bu cuo}
+    answer: {typed: '24', hanzi: 不错, pinyin: búcuò, meaning: 'nada mal, bastante bien'}
+    comments: []
+  - id: x.dictation.yiban.ordinary
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.yiban.ordinary]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi4 ban1, hanzi: 一般, pinyin: yìbān, meaning: 'normal, regular'}
+    comments: []
+  - id: x.produce.yiban.ordinary
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.yiban.ordinary]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «normal, regular»? Escribe el pinyin.'}
+    answer: {typed: yi4 ban1, hanzi: 一般, pinyin: yìbān, meaning: 'normal, regular'}
+    comments: []
+  - id: x.read.yiban.ordinary
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.yiban.ordinary]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 一般}
+    answer: {hanzi: 一般, pinyin: yìbān, meaning: 'normal, regular'}
+    comments: []
+  - id: x.tones.yiban.ordinary
+    added: 2026-10-23
+    lang: es
+    type: tones
+    targets: [w.yiban.ordinary]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 一般, pinyin: yi ban}
+    answer: {typed: '41', hanzi: 一般, pinyin: yìbān, meaning: 'normal, regular'}
+    comments: []
+  - id: x.dictation.youdian
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.youdian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: you3 dian3, hanzi: 有点, pinyin: yǒudiǎn, meaning: un poco (algo negativo)}
+    comments: []
+  - id: x.cloze.youdian
+    added: 2026-10-23
+    lang: es
+    type: cloze
+    sentence: s.youdian-gui
+    gap: w.youdian
+    targets: [w.youdian]
+    context: [w.gui]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Es un poco caro.»'}
+    answer: {typed: you3 dian3, hanzi: 有点, pinyin: yǒudiǎn, meaning: un poco (algo negativo)}
+    comments: []
+  - id: x.read.youdian
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.youdian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 有点}
+    answer: {hanzi: 有点, pinyin: yǒudiǎn, meaning: un poco (algo negativo)}
+    comments: []
+  - id: x.tones.youdian
+    added: 2026-10-23
+    lang: es
+    type: tones
+    targets: [w.youdian]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 有点, pinyin: you dian}
+    answer: {typed: '33', hanzi: 有点, pinyin: yǒudiǎn, meaning: un poco (algo negativo)}
+    comments: []
+  - id: x.dictation.xiao.small
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.xiao.small]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiao3, hanzi: 小, pinyin: xiǎo, meaning: pequeño}
+    comments: []
+  - id: x.produce.xiao.small
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.xiao.small]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «pequeño»? Escribe el pinyin.'}
+    answer: {typed: xiao3, hanzi: 小, pinyin: xiǎo, meaning: pequeño}
+    comments: []
+  - id: x.read.xiao.small
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.xiao.small]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 小}
+    answer: {hanzi: 小, pinyin: xiǎo, meaning: pequeño}
+    comments: []
+  - id: x.dictation.xin.new
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.xin.new]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xin1, hanzi: 新, pinyin: xīn, meaning: nuevo}
+    comments: []
+  - id: x.produce.xin.new
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.xin.new]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «nuevo»? Escribe el pinyin.'}
+    answer: {typed: xin1, hanzi: 新, pinyin: xīn, meaning: nuevo}
+    comments: []
+  - id: x.read.xin.new
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.xin.new]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 新}
+    answer: {hanzi: 新, pinyin: xīn, meaning: nuevo}
+    comments: []
+  - id: x.dictation.lao.old
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.lao.old]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lao3, hanzi: 老, pinyin: lǎo, meaning: 'viejo, mayor'}
+    comments: []
+  - id: x.produce.lao.old
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.lao.old]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «viejo, mayor»? Escribe el pinyin.'}
+    answer: {typed: lao3, hanzi: 老, pinyin: lǎo, meaning: 'viejo, mayor'}
+    comments: []
+  - id: x.read.lao.old
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.lao.old]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 老}
+    answer: {hanzi: 老, pinyin: lǎo, meaning: 'viejo, mayor'}
+    comments: []
+  - id: x.dictation.yuan.far
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.yuan.far]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yuan3, hanzi: 远, pinyin: yuǎn, meaning: lejos}
+    comments: []
+  - id: x.produce.yuan.far
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.yuan.far]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «lejos»? Escribe el pinyin.'}
+    answer: {typed: yuan3, hanzi: 远, pinyin: yuǎn, meaning: lejos}
+    comments: []
+  - id: x.read.yuan.far
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.yuan.far]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 远}
+    answer: {hanzi: 远, pinyin: yuǎn, meaning: lejos}
+    comments: []
+  - id: x.dictation.huai.bad
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.huai.bad]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: huai4, hanzi: 坏, pinyin: huài, meaning: 'malo; estropeado, roto'}
+    comments: []
+  - id: x.produce.huai.bad
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.huai.bad]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «malo; estropeado, roto»? Escribe el pinyin.'}
+    answer: {typed: huai4, hanzi: 坏, pinyin: huài, meaning: 'malo; estropeado, roto'}
+    comments: []
+  - id: x.read.huai.bad
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.huai.bad]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 坏}
+    answer: {hanzi: 坏, pinyin: huài, meaning: 'malo; estropeado, roto'}
+    comments: []
+  - id: x.dictation.yiding
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.yiding]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi2 ding4, hanzi: 一定, pinyin: yídìng, meaning: 'seguro, sin falta'}
+    comments: []
+  - id: x.cloze.yiding
+    added: 2026-10-23
+    lang: es
+    type: cloze
+    sentence: s.wo-yiding-lai
+    gap: w.yiding
+    targets: [w.yiding]
+    context: [w.wo, w.lai]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Vengo seguro.»'}
+    answer: {typed: yi2 ding4, hanzi: 一定, pinyin: yídìng, meaning: 'seguro, sin falta'}
+    comments: []
+  - id: x.read.yiding
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.yiding]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 一定}
+    answer: {hanzi: 一定, pinyin: yídìng, meaning: 'seguro, sin falta'}
+    comments: []
+  - id: x.tones.yiding
+    added: 2026-10-23
+    lang: es
+    type: tones
+    targets: [w.yiding]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 一定, pinyin: yi ding}
+    answer: {typed: '24', hanzi: 一定, pinyin: yídìng, meaning: 'seguro, sin falta'}
+    comments: []
+  - id: x.dictation.xiao.laugh
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.xiao.laugh]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiao4, hanzi: 笑, pinyin: xiào, meaning: 'reír, sonreír'}
+    comments: []
+  - id: x.produce.xiao.laugh
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.xiao.laugh]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «reír, sonreír»? Escribe el pinyin.'}
+    answer: {typed: xiao4, hanzi: 笑, pinyin: xiào, meaning: 'reír, sonreír'}
+    comments: []
+  - id: x.read.xiao.laugh
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.xiao.laugh]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 笑}
+    answer: {hanzi: 笑, pinyin: xiào, meaning: 'reír, sonreír'}
+    comments: []
+  - id: x.contrast.chang
+    added: 2026-10-23
+    lang: es
+    type: contrast
+    group: g.chang-chang
+    targets: [w.chang]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 长, pinyin: cháng, meaning: largo}
+    comments: []
+  - id: x.contrast.yiban.ordinary
+    added: 2026-10-23
+    lang: es
+    type: contrast
+    group: g.yiban-yiban
+    targets: [w.yiban.ordinary]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 一般, pinyin: yìbān, meaning: 'normal, regular'}
+    comments: []
+  - id: x.contrast.xiao.small
+    added: 2026-10-23
+    lang: es
+    type: contrast
+    group: g.xiao-xiao
+    targets: [w.xiao.small]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 小, pinyin: xiǎo, meaning: pequeño}
+    comments: []
+  - id: x.contrast.yuan.far
+    added: 2026-10-23
+    lang: es
+    type: contrast
+    group: g.yuan-yuan
+    targets: [w.yuan.far]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 远, pinyin: yuǎn, meaning: lejos}
+    comments: []
+  - id: x.contrast.xiao.laugh
+    added: 2026-10-23
+    lang: es
+    type: contrast
+    group: g.xiao-xiao
+    targets: [w.xiao.laugh]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 笑, pinyin: xiào, meaning: 'reír, sonreír'}
+    comments: []
+  - id: x.listen.ni-zhen-nianqing
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.ni-zhen-nianqing
+    targets: [s.ni-zhen-nianqing]
+    context: [w.ni, w.zhen, w.nianqing]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Qué joven estás!}
+    comments: []
+  - id: x.produce.ni-zhen-nianqing
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.ni-zhen-nianqing
+    targets: [s.ni-zhen-nianqing]
+    context: [w.ni, w.zhen, w.nianqing]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Qué joven estás!»'}
+    answer: {meaning: ¡Qué joven estás!}
+    comments: []
+  - id: x.produce.wo-juede-bucuo
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-juede-bucuo
+    targets: [s.wo-juede-bucuo]
+    context: [w.wo, w.juede, w.bucuo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me parece bien.»'}
+    answer: {meaning: Me parece bien.}
+    comments: []
+  - id: x.produce.wo-juede-keyi
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-juede-keyi
+    targets: [s.wo-juede-keyi]
+    context: [w.wo, w.juede, w.keyi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me parece bien, vale.»'}
+    answer: {meaning: 'Me parece bien, vale.'}
+    comments: []
+  - id: x.produce.wo-juede-bu-tai-hao
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-juede-bu-tai-hao
+    targets: [s.wo-juede-bu-tai-hao]
+    context: [w.wo, w.juede, w.bu, w.tai, w.hao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No me parece muy bien.»'}
+    answer: {meaning: No me parece muy bien.}
+    comments: []
+  - id: x.produce.wo-juede-yiban
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-juede-yiban
+    targets: [s.wo-juede-yiban]
+    context: [w.wo, w.juede, w.yiban.ordinary]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me parece normalito.»'}
+    answer: {meaning: Me parece normalito.}
+    comments: []
+  - id: x.produce.wo-bu-tai-xihuan
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-bu-tai-xihuan
+    targets: [s.wo-bu-tai-xihuan]
+    context: [w.wo, w.bu, w.tai, w.xihuan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No me gusta mucho.»'}
+    answer: {meaning: No me gusta mucho.}
+    comments: []
+  - id: x.produce.jintian-youdian-leng
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.jintian-youdian-leng
+    targets: [s.jintian-youdian-leng]
+    context: [w.jintian, w.youdian, w.leng]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hoy hace un poco de frío.»'}
+    answer: {meaning: Hoy hace un poco de frío.}
+    comments: []
+  - id: x.produce.dajia-dou-mang
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.dajia-dou-mang
+    targets: [s.dajia-dou-mang]
+    context: [w.dajia, w.dou, w.mang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Todo el mundo está ocupado.»'}
+    answer: {meaning: Todo el mundo está ocupado.}
+    comments: []
+  - id: x.produce.zhege-bu-gui
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.zhege-bu-gui
+    targets: [s.zhege-bu-gui]
+    context: [w.zhe, w.ge, w.bu, w.gui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Esto no es caro.»'}
+    answer: {meaning: Esto no es caro.}
+    comments: []
+  - id: x.produce.ta-bu-shi-laoshi
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.ta-bu-shi-laoshi
+    targets: [s.ta-bu-shi-laoshi]
+    context: [w.ta.she, w.bu, w.shi, w.laoshi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No es profesora.»'}
+    answer: {meaning: No es profesora.}
+    comments: []
+  - id: x.listen.wo-yiding-lai
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.wo-yiding-lai
+    targets: [s.wo-yiding-lai]
+    context: [w.wo, w.yiding, w.lai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Vengo seguro.}
+    comments: []
+  - id: x.produce.wo-yiding-lai
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-yiding-lai
+    targets: [s.wo-yiding-lai]
+    context: [w.wo, w.yiding, w.lai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Vengo seguro.»'}
+    answer: {meaning: Vengo seguro.}
+    comments: []
+  - id: x.produce.zhe-shi-wo-de-xin-diannao
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.zhe-shi-wo-de-xin-diannao
+    targets: [s.zhe-shi-wo-de-xin-diannao]
+    context: [w.zhe, w.shi, w.wo, w.de, w.xin.new, w.diannao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Es mi ordenador nuevo.»'}
+    answer: {meaning: Es mi ordenador nuevo.}
+    comments: []
+  - id: x.produce.zhege-beizi-tai-xiao-le
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.zhege-beizi-tai-xiao-le
+    targets: [s.zhege-beizi-tai-xiao-le]
+    context: [w.zhe, w.ge, w.beizi, w.tai, w.xiao.small, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Este vaso es demasiado pequeño.»'}
+    answer: {meaning: Este vaso es demasiado pequeño.}
+    comments: []
+  - id: x.produce.zhege-diannao-hen-lao-le
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.zhege-diannao-hen-lao-le
+    targets: [s.zhege-diannao-hen-lao-le]
+    context: [w.zhe, w.ge, w.diannao, w.hen, w.lao.old, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Este ordenador ya es muy viejo.»'}
+    answer: {meaning: Este ordenador ya es muy viejo.}
+    comments: []
+  - id: x.produce.ni-jia-yuan-ma
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.ni-jia-yuan-ma
+    targets: [s.ni-jia-yuan-ma]
+    context: [w.ni, w.jia, w.yuan.far, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Tu casa está lejos?»'}
+    answer: {meaning: '¿Tu casa está lejos?'}
+    comments: []
+  - id: x.produce.wo-de-shouji-huai-le
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-de-shouji-huai-le
+    targets: [s.wo-de-shouji-huai-le]
+    context: [w.wo, w.de, w.shouji, w.huai.bad, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Se me ha roto el móvil.»'}
+    answer: {meaning: Se me ha roto el móvil.}
+    comments: []
+  - id: x.listen.dlg-ni-juede-zhege-zenmeyang
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.dlg-ni-juede-zhege-zenmeyang
+    targets: [s.dlg-ni-juede-zhege-zenmeyang]
+    context: [w.ni, w.juede, w.zhe, w.ge, w.zenmeyang, w.wo, w.bucuo, w.ye, w.women, w.mai, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Qué te parece este? —Me parece bien. —A mí también, ¡nos lo llevamos!'}
+    comments: []
+  - id: x.produce.jintian-wo-bu-lei
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.jintian-wo-bu-lei
+    targets: [s.jintian-wo-bu-lei]
+    context: [w.jintian, w.wo, w.bu, w.lei]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hoy no estoy cansado.»'}
+    answer: {meaning: Hoy no estoy cansado.}
     comments: []

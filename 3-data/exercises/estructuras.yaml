@@ -127,10 +127,10 @@ exercises:
     type: pattern
     targets: [st.jiao]
     context: [w.jiao]
-    sentence: s.wo-jiao-yage
+    sentence: s.wo-jiao-mengyichen
     reveal: []
     skills: [grammar, discrimination]
-    prompt: {text: '¿Cuál se dice así en chino? «Me llamo Yago.»'}
+    prompt: {text: '¿Cuál se dice así en chino? «Me llamo Mèng Yìchén.»'}
     answer: {meaning: '叫 ya es el verbo, «llamarse»: no lleva 是.'}
     comments: []
   - id: x.calque.xing
@@ -139,11 +139,11 @@ exercises:
     type: pattern
     targets: [st.xing]
     context: [w.xing]
-    sentence: s.wo-xing-menduosa
+    sentence: s.wo-xing-meng
     reveal: []
     skills: [grammar, discrimination]
-    prompt: {text: '¿Cuál se dice así en chino? «Me apellido Mendoza.»'}
-    answer: {meaning: '姓 es aquí el verbo «apellidarse»: 我姓门多萨. «Mi apellido Mendoza» se queda sin verbo.'}
+    prompt: {text: '¿Cuál se dice así en chino? «Me apellido Mèng.»'}
+    answer: {meaning: '姓 es aquí el verbo «apellidarse»: 我姓孟. «Mi apellido Mèng» se queda sin verbo.'}
     comments: []
   - id: x.calque.laizi
     added: 2026-10-01
@@ -508,4 +508,88 @@ exercises:
     skills: [grammar, discrimination]
     prompt: {text: '¿Cuál se dice así en chino? «Hace dos días fui a la tienda.»'}
     answer: {meaning: '«Hace dos días» va delante del verbo, no al final como en español: 我两天前去了商店.'}
+    comments: []
+  - id: x.cloze.empty.dajia-dou-mang
+    added: '2026-10-23'
+    lang: es
+    type: cloze
+    sentence: s.dajia-dou-mang
+    gap_after: w.dou
+    targets: [st.dou-v]
+    context: [w.dajia, w.mang]
+    skills: [production, grammar]
+    prompt: {text: '¿Qué va en el hueco? «Todo el mundo está ocupado.»', options: ['是', '(nada)']}
+    answer: {choice: b, meaning: 'Nada: el adjetivo no lleva 是, y detrás de 都 tampoco hace falta 很. 大家都很忙 también vale.'}
+    comments: []
+  - id: x.cloze.empty.wo-bu-mang
+    added: '2026-10-23'
+    lang: es
+    type: cloze
+    sentence: s.jintian-wo-bu-lei
+    gap_after: w.bu
+    targets: [st.bu-adj]
+    context: [w.jintian, w.lei]
+    skills: [production, grammar]
+    prompt: {text: '¿Qué va en el hueco? «Hoy no estoy cansado.»', options: ['是', '很', '(nada)']}
+    answer: {choice: c, meaning: 'Nada: 不 niega el adjetivo él solo, sin 是 ni 很.'}
+    comments: []
+  - id: x.cloze.empty.zhege-bu-gui
+    added: '2026-10-23'
+    lang: es
+    type: cloze
+    sentence: s.zhege-bu-gui
+    gap_after: w.bu
+    targets: [st.bu-adj]
+    context: [w.zhe, w.gui]
+    skills: [production, grammar]
+    prompt: {text: '¿Qué va en el hueco? «Esto no es caro.»', options: ['是', '(nada)']}
+    answer: {choice: b, meaning: 'Nada: 贵 es un adjetivo, y el adjetivo se niega con 不 solo.'}
+    comments: []
+  - id: x.cloze.empty.ta-bu-shi-laoshi
+    added: '2026-10-23'
+    lang: es
+    type: cloze
+    sentence: s.ta-bu-shi-laoshi
+    gap_after: w.bu
+    targets: [st.bu-shi-n]
+    context: [w.ta.she, w.laoshi]
+    skills: [production, grammar]
+    prompt: {text: '¿Qué va en el hueco? «No es profesora.»', options: ['是', '很', '(nada)']}
+    answer: {choice: a, hanzi: '是', pinyin: 'shì', meaning: '是: 老师 es un nombre, y entre dos nombres sí va 是 (不是). Lo que va sin 是 es el adjetivo.'}
+    comments: []
+  - id: x.calque.num-jin-n
+    added: 2026-10-23
+    lang: es
+    type: pattern
+    targets: [st.num-jin-n]
+    context: [w.jin.weight]
+    sentence: s.wo-yao-yi-jin-pingguo
+    reveal: [s.wo-yao-san-jin-pingguo]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Quiero medio kilo de manzanas.»'}
+    answer: {meaning: '斤 ya es la medida: va en el sitio de 个, nunca los dos juntos.'}
+    comments: []
+  - id: x.calque.lugar-you-n
+    added: 2026-10-23
+    lang: es
+    type: pattern
+    targets: [st.lugar-you-n]
+    context: [w.you.have]
+    sentence: s.zheli-you-hen-duo-ren
+    reveal: [s.zheli-you-liang-jin-zuoyou-de-pingguo]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Aquí hay mucha gente.»'}
+    answer: {meaning: '«Hay» es 有. 是 iguala dos cosas: 这里是很多人 diría que el sitio es la gente.'}
+    comments: []
+  - id: x.calque.v-de-bu-adj
+    added: 2026-10-23
+    lang: es
+    type: pattern
+    targets: [st.v-de-bu-adj]
+    context: [w.de.complement, w.bu]
+    sentence: s.ni-shuo-de-bu-dui
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Lo que dices no es correcto.»'}
+    answer: {meaning: 'Para valorar lo que alguien dice va 得; y 不对 ya es «incorrecto», sin 是.'}
     comments: []

@@ -32,7 +32,7 @@
 - ✅🃏 手 shǒu [ʂoʊ˧˩˧] · mano · _sustantivo_ · Está en 手机 «móvil» y 手表 «reloj»: lo que se lleva en la mano o en la muñeca.
 - ✅🃏 耳朵 ěrduo [ɑɻ˧˩˧ twɔ] · oreja · _sustantivo_ · 耳 «oreja» está en 聪 de 聪明 y en 耳机 «auriculares».
 - ✅🃏 好看 hǎokàn [xɑʊ˧˩˧ kʰan˥˩] · bonito, que se ve bien · _adjetivo_ · Palabra a palabra: 好 «bien» + 看 «mirar»: «bueno de ver». Para ropa, cosas y películas; para personas, también 漂亮.
-- ✅🃏 有趣 yǒuqù [joʊ˧˩˧ tɕʰy˥˩] · interesante, divertido · _adjetivo_ · Palabra a palabra: 有 «tener» + 趣 «gracia». · En clase: 那本书真有趣！ «¡qué interesante es ese libro!».
+- ✅🃏 有趣 yǒuqù [joʊ˧˩˧ tɕʰy˥˩] · interesante, divertido · _adjetivo_ · Palabra a palabra: 有 «tener» + 趣 «gracia». · En clase: 那本书真有趣！ «¡qué interesante es ese libro!». · 趣: sales corriendo 走 a coger 取 algo que te interesa muchísimo. · 有趣 y 有意思 son «interesante, divertido». 有意思 es más coloquial y sirve para todo (这个人很有意思 «esta persona tiene gracia»); 有趣 destaca lo entretenido o curioso.
 - ✅🃏 有意思 yǒuyìsi [joʊ˧˩˧ i˥˩ sɯ] · interesante · _expresión_ · Palabra a palabra: 有 «tener» + 意思 «sentido»: «que tiene gracia». Es lo más corriente al hablar: 中文很有意思.
 - ✅🃏 特别 tèbié [tʰɤ˥˩ pjɛ˧˥] · especialmente, muy · _adverbio_ · Delante de un adjetivo es más fuerte que 很: 今天特别冷 «hoy hace muchísimo frío».
 - ✅🃏 多 duō [twɔ˥] · mucho, muchos · _adjetivo_ · Delante de una medida pregunta cuánto: 多大 «qué edad, qué tamaño», 多少 «cuánto».
@@ -49,6 +49,16 @@
 - ✅🃏 一切 yíqiè [i˧˥ tɕʰjɛ˥˩] · todo (en general, la situación) · _pronombre_ · Todo lo que pasa, en general: 一切都很好 «todo va bien». Para las cosas de un grupo concreto basta 都: 都对了 «todas están bien».
 - ✅🃏 一样 yíyàng [i˧˥ jɑŋ˥˩] · igual, lo mismo · _partícula_ · Palabra a palabra: 一 «uno» + 样 «forma»: «de una misma forma». 我们一样大 «tenemos la misma edad».
 - ✅🃏 重要 zhòngyào [ʈʂʊŋ˥˩ jɑʊ˥˩] · importante · _adjetivo_ · Palabra a palabra: 重 «pesado» + 要 «necesario»: lo que pesa. 这个很重要 «esto es muy importante».
+- ✅🃏 不错 búcuò [pu˧˥ tsʰwɔ˥˩] · nada mal, bastante bien · _adjetivo_ · Palabra a palabra: 不 «no» + 错 «equivocado»: «nada mal», que en chino es un elogio de verdad. 我觉得不错 «me parece bien».
+- ✅🃏 一般 yìbān [i˥˩ pan˥] · normal, regular · _adjetivo_ · Para dar una opinión tibia: 我觉得一般 «me parece normalito». Más suave que 不太好 «no muy bien».
+- ✅🃏 有点 yǒudiǎn [joʊ˧˩˧ tjɛn˧˩˧] · un poco (algo negativo) · _adverbio_ · Va delante del adjetivo y casi siempre es una queja: 有点贵 «es un poco caro», 有点冷 «hace un poco de frío». Con 一点 detrás se compara: 贵一点 «un poco más caro».
+- ✅🃏 小 xiǎo [ɕjɑʊ˧˩˧] · pequeño · _adjetivo_
+- ✅🃏 新 xīn [ɕin˥] · nuevo · _adjetivo_
+- ✅🃏 老 lǎo [lɑʊ˧˩˧] · viejo, mayor · _adjetivo_ · Para cosas, sin problema: 这个电脑很老了. Para personas suena brusco: mejor 年纪大了 «ya es mayor».
+- ✅🃏 远 yuǎn [ɥœn˧˩˧] · lejos · _adjetivo_ · Lo contrario es 近 jìn «cerca»: 你家远吗？ «¿está lejos tu casa?» —不远，很近 «no, está cerca».
+- ✅🃏 坏 huài [xwaɪ˥˩] · malo; estropeado, roto · _adjetivo_ · Con 了, que algo se ha estropeado: 我的手机坏了 «se me ha roto el móvil».
+- ✅🃏 一定 yídìng [i˧˥ tiŋ˥˩] · seguro, sin falta · _adverbio_ · Delante del verbo: 我一定来 «vengo seguro». 你一定要来！ «¡tienes que venir sin falta!».
+- ✅🃏 笑 xiào [ɕjɑʊ˥˩] · reír, sonreír · _verbo_
 
 ## 大, 太 y 天
 
@@ -130,6 +140,34 @@ Empiezan casi igual: -n o -ng y el tono los separan.
 - 真的 zhēnde · acaba en -n y va alto y plano (1.º): 真的吗？
 - 正在 zhèngzài · acaba en -ng y baja fuerte (4.º): 我正在学习
 
+## 多 duō y 都 dōu
+
+Mismo tono y casi la misma sílaba: solo cambia el final, uo frente a ou.
+
+- 多 duō · uo: acaba con la boca abierta, en o
+- 都 dōu · ou: acaba cerrándose, en u
+
+## 一般 yìbān y 一半 yíbàn
+
+Las mismas sílabas con los tonos al revés: 一般 «normal» baja y queda plano; 一半 «la mitad» sube y cae.
+
+- 一般 yìbān · baja y luego plano
+- 一半 yíbàn · sube y luego cae
+
+## 小 xiǎo y 笑 xiào
+
+La misma sílaba: 小 se hunde; 笑 cae.
+
+- 小 xiǎo · se hunde
+- 笑 xiào · cae
+
+## 元 yuán y 远 yuǎn
+
+元 da el sonido a 远; solo cambia el tono.
+
+- 元 yuán · sube; sin 辶
+- 远 yuǎn · se hunde; con 辶 «andar»
+
 ## Frases
 
 - ✅🃏 他很高。 · tā hěn gāo · Él es alto.
@@ -141,7 +179,6 @@ Empiezan casi igual: -n o -ng y el tono los separan.
 - ✅🃏 他不高。 · tā bù gāo · No es alto.
 - ✅🃏 老师很帅。 · lǎoshī hěn shuài · El profesor es guapo.
 - ✅🃏 北京很大。 · Běijīng hěn dà · Pekín es grande.
-- ✅🃏 太好了！ · tài hǎo le · ¡Genial!
 - ✅🃏 我的手机是白的。 · wǒ de shǒujī shì bái de · Mi móvil es blanco.
 - ✅🃏 他比我高。 · tā bǐ wǒ gāo · Es más alto que yo.
 - ✅🃏 她又高又漂亮。 · tā yòu gāo yòu piàoliang · Es alta y guapa.
@@ -149,7 +186,6 @@ Empiezan casi igual: -n o -ng y el tono los separan.
 - ✅🃏 他很高，我也很高。 · tā hěn gāo wǒ yě hěn gāo · Él es alto, y yo también.
 - ✅🃏 他们都很聪明。 · tāmen dōu hěn cōngming · Todos ellos son muy listos.
 - ✅🃏 她很漂亮，也很瘦。 · tā hěn piàoliang yě hěn shòu · Es guapa y también delgada.
-- ✅🃏 你很漂亮！ · nǐ hěn piàoliang · ¡Eres muy guapa!
 - ✅🃏 他很幽默，大家都喜欢他。 · tā hěn yōumò dàjiā dōu xǐhuan tā · Es muy gracioso: a todo el mundo le cae bien.
 - ✅🃏 我不高，也不矮。 · wǒ bù gāo yě bù ǎi · No soy ni alto ni bajo.
 - ✅🃏 他不胖，他很瘦。 · tā bú pàng tā hěn shòu · No está gordo: es muy delgado.
@@ -164,12 +200,9 @@ Empiezan casi igual: -n o -ng y el tono los separan.
 - ✅🃏 你真的知道吗？ · nǐ zhēnde zhīdao ma · ¿De verdad lo sabes?
 - ✅🃏 你来得很早。 · nǐ lái de hěn zǎo · Has llegado temprano.
 - ✅🃏 你来得真早！ · nǐ lái de zhēn zǎo · ¡Qué pronto has llegado!
-- ✅🃏 你说得很好。 · nǐ shuō de hěn hǎo · Hablas muy bien.
 - ✅🃏 他跑得很快。 · tā pǎo de hěn kuài · Corre muy rápido.
 - ✅🃏 你写得很好。 · nǐ xiě de hěn hǎo · Escribes muy bien.
 - ✅🃏 这是一只漂亮的猫。 · zhè shì yì zhī piàoliang de māo · Es un gato precioso.
-- ✅🃏 你好漂亮！ · nǐ hǎo piàoliang · ¡Qué guapa estás!
-- ✅🃏 你真漂亮！ · nǐ zhēn piàoliang · ¡Qué guapa eres!
 - ✅🃏 我不高兴。 · wǒ bù gāoxìng · No estoy contento.
 - ✅🃏 我太累了！ · wǒ tài lèi le · ¡Estoy agotado!
 - ✅🃏 太晚了！ · tài wǎn le · ¡Qué tarde es!
@@ -188,9 +221,25 @@ Empiezan casi igual: -n o -ng y el tono los separan.
 - ✅🃏 他很帅，女生都喜欢他。 · tā hěn shuài nǚshēng dōu xǐhuan tā · Es muy guapo; les gusta a todas las chicas.
 - ✅🃏 他很聪明。 · tā hěn cōngming · Es muy listo.
 - ✅🃏 他们都很笨。 · tāmen dōu hěn bèn · Son todos tontos.
-- ✅🃏 一切都很好。 · yíqiè dōu hěn hǎo · Todo va bien.
-- ✅🃏 别太累了！ · bié tài lèi le · ¡No te canses demasiado!
 - ✅🃏 太漂亮了！ · tài piàoliang le · ¡Qué bonito!
 - ✅🃏 我的中文马马虎虎。 · wǒ de Zhōngwén mǎmǎhūhū · Mi chino es regular.
 - ✅🃏 我们一样大。 · wǒmen yíyàng dà · Tenemos la misma edad.
 - ✅🃏 这个很重要。 · zhè ge hěn zhòngyào · Esto es muy importante.
+- ✅🃏 你真年轻！ · nǐ zhēn niánqīng · ¡Qué joven estás!
+- ✅🃏 我觉得不错。 · wǒ juéde búcuò · Me parece bien.
+- ✅🃏 我觉得可以。 · wǒ juéde kěyǐ · Me parece bien, vale.
+- ✅🃏 我觉得不太好。 · wǒ juéde bù tài hǎo · No me parece muy bien.
+- ✅🃏 我觉得一般。 · wǒ juéde yìbān · Me parece normalito.
+- ✅🃏 我不太喜欢。 · wǒ bù tài xǐhuan · No me gusta mucho.
+- ✅🃏 今天有点冷。 · jīntiān yǒudiǎn lěng · Hoy hace un poco de frío.
+- ✅🃏 大家都忙。 · dàjiā dōu máng · Todo el mundo está ocupado.
+- ✅🃏 这个不贵。 · zhè ge bù guì · Esto no es caro.
+- ✅🃏 她不是老师。 · tā bù shì lǎoshī · No es profesora.
+- ✅🃏 我一定来。 · wǒ yídìng lái · Vengo seguro.
+- ✅🃏 这是我的新电脑。 · zhè shì wǒ de xīn diànnǎo · Es mi ordenador nuevo.
+- ✅🃏 这个杯子太小了。 · zhè ge bēizi tài xiǎo le · Este vaso es demasiado pequeño.
+- ✅🃏 这个电脑很老了。 · zhè ge diànnǎo hěn lǎo le · Este ordenador ya es muy viejo.
+- ✅🃏 你家远吗？ · nǐ jiā yuǎn ma · ¿Tu casa está lejos?
+- ✅🃏 我的手机坏了。 · wǒ de shǒujī huài le · Se me ha roto el móvil.
+- ✅🃏 你觉得这个怎么样？我觉得不错。我也觉得不错，我们买吧！ · nǐ juéde zhè ge zěnmeyàng wǒ juéde búcuò wǒ yě juéde búcuò wǒmen mǎi ba · —¿Qué te parece este? —Me parece bien. —A mí también, ¡nos lo llevamos!
+- ✅🃏 今天我不累。 · jīntiān wǒ bù lèi · Hoy no estoy cansado.

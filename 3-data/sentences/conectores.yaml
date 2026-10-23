@@ -3,6 +3,7 @@
 sentences:
   - id: s.yinwei-xiayu-suoyi-wo-bu-qu
     use: say
+    kind: example
     segments:
       - {text: 因为, ref: w.yinwei, pinyin: yīnwèi}
       - {text: 下雨, ref: w.xiayu, pinyin: xiàyǔ}
@@ -16,6 +17,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.ruguo-ni-xihuan-jiu-mai-ba
     use: say
+    kind: example
     segments:
       - {text: 如果, ref: w.ruguo, pinyin: rúguǒ}
       - {text: 你, ref: w.ni, pinyin: nǐ}
@@ -29,6 +31,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.suiran-hen-lei-danshi
     use: hear
+    kind: example
     segments:
       - {text: 虽然, ref: w.suiran, pinyin: suīrán}
       - {text: 很, ref: w.hen, pinyin: hěn}
@@ -43,6 +46,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.wo-hen-lei-suoyi-huijia
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 很, ref: w.hen, pinyin: hěn}
@@ -57,6 +61,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.ni-xihuan-jiu-mai-ba
     use: say
+    kind: example
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
@@ -68,6 +73,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.wo-mingtian-zai-lai
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 明天, ref: w.mingtian, pinyin: míngtiān}
@@ -78,6 +84,7 @@ sentences:
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
   - id: s.wo-yibian-chifan-yibian-kan-shouji
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 一边, ref: w.yibian, pinyin: 'yìbiān', sandhi: 'yī → yì delante de primer tono'}
@@ -89,17 +96,9 @@ sentences:
       - {text: 。}
     translation: {es: 'Como mientras miro el móvil.', en: 'I look at my phone while I eat.'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
-  - id: s.mingtian-zai-shuo
-    use: hear
-    segments:
-      - {text: 明天, ref: w.mingtian, pinyin: míngtiān}
-      - {text: 再, ref: w.zai.again, pinyin: zài}
-      - {text: 说, ref: w.shuo, pinyin: shuō}
-      - {text: 。}
-    translation: {es: Ya lo hablamos mañana., en: Let's talk about it tomorrow.}
-    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
   - id: s.wo-mingtian-zai-xuexi-zhongwen
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
@@ -111,6 +110,7 @@ sentences:
     source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
   - id: s.ta-you-lai-le
     use: say
+    kind: example
     segments:
       - {text: 他, ref: w.ta.he, pinyin: 'tā'}
       - {text: 又, ref: w.you.repeat, pinyin: 'yòu'}
@@ -121,6 +121,7 @@ sentences:
     source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
   - id: s.gen-wo-yiqi-qu-haishi-zai-jia
     use: say
+    kind: example
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
@@ -138,6 +139,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.ruguo-you-shijian-xiang-qu-kan-ni
     use: say
+    kind: example
     segments:
       - {text: 如果, ref: w.ruguo, pinyin: 'rúguǒ'}
       - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
@@ -155,6 +157,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.wo-mingtian-zai-zuo
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
@@ -165,6 +168,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.shi-nan-de-haishi-nv-de
     use: say
+    kind: formula
     segments:
       - {text: 是, ref: w.shi, pinyin: 'shì'}
       - {text: 男, ref: w.nan.male, pinyin: 'nán'}
@@ -177,6 +181,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.ni-zuihao-wen-yixia-laoshi
     use: say
+    kind: example
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 最好, ref: w.zuihao, pinyin: 'zuìhǎo'}
@@ -185,12 +190,4 @@ sentences:
       - {text: 老师, ref: w.laoshi, pinyin: 'lǎoshī'}
       - {text: 。}
     translation: {es: 'Mejor pregúntale a la profesora.', en: 'You''d better ask the teacher.'}
-    source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
-  - id: s.hai-you-ma
-    use: say
-    segments:
-      - {text: 还有, ref: w.haiyou, pinyin: 'háiyǒu'}
-      - {text: 吗, ref: w.ma, pinyin: 'ma'}
-      - {text: ？}
-    translation: {es: '¿Queda más? (¿hay más?)', en: 'Is there any more?'}
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}

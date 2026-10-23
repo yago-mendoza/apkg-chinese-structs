@@ -3,6 +3,7 @@
 sentences:
   - id: s.ta-shi-wo-de-baba
     use: say
+    kind: example
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     segments:
       - {text: 他, ref: w.ta.he, pinyin: tā}
@@ -14,6 +15,7 @@ sentences:
     translation: {es: Él es mi padre., en: He is my dad.}
   - id: s.ta-shi-wo-de-mama
     use: hear
+    kind: example
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     segments:
       - {text: 她, ref: w.ta.she, pinyin: tā}
@@ -25,6 +27,7 @@ sentences:
     translation: {es: Ella es mi madre., en: She is my mom.}
   - id: s.ta-you-erzi-he-nver
     use: say
+    kind: example
     segments:
       - {text: 他, ref: w.ta.he, pinyin: tā}
       - {text: 有, ref: w.you.have, pinyin: yǒu}
@@ -40,6 +43,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
   - id: s.women-shi-yijiaren
     use: say
+    kind: example
     segments:
       - {text: 我们, ref: w.women, pinyin: wǒmen}
       - {text: 是, ref: w.shi, pinyin: shì}
@@ -51,6 +55,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
   - id: s.mama-huilai-le
     use: say
+    kind: example
     segments:
       - {text: 妈妈, ref: w.mama, pinyin: māma}
       - {text: 回来, ref: w.huilai, pinyin: huílai}
@@ -60,6 +65,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.jiejie-zai-kan-baozhi
     use: hear
+    kind: example
     segments:
       - {text: 姐姐, ref: w.jiejie, pinyin: jiějie}
       - {text: 在, ref: w.zai.progressive, pinyin: zài}
@@ -70,6 +76,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.tamen-shi-wo-de-bama
     use: hear
+    kind: example
     segments:
       - {text: 他们, ref: w.tamen, pinyin: tāmen}
       - {text: 是, ref: w.shi, pinyin: shì}
@@ -81,6 +88,7 @@ sentences:
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
   - id: s.wo-baba-shi-laoshi
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 爸爸, ref: w.baba, pinyin: 'bàba'}
@@ -91,6 +99,7 @@ sentences:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: deberes 2026-10-06, date: '2026-10-06'}
   - id: s.wo-mama-shi-yisheng
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 妈妈, ref: w.mama, pinyin: 'māma'}
@@ -99,17 +108,9 @@ sentences:
       - {text: 。}
     translation: {es: 'Mi madre es médica.', en: 'My mother is a doctor.'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: deberes 2026-10-06, date: '2026-10-06'}
-  - id: s.ni-hao-ayi
-    use: say
-    segments:
-      - {text: 你好, ref: e.nihao, pinyin: 'nǐ hǎo'}
-      - {text: ，}
-      - {text: 阿姨, ref: w.ayi, pinyin: 'āyí'}
-      - {text: ！}
-    translation: {es: '¡Hola, señora!', en: 'Hello, auntie!'}
-    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: deberes 2026-10-06, date: '2026-10-06'}
   - id: s.nage-ren-shi-ni-de-baba-ma
     use: say
+    kind: example
     segments:
       - {text: 那, ref: w.na.that, pinyin: 'nà'}
       - {text: 个, ref: w.ge, pinyin: 'ge'}
@@ -124,6 +125,7 @@ sentences:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
   - id: s.baba-he-mama-dou-hen-gao
     use: say
+    kind: example
     segments:
       - {text: 爸爸, ref: w.baba, pinyin: 'bàba'}
       - {text: 和, ref: w.he.and, pinyin: 'hé'}
@@ -134,18 +136,9 @@ sentences:
       - {text: 。}
     translation: {es: 'Papá y mamá son altos los dos.', en: 'Dad and mom are both tall.'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-  - id: s.shushu-ayi-hao
-    use: say
-    segments:
-      - {text: 叔叔, ref: w.shushu, pinyin: 'shūshu'}
-      - {text: 、}
-      - {text: 阿姨, ref: w.ayi, pinyin: 'āyí'}
-      - {text: 好, ref: w.hao, pinyin: 'hǎo'}
-      - {text: ！}
-    translation: {es: '¡Hola, señores!', en: 'Hello, uncle and auntie!'}
-    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
   - id: s.wo-yeye-he-nainai-dou-hen-hao
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 爷爷, ref: w.yeye, pinyin: 'yéye'}
@@ -159,6 +152,7 @@ sentences:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
   - id: s.ta-shi-wang-ayi
     use: say
+    kind: example
     segments:
       - {text: 她, ref: w.ta.she, pinyin: 'tā'}
       - {text: 是, ref: w.shi, pinyin: 'shì'}
@@ -169,6 +163,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
   - id: s.ta-shi-wo-ayi
     use: say
+    kind: example
     segments:
       - {text: 她, ref: w.ta.she, pinyin: 'tā'}
       - {text: 是, ref: w.shi, pinyin: 'shì'}
@@ -179,6 +174,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-15', date: '2026-10-15'}
   - id: s.wo-you-jiejie
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
@@ -188,6 +184,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md (tus notas: hoja de clase de la familia)', date: '2026-10-15'}
   - id: s.wo-meiyou-jiejie
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 没有, ref: w.meiyou, pinyin: 'méiyǒu'}
@@ -197,6 +194,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md (tus notas: hoja de clase de la familia)', date: '2026-10-15'}
   - id: s.wo-ye-meiyou-jiejie
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 也, ref: w.ye, pinyin: 'yě'}
@@ -207,6 +205,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md (tus notas: hoja de clase de la familia)', date: '2026-10-15'}
   - id: s.women-dou-meiyou-jiejie
     use: say
+    kind: example
     segments:
       - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
       - {text: 都, ref: w.dou, pinyin: 'dōu'}
@@ -217,6 +216,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md (tus notas: hoja de clase de la familia)', date: '2026-10-15'}
   - id: s.ta-you-meiyou-didi
     use: say
+    kind: example
     segments:
       - {text: 他, ref: w.ta.he, pinyin: 'tā'}
       - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
@@ -228,6 +228,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md (tus notas: hoja de clase de la familia)', date: '2026-10-15'}
   - id: s.zhe-shi-ta-de-gege
     use: say
+    kind: example
     segments:
       - {text: 这, ref: w.zhe, pinyin: 'zhè'}
       - {text: 是, ref: w.shi, pinyin: 'shì'}
@@ -237,3 +238,48 @@ sentences:
       - {text: 。}
     translation: {es: 'Este es su hermano mayor.', en: 'This is his older brother.'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md (tus notas: hoja de clase de la familia)', date: '2026-10-15'}
+  - id: s.ni-fumu-duo-da-nianji-le
+    use: say
+    kind: formula
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 父母, ref: w.fumu, pinyin: 'fùmǔ'}
+      - {text: 多大, ref: w.duoda, pinyin: 'duō dà'}
+      - {text: 年纪, ref: w.nianji, pinyin: 'niánjì'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: ？}
+    translation: {es: '¿Qué edad tienen tus padres?', en: 'How old are your parents?'}
+    source: {origin: class, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
+  - id: s.wo-baba-wushier-mama-wushi
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 爸爸, ref: w.baba, pinyin: 'bàba'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 妈妈, ref: w.mama, pinyin: 'māma'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 。}
+    translation: {es: 'Mi padre tiene cincuenta y dos años, y mi madre, cincuenta.', en: 'My father is fifty-two and my mother is fifty.'}
+    source: {origin: class, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
+  - id: s.wo-yeye-jiushisan-sui-le
+    use: hear
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 爷爷, ref: w.yeye, pinyin: 'yéye'}
+      - {text: 九, ref: w.num.jiu, pinyin: 'jiǔ'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 三, ref: w.num.san, pinyin: 'sān'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'Mi abuelo tiene ya noventa y tres años.', en: 'My grandfather is ninety-three.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-22'}

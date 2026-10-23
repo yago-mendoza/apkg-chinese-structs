@@ -1,0 +1,353 @@
+# Diccionario · Compras. Esquema: 3-data/README.md
+
+entries:
+  - id: w.he.drink
+    use: say
+    role: content
+    kind: word
+    hanzi: 喝
+    pinyin: hē
+    meaning: {es: beber, en: to drink}
+    register: neutral
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    frequency: {}
+    relations: []
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-19', text: 'Una boca 口 abierta a la izquierda; a la derecha, un sol 日 abrasador y debajo alguien encogido, muerto de sed: abre la boca para beber.', original: 'Mejor imagina esto para 喝 (hē) — beber: 口 (izquierda): una boca abierta. 日 (arriba): un sol abrasador. Debajo del sol: una persona 人 encogida, muerta de sed.'}
+  - id: w.shui
+    use: say
+    role: content
+    kind: word
+    hanzi: 水
+    pinyin: shuǐ
+    meaning: {es: agua, en: water}
+    register: neutral
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    frequency: {}
+    relations: []
+    comments: []
+  - id: w.kafei
+    use: say
+    role: content
+    kind: word
+    hanzi: 咖啡
+    pinyin: kāfēi
+    meaning: {es: café, en: coffee}
+    connection: {kind: sound, with: [非], text: '非 fēi da el sonido a 啡; el 口 de 咖 y 啡 marca una palabra que imita un sonido extranjero (coffee).'}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: Transcripción fonética de «coffee».}
+  - id: w.qiaokeli
+    use: hear
+    role: content
+    kind: word
+    hanzi: 巧克力
+    pinyin: qiǎokèlì
+    meaning: {es: chocolate, en: chocolate}
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: Transcripción fonética de «chocolate».}
+  - id: w.niurou
+    use: say
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 牛肉
+    pinyin: niúròu
+    meaning: {es: carne de ternera, en: beef}
+    level: 2
+    level_reason: 'comida de menú; 肉 y 牛 aparecen pronto, 牛 es HSK 3 como palabra suelta'
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    comments:
+      - {kind: linguistic, private: false, date: 2026-09-25, text: 'Modificador + núcleo: 牛 «vaca» especifica 肉 «carne».'}
+  - id: w.chi
+    use: say
+    role: content
+    kind: word
+    hanzi: 吃
+    pinyin: chī
+    meaning: {es: comer, en: to eat}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+    comments:
+      - {kind: character, private: false, date: '2026-10-01', text: '口 «boca» a la izquierda, como en 喝, 吗 y 叫: lo que se hace con la boca.'}
+  - id: w.fan
+    use: hear
+    role: content
+    kind: word
+    hanzi: 饭
+    pinyin: fàn
+    meaning: {es: 'comida; arroz cocido', en: 'meal; cooked rice'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+    comments:
+      - {kind: character, private: false, date: '2026-10-01', text: '饣 es 食 shí «comer, alimento» en su forma de lado; 反 fǎn da el sonido.'}
+      - {kind: mnemonic, private: false, date: '2026-10-01', text: 'El radical de la comida y una mano (又, dentro de 反) que la lleva a la boca.', original: 'Comer = radicla comida + manos'}
+      - {kind: note, private: false, date: '2026-10-01', text: 'Para decir «comer» lo normal es 吃饭; 饭 suelto es «la comida» o «el arroz».', original: 'Pero chifan muchisimo mas "comer"'}
+  - id: w.chifan
+    use: say
+    role: content
+    kind: word
+    hanzi: 吃饭
+    pinyin: chīfàn
+    meaning: {es: comer (una comida), en: to eat (a meal)}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: 'Verbo y objeto, «comer comida»: es la forma normal de decir «comer» cuando no dices qué. 吃饭了吗？ es también un saludo.'}
+      - {kind: linguistic, private: false, date: '2026-10-09', text: '吃饭 es comer, la comida en general; 米饭 es el arroz cocido. De alguien que no come nada, como un enfermo, se dice 他不吃东西.'}
+  - id: w.fandian
+    use: say
+    role: content
+    kind: word
+    hanzi: 饭店
+    pinyin: fàndiàn
+    meaning: {es: restaurante, en: restaurant}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '饭 «comida» + 店 «local»: el local de comida. En nombres propios suele ser un hotel (北京饭店); «restaurante» también se dice 餐厅 cāntīng [HSK 5].'}
+  - id: w.haochi
+    use: say
+    role: content
+    kind: word
+    hanzi: 好吃
+    pinyin: 'hǎochī'
+    meaning: {es: 'rico, bueno (de comer)', en: 'tasty'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '好 + verbo: «bueno de…». 好吃 «rico», 好看 «bonito», 好听 «agradable de oír».'}
+  - id: w.cai
+    use: say
+    role: content
+    kind: word
+    hanzi: 菜
+    pinyin: 'cài'
+    meaning: {es: 'plato, comida; verdura', en: 'dish; vegetable'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: character, private: false, date: '2026-10-01', text: '艹 «hierba» arriba: era la verdura. Hoy también «plato, cocina»: 中国菜 «comida china».'}
+  - id: w.cha
+    use: say
+    role: content
+    kind: word
+    hanzi: 茶
+    pinyin: 'chá'
+    meaning: {es: 'té', en: 'tea'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: character, private: false, date: '2026-10-01', text: '艹 «hierba» arriba: una hoja. 喝茶 «tomar té».'}
+      - {kind: mnemonic, private: false, date: '2026-10-19', text: 'Hierba 艹 que se corta a trocitos dentro de una casa: las hojas del té.', original: 'Para "te" menmotencia Cortar hierba en una casa a trocitos pequeños'}
+  - id: g.he-he
+    kind: group
+    basis: soundalike
+    title: '喝 hē y 和 hé'
+    explanation: 'Solo cambia el tono: 喝 alto y plano, 和 sube.'
+    members:
+      - {ref: w.he.drink, cue: 'alto y plano'}
+      - {ref: w.he.and, cue: 'sube'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments: []
+  - id: w.pingguo
+    use: say
+    role: content
+    kind: word
+    hanzi: 苹果
+    pinyin: 'píngguǒ'
+    meaning: {es: 'manzana', en: 'apple'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+    comments: []
+  - id: w.yu.fish
+    use: say
+    role: content
+    kind: word
+    hanzi: 鱼
+    pinyin: 'yú'
+    meaning: {es: 'pez; pescado', en: 'fish'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Es a la vez el animal y el pescado que se come: 我喜欢吃鱼 «me gusta el pescado».'}
+  - id: w.jidan
+    use: say
+    role: content
+    kind: word
+    hanzi: 鸡蛋
+    pinyin: 'jīdàn'
+    meaning: {es: 'huevo (de gallina)', en: 'egg'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 鸡 «gallina» + 蛋 «huevo». En la cocina, un huevo es siempre 鸡蛋.'}
+      - {kind: teacher, private: false, date: '2026-10-08', text: 'En clase: 这是一个鸡蛋。 «Esto es un huevo.»'}
+  - id: w.kele
+    use: say
+    role: content
+    kind: word
+    hanzi: 可乐
+    pinyin: 'kělè'
+    meaning: {es: 'refresco de cola', en: 'cola'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Préstamo por el sonido, con hanzi elegidos por su sentido: 可 «poder» + 乐 «alegría».'}
+  - id: w.kaoya
+    use: hear
+    role: content
+    kind: word
+    hanzi: 烤鸭
+    pinyin: 'kǎoyā'
+    meaning: {es: 'pato asado', en: 'roast duck'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 烤 «asar» + 鸭 «pato». 北京烤鸭 es el pato a la pekinesa.'}
+  - id: w.huoguo
+    use: hear
+    role: content
+    kind: word
+    hanzi: 火锅
+    pinyin: 'huǒguō'
+    meaning: {es: 'olla caliente (hot pot)', en: 'hot pot'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 火 «fuego» + 锅 «olla»: una olla de caldo hirviendo en medio de la mesa, donde cada uno cuece lo suyo. En la lista es de nivel 7, pero en China se come y se nombra a todas horas.'}
+  - id: w.shiwu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 食物
+    pinyin: 'shíwù'
+    meaning: {es: 'alimentos, comida (lo que se come)', en: 'food'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: '食物 son los alimentos, y suena algo escrito. Al hablar, «hay comida en la nevera» es 冰箱里有吃的; «comer» es 吃饭, y 饭 es el arroz cocido y cada comida del día.'}
+  - id: w.pai.pie
+    use: hear
+    role: content
+    kind: word
+    pos: sustantivo
+    pos_reason: 'en el mazo es la tarta (préstamo); la lista lo da antes como verbo, «enviar»'
+    hanzi: 派
+    pinyin: 'pài'
+    meaning: {es: 'tarta (pie)', en: 'pie'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-08', text: 'Préstamo del inglés pie: 苹果派 «tarta de manzana». El mismo hanzi es también «enviar» y «facción», otros sentidos.'}
+  - id: w.ke.thirsty
+    use: say
+    role: content
+    kind: word
+    hanzi: 渴
+    pinyin: kě
+    meaning: {es: 'tener sed, sediento', en: thirsty}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '我渴了 «me ha entrado sed»: el 了 dice que es algo nuevo. 我很渴 «tengo mucha sed».'}
+      - {kind: mnemonic, private: false, date: '2026-10-11', text: 'A la derecha, un sol 日 arriba y debajo una persona metida en una cueva: tiene sed. Con 氵 «agua» es tener sed, 渴; si cambias el agua por la boca 口, es beber, 喝.', original: 'para recordar el comprante derehca es ''sol'' encima y debjao nua persona en una cueva. tener sed es agua mas ese comoente (o escena sol perosan seindeite necuev) y beber s cunado sustumiso el radical de agua por el simbolo de la boca, entendes¿'}
+  - id: w.e.hungry
+    use: say
+    role: content
+    kind: word
+    hanzi: 饿
+    pinyin: è
+    meaning: {es: 'tener hambre, hambriento', en: hungry}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '我饿了 «me ha entrado hambre». 饣 a la izquierda es «comida», como en 饭.'}
+  - id: g.ke-ke
+    kind: group
+    basis: soundalike
+    title: 渴, 棵 y 克
+    explanation: 'La misma sílaba, ke: el tono y la pieza los separan.'
+    members:
+      - {ref: w.ke.thirsty, cue: baja y sube; 氵 «agua»}
+      - {ref: w.ke, cue: alto y plano; 木 «árbol»}
+      - {ref: w.ke.gram, cue: 'baja fuerte (4.º): 一百克'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []
+  - id: w.niunai
+    use: hear
+    role: content
+    kind: word
+    hanzi: 牛奶
+    pinyin: 'niúnǎi'
+    meaning: {es: 'leche', en: 'milk'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+    comments: []
+  - id: w.pijiu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 啤酒
+    pinyin: 'píjiǔ'
+    meaning: {es: 'cerveza', en: 'beer'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
+    comments: []
+  - id: w.xiangjiao
+    use: hear
+    role: content
+    kind: word
+    hanzi: 香蕉
+    pinyin: 'xiāngjiāo'
+    meaning: {es: 'plátano', en: 'banana'}
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
+    comments: []
+  - id: w.hanbao
+    use: hear
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 汉堡
+    pinyin: 'hànbǎo'
+    meaning: {es: 'hamburguesa', en: 'hamburger'}
+    level: 2
+    level_reason: 'Préstamo muy corriente (de Hamburg), en cualquier menú.'
+    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
+    comments: []
+  - id: w.xiangbin
+    use: hear
+    role: content
+    kind: word
+    hanzi: 香槟
+    pinyin: xiāngbīn
+    meaning: {es: champán, en: champagne}
+    level: 4
+    level_reason: 'no está en la lista del HSK 3.0; préstamo del francés champagne, poco frecuente; 香 es HSK 3'
+    pos: sustantivo
+    pos_reason: no está en la lista del HSK
+    source: {origin: class, batch: 012-2026-10-19-querer-poder-y-matices, file: 'deberes 2026-10-13', date: '2026-10-13'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: 'Préstamo que imita el sonido de champagne, como 咖啡 o 沙发. 香 «perfumado» además ayuda a recordarlo.'}
+  - id: g.yu-yu
+    kind: group
+    basis: soundalike
+    title: '鱼 y 雨'
+    explanation: 'La misma sílaba: solo los separa el tono.'
+    members:
+      - {ref: w.yu.fish, cue: 'sube (2.º tono): 我喜欢吃鱼'}
+      - {ref: w.yu.rain, cue: 'baja (3.º tono): 下雨'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments: []
+  - id: g.he-ke.look
+    kind: group
+    basis: visual
+    title: '喝 y 渴'
+    explanation: 'La misma derecha; la izquierda dice de qué va.'
+    members:
+      - {ref: w.he.drink, cue: '口 boca a la izquierda'}
+      - {ref: w.ke.thirsty, cue: '氵 agua a la izquierda: la que falta'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
+    comments: []
+  - id: w.shuiguo
+    use: say
+    role: content
+    kind: word
+    hanzi: 水果
+    pinyin: shuǐguǒ
+    meaning: {es: fruta, en: fruit}
+    relations: [w.shui]
+    source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
+    comments: []
+  - id: w.qingke
+    use: say
+    role: content
+    kind: word
+    hanzi: 请客
+    pinyin: qǐngkè
+    meaning: {es: invitar (pagar tú), en: 'to treat, to pay for others'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: '我请客！ «¡invito yo!»: pagas tú la cuenta de todos.'}

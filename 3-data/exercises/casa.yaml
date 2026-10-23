@@ -880,17 +880,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 穿}
     answer: {hanzi: 穿, pinyin: chuān, meaning: 'ponerse, llevar puesto (ropa)'}
     comments: []
-  - id: x.produce.ni-zhu-zai-nali
-    added: 2026-10-19
-    lang: es
-    type: produce
-    sentence: s.ni-zhu-zai-nali
-    targets: [s.ni-zhu-zai-nali]
-    context: [w.ni, w.zhu.live, w.zai.at, w.nali]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde vives?»'}
-    answer: {meaning: '¿Dónde vives?'}
-    comments: []
   - id: x.produce.wo-chuan-zhe-jian
     added: 2026-10-19
     lang: es

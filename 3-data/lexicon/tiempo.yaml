@@ -529,6 +529,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Va delante del verbo: 我常常喝茶 «tomo té a menudo». Más que 有时候 «a veces».'}
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'No confundir con 尝尝 chángchang «probar un poco» [HSK 5], que repite el verbo 尝 «probar».'}
+      - {kind: linguistic, private: false, date: '2026-10-21', text: '常 solo también vale: 我常去这里. Para negar, 不常, mejor que 不常常: 我不常喝咖啡.'}
   - id: w.yijing
     use: say
     role: function
@@ -632,3 +633,25 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 见 «ver» + 面 «cara»: verse las caras. 我们明天见面吧 «quedamos mañana».'}
+  - id: w.chang.often
+    use: say
+    role: function
+    kind: word
+    hanzi: 常
+    pinyin: cháng
+    meaning: {es: 'a menudo, soler', en: 'often, usually'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: 'Lo mismo que 常常: 我常去这里 «suelo venir aquí». Para negar, 不常, mejor que 不常常: 我不常喝咖啡.'}
+      - {kind: mnemonic, private: false, date: '2026-10-21', text: 'Dos señores mayores con rulos, sentados siempre en el mismo sitio: los viejos son animales de costumbres.', original: '常 (cháng) te recuerda a dos señores viejos con rulos, siempre sentados en el mismo sitio'}
+  - id: g.chang-chang
+    kind: group
+    basis: soundalike
+    title: 长 cháng, 常 cháng y 唱 chàng
+    explanation: '长 y 常 suenan exactamente igual; 唱 cae.'
+    members:
+      - {ref: w.chang, cue: 'sube: 很长'}
+      - {ref: w.chang.often, cue: 'sube: 我常去'}
+      - {ref: w.chang.sing, cue: 'cae'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-23'}
+    comments: []

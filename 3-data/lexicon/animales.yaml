@@ -46,7 +46,8 @@ entries:
     pinyin: 'jī'
     meaning: {es: 'gallo, pollo', en: 'chicken'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-    comments: []
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-20', text: 'Una mano 又 que agarra un pájaro 鸟: ¡un pollo!', original: 'imagina una mano agarrando un pájaro: ¡un pollo!'}
   - id: w.yang.sheep
     use: hear
     role: content
@@ -145,11 +146,12 @@ entries:
   - id: g.ma-ma
     kind: group
     basis: soundalike
-    title: '吗 ma y 马 mǎ'
+    title: '吗 ma, 妈 mā y 马 mǎ'
     explanation: 'La misma sílaba: 吗 es átona y cierra preguntas; 马 baja y sube. 马 da además el sonido a 吗 y a 妈.'
     members:
       - {ref: w.ma, cue: 'átona, cierra la pregunta'}
       - {ref: w.ma.horse, cue: 'baja y sube'}
+      - {ref: w.ma.mom, cue: 'alto y plano, al llamarla'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
   - id: w.shengxiao
@@ -219,3 +221,14 @@ entries:
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
     comments:
       - {kind: teacher, private: false, date: '2026-10-02', text: '龍 es su forma tradicional. Es frecuente en nombres: 成龙 «Jackie Chan», 大龙, y 李小龙 «Bruce Lee».'}
+  - id: w.niao
+    use: hear
+    role: content
+    kind: word
+    hanzi: 鸟
+    pinyin: niǎo
+    meaning: {es: 'pájaro', en: 'bird'}
+    connection: {kind: meaning, with: [鸡], text: '鸟 «pájaro» está en 鸡 jī «pollo»: una mano 又 que agarra un pájaro. También en 岛 dǎo «isla» [HSK 6]: un pájaro sobre una montaña.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: '小鸟 xiǎoniǎo «pajarito».'}

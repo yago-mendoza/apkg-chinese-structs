@@ -111,7 +111,9 @@ entries:
     pinyin: 'dǎo'
     meaning: {es: 'isla', en: 'island'}
     source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
-    comments: []
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-20', text: 'Una montaña 山 en el mar con un pájaro 鸟 encima: una isla.', original: 'isla mnemotenica, es nua montaña y enicma tiene un pajaro'}
+      - {kind: linguistic, private: false, date: '2026-10-20', text: 'Suena casi como 到 dào «llegar»: 我们到岛上了 «hemos llegado a la isla» junta los dos.'}
   - id: w.hua.flower
     use: hear
     role: content
@@ -142,3 +144,13 @@ entries:
     source: {origin: inbox, batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Llover es 下雨 «cae la lluvia»: 下雨了 «está lloviendo».'}
+  - id: w.feng
+    use: say
+    role: content
+    kind: word
+    hanzi: 风
+    pinyin: fēng
+    meaning: {es: 'viento', en: 'wind'}
+    source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: 'Con 大: 今天风很大 «hoy hace mucho viento». Es el fēng de tus deberes del 13: termina en -ng.'}

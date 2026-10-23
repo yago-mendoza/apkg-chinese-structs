@@ -216,7 +216,7 @@ entries:
     meaning: {es: al lado, en: 'beside, next to'}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
     comments: []
-    connection: {kind: sound, with: [房], text: '方 fāng da el sonido a 旁 páng y a 房 fáng, el de 房间.'}
+    connection: {kind: sound, with: [房, 放], text: '方 fāng da el sonido a 旁 páng, a 房 fáng (el de 房间) y a 放 fàng «poner».'}
   - id: w.xi.west
     use: read
     use_reason: como dirección casi no se dice suelto; aquí se reconoce dentro de 东西 y 西班牙
@@ -351,3 +351,55 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: '我认识路 «sé el camino». 路上 «por el camino».'}
+  - id: w.cong
+    use: say
+    role: function
+    kind: word
+    hanzi: 从
+    pinyin: cóng
+    meaning: {es: 'desde, de (un sitio)', en: 'from'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-23'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: '从…来 «venir de»: 我从西班牙来 dice lo mismo que 我来自西班牙.'}
+      - {kind: character, private: false, date: '2026-10-23', text: 'Dos personas 人, una detrás de la otra: seguir a alguien; de ahí «desde».'}
+  - id: w.shangche
+    use: hear
+    role: content
+    kind: word
+    hanzi: 上车
+    pinyin: shàngchē
+    meaning: {es: 'subir (a un coche, a un autobús)', en: 'to get in (a car, a bus)'}
+    source: {origin: class, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: 'Palabra a palabra: 上 «subir» + 车 «vehículo». Bajar es 下车 xià chē.'}
+  - id: w.chaoshi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 超市
+    pinyin: chāoshì
+    meaning: {es: 'supermercado', en: 'supermarket'}
+    connection: {kind: sound, with: [绍], text: '召 zhào da el sonido a 超 chāo y a 绍 shào, el de 介绍.'}
+    source: {origin: class, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
+    comments:
+      - {kind: character, private: false, date: '2026-09-27', text: '市 lleva 巾 «tela» con un tejado 亠: un puesto con toldo. No confundir con 师, 帅, 币 y 布, que también llevan 巾.'}
+  - id: w.che
+    use: say
+    role: content
+    kind: word
+    hanzi: 车
+    pinyin: chē
+    meaning: {es: 'coche, vehículo', en: 'car, vehicle'}
+    source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: 'Cualquier vehículo: 开车 «conducir», 上车 «subir», 火车 huǒchē «tren» [HSK 1].'}
+  - id: w.zoulu
+    use: say
+    role: content
+    kind: word
+    hanzi: 走路
+    pinyin: zǒulù
+    meaning: {es: 'andar, ir andando', en: 'to walk, to go on foot'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: 'Palabra a palabra: 走 «andar» + 路 «camino». 我们走路去吧 «vamos andando».'}

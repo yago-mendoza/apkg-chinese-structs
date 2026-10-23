@@ -95,16 +95,21 @@ Mismo sonido, otro tono: 叫 cae; 脚 baja y sube.
 - 叫 jiào · cae (4.º), verbo: 我叫大卫
 - 脚 jiǎo · baja y sube (3.º), parte del cuerpo
 
+## 朋友 péngyou y 苹果 píngguǒ
+
+Empiezan casi igual y se confunden al oído y al decirlos.
+
+- 朋友 péngyou · péng con e; la segunda sílaba, átona
+- 苹果 píngguǒ · píng con i; la segunda, guǒ, con su tercer tono
+
 ## Frases
 
 - ✅🃏 她是我的老师。 · tā shì wǒ de lǎoshī · Ella es mi profesora.
 - ✅🃏 我们是朋友。 · wǒmen shì péngyou · Somos amigos.
 - ✅🃏 您是我们的老师吗？ · nín shì wǒmen de lǎoshī ma · ¿Es usted nuestra profesora?
 - ✅🃏 对，我是你们的老师。 · duì wǒ shì nǐmen de lǎoshī · Sí, soy vuestro profesor.
-- ✅🃏 他是谁？ · tā shì shéi · ¿Quién es él?
 - ✅🃏 你是谁？不对。你是什么东西？你为什么这么高？ · nǐ shì shéi bú duì nǐ shì shénme dōngxi nǐ wèishénme zhème gāo · ¿Quién eres? No, espera: ¿qué eres? ¿Por qué eres tan alto?
 - ✅🃏 这个人是我的朋友。 · zhè ge rén shì wǒ de péngyou · Esta persona es mi amigo.
-- ✅🃏 服务员，我要这个。 · fúwùyuán wǒ yào zhè ge · Camarero, quiero este.
 - ✅🃏 他不是我的老师。 · tā bú shì wǒ de lǎoshī · No es mi profesor.
 - ✅🃏 你想跟我吃饭吗？ · nǐ xiǎng gēn wǒ chīfàn ma · ¿Quieres comer conmigo?
 - ✅🃏 谁来了？ · shéi lái le · ¿Quién ha venido?
@@ -117,4 +122,4 @@ Mismo sonido, otro tono: 叫 cae; 脚 baja y sube.
 - ✅🃏 这跟你没关系。 · zhè gēn nǐ méi guānxi · Esto no tiene nada que ver contigo.
 - ✅🃏 我们关系很好。 · wǒmen guānxi hěn hǎo · Nos llevamos muy bien.
 - ✅🃏 你是谁？ · nǐ shì shéi · ¿Quién eres?
-- ✅🃏 别人都来了。 · biéren dōu lái le · Los demás ya han venido.
+- ✅🃏 别人都来了。 · biéren dōu lái le · Todos los demás ya han venido.

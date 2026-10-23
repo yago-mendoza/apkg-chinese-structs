@@ -733,10 +733,10 @@ class Batch005(unittest.TestCase):
                          "una frase de la pareja se colaba como ejemplo")
         partner = anki.partner_example(ex, self.sby, self.eby)
         self.assertIsNotNone(partner)
-        self.assertEqual(partner[0]["id"], "w.shi")
+        self.assertIn(partner[0]["id"], {"w.shi", "w.shi.matter", "w.shi.try"})   # 是, 事 o 试 (lote 013: el grupo crece)
         notes = self.fields("x.read.num.shi")["notes"]
-        self.assertNotIn("Para no confundirlo", notes)            # la frase va en la fila de 是, no en otro apartado
-        row = notes.split('class="vs-hz">是</b>')[1].split('<div class="vs-row')[0]
+        self.assertNotIn("Para no confundirlo", notes)            # la frase va en la fila de su pareja, no aparte
+        row = notes.split(f'class="vs-hz">{partner[0]["hanzi"]}</b>')[1].split('<div class="vs-row')[0]
         self.assertIn("vs-ex", row)
         self.assertEqual(notes.count("vs-ex"), 1)
 
@@ -1067,7 +1067,16 @@ class Batch011(unittest.TestCase):
         self.assertLess(cai, gei)
         dates = [anki.class_date(x, self.eby, self.sby) for x in sorted(self.exercises, key=lambda x: order[x["id"]])]
         seen = [d for d in dates if d]
-        self.assertEqual(dates[:len(seen)], seen)                      # el bloque de clase va delante, entero
+        # El bloque de clase va delante, entero; dentro solo se cuela lo que una tarjeta de clase enseña escrito y
+        # aún no había salido (el contexto antes que la tarjeta, lote 013).
+        cards = sorted(self.exercises, key=lambda x: order[x["id"]])
+        pw = anki.prompt_words_finder(self.entries)
+        shown = {c for x in cards if anki.class_date(x, self.eby, self.sby) for c in anki.shown_context(x, pw)}
+        last = max(i for i, d in enumerate(dates) if d)
+        block = cards[:last + 1]
+        intruders = [x for x in block if not anki.class_date(x, self.eby, self.sby)]
+        self.assertTrue(all(set(x.get("targets", [])) & shown for x in intruders), [x["id"] for x in intruders][:5])
+        self.assertEqual([d for d in dates[:len(block)] if d], seen)
         firsts = {}
         for i, d in enumerate(seen):
             firsts.setdefault(d, i)
@@ -1079,7 +1088,7 @@ class Batch011(unittest.TestCase):
         for i, d in enumerate(seen):
             pos.setdefault(d, []).append(i)
         recent = sorted(pos, reverse=True)
-        self.assertEqual(seen[0], recent[0])
+        self.assertIn(recent[0], seen[:3])                         # la clase más nueva, de las primeras
         medians = [statistics.median(pos[d]) for d in recent[:3]]
         self.assertEqual(medians, sorted(medians))
         self.assertLess(firsts[min(firsts)], 10)
@@ -1167,19 +1176,25 @@ class TimelineTest(unittest.TestCase):
 
 
 class SentenceKindTest(unittest.TestCase):
-    """Lote 012: cada frase será fórmula o ejemplo; check avisa de las que falten en cuanto empiece la clasificación."""
+    """Lote 012: cada frase es fórmula o ejemplo (clasificadas en el lote 013); check avisa de la que falte."""
 
     def test_kind(self):
         entries, sentences, exercises = anki.load()
         _, warnings = anki.validate(entries, sentences, exercises, require_audio=False)
-        if not any("kind" in s for s in sentences):
-            self.assertFalse(any("frase sin kind" in w for w in warnings))
-        one = [dict(sentences[0], kind="formula")] + sentences[1:]
+        self.assertFalse(any("frase sin kind" in w for w in warnings))
+        one = [{k: v for k, v in sentences[0].items() if k != "kind"}] + sentences[1:]
         errors, warnings = anki.validate(entries, one, exercises, require_audio=False)
         self.assertTrue(any("frase sin kind" in w for w in warnings))
         bad = [dict(sentences[0], kind="saludo")] + sentences[1:]
         errors, _ = anki.validate(entries, bad, exercises, require_audio=False)
         self.assertTrue(any("kind es formula" in e for e in errors))
+
+    def test_a_classified_sentence_still_asks_for_its_cards(self):
+        # Lote 013: al clasificar, las frases dejaron de exigir tarjetas, porque se reconocían por no tener kind.
+        s = {"id": "s.t", "use": "say", "kind": "formula", "segments": [{"text": "好", "ref": "w.hao", "pinyin": "hǎo"}],
+             "translation": {"es": "bien", "en": "good"}, "source": {"origin": "review"}}
+        self.assertIn("produce", anki.required_cards(s, {}, eby={}))
+        self.assertIn("produce", anki.required_cards(dict(s, kind="example"), {}, eby={}))
 
 
 class ClassQueues(unittest.TestCase):
@@ -1215,3 +1230,105 @@ class NearSoundalikes(unittest.TestCase):
         group = {"id": "g.x", "kind": "group", "members": [{"ref": "w.a"}, {"ref": "w.b"}]}
         pair = {"id": "x.pair.si-shi", "pair": [{"hanzi": "四"}, {"hanzi": "十"}]}
         self.assertEqual(anki.near_soundalikes(entries + [group], [pair]), [])
+
+
+class ContextFirst(unittest.TestCase):
+    """Lote 013: una tarjeta no sale antes que las palabras que enseña escritas (le salió el matiz de 都 con 喜欢
+    sin haber visto nunca 喜欢)."""
+
+    def test_prompt_words_are_found_and_ambiguous_ones_skipped(self):
+        w = lambda i, hz: {"id": i, "kind": "word", "hanzi": hz, "use": "say"}
+        find = anki.prompt_words_finder([w("w.xihuan", "喜欢"), w("w.dou", "都"), w("w.de", "得"), w("w.dei", "得"),
+                                         w("w.xi", "喜")])
+        ex = {"prompt": {"text": "我都喜欢 y 你说得对: ¿qué cambia?"}}
+        self.assertEqual(find(ex), ["w.dou", "w.xihuan"])          # 喜欢 entero, no 喜; 得 tiene dos entradas
+
+    def test_the_mix_waits_for_a_shown_word_in_the_same_block(self):
+        cards = [{"id": "x.nuance.b", "type": "nuance", "targets": ["w.b"], "context": ["w.a"]},
+                 {"id": "x.read.a", "type": "read", "targets": ["w.a"]},
+                 {"id": "x.listen.c", "type": "listen", "targets": ["w.c"]}]
+        needs = {c["id"]: anki.shown_context(c) for c in cards}
+        order = anki.interleave_streams(cards, key=lambda c: c["id"], needs=needs)
+        self.assertLess(order.index("x.read.a"), order.index("x.nuance.b"))
+        listen = {"id": "x.listen.s", "type": "listen", "targets": ["s.s"], "context": ["w.a"]}
+        self.assertEqual(anki.shown_context(listen), [])          # en una de oír, el contexto no se ve escrito
+
+    def test_a_shown_word_from_a_later_block_is_brought_forward(self):
+        xby = {"x.nuance.b": {"id": "x.nuance.b", "type": "nuance", "targets": ["w.b"], "context": ["w.a"]},
+               "x.listen.a": {"id": "x.listen.a", "type": "listen", "targets": ["w.a"]},
+               "x.read.a": {"id": "x.read.a", "type": "read", "targets": ["w.a"]}}
+        needs = {x: anki.shown_context(ex) for x, ex in xby.items()}
+        order = anki.context_first(["x.nuance.b", "x.listen.a", "x.read.a"], xby, needs)
+        self.assertEqual(order, ["x.read.a", "x.nuance.b", "x.listen.a"])   # la de leer, la más temprana, delante
+
+
+class EmptyGap(unittest.TestCase):
+    """Lote 013: la trampa en que el hueco se queda vacío (大家都＿忙: no va nada)."""
+
+    def test_an_empty_slot_renders_after_its_word_and_is_checked(self):
+        s = {"id": "s.t", "segments": [{"text": "大家", "ref": "w.dajia", "pinyin": "dàjiā"},
+                                       {"text": "都", "ref": "w.dou", "pinyin": "dōu"},
+                                       {"text": "忙", "ref": "w.mang", "pinyin": "máng"}, {"text": "。"}]}
+        html = anki.render_sentence(s, gap_after="w.dou")
+        self.assertEqual(html.count("seg gap"), 1)
+        self.assertLess(html.index("都"), html.index("seg gap"))
+        self.assertLess(html.index("seg gap"), html.index("忙"))
+        self.assertIn(">忙<", html)                                # no tapa ninguna palabra
+
+    def test_the_real_traps_are_valid(self):
+        E, S, X = anki.load()[:3]
+        traps = [x for x in X if x.get("gap_after")]
+        self.assertTrue(traps)
+        errors, _ = anki.validate(E, S, X, require_audio=False)
+        self.assertFalse([e for e in errors if any(e.startswith(t["id"]) for t in traps)])
+        bad = dict(traps[0], id="x.cloze.empty.bad", gap_after="w.no-esta")
+        errors, _ = anki.validate(E, S, X + [bad], require_audio=False)
+        self.assertTrue(any(e.startswith("x.cloze.empty.bad:") for e in errors))
+
+
+class Lot013Display(unittest.TestCase):
+    """Lote 013: lo que te dicen, en un bocadillo; el chino de matices y contrastes, grande; «Uso real»."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.E, cls.S, cls.X = anki.load()[:3]
+        cls.eby = {e["id"]: e for e in cls.E}
+        cls.sby = {s["id"]: s for s in cls.S}
+        cls.xby = {x["id"]: x for x in cls.X}
+
+    def test_said_goes_in_a_bubble_and_is_translated_on_the_back(self):
+        f = anki.card_fields(self.xby["x.situation.haode"], self.eby, self.sby, {}, set())
+        self.assertIn('class="said"', f["front"])
+        self.assertIn("下午", re.sub(r"<[^>]+>", "", f["front"]))  # lo que te dicen, delante (sin las etiquetas de color)
+        self.assertIn("…", f["front"])                              # y tu turno
+        self.assertNotIn("下午", f["task"])                         # la consigna, sin chino
+        self.assertIn("Nos vemos por la tarde", f["back"])          # detrás, traducido
+
+    def test_said_is_checked(self):
+        ok = self.xby["x.situation.haode"]
+        no_zh = dict(ok, id="x.situation.t1", prompt=dict(ok["prompt"], said="hola"))
+        no_tr = dict(ok, id="x.situation.t2", prompt={"text": "Te dicen esto.", "said": "这个苹果很好吃吗？"})
+        errors, _ = anki.validate(self.E, self.S, self.X + [no_zh, no_tr], require_audio=False)
+        self.assertTrue(any(e.startswith("x.situation.t1:") for e in errors))
+        self.assertTrue(any(e.startswith("x.situation.t2:") for e in errors))
+        fixed = dict(no_tr, id="x.situation.t3", prompt=dict(no_tr["prompt"], said_es="¿Está rica esta manzana?"))
+        errors, _ = anki.validate(self.E, self.S, self.X + [fixed], require_audio=False)
+        self.assertFalse([e for e in errors if e.startswith("x.situation.t3:")])
+
+    def test_nuance_chinese_is_big_and_separated(self):
+        pieces, task = anki.nuance_pieces("我都喜欢 y 我什么都喜欢: ¿qué cambia?")
+        self.assertEqual((pieces, task), (["我都喜欢", "我什么都喜欢"], "¿Qué cambia?"))
+        f = anki.card_fields(self.xby["x.nuance.dou-shenme-dou"], self.eby, self.sby, {}, set())
+        self.assertIn('class="slash"', f["front"])
+        self.assertEqual(f["task"], "¿Qué cambia?")
+
+    def test_contrast_members_are_stacked(self):
+        ex = next(x for x in self.X if x["type"] == "contrast")
+        f = anki.card_fields(ex, self.eby, self.sby, {}, set())
+        self.assertIn('class="stack"', f["front"])
+        self.assertIn('class="slash"', f["front"])
+
+    def test_usage_has_its_own_box(self):
+        f = anki.card_fields(self.xby["x.read.jipiao"], self.eby, self.sby, {}, set())
+        self.assertIn("note--usage", f["notes"])
+        self.assertIn("Uso real", f["notes"])

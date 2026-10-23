@@ -3,6 +3,7 @@
 sentences:
   - id: s.count-1-10
     use: say
+    kind: example
     segments:
       - {text: 一, ref: w.num.yi, pinyin: yī}
       - {text: 、}
@@ -28,6 +29,7 @@ sentences:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: s.wo-you-san-ge-pengyou
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 有, ref: w.you.have, pinyin: yǒu}
@@ -39,6 +41,7 @@ sentences:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: s.tamen-you-liang-ge-haizi
     use: hear
+    kind: example
     segments:
       - {text: 他们, ref: w.tamen, pinyin: tāmen}
       - {text: 有, ref: w.you.have, pinyin: yǒu}
@@ -50,6 +53,7 @@ sentences:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: s.wo-meiyou-qian
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 没有, ref: w.meiyou, pinyin: méiyǒu}
@@ -57,26 +61,9 @@ sentences:
       - {text: 。}
     translation: {es: 'No tengo dinero.', en: 'I have no money.'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
-  - id: s.ni-ji-sui
-    use: say
-    segments:
-      - {text: 你, ref: w.ni, pinyin: nǐ}
-      - {text: 几, ref: w.ji, pinyin: jǐ}
-      - {text: 岁, ref: w.sui, pinyin: suì}
-      - {text: ？}
-    translation: {es: '¿Cuántos años tienes? (a un niño)', en: 'How old are you? (to a child)'}
-    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
-  - id: s.ji-ge-ren
-    use: say
-    segments:
-      - {text: 几, ref: w.ji, pinyin: jǐ}
-      - {text: 个, ref: w.ge, pinyin: ge}
-      - {text: 人, ref: w.ren, pinyin: rén}
-      - {text: ？}
-    translation: {es: '¿Cuántas personas? (en un restaurante)', en: 'How many people? (at a restaurant)'}
-    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
   - id: s.wo-you-yi-ben-shu
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 有, ref: w.you.have, pinyin: yǒu}
@@ -86,16 +73,9 @@ sentences:
       - {text: 。}
     translation: {es: 'Tengo un libro.', en: "I have a book."}
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
-  - id: s.ni-duoda
-    use: say
-    segments:
-      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
-      - {text: 多大, ref: w.duoda, pinyin: 'duō dà'}
-      - {text: ？}
-    translation: {es: '¿Cuántos años tienes?', en: 'How old are you?'}
-    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
   - id: s.wo-shiba-sui-ni-ne
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 十, ref: w.num.shi, pinyin: 'shí'}
@@ -109,6 +89,7 @@ sentences:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
   - id: s.wo-ye-shiba-sui
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 也, ref: w.ye, pinyin: 'yě'}
@@ -118,29 +99,9 @@ sentences:
       - {text: 。}
     translation: {es: 'Yo también tengo dieciocho.', en: 'I''m eighteen too.'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-  - id: s.ni-jinnian-ji-sui-le
-    use: say
-    segments:
-      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
-      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
-      - {text: 几, ref: w.ji, pinyin: 'jǐ'}
-      - {text: 岁, ref: w.sui, pinyin: 'suì'}
-      - {text: 了, ref: w.le, pinyin: 'le'}
-      - {text: ？}
-    translation: {es: '¿Cuántos años tienes ya? (a un niño)', en: 'How old are you now?'}
-    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: deberes 2026-10-06, date: '2026-10-06'}
-  - id: s.nin-duoda-nianji-le
-    use: say
-    segments:
-      - {text: 您, ref: w.nin, pinyin: 'nín'}
-      - {text: 多大, ref: w.duoda, pinyin: 'duō dà'}
-      - {text: 年纪, ref: w.nianji, pinyin: 'niánjì'}
-      - {text: 了, ref: w.le, pinyin: 'le'}
-      - {text: ？}
-    translation: {es: '¿Cuántos años tiene usted?', en: 'How old are you? (polite)'}
-    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
   - id: s.wo-ershisan-sui
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 二, ref: w.num.er, pinyin: 'èr'}
@@ -150,20 +111,9 @@ sentences:
       - {text: 。}
     translation: {es: 'Tengo veintitrés años.', en: 'I''m twenty-three.'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-  - id: s.ta-de-dianhua-haoma-shi-duoshao
-    use: say
-    segments:
-      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
-      - {text: 的, ref: w.de, pinyin: 'de'}
-      - {text: 电话, ref: w.dianhua, pinyin: 'diànhuà'}
-      - {text: 号码, ref: w.haoma, pinyin: 'hàomǎ'}
-      - {text: 是, ref: w.shi, pinyin: 'shì'}
-      - {text: 多少, ref: w.duoshao, pinyin: 'duōshao'}
-      - {text: ？}
-    translation: {es: '¿Cuál es su número de teléfono?', en: 'What''s his phone number?'}
-    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
   - id: s.wo-you-liang-ben-shu
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
@@ -175,6 +125,7 @@ sentences:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
   - id: s.yibai-lingwu-kuai
     use: say
+    kind: example
     segments:
       - {text: 一, ref: w.num.yi, pinyin: 'yì', sandhi: true}
       - {text: 百, ref: w.bai.hundred, pinyin: 'bǎi'}
@@ -186,6 +137,7 @@ sentences:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
   - id: s.liangqian-kuai
     use: say
+    kind: example
     segments:
       - {text: 两, ref: w.liang, pinyin: 'liǎng'}
       - {text: 千, ref: w.qian.thousand, pinyin: 'qiān'}
@@ -195,6 +147,7 @@ sentences:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
   - id: s.yiwan-kuai-qian
     use: say
+    kind: example
     segments:
       - {text: 一, ref: w.num.yi, pinyin: 'yí', sandhi: true}
       - {text: 万, ref: w.wan.tenk, pinyin: 'wàn'}
@@ -205,6 +158,7 @@ sentences:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
   - id: s.di-yi-tian
     use: say
+    kind: example
     segments:
       - {text: 第, ref: w.di.ordinal, pinyin: 'dì'}
       - {text: 一, ref: w.num.yi, pinyin: 'yī'}
@@ -214,6 +168,7 @@ sentences:
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
   - id: s.ta-shi-di-er-ge
     use: say
+    kind: example
     segments:
       - {text: 他, ref: w.ta.he, pinyin: 'tā'}
       - {text: 是, ref: w.shi, pinyin: 'shì'}
@@ -225,6 +180,7 @@ sentences:
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
   - id: s.liang-zhi-mao
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
@@ -236,6 +192,7 @@ sentences:
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
   - id: s.liang-bei-cha
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 要, ref: w.yao, pinyin: 'yào'}
@@ -247,6 +204,7 @@ sentences:
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
   - id: s.zhe-jian-yifu-hen-piaoliang
     use: say
+    kind: example
     segments:
       - {text: 这, ref: w.zhe, pinyin: 'zhè'}
       - {text: 件, ref: w.jian.cl, pinyin: 'jiàn'}
@@ -258,6 +216,7 @@ sentences:
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
   - id: s.zhongguo-you-shisi-yi-ren
     use: hear
+    kind: example
     segments:
       - {text: 中国, ref: w.zhongguo, pinyin: 'Zhōngguó'}
       - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
@@ -270,6 +229,7 @@ sentences:
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
   - id: s.wo-yao-yi-zhang-zhi
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 要, ref: w.yao, pinyin: 'yào'}
@@ -281,6 +241,7 @@ sentences:
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
   - id: s.ta-lai-guo-liang-ci
     use: say
+    kind: example
     segments:
       - {text: 他, ref: w.ta.he, pinyin: 'tā'}
       - {text: 来, ref: w.lai, pinyin: 'lái'}
@@ -292,6 +253,7 @@ sentences:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
   - id: s.zhe-ben-shu-wo-kan-le-liang-bian
     use: hear
+    kind: example
     segments:
       - {text: 这, ref: w.zhe, pinyin: 'zhè'}
       - {text: 本, ref: w.ben.book, pinyin: 'běn'}
@@ -306,6 +268,7 @@ sentences:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
   - id: s.wo-you-shijian
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 有, ref: w.you.have, pinyin: yǒu}
@@ -315,6 +278,7 @@ sentences:
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
   - id: s.drill-tens
     use: hear
+    kind: example
     segments:
       - {text: 五, ref: w.num.wu, pinyin: wǔ}
       - {text: 十, ref: w.num.shi, pinyin: shí}
@@ -343,6 +307,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.drill-hundreds
     use: hear
+    kind: example
     segments:
       - {text: 一, ref: w.num.yi, pinyin: yì, sandhi: true}
       - {text: 百, ref: w.bai.hundred, pinyin: bǎi}
@@ -372,6 +337,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.drill-big
     use: hear
+    kind: example
     segments:
       - {text: 两, ref: w.liang, pinyin: liǎng}
       - {text: 千, ref: w.qian.thousand, pinyin: qiān}
@@ -400,6 +366,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.drill-phone
     use: hear
+    kind: example
     segments:
       - {text: 幺, ref: w.yao.one, pinyin: yāo}
       - {text: 三, ref: w.num.san, pinyin: sān}
@@ -419,6 +386,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.drill-decimal
     use: hear
+    kind: example
     segments:
       - {text: 三, ref: w.num.san, pinyin: sān}
       - {text: 点, ref: w.dian.decimal, pinyin: diǎn}
@@ -437,6 +405,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.drill-years
     use: hear
+    kind: example
     segments:
       - {text: 一, ref: w.num.yi, pinyin: yī}
       - {text: 九, ref: w.num.jiu, pinyin: jiǔ}
@@ -460,6 +429,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.ni-mingtian-neng-lai-ma
     use: say
+    kind: example
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 明天, ref: w.mingtian, pinyin: míngtiān}
@@ -471,6 +441,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.ta-ershi-sui-ta-hen-nianqing
     use: say
+    kind: example
     segments:
       - {text: 他, ref: w.ta.he, pinyin: 'tā'}
       - {text: 二, ref: w.num.er, pinyin: 'èr'}
@@ -483,27 +454,9 @@ sentences:
       - {text: 。}
     translation: {es: 'Tiene veinte años; es muy joven.', en: 'He''s twenty; he''s very young.'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
-  - id: s.ni-duoda-le
-    use: say
-    segments:
-      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
-      - {text: 多大, ref: w.duoda, pinyin: 'duō dà'}
-      - {text: 了, ref: w.le, pinyin: 'le'}
-      - {text: ？}
-    translation: {es: '¿Cuántos años tienes?', en: 'How old are you?'}
-    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
-  - id: s.ta-duoda-nianji-le
-    use: hear
-    segments:
-      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
-      - {text: 多大, ref: w.duoda, pinyin: 'duō dà'}
-      - {text: 年纪, ref: w.nianji, pinyin: 'niánjì'}
-      - {text: 了, ref: w.le, pinyin: 'le'}
-      - {text: ？}
-    translation: {es: '¿Cuántos años tiene? (de alguien mayor)', en: 'How old is he? (of an older person)'}
-    source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
   - id: s.wo-sanshier-sui
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 三, ref: w.num.san, pinyin: 'sān'}
@@ -515,6 +468,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
   - id: s.wo-shi-sui
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 十, ref: w.num.shi, pinyin: 'shí'}
@@ -524,6 +478,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
   - id: s.ta-nianji-da-le
     use: say
+    kind: example
     segments:
       - {text: 他, ref: w.ta.he, pinyin: 'tā'}
       - {text: 年纪, ref: w.nianji, pinyin: 'niánjì'}
@@ -534,6 +489,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
   - id: s.wo-chusheng-zai-1980-nian
     use: hear
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 出生, ref: w.chusheng, pinyin: 'chūshēng'}
@@ -548,6 +504,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
   - id: s.wo-jinnian-ershi-sui
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
@@ -559,6 +516,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
   - id: s.ta-sanshi-sui-zuoyou
     use: say
+    kind: example
     segments:
       - {text: 他, ref: w.ta.he, pinyin: 'tā'}
       - {text: 三, ref: w.num.san, pinyin: 'sān'}
@@ -570,6 +528,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
   - id: s.wo-hai-bu-dao-ershiba-sui
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 还, ref: w.hai.still, pinyin: 'hái'}
@@ -584,6 +543,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
   - id: s.ni-de-pengyou-ershiba-sui-le
     use: hear
+    kind: example
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 的, ref: w.de, pinyin: 'de'}
@@ -598,6 +558,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
   - id: s.wo-juede-ta-ershi-sui-zuoyou
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
@@ -611,6 +572,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-15', date: '2026-10-15'}
   - id: s.ta-ershier-sui
     use: hear
+    kind: example
     segments:
       - {text: 他, ref: w.ta.he, pinyin: 'tā'}
       - {text: 二, ref: w.num.er, pinyin: 'èr'}
@@ -622,6 +584,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'chat: dictados de la profesora al empezar la clase', date: '2026-10-15'}
   - id: s.ta-baba-wushisan-sui
     use: say
+    kind: example
     segments:
       - {text: 他, ref: w.ta.he, pinyin: 'tā'}
       - {text: 爸爸, ref: w.baba, pinyin: 'bàba'}
@@ -634,6 +597,7 @@ sentences:
     source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
   - id: s.num-35781
     use: say
+    kind: example
     listen: true
     listen_reason: 'Dictado de números: oír uno grande y escribir sus cifras (review 011: «más claro y automático 万, 千, 百, 十»).'
     segments:
@@ -651,6 +615,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.num-106234
     use: say
+    kind: example
     listen: true
     listen_reason: 'Dictado de números: oír uno grande y escribir sus cifras (review 011: «más claro y automático 万, 千, 百, 十»).'
     segments:
@@ -668,6 +633,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.num-20050
     use: say
+    kind: example
     listen: true
     listen_reason: 'Dictado de números: oír uno grande y escribir sus cifras (review 011: «más claro y automático 万, 千, 百, 十»).'
     segments:
@@ -681,6 +647,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.num-8600
     use: say
+    kind: example
     listen: true
     listen_reason: 'Dictado de números: oír uno grande y escribir sus cifras (review 011: «más claro y automático 万, 千, 百, 十»).'
     segments:
@@ -693,6 +660,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.num-12000
     use: say
+    kind: example
     listen: true
     listen_reason: 'Dictado de números: oír uno grande y escribir sus cifras (review 011: «más claro y automático 万, 千, 百, 十»).'
     segments:
@@ -705,6 +673,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.num-6080
     use: say
+    kind: example
     listen: true
     listen_reason: 'Dictado de números: oír uno grande y escribir sus cifras (review 011: «más claro y automático 万, 千, 百, 十»).'
     segments:
@@ -718,6 +687,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.num-990
     use: say
+    kind: example
     listen: true
     listen_reason: 'Dictado de números: oír uno grande y escribir sus cifras (review 011: «más claro y automático 万, 千, 百, 十»).'
     segments:
@@ -730,6 +700,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.num-250000
     use: say
+    kind: example
     listen: true
     listen_reason: 'Dictado de números: oír uno grande y escribir sus cifras (review 011: «más claro y automático 万, 千, 百, 十»).'
     segments:
@@ -742,6 +713,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.wo-yao-yiban
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 要, ref: w.yao, pinyin: 'yào'}
@@ -749,3 +721,88 @@ sentences:
       - {text: 。}
     translation: {es: 'Quiero la mitad.', en: 'I want half.'}
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.zhe-ben-shu-yibai-ershi-kuai
+    use: hear
+    kind: example
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 本, ref: w.ben.book, pinyin: 'běn'}
+      - {text: 书, ref: w.shu, pinyin: 'shū'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yì', sandhi: 'yī → yì delante de primer, segundo o tercer tono'}
+      - {text: 百, ref: w.bai.hundred, pinyin: 'bǎi'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 块, ref: w.kuai, pinyin: 'kuài'}
+      - {text: 。}
+    translation: {es: 'Este libro cuesta ciento veinte yuanes.', en: 'This book is a hundred and twenty yuan.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-22'}
+  - id: s.yi-jin-pingguo-ba-kuai-wu
+    use: hear
+    kind: example
+    segments:
+      - {text: 一, ref: w.num.yi, pinyin: 'yì', sandhi: 'yī → yì delante de primer, segundo o tercer tono'}
+      - {text: 斤, ref: w.jin.weight, pinyin: 'jīn'}
+      - {text: 苹果, ref: w.pingguo, pinyin: 'píngguǒ'}
+      - {text: 八, ref: w.ba, pinyin: 'bā'}
+      - {text: 块, ref: w.kuai, pinyin: 'kuài'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 。}
+    translation: {es: 'El medio kilo de manzanas está a ocho cincuenta.', en: 'Apples are eight fifty a jin.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-22'}
+  - id: s.xianzai-san-dian-ershiwu
+    use: hear
+    kind: example
+    segments:
+      - {text: 现在, ref: w.xianzai, pinyin: 'xiànzài'}
+      - {text: 三, ref: w.num.san, pinyin: 'sān'}
+      - {text: 点, ref: w.dian.oclock, pinyin: 'diǎn'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 。}
+    translation: {es: 'Son las tres y veinticinco.', en: 'It''s twenty-five past three.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-22'}
+  - id: s.jintian-shi-shiyue-ershisan-hao
+    use: hear
+    kind: example
+    segments:
+      - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 月, ref: w.yue.month, pinyin: 'yuè'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 三, ref: w.num.san, pinyin: 'sān'}
+      - {text: 号, ref: w.hao.date, pinyin: 'hào'}
+      - {text: 。}
+    translation: {es: 'Hoy es 23 de octubre.', en: 'Today is October 23rd.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-22'}
+  - id: s.zhege-diannao-liuqian-babai-kuai
+    use: hear
+    kind: example
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 电脑, ref: w.diannao, pinyin: 'diànnǎo'}
+      - {text: 六, ref: w.num.liu, pinyin: 'liù'}
+      - {text: 千, ref: w.qian.thousand, pinyin: 'qiān'}
+      - {text: 八, ref: w.ba, pinyin: 'bā'}
+      - {text: 百, ref: w.bai.hundred, pinyin: 'bǎi'}
+      - {text: 块, ref: w.kuai, pinyin: 'kuài'}
+      - {text: 。}
+    translation: {es: 'Este ordenador cuesta seis mil ochocientos yuanes.', en: 'This computer is six thousand eight hundred yuan.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-22'}
+  - id: s.beijing-you-liangqian-duo-wan-ren
+    use: hear
+    kind: example
+    segments:
+      - {text: 北京, ref: w.beijing, pinyin: 'Běijīng'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 两, ref: w.liang, pinyin: 'liǎng'}
+      - {text: 千, ref: w.qian.thousand, pinyin: 'qiān'}
+      - {text: 多, ref: w.duo, pinyin: 'duō'}
+      - {text: 万, ref: w.wan.tenk, pinyin: 'wàn'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: 。}
+    translation: {es: 'En Pekín viven más de veinte millones de personas.', en: 'Beijing has over twenty million people.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-22'}

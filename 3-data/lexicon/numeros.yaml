@@ -121,6 +121,7 @@ entries:
     accept_cards: 'los huecos de 有 frente a 要 y de 想有 frente a 想要 practican la confusión que señaló en el review 008'
     comments:
       - {kind: note, private: false, date: '2026-10-01', text: 'Se niega con 没: 没有.'}
+      - {kind: linguistic, private: false, date: '2026-10-21', text: 'Sin nadie delante, 有 es «hay»: 这里有很多人 «aquí hay mucha gente». Con alguien delante, «tener»: 我有两斤苹果.'}
   - id: w.ge
     use: say
     role: function
@@ -195,6 +196,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-02', text: 'Un árbol 木 con una raya en la raíz: su sentido original es «raíz, origen». Como clasificador, cuenta libros.'}
       - {kind: teacher, private: false, date: '2026-10-02', text: 'Como 个 para personas, 本 para libros: 一个人 «una persona», 一本书 «un libro».'}
+      - {kind: mnemonic, private: false, date: '2026-10-21', text: '本 parece un estandarte, como el que habría en una biblioteca al aire libre donde están los libros.', original: 'clasiidcaodr ben, de libros, lo veo y es como un estandarte que imaingo que estaria en el siito este al aire libreo blbliteoca donde estan los libros'}
   - id: w.ke
     use: hear
     role: function
@@ -599,3 +601,13 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: '我要一半 «quiero la mitad». 一斤 es la mitad de un 公斤.'}
+  - id: g.wu-wu
+    kind: group
+    basis: homophone
+    title: 五 wǔ y 午 wǔ
+    explanation: 'Suenan igual, con el mismo tono. 五 es el número; 午 «mediodía» solo sale dentro de palabras: 中午, 下午.'
+    members:
+      - {ref: w.num.wu, cue: 'el número: 五个人'}
+      - {ref: c.wu.noon, cue: 'solo en palabras del día: 中午, 下午'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+    comments: []

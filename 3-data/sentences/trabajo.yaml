@@ -3,6 +3,7 @@
 sentences:
   - id: s.ni-zhunbei-hao-le-ma
     use: say
+    kind: formula
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 准备, ref: w.zhunbei, pinyin: 'zhǔnbèi'}
@@ -14,6 +15,7 @@ sentences:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
   - id: s.wo-de-diannao-hen-man
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 的, ref: w.de, pinyin: 'de'}
@@ -25,6 +27,7 @@ sentences:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
   - id: s.wo-mingtian-shangban
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}

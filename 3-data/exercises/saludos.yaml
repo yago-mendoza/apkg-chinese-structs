@@ -859,7 +859,7 @@ exercises:
     targets: [w.hai.still]
     context: [w.ni, w.hao, w.ma]
     skills: [production, pinyin]
-    prompt: {text: 'Completa en pinyin: «¿Estás bien?»'}
+    prompt: {text: 'Completa en pinyin: «¿Estás bien? (preguntado con preocupación)»'}
     answer: {typed: hai2, hanzi: 还, pinyin: hái, meaning: todavía; aún}
     comments: []
   - id: x.read.hai.still
@@ -1118,8 +1118,8 @@ exercises:
     targets: [s.ni-hai-hao-ma]
     context: [w.ni, w.hai.still, w.hao, w.ma]
     skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿Estás bien?»'}
-    answer: {meaning: '¿Estás bien?'}
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Estás bien? (preguntado con preocupación)»'}
+    answer: {meaning: '¿Estás bien? (preguntado con preocupación)'}
     comments: []
   - id: x.produce.chi-le-ni-ne
     added: 2026-10-05
@@ -1131,28 +1131,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Sí, ya he comido, ¿y tú?»'}
     answer: {meaning: 'Sí, ya he comido, ¿y tú?'}
-    comments: []
-  - id: x.listen.zhege-zenmeyang
-    added: 2026-10-05
-    lang: es
-    type: listen
-    sentence: s.zhege-zenmeyang
-    targets: [s.zhege-zenmeyang]
-    context: [w.zhe, w.ge, w.zenmeyang]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Qué tal este?'}
-    comments: []
-  - id: x.produce.zhege-zenmeyang
-    added: 2026-10-05
-    lang: es
-    type: produce
-    sentence: s.zhege-zenmeyang
-    targets: [s.zhege-zenmeyang]
-    context: [w.zhe, w.ge, w.zenmeyang]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué tal este?»'}
-    answer: {meaning: '¿Qué tal este?'}
     comments: []
   - id: x.listen.wo-zuijin-hen-mang
     added: 2026-10-05
@@ -1224,9 +1202,10 @@ exercises:
     type: speak
     targets: [e.chifanlema]
     skills: [production, speaking]
-    prompt: {text: 'Situación. Una vecina te saluda con 吃饭了吗？ y ya has comido. ¿Qué contestas?'}
+    prompt: {text: 'Situación. Una vecina te saluda así y ya has comido. ¿Qué contestas?', said: 吃饭了吗？}
     answer: {hanzi: '吃了，你呢？', pinyin: 'chī le nǐ ne', meaning: 'sí, ¿y tú? (y se sigue andando: es un saludo)'}
-    comments: []
+    comments:
+      - {kind: usage, private: false, date: '2026-10-21', text: '吃饭了吗？ es un saludo entre vecinos y conocidos: no pregunta de verdad si has comido. Se contesta 吃了，你呢？ aunque no sea del todo cierto.'}
   - id: x.situation.haojiubujian
     added: 2026-10-05
     accept_pinyin_mismatch: '不 se lee bú delante de cuarto tono (见 jiàn)'
@@ -1632,7 +1611,7 @@ exercises:
     sentence: s.wo-hen-hao-ni-ne
     targets: [s.wo-hen-hao-ni-ne]
     skills: [production, speaking]
-    prompt: {text: Situación. Te preguntan 你好吗？. Contesta que bien y devuélvele la pregunta.}
+    prompt: {text: 'Situación. Te preguntan esto. Contesta que bien y devuélvele la pregunta.', said: 你好吗？}
     answer: {meaning: 'estoy bien, ¿y tú?'}
     comments: []
   - id: x.situation.mingtian-zenmeyang
@@ -1955,8 +1934,8 @@ exercises:
     targets: [s.zuijin-hai-hao-ma]
     context: [w.zuijin, w.hai.still, w.hao, w.ma]
     skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿Todo bien últimamente?»'}
-    answer: {meaning: '¿Todo bien últimamente?'}
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Sigue todo bien últimamente?»'}
+    answer: {meaning: '¿Sigue todo bien últimamente?'}
     comments: []
   - id: x.contrast.hai.still
     added: 2026-10-19
@@ -1977,4 +1956,175 @@ exercises:
     skills: [listening, tones, discrimination]
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 嗨, pinyin: hāi, meaning: ¡hola! (informal)}
+    comments: []
+  - id: x.produce.ni-hai-jide-wo-ma
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.ni-hai-jide-wo-ma
+    targets: [s.ni-hai-jide-wo-ma]
+    context: [w.ni, w.hai.still, w.jide, w.wo, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Todavía te acuerdas de mí?»'}
+    answer: {meaning: '¿Todavía te acuerdas de mí?'}
+    comments: []
+  - id: x.listen.yiqie-dou-hen-hao
+    added: 2026-10-19
+    lang: es
+    type: listen
+    sentence: s.yiqie-dou-hen-hao
+    targets: [s.yiqie-dou-hen-hao]
+    context: [w.yiqie, w.dou, w.hen, w.hao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Todo va bien.}
+    comments: []
+  - id: x.listen.nimen-chifan-le-ma
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.nimen-chifan-le-ma
+    targets: [s.nimen-chifan-le-ma]
+    context: [w.nimen, w.chifan, w.le, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Ya habéis comido?'}
+    comments: []
+  - id: x.listen.wang-ayi-hao
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.wang-ayi-hao
+    targets: [s.wang-ayi-hao]
+    context: [w.wang.surname, w.ayi, w.hao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Hola, señora Wang!'}
+    comments: []
+  - id: x.listen.ni-hao-ayi
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.ni-hao-ayi
+    targets: [s.ni-hao-ayi]
+    context: [e.nihao, w.ayi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Hola, señora!'}
+    comments: []
+  - id: x.produce.ni-hao-ayi
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.ni-hao-ayi
+    targets: [s.ni-hao-ayi]
+    context: [e.nihao, w.ayi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Hola, señora!»'}
+    answer: {meaning: '¡Hola, señora!'}
+    comments: []
+  - id: x.listen.shushu-ayi-hao
+    added: 2026-10-06
+    lang: es
+    type: listen
+    sentence: s.shushu-ayi-hao
+    targets: [s.shushu-ayi-hao]
+    context: [w.shushu, w.ayi, w.hao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Hola, señores!'}
+    comments: []
+  - id: x.produce.shushu-ayi-hao
+    added: 2026-10-06
+    lang: es
+    type: produce
+    sentence: s.shushu-ayi-hao
+    targets: [s.shushu-ayi-hao]
+    context: [w.shushu, w.ayi, w.hao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Hola, señores!»'}
+    answer: {meaning: '¡Hola, señores!'}
+    comments: []
+  - id: x.produce.mingtian-jian
+    added: 2026-09-25
+    type: produce
+    sentence: s.mingtian-jian
+    targets: [s.mingtian-jian]
+    context: [w.mingtian, w.jian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Hasta mañana!»'}
+    answer: {meaning: ¡Hasta mañana!}
+    lang: es
+    comments: []
+  - id: x.situation.mingtianjian-choice
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    targets: [s.mingtian-jian]
+    skills: [production, speaking]
+    prompt: {text: Elige. Te despides de un compañero al que verás mañana., options: [晚上好！, 早上好！, 你好！, 欢迎！, 明天见！]}
+    answer: {choice: e, hanzi: 明天见！, pinyin: míngtiān jiàn, meaning: '«Hasta mañana»: 明天 «mañana» + 见 «ver».'}
+    comments: []
+  - id: x.produce.wo-zou-le
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.wo-zou-le
+    targets: [s.wo-zou-le]
+    context: [w.wo, w.zou, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me voy.»'}
+    answer: {meaning: Me voy.}
+    comments: []
+  - id: x.produce.wo-yao-zou-le
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-yao-zou-le
+    targets: [s.wo-yao-zou-le]
+    context: [w.wo, w.yao, w.zou, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me tengo que ir.»'}
+    answer: {meaning: Me tengo que ir.}
+    comments: []
+  - id: x.produce.wo-yao-huiqu-le
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.wo-yao-huiqu-le
+    targets: [s.wo-yao-huiqu-le]
+    context: [w.wo, w.yao, w.huiqu, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo que volver.»'}
+    answer: {meaning: Tengo que volver.}
+    comments: []
+  - id: x.nuance.zhege-ni-zenmeyang
+    added: '2026-10-23'
+    lang: es
+    type: nuance
+    targets: [w.zenmeyang]
+    skills: [comprehension, discrimination]
+    prompt: {text: '这个怎么样？ y 这个你怎么样？: ¿cuál falla?'}
+    answer: {meaning: '这个你怎么样？ no se dice. Para pedir opinión: 这个怎么样？ o 这个你觉得怎么样？'}
+    comments: []
+  - id: x.compose.conocer-a-sus-padres
+    added: '2026-10-23'
+    lang: es
+    type: compose
+    targets: [s.shushu-ayi-hao, s.ni-zhen-nianqing, s.ni-fumu-duo-da-nianji-le]
+    words: [w.shushu, w.ayi, w.zhen, w.nianqing, w.fumu, w.nianji]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. Vas por primera vez a casa de un compañero de clase y te presenta a sus padres.'}
+    answer: {meaning: 'A los padres de un amigo se les dice 叔叔 y 阿姨; 你真年轻！ es un cumplido de siempre.'}
+    comments: []
+  - id: x.produce.meng-xiansheng-ninhao
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.meng-xiansheng-ninhao
+    targets: [s.meng-xiansheng-ninhao]
+    context: [w.meng, w.xiansheng, e.ninhao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Buenos días, señor Mèng!»'}
+    answer: {meaning: '¡Buenos días, señor Mèng!'}
     comments: []

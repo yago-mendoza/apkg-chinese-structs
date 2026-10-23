@@ -545,17 +545,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 谁}
     answer: {hanzi: 谁, pinyin: shéi, meaning: quién}
     comments: []
-  - id: x.produce.ta-shi-shei
-    added: 2026-10-01
-    lang: es
-    type: produce
-    sentence: s.ta-shi-shei
-    targets: [s.ta-shi-shei]
-    context: [w.ta.he, w.shi, w.shei]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿Quién es él?»'}
-    answer: {meaning: '¿Quién es él?'}
-    comments: []
   - id: x.dictation.shei
     added: 2026-10-01
     lang: es
@@ -608,17 +597,6 @@ exercises:
     prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
     question: {es: '¿Quién es la persona a la que preguntan?'}
     answer: {meaning: 'Su profesor o profesora.'}
-    comments: []
-  - id: x.comprehension.quien-es-el
-    added: 2026-10-02
-    lang: es
-    type: comprehension
-    targets: [s.ta-shi-shei, s.ta-shi-wo-de-baba, s.ta-hen-gao]
-    skills: [reading, comprehension]
-    script: hanzi
-    prompt: {text: 'Lee el diálogo en voz alta. Al terminar, abre la pregunta.'}
-    question: {es: '¿Quién es, y cómo es?'}
-    answer: {meaning: 'Es el padre de quien habla, y es alto.'}
     comments: []
   - id: x.tones.dajia
     added: 2026-10-02
@@ -789,28 +767,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Esta persona es mi amigo.»'}
     answer: {meaning: Esta persona es mi amigo.}
-    comments: []
-  - id: x.listen.fuwuyuan-wo-yao-zhege
-    added: 2026-10-06
-    lang: es
-    type: listen
-    sentence: s.fuwuyuan-wo-yao-zhege
-    targets: [s.fuwuyuan-wo-yao-zhege]
-    context: [w.fuwuyuan, w.wo, w.yao, w.zhe, w.ge]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Camarero, quiero este.'}
-    comments: []
-  - id: x.produce.fuwuyuan-wo-yao-zhege
-    added: 2026-10-06
-    lang: es
-    type: produce
-    sentence: s.fuwuyuan-wo-yao-zhege
-    targets: [s.fuwuyuan-wo-yao-zhege]
-    context: [w.fuwuyuan, w.wo, w.yao, w.zhe, w.ge]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Camarero, quiero este.»'}
-    answer: {meaning: 'Camarero, quiero este.'}
     comments: []
   - id: x.charsound.you
     added: 2026-10-06
@@ -1546,6 +1502,37 @@ exercises:
     targets: [s.bieren-dou-lai-le]
     context: [w.bieren, w.dou, w.lai, w.le]
     skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Los demás ya han venido.»'}
-    answer: {meaning: Los demás ya han venido.}
+    prompt: {text: 'Dilo en chino, en voz alta: «Todos los demás ya han venido.»'}
+    answer: {meaning: 'Todos los demás ya han venido.'}
+    comments: []
+  - id: x.pair.pengyou-pingguo
+    added: '2026-10-23'
+    lang: es
+    type: listen
+    accept_pinyin_mismatch: '朋友 se dice péngyou, con you átono'
+    targets: [w.pengyou]
+    pair: [{hanzi: 苹果, pinyin: píngguǒ, meaning: 'manzana'}, {hanzi: 朋友, pinyin: péngyou, meaning: 'amigo'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es péngyou, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: péngyou 朋友: péng con e y you átono. 苹果 píngguǒ: píng con i y guǒ con su tono.'}
+    comments: []
+  - id: x.contrast.ni
+    added: 2026-10-23
+    lang: es
+    type: contrast
+    group: g.ni-huan
+    targets: [w.ni]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es nǐ, «tú»?'}
+    answer: {hanzi: 你, pinyin: nǐ, meaning: tú}
+    comments: []
+  - id: x.contrast.pengyou
+    added: 2026-10-23
+    lang: es
+    type: contrast
+    group: g.pengyou-pingguo
+    targets: [w.pengyou]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 朋友, pinyin: péngyou, meaning: 'amigo, amiga'}
     comments: []

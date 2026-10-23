@@ -1,0 +1,481 @@
+# Frases · Compras. Esquema: 3-data/README.md
+
+sentences:
+  - id: s.ni-he-shui-ma
+    use: say
+    kind: example
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 水, ref: w.shui, pinyin: shuǐ}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Bebes agua?', en: 'Do you drink water?'}
+  - id: s.wo-xihuan-he-kafei
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 咖啡, ref: w.kafei, pinyin: kāfēi}
+      - {text: 。}
+    translation: {es: Me gusta tomar café., en: I like drinking coffee.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-yao-shui
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 水, ref: w.shui, pinyin: shuǐ}
+      - {text: 。}
+    translation: {es: Quiero agua., en: I want water.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-xuyao-shui
+    use: hear
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 需要, ref: w.xuyao, pinyin: xūyào}
+      - {text: 水, ref: w.shui, pinyin: shuǐ}
+      - {text: 。}
+    translation: {es: Necesito agua., en: I need water.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.wo-yao-niurou
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 牛肉, ref: w.niurou, pinyin: niúròu}
+      - {text: 。}
+    translation: {es: Quiero ternera (pidiendo)., en: I'll have the beef.}
+    source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+  - id: s.ni-chi-shenme
+    use: say
+    kind: formula
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 吃, ref: w.chi, pinyin: chī}
+      - {text: 什么, ref: w.shenme, pinyin: shénme}
+      - {text: ？}
+    translation: {es: '¿Qué vas a comer?', en: 'What will you eat?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+  - id: s.wo-xihuan-kafei-he-qiaokeli
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 咖啡, ref: w.kafei, pinyin: kāfēi}
+      - {text: 和, ref: w.he.and, pinyin: hé}
+      - {text: 巧克力, ref: w.qiaokeli, pinyin: qiǎokèlì}
+      - {text: 。}
+    translation: {es: 'Me gustan el café y el chocolate.', en: 'I like coffee and chocolate.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.zhe-shi-yijia-fandian
+    use: hear
+    kind: example
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: zhè}
+      - {text: 是, ref: w.shi, pinyin: shì}
+      - {text: 一, ref: w.num.yi, pinyin: yì, sandhi: yī → yì delante de primer tono}
+      - {text: 家, ref: w.jia, pinyin: jiā}
+      - {text: 饭店, ref: w.fandian, pinyin: fàndiàn}
+      - {text: 。}
+    translation: {es: 'Esto es un restaurante.', en: 'This is a restaurant.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.wo-keyi-he-shenme
+    use: hear
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 可以, ref: w.keyi, pinyin: kěyǐ}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 什么, ref: w.shenme, pinyin: shénme}
+      - {text: ？}
+    translation: {es: '¿Qué puedo beber?', en: 'What can I drink?'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+  - id: s.wo-chifan-le
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: 'Ya he comido.', en: 'I''ve eaten.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-mei-chifan
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 没, ref: w.mei, pinyin: méi}
+      - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
+      - {text: 。}
+    translation: {es: 'No he comido.', en: 'I haven''t eaten.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-zui-xihuan-zhongguo-cai
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 最, ref: w.zui, pinyin: zuì}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 中国, ref: w.zhongguo, pinyin: Zhōngguó}
+      - {text: 菜, ref: w.cai, pinyin: cài}
+      - {text: 。}
+    translation: {es: 'Lo que más me gusta es la comida china.', en: 'Chinese food is my favourite.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-ai-chi-haochi-de-dongxi
+    use: hear
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 爱, ref: w.ai.love, pinyin: ài}
+      - {text: 吃, ref: w.chi, pinyin: chī}
+      - {text: 好吃, ref: w.haochi, pinyin: hǎochī}
+      - {text: 的, ref: w.de, pinyin: de}
+      - {text: 东西, ref: w.dongxi, pinyin: dōngxi}
+      - {text: 。}
+    translation: {es: 'Me encanta comer cosas ricas.', en: 'I love eating tasty things.'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.zhe-shi-yi-ge-jidan
+    use: say
+    kind: example
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yí', sandhi: true}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 鸡蛋, ref: w.jidan, pinyin: 'jīdàn'}
+      - {text: 。}
+    translation: {es: 'Esto es un huevo.', en: 'This is an egg.'}
+    source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: diapositivas 2026-10-08, date: '2026-10-08'}
+  - id: s.wo-xihuan-chi-yu
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 吃, ref: w.chi, pinyin: 'chī'}
+      - {text: 鱼, ref: w.yu.fish, pinyin: 'yú'}
+      - {text: 。}
+    translation: {es: 'Me gusta el pescado.', en: 'I like fish.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.wo-yao-yi-bei-kele
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yì', sandhi: true}
+      - {text: 杯, ref: w.bei.cl, pinyin: 'bēi'}
+      - {text: 可乐, ref: w.kele, pinyin: 'kělè'}
+      - {text: 。}
+    translation: {es: 'Quiero una cola.', en: 'I would like a cola.'}
+    source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
+  - id: s.wo-bu-he-cha
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 不, ref: w.bu, pinyin: bù}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 茶, ref: w.cha, pinyin: chá}
+      - {text: 。}
+    translation: {es: No tomo té., en: I don't drink tea.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-hai-mei-chifan
+    use: hear
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 还, ref: w.hai.still, pinyin: hái}
+      - {text: 没, ref: w.mei, pinyin: méi}
+      - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
+      - {text: 。}
+    translation: {es: Todavía no he comido., en: I haven't eaten yet.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-bu-yao-shui
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 不, ref: w.bu, pinyin: bú, sandhi: true}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 水, ref: w.shui, pinyin: shuǐ}
+      - {text: 。}
+    translation: {es: No quiero agua., en: I don't want water.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-meiyou-shui
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 没有, ref: w.meiyou, pinyin: méiyǒu}
+      - {text: 水, ref: w.shui, pinyin: shuǐ}
+      - {text: 。}
+    translation: {es: No tengo agua., en: I don't have water.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-xiang-he-cha
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 想, ref: w.xiang, pinyin: xiǎng}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 茶, ref: w.cha, pinyin: chá}
+      - {text: 。}
+    translation: {es: Me apetece un té., en: I feel like a tea.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-yao-yi-bei-shui
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 一, ref: w.num.yi, pinyin: yì, sandhi: true}
+      - {text: 杯, ref: w.bei.cl, pinyin: bēi}
+      - {text: 水, ref: w.shui, pinyin: shuǐ}
+      - {text: 。}
+    translation: {es: 'Quiero un vaso de agua.', en: 'I''d like a glass of water.'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-xihuan-cha-xiang-he-yi-bei
+    use: hear
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 茶, ref: w.cha, pinyin: chá}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 想, ref: w.xiang, pinyin: xiǎng}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 一, ref: w.num.yi, pinyin: yì, sandhi: true}
+      - {text: 杯, ref: w.bei.cl, pinyin: bēi}
+      - {text: 。}
+    translation: {es: 'Me gusta el té: me apetece una taza.', en: 'I like tea: I feel like a cup.'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-qingke
+    use: say
+    kind: formula
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 请客, ref: w.qingke, pinyin: qǐngkè}
+      - {text: ！}
+    translation: {es: ¡Invito yo!, en: My treat!}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.dlg-zenmele
+    use: hear
+    kind: example
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 怎么了, ref: e.zenmele, pinyin: zěnme le}
+      - {text: ？}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 还, ref: w.hai.still, pinyin: hái}
+      - {text: 没, ref: w.mei, pinyin: méi}
+      - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
+      - {text: 。}
+      - {text: 走吧, ref: e.zouba, pinyin: zǒu ba}
+      - {text: ，}
+      - {text: 我们, ref: w.women, pinyin: wǒmen}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
+      - {text: ！}
+    translation: {es: '—¿Qué te pasa? —Todavía no he comido. —Venga, ¡vamos a comer!', en: '—What''s wrong? —I haven''t eaten yet. —Come on, let''s go eat!'}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-xihuan-he-cha
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 茶, ref: w.cha, pinyin: chá}
+      - {text: 。}
+    translation: {es: Me gusta el té., en: I like tea.}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+  - id: s.wo-ke-le
+    use: say
+    kind: formula
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 渴, ref: w.ke.thirsty, pinyin: kě}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: Tengo sed., en: I'm thirsty.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-tai-ke-le
+    use: hear
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 太, ref: w.tai, pinyin: tài}
+      - {text: 渴, ref: w.ke.thirsty, pinyin: kě}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ！}
+    translation: {es: ¡Me muero de sed!, en: I'm so thirsty!}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-e-le
+    use: say
+    kind: formula
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 饿, ref: w.e.hungry, pinyin: è}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: Tengo hambre., en: I'm hungry.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-bu-chi-le
+    use: say
+    kind: formula
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 不, ref: w.bu, pinyin: bù}
+      - {text: 吃, ref: w.chi, pinyin: chī}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: 。}
+    translation: {es: Ya no como más., en: I won't eat any more.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-ye-xiang-chi-nage
+    use: hear
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 也, ref: w.ye, pinyin: yě}
+      - {text: 想, ref: w.xiang, pinyin: xiǎng}
+      - {text: 吃, ref: w.chi, pinyin: chī}
+      - {text: 那, ref: w.na.that, pinyin: nà}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 。}
+    translation: {es: Yo también quiero comer eso., en: I'd like to eat that too.}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.dlg-shui
+    use: hear
+    kind: example
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 水, ref: w.shui, pinyin: shuǐ}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+      - {text: 不, ref: w.bu, pinyin: bú, sandhi: true}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: ，}
+      - {text: 谢谢, ref: e.xiexie, pinyin: xièxie}
+      - {text: 。}
+      - {text: 没问题, ref: e.meiwenti, pinyin: méi wèntí}
+      - {text: ，}
+      - {text: 因为, ref: w.yinwei, pinyin: yīnwèi}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 也, ref: w.ye, pinyin: yě}
+      - {text: 没有, ref: w.meiyou, pinyin: méiyǒu}
+      - {text: 水, ref: w.shui, pinyin: shuǐ}
+      - {text: ！}
+    translation: {es: '—¿Quieres agua? —No, gracias. —Sin problema, ¡porque yo tampoco tengo agua!', en: '—Do you want water? —No, thanks. —No problem, because I don''t have any water either!'}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+  - id: s.wo-xihuan-chi-hanbao
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 吃, ref: w.chi, pinyin: 'chī'}
+      - {text: 汉堡, ref: w.hanbao, pinyin: 'hànbǎo'}
+      - {text: 。}
+    translation: {es: 'Me gustan las hamburguesas.', en: 'I like hamburgers.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-xiang-chi-hanbao
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 吃, ref: w.chi, pinyin: 'chī'}
+      - {text: 汉堡, ref: w.hanbao, pinyin: 'hànbǎo'}
+      - {text: 。}
+    translation: {es: 'Me apetece una hamburguesa.', en: 'I feel like having a hamburger.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.wo-yao-yi-ge-hanbao
+    use: say
+    kind: formula
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yí', sandhi: true}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 汉堡, ref: w.hanbao, pinyin: 'hànbǎo'}
+      - {text: 。}
+    translation: {es: 'Quiero una hamburguesa.', en: 'I''ll have a hamburger.'}
+    source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
+  - id: s.zhe-shi-xiangbin
+    use: hear
+    kind: example
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 香槟, ref: w.xiangbin, pinyin: 'xiāngbīn'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Esto es champán?', en: 'Is this champagne?'}
+    source: {origin: class, batch: 012-2026-10-19-querer-poder-y-matices, file: 'deberes 2026-10-13', date: '2026-10-13'}
+  - id: s.fuwuyuan-wo-yao-zhege
+    use: say
+    kind: formula
+    segments:
+      - {text: 服务员, ref: w.fuwuyuan, pinyin: 'fúwùyuán'}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 。}
+    translation: {es: 'Camarero, quiero este.', en: 'Waiter, I want this one.'}
+    source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
+  - id: s.ji-ge-ren
+    use: say
+    kind: formula
+    segments:
+      - {text: 几, ref: w.ji, pinyin: jǐ}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 人, ref: w.ren, pinyin: rén}
+      - {text: ？}
+    translation: {es: '¿Cuántas personas? (en un restaurante)', en: 'How many people? (at a restaurant)'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
+  - id: s.gei-wo-yidian-shui
+    use: say
+    kind: formula
+    segments:
+      - {text: 给, ref: w.gei.to, pinyin: 'gěi'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 一点, ref: w.yidian, pinyin: 'yìdiǎn', sandhi: 'yī → yì delante de primer, segundo o tercer tono'}
+      - {text: 水, ref: w.shui, pinyin: 'shuǐ'}
+      - {text: 。}
+    translation: {es: 'Dame un poco de agua.', en: 'Give me a little water.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-22'}
+  - id: s.wo-xiang-chi-yidian
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 吃, ref: w.chi, pinyin: 'chī'}
+      - {text: 一点, ref: w.yidian, pinyin: 'yìdiǎn', sandhi: 'yī → yì delante de primer, segundo o tercer tono'}
+      - {text: 。}
+    translation: {es: 'Quiero comer un poco.', en: 'I''d like to eat a little.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-22'}
+  - id: s.fandian-you-yu-ma
+    use: say
+    kind: example
+    segments:
+      - {text: 饭店, ref: w.fandian, pinyin: 'fàndiàn'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 鱼, ref: w.yu.fish, pinyin: 'yú'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Hay pescado en el restaurante?', en: 'Does the restaurant have fish?'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}

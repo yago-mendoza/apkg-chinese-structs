@@ -928,17 +928,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 下车}
     answer: {hanzi: 下车, pinyin: xià chē, meaning: bajarse (de un vehículo)}
     comments: []
-  - id: x.produce.wo-yao-huiqu-le
-    added: 2026-10-11
-    lang: es
-    type: produce
-    sentence: s.wo-yao-huiqu-le
-    targets: [s.wo-yao-huiqu-le]
-    context: [w.wo, w.yao, w.huiqu, w.le]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Tengo que volver.»'}
-    answer: {meaning: Tengo que volver.}
-    comments: []
   - id: x.listen.ta-huilai-le
     added: 2026-10-11
     lang: es
@@ -1208,4 +1197,179 @@ exercises:
     skills: [listening, tones, discrimination]
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 船, pinyin: chuán, meaning: barco}
+    comments: []
+  - id: x.produce.ni-zai-nali
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ni-zai-nali
+    targets: [s.ni-zai-nali]
+    context: [w.ni, w.zai.at, w.nali]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde estás?»'}
+    answer: {meaning: '¿Dónde estás?'}
+    comments: []
+  - id: x.produce.shangdian-zai-nar
+    added: 2026-09-25
+    type: produce
+    sentence: s.shangdian-zai-nar
+    targets: [s.shangdian-zai-nar]
+    context: [w.shangdian, w.zai.at, w.nali]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde está la tienda?»'}
+    answer: {meaning: '¿Dónde está la tienda?'}
+    lang: es
+    comments: []
+  - id: x.produce.qingwen-fandian-zai-nali
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.qingwen-fandian-zai-nali
+    targets: [s.qingwen-fandian-zai-nali]
+    context: [e.qingwen, w.fandian, w.zai.at, w.nali]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Perdone, ¿dónde hay un restaurante?»'}
+    answer: {meaning: 'Perdone, ¿dónde hay un restaurante?'}
+    comments: []
+  - id: x.comprehension.restaurante
+    added: 2026-10-02
+    lang: es
+    type: comprehension
+    targets: [s.qingwen-fandian-zai-nali, s.zhe-shi-yijia-fandian, s.ji-ge-ren]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Lee el texto en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Qué busca, y qué le preguntan al llegar?'}
+    answer: {meaning: 'Un restaurante; al llegar le preguntan cuántas personas son.'}
+    comments: []
+  - id: x.dictation.cong
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.cong]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: cong2, hanzi: 从, pinyin: cóng, meaning: 'desde, de (un sitio)'}
+    comments: []
+  - id: x.cloze.cong
+    added: 2026-10-23
+    lang: es
+    type: cloze
+    sentence: s.wo-cong-xibanya-lai
+    gap: w.cong
+    targets: [w.cong]
+    context: [w.wo, w.xibanya, w.lai]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Vengo de España (soy de España).»'}
+    answer: {typed: cong2, hanzi: 从, pinyin: cóng, meaning: 'desde, de (un sitio)'}
+    comments: []
+  - id: x.read.cong
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.cong]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 从}
+    answer: {hanzi: 从, pinyin: cóng, meaning: 'desde, de (un sitio)'}
+    comments: []
+  - id: x.dictation.shangche
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.shangche]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shang4 che1, hanzi: 上车, pinyin: shàngchē, meaning: 'subir (a un coche, a un autobús)'}
+    comments: []
+  - id: x.read.shangche
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.shangche]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 上车}
+    answer: {hanzi: 上车, pinyin: shàngchē, meaning: 'subir (a un coche, a un autobús)'}
+    comments: []
+  - id: x.dictation.chaoshi
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.chaoshi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chao1 shi4, hanzi: 超市, pinyin: chāoshì, meaning: supermercado}
+    comments: []
+  - id: x.read.chaoshi
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.chaoshi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 超市}
+    answer: {hanzi: 超市, pinyin: chāoshì, meaning: supermercado}
+    comments: []
+  - id: x.dictation.che
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.che]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: che1, hanzi: 车, pinyin: chē, meaning: 'coche, vehículo'}
+    comments: []
+  - id: x.produce.che
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.che]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «coche, vehículo»? Escribe el pinyin.'}
+    answer: {typed: che1, hanzi: 车, pinyin: chē, meaning: 'coche, vehículo'}
+    comments: []
+  - id: x.read.che
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.che]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 车}
+    answer: {hanzi: 车, pinyin: chē, meaning: 'coche, vehículo'}
+    comments: []
+  - id: x.dictation.zoulu
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.zoulu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zou3 lu4, hanzi: 走路, pinyin: zǒulù, meaning: 'andar, ir andando'}
+    comments: []
+  - id: x.produce.zoulu
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.zoulu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «andar, ir andando»? Escribe el pinyin.'}
+    answer: {typed: zou3 lu4, hanzi: 走路, pinyin: zǒulù, meaning: 'andar, ir andando'}
+    comments: []
+  - id: x.read.zoulu
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.zoulu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 走路}
+    answer: {hanzi: 走路, pinyin: zǒulù, meaning: 'andar, ir andando'}
+    comments: []
+  - id: x.produce.ni-de-che-zai-nali
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.ni-de-che-zai-nali
+    targets: [s.ni-de-che-zai-nali]
+    context: [w.ni, w.de, w.che, w.zai.at, w.nali]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde está tu coche?»'}
+    answer: {meaning: '¿Dónde está tu coche?'}
     comments: []

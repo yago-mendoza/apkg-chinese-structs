@@ -402,17 +402,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Practico pinyin.»'}
     answer: {meaning: Practico pinyin.}
     comments: []
-  - id: x.produce.zhege-zi-zenme-shuo
-    added: 2026-10-07
-    lang: es
-    type: produce
-    sentence: s.zhege-zi-zenme-shuo
-    targets: [s.zhege-zi-zenme-shuo]
-    context: [w.zhe, w.ge, w.zi.char, w.zenme, w.shuo]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿Cómo se dice este carácter?»'}
-    answer: {meaning: '¿Cómo se dice este carácter?'}
-    comments: []
   - id: x.contrast.ci.word
     added: 2026-10-08
     lang: es
@@ -565,4 +554,14 @@ exercises:
     skills: [reading, discrimination]
     prompt: {text: '¿Cuál es la pieza de hablar (la de 请 y 说)?'}
     answer: {hanzi: 讠, pinyin: yán, meaning: 'palabra, hablar (como componente)'}
+    comments: []
+  - id: x.contrast.huan.joy
+    added: '2026-10-23'
+    type: contrast
+    group: g.ni-huan
+    targets: [c.huan.joy]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es huān, «alegría» (el de 喜欢)?'}
+    answer: {hanzi: 欢, pinyin: huān, meaning: alegría}
+    lang: es
     comments: []

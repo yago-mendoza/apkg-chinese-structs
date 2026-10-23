@@ -503,28 +503,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 龙}
     answer: {hanzi: 龙, pinyin: lóng, meaning: dragón}
     comments: []
-  - id: x.listen.ni-de-shuxiang-shi-shenme
-    added: 2026-10-16
-    lang: es
-    type: listen
-    sentence: s.ni-de-shuxiang-shi-shenme
-    targets: [s.ni-de-shuxiang-shi-shenme]
-    context: [w.ni, w.de, w.shuxiang, w.shi, w.shenme]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Cuál es tu signo del zodiaco chino?'}
-    comments: []
-  - id: x.produce.ni-de-shuxiang-shi-shenme
-    added: 2026-10-16
-    lang: es
-    type: produce
-    sentence: s.ni-de-shuxiang-shi-shenme
-    targets: [s.ni-de-shuxiang-shi-shenme]
-    context: [w.ni, w.de, w.shuxiang, w.shi, w.shenme]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuál es tu signo del zodiaco chino?»'}
-    answer: {meaning: '¿Cuál es tu signo del zodiaco chino?'}
-    comments: []
   - id: x.listen.wo-de-shuxiang-shi-tu
     added: 2026-10-16
     lang: es
@@ -569,28 +547,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Es del año del perro.»'}
     answer: {meaning: Es del año del perro.}
     comments: []
-  - id: x.listen.nin-shu-shenme
-    added: 2026-10-16
-    lang: es
-    type: listen
-    sentence: s.nin-shu-shenme
-    targets: [s.nin-shu-shenme]
-    context: [w.nin, w.shu.belong, w.shenme]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿De qué signo es usted?'}
-    comments: []
-  - id: x.produce.nin-shu-shenme
-    added: 2026-10-16
-    lang: es
-    type: produce
-    sentence: s.nin-shu-shenme
-    targets: [s.nin-shu-shenme]
-    context: [w.nin, w.shu.belong, w.shenme]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿De qué signo es usted?»'}
-    answer: {meaning: '¿De qué signo es usted?'}
-    comments: []
   - id: x.produce.ni-you-mao-ma
     added: 2026-10-19
     lang: es
@@ -611,4 +567,22 @@ exercises:
     skills: [listening, tones, discrimination]
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 猪, pinyin: zhū, meaning: cerdo}
+    comments: []
+  - id: x.dictation.niao
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.niao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: niao3, hanzi: 鸟, pinyin: niǎo, meaning: pájaro}
+    comments: []
+  - id: x.read.niao
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.niao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 鸟}
+    answer: {hanzi: 鸟, pinyin: niǎo, meaning: pájaro}
     comments: []

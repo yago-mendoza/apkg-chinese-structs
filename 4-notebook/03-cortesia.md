@@ -13,7 +13,7 @@
 - ✅🃏 请坐 qǐng zuò [tɕʰiŋ˧˩˧ tswɔ˥˩] · siéntese, por favor · _expresión_ · Palabra a palabra: 请 «por favor» + 坐 «sentarse».
 - ✅🃏 是的 shì de [ʂɨ˥˩ tɤ] · sí, eso es · _expresión_ · Palabra a palabra: 是 «ser» + 的: «así es».
 - ✅🃏 嗯 èn · mm, sí (asentimiento) · _interjección_ · Una boca 口 junto a un corazón 心 con alguien dentro: el «mm» de quien escucha sin decir nada; según el tono, sí, extrañeza o «me da igual». · Repetido, 嗯嗯 es el «ajá, ajá» de quien sigue la conversación; dicho seco, puede sonar a indiferencia.
-- ✅🃏 可以 kěyǐ [kʰɤ˧˩˧ i˧˩˧] · poder (está permitido); vale, sirve · _verbo_ · También sirve de «vale», como 好的. · 可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2]. · Pregunta y respuesta a la vez: 可以吗？ —可以。 «¿Se puede? —Sí». En una tienda, 这个大小可以吗？ «¿este tamaño está bien?». Según el contexto también se dice 行 xíng [HSK 1] o 没问题 méi wèntí [问题 HSK 2], «no hay problema». · Kěyǐ suena un poco a «can», «poder» en inglés.
+- ✅🃏 可以 kěyǐ [kʰɤ˧˩˧ i˧˩˧] · poder (está permitido); vale, sirve · _verbo_ · También sirve de «vale», como 好的. · 可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2]. · Pregunta y respuesta a la vez: 可以吗？ —可以。 «¿Se puede? —Sí». En una tienda, 这个大小可以吗？ «¿este tamaño está bien?». Según el contexto también se dice 行 xíng [HSK 1] o 没问题 méi wèntí [问题 HSK 2], «no hay problema». · Kěyǐ suena un poco a «can», «poder» en inglés. · 可以: 可 es un plato sobre una mesa que hay que retirar; 以, un camarero con una patilla larga y cara triste. El camarero ve el plato y pregunta: «¿Puedo retirarlo?». ¡Sí, puede! · 可 también parece el ojo de un sapo mágico que da cualidades a las cosas: 可爱, 可以.
 - ✅🃏 不好意思 bù hǎoyìsi [pu˥˩ xɑʊ˧˩˧ i˥˩ sɯ] · perdona; qué vergüenza; me sabe mal · _expresión_ · Palabra a palabra: 不 «no» + 好意思 «tener cara para algo»: «no tengo cara», qué apuro. · Para una molestia pequeña: llegar tarde, pasar, interrumpir, pedir algo. Es muy cotidiano, también entre jóvenes, y no suena formal.
 - ✅🃏 对不起 duìbuqǐ [tweɪ˥˩ pu tɕʰi˧˩˧] · lo siento · _verbo_ · 对得起 es estar a la altura con alguien; 对不起, no estarlo: te he fallado, perdón. · 对不起 empieza por 对 «sí, correcto»: al pedir perdón juntas las manos, como quien afirma y reza. El que empieza por 不 «no», 不客气, es la mano que dice que no: «no hay de qué».
 - ✅🃏 没关系 méi guānxi [meɪ˧˥ kwan˥ ɕi] · no pasa nada · _expresión_ · La respuesta a 对不起 o a 不好意思: «no pasa nada». · Palabra a palabra: 没 «no hay» + 关系 [HSK 3] «relación»: no tiene que ver, no importa. Para quitar importancia a algo que ha pasado; para aceptar algo que te piden, 没问题. · Truco: «¡eso no tiene relación con nada importante!». · 关 «cerrar» y 系 «atar»: lo que está cerrado y atado a otra cosa tiene 关系, «relación». 关 sale solo en 关门 «cerrar la puerta».
@@ -43,6 +43,7 @@
 - ✅🃏 应该 yīnggāi [iŋ˥ kaɪ˥] · deber (lo que toca hacer); seguramente · _verbo_ · Dos usos: lo que toca, 你应该休息 «deberías descansar»; y lo que se cree, 应该是 «seguramente sí». Para una obligación de verdad, 得 děi. · 该 gāi y 孩 hái llevan 亥 hài, que les da el sonido: -ai en los tres.
 - ✅🃏 不用 búyòng [pu˧˥ jʊŋ˥˩] · no hace falta · _adverbio_ · 不用谢 «de nada» (no hace falta dar las gracias); 不用了 «no, gracias, no hace falta».
 - ✅🃏 没什么 méi shénme [meɪ˧˥ ʂən˧˥ mɤ] · no es nada; no pasa nada · _expresión_ · Palabra a palabra: 没 «no hay» + 什么 «nada»: «no hay nada». Ante un 谢谢 o una pregunta preocupada.
+- ✅🃏 同意 tóngyì [tʰʊŋ˧˥ i˥˩] · estar de acuerdo · _verbo_ · 我同意 «estoy de acuerdo», 我不同意 «no estoy de acuerdo», 你同意吗？ «¿estás de acuerdo?». Para contestar rápido también valen 对 y 好的. · 同 «mismo» + 意 «idea»: tenemos la misma idea, así que estamos de acuerdo.
 
 ## Formas de decir que sí
 
@@ -102,13 +103,9 @@ Cada una contesta a una cosa distinta: a unas gracias, a una disculpa o a un fav
 - ✅🃏 谢谢你的帮助。 · xièxie nǐ de bāngzhù · Gracias por tu ayuda.
 - ✅🃏 我不知道。 · wǒ bù zhīdao · No lo sé.
 - ✅🃏 我忘了。 · wǒ wàng le · Se me ha olvidado.
-- ✅🃏 我明白了。 · wǒ míngbai le · Ya lo entiendo.
 - ✅🃏 小心！ · xiǎoxīn · ¡Cuidado!
 - ✅🃏 你等一下。 · nǐ děng yíxià · Espera un momento.
-- ✅🃏 我想问一下。 · wǒ xiǎng wèn yíxià · Quería preguntar una cosa.
-- ✅🃏 让我想一下。 · ràng wǒ xiǎng yíxià · Déjame pensarlo un momento.
 - ✅🃏 请你看一下。 · qǐng nǐ kàn yíxià · Échale un vistazo, por favor.
-- ✅🃏 你可以解释一下吗？ · nǐ kěyǐ jiěshì yíxià ma · ¿Me lo puedes explicar?
 - ✅🃏 帮我拿一下。 · bāng wǒ ná yíxià · Sujétamelo un momento.
 - ✅🃏 谁来帮帮我？ · shéi lái bāng bang wǒ · ¿Quién me echa una mano?
 - ✅🃏 都对了！ · dōu duì le · ¡Está todo bien!
@@ -118,7 +115,6 @@ Cada una contesta a una cosa distinta: a unas gracias, a una disculpa o a un fav
 - ✅🃏 你要小心。 · nǐ yào xiǎoxīn · Tienes que tener cuidado.
 - ✅🃏 请问，你需要什么帮助？ · qǐngwèn nǐ xūyào shénme bāngzhù · Disculpe, ¿qué ayuda necesita?
 - ✅🃏 对不起，我来晚了！ · duìbuqǐ wǒ lái wǎn le · ¡Perdón, llego tarde!
-- ✅🃏 你们吃饭了吗？ · nǐmen chīfàn le ma · ¿Ya habéis comido?
 - ✅🃏 对不起，你们吃饭了吗？ · duìbuqǐ nǐmen chīfàn le ma · Perdón, ¿ya habéis empezado a comer?
 - ✅🃏 你说得对。 · nǐ shuō de duì · Tienes razón.
 - ✅🃏 我可以游泳吗？ · wǒ kěyǐ yóuyǒng ma · ¿Puedo nadar? (¿me dejan?)
@@ -128,3 +124,33 @@ Cada una contesta a una cosa distinta: a unas gracias, a una disculpa o a un fav
 - ✅🃏 我可以开车吗？ · wǒ kěyǐ kāichē ma · ¿Puedo conducir? (¿me dejas?)
 - ✅🃏 不用了，谢谢。 · búyòng le xièxie · No hace falta, gracias.
 - ✅🃏 没什么。 · méi shénme · No es nada.
+- ✅🃏 别太累了！ · bié tài lèi le · ¡No te canses demasiado!
+- ✅🃏 我没错。 · wǒ méi cuò · No me he equivocado (no es culpa mía).
+- ✅🃏 我觉得很好。 · wǒ juéde hěn hǎo · Me parece muy bien.
+- ✅🃏 太好了！ · tài hǎo le · ¡Genial!
+- ✅🃏 你很漂亮！ · nǐ hěn piàoliang · ¡Eres muy guapa!
+- ✅🃏 你说得很好。 · nǐ shuō de hěn hǎo · Hablas muy bien.
+- ✅🃏 你好漂亮！ · nǐ hǎo piàoliang · ¡Qué guapa estás!
+- ✅🃏 你真漂亮！ · nǐ zhēn piàoliang · ¡Qué guapa eres!
+- ✅🃏 我爱你。 · wǒ ài nǐ · Te quiero.
+- ✅🃏 可以吗？可以。 · kěyǐ ma kěyǐ · ¿Se puede? —Sí, se puede.
+- ✅🃏 我也喜欢。 · wǒ yě xǐhuan · A mí también me gusta.
+- ✅🃏 我错了。 · wǒ cuò le · Me he equivocado.
+- ✅🃏 你进来吧。 · nǐ jìn lái ba · Pasa, entra.
+- ✅🃏 可以坐这里吗？ · kěyǐ zuò zhèlǐ ma · ¿Puedo sentarme aquí?
+- ✅🃏 来了，来了！ · lái le lái le · ¡Ya voy, ya voy! (o ¡ahí viene!)
+- ✅🃏 非常好！ · fēicháng hǎo · ¡Muy bien!
+- ✅🃏 请进来。 · qǐng jìnlái · Pasa, por favor (entra aquí).
+- ✅🃏 我知道。 · wǒ zhīdao · Ya lo sé.
+- ✅🃏 你坐吧。 · nǐ zuò ba · Siéntate, anda.
+- ✅🃏 请给我看一下。 · qǐng gěi wǒ kàn yíxià · Déjemelo ver, por favor.
+- ✅🃏 我能看一下吗？ · wǒ néng kàn yíxià ma · ¿Puedo echarle un vistazo?
+- ✅🃏 明天再说。 · míngtiān zài shuō · Ya lo hablamos mañana.
+- ✅🃏 谢谢阿姨！ · xièxie āyí · ¡Gracias, señora!
+- ✅🃏 我同意。 · wǒ tóngyì · Estoy de acuerdo.
+- ✅🃏 你同意吗？ · nǐ tóngyì ma · ¿Estás de acuerdo?
+- ✅🃏 我不同意。 · wǒ bù tóngyì · No estoy de acuerdo.
+- ✅🃏 你说得不对。 · nǐ shuō de bù duì · Lo que dices no es correcto.
+- ✅🃏 你做得很好。 · nǐ zuò de hěn hǎo · Lo has hecho muy bien.
+- ✅🃏 这个不对。 · zhè ge bù duì · Esto no está bien (es incorrecto).
+- ✅🃏 没事。 · méi shì · No pasa nada.

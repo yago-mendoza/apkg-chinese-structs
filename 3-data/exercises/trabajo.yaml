@@ -305,3 +305,77 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Mañana trabajo.»'}
     answer: {meaning: Mañana trabajo.}
     comments: []
+  - id: x.nuance.youhui-kaihui
+    added: '2026-10-23'
+    lang: es
+    type: nuance
+    targets: [w.kaihui]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我今天有个会 y 我今天要开会: ¿qué cambia?'}
+    answer: {meaning: '有个会: tienes una reunión en la agenda. 要开会: vas a estar en ella, tienes que reunirte.'}
+    comments: []
+  - id: x.dictation.zhishi
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.zhishi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhi1 shi5, hanzi: 知识, pinyin: zhīshi, meaning: 'conocimiento, saber'}
+    comments: []
+  - id: x.read.zhishi
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.zhishi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 知识}
+    answer: {hanzi: 知识, pinyin: zhīshi, meaning: 'conocimiento, saber'}
+    comments: []
+  - id: x.tones.zhishi
+    added: 2026-10-23
+    lang: es
+    type: tones
+    targets: [w.zhishi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 知识, pinyin: zhi shi}
+    answer: {typed: '15', hanzi: 知识, pinyin: zhīshi, meaning: 'conocimiento, saber'}
+    comments: []
+  - id: x.dictation.shi.matter
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.shi.matter]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shi4, hanzi: 事, pinyin: shì, meaning: 'asunto, cosa (que hacer)'}
+    comments: []
+  - id: x.produce.shi.matter
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.shi.matter]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «asunto, cosa (que hacer)»? Escribe el pinyin.'}
+    answer: {typed: shi4, hanzi: 事, pinyin: shì, meaning: 'asunto, cosa (que hacer)'}
+    comments: []
+  - id: x.read.shi.matter
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.shi.matter]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 事}
+    answer: {hanzi: 事, pinyin: shì, meaning: 'asunto, cosa (que hacer)'}
+    comments: []
+  - id: x.contrast.shi.matter
+    added: 2026-10-23
+    lang: es
+    type: contrast
+    group: g.shi-try
+    targets: [w.shi.matter]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es shì, «asunto, cosa (que hacer)»?'}
+    answer: {hanzi: 事, pinyin: shì, meaning: 'asunto, cosa (que hacer)'}
+    comments: []

@@ -1,15 +1,9 @@
 # Frases · Momentos del día. Esquema: 3-data/README.md
 
 sentences:
-  - id: s.mingtian-jian
-    use: say
-    segments:
-      - {text: 明天, ref: w.mingtian, pinyin: míngtiān}
-      - {text: 见, ref: w.jian, pinyin: jiàn}
-      - {text: ！}
-    translation: {es: ¡Hasta mañana!, en: See you tomorrow!}
   - id: s.xiawu-qu-shangdian
     use: say
+    kind: example
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     segments:
       - {text: 下午, ref: w.xiawu, pinyin: xiàwǔ}
@@ -19,6 +13,7 @@ sentences:
     translation: {es: Por la tarde voy a la tienda., en: In the afternoon I go to the shop.}
   - id: s.shangwu-gongzuo-wanshang-kan-shu
     use: hear
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 上午, ref: w.shangwu, pinyin: shàngwǔ}
@@ -32,6 +27,7 @@ sentences:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: s.zhongwu-ni-qu-nar
     use: hear
+    kind: example
     segments:
       - {text: 中午, ref: w.zhongwu, pinyin: zhōngwǔ}
       - {text: 你, ref: w.ni, pinyin: nǐ}
@@ -42,6 +38,7 @@ sentences:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: s.wo-zuotian-zai-jia-kan-shu
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 昨天, ref: w.zuotian, pinyin: zuótiān}
@@ -54,6 +51,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.wo-huijia-shuijiao
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 回家, ref: w.huijia, pinyin: huíjiā}
@@ -63,6 +61,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.wo-meiyou-shijian
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 没有, ref: w.meiyou, pinyin: méiyǒu}
@@ -72,6 +71,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.jinnian-shi-ma-nian
     use: say
+    kind: example
     segments:
       - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
       - {text: 是, ref: w.shi, pinyin: 'shì'}
@@ -82,6 +82,7 @@ sentences:
     source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
   - id: s.jintian-hen-leng
     use: say
+    kind: example
     segments:
       - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
       - {text: 很, ref: w.hen, pinyin: 'hěn'}
@@ -91,6 +92,7 @@ sentences:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
   - id: s.mingnian-wo-qu-zhongguo
     use: say
+    kind: example
     segments:
       - {text: 明年, ref: w.mingnian, pinyin: 'míngnián'}
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
@@ -101,6 +103,7 @@ sentences:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
   - id: s.jintian-ji-yue-ji-hao
     use: say
+    kind: formula
     segments:
       - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
       - {text: 几, ref: w.ji, pinyin: 'jǐ'}
@@ -112,6 +115,7 @@ sentences:
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
   - id: s.jintian-shiyue-bahao
     use: say
+    kind: example
     segments:
       - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
       - {text: 十, ref: w.num.shi, pinyin: 'shí'}
@@ -123,6 +127,7 @@ sentences:
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
   - id: s.jintian-xingqi-ji
     use: say
+    kind: formula
     segments:
       - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
       - {text: 星期, ref: w.xingqi, pinyin: 'xīngqī'}
@@ -132,6 +137,7 @@ sentences:
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
   - id: s.jintian-xingqisi
     use: say
+    kind: example
     segments:
       - {text: 今天, ref: w.jintian, pinyin: 'jīntiān'}
       - {text: 星期, ref: w.xingqi, pinyin: 'xīngqī'}
@@ -141,6 +147,7 @@ sentences:
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
   - id: s.mingtian-xingqitian
     use: say
+    kind: example
     segments:
       - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
       - {text: 星期天, ref: w.xingqitian, pinyin: 'xīngqītiān'}
@@ -149,6 +156,7 @@ sentences:
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
   - id: s.jinnian-shi-2026-nian
     use: say
+    kind: example
     segments:
       - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
       - {text: 是, ref: w.shi, pinyin: 'shì'}
@@ -162,6 +170,7 @@ sentences:
     source: {origin: inbox, batch: 007-2026-10-07-fechas-ordinales-y-clasificadores, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-07'}
   - id: s.ni-you-shijian-de-shihou-gei-wo-da-dianhua
     use: say
+    kind: example
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
@@ -177,6 +186,7 @@ sentences:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
   - id: s.ni-shenme-shihou-lai
     use: say
+    kind: formula
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 什么时候, ref: e.shenmeshihou, pinyin: shénme shíhou}
@@ -186,6 +196,7 @@ sentences:
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
   - id: s.dlg-shenmeshihou
     use: hear
+    kind: example
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 什么时候, ref: e.shenmeshihou, pinyin: shénme shíhou}
@@ -204,6 +215,7 @@ sentences:
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
   - id: s.xianzai-ji-dian
     use: say
+    kind: formula
     segments:
       - {text: 现在, ref: w.xianzai, pinyin: xiànzài}
       - {text: 几, ref: w.ji, pinyin: jǐ}
@@ -213,6 +225,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.xianzai-san-dian
     use: say
+    kind: example
     segments:
       - {text: 现在, ref: w.xianzai, pinyin: xiànzài}
       - {text: 三, ref: w.num.san, pinyin: sān}
@@ -222,6 +235,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.xianzai-ba-dian-shi-fen
     use: hear
+    kind: example
     segments:
       - {text: 现在, ref: w.xianzai, pinyin: xiànzài}
       - {text: 八, ref: w.ba, pinyin: bā}
@@ -233,6 +247,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.wo-zaoshang-qi-dian-qu-gongzuo
     use: hear
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 早上, ref: w.zaoshang, pinyin: zǎoshang}
@@ -245,6 +260,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.women-shangwu-shiyi-dian-jian
     use: hear
+    kind: example
     segments:
       - {text: 我们, ref: w.women, pinyin: wǒmen}
       - {text: 上午, ref: w.shangwu, pinyin: shàngwǔ}
@@ -257,6 +273,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.wo-xiawu-wu-dian-ban-huijia
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 下午, ref: w.xiawu, pinyin: xiàwǔ}
@@ -270,6 +287,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.wo-deng-le-yi-ge-xiaoshi
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 等, ref: w.deng, pinyin: děng}
@@ -282,6 +300,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.wo-deng-le-shi-fenzhong
     use: hear
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 等, ref: w.deng, pinyin: děng}
@@ -293,6 +312,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.ni-deng-le-duojiu
     use: say
+    kind: example
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 等, ref: w.deng, pinyin: děng}
@@ -303,6 +323,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.shangci-wo-mei-qu
     use: hear
+    kind: example
     segments:
       - {text: 上次, ref: w.shangci, pinyin: shàngcì}
       - {text: 我, ref: w.wo, pinyin: wǒ}
@@ -313,6 +334,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.zheci-wo-qu
     use: hear
+    kind: example
     segments:
       - {text: 这次, ref: w.zheci, pinyin: zhècì}
       - {text: 我, ref: w.wo, pinyin: wǒ}
@@ -322,6 +344,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.wo-liang-tian-qian-qu-le-shangdian
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 两, ref: w.liang, pinyin: liǎng}
@@ -335,6 +358,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.wo-youshihou-hen-lei
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 有时候, ref: w.youshihou, pinyin: yǒushíhou}
@@ -345,6 +369,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.ta-youshihou-bu-mingbai
     use: hear
+    kind: example
     segments:
       - {text: 他, ref: w.ta.he, pinyin: tā}
       - {text: 有时候, ref: w.youshihou, pinyin: yǒushíhou}
@@ -355,6 +380,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.kuai-ba-dian-le
     use: hear
+    kind: example
     segments:
       - {text: 快, ref: w.kuai.fast, pinyin: kuài}
       - {text: 八, ref: w.ba, pinyin: bā}
@@ -365,6 +391,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.xingqiri-wo-bu-gongzuo
     use: hear
+    kind: example
     segments:
       - {text: 星期日, ref: w.xingqiri, pinyin: xīngqīrì}
       - {text: 我, ref: w.wo, pinyin: wǒ}
@@ -375,6 +402,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.date-2026-10-08
     use: say
+    kind: example
     segments:
       - {text: 二, ref: w.num.er, pinyin: èr}
       - {text: 零, ref: w.ling, pinyin: líng}
@@ -393,6 +421,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.date-2025-03-02
     use: hear
+    kind: example
     segments:
       - {text: 二, ref: w.num.er, pinyin: èr}
       - {text: 零, ref: w.ling, pinyin: líng}
@@ -410,6 +439,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.dlg-ji-dian
     use: hear
+    kind: example
     segments:
       - {text: 现在, ref: w.xianzai, pinyin: xiànzài}
       - {text: 几, ref: w.ji, pinyin: jǐ}
@@ -431,6 +461,7 @@ sentences:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: s.qunian-wo-ershiwu-sui
     use: say
+    kind: example
     segments:
       - {text: 去年, ref: w.qunian, pinyin: 'qùnián'}
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
@@ -443,6 +474,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
   - id: s.shi-dian-zuoyou
     use: say
+    kind: example
     segments:
       - {text: 十, ref: w.num.shi, pinyin: 'shí'}
       - {text: 点, ref: w.dian.oclock, pinyin: 'diǎn'}
@@ -452,6 +484,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
   - id: s.drill-times-zuoyou
     use: hear
+    kind: example
     segments:
       - {text: 九, ref: w.num.jiu, pinyin: 'jiǔ'}
       - {text: 点, ref: w.dian.oclock, pinyin: 'diǎn'}
@@ -477,6 +510,7 @@ sentences:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
   - id: s.wo-yao-shuijiao-le
     use: say
+    kind: formula
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 要, ref: w.yao, pinyin: 'yào'}
@@ -487,6 +521,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.wo-juede-kuaiyao-xiayu-le
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
@@ -498,6 +533,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.wo-yijing-mai-le
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 已经, ref: w.yijing, pinyin: 'yǐjīng'}
@@ -508,6 +544,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.wo-hai-mei-mai
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 还, ref: w.hai.still, pinyin: 'hái'}
@@ -518,6 +555,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.wo-changchang-he-cha
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 常常, ref: w.changchang, pinyin: 'chángcháng'}
@@ -528,6 +566,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.wo-zhengzai-xuexi
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 正在, ref: w.zhengzai, pinyin: 'zhèngzài'}
@@ -537,6 +576,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.wo-gang-dao
     use: say
+    kind: formula
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 刚, ref: w.gang, pinyin: 'gāng'}
@@ -546,6 +586,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.wo-mashang-lai
     use: say
+    kind: formula
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 马上, ref: w.mashang, pinyin: 'mǎshàng'}
@@ -555,6 +596,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.wo-mei-tian-dou-xuexi-zhongwen
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 每, ref: w.mei.each, pinyin: 'měi'}
@@ -567,6 +609,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.wo-dasuan-mingnian-qu-zhongguo
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 打算, ref: w.dasuan, pinyin: 'dǎsuàn'}
@@ -578,6 +621,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.wo-chi-wan-le
     use: say
+    kind: formula
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 吃, ref: w.chi, pinyin: 'chī'}
@@ -588,6 +632,7 @@ sentences:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: s.wo-shi-zuihou-yi-ge
     use: say
+    kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 是, ref: w.shi, pinyin: 'shì'}
@@ -599,6 +644,7 @@ sentences:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
   - id: s.women-mingtian-jianmian-ba
     use: say
+    kind: formula
     segments:
       - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
       - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
@@ -607,3 +653,99 @@ sentences:
       - {text: 。}
     translation: {es: 'Quedamos mañana.', en: 'Let''s meet tomorrow.'}
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.wo-chang-qu-zheli
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 常, ref: w.chang.often, pinyin: 'cháng'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 这里, ref: w.zheli, pinyin: 'zhèlǐ'}
+      - {text: 。}
+    translation: {es: 'Vengo aquí a menudo.', en: 'I often go here.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+  - id: s.wo-bu-chang-he-kafei
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 常, ref: w.chang.often, pinyin: 'cháng'}
+      - {text: 喝, ref: w.he.drink, pinyin: 'hē'}
+      - {text: 咖啡, ref: w.kafei, pinyin: 'kāfēi'}
+      - {text: 。}
+    translation: {es: 'No suelo tomar café.', en: 'I don''t often drink coffee.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+  - id: s.wo-changchang-wangji
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 常常, ref: w.changchang, pinyin: 'chángcháng'}
+      - {text: 忘记, ref: w.wangji, pinyin: 'wàngjì'}
+      - {text: 。}
+    translation: {es: 'Se me olvidan las cosas a menudo.', en: 'I often forget.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+  - id: s.ni-xian-shuo-ba
+    use: say
+    kind: formula
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 先, ref: w.xian.first, pinyin: 'xiān'}
+      - {text: 说, ref: w.shuo, pinyin: 'shuō'}
+      - {text: 吧, ref: w.ba.particle, pinyin: 'ba'}
+      - {text: 。}
+    translation: {es: 'Habla tú primero.', en: 'You speak first.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+  - id: s.wo-xian-kankan
+    use: say
+    kind: formula
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 先, ref: w.xian.first, pinyin: 'xiān'}
+      - {text: 看看, ref: w.kankan, pinyin: 'kànkan'}
+      - {text: 。}
+    translation: {es: 'Primero voy a echar un vistazo.', en: 'Let me have a look first.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+  - id: s.wo-xian-wen-yixia
+    use: say
+    kind: formula
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 先, ref: w.xian.first, pinyin: 'xiān'}
+      - {text: 问, ref: w.wen, pinyin: 'wèn'}
+      - {text: 一下, ref: w.yixia, pinyin: 'yīxià'}
+      - {text: 。}
+    translation: {es: 'Primero voy a preguntar.', en: 'Let me ask first.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+  - id: s.wo-xian-hui-jia
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 先, ref: w.xian.first, pinyin: 'xiān'}
+      - {text: 回家, ref: w.huijia, pinyin: 'huíjiā'}
+      - {text: 。}
+    translation: {es: 'Primero me voy a casa.', en: 'I''ll go home first.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+  - id: s.ni-xian-zou-ba
+    use: say
+    kind: formula
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 先, ref: w.xian.first, pinyin: 'xiān'}
+      - {text: 走, ref: w.zou, pinyin: 'zǒu'}
+      - {text: 吧, ref: w.ba.particle, pinyin: 'ba'}
+      - {text: 。}
+    translation: {es: 'Ve tú primero.', en: 'You go first.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+  - id: s.wo-mingtian-lai
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 来, ref: w.lai, pinyin: 'lái'}
+      - {text: 。}
+    translation: {es: 'Vengo mañana.', en: 'I''m coming tomorrow.'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}

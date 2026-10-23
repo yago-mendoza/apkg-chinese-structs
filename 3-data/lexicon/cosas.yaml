@@ -127,6 +127,7 @@ entries:
       - {kind: sound, private: false, date: '2026-10-01', text: 'cuò: la u apenas suena, se desliza hacia la o.', original: 'Cuò decir que la "u" apenas suena en notas'}
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Estar equivocado: 我错了 «me he equivocado» (también vale para «he cometido un error»), 你错了 «te equivocas». Detrás de un verbo, «mal»: 你说错了 «lo has dicho mal». 不错 bú cuò [HSK 2] es un elogio, «no está mal, bastante bien».'}
       - {kind: mnemonic, private: false, date: '2026-10-19', text: 'Un concurso: el presentador golpea una campana de metal 钅 delante del marcador 昔 y grita «¡cuò!», con un tono que cae de golpe, como el cuarto: ¡error!', original: 'Imagina un concurso donde un presentador sostiene una campana de metal y alguien da una respuesta equivocada. El presentador golpea la campana y grita: «¡CUÒ! ¡ERROR!»'}
+      - {kind: mnemonic, private: false, date: '2026-10-20', text: 'Un arma de asta 钅 sobre una rejilla metálica 昔: en la fábrica se equivocaron con ese lote.', original: 'menmtenica para error, una arma de asta sobre una rejilla metalica, se puedne haber equivocado al fabircar ese lote, me gusta esta mnemtoenica'}
   - id: g.ru-chu
     kind: group
     basis: set
@@ -216,6 +217,7 @@ entries:
     hanzi: 坐
     pinyin: 'zuò'
     meaning: {es: 'sentarse; ir en (un vehículo)', en: 'to sit; to travel by'}
+    accept_cards: 'los huecos con escena de 坐 / 做 que pidió en el review 012'
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '请坐 «siéntese»; 坐飞机 «ir en avión», 坐车 «ir en coche o autobús».'}
@@ -473,6 +475,7 @@ entries:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-08'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: '帮我拿一下 «sujétamelo un momento».'}
+      - {kind: linguistic, private: false, date: '2026-10-21', text: 'Para coger algo con la mano, 拿; para recoger o retirar algo que te espera (dinero, un paquete), 取: 我去取钱.'}
   - id: w.dei
     use: say
     role: content
@@ -519,12 +522,13 @@ entries:
   - id: g.shi-try
     kind: group
     basis: homophone
-    title: '是, 试 y 十: shì y shí'
+    title: '是, 试, 事 y 十: shì y shí'
     explanation: '是 y 试 suenan exactamente igual, shì con cuarto tono: solo el contexto los separa. 十 shí sube.'
     members:
       - {ref: w.shi, cue: '我是学生'}
       - {ref: w.shi.try, cue: '我可以试一下吗？'}
       - {ref: w.num.shi, cue: 'sube'}
+      - {ref: w.shi.matter, cue: '我有事'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments: []
   - id: g.na-tones
@@ -649,6 +653,8 @@ entries:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
     comments:
       - {kind: teacher, private: false, date: '2026-10-15', text: '我还不到二十八岁 «aún no tengo veintiocho»: 不到 es «no llegar a».'}
+      - {kind: mnemonic, private: false, date: '2026-10-20', text: '到: a la izquierda, un barco de vela 至; a la derecha, 刂, otra vela más cerca de la cámara.', original: 'En 到 (dào), la parte derecha 刂 representa un la vela mas cercana a la camara.'}
+      - {kind: linguistic, private: false, date: '2026-10-20', text: '到 es «llegar», a un sitio o a una cifra: 我到了 «ya he llegado». «Salir» es 出: 出去.'}
   - id: g.dao-dao
     kind: group
     basis: soundalike
@@ -669,6 +675,8 @@ entries:
     source: {origin: inbox, batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Poner algo en marcha: 开门 «abrir la puerta», 开车 «conducir», 开会 «tener una reunión». Lo contrario, 关 guān «cerrar, apagar» [HSK 1].'}
+      - {kind: mnemonic, private: false, date: '2026-10-22', text: '开: un monigote que echa a andar, con la piernecita de la izquierda doblada: empezar.', original: 'es una cosa como una steridco antropoformo que enpeiza a acer slgo, por la piernecita de la izquierda que la tiene como dobladilla'}
+      - {kind: linguistic, private: false, date: '2026-10-22', text: '开 es abrir, no entrar: 开门 «abrir la puerta», 进门 «entrar por la puerta». También 开始 «empezar», 打开 «abrir (algo)» y 离开 «marcharse».'}
   - id: w.bixu
     use: say
     role: function
@@ -719,3 +727,87 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Plural de 那: 那些人 «esa gente».'}
+  - id: w.qu.take
+    use: say
+    role: content
+    kind: word
+    hanzi: 取
+    pinyin: qǔ
+    meaning: {es: 'recoger, retirar (algo que te espera)', en: 'to fetch, to withdraw'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: '取钱 «sacar dinero», 取东西 «recoger una cosa». Para coger algo con la mano, 拿: 帮我拿一下.'}
+      - {kind: mnemonic, private: false, date: '2026-10-21', text: 'Una mano 又 que coge una oreja 耳 y se la lleva.', original: 'Una mano que coge una oreja y se la lleva'}
+      - {kind: character, private: false, date: '2026-10-23', text: '耳 «oreja» + 又 «mano»: en las guerras antiguas se cortaba la oreja del enemigo caído como prueba; de ahí «coger, obtener».'}
+  - id: w.kaishi
+    use: say
+    role: content
+    kind: word
+    hanzi: 开始
+    pinyin: kāishǐ
+    meaning: {es: 'empezar', en: 'to begin'}
+    use_reason: 'HSK 3, pero de las palabras más frecuentes del idioma (frecuencia 132); 我们开始吧 se oye a diario'
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-22'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: 'Palabra a palabra: 开 «abrir, poner en marcha» + 始 «comienzo». 我们开始吧！ «¡empecemos!».'}
+  - id: w.dakai
+    use: say
+    role: content
+    kind: word
+    hanzi: 打开
+    pinyin: dǎkāi
+    meaning: {es: 'abrir (algo); encender', en: 'to open; to switch on'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-22'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: 'Palabra a palabra: 打 «golpear, hacer» + 开 «abrir». 打开门 «abrir la puerta», 打开电脑 «encender el ordenador».'}
+  - id: w.zhaodao
+    use: say
+    role: content
+    kind: word
+    hanzi: 找到
+    pinyin: zhǎodào
+    meaning: {es: 'encontrar', en: 'to find'}
+    source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: '找 es «buscar»; con 到, «encontrar»: 我找到了！ «¡lo he encontrado!».'}
+  - id: w.fang.put
+    use: say
+    role: content
+    kind: word
+    hanzi: 放
+    pinyin: fàng
+    meaning: {es: 'poner, dejar (en un sitio)', en: 'to put, to place'}
+    connection: {kind: sound, with: [房, 旁], text: '方 fāng da el sonido a 放 fàng, a 房 fáng (房间) y a 旁 páng (旁边).'}
+    source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: '放在这里 «déjalo aquí»: el sitio va detrás, con 在.'}
+  - id: w.song.give
+    use: say
+    role: content
+    kind: word
+    hanzi: 送
+    pinyin: sòng
+    meaning: {es: 'regalar; llevar (a alguien)', en: 'to give (as a gift); to take (someone)'}
+    source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: '我送你一本书 «te regalo un libro». 我送你回家 «te llevo a casa».'}
+  - id: w.shang.on
+    use: say
+    role: function
+    kind: word
+    hanzi: 上
+    pinyin: shàng
+    meaning: {es: 'en, encima de (detrás de un nombre)', en: 'on, on top of (after a noun)'}
+    source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-23', text: 'Va detrás del sitio: 桌子上 «en la mesa», 岛上 «en la isla». Suena átono en muchas palabras: 晚上 wǎnshang.'}
+  - id: g.qu-qu
+    kind: group
+    basis: soundalike
+    title: 去 qù y 取 qǔ
+    explanation: 'La misma sílaba con distinto tono; juntos en 我去取钱 «voy a sacar dinero».'
+    members:
+      - {ref: w.qu, cue: '4.º, cae seco'}
+      - {ref: w.qu.take, cue: '3.º, se hunde'}
+    source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+    comments: []

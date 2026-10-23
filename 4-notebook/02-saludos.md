@@ -110,9 +110,8 @@ La misma sílaba: solo los separa el tono.
 - ✅🃏 最近怎么样？ · zuìjìn zěnmeyàng · ¿Qué tal últimamente?
 - ✅🃏 好久不见，最近怎么样？ · hǎojiǔ bú jiàn zuìjìn zěnmeyàng · Cuánto tiempo, ¿qué tal últimamente?
 - ✅🃏 最近忙吗？ · zuìjìn máng ma · ¿Mucho lío últimamente?
-- ✅🃏 你还好吗？ · nǐ hái hǎo ma · ¿Estás bien?
+- ✅🃏 你还好吗？ · nǐ hái hǎo ma · ¿Estás bien? (preguntado con preocupación)
 - ✅🃏 吃了，你呢？ · chī le nǐ ne · Sí, ya he comido, ¿y tú?
-- ✅🃏 这个怎么样？ · zhè ge zěnmeyàng · ¿Qué tal este?
 - ✅🃏 我最近很忙。 · wǒ zuìjìn hěn máng · Últimamente estoy muy liado.
 - ✅🃏 早上好，老师！ · zǎoshang hǎo lǎoshī · ¡Buenos días, profe!
 - ✅🃏 我早上喝茶。 · wǒ zǎoshang hē chá · Por la mañana tomo té.
@@ -125,4 +124,15 @@ La misma sílaba: solo los separa el tono.
 - ✅🃏 下次见！ · xiàcì jiàn · ¡Hasta la próxima!
 - ✅🃏 你在忙什么？ · nǐ zài máng shénme · ¿En qué andas liado?
 - ✅🃏 你先忙吧。 · nǐ xiān máng ba · Sigue con lo tuyo (no te entretengo).
-- ✅🃏 最近还好吗？ · zuìjìn hái hǎo ma · ¿Todo bien últimamente?
+- ✅🃏 最近还好吗？ · zuìjìn hái hǎo ma · ¿Sigue todo bien últimamente?
+- ✅🃏 你还记得我吗？ · nǐ hái jìde wǒ ma · ¿Todavía te acuerdas de mí?
+- ✅🃏 一切都很好。 · yíqiè dōu hěn hǎo · Todo va bien.
+- ✅🃏 你们吃饭了吗？ · nǐmen chīfàn le ma · ¿Ya habéis comido?
+- ✅🃏 王阿姨好！ · Wáng āyí hǎo · ¡Hola, señora Wang!
+- ✅🃏 你好，阿姨！ · nǐ hǎo āyí · ¡Hola, señora!
+- ✅🃏 叔叔、阿姨好！ · shūshu āyí hǎo · ¡Hola, señores!
+- ✅🃏 明天见！ · míngtiān jiàn · ¡Hasta mañana!
+- ✅🃏 我走了。 · wǒ zǒu le · Me voy.
+- ✅🃏 我要走了。 · wǒ yào zǒu le · Ya me voy (me tengo que ir).
+- ✅🃏 我要回去了。 · wǒ yào huíqu le · Tengo que volver.
+- ✅🃏 孟先生，您好！ · Mèng xiānsheng nín hǎo · ¡Buenos días, señor Mèng!

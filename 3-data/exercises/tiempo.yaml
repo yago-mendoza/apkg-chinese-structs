@@ -51,17 +51,6 @@ exercises:
     answer: {typed: '35', hanzi: 晚上, pinyin: wǎnshang, meaning: por la noche}
     lang: es
     comments: []
-  - id: x.produce.mingtian-jian
-    added: 2026-09-25
-    type: produce
-    sentence: s.mingtian-jian
-    targets: [s.mingtian-jian]
-    context: [w.mingtian, w.jian]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¡Hasta mañana!»'}
-    answer: {meaning: ¡Hasta mañana!}
-    lang: es
-    comments: []
   - id: x.produce.shangwu
     added: 2026-09-26
     type: produce
@@ -426,7 +415,7 @@ exercises:
     targets: [s.wo-meiyou-shijian]
     context: [w.wo, w.meiyou, w.shijian]
     skills: [production, speaking]
-    prompt: {text: 'Un amigo te propone algo y no puedes: no tienes tiempo. Díselo en voz alta.'}
+    prompt: {text: 'Un amigo te propone esto y no puedes: no tienes tiempo. Díselo en voz alta.', said: 我们明天去，怎么样？}
     answer: {meaning: No tengo tiempo.}
     comments: []
   - id: x.comprehension.mi-dia
@@ -1140,15 +1129,6 @@ exercises:
     skills: [reading, production]
     prompt: {text: 'Elige. ¿Cómo se dice «domingo»?', options: [星期七, 星期天, 天星期, 七星期]}
     answer: {choice: b, hanzi: 星期天, pinyin: xīngqītiān, meaning: 'El domingo no es «el séptimo»: 星期天, o 星期日 por escrito.'}
-    comments: []
-  - id: x.situation.mingtianjian-choice
-    added: '2026-10-11'
-    lang: es
-    type: speak
-    targets: [s.mingtian-jian]
-    skills: [production, speaking]
-    prompt: {text: Elige. Te despides de un compañero al que verás mañana., options: [晚上好！, 早上好！, 你好！, 欢迎！, 明天见！]}
-    answer: {choice: e, hanzi: 明天见！, pinyin: míngtiān jiàn, meaning: '«Hasta mañana»: 明天 «mañana» + 见 «ver».'}
     comments: []
   - id: x.cloze.duojiu
     added: '2026-10-11'
@@ -2407,4 +2387,152 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Quedamos mañana.»'}
     answer: {meaning: Quedamos mañana.}
+    comments: []
+  - id: x.nuance.chang-changchang
+    added: '2026-10-23'
+    lang: es
+    type: nuance
+    targets: [w.chang.often, w.changchang]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我常去 y 我常常去: ¿qué cambia?'}
+    answer: {meaning: 'Casi nada: los dos son «voy a menudo»; 常常 insiste un poco más. Para negar, 不常.'}
+    comments: []
+  - id: x.dictation.chang.often
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.chang.often]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chang2, hanzi: 常, pinyin: cháng, meaning: 'a menudo, soler'}
+    comments: []
+  - id: x.cloze.chang.often
+    added: 2026-10-23
+    lang: es
+    type: cloze
+    sentence: s.wo-chang-qu-zheli
+    gap: w.chang.often
+    targets: [w.chang.often]
+    context: [w.wo, w.qu, w.zheli]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Vengo aquí a menudo.»'}
+    answer: {typed: chang2, hanzi: 常, pinyin: cháng, meaning: 'a menudo, soler'}
+    comments: []
+  - id: x.read.chang.often
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.chang.often]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 常}
+    answer: {hanzi: 常, pinyin: cháng, meaning: 'a menudo, soler'}
+    comments: []
+  - id: x.contrast.chang.often
+    added: 2026-10-23
+    lang: es
+    type: contrast
+    group: g.chang-chang
+    targets: [w.chang.often]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 常, pinyin: cháng, meaning: 'a menudo, soler'}
+    comments: []
+  - id: x.produce.wo-chang-qu-zheli
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-chang-qu-zheli
+    targets: [s.wo-chang-qu-zheli]
+    context: [w.wo, w.chang.often, w.qu, w.zheli]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Vengo aquí a menudo.»'}
+    answer: {meaning: Vengo aquí a menudo.}
+    comments: []
+  - id: x.produce.wo-bu-chang-he-kafei
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-bu-chang-he-kafei
+    targets: [s.wo-bu-chang-he-kafei]
+    context: [w.wo, w.bu, w.chang.often, w.he.drink, w.kafei]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No suelo tomar café.»'}
+    answer: {meaning: No suelo tomar café.}
+    comments: []
+  - id: x.produce.wo-changchang-wangji
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-changchang-wangji
+    targets: [s.wo-changchang-wangji]
+    context: [w.wo, w.changchang, w.wangji]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Se me olvidan las cosas a menudo.»'}
+    answer: {meaning: Se me olvidan las cosas a menudo.}
+    comments: []
+  - id: x.produce.ni-xian-shuo-ba
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.ni-xian-shuo-ba
+    targets: [s.ni-xian-shuo-ba]
+    context: [w.ni, w.xian.first, w.shuo, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Habla tú primero.»'}
+    answer: {meaning: Habla tú primero.}
+    comments: []
+  - id: x.produce.wo-xian-kankan
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-xian-kankan
+    targets: [s.wo-xian-kankan]
+    context: [w.wo, w.xian.first, w.kankan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Primero voy a echar un vistazo.»'}
+    answer: {meaning: Primero voy a echar un vistazo.}
+    comments: []
+  - id: x.produce.wo-xian-wen-yixia
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-xian-wen-yixia
+    targets: [s.wo-xian-wen-yixia]
+    context: [w.wo, w.xian.first, w.wen, w.yixia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Primero voy a preguntar.»'}
+    answer: {meaning: Primero voy a preguntar.}
+    comments: []
+  - id: x.produce.wo-xian-hui-jia
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-xian-hui-jia
+    targets: [s.wo-xian-hui-jia]
+    context: [w.wo, w.xian.first, w.huijia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Primero me voy a casa.»'}
+    answer: {meaning: Primero me voy a casa.}
+    comments: []
+  - id: x.produce.ni-xian-zou-ba
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.ni-xian-zou-ba
+    targets: [s.ni-xian-zou-ba]
+    context: [w.ni, w.xian.first, w.zou, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ve tú primero.»'}
+    answer: {meaning: Ve tú primero.}
+    comments: []
+  - id: x.produce.wo-mingtian-lai
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-mingtian-lai
+    targets: [s.wo-mingtian-lai]
+    context: [w.wo, w.mingtian, w.lai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Vengo mañana.»'}
+    answer: {meaning: Vengo mañana.}
     comments: []

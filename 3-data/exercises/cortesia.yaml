@@ -71,7 +71,7 @@ exercises:
     type: produce
     targets: [w.dui]
     skills: [production, pinyin]
-    prompt: {text: 'Alguien dice algo y tiene razón: «Pekín no hace calor, ¿verdad?». ¿Cómo le das la razón? Escribe el pinyin.'}
+    prompt: {text: 'Alguien dice esto y tiene razón. ¿Cómo le das la razón? Escribe el pinyin.', said: 北京不热，对吧？, said_es: 'Pekín no hace calor, ¿verdad?'}
     answer: {typed: dui4, hanzi: 对, pinyin: duì, meaning: 'correcto; sí, eso es'}
     lang: es
     comments: []
@@ -80,7 +80,7 @@ exercises:
     type: produce
     targets: [e.haode]
     skills: [production, pinyin]
-    prompt: {text: 'Te proponen ir a comer. Aceptas: «vale». Escribe el pinyin.'}
+    prompt: {text: 'Te proponen esto y aceptas: «vale». Escribe el pinyin.', said: 我们去吃饭吧！, said_es: '¡Vamos a comer!'}
     answer: {typed: hao3 de5, hanzi: 好的, pinyin: hǎo de, meaning: 'vale, de acuerdo'}
     lang: es
     comments: []
@@ -237,7 +237,7 @@ exercises:
     type: produce
     targets: [e.shide]
     skills: [production, pinyin]
-    prompt: {text: 'Te preguntan: «¿Eres estudiante?». Lo confirmas. Escribe el pinyin.'}
+    prompt: {text: 'Te preguntan esto y lo confirmas. Escribe el pinyin.', said: 你是学生吗？, said_es: '¿Eres estudiante?'}
     answer: {typed: shi4 de5, hanzi: 是的, pinyin: shì de, meaning: 'sí, eso es'}
     comments: []
   - id: x.read.shide
@@ -762,7 +762,7 @@ exercises:
     type: speak
     targets: [e.meiguanxi]
     skills: [production, speaking]
-    prompt: {text: 'Situación. Alguien te empuja sin querer y te dice 对不起. ¿Qué le contestas?'}
+    prompt: {text: 'Situación. Alguien te empuja sin querer y te dice esto. ¿Qué le contestas?', said: 对不起}
     answer: {hanzi: '没关系', pinyin: 'méi guānxi', meaning: 'no pasa nada'}
     comments: []
   - id: x.situation.xiexie
@@ -780,7 +780,7 @@ exercises:
     type: speak
     targets: [e.bukeqi]
     skills: [production, speaking]
-    prompt: {text: 'Situación. Has ayudado a alguien y te dice 谢谢. ¿Qué le contestas?'}
+    prompt: {text: 'Situación. Has ayudado a alguien y te dice esto. ¿Qué le contestas?', said: 谢谢}
     answer: {hanzi: '不客气', pinyin: 'bù kèqi', meaning: 'de nada (literalmente, «no hagas cumplidos»)'}
     comments: []
   - id: x.situation.dui
@@ -789,7 +789,7 @@ exercises:
     type: speak
     targets: [w.dui]
     skills: [production, speaking]
-    prompt: {text: 'Situación. Te preguntan 你是西班牙人吗？ y lo eres. Contesta corto.'}
+    prompt: {text: 'Situación. Te preguntan esto y sí lo eres. Contesta corto.', said: 你是西班牙人吗？, said_es: '¿Eres español?'}
     answer: {hanzi: '对', pinyin: 'duì', meaning: 'sí, eso es (también vale 是)'}
     comments: []
   - id: x.situation.haode
@@ -798,7 +798,7 @@ exercises:
     type: speak
     targets: [e.haode]
     skills: [production, speaking]
-    prompt: {text: 'Situación. Un amigo propone 我们下午见吧。 y te parece bien. ¿Qué contestas?'}
+    prompt: {text: 'Situación. Un amigo te propone esto y te parece bien. ¿Qué contestas?', said: 我们下午见吧。}
     answer: {hanzi: '好的', pinyin: 'hǎo de', meaning: 'vale, de acuerdo'}
     comments: []
   - id: x.situation.zaishuoyibian
@@ -1148,17 +1148,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Se me ha olvidado.»'}
     answer: {meaning: Se me ha olvidado.}
     comments: []
-  - id: x.produce.wo-mingbai-le
-    added: 2026-10-06
-    lang: es
-    type: produce
-    sentence: s.wo-mingbai-le
-    targets: [s.wo-mingbai-le]
-    context: [w.wo, w.mingbai, w.le]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Ya lo entiendo.»'}
-    answer: {meaning: Ya lo entiendo.}
-    comments: []
   - id: x.produce.xiaoxin-2
     added: 2026-10-06
     lang: es
@@ -1320,28 +1309,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Espera un momento.»'}
     answer: {meaning: Espera un momento.}
     comments: []
-  - id: x.produce.wo-xiang-wen-yixia
-    added: 2026-10-08
-    lang: es
-    type: produce
-    sentence: s.wo-xiang-wen-yixia
-    targets: [s.wo-xiang-wen-yixia]
-    context: [w.wo, w.xiang, w.wen, w.yixia]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Quería preguntar una cosa.»'}
-    answer: {meaning: Quería preguntar una cosa.}
-    comments: []
-  - id: x.produce.rang-wo-xiang-yixia
-    added: 2026-10-08
-    lang: es
-    type: produce
-    sentence: s.rang-wo-xiang-yixia
-    targets: [s.rang-wo-xiang-yixia]
-    context: [w.rang, w.wo, w.xiang, w.yixia]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Déjame pensarlo un momento.»'}
-    answer: {meaning: Déjame pensarlo un momento.}
-    comments: []
   - id: x.produce.qing-ni-kan-yixia
     added: 2026-10-08
     lang: es
@@ -1352,17 +1319,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Échale un vistazo, por favor.»'}
     answer: {meaning: 'Échale un vistazo, por favor.'}
-    comments: []
-  - id: x.produce.ni-keyi-jieshi-yixia-ma
-    added: 2026-10-08
-    lang: es
-    type: produce
-    sentence: s.ni-keyi-jieshi-yixia-ma
-    targets: [s.ni-keyi-jieshi-yixia-ma]
-    context: [w.ni, w.keyi, w.jieshi, w.yixia, w.ma]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿Me lo puedes explicar?»'}
-    answer: {meaning: '¿Me lo puedes explicar?'}
     comments: []
   - id: x.produce.bang-wo-na-yixia
     added: 2026-10-08
@@ -1724,7 +1680,7 @@ exercises:
     type: speak
     targets: [e.bukeqi]
     skills: [production, speaking]
-    prompt: {text: Elige. Has ayudado a una señora con las bolsas y te dice 谢谢., options: [没关系, 不客气, 对不起, 没问题]}
+    prompt: {text: 'Elige. Has ayudado a una señora con las bolsas y te dice esto.', said: 谢谢, options: [没关系, 不客气, 对不起, 没问题]}
     answer: {choice: b, hanzi: 不客气, pinyin: bú kèqi, meaning: 'A 谢谢, 不客气 (o 不用谢). 没关系 es para 对不起.'}
     comments: []
     accept_pinyin_mismatch: 'se escribe lo que suena: bú delante de cuarto tono y 气 átono'
@@ -1734,7 +1690,7 @@ exercises:
     type: speak
     targets: [e.meiguanxi]
     skills: [production, speaking]
-    prompt: {text: 'Elige. En el metro, alguien te pisa y te dice 对不起.', options: [不客气, 没问题, 没关系, 谢谢]}
+    prompt: {text: 'Elige. En el metro, alguien te pisa y te dice esto.', said: 对不起, options: [不客气, 没问题, 没关系, 谢谢]}
     answer: {choice: c, hanzi: 没关系, pinyin: méi guānxi, meaning: 'A una disculpa, 没关系: no pasa nada.'}
     comments: []
   - id: x.choice.reply-favor
@@ -1743,7 +1699,7 @@ exercises:
     type: speak
     targets: [e.meiwenti]
     skills: [production, speaking]
-    prompt: {text: 'Elige. Un compañero te pregunta: 你能帮我一下吗？', options: [没关系, 不客气, 没问题, 对不起]}
+    prompt: {text: 'Elige. Un compañero te pregunta esto.', said: 你能帮我一下吗？, said_es: '¿Me puedes echar una mano?', options: [没关系, 不客气, 没问题, 对不起]}
     answer: {choice: c, hanzi: 没问题, pinyin: méi wèntí, meaning: 'Aceptas lo que te piden: sin problema.'}
     comments: []
   - id: x.cloze.keyi.modal
@@ -1824,17 +1780,6 @@ exercises:
     skills: [reading, pinyin, tones]
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 题}
     answer: {typed: ti2, hanzi: 题, pinyin: tí, meaning: 'Sale en 没问题 méi wèntí «sin problema», 问题 wèntí «pregunta; problema».'}
-    comments: []
-  - id: x.listen.nimen-chifan-le-ma
-    added: 2026-10-11
-    lang: es
-    type: listen
-    sentence: s.nimen-chifan-le-ma
-    targets: [s.nimen-chifan-le-ma]
-    context: [w.nimen, w.chifan, w.le, w.ma]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Ya habéis comido?'}
     comments: []
   - id: x.listen.duibuqi-nimen-chifan-le-ma
     added: 2026-10-11
@@ -2114,4 +2059,422 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «No es nada.»'}
     answer: {meaning: No es nada.}
+    comments: []
+  - id: x.produce.bie-tai-lei-le
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.bie-tai-lei-le
+    targets: [s.bie-tai-lei-le]
+    context: [w.bie, w.tai, w.lei, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡No te canses demasiado!»'}
+    answer: {meaning: ¡No te canses demasiado!}
+    comments: []
+  - id: x.produce.wo-mei-cuo
+    added: 2026-10-19
+    lang: es
+    type: produce
+    sentence: s.wo-mei-cuo
+    targets: [s.wo-mei-cuo]
+    context: [w.wo, w.mei, w.cuo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No me he equivocado (no es culpa mía).»'}
+    answer: {meaning: No me he equivocado (no es culpa mía).}
+    comments: []
+  - id: x.listen.wo-juede-hen-hao
+    added: 2026-10-16
+    lang: es
+    type: listen
+    sentence: s.wo-juede-hen-hao
+    targets: [s.wo-juede-hen-hao]
+    context: [w.wo, w.juede, w.hen, w.hao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me parece muy bien.}
+    comments: []
+  - id: x.produce.wo-juede-hen-hao
+    added: 2026-10-16
+    lang: es
+    type: produce
+    sentence: s.wo-juede-hen-hao
+    targets: [s.wo-juede-hen-hao]
+    context: [w.wo, w.juede, w.hen, w.hao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me parece muy bien.»'}
+    answer: {meaning: Me parece muy bien.}
+    comments: []
+  - id: x.produce.tai-hao-le
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.tai-hao-le
+    targets: [s.tai-hao-le]
+    context: [w.tai, w.hao, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Genial!»'}
+    answer: {meaning: ¡Genial!}
+    comments: []
+  - id: x.listen.ni-hen-piaoliang
+    added: 2026-10-02
+    lang: es
+    type: listen
+    sentence: s.ni-hen-piaoliang
+    targets: [s.ni-hen-piaoliang]
+    context: [w.ni, w.hen, w.piaoliang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Eres muy guapa!}
+    comments: []
+  - id: x.produce.ni-shuo-de-hen-hao
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.ni-shuo-de-hen-hao
+    targets: [s.ni-shuo-de-hen-hao]
+    context: [w.ni, w.shuo, w.de.complement, w.hen, w.hao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hablas muy bien.»'}
+    answer: {meaning: Hablas muy bien.}
+    comments: []
+  - id: x.produce.ni-hao-piaoliang
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.ni-hao-piaoliang
+    targets: [s.ni-hao-piaoliang]
+    context: [w.ni, w.hao, w.piaoliang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Qué guapa estás!»'}
+    answer: {meaning: ¡Qué guapa estás!}
+    comments: []
+  - id: x.produce.ni-zhen-piaoliang
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.ni-zhen-piaoliang
+    targets: [s.ni-zhen-piaoliang]
+    context: [w.ni, w.zhen, w.piaoliang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Qué guapa eres!»'}
+    answer: {meaning: ¡Qué guapa eres!}
+    comments: []
+  - id: x.produce.wo-ai-ni
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.wo-ai-ni
+    targets: [s.wo-ai-ni]
+    context: [w.wo, w.ai.love, w.ni]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Te quiero.»'}
+    answer: {meaning: Te quiero.}
+    comments: []
+  - id: x.produce.keyi-ma-keyi
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.keyi-ma-keyi
+    targets: [s.keyi-ma-keyi]
+    context: [w.keyi, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Se puede? —Sí, se puede.»'}
+    answer: {meaning: '¿Se puede? —Sí, se puede.'}
+    comments: []
+  - id: x.produce.wo-ye-xihuan
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.wo-ye-xihuan
+    targets: [s.wo-ye-xihuan]
+    context: [w.wo, w.ye, w.xihuan]
+    skills: [production, speaking]
+    prompt: {text: 'Alguien dice que le ha encantado la comida. A ti también: ¿qué dices? En voz alta.'}
+    answer: {meaning: A mí también me gusta.}
+    comments: []
+  - id: x.produce.wo-cuo-le
+    added: 2026-09-29
+    lang: es
+    type: produce
+    sentence: s.wo-cuo-le
+    targets: [s.wo-cuo-le]
+    context: [w.wo, w.cuo, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me he equivocado.»'}
+    answer: {meaning: Me he equivocado.}
+    comments: []
+  - id: x.produce.ni-jinlai-ba
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.ni-jinlai-ba
+    targets: [s.ni-jinlai-ba]
+    context: [w.ni, w.jin, w.lai, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Alguien llama a tu puerta. Dile que pase, en voz alta.'}
+    answer: {meaning: 'Pasa, entra.'}
+    comments: []
+  - id: x.produce.keyi-zuo-zheli-ma
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.keyi-zuo-zheli-ma
+    targets: [s.keyi-zuo-zheli-ma]
+    context: [w.keyi, w.zuo.sit, w.zheli, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'En una cafetería llena señalas una silla libre: ¿puedo sentarme aquí? En voz alta.'}
+    answer: {meaning: '¿Puedo sentarme aquí?'}
+    comments: []
+  - id: x.listen.lai-le-lai-le
+    added: 2026-10-01
+    lang: es
+    type: listen
+    sentence: s.lai-le-lai-le
+    targets: [s.lai-le-lai-le]
+    context: [w.lai, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Ya voy, ya voy! (o ¡ahí viene!)'}
+    comments: []
+  - id: x.produce.feichang-hao
+    added: 2026-10-01
+    lang: es
+    type: produce
+    sentence: s.feichang-hao
+    targets: [s.feichang-hao]
+    context: [w.feichang, w.hao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Muy bien!»'}
+    answer: {meaning: ¡Muy bien!}
+    comments: []
+  - id: x.produce.qing-jinlai
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.qing-jinlai
+    targets: [s.qing-jinlai]
+    context: [w.qing, w.jinlai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Pasa, por favor (entra aquí).»'}
+    answer: {meaning: 'Pasa, por favor (entra aquí).'}
+    comments: []
+  - id: x.produce.wo-zhidao
+    added: 2026-10-10
+    lang: es
+    type: produce
+    sentence: s.wo-zhidao
+    targets: [s.wo-zhidao]
+    context: [w.wo, w.zhidao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ya lo sé.»'}
+    answer: {meaning: Ya lo sé.}
+    comments: []
+  - id: x.situation.wo-zhidao
+    added: '2026-10-10'
+    lang: es
+    type: speak
+    sentence: s.wo-zhidao
+    targets: [s.wo-zhidao]
+    skills: [production, speaking]
+    prompt: {text: Situación. Te recuerdan algo que ya sabías. Contesta que ya lo sabes.}
+    answer: {meaning: ya lo sé}
+    comments: []
+  - id: x.situation.ni-zuo-ba
+    added: '2026-10-11'
+    lang: es
+    type: speak
+    sentence: s.ni-zuo-ba
+    targets: [s.ni-zuo-ba]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Un invitado entra en tu casa y se queda de pie, sin saber dónde ponerse. Invítale a sentarse.'}
+    answer: {meaning: 'Siéntate, anda.'}
+    comments: []
+  - id: x.produce.ni-zuo-ba
+    added: 2026-10-11
+    lang: es
+    type: produce
+    sentence: s.ni-zuo-ba
+    targets: [s.ni-zuo-ba]
+    context: [w.ni, w.zuo.sit, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Siéntate, anda.»'}
+    answer: {meaning: 'Siéntate, anda.'}
+    comments: []
+  - id: x.listen.qing-gei-wo-kan-yixia
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.qing-gei-wo-kan-yixia
+    targets: [s.qing-gei-wo-kan-yixia]
+    context: [w.qing, w.gei.to, w.wo, w.kan, w.yixia]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Déjemelo ver, por favor.'}
+    comments: []
+  - id: x.compose.tienda-reloj
+    added: '2026-10-11'
+    lang: es
+    type: compose
+    targets: [s.wo-neng-kan-yixia-ma, s.wo-neng-shi-yixia-ma, s.qing-gei-wo-kan-yixia]
+    words: [w.neng, w.kan, w.shi.try, w.yixia, w.qing]
+    skills: [production, speaking]
+    prompt: {text: Construye. En una tienda ves un reloj en el escaparate y quieres verlo de cerca y probártelo. Pídelo con estas palabras o con otras.}
+    answer: {meaning: '能…吗？ pregunta si se puede; 一下, que será un momento.'}
+    comments: []
+  - id: x.listen.wo-neng-kan-yixia-ma
+    added: 2026-10-11
+    lang: es
+    type: listen
+    sentence: s.wo-neng-kan-yixia-ma
+    targets: [s.wo-neng-kan-yixia-ma]
+    context: [w.wo, w.neng, w.kan, w.yixia, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Puedo echarle un vistazo?'}
+    comments: []
+  - id: x.listen.mingtian-zai-shuo
+    added: 2026-10-10
+    lang: es
+    type: listen
+    sentence: s.mingtian-zai-shuo
+    targets: [s.mingtian-zai-shuo]
+    context: [w.mingtian, w.zai.again, w.shuo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ya lo hablamos mañana.}
+    comments: []
+  - id: x.dictation.tongyi
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.tongyi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: tong2 yi4, hanzi: 同意, pinyin: tóngyì, meaning: estar de acuerdo}
+    comments: []
+  - id: x.produce.tongyi
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.tongyi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «estar de acuerdo»? Escribe el pinyin.'}
+    answer: {typed: tong2 yi4, hanzi: 同意, pinyin: tóngyì, meaning: estar de acuerdo}
+    comments: []
+  - id: x.read.tongyi
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.tongyi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 同意}
+    answer: {hanzi: 同意, pinyin: tóngyì, meaning: estar de acuerdo}
+    comments: []
+  - id: x.charsound.zhi
+    added: 2026-10-23
+    lang: es
+    type: charsound
+    targets: [w.zhidao, w.zhishi]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 知}
+    answer: {typed: zhi1, hanzi: 知, pinyin: zhī, meaning: 'Sale en 知道 zhīdao «saber», 知识 zhīshi «conocimiento, saber».'}
+    comments: []
+  - id: x.listen.xiexie-ayi
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.xiexie-ayi
+    targets: [s.xiexie-ayi]
+    context: [e.xiexie, w.ayi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Gracias, señora!'}
+    comments: []
+  - id: x.produce.xiexie-ayi
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.xiexie-ayi
+    targets: [s.xiexie-ayi]
+    context: [e.xiexie, w.ayi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Gracias, señora!»'}
+    answer: {meaning: '¡Gracias, señora!'}
+    comments: []
+  - id: x.produce.wo-tongyi
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-tongyi
+    targets: [s.wo-tongyi]
+    context: [w.wo, w.tongyi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estoy de acuerdo.»'}
+    answer: {meaning: Estoy de acuerdo.}
+    comments: []
+  - id: x.produce.ni-tongyi-ma
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.ni-tongyi-ma
+    targets: [s.ni-tongyi-ma]
+    context: [w.ni, w.tongyi, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Estás de acuerdo?»'}
+    answer: {meaning: '¿Estás de acuerdo?'}
+    comments: []
+  - id: x.produce.wo-bu-tongyi
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.wo-bu-tongyi
+    targets: [s.wo-bu-tongyi]
+    context: [w.wo, w.bu, w.tongyi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No estoy de acuerdo.»'}
+    answer: {meaning: No estoy de acuerdo.}
+    comments: []
+  - id: x.produce.ni-shuo-de-bu-dui
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.ni-shuo-de-bu-dui
+    targets: [s.ni-shuo-de-bu-dui]
+    context: [w.ni, w.shuo, w.de.complement, w.bu, w.dui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Lo que dices no es correcto.»'}
+    answer: {meaning: Lo que dices no es correcto.}
+    comments: []
+  - id: x.produce.ni-zuo-de-hen-hao
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.ni-zuo-de-hen-hao
+    targets: [s.ni-zuo-de-hen-hao]
+    context: [w.ni, w.zuo.do, w.de.complement, w.hen, w.hao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Lo has hecho muy bien.»'}
+    answer: {meaning: Lo has hecho muy bien.}
+    comments: []
+  - id: x.produce.zhege-bu-dui
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.zhege-bu-dui
+    targets: [s.zhege-bu-dui]
+    context: [w.zhe, w.ge, w.bu, w.dui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Esto no está bien (es incorrecto).»'}
+    answer: {meaning: Esto no está bien (es incorrecto).}
+    comments: []
+  - id: x.produce.meishi
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.meishi
+    targets: [s.meishi]
+    context: [w.mei, w.shi.matter]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No pasa nada.»'}
+    answer: {meaning: No pasa nada.}
     comments: []

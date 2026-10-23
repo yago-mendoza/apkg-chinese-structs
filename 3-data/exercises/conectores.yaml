@@ -425,17 +425,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Como mientras miro el móvil.»'}
     answer: {meaning: Como mientras miro el móvil.}
     comments: []
-  - id: x.listen.mingtian-zai-shuo
-    added: 2026-10-10
-    lang: es
-    type: listen
-    sentence: s.mingtian-zai-shuo
-    targets: [s.mingtian-zai-shuo]
-    context: [w.mingtian, w.zai.again, w.shuo]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Ya lo hablamos mañana.}
-    comments: []
   - id: x.dictation.haoba
     added: 2026-10-11
     lang: es
@@ -722,14 +711,13 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Mejor pregúntale a la profesora.»'}
     answer: {meaning: Mejor pregúntale a la profesora.}
     comments: []
-  - id: x.produce.hai-you-ma
-    added: 2026-10-19
+  - id: x.nuance.mingtian-lai-zai-lai
+    added: '2026-10-23'
     lang: es
-    type: produce
-    sentence: s.hai-you-ma
-    targets: [s.hai-you-ma]
-    context: [w.haiyou, w.ma]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿Queda más? (¿hay más?)»'}
-    answer: {meaning: '¿Queda más? (¿hay más?)'}
+    type: nuance
+    targets: [w.zai.again]
+    context: [w.mingtian, w.lai]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我明天来 y 我明天再来: ¿qué cambia?'}
+    answer: {meaning: '我明天来: vengo mañana. 我明天再来: vuelvo mañana, vengo otra vez (再 «de nuevo»).'}
     comments: []

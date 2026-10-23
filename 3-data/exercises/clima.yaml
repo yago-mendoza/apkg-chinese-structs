@@ -592,3 +592,73 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 雨}
     answer: {hanzi: 雨, pinyin: yǔ, meaning: lluvia}
     comments: []
+  - id: x.dictation.feng
+    added: 2026-10-23
+    lang: es
+    type: listen
+    targets: [w.feng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: feng1, hanzi: 风, pinyin: fēng, meaning: viento}
+    comments: []
+  - id: x.produce.feng
+    added: 2026-10-23
+    lang: es
+    type: produce
+    targets: [w.feng]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «viento»? Escribe el pinyin.'}
+    answer: {typed: feng1, hanzi: 风, pinyin: fēng, meaning: viento}
+    comments: []
+  - id: x.read.feng
+    added: 2026-10-23
+    lang: es
+    type: read
+    targets: [w.feng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 风}
+    answer: {hanzi: 风, pinyin: fēng, meaning: viento}
+    comments: []
+  - id: x.contrast.hua.flower
+    added: 2026-10-23
+    lang: es
+    type: contrast
+    group: g.hua-hua
+    targets: [w.hua.flower]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 花, pinyin: huā, meaning: flor}
+    comments: []
+  - id: x.listen.jintian-tianqi-bu-leng-bu-re
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.jintian-tianqi-bu-leng-bu-re
+    targets: [s.jintian-tianqi-bu-leng-bu-re]
+    context: [w.ni, w.juede, w.jintian, w.de, w.tianqi, w.zenmeyang, w.wo, w.hen, w.hao, w.bu, w.leng, w.re]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Qué te parece el tiempo hoy? —Muy bueno: ni frío ni calor.'}
+    comments: []
+  - id: x.produce.jintian-feng-hen-da
+    added: 2026-10-23
+    lang: es
+    type: produce
+    sentence: s.jintian-feng-hen-da
+    targets: [s.jintian-feng-hen-da]
+    context: [w.jintian, w.feng, w.hen, w.da]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hoy hace mucho viento.»'}
+    answer: {meaning: Hoy hace mucho viento.}
+    comments: []
+  - id: x.listen.women-dao-dao-shang-le
+    added: 2026-10-23
+    lang: es
+    type: listen
+    sentence: s.women-dao-dao-shang-le
+    targets: [s.women-dao-dao-shang-le]
+    context: [w.women, w.dao.reach, w.dao, w.shang.on, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Hemos llegado a la isla!}
+    comments: []
