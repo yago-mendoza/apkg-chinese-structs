@@ -548,8 +548,6 @@ sentences:
   - id: s.zhege-zenmeyang
     use: say
     kind: formula
-    listen: true
-    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 这, ref: w.zhe, pinyin: zhè}
       - {text: 个, ref: w.ge, pinyin: ge}
@@ -794,3 +792,82 @@ sentences:
       - {text: ？}
     translation: {es: '¿Hay agua en la tienda?', en: 'Is there water in the shop?'}
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+  - id: s.wo-lai-fuqian
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 来, ref: w.lai, pinyin: 'lái'}
+      - {text: 付钱, ref: w.fuqian, pinyin: 'fùqián'}
+      - {text: 。}
+    translation: {es: 'Pago yo.', en: 'I will pay.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-zai-nali-keyi-mai-jipiao
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 哪里, ref: w.nali, pinyin: 'nǎlǐ'}
+      - {text: 可以, ref: w.keyi, pinyin: 'kěyǐ'}
+      - {text: 买, ref: w.mai, pinyin: 'mǎi'}
+      - {text: 机票, ref: w.jipiao, pinyin: 'jīpiào'}
+      - {text: ？}
+    translation: {es: '¿Dónde puedo comprar un billete de avión?', en: 'Where can I buy a plane ticket?'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.zhexie-duoshao-qian
+    use: say
+    kind: example
+    segments:
+      - {text: 这些, ref: w.zhexie, pinyin: 'zhèxiē'}
+      - {text: 多少钱, ref: e.duoshaoqian, pinyin: 'duōshao qián'}
+      - {text: ？}
+    translation: {es: '¿Cuánto cuestan estos?', en: 'How much are these?'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-yao-zhege-bu-yao-nage
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: ，}
+      - {text: 不, ref: w.bu, pinyin: 'bú', sandhi: true}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 那, ref: w.na.that, pinyin: 'nà'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 。}
+    translation: {es: 'Quiero este, aquel no.', en: 'I want this one, not that one.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.dlg-yao-nage
+    use: hear
+    kind: example
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 哪个, ref: w.nage, pinyin: 'nǎge'}
+      - {text: ？}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: ，}
+      - {text: 不, ref: w.bu, pinyin: 'bú', sandhi: true}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 那, ref: w.na.that, pinyin: 'nà'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 。}
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 太, ref: w.tai, pinyin: 'tài'}
+      - {text: 贵, ref: w.gui, pinyin: 'guì'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: ，}
+      - {text: 那, ref: w.na.that, pinyin: 'nà'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 便宜, ref: w.pianyi, pinyin: 'piányi'}
+      - {text: 一点, ref: w.yidian, pinyin: 'yìdiǎn', sandhi: true}
+      - {text: 。}
+    translation: {es: '—¿Cuál quieres? —Este, aquel no. Este es demasiado caro; aquel es un poco más barato.', en: '—Which one do you want? —This one, not that one. This one is too expensive; that one is a bit cheaper.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}

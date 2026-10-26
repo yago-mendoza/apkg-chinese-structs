@@ -488,11 +488,12 @@ entries:
   - id: g.ni-huan
     kind: group
     basis: visual
-    title: 你 nǐ y 欢 huān
-    explanation: 'Los dos tienen a la derecha algo parecido, pero a la izquierda uno lleva una persona y el otro una mano.'
+    title: '你 nǐ, 欢 huān y 饭 fàn'
+    explanation: 'Tres caracteres con dos piezas que se parecen: a la izquierda, una persona, una mano o la comida; a la derecha, la mano 又 vuelve a salir en 饭.'
     members:
       - {ref: w.ni, cue: '亻 «persona» a la izquierda; a la derecha, 尔'}
       - {ref: c.huan.joy, cue: '又 «mano» a la izquierda; a la derecha, 欠, alguien con la boca abierta'}
+      - {ref: w.fan, cue: '饣 a la izquierda; a la derecha, 反, con 又 dentro'}
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
     comments: []
   - id: g.kai-jin
@@ -515,3 +516,25 @@ entries:
       - {ref: w.gen, cue: '足 «pie» a la izquierda; plano'}
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-20'}
     comments: []
+  - id: c.ding.fixed
+    use: read
+    kind: character
+    hanzi: 定
+    pinyin: dìng
+    meaning: {es: 'fijo, establecido', en: 'fixed, settled'}
+    standalone: rare
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Un techo 宀 y, debajo, 正 «recto» con los trazos de abajo abiertos como un pie: bajo mi techo, todo está fijo en su sitio.', original: 'Sí: 宀 representa un techo. Debajo hay una forma modificada de 正 (zhèng) […] «Bajo el techo, todo está en su sitio» → 定 (dìng): fijo, establecido, seguro.'}
+  - id: g.ding-zou-shi
+    kind: group
+    basis: visual
+    title: '定, 走 y 是: lo de arriba manda'
+    explanation: 'Abajo los tres llevan algo parecido a un pie; lo que hay arriba los separa.'
+    members:
+      - {ref: c.ding.fixed, cue: '宀 un techo arriba (一定)'}
+      - {ref: w.zou, cue: '土 arriba, un poste de caminos'}
+      - {ref: w.shi, cue: '日 un sol arriba'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Bajo mi techo me quedo fijo: 定. Veo el poste y me pongo a caminar: 走. A plena luz del sol veo que sí, que es: 是.', original: 'Un poco de contraste: 定 (dìng): un techo 宀. «Bajo mi techo me quedo fijo». 走 (zǒu): una cruz 土, que puedes imaginar como un poste de caminos. «Veo el poste y me pongo a caminar». 是 (shì): un sol 日. «A plena luz veo que SÍ, ES».'}

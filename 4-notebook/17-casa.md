@@ -31,6 +31,7 @@
 - ✅🃏 麦克风 màikèfēng [maɪ˥˩ kʰɤ˥˩ fɤŋ˥] · micrófono · _sustantivo_ · Préstamo: 麦克 imita «micro» y 风, «phone». Para recordarlo: el «viento» de la voz entra por el micro. En las videollamadas se oye 麦 a secas: 开麦 «abre el micro».
 - ✅🃏 住 zhù [ʈʂu˥˩] · vivir (en un sitio); alojarse · _verbo_ · Dónde se vive o se duerme: 你住在哪里？ «¿dónde vives?». Para «vivir» en el sentido de la vida, 生活 [HSK 2].
 - ✅🃏 穿 chuān [ʈʂʰwan˥] · ponerse, llevar puesto (ropa) · _verbo_ · Ropa y zapatos: 穿衣服 «vestirse»; 我穿这件 «me pongo esta».
+- ✅🃏 电 diàn [tjɛn˥˩] · electricidad; batería · _sustantivo_ · 没电了 «se ha quedado sin batería»: del móvil o del ordenador. Está en 电脑, 电话 y 电视. · Un sol 日 con un cable que le sale por abajo: de ahí sale la electricidad.
 
 ## 住 y 猪
 
@@ -46,6 +47,14 @@ La misma sílaba: solo los separa el tono.
 - 穿 chuān · alto y plano (1.º): 穿衣服
 - 船 chuán · sube (2.º): 坐船
 
+## 店 diàn, 点 diǎn y 电 diàn
+
+店 y 电 suenan exactamente igual; 点 baja y sube. Los separa la forma y la palabra en que salen.
+
+- 店 diàn · 广 un tejado: 商店
+- 点 diǎn · 灬 fuego debajo: 三点
+- 电 diàn · un sol con un cable que sale por abajo: 电脑
+
 ## Frases
 
 - ✅🃏 冰箱里有鸡蛋吗？ · bīngxiāng lǐ yǒu jīdàn ma · ¿Hay huevos en la nevera?
@@ -55,3 +64,7 @@ La misma sílaba: solo los separa el tono.
 - ✅🃏 这不是我的杯子。 · zhè bú shì wǒ de bēizi · Este vaso no es mío.
 - ✅🃏 麦克风在哪里？ · màikèfēng zài nǎlǐ · ¿Dónde está el micrófono?
 - ✅🃏 我穿这件。 · wǒ chuān zhè jiàn · Me pongo esta (prenda).
+- ✅🃏 我可以打电话吗？ · wǒ kěyǐ dǎ diànhuà ma · ¿Puedo llamar por teléfono?
+- ✅🃏 我的手机没电了。 · wǒ de shǒujī méi diàn le · Me he quedado sin batería en el móvil.
+- ✅🃏 你要看电视吗？ · nǐ yào kàn diànshì ma · ¿Quieres ver la tele?
+- ✅🃏 我的手机在哪里？在这里！这个是你的吗？不是，那个是我的。 · wǒ de shǒujī zài nǎlǐ zài zhèlǐ zhè ge shì nǐ de ma bú shì nà ge shì wǒ de · —¿Dónde está mi móvil? —¡Aquí! —¿Este es tuyo? —No, el mío es aquel.

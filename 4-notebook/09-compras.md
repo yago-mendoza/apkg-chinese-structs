@@ -4,7 +4,7 @@
 
 ## Vocabulario
 
-- ✅🃏 想 xiǎng [ɕjɑŋ˧˩˧] · querer o tener pensado (hacer algo); pensar · _verbo_ · Dos sentidos: «pensar» y «querer, tener ganas de».
+- ✅🃏 想 xiǎng [ɕjɑŋ˧˩˧] · querer o tener pensado (hacer algo); pensar · _verbo_ · Dos sentidos: «pensar» y «querer, tener ganas de». · 我想想 «déjame pensar»: el verbo repetido es «un momento, un poco», como 看看 «echar un vistazo».
 - ✅🃏 去 qù [tɕʰy˥˩] · ir · _verbo_
 - ✅🃏 买 mǎi [maɪ˧˩˧] · comprar · _verbo_
 - ✅🃏 商店 shāngdiàn [ʂɑŋ˥ tjɛn˥˩] · tienda · _sustantivo_
@@ -37,7 +37,7 @@
 - ✅🃏 公斤 gōngjīn [kʊŋ˥ tɕin˥] · kilo · _clasificador_ · Palabra a palabra: 公 «oficial» + 斤: el 斤 oficial, el del sistema métrico, que pesa el doble. Es el kilo al hablar; en las etiquetas pone 千克. · 公 gōng, primer tono, suena como un gong chino, y el hanzi tiene forma de gong.
 - ✅🃏 商场 shāngchǎng [ʂɑŋ˥ ʈʂʰɑŋ˧˩˧] · centro comercial · _sustantivo_ · Palabra a palabra: 商 «comercio» + 场 «recinto»: el sitio grande de las tiendas. 商店 es una tienda.
 - ✅🃏 全部 quánbù [tɕʰɥœn˧˥ pu˥˩] · todo, la totalidad (de un conjunto) · _número_ · Todos los de un conjunto que se tiene delante: 我全部都要 «me lo llevo todo». 都 refuerza que no falta ninguno.
-- ✅🃏 克 kè [kʰɤ˥˩] · gramo · _clasificador_ · En recetas, etiquetas y la báscula: 一百克 «cien gramos». 一斤 son 500 克.
+- ✅🃏 克 kè [kʰɤ˥˩] · gramo · _clasificador_ · En recetas, etiquetas y la báscula: 一百克 «cien gramos». 一斤 son 500 克. · Un pesito con patas colgado de un cable: un gramito de algo.
 - ✅🃏 千克 qiānkè [tɕʰjɛn˥ kʰɤ˥˩] · kilo (en etiquetas y textos) · _clasificador_ · Palabra a palabra: 千 «mil» + 克 «gramo»: mil gramos. Se lee en etiquetas y básculas; al hablar se dice 公斤.
 - ✅🃏 两 liǎng [ljɑŋ˧˩˧] · 50 gramos (peso tradicional) · _clasificador_ · Diez 两 hacen un 斤. Ojo: 两斤 es «dos 斤» (un kilo), con 两 como número.
 - ✅🃏 门票 ménpiào [mən˧˥ pʰjɑʊ˥˩] · entrada (a un museo, un parque) · _sustantivo_ · Palabra a palabra: 门 «puerta» + 票 «billete»: el billete para pasar la puerta. Para el avión, 机票. · 门 mén es el mismo de 们 y 问; aquí con su tono y su sentido de «puerta».
@@ -154,3 +154,8 @@ Solo los separa el tono: 买 baja y sube (3.º); 卖 cae (4.º).
 - ✅🃏 这个多少钱？十五块。有点贵，可以便宜一点吗？好吧，十二块。 · zhè ge duōshao qián shí wǔ kuài yǒudiǎn guì kěyǐ piányi yìdiǎn ma hǎo ba shí èr kuài · —¿Cuánto cuesta esto? —Quince yuanes. —Es un poco caro, ¿me lo deja más barato? —Vale, doce.
 - ✅🃏 我先付钱。可以扫码吗？可以。 · wǒ xiān fùqián kěyǐ sǎomǎ ma kěyǐ · —Primero pago. ¿Puedo pagar con el código? —Sí.
 - ✅🃏 商店有水吗？ · shāngdiàn yǒu shuǐ ma · ¿Hay agua en la tienda?
+- ✅🃏 我来付钱。 · wǒ lái fùqián · Pago yo.
+- ✅🃏 我在哪里可以买机票？ · wǒ zài nǎlǐ kěyǐ mǎi jīpiào · ¿Dónde puedo comprar un billete de avión?
+- ✅🃏 这些多少钱？ · zhèxiē duōshao qián · ¿Cuánto cuestan estos?
+- ✅🃏 我要这个，不要那个。 · wǒ yào zhè ge bú yào nà ge · Quiero este, aquel no.
+- ✅🃏 你要哪个？我要这个，不要那个。这个太贵了，那个便宜一点。 · nǐ yào nǎge wǒ yào zhè ge bú yào nà ge zhè ge tài guì le nà ge piányi yìdiǎn · —¿Cuál quieres? —Este, aquel no. Este es demasiado caro; aquel es un poco más barato.

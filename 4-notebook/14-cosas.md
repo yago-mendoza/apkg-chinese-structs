@@ -15,7 +15,7 @@
 - ✅🃏 错 cuò [tsʰwɔ˥˩] · equivocado; error · _adjetivo_ · 错误 cuòwù «error» [HSK 3] y 误会 wùhuì «malentendido» [HSK 4] son más formales; hablando basta 错. · cuò: la u apenas suena, se desliza hacia la o. · Estar equivocado: 我错了 «me he equivocado» (también vale para «he cometido un error»), 你错了 «te equivocas». Detrás de un verbo, «mal»: 你说错了 «lo has dicho mal». 不错 bú cuò [HSK 2] es un elogio, «no está mal, bastante bien». · Un concurso: el presentador golpea una campana de metal 钅 delante del marcador 昔 y grita «¡cuò!», con un tono que cae de golpe, como el cuarto: ¡error! · Un arma de asta 钅 sobre una rejilla metálica 昔: en la fábrica se equivocaron con ese lote.
 - ✅🃏 说 shuō [ʂwɔ˥] · hablar, decir · _verbo_ · 讠 «palabra» a la izquierda, como en 请 y en 认识.
 - ✅🃏 怎么 zěnme [tsən˧˩˧ mɤ] · cómo · _interrogativo_ · 怎么 + verbo pregunta la manera: 怎么说？ «¿cómo se dice?», 怎么吃？ «¿cómo se come?». · 怎么 pregunta por la manera o por la situación; 什么, por una cosa. Por eso «¿qué hago?» es 怎么办 y «¿qué te pasa?», 怎么了: no preguntas por un objeto.
-- ✅🃏 能 néng [nɤŋ˧˥] · poder (ser capaz) · _verbo_
+- ✅🃏 能 néng [nɤŋ˧˥] · poder (ser capaz) · _verbo_ · 熊 xióng «oso» es 能 con cuatro patas 灬 debajo: un animal que lo puede todo.
 - ✅🃏 和 hé [xɤ˧˥] · y, con · _conjunción_ · 和 solo une nombres: 咖啡和巧克力, 我和你. Dos frases o dos adjetivos no se unen con 和: 他很高，也很帅. · 禾 hé «cereal» da el sonido y 口 «boca» aporta el sentido. El sentido antiguo es «armonía, concordia»; de dos cosas que armonizan pasó a unir: A 和 B. · El cereal 禾 llega a la boca 口: comida compartida, armonía, estar juntos.
 - ✅🃏 没 méi [meɪ˧˥] · no (no pasó; no hay) · _adverbio_
 - ✅🃏 过 guo [kwɔ] · haber (hecho alguna vez) · _partícula_ · Detrás del verbo: lo has hecho alguna vez. 我去过北京 «he estado en Pekín»; 你看过这个电影吗？ «¿has visto esta película?». · 过 es atravesar: un puente o una experiencia. Detrás del verbo es como un sello en el pasaporte: 我去过北京.
@@ -26,7 +26,7 @@
 - ✅🃏 听 tīng [tʰiŋ˥] · escuchar · _verbo_ · 口 «boca» a la izquierda. 听音乐 «escuchar música».
 - ✅🃏 生气 shēngqì [ʂɤŋ˥ tɕʰi˥˩] · enfadarse; enfadado · _adjetivo_ · 生 «producir» + 气 «aire, ánimo»: echar humo. 他生气了 «se ha enfadado».
 - ✅🃏 疼 téng [tʰɤŋ˧˥] · doler · _verbo_ · 疒 «enfermedad» por fuera. 好疼！ «¡qué daño!»: 好 delante de un adjetivo es «qué…», muy coloquial.
-- ✅🃏 难 nán [nan˧˥] · difícil · _adjetivo_
+- ✅🃏 难 nán [nan˧˥] · difícil · _adjetivo_ · Con una mano 又 intentas levantar la estantería de cabezas 隹: es difícil.
 - ✅🃏 非常 fēicháng [feɪ˥ ʈʂʰɑŋ˧˥] · muy, muchísimo · _adverbio_ · Más fuerte que 很: 非常好 «muy bien». Para agradecer se dice 太谢谢你了 o 非常感谢 [HSK 2]; «非常谢谢你» suena forzado.
 - ✅🃏 为什么 wèishénme [weɪ˥˩ ʂən˧˥ mɤ] · por qué · _interrogativo_ · 为 wèi «para, por» + 什么 «qué»: «¿por qué?». 为 suelto: 我为你高兴 «me alegro por ti».
 - ✅🃏 这么 zhème [ʈʂɤ˥˩ mɤ] · tan, así de · _pronombre_ · Delante de un adjetivo: 你为什么这么高？ «¿por qué eres tan alto?».
@@ -36,7 +36,7 @@
 - ✅🃏 右 yòu [joʊ˥˩] · derecha · _sustantivo_ · 左 «izquierda» + 右 «derecha» = 左右 «más o menos», detrás de un número.
 - ✅🃏 试 shì [ʂɨ˥˩] · probar, intentar · _verbo_ · 我可以试一下吗？ «¿puedo probármelo?», en una tienda. 试试 y 试一下 son «probar un poco».
 - ✅🃏 等 děng [tɤŋ˧˩˧] · esperar · _verbo_ · 你等一下 «espera un momento» es de lo que más se oye.
-- ✅🃏 休息 xiūxi [ɕjoʊ˥ ɕi] · descansar · _verbo_
+- ✅🃏 休息 xiūxi [ɕjoʊ˥ ɕi] · descansar · _verbo_ · Una persona 亻 junto a un árbol 木: descansa a su sombra. Debajo, en 息, uno mismo 自 (un ojo con un palito: verse a sí mismo) sobre su propio corazón 心.
 - ✅🃏 找 zhǎo [ʈʂɑʊ˧˩˧] · buscar · _verbo_ · 我在找我的手机 «estoy buscando mi móvil». Pedirlo: 帮我找一下.
 - ✅🃏 拿 ná [na˧˥] · coger, llevar (en la mano) · _verbo_ · 帮我拿一下 «sujétamelo un momento». · Para coger algo con la mano, 拿; para recoger o retirar algo que te espera (dinero, un paquete), 取: 我去取钱.
 - ✅🃏 得 děi · tener que · _verbo_ · Con esta lectura, děi, es «tener que», muy de hablar: 我得先复习一下笔记. El mismo hanzi se lee de, sin tono, en 觉得.
@@ -62,6 +62,8 @@
 - ✅🃏 放 fàng [fɑŋ˥˩] · poner, dejar (en un sitio) · _verbo_ · 放在这里 «déjalo aquí»: el sitio va detrás, con 在.
 - ✅🃏 送 sòng [sʊŋ˥˩] · regalar; llevar (a alguien) · _verbo_ · 我送你一本书 «te regalo un libro». 我送你回家 «te llevo a casa».
 - ✅🃏 上 shàng [ʂɑŋ˥˩] · en, encima de (detrás de un nombre) · _sustantivo_ · Va detrás del sitio: 桌子上 «en la mesa», 岛上 «en la isla». Suena átono en muchas palabras: 晚上 wǎnshang.
+- ✅🃏 有些 yǒuxiē [joʊ˧˩˧ ɕjɛ˥] · algunos, hay quien · _pronombre_ · 有些 va al principio: 有些人不喝咖啡 «hay gente que no toma café». 一些 es «un poco de, unos cuantos» delante de lo que se cuenta: 一些水果.
+- ✅🃏 哪些 nǎxiē [na˧˩˧ ɕjɛ˥] · ¿cuáles?, ¿qué (cosas)? · _pronombre_ · 这些, 那些 y 哪些: «estos», «esos» y «¿cuáles?», para varias cosas. Con 些 no hace falta 个: 那些人, nunca 那些个人.
 
 ## 那 y 哪里
 
@@ -119,12 +121,14 @@ Misma sílaba, distinto tono: 书 shū «libro» (alto y plano), 树 shù «árb
 - 鼠 shǔ · baja y sube; animal del zodiaco
 - 属 shǔ · baja y sube; suena igual que 鼠: 我属马
 
-## 哪 y 都
+## 哪, 那, 都 y 脚
 
-Comparten 阝 a la derecha; la izquierda los separa.
+Los cuatro llevan a la derecha algo parecido a una oreja (阝, y 卩 en 脚); la izquierda los separa.
 
 - 哪 nǎ · 口 boca a la izquierda, porque pregunta
+- 那 nà · sin boca: solo señala
 - 都 dōu · 者 a la izquierda
+- 脚 jiǎo · 月 a la izquierda, 去 en medio y 卩 a la derecha
 
 ## 比 y 笔: los dos bǐ
 
@@ -206,6 +210,13 @@ La misma sílaba con distinto tono; juntos en 我去取钱 «voy a sacar dinero�
 
 - 去 qù · 4.º, cae seco
 - 取 qǔ · 3.º, se hunde
+
+## 那些 nàxiē y 哪些 nǎxiē
+
+Solo el tono y la boca 口 los separan: 那 señala, 哪 pregunta.
+
+- 那些 nàxiē · cae: señala
+- 哪些 nǎxiē · baja y sube, con boca 口: pregunta
 
 ## Frases
 
@@ -289,3 +300,7 @@ La misma sílaba con distinto tono; juntos en 我去取钱 «voy a sacar dinero�
 - ✅🃏 她唱得很好。 · tā chàng de hěn hǎo · Canta muy bien.
 - ✅🃏 我今天有事。 · wǒ jīntiān yǒu shì · Hoy tengo cosas que hacer.
 - ✅🃏 书在桌子上。 · shū zài zhuōzi shàng · El libro está en la mesa.
+- ✅🃏 有些人不喝茶。 · yǒuxiē rén bù hē chá · Hay gente que no toma té.
+- ✅🃏 你喜欢哪些？ · nǐ xǐhuan nǎxiē · ¿Cuáles te gustan?
+- ✅🃏 那些是我的。 · nàxiē shì wǒ de · Esos son míos.
+- ✅🃏 这是我买的书。 · zhè shì wǒ mǎi de shū · Este es el libro que compré.

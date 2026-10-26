@@ -247,6 +247,7 @@ entries:
     comments:
       - {kind: character, private: false, date: '2026-09-27', text: 'Su origen es el dibujo de una planta de trigo, tomado prestado por su sonido para «venir».'}
       - {kind: mnemonic, private: false, date: '2026-10-11', text: '来 es como una marca bonita en el mapa: el sitio donde estás tú. Por eso solo se puede venir hacia aquí.', original: mientras que 'lai' es venir porque es como una marca bonita de donde estsa. venirrrr}
+      - {kind: usage, private: false, date: '2026-10-26', text: '我来 + verbo es «déjame a mí, ya me encargo»: 我来付钱 «pago yo», 我来介绍一下 «dejad que os presente». Solo, 我来！ «¡ya voy yo!».', original: '来 (lái) significa «venir», pero 我来 + verbo expresa «yo me encargo» o «dejadme…». 我来介绍一下 = «Dejadme que os presente».'}
   - id: w.laizi
     use: say
     role: content
@@ -257,6 +258,7 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: 'Algo formal. Hablando, también: 我从西班牙来 wǒ cóng Xībānyá lái.'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: '自 es «uno mismo»: 来自 es venir de uno mismo, proceder. No es el zi átono de 儿子: es zì, con cuarto tono.', original: 'Carta para laizi que el "zi" no es como el de erzi u otras sino es zì como de hechoooo zì es uno mismo […] Entonces laizi es "venir uno mismo" es decir PROCEDER. PAM, PNEMOTECNIA.'}
   - id: w.wen
     use: say
     role: content
@@ -316,6 +318,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-10-19', text: 'Ves varias cosas y abres la boca 口 para preguntar: «¿cuál de esas 那 quieres?». La boca convierte «ese» en una pregunta, y el tono también cambia: 那 nà baja, 哪 nǎ baja y sube.', original: 'Mnemotecnia: imagina que ves varias cosas y usas tu boca (口) para preguntar: «¿CUÁL de esas (那) quieres?». Así recordarás que 口 + 那 = 哪, y que al añadir la boca conviertes «ese» en una pregunta: «¿cuál?». Recuerda también el cambio de tono: nà (4.º tono) → nǎ (3.º tono).'}
+      - {kind: linguistic, private: false, date: '2026-10-26', text: 'Si sabes decir «uno», cambia 一 por 哪 y deja lo demás: de 一天 sale 哪天; de 一个人, 哪个人; de 一本书, 哪本书. 你是哪国人？ es una expresión hecha, sin 个.', original: 'Ese es el truco más útil: si sabes decir «uno», sustituye yī por nǎ y conserva el resto. […] Nǎ guó rén es una construcción abreviada habitual que conviene memorizar.'}
   - id: w.guo
     use: say
     role: content
@@ -425,6 +428,7 @@ entries:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: '出 «salir» + 生 «nacer»: salir al mundo.'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: '出生 es salir a la vida; y lleva dos tonos altos y planos, como el golpe de gong del momento en que sales.', original: 'Chu = salir 出生 (chūshēng) = SALIR A MA VIDA (mnemotecnia) y ademss dos tonos altos porque sales s la vida en un momento como de gong de sonido alto sabes'}
   - id: w.shu.belong
     use: say
     role: content
@@ -435,6 +439,7 @@ entries:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: '我属马 «soy caballo»: el signo del año en que naciste. Se pregunta 你属什么？.'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Llevas dentro tu animal del zodiaco: 尸 es el cuerpo que lo envuelve, y dentro se ven la cabeza cuadrada y la cola del animal.', original: '属 (shǔ): «Llevo dentro mi animal del zodiaco». 尸 es el cuerpo que lo envuelve; dentro imaginas la cabeza cuadrada y la cola del animal.'}
   - id: w.cai.guess
     use: say
     role: content
@@ -454,6 +459,7 @@ entries:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Para dar tu opinión: 我觉得很好 «me parece bien». 你觉得怎么样？ «¿qué te parece?».'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Ves 见 algo bajo una cubierta 冖 y te saltan tres chispas ⺍ en la cabeza: «¡creo que sé qué es!». Para comprobarlo das un paso 彳 al amanecer 旦 y lo tanteas con la mano 寸: después de verlo y tocarlo, dices «me parece que…». Y juéde suena a «juzgar», opinar.', original: 'Para recordar 觉得 (juéde) […] imagina que ves 见 algo bajo una cubierta 冖 y te saltan tres chispas ⺍ en la cabeza […] Ademas juede suena a juzgar , opinar, sabes?'}
   - id: g.xiansheng-xuesheng
     kind: group
     basis: soundalike
@@ -588,6 +594,7 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: '我介绍一下 «os presento»: antes de decir quién es alguien o quién eres tú.'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: '介 parece una persona entre otras dos, y 绍 lleva el hilo 纟: presentar es unir a dos personas con un hilo.', original: 'Como mnemotecnia inventada: 介 parece una persona entre otras dos; 绍 tiene el «hilo» 纟. Presentar es conectar personas con un hilo. […] Como con un hulo, presentar.'}
   - id: w.meng
     use: say
     role: content

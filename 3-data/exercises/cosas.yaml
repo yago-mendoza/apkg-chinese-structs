@@ -1352,8 +1352,8 @@ exercises:
     type: contrast
     group: g.you-you-yao
     targets: [w.you.right]
-    skills: [listening, tones, discrimination]
-    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es yòu, «derecha»?'}
     answer: {hanzi: 右, pinyin: yòu, meaning: derecha}
     comments: []
   - id: x.contrast.shi.try
@@ -2300,8 +2300,8 @@ exercises:
     type: contrast
     group: g.nan-nan
     targets: [w.nan]
-    skills: [listening, tones, discrimination]
-    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es nán, «difícil»?'}
     answer: {hanzi: 难, pinyin: nán, meaning: difícil}
     comments: []
   - id: x.dictation.xizao
@@ -3167,4 +3167,144 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «El libro está en la mesa.»'}
     answer: {meaning: El libro está en la mesa.}
+    comments: []
+  - id: x.nuance.dei-de
+    added: '2026-10-26'
+    lang: es
+    type: nuance
+    targets: [w.dei, w.de.complement]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我得走了 y 你说得很好: ¿cómo suena 得 en cada una?'}
+    answer: {meaning: 'En 我得走了 suena děi: «tener que». En 说得很好 suena de, átono, y une el verbo con cómo sale.'}
+    comments: []
+  - id: x.cloze.youxie
+    added: '2026-10-26'
+    lang: es
+    type: cloze
+    sentence: s.youxie-ren-bu-he-cha
+    gap: w.youxie
+    targets: [w.youxie]
+    context: [w.ren, w.bu, w.he.drink, w.cha]
+    skills: [production, pinyin]
+    prompt: {text: '¿有些 o 一些? Completa en pinyin: «Hay gente que no toma té.»'}
+    answer: {typed: you3 xie1, hanzi: 有些, pinyin: yǒuxiē, meaning: 'algunos, hay quien'}
+    comments: []
+  - id: x.contrast.naxie
+    added: 2026-10-26
+    lang: es
+    type: contrast
+    group: g.naxie-naxie
+    targets: [w.naxie]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 那些, pinyin: nàxiē, meaning: 'esos, aquellos'}
+    comments: []
+  - id: x.dictation.youxie
+    added: 2026-10-26
+    lang: es
+    type: listen
+    targets: [w.youxie]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: you3 xie1, hanzi: 有些, pinyin: yǒuxiē, meaning: 'algunos, hay quien'}
+    comments: []
+  - id: x.read.youxie
+    added: 2026-10-26
+    lang: es
+    type: read
+    targets: [w.youxie]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 有些}
+    answer: {hanzi: 有些, pinyin: yǒuxiē, meaning: 'algunos, hay quien'}
+    comments: []
+  - id: x.contrast.naxie.which
+    added: 2026-10-26
+    lang: es
+    type: contrast
+    group: g.naxie-naxie
+    targets: [w.naxie.which]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 哪些, pinyin: nǎxiē, meaning: '¿cuáles?, ¿qué (cosas)?'}
+    comments: []
+  - id: x.dictation.naxie.which
+    added: 2026-10-26
+    lang: es
+    type: listen
+    targets: [w.naxie.which]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: na3 xie1, hanzi: 哪些, pinyin: nǎxiē, meaning: '¿cuáles?, ¿qué (cosas)?'}
+    comments: []
+  - id: x.produce.naxie.which
+    added: 2026-10-26
+    lang: es
+    type: produce
+    targets: [w.naxie.which]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¿cuáles?, ¿qué (cosas)?»? Escribe el pinyin.'}
+    answer: {typed: na3 xie1, hanzi: 哪些, pinyin: nǎxiē, meaning: '¿cuáles?, ¿qué (cosas)?'}
+    comments: []
+  - id: x.read.naxie.which
+    added: 2026-10-26
+    lang: es
+    type: read
+    targets: [w.naxie.which]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 哪些}
+    answer: {hanzi: 哪些, pinyin: nǎxiē, meaning: '¿cuáles?, ¿qué (cosas)?'}
+    comments: []
+  - id: x.produce.youxie-ren-bu-he-cha
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.youxie-ren-bu-he-cha
+    targets: [s.youxie-ren-bu-he-cha]
+    context: [w.youxie, w.ren, w.bu, w.he.drink, w.cha]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hay gente que no toma té.»'}
+    answer: {meaning: Hay gente que no toma té.}
+    comments: []
+  - id: x.produce.ni-xihuan-naxie
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.ni-xihuan-naxie
+    targets: [s.ni-xihuan-naxie]
+    context: [w.ni, w.xihuan, w.naxie.which]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuáles te gustan?»'}
+    answer: {meaning: '¿Cuáles te gustan?'}
+    comments: []
+  - id: x.produce.naxie-shi-wo-de
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.naxie-shi-wo-de
+    targets: [s.naxie-shi-wo-de]
+    context: [w.naxie, w.shi, w.wo, w.de]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Esos son míos.»'}
+    answer: {meaning: Esos son míos.}
+    comments: []
+  - id: x.produce.zhe-shi-wo-mai-de-shu
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.zhe-shi-wo-mai-de-shu
+    targets: [s.zhe-shi-wo-mai-de-shu]
+    context: [w.zhe, w.shi, w.wo, w.mai, w.de, w.shu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Este es el libro que compré.»'}
+    answer: {meaning: Este es el libro que compré.}
+    comments: []
+  - id: x.choice.zhege-zheli
+    added: '2026-10-26'
+    lang: es
+    type: speak
+    targets: [w.zhe]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. En la tienda, señalando: «Quiero este, aquel no.»', options: [我要这里，不要那里。, 我要这个，不要那个。]}
+    answer: {choice: b, hanzi: '我要这个，不要那个。', pinyin: 'wǒ yào zhège, bú yào nàge', meaning: '这个 y 那个 señalan cosas; 这里 y 那里, sitios.'}
+    accept_pinyin_mismatch: '个 átono y 不 delante de cuarto tono'
     comments: []

@@ -21,6 +21,7 @@ entries:
     comments:
       - {kind: sound, private: false, date: '2026-09-29', text: Suena un poco a «rua»., original: ri suena (rua) un poco solo un poco sabes}
       - {kind: sound, private: false, date: '2026-10-08', text: 'Suena casi «reoa», muy rápido.', original: 'se proncuca ''reoa'' pero rapido'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Arriba, una mano 扌 sujeta una bolita 丸 sobre el fuego 灬: ¡quema! No se confunde con 日 rì «sol» ni con 丸 wán «bolita».', original: 'Arriba ves 执, que puedes separar visualmente en 扌 «mano» + 丸 «bolita». Úsalo para imaginar una mano sujetando una bolita sobre el fuego: ¡quema! […] Y separa bien estos tres: 热 rè = calor; 日 rì = sol/día; 丸 wán = bolita/píldora.'}
   - id: w.leng
     use: say
     role: content

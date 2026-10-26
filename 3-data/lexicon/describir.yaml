@@ -106,6 +106,7 @@ entries:
     comments:
       - {kind: sound, private: false, date: '2026-09-27', text: El acento cae en cōng; ming va átono y corto., original: cong ming el tonic oes cong no ming}
       - {kind: mnemonic, private: false, date: '2026-09-27', text: '聪 lleva 耳 «oreja»: tener el oído fino. Con 明 «claro»: listo.', original: 聪 cōng = oído fino. 聪明 = oído fino + claridad}
+      - {kind: character, private: false, date: '2026-10-26', text: 'En 聪 cōng, 耳 «oreja» da el sentido y 总 zǒng, el de 总是, el sonido.'}
   - id: w.ben
     use: hear
     role: content
@@ -447,6 +448,7 @@ entries:
     pos: particula
     pos_reason: Aquí es la partícula átona de 说得很好, no 得 děi «tener que».
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    accept_cards: 'pasa el tope por los contrastes y matices que pidió YAGO en sus notas del review 013 (lote 014)'
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Verbo + 得 + cómo: 你说得很好 «hablas muy bien»; 你来得很早 «has llegado temprano». Valora cómo sale la acción. «你很早» no es la forma de decir que alguien llegó temprano.'}
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Se escribe distinto que 的 (mi libro: 我的书) aunque suene igual: 得 va detrás de un verbo; 的, delante de un sustantivo.'}
@@ -473,6 +475,11 @@ entries:
       - {ref: w.zhen, cue: 'con emoción sincera: 你真漂亮！'}
       - {ref: w.feichang, cue: 'más grado, también por escrito: 非常好'}
       - {ref: w.tai, cue: 'exclama, con 了 al final: 太好了！'}
+    scale:
+      - {ref: w.youdian, label: 'un poco (y no gusta)'}
+      - {ref: w.hen, label: 'muy, o solo une'}
+      - {ref: w.feichang, label: 'muchísimo'}
+      - {ref: w.tai, label: 'demasiado'}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments: []
   - id: g.de-de
@@ -697,6 +704,8 @@ entries:
     source: {origin: class, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-23', text: 'Delante del verbo: 我一定来 «vengo seguro». 你一定要来！ «¡tienes que venir sin falta!».'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Bajo un techo 宀, todo está fijo en su sitio: 一定, «seguro, sin falta».', original: 'Para recordarlo: «Bajo el techo, todo está en su sitio» → 定 (dìng): fijo, establecido, seguro.'}
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '不一定 «no necesariamente, depende»: la respuesta prudente. 他一定很累 «seguro que está cansado».'}
   - id: g.duo-dou
     kind: group
     basis: soundalike
@@ -746,3 +755,13 @@ entries:
     meaning: {es: 'reír, sonreír', en: 'to laugh, to smile'}
     source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
     comments: []
+  - id: w.geng
+    use: say
+    role: function
+    kind: word
+    hanzi: 更
+    pinyin: gèng
+    meaning: {es: 'más (todavía)', en: 'even more'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '更 + adjetivo o verbo: «aún más». 更多 «más cantidad»: 我想学习更多知识 «quiero aprender más cosas».'}

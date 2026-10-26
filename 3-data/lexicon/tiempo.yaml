@@ -271,6 +271,7 @@ entries:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: '…的时候 es «cuando…»: va detrás de lo que pasa. 你有时间的时候 «cuando tengas tiempo».'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: '候: una persona con una flecha en el carcaj, atenta, esperando el momento de actuar.', original: 'Y para el hanzi segundo : 候: una persona con una flecha en el carcaj, atenta y esperando el momento de actuar.'}
   - id: w.xian.first
     use: say
     role: content
@@ -293,6 +294,7 @@ entries:
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-09', text: 'Palabra a palabra: 什么 «qué» + 时候 «momento». Va donde iría la respuesta: 你什么时候来？ «¿cuándo vienes?».'}
+      - {kind: linguistic, private: false, date: '2026-10-26', text: 'Palabra a palabra: 什么 «qué» + 时候 «momento». 你什么时候来？ es «tú, qué momento, vienes»: ¿cuándo vienes?', original: 'En ma card haz hincapie de esto: Sí. 你什么时候来？ Literalmente: «Tú · qué momento · vienes».'}
     accept_pinyin_mismatch: '么 y 候 van en tono neutro: shénme shíhou'
   - id: c.shi.time
     use: read
@@ -306,6 +308,7 @@ entries:
     comments:
       - {kind: mnemonic, private: false, date: '2026-10-11', text: 'En 时 se puede ver un carnero cósmico: el que lleva el tiempo.', original: 'En shí veo mas un carnero en el hanzi, carnero, tiempo, carnero cosmico jajaja bjeno tiempo sin mas mientras que jiu es uns grulla, mucho tiempo'}
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Al final de una palabra, 时 es «el momento» o «la hora»: 小时 «una hora». Detrás de 有, «hay veces»: 有时候 «a veces».'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: '日 «sol» + 寸 «medida»: antes se medía el tiempo mirando el sol; medir el sol es medir el tiempo.', original: 'Mnemotencia para la particula shí de tiempo :时 (shí): 日 (sol) + 寸 (medida). Antiguamente se medía el tiempo observando el sol: medir el sol es medir el tiempo.'}
   - id: c.jin.now
     use: read
     use_reason: 'ligado: se aprende dentro de 今天 y 今年'
@@ -385,6 +388,8 @@ entries:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: '现在几点？ «¿qué hora es?». Va delante del verbo o al principio: 你现在忙吗？ «¿estás ocupado ahora?».'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: '现 es lo que está a la vista: algo aparece y se hace presente. Es el «ahora» de verdad, este momento; 今 es el periodo en que estás (今天, 今年).', original: 'JIN es lo que deñsla de entre algos lo actusl periodo actusl un poco como este" El xiàn es el verdadero AHORA y es unico […] Para recordarlo, conecta «presente» con «estar a la vista»: algo aparece y se hace presente.'}
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '现 xiàn no es 先 xiān «primero»: suenan parecido, pero cambian el tono y el carácter. 现在 no lleva ningún «primero».'}
   - id: w.shangci
     use: say
     role: content
@@ -448,6 +453,7 @@ entries:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Palabra a palabra: 多 «cuánto» + 久 «mucho tiempo». Pregunta lo que dura: 你等了多久？ «¿cuánto tiempo has esperado?». En qué momento es 什么时候.'}
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '久 es la duración, «mucho tiempo»: 好久不见, 你等了多久？. El tiempo del reloj es 时间: 你有时间吗？.', original: '久 means “a long time” or “for a long time.” It describes duration. […] Compare 你有时间吗？—“Do you have time?”—with 你等了多久？'}
   - id: w.youshihou
     use: say
     role: content
@@ -633,6 +639,8 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 见 «ver» + 面 «cara»: verse las caras. 我们明天见面吧 «quedamos mañana».'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: 'En 面 se ve una cara, clavada: 见面 es «vernos las caras».', original: 'ES VERDAD VEO UNA CARA CLAVADA'}
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '见面 es el encuentro en persona, no organizarlo: para quedar se usa 约 yuē [HSK 3]. Y conocer a alguien es 认识: puedes 认识 a alguien por internet sin haber 见面 todavía. 面 es «cara» solo dentro de palabras; la cara, al hablar, es 脸 liǎn.', original: '见面 (jiànmiàn) significa verse con alguien, encontrarse en persona. Es el encuentro, no organizarlo. […] Para concertar el encuentro, se usa 约 (yuē). Y para conocer a alguien por primera vez, 认识 (rènshi) […] Cara se dice 脸 (liǎn) en el uso cotidiano.'}
   - id: w.chang.often
     use: say
     role: function
@@ -654,4 +662,65 @@ entries:
       - {ref: w.chang.often, cue: 'sube: 我常去'}
       - {ref: w.chang.sing, cue: 'cae'}
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-23'}
+    comments: []
+  - id: w.zongshi
+    use: say
+    role: function
+    kind: word
+    hanzi: 总是
+    pinyin: zǒngshì
+    meaning: {es: siempre, en: always}
+    source: {origin: attic, batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19', rescued: 014-2026-10-26-duplicados-diagramas-y-recuadros}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-19', text: '我总是喝茶 «siempre tomo té»: más que 常常 «a menudo». Va delante del verbo o del adjetivo: 他总是很忙.'}
+  - id: g.frequency
+    kind: group
+    basis: set
+    title: 'Cuántas veces: 有时候, 常常 y 总是'
+    explanation: 'Van delante del verbo, de menos a más. Para «no a menudo», 不常.'
+    members:
+      - {ref: w.youshihou, cue: '有 «hay» + 时候: hay veces'}
+      - {ref: w.changchang, cue: '常 repetido; 常 solo dice lo mismo'}
+      - {ref: w.zongshi, cue: 'el máximo, sin excepción'}
+    scale:
+      - {ref: w.youshihou, label: 'a veces'}
+      - {ref: w.changchang, label: 'a menudo'}
+      - {ref: w.zongshi, label: 'siempre'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments: []
+  - id: g.time-axis
+    kind: group
+    basis: set
+    title: '以前, 现在 y 以后: antes, ahora y después'
+    explanation: '以前 y 以后 van también detrás de una acción: 吃饭以前 «antes de comer», 吃饭以后 «después de comer».'
+    members:
+      - {ref: w.yiqian, cue: '前 «delante»: lo que ya quedó atrás'}
+      - {ref: w.xianzai, cue: '现 «a la vista»: este momento'}
+      - {ref: w.yihou, cue: '后 «detrás»: lo que viene'}
+    aspect:
+      - {ref: w.yiqian, from: -3, to: -0.5, label: 'antes'}
+      - {ref: w.xianzai, from: 0, to: 0, label: 'ahora'}
+      - {ref: w.yihou, from: 0.5, to: 3, label: 'después'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments: []
+  - id: g.aspect
+    kind: group
+    basis: set
+    title: 'Dónde cae la acción: antes, ahora o a punto'
+    explanation: 'Se mira desde el momento en que hablas: lo que ya pasó, lo que está pasando y lo que está a punto de pasar o aún no ha pasado.'
+    members:
+      - {ref: st.v-guo, cue: 'alguna vez: la experiencia'}
+      - {ref: w.yijing, cue: 'ya, antes de lo que se esperaba'}
+      - {ref: st.v-le, cue: 'ya hecho, o un cambio'}
+      - {ref: st.zai-v, cue: 'en marcha'}
+      - {ref: w.kuaiyao, cue: 'inminente, con 了 al final'}
+      - {ref: st.hai-mei-v, cue: 'aún no, sin 了'}
+    aspect:
+      - {ref: st.v-guo, from: -3, to: -1, label: 'alguna vez, antes'}
+      - {ref: w.yijing, from: -1.5, to: 0, label: 'ya, antes de ahora'}
+      - {ref: st.v-le, from: -1, to: 0, label: 'ya pasó o ya cambió'}
+      - {ref: st.zai-v, from: -0.5, to: 0.5, label: 'en curso, ahora'}
+      - {ref: w.kuaiyao, from: 0.5, to: 0.5, label: 'a punto de pasar'}
+      - {ref: st.hai-mei-v, from: 0.5, to: 2, label: 'todavía no; se espera'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
     comments: []

@@ -34,6 +34,7 @@ import json
 import os
 import re
 import sys
+import time
 import unicodedata
 import urllib.request
 from pathlib import Path
@@ -819,6 +820,14 @@ def cmd_lookup(query):
     entries, sentences, exercises = load()
     sby = {s["id"]: s for s in sentences}
     eby = {e["id"]: e for e in entries}
+    # El código de una tarjeta (#K7Q2M, el de su cabecera): qué ejercicio es y qué pregunta.
+    code = query.strip().lstrip("#").upper()
+    by_code = {card_code(ex["id"]): ex for ex in exercises}
+    if len(code) == CODE_LEN and code in by_code:
+        ex = by_code[code]
+        print(f"#{code} → [{ex['id']}] {ex['type']} · tema: {ex.get('theme')} · objetivos: {', '.join(ex.get('targets', []))}")
+        print(f"  consigna: {(ex.get('prompt') or {}).get('text', '')}")
+        return 0
     q = unicodedata.normalize("NFC", query.strip().lower())
     q_marked = compact(numeric_to_marked(q)) if re.search(r"[a-z][1-5]", q) else compact(q)
     q_plain = compact(strip_tones(q_marked))
@@ -1551,7 +1560,8 @@ def cmd_notebook():
             out.append("")
         for g in (e for e in items if e.get("kind") == "group"):
             out += [f"## {g['title']}", "", g.get("explanation", ""), ""]
-            out += [f"- {eby[m['ref']]['hanzi']} {eby[m['ref']].get('pinyin', '')} · {m.get('cue', '')}"
+            # Un miembro puede ser una estructura (el eje del tiempo: 过, 了…): se nombra por su plantilla.
+            out += [f"- {diagram_name(eby[m['ref']])} {eby[m['ref']].get('pinyin', '')} · {m.get('cue', '')}"
                     for m in g.get("members", []) if m["ref"] in eby]
             out.append("")
         structs = [e for e in items if e.get("kind") == "structure"]
@@ -1601,6 +1611,15 @@ def nuance_pieces(text):
         k = next((i for i, ch in enumerate(rest) if ch.isalpha()), 0)
         return pieces, rest[:k] + rest[k:k + 1].upper() + rest[k + 1:]
     return pieces, text
+
+
+def nuance_audio_pieces(ex, eby):
+    """Los trozos de la consigna de un matiz que suenan delante: todos menos los calcos erróneos que la tarjeta
+    compara (`prompt.no_audio`: 我是高兴 no debe sonar como si fuera chino) y los componentes (亻, 讠), que la voz
+    sintética no sabe leer."""
+    p = ex.get("prompt") or {}
+    comps = {e.get("hanzi") for e in eby.values() if e.get("kind") == "component"}
+    return [x for x in nuance_pieces(p.get("text"))[0] if x not in (p.get("no_audio") or []) and x not in comps]
 
 
 def sentence_by_text(text, sby):
@@ -1692,6 +1711,8 @@ def required_audio(entries, sentences, exercises):
             texts.add(it["hanzi"])
         if (ex.get("prompt") or {}).get("said"):   # lo que te dicen en una situación, en su bocadillo
             texts.add(ex["prompt"]["said"])
+        if ex.get("type") == "nuance":             # lo que compara un matiz suena delante, trozo a trozo
+            texts.update(nuance_audio_pieces(ex, eby))
     for s in sentences:                   # toda frase puede salir como ejemplo en cualquier tarjeta
         texts.add(sentence_text(s))
     for e in entries:
@@ -2051,6 +2072,25 @@ def quality_rules(entries, sentences, exercises, eby, sby, errors, warnings):
     grammar_rules(entries, sentences, eby, sby, errors, warnings)
     standard_rules(entries, sentences, eby, errors, warnings)
     connection_rules(entries, sentences, eby, sby, errors, warnings)
+    # Una pregunta, una respuesta (review 013): dos tarjetas que se ven igual al preguntar son la misma para el que
+    # aprende; un contraste de oído con una opción que suena igual que la respuesta no se puede acertar.
+    for ids in duplicate_prompts(exercises, eby, sby):
+        warnings.append(f"misma pregunta en {', '.join(ids)}: fusiona, distingue el anverso o pon same_prompt_ok")
+    for xid, hz, same in homophone_contrasts(exercises, eby):
+        errors.append(f"{xid}: contraste de oído y {'、'.join(same)} suena igual que {hz}: no se puede acertar "
+                      "oyéndolo; pregúntalo por el significado, sin audio (como 他 / 她 / 它)")
+    for code, ids in code_collisions(exercises).items():
+        errors.append(f"código de tarjeta #{code} repetido en {', '.join(ids)}: cambia uno de los IDs nuevos")
+    for ex in exercises:
+        silent = (ex.get("prompt") or {}).get("no_audio") or []
+        pieces = nuance_pieces((ex.get("prompt") or {}).get("text"))[0] if ex.get("type") == "nuance" else []
+        for x in silent:
+            if x not in pieces:
+                errors.append(f"{ex['id']}: no_audio «{x}» no es uno de los trozos en chino de la consigna del matiz")
+        acc = (ex.get("answer") or {}).get("accept")
+        if acc is not None and not ((ex.get("answer") or {}).get("typed") and isinstance(acc, list) and acc
+                                    and all(isinstance(a, str) and a.strip() for a in acc)):
+            errors.append(f"{ex['id']}: answer.accept es una lista de otras respuestas tecleadas y necesita typed")
     levels = hsk_levels()
     known_hanzi = {e.get("hanzi") for e in entries if e.get("hanzi")}
     for e in entries:
@@ -2173,6 +2213,79 @@ def split_values(obj, owner="", out=None):
     return out
 
 
+def diagram_rules(entries):
+    """Errores de los diagramas nuevos de un grupo: la escala (`scale: [{ref, label}]`, al menos dos y sin repetir) y
+    el eje de tiempo (`aspect: [{ref, from, to, label}]`, de ASPECT_MIN a ASPECT_MAX y from <= to); toda referencia,
+    a una entrada del mazo."""
+    ids, errors = {e.get("id") for e in entries}, []
+    num = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)
+    for g in entries:
+        sc = g.get("scale") or []
+        if sc and (len(sc) < 2 or len({r.get("ref") for r in sc}) != len(sc)):
+            errors.append(f"{g['id']}: scale necesita al menos dos elementos distintos, de menos a más")
+        for r in sc:
+            if r.get("ref") not in ids:
+                errors.append(f"{g['id']}: scale con una referencia rota «{r.get('ref')}»")
+        for r in g.get("aspect") or []:
+            if r.get("ref") not in ids:
+                errors.append(f"{g['id']}: aspect con una referencia rota «{r.get('ref')}»")
+            if not (num(r.get("from")) and num(r.get("to")) and ASPECT_MIN <= r["from"] <= r["to"] <= ASPECT_MAX):
+                errors.append(f"{g['id']}: aspect de {r.get('ref')}: from y to van de {ASPECT_MIN} a {ASPECT_MAX} "
+                              "(0 es «ahora») y from <= to")
+    return errors
+
+
+def prompt_key(ex, eby, sby):
+    """Lo que se ve al preguntar, para comparar tarjetas: la consigna sin la cabecera, el anverso y el audio de la
+    pregunta (por su texto chino). Dos tarjetas con la misma clave son la misma pregunta para el que aprende."""
+    f = card_fields(ex, eby, sby, {}, set())
+    front = re.sub(r"<[^>]+>", " ", f["front"])
+    spoken = None
+    if (ex.get("prompt") or {}).get("audio") or ex.get("pair"):
+        spoken = answer_hanzi(ex, sby) if not ex.get("pair") else "/".join(it["hanzi"] for it in ex["pair"])
+    if (ex.get("prompt") or {}).get("said"):
+        spoken = (spoken or "") + "|" + ex["prompt"]["said"]
+    norm = lambda s: re.sub(r"\s+", " ", html.unescape(s or "")).strip()
+    return (norm(re.sub(r"<[^>]+>", " ", f["task"])), norm(front), spoken)
+
+
+def duplicate_prompts(exercises, eby, sby):
+    """Grupos de ejercicios que hacen la misma pregunta (review 013: «una pregunta, una respuesta»): misma consigna,
+    mismo anverso y mismo audio delante. Una pareja legítima lo dice con `same_prompt_ok` (motivo) en cada ejercicio."""
+    by = {}
+    for ex in exercises:
+        if ex.get("same_prompt_ok"):
+            continue
+        by.setdefault(prompt_key(ex, eby, sby), []).append(ex["id"])
+    return [ids for ids in by.values() if len(ids) > 1]
+
+
+def homophone_contrasts(exercises, eby):
+    """Contrastes que se oyen (con audio delante) en los que otra opción suena exactamente igual que la respuesta
+    (属 / 鼠, los dos shǔ): no se pueden acertar de oído. [(id, respuesta, opciones que suenan igual)]."""
+    out = []
+    for ex in exercises:
+        g = eby.get(ex.get("group"))
+        # Solo los que suenan delante: los que preguntan por el significado (¿cuál es zài «en»?) se aciertan leyendo.
+        if ex.get("type") != "contrast" or not g or not (ex.get("prompt") or {}).get("audio"):
+            continue
+        ans = ex.get("targets", [None])[0]
+        py = compact((eby.get(ans) or {}).get("pinyin") or "")
+        same = [eby[m["ref"]]["hanzi"] for m in g.get("members", []) if m["ref"] != ans and m["ref"] in eby
+                and compact(eby[m["ref"]].get("pinyin") or "") == py and py]
+        if same:
+            out.append((ex["id"], (eby.get(ans) or {}).get("hanzi"), same))
+    return out
+
+
+def code_collisions(exercises):
+    """Códigos de tarjeta (`card_code`) que comparten dos ejercicios."""
+    seen = {}
+    for ex in exercises:
+        seen.setdefault(card_code(ex["id"]), []).append(ex["id"])
+    return {c: ids for c, ids in seen.items() if len(ids) > 1}
+
+
 def validate(entries, sentences, exercises, require_audio=True):
     errors, warnings = [], []
     for g in entries:
@@ -2182,6 +2295,7 @@ def validate(entries, sentences, exercises, require_audio=True):
                 errors.append(f"{g['id']}: timeline de {t.get('ref')}: from y to son horas, de 0 a 24, y from < to")
             if t.get("ref") not in {e.get("id") for e in entries}:
                 errors.append(f"{g['id']}: timeline con una referencia rota «{t.get('ref')}»")
+    errors += diagram_rules(entries)
     for owner, k in split_values(entries + sentences + exercises):
         errors.append(f"{owner}: «{k}» quedó como clave vacía: un texto con coma dentro de {{…}} necesita comillas")
     # Un ID repetido va primero y solo (retrospectiva del lote 004): lo demás que diría check sería ruido derivado.
@@ -2568,6 +2682,7 @@ CSS = """
 .lv-5 { --lv: #8fa972; } .lv-6 { --lv: #5f9590; } .lv-7 { --lv: #557aa3; }
 .task { font-size: 17px; line-height: 1.45; max-width: 26em; margin: 0 auto 14px; color: var(--muted); text-align: left; }
 .task .meta { font-size: 11px; }
+.meta .code { letter-spacing: .06em; text-transform: none; opacity: .8; }
 .front { margin: 6px 0; }
 .hanzi { font-size: 54px; line-height: 1.2; }
 .said { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 8px 0; }
@@ -2616,9 +2731,30 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .note--example { text-align: center; }
 .note--mnemonic { border: 1px dashed #c98a12; background: rgba(233,168,40,.10); }
 .timeline { margin: 8px 0 2px; }
-.tl-row { position: relative; height: 22px; }
+.tl-row { position: relative; height: 42px; }
 .tl-bar { position: absolute; top: 2px; height: 18px; line-height: 18px; border-radius: 9px; font-size: 13px; text-align: center; background: rgba(127,127,127,.18); white-space: nowrap; overflow: hidden; }
 .tl-bar.is-target { background: rgba(179,48,29,.25); font-weight: bold; }
+.tl-label { position: absolute; top: 21px; white-space: nowrap; font-size: 13px; }
+.tl-row.is-target .tl-label { font-weight: 700; }
+/* Diagramas (review 013): nombre de cada elemento debajo de su marca, hanzi y pinyin con el color de su tono. */
+.dg-hz { font-size: 16px; } .dg-py { font-size: 13px; } .dg-note { font-size: 12px; color: var(--muted); }
+.scale { position: relative; height: 92px; margin: 10px 26px 4px; }
+.sc-axis { position: absolute; left: 0; right: 0; top: 10px; border-top: 2px solid var(--line); }
+.sc-axis::after { content: "▶"; position: absolute; right: -14px; top: -10px; font-size: 13px; color: var(--muted); }
+.sc-pt { position: absolute; top: 4px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center;
+         text-align: center; width: 5.2em; line-height: 1.25; }
+.sc-dot { width: 12px; height: 12px; border-radius: 50%; background: rgba(127,127,127,.45); margin-bottom: 4px; }
+.sc-pt.is-target .sc-dot { background: #b3301d; } .sc-pt.is-target .dg-hz { font-weight: 700; }
+.aspect { margin: 10px 0 2px; }
+.as-row { position: relative; height: 16px; }
+.as-now { position: absolute; left: 50%; top: -2px; bottom: -2px; border-left: 2px dashed rgba(179,48,29,.55); }
+.as-bar { position: absolute; top: 4px; height: 8px; border-radius: 4px; background: rgba(127,127,127,.35); }
+.as-dot { position: absolute; top: 2px; width: 12px; height: 12px; margin-left: -6px; border-radius: 50%; background: rgba(127,127,127,.5); }
+.as-bar.is-target, .as-dot.is-target { background: #b3301d; }
+.as-label { font-size: 13px; margin: 0 0 6px; } .as-label.is-target .dg-hz { font-weight: 700; }
+.as-ticks { position: relative; height: 16px; font-size: 11px; color: var(--muted); border-top: 1px solid var(--line); margin-top: 2px; }
+.as-ticks span { position: absolute; transform: translateX(-50%); } .as-ticks span:first-child { transform: none; }
+.as-ticks span:last-child { transform: translateX(-100%); }
 .tl-ticks { position: relative; height: 14px; font-size: 10px; opacity: .7; }
 .tl-ticks span { position: absolute; transform: translateX(-50%); }
 .nuance-words { margin-top: 10px; text-align: left; }
@@ -2631,6 +2767,24 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .note--usage h4::before { content: "🗣️ "; }
 .note--connection { border-left: 4px solid #2a9d8f; background: rgba(42,157,143,.09); }
 .note--teacher { border-left: 3px solid var(--lv); }
+/* Uso y significado, con aspecto de nota: papel claro, borde de color e icono (review 013). El apunte, más discreto. */
+.note--linguistic { border-left: 4px solid #b8892b; background: rgba(250,236,190,.40); }
+.nightMode .note--linguistic, .night_mode .note--linguistic { background: rgba(184,137,43,.13); }
+.note--linguistic h4::before { content: "📝 "; }
+.note--note { border-style: dotted; }
+.note--note h4::before { content: "✎ "; }
+/* Otras formas de decirlo y las familias (series, patrones, diagramas): otro aspecto, más abajo; lo que solo se
+   parece a la vista o al oído, lo último y más apagado (review 013). */
+.note--alts { border-left: 4px solid #2f7d6d; background: rgba(47,125,109,.08); }
+.note--alts h4::before { content: "🔁 "; }
+.note--alts .example { text-align: center; }
+.note--family { border-left: 4px solid #4e79a7; background: rgba(78,121,167,.07); }
+.note--family h4::before { content: "🧭 "; }
+.note--family .vs-row, .note--confusable .vs-row { padding: 5px 8px; margin: 0 -8px; border-radius: 8px; }
+.note--family .vs-row + .vs-row, .note--confusable .vs-row + .vs-row { border-top: 1px solid var(--line); }
+.note--family .is-target.vs-row, .note--confusable .is-target.vs-row { background: rgba(179,48,29,.13); }
+.note--confusable { opacity: .92; border-style: dashed; }
+.note--confusable h4::before { content: "👀 "; }
 .example + .example { margin-top: 14px; }
 .option { margin: 10px 0; }
 .option .hanzi.small, .hanzi.small { font-size: 32px; }
@@ -2728,9 +2882,10 @@ setTimeout(function () {
   var out = document.getElementById('acs-result'); if (!out) return;
   var typed = null; try { typed = sessionStorage.getItem('acs-typed'); } catch (e) {}
   if (typed === null || typed.trim() === '') return;
+  var alts = text('acs-exp-alt') ? text('acs-exp-alt').split('|') : [];
   var ok = /[\\u3400-\\u9fff]/.test(typed)
     ? typed.replace(PUNCT, '') === text('acs-exp-hz').replace(PUNCT, '') && text('acs-exp-hz') !== ''
-    : norm(typed) === norm(text('acs-exp-py') || text('acs-expected'));
+    : [text('acs-exp-py') || text('acs-expected')].concat(alts).some(function (a) { return norm(typed) === norm(a); });
   out.className = ok ? 'acs-ok' : 'acs-bad';
   out.textContent = (ok ? '✓ ' : '✗ ') + typed;
 }, 0);
@@ -2816,20 +2971,88 @@ def cue_repeats(cue, entry):
     return bool(py) and has(py) or len(first) > 2 and has(first)       # «no» es demasiado corto para contar
 
 
+CONFUSABLE_BASES = ("visual", "homophone", "soundalike")   # grupos de lo que solo se parece: su recuadro, el último
+DIAGRAM_KINDS = ("timeline", "scale", "aspect")             # diagramas de un grupo: franja del día, escala, eje de tiempo
+ASPECT_MIN, ASPECT_MAX = -3, 3                              # eje de tiempo: 0 es el momento en que se habla
+
+
+def diagram_name(e):
+    """Cómo se nombra una entrada en un diagrama: su hanzi, o la plantilla si es una estructura (要…了)."""
+    return e.get("hanzi") or e.get("pattern") or e.get("title") or e.get("id")
+
+
+def diagram_label(e, extra=None):
+    """El nombre de cada elemento debajo de su marca (review 013: «debajo de cada barra, su nombre»): hanzi y pinyin,
+    y la etiqueta propia del diagrama si la hay (50 g, «a punto de pasar»)."""
+    py = e.get("pinyin") or ""
+    return (f'<span class="dg-hz">{esc(diagram_name(e))}</span>' + (f' <span class="dg-py">{esc(py)}</span>' if py else "")
+            + (f' <span class="dg-note">{esc(extra)}</span>' if extra else ""))
+
+
+def diagram_refs(g):
+    """Las entradas que dibuja alguno de los diagramas de un grupo."""
+    return {r.get("ref") for k in DIAGRAM_KINDS for r in g.get(k) or []}
+
+
+def diagrams_html(g, eby, targets=()):
+    """Todos los diagramas de un grupo, en orden: franja del día, escala y eje de tiempo."""
+    return timeline_html(g, eby, targets) + scale_html(g, eby, targets) + aspect_html(g, eby, targets)
+
+
 def timeline_html(g, eby, targets=()):
     """La franja horaria de un grupo (`timeline: [{ref, from, to}]`, en horas): una barra por palabra, colocada entre
-    las 5 y las 24, con la que se pregunta resaltada. Se ve de un vistazo dónde empieza y acaba cada parte del día."""
+    las 5 y las 24, con la que se pregunta resaltada y su nombre debajo. Se ve de un vistazo dónde empieza y acaba
+    cada parte del día."""
     rows = g.get("timeline") or []
     if not rows:
         return ""
     start, end = 5, 24
     pct = lambda h: round(100 * (max(start, min(end, h)) - start) / (end - start), 1)
     bars = "".join(
-        f'<div class="tl-row"><span class="tl-bar{" is-target" if t["ref"] in targets else ""}" '
+        f'<div class="tl-row{" is-target" if t["ref"] in targets else ""}"><span class="tl-bar{" is-target" if t["ref"] in targets else ""}" '
         f'style="left:{pct(t["from"])}%;width:{pct(t["to"]) - pct(t["from"])}%">'
-        f'{esc(eby[t["ref"]]["hanzi"])}</span></div>' for t in rows if t["ref"] in eby)
+        f'{esc(eby[t["ref"]]["hanzi"])}</span>'
+        f'<span class="tl-label" style="left:{min(pct(t["from"]), 62)}%">{diagram_label(eby[t["ref"]])}</span></div>'
+        for t in rows if t["ref"] in eby)
     ticks = "".join(f'<span style="left:{pct(h)}%">{h}</span>' for h in (6, 9, 12, 14, 18, 24))
     return f'<div class="timeline">{bars}<div class="tl-ticks">{ticks}</div></div>'
+
+
+def scale_html(g, eby, targets=()):
+    """Una escala de menos a más (`scale: [{ref, label}]`, en orden): pesos (克 → 两 → 斤 → 公斤), intensidad
+    (有点 → 很 → 非常 → 太), frecuencia… Un punto por elemento sobre una flecha, a la misma distancia, con la que se
+    pregunta resaltada y debajo su nombre y su etiqueta (50 g)."""
+    rows = [r for r in g.get("scale") or [] if r.get("ref") in eby]
+    if len(rows) < 2:
+        return ""
+    n = len(rows)
+    pts = "".join(
+        f'<div class="sc-pt{" is-target" if r["ref"] in targets else ""}" style="left:{round(100 * i / (n - 1), 1)}%">'
+        f'<span class="sc-dot"></span>{diagram_label(eby[r["ref"]], r.get("label"))}</div>'
+        for i, r in enumerate(rows))
+    return f'<div class="scale"><div class="sc-axis"></div>{pts}</div>'
+
+
+def aspect_html(g, eby, targets=()):
+    """El eje del tiempo (`aspect: [{ref, from, to, label}]`, de -3 a 3; 0 es el momento en que se habla): dónde cae
+    la acción respecto a «ahora». Una fila por elemento: una barra (o un punto, si from == to) y debajo su nombre y
+    qué dice (要…了 «a punto de pasar»; 过 «alguna vez, antes»). La que se pregunta, resaltada."""
+    rows = [r for r in g.get("aspect") or [] if r.get("ref") in eby]
+    if not rows:
+        return ""
+    span = ASPECT_MAX - ASPECT_MIN
+    pct = lambda v: round(100 * (max(ASPECT_MIN, min(ASPECT_MAX, v)) - ASPECT_MIN) / span, 1)
+    out = ""
+    for r in rows:
+        a, b = pct(r["from"]), pct(r["to"])
+        tgt = " is-target" if r["ref"] in targets else ""
+        mark = (f'<span class="as-dot{tgt}" style="left:{a}%"></span>' if a == b
+                else f'<span class="as-bar{tgt}" style="left:{a}%;width:{round(b - a, 1)}%"></span>')
+        out += (f'<div class="as-row{tgt}"><span class="as-now"></span>{mark}</div>'
+                f'<div class="as-label{tgt}">{diagram_label(eby[r["ref"]], r.get("label"))}</div>')
+    ticks = ('<div class="as-ticks"><span style="left:0%">antes</span><span style="left:50%">ahora</span>'
+             '<span style="left:100%">después</span></div>')
+    return f'<div class="aspect">{out}{ticks}</div>'
 
 
 def covered_groups_dropped(groups):
@@ -2921,8 +3144,10 @@ def card_fields(ex, eby, sby, manifest, media_files):
         # consigna queda la pregunta.
         pieces, task = nuance_pieces(task)
         if pieces:
+            # Cada trozo con su audio delante, no solo detrás (review 013: «el audio de cada frase en el enunciado»).
+            voiced = nuance_audio_pieces(ex, eby)
             front = stack_html([f'<div class="hanzi small">{esc(p)}</div><div class="pinyin">{esc(chinese_pinyin(p, eby, sby))}</div>'
-                                for p in pieces])
+                                + (sound(p, manifest, media_files) if p in voiced else "") for p in pieces])
     said = prompt.get("said")
     if said:
         # Lo que te dicen, en un bocadillo, grande y con su pinyin; debajo, tu turno (review 012).
@@ -3011,16 +3236,18 @@ def card_fields(ex, eby, sby, manifest, media_files):
         n = CHOICE_LETTERS.index(ans["choice"])
         if n < len(prompt["options"]):
             back = f'<div class="choice-ok">{ans["choice"]}) {esc(prompt["options"][n])}</div>' + back
-    # Otras formas igual de buenas de decirlo (我们是朋友 / 我和他是朋友): se dan por buenas al puntuarse.
-    for sid in ex.get("also", []):
-        if sid in sby:
-            back += (f'<div class="example also">También vale: {render_sentence(sby[sid])}'
-                     f'<div>{esc(sby[sid]["translation"].get(lang))}</div>{sound(sentence_text(sby[sid]), manifest, media_files)}</div>')
+    # Otras formas igual de buenas de decirlo (我们是朋友 / 我和他是朋友) se dan por buenas al puntuarse; van en su
+    # propio recuadro, más abajo y con otro aspecto que los ejemplos (review 013).
+    alts = [sid for sid in ex.get("also", []) if sid in sby]
     # En lectura/producción el audio va tras revelar; en escucha ya sonó en el anverso.
     answer_audio = sound(spoken, manifest, media_files) if spoken and not prompt.get("audio") else ""
 
     notes = []
-    add = lambda rank, html_note: notes.append((rank, len(notes), html_note))
+    add = lambda rank, html_note, kind=None: notes.append((rank, len(notes), html_note, kind))
+    if alts:
+        add(8.5, "<h4>Otras formas de decirlo</h4>" + "".join(
+            f'<div class="example">{render_sentence(sby[sid])}<div>{esc(sby[sid]["translation"].get(lang))}</div>'
+            f'{sound(sentence_text(sby[sid]), manifest, media_files)}</div>' for sid in alts), "alts")
     if ex.get("explanation"):
         add(0, f"<h4>Explicación</h4>{esc(ex['explanation'])}")
     # Grupos: el del ejercicio y los de sus objetivos (se recuerda mejor por contraste). Si un objetivo
@@ -3076,12 +3303,17 @@ def card_fields(ex, eby, sby, manifest, media_files):
                 rows += partner_html
                 partner_ref = None
             rows += "</div>"
-        add(4, f"<h4>{esc(g.get('title'))}</h4>{esc(g.get('explanation'))}{rows}{timeline_html(g, eby, targets)}")
+        # Orden y aspecto por lo que es el grupo (review 013): el de la propia tarjeta de contraste es la pregunta y
+        # va arriba; las familias (series de significado, patrones, la misma pieza de sonido), con su diagrama, abajo;
+        # lo que solo se parece a la vista o al oído, lo último (su tarjeta de contraste ya lo separa).
+        rank, kind = ((1.5, "group") if g is group else (9, "confusable") if g.get("basis") in CONFUSABLE_BASES
+                      else (8.6, "family"))
+        add(rank, f"<h4>{esc(g.get('title'))}</h4>{esc(g.get('explanation'))}{rows}{diagrams_html(g, eby, targets)}", kind)
     # Una franja (review 011: «mini diagramas que ayuden a entender», con 早上 y 上午): también en las tarjetas de
     # una palabra de la franja cuyo grupo no sale en la tarjeta.
     for g in eby.values():
-        if g.get("timeline") and g not in shown_groups and targets & {t["ref"] for t in g["timeline"]}                 and ex["type"] != "contrast":
-            add(4, f"<h4>{esc(g.get('title'))}</h4>{timeline_html(g, eby, targets)}")
+        if g not in shown_groups and targets & diagram_refs(g) and ex["type"] != "contrast":
+            add(8.6, f"<h4>{esc(g.get('title'))}</h4>{diagrams_html(g, eby, targets)}", "family")
     for tid in note_targets:
         t = eby.get(tid, {})
         st = char_status(t)
@@ -3096,11 +3328,10 @@ def card_fields(ex, eby, sby, manifest, media_files):
         # Un componente no es una palabra: aquí, cuál es la palabra de verdad para decir eso.
         if t.get("real_word"):
             add(8, f"<h4>Para decirlo</h4>{real_word_html(t['real_word'])}")
-        # Un hanzi solo: qué otros caracteres del mazo suenan así, y sus otros sentidos.
+        # Un hanzi solo: sus otros sentidos. Lo que suena igual no se lista (review 013): ya lo separa su tarjeta de
+        # contraste de sonido.
         if len(t.get("hanzi") or "") == 1 and t.get("kind") in ("word", "character"):
-            same, senses = sound_and_senses(t, list(eby.values()), eby, sby)
-            if same:
-                add(8, "<h4>Mismo sonido</h4>" + "".join(f"<div>{esc(line)}</div>" for line in same))
+            _, senses = sound_and_senses(t, list(eby.values()), eby, sby)
             if senses:
                 add(8, "<h4>Otros sentidos</h4>" + "".join(f"<div>{esc(line)}</div>" for line in senses))
     # La teoría de pronunciación (reglas de las entradas p., trampas del pinyin) no sale en las tarjetas: el que
@@ -3146,7 +3377,7 @@ def card_fields(ex, eby, sby, manifest, media_files):
         # de una sola de ellas, que desequilibran (早上 traía dos y 明天 ninguna).
         comments += [c for c in eby.get(tid, {}).get("comments", [])
                      if ex["type"] != "nuance" or c.get("kind") in ("teacher", "mnemonic")]
-    labels = {"mnemonic": "Mnemotecnia", "teacher": "En clase", "linguistic": "Nota", "note": "Apunte", "usage": "Uso real",
+    labels = {"mnemonic": "Mnemotecnia", "teacher": "En clase", "linguistic": "Uso y significado", "note": "Apunte", "usage": "Uso real",
               "character": "El carácter", "sound": "Cómo suena"}
     # Cada bloque en su sitio, siempre el mismo (review 011: «los bloques se apilan sin orden ni concierto»): lo de
     # clase, luego la imagen para recordar, cómo suena y las notas; el análisis del carácter, junto a sus caracteres.
@@ -3162,11 +3393,18 @@ def card_fields(ex, eby, sby, manifest, media_files):
     for c in comments:
         if c.get("private", True) is False and c.get("kind") == "linguistic" and id(c) not in ptheory:
             merged.setdefault(word_of.get(id(c), ""), []).append(c.get("text", ""))
-    for texts in merged.values():
+    for hz, texts in merged.items():
         texts.sort(key=lambda t: not t.startswith("Palabra a palabra"))
-        add(rank["linguistic"], "<h4>Nota</h4>" + "".join(f"<p>{esc(t)}</p>" for t in texts))
+        # Con aspecto de nota y un título que dice de qué va (review 013: «no pongas solo NOTA»).
+        title = f"Uso y significado · {hz}" if hz else "Uso y significado"
+        add(rank["linguistic"], f"<h4>{esc(title)}</h4>" + "".join(f"<p>{esc(t)}</p>" for t in texts), "linguistic")
+    # «Por qué se escribe así» es otra forma de recordarlo: si la entrada ya tiene su mnemotecnia, manda la
+    # mnemotecnia y el análisis del carácter no sale en la tarjeta (review 013); en el cuaderno se queda.
+    with_mnemonic = {word_of.get(id(c)) for c in comments if c.get("kind") == "mnemonic" and c.get("private", True) is False}
     for c in comments:
         if c.get("kind") == "linguistic":
+            continue
+        if c.get("kind") == "character" and word_of.get(id(c)) in with_mnemonic:
             continue
         if c.get("private", True) is False and id(c) not in ptheory:
             head = labels.get(c.get("kind"), "Comentario")
@@ -3189,11 +3427,14 @@ def card_fields(ex, eby, sby, manifest, media_files):
     else:
         exp_py = exp_hz = ""
     if exp_py or exp_hz:
+        # Otras respuestas igual de buenas (`answer.accept`, review 013: 忘 y 忘记 para «olvidar»): cualquiera vale.
+        alt = "|".join(str(a) for a in ans.get("accept") or [])
         back = (f'<span id="acs-exp-py" style="display:none">{esc(exp_py)}</span>'
-                f'<span id="acs-exp-hz" style="display:none">{esc(exp_hz)}</span>') + back
+                f'<span id="acs-exp-hz" style="display:none">{esc(exp_hz)}</span>'
+                + (f'<span id="acs-exp-alt" style="display:none">{esc(alt)}</span>' if alt else "")) + back
     return {"typed": typed, "task": esc(task), "front": tone_color(front), "prompt_audio": prompt_audio,
             "back": tone_color(back), "answer_audio": answer_audio,
-            "notes": tone_color(f'<div class="box">{"".join(note_section(n) for *_, n in sorted(notes))}</div>')
+            "notes": tone_color(f'<div class="box">{"".join(note_section(n, k) for _, _, n, k in sorted(notes, key=lambda x: x[:2]))}</div>')
             if notes else ""}
 
 
@@ -3235,7 +3476,9 @@ NOTE_KIND = (("ejemplo", "example"), ("mnemotecnia", "mnemonic"), ("en clase", "
              ("conexión", "connection"), ("sus caracteres", "chars"), ("por qué se escribe así", "chars"),
              ("pronunciación", "sound"), ("qué es", "status"), ("no se usa solo", "status"),
              ("para no confundirlo", "confusable"), ("el carácter", "character"),
-             ("casi no se usa solo", "status"), ("uso real", "usage"))
+             ("casi no se usa solo", "status"), ("uso real", "usage"), ("uso y significado", "linguistic"),
+             ("apunte", "note"), ("otros sentidos", "status"), ("para decirlo", "status"),
+             ("otras formas de decirlo", "alts"))
 
 
 CHAR_TYPE_ES = {"pictographic": "pictograma", "ideographic": "ideograma", "pictophonetic": "fonético-semántico"}
@@ -3362,18 +3605,20 @@ def character_lines(hanzi, lang="es", entries=None, max_level=None, own_memory=(
                     et[k] = n[k]
             if "phonetic" in n:
                 et["phonetic"], et["phonetic_pinyin"] = (n["phonetic"] or {}).get("char"), (n["phonetic"] or {}).get("pinyin")
-        kind = "" if disputed else CHAR_TYPE_ES.get(et.get("type"), "")
+        # Con mnemotecnia propia del carácter, manda ella: no se cuenta por qué se escribe así (review 013).
+        mine = ch in own_memory
+        kind = "" if disputed or mine else CHAR_TYPE_ES.get(et.get("type"), "")
         formula = []
-        if et.get("semantic") and not disputed:
+        if et.get("semantic") and not disputed and not mine:
             gl = (parts.get(et["semantic"]) or {}).get("es", "")
             formula.append(f"significado: {esc(et['semantic'])} {esc(gl.split(';')[-1].split('(')[0].strip())}".strip())
-        if et.get("phonetic") and not disputed:
+        if et.get("phonetic") and not disputed and not mine:
             py = et.get("phonetic_pinyin") or ((db.get(et["phonetic"]) or {}).get("pinyin") or [""])[0]
             formula.append(f"sonido: {esc(et['phonetic'])} {esc(py)}".strip())
         # Una frase por carácter: la imagen para recordarlo si la hay; si no, su porqué (solo si no es discutido).
         memory = "" if ch in own_memory else (n.get("memory") or {}).get(lang) or ""
         why = ""
-        if not memory and not disputed and ch not in own_origin:
+        if not memory and not disputed and not mine and ch not in own_origin:
             why = re.sub(r"^[^:]{3,40}:\s*", "", (n.get("origin") or {}).get(lang) or "")
             why = why[:1].upper() + why[1:]
         more = also_in(ch, hanzi, entries, max_level)
@@ -3388,15 +3633,16 @@ def character_lines(hanzi, lang="es", entries=None, max_level=None, own_memory=(
     return "".join(lines)
 
 
-def note_section(html_note):
+def note_section(html_note, kind=None):
     """Una nota del reverso («<h4>título</h4>cuerpo») como sección con su clase: grupo de palabras, ejemplo,
-    mnemotecnia, profesora, sonido, estatus o texto. La misma estructura sirve a Anki y a la web."""
+    mnemotecnia, profesora, sonido, estatus o texto; `kind` la fija cuando el título no basta (familia, parecidos,
+    otras formas de decirlo). La misma estructura sirve a Anki y a la web."""
     m = re.match(r"<h4>(.*?)</h4>(.*)", html_note, re.S)
     if not m:
         return f'<section class="note note--text"><div class="note-body">{html_note}</div></section>'
     title, body = m.groups()
     t = title.lower()
-    kind = next((k for prefix, k in NOTE_KIND if t.startswith(prefix)), None)
+    kind = kind or next((k for prefix, k in NOTE_KIND if t.startswith(prefix)), None)
     if not kind:
         kind = "group" if "<div" in body else "text"
     return f'<section class="note note--{kind}"><h4>{title}</h4><div class="note-body">{body}</div></section>'
@@ -3408,11 +3654,28 @@ TYPE_ES = {"read": "Leer", "listen": "Escuchar", "produce": "Decir", "speak": "E
            "charsound": "Sonido del hanzi", "compose": "Construir"}
 
 
+CODE_ALPHABET = "0123456789ABCDEFGHJKMNPQRSTVWXYZ"   # base 32 de Crockford: sin I, L, O ni U, que se confunden
+CODE_LEN = 5
+
+
+def card_code(ex_id):
+    """Código corto y estable de una tarjeta (review 013: «un número identificativo para poder referenciarlas»): sale
+    del ID del ejercicio, así que no cambia nunca. `lookup` lo encuentra; `check` da error si dos coinciden."""
+    n = int(hashlib.sha1(ex_id.encode("utf-8")).hexdigest(), 16)
+    out = ""
+    for _ in range(CODE_LEN):
+        n, r = divmod(n, 32)
+        out += CODE_ALPHABET[r]
+    return out
+
+
 def card_meta(ex, eby, sby):
-    """Cabecera de la tarjeta en Anki: el tipo y el nivel, con el color del nivel. La web pinta la suya."""
+    """Cabecera de la tarjeta en Anki: el tipo, su código (en medio) y el nivel, con el color del nivel. La web pinta
+    la suya."""
     lv = exercise_level(ex, eby, sby)
     kind = "Dictado" if ex["type"] == "listen" and (ex.get("answer") or {}).get("typed") else TYPE_ES.get(ex["type"], ex["type"])
-    return f'<div class="meta lv-{lv}"><span>{esc(kind)}</span><span>{esc(level_label(lv))}</span></div>'
+    return (f'<div class="meta lv-{lv}"><span>{esc(kind)}</span><span class="code">#{card_code(ex["id"])}</span>'
+            f'<span>{esc(level_label(lv))}</span></div>')
 
 
 def build_note(ex, eby, sby, manifest, media_files, models):
@@ -3950,7 +4213,7 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
 
     def web_html(html):
         # [sound:archivo] de Anki pasa a un botón que la web conecta con el audio; lo oculto para el corrector, fuera.
-        html = re.sub(r'<span id="acs-exp-(py|hz)" style="display:none">.*?</span>', "", html)
+        html = re.sub(r'<span id="acs-exp-(py|hz|alt)" style="display:none">.*?</span>', "", html)
         html = html.replace('<span class="acs-typable" style="display:none"></span>', "")
         return re.sub(r"\[sound:([^\]]+)\]", lambda m: f'<button class="zh-sound" type="button" '
                       f'data-audio="{(MEDIA / m.group(1)).relative_to(ROOT).as_posix()}" aria-label="Play"></button>',
@@ -3963,14 +4226,16 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
         f = card_fields(x, eby, sby, manifest_cards, set())
         # Lo esperado al escribir (pinyin y hanzi), como lo compara Anki: `typed` obliga a escribir; `typable`,
         # frases para decir, lo deja opcional.
-        exp = {k: html.unescape(m.group(1)) for k in ("py", "hz")
+        exp = {k: html.unescape(m.group(1)) for k in ("py", "hz", "alt")
                if (m := re.search(rf'<span id="acs-exp-{k}" style="display:none">(.*?)</span>', f["back"]))}
         cards.append({"id": x["id"], "type": x["type"], "theme": x.get("theme"), "level": card_level(x),
                       "targets": x.get("targets", []), "context": x.get("context", []),
                       # Frases que enseña el reverso, tal como las elige card_fields (las fijadas y las automáticas).
                       "examples": [] if x["type"] in ("pattern", "comprehension") else examples_for(x, sby, eby),
                       "typed": bool(f["typed"]), "typable": "acs-typable" in f["front"],
-                      "expected": {"pinyin": exp.get("py", ""), "hanzi": exp.get("hz", "")} if exp else None,
+                      "expected": ({"pinyin": exp.get("py", ""), "hanzi": exp.get("hz", "")}
+                                   | ({"accept": exp["alt"].split("|")} if exp.get("alt") else {})) if exp else None,
+                      "code": card_code(x["id"]),
                       "task": f["task"],
                       "front": web_html(f["front"] + f["prompt_audio"]),
                       "back": web_html(f["back"] + f["answer_audio"]), "notes": web_html(f["notes"])})
@@ -4180,10 +4445,21 @@ def cmd_close_batch(batch, dry_run):
 
 # ---------------------------------------------------------------- Anki desktop
 
+ANKI_BUSY = "Collection lifecycle operation is active"   # Anki aún sincroniza (o abre la colección)
+ANKI_BUSY_WAIT, ANKI_BUSY_TRIES = 5, 60                    # segundos entre intentos; cinco minutos como mucho
+
+
 def anki_request(action, timeout=120, **params):
+    """Una llamada a AnkiConnect. La sincronización vuelve antes de terminar y, mientras sigue, Anki rechaza lo demás
+    con ANKI_BUSY (lote 014: `push` fallaba al importar justo después de sincronizar): se espera y se reintenta."""
     body = json.dumps({"action": action, "version": 6, "params": params}).encode("utf-8")
-    with urllib.request.urlopen(urllib.request.Request(ANKI_CONNECT, data=body), timeout=timeout) as r:
-        out = json.load(r)
+    for attempt in range(ANKI_BUSY_TRIES):
+        with urllib.request.urlopen(urllib.request.Request(ANKI_CONNECT, data=body), timeout=timeout) as r:
+            out = json.load(r)
+        if out.get("error") and ANKI_BUSY in str(out["error"]) and attempt < ANKI_BUSY_TRIES - 1:
+            time.sleep(ANKI_BUSY_WAIT)
+            continue
+        break
     if out.get("error"):
         raise RuntimeError(out["error"])
     return out["result"]
@@ -4414,7 +4690,9 @@ def interleave_streams(cards, key, gap=STAGE_GAP, needs=None):
     cola que menos ha avanzado en proporción. De ella, la primera tarjeta (entre las `STREAM_LOOKAHEAD` siguientes) que
     no espera a un paso anterior de su entrada (`CHAIN`: leer, oír, tonos, decir) sin colocar o colocado hace menos de
     `gap` posiciones; si en esa cola no hay ninguna, prueba la siguiente cola; si en ninguna, la más retrasada. Los
-    contrastes, matices y demás no esperan ni hacen esperar."""
+    contrastes, matices y demás no esperan a los pasos de una entrada; pero dos contrastes de un mismo grupo (妈 / 吗 /
+    马, uno por miembro) tampoco salen a menos de `gap` posiciones el uno del otro (review 013: se ven iguales y
+    parece que la misma tarjeta vuelve cada día)."""
     streams = {}
     for ex in sorted(cards, key=key):
         streams.setdefault(stream_of(ex), []).append(ex)
@@ -4428,12 +4706,18 @@ def interleave_streams(cards, key, gap=STAGE_GAP, needs=None):
     # que enseña escrita, si esa palabra tiene tarjetas en este mismo tramo; mientras, sale otra.
     in_pool = {t for ex in cards for t in ex.get("targets", [])}
     seen = set()
+    sibling = lambda ex: ex.get("group") if ex.get("type") == "contrast" else None
+    group_at = {}                                # grupo de contraste → posición de su última tarjeta colocada
+
+    def too_close(ex):
+        g = sibling(ex)
+        return bool(g) and g in group_at and len(out) - group_at[g] < gap
 
     def missing(ex):
         return [c for c in (needs or {}).get(ex["id"], []) if c in in_pool and c not in seen]
 
     def ready(ex):
-        if missing(ex):
+        if missing(ex) or too_close(ex):
             return False
         if ex.get("type") not in CHAIN:
             return True
@@ -4445,7 +4729,8 @@ def interleave_streams(cards, key, gap=STAGE_GAP, needs=None):
         chain = max([0] + [(gap - (len(out) - placed[o])) if o in placed else 10 ** 6
                            for t in ex.get("targets", []) for s2, o in stages.get(t, []) if s2 < st]) \
             if ex.get("type") in CHAIN else 0
-        return 10 ** 5 * len(missing(ex)) + chain
+        near = (gap - (len(out) - group_at[sibling(ex)])) if too_close(ex) else 0
+        return 10 ** 5 * len(missing(ex)) + chain + near
     size = {k: len(v) for k, v in streams.items()}
     # Peso de cada cola: su tamaño; la de pronunciación, al menos PRON_SHARE del total, para que lo básico de cómo
     # suena salga repartido al principio del nivel y no al final, ni todo junto.
@@ -4472,6 +4757,8 @@ def interleave_streams(cards, key, gap=STAGE_GAP, needs=None):
         last = k
         ex = streams[k].pop(i)
         placed[ex["id"]] = len(out)
+        if sibling(ex):
+            group_at[sibling(ex)] = len(out)
         out.append(ex["id"])
         seen.update(ex.get("targets", []))
     return out

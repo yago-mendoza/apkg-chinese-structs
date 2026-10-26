@@ -19,17 +19,17 @@
 - ✅🃏 个 ge [kɤ] · clasificador general (uno de algo) · _clasificador_ · Entre el número y la cosa: 三个朋友 «tres amigos». · El clasificador no se omite: sin él la frase se entiende, pero suena tan mal como «yo tener tres amigo». A veces informa de la forma: 张 zhāng [HSK 3] para cosas planas, 条 tiáo [HSK 2] para alargadas. Van sin clasificador las palabras que ya son unidad, como 天 y 年: 三天 «tres días», 两年 «dos años». · Además de con números, el clasificador va detrás de 这, 那, 哪, 每 [HSK 3] y 几: 那个人 «esa persona», 哪本书？ «¿qué libro?», 几个人？ «¿cuántas personas?». Pero 这 solo, «esto», no lo lleva: 这是书 «esto es un libro».
 - ✅🃏 没有 méiyǒu [meɪ˧˥ joʊ˧˩˧] · no tener; no haber · _verbo_ · 有 se niega con 没, nunca con 不: 我没有钱 «no tengo dinero».
 - ✅🃏 几 jǐ [tɕi˧˩˧] · cuántos (pocos) · _interrogativo_
-- ✅🃏 岁 suì [sweɪ˥˩] · años (de edad) · _clasificador_ · 你几岁？ se pregunta sobre todo a niños; a un adulto se le pregunta 你多大？, con 多 «cuánto» y 大 «grande».
+- ✅🃏 岁 suì [sweɪ˥˩] · años (de edad) · _clasificador_ · 你几岁？ se pregunta sobre todo a niños; a un adulto se le pregunta 你多大？, con 多 «cuánto» y 大 «grande». · 岁: una mano que trae una corona de cumpleaños.
 - ✅🃏 本 běn [pən˧˩˧] · clasificador de libros y cuadernos · _pronombre_ · Un árbol 木 con una raya en la raíz: su sentido original es «raíz, origen». Como clasificador, cuenta libros. · Como 个 para personas, 本 para libros: 一个人 «una persona», 一本书 «un libro». · 本 parece un estandarte, como el que habría en una biblioteca al aire libre donde están los libros.
 - ✅🃏 棵 kē [kʰɤ˥] · clasificador de árboles y plantas · _clasificador_ · Va entre 这, 那 o un número y la palabra: 这棵树 «este árbol», 一棵树 «un árbol».
 - ✅🃏 零 líng [liŋ˧˥] · cero · _número_ · 零 marca las cifras vacías: 一百零五 (105), 一千零五十 (1050), 七千零三 (7003). Aunque falten varias seguidas, se dice un solo 零. · Tiene una forma rarísima.
 - ✅🃏 百 bǎi [paɪ˧˩˧] · cien · _número_
 - ✅🃏 千 qiān [tɕʰjɛn˥] · mil · _número_
 - ✅🃏 万 wàn [wan˥˩] · diez mil · _número_ · 万 es una unidad propia, 10 000: 三万 son 30 000 y 十万, 100 000. El chino agrupa las cifras de cuatro en cuatro, no de tres en tres.
-- ✅🃏 多大 duō dà [twɔ˥ ta˥˩] · ¿cuántos años? (entre adultos) · _interrogativo_ · 你多大？ a alguien de tu edad; 你几岁？ a un niño; 您多大年纪了？ a una persona mayor o de respeto.
-- ✅🃏 年纪 niánjì [njɛn˧˥ tɕi˥˩] · edad (con respeto) · _sustantivo_
+- ✅🃏 多大 duō dà [twɔ˥ ta˥˩] · ¿cuántos años? (entre adultos) · _interrogativo_ · 你多大？ a alguien de tu edad; 你几岁？ a un niño; 您多大年纪了？ a una persona mayor o de respeto. · 多 + adjetivo pregunta cuánto: 多大 «qué edad» o «qué tamaño» (中国有多大？), 多高 «qué altura», 多远 «qué distancia».
+- ✅🃏 年纪 niánjì [njɛn˧˥ tɕi˥˩] · edad (con respeto) · _sustantivo_ · 我和你年纪一样大 «tú y yo tenemos la misma edad»: 和 «y», 一样 «igual».
 - ✅🃏 您高寿 nín gāoshòu [nin˧˥ kɑʊ˥ ʂoʊ˥˩] · ¿cuántos años tiene usted? (a mayores de 70) · _expresión_ · Palabra a palabra: 您 «usted» + 高 «alto» + 寿 «años de vida»: «sus muchos años».
-- ✅🃏 年轻 niánqīng [njɛn˧˥ tɕʰiŋ˥] · joven · _adjetivo_
+- ✅🃏 年轻 niánqīng [njɛn˧˥ tɕʰiŋ˥] · joven · _adjetivo_ · Con pocos años, la vida pesa poco: 年 «año» + 轻 qīng «ligero» [HSK 2].
 - ✅🃏 左右 zuǒyòu [tswɔ˧˩˧ joʊ˥˩] · más o menos, aproximadamente · _número_ · Va detrás del número: 四十岁左右 «unos cuarenta años». Suelto, 左右 es «izquierda y derecha».
 - ✅🃏 号码 hàomǎ [xɑʊ˥˩ ma˧˩˧] · número (de teléfono, de pasaporte…) · _sustantivo_ · Al dar un número de teléfono, 一 se lee yāo para no confundirlo con 七 qī: 110 se dice yāo yāo líng.
 - ✅🃏 第 dì [ti˥˩] · prefijo de los ordinales · _número_ · 第 + número = ordinal: 第一 «primero», 第二 «segundo», 第三天 «el tercer día». Con ordinales siempre 二, nunca 两.
@@ -244,3 +244,5 @@ Suenan igual, con el mismo tono. 五 es el número; 午 «mediodía» solo sale 
 - ✅🃏 今天是十月二十三号。 · jīntiān shì shí yuè èr shí sān hào · Hoy es 23 de octubre.
 - ✅🃏 这个电脑六千八百块。 · zhè ge diànnǎo liù qiān bā bǎi kuài · Este ordenador cuesta seis mil ochocientos yuanes.
 - ✅🃏 北京有两千多万人。 · Běijīng yǒu liǎng qiān duō wàn rén · En Pekín viven más de veinte millones de personas.
+- ✅🃏 我和你年纪一样大。 · wǒ hé nǐ niánjì yíyàng dà · Tú y yo tenemos la misma edad.
+- ✅🃏 我二十八岁了。 · wǒ èr shí bā suì le · Ya tengo veintiocho años.

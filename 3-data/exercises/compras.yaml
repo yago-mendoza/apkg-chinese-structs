@@ -860,8 +860,8 @@ exercises:
     type: contrast
     group: g.qian-qian
     targets: [w.qian]
-    skills: [listening, tones, discrimination]
-    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es qián, «dinero»?'}
     answer: {hanzi: 钱, pinyin: qián, meaning: dinero}
     comments: []
   - id: x.dictation.yuan.money
@@ -1179,8 +1179,8 @@ exercises:
     type: contrast
     group: g.kuai-kuai
     targets: [w.kuai]
-    skills: [listening, tones, discrimination]
-    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es kuài, «yuan (al hablar)»?'}
     answer: {hanzi: 块, pinyin: kuài, meaning: yuan (al hablar)}
     comments: []
   - id: x.dictation.shao
@@ -1705,23 +1705,14 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 千克}
     answer: {hanzi: 千克, pinyin: qiānkè, meaning: kilo (en etiquetas y textos)}
     comments: []
-  - id: x.dictation.liang.weight
-    added: 2026-10-19
-    lang: es
-    type: listen
-    targets: [w.liang.weight]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: liang3, hanzi: 两, pinyin: liǎng, meaning: 50 gramos (peso tradicional)}
-    comments: []
   - id: x.read.liang.weight
     added: 2026-10-19
     lang: es
     type: read
     targets: [w.liang.weight]
     skills: [reading, pinyin]
-    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 两}
-    answer: {hanzi: 两, pinyin: liǎng, meaning: 50 gramos (peso tradicional)}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado de 两.', hanzi: 一两茶}
+    answer: {hanzi: 两, pinyin: liǎng, meaning: '50 gramos, peso tradicional (一两茶 «50 g de té»)'}
     comments: []
   - id: x.produce.yi-jin-pingguo-duoshao-qian
     added: 2026-10-19
@@ -1859,23 +1850,12 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¿Queda más? (¿hay más?)»'}
     answer: {meaning: '¿Queda más? (¿hay más?)'}
     comments: []
-  - id: x.listen.zhege-zenmeyang
-    added: 2026-10-05
-    lang: es
-    type: listen
-    sentence: s.zhege-zenmeyang
-    targets: [s.zhege-zenmeyang]
-    context: [w.zhe, w.ge, w.zenmeyang]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Qué tal este?'}
-    comments: []
   - id: x.produce.zhege-zenmeyang
     added: 2026-10-05
     lang: es
     type: produce
     sentence: s.zhege-zenmeyang
-    targets: [s.zhege-zenmeyang]
+    targets: [s.zhege-zenmeyang, e.zhegezenmeyang]
     context: [w.zhe, w.ge, w.zenmeyang]
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Qué tal este?»'}
@@ -2203,4 +2183,90 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Hay agua en la tienda?»'}
     answer: {meaning: '¿Hay agua en la tienda?'}
+    comments: []
+  - id: x.cloze.yao.must
+    added: '2026-10-26'
+    lang: es
+    type: cloze
+    sentence: s.wo-mingtian-yao-shangban
+    gap: w.yao
+    targets: [w.yao]
+    context: [w.wo, w.mingtian, w.shangban]
+    skills: [production, pinyin]
+    prompt: {text: '¿想 o 要? Completa en pinyin: «Mañana tengo que ir a trabajar.»'}
+    answer: {typed: yao4, hanzi: 要, pinyin: yào, meaning: 'tener que: 我要上班'}
+    comments: []
+  - id: x.situation.wo-lai-fuqian
+    added: '2026-10-26'
+    lang: es
+    type: speak
+    sentence: s.wo-lai-fuqian
+    targets: [s.wo-lai-fuqian]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Al acabar de cenar con un amigo, quieres invitar tú. ¿Qué dices?'}
+    answer: {hanzi: '我来付钱。', pinyin: 'wǒ lái fùqián', meaning: 'pago yo'}
+    comments: []
+  - id: x.produce.wo-lai-fuqian
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-lai-fuqian
+    targets: [s.wo-lai-fuqian]
+    context: [w.wo, w.lai, w.fuqian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Pago yo.»'}
+    answer: {meaning: Pago yo.}
+    comments: []
+  - id: x.produce.wo-zai-nali-keyi-mai-jipiao
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-zai-nali-keyi-mai-jipiao
+    targets: [s.wo-zai-nali-keyi-mai-jipiao]
+    context: [w.wo, w.zai.at, w.nali, w.keyi, w.mai, w.jipiao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde puedo comprar un billete de avión?»'}
+    answer: {meaning: '¿Dónde puedo comprar un billete de avión?'}
+    comments: []
+  - id: x.produce.zhexie-duoshao-qian
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.zhexie-duoshao-qian
+    targets: [s.zhexie-duoshao-qian]
+    context: [w.zhexie, e.duoshaoqian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuánto cuestan estos?»'}
+    answer: {meaning: '¿Cuánto cuestan estos?'}
+    comments: []
+  - id: x.produce.wo-yao-zhege-bu-yao-nage
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-yao-zhege-bu-yao-nage
+    targets: [s.wo-yao-zhege-bu-yao-nage]
+    context: [w.wo, w.yao, w.zhe, w.ge, w.bu, w.na.that]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero este, aquel no.»'}
+    answer: {meaning: 'Quiero este, aquel no.'}
+    comments: []
+  - id: x.listen.dlg-yao-nage
+    added: 2026-10-26
+    lang: es
+    type: listen
+    sentence: s.dlg-yao-nage
+    targets: [s.dlg-yao-nage]
+    context: [w.ni, w.yao, w.nage, w.wo, w.zhe, w.ge, w.bu, w.na.that, w.tai, w.gui, w.le, w.pianyi, w.yidian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Cuál quieres? —Este, aquel no. Este es demasiado caro; aquel es un poco más barato.'}
+    comments: []
+  - id: x.choice.yao-you-weight
+    added: '2026-10-26'
+    lang: es
+    type: speak
+    targets: [w.yao]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. En el mercado, pides kilo y medio de manzanas.', options: [我有三斤苹果。, 我要三斤苹果。]}
+    answer: {choice: b, hanzi: '我要三斤苹果。', pinyin: 'wǒ yào sān jīn píngguǒ', meaning: '要 yào, que cae: «quiero». 有 yǒu, que baja y sube, sería «tengo».'}
     comments: []

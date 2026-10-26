@@ -1332,3 +1332,144 @@ class Lot013Display(unittest.TestCase):
         f = anki.card_fields(self.xby["x.read.jipiao"], self.eby, self.sby, {}, set())
         self.assertIn("note--usage", f["notes"])
         self.assertIn("Uso real", f["notes"])
+
+
+class Lot014(unittest.TestCase):
+    """Lote 014 (review 013): código de tarjeta, respuestas alternativas, audio de los matices delante, recuadros del
+    reverso por importancia, diagramas (escala y eje de tiempo), una pregunta por tarjeta y contrastes separados."""
+
+    def setUp(self):
+        self.eby = {
+            "w.wang": {"id": "w.wang", "kind": "word", "hanzi": "忘", "pinyin": "wàng", "meaning": {"es": "olvidar"}},
+            "w.ma": {"id": "w.ma", "kind": "word", "hanzi": "妈", "pinyin": "mā", "meaning": {"es": "mamá"},
+                     "comments": [{"kind": "mnemonic", "private": False, "text": "Una mujer que monta a caballo."},
+                                  {"kind": "character", "private": False, "text": "女 da el sentido y 马 el sonido."}]},
+            "w.ma.q": {"id": "w.ma.q", "kind": "word", "hanzi": "吗", "pinyin": "ma", "meaning": {"es": "¿…?"}},
+            "w.ke": {"id": "w.ke", "kind": "word", "hanzi": "克", "pinyin": "kè", "meaning": {"es": "gramo"}},
+            "w.jin": {"id": "w.jin", "kind": "word", "hanzi": "斤", "pinyin": "jīn", "meaning": {"es": "medio kilo"}},
+            "st.yao-le": {"id": "st.yao-le", "kind": "structure", "pattern": "要 + {V} + 了"},
+            "c.ren": {"id": "c.ren", "kind": "component", "hanzi": "亻"},
+        }
+        self.eby["g.ma"] = {"id": "g.ma", "kind": "group", "basis": "visual", "title": "妈 y 吗",
+                            "members": [{"ref": "w.ma"}, {"ref": "w.ma.q"}]}
+        self.eby["g.peso"] = {"id": "g.peso", "kind": "group", "basis": "set", "title": "Pesos",
+                              "members": [{"ref": "w.ke"}, {"ref": "w.jin"}],
+                              "scale": [{"ref": "w.ke", "label": "1 g"}, {"ref": "w.jin", "label": "500 g"}]}
+        self.sby = {"s.a": {"id": "s.a", "use": "say", "segments": [{"text": "我忘了", "ref": "w.wang", "pinyin": "wǒ wàng le"}],
+                            "translation": {"es": "Se me ha olvidado."}}}
+
+    def test_card_code_is_short_stable_and_shown(self):
+        code = anki.card_code("x.read.ma")
+        self.assertEqual(code, anki.card_code("x.read.ma"))
+        self.assertEqual(len(code), anki.CODE_LEN)
+        self.assertTrue(set(code) <= set(anki.CODE_ALPHABET))
+        meta = anki.card_meta({"id": "x.read.ma", "type": "read", "targets": ["w.ma"]}, self.eby, self.sby)
+        self.assertIn(f"#{code}", meta)
+        self.assertEqual(anki.code_collisions([{"id": "x.a"}, {"id": "x.b"}]), {})
+
+    def test_typed_answer_accepts_alternatives(self):
+        ex = {"id": "x.produce.wang", "type": "produce", "targets": ["w.wang"], "prompt": {"text": "olvidar"},
+              "answer": {"hanzi": "忘记", "pinyin": "wàngjì", "typed": "wang4 ji4", "accept": ["wang4"]}}
+        back = anki.card_fields(ex, self.eby, self.sby, {}, set())["back"]
+        self.assertIn('id="acs-exp-alt" style="display:none">wang4<', back)
+        bad = dict(ex, answer={"hanzi": "忘", "accept": ["wang4"]})          # accept sin typed: error
+        errors, warnings = [], []
+        anki.quality_rules([], [], [bad], self.eby, self.sby, errors, warnings)
+        self.assertTrue(any("answer.accept" in e for e in errors))
+        if shutil.which("node"):
+            js = anki.INPUT_JS_BACK.replace("<script>", "").replace("</script>", "")
+            js = js.replace("setTimeout(function () {", "function run() {").replace("}, 0);", "}")
+            harness = ("var store = {'acs-typed': 'wàng'}, els = {'acs-result': {className: '', textContent: ''},"
+                       " 'acs-exp-py': {textContent: 'wang4 ji4'}, 'acs-exp-hz': {textContent: '忘记'},"
+                       " 'acs-exp-alt': {textContent: 'wang4'}};\n"
+                       "var sessionStorage = {getItem: function (k) { return k in store ? store[k] : null; }};\n"
+                       "var document = {getElementById: function (id) { return els[id] || null; }};\n" + js +
+                       "\nrun(); console.log(els['acs-result'].className);\n")
+            out = subprocess.run(["node", "-e", harness], capture_output=True, text=True, encoding="utf-8")
+            self.assertEqual(out.stdout.strip(), "acs-ok", out.stderr)
+
+    def test_nuance_pieces_sound_on_the_front_but_not_calques(self):
+        ex = {"id": "x.nuance.t", "type": "nuance", "targets": ["w.ma"],
+              "prompt": {"text": "我很高兴 y 我是高兴: ¿cuál falla?", "no_audio": ["我是高兴"]},
+              "answer": {"meaning": "我是高兴 falla."}}
+        manifest = {"我很高兴": {"file": "a.mp3"}, "我是高兴": {"file": "b.mp3"}}
+        fake = lambda t, m, f: f"[sound:{m[t]['file']}]" if t in m else ""
+        with mock.patch.object(anki, "sound", side_effect=fake):
+            front = anki.card_fields(ex, self.eby, self.sby, manifest, set())["front"]
+        self.assertIn("[sound:a.mp3]", front)
+        self.assertNotIn("[sound:b.mp3]", front)
+        self.assertEqual(anki.nuance_audio_pieces(ex, self.eby), ["我很高兴"])
+        comp = dict(ex, prompt={"text": "亻 y 人: ¿qué cambia?"})
+        self.assertEqual(anki.nuance_audio_pieces(comp, self.eby), ["人"])   # un componente no suena
+        texts = anki.required_audio(list(self.eby.values()), [], [ex])
+        self.assertIn("我很高兴", texts)
+        self.assertNotIn("我是高兴", texts)
+
+    def test_back_panels_order_and_look(self):
+        ex = {"id": "x.read.ma", "type": "read", "targets": ["w.ma"], "prompt": {"hanzi": "妈"},
+              "answer": {"hanzi": "妈", "pinyin": "mā", "meaning": "mamá"}}
+        notes = anki.card_fields(ex, self.eby, self.sby, {}, set())["notes"]
+        self.assertNotIn("Mismo sonido", notes)
+        self.assertIn("note--confusable", notes)                          # lo que se parece, al final
+        self.assertGreater(notes.index("note--confusable"), max(notes.index("note--mnemonic"), 0))
+        self.assertNotIn("<section", notes[notes.index("note--confusable"):])
+        self.assertNotIn("女 da el sentido", notes)                       # con mnemotecnia, no el porqué del carácter
+        lex = dict(self.eby, **{"w.ma": dict(self.eby["w.ma"], comments=[
+            {"kind": "linguistic", "private": False, "text": "Se usa al llamarla."}])})
+        notes = anki.card_fields(ex, lex, self.sby, {}, set())["notes"]
+        self.assertIn("note--linguistic", notes)
+        self.assertIn("Uso y significado · 妈", notes)
+        say = {"id": "x.produce.s", "type": "produce", "sentence": "s.a", "targets": ["s.a"], "also": ["s.a"],
+               "prompt": {"text": "Dilo"}, "answer": {}}
+        f = anki.card_fields(say, self.eby, self.sby, {}, set())
+        self.assertIn("note--alts", f["notes"])
+        self.assertIn("Otras formas de decirlo", f["notes"])
+        self.assertNotIn("También vale", f["back"])
+
+    def test_own_mnemonic_hides_why_it_is_written_so(self):
+        self.assertNotIn("ch-why", anki.character_lines("八", "es", own_memory={"八"}))
+        self.assertNotIn("ch-formula", anki.character_lines("妈", "es", own_memory={"妈"}))
+
+    def test_scale_and_aspect_diagrams(self):
+        out = anki.scale_html(self.eby["g.peso"], self.eby, {"w.jin"})
+        self.assertEqual(out.count("sc-pt"), 2)
+        self.assertIn("500 g", out)
+        self.assertIn('sc-pt is-target" style="left:100.0%', out)
+        g = {"id": "g.t", "aspect": [{"ref": "st.yao-le", "from": -0.5, "to": 0, "label": "a punto de pasar"},
+                                      {"ref": "w.ke", "from": 1, "to": 1}]}
+        out = anki.aspect_html(g, self.eby, {"st.yao-le"})
+        self.assertIn("要 + {V} + 了", out)
+        self.assertIn("as-dot", out)                                       # from == to: un punto
+        self.assertIn("ahora", out)
+        tl = anki.timeline_html({"timeline": [{"ref": "w.ke", "from": 6, "to": 9}]}, self.eby)
+        self.assertIn('class="tl-label"', tl)                              # su nombre debajo de la barra
+        bad = [dict(self.eby["g.peso"], id="g.p2", scale=[{"ref": "w.ke"}]),
+               {"id": "g.b", "kind": "group", "aspect": [{"ref": "w.zz", "from": 2, "to": 1}]}]
+        errors = anki.diagram_rules(list(self.eby.values()) + bad)
+        self.assertTrue(any("scale necesita" in e for e in errors))
+        self.assertTrue(any("referencia rota" in e for e in errors))
+        self.assertTrue(any("from <= to" in e for e in errors))
+
+    def test_one_question_one_answer(self):
+        def mk(i, hz):
+            return {"id": i, "type": "produce", "targets": ["w.wang"], "prompt": {"text": "¿Cómo se dice «olvidar»?"},
+                    "answer": {"hanzi": hz, "typed": "wang4"}}
+        a, b = mk("x.a", "忘"), mk("x.b", "忘记")
+        self.assertEqual(anki.duplicate_prompts([a, b], self.eby, self.sby), [["x.a", "x.b"]])
+        self.assertEqual(anki.duplicate_prompts([a, dict(b, same_prompt_ok="motivo")], self.eby, self.sby), [])
+        eby = dict(self.eby, **{"w.ma2": {"id": "w.ma2", "hanzi": "嘛", "pinyin": "ma"},
+                                "g.h": {"id": "g.h", "kind": "group", "basis": "homophone",
+                                        "members": [{"ref": "w.ma.q"}, {"ref": "w.ma2"}]}})
+        heard = {"id": "x.contrast.h", "type": "contrast", "group": "g.h", "targets": ["w.ma.q"],
+                 "prompt": {"text": "Escucha", "audio": True}}
+        self.assertEqual(anki.homophone_contrasts([heard], eby), [("x.contrast.h", "吗", ["嘛"])])
+        read = dict(heard, prompt={"text": "¿Cuál es ma «¿…?»?"})            # por el significado: se acierta leyendo
+        self.assertEqual(anki.homophone_contrasts([read], eby), [])
+
+    def test_contrasts_of_one_group_are_spaced(self):
+        cards = [{"id": f"x.contrast.{i}", "type": "contrast", "group": "g.ma", "targets": [t]}
+                 for i, t in (("a", "w.ma"), ("b", "w.ma.q"))]
+        cards += [{"id": f"x.read.{n}", "type": "read", "targets": [f"w.{n}"]} for n in range(12)]
+        order = anki.interleave_streams(cards, key=lambda ex: ex["id"], gap=5)
+        a, b = order.index("x.contrast.a"), order.index("x.contrast.b")
+        self.assertGreaterEqual(abs(a - b), 5)

@@ -457,3 +457,34 @@ entries:
     contrast: {right: s.ni-shuo-de-bu-dui, wrong: '你说不是对。', why: {es: 'Para valorar lo que alguien dice va 得; y 不对 ya es «incorrecto», sin 是.', en: 'To judge what someone says, use 得; and 不对 already means "wrong", no 是.'}}
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-20'}
     comments: []
+  - id: st.cong-dao
+    kind: structure
+    use: say
+    pattern: '{S} + 从 + {Num} + 点 + {V} + 到 + {Num} + 点'
+    refs: [w.cong, w.dian.oclock, w.dao.reach, w.dian.oclock]
+    meaning: {es: 'Desde una hora hasta otra: 从 + la hora de empezar delante del verbo; 到 + la de acabar, detrás.', en: 'From one time to another: 从 + start time before the verb; 到 + end time after it.'}
+    examples: [s.wo-cong-jiu-dian-gongzuo-dao-wu-dian]
+    contrast: {right: s.wo-cong-jiu-dian-gongzuo-dao-wu-dian, wrong: '我工作从九点到五点。', why: {es: 'En chino, desde cuándo va delante del verbo: 从九点工作, y el hasta cuándo, detrás: 工作到五点.', en: 'The starting point goes before the verb: 从九点工作; the end point after it: 工作到五点.'}}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments: []
+  - id: st.hai-mei-v
+    kind: structure
+    use: say
+    pattern: '{S} + 还 + 没 + {V}'
+    refs: [w.hai.still, w.mei]
+    meaning: {es: 'Todavía no ha pasado, pero se espera: 还没 delante del verbo, sin 了.', en: 'Not yet, but expected: 还没 before the verb, without 了.'}
+    examples: [s.wo-hai-mei-mai, s.wo-hai-mei-chifan, s.ta-hai-mei-lai]
+    contrast: {right: s.wo-hai-mei-mai, wrong: '我还没买了。', why: {es: '还没 ya dice «todavía no»: no lleva 了 al final, porque no ha pasado nada.', en: '还没 already means "not yet": no 了 at the end, because nothing has happened.'}}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments: []
+  - id: st.de-relative
+    kind: structure
+    use: say
+    pattern: '{S} + {V} + 的 + {N}'
+    refs: [w.de]
+    meaning: {es: 'Lo que alguien hace describe una cosa: «el libro que compré» es 我买的书, con la descripción delante y 的 en medio.', en: 'A clause describes a noun: "the book I bought" is 我买的书, description first and 的 in between.'}
+    examples: [s.zhe-shi-wo-mai-de-shu, s.ta-zuo-de-fan-hen-haochi, s.wo-ting-bu-dong-ta-shuo-de-hua]
+    contrast: {right: s.zhe-shi-wo-mai-de-shu, wrong: '这是书我买的。', why: {es: 'Lo que describe va delante, con 的: 我买的书 «el libro que compré». El «que» del español no existe.', en: 'The description goes first, with 的: 我买的书. There is no relative pronoun.'}}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '的 no dice que sea pasado: 你说的话 es «lo que dices» o «lo que dijiste», según el contexto.', original: 'Quédate con este molde: [alguien hace algo] + 的 + [cosa/persona]. […] El tiempo lo aporta el contexto; 的 no indica pasado.'}

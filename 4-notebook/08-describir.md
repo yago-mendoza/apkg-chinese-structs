@@ -12,7 +12,7 @@
 - ✅🃏 瘦 shòu [ʂoʊ˥˩] · delgado · _adjetivo_ · 疒 «enfermedad» + 叟 «anciano»: un anciano enfermo, flaco. · 叟 sǒu «anciano» da un sonido parecido: shòu. 疒 es la pieza de las enfermedades: una cama con una persona tumbada.
 - ✅🃏 漂亮 piàoliang [pʰjɑʊ˥˩ ljɑŋ] · guapo, bonito · _adjetivo_ · 漂 se lee piào solo en 漂亮; suelto es piāo «flotar». 票 piào «billete» le da el sonido. · 亮 liàng pierde el tono dentro de 漂亮: piàoliang.
 - ✅🃏 帅 shuài [ʂwaɪ˥˩] · guapo (sobre todo hombres) · _adjetivo_ · Viene de 元帅 yuánshuài «mariscal» [HSK 7]; hoy se usa sobre todo como «guapo». Por herencia, un mariscal sería el guapo supremo. · shuài suena «shuai»; no lo confundas con 水 shuǐ, que suena casi «shuei».
-- ✅🃏 聪明 cōngming [tsʰʊŋ˥ miŋ] · listo, inteligente · _adjetivo_ · El acento cae en cōng; ming va átono y corto. · 聪 lleva 耳 «oreja»: tener el oído fino. Con 明 «claro»: listo.
+- ✅🃏 聪明 cōngming [tsʰʊŋ˥ miŋ] · listo, inteligente · _adjetivo_ · El acento cae en cōng; ming va átono y corto. · 聪 lleva 耳 «oreja»: tener el oído fino. Con 明 «claro»: listo. · En 聪 cōng, 耳 «oreja» da el sentido y 总 zǒng, el de 总是, el sonido.
 - ✅🃏 笨 bèn [pən˥˩] · torpe, tonto · _adjetivo_ · 竹 «bambú» sobre 本 «raíz»: una raíz de bambú no sirve para nada, torpe.
 - ✅🃏 可爱 kě'ài [kʰɤ˧˩˧ aɪ˥˩] · mono, adorable · _adjetivo_ · Suena como «kawaii» dicho con la boca dormida. · El parecido con «kawaii» es solo de sonido, no histórico.
 - ✅🃏 幽默 yōumò [joʊ˥ mwɔ˥˩] · gracioso, con sentido del humor · _adjetivo_ · Préstamo fonético del inglés «humour». · mò es corto y cae con fuerza.
@@ -57,8 +57,9 @@
 - ✅🃏 老 lǎo [lɑʊ˧˩˧] · viejo, mayor · _adjetivo_ · Para cosas, sin problema: 这个电脑很老了. Para personas suena brusco: mejor 年纪大了 «ya es mayor».
 - ✅🃏 远 yuǎn [ɥœn˧˩˧] · lejos · _adjetivo_ · Lo contrario es 近 jìn «cerca»: 你家远吗？ «¿está lejos tu casa?» —不远，很近 «no, está cerca».
 - ✅🃏 坏 huài [xwaɪ˥˩] · malo; estropeado, roto · _adjetivo_ · Con 了, que algo se ha estropeado: 我的手机坏了 «se me ha roto el móvil».
-- ✅🃏 一定 yídìng [i˧˥ tiŋ˥˩] · seguro, sin falta · _adverbio_ · Delante del verbo: 我一定来 «vengo seguro». 你一定要来！ «¡tienes que venir sin falta!».
+- ✅🃏 一定 yídìng [i˧˥ tiŋ˥˩] · seguro, sin falta · _adverbio_ · Delante del verbo: 我一定来 «vengo seguro». 你一定要来！ «¡tienes que venir sin falta!». · Bajo un techo 宀, todo está fijo en su sitio: 一定, «seguro, sin falta». · 不一定 «no necesariamente, depende»: la respuesta prudente. 他一定很累 «seguro que está cansado».
 - ✅🃏 笑 xiào [ɕjɑʊ˥˩] · reír, sonreír · _verbo_
+- ✅🃏 更 gèng [kɤŋ˥˩] · más (todavía) · _adverbio_ · 更 + adjetivo o verbo: «aún más». 更多 «más cantidad»: 我想学习更多知识 «quiero aprender más cosas».
 
 ## 大, 太 y 天
 
@@ -243,3 +244,8 @@ La misma sílaba: 小 se hunde; 笑 cae.
 - ✅🃏 我的手机坏了。 · wǒ de shǒujī huài le · Se me ha roto el móvil.
 - ✅🃏 你觉得这个怎么样？我觉得不错。我也觉得不错，我们买吧！ · nǐ juéde zhè ge zěnmeyàng wǒ juéde búcuò wǒ yě juéde búcuò wǒmen mǎi ba · —¿Qué te parece este? —Me parece bien. —A mí también, ¡nos lo llevamos!
 - ✅🃏 今天我不累。 · jīntiān wǒ bù lèi · Hoy no estoy cansado.
+- ✅🃏 我是一个很忙的人。 · wǒ shì yí ge hěn máng de rén · Soy una persona muy ocupada.
+- ✅🃏 他是一个可以帮你的人。 · tā shì yí ge kěyǐ bāng nǐ de rén · Es alguien que puede ayudarte.
+- ✅🃏 他多高？ · tā duō gāo · ¿Cuánto mide?
+- ✅🃏 你太忙了。 · nǐ tài máng le · Estás demasiado ocupado.
+- ✅🃏 不一定。 · bù yídìng · No necesariamente.

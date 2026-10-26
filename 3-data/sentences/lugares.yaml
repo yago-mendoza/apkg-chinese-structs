@@ -282,3 +282,72 @@ sentences:
       - {text: ？}
     translation: {es: '¿Dónde está tu coche?', en: 'Where is your car?'}
     source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+  - id: s.ni-cong-nali-lai
+    use: say
+    kind: example
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 从, ref: w.cong, pinyin: 'cóng'}
+      - {text: 哪里, ref: w.nali, pinyin: 'nǎlǐ'}
+      - {text: 来, ref: w.lai, pinyin: 'lái'}
+      - {text: ？}
+    translation: {es: '¿De dónde vienes?', en: 'Where do you come from?'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.kuai-shangche
+    use: hear
+    kind: formula
+    segments:
+      - {text: 快, ref: w.kuai.fast, pinyin: 'kuài'}
+      - {text: 上车, ref: w.shangche, pinyin: 'shàngchē'}
+      - {text: ！}
+    translation: {es: '¡Sube, rápido!', en: 'Get in, quick!'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26', with_class: '2026-10-23'}
+  - id: s.wo-zai-jia-chifan
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 家, ref: w.jia, pinyin: 'jiā'}
+      - {text: 吃饭, ref: w.chifan, pinyin: 'chīfàn'}
+      - {text: 。}
+    translation: {es: 'Como en casa.', en: 'I eat at home.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ni-zai-zheli-deng-wo
+    use: say
+    kind: example
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 这里, ref: w.zheli, pinyin: 'zhèlǐ'}
+      - {text: 等, ref: w.deng, pinyin: 'děng'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 。}
+    translation: {es: 'Espérame aquí.', en: 'Wait for me here.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.dlg-qu-nali-chifan
+    use: hear
+    kind: example
+    segments:
+      - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 哪里, ref: w.nali, pinyin: 'nǎlǐ'}
+      - {text: 吃饭, ref: w.chifan, pinyin: 'chīfàn'}
+      - {text: ？}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 那里, ref: w.nali.there, pinyin: 'nàlǐ'}
+      - {text: 吧, ref: w.ba.particle, pinyin: 'ba'}
+      - {text: 。}
+      - {text: 那里, ref: w.nali.there, pinyin: 'nàlǐ'}
+      - {text: 太, ref: w.tai, pinyin: 'tài'}
+      - {text: 远, ref: w.yuan.far, pinyin: 'yuǎn'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: ，}
+      - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 这里, ref: w.zheli, pinyin: 'zhèlǐ'}
+      - {text: 吃, ref: w.chi, pinyin: 'chī'}
+      - {text: 吧, ref: w.ba.particle, pinyin: 'ba'}
+      - {text: 。}
+    translation: {es: '—¿Dónde vamos a comer? —Vamos allí. —Allí está demasiado lejos; comamos aquí.', en: '—Where shall we eat? —Let us go there. —That is too far; let us eat here.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}

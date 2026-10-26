@@ -163,6 +163,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '你几岁？ se pregunta sobre todo a niños; a un adulto se le pregunta 你多大？, con 多 «cuánto» y 大 «grande».'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: '岁: una mano que trae una corona de cumpleaños.', original: 'Suì Habnzi: una mano que trae una corona de cumpleaños'}
   - id: g.jiu-jiu
     kind: group
     basis: soundalike
@@ -261,6 +262,7 @@ entries:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: '你多大？ a alguien de tu edad; 你几岁？ a un niño; 您多大年纪了？ a una persona mayor o de respeto.'}
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '多 + adjetivo pregunta cuánto: 多大 «qué edad» o «qué tamaño» (中国有多大？), 多高 «qué altura», 多远 «qué distancia».', original: '多大 (duō dà) pregunta «cómo de grande»; con personas suele preguntar la edad, pero también sirve para tamaños. […] 多 + adjetivo pregunta por el grado: 多大 = qué tamaño/edad; 多高 (duō gāo) = qué altura; 多远 (duō yuǎn) = qué distancia.'}
   - id: w.nianji
     use: hear
     role: content
@@ -270,7 +272,8 @@ entries:
     meaning: {es: 'edad (con respeto)', en: 'age'}
     connection: {kind: sound, with: [起], text: '己 jǐ da el sonido a 纪 jì y, cambiado, a 起 qǐ.'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '我和你年纪一样大 «tú y yo tenemos la misma edad»: 和 «y», 一样 «igual».'}
   - id: e.ningaoshou
     use: hear
     role: content
@@ -291,7 +294,8 @@ entries:
     pinyin: 'niánqīng'
     meaning: {es: 'joven', en: 'young'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-    comments: []
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Con pocos años, la vida pesa poco: 年 «año» + 轻 qīng «ligero» [HSK 2].', original: 'Piensa: “Con pocos años, la vida pesa poco”. 年 es “año” y 轻 es “ligero”: 年轻 (niánqīng) = joven.'}
   - id: w.zuoyou
     use: say
     role: content

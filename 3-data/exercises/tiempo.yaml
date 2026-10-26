@@ -1766,8 +1766,8 @@ exercises:
     type: contrast
     group: g.qian-qian
     targets: [w.qian.before]
-    skills: [listening, tones, discrimination]
-    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es qián, «antes; hace (tanto tiempo)»?'}
     answer: {hanzi: 前, pinyin: qián, meaning: antes; hace (两天前 = hace dos días)}
     comments: []
   - id: x.dictation.qunian
@@ -2433,8 +2433,8 @@ exercises:
     type: contrast
     group: g.chang-chang
     targets: [w.chang.often]
-    skills: [listening, tones, discrimination]
-    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es cháng, «a menudo»?'}
     answer: {hanzi: 常, pinyin: cháng, meaning: 'a menudo, soler'}
     comments: []
   - id: x.produce.wo-chang-qu-zheli
@@ -2535,4 +2535,203 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Vengo mañana.»'}
     answer: {meaning: Vengo mañana.}
+    comments: []
+  - id: x.nuance.jintian-xianzai
+    added: '2026-10-26'
+    lang: es
+    type: nuance
+    targets: [w.xianzai, w.jintian]
+    skills: [comprehension, discrimination]
+    prompt: {text: '今天 y 现在: ¿qué aporta 今 y qué 现?'}
+    answer: {meaning: '今 marca el periodo en que estás: 今天 «hoy», 今年 «este año». 现 es este mismo momento: 现在 «ahora».'}
+    comments: []
+  - id: x.cloze.zongshi
+    added: '2026-10-26'
+    lang: es
+    type: cloze
+    sentence: s.ta-zongshi-hen-mang
+    gap: w.zongshi
+    targets: [w.zongshi]
+    context: [w.ta.he, w.hen, w.mang]
+    skills: [production, pinyin]
+    prompt: {text: '¿常常 o 总是? Completa en pinyin: «Siempre está muy ocupado.»'}
+    answer: {typed: zong3 shi4, hanzi: 总是, pinyin: zǒngshì, meaning: 'siempre'}
+    comments: []
+  - id: x.compose.quedar
+    added: '2026-10-26'
+    lang: es
+    type: compose
+    targets: [s.ni-na-tian-keyi-lai, s.dlg-na-tian-jianmian, s.women-yiqi-qu-ba]
+    words: [w.na.which, w.jianmian, w.yiqi, w.keyi, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. Quieres quedar con un compañero para comer esta semana: propón vernos y pregunta qué día puede, con estas palabras o con otras.'}
+    answer: {meaning: '哪天 va sin 个, como 一天. 吧 convierte la frase en una propuesta.'}
+    comments: []
+  - id: x.compose.horario
+    added: '2026-10-26'
+    lang: es
+    type: compose
+    targets: [s.wo-cong-jiu-dian-gongzuo-dao-wu-dian, s.wo-mingtian-yao-shangban]
+    words: [w.cong, w.dao.reach, w.yao, w.shangban, w.xiaban]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. Un compañero nuevo te pregunta por tu horario en la oficina. Cuéntaselo, con estas palabras o con otras.'}
+    answer: {meaning: '从 + la hora delante del verbo y 到 + la hora detrás: 从九点工作到五点. 要 también es «tener que».'}
+    comments: []
+  - id: x.comprehension.mei-dian
+    added: '2026-10-26'
+    lang: es
+    type: comprehension
+    targets: [s.ni-you-shijian-ma, s.wo-keyi-da-dianhua-ma, s.wo-de-shouji-mei-dian-le]
+    skills: [reading, comprehension]
+    script: both
+    prompt: {text: 'Léelo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Por qué pide llamar por teléfono?'}
+    answer: {meaning: 'Porque se ha quedado sin batería en el móvil.'}
+    comments: []
+  - id: x.dictation.zongshi
+    added: 2026-10-26
+    lang: es
+    type: listen
+    targets: [w.zongshi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zong3 shi4, hanzi: 总是, pinyin: zǒngshì, meaning: siempre}
+    comments: []
+  - id: x.read.zongshi
+    added: 2026-10-26
+    lang: es
+    type: read
+    targets: [w.zongshi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 总是}
+    answer: {hanzi: 总是, pinyin: zǒngshì, meaning: siempre}
+    comments: []
+  - id: x.produce.wo-cong-jiu-dian-gongzuo-dao-wu-dian
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-cong-jiu-dian-gongzuo-dao-wu-dian
+    targets: [s.wo-cong-jiu-dian-gongzuo-dao-wu-dian]
+    context: [w.wo, w.cong, w.num.jiu, w.dian.oclock, w.gongzuo, w.dao.reach, w.num.wu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Trabajo de nueve a cinco.»'}
+    answer: {meaning: Trabajo de nueve a cinco.}
+    comments: []
+  - id: x.produce.ni-you-shijian-ma
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.ni-you-shijian-ma
+    targets: [s.ni-you-shijian-ma]
+    context: [w.ni, w.you.have, w.shijian, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Tienes tiempo?»'}
+    answer: {meaning: '¿Tienes tiempo?'}
+    comments: []
+  - id: x.produce.yiqian-ni-bang-wo-yihou-wo-bang-ni
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.yiqian-ni-bang-wo-yihou-wo-bang-ni
+    targets: [s.yiqian-ni-bang-wo-yihou-wo-bang-ni]
+    context: [w.yiqian, w.ni, w.bang, w.wo, w.yihou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Antes tú me ayudabas; ahora te ayudaré yo.»'}
+    answer: {meaning: Antes tú me ayudabas; ahora te ayudaré yo.}
+    comments: []
+  - id: x.produce.ta-zongshi-hen-mang
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.ta-zongshi-hen-mang
+    targets: [s.ta-zongshi-hen-mang]
+    context: [w.ta.he, w.zongshi, w.hen, w.mang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Siempre está muy ocupado.»'}
+    answer: {meaning: Siempre está muy ocupado.}
+    comments: []
+  - id: x.produce.wo-jinnian-hen-mang
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-jinnian-hen-mang
+    targets: [s.wo-jinnian-hen-mang]
+    context: [w.wo, w.jinnian, w.hen, w.mang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Este año estoy muy ocupado.»'}
+    answer: {meaning: Este año estoy muy ocupado.}
+    comments: []
+  - id: x.produce.ta-jinnian-hai-shi-xuesheng
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.ta-jinnian-hai-shi-xuesheng
+    targets: [s.ta-jinnian-hai-shi-xuesheng]
+    context: [w.ta.he, w.jinnian, w.hai.still, w.shi, w.xuesheng]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Este año todavía es estudiante.»'}
+    answer: {meaning: Este año todavía es estudiante.}
+    comments: []
+  - id: x.produce.women-zai-nali-jianmian
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.women-zai-nali-jianmian
+    targets: [s.women-zai-nali-jianmian]
+    context: [w.women, w.zai.at, w.nali, w.jianmian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde quedamos?»'}
+    answer: {meaning: '¿Dónde quedamos?'}
+    comments: []
+  - id: x.produce.ni-na-tian-keyi-lai
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.ni-na-tian-keyi-lai
+    targets: [s.ni-na-tian-keyi-lai]
+    context: [w.ni, w.na.which, w.tian, w.keyi, w.lai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué día puedes venir?»'}
+    answer: {meaning: '¿Qué día puedes venir?'}
+    comments: []
+  - id: x.listen.dlg-na-tian-jianmian
+    added: 2026-10-26
+    lang: es
+    type: listen
+    sentence: s.dlg-na-tian-jianmian
+    targets: [s.dlg-na-tian-jianmian]
+    context: [w.women, w.na.which, w.tian, w.jianmian, w.mingtian, w.zenmeyang, w.hao, w.jian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Qué día quedamos? —¿Qué tal mañana? —Vale, ¡hasta mañana!'}
+    comments: []
+  - id: x.charsound.jing
+    added: 2026-10-26
+    lang: es
+    type: charsound
+    targets: [w.yijing, w.jingli]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 经}
+    answer: {typed: jing1, hanzi: 经, pinyin: jīng, meaning: 'Sale en 已经 yǐjīng «ya», 经理 jīnglǐ «jefe, gerente».'}
+    comments: []
+  - id: x.produce.ni-na-tian-lai
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.ni-na-tian-lai
+    targets: [s.ni-na-tian-lai]
+    context: [w.ni, w.na.which, w.tian, w.lai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué día vienes?»'}
+    answer: {meaning: '¿Qué día vienes?'}
+    comments: []
+  - id: x.pair.xian-xian
+    added: '2026-10-26'
+    lang: es
+    type: listen
+    targets: [w.xianzai]
+    pair: [{hanzi: 现, pinyin: xiàn, meaning: 'actual, el de 现在'}, {hanzi: 先, pinyin: xiān, meaning: 'primero'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es xiàn, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 1.ª: xiàn 现, el de 现在 «ahora». La 2.ª era xiān 先 «primero».'}
     comments: []

@@ -158,17 +158,6 @@ entries:
     source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-16', text: '又 cuenta una repetición que ya ha ocurrido: 他又来了 «ha vuelto a venir». Para lo que aún no ha pasado se usa 再: 我明天再来.'}
-  - id: g.you-you
-    kind: group
-    basis: soundalike
-    title: '有 yǒu, 又 yòu y 右 yòu'
-    explanation: 'Las tres son you: 有 lleva tercer tono; 又 y 右 suenan igual y las separa la frase.'
-    members:
-      - {ref: w.you.have, cue: 'baja y sube (3.º): 我有姐姐'}
-      - {ref: w.you.repeat, cue: 'cae (4.º), delante del verbo: 他又来了'}
-      - {ref: w.you.right, cue: 'cae (4.º), lado: 左右'}
-    source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
-    comments: []
   - id: w.haishi
     use: say
     role: function
@@ -178,8 +167,10 @@ entries:
     meaning: {es: o (en una pregunta entre dos), en: or (in questions)}
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
     accept_pinyin_mismatch: '是 va en tono neutro: háishi'
+    accept_cards: 'pasa el tope por los contrastes y matices que pidió YAGO en sus notas del review 013 (lote 014)'
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Solo en preguntas que dan a elegir: 你喝茶还是喝咖啡？ «¿tomas té o café?». La pregunta ya está en 还是: no lleva 吗.'}
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '还是 tiene otro uso: «aun así, sigo», 我还是不懂 «sigo sin entenderlo». Y en 他今年还是学生 son 还 «todavía» + 是 «ser»: «sigue siendo estudiante».', original: 'Háishi también tiene otros dos usos habituales: Wǒ háishi bù dǒng. → Sigo sin entender.'}
   - id: g.ba-ne.look
     kind: group
     basis: visual
@@ -210,3 +201,25 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Para añadir algo: 还有，我明天不来 «y otra cosa: mañana no vengo». En una tienda, 还有吗？ «¿queda más?».'}
+  - id: w.huozhe
+    use: say
+    role: function
+    kind: word
+    hanzi: 或者
+    pinyin: huòzhě
+    meaning: {es: 'o (dando opciones, sin preguntar)', en: 'or (offering options)'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '或者 da opciones sin preguntar: 水或者茶都可以 «agua o té, me da igual». Para preguntar «¿esto o aquello?» se usa 还是: 你要水还是茶？.', original: 'Para empezar: «¿A o B?» → 还是. «A o B está bien» → 或者.'}
+  - id: g.you-you
+    kind: group
+    basis: set
+    title: '有 yǒu, 又 yòu y 右 yòu'
+    explanation: 'Las tres son you: 有 lleva tercer tono; 又 y 右 suenan igual y las separa la frase.'
+    members:
+      - {ref: w.you.have, cue: 'baja y sube (3.º): 我有姐姐'}
+      - {ref: w.you.repeat, cue: 'cae (4.º), delante del verbo: 他又来了'}
+      - {ref: w.you.right, cue: 'cae (4.º), lado: 左右'}
+    source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
+    comments:
+      - {kind: note, private: false, date: '2026-10-26', text: 'Se queda como serie, sin tarjeta de contraste propia: 又 y 右 suenan igual, así que se preguntan por el significado en el contraste de 有, 又, 要 y 右.'}

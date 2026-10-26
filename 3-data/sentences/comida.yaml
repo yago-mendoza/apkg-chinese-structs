@@ -479,3 +479,39 @@ sentences:
       - {text: ？}
     translation: {es: '¿Hay pescado en el restaurante?', en: 'Does the restaurant have fish?'}
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+  - id: s.wo-shenme-dou-chi
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 什么, ref: w.shenme, pinyin: 'shénme'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 吃, ref: w.chi, pinyin: 'chī'}
+      - {text: 。}
+    translation: {es: 'Como de todo.', en: 'I eat everything.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ta-zuo-de-fan-hen-haochi
+    use: say
+    kind: example
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 做, ref: w.zuo.do, pinyin: 'zuò'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 饭, ref: w.fan, pinyin: 'fàn'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 好吃, ref: w.haochi, pinyin: 'hǎochī'}
+      - {text: 。}
+    translation: {es: 'La comida que hace está muy rica.', en: 'The food he makes is delicious.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-yao-yi-bei-guozhi
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yì', sandhi: true}
+      - {text: 杯, ref: w.bei.cl, pinyin: 'bēi'}
+      - {text: 果汁, ref: w.guozhi, pinyin: 'guǒzhī'}
+      - {text: 。}
+    translation: {es: 'Quiero un zumo.', en: 'I would like a glass of juice.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}

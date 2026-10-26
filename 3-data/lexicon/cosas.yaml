@@ -167,6 +167,8 @@ entries:
     pinyin: néng
     meaning: {es: 'poder (ser capaz)', en: 'can, to be able to'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: '熊 xióng «oso» es 能 con cuatro patas 灬 debajo: un animal que lo puede todo.', original: 'MAS (parecidos, solo aue el oso añade abajo cuatro patas, un animal aue puede todo jajaja de poder neng, pues mas cuatro patas, xiong)'}
   - id: w.he.and
     use: say
     role: function
@@ -277,7 +279,8 @@ entries:
     pinyin: 'nán'
     meaning: {es: 'difícil', en: 'difficult'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
-    comments: []
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Con una mano 又 intentas levantar la estantería de cabezas 隹: es difícil.'}
   - id: w.feichang
     use: say
     role: function
@@ -379,11 +382,13 @@ entries:
   - id: g.na-dou
     kind: group
     basis: visual
-    title: '哪 y 都'
-    explanation: 'Comparten 阝 a la derecha; la izquierda los separa.'
+    title: '哪, 那, 都 y 脚'
+    explanation: 'Los cuatro llevan a la derecha algo parecido a una oreja (阝, y 卩 en 脚); la izquierda los separa.'
     members:
       - {ref: w.na.which, cue: '口 boca a la izquierda, porque pregunta'}
+      - {ref: w.na.that, cue: 'sin boca: solo señala'}
       - {ref: w.dou, cue: '者 a la izquierda'}
+      - {ref: w.jiao.foot, cue: '月 a la izquierda, 去 en medio y 卩 a la derecha'}
     source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
     comments: []
   - id: g.bi-bi
@@ -454,7 +459,8 @@ entries:
     pinyin: 'xiūxi'
     meaning: {es: 'descansar', en: 'to rest'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
-    comments: []
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Una persona 亻 junto a un árbol 木: descansa a su sombra. Debajo, en 息, uno mismo 自 (un ojo con un palito: verse a sí mismo) sobre su propio corazón 心.', original: 'Xiuxi - descansar Es hanzi Hombre contra arbol y un su propio (zi) corazon y encima lo de uno mismo Sabemos que el zì ds uno mismo porqe es un ojo con un palito, como, a uno mismo verse pajita en el propio oko slgo asi'}
   - id: w.zhao
     use: say
     role: content
@@ -810,4 +816,35 @@ entries:
       - {ref: w.qu, cue: '4.º, cae seco'}
       - {ref: w.qu.take, cue: '3.º, se hunde'}
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+    comments: []
+  - id: w.youxie
+    use: say
+    role: function
+    kind: word
+    hanzi: 有些
+    pinyin: yǒuxiē
+    meaning: {es: 'algunos, hay quien', en: some}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '有些 va al principio: 有些人不喝咖啡 «hay gente que no toma café». 一些 es «un poco de, unos cuantos» delante de lo que se cuenta: 一些水果.'}
+  - id: w.naxie.which
+    use: say
+    role: content
+    kind: word
+    hanzi: 哪些
+    pinyin: nǎxiē
+    meaning: {es: '¿cuáles?, ¿qué (cosas)?', en: which ones}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    relations: [w.zhexie, w.naxie]
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '这些, 那些 y 哪些: «estos», «esos» y «¿cuáles?», para varias cosas. Con 些 no hace falta 个: 那些人, nunca 那些个人.', original: 'Exacto: con 些 (xiē) no hace falta 个 (ge) en estos ejemplos. […] 些 expresa una cantidad imprecisa, así que dices 那些人, no 那些个人.'}
+  - id: g.naxie-naxie
+    kind: group
+    basis: soundalike
+    title: '那些 nàxiē y 哪些 nǎxiē'
+    explanation: 'Solo el tono y la boca 口 los separan: 那 señala, 哪 pregunta.'
+    members:
+      - {ref: w.naxie, cue: 'cae: señala'}
+      - {ref: w.naxie.which, cue: 'baja y sube, con boca 口: pregunta'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
     comments: []

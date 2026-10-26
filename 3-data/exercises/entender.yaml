@@ -326,17 +326,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¿Cómo se dice esto en chino?»'}
     answer: {meaning: '¿Cómo se dice esto en chino?'}
     comments: []
-  - id: x.produce.zhege-shi-shenme-yisi
-    added: 2026-10-11
-    lang: es
-    type: produce
-    sentence: s.zhege-shi-shenme-yisi
-    targets: [s.zhege-shi-shenme-yisi]
-    context: [w.zhe, w.ge, w.shi, w.shenme, w.yisi]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué significa esto?»'}
-    answer: {meaning: '¿Qué significa esto?'}
-    comments: []
   - id: x.produce.zhege-zi-zenme-du
     added: 2026-10-11
     lang: es
@@ -391,17 +380,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Déjame pensar.»'}
     answer: {meaning: Déjame pensar.}
-    comments: []
-  - id: x.produce.wo-dong-le
-    added: 2026-10-11
-    lang: es
-    type: produce
-    sentence: s.wo-dong-le
-    targets: [s.wo-dong-le]
-    context: [w.wo, w.dong, w.le]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Ya lo entiendo.»'}
-    answer: {meaning: Ya lo entiendo.}
     comments: []
   - id: x.produce.wo-xiang-wen-ni-yi-ge-wenti
     added: 2026-10-11
@@ -650,15 +628,6 @@ exercises:
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: wang4 ji4, hanzi: 忘记, pinyin: wàngjì, meaning: olvidar}
     comments: []
-  - id: x.produce.wangji
-    added: 2026-10-19
-    lang: es
-    type: produce
-    targets: [w.wangji]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «olvidar»? Escribe el pinyin.'}
-    answer: {typed: wang4 ji4, hanzi: 忘记, pinyin: wàngjì, meaning: olvidar}
-    comments: []
   - id: x.read.wangji
     added: 2026-10-19
     lang: es
@@ -689,25 +658,15 @@ exercises:
     answer: {typed: ji4, hanzi: 记, pinyin: jì, meaning: 'Sale en 记得 jìde «acordarse, recordar», 忘记 wàngjì «olvidar», 笔记 bǐjì
         «apuntes, notas».'}
     comments: []
-  - id: x.produce.wo-wangji-le
-    added: 2026-10-19
-    lang: es
-    type: produce
-    sentence: s.wo-wangji-le
-    targets: [s.wo-wangji-le]
-    context: [w.wo, w.wangji, w.le]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Se me ha olvidado.»'}
-    answer: {meaning: Se me ha olvidado.}
-    comments: []
   - id: x.produce.wo-mingbai-le
     added: 2026-10-06
     lang: es
     type: produce
     sentence: s.wo-mingbai-le
-    targets: [s.wo-mingbai-le]
+    targets: [s.wo-mingbai-le, s.wo-dong-le]
     context: [w.wo, w.mingbai, w.le]
     skills: [production, speaking]
+    also: [s.wo-dong-le]
     prompt: {text: 'Dilo en chino, en voz alta: «Ya lo entiendo.»'}
     answer: {meaning: Ya lo entiendo.}
     comments: []
@@ -972,9 +931,10 @@ exercises:
     lang: es
     type: produce
     sentence: s.zhe-shi-shenme-yisi
-    targets: [s.zhe-shi-shenme-yisi]
+    targets: [s.zhe-shi-shenme-yisi, s.zhege-shi-shenme-yisi]
     context: [w.zhe, w.shi, w.shenme, w.yisi]
     skills: [production, speaking]
+    also: [s.zhege-shi-shenme-yisi]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Qué significa esto?»'}
     answer: {meaning: '¿Qué significa esto?'}
     comments: []
@@ -1021,4 +981,98 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Lo has oído?»'}
     answer: {meaning: '¿Lo has oído?'}
+    comments: []
+  - id: x.nuance.tingbujian-tingbudong
+    added: '2026-10-26'
+    lang: es
+    type: nuance
+    targets: [w.dong, w.ting]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我听不懂 y 我听不见: ¿qué cambia?'}
+    answer: {meaning: '听不见: no te llega el sonido. 听不懂: lo oyes, pero no lo entiendes.'}
+    comments: []
+  - id: x.nuance.tingbudong-bumingbai
+    added: '2026-10-26'
+    lang: es
+    type: nuance
+    targets: [w.dong, w.mingbai]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我听不懂他说的话 y 我不明白他的话: ¿qué cambia?'}
+    answer: {meaning: '听不懂: no entiendes lo que oyes, el idioma o las palabras. 不明白: entiendes las palabras, pero no lo que quiere decir.'}
+    comments: []
+  - id: x.situation.ting-bu-jian
+    added: '2026-10-26'
+    lang: es
+    type: speak
+    sentence: s.wo-ting-bu-jian
+    targets: [s.wo-ting-bu-jian]
+    skills: [production, speaking]
+    accept_pinyin_mismatch: '不 átono entre 听 y 见: tīng bu jiàn'
+    prompt: {text: 'Situación. Te llaman por teléfono desde un sitio con mucho ruido y no oyes nada. ¿Qué dices?'}
+    answer: {hanzi: '我听不见。', pinyin: 'wǒ tīng bu jiàn', meaning: 'no lo oigo'}
+    comments: []
+  - id: x.compose.reunion-no-entiendo
+    added: '2026-10-26'
+    lang: es
+    type: compose
+    targets: [s.wo-ting-bu-dong-ta-shuo-de-hua, s.qing-shuo-man-yidian, s.wo-hai-bu-mingbai]
+    words: [w.ting, w.dong, w.qing, w.man, w.hai.still, w.mingbai]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. En una reunión, un cliente habla muy deprisa y no le sigues. Dilo, y pide que vaya más despacio, con estas palabras o con otras.'}
+    answer: {meaning: '听不懂 es no entender lo que oyes; 还不明白, que aún no lo tienes claro. 请说慢一点 lo arregla.'}
+    comments: []
+  - id: x.produce.wo-hai-bu-mingbai
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-hai-bu-mingbai
+    targets: [s.wo-hai-bu-mingbai]
+    context: [w.wo, w.hai.still, w.bu, w.mingbai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Todavía no lo entiendo.»'}
+    answer: {meaning: Todavía no lo entiendo.}
+    comments: []
+  - id: x.produce.wo-haishi-bu-dong
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-haishi-bu-dong
+    targets: [s.wo-haishi-bu-dong]
+    context: [w.wo, w.haishi, w.bu, w.dong]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Sigo sin entenderlo.»'}
+    answer: {meaning: Sigo sin entenderlo.}
+    comments: []
+  - id: x.produce.wo-ting-bu-jian
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-ting-bu-jian
+    targets: [s.wo-ting-bu-jian]
+    context: [w.wo, w.ting, w.bu, w.jian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No lo oigo.»'}
+    answer: {meaning: No lo oigo.}
+    comments: []
+  - id: x.produce.wo-ting-bu-dong-ta-shuo-de-hua
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-ting-bu-dong-ta-shuo-de-hua
+    targets: [s.wo-ting-bu-dong-ta-shuo-de-hua]
+    context: [w.wo, w.ting, w.bu, w.dong, w.ta.he, w.shuo, w.de, w.hua.words]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No le entiendo cuando habla.»'}
+    answer: {meaning: No le entiendo cuando habla.}
+    comments: []
+  - id: x.produce.wo-shuo-le-wo-bu-yao-shui
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-shuo-le-wo-bu-yao-shui
+    targets: [s.wo-shuo-le-wo-bu-yao-shui]
+    context: [w.wo, w.shuo, w.le, w.bu, w.yao, w.shui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Ya te he dicho que no quiero agua!»'}
+    answer: {meaning: ¡Ya te he dicho que no quiero agua!}
     comments: []

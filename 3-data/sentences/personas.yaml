@@ -254,3 +254,72 @@ sentences:
       - {text: 。}
     translation: {es: 'Todos los demás ya han venido.', en: 'The others have already come.'}
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.gen-wo-lai
+    use: say
+    kind: formula
+    segments:
+      - {text: 跟, ref: w.gen, pinyin: 'gēn'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 来, ref: w.lai, pinyin: 'lái'}
+      - {text: 。}
+    translation: {es: 'Sígueme.', en: 'Follow me.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.women-yiqi-qu-ba
+    use: say
+    kind: example
+    segments:
+      - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
+      - {text: 一起, ref: w.yiqi, pinyin: 'yìqǐ', sandhi: true}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 吧, ref: w.ba.particle, pinyin: 'ba'}
+      - {text: 。}
+    translation: {es: 'Vamos juntos.', en: 'Let us go together.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-yi-ge-ren-qu
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yí', sandhi: true}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 。}
+    translation: {es: 'Voy solo.', en: 'I am going alone.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-gen-ni-yiqi-qu
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 跟, ref: w.gen, pinyin: 'gēn'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 一起, ref: w.yiqi, pinyin: 'yìqǐ', sandhi: true}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 。}
+    translation: {es: 'Voy contigo.', en: 'I will go with you.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.dlg-yi-ge-ren-qu
+    use: hear
+    kind: example
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yí', sandhi: true}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: ，}
+      - {text: 还是, ref: w.haishi, pinyin: 'háishi'}
+      - {text: 跟, ref: w.gen, pinyin: 'gēn'}
+      - {text: 朋友, ref: w.pengyou, pinyin: 'péngyou'}
+      - {text: 一起, ref: w.yiqi, pinyin: 'yìqǐ', sandhi: true}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: ？}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 跟, ref: w.gen, pinyin: 'gēn'}
+      - {text: 朋友, ref: w.pengyou, pinyin: 'péngyou'}
+      - {text: 一起, ref: w.yiqi, pinyin: 'yìqǐ', sandhi: true}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 。}
+    translation: {es: '—¿Vas solo o con amigos? —Voy con unos amigos.', en: '—Are you going alone or with friends? —I am going with friends.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}

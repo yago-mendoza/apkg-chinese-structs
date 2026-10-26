@@ -11,6 +11,7 @@ entries:
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Dos sentidos: «pensar» y «querer, tener ganas de».', original: think / desire}
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '我想想 «déjame pensar»: el verbo repetido es «un momento, un poco», como 看看 «echar un vistazo».', original: 'Wo xiang xiang me encanta como dejame pensar jajajaja auqnue seria mas algo ssi como @pienso..  pensando..." no?'}
   - id: w.qu
     use: say
     role: content
@@ -414,6 +415,7 @@ entries:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19', with_class: '2026-10-15'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'En recetas, etiquetas y la báscula: 一百克 «cien gramos». 一斤 son 500 克.'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Un pesito con patas colgado de un cable: un gramito de algo.', original: 'kè, gramo, se ve ltieral como un peso con aptas colgado de un cable, como nu gramito de algo. gramo. MNEMOTECNIA'}
   - id: w.qianke
     use: hear
     role: content
@@ -449,6 +451,11 @@ entries:
       - {ref: w.liang.weight, cue: 'tradicional: 二两面'}
       - {ref: w.jin.weight, cue: 'el del mercado: 一斤苹果'}
       - {ref: w.gongjin, cue: 'el del sistema métrico: 一公斤'}
+    scale:
+      - {ref: w.ke.gram, label: '1 g'}
+      - {ref: w.liang.weight, label: '50 g = 50 克'}
+      - {ref: w.jin.weight, label: '500 g = 10 两'}
+      - {ref: w.gongjin, label: '1 kg = 2 斤'}
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19', with_class: '2026-10-15'}
     comments: []
   - id: w.menpiao

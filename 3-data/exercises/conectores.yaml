@@ -216,17 +216,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Como llueve, no voy.»'}
     answer: {meaning: 'Como llueve, no voy.'}
     comments: []
-  - id: x.produce.ruguo-ni-xihuan-jiu-mai-ba
-    added: 2026-10-01
-    lang: es
-    type: produce
-    sentence: s.ruguo-ni-xihuan-jiu-mai-ba
-    targets: [s.ruguo-ni-xihuan-jiu-mai-ba]
-    context: [w.ruguo, w.ni, w.xihuan, w.jiu, w.mai, w.ba.particle]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Si te gusta, cómpralo.»'}
-    answer: {meaning: 'Si te gusta, cómpralo.'}
-    comments: []
   - id: x.listen.suiran-hen-lei-danshi
     added: 2026-10-01
     lang: es
@@ -278,12 +267,14 @@ exercises:
     lang: es
     type: produce
     sentence: s.ni-xihuan-jiu-mai-ba
-    targets: [s.ni-xihuan-jiu-mai-ba]
+    targets: [s.ni-xihuan-jiu-mai-ba, s.ruguo-ni-xihuan-jiu-mai-ba]
     context: [w.ni, w.xihuan, w.jiu, w.mai, w.ba.particle]
     skills: [production, speaking]
+    also: [s.ruguo-ni-xihuan-jiu-mai-ba]
     prompt: {text: 'Dilo en chino, en voz alta: «Si te gusta, cómpralo.»'}
     answer: {meaning: 'Si te gusta, cómpralo.'}
-    comments: []
+    comments:
+      - {kind: usage, private: false, date: '2026-10-26', text: '如果 «si» puede ir delante o no: con 就 ya se entiende la condición, y al hablar se suele omitir.'}
   - id: x.dictation.yibian
     added: 2026-10-01
     lang: es
@@ -462,25 +453,6 @@ exercises:
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 好吧, pinyin: hao ba}
     answer: {typed: '35', hanzi: 好吧, pinyin: hǎo ba, meaning: 'bueno, vale (aceptando)'}
     comments: []
-  - id: x.contrast.you.repeat
-    added: 2026-10-16
-    lang: es
-    type: contrast
-    group: g.you-you
-    targets: [w.you.repeat]
-    skills: [listening, tones, discrimination]
-    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
-    answer: {hanzi: 又, pinyin: yòu, meaning: otra vez (lo que ya ha pasado)}
-    comments: []
-  - id: x.dictation.you.repeat
-    added: 2026-10-16
-    lang: es
-    type: listen
-    targets: [w.you.repeat]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: you4, hanzi: 又, pinyin: yòu, meaning: otra vez (lo que ya ha pasado)}
-    comments: []
   - id: x.cloze.you.repeat
     added: 2026-10-16
     lang: es
@@ -499,8 +471,8 @@ exercises:
     type: read
     targets: [w.you.repeat]
     skills: [reading, pinyin]
-    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 又}
-    answer: {hanzi: 又, pinyin: yòu, meaning: otra vez (lo que ya ha pasado)}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado de 又.', hanzi: 他又来了}
+    answer: {hanzi: 又, pinyin: yòu, meaning: 'otra vez, lo que ya ha pasado: 他又来了 «ha vuelto a venir»'}
     comments: []
   - id: x.produce.wo-mingtian-zai-xuexi-zhongwen
     added: 2026-10-16
@@ -720,4 +692,86 @@ exercises:
     skills: [comprehension, discrimination]
     prompt: {text: '我明天来 y 我明天再来: ¿qué cambia?'}
     answer: {meaning: '我明天来: vengo mañana. 我明天再来: vuelvo mañana, vengo otra vez (再 «de nuevo»).'}
+    comments: []
+  - id: x.nuance.haishi-huozhe
+    added: '2026-10-26'
+    lang: es
+    type: nuance
+    targets: [w.haishi, w.huozhe]
+    skills: [comprehension, discrimination]
+    prompt: {text: '你要水还是茶？ y 水或者茶都可以: ¿por qué uno lleva 还是 y el otro 或者?'}
+    answer: {meaning: '还是 pregunta y pide que elijas: «¿agua o té?». 或者 solo da las opciones, sin preguntar: «agua o té, me da igual».'}
+    comments: []
+  - id: x.nuance.haishi-hai-shi
+    added: '2026-10-26'
+    lang: es
+    type: nuance
+    targets: [w.haishi, w.hai.still]
+    skills: [comprehension, discrimination]
+    prompt: {text: '他今年还是学生 y 你要水还是茶？: ¿es el mismo 还是?'}
+    answer: {meaning: 'No. En la primera son 还 «todavía» + 是 «ser»: «sigue siendo estudiante». En la segunda, 还是 es «o», al preguntar.'}
+    comments: []
+  - id: x.cloze.haishi.choose
+    added: '2026-10-26'
+    lang: es
+    type: cloze
+    sentence: s.ni-yao-shui-haishi-cha
+    gap: w.haishi
+    targets: [w.haishi]
+    context: [w.ni, w.yao, w.shui, w.cha]
+    skills: [production, pinyin]
+    prompt: {text: '¿还是 o 或者? Completa en pinyin: «¿Quieres agua o té?»'}
+    answer: {typed: hai2 shi5, hanzi: 还是, pinyin: háishi, meaning: 'o, al preguntar: elige'}
+    comments: []
+  - id: x.cloze.huozhe
+    added: '2026-10-26'
+    lang: es
+    type: cloze
+    sentence: s.shui-huozhe-cha-dou-keyi
+    gap: w.huozhe
+    targets: [w.huozhe]
+    context: [w.shui, w.cha, w.dou, w.keyi]
+    skills: [production, pinyin]
+    prompt: {text: '¿还是 o 或者? Completa en pinyin: «Agua o té, me da igual.»'}
+    answer: {typed: huo4 zhe3, hanzi: 或者, pinyin: huòzhě, meaning: 'o, dando opciones sin preguntar'}
+    comments: []
+  - id: x.dictation.huozhe
+    added: 2026-10-26
+    lang: es
+    type: listen
+    targets: [w.huozhe]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: huo4 zhe3, hanzi: 或者, pinyin: huòzhě, meaning: 'o (dando opciones, sin preguntar)'}
+    comments: []
+  - id: x.read.huozhe
+    added: 2026-10-26
+    lang: es
+    type: read
+    targets: [w.huozhe]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 或者}
+    answer: {hanzi: 或者, pinyin: huòzhě, meaning: 'o (dando opciones, sin preguntar)'}
+    comments: []
+  - id: x.produce.ni-yao-shui-haishi-cha
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.ni-yao-shui-haishi-cha
+    targets: [s.ni-yao-shui-haishi-cha]
+    context: [w.ni, w.yao, w.shui, w.haishi, w.cha]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Quieres agua o té?»'}
+    answer: {meaning: '¿Quieres agua o té?'}
+    comments: []
+  - id: x.produce.shui-huozhe-cha-dou-keyi
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.shui-huozhe-cha-dou-keyi
+    targets: [s.shui-huozhe-cha-dou-keyi]
+    context: [w.shui, w.huozhe, w.cha, w.dou, w.keyi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Agua o té, me da igual.»'}
+    answer: {meaning: 'Agua o té, me da igual.'}
     comments: []

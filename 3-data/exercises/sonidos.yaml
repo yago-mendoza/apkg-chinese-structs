@@ -47,7 +47,7 @@ exercises:
     type: listen
     targets: [p.sibilants]
     refs: [p.sibilants]
-    pair: [{hanzi: 是, pinyin: shì, meaning: 'La 2.ª: chī 吃.'}, {hanzi: 吃, pinyin: chī, meaning: comer}]
+    pair: [{hanzi: 是, pinyin: shì, meaning: ser}, {hanzi: 吃, pinyin: chī, meaning: comer}]
     skills: [listening, discrimination]
     prompt: {text: 'Suenan dos sílabas. ¿Cuál es chī, la 1.ª o la 2.ª?', audio: true}
     answer: {meaning: 'La 2.ª: chī 吃. ch empieza con un golpe de aire; sh (是 shì) es un soplo seguido.'}
@@ -58,7 +58,7 @@ exercises:
     type: listen
     targets: [p.sibilants]
     refs: [p.sibilants]
-    pair: [{hanzi: 四, pinyin: sì, meaning: 'La 1.ª: sì 四.'}, {hanzi: 是, pinyin: shì, meaning: ser}]
+    pair: [{hanzi: 四, pinyin: sì, meaning: cuatro}, {hanzi: 是, pinyin: shì, meaning: ser}]
     skills: [listening, discrimination]
     prompt: {text: 'Suenan dos sílabas. ¿Cuál es sì, la 1.ª o la 2.ª?', audio: true}
     answer: {meaning: 'La 1.ª: sì 四, lengua plana, la s española. shì 是 suena más hueca, con la punta curvada.'}
@@ -69,7 +69,7 @@ exercises:
     type: listen
     targets: [p.jqx-zhchsh]
     refs: [p.jqx-zhchsh, p.sibilants]
-    pair: [{hanzi: 七, pinyin: qī, meaning: 'La 2.ª: chī 吃.'}, {hanzi: 吃, pinyin: chī, meaning: comer}]
+    pair: [{hanzi: 七, pinyin: qī, meaning: siete}, {hanzi: 吃, pinyin: chī, meaning: comer}]
     skills: [listening, discrimination]
     prompt: {text: 'Suenan dos sílabas. ¿Cuál es chī, la 1.ª o la 2.ª?', audio: true}
     answer: {meaning: 'La 2.ª: chī 吃. Su i no es i: un zumbido con la lengua curvada. En qī 七 es una i de verdad.'}
@@ -80,7 +80,7 @@ exercises:
     type: listen
     targets: [p.sibilants]
     refs: [p.sibilants]
-    pair: [{hanzi: 次, pinyin: cì, meaning: 'La 1.ª: cì 次.'}, {hanzi: 四, pinyin: sì, meaning: cuatro}]
+    pair: [{hanzi: 次, pinyin: cì, meaning: vez}, {hanzi: 四, pinyin: sì, meaning: cuatro}]
     skills: [listening, discrimination]
     prompt: {text: 'Suenan dos sílabas. ¿Cuál es cì, la 1.ª o la 2.ª?', audio: true}
     answer: {meaning: 'La 1.ª: cì 次, «ts» con un golpe de aire. sì 四 es una s seguida.'}
@@ -91,7 +91,7 @@ exercises:
     type: listen
     targets: [p.jqx-zhchsh]
     refs: [p.jqx-zhchsh, p.sibilants]
-    pair: [{hanzi: 师, pinyin: shī, meaning: 'La 2.ª: xī 西.'}, {hanzi: 西, pinyin: xī, meaning: oeste}]
+    pair: [{hanzi: 师, pinyin: shī, meaning: maestro}, {hanzi: 西, pinyin: xī, meaning: oeste}]
     skills: [listening, discrimination]
     prompt: {text: 'Suenan dos sílabas. ¿Cuál es xī, la 1.ª o la 2.ª?', audio: true}
     answer: {meaning: 'La 2.ª: xī 西, lengua plana y una i de verdad. En shī 师, zumbido con la lengua curvada.'}
@@ -102,7 +102,7 @@ exercises:
     type: listen
     targets: [p.sibilants]
     refs: [p.sibilants]
-    pair: [{hanzi: 找, pinyin: zhǎo, meaning: 'La 1.ª: zhǎo 找.'}, {hanzi: 早, pinyin: zǎo, meaning: temprano}]
+    pair: [{hanzi: 找, pinyin: zhǎo, meaning: buscar}, {hanzi: 早, pinyin: zǎo, meaning: temprano}]
     skills: [listening, discrimination]
     prompt: {text: 'Suenan dos sílabas. ¿Cuál es zhǎo, la 1.ª o la 2.ª?', audio: true}
     answer: {meaning: 'La 1.ª: zhǎo 找, punta curvada, hueca. zǎo 早 es «ts», lengua plana.'}
@@ -113,7 +113,7 @@ exercises:
     type: listen
     targets: [p.sibilants]
     refs: [p.sibilants]
-    pair: [{hanzi: 草, pinyin: cǎo, meaning: 'La 1.ª: cǎo 草.'}, {hanzi: 吵, pinyin: chǎo, meaning: ruidoso}]
+    pair: [{hanzi: 草, pinyin: cǎo, meaning: hierba}, {hanzi: 吵, pinyin: chǎo, meaning: ruidoso}]
     skills: [listening, discrimination]
     prompt: {text: 'Suenan dos sílabas. ¿Cuál es cǎo, la 1.ª o la 2.ª?', audio: true}
     answer: {meaning: 'La 1.ª: cǎo 草, lengua plana, «ts» con aire. chǎo 吵 lleva la punta curvada.'}
@@ -124,7 +124,7 @@ exercises:
     type: listen
     targets: [p.sibilants]
     refs: [p.sibilants]
-    pair: [{hanzi: 虾, pinyin: xiā, meaning: 'La 2.ª: jiā 家.'}, {hanzi: 家, pinyin: jiā, meaning: casa}]
+    pair: [{hanzi: 虾, pinyin: xiā, meaning: gamba}, {hanzi: 家, pinyin: jiā, meaning: casa}]
     skills: [listening, discrimination]
     prompt: {text: 'Suenan dos sílabas. ¿Cuál es jiā, la 1.ª o la 2.ª?', audio: true}
     answer: {meaning: 'La 2.ª: jiā 家, empieza con un cierre suave. xiā 虾 es un soplo seguido.'}
@@ -135,7 +135,7 @@ exercises:
     type: listen
     targets: [p.sibilants]
     refs: [p.sibilants]
-    pair: [{hanzi: 新, pinyin: xīn, meaning: 'La 2.ª: qīn 亲.'}, {hanzi: 亲, pinyin: qīn, meaning: pariente}]
+    pair: [{hanzi: 新, pinyin: xīn, meaning: nuevo}, {hanzi: 亲, pinyin: qīn, meaning: pariente}]
     skills: [listening, discrimination]
     prompt: {text: 'Suenan dos sílabas. ¿Cuál es qīn, la 1.ª o la 2.ª?', audio: true}
     answer: {meaning: 'La 2.ª: qīn 亲, con un golpe de aire. xīn 新 es un soplo seguido.'}
@@ -146,7 +146,7 @@ exercises:
     type: listen
     targets: [p.sibilants]
     refs: [p.sibilants]
-    pair: [{hanzi: 球, pinyin: qiú, meaning: 'La 2.ª: jiǔ 九.'}, {hanzi: 九, pinyin: jiǔ, meaning: nueve}]
+    pair: [{hanzi: 球, pinyin: qiú, meaning: pelota}, {hanzi: 九, pinyin: jiǔ, meaning: nueve}]
     skills: [listening, discrimination]
     prompt: {text: 'Suenan dos sílabas. ¿Cuál es jiǔ, la 1.ª o la 2.ª?', audio: true}
     answer: {meaning: 'La 2.ª: jiǔ 九, sin aire y baja. qiú 球 lleva golpe de aire y sube.'}
@@ -157,7 +157,7 @@ exercises:
     type: listen
     targets: [p.n-ng]
     refs: [p.n-ng]
-    pair: [{hanzi: 星, pinyin: xīng, meaning: 'La 2.ª: xīn 心.'}, {hanzi: 心, pinyin: xīn, meaning: corazón}]
+    pair: [{hanzi: 星, pinyin: xīng, meaning: estrella}, {hanzi: 心, pinyin: xīn, meaning: corazón}]
     skills: [listening, discrimination]
     prompt: {text: 'Suenan dos sílabas. ¿Cuál es xīn, la 1.ª o la 2.ª?', audio: true}
     answer: {meaning: 'La 2.ª: xīn 心, acaba con la lengua tras los dientes. xīng 星 acaba atrás, -ng.'}
@@ -168,7 +168,7 @@ exercises:
     type: listen
     targets: [p.n-ng]
     refs: [p.n-ng]
-    pair: [{hanzi: 饭, pinyin: fàn, meaning: 'La 2.ª: fàng 放.'}, {hanzi: 放, pinyin: fàng, meaning: poner}]
+    pair: [{hanzi: 饭, pinyin: fàn, meaning: comida}, {hanzi: 放, pinyin: fàng, meaning: poner}]
     skills: [listening, discrimination]
     prompt: {text: 'Suenan dos sílabas. ¿Cuál es fàng, la 1.ª o la 2.ª?', audio: true}
     answer: {meaning: 'La 2.ª: fàng 放, acaba atrás, con la boca abierta. fàn 饭 acaba en -n, la a más clara.'}
@@ -179,7 +179,7 @@ exercises:
     type: listen
     targets: [p.y-w-u]
     refs: [p.y-w-u]
-    pair: [{hanzi: 去, pinyin: qù, meaning: 'La 2.ª: chū 出.'}, {hanzi: 出, pinyin: chū, meaning: salir}]
+    pair: [{hanzi: 去, pinyin: qù, meaning: ir}, {hanzi: 出, pinyin: chū, meaning: salir}]
     skills: [listening, discrimination]
     prompt: {text: 'Suenan dos sílabas. ¿Cuál es chū, la 1.ª o la 2.ª?', audio: true}
     answer: {meaning: 'La 2.ª: chū 出, una u de verdad, como en «tú». En qù 去 es ü: labios de u y lengua de i.'}
@@ -386,4 +386,37 @@ exercises:
     skills: [listening, discrimination]
     prompt: {text: 'Suenan dos. ¿Cuál es chī, la 1.ª o la 2.ª?', audio: true}
     answer: {meaning: 'La 2.ª: chī 吃, plana y alta, con la lengua doblada. 去 qù cae y lleva ü.'}
+    comments: []
+  - id: x.pair.chi-ci
+    added: '2026-10-26'
+    lang: es
+    type: listen
+    targets: [p.sibilants]
+    refs: [p.sibilants]
+    pair: [{hanzi: 次, pinyin: cì, meaning: 'vez'}, {hanzi: 吃, pinyin: chī, meaning: 'comer'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es chī, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: chī 吃 «comer». La 1.ª era cì 次 «vez».'}
+    comments: []
+  - id: x.pair.ke-ge
+    added: '2026-10-26'
+    lang: es
+    type: listen
+    targets: [p.aspiration]
+    refs: [p.aspiration]
+    pair: [{hanzi: 渴, pinyin: kě, meaning: 'tener sed'}, {hanzi: 个, pinyin: gè, meaning: 'clasificador general'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es kě, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 1.ª: kě 渴 «tener sed». La 2.ª era gè 个, el clasificador.'}
+    comments: []
+  - id: x.pair.meng-men
+    added: '2026-10-26'
+    lang: es
+    type: listen
+    targets: [p.n-ng]
+    refs: [p.n-ng]
+    pair: [{hanzi: 门, pinyin: mén, meaning: 'puerta'}, {hanzi: 孟, pinyin: Mèng, meaning: 'Mèng, tu apellido'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es Mèng, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: Mèng 孟, tu apellido. La 1.ª era mén 门 «puerta».'}
     comments: []

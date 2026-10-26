@@ -55,7 +55,8 @@ entries:
     pinyin: háizi
     meaning: {es: 'niño, niña; hijo, hija', en: child}
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-13-15.txt, date: '2026-09-23'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '孩 hái suena igual que 还 hái «todavía», pero es otro carácter: lleva 子 «niño» a la izquierda.', original: 'Diferencia hái de todavia y del de háizi'}
   - id: w.xiaohai
     use: hear
     role: content
@@ -150,6 +151,7 @@ entries:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'No solo «tía»: así se llama a cualquier mujer de la edad de tus padres. 王阿姨 es «la señora Wang».'}
+      - {kind: usage, private: false, date: '2026-10-26', text: '阿姨 es la forma de todos los días para una mujer de la edad de tus padres (la de la tienda, la vecina): 阿姨，您好！. 女士 nǚshì [HSK 4] es formal y no dice edad.', original: '阿姨 (āyí) se usa para dirigirte con cercanía a una mujer de la generación de tus padres, aunque no sea familia. […] 阿姨 es familiar; 女士, formal y sin referencia a la edad.'}
   - id: w.shushu
     use: say
     role: content
@@ -161,6 +163,7 @@ entries:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Los niños lo dicen a los amigos de sus padres.'}
+      - {kind: usage, private: false, date: '2026-10-26', text: 'A un desconocido basta con 请问; 叔叔 se dice en familia, o lo dicen los niños. Para un hombre, en registro formal, 先生.', original: '叔叔 (shūshu) también se usa, pero con tus 28 años lo reservaría para situaciones familiares; para dirigirte a un desconocido suele bastar 请问.'}
   - id: w.yeye
     use: say
     role: content
@@ -170,7 +173,8 @@ entries:
     meaning: {es: 'abuelo (paterno)', en: 'grandpa'}
     accept_pinyin_mismatch: 'la segunda sílaba se dice átona en el habla'
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-    comments: []
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: '爷 lleva arriba el 父 de padre, pero debajo le cuelga como una bata raída, vieja como él.', original: 'El habI de abuelo es como el de padre peor abajo hay como una bata raída, vieja como él mismo'}
   - id: w.nainai
     use: say
     role: content
@@ -180,7 +184,8 @@ entries:
     meaning: {es: 'abuela (paterna)', en: 'grandma'}
     accept_pinyin_mismatch: 'la segunda sílaba se dice átona en el habla'
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-    comments: []
+    comments:
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: '奶 lleva 女 a la izquierda: la abuela también es una mujer.', original: 'Nainai abuela es una mujer tambien.'}
   - id: w.fumu
     use: hear
     role: content
@@ -189,7 +194,8 @@ entries:
     pinyin: 'fùmǔ'
     meaning: {es: 'los padres', en: 'parents'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: 'Palabra a palabra: 父 «padre» + 母 «madre». 你父母多大年纪了？ «¿qué edad tienen tus padres?»: con 了, la edad a la que han llegado.'}
   - id: g.titles
     kind: group
     basis: set

@@ -191,3 +191,27 @@ sentences:
       - {text: 。}
     translation: {es: 'Mejor pregúntale a la profesora.', en: 'You''d better ask the teacher.'}
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.ni-yao-shui-haishi-cha
+    use: say
+    kind: example
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 水, ref: w.shui, pinyin: 'shuǐ'}
+      - {text: 还是, ref: w.haishi, pinyin: 'háishi'}
+      - {text: 茶, ref: w.cha, pinyin: 'chá'}
+      - {text: ？}
+    translation: {es: '¿Quieres agua o té?', en: 'Do you want water or tea?'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.shui-huozhe-cha-dou-keyi
+    use: say
+    kind: example
+    segments:
+      - {text: 水, ref: w.shui, pinyin: 'shuǐ'}
+      - {text: 或者, ref: w.huozhe, pinyin: 'huòzhě'}
+      - {text: 茶, ref: w.cha, pinyin: 'chá'}
+      - {text: 都, ref: w.dou, pinyin: 'dōu'}
+      - {text: 可以, ref: w.keyi, pinyin: 'kěyǐ'}
+      - {text: 。}
+    translation: {es: 'Agua o té, me da igual.', en: 'Water or tea, either is fine.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}

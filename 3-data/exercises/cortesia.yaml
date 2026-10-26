@@ -984,11 +984,12 @@ exercises:
     added: 2026-10-06
     lang: es
     type: produce
-    targets: [w.wang.forget]
+    targets: [w.wang.forget, w.wangji]
     skills: [production, pinyin]
     prompt: {text: '¿Cómo se dice «olvidar»? Escribe el pinyin.'}
-    answer: {typed: wang4, hanzi: 忘, pinyin: wàng, meaning: olvidar}
-    comments: []
+    answer: {typed: wang4, hanzi: 忘, pinyin: wàng, meaning: olvidar, accept: [wang4 ji4]}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: 'Valen 忘 y 忘记. Al hablar se oye más 忘了 («se me ha olvidado»); 忘记 es la palabra completa, la que se escribe y la de 别忘记.'}
   - id: x.read.wang.forget
     added: 2026-10-06
     lang: es
@@ -1142,12 +1143,14 @@ exercises:
     lang: es
     type: produce
     sentence: s.wo-wang-le
-    targets: [s.wo-wang-le]
+    targets: [s.wo-wang-le, s.wo-wangji-le]
     context: [w.wo, w.wang.forget, w.le]
     skills: [production, speaking]
+    also: [s.wo-wangji-le]
     prompt: {text: 'Dilo en chino, en voz alta: «Se me ha olvidado.»'}
     answer: {meaning: Se me ha olvidado.}
-    comments: []
+    comments:
+      - {kind: usage, private: false, date: '2026-10-26', text: 'Al hablar se oye más 我忘了; 我忘记了 es la forma completa y dice lo mismo.'}
   - id: x.produce.xiaoxin-2
     added: 2026-10-06
     lang: es
@@ -1998,15 +2001,6 @@ exercises:
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: mei2 shen2 me5, hanzi: 没什么, pinyin: méi shénme, meaning: no es nada; no pasa nada}
     comments: []
-  - id: x.produce.meishenme
-    added: 2026-10-19
-    lang: es
-    type: produce
-    targets: [e.meishenme]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «no es nada; no pasa nada»? Escribe el pinyin.'}
-    answer: {typed: mei2 shen2 me5, hanzi: 没什么, pinyin: méi shénme, meaning: no es nada; no pasa nada}
-    comments: []
   - id: x.read.meishenme
     added: 2026-10-19
     lang: es
@@ -2054,7 +2048,7 @@ exercises:
     lang: es
     type: produce
     sentence: s.meishenme
-    targets: [s.meishenme]
+    targets: [s.meishenme, e.meishenme]
     context: [e.meishenme]
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «No es nada.»'}
@@ -2477,4 +2471,83 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «No pasa nada.»'}
     answer: {meaning: No pasa nada.}
+    comments: []
+  - id: x.nuance.mingbai-dong
+    added: '2026-10-26'
+    lang: es
+    type: nuance
+    targets: [w.mingbai, w.dong]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我明白了 y 我懂了: ¿qué cambia?'}
+    answer: {meaning: 'Casi nada: los dos son «ya lo entiendo». 明白 es captar lo que alguien quiere decir; 懂, algo que hay que saber descifrar, como un idioma: 我听不懂.'}
+    comments: []
+  - id: x.choice.shide-hotel
+    added: '2026-10-26'
+    lang: es
+    type: speak
+    targets: [e.shide]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. En la recepción del hotel te preguntan esto, y sí, eres tú.', said: 你是孟先生吗？, said_es: '¿Es usted el señor Mèng?', options: [好的, 是的, 不客气]}
+    answer: {choice: b, hanzi: '是的', pinyin: 'shì de', meaning: '是的 confirma que algo es así. 好的 acepta una propuesta; 不客气 responde a un 谢谢.'}
+    comments: []
+  - id: x.choice.shide-taxi
+    added: '2026-10-26'
+    lang: es
+    type: speak
+    targets: [e.shide]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. Un taxista te pregunta esto, y lo eres.', said: 你是西班牙人吗？, said_es: '¿Eres español?', options: [对不起, 好的, 是的]}
+    answer: {choice: c, hanzi: '是的', pinyin: 'shì de', meaning: '是的: «sí, eso es». 好的 sería aceptar algo que te proponen.'}
+    comments: []
+  - id: x.choice.haode-jianmian
+    added: '2026-10-26'
+    lang: es
+    type: speak
+    targets: [e.haode]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. Un compañero te propone esto y te parece bien.', said: 我们明天见面吧。, options: [是的, 好的, 没关系]}
+    answer: {choice: b, hanzi: '好的', pinyin: 'hǎo de', meaning: '好的 acepta una propuesta: «vale». 是的 confirma un hecho, y 没关系 responde a una disculpa.'}
+    comments: []
+  - id: x.situation.wo-lai-bang-ni
+    added: '2026-10-26'
+    lang: es
+    type: speak
+    sentence: s.wo-lai-bang-ni
+    targets: [s.wo-lai-bang-ni]
+    skills: [production, speaking]
+    prompt: {text: 'Situación. Una señora no puede con su maleta en la escalera del metro. ¿Qué le dices?'}
+    answer: {hanzi: '我来帮你。', pinyin: 'wǒ lái bāng nǐ', meaning: 'deja, que te ayudo'}
+    comments: []
+  - id: x.produce.wo-lai
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-lai
+    targets: [s.wo-lai]
+    context: [w.wo, w.lai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Ya me encargo yo!»'}
+    answer: {meaning: ¡Ya me encargo yo!}
+    comments: []
+  - id: x.produce.wo-lai-bang-ni
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-lai-bang-ni
+    targets: [s.wo-lai-bang-ni]
+    context: [w.wo, w.lai, w.bang, w.ni]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Deja, que te ayudo.»'}
+    answer: {meaning: 'Deja, que te ayudo.'}
+    comments: []
+  - id: x.produce.wo-ziji-lai
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-ziji-lai
+    targets: [s.wo-ziji-lai]
+    context: [w.wo, w.ziji, w.lai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ya lo hago yo.»'}
+    answer: {meaning: Ya lo hago yo.}
     comments: []

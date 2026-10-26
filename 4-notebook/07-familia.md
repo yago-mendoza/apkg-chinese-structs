@@ -8,18 +8,18 @@
 - ✅🃏 妈妈 māma [ma˥ ma] · mamá · _sustantivo_ · 女 «mujer» aporta el significado y 马 mǎ, el sonido. 马 significa «caballo», pero aquí solo presta su sonido: el caballo no tiene nada que ver con mamá. · También se dice 妈 mā sola, sobre todo para llamarla (妈！). 爸妈 bàmā son papá y mamá juntos, en registro coloquial. · Frente a 爸爸 bàba: 妈 mā va alto y plano; 爸 bà cae.
 - ✅🃏 儿子 érzi [ɑɻ˧˥ tsɯ] · hijo · _sustantivo_ · En 儿子 no hace falta marcar el género: es la forma por defecto; en 女儿 sí, con 女.
 - ✅🃏 女儿 nǚ'ér [ny˧˩˧ ɑɻ˧˥] · hija · _sustantivo_
-- ✅🃏 孩子 háizi [xaɪ˧˥ tsɯ] · niño, niña; hijo, hija · _sustantivo_
+- ✅🃏 孩子 háizi [xaɪ˧˥ tsɯ] · niño, niña; hijo, hija · _sustantivo_ · 孩 hái suena igual que 还 hái «todavía», pero es otro carácter: lleva 子 «niño» a la izquierda.
 - ✅🃏 小孩 xiǎohái [ɕjɑʊ˧˩˧ xaɪ˧˥] · niño pequeño, crío · _sustantivo_ · 孩子 es el término general; 小孩 añade 小 «pequeño».
 - ✅🃏 家 jiā [tɕja˥] · casa, hogar; familia · _sustantivo_ · Jiā: en casa 家 todos se ríen «¡ja!», con el tono alto y plano. · 宀 «techo» + 豕 shǐ «cerdo»: según la explicación tradicional, la casa era donde se criaba el cerdo. · De casa pasa a familia y a establecimiento; por eso es también el clasificador de negocios: 一家饭店 «un restaurante», 一家商店 «una tienda», 一家公司 [HSK 2] «una empresa».
 - ✅ 儿 ér · niño, hijo (en palabras) · 儿 ér «niño»: delante en 儿子, detrás en 女儿.
 - ✅ 子 zi · hijo, niño; sufijo de nombres · 子 zǐ «hijo, niño»; al final de una palabra suele ser un sufijo: 儿子 érzi, 孩子 háizi. Con 女 forma 好.
 - ✅🃏 姐姐 jiějie [tɕjɛ˧˩˧ tɕjɛ] · hermana mayor · _sustantivo_
 - ✅🃏 爸妈 bàmā [pa˥˩ ma˥] · los padres, papá y mamá (coloquial) · _sustantivo_
-- ✅🃏 阿姨 āyí [a˥ i˧˥] · tía; señora (de la edad de tus padres) · _sustantivo_ · No solo «tía»: así se llama a cualquier mujer de la edad de tus padres. 王阿姨 es «la señora Wang».
-- ✅🃏 叔叔 shūshu [ʂu˥ ʂu] · tío; señor (de la edad de tus padres) · _sustantivo_ · Los niños lo dicen a los amigos de sus padres.
-- ✅🃏 爷爷 yéye [jɛ˧˥ jɛ] · abuelo (paterno) · _sustantivo_
-- ✅🃏 奶奶 nǎinai [naɪ˧˩˧ naɪ] · abuela (paterna) · _sustantivo_
-- ✅🃏 父母 fùmǔ [fu˥˩ mu˧˩˧] · los padres · _sustantivo_
+- ✅🃏 阿姨 āyí [a˥ i˧˥] · tía; señora (de la edad de tus padres) · _sustantivo_ · No solo «tía»: así se llama a cualquier mujer de la edad de tus padres. 王阿姨 es «la señora Wang». · 阿姨 es la forma de todos los días para una mujer de la edad de tus padres (la de la tienda, la vecina): 阿姨，您好！. 女士 nǚshì [HSK 4] es formal y no dice edad.
+- ✅🃏 叔叔 shūshu [ʂu˥ ʂu] · tío; señor (de la edad de tus padres) · _sustantivo_ · Los niños lo dicen a los amigos de sus padres. · A un desconocido basta con 请问; 叔叔 se dice en familia, o lo dicen los niños. Para un hombre, en registro formal, 先生.
+- ✅🃏 爷爷 yéye [jɛ˧˥ jɛ] · abuelo (paterno) · _sustantivo_ · 爷 lleva arriba el 父 de padre, pero debajo le cuelga como una bata raída, vieja como él.
+- ✅🃏 奶奶 nǎinai [naɪ˧˩˧ naɪ] · abuela (paterna) · _sustantivo_ · 奶 lleva 女 a la izquierda: la abuela también es una mujer.
+- ✅🃏 父母 fùmǔ [fu˥˩ mu˧˩˧] · los padres · _sustantivo_ · Palabra a palabra: 父 «padre» + 母 «madre». 你父母多大年纪了？ «¿qué edad tienen tus padres?»: con 了, la edad a la que han llegado.
 - ✅🃏 哥哥 gēge [kɤ˥ kɤ] · hermano mayor · _sustantivo_ · 哥哥: dos archivadores, uno encima del otro, con todos los apuntes de la carrera: el hermano mayor, que ya la ha hecho.
 - ✅🃏 弟弟 dìdi [ti˥˩ ti] · hermano menor · _sustantivo_ · 弟弟: dos niños pequeños disfrazados de dragón, con dos cuernitos y una capa sinuosa por detrás: los hermanos pequeños.
 - ✅🃏 爸 bà [pa˥˩] · papá (al llamarlo) · _sustantivo_ · Al dirigirse a ellos se acorta: 爸！妈！ Hablando de ellos, 爸爸 y 妈妈.

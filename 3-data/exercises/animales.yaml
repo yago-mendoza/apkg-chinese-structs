@@ -180,8 +180,8 @@ exercises:
     type: contrast
     group: g.shu-shu
     targets: [w.shu.mouse]
-    skills: [listening, tones, discrimination]
-    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es shǔ, «rata (del zodiaco)»?'}
     answer: {hanzi: 鼠, pinyin: shǔ, meaning: rata (en el zodiaco)}
     comments: []
   - id: x.dictation.shu.mouse

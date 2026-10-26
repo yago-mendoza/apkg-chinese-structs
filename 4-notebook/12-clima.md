@@ -5,7 +5,7 @@
 ## Vocabulario
 
 - ✅🃏 天气 tiānqì [tʰjɛn˥ tɕʰi˥˩] · el tiempo (meteorológico) · _sustantivo_
-- ✅🃏 热 rè [ʐɤ˥˩] · calor; caluroso · _adjetivo_ · Suena un poco a «rua». · Suena casi «reoa», muy rápido.
+- ✅🃏 热 rè [ʐɤ˥˩] · calor; caluroso · _adjetivo_ · Suena un poco a «rua». · Suena casi «reoa», muy rápido. · Arriba, una mano 扌 sujeta una bolita 丸 sobre el fuego 灬: ¡quema! No se confunde con 日 rì «sol» ni con 丸 wán «bolita».
 - ✅🃏 冷 lěng [lɤŋ˧˩˧] · frío · _adjetivo_
 - ✅🃏 下雨 xiàyǔ [ɕja˥˩ y˧˩˧] · llover · _verbo_ · 下 «caer» + 雨 yǔ «lluvia». 雨 también está en 需 de 需要.
 - ✅🃏 云 yún [yn˧˥] · nube · _sustantivo_ · Aparece en la parte de abajo de 会 huì.
@@ -44,3 +44,4 @@ Casi iguales al oído y con el mismo tono: solo cambia la vocal. En 热, la e os
 - ✅🃏 你觉得今天的天气怎么样？我觉得今天的天气很好，不冷不热。 · nǐ juéde jīntiān de tiānqì zěnmeyàng wǒ juéde jīntiān de tiānqì hěn hǎo bù lěng bù rè · —¿Qué te parece el tiempo hoy? —Muy bueno: ni frío ni calor.
 - ✅🃏 今天风很大。 · jīntiān fēng hěn dà · Hoy hace mucho viento.
 - ✅🃏 我们到岛上了！ · wǒmen dào dǎo shàng le · ¡Hemos llegado a la isla!
+- ✅🃏 好热！ · hǎo rè · ¡Qué calor!

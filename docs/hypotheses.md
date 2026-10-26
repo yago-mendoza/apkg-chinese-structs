@@ -54,7 +54,14 @@ Lo que creemos que ayuda a aprender a quien estudia con este mazo, cómo se comp
 
 - **Desde**: lote 012 (2026-10-19). **De dónde**: review 011, «¿no podrías currarte mini diagramas que ayuden a entender?», con 早上 y 上午.
 - **Cómo se mide**: si deja de confundir 早上 y 上午 en `stats` y lo que diga de la franja.
-- **Regla**: `docs/design.md`, «Tarjetas» (franja del día).
+- **Lote 014 (2026-10-26)**: le gusta el diagrama de 早上 y pide el nombre debajo de cada barra; y que haya diagramas siempre que aclaren algo. Se amplía a escalas (pesos, intensidad, frecuencia) y al eje de tiempo de 要…了, 了, 过, 在 y 已经. Se mide igual: los fallos de 了 / 过 / 要…了 y de los pesos en `stats`, y lo que diga.
+- **Regla**: `docs/design.md`, «Tarjetas» (diagramas); `docs/goal.md`, «Diagramas sin cortarse».
+
+### 🧪 Una pregunta por tarjeta: sin anversos iguales, no parece que las tarjetas se repitan
+
+- **Desde**: lote 014 (2026-10-26). **De dónde**: su nota del review 013 («no dejan de repetírseme las mismas aunque les dé +21 d») y la revisión de Anki: no había notas duplicadas, pero sí anversos iguales y muchas tarjetas de una misma sílaba (妈 / 吗 / 马) en días seguidos.
+- **Cómo se mide**: si deja de notar repeticiones; que `check` no avise de anversos iguales; y en `stats`, el «Otra vez» de las tarjetas fusionadas frente al de antes.
+- **Regla**: `docs/design.md`, «Tarjetas» (una pregunta, una respuesta) y «Anki» (orden de nuevas).
 
 ## Confirmadas
 

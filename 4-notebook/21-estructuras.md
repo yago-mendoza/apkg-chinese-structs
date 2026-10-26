@@ -49,3 +49,6 @@
 - ✅🃏 `{Num} + 斤 + {N}` · Pesar en el mercado: el número, 斤 y lo que se compra (三斤苹果 «tres 斤 de manzanas»). · 我要三斤苹果。 / 我要一斤苹果。
 - ✅🃏 `{Lugar} + 有 + {N}` · «Hay»: el sitio y 有, sin nadie que tenga (商店有水吗？ «¿hay agua en la tienda?»). Con alguien delante, 有 es «tener». · 商店有水吗？ / 饭店有鱼吗？
 - ✅🃏 `{V} + 得 + 不 + {Adj}` · Cómo sale una acción, en negativo: 说得不对 «lo que dices no es correcto». · 你说得不对。
+- ✅🃏 `{S} + 从 + {Num} + 点 + {V} + 到 + {Num} + 点` · Desde una hora hasta otra: 从 + la hora de empezar delante del verbo; 到 + la de acabar, detrás. · 我从九点工作到五点。
+- ✅🃏 `{S} + 还 + 没 + {V}` · Todavía no ha pasado, pero se espera: 还没 delante del verbo, sin 了. · 我还没吃饭。 / 我还没买。 / 他还没来。
+- ✅🃏 `{S} + {V} + 的 + {N}` · Lo que alguien hace describe una cosa: «el libro que compré» es 我买的书, con la descripción delante y 的 en medio. · 我听不懂他说的话。 / 他做的饭很好吃。 / 这是我买的书。

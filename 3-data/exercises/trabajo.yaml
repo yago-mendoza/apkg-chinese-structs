@@ -379,3 +379,214 @@ exercises:
     prompt: {text: '¿Cuál es shì, «asunto, cosa (que hacer)»?'}
     answer: {hanzi: 事, pinyin: shì, meaning: 'asunto, cosa (que hacer)'}
     comments: []
+  - id: x.comprehension.tongshi
+    added: '2026-10-26'
+    lang: es
+    type: comprehension
+    targets: [s.ta-shi-wo-de-tongshi, s.ta-zongshi-hen-mang, s.ta-shi-yi-ge-keyi-bang-ni-de-ren]
+    skills: [reading, comprehension]
+    script: hanzi
+    prompt: {text: 'Léelo en voz alta. Al terminar, abre la pregunta.'}
+    question: {es: '¿Cómo es su compañero?'}
+    answer: {meaning: 'Siempre está muy ocupado, pero es alguien que te puede ayudar.'}
+    comments: []
+  - id: x.produce.gongsi
+    added: 2026-10-26
+    lang: es
+    type: produce
+    targets: [w.gongsi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «empresa»? Escribe el pinyin.'}
+    answer: {typed: gong1 si1, hanzi: 公司, pinyin: gōngsī, meaning: empresa}
+    comments: []
+  - id: x.produce.tongshi
+    added: 2026-10-26
+    lang: es
+    type: produce
+    targets: [w.tongshi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «compañero de trabajo»? Escribe el pinyin.'}
+    answer: {typed: tong2 shi4, hanzi: 同事, pinyin: tóngshì, meaning: compañero de trabajo}
+    comments: []
+  - id: x.dictation.xiaban
+    added: 2026-10-26
+    lang: es
+    type: listen
+    targets: [w.xiaban]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xia4 ban1, hanzi: 下班, pinyin: xiàbān, meaning: salir de trabajar}
+    comments: []
+  - id: x.produce.xiaban
+    added: 2026-10-26
+    lang: es
+    type: produce
+    targets: [w.xiaban]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «salir de trabajar»? Escribe el pinyin.'}
+    answer: {typed: xia4 ban1, hanzi: 下班, pinyin: xiàbān, meaning: salir de trabajar}
+    comments: []
+  - id: x.read.xiaban
+    added: 2026-10-26
+    lang: es
+    type: read
+    targets: [w.xiaban]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 下班}
+    answer: {hanzi: 下班, pinyin: xiàbān, meaning: salir de trabajar}
+    comments: []
+  - id: x.dictation.qingjia
+    added: 2026-10-26
+    lang: es
+    type: listen
+    targets: [w.qingjia]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: qing3 jia4, hanzi: 请假, pinyin: qǐngjià, meaning: 'pedir el día libre, pedir permiso'}
+    comments: []
+  - id: x.produce.qingjia
+    added: 2026-10-26
+    lang: es
+    type: produce
+    targets: [w.qingjia]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «pedir el día libre, pedir permiso»? Escribe el pinyin.'}
+    answer: {typed: qing3 jia4, hanzi: 请假, pinyin: qǐngjià, meaning: 'pedir el día libre, pedir permiso'}
+    comments: []
+  - id: x.read.qingjia
+    added: 2026-10-26
+    lang: es
+    type: read
+    targets: [w.qingjia]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 请假}
+    answer: {hanzi: 请假, pinyin: qǐngjià, meaning: 'pedir el día libre, pedir permiso'}
+    comments: []
+  - id: x.dictation.jingli
+    added: 2026-10-26
+    lang: es
+    type: listen
+    targets: [w.jingli]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jing1 li3, hanzi: 经理, pinyin: jīnglǐ, meaning: 'jefe, gerente'}
+    comments: []
+  - id: x.read.jingli
+    added: 2026-10-26
+    lang: es
+    type: read
+    targets: [w.jingli]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 经理}
+    answer: {hanzi: 经理, pinyin: jīnglǐ, meaning: 'jefe, gerente'}
+    comments: []
+  - id: x.produce.wo-mingtian-yao-shangban
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-mingtian-yao-shangban
+    targets: [s.wo-mingtian-yao-shangban]
+    context: [w.wo, w.mingtian, w.yao, w.shangban]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mañana tengo que ir a trabajar.»'}
+    answer: {meaning: Mañana tengo que ir a trabajar.}
+    comments: []
+  - id: x.produce.ta-shi-wo-de-tongshi
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.ta-shi-wo-de-tongshi
+    targets: [s.ta-shi-wo-de-tongshi]
+    context: [w.ta.he, w.shi, w.wo, w.de, w.tongshi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Es mi compañero de trabajo.»'}
+    answer: {meaning: Es mi compañero de trabajo.}
+    comments: []
+  - id: x.produce.wo-xianzai-you-shi
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-xianzai-you-shi
+    targets: [s.wo-xianzai-you-shi]
+    context: [w.wo, w.xianzai, w.you.have, w.shi.matter]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ahora tengo algo que hacer.»'}
+    answer: {meaning: Ahora tengo algo que hacer.}
+    comments: []
+  - id: x.produce.wo-xiang-xuexi-geng-duo-zhishi
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-xiang-xuexi-geng-duo-zhishi
+    targets: [s.wo-xiang-xuexi-geng-duo-zhishi]
+    context: [w.wo, w.xiang, w.xuexi, w.geng, w.duo, w.zhishi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero aprender más cosas.»'}
+    answer: {meaning: Quiero aprender más cosas.}
+    comments: []
+  - id: x.listen.ta-you-hen-duo-zhishi
+    added: 2026-10-26
+    lang: es
+    type: listen
+    sentence: s.ta-you-hen-duo-zhishi
+    targets: [s.ta-you-hen-duo-zhishi]
+    context: [w.ta.he, w.you.have, w.hen, w.duo, w.zhishi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Sabe muchísimo.}
+    comments: []
+  - id: x.produce.wo-yao-zhunbei-yixia
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-yao-zhunbei-yixia
+    targets: [s.wo-yao-zhunbei-yixia]
+    context: [w.wo, w.yao, w.zhunbei, w.yixia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo que prepararme un momento.»'}
+    answer: {meaning: Tengo que prepararme un momento.}
+    comments: []
+  - id: x.produce.wo-mingtian-qingjia
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-mingtian-qingjia
+    targets: [s.wo-mingtian-qingjia]
+    context: [w.wo, w.mingtian, w.qingjia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mañana me cojo el día libre.»'}
+    answer: {meaning: Mañana me cojo el día libre.}
+    comments: []
+  - id: x.produce.wo-liu-dian-xiaban
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-liu-dian-xiaban
+    targets: [s.wo-liu-dian-xiaban]
+    context: [w.wo, w.num.liu, w.dian.oclock, w.xiaban]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Salgo de trabajar a las seis.»'}
+    answer: {meaning: Salgo de trabajar a las seis.}
+    comments: []
+  - id: x.listen.ta-shi-women-de-jingli
+    added: 2026-10-26
+    lang: es
+    type: listen
+    sentence: s.ta-shi-women-de-jingli
+    targets: [s.ta-shi-women-de-jingli]
+    context: [w.ta.he, w.shi, w.women, w.de, w.jingli]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es nuestro jefe.}
+    comments: []
+  - id: x.produce.wo-mingtian-qu-gongsi
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-mingtian-qu-gongsi
+    targets: [s.wo-mingtian-qu-gongsi]
+    context: [w.wo, w.mingtian, w.qu, w.gongsi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mañana voy a la oficina.»'}
+    answer: {meaning: Mañana voy a la oficina.}
+    comments: []

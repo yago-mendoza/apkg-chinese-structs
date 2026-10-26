@@ -310,17 +310,6 @@ exercises:
     answer: {meaning: '¿Eres chino?'}
     lang: es
     comments: []
-  - id: x.listen.wo-shi-gongchengshi
-    added: 2026-09-25
-    type: listen
-    sentence: s.wo-shi-gongchengshi
-    targets: [s.wo-shi-gongchengshi]
-    context: [w.wo, w.shi, w.gongchengshi]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: Soy ingeniero.}
-    lang: es
-    comments: []
   - id: x.produce.ni-jiao-shenme-mingzi
     added: 2026-09-25
     type: produce
@@ -921,17 +910,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Soy de España.»'}
     answer: {meaning: Soy de España.}
     comments: []
-  - id: x.listen.qingwen-ni-jiao-shenme-mingzi
-    added: 2026-09-29
-    lang: es
-    type: listen
-    sentence: s.qingwen-ni-jiao-shenme-mingzi
-    targets: [s.qingwen-ni-jiao-shenme-mingzi]
-    context: [e.qingwen, w.ni, w.jiao, w.shenme, w.mingzi]
-    skills: [listening, comprehension]
-    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: 'Disculpa, ¿cómo te llamas?'}
-    comments: []
   - id: x.produce.qingwen-ni-jiao-shenme-mingzi
     added: 2026-09-29
     lang: es
@@ -1102,15 +1080,6 @@ exercises:
     prompt: {text: Escucha y escribe el pinyin., audio: true}
     answer: {typed: guo2, hanzi: 国, pinyin: guó, meaning: país}
     comments: []
-  - id: x.produce.guo
-    added: 2026-10-01
-    lang: es
-    type: produce
-    targets: [w.guo]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «país»? Escribe el pinyin.'}
-    answer: {typed: guo2, hanzi: 国, pinyin: guó, meaning: país}
-    comments: []
   - id: x.read.guo
     added: 2026-10-01
     lang: es
@@ -1174,17 +1143,19 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 学习}
     answer: {hanzi: 学习, pinyin: xuéxí, meaning: 'estudiar, aprender'}
     comments: []
-  - id: x.produce.ni-shi-na-guo-ren
-    added: 2026-10-01
+  - id: x.produce.ni-laizi-nage-guojia
+    added: 2026-10-16
     lang: es
     type: produce
-    sentence: s.ni-shi-na-guo-ren
-    targets: [s.ni-shi-na-guo-ren]
-    context: [w.ni, w.shi, w.na.which, w.guo, w.ren]
+    sentence: s.ni-laizi-nage-guojia
+    targets: [s.ni-laizi-nage-guojia, s.ni-shi-na-guo-ren, s.ni-shi-nage-guojia-de-ren]
+    context: [w.ni, w.laizi, w.nage, w.guojia]
     skills: [production, speaking]
+    also: [s.ni-shi-na-guo-ren, s.ni-shi-nage-guojia-de-ren]
     prompt: {text: 'Dilo en chino, en voz alta: «¿De qué país eres?»'}
     answer: {meaning: '¿De qué país eres?'}
-    comments: []
+    comments:
+      - {kind: usage, private: false, date: '2026-10-26', text: '你是哪国人？ es la forma corriente al hablar; 你是哪个国家的人？ dice lo mismo con la palabra entera 国家, y 你来自哪个国家？ suena algo más formal.'}
   - id: x.produce.wo-zai-xibanya
     added: 2026-10-01
     lang: es
@@ -1223,12 +1194,14 @@ exercises:
     lang: es
     type: produce
     sentence: s.wo-zai-xuexi-zhongwen
-    targets: [s.wo-zai-xuexi-zhongwen]
+    targets: [s.wo-zai-xuexi-zhongwen, s.wo-zai-xuexi-hanyu]
     context: [w.wo, w.zai.progressive, w.xuexi, w.zhongwen]
     skills: [production, speaking]
+    also: [s.wo-zai-xuexi-hanyu]
     prompt: {text: 'Dilo en chino, en voz alta: «Estoy estudiando chino.»'}
     answer: {meaning: Estoy estudiando chino.}
-    comments: []
+    comments:
+      - {kind: usage, private: false, date: '2026-10-26', text: 'Al hablar se dice más 中文; 汉语 es la palabra de los libros, las clases y el examen del HSK.'}
   - id: x.nuance.hui-uses
     added: 2026-10-01
     lang: es
@@ -1402,7 +1375,7 @@ exercises:
     type: nuance
     targets: [w.ye, w.dou]
     skills: [comprehension, discrimination]
-    prompt: {text: '我很高也 y 我们很高都: ¿qué falla?'}
+    prompt: {text: '我很高也 y 我们很高都: ¿qué falla?', no_audio: ['我很高也', '我们很高都']}
     answer: {meaning: '也 y 都 van delante del verbo o de 很, nunca al final: 我也很高 «yo también soy alto», 我们都很高 «todos somos altos».'}
     comments: []
   - id: x.comprehension.renshi-ni
@@ -1584,7 +1557,7 @@ exercises:
     type: nuance
     targets: [w.gaoxing]
     skills: [comprehension, discrimination]
-    prompt: {text: '我是高兴 o 我很高兴, y ¿qué puede ir detrás de 很高兴?'}
+    prompt: {text: '我是高兴 o 我很高兴, y ¿qué puede ir detrás de 很高兴?', no_audio: ['我是高兴']}
     answer: {meaning: '我很高兴: un adjetivo va con 很, sin 是. Detrás, lo que te alegra: 很高兴认识你 «encantado de conocerte».'}
     comments: []
   - id: x.contrast.ma
@@ -1651,8 +1624,8 @@ exercises:
     type: contrast
     group: g.shu-shu
     targets: [w.shu.belong]
-    skills: [listening, tones, discrimination]
-    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es shǔ, «ser de un signo del zodiaco»?'}
     answer: {hanzi: 属, pinyin: shǔ, meaning: ser (de un signo del zodiaco)}
     comments: []
   - id: x.dictation.shu.belong
@@ -1811,18 +1784,6 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Nací en Pekín.}
     comments: []
-  - id: x.produce.wo-chusheng-zai-beijing
-    added: 2026-10-06
-    lang: es
-    type: produce
-    sentence: s.wo-chusheng-zai-beijing
-    targets: [s.wo-chusheng-zai-beijing]
-    context: [w.wo, w.chusheng, w.zai.at, w.beijing]
-    also: [s.wo-zai-beijing-chusheng]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Nací en Pekín.»'}
-    answer: {meaning: Nací en Pekín.}
-    comments: []
   - id: x.listen.ni-cai-ta-duoda
     added: 2026-10-06
     lang: es
@@ -1834,14 +1795,15 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: '¿Cuántos años crees que tiene?'}
     comments: []
-  - id: x.produce.ni-cai-ta-duoda
-    added: 2026-10-06
+  - id: x.produce.ni-cai-ta-duoda.she
+    added: 2026-10-16
     lang: es
     type: produce
-    sentence: s.ni-cai-ta-duoda
-    targets: [s.ni-cai-ta-duoda]
-    context: [w.ni, w.cai.guess, w.ta.he, w.duoda]
+    sentence: s.ni-cai-ta-duoda.she
+    targets: [s.ni-cai-ta-duoda.she, s.ni-cai-ta-duoda]
+    context: [w.ni, w.cai.guess, w.ta.she, w.duoda]
     skills: [production, speaking]
+    also: [s.ni-cai-ta-duoda]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años crees que tiene?»'}
     answer: {meaning: '¿Cuántos años crees que tiene?'}
     comments: []
@@ -2249,11 +2211,12 @@ exercises:
     added: 2026-10-16
     lang: es
     type: produce
-    targets: [w.guojia]
+    targets: [w.guojia, w.guo]
     skills: [production, pinyin]
     prompt: {text: '¿Cómo se dice «país»? Escribe el pinyin.'}
-    answer: {typed: guo2 jia1, hanzi: 国家, pinyin: guójiā, meaning: país}
-    comments: []
+    answer: {typed: guo2 jia1, hanzi: 国家, pinyin: guójiā, meaning: país, accept: [guo2]}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: 'Suelto, «país» es 国家: 中国是一个很大的国家. 国 casi nunca va solo: vive dentro de nombres y expresiones, como 中国, 美国 o 哪国人.'}
   - id: x.read.guojia
     added: 2026-10-16
     lang: es
@@ -2324,17 +2287,6 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: '¿Cuántos años crees que tiene?'}
     comments: []
-  - id: x.produce.ni-cai-ta-duoda.she
-    added: 2026-10-16
-    lang: es
-    type: produce
-    sentence: s.ni-cai-ta-duoda.she
-    targets: [s.ni-cai-ta-duoda.she]
-    context: [w.ni, w.cai.guess, w.ta.she, w.duoda]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años crees que tiene?»'}
-    answer: {meaning: '¿Cuántos años crees que tiene?'}
-    comments: []
   - id: x.listen.nage-ren-shi-ni-de-pengyou
     added: 2026-10-16
     lang: es
@@ -2366,17 +2318,6 @@ exercises:
     context: [w.ni, w.laizi, w.nage, w.guojia]
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿De qué país eres?'}
-    comments: []
-  - id: x.produce.ni-laizi-nage-guojia
-    added: 2026-10-16
-    lang: es
-    type: produce
-    sentence: s.ni-laizi-nage-guojia
-    targets: [s.ni-laizi-nage-guojia]
-    context: [w.ni, w.laizi, w.nage, w.guojia]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿De qué país eres?»'}
     answer: {meaning: '¿De qué país eres?'}
     comments: []
   - id: x.listen.dlg-zhongguo-xuesheng-ma
@@ -2783,17 +2724,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 巴西}
     answer: {hanzi: 巴西, pinyin: Bāxī, meaning: Brasil}
     comments: []
-  - id: x.produce.wo-zai-xuexi-hanyu
-    added: 2026-10-19
-    lang: es
-    type: produce
-    sentence: s.wo-zai-xuexi-hanyu
-    targets: [s.wo-zai-xuexi-hanyu]
-    context: [w.wo, w.zai.progressive, w.xuexi, w.hanyu]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Estoy estudiando chino.»'}
-    answer: {meaning: Estoy estudiando chino.}
-    comments: []
   - id: x.produce.wo-hui-kaiche
     added: 2026-10-19
     lang: es
@@ -2940,17 +2870,6 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: '¿Cuántos años tienes?'}
     comments: []
-  - id: x.produce.ni-duoda
-    added: 2026-10-06
-    lang: es
-    type: produce
-    sentence: s.ni-duoda
-    targets: [s.ni-duoda]
-    context: [w.ni, w.duoda]
-    skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años tienes?»'}
-    answer: {meaning: '¿Cuántos años tienes?'}
-    comments: []
   - id: x.listen.ni-jinnian-ji-sui-le
     added: 2026-10-06
     lang: es
@@ -3051,12 +2970,14 @@ exercises:
     lang: es
     type: produce
     sentence: s.ni-duoda-le
-    targets: [s.ni-duoda-le]
+    targets: [s.ni-duoda-le, s.ni-duoda]
     context: [w.ni, w.duoda, w.le]
     skills: [production, speaking]
+    also: [s.ni-duoda]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años tienes?»'}
     answer: {meaning: '¿Cuántos años tienes?'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: 'Con 了 suena más natural: pregunta la edad a la que ha llegado ahora, sin hablar del pasado. 你多大？ también se entiende y es correcto.', original: 'El 了 (le) presenta la edad como algo que se ha alcanzado hasta ahora. […] Puedes quitarlo: 你父母多大？ se entiende y es correcto. Con 了, la pregunta suele sonar más natural y completa.'}
   - id: x.choice.age-adult
     added: '2026-10-16'
     lang: es
@@ -3120,15 +3041,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿De qué signo es usted?»'}
     answer: {meaning: '¿De qué signo es usted?'}
-    comments: []
-  - id: x.nuance.zhongguo-zhong-guo
-    added: '2026-10-23'
-    lang: es
-    type: nuance
-    targets: [w.zhongguo]
-    skills: [comprehension, discrimination]
-    prompt: {text: 'En 中国, ¿cuál es guó?'}
-    answer: {meaning: '国, el segundo: «país» (la caja con jade dentro). 中 zhōng «centro» va delante: el país del centro.'}
     comments: []
   - id: x.nuance.nage-naben
     added: '2026-10-23'
@@ -3393,7 +3305,7 @@ exercises:
     lang: es
     type: produce
     sentence: s.wo-zai-beijing-chusheng
-    targets: [s.wo-zai-beijing-chusheng]
+    targets: [s.wo-zai-beijing-chusheng, s.wo-chusheng-zai-beijing]
     context: [w.wo, w.zai.at, w.beijing, w.chusheng]
     also: [s.wo-chusheng-zai-beijing]
     skills: [production, speaking]
@@ -3499,4 +3411,90 @@ exercises:
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: 'Me llamo Mèng Yìchén, soy de España y soy ingeniero. Estoy aprendiendo chino y me parece muy interesante.'}
+    comments: []
+  - id: x.nuance.naguoren-laizi
+    added: '2026-10-26'
+    lang: es
+    type: nuance
+    targets: [w.guo, w.laizi]
+    skills: [comprehension, discrimination]
+    prompt: {text: '你是哪国人？ y 你来自哪个国家？: ¿cuál dirías charlando?'}
+    answer: {meaning: '你是哪国人？: es la forma corriente. 你来自哪个国家？ dice lo mismo, algo más formal, como en una presentación.'}
+    comments: []
+  - id: x.nuance.wo-lai
+    added: '2026-10-26'
+    lang: es
+    type: nuance
+    targets: [w.lai]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我来了 y 我来: ¿qué cambia?'}
+    answer: {meaning: '我来了 «ya estoy aquí, ya he llegado». 我来 «déjame a mí»; delante de otro verbo, «yo me encargo»: 我来付钱 «pago yo».'}
+    comments: []
+  - id: x.cloze.na.which-tian
+    added: '2026-10-26'
+    lang: es
+    type: cloze
+    sentence: s.ni-na-tian-lai
+    gap: w.na.which
+    targets: [w.na.which]
+    context: [w.ni, w.tian, w.lai]
+    skills: [production, pinyin]
+    prompt: {text: '¿哪 o 哪个? Completa en pinyin: «¿Qué día vienes?»'}
+    answer: {typed: na3, hanzi: 哪, pinyin: nǎ, meaning: 'qué, cuál: 哪天, sin 个, como 一天'}
+    comments: []
+  - id: x.cloze.dou.shenme
+    added: '2026-10-26'
+    lang: es
+    type: cloze
+    sentence: s.wo-shenme-dou-chi
+    gap: w.dou
+    targets: [w.dou]
+    context: [w.wo, w.shenme, w.chi]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Como de todo.»'}
+    answer: {typed: dou1, hanzi: 都, pinyin: dōu, meaning: '什么都: «todo, sea lo que sea»'}
+    comments: []
+  - id: x.cloze.lai.wo-lai
+    added: '2026-10-26'
+    lang: es
+    type: cloze
+    sentence: s.wo-lai-bang-ni
+    gap: w.lai
+    targets: [w.lai]
+    context: [w.wo, w.bang, w.ni]
+    skills: [production, pinyin]
+    prompt: {text: '¿来 o 去? Completa en pinyin: «Deja, que te ayudo.»'}
+    answer: {typed: lai2, hanzi: 来, pinyin: lái, meaning: '我来 + verbo: «yo me encargo»'}
+    comments: []
+  - id: x.produce.zhongguo-shi-yi-ge-hen-da-de-guojia
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.zhongguo-shi-yi-ge-hen-da-de-guojia
+    targets: [s.zhongguo-shi-yi-ge-hen-da-de-guojia]
+    context: [w.zhongguo, w.shi, w.num.yi, w.ge, w.hen, w.da, w.de, w.guojia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «China es un país muy grande.»'}
+    answer: {meaning: China es un país muy grande.}
+    comments: []
+  - id: x.produce.zhongguo-you-duo-da
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.zhongguo-you-duo-da
+    targets: [s.zhongguo-you-duo-da]
+    context: [w.zhongguo, w.you.have, w.duo, w.da]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cómo de grande es China?»'}
+    answer: {meaning: '¿Cómo de grande es China?'}
+    comments: []
+  - id: x.pair.wen-wen
+    added: '2026-10-26'
+    lang: es
+    type: listen
+    targets: [w.wen]
+    pair: [{hanzi: 问, pinyin: wèn, meaning: 'preguntar'}, {hanzi: 文, pinyin: wén, meaning: 'escritura, lengua (el de 中文)'}]
+    skills: [listening, discrimination]
+    prompt: {text: 'Suenan dos. ¿Cuál es wén, la 1.ª o la 2.ª?', audio: true}
+    answer: {meaning: 'La 2.ª: wén 文, el de 中文. La 1.ª era wèn 问 «preguntar».'}
     comments: []

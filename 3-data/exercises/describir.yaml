@@ -772,18 +772,18 @@ exercises:
     type: contrast
     group: g.you-you-yao
     targets: [w.you.again]
-    skills: [listening, tones, discrimination]
-    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
-    answer: {hanzi: 又, pinyin: yòu, meaning: a la vez (又…又…)}
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es yòu, «otra vez; a la vez»?'}
+    answer: {hanzi: 又, pinyin: yòu, meaning: 'otra vez (他又来了); a la vez (又高又帅)'}
     comments: []
   - id: x.dictation.you.again
     added: 2026-10-01
     lang: es
     type: listen
-    targets: [w.you.again]
+    targets: [w.you.again, w.you.repeat]
     skills: [listening, pinyin, tones]
     prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: you4, hanzi: 又, pinyin: yòu, meaning: a la vez (又…又…)}
+    answer: {typed: you4, hanzi: 又, pinyin: yòu, meaning: 'otra vez (他又来了); a la vez (又高又帅)'}
     comments: []
   - id: x.cloze.you.again
     added: 2026-10-01
@@ -803,8 +803,8 @@ exercises:
     type: read
     targets: [w.you.again]
     skills: [reading, pinyin]
-    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 又}
-    answer: {hanzi: 又, pinyin: yòu, meaning: a la vez (又…又…)}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado de 又.', hanzi: 又高又帅}
+    answer: {hanzi: 又, pinyin: yòu, meaning: 'a la vez: 又高又帅 «alto y guapo»'}
     comments: []
   - id: x.produce.ta-bi-wo-gao
     added: 2026-10-01
@@ -1832,8 +1832,8 @@ exercises:
     type: contrast
     group: g.kuai-kuai
     targets: [w.kuai.fast]
-    skills: [listening, tones, discrimination]
-    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es kuài, «rápido; pronto»?'}
     answer: {hanzi: 快, pinyin: kuài, meaning: rápido; pronto}
     comments: []
   - id: x.dictation.kanqilai
@@ -2618,8 +2618,8 @@ exercises:
     type: contrast
     group: g.chang-chang
     targets: [w.chang]
-    skills: [listening, tones, discrimination]
-    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es cháng, «largo»?'}
     answer: {hanzi: 长, pinyin: cháng, meaning: largo}
     comments: []
   - id: x.contrast.yiban.ordinary
@@ -2881,4 +2881,89 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Hoy no estoy cansado.»'}
     answer: {meaning: Hoy no estoy cansado.}
+    comments: []
+  - id: x.cloze.geng
+    added: '2026-10-26'
+    lang: es
+    type: cloze
+    sentence: s.wo-xiang-xuexi-geng-duo-zhishi
+    gap: w.geng
+    targets: [w.geng]
+    context: [w.wo, w.xiang, w.xuexi, w.duo, w.zhishi]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Quiero aprender más cosas.»'}
+    answer: {typed: geng4, hanzi: 更, pinyin: gèng, meaning: 'más todavía: 更多'}
+    comments: []
+  - id: x.dictation.geng
+    added: 2026-10-26
+    lang: es
+    type: listen
+    targets: [w.geng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: geng4, hanzi: 更, pinyin: gèng, meaning: más (todavía)}
+    comments: []
+  - id: x.read.geng
+    added: 2026-10-26
+    lang: es
+    type: read
+    targets: [w.geng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 更}
+    answer: {hanzi: 更, pinyin: gèng, meaning: más (todavía)}
+    comments: []
+  - id: x.produce.wo-shi-yi-ge-hen-mang-de-ren
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-shi-yi-ge-hen-mang-de-ren
+    targets: [s.wo-shi-yi-ge-hen-mang-de-ren]
+    context: [w.wo, w.shi, w.num.yi, w.ge, w.hen, w.mang, w.de, w.ren]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Soy una persona muy ocupada.»'}
+    answer: {meaning: Soy una persona muy ocupada.}
+    comments: []
+  - id: x.listen.ta-shi-yi-ge-keyi-bang-ni-de-ren
+    added: 2026-10-26
+    lang: es
+    type: listen
+    sentence: s.ta-shi-yi-ge-keyi-bang-ni-de-ren
+    targets: [s.ta-shi-yi-ge-keyi-bang-ni-de-ren]
+    context: [w.ta.he, w.shi, w.num.yi, w.ge, w.keyi, w.bang, w.ni, w.de, w.ren]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es alguien que puede ayudarte.}
+    comments: []
+  - id: x.produce.ta-duo-gao
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.ta-duo-gao
+    targets: [s.ta-duo-gao]
+    context: [w.ta.he, w.duo, w.gao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuánto mide?»'}
+    answer: {meaning: '¿Cuánto mide?'}
+    comments: []
+  - id: x.produce.ni-tai-mang-le
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.ni-tai-mang-le
+    targets: [s.ni-tai-mang-le]
+    context: [w.ni, w.tai, w.mang, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estás demasiado ocupado.»'}
+    answer: {meaning: Estás demasiado ocupado.}
+    comments: []
+  - id: x.produce.bu-yiding
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.bu-yiding
+    targets: [s.bu-yiding]
+    context: [w.bu, w.yiding]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No necesariamente.»'}
+    answer: {meaning: No necesariamente.}
     comments: []

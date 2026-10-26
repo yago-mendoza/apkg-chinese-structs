@@ -4243,6 +4243,84 @@ characters:
       en: 'Pictograph: a bird, with its head, eye and tail. The traditional form is 鳥.'
     traditional: 鳥
     confidence: high
+  假:
+    gloss: {es: 'falso; permiso, vacaciones (jià)', en: 'false; leave, holiday (jià)'}
+    origin:
+      es: 'Fonético-semántico: 亻 «persona» da el sentido y 叚 (jiǎ) el sonido, igual. Lo que una persona toma prestado o finge: «falso»; leído jià, el tiempo que se pide prestado al trabajo, «permiso».'
+      en: 'Phonetic-semantic: 亻 (person) gives the meaning and 叚 (jiǎ) the sound, the same. What a person borrows or fakes: false; read jià, time borrowed from work, leave.'
+    memory:
+      es: 'Una persona 亻 junto a 叚, que parece una escalera con dos manos: trepa con algo prestado, que no es suyo. Falso; y el día que pides prestado al trabajo, 请假.'
+      en: 'A person 亻 beside 叚, which looks like a ladder with two hands: climbing with something borrowed, not their own. False; and the day you borrow from work, 请假.'
+    confidence: high
+  总:
+    gloss: {es: 'total; siempre', en: 'total; always'}
+    origin:
+      es: 'Fonético-semántico en la forma tradicional 總: 糸 «hilo» da el sentido (atar los hilos en un manojo) y 悤 (cōng) el sonido. La forma simplificada lo resume en 丷, 口 y 心.'
+      en: 'Phonetic-semantic in the traditional form 總: 糸 (thread) gives the meaning (tying threads into a bundle) and 悤 (cōng) the sound. The simplified form reduces it to 丷, 口 and 心.'
+    traditional: 總
+    type: pictophonetic
+    phonetic: {char: 悤, pinyin: 'cōng'}
+    semantic: 糸
+    override: 'La fuente lo da como ideograma por la forma simplificada; en la tradicional 總 es fonético-semántico.'
+    memory:
+      es: 'Muchas bocas 口 que hablan con un solo corazón 心: todo junto, siempre de acuerdo.'
+      en: 'Many mouths 口 speaking with one heart 心: all together, always in agreement.'
+    confidence: high
+  或:
+    gloss: {es: 'o; quizá', en: 'or; perhaps'}
+    origin:
+      es: 'Ideograma compuesto: una lanza 戈 que defiende un territorio 口 con su límite 一. Era la forma antigua de 国 «país»; se tomó prestado por su sonido para «o, quizá».'
+      en: 'Compound ideograph: a spear 戈 guarding a territory 口 with its border 一. It was the old form of 国 (country); it was borrowed for its sound to mean "or, perhaps".'
+    memory:
+      es: 'Una lanza 戈 vigila un campo 口: ¿atacarán por aquí o por allá? 或, «o».'
+      en: 'A spear 戈 guards a field 口: will they attack from here or from there? 或, "or".'
+    confidence: high
+  拉:
+    gloss: {es: 'tirar (de algo)', en: 'to pull'}
+    origin:
+      es: 'Fonético-semántico: 扌 «mano» da el sentido y 立 (lì) el sonido, hoy algo lejano. Tirar con la mano.'
+      en: 'Phonetic-semantic: 扌 (hand) gives the meaning and 立 (lì) the sound, now somewhat distant. Pulling with the hand.'
+    confidence: high
+  推:
+    gloss: {es: 'empujar', en: 'to push'}
+    origin:
+      es: 'Fonético-semántico: 扌 «mano» da el sentido y 隹 (zhuī) el sonido, hoy lejano; el mismo 隹 da el sonido de 谁. Empujar con la mano.'
+      en: 'Phonetic-semantic: 扌 (hand) gives the meaning and 隹 (zhuī) the sound, now distant; the same 隹 gives the sound of 谁. Pushing with the hand.'
+    confidence: high
+  更:
+    gloss: {es: 'más (todavía); cambiar', en: 'even more; to change'}
+    origin:
+      es: 'Fonético-semántico en su forma antigua: 攴 «golpear, actuar» daba el sentido y 丙 (bǐng) el sonido; al escribirse deprisa, las dos piezas se fundieron en la forma de hoy. Era «cambiar»; de ahí «más aún».'
+      en: 'Phonetic-semantic in its old form: 攴 (strike, act) gave the meaning and 丙 (bǐng) the sound; written quickly, both pieces merged into today''s shape. It meant "to change"; hence "even more".'
+    type: pictophonetic
+    phonetic: {char: 丙, pinyin: 'bǐng'}
+    semantic: 攴
+    override: 'La fuente no da tipo; en su forma antigua es 攴 con 丙 como sonido.'
+    memory:
+      es: 'Un sol 曰 atravesado por un aspa 乂 bajo una tapa 一: le das una vuelta más, y más todavía.'
+      en: 'A sun 曰 crossed by an X 乂 under a lid 一: you give it one more turn, and even more.'
+    confidence: medium
+  汁:
+    gloss: {es: 'jugo, zumo', en: 'juice'}
+    origin:
+      es: 'Fonético-semántico: 氵 «agua» da el sentido y 十 (shí) el sonido, hoy parecido. Lo líquido de algo: el jugo.'
+      en: 'Phonetic-semantic: 氵 (water) gives the meaning and 十 (shí) the sound, still similar. The liquid of something: juice.'
+    confidence: high
+  理:
+    gloss: {es: 'razón; ordenar', en: 'reason; to put in order'}
+    origin:
+      es: 'Fonético-semántico: 王, que aquí es 玉 «jade», da el sentido y 里 (lǐ) el sonido, igual. Era trabajar el jade siguiendo su veta; de ahí «ordenar» y «razón».'
+      en: 'Phonetic-semantic: 王, here 玉 (jade), gives the meaning and 里 (lǐ) the sound, the same. It meant working jade along its grain; hence "to order" and "reason".'
+    confidence: high
+  者:
+    gloss: {es: 'el que (hace algo)', en: 'one who (does something)'}
+    origin:
+      es: 'El origen de su forma es discutido. Hoy marca a quien hace algo (作者 «autor») y está en 或者 y, como pieza, en 都.'
+      en: 'The origin of its shape is disputed. Today it marks the one who does something (作者, author) and appears in 或者 and, as a piece, in 都.'
+    memory:
+      es: 'Un anciano 耂 sobre el sol 日: el que ya ha visto muchos días.'
+      en: 'An old man 耂 above the sun 日: the one who has seen many days.'
+    confidence: medium
 parts:
   亻: {es: 'persona (forma de 人 a la izquierda)', en: 'person (人 on the left)'}
   尔: {es: 'tú (forma corta de 爾)', en: 'you (short form of 爾)'}

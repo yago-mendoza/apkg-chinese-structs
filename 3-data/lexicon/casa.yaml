@@ -295,3 +295,25 @@ entries:
       - {ref: w.chuan, cue: 'sube (2.º): 坐船'}
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments: []
+  - id: w.dian.electric
+    use: say
+    role: content
+    kind: word
+    hanzi: 电
+    pinyin: diàn
+    meaning: {es: 'electricidad; batería', en: 'electricity; battery'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '没电了 «se ha quedado sin batería»: del móvil o del ordenador. Está en 电脑, 电话 y 电视.'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Un sol 日 con un cable que le sale por abajo: de ahí sale la electricidad.', original: 'La partr izquierda de ordenador es como un sol con un cable. Del que sale electricidad. Sabes?'}
+  - id: g.dian-electric
+    kind: group
+    basis: homophone
+    title: '店 diàn, 点 diǎn y 电 diàn'
+    explanation: '店 y 电 suenan exactamente igual; 点 baja y sube. Los separa la forma y la palabra en que salen.'
+    members:
+      - {ref: w.dian, cue: '广 un tejado: 商店'}
+      - {ref: w.dian.oclock, cue: '灬 fuego debajo: 三点'}
+      - {ref: w.dian.electric, cue: 'un sol con un cable que sale por abajo: 电脑'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments: []

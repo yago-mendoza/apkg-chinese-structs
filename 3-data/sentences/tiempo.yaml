@@ -749,3 +749,132 @@ sentences:
       - {text: 。}
     translation: {es: 'Vengo mañana.', en: 'I''m coming tomorrow.'}
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+  - id: s.wo-cong-jiu-dian-gongzuo-dao-wu-dian
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 从, ref: w.cong, pinyin: 'cóng'}
+      - {text: 九, ref: w.num.jiu, pinyin: 'jiǔ'}
+      - {text: 点, ref: w.dian.oclock, pinyin: 'diǎn'}
+      - {text: 工作, ref: w.gongzuo, pinyin: 'gōngzuò'}
+      - {text: 到, ref: w.dao.reach, pinyin: 'dào'}
+      - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
+      - {text: 点, ref: w.dian.oclock, pinyin: 'diǎn'}
+      - {text: 。}
+    translation: {es: 'Trabajo de nueve a cinco.', en: 'I work from nine to five.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ni-you-shijian-ma
+    use: say
+    kind: formula
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 时间, ref: w.shijian, pinyin: 'shíjiān'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Tienes tiempo?', en: 'Do you have time?'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.yiqian-ni-bang-wo-yihou-wo-bang-ni
+    use: say
+    kind: example
+    segments:
+      - {text: 以前, ref: w.yiqian, pinyin: 'yǐqián'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 帮, ref: w.bang, pinyin: 'bāng'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: ，}
+      - {text: 以后, ref: w.yihou, pinyin: 'yǐhòu'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 帮, ref: w.bang, pinyin: 'bāng'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 。}
+    translation: {es: 'Antes tú me ayudabas; ahora te ayudaré yo.', en: 'You used to help me; from now on I will help you.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ta-zongshi-hen-mang
+    use: say
+    kind: example
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 总是, ref: w.zongshi, pinyin: 'zǒngshì'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 忙, ref: w.mang, pinyin: 'máng'}
+      - {text: 。}
+    translation: {es: 'Siempre está muy ocupado.', en: 'He is always very busy.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-jinnian-hen-mang
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 忙, ref: w.mang, pinyin: 'máng'}
+      - {text: 。}
+    translation: {es: 'Este año estoy muy ocupado.', en: 'I am very busy this year.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ta-jinnian-hai-shi-xuesheng
+    use: say
+    kind: example
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
+      - {text: 还, ref: w.hai.still, pinyin: 'hái'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 学生, ref: w.xuesheng, pinyin: 'xuéshēng'}
+      - {text: 。}
+    translation: {es: 'Este año todavía es estudiante.', en: 'This year he is still a student.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.women-zai-nali-jianmian
+    use: say
+    kind: example
+    segments:
+      - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 哪里, ref: w.nali, pinyin: 'nǎlǐ'}
+      - {text: 见面, ref: w.jianmian, pinyin: 'jiànmiàn'}
+      - {text: ？}
+    translation: {es: '¿Dónde quedamos?', en: 'Where shall we meet?'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ni-na-tian-keyi-lai
+    use: say
+    kind: example
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 哪, ref: w.na.which, pinyin: 'nǎ'}
+      - {text: 天, ref: w.tian, pinyin: 'tiān'}
+      - {text: 可以, ref: w.keyi, pinyin: 'kěyǐ'}
+      - {text: 来, ref: w.lai, pinyin: 'lái'}
+      - {text: ？}
+    translation: {es: '¿Qué día puedes venir?', en: 'Which day can you come?'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.dlg-na-tian-jianmian
+    use: hear
+    kind: example
+    segments:
+      - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
+      - {text: 哪, ref: w.na.which, pinyin: 'nǎ'}
+      - {text: 天, ref: w.tian, pinyin: 'tiān'}
+      - {text: 见面, ref: w.jianmian, pinyin: 'jiànmiàn'}
+      - {text: ？}
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 怎么样, ref: w.zenmeyang, pinyin: 'zěnmeyàng'}
+      - {text: ？}
+      - {text: 好, ref: w.hao, pinyin: 'hǎo'}
+      - {text: ，}
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 见, ref: w.jian, pinyin: 'jiàn'}
+      - {text: ！}
+    translation: {es: '—¿Qué día quedamos? —¿Qué tal mañana? —Vale, ¡hasta mañana!', en: '—Which day shall we meet? —How about tomorrow? —OK, see you tomorrow!'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ni-na-tian-lai
+    use: say
+    kind: example
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 哪, ref: w.na.which, pinyin: 'nǎ'}
+      - {text: 天, ref: w.tian, pinyin: 'tiān'}
+      - {text: 来, ref: w.lai, pinyin: 'lái'}
+      - {text: ？}
+    translation: {es: '¿Qué día vienes?', en: 'Which day are you coming?'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}

@@ -919,3 +919,49 @@ sentences:
       - {text: 。}
     translation: {es: 'El libro está en la mesa.', en: 'The book is on the table.'}
     source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+  - id: s.youxie-ren-bu-he-cha
+    use: say
+    kind: example
+    segments:
+      - {text: 有些, ref: w.youxie, pinyin: 'yǒuxiē'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 喝, ref: w.he.drink, pinyin: 'hē'}
+      - {text: 茶, ref: w.cha, pinyin: 'chá'}
+      - {text: 。}
+    translation: {es: 'Hay gente que no toma té.', en: 'Some people do not drink tea.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ni-xihuan-naxie
+    use: say
+    kind: example
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 喜欢, ref: w.xihuan, pinyin: 'xǐhuan'}
+      - {text: 哪些, ref: w.naxie.which, pinyin: 'nǎxiē'}
+      - {text: ？}
+    translation: {es: '¿Cuáles te gustan?', en: 'Which ones do you like?'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.naxie-shi-wo-de
+    use: say
+    kind: example
+    segments:
+      - {text: 那些, ref: w.naxie, pinyin: 'nàxiē'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 。}
+    translation: {es: 'Esos son míos.', en: 'Those are mine.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.zhe-shi-wo-mai-de-shu
+    use: say
+    kind: example
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 买, ref: w.mai, pinyin: 'mǎi'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 书, ref: w.shu, pinyin: 'shū'}
+      - {text: 。}
+    translation: {es: 'Este es el libro que compré.', en: 'This is the book I bought.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}

@@ -285,10 +285,10 @@ exercises:
     added: 2026-09-29
     lang: es
     type: listen
-    targets: [w.liang]
+    targets: [w.liang, w.liang.weight]
     skills: [listening, pinyin, tones]
     prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: liang3, hanzi: 两, pinyin: liǎng, meaning: dos (delante de un clasificador)}
+    answer: {typed: liang3, hanzi: 两, pinyin: liǎng, meaning: 'dos, delante de un clasificador (两个人); 50 gramos (一两茶)'}
     comments: []
   - id: x.produce.liang
     added: 2026-09-29
@@ -305,8 +305,8 @@ exercises:
     type: read
     targets: [w.liang]
     skills: [reading, pinyin]
-    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 两}
-    answer: {hanzi: 两, pinyin: liǎng, meaning: dos (delante de un clasificador)}
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado de 两.', hanzi: 两个人}
+    answer: {hanzi: 两, pinyin: liǎng, meaning: 'dos, delante de un clasificador (两个人 «dos personas»)'}
     comments: []
   - id: x.dictation.you.have
     added: 2026-09-29
@@ -2525,4 +2525,35 @@ exercises:
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: En Pekín viven más de veinte millones de personas.}
+    comments: []
+  - id: x.produce.wo-he-ni-nianji-yiyang-da
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-he-ni-nianji-yiyang-da
+    targets: [s.wo-he-ni-nianji-yiyang-da]
+    context: [w.wo, w.he.and, w.ni, w.nianji, w.yiyang, w.da]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tú y yo tenemos la misma edad.»'}
+    answer: {meaning: Tú y yo tenemos la misma edad.}
+    comments: []
+  - id: x.choice.you-yao-weight
+    added: '2026-10-26'
+    lang: es
+    type: speak
+    targets: [w.you.have]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. El frutero señala la caja y te dice que ahí hay unos dos 斤 de manzanas.', options: [这里有两斤左右的苹果。, 这里要两斤左右的苹果。]}
+    answer: {choice: a, hanzi: '这里有两斤左右的苹果。', pinyin: 'zhèlǐ yǒu liǎng jīn zuǒyòu de píngguǒ', meaning: 'Sin nadie delante, 有 yǒu es «hay». 要 yào es «querer».'}
+    comments: []
+  - id: x.produce.wo-ershiba-sui-le
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-ershiba-sui-le
+    targets: [s.wo-ershiba-sui-le]
+    context: [w.wo, w.num.er, w.num.shi, w.ba, w.sui, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ya tengo veintiocho años.»'}
+    answer: {meaning: Ya tengo veintiocho años.}
     comments: []

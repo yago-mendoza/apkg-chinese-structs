@@ -9,7 +9,7 @@
 - ✅🃏 意思 yìsi [i˥˩ sɯ] · significado, sentido · _sustantivo_ · 这个是什么意思？ «¿qué significa esto?». Es el mismo 意思 de 不好意思, literalmente «no es buena intención». · 意: una voz 音 que sale del corazón 心: una intención. 思: un campo 田 de ideas cultivado en el corazón 心: pensar. · 什么意思？ «¿qué significa?»; 我的意思是… «lo que quiero decir es…». 你是什么意思？ puede sonar desafiante; para preguntar sin tensión, 你是说…？ «¿quieres decir que…?». 意 y 思 casi nunca van solos.
 - ✅🃏 清楚 qīngchu [tɕʰiŋ˥ ʈʂʰu] · claro, nítido (que se ve o se oye bien) · _adjetivo_ · 我没听清楚 «no lo he oído bien»: el problema es el sonido, no entenderlo. 清 lleva 青 qīng, que le da el sonido, como a 请 qǐng.
 - ✅🃏 读 dú [tu˧˥] · leer (en voz alta) · _verbo_ · 这个字怎么读？ «¿cómo se lee este carácter?». Leer para uno mismo, en silencio, también es 看: 看书 «leer un libro».
-- ✅🃏 慢 màn [man˥˩] · lento, despacio · _adjetivo_ · 请说慢一点 «hable un poco más despacio, por favor». Lo contrario es 快 kuài «rápido».
+- ✅🃏 慢 màn [man˥˩] · lento, despacio · _adjetivo_ · 请说慢一点 «hable un poco más despacio, por favor». Lo contrario es 快 kuài «rápido». · Tu corazón 忄 quiere avanzar, pero una mano 又 tiene que desenredar una red 罒 que ha atrapado al sol 日: tira con tanto cuidado, tan despacio, que parece que el día no acaba nunca.
 - ✅🃏 一点 yīdiǎn [i˥ tjɛn˧˩˧] · un poco (de una cantidad o de una cualidad) · _adverbio_ · Va detrás de un adjetivo para pedir «un poco más así»: 慢一点 «más despacio», 便宜一点 «más barato». «Un poco» de una acción es 一下: 等一下. · Delante de un nombre, «un poco de»: 一点水. Detrás de un verbo, «un poco»: 吃一点. Con 有 delante del adjetivo es una queja: 有点贵 «es un poco caro», frente a 贵一点 «un poco más caro». Lo contrario de 一点 es 很多.
 - ✅🃏 这样 zhèyàng [ʈʂɤ˥˩ jɑŋ˥˩] · así, de esta manera · _pronombre_ · 这样说对吗？ «¿se dice así?». 那样 nàyàng es «así, como eso».
 - ✅🃏 说话 shuōhuà [ʂwɔ˥ xwa˥˩] · hablar (con alguien) · _verbo_ · Palabra a palabra: 说 «decir» + 话 «palabras»: hablar, sin decir de qué. Con un idioma va 说 solo: 说中文. 别说话 «no hables», «calla».
@@ -70,3 +70,8 @@ La misma sílaba: 话 cae; 花 es alto y plano.
 - ✅🃏 很有意思！ · hěn yǒuyìsi · ¡Qué interesante!
 - ✅🃏 我不明白他的话。 · wǒ bù míngbai tā de huà · No entiendo lo que dice.
 - ✅🃏 你听到了吗？ · nǐ tīngdào le ma · ¿Lo has oído?
+- ✅🃏 我还不明白。 · wǒ hái bù míngbai · Todavía no lo entiendo.
+- ✅🃏 我还是不懂。 · wǒ háishi bù dǒng · Sigo sin entenderlo.
+- ✅🃏 我听不见。 · wǒ tīng bu jiàn · No lo oigo.
+- ✅🃏 我听不懂他说的话。 · wǒ tīng bu dǒng tā shuō de huà · No le entiendo cuando habla.
+- ✅🃏 我说了，我不要水！ · wǒ shuō le wǒ bú yào shuǐ · ¡Ya te he dicho que no quiero agua!

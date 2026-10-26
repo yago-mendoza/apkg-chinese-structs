@@ -34,6 +34,7 @@
 - ✅🃏 毛笔 máobǐ [mɑʊ˧˥ pi˧˩˧] · pincel (de caligrafía) · _sustantivo_ · Palabra a palabra: 毛 «pelo» + 笔 «instrumento para escribir»: el pincel de pelo.
 - ✅🃏 辶 chuò · caminar, avanzar (como componente) · Rodea el carácter por abajo y por la izquierda, como un camino. No confundir con 讠 «hablar», que va solo a la izquierda: 请 pide hablando; 进 entra caminando.
 - 🟡🃏 欢 huān · alegría
+- 🟡🃏 定 dìng · fijo, establecido · Un techo 宀 y, debajo, 正 «recto» con los trazos de abajo abiertos como un pie: bajo mi techo, todo está fijo en su sitio.
 
 ## 生, 牛 y 午
 
@@ -139,12 +140,13 @@ Dos piezas que se confunden de lejos: una habla, la otra camina.
 - 讠 yán · solo a la izquierda, un punto y un trazo que baja y gira (请, 说)
 - 辶 chuò · rodea por la izquierda y por abajo, como un camino (这, 过)
 
-## 你 nǐ y 欢 huān
+## 你 nǐ, 欢 huān y 饭 fàn
 
-Los dos tienen a la derecha algo parecido, pero a la izquierda uno lleva una persona y el otro una mano.
+Tres caracteres con dos piezas que se parecen: a la izquierda, una persona, una mano o la comida; a la derecha, la mano 又 vuelve a salir en 饭.
 
 - 你 nǐ · 亻 «persona» a la izquierda; a la derecha, 尔
 - 欢 huān · 又 «mano» a la izquierda; a la derecha, 欠, alguien con la boca abierta
+- 饭 fàn · 饣 a la izquierda; a la derecha, 反, con 又 dentro
 
 ## 开 kāi y 进 jìn
 
@@ -159,6 +161,14 @@ Comparten 艮 a la derecha, que les da el final -en; la izquierda dice de qué v
 
 - 很 hěn · 彳 «paso» a la izquierda; baja y sube
 - 跟 gēn · 足 «pie» a la izquierda; plano
+
+## 定, 走 y 是: lo de arriba manda
+
+Abajo los tres llevan algo parecido a un pie; lo que hay arriba los separa.
+
+- 定 dìng · 宀 un techo arriba (一定)
+- 走 zǒu · 土 arriba, un poste de caminos
+- 是 shì · 日 un sol arriba
 
 ## Frases
 

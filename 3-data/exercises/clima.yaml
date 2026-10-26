@@ -662,3 +662,14 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: ¡Hemos llegado a la isla!}
     comments: []
+  - id: x.produce.hao-re
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.hao-re
+    targets: [s.hao-re]
+    context: [w.hao, w.re]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Qué calor!»'}
+    answer: {meaning: ¡Qué calor!}
+    comments: []

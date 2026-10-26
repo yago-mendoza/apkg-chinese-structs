@@ -68,8 +68,6 @@ sentences:
   - id: s.wo-shi-gongchengshi
     use: say
     kind: example
-    listen: true
-    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 是, ref: w.shi, pinyin: shì}
@@ -180,8 +178,6 @@ sentences:
   - id: s.qingwen-ni-jiao-shenme-mingzi
     use: say
     kind: formula
-    listen: true
-    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 请问, ref: e.qingwen, pinyin: qǐngwèn}
       - {text: ，}
@@ -1354,3 +1350,42 @@ sentences:
       - {text: 。}
     translation: {es: 'Me llamo Mèng Yìchén, soy de España y soy ingeniero. Estoy aprendiendo chino y me parece muy interesante.', en: 'My name is Meng Yichen, I''m from Spain and I''m an engineer. I''m learning Chinese and I find it very interesting.'}
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-23'}
+  - id: s.zhongguo-shi-yi-ge-hen-da-de-guojia
+    use: say
+    kind: example
+    segments:
+      - {text: 中国, ref: w.zhongguo, pinyin: 'Zhōngguó'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yí', sandhi: true}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 大, ref: w.da, pinyin: 'dà'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 国家, ref: w.guojia, pinyin: 'guójiā'}
+      - {text: 。}
+    translation: {es: 'China es un país muy grande.', en: 'China is a very big country.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.zhongguo-you-duo-da
+    use: say
+    kind: example
+    segments:
+      - {text: 中国, ref: w.zhongguo, pinyin: 'Zhōngguó'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 多, ref: w.duo, pinyin: 'duō'}
+      - {text: 大, ref: w.da, pinyin: 'dà'}
+      - {text: ？}
+    translation: {es: '¿Cómo de grande es China?', en: 'How big is China?'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ni-shi-nage-guojia-de-ren
+    use: say
+    kind: formula
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 哪个, ref: w.nage, pinyin: 'nǎge'}
+      - {text: 国家, ref: w.guojia, pinyin: 'guójiā'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: ？}
+    translation: {es: '¿De qué país eres?', en: 'Which country are you from?'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}

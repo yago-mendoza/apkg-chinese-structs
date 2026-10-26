@@ -1348,3 +1348,73 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¿Hay pescado en el restaurante?»'}
     answer: {meaning: '¿Hay pescado en el restaurante?'}
     comments: []
+  - id: x.contrast.fan
+    added: 2026-10-26
+    lang: es
+    type: contrast
+    group: g.ni-huan
+    targets: [w.fan]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es fàn, «comida; arroz cocido»?'}
+    answer: {hanzi: 饭, pinyin: fàn, meaning: comida; arroz cocido}
+    comments: []
+  - id: x.dictation.guozhi
+    added: 2026-10-26
+    lang: es
+    type: listen
+    targets: [w.guozhi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: guo3 zhi1, hanzi: 果汁, pinyin: guǒzhī, meaning: zumo}
+    comments: []
+  - id: x.produce.guozhi
+    added: 2026-10-26
+    lang: es
+    type: produce
+    targets: [w.guozhi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «zumo»? Escribe el pinyin.'}
+    answer: {typed: guo3 zhi1, hanzi: 果汁, pinyin: guǒzhī, meaning: zumo}
+    comments: []
+  - id: x.read.guozhi
+    added: 2026-10-26
+    lang: es
+    type: read
+    targets: [w.guozhi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 果汁}
+    answer: {hanzi: 果汁, pinyin: guǒzhī, meaning: zumo}
+    comments: []
+  - id: x.produce.wo-shenme-dou-chi
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-shenme-dou-chi
+    targets: [s.wo-shenme-dou-chi]
+    context: [w.wo, w.shenme, w.dou, w.chi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Como de todo.»'}
+    answer: {meaning: Como de todo.}
+    comments: []
+  - id: x.produce.ta-zuo-de-fan-hen-haochi
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.ta-zuo-de-fan-hen-haochi
+    targets: [s.ta-zuo-de-fan-hen-haochi]
+    context: [w.ta.he, w.zuo.do, w.de, w.fan, w.hen, w.haochi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «La comida que hace está muy rica.»'}
+    answer: {meaning: La comida que hace está muy rica.}
+    comments: []
+  - id: x.produce.wo-yao-yi-bei-guozhi
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-yao-yi-bei-guozhi
+    targets: [s.wo-yao-yi-bei-guozhi]
+    context: [w.wo, w.yao, w.num.yi, w.bei.cl, w.guozhi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero un zumo.»'}
+    answer: {meaning: Quiero un zumo.}
+    comments: []

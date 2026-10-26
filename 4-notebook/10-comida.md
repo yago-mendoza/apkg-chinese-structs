@@ -33,6 +33,7 @@
 - ✅🃏 香槟 xiāngbīn [ɕjɑŋ˥ pin˥] · champán · _sustantivo_ · Préstamo que imita el sonido de champagne, como 咖啡 o 沙发. 香 «perfumado» además ayuda a recordarlo.
 - ✅🃏 水果 shuǐguǒ [ʂweɪ˧˩˧ kwɔ˧˩˧] · fruta · _sustantivo_
 - ✅🃏 请客 qǐngkè [tɕʰiŋ˧˩˧ kʰɤ˥˩] · invitar (pagar tú) · _verbo_ · 我请客！ «¡invito yo!»: pagas tú la cuenta de todos.
+- ✅🃏 果汁 guǒzhī [kwɔ˧˩˧ ʈʂɨ˥] · zumo · _sustantivo_ · Palabra a palabra: 果 «fruta», el de 水果 y 苹果, + 汁 «jugo». 我要一杯果汁 «quiero un zumo». · 汁 zhī: 氵 «agua» da el sentido y 十 shí, el sonido.
 
 ## 喝 hē y 和 hé
 
@@ -106,3 +107,6 @@ La misma derecha; la izquierda dice de qué va.
 - ✅🃏 给我一点水。 · gěi wǒ yìdiǎn shuǐ · Dame un poco de agua.
 - ✅🃏 我想吃一点。 · wǒ xiǎng chī yìdiǎn · Quiero comer un poco.
 - ✅🃏 饭店有鱼吗？ · fàndiàn yǒu yú ma · ¿Hay pescado en el restaurante?
+- ✅🃏 我什么都吃。 · wǒ shénme dōu chī · Como de todo.
+- ✅🃏 他做的饭很好吃。 · tā zuò de fàn hěn hǎochī · La comida que hace está muy rica.
+- ✅🃏 我要一杯果汁。 · wǒ yào yì bēi guǒzhī · Quiero un zumo.

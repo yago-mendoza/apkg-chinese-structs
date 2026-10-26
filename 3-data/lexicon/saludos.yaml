@@ -27,6 +27,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 再 «otra vez» + 见 «ver»: «volver a vernos».'}
       - {kind: note, private: false, date: 2026-09-25, text: 'Despedida general, válida en cualquier registro.', original: formal / general ♡}
+      - {kind: usage, private: false, date: '2026-10-26', text: 'Para despedirte: 再见 vale siempre; 拜拜, entre amigos; y si os veis pronto, con el cuándo delante de 见: 明天见 «hasta mañana», 下午见 «hasta la tarde».', original: 'mingtian jian ! como expreison. creo que ya esta per ocom odepsedida'}
   - id: w.baibai
     use: say
     role: content
@@ -46,7 +47,7 @@ entries:
     kind: expression
     hanzi: 早
     pinyin: zǎo
-    meaning: {es: ¡buenos días! (informal); temprano, en: morning!; early}
+    meaning: {es: ¡buenos días! (informal), en: morning! (greeting)}
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Forma abreviada de 早上好 zǎoshang hǎo, «buenos días».', original: zǎo ← zǎoshang hǎo}
@@ -136,6 +137,7 @@ entries:
     pinyin: zěnmeyàng
     meaning: {es: '¿qué tal?; ¿cómo?', en: 'how is it?, how about'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
+    accept_cards: 'pasa el tope por los contrastes y matices que pidió YAGO en sus notas del review 013 (lote 014)'
     comments:
       - {kind: linguistic, private: false, date: '2026-10-09', text: 'Es el «¿qué tal?» chino; lo de delante dice de qué: 你怎么样？ «¿qué tal estás?», 这个怎么样？ «¿qué te parece esto?», 我们明天去，怎么样？ «¿qué tal si vamos mañana?».', original: Es "QUE TAL" chinos conceptualizan el "Que tal" mentslmente en estos escrnarios y nada mas}
   - id: e.wanan
@@ -149,6 +151,18 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 晚 «noche» + 安 «paz»: «noche tranquila».'}
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Solo para despedirse antes de dormir. Al llegar por la noche se dice 晚上好 wǎnshang hǎo.'}
+  - id: e.mingtianjian
+    use: say
+    role: content
+    kind: expression
+    hanzi: 明天见
+    pinyin: míngtiān jiàn
+    meaning: {es: 'hasta mañana', en: 'see you tomorrow'}
+    level: 1
+    level_reason: despedida de todos los días; 明天 y 见 son HSK 1
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: 'Palabra a palabra: 明天 «mañana» + 见 «ver»: «nos vemos mañana». Con otro cuándo delante de 见 sirve igual: 下午见 «hasta la tarde».', original: 'mingtian jian ! como expreison. creo que ya esta per ocom odepsedida'}
   - id: w.huilai
     use: say
     role: content
@@ -263,8 +277,10 @@ entries:
     pinyin: hái
     meaning: {es: 'todavía; aún', en: 'still, yet'}
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
+    accept_cards: 'pasa el tope por los contrastes y matices que pidió YAGO en sus notas del review 013 (lote 014)'
     comments:
       - {kind: linguistic, private: false, date: '2026-10-05', text: 'Con otra lectura, huán, es «devolver». En 你还好吗？ es «¿sigues bien?».'}
+      - {kind: linguistic, private: false, date: '2026-10-26', text: 'Suena igual que el 孩 de 孩子 «niño», pero es otro carácter. Con 要 es «más»: 你还要水吗？ «¿quieres más agua?».'}
   - id: e.nihaoma
     use: say
     role: content
@@ -358,6 +374,18 @@ entries:
       - {ref: e.zuijinmangma, cue: 'interés por algo concreto'}
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments: []
+  - id: g.farewells
+    kind: group
+    basis: set
+    title: 'Despedirse'
+    explanation: 'Otras formas de decir adiós, según con quién y cuándo os volvéis a ver.'
+    members:
+      - {ref: w.zaijian, cue: 'vale siempre, con cualquiera'}
+      - {ref: w.baibai, cue: 'entre amigos, informal'}
+      - {ref: e.mingtianjian, cue: 'si os veis mañana; con otro cuándo delante de 见, igual'}
+      - {ref: e.wanan, cue: 'solo al irse a dormir'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments: []
   - id: g.zaijian-dajiahao
     kind: group
     basis: soundalike
@@ -401,13 +429,14 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: '谢谢你的礼物！ «¡gracias por tu regalo!».'}
   - id: e.gongxi
-    use: hear
+    use: say
     role: content
     kind: expression
     hanzi: 恭喜
     pinyin: 'gōngxǐ'
     meaning: {es: '¡enhorabuena!', en: 'congratulations'}
     source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27', rescued: 008-2026-10-08-pedir-ayuda-lugares-y-finales}
+    use_reason: 'nivel 7 en la lista, pero 恭喜你！ se dice en cumpleaños, bodas y ascensos: YAGO lo pidió'
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: 'Palabra a palabra: 恭 «respetuoso» + 喜 «alegría», el mismo de 喜欢.'}
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Se oye mucho: 恭喜发财 en el Año Nuevo chino. En la lista es de nivel 7.'}

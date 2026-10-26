@@ -868,3 +868,64 @@ sentences:
       - {text: 。}
     translation: {es: 'Hoy no estoy cansado.', en: 'I''m not tired today.'}
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-22'}
+  - id: s.wo-shi-yi-ge-hen-mang-de-ren
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yí', sandhi: true}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 忙, ref: w.mang, pinyin: 'máng'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: 。}
+    translation: {es: 'Soy una persona muy ocupada.', en: 'I am a very busy person.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ta-shi-yi-ge-keyi-bang-ni-de-ren
+    use: hear
+    kind: example
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 一, ref: w.num.yi, pinyin: 'yí', sandhi: true}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 可以, ref: w.keyi, pinyin: 'kěyǐ'}
+      - {text: 帮, ref: w.bang, pinyin: 'bāng'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 人, ref: w.ren, pinyin: 'rén'}
+      - {text: 。}
+    translation: {es: 'Es alguien que puede ayudarte.', en: 'He is someone who can help you.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ta-duo-gao
+    use: say
+    kind: example
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 多, ref: w.duo, pinyin: 'duō'}
+      - {text: 高, ref: w.gao, pinyin: 'gāo'}
+      - {text: ？}
+    translation: {es: '¿Cuánto mide?', en: 'How tall is he?'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ni-tai-mang-le
+    use: say
+    kind: example
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 太, ref: w.tai, pinyin: 'tài'}
+      - {text: 忙, ref: w.mang, pinyin: 'máng'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'Estás demasiado ocupado.', en: 'You are too busy.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.bu-yiding
+    use: say
+    kind: formula
+    segments:
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 一定, ref: w.yiding, pinyin: 'yídìng'}
+      - {text: 。}
+    translation: {es: 'No necesariamente.', en: 'Not necessarily.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}

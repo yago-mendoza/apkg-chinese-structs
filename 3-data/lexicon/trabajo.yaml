@@ -41,14 +41,15 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'El mismo 机 de 手机 y 飞机.'}
   - id: w.gongsi
-    use: hear
+    use: say
     role: content
     kind: word
     hanzi: 公司
     pinyin: 'gōngsī'
     meaning: {es: 'empresa', en: 'company'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: 'Al hablar, 公司 es también «la oficina»: 我明天去公司 «mañana voy a la oficina».'}
   - id: w.kaihui
     use: hear
     role: content
@@ -78,7 +79,7 @@ entries:
     comments:
       - {kind: character, private: false, date: '2026-10-13', text: '考 kǎo da el sonido a 烤 kǎo, el de 烤鸭. 号 hào lleva la misma pieza abajo, pero hoy ya no suena igual.'}
   - id: w.tongshi
-    use: hear
+    use: say
     role: content
     kind: word
     hanzi: 同事
@@ -87,6 +88,7 @@ entries:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-13', text: '同 «mismo»: 同学 es quien estudia contigo y 同事, quien trabaja contigo.'}
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '同 es compartir algo: 同学 la clase, 同事 el trabajo, 同意 la idea, y 不同 bùtóng [HSK 2] es «distinto». 事 es un asunto que atender; 工, el trabajo técnico de 工作 y 工程师.', original: '同事 (tóngshì) = compañero de trabajo. 同学 (tóngxué) = compañero de clase. Literalmente es compartir _X_ Compartir algo'}
   - id: w.zhunbei
     use: say
     role: content
@@ -97,6 +99,8 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 准 «exacto» + 备 «tener listo». 你准备好了吗？ «¿estás listo?».'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Las cabezas de la estantería 隹 se quedan sin hielo 冫 y se descongelan; voy con mis piernas 夂 al campo 田 y lo preparo para plantarlas.'}
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '准备 + verbo es «tener pensado, ir a»: 我们准备吃牛肉 «vamos a comer ternera», no «prepararla».', original: '我们准备吃牛肉。 Wǒmen zhǔnbèi chī niúròu. Vamos a preparar ternera.'}
   - id: w.diannao
     use: say
     role: content
@@ -107,6 +111,7 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 电 «electricidad» + 脑 «cerebro»: el cerebro eléctrico.'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: '电: un sol con un cable del que sale electricidad. En 脑, 月 aquí es carne (una parte del cuerpo), y a la derecha, bajo una tapa 亠, unas conexiones cruzadas 乂 dentro del cráneo 凵.', original: 'Para memorizar 脑: carne 月 bajo una tapa 亠, con conexiones cruzadas 乂 dentro del cráneo 凵. […] La partr izquierda de ordenador es como un sol con un cable. Del que sale electricidad.'}
   - id: w.shangban
     use: say
     role: content
@@ -128,6 +133,7 @@ entries:
     source: {origin: class, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-23', text: 'Palabra a palabra: 知 «saber» (el de 知道) + 识 «conocer» (el de 认识).'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: '识, el de 认识 y 知识, es «reconocer»: el habla 讠 junto a algo que parece un caballete de pintor.', original: 'Shi de renshi o de zhishi es "reconocer" porque literal es lenguaje+loquepareceuncaballetedepintor.'}
   - id: w.shi.matter
     use: say
     role: content
@@ -138,3 +144,34 @@ entries:
     source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-23', text: '我今天有事 «hoy tengo cosas que hacer». 没事 méi shì «no pasa nada, estoy bien».'}
+  - id: w.xiaban
+    use: say
+    role: content
+    kind: word
+    hanzi: 下班
+    pinyin: xiàbān
+    meaning: {es: salir de trabajar, en: to get off work}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    relations: [w.shangban]
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: 'Lo contrario de 上班 «ir a trabajar»: 上 «subir» al turno y 下 «bajar» de él.'}
+  - id: w.qingjia
+    use: say
+    role: content
+    kind: word
+    hanzi: 请假
+    pinyin: qǐngjià
+    meaning: {es: 'pedir el día libre, pedir permiso', en: to ask for leave}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: 'Palabra a palabra: 请 «pedir» + 假 «permiso, vacaciones». 我明天请假 «mañana me cojo el día».'}
+  - id: w.jingli
+    use: hear
+    role: content
+    kind: word
+    hanzi: 经理
+    pinyin: jīnglǐ
+    meaning: {es: 'jefe, gerente', en: manager}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments:
+      - {kind: character, private: false, date: '2026-10-26', text: 'En 理 lǐ, 里 lǐ da el sonido: suenan igual.'}

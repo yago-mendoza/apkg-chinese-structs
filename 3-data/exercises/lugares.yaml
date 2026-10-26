@@ -1373,3 +1373,103 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde está tu coche?»'}
     answer: {meaning: '¿Dónde está tu coche?'}
     comments: []
+  - id: x.nuance.zhege-zheli
+    added: '2026-10-26'
+    lang: es
+    type: nuance
+    targets: [w.zheli, w.zhe]
+    skills: [comprehension, discrimination]
+    prompt: {text: '这个 y 这里: ¿cuál señala una cosa y cuál un sitio?'}
+    answer: {meaning: '这个 «este», una cosa: 个 cuenta cosas. 这里 «aquí», un sitio. Igual 那个 «aquel» y 那里 «allí»; 哪个 «cuál» y 哪里 «dónde».'}
+    comments: []
+  - id: x.choice.zheli-zhege
+    added: '2026-10-26'
+    lang: es
+    type: speak
+    targets: [w.zheli]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. Quedas con un amigo en la entrada del metro y le dices: «Espérame aquí.»', options: [你在这个等我。, 你在这里等我。]}
+    answer: {choice: b, hanzi: '你在这里等我。', pinyin: 'nǐ zài zhèlǐ děng wǒ', meaning: '这里 es un sitio, «aquí»; 这个, una cosa, «este».'}
+    comments: []
+  - id: x.choice.nali-nage
+    added: '2026-10-26'
+    lang: es
+    type: speak
+    targets: [w.nali.there]
+    skills: [production, speaking]
+    prompt: {text: 'Elige. Tu amigo pregunta adónde vais a comer y señalas un restaurante: «Vamos allí.»', options: [去那里吧。, 去那个吧。]}
+    answer: {choice: a, hanzi: '去那里吧。', pinyin: 'qù nàlǐ ba', meaning: '那里 es un sitio, «allí»; 那个, una cosa, «aquel».'}
+    comments: []
+  - id: x.read.tui.push
+    added: 2026-10-26
+    lang: es
+    type: read
+    targets: [w.tui.push]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 推}
+    answer: {hanzi: 推, pinyin: tuī, meaning: empujar}
+    comments: []
+  - id: x.read.la.pull
+    added: 2026-10-26
+    lang: es
+    type: read
+    targets: [w.la.pull]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 拉}
+    answer: {hanzi: 拉, pinyin: lā, meaning: tirar (de algo)}
+    comments: []
+  - id: x.produce.ni-cong-nali-lai
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.ni-cong-nali-lai
+    targets: [s.ni-cong-nali-lai]
+    context: [w.ni, w.cong, w.nali, w.lai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿De dónde vienes?»'}
+    answer: {meaning: '¿De dónde vienes?'}
+    comments: []
+  - id: x.listen.kuai-shangche
+    added: 2026-10-26
+    lang: es
+    type: listen
+    sentence: s.kuai-shangche
+    targets: [s.kuai-shangche]
+    context: [w.kuai.fast, w.shangche]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Sube, rápido!'}
+    comments: []
+  - id: x.produce.wo-zai-jia-chifan
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-zai-jia-chifan
+    targets: [s.wo-zai-jia-chifan]
+    context: [w.wo, w.zai.at, w.jia, w.chifan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Como en casa.»'}
+    answer: {meaning: Como en casa.}
+    comments: []
+  - id: x.produce.ni-zai-zheli-deng-wo
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.ni-zai-zheli-deng-wo
+    targets: [s.ni-zai-zheli-deng-wo]
+    context: [w.ni, w.zai.at, w.zheli, w.deng, w.wo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Espérame aquí.»'}
+    answer: {meaning: Espérame aquí.}
+    comments: []
+  - id: x.listen.dlg-qu-nali-chifan
+    added: 2026-10-26
+    lang: es
+    type: listen
+    sentence: s.dlg-qu-nali-chifan
+    targets: [s.dlg-qu-nali-chifan]
+    context: [w.women, w.qu, w.nali, w.chifan, w.nali.there, w.ba.particle, w.tai, w.yuan.far, w.le, w.zai.at, w.zheli, w.chi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Dónde vamos a comer? —Vamos allí. —Allí está demasiado lejos; comamos aquí.'}
+    comments: []

@@ -4,8 +4,6 @@ sentences:
   - id: s.ni-hao-ma
     use: say
     kind: formula
-    listen: true
-    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 好, ref: w.hao, pinyin: hǎo}
@@ -15,8 +13,6 @@ sentences:
   - id: s.wo-hen-hao-ni-ne
     use: say
     kind: formula
-    listen: true
-    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 很, ref: w.hen, pinyin: hěn}
@@ -39,8 +35,6 @@ sentences:
   - id: s.huanying-ni
     use: say
     kind: formula
-    listen: true
-    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 欢迎, ref: w.huanying, pinyin: huānyíng}
       - {text: 你, ref: w.ni, pinyin: nǐ}
@@ -50,8 +44,6 @@ sentences:
   - id: s.ni-zenmeyang
     use: say
     kind: formula
-    listen: true
-    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 怎么样, ref: w.zenmeyang, pinyin: zěnmeyàng}
@@ -81,8 +73,6 @@ sentences:
   - id: s.qu-nali-a
     use: say
     kind: formula
-    listen: true
-    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 去, ref: w.qu, pinyin: qù}
       - {text: 哪里, ref: w.nali, pinyin: nǎlǐ}
@@ -133,8 +123,6 @@ sentences:
   - id: s.zuijin-mang-ma
     use: say
     kind: formula
-    listen: true
-    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 最近, ref: w.zuijin, pinyin: zuìjìn}
       - {text: 忙, ref: w.mang, pinyin: máng}
@@ -168,8 +156,6 @@ sentences:
   - id: s.wo-zuijin-hen-mang
     use: say
     kind: formula
-    listen: true
-    listen_reason: Su tarjeta de oír ya se estudió; se queda hasta que YAGO diga si la quita (review 012).
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 最近, ref: w.zuijin, pinyin: zuìjìn}
@@ -382,8 +368,7 @@ sentences:
     use: say
     kind: formula
     segments:
-      - {text: 明天, ref: w.mingtian, pinyin: míngtiān}
-      - {text: 见, ref: w.jian, pinyin: jiàn}
+      - {text: 明天见, ref: e.mingtianjian, pinyin: míngtiān jiàn}
       - {text: ！}
     translation: {es: ¡Hasta mañana!, en: See you tomorrow!}
   - id: s.wo-zou-le
@@ -429,3 +414,22 @@ sentences:
       - {text: ！}
     translation: {es: '¡Buenos días, señor Mèng!', en: 'Hello, Mr Meng!'}
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-20'}
+  - id: s.gongxi-ni
+    use: say
+    kind: formula
+    segments:
+      - {text: 恭喜, ref: e.gongxi, pinyin: 'gōngxǐ'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: ！}
+    translation: {es: '¡Felicidades!', en: 'Congratulations!'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-hai-hao
+    use: say
+    kind: formula
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 还, ref: w.hai.still, pinyin: 'hái'}
+      - {text: 好, ref: w.hao, pinyin: 'hǎo'}
+      - {text: 。}
+    translation: {es: 'Voy tirando.', en: 'I am OK, not bad.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}

@@ -182,3 +182,12 @@ sentences:
       - {text: ！}
     translation: {es: '¡Hemos llegado a la isla!', en: 'We''ve arrived on the island!'}
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
+  - id: s.hao-re
+    use: say
+    kind: formula
+    segments:
+      - {text: 好, ref: w.hao, pinyin: 'hǎo'}
+      - {text: 热, ref: w.re, pinyin: 'rè'}
+      - {text: ！}
+    translation: {es: '¡Qué calor!', en: 'It is so hot!'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}

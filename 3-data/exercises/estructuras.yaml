@@ -593,3 +593,39 @@ exercises:
     prompt: {text: '¿Cuál se dice así en chino? «Lo que dices no es correcto.»'}
     answer: {meaning: 'Para valorar lo que alguien dice va 得; y 不对 ya es «incorrecto», sin 是.'}
     comments: []
+  - id: x.calque.cong-dao
+    added: 2026-10-26
+    lang: es
+    type: pattern
+    targets: [st.cong-dao]
+    context: [w.cong, w.dian.oclock, w.dao.reach, w.dian.oclock]
+    sentence: s.wo-cong-jiu-dian-gongzuo-dao-wu-dian
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Trabajo de nueve a cinco.»'}
+    answer: {meaning: 'En chino, desde cuándo va delante del verbo: 从九点工作, y el hasta cuándo, detrás: 工作到五点.'}
+    comments: []
+  - id: x.calque.hai-mei-v
+    added: 2026-10-26
+    lang: es
+    type: pattern
+    targets: [st.hai-mei-v]
+    context: [w.hai.still, w.mei]
+    sentence: s.wo-hai-mei-mai
+    reveal: [s.wo-hai-mei-chifan, s.ta-hai-mei-lai]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Todavía no lo he comprado.»'}
+    answer: {meaning: '还没 ya dice «todavía no»: no lleva 了 al final, porque no ha pasado nada.'}
+    comments: []
+  - id: x.calque.de-relative
+    added: 2026-10-26
+    lang: es
+    type: pattern
+    targets: [st.de-relative]
+    context: [w.de]
+    sentence: s.zhe-shi-wo-mai-de-shu
+    reveal: [s.ta-zuo-de-fan-hen-haochi, s.wo-ting-bu-dong-ta-shuo-de-hua]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Este es el libro que compré.»'}
+    answer: {meaning: 'Lo que describe va delante, con 的: 我买的书 «el libro que compré». El «que» del español no existe.'}
+    comments: []

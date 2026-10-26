@@ -25,23 +25,23 @@
 - ✅🃏 姓名 xìngmíng [ɕiŋ˥˩ miŋ˧˥] · nombre completo · _sustantivo_
 - ❌ 门多萨 Ménduōsà [mən˧˥ twɔ˥ sa˥˩] · Mendoza (mi apellido) · _nombre propio_ · Pura transcripción del sonido: 门 «puerta», 多 «mucho» y 萨 no forman ningún significado.
 - ❌ 雅戈 Yǎgē [ja˧˩˧ kɤ˥] · Yago (mi nombre en chino) · _nombre propio_ · Transcripción por el sonido: 雅 «elegante» y 戈 «alabarda», sin otro significado. Solo por diversión.
-- ✅🃏 来 lái [laɪ˧˥] · venir · _verbo_ · Su origen es el dibujo de una planta de trigo, tomado prestado por su sonido para «venir». · 来 es como una marca bonita en el mapa: el sitio donde estás tú. Por eso solo se puede venir hacia aquí.
-- ✅🃏 来自 láizì [laɪ˧˥ tsɯ˥˩] · venir de, ser de · _verbo_ · Algo formal. Hablando, también: 我从西班牙来 wǒ cóng Xībānyá lái.
+- ✅🃏 来 lái [laɪ˧˥] · venir · _verbo_ · Su origen es el dibujo de una planta de trigo, tomado prestado por su sonido para «venir». · 来 es como una marca bonita en el mapa: el sitio donde estás tú. Por eso solo se puede venir hacia aquí. · 我来 + verbo es «déjame a mí, ya me encargo»: 我来付钱 «pago yo», 我来介绍一下 «dejad que os presente». Solo, 我来！ «¡ya voy yo!».
+- ✅🃏 来自 láizì [laɪ˧˥ tsɯ˥˩] · venir de, ser de · _verbo_ · Algo formal. Hablando, también: 我从西班牙来 wǒ cóng Xībānyá lái. · 自 es «uno mismo»: 来自 es venir de uno mismo, proceder. No es el zi átono de 儿子: es zì, con cuarto tono.
 - ✅🃏 问 wèn [wən˥˩] · preguntar · _verbo_ · Una boca 口 en la puerta 门, preguntando. · 门 mén le da el sonido: wèn. · Preguntar es wèn, con -n al final; no confundir con wèi, el 为 de 为什么.
 - ✅🃏 北京 Běijīng [peɪ˧˩˧ tɕiŋ˥] · Pekín · _nombre propio_ · Literalmente «capital del norte»: 北 běi «norte» + 京 jīng «capital». · 京 es un edificio alto sobre una colina, la parte de arriba de 高.
 - ✅ 大卫 Dàwèi [ta˥˩ weɪ˥˩] · David (nombre de ejemplo) · _nombre propio_
 - ✅🃏 先生 xiānsheng [ɕjɛn˥ ʂɤŋ] · señor (tras el apellido) · _sustantivo_ · Detrás del apellido: 白先生 «el señor Bai». Es como se llama a alguien en un trato formal; no por el nombre completo. · 先 «antes» + 生 «nacer»: el que nació antes.
-- ✅🃏 哪 nǎ [na˧˩˧] · qué, cuál · _interrogativo_ · Ves varias cosas y abres la boca 口 para preguntar: «¿cuál de esas 那 quieres?». La boca convierte «ese» en una pregunta, y el tono también cambia: 那 nà baja, 哪 nǎ baja y sube.
+- ✅🃏 哪 nǎ [na˧˩˧] · qué, cuál · _interrogativo_ · Ves varias cosas y abres la boca 口 para preguntar: «¿cuál de esas 那 quieres?». La boca convierte «ese» en una pregunta, y el tono también cambia: 那 nà baja, 哪 nǎ baja y sube. · Si sabes decir «uno», cambia 一 por 哪 y deja lo demás: de 一天 sale 哪天; de 一个人, 哪个人; de 一本书, 哪本书. 你是哪国人？ es una expresión hecha, sin 个.
 - ✅🃏 国 guó [kwɔ˧˥] · país · _sustantivo_ · En los nombres de países: 中国, 美国. 你是哪国人？ «¿de qué país eres?». · En 中国, 中 zhōng «centro» va delante y 国 guó «país» detrás: «el país del centro».
 - ✅🃏 会 huì [xweɪ˥˩] · saber (hacer algo); ir a (predicción) · _verbo_ · Saber hacer algo aprendido: 我会说中文. «Saber un dato» es otra palabra, 知道 zhīdào [HSK 1]. · También predice: 明天会下雨 «mañana lloverá».
 - ✅🃏 学习 xuéxí [ɕɥœ˧˥ ɕi˧˥] · estudiar, aprender · _verbo_ · 学 «aprender» + 习 «practicar». 学生 «estudiante» lleva el mismo 学.
 - ✅ 成龙 Chéng Lóng [ʈʂʰɤŋ˧˥ lʊŋ˧˥] · Jackie Chan · _nombre propio_ · Su apellido es 成 y su nombre, 龙 «dragón»: 他姓成，叫成龙.
 - ✅🃏 英国 Yīngguó [iŋ˥ kwɔ˧˥] · Reino Unido, Inglaterra · _nombre propio_
 - ✅🃏 幸会 xìnghuì [ɕiŋ˥˩ xweɪ˥˩] · encantado (de conocerle), fórmula formal · _expresión_ · Palabra a palabra: 幸 «suerte» + 会 «encontrarse»: «qué suerte encontrarle». · En una presentación formal: «您好，我是…», «您贵姓？», «我姓…，叫…» y, al final, los dos dicen «幸会！».
-- ✅🃏 出生 chūshēng [ʈʂʰu˥ ʂɤŋ˥] · nacer · _verbo_ · 出 «salir» + 生 «nacer»: salir al mundo.
-- ✅🃏 属 shǔ [ʂu˧˩˧] · ser (de un signo del zodiaco) · _verbo_ · 我属马 «soy caballo»: el signo del año en que naciste. Se pregunta 你属什么？.
+- ✅🃏 出生 chūshēng [ʈʂʰu˥ ʂɤŋ˥] · nacer · _verbo_ · 出 «salir» + 生 «nacer»: salir al mundo. · 出生 es salir a la vida; y lleva dos tonos altos y planos, como el golpe de gong del momento en que sales.
+- ✅🃏 属 shǔ [ʂu˧˩˧] · ser (de un signo del zodiaco) · _verbo_ · 我属马 «soy caballo»: el signo del año en que naciste. Se pregunta 你属什么？. · Llevas dentro tu animal del zodiaco: 尸 es el cuerpo que lo envuelve, y dentro se ven la cabeza cuadrada y la cola del animal.
 - ✅🃏 猜 cāi [tsʰaɪ˥] · adivinar · _verbo_
-- ✅🃏 觉得 juéde [tɕɥœ˧˥ tɤ] · creer, parecerle a uno · _verbo_ · Para dar tu opinión: 我觉得很好 «me parece bien». 你觉得怎么样？ «¿qué te parece?».
+- ✅🃏 觉得 juéde [tɕɥœ˧˥ tɤ] · creer, parecerle a uno · _verbo_ · Para dar tu opinión: 我觉得很好 «me parece bien». 你觉得怎么样？ «¿qué te parece?». · Ves 见 algo bajo una cubierta 冖 y te saltan tres chispas ⺍ en la cabeza: «¡creo que sé qué es!». Para comprobarlo das un paso 彳 al amanecer 旦 y lo tanteas con la mano 寸: después de verlo y tocarlo, dices «me parece que…». Y juéde suena a «juzgar», opinar.
 - ✅🃏 王 Wáng [wɑŋ˧˥] · Wang (apellido) · _sustantivo_ · Como palabra suelta, 王 es «rey» [HSK 4]; aquí es el apellido.
 - ✅🃏 哪个 nǎge [na˧˩˧ kɤ] · cuál, qué (de varios) · _interrogativo_ · Palabra a palabra: 哪 «cuál» + 个, el clasificador. Para elegir entre varios: 哪个人？ «¿qué persona?», 哪个国家？ «¿qué país?».
 - ✅🃏 国家 guójiā [kwɔ˧˥ tɕja˥] · país · _sustantivo_ · Palabra a palabra: 国 «país» + 家 «casa». Para preguntar de dónde es alguien basta con 你是哪国人；国家 es la palabra entera, como en 你来自哪个国家.
@@ -50,7 +50,7 @@
 - ✅🃏 汉语 Hànyǔ [xan˥˩ y˧˩˧] · chino (el idioma; más formal que 中文) · _nombre propio_ · Palabra a palabra: 汉 «los han», el pueblo chino + 语 «lengua». Es el nombre de la asignatura y del examen (汉语水平考试, el HSK); al hablar se oye más 中文: 我在学习中文.
 - ✅🃏 德国 Déguó [tɤ˧˥ kwɔ˧˥] · Alemania · _nombre propio_
 - ✅🃏 巴西 Bāxī [pa˥ ɕi˥] · Brasil · _nombre propio_
-- ✅🃏 介绍 jièshào [tɕjɛ˥˩ ʂɑʊ˥˩] · presentar (a alguien) · _verbo_ · 我介绍一下 «os presento»: antes de decir quién es alguien o quién eres tú.
+- ✅🃏 介绍 jièshào [tɕjɛ˥˩ ʂɑʊ˥˩] · presentar (a alguien) · _verbo_ · 我介绍一下 «os presento»: antes de decir quién es alguien o quién eres tú. · 介 parece una persona entre otras dos, y 绍 lleva el hilo 纟: presentar es unir a dos personas con un hilo.
 - ✅🃏 孟 Mèng [mɤŋ˥˩] · Mèng (tu apellido en chino) · _nombre propio_ · Un apellido chino de verdad, el de Mencio, 孟子 Mèngzǐ. Se dice 我姓孟 «me apellido Mèng».
 - ✅🃏 孟逸辰 Mèng Yìchén [mɤŋ˥˩ i˥˩ ʈʂʰən˧˥] · Mèng Yìchén (tu nombre en chino) · _nombre propio_ · Primero el apellido, 孟 Mèng, y luego el nombre, 逸辰 Yìchén: 逸 «sosegado, libre» y 辰 «los astros; la hora». Suena moderno y natural.
 
@@ -202,3 +202,6 @@ Misma sílaba, distinto tono.
 - ✅🃏 我从西班牙来。 · wǒ cóng Xībānyá lái · Vengo de España (soy de España).
 - ✅🃏 你属什么？我属龙。哦，我也属龙！ · nǐ shǔ shénme wǒ shǔ lóng ò wǒ yě shǔ lóng · —¿De qué signo eres? —Dragón. —¡Anda, yo también!
 - ✅🃏 我叫孟逸辰，我从西班牙来，我是工程师。我在学习中文，我觉得中文很有意思。 · wǒ jiào Mèng Yìchén wǒ cóng Xībānyá lái wǒ shì gōngchéngshī wǒ zài xuéxí Zhōngwén wǒ juéde Zhōngwén hěn yǒuyìsi · Me llamo Mèng Yìchén, soy de España y soy ingeniero. Estoy aprendiendo chino y me parece muy interesante.
+- ✅🃏 中国是一个很大的国家。 · Zhōngguó shì yí ge hěn dà de guójiā · China es un país muy grande.
+- ✅🃏 中国有多大？ · Zhōngguó yǒu duō dà · ¿Cómo de grande es China?
+- ✅🃏 你是哪个国家的人？ · nǐ shì nǎge guójiā de rén · ¿De qué país eres?

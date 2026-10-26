@@ -154,3 +154,6 @@ Cada una contesta a una cosa distinta: a unas gracias, a una disculpa o a un fav
 - ✅🃏 你做得很好。 · nǐ zuò de hěn hǎo · Lo has hecho muy bien.
 - ✅🃏 这个不对。 · zhè ge bù duì · Esto no está bien (es incorrecto).
 - ✅🃏 没事。 · méi shì · No pasa nada.
+- ✅🃏 我来！ · wǒ lái · ¡Ya me encargo yo!
+- ✅🃏 我来帮你。 · wǒ lái bāng nǐ · Deja, que te ayudo.
+- ✅🃏 我自己来。 · wǒ zìjǐ lái · Ya lo hago yo.

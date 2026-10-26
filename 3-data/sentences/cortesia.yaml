@@ -686,3 +686,33 @@ sentences:
       - {text: 。}
     translation: {es: 'No pasa nada.', en: 'It''s nothing.'}
     source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+  - id: s.wo-lai
+    use: say
+    kind: formula
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 来, ref: w.lai, pinyin: 'lái'}
+      - {text: ！}
+    translation: {es: '¡Ya me encargo yo!', en: 'Leave it to me!'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-lai-bang-ni
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 来, ref: w.lai, pinyin: 'lái'}
+      - {text: 帮, ref: w.bang, pinyin: 'bāng'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 。}
+    translation: {es: 'Deja, que te ayudo.', en: 'Let me help you.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-ziji-lai
+    use: say
+    kind: formula
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 自己, ref: w.ziji, pinyin: 'zìjǐ'}
+      - {text: 来, ref: w.lai, pinyin: 'lái'}
+      - {text: 。}
+    translation: {es: 'Ya lo hago yo.', en: 'I will do it myself.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}

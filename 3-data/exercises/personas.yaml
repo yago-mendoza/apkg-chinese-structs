@@ -1027,8 +1027,8 @@ exercises:
     type: contrast
     group: g.nan-nan
     targets: [w.nan.male]
-    skills: [listening, tones, discrimination]
-    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es nán, «hombre, masculino»?'}
     answer: {hanzi: 男, pinyin: nán, meaning: 'hombre, masculino (en carteles: 男)'}
     comments: []
   - id: x.listen.ta-shi-wo-de-tongxue
@@ -1535,4 +1535,68 @@ exercises:
     skills: [listening, tones, discrimination]
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 朋友, pinyin: péngyou, meaning: 'amigo, amiga'}
+    comments: []
+  - id: x.nuance.gen-yiqi
+    added: '2026-10-26'
+    lang: es
+    type: nuance
+    targets: [w.gen, w.yiqi]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我跟你去 y 我们一起去: ¿qué cambia?'}
+    answer: {meaning: '跟 dice con quién: 跟你 «contigo». 一起 dice que juntos, sin nombrar a nadie. A menudo van juntos: 我跟你(一起)去.'}
+    comments: []
+  - id: x.produce.gen-wo-lai
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.gen-wo-lai
+    targets: [s.gen-wo-lai]
+    context: [w.gen, w.wo, w.lai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Sígueme.»'}
+    answer: {meaning: Sígueme.}
+    comments: []
+  - id: x.produce.women-yiqi-qu-ba
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.women-yiqi-qu-ba
+    targets: [s.women-yiqi-qu-ba]
+    context: [w.women, w.yiqi, w.qu, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Vamos juntos.»'}
+    answer: {meaning: Vamos juntos.}
+    comments: []
+  - id: x.produce.wo-yi-ge-ren-qu
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-yi-ge-ren-qu
+    targets: [s.wo-yi-ge-ren-qu]
+    context: [w.wo, w.num.yi, w.ge, w.ren, w.qu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Voy solo.»'}
+    answer: {meaning: Voy solo.}
+    comments: []
+  - id: x.produce.wo-gen-ni-yiqi-qu
+    added: 2026-10-26
+    lang: es
+    type: produce
+    sentence: s.wo-gen-ni-yiqi-qu
+    targets: [s.wo-gen-ni-yiqi-qu]
+    context: [w.wo, w.gen, w.ni, w.yiqi, w.qu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Voy contigo.»'}
+    answer: {meaning: Voy contigo.}
+    comments: []
+  - id: x.listen.dlg-yi-ge-ren-qu
+    added: 2026-10-26
+    lang: es
+    type: listen
+    sentence: s.dlg-yi-ge-ren-qu
+    targets: [s.dlg-yi-ge-ren-qu]
+    context: [w.ni, w.num.yi, w.ge, w.ren, w.qu, w.haishi, w.gen, w.pengyou, w.yiqi, w.wo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Vas solo o con amigos? —Voy con unos amigos.'}
     comments: []

@@ -26,23 +26,23 @@
 - ✅🃏 星期天 xīngqītiān [ɕiŋ˥ tɕʰi˥ tʰjɛn˥] · domingo · _sustantivo_ · No es «星期七»: el domingo es el día 天 de la semana. Por escrito, 星期日.
 - ✅🃏 生日 shēngrì [ʂɤŋ˥ ʐɨ˥˩] · cumpleaños · _sustantivo_ · 生 «nacer» + 日 «día»: el día en que naciste.
 - ✅🃏 日 rì [ʐɨ˥˩] · día (en fechas escritas); sol · _sustantivo_ · Por escrito, 10月8日; al hablar, 十月八号.
-- ✅🃏 时候 shíhou [ʂɨ˧˥ xoʊ] · momento; cuando (…的时候) · _sustantivo_ · …的时候 es «cuando…»: va detrás de lo que pasa. 你有时间的时候 «cuando tengas tiempo».
+- ✅🃏 时候 shíhou [ʂɨ˧˥ xoʊ] · momento; cuando (…的时候) · _sustantivo_ · …的时候 es «cuando…»: va detrás de lo que pasa. 你有时间的时候 «cuando tengas tiempo». · 候: una persona con una flecha en el carcaj, atenta, esperando el momento de actuar.
 - ✅🃏 先 xiān [ɕjɛn˥] · primero, antes · _adverbio_ · Delante del verbo: 我得先复习一下笔记 «antes tengo que repasar los apuntes». Es el mismo 先 de 先生.
-- ✅🃏 什么时候 shénme shíhou [ʂən˧˥ mɤ ʂɨ˧˥ xoʊ] · cuándo · _expresión_ · Palabra a palabra: 什么 «qué» + 时候 «momento». Va donde iría la respuesta: 你什么时候来？ «¿cuándo vienes?».
-- 🟡🃏 时 shí · tiempo, hora (en 时候, 时间) · En 时 se puede ver un carnero cósmico: el que lleva el tiempo. · Al final de una palabra, 时 es «el momento» o «la hora»: 小时 «una hora». Detrás de 有, «hay veces»: 有时候 «a veces».
+- ✅🃏 什么时候 shénme shíhou [ʂən˧˥ mɤ ʂɨ˧˥ xoʊ] · cuándo · _expresión_ · Palabra a palabra: 什么 «qué» + 时候 «momento». Va donde iría la respuesta: 你什么时候来？ «¿cuándo vienes?». · Palabra a palabra: 什么 «qué» + 时候 «momento». 你什么时候来？ es «tú, qué momento, vienes»: ¿cuándo vienes?
+- 🟡🃏 时 shí · tiempo, hora (en 时候, 时间) · En 时 se puede ver un carnero cósmico: el que lleva el tiempo. · Al final de una palabra, 时 es «el momento» o «la hora»: 小时 «una hora». Detrás de 有, «hay veces»: 有时候 «a veces». · 日 «sol» + 寸 «medida»: antes se medía el tiempo mirando el sol; medir el sol es medir el tiempo.
 - 🟡🃏 今 jīn · ahora, actual (en 今天, 今年)
 - ✅🃏 点 diǎn [tjɛn˧˩˧] · la hora en punto (las tres, las cinco…) · _clasificador_ · Número + 点: 三点 «las tres». 现在几点？ «¿qué hora es?». Delante va la parte del día: 早上七点 «las siete de la mañana», 下午五点 «las cinco de la tarde». · Es el mismo 点 de la coma decimal: 三点五 «tres coma cinco». En la hora, lo que sigue son minutos: 三点五分 «las tres y cinco».
 - ✅🃏 半 bàn [pan˥˩] · y media; mitad · _número_ · 三点半 «las tres y media». También «medio»: 半个小时 «media hora». · Da el sonido a 胖 pàng «gordo».
 - ✅🃏 分 fēn [fən˥] · minuto (en la hora: las ocho y diez) · _clasificador_ · En la hora: 八点十分 «las ocho y diez». Para lo que dura algo se dice 分钟: 十分钟 «diez minutos».
 - ✅🃏 分钟 fēnzhōng [fən˥ ʈʂʊŋ˥] · minuto (de duración) · _clasificador_ · Palabra a palabra: 分 «parte» + 钟 «reloj». Para lo que dura: 等十分钟 «esperar diez minutos». En la hora basta 分: 八点十分.
 - ✅🃏 小时 xiǎoshí [ɕjɑʊ˧˩˧ ʂɨ˧˥] · hora (de duración) · _sustantivo_ · Palabra a palabra: 小 «pequeño» + 时 «tiempo». Lo que dura: 一个小时 «una hora», con 个. Para decir qué hora es, 点: 三点.
-- ✅🃏 现在 xiànzài [ɕjɛn˥˩ tsaɪ˥˩] · ahora · _sustantivo_ · 现在几点？ «¿qué hora es?». Va delante del verbo o al principio: 你现在忙吗？ «¿estás ocupado ahora?».
+- ✅🃏 现在 xiànzài [ɕjɛn˥˩ tsaɪ˥˩] · ahora · _sustantivo_ · 现在几点？ «¿qué hora es?». Va delante del verbo o al principio: 你现在忙吗？ «¿estás ocupado ahora?». · 现 es lo que está a la vista: algo aparece y se hace presente. Es el «ahora» de verdad, este momento; 今 es el periodo en que estás (今天, 今年). · 现 xiàn no es 先 xiān «primero»: suenan parecido, pero cambian el tono y el carácter. 现在 no lleva ningún «primero».
 - ✅🃏 上次 shàngcì [ʂɑŋ˥˩ tsʰɯ˥˩] · la última vez, la vez anterior · _sustantivo_ · Palabra a palabra: 上 «arriba, anterior» + 次 «vez». Como 上午 y 下午: en una lista de arriba abajo, 上 es lo de antes y 下, lo de después.
 - ✅🃏 下次 xiàcì [ɕja˥˩ tsʰɯ˥˩] · la próxima vez · _sustantivo_ · Palabra a palabra: 下 «abajo, siguiente» + 次 «vez». 下次见！ «¡hasta la próxima!». «Cada vez» es 每次 měi cì [HSK 3].
 - ✅🃏 这次 zhècì [ʈʂɤ˥˩ tsʰɯ˥˩] · esta vez · _sustantivo_ · Palabra a palabra: 这 «este» + 次 «vez». 这次我去 «esta vez voy yo».
 - ✅🃏 星期日 xīngqīrì [ɕiŋ˥ tɕʰi˥ ʐɨ˥˩] · domingo (por escrito) · _sustantivo_ · El domingo no es «星期七»: es 星期天 al hablar y 星期日 por escrito, en calendarios y horarios. Los demás días son 星期 + número: 星期一 «lunes».
 - ✅🃏 前 qián [tɕʰjɛn˧˥] · antes; hace (两天前 = hace dos días) · _sustantivo_ · Detrás de un tiempo es «hace»: 两天前 «hace dos días», 一年前 «hace un año». Delante de un lugar es «delante»: 门前 «delante de la puerta».
-- ✅🃏 多久 duōjiǔ [twɔ˥ tɕjoʊ˧˩˧] · ¿cuánto tiempo? · _pronombre_ · Palabra a palabra: 多 «cuánto» + 久 «mucho tiempo». Pregunta lo que dura: 你等了多久？ «¿cuánto tiempo has esperado?». En qué momento es 什么时候.
+- ✅🃏 多久 duōjiǔ [twɔ˥ tɕjoʊ˧˩˧] · ¿cuánto tiempo? · _pronombre_ · Palabra a palabra: 多 «cuánto» + 久 «mucho tiempo». Pregunta lo que dura: 你等了多久？ «¿cuánto tiempo has esperado?». En qué momento es 什么时候. · 久 es la duración, «mucho tiempo»: 好久不见, 你等了多久？. El tiempo del reloj es 时间: 你有时间吗？.
 - ✅🃏 有时候 yǒushíhou [joʊ˧˩˧ ʂɨ˧˥ xoʊ] · a veces · _adverbio_ · Palabra a palabra: 有 «hay» + 时候 «momentos»: «hay veces que». Va delante del verbo o al principio: 我有时候很累 «a veces estoy muy cansado». Más corto, 有时.
 - ✅🃏 去年 qùnián [tɕʰy˥˩ njɛn˧˥] · el año pasado · _sustantivo_ · 去年, 今年, 明年: el año pasado, este y el que viene. Como 昨天, 今天, 明天 con los días, pero el pasado es 去 «irse»: el año que se fue.
 - ✅🃏 以前 yǐqián [i˧˩˧ tɕʰjɛn˧˥] · antes; hace tiempo · _sustantivo_
@@ -56,8 +56,9 @@
 - ✅🃏 打算 dǎsuàn [ta˧˩˧ swan˥˩] · planear, tener previsto (hacer algo) · _verbo_ · Palabra a palabra: 打 «hacer» + 算 «calcular»: «echar las cuentas». Un plan, no un deseo: 我打算明年去中国 «pienso ir a China el año que viene»; 想 es tener ganas.
 - ✅🃏 完 wán [wan˧˥] · terminar (detrás del verbo: 吃完) · _verbo_ · Detrás del verbo dice que se ha terminado: 我吃完了 «he terminado de comer»; 我看完了 «ya lo he visto entero».
 - ✅🃏 最后 zuìhòu [tsweɪ˥˩ xoʊ˥˩] · al final; el último · _sustantivo_ · Palabra a palabra: 最 «lo más» + 后 «detrás»: lo que va más atrás. 我是最后一个 «soy el último».
-- ✅🃏 见面 jiànmiàn [tɕjɛn˥˩ mjɛn˥˩] · verse, quedar (con alguien) · _verbo_ · Palabra a palabra: 见 «ver» + 面 «cara»: verse las caras. 我们明天见面吧 «quedamos mañana».
+- ✅🃏 见面 jiànmiàn [tɕjɛn˥˩ mjɛn˥˩] · verse, quedar (con alguien) · _verbo_ · Palabra a palabra: 见 «ver» + 面 «cara»: verse las caras. 我们明天见面吧 «quedamos mañana». · En 面 se ve una cara, clavada: 见面 es «vernos las caras». · 见面 es el encuentro en persona, no organizarlo: para quedar se usa 约 yuē [HSK 3]. Y conocer a alguien es 认识: puedes 认识 a alguien por internet sin haber 见面 todavía. 面 es «cara» solo dentro de palabras; la cara, al hablar, es 脸 liǎn.
 - ✅🃏 常 cháng [ʈʂʰɑŋ˧˥] · a menudo, soler · _adverbio_ · Lo mismo que 常常: 我常去这里 «suelo venir aquí». Para negar, 不常, mejor que 不常常: 我不常喝咖啡. · Dos señores mayores con rulos, sentados siempre en el mismo sitio: los viejos son animales de costumbres.
+- ✅🃏 总是 zǒngshì [tsʊŋ˧˩˧ ʂɨ˥˩] · siempre · _adverbio_ · 我总是喝茶 «siempre tomo té»: más que 常常 «a menudo». Va delante del verbo o del adjetivo: 他总是很忙.
 
 ## 上 / 中 / 下 + 午
 
@@ -113,6 +114,33 @@ La misma sílaba: solo los separa el tono.
 - 长 cháng · sube: 很长
 - 常 cháng · sube: 我常去
 - 唱 chàng · cae
+
+## Cuántas veces: 有时候, 常常 y 总是
+
+Van delante del verbo, de menos a más. Para «no a menudo», 不常.
+
+- 有时候 yǒushíhou · 有 «hay» + 时候: hay veces
+- 常常 chángcháng · 常 repetido; 常 solo dice lo mismo
+- 总是 zǒngshì · el máximo, sin excepción
+
+## 以前, 现在 y 以后: antes, ahora y después
+
+以前 y 以后 van también detrás de una acción: 吃饭以前 «antes de comer», 吃饭以后 «después de comer».
+
+- 以前 yǐqián · 前 «delante»: lo que ya quedó atrás
+- 现在 xiànzài · 现 «a la vista»: este momento
+- 以后 yǐhòu · 后 «detrás»: lo que viene
+
+## Dónde cae la acción: antes, ahora o a punto
+
+Se mira desde el momento en que hablas: lo que ya pasó, lo que está pasando y lo que está a punto de pasar o aún no ha pasado.
+
+- {S} + {V} + 过 + {N}  · alguna vez: la experiencia
+- 已经 yǐjīng · ya, antes de lo que se esperaba
+- {S} + {V} + 了  · ya hecho, o un cambio
+- {S} + 在 + {V}  · en marcha
+- 快要 kuàiyào · inminente, con 了 al final
+- {S} + 还 + 没 + {V}  · aún no, sin 了
 
 ## Frases
 
@@ -178,3 +206,13 @@ La misma sílaba: solo los separa el tono.
 - ✅🃏 我先回家。 · wǒ xiān huíjiā · Primero me voy a casa.
 - ✅🃏 你先走吧。 · nǐ xiān zǒu ba · Ve tú primero.
 - ✅🃏 我明天来。 · wǒ míngtiān lái · Vengo mañana.
+- ✅🃏 我从九点工作到五点。 · wǒ cóng jiǔ diǎn gōngzuò dào wǔ diǎn · Trabajo de nueve a cinco.
+- ✅🃏 你有时间吗？ · nǐ yǒu shíjiān ma · ¿Tienes tiempo?
+- ✅🃏 以前你帮我，以后我帮你。 · yǐqián nǐ bāng wǒ yǐhòu wǒ bāng nǐ · Antes tú me ayudabas; ahora te ayudaré yo.
+- ✅🃏 他总是很忙。 · tā zǒngshì hěn máng · Siempre está muy ocupado.
+- ✅🃏 我今年很忙。 · wǒ jīnnián hěn máng · Este año estoy muy ocupado.
+- ✅🃏 他今年还是学生。 · tā jīnnián hái shì xuéshēng · Este año todavía es estudiante.
+- ✅🃏 我们在哪里见面？ · wǒmen zài nǎlǐ jiànmiàn · ¿Dónde quedamos?
+- ✅🃏 你哪天可以来？ · nǐ nǎ tiān kěyǐ lái · ¿Qué día puedes venir?
+- ✅🃏 我们哪天见面？明天怎么样？好，明天见！ · wǒmen nǎ tiān jiànmiàn míngtiān zěnmeyàng hǎo míngtiān jiàn · —¿Qué día quedamos? —¿Qué tal mañana? —Vale, ¡hasta mañana!
+- ✅🃏 你哪天来？ · nǐ nǎ tiān lái · ¿Qué día vienes?

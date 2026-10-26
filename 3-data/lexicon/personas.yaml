@@ -210,6 +210,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_cosas_para_otro_dia.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '谁 ocupa el sitio de la persona que no conoces, sin cambiar el orden: de 他是老师 sale 他是谁？. También se oye shuí.'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Hablas 讠 ante la estantería de cabezas 隹: «¿quién está aquí?».'}
   - id: g.dajia-daxiang
     kind: group
     basis: soundalike
@@ -281,6 +282,7 @@ entries:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: '跟 + persona + verbo: 你想跟我一起吃饭吗？ «¿quieres comer conmigo?». Suele ir con 一起.'}
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '跟我来 «sígueme»: 跟 también es «seguir». 跟 dice con quién y 一起, que juntos; se juntan a menudo: 我跟你(一起)去 «voy contigo».', original: '跟 (gēn) significa «seguir» o «ir con alguien». 跟我来。 Sígueme / Ven conmigo. […] Gēn (跟) indica con quién; yìqǐ (一起) indica que hacéis algo juntos.'}
   - id: w.yiqi
     use: say
     role: content
@@ -382,7 +384,8 @@ entries:
     pinyin: 'zìjǐ'
     meaning: {es: 'uno mismo (yo mismo, tú mismo…)', en: 'oneself'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'deberes 2026-10-13', date: '2026-10-13'}
-    comments: []
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-26', text: '我自己来 «ya lo hago yo»: con 自己, «yo mismo, sin ayuda».', original: 'Por ejemplo: 我自己来。Wǒ zìjǐ lái. → «Lo hago yo».'}
   - id: w.nvsheng
     use: hear
     role: content

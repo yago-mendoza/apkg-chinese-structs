@@ -66,6 +66,7 @@ entries:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: '请说慢一点 «hable un poco más despacio, por favor». Lo contrario es 快 kuài «rápido».'}
+      - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Tu corazón 忄 quiere avanzar, pero una mano 又 tiene que desenredar una red 罒 que ha atrapado al sol 日: tira con tanto cuidado, tan despacio, que parece que el día no acaba nunca.', original: 'Tu corazón 忄 quiere avanzar, pero una mano 又 tiene que desenredar una red 罒 que ha atrapado al sol 日: tira con cuidado para no quemarse, tan lento —慢 (màn)— que parece que el día nunca acaba.'}
   - id: w.yidian
     use: say
     role: function

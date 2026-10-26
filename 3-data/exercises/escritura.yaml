@@ -565,3 +565,13 @@ exercises:
     answer: {hanzi: 欢, pinyin: huān, meaning: alegría}
     lang: es
     comments: []
+  - id: x.contrast.ding.fixed
+    added: '2026-10-26'
+    lang: es
+    type: contrast
+    group: g.ding-zou-shi
+    targets: [c.ding.fixed]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es dìng, «fijo, establecido»?'}
+    answer: {hanzi: 定, pinyin: dìng, meaning: 'fijo, establecido'}
+    comments: []

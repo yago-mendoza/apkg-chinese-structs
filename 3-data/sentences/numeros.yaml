@@ -806,3 +806,29 @@ sentences:
       - {text: 。}
     translation: {es: 'En Pekín viven más de veinte millones de personas.', en: 'Beijing has over twenty million people.'}
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-22'}
+  - id: s.wo-he-ni-nianji-yiyang-da
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 和, ref: w.he.and, pinyin: 'hé'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 年纪, ref: w.nianji, pinyin: 'niánjì'}
+      - {text: 一样, ref: w.yiyang, pinyin: 'yíyàng'}
+      - {text: 大, ref: w.da, pinyin: 'dà'}
+      - {text: 。}
+    translation: {es: 'Tú y yo tenemos la misma edad.', en: 'You and I are the same age.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26', with_class: '2026-10-23'}
+  - id: s.wo-ershiba-sui-le
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 二, ref: w.num.er, pinyin: 'èr'}
+      - {text: 十, ref: w.num.shi, pinyin: 'shí'}
+      - {text: 八, ref: w.ba, pinyin: 'bā'}
+      - {text: 岁, ref: w.sui, pinyin: 'suì'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'Ya tengo veintiocho años.', en: 'I am already twenty-eight.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26', with_class: '2026-10-23'}

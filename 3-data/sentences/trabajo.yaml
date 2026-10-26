@@ -35,3 +35,117 @@ sentences:
       - {text: 。}
     translation: {es: 'Mañana trabajo.', en: 'I work tomorrow.'}
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.wo-mingtian-yao-shangban
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 上班, ref: w.shangban, pinyin: 'shàngbān'}
+      - {text: 。}
+    translation: {es: 'Mañana tengo que ir a trabajar.', en: 'I have to go to work tomorrow.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ta-shi-wo-de-tongshi
+    use: say
+    kind: example
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 同事, ref: w.tongshi, pinyin: 'tóngshì'}
+      - {text: 。}
+    translation: {es: 'Es mi compañero de trabajo.', en: 'He is my coworker.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-xianzai-you-shi
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 现在, ref: w.xianzai, pinyin: 'xiànzài'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 事, ref: w.shi.matter, pinyin: 'shì'}
+      - {text: 。}
+    translation: {es: 'Ahora tengo algo que hacer.', en: 'I am busy with something right now.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-xiang-xuexi-geng-duo-zhishi
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 想, ref: w.xiang, pinyin: 'xiǎng'}
+      - {text: 学习, ref: w.xuexi, pinyin: 'xuéxí'}
+      - {text: 更, ref: w.geng, pinyin: 'gèng'}
+      - {text: 多, ref: w.duo, pinyin: 'duō'}
+      - {text: 知识, ref: w.zhishi, pinyin: 'zhīshi'}
+      - {text: 。}
+    translation: {es: 'Quiero aprender más cosas.', en: 'I want to learn more.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26', with_class: '2026-10-23'}
+  - id: s.ta-you-hen-duo-zhishi
+    use: hear
+    kind: example
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 有, ref: w.you.have, pinyin: 'yǒu'}
+      - {text: 很, ref: w.hen, pinyin: 'hěn'}
+      - {text: 多, ref: w.duo, pinyin: 'duō'}
+      - {text: 知识, ref: w.zhishi, pinyin: 'zhīshi'}
+      - {text: 。}
+    translation: {es: 'Sabe muchísimo.', en: 'He is very knowledgeable.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26', with_class: '2026-10-23'}
+  - id: s.wo-yao-zhunbei-yixia
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 准备, ref: w.zhunbei, pinyin: 'zhǔnbèi'}
+      - {text: 一下, ref: w.yixia, pinyin: 'yíxià', sandhi: true}
+      - {text: 。}
+    translation: {es: 'Tengo que prepararme un momento.', en: 'I need to get ready for a moment.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-mingtian-qingjia
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 请假, ref: w.qingjia, pinyin: 'qǐngjià'}
+      - {text: 。}
+    translation: {es: 'Mañana me cojo el día libre.', en: 'I am taking the day off tomorrow.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-liu-dian-xiaban
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 六, ref: w.num.liu, pinyin: 'liù'}
+      - {text: 点, ref: w.dian.oclock, pinyin: 'diǎn'}
+      - {text: 下班, ref: w.xiaban, pinyin: 'xiàbān'}
+      - {text: 。}
+    translation: {es: 'Salgo de trabajar a las seis.', en: 'I get off work at six.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ta-shi-women-de-jingli
+    use: hear
+    kind: example
+    segments:
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 经理, ref: w.jingli, pinyin: 'jīnglǐ'}
+      - {text: 。}
+    translation: {es: 'Es nuestro jefe.', en: 'He is our manager.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-mingtian-qu-gongsi
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 明天, ref: w.mingtian, pinyin: 'míngtiān'}
+      - {text: 去, ref: w.qu, pinyin: 'qù'}
+      - {text: 公司, ref: w.gongsi, pinyin: 'gōngsī'}
+      - {text: 。}
+    translation: {es: 'Mañana voy a la oficina.', en: 'I am going to the office tomorrow.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}

@@ -454,3 +454,66 @@ sentences:
       - {text: ？}
     translation: {es: '¿Lo has oído?', en: 'Did you hear it?'}
     source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
+  - id: s.wo-hai-bu-mingbai
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 还, ref: w.hai.still, pinyin: 'hái'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 明白, ref: w.mingbai, pinyin: 'míngbai'}
+      - {text: 。}
+    translation: {es: 'Todavía no lo entiendo.', en: 'I still do not understand.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-haishi-bu-dong
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 还是, ref: w.haishi, pinyin: 'háishi'}
+      - {text: 不, ref: w.bu, pinyin: 'bù'}
+      - {text: 懂, ref: w.dong, pinyin: 'dǒng'}
+      - {text: 。}
+    translation: {es: 'Sigo sin entenderlo.', en: 'I still do not get it.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-ting-bu-jian
+    use: say
+    kind: formula
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 听, ref: w.ting, pinyin: 'tīng'}
+      - {text: 不, ref: w.bu, pinyin: 'bu', sandhi: true}
+      - {text: 见, ref: w.jian, pinyin: 'jiàn'}
+      - {text: 。}
+    translation: {es: 'No lo oigo.', en: 'I cannot hear it.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-ting-bu-dong-ta-shuo-de-hua
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 听, ref: w.ting, pinyin: 'tīng'}
+      - {text: 不, ref: w.bu, pinyin: 'bu', sandhi: true}
+      - {text: 懂, ref: w.dong, pinyin: 'dǒng'}
+      - {text: 他, ref: w.ta.he, pinyin: 'tā'}
+      - {text: 说, ref: w.shuo, pinyin: 'shuō'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 话, ref: w.hua.words, pinyin: 'huà'}
+      - {text: 。}
+    translation: {es: 'No le entiendo cuando habla.', en: 'I cannot understand him when he speaks.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-shuo-le-wo-bu-yao-shui
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 说, ref: w.shuo, pinyin: 'shuō'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 不, ref: w.bu, pinyin: 'bú', sandhi: true}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 水, ref: w.shui, pinyin: 'shuǐ'}
+      - {text: ！}
+    translation: {es: '¡Ya te he dicho que no quiero agua!', en: 'I told you, I do not want water!'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}

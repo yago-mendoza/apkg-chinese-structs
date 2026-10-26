@@ -79,3 +79,70 @@ sentences:
       - {text: 。}
     translation: {es: 'Me pongo esta (prenda).', en: 'I''ll wear this one.'}
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
+  - id: s.wo-keyi-da-dianhua-ma
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 可以, ref: w.keyi, pinyin: 'kěyǐ'}
+      - {text: 打电话, ref: w.dadianhua, pinyin: 'dǎ diànhuà'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Puedo llamar por teléfono?', en: 'May I make a phone call?'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-de-shouji-mei-dian-le
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 手机, ref: w.shouji, pinyin: 'shǒujī'}
+      - {text: 没, ref: w.mei, pinyin: 'méi'}
+      - {text: 电, ref: w.dian.electric, pinyin: 'diàn'}
+      - {text: 了, ref: w.le, pinyin: 'le'}
+      - {text: 。}
+    translation: {es: 'Me he quedado sin batería en el móvil.', en: 'My phone battery is dead.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ni-yao-kan-dianshi-ma
+    use: say
+    kind: example
+    segments:
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 要, ref: w.yao, pinyin: 'yào'}
+      - {text: 看, ref: w.kan, pinyin: 'kàn'}
+      - {text: 电视, ref: w.dianshi, pinyin: 'diànshì'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+    translation: {es: '¿Quieres ver la tele?', en: 'Do you want to watch TV?'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.dlg-shouji-zai-nali
+    use: hear
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 手机, ref: w.shouji, pinyin: 'shǒujī'}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 哪里, ref: w.nali, pinyin: 'nǎlǐ'}
+      - {text: ？}
+      - {text: 在, ref: w.zai.at, pinyin: 'zài'}
+      - {text: 这里, ref: w.zheli, pinyin: 'zhèlǐ'}
+      - {text: ！}
+      - {text: 这, ref: w.zhe, pinyin: 'zhè'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 你, ref: w.ni, pinyin: 'nǐ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 吗, ref: w.ma, pinyin: 'ma'}
+      - {text: ？}
+      - {text: 不, ref: w.bu, pinyin: 'bú', sandhi: true}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: ，}
+      - {text: 那, ref: w.na.that, pinyin: 'nà'}
+      - {text: 个, ref: w.ge, pinyin: 'ge'}
+      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 我, ref: w.wo, pinyin: 'wǒ'}
+      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 。}
+    translation: {es: '—¿Dónde está mi móvil? —¡Aquí! —¿Este es tuyo? —No, el mío es aquel.', en: '—Where is my phone? —Here! —Is this one yours? —No, mine is that one.'}
+    source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
