@@ -1,0 +1,34 @@
+# Frases · Tiempo libre y deporte. Esquema: 3-data/README.md
+
+sentences:
+  - id: s.ta-xihuan-daqiu
+    use: say
+    kind: example
+    segments:
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: dǎqiú, ref: w.daqiu, text: 打球}
+      - {text: 。}
+    translation: {en: He likes playing ball games., es: Le gusta jugar a la pelota.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+  - id: s.wo-xihuan-changge
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: chànggē, ref: w.changge, text: 唱歌}
+      - {text: 。}
+    translation: {en: I like singing., es: Me gusta cantar.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+  - id: s.wo-xiang-xue-youyong
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: xué, ref: w.xue, text: 学}
+      - {pinyin: yóuyǒng, ref: w.youyong, text: 游泳}
+      - {text: 。}
+    translation: {en: I want to learn to swim., es: Quiero aprender a nadar.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}

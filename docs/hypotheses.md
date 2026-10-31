@@ -63,6 +63,12 @@ Lo que creemos que ayuda a aprender a quien estudia con este mazo, cómo se comp
 - **Cómo se mide**: si deja de notar repeticiones; que `check` no avise de anversos iguales; y en `stats`, el «Otra vez» de las tarjetas fusionadas frente al de antes.
 - **Regla**: `docs/design.md`, «Tarjetas» (una pregunta, una respuesta) y «Anki» (orden de nuevas).
 
+### 🧪 La minilección en la tarjeta ayuda más que solo en el review
+
+- **Desde**: lote 015 (2026-10-31). **De dónde**: su nota del review 014: «que los comentarios de los reviews… los incorpores en las tarjetas, recuadros informativos teóricos educativos».
+- **Cómo se mide**: el «Otra vez» de las entradas con «Para entender» (再说一遍, 左右, 斤, 哪, 还是…) antes y después, en `stats`, y lo que diga del recuadro 💡.
+- **Regla**: `docs/design.md`, «Comentarios» y «Tarjetas» (reverso).
+
 ## Confirmadas
 
 ### ✅ Cada tarjeta, una sola cosa con respuesta corta

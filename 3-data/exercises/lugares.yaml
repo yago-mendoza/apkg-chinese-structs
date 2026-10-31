@@ -1473,3 +1473,166 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: '—¿Dónde vamos a comer? —Vamos allí. —Allí está demasiado lejos; comamos aquí.'}
     comments: []
+  - id: x.pair.chaoshi-chaoji
+    added: '2026-10-31'
+    lang: es
+    type: listen
+    targets: [w.chaoshi]
+    pair:
+      - {hanzi: 炒鸡, meaning: pollo salteado (en la carta), pinyin: chǎojī}
+      - {hanzi: 超市, meaning: supermercado, pinyin: chāoshì}
+    skills: [listening, discrimination]
+    prompt: {audio: true, text: 'Suenan dos. ¿Cuál es chāoshì, la 1.ª o la 2.ª?'}
+    answer: {meaning: 'La 2.ª: chāoshì 超市 «supermercado». La 1.ª era chǎojī 炒鸡 «pollo salteado».'}
+    comments: []
+  - id: x.contrast.che
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.jin-che
+    targets: [w.che]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es chē, «coche, vehículo»?'}
+    answer: {hanzi: 车, pinyin: chē, meaning: 'coche, vehículo'}
+    comments: []
+  - id: x.dictation.xia.down
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.xia.down]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xia4, hanzi: 下, pinyin: xià, meaning: 'abajo, debajo'}
+    comments: []
+  - id: x.produce.xia.down
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.xia.down]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «abajo, debajo»? Escribe el pinyin.'}
+    answer: {typed: xia4, hanzi: 下, pinyin: xià, meaning: 'abajo, debajo'}
+    comments: []
+  - id: x.read.xia.down
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.xia.down]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 下}
+    answer: {hanzi: 下, pinyin: xià, meaning: 'abajo, debajo'}
+    comments: []
+  - id: x.dictation.zhan
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.zhan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhan4, hanzi: 站, pinyin: zhàn, meaning: 'estación, parada'}
+    comments: []
+  - id: x.produce.zhan
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.zhan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «estación, parada»? Escribe el pinyin.'}
+    answer: {typed: zhan4, hanzi: 站, pinyin: zhàn, meaning: 'estación, parada'}
+    comments: []
+  - id: x.read.zhan
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.zhan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 站}
+    answer: {hanzi: 站, pinyin: zhàn, meaning: 'estación, parada'}
+    comments: []
+  - id: x.dictation.qiche
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.qiche]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: qi4 che1, hanzi: 汽车, pinyin: qìchē, meaning: coche}
+    comments: []
+  - id: x.produce.qiche
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.qiche]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «coche»? Escribe el pinyin.'}
+    answer: {typed: qi4 che1, hanzi: 汽车, pinyin: qìchē, meaning: coche}
+    comments: []
+  - id: x.read.qiche
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.qiche]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 汽车}
+    answer: {hanzi: 汽车, pinyin: qìchē, meaning: coche}
+    comments: []
+  - id: x.dictation.waimian
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.waimian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wai4 mian4, hanzi: 外面, pinyin: wàimiàn, meaning: fuera}
+    comments: []
+  - id: x.produce.waimian
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.waimian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «fuera»? Escribe el pinyin.'}
+    answer: {typed: wai4 mian4, hanzi: 外面, pinyin: wàimiàn, meaning: fuera}
+    comments: []
+  - id: x.read.waimian
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.waimian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 外面}
+    answer: {hanzi: 外面, pinyin: wàimiàn, meaning: fuera}
+    comments: []
+  - id: x.produce.wo-zai-lou-xia
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-zai-lou-xia
+    targets: [s.wo-zai-lou-xia]
+    context: [w.wo, w.zai.at, w.lou, w.xia.down]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estoy abajo.»'}
+    answer: {meaning: Estoy abajo.}
+    comments: []
+  - id: x.produce.ditie-zhan-zai-nali
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.ditie-zhan-zai-nali
+    targets: [s.ditie-zhan-zai-nali]
+    context: [w.ditie, w.zhan, w.zai.at, w.nali]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde está la estación de metro?»'}
+    answer: {meaning: '¿Dónde está la estación de metro?'}
+    comments: []
+  - id: x.produce.wo-meiyou-qiche
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-meiyou-qiche
+    targets: [s.wo-meiyou-qiche]
+    context: [w.wo, w.meiyou, w.qiche]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No tengo coche.»'}
+    answer: {meaning: No tengo coche.}
+    comments: []

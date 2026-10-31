@@ -45,3 +45,5 @@ Casi iguales al oído y con el mismo tono: solo cambia la vocal. En 热, la e os
 - ✅🃏 今天风很大。 · jīntiān fēng hěn dà · Hoy hace mucho viento.
 - ✅🃏 我们到岛上了！ · wǒmen dào dǎo shàng le · ¡Hemos llegado a la isla!
 - ✅🃏 好热！ · hǎo rè · ¡Qué calor!
+- ✅🃏 今天跟昨天一样冷。 · jīntiān gēn zuótiān yíyàng lěng · Hoy hace tanto frío como ayer.
+- ✅🃏 外面还是很冷。 · wàimiàn háishi hěn lěng · Fuera sigue haciendo mucho frío.

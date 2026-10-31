@@ -5,7 +5,7 @@
 ## Vocabulario
 
 - ✅🃏 问题 wèntí [wən˥˩ tʰi˧˥] · pregunta; problema · _sustantivo_ · Palabra a palabra: 问 «preguntar» + 题 «tema, ejercicio». Es «pregunta» y también «problema»: 我有一个问题 «tengo una pregunta»; 没问题 «no hay problema». · 题 lleva 是 a la izquierda, que le daba el sonido (hoy ya no se parece: tí), y 页 «página» a la derecha.
-- ✅🃏 懂 dǒng [tʊŋ˧˩˧] · entender, comprender · _verbo_ · Solo es verbo: 我懂了 «ya lo entiendo»; 听不懂 «no lo entiendo (al oírlo)». 明白 es lo mismo, y además puede ser adjetivo, «claro»: 很明白 «muy claro».
+- ✅🃏 懂 dǒng [tʊŋ˧˩˧] · entender, comprender · _verbo_ · Solo es verbo: 我懂了 «ya lo entiendo»; 听不懂 «no lo entiendo (al oírlo)». 明白 es lo mismo, y además puede ser adjetivo, «claro»: 很明白 «muy claro». · 懂: el corazón 忄, de pie a la izquierda, y 董 dǒng, que da el sonido: entender de corazón. 喜 de 喜欢 no lleva nada a su izquierda.
 - ✅🃏 意思 yìsi [i˥˩ sɯ] · significado, sentido · _sustantivo_ · 这个是什么意思？ «¿qué significa esto?». Es el mismo 意思 de 不好意思, literalmente «no es buena intención». · 意: una voz 音 que sale del corazón 心: una intención. 思: un campo 田 de ideas cultivado en el corazón 心: pensar. · 什么意思？ «¿qué significa?»; 我的意思是… «lo que quiero decir es…». 你是什么意思？ puede sonar desafiante; para preguntar sin tensión, 你是说…？ «¿quieres decir que…?». 意 y 思 casi nunca van solos.
 - ✅🃏 清楚 qīngchu [tɕʰiŋ˥ ʈʂʰu] · claro, nítido (que se ve o se oye bien) · _adjetivo_ · 我没听清楚 «no lo he oído bien»: el problema es el sonido, no entenderlo. 清 lleva 青 qīng, que le da el sonido, como a 请 qǐng.
 - ✅🃏 读 dú [tu˧˥] · leer (en voz alta) · _verbo_ · 这个字怎么读？ «¿cómo se lee este carácter?». Leer para uno mismo, en silencio, también es 看: 看书 «leer un libro».
@@ -15,7 +15,7 @@
 - ✅🃏 说话 shuōhuà [ʂwɔ˥ xwa˥˩] · hablar (con alguien) · _verbo_ · Palabra a palabra: 说 «decir» + 话 «palabras»: hablar, sin decir de qué. Con un idioma va 说 solo: 说中文. 别说话 «no hables», «calla».
 - ✅🃏 聊天 liáotiān [ljɑʊ˧˥ tʰjɛn˥] · charlar · _verbo_ · Palabra a palabra: 聊 «charlar» + 天 «cielo, día»: hablar del tiempo, de cualquier cosa. 跟你聊天 «charlar contigo».
 - ✅🃏 告诉 gàosu [kɑʊ˥˩ su] · decir (a alguien), contar · _verbo_ · Con la persona detrás: 告诉我 «dime», 请告诉我 «dímelo, por favor». 说 dice algo; 告诉 se lo cuenta a alguien.
-- ✅🃏 记得 jìde [tɕi˥˩ tɤ] · acordarse, recordar · _verbo_ · Palabra a palabra: 记 «apuntar en la memoria» + 得 «lograr». 你还记得我吗？ «¿te acuerdas de mí?». Lo contrario, 忘记.
+- ✅🃏 记得 jìde [tɕi˥˩ tɤ] · acordarse, recordar · _verbo_ · Palabra a palabra: 记 «apuntar en la memoria» + 得 «lograr». 你还记得我吗？ «¿te acuerdas de mí?». Lo contrario, 忘记. · El 得 de 记得 es parte del verbo: no es «recordar bien». 记 es «registrar»: 笔记 «apuntes», 记住 «quedarse con algo».
 - ✅🃏 忘记 wàngjì [wɑŋ˥˩ tɕi˥˩] · olvidar · _verbo_ · 我忘记了 «se me ha olvidado». Al hablar se oye mucho 忘了 a secas.
 - ✅🃏 话 huà [xwa˥˩] · palabras, lo que se dice · _sustantivo_ · El mismo 话 de 说话 «hablar» y 电话 «teléfono»: 我不明白他的话 «no entiendo lo que dice».
 - ✅🃏 别的 biéde [pjɛ˧˥ tɤ] · otro, otra cosa · _pronombre_ · 我想看看别的 «quiero ver otra cosa». No confundir con 别 «no (lo hagas)».
@@ -29,6 +29,14 @@ La misma sílaba: 话 cae; 花 es alto y plano.
 
 - 话 huà · cae: 说话, 电话
 - 花 huā · alto y plano
+
+## 叫, 教 y 脚: los jiao
+
+Solo los separa el tono.
+
+- 叫 jiào · 4.º tono, baja fuerte: 我叫孟逸辰
+- 教 jiāo · 1.er tono, alto y plano: 老师教我们
+- 脚 jiǎo · 3.er tono, se hunde: 我的脚
 
 ## Frases
 
@@ -75,3 +83,9 @@ La misma sílaba: 话 cae; 花 es alto y plano.
 - ✅🃏 我听不见。 · wǒ tīng bu jiàn · No lo oigo.
 - ✅🃏 我听不懂他说的话。 · wǒ tīng bu dǒng tā shuō de huà · No le entiendo cuando habla.
 - ✅🃏 我说了，我不要水！ · wǒ shuō le wǒ bú yào shuǐ · ¡Ya te he dicho que no quiero agua!
+- ✅🃏 我知道这个词，但是我不懂它的意思。 · wǒ zhīdao zhè ge cí dànshì wǒ bù dǒng tā de yìsi · Conozco esta palabra, pero no entiendo lo que significa.
+- ✅🃏 我不知道，你懂吗？ · wǒ bù zhīdao nǐ dǒng ma · No lo sé. ¿Tú lo entiendes?
+- ✅🃏 你能说得更慢一点吗？ · nǐ néng shuō de gèng màn yìdiǎn ma · ¿Puedes hablar un poco más despacio?
+- ✅🃏 我有一个问题。 · wǒ yǒu yí ge wèntí · Tengo una pregunta.
+- ✅🃏 这个问题很难。 · zhè ge wèntí hěn nán · Esta pregunta es muy difícil.
+- ✅🃏 你在说什么？ · nǐ zài shuō shénme · ¿Qué estás diciendo?

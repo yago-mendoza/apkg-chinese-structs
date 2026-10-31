@@ -232,3 +232,42 @@ entries:
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-23', text: '小鸟 xiǎoniǎo «pajarito».'}
+  - id: w.laoshu
+    use: hear
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 老鼠
+    pinyin: lǎoshǔ
+    meaning: {en: 'mouse, rat', es: 'ratón, rata'}
+    level: 2
+    level_reason: la palabra de cada día para el ratón; 鼠 suelto queda para el zodiaco
+    use_reason: 'de clase (el repaso de animales del 30), para entenderla'
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: diapositivas 2026-10-30, origin: class}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'El 老 no es «viejo»: va delante de algunos animales, 老鼠, 老虎.'}
+  - id: w.laohu
+    use: hear
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 老虎
+    pinyin: lǎohǔ
+    meaning: {en: tiger, es: tigre}
+    level: 2
+    level_reason: la palabra de cada día para el tigre; 虎 suelto queda para el zodiaco
+    use_reason: 'de clase (el repaso de animales del 30), para entenderla'
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: diapositivas 2026-10-30, origin: class}
+    comments: []
+  - id: w.tuzi
+    use: say
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 兔子
+    pinyin: tùzi
+    meaning: {en: rabbit, es: conejo}
+    level: 2
+    level_reason: la palabra de cada día para el conejo; 兔 suelto queda para el zodiaco
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: deberes 2026-10-30, origin: class}
+    comments: []

@@ -118,6 +118,7 @@ sentences:
   - id: s.dlg-shouji-zai-nali
     use: hear
     kind: example
+    speakers: [A, B, B, A]
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 的, ref: w.de, pinyin: 'de'}
@@ -144,5 +145,62 @@ sentences:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 的, ref: w.de, pinyin: 'de'}
       - {text: 。}
-    translation: {es: '—¿Dónde está mi móvil? —¡Aquí! —¿Este es tuyo? —No, el mío es aquel.', en: '—Where is my phone? —Here! —Is this one yours? —No, mine is that one.'}
+    translation: {es: '—¿Dónde está mi móvil? —¡Aquí! ¿Este es tuyo? —No, el mío es aquel.', en: '—Where is my phone? —Here! —Is this one yours? —No, mine is that one.'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-zhu-zai-san-lou
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zhù, ref: w.zhu.live, text: 住}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: sān, ref: w.num.san, text: 三}
+      - {pinyin: lóu, ref: w.lou, text: 楼}
+      - {text: 。}
+    translation: {en: I live on the third floor., es: Vivo en el tercer piso.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+  - id: s.xian-xi-shou-zai-chifan
+    use: say
+    kind: example
+    segments:
+      - {pinyin: xiān, ref: w.xian.first, text: 先}
+      - {pinyin: xǐ, ref: w.xi.wash, text: 洗}
+      - {pinyin: shǒu, ref: w.shou.hand, text: 手}
+      - {text: ，}
+      - {pinyin: zài, ref: w.zai.again, text: 再}
+      - {pinyin: chīfàn, ref: w.chifan, text: 吃饭}
+      - {text: 。}
+    translation: {en: 'Wash your hands first, then eat.', es: 'Primero lávate las manos, y luego a comer.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+  - id: s.wo-de-fangjian-gen-ni-de-yiyang-da
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: fángjiān, ref: w.fangjian, text: 房间}
+      - {pinyin: gēn, ref: w.gen, text: 跟}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: yíyàng, ref: w.yiyang, text: 一样}
+      - {pinyin: dà, ref: w.da, text: 大}
+      - {text: 。}
+    translation: {en: My room is as big as yours., es: Mi habitación es igual de grande que la tuya.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.fangjian-li-tai-hei-wo-kan-bu-jian
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: fángjiān, ref: w.fangjian, text: 房间}
+      - {pinyin: lǐ, ref: w.li.inside, text: 里}
+      - {pinyin: tài, ref: w.tai, text: 太}
+      - {pinyin: hēi, ref: w.hei, text: 黑}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: ，}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: kàn, ref: w.kan, text: 看}
+      - {pinyin: bu, ref: w.bu, sandhi: true, text: 不}
+      - {pinyin: jiàn, ref: w.jian, text: 见}
+      - {text: 。}
+    translation: {en: The room is too dark; I cannot see., es: 'La habitación está demasiado oscura: no veo nada.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}

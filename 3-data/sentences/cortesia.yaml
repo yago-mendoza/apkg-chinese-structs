@@ -205,6 +205,7 @@ sentences:
   - id: s.dlg-shei-lai-bang-wo
     use: hear
     kind: example
+    speakers: [A, B, B]
     segments:
       - {text: 谁, ref: w.shei, pinyin: 'shéi'}
       - {text: 来, ref: w.lai, pinyin: 'lái'}
@@ -716,3 +717,85 @@ sentences:
       - {text: 。}
     translation: {es: 'Ya lo hago yo.', en: 'I will do it myself.'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-zhao-ren
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: nǐ hǎo, ref: e.nihao, text: 你好}
+      - {text: ，}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zhǎo, ref: w.zhao, text: 找}
+      - {pinyin: rén, ref: w.ren, text: 人}
+      - {text: 。}
+    translation: {en: 'Hello, I am looking for someone.', es: 'Hola, busco a una persona.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: vídeos del curso 2026-10-30, origin: class}
+  - id: s.dlg-zhao-ren
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: nǐ hǎo, ref: e.nihao, text: 你好}
+      - {text: ，}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zhǎo, ref: w.zhao, text: 找}
+      - {pinyin: rén, ref: w.ren, text: 人}
+      - {text: 。}
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {pinyin: jiào, ref: w.jiao, text: 叫}
+      - {pinyin: shénme, ref: w.shenme, text: 什么}
+      - {pinyin: míngzi, ref: w.mingzi, text: 名字}
+      - {text: ？}
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {pinyin: jiào, ref: w.jiao, text: 叫}
+      - {pinyin: Mèng Yìchén, ref: w.mengyichen, text: 孟逸辰}
+      - {text: 。}
+      - {pinyin: qǐng, ref: w.qing, text: 请}
+      - {pinyin: shāoděng, ref: e.shaodeng, text: 稍等}
+      - {text: ，}
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {pinyin: zhù, ref: w.zhu.live, text: 住}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: sì, ref: w.num.si, text: 四}
+      - {pinyin: èr, ref: w.num.er, text: 二}
+      - {pinyin: liù, ref: w.num.liu, text: 六}
+      - {pinyin: fángjiān, ref: w.fangjian, text: 房间}
+      - {text: 。}
+    translation: {en: '—Hello, I am looking for someone. —What is his name? —His name is Meng Yichen. —One moment: he is in room 426.', es: '—Hola, busco a una persona. —¿Cómo se llama? —Se llama Mèng Yìchén. —Un momento: está en la habitación 426.'}
+    speakers: [A, B, A, B]
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: vídeos del curso 2026-10-30, origin: class}
+  - id: s.yao-wo-bang-ni-ma
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: bāng, ref: w.bang, text: 帮}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Do you want me to help you?', es: '¿Quieres que te ayude?'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.ni-xiang-rang-wo-bang-ni-ma
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: ràng, ref: w.rang, text: 让}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: bāng, ref: w.bang, text: 帮}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Would you like me to help you?', es: '¿Quieres que te ayude?'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-bang-ni-ba
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: bāng, ref: w.bang, text: 帮}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: ba, ref: w.ba.particle, text: 吧}
+      - {text: 。}
+    translation: {en: Let me help you., es: Te ayudo.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}

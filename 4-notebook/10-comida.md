@@ -12,7 +12,7 @@
 - ✅🃏 吃 chī [ʈʂʰɨ˥] · comer · _verbo_ · 口 «boca» a la izquierda, como en 喝, 吗 y 叫: lo que se hace con la boca.
 - ✅🃏 饭 fàn [fan˥˩] · comida; arroz cocido · _sustantivo_ · 饣 es 食 shí «comer, alimento» en su forma de lado; 反 fǎn da el sonido. · El radical de la comida y una mano (又, dentro de 反) que la lleva a la boca. · Para decir «comer» lo normal es 吃饭; 饭 suelto es «la comida» o «el arroz».
 - ✅🃏 吃饭 chīfàn [ʈʂʰɨ˥ fan˥˩] · comer (una comida) · _verbo_ · Verbo y objeto, «comer comida»: es la forma normal de decir «comer» cuando no dices qué. 吃饭了吗？ es también un saludo. · 吃饭 es comer, la comida en general; 米饭 es el arroz cocido. De alguien que no come nada, como un enfermo, se dice 他不吃东西.
-- ✅🃏 饭店 fàndiàn [fan˥˩ tjɛn˥˩] · restaurante · _sustantivo_ · 饭 «comida» + 店 «local»: el local de comida. En nombres propios suele ser un hotel (北京饭店); «restaurante» también se dice 餐厅 cāntīng [HSK 5].
+- ✅🃏 饭店 fàndiàn [fan˥˩ tjɛn˥˩] · restaurante · _sustantivo_ · 饭 «comida» + 店 «local»: el local de comida. En nombres propios suele ser un hotel (北京饭店); «restaurante» también se dice 餐厅 cāntīng [HSK 5]. · Un restaurante también es 餐厅 cāntīng [HSK 5], más de rótulo.
 - ✅🃏 好吃 hǎochī [xɑʊ˧˩˧ ʈʂʰɨ˥] · rico, bueno (de comer) · _adjetivo_ · 好 + verbo: «bueno de…». 好吃 «rico», 好看 «bonito», 好听 «agradable de oír».
 - ✅🃏 菜 cài [tsʰaɪ˥˩] · plato, comida; verdura · _sustantivo_ · 艹 «hierba» arriba: era la verdura. Hoy también «plato, cocina»: 中国菜 «comida china».
 - ✅🃏 茶 chá [ʈʂʰa˧˥] · té · _sustantivo_ · 艹 «hierba» arriba: una hoja. 喝茶 «tomar té». · Hierba 艹 que se corta a trocitos dentro de una casa: las hojas del té.
@@ -24,7 +24,7 @@
 - ✅🃏 火锅 huǒguō [xwɔ˧˩˧ kwɔ˥] · olla caliente (hot pot) · _sustantivo_ · Palabra a palabra: 火 «fuego» + 锅 «olla»: una olla de caldo hirviendo en medio de la mesa, donde cada uno cuece lo suyo. En la lista es de nivel 7, pero en China se come y se nombra a todas horas.
 - ✅🃏 食物 shíwù [ʂɨ˧˥ u˥˩] · alimentos, comida (lo que se come) · _sustantivo_ · 食物 son los alimentos, y suena algo escrito. Al hablar, «hay comida en la nevera» es 冰箱里有吃的; «comer» es 吃饭, y 饭 es el arroz cocido y cada comida del día.
 - ✅🃏 派 pài [pʰaɪ˥˩] · tarta (pie) · _sustantivo_ · Préstamo del inglés pie: 苹果派 «tarta de manzana». El mismo hanzi es también «enviar» y «facción», otros sentidos.
-- ✅🃏 渴 kě [kʰɤ˧˩˧] · tener sed, sediento · _adjetivo_ · 我渴了 «me ha entrado sed»: el 了 dice que es algo nuevo. 我很渴 «tengo mucha sed». · A la derecha, un sol 日 arriba y debajo una persona metida en una cueva: tiene sed. Con 氵 «agua» es tener sed, 渴; si cambias el agua por la boca 口, es beber, 喝.
+- ✅🃏 渴 kě [kʰɤ˧˩˧] · tener sed, sediento · _adjetivo_ · 我渴了 «me ha entrado sed»: el 了 dice que es algo nuevo. 我很渴 «tengo mucha sed». · A la derecha, un sol 日 arriba y debajo una persona metida en una cueva: tiene sed. Con 氵 «agua» es tener sed, 渴; si cambias el agua por la boca 口, es beber, 喝. · Con 喝 comparte la derecha, que da el sonido (曷 hé): bebes 喝 con la boca 口; tienes sed 渴 de agua 氵.
 - ✅🃏 饿 è [ɤ˥˩] · tener hambre, hambriento · _verbo_ · 我饿了 «me ha entrado hambre». 饣 a la izquierda es «comida», como en 饭.
 - ✅🃏 牛奶 niúnǎi [njoʊ˧˥ naɪ˧˩˧] · leche · _sustantivo_
 - ✅🃏 啤酒 píjiǔ [pʰi˧˥ tɕjoʊ˧˩˧] · cerveza · _sustantivo_
@@ -34,6 +34,7 @@
 - ✅🃏 水果 shuǐguǒ [ʂweɪ˧˩˧ kwɔ˧˩˧] · fruta · _sustantivo_
 - ✅🃏 请客 qǐngkè [tɕʰiŋ˧˩˧ kʰɤ˥˩] · invitar (pagar tú) · _verbo_ · 我请客！ «¡invito yo!»: pagas tú la cuenta de todos.
 - ✅🃏 果汁 guǒzhī [kwɔ˧˩˧ ʈʂɨ˥] · zumo · _sustantivo_ · Palabra a palabra: 果 «fruta», el de 水果 y 苹果, + 汁 «jugo». 我要一杯果汁 «quiero un zumo». · 汁 zhī: 氵 «agua» da el sentido y 十 shí, el sonido.
+- ✅🃏 肉 ròu [ʐoʊ˥˩] · carne · _sustantivo_ · El animal delante: 牛肉 «ternera», 猪肉 «cerdo», 羊肉 «cordero».
 
 ## 喝 hē y 和 hé
 
@@ -63,6 +64,13 @@ La misma derecha; la izquierda dice de qué va.
 
 - 喝 hē · 口 boca a la izquierda
 - 渴 kě · 氵 agua a la izquierda: la que falta
+
+## 水 y 睡
+
+Solo los separa el tono.
+
+- 水 shuǐ · 3.er tono, se hunde: 喝水
+- 睡 shuì · 4.º tono, baja fuerte: 睡一下
 
 ## Frases
 
@@ -110,3 +118,7 @@ La misma derecha; la izquierda dice de qué va.
 - ✅🃏 我什么都吃。 · wǒ shénme dōu chī · Como de todo.
 - ✅🃏 他做的饭很好吃。 · tā zuò de fàn hěn hǎochī · La comida que hace está muy rica.
 - ✅🃏 我要一杯果汁。 · wǒ yào yì bēi guǒzhī · Quiero un zumo.
+- ✅🃏 你喜欢吃羊肉还是猪肉？ · nǐ xǐhuan chī yáng ròu háishi zhū ròu · ¿Te gusta más el cordero o el cerdo?
+- ✅🃏 我喜欢吃牛肉，也喜欢喝牛奶。 · wǒ xǐhuan chī niúròu yě xǐhuan hē niúnǎi · Me gusta la ternera, y también la leche.
+- ✅🃏 你多吃一点吧！ · nǐ duō chī yìdiǎn ba · ¡Come un poco más!
+- ✅🃏 我已经自己做好饭了，我们一起吃吧。 · wǒ yǐjīng zìjǐ zuò hǎo fàn le wǒmen yìqǐ chī ba · Ya he hecho la comida yo solo: comamos juntos.

@@ -1427,15 +1427,6 @@ exercises:
     prompt: {text: 'Completa: «¿Qué tal si vamos mañana?»'}
     answer: {typed: zen3 me5 yang4, hanzi: 怎么样, pinyin: zěnmeyàng, meaning: 怎么样 al final propone y pide opinión.}
     comments: []
-  - id: x.situation.nihao-shop
-    added: '2026-10-10'
-    lang: es
-    type: speak
-    targets: [e.nihao]
-    skills: [production, speaking]
-    prompt: {text: 'Situación. Entras en una tienda y saludas a la dependienta, a la que no conoces.'}
-    answer: {hanzi: 你好, pinyin: nǐ hǎo, meaning: hola}
-    comments: []
   - id: x.situation.chifanlema
     added: '2026-10-10'
     lang: es
@@ -2064,4 +2055,25 @@ exercises:
     skills: [reading, pinyin]
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 明天见}
     answer: {hanzi: 明天见, pinyin: míngtiān jiàn, meaning: hasta mañana}
+    comments: []
+  - id: x.choice.mingtian-jianmian-zouba
+    added: '2026-10-31'
+    lang: es
+    type: speak
+    targets: [s.hao-a-mingtian-jian]
+    skills: [production, speaking]
+    accept_pinyin_mismatch: '啊 átono: hǎo a'
+    prompt: {options: [走吧！, 好啊，明天见！, 不客气。], said: 我们明天见面吧！, said_es: ¡Quedamos mañana!, text: 'Elige. Un amigo te propone quedar mañana. ¿Qué le contestas?'}
+    answer: {choice: b, hanzi: 好啊，明天见！, meaning: '走吧 es «vámonos ya»; para aceptar el plan, 好啊，明天见！', pinyin: 'hǎo a, míngtiān jiàn'}
+    comments: []
+  - id: x.produce.hao-a-mingtian-jian
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.hao-a-mingtian-jian
+    targets: [s.hao-a-mingtian-jian]
+    context: [w.hao, w.a.particle, e.mingtianjian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Vale, hasta mañana!»'}
+    answer: {meaning: '¡Vale, hasta mañana!'}
     comments: []

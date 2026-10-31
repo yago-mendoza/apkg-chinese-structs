@@ -775,3 +775,89 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Agua o té, me da igual.»'}
     answer: {meaning: 'Agua o té, me da igual.'}
     comments: []
+  - id: x.nuance.zuihao-two
+    added: '2026-10-31'
+    lang: es
+    type: nuance
+    targets: [w.zuihao]
+    skills: [comprehension, discrimination]
+    prompt: {text: '你最好去 y 你是最好的: ¿qué cambia?'}
+    answer: {meaning: '最好 + verbo: «será mejor que…», un consejo. 最好的: «el mejor».'}
+    comments: []
+  - id: x.cloze.haishi-danshi.xiang-qu
+    added: '2026-10-31'
+    lang: es
+    type: cloze
+    sentence: s.wo-haishi-xiang-qu
+    gap: w.haishi
+    targets: [w.haishi]
+    context: [w.wo, w.xiang, w.qu]
+    skills: [production, pinyin]
+    prompt: {text: '¿但是 o 还是? Completa en pinyin: «Sigo queriendo ir.»'}
+    answer: {hanzi: 还是, meaning: 'sigue igual, pese a todo', pinyin: háishi, typed: hai2 shi5}
+    comments: []
+  - id: x.cloze.danshi-haishi.qu
+    added: '2026-10-31'
+    lang: es
+    type: cloze
+    sentence: s.wo-hen-lei-danshi-wo-xiang-qu
+    gap: w.danshi
+    targets: [w.danshi]
+    context: [w.wo, w.hen, w.lei, w.xiang, w.qu]
+    skills: [production, pinyin]
+    prompt: {text: '¿但是 o 还是? Completa en pinyin: «Estoy muy cansado, pero quiero ir.»'}
+    answer: {hanzi: 但是, meaning: 'pero: une dos frases que chocan', pinyin: dànshì, typed: dan4 shi4}
+    comments: []
+  - id: x.contrast.danshi
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.danshi-haishi
+    targets: [w.danshi]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 但是, pinyin: dànshì, meaning: pero}
+    comments: []
+  - id: x.contrast.haishi
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.danshi-haishi
+    targets: [w.haishi]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 还是, pinyin: háishi, meaning: o (en una pregunta entre dos)}
+    comments: []
+  - id: x.produce.wo-haishi-xiang-qu
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-haishi-xiang-qu
+    targets: [s.wo-haishi-xiang-qu]
+    context: [w.wo, w.haishi, w.xiang, w.qu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Sigo queriendo ir.»'}
+    answer: {meaning: Sigo queriendo ir.}
+    comments: []
+  - id: x.produce.wo-xiuxi-le-danshi-haishi-hen-lei
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-xiuxi-le-danshi-haishi-hen-lei
+    targets: [s.wo-xiuxi-le-danshi-haishi-hen-lei]
+    context: [w.wo, w.xiuxi, w.le, w.danshi, w.haishi, w.hen, w.lei]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «He descansado, pero sigo muy cansado.»'}
+    answer: {meaning: 'He descansado, pero sigo muy cansado.'}
+    comments: []
+  - id: x.produce.wo-hen-lei-danshi-wo-xiang-qu
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-hen-lei-danshi-wo-xiang-qu
+    targets: [s.wo-hen-lei-danshi-wo-xiang-qu]
+    context: [w.wo, w.hen, w.lei, w.danshi, w.xiang, w.qu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estoy muy cansado, pero quiero ir.»'}
+    answer: {meaning: 'Estoy muy cansado, pero quiero ir.'}
+    comments: []

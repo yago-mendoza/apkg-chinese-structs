@@ -103,6 +103,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '饭 «comida» + 店 «local»: el local de comida. En nombres propios suele ser un hotel (北京饭店); «restaurante» también se dice 餐厅 cāntīng [HSK 5].'}
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'Un restaurante también es 餐厅 cāntīng [HSK 5], más de rótulo.'}
   - id: w.haochi
     use: say
     role: content
@@ -237,6 +238,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: '我渴了 «me ha entrado sed»: el 了 dice que es algo nuevo. 我很渴 «tengo mucha sed».'}
       - {kind: mnemonic, private: false, date: '2026-10-11', text: 'A la derecha, un sol 日 arriba y debajo una persona metida en una cueva: tiene sed. Con 氵 «agua» es tener sed, 渴; si cambias el agua por la boca 口, es beber, 喝.', original: 'para recordar el comprante derehca es ''sol'' encima y debjao nua persona en una cueva. tener sed es agua mas ese comoente (o escena sol perosan seindeite necuev) y beber s cunado sustumiso el radical de agua por el simbolo de la boca, entendes¿'}
+      - {date: '2026-10-31', kind: mnemonic, private: false, text: 'Con 喝 comparte la derecha, que da el sonido (曷 hé): bebes 喝 con la boca 口; tienes sed 渴 de agua 氵.'}
   - id: w.e.hungry
     use: say
     role: content
@@ -362,3 +364,23 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-26', text: 'Palabra a palabra: 果 «fruta», el de 水果 y 苹果, + 汁 «jugo». 我要一杯果汁 «quiero un zumo».'}
       - {kind: character, private: false, date: '2026-10-26', text: '汁 zhī: 氵 «agua» da el sentido y 十 shí, el sonido.'}
+  - id: w.rou
+    use: say
+    role: content
+    kind: word
+    hanzi: 肉
+    pinyin: ròu
+    meaning: {en: meat, es: carne}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'El animal delante: 牛肉 «ternera», 猪肉 «cerdo», 羊肉 «cordero».'}
+  - id: g.shui-tones
+    kind: group
+    basis: soundalike
+    title: 水 y 睡
+    explanation: Solo los separa el tono.
+    members:
+      - {cue: '3.er tono, se hunde: 喝水', ref: w.shui}
+      - {cue: '4.º tono, baja fuerte: 睡一下', ref: w.shui.sleep}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments: []

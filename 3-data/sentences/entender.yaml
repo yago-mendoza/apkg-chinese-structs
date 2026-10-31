@@ -195,6 +195,7 @@ sentences:
   - id: s.dlg-shenme-yisi
     use: hear
     kind: example
+    speakers: [A, B, A]
     segments:
       - {text: 这, ref: w.zhe, pinyin: zhè}
       - {text: 个, ref: w.ge, pinyin: ge}
@@ -517,3 +518,87 @@ sentences:
       - {text: ！}
     translation: {es: '¡Ya te he dicho que no quiero agua!', en: 'I told you, I do not want water!'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-zhidao-zhege-ci-danshi-bu-dong
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zhīdao, ref: w.zhidao, text: 知道}
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: cí, ref: w.ci.word, text: 词}
+      - {text: ，}
+      - {pinyin: dànshì, ref: w.danshi, text: 但是}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: bù, ref: w.bu, text: 不}
+      - {pinyin: dǒng, ref: w.dong, text: 懂}
+      - {pinyin: tā, ref: w.ta.it, text: 它}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: yìsi, ref: w.yisi, text: 意思}
+      - {text: 。}
+    translation: {en: 'I know this word, but I do not understand what it means.', es: 'Conozco esta palabra, pero no entiendo lo que significa.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-bu-zhidao-ni-dong-ma
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: bù, ref: w.bu, text: 不}
+      - {pinyin: zhīdao, ref: w.zhidao, text: 知道}
+      - {text: ，}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: dǒng, ref: w.dong, text: 懂}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'I do not know. Do you understand it?', es: 'No lo sé. ¿Tú lo entiendes?'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.ni-neng-shuo-de-geng-man-yidian-ma
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: néng, ref: w.neng, text: 能}
+      - {pinyin: shuō, ref: w.shuo, text: 说}
+      - {pinyin: de, ref: w.de.complement, text: 得}
+      - {pinyin: gèng, ref: w.geng, text: 更}
+      - {pinyin: màn, ref: w.man, text: 慢}
+      - {pinyin: yìdiǎn, ref: w.yidian, sandhi: true, text: 一点}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Could you speak a bit more slowly?', es: '¿Puedes hablar un poco más despacio?'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-you-yi-ge-wenti
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yǒu, ref: w.you.have, text: 有}
+      - {pinyin: yí, ref: w.num.yi, sandhi: true, text: 一}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: wèntí, ref: w.wenti, text: 问题}
+      - {text: 。}
+    translation: {en: I have a question., es: Tengo una pregunta.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.zhege-wenti-hen-nan
+    use: say
+    kind: example
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: wèntí, ref: w.wenti, text: 问题}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: nán, ref: w.nan, text: 难}
+      - {text: 。}
+    translation: {en: This question is very hard., es: Esta pregunta es muy difícil.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.ni-zai-shuo-shenme
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: zài, ref: w.zai.progressive, text: 在}
+      - {pinyin: shuō, ref: w.shuo, text: 说}
+      - {pinyin: shénme, ref: w.shenme, text: 什么}
+      - {text: ？}
+    translation: {en: 'What are you saying?', es: '¿Qué estás diciendo?'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}

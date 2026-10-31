@@ -1152,7 +1152,7 @@ exercises:
     context: [w.ni, w.laizi, w.nage, w.guojia]
     skills: [production, speaking]
     also: [s.ni-shi-na-guo-ren, s.ni-shi-nage-guojia-de-ren]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿De qué país eres?»'}
+    prompt: {text: 'Dilo en chino, en voz alta y de dos formas: «¿De qué país eres?»'}
     answer: {meaning: '¿De qué país eres?'}
     comments:
       - {kind: usage, private: false, date: '2026-10-26', text: '你是哪国人？ es la forma corriente al hablar; 你是哪个国家的人？ dice lo mismo con la palabra entera 国家, y 你来自哪个国家？ suena algo más formal.'}
@@ -1803,10 +1803,10 @@ exercises:
     targets: [s.ni-cai-ta-duoda.she, s.ni-cai-ta-duoda]
     context: [w.ni, w.cai.guess, w.ta.she, w.duoda]
     skills: [production, speaking]
-    also: [s.ni-cai-ta-duoda]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántos años crees que tiene?»'}
     answer: {meaning: '¿Cuántos años crees que tiene?'}
-    comments: []
+    comments:
+      - {date: '2026-10-31', kind: note, private: false, text: 'Por escrito, 他 si es un hombre y 她 si es una mujer; al decirlo suenan igual, tā.'}
   - id: x.listen.wo-juede-ta-sishi-sui-zuoyou
     added: 2026-10-06
     lang: es
@@ -3497,4 +3497,89 @@ exercises:
     skills: [listening, discrimination]
     prompt: {text: 'Suenan dos. ¿Cuál es wén, la 1.ª o la 2.ª?', audio: true}
     answer: {meaning: 'La 2.ª: wén 文, el de 中文. La 1.ª era wèn 问 «preguntar».'}
+    comments: []
+  - id: x.nuance.xuexi-xue
+    added: '2026-10-31'
+    lang: es
+    type: nuance
+    targets: [w.xuexi, w.xue]
+    skills: [comprehension, discrimination]
+    prompt: {text: '«Estudio chino» y «quiero aprender a nadar»: ¿qué verbo va en cada una?'}
+    answer: {meaning: '学习 sirve para estudiar y para aprender: 我学习中文. Para aprender a hacer algo, mejor 学 a secas: 我想学游泳.'}
+    comments: []
+  - id: x.listen.ta-shi-ma-nian-chusheng-de
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.ta-shi-ma-nian-chusheng-de
+    targets: [s.ta-shi-ma-nian-chusheng-de]
+    context: [w.ta.he, w.shi, w.ma.horse, w.nian, w.chusheng, w.de]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Nació en el año del caballo.}
+    comments: []
+  - id: x.listen.ta-shi-2001-nian-chusheng-de-shu-she
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.ta-shi-2001-nian-chusheng-de-shu-she
+    targets: [s.ta-shi-2001-nian-chusheng-de-shu-she]
+    context: [w.ta.he, w.shi, w.num.er, w.ling, w.num.yi, w.nian, w.chusheng, w.de, w.shu.belong, w.she]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Nació en 2001: es del año de la serpiente.'}
+    comments: []
+  - id: x.listen.wo-shi-2000-nian-chusheng-de-shu-long
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.wo-shi-2000-nian-chusheng-de-shu-long
+    targets: [s.wo-shi-2000-nian-chusheng-de-shu-long]
+    context: [w.wo, w.shi, w.num.er, w.ling, w.nian, w.chusheng, w.de, w.shu.belong, w.long]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Nací en 2000: soy del año del dragón.'}
+    comments: []
+  - id: x.produce.wo-shi-2000-nian-chusheng-de-shu-long
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-shi-2000-nian-chusheng-de-shu-long
+    targets: [s.wo-shi-2000-nian-chusheng-de-shu-long]
+    context: [w.wo, w.shi, w.num.er, w.ling, w.nian, w.chusheng, w.de, w.shu.belong, w.long]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Nací en 2000: soy del año del dragón.»'}
+    answer: {meaning: 'Nací en 2000: soy del año del dragón.'}
+    comments: []
+  - id: x.produce.wo-xiang-zhu-zai-zhongguo
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-xiang-zhu-zai-zhongguo
+    targets: [s.wo-xiang-zhu-zai-zhongguo]
+    context: [w.wo, w.xiang, w.zhu.live, w.zai.at, w.zhongguo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero vivir en China.»'}
+    answer: {meaning: Quiero vivir en China.}
+    comments: []
+  - id: x.produce.wo-lai-jieshao-yixia
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-lai-jieshao-yixia
+    targets: [s.wo-lai-jieshao-yixia]
+    context: [w.wo, w.lai, w.jieshao, w.yixia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Os presento.»'}
+    answer: {meaning: Os presento.}
+    comments: []
+  - id: x.charsound.wai
+    added: 2026-10-31
+    lang: es
+    type: charsound
+    targets: [w.waiguo, w.waimian]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 外}
+    answer: {typed: wai4, hanzi: 外, pinyin: wài, meaning: 'Sale en 外国 wàiguó «el extranjero; extranjero (de otro país)», 外面
+        wàimiàn «fuera».'}
     comments: []

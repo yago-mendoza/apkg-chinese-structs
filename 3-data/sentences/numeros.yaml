@@ -507,7 +507,7 @@ sentences:
     kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
-      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
+      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián', optional: true}
       - {text: 二, ref: w.num.er, pinyin: 'èr'}
       - {text: 十, ref: w.num.shi, pinyin: 'shí'}
       - {text: 岁, ref: w.sui, pinyin: 'suì'}
@@ -832,3 +832,70 @@ sentences:
       - {text: 。}
     translation: {es: 'Ya tengo veintiocho años.', en: 'I am already twenty-eight.'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26', with_class: '2026-10-23'}
+  - id: s.zhe-shi-wo-di-er-ci-lai-zhongguo
+    use: say
+    kind: example
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: dì, ref: w.di.ordinal, text: 第}
+      - {pinyin: èr, ref: w.num.er, text: 二}
+      - {pinyin: cì, ref: w.ci, text: 次}
+      - {pinyin: lái, ref: w.lai, text: 来}
+      - {pinyin: Zhōngguó, ref: w.zhongguo, text: 中国}
+      - {text: 。}
+    translation: {en: This is my second time in China., es: Es la segunda vez que vengo a China.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+  - id: s.ta-dagai-sanshi-sui-zuoyou
+    use: say
+    kind: example
+    segments:
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {pinyin: dàgài, ref: w.dagai, text: 大概}
+      - {pinyin: sān, ref: w.num.san, text: 三}
+      - {pinyin: shí, ref: w.num.shi, text: 十}
+      - {pinyin: suì, ref: w.sui, text: 岁}
+      - {pinyin: zuǒyòu, ref: w.zuoyou, text: 左右}
+      - {text: 。}
+    translation: {en: He is about thirty., es: Tendrá unos treinta años.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: deberes 2026-10-30, origin: class}
+  - id: s.wo-qu-guo-liang-ci
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: guo, ref: w.guo.exp, text: 过}
+      - {pinyin: liǎng, ref: w.liang, text: 两}
+      - {pinyin: cì, ref: w.ci, text: 次}
+      - {text: 。}
+    translation: {en: I have been there twice., es: He ido dos veces.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.zhe-ben-shu-wo-kan-le-san-bian
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: běn, ref: w.ben.book, text: 本}
+      - {pinyin: shū, ref: w.shu, text: 书}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: kàn, ref: w.kan, text: 看}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {pinyin: sān, ref: w.num.san, text: 三}
+      - {pinyin: biàn, ref: w.bian, text: 遍}
+      - {text: 。}
+    translation: {en: I have read this book three times., es: 'Este libro me lo he leído tres veces, entero.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.ni-qu-guo-ji-ci
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: guo, ref: w.guo.exp, text: 过}
+      - {pinyin: jǐ, ref: w.ji, text: 几}
+      - {pinyin: cì, ref: w.ci, text: 次}
+      - {text: ？}
+    translation: {en: 'How many times have you been?', es: '¿Cuántas veces has ido?'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}

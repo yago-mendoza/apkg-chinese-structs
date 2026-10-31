@@ -52,3 +52,7 @@
 - ✅🃏 `{S} + 从 + {Num} + 点 + {V} + 到 + {Num} + 点` · Desde una hora hasta otra: 从 + la hora de empezar delante del verbo; 到 + la de acabar, detrás. · 我从九点工作到五点。
 - ✅🃏 `{S} + 还 + 没 + {V}` · Todavía no ha pasado, pero se espera: 还没 delante del verbo, sin 了. · 我还没吃饭。 / 我还没买。 / 他还没来。
 - ✅🃏 `{S} + {V} + 的 + {N}` · Lo que alguien hace describe una cosa: «el libro que compré» es 我买的书, con la descripción delante y 的 en medio. · 我听不懂他说的话。 / 他做的饭很好吃。 / 这是我买的书。
+- ✅🃏 `{S} + 要 + {V} + 了` · Algo está a punto de pasar: 要 delante del verbo y 了 al final. · 我要走了。 / 我要回家了。
+- ✅🃏 `{S} + 跟 + {S} + 见面` · Quedar con alguien: con quién va delante, con 跟; 见面 ya lleva su objeto. · 我明天跟他见面。
+- ✅🃏 `{S} + 跟 + {S} + 一样 + {Adj}` · Igual de… que alguien: con quién se compara, con 跟; luego 一样 y el adjetivo. · 我跟你一样高。 / 今天跟昨天一样冷。
+- ✅🃏 `多 + {V} + 一点` · Un poco más de algo: 多 delante del verbo y 一点 detrás. · 你多吃一点吧！ / 我想多学一点中文。

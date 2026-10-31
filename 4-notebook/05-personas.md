@@ -10,7 +10,7 @@
 - ✅🃏 我们 wǒmen [wɔ˧˩˧ mən] · nosotros · _pronombre_
 - ✅🃏 你们 nǐmen [ni˧˩˧ mən] · vosotros · _pronombre_
 - ✅🃏 他 tā [tʰa˥] · él · _pronombre_
-- 🟡🃏 她 tā [tʰa˥] · ella · _pronombre_
+- 🟡🃏 她 tā [tʰa˥] · ella · _pronombre_ · 💡 他 «él», 她 «ella» y 它 «ello» suenan igual, tā: al hablar no se distinguen; por escrito, según quién.
 - 🟡🃏 它 tā [tʰa˥] · ello (cosas, animales) · _pronombre_ · Se usa para animales y cosas.
 - ✅🃏 他们 tāmen [tʰa˥ mən] · ellos · _pronombre_
 - ✅🃏 大家 dàjiā [ta˥˩ tɕja˥] · todos, todo el mundo · _pronombre_ · Suele ir con 都: 大家都来了 «ya estamos todos». · 大 «grande» + 家 «familia, casa»: era «la gran familia», todo el grupo, y de ahí «todos». Es el mismo 家 de 一家人 «una familia» y del clasificador de negocios: 一家饭店 «un restaurante».
@@ -27,7 +27,7 @@
 - ✅🃏 小姐 xiǎojiě [ɕjɑʊ˧˩˧ tɕjɛ˧˩˧] · señorita (tras el apellido) · _sustantivo_
 - ✅🃏 小朋友 xiǎopéngyǒu [ɕjɑʊ˧˩˧ pʰɤŋ˧˥ joʊ˧˩˧] · niño, niña (al hablarle) · _sustantivo_ · Así se llama a un niño que no conoces: 小朋友，你几岁？.
 - ✅🃏 跟 gēn [kən˥] · con (alguien) · _preposición_ · 跟 + persona + verbo: 你想跟我一起吃饭吗？ «¿quieres comer conmigo?». Suele ir con 一起. · 跟我来 «sígueme»: 跟 también es «seguir». 跟 dice con quién y 一起, que juntos; se juntan a menudo: 我跟你(一起)去 «voy contigo».
-- ✅🃏 一起 yīqǐ [i˥ tɕʰi˧˩˧] · juntos · _sustantivo_ · Va delante del verbo: 一起吃饭 «comer juntos».
+- ✅🃏 一起 yīqǐ [i˥ tɕʰi˧˩˧] · juntos · _sustantivo_ · Va delante del verbo: 一起吃饭 «comer juntos». · 一起: varias personas que se levantan 起 a la vez, como una sola 一: juntos.
 - ✅🃏 给 gěi [keɪ˧˩˧] · a, para (alguien) · _preposición_ · 给 + persona va delante del verbo: 给我打电话 «llámame». Suelto, el verbo 给 es «dar».
 - ✅🃏 男 nán [nan˧˥] · hombre, masculino (en carteles: 男) · _adjetivo_ · En las puertas de los baños: 男 «hombres», 女 «mujeres». 男朋友 «novio».
 - ✅🃏 女 nǚ [ny˧˩˧] · mujer, femenino (en carteles: 女) · _adjetivo_ · En las puertas de los baños: 女 «mujeres», 男 «hombres». 女朋友 «novia»; 女儿 «hija».
@@ -44,6 +44,7 @@
 - ✅🃏 生病 shēngbìng [ʂɤŋ˥ piŋ˥˩] · ponerse enfermo; estar enfermo · _verbo_ · Palabra a palabra: 生 «producir, tener» + 病 «enfermedad»: «coger una enfermedad». Con 了, ya ha pasado: 我生病了 «me he puesto enfermo».
 - ✅🃏 关系 guānxi [kwan˥ ɕi] · relación (entre personas o cosas) · _sustantivo_ · Es el 关系 de 没关系 «no pasa nada», literalmente «no tiene relación». 我们关系很好 «nos llevamos muy bien»; 跟你没关系 «no tiene nada que ver contigo». No confundir con 关心 guānxīn «preocuparse por alguien» [HSK 2].
 - ✅🃏 别人 biéren [pjɛ˧˥ ʐən] · los demás, otra gente · _pronombre_ · Palabra a palabra: 别 «otro» + 人 «persona». 别人都来了 «los demás ya han venido». No es el 别 de «no hagas».
+- ✅🃏 一个人 yí ge rén [i˧˥ kɤ ʐən˧˥] · solo, sin compañía · _expresión_ · Delante del verbo: 我一个人住 «vivo solo». 自己 es otra cosa: «yo mismo, sin que nadie lo haga por mí». · Palabra a palabra: 一 «una» + 个 (clasificador) + 人 «persona»: «una sola persona», solo.
 
 ## 他, 她 y 它: los tres son tā
 
@@ -126,5 +127,9 @@ Empiezan casi igual y se confunden al oído y al decirlos.
 - ✅🃏 跟我来。 · gēn wǒ lái · Sígueme.
 - ✅🃏 我们一起去吧。 · wǒmen yìqǐ qù ba · Vamos juntos.
 - ✅🃏 我一个人去。 · wǒ yí ge rén qù · Voy solo.
-- ✅🃏 我跟你一起去。 · wǒ gēn nǐ yìqǐ qù · Voy contigo.
+- ✅🃏 我跟你(一起)去。 · wǒ gēn nǐ yìqǐ qù · Voy contigo.
 - ✅🃏 你一个人去，还是跟朋友一起去？我跟朋友一起去。 · nǐ yí ge rén qù háishi gēn péngyou yìqǐ qù wǒ gēn péngyou yìqǐ qù · —¿Vas solo o con amigos? —Voy con unos amigos.
+- ✅🃏 我一个人住。 · wǒ yí ge rén zhù · Vivo solo.
+- ✅🃏 你一个人住吗？ · nǐ yí ge rén zhù ma · ¿Vives solo?
+- ✅🃏 我自己去。 · wǒ zìjǐ qù · Voy yo mismo.
+- ✅🃏 我一个人住，今天想出去一下。 · wǒ yí ge rén zhù jīntiān xiǎng chūqu yíxià · Vivo solo, y hoy quiero salir un rato.

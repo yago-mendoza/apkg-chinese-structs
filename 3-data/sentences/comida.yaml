@@ -271,6 +271,7 @@ sentences:
   - id: s.dlg-zenmele
     use: hear
     kind: example
+    speakers: [A, B, A]
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 怎么了, ref: e.zenmele, pinyin: zěnme le}
@@ -357,6 +358,7 @@ sentences:
   - id: s.dlg-shui
     use: hear
     kind: example
+    speakers: [A, B, A]
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 要, ref: w.yao, pinyin: yào}
@@ -515,3 +517,65 @@ sentences:
       - {text: 。}
     translation: {es: 'Quiero un zumo.', en: 'I would like a glass of juice.'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ni-xihuan-chi-yangrou-haishi-zhurou
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: chī, ref: w.chi, text: 吃}
+      - {pinyin: yáng, ref: w.yang.sheep, text: 羊}
+      - {pinyin: ròu, ref: w.rou, text: 肉}
+      - {pinyin: háishi, ref: w.haishi, text: 还是}
+      - {pinyin: zhū, ref: w.zhu, text: 猪}
+      - {pinyin: ròu, ref: w.rou, text: 肉}
+      - {text: ？}
+    translation: {en: 'Do you prefer lamb or pork?', es: '¿Te gusta más el cordero o el cerdo?'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: diapositivas 2026-10-30, origin: class}
+  - id: s.wo-xihuan-chi-niurou-ye-xihuan-he-niunai
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: chī, ref: w.chi, text: 吃}
+      - {pinyin: niúròu, ref: w.niurou, text: 牛肉}
+      - {text: ，}
+      - {pinyin: yě, ref: w.ye, text: 也}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: hē, ref: w.he.drink, text: 喝}
+      - {pinyin: niúnǎi, ref: w.niunai, text: 牛奶}
+      - {text: 。}
+    translation: {en: 'I like beef, and I also like milk.', es: 'Me gusta la ternera, y también la leche.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: diapositivas 2026-10-30, origin: class}
+  - id: s.ni-duo-chi-yidian-ba
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: duō, ref: w.duo, text: 多}
+      - {pinyin: chī, ref: w.chi, text: 吃}
+      - {pinyin: yìdiǎn, ref: w.yidian, sandhi: true, text: 一点}
+      - {pinyin: ba, ref: w.ba.particle, text: 吧}
+      - {text: ！}
+    translation: {en: Have a bit more!, es: ¡Come un poco más!}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-yijing-ziji-zuo-hao-fan-le
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yǐjīng, ref: w.yijing, text: 已经}
+      - {pinyin: zìjǐ, ref: w.ziji, text: 自己}
+      - {pinyin: zuò, ref: w.zuo.do, text: 做}
+      - {pinyin: hǎo, ref: w.hao, text: 好}
+      - {pinyin: fàn, ref: w.fan, text: 饭}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: ，}
+      - {pinyin: wǒmen, ref: w.women, text: 我们}
+      - {pinyin: yìqǐ, ref: w.yiqi, sandhi: true, text: 一起}
+      - {pinyin: chī, ref: w.chi, text: 吃}
+      - {pinyin: ba, ref: w.ba.particle, text: 吧}
+      - {text: 。}
+    translation: {en: I have already made the food myself; let us eat together., es: 'Ya he hecho la comida yo solo: comamos juntos.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}

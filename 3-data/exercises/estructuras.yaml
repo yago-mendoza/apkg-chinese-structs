@@ -629,3 +629,60 @@ exercises:
     prompt: {text: '¿Cuál se dice así en chino? «Este es el libro que compré.»'}
     answer: {meaning: 'Lo que describe va delante, con 的: 我买的书 «el libro que compré». El «que» del español no existe.'}
     comments: []
+  - id: x.nuance.dao-jia-le-yao-hui-jia-le
+    added: '2026-10-31'
+    lang: es
+    type: nuance
+    targets: [st.yao-le, st.v-le]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我到家了 y 我要回家了: ¿qué cambia?'}
+    answer: {meaning: '我到家了: ya he llegado (了: ya cambió). 我要回家了: me voy ya a casa (要…了: está a punto de pasar).'}
+    comments: []
+  - id: x.calque.yao-le
+    added: 2026-10-31
+    lang: es
+    type: pattern
+    targets: [st.yao-le]
+    context: [w.yao, w.le]
+    sentence: s.wo-yao-hui-jia-le
+    reveal: [s.wo-yao-zou-le]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Me voy ya a casa.»'}
+    answer: {meaning: '«Voy a volver» no se dice con 去: 去 es ir a un sitio. Lo que está a punto de pasar es 要…了.'}
+    comments: []
+  - id: x.calque.gen-jianmian
+    added: 2026-10-31
+    lang: es
+    type: pattern
+    targets: [st.gen-jianmian]
+    context: [w.gen, w.jianmian]
+    sentence: s.wo-mingtian-gen-ta-jianmian
+    reveal: []
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Mañana quedo con él.»'}
+    answer: {meaning: '见面 es «ver la cara»: ya lleva su objeto, 面, y no admite otro detrás. Con quién va delante: 跟他见面.'}
+    comments: []
+  - id: x.calque.gen-yiyang-adj
+    added: 2026-10-31
+    lang: es
+    type: pattern
+    targets: [st.gen-yiyang-adj]
+    context: [w.gen, w.yiyang]
+    sentence: s.wo-gen-ni-yiyang-gao
+    reveal: [s.jintian-gen-zuotian-yiyang-leng, s.wo-de-fangjian-gen-ni-de-yiyang-da]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Soy igual de alto que tú.»'}
+    answer: {meaning: '«Igual de alto que tú»: primero con quién (跟你) y luego 一样 + el adjetivo, al final.'}
+    comments: []
+  - id: x.calque.duo-v-yidian
+    added: 2026-10-31
+    lang: es
+    type: pattern
+    targets: [st.duo-v-yidian]
+    context: [w.duo, w.yidian]
+    sentence: s.ni-duo-chi-yidian-ba
+    reveal: [s.wo-xiang-duo-xue-yidian-zhongwen]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «¡Come un poco más!»'}
+    answer: {meaning: '«Come un poco más»: el orden del español no vale; 多 va delante del verbo y 一点 detrás.'}
+    comments: []

@@ -16,3 +16,11 @@
 - ✅🃏 芭蕾 bālěi [pa˥ leɪ˧˩˧] · ballet · _sustantivo_ · Préstamo por el sonido del francés ballet.
 - ✅🃏 游泳 yóuyǒng [joʊ˧˥ jʊŋ˧˩˧] · nadar · _verbo_
 - ✅🃏 唱 chàng [ʈʂʰɑŋ˥˩] · cantar · _verbo_ · Cantar una canción es 唱歌 chànggē; el mismo 唱 que en tus deberes del 13 (chàng, con -ng).
+- ✅🃏 打球 dǎqiú [ta˧˩˧ tɕʰjoʊ˧˥] · jugar a la pelota · _verbo_ · Palabra a palabra: 打 «golpear» + 球 «pelota». Vale para el baloncesto o el tenis; el fútbol es 踢球 tīqiú [HSK 3], «patear la pelota».
+- ✅🃏 唱歌 chànggē [ʈʂʰɑŋ˥˩ kɤ˥] · cantar · _verbo_ · Palabra a palabra: 唱 «cantar» + 歌 «canción». Como 吃饭, lleva su objeto dentro: 唱一首歌 «cantar una canción».
+
+## Frases
+
+- ✅🃏 他喜欢打球。 · tā xǐhuan dǎqiú · Le gusta jugar a la pelota.
+- ✅🃏 我喜欢唱歌。 · wǒ xǐhuan chànggē · Me gusta cantar.
+- ✅🃏 我想学游泳。 · wǒ xiǎng xué yóuyǒng · Quiero aprender a nadar.

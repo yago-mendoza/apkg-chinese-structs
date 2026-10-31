@@ -248,6 +248,7 @@ entries:
       - {kind: character, private: false, date: '2026-09-27', text: 'Su origen es el dibujo de una planta de trigo, tomado prestado por su sonido para «venir».'}
       - {kind: mnemonic, private: false, date: '2026-10-11', text: '来 es como una marca bonita en el mapa: el sitio donde estás tú. Por eso solo se puede venir hacia aquí.', original: mientras que 'lai' es venir porque es como una marca bonita de donde estsa. venirrrr}
       - {kind: usage, private: false, date: '2026-10-26', text: '我来 + verbo es «déjame a mí, ya me encargo»: 我来付钱 «pago yo», 我来介绍一下 «dejad que os presente». Solo, 我来！ «¡ya voy yo!».', original: '来 (lái) significa «venir», pero 我来 + verbo expresa «yo me encargo» o «dejadme…». 我来介绍一下 = «Dejadme que os presente».'}
+      - {date: '2026-10-31', kind: tip, private: false, text: '我来 + verbo no es «vengo a…»: es «déjame a mí, yo me encargo»: 我来介绍一下 «os presento», 我来付钱 «pago yo». No es formal: se oye en cualquier casa.'}
   - id: w.laizi
     use: say
     role: content
@@ -319,6 +320,7 @@ entries:
     comments:
       - {kind: mnemonic, private: false, date: '2026-10-19', text: 'Ves varias cosas y abres la boca 口 para preguntar: «¿cuál de esas 那 quieres?». La boca convierte «ese» en una pregunta, y el tono también cambia: 那 nà baja, 哪 nǎ baja y sube.', original: 'Mnemotecnia: imagina que ves varias cosas y usas tu boca (口) para preguntar: «¿CUÁL de esas (那) quieres?». Así recordarás que 口 + 那 = 哪, y que al añadir la boca conviertes «ese» en una pregunta: «¿cuál?». Recuerda también el cambio de tono: nà (4.º tono) → nǎ (3.º tono).'}
       - {kind: linguistic, private: false, date: '2026-10-26', text: 'Si sabes decir «uno», cambia 一 por 哪 y deja lo demás: de 一天 sale 哪天; de 一个人, 哪个人; de 一本书, 哪本书. 你是哪国人？ es una expresión hecha, sin 个.', original: 'Ese es el truco más útil: si sabes decir «uno», sustituye yī por nǎ y conserva el resto. […] Nǎ guó rén es una construcción abreviada habitual que conviene memorizar.'}
+      - {date: '2026-10-31', kind: tip, private: false, text: '哪 + clasificador: cambia 一 por 哪 y deja el resto. 一个人, 哪个人; 一本书, 哪本书; 一天, 哪天 (sin 个). 哪国人 es fija.'}
   - id: w.guo
     use: say
     role: content
@@ -352,6 +354,8 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '学 «aprender» + 习 «practicar». 学生 «estudiante» lleva el mismo 学.'}
+      - {date: '2026-10-31', kind: mnemonic, original: 'Xí = practicar , por eso se dibuja como una esquina de mesa con dos utensilios dentro (kinda)', private: false, text: '习 xí «practicar»: una esquina de mesa con dos utensilios dentro.'}
+      - {date: '2026-10-31', kind: tip, private: false, text: 'En chino, estudiar y aprender son el mismo verbo: 学习, o 学 a secas. 我学习中文 «estudio chino»; 我想学游泳 «quiero aprender a nadar». 读书 dúshū es estudiar en la escuela (y leer libros).'}
   - id: g.shi-shi
     kind: group
     basis: soundalike
@@ -460,6 +464,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Para dar tu opinión: 我觉得很好 «me parece bien». 你觉得怎么样？ «¿qué te parece?».'}
       - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Ves 见 algo bajo una cubierta 冖 y te saltan tres chispas ⺍ en la cabeza: «¡creo que sé qué es!». Para comprobarlo das un paso 彳 al amanecer 旦 y lo tanteas con la mano 寸: después de verlo y tocarlo, dices «me parece que…». Y juéde suena a «juzgar», opinar.', original: 'Para recordar 觉得 (juéde) […] imagina que ves 见 algo bajo una cubierta 冖 y te saltan tres chispas ⺍ en la cabeza […] Ademas juede suena a juzgar , opinar, sabes?'}
+      - {date: '2026-10-31', kind: tip, private: false, text: 'Para una opinión, 觉得: 我觉得很好. 我想 es querer o tener pensado: 我想去中国. Y 怎么样 pregunta «¿qué tal?»; 你觉得怎么样？, «¿qué te parece?».'}
   - id: g.xiansheng-xuesheng
     kind: group
     basis: soundalike

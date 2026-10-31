@@ -35,6 +35,10 @@
 - ✅🃏 辶 chuò · caminar, avanzar (como componente) · Rodea el carácter por abajo y por la izquierda, como un camino. No confundir con 讠 «hablar», que va solo a la izquierda: 请 pide hablando; 进 entra caminando.
 - 🟡🃏 欢 huān · alegría
 - 🟡🃏 定 dìng · fijo, establecido · Un techo 宀 y, debajo, 正 «recto» con los trazos de abajo abiertos como un pie: bajo mi techo, todo está fijo en su sitio.
+- 🟡🃏 喜 xǐ · alegría, gustar (el de 喜欢)
+- 🟡🃏 己 jǐ · uno mismo (el de 自己)
+- 🟡🃏 已 yǐ · ya (el de 已经)
+- 🟡🃏 钅 jīn · metal (forma de 金 a la izquierda) · En dinero y metales: 钱, 地铁 (铁), 分钟 (钟), 不错 (错).
 
 ## 生, 牛 y 午
 
@@ -169,6 +173,36 @@ Abajo los tres llevan algo parecido a un pie; lo que hay arriba los separa.
 - 定 dìng · 宀 un techo arriba (一定)
 - 走 zǒu · 土 arriba, un poste de caminos
 - 是 shì · 日 un sol arriba
+
+## 喜 y 洗: los dos xǐ
+
+Suenan igual, en tercer tono; los separa el agua.
+
+- 喜 xǐ · el de 喜欢: arriba 士, abajo 口, sin agua
+- 洗 xǐ · con 氵 a la izquierda; sin ella, 先
+
+## 己 y 已
+
+Casi iguales: los separa cuánto se cierra el gancho de arriba. Hay un tercero, 巳 sì [nivel 7], cerrado del todo, que casi no verás.
+
+- 己 jǐ · abierto arriba: 自己, y dentro de 起
+- 已 yǐ · medio cerrado: 已经
+
+## Piezas de la izquierda: metal, ropa, altar y vehículo
+
+Estrechas, a la izquierda del carácter, dicen de qué va.
+
+- 钅 jīn · 钱, 地铁: arriba, un trazo inclinado como un sombrerito
+- 衤 yī · 裤子: dos trazos cortos abajo
+- 礻 shì · 电视, 礼物: un solo trazo corto abajo
+- 车 chē · vehículo, estrecho: 轻 de 年轻
+
+## 钅 y 车 a la izquierda
+
+Los dos, estrechos a la izquierda, con trazos cruzados: 钱 frente a 轻.
+
+- 钅 jīn · empieza con un trazo inclinado arriba, como un sombrerito: 钱
+- 车 chē · arriba un trazo recto, y el eje vertical atraviesa: 轻
 
 ## Frases
 

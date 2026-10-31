@@ -122,7 +122,7 @@ entries:
     refs: [w.xing]
     meaning: {es: 'Decir el apellido.', en: 'Saying your surname.'}
     examples: [s.wo-xing-meng]
-    contrast: {right: s.wo-xing-meng, wrong: '我的姓孟。', why: {es: '姓 es aquí el verbo «apellidarse»: 我姓孟. «Mi apellido Mèng» se queda sin verbo.', en: '姓 is the verb here, "to be surnamed": 我姓门多萨. "My surname Mendoza" has no verb.'}}
+    contrast: {right: s.wo-xing-meng, wrong: '我的姓孟。', why: {es: '姓 es aquí el verbo «apellidarse»: 我姓孟. «Mi apellido Mèng» se queda sin verbo.', en: '姓 is the verb here, "to be surnamed": 我姓孟. "My surname Meng" has no verb.'}}
     source: {origin: review, batch: 002-2026-09-29-clima-apellidos-y-caracteres, date: '2026-09-29'}
     comments: []
   - id: st.laizi
@@ -488,3 +488,47 @@ entries:
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-26', text: '的 no dice que sea pasado: 你说的话 es «lo que dices» o «lo que dijiste», según el contexto.', original: 'Quédate con este molde: [alguien hace algo] + 的 + [cosa/persona]. […] El tiempo lo aporta el contexto; 的 no indica pasado.'}
+  - id: st.yao-le
+    kind: structure
+    use: say
+    pattern: '{S} + 要 + {V} + 了'
+    refs: [w.yao, w.le]
+    meaning: {en: 'Something is about to happen: 要 before the verb, 了 at the end.', es: 'Algo está a punto de pasar: 要 delante del verbo y 了 al final.'}
+    examples: [s.wo-yao-hui-jia-le, s.wo-yao-zou-le]
+    contrast: {right: s.wo-yao-hui-jia-le, why: {en: '"I am going to go back" is not 去: 去 is going somewhere. What is about to happen is 要…了.', es: '«Voy a volver» no se dice con 去: 去 es ir a un sitio. Lo que está a punto de pasar es 要…了.'}, wrong: 我去回家。}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments:
+      - {date: '2026-10-31', kind: tip, private: false, text: '了 dice que algo ya ha cambiado: 我到家了 «ya he llegado». Con 要 delante, el cambio aún no ha pasado, pero está a punto: 我要回家了 «me voy ya a casa». 快…了 es lo mismo, «ya casi»: 我快到家了.'}
+  - id: st.gen-jianmian
+    kind: structure
+    use: say
+    pattern: '{S} + 跟 + {S} + 见面'
+    refs: [w.gen, w.jianmian]
+    meaning: {en: 'To meet someone: who goes before, with 跟; 见面 already has its object.', es: 'Quedar con alguien: con quién va delante, con 跟; 见面 ya lleva su objeto.'}
+    examples: [s.wo-mingtian-gen-ta-jianmian]
+    contrast: {right: s.wo-mingtian-gen-ta-jianmian, why: {en: '见面 is "see the face": it already has its object, so the person goes before it, with 跟.', es: '见面 es «ver la cara»: ya lleva su objeto, 面, y no admite otro detrás. Con quién va delante: 跟他见面.'}, wrong: 我明天见面他。}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments:
+      - {date: '2026-10-31', kind: tip, private: false, text: 'Algunos verbos llevan su objeto dentro: 见面 «ver + cara», 帮忙 «ayudar + prisa», 吃饭, 睡觉, 唱歌. No admiten otro detrás (见面他 ✗, 帮忙我 ✗), y se pueden abrir para meter algo: 帮个忙 «echar una mano», 吃了饭 «ya he comido».'}
+  - id: st.gen-yiyang-adj
+    kind: structure
+    use: say
+    pattern: '{S} + 跟 + {S} + 一样 + {Adj}'
+    refs: [w.gen, w.yiyang]
+    meaning: {en: 'As … as someone: who is compared, with 跟; then 一样 and the adjective.', es: 'Igual de… que alguien: con quién se compara, con 跟; luego 一样 y el adjetivo.'}
+    examples: [s.wo-gen-ni-yiyang-gao, s.jintian-gen-zuotian-yiyang-leng]
+    contrast: {right: s.wo-gen-ni-yiyang-gao, why: {en: '"As tall as you": first who (跟你), then 一样 + the adjective, at the end.', es: '«Igual de alto que tú»: primero con quién (跟你) y luego 一样 + el adjetivo, al final.'}, wrong: 我一样高跟你。}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments:
+      - {date: '2026-10-31', kind: tip, private: false, text: '一样大 es «del mismo tamaño», no que los dos sean grandes. Negado, 不一样 «distinto». Y para «no tan alto como tú», otra forma: 我没有你那么高.'}
+  - id: st.duo-v-yidian
+    kind: structure
+    use: say
+    pattern: '多 + {V} + 一点'
+    refs: [w.duo, w.yidian]
+    meaning: {en: 'A bit more of something: 多 before the verb, 一点 after it.', es: 'Un poco más de algo: 多 delante del verbo y 一点 detrás.'}
+    examples: [s.ni-duo-chi-yidian-ba, s.wo-xiang-duo-xue-yidian-zhongwen]
+    contrast: {right: s.ni-duo-chi-yidian-ba, why: {en: '"Eat a bit more": 多 goes before the verb and 一点 after it.', es: '«Come un poco más»: el orden del español no vale; 多 va delante del verbo y 一点 detrás.'}, wrong: 你吃一点多吧！}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments:
+      - {date: '2026-10-31', kind: tip, private: false, text: '更多 es «más cantidad» (我想学更多中文); 多 + verbo + 一点, «un poco más que ahora» (每天多学一点).'}

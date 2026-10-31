@@ -673,3 +673,35 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¡Qué calor!»'}
     answer: {meaning: ¡Qué calor!}
     comments: []
+  - id: x.produce.jintian-gen-zuotian-yiyang-leng
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.jintian-gen-zuotian-yiyang-leng
+    targets: [s.jintian-gen-zuotian-yiyang-leng]
+    context: [w.jintian, w.gen, w.zuotian, w.yiyang, w.leng]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hoy hace tanto frío como ayer.»'}
+    answer: {meaning: Hoy hace tanto frío como ayer.}
+    comments: []
+  - id: x.produce.waimian-haishi-hen-leng
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.waimian-haishi-hen-leng
+    targets: [s.waimian-haishi-hen-leng]
+    context: [w.waimian, w.haishi, w.hen, w.leng]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Fuera sigue haciendo mucho frío.»'}
+    answer: {meaning: Fuera sigue haciendo mucho frío.}
+    comments: []
+  - id: x.contrast.xue.snow
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.xue-tones
+    targets: [w.xue.snow]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 雪, pinyin: xuě, meaning: nieve}
+    comments: []

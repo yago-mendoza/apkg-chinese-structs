@@ -2557,3 +2557,108 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Ya tengo veintiocho años.»'}
     answer: {meaning: Ya tengo veintiocho años.}
     comments: []
+  - id: x.pair.qi-ji
+    added: '2026-10-31'
+    lang: es
+    type: listen
+    targets: [w.num.qi]
+    pair:
+      - {hanzi: 鸡, meaning: pollo, pinyin: jī}
+      - {hanzi: 七, meaning: siete, pinyin: qī}
+    skills: [listening, discrimination]
+    prompt: {audio: true, text: 'Suenan dos. ¿Cuál es qī, la 1.ª o la 2.ª?'}
+    answer: {meaning: 'La 2.ª: qī 七 «siete». La 1.ª era jī 鸡 «pollo»: sin soplo.'}
+    comments: []
+  - id: x.dictation.dagai
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.dagai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: da4 gai4, hanzi: 大概, pinyin: dàgài, meaning: aproximadamente; seguramente}
+    comments: []
+  - id: x.produce.dagai
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.dagai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «aproximadamente; seguramente»? Escribe el pinyin.'}
+    answer: {typed: da4 gai4, hanzi: 大概, pinyin: dàgài, meaning: aproximadamente; seguramente}
+    comments: []
+  - id: x.read.dagai
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.dagai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 大概}
+    answer: {hanzi: 大概, pinyin: dàgài, meaning: aproximadamente; seguramente}
+    comments: []
+  - id: x.produce.zhe-shi-wo-di-er-ci-lai-zhongguo
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.zhe-shi-wo-di-er-ci-lai-zhongguo
+    targets: [s.zhe-shi-wo-di-er-ci-lai-zhongguo]
+    context: [w.zhe, w.shi, w.wo, w.di.ordinal, w.num.er, w.ci, w.lai, w.zhongguo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Es la segunda vez que vengo a China.»'}
+    answer: {meaning: Es la segunda vez que vengo a China.}
+    comments: []
+  - id: x.listen.ta-dagai-sanshi-sui-zuoyou
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.ta-dagai-sanshi-sui-zuoyou
+    targets: [s.ta-dagai-sanshi-sui-zuoyou]
+    context: [w.ta.he, w.dagai, w.num.san, w.num.shi, w.sui, w.zuoyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tendrá unos treinta años.}
+    comments: []
+  - id: x.produce.ta-dagai-sanshi-sui-zuoyou
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.ta-dagai-sanshi-sui-zuoyou
+    targets: [s.ta-dagai-sanshi-sui-zuoyou]
+    context: [w.ta.he, w.dagai, w.num.san, w.num.shi, w.sui, w.zuoyou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tendrá unos treinta años.»'}
+    answer: {meaning: Tendrá unos treinta años.}
+    comments: []
+  - id: x.produce.wo-qu-guo-liang-ci
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-qu-guo-liang-ci
+    targets: [s.wo-qu-guo-liang-ci]
+    context: [w.wo, w.qu, w.guo.exp, w.liang, w.ci]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «He ido dos veces.»'}
+    answer: {meaning: He ido dos veces.}
+    comments: []
+  - id: x.listen.zhe-ben-shu-wo-kan-le-san-bian
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.zhe-ben-shu-wo-kan-le-san-bian
+    targets: [s.zhe-ben-shu-wo-kan-le-san-bian]
+    context: [w.zhe, w.ben.book, w.shu, w.wo, w.kan, w.le, w.num.san, w.bian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Este libro me lo he leído tres veces, entero.'}
+    comments: []
+  - id: x.produce.ni-qu-guo-ji-ci
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.ni-qu-guo-ji-ci
+    targets: [s.ni-qu-guo-ji-ci]
+    context: [w.ni, w.qu, w.guo.exp, w.ji, w.ci]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántas veces has ido?»'}
+    answer: {meaning: '¿Cuántas veces has ido?'}
+    comments: []

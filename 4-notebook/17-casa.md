@@ -32,6 +32,8 @@
 - ✅🃏 住 zhù [ʈʂu˥˩] · vivir (en un sitio); alojarse · _verbo_ · Dónde se vive o se duerme: 你住在哪里？ «¿dónde vives?». Para «vivir» en el sentido de la vida, 生活 [HSK 2].
 - ✅🃏 穿 chuān [ʈʂʰwan˥] · ponerse, llevar puesto (ropa) · _verbo_ · Ropa y zapatos: 穿衣服 «vestirse»; 我穿这件 «me pongo esta».
 - ✅🃏 电 diàn [tjɛn˥˩] · electricidad; batería · _sustantivo_ · 没电了 «se ha quedado sin batería»: del móvil o del ordenador. Está en 电脑, 电话 y 电视. · Un sol 日 con un cable que le sale por abajo: de ahí sale la electricidad.
+- ✅🃏 楼 lóu [loʊ˧˥] · edificio; planta, piso · _sustantivo_ · 三楼 «el tercer piso»: el número delante, sin 第. 楼下 «abajo», 楼上 «arriba».
+- ✅🃏 洗 xǐ [ɕi˧˩˧] · lavar · _verbo_ · 洗 parece la boca de un aspersor echando agua. · 洗手 «lavarse las manos», 洗澡 «ducharse», 洗衣服 «lavar la ropa». No confundir con el xǐ de 喜欢: suena igual, pero es la alegría.
 
 ## 住 y 猪
 
@@ -67,4 +69,8 @@ La misma sílaba: solo los separa el tono.
 - ✅🃏 我可以打电话吗？ · wǒ kěyǐ dǎ diànhuà ma · ¿Puedo llamar por teléfono?
 - ✅🃏 我的手机没电了。 · wǒ de shǒujī méi diàn le · Me he quedado sin batería en el móvil.
 - ✅🃏 你要看电视吗？ · nǐ yào kàn diànshì ma · ¿Quieres ver la tele?
-- ✅🃏 我的手机在哪里？在这里！这个是你的吗？不是，那个是我的。 · wǒ de shǒujī zài nǎlǐ zài zhèlǐ zhè ge shì nǐ de ma bú shì nà ge shì wǒ de · —¿Dónde está mi móvil? —¡Aquí! —¿Este es tuyo? —No, el mío es aquel.
+- ✅🃏 我的手机在哪里？在这里！这个是你的吗？不是，那个是我的。 · wǒ de shǒujī zài nǎlǐ zài zhèlǐ zhè ge shì nǐ de ma bú shì nà ge shì wǒ de · —¿Dónde está mi móvil? —¡Aquí! ¿Este es tuyo? —No, el mío es aquel.
+- ✅🃏 我住在三楼。 · wǒ zhù zài sān lóu · Vivo en el tercer piso.
+- ✅🃏 先洗手，再吃饭。 · xiān xǐ shǒu zài chīfàn · Primero lávate las manos, y luego a comer.
+- ✅🃏 我的房间跟你的一样大。 · wǒ de fángjiān gēn nǐ de yíyàng dà · Mi habitación es igual de grande que la tuya.
+- ✅🃏 房间里太黑了，我看不见。 · fángjiān lǐ tài hēi le wǒ kàn bu jiàn · La habitación está demasiado oscura: no veo nada.

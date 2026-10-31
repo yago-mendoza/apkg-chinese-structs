@@ -622,6 +622,7 @@ sentences:
   - id: s.dlg-e-le
     use: hear
     kind: example
+    speakers: [A, B, A]
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 怎么了, ref: e.zenmele, pinyin: zěnme le}
@@ -965,3 +966,24 @@ sentences:
       - {text: 。}
     translation: {es: 'Este es el libro que compré.', en: 'This is the book I bought.'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ni-shi-yixia
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: shì, ref: w.shi.try, text: 试}
+      - {pinyin: yíxià, ref: w.yixia, sandhi: true, text: 一下}
+      - {text: 。}
+    translation: {en: Give it a try., es: Pruébalo.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-xiang-xian-xizao
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: xiān, ref: w.xian.first, text: 先}
+      - {pinyin: xǐzǎo, ref: w.xizao, text: 洗澡}
+      - {text: 。}
+    translation: {en: I want to have a shower first., es: Quiero ducharme primero.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}

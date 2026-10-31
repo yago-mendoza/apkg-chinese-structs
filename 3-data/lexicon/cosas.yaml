@@ -55,7 +55,8 @@ entries:
     pinyin: zhè
     meaning: {es: 'este, esto', en: this}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
-    comments: []
+    comments:
+      - {date: '2026-10-31', kind: tip, private: false, text: 'Cosas frente a lugares: 这个 / 那个 / 哪个, una cosa o persona; 这里 / 那里 / 哪里, un lugar. Truco: si puedes poner 个, es una cosa; si puedes poner 在 delante, un lugar.'}
   - id: w.na.that
     use: say
     role: function
@@ -166,9 +167,11 @@ entries:
     hanzi: 能
     pinyin: néng
     meaning: {es: 'poder (ser capaz)', en: 'can, to be able to'}
+    accept_cards: 'su contraste con 更 (gèng), que lo confundes'
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-10-26', text: '熊 xióng «oso» es 能 con cuatro patas 灬 debajo: un animal que lo puede todo.', original: 'MAS (parecidos, solo aue el oso añade abajo cuatro patas, un animal aue puede todo jajaja de poder neng, pues mas cuatro patas, xiong)'}
+      - {date: '2026-10-31', kind: tip, private: false, text: 'Con el mismo verbo: 我会开车 «sé conducir» (lo aprendí); 我今天不能开车 «hoy no puedo» (he bebido); 我可以开车吗？ «¿me dejas?».'}
   - id: w.he.and
     use: say
     role: function
@@ -251,6 +254,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: character, private: false, date: '2026-10-01', text: '口 «boca» a la izquierda. 听音乐 «escuchar música».'}
+      - {date: '2026-10-31', kind: tip, private: false, text: '见 detrás de 听 o 看 dice que lo consigues: 听见 «oír» (te llega el sonido), 看见 «ver». Con 不 en medio, no: 听不见 «no oigo», 看不见 «no veo». Y 懂 es entenderlo: 听不懂 «lo oigo, pero no lo entiendo».'}
   - id: w.shengqi
     use: say
     role: content
@@ -490,6 +494,7 @@ entries:
     pos_reason: 'en el mazo es děi «tener que»; la lista lo da antes como partícula (de)'
     hanzi: 得
     pinyin: 'děi'
+    tts: 'dei 3'
     meaning: {es: 'tener que', en: 'to have to'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments:
@@ -638,7 +643,8 @@ entries:
     pinyin: 'xǐzǎo'
     meaning: {es: 'ducharse, bañarse', en: 'to shower, to bathe'}
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
-    comments: []
+    comments:
+      - {date: '2026-10-31', kind: mnemonic, original: Xizao = mucha agua por tanto los dos hanzi llevan el simbolo del sgua, private: false, text: 'Mucha agua: los dos hanzi llevan 氵.'}
   - id: w.shiqing
     use: hear
     role: content
@@ -661,6 +667,7 @@ entries:
       - {kind: teacher, private: false, date: '2026-10-15', text: '我还不到二十八岁 «aún no tengo veintiocho»: 不到 es «no llegar a».'}
       - {kind: mnemonic, private: false, date: '2026-10-20', text: '到: a la izquierda, un barco de vela 至; a la derecha, 刂, otra vela más cerca de la cámara.', original: 'En 到 (dào), la parte derecha 刂 representa un la vela mas cercana a la camara.'}
       - {kind: linguistic, private: false, date: '2026-10-20', text: '到 es «llegar», a un sitio o a una cifra: 我到了 «ya he llegado». «Salir» es 出: 出去.'}
+      - {date: '2026-10-31', kind: tip, private: false, text: '去 es ir hacia allí; 回, volver a donde es tuyo (casa, tu país); 到, llegar: 我去超市, 我回家, 我到家了. 到 no es «salir»: salir es 出, 出去.'}
   - id: g.dao-dao
     kind: group
     basis: soundalike

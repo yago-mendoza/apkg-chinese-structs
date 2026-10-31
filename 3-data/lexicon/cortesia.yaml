@@ -201,6 +201,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'La respuesta a 谢谢. Literalmente, «no hagas cumplidos».'}
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Palabra a palabra: 客气 [HSK 5] es tener cumplidos, como un invitado 客; 不客气, «no hace falta cumplido». Su 气 qi no es el 起 qǐ de 对不起: son caracteres distintos.'}
+      - {date: '2026-10-31', kind: linguistic, original: 'Invitado se dice 客人 (kèrén)... ke es un poco eso, nvitado pero para usarlo falta el ren, como con comerciante', private: false, text: '客 kè es «invitado»: 不客气, «no hace falta tanta ceremonia». El invitado o el cliente es 客人 kèrén [HSK 2]; como con 商人 shāngrén [HSK 2], sin 人 no se usa.'}
     accept_cards: 'YAGO las confunde y pidió reforzarlas (review 009): elegir entre las cuatro respuestas hechas y un matiz corto.'
   - id: w.bang
     use: say
@@ -284,6 +285,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 再 «otra vez» + 说 «decir» + 一遍 «una vez entera»: «dilo otra vez entero».'}
       - {kind: teacher, private: false, date: '2026-10-02', text: 'Lo que se dice en clase para pedir que repitan. Para leer otra vez, 再读一遍 zài dú yí biàn.'}
+      - {date: '2026-10-31', kind: tip, private: false, text: '遍 es «una vez entera»: 再说一遍 «dilo otra vez, todo». 再说一次 también vale, pero para pedir que te repitan, 遍 es lo natural.'}
   - id: w.zhidao
     use: say
     role: content
@@ -291,6 +293,7 @@ entries:
     hanzi: 知道
     pinyin: 'zhīdao'
     meaning: {es: 'saber', en: 'to know'}
+    accept_cards: 'el matiz 知道 / 懂 que pediste'
     accept_pinyin_mismatch: 'la segunda sílaba se dice átona en el habla'
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments:

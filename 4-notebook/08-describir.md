@@ -39,7 +39,7 @@
 - ✅🃏 真的 zhēnde [ʈʂən˥ tɤ] · de verdad, en serio · _adverbio_ · 真 delante de un adjetivo es «qué…»: 真好. 真的 es «de verdad»: 我真的知道 «de verdad que lo sé»; 真的？, con tono de pregunta, ya es «¿en serio?».
 - ✅🃏 快 kuài [kʰwaɪ˥˩] · rápido; pronto · _adjetivo_ · 他跑得很快 «corre muy rápido». Con 了, «ya casi»: 快八点了 «son casi las ocho». Lo contrario es 慢 màn.
 - ✅🃏 跑 pǎo [pʰɑʊ˧˩˧] · correr · _verbo_ · 他跑得很快 «corre muy rápido». 足 a la izquierda es «pie».
-- ✅🃏 得 de [tɤ] · partícula: cómo se hace algo (说得很好) · _partícula_ · Verbo + 得 + cómo: 你说得很好 «hablas muy bien»; 你来得很早 «has llegado temprano». Valora cómo sale la acción. «你很早» no es la forma de decir que alguien llegó temprano. · Se escribe distinto que 的 (mi libro: 我的书) aunque suene igual: 得 va detrás de un verbo; 的, delante de un sustantivo.
+- ✅🃏 得 de [tɤ] · partícula: cómo se hace algo (说得很好) · _partícula_ · Verbo + 得 + cómo: 你说得很好 «hablas muy bien»; 你来得很早 «has llegado temprano». Valora cómo sale la acción. «你很早» no es la forma de decir que alguien llegó temprano. · Se escribe distinto que 的 (mi libro: 我的书) aunque suene igual: 得 va detrás de un verbo; 的, delante de un sustantivo. · 💡 得 detrás del verbo valora cómo sale algo: 你说得对 «tienes razón», 你说得不对 «no es correcto lo que dices», sin 是.
 - 🟡🃏 亮 liàng [ljɑŋ˥˩] · brillante, con luz · _verbo_ · Arriba lleva la parte de arriba de 高, recortada. 很亮 «hay mucha luz».
 - ✅🃏 看起来 kànqǐlai [kʰan˥˩ tɕʰi˧˩˧ laɪ] · parecer (por el aspecto) · _verbo_ · Lo que se ve por fuera: 她看起来很年轻 «parece muy joven». Palabra a palabra: 看 «mirar» + 起来 «al ponerse a»: «al mirarla, resulta…».
 - ✅🃏 认真 rènzhēn [ʐən˥˩ ʈʂən˥] · serio, aplicado (que se toma las cosas en serio) · _adjetivo_
@@ -57,9 +57,13 @@
 - ✅🃏 老 lǎo [lɑʊ˧˩˧] · viejo, mayor · _adjetivo_ · Para cosas, sin problema: 这个电脑很老了. Para personas suena brusco: mejor 年纪大了 «ya es mayor».
 - ✅🃏 远 yuǎn [ɥœn˧˩˧] · lejos · _adjetivo_ · Lo contrario es 近 jìn «cerca»: 你家远吗？ «¿está lejos tu casa?» —不远，很近 «no, está cerca».
 - ✅🃏 坏 huài [xwaɪ˥˩] · malo; estropeado, roto · _adjetivo_ · Con 了, que algo se ha estropeado: 我的手机坏了 «se me ha roto el móvil».
-- ✅🃏 一定 yídìng [i˧˥ tiŋ˥˩] · seguro, sin falta · _adverbio_ · Delante del verbo: 我一定来 «vengo seguro». 你一定要来！ «¡tienes que venir sin falta!». · Bajo un techo 宀, todo está fijo en su sitio: 一定, «seguro, sin falta». · 不一定 «no necesariamente, depende»: la respuesta prudente. 他一定很累 «seguro que está cansado».
+- ✅🃏 一定 yídìng [i˧˥ tiŋ˥˩] · seguro, sin falta · _adverbio_ · Delante del verbo: 我一定来 «vengo seguro». 你一定要来！ «¡tienes que venir sin falta!». · Bajo un techo 宀, todo está fijo en su sitio: 一定, «seguro, sin falta». · 不一定 «no necesariamente, depende»: la respuesta prudente. 他一定很累 «seguro que está cansado». · 💡 我一定来 es «vengo seguro». Para «me encargo yo»: 我来 + verbo (我来付钱 «pago yo») o, más tranquilizador, 我会处理的 «descuida, me encargo».
 - ✅🃏 笑 xiào [ɕjɑʊ˥˩] · reír, sonreír · _verbo_
 - ✅🃏 更 gèng [kɤŋ˥˩] · más (todavía) · _adverbio_ · 更 + adjetivo o verbo: «aún más». 更多 «más cantidad»: 我想学习更多知识 «quiero aprender más cosas».
+- ✅🃏 有的 yǒude [joʊ˧˩˧ tɤ] · algunos, unos (… otros) · _pronombre_ · Casi siempre de dos en dos: 有的人喜欢茶，有的人喜欢咖啡 «a unos les gusta el té y a otros el café».
+- ✅🃏 白色 báisè [paɪ˧˥ sɤ˥˩] · blanco (el color) · _sustantivo_
+- ✅🃏 绿色 lǜsè [ly˥˩ sɤ˥˩] · verde · _sustantivo_
+- ✅🃏 病 bìng [piŋ˥˩] · enfermedad; enfermar · _sustantivo_ · 他病了 «se ha puesto enfermo»: con 了, porque es un cambio. También 生病.
 
 ## 大, 太 y 天
 
@@ -169,6 +173,22 @@ La misma sílaba: 小 se hunde; 笑 cae.
 - 元 yuán · sube; sin 辶
 - 远 yuǎn · se hunde; con 辶 «andar»
 
+## 一样, 一定, 一起 y 医生: las de yi
+
+Empiezan igual al oído; las separa la segunda sílaba.
+
+- 一样 yíyàng · 样 yàng «forma»: de una misma forma
+- 一定 yídìng · 定 dìng «fijo»: fijado, sin falta
+- 一起 yīqǐ · 起 qǐ «levantarse»: a la vez
+- 医生 yīshēng · yī, en primer tono: no es 一, es 医 «curar»
+
+## 更 y 能
+
+Riman en -eng; uno sube el grado, el otro es poder.
+
+- 更 gèng · delante de un adjetivo, sube el grado: 更好, 更多
+- 能 néng · delante de un verbo: 我能去, 你能说慢一点吗？
+
 ## Frases
 
 - ✅🃏 他很高。 · tā hěn gāo · Él es alto.
@@ -249,3 +269,12 @@ La misma sílaba: 小 se hunde; 笑 cae.
 - ✅🃏 他多高？ · tā duō gāo · ¿Cuánto mide?
 - ✅🃏 你太忙了。 · nǐ tài máng le · Estás demasiado ocupado.
 - ✅🃏 不一定。 · bù yídìng · No necesariamente.
+- ✅🃏 有的人喜欢茶，有的人喜欢咖啡。 · yǒude rén xǐhuan chá yǒude rén xǐhuan kāfēi · A unos les gusta el té, y a otros el café.
+- ✅🃏 这个跟那个一样。 · zhè ge gēn nà ge yíyàng · Este es igual que aquel.
+- ✅🃏 我跟你一样高。 · wǒ gēn nǐ yíyàng gāo · Soy igual de alto que tú.
+- ✅🃏 我们不一样。 · wǒmen bù yíyàng · Somos distintos.
+- ✅🃏 我也一样。 · wǒ yě yíyàng · Yo igual.
+- ✅🃏 这两个一样吗？ · zhè liǎng ge yíyàng ma · ¿Estos dos son iguales?
+- ✅🃏 我一定跟你一起去。 · wǒ yídìng gēn nǐ yìqǐ qù · Seguro que voy contigo.
+- ✅🃏 你是最好的！ · nǐ shì zuìhǎo de · ¡Eres el mejor!
+- ✅🃏 他病了。 · tā bìng le · Se ha puesto enfermo.

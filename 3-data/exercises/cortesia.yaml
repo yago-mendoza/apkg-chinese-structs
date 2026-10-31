@@ -2479,7 +2479,7 @@ exercises:
     targets: [w.mingbai, w.dong]
     skills: [comprehension, discrimination]
     prompt: {text: '我明白了 y 我懂了: ¿qué cambia?'}
-    answer: {meaning: 'Casi nada: los dos son «ya lo entiendo». 明白 es captar lo que alguien quiere decir; 懂, algo que hay que saber descifrar, como un idioma: 我听不懂.'}
+    answer: {meaning: 'Casi nada. 明白了: «ah, ya lo pillo», se te aclara de golpe. 懂了: lo comprendes por dentro, como un idioma: 我听不懂.'}
     comments: []
   - id: x.choice.shide-hotel
     added: '2026-10-26'
@@ -2537,6 +2537,7 @@ exercises:
     targets: [s.wo-lai-bang-ni]
     context: [w.wo, w.lai, w.bang, w.ni]
     skills: [production, speaking]
+    also: [s.wo-bang-ni-ba]
     prompt: {text: 'Dilo en chino, en voz alta: «Deja, que te ayudo.»'}
     answer: {meaning: 'Deja, que te ayudo.'}
     comments: []
@@ -2550,4 +2551,90 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Ya lo hago yo.»'}
     answer: {meaning: Ya lo hago yo.}
+    comments: []
+  - id: x.nuance.bang-bangmang
+    added: '2026-10-31'
+    lang: es
+    type: nuance
+    targets: [w.bang, w.bangmang]
+    skills: [comprehension, discrimination]
+    prompt: {text: '帮我 y 帮个忙: ¿qué cambia?'}
+    answer: {meaning: '帮我: ayudarme a mí. 帮个忙: echar una mano. 帮忙 ya lleva su objeto: nunca 帮忙我.'}
+    comments: []
+  - id: x.nuance.zhidao-dong
+    added: '2026-10-31'
+    lang: es
+    type: nuance
+    targets: [w.zhidao, w.dong]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我知道 y 我懂: ¿qué cambia?'}
+    answer: {meaning: '知道: sabes algo, un dato (我知道他的名字). 懂: lo entiendes por dentro (我懂你的意思).'}
+    comments: []
+  - id: x.listen.wo-zhao-ren
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.wo-zhao-ren
+    targets: [s.wo-zhao-ren]
+    context: [e.nihao, w.wo, w.zhao, w.ren]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Hola, busco a una persona.'}
+    comments: []
+  - id: x.produce.wo-zhao-ren
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-zhao-ren
+    targets: [s.wo-zhao-ren]
+    context: [e.nihao, w.wo, w.zhao, w.ren]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hola, busco a una persona.»'}
+    answer: {meaning: 'Hola, busco a una persona.'}
+    comments: []
+  - id: x.listen.dlg-zhao-ren
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.dlg-zhao-ren
+    targets: [s.dlg-zhao-ren]
+    context: [e.nihao, w.wo, w.zhao, w.ren, w.ta.he, w.jiao, w.shenme, w.mingzi, w.mengyichen, w.qing, e.shaodeng, w.zhu.live,
+      w.zai.at, w.num.si, w.num.er, w.num.liu, w.fangjian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—Hola, busco a una persona. —¿Cómo se llama? —Se llama Mèng Yìchén. —Un momento: está en la habitación
+        426.'}
+    comments: []
+  - id: x.produce.yao-wo-bang-ni-ma
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.yao-wo-bang-ni-ma
+    targets: [s.yao-wo-bang-ni-ma]
+    context: [w.yao, w.wo, w.bang, w.ni, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Quieres que te ayude?»'}
+    answer: {meaning: '¿Quieres que te ayude?'}
+    comments: []
+  - id: x.listen.ni-xiang-rang-wo-bang-ni-ma
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.ni-xiang-rang-wo-bang-ni-ma
+    targets: [s.ni-xiang-rang-wo-bang-ni-ma]
+    context: [w.ni, w.xiang, w.rang, w.wo, w.bang, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Quieres que te ayude?'}
+    comments: []
+  - id: x.produce.wo-bang-ni-ba
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-bang-ni-ba
+    targets: [s.wo-bang-ni-ba]
+    context: [w.wo, w.bang, w.ni, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Te ayudo.»'}
+    answer: {meaning: Te ayudo.}
     comments: []

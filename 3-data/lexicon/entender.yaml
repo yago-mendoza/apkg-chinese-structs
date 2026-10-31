@@ -19,9 +19,11 @@ entries:
     hanzi: 懂
     pinyin: dǒng
     meaning: {es: 'entender, comprender', en: to understand}
+    accept_cards: 'el matiz 知道 / 懂 que pediste'
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Solo es verbo: 我懂了 «ya lo entiendo»; 听不懂 «no lo entiendo (al oírlo)». 明白 es lo mismo, y además puede ser adjetivo, «claro»: 很明白 «muy claro».'}
+      - {date: '2026-10-31', kind: mnemonic, original: 'pon para el signo de döng de comprender que es como... nose, dificl ponerle una mnemotenica. lo ocnfundo con el xihuan un poco', private: false, text: '懂: el corazón 忄, de pie a la izquierda, y 董 dǒng, que da el sonido: entender de corazón. 喜 de 喜欢 no lleva nada a su izquierda.'}
   - id: w.yisi
     use: say
     role: content
@@ -138,6 +140,7 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 记 «apuntar en la memoria» + 得 «lograr». 你还记得我吗？ «¿te acuerdas de mí?». Lo contrario, 忘记.'}
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'El 得 de 记得 es parte del verbo: no es «recordar bien». 记 es «registrar»: 笔记 «apuntes», 记住 «quedarse con algo».'}
   - id: w.wangji
     use: say
     role: content
@@ -174,6 +177,7 @@ entries:
     kind: word
     hanzi: 哦
     pinyin: ò
+    tts: 'o 4'
     meaning: {es: '¡ah!, ya veo', en: 'oh, I see'}
     connection: {kind: sound, with: [我], text: '我 wǒ da el sonido a 哦 ò: la boca 口 dice «¡oh!».'}
     use_reason: 'interjección de la clase (哦，你属什么？); la lista la pone en HSK 7, pero se oye en cualquier conversación'
@@ -209,3 +213,14 @@ entries:
     source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-23', text: 'Como 看到: 听 «escuchar» + 到 «llegar». 你听到了吗？ «¿lo has oído?».'}
+  - id: g.jiao-tones
+    kind: group
+    basis: soundalike
+    title: '叫, 教 y 脚: los jiao'
+    explanation: Solo los separa el tono.
+    members:
+      - {cue: '4.º tono, baja fuerte: 我叫孟逸辰', ref: w.jiao}
+      - {cue: '1.er tono, alto y plano: 老师教我们', ref: w.jiao.teach}
+      - {cue: '3.er tono, se hunde: 我的脚', ref: w.jiao.foot}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments: []

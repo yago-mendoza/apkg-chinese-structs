@@ -191,3 +191,26 @@ sentences:
       - {text: ！}
     translation: {es: '¡Qué calor!', en: 'It is so hot!'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.jintian-gen-zuotian-yiyang-leng
+    use: say
+    kind: example
+    segments:
+      - {pinyin: jīntiān, ref: w.jintian, text: 今天}
+      - {pinyin: gēn, ref: w.gen, text: 跟}
+      - {pinyin: zuótiān, ref: w.zuotian, text: 昨天}
+      - {pinyin: yíyàng, ref: w.yiyang, text: 一样}
+      - {pinyin: lěng, ref: w.leng, text: 冷}
+      - {text: 。}
+    translation: {en: Today is as cold as yesterday., es: Hoy hace tanto frío como ayer.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.waimian-haishi-hen-leng
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wàimiàn, ref: w.waimian, text: 外面}
+      - {pinyin: háishi, ref: w.haishi, text: 还是}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: lěng, ref: w.leng, text: 冷}
+      - {text: 。}
+    translation: {en: It is still very cold outside., es: Fuera sigue haciendo mucho frío.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}

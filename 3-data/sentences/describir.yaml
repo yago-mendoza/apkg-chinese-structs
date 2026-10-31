@@ -502,6 +502,7 @@ sentences:
   - id: s.dlg-yifu-zhen-haokan
     use: hear
     kind: example
+    speakers: [A, B]
     segments:
       - {text: 这, ref: w.zhe, pinyin: 'zhè'}
       - {text: 件, ref: w.jian.cl, pinyin: 'jiàn'}
@@ -835,6 +836,7 @@ sentences:
   - id: s.dlg-ni-juede-zhege-zenmeyang
     use: hear
     kind: example
+    speakers: [A, B, A]
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 觉得, ref: w.juede, pinyin: 'juéde'}
@@ -929,3 +931,110 @@ sentences:
       - {text: 。}
     translation: {es: 'No necesariamente.', en: 'Not necessarily.'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.youde-ren-xihuan-cha
+    use: say
+    kind: example
+    segments:
+      - {pinyin: yǒude, ref: w.youde, text: 有的}
+      - {pinyin: rén, ref: w.ren, text: 人}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: chá, ref: w.cha, text: 茶}
+      - {text: ，}
+      - {pinyin: yǒude, ref: w.youde, text: 有的}
+      - {pinyin: rén, ref: w.ren, text: 人}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: kāfēi, ref: w.kafei, text: 咖啡}
+      - {text: 。}
+    translation: {en: 'Some people like tea, others like coffee.', es: 'A unos les gusta el té, y a otros el café.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+  - id: s.zhege-gen-nage-yiyang
+    use: say
+    kind: example
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: gēn, ref: w.gen, text: 跟}
+      - {pinyin: nà, ref: w.na.that, text: 那}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: yíyàng, ref: w.yiyang, text: 一样}
+      - {text: 。}
+    translation: {en: This one is the same as that one., es: Este es igual que aquel.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-gen-ni-yiyang-gao
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: gēn, ref: w.gen, text: 跟}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: yíyàng, ref: w.yiyang, text: 一样}
+      - {pinyin: gāo, ref: w.gao, text: 高}
+      - {text: 。}
+    translation: {en: I am as tall as you., es: Soy igual de alto que tú.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.women-bu-yiyang
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒmen, ref: w.women, text: 我们}
+      - {pinyin: bù, ref: w.bu, text: 不}
+      - {pinyin: yíyàng, ref: w.yiyang, text: 一样}
+      - {text: 。}
+    translation: {en: We are different., es: Somos distintos.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-ye-yiyang
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yě, ref: w.ye, text: 也}
+      - {pinyin: yíyàng, ref: w.yiyang, text: 一样}
+      - {text: 。}
+    translation: {en: Same here., es: Yo igual.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.zhe-liang-ge-yiyang-ma
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: liǎng, ref: w.liang, text: 两}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: yíyàng, ref: w.yiyang, text: 一样}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Are these two the same?', es: '¿Estos dos son iguales?'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-yiding-gen-ni-yiqi-qu
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yídìng, ref: w.yiding, text: 一定}
+      - {pinyin: gēn, ref: w.gen, text: 跟}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: yìqǐ, ref: w.yiqi, sandhi: true, text: 一起}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {text: 。}
+    translation: {en: I will definitely go with you., es: Seguro que voy contigo.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.ni-shi-zuihao-de
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: zuìhǎo, ref: w.zuihao, text: 最好}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {text: ！}
+    translation: {en: You are the best!, es: ¡Eres el mejor!}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.ta-bing-le
+    use: say
+    kind: example
+    segments:
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {pinyin: bìng, ref: w.bing, text: 病}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: 。}
+    translation: {en: He is ill., es: Se ha puesto enfermo.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}

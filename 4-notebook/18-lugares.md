@@ -28,7 +28,7 @@
 - ✅🃏 回去 huíqu [xweɪ˧˥ tɕʰy] · volver (allí) · _verbo_ · 回 «volver» + 去 «hacia allí»: volver alejándose de quien habla. 我要回去了 «tengo que volver». 回来 es volver hacia aquí.
 - ✅🃏 那边 nàbiān [na˥˩ pjɛn˥] · allí, por allí · _pronombre_ · Palabra a palabra: 那 «ese, aquel» + 边 «lado»: «aquel lado». 洗手间在那边 «el baño está por allí».
 - ✅🃏 这边 zhèbiān [ʈʂɤ˥˩ pjɛn˥] · aquí, por aquí · _pronombre_ · Palabra a palabra: 这 «este» + 边 «lado». 这边请 «por aquí, por favor», lo que dice quien te acompaña a la mesa.
-- ✅🃏 洗手间 xǐshǒujiān [ɕi˧˩˧ ʂoʊ˧˩˧ tɕjɛn˥] · baño, aseo · _sustantivo_ · Palabra a palabra: 洗 «lavar» + 手 «mano» + 间 «sala»: «la sala de lavarse las manos». Es la forma educada, la de restaurantes y centros comerciales. En casas y hoteles se lee 卫生间 [HSK 3]; en la calle, 厕所 [HSK 6]. · En las puertas, 男 «hombres» y 女 «mujeres».
+- ✅🃏 洗手间 xǐshǒujiān [ɕi˧˩˧ ʂoʊ˧˩˧ tɕjɛn˥] · baño, aseo · _sustantivo_ · Palabra a palabra: 洗 «lavar» + 手 «mano» + 间 «sala»: «la sala de lavarse las manos». Es la forma educada, la de restaurantes y centros comerciales. En casas y hoteles se lee 卫生间 [HSK 3]; en la calle, 厕所 [HSK 6]. · En las puertas, 男 «hombres» y 女 «mujeres». · Palabra a palabra: 洗 «lavar» + 手 «mano» + 间 «cuarto»: el cuarto para lavarse las manos, el aseo.
 - ✅🃏 下车 xià chē [ɕja˥˩ ʈʂʰɤ˥] · bajarse (de un vehículo) · _verbo_ · Palabra a palabra: 下 «bajar» + 车 «coche»: bajarse del taxi, del autobús o del tren. 我在这里下车 «me bajo aquí».
 - ✅🃏 医院 yīyuàn [i˥ ɥœn˥˩] · hospital · _sustantivo_ · 医 «medicina» + 院 «patio, recinto»; el mismo 医 de 医生.
 - ✅🃏 回国 huíguó [xweɪ˧˥ kwɔ˧˥] · volver a su país · _verbo_ · Palabra a palabra: 回 «volver» + 国 «país». Del país de quien habla: 他明年回国 «vuelve a su país el año que viene».
@@ -42,6 +42,10 @@
 - ✅🃏 走路 zǒulù [tsoʊ˧˩˧ lu˥˩] · andar, ir andando · _verbo_ · Palabra a palabra: 走 «andar» + 路 «camino». 我们走路去吧 «vamos andando».
 - 🟡🃏 推 tuī [tʰweɪ˥] · empujar · _verbo_ · Una mano 扌 intenta empujar la estantería de cabezas 隹. · 推 tuī: 扌 «mano» da el sentido y 隹 el sonido, el mismo que en 谁 shéi.
 - 🟡🃏 拉 lā [la˥] · tirar (de algo) · _verbo_
+- ✅🃏 下 xià [ɕja˥˩] · abajo, debajo · _verbo_ · 楼下 «abajo, en la planta de abajo»; 下车 «bajar del coche». Lo contrario es 上: 楼上, 上车.
+- ✅🃏 站 zhàn [ʈʂan˥˩] · estación, parada · _verbo_ · 地铁站 «estación de metro», 车站 «estación, parada». Como verbo es «estar de pie».
+- ✅🃏 汽车 qìchē [tɕʰi˥˩ ʈʂʰɤ˥] · coche · _sustantivo_ · Palabra a palabra: 汽 «vapor» + 车 «vehículo». Al hablar, muchas veces basta 车: 我开车 «conduzco».
+- ✅🃏 外面 wàimiàn [waɪ˥˩ mjɛn˥˩] · fuera · _sustantivo_ · 你在外面吗？ «¿estás fuera?». 外 suelto casi no se usa: al hablar, 外面.
 
 ## Aquí, allí, ¿dónde?
 
@@ -105,3 +109,6 @@ En las puertas: 推 «empuje» y 拉 «tire». Los dos llevan la mano 扌 a la i
 - ✅🃏 我在家吃饭。 · wǒ zài jiā chīfàn · Como en casa.
 - ✅🃏 你在这里等我。 · nǐ zài zhèlǐ děng wǒ · Espérame aquí.
 - ✅🃏 我们去哪里吃饭？去那里吧。那里太远了，我们在这里吃吧。 · wǒmen qù nǎlǐ chīfàn qù nàlǐ ba nàlǐ tài yuǎn le wǒmen zài zhèlǐ chī ba · —¿Dónde vamos a comer? —Vamos allí. —Allí está demasiado lejos; comamos aquí.
+- ✅🃏 我在楼下。 · wǒ zài lóu xià · Estoy abajo.
+- ✅🃏 地铁站在哪里？ · dìtiě zhàn zài nǎlǐ · ¿Dónde está la estación de metro?
+- ✅🃏 我没有汽车。 · wǒ méiyǒu qìchē · No tengo coche.

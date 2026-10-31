@@ -287,7 +287,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: '名字 «nombre» lleva este 字.'}
   - id: w.ci.word
-    use: hear
+    use: say
     role: content
     kind: word
     hanzi: 词
@@ -538,3 +538,89 @@ entries:
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
     comments:
       - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Bajo mi techo me quedo fijo: 定. Veo el poste y me pongo a caminar: 走. A plena luz del sol veo que sí, que es: 是.', original: 'Un poco de contraste: 定 (dìng): un techo 宀. «Bajo mi techo me quedo fijo». 走 (zǒu): una cruz 土, que puedes imaginar como un poste de caminos. «Veo el poste y me pongo a caminar». 是 (shì): un sol 日. «A plena luz veo que SÍ, ES».'}
+  - id: c.xi.joy
+    use: read
+    kind: character
+    hanzi: 喜
+    pinyin: xǐ
+    meaning: {en: joy (the one in 喜欢), es: 'alegría, gustar (el de 喜欢)'}
+    standalone: rare
+    level: 1
+    level_reason: 'se aprende en 喜欢 [HSK 1]'
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments: []
+  - id: c.ji.self
+    use: read
+    kind: character
+    hanzi: 己
+    pinyin: jǐ
+    meaning: {en: oneself (the one in 自己), es: uno mismo (el de 自己)}
+    standalone: 'no'
+    level: 2
+    level_reason: 'se aprende en 自己 [HSK 2]'
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments: []
+  - id: c.yi.already
+    use: read
+    kind: character
+    hanzi: 已
+    pinyin: yǐ
+    meaning: {en: already (the one in 已经), es: ya (el de 已经)}
+    standalone: rare
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments: []
+  - id: c.side.jin
+    use: read
+    kind: component
+    hanzi: 钅
+    pinyin: jīn
+    meaning: {en: metal (side form of 金), es: metal (forma de 金 a la izquierda)}
+    real_word: {es: '钅 es 金 «oro, metal» a la izquierda: lo llevan 钱 «dinero» y el 铁 «hierro» de 地铁. Al hablar no se dice suelto: basta reconocerlo.', hanzi: 金, pinyin: jīn}
+    level: 1
+    level_reason: 'aparece en 钱 qián «dinero» [HSK 1]'
+    accept_pinyin_mismatch: forma lateral de 金
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'En dinero y metales: 钱, 地铁 (铁), 分钟 (钟), 不错 (错).'}
+  - id: g.xi-xi
+    kind: group
+    basis: homophone
+    title: '喜 y 洗: los dos xǐ'
+    explanation: 'Suenan igual, en tercer tono; los separa el agua.'
+    members:
+      - {cue: 'el de 喜欢: arriba 士, abajo 口, sin agua', ref: c.xi.joy}
+      - {cue: 'con 氵 a la izquierda; sin ella, 先', ref: w.xi.wash}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments: []
+  - id: g.ji-yi.look
+    kind: group
+    basis: visual
+    title: 己 y 已
+    explanation: 'Casi iguales: los separa cuánto se cierra el gancho de arriba. Hay un tercero, 巳 sì [nivel 7], cerrado del todo, que casi no verás.'
+    members:
+      - {cue: 'abierto arriba: 自己, y dentro de 起', ref: c.ji.self}
+      - {cue: 'medio cerrado: 已经', ref: c.yi.already}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments: []
+  - id: g.left-sides
+    kind: group
+    basis: set
+    title: 'Piezas de la izquierda: metal, ropa, altar y vehículo'
+    explanation: 'Estrechas, a la izquierda del carácter, dicen de qué va.'
+    members:
+      - {ref: c.side.jin, cue: '钱, 地铁: arriba, un trazo inclinado como un sombrerito'}
+      - {ref: c.side.yi, cue: '裤子: dos trazos cortos abajo'}
+      - {ref: c.side.shi, cue: '电视, 礼物: un solo trazo corto abajo'}
+      - {cue: 'vehículo, estrecho: 轻 de 年轻', ref: w.che}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments: []
+  - id: g.jin-che
+    kind: group
+    basis: visual
+    title: 钅 y 车 a la izquierda
+    explanation: 'Los dos, estrechos a la izquierda, con trazos cruzados: 钱 frente a 轻.'
+    members:
+      - {cue: 'empieza con un trazo inclinado arriba, como un sombrerito: 钱', ref: c.side.jin}
+      - {cue: 'arriba un trazo recto, y el eje vertical atraviesa: 轻', ref: w.che}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments: []

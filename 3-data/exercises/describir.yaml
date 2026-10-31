@@ -2967,3 +2967,259 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «No necesariamente.»'}
     answer: {meaning: No necesariamente.}
     comments: []
+  - id: x.nuance.gengduo-duo-yidian
+    added: '2026-10-31'
+    lang: es
+    type: nuance
+    targets: [w.geng, st.duo-v-yidian]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我想学更多中文 y 我想多学一点中文: ¿qué cambia?'}
+    answer: {meaning: '更多: más cantidad (más chino). 多 + verbo + 一点: un poco más que ahora.'}
+    comments: []
+  - id: x.nuance.hen-tai
+    added: '2026-10-31'
+    lang: es
+    type: nuance
+    targets: [w.hen, w.tai]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我很忙 y 我太忙了: ¿qué cambia?'}
+    answer: {meaning: '很忙: muy ocupado, sin más. 太忙了: demasiado, te quejas; 太 casi siempre lleva 了 al final.'}
+    comments: []
+  - id: x.contrast.yiyang
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.yi-words
+    targets: [w.yiyang]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 一样, pinyin: yíyàng, meaning: 'igual, lo mismo'}
+    comments: []
+  - id: x.contrast.yiding
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.yi-words
+    targets: [w.yiding]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 一定, pinyin: yídìng, meaning: 'seguro, sin falta'}
+    comments: []
+  - id: x.contrast.geng
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.geng-neng
+    targets: [w.geng]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 更, pinyin: gèng, meaning: más (todavía)}
+    comments: []
+  - id: x.dictation.youde
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.youde]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: you3 de5, hanzi: 有的, pinyin: yǒude, meaning: 'algunos, unos (… otros)'}
+    comments: []
+  - id: x.produce.youde
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.youde]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «algunos, unos (… otros)»? Escribe el pinyin.'}
+    answer: {typed: you3 de5, hanzi: 有的, pinyin: yǒude, meaning: 'algunos, unos (… otros)'}
+    comments: []
+  - id: x.read.youde
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.youde]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 有的}
+    answer: {hanzi: 有的, pinyin: yǒude, meaning: 'algunos, unos (… otros)'}
+    comments: []
+  - id: x.tones.youde
+    added: 2026-10-31
+    lang: es
+    type: tones
+    targets: [w.youde]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 有的, pinyin: you de}
+    answer: {typed: '35', hanzi: 有的, pinyin: yǒude, meaning: 'algunos, unos (… otros)'}
+    comments: []
+  - id: x.dictation.baise
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.baise]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bai2 se4, hanzi: 白色, pinyin: báisè, meaning: blanco (el color)}
+    comments: []
+  - id: x.read.baise
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.baise]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 白色}
+    answer: {hanzi: 白色, pinyin: báisè, meaning: blanco (el color)}
+    comments: []
+  - id: x.dictation.lvse
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.lvse]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lü4 se4, hanzi: 绿色, pinyin: lǜsè, meaning: verde}
+    comments: []
+  - id: x.read.lvse
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.lvse]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 绿色}
+    answer: {hanzi: 绿色, pinyin: lǜsè, meaning: verde}
+    comments: []
+  - id: x.produce.youde-ren-xihuan-cha
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.youde-ren-xihuan-cha
+    targets: [s.youde-ren-xihuan-cha]
+    context: [w.youde, w.ren, w.xihuan, w.cha, w.kafei]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «A unos les gusta el té, y a otros el café.»'}
+    answer: {meaning: 'A unos les gusta el té, y a otros el café.'}
+    comments: []
+  - id: x.produce.zhege-gen-nage-yiyang
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.zhege-gen-nage-yiyang
+    targets: [s.zhege-gen-nage-yiyang]
+    context: [w.zhe, w.ge, w.gen, w.na.that, w.yiyang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Este es igual que aquel.»'}
+    answer: {meaning: Este es igual que aquel.}
+    comments: []
+  - id: x.produce.wo-gen-ni-yiyang-gao
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-gen-ni-yiyang-gao
+    targets: [s.wo-gen-ni-yiyang-gao]
+    context: [w.wo, w.gen, w.ni, w.yiyang, w.gao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Soy igual de alto que tú.»'}
+    answer: {meaning: Soy igual de alto que tú.}
+    comments: []
+  - id: x.produce.women-bu-yiyang
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.women-bu-yiyang
+    targets: [s.women-bu-yiyang]
+    context: [w.women, w.bu, w.yiyang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Somos distintos.»'}
+    answer: {meaning: Somos distintos.}
+    comments: []
+  - id: x.produce.wo-ye-yiyang
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-ye-yiyang
+    targets: [s.wo-ye-yiyang]
+    context: [w.wo, w.ye, w.yiyang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Yo igual.»'}
+    answer: {meaning: Yo igual.}
+    comments: []
+  - id: x.listen.zhe-liang-ge-yiyang-ma
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.zhe-liang-ge-yiyang-ma
+    targets: [s.zhe-liang-ge-yiyang-ma]
+    context: [w.zhe, w.liang, w.ge, w.yiyang, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Estos dos son iguales?'}
+    comments: []
+  - id: x.produce.wo-yiding-gen-ni-yiqi-qu
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-yiding-gen-ni-yiqi-qu
+    targets: [s.wo-yiding-gen-ni-yiqi-qu]
+    context: [w.wo, w.yiding, w.gen, w.ni, w.yiqi, w.qu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Seguro que voy contigo.»'}
+    answer: {meaning: Seguro que voy contigo.}
+    comments: []
+  - id: x.produce.ni-shi-zuihao-de
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.ni-shi-zuihao-de
+    targets: [s.ni-shi-zuihao-de]
+    context: [w.ni, w.shi, w.zuihao, w.de]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Eres el mejor!»'}
+    answer: {meaning: ¡Eres el mejor!}
+    comments: []
+  - id: x.charsound.se
+    added: 2026-10-31
+    lang: es
+    type: charsound
+    targets: [w.baise, w.lvse]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 色}
+    answer: {typed: se4, hanzi: 色, pinyin: sè, meaning: 'Sale en 白色 báisè «blanco (el color)», 绿色 lǜsè «verde».'}
+    comments: []
+  - id: x.dictation.bing
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.bing]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bing4, hanzi: 病, pinyin: bìng, meaning: enfermedad; enfermar}
+    comments: []
+  - id: x.produce.bing
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.bing]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «enfermedad; enfermar»? Escribe el pinyin.'}
+    answer: {typed: bing4, hanzi: 病, pinyin: bìng, meaning: enfermedad; enfermar}
+    comments: []
+  - id: x.read.bing
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.bing]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 病}
+    answer: {hanzi: 病, pinyin: bìng, meaning: enfermedad; enfermar}
+    comments: []
+  - id: x.produce.ta-bing-le
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.ta-bing-le
+    targets: [s.ta-bing-le]
+    context: [w.ta.he, w.bing, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Se ha puesto enfermo.»'}
+    answer: {meaning: Se ha puesto enfermo.}
+    comments: []

@@ -149,3 +149,107 @@ sentences:
       - {text: 。}
     translation: {es: 'Mañana voy a la oficina.', en: 'I am going to the office tomorrow.'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-zai-daxue-xuexi-zhongwen
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: dàxué, ref: w.daxue, text: 大学}
+      - {pinyin: xuéxí, ref: w.xuexi, text: 学习}
+      - {pinyin: Zhōngwén, ref: w.zhongwen, text: 中文}
+      - {text: 。}
+    translation: {en: I study Chinese at university., es: Estudio chino en la universidad.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+  - id: s.laoshi-jiao-women-zhongwen
+    use: say
+    kind: example
+    segments:
+      - {pinyin: lǎoshī, ref: w.laoshi, text: 老师}
+      - {pinyin: jiāo, ref: w.jiao.teach, text: 教}
+      - {pinyin: wǒmen, ref: w.women, text: 我们}
+      - {pinyin: Zhōngwén, ref: w.zhongwen, text: 中文}
+      - {text: 。}
+    translation: {en: The teacher teaches us Chinese., es: La profesora nos enseña chino.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+  - id: s.women-ban-you-shi-ge-ren
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒmen, ref: w.women, text: 我们}
+      - {pinyin: bān, ref: w.ban.class, text: 班}
+      - {pinyin: yǒu, ref: w.you.have, text: 有}
+      - {pinyin: shí, ref: w.num.shi, text: 十}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: rén, ref: w.ren, text: 人}
+      - {text: 。}
+    translation: {en: There are ten people in our class., es: En mi clase somos diez.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+  - id: s.wo-zai-zuo-zuoye
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zài, ref: w.zai.progressive, text: 在}
+      - {pinyin: zuò, ref: w.zuo.do, text: 做}
+      - {pinyin: zuòyè, ref: w.zuoye, text: 作业}
+      - {text: 。}
+    translation: {en: I am doing my homework., es: Estoy haciendo los deberes.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-zaoshang-ba-dian-qu-gongzuo
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zǎoshang, ref: w.zaoshang, text: 早上}
+      - {pinyin: bā, ref: w.ba, text: 八}
+      - {pinyin: diǎn, ref: w.dian.oclock, text: 点}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: gōngzuò, ref: w.gongzuo, text: 工作}
+      - {text: 。}
+    translation: {en: I go to work at eight in the morning., es: Voy a trabajar a las ocho de la mañana.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-xiang-xue-geng-duo-zhongwen-suoyi
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: xué, ref: w.xue, text: 学}
+      - {pinyin: gèng, ref: w.geng, text: 更}
+      - {pinyin: duō, ref: w.duo, text: 多}
+      - {pinyin: Zhōngwén, ref: w.zhongwen, text: 中文}
+      - {text: ，}
+      - {pinyin: suǒyǐ, ref: w.suoyi, text: 所以}
+      - {pinyin: měi, ref: w.mei.each, text: 每}
+      - {pinyin: tiān, ref: w.tian, text: 天}
+      - {pinyin: duō, ref: w.duo, text: 多}
+      - {pinyin: xué, ref: w.xue, text: 学}
+      - {pinyin: yìdiǎn, ref: w.yidian, sandhi: true, text: 一点}
+      - {text: 。}
+    translation: {en: 'I want to learn more Chinese, so every day I study a bit more.', es: 'Quiero aprender más chino, así que cada día estudio un poco más.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-xiang-duo-xue-yidian-zhongwen
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: duō, ref: w.duo, text: 多}
+      - {pinyin: xué, ref: w.xue, text: 学}
+      - {pinyin: yìdiǎn, ref: w.yidian, sandhi: true, text: 一点}
+      - {pinyin: Zhōngwén, ref: w.zhongwen, text: 中文}
+      - {text: 。}
+    translation: {en: I want to learn a bit more Chinese., es: Quiero aprender un poco más de chino.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-hui-chuli-de
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: huì, ref: w.hui.can, text: 会}
+      - {pinyin: chǔlǐ, ref: w.chuli, text: 处理}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {text: 。}
+    translation: {en: 'Do not worry, I will handle it.', es: 'Descuida, me encargo yo.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}

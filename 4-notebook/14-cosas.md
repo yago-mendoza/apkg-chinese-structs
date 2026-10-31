@@ -8,14 +8,14 @@
 - ✅🃏 看 kàn [kʰan˥˩] · mirar; leer · _verbo_ · Una mano 手 sobre el ojo 目, como quien se hace visera para mirar a lo lejos.
 - ✅🃏 看见 kànjiàn [kʰan˥˩ tɕjɛn˥˩] · ver (llegar a ver) · _verbo_ · 看 es la acción de mirar; 见 añade el resultado: llegar a ver.
 - ✅🃏 看看 kànkan [kʰan˥˩ kʰan] · echar un vistazo · _verbo_ · Repetir el verbo lo suaviza: «mirar un poco», no «mirar dos veces».
-- ✅🃏 这 zhè [ʈʂɤ˥˩] · este, esto · _pronombre_
+- ✅🃏 这 zhè [ʈʂɤ˥˩] · este, esto · _pronombre_ · 💡 Cosas frente a lugares: 这个 / 那个 / 哪个, una cosa o persona; 这里 / 那里 / 哪里, un lugar. Truco: si puedes poner 个, es una cosa; si puedes poner 在 delante, un lugar.
 - ✅🃏 那 nà [na˥˩] · ese, eso; aquel · _pronombre_ · Al hablar se oye mucho nèige: es 那个 contraído de 那一个, lo mismo que nàge.
 - ✅🃏 走 zǒu [tsoʊ˧˩˧] · irse; andar · _verbo_ · 走 es irse o andar, sin decir adónde: 我走了 «me voy». Para ir a un sitio, 去: 我去商店. Y no es 坐 zuò «sentarse». · 走 se parece a 是, pero arriba, en vez del sol 日, alguien balancea los brazos 土 al andar.
 - ✅🃏 了 le [lɤ] · partícula: algo ya pasó o ha cambiado · _partícula_ · Al final de la frase marca un cambio o algo ya ocurrido: 我走了 «me voy», 下雨了 «se ha puesto a llover», 我错了 «me equivoqué». · 了 al final: algo que pasa ahora y sigue así a partir de ahora. · Al final de la frase marca un cambio: 我渴了 «me ha entrado sed», 我不吃了 «ya no como más», 快八点了 «ya casi son las ocho», 我会说中文了 «ya sé hablar chino». No es un tiempo pasado.
 - ✅🃏 错 cuò [tsʰwɔ˥˩] · equivocado; error · _adjetivo_ · 错误 cuòwù «error» [HSK 3] y 误会 wùhuì «malentendido» [HSK 4] son más formales; hablando basta 错. · cuò: la u apenas suena, se desliza hacia la o. · Estar equivocado: 我错了 «me he equivocado» (también vale para «he cometido un error»), 你错了 «te equivocas». Detrás de un verbo, «mal»: 你说错了 «lo has dicho mal». 不错 bú cuò [HSK 2] es un elogio, «no está mal, bastante bien». · Un concurso: el presentador golpea una campana de metal 钅 delante del marcador 昔 y grita «¡cuò!», con un tono que cae de golpe, como el cuarto: ¡error! · Un arma de asta 钅 sobre una rejilla metálica 昔: en la fábrica se equivocaron con ese lote.
 - ✅🃏 说 shuō [ʂwɔ˥] · hablar, decir · _verbo_ · 讠 «palabra» a la izquierda, como en 请 y en 认识.
 - ✅🃏 怎么 zěnme [tsən˧˩˧ mɤ] · cómo · _interrogativo_ · 怎么 + verbo pregunta la manera: 怎么说？ «¿cómo se dice?», 怎么吃？ «¿cómo se come?». · 怎么 pregunta por la manera o por la situación; 什么, por una cosa. Por eso «¿qué hago?» es 怎么办 y «¿qué te pasa?», 怎么了: no preguntas por un objeto.
-- ✅🃏 能 néng [nɤŋ˧˥] · poder (ser capaz) · _verbo_ · 熊 xióng «oso» es 能 con cuatro patas 灬 debajo: un animal que lo puede todo.
+- ✅🃏 能 néng [nɤŋ˧˥] · poder (ser capaz) · _verbo_ · 熊 xióng «oso» es 能 con cuatro patas 灬 debajo: un animal que lo puede todo. · 💡 Con el mismo verbo: 我会开车 «sé conducir» (lo aprendí); 我今天不能开车 «hoy no puedo» (he bebido); 我可以开车吗？ «¿me dejas?».
 - ✅🃏 和 hé [xɤ˧˥] · y, con · _conjunción_ · 和 solo une nombres: 咖啡和巧克力, 我和你. Dos frases o dos adjetivos no se unen con 和: 他很高，也很帅. · 禾 hé «cereal» da el sonido y 口 «boca» aporta el sentido. El sentido antiguo es «armonía, concordia»; de dos cosas que armonizan pasó a unir: A 和 B. · El cereal 禾 llega a la boca 口: comida compartida, armonía, estar juntos.
 - ✅🃏 没 méi [meɪ˧˥] · no (no pasó; no hay) · _adverbio_
 - ✅🃏 过 guo [kwɔ] · haber (hecho alguna vez) · _partícula_ · Detrás del verbo: lo has hecho alguna vez. 我去过北京 «he estado en Pekín»; 你看过这个电影吗？ «¿has visto esta película?». · 过 es atravesar: un puente o una experiencia. Detrás del verbo es como un sello en el pasaporte: 我去过北京.
@@ -23,7 +23,7 @@
 - ✅🃏 坐 zuò [tswɔ˥˩] · sentarse; ir en (un vehículo) · _verbo_ · 请坐 «siéntese»; 坐飞机 «ir en avión», 坐车 «ir en coche o autobús».
 - ✅🃏 进 jìn [tɕin˥˩] · entrar · _verbo_ · Pasar de fuera a dentro: 请进 «pase». 进来 «entrar hacia aquí», 进去 «entrar hacia allí».
 - ✅🃏 别 bié [pjɛ˧˥] · no (hagas): prohibir · _adverbio_
-- ✅🃏 听 tīng [tʰiŋ˥] · escuchar · _verbo_ · 口 «boca» a la izquierda. 听音乐 «escuchar música».
+- ✅🃏 听 tīng [tʰiŋ˥] · escuchar · _verbo_ · 口 «boca» a la izquierda. 听音乐 «escuchar música». · 💡 见 detrás de 听 o 看 dice que lo consigues: 听见 «oír» (te llega el sonido), 看见 «ver». Con 不 en medio, no: 听不见 «no oigo», 看不见 «no veo». Y 懂 es entenderlo: 听不懂 «lo oigo, pero no lo entiendo».
 - ✅🃏 生气 shēngqì [ʂɤŋ˥ tɕʰi˥˩] · enfadarse; enfadado · _adjetivo_ · 生 «producir» + 气 «aire, ánimo»: echar humo. 他生气了 «se ha enfadado».
 - ✅🃏 疼 téng [tʰɤŋ˧˥] · doler · _verbo_ · 疒 «enfermedad» por fuera. 好疼！ «¡qué daño!»: 好 delante de un adjetivo es «qué…», muy coloquial.
 - ✅🃏 难 nán [nan˧˥] · difícil · _adjetivo_ · Con una mano 又 intentas levantar la estantería de cabezas 隹: es difícil.
@@ -48,9 +48,9 @@
 - ✅🃏 做 zuò [tswɔ˥˩] · hacer · _verbo_ · Hacer algo: 做饭 «cocinar». 你在做什么？ «¿qué estás haciendo?» es de las preguntas más útiles. · 做 lleva 亻 «persona»: una persona haciendo algo. 坐 «sentarse», que suena igual, son dos personas 人 sentadas en el suelo 土.
 - ✅🃏 出来 chūlai [ʈʂʰu˥ laɪ] · salir (hacia aquí) · _verbo_ · 出 «salir» + 来 «hacia aquí»: sales hacia donde está quien habla. 快出来！ «¡sal ya!», si te esperan fuera. 出去 es salir alejándose.
 - ✅🃏 怎么办 zěnmebàn [tsən˧˩˧ mɤ pan˥˩] · ¿qué hago?, ¿qué hacemos? · _pronombre_ · Palabra a palabra: 怎么 «cómo» + 办 «resolver, hacer»: «¿cómo lo arreglo?». 我忘了，怎么办？ «se me ha olvidado, ¿qué hago?».
-- ✅🃏 洗澡 xǐzǎo [ɕi˧˩˧ tsɑʊ˧˩˧] · ducharse, bañarse · _verbo_
+- ✅🃏 洗澡 xǐzǎo [ɕi˧˩˧ tsɑʊ˧˩˧] · ducharse, bañarse · _verbo_ · Mucha agua: los dos hanzi llevan 氵.
 - ✅🃏 事情 shìqing [ʂɨ˥˩ tɕʰiŋ] · asunto, cosa (que pasa o hay que hacer) · _sustantivo_
-- ✅🃏 到 dào [tɑʊ˥˩] · llegar; llegar a (una cifra, un sitio) · _verbo_ · 我还不到二十八岁 «aún no tengo veintiocho»: 不到 es «no llegar a». · 到: a la izquierda, un barco de vela 至; a la derecha, 刂, otra vela más cerca de la cámara. · 到 es «llegar», a un sitio o a una cifra: 我到了 «ya he llegado». «Salir» es 出: 出去.
+- ✅🃏 到 dào [tɑʊ˥˩] · llegar; llegar a (una cifra, un sitio) · _verbo_ · 我还不到二十八岁 «aún no tengo veintiocho»: 不到 es «no llegar a». · 到: a la izquierda, un barco de vela 至; a la derecha, 刂, otra vela más cerca de la cámara. · 到 es «llegar», a un sitio o a una cifra: 我到了 «ya he llegado». «Salir» es 出: 出去. · 💡 去 es ir hacia allí; 回, volver a donde es tuyo (casa, tu país); 到, llegar: 我去超市, 我回家, 我到家了. 到 no es «salir»: salir es 出, 出去.
 - ✅🃏 开 kāi [kʰaɪ˥] · abrir; encender; conducir (开车) · _verbo_ · Poner algo en marcha: 开门 «abrir la puerta», 开车 «conducir», 开会 «tener una reunión». Lo contrario, 关 guān «cerrar, apagar» [HSK 1]. · 开: un monigote que echa a andar, con la piernecita de la izquierda doblada: empezar. · 开 es abrir, no entrar: 开门 «abrir la puerta», 进门 «entrar por la puerta». También 开始 «empezar», 打开 «abrir (algo)» y 离开 «marcharse».
 - ✅🃏 必须 bìxū [pi˥˩ ɕy˥] · tener que (sin remedio) · _adverbio_ · Más fuerte que 得 děi: una obligación sin excusa, de normas y avisos. 你明天必须来 «mañana tienes que venir sí o sí». Hablando, 得 es lo normal.
 - ✅🃏 这些 zhèxiē [ʈʂɤ˥˩ ɕjɛ˥] · estos, estas · _pronombre_ · Plural de 这: 这些是我的书 «estos son mis libros». No lleva clasificador.
@@ -304,3 +304,5 @@ Solo el tono y la boca 口 los separan: 那 señala, 哪 pregunta.
 - ✅🃏 你喜欢哪些？ · nǐ xǐhuan nǎxiē · ¿Cuáles te gustan?
 - ✅🃏 那些是我的。 · nàxiē shì wǒ de · Esos son míos.
 - ✅🃏 这是我买的书。 · zhè shì wǒ mǎi de shū · Este es el libro que compré.
+- ✅🃏 你试一下。 · nǐ shì yíxià · Pruébalo.
+- ✅🃏 我想先洗澡。 · wǒ xiǎng xiān xǐzǎo · Quiero ducharme primero.

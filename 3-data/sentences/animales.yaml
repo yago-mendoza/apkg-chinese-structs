@@ -76,3 +76,90 @@ sentences:
       - {text: ？}
     translation: {es: '¿Tienes gato?', en: 'Do you have a cat?'}
     source: {origin: inbox, batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
+  - id: s.mao-he-laoshu-bu-shi-pengyou
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: māo, ref: w.mao, text: 猫}
+      - {pinyin: hé, ref: w.he.and, text: 和}
+      - {pinyin: lǎoshǔ, ref: w.laoshu, text: 老鼠}
+      - {pinyin: bú, ref: w.bu, sandhi: true, text: 不}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: péngyou, ref: w.pengyou, text: 朋友}
+      - {text: 。}
+    translation: {en: Cats and mice are not friends., es: El gato y el ratón no son amigos.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: diapositivas 2026-10-30, origin: class}
+  - id: s.laohu-hen-da
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: lǎohǔ, ref: w.laohu, text: 老虎}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: dà, ref: w.da, text: 大}
+      - {text: 。}
+    translation: {en: Tigers are big., es: El tigre es muy grande.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: diapositivas 2026-10-30, origin: class}
+  - id: s.she-shi-lvse-de
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: shé, ref: w.she, text: 蛇}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: lǜsè, ref: w.lvse, text: 绿色}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {text: 。}
+    translation: {en: The snake is green., es: La serpiente es verde.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: diapositivas 2026-10-30, origin: class}
+  - id: s.xiao-tuzi-shi-baise-de
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: xiǎo, ref: w.xiao.small, text: 小}
+      - {pinyin: tùzi, ref: w.tuzi, text: 兔子}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: báisè, ref: w.baise, text: 白色}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {text: 。}
+    translation: {en: The little rabbit is white., es: El conejito es blanco.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: diapositivas 2026-10-30, origin: class}
+  - id: s.xiao-ji-he-xiao-gou-dou-hen-keai
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: xiǎo, ref: w.xiao.small, text: 小}
+      - {pinyin: jī, ref: w.ji.chicken, text: 鸡}
+      - {pinyin: hé, ref: w.he.and, text: 和}
+      - {pinyin: xiǎo, ref: w.xiao.small, text: 小}
+      - {pinyin: gǒu, ref: w.gou, text: 狗}
+      - {pinyin: dōu, ref: w.dou, text: 都}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: kě'ài, ref: w.keai, text: 可爱}
+      - {text: 。}
+    translation: {en: Chicks and puppies are very cute., es: Los pollitos y los perritos son muy monos.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: diapositivas 2026-10-30, origin: class}
+  - id: s.zhe-zhi-tuzi-zhen-keai
+    use: say
+    kind: example
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: zhī, ref: w.zhi.cl, text: 只}
+      - {pinyin: tùzi, ref: w.tuzi, text: 兔子}
+      - {pinyin: zhēn, ref: w.zhen, text: 真}
+      - {pinyin: kě'ài, ref: w.keai, text: 可爱}
+      - {text: ！}
+    translation: {en: This rabbit is really cute!, es: ¡Qué mono es este conejo!}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: deberes 2026-10-30, origin: class}
+  - id: s.ni-juede-zhe-zhi-mao-keai-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: juéde, ref: w.juede, text: 觉得}
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: zhī, ref: w.zhi.cl, text: 只}
+      - {pinyin: māo, ref: w.mao, text: 猫}
+      - {pinyin: kě'ài, ref: w.keai, text: 可爱}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Do you think this cat is cute?', es: '¿Te parece mono este gato?'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: deberes 2026-10-30, origin: class}

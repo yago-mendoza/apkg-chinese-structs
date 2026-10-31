@@ -119,3 +119,25 @@ entries:
     source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-23', text: 'Cantar una canción es 唱歌 chànggē; el mismo 唱 que en tus deberes del 13 (chàng, con -ng).'}
+  - id: w.daqiu
+    use: say
+    role: content
+    kind: word
+    hanzi: 打球
+    pinyin: dǎqiú
+    meaning: {en: to play ball, es: jugar a la pelota}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'Palabra a palabra: 打 «golpear» + 球 «pelota». Vale para el baloncesto o el tenis; el fútbol es 踢球 tīqiú [HSK 3], «patear la pelota».'}
+  - id: w.changge
+    use: hear
+    role: content
+    kind: word
+    hanzi: 唱歌
+    pinyin: chànggē
+    meaning: {en: to sing, es: cantar}
+    connection: {kind: sound, text: '哥 gē da el sonido a 歌 gē; 欠, la boca abierta, canta.', with: [哥]}
+    use_reason: '«cantar» para decir ya es 唱; 唱歌 se oye en cuanto se habla de qué te gusta'
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'Palabra a palabra: 唱 «cantar» + 歌 «canción». Como 吃饭, lleva su objeto dentro: 唱一首歌 «cantar una canción».'}

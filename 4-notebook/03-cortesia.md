@@ -17,13 +17,13 @@
 - ✅🃏 不好意思 bù hǎoyìsi [pu˥˩ xɑʊ˧˩˧ i˥˩ sɯ] · perdona; qué vergüenza; me sabe mal · _expresión_ · Palabra a palabra: 不 «no» + 好意思 «tener cara para algo»: «no tengo cara», qué apuro. · Para una molestia pequeña: llegar tarde, pasar, interrumpir, pedir algo. Es muy cotidiano, también entre jóvenes, y no suena formal.
 - ✅🃏 对不起 duìbuqǐ [tweɪ˥˩ pu tɕʰi˧˩˧] · lo siento · _verbo_ · 对得起 es estar a la altura con alguien; 对不起, no estarlo: te he fallado, perdón. · 对不起 empieza por 对 «sí, correcto»: al pedir perdón juntas las manos, como quien afirma y reza. El que empieza por 不 «no», 不客气, es la mano que dice que no: «no hay de qué».
 - ✅🃏 没关系 méi guānxi [meɪ˧˥ kwan˥ ɕi] · no pasa nada · _expresión_ · La respuesta a 对不起 o a 不好意思: «no pasa nada». · Palabra a palabra: 没 «no hay» + 关系 [HSK 3] «relación»: no tiene que ver, no importa. Para quitar importancia a algo que ha pasado; para aceptar algo que te piden, 没问题. · Truco: «¡eso no tiene relación con nada importante!». · 关 «cerrar» y 系 «atar»: lo que está cerrado y atado a otra cosa tiene 关系, «relación». 关 sale solo en 关门 «cerrar la puerta».
-- ✅🃏 不客气 bù kèqi [pu˥˩ kʰɤ˥˩ tɕʰi] · de nada · _expresión_ · La respuesta a 谢谢. Literalmente, «no hagas cumplidos». · Palabra a palabra: 客气 [HSK 5] es tener cumplidos, como un invitado 客; 不客气, «no hace falta cumplido». Su 气 qi no es el 起 qǐ de 对不起: son caracteres distintos.
+- ✅🃏 不客气 bù kèqi [pu˥˩ kʰɤ˥˩ tɕʰi] · de nada · _expresión_ · La respuesta a 谢谢. Literalmente, «no hagas cumplidos». · Palabra a palabra: 客气 [HSK 5] es tener cumplidos, como un invitado 客; 不客气, «no hace falta cumplido». Su 气 qi no es el 起 qǐ de 对不起: son caracteres distintos. · 客 kè es «invitado»: 不客气, «no hace falta tanta ceremonia». El invitado o el cliente es 客人 kèrén [HSK 2]; como con 商人 shāngrén [HSK 2], sin 人 no se usa.
 - ✅🃏 帮 bāng [pɑŋ˥] · ayudar (a alguien) · _verbo_ · Con la persona detrás: 帮我 «ayúdame». Es la forma corriente al hablar. · Una ciudad 阝 tan próspera 丰 que reparte telas 巾 a quien las necesita: eso es ayudar.
 - ✅🃏 帮忙 bāngmáng [pɑŋ˥ mɑŋ˧˥] · echar una mano · _verbo_ · No lleva a quién detrás: 他来帮忙 «viene a echar una mano». «Ayúdame» es 帮我.
 - ✅🃏 帮助 bāngzhù [pɑŋ˥ ʈʂu˥˩] · ayudar; ayuda · _verbo_ · Más formal que 帮, y también sustantivo: 谢谢你的帮助 «gracias por tu ayuda».
 - ✅🃏 你真棒 nǐ zhēn bàng [ni˧˩˧ ʈʂən˥ pɑŋ˥˩] · ¡eres genial!, ¡qué bien lo haces! · _expresión_ · Palabra a palabra: 你 «tú» + 真 «de verdad» + 棒 «estupendo»: «eres estupendo de verdad».
 - ❌ 哪里哪里 nǎlǐ nǎlǐ [na˧˩˧ li˧˩˧ na˧˩˧ li˧˩˧] · ¡qué va!, no es para tanto (respuesta modesta a un elogio) · _expresión_ · Respuesta modesta a 你真棒. Suena algo tradicional: hoy, sobre todo entre jóvenes, es más común contestar 谢谢.
-- ✅🃏 再说一遍 zài shuō yí biàn [tsaɪ˥˩ ʂwɔ˥ i˧˥ pjɛn˥˩] · ¿puedes repetirlo?, dilo otra vez · _expresión_ · Palabra a palabra: 再 «otra vez» + 说 «decir» + 一遍 «una vez entera»: «dilo otra vez entero». · Lo que se dice en clase para pedir que repitan. Para leer otra vez, 再读一遍 zài dú yí biàn.
+- ✅🃏 再说一遍 zài shuō yí biàn [tsaɪ˥˩ ʂwɔ˥ i˧˥ pjɛn˥˩] · ¿puedes repetirlo?, dilo otra vez · _expresión_ · Palabra a palabra: 再 «otra vez» + 说 «decir» + 一遍 «una vez entera»: «dilo otra vez entero». · Lo que se dice en clase para pedir que repitan. Para leer otra vez, 再读一遍 zài dú yí biàn. · 💡 遍 es «una vez entera»: 再说一遍 «dilo otra vez, todo». 再说一次 también vale, pero para pedir que te repitan, 遍 es lo natural.
 - ✅🃏 知道 zhīdao [ʈʂɨ˥ tɑʊ] · saber · _verbo_ · 我不知道 «no lo sé». · 知 suelto (不知) suena literario: al hablar, 知道.
 - ✅🃏 真的吗 zhēn de ma [ʈʂən˥ tɤ ma] · ¿de verdad? · _expresión_ · Palabra a palabra: 真的 «de verdad» + 吗: «¿de verdad?».
 - ✅🃏 忘 wàng [wɑŋ˥˩] · olvidar · _verbo_ · 我忘了 «se me ha olvidado»: 了 dice que ya ha pasado. · Arriba, una papelera; abajo, el corazón 心, que en chino también es la mente: tirar algo de la cabeza a la papelera. En 忙 «ocupado» la papelera está al lado del corazón 忄.
@@ -157,3 +157,8 @@ Cada una contesta a una cosa distinta: a unas gracias, a una disculpa o a un fav
 - ✅🃏 我来！ · wǒ lái · ¡Ya me encargo yo!
 - ✅🃏 我来帮你。 · wǒ lái bāng nǐ · Deja, que te ayudo.
 - ✅🃏 我自己来。 · wǒ zìjǐ lái · Ya lo hago yo.
+- ✅🃏 你好，我找人。 · nǐ hǎo wǒ zhǎo rén · Hola, busco a una persona.
+- ✅🃏 你好，我找人。他叫什么名字？他叫孟逸辰。请稍等，他住在四二六房间。 · nǐ hǎo wǒ zhǎo rén tā jiào shénme míngzi tā jiào Mèng Yìchén qǐng shāoděng tā zhù zài sì èr liù fángjiān · —Hola, busco a una persona. —¿Cómo se llama? —Se llama Mèng Yìchén. —Un momento: está en la habitación 426.
+- ✅🃏 要我帮你吗？ · yào wǒ bāng nǐ ma · ¿Quieres que te ayude?
+- ✅🃏 你想让我帮你吗？ · nǐ xiǎng ràng wǒ bāng nǐ ma · ¿Quieres que te ayude?
+- ✅🃏 我帮你吧。 · wǒ bāng nǐ ba · Te ayudo.

@@ -1600,3 +1600,114 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: '—¿Vas solo o con amigos? —Voy con unos amigos.'}
     comments: []
+  - id: x.nuance.yigeren-ziji
+    added: '2026-10-31'
+    lang: es
+    type: nuance
+    targets: [e.yigeren, w.ziji]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我一个人去 y 我自己去: ¿qué cambia?'}
+    answer: {meaning: '一个人: solo, sin compañía. 自己: yo mismo, sin que nadie lo haga por mí.'}
+    comments: []
+  - id: x.comprehension.vivo-solo
+    added: '2026-10-31'
+    lang: es
+    type: comprehension
+    targets: [s.wo-yi-ge-ren-zhu, s.wo-zhu-zai-san-lou, s.wo-zaoshang-qi-dian-qilai, s.wo-zaoshang-ba-dian-qu-gongzuo]
+    script: hanzi
+    question: {es: '¿A qué hora sale hacia el trabajo?'}
+    skills: [reading, comprehension]
+    prompt: {text: 'Lee el texto en voz alta, de principio a fin; luego abre la pregunta.'}
+    answer: {meaning: A las ocho de la mañana (se levanta a las siete).}
+    comments: []
+  - id: x.contrast.yiqi
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.yi-words
+    targets: [w.yiqi]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 一起, pinyin: yīqǐ, meaning: juntos}
+    comments: []
+  - id: x.dictation.yigeren
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [e.yigeren]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi2 ge5 ren2, hanzi: 一个人, pinyin: yí ge rén, meaning: 'solo, sin compañía'}
+    comments: []
+  - id: x.produce.yigeren
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [e.yigeren]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «solo, sin compañía»? Escribe el pinyin.'}
+    answer: {typed: yi2 ge5 ren2, hanzi: 一个人, pinyin: yí ge rén, meaning: 'solo, sin compañía'}
+    comments: []
+  - id: x.read.yigeren
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [e.yigeren]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 一个人}
+    answer: {hanzi: 一个人, pinyin: yí ge rén, meaning: 'solo, sin compañía'}
+    comments: []
+  - id: x.tones.yigeren
+    added: 2026-10-31
+    lang: es
+    type: tones
+    targets: [e.yigeren]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 一个人, pinyin: yi ge ren}
+    answer: {typed: '252', hanzi: 一个人, pinyin: yí ge rén, meaning: 'solo, sin compañía'}
+    comments: []
+  - id: x.produce.wo-yi-ge-ren-zhu
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-yi-ge-ren-zhu
+    targets: [s.wo-yi-ge-ren-zhu]
+    context: [w.wo, e.yigeren, w.zhu.live]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Vivo solo.»'}
+    answer: {meaning: Vivo solo.}
+    comments: []
+  - id: x.listen.ni-yi-ge-ren-zhu-ma
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.ni-yi-ge-ren-zhu-ma
+    targets: [s.ni-yi-ge-ren-zhu-ma]
+    context: [w.ni, e.yigeren, w.zhu.live, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Vives solo?'}
+    comments: []
+  - id: x.produce.wo-ziji-qu
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-ziji-qu
+    targets: [s.wo-ziji-qu]
+    context: [w.wo, w.ziji, w.qu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Voy yo mismo.»'}
+    answer: {meaning: Voy yo mismo.}
+    comments: []
+  - id: x.listen.wo-yi-ge-ren-zhu-jintian-xiang-chuqu
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.wo-yi-ge-ren-zhu-jintian-xiang-chuqu
+    targets: [s.wo-yi-ge-ren-zhu-jintian-xiang-chuqu]
+    context: [w.wo, e.yigeren, w.zhu.live, w.jintian, w.xiang, w.chuqu, w.yixia]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Vivo solo, y hoy quiero salir un rato.'}
+    comments: []

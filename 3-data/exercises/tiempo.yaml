@@ -2735,3 +2735,395 @@ exercises:
     prompt: {text: 'Suenan dos. ¿Cuál es xiàn, la 1.ª o la 2.ª?', audio: true}
     answer: {meaning: 'La 1.ª: xiàn 现, el de 现在 «ahora». La 2.ª era xiān 先 «primero».'}
     comments: []
+  - id: x.pair.xian-xian-an
+    added: '2026-10-31'
+    lang: es
+    type: listen
+    targets: [w.xian.first]
+    pair:
+      - {hanzi: 西安, meaning: Xi'an (la ciudad), pinyin: Xī'ān}
+      - {hanzi: 先, meaning: primero, pinyin: xiān}
+    skills: [listening, discrimination]
+    prompt: {audio: true, text: 'Suenan dos. ¿Cuál es xiān, una sola sílaba, la 1.ª o la 2.ª?'}
+    answer: {meaning: 'La 2.ª: xiān 先 «primero». La 1.ª era Xī''ān 西安, dos sílabas: la ciudad.'}
+    comments: []
+  - id: x.compose.volviendo-a-casa
+    added: '2026-10-31'
+    lang: es
+    type: compose
+    targets: [s.wo-zai-hui-jia-de-lushang, s.wo-kuai-dao-jia-le, s.wo-hai-mei-dao-jia]
+    words: [w.huijia, w.lushang, w.kuai.fast, w.dao.reach, w.hai.still]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. Vuelves del trabajo en metro y te llama tu pareja: ¿por dónde vas?'}
+    answer: {meaning: 'Tres formas, según por dónde vayas.'}
+    comments: []
+  - id: x.dictation.hou.after
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.hou.after]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hou4, hanzi: 后, pinyin: hòu, meaning: después (de); detrás}
+    comments: []
+  - id: x.produce.hou.after
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.hou.after]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «después (de); detrás»? Escribe el pinyin.'}
+    answer: {typed: hou4, hanzi: 后, pinyin: hòu, meaning: después (de); detrás}
+    comments: []
+  - id: x.read.hou.after
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.hou.after]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 后}
+    answer: {hanzi: 后, pinyin: hòu, meaning: después (de); detrás}
+    comments: []
+  - id: x.dictation.qilai
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.qilai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: qi3 lai5, hanzi: 起来, pinyin: qǐlai, meaning: levantarse}
+    comments: []
+  - id: x.produce.qilai
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.qilai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «levantarse»? Escribe el pinyin.'}
+    answer: {typed: qi3 lai5, hanzi: 起来, pinyin: qǐlai, meaning: levantarse}
+    comments: []
+  - id: x.read.qilai
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.qilai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 起来}
+    answer: {hanzi: 起来, pinyin: qǐlai, meaning: levantarse}
+    comments: []
+  - id: x.tones.qilai
+    added: 2026-10-31
+    lang: es
+    type: tones
+    targets: [w.qilai]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 起来, pinyin: qi lai}
+    answer: {typed: '35', hanzi: 起来, pinyin: qǐlai, meaning: levantarse}
+    comments: []
+  - id: x.dictation.shui.sleep
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.shui.sleep]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shui4, hanzi: 睡, pinyin: shuì, meaning: dormir}
+    comments: []
+  - id: x.produce.shui.sleep
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.shui.sleep]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «dormir»? Escribe el pinyin.'}
+    answer: {typed: shui4, hanzi: 睡, pinyin: shuì, meaning: dormir}
+    comments: []
+  - id: x.read.shui.sleep
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.shui.sleep]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 睡}
+    answer: {hanzi: 睡, pinyin: shuì, meaning: dormir}
+    comments: []
+  - id: x.dictation.huidao
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.huidao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hui2 dao4, hanzi: 回到, pinyin: huídào, meaning: 'volver a, llegar de vuelta'}
+    comments: []
+  - id: x.produce.huidao
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.huidao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «volver a, llegar de vuelta»? Escribe el pinyin.'}
+    answer: {typed: hui2 dao4, hanzi: 回到, pinyin: huídào, meaning: 'volver a, llegar de vuelta'}
+    comments: []
+  - id: x.read.huidao
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.huidao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 回到}
+    answer: {hanzi: 回到, pinyin: huídào, meaning: 'volver a, llegar de vuelta'}
+    comments: []
+  - id: x.dictation.lushang
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.lushang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lu4 shang5, hanzi: 路上, pinyin: lùshang, meaning: 'por el camino, de camino'}
+    comments: []
+  - id: x.produce.lushang
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.lushang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «por el camino, de camino»? Escribe el pinyin.'}
+    answer: {typed: lu4 shang5, hanzi: 路上, pinyin: lùshang, meaning: 'por el camino, de camino'}
+    comments: []
+  - id: x.read.lushang
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.lushang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 路上}
+    answer: {hanzi: 路上, pinyin: lùshang, meaning: 'por el camino, de camino'}
+    comments: []
+  - id: x.tones.lushang
+    added: 2026-10-31
+    lang: es
+    type: tones
+    targets: [w.lushang]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 路上, pinyin: lu shang}
+    answer: {typed: '45', hanzi: 路上, pinyin: lùshang, meaning: 'por el camino, de camino'}
+    comments: []
+  - id: x.produce.wo-yao-hui-jia-le
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-yao-hui-jia-le
+    targets: [s.wo-yao-hui-jia-le]
+    context: [w.wo, w.yao, w.huijia, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me voy ya a casa.»'}
+    answer: {meaning: Me voy ya a casa.}
+    comments: []
+  - id: x.produce.wo-zai-hui-jia-de-lushang
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-zai-hui-jia-de-lushang
+    targets: [s.wo-zai-hui-jia-de-lushang]
+    context: [w.wo, w.zai.at, w.huijia, w.de, w.lushang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estoy de camino a casa.»'}
+    answer: {meaning: Estoy de camino a casa.}
+    comments: []
+  - id: x.produce.wo-kuai-dao-jia-le
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-kuai-dao-jia-le
+    targets: [s.wo-kuai-dao-jia-le]
+    context: [w.wo, w.kuai.fast, w.dao.reach, w.jia, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ya casi estoy en casa.»'}
+    answer: {meaning: Ya casi estoy en casa.}
+    comments: []
+  - id: x.produce.wo-hai-mei-dao-jia
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-hai-mei-dao-jia
+    targets: [s.wo-hai-mei-dao-jia]
+    context: [w.wo, w.hai.still, w.mei, w.dao.reach, w.jia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Todavía no he llegado a casa.»'}
+    answer: {meaning: Todavía no he llegado a casa.}
+    comments: []
+  - id: x.produce.wo-gang-dao-jia
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-gang-dao-jia
+    targets: [s.wo-gang-dao-jia]
+    context: [w.wo, w.gang, w.dao.reach, w.jia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Acabo de llegar a casa.»'}
+    answer: {meaning: Acabo de llegar a casa.}
+    comments: []
+  - id: x.produce.wo-yijing-dao-jia-le
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-yijing-dao-jia-le
+    targets: [s.wo-yijing-dao-jia-le]
+    context: [w.wo, w.yijing, w.dao.reach, w.jia, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ya he llegado a casa.»'}
+    answer: {meaning: Ya he llegado a casa.}
+    comments: []
+  - id: x.produce.wo-hai-zai-jia
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-hai-zai-jia
+    targets: [s.wo-hai-zai-jia]
+    context: [w.wo, w.hai.still, w.zai.at, w.jia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Sigo en casa.»'}
+    answer: {meaning: Sigo en casa.}
+    comments: []
+  - id: x.produce.wo-gang-hui-dao-jia
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-gang-hui-dao-jia
+    targets: [s.wo-gang-hui-dao-jia]
+    context: [w.wo, w.gang, w.huidao, w.jia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Acabo de volver a casa.»'}
+    answer: {meaning: Acabo de volver a casa.}
+    comments: []
+  - id: x.produce.san-tian-hou-wo-qu-zhongguo
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.san-tian-hou-wo-qu-zhongguo
+    targets: [s.san-tian-hou-wo-qu-zhongguo]
+    context: [w.num.san, w.tian, w.hou.after, w.wo, w.qu, w.zhongguo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Dentro de tres días voy a China.»'}
+    answer: {meaning: Dentro de tres días voy a China.}
+    comments: []
+  - id: x.produce.wo-zaoshang-qi-dian-qilai
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-zaoshang-qi-dian-qilai
+    targets: [s.wo-zaoshang-qi-dian-qilai]
+    context: [w.wo, w.zaoshang, w.num.qi, w.dian.oclock, w.qilai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me levanto a las siete de la mañana.»'}
+    answer: {meaning: Me levanto a las siete de la mañana.}
+    comments: []
+  - id: x.produce.wo-xiang-shui-yixia
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-xiang-shui-yixia
+    targets: [s.wo-xiang-shui-yixia]
+    context: [w.wo, w.xiang, w.shui.sleep, w.yixia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero dormir un rato.»'}
+    answer: {meaning: Quiero dormir un rato.}
+    comments: []
+  - id: x.produce.wo-mingtian-gen-ta-jianmian
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-mingtian-gen-ta-jianmian
+    targets: [s.wo-mingtian-gen-ta-jianmian]
+    context: [w.wo, w.mingtian, w.gen, w.ta.he, w.jianmian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mañana quedo con él.»'}
+    answer: {meaning: Mañana quedo con él.}
+    comments: []
+  - id: x.produce.wo-xuyao-geng-duo-shijian
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-xuyao-geng-duo-shijian
+    targets: [s.wo-xuyao-geng-duo-shijian]
+    context: [w.wo, w.xuyao, w.geng, w.duo, w.shijian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Necesito más tiempo.»'}
+    answer: {meaning: Necesito más tiempo.}
+    comments: []
+  - id: x.listen.xianzai-tai-wan-le
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.xianzai-tai-wan-le
+    targets: [s.xianzai-tai-wan-le]
+    context: [w.xianzai, w.tai, w.wan, w.le, w.wo, w.mingtian, w.zai.again, w.qu, w.kan, w.ni]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Ya es demasiado tarde: iré a verte mañana.'}
+    comments: []
+  - id: x.produce.ni-zuihao-jintian-qu
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.ni-zuihao-jintian-qu
+    targets: [s.ni-zuihao-jintian-qu]
+    context: [w.ni, w.zuihao, w.jintian, w.qu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mejor ve hoy.»'}
+    answer: {meaning: Mejor ve hoy.}
+    comments: []
+  - id: x.listen.dlg-dao-jia-le-ma
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.dlg-dao-jia-le-ma
+    targets: [s.dlg-dao-jia-le-ma]
+    context: [w.ni, w.dao.reach, w.jia, w.le, w.ma, w.hai.still, w.mei, w.wo, w.kuai.fast, w.hao, w.lushang, w.xiaoxin]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Ya has llegado a casa? —Todavía no, ya casi estoy. —Vale, ¡ten cuidado por el camino!'}
+    comments: []
+  - id: x.charsound.mian
+    added: 2026-10-31
+    lang: es
+    type: charsound
+    targets: [w.jianmian, w.waimian]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 面}
+    answer: {typed: mian4, hanzi: 面, pinyin: miàn, meaning: 'Sale en 见面 jiànmiàn «verse, quedar (con alguien)», 外面 wàimiàn «fuera».'}
+    comments: []
+  - id: x.contrast.ban
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.ban-tones
+    targets: [w.ban]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 半, pinyin: bàn, meaning: y media; mitad}
+    comments: []
+  - id: x.contrast.hou.after
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.hou-tones
+    targets: [w.hou.after]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 后, pinyin: hòu, meaning: después (de); detrás}
+    comments: []
+  - id: x.contrast.shui.sleep
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.shui-tones
+    targets: [w.shui.sleep]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 睡, pinyin: shuì, meaning: dormir}
+    comments: []

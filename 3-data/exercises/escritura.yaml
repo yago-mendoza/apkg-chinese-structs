@@ -575,3 +575,52 @@ exercises:
     prompt: {text: '¿Cuál es dìng, «fijo, establecido»?'}
     answer: {hanzi: 定, pinyin: dìng, meaning: 'fijo, establecido'}
     comments: []
+  - id: x.contrast.xi.joy
+    added: '2026-10-31'
+    lang: es
+    type: contrast
+    group: g.xi-xi
+    targets: [c.xi.joy]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es xǐ, el de 喜欢 «gustar»?'}
+    answer: {hanzi: 喜, meaning: alegría (el de 喜欢), pinyin: xǐ}
+    comments: []
+  - id: x.contrast.ji.self
+    added: '2026-10-31'
+    lang: es
+    type: contrast
+    group: g.ji-yi.look
+    targets: [c.ji.self]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es el de 自己?'}
+    answer: {hanzi: 己, meaning: 'uno mismo: el gancho abierto arriba', pinyin: jǐ}
+    comments: []
+  - id: x.contrast.yi.already
+    added: '2026-10-31'
+    lang: es
+    type: contrast
+    group: g.ji-yi.look
+    targets: [c.yi.already]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es el de 已经?'}
+    answer: {hanzi: 已, meaning: 'ya: el gancho medio cerrado', pinyin: yǐ}
+    comments: []
+  - id: x.contrast.side.jin
+    added: '2026-10-31'
+    lang: es
+    type: contrast
+    group: g.jin-che
+    targets: [c.side.jin]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es el metal, el de 钱?'}
+    answer: {hanzi: 钅, meaning: metal (componente), pinyin: jīn}
+    comments: []
+  - id: x.produce.ci.word
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.ci.word]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «palabra»? Escribe el pinyin.'}
+    answer: {typed: ci2, hanzi: 词, pinyin: cí, meaning: palabra}
+    comments: []

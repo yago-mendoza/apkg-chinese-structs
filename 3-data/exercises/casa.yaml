@@ -1002,3 +1002,133 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: '—¿Dónde está mi móvil? —¡Aquí! —¿Este es tuyo? —No, el mío es aquel.'}
     comments: []
+  - id: x.pair.shu-chu
+    added: '2026-10-31'
+    lang: es
+    type: listen
+    targets: [w.shu]
+    pair:
+      - {hanzi: 出, meaning: salir (el de 出生), pinyin: chū}
+      - {hanzi: 书, meaning: libro, pinyin: shū}
+    skills: [listening, discrimination]
+    prompt: {audio: true, text: 'Suenan dos. ¿Cuál es shū, la 1.ª o la 2.ª?'}
+    answer: {meaning: 'La 2.ª: shū 书 «libro». La 1.ª era chū 出 «salir», el de 出生.'}
+    comments: []
+  - id: x.compose.comparar-pisos
+    added: '2026-10-31'
+    lang: es
+    type: compose
+    targets: [s.wo-de-fangjian-gen-ni-de-yiyang-da, s.zhege-gen-nage-yiyang, s.women-bu-yiyang]
+    words: [w.yiyang, w.gen, w.fangjian, w.da, w.bu]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. Un amigo que vive en el mismo edificio te enseña su piso, y lo comparáis con el tuyo.'}
+    answer: {meaning: Tres formas de comparar.}
+    comments: []
+  - id: x.dictation.lou
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.lou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lou2, hanzi: 楼, pinyin: lóu, meaning: 'edificio; planta, piso'}
+    comments: []
+  - id: x.produce.lou
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.lou]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «edificio; planta, piso»? Escribe el pinyin.'}
+    answer: {typed: lou2, hanzi: 楼, pinyin: lóu, meaning: 'edificio; planta, piso'}
+    comments: []
+  - id: x.read.lou
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.lou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 楼}
+    answer: {hanzi: 楼, pinyin: lóu, meaning: 'edificio; planta, piso'}
+    comments: []
+  - id: x.contrast.xi.wash
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.xi-xi
+    targets: [w.xi.wash]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es xǐ, «lavar»?'}
+    answer: {hanzi: 洗, pinyin: xǐ, meaning: lavar}
+    comments: []
+  - id: x.dictation.xi.wash
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.xi.wash]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xi3, hanzi: 洗, pinyin: xǐ, meaning: lavar}
+    comments: []
+  - id: x.produce.xi.wash
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.xi.wash]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «lavar»? Escribe el pinyin.'}
+    answer: {typed: xi3, hanzi: 洗, pinyin: xǐ, meaning: lavar}
+    comments: []
+  - id: x.read.xi.wash
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.xi.wash]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 洗}
+    answer: {hanzi: 洗, pinyin: xǐ, meaning: lavar}
+    comments: []
+  - id: x.produce.wo-zhu-zai-san-lou
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-zhu-zai-san-lou
+    targets: [s.wo-zhu-zai-san-lou]
+    context: [w.wo, w.zhu.live, w.zai.at, w.num.san, w.lou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Vivo en el tercer piso.»'}
+    answer: {meaning: Vivo en el tercer piso.}
+    comments: []
+  - id: x.produce.xian-xi-shou-zai-chifan
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.xian-xi-shou-zai-chifan
+    targets: [s.xian-xi-shou-zai-chifan]
+    context: [w.xian.first, w.xi.wash, w.shou.hand, w.zai.again, w.chifan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Primero lávate las manos, y luego a comer.»'}
+    answer: {meaning: 'Primero lávate las manos, y luego a comer.'}
+    comments: []
+  - id: x.produce.wo-de-fangjian-gen-ni-de-yiyang-da
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-de-fangjian-gen-ni-de-yiyang-da
+    targets: [s.wo-de-fangjian-gen-ni-de-yiyang-da]
+    context: [w.wo, w.de, w.fangjian, w.gen, w.ni, w.yiyang, w.da]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mi habitación es igual de grande que la tuya.»'}
+    answer: {meaning: Mi habitación es igual de grande que la tuya.}
+    comments: []
+  - id: x.listen.fangjian-li-tai-hei-wo-kan-bu-jian
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.fangjian-li-tai-hei-wo-kan-bu-jian
+    targets: [s.fangjian-li-tai-hei-wo-kan-bu-jian]
+    context: [w.fangjian, w.li.inside, w.tai, w.hei, w.le, w.wo, w.kan, w.bu, w.jian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'La habitación está demasiado oscura: no veo nada.'}
+    comments: []

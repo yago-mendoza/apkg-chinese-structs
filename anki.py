@@ -7,6 +7,7 @@ Uso:
     python anki.py gaps                    reparto del mazo y pendientes
     python anki.py stats [--days N]        lo que más se falla en Anki (solo lectura, solo este mazo)
     python anki.py retro [--batches N]     retrospectiva: fricciones de los últimos lotes y caja negra
+    python anki.py audit                   repaso de calidad: frases casi iguales, tarjetas repetidas, niveles a mano
     python anki.py check
     python anki.py notebook                regenera 4-notebook/ desde 3-data/
     python anki.py attic [<lote>]          el desván: lo que espera y lo que despiertan las entradas del lote
@@ -130,6 +131,8 @@ def load():
                 for item in load_yaml(path).get(key, []):
                     item["theme"] = th["id"]
                     out[key].append(item)
+    CLASSIFIERS.clear()
+    CLASSIFIERS.update(e["id"] for e in out["entries"] if pos_of(e) == "clasificador")
     return out["entries"], out["sentences"], out["exercises"]
 
 
@@ -473,6 +476,50 @@ def tone_color(html_text):
 
 
 # ---------------------------------------------------------------- consultas
+
+def sentence_shown(s):
+    """La frase como se lee en un texto (cuaderno, review): lo opcional, entre paréntesis. El audio y la comparación
+    de lo escrito usan `sentence_text`, sin paréntesis."""
+    out = ""
+    for g in s.get("segments", []):
+        out += f"({g['text']})" if g.get("optional") else g["text"]
+    return out
+
+
+def sentence_core(s):
+    """La frase sin lo opcional: otra respuesta igual de buena al escribirla."""
+    return "".join(g["text"] for g in s.get("segments", []) if not g.get("optional"))
+
+
+TURN_END = {"。", "？", "！", "?", "!"}
+
+
+def dialogue_turns(s):
+    """Un diálogo (`speakers`: quién dice cada oración, en orden) partido en turnos: [(quién, segmentos, texto,
+    traducción)]. Las oraciones seguidas de la misma persona son un turno; la traducción se parte por sus rayas
+    («—¿Vas solo? —Voy con amigos.»). Sin `speakers`, o si no cuadra, []. Review 014: «tres audios distintos, cada
+    uno con su persona, para entender que es una conversación y escucharlos uno a uno»."""
+    who = s.get("speakers") or []
+    pieces, cur = [], []
+    for g in s.get("segments", []):
+        cur.append(g)
+        if g["text"] in TURN_END:
+            pieces.append(cur)
+            cur = []
+    if cur:
+        pieces.append(cur)
+    if not who or len(who) != len(pieces):
+        return []
+    turns = []
+    for w, segs in zip(who, pieces):
+        if turns and turns[-1][0] == w:
+            turns[-1] = (w, turns[-1][1] + segs)
+        else:
+            turns.append((w, segs))
+    tr = [t.strip() for t in ((s.get("translation") or {}).get("es") or "").split("—") if t.strip()]
+    tr = tr if len(tr) == len(turns) else [""] * len(turns)
+    return [(w, segs, "".join(g["text"] for g in segs), t) for (w, segs), t in zip(turns, tr)]
+
 
 def sentence_text(s):
     return "".join(seg["text"] for seg in s.get("segments", []))
@@ -1551,7 +1598,8 @@ def cmd_notebook():
             out += ["## Vocabulario", ""]
             for e in words:
                 meaning = (e.get("meaning") or {}).get("es", "")
-                notes = " · ".join(c["text"] for c in e.get("comments", []) if c.get("private", True) is False)
+                notes = " · ".join(("💡 " if c.get("kind") == "tip" else "") + c["text"]
+                                   for c in e.get("comments", []) if c.get("private", True) is False)
                 phon = ipa(e.get("hanzi"), e.get("pinyin")) if e.get("kind") in ("word", "expression") else ""
                 out.append(f"- {mark(e, e['id'] in targeted)} {e['hanzi']} {e.get('pinyin', '')}"
                            + (f" [{phon}]" if phon else "") + f" · {meaning}"
@@ -1578,7 +1626,7 @@ def cmd_notebook():
             out.append("")
         if sents:
             out += ["## Frases", ""]
-            out += [f"- {mark(s, s['id'] in targeted)} {sentence_text(s)} · {sentence_pinyin(s)} · "
+            out += [f"- {mark(s, s['id'] in targeted)} {sentence_shown(s)} · {sentence_pinyin(s)} · "
                     f"{s['translation'].get('es', '')}" for s in sents]
             out.append("")
         (NOTEBOOK / name).write_text("\n".join(out), encoding="utf-8")
@@ -1715,6 +1763,7 @@ def required_audio(entries, sentences, exercises):
             texts.update(nuance_audio_pieces(ex, eby))
     for s in sentences:                   # toda frase puede salir como ejemplo en cualquier tarjeta
         texts.add(sentence_text(s))
+        texts.update(t[2] for t in dialogue_turns(s))   # y un diálogo, además, turno a turno
     for e in entries:
         if e.get("audio_text"):
             texts.add(e["audio_text"])
@@ -2362,6 +2411,19 @@ def validate(entries, sentences, exercises, require_audio=True):
         if "kind" in s and s["kind"] not in SENTENCE_KINDS:
             errors.append(f"{s['id']}: kind es formula (se usa tal cual en una situación) o example (enseña una palabra o "
                           f"una estructura)")
+        # Lo opcional, entre paréntesis (review 014): un trozo con su palabra, y nunca la frase entera.
+        opt = [g for g in s.get("segments", []) if g.get("optional")]
+        if any(not g.get("ref") for g in opt):
+            errors.append(f"{s['id']}: optional va en un trozo con su palabra (ref), no en la puntuación")
+        if opt and all(g.get("optional") or not g.get("ref") for g in s.get("segments", [])):
+            errors.append(f"{s['id']}: todo es opcional; algo tiene que quedar")
+        # Un diálogo turno a turno: una persona por oración, y la traducción con una raya por turno.
+        if s.get("speakers"):
+            turns = dialogue_turns(s)
+            if not turns:
+                errors.append(f"{s['id']}: speakers lleva una persona por oración (acabada en 。？！), en orden")
+            elif not all(t[3] for t in turns):
+                warnings.append(f"{s['id']}: la traducción de un diálogo lleva una raya (—) por turno")
     # Fórmula o ejemplo (docs/design.md, «Datos»): en cuanto se clasifican, ninguna frase se queda sin decidir.
     if any("kind" in s for s in sentences):
         warnings += [f"{s['id']}: frase sin kind (formula o example)" for s in sentences if "kind" not in s]
@@ -2407,6 +2469,11 @@ def validate(entries, sentences, exercises, require_audio=True):
             ref(xid, rid)
         if ex.get("sentence"):
             ref(xid, ex["sentence"])
+        # «Otras formas de decirlo» tiene que sonar distinto (review 014: «pones la misma forma de decirlo», 他 / 她).
+        own = sby.get(ex.get("sentence")) or next((sby[t] for t in ex.get("targets", []) if t in sby), None)
+        for sid in ex.get("also", []):
+            if own and sid in sby and compact(sentence_pinyin(sby[sid])) == compact(sentence_pinyin(own)):
+                warnings.append(f"{xid}: {sid} suena igual que la respuesta; no es otra forma de decirlo")
         ans = ex.get("answer") or {}
         if not (ans.get("typed") or ans.get("pinyin") or ans.get("meaning")):
             errors.append(f"{xid}: falta respuesta")
@@ -2593,6 +2660,8 @@ def validate(entries, sentences, exercises, require_audio=True):
                 errors.append(f"audio requerido sin generar: {t}")
             elif not (MEDIA / manifest[t]["file"]).exists():
                 errors.append(f"audio registrado pero ausente: {manifest[t]['file']}")
+            elif manifest[t].get("phonemes", "") != tts_signature(tts_readings(t, entries, sentences)):
+                errors.append(f"audio con la lectura fijada (tts) sin regenerar: {t}")
     return errors, warnings
 
 
@@ -2624,9 +2693,29 @@ def audio_key(text, voice):
     return AUDIO_PREFIX + hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16] + ".mp3"
 
 
-def azure_tts(text, voice, key, region):
+def tts_readings(text, entries, sentences):
+    """Los trozos de un texto con su lectura fijada para la voz (`tts` de su entrada, pinyin SAPI: «dei 3»): un
+    polífono que Azure leería con otra (得 děi, no de; 哦 ò suelto). [(trozo, lectura)], en orden; [] si no hay."""
+    fixed = {e["id"]: e["tts"] for e in entries if e.get("tts")}
+    if not fixed:
+        return []
+    for s in sentences:
+        if sentence_text(s) == text:
+            return [(g["text"], fixed.get(g.get("ref"))) for g in s["segments"]]
+    hit = next((e for e in entries if e.get("hanzi") == text and e.get("tts")), None)
+    return [(text, hit["tts"])] if hit else []
+
+
+def tts_signature(pieces):
+    """Lo que el manifiesto guarda de las lecturas fijadas: si cambia, el audio se vuelve a generar."""
+    return ";".join(f"{t}={ph}" for t, ph in pieces if ph)
+
+
+def azure_tts(text, voice, key, region, pieces=()):
+    body = "".join(f"<phoneme alphabet='sapi' ph='{html.escape(ph)}'>{html.escape(t)}</phoneme>" if ph else html.escape(t)
+                   for t, ph in pieces) if tts_signature(pieces) else html.escape(text)
     ssml = (f"<speak version='1.0' xml:lang='zh-CN'><voice name='{voice}'><break time='{AZURE_LEAD_MS}ms'/>"
-            f"<prosody rate='{audio_rate(text)}'>{html.escape(text)}</prosody></voice></speak>")
+            f"<prosody rate='{audio_rate(text)}'>{body}</prosody></voice></speak>")
     req = urllib.request.Request(
         f"https://{region}.tts.speech.microsoft.com/cognitiveservices/v1",
         data=ssml.encode("utf-8"),
@@ -2640,7 +2729,9 @@ def azure_tts(text, voice, key, region):
 def cmd_audio(dry_run):
     entries, sentences, exercises = load()
     manifest = load_manifest()
-    pending = sorted(t for t in required_audio(entries, sentences, exercises) if t not in manifest)
+    # Falta, o tiene una lectura fijada (`tts`) distinta de la que se usó al generarlo: se genera otra vez.
+    sig = {t: tts_signature(tts_readings(t, entries, sentences)) for t in required_audio(entries, sentences, exercises)}
+    pending = sorted(t for t in sig if t not in manifest or manifest[t].get("phonemes", "") != sig[t])
     print(f"Audio pendiente: {len(pending)}")
     for t in pending:
         print("  " + t)
@@ -2653,13 +2744,14 @@ def cmd_audio(dry_run):
         return 1
     MEDIA.mkdir(exist_ok=True)
     for t in pending:
-        name = audio_key(t, AZURE_VOICE)
+        pieces = tts_readings(t, entries, sentences)
+        name = audio_key(t + (f"|{sig[t]}" if sig[t] else ""), AZURE_VOICE)   # otra lectura, otro archivo
         path = MEDIA / name
         if not path.exists():
-            path.write_bytes(azure_tts(t, AZURE_VOICE, key, region))
+            path.write_bytes(azure_tts(t, AZURE_VOICE, key, region, pieces))
         manifest[t] = {"file": name, "provider": "Azure Speech", "voice": AZURE_VOICE, "rate": audio_rate(t),
                        "lead_ms": AZURE_LEAD_MS, "tier": AZURE_TIER,
-                       "date": datetime.date.today().isoformat()}
+                       "date": datetime.date.today().isoformat()} | ({"phonemes": sig[t]} if sig[t] else {})
         save_manifest(manifest)
         print(f"  ✓ {t} → {name}")
     return 0
@@ -2772,6 +2864,11 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .nightMode .note--linguistic, .night_mode .note--linguistic { background: rgba(184,137,43,.13); }
 .note--linguistic h4::before { content: "📝 "; }
 .note--note { border-style: dotted; }
+/* Para entender (review 014): la minilección, con su propio fondo; una línea la separa de la respuesta de arriba. */
+.note--tip { border-left: 4px solid #d4a017; background: rgba(255,214,102,.16); }
+.nightMode .note--tip, .night_mode .note--tip { background: rgba(212,160,23,.14); }
+.note--tip h4::before { content: "💡 "; }
+hr.split { border: 0; border-top: 2px solid var(--line); margin: 16px 0 6px; }
 .note--note h4::before { content: "✎ "; }
 /* Otras formas de decirlo y las familias (series, patrones, diagramas): otro aspecto, más abajo; lo que solo se
    parece a la vista o al oído, lo último y más apagado (review 013). */
@@ -2797,6 +2894,16 @@ hr#answer { border: 0; border-top: 1px solid var(--line); max-width: 30em; margi
 .seg .hz { font-size: 30px; }
 .box .seg .hz { font-size: 24px; }
 .gap { min-width: 1.6em; border-bottom: 3px dashed #999; }
+/* Lo opcional, entre paréntesis y algo más apagado (review 014); suena igual en el audio. */
+.seg.opt { opacity: .62; }
+/* Un diálogo, turno a turno, cada persona con su audio (review 014). */
+.turns { display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 8px; }
+.turn .who, .turn-line .who { font: 700 14px/1 Menlo, Consolas, monospace; color: var(--muted); margin-right: 8px; }
+.turn-line { padding: 8px 0; } .turn-line + .turn-line { border-top: 1px solid var(--line); }
+.seg.opt .py::before, .seg.opt .hz::before { content: "("; } .seg.opt .py::after, .seg.opt .hz::after { content: ")"; }
+/* Los clasificadores, con un recuadro dentro de la línea, como un atajo de teclado (review 014). */
+.seg.cl .hz { border: 1px solid var(--line); border-radius: 6px; padding: 0 3px; background: var(--panel);
+              box-shadow: inset 0 -2px 0 var(--line); }
 /* Alinear hanzi y pinyin: un subrayado gris, alterno entre palabras; el color es del tono. */
 .c0, .c2, .c4 { --c: rgba(31,26,22,.32); } .c1, .c3 { --c: rgba(31,26,22,.12); }
 .nightMode .c0, .nightMode .c2, .nightMode .c4, .night_mode .c0, .night_mode .c2, .night_mode .c4 { --c: rgba(236,236,236,.36); }
@@ -2884,7 +2991,7 @@ setTimeout(function () {
   if (typed === null || typed.trim() === '') return;
   var alts = text('acs-exp-alt') ? text('acs-exp-alt').split('|') : [];
   var ok = /[\\u3400-\\u9fff]/.test(typed)
-    ? typed.replace(PUNCT, '') === text('acs-exp-hz').replace(PUNCT, '') && text('acs-exp-hz') !== ''
+    ? [text('acs-exp-hz')].concat(alts).some(function (a) { return a !== '' && typed.replace(PUNCT, '') === a.replace(PUNCT, ''); })
     : [text('acs-exp-py') || text('acs-expected')].concat(alts).some(function (a) { return norm(typed) === norm(a); });
   out.className = ok ? 'acs-ok' : 'acs-bad';
   out.textContent = (ok ? '✓ ' : '✗ ') + typed;
@@ -2908,15 +3015,21 @@ def esc(s):
     return html.escape(str(s)) if s is not None else ""
 
 
-def render_sentence(s, gap=None, show_pinyin=True, gap_after=None):
+CLASSIFIERS = set()   # ids de las entradas que son clasificadores; lo llena load() (render_sentence no recibe el mazo)
+
+
+def render_sentence(s, gap=None, show_pinyin=True, gap_after=None, segments=None):
     parts, color = [], 0
     blank = '<span class="seg gap"><span class="py">&nbsp;</span><span class="hz">&nbsp;</span></span>'
-    for seg in s["segments"]:
+    for seg in segments if segments is not None else s["segments"]:
         if gap and seg.get("ref") == gap:
             parts.append(blank)
             continue
         cls = f"seg c{color % 5}" if seg.get("pinyin") else "seg"
         color += bool(seg.get("pinyin"))
+        # Lo que se puede quitar sin cambiar el sentido, entre paréntesis (review 014: «lo opcional, entre
+        # paréntesis»; el audio lo dice igual). Los clasificadores, con su recuadro, para verlos de un vistazo.
+        cls += " opt" * bool(seg.get("optional")) + " cl" * (seg.get("ref") in CLASSIFIERS)
         py = esc(seg.get("pinyin", "")) if show_pinyin else "&nbsp;"
         parts.append(f'<span class="{cls}"><span class="py">{py}</span><span class="hz">{esc(seg["text"])}</span></span>')
         if gap_after and seg.get("ref") == gap_after:     # un sitio vacío: a veces lo que va ahí es nada
@@ -3172,6 +3285,12 @@ def card_fields(ex, eby, sby, manifest, media_files):
         # las dos, una tras otra, y se pregunta cuál es cuál; detrás, las dos con su audio para volver a compararlas.
         prompt_audio = " ".join(f'<span class="pair-n">{i}</span>{sound(it["hanzi"], manifest, media_files)}'
                                 for i, it in enumerate(ex["pair"], 1))
+    turns = dialogue_turns(sent) if sent and ex["type"] == "listen" else []
+    if turns and prompt.get("audio"):
+        # Un diálogo, turno a turno: cada persona con su audio, para oírlo como una conversación (review 014).
+        prompt_audio = '<div class="turns">' + "".join(
+            f'<div class="turn"><span class="who">🗣️ {esc(w)}</span>{sound(text, manifest, media_files)}</div>'
+            for w, _, text, _ in turns) + "</div>"
     if prompt.get("audio") and not prompt_audio:
         # Solo ocurre con --allow-missing-audio: que la tarjeta no parezca rota.
         prompt_audio = '<div class="task">(audio pendiente)</div>'
@@ -3210,12 +3329,18 @@ def card_fields(ex, eby, sby, manifest, media_files):
                        f'<span class="vs-py">{esc(it["pinyin"])}</span><span class="vs-gl">{esc(it.get("meaning", ""))}</span>'
                        f'{sound(it["hanzi"], manifest, media_files)}</div>' for i, it in enumerate(ex["pair"], 1))
         meaning = ans.get("meaning")
+    elif turns:
+        back = "".join(f'<div class="turn-line"><span class="who">🗣️ {esc(w)}</span>{render_sentence(sent, segments=segs)}'
+                       f'<div>{esc(tr)}</div>{sound(text, manifest, media_files)}</div>' for w, segs, text, tr in turns)
+        meaning = None if all(t[3] for t in turns) else ans.get("meaning")
     elif sent:
         back = render_sentence(sent)
         meaning = sent.get("translation", {}).get(lang) if ex["type"] == "cloze" else ans.get("meaning")
     else:
         back = f'<div class="hanzi">{esc(ans.get("hanzi", ""))}</div><div class="pinyin">{esc(ans.get("pinyin", ""))}</div>'
-        meaning = ans.get("meaning")
+        # El sonido de un hanzi suelto: la respuesta es la sílaba; dónde sale va en su recuadro, no mezclado con ella
+        # (review 014: «en esta card se mezcla explicación con respuesta en el panel»).
+        meaning = None if ex["type"] == "charsound" else ans.get("meaning")
         if ex["type"] == "nuance":                # una explicación con chino: cada trozo con su pinyin
             meaning = annotate_pinyin(meaning, eby, sby)
             # Y cada palabra que compara, en su fila con su audio, todas igual (review 011: «faltan sonidos y las
@@ -3342,9 +3467,14 @@ def card_fields(ex, eby, sby, manifest, media_files):
             and first.get("hanzi") == ans.get("hanzi"):
         back += f'<div class="legend pos">{esc(POS_LABEL[pos_of(first)])}</div>'
     if ex["type"] == "charsound":
+        # Cada palabra con una frase suya (review 014: «le falta un ejemplo para ilustrar el 洗澡, o lo del baño»).
+        def one_example(w):
+            sid = next(iter(examples_for({"id": ex["id"] + w, "targets": [w]}, sby, eby)), None)
+            return (f'<div class="vs-ex">{render_sentence(sby[sid])}<div>{esc(sby[sid]["translation"].get(lang))}</div>'
+                    f'{sound(sentence_text(sby[sid]), manifest, media_files)}</div>') if sid else ""
         add(1, "<h4>Dónde sale</h4>" + "".join(
             f"<div class=\"example\"><span class=\"hz\">{esc(eby[w]['hanzi'])}</span> {esc(eby[w].get('pinyin'))} · "
-            f"{esc((eby[w].get('meaning') or {}).get(lang, ''))}{sound(eby[w]['hanzi'], manifest, media_files)}</div>"
+            f"{esc((eby[w].get('meaning') or {}).get(lang, ''))}{sound(eby[w]['hanzi'], manifest, media_files)}{one_example(w)}</div>"
             for w in ex.get("targets", []) if w in eby))
     examples = [] if ex["type"] in ("pattern", "charsound", "compose") else examples_for(ex, sby, eby)
     if examples:
@@ -3378,11 +3508,14 @@ def card_fields(ex, eby, sby, manifest, media_files):
         comments += [c for c in eby.get(tid, {}).get("comments", [])
                      if ex["type"] != "nuance" or c.get("kind") in ("teacher", "mnemonic")]
     labels = {"mnemonic": "Mnemotecnia", "teacher": "En clase", "linguistic": "Uso y significado", "note": "Apunte", "usage": "Uso real",
-              "character": "El carácter", "sound": "Cómo suena"}
+              "character": "El carácter", "sound": "Cómo suena", "tip": "Para entender"}
     # Cada bloque en su sitio, siempre el mismo (review 011: «los bloques se apilan sin orden ni concierto»): lo de
     # clase, luego la imagen para recordar, cómo suena y las notas; el análisis del carácter, junto a sus caracteres.
     # «Uso real» (review 012): cómo se dice de verdad en la calle (机票 más que 飞机票; 吃饭了吗 es un saludo).
-    rank = {"teacher": 3.0, "mnemonic": 3.1, "sound": 3.2, "usage": 3.25, "linguistic": 3.3, "note": 3.4, "character": 5.9}
+    # «Para entender» (review 014: «recuadros informativos teóricos, como las mnemotecnias»): la minilección que antes
+    # solo estaba en el review, la primera de la ayuda, justo debajo de la línea que la separa de la respuesta.
+    rank = {"tip": HELP_RANK, "teacher": 3.0, "mnemonic": 3.1, "sound": 3.2, "usage": 3.25, "linguistic": 3.3, "note": 3.4,
+            "character": 5.9}
     # La teoría de pronunciación no sale en las tarjetas (docs/goal.md): de una entrada p., solo sus pistas de sonido.
     ptheory = {id(c) for t in note_targets if t.startswith("p.") for c in eby.get(t, {}).get("comments", [])
                if c.get("kind") != "sound"}
@@ -3428,14 +3561,36 @@ def card_fields(ex, eby, sby, manifest, media_files):
         exp_py = exp_hz = ""
     if exp_py or exp_hz:
         # Otras respuestas igual de buenas (`answer.accept`, review 013: 忘 y 忘记 para «olvidar»): cualquiera vale.
-        alt = "|".join(str(a) for a in ans.get("accept") or [])
-        back = (f'<span id="acs-exp-py" style="display:none">{esc(exp_py)}</span>'
-                f'<span id="acs-exp-hz" style="display:none">{esc(exp_hz)}</span>'
-                + (f'<span id="acs-exp-alt" style="display:none">{esc(alt)}</span>' if alt else "")) + back
+        # Una frase con algo opcional vale también sin ello (review 014), en hanzi y en pinyin.
+        core = ([sentence_core(sent), " ".join(g["pinyin"] for g in sent["segments"] if g.get("pinyin") and not g.get("optional"))]
+                if sent and ex["type"] == "produce" and any(g.get("optional") for g in sent["segments"]) else [])
+        alt = "|".join([str(a) for a in ans.get("accept") or []] + core)
+        # Lo oculto que compara lo escrito, fuera del color por tono: se lee como texto, no se ve.
+        hidden = (f'<span id="acs-exp-py" style="display:none">{esc(exp_py)}</span>'
+                  f'<span id="acs-exp-hz" style="display:none">{esc(exp_hz)}</span>'
+                  + (f'<span id="acs-exp-alt" style="display:none">{esc(alt)}</span>' if alt else ""))
+    else:
+        hidden = ""
     return {"typed": typed, "task": esc(task), "front": tone_color(front), "prompt_audio": prompt_audio,
-            "back": tone_color(back), "answer_audio": answer_audio,
-            "notes": tone_color(f'<div class="box">{"".join(note_section(n, k) for _, _, n, k in sorted(notes, key=lambda x: x[:2]))}</div>')
-            if notes else ""}
+            "back": hidden + tone_color(back), "answer_audio": answer_audio,
+            "notes": tone_color(f'<div class="box">{notes_html(notes)}</div>') if notes else ""}
+
+
+HELP_RANK = 2.9   # desde aquí, la ayuda (Para entender, En clase, mnemotecnias, notas…); antes, la respuesta y su contraste
+
+
+def notes_html(notes):
+    """Las notas del reverso en su orden; entre lo que responde (el contraste de la propia tarjeta, los ejemplos) y lo
+    que ayuda a entender y recordar, una línea (review 014: «una línea que separe el contraste de arriba del resto»)."""
+    out, split = [], False
+    ordered = sorted(notes, key=lambda x: x[:2])
+    for rank, _, html_note, kind in ordered:
+        if rank >= HELP_RANK and not split:
+            split = True
+            if out:
+                out.append('<hr class="split">')
+        out.append(note_section(html_note, kind))
+    return "".join(out)
 
 
 SPREAD_MAX = 3   # mnemotecnias de otras palabras en una tarjeta, como mucho
@@ -3478,7 +3633,7 @@ NOTE_KIND = (("ejemplo", "example"), ("mnemotecnia", "mnemonic"), ("en clase", "
              ("para no confundirlo", "confusable"), ("el carácter", "character"),
              ("casi no se usa solo", "status"), ("uso real", "usage"), ("uso y significado", "linguistic"),
              ("apunte", "note"), ("otros sentidos", "status"), ("para decirlo", "status"),
-             ("otras formas de decirlo", "alts"))
+             ("otras formas de decirlo", "alts"), ("para entender", "tip"))
 
 
 CHAR_TYPE_ES = {"pictographic": "pictograma", "ideographic": "ideograma", "pictophonetic": "fonético-semántico"}
@@ -4204,7 +4359,10 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
     out_sentences = [{"id": x["id"], "theme": x.get("theme"), "use": use_label(x), "text": sentence_text(x),
                       "pinyin": sentence_pinyin(x),
                       "segments": [{"text": g["text"], "ref": g.get("ref"), "pinyin": g.get("pinyin")}
-                                   for g in x.get("segments", [])],
+                                   | ({"optional": True} if g.get("optional") else {}) for g in x.get("segments", [])],
+                      # Un diálogo, turno a turno: quién habla, su texto y su audio (la web puede oírlo por turnos).
+                      **({"turns": [{"speaker": w, "text": t, "translation": tr, "audio": audio(t)}
+                                    for w, _, t, tr in dialogue_turns(x)]} if dialogue_turns(x) else {}),
                       "translation": x.get("translation") or {}, "audio": audio(sentence_text(x)),
                       "kind": x.get("kind")}
                      for x in sentences if x.get("use") != "drop"]
@@ -5311,6 +5469,67 @@ def cmd_retro(batches=MAINTENANCE_EVERY):
     return 0
 
 
+AUDIT_SIMILAR = 0.85   # frases así de parecidas (sin puntuación, con 他/她/它 iguales) se señalan como casi repetidas
+SAME_SOUND = str.maketrans("她它", "他他")
+
+
+def audit_report(entries, sentences, exercises):
+    """Repaso de calidad del mazo (review 014: «un contador interno que cada x lotes compruebe que no haya
+    redundancias y que cada cosa esté en su HSK correcto»): lo que `check` no ve porque no es un error. Frases casi
+    iguales, dos tarjetas del mismo tipo con los mismos objetivos, un nivel escrito a mano para lo que ya está en la
+    lista del HSK y otras formas de decirlo que suenan igual. Solo lee; cada punto lo decide el agente en el lote."""
+    import difflib
+    out = []
+    norm = lambda x: re.sub(r"[，。？！、：；…“”‘’,.?!\s]", "", sentence_text(x)).translate(SAME_SOUND)
+    texts = {x["id"]: norm(x) for x in sentences if x.get("use") != "drop"}
+    refs = {x["id"]: {g.get("ref") for g in x.get("segments", []) if g.get("ref")} for x in sentences}
+    by_ref = {}
+    for sid in texts:
+        for r in refs[sid]:
+            by_ref.setdefault(r, set()).add(sid)
+    seen, close = set(), []
+    for sid, t in texts.items():
+        rare = sorted(refs[sid], key=lambda r: len(by_ref.get(r, ())))[:2]   # dos: 他 / 她 no comparten la más rara
+        for other in set().union(*(by_ref.get(r, ()) for r in rare)):
+            pair = tuple(sorted((sid, other)))
+            if other == sid or pair in seen:
+                continue
+            seen.add(pair)
+            u = texts[other]
+            if abs(len(t) - len(u)) <= 2 and difflib.SequenceMatcher(None, t, u).ratio() >= AUDIT_SIMILAR:
+                close.append(pair)
+    out.append(f"Frases casi iguales: {len(close)}")
+    out += [f"  {a} · {b}" for a, b in sorted(close)]
+    same = {}
+    for ex in exercises:
+        if ex["type"] in ("cloze", "contrast", "compose", "comprehension") or ex["id"].startswith("x.pair."):
+            continue      # huecos, contrastes, construir y comprensión: cada uno con su frase, su miembro o su texto
+        key = (ex["type"], tuple(sorted(ex.get("targets", []))), ex.get("sentence"),
+               (ex.get("prompt") or {}).get("hanzi"), (ex.get("answer") or {}).get("hanzi"))
+        same.setdefault(key, []).append(ex["id"])
+    twice = [ids for ids in same.values() if len(ids) > 1]
+    out.append(f"Mismo tipo y mismos objetivos: {len(twice)}")
+    out += ["  " + " · ".join(ids) for ids in twice]
+    levels = hsk_levels()
+    hand = [e["id"] for e in entries if e.get("level") and e.get("hanzi") in levels and not e.get("sense_level")]
+    out.append(f"Nivel a mano de algo que ya está en la lista del HSK: {len(hand)}")
+    out += [f"  {i}" for i in hand]
+    sby = {x["id"]: x for x in sentences}
+    echo = [(ex["id"], sid) for ex in exercises for sid in ex.get("also", [])
+            if sid in sby and (own := sby.get(ex.get("sentence")) or next((sby[t] for t in ex.get("targets", []) if t in sby), None))
+            and compact(sentence_pinyin(sby[sid])) == compact(sentence_pinyin(own))]
+    out.append(f"Otras formas de decirlo que suenan igual: {len(echo)}")
+    out += [f"  {a} · {b}" for a, b in echo]
+    return out
+
+
+def cmd_audit():
+    entries, sentences, exercises = load()
+    for line in audit_report(entries, sentences, exercises):
+        print(line)
+    return 0
+
+
 # ---------------------------------------------------------------- CLI
 
 def main():
@@ -5319,6 +5538,7 @@ def main():
     sub.add_parser("lookup").add_argument("query")
     sub.add_parser("hanzi").add_argument("text")
     sub.add_parser("gaps")
+    sub.add_parser("audit")
     st = sub.add_parser("stats")
     st.add_argument("--days", type=int, default=STATS_DAYS, help="periodo en días")
     st.add_argument("--no-sync", action="store_true", help="no sincronizar antes (faltarán los repasos del móvil)")
@@ -5368,6 +5588,8 @@ def run(args):
         return cmd_stats(args.days, not args.no_sync)
     if args.cmd == "retro":
         return cmd_retro(args.batches)
+    if args.cmd == "audit":
+        return cmd_audit()
     if args.cmd == "hanzi":
         return cmd_hanzi(args.text)
     if args.cmd == "lookup":

@@ -328,6 +328,7 @@ sentences:
   - id: s.dlg-qu-nali-chifan
     use: hear
     kind: example
+    speakers: [A, B, A]
     segments:
       - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
       - {text: 去, ref: w.qu, pinyin: 'qù'}
@@ -351,3 +352,35 @@ sentences:
       - {text: 。}
     translation: {es: '—¿Dónde vamos a comer? —Vamos allí. —Allí está demasiado lejos; comamos aquí.', en: '—Where shall we eat? —Let us go there. —That is too far; let us eat here.'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-zai-lou-xia
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: lóu, ref: w.lou, text: 楼}
+      - {pinyin: xià, ref: w.xia.down, text: 下}
+      - {text: 。}
+    translation: {en: I am downstairs., es: Estoy abajo.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+  - id: s.ditie-zhan-zai-nali
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: dìtiě, ref: w.ditie, text: 地铁}
+      - {pinyin: zhàn, ref: w.zhan, text: 站}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: nǎlǐ, ref: w.nali, text: 哪里}
+      - {text: ？}
+    translation: {en: 'Where is the metro station?', es: '¿Dónde está la estación de metro?'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+  - id: s.wo-meiyou-qiche
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: méiyǒu, ref: w.meiyou, text: 没有}
+      - {pinyin: qìchē, ref: w.qiche, text: 汽车}
+      - {text: 。}
+    translation: {en: I do not have a car., es: No tengo coche.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}

@@ -21,6 +21,19 @@
 - ✅🃏 下班 xiàbān [ɕja˥˩ pan˥] · salir de trabajar · _verbo_ · Lo contrario de 上班 «ir a trabajar»: 上 «subir» al turno y 下 «bajar» de él.
 - ✅🃏 请假 qǐngjià [tɕʰiŋ˧˩˧ tɕja˥˩] · pedir el día libre, pedir permiso · _verbo_ · Palabra a palabra: 请 «pedir» + 假 «permiso, vacaciones». 我明天请假 «mañana me cojo el día».
 - ✅🃏 经理 jīnglǐ [tɕiŋ˥ li˧˩˧] · jefe, gerente · _sustantivo_ · En 理 lǐ, 里 lǐ da el sonido: suenan igual.
+- ✅🃏 大学 dàxué [ta˥˩ ɕɥœ˧˥] · universidad · _sustantivo_
+- ✅🃏 教 jiāo [tɕjɑʊ˥] · enseñar · _verbo_ · A quién y qué, sin nada entre medias: 老师教我们中文 «la profesora nos enseña chino».
+- ✅🃏 班 bān [pan˥] · clase, grupo (de alumnos) · _sustantivo_ · 我们班 «mi clase». El mismo 班 de 上班 «ir a trabajar»: el turno.
+- ✅🃏 学 xué [ɕɥœ˧˥] · aprender, estudiar · _verbo_ · Para aprender a hacer algo, 学 a secas: 我想学游泳 «quiero aprender a nadar».
+- ✅🃏 作业 zuòyè [tswɔ˥˩ jɛ˥˩] · deberes · _sustantivo_ · Palabra a palabra: 作 «hacer, obra» + 业 «tarea». Se hacen con 做: 做作业. 作 y 做 suenan igual; 作 va dentro de palabras (工作, 作业), 做 es el verbo suelto.
+- ✅🃏 处理 chǔlǐ [ʈʂʰu˧˩˧ li˧˩˧] · encargarse de, resolver · _verbo_ · 我会处理的 «descuida, me encargo yo»: tranquiliza a quien te lo pide, en el trabajo sobre todo.
+
+## 学 y 雪
+
+Solo los separa el tono.
+
+- 学 xué · 2.º tono, sube: 我想学
+- 雪 xuě · 3.er tono, se hunde: 下雪
 
 ## Frases
 
@@ -37,3 +50,11 @@
 - ✅🃏 我六点下班。 · wǒ liù diǎn xiàbān · Salgo de trabajar a las seis.
 - ✅🃏 他是我们的经理。 · tā shì wǒmen de jīnglǐ · Es nuestro jefe.
 - ✅🃏 我明天去公司。 · wǒ míngtiān qù gōngsī · Mañana voy a la oficina.
+- ✅🃏 我在大学学习中文。 · wǒ zài dàxué xuéxí Zhōngwén · Estudio chino en la universidad.
+- ✅🃏 老师教我们中文。 · lǎoshī jiāo wǒmen Zhōngwén · La profesora nos enseña chino.
+- ✅🃏 我们班有十个人。 · wǒmen bān yǒu shí ge rén · En mi clase somos diez.
+- ✅🃏 我在做作业。 · wǒ zài zuò zuòyè · Estoy haciendo los deberes.
+- ✅🃏 我早上八点去工作。 · wǒ zǎoshang bā diǎn qù gōngzuò · Voy a trabajar a las ocho de la mañana.
+- ✅🃏 我想学更多中文，所以每天多学一点。 · wǒ xiǎng xué gèng duō Zhōngwén suǒyǐ měi tiān duō xué yìdiǎn · Quiero aprender más chino, así que cada día estudio un poco más.
+- ✅🃏 我想多学一点中文。 · wǒ xiǎng duō xué yìdiǎn Zhōngwén · Quiero aprender un poco más de chino.
+- ✅🃏 我会处理的。 · wǒ huì chǔlǐ de · Descuida, me encargo yo.

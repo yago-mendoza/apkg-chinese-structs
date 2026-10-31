@@ -4,6 +4,7 @@ import json
 import re
 import shutil
 import subprocess
+import tempfile
 import sys
 import unittest
 from unittest import mock
@@ -816,7 +817,8 @@ class Batch005(unittest.TestCase):
 
     def test_lone_hanzi_sound_cards_grow_with_the_deck(self):
         picks = anki.char_sound_picks(self.entries)
-        self.assertIn("学", picks)                          # 学生, 学习: sin palabra propia
+        self.assertIn("们", picks)                          # 我们, 你们: sin palabra propia
+        self.assertNotIn("学", picks)                       # 学 ya es palabra (lote 015), con sus tarjetas
         self.assertNotIn("好", picks)                       # 好 ya es palabra con su tarjeta
         self.assertTrue(all(len(v["words"]) >= anki.CHAR_SOUND_MIN_WORDS for v in picks.values()))
         new = [{"id": "w.t.a", "kind": "word", "use": "say", "hanzi": "学校", "pinyin": "xuéxiào"},
@@ -1473,3 +1475,109 @@ class Lot014(unittest.TestCase):
         order = anki.interleave_streams(cards, key=lambda ex: ex["id"], gap=5)
         a, b = order.index("x.contrast.a"), order.index("x.contrast.b")
         self.assertGreaterEqual(abs(a - b), 5)
+
+
+class Lot015(unittest.TestCase):
+    """Lote 015 (review 014): «Para entender» en las tarjetas, lo opcional entre paréntesis, los clasificadores con su
+    recuadro, los diálogos turno a turno, otras formas que suenan igual, la lectura fijada de un polífono y el repaso
+    de calidad."""
+
+    def setUp(self):
+        self.eby = {
+            "w.wo": {"id": "w.wo", "kind": "word", "hanzi": "我", "pinyin": "wǒ", "meaning": {"es": "yo"}},
+            "w.jinnian": {"id": "w.jinnian", "kind": "word", "hanzi": "今年", "pinyin": "jīnnián", "meaning": {"es": "este año"}},
+            "w.sui": {"id": "w.sui", "kind": "word", "hanzi": "岁", "pinyin": "suì", "meaning": {"es": "años"}, "pos": "clasificador",
+                      "comments": [{"kind": "tip", "private": False, "text": "Al contestar la edad, sin verbo: 我二十岁."},
+                                   {"kind": "mnemonic", "private": False, "text": "Una montaña sobre la noche."}]},
+            "w.ershi": {"id": "w.ershi", "kind": "word", "hanzi": "二十", "pinyin": "èrshí", "meaning": {"es": "veinte"}},
+            "w.ta": {"id": "w.ta", "kind": "word", "hanzi": "他", "pinyin": "tā", "meaning": {"es": "él"}},
+            "w.ta.she": {"id": "w.ta.she", "kind": "word", "hanzi": "她", "pinyin": "tā", "meaning": {"es": "ella"}},
+            "w.lai": {"id": "w.lai", "kind": "word", "hanzi": "来", "pinyin": "lái", "meaning": {"es": "venir"}},
+            "w.dei": {"id": "w.dei", "kind": "word", "hanzi": "得", "pinyin": "děi", "tts": "dei 3", "meaning": {"es": "tener que"}},
+        }
+        seg = lambda t, r, p, **k: dict({"text": t, "ref": r, "pinyin": p}, **k)
+        self.age = {"id": "s.age", "use": "say", "translation": {"es": "Tengo veinte años."},
+                    "segments": [seg("我", "w.wo", "wǒ"), seg("今年", "w.jinnian", "jīnnián", optional=True),
+                                 seg("二十", "w.ershi", "èrshí"), seg("岁", "w.sui", "suì"), {"text": "。"}]}
+        self.dlg = {"id": "s.dlg", "use": "hear", "speakers": ["A", "B", "B"],
+                    "translation": {"es": "—¿Viene él? —Viene. Viene ella."},
+                    "segments": [seg("他", "w.ta", "tā"), seg("来", "w.lai", "lái"), {"text": "？"},
+                                 seg("他", "w.ta", "tā"), seg("来", "w.lai", "lái"), {"text": "。"},
+                                 seg("她", "w.ta.she", "tā"), seg("来", "w.lai", "lái"), {"text": "。"}]}
+        self.he = {"id": "s.he", "use": "say", "translation": {"es": "Viene."}, "segments": [seg("他", "w.ta", "tā"), seg("来", "w.lai", "lái")]}
+        self.she = {"id": "s.she", "use": "say", "translation": {"es": "Viene."}, "segments": [seg("她", "w.ta.she", "tā"), seg("来", "w.lai", "lái")]}
+        self.sby = {s["id"]: s for s in (self.age, self.dlg, self.he, self.she)}
+
+    def test_tip_goes_first_under_the_line(self):
+        ex = {"id": "x.read.sui", "type": "read", "targets": ["w.sui"], "prompt": {"text": "Lee", "hanzi": "岁"},
+              "answer": {"hanzi": "岁", "pinyin": "suì", "meaning": "años"}}
+        notes = anki.card_fields(ex, self.eby, self.sby, {}, set())["notes"]
+        self.assertIn('note--tip', notes)
+        self.assertIn("Para entender", notes)
+        self.assertLess(notes.index('<hr class="split">'), notes.index("note--tip"))
+        self.assertLess(notes.index("note--tip"), notes.index("note--mnemonic"))
+        self.assertLess(notes.index("Ejemplo"), notes.index('<hr class="split">'))
+
+    def test_optional_in_brackets_spoken_whole_and_typed_either_way(self):
+        self.assertEqual(anki.sentence_text(self.age), "我今年二十岁。")
+        self.assertEqual(anki.sentence_shown(self.age), "我(今年)二十岁。")
+        self.assertEqual(anki.sentence_core(self.age), "我二十岁。")
+        anki.CLASSIFIERS.add("w.sui")
+        try:
+            html_ = anki.render_sentence(self.age)
+        finally:
+            anki.CLASSIFIERS.discard("w.sui")
+        self.assertIn('class="seg c1 opt"', html_)
+        self.assertRegex(html_, r'class="seg c\d cl"><span class="py">suì')
+        ex = {"id": "x.produce.age", "type": "produce", "sentence": "s.age", "targets": ["s.age"],
+              "prompt": {"text": "Dilo"}, "answer": {"meaning": "Tengo veinte años."}}
+        back = anki.card_fields(ex, self.eby, self.sby, {}, set())["back"]
+        self.assertIn("我二十岁。|wǒ èrshí suì", back)
+        errors, warnings = anki.validate([dict(e, theme="saludos") for e in self.eby.values()],
+                                         [dict(self.age, theme="saludos", segments=[{"text": "。", "optional": True}])], [], require_audio=False)
+        self.assertTrue(any("optional va en un trozo" in e for e in errors))
+
+    def test_dialogue_by_turns(self):
+        turns = anki.dialogue_turns(self.dlg)
+        self.assertEqual([(w, t, tr) for w, _, t, tr in turns], [("A", "他来？", "¿Viene él?"), ("B", "他来。她来。", "Viene. Viene ella.")])
+        self.assertTrue({"他来？", "他来。她来。"} <= anki.required_audio([], [self.dlg], []))
+        manifest = {t: {"file": f"{n}.mp3"} for n, t in enumerate(["他来？", "他来。她来。"])}
+        ex = {"id": "x.listen.dlg", "type": "listen", "sentence": "s.dlg", "targets": ["s.dlg"],
+              "prompt": {"text": "Escucha", "audio": True}, "answer": {"meaning": "—¿Viene él? —Viene. Viene ella."}}
+        orig = anki.MEDIA
+        with tempfile.TemporaryDirectory() as d:
+            anki.MEDIA = Path(d)
+            try:
+                for item in manifest.values():
+                    (Path(d) / item["file"]).write_bytes(b"x")
+                f = anki.card_fields(ex, self.eby, self.sby, manifest, set())
+            finally:
+                anki.MEDIA = orig
+        self.assertEqual(f["prompt_audio"].count('class="turn"'), 2)
+        self.assertIn("🗣️ B", f["back"])
+        self.assertEqual(anki.dialogue_turns(dict(self.dlg, speakers=["A"])), [])
+
+    def test_alternative_that_sounds_the_same_is_flagged(self):
+        ex = {"id": "x.produce.he", "type": "produce", "sentence": "s.he", "targets": ["s.he"], "also": ["s.she"],
+              "skills": ["production"], "prompt": {"text": "Dilo"}, "answer": {"meaning": "Viene."}}
+        themed = lambda items: [dict(i, theme="saludos") for i in items]
+        _, warnings = anki.validate(themed(self.eby.values()), themed(self.sby.values()), [dict(ex, theme="saludos")], require_audio=False)
+        self.assertTrue(any("suena igual que la respuesta" in w for w in warnings))
+        report = anki.audit_report(list(self.eby.values()), list(self.sby.values()), [ex])
+        self.assertTrue(any("s.he · s.she" in line for line in report))
+
+    def test_fixed_reading_of_a_polyphone(self):
+        s = {"id": "s.dei", "translation": {"es": "Me tengo que ir."},
+             "segments": [{"text": "我", "ref": "w.wo", "pinyin": "wǒ"}, {"text": "得", "ref": "w.dei", "pinyin": "děi"},
+                          {"text": "走", "pinyin": "zǒu"}]}
+        pieces = anki.tts_readings("我得走", list(self.eby.values()), [s])
+        self.assertEqual(pieces, [("我", None), ("得", "dei 3"), ("走", None)])
+        self.assertEqual(anki.tts_signature(pieces), "得=dei 3")
+        self.assertEqual(anki.tts_readings("你好", list(self.eby.values()), [s]), [])
+
+    def test_charsound_answer_is_only_the_syllable(self):
+        ex = {"id": "x.charsound.lai", "type": "charsound", "targets": ["w.lai"], "prompt": {"text": "¿Cómo suena?", "hanzi": "来"},
+              "answer": {"typed": "lai2", "hanzi": "来", "pinyin": "lái", "meaning": "Sale en 来."}}
+        f = anki.card_fields(ex, self.eby, self.sby, {}, set())
+        self.assertNotIn("Sale en", f["back"])
+        self.assertIn("Dónde sale", f["notes"])

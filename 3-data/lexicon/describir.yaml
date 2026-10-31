@@ -8,6 +8,7 @@ entries:
     hanzi: 很
     pinyin: hěn
     meaning: {es: 'muy (con adjetivos, a menudo solo enlace)', en: very}
+    accept_cards: 'el matiz 很 / 太 de tus notas'
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Sin 很, el adjetivo suena a comparación implícita: «yo estoy bien (a diferencia de otros)».', original: Sin hěn suena a comparación tipo ‘yo estoy bien / mejor…’}
@@ -452,6 +453,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Verbo + 得 + cómo: 你说得很好 «hablas muy bien»; 你来得很早 «has llegado temprano». Valora cómo sale la acción. «你很早» no es la forma de decir que alguien llegó temprano.'}
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Se escribe distinto que 的 (mi libro: 我的书) aunque suene igual: 得 va detrás de un verbo; 的, delante de un sustantivo.'}
+      - {date: '2026-10-31', kind: tip, private: false, text: '得 detrás del verbo valora cómo sale algo: 你说得对 «tienes razón», 你说得不对 «no es correcto lo que dices», sin 是.'}
     relations: [w.dei]
     accept_pinyin_mismatch: 'partícula átona: de'
   - id: w.liang.bright
@@ -706,6 +708,7 @@ entries:
       - {kind: linguistic, private: false, date: '2026-10-23', text: 'Delante del verbo: 我一定来 «vengo seguro». 你一定要来！ «¡tienes que venir sin falta!».'}
       - {kind: mnemonic, private: false, date: '2026-10-26', text: 'Bajo un techo 宀, todo está fijo en su sitio: 一定, «seguro, sin falta».', original: 'Para recordarlo: «Bajo el techo, todo está en su sitio» → 定 (dìng): fijo, establecido, seguro.'}
       - {kind: linguistic, private: false, date: '2026-10-26', text: '不一定 «no necesariamente, depende»: la respuesta prudente. 他一定很累 «seguro que está cansado».'}
+      - {date: '2026-10-31', kind: tip, private: false, text: '我一定来 es «vengo seguro». Para «me encargo yo»: 我来 + verbo (我来付钱 «pago yo») o, más tranquilizador, 我会处理的 «descuida, me encargo».'}
   - id: g.duo-dou
     kind: group
     basis: soundalike
@@ -765,3 +768,66 @@ entries:
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-26', text: '更 + adjetivo o verbo: «aún más». 更多 «más cantidad»: 我想学习更多知识 «quiero aprender más cosas».'}
+  - id: w.youde
+    use: say
+    role: content
+    kind: word
+    hanzi: 有的
+    pinyin: yǒude
+    meaning: {en: some, es: 'algunos, unos (… otros)'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'Casi siempre de dos en dos: 有的人喜欢茶，有的人喜欢咖啡 «a unos les gusta el té y a otros el café».'}
+  - id: w.baise
+    use: hear
+    role: content
+    kind: word
+    hanzi: 白色
+    pinyin: báisè
+    meaning: {en: white, es: blanco (el color)}
+    use_reason: 'de clase (el repaso del 30), para entenderla'
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: diapositivas 2026-10-30, origin: class}
+    comments: []
+  - id: w.lvse
+    use: hear
+    role: content
+    kind: word
+    hanzi: 绿色
+    pinyin: lǜsè
+    meaning: {en: green, es: verde}
+    use_reason: 'de clase (el repaso del 30), para entenderla'
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: diapositivas 2026-10-30, origin: class}
+    comments: []
+  - id: g.yi-words
+    kind: group
+    basis: soundalike
+    title: '一样, 一定, 一起 y 医生: las de yi'
+    explanation: Empiezan igual al oído; las separa la segunda sílaba.
+    members:
+      - {cue: '样 yàng «forma»: de una misma forma', ref: w.yiyang}
+      - {cue: '定 dìng «fijo»: fijado, sin falta', ref: w.yiding}
+      - {cue: '起 qǐ «levantarse»: a la vez', ref: w.yiqi}
+      - {cue: 'yī, en primer tono: no es 一, es 医 «curar»', ref: w.yisheng}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments: []
+  - id: g.geng-neng
+    kind: group
+    basis: soundalike
+    title: 更 y 能
+    explanation: 'Riman en -eng; uno sube el grado, el otro es poder.'
+    members:
+      - {cue: 'delante de un adjetivo, sube el grado: 更好, 更多', ref: w.geng}
+      - {cue: 'delante de un verbo: 我能去, 你能说慢一点吗？', ref: w.neng}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments: []
+  - id: w.bing
+    use: say
+    role: content
+    kind: word
+    hanzi: 病
+    pinyin: bìng
+    meaning: {en: illness; to be ill, es: enfermedad; enfermar}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: '他病了 «se ha puesto enfermo»: con 了, porque es un cambio. También 生病.'}
+

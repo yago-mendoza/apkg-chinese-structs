@@ -139,6 +139,7 @@ entries:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'El tiempo que tienes, no el que hace (eso es 天气): 我没有时间 «no tengo tiempo».'}
       - {kind: linguistic, private: false, date: '2026-10-11', text: '时间 es el tiempo que tienes: 我没有时间 «no tengo tiempo». Lo que dura mucho es 久: 好久不见 «¡cuánto tiempo!». Lo que dura algo se pregunta con 多久.'}
       - {kind: character, private: false, date: '2026-10-11', text: '间 es el sol 日 que entra por una puerta 门: el hueco entre dos cosas, en el espacio o en el tiempo. Por eso también es «sala»: 房间, 洗手间.'}
+      - {date: '2026-10-31', kind: mnemonic, original: 'Existe no en la base la mnemotencia de que jian es espacio y se usa para tiempo (time shí along space = time pero tambien para habitación, o baño no?', private: false, text: '间 es un hueco: entre dos momentos es 时间, el tiempo; entre paredes, 房间, la habitación; y el cuarto de lavarse las manos, 洗手间.'}
   - id: w.shuijiao
     use: say
     role: content
@@ -334,6 +335,8 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Número + 点: 三点 «las tres». 现在几点？ «¿qué hora es?». Delante va la parte del día: 早上七点 «las siete de la mañana», 下午五点 «las cinco de la tarde».'}
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Es el mismo 点 de la coma decimal: 三点五 «tres coma cinco». En la hora, lo que sigue son minutos: 三点五分 «las tres y cinco».'}
+      - {date: '2026-10-31', kind: mnemonic, original: 'MNEMOTECNIA, es como un reloj de madera / En 点 (diǎn) veo una cajita con un palito y cuatro patitas debajo.', private: false, text: '点: 占, una cajita con un palito encima, sobre cuatro patitas 灬: un reloj de madera que marca un punto en el tiempo, 十一点.'}
+      - {date: '2026-10-31', kind: character, private: false, text: 'Las cuatro patitas 灬 no son fuego aquí: son lo que quedó de 黑 «negro» en 點, la forma antigua. 占 da el sonido, como en 店 y 站.'}
     connection: {kind: sound, with: [店], text: '占 da el sonido a 点 diǎn y a 店 diàn: suenan casi igual.'}
   - id: w.ban
     use: say
@@ -723,4 +726,76 @@ entries:
       - {ref: w.kuaiyao, from: 0.5, to: 0.5, label: 'a punto de pasar'}
       - {ref: st.hai-mei-v, from: 0.5, to: 2, label: 'todavía no; se espera'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments: []
+  - id: w.hou.after
+    use: say
+    role: content
+    kind: word
+    hanzi: 后
+    pinyin: hòu
+    meaning: {en: after; behind, es: después (de); detrás}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'Detrás de un tiempo: 三天后 «dentro de tres días», 吃饭后 «después de comer». Con 以 delante es la palabra suelta: 以后 «después».'}
+  - id: w.qilai
+    use: say
+    role: content
+    kind: word
+    hanzi: 起来
+    pinyin: qǐlai
+    meaning: {en: to get up, es: levantarse}
+    accept_pinyin_mismatch: '来 átono en 起来: qǐlai'
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'Palabra a palabra: 起 «levantarse» + 来 «hacia aquí». 我七点起来 «me levanto a las siete».'}
+  - id: w.shui.sleep
+    use: say
+    role: content
+    kind: word
+    hanzi: 睡
+    pinyin: shuì
+    meaning: {en: to sleep, es: dormir}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'Suelto, sobre todo con algo detrás: 睡一下 «echar una cabezada». Irse a dormir es 睡觉.'}
+  - id: w.huidao
+    use: say
+    role: content
+    kind: word
+    hanzi: 回到
+    pinyin: huídào
+    meaning: {en: to get back to, es: 'volver a, llegar de vuelta'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: '回 «volver» + 到 «llegar»: 我回到家了 «ya estoy de vuelta en casa». Sin 到, 回家 es solo «volver a casa».'}
+  - id: w.lushang
+    use: say
+    role: content
+    kind: word
+    hanzi: 路上
+    pinyin: lùshang
+    meaning: {en: on the way, es: 'por el camino, de camino'}
+    accept_pinyin_mismatch: '上 átono en 路上: lùshang'
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: '在回家的路上 «de camino a casa». Al despedir a alguien: 路上小心 «ten cuidado por el camino».'}
+  - id: g.ban-tones
+    kind: group
+    basis: soundalike
+    title: 半 y 班
+    explanation: Solo los separa el tono.
+    members:
+      - {cue: '4.º tono, baja fuerte: 三点半', ref: w.ban}
+      - {cue: '1.er tono, alto y plano: 我们班, 上班', ref: w.ban.class}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments: []
+  - id: g.hou-tones
+    kind: group
+    basis: soundalike
+    title: 后 y 猴
+    explanation: Solo los separa el tono.
+    members:
+      - {cue: '4.º tono, baja fuerte: 三天后', ref: w.hou.after}
+      - {cue: '2.º tono, sube: 猴年', ref: w.hou}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
     comments: []

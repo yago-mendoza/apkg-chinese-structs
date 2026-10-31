@@ -82,6 +82,7 @@ entries:
       - {kind: mnemonic, private: false, date: '2026-10-11', text: '吧 es como el «va» de «vinga, va»: anima a hacerlo, sin mandar.', original: 'el ''ba'' de zou ba m recuerda al ''va'' en caltan, de ''vinga, va'' sabes ¿? ayuda a entneder un poco mas no?¿'}
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Tres usos: propone (我们走吧 «vámonos»), suaviza una orden (你坐吧 «siéntate, anda») y supone (你累了吧？ «estarás cansado, ¿no?»). 走吧 sin sujeto vale para «vámonos» y para «vete»: 我们走吧, 你走吧.'}
       - {kind: mnemonic, private: false, date: '2026-10-19', text: 'Una boca 口 junto a media puerta 巴: «venga, vámonos», mientras la empuja para salir.', original: 'Y luego al lao boca y media puerta del oeste (el ba) sabes? Esta mnemotecnia es buenisima.'}
+      - {date: '2026-10-31', kind: tip, private: false, text: '吧 propone o suaviza: 走吧 «vamos», 好吧 «vale». 呢 devuelve la pregunta: 你呢？ «¿y tú?». Al aceptar un plan, 好啊; 走吧 es «vámonos ya».'}
   - id: g.ba-ba
     kind: group
     basis: soundalike
@@ -105,6 +106,7 @@ entries:
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-05', text: 'Es el 再 de 再见 «adiós», literalmente «volver a ver», y de 再说一遍 «dilo otra vez». Va delante del verbo y habla de algo que aún no ha pasado: 我明天再来 «vuelvo mañana».'}
+      - {date: '2026-10-31', kind: tip, private: false, text: '在 zài es estar: 我在学习. 再 zài es otra vez, de lo que aún no ha pasado: 我明天再学习. 又 yòu es otra vez, de lo que ya pasó: 他又来了. El 再 de 再见 y de 再说一遍 es el mismo.'}
   - id: g.zai-zai
     kind: group
     basis: homophone
@@ -171,6 +173,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Solo en preguntas que dan a elegir: 你喝茶还是喝咖啡？ «¿tomas té o café?». La pregunta ya está en 还是: no lleva 吗.'}
       - {kind: linguistic, private: false, date: '2026-10-26', text: '还是 tiene otro uso: «aun así, sigo», 我还是不懂 «sigo sin entenderlo». Y en 他今年还是学生 son 还 «todavía» + 是 «ser»: «sigue siendo estudiante».', original: 'Háishi también tiene otros dos usos habituales: Wǒ háishi bù dǒng. → Sigo sin entender.'}
+      - {date: '2026-10-31', kind: tip, private: false, text: '还 hái, 还是 háishi: 我还不懂 «todavía no lo entiendo»; 我还是不懂 «aun así, sigo sin entenderlo», después de que te lo expliquen. 你要水还是茶？ «¿agua o té?» (eliges); 水或者茶都可以 «agua o té, me da igual».'}
   - id: g.ba-ne.look
     kind: group
     basis: visual
@@ -223,3 +226,13 @@ entries:
     source: {origin: review, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'review-010-2026-10-11-construir-numeros-y-movimiento.md', date: '2026-10-16'}
     comments:
       - {kind: note, private: false, date: '2026-10-26', text: 'Se queda como serie, sin tarjeta de contraste propia: 又 y 右 suenan igual, así que se preguntan por el significado en el contraste de 有, 又, 要 y 右.'}
+  - id: g.danshi-haishi
+    kind: group
+    basis: soundalike
+    title: 但是 y 还是
+    explanation: 'Acaban igual, en shi; el primero opone, el segundo dice que algo no cambia.'
+    members:
+      - {cue: 'une dos frases que chocan: 我很累，但是我想去', ref: w.danshi}
+      - {cue: 'algo sigue igual pese a todo: 我还是很累', ref: w.haishi}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments: []

@@ -23,6 +23,9 @@
 - ✅🃏 大象 dàxiàng [ta˥˩ ɕjɑŋ˥˩] · elefante · _sustantivo_
 - ✅🃏 龙 lóng [lʊŋ˧˥] · dragón · _sustantivo_ · 龍 es su forma tradicional. Es frecuente en nombres: 成龙 «Jackie Chan», 大龙, y 李小龙 «Bruce Lee».
 - ✅🃏 鸟 niǎo [njɑʊ˧˩˧] · pájaro · _sustantivo_ · 小鸟 xiǎoniǎo «pajarito».
+- ✅🃏 老鼠 lǎoshǔ [lɑʊ˧˩˧ ʂu˧˩˧] · ratón, rata · _sustantivo_ · El 老 no es «viejo»: va delante de algunos animales, 老鼠, 老虎.
+- ✅🃏 老虎 lǎohǔ [lɑʊ˧˩˧ xu˧˩˧] · tigre · _sustantivo_
+- ✅🃏 兔子 tùzi [tʰu˥˩ tsɯ] · conejo · _sustantivo_
 
 ## Los doce signos
 
@@ -57,3 +60,10 @@ La misma sílaba: 吗 es átona y cierra preguntas; 马 baja y sube. 马 da adem
 - ✅🃏 我的属相是兔。 · wǒ de shǔxiang shì tù · Mi signo es el conejo.
 - ✅🃏 他属狗。 · tā shǔ gǒu · Es del año del perro.
 - ✅🃏 你有猫吗？ · nǐ yǒu māo ma · ¿Tienes gato?
+- ✅🃏 猫和老鼠不是朋友。 · māo hé lǎoshǔ bú shì péngyou · El gato y el ratón no son amigos.
+- ✅🃏 老虎很大。 · lǎohǔ hěn dà · El tigre es muy grande.
+- ✅🃏 蛇是绿色的。 · shé shì lǜsè de · La serpiente es verde.
+- ✅🃏 小兔子是白色的。 · xiǎo tùzi shì báisè de · El conejito es blanco.
+- ✅🃏 小鸡和小狗都很可爱。 · xiǎo jī hé xiǎo gǒu dōu hěn kě'ài · Los pollitos y los perritos son muy monos.
+- ✅🃏 这只兔子真可爱！ · zhè zhī tùzi zhēn kě'ài · ¡Qué mono es este conejo!
+- ✅🃏 你觉得这只猫可爱吗？ · nǐ juéde zhè zhī māo kě'ài ma · ¿Te parece mono este gato?

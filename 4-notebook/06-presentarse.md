@@ -25,23 +25,23 @@
 - ✅🃏 姓名 xìngmíng [ɕiŋ˥˩ miŋ˧˥] · nombre completo · _sustantivo_
 - ❌ 门多萨 Ménduōsà [mən˧˥ twɔ˥ sa˥˩] · Mendoza (mi apellido) · _nombre propio_ · Pura transcripción del sonido: 门 «puerta», 多 «mucho» y 萨 no forman ningún significado.
 - ❌ 雅戈 Yǎgē [ja˧˩˧ kɤ˥] · Yago (mi nombre en chino) · _nombre propio_ · Transcripción por el sonido: 雅 «elegante» y 戈 «alabarda», sin otro significado. Solo por diversión.
-- ✅🃏 来 lái [laɪ˧˥] · venir · _verbo_ · Su origen es el dibujo de una planta de trigo, tomado prestado por su sonido para «venir». · 来 es como una marca bonita en el mapa: el sitio donde estás tú. Por eso solo se puede venir hacia aquí. · 我来 + verbo es «déjame a mí, ya me encargo»: 我来付钱 «pago yo», 我来介绍一下 «dejad que os presente». Solo, 我来！ «¡ya voy yo!».
+- ✅🃏 来 lái [laɪ˧˥] · venir · _verbo_ · Su origen es el dibujo de una planta de trigo, tomado prestado por su sonido para «venir». · 来 es como una marca bonita en el mapa: el sitio donde estás tú. Por eso solo se puede venir hacia aquí. · 我来 + verbo es «déjame a mí, ya me encargo»: 我来付钱 «pago yo», 我来介绍一下 «dejad que os presente». Solo, 我来！ «¡ya voy yo!». · 💡 我来 + verbo no es «vengo a…»: es «déjame a mí, yo me encargo»: 我来介绍一下 «os presento», 我来付钱 «pago yo». No es formal: se oye en cualquier casa.
 - ✅🃏 来自 láizì [laɪ˧˥ tsɯ˥˩] · venir de, ser de · _verbo_ · Algo formal. Hablando, también: 我从西班牙来 wǒ cóng Xībānyá lái. · 自 es «uno mismo»: 来自 es venir de uno mismo, proceder. No es el zi átono de 儿子: es zì, con cuarto tono.
 - ✅🃏 问 wèn [wən˥˩] · preguntar · _verbo_ · Una boca 口 en la puerta 门, preguntando. · 门 mén le da el sonido: wèn. · Preguntar es wèn, con -n al final; no confundir con wèi, el 为 de 为什么.
 - ✅🃏 北京 Běijīng [peɪ˧˩˧ tɕiŋ˥] · Pekín · _nombre propio_ · Literalmente «capital del norte»: 北 běi «norte» + 京 jīng «capital». · 京 es un edificio alto sobre una colina, la parte de arriba de 高.
 - ✅ 大卫 Dàwèi [ta˥˩ weɪ˥˩] · David (nombre de ejemplo) · _nombre propio_
 - ✅🃏 先生 xiānsheng [ɕjɛn˥ ʂɤŋ] · señor (tras el apellido) · _sustantivo_ · Detrás del apellido: 白先生 «el señor Bai». Es como se llama a alguien en un trato formal; no por el nombre completo. · 先 «antes» + 生 «nacer»: el que nació antes.
-- ✅🃏 哪 nǎ [na˧˩˧] · qué, cuál · _interrogativo_ · Ves varias cosas y abres la boca 口 para preguntar: «¿cuál de esas 那 quieres?». La boca convierte «ese» en una pregunta, y el tono también cambia: 那 nà baja, 哪 nǎ baja y sube. · Si sabes decir «uno», cambia 一 por 哪 y deja lo demás: de 一天 sale 哪天; de 一个人, 哪个人; de 一本书, 哪本书. 你是哪国人？ es una expresión hecha, sin 个.
+- ✅🃏 哪 nǎ [na˧˩˧] · qué, cuál · _interrogativo_ · Ves varias cosas y abres la boca 口 para preguntar: «¿cuál de esas 那 quieres?». La boca convierte «ese» en una pregunta, y el tono también cambia: 那 nà baja, 哪 nǎ baja y sube. · Si sabes decir «uno», cambia 一 por 哪 y deja lo demás: de 一天 sale 哪天; de 一个人, 哪个人; de 一本书, 哪本书. 你是哪国人？ es una expresión hecha, sin 个. · 💡 哪 + clasificador: cambia 一 por 哪 y deja el resto. 一个人, 哪个人; 一本书, 哪本书; 一天, 哪天 (sin 个). 哪国人 es fija.
 - ✅🃏 国 guó [kwɔ˧˥] · país · _sustantivo_ · En los nombres de países: 中国, 美国. 你是哪国人？ «¿de qué país eres?». · En 中国, 中 zhōng «centro» va delante y 国 guó «país» detrás: «el país del centro».
 - ✅🃏 会 huì [xweɪ˥˩] · saber (hacer algo); ir a (predicción) · _verbo_ · Saber hacer algo aprendido: 我会说中文. «Saber un dato» es otra palabra, 知道 zhīdào [HSK 1]. · También predice: 明天会下雨 «mañana lloverá».
-- ✅🃏 学习 xuéxí [ɕɥœ˧˥ ɕi˧˥] · estudiar, aprender · _verbo_ · 学 «aprender» + 习 «practicar». 学生 «estudiante» lleva el mismo 学.
+- ✅🃏 学习 xuéxí [ɕɥœ˧˥ ɕi˧˥] · estudiar, aprender · _verbo_ · 学 «aprender» + 习 «practicar». 学生 «estudiante» lleva el mismo 学. · 习 xí «practicar»: una esquina de mesa con dos utensilios dentro. · 💡 En chino, estudiar y aprender son el mismo verbo: 学习, o 学 a secas. 我学习中文 «estudio chino»; 我想学游泳 «quiero aprender a nadar». 读书 dúshū es estudiar en la escuela (y leer libros).
 - ✅ 成龙 Chéng Lóng [ʈʂʰɤŋ˧˥ lʊŋ˧˥] · Jackie Chan · _nombre propio_ · Su apellido es 成 y su nombre, 龙 «dragón»: 他姓成，叫成龙.
 - ✅🃏 英国 Yīngguó [iŋ˥ kwɔ˧˥] · Reino Unido, Inglaterra · _nombre propio_
 - ✅🃏 幸会 xìnghuì [ɕiŋ˥˩ xweɪ˥˩] · encantado (de conocerle), fórmula formal · _expresión_ · Palabra a palabra: 幸 «suerte» + 会 «encontrarse»: «qué suerte encontrarle». · En una presentación formal: «您好，我是…», «您贵姓？», «我姓…，叫…» y, al final, los dos dicen «幸会！».
 - ✅🃏 出生 chūshēng [ʈʂʰu˥ ʂɤŋ˥] · nacer · _verbo_ · 出 «salir» + 生 «nacer»: salir al mundo. · 出生 es salir a la vida; y lleva dos tonos altos y planos, como el golpe de gong del momento en que sales.
 - ✅🃏 属 shǔ [ʂu˧˩˧] · ser (de un signo del zodiaco) · _verbo_ · 我属马 «soy caballo»: el signo del año en que naciste. Se pregunta 你属什么？. · Llevas dentro tu animal del zodiaco: 尸 es el cuerpo que lo envuelve, y dentro se ven la cabeza cuadrada y la cola del animal.
 - ✅🃏 猜 cāi [tsʰaɪ˥] · adivinar · _verbo_
-- ✅🃏 觉得 juéde [tɕɥœ˧˥ tɤ] · creer, parecerle a uno · _verbo_ · Para dar tu opinión: 我觉得很好 «me parece bien». 你觉得怎么样？ «¿qué te parece?». · Ves 见 algo bajo una cubierta 冖 y te saltan tres chispas ⺍ en la cabeza: «¡creo que sé qué es!». Para comprobarlo das un paso 彳 al amanecer 旦 y lo tanteas con la mano 寸: después de verlo y tocarlo, dices «me parece que…». Y juéde suena a «juzgar», opinar.
+- ✅🃏 觉得 juéde [tɕɥœ˧˥ tɤ] · creer, parecerle a uno · _verbo_ · Para dar tu opinión: 我觉得很好 «me parece bien». 你觉得怎么样？ «¿qué te parece?». · Ves 见 algo bajo una cubierta 冖 y te saltan tres chispas ⺍ en la cabeza: «¡creo que sé qué es!». Para comprobarlo das un paso 彳 al amanecer 旦 y lo tanteas con la mano 寸: después de verlo y tocarlo, dices «me parece que…». Y juéde suena a «juzgar», opinar. · 💡 Para una opinión, 觉得: 我觉得很好. 我想 es querer o tener pensado: 我想去中国. Y 怎么样 pregunta «¿qué tal?»; 你觉得怎么样？, «¿qué te parece?».
 - ✅🃏 王 Wáng [wɑŋ˧˥] · Wang (apellido) · _sustantivo_ · Como palabra suelta, 王 es «rey» [HSK 4]; aquí es el apellido.
 - ✅🃏 哪个 nǎge [na˧˩˧ kɤ] · cuál, qué (de varios) · _interrogativo_ · Palabra a palabra: 哪 «cuál» + 个, el clasificador. Para elegir entre varios: 哪个人？ «¿qué persona?», 哪个国家？ «¿qué país?».
 - ✅🃏 国家 guójiā [kwɔ˧˥ tɕja˥] · país · _sustantivo_ · Palabra a palabra: 国 «país» + 家 «casa». Para preguntar de dónde es alguien basta con 你是哪国人；国家 es la palabra entera, como en 你来自哪个国家.
@@ -139,8 +139,8 @@ Misma sílaba, distinto tono.
 - ✅🃏 我属兔。 · wǒ shǔ tù · Soy conejo.
 - ✅🃏 我一九九九年出生。 · wǒ yī jiǔ jiǔ jiǔ nián chūshēng · Nací en 1999.
 - ✅🃏 我二十六岁。 · wǒ èr shí liù suì · Tengo veintiséis años.
-- ✅🃏 我一九九九年出生，属兔，今年二十六岁。 · wǒ yī jiǔ jiǔ jiǔ nián chūshēng shǔ tù jīnnián èr shí liù suì · Nací en 1999, soy conejo y este año cumplo veintiséis.
-- ✅🃏 他今年多大？ · tā jīnnián duō dà · ¿Cuántos años tiene (él) este año?
+- ✅🃏 我一九九九年出生，属兔，(今年)二十六岁。 · wǒ yī jiǔ jiǔ jiǔ nián chūshēng shǔ tù jīnnián èr shí liù suì · Nací en 1999, soy conejo y este año cumplo veintiséis.
+- ✅🃏 他(今年)多大？ · tā jīnnián duō dà · ¿Cuántos años tiene (él) este año?
 - ✅🃏 你爸爸多大年纪了？ · nǐ bàba duō dà niánjì le · ¿Cuántos años tiene tu padre?
 - ✅🃏 我妈妈五十五岁。 · wǒ māma wǔ shí wǔ suì · Mi madre tiene cincuenta y cinco.
 - ✅🃏 你的生日是几月几号？ · nǐ de shēngrì shì jǐ yuè jǐ hào · ¿Cuándo es tu cumpleaños?
@@ -179,20 +179,20 @@ Misma sílaba, distinto tono.
 - ✅🃏 你的爱好是什么？ · nǐ de àihào shì shénme · ¿Cuál es tu afición?
 - ✅🃏 你几岁？ · nǐ jǐ suì · ¿Cuántos años tienes? (a un niño)
 - ✅🃏 你多大？ · nǐ duō dà · ¿Cuántos años tienes?
-- ✅🃏 你今年几岁了？ · nǐ jīnnián jǐ suì le · ¿Cuántos años tienes ya? (a un niño)
+- ✅🃏 你(今年)几岁了？ · nǐ jīnnián jǐ suì le · ¿Cuántos años tienes ya? (a un niño)
 - ✅🃏 您多大年纪了？ · nín duō dà niánjì le · ¿Cuántos años tiene usted?
 - ✅🃏 他的电话号码是多少？ · tā de diànhuà hàomǎ shì duōshao · ¿Cuál es su número de teléfono?
 - ✅🃏 你多大了？ · nǐ duō dà le · ¿Cuántos años tienes?
 - ✅🃏 他多大年纪了？ · tā duō dà niánjì le · ¿Cuántos años tiene? (de alguien mayor)
 - ✅🃏 你的属相是什么？ · nǐ de shǔxiang shì shénme · ¿Cuál es tu signo del zodiaco chino?
 - ✅🃏 您属什么？ · nín shǔ shénme · ¿De qué signo es usted?
-- ✅🃏 你猜他多大了？我猜他今年二十岁左右。 · nǐ cāi tā duō dà le wǒ cāi tā jīnnián èr shí suì zuǒyòu · —¿Cuántos años crees que tiene? —Creo que tiene unos veinte.
-- ✅🃏 你的朋友是哪年出生的？他是一九九五年出生的，他属猪。 · nǐ de péngyou shì nǎ nián chūshēng de tā shì yī jiǔ jiǔ wǔ nián chūshēng de tā shǔ zhū · —¿En qué año nació tu amigo? —En 1995; es cerdo.
+- ✅🃏 你猜他多大了？我猜他(今年)二十岁左右。 · nǐ cāi tā duō dà le wǒ cāi tā jīnnián èr shí suì zuǒyòu · —¿Cuántos años crees que tiene? —Creo que tiene unos veinte.
+- ✅🃏 你的朋友是哪年出生的？他(是)一九九五年出生(的)，他属猪。 · nǐ de péngyou shì nǎ nián chūshēng de tā shì yī jiǔ jiǔ wǔ nián chūshēng de tā shǔ zhū · —¿En qué año nació tu amigo? —En 1995; es cerdo.
 - ✅🃏 爸，妈，我来介绍一下，这是我的同学。 · bà mā wǒ lái jièshào yīxià zhè shì wǒ de tóngxué · Papá, mamá, os presento: es mi compañero de clase.
 - ✅🃏 哦，你属什么？ · ò nǐ shǔ shénme · Ah, ¿y de qué signo eres?
-- ✅🃏 我属龙，今年二十四岁。 · wǒ shǔ lóng jīnnián èr shí sì suì · Soy dragón; tengo veinticuatro años.
-- ✅🃏 他今年二十岁。 · tā jīnnián èr shí suì · Tiene veinte años.
-- ✅🃏 我今年二十五岁。 · wǒ jīnnián èr shí wǔ suì · Tengo veinticinco años.
+- ✅🃏 我属龙，(今年)二十四岁。 · wǒ shǔ lóng jīnnián èr shí sì suì · Soy dragón; tengo veinticuatro años.
+- ✅🃏 他(今年)二十岁。 · tā jīnnián èr shí suì · Tiene veinte años.
+- ✅🃏 我(今年)二十五岁。 · wǒ jīnnián èr shí wǔ suì · Tengo veinticinco años.
 - ✅🃏 我一九九六年出生。 · wǒ yī jiǔ jiǔ liù nián chūshēng · Nací en 1996.
 - ✅🃏 我在北京出生。 · wǒ zài Běijīng chūshēng · Nací en Pekín.
 - ✅🃏 你猜他是谁？ · nǐ cāi tā shì shéi · ¿A que no sabes quién es?
@@ -205,3 +205,8 @@ Misma sílaba, distinto tono.
 - ✅🃏 中国是一个很大的国家。 · Zhōngguó shì yí ge hěn dà de guójiā · China es un país muy grande.
 - ✅🃏 中国有多大？ · Zhōngguó yǒu duō dà · ¿Cómo de grande es China?
 - ✅🃏 你是哪个国家的人？ · nǐ shì nǎge guójiā de rén · ¿De qué país eres?
+- ✅🃏 他(是)马年出生(的)。 · tā shì mǎ nián chūshēng de · Nació en el año del caballo.
+- ✅🃏 他(是)二零零一年出生(的)，属蛇。 · tā shì èr líng líng yī nián chūshēng de shǔ shé · Nació en 2001: es del año de la serpiente.
+- ✅🃏 我(是)二零零零年出生(的)，属龙。 · wǒ shì èr líng líng líng nián chūshēng de shǔ lóng · Nací en 2000: soy del año del dragón.
+- ✅🃏 我想住在中国。 · wǒ xiǎng zhù zài Zhōngguó · Quiero vivir en China.
+- ✅🃏 我来介绍一下。 · wǒ lái jièshào yíxià · Os presento.

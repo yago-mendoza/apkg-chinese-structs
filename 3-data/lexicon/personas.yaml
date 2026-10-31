@@ -68,7 +68,8 @@ entries:
     pinyin: tā
     meaning: {es: ella, en: she}
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
-    comments: []
+    comments:
+      - {date: '2026-10-31', kind: tip, private: false, text: '他 «él», 她 «ella» y 它 «ello» suenan igual, tā: al hablar no se distinguen; por escrito, según quién.'}
   - id: w.ta.it
     use: [read]
     role: content
@@ -293,6 +294,7 @@ entries:
     source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Va delante del verbo: 一起吃饭 «comer juntos».'}
+      - {date: '2026-10-31', kind: mnemonic, original: Aquí puedes imaginar varias personas poniéndose en movimiento como una sola unidad., private: false, text: '一起: varias personas que se levantan 起 a la vez, como una sola 一: juntos.'}
   - id: w.gei.to
     use: say
     role: function
@@ -498,3 +500,17 @@ entries:
       - {ref: w.pingguo, cue: 'píng con i; la segunda, guǒ, con su tercer tono'}
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
     comments: []
+  - id: e.yigeren
+    use: say
+    role: content
+    kind: expression
+    hanzi: 一个人
+    pinyin: yí ge rén
+    meaning: {en: alone, es: 'solo, sin compañía'}
+    level: 1
+    level_reason: 'una persona: 一 + 个 + 人, todo de HSK 1; delante del verbo es «solo»'
+    accept_pinyin_mismatch: '一 en segundo tono delante de 个 gè, que aquí suena átono: yí ge rén'
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'Delante del verbo: 我一个人住 «vivo solo». 自己 es otra cosa: «yo mismo, sin que nadie lo haga por mí».'}
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'Palabra a palabra: 一 «una» + 个 (clasificador) + 人 «persona»: «una sola persona», solo.'}

@@ -294,7 +294,7 @@ sentences:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 跟, ref: w.gen, pinyin: 'gēn'}
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
-      - {text: 一起, ref: w.yiqi, pinyin: 'yìqǐ', sandhi: true}
+      - {text: 一起, ref: w.yiqi, pinyin: 'yìqǐ', sandhi: true, optional: true}
       - {text: 去, ref: w.qu, pinyin: 'qù'}
       - {text: 。}
     translation: {es: 'Voy contigo.', en: 'I will go with you.'}
@@ -302,6 +302,7 @@ sentences:
   - id: s.dlg-yi-ge-ren-qu
     use: hear
     kind: example
+    speakers: [A, B]
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 一, ref: w.num.yi, pinyin: 'yí', sandhi: true}
@@ -323,3 +324,49 @@ sentences:
       - {text: 。}
     translation: {es: '—¿Vas solo o con amigos? —Voy con unos amigos.', en: '—Are you going alone or with friends? —I am going with friends.'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-yi-ge-ren-zhu
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yí ge rén, ref: e.yigeren, text: 一个人}
+      - {pinyin: zhù, ref: w.zhu.live, text: 住}
+      - {text: 。}
+    translation: {en: I live alone., es: Vivo solo.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.ni-yi-ge-ren-zhu-ma
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: yí ge rén, ref: e.yigeren, text: 一个人}
+      - {pinyin: zhù, ref: w.zhu.live, text: 住}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Do you live alone?', es: '¿Vives solo?'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-ziji-qu
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zìjǐ, ref: w.ziji, text: 自己}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {text: 。}
+    translation: {en: I will go myself., es: Voy yo mismo.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-yi-ge-ren-zhu-jintian-xiang-chuqu
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yí ge rén, ref: e.yigeren, text: 一个人}
+      - {pinyin: zhù, ref: w.zhu.live, text: 住}
+      - {text: ，}
+      - {pinyin: jīntiān, ref: w.jintian, text: 今天}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: chūqu, ref: w.chuqu, text: 出去}
+      - {pinyin: yíxià, ref: w.yixia, sandhi: true, text: 一下}
+      - {text: 。}
+    translation: {en: 'I live alone, and today I want to go out for a bit.', es: 'Vivo solo, y hoy quiero salir un rato.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}

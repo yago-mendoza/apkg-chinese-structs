@@ -1418,3 +1418,84 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Quiero un zumo.»'}
     answer: {meaning: Quiero un zumo.}
     comments: []
+  - id: x.dictation.rou
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.rou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: rou4, hanzi: 肉, pinyin: ròu, meaning: carne}
+    comments: []
+  - id: x.produce.rou
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.rou]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «carne»? Escribe el pinyin.'}
+    answer: {typed: rou4, hanzi: 肉, pinyin: ròu, meaning: carne}
+    comments: []
+  - id: x.read.rou
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.rou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 肉}
+    answer: {hanzi: 肉, pinyin: ròu, meaning: carne}
+    comments: []
+  - id: x.listen.ni-xihuan-chi-yangrou-haishi-zhurou
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.ni-xihuan-chi-yangrou-haishi-zhurou
+    targets: [s.ni-xihuan-chi-yangrou-haishi-zhurou]
+    context: [w.ni, w.xihuan, w.chi, w.yang.sheep, w.rou, w.haishi, w.zhu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Te gusta más el cordero o el cerdo?'}
+    comments: []
+  - id: x.listen.wo-xihuan-chi-niurou-ye-xihuan-he-niunai
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.wo-xihuan-chi-niurou-ye-xihuan-he-niunai
+    targets: [s.wo-xihuan-chi-niurou-ye-xihuan-he-niunai]
+    context: [w.wo, w.xihuan, w.chi, w.niurou, w.ye, w.he.drink, w.niunai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Me gusta la ternera, y también la leche.'}
+    comments: []
+  - id: x.produce.ni-duo-chi-yidian-ba
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.ni-duo-chi-yidian-ba
+    targets: [s.ni-duo-chi-yidian-ba]
+    context: [w.ni, w.duo, w.chi, w.yidian, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Come un poco más!»'}
+    answer: {meaning: ¡Come un poco más!}
+    comments: []
+  - id: x.produce.wo-yijing-ziji-zuo-hao-fan-le
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-yijing-ziji-zuo-hao-fan-le
+    targets: [s.wo-yijing-ziji-zuo-hao-fan-le]
+    context: [w.wo, w.yijing, w.ziji, w.zuo.do, w.hao, w.fan, w.le, w.women, w.yiqi, w.chi, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ya he hecho la comida yo solo: comamos juntos.»'}
+    answer: {meaning: 'Ya he hecho la comida yo solo: comamos juntos.'}
+    comments: []
+  - id: x.contrast.shui
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.shui-tones
+    targets: [w.shui]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 水, pinyin: shuǐ, meaning: agua}
+    comments: []

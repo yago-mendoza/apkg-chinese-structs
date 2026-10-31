@@ -739,6 +739,7 @@ sentences:
   - id: s.dlg-zai-chaoshi
     use: hear
     kind: example
+    speakers: [A, B, A, B]
     segments:
       - {text: 这, ref: w.zhe, pinyin: 'zhè'}
       - {text: 个, ref: w.ge, pinyin: 'ge'}
@@ -768,6 +769,7 @@ sentences:
   - id: s.dlg-xian-fuqian-saoma
     use: hear
     kind: example
+    speakers: [A, A, B]
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 先, ref: w.xian.first, pinyin: 'xiān'}
@@ -843,6 +845,7 @@ sentences:
   - id: s.dlg-yao-nage
     use: hear
     kind: example
+    speakers: [A, B, B]
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 要, ref: w.yao, pinyin: 'yào'}
@@ -871,3 +874,45 @@ sentences:
       - {text: 。}
     translation: {es: '—¿Cuál quieres? —Este, aquel no. Este es demasiado caro; aquel es un poco más barato.', en: '—Which one do you want? —This one, not that one. This one is too expensive; that one is a bit cheaper.'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-qu-chaoshi-mai-shuiguo
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: chāoshì, ref: w.chaoshi, text: 超市}
+      - {pinyin: mǎi, ref: w.mai, text: 买}
+      - {pinyin: shuǐguǒ, ref: w.shuiguo, text: 水果}
+      - {text: 。}
+    translation: {en: I am going to the supermarket to buy fruit., es: Voy al súper a comprar fruta.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.zhege-pingguo-tai-gui-le
+    use: say
+    kind: example
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: píngguǒ, ref: w.pingguo, text: 苹果}
+      - {pinyin: tài, ref: w.tai, text: 太}
+      - {pinyin: guì, ref: w.gui, text: 贵}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: ，}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: bù, ref: w.bu, text: 不}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: mǎi, ref: w.mai, text: 买}
+      - {text: 。}
+    translation: {en: This apple is too expensive; I do not want to buy it., es: 'Esta manzana es demasiado cara: no la quiero.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-de-bao-zai-nali
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: bāo, ref: w.bao, text: 包}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: nǎlǐ, ref: w.nali, text: 哪里}
+      - {text: ？}
+    translation: {en: 'Where is my bag?', es: '¿Dónde está mi bolso?'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}

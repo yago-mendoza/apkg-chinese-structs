@@ -3308,3 +3308,44 @@ exercises:
     answer: {choice: b, hanzi: '我要这个，不要那个。', pinyin: 'wǒ yào zhège, bú yào nàge', meaning: '这个 y 那个 señalan cosas; 这里 y 那里, sitios.'}
     accept_pinyin_mismatch: '个 átono y 不 delante de cuarto tono'
     comments: []
+  - id: x.nuance.kankan-kan-yixia
+    added: '2026-10-31'
+    lang: es
+    type: nuance
+    targets: [w.kankan, w.yixia]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我看看 y 我看一下: ¿qué cambia?'}
+    answer: {meaning: 'Casi nada: los dos son «a ver, déjame mirar». 看一下 subraya que será un momento.'}
+    comments: []
+  - id: x.contrast.neng
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.geng-neng
+    targets: [w.neng]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 能, pinyin: néng, meaning: poder (ser capaz)}
+    comments: []
+  - id: x.produce.ni-shi-yixia
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.ni-shi-yixia
+    targets: [s.ni-shi-yixia]
+    context: [w.ni, w.shi.try, w.yixia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Pruébalo.»'}
+    answer: {meaning: Pruébalo.}
+    comments: []
+  - id: x.listen.wo-xiang-xian-xizao
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.wo-xiang-xian-xizao
+    targets: [s.wo-xiang-xian-xizao]
+    context: [w.wo, w.xiang, w.xian.first, w.xizao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero ducharme primero.}
+    comments: []

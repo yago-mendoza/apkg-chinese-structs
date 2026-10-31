@@ -175,3 +175,72 @@ entries:
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
     comments:
       - {kind: character, private: false, date: '2026-10-26', text: 'En 理 lǐ, 里 lǐ da el sonido: suenan igual.'}
+  - id: w.daxue
+    use: say
+    role: content
+    kind: word
+    hanzi: 大学
+    pinyin: dàxué
+    meaning: {en: university, es: universidad}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments: []
+  - id: w.jiao.teach
+    use: say
+    role: content
+    kind: word
+    hanzi: 教
+    pinyin: jiāo
+    meaning: {en: to teach, es: enseñar}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'A quién y qué, sin nada entre medias: 老师教我们中文 «la profesora nos enseña chino».'}
+  - id: w.ban.class
+    use: say
+    role: content
+    kind: word
+    hanzi: 班
+    pinyin: bān
+    meaning: {en: class (group of students), es: 'clase, grupo (de alumnos)'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: '我们班 «mi clase». El mismo 班 de 上班 «ir a trabajar»: el turno.'}
+  - id: w.xue
+    use: say
+    role: content
+    kind: word
+    hanzi: 学
+    pinyin: xué
+    meaning: {en: 'to learn, to study', es: 'aprender, estudiar'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'Para aprender a hacer algo, 学 a secas: 我想学游泳 «quiero aprender a nadar».'}
+  - id: w.zuoye
+    use: say
+    role: content
+    kind: word
+    hanzi: 作业
+    pinyin: zuòyè
+    meaning: {en: homework, es: deberes}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'Palabra a palabra: 作 «hacer, obra» + 业 «tarea». Se hacen con 做: 做作业. 作 y 做 suenan igual; 作 va dentro de palabras (工作, 作业), 做 es el verbo suelto.'}
+  - id: w.chuli
+    use: say
+    role: content
+    kind: word
+    hanzi: 处理
+    pinyin: chǔlǐ
+    meaning: {en: 'to deal with, to handle', es: 'encargarse de, resolver'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: '我会处理的 «descuida, me encargo yo»: tranquiliza a quien te lo pide, en el trabajo sobre todo.'}
+  - id: g.xue-tones
+    kind: group
+    basis: soundalike
+    title: 学 y 雪
+    explanation: Solo los separa el tono.
+    members:
+      - {cue: '2.º tono, sube: 我想学', ref: w.xue}
+      - {cue: '3.er tono, se hunde: 下雪', ref: w.xue.snow}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+    comments: []

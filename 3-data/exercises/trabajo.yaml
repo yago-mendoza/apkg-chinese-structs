@@ -590,3 +590,331 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Mañana voy a la oficina.»'}
     answer: {meaning: Mañana voy a la oficina.}
     comments: []
+  - id: x.choice.orden-zaoshang-ba-dian
+    added: '2026-10-31'
+    lang: es
+    type: speak
+    targets: [s.wo-zaoshang-ba-dian-qu-gongzuo]
+    skills: [production, speaking]
+    accept_pinyin_mismatch: '上 átono en 早上: zǎoshang'
+    prompt: {options: [我去工作早上八点。, 我早上八点去工作。, 早上我去工作八点。], text: Elige el orden. «Voy a trabajar a las ocho de la mañana.»}
+    answer: {choice: b, hanzi: 我早上八点去工作。, meaning: 'La hora va delante del verbo, nunca al final.', pinyin: wǒ zǎoshang bā diǎn qù gōngzuò}
+    comments: []
+  - id: x.dictation.daxue
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.daxue]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: da4 xue2, hanzi: 大学, pinyin: dàxué, meaning: universidad}
+    comments: []
+  - id: x.produce.daxue
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.daxue]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «universidad»? Escribe el pinyin.'}
+    answer: {typed: da4 xue2, hanzi: 大学, pinyin: dàxué, meaning: universidad}
+    comments: []
+  - id: x.read.daxue
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.daxue]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 大学}
+    answer: {hanzi: 大学, pinyin: dàxué, meaning: universidad}
+    comments: []
+  - id: x.tones.daxue
+    added: 2026-10-31
+    lang: es
+    type: tones
+    targets: [w.daxue]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '42', hanzi: 大学, pinyin: dàxué, meaning: universidad}
+    comments: []
+  - id: x.dictation.jiao.teach
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.jiao.teach]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jiao1, hanzi: 教, pinyin: jiāo, meaning: enseñar}
+    comments: []
+  - id: x.produce.jiao.teach
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.jiao.teach]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «enseñar»? Escribe el pinyin.'}
+    answer: {typed: jiao1, hanzi: 教, pinyin: jiāo, meaning: enseñar}
+    comments: []
+  - id: x.read.jiao.teach
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.jiao.teach]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 教}
+    answer: {hanzi: 教, pinyin: jiāo, meaning: enseñar}
+    comments: []
+  - id: x.dictation.ban.class
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.ban.class]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ban1, hanzi: 班, pinyin: bān, meaning: 'clase, grupo (de alumnos)'}
+    comments: []
+  - id: x.produce.ban.class
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.ban.class]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «clase, grupo (de alumnos)»? Escribe el pinyin.'}
+    answer: {typed: ban1, hanzi: 班, pinyin: bān, meaning: 'clase, grupo (de alumnos)'}
+    comments: []
+  - id: x.read.ban.class
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.ban.class]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 班}
+    answer: {hanzi: 班, pinyin: bān, meaning: 'clase, grupo (de alumnos)'}
+    comments: []
+  - id: x.dictation.xue
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.xue]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xue2, hanzi: 学, pinyin: xué, meaning: 'aprender, estudiar'}
+    comments: []
+  - id: x.produce.xue
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.xue]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «aprender, estudiar»? Escribe el pinyin.'}
+    answer: {typed: xue2, hanzi: 学, pinyin: xué, meaning: 'aprender, estudiar'}
+    comments: []
+  - id: x.read.xue
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.xue]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 学}
+    answer: {hanzi: 学, pinyin: xué, meaning: 'aprender, estudiar'}
+    comments: []
+  - id: x.dictation.zuoye
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.zuoye]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zuo4 ye4, hanzi: 作业, pinyin: zuòyè, meaning: deberes}
+    comments: []
+  - id: x.produce.zuoye
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.zuoye]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «deberes»? Escribe el pinyin.'}
+    answer: {typed: zuo4 ye4, hanzi: 作业, pinyin: zuòyè, meaning: deberes}
+    comments: []
+  - id: x.read.zuoye
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.zuoye]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 作业}
+    answer: {hanzi: 作业, pinyin: zuòyè, meaning: deberes}
+    comments: []
+  - id: x.produce.wo-zai-daxue-xuexi-zhongwen
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-zai-daxue-xuexi-zhongwen
+    targets: [s.wo-zai-daxue-xuexi-zhongwen]
+    context: [w.wo, w.zai.at, w.daxue, w.xuexi, w.zhongwen]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estudio chino en la universidad.»'}
+    answer: {meaning: Estudio chino en la universidad.}
+    comments: []
+  - id: x.produce.laoshi-jiao-women-zhongwen
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.laoshi-jiao-women-zhongwen
+    targets: [s.laoshi-jiao-women-zhongwen]
+    context: [w.laoshi, w.jiao.teach, w.women, w.zhongwen]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «La profesora nos enseña chino.»'}
+    answer: {meaning: La profesora nos enseña chino.}
+    comments: []
+  - id: x.produce.women-ban-you-shi-ge-ren
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.women-ban-you-shi-ge-ren
+    targets: [s.women-ban-you-shi-ge-ren]
+    context: [w.women, w.ban.class, w.you.have, w.num.shi, w.ge, w.ren]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «En mi clase somos diez.»'}
+    answer: {meaning: En mi clase somos diez.}
+    comments: []
+  - id: x.produce.wo-zai-zuo-zuoye
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-zai-zuo-zuoye
+    targets: [s.wo-zai-zuo-zuoye]
+    context: [w.wo, w.zai.progressive, w.zuo.do, w.zuoye]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estoy haciendo los deberes.»'}
+    answer: {meaning: Estoy haciendo los deberes.}
+    comments: []
+  - id: x.produce.wo-zaoshang-ba-dian-qu-gongzuo
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-zaoshang-ba-dian-qu-gongzuo
+    targets: [s.wo-zaoshang-ba-dian-qu-gongzuo]
+    context: [w.wo, w.zaoshang, w.ba, w.dian.oclock, w.qu, w.gongzuo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Voy a trabajar a las ocho de la mañana.»'}
+    answer: {meaning: Voy a trabajar a las ocho de la mañana.}
+    comments: []
+  - id: x.listen.wo-xiang-xue-geng-duo-zhongwen-suoyi
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.wo-xiang-xue-geng-duo-zhongwen-suoyi
+    targets: [s.wo-xiang-xue-geng-duo-zhongwen-suoyi]
+    context: [w.wo, w.xiang, w.xue, w.geng, w.duo, w.zhongwen, w.suoyi, w.mei.each, w.tian, w.yidian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Quiero aprender más chino, así que cada día estudio un poco más.'}
+    comments: []
+  - id: x.produce.wo-xiang-duo-xue-yidian-zhongwen
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-xiang-duo-xue-yidian-zhongwen
+    targets: [s.wo-xiang-duo-xue-yidian-zhongwen]
+    context: [w.wo, w.xiang, w.duo, w.xue, w.yidian, w.zhongwen]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero aprender un poco más de chino.»'}
+    answer: {meaning: Quiero aprender un poco más de chino.}
+    comments: []
+  - id: x.charsound.zuo
+    added: 2026-10-31
+    lang: es
+    type: charsound
+    targets: [w.gongzuo, w.zuoye]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 作}
+    answer: {typed: zuo4, hanzi: 作, pinyin: zuò, meaning: 'Sale en 工作 gōngzuò «trabajo; trabajar», 作业 zuòyè «deberes».'}
+    comments: []
+  - id: x.contrast.jiao.teach
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.jiao-tones
+    targets: [w.jiao.teach]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 教, pinyin: jiāo, meaning: enseñar}
+    comments: []
+  - id: x.contrast.ban.class
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.ban-tones
+    targets: [w.ban.class]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 班, pinyin: bān, meaning: 'clase, grupo (de alumnos)'}
+    comments: []
+  - id: x.contrast.xue
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.xue-tones
+    targets: [w.xue]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 学, pinyin: xué, meaning: 'aprender, estudiar'}
+    comments: []
+  - id: x.dictation.chuli
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.chuli]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chu3 li3, hanzi: 处理, pinyin: chǔlǐ, meaning: 'encargarse de, resolver'}
+    comments: []
+  - id: x.produce.chuli
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.chuli]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «encargarse de, resolver»? Escribe el pinyin.'}
+    answer: {typed: chu3 li3, hanzi: 处理, pinyin: chǔlǐ, meaning: 'encargarse de, resolver'}
+    comments: []
+  - id: x.read.chuli
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.chuli]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 处理}
+    answer: {hanzi: 处理, pinyin: chǔlǐ, meaning: 'encargarse de, resolver'}
+    comments: []
+  - id: x.tones.chuli
+    added: 2026-10-31
+    lang: es
+    type: tones
+    targets: [w.chuli]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 处理, pinyin: chu li}
+    answer: {typed: '33', hanzi: 处理, pinyin: chǔlǐ, meaning: 'encargarse de, resolver'}
+    comments: []
+  - id: x.produce.wo-hui-chuli-de
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-hui-chuli-de
+    targets: [s.wo-hui-chuli-de]
+    context: [w.wo, w.hui.can, w.chuli, w.de]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Descuida, me encargo yo.»'}
+    answer: {meaning: 'Descuida, me encargo yo.'}
+    comments: []
+  - id: x.charsound.li-2
+    added: 2026-10-31
+    lang: es
+    type: charsound
+    targets: [w.jingli, w.chuli]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 理}
+    answer: {typed: li3, hanzi: 理, pinyin: lǐ, meaning: 'Sale en 经理 jīnglǐ «jefe, gerente», 处理 chǔlǐ «encargarse de, resolver».'}
+    comments: []

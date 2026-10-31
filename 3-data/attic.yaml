@@ -59,6 +59,8 @@ items:
     reason: HSK 5; entra cuando lleguen los colores.
     notes:
       - {text: '灰 huī es «ceniza»: el color de la ceniza.'}
+    snooze: 015-2026-10-31-volver-a-casa-y-para-entender
+    snooze_reason: 'llegaron 白色 y 绿色, de clase y solo para oír; 灰色 (HSK 5) espera a que los colores se practiquen para decir'
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
 
   # ---------------------------------------------------------------- dinero, errores
@@ -176,6 +178,8 @@ items:
     reason: 'HSK 3.'
     notes:
       - {text: '我坐飞机去中国看朋友表演 «volé a China a ver actuar a mi amigo»: una cadena de acciones larga.', original: 'wo zuo fei ji qu zhong guo kan peng you biao yan biao wu'}
+    snooze: 015-2026-10-31-volver-a-casa-y-para-entender
+    snooze_reason: '唱歌 entró solo para oír; 表演 espera a que salga en clase o en tus notas, con su frase'
     source: {batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: a.baogao
     snooze: 007-2026-10-07-fechas-ordinales-y-clasificadores
@@ -290,16 +294,6 @@ items:
     notes:
       - {text: '面 «cara, lado» forma las posiciones: 上面 «encima», 下面 «debajo», 里面 «dentro», 外面 «fuera», 前面 «delante», 后面 «detrás». 我在里面 «estoy dentro».'}
     source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
-  - id: a.waimian
-    hanzi: 外面
-    pinyin: wàimiàn
-    meaning: {es: fuera}
-    theme: lugares
-    links: [里面, 面]
-    reason: HSK 3; con las demás posiciones con 面.
-    notes:
-      - {text: '你在外面吗？ «¿estás fuera?».'}
-    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
   - id: a.shangmian
     hanzi: 上面
     pinyin: shàngmiàn
@@ -380,6 +374,8 @@ items:
     reason: 'HSK 2; suelto, sin frase.'
     notes:
       - {text: '明 «brillante» + 星 «estrella»: el mismo 星 de 星期 y 星星.'}
+    snooze: 015-2026-10-31-volver-a-casa-y-para-entender
+    snooze_reason: '唱歌 entró solo para oír y 明星 sigue sin frase; espera a una tuya o de clase'
     source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: a.dao.cl
     hanzi: 道
@@ -742,16 +738,6 @@ items:
     reason: 'HSK 3, de tu consulta sobre 意 y 思; se usa para ideas e ideología, no para lo que piensas ahora.'
     notes:
       - {text: '他的思想很传统 «tiene ideas muy tradicionales». Para «creo que…», 我觉得.'}
-    source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
-  - id: a.dagai
-    hanzi: 大概
-    pinyin: dàgài
-    meaning: {es: 'aproximadamente; probablemente'}
-    theme: numeros
-    links: [大约]
-    reason: 'HSK 3, de tu consulta sobre los kilos. Para aproximar ya tienes 左右 (三公斤左右).'
-    notes:
-      - {text: '大概三公斤 «unos tres kilos», delante de la cantidad; 左右 va detrás.'}
     source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
   - id: a.renao
     hanzi: 热闹

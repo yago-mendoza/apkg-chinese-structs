@@ -1076,3 +1076,91 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¡Ya te he dicho que no quiero agua!»'}
     answer: {meaning: ¡Ya te he dicho que no quiero agua!}
     comments: []
+  - id: x.choice.telefono-tingbudong
+    added: '2026-10-31'
+    lang: es
+    type: speak
+    targets: [s.wo-ting-bu-dong]
+    skills: [production, speaking]
+    accept_pinyin_mismatch: '不 átono entre 听 y 懂: tīng bu dǒng'
+    prompt: {options: [我听不见。, 我听不懂。, 我看不见。], text: 'Elige. Hablas por teléfono con un amigo chino: lo oyes perfectamente, pero no conoces las palabras que usa.'}
+    answer: {choice: b, hanzi: 我听不懂。, meaning: '听不懂: lo oyes, pero no lo entiendes. 听不见: no te llega el sonido.', pinyin: wǒ tīng bu dǒng}
+    comments: []
+  - id: x.pair.qi-ti
+    added: '2026-10-31'
+    lang: es
+    type: listen
+    targets: [w.wenti]
+    pair:
+      - {hanzi: 题, meaning: 'tema, pregunta (el de 问题)', pinyin: tí}
+      - {hanzi: 起, meaning: levantarse (el de 对不起), pinyin: qǐ}
+    skills: [listening, discrimination]
+    prompt: {audio: true, text: 'Suenan dos. ¿Cuál es tí, el de 问题, la 1.ª o la 2.ª?'}
+    answer: {meaning: 'La 1.ª: tí 题, el de 问题. La 2.ª era qǐ 起, el de 对不起.'}
+    comments: []
+  - id: x.produce.wo-zhidao-zhege-ci-danshi-bu-dong
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-zhidao-zhege-ci-danshi-bu-dong
+    targets: [s.wo-zhidao-zhege-ci-danshi-bu-dong]
+    context: [w.wo, w.zhidao, w.zhe, w.ge, w.ci.word, w.danshi, w.bu, w.dong, w.ta.it, w.de, w.yisi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Conozco esta palabra, pero no entiendo lo que significa.»'}
+    answer: {meaning: 'Conozco esta palabra, pero no entiendo lo que significa.'}
+    comments: []
+  - id: x.listen.wo-bu-zhidao-ni-dong-ma
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.wo-bu-zhidao-ni-dong-ma
+    targets: [s.wo-bu-zhidao-ni-dong-ma]
+    context: [w.wo, w.bu, w.zhidao, w.ni, w.dong, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'No lo sé. ¿Tú lo entiendes?'}
+    comments: []
+  - id: x.produce.ni-neng-shuo-de-geng-man-yidian-ma
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.ni-neng-shuo-de-geng-man-yidian-ma
+    targets: [s.ni-neng-shuo-de-geng-man-yidian-ma]
+    context: [w.ni, w.neng, w.shuo, w.de.complement, w.geng, w.man, w.yidian, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Puedes hablar un poco más despacio?»'}
+    answer: {meaning: '¿Puedes hablar un poco más despacio?'}
+    comments: []
+  - id: x.produce.wo-you-yi-ge-wenti
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-you-yi-ge-wenti
+    targets: [s.wo-you-yi-ge-wenti]
+    context: [w.wo, w.you.have, w.num.yi, w.ge, w.wenti]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo una pregunta.»'}
+    answer: {meaning: Tengo una pregunta.}
+    comments: []
+  - id: x.produce.zhege-wenti-hen-nan
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.zhege-wenti-hen-nan
+    targets: [s.zhege-wenti-hen-nan]
+    context: [w.zhe, w.ge, w.wenti, w.hen, w.nan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Esta pregunta es muy difícil.»'}
+    answer: {meaning: Esta pregunta es muy difícil.}
+    comments: []
+  - id: x.produce.ni-zai-shuo-shenme
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.ni-zai-shuo-shenme
+    targets: [s.ni-zai-shuo-shenme]
+    context: [w.ni, w.zai.progressive, w.shuo, w.shenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué estás diciendo?»'}
+    answer: {meaning: '¿Qué estás diciendo?'}
+    comments: []

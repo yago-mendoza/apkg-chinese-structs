@@ -249,6 +249,7 @@ entries:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: '万 es una unidad propia, 10 000: 三万 son 30 000 y 十万, 100 000. El chino agrupa las cifras de cuatro en cuatro, no de tres en tres.'}
+      - {date: '2026-10-31', kind: tip, private: false, text: 'Los números grandes van de 万 en 万, no de mil en mil: separa de cuatro en cuatro cifras desde la derecha, y lo de la izquierda son 万. 3|5781 = 三万五千七百八十一; 10|6234 = 十万六千二百三十四.'}
   - id: w.duoda
     use: say
     role: content
@@ -263,6 +264,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: '你多大？ a alguien de tu edad; 你几岁？ a un niño; 您多大年纪了？ a una persona mayor o de respeto.'}
       - {kind: linguistic, private: false, date: '2026-10-26', text: '多 + adjetivo pregunta cuánto: 多大 «qué edad» o «qué tamaño» (中国有多大？), 多高 «qué altura», 多远 «qué distancia».', original: '多大 (duō dà) pregunta «cómo de grande»; con personas suele preguntar la edad, pero también sirve para tamaños. […] 多 + adjetivo pregunta por el grado: 多大 = qué tamaño/edad; 多高 (duō gāo) = qué altura; 多远 (duō yuǎn) = qué distancia.'}
+      - {date: '2026-10-31', kind: tip, private: false, text: 'La edad, según a quién: 你几岁了？ a un niño; 你多大了？ a alguien de tu edad; 您多大年纪了？ a una persona mayor, nunca 您多大岁. Al contestar, sin verbo: 我二十六岁, como 今天八号 o 现在十点.'}
   - id: w.nianji
     use: hear
     role: content
@@ -306,6 +308,7 @@ entries:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Va detrás del número: 四十岁左右 «unos cuarenta años». Suelto, 左右 es «izquierda y derecha».'}
+      - {date: '2026-10-31', kind: tip, private: false, text: '左右 va detrás de la cantidad y redondea: 三十岁左右, 十点左右, 两斤左右的苹果 (no 两斤苹果左右). 大概 va delante: 大概三十岁.'}
   - id: w.haoma
     use: say
     role: content
@@ -516,6 +519,7 @@ entries:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-007-2026-10-07-fechas-ordinales-y-clasificadores.md, date: '2026-10-08'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Cuenta las veces que se hace algo entero: 这本书我看了两遍 «me he leído este libro dos veces enteras»; 再说一遍 «dilo otra vez».'}
+      - {date: '2026-10-31', kind: tip, private: false, text: '次 cuenta ocasiones (我去过两次 «he ido dos veces»); 遍, una vez entera, de principio a fin (这本书我看了三遍). Cuando dudes, 次 es la general.'}
   - id: g.ci-bian
     kind: group
     basis: set
@@ -615,3 +619,13 @@ entries:
       - {ref: c.wu.noon, cue: 'solo en palabras del día: 中午, 下午'}
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
     comments: []
+  - id: w.dagai
+    use: say
+    role: content
+    kind: word
+    hanzi: 大概
+    pinyin: dàgài
+    meaning: {en: about; probably, es: aproximadamente; seguramente}
+    source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, date: '2026-10-21', file: review-012-2026-10-19-querer-poder-y-matices.md, origin: attic, rescued: 015-2026-10-31-volver-a-casa-y-para-entender}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: '大概 va delante de la cantidad y 左右 detrás; juntos también: 他大概三十岁左右 «tendrá unos treinta».'}

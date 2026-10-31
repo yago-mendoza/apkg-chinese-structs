@@ -13,7 +13,7 @@
 - ✅🃏 晚 wǎn [wan˧˩˧] · tarde · _sustantivo_ · 晚上 es «la noche»; 晚 suelto es «tarde»: 我来晚了 «he llegado tarde».
 - ✅🃏 年 nián [njɛn˧˥] · año · _clasificador_ · 午 wǔ «mediodía», 牛 niú «vaca» y 年 nián «año» se parecen mucho y no suenan igual. · Como 天, ya es una unidad y va sin clasificador: 两年 «dos años», 三天 «tres días».
 - ✅🃏 昨天 zuótiān [tswɔ˧˥ tʰjɛn˥] · ayer · _sustantivo_
-- ✅🃏 时间 shíjiān [ʂɨ˧˥ tɕjɛn˥] · tiempo (de reloj) · _sustantivo_ · El tiempo que tienes, no el que hace (eso es 天气): 我没有时间 «no tengo tiempo». · 时间 es el tiempo que tienes: 我没有时间 «no tengo tiempo». Lo que dura mucho es 久: 好久不见 «¡cuánto tiempo!». Lo que dura algo se pregunta con 多久. · 间 es el sol 日 que entra por una puerta 门: el hueco entre dos cosas, en el espacio o en el tiempo. Por eso también es «sala»: 房间, 洗手间.
+- ✅🃏 时间 shíjiān [ʂɨ˧˥ tɕjɛn˥] · tiempo (de reloj) · _sustantivo_ · El tiempo que tienes, no el que hace (eso es 天气): 我没有时间 «no tengo tiempo». · 时间 es el tiempo que tienes: 我没有时间 «no tengo tiempo». Lo que dura mucho es 久: 好久不见 «¡cuánto tiempo!». Lo que dura algo se pregunta con 多久. · 间 es el sol 日 que entra por una puerta 门: el hueco entre dos cosas, en el espacio o en el tiempo. Por eso también es «sala»: 房间, 洗手间. · 间 es un hueco: entre dos momentos es 时间, el tiempo; entre paredes, 房间, la habitación; y el cuarto de lavarse las manos, 洗手间.
 - ✅🃏 睡觉 shuìjiào [ʂweɪ˥˩ tɕjɑʊ˥˩] · dormir, irse a dormir · _verbo_ · 觉 aquí se lee jiào; en 觉得 juéde [HSK 1] «parecer, creer» se lee jué. Suena igual que 叫 jiào «llamarse», pero es otro carácter.
 - ✅🃏 回家 huíjiā [xweɪ˧˥ tɕja˥] · volver a casa · _verbo_ · 回 «volver» + 家 «casa». Encadena otra acción detrás: 我回家睡觉 «me voy a casa a dormir».
 - ✅🃏 正在 zhèngzài [ʈʂɤŋ˥˩ tsaɪ˥˩] · estar (justo ahora) haciendo · _adverbio_ · Como 在 + verbo, pero subraya «justo ahora»: 我正在学习.
@@ -31,7 +31,7 @@
 - ✅🃏 什么时候 shénme shíhou [ʂən˧˥ mɤ ʂɨ˧˥ xoʊ] · cuándo · _expresión_ · Palabra a palabra: 什么 «qué» + 时候 «momento». Va donde iría la respuesta: 你什么时候来？ «¿cuándo vienes?». · Palabra a palabra: 什么 «qué» + 时候 «momento». 你什么时候来？ es «tú, qué momento, vienes»: ¿cuándo vienes?
 - 🟡🃏 时 shí · tiempo, hora (en 时候, 时间) · En 时 se puede ver un carnero cósmico: el que lleva el tiempo. · Al final de una palabra, 时 es «el momento» o «la hora»: 小时 «una hora». Detrás de 有, «hay veces»: 有时候 «a veces». · 日 «sol» + 寸 «medida»: antes se medía el tiempo mirando el sol; medir el sol es medir el tiempo.
 - 🟡🃏 今 jīn · ahora, actual (en 今天, 今年)
-- ✅🃏 点 diǎn [tjɛn˧˩˧] · la hora en punto (las tres, las cinco…) · _clasificador_ · Número + 点: 三点 «las tres». 现在几点？ «¿qué hora es?». Delante va la parte del día: 早上七点 «las siete de la mañana», 下午五点 «las cinco de la tarde». · Es el mismo 点 de la coma decimal: 三点五 «tres coma cinco». En la hora, lo que sigue son minutos: 三点五分 «las tres y cinco».
+- ✅🃏 点 diǎn [tjɛn˧˩˧] · la hora en punto (las tres, las cinco…) · _clasificador_ · Número + 点: 三点 «las tres». 现在几点？ «¿qué hora es?». Delante va la parte del día: 早上七点 «las siete de la mañana», 下午五点 «las cinco de la tarde». · Es el mismo 点 de la coma decimal: 三点五 «tres coma cinco». En la hora, lo que sigue son minutos: 三点五分 «las tres y cinco». · 点: 占, una cajita con un palito encima, sobre cuatro patitas 灬: un reloj de madera que marca un punto en el tiempo, 十一点. · Las cuatro patitas 灬 no son fuego aquí: son lo que quedó de 黑 «negro» en 點, la forma antigua. 占 da el sonido, como en 店 y 站.
 - ✅🃏 半 bàn [pan˥˩] · y media; mitad · _número_ · 三点半 «las tres y media». También «medio»: 半个小时 «media hora». · Da el sonido a 胖 pàng «gordo».
 - ✅🃏 分 fēn [fən˥] · minuto (en la hora: las ocho y diez) · _clasificador_ · En la hora: 八点十分 «las ocho y diez». Para lo que dura algo se dice 分钟: 十分钟 «diez minutos».
 - ✅🃏 分钟 fēnzhōng [fən˥ ʈʂʊŋ˥] · minuto (de duración) · _clasificador_ · Palabra a palabra: 分 «parte» + 钟 «reloj». Para lo que dura: 等十分钟 «esperar diez minutos». En la hora basta 分: 八点十分.
@@ -59,6 +59,11 @@
 - ✅🃏 见面 jiànmiàn [tɕjɛn˥˩ mjɛn˥˩] · verse, quedar (con alguien) · _verbo_ · Palabra a palabra: 见 «ver» + 面 «cara»: verse las caras. 我们明天见面吧 «quedamos mañana». · En 面 se ve una cara, clavada: 见面 es «vernos las caras». · 见面 es el encuentro en persona, no organizarlo: para quedar se usa 约 yuē [HSK 3]. Y conocer a alguien es 认识: puedes 认识 a alguien por internet sin haber 见面 todavía. 面 es «cara» solo dentro de palabras; la cara, al hablar, es 脸 liǎn.
 - ✅🃏 常 cháng [ʈʂʰɑŋ˧˥] · a menudo, soler · _adverbio_ · Lo mismo que 常常: 我常去这里 «suelo venir aquí». Para negar, 不常, mejor que 不常常: 我不常喝咖啡. · Dos señores mayores con rulos, sentados siempre en el mismo sitio: los viejos son animales de costumbres.
 - ✅🃏 总是 zǒngshì [tsʊŋ˧˩˧ ʂɨ˥˩] · siempre · _adverbio_ · 我总是喝茶 «siempre tomo té»: más que 常常 «a menudo». Va delante del verbo o del adjetivo: 他总是很忙.
+- ✅🃏 后 hòu [xoʊ˥˩] · después (de); detrás · _sustantivo_ · Detrás de un tiempo: 三天后 «dentro de tres días», 吃饭后 «después de comer». Con 以 delante es la palabra suelta: 以后 «después».
+- ✅🃏 起来 qǐlai [tɕʰi˧˩˧ laɪ] · levantarse · _verbo_ · Palabra a palabra: 起 «levantarse» + 来 «hacia aquí». 我七点起来 «me levanto a las siete».
+- ✅🃏 睡 shuì [ʂweɪ˥˩] · dormir · _verbo_ · Suelto, sobre todo con algo detrás: 睡一下 «echar una cabezada». Irse a dormir es 睡觉.
+- ✅🃏 回到 huídào [xweɪ˧˥ tɑʊ˥˩] · volver a, llegar de vuelta · _verbo_ · 回 «volver» + 到 «llegar»: 我回到家了 «ya estoy de vuelta en casa». Sin 到, 回家 es solo «volver a casa».
+- ✅🃏 路上 lùshang [lu˥˩ ʂɑŋ] · por el camino, de camino · _sustantivo_ · 在回家的路上 «de camino a casa». Al despedir a alguien: 路上小心 «ten cuidado por el camino».
 
 ## 上 / 中 / 下 + 午
 
@@ -142,6 +147,20 @@ Se mira desde el momento en que hablas: lo que ya pasó, lo que está pasando y 
 - 快要 kuàiyào · inminente, con 了 al final
 - {S} + 还 + 没 + {V}  · aún no, sin 了
 
+## 半 y 班
+
+Solo los separa el tono.
+
+- 半 bàn · 4.º tono, baja fuerte: 三点半
+- 班 bān · 1.er tono, alto y plano: 我们班, 上班
+
+## 后 y 猴
+
+Solo los separa el tono.
+
+- 后 hòu · 4.º tono, baja fuerte: 三天后
+- 猴 hóu · 2.º tono, sube: 猴年
+
 ## Frases
 
 - ✅🃏 下午去商店。 · xiàwǔ qù shāngdiàn · Por la tarde voy a la tienda.
@@ -216,3 +235,19 @@ Se mira desde el momento en que hablas: lo que ya pasó, lo que está pasando y 
 - ✅🃏 你哪天可以来？ · nǐ nǎ tiān kěyǐ lái · ¿Qué día puedes venir?
 - ✅🃏 我们哪天见面？明天怎么样？好，明天见！ · wǒmen nǎ tiān jiànmiàn míngtiān zěnmeyàng hǎo míngtiān jiàn · —¿Qué día quedamos? —¿Qué tal mañana? —Vale, ¡hasta mañana!
 - ✅🃏 你哪天来？ · nǐ nǎ tiān lái · ¿Qué día vienes?
+- ✅🃏 我要回家了。 · wǒ yào huíjiā le · Me voy ya a casa.
+- ✅🃏 我在回家的路上。 · wǒ zài huíjiā de lùshang · Estoy de camino a casa.
+- ✅🃏 我快到家了。 · wǒ kuài dào jiā le · Ya casi estoy en casa.
+- ✅🃏 我还没到家。 · wǒ hái méi dào jiā · Todavía no he llegado a casa.
+- ✅🃏 我刚到家。 · wǒ gāng dào jiā · Acabo de llegar a casa.
+- ✅🃏 我已经到家了。 · wǒ yǐjīng dào jiā le · Ya he llegado a casa.
+- ✅🃏 我还在家。 · wǒ hái zài jiā · Sigo en casa.
+- ✅🃏 我刚回到家。 · wǒ gāng huídào jiā · Acabo de volver a casa.
+- ✅🃏 三天后我去中国。 · sān tiān hòu wǒ qù Zhōngguó · Dentro de tres días voy a China.
+- ✅🃏 我早上七点起来。 · wǒ zǎoshang qī diǎn qǐlai · Me levanto a las siete de la mañana.
+- ✅🃏 我想睡一下。 · wǒ xiǎng shuì yíxià · Quiero dormir un rato.
+- ✅🃏 我明天跟他见面。 · wǒ míngtiān gēn tā jiànmiàn · Mañana quedo con él.
+- ✅🃏 我需要更多时间。 · wǒ xūyào gèng duō shíjiān · Necesito más tiempo.
+- ✅🃏 现在太晚了，我明天再去看你。 · xiànzài tài wǎn le wǒ míngtiān zài qù kàn nǐ · Ya es demasiado tarde: iré a verte mañana.
+- ✅🃏 你最好今天去。 · nǐ zuìhǎo jīntiān qù · Mejor ve hoy.
+- ✅🃏 你到家了吗？还没，我快到了。好，路上小心！ · nǐ dào jiā le ma hái méi wǒ kuài dào le hǎo lùshang xiǎoxīn · —¿Ya has llegado a casa? —Todavía no, ya casi estoy. —Vale, ¡ten cuidado por el camino!

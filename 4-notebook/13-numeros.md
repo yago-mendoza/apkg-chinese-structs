@@ -25,12 +25,12 @@
 - ✅🃏 零 líng [liŋ˧˥] · cero · _número_ · 零 marca las cifras vacías: 一百零五 (105), 一千零五十 (1050), 七千零三 (7003). Aunque falten varias seguidas, se dice un solo 零. · Tiene una forma rarísima.
 - ✅🃏 百 bǎi [paɪ˧˩˧] · cien · _número_
 - ✅🃏 千 qiān [tɕʰjɛn˥] · mil · _número_
-- ✅🃏 万 wàn [wan˥˩] · diez mil · _número_ · 万 es una unidad propia, 10 000: 三万 son 30 000 y 十万, 100 000. El chino agrupa las cifras de cuatro en cuatro, no de tres en tres.
-- ✅🃏 多大 duō dà [twɔ˥ ta˥˩] · ¿cuántos años? (entre adultos) · _interrogativo_ · 你多大？ a alguien de tu edad; 你几岁？ a un niño; 您多大年纪了？ a una persona mayor o de respeto. · 多 + adjetivo pregunta cuánto: 多大 «qué edad» o «qué tamaño» (中国有多大？), 多高 «qué altura», 多远 «qué distancia».
+- ✅🃏 万 wàn [wan˥˩] · diez mil · _número_ · 万 es una unidad propia, 10 000: 三万 son 30 000 y 十万, 100 000. El chino agrupa las cifras de cuatro en cuatro, no de tres en tres. · 💡 Los números grandes van de 万 en 万, no de mil en mil: separa de cuatro en cuatro cifras desde la derecha, y lo de la izquierda son 万. 3|5781 = 三万五千七百八十一; 10|6234 = 十万六千二百三十四.
+- ✅🃏 多大 duō dà [twɔ˥ ta˥˩] · ¿cuántos años? (entre adultos) · _interrogativo_ · 你多大？ a alguien de tu edad; 你几岁？ a un niño; 您多大年纪了？ a una persona mayor o de respeto. · 多 + adjetivo pregunta cuánto: 多大 «qué edad» o «qué tamaño» (中国有多大？), 多高 «qué altura», 多远 «qué distancia». · 💡 La edad, según a quién: 你几岁了？ a un niño; 你多大了？ a alguien de tu edad; 您多大年纪了？ a una persona mayor, nunca 您多大岁. Al contestar, sin verbo: 我二十六岁, como 今天八号 o 现在十点.
 - ✅🃏 年纪 niánjì [njɛn˧˥ tɕi˥˩] · edad (con respeto) · _sustantivo_ · 我和你年纪一样大 «tú y yo tenemos la misma edad»: 和 «y», 一样 «igual».
 - ✅🃏 您高寿 nín gāoshòu [nin˧˥ kɑʊ˥ ʂoʊ˥˩] · ¿cuántos años tiene usted? (a mayores de 70) · _expresión_ · Palabra a palabra: 您 «usted» + 高 «alto» + 寿 «años de vida»: «sus muchos años».
 - ✅🃏 年轻 niánqīng [njɛn˧˥ tɕʰiŋ˥] · joven · _adjetivo_ · Con pocos años, la vida pesa poco: 年 «año» + 轻 qīng «ligero» [HSK 2].
-- ✅🃏 左右 zuǒyòu [tswɔ˧˩˧ joʊ˥˩] · más o menos, aproximadamente · _número_ · Va detrás del número: 四十岁左右 «unos cuarenta años». Suelto, 左右 es «izquierda y derecha».
+- ✅🃏 左右 zuǒyòu [tswɔ˧˩˧ joʊ˥˩] · más o menos, aproximadamente · _número_ · Va detrás del número: 四十岁左右 «unos cuarenta años». Suelto, 左右 es «izquierda y derecha». · 💡 左右 va detrás de la cantidad y redondea: 三十岁左右, 十点左右, 两斤左右的苹果 (no 两斤苹果左右). 大概 va delante: 大概三十岁.
 - ✅🃏 号码 hàomǎ [xɑʊ˥˩ ma˧˩˧] · número (de teléfono, de pasaporte…) · _sustantivo_ · Al dar un número de teléfono, 一 se lee yāo para no confundirlo con 七 qī: 110 se dice yāo yāo líng.
 - ✅🃏 第 dì [ti˥˩] · prefijo de los ordinales · _número_ · 第 + número = ordinal: 第一 «primero», 第二 «segundo», 第三天 «el tercer día». Con ordinales siempre 二, nunca 两.
 - ✅🃏 亿 yì [i˥˩] · cien millones · _número_ · Después de 万 viene 亿: 一亿 son cien millones y 十四亿, mil cuatrocientos millones (la población de China). 十万 «cien mil», 百万 «un millón».
@@ -39,10 +39,11 @@
 - ✅🃏 杯 bēi [peɪ˥] · vaso de, taza de (clasificador) · _clasificador_ · 一杯茶 «una taza de té», 两杯水 «dos vasos de agua». El vaso como objeto es 杯子.
 - ✅🃏 件 jiàn [tɕjɛn˥˩] · clasificador de ropa y de asuntos · _clasificador_ · 一件衣服 «una prenda». También para asuntos: 一件事 «una cosa, un asunto».
 - ✅🃏 次 cì [tsʰɯ˥˩] · vez (cuántas veces pasa algo) · _clasificador_ · Cuenta ocasiones, detrás del verbo: 他来过两次 «ha venido dos veces». Ir a un sitio siempre se cuenta con 次.
-- ✅🃏 遍 biàn [pjɛn˥˩] · vez (de principio a fin) · _clasificador_ · Cuenta las veces que se hace algo entero: 这本书我看了两遍 «me he leído este libro dos veces enteras»; 再说一遍 «dilo otra vez».
+- ✅🃏 遍 biàn [pjɛn˥˩] · vez (de principio a fin) · _clasificador_ · Cuenta las veces que se hace algo entero: 这本书我看了两遍 «me he leído este libro dos veces enteras»; 再说一遍 «dilo otra vez». · 💡 次 cuenta ocasiones (我去过两次 «he ido dos veces»); 遍, una vez entera, de principio a fin (这本书我看了三遍). Cuando dudes, 次 es la general.
 - ✅🃏 点 diǎn [tjɛn˧˩˧] · coma decimal (三点五 = 3,5) · _sustantivo_ · 三点五 «3,5»; 零点八 «0,8». En una hora, en cambio, 三点 son «las tres»: lo que sigue a 点 decide (三点五分 «las tres y cinco»).
 - ✅🃏 幺 yāo [jɑʊ˥] · uno (al dar teléfonos y números de habitación) · _número_ · Al dictar cifras sueltas, el 1 se dice yāo para no confundirlo con 七 qī: 110 es yāo yāo líng. Contando o en una cantidad, 一 yī.
 - ✅🃏 一半 yíbàn [i˧˥ pan˥˩] · la mitad · _número_ · 我要一半 «quiero la mitad». 一斤 es la mitad de un 公斤.
+- ✅🃏 大概 dàgài [ta˥˩ kaɪ˥˩] · aproximadamente; seguramente · _adverbio_ · 大概 va delante de la cantidad y 左右 detrás; juntos también: 他大概三十岁左右 «tendrá unos treinta».
 
 ## 九 jiǔ y 就 jiù
 
@@ -222,7 +223,7 @@ Suenan igual, con el mismo tono. 五 es el número; 午 «mediodía» solo sale 
 - ✅🃏 我十岁。 · wǒ shí suì · Tengo diez años.
 - ✅🃏 他年纪大了。 · tā niánjì dà le · Ya es mayor.
 - ✅🃏 我出生在一九八零年。 · wǒ chūshēng zài yī jiǔ bā líng nián · Nací en 1980.
-- ✅🃏 我今年二十岁。 · wǒ jīnnián èr shí suì · Tengo veinte años.
+- ✅🃏 我(今年)二十岁。 · wǒ jīnnián èr shí suì · Tengo veinte años.
 - ✅🃏 他三十岁左右。 · tā sān shí suì zuǒyòu · Tiene unos treinta años.
 - ✅🃏 我还不到二十八岁。 · wǒ hái bú dào èr shí bā suì · Todavía no tengo veintiocho años.
 - ✅🃏 你的朋友二十八岁了。 · nǐ de péngyou èr shí bā suì le · Tu amigo ya tiene veintiocho años.
@@ -246,3 +247,8 @@ Suenan igual, con el mismo tono. 五 es el número; 午 «mediodía» solo sale 
 - ✅🃏 北京有两千多万人。 · Běijīng yǒu liǎng qiān duō wàn rén · En Pekín viven más de veinte millones de personas.
 - ✅🃏 我和你年纪一样大。 · wǒ hé nǐ niánjì yíyàng dà · Tú y yo tenemos la misma edad.
 - ✅🃏 我二十八岁了。 · wǒ èr shí bā suì le · Ya tengo veintiocho años.
+- ✅🃏 这是我第二次来中国。 · zhè shì wǒ dì èr cì lái Zhōngguó · Es la segunda vez que vengo a China.
+- ✅🃏 他大概三十岁左右。 · tā dàgài sān shí suì zuǒyòu · Tendrá unos treinta años.
+- ✅🃏 我去过两次。 · wǒ qù guo liǎng cì · He ido dos veces.
+- ✅🃏 这本书我看了三遍。 · zhè běn shū wǒ kàn le sān biàn · Este libro me lo he leído tres veces, entero.
+- ✅🃏 你去过几次？ · nǐ qù guo jǐ cì · ¿Cuántas veces has ido?

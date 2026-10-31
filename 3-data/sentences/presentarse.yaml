@@ -490,7 +490,7 @@ sentences:
       - {text: 属, ref: w.shu.belong, pinyin: 'shǔ'}
       - {text: 兔, ref: w.tu, pinyin: 'tù'}
       - {text: ，}
-      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
+      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián', optional: true}
       - {text: 二, ref: w.num.er, pinyin: 'èr'}
       - {text: 十, ref: w.num.shi, pinyin: 'shí'}
       - {text: 六, ref: w.num.liu, pinyin: 'liù'}
@@ -503,7 +503,7 @@ sentences:
     kind: formula
     segments:
       - {text: 他, ref: w.ta.he, pinyin: 'tā'}
-      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
+      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián', optional: true}
       - {text: 多大, ref: w.duoda, pinyin: 'duō dà'}
       - {text: ？}
     translation: {es: '¿Cuántos años tiene (él) este año?', en: 'How old is he this year?'}
@@ -590,6 +590,7 @@ sentences:
   - id: s.dlg-zhende
     use: hear
     kind: example
+    speakers: [A, B, A, A]
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 会, ref: w.hui.can, pinyin: huì}
@@ -674,6 +675,7 @@ sentences:
   - id: s.dlg-zhongguo-xuesheng-ma
     use: hear
     kind: example
+    speakers: [A, B]
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 是, ref: w.shi, pinyin: 'shì'}
@@ -694,6 +696,7 @@ sentences:
   - id: s.dlg-ni-shi-xuesheng-ma
     use: hear
     kind: example
+    speakers: [A, B]
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 是, ref: w.shi, pinyin: 'shì'}
@@ -1021,7 +1024,7 @@ sentences:
     kind: formula
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
-      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
+      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián', optional: true}
       - {text: 几, ref: w.ji, pinyin: 'jǐ'}
       - {text: 岁, ref: w.sui, pinyin: 'suì'}
       - {text: 了, ref: w.le, pinyin: 'le'}
@@ -1108,7 +1111,7 @@ sentences:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 猜, ref: w.cai.guess, pinyin: 'cāi'}
       - {text: 他, ref: w.ta.he, pinyin: 'tā'}
-      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
+      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián', optional: true}
       - {text: 二, ref: w.num.er, pinyin: 'èr'}
       - {text: 十, ref: w.num.shi, pinyin: 'shí'}
       - {text: 岁, ref: w.sui, pinyin: 'suì'}
@@ -1130,14 +1133,14 @@ sentences:
       - {text: 的, ref: w.de, pinyin: 'de'}
       - {text: ？}
       - {text: 他, ref: w.ta.he, pinyin: 'tā'}
-      - {text: 是, ref: w.shi, pinyin: 'shì'}
+      - {text: 是, ref: w.shi, pinyin: 'shì', optional: true}
       - {text: 一, ref: w.num.yi, pinyin: 'yī'}
       - {text: 九, ref: w.num.jiu, pinyin: 'jiǔ'}
       - {text: 九, ref: w.num.jiu, pinyin: 'jiǔ'}
       - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
       - {text: 年, ref: w.nian, pinyin: 'nián'}
       - {text: 出生, ref: w.chusheng, pinyin: 'chūshēng'}
-      - {text: 的, ref: w.de, pinyin: 'de'}
+      - {text: 的, ref: w.de, pinyin: 'de', optional: true}
       - {text: ，}
       - {text: 他, ref: w.ta.he, pinyin: 'tā'}
       - {text: 属, ref: w.shu.belong, pinyin: 'shǔ'}
@@ -1186,7 +1189,7 @@ sentences:
       - {text: 属, ref: w.shu.belong, pinyin: 'shǔ'}
       - {text: 龙, ref: w.long, pinyin: 'lóng'}
       - {text: ，}
-      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
+      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián', optional: true}
       - {text: 二, ref: w.num.er, pinyin: 'èr'}
       - {text: 十, ref: w.num.shi, pinyin: 'shí'}
       - {text: 四, ref: w.num.si, pinyin: 'sì'}
@@ -1199,7 +1202,7 @@ sentences:
     kind: example
     segments:
       - {text: 他, ref: w.ta.he, pinyin: 'tā'}
-      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
+      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián', optional: true}
       - {text: 二, ref: w.num.er, pinyin: 'èr'}
       - {text: 十, ref: w.num.shi, pinyin: 'shí'}
       - {text: 岁, ref: w.sui, pinyin: 'suì'}
@@ -1211,7 +1214,7 @@ sentences:
     kind: example
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
-      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián'}
+      - {text: 今年, ref: w.jinnian, pinyin: 'jīnnián', optional: true}
       - {text: 二, ref: w.num.er, pinyin: 'èr'}
       - {text: 十, ref: w.num.shi, pinyin: 'shí'}
       - {text: 五, ref: w.num.wu, pinyin: 'wǔ'}
@@ -1302,6 +1305,7 @@ sentences:
   - id: s.dlg-o-wo-ye-shu-long
     use: hear
     kind: example
+    speakers: [A, B, A]
     segments:
       - {text: 你, ref: w.ni, pinyin: 'nǐ'}
       - {text: 属, ref: w.shu.belong, pinyin: 'shǔ'}
@@ -1389,3 +1393,77 @@ sentences:
       - {text: ？}
     translation: {es: '¿De qué país eres?', en: 'Which country are you from?'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.ta-shi-ma-nian-chusheng-de
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {optional: true, pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: mǎ, ref: w.ma.horse, text: 马}
+      - {pinyin: nián, ref: w.nian, text: 年}
+      - {pinyin: chūshēng, ref: w.chusheng, text: 出生}
+      - {optional: true, pinyin: de, ref: w.de, text: 的}
+      - {text: 。}
+    translation: {en: He was born in the year of the horse., es: Nació en el año del caballo.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: diapositivas 2026-10-30, origin: class}
+  - id: s.ta-shi-2001-nian-chusheng-de-shu-she
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {optional: true, pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: èr, ref: w.num.er, text: 二}
+      - {pinyin: líng, ref: w.ling, text: 零}
+      - {pinyin: líng, ref: w.ling, text: 零}
+      - {pinyin: yī, ref: w.num.yi, text: 一}
+      - {pinyin: nián, ref: w.nian, text: 年}
+      - {pinyin: chūshēng, ref: w.chusheng, text: 出生}
+      - {optional: true, pinyin: de, ref: w.de, text: 的}
+      - {text: ，}
+      - {pinyin: shǔ, ref: w.shu.belong, text: 属}
+      - {pinyin: shé, ref: w.she, text: 蛇}
+      - {text: 。}
+    translation: {en: 'He was born in 2001, the year of the snake.', es: 'Nació en 2001: es del año de la serpiente.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: deberes 2026-10-30, origin: class}
+  - id: s.wo-shi-2000-nian-chusheng-de-shu-long
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {optional: true, pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: èr, ref: w.num.er, text: 二}
+      - {pinyin: líng, ref: w.ling, text: 零}
+      - {pinyin: líng, ref: w.ling, text: 零}
+      - {pinyin: líng, ref: w.ling, text: 零}
+      - {pinyin: nián, ref: w.nian, text: 年}
+      - {pinyin: chūshēng, ref: w.chusheng, text: 出生}
+      - {optional: true, pinyin: de, ref: w.de, text: 的}
+      - {text: ，}
+      - {pinyin: shǔ, ref: w.shu.belong, text: 属}
+      - {pinyin: lóng, ref: w.long, text: 龙}
+      - {text: 。}
+    translation: {en: 'I was born in 2000, the year of the dragon.', es: 'Nací en 2000: soy del año del dragón.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: deberes 2026-10-30, origin: class}
+  - id: s.wo-xiang-zhu-zai-zhongguo
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: zhù, ref: w.zhu.live, text: 住}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: Zhōngguó, ref: w.zhongguo, text: 中国}
+      - {text: 。}
+    translation: {en: I want to live in China., es: Quiero vivir en China.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-lai-jieshao-yixia
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: lái, ref: w.lai, text: 来}
+      - {pinyin: jièshào, ref: w.jieshao, text: 介绍}
+      - {pinyin: yíxià, ref: w.yixia, sandhi: true, text: 一下}
+      - {text: 。}
+    translation: {en: Let me introduce you., es: Os presento.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}

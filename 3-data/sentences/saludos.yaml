@@ -231,6 +231,7 @@ sentences:
   - id: s.dlg-huilai
     use: hear
     kind: example
+    speakers: [A, B, B]
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 回来, ref: w.huilai, pinyin: huílai}
@@ -433,3 +434,14 @@ sentences:
       - {text: 。}
     translation: {es: 'Voy tirando.', en: 'I am OK, not bad.'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.hao-a-mingtian-jian
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: hǎo, ref: w.hao, text: 好}
+      - {pinyin: a, ref: w.a.particle, text: 啊}
+      - {text: ，}
+      - {pinyin: míngtiān jiàn, ref: e.mingtianjian, text: 明天见}
+      - {text: ！}
+    translation: {en: 'Sure, see you tomorrow!', es: '¡Vale, hasta mañana!'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}

@@ -405,3 +405,31 @@ Al investigar por qué le volvían las tarjetas, se vio que `docs/owner.md` dec�
 ### 2026-10-26 · Comprobar en Anki que lo nuevo funciona, en cada lote
 
 YAGO pidió que, además de escribir las prácticas nuevas en los documentos, cada lote compruebe que los sistemas funcionan. Decidido: un paso fijo tras subir (10b del flujo): leer de Anki las tarjetas cambiadas y una muestra de cada mecanismo nuevo o tocado, y revisar con `stats` que no haya repeticiones raras ni intervalos que no cuadren con los botones; lo que falle, al lote o a «Fricciones del proceso». Vive en: `docs/design.md` («Flujo de un lote»).
+
+### 2026-10-31 · «Para entender», también en las tarjetas
+
+YAGO pidió que los comentarios de los reviews (lo que falla, las observaciones de teoría, los consejos) estén en las tarjetas, como las mnemotecnias, en recuadros informativos, y que una línea separe la respuesta y su contraste de lo demás. Decidido: un comentario nuevo, `tip`, rotulado «Para entender» 💡, el primero bajo una línea que separa la respuesta, el contraste de la propia tarjeta y los ejemplos de la ayuda (lo de clase, las mnemotecnias, las notas…). Las minilecciones de los reviews 011 a 014 pasan a sus entradas (salvo la teoría de pronunciación, que sigue fuera de las tarjetas), y desde ahora cada «Para entender» del review se guarda además así. En el review, cada minilección empieza por 💡. Vive en: `docs/goal.md` («Cómo se practican las frases», «Cómo se le habla»), `docs/design.md` («Comentarios», «Tarjetas», «Garantías»), `anki.py` (`notes_html`, `HELP_RANK`, CSS) y el cuaderno web.
+
+### 2026-10-31 · Lo opcional, entre paréntesis; los clasificadores, con su recuadro
+
+YAGO pidió poner entre paréntesis lo opcional (el 今年 de las frases de edad, el 是…的 de 他是一九九五年出生的) y que el audio lo lea entero, y un aspecto propio para los clasificadores, «como un atajo de teclado en markdown». Decidido: un trozo de frase con `optional: true` sale entre paréntesis y algo más apagado; el audio dice la frase entera (no cambia ni se regenera) y, al escribirla, vale con ello o sin ello. Todo trozo cuya entrada es un clasificador lleva un recuadro dentro de la línea. Las dos cosas, en Anki, en el cuaderno web y en la exportación. Vive en: `docs/goal.md`, `docs/design.md` («Datos», «Garantías»), `3-data/README.md`, `anki.py` (`render_sentence`, `sentence_shown`, `sentence_core`, `CLASSIFIERS`, `INPUT_JS_BACK`).
+
+### 2026-10-31 · Un diálogo, turno a turno
+
+YAGO pidió que la tarjeta de oír de un diálogo no suene de un tirón, sino turno a turno, con una marca de quién habla, para entenderlo como conversación; el audio entero sigue sirviendo como ejemplo en otras tarjetas. Decidido: un diálogo lleva `speakers` (quién dice cada oración); en su tarjeta de oír, cada turno suena aparte con su marca (🗣️ A, 🗣️ B), y detrás sale turno a turno con su traducción. Vive en: `docs/goal.md`, `docs/design.md` («Datos»), `anki.py` (`dialogue_turns`, `required_audio`).
+
+### 2026-10-31 · Otras formas de decirlo que suenan igual; el sonido de un hanzi, sin explicación en la respuesta
+
+YAGO vio dos tarjetas cuyo «Otras formas de decirlo» repetía la respuesta: 你猜她多大？ y 你猜他多大？ suenan igual. Decidido: `also` es para lo que se dice de otra forma; `check` avisa si suena igual, y la diferencia de escritura va en una nota. Y en la tarjeta del sonido de 洗 la explicación («Sale en…») estaba dentro de la respuesta: ahora la respuesta es solo la sílaba, y dónde sale va en su recuadro, cada palabra con una frase suya. Vive en: `docs/design.md` («Tarjetas»), `anki.py` (`validate`, `card_fields`).
+
+### 2026-10-31 · La lectura de los polífonos, fijada en su entrada
+
+Propuesto en los lotes 013 y 014, sin respuesta en contra. Decidido: una entrada cuyo sentido la voz lee mal lleva `tts` (pinyin SAPI); todo audio que la contiene se genera con esa lectura fijada, y el manifiesto guarda cuál se usó, para regenerar si cambia. Empieza con 哦 ò suelto y 得 děi. Vive en: `docs/design.md` («Audio»), `anki.py` (`tts_readings`, `cmd_audio`).
+
+### 2026-10-31 · Un repaso de calidad cada pocos lotes
+
+YAGO pidió «un contador interno» que cada pocos lotes compruebe que no hay redundancias y que cada cosa está en su nivel, y que antes de crear lo que pide se mire si ya existe. Decidido: `anki.py audit` lista lo que `check` no puede dar por error (frases casi iguales, tarjetas del mismo tipo con los mismos objetivos, niveles escritos a mano para lo que ya está en la lista, otras formas que suenan igual), y la retrospectiva lo repasa cada `MAINTENANCE_EVERY` lotes; lo que pide en sus notas se busca primero con `lookup` (ya era el paso 3 del flujo) y el log dice qué ya existía. Vive en: `docs/design.md` («Retrospectiva», «Garantías»), `anki.py` (`audit_report`).
+
+### 2026-10-31 · La web lee el mazo de GitHub, no de jsDelivr
+
+jsDelivr dejó de servir el repositorio al pasar de 50 MB (el `.apkg` solo pesa 60): servía unos archivos y negaba otros. Decidido, en InfraPhysics: la página y su cuaderno leen la exportación y el audio de `raw.githubusercontent.com`, en el commit al que apunta `main`, con la copia propia como respaldo; se ponen al día solos tras cada push, sin volver a fijar el lote. El workflow `publish`, que purgaba jsDelivr, ya no hace falta. Vive en: `docs/design.md` («Repositorio y privacidad»).

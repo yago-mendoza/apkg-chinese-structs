@@ -148,3 +148,4 @@ La misma sílaba: solo los separa el tono.
 - ✅🃏 孟先生，您好！ · Mèng xiānsheng nín hǎo · ¡Buenos días, señor Mèng!
 - ✅🃏 恭喜你！ · gōngxǐ nǐ · ¡Felicidades!
 - ✅🃏 我还好。 · wǒ hái hǎo · Voy tirando.
+- ✅🃏 好啊，明天见！ · hǎo a míngtiān jiàn · ¡Vale, hasta mañana!

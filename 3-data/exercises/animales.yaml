@@ -586,3 +586,217 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 鸟}
     answer: {hanzi: 鸟, pinyin: niǎo, meaning: pájaro}
     comments: []
+  - id: x.pair.gou-kou
+    added: '2026-10-31'
+    lang: es
+    type: listen
+    targets: [w.gou]
+    pair:
+      - {hanzi: 狗, meaning: perro, pinyin: gǒu}
+      - {hanzi: 口, meaning: boca; clasificador de los de casa, pinyin: kǒu}
+    skills: [listening, discrimination]
+    prompt: {audio: true, text: 'Suenan dos. ¿Cuál es gǒu, la 1.ª o la 2.ª?'}
+    answer: {meaning: 'La 1.ª: gǒu 狗 «perro», sin soplo. La 2.ª era kǒu 口 «boca».'}
+    comments: []
+  - id: x.dictation.laoshu
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.laoshu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lao3 shu3, hanzi: 老鼠, pinyin: lǎoshǔ, meaning: 'ratón, rata'}
+    comments: []
+  - id: x.read.laoshu
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.laoshu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 老鼠}
+    answer: {hanzi: 老鼠, pinyin: lǎoshǔ, meaning: 'ratón, rata'}
+    comments: []
+  - id: x.tones.laoshu
+    added: 2026-10-31
+    lang: es
+    type: tones
+    targets: [w.laoshu]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 老鼠, pinyin: lao shu}
+    answer: {typed: '33', hanzi: 老鼠, pinyin: lǎoshǔ, meaning: 'ratón, rata'}
+    comments: []
+  - id: x.dictation.laohu
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.laohu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lao3 hu3, hanzi: 老虎, pinyin: lǎohǔ, meaning: tigre}
+    comments: []
+  - id: x.read.laohu
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.laohu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 老虎}
+    answer: {hanzi: 老虎, pinyin: lǎohǔ, meaning: tigre}
+    comments: []
+  - id: x.tones.laohu
+    added: 2026-10-31
+    lang: es
+    type: tones
+    targets: [w.laohu]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 老虎, pinyin: lao hu}
+    answer: {typed: '33', hanzi: 老虎, pinyin: lǎohǔ, meaning: tigre}
+    comments: []
+  - id: x.dictation.tuzi
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.tuzi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: tu4 zi5, hanzi: 兔子, pinyin: tùzi, meaning: conejo}
+    comments: []
+  - id: x.produce.tuzi
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.tuzi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «conejo»? Escribe el pinyin.'}
+    answer: {typed: tu4 zi5, hanzi: 兔子, pinyin: tùzi, meaning: conejo}
+    comments: []
+  - id: x.read.tuzi
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.tuzi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 兔子}
+    answer: {hanzi: 兔子, pinyin: tùzi, meaning: conejo}
+    comments: []
+  - id: x.tones.tuzi
+    added: 2026-10-31
+    lang: es
+    type: tones
+    targets: [w.tuzi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 兔子, pinyin: tu zi}
+    answer: {typed: '45', hanzi: 兔子, pinyin: tùzi, meaning: conejo}
+    comments: []
+  - id: x.listen.mao-he-laoshu-bu-shi-pengyou
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.mao-he-laoshu-bu-shi-pengyou
+    targets: [s.mao-he-laoshu-bu-shi-pengyou]
+    context: [w.mao, w.he.and, w.laoshu, w.bu, w.shi, w.pengyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: El gato y el ratón no son amigos.}
+    comments: []
+  - id: x.listen.laohu-hen-da
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.laohu-hen-da
+    targets: [s.laohu-hen-da]
+    context: [w.laohu, w.hen, w.da]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: El tigre es muy grande.}
+    comments: []
+  - id: x.listen.she-shi-lvse-de
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.she-shi-lvse-de
+    targets: [s.she-shi-lvse-de]
+    context: [w.she, w.shi, w.lvse, w.de]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: La serpiente es verde.}
+    comments: []
+  - id: x.listen.xiao-tuzi-shi-baise-de
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.xiao-tuzi-shi-baise-de
+    targets: [s.xiao-tuzi-shi-baise-de]
+    context: [w.xiao.small, w.tuzi, w.shi, w.baise, w.de]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: El conejito es blanco.}
+    comments: []
+  - id: x.listen.xiao-ji-he-xiao-gou-dou-hen-keai
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.xiao-ji-he-xiao-gou-dou-hen-keai
+    targets: [s.xiao-ji-he-xiao-gou-dou-hen-keai]
+    context: [w.xiao.small, w.ji.chicken, w.he.and, w.gou, w.dou, w.hen, w.keai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Los pollitos y los perritos son muy monos.}
+    comments: []
+  - id: x.listen.zhe-zhi-tuzi-zhen-keai
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.zhe-zhi-tuzi-zhen-keai
+    targets: [s.zhe-zhi-tuzi-zhen-keai]
+    context: [w.zhe, w.zhi.cl, w.tuzi, w.zhen, w.keai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Qué mono es este conejo!}
+    comments: []
+  - id: x.produce.zhe-zhi-tuzi-zhen-keai
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.zhe-zhi-tuzi-zhen-keai
+    targets: [s.zhe-zhi-tuzi-zhen-keai]
+    context: [w.zhe, w.zhi.cl, w.tuzi, w.zhen, w.keai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Qué mono es este conejo!»'}
+    answer: {meaning: ¡Qué mono es este conejo!}
+    comments: []
+  - id: x.listen.ni-juede-zhe-zhi-mao-keai-ma
+    added: 2026-10-31
+    lang: es
+    type: listen
+    sentence: s.ni-juede-zhe-zhi-mao-keai-ma
+    targets: [s.ni-juede-zhe-zhi-mao-keai-ma]
+    context: [w.ni, w.juede, w.zhe, w.zhi.cl, w.mao, w.keai, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Te parece mono este gato?'}
+    comments: []
+  - id: x.produce.ni-juede-zhe-zhi-mao-keai-ma
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.ni-juede-zhe-zhi-mao-keai-ma
+    targets: [s.ni-juede-zhe-zhi-mao-keai-ma]
+    context: [w.ni, w.juede, w.zhe, w.zhi.cl, w.mao, w.keai, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Te parece mono este gato?»'}
+    answer: {meaning: '¿Te parece mono este gato?'}
+    comments: []
+  - id: x.contrast.hou
+    added: 2026-10-31
+    lang: es
+    type: contrast
+    group: g.hou-tones
+    targets: [w.hou]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 猴, pinyin: hóu, meaning: mono (en el zodiaco)}
+    comments: []

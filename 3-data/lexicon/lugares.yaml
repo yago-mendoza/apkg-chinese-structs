@@ -282,6 +282,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Palabra a palabra: 洗 «lavar» + 手 «mano» + 间 «sala»: «la sala de lavarse las manos». Es la forma educada, la de restaurantes y centros comerciales. En casas y hoteles se lee 卫生间 [HSK 3]; en la calle, 厕所 [HSK 6].'}
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'En las puertas, 男 «hombres» y 女 «mujeres».'}
+      - {date: '2026-10-31', kind: linguistic, original: aseo =  lavar manos habitscion, private: false, text: 'Palabra a palabra: 洗 «lavar» + 手 «mano» + 间 «cuarto»: el cuarto para lavarse las manos, el aseo.'}
   - id: w.xiache
     use: hear
     role: content
@@ -440,3 +441,44 @@ entries:
       - {ref: w.la.pull, cue: 'a la derecha, 立 «de pie»'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
     comments: []
+  - id: w.xia.down
+    use: say
+    role: content
+    kind: word
+    hanzi: 下
+    pinyin: xià
+    meaning: {en: 'below, down', es: 'abajo, debajo'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: '楼下 «abajo, en la planta de abajo»; 下车 «bajar del coche». Lo contrario es 上: 楼上, 上车.'}
+  - id: w.zhan
+    use: say
+    role: content
+    kind: word
+    hanzi: 站
+    pinyin: zhàn
+    meaning: {en: 'station, stop', es: 'estación, parada'}
+    connection: {kind: sound, text: '占 da el sonido a 站 zhàn, 点 diǎn y 店 diàn: un punto en el reloj (点), bajo techo (店, una tienda) y de pie 立 (站, donde esperas).', with: [点, 店]}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: '地铁站 «estación de metro», 车站 «estación, parada». Como verbo es «estar de pie».'}
+  - id: w.qiche
+    use: say
+    role: content
+    kind: word
+    hanzi: 汽车
+    pinyin: qìchē
+    meaning: {en: car, es: coche}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: 'Palabra a palabra: 汽 «vapor» + 车 «vehículo». Al hablar, muchas veces basta 车: 我开车 «conduzco».'}
+  - id: w.waimian
+    use: say
+    role: content
+    kind: word
+    hanzi: 外面
+    pinyin: wàimiàn
+    meaning: {en: outside, es: fuera}
+    source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, date: '2026-10-09', file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, origin: attic, rescued: 015-2026-10-31-volver-a-casa-y-para-entender}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: '你在外面吗？ «¿estás fuera?». 外 suelto casi no se usa: al hablar, 外面.'}

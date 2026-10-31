@@ -4,10 +4,10 @@
 
 ## Vocabulario
 
-- ✅🃏 想 xiǎng [ɕjɑŋ˧˩˧] · querer o tener pensado (hacer algo); pensar · _verbo_ · Dos sentidos: «pensar» y «querer, tener ganas de». · 我想想 «déjame pensar»: el verbo repetido es «un momento, un poco», como 看看 «echar un vistazo».
+- ✅🃏 想 xiǎng [ɕjɑŋ˧˩˧] · querer o tener pensado (hacer algo); pensar · _verbo_ · Dos sentidos: «pensar» y «querer, tener ganas de». · 我想想 «déjame pensar»: el verbo repetido es «un momento, un poco», como 看看 «echar un vistazo». · 💡 想, tres usos: con un verbo, ganas (我想去); solo, pensar (我在想); con una persona, echarla de menos (我想你). Si ya está decidido, 打算: 我打算明年去中国.
 - ✅🃏 去 qù [tɕʰy˥˩] · ir · _verbo_
 - ✅🃏 买 mǎi [maɪ˧˩˧] · comprar · _verbo_
-- ✅🃏 商店 shāngdiàn [ʂɑŋ˥ tjɛn˥˩] · tienda · _sustantivo_
+- ✅🃏 商店 shāngdiàn [ʂɑŋ˥ tjɛn˥˩] · tienda · _sustantivo_ · 商: dos personas dentro de una casa, negociando: el comercio.
 - ✅🃏 在 zài [tsaɪ˥˩] · estar en (un lugar) · _verbo_
 - ❌ 哪儿 nǎr [naɻ˧˩˧] · dónde · _interrogativo_
 - ✅🃏 喜欢 xǐhuan [ɕi˧˩˧ xwan] · gustar · _verbo_ · 喜: un tambor sobre una boca que canta: alegría. · 欢 es ligada: aparece en 喜欢 y en 欢迎 huānyíng «bienvenido». 喜 también en 恭喜 gōngxǐ «¡enhorabuena!» [HSK 7], muy frecuente al hablar.
@@ -33,7 +33,7 @@
 - ✅🃏 少 shǎo [ʂɑʊ˧˩˧] · poco; menos · _adjetivo_ · Para regatear: 能少一点吗？ «¿puede dejarlo en menos?». Es el 少 de 多少 «cuánto», literalmente «mucho-poco».
 - ✅🃏 卖 mài [maɪ˥˩] · vender · _verbo_ · 卖 es 买 con 十 encima: cuando tienes de más, lo vendes. · 买 mǎi «comprar», tercer tono; 卖 mài «vender», cuarto. 他卖水果 «vende fruta».
 - ✅🃏 一些 yìxiē [i˥˩ ɕjɛ˥] · algunos, un poco de · _número_ · Va delante del nombre: 买一些水果 «comprar algo de fruta».
-- ✅🃏 斤 jīn [tɕin˥] · medio kilo (unidad de peso) · _clasificador_ · 1 公斤 = 2 斤: en el mercado se pesa en 斤. 一斤苹果 es medio kilo de manzanas. · 斤 jīn da el sonido a 近 jìn «cerca»: mismo sonido, otro tono.
+- ✅🃏 斤 jīn [tɕin˥] · medio kilo (unidad de peso) · _clasificador_ · 1 公斤 = 2 斤: en el mercado se pesa en 斤. 一斤苹果 es medio kilo de manzanas. · 斤 jīn da el sonido a 近 jìn «cerca»: mismo sonido, otro tono. · 💡 斤 ya es la medida: 一斤苹果, nunca 一个斤苹果. En el mercado, también al revés: 苹果多少钱一斤 «¿a cuánto el 斤 de manzanas?».
 - ✅🃏 公斤 gōngjīn [kʊŋ˥ tɕin˥] · kilo · _clasificador_ · Palabra a palabra: 公 «oficial» + 斤: el 斤 oficial, el del sistema métrico, que pesa el doble. Es el kilo al hablar; en las etiquetas pone 千克. · 公 gōng, primer tono, suena como un gong chino, y el hanzi tiene forma de gong.
 - ✅🃏 商场 shāngchǎng [ʂɑŋ˥ ʈʂʰɑŋ˧˩˧] · centro comercial · _sustantivo_ · Palabra a palabra: 商 «comercio» + 场 «recinto»: el sitio grande de las tiendas. 商店 es una tienda.
 - ✅🃏 全部 quánbù [tɕʰɥœn˧˥ pu˥˩] · todo, la totalidad (de un conjunto) · _número_ · Todos los de un conjunto que se tiene delante: 我全部都要 «me lo llevo todo». 都 refuerza que no falta ninguno.
@@ -43,6 +43,7 @@
 - ✅🃏 门票 ménpiào [mən˧˥ pʰjɑʊ˥˩] · entrada (a un museo, un parque) · _sustantivo_ · Palabra a palabra: 门 «puerta» + 票 «billete»: el billete para pasar la puerta. Para el avión, 机票. · 门 mén es el mismo de 们 y 问; aquí con su tono y su sentido de «puerta».
 - ✅🃏 付钱 fùqián [fu˥˩ tɕʰjɛn˧˥] · pagar · _verbo_ · Palabra a palabra: 付 «entregar» + 钱 «dinero». 我先付钱 «primero pago». En China casi siempre se paga con el móvil: 扫码.
 - ✅🃏 扫码 sǎomǎ [sɑʊ˧˩˧ ma˧˩˧] · escanear el código (para pagar) · _verbo_ · 刷卡还是扫码？ «¿con tarjeta o con el código?». En China casi todo se paga escaneando un código QR con el móvil.
+- ✅🃏 包 bāo [pɑʊ˥] · bolso, mochila, bolsa · _verbo_
 
 ## Querer, necesitar, gustar, amar
 
@@ -159,3 +160,6 @@ Solo los separa el tono: 买 baja y sube (3.º); 卖 cae (4.º).
 - ✅🃏 这些多少钱？ · zhèxiē duōshao qián · ¿Cuánto cuestan estos?
 - ✅🃏 我要这个，不要那个。 · wǒ yào zhè ge bú yào nà ge · Quiero este, aquel no.
 - ✅🃏 你要哪个？我要这个，不要那个。这个太贵了，那个便宜一点。 · nǐ yào nǎge wǒ yào zhè ge bú yào nà ge zhè ge tài guì le nà ge piányi yìdiǎn · —¿Cuál quieres? —Este, aquel no. Este es demasiado caro; aquel es un poco más barato.
+- ✅🃏 我去超市买水果。 · wǒ qù chāoshì mǎi shuǐguǒ · Voy al súper a comprar fruta.
+- ✅🃏 这个苹果太贵了，我不想买。 · zhè ge píngguǒ tài guì le wǒ bù xiǎng mǎi · Esta manzana es demasiado cara: no la quiero.
+- ✅🃏 我的包在哪里？ · wǒ de bāo zài nǎlǐ · ¿Dónde está mi bolso?

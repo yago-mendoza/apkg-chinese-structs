@@ -12,6 +12,7 @@ entries:
     comments:
       - {kind: note, private: false, date: 2026-09-25, text: 'Dos sentidos: «pensar» y «querer, tener ganas de».', original: think / desire}
       - {kind: linguistic, private: false, date: '2026-10-26', text: '我想想 «déjame pensar»: el verbo repetido es «un momento, un poco», como 看看 «echar un vistazo».', original: 'Wo xiang xiang me encanta como dejame pensar jajajaja auqnue seria mas algo ssi como @pienso..  pensando..." no?'}
+      - {date: '2026-10-31', kind: tip, private: false, text: '想, tres usos: con un verbo, ganas (我想去); solo, pensar (我在想); con una persona, echarla de menos (我想你). Si ya está decidido, 打算: 我打算明年去中国.'}
   - id: w.qu
     use: say
     role: content
@@ -38,7 +39,8 @@ entries:
     pinyin: shāngdiàn
     meaning: {es: tienda, en: shop}
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
-    comments: []
+    comments:
+      - {date: '2026-10-31', kind: mnemonic, original: En 商 (shāng) tú ves dos personas dentro de una casa negociando., private: false, text: '商: dos personas dentro de una casa, negociando: el comercio.'}
   - id: w.zai.at
     use: say
     role: function
@@ -364,6 +366,7 @@ entries:
     comments:
       - {kind: teacher, private: false, date: '2026-10-15', text: '1 公斤 = 2 斤: en el mercado se pesa en 斤. 一斤苹果 es medio kilo de manzanas.'}
       - {kind: character, private: false, date: '2026-10-15', text: '斤 jīn da el sonido a 近 jìn «cerca»: mismo sonido, otro tono.'}
+      - {date: '2026-10-31', kind: tip, private: false, text: '斤 ya es la medida: 一斤苹果, nunca 一个斤苹果. En el mercado, también al revés: 苹果多少钱一斤 «¿a cuánto el 斤 de manzanas?».'}
   - id: w.gongjin
     use: say
     role: content
@@ -499,3 +502,13 @@ entries:
     source: {origin: attic, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11', rescued: 013-2026-10-23-pagar-opinar-y-contrastes}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: '刷卡还是扫码？ «¿con tarjeta o con el código?». En China casi todo se paga escaneando un código QR con el móvil.'}
+  - id: w.bao
+    use: say
+    role: content
+    kind: word
+    hanzi: 包
+    pinyin: bāo
+    meaning: {en: bag, es: 'bolso, mochila, bolsa'}
+    connection: {kind: sound, text: '包 bāo da el sonido a 跑 pǎo: 跑 es 包 con un pie 足 al lado.', with: [跑]}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments: []

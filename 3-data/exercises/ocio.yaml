@@ -292,3 +292,91 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 唱, pinyin: chàng, meaning: cantar}
     comments: []
+  - id: x.dictation.daqiu
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.daqiu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: da3 qiu2, hanzi: 打球, pinyin: dǎqiú, meaning: jugar a la pelota}
+    comments: []
+  - id: x.produce.daqiu
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.daqiu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «jugar a la pelota»? Escribe el pinyin.'}
+    answer: {typed: da3 qiu2, hanzi: 打球, pinyin: dǎqiú, meaning: jugar a la pelota}
+    comments: []
+  - id: x.read.daqiu
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.daqiu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 打球}
+    answer: {hanzi: 打球, pinyin: dǎqiú, meaning: jugar a la pelota}
+    comments: []
+  - id: x.tones.daqiu
+    added: 2026-10-31
+    lang: es
+    type: tones
+    targets: [w.daqiu]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '32', hanzi: 打球, pinyin: dǎqiú, meaning: jugar a la pelota}
+    comments: []
+  - id: x.dictation.changge
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.changge]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chang4 ge1, hanzi: 唱歌, pinyin: chànggē, meaning: cantar}
+    comments: []
+  - id: x.read.changge
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.changge]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 唱歌}
+    answer: {hanzi: 唱歌, pinyin: chànggē, meaning: cantar}
+    comments: []
+  - id: x.produce.ta-xihuan-daqiu
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.ta-xihuan-daqiu
+    targets: [s.ta-xihuan-daqiu]
+    context: [w.ta.he, w.xihuan, w.daqiu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Le gusta jugar a la pelota.»'}
+    answer: {meaning: Le gusta jugar a la pelota.}
+    comments: []
+  - id: x.produce.wo-xihuan-changge
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-xihuan-changge
+    targets: [s.wo-xihuan-changge]
+    context: [w.wo, w.xihuan, w.changge]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me gusta cantar.»'}
+    answer: {meaning: Me gusta cantar.}
+    comments: []
+  - id: x.produce.wo-xiang-xue-youyong
+    added: 2026-10-31
+    lang: es
+    type: produce
+    sentence: s.wo-xiang-xue-youyong
+    targets: [s.wo-xiang-xue-youyong]
+    context: [w.wo, w.xiang, w.xue, w.youyong]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero aprender a nadar.»'}
+    answer: {meaning: Quiero aprender a nadar.}
+    comments: []

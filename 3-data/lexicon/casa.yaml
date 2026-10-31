@@ -317,3 +317,25 @@ entries:
       - {ref: w.dian.electric, cue: 'un sol con un cable que sale por abajo: 电脑'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
     comments: []
+  - id: w.lou
+    use: say
+    role: content
+    kind: word
+    hanzi: 楼
+    pinyin: lóu
+    meaning: {en: building; floor, es: 'edificio; planta, piso'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: '三楼 «el tercer piso»: el número delante, sin 第. 楼下 «abajo», 楼上 «arriba».'}
+  - id: w.xi.wash
+    use: say
+    role: content
+    kind: word
+    hanzi: 洗
+    pinyin: xǐ
+    meaning: {en: to wash, es: lavar}
+    connection: {kind: sound, text: '先 xiān da el sonido a 洗 xǐ, y 氵 «agua», el significado: sin el agua, 洗 es 先.', with: [先]}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: mnemonic, original: Xî es lavar por eso el habzi parece la boca de un aspersor echando agua, private: false, text: 洗 parece la boca de un aspersor echando agua.}
+      - {date: '2026-10-31', kind: linguistic, private: false, text: '洗手 «lavarse las manos», 洗澡 «ducharse», 洗衣服 «lavar la ropa». No confundir con el xǐ de 喜欢: suena igual, pero es la alegría.'}

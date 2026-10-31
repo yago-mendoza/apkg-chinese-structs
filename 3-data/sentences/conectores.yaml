@@ -215,3 +215,45 @@ sentences:
       - {text: 。}
     translation: {es: 'Agua o té, me da igual.', en: 'Water or tea, either is fine.'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-haishi-xiang-qu
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: háishi, ref: w.haishi, text: 还是}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {text: 。}
+    translation: {en: I still want to go., es: Sigo queriendo ir.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-xiuxi-le-danshi-haishi-hen-lei
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiūxi, ref: w.xiuxi, text: 休息}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: ，}
+      - {pinyin: dànshì, ref: w.danshi, text: 但是}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: háishi, ref: w.haishi, text: 还是}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: lèi, ref: w.lei, text: 累}
+      - {text: 。}
+    translation: {en: 'I have rested, but I am still very tired.', es: 'He descansado, pero sigo muy cansado.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-hen-lei-danshi-wo-xiang-qu
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: lèi, ref: w.lei, text: 累}
+      - {text: ，}
+      - {pinyin: dànshì, ref: w.danshi, text: 但是}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {text: 。}
+    translation: {en: 'I am very tired, but I want to go.', es: 'Estoy muy cansado, pero quiero ir.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}

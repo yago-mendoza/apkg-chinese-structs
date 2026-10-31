@@ -197,6 +197,7 @@ sentences:
   - id: s.dlg-shenmeshihou
     use: hear
     kind: example
+    speakers: [A, B, B]
     segments:
       - {text: 你, ref: w.ni, pinyin: nǐ}
       - {text: 什么时候, ref: e.shenmeshihou, pinyin: shénme shíhou}
@@ -440,6 +441,7 @@ sentences:
   - id: s.dlg-ji-dian
     use: hear
     kind: example
+    speakers: [A, B, A]
     segments:
       - {text: 现在, ref: w.xianzai, pinyin: xiànzài}
       - {text: 几, ref: w.ji, pinyin: jǐ}
@@ -851,6 +853,7 @@ sentences:
   - id: s.dlg-na-tian-jianmian
     use: hear
     kind: example
+    speakers: [A, B, A]
     segments:
       - {text: 我们, ref: w.women, pinyin: 'wǒmen'}
       - {text: 哪, ref: w.na.which, pinyin: 'nǎ'}
@@ -878,3 +881,210 @@ sentences:
       - {text: ？}
     translation: {es: '¿Qué día vienes?', en: 'Which day are you coming?'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+  - id: s.wo-yao-hui-jia-le
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: huíjiā, ref: w.huijia, text: 回家}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: 。}
+    translation: {en: I am about to go home., es: Me voy ya a casa.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-zai-hui-jia-de-lushang
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: huíjiā, ref: w.huijia, text: 回家}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: lùshang, ref: w.lushang, text: 路上}
+      - {text: 。}
+    translation: {en: I am on my way home., es: Estoy de camino a casa.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-kuai-dao-jia-le
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: kuài, ref: w.kuai.fast, text: 快}
+      - {pinyin: dào, ref: w.dao.reach, text: 到}
+      - {pinyin: jiā, ref: w.jia, text: 家}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: 。}
+    translation: {en: I am almost home., es: Ya casi estoy en casa.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-hai-mei-dao-jia
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: hái, ref: w.hai.still, text: 还}
+      - {pinyin: méi, ref: w.mei, text: 没}
+      - {pinyin: dào, ref: w.dao.reach, text: 到}
+      - {pinyin: jiā, ref: w.jia, text: 家}
+      - {text: 。}
+    translation: {en: I have not got home yet., es: Todavía no he llegado a casa.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-gang-dao-jia
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: gāng, ref: w.gang, text: 刚}
+      - {pinyin: dào, ref: w.dao.reach, text: 到}
+      - {pinyin: jiā, ref: w.jia, text: 家}
+      - {text: 。}
+    translation: {en: I have just got home., es: Acabo de llegar a casa.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-yijing-dao-jia-le
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yǐjīng, ref: w.yijing, text: 已经}
+      - {pinyin: dào, ref: w.dao.reach, text: 到}
+      - {pinyin: jiā, ref: w.jia, text: 家}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: 。}
+    translation: {en: I am home already., es: Ya he llegado a casa.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-hai-zai-jia
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: hái, ref: w.hai.still, text: 还}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: jiā, ref: w.jia, text: 家}
+      - {text: 。}
+    translation: {en: I am still at home., es: Sigo en casa.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-gang-hui-dao-jia
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: gāng, ref: w.gang, text: 刚}
+      - {pinyin: huídào, ref: w.huidao, text: 回到}
+      - {pinyin: jiā, ref: w.jia, text: 家}
+      - {text: 。}
+    translation: {en: I have just got back home., es: Acabo de volver a casa.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.san-tian-hou-wo-qu-zhongguo
+    use: say
+    kind: example
+    segments:
+      - {pinyin: sān, ref: w.num.san, text: 三}
+      - {pinyin: tiān, ref: w.tian, text: 天}
+      - {pinyin: hòu, ref: w.hou.after, text: 后}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: Zhōngguó, ref: w.zhongguo, text: 中国}
+      - {text: 。}
+    translation: {en: In three days I am going to China., es: Dentro de tres días voy a China.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+  - id: s.wo-zaoshang-qi-dian-qilai
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zǎoshang, ref: w.zaoshang, text: 早上}
+      - {pinyin: qī, ref: w.num.qi, text: 七}
+      - {pinyin: diǎn, ref: w.dian.oclock, text: 点}
+      - {pinyin: qǐlai, ref: w.qilai, text: 起来}
+      - {text: 。}
+    translation: {en: I get up at seven in the morning., es: Me levanto a las siete de la mañana.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+  - id: s.wo-xiang-shui-yixia
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: shuì, ref: w.shui.sleep, text: 睡}
+      - {pinyin: yíxià, ref: w.yixia, sandhi: true, text: 一下}
+      - {text: 。}
+    translation: {en: I want to sleep for a bit., es: Quiero dormir un rato.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-mingtian-gen-ta-jianmian
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: míngtiān, ref: w.mingtian, text: 明天}
+      - {pinyin: gēn, ref: w.gen, text: 跟}
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {pinyin: jiànmiàn, ref: w.jianmian, text: 见面}
+      - {text: 。}
+    translation: {en: I am meeting him tomorrow., es: Mañana quedo con él.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-xuyao-geng-duo-shijian
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xūyào, ref: w.xuyao, text: 需要}
+      - {pinyin: gèng, ref: w.geng, text: 更}
+      - {pinyin: duō, ref: w.duo, text: 多}
+      - {pinyin: shíjiān, ref: w.shijian, text: 时间}
+      - {text: 。}
+    translation: {en: I need more time., es: Necesito más tiempo.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.xianzai-tai-wan-le
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: xiànzài, ref: w.xianzai, text: 现在}
+      - {pinyin: tài, ref: w.tai, text: 太}
+      - {pinyin: wǎn, ref: w.wan, text: 晚}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: ，}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: míngtiān, ref: w.mingtian, text: 明天}
+      - {pinyin: zài, ref: w.zai.again, text: 再}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: kàn, ref: w.kan, text: 看}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {text: 。}
+    translation: {en: It is too late now; I will come to see you tomorrow., es: 'Ya es demasiado tarde: iré a verte mañana.'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.ni-zuihao-jintian-qu
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: zuìhǎo, ref: w.zuihao, text: 最好}
+      - {pinyin: jīntiān, ref: w.jintian, text: 今天}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {text: 。}
+    translation: {en: You had better go today., es: Mejor ve hoy.}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.dlg-dao-jia-le-ma
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: dào, ref: w.dao.reach, text: 到}
+      - {pinyin: jiā, ref: w.jia, text: 家}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+      - {pinyin: hái, ref: w.hai.still, text: 还}
+      - {pinyin: méi, ref: w.mei, text: 没}
+      - {text: ，}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: kuài, ref: w.kuai.fast, text: 快}
+      - {pinyin: dào, ref: w.dao.reach, text: 到}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: 。}
+      - {pinyin: hǎo, ref: w.hao, text: 好}
+      - {text: ，}
+      - {pinyin: lùshang, ref: w.lushang, text: 路上}
+      - {pinyin: xiǎoxīn, ref: w.xiaoxin, text: 小心}
+      - {text: ！}
+    translation: {en: '—Are you home yet? —Not yet, I am almost there. —OK, take care on the way!', es: '—¿Ya has llegado a casa? —Todavía no, ya casi estoy. —Vale, ¡ten cuidado por el camino!'}
+    speakers: [A, B, A]
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}

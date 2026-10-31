@@ -4321,6 +4321,90 @@ characters:
       es: 'Un anciano 耂 sobre el sol 日: el que ya ha visto muchos días.'
       en: 'An old man 耂 above the sun 日: the one who has seen many days.'
     confidence: medium
+  业:
+    gloss: {es: 'oficio, tarea; estudios', en: 'trade, task; studies'}
+    origin:
+      es: 'El origen de su forma es discutido. Una lectura antigua ve un soporte de madera con dientes, para colgar instrumentos.'
+      en: 'The origin of its shape is disputed. One old reading sees a toothed wooden stand for hanging instruments.'
+    memory:
+      es: '业 parece un estante de pie, con sus postes sobre una base: lo que te sostiene, tu tarea.'
+      en: '业 looks like a standing rack, its posts on a base: what holds you up, your task.'
+    confidence: medium
+  包:
+    gloss: {es: 'envolver; bolsa', en: 'to wrap; bag'}
+    origin:
+      es: 'Pictograma: 勹 envuelve y 巳 es un bebé dentro: envolver. De ahí «bolsa, paquete». 勹 bāo da también el sonido.'
+      en: 'Pictograph: 勹 wraps around and 巳 is a baby inside: to wrap. Hence bag, parcel. 勹 bāo also gives the sound.'
+    confidence: high
+  处:
+    gloss: {es: 'lugar; ocuparse de', en: 'place; to handle'}
+    origin:
+      es: 'El origen de su forma es discutido.'
+      en: 'The origin of its shape is disputed.'
+    memory:
+      es: 'Alguien llega andando 夂 y clava una señal 卜: «de esto me encargo yo».'
+      en: 'Someone walks in 夂 and plants a marker 卜: I will handle this.'
+    traditional: 處
+    confidence: medium
+  教:
+    gloss: {es: 'enseñar', en: 'to teach'}
+    origin:
+      es: 'Fonético-semántico: 攵, una mano con una vara, da el significado, y 孝 xiào, el sonido, que hoy ya no se parece: enseñar con disciplina.'
+      en: 'Phono-semantic: 攵, a hand holding a rod, gives the meaning, and 孝 xiào the sound, no longer close: teaching with discipline.'
+    confidence: high
+  楼:
+    gloss: {es: 'edificio de pisos; planta', en: 'building; floor'}
+    origin:
+      es: 'Fonético-semántico: 木 «madera» da el significado y 娄 lóu, el sonido: una casa de madera de varias plantas.'
+      en: 'Phono-semantic: 木 (wood) gives the meaning and 娄 lóu the sound: a wooden house with several floors.'
+    traditional: 樓
+    confidence: high
+  概:
+    gloss: {es: 'en general, más o menos', en: 'general, approximate'}
+    origin:
+      es: 'Fonético-semántico: 木 «madera» da el significado y 既 jì, el sonido, que se parece poco: era el listón para rasar el grano al medirlo. De ahí «en general, más o menos».'
+      en: 'Phono-semantic: 木 (wood) gives the meaning and 既 jì the sound, not very close: the stick used to level grain when measuring it. Hence in general, roughly.'
+    confidence: high
+  歌:
+    gloss: {es: 'canción; cantar', en: 'song; to sing'}
+    origin:
+      es: 'Fonético-semántico: 欠, una persona con la boca abierta, da el significado, y 哥 gē, el sonido: cantar.'
+      en: 'Phono-semantic: 欠, a person with an open mouth, gives the meaning, and 哥 gē the sound: to sing.'
+    confidence: high
+  汽:
+    gloss: {es: 'vapor', en: 'steam'}
+    origin:
+      es: 'Fonético-semántico: 氵 «agua» da el significado y 气 qì «aire», el sonido y parte del sentido: el agua hecha aire, el vapor. El 汽车 era el coche de vapor.'
+      en: 'Phono-semantic: 氵 (water) gives the meaning and 气 qì (air) the sound and part of the sense: water turned to air, steam. The 汽车 was the steam car.'
+    confidence: high
+  站:
+    gloss: {es: 'estar de pie; estación, parada', en: 'to stand; station, stop'}
+    origin:
+      es: 'Fonético-semántico: 立 «estar de pie» da el significado y 占 zhàn, el sonido: estar de pie; de ahí la parada, donde se espera.'
+      en: 'Phono-semantic: 立 (to stand) gives the meaning and 占 zhàn the sound: to stand; hence the stop where one waits.'
+    confidence: high
+  绿:
+    gloss: {es: 'verde', en: 'green'}
+    origin:
+      es: 'Fonético-semántico: 纟 «seda» da el significado y 录 lù, el sonido: el color de una seda teñida.'
+      en: 'Phono-semantic: 纟 (silk) gives the meaning and 录 lù the sound: the colour of dyed silk.'
+    traditional: 綠
+    confidence: high
+  色:
+    gloss: {es: 'color', en: 'colour'}
+    origin:
+      es: 'El origen de su forma es discutido.'
+      en: 'The origin of its shape is disputed.'
+    memory:
+      es: 'Arriba una cabeza ⺈, abajo 巴, un cuerpo enroscado: la cara que se pone de colores.'
+      en: 'A head ⺈ on top, 巴 below, a curled body: a face that changes colour.'
+    confidence: medium
+  钅:
+    gloss: {es: 'metal (forma de 金 a la izquierda)', en: 'metal (side form of 金)'}
+    origin:
+      es: 'Es 金 «metal, oro» estrechado a la izquierda del carácter: en 钱, 铁, 钟 y 错.'
+      en: 'It is 金 (metal, gold) narrowed on the left of a character: in 钱, 铁, 钟 and 错.'
+    confidence: high
 parts:
   亻: {es: 'persona (forma de 人 a la izquierda)', en: 'person (人 on the left)'}
   尔: {es: 'tú (forma corta de 爾)', en: 'you (short form of 爾)'}
