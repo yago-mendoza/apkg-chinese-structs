@@ -14,7 +14,7 @@ Cuándo y cómo se cambia una regla: `docs/design.md` (cabecera y «Retrospectiv
 
 ### 2026-09-25 · Repositorio público
 
-Se comprobó que el repositorio es público. Nada privado ni ninguna credencial en lo versionado; push a GitHub solo cuando lo pide YAGO. Vive en: `AGENTS.md`, `docs/design.md` («Repositorio y privacidad»).
+Se comprobó que el repositorio es público. Nada privado ni ninguna credencial en lo versionado; push a GitHub solo cuando lo pide YAGO. Vive en: `AGENTS.md`, `docs/design.md` («Repositorio y privacidad»). (El push de cada lote, cambiado el 2026-10-31.)
 
 ### 2026-09-26 · El modelo redacta; el código calcula
 
@@ -433,3 +433,7 @@ YAGO pidió «un contador interno» que cada pocos lotes compruebe que no hay re
 ### 2026-10-31 · La web lee el mazo de GitHub, no de jsDelivr
 
 jsDelivr dejó de servir el repositorio al pasar de 50 MB (el `.apkg` solo pesa 60): servía unos archivos y negaba otros. Decidido, en InfraPhysics: la página y su cuaderno leen la exportación y el audio de `raw.githubusercontent.com`, en el commit al que apunta `main`, con la copia propia como respaldo; se ponen al día solos tras cada push, sin volver a fijar el lote. El workflow `publish`, que purgaba jsDelivr, ya no hace falta. Vive en: `docs/design.md` («Repositorio y privacidad»).
+
+### 2026-10-31 · Cada lote se sube a GitHub al cerrarlo
+
+YAGO: «cada vez que tengas un batch, haz lo necesario para que esté en GitHub y InfraPhysics lo tenga accesible, siempre». La web y su cuaderno leen el mazo de `main` en GitHub, así que un lote sin subir no existe para ellos. Decidido: `close-batch`, tras el commit y la etiqueta, sube los dos; si falla, el lote queda cerrado en local y lo dice. Cualquier otro push sigue esperando a que YAGO lo pida. Se quita el workflow `publish`, que purgaba jsDelivr y ya no servía. Vive en: `AGENTS.md`, `docs/design.md` («Flujo de un lote», «Repositorio y privacidad»), `anki.py` (`cmd_close_batch`).

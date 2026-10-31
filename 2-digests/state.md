@@ -38,7 +38,7 @@
 - La cola de nuevas de su nivel son unos 66 días a 30 al día, y lo de clase, unos 36 (aviso por encima de 21). En las próximas 400 nuevas, decir es el 31 %. ([lote 015](/2-digests/summary-015-2026-10-31-volver-a-casa-y-para-entender.md#seguimiento))
 - FSRS optimizado el 21 de octubre con 670 repasos; con él, «Fácil» en una nueva da 2 días. Se repite hacia el lote 022, cada 10 lotes más o menos. ([FSRS](/docs/decisions.md#2026-10-21--fsrs-optimizado-cada-10-lotes), [con FSRS](/docs/decisions.md#2026-10-26--con-fsrs-los-días-los-decide-fsrs))
 - El lote 016 trae mantenimiento y retrospectiva (cada cuatro lotes): ahí se cierra, si se mantiene, la hipótesis del tono en color. ([lote 015](/2-digests/summary-015-2026-10-31-volver-a-casa-y-para-entender.md#seguimiento))
-- La web (infraphysics.net) lee el mazo de GitHub en cuanto se sube; el workflow `publish`, que purgaba jsDelivr, ya no sirve y espera su visto bueno para quitarse. ([la web](/docs/decisions.md#2026-10-31--la-web-lee-el-mazo-de-github-no-de-jsdelivr))
+- La web (infraphysics.net) lee el mazo de GitHub en cuanto se sube, y `close-batch` sube cada lote al cerrarlo. ([la web](/docs/decisions.md#2026-10-31--la-web-lee-el-mazo-de-github-no-de-jsdelivr), [cada lote, subido](/docs/decisions.md#2026-10-31--cada-lote-se-sube-a-github-al-cerrarlo))
 - Las pruebas tardan más de 20 minutos. ([lote 014](/2-digests/summary-014-2026-10-26-duplicados-diagramas-y-recuadros.md#fricciones-del-proceso))
 
 ## Decisiones pendientes

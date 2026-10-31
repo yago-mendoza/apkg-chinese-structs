@@ -4565,7 +4565,7 @@ BATCH_COMMIT_PATHS = ("1-inbox/history", "2-digests", "3-data", "4-notebook", "5
 
 
 def cmd_close_batch(batch, dry_run):
-    """Cierra un lote: archiva el review leído y los apuntes, regenera el cuaderno, commit y etiqueta lote-NNN.
+    """Cierra un lote: archiva el review leído y los apuntes, regenera el cuaderno, commit y etiqueta lote-NNN, y los sube.
     El log del lote ya está en 2-digests/ (lo escribe el agente al procesar)."""
     import shutil
     actions, errors = close_batch_plan(batch)
@@ -4597,7 +4597,15 @@ def cmd_close_batch(batch, dry_run):
     _git("commit", "-q", "-m", f"lote {batch}\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>")
     tag = f"lote-{batch[:3]}"
     _git("tag", "-a", tag, "-m", f"Lote {batch}: estado tras procesarlo")
-    print(f"Lote cerrado: commit y etiqueta {tag}. Subir a GitHub: git push && git push origin {tag}")
+    # Every batch goes up at once (YAGO, 2026-10-31): infraphysics.net reads the deck from GitHub at main's commit.
+    try:
+        _git("push", "-q", "origin", "HEAD")
+        _git("push", "-q", "origin", tag)
+    except RuntimeError as e:
+        print(f"Lote cerrado en local (commit y etiqueta {tag}), pero no se ha subido: {e}")
+        print(f"Repetir: git push origin HEAD && git push origin {tag}")
+        return 1
+    print(f"Lote cerrado y subido a GitHub: commit y etiqueta {tag}. La web lo verá en unos minutos.")
     return 0
 
 

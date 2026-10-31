@@ -1581,3 +1581,34 @@ class Lot015(unittest.TestCase):
         f = anki.card_fields(ex, self.eby, self.sby, {}, set())
         self.assertNotIn("Sale en", f["back"])
         self.assertIn("Dónde sale", f["notes"])
+
+
+class CloseBatchPush(unittest.TestCase):
+    """Cada lote se sube a GitHub al cerrarlo (la web lo lee de allí); si la subida falla, el lote queda en local y lo dice."""
+
+    def run_close(self, fail_push=False):
+        calls = []
+
+        def git(*args, check=True):
+            calls.append(args)
+            if fail_push and args[0] == "push":
+                raise RuntimeError("git push: sin red")
+            return ""
+        with mock.patch.object(anki, "close_batch_plan", return_value=([], [])), \
+                mock.patch.object(anki, "cmd_notebook"), mock.patch.object(anki, "cmd_export"), \
+                mock.patch.object(anki, "write_history"), mock.patch.object(anki, "_git", git), \
+                mock.patch("sys.stdout"):
+            rc = anki.cmd_close_batch("999-2099-01-01-prueba", dry_run=False)
+        return rc, calls
+
+    def test_close_batch_pushes_commit_and_tag(self):
+        rc, calls = self.run_close()
+        self.assertEqual(rc, 0)
+        self.assertIn(("push", "-q", "origin", "HEAD"), calls)
+        self.assertIn(("push", "-q", "origin", "lote-999"), calls)
+        verbs = [c[0] for c in calls]
+        self.assertLess(verbs.index("tag"), verbs.index("push"))           # se sube lo ya cerrado, con su etiqueta
+
+    def test_close_batch_reports_a_failed_push(self):
+        rc, _ = self.run_close(fail_push=True)
+        self.assertEqual(rc, 1)
