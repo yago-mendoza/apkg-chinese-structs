@@ -4304,9 +4304,6 @@ def entry_type(e):
     return "charword" if len(e.get("hanzi") or "") == 1 else "word"
 
 
-CLASS_ORIGINS = ("class", "class-audio")   # sources that came from a class (export: classDate)
-
-
 def export_dictionary(entries, sentences, exercises, history_cache=None):
     manifest = load_manifest()
 
@@ -4343,11 +4340,6 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
             con = e["connection"]
             row["connection"] = {"kind": con.get("kind"), "label": CONNECTION_KINDS.get(con.get("kind")),
                                  "with": con.get("with", []), "text": con.get("text")}
-        # The day a word came up in class (only the date, never the file): the site compares my memory with what the
-        # same classes alone would leave (the ghost student).
-        src = e.get("source") or {}
-        if src.get("origin") in CLASS_ORIGINS and src.get("date"):
-            row["classDate"] = str(src["date"])
         if e.get("as_word"):
             row["asWord"] = {"es": e["as_word"].get("es"), "pinyin": e["as_word"].get("pinyin") or e.get("pinyin")}
         if e.get("kind") == "structure":
