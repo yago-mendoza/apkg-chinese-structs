@@ -237,6 +237,12 @@ class Repository(unittest.TestCase):
         self.assertIsNone(by["st.hen-adj"]["onHskList"])
         self.assertTrue(by["w.laoshi"]["onHskList"])
         self.assertEqual(by["w.ben"]["connection"]["with"], ["本"])
+        # El día de clase de cada palabra que salió en clase (solo la fecha), y nada para las demás.
+        src = {e["id"]: e.get("source") or {} for e in anki.load()[0]}
+        for eid, row in by.items():
+            from_class = src.get(eid, {}).get("origin") in anki.CLASS_ORIGINS and src[eid].get("date")
+            self.assertEqual("classDate" in row, bool(from_class), eid)
+        self.assertTrue(any("classDate" in r for r in by.values()))
         for c in data["cards"]:
             self.assertTrue(c["targets"] and set(c["targets"] + c["examples"]) <= ids, c["id"])
 
