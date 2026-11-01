@@ -4212,9 +4212,10 @@ audio:
     tier: S0
     voice: zh-CN-YunyangNeural
   哦，我也属龙！:
-    date: '2026-10-31'
-    file: acs_96f0fdde33558a11.mp3
+    date: '2026-11-01'
+    file: acs_5ec3ae65eb12c9d5.mp3
     lead_ms: 200
+    phonemes: 哦=o 4
     provider: Azure Speech
     rate: -30%
     tier: S0
@@ -6036,10 +6037,9 @@ audio:
     tier: S0
     voice: zh-CN-YunyangNeural
   得:
-    date: '2026-10-31'
-    file: acs_3eb209b03ae67761.mp3
+    date: '2026-11-01'
+    file: acs_3f27e4e003812750.mp3
     lead_ms: 200
-    phonemes: 得=dei 3
     provider: Azure Speech
     rate: -40%
     tier: S0

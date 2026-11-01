@@ -486,6 +486,18 @@ def sentence_shown(s):
     return out
 
 
+def optional_variants(s):
+    """Las otras respuestas buenas de una frase con partes opcionales: sin cualquiera de ellas, en hanzi y en pinyin
+    (我(是)二零零零年出生(的) vale sin 是, sin 的 o sin los dos). [] si no tiene."""
+    opt = [i for i, g in enumerate(s.get("segments", [])) if g.get("optional")]
+    out = []
+    for k in range(1, len(opt) + 1):
+        for drop in itertools.combinations(opt, k):
+            segs = [g for i, g in enumerate(s["segments"]) if i not in drop]
+            out += ["".join(g["text"] for g in segs), " ".join(g["pinyin"] for g in segs if g.get("pinyin"))]
+    return out
+
+
 def sentence_core(s):
     """La frase sin lo opcional: otra respuesta igual de buena al escribirla."""
     return "".join(g["text"] for g in s.get("segments", []) if not g.get("optional"))
@@ -1790,6 +1802,7 @@ def comment_style(c):
 
 
 HAN = re.compile(r"[\u3400-\u9fff]+")
+HAN_CHARS = re.compile(r"[\u3400-\u9fff]")
 PRIVATE_GUARD = ROOT / "private" / "forbidden.txt"   # solo en local: nombres de fuentes que no pueden aparecer
 
 
@@ -2653,6 +2666,15 @@ def validate(entries, sentences, exercises, require_audio=True):
                                 "tiene imagen para recordarlo (`memory`)")
             if "—" in json.dumps(n, ensure_ascii=False):
                 errors.append(f"hanzi.yaml: {ch} lleva una raya (—); usar coma, dos puntos o paréntesis")
+    # Una lectura fijada en pinyin SAPI («dei 3»: sílaba sin tilde y tono 1-5, una por hanzi); otra forma (děi, dei3)
+    # haría que Azure rechace el audio a medio generar.
+    for e in entries:
+        if e.get("tts") is None:
+            continue
+        if not re.fullmatch(r"[a-zü]+ [1-5]( [a-zü]+ [1-5])*", str(e["tts"])):
+            errors.append(f"{e['id']}: tts «{e['tts']}» no es pinyin SAPI (sílaba y tono separados: «dei 3»)")
+        elif len(str(e["tts"]).split(" ")) // 2 != len(HAN_CHARS.findall(e.get("hanzi") or "")):
+            errors.append(f"{e['id']}: tts «{e['tts']}» no tiene una sílaba por hanzi de {e.get('hanzi')}")
     if require_audio:
         manifest = load_manifest()
         for t in sorted(required_audio(entries, sentences, exercises)):
@@ -2702,8 +2724,15 @@ def tts_readings(text, entries, sentences):
     for s in sentences:
         if sentence_text(s) == text:
             return [(g["text"], fixed.get(g.get("ref"))) for g in s["segments"]]
-    hit = next((e for e in entries if e.get("hanzi") == text and e.get("tts")), None)
-    return [(text, hit["tts"])] if hit else []
+    # Un turno de un diálogo, que suena aparte (哦，我也属龙！ lleva su 哦 ò como la frase entera).
+    for s in sentences:
+        for _, segs, turn, _ in dialogue_turns(s):
+            if turn == text:
+                return [(g["text"], fixed.get(g.get("ref"))) for g in segs]
+    # Un hanzi suelto es un solo audio para todas sus entradas: la lectura fijada solo vale si todas la comparten
+    # (得 es děi en w.dei y de en w.de.complement; con děi, las tarjetas de de sonaban mal).
+    same = {e.get("tts") for e in entries if e.get("hanzi") == text}
+    return [(text, same.pop())] if len(same) == 1 and None not in same else []
 
 
 def tts_signature(pieces):
@@ -2901,6 +2930,7 @@ hr.split { border: 0; border-top: 2px solid var(--line); margin: 16px 0 6px; }
 .turn .who, .turn-line .who { font: 700 14px/1 Menlo, Consolas, monospace; color: var(--muted); margin-right: 8px; }
 .turn-line { padding: 8px 0; } .turn-line + .turn-line { border-top: 1px solid var(--line); }
 .seg.opt .py::before, .seg.opt .hz::before { content: "("; } .seg.opt .py::after, .seg.opt .hz::after { content: ")"; }
+.seg.opt .py.none::before, .seg.opt .py.none::after { content: none; }
 /* Los clasificadores, con un recuadro dentro de la línea, como un atajo de teclado (review 014). */
 .seg.cl .hz { border: 1px solid var(--line); border-radius: 6px; padding: 0 3px; background: var(--panel);
               box-shadow: inset 0 -2px 0 var(--line); }
@@ -3031,7 +3061,7 @@ def render_sentence(s, gap=None, show_pinyin=True, gap_after=None, segments=None
         # paréntesis»; el audio lo dice igual). Los clasificadores, con su recuadro, para verlos de un vistazo.
         cls += " opt" * bool(seg.get("optional")) + " cl" * (seg.get("ref") in CLASSIFIERS)
         py = esc(seg.get("pinyin", "")) if show_pinyin else "&nbsp;"
-        parts.append(f'<span class="{cls}"><span class="py">{py}</span><span class="hz">{esc(seg["text"])}</span></span>')
+        parts.append(f'<span class="{cls}"><span class="py{"" if show_pinyin else " none"}">{py}</span><span class="hz">{esc(seg["text"])}</span></span>')
         if gap_after and seg.get("ref") == gap_after:     # un sitio vacío: a veces lo que va ahí es nada
             parts.append(blank)
             gap_after = None
@@ -3562,8 +3592,7 @@ def card_fields(ex, eby, sby, manifest, media_files):
     if exp_py or exp_hz:
         # Otras respuestas igual de buenas (`answer.accept`, review 013: 忘 y 忘记 para «olvidar»): cualquiera vale.
         # Una frase con algo opcional vale también sin ello (review 014), en hanzi y en pinyin.
-        core = ([sentence_core(sent), " ".join(g["pinyin"] for g in sent["segments"] if g.get("pinyin") and not g.get("optional"))]
-                if sent and ex["type"] == "produce" and any(g.get("optional") for g in sent["segments"]) else [])
+        core = optional_variants(sent) if sent and ex["type"] == "produce" else []
         alt = "|".join([str(a) for a in ans.get("accept") or []] + core)
         # Lo oculto que compara lo escrito, fuera del color por tono: se lee como texto, no se ve.
         hidden = (f'<span id="acs-exp-py" style="display:none">{esc(exp_py)}</span>'
@@ -4564,6 +4593,9 @@ def write_history(batch=None):
 BATCH_COMMIT_PATHS = ("1-inbox/history", "2-digests", "3-data", "4-notebook", "5-output", "records", "docs")
 
 
+GIT_FILE_MAX = 95 * 2**20   # GitHub rejects files over 100 MB
+
+
 def cmd_close_batch(batch, dry_run):
     """Cierra un lote: archiva el review leído y los apuntes, regenera el cuaderno, commit y etiqueta lote-NNN, y los sube.
     El log del lote ya está en 2-digests/ (lo escribe el agente al procesar)."""
@@ -4594,6 +4626,14 @@ def cmd_close_batch(batch, dry_run):
     # so a stray file at the root never rides along in the batch commit.
     _git("add", "-u")
     _git("add", "-A", "--", *[p for p in BATCH_COMMIT_PATHS if (ROOT / p).exists()])
+    # GitHub rejects a file over 100 MB, and once such a commit exists every later push fails with it: stop before.
+    big = [p for p in _git("diff", "--cached", "--name-only").splitlines()
+           if (ROOT / p).is_file() and (ROOT / p).stat().st_size > GIT_FILE_MAX]
+    if big:
+        print("Lote sin commit: " + ", ".join(f"{p} ({(ROOT / p).stat().st_size / 2**20:.0f} MB)" for p in big)
+              + f" pasa de {GIT_FILE_MAX // 2**20} MB y GitHub lo rechazaría. Sacarlo del commit (Git LFS, una release)"
+              + " y repetir.")
+        return 1
     _git("commit", "-q", "-m", f"lote {batch}\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>")
     tag = f"lote-{batch[:3]}"
     _git("tag", "-a", tag, "-m", f"Lote {batch}: estado tras procesarlo")
@@ -5178,6 +5218,9 @@ def cmd_push(allow_missing_audio, sync, prune=False, reset=False, force=False, p
     try:
         anki_request("sync")
         print("Sincronizado con AnkiWeb.")
+        line = send_study_log()
+        if line:
+            print(line)
     except RuntimeError as e:
         if "auth" in str(e):
             print("Sin sincronizar: inicia sesión en AnkiWeb una vez desde Anki (botón Sincronizar).")
@@ -5376,6 +5419,36 @@ def balance_from_anki():
                           int(time.time() * 1000))
 
 
+# The study log the site draws (infraphysics.net/side-quests/chinese): YAGO studies only on the phone and never opens
+# Anki on the computer, so the site's Anki add-on, which sends it after a sync made from Anki's own window, never runs.
+# Every time anki.py syncs with AnkiWeb (stats at the start of a batch, push at its end), it sends the log itself, with
+# the site's own script (read only on the collection). Next to this repository by default; ANKI_SITE_REPO points
+# elsewhere, ANKI_NO_SITE turns it off. Never while anki_request is replaced (the tests' simulated AnkiConnect).
+SITE_REPO = Path(os.environ.get("ANKI_SITE_REPO") or ROOT.parent / "infraphysics")
+SITE_LOG_SCRIPT = Path("scripts") / "anki-reviews.js"
+_ANKI_REQUEST = anki_request
+
+
+def send_study_log():
+    """Sends the deck's study log to the site after a sync. Returns a line for the terminal, or None if skipped."""
+    import shutil
+    import subprocess
+    if os.environ.get("ANKI_NO_SITE") or globals()["anki_request"] is not _ANKI_REQUEST:
+        return None
+    script, node = SITE_REPO / SITE_LOG_SCRIPT, shutil.which("node")
+    if not script.is_file() or not node:
+        return f"Web: sin enviar el registro de estudio (no encuentro {script if not script.is_file() else 'node'})."
+    try:
+        r = subprocess.run([node, str(SITE_LOG_SCRIPT), "--push"], cwd=SITE_REPO, capture_output=True, text=True,
+                           encoding="utf-8", errors="replace", timeout=180)
+    except (OSError, subprocess.TimeoutExpired) as e:
+        return f"Web: no se pudo enviar el registro de estudio ({e})."
+    if r.returncode != 0:
+        tail = (r.stderr or r.stdout).strip().splitlines()[-1:] or ["sin salida"]
+        return f"Web: falló el envío del registro de estudio ({tail[0][:200]})."
+    return "Web: registro de estudio enviado a infraphysics.net."
+
+
 def cmd_stats(days=STATS_DAYS, sync=True):
     """Qué se queda y qué no: lee de Anki el registro de repasos de este mazo. Solo lectura (salvo sincronizar, para
     que lleguen los repasos del móvil); nunca abre Anki ni toca otros mazos."""
@@ -5386,6 +5459,9 @@ def cmd_stats(days=STATS_DAYS, sync=True):
     if sync:
         try:
             anki_request("sync")
+            line = send_study_log()
+            if line:
+                print(line)
         except RuntimeError as e:
             print(f"Sin sincronizar ({e}): pueden faltar los repasos del móvil.")
     cards = anki_request("findCards", query=f'"deck:{DECK_NAME}"')

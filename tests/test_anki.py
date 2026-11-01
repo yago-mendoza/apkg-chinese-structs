@@ -1612,3 +1612,84 @@ class CloseBatchPush(unittest.TestCase):
     def test_close_batch_reports_a_failed_push(self):
         rc, _ = self.run_close(fail_push=True)
         self.assertEqual(rc, 1)
+
+
+class SiteStudyLog(unittest.TestCase):
+    """Tras cada sincronización, anki.py manda el registro de estudio a la web (YAGO solo estudia en el móvil); nunca con
+    AnkiConnect simulado ni con ANKI_NO_SITE."""
+
+    def fake_site(self, tmp):
+        (Path(tmp) / "scripts").mkdir()
+        (Path(tmp) / "scripts" / "anki-reviews.js").write_text("", encoding="utf-8")
+        return Path(tmp)
+
+    def test_sends_with_the_real_ankiconnect(self):
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(anki, "SITE_REPO", self.fake_site(tmp)), \
+                mock.patch.dict("os.environ", {"ANKI_NO_SITE": ""}), mock.patch("shutil.which", lambda _: "node"), \
+                mock.patch("subprocess.run", return_value=mock.Mock(returncode=0, stdout="", stderr="")) as run:
+            line = anki.send_study_log()
+        self.assertIn("enviado", line)
+        self.assertEqual(run.call_args.args[0][1:], [str(anki.SITE_LOG_SCRIPT), "--push"])
+
+    def test_never_with_a_simulated_ankiconnect_or_when_turned_off(self):
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(anki, "SITE_REPO", self.fake_site(tmp)), \
+                mock.patch("subprocess.run") as run:
+            with mock.patch.object(anki, "anki_request", lambda *a, **k: None), mock.patch.dict("os.environ", {"ANKI_NO_SITE": ""}):
+                self.assertIsNone(anki.send_study_log())
+            with mock.patch.dict("os.environ", {"ANKI_NO_SITE": "1"}):
+                self.assertIsNone(anki.send_study_log())
+        run.assert_not_called()
+
+    def test_a_failed_send_says_so(self):
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(anki, "SITE_REPO", self.fake_site(tmp)), \
+                mock.patch.dict("os.environ", {"ANKI_NO_SITE": ""}), mock.patch("shutil.which", lambda _: "node"), \
+                mock.patch("subprocess.run", return_value=mock.Mock(returncode=1, stdout="", stderr="401 unauthorized")):
+            self.assertIn("401", anki.send_study_log())
+
+
+class NightFixes(unittest.TestCase):
+    """Revisión del 2026-11-01: un hanzi suelto con dos lecturas, las partes opcionales de una en una, el formato de
+    tts y el commit que GitHub rechazaría."""
+
+    def test_a_bare_hanzi_keeps_the_voice_reading_when_its_entries_disagree(self):
+        dei = {"id": "w.dei", "hanzi": "得", "tts": "dei 3"}
+        de = {"id": "w.de.complement", "hanzi": "得"}
+        self.assertEqual(anki.tts_readings("得", [dei, de], []), [])
+        self.assertEqual(anki.tts_readings("得", [dei], []), [("得", "dei 3")])
+
+    def test_each_optional_part_can_be_left_out_alone(self):
+        s = {"segments": [{"text": "我", "pinyin": "wǒ"}, {"text": "是", "pinyin": "shì", "optional": True},
+                          {"text": "学生", "pinyin": "xuésheng"}, {"text": "的", "pinyin": "de", "optional": True}]}
+        v = anki.optional_variants(s)
+        for hz in ("我学生的", "我是学生", "我学生"):
+            self.assertIn(hz, v)
+        self.assertNotIn("我是学生的", v)
+        self.assertEqual(anki.optional_variants({"segments": [{"text": "我"}]}), [])
+
+    def test_tts_must_be_sapi_pinyin_one_syllable_per_hanzi(self):
+        entries, sentences, exercises = anki.load()
+        bad = [dict(e) for e in entries if e.get("tts")][:1]
+        for value in ("děi", "dei3", "dei 3 le 5"):
+            bad[0]["tts"] = value
+            errors, _ = anki.validate([bad[0]] + [e for e in entries if e["id"] != bad[0]["id"]], sentences, exercises)
+            self.assertTrue(any("tts" in e and bad[0]["id"] in e for e in errors), value)
+
+    def test_close_batch_stops_before_a_commit_github_would_reject(self):
+        calls = []
+
+        def git(*args, check=True):
+            calls.append(args)
+            return "anki.py\n" if args[:2] == ("diff", "--cached") else ""
+        with mock.patch.object(anki, "close_batch_plan", return_value=([], [])), mock.patch.object(anki, "GIT_FILE_MAX", 10), \
+                mock.patch.object(anki, "cmd_notebook"), mock.patch.object(anki, "cmd_export"), \
+                mock.patch.object(anki, "write_history"), mock.patch.object(anki, "_git", git), mock.patch("sys.stdout"):
+            rc = anki.cmd_close_batch("999-2099-01-01-prueba", dry_run=False)
+        self.assertEqual(rc, 1)
+        self.assertNotIn("commit", [c[0] for c in calls])
+
+    def test_a_dialogue_turn_keeps_its_fixed_reading(self):
+        o = {"id": "w.o", "hanzi": "哦", "tts": "o 4"}
+        s = {"id": "s.d", "speakers": ["A", "B"], "translation": {"es": "—Soy del dragón. —¡Ah, yo también!"},
+             "segments": [{"text": "我", "ref": "w.wo"}, {"text": "属龙"}, {"text": "。"},
+                          {"text": "哦", "ref": "w.o"}, {"text": "，"}, {"text": "我也"}, {"text": "！"}]}
+        self.assertIn(("哦", "o 4"), anki.tts_readings("哦，我也！", [o], [s]))
