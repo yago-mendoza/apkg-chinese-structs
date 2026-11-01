@@ -157,7 +157,7 @@ sentences:
       - {pinyin: sān, ref: w.num.san, text: 三}
       - {pinyin: lóu, ref: w.lou, text: 楼}
       - {text: 。}
-    translation: {en: I live on the third floor., es: Vivo en el tercer piso.}
+    translation: {en: I live on the third floor (counting the ground floor)., es: 'Vivo en el tercer piso (contando la planta baja: nuestro segundo).'}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
   - id: s.xian-xi-shou-zai-chifan
     use: say

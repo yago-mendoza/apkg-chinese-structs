@@ -58,6 +58,10 @@ DIGESTS = ROOT / "2-digests"              # histórico de cada lote
 NOTEBOOK = ROOT / "4-notebook"            # cuaderno de consulta por temas, generado
 OUTPUT = ROOT / "5-output"                # lo que sale: mazo y futuras exportaciones
 APKG = OUTPUT / "chino-practico.apkg"
+# The compiled deck is not versioned (it grows about 7 MB a batch and GitHub refuses files over 100 MB): close-batch
+# publishes it as its batch's GitHub release, and the export points at the latest one.
+REPO_SLUG = "yago-mendoza/apkg-chinese-structs"
+DECK_URL = f"https://github.com/{REPO_SLUG}/releases/latest/download/{APKG.name}"
 ANKI_CONNECT = "http://127.0.0.1:8765"
 
 # Identidades estables: no cambiarlas nunca, o Anki verá un mazo/modelo nuevo.
@@ -4446,7 +4450,7 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
         "slots": {k: v[0] for k, v in SLOTS.items()},
         # El mismo CSS que lleva el modelo de Anki: la web lo aplica a las tarjetas y no copia estilos a mano.
         "cardCss": CSS.strip(),
-        "deck": {"file": APKG.relative_to(ROOT).as_posix(), "cards": len(exercises)},
+        "deck": {"file": APKG.relative_to(ROOT).as_posix(), "url": DECK_URL, "cards": len(exercises)},
     }
 
 
@@ -4486,6 +4490,25 @@ def _git(*args, check=True):
     if check and r.returncode != 0:
         raise RuntimeError(f"git {' '.join(args)}: {r.stderr.strip()}")
     return r.stdout
+
+
+def _gh(*args):
+    """The GitHub CLI (releases); RuntimeError if it is missing or fails."""
+    import shutil
+    import subprocess
+    # Never against GitHub while git is simulated (a test of close-batch once made a real release, lote-999).
+    if globals()["_git"] is not _GIT_REAL:
+        raise RuntimeError("gh no se ejecuta con git simulado")
+    gh = shutil.which("gh")
+    if not gh:
+        raise RuntimeError("no encuentro gh (GitHub CLI)")
+    r = subprocess.run([gh, *args], cwd=ROOT, capture_output=True, text=True, encoding="utf-8", errors="replace")
+    if r.returncode != 0:
+        raise RuntimeError(f"gh {args[0]} {args[1] if len(args) > 1 else ''}: {(r.stderr or r.stdout).strip()[:300]}")
+    return r.stdout
+
+
+_GIT_REAL = _git
 
 
 def close_batch_plan(batch):
@@ -4645,7 +4668,15 @@ def cmd_close_batch(batch, dry_run):
         print(f"Lote cerrado en local (commit y etiqueta {tag}), pero no se ha subido: {e}")
         print(f"Repetir: git push origin HEAD && git push origin {tag}")
         return 1
-    print(f"Lote cerrado y subido a GitHub: commit y etiqueta {tag}. La web lo verá en unos minutos.")
+    # The compiled deck, as the batch's release: the site's «Descargar el mazo» takes the latest.
+    try:
+        _gh("release", "create", tag, str(APKG), "--title", f"Lote {batch}", "--latest",
+            "--notes", f"El mazo tras el lote {batch}: {APKG.name}, para importar en Anki.")
+    except RuntimeError as e:
+        print(f"Lote cerrado y subido a GitHub, pero el mazo no se ha publicado como release: {e}")
+        print(f"Repetir: gh release create {tag} {APKG.relative_to(ROOT).as_posix()} --latest")
+        return 1
+    print(f"Lote cerrado y subido a GitHub: commit, etiqueta {tag} y el mazo como release. La web lo verá en unos minutos.")
     return 0
 
 
@@ -5426,6 +5457,7 @@ def balance_from_anki():
 # elsewhere, ANKI_NO_SITE turns it off. Never while anki_request is replaced (the tests' simulated AnkiConnect).
 SITE_REPO = Path(os.environ.get("ANKI_SITE_REPO") or ROOT.parent / "infraphysics")
 SITE_LOG_SCRIPT = Path("scripts") / "anki-reviews.js"
+SITE_LOG_TRIES, SITE_LOG_WAIT = 4, 8      # attempts, and seconds between them
 _ANKI_REQUEST = anki_request
 
 
@@ -5438,15 +5470,22 @@ def send_study_log():
     script, node = SITE_REPO / SITE_LOG_SCRIPT, shutil.which("node")
     if not script.is_file() or not node:
         return f"Web: sin enviar el registro de estudio (no encuentro {script if not script.is_file() else 'node'})."
-    try:
-        r = subprocess.run([node, str(SITE_LOG_SCRIPT), "--push"], cwd=SITE_REPO, capture_output=True, text=True,
-                           encoding="utf-8", errors="replace", timeout=180)
-    except (OSError, subprocess.TimeoutExpired) as e:
-        return f"Web: no se pudo enviar el registro de estudio ({e})."
-    if r.returncode != 0:
-        tail = (r.stderr or r.stdout).strip().splitlines()[-1:] or ["sin salida"]
-        return f"Web: falló el envío del registro de estudio ({tail[0][:200]})."
-    return "Web: registro de estudio enviado a infraphysics.net."
+    # Right after a sync Anki is still finishing it and refuses AnkiConnect for a few seconds (ANKI_BUSY): try again.
+    why = "sin salida"
+    for attempt in range(SITE_LOG_TRIES):
+        if attempt:
+            time.sleep(SITE_LOG_WAIT)
+        try:
+            r = subprocess.run([node, str(SITE_LOG_SCRIPT), "--push"], cwd=SITE_REPO, capture_output=True, text=True,
+                               encoding="utf-8", errors="replace", timeout=180)
+        except (OSError, subprocess.TimeoutExpired) as e:
+            why = str(e)
+            continue
+        if r.returncode == 0:
+            return "Web: registro de estudio enviado a infraphysics.net."
+        lines = (r.stderr or r.stdout).strip().splitlines()
+        why = next((ln.strip() for ln in lines if "Error" in ln or "error" in ln), lines[0] if lines else "sin salida")
+    return f"Web: falló el envío del registro de estudio ({why[:200]})."
 
 
 def cmd_stats(days=STATS_DAYS, sync=True):

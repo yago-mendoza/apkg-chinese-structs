@@ -1597,7 +1597,7 @@ class CloseBatchPush(unittest.TestCase):
         with mock.patch.object(anki, "close_batch_plan", return_value=([], [])), \
                 mock.patch.object(anki, "cmd_notebook"), mock.patch.object(anki, "cmd_export"), \
                 mock.patch.object(anki, "write_history"), mock.patch.object(anki, "_git", git), \
-                mock.patch("sys.stdout"):
+                mock.patch.object(anki, "_gh", lambda *a: calls.append(("gh",) + a) or ""), mock.patch("sys.stdout"):
             rc = anki.cmd_close_batch("999-2099-01-01-prueba", dry_run=False)
         return rc, calls
 
@@ -1608,6 +1608,16 @@ class CloseBatchPush(unittest.TestCase):
         self.assertIn(("push", "-q", "origin", "lote-999"), calls)
         verbs = [c[0] for c in calls]
         self.assertLess(verbs.index("tag"), verbs.index("push"))           # se sube lo ya cerrado, con su etiqueta
+        # y el mazo compilado sale como release del lote, después de subirlo
+        release = next(c for c in calls if c[0] == "gh")
+        self.assertEqual(release[1:4], ("release", "create", "lote-999"))
+        self.assertIn(str(anki.APKG), release)
+        self.assertLess(max(i for i, v in enumerate(verbs) if v == "push"), verbs.index("gh"))
+
+    def test_the_export_points_at_the_latest_release(self):
+        entries, sentences, exercises = anki.load()
+        deck = anki.export_dictionary(entries, sentences, exercises)["deck"]
+        self.assertEqual(deck["url"], f"https://github.com/{anki.REPO_SLUG}/releases/latest/download/chino-practico.apkg")
 
     def test_close_batch_reports_a_failed_push(self):
         rc, _ = self.run_close(fail_push=True)
@@ -1643,8 +1653,18 @@ class SiteStudyLog(unittest.TestCase):
     def test_a_failed_send_says_so(self):
         with tempfile.TemporaryDirectory() as tmp, mock.patch.object(anki, "SITE_REPO", self.fake_site(tmp)), \
                 mock.patch.dict("os.environ", {"ANKI_NO_SITE": ""}), mock.patch("shutil.which", lambda _: "node"), \
-                mock.patch("subprocess.run", return_value=mock.Mock(returncode=1, stdout="", stderr="401 unauthorized")):
+                mock.patch.object(anki, "SITE_LOG_WAIT", 0), \
+                mock.patch("subprocess.run", return_value=mock.Mock(returncode=1, stdout="", stderr="Node.js v24\nError: 401 unauthorized\n")) as run:
             self.assertIn("401", anki.send_study_log())
+        self.assertEqual(run.call_count, anki.SITE_LOG_TRIES)
+
+    def test_a_busy_anki_is_tried_again(self):
+        busy = mock.Mock(returncode=1, stdout="", stderr="Error: collection is busy")
+        ok = mock.Mock(returncode=0, stdout="Pushed", stderr="")
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(anki, "SITE_REPO", self.fake_site(tmp)), \
+                mock.patch.dict("os.environ", {"ANKI_NO_SITE": ""}), mock.patch("shutil.which", lambda _: "node"), \
+                mock.patch.object(anki, "SITE_LOG_WAIT", 0), mock.patch("subprocess.run", side_effect=[busy, ok]):
+            self.assertIn("enviado", anki.send_study_log())
 
 
 class NightFixes(unittest.TestCase):

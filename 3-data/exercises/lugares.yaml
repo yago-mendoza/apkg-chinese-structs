@@ -1564,7 +1564,7 @@ exercises:
     type: produce
     targets: [w.qiche]
     skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «coche»? Escribe el pinyin.'}
+    prompt: {text: '¿Cómo se dice «coche», la palabra de dos sílabas? Escribe el pinyin.'}
     answer: {typed: qi4 che1, hanzi: 汽车, pinyin: qìchē, meaning: coche}
     comments: []
   - id: x.read.qiche

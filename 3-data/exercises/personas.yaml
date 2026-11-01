@@ -1628,7 +1628,7 @@ exercises:
     targets: [w.yiqi]
     skills: [listening, tones, discrimination]
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
-    answer: {hanzi: 一起, pinyin: yīqǐ, meaning: juntos}
+    answer: {hanzi: 一起, pinyin: yìqǐ, meaning: juntos}
     comments: []
   - id: x.dictation.yigeren
     added: 2026-10-31

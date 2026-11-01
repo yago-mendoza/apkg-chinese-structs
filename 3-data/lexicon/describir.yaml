@@ -802,7 +802,7 @@ entries:
     kind: group
     basis: soundalike
     title: '一样, 一定, 一起 y 医生: las de yi'
-    explanation: Empiezan igual al oído; las separa la segunda sílaba.
+    explanation: 'Empiezan por yi, pero con otro tono: yí en 一样 y 一定, yì en 一起 (一 cambia de tono según la sílaba que le sigue), yī en 医生. Las separa también la segunda sílaba.'
     members:
       - {cue: '样 yàng «forma»: de una misma forma', ref: w.yiyang}
       - {cue: '定 dìng «fijo»: fijado, sin falta', ref: w.yiding}

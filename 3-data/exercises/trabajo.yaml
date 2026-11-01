@@ -706,7 +706,7 @@ exercises:
     type: produce
     targets: [w.xue]
     skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «aprender, estudiar»? Escribe el pinyin.'}
+    prompt: {text: '¿Cómo se dice «aprender», en una sola sílaba (学 a hacer algo: aprender a nadar)? Escribe el pinyin.'}
     answer: {typed: xue2, hanzi: 学, pinyin: xué, meaning: 'aprender, estudiar'}
     comments: []
   - id: x.read.xue

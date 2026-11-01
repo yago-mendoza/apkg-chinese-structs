@@ -2836,7 +2836,7 @@ exercises:
     type: produce
     targets: [w.shui.sleep]
     skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «dormir»? Escribe el pinyin.'}
+    prompt: {text: '¿Cómo se dice «dormir», en una sola sílaba (sin 觉)? Escribe el pinyin.'}
     answer: {typed: shui4, hanzi: 睡, pinyin: shuì, meaning: dormir}
     comments: []
   - id: x.read.shui.sleep

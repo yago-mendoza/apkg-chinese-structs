@@ -51,7 +51,7 @@ I built this for my own Mandarin, so the repository ships with a real, working e
 
 **`4-notebook/`: the same database, readable.** Everything learned so far, by theme. Open it to look something up without Anki.
 
-**`5-output/`: what comes out.** The compiled deck (`.apkg`, downloadable) and the public export (`dictionary.json`: entries, sentences, every card as Anki renders it, and the day-by-day history of the deck) behind [infraphysics.net/side-quests/chinese](https://infraphysics.net/side-quests/chinese).
+**`5-output/`: what comes out.** The compiled deck (`.apkg`, downloadable from the [latest release](https://github.com/yago-mendoza/apkg-chinese-structs/releases/latest)) and the public export (`dictionary.json`: entries, sentences, every card as Anki renders it, and the day-by-day history of the deck) behind [infraphysics.net/side-quests/chinese](https://infraphysics.net/side-quests/chinese).
 
 **Batches.** A batch is whatever is in the inbox when you ask; how often is up to you, with no fixed rhythm (asking right after a class means the review arrives before the next one): small batches give you feedback sooner, large ones let the agent see more at once. The structure is never frozen: every batch, themes and groups are revisited and reorganized when needed, without losing your progress.
 

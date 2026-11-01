@@ -743,11 +743,12 @@ entries:
     kind: word
     hanzi: 起来
     pinyin: qǐlai
-    meaning: {en: to get up, es: levantarse}
+    meaning: {en: 'to get up, to stand up', es: 'levantarse, ponerse de pie'}
     accept_pinyin_mismatch: '来 átono en 起来: qǐlai'
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
     comments:
       - {date: '2026-10-31', kind: linguistic, private: false, text: 'Palabra a palabra: 起 «levantarse» + 来 «hacia aquí». 我七点起来 «me levanto a las siete».'}
+      - {date: '2026-11-01', kind: linguistic, private: false, text: 'Para la rutina de cada mañana lo más normal es 起床 qǐchuáng, «levantarse de la cama»: 我早上七点起床. 起来 es levantarse o ponerse de pie, de la cama o de una silla.'}
   - id: w.shui.sleep
     use: say
     role: content

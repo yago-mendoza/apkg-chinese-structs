@@ -4351,7 +4351,10 @@ characters:
     origin:
       es: 'Fonético-semántico: 攵, una mano con una vara, da el significado, y 孝 xiào, el sonido, que hoy ya no se parece: enseñar con disciplina.'
       en: 'Phono-semantic: 攵, a hand holding a rod, gives the meaning, and 孝 xiào the sound, no longer close: teaching with discipline.'
-    confidence: high
+    confidence: medium
+    memory:
+      es: 'A la izquierda, un niño 子 bajo su tejado; a la derecha 攵, una mano con una vara: alguien que enseña al niño.'
+      en: 'On the left, a child 子 under its roof; on the right 攵, a hand with a rod: someone teaching the child.'
   楼:
     gloss: {es: 'edificio de pisos; planta', en: 'building; floor'}
     origin:
@@ -4374,8 +4377,8 @@ characters:
   汽:
     gloss: {es: 'vapor', en: 'steam'}
     origin:
-      es: 'Fonético-semántico: 氵 «agua» da el significado y 气 qì «aire», el sonido y parte del sentido: el agua hecha aire, el vapor. El 汽车 era el coche de vapor.'
-      en: 'Phono-semantic: 氵 (water) gives the meaning and 气 qì (air) the sound and part of the sense: water turned to air, steam. The 汽车 was the steam car.'
+      es: 'Fonético-semántico: 氵 «agua» da el significado y 气 qì «aire», el sonido y parte del sentido: el agua hecha aire, el vapor.'
+      en: 'Phono-semantic: 氵 (water) gives the meaning and 气 qì (air) the sound and part of the sense: water turned to air, steam.'
     confidence: high
   站:
     gloss: {es: 'estar de pie; estación, parada', en: 'to stand; station, stop'}

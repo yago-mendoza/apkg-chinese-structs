@@ -826,7 +826,7 @@ exercises:
     targets: [w.haishi]
     skills: [listening, tones, discrimination]
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
-    answer: {hanzi: 还是, pinyin: háishi, meaning: o (en una pregunta entre dos)}
+    answer: {hanzi: 还是, pinyin: háishi, meaning: 'aun así, sigue igual (y en una pregunta, «o»)'}
     comments: []
   - id: x.produce.wo-haishi-xiang-qu
     added: 2026-10-31
