@@ -32,6 +32,7 @@
 
 ## Avisos abiertos
 
+- El orden de nuevas no se aplicaba en Anki desde el 16 de octubre (AnkiConnect ya no cambia posiciones); lo pone ahora un complemento propio, y el primer orden de verdad se aplica al subir el próximo lote. ([el orden de nuevas](/docs/decisions.md#2026-11-01--el-orden-de-nuevas-lo-pone-un-complemento-propio))
 - Sincronizar el móvil antes de pedir un lote (pedirlo ya lo confirma) y antes de estudiar tras cada subida. ([el móvil](/docs/decisions.md#2026-10-19--push-no-sube-sin-el-ya-del-móvil), [pedir el lote](/docs/decisions.md#2026-11-01--pedir-el-lote-ya-confirma-el-móvil-el-registro-de-estudio-lo-manda-ankipy))
 - Cada lote comprueba en Anki, tras subir, que lo nuevo funciona (paso 10b del flujo). ([comprobar en Anki](/docs/decisions.md#2026-10-26--comprobar-en-anki-que-lo-nuevo-funciona-en-cada-lote))
 - A 30 nuevas al día, se vuelve a 20 si los repasos pasan de una hora o el «Otra vez» del 30 %. ([30 al día](/docs/decisions.md#2026-10-19--30-nuevas-al-día))

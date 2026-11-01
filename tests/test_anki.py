@@ -1713,3 +1713,58 @@ class NightFixes(unittest.TestCase):
              "segments": [{"text": "我", "ref": "w.wo"}, {"text": "属龙"}, {"text": "。"},
                           {"text": "哦", "ref": "w.o"}, {"text": "，"}, {"text": "我也"}, {"text": "！"}]}
         self.assertIn(("哦", "o 4"), anki.tts_readings("哦，我也！", [o], [s]))
+
+
+class NewCardOrderAddon(unittest.TestCase):
+    """AnkiConnect ya no cambia la posición de una tarjeta (2026-11-01): push se la pasa al complemento tools/anki-order
+    por un archivo y espera su respuesta; si falta o rechaza algo, lo dice en vez de dar por hecho que se movió."""
+
+    def addon(self, tmp):
+        (Path(tmp) / "__init__.py").write_text("", encoding="utf-8")
+        return Path(tmp)
+
+    def test_without_the_add_on_it_says_so(self):
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(anki, "ORDER_ADDON", Path(tmp) / "nada"):
+            with self.assertRaisesRegex(RuntimeError, "complemento"):
+                anki.reposition_new_cards([(1, 10)])
+
+    def test_the_add_on_answers_the_request(self):
+        import threading
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(anki, "ORDER_ADDON", self.addon(tmp)):
+            folder = Path(tmp) / "user_files"
+
+            def addon_side():
+                for _ in range(100):
+                    req = folder / "request.json"
+                    if req.is_file():
+                        got = json.loads(req.read_text(encoding="utf-8")); req.unlink()
+                        (folder / "answer.json").write_text(json.dumps({"token": got["token"], "moved": len(got["moves"]),
+                                                                        "changed": len(got["moves"]), "refused": []}), encoding="utf-8")
+                        return
+                    import time; time.sleep(0.05)
+            threading.Thread(target=addon_side).start()
+            self.assertEqual(anki.reposition_new_cards([(1, 10), (2, 20)]), 2)
+
+    def test_a_refused_card_is_an_error(self):
+        import threading
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(anki, "ORDER_ADDON", self.addon(tmp)):
+            folder = Path(tmp) / "user_files"
+
+            def addon_side():
+                for _ in range(100):
+                    req = folder / "request.json"
+                    if req.is_file():
+                        got = json.loads(req.read_text(encoding="utf-8")); req.unlink()
+                        (folder / "answer.json").write_text(json.dumps({"token": got["token"], "moved": 0, "changed": 0,
+                                                                        "refused": [[1, "not a new card of the deck"]]}), encoding="utf-8")
+                        return
+                    import time; time.sleep(0.05)
+            threading.Thread(target=addon_side).start()
+            with self.assertRaisesRegex(RuntimeError, "rechazó"):
+                anki.reposition_new_cards([(1, 10)])
+
+    def test_a_refused_action_in_a_multi_is_not_silent(self):
+        refused = [{"result": None, "error": "Use native scheduling commands for protected state."}]
+        with mock.patch.object(anki, "anki_request", lambda *a, **k: refused):
+            with self.assertRaisesRegex(RuntimeError, "protected state"):
+                anki.anki_multi([{"action": "setSpecificValueOfCard", "params": {}}])

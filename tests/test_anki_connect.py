@@ -81,6 +81,14 @@ class FakeAnki:
                     self.cards[a["params"]["card"]]["due"] = a["params"]["newValues"][0]
         return None
 
+    def reposition(self, moves):
+        """What the order add-on does (tools/anki-order): a new card of the deck takes its position."""
+        self.writes.append(("reposition", {"cards": [c for c, _ in moves]}))
+        for c, pos in moves:
+            assert self.cards[c].get("new") and anki.DECK_NAME in self.cards[c]["deck"], c
+            self.cards[c]["due"] = pos
+        return len(moves)
+
     def touched_cards(self):
         ids = []
         for action, p in self.writes:
@@ -99,7 +107,8 @@ class AnkiSafety(unittest.TestCase):
         self.familia = anki.deck_name(1, "familia")
 
     def run_with(self, fake, fn, *args):
-        with mock.patch.object(anki, "anki_request", fake), redirect_stdout(io.StringIO()) as out:
+        with mock.patch.object(anki, "anki_request", fake), mock.patch.object(anki, "reposition_new_cards", getattr(fake, "reposition", None)), \
+                redirect_stdout(io.StringIO()) as out:
             result = fn(*args)
         return result, out.getvalue()
 

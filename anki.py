@@ -5106,11 +5106,59 @@ def reorder_new(order_for):
     placed = sorted((pos, c["cardId"], c["due"]) for c in info
                     if (pos := order.get(c["fields"].get("ExerciseID", {}).get("value"))) is not None)
     plan = new_due_plan([due for _, _, due in placed])
-    actions = [{"action": "setSpecificValueOfCard",
-                "params": {"card": placed[k][1], "keys": ["due"], "newValues": [due]}} for k, due in sorted(plan.items())]
+    moves = [(placed[k][1], due) for k, due in sorted(plan.items())]
+    return reposition_new_cards(moves) if moves else 0
+
+
+# AnkiConnect (its October 2026 rewrite) refuses to change a card's position, «Use native scheduling commands for
+# protected state», and has no reposition action: from then on `push` said it had placed the new cards and nothing
+# moved (found 2026-11-01; 351 new cards sat at position 0, ahead of all). The positions go to an add-on of this
+# repository instead (tools/anki-order), which sets them with Anki's own code, only for new cards of this deck.
+ORDER_ADDON = Path(os.environ.get("APPDATA", "")) / "Anki2" / "addons21" / "chino_practico_order"
+ORDER_WAIT = 60   # seconds for the add-on's answer
+
+
+def reposition_new_cards(moves):
+    """Hands [(card id, position)] to the add-on and waits for its answer: how many it placed. RuntimeError if the
+    add-on is missing, does not answer, or refuses a card (only new cards of this deck are ever touched)."""
+    import uuid
+    folder = ORDER_ADDON / "user_files"
+    if not (ORDER_ADDON / "__init__.py").is_file():
+        raise RuntimeError(f"falta el complemento de orden de nuevas: copiar tools/anki-order a {ORDER_ADDON} "
+                           "y reiniciar Anki")
+    folder.mkdir(exist_ok=True)
+    request, answer, token = folder / "request.json", folder / "answer.json", uuid.uuid4().hex
+    answer.unlink(missing_ok=True)
+    tmp = folder / "request.json.tmp"
+    tmp.write_text(json.dumps({"token": token, "moves": [[int(c), int(p)] for c, p in moves]}), encoding="utf-8")
+    tmp.replace(request)
+    deadline = time.time() + ORDER_WAIT
+    while time.time() < deadline:
+        if answer.is_file():
+            try:
+                got = json.loads(answer.read_text(encoding="utf-8"))
+            except ValueError:
+                time.sleep(0.3)
+                continue
+            if got.get("token") == token:
+                answer.unlink(missing_ok=True)
+                if got.get("refused"):
+                    raise RuntimeError(f"el complemento rechazó {len(got['refused'])} tarjeta(s): {got['refused'][:3]}")
+                return got.get("changed", got.get("moved", 0))
+        time.sleep(0.5)
+    request.unlink(missing_ok=True)
+    raise RuntimeError(f"el complemento de orden de nuevas no respondió en {ORDER_WAIT} s (¿Anki se reinició tras "
+                       "instalarlo?)")
+
+
+def anki_multi(actions):
+    """Several AnkiConnect actions at once, 200 by 200; RuntimeError if any of them failed (a «multi» answers each
+    action apart and never fails as a whole: a refused one went unnoticed)."""
     for i in range(0, len(actions), 200):
-        anki_request("multi", actions=actions[i:i + 200])
-    return len(actions)
+        out = anki_request("multi", actions=actions[i:i + 200]) or []
+        bad = [r for r in out if (isinstance(r, dict) and r.get("error")) or r is False or r == [False]]
+        if bad:
+            raise RuntimeError(f"AnkiConnect rechazó {len(bad)} de {len(out)}: {bad[0]}")
 
 
 def reset_progress():
@@ -5120,11 +5168,9 @@ def reset_progress():
     if not cards:
         return 0
     anki_request("forgetCards", cards=cards)
-    actions = [{"action": "setSpecificValueOfCard",
-                "params": {"card": c, "keys": ["reps", "lapses"], "newValues": [0, 0], "warning_check": True}}
-               for c in cards]
-    for i in range(0, len(actions), 200):
-        anki_request("multi", actions=actions[i:i + 200])
+    anki_multi([{"action": "setSpecificValueOfCard",
+                 "params": {"card": c, "keys": ["reps", "lapses"], "newValues": [0, 0], "warning_check": True}}
+                for c in cards])
     return len(cards)
 
 
@@ -5236,8 +5282,11 @@ def cmd_push(allow_missing_audio, sync, prune=False, reset=False, force=False, p
     sync_templates()
     if reset:
         print(f"Progreso reiniciado: {reset_progress()} tarjeta(s) vuelven a nuevas.")
-    moved = reorder_new(lambda pending: new_card_order(entries, sentences, exercises, pending))
-    print(f"Orden de nuevas: {moved} tarjeta(s) recolocada(s).")
+    try:
+        moved = reorder_new(lambda pending: new_card_order(entries, sentences, exercises, pending))
+        print(f"Orden de nuevas: {moved} tarjeta(s) recolocada(s).")
+    except RuntimeError as e:
+        print(f"Orden de nuevas: sin aplicar ({e}).")
     orphans(exercises, prune, force)
     moved_decks, removed = place_by_theme(exercises)
     print(f"Subdecks por tema: {moved_decks} tarjeta(s) recolocada(s)"
