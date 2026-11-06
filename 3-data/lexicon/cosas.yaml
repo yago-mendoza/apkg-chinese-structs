@@ -55,6 +55,7 @@ entries:
     pinyin: zhè
     meaning: {es: 'este, esto', en: this}
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
+    accept_cards: 'el contraste 这 / 着 sale de las 20 de HSK 1 del lote 016: 着 suena casi igual'
     comments:
       - {date: '2026-10-31', kind: tip, private: false, text: 'Cosas frente a lugares: 这个 / 那个 / 哪个, una cosa o persona; 这里 / 那里 / 哪里, un lugar. Truco: si puedes poner 个, es una cosa; si puedes poner 在 delante, un lugar.'}
   - id: w.na.that
@@ -316,18 +317,6 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Delante de un adjetivo: 你为什么这么高？ «¿por qué eres tan alto?».'}
-  - id: w.chuqu
-    use: say
-    role: content
-    kind: word
-    hanzi: 出去
-    pinyin: 'chūqu'
-    meaning: {es: 'salir (hacia fuera)', en: 'to go out'}
-    accept_pinyin_mismatch: 'la segunda sílaba es átona en el habla'
-    source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27', rescued: 003-2026-10-01-comer-dinero-y-contrastes}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '出 es una planta que sale de un tiesto. 出来 chūlái es salir hacia aquí.'}
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '出去啊？ «¿sales?» es un saludo al cruzarte con alguien que se va.'}
   - id: g.lai-qu-jin
     kind: group
     basis: set
@@ -475,6 +464,7 @@ entries:
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-08'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: '我在找我的手机 «estoy buscando mi móvil». Pedirlo: 帮我找一下.'}
+      - {date: '2026-11-06', kind: mnemonic, private: false, text: '找 es casi 我 «yo», roto: le falta un trazo. Siempre andamos buscándonos a nosotros mismos, y todos estamos un poco rotos.', original: 'Zhao es buscar, por eso el habzi es como el "wo" pero roto, porque siempre nos estamos buscanfo s nosotros mismos y tofos edtamos un poco rotos, mnemotencis importante'}
   - id: w.na.take
     use: say
     role: content
@@ -553,25 +543,6 @@ entries:
       - {ref: w.na.that, cue: 'cae'}
     source: {origin: inbox, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: review-006-2026-10-06-edad-numeros-y-familia.md, date: '2026-10-08'}
     comments: []
-  - id: w.jinlai
-    use: say
-    role: content
-    kind: word
-    hanzi: 进来
-    pinyin: jìnlái
-    meaning: {es: entrar (hacia aquí), en: to come in}
-    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-09', text: '进来 es entrar hacia donde está quien habla; 进去, entrar alejándose, hacia allí. El 来 y el 去 dicen hacia dónde: 来 «venir», 去 «ir».'}
-  - id: w.jinqu
-    use: say
-    role: content
-    kind: word
-    hanzi: 进去
-    pinyin: jìnqù
-    meaning: {es: entrar (hacia allí), en: to go in}
-    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
-    comments: []
   - id: w.zuo.do
     use: say
     role: content
@@ -594,17 +565,6 @@ entries:
       - {ref: w.zuo.left, cue: baja y sube; 工 abajo}
     source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
     comments: []
-  - id: w.chulai
-    use: say
-    role: content
-    kind: word
-    hanzi: 出来
-    pinyin: chūlai
-    meaning: {es: salir (hacia aquí), en: to come out}
-    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-11', text: '出 «salir» + 来 «hacia aquí»: sales hacia donde está quien habla. 快出来！ «¡sal ya!», si te esperan fuera. 出去 es salir alejándose.'}
-    accept_pinyin_mismatch: '来 va átono detrás de un verbo: chūlai'
   - id: w.zenmeban
     use: say
     role: content
@@ -623,16 +583,6 @@ entries:
     members:
       - {ref: w.zou, cue: 'baja y sube; abajo, un pie que echa a andar'}
       - {ref: w.zuo.sit, cue: cae; dos personas sobre la tierra}
-    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
-    comments: []
-  - id: g.chu-direction
-    kind: group
-    basis: set
-    title: 出来 y 出去
-    explanation: 出 es salir; 来 y 去 dicen hacia dónde.
-    members:
-      - {ref: w.chulai, cue: 'hacia quien habla, que espera fuera'}
-      - {ref: w.chuqu, cue: alejándose de quien habla}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments: []
   - id: w.xizao
@@ -854,4 +804,95 @@ entries:
       - {ref: w.naxie, cue: 'cae: señala'}
       - {ref: w.naxie.which, cue: 'baja y sube, con boca 口: pregunta'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+    comments: []
+  - id: w.gan
+    use: say
+    role: content
+    kind: word
+    hanzi: 干
+    pinyin: gàn
+    meaning: {es: hacer (coloquial), en: to do (colloquial)}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: usage, private: false, text: 'En la calle, 你在干什么？ «¿qué haces?» se oye tanto como 你在做什么？. Con primer tono, gān, es otra palabra: «seco».'}
+  - id: w.dong.move
+    use: say
+    role: content
+    kind: word
+    hanzi: 动
+    pinyin: dòng
+    meaning: {es: moverse, en: to move}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments: []
+  - id: g.xing-xing
+    kind: group
+    basis: soundalike
+    title: 姓 xìng y 行 xíng
+    explanation: 'Solo cambia el tono: 姓 cae; 行 sube.'
+    members:
+      - {ref: w.xing, cue: 'cae: 我姓孟'}
+      - {ref: w.xing.ok, cue: 'sube: 行吗？'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []
+  - id: g.dong-dong
+    kind: group
+    basis: soundalike
+    title: 懂 dǒng y 动 dòng
+    explanation: 'Solo cambia el tono: 懂 baja y sube; 动 cae.'
+    members:
+      - {ref: w.dong, cue: 'baja y sube: 我不懂'}
+      - {ref: w.dong.move, cue: 'cae: 别动！'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []
+  - id: g.tamen-tamen
+    kind: group
+    basis: homophone
+    title: 他们 y 她们
+    explanation: 'Suenan igual, tāmen: solo cambia la escritura.'
+    members:
+      - {ref: w.tamen, cue: '亻: hombres, o un grupo mixto'}
+      - {ref: w.tamen.she, cue: '女: solo mujeres'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []
+  - id: g.zhong-zhong
+    kind: group
+    basis: soundalike
+    title: 重 zhòng y 钟 zhōng
+    explanation: 'Solo cambia el tono: 重 cae; 钟 es alto y plano.'
+    members:
+      - {ref: w.zhong.heavy, cue: 'cae: 很重'}
+      - {ref: w.zhong.clock, cue: 'alto y plano: 三点钟'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []
+  - id: g.ke-ke.same
+    kind: group
+    basis: homophone
+    title: 克, 课, 渴 y 棵
+    explanation: '克 y 课 suenan igual, kè; 渴 kě baja y sube; 棵 kē es plano. Los separa la palabra en que salen.'
+    members:
+      - {ref: w.ke.gram, cue: 'el peso: 五百克'}
+      - {ref: w.ke.class, cue: '讠, la lección: 中文课'}
+      - {ref: w.ke.thirsty, cue: '氵, sed: 我渴了'}
+      - {ref: w.ke, cue: '木, árboles: 一棵树'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []
+  - id: g.cha-cha
+    kind: group
+    basis: soundalike
+    title: 茶 chá y 差 chà
+    explanation: 'Solo cambia el tono: 茶 sube; 差 cae.'
+    members:
+      - {ref: w.cha, cue: 'sube: 喝茶'}
+      - {ref: w.cha.short, cue: 'cae: 差五分八点'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []
+  - id: g.zhe-zhe
+    kind: group
+    basis: soundalike
+    title: 这 zhè y 着 zhe
+    explanation: 这 cae y señala; 着 es átono y va detrás del verbo.
+    members:
+      - {ref: w.zhe, cue: 'cae, delante: 这个'}
+      - {ref: w.zhe.dur, cue: 'átono, detrás del verbo: 开着'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
     comments: []

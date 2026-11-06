@@ -295,6 +295,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Va delante del verbo: 一起吃饭 «comer juntos».'}
       - {date: '2026-10-31', kind: mnemonic, original: Aquí puedes imaginar varias personas poniéndose en movimiento como una sola unidad., private: false, text: '一起: varias personas que se levantan 起 a la vez, como una sola 一: juntos.'}
+      - {date: '2026-11-06', kind: tip, private: false, text: '一起 va delante del verbo: 我们一起去吧 «vamos juntos». Con alguien: 跟 + persona + 一起 + verbo, 我跟你一起去.'}
   - id: w.gei.to
     use: say
     role: function
@@ -514,3 +515,64 @@ entries:
     comments:
       - {date: '2026-10-31', kind: linguistic, private: false, text: 'Delante del verbo: 我一个人住 «vivo solo». 自己 es otra cosa: «yo mismo, sin que nadie lo haga por mí».'}
       - {date: '2026-10-31', kind: linguistic, private: false, text: 'Palabra a palabra: 一 «una» + 个 (clasificador) + 人 «persona»: «una sola persona», solo.'}
+  - id: w.nanren
+    use: say
+    role: content
+    kind: word
+    hanzi: 男人
+    pinyin: nánrén
+    meaning: {es: hombre, en: man}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: usage, private: false, text: 'Al hablar de alguien sin conocerlo se oye más 男的 y 女的: 是男的还是女的？ 男人 y 女人 son «hombre» y «mujer» adultos.'}
+  - id: w.nvren
+    use: say
+    role: content
+    kind: word
+    hanzi: 女人
+    pinyin: nǚrén
+    meaning: {es: mujer, en: woman}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments: []
+  - id: w.tamen.she
+    use: say
+    role: content
+    kind: word
+    hanzi: 她们
+    pinyin: tāmen
+    meaning: {es: ellas, en: they (female)}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 'Suena igual que 他们: solo cambia la escritura (女 «mujer»). Si el grupo es mixto, 他们.'}
+  - id: w.shiyou
+    use: say
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 室友
+    pinyin: shìyǒu
+    meaning: {es: compañero de piso, en: roommate}
+    level: 3
+    level_reason: no está en la lista; 室 es HSK 3 y 友 sale en 朋友
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: '室 «cuarto» + 友 «amigo», el mismo de 朋友: el amigo con quien compartes casa.'}
+  - id: w.bingren
+    use: hear
+    role: content
+    kind: word
+    hanzi: 病人
+    pinyin: bìngrén
+    meaning: {es: 'enfermo, paciente', en: patient}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments: []
+  - id: w.shenshang
+    use: say
+    role: content
+    kind: word
+    hanzi: 身上
+    pinyin: shēnshang
+    meaning: {es: 'encima (de uno), en el cuerpo', en: 'on one''s body, on oneself'}
+    accept_pinyin_mismatch: la segunda sílaba es átona en el habla
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments: []

@@ -602,3 +602,82 @@ sentences:
       - {text: ？}
     translation: {en: 'What are you saying?', es: '¿Qué estás diciendo?'}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.ni-neng-ting-dong-wo-shuo-de-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: néng, ref: w.neng, text: 能}
+      - {pinyin: tīng, ref: w.ting, text: 听}
+      - {pinyin: dǒng, ref: w.dong, text: 懂}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: shuō, ref: w.shuo, text: 说}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Can you understand what I''m saying?', es: '¿Entiendes lo que digo?'}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.wo-kan-bu-dao-ni
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: kàn, ref: w.kan, text: 看}
+      - {pinyin: bu, ref: w.bu, sandhi: true, text: 不}
+      - {pinyin: dào, ref: w.dao.reach, text: 到}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {text: 。}
+    translation: {en: I can't see you., es: No te veo.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-juede-bu-shi
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: juéde, ref: w.juede, text: 觉得}
+      - {pinyin: bú, ref: w.bu, sandhi: true, text: 不}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {text: 。}
+    translation: {en: I don't think so., es: Creo que no.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.hao-wenti
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: hǎo, ref: w.hao, text: 好}
+      - {pinyin: wèntí, ref: w.wenti, text: 问题}
+      - {text: ！}
+    translation: {en: Good question!, es: ¡Buena pregunta!}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-bu-zhidao-zenme-shuo
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: bù, ref: w.bu, text: 不}
+      - {pinyin: zhīdao, ref: w.zhidao, text: 知道}
+      - {pinyin: zěnme, ref: w.zenme, text: 怎么}
+      - {pinyin: shuō, ref: w.shuo, text: 说}
+      - {text: 。}
+    translation: {en: I don't know how to say it., es: No sé cómo decirlo.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.ni-juede-ne
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: juéde, ref: w.juede, text: 觉得}
+      - {pinyin: ne, ref: w.ne, text: 呢}
+      - {text: ？}
+    translation: {en: 'What do you think?', es: '¿Y tú qué opinas?'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.keneng-shi-zheyang
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: kěnéng, ref: w.keneng, text: 可能}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: zhèyàng, ref: w.zheyang, text: 这样}
+      - {text: 。}
+    translation: {en: Maybe it's like that., es: Puede que sea así.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}

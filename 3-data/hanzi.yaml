@@ -4408,6 +4408,90 @@ characters:
       es: 'Es 金 «metal, oro» estrechado a la izquierda del carácter: en 钱, 铁, 钟 y 错.'
       en: 'It is 金 (metal, gold) narrowed on the left of a character: in 钱, 铁, 钟 and 错.'
     confidence: high
+  着:
+    gloss: {es: 'partícula: algo que dura', en: durative particle}
+    origin: {es: 'El origen de su forma es discutido: nació como variante de 著 y su forma de hoy no cuenta nada.', en: 'The origin of its shape is disputed: it began as a variant of 著, and its present form tells no story.'}
+    memory: {es: 'Una oveja 羊 encima de un ojo 目 que no la pierde de vista: la mirada sigue ahí, algo que dura.', en: 'A sheep 羊 above an eye 目 that never loses sight of it: the gaze stays, something that lasts.'}
+    confidence: medium
+  行:
+    gloss: {es: 'andar; valer, estar bien', en: to walk; OK}
+    origin: {es: 'Pictograma: un cruce de caminos visto desde arriba. De ahí «andar» y «hacer»; como háng, «fila», y el de 银行.', en: 'Pictograph: a crossroads seen from above. Hence to walk and to do; read háng, a row, as in 银行.'}
+    confidence: high
+  干:
+    gloss: {es: hacer (coloquial); seco, en: to do; dry}
+    origin: {es: 'Pictograma: un arma de palo con horquilla. Hoy es además la forma simplificada de dos caracteres: 幹 «hacer» y 乾 «seco».', en: 'Pictograph: a forked stick used as a weapon. Today it also stands for two simplified characters: 幹 (to do) and 乾 (dry).'}
+    confidence: high
+  动:
+    gloss: {es: moverse, en: to move}
+    origin: {es: 'Fonético-semántico: 力 «fuerza» da el significado. En la forma tradicional, 動, el sonido lo daba 重 zhòng; la simplificada lo cambió por 云.', en: 'Phono-semantic: 力 (strength) gives the meaning. In the traditional 動 the sound came from 重 zhòng; the simplified form swapped it for 云.'}
+    traditional: 動
+    confidence: high
+  差:
+    gloss: {es: faltar; malo, en: to lack; poor}
+    origin: {es: El origen de su forma es discutido., en: The origin of its shape is disputed.}
+    memory: {es: 'Una oveja 羊 haciendo un trabajo 工: le sale mal y le falta algo.', en: 'A sheep 羊 doing a job 工: it goes badly and something is missing.'}
+    confidence: medium
+  课:
+    gloss: {es: 'clase, lección', en: 'class, lesson'}
+    origin: {es: 'Fonético-semántico: 讠 «palabra» da el significado y 果 guǒ el sonido (hoy ya poco parecido): lo que se dice y se repasa, la lección.', en: 'Phono-semantic: 讠 (speech) gives the meaning and 果 guǒ the sound (no longer close): what is said and gone over, the lesson.'}
+    confidence: high
+  室:
+    gloss: {es: 'cuarto, sala', en: room}
+    origin: {es: 'Fonético-semántico: 宀 «techo» da el significado y 至 zhì, «llegar», el sonido: adonde se llega bajo techo, el cuarto.', en: 'Phono-semantic: 宀 (roof) gives the meaning and 至 zhì (to arrive) the sound: where you arrive under a roof, a room.'}
+    confidence: high
+  惨:
+    gloss: {es: 'terrible, desgraciado', en: miserable}
+    origin: {es: 'Fonético-semántico: 忄 «corazón» da el significado y 参 cān el sonido: un dolor del corazón.', en: 'Phono-semantic: 忄 (heart) gives the meaning and 参 cān the sound: a pain of the heart.'}
+    traditional: 慘
+    confidence: high
+  板:
+    gloss: {es: tabla, en: 'board, plank'}
+    origin: {es: 'Fonético-semántico: 木 «madera» da el significado y 反 fǎn el sonido: una tabla de madera. En 老板 «jefe» solo presta el sonido.', en: 'Phono-semantic: 木 (wood) gives the meaning and 反 fǎn the sound: a wooden board. In 老板 (boss) it only lends its sound.'}
+    confidence: high
+  广:
+    gloss: {es: amplio, en: wide}
+    origin: {es: 'Pictograma: un tejado apoyado en un solo muro, un cobertizo abierto; de ahí «amplio». La forma tradicional, 廣, añadía 黄 huáng para el sonido.', en: 'Pictograph: a roof resting on a single wall, an open shed; hence wide. The traditional 廣 added 黄 huáng for the sound.'}
+    traditional: 廣
+    confidence: high
+  伞:
+    gloss: {es: paraguas, en: umbrella}
+    origin: {es: 'Pictograma: un paraguas abierto, con sus varillas y el mango. La forma tradicional, 傘, se ve todavía mejor.', en: 'Pictograph: an open umbrella with its ribs and handle. The traditional 傘 shows it even better.'}
+    traditional: 傘
+    confidence: high
+  周:
+    gloss: {es: semana; alrededor, en: week; around}
+    origin: {es: El origen de su forma es discutido., en: The origin of its shape is disputed.}
+    memory: {es: 'Un muro 冂 que rodea la tierra 土 y un pozo 口: todo alrededor. Una vuelta entera de días, la semana.', en: 'A wall 冂 around the land 土 and a well 口: all the way around. A full round of days, the week.'}
+    confidence: medium
+  末:
+    gloss: {es: 'final, punta', en: 'end, tip'}
+    origin: {es: 'Ideograma: un árbol 木 con una raya larga arriba que señala la copa, la punta: el final.', en: 'Ideograph: a tree 木 with a long stroke on top marking the crown, the tip: the end.'}
+    confidence: high
+  愉:
+    gloss: {es: alegre, en: happy}
+    origin: {es: 'Fonético-semántico: 忄 «corazón» da el significado y 俞 yú el sonido: el corazón contento.', en: 'Phono-semantic: 忄 (heart) gives the meaning and 俞 yú the sound: a glad heart.'}
+    confidence: high
+  原:
+    gloss: {es: origen; original, en: origin; original}
+    origin: {es: 'Ideograma compuesto: un manantial 泉 que brota al pie de un acantilado 厂: de donde sale el agua, el origen.', en: 'Compound ideograph: a spring 泉 welling up at the foot of a cliff 厂: where the water comes from, the origin.'}
+    confidence: high
+  感:
+    gloss: {es: sentir, en: to feel}
+    origin: {es: 'Fonético-semántico: 心 «corazón» da el significado y 咸 xián el sonido: lo que mueve el corazón.', en: 'Phono-semantic: 心 (heart) gives the meaning and 咸 xián the sound: what moves the heart.'}
+    confidence: high
+  颜:
+    gloss: {es: cara; color, en: face; colour}
+    origin: {es: 'Fonético-semántico: 页 «cabeza» da el significado y 彦 yàn el sonido: el semblante, y de ahí el color de la cara, el color.', en: 'Phono-semantic: 页 (head) gives the meaning and 彦 yàn the sound: the face, then its colour, colour.'}
+    confidence: high
+  红:
+    gloss: {es: rojo, en: red}
+    origin: {es: 'Fonético-semántico: 纟 «seda» da el significado y 工 gōng el sonido: la seda teñida, el rojo.', en: 'Phono-semantic: 纟 (silk) gives the meaning and 工 gōng the sound: dyed silk, red.'}
+    confidence: high
+  海:
+    gloss: {es: mar, en: sea}
+    origin: {es: 'Fonético-semántico: 氵 «agua» da el significado y 每 měi el sonido (antes más parecido): el mar.', en: 'Phono-semantic: 氵 (water) gives the meaning and 每 měi the sound (once closer): the sea.'}
+    confidence: high
+
 parts:
   亻: {es: 'persona (forma de 人 a la izquierda)', en: 'person (人 on the left)'}
   尔: {es: 'tú (forma corta de 爾)', en: 'you (short form of 爾)'}

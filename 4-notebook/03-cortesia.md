@@ -11,14 +11,14 @@
 - ✅🃏 请问 qǐngwèn [tɕʰiŋ˧˩˧ wən˥˩] · disculpe (para preguntar) · _expresión_ · Palabra a palabra: 请 «por favor» + 问 wèn «preguntar»: la forma cortés de abrir una pregunta a alguien.
 - ✅🃏 请进 qǐng jìn [tɕʰiŋ˧˩˧ tɕin˥˩] · pase, por favor · _expresión_ · Palabra a palabra: 请 «por favor» + 进 «entrar».
 - ✅🃏 请坐 qǐng zuò [tɕʰiŋ˧˩˧ tswɔ˥˩] · siéntese, por favor · _expresión_ · Palabra a palabra: 请 «por favor» + 坐 «sentarse».
-- ✅🃏 是的 shì de [ʂɨ˥˩ tɤ] · sí, eso es · _expresión_ · Palabra a palabra: 是 «ser» + 的: «así es».
+- ✅🃏 是的 shì de [ʂɨ˥˩ tɤ] · sí, eso es · _expresión_ · Palabra a palabra: 是 «ser» + 的: «así es». · 💡 是的 confirma que algo es así: si te preguntan «¿eres tú?» o «¿es tuyo?», 是的. 好的 acepta lo que te proponen o te piden: a «¿quedamos a las siete?», 好的.
 - ✅🃏 嗯 èn · mm, sí (asentimiento) · _interjección_ · Una boca 口 junto a un corazón 心 con alguien dentro: el «mm» de quien escucha sin decir nada; según el tono, sí, extrañeza o «me da igual». · Repetido, 嗯嗯 es el «ajá, ajá» de quien sigue la conversación; dicho seco, puede sonar a indiferencia.
 - ✅🃏 可以 kěyǐ [kʰɤ˧˩˧ i˧˩˧] · poder (está permitido); vale, sirve · _verbo_ · También sirve de «vale», como 好的. · 可 delante de un verbo lo vuelve «-able»: 可以 «se puede», 可爱 «mono, adorable», 可怕 kěpà «temible» [HSK 2]. · Pregunta y respuesta a la vez: 可以吗？ —可以。 «¿Se puede? —Sí». En una tienda, 这个大小可以吗？ «¿este tamaño está bien?». Según el contexto también se dice 行 xíng [HSK 1] o 没问题 méi wèntí [问题 HSK 2], «no hay problema». · Kěyǐ suena un poco a «can», «poder» en inglés. · 可以: 可 es un plato sobre una mesa que hay que retirar; 以, un camarero con una patilla larga y cara triste. El camarero ve el plato y pregunta: «¿Puedo retirarlo?». ¡Sí, puede! · 可 también parece el ojo de un sapo mágico que da cualidades a las cosas: 可爱, 可以.
 - ✅🃏 不好意思 bù hǎoyìsi [pu˥˩ xɑʊ˧˩˧ i˥˩ sɯ] · perdona; qué vergüenza; me sabe mal · _expresión_ · Palabra a palabra: 不 «no» + 好意思 «tener cara para algo»: «no tengo cara», qué apuro. · Para una molestia pequeña: llegar tarde, pasar, interrumpir, pedir algo. Es muy cotidiano, también entre jóvenes, y no suena formal.
 - ✅🃏 对不起 duìbuqǐ [tweɪ˥˩ pu tɕʰi˧˩˧] · lo siento · _verbo_ · 对得起 es estar a la altura con alguien; 对不起, no estarlo: te he fallado, perdón. · 对不起 empieza por 对 «sí, correcto»: al pedir perdón juntas las manos, como quien afirma y reza. El que empieza por 不 «no», 不客气, es la mano que dice que no: «no hay de qué».
 - ✅🃏 没关系 méi guānxi [meɪ˧˥ kwan˥ ɕi] · no pasa nada · _expresión_ · La respuesta a 对不起 o a 不好意思: «no pasa nada». · Palabra a palabra: 没 «no hay» + 关系 [HSK 3] «relación»: no tiene que ver, no importa. Para quitar importancia a algo que ha pasado; para aceptar algo que te piden, 没问题. · Truco: «¡eso no tiene relación con nada importante!». · 关 «cerrar» y 系 «atar»: lo que está cerrado y atado a otra cosa tiene 关系, «relación». 关 sale solo en 关门 «cerrar la puerta».
 - ✅🃏 不客气 bù kèqi [pu˥˩ kʰɤ˥˩ tɕʰi] · de nada · _expresión_ · La respuesta a 谢谢. Literalmente, «no hagas cumplidos». · Palabra a palabra: 客气 [HSK 5] es tener cumplidos, como un invitado 客; 不客气, «no hace falta cumplido». Su 气 qi no es el 起 qǐ de 对不起: son caracteres distintos. · 客 kè es «invitado»: 不客气, «no hace falta tanta ceremonia». El invitado o el cliente es 客人 kèrén [HSK 2]; como con 商人 shāngrén [HSK 2], sin 人 no se usa.
-- ✅🃏 帮 bāng [pɑŋ˥] · ayudar (a alguien) · _verbo_ · Con la persona detrás: 帮我 «ayúdame». Es la forma corriente al hablar. · Una ciudad 阝 tan próspera 丰 que reparte telas 巾 a quien las necesita: eso es ayudar.
+- ✅🃏 帮 bāng [pɑŋ˥] · ayudar (a alguien) · _verbo_ · Con la persona detrás: 帮我 «ayúdame». Es la forma corriente al hablar. · Una ciudad 阝 tan próspera 丰 que reparte telas 巾 a quien las necesita: eso es ayudar. · 帮: todo el país 邦 se une para ayudar a alguien que se ha quedado sin ropa, y cada uno aporta un paño 巾. · Arriba, 邦 bāng da el sonido (antes era «país»; hoy, al hablar, país es 国家); abajo, 巾 jīn «paño, tela», el mismo de 帅.
 - ✅🃏 帮忙 bāngmáng [pɑŋ˥ mɑŋ˧˥] · echar una mano · _verbo_ · No lleva a quién detrás: 他来帮忙 «viene a echar una mano». «Ayúdame» es 帮我.
 - ✅🃏 帮助 bāngzhù [pɑŋ˥ ʈʂu˥˩] · ayudar; ayuda · _verbo_ · Más formal que 帮, y también sustantivo: 谢谢你的帮助 «gracias por tu ayuda».
 - ✅🃏 你真棒 nǐ zhēn bàng [ni˧˩˧ ʈʂən˥ pɑŋ˥˩] · ¡eres genial!, ¡qué bien lo haces! · _expresión_ · Palabra a palabra: 你 «tú» + 真 «de verdad» + 棒 «estupendo»: «eres estupendo de verdad».
@@ -44,6 +44,8 @@
 - ✅🃏 不用 búyòng [pu˧˥ jʊŋ˥˩] · no hace falta · _adverbio_ · 不用谢 «de nada» (no hace falta dar las gracias); 不用了 «no, gracias, no hace falta».
 - ✅🃏 没什么 méi shénme [meɪ˧˥ ʂən˧˥ mɤ] · no es nada; no pasa nada · _expresión_ · Palabra a palabra: 没 «no hay» + 什么 «nada»: «no hay nada». Ante un 谢谢 o una pregunta preocupada.
 - ✅🃏 同意 tóngyì [tʰʊŋ˧˥ i˥˩] · estar de acuerdo · _verbo_ · 我同意 «estoy de acuerdo», 我不同意 «no estoy de acuerdo», 你同意吗？ «¿estás de acuerdo?». Para contestar rápido también valen 对 y 好的. · 同 «mismo» + 意 «idea»: tenemos la misma idea, así que estamos de acuerdo.
+- ✅🃏 行 xíng [ɕiŋ˧˥] · vale, está bien; (algo) sirve · _verbo_ · Para decir que algo te va bien: 行吗？ «¿te parece bien?», 行！ «¡vale!», 都行 «cualquiera me vale». Con otra lectura, háng, es el de 银行 «banco» [HSK 2].
+- ✅🃏 是吗 shì ma [ʂɨ˥˩ ma] · ¿ah, sí? · _expresión_ · Para reaccionar a lo que te cuentan sin dudar de ello: 是吗？ «¿ah, sí?». 真的吗？ es más sorpresa: «¿de verdad?». · Palabra a palabra: 是 «ser, así es» + 吗, la pregunta: «¿es así?».
 
 ## Formas de decir que sí
 
@@ -156,9 +158,16 @@ Cada una contesta a una cosa distinta: a unas gracias, a una disculpa o a un fav
 - ✅🃏 没事。 · méi shì · No pasa nada.
 - ✅🃏 我来！ · wǒ lái · ¡Ya me encargo yo!
 - ✅🃏 我来帮你。 · wǒ lái bāng nǐ · Deja, que te ayudo.
-- ✅🃏 我自己来。 · wǒ zìjǐ lái · Ya lo hago yo.
+- ✅🃏 我自己来。 · wǒ zìjǐ lái · Ya lo hago yo solo (no hace falta que me ayudes).
 - ✅🃏 你好，我找人。 · nǐ hǎo wǒ zhǎo rén · Hola, busco a una persona.
 - ✅🃏 你好，我找人。他叫什么名字？他叫孟逸辰。请稍等，他住在四二六房间。 · nǐ hǎo wǒ zhǎo rén tā jiào shénme míngzi tā jiào Mèng Yìchén qǐng shāoděng tā zhù zài sì èr liù fángjiān · —Hola, busco a una persona. —¿Cómo se llama? —Se llama Mèng Yìchén. —Un momento: está en la habitación 426.
-- ✅🃏 要我帮你吗？ · yào wǒ bāng nǐ ma · ¿Quieres que te ayude?
+- ✅🃏 (你)要我帮你吗？ · nǐ yào wǒ bāng nǐ ma · ¿Quieres que te ayude?
 - ✅🃏 你想让我帮你吗？ · nǐ xiǎng ràng wǒ bāng nǐ ma · ¿Quieres que te ayude?
 - ✅🃏 我帮你吧。 · wǒ bāng nǐ ba · Te ayudo.
+- ✅🃏 请稍等，我去拿。 · qǐng shāo děng wǒ qù ná · Espere un momento, voy a buscarlo.
+- ✅🃏 等一下吧，他马上来。 · děng yíxià ba tā mǎshàng lái · Esperemos un poco: ya viene.
+- ✅🃏 我也是！ · wǒ yě shì · ¡Yo también!
+- ✅🃏 行吗？ · xíng ma · ¿Te parece bien?
+- ✅🃏 好不好？ · hǎo bu hǎo · ¿Vale? ¿Te parece?
+- ✅🃏 都行。 · dōu xíng · Cualquiera me vale.
+- ✅🃏 要不要我帮你？ · yào bu yào wǒ bāng nǐ · ¿Te ayudo o no?

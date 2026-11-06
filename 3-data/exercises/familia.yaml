@@ -1186,3 +1186,52 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Mi abuelo tiene ya noventa y tres años.}
     comments: []
+  - id: x.dictation.jiaren
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.jiaren]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jia1 ren2, hanzi: 家人, pinyin: jiārén, meaning: familia (las personas)}
+    comments: []
+  - id: x.produce.jiaren
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.jiaren]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «familia (las personas)»? Escribe el pinyin.'}
+    answer: {typed: jia1 ren2, hanzi: 家人, pinyin: jiārén, meaning: familia (las personas)}
+    comments: []
+  - id: x.read.jiaren
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.jiaren]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 家人}
+    answer: {hanzi: 家人, pinyin: jiārén, meaning: familia (las personas)}
+    comments: []
+  - id: x.produce.ni-de-jiaren-dou-hao-ma
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-de-jiaren-dou-hao-ma
+    targets: [s.ni-de-jiaren-dou-hao-ma]
+    context: [w.ni, w.de, w.jiaren, w.dou, w.hao, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Está bien toda tu familia?»'}
+    answer: {meaning: '¿Está bien toda tu familia?'}
+    comments: []
+  - id: x.produce.wo-ai-wo-de-jiaren
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-ai-wo-de-jiaren
+    targets: [s.wo-ai-wo-de-jiaren]
+    context: [w.wo, w.ai.love, w.de, w.jiaren]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero a mi familia.»'}
+    answer: {meaning: Quiero a mi familia.}
+    comments: []

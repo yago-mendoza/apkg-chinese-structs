@@ -3583,3 +3583,169 @@ exercises:
     answer: {typed: wai4, hanzi: 外, pinyin: wài, meaning: 'Sale en 外国 wàiguó «el extranjero; extranjero (de otro país)», 外面
         wàimiàn «fuera».'}
     comments: []
+  - id: x.pair.shi-shi.master
+    added: '2026-11-06'
+    lang: es
+    type: listen
+    targets: [w.shi]
+    pair:
+      - {hanzi: 师, meaning: maestro (el de 老师), pinyin: shī}
+      - {hanzi: 是, meaning: ser, pinyin: shì}
+    skills: [listening, discrimination]
+    prompt: {audio: true, text: 'Suenan dos. ¿Cuál es shì, «ser», la 1.ª o la 2.ª?'}
+    answer: {meaning: 'La 2.ª: shì 是, «ser», que cae. La 1.ª era shī 师, el de 老师, alto y plano.'}
+    comments: []
+  - id: x.compose.primer-dia-trabajo
+    added: '2026-11-06'
+    lang: es
+    type: compose
+    targets: [s.nihao-wo-jiao-mengyichen-shi-gongchengshi, s.renshi-ni-hen-gaoxing-ni-shi-zuo-shenme-gongzuo-de, s.ni-shi-zuo-shenme-gongzuo-de]
+    words: [e.nihao, w.jiao, w.shi, w.renshi, w.shenme, w.gongzuo]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. Primer día en un trabajo nuevo: saluda a un compañero, dile cómo te llamas y a qué te dedicas, y pregúntale algo.'}
+    answer: {meaning: Tres piezas para presentarte.}
+    comments: []
+  - id: x.produce.meiguo
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.meiguo]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «Estados Unidos»? Escribe el pinyin.'}
+    answer: {typed: mei3 guo2, hanzi: 美国, pinyin: Měiguó, meaning: Estados Unidos}
+    comments: []
+  - id: x.dictation.shanghai
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.shanghai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shang4 hai3, hanzi: 上海, pinyin: Shànghǎi, meaning: Shanghái}
+    comments: []
+  - id: x.produce.shanghai
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.shanghai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «Shanghái»? Escribe el pinyin.'}
+    answer: {typed: shang4 hai3, hanzi: 上海, pinyin: Shànghǎi, meaning: Shanghái}
+    comments: []
+  - id: x.read.shanghai
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.shanghai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 上海}
+    answer: {hanzi: 上海, pinyin: Shànghǎi, meaning: Shanghái}
+    comments: []
+  - id: x.listen.ni-mingtian-qu-beijing-ma
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.ni-mingtian-qu-beijing-ma
+    targets: [s.ni-mingtian-qu-beijing-ma]
+    context: [w.ni, w.mingtian, w.qu, w.beijing, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Vas mañana a Pekín?'}
+    comments: []
+  - id: x.produce.ni-mingtian-qu-beijing-ma
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-mingtian-qu-beijing-ma
+    targets: [s.ni-mingtian-qu-beijing-ma]
+    context: [w.ni, w.mingtian, w.qu, w.beijing, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Vas mañana a Pekín?»'}
+    answer: {meaning: '¿Vas mañana a Pekín?'}
+    comments: []
+  - id: x.listen.ta-xianzai-zai-meiguo
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.ta-xianzai-zai-meiguo
+    targets: [s.ta-xianzai-zai-meiguo]
+    context: [w.ta.he, w.xianzai, w.zai.at, w.meiguo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ahora está en Estados Unidos.}
+    comments: []
+  - id: x.produce.ta-xianzai-zai-meiguo
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ta-xianzai-zai-meiguo
+    targets: [s.ta-xianzai-zai-meiguo]
+    context: [w.ta.he, w.xianzai, w.zai.at, w.meiguo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ahora está en Estados Unidos.»'}
+    answer: {meaning: Ahora está en Estados Unidos.}
+    comments: []
+  - id: x.listen.nihao-wo-jiao-mengyichen-shi-gongchengshi
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.nihao-wo-jiao-mengyichen-shi-gongchengshi
+    targets: [s.nihao-wo-jiao-mengyichen-shi-gongchengshi]
+    context: [e.nihao, w.wo, w.jiao, w.mengyichen, w.shi, w.gongchengshi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Hola, me llamo Mèng Yìchén y soy ingeniero.'}
+    comments: []
+  - id: x.produce.nihao-wo-jiao-mengyichen-shi-gongchengshi
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.nihao-wo-jiao-mengyichen-shi-gongchengshi
+    targets: [s.nihao-wo-jiao-mengyichen-shi-gongchengshi]
+    context: [e.nihao, w.wo, w.jiao, w.mengyichen, w.shi, w.gongchengshi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hola, me llamo Mèng Yìchén y soy ingeniero.»'}
+    answer: {meaning: 'Hola, me llamo Mèng Yìchén y soy ingeniero.'}
+    comments: []
+  - id: x.charsound.yu
+    added: 2026-11-06
+    lang: es
+    type: charsound
+    targets: [w.hanyu, w.waiyu]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 语}
+    answer: {typed: yu3, hanzi: 语, pinyin: yǔ, meaning: 'Sale en 汉语 Hànyǔ «chino (el idioma; más formal que 中文)», 外语 wàiyǔ «lengua
+        extranjera».'}
+    comments: []
+  - id: x.contrast.xing
+    added: 2026-11-06
+    lang: es
+    type: contrast
+    group: g.xing-xing
+    targets: [w.xing]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 姓, pinyin: xìng, meaning: apellidarse; apellido}
+    comments: []
+  - id: x.listen.renshi-ni-hen-gaoxing-ni-shi-zuo-shenme-gongzuo-de
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.renshi-ni-hen-gaoxing-ni-shi-zuo-shenme-gongzuo-de
+    targets: [s.renshi-ni-hen-gaoxing-ni-shi-zuo-shenme-gongzuo-de]
+    context: [w.renshi, w.ni, w.hen, w.gaoxing, w.shi, w.zuo.do, w.shenme, w.gongzuo, w.de]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Encantado de conocerte. ¿A qué te dedicas?'}
+    comments: []
+  - id: x.produce.renshi-ni-hen-gaoxing-ni-shi-zuo-shenme-gongzuo-de
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.renshi-ni-hen-gaoxing-ni-shi-zuo-shenme-gongzuo-de
+    targets: [s.renshi-ni-hen-gaoxing-ni-shi-zuo-shenme-gongzuo-de]
+    context: [w.renshi, w.ni, w.hen, w.gaoxing, w.shi, w.zuo.do, w.shenme, w.gongzuo, w.de]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Encantado de conocerte. ¿A qué te dedicas?»'}
+    answer: {meaning: 'Encantado de conocerte. ¿A qué te dedicas?'}
+    comments: []

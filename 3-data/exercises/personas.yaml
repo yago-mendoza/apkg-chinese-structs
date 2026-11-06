@@ -1711,3 +1711,304 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: 'Vivo solo, y hoy quiero salir un rato.'}
     comments: []
+  - id: x.dictation.nanren
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.nanren]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nan2 ren2, hanzi: 男人, pinyin: nánrén, meaning: hombre}
+    comments: []
+  - id: x.produce.nanren
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.nanren]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «hombre»? Escribe el pinyin.'}
+    answer: {typed: nan2 ren2, hanzi: 男人, pinyin: nánrén, meaning: hombre}
+    comments: []
+  - id: x.read.nanren
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.nanren]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 男人}
+    answer: {hanzi: 男人, pinyin: nánrén, meaning: hombre}
+    comments: []
+  - id: x.dictation.nvren
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.nvren]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nü3 ren2, hanzi: 女人, pinyin: nǚrén, meaning: mujer}
+    comments: []
+  - id: x.produce.nvren
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.nvren]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «mujer»? Escribe el pinyin.'}
+    answer: {typed: nü3 ren2, hanzi: 女人, pinyin: nǚrén, meaning: mujer}
+    comments: []
+  - id: x.read.nvren
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.nvren]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 女人}
+    answer: {hanzi: 女人, pinyin: nǚrén, meaning: mujer}
+    comments: []
+  - id: x.dictation.tamen.she
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.tamen.she]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ta1 men5, hanzi: 她们, pinyin: tāmen, meaning: ellas}
+    comments: []
+  - id: x.produce.tamen.she
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.tamen.she]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «ellas»? Escribe el pinyin.'}
+    answer: {typed: ta1 men5, hanzi: 她们, pinyin: tāmen, meaning: ellas}
+    comments: []
+  - id: x.read.tamen.she
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.tamen.she]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 她们}
+    answer: {hanzi: 她们, pinyin: tāmen, meaning: ellas}
+    comments: []
+  - id: x.tones.tamen.she
+    added: 2026-11-06
+    lang: es
+    type: tones
+    targets: [w.tamen.she]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 她们, pinyin: ta men}
+    answer: {typed: '15', hanzi: 她们, pinyin: tāmen, meaning: ellas}
+    comments: []
+  - id: x.dictation.shiyou
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.shiyou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shi4 you3, hanzi: 室友, pinyin: shìyǒu, meaning: compañero de piso}
+    comments: []
+  - id: x.produce.shiyou
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.shiyou]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «compañero de piso»? Escribe el pinyin.'}
+    answer: {typed: shi4 you3, hanzi: 室友, pinyin: shìyǒu, meaning: compañero de piso}
+    comments: []
+  - id: x.read.shiyou
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.shiyou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 室友}
+    answer: {hanzi: 室友, pinyin: shìyǒu, meaning: compañero de piso}
+    comments: []
+  - id: x.listen.ta-shi-wo-de-shiyou
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.ta-shi-wo-de-shiyou
+    targets: [s.ta-shi-wo-de-shiyou]
+    context: [w.ta.he, w.shi, w.wo, w.de, w.shiyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es mi compañero de piso.}
+    comments: []
+  - id: x.produce.ta-shi-wo-de-shiyou
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ta-shi-wo-de-shiyou
+    targets: [s.ta-shi-wo-de-shiyou]
+    context: [w.ta.he, w.shi, w.wo, w.de, w.shiyou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Es mi compañero de piso.»'}
+    answer: {meaning: Es mi compañero de piso.}
+    comments: []
+  - id: x.listen.dajia-dou-xihuan-he-cha
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.dajia-dou-xihuan-he-cha
+    targets: [s.dajia-dou-xihuan-he-cha]
+    context: [w.dajia, w.dou, w.xihuan, w.he.drink, w.cha]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: A todos les gusta el té.}
+    comments: []
+  - id: x.produce.wo-you-pengyou-danshi-tamen-bu-zai-zheli
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-you-pengyou-danshi-tamen-bu-zai-zheli
+    targets: [s.wo-you-pengyou-danshi-tamen-bu-zai-zheli]
+    context: [w.wo, w.you.have, w.pengyou, w.danshi, w.tamen, w.bu, w.zai.at, w.zheli]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo amigos, pero no están aquí.»'}
+    answer: {meaning: 'Tengo amigos, pero no están aquí.'}
+    comments: []
+  - id: x.produce.wo-gei-ni-da-dianhua
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-gei-ni-da-dianhua
+    targets: [s.wo-gei-ni-da-dianhua]
+    context: [w.wo, w.gei.to, w.ni, w.dadianhua]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Te llamo (por teléfono).»'}
+    answer: {meaning: Te llamo (por teléfono).}
+    comments: []
+  - id: x.produce.nage-nanren-shi-shei
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.nage-nanren-shi-shei
+    targets: [s.nage-nanren-shi-shei]
+    context: [w.na.that, w.ge, w.nanren, w.shi, w.shei]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Quién es ese hombre?»'}
+    answer: {meaning: '¿Quién es ese hombre?'}
+    comments: []
+  - id: x.listen.nage-nvren-shi-wo-de-laoshi
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.nage-nvren-shi-wo-de-laoshi
+    targets: [s.nage-nvren-shi-wo-de-laoshi]
+    context: [w.na.that, w.ge, w.nvren, w.shi, w.wo, w.de, w.laoshi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Esa mujer es mi profesora.}
+    comments: []
+  - id: x.produce.tamen-shi-wo-de-pengyou.she
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.tamen-shi-wo-de-pengyou.she
+    targets: [s.tamen-shi-wo-de-pengyou.she]
+    context: [w.tamen.she, w.shi, w.wo, w.de, w.pengyou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Son mis amigas.»'}
+    answer: {meaning: Son mis amigas.}
+    comments: []
+  - id: x.charsound.shen-2
+    added: 2026-11-06
+    lang: es
+    type: charsound
+    targets: [w.shenti, w.shenshang]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 身}
+    answer: {typed: shen1, hanzi: 身, pinyin: shēn, meaning: 'Sale en 身体 shēntǐ «cuerpo; salud», 身上 shēnshang «encima (de uno),
+        en el cuerpo».'}
+    comments: []
+  - id: x.dictation.bingren
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.bingren]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bing4 ren2, hanzi: 病人, pinyin: bìngrén, meaning: 'enfermo, paciente'}
+    comments: []
+  - id: x.read.bingren
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.bingren]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 病人}
+    answer: {hanzi: 病人, pinyin: bìngrén, meaning: 'enfermo, paciente'}
+    comments: []
+  - id: x.tones.bingren
+    added: 2026-11-06
+    lang: es
+    type: tones
+    targets: [w.bingren]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '42', hanzi: 病人, pinyin: bìngrén, meaning: 'enfermo, paciente'}
+    comments: []
+  - id: x.dictation.shenshang
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.shenshang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shen1 shang5, hanzi: 身上, pinyin: shēnshang, meaning: 'encima (de uno), en el cuerpo'}
+    comments: []
+  - id: x.produce.shenshang
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.shenshang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «encima (de uno), en el cuerpo»? Escribe el pinyin.'}
+    answer: {typed: shen1 shang5, hanzi: 身上, pinyin: shēnshang, meaning: 'encima (de uno), en el cuerpo'}
+    comments: []
+  - id: x.read.shenshang
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.shenshang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 身上}
+    answer: {hanzi: 身上, pinyin: shēnshang, meaning: 'encima (de uno), en el cuerpo'}
+    comments: []
+  - id: x.tones.shenshang
+    added: 2026-11-06
+    lang: es
+    type: tones
+    targets: [w.shenshang]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 身上, pinyin: shen shang}
+    answer: {typed: '15', hanzi: 身上, pinyin: shēnshang, meaning: 'encima (de uno), en el cuerpo'}
+    comments: []
+  - id: x.contrast.tamen
+    added: 2026-11-06
+    lang: es
+    type: contrast
+    group: g.tamen-tamen
+    targets: [w.tamen]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es tāmen, «ellos»?'}
+    answer: {hanzi: 他们, pinyin: tāmen, meaning: ellos}
+    comments: []
+  - id: x.contrast.tamen.she
+    added: 2026-11-06
+    lang: es
+    type: contrast
+    group: g.tamen-tamen
+    targets: [w.tamen.she]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es tāmen, «ellas»?'}
+    answer: {hanzi: 她们, pinyin: tāmen, meaning: ellas}
+    comments: []

@@ -686,3 +686,73 @@ exercises:
     prompt: {text: '¿Cuál se dice así en chino? «¡Come un poco más!»'}
     answer: {meaning: '«Come un poco más»: el orden del español no vale; 多 va delante del verbo y 一点 detrás.'}
     comments: []
+  - id: x.calque.hui-lugar
+    added: 2026-11-06
+    lang: es
+    type: pattern
+    targets: [st.hui-lugar]
+    context: [w.hui.return]
+    sentence: s.ni-shenme-shihou-hui-xibanya
+    reveal: [s.ni-shenme-shihou-huijia]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «¿Cuándo vuelves a España?»'}
+    answer: {meaning: '回 ya es «volver»: el sitio va detrás. 来 y 去 solo dicen hacia dónde, y no llevan el sitio detrás (por
+        eso no hay 回来家).'}
+    comments: []
+  - id: x.contrast.de.adv
+    added: 2026-11-06
+    lang: es
+    type: contrast
+    group: g.de-de-de
+    targets: [w.de.adv]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es de, «partícula: cómo se hace algo (delante del verbo)»?'}
+    answer: {hanzi: 地, pinyin: de, meaning: 'partícula: cómo se hace algo (delante del verbo)'}
+    comments: []
+  - id: x.read.de.adv
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.de.adv]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 地}
+    answer: {hanzi: 地, pinyin: de, meaning: 'partícula: cómo se hace algo (delante del verbo)'}
+    comments: []
+  - id: x.dictation.de.adv
+    added: '2026-11-06'
+    lang: es
+    type: listen
+    targets: [w.de.adv]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: de5, hanzi: 地, pinyin: de, meaning: 'partícula: cómo se hace algo (delante del verbo)'}
+    accept_pinyin_mismatch: 'partícula átona: de, no dì'
+    comments: []
+  - id: x.dictation.zhe.dur
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.zhe.dur]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhe5, hanzi: 着, pinyin: zhe, meaning: 'partícula: algo que dura, sigue así'}
+    comments: []
+  - id: x.read.zhe.dur
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.zhe.dur]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 着}
+    answer: {hanzi: 着, pinyin: zhe, meaning: 'partícula: algo que dura, sigue así'}
+    comments: []
+  - id: x.contrast.zhe.dur
+    added: 2026-11-06
+    lang: es
+    type: contrast
+    group: g.zhe-zhe
+    targets: [w.zhe.dur]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 着, pinyin: zhe, meaning: 'partícula: algo que dura, sigue así'}
+    comments: []

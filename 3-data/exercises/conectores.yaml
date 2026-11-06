@@ -861,3 +861,329 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Estoy muy cansado, pero quiero ir.»'}
     answer: {meaning: 'Estoy muy cansado, pero quiero ir.'}
     comments: []
+  - id: x.nuance.haishi-still-or
+    added: '2026-11-06'
+    lang: es
+    type: nuance
+    targets: [w.haishi]
+    skills: [comprehension, discrimination]
+    prompt: {text: '他还是住在北京 y 他住在北京还是上海？: ¿qué hace 还是 en cada una?'}
+    answer: {meaning: 'En la primera, «sigue»: nada ha cambiado. En la segunda, «o», entre dos opciones al preguntar.'}
+    comments: []
+  - id: x.compose.por-que-chino
+    added: '2026-11-06'
+    lang: es
+    type: compose
+    targets: [s.wo-xuexi-zhongwen-yinwei-xiang-qu-zhongguo, s.yinwei-wo-xihuan-zhongwen-ye-xiang-qu-zhongguo, s.wo-juede-zhongwen-hen-nan-danshi-hen-xihuan]
+    words: [w.yinwei, w.danshi, w.juede, w.xiang, w.xihuan]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. La profesora te pregunta por qué estudias chino: contesta con al menos dos frases.'}
+    answer: {meaning: Tres respuestas que se alargan solas.}
+    comments: []
+  - id: x.dictation.yuanyin
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.yuanyin]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yuan2 yin1, hanzi: 原因, pinyin: yuányīn, meaning: 'causa, motivo'}
+    comments: []
+  - id: x.produce.yuanyin
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.yuanyin]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «causa, motivo»? Escribe el pinyin.'}
+    answer: {typed: yuan2 yin1, hanzi: 原因, pinyin: yuányīn, meaning: 'causa, motivo'}
+    comments: []
+  - id: x.read.yuanyin
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.yuanyin]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 原因}
+    answer: {hanzi: 原因, pinyin: yuányīn, meaning: 'causa, motivo'}
+    comments: []
+  - id: x.dictation.ranhou
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.ranhou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ran2 hou4, hanzi: 然后, pinyin: ránhòu, meaning: 'después, luego'}
+    comments: []
+  - id: x.cloze.ranhou
+    added: 2026-11-06
+    lang: es
+    type: cloze
+    sentence: s.ranhou-ne
+    gap: w.ranhou
+    targets: [w.ranhou]
+    context: [w.ne]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «¿Y luego?»'}
+    answer: {typed: ran2 hou4, hanzi: 然后, pinyin: ránhòu, meaning: 'después, luego'}
+    comments: []
+  - id: x.read.ranhou
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.ranhou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 然后}
+    answer: {hanzi: 然后, pinyin: ránhòu, meaning: 'después, luego'}
+    comments: []
+  - id: x.dictation.biru
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.biru]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bi3 ru2, hanzi: 比如, pinyin: bǐrú, meaning: por ejemplo}
+    comments: []
+  - id: x.cloze.biru
+    added: 2026-11-06
+    lang: es
+    type: cloze
+    sentence: s.wo-xihuan-zhongguo-de-shiwu-biru-niurou
+    gap: w.biru
+    targets: [w.biru]
+    context: [w.wo, w.xihuan, w.zhongguo, w.de, w.shiwu, w.niurou]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Me gusta la comida china, por ejemplo la ternera.»'}
+    answer: {typed: bi3 ru2, hanzi: 比如, pinyin: bǐrú, meaning: por ejemplo}
+    comments: []
+  - id: x.read.biru
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.biru]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 比如}
+    answer: {hanzi: 比如, pinyin: bǐrú, meaning: por ejemplo}
+    comments: []
+  - id: x.dictation.duile
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [e.duile]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dui4 le5, hanzi: 对了, pinyin: duì le, meaning: 'por cierto; ¡ah, ya!'}
+    comments: []
+  - id: x.produce.duile
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [e.duile]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «por cierto; ¡ah, ya!»? Escribe el pinyin.'}
+    answer: {typed: dui4 le5, hanzi: 对了, pinyin: duì le, meaning: 'por cierto; ¡ah, ya!'}
+    comments: []
+  - id: x.read.duile
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [e.duile]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 对了}
+    answer: {hanzi: 对了, pinyin: duì le, meaning: 'por cierto; ¡ah, ya!'}
+    comments: []
+  - id: x.tones.duile
+    added: 2026-11-06
+    lang: es
+    type: tones
+    targets: [e.duile]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 对了, pinyin: dui le}
+    answer: {typed: '45', hanzi: 对了, pinyin: duì le, meaning: 'por cierto; ¡ah, ya!'}
+    comments: []
+  - id: x.produce.wo-zhidao-yuanyin
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-zhidao-yuanyin
+    targets: [s.wo-zhidao-yuanyin]
+    context: [w.wo, w.zhidao, w.yuanyin]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Sé por qué (sé la causa).»'}
+    answer: {meaning: Sé por qué (sé la causa).}
+    comments: []
+  - id: x.listen.ta-haishi-zhu-zai-beijing
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.ta-haishi-zhu-zai-beijing
+    targets: [s.ta-haishi-zhu-zai-beijing]
+    context: [w.ta.he, w.haishi, w.zhu.live, w.zai.at, w.beijing]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Sigue viviendo en Pekín.}
+    comments: []
+  - id: x.produce.ta-zhu-zai-beijing-haishi-shanghai
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ta-zhu-zai-beijing-haishi-shanghai
+    targets: [s.ta-zhu-zai-beijing-haishi-shanghai]
+    context: [w.ta.he, w.zhu.live, w.zai.at, w.beijing, w.haishi, w.shanghai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Vive en Pekín o en Shanghái?»'}
+    answer: {meaning: '¿Vive en Pekín o en Shanghái?'}
+    comments: []
+  - id: x.produce.wo-hen-xiang-qu-zhongguo-danshi-meiyou-qian
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-hen-xiang-qu-zhongguo-danshi-meiyou-qian
+    targets: [s.wo-hen-xiang-qu-zhongguo-danshi-meiyou-qian]
+    context: [w.wo, w.hen, w.xiang, w.qu, w.zhongguo, w.danshi, w.meiyou, w.qian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo muchas ganas de ir a China, pero no tengo dinero.»'}
+    answer: {meaning: 'Tengo muchas ganas de ir a China, pero no tengo dinero.'}
+    comments: []
+  - id: x.produce.ranhou-ne
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ranhou-ne
+    targets: [s.ranhou-ne]
+    context: [w.ranhou, w.ne]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Y luego?»'}
+    answer: {meaning: '¿Y luego?'}
+    comments: []
+  - id: x.produce.wo-xian-huijia-ranhou-qu-chaoshi
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-xian-huijia-ranhou-qu-chaoshi
+    targets: [s.wo-xian-huijia-ranhou-qu-chaoshi]
+    context: [w.wo, w.xian.first, w.huijia, w.ranhou, w.qu, w.chaoshi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Primero voy a casa y luego al súper.»'}
+    answer: {meaning: Primero voy a casa y luego al súper.}
+    comments: []
+  - id: x.produce.wo-xihuan-zhongguo-de-shiwu-biru-niurou
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-xihuan-zhongguo-de-shiwu-biru-niurou
+    targets: [s.wo-xihuan-zhongguo-de-shiwu-biru-niurou]
+    context: [w.wo, w.xihuan, w.zhongguo, w.de, w.shiwu, w.biru, w.niurou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me gusta la comida china, por ejemplo la ternera.»'}
+    answer: {meaning: 'Me gusta la comida china, por ejemplo la ternera.'}
+    comments: []
+  - id: x.produce.wo-xuexi-zhongwen-yinwei-xiang-qu-zhongguo
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-xuexi-zhongwen-yinwei-xiang-qu-zhongguo
+    targets: [s.wo-xuexi-zhongwen-yinwei-xiang-qu-zhongguo]
+    context: [w.wo, w.xuexi, w.zhongwen, w.yinwei, w.xiang, w.qu, w.zhongguo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estudio chino porque quiero ir a China.»'}
+    answer: {meaning: Estudio chino porque quiero ir a China.}
+    comments: []
+  - id: x.listen.yinwei-wo-hen-mang-suoyi-hai-mei-mai-jipiao
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.yinwei-wo-hen-mang-suoyi-hai-mei-mai-jipiao
+    targets: [s.yinwei-wo-hen-mang-suoyi-hai-mei-mai-jipiao]
+    context: [w.yinwei, w.wo, w.hen, w.mang, w.suoyi, w.hai.still, w.mei, w.mai, w.jipiao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Como estoy muy ocupado, aún no he comprado el billete de avión.'}
+    comments: []
+  - id: x.produce.yinwei-wo-xihuan-zhongwen-ye-xiang-qu-zhongguo
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.yinwei-wo-xihuan-zhongwen-ye-xiang-qu-zhongguo
+    targets: [s.yinwei-wo-xihuan-zhongwen-ye-xiang-qu-zhongguo]
+    context: [w.yinwei, w.wo, w.xihuan, w.zhongwen, w.ye, w.xiang, w.qu, w.zhongguo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Porque me gusta el chino, y también quiero ir a China.»'}
+    answer: {meaning: 'Porque me gusta el chino, y también quiero ir a China.'}
+    comments: []
+  - id: x.produce.wo-juede-zhongwen-hen-nan-danshi-hen-xihuan
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-juede-zhongwen-hen-nan-danshi-hen-xihuan
+    targets: [s.wo-juede-zhongwen-hen-nan-danshi-hen-xihuan]
+    context: [w.wo, w.juede, w.zhongwen, w.hen, w.nan, w.danshi, w.xihuan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Creo que el chino es difícil, pero me gusta mucho.»'}
+    answer: {meaning: 'Creo que el chino es difícil, pero me gusta mucho.'}
+    comments: []
+  - id: x.listen.mono-wo-xiang-yixia-weishenme-xue
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.mono-wo-xiang-yixia-weishenme-xue
+    targets: [s.mono-wo-xiang-yixia-weishenme-xue]
+    context: [w.en, w.wo, w.xiang, w.yixia, w.yinwei, w.xihuan, w.zhongwen, w.ye, w.qu, w.zhongguo, w.danshi, w.juede, w.hen,
+      w.nan, w.ni, w.ne]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Mmm, déjame pensar… Porque me gusta el chino y también quiero ir a China. Pero creo que el chino es difícil.
+        ¿Tú qué opinas?'}
+    comments: []
+  - id: x.produce.hai-you-shenme
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.hai-you-shenme
+    targets: [s.hai-you-shenme]
+    context: [w.haiyou, w.shenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué más?»'}
+    answer: {meaning: '¿Qué más?'}
+    comments: []
+  - id: x.produce.duile-ni-mingtian-you-shijian-ma
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.duile-ni-mingtian-you-shijian-ma
+    targets: [s.duile-ni-mingtian-you-shijian-ma]
+    context: [e.duile, w.ni, w.mingtian, w.you.have, w.shijian, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Por cierto, ¿tienes tiempo mañana?»'}
+    answer: {meaning: 'Por cierto, ¿tienes tiempo mañana?'}
+    comments: []
+  - id: x.charsound.yin-2
+    added: 2026-11-06
+    lang: es
+    type: charsound
+    targets: [w.yinwei, w.yuanyin]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 因}
+    answer: {typed: yin1, hanzi: 因, pinyin: yīn, meaning: 'Sale en 因为 yīnwèi «porque», 原因 yuányīn «causa, motivo».'}
+    comments: []
+  - id: x.charsound.ru
+    added: 2026-11-06
+    lang: es
+    type: charsound
+    targets: [w.ruguo, w.biru]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 如}
+    answer: {typed: ru2, hanzi: 如, pinyin: rú, meaning: 'Sale en 如果 rúguǒ «si (condición)», 比如 bǐrú «por ejemplo».'}
+    comments: []
+  - id: x.charsound.ran
+    added: 2026-11-06
+    lang: es
+    type: charsound
+    targets: [w.suiran, w.ranhou]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 然}
+    answer: {typed: ran2, hanzi: 然, pinyin: rán, meaning: 'Sale en 虽然 suīrán «aunque», 然后 ránhòu «después, luego».'}
+    comments: []

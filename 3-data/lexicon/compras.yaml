@@ -51,7 +51,8 @@ entries:
     pinyin: zài
     meaning: {es: estar en (un lugar), en: to be at}
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-07-12.txt, date: '2026-09-23'}
-    comments: []
+    comments:
+      - {date: '2026-11-06', kind: tip, private: false, text: 'Para «estar (en un sitio)», 在: 他们不在这里 «no están aquí». 还 hái es «todavía»: 他们还在这里 «siguen aquí».'}
   - id: w.nar
     use: drop
     use_reason: 'forma del norte (erhua): el mazo es de mandarín estándar y usa 哪里 (YAGO, 2026-10-01)'
@@ -378,6 +379,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 公 «oficial» + 斤: el 斤 oficial, el del sistema métrico, que pesa el doble. Es el kilo al hablar; en las etiquetas pone 千克.'}
       - {kind: mnemonic, private: false, date: '2026-10-21', text: '公 gōng, primer tono, suena como un gong chino, y el hanzi tiene forma de gong.', original: 'el gong de kilos es primero tono que me imang oque es como osnaria un gong chino instent omsucail y ademas el hanzi tiene forma de gogn chino'}
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 'El 公 de 公斤 no es el 恭 de 恭喜 ni el 工 de 工作: los tres son gōng.'}
   - id: g.mai-mai
     kind: group
     basis: soundalike

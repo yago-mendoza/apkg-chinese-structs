@@ -1,7 +1,7 @@
 """Consulta, validación, cobertura, audio y compilación del mazo de chino.
 
 Uso:
-    python anki.py lookup <hanzi|pinyin|significado>
+    python anki.py lookup <hanzi|pinyin|significado> [más…]   varias búsquedas, una sola carga
     python anki.py hanzi <caracteres>      piezas, sonido y significado de cada carácter, y sus conexiones en el mazo
     python anki.py plan [--doc <lote>]     tarjetas exigidas que faltan; --doc escribe 1-inbox/review-<lote>.md
     python anki.py gaps                    reparto del mazo y pendientes
@@ -879,8 +879,19 @@ def osmosis_gaps(entries, sentences):
             and ("say" in use_modalities(e) or e.get("use") == "context") and e["id"] not in in_sentence]
 
 
-def cmd_lookup(query):
-    entries, sentences, exercises = load()
+def cmd_lookup(queries):
+    """Una o varias búsquedas con una sola carga del mazo (cargarlo es lo lento: unos 20 s)."""
+    queries = [queries] if isinstance(queries, str) else list(queries)
+    data = load()
+    rc = 0
+    for q in queries:
+        if len(queries) > 1:
+            print(f"\n===== {q}")
+        rc = _lookup_one(q, *data) or rc
+    return rc
+
+
+def _lookup_one(query, entries, sentences, exercises):
     sby = {s["id"]: s for s in sentences}
     eby = {e["id"]: e for e in entries}
     # El código de una tarjeta (#K7Q2M, el de su cabecera): qué ejercicio es y qué pregunta.
@@ -3242,6 +3253,45 @@ def partner_example(ex, sby, eby):
     return None
 
 
+def entries_containing(e, eby):
+    """Palabras y expresiones del mazo (no descartadas) que llevan dentro el hanzi de `e` (今 → 今天, 今年)."""
+    hz = e.get("hanzi") or ""
+    if not hz:
+        return []
+    return [w for w in eby.values() if w.get("kind") in ("word", "expression") and w is not e
+            and hz in (w.get("hanzi") or "") and w.get("use") not in ("drop", "context")]
+
+
+def member_examples(ex, sby, eby):
+    """En una tarjeta de contraste, cada miembro del grupo con su frase en su fila (review 015, #912EZ: «ejemplos
+    acordes», no solo de una de las opciones). La del objetivo ya sale en «Ejemplos». Un carácter ligado o una pieza
+    sin frases propias (今, 近) toma una frase de una palabra del mazo que lo lleva (今天, 最近). Nunca de un nivel
+    superior al de la tarjeta, ni con el objetivo dentro (delataría la respuesta). {ref del miembro: id de frase}."""
+    group = eby.get(ex.get("group"))
+    if ex.get("type") != "contrast" or not group:
+        return {}
+    targets = set(ex.get("targets", []))
+    levels = hsk_levels()
+    card = max([lv for lv in (level_of(t, eby, sby, levels) for t in targets) if lv] or [0])
+    k = int(hashlib.sha1(ex["id"].encode("utf-8")).hexdigest()[:8], 16)
+    out = {}
+    for m in group.get("members", []):
+        ref = m.get("ref")
+        if ref in targets or ref not in eby:
+            continue
+        refs = {ref} | {w["id"] for w in entries_containing(eby[ref], eby)}
+        for want in (({ref}, refs) if refs != {ref} else ({ref},)):
+            pool = sorted(sid for sid in sby
+                          if any(seg.get("ref") in want for seg in sby[sid].get("segments", []))
+                          and not any(seg.get("ref") in targets for seg in sby[sid].get("segments", []))
+                          and sid not in out.values()
+                          and (not card or (level_of(sid, eby, sby, levels) or 0) <= card))
+            if pool:
+                out[ref] = pool[k % len(pool)]
+                break
+    return out
+
+
 def card_fields(ex, eby, sby, manifest, media_files):
     """Lo que muestra una tarjeta, campo a campo, en HTML: lo usan Anki (build_note) y la exportación pública."""
     prompt, ans, lang = ex.get("prompt") or {}, ex.get("answer") or {}, ex.get("lang", "es")
@@ -3438,6 +3488,14 @@ def card_fields(ex, eby, sby, manifest, media_files):
         partner_html = (f"<div class=\"example vs-ex\">{render_sentence(sby[sid])}<div>{esc(sby[sid]['translation'].get(lang))}</div>"
                         f"{sound(sentence_text(sby[sid]), manifest, media_files)}</div>")
     partner_ref = partner[0].get("id") if partner else None
+    # En su propia tarjeta de contraste, cada opción con su frase (no una sola pareja).
+    per_member = member_examples(ex, sby, eby)
+    if per_member:
+        partner_ref = None
+
+    def example_html(sid):
+        return (f"<div class=\"example vs-ex\">{render_sentence(sby[sid])}<div>{esc(sby[sid]['translation'].get(lang))}</div>"
+                f"{sound(sentence_text(sby[sid]), manifest, media_files)}</div>")
 
     def status_tag(e):
         st = char_status(e)
@@ -3461,6 +3519,8 @@ def card_fields(ex, eby, sby, manifest, media_files):
             if m["ref"] == partner_ref:
                 rows += partner_html
                 partner_ref = None
+            elif g is group and m["ref"] in per_member:
+                rows += example_html(per_member[m["ref"]])
             rows += "</div>"
         # Orden y aspecto por lo que es el grupo (review 013): el de la propia tarjeta de contraste es la pregunta y
         # va arriba; las familias (series de significado, patrones, la misma pieza de sonido), con su diagrama, abajo;
@@ -5502,9 +5562,18 @@ def balance_from_anki():
 # The study log the site draws (infraphysics.net/side-quests/chinese): YAGO studies only on the phone and never opens
 # Anki on the computer, so the site's Anki add-on, which sends it after a sync made from Anki's own window, never runs.
 # Every time anki.py syncs with AnkiWeb (stats at the start of a batch, push at its end), it sends the log itself, with
-# the site's own script (read only on the collection). Next to this repository by default; ANKI_SITE_REPO points
-# elsewhere, ANKI_NO_SITE turns it off. Never while anki_request is replaced (the tests' simulated AnkiConnect).
-SITE_REPO = Path(os.environ.get("ANKI_SITE_REPO") or ROOT.parent / "infraphysics")
+# the site's own script (read only on the collection). Next to this repository, or where it lives on YAGO's machine
+# (dev/InfraPhysics/infraphysics, while this repository is in dev/Cockpit); ANKI_SITE_REPO points elsewhere,
+# ANKI_NO_SITE turns it off. Never while anki_request is replaced (the tests' simulated AnkiConnect).
+def _site_repo():
+    if os.environ.get("ANKI_SITE_REPO"):
+        return Path(os.environ["ANKI_SITE_REPO"])
+    near = [ROOT.parent / "infraphysics", ROOT.parent.parent / "infraphysics",
+            ROOT.parent.parent / "InfraPhysics" / "infraphysics"]
+    return next((p for p in near if (p / "scripts" / "anki-reviews.js").is_file()), near[0])
+
+
+SITE_REPO = _site_repo()
 SITE_LOG_SCRIPT = Path("scripts") / "anki-reviews.js"
 SITE_LOG_TRIES, SITE_LOG_WAIT = 4, 8      # attempts, and seconds between them
 _ANKI_REQUEST = anki_request
@@ -5707,7 +5776,7 @@ def cmd_audit():
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("lookup").add_argument("query")
+    sub.add_parser("lookup").add_argument("query", nargs="+")
     sub.add_parser("hanzi").add_argument("text")
     sub.add_parser("gaps")
     sub.add_parser("audit")

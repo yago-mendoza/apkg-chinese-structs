@@ -715,7 +715,7 @@ sentences:
       - {text: 自己, ref: w.ziji, pinyin: 'zìjǐ'}
       - {text: 来, ref: w.lai, pinyin: 'lái'}
       - {text: 。}
-    translation: {es: 'Ya lo hago yo.', en: 'I will do it myself.'}
+    translation: {en: I'll do it myself (no need to help)., es: 'Ya lo hago yo solo (no hace falta que me ayudes).'}
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
   - id: s.wo-zhao-ren
     use: say
@@ -766,6 +766,7 @@ sentences:
     use: say
     kind: formula
     segments:
+      - {optional: true, pinyin: nǐ, ref: w.ni, text: 你}
       - {pinyin: yào, ref: w.yao, text: 要}
       - {pinyin: wǒ, ref: w.wo, text: 我}
       - {pinyin: bāng, ref: w.bang, text: 帮}
@@ -799,3 +800,81 @@ sentences:
       - {text: 。}
     translation: {en: Let me help you., es: Te ayudo.}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.qing-shaodeng-wo-qu-na
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: qǐng, ref: w.qing, text: 请}
+      - {pinyin: shāo děng, ref: e.shaodeng, text: 稍等}
+      - {text: ，}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: ná, ref: w.na.take, text: 拿}
+      - {text: 。}
+    translation: {en: 'One moment please, I''ll go and get it.', es: 'Espere un momento, voy a buscarlo.'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.deng-yixia-ba-ta-mashang-lai
+    use: say
+    kind: example
+    segments:
+      - {pinyin: děng, ref: w.deng, text: 等}
+      - {pinyin: yíxià, ref: w.yixia, sandhi: true, text: 一下}
+      - {pinyin: ba, ref: w.ba.particle, text: 吧}
+      - {text: ，}
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {pinyin: mǎshàng, ref: w.mashang, text: 马上}
+      - {pinyin: lái, ref: w.lai, text: 来}
+      - {text: 。}
+    translation: {en: Let's wait a bit; he's coming., es: 'Esperemos un poco: ya viene.'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-ye-shi
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yě, ref: w.ye, text: 也}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {text: ！}
+    translation: {en: Me too!, es: ¡Yo también!}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.xing-ma
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: xíng, ref: w.xing.ok, text: 行}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Is that OK?', es: '¿Te parece bien?'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.hao-bu-hao
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: hǎo, ref: w.hao, text: 好}
+      - {pinyin: bu, ref: w.bu, sandhi: true, text: 不}
+      - {pinyin: hǎo, ref: w.hao, text: 好}
+      - {text: ？}
+    translation: {en: 'OK? How about it?', es: '¿Vale? ¿Te parece?'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.dou-xing
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: dōu, ref: w.dou, text: 都}
+      - {pinyin: xíng, ref: w.xing.ok, text: 行}
+      - {text: 。}
+    translation: {en: Either is fine., es: Cualquiera me vale.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.yao-bu-yao-wo-bang-ni
+    use: hear
+    kind: formula
+    segments:
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: bu, ref: w.bu, sandhi: true, text: 不}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: bāng, ref: w.bang, text: 帮}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {text: ？}
+    translation: {en: 'Do you want me to help you?', es: '¿Te ayudo o no?'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}

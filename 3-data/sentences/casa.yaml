@@ -204,3 +204,49 @@ sentences:
       - {text: 。}
     translation: {en: The room is too dark; I cannot see., es: 'La habitación está demasiado oscura: no veo nada.'}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-zhu-san-tian
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zhù, ref: w.zhu.live, text: 住}
+      - {pinyin: sān, ref: w.num.san, text: 三}
+      - {pinyin: tiān, ref: w.tian, text: 天}
+      - {text: 。}
+    translation: {en: I'm staying three days., es: Me quedo tres días.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-zai-beijing-zhu-liang-tian
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: Běijīng, ref: w.beijing, text: 北京}
+      - {pinyin: zhù, ref: w.zhu.live, text: 住}
+      - {pinyin: liǎng, ref: w.liang, text: 两}
+      - {pinyin: tiān, ref: w.tian, text: 天}
+      - {text: 。}
+    translation: {en: I'm staying in Beijing for two days., es: Me quedo dos días en Pekín.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.ni-jia-zai-nali
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: jiā, ref: w.jia, text: 家}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: nǎlǐ, ref: w.nali, text: 哪里}
+      - {text: ？}
+    translation: {en: 'Where is your home?', es: '¿Dónde está tu casa?'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.jiali-you-ren-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: jiāli, ref: w.jiali, text: 家里}
+      - {pinyin: yǒu, ref: w.you.have, text: 有}
+      - {pinyin: rén, ref: w.ren, text: 人}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Is anyone home?', es: '¿Hay alguien en casa?'}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}

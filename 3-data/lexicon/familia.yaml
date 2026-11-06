@@ -93,6 +93,7 @@ entries:
       - {kind: mnemonic, private: false, date: '2026-10-21', text: 'Jiā: en casa 家 todos se ríen «¡ja!», con el tono alto y plano.'}
       - {kind: character, private: false, date: '2026-10-01', text: '宀 «techo» + 豕 shǐ «cerdo»: según la explicación tradicional, la casa era donde se criaba el cerdo.'}
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'De casa pasa a familia y a establecimiento; por eso es también el clasificador de negocios: 一家饭店 «un restaurante», 一家商店 «una tienda», 一家公司 [HSK 2] «una empresa».'}
+      - {date: '2026-11-06', kind: linguistic, private: false, text: '家 sale en muchas palabras: 大家 «todos» (la gran familia), 国家 «país» (país + familia), 回家 «volver a casa», 家人 «familia», 家里 «en casa».'}
   - id: c.er
     use: context
     use_reason: 'ligada: se practica dentro de 女儿 y 儿子'
@@ -252,3 +253,13 @@ entries:
     meaning: {es: 'mamá (al llamarla)', en: 'mum (when calling her)'}
     source: {origin: class, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
     comments: []
+  - id: w.jiaren
+    use: say
+    role: content
+    kind: word
+    hanzi: 家人
+    pinyin: jiārén
+    meaning: {es: familia (las personas), en: family members}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: '家 «casa, familia» + 人 «persona»: los de casa. 你的家人都好吗？ es una pregunta muy de cortesía.'}

@@ -26,7 +26,7 @@ entries:
       - {kind: linguistic, private: false, date: 2026-09-25, text: 'Transcripción fonética: los caracteres imitan el sonido, no el significado.'}
       - {kind: linguistic, private: false, date: '2026-09-27', text: 西 xī «oeste» es el mismo de 东西 dōngxi «cosas».}
   - id: w.meiguo
-    use: hear
+    use: say
     role: content
     kind: word
     pos: nombre-propio
@@ -57,6 +57,7 @@ entries:
     pinyin: shì
     meaning: {es: ser, en: to be}
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    accept_cards: 'la pareja para oír 是 / 师 sale de la clase del 6, donde la profesora los marcó'
     comments:
       - {kind: linguistic, private: false, date: '2026-09-29', text: '是 une dos nombres (我是学生), no un nombre con un adjetivo: 我很高, no 我是高. Para preguntar vale 她漂亮吗？ o 她是不是很漂亮？, pero no 她是漂亮吗？.'}
   - id: w.bu
@@ -628,3 +629,15 @@ entries:
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-20'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-23', text: 'Primero el apellido, 孟 Mèng, y luego el nombre, 逸辰 Yìchén: 逸 «sosegado, libre» y 辰 «los astros; la hora». Suena moderno y natural.'}
+  - id: w.shanghai
+    use: say
+    role: content
+    kind: word
+    pos: nombre-propio
+    hanzi: 上海
+    pinyin: Shànghǎi
+    meaning: {es: Shanghái, en: Shanghai}
+    level: 1
+    level_reason: nombre propio, de las ciudades que más se nombran
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []

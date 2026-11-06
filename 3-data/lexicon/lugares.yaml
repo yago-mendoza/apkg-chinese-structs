@@ -189,6 +189,7 @@ entries:
       - {kind: linguistic, private: false, date: '2026-10-09', text: '回家 «volver a casa», 回来 «volver aquí». No confundir con 会 huì, que cae: 我会回来 «volveré».'}
       - {kind: mnemonic, private: false, date: '2026-10-11', text: '回 parece la marca de la base en el minimapa de un videojuego: volver a la base. O una boca dentro de otra que grita «¡vuelve!».', original: 'mnemotenica para el hanz ide volver, es como una marca de minimapa del call of duty, volver a al base, base, parece una base, sabes, volver. o tmaibne parece nua boca dentro de otra gritnado, VOLVER !!!'}
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Con un destino, 回 va solo: 回家 «volver a casa», 回中国 «volver a China». Sin destino lleva 来 o 去, que dicen hacia dónde: 他回来了 «ha vuelto (aquí)», 我要回去了 «tengo que volver (allí)».', original: 'ademsa volver aparece imsepre como huilai, hui solo enciesta el ''le'' para volver al igual que habitiacon necesita el ''espacio'' para ser habitaicon sabesa'}
+      - {date: '2026-11-06', kind: tip, private: false, text: '回 + sitio: 回家, 回西班牙. 回来 «volver aquí» y 回去 «volver allí» ya dicen hacia dónde: 你什么时候回来？. No hay 回来家: basta 回家.'}
   - id: w.chu
     use: hear
     role: content
@@ -304,7 +305,7 @@ entries:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments: []
   - id: w.yiyuan
-    use: hear
+    use: say
     role: content
     kind: word
     hanzi: 医院
@@ -344,6 +345,7 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 地 «tierra» + 方 «lado»: un sitio. 这个地方很漂亮 «este sitio es muy bonito».'}
+      - {date: '2026-11-06', kind: tip, private: false, text: '«Place» en inglés son dos cosas: como sitio, 地方 (这个地方很漂亮); como «poner, colocar», 放 fàng (放在这里吧).', original: '“Place” como sustantivo se dice 地方 (dìfang), que significa “lugar”. Como verbo, “poner/colocar” se dice 放 (fàng).'}
   - id: w.lu
     use: say
     role: content
@@ -482,3 +484,107 @@ entries:
     source: {batch: 009-2026-10-10-situaciones-huecos-y-contrastes, date: '2026-10-09', file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, origin: attic, rescued: 015-2026-10-31-volver-a-casa-y-para-entender}
     comments:
       - {date: '2026-10-31', kind: linguistic, private: false, text: '你在外面吗？ «¿estás fuera?». 外 suelto casi no se usa: al hablar, 外面.'}
+      - {date: '2026-11-06', kind: linguistic, private: false, text: '面 aquí es «lado»: 外面, «el lado de fuera». En 见面 es «cara»: verse las caras. 外 «fuera» sale también en 外国 y 外语.', original: OJO ESTO PENSABA QUE MISN ERA CARA DE FORMA EXCLUSIVA ASI QUE HABRA QUE MATIZAR}
+  - id: w.fei
+    use: say
+    role: content
+    kind: word
+    hanzi: 飞
+    pinyin: fēi
+    meaning: {es: volar; ir en avión, en: to fly}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 'El 飞 de 飞机 «avión», la máquina que vuela. 我明天飞北京 «mañana vuelo a Pekín».'}
+  - id: w.laidao
+    use: hear
+    role: content
+    kind: word
+    hanzi: 来到
+    pinyin: láidào
+    meaning: {es: llegar a (un sitio), en: to arrive at}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments: []
+  - id: w.guangchang
+    use: hear
+    role: content
+    kind: word
+    hanzi: 广场
+    pinyin: guǎngchǎng
+    meaning: {es: plaza, en: 'square, plaza'}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 'El mismo 场 de 商场 «centro comercial» y 机场 «aeropuerto»: un sitio abierto y grande.'}
+  - id: w.huijia
+    use: say
+    role: content
+    kind: word
+    hanzi: 回家
+    pinyin: 'huíjiā'
+    meaning: {es: 'volver a casa', en: 'to go home'}
+    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '回 «volver» + 家 «casa». Encadena otra acción detrás: 我回家睡觉 «me voy a casa a dormir».'}
+  - id: w.huidao
+    use: say
+    role: content
+    kind: word
+    hanzi: 回到
+    pinyin: huídào
+    meaning: {en: to get back to, es: 'volver a, llegar de vuelta'}
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+    comments:
+      - {date: '2026-10-31', kind: linguistic, private: false, text: '回 «volver» + 到 «llegar»: 我回到家了 «ya estoy de vuelta en casa». Sin 到, 回家 es solo «volver a casa».'}
+  - id: w.jinlai
+    use: say
+    role: content
+    kind: word
+    hanzi: 进来
+    pinyin: jìnlái
+    meaning: {es: entrar (hacia aquí), en: to come in}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-09', text: '进来 es entrar hacia donde está quien habla; 进去, entrar alejándose, hacia allí. El 来 y el 去 dicen hacia dónde: 来 «venir», 去 «ir».'}
+  - id: w.jinqu
+    use: say
+    role: content
+    kind: word
+    hanzi: 进去
+    pinyin: jìnqù
+    meaning: {es: entrar (hacia allí), en: to go in}
+    source: {origin: inbox, batch: 009-2026-10-10-situaciones-huecos-y-contrastes, file: review-008-2026-10-08-pedir-ayuda-lugares-y-finales.md, date: '2026-10-09'}
+    comments: []
+  - id: w.chulai
+    use: say
+    role: content
+    kind: word
+    hanzi: 出来
+    pinyin: chūlai
+    meaning: {es: salir (hacia aquí), en: to come out}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-11', text: '出 «salir» + 来 «hacia aquí»: sales hacia donde está quien habla. 快出来！ «¡sal ya!», si te esperan fuera. 出去 es salir alejándose.'}
+    accept_pinyin_mismatch: '来 va átono detrás de un verbo: chūlai'
+  - id: w.chuqu
+    use: say
+    role: content
+    kind: word
+    hanzi: 出去
+    pinyin: 'chūqu'
+    meaning: {es: 'salir (hacia fuera)', en: 'to go out'}
+    accept_pinyin_mismatch: 'la segunda sílaba es átona en el habla'
+    source: {origin: attic, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27', rescued: 003-2026-10-01-comer-dinero-y-contrastes}
+    comments:
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '出 es una planta que sale de un tiesto. 出来 chūlái es salir hacia aquí.'}
+      - {kind: linguistic, private: false, date: '2026-10-01', text: '出去啊？ «¿sales?» es un saludo al cruzarte con alguien que se va.'}
+  - id: g.chu-direction
+    kind: group
+    basis: set
+    title: 进来, 进去, 出来 y 出去
+    explanation: '进 entra y 出 sale; 来 y 去 dicen hacia dónde: 来, hacia quien habla; 去, lejos.'
+    members:
+      - {ref: w.jinlai, cue: 'entra, hacia quien habla: 请进来'}
+      - {ref: w.jinqu, cue: 'entra, lejos de quien habla: 我能进去吗？'}
+      - {ref: w.chulai, cue: 'hacia quien habla, que espera fuera'}
+      - {ref: w.chuqu, cue: alejándose de quien habla}
+    source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []

@@ -10,7 +10,7 @@
 - ✅🃏 女儿 nǚ'ér [ny˧˩˧ ɑɻ˧˥] · hija · _sustantivo_
 - ✅🃏 孩子 háizi [xaɪ˧˥ tsɯ] · niño, niña; hijo, hija · _sustantivo_ · 孩 hái suena igual que 还 hái «todavía», pero es otro carácter: lleva 子 «niño» a la izquierda.
 - ✅🃏 小孩 xiǎohái [ɕjɑʊ˧˩˧ xaɪ˧˥] · niño pequeño, crío · _sustantivo_ · 孩子 es el término general; 小孩 añade 小 «pequeño».
-- ✅🃏 家 jiā [tɕja˥] · casa, hogar; familia · _sustantivo_ · Jiā: en casa 家 todos se ríen «¡ja!», con el tono alto y plano. · 宀 «techo» + 豕 shǐ «cerdo»: según la explicación tradicional, la casa era donde se criaba el cerdo. · De casa pasa a familia y a establecimiento; por eso es también el clasificador de negocios: 一家饭店 «un restaurante», 一家商店 «una tienda», 一家公司 [HSK 2] «una empresa».
+- ✅🃏 家 jiā [tɕja˥] · casa, hogar; familia · _sustantivo_ · Jiā: en casa 家 todos se ríen «¡ja!», con el tono alto y plano. · 宀 «techo» + 豕 shǐ «cerdo»: según la explicación tradicional, la casa era donde se criaba el cerdo. · De casa pasa a familia y a establecimiento; por eso es también el clasificador de negocios: 一家饭店 «un restaurante», 一家商店 «una tienda», 一家公司 [HSK 2] «una empresa». · 家 sale en muchas palabras: 大家 «todos» (la gran familia), 国家 «país» (país + familia), 回家 «volver a casa», 家人 «familia», 家里 «en casa».
 - ✅ 儿 ér · niño, hijo (en palabras) · 儿 ér «niño»: delante en 儿子, detrás en 女儿.
 - ✅ 子 zi · hijo, niño; sufijo de nombres · 子 zǐ «hijo, niño»; al final de una palabra suele ser un sufijo: 儿子 érzi, 孩子 háizi. Con 女 forma 好.
 - ✅🃏 姐姐 jiějie [tɕjɛ˧˩˧ tɕjɛ] · hermana mayor · _sustantivo_
@@ -24,6 +24,7 @@
 - ✅🃏 弟弟 dìdi [ti˥˩ ti] · hermano menor · _sustantivo_ · 弟弟: dos niños pequeños disfrazados de dragón, con dos cuernitos y una capa sinuosa por detrás: los hermanos pequeños.
 - ✅🃏 爸 bà [pa˥˩] · papá (al llamarlo) · _sustantivo_ · Al dirigirse a ellos se acorta: 爸！妈！ Hablando de ellos, 爸爸 y 妈妈.
 - ✅🃏 妈 mā [ma˥] · mamá (al llamarla) · _sustantivo_
+- ✅🃏 家人 jiārén [tɕja˥ ʐən˧˥] · familia (las personas) · _sustantivo_ · 家 «casa, familia» + 人 «persona»: los de casa. 你的家人都好吗？ es una pregunta muy de cortesía.
 
 ## 好, 女儿 y 儿子
 
@@ -70,3 +71,5 @@ Se llama a la gente por lo que es para ti, no por su nombre.
 - ✅🃏 你父母多大年纪了？ · nǐ fùmǔ duō dà niánjì le · ¿Qué edad tienen tus padres?
 - ✅🃏 我爸爸五十二岁，我妈妈五十岁。 · wǒ bàba wǔ shí èr suì wǒ māma wǔ shí suì · Mi padre tiene cincuenta y dos años, y mi madre, cincuenta.
 - ✅🃏 我爷爷九十三岁了。 · wǒ yéye jiǔ shí sān suì le · Mi abuelo tiene ya noventa y tres años.
+- ✅🃏 你的家人都好吗？ · nǐ de jiārén dōu hǎo ma · ¿Está bien toda tu familia?
+- ✅🃏 我爱我的家人。 · wǒ ài wǒ de jiārén · Quiero a mi familia.

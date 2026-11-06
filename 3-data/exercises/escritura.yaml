@@ -624,3 +624,33 @@ exercises:
     prompt: {text: '¿Cómo se dice «palabra»? Escribe el pinyin.'}
     answer: {typed: ci2, hanzi: 词, pinyin: cí, meaning: palabra}
     comments: []
+  - id: x.contrast.gong.work
+    added: '2026-11-06'
+    lang: es
+    type: contrast
+    targets: [c.gong.work]
+    group: g.gong
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es el gōng de 工作 «trabajo»?'}
+    answer: {hanzi: 工, pinyin: gōng, meaning: 'trabajo, obra (en 工作, 工程师)'}
+    comments: []
+  - id: x.contrast.gong.public
+    added: '2026-11-06'
+    lang: es
+    type: contrast
+    targets: [c.gong.public]
+    group: g.gong
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es el gōng de 公司 y 公斤?'}
+    answer: {hanzi: 公, pinyin: gōng, meaning: 'público, común (en 公司 y 公斤)'}
+    comments: []
+  - id: x.contrast.gong.respect
+    added: '2026-11-06'
+    lang: es
+    type: contrast
+    targets: [c.gong.respect]
+    group: g.gong
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es el gōng de 恭喜 «enhorabuena»?'}
+    answer: {hanzi: 恭, pinyin: gōng, meaning: 'respetuoso (en 恭喜)'}
+    comments: []

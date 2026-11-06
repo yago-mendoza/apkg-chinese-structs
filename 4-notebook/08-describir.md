@@ -61,9 +61,9 @@
 - ✅🃏 笑 xiào [ɕjɑʊ˥˩] · reír, sonreír · _verbo_
 - ✅🃏 更 gèng [kɤŋ˥˩] · más (todavía) · _adverbio_ · 更 + adjetivo o verbo: «aún más». 更多 «más cantidad»: 我想学习更多知识 «quiero aprender más cosas».
 - ✅🃏 有的 yǒude [joʊ˧˩˧ tɤ] · algunos, unos (… otros) · _pronombre_ · Casi siempre de dos en dos: 有的人喜欢茶，有的人喜欢咖啡 «a unos les gusta el té y a otros el café».
-- ✅🃏 白色 báisè [paɪ˧˥ sɤ˥˩] · blanco (el color) · _sustantivo_
-- ✅🃏 绿色 lǜsè [ly˥˩ sɤ˥˩] · verde · _sustantivo_
 - ✅🃏 病 bìng [piŋ˥˩] · enfermedad; enfermar · _sustantivo_ · 他病了 «se ha puesto enfermo»: con 了, porque es un cambio. También 生病.
+- ✅🃏 重 zhòng [ʈʂʊŋ˥˩] · pesado · _adjetivo_ · El mismo 重 de 重要 «importante»: lo que pesa.
+- ✅🃏 惨 cǎn [tsʰan˧˩˧] · terrible; pobre de ti (qué mala suerte) · _adjetivo_ · En clase: 那你太惨了！ «¡pues pobre de ti!», al contarle algo que te salió mal. · 太惨了！ es una reacción de todos los días: «¡qué mal!, ¡pobre!».
 
 ## 大, 太 y 天
 
@@ -175,7 +175,7 @@ La misma sílaba: 小 se hunde; 笑 cae.
 
 ## 一样, 一定, 一起 y 医生: las de yi
 
-Empiezan igual al oído; las separa la segunda sílaba.
+Empiezan por yi, pero con otro tono: yí en 一样 y 一定, yì en 一起 (一 cambia de tono según la sílaba que le sigue), yī en 医生. Las separa también la segunda sílaba.
 
 - 一样 yíyàng · 样 yàng «forma»: de una misma forma
 - 一定 yídìng · 定 dìng «fijo»: fijado, sin falta
@@ -278,3 +278,13 @@ Riman en -eng; uno sube el grado, el otro es poder.
 - ✅🃏 我一定跟你一起去。 · wǒ yídìng gēn nǐ yìqǐ qù · Seguro que voy contigo.
 - ✅🃏 你是最好的！ · nǐ shì zuìhǎo de · ¡Eres el mejor!
 - ✅🃏 他病了。 · tā bìng le · Se ha puesto enfermo.
+- ✅🃏 你跟我一起去吗？ · nǐ gēn wǒ yìqǐ qù ma · ¿Vienes conmigo?
+- ✅🃏 那你太惨了！ · nà nǐ tài cǎn le · ¡Pues pobre de ti!
+- ✅🃏 我们一起走吧。 · wǒmen yìqǐ zǒu ba · Vámonos juntos.
+- ✅🃏 我常常说中文，感觉很好。 · wǒ chángcháng shuō Zhōngwén gǎnjué hěn hǎo · Hablo chino a menudo y me siento bien.
+- ✅🃏 你喜欢什么颜色？ · nǐ xǐhuan shénme yánsè · ¿Qué color te gusta?
+- ✅🃏 我的手机是黑色的。 · wǒ de shǒujī shì hēisè de · Mi móvil es negro.
+- ✅🃏 中国人喜欢红色。 · Zhōngguó rén xǐhuan hóngsè · A los chinos les gusta el rojo.
+- ✅🃏 他高兴地走了。 · tā gāoxìng de zǒu le · Se fue contento.
+- ✅🃏 这个包很重。 · zhè ge bāo hěn zhòng · Esta bolsa pesa mucho.
+- ✅🃏 医院里有很多病人。 · yīyuàn lǐ yǒu hěn duō bìngrén · En el hospital hay muchos enfermos.

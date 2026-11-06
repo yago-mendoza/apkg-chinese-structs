@@ -150,18 +150,8 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '觉 aquí se lee jiào; en 觉得 juéde [HSK 1] «parecer, creer» se lee jué. Suena igual que 叫 jiào «llamarse», pero es otro carácter.'}
-  - id: w.huijia
-    use: say
-    role: content
-    kind: word
-    hanzi: 回家
-    pinyin: 'huíjiā'
-    meaning: {es: 'volver a casa', en: 'to go home'}
-    source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
-    comments:
-      - {kind: linguistic, private: false, date: '2026-10-01', text: '回 «volver» + 家 «casa». Encadena otra acción detrás: 我回家睡觉 «me voy a casa a dormir».'}
   - id: w.zhengzai
-    use: hear
+    use: say
     role: function
     kind: word
     hanzi: 正在
@@ -539,6 +529,7 @@ entries:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Va delante del verbo: 我常常喝茶 «tomo té a menudo». Más que 有时候 «a veces».'}
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'No confundir con 尝尝 chángchang «probar un poco» [HSK 5], que repite el verbo 尝 «probar».'}
       - {kind: linguistic, private: false, date: '2026-10-21', text: '常 solo también vale: 我常去这里. Para negar, 不常, mejor que 不常常: 我不常喝咖啡.'}
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 'No confundir con 尝尝 chángchang [HSK 5] «probar (comida)»: suena casi igual. 常常 es «a menudo»: 我常常说中文.'}
   - id: w.yijing
     use: say
     role: function
@@ -644,6 +635,7 @@ entries:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 见 «ver» + 面 «cara»: verse las caras. 我们明天见面吧 «quedamos mañana».'}
       - {kind: mnemonic, private: false, date: '2026-10-26', text: 'En 面 se ve una cara, clavada: 见面 es «vernos las caras».', original: 'ES VERDAD VEO UNA CARA CLAVADA'}
       - {kind: linguistic, private: false, date: '2026-10-26', text: '见面 es el encuentro en persona, no organizarlo: para quedar se usa 约 yuē [HSK 3]. Y conocer a alguien es 认识: puedes 认识 a alguien por internet sin haber 见面 todavía. 面 es «cara» solo dentro de palabras; la cara, al hablar, es 脸 liǎn.', original: '见面 (jiànmiàn) significa verse con alguien, encontrarse en persona. Es el encuentro, no organizarlo. […] Para concertar el encuentro, se usa 约 (yuē). Y para conocer a alguien por primera vez, 认识 (rènshi) […] Cara se dice 脸 (liǎn) en el uso cotidiano.'}
+      - {date: '2026-11-06', kind: linguistic, private: false, text: '见 «ver» + 面 «cara»: verse las caras. El mismo 面 es «lado» en 外面 «fuera».'}
   - id: w.chang.often
     use: say
     role: function
@@ -759,16 +751,6 @@ entries:
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
     comments:
       - {date: '2026-10-31', kind: linguistic, private: false, text: 'Suelto, sobre todo con algo detrás: 睡一下 «echar una cabezada». Irse a dormir es 睡觉.'}
-  - id: w.huidao
-    use: say
-    role: content
-    kind: word
-    hanzi: 回到
-    pinyin: huídào
-    meaning: {en: to get back to, es: 'volver a, llegar de vuelta'}
-    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
-    comments:
-      - {date: '2026-10-31', kind: linguistic, private: false, text: '回 «volver» + 到 «llegar»: 我回到家了 «ya estoy de vuelta en casa». Sin 到, 回家 es solo «volver a casa».'}
   - id: w.lushang
     use: say
     role: content
@@ -800,3 +782,13 @@ entries:
       - {cue: '2.º tono, sube: 猴年', ref: w.hou}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
     comments: []
+  - id: w.jingchang
+    use: say
+    role: content
+    kind: word
+    hanzi: 经常
+    pinyin: jīngcháng
+    meaning: {es: a menudo, en: often}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 'Como 常常 «a menudo»; 经常 se oye un poco más en preguntas: 你经常去吗？.'}

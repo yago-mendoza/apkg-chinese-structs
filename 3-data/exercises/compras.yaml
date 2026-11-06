@@ -2330,3 +2330,34 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde está mi bolso?»'}
     answer: {meaning: '¿Dónde está mi bolso?'}
     comments: []
+  - id: x.nuance.shangchang-chaoshi
+    added: '2026-11-06'
+    lang: es
+    type: nuance
+    targets: [w.shangchang, w.chaoshi]
+    skills: [comprehension, discrimination]
+    prompt: {text: '商场 y 超市: ¿qué cambia?'}
+    answer: {meaning: '商场: centro comercial, con tiendas de ropa y de todo. 超市: supermercado, para la comida y lo de casa.'}
+    comments: []
+  - id: x.listen.gongxi-ni-maidao-liang-gongjin-pingguo
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.gongxi-ni-maidao-liang-gongjin-pingguo
+    targets: [s.gongxi-ni-maidao-liang-gongjin-pingguo]
+    context: [e.gongxi, w.ni, w.mai, w.dao.reach, w.le, w.liang, w.gongjin, w.xihuan, w.de, w.pingguo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Enhorabuena, has comprado dos kilos de las manzanas que te gustan!'}
+    comments: []
+  - id: x.produce.wo-hai-mei-mai-jipiao
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-hai-mei-mai-jipiao
+    targets: [s.wo-hai-mei-mai-jipiao]
+    context: [w.wo, w.hai.still, w.mei, w.mai, w.jipiao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Todavía no he comprado el billete de avión.»'}
+    answer: {meaning: Todavía no he comprado el billete de avión.}
+    comments: []

@@ -624,3 +624,45 @@ entries:
       - {cue: 'arriba un trazo recto, y el eje vertical atraviesa: 轻', ref: w.che}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
     comments: []
+  - id: c.gong.work
+    use: read
+    kind: character
+    hanzi: 工
+    pinyin: gōng
+    meaning: {es: 'trabajo, obra', en: work}
+    standalone: 'no'
+    level: 1
+    level_reason: 'se aprende en 工作 (HSK 1)'
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []
+  - id: c.gong.public
+    use: read
+    kind: character
+    hanzi: 公
+    pinyin: gōng
+    meaning: {es: 'público, común', en: public}
+    standalone: 'no'
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []
+  - id: c.gong.respect
+    use: read
+    kind: character
+    hanzi: 恭
+    pinyin: gōng
+    meaning: {es: respetuoso, en: respectful}
+    standalone: 'no'
+    level: 7
+    level_reason: 'se aprende en 恭喜, de nivel 7 en la lista'
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []
+  - id: g.gong
+    kind: group
+    basis: homophone
+    title: '工, 公 y 恭: tres gōng'
+    explanation: 'Suenan igual, gōng, y no tienen nada que ver: se separan por la palabra en que salen.'
+    members:
+      - {ref: c.gong.work, cue: '工作, 工程师'}
+      - {ref: c.gong.public, cue: '公司, 公斤'}
+      - {ref: c.gong.respect, cue: 恭喜}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []

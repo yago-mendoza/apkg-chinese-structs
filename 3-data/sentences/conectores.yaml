@@ -257,3 +257,216 @@ sentences:
       - {text: 。}
     translation: {en: 'I am very tired, but I want to go.', es: 'Estoy muy cansado, pero quiero ir.'}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-zhidao-yuanyin
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zhīdao, ref: w.zhidao, text: 知道}
+      - {pinyin: yuányīn, ref: w.yuanyin, text: 原因}
+      - {text: 。}
+    translation: {en: I know the reason., es: Sé por qué (sé la causa).}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.ta-haishi-zhu-zai-beijing
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {pinyin: háishi, ref: w.haishi, text: 还是}
+      - {pinyin: zhù, ref: w.zhu.live, text: 住}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: Běijīng, ref: w.beijing, text: 北京}
+      - {text: 。}
+    translation: {en: He still lives in Beijing., es: Sigue viviendo en Pekín.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.ta-zhu-zai-beijing-haishi-shanghai
+    use: say
+    kind: example
+    segments:
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {pinyin: zhù, ref: w.zhu.live, text: 住}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: Běijīng, ref: w.beijing, text: 北京}
+      - {pinyin: háishi, ref: w.haishi, text: 还是}
+      - {pinyin: Shànghǎi, ref: w.shanghai, text: 上海}
+      - {text: ？}
+    translation: {en: 'Does he live in Beijing or Shanghai?', es: '¿Vive en Pekín o en Shanghái?'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-hen-xiang-qu-zhongguo-danshi-meiyou-qian
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: Zhōngguó, ref: w.zhongguo, text: 中国}
+      - {text: ，}
+      - {pinyin: dànshì, ref: w.danshi, text: 但是}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: méiyǒu, ref: w.meiyou, text: 没有}
+      - {pinyin: qián, ref: w.qian, text: 钱}
+      - {text: 。}
+    translation: {en: 'I really want to go to China, but I have no money.', es: 'Tengo muchas ganas de ir a China, pero no tengo dinero.'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.ranhou-ne
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: ránhòu, ref: w.ranhou, text: 然后}
+      - {pinyin: ne, ref: w.ne, text: 呢}
+      - {text: ？}
+    translation: {en: 'And then?', es: '¿Y luego?'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-xian-huijia-ranhou-qu-chaoshi
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiān, ref: w.xian.first, text: 先}
+      - {pinyin: huíjiā, ref: w.huijia, text: 回家}
+      - {text: ，}
+      - {pinyin: ránhòu, ref: w.ranhou, text: 然后}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: chāoshì, ref: w.chaoshi, text: 超市}
+      - {text: 。}
+    translation: {en: 'First I''m going home, then to the supermarket.', es: Primero voy a casa y luego al súper.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-xihuan-zhongguo-de-shiwu-biru-niurou
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: Zhōngguó, ref: w.zhongguo, text: 中国}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: shíwù, ref: w.shiwu, text: 食物}
+      - {text: ，}
+      - {pinyin: bǐrú, ref: w.biru, text: 比如}
+      - {pinyin: niúròu, ref: w.niurou, text: 牛肉}
+      - {text: 。}
+    translation: {en: 'I like Chinese food, beef for example.', es: 'Me gusta la comida china, por ejemplo la ternera.'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-xuexi-zhongwen-yinwei-xiang-qu-zhongguo
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xuéxí, ref: w.xuexi, text: 学习}
+      - {pinyin: Zhōngwén, ref: w.zhongwen, text: 中文}
+      - {text: ，}
+      - {pinyin: yīnwèi, ref: w.yinwei, text: 因为}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: Zhōngguó, ref: w.zhongguo, text: 中国}
+      - {text: 。}
+    translation: {en: I study Chinese because I want to go to China., es: Estudio chino porque quiero ir a China.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.yinwei-wo-hen-mang-suoyi-hai-mei-mai-jipiao
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: yīnwèi, ref: w.yinwei, text: 因为}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: máng, ref: w.mang, text: 忙}
+      - {text: ，}
+      - {pinyin: suǒyǐ, ref: w.suoyi, text: 所以}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: hái, ref: w.hai.still, text: 还}
+      - {pinyin: méi, ref: w.mei, text: 没}
+      - {pinyin: mǎi, ref: w.mai, text: 买}
+      - {pinyin: jīpiào, ref: w.jipiao, text: 机票}
+      - {text: 。}
+    translation: {en: 'Because I''m very busy, I haven''t bought the ticket yet.', es: 'Como estoy muy ocupado, aún no he comprado el billete de avión.'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.yinwei-wo-xihuan-zhongwen-ye-xiang-qu-zhongguo
+    use: say
+    kind: example
+    segments:
+      - {pinyin: yīnwèi, ref: w.yinwei, text: 因为}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: Zhōngwén, ref: w.zhongwen, text: 中文}
+      - {text: ，}
+      - {pinyin: yě, ref: w.ye, text: 也}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: Zhōngguó, ref: w.zhongguo, text: 中国}
+      - {text: 。}
+    translation: {en: 'Because I like Chinese, and I want to go to China too.', es: 'Porque me gusta el chino, y también quiero ir a China.'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-juede-zhongwen-hen-nan-danshi-hen-xihuan
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: juéde, ref: w.juede, text: 觉得}
+      - {pinyin: Zhōngwén, ref: w.zhongwen, text: 中文}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: nán, ref: w.nan, text: 难}
+      - {text: ，}
+      - {pinyin: dànshì, ref: w.danshi, text: 但是}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {text: 。}
+    translation: {en: 'I think Chinese is hard, but I really like it.', es: 'Creo que el chino es difícil, pero me gusta mucho.'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.mono-wo-xiang-yixia-weishenme-xue
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: èn, ref: w.en, text: 嗯}
+      - {text: ，}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: yíxià, ref: w.yixia, sandhi: true, text: 一下}
+      - {text: ……}
+      - {pinyin: yīnwèi, ref: w.yinwei, text: 因为}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: Zhōngwén, ref: w.zhongwen, text: 中文}
+      - {text: ，}
+      - {pinyin: yě, ref: w.ye, text: 也}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: Zhōngguó, ref: w.zhongguo, text: 中国}
+      - {text: 。}
+      - {pinyin: dànshì, ref: w.danshi, text: 但是}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: juéde, ref: w.juede, text: 觉得}
+      - {pinyin: Zhōngwén, ref: w.zhongwen, text: 中文}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: nán, ref: w.nan, text: 难}
+      - {text: 。}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: juéde, ref: w.juede, text: 觉得}
+      - {pinyin: ne, ref: w.ne, text: 呢}
+      - {text: ？}
+    translation: {en: 'Hmm, let me think... Because I like Chinese, and I want to go to China too. But I think Chinese is hard. What do you think?', es: 'Mmm, déjame pensar… Porque me gusta el chino y también quiero ir a China. Pero creo que el chino es difícil. ¿Tú qué opinas?'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.hai-you-shenme
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: háiyǒu, ref: w.haiyou, text: 还有}
+      - {pinyin: shénme, ref: w.shenme, text: 什么}
+      - {text: ？}
+    translation: {en: 'What else?', es: '¿Qué más?'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.duile-ni-mingtian-you-shijian-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: duì le, ref: e.duile, text: 对了}
+      - {text: ，}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: míngtiān, ref: w.mingtian, text: 明天}
+      - {pinyin: yǒu, ref: w.you.have, text: 有}
+      - {pinyin: shíjiān, ref: w.shijian, text: 时间}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'By the way, are you free tomorrow?', es: 'Por cierto, ¿tienes tiempo mañana?'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}

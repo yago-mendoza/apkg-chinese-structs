@@ -12,6 +12,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Palabra a palabra: 问 «preguntar» + 题 «tema, ejercicio». Es «pregunta» y también «problema»: 我有一个问题 «tengo una pregunta»; 没问题 «no hay problema».'}
       - {kind: character, private: false, date: '2026-10-11', text: '题 lleva 是 a la izquierda, que le daba el sonido (hoy ya no se parece: tí), y 页 «página» a la derecha.', original: EN MEI WENTI EL 'tí' es shì hanzi + yè hanzi (pagína de libro o clasificador)}
+      - {date: '2026-11-06', kind: tip, private: false, text: '问题 es «pregunta» y también «problema»: 我有一个问题 «tengo una pregunta», 没问题 «sin problema», 好问题 «¡buena pregunta!».'}
   - id: w.dong
     use: say
     role: content
@@ -79,9 +80,12 @@ entries:
     level: 1
     level_reason: 'Es 一点儿, HSK 1, sin el erhua del norte: en mandarín estándar se dice y se escribe 一点.'
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    accept_cards: 'pediste el contraste 一下 / 一定 / 一点 (review 015)'
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'Va detrás de un adjetivo para pedir «un poco más así»: 慢一点 «más despacio», 便宜一点 «más barato». «Un poco» de una acción es 一下: 等一下.'}
       - {kind: linguistic, private: false, date: '2026-10-22', text: 'Delante de un nombre, «un poco de»: 一点水. Detrás de un verbo, «un poco»: 吃一点. Con 有 delante del adjetivo es una queja: 有点贵 «es un poco caro», frente a 贵一点 «un poco más caro». Lo contrario de 一点 es 很多.'}
+      - {date: '2026-11-06', kind: mnemonic, private: false, text: '点 parece un dispensador de jabón soltando sus gotas: 一点, una dosis pequeña, «un poco».', original: 'Yidian mnemotencia se ve como un dispensador de alcoohl o jabon por tanto es "un poco, dosis pequeña"'}
+      - {date: '2026-11-06', kind: tip, private: false, text: 'Tres yi que se confunden: 一下 «un momento», detrás del verbo (你等一下); 一定 «seguro», delante (我一定来); 一点 «un poco», de cantidad (便宜一点).'}
     pos: adverbio
     pos_reason: 'Detrás de un adjetivo, «un poco (más)»: 慢一点.'
   - id: w.zheyang
@@ -224,3 +228,22 @@ entries:
       - {cue: '3.er tono, se hunde: 我的脚', ref: w.jiao.foot}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
     comments: []
+  - id: w.keneng
+    use: say
+    role: content
+    kind: word
+    hanzi: 可能
+    pinyin: kěnéng
+    meaning: {es: 'quizá, puede que', en: 'maybe, possibly'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []
+  - id: w.ganjue
+    use: say
+    role: content
+    kind: word
+    hanzi: 感觉
+    pinyin: gǎnjué
+    meaning: {es: sentir; sensación, en: to feel; feeling}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 'El mismo 觉 de 觉得: 我觉得 «creo, me parece»; 感觉 «siento, me siento». 感觉很好 «me siento bien».'}

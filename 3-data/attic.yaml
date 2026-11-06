@@ -59,8 +59,8 @@ items:
     reason: HSK 5; entra cuando lleguen los colores.
     notes:
       - {text: '灰 huī es «ceniza»: el color de la ceniza.'}
-    snooze: 015-2026-10-31-volver-a-casa-y-para-entender
-    snooze_reason: 'llegaron 白色 y 绿色, de clase y solo para oír; 灰色 (HSK 5) espera a que los colores se practiquen para decir'
+    snooze: 016-2026-11-06-improvisar-y-la-clase-del-6
+    snooze_reason: 'llegaron 红色 y 黑色 y el grupo de los colores, pero los colores siguen siendo para oír; 灰色 (HSK 5) espera a que se practiquen para decir'
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
 
   # ---------------------------------------------------------------- dinero, errores
@@ -926,3 +926,93 @@ items:
     notes:
       - {text: '面 «cara» + 试 «probar»: una prueba cara a cara.'}
     source: {batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
+
+  # ---------------------------------------------------------------- lote 016
+  - id: a.didao
+    hanzi: 地道
+    pinyin: dìdao
+    meaning: {es: 'auténtico, de verdad (comida, acento)'}
+    theme: describir
+    links: [纯正, 正宗]
+    reason: HSK 7; de tus consultas, sin frase tuya.
+    notes:
+      - {text: '我是地道的中国人 «soy chino de pura cepa», y 这家菜很地道 «esta comida es auténtica». 纯正 chúnzhèng [HSK 4+] es «puro, sin mezcla», más enfático; 纯血 «de sangre pura» suena racial y no se usa para la nacionalidad.'}
+    source: {batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: a.liaojie
+    hanzi: 了解
+    pinyin: liǎojiě
+    meaning: {es: 'conocer bien, estar al tanto'}
+    theme: entender
+    links: [理解]
+    reason: HSK 4; salió en clase solo para leer en voz alta (3+3).
+    notes:
+      - {text: 'En los deberes del 6, para leer en voz alta: liǎojiě, dos terceros tonos seguidos.'}
+    source: {batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: a.wudao
+    hanzi: 舞蹈
+    pinyin: wǔdǎo
+    meaning: {es: 'danza, baile (como arte)'}
+    theme: ocio
+    links: [跳舞]
+    reason: HSK 6 y de registro culto; al hablar se dice 跳舞. Salió en clase solo para leer en voz alta (3+3).
+    notes:
+      - {text: 'En los deberes del 6, para leer en voz alta: wǔdǎo. «Bailar» al hablar es 跳舞 tiàowǔ.'}
+    source: {batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: a.guai
+    hanzi: 怪
+    pinyin: guài
+    meaning: {es: 'culpar, echar la culpa; raro'}
+    theme: cosas
+    links: [奇怪]
+    reason: HSK 4; de tus consultas. Entra 这都是你的错, que dice lo mismo con HSK 1.
+    notes:
+      - {text: 都怪你！ «¡todo es culpa tuya!» es un reproche; 因为你 «por ti» es neutro.}
+    source: {batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: a.changjinglu
+    hanzi: 长颈鹿
+    pinyin: chángjǐnglù
+    meaning: {es: jirafa}
+    theme: animales
+    links: [动物园]
+    reason: fuera de la lista del HSK; de tus consultas, sin frase.
+    level: 7
+    level_reason: no está en la lista
+    notes:
+      - {text: 'Por piezas: 长 «largo» + 颈 «cuello» + 鹿 «ciervo», el ciervo de cuello largo.'}
+    source: {batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: a.daishu
+    hanzi: 袋鼠
+    pinyin: dàishǔ
+    meaning: {es: canguro}
+    theme: animales
+    links: [动物园]
+    reason: fuera de la lista del HSK; de tus consultas, sin frase.
+    level: 7
+    level_reason: no está en la lista
+    notes:
+      - {text: 'Por piezas: 袋 «bolsa» + 鼠 «ratón», el ratón de bolsa (el mismo 鼠 de 老鼠).'}
+    source: {batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: a.hema
+    hanzi: 河马
+    pinyin: hémǎ
+    meaning: {es: hipopótamo}
+    theme: animales
+    links: [动物园, 河]
+    reason: fuera de la lista del HSK; de tus consultas, sin frase.
+    level: 7
+    level_reason: no está en la lista
+    notes:
+      - {text: 'Por piezas: 河 «río» + 马 «caballo», el caballo de río.'}
+    source: {batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: a.huoji
+    hanzi: 火鸡
+    pinyin: huǒjī
+    meaning: {es: pavo}
+    theme: animales
+    links: [动物园]
+    reason: fuera de la lista del HSK; de tus consultas, sin frase.
+    level: 7
+    level_reason: no está en la lista
+    notes:
+      - {text: 'Por piezas: 火 «fuego» + 鸡 «pollo», el pollo de fuego, por su moco rojo.'}
+    source: {batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}

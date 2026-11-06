@@ -1132,3 +1132,149 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: 'La habitación está demasiado oscura: no veo nada.'}
     comments: []
+  - id: x.dictation.jiali
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.jiali]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jia1 li5, hanzi: 家里, pinyin: jiāli, meaning: en casa}
+    comments: []
+  - id: x.produce.jiali
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.jiali]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «en casa»? Escribe el pinyin.'}
+    answer: {typed: jia1 li5, hanzi: 家里, pinyin: jiāli, meaning: en casa}
+    comments: []
+  - id: x.read.jiali
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.jiali]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 家里}
+    answer: {hanzi: 家里, pinyin: jiāli, meaning: en casa}
+    comments: []
+  - id: x.tones.jiali
+    added: 2026-11-06
+    lang: es
+    type: tones
+    targets: [w.jiali]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 家里, pinyin: jia li}
+    answer: {typed: '15', hanzi: 家里, pinyin: jiāli, meaning: en casa}
+    comments: []
+  - id: x.dictation.yusan
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.yusan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yu3 san3, hanzi: 雨伞, pinyin: yǔsǎn, meaning: paraguas}
+    comments: []
+  - id: x.read.yusan
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.yusan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 雨伞}
+    answer: {hanzi: 雨伞, pinyin: yǔsǎn, meaning: paraguas}
+    comments: []
+  - id: x.tones.yusan
+    added: 2026-11-06
+    lang: es
+    type: tones
+    targets: [w.yusan]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 雨伞, pinyin: yu san}
+    answer: {typed: '33', hanzi: 雨伞, pinyin: yǔsǎn, meaning: paraguas}
+    comments: []
+  - id: x.produce.wo-zhu-san-tian
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-zhu-san-tian
+    targets: [s.wo-zhu-san-tian]
+    context: [w.wo, w.zhu.live, w.num.san, w.tian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me quedo tres días.»'}
+    answer: {meaning: Me quedo tres días.}
+    comments: []
+  - id: x.produce.wo-zai-beijing-zhu-liang-tian
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-zai-beijing-zhu-liang-tian
+    targets: [s.wo-zai-beijing-zhu-liang-tian]
+    context: [w.wo, w.zai.at, w.beijing, w.zhu.live, w.liang, w.tian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me quedo dos días en Pekín.»'}
+    answer: {meaning: Me quedo dos días en Pekín.}
+    comments: []
+  - id: x.produce.ni-jia-zai-nali
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-jia-zai-nali
+    targets: [s.ni-jia-zai-nali]
+    context: [w.ni, w.jia, w.zai.at, w.nali]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Dónde está tu casa?»'}
+    answer: {meaning: '¿Dónde está tu casa?'}
+    comments: []
+  - id: x.produce.jiali-you-ren-ma
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.jiali-you-ren-ma
+    targets: [s.jiali-you-ren-ma]
+    context: [w.jiali, w.you.have, w.ren, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Hay alguien en casa?»'}
+    answer: {meaning: '¿Hay alguien en casa?'}
+    comments: []
+  - id: x.dictation.qichuang
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.qichuang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: qi3 chuang2, hanzi: 起床, pinyin: qǐchuáng, meaning: levantarse (de la cama)}
+    comments: []
+  - id: x.produce.qichuang
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.qichuang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «levantarse (de la cama)»? Escribe el pinyin.'}
+    answer: {typed: qi3 chuang2, hanzi: 起床, pinyin: qǐchuáng, meaning: levantarse (de la cama)}
+    comments: []
+  - id: x.read.qichuang
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.qichuang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 起床}
+    answer: {hanzi: 起床, pinyin: qǐchuáng, meaning: levantarse (de la cama)}
+    comments: []
+  - id: x.contrast.zhong.clock
+    added: 2026-11-06
+    lang: es
+    type: contrast
+    group: g.zhong-zhong
+    targets: [w.zhong.clock]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 钟, pinyin: zhōng, meaning: reloj (de pared)}
+    comments: []

@@ -445,3 +445,13 @@ sentences:
       - {text: ！}
     translation: {en: 'Sure, see you tomorrow!', es: '¡Vale, hasta mañana!'}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.ni-shenme-shihou-huilai
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: shénme shíhou, ref: e.shenmeshihou, text: 什么时候}
+      - {pinyin: huílai, ref: w.huilai, text: 回来}
+      - {text: ？}
+    translation: {en: 'When are you coming back?', es: '¿Cuándo vuelves (aquí)?'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}

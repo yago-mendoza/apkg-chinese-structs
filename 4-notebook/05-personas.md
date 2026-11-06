@@ -27,7 +27,7 @@
 - ✅🃏 小姐 xiǎojiě [ɕjɑʊ˧˩˧ tɕjɛ˧˩˧] · señorita (tras el apellido) · _sustantivo_
 - ✅🃏 小朋友 xiǎopéngyǒu [ɕjɑʊ˧˩˧ pʰɤŋ˧˥ joʊ˧˩˧] · niño, niña (al hablarle) · _sustantivo_ · Así se llama a un niño que no conoces: 小朋友，你几岁？.
 - ✅🃏 跟 gēn [kən˥] · con (alguien) · _preposición_ · 跟 + persona + verbo: 你想跟我一起吃饭吗？ «¿quieres comer conmigo?». Suele ir con 一起. · 跟我来 «sígueme»: 跟 también es «seguir». 跟 dice con quién y 一起, que juntos; se juntan a menudo: 我跟你(一起)去 «voy contigo».
-- ✅🃏 一起 yīqǐ [i˥ tɕʰi˧˩˧] · juntos · _sustantivo_ · Va delante del verbo: 一起吃饭 «comer juntos». · 一起: varias personas que se levantan 起 a la vez, como una sola 一: juntos.
+- ✅🃏 一起 yīqǐ [i˥ tɕʰi˧˩˧] · juntos · _sustantivo_ · Va delante del verbo: 一起吃饭 «comer juntos». · 一起: varias personas que se levantan 起 a la vez, como una sola 一: juntos. · 💡 一起 va delante del verbo: 我们一起去吧 «vamos juntos». Con alguien: 跟 + persona + 一起 + verbo, 我跟你一起去.
 - ✅🃏 给 gěi [keɪ˧˩˧] · a, para (alguien) · _preposición_ · 给 + persona va delante del verbo: 给我打电话 «llámame». Suelto, el verbo 给 es «dar».
 - ✅🃏 男 nán [nan˧˥] · hombre, masculino (en carteles: 男) · _adjetivo_ · En las puertas de los baños: 男 «hombres», 女 «mujeres». 男朋友 «novio».
 - ✅🃏 女 nǚ [ny˧˩˧] · mujer, femenino (en carteles: 女) · _adjetivo_ · En las puertas de los baños: 女 «mujeres», 男 «hombres». 女朋友 «novia»; 女儿 «hija».
@@ -45,6 +45,12 @@
 - ✅🃏 关系 guānxi [kwan˥ ɕi] · relación (entre personas o cosas) · _sustantivo_ · Es el 关系 de 没关系 «no pasa nada», literalmente «no tiene relación». 我们关系很好 «nos llevamos muy bien»; 跟你没关系 «no tiene nada que ver contigo». No confundir con 关心 guānxīn «preocuparse por alguien» [HSK 2].
 - ✅🃏 别人 biéren [pjɛ˧˥ ʐən] · los demás, otra gente · _pronombre_ · Palabra a palabra: 别 «otro» + 人 «persona». 别人都来了 «los demás ya han venido». No es el 别 de «no hagas».
 - ✅🃏 一个人 yí ge rén [i˧˥ kɤ ʐən˧˥] · solo, sin compañía · _expresión_ · Delante del verbo: 我一个人住 «vivo solo». 自己 es otra cosa: «yo mismo, sin que nadie lo haga por mí». · Palabra a palabra: 一 «una» + 个 (clasificador) + 人 «persona»: «una sola persona», solo.
+- ✅🃏 男人 nánrén [nan˧˥ ʐən˧˥] · hombre · _sustantivo_ · Al hablar de alguien sin conocerlo se oye más 男的 y 女的: 是男的还是女的？ 男人 y 女人 son «hombre» y «mujer» adultos.
+- ✅🃏 女人 nǚrén [ny˧˩˧ ʐən˧˥] · mujer · _sustantivo_
+- ✅🃏 她们 tāmen [tʰa˥ mən] · ellas · _pronombre_ · Suena igual que 他们: solo cambia la escritura (女 «mujer»). Si el grupo es mixto, 他们.
+- ✅🃏 室友 shìyǒu [ʂɨ˥˩ joʊ˧˩˧] · compañero de piso · _sustantivo_ · 室 «cuarto» + 友 «amigo», el mismo de 朋友: el amigo con quien compartes casa.
+- ✅🃏 病人 bìngrén [piŋ˥˩ ʐən˧˥] · enfermo, paciente · _sustantivo_
+- ✅🃏 身上 shēnshang [ʂən˥ ʂɑŋ] · encima (de uno), en el cuerpo · _sustantivo_
 
 ## 他, 她 y 它: los tres son tā
 
@@ -133,3 +139,10 @@ Empiezan casi igual y se confunden al oído y al decirlos.
 - ✅🃏 你一个人住吗？ · nǐ yí ge rén zhù ma · ¿Vives solo?
 - ✅🃏 我自己去。 · wǒ zìjǐ qù · Voy yo mismo.
 - ✅🃏 我一个人住，今天想出去一下。 · wǒ yí ge rén zhù jīntiān xiǎng chūqu yíxià · Vivo solo, y hoy quiero salir un rato.
+- ✅🃏 他是我的室友。 · tā shì wǒ de shìyǒu · Es mi compañero de piso.
+- ✅🃏 大家都喜欢喝茶。 · dàjiā dōu xǐhuan hē chá · A todos les gusta el té.
+- ✅🃏 我有朋友，但是他们不在这里。 · wǒ yǒu péngyou dànshì tāmen bú zài zhèlǐ · Tengo amigos, pero no están aquí.
+- ✅🃏 我给你打电话。 · wǒ gěi nǐ dǎ diànhuà · Te llamo (por teléfono).
+- ✅🃏 那个男人是谁？ · nà ge nánrén shì shéi · ¿Quién es ese hombre?
+- ✅🃏 那个女人是我的老师。 · nà ge nǚrén shì wǒ de lǎoshī · Esa mujer es mi profesora.
+- ✅🃏 她们是我的朋友。 · tāmen shì wǒ de péngyou · Son mis amigas.

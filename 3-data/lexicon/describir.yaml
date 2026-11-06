@@ -778,26 +778,6 @@ entries:
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
     comments:
       - {date: '2026-10-31', kind: linguistic, private: false, text: 'Casi siempre de dos en dos: 有的人喜欢茶，有的人喜欢咖啡 «a unos les gusta el té y a otros el café».'}
-  - id: w.baise
-    use: hear
-    role: content
-    kind: word
-    hanzi: 白色
-    pinyin: báisè
-    meaning: {en: white, es: blanco (el color)}
-    use_reason: 'de clase (el repaso del 30), para entenderla'
-    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: diapositivas 2026-10-30, origin: class}
-    comments: []
-  - id: w.lvse
-    use: hear
-    role: content
-    kind: word
-    hanzi: 绿色
-    pinyin: lǜsè
-    meaning: {en: green, es: verde}
-    use_reason: 'de clase (el repaso del 30), para entenderla'
-    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: diapositivas 2026-10-30, origin: class}
-    comments: []
   - id: g.yi-words
     kind: group
     basis: soundalike
@@ -830,4 +810,24 @@ entries:
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
     comments:
       - {date: '2026-10-31', kind: linguistic, private: false, text: '他病了 «se ha puesto enfermo»: con 了, porque es un cambio. También 生病.'}
-
+  - id: w.zhong.heavy
+    use: say
+    role: content
+    kind: word
+    hanzi: 重
+    pinyin: zhòng
+    meaning: {es: pesado, en: heavy}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 'El mismo 重 de 重要 «importante»: lo que pesa.'}
+  - id: w.can
+    use: say
+    role: content
+    kind: word
+    hanzi: 惨
+    pinyin: cǎn
+    meaning: {es: terrible; pobre de ti (qué mala suerte), en: 'miserable, tragic'}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: teacher, private: false, text: 'En clase: 那你太惨了！ «¡pues pobre de ti!», al contarle algo que te salió mal.'}
+      - {date: '2026-11-06', kind: usage, private: false, text: '太惨了！ es una reacción de todos los días: «¡qué mal!, ¡pobre!».'}

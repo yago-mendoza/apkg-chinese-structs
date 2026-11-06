@@ -208,6 +208,7 @@ entries:
     source: {origin: class, batch: 004-2026-10-02-ser-nombres-y-describir, file: diapositivas 2026-09-29, date: '2026-09-29'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-02', text: 'Va entre 这, 那 o un número y la palabra: 这棵树 «este árbol», 一棵树 «un árbol».'}
+      - {date: '2026-11-06', kind: character, private: false, text: '木 «árbol» + 果 guǒ, que da el sonido (hoy, lejos): el mismo 果 de 课 kè «clase».'}
   - id: w.ling
     use: say
     role: content
@@ -379,6 +380,7 @@ entries:
     members:
       - {ref: w.ji, cue: 'baja y sube'}
       - {ref: w.ji.chicken, cue: 'alto y plano'}
+      - {ref: w.ji.note, cue: 'cae: 我记一下'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
   - id: w.di.ordinal
@@ -629,3 +631,14 @@ entries:
     source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, date: '2026-10-21', file: review-012-2026-10-19-querer-poder-y-matices.md, origin: attic, rescued: 015-2026-10-31-volver-a-casa-y-para-entender}
     comments:
       - {date: '2026-10-31', kind: linguistic, private: false, text: '大概 va delante de la cantidad y 左右 detrás; juntos también: 他大概三十岁左右 «tendrá unos treinta».'}
+  - id: w.cha.short
+    use: say
+    role: content
+    kind: word
+    hanzi: 差
+    pinyin: chà
+    meaning: {es: faltar (para la hora); ser malo, en: to be short of; poor}
+    tts: cha 4
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: usage, private: false, text: 'Para la hora: 差五分八点 «las ocho menos cinco». También «malo»: 这个很差 «esto es malo».'}

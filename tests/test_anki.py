@@ -1,5 +1,6 @@
 """Pruebas de anki.py. Ejecutar: .\\.venv\\Scripts\\python -m unittest discover -s tests"""
 import datetime
+import io
 import json
 import re
 import shutil
@@ -1768,3 +1769,57 @@ class NewCardOrderAddon(unittest.TestCase):
         with mock.patch.object(anki, "anki_request", lambda *a, **k: refused):
             with self.assertRaisesRegex(RuntimeError, "protected state"):
                 anki.anki_multi([{"action": "setSpecificValueOfCard", "params": {}}])
+
+class Lot016(unittest.TestCase):
+    """Lote 016 (review 015): en una tarjeta de contraste, cada opción con su frase (#912EZ); la carpeta de la web
+    donde está ahora; varias búsquedas con una sola carga."""
+
+    def setUp(self):
+        mk = lambda i, hz, py, es, **k: dict({"id": i, "kind": "word", "hanzi": hz, "pinyin": py, "meaning": {"es": es}}, **k)
+        self.eby = {
+            "w.jin.weight": mk("w.jin.weight", "斤", "jīn", "medio kilo"),
+            "w.jin": mk("w.jin", "进", "jìn", "entrar"),
+            "c.jin.now": mk("c.jin.now", "今", "jīn", "ahora", kind="character", standalone="no"),
+            "w.jintian": mk("w.jintian", "今天", "jīntiān", "hoy"),
+            "w.wo": mk("w.wo", "我", "wǒ", "yo"),
+            "w.yao": mk("w.yao", "要", "yào", "querer"),
+            "g.jin": {"id": "g.jin", "kind": "group", "basis": "homophone", "title": "进, 今 y 斤", "explanation": "x",
+                      "members": [{"ref": "w.jin", "cue": "a"}, {"ref": "c.jin.now", "cue": "b"},
+                                  {"ref": "w.jin.weight", "cue": "c"}]},
+        }
+        seg = lambda t, r, p: {"text": t, "ref": r, "pinyin": p}
+        self.sby = {
+            "s.jin": {"id": "s.jin", "use": "say", "translation": {"es": "Entro."}, "segments": [seg("我", "w.wo", "wǒ"), seg("进", "w.jin", "jìn")]},
+            "s.jintian": {"id": "s.jintian", "use": "say", "translation": {"es": "Hoy no."},
+                          "segments": [seg("今天", "w.jintian", "jīntiān"), seg("我", "w.wo", "wǒ")]},
+            "s.both": {"id": "s.both", "use": "say", "translation": {"es": "Hoy quiero un jin."},
+                       "segments": [seg("今天", "w.jintian", "jīntiān"), seg("要", "w.yao", "yào"), seg("斤", "w.jin.weight", "jīn")]},
+        }
+        self.ex = {"id": "x.contrast.jin.weight", "type": "contrast", "group": "g.jin", "targets": ["w.jin.weight"],
+                   "prompt": {"text": "¿Cuál es jīn?"}, "answer": {"hanzi": "斤", "pinyin": "jīn", "meaning": "medio kilo"}}
+
+    def test_every_option_of_a_contrast_has_its_sentence(self):
+        got = anki.member_examples(self.ex, self.sby, self.eby)
+        self.assertEqual(got.get("w.jin"), "s.jin")
+        # 今 no tiene frases propias: toma una de 今天, sin la respuesta dentro (s.both lleva 斤).
+        self.assertEqual(got.get("c.jin.now"), "s.jintian")
+        self.assertNotIn("w.jin.weight", got)
+        notes = anki.card_fields(self.ex, self.eby, self.sby, {}, set())["notes"]
+        self.assertIn("Entro.", notes)
+        self.assertIn("Hoy no.", notes)
+
+    def test_only_contrast_cards_get_one_sentence_per_option(self):
+        read = {"id": "x.read.jin.weight", "type": "read", "targets": ["w.jin.weight"]}
+        self.assertEqual(anki.member_examples(read, self.sby, self.eby), {})
+
+    def test_site_repo_follows_the_environment(self):
+        with mock.patch.dict(anki.os.environ, {"ANKI_SITE_REPO": "C:/somewhere/site"}):
+            self.assertEqual(anki._site_repo(), anki.Path("C:/somewhere/site"))
+
+    def test_lookup_takes_several_queries_with_one_load(self):
+        calls = []
+        real = anki.load
+        with mock.patch.object(anki, "load", lambda: calls.append(1) or real()),                 mock.patch("sys.stdout", new_callable=io.StringIO) as out:
+            anki.cmd_lookup(["你好", "谢谢"])
+        self.assertEqual(len(calls), 1)
+        self.assertIn("===== 谢谢", out.getvalue())

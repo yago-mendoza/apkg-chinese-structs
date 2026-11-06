@@ -1164,3 +1164,167 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¿Qué estás diciendo?»'}
     answer: {meaning: '¿Qué estás diciendo?'}
     comments: []
+  - id: x.cloze.yi.xia-ding-dian.c
+    added: '2026-11-06'
+    lang: es
+    type: cloze
+    sentence: s.gei-wo-yidian-shui
+    gap: w.yidian
+    targets: [w.yidian]
+    context: [w.gei.to, w.wo, w.shui]
+    skills: [production, pinyin]
+    prompt: {text: '¿一下, 一定 o 一点? Completa en pinyin: «Dame un poco de agua.»'}
+    answer: {hanzi: 一点, meaning: un poco (de una cantidad o de una cualidad), pinyin: yìdiǎn, typed: yi4 dian3}
+    comments: []
+  - id: x.dictation.keneng
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.keneng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ke3 neng2, hanzi: 可能, pinyin: kěnéng, meaning: 'quizá, puede que'}
+    comments: []
+  - id: x.produce.keneng
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.keneng]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «quizá, puede que»? Escribe el pinyin.'}
+    answer: {typed: ke3 neng2, hanzi: 可能, pinyin: kěnéng, meaning: 'quizá, puede que'}
+    comments: []
+  - id: x.read.keneng
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.keneng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 可能}
+    answer: {hanzi: 可能, pinyin: kěnéng, meaning: 'quizá, puede que'}
+    comments: []
+  - id: x.listen.ni-neng-ting-dong-wo-shuo-de-ma
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.ni-neng-ting-dong-wo-shuo-de-ma
+    targets: [s.ni-neng-ting-dong-wo-shuo-de-ma]
+    context: [w.ni, w.neng, w.ting, w.dong, w.wo, w.shuo, w.de, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Entiendes lo que digo?'}
+    comments: []
+  - id: x.produce.ni-neng-ting-dong-wo-shuo-de-ma
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-neng-ting-dong-wo-shuo-de-ma
+    targets: [s.ni-neng-ting-dong-wo-shuo-de-ma]
+    context: [w.ni, w.neng, w.ting, w.dong, w.wo, w.shuo, w.de, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Entiendes lo que digo?»'}
+    answer: {meaning: '¿Entiendes lo que digo?'}
+    comments: []
+  - id: x.produce.wo-kan-bu-dao-ni
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-kan-bu-dao-ni
+    targets: [s.wo-kan-bu-dao-ni]
+    context: [w.wo, w.kan, w.bu, w.dao.reach, w.ni]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No te veo.»'}
+    answer: {meaning: No te veo.}
+    comments: []
+  - id: x.produce.wo-juede-bu-shi
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-juede-bu-shi
+    targets: [s.wo-juede-bu-shi]
+    context: [w.wo, w.juede, w.bu, w.shi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Creo que no.»'}
+    answer: {meaning: Creo que no.}
+    comments: []
+  - id: x.produce.hao-wenti
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.hao-wenti
+    targets: [s.hao-wenti]
+    context: [w.hao, w.wenti]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Buena pregunta!»'}
+    answer: {meaning: ¡Buena pregunta!}
+    comments: []
+  - id: x.produce.wo-bu-zhidao-zenme-shuo
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-bu-zhidao-zenme-shuo
+    targets: [s.wo-bu-zhidao-zenme-shuo]
+    context: [w.wo, w.bu, w.zhidao, w.zenme, w.shuo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No sé cómo decirlo.»'}
+    answer: {meaning: No sé cómo decirlo.}
+    comments: []
+  - id: x.produce.ni-juede-ne
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-juede-ne
+    targets: [s.ni-juede-ne]
+    context: [w.ni, w.juede, w.ne]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Y tú qué opinas?»'}
+    answer: {meaning: '¿Y tú qué opinas?'}
+    comments: []
+  - id: x.listen.keneng-shi-zheyang
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.keneng-shi-zheyang
+    targets: [s.keneng-shi-zheyang]
+    context: [w.keneng, w.shi, w.zheyang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Puede que sea así.}
+    comments: []
+  - id: x.dictation.ganjue
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.ganjue]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gan3 jue2, hanzi: 感觉, pinyin: gǎnjué, meaning: sentir; sensación}
+    comments: []
+  - id: x.produce.ganjue
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.ganjue]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «sentir; sensación»? Escribe el pinyin.'}
+    answer: {typed: gan3 jue2, hanzi: 感觉, pinyin: gǎnjué, meaning: sentir; sensación}
+    comments: []
+  - id: x.read.ganjue
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.ganjue]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 感觉}
+    answer: {hanzi: 感觉, pinyin: gǎnjué, meaning: sentir; sensación}
+    comments: []
+  - id: x.contrast.dong
+    added: 2026-11-06
+    lang: es
+    type: contrast
+    group: g.dong-dong
+    targets: [w.dong]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 懂, pinyin: dǒng, meaning: 'entender, comprender'}
+    comments: []

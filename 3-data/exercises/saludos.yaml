@@ -2077,3 +2077,61 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¡Vale, hasta mañana!»'}
     answer: {meaning: '¡Vale, hasta mañana!'}
     comments: []
+  - id: x.dictation.zhoumoyukuai
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [e.zhoumoyukuai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhou1 mo4 yu2 kuai4, hanzi: 周末愉快, pinyin: zhōumò yúkuài, meaning: ¡buen fin de semana!}
+    comments: []
+  - id: x.produce.zhoumoyukuai
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [e.zhoumoyukuai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¡buen fin de semana!»? Escribe el pinyin.'}
+    answer: {typed: zhou1 mo4 yu2 kuai4, hanzi: 周末愉快, pinyin: zhōumò yúkuài, meaning: ¡buen fin de semana!}
+    comments: []
+  - id: x.read.zhoumoyukuai
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [e.zhoumoyukuai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 周末愉快}
+    answer: {hanzi: 周末愉快, pinyin: zhōumò yúkuài, meaning: ¡buen fin de semana!}
+    comments: []
+  - id: x.produce.ni-shenme-shihou-huilai
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-shenme-shihou-huilai
+    targets: [s.ni-shenme-shihou-huilai]
+    context: [w.ni, e.shenmeshihou, w.huilai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuándo vuelves (aquí)?»'}
+    answer: {meaning: '¿Cuándo vuelves (aquí)?'}
+    comments: []
+  - id: x.charsound.zhou
+    added: 2026-11-06
+    lang: es
+    type: charsound
+    targets: [e.zhoumoyukuai, w.zhoumo]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 周}
+    answer: {typed: zhou1, hanzi: 周, pinyin: zhōu, meaning: 'Sale en 周末愉快 zhōumò yúkuài «¡buen fin de semana!», 周末 zhōumò «fin
+        de semana».'}
+    comments: []
+  - id: x.charsound.mo
+    added: 2026-11-06
+    lang: es
+    type: charsound
+    targets: [e.zhoumoyukuai, w.zhoumo]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 末}
+    answer: {typed: mo4, hanzi: 末, pinyin: mò, meaning: 'Sale en 周末愉快 zhōumò yúkuài «¡buen fin de semana!», 周末 zhōumò «fin de
+        semana».'}
+    comments: []

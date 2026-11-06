@@ -4,7 +4,7 @@ Leer `docs/goal.md` (objetivo del que aprende: el primer filtro de todo lo que e
 
 Cada documento dice al principio qué va en él y qué no; respetarlo al editar. En resumen: `goal.md` lo que depende del que aprende (intercambiable); `design.md` el mecanismo, en presente y sin fechas; `owner.md` los valores y el entorno de este mazo; `decisions.md` la historia, solo se añade; `hypotheses.md` las hipótesis de aprendizaje y su veredicto; `state.md` la foto de ahora, con fuentes.
 
-- Entorno: local en Windows, `C:\Users\yagom\dev\apkg-chinese-structs`, Python en `.venv` (`.\.venv\Scripts\python anki.py ...`). No instalar dependencias fuera de `.venv`, salvo las de las grabaciones de clase, que van en `.venv-audio` (`tools/requirements-audio.txt`).
+- Entorno: local en Windows, `C:\Users\yagom\dev\Cockpit\apkg-chinese-structs`, Python en `.venv` (`.\.venv\Scripts\python anki.py ...`). No instalar dependencias fuera de `.venv`, salvo las de las grabaciones de clase, que van en `.venv-audio` (`tools/requirements-audio.txt`).
 - Prioridad: mandarín cotidiano y práctico, pinyin y tonos, audio en respuestas y ejemplos. YAGO está empezando.
 - Solo el agente edita `3-data/`. YAGO escribe en `1-inbox/` y saca resultados de `5-output/`.
 - Al cambiar una entrada o una frase, releer los ejercicios que la usan; al cambiar un ejercicio, sus entradas y frases (lo que pregunte de más va primero a la entrada).

@@ -15,6 +15,7 @@ Lo que creemos que ayuda a aprender a quien estudia con este mazo, cómo se comp
 
 - **Desde**: lote 011 (2026-10-16). **De dónde**: review 010, «lo que viene de clase debe aparecer lo antes posible, sin importar el HSK».
 - **Cómo se mide**: en `anki.py stats`, el porcentaje de «Otra vez» en lo de clase frente al resto, y lo que diga en el review sobre si llega a clase con lo de la semana ya visto.
+- **Lote 016 (2026-11-06)**: aún sin medir: `stats` no separa lo de clase del resto. El review 016 propone que lo haga.
 - **Regla**: `docs/goal.md`, «Qué entra y qué sale primero».
 - **Lote 012 (2026-10-19)**: lo de clase sale por dos colas, la reciente (7 de cada 10) y la atrasada (3 de cada 10). Se mide igual, y además si lo de la semana le sale antes de la clase siguiente y si la cola de clase baja.
 
@@ -22,14 +23,9 @@ Lo que creemos que ayuda a aprender a quien estudia con este mazo, cómo se comp
 
 - **Desde**: lote 011 (2026-10-16). **De dónde**: review 010, «las de oír deben ser desafíos» y «no puede haber tantas».
 - **Cómo se mide**: el porcentaje de «Otra vez» en las de oír en las próximas semanas, frente al 24 % general del lote 010, y los ejercicios de escucha de los deberes.
+- **Lote 016 (2026-11-06)**: oír falla un 6 % (21 de 336), muy por debajo del 24 % del lote 010. El review pregunta si se le hacen fáciles.
 - **Regla**: `docs/goal.md`, «Las de oír, retos».
 - **Lote 012 (2026-10-19)**: fuera de lo de clase, las frases que se practican para decir ya no llevan tarjeta de oír (231 menos).
-
-### 🧪 Ver el tono en color le ayuda a recordarlo
-
-- **Desde**: 2026-10-16, entre los lotes 011 y 012. **De dónde**: le cuesta recordar el tono de cada palabra; lo propuso el agente y él lo pidió para todo el mazo.
-- **Cómo se mide**: en `anki.py stats`, el «Otra vez» de las tarjetas de tonos y de decir en las próximas semanas, frente al 64 % de «Otra vez» al decir del lote 011, y lo que diga en el review.
-- **Regla**: `docs/goal.md`, «Los tonos, también por color».
 
 ### 🧪 Construir (palabras y escena, con modelos detrás) enseña a hilar frases
 
@@ -42,6 +38,7 @@ Lo que creemos que ayuda a aprender a quien estudia con este mazo, cómo se comp
 - **Desde**: lote 003 (2026-10-01). **De dónde**: sus apuntes.
 - **Cómo se mide**: `stats` sobre los contrastes que más falla. 他 / 她 / 它 sigue fallándose (4 de 7 en el lote 010): si no mejora, pasar a pareja para oír con su frase.
 - **Lote 012 (2026-10-19)**: entran cinco parejas que solo separa el tono (还 / 嗨, 鱼 / 雨, 晚 / 完 / 万, 没 / 每, 六 / 留) y los contrastes que pidió (吧 / 呢, 休息 / 学习, 青 / 请, 讠 / 辶, 喝 / 渴, 真的 / 正在).
+- **Lote 016 (2026-11-06)**: los contrastes fallan un 5 % (4 de 87). Entran nueve grupos más de lo que solo separa el tono o suena igual (姓 / 行, 懂 / 动, 茶 / 差, los tres gōng, los tres de…).
 - **Regla**: `docs/goal.md`, «Lo que se confunde, contrastado sin rodeos».
 
 ### 🧪 Sus propias mnemotecnias, en todas partes, le ayudan a recordar
@@ -55,6 +52,7 @@ Lo que creemos que ayuda a aprender a quien estudia con este mazo, cómo se comp
 - **Desde**: lote 012 (2026-10-19). **De dónde**: review 011, «¿no podrías currarte mini diagramas que ayuden a entender?», con 早上 y 上午.
 - **Cómo se mide**: si deja de confundir 早上 y 上午 en `stats` y lo que diga de la franja.
 - **Lote 014 (2026-10-26)**: le gusta el diagrama de 早上 y pide el nombre debajo de cada barra; y que haya diagramas siempre que aclaren algo. Se amplía a escalas (pesos, intensidad, frecuencia) y al eje de tiempo de 要…了, 了, 过, 在 y 已经. Se mide igual: los fallos de 了 / 过 / 要…了 y de los pesos en `stats`, y lo que diga.
+- **Lote 016 (2026-11-06)**: 上午 sigue fallando (4 de 18).
 - **Regla**: `docs/design.md`, «Tarjetas» (diagramas); `docs/goal.md`, «Diagramas sin cortarse».
 
 ### 🧪 Una pregunta por tarjeta: sin anversos iguales, no parece que las tarjetas se repitan
@@ -70,6 +68,13 @@ Lo que creemos que ayuda a aprender a quien estudia con este mazo, cómo se comp
 - **Regla**: `docs/design.md`, «Comentarios» y «Tarjetas» (reverso).
 
 ## Confirmadas
+
+### ✅ Ver el tono en color le ayuda a recordarlo
+
+- **Desde**: 2026-10-16, entre los lotes 011 y 012. **De dónde**: le cuesta recordar el tono de cada palabra; lo propuso el agente y él lo pidió para todo el mazo.
+- **Cómo se mide**: en `anki.py stats`, el «Otra vez» de las tarjetas de tonos y de decir en las próximas semanas, frente al 64 % de «Otra vez» al decir del lote 011, y lo que diga en el review.
+- **Regla**: `docs/goal.md`, «Los tonos, también por color».
+- **Lote 016 (2026-11-06), confirmada**: las tarjetas de tonos fallan un 9 % (4 de 46), frente al 34 % del lote 014 y el 44 % del 013; decir, un 16 % (64 % en el lote 011). Pocos repasos de tonos, pero dos lotes seguidos por debajo del 10 %, y él no ha pedido quitarlo.
 
 ### ✅ Cada tarjeta, una sola cosa con respuesta corta
 

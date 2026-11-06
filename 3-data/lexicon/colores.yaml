@@ -1,0 +1,63 @@
+# Entradas · Colores. Esquema: 3-data/README.md
+
+entries:
+  - id: w.yanse
+    use: say
+    role: content
+    kind: word
+    hanzi: 颜色
+    pinyin: yánsè
+    meaning: {es: color, en: colour}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []
+  - id: w.hongse
+    use: hear
+    role: content
+    kind: word
+    hanzi: 红色
+    pinyin: hóngsè
+    meaning: {es: rojo, en: red}
+    connection: {kind: sound, with: [工], text: '工 gōng da el sonido a 红 hóng (hoy, parecido); 纟 «seda», el significado: la seda teñida.'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []
+  - id: w.heise
+    use: hear
+    role: content
+    kind: word
+    hanzi: 黑色
+    pinyin: hēisè
+    meaning: {es: negro (el color), en: black}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []
+  - id: w.baise
+    use: hear
+    role: content
+    kind: word
+    hanzi: 白色
+    pinyin: báisè
+    meaning: {en: white, es: blanco (el color)}
+    use_reason: 'de clase (el repaso del 30), para entenderla'
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: diapositivas 2026-10-30, origin: class}
+    comments: []
+  - id: w.lvse
+    use: hear
+    role: content
+    kind: word
+    hanzi: 绿色
+    pinyin: lǜsè
+    meaning: {en: green, es: verde}
+    use_reason: 'de clase (el repaso del 30), para entenderla'
+    source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-30', file: diapositivas 2026-10-30, origin: class}
+    comments: []
+  - id: g.colores
+    kind: group
+    basis: set
+    title: Los colores
+    explanation: 'Todos llevan 色 sè «color» detrás: 红 hóng, 白 bái, 黑 hēi, 绿 lǜ, y luego 色.'
+    members:
+      - {ref: w.hongse, cue: 红}
+      - {ref: w.baise, cue: 白}
+      - {ref: w.heise, cue: 黑}
+      - {ref: w.lvse, cue: 绿}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []

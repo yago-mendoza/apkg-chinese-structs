@@ -1088,3 +1088,96 @@ sentences:
     translation: {en: '—Are you home yet? —Not yet, I am almost there. —OK, take care on the way!', es: '—¿Ya has llegado a casa? —Todavía no, ya casi estoy. —Vale, ¡ten cuidado por el camino!'}
     speakers: [A, B, A]
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.ni-meitian-ji-dian-qichuang
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: měi, ref: w.mei.each, text: 每}
+      - {pinyin: tiān, ref: w.tian, text: 天}
+      - {pinyin: jǐ, ref: w.ji, text: 几}
+      - {pinyin: diǎn, ref: w.dian.oclock, text: 点}
+      - {pinyin: qǐchuáng, ref: w.qichuang, text: 起床}
+      - {text: ？}
+    translation: {en: 'What time do you get up every day?', es: '¿A qué hora te levantas cada día?'}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.wo-meitian-qi-dian-qichuang
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: měi, ref: w.mei.each, text: 每}
+      - {pinyin: tiān, ref: w.tian, text: 天}
+      - {pinyin: qī, ref: w.num.qi, text: 七}
+      - {pinyin: diǎn, ref: w.dian.oclock, text: 点}
+      - {pinyin: qǐchuáng, ref: w.qichuang, text: 起床}
+      - {text: 。}
+    translation: {en: I get up at seven every day., es: Me levanto a las siete todos los días.}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.ni-xue-zhongwen-duojiu-le
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: xué, ref: w.xue, text: 学}
+      - {pinyin: Zhōngwén, ref: w.zhongwen, text: 中文}
+      - {pinyin: duōjiǔ, ref: w.duojiu, text: 多久}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: ？}
+    translation: {en: 'How long have you been learning Chinese?', es: '¿Cuánto tiempo llevas estudiando chino?'}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.zhoumo-ren-hen-duo
+    use: say
+    kind: example
+    segments:
+      - {pinyin: zhōumò, ref: w.zhoumo, text: 周末}
+      - {pinyin: rén, ref: w.ren, text: 人}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: duō, ref: w.duo, text: 多}
+      - {text: 。}
+    translation: {en: There are lots of people at the weekend., es: El fin de semana hay mucha gente.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.ni-jingchang-qu-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: jīngcháng, ref: w.jingchang, text: 经常}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Do you go often?', es: '¿Vas a menudo?'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.dlg-zhoumo-zuo-shenme
+    use: hear
+    kind: example
+    speakers: [A, B]
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: zhōumò, ref: w.zhoumo, text: 周末}
+      - {pinyin: zuò, ref: w.zuo.do, text: 做}
+      - {pinyin: shénme, ref: w.shenme, text: 什么}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: ？}
+      - {pinyin: méi, ref: w.mei, text: 没}
+      - {pinyin: zuò, ref: w.zuo.do, text: 做}
+      - {pinyin: shénme, ref: w.shenme, text: 什么}
+      - {text: ，}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: jiā, ref: w.jia, text: 家}
+      - {pinyin: xiūxi, ref: w.xiuxi, text: 休息}
+      - {text: 。}
+    translation: {en: '—What did you do at the weekend? —Nothing much, I rested at home.', es: '—¿Qué hiciste el fin de semana? —Nada especial: descansar en casa.'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.cha-wu-fen-ba-dian
+    use: say
+    kind: example
+    segments:
+      - {pinyin: chà, ref: w.cha.short, text: 差}
+      - {pinyin: wǔ, ref: w.num.wu, text: 五}
+      - {pinyin: fēn, ref: w.fen.minute, text: 分}
+      - {pinyin: bā, ref: w.ba, text: 八}
+      - {pinyin: diǎn, ref: w.dian.oclock, text: 点}
+      - {text: 。}
+    translation: {en: It's five to eight., es: Son las ocho menos cinco.}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}

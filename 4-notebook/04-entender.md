@@ -4,13 +4,13 @@
 
 ## Vocabulario
 
-- ✅🃏 问题 wèntí [wən˥˩ tʰi˧˥] · pregunta; problema · _sustantivo_ · Palabra a palabra: 问 «preguntar» + 题 «tema, ejercicio». Es «pregunta» y también «problema»: 我有一个问题 «tengo una pregunta»; 没问题 «no hay problema». · 题 lleva 是 a la izquierda, que le daba el sonido (hoy ya no se parece: tí), y 页 «página» a la derecha.
+- ✅🃏 问题 wèntí [wən˥˩ tʰi˧˥] · pregunta; problema · _sustantivo_ · Palabra a palabra: 问 «preguntar» + 题 «tema, ejercicio». Es «pregunta» y también «problema»: 我有一个问题 «tengo una pregunta»; 没问题 «no hay problema». · 题 lleva 是 a la izquierda, que le daba el sonido (hoy ya no se parece: tí), y 页 «página» a la derecha. · 💡 问题 es «pregunta» y también «problema»: 我有一个问题 «tengo una pregunta», 没问题 «sin problema», 好问题 «¡buena pregunta!».
 - ✅🃏 懂 dǒng [tʊŋ˧˩˧] · entender, comprender · _verbo_ · Solo es verbo: 我懂了 «ya lo entiendo»; 听不懂 «no lo entiendo (al oírlo)». 明白 es lo mismo, y además puede ser adjetivo, «claro»: 很明白 «muy claro». · 懂: el corazón 忄, de pie a la izquierda, y 董 dǒng, que da el sonido: entender de corazón. 喜 de 喜欢 no lleva nada a su izquierda.
 - ✅🃏 意思 yìsi [i˥˩ sɯ] · significado, sentido · _sustantivo_ · 这个是什么意思？ «¿qué significa esto?». Es el mismo 意思 de 不好意思, literalmente «no es buena intención». · 意: una voz 音 que sale del corazón 心: una intención. 思: un campo 田 de ideas cultivado en el corazón 心: pensar. · 什么意思？ «¿qué significa?»; 我的意思是… «lo que quiero decir es…». 你是什么意思？ puede sonar desafiante; para preguntar sin tensión, 你是说…？ «¿quieres decir que…?». 意 y 思 casi nunca van solos.
 - ✅🃏 清楚 qīngchu [tɕʰiŋ˥ ʈʂʰu] · claro, nítido (que se ve o se oye bien) · _adjetivo_ · 我没听清楚 «no lo he oído bien»: el problema es el sonido, no entenderlo. 清 lleva 青 qīng, que le da el sonido, como a 请 qǐng.
 - ✅🃏 读 dú [tu˧˥] · leer (en voz alta) · _verbo_ · 这个字怎么读？ «¿cómo se lee este carácter?». Leer para uno mismo, en silencio, también es 看: 看书 «leer un libro».
 - ✅🃏 慢 màn [man˥˩] · lento, despacio · _adjetivo_ · 请说慢一点 «hable un poco más despacio, por favor». Lo contrario es 快 kuài «rápido». · Tu corazón 忄 quiere avanzar, pero una mano 又 tiene que desenredar una red 罒 que ha atrapado al sol 日: tira con tanto cuidado, tan despacio, que parece que el día no acaba nunca.
-- ✅🃏 一点 yīdiǎn [i˥ tjɛn˧˩˧] · un poco (de una cantidad o de una cualidad) · _adverbio_ · Va detrás de un adjetivo para pedir «un poco más así»: 慢一点 «más despacio», 便宜一点 «más barato». «Un poco» de una acción es 一下: 等一下. · Delante de un nombre, «un poco de»: 一点水. Detrás de un verbo, «un poco»: 吃一点. Con 有 delante del adjetivo es una queja: 有点贵 «es un poco caro», frente a 贵一点 «un poco más caro». Lo contrario de 一点 es 很多.
+- ✅🃏 一点 yīdiǎn [i˥ tjɛn˧˩˧] · un poco (de una cantidad o de una cualidad) · _adverbio_ · Va detrás de un adjetivo para pedir «un poco más así»: 慢一点 «más despacio», 便宜一点 «más barato». «Un poco» de una acción es 一下: 等一下. · Delante de un nombre, «un poco de»: 一点水. Detrás de un verbo, «un poco»: 吃一点. Con 有 delante del adjetivo es una queja: 有点贵 «es un poco caro», frente a 贵一点 «un poco más caro». Lo contrario de 一点 es 很多. · 点 parece un dispensador de jabón soltando sus gotas: 一点, una dosis pequeña, «un poco». · 💡 Tres yi que se confunden: 一下 «un momento», detrás del verbo (你等一下); 一定 «seguro», delante (我一定来); 一点 «un poco», de cantidad (便宜一点).
 - ✅🃏 这样 zhèyàng [ʈʂɤ˥˩ jɑŋ˥˩] · así, de esta manera · _pronombre_ · 这样说对吗？ «¿se dice así?». 那样 nàyàng es «así, como eso».
 - ✅🃏 说话 shuōhuà [ʂwɔ˥ xwa˥˩] · hablar (con alguien) · _verbo_ · Palabra a palabra: 说 «decir» + 话 «palabras»: hablar, sin decir de qué. Con un idioma va 说 solo: 说中文. 别说话 «no hables», «calla».
 - ✅🃏 聊天 liáotiān [ljɑʊ˧˥ tʰjɛn˥] · charlar · _verbo_ · Palabra a palabra: 聊 «charlar» + 天 «cielo, día»: hablar del tiempo, de cualquier cosa. 跟你聊天 «charlar contigo».
@@ -22,6 +22,8 @@
 - ✅🃏 哦 ò [ɔ˥˩] · ¡ah!, ya veo · _interjección_
 - ✅🃏 看到 kàndào [kʰan˥˩ tɑʊ˥˩] · ver (llegar a ver) · _verbo_ · Palabra a palabra: 看 «mirar» + 到 «llegar»: mirar y conseguirlo. 我看到你了！ «¡te he visto!».
 - ✅🃏 听到 tīngdào [tʰiŋ˥ tɑʊ˥˩] · oír (llegar a oír) · _verbo_ · Como 看到: 听 «escuchar» + 到 «llegar». 你听到了吗？ «¿lo has oído?».
+- ✅🃏 可能 kěnéng [kʰɤ˧˩˧ nɤŋ˧˥] · quizá, puede que · _verbo_
+- ✅🃏 感觉 gǎnjué [kan˧˩˧ tɕɥœ˧˥] · sentir; sensación · _sustantivo_ · El mismo 觉 de 觉得: 我觉得 «creo, me parece»; 感觉 «siento, me siento». 感觉很好 «me siento bien».
 
 ## 话 huà y 花 huā
 
@@ -89,3 +91,10 @@ Solo los separa el tono.
 - ✅🃏 我有一个问题。 · wǒ yǒu yí ge wèntí · Tengo una pregunta.
 - ✅🃏 这个问题很难。 · zhè ge wèntí hěn nán · Esta pregunta es muy difícil.
 - ✅🃏 你在说什么？ · nǐ zài shuō shénme · ¿Qué estás diciendo?
+- ✅🃏 你能听懂我说的吗？ · nǐ néng tīng dǒng wǒ shuō de ma · ¿Entiendes lo que digo?
+- ✅🃏 我看不到你。 · wǒ kàn bu dào nǐ · No te veo.
+- ✅🃏 我觉得不是。 · wǒ juéde bú shì · Creo que no.
+- ✅🃏 好问题！ · hǎo wèntí · ¡Buena pregunta!
+- ✅🃏 我不知道怎么说。 · wǒ bù zhīdao zěnme shuō · No sé cómo decirlo.
+- ✅🃏 你觉得呢？ · nǐ juéde ne · ¿Y tú qué opinas?
+- ✅🃏 可能是这样。 · kěnéng shì zhèyàng · Puede que sea así.

@@ -384,3 +384,85 @@ sentences:
       - {text: 。}
     translation: {en: I do not have a car., es: No tengo coche.}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+  - id: s.wo-mingtian-qu-yiyuan
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: míngtiān, ref: w.mingtian, text: 明天}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: yīyuàn, ref: w.yiyuan, text: 医院}
+      - {text: 。}
+    translation: {en: Tomorrow I'm going to the hospital., es: Mañana voy al hospital.}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.wo-mingtian-qu-chaoshi-ni-gen-wo-qu-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: míngtiān, ref: w.mingtian, text: 明天}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: chāoshì, ref: w.chaoshi, text: 超市}
+      - {text: ，}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: gēn, ref: w.gen, text: 跟}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yìqǐ, ref: w.yiqi, sandhi: true, text: 一起}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Tomorrow I''m going to the supermarket; will you come with me?', es: 'Mañana voy al súper, ¿vienes conmigo?'}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.ni-shenme-shihou-huijia
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: shénme shíhou, ref: e.shenmeshihou, text: 什么时候}
+      - {pinyin: huíjiā, ref: w.huijia, text: 回家}
+      - {text: ？}
+    translation: {en: 'When are you going home?', es: '¿Cuándo vuelves a casa?'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.ni-shenme-shihou-hui-xibanya
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: shénme shíhou, ref: e.shenmeshihou, text: 什么时候}
+      - {pinyin: huí, ref: w.hui.return, text: 回}
+      - {pinyin: Xībānyá, ref: w.xibanya, text: 西班牙}
+      - {text: ？}
+    translation: {en: 'When are you going back to Spain?', es: '¿Cuándo vuelves a España?'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-mingtian-fei-beijing
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: míngtiān, ref: w.mingtian, text: 明天}
+      - {pinyin: fēi, ref: w.fei, text: 飞}
+      - {pinyin: Běijīng, ref: w.beijing, text: 北京}
+      - {text: 。}
+    translation: {en: Tomorrow I'm flying to Beijing., es: Mañana vuelo a Pekín.}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.huanying-laidao-zhongguo
+    use: hear
+    kind: formula
+    segments:
+      - {pinyin: huānyíng, ref: w.huanying, text: 欢迎}
+      - {pinyin: láidào, ref: w.laidao, text: 来到}
+      - {pinyin: Zhōngguó, ref: w.zhongguo, text: 中国}
+      - {text: ！}
+    translation: {en: Welcome to China!, es: ¡Bienvenido a China!}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.wo-xiang-hui-xibanya
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: huí, ref: w.hui.return, text: 回}
+      - {pinyin: Xībānyá, ref: w.xibanya, text: 西班牙}
+      - {text: 。}
+    translation: {en: I want to go back to Spain., es: Quiero volver a España.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}

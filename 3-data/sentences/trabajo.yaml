@@ -253,3 +253,142 @@ sentences:
       - {text: 。}
     translation: {en: 'Do not worry, I will handle it.', es: 'Descuida, me encargo yo.'}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.mingtian-wo-bu-qu-gongsi-zai-jia-gongzuo
+    use: say
+    kind: example
+    segments:
+      - {pinyin: míngtiān, ref: w.mingtian, text: 明天}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: bú, ref: w.bu, sandhi: true, text: 不}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: gōngsī, ref: w.gongsi, text: 公司}
+      - {text: ，}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: jiā, ref: w.jia, text: 家}
+      - {pinyin: gōngzuò, ref: w.gongzuo, text: 工作}
+      - {text: 。}
+    translation: {en: Tomorrow I'm not going to the office; I'm working from home., es: 'Mañana no voy a la oficina: trabajo desde casa.'}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.laoban-hao
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: lǎobǎn, ref: w.laoban, text: 老板}
+      - {pinyin: hǎo, ref: w.hao, text: 好}
+      - {text: ！}
+    translation: {en: 'Hello, boss!', es: '¡Hola, jefe! (al dueño de la tienda)'}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.ni-shi-zuo-shenme-gongzuo-de
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: zuò, ref: w.zuo.do, text: 做}
+      - {pinyin: shénme, ref: w.shenme, text: 什么}
+      - {pinyin: gōngzuò, ref: w.gongzuo, text: 工作}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {text: ？}
+    translation: {en: 'What do you do for a living?', es: '¿A qué te dedicas?'}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.dui-wo-hai-zai-xuexi-zhongwen
+    use: say
+    kind: example
+    segments:
+      - {pinyin: duì, ref: w.dui, text: 对}
+      - {text: ，}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: hái, ref: w.hai.still, text: 还}
+      - {pinyin: zài, ref: w.zai.progressive, text: 在}
+      - {pinyin: xuéxí, ref: w.xuexi, text: 学习}
+      - {pinyin: Zhōngwén, ref: w.zhongwen, text: 中文}
+      - {text: 。}
+    translation: {en: 'Yes, I''m still learning Chinese.', es: 'Sí, sigo estudiando chino.'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.dui-danshi-wo-hai-bu-tai-hui-shuo-zhongwen
+    use: say
+    kind: example
+    segments:
+      - {pinyin: duì, ref: w.dui, text: 对}
+      - {text: ，}
+      - {pinyin: dànshì, ref: w.danshi, text: 但是}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: hái, ref: w.hai.still, text: 还}
+      - {pinyin: bú, ref: w.bu, sandhi: true, text: 不}
+      - {pinyin: tài, ref: w.tai, text: 太}
+      - {pinyin: huì, ref: w.hui.can, text: 会}
+      - {pinyin: shuō, ref: w.shuo, text: 说}
+      - {pinyin: Zhōngwén, ref: w.zhongwen, text: 中文}
+      - {text: 。}
+    translation: {en: 'Yes, but I can''t speak Chinese very well yet.', es: 'Sí, pero todavía no hablo muy bien chino.'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.ni-hui-shuo-waiyu-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: huì, ref: w.hui.can, text: 会}
+      - {pinyin: shuō, ref: w.shuo, text: 说}
+      - {pinyin: wàiyǔ, ref: w.waiyu, text: 外语}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Do you speak any foreign languages?', es: '¿Hablas algún idioma extranjero?'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.ta-dedao-le-yi-ge-hao-gongzuo
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {pinyin: dédào, ref: w.dedao, text: 得到}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {pinyin: yí, ref: w.num.yi, sandhi: true, text: 一}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: hǎo, ref: w.hao, text: 好}
+      - {pinyin: gōngzuò, ref: w.gongzuo, text: 工作}
+      - {text: 。}
+    translation: {en: He got a good job., es: Ha conseguido un buen trabajo.}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.wo-ji-yixia
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: jì, ref: w.ji.note, text: 记}
+      - {pinyin: yíxià, ref: w.yixia, sandhi: true, text: 一下}
+      - {text: 。}
+    translation: {en: Let me write it down., es: Lo apunto.}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.jintian-wo-you-zhongwen-ke
+    use: say
+    kind: example
+    segments:
+      - {pinyin: jīntiān, ref: w.jintian, text: 今天}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yǒu, ref: w.you.have, text: 有}
+      - {pinyin: Zhōngwén, ref: w.zhongwen, text: 中文}
+      - {pinyin: kè, ref: w.ke.class, text: 课}
+      - {text: 。}
+    translation: {en: Today I have Chinese class., es: Hoy tengo clase de chino.}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.women-ji-dian-shangke
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒmen, ref: w.women, text: 我们}
+      - {pinyin: jǐ, ref: w.ji, text: 几}
+      - {pinyin: diǎn, ref: w.dian.oclock, text: 点}
+      - {pinyin: shàngkè, ref: w.shangke, text: 上课}
+      - {text: ？}
+    translation: {en: 'What time does class start?', es: '¿A qué hora empieza la clase?'}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.women-xiake-le
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: wǒmen, ref: w.women, text: 我们}
+      - {pinyin: xiàkè, ref: w.xiake, text: 下课}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: 。}
+    translation: {en: Class is over., es: Se ha acabado la clase.}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}

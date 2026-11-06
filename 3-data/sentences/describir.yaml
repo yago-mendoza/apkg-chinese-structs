@@ -1038,3 +1038,126 @@ sentences:
       - {text: 。}
     translation: {en: He is ill., es: Se ha puesto enfermo.}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+  - id: s.ni-gen-wo-yiqi-qu-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: gēn, ref: w.gen, text: 跟}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yìqǐ, ref: w.yiqi, sandhi: true, text: 一起}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Will you come with me?', es: '¿Vienes conmigo?'}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.na-ni-tai-can-le
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: nà, ref: w.na.then, text: 那}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: tài, ref: w.tai, text: 太}
+      - {pinyin: cǎn, ref: w.can, text: 惨}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: ！}
+    translation: {en: 'Poor you, then!', es: ¡Pues pobre de ti!}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.women-yiqi-zou-ba
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒmen, ref: w.women, text: 我们}
+      - {pinyin: yìqǐ, ref: w.yiqi, sandhi: true, text: 一起}
+      - {pinyin: zǒu, ref: w.zou, text: 走}
+      - {pinyin: ba, ref: w.ba.particle, text: 吧}
+      - {text: 。}
+    translation: {en: Let's go together., es: Vámonos juntos.}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.wo-changchang-shuo-zhongwen-ganjue-hen-hao
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: chángcháng, ref: w.changchang, text: 常常}
+      - {pinyin: shuō, ref: w.shuo, text: 说}
+      - {pinyin: Zhōngwén, ref: w.zhongwen, text: 中文}
+      - {text: ，}
+      - {pinyin: gǎnjué, ref: w.ganjue, text: 感觉}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: hǎo, ref: w.hao, text: 好}
+      - {text: 。}
+    translation: {en: 'I often speak Chinese, and it feels good.', es: Hablo chino a menudo y me siento bien.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.ni-xihuan-shenme-yanse
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: shénme, ref: w.shenme, text: 什么}
+      - {pinyin: yánsè, ref: w.yanse, text: 颜色}
+      - {text: ？}
+    translation: {en: 'What colour do you like?', es: '¿Qué color te gusta?'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-de-shouji-shi-heise-de
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: shǒujī, ref: w.shouji, text: 手机}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: hēisè, ref: w.heise, text: 黑色}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {text: 。}
+    translation: {en: My phone is black., es: Mi móvil es negro.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.zhongguoren-xihuan-hongse
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: Zhōngguó, ref: w.zhongguo, text: 中国}
+      - {pinyin: rén, ref: w.ren, text: 人}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: hóngsè, ref: w.hongse, text: 红色}
+      - {text: 。}
+    translation: {en: Chinese people like red., es: A los chinos les gusta el rojo.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.ta-gaoxing-de-zou-le
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {pinyin: gāoxìng, ref: w.gaoxing, text: 高兴}
+      - {pinyin: de, ref: w.de.adv, text: 地}
+      - {pinyin: zǒu, ref: w.zou, text: 走}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: 。}
+    translation: {en: He left happily., es: Se fue contento.}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.zhege-bao-hen-zhong
+    use: say
+    kind: example
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: bāo, ref: w.bao, text: 包}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: zhòng, ref: w.zhong.heavy, text: 重}
+      - {text: 。}
+    translation: {en: This bag is heavy., es: Esta bolsa pesa mucho.}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.yiyuan-li-you-hen-duo-bingren
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: yīyuàn, ref: w.yiyuan, text: 医院}
+      - {pinyin: lǐ, ref: w.li.inside, text: 里}
+      - {pinyin: yǒu, ref: w.you.have, text: 有}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: duō, ref: w.duo, text: 多}
+      - {pinyin: bìngrén, ref: w.bingren, text: 病人}
+      - {text: 。}
+    translation: {en: There are many patients in the hospital., es: En el hospital hay muchos enfermos.}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}

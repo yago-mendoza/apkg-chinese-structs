@@ -579,3 +579,25 @@ sentences:
       - {text: 。}
     translation: {en: I have already made the food myself; let us eat together., es: 'Ya he hecho la comida yo solo: comamos juntos.'}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-bu-he-kafei
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: bù, ref: w.bu, text: 不}
+      - {pinyin: hē, ref: w.he.drink, text: 喝}
+      - {pinyin: kāfēi, ref: w.kafei, text: 咖啡}
+      - {text: 。}
+    translation: {en: I don't drink coffee., es: No tomo café.}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.ni-xihuan-chi-shenme
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: chī, ref: w.chi, text: 吃}
+      - {pinyin: shénme, ref: w.shenme, text: 什么}
+      - {text: ？}
+    translation: {en: 'What do you like to eat?', es: '¿Qué te gusta comer?'}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}

@@ -987,3 +987,57 @@ sentences:
       - {text: 。}
     translation: {en: I want to have a shower first., es: Quiero ducharme primero.}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.zhe-dou-shi-ni-de-cuo
+    use: say
+    kind: example
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: dōu, ref: w.dou, text: 都}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: cuò, ref: w.cuo, text: 错}
+      - {text: 。}
+    translation: {en: This is all your fault., es: Todo esto es culpa tuya.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.men-kai-zhe
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: mén, ref: w.men, text: 门}
+      - {pinyin: kāi, ref: w.kai, text: 开}
+      - {pinyin: zhe, ref: w.zhe.dur, text: 着}
+      - {text: 。}
+    translation: {en: The door is open., es: La puerta está abierta.}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.wo-shenshang-meiyou-qian
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: shēnshang, ref: w.shenshang, text: 身上}
+      - {pinyin: méiyǒu, ref: w.meiyou, text: 没有}
+      - {pinyin: qián, ref: w.qian, text: 钱}
+      - {text: 。}
+    translation: {en: I have no money on me., es: No llevo dinero encima.}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.ni-zai-gan-shenme
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: zài, ref: w.zai.progressive, text: 在}
+      - {pinyin: gàn, ref: w.gan, text: 干}
+      - {pinyin: shénme, ref: w.shenme, text: 什么}
+      - {text: ？}
+    translation: {en: 'What are you doing?', es: '¿Qué haces?'}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.bie-dong
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: bié, ref: w.bie, text: 别}
+      - {pinyin: dòng, ref: w.dong.move, text: 动}
+      - {text: ！}
+    translation: {en: Don't move!, es: ¡No te muevas!}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}

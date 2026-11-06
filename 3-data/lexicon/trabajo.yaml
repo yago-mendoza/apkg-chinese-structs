@@ -244,3 +244,74 @@ entries:
       - {cue: '3.er tono, se hunde: 下雪', ref: w.xue.snow}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
     comments: []
+  - id: w.dedao
+    use: hear
+    role: content
+    kind: word
+    hanzi: 得到
+    pinyin: dédào
+    meaning: {es: 'conseguir, obtener', en: 'to get, to obtain'}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments: []
+  - id: w.ji.note
+    use: say
+    role: content
+    kind: word
+    hanzi: 记
+    pinyin: jì
+    meaning: {es: 'apuntar, anotar; recordar', en: to write down; to remember}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 'El 记 de 记得 «acordarse», 忘记 «olvidar» y 笔记 «apuntes»: 我记一下 «lo apunto».'}
+  - id: w.ke.class
+    use: say
+    role: content
+    kind: word
+    hanzi: 课
+    pinyin: kè
+    meaning: {es: 'clase, lección', en: 'class, lesson'}
+    connection: {kind: sound, with: [果], text: '果 guǒ da el sonido a 课 kè (hoy, lejos): con 讠 «palabra», la lección.'}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: '上课 «empezar la clase, ir a clase» y 下课 «acabar la clase»: arriba y abajo, como 上班 y 下班.'}
+  - id: w.shangke
+    use: say
+    role: content
+    kind: word
+    hanzi: 上课
+    pinyin: shàngkè
+    meaning: {es: 'dar clase, ir a clase; empezar la clase', en: to attend class; class begins}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments: []
+  - id: w.xiake
+    use: hear
+    role: content
+    kind: word
+    hanzi: 下课
+    pinyin: xiàkè
+    meaning: {es: acabar la clase, en: class is over}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments: []
+  - id: w.laoban
+    use: say
+    use_reason: 'de clase y de todos los días: así se llama al dueño de una tienda o un restaurante'
+    role: content
+    kind: word
+    hanzi: 老板
+    pinyin: lǎobǎn
+    meaning: {es: jefe; dueño (de una tienda o un restaurante), en: boss; shop owner}
+    connection: {kind: sound, with: [饭], text: '反 fǎn da el sonido a 板 bǎn y a 饭 fàn: con 木 «madera», una tabla; con 饣 «comida», la comida.'}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: usage, private: false, text: 'En una tienda o un restaurante pequeño, al dueño se le llama 老板: 老板，多少钱？.'}
+      - {date: '2026-11-06', kind: teacher, private: false, text: 'En los deberes del 6, 老板好 para leer en voz alta.'}
+  - id: w.waiyu
+    use: say
+    role: content
+    kind: word
+    hanzi: 外语
+    pinyin: wàiyǔ
+    meaning: {es: lengua extranjera, en: foreign language}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: '外 «de fuera» + 语 «lengua»: como 外国 «país de fuera», el extranjero.'}

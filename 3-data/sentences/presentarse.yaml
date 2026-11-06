@@ -1467,3 +1467,60 @@ sentences:
       - {text: 。}
     translation: {en: Let me introduce you., es: Os presento.}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.ni-mingtian-qu-beijing-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: míngtiān, ref: w.mingtian, text: 明天}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: Běijīng, ref: w.beijing, text: 北京}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Are you going to Beijing tomorrow?', es: '¿Vas mañana a Pekín?'}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.ta-xianzai-zai-meiguo
+    use: say
+    kind: example
+    segments:
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {pinyin: xiànzài, ref: w.xianzai, text: 现在}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: Měiguó, ref: w.meiguo, text: 美国}
+      - {text: 。}
+    translation: {en: He's in the US now., es: Ahora está en Estados Unidos.}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.nihao-wo-jiao-mengyichen-shi-gongchengshi
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ hǎo, ref: e.nihao, text: 你好}
+      - {text: ，}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: jiào, ref: w.jiao, text: 叫}
+      - {pinyin: Mèng Yìchén, ref: w.mengyichen, text: 孟逸辰}
+      - {text: ，}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: gōngchéngshī, ref: w.gongchengshi, text: 工程师}
+      - {text: 。}
+    translation: {en: 'Hi, I''m Mèng Yìchén, and I''m an engineer.', es: 'Hola, me llamo Mèng Yìchén y soy ingeniero.'}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.renshi-ni-hen-gaoxing-ni-shi-zuo-shenme-gongzuo-de
+    use: say
+    kind: example
+    segments:
+      - {pinyin: rènshi, ref: w.renshi, text: 认识}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: gāoxìng, ref: w.gaoxing, text: 高兴}
+      - {text: ，}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: zuò, ref: w.zuo.do, text: 做}
+      - {pinyin: shénme, ref: w.shenme, text: 什么}
+      - {pinyin: gōngzuò, ref: w.gongzuo, text: 工作}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {text: ？}
+    translation: {en: 'Nice to meet you. What do you do?', es: 'Encantado de conocerte. ¿A qué te dedicas?'}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}

@@ -53,6 +53,7 @@
 - ✅🃏 介绍 jièshào [tɕjɛ˥˩ ʂɑʊ˥˩] · presentar (a alguien) · _verbo_ · 我介绍一下 «os presento»: antes de decir quién es alguien o quién eres tú. · 介 parece una persona entre otras dos, y 绍 lleva el hilo 纟: presentar es unir a dos personas con un hilo.
 - ✅🃏 孟 Mèng [mɤŋ˥˩] · Mèng (tu apellido en chino) · _nombre propio_ · Un apellido chino de verdad, el de Mencio, 孟子 Mèngzǐ. Se dice 我姓孟 «me apellido Mèng».
 - ✅🃏 孟逸辰 Mèng Yìchén [mɤŋ˥˩ i˥˩ ʈʂʰən˧˥] · Mèng Yìchén (tu nombre en chino) · _nombre propio_ · Primero el apellido, 孟 Mèng, y luego el nombre, 逸辰 Yìchén: 逸 «sosegado, libre» y 辰 «los astros; la hora». Suena moderno y natural.
+- ✅🃏 上海 Shànghǎi [ʂɑŋ˥˩ xaɪ˧˩˧] · Shanghái · _nombre propio_
 
 ## 是 shì y 十 shí
 
@@ -210,3 +211,7 @@ Misma sílaba, distinto tono.
 - ✅🃏 我(是)二零零零年出生(的)，属龙。 · wǒ shì èr líng líng líng nián chūshēng de shǔ lóng · Nací en 2000: soy del año del dragón.
 - ✅🃏 我想住在中国。 · wǒ xiǎng zhù zài Zhōngguó · Quiero vivir en China.
 - ✅🃏 我来介绍一下。 · wǒ lái jièshào yíxià · Os presento.
+- ✅🃏 你明天去北京吗？ · nǐ míngtiān qù Běijīng ma · ¿Vas mañana a Pekín?
+- ✅🃏 他现在在美国。 · tā xiànzài zài Měiguó · Ahora está en Estados Unidos.
+- ✅🃏 你好，我叫孟逸辰，我是工程师。 · nǐ hǎo wǒ jiào Mèng Yìchén wǒ shì gōngchéngshī · Hola, me llamo Mèng Yìchén y soy ingeniero.
+- ✅🃏 认识你很高兴，你是做什么工作的？ · rènshi nǐ hěn gāoxìng nǐ shì zuò shénme gōngzuò de · Encantado de conocerte. ¿A qué te dedicas?

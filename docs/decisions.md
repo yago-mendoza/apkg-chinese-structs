@@ -449,3 +449,11 @@ Una revisión vio que `5-output/chino-practico.apkg` crecía unos 7 MB por lote 
 ### 2026-11-01 · El orden de nuevas lo pone un complemento propio
 
 La versión de AnkiConnect instalada el 16 de octubre se niega a cambiar la posición de una tarjeta («Use native scheduling commands for protected state») y no tiene ninguna acción para recolocar nuevas. `push` no miraba la respuesta de cada acción de un `multi`, así que decía «2111 recolocadas» y no se movía ninguna: desde entonces el orden de nuevas (lo de clase primero, nivel a nivel, mezclado) no llegaba a Anki, y 351 nuevas estaban en la posición 0, delante de todo. Decidido: un complemento del repositorio (`tools/anki-order`, instalado como `chino_practico_order`) pone las posiciones con el código de Anki; `push` se las pasa por un archivo, espera su respuesta y dice si falta o si rechazó algo. El complemento solo toca la posición de nuevas de este mazo. Y toda llamada `multi` mira ya cada respuesta (`anki_multi`). El primer orden de verdad se aplica en el próximo lote, con el móvil sincronizado: recolocar las 2111 marca esas tarjetas como modificadas. Vive en: `docs/design.md` («Anki»), `docs/owner.md`, `anki.py` (`reposition_new_cards`, `anki_multi`), `tools/anki-order/`.
+
+### 2026-11-06 · En un contraste, cada opción con su frase
+
+YAGO, en el review 015, sobre #912EZ (el contraste de 进 / 近 / 今 / 斤): «cards como esta deberían tener ejemplos acordes, no de una sola». El reverso traía la frase de una sola pareja, la que tocaba por el ID; las demás filas, ninguna, porque 今 y 近 no tienen frases propias (se usan en 今年, 最近). Decidido: en su propia tarjeta de contraste, cada opción lleva una frase en su fila; si no tiene frases propias, una de una palabra del mazo que la lleva; nunca de un nivel superior ni con la respuesta dentro, que la delataría. En las demás tarjetas sigue una sola pareja, para no convertir el reverso en una lista. Vive en: `docs/design.md` («Integración de lo nuevo», «Garantías»), `anki.py` (`member_examples`).
+
+### 2026-11-06 · Ver el tono en color, confirmado
+
+La retrospectiva del lote 016 cierra la hipótesis: las tarjetas de tonos fallan un 9 % (34 % en el lote 014, 44 % en el 013) y decir, un 16 % (64 % en el lote 011). La regla no cambia; la hipótesis pasa a confirmada. Vive en: `docs/hypotheses.md`, `docs/goal.md` («Los tonos, también por color»).

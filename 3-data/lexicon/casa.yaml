@@ -265,6 +265,7 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Dónde se vive o se duerme: 你住在哪里？ «¿dónde vives?». Para «vivir» en el sentido de la vida, 生活 [HSK 2].'}
+      - {date: '2026-11-06', kind: tip, private: false, text: '住 + tiempo: 我住三天 «me quedo tres días». 住在 + sitio: 我住在北京. Los dos a la vez: 我在北京住两天 «me quedo dos días en Pekín».'}
   - id: w.chuan.wear
     use: say
     role: content
@@ -339,3 +340,38 @@ entries:
     comments:
       - {date: '2026-10-31', kind: mnemonic, original: Xî es lavar por eso el habzi parece la boca de un aspersor echando agua, private: false, text: 洗 parece la boca de un aspersor echando agua.}
       - {date: '2026-10-31', kind: linguistic, private: false, text: '洗手 «lavarse las manos», 洗澡 «ducharse», 洗衣服 «lavar la ropa». No confundir con el xǐ de 喜欢: suena igual, pero es la alegría.'}
+  - id: w.jiali
+    use: say
+    role: content
+    kind: word
+    hanzi: 家里
+    pinyin: jiāli
+    meaning: {es: en casa, en: at home}
+    accept_pinyin_mismatch: 里 es átono en el habla
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: '家里 es «en casa», dentro: 家里有人吗？ «¿hay alguien en casa?».'}
+  - id: w.yusan
+    use: hear
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 雨伞
+    pinyin: yǔsǎn
+    meaning: {es: paraguas, en: umbrella}
+    level: 3
+    level_reason: no está en la lista; de todos los días, y 雨 «lluvia» es HSK 1
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: '雨 «lluvia» + 伞 «paraguas»: 伞 es un paraguas abierto dibujado.'}
+  - id: w.qichuang
+    use: say
+    role: content
+    kind: word
+    hanzi: 起床
+    pinyin: qǐchuáng
+    meaning: {es: levantarse (de la cama), en: to get up}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: teacher, private: false, text: 'La pregunta que más marcó: 你每天几点起床？ «¿a qué hora te levantas cada día?».'}
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 起 «levantarse» + 床 «cama». El mismo 起 de 一起 y de 对不起.}

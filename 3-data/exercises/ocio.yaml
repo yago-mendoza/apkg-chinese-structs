@@ -380,3 +380,71 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Quiero aprender a nadar.»'}
     answer: {meaning: Quiero aprender a nadar.}
     comments: []
+  - id: x.compose.quedar-manana
+    added: '2026-11-06'
+    lang: es
+    type: compose
+    targets: [s.ni-mingtian-you-shijian-ma-qu-youyong, s.wo-mingtian-qu-chaoshi-ni-gen-wo-qu-ma, s.women-mingtian-qu-zenmeyang]
+    words: [w.mingtian, w.yiqi, w.qu, w.bu, w.shijian]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. Llamas a un amigo: pregúntale si tiene tiempo y proponle ir juntos a algún sitio.'}
+    answer: {meaning: Tres formas de proponer un plan.}
+    comments: []
+  - id: x.produce.youyong
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.youyong]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «nadar»? Escribe el pinyin.'}
+    answer: {typed: you2 yong3, hanzi: 游泳, pinyin: yóuyǒng, meaning: nadar}
+    comments: []
+  - id: x.listen.ni-mingtian-you-shijian-ma-qu-youyong
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.ni-mingtian-you-shijian-ma-qu-youyong
+    targets: [s.ni-mingtian-you-shijian-ma-qu-youyong]
+    context: [w.ni, w.mingtian, w.you.have, w.shijian, w.ma, w.women, w.yiqi, w.qu, w.youyong, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Tienes tiempo mañana? ¡Vamos a nadar juntos!'}
+    comments: []
+  - id: x.produce.ni-mingtian-you-shijian-ma-qu-youyong
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-mingtian-you-shijian-ma-qu-youyong
+    targets: [s.ni-mingtian-you-shijian-ma-qu-youyong]
+    context: [w.ni, w.mingtian, w.you.have, w.shijian, w.ma, w.women, w.yiqi, w.qu, w.youyong, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Tienes tiempo mañana? ¡Vamos a nadar juntos!»'}
+    answer: {meaning: '¿Tienes tiempo mañana? ¡Vamos a nadar juntos!'}
+    comments: []
+  - id: x.dictation.zhoumo
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.zhoumo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhou1 mo4, hanzi: 周末, pinyin: zhōumò, meaning: fin de semana}
+    comments: []
+  - id: x.produce.zhoumo
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.zhoumo]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «fin de semana»? Escribe el pinyin.'}
+    answer: {typed: zhou1 mo4, hanzi: 周末, pinyin: zhōumò, meaning: fin de semana}
+    comments: []
+  - id: x.read.zhoumo
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.zhoumo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 周末}
+    answer: {hanzi: 周末, pinyin: zhōumò, meaning: fin de semana}
+    comments: []

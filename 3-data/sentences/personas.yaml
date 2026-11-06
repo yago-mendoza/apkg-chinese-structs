@@ -370,3 +370,92 @@ sentences:
       - {text: 。}
     translation: {en: 'I live alone, and today I want to go out for a bit.', es: 'Vivo solo, y hoy quiero salir un rato.'}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.ta-shi-wo-de-shiyou
+    use: say
+    kind: example
+    segments:
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: shìyǒu, ref: w.shiyou, text: 室友}
+      - {text: 。}
+    translation: {en: He is my roommate., es: Es mi compañero de piso.}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.dajia-dou-xihuan-he-cha
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: dàjiā, ref: w.dajia, text: 大家}
+      - {pinyin: dōu, ref: w.dou, text: 都}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: hē, ref: w.he.drink, text: 喝}
+      - {pinyin: chá, ref: w.cha, text: 茶}
+      - {text: 。}
+    translation: {en: Everyone likes tea., es: A todos les gusta el té.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-you-pengyou-danshi-tamen-bu-zai-zheli
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yǒu, ref: w.you.have, text: 有}
+      - {pinyin: péngyou, ref: w.pengyou, text: 朋友}
+      - {text: ，}
+      - {pinyin: dànshì, ref: w.danshi, text: 但是}
+      - {pinyin: tāmen, ref: w.tamen, text: 他们}
+      - {pinyin: bú, ref: w.bu, sandhi: true, text: 不}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: zhèlǐ, ref: w.zheli, text: 这里}
+      - {text: 。}
+    translation: {en: 'I have friends, but they''re not here.', es: 'Tengo amigos, pero no están aquí.'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-gei-ni-da-dianhua
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: gěi, ref: w.gei.to, text: 给}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: dǎ diànhuà, ref: w.dadianhua, text: 打电话}
+      - {text: 。}
+    translation: {en: I'll call you., es: Te llamo (por teléfono).}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.nage-nanren-shi-shei
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nà, ref: w.na.that, text: 那}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: nánrén, ref: w.nanren, text: 男人}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: shéi, ref: w.shei, text: 谁}
+      - {text: ？}
+    translation: {en: 'Who is that man?', es: '¿Quién es ese hombre?'}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.nage-nvren-shi-wo-de-laoshi
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: nà, ref: w.na.that, text: 那}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: nǚrén, ref: w.nvren, text: 女人}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: lǎoshī, ref: w.laoshi, text: 老师}
+      - {text: 。}
+    translation: {en: That woman is my teacher., es: Esa mujer es mi profesora.}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.tamen-shi-wo-de-pengyou.she
+    use: say
+    kind: example
+    segments:
+      - {pinyin: tāmen, ref: w.tamen.she, text: 她们}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: péngyou, ref: w.pengyou, text: 朋友}
+      - {text: 。}
+    translation: {en: They're my friends., es: Son mis amigas.}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}

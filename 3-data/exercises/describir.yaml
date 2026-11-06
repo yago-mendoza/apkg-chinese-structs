@@ -3052,42 +3052,6 @@ exercises:
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 有的, pinyin: you de}
     answer: {typed: '35', hanzi: 有的, pinyin: yǒude, meaning: 'algunos, unos (… otros)'}
     comments: []
-  - id: x.dictation.baise
-    added: 2026-10-31
-    lang: es
-    type: listen
-    targets: [w.baise]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: bai2 se4, hanzi: 白色, pinyin: báisè, meaning: blanco (el color)}
-    comments: []
-  - id: x.read.baise
-    added: 2026-10-31
-    lang: es
-    type: read
-    targets: [w.baise]
-    skills: [reading, pinyin]
-    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 白色}
-    answer: {hanzi: 白色, pinyin: báisè, meaning: blanco (el color)}
-    comments: []
-  - id: x.dictation.lvse
-    added: 2026-10-31
-    lang: es
-    type: listen
-    targets: [w.lvse]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: lü4 se4, hanzi: 绿色, pinyin: lǜsè, meaning: verde}
-    comments: []
-  - id: x.read.lvse
-    added: 2026-10-31
-    lang: es
-    type: read
-    targets: [w.lvse]
-    skills: [reading, pinyin]
-    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 绿色}
-    answer: {hanzi: 绿色, pinyin: lǜsè, meaning: verde}
-    comments: []
   - id: x.produce.youde-ren-xihuan-cha
     added: 2026-10-31
     lang: es
@@ -3176,15 +3140,6 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¡Eres el mejor!»'}
     answer: {meaning: ¡Eres el mejor!}
     comments: []
-  - id: x.charsound.se
-    added: 2026-10-31
-    lang: es
-    type: charsound
-    targets: [w.baise, w.lvse]
-    skills: [reading, pinyin, tones]
-    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 色}
-    answer: {typed: se4, hanzi: 色, pinyin: sè, meaning: 'Sale en 白色 báisè «blanco (el color)», 绿色 lǜsè «verde».'}
-    comments: []
   - id: x.dictation.bing
     added: 2026-10-31
     lang: es
@@ -3222,4 +3177,223 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Se ha puesto enfermo.»'}
     answer: {meaning: Se ha puesto enfermo.}
+    comments: []
+  - id: x.cloze.yi.xia-ding-dian.b
+    added: '2026-11-06'
+    lang: es
+    type: cloze
+    sentence: s.wo-yiding-gen-ni-yiqi-qu
+    gap: w.yiding
+    targets: [w.yiding]
+    context: [w.wo, w.gen, w.ni, w.yiqi, w.qu]
+    skills: [production, pinyin]
+    prompt: {text: '¿一下, 一定 o 一点? Completa en pinyin: «Seguro que voy contigo.»'}
+    answer: {hanzi: 一定, meaning: 'seguro, sin falta', pinyin: yídìng, typed: yi2 ding4}
+    comments: []
+  - id: x.dictation.zhong.heavy
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.zhong.heavy]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhong4, hanzi: 重, pinyin: zhòng, meaning: pesado}
+    comments: []
+  - id: x.produce.zhong.heavy
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.zhong.heavy]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «pesado»? Escribe el pinyin.'}
+    answer: {typed: zhong4, hanzi: 重, pinyin: zhòng, meaning: pesado}
+    comments: []
+  - id: x.read.zhong.heavy
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.zhong.heavy]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 重}
+    answer: {hanzi: 重, pinyin: zhòng, meaning: pesado}
+    comments: []
+  - id: x.dictation.can
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.can]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: can3, hanzi: 惨, pinyin: cǎn, meaning: terrible; pobre de ti (qué mala suerte)}
+    comments: []
+  - id: x.produce.can
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.can]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «terrible; pobre de ti (qué mala suerte)»? Escribe el pinyin.'}
+    answer: {typed: can3, hanzi: 惨, pinyin: cǎn, meaning: terrible; pobre de ti (qué mala suerte)}
+    comments: []
+  - id: x.read.can
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.can]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 惨}
+    answer: {hanzi: 惨, pinyin: cǎn, meaning: terrible; pobre de ti (qué mala suerte)}
+    comments: []
+  - id: x.listen.ni-gen-wo-yiqi-qu-ma
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.ni-gen-wo-yiqi-qu-ma
+    targets: [s.ni-gen-wo-yiqi-qu-ma]
+    context: [w.ni, w.gen, w.wo, w.yiqi, w.qu, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Vienes conmigo?'}
+    comments: []
+  - id: x.produce.ni-gen-wo-yiqi-qu-ma
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-gen-wo-yiqi-qu-ma
+    targets: [s.ni-gen-wo-yiqi-qu-ma]
+    context: [w.ni, w.gen, w.wo, w.yiqi, w.qu, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Vienes conmigo?»'}
+    answer: {meaning: '¿Vienes conmigo?'}
+    comments: []
+  - id: x.listen.na-ni-tai-can-le
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.na-ni-tai-can-le
+    targets: [s.na-ni-tai-can-le]
+    context: [w.na.then, w.ni, w.tai, w.can, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Pues pobre de ti!}
+    comments: []
+  - id: x.produce.na-ni-tai-can-le
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.na-ni-tai-can-le
+    targets: [s.na-ni-tai-can-le]
+    context: [w.na.then, w.ni, w.tai, w.can, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Pues pobre de ti!»'}
+    answer: {meaning: ¡Pues pobre de ti!}
+    comments: []
+  - id: x.listen.women-yiqi-zou-ba
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.women-yiqi-zou-ba
+    targets: [s.women-yiqi-zou-ba]
+    context: [w.women, w.yiqi, w.zou, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Vámonos juntos.}
+    comments: []
+  - id: x.produce.women-yiqi-zou-ba
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.women-yiqi-zou-ba
+    targets: [s.women-yiqi-zou-ba]
+    context: [w.women, w.yiqi, w.zou, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Vámonos juntos.»'}
+    answer: {meaning: Vámonos juntos.}
+    comments: []
+  - id: x.produce.wo-changchang-shuo-zhongwen-ganjue-hen-hao
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-changchang-shuo-zhongwen-ganjue-hen-hao
+    targets: [s.wo-changchang-shuo-zhongwen-ganjue-hen-hao]
+    context: [w.wo, w.changchang, w.shuo, w.zhongwen, w.ganjue, w.hen, w.hao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hablo chino a menudo y me siento bien.»'}
+    answer: {meaning: Hablo chino a menudo y me siento bien.}
+    comments: []
+  - id: x.produce.ni-xihuan-shenme-yanse
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-xihuan-shenme-yanse
+    targets: [s.ni-xihuan-shenme-yanse]
+    context: [w.ni, w.xihuan, w.shenme, w.yanse]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué color te gusta?»'}
+    answer: {meaning: '¿Qué color te gusta?'}
+    comments: []
+  - id: x.listen.wo-de-shouji-shi-heise-de
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.wo-de-shouji-shi-heise-de
+    targets: [s.wo-de-shouji-shi-heise-de]
+    context: [w.wo, w.de, w.shouji, w.shi, w.heise]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mi móvil es negro.}
+    comments: []
+  - id: x.listen.zhongguoren-xihuan-hongse
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.zhongguoren-xihuan-hongse
+    targets: [s.zhongguoren-xihuan-hongse]
+    context: [w.zhongguo, w.ren, w.xihuan, w.hongse]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: A los chinos les gusta el rojo.}
+    comments: []
+  - id: x.listen.ta-gaoxing-de-zou-le
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.ta-gaoxing-de-zou-le
+    targets: [s.ta-gaoxing-de-zou-le]
+    context: [w.ta.he, w.gaoxing, w.de.adv, w.zou, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Se fue contento.}
+    comments: []
+  - id: x.produce.zhege-bao-hen-zhong
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.zhege-bao-hen-zhong
+    targets: [s.zhege-bao-hen-zhong]
+    context: [w.zhe, w.ge, w.bao, w.hen, w.zhong.heavy]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Esta bolsa pesa mucho.»'}
+    answer: {meaning: Esta bolsa pesa mucho.}
+    comments: []
+  - id: x.listen.yiyuan-li-you-hen-duo-bingren
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.yiyuan-li-you-hen-duo-bingren
+    targets: [s.yiyuan-li-you-hen-duo-bingren]
+    context: [w.yiyuan, w.li.inside, w.you.have, w.hen, w.duo, w.bingren]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: En el hospital hay muchos enfermos.}
+    comments: []
+  - id: x.contrast.zhong.heavy
+    added: 2026-11-06
+    lang: es
+    type: contrast
+    group: g.zhong-zhong
+    targets: [w.zhong.heavy]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 重, pinyin: zhòng, meaning: pesado}
     comments: []

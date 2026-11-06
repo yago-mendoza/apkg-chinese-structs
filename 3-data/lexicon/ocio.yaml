@@ -101,7 +101,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Préstamo por el sonido del francés ballet.'}
   - id: w.youyong
-    use: hear
+    use: say
     role: content
     kind: word
     hanzi: 游泳
@@ -141,3 +141,13 @@ entries:
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
     comments:
       - {date: '2026-10-31', kind: linguistic, private: false, text: 'Palabra a palabra: 唱 «cantar» + 歌 «canción». Como 吃饭, lleva su objeto dentro: 唱一首歌 «cantar una canción».'}
+  - id: w.zhoumo
+    use: say
+    role: content
+    kind: word
+    hanzi: 周末
+    pinyin: zhōumò
+    meaning: {es: fin de semana, en: weekend}
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: '周 «semana» + 末 «final»: el final de la semana.'}

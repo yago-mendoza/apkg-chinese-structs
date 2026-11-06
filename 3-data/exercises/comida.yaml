@@ -1499,3 +1499,57 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 水, pinyin: shuǐ, meaning: agua}
     comments: []
+  - id: x.listen.wo-bu-he-kafei
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.wo-bu-he-kafei
+    targets: [s.wo-bu-he-kafei]
+    context: [w.wo, w.bu, w.he.drink, w.kafei]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No tomo café.}
+    comments: []
+  - id: x.produce.wo-bu-he-kafei
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-bu-he-kafei
+    targets: [s.wo-bu-he-kafei]
+    context: [w.wo, w.bu, w.he.drink, w.kafei]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No tomo café.»'}
+    answer: {meaning: No tomo café.}
+    comments: []
+  - id: x.listen.ni-xihuan-chi-shenme
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.ni-xihuan-chi-shenme
+    targets: [s.ni-xihuan-chi-shenme]
+    context: [w.ni, w.xihuan, w.chi, w.shenme]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Qué te gusta comer?'}
+    comments: []
+  - id: x.produce.ni-xihuan-chi-shenme
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-xihuan-chi-shenme
+    targets: [s.ni-xihuan-chi-shenme]
+    context: [w.ni, w.xihuan, w.chi, w.shenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué te gusta comer?»'}
+    answer: {meaning: '¿Qué te gusta comer?'}
+    comments: []
+  - id: x.contrast.cha
+    added: 2026-11-06
+    lang: es
+    type: contrast
+    group: g.cha-cha
+    targets: [w.cha]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 茶, pinyin: chá, meaning: té}
+    comments: []

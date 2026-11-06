@@ -918,3 +918,358 @@ exercises:
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 理}
     answer: {typed: li3, hanzi: 理, pinyin: lǐ, meaning: 'Sale en 经理 jīnglǐ «jefe, gerente», 处理 chǔlǐ «encargarse de, resolver».'}
     comments: []
+  - id: x.dictation.dedao
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.dedao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: de2 dao4, hanzi: 得到, pinyin: dédào, meaning: 'conseguir, obtener'}
+    comments: []
+  - id: x.read.dedao
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.dedao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 得到}
+    answer: {hanzi: 得到, pinyin: dédào, meaning: 'conseguir, obtener'}
+    comments: []
+  - id: x.dictation.ji.note
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.ji.note]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ji4, hanzi: 记, pinyin: jì, meaning: 'apuntar, anotar; recordar'}
+    comments: []
+  - id: x.produce.ji.note
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.ji.note]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «apuntar, anotar; recordar»? Escribe el pinyin.'}
+    answer: {typed: ji4, hanzi: 记, pinyin: jì, meaning: 'apuntar, anotar; recordar'}
+    comments: []
+  - id: x.read.ji.note
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.ji.note]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 记}
+    answer: {hanzi: 记, pinyin: jì, meaning: 'apuntar, anotar; recordar'}
+    comments: []
+  - id: x.dictation.ke.class
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.ke.class]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ke4, hanzi: 课, pinyin: kè, meaning: 'clase, lección'}
+    comments: []
+  - id: x.produce.ke.class
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.ke.class]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «clase, lección»? Escribe el pinyin.'}
+    answer: {typed: ke4, hanzi: 课, pinyin: kè, meaning: 'clase, lección'}
+    comments: []
+  - id: x.read.ke.class
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.ke.class]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 课}
+    answer: {hanzi: 课, pinyin: kè, meaning: 'clase, lección'}
+    comments: []
+  - id: x.dictation.shangke
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.shangke]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shang4 ke4, hanzi: 上课, pinyin: shàngkè, meaning: 'dar clase, ir a clase; empezar la clase'}
+    comments: []
+  - id: x.produce.shangke
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.shangke]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «dar clase, ir a clase; empezar la clase»? Escribe el pinyin.'}
+    answer: {typed: shang4 ke4, hanzi: 上课, pinyin: shàngkè, meaning: 'dar clase, ir a clase; empezar la clase'}
+    comments: []
+  - id: x.read.shangke
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.shangke]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 上课}
+    answer: {hanzi: 上课, pinyin: shàngkè, meaning: 'dar clase, ir a clase; empezar la clase'}
+    comments: []
+  - id: x.dictation.xiake
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.xiake]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xia4 ke4, hanzi: 下课, pinyin: xiàkè, meaning: acabar la clase}
+    comments: []
+  - id: x.read.xiake
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.xiake]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 下课}
+    answer: {hanzi: 下课, pinyin: xiàkè, meaning: acabar la clase}
+    comments: []
+  - id: x.dictation.laoban
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.laoban]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lao3 ban3, hanzi: 老板, pinyin: lǎobǎn, meaning: jefe; dueño (de una tienda o un restaurante)}
+    comments: []
+  - id: x.produce.laoban
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.laoban]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «jefe; dueño (de una tienda o un restaurante)»? Escribe el pinyin.'}
+    answer: {typed: lao3 ban3, hanzi: 老板, pinyin: lǎobǎn, meaning: jefe; dueño (de una tienda o un restaurante)}
+    comments: []
+  - id: x.read.laoban
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.laoban]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 老板}
+    answer: {hanzi: 老板, pinyin: lǎobǎn, meaning: jefe; dueño (de una tienda o un restaurante)}
+    comments: []
+  - id: x.tones.laoban
+    added: 2026-11-06
+    lang: es
+    type: tones
+    targets: [w.laoban]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 老板, pinyin: lao ban}
+    answer: {typed: '33', hanzi: 老板, pinyin: lǎobǎn, meaning: jefe; dueño (de una tienda o un restaurante)}
+    comments: []
+  - id: x.dictation.waiyu
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.waiyu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wai4 yu3, hanzi: 外语, pinyin: wàiyǔ, meaning: lengua extranjera}
+    comments: []
+  - id: x.produce.waiyu
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.waiyu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «lengua extranjera»? Escribe el pinyin.'}
+    answer: {typed: wai4 yu3, hanzi: 外语, pinyin: wàiyǔ, meaning: lengua extranjera}
+    comments: []
+  - id: x.read.waiyu
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.waiyu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 外语}
+    answer: {hanzi: 外语, pinyin: wàiyǔ, meaning: lengua extranjera}
+    comments: []
+  - id: x.listen.mingtian-wo-bu-qu-gongsi-zai-jia-gongzuo
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.mingtian-wo-bu-qu-gongsi-zai-jia-gongzuo
+    targets: [s.mingtian-wo-bu-qu-gongsi-zai-jia-gongzuo]
+    context: [w.mingtian, w.wo, w.bu, w.qu, w.gongsi, w.zai.at, w.jia, w.gongzuo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Mañana no voy a la oficina: trabajo desde casa.'}
+    comments: []
+  - id: x.produce.mingtian-wo-bu-qu-gongsi-zai-jia-gongzuo
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.mingtian-wo-bu-qu-gongsi-zai-jia-gongzuo
+    targets: [s.mingtian-wo-bu-qu-gongsi-zai-jia-gongzuo]
+    context: [w.mingtian, w.wo, w.bu, w.qu, w.gongsi, w.zai.at, w.jia, w.gongzuo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mañana no voy a la oficina: trabajo desde casa.»'}
+    answer: {meaning: 'Mañana no voy a la oficina: trabajo desde casa.'}
+    comments: []
+  - id: x.listen.laoban-hao
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.laoban-hao
+    targets: [s.laoban-hao]
+    context: [w.laoban, w.hao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Hola, jefe! (al dueño de la tienda)'}
+    comments: []
+  - id: x.produce.laoban-hao
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.laoban-hao
+    targets: [s.laoban-hao]
+    context: [w.laoban, w.hao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Hola, jefe! (al dueño de la tienda)»'}
+    answer: {meaning: '¡Hola, jefe! (al dueño de la tienda)'}
+    comments: []
+  - id: x.listen.ni-shi-zuo-shenme-gongzuo-de
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.ni-shi-zuo-shenme-gongzuo-de
+    targets: [s.ni-shi-zuo-shenme-gongzuo-de]
+    context: [w.ni, w.shi, w.zuo.do, w.shenme, w.gongzuo, w.de]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿A qué te dedicas?'}
+    comments: []
+  - id: x.produce.ni-shi-zuo-shenme-gongzuo-de
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-shi-zuo-shenme-gongzuo-de
+    targets: [s.ni-shi-zuo-shenme-gongzuo-de]
+    context: [w.ni, w.shi, w.zuo.do, w.shenme, w.gongzuo, w.de]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿A qué te dedicas?»'}
+    answer: {meaning: '¿A qué te dedicas?'}
+    comments: []
+  - id: x.produce.dui-wo-hai-zai-xuexi-zhongwen
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.dui-wo-hai-zai-xuexi-zhongwen
+    targets: [s.dui-wo-hai-zai-xuexi-zhongwen]
+    context: [w.dui, w.wo, w.hai.still, w.zai.progressive, w.xuexi, w.zhongwen]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Sí, sigo estudiando chino.»'}
+    answer: {meaning: 'Sí, sigo estudiando chino.'}
+    comments: []
+  - id: x.produce.dui-danshi-wo-hai-bu-tai-hui-shuo-zhongwen
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.dui-danshi-wo-hai-bu-tai-hui-shuo-zhongwen
+    targets: [s.dui-danshi-wo-hai-bu-tai-hui-shuo-zhongwen]
+    context: [w.dui, w.danshi, w.wo, w.hai.still, w.bu, w.tai, w.hui.can, w.shuo, w.zhongwen]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Sí, pero todavía no hablo muy bien chino.»'}
+    answer: {meaning: 'Sí, pero todavía no hablo muy bien chino.'}
+    comments: []
+  - id: x.produce.ni-hui-shuo-waiyu-ma
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-hui-shuo-waiyu-ma
+    targets: [s.ni-hui-shuo-waiyu-ma]
+    context: [w.ni, w.hui.can, w.shuo, w.waiyu, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Hablas algún idioma extranjero?»'}
+    answer: {meaning: '¿Hablas algún idioma extranjero?'}
+    comments: []
+  - id: x.listen.ta-dedao-le-yi-ge-hao-gongzuo
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.ta-dedao-le-yi-ge-hao-gongzuo
+    targets: [s.ta-dedao-le-yi-ge-hao-gongzuo]
+    context: [w.ta.he, w.dedao, w.le, w.num.yi, w.ge, w.hao, w.gongzuo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ha conseguido un buen trabajo.}
+    comments: []
+  - id: x.produce.wo-ji-yixia
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-ji-yixia
+    targets: [s.wo-ji-yixia]
+    context: [w.wo, w.ji.note, w.yixia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Lo apunto.»'}
+    answer: {meaning: Lo apunto.}
+    comments: []
+  - id: x.produce.jintian-wo-you-zhongwen-ke
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.jintian-wo-you-zhongwen-ke
+    targets: [s.jintian-wo-you-zhongwen-ke]
+    context: [w.jintian, w.wo, w.you.have, w.zhongwen, w.ke.class]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hoy tengo clase de chino.»'}
+    answer: {meaning: Hoy tengo clase de chino.}
+    comments: []
+  - id: x.produce.women-ji-dian-shangke
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.women-ji-dian-shangke
+    targets: [s.women-ji-dian-shangke]
+    context: [w.women, w.ji, w.dian.oclock, w.shangke]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿A qué hora empieza la clase?»'}
+    answer: {meaning: '¿A qué hora empieza la clase?'}
+    comments: []
+  - id: x.listen.women-xiake-le
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.women-xiake-le
+    targets: [s.women-xiake-le]
+    context: [w.women, w.xiake, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Se ha acabado la clase.}
+    comments: []
+  - id: x.contrast.ji.note
+    added: 2026-11-06
+    lang: es
+    type: contrast
+    group: g.ji-ji
+    targets: [w.ji.note]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 记, pinyin: jì, meaning: 'apuntar, anotar; recordar'}
+    comments: []
+  - id: x.contrast.ke.class
+    added: 2026-11-06
+    lang: es
+    type: contrast
+    group: g.ke-ke.same
+    targets: [w.ke.class]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es kè, «clase, lección»?'}
+    answer: {hanzi: 课, pinyin: kè, meaning: 'clase, lección'}
+    comments: []

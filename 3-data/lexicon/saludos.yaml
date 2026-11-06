@@ -528,6 +528,7 @@ entries:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Préstamo del inglés hi, como 哈喽 de hello: entre amigos. Entre amigos también se saluda solo con el nombre.'}
+      - {date: '2026-11-06', kind: character, private: false, text: '口 «boca» + 海 hǎi «mar», que da el sonido: un saludo que suena a «hi».'}
   - id: g.hai-hai
     kind: group
     basis: soundalike
@@ -538,3 +539,16 @@ entries:
       - {ref: w.hai.hi, cue: 'alto y plano (1.º): 嗨，你好！'}
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
     comments: []
+  - id: e.zhoumoyukuai
+    use: say
+    role: content
+    kind: expression
+    hanzi: 周末愉快
+    pinyin: zhōumò yúkuài
+    meaning: {es: ¡buen fin de semana!, en: have a nice weekend!}
+    level: 2
+    level_reason: fórmula de despedida de los viernes; 周末 es HSK 2 y 愉快 solo sale aquí
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: teacher, private: false, text: Así se despidió la profesora el viernes 6.}
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 'Palabra a palabra: 周末 «fin de semana» + 愉快 yúkuài [HSK 6] «alegre, agradable». Igual se dice 生日快乐 para el cumpleaños.'}

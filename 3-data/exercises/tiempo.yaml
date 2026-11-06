@@ -340,33 +340,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 睡觉}
     answer: {hanzi: 睡觉, pinyin: shuìjiào, meaning: 'dormir, irse a dormir'}
     comments: []
-  - id: x.dictation.huijia
-    added: 2026-10-01
-    lang: es
-    type: listen
-    targets: [w.huijia]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: hui2 jia1, hanzi: 回家, pinyin: huíjiā, meaning: volver a casa}
-    comments: []
-  - id: x.produce.huijia
-    added: 2026-10-01
-    lang: es
-    type: produce
-    targets: [w.huijia]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «volver a casa»? Escribe el pinyin.'}
-    answer: {typed: hui2 jia1, hanzi: 回家, pinyin: huíjiā, meaning: volver a casa}
-    comments: []
-  - id: x.read.huijia
-    added: 2026-10-01
-    lang: es
-    type: read
-    targets: [w.huijia]
-    skills: [reading, pinyin]
-    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 回家}
-    answer: {hanzi: 回家, pinyin: huíjiā, meaning: volver a casa}
-    comments: []
   - id: x.dictation.zhengzai
     added: 2026-10-01
     lang: es
@@ -469,16 +442,6 @@ exercises:
     refs: []
     prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
     answer: {typed: '21', hanzi: 明天, pinyin: míngtiān, meaning: mañana (el día)}
-    comments: []
-  - id: x.tones.huijia
-    added: 2026-10-02
-    lang: es
-    type: tones
-    targets: [w.huijia]
-    skills: [tones, pinyin]
-    refs: []
-    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
-    answer: {typed: '21', hanzi: 回家, pinyin: huíjiā, meaning: volver a casa}
     comments: []
   - id: x.contrast.wan
     added: 2026-10-06
@@ -2848,33 +2811,6 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 睡}
     answer: {hanzi: 睡, pinyin: shuì, meaning: dormir}
     comments: []
-  - id: x.dictation.huidao
-    added: 2026-10-31
-    lang: es
-    type: listen
-    targets: [w.huidao]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: hui2 dao4, hanzi: 回到, pinyin: huídào, meaning: 'volver a, llegar de vuelta'}
-    comments: []
-  - id: x.produce.huidao
-    added: 2026-10-31
-    lang: es
-    type: produce
-    targets: [w.huidao]
-    skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «volver a, llegar de vuelta»? Escribe el pinyin.'}
-    answer: {typed: hui2 dao4, hanzi: 回到, pinyin: huídào, meaning: 'volver a, llegar de vuelta'}
-    comments: []
-  - id: x.read.huidao
-    added: 2026-10-31
-    lang: es
-    type: read
-    targets: [w.huidao]
-    skills: [reading, pinyin]
-    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 回到}
-    answer: {hanzi: 回到, pinyin: huídào, meaning: 'volver a, llegar de vuelta'}
-    comments: []
   - id: x.dictation.lushang
     added: 2026-10-31
     lang: es
@@ -3126,4 +3062,153 @@ exercises:
     skills: [listening, tones, discrimination]
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 睡, pinyin: shuì, meaning: dormir}
+    comments: []
+  - id: x.cloze.zhengzai
+    added: 2026-11-06
+    lang: es
+    type: cloze
+    sentence: s.wo-zhengzai-xuexi
+    gap: w.zhengzai
+    targets: [w.zhengzai]
+    context: [w.wo, w.xuexi]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Estoy estudiando justo ahora.»'}
+    answer: {typed: zheng4 zai4, hanzi: 正在, pinyin: zhèngzài, meaning: estar (justo ahora) haciendo}
+    comments: []
+  - id: x.dictation.jingchang
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.jingchang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jing1 chang2, hanzi: 经常, pinyin: jīngcháng, meaning: a menudo}
+    comments: []
+  - id: x.produce.jingchang
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.jingchang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «a menudo»? Escribe el pinyin.'}
+    answer: {typed: jing1 chang2, hanzi: 经常, pinyin: jīngcháng, meaning: a menudo}
+    comments: []
+  - id: x.read.jingchang
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.jingchang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 经常}
+    answer: {hanzi: 经常, pinyin: jīngcháng, meaning: a menudo}
+    comments: []
+  - id: x.listen.ni-meitian-ji-dian-qichuang
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.ni-meitian-ji-dian-qichuang
+    targets: [s.ni-meitian-ji-dian-qichuang]
+    context: [w.ni, w.mei.each, w.tian, w.ji, w.dian.oclock, w.qichuang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿A qué hora te levantas cada día?'}
+    comments: []
+  - id: x.produce.ni-meitian-ji-dian-qichuang
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-meitian-ji-dian-qichuang
+    targets: [s.ni-meitian-ji-dian-qichuang]
+    context: [w.ni, w.mei.each, w.tian, w.ji, w.dian.oclock, w.qichuang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿A qué hora te levantas cada día?»'}
+    answer: {meaning: '¿A qué hora te levantas cada día?'}
+    comments: []
+  - id: x.listen.wo-meitian-qi-dian-qichuang
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.wo-meitian-qi-dian-qichuang
+    targets: [s.wo-meitian-qi-dian-qichuang]
+    context: [w.wo, w.mei.each, w.tian, w.num.qi, w.dian.oclock, w.qichuang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me levanto a las siete todos los días.}
+    comments: []
+  - id: x.produce.wo-meitian-qi-dian-qichuang
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-meitian-qi-dian-qichuang
+    targets: [s.wo-meitian-qi-dian-qichuang]
+    context: [w.wo, w.mei.each, w.tian, w.num.qi, w.dian.oclock, w.qichuang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me levanto a las siete todos los días.»'}
+    answer: {meaning: Me levanto a las siete todos los días.}
+    comments: []
+  - id: x.listen.ni-xue-zhongwen-duojiu-le
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.ni-xue-zhongwen-duojiu-le
+    targets: [s.ni-xue-zhongwen-duojiu-le]
+    context: [w.ni, w.xue, w.zhongwen, w.duojiu, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cuánto tiempo llevas estudiando chino?'}
+    comments: []
+  - id: x.produce.ni-xue-zhongwen-duojiu-le
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-xue-zhongwen-duojiu-le
+    targets: [s.ni-xue-zhongwen-duojiu-le]
+    context: [w.ni, w.xue, w.zhongwen, w.duojiu, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuánto tiempo llevas estudiando chino?»'}
+    answer: {meaning: '¿Cuánto tiempo llevas estudiando chino?'}
+    comments: []
+  - id: x.produce.zhoumo-ren-hen-duo
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.zhoumo-ren-hen-duo
+    targets: [s.zhoumo-ren-hen-duo]
+    context: [w.zhoumo, w.ren, w.hen, w.duo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «El fin de semana hay mucha gente.»'}
+    answer: {meaning: El fin de semana hay mucha gente.}
+    comments: []
+  - id: x.produce.ni-jingchang-qu-ma
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-jingchang-qu-ma
+    targets: [s.ni-jingchang-qu-ma]
+    context: [w.ni, w.jingchang, w.qu, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Vas a menudo?»'}
+    answer: {meaning: '¿Vas a menudo?'}
+    comments: []
+  - id: x.listen.dlg-zhoumo-zuo-shenme
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.dlg-zhoumo-zuo-shenme
+    targets: [s.dlg-zhoumo-zuo-shenme]
+    context: [w.ni, w.zhoumo, w.zuo.do, w.shenme, w.le, w.mei, w.zai.at, w.jia, w.xiuxi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—¿Qué hiciste el fin de semana? —Nada especial: descansar en casa.'}
+    comments: []
+  - id: x.produce.cha-wu-fen-ba-dian
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.cha-wu-fen-ba-dian
+    targets: [s.cha-wu-fen-ba-dian]
+    context: [w.cha.short, w.num.wu, w.fen.minute, w.ba, w.dian.oclock]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Son las ocho menos cinco.»'}
+    answer: {meaning: Son las ocho menos cinco.}
     comments: []

@@ -50,6 +50,7 @@ entries:
     level: 1
     level_reason: respuesta básica; 好 y 的 son HSK 1
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
+    accept_cards: 'pediste más ejemplos de cuándo 好的 y cuándo 是的 (review 015)'
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 好 «bien» + 的: «bien, vale».'}
       - {kind: note, private: false, date: 2026-09-25, text: 'Expresa acuerdo o conformidad: «vale», «muy bien», «de acuerdo».', original: 'subjetivo, muy bien, gusto'}
@@ -93,8 +94,10 @@ entries:
     level: 1
     level_reason: respuesta afirmativa de cada día; 是 y 的 son HSK 1
     source: {origin: class, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-29'}
+    accept_cards: 'pediste más ejemplos de cuándo 好的 y cuándo 是的 (review 015)'
     comments:
       - {kind: linguistic, private: false, date: '2026-10-07', text: 'Palabra a palabra: 是 «ser» + 的: «así es».'}
+      - {date: '2026-11-06', kind: tip, private: false, text: '是的 confirma que algo es así: si te preguntan «¿eres tú?» o «¿es tuyo?», 是的. 好的 acepta lo que te proponen o te piden: a «¿quedamos a las siete?», 好的.'}
   - id: w.en
     use: say
     role: content
@@ -214,6 +217,8 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Con la persona detrás: 帮我 «ayúdame». Es la forma corriente al hablar.'}
       - {kind: mnemonic, private: false, date: '2026-10-19', text: 'Una ciudad 阝 tan próspera 丰 que reparte telas 巾 a quien las necesita: eso es ayudar.', original: '«Una ciudad tan abundante y próspera que reparte telas entre quienes las necesitan para AYUDARLOS».'}
+      - {date: '2026-11-06', kind: mnemonic, private: false, text: '帮: todo el país 邦 se une para ayudar a alguien que se ha quedado sin ropa, y cada uno aporta un paño 巾.', original: 'Todo el país se une para ayudar a alguien que se ha quedado sin ropa, aportando cada uno un paño». ALGO QUE VISTE, en definitiva'}
+      - {date: '2026-11-06', kind: character, private: false, text: 'Arriba, 邦 bāng da el sonido (antes era «país»; hoy, al hablar, país es 国家); abajo, 巾 jīn «paño, tela», el mismo de 帅.'}
   - id: w.bangmang
     use: hear
     role: content
@@ -356,6 +361,7 @@ entries:
     level_reason: '没 y 问题 son de nivel básico; respuesta de todos los días'
     connection: {kind: sound, with: [是], text: '是 shì da el sonido, de lejos, a 题 tí; 页 «cabeza» da el sentido.'}
     source: {origin: inbox, batch: 006-2026-10-06-edad-numeros-y-familia, file: review-005-2026-10-05-saludos-y-sonidos.md, date: '2026-10-06'}
+    accept_cards: 'el matiz 没问题 / 好问题 sale de tus notas del review 015'
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Palabra a palabra: 没 «no hay» + 问题 «problema». Para aceptar algo que te piden; para quitar importancia a algo que ha pasado, 没关系.'}
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'No es la respuesta a 谢谢 (eso es 不客气): se dice cuando te piden algo y aceptas. como a «¿me ayudas?».'}
@@ -549,3 +555,26 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-23', text: '我同意 «estoy de acuerdo», 我不同意 «no estoy de acuerdo», 你同意吗？ «¿estás de acuerdo?». Para contestar rápido también valen 对 y 好的.'}
       - {kind: mnemonic, private: false, date: '2026-10-21', text: '同 «mismo» + 意 «idea»: tenemos la misma idea, así que estamos de acuerdo.', original: 'Tenemos la misma idea, así que estamos de acuerdo'}
+  - id: w.xing.ok
+    use: say
+    role: content
+    kind: word
+    hanzi: 行
+    pinyin: xíng
+    meaning: {es: 'vale, está bien; (algo) sirve', en: 'OK, fine; will do'}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: usage, private: false, text: 'Para decir que algo te va bien: 行吗？ «¿te parece bien?», 行！ «¡vale!», 都行 «cualquiera me vale». Con otra lectura, háng, es el de 银行 «banco» [HSK 2].'}
+  - id: e.shima
+    use: say
+    role: content
+    kind: expression
+    hanzi: 是吗
+    pinyin: shì ma
+    meaning: {es: '¿ah, sí?', en: 'really? is that so?'}
+    level: 1
+    level_reason: reacción de conversación; 是 y 吗 son HSK 1
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: usage, private: false, text: 'Para reaccionar a lo que te cuentan sin dudar de ello: 是吗？ «¿ah, sí?». 真的吗？ es más sorpresa: «¿de verdad?».'}
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 'Palabra a palabra: 是 «ser, así es» + 吗, la pregunta: «¿es así?».'}

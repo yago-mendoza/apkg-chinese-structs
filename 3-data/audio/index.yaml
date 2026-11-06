@@ -424,9 +424,25 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  上海:
+    date: '2026-11-06'
+    file: acs_bc97ddde3828f534.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   上班:
     date: '2026-10-19'
     file: acs_f504e158b3005568.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  上课:
+    date: '2026-11-06'
+    file: acs_20466fffb88699a5.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
@@ -507,6 +523,14 @@ audio:
   下班:
     date: '2026-10-26'
     file: acs_50b718585f479b6d.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  下课:
+    date: '2026-11-06'
+    file: acs_87ca7695cf0766d8.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
@@ -766,6 +790,14 @@ audio:
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  中国人喜欢红色。:
+    date: '2026-11-06'
+    file: acs_3bcbd8d421ec003b.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
   中国是一个很大的国家。:
@@ -1128,6 +1160,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  今天我有中文课。:
+    date: '2026-11-06'
+    file: acs_97613855f5cc6ebd.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   今天星期几？:
     date: '2026-10-07'
     file: acs_acd5410df24cf233.mp3
@@ -1448,6 +1488,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  他住在北京还是上海？:
+    date: '2026-11-06'
+    file: acs_c28ab688a4f90308.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   他做的饭很好吃。:
     date: '2026-10-26'
     file: acs_8cf7085ab2c66599.mp3
@@ -1632,6 +1680,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  他得到了一个好工作。:
+    date: '2026-11-06'
+    file: acs_eda46f13dccee149.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   他总是很忙。:
     date: '2026-10-26'
     file: acs_6f97719b7cc1d36a.mp3
@@ -1736,6 +1792,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  他是我的室友。:
+    date: '2026-11-06'
+    file: acs_c5ac97663e437d32.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   他是我的爸爸。:
     date: '2026-09-27'
     file: acs_c65a96cf61c178d3.mp3
@@ -1832,6 +1896,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  他现在在美国。:
+    date: '2026-11-06'
+    file: acs_3b00e8f9d93a6b16.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   他生气了。:
     date: '2026-10-01'
     file: acs_eb747cad87f9f69e.mp3
@@ -1888,10 +1960,35 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  他还是住在北京:
+    date: '2026-11-06'
+    file: acs_ee74d0be3f47936f.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  他还是住在北京。:
+    date: '2026-11-06'
+    file: acs_f1b2b0a66e4226c9.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   他还没来。:
     date: '2026-10-10'
     file: acs_8e566bbb14a53c2a.mp3
     lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  他高兴地走了。:
+    date: '2026-11-06'
+    file: acs_00a522f590ef755c.mp3
+    lead_ms: 200
+    phonemes: 地=de 5
     provider: Azure Speech
     rate: -30%
     tier: S0
@@ -2040,6 +2137,30 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  你什么时候回家？:
+    date: '2026-11-06'
+    file: acs_8ca4c1b8e920f183.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  你什么时候回来？:
+    date: '2026-11-06'
+    file: acs_7db5d87045e975ef.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  你什么时候回西班牙？:
+    date: '2026-11-06'
+    file: acs_702ac3fed3a72a01.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   你什么时候来？:
     date: '2026-10-10'
     file: acs_ac0ad98a5b7a9894.mp3
@@ -2107,6 +2228,14 @@ audio:
   你们都是哪国人？:
     date: '2026-10-19'
     file: acs_a1432b8c6ef70876.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  你会说外语吗？:
+    date: '2026-11-06'
+    file: acs_c5c2472bed37fe3f.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -2264,6 +2393,22 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  你周末做什么了？:
+    date: '2026-11-06'
+    file: acs_862cc1a27a1c6f23.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  你周末做什么了？没做什么，在家休息。:
+    date: '2026-11-06'
+    file: acs_04b08590eee3d159.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   你哪天可以来？:
     date: '2026-10-26'
     file: acs_7a5f6cd1b23bc9ef.mp3
@@ -2275,6 +2420,22 @@ audio:
   你哪天来？:
     date: '2026-10-26'
     file: acs_d2daa8dc169ce045.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  你喜欢什么颜色？:
+    date: '2026-11-06'
+    file: acs_e01e73590a9018ff.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  你喜欢吃什么？:
+    date: '2026-11-06'
+    file: acs_1b150bd81249cb8c.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -2339,6 +2500,14 @@ audio:
   你在哪里？:
     date: '2026-10-01'
     file: acs_821b7fa93a7479fe.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  你在干什么？:
+    date: '2026-11-06'
+    file: acs_7da1ccde3ba7b6ee.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -2440,6 +2609,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  你好，我叫孟逸辰，我是工程师。:
+    date: '2026-11-06'
+    file: acs_fd78f8dc1916083b.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   你好，我找人。:
     date: '2026-10-31'
     file: acs_ad5a4231aea6e40e.mp3
@@ -2467,6 +2644,22 @@ audio:
   你姓什么？:
     date: '2026-09-29'
     file: acs_931a6d72d7fb7dc0.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  你学中文多久了？:
+    date: '2026-11-06'
+    file: acs_35b43df0876f1a98.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  你家在哪里？:
+    date: '2026-11-06'
+    file: acs_e220c51fdfe40979.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -2569,9 +2762,25 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  你明天去北京吗？:
+    date: '2026-11-06'
+    file: acs_14572349cef543a2.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   你明天必须来。:
     date: '2026-10-19'
     file: acs_fccc7ebf5c57762f.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  你明天有时间吗？我们一起去游泳吧！:
+    date: '2026-11-06'
+    file: acs_b3dac5a50ff2f91c.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -2604,6 +2813,14 @@ audio:
   你是中国学生吗？不是，我是美国学生。:
     date: '2026-10-16'
     file: acs_6a92702692b2cad1.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  你是做什么工作的？:
+    date: '2026-11-06'
+    file: acs_a4c0a336eb91c687.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -2777,6 +2994,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  你每天几点起床？:
+    date: '2026-11-06'
+    file: acs_f4a952812cdfb5d8.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   你父母多大年纪了？:
     date: '2026-10-23'
     file: acs_9c15bc25995b030e.mp3
@@ -2836,6 +3061,14 @@ audio:
   你现在忙吗？:
     date: '2026-10-11'
     file: acs_52b295884d6eb5d5.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  你的家人都好吗？:
+    date: '2026-11-06'
+    file: acs_3e5e8881fffd00c2.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -2961,6 +3194,22 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  你经常去吗？:
+    date: '2026-11-06'
+    file: acs_5a0edf6c847dc02c.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  你能听懂我说的吗？:
+    date: '2026-11-06'
+    file: acs_12651d54e2c4501d.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   你能帮我一下吗？:
     date: '2026-10-23'
     file: acs_90a51899993d5506.mp3
@@ -3009,6 +3258,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  你要我帮你吗？:
+    date: '2026-11-06'
+    file: acs_fc1942cba00b62a6.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   你要水吗？:
     date: '2026-10-31'
     file: acs_0b65f35d9d54e489.mp3
@@ -3052,6 +3309,14 @@ audio:
   你觉得今天的天气怎么样？我觉得今天的天气很好，不冷不热。:
     date: '2026-10-23'
     file: acs_cd9d32adc35b6993.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  你觉得呢？:
+    date: '2026-11-06'
+    file: acs_0b8d9382cea48163.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -3148,6 +3413,14 @@ audio:
   你走吧。:
     date: '2026-10-11'
     file: acs_49f1452834349cc7.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  你跟我一起去吗？:
+    date: '2026-11-06'
+    file: acs_1bbd83a54b3f2b44.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -3319,6 +3592,14 @@ audio:
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  公:
+    date: '2026-11-06'
+    file: acs_59d7d50eeb844e5c.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
   公司:
@@ -3561,6 +3842,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  别动！:
+    date: '2026-11-06'
+    file: acs_61b9d396c6232f30.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   别太累了！:
     date: '2026-10-19'
     file: acs_d88d0f0e440813fe.mp3
@@ -3612,6 +3901,14 @@ audio:
   前:
     date: '2026-10-11'
     file: acs_8c2c293a6563e03d.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  动:
+    date: '2026-11-06'
+    file: acs_8d503e8fa6e9ccaf.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
@@ -3695,6 +3992,14 @@ audio:
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  医院里有很多病人。:
+    date: '2026-11-06'
+    file: acs_104f2a6244778f50.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
   十:
@@ -3804,6 +4109,14 @@ audio:
   卖:
     date: '2026-10-16'
     file: acs_a80bcb4327889c91.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  原因:
+    date: '2026-11-06'
+    file: acs_f23faec1bf768528.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
@@ -3985,6 +4298,22 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  可能:
+    date: '2026-11-06'
+    file: acs_ac716a0e4d7fa755.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  可能是这样。:
+    date: '2026-11-06'
+    file: acs_58f633dbd2976a50.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   右:
     date: '2026-10-06'
     file: acs_e01958a7a1be73dd.mp3
@@ -4159,6 +4488,30 @@ audio:
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  周末:
+    date: '2026-11-06'
+    file: acs_c146a76930a1710e.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  周末人很多。:
+    date: '2026-11-06'
+    file: acs_8cd1ef4002d71f70.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  周末愉快:
+    date: '2026-11-06'
+    file: acs_e40641fc7bc4bb62.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
   和:
@@ -4420,6 +4773,14 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  嗯，我想一下……因为我喜欢中文，也想去中国。但是我觉得中文很难。你觉得呢？:
+    date: '2026-11-06'
+    file: acs_719c8233e0c174f2.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   嗯，谢谢！:
     date: '2026-09-29'
     file: acs_0ea4ff75ec3e8a13.mp3
@@ -4532,6 +4893,22 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  因为我喜欢中文，也想去中国。:
+    date: '2026-11-06'
+    file: acs_94d88c5c57eb93a9.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  因为我很忙，所以我还没买机票。:
+    date: '2026-11-06'
+    file: acs_d0dbc4c0e773be78.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   国:
     date: '2026-10-01'
     file: acs_38ca79ae616d442d.mp3
@@ -4570,6 +4947,15 @@ audio:
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  地:
+    date: '2026-11-06'
+    file: acs_e4cec8a667fa3a5a.mp3
+    lead_ms: 200
+    phonemes: 地=de 5
+    provider: Azure Speech
+    rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
   地图:
@@ -4647,6 +5033,14 @@ audio:
   外国:
     date: '2026-10-16'
     file: acs_f02e72c6adb88302.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  外语:
+    date: '2026-11-06'
+    file: acs_a01086df98f63645.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
@@ -4751,6 +5145,14 @@ audio:
   大家好！:
     date: '2026-10-05'
     file: acs_49a098c6817814af.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  大家都喜欢喝茶。:
+    date: '2026-11-06'
+    file: acs_a5fbc0189e3f5150.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -4948,6 +5350,14 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  女人:
+    date: '2026-11-06'
+    file: acs_a00b6259c94deaf1.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   女儿:
     date: '2026-09-27'
     file: acs_1b50f3f3562ab47a.mp3
@@ -4999,6 +5409,22 @@ audio:
   她不漂亮。:
     date: '2026-09-29'
     file: acs_0f188bbf377deb6e.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  她们:
+    date: '2026-11-06'
+    file: acs_8db672be32f30c2d.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  她们是我的朋友。:
+    date: '2026-11-06'
+    file: acs_89bff8d5eed4ed47.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -5148,6 +5574,14 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  好不好？:
+    date: '2026-11-06'
+    file: acs_eb381a3f049f2e73.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   好久不见:
     date: '2026-10-05'
     file: acs_2fe7bba3e0184659.mp3
@@ -5255,6 +5689,14 @@ audio:
   好贵！:
     date: '2026-10-10'
     file: acs_8a78d28173845f67.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  好问题！:
+    date: '2026-11-06'
+    file: acs_7b3171f175382e4a.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -5452,12 +5894,44 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  室友:
+    date: '2026-11-06'
+    file: acs_f728b92d9b1c2503.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   家:
     date: '2026-10-01'
     file: acs_4a1be2ab2397f136.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  家人:
+    date: '2026-11-06'
+    file: acs_40a21d42eadca3ed.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  家里:
+    date: '2026-11-06'
+    file: acs_fede4cb2a62eedde.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  家里有人吗？:
+    date: '2026-11-06'
+    file: acs_b08c25ee9d61e386.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
   对:
@@ -5524,6 +5998,22 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  对了:
+    date: '2026-11-06'
+    file: acs_f3f202e6cefe8809.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  对了，你明天有时间吗？:
+    date: '2026-11-06'
+    file: acs_3706951177af9532.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   对的:
     date: '2026-10-06'
     file: acs_25a293c93bf8ca93.mp3
@@ -5532,9 +6022,25 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  对，但是我还不太会说中文。:
+    date: '2026-11-06'
+    file: acs_fd387d43a3c66de4.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   对，我是你们的老师。:
     date: '2026-09-27'
     file: acs_4b0e0c54eeed82ea.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  对，我还在学习中文。:
+    date: '2026-11-06'
+    file: acs_8fc200b3d5f14ae7.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -5692,6 +6198,14 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  工:
+    date: '2026-11-06'
+    file: acs_b167df24e97d37e9.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   工作:
     date: '2026-09-29'
     file: acs_e246fcdd9f847d44.mp3
@@ -5730,6 +6244,24 @@ audio:
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  差:
+    date: '2026-11-06'
+    file: acs_820da3f403991ef1.mp3
+    lead_ms: 200
+    phonemes: 差=cha 4
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  差五分八点。:
+    date: '2026-11-06'
+    file: acs_a6ff8dde7bf632a0.mp3
+    lead_ms: 200
+    phonemes: 差=cha 4
+    provider: Azure Speech
+    rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
   已经:
@@ -5836,6 +6368,14 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  干:
+    date: '2026-11-06'
+    file: acs_fdcdbc2f054831fd.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   年:
     date: '2026-10-01'
     file: acs_4985af80d802654c.mp3
@@ -5895,6 +6435,14 @@ audio:
   幽默:
     date: '2026-09-27'
     file: acs_bd90b601c5bf1b33.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  广场:
+    date: '2026-11-06'
+    file: acs_8dc54332fd49ed3f.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
@@ -6039,6 +6587,14 @@ audio:
   得:
     date: '2026-11-01'
     file: acs_3f27e4e003812750.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  得到:
+    date: '2026-11-06'
+    file: acs_ff2f437365ee8dac.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
@@ -6212,12 +6768,28 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  恭:
+    date: '2026-11-06'
+    file: acs_1f74b8c1cb3d67f4.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   恭喜:
     date: '2026-10-08'
     file: acs_fc63b1a99e8a0aea.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  恭喜你买到了两公斤你喜欢的苹果！:
+    date: '2026-11-06'
+    file: acs_c1758f8ef2c2aae5.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
   恭喜你！:
@@ -6300,6 +6872,14 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  惨:
+    date: '2026-11-06'
+    file: acs_948e680d851b74f9.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   想:
     date: '2026-09-27'
     file: acs_34d9cbc57fbcb36d.mp3
@@ -6319,6 +6899,14 @@ audio:
   意思:
     date: '2026-10-11'
     file: acs_95a477f1e5c7e3eb.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  感觉:
+    date: '2026-11-06'
+    file: acs_819369ac00ed0b7d.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
@@ -6508,6 +7096,22 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  我不听:
+    date: '2026-11-06'
+    file: acs_27cfcba06ec5f026.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我不喝咖啡。:
+    date: '2026-11-06'
+    file: acs_7950ae1b9d5c0324.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   我不喝茶。:
     date: '2026-10-10'
     file: acs_acf74cc45f0c3c6e.mp3
@@ -6591,6 +7195,14 @@ audio:
   我不知道。:
     date: '2026-10-06'
     file: acs_8449bd737a2f99d4.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我不知道怎么说。:
+    date: '2026-11-06'
+    file: acs_5febe8b8589ae1fa.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -6687,6 +7299,14 @@ audio:
   我也想吃那个。:
     date: '2026-10-11'
     file: acs_c351ef6310fdf6c2.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我也是！:
+    date: '2026-11-06'
+    file: acs_bc0f5bb9c4823cab.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -6908,6 +7528,22 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  我们一起走吧。:
+    date: '2026-11-06'
+    file: acs_89ce0029083ac891.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我们七点见，好吗？:
+    date: '2026-11-06'
+    file: acs_4d8ca6f69c9e3928.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   我们上午十一点见。:
     date: '2026-10-11'
     file: acs_41d2bb893b46345e.mp3
@@ -6919,6 +7555,14 @@ audio:
   我们下午见吧。:
     date: '2026-10-01'
     file: acs_ba5b7017c9d9b8fa.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我们下课了。:
+    date: '2026-11-06'
+    file: acs_372adc071901b2f1.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -6943,6 +7587,14 @@ audio:
   我们关系很好。:
     date: '2026-10-19'
     file: acs_f620179057bb265d.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我们几点上课？:
+    date: '2026-11-06'
+    file: acs_2dbdb4d9138907b6.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -7204,6 +7856,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  我住三天。:
+    date: '2026-11-06'
+    file: acs_23835c02d3d2d9e1.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   我住在三楼。:
     date: '2026-10-31'
     file: acs_fa89106d9dfad4df.mp3
@@ -7247,6 +7907,14 @@ audio:
   我先回家。:
     date: '2026-10-23'
     file: acs_b4eede0c7e6ef17d.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我先回家，然后去超市。:
+    date: '2026-11-06'
+    file: acs_2f40e150e9772b07.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -7596,6 +8264,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  我喜欢中国的食物，比如牛肉。:
+    date: '2026-11-06'
+    file: acs_b9abb5a0dd77ee64.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   我喜欢中文。:
     date: '2026-09-29'
     file: acs_8594bfeeaf109338.mp3
@@ -7727,6 +8403,14 @@ audio:
   我在做作业。:
     date: '2026-10-31'
     file: acs_28d78789b1bc8896.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我在北京住两天。:
+    date: '2026-11-06'
+    file: acs_78067e3e7e64b754.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -7972,6 +8656,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  我学习中文，因为我想去中国。:
+    date: '2026-11-06'
+    file: acs_ada69fd37d5cf722.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   我属兔。:
     date: '2026-10-07'
     file: acs_a5058a027adc6022.mp3
@@ -8076,6 +8768,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  我常常说中文，感觉很好。:
+    date: '2026-11-06'
+    file: acs_64743fe89422c1e3.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   我开车去。:
     date: '2026-10-10'
     file: acs_a9f2949c48ad25a6.mp3
@@ -8122,6 +8822,14 @@ audio:
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我很想去中国，但是我没有钱。:
+    date: '2026-11-06'
+    file: acs_7711d645596e794f.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
   我很想去中国，但是我觉得我得工作。:
@@ -8314,6 +9022,14 @@ audio:
   我想喝茶。:
     date: '2026-10-10'
     file: acs_b12ec20f9f0db210.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我想回西班牙。:
+    date: '2026-11-06'
+    file: acs_dfb46578da1878f7.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -8567,6 +9283,22 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  我明天去医院。:
+    date: '2026-11-06'
+    file: acs_96638f50a7d5e4f0.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我明天去超市，你跟我一起去吗？:
+    date: '2026-11-06'
+    file: acs_b5b493f8586cfb09.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   我明天得学习，但是我不想学习。:
     date: '2026-10-31'
     file: acs_4db0b799c69f256e.mp3
@@ -8628,6 +9360,14 @@ audio:
   我明天跟他见面。:
     date: '2026-10-31'
     file: acs_f64b6a7b726a2ca4.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我明天飞北京。:
+    date: '2026-11-06'
+    file: acs_06a906ddb0ef4b8f.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -8801,6 +9541,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  我有朋友，但是他们不在这里。:
+    date: '2026-11-06'
+    file: acs_b6737a00f21bbccf.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   我朋友:
     date: '2026-10-26'
     file: acs_738a3287bc768d07.mp3
@@ -8876,6 +9624,14 @@ audio:
   我正在学习。:
     date: '2026-10-19'
     file: acs_b959d31899db3af8.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我每天七点起床。:
+    date: '2026-11-06'
+    file: acs_a079160fb3dfe1c0.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -9009,6 +9765,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  我爱我的家人。:
+    date: '2026-11-06'
+    file: acs_ae63f51715fbf422.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   我爷爷九十三岁了。:
     date: '2026-10-23'
     file: acs_7a1beb515569fb0c.mp3
@@ -9137,6 +9901,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  我的手机是黑色的。:
+    date: '2026-11-06'
+    file: acs_dfa7a3490c924614.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   我的手机没电了。:
     date: '2026-10-26'
     file: acs_d3241dfe48f8faae.mp3
@@ -9204,6 +9976,14 @@ audio:
   我看一下。:
     date: '2026-10-11'
     file: acs_73853ee575ddbf36.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我看不到你。:
+    date: '2026-11-06'
+    file: acs_68bb67a5b78f895d.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -9289,6 +10069,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  我知道原因。:
+    date: '2026-11-06'
+    file: acs_68cd82112548f566.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   我知道这个词，但是我不懂它的意思。:
     date: '2026-10-31'
     file: acs_a9e335887187a821.mp3
@@ -9340,6 +10128,14 @@ audio:
   我练习拼音。:
     date: '2026-10-07'
     file: acs_41784ee6d0a4a116.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我给你打电话。:
+    date: '2026-11-06'
+    file: acs_3f6c3a7d3b677f76.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -9625,9 +10421,25 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  我觉得不是。:
+    date: '2026-11-06'
+    file: acs_f19a00adaf4eacc9.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   我觉得不错。:
     date: '2026-10-23'
     file: acs_8253275cf1f9d02c.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我觉得中文很难，但是我很喜欢。:
+    date: '2026-11-06'
+    file: acs_72febc5893bfc28b.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -9737,6 +10549,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  我记一下。:
+    date: '2026-11-06'
+    file: acs_10caa0d98f6d6578.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   我说了，我不要水！:
     date: '2026-10-26'
     file: acs_d2d97a4edb9cfa0d.mp3
@@ -9788,6 +10608,14 @@ audio:
   我跟朋友一起去。:
     date: '2026-10-31'
     file: acs_abeddbb85350e114.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我身上没有钱。:
+    date: '2026-11-06'
+    file: acs_733e06ecd06541d7.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -9868,6 +10696,14 @@ audio:
   我还没买。:
     date: '2026-10-19'
     file: acs_6a166c2bcd1b2839.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  我还没买机票。:
+    date: '2026-11-06'
+    file: acs_cdbd9437133bf78d.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -10297,6 +11133,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  明天我不去公司，我在家工作。:
+    date: '2026-11-06'
+    file: acs_8a855e78e2bbc807.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   明天星期天。:
     date: '2026-10-07'
     file: acs_9fe61f7a5537ae1c.mp3
@@ -10420,6 +11264,14 @@ audio:
   是:
     date: '2026-09-27'
     file: acs_a5524d03b0bb4f96.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  是吗:
+    date: '2026-11-06'
+    file: acs_29d0fb3638b6efc8.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
@@ -10769,6 +11621,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  来到:
+    date: '2026-11-06'
+    file: acs_31e72030a9fc143b.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   来自:
     date: '2026-09-29'
     file: acs_141e1db0c9175edf.mp3
@@ -10881,6 +11741,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  欢迎来到中国！:
+    date: '2026-11-06'
+    file: acs_85d367c09332599f.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   正在:
     date: '2026-10-01'
     file: acs_52ef9a97352678b2.mp3
@@ -10900,6 +11768,14 @@ audio:
   比:
     date: '2026-10-01'
     file: acs_49c05727e49089e8.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  比如:
+    date: '2026-11-06'
+    file: acs_6150aad095ba71fa.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
@@ -11020,6 +11896,14 @@ audio:
   没什么。:
     date: '2026-10-19'
     file: acs_be14e096b29f4b02.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  没做什么，在家休息。:
+    date: '2026-11-06'
+    file: acs_c29b7bd3f7eb6dac.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -11207,6 +12091,22 @@ audio:
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  然后:
+    date: '2026-11-06'
+    file: acs_497f41a995dbc796.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  然后呢？:
+    date: '2026-11-06'
+    file: acs_599e189a9143f8e8.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
   照片:
@@ -11609,6 +12509,14 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  男人:
+    date: '2026-11-06'
+    file: acs_f576bf155d5efc2a.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   留:
     date: '2026-10-19'
     file: acs_40d876b977576037.mp3
@@ -11628,6 +12536,14 @@ audio:
   病:
     date: '2026-10-31'
     file: acs_8f10ee99ea79d701.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  病人:
+    date: '2026-11-06'
+    file: acs_14ba43ddb2902cc0.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
@@ -11764,6 +12680,14 @@ audio:
   眼睛:
     date: '2026-10-16'
     file: acs_fdc3e67e63c86c4d.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  着:
+    date: '2026-11-06'
+    file: acs_34facd3186e463a3.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
@@ -11929,6 +12853,22 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  等一下吧:
+    date: '2026-11-06'
+    file: acs_c5a10f228bdb6fa1.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  等一下吧，他马上来。:
+    date: '2026-11-06'
+    file: acs_7d55bfa6ac6f1da3.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   筷子:
     date: '2026-10-01'
     file: acs_02d2cacb4a961f6d.mp3
@@ -11953,6 +12893,14 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  红色:
+    date: '2026-11-06'
+    file: acs_6a122598f1d3fb64.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   纸:
     date: '2026-10-07'
     file: acs_a8f06576f02fc36e.mp3
@@ -11964,6 +12912,14 @@ audio:
   练习:
     date: '2026-10-07'
     file: acs_24c2575d56c7c9c0.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  经常:
+    date: '2026-11-06'
+    file: acs_842ef6bec5ddbd20.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
@@ -12084,6 +13040,22 @@ audio:
   老师，我有一个问题。:
     date: '2026-10-11'
     file: acs_f8e36e79cc93a7a0.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  老板:
+    date: '2026-11-06'
+    file: acs_7213f55271712491.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  老板好！:
+    date: '2026-11-06'
+    file: acs_5753b18b61d7c56d.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -12337,6 +13309,22 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  行:
+    date: '2026-11-06'
+    file: acs_1a7bac02d32e5a66.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  行吗？:
+    date: '2026-11-06'
+    file: acs_82cec3bcc6fb322c.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   街道:
     date: '2026-10-08'
     file: acs_80d87739d9a368b7.mp3
@@ -12417,6 +13405,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  要不要我帮你？:
+    date: '2026-11-06'
+    file: acs_283744c98702fdf4.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   要我帮你吗？:
     date: '2026-10-31'
     file: acs_5596a1313e5e8a1f.mp3
@@ -12481,6 +13477,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  认识你很高兴，你是做什么工作的？:
+    date: '2026-11-06'
+    file: acs_6703481a40695326.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   认识你我也很高兴！:
     date: '2026-09-29'
     file: acs_629dbc1b87a01701.mp3
@@ -12511,6 +13515,14 @@ audio:
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  记:
+    date: '2026-11-06'
+    file: acs_f45283aa56c7c111.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
   记得:
@@ -12657,6 +13669,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  请稍等:
+    date: '2026-11-06'
+    file: acs_f8f47ec212fb22a2.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   请稍等。:
     date: '2026-10-10'
     file: acs_3620100f71920fe3.mp3
@@ -12668,6 +13688,14 @@ audio:
   请稍等，他住在四二六房间。:
     date: '2026-10-31'
     file: acs_172bebc39ab3722d.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  请稍等，我去拿。:
+    date: '2026-11-06'
+    file: acs_8400a0e700f6ceec.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -12905,6 +13933,14 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  起床:
+    date: '2026-11-06'
+    file: acs_ef1ecb26813a5d84.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   起来:
     date: '2026-10-31'
     file: acs_ebdd56a21ced7cfd.mp3
@@ -12985,6 +14021,14 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  身上:
+    date: '2026-11-06'
+    file: acs_a2dfbe6fd9632aa3.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   身体:
     date: '2026-10-16'
     file: acs_9ca247d539f51020.mp3
@@ -13055,6 +14099,14 @@ audio:
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  还有什么？:
+    date: '2026-11-06'
+    file: acs_9b4bb037bafa6499.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
   还有吗？:
@@ -13140,6 +14192,14 @@ audio:
   这个人是我的朋友。:
     date: '2026-10-06'
     file: acs_10ea426bb313b237.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  这个包很重。:
+    date: '2026-11-06'
+    file: acs_c9561ff59e2349b9.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -13489,6 +14549,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  这是你的手机吗？:
+    date: '2026-11-06'
+    file: acs_f059c3022b0c1eec.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   这是我买的书。:
     date: '2026-10-26'
     file: acs_534757c6c4d0bc02.mp3
@@ -13657,6 +14725,14 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  这都是你的错。:
+    date: '2026-11-06'
+    file: acs_35d13c8e2f4f0d04.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   这里:
     date: '2026-10-01'
     file: acs_0f1b375a153f8755.mp3
@@ -13785,6 +14861,22 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  那个女人是我的老师。:
+    date: '2026-11-06'
+    file: acs_2d636447fca6ca9d.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  那个男人是谁？:
+    date: '2026-11-06'
+    file: acs_516008bc89d69c7b.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   那些:
     date: '2026-10-19'
     file: acs_ccbdc4826d595e04.mp3
@@ -13804,6 +14896,14 @@ audio:
   那些是我的。:
     date: '2026-10-26'
     file: acs_3fbe70825708946a.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  那你太惨了！:
+    date: '2026-11-06'
+    file: acs_ee9747dd49fd8666.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -13905,9 +15005,25 @@ audio:
     rate: -30%
     tier: S0
     voice: zh-CN-YunyangNeural
+  都行。:
+    date: '2026-11-06'
+    file: acs_d16c5cd0437700a2.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   里:
     date: '2026-10-08'
     file: acs_65997d4f5ab80aa3.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  重:
+    date: '2026-11-06'
+    file: acs_6da43ebf3b5a98d1.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
@@ -13980,6 +15096,14 @@ audio:
   门多萨先生，您好！:
     date: '2026-10-01'
     file: acs_c7ed4a6161dffde2.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -30%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  门开着。:
+    date: '2026-11-06'
+    file: acs_7bc76dcec73dd3c3.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -30%
@@ -14065,6 +15189,14 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  雨伞:
+    date: '2026-11-06'
+    file: acs_7198e281b7426bde.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   雪:
     date: '2026-10-08'
     file: acs_9f1476d6a83cd075.mp3
@@ -14137,9 +15269,25 @@ audio:
     rate: -40%
     tier: S0
     voice: zh-CN-YunyangNeural
+  颜色:
+    date: '2026-11-06'
+    file: acs_96dbc16699906c57.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
   风:
     date: '2026-10-23'
     file: acs_f7fdec5be8a8db15.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  飞:
+    date: '2026-11-06'
+    file: acs_03ea34a381e99b00.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%
@@ -14300,6 +15448,14 @@ audio:
   黑:
     date: '2026-09-29'
     file: acs_b1bd65366ee3d6c7.mp3
+    lead_ms: 200
+    provider: Azure Speech
+    rate: -40%
+    tier: S0
+    voice: zh-CN-YunyangNeural
+  黑色:
+    date: '2026-11-06'
+    file: acs_435f67518a210cc0.mp3
     lead_ms: 200
     provider: Azure Speech
     rate: -40%

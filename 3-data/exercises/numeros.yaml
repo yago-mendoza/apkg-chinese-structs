@@ -2662,3 +2662,40 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¿Cuántas veces has ido?»'}
     answer: {meaning: '¿Cuántas veces has ido?'}
     comments: []
+  - id: x.dictation.cha.short
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.cha.short]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: cha4, hanzi: 差, pinyin: chà, meaning: faltar (para la hora); ser malo}
+    comments: []
+  - id: x.produce.cha.short
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.cha.short]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «faltar (para la hora); ser malo»? Escribe el pinyin.'}
+    answer: {typed: cha4, hanzi: 差, pinyin: chà, meaning: faltar (para la hora); ser malo}
+    comments: []
+  - id: x.read.cha.short
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.cha.short]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 差}
+    answer: {hanzi: 差, pinyin: chà, meaning: faltar (para la hora); ser malo}
+    comments: []
+  - id: x.contrast.cha.short
+    added: 2026-11-06
+    lang: es
+    type: contrast
+    group: g.cha-cha
+    targets: [w.cha.short]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 差, pinyin: chà, meaning: faltar (para la hora); ser malo}
+    comments: []

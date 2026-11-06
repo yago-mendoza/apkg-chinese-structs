@@ -532,3 +532,54 @@ entries:
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
     comments:
       - {date: '2026-10-31', kind: tip, private: false, text: '更多 es «más cantidad» (我想学更多中文); 多 + verbo + 一点, «un poco más que ahora» (每天多学一点).'}
+      - {date: '2026-11-06', kind: usage, private: false, text: 'También se oye 学多一点 (el verbo y luego 多一点), sobre todo en el sur; las dos se entienden. La forma de siempre es 多学一点.'}
+  - id: st.hui-lugar
+    kind: structure
+    use: say
+    pattern: '回 + {Lugar}'
+    refs: [w.hui.return]
+    meaning: {en: 'Going back somewhere: the place goes right after 回.', es: 'Volver a un sitio: el sitio va justo detrás de 回.'}
+    examples: [s.ni-shenme-shihou-hui-xibanya, s.wo-xiang-hui-xibanya]
+    contrast:
+      right: s.ni-shenme-shihou-hui-xibanya
+      why: {en: '回 already means "go back": the place goes after it. 来 and 去 only say which way, and take no place after them.', es: '回 ya es «volver»: el sitio va detrás. 来 y 去 solo dicen hacia dónde, y no llevan el sitio detrás (por eso no hay 回来家).'}
+      wrong: 你什么时候回来西班牙？
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: tip, private: false, text: '回家 «volver a casa»: el sitio va detrás de 回. 回来 «volver aquí» y 回去 «volver allí» ya llevan la dirección: 你什么时候回来？ «¿cuándo vuelves?». Si quieres los dos: 回家来, pero basta con 回家.'}
+  - id: w.de.adv
+    use: hear
+    role: function
+    kind: word
+    hanzi: 地
+    pinyin: de
+    meaning: {es: 'partícula: cómo se hace algo (delante del verbo)', en: 'particle: adverbial marker'}
+    pos: particula
+    pos_reason: 'Aquí es la partícula átona de 高兴地走了, no 地 dì «tierra».'
+    accept_pinyin_mismatch: 'partícula átona: de, no dì'
+    tts: 'de 5'
+    relations: [w.de, w.de.complement]
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 'Une un adjetivo con el verbo que describe: 他高兴地走了 «se fue contento». Suena igual que 的 y que el 得 de 说得很好: los tres son de, átonos.'}
+  - id: g.de-de-de
+    kind: group
+    basis: homophone
+    title: '的, 地 y 得: tres de'
+    explanation: 'Los tres son de, átonos, y unen piezas distintas: 的 lo que describe con lo descrito, 地 cómo se hace con el verbo, 得 el verbo con cómo sale.'
+    members:
+      - {ref: w.de, cue: 'antes del nombre: 很好的老师'}
+      - {ref: w.de.adv, cue: 'delante del verbo: 高兴地走了'}
+      - {ref: w.de.complement, cue: 'detrás del verbo: 说得很好'}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments: []
+  - id: w.zhe.dur
+    use: hear
+    role: function
+    kind: word
+    hanzi: 着
+    pinyin: zhe
+    meaning: {es: 'partícula: algo que dura, sigue así', en: 'particle: ongoing state'}
+    source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 'Detrás del verbo, un estado que sigue: 门开着 «la puerta está abierta», 你坐着吧 «quédate sentado». Con otro tono es otra palabra: 着急 zháojí [HSK 4].'}

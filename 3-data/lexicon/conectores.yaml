@@ -236,3 +236,57 @@ entries:
       - {cue: 'algo sigue igual pese a todo: 我还是很累', ref: w.haishi}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
     comments: []
+  - id: w.na.then
+    use: context
+    use_reason: 'otro sentido de 那 que se practica en sus frases (那你太惨了); leer y oír 那 ya tienen tarjeta'
+    role: function
+    kind: word
+    hanzi: 那
+    pinyin: nà
+    meaning: {es: 'entonces, pues (para seguir lo que ha dicho otro)', en: 'then, in that case'}
+    relations: [w.na.that]
+    source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 'Al principio de la frase, 那 no es «ese»: es «entonces, pues». 那你太惨了！ «¡pues pobre de ti!», 那我们走吧 «pues vámonos».'}
+  - id: w.yuanyin
+    use: say
+    role: content
+    kind: word
+    hanzi: 原因
+    pinyin: yuányīn
+    meaning: {es: 'causa, motivo', en: 'reason, cause'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 'El 因 de 原因 es el mismo de 因为 «porque»: la causa.'}
+  - id: w.ranhou
+    use: say
+    role: function
+    kind: word
+    hanzi: 然后
+    pinyin: ránhòu
+    meaning: {es: 'después, luego', en: 'then, afterwards'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: usage, private: false, text: 'Para seguir hablando: 然后呢？ «¿y luego?». Para contar en orden: 先…，然后… «primero…, luego…».'}
+  - id: w.biru
+    use: say
+    role: function
+    kind: word
+    hanzi: 比如
+    pinyin: bǐrú
+    meaning: {es: por ejemplo, en: for example}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []
+  - id: e.duile
+    use: say
+    role: content
+    kind: expression
+    hanzi: 对了
+    pinyin: duì le
+    meaning: {es: 'por cierto; ¡ah, ya!', en: by the way}
+    level: 1
+    level_reason: muy de conversación; 对 y 了 son HSK 1
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments:
+      - {date: '2026-11-06', kind: usage, private: false, text: 'Para cambiar de tema o acordarte de algo: 对了，你明天有时间吗？ «por cierto, ¿tienes tiempo mañana?». 也对 es otra cosa: «eso también es verdad».'}
+      - {date: '2026-11-06', kind: linguistic, private: false, text: 'Palabra a palabra: 对 «correcto» + 了, el cambio: «¡ah, cierto!», algo que acaba de venirte a la cabeza.'}

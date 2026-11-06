@@ -1,0 +1,111 @@
+# Ejercicios · Colores. Esquema: 3-data/README.md
+
+exercises:
+  - id: x.dictation.yanse
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.yanse]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yan2 se4, hanzi: 颜色, pinyin: yánsè, meaning: color}
+    comments: []
+  - id: x.produce.yanse
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.yanse]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «color»? Escribe el pinyin.'}
+    answer: {typed: yan2 se4, hanzi: 颜色, pinyin: yánsè, meaning: color}
+    comments: []
+  - id: x.read.yanse
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.yanse]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 颜色}
+    answer: {hanzi: 颜色, pinyin: yánsè, meaning: color}
+    comments: []
+  - id: x.dictation.hongse
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.hongse]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hong2 se4, hanzi: 红色, pinyin: hóngsè, meaning: rojo}
+    comments: []
+  - id: x.read.hongse
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.hongse]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 红色}
+    answer: {hanzi: 红色, pinyin: hóngsè, meaning: rojo}
+    comments: []
+  - id: x.dictation.heise
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.heise]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hei1 se4, hanzi: 黑色, pinyin: hēisè, meaning: negro (el color)}
+    comments: []
+  - id: x.read.heise
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.heise]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 黑色}
+    answer: {hanzi: 黑色, pinyin: hēisè, meaning: negro (el color)}
+    comments: []
+  - id: x.dictation.baise
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.baise]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bai2 se4, hanzi: 白色, pinyin: báisè, meaning: blanco (el color)}
+    comments: []
+  - id: x.read.baise
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.baise]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 白色}
+    answer: {hanzi: 白色, pinyin: báisè, meaning: blanco (el color)}
+    comments: []
+  - id: x.charsound.se
+    added: 2026-10-31
+    lang: es
+    type: charsound
+    targets: [w.baise, w.lvse]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 色}
+    answer: {typed: se4, hanzi: 色, pinyin: sè, meaning: 'Sale en 白色 báisè «blanco (el color)», 绿色 lǜsè «verde».'}
+    comments: []
+  - id: x.dictation.lvse
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.lvse]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lü4 se4, hanzi: 绿色, pinyin: lǜsè, meaning: verde}
+    comments: []
+  - id: x.read.lvse
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.lvse]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 绿色}
+    answer: {hanzi: 绿色, pinyin: lǜsè, meaning: verde}
+    comments: []

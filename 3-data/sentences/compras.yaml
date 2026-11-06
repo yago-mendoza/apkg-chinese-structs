@@ -916,3 +916,33 @@ sentences:
       - {text: ？}
     translation: {en: 'Where is my bag?', es: '¿Dónde está mi bolso?'}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
+  - id: s.gongxi-ni-maidao-liang-gongjin-pingguo
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: gōngxǐ, ref: e.gongxi, text: 恭喜}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: mǎi, ref: w.mai, text: 买}
+      - {pinyin: dào, ref: w.dao.reach, text: 到}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {pinyin: liǎng, ref: w.liang, text: 两}
+      - {pinyin: gōngjīn, ref: w.gongjin, text: 公斤}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: píngguǒ, ref: w.pingguo, text: 苹果}
+      - {text: ！}
+    translation: {en: 'Congratulations, you got two kilos of the apples you like!', es: '¡Enhorabuena, has comprado dos kilos de las manzanas que te gustan!'}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-hai-mei-mai-jipiao
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: hái, ref: w.hai.still, text: 还}
+      - {pinyin: méi, ref: w.mei, text: 没}
+      - {pinyin: mǎi, ref: w.mai, text: 买}
+      - {pinyin: jīpiào, ref: w.jipiao, text: 机票}
+      - {text: 。}
+    translation: {en: I haven't bought the plane ticket yet., es: Todavía no he comprado el billete de avión.}
+    source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}

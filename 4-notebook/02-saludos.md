@@ -40,7 +40,8 @@
 - 🟡🃏 近 jìn [tɕin˥˩] · cerca · _adjetivo_
 - ✅🃏 早 zǎo [tsɑʊ˧˩˧] · temprano, pronto · _adjetivo_ · 你来得很早 «has llegado temprano»: con 得, tras el verbo. Suelto, por la mañana, 早！ es «¡buenos días!».
 - ✅🃏 哈喽 hālou [xa˥ loʊ] · hola (informal) · _interjección_ · Palabra a palabra: 哈 hā y 喽 lou solo imitan el sonido de hello. Informal y simpático; con desconocidos, 你好. · 哈 y 拿 llevan 合 hé, que ya no da su sonido.
-- ✅🃏 嗨 hāi [xaɪ˥] · ¡hola! (informal) · _interjección_ · Préstamo del inglés hi, como 哈喽 de hello: entre amigos. Entre amigos también se saluda solo con el nombre.
+- ✅🃏 嗨 hāi [xaɪ˥] · ¡hola! (informal) · _interjección_ · Préstamo del inglés hi, como 哈喽 de hello: entre amigos. Entre amigos también se saluda solo con el nombre. · 口 «boca» + 海 hǎi «mar», que da el sonido: un saludo que suena a «hi».
+- ✅🃏 周末愉快 zhōumò yúkuài [ʈʂoʊ˥ mwɔ˥˩ y˧˥ kʰwaɪ˥˩] · ¡buen fin de semana! · _expresión_ · Así se despidió la profesora el viernes 6. · Palabra a palabra: 周末 «fin de semana» + 愉快 yúkuài [HSK 6] «alegre, agradable». Igual se dice 生日快乐 para el cumpleaños.
 
 ## Saludos con 好
 
@@ -149,3 +150,4 @@ La misma sílaba: solo los separa el tono.
 - ✅🃏 恭喜你！ · gōngxǐ nǐ · ¡Felicidades!
 - ✅🃏 我还好。 · wǒ hái hǎo · Voy tirando.
 - ✅🃏 好啊，明天见！ · hǎo a míngtiān jiàn · ¡Vale, hasta mañana!
+- ✅🃏 你什么时候回来？ · nǐ shénme shíhou huílai · ¿Cuándo vuelves (aquí)?

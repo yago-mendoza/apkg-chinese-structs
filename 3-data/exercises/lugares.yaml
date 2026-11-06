@@ -1636,3 +1636,425 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «No tengo coche.»'}
     answer: {meaning: No tengo coche.}
     comments: []
+  - id: x.nuance.huijia-huilai
+    added: '2026-11-06'
+    lang: es
+    type: nuance
+    targets: [w.huijia, w.huilai]
+    skills: [comprehension, discrimination]
+    prompt: {text: '你什么时候回家？ y 你什么时候回来？: ¿qué cambia?'}
+    answer: {meaning: '回家: volver a casa (el sitio lo dice 家). 回来: volver aquí, donde estoy yo; si te vas lejos, 回去.'}
+    comments: []
+  - id: x.produce.yiyuan
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.yiyuan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «hospital»? Escribe el pinyin.'}
+    answer: {typed: yi1 yuan4, hanzi: 医院, pinyin: yīyuàn, meaning: hospital}
+    comments: []
+  - id: x.dictation.fei
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.fei]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fei1, hanzi: 飞, pinyin: fēi, meaning: volar; ir en avión}
+    comments: []
+  - id: x.produce.fei
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.fei]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «volar; ir en avión»? Escribe el pinyin.'}
+    answer: {typed: fei1, hanzi: 飞, pinyin: fēi, meaning: volar; ir en avión}
+    comments: []
+  - id: x.read.fei
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.fei]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 飞}
+    answer: {hanzi: 飞, pinyin: fēi, meaning: volar; ir en avión}
+    comments: []
+  - id: x.dictation.laidao
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.laidao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lai2 dao4, hanzi: 来到, pinyin: láidào, meaning: llegar a (un sitio)}
+    comments: []
+  - id: x.read.laidao
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.laidao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 来到}
+    answer: {hanzi: 来到, pinyin: láidào, meaning: llegar a (un sitio)}
+    comments: []
+  - id: x.dictation.guangchang
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.guangchang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: guang3 chang3, hanzi: 广场, pinyin: guǎngchǎng, meaning: plaza}
+    comments: []
+  - id: x.read.guangchang
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.guangchang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 广场}
+    answer: {hanzi: 广场, pinyin: guǎngchǎng, meaning: plaza}
+    comments: []
+  - id: x.tones.guangchang
+    added: 2026-11-06
+    lang: es
+    type: tones
+    targets: [w.guangchang]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 广场, pinyin: guang chang}
+    answer: {typed: '33', hanzi: 广场, pinyin: guǎngchǎng, meaning: plaza}
+    comments: []
+  - id: x.listen.wo-mingtian-qu-yiyuan
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.wo-mingtian-qu-yiyuan
+    targets: [s.wo-mingtian-qu-yiyuan]
+    context: [w.wo, w.mingtian, w.qu, w.yiyuan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mañana voy al hospital.}
+    comments: []
+  - id: x.produce.wo-mingtian-qu-yiyuan
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-mingtian-qu-yiyuan
+    targets: [s.wo-mingtian-qu-yiyuan]
+    context: [w.wo, w.mingtian, w.qu, w.yiyuan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mañana voy al hospital.»'}
+    answer: {meaning: Mañana voy al hospital.}
+    comments: []
+  - id: x.listen.wo-mingtian-qu-chaoshi-ni-gen-wo-qu-ma
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.wo-mingtian-qu-chaoshi-ni-gen-wo-qu-ma
+    targets: [s.wo-mingtian-qu-chaoshi-ni-gen-wo-qu-ma]
+    context: [w.wo, w.mingtian, w.qu, w.chaoshi, w.ni, w.gen, w.yiqi, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Mañana voy al súper, ¿vienes conmigo?'}
+    comments: []
+  - id: x.produce.wo-mingtian-qu-chaoshi-ni-gen-wo-qu-ma
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-mingtian-qu-chaoshi-ni-gen-wo-qu-ma
+    targets: [s.wo-mingtian-qu-chaoshi-ni-gen-wo-qu-ma]
+    context: [w.wo, w.mingtian, w.qu, w.chaoshi, w.ni, w.gen, w.yiqi, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mañana voy al súper, ¿vienes conmigo?»'}
+    answer: {meaning: 'Mañana voy al súper, ¿vienes conmigo?'}
+    comments: []
+  - id: x.produce.ni-shenme-shihou-huijia
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-shenme-shihou-huijia
+    targets: [s.ni-shenme-shihou-huijia]
+    context: [w.ni, e.shenmeshihou, w.huijia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuándo vuelves a casa?»'}
+    answer: {meaning: '¿Cuándo vuelves a casa?'}
+    comments: []
+  - id: x.produce.ni-shenme-shihou-hui-xibanya
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-shenme-shihou-hui-xibanya
+    targets: [s.ni-shenme-shihou-hui-xibanya]
+    context: [w.ni, e.shenmeshihou, w.hui.return, w.xibanya]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuándo vuelves a España?»'}
+    answer: {meaning: '¿Cuándo vuelves a España?'}
+    comments: []
+  - id: x.produce.wo-mingtian-fei-beijing
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-mingtian-fei-beijing
+    targets: [s.wo-mingtian-fei-beijing]
+    context: [w.wo, w.mingtian, w.fei, w.beijing]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mañana vuelo a Pekín.»'}
+    answer: {meaning: Mañana vuelo a Pekín.}
+    comments: []
+  - id: x.listen.huanying-laidao-zhongguo
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.huanying-laidao-zhongguo
+    targets: [s.huanying-laidao-zhongguo]
+    context: [w.huanying, w.laidao, w.zhongguo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Bienvenido a China!}
+    comments: []
+  - id: x.dictation.huijia
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.huijia]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hui2 jia1, hanzi: 回家, pinyin: huíjiā, meaning: volver a casa}
+    comments: []
+  - id: x.produce.huijia
+    added: 2026-10-01
+    lang: es
+    type: produce
+    targets: [w.huijia]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «volver a casa»? Escribe el pinyin.'}
+    answer: {typed: hui2 jia1, hanzi: 回家, pinyin: huíjiā, meaning: volver a casa}
+    comments: []
+  - id: x.read.huijia
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.huijia]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 回家}
+    answer: {hanzi: 回家, pinyin: huíjiā, meaning: volver a casa}
+    comments: []
+  - id: x.tones.huijia
+    added: 2026-10-02
+    lang: es
+    type: tones
+    targets: [w.huijia]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '21', hanzi: 回家, pinyin: huíjiā, meaning: volver a casa}
+    comments: []
+  - id: x.dictation.huidao
+    added: 2026-10-31
+    lang: es
+    type: listen
+    targets: [w.huidao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hui2 dao4, hanzi: 回到, pinyin: huídào, meaning: 'volver a, llegar de vuelta'}
+    comments: []
+  - id: x.produce.huidao
+    added: 2026-10-31
+    lang: es
+    type: produce
+    targets: [w.huidao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «volver a, llegar de vuelta»? Escribe el pinyin.'}
+    answer: {typed: hui2 dao4, hanzi: 回到, pinyin: huídào, meaning: 'volver a, llegar de vuelta'}
+    comments: []
+  - id: x.read.huidao
+    added: 2026-10-31
+    lang: es
+    type: read
+    targets: [w.huidao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 回到}
+    answer: {hanzi: 回到, pinyin: huídào, meaning: 'volver a, llegar de vuelta'}
+    comments: []
+  - id: x.cloze.jinlai
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.qing-jinlai
+    gap: w.jinlai
+    targets: [w.jinlai]
+    context: [w.qing]
+    skills: [production, pinyin]
+    prompt: {text: '¿进来 o 进去? «Pasa, por favor.» (entra aquí, donde estoy)'}
+    answer: {typed: jin4 lai2, hanzi: 进来, pinyin: jìnlái, meaning: '进来: hacia donde está quien habla.'}
+    comments: []
+  - id: x.dictation.jinlai
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [w.jinlai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jin4 lai2, hanzi: 进来, pinyin: jìnlái, meaning: entrar (hacia aquí)}
+    comments: []
+  - id: x.read.jinlai
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [w.jinlai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 进来}
+    answer: {hanzi: 进来, pinyin: jìnlái, meaning: entrar (hacia aquí)}
+    comments: []
+  - id: x.tones.jinlai
+    added: 2026-10-10
+    lang: es
+    type: tones
+    targets: [w.jinlai]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '42', hanzi: 进来, pinyin: jìnlái, meaning: entrar (hacia aquí)}
+    comments: []
+  - id: x.nuance.jinlai-jinqu-chulai-chuqu
+    added: '2026-11-06'
+    lang: es
+    type: nuance
+    targets: [w.jinlai, w.jinqu, w.chulai, w.chuqu]
+    skills: [comprehension, discrimination]
+    prompt: {text: '进来, 进去, 出来, 出去: ¿hacia dónde va cada uno?'}
+    answer: {meaning: 进 entra y 出 sale; 来 viene hacia quien habla y 去 se aleja. 请进来 «pasa (aquí)»; 我出去一下 «salgo un momento».}
+    comments: []
+  - id: x.cloze.jinqu
+    added: '2026-10-10'
+    lang: es
+    type: cloze
+    sentence: s.bie-jinqu
+    gap: w.jinqu
+    targets: [w.jinqu]
+    context: [w.bie]
+    skills: [production, pinyin]
+    prompt: {text: '¿进来 o 进去? «¡No entres ahí!»'}
+    answer: {typed: jin4 qu4, hanzi: 进去, pinyin: jìnqù, meaning: '进去: alejándose de quien habla, hacia allí.'}
+    comments: []
+  - id: x.dictation.jinqu
+    added: 2026-10-10
+    lang: es
+    type: listen
+    targets: [w.jinqu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jin4 qu4, hanzi: 进去, pinyin: jìnqù, meaning: entrar (hacia allí)}
+    comments: []
+  - id: x.read.jinqu
+    added: 2026-10-10
+    lang: es
+    type: read
+    targets: [w.jinqu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 进去}
+    answer: {hanzi: 进去, pinyin: jìnqù, meaning: entrar (hacia allí)}
+    comments: []
+  - id: x.cloze.chulai
+    added: '2026-10-11'
+    lang: es
+    type: cloze
+    sentence: s.kuai-chulai
+    gap: w.chulai
+    targets: [w.chulai]
+    context: [w.kuai.fast]
+    skills: [production, pinyin]
+    prompt: {text: '¿出来 o 出去? «¡Sal ya!» (te espero fuera)'}
+    answer: {typed: chu1 lai, hanzi: 出来, pinyin: chūlai, meaning: '出来: sales hacia donde está quien habla.'}
+    comments: []
+  - id: x.dictation.chulai
+    added: 2026-10-11
+    lang: es
+    type: listen
+    targets: [w.chulai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chu1 lai5, hanzi: 出来, pinyin: chūlai, meaning: salir (hacia aquí)}
+    comments: []
+  - id: x.read.chulai
+    added: 2026-10-11
+    lang: es
+    type: read
+    targets: [w.chulai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 出来}
+    answer: {hanzi: 出来, pinyin: chūlai, meaning: salir (hacia aquí)}
+    comments: []
+  - id: x.tones.chulai
+    added: 2026-10-11
+    lang: es
+    type: tones
+    targets: [w.chulai]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 出来, pinyin: chu lai}
+    answer: {typed: '15', hanzi: 出来, pinyin: chūlai, meaning: salir (hacia aquí)}
+    comments: []
+  - id: x.dictation.chuqu
+    added: 2026-10-01
+    lang: es
+    type: listen
+    targets: [w.chuqu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chu1 qu5, hanzi: 出去, pinyin: chūqu, meaning: salir (hacia fuera)}
+    comments: []
+  - id: x.read.chuqu
+    added: 2026-10-01
+    lang: es
+    type: read
+    targets: [w.chuqu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 出去}
+    answer: {hanzi: 出去, pinyin: chūqu, meaning: salir (hacia fuera)}
+    comments: []
+  - id: x.tones.chuqu
+    added: 2026-10-01
+    lang: es
+    type: tones
+    targets: [w.chuqu]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 出去, pinyin: chu qu}
+    answer: {typed: '15', hanzi: 出去, pinyin: chūqu, meaning: salir (hacia fuera)}
+    comments: []
+  - id: x.cloze.chuqu
+    added: '2026-10-11'
+    lang: es
+    type: cloze
+    sentence: s.women-chuqu-ba
+    gap: w.chuqu
+    targets: [w.chuqu]
+    context: [w.women, w.ba.particle]
+    skills: [production, pinyin]
+    prompt: {text: '¿出来 o 出去? «Salgamos.» (estáis dentro)'}
+    answer: {typed: chu1 qu, hanzi: 出去, pinyin: chūqu, meaning: '出去: salir alejándose de donde estáis.'}
+    comments: []
+  - id: x.nuance.chuqu-zou-likai
+    added: '2026-10-23'
+    lang: es
+    type: nuance
+    targets: [w.chuqu, w.zou, w.likai]
+    skills: [comprehension, discrimination]
+    prompt: {text: '出去, 走 y 离开: ¿qué cambia?'}
+    answer: {meaning: '出去: salir afuera (我出去一下). 走: irse (我要走了). 离开: dejar un sitio, a menudo para tiempo (他离开中国了).'}
+    comments: []
+  - id: x.produce.wo-xiang-hui-xibanya
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-xiang-hui-xibanya
+    targets: [s.wo-xiang-hui-xibanya]
+    context: [w.wo, w.xiang, w.hui.return, w.xibanya]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero volver a España.»'}
+    answer: {meaning: Quiero volver a España.}
+    comments: []

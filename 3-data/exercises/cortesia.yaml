@@ -2549,8 +2549,8 @@ exercises:
     targets: [s.wo-ziji-lai]
     context: [w.wo, w.ziji, w.lai]
     skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «Ya lo hago yo.»'}
-    answer: {meaning: Ya lo hago yo.}
+    prompt: {text: 'Dilo en chino, en voz alta: «Ya lo hago yo solo (no hace falta que me ayudes).»'}
+    answer: {meaning: 'Ya lo hago yo solo (no hace falta que me ayudes).'}
     comments: []
   - id: x.nuance.bang-bangmang
     added: '2026-10-31'
@@ -2613,6 +2613,7 @@ exercises:
     targets: [s.yao-wo-bang-ni-ma]
     context: [w.yao, w.wo, w.bang, w.ni, w.ma]
     skills: [production, speaking]
+    also: [s.yao-bu-yao-wo-bang-ni]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Quieres que te ayude?»'}
     answer: {meaning: '¿Quieres que te ayude?'}
     comments: []
@@ -2625,7 +2626,7 @@ exercises:
     context: [w.ni, w.xiang, w.rang, w.wo, w.bang, w.ma]
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Quieres que te ayude?'}
+    answer: {meaning: '¿Quieres que te ayude? Más corto y más de diario: 要我帮你吗？ o 要不要我帮你？'}
     comments: []
   - id: x.produce.wo-bang-ni-ba
     added: 2026-10-31
@@ -2637,4 +2638,211 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Te ayudo.»'}
     answer: {meaning: Te ayudo.}
+    comments: []
+  - id: x.cloze.yi.xia-ding-dian.a
+    added: '2026-11-06'
+    lang: es
+    type: cloze
+    sentence: s.qing-ni-kan-yixia
+    gap: w.yixia
+    targets: [w.yixia]
+    context: [w.qing, w.ni, w.kan]
+    skills: [production, pinyin]
+    prompt: {text: '¿一下, 一定 o 一点? Completa en pinyin: «Mírelo, por favor.»'}
+    answer: {hanzi: 一下, meaning: 'un momento, un poco (detrás del verbo)', pinyin: yíxià, typed: yi2 xia4}
+    comments: []
+  - id: x.choice.haode-qi-dian
+    added: '2026-11-06'
+    lang: es
+    type: speak
+    targets: [e.haode]
+    skills: [production, speaking]
+    prompt:
+      text: Elige. Un amigo te propone esto, y te va bien.
+      said: 我们七点见，好吗？
+      said_es: ¿Quedamos a las siete?
+      options: [是的, 好的, 没关系]
+    answer: {choice: b, hanzi: 好的, pinyin: hǎo de, meaning: 好的 acepta lo que te proponen. 是的 confirma que algo es así; 没关系 quita importancia a una disculpa.}
+    comments: []
+  - id: x.choice.shide-shouji
+    added: '2026-11-06'
+    lang: es
+    type: speak
+    targets: [e.shide]
+    skills: [production, speaking]
+    prompt:
+      text: Elige. En el bar te preguntan esto, y el móvil es tuyo.
+      said: 这是你的手机吗？
+      said_es: ¿Este móvil es tuyo?
+      options: [是的, 好的, 不客气]
+    answer: {choice: a, hanzi: 是的, pinyin: shì de, meaning: '是的: «sí, es mío». 好的 sería aceptar algo que te piden o proponen.'}
+    comments: []
+  - id: x.nuance.qingshaodeng-dengyixia
+    added: '2026-11-06'
+    lang: es
+    type: nuance
+    targets: [e.shaodeng, w.deng]
+    skills: [comprehension, discrimination]
+    prompt: {text: '请稍等 y 等一下吧: ¿qué cambia?'}
+    answer: {meaning: '请稍等: «espere un momento», cortés, lo dice quien te atiende. 等一下吧: «esperemos un poco», una propuesta entre amigos.'}
+    comments: []
+  - id: x.dictation.xing.ok
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.xing.ok]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xing2, hanzi: 行, pinyin: xíng, meaning: 'vale, está bien; (algo) sirve'}
+    comments: []
+  - id: x.produce.xing.ok
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.xing.ok]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «vale, está bien; (algo) sirve»? Escribe el pinyin.'}
+    answer: {typed: xing2, hanzi: 行, pinyin: xíng, meaning: 'vale, está bien; (algo) sirve'}
+    comments: []
+  - id: x.read.xing.ok
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.xing.ok]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 行}
+    answer: {hanzi: 行, pinyin: xíng, meaning: 'vale, está bien; (algo) sirve'}
+    comments: []
+  - id: x.dictation.shima
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [e.shima]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shi4 ma5, hanzi: 是吗, pinyin: shì ma, meaning: '¿ah, sí?'}
+    comments: []
+  - id: x.produce.shima
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [e.shima]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¿ah, sí?»? Escribe el pinyin.'}
+    answer: {typed: shi4 ma5, hanzi: 是吗, pinyin: shì ma, meaning: '¿ah, sí?'}
+    comments: []
+  - id: x.read.shima
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [e.shima]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 是吗}
+    answer: {hanzi: 是吗, pinyin: shì ma, meaning: '¿ah, sí?'}
+    comments: []
+  - id: x.tones.shima
+    added: 2026-11-06
+    lang: es
+    type: tones
+    targets: [e.shima]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 是吗, pinyin: shi ma}
+    answer: {typed: '45', hanzi: 是吗, pinyin: shì ma, meaning: '¿ah, sí?'}
+    comments: []
+  - id: x.listen.qing-shaodeng-wo-qu-na
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.qing-shaodeng-wo-qu-na
+    targets: [s.qing-shaodeng-wo-qu-na]
+    context: [w.qing, e.shaodeng, w.wo, w.qu, w.na.take]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Espere un momento, voy a buscarlo.'}
+    comments: []
+  - id: x.produce.deng-yixia-ba-ta-mashang-lai
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.deng-yixia-ba-ta-mashang-lai
+    targets: [s.deng-yixia-ba-ta-mashang-lai]
+    context: [w.deng, w.yixia, w.ba.particle, w.ta.he, w.mashang, w.lai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Esperemos un poco: ya viene.»'}
+    answer: {meaning: 'Esperemos un poco: ya viene.'}
+    comments: []
+  - id: x.produce.wo-ye-shi
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-ye-shi
+    targets: [s.wo-ye-shi]
+    context: [w.wo, w.ye, w.shi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Yo también!»'}
+    answer: {meaning: ¡Yo también!}
+    comments: []
+  - id: x.produce.xing-ma
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.xing-ma
+    targets: [s.xing-ma]
+    context: [w.xing.ok, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Te parece bien?»'}
+    answer: {meaning: '¿Te parece bien?'}
+    comments: []
+  - id: x.produce.hao-bu-hao
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.hao-bu-hao
+    targets: [s.hao-bu-hao]
+    context: [w.hao, w.bu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Vale? ¿Te parece?»'}
+    answer: {meaning: '¿Vale? ¿Te parece?'}
+    comments: []
+  - id: x.produce.dou-xing
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.dou-xing
+    targets: [s.dou-xing]
+    context: [w.dou, w.xing.ok]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Cualquiera me vale.»'}
+    answer: {meaning: Cualquiera me vale.}
+    comments: []
+  - id: x.listen.yao-bu-yao-wo-bang-ni
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.yao-bu-yao-wo-bang-ni
+    targets: [s.yao-bu-yao-wo-bang-ni]
+    context: [w.yao, w.bu, w.wo, w.bang, w.ni]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Te ayudo o no?'}
+    comments: []
+  - id: x.nuance.meiwenti-haowenti
+    added: '2026-11-06'
+    lang: es
+    type: nuance
+    targets: [e.meiwenti, w.wenti]
+    skills: [comprehension, discrimination]
+    prompt: {text: '没问题！ y 好问题！: ¿qué cambia?'}
+    answer: {meaning: '没问题: «sin problema, claro», la respuesta hecha. 好问题: «¡buena pregunta!». 问题 es pregunta y también problema.'}
+    comments: []
+  - id: x.contrast.xing.ok
+    added: 2026-11-06
+    lang: es
+    type: contrast
+    group: g.xing-xing
+    targets: [w.xing.ok]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 行, pinyin: xíng, meaning: 'vale, está bien; (algo) sirve'}
     comments: []

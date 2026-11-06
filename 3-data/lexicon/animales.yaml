@@ -191,6 +191,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 熊 «oso» + 猫 «gato».'}
       - {kind: teacher, private: false, date: '2026-10-08', text: 'En clase: 两只熊猫 «dos pandas», con 只, el clasificador de los animales.'}
+      - {date: '2026-11-06', kind: linguistic, private: false, text: '熊 «oso» + 猫 «gato»: el oso-gato. Muchos animales se nombran así, por piezas: 河马 «caballo de río» (hipopótamo).'}
   - id: w.xiaomao
     use: hear
     role: content

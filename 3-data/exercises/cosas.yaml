@@ -826,34 +826,6 @@ exercises:
     prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 这么, pinyin: zhe me}
     answer: {typed: '45', hanzi: 这么, pinyin: zhème, meaning: 'tan, así de'}
     comments: []
-  - id: x.dictation.chuqu
-    added: 2026-10-01
-    lang: es
-    type: listen
-    targets: [w.chuqu]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: chu1 qu5, hanzi: 出去, pinyin: chūqu, meaning: salir (hacia fuera)}
-    comments: []
-  - id: x.read.chuqu
-    added: 2026-10-01
-    lang: es
-    type: read
-    targets: [w.chuqu]
-    skills: [reading, pinyin]
-    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 出去}
-    answer: {hanzi: 出去, pinyin: chūqu, meaning: salir (hacia fuera)}
-    comments: []
-  - id: x.tones.chuqu
-    added: 2026-10-01
-    lang: es
-    type: tones
-    targets: [w.chuqu]
-    skills: [tones, pinyin]
-    refs: [p.neutral-tone]
-    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 出去, pinyin: chu qu}
-    answer: {typed: '15', hanzi: 出去, pinyin: chūqu, meaning: salir (hacia fuera)}
-    comments: []
   - id: x.produce.wo-qu-guo-beijing
     added: 2026-10-01
     lang: es
@@ -1734,30 +1706,6 @@ exercises:
     prompt: {text: '¿不 o 没? «Todavía no ha venido.»'}
     answer: {typed: mei2, hanzi: 没, pinyin: méi, meaning: '没: lo que no ha pasado (todavía).'}
     comments: []
-  - id: x.cloze.jinlai
-    added: '2026-10-10'
-    lang: es
-    type: cloze
-    sentence: s.qing-jinlai
-    gap: w.jinlai
-    targets: [w.jinlai]
-    context: [w.qing]
-    skills: [production, pinyin]
-    prompt: {text: '¿进来 o 进去? «Pasa, por favor.» (entra aquí, donde estoy)'}
-    answer: {typed: jin4 lai2, hanzi: 进来, pinyin: jìnlái, meaning: '进来: hacia donde está quien habla.'}
-    comments: []
-  - id: x.cloze.jinqu
-    added: '2026-10-10'
-    lang: es
-    type: cloze
-    sentence: s.bie-jinqu
-    gap: w.jinqu
-    targets: [w.jinqu]
-    context: [w.bie]
-    skills: [production, pinyin]
-    prompt: {text: '¿进来 o 进去? «¡No entres ahí!»'}
-    answer: {typed: jin4 qu4, hanzi: 进去, pinyin: jìnqù, meaning: '进去: alejándose de quien habla, hacia allí.'}
-    comments: []
   - id: x.situation.zai-zuo-shenme
     added: '2026-10-10'
     lang: es
@@ -1787,52 +1735,6 @@ exercises:
     skills: [reading, discrimination]
     prompt: {text: '¿Cuál es jìn, «entrar»?'}
     answer: {hanzi: 进, pinyin: jìn, meaning: entrar}
-    comments: []
-  - id: x.dictation.jinlai
-    added: 2026-10-10
-    lang: es
-    type: listen
-    targets: [w.jinlai]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: jin4 lai2, hanzi: 进来, pinyin: jìnlái, meaning: entrar (hacia aquí)}
-    comments: []
-  - id: x.read.jinlai
-    added: 2026-10-10
-    lang: es
-    type: read
-    targets: [w.jinlai]
-    skills: [reading, pinyin]
-    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 进来}
-    answer: {hanzi: 进来, pinyin: jìnlái, meaning: entrar (hacia aquí)}
-    comments: []
-  - id: x.tones.jinlai
-    added: 2026-10-10
-    lang: es
-    type: tones
-    targets: [w.jinlai]
-    skills: [tones, pinyin]
-    refs: []
-    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
-    answer: {typed: '42', hanzi: 进来, pinyin: jìnlái, meaning: entrar (hacia aquí)}
-    comments: []
-  - id: x.dictation.jinqu
-    added: 2026-10-10
-    lang: es
-    type: listen
-    targets: [w.jinqu]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: jin4 qu4, hanzi: 进去, pinyin: jìnqù, meaning: entrar (hacia allí)}
-    comments: []
-  - id: x.read.jinqu
-    added: 2026-10-10
-    lang: es
-    type: read
-    targets: [w.jinqu]
-    skills: [reading, pinyin]
-    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 进去}
-    answer: {hanzi: 进去, pinyin: jìnqù, meaning: entrar (hacia allí)}
     comments: []
   - id: x.dictation.zuo.do
     added: 2026-10-10
@@ -1990,30 +1892,6 @@ exercises:
     prompt: {text: '¿会, 能, 可以 o 得? «Tengo que comprar zapatos.»'}
     answer: {typed: dei3, hanzi: 得, pinyin: děi, meaning: '得 děi: tener que.'}
     comments: []
-  - id: x.cloze.chulai
-    added: '2026-10-11'
-    lang: es
-    type: cloze
-    sentence: s.kuai-chulai
-    gap: w.chulai
-    targets: [w.chulai]
-    context: [w.kuai.fast]
-    skills: [production, pinyin]
-    prompt: {text: '¿出来 o 出去? «¡Sal ya!» (te espero fuera)'}
-    answer: {typed: chu1 lai, hanzi: 出来, pinyin: chūlai, meaning: '出来: sales hacia donde está quien habla.'}
-    comments: []
-  - id: x.cloze.chuqu
-    added: '2026-10-11'
-    lang: es
-    type: cloze
-    sentence: s.women-chuqu-ba
-    gap: w.chuqu
-    targets: [w.chuqu]
-    context: [w.women, w.ba.particle]
-    skills: [production, pinyin]
-    prompt: {text: '¿出来 o 出去? «Salgamos.» (estáis dentro)'}
-    answer: {typed: chu1 qu, hanzi: 出去, pinyin: chūqu, meaning: '出去: salir alejándose de donde estáis.'}
-    comments: []
   - id: x.situation.wo-zhende-zhidao
     added: '2026-10-11'
     lang: es
@@ -2063,34 +1941,6 @@ exercises:
     skills: [listening, tones, discrimination]
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 走, pinyin: zǒu, meaning: irse; andar}
-    comments: []
-  - id: x.dictation.chulai
-    added: 2026-10-11
-    lang: es
-    type: listen
-    targets: [w.chulai]
-    skills: [listening, pinyin, tones]
-    prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: chu1 lai5, hanzi: 出来, pinyin: chūlai, meaning: salir (hacia aquí)}
-    comments: []
-  - id: x.read.chulai
-    added: 2026-10-11
-    lang: es
-    type: read
-    targets: [w.chulai]
-    skills: [reading, pinyin]
-    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 出来}
-    answer: {hanzi: 出来, pinyin: chūlai, meaning: salir (hacia aquí)}
-    comments: []
-  - id: x.tones.chulai
-    added: 2026-10-11
-    lang: es
-    type: tones
-    targets: [w.chulai]
-    skills: [tones, pinyin]
-    refs: [p.neutral-tone]
-    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 出来, pinyin: chu lai}
-    answer: {typed: '15', hanzi: 出来, pinyin: chūlai, meaning: salir (hacia aquí)}
     comments: []
   - id: x.dictation.zenmeban
     added: 2026-10-11
@@ -2691,15 +2541,6 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Quién es esa gente?»'}
     answer: {meaning: '¿Quién es esa gente?'}
-    comments: []
-  - id: x.nuance.chuqu-zou-likai
-    added: '2026-10-23'
-    lang: es
-    type: nuance
-    targets: [w.chuqu, w.zou, w.likai]
-    skills: [comprehension, discrimination]
-    prompt: {text: '出去, 走 y 离开: ¿qué cambia?'}
-    answer: {meaning: '出去: salir afuera (我出去一下). 走: irse (我要走了). 离开: dejar un sitio, a menudo para tiempo (他离开中国了).'}
     comments: []
   - id: x.nuance.kaimen-jinmen
     added: '2026-10-23'
@@ -3348,4 +3189,142 @@ exercises:
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Quiero ducharme primero.}
+    comments: []
+  - id: x.dictation.gan
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.gan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gan4, hanzi: 干, pinyin: gàn, meaning: hacer (coloquial)}
+    comments: []
+  - id: x.produce.gan
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.gan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «hacer (coloquial)»? Escribe el pinyin.'}
+    answer: {typed: gan4, hanzi: 干, pinyin: gàn, meaning: hacer (coloquial)}
+    comments: []
+  - id: x.read.gan
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.gan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 干}
+    answer: {hanzi: 干, pinyin: gàn, meaning: hacer (coloquial)}
+    comments: []
+  - id: x.dictation.dong.move
+    added: 2026-11-06
+    lang: es
+    type: listen
+    targets: [w.dong.move]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dong4, hanzi: 动, pinyin: dòng, meaning: moverse}
+    comments: []
+  - id: x.produce.dong.move
+    added: 2026-11-06
+    lang: es
+    type: produce
+    targets: [w.dong.move]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «moverse»? Escribe el pinyin.'}
+    answer: {typed: dong4, hanzi: 动, pinyin: dòng, meaning: moverse}
+    comments: []
+  - id: x.read.dong.move
+    added: 2026-11-06
+    lang: es
+    type: read
+    targets: [w.dong.move]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 动}
+    answer: {hanzi: 动, pinyin: dòng, meaning: moverse}
+    comments: []
+  - id: x.produce.zhe-dou-shi-ni-de-cuo
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.zhe-dou-shi-ni-de-cuo
+    targets: [s.zhe-dou-shi-ni-de-cuo]
+    context: [w.zhe, w.dou, w.shi, w.ni, w.de, w.cuo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Todo esto es culpa tuya.»'}
+    answer: {meaning: Todo esto es culpa tuya.}
+    comments: []
+  - id: x.listen.men-kai-zhe
+    added: 2026-11-06
+    lang: es
+    type: listen
+    sentence: s.men-kai-zhe
+    targets: [s.men-kai-zhe]
+    context: [w.men, w.kai, w.zhe.dur]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: La puerta está abierta.}
+    comments: []
+  - id: x.produce.wo-shenshang-meiyou-qian
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.wo-shenshang-meiyou-qian
+    targets: [s.wo-shenshang-meiyou-qian]
+    context: [w.wo, w.shenshang, w.meiyou, w.qian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No llevo dinero encima.»'}
+    answer: {meaning: No llevo dinero encima.}
+    comments: []
+  - id: x.produce.ni-zai-gan-shenme
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.ni-zai-gan-shenme
+    targets: [s.ni-zai-gan-shenme]
+    context: [w.ni, w.zai.progressive, w.gan, w.shenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué haces?»'}
+    answer: {meaning: '¿Qué haces?'}
+    comments: []
+  - id: x.produce.bie-dong
+    added: 2026-11-06
+    lang: es
+    type: produce
+    sentence: s.bie-dong
+    targets: [s.bie-dong]
+    context: [w.bie, w.dong.move]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡No te muevas!»'}
+    answer: {meaning: ¡No te muevas!}
+    comments: []
+  - id: x.nuance.tingbujian-buting
+    added: '2026-11-06'
+    lang: es
+    type: nuance
+    targets: [w.ting, w.jian]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我听不见 y 我不听: ¿qué cambia?'}
+    answer: {meaning: '听不见: quieres oír, pero no te llega el sonido. 不听: no quieres escuchar, no haces caso.'}
+    comments: []
+  - id: x.contrast.zhe
+    added: 2026-11-06
+    lang: es
+    type: contrast
+    group: g.zhe-zhe
+    targets: [w.zhe]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 这, pinyin: zhè, meaning: 'este, esto'}
+    comments: []
+  - id: x.contrast.dong.move
+    added: 2026-11-06
+    lang: es
+    type: contrast
+    group: g.dong-dong
+    targets: [w.dong.move]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 动, pinyin: dòng, meaning: moverse}
     comments: []
