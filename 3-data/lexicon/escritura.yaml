@@ -654,7 +654,8 @@ entries:
     level: 7
     level_reason: 'se aprende en 恭喜, de nivel 7 en la lista'
     source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
-    comments: []
+    comments:
+      - {date: '2026-11-11', kind: character, private: false, text: 'Arriba, 共 gòng da el sonido a 恭 gōng (el de 一共); abajo, ⺗, el corazón: el respeto.'}
   - id: g.gong
     kind: group
     basis: homophone
@@ -665,4 +666,45 @@ entries:
       - {ref: c.gong.public, cue: '公司, 公斤'}
       - {ref: c.gong.respect, cue: 恭喜}
     source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []
+  - id: c.wai
+    use: read
+    kind: character
+    hanzi: 外
+    pinyin: wài
+    meaning: {es: 'fuera (en 外面, 外国, 外语)', en: outside}
+    standalone: 'no'
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments: []
+  - id: c.guo.fruit
+    use: read
+    kind: character
+    hanzi: 果
+    pinyin: guǒ
+    meaning: {es: 'fruto (en 水果, 苹果)', en: fruit}
+    standalone: 'no'
+    level: 1
+    level_reason: 'no está suelto en la lista; sale en 水果 y 苹果, que son de los primeros'
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments: []
+  - id: g.wai-wei
+    kind: group
+    basis: soundalike
+    title: 外 wài y 位 wèi
+    explanation: 'Casi iguales al oído, los dos de cuarto tono: wài con a, wèi con e. 外 es «fuera»; 位 cuenta personas (几位？).'
+    members:
+      - {ref: c.wai, cue: 'con a: 外面, 外国'}
+      - {ref: w.wei.cl, cue: 'con e: 几位？, 两位'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments: []
+  - id: g.li-zao-guo
+    kind: group
+    basis: visual
+    title: 里, 早 y 果
+    explanation: Los tres tienen un cuadro arriba y una cruz abajo. 里 lǐ «dentro» (土 abajo), 早 zǎo «temprano» (el sol 日 sobre 十), 果 guǒ «fruto» (田 sobre un árbol 木).
+    members:
+      - {ref: w.li.inside, cue: 'tierra 土 abajo: 家里'}
+      - {ref: w.zao.early, cue: 'el sol 日 sobre 十: 早上'}
+      - {ref: c.guo.fruit, cue: 'un árbol 木 abajo: 水果'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
     comments: []

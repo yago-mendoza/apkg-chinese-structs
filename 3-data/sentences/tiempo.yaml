@@ -1181,3 +1181,30 @@ sentences:
       - {text: 。}
     translation: {en: It's five to eight., es: Son las ocho menos cinco.}
     source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.ni-jintian-yao-zuo-shenme
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: jīntiān, ref: w.jintian, text: 今天}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: zuò, ref: w.zuo.do, text: 做}
+      - {pinyin: shénme, ref: w.shenme, text: 什么}
+      - {text: ？}
+    translation: {en: 'What are you doing today?', es: '¿Qué vas a hacer hoy?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.youshi-he-cha-youshi-he-kafei
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yǒushí, ref: w.youshi, text: 有时}
+      - {pinyin: hē, ref: w.he.drink, text: 喝}
+      - {pinyin: chá, ref: w.cha, text: 茶}
+      - {text: ，}
+      - {pinyin: yǒushí, ref: w.youshi, text: 有时}
+      - {pinyin: hē, ref: w.he.drink, text: 喝}
+      - {pinyin: kāfēi, ref: w.kafei, text: 咖啡}
+      - {text: 。}
+    translation: {en: 'Sometimes I drink tea, sometimes coffee.', es: 'Unas veces tomo té, otras café.'}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}

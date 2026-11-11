@@ -470,3 +470,71 @@ sentences:
       - {text: ？}
     translation: {en: 'By the way, are you free tomorrow?', es: 'Por cierto, ¿tienes tiempo mañana?'}
     source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-xihuan-de-ren-bu-xihuan-wo
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: rén, ref: w.ren, text: 人}
+      - {pinyin: bù, ref: w.bu, text: 不}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {text: 。}
+    translation: {en: The person I like doesn't like me., es: La persona que me gusta no me quiere.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.xihuan-ni-de-ren-hen-duo
+    use: say
+    kind: example
+    segments:
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: rén, ref: w.ren, text: 人}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: duō, ref: w.duo, text: 多}
+      - {text: 。}
+    translation: {en: Lots of people like you., es: Le gustas a mucha gente.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.suoyi-xianzai-wo-shi-laoshi-le
+    use: say
+    kind: example
+    segments:
+      - {pinyin: suǒyǐ, ref: w.suoyi, text: 所以}
+      - {pinyin: xiànzài, ref: w.xianzai, text: 现在}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: lǎoshī, ref: w.laoshi, text: 老师}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: 。}
+    translation: {en: So now I'm the teacher., es: Así que ahora el profesor soy yo.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.wo-gei-le-ni-wu-xing-yinwei-wo-ziji-xiang-gei
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: gěi, ref: w.gei.to, text: 给}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: wǔ, ref: w.num.wu, text: 五}
+      - {pinyin: xīng, ref: w.xing.star, text: 星}
+      - {text: ，}
+      - {pinyin: yīnwèi, ref: w.yinwei, text: 因为}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zìjǐ, ref: w.ziji, text: 自己}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: gěi, ref: w.gei.to, text: 给}
+      - {text: ，}
+      - {pinyin: bú, ref: w.bu, sandhi: true, text: 不}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: yīnwèi, ref: w.yinwei, text: 因为}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: ràng, ref: w.rang, text: 让}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: gěi, ref: w.gei.to, text: 给}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {text: 。}
+    translation: {en: 'I gave you five stars because I wanted to, not because you asked me to.', es: 'Te he puesto cinco estrellas porque he querido yo, no porque me lo pidieras.'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}

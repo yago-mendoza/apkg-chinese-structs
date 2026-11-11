@@ -151,3 +151,27 @@ entries:
     source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
     comments:
       - {date: '2026-11-06', kind: linguistic, private: false, text: '周 «semana» + 末 «final»: el final de la semana.'}
+  - id: w.jianshen
+    use: say
+    use_reason: 'lo marcaste con «!!!»: vas al gimnasio a menudo'
+    role: content
+    kind: word
+    hanzi: 健身
+    pinyin: jiànshēn
+    meaning: {es: 'hacer ejercicio, ir al gimnasio', en: to work out}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: usage, private: false, text: 我去健身 «voy al gimnasio». El gimnasio es 健身房 jiànshēnfáng.}
+      - {date: '2026-11-11', kind: linguistic, private: false, text: '健 «sano, fuerte» + 身 «cuerpo»: poner el cuerpo fuerte.'}
+  - id: w.paizhao
+    use: say
+    use_reason: de viaje es de lo primero que se pregunta (这里可以拍照吗？), aunque sea HSK 4
+    role: content
+    kind: word
+    hanzi: 拍照
+    pinyin: pāizhào
+    meaning: {es: hacer fotos, en: to take photos}
+    connection: {kind: sound, with: [白, 百], text: '白 bái da el sonido a 拍 pāi (y a 百 bǎi); 扌 «mano»: dar una palmada.'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: '拍 «dar un golpecito» + 照 «foto»: el clic de la cámara. 照相 zhàoxiàng dice lo mismo.'}

@@ -308,3 +308,15 @@ sentences:
       - {text: 。}
     translation: {en: I love my family., es: Quiero a mi familia.}
     source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-you-yi-ge-meimei
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yǒu, ref: w.you.have, text: 有}
+      - {pinyin: yí, ref: w.num.yi, sandhi: true, text: 一}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: mèimei, ref: w.meimei, text: 妹妹}
+      - {text: 。}
+    translation: {en: I have a younger sister., es: Tengo una hermana pequeña.}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}

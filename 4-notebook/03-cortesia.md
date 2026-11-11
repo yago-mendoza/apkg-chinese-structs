@@ -29,7 +29,7 @@
 - ✅🃏 忘 wàng [wɑŋ˥˩] · olvidar · _verbo_ · 我忘了 «se me ha olvidado»: 了 dice que ya ha pasado. · Arriba, una papelera; abajo, el corazón 心, que en chino también es la mente: tirar algo de la cabeza a la papelera. En 忙 «ocupado» la papelera está al lado del corazón 忄.
 - ✅🃏 小心 xiǎoxīn [ɕjɑʊ˧˩˧ ɕin˥] · ¡cuidado!; tener cuidado · _adjetivo_ · 小 «pequeño» + 心 «corazón»: con el corazón encogido, atento.
 - ✅🃏 对的 duì de [tweɪ˥˩ tɤ] · eso es, correcto · _expresión_ · Palabra a palabra: 对 «correcto» + 的: «eso es». · Como 对, algo más enfático y coloquial.
-- ✅🃏 没问题 méi wèntí [meɪ˧˥ wən˥˩ tʰi˧˥] · sin problema · _expresión_ · Palabra a palabra: 没 «no hay» + 问题 «problema». Para aceptar algo que te piden; para quitar importancia a algo que ha pasado, 没关系. · No es la respuesta a 谢谢 (eso es 不客气): se dice cuando te piden algo y aceptas. como a «¿me ayudas?».
+- ✅🃏 没问题 méi wèntí [meɪ˧˥ wən˥˩ tʰi˧˥] · sin problema · _expresión_ · Palabra a palabra: 没 «no hay» + 问题 «problema». Para aceptar algo que te piden; para quitar importancia a algo que ha pasado, 没关系. · No es la respuesta a 谢谢 (eso es 不客气): se dice cuando te piden algo y aceptas. como a «¿me ayudas?». · También para aceptar una propuesta: —我选地方，你选时间，怎么样？ —没问题！ «yo elijo el sitio y tú la hora, ¿vale? —¡Sin problema!».
 - ✅🃏 明白 míngbai [miŋ˧˥ paɪ] · entender, tener claro · _verbo_ · 明 «claro» + 白 «blanco»: claro como el día. 我明白了 «ya lo entiendo». · Es verbo y adjetivo: 我明白 «entiendo»; 很明白 «muy claro». 我明白了 «ahora lo entiendo»: el 了 dice que antes no lo entendías. 懂 solo es verbo.
 - ✅🃏 一下 yīxià [i˥ ɕja˥˩] · un momento, un poco (detrás del verbo) · _clasificador_ · Detrás del verbo: 等一下 «espera un momento», 看一下 «echa un vistazo». Sirve para tres cosas: hacer algo un momento, probar a ver qué pasa y suavizar una petición. A menudo no se traduce. · Si hay algo detrás, 一下 va antes: 看一下你的手机 «déjame ver tu móvil». · No es lo mismo que 一遍: 说一遍 es decirlo entero; 说一下, comentarlo un momento. · No dice que la acción sea superficial: la presenta como breve o ligera, y así suaviza lo que pides. 我想问一下 «quería preguntar una cosa», sin 你; 帮我拿一下 «sujétamelo un momento».
 - ✅🃏 让 ràng [ʐɑŋ˥˩] · dejar, hacer que · _verbo_ · 让 + persona + verbo: 让我想一下 «déjame pensarlo un momento».
@@ -46,6 +46,8 @@
 - ✅🃏 同意 tóngyì [tʰʊŋ˧˥ i˥˩] · estar de acuerdo · _verbo_ · 我同意 «estoy de acuerdo», 我不同意 «no estoy de acuerdo», 你同意吗？ «¿estás de acuerdo?». Para contestar rápido también valen 对 y 好的. · 同 «mismo» + 意 «idea»: tenemos la misma idea, así que estamos de acuerdo.
 - ✅🃏 行 xíng [ɕiŋ˧˥] · vale, está bien; (algo) sirve · _verbo_ · Para decir que algo te va bien: 行吗？ «¿te parece bien?», 行！ «¡vale!», 都行 «cualquiera me vale». Con otra lectura, háng, es el de 银行 «banco» [HSK 2].
 - ✅🃏 是吗 shì ma [ʂɨ˥˩ ma] · ¿ah, sí? · _expresión_ · Para reaccionar a lo que te cuentan sin dudar de ello: 是吗？ «¿ah, sí?». 真的吗？ es más sorpresa: «¿de verdad?». · Palabra a palabra: 是 «ser, así es» + 吗, la pregunta: «¿es así?».
+- ✅🃏 开玩笑 kāi wánxiào [kʰaɪ˥ wan˧˥ ɕjɑʊ˥˩] · bromear, gastar una broma · _verbo_ · 开玩笑的！ «¡es broma!», tras decir algo en serio que no lo era. 你开玩笑吧？ «¿estás de broma?».
+- ✅🃏 放心 fàngxīn [fɑŋ˥˩ ɕin˥] · estar tranquilo, no preocuparse · _verbo_ · 放心吧 «tranquilo, no te preocupes»: 不辣，放心吧 «no pica, tranquilo». · 放 «soltar, dejar» + 心 «corazón»: dejar el corazón en paz.
 
 ## Formas de decir que sí
 
@@ -171,3 +173,9 @@ Cada una contesta a una cosa distinta: a unas gracias, a una disculpa o a un fav
 - ✅🃏 好不好？ · hǎo bu hǎo · ¿Vale? ¿Te parece?
 - ✅🃏 都行。 · dōu xíng · Cualquiera me vale.
 - ✅🃏 要不要我帮你？ · yào bu yào wǒ bāng nǐ · ¿Te ayudo o no?
+- ✅🃏 我想让你帮我。 · wǒ xiǎng ràng nǐ bāng wǒ · Quiero que me ayudes.
+- ✅🃏 我想让你去。 · wǒ xiǎng ràng nǐ qù · Quiero que vayas.
+- ✅🃏 可以请你喝咖啡吗？ · kěyǐ qǐng nǐ hē kāfēi ma · ¿Te puedo invitar a un café?
+- ✅🃏 这里可以坐吗？ · zhèlǐ kěyǐ zuò ma · ¿Me puedo sentar aquí?
+- ✅🃏 请给我五星！谢谢！ · qǐng gěi wǒ wǔ xīng xièxie · ¡Ponme cinco estrellas, por favor! ¡Gracias!
+- ✅🃏 对，我想请你喝咖啡，但是今天不行了。 · duì wǒ xiǎng qǐng nǐ hē kāfēi dànshì jīntiān bù xíng le · Sí, quiero invitarte a un café, pero hoy ya no puedo.

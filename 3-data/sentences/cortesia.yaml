@@ -878,3 +878,87 @@ sentences:
       - {text: ？}
     translation: {en: 'Do you want me to help you?', es: '¿Te ayudo o no?'}
     source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-xiang-rang-ni-bang-wo
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: ràng, ref: w.rang, text: 让}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: bāng, ref: w.bang, text: 帮}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {text: 。}
+    translation: {en: I want you to help me., es: Quiero que me ayudes.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.wo-xiang-rang-ni-qu
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: ràng, ref: w.rang, text: 让}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {text: 。}
+    translation: {en: I want you to go., es: Quiero que vayas.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.keyi-qing-ni-he-kafei-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: kěyǐ, ref: w.keyi, text: 可以}
+      - {pinyin: qǐng, ref: w.qing, text: 请}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: hē, ref: w.he.drink, text: 喝}
+      - {pinyin: kāfēi, ref: w.kafei, text: 咖啡}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Can I buy you a coffee?', es: '¿Te puedo invitar a un café?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.zheli-keyi-zuo-ma
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: zhèlǐ, ref: w.zheli, text: 这里}
+      - {pinyin: kěyǐ, ref: w.keyi, text: 可以}
+      - {pinyin: zuò, ref: w.zuo.sit, text: 坐}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Can I sit here?', es: '¿Me puedo sentar aquí?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.qing-gei-wo-wu-xing
+    use: say
+    kind: example
+    segments:
+      - {pinyin: qǐng, ref: w.qing, text: 请}
+      - {pinyin: gěi, ref: w.gei.to, text: 给}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: wǔ, ref: w.num.wu, text: 五}
+      - {pinyin: xīng, ref: w.xing.star, text: 星}
+      - {text: ！}
+      - {pinyin: xièxie, ref: e.xiexie, text: 谢谢}
+      - {text: ！}
+    translation: {en: Please give me five stars! Thanks!, es: '¡Ponme cinco estrellas, por favor! ¡Gracias!'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.wo-xiang-qing-ni-he-kafei-danshi-jintian-bu-xing
+    use: say
+    kind: example
+    segments:
+      - {pinyin: duì, ref: w.dui, text: 对}
+      - {text: ，}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: qǐng, ref: w.qing, text: 请}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: hē, ref: w.he.drink, text: 喝}
+      - {pinyin: kāfēi, ref: w.kafei, text: 咖啡}
+      - {text: ，}
+      - {pinyin: dànshì, ref: w.danshi, text: 但是}
+      - {pinyin: jīntiān, ref: w.jintian, text: 今天}
+      - {pinyin: bù, ref: w.bu, text: 不}
+      - {pinyin: xíng, ref: w.xing.ok, text: 行}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: 。}
+    translation: {en: 'Yes, I want to buy you a coffee, but today I can''t any more.', es: 'Sí, quiero invitarte a un café, pero hoy ya no puedo.'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}

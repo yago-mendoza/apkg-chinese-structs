@@ -3397,3 +3397,14 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 重, pinyin: zhòng, meaning: pesado}
     comments: []
+  - id: x.produce.kuai-lai
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.kuai-lai
+    targets: [s.kuai-lai]
+    context: [w.kuai.fast, w.lai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Ven rápido!»'}
+    answer: {meaning: ¡Ven rápido!}
+    comments: []

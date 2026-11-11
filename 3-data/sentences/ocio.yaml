@@ -50,3 +50,24 @@ sentences:
       - {text: ！}
     translation: {en: 'Are you free tomorrow? Let''s go swimming together!', es: '¿Tienes tiempo mañana? ¡Vamos a nadar juntos!'}
     source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.wo-qu-jianshen
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: jiànshēn, ref: w.jianshen, text: 健身}
+      - {text: 。}
+    translation: {en: I'm going to the gym., es: Voy al gimnasio.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.zheli-keyi-paizhao-ma
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: zhèlǐ, ref: w.zheli, text: 这里}
+      - {pinyin: kěyǐ, ref: w.keyi, text: 可以}
+      - {pinyin: pāizhào, ref: w.paizhao, text: 拍照}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Can I take photos here?', es: '¿Se pueden hacer fotos aquí?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}

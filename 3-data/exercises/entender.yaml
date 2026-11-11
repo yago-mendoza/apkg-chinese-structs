@@ -1328,3 +1328,106 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 懂, pinyin: dǒng, meaning: 'entender, comprender'}
     comments: []
+  - id: x.dictation.jizhu
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.jizhu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ji4 zhu5, hanzi: 记住, pinyin: jìzhu, meaning: 'aprenderse, acordarse (para siempre)'}
+    comments: []
+  - id: x.produce.jizhu
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.jizhu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «aprenderse, acordarse (para siempre)»? Escribe el pinyin.'}
+    answer: {typed: ji4 zhu5, hanzi: 记住, pinyin: jìzhu, meaning: 'aprenderse, acordarse (para siempre)'}
+    comments: []
+  - id: x.read.jizhu
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.jizhu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 记住}
+    answer: {hanzi: 记住, pinyin: jìzhu, meaning: 'aprenderse, acordarse (para siempre)'}
+    comments: []
+  - id: x.tones.jizhu
+    added: 2026-11-11
+    lang: es
+    type: tones
+    targets: [w.jizhu]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 记住, pinyin: ji zhu}
+    answer: {typed: '45', hanzi: 记住, pinyin: jìzhu, meaning: 'aprenderse, acordarse (para siempre)'}
+    comments: []
+  - id: x.listen.zhege-zenme-shuo
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.zhege-zenme-shuo
+    targets: [s.zhege-zenme-shuo]
+    context: [w.zhe, w.ge, w.zenme, w.shuo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cómo se dice esto?'}
+    comments: []
+  - id: x.produce.zhege-zenme-shuo
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.zhege-zenme-shuo
+    targets: [s.zhege-zenme-shuo]
+    context: [w.zhe, w.ge, w.zenme, w.shuo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cómo se dice esto?»'}
+    answer: {meaning: '¿Cómo se dice esto?'}
+    comments: []
+  - id: x.listen.ni-shuo-shenme-zai-shuo-yi-bian
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.ni-shuo-shenme-zai-shuo-yi-bian
+    targets: [s.ni-shuo-shenme-zai-shuo-yi-bian]
+    context: [w.ni, w.shuo, w.shenme, w.zai.again, w.num.yi, w.bian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Qué dices? Repítelo.'}
+    comments: []
+  - id: x.produce.ni-shuo-shenme-zai-shuo-yi-bian
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.ni-shuo-shenme-zai-shuo-yi-bian
+    targets: [s.ni-shuo-shenme-zai-shuo-yi-bian]
+    context: [w.ni, w.shuo, w.shenme, w.zai.again, w.num.yi, w.bian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué dices? Repítelo.»'}
+    answer: {meaning: '¿Qué dices? Repítelo.'}
+    comments: []
+  - id: x.produce.wo-mei-ting-qingchu-zai-shuo-yi-bian
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-mei-ting-qingchu-zai-shuo-yi-bian
+    targets: [s.wo-mei-ting-qingchu-zai-shuo-yi-bian]
+    context: [w.wo, w.mei, w.ting, w.qingchu, w.ni, w.neng, w.zai.again, w.shuo, w.num.yi, w.bian, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No lo he oído bien, ¿puedes repetirlo?»'}
+    answer: {meaning: 'No lo he oído bien, ¿puedes repetirlo?'}
+    comments: []
+  - id: x.produce.wo-jizhu-le
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-jizhu-le
+    targets: [s.wo-jizhu-le]
+    context: [w.wo, w.jizhu, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ya me lo sé (no se me olvida).»'}
+    answer: {meaning: Ya me lo sé (no se me olvida).}
+    comments: []

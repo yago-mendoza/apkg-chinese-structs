@@ -1,0 +1,1093 @@
+# Ejercicios · En el restaurante. Esquema: 3-data/README.md
+
+exercises:
+  - id: x.compose.pedir-en-el-restaurante
+    added: '2026-11-11'
+    lang: es
+    type: compose
+    targets: [s.bu-dabao-zai-zheli-chi, s.wo-yao-jiaozi-hai-yao-tang, s.yigong-duoshao-qian]
+    words: [w.dabao, w.chi, w.yao, w.hai.also, w.yigong, w.duoshao]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. En un restaurante chino: di cuántos sois y que coméis aquí (no para llevar); pide un plato de carne, uno de arroz o fideos y una bebida; pregunta cuánto es y paga. Al menos seis frases.'}
+    answer: {meaning: 'Tres piezas para pedir: aquí o para llevar, lo que quieres (还要 para añadir) y cuánto es en total.'}
+    comments: []
+  - id: x.compose.hacer-de-camarero
+    added: '2026-11-11'
+    lang: es
+    type: compose
+    targets: [s.nihao-jiwei, s.zai-zheli-chi-haishi-dabao, s.hai-yao-biede-ma]
+    words: [e.nihao, w.wei.cl, w.chi, w.dabao, w.hai.also, w.yao]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. Ahora eres el camarero: saluda, pregunta cuántos son y si es para tomar aquí o para llevar, dales la carta y pregunta si quieren algo más.'}
+    answer: {meaning: 'Lo que dice el camarero, en orden.'}
+    comments: []
+  - id: x.nuance.hai-still-also
+    added: '2026-11-11'
+    lang: es
+    type: nuance
+    targets: [w.hai.also, w.hai.still]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我还没吃饭 y 我要饺子，还要汤: ¿qué hace 还 en cada una?'}
+    answer: {meaning: 'En la primera, «todavía»: aún no he comido. En la segunda, «además, también»: suma algo más a lo que pides.'}
+    comments: []
+  - id: x.dictation.caidan
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.caidan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: cai4 dan1, hanzi: 菜单, pinyin: càidān, meaning: 'carta, menú'}
+    comments: []
+  - id: x.produce.caidan
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.caidan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «carta, menú»? Escribe el pinyin.'}
+    answer: {typed: cai4 dan1, hanzi: 菜单, pinyin: càidān, meaning: 'carta, menú'}
+    comments: []
+  - id: x.read.caidan
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.caidan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 菜单}
+    answer: {hanzi: 菜单, pinyin: càidān, meaning: 'carta, menú'}
+    comments: []
+  - id: x.dictation.maidan
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.maidan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mai3 dan1, hanzi: 买单, pinyin: mǎidān, meaning: pagar la cuenta; ¡la cuenta!}
+    comments: []
+  - id: x.produce.maidan
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.maidan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «pagar la cuenta; ¡la cuenta!»? Escribe el pinyin.'}
+    answer: {typed: mai3 dan1, hanzi: 买单, pinyin: mǎidān, meaning: pagar la cuenta; ¡la cuenta!}
+    comments: []
+  - id: x.read.maidan
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.maidan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 买单}
+    answer: {hanzi: 买单, pinyin: mǎidān, meaning: pagar la cuenta; ¡la cuenta!}
+    comments: []
+  - id: x.contrast.wei.cl
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.wai-wei
+    targets: [w.wei.cl]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 位, pinyin: wèi, meaning: 'clasificador cortés de personas (en un restaurante: ¿cuántos sois?)'}
+    comments: []
+  - id: x.dictation.wei.cl
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.wei.cl]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wei4, hanzi: 位, pinyin: wèi, meaning: 'clasificador cortés de personas (en un restaurante: ¿cuántos sois?)'}
+    comments: []
+  - id: x.produce.wei.cl
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.wei.cl]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «clasificador cortés de personas (en un restaurante: ¿cuántos sois?)»? Escribe el pinyin.'}
+    answer: {typed: wei4, hanzi: 位, pinyin: wèi, meaning: 'clasificador cortés de personas (en un restaurante: ¿cuántos sois?)'}
+    comments: []
+  - id: x.read.wei.cl
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.wei.cl]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 位}
+    answer: {hanzi: 位, pinyin: wèi, meaning: 'clasificador cortés de personas (en un restaurante: ¿cuántos sois?)'}
+    comments: []
+  - id: x.dictation.dabao
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.dabao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: da3 bao1, hanzi: 打包, pinyin: dǎbāo, meaning: para llevar; envolver lo que sobra para llevártelo}
+    comments: []
+  - id: x.produce.dabao
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.dabao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «para llevar; envolver lo que sobra para llevártelo»? Escribe el pinyin.'}
+    answer: {typed: da3 bao1, hanzi: 打包, pinyin: dǎbāo, meaning: para llevar; envolver lo que sobra para llevártelo}
+    comments: []
+  - id: x.read.dabao
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.dabao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 打包}
+    answer: {hanzi: 打包, pinyin: dǎbāo, meaning: para llevar; envolver lo que sobra para llevártelo}
+    comments: []
+  - id: x.dictation.yigong
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.yigong]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi2 gong4, hanzi: 一共, pinyin: yígòng, meaning: en total}
+    comments: []
+  - id: x.produce.yigong
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.yigong]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «en total»? Escribe el pinyin.'}
+    answer: {typed: yi2 gong4, hanzi: 一共, pinyin: yígòng, meaning: en total}
+    comments: []
+  - id: x.read.yigong
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.yigong]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 一共}
+    answer: {hanzi: 一共, pinyin: yígòng, meaning: en total}
+    comments: []
+  - id: x.tones.yigong
+    added: 2026-11-11
+    lang: es
+    type: tones
+    targets: [w.yigong]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 一共, pinyin: yi gong}
+    answer: {typed: '24', hanzi: 一共, pinyin: yígòng, meaning: en total}
+    comments: []
+  - id: x.dictation.fen.cl
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.fen.cl]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fen4, hanzi: 份, pinyin: fèn, meaning: 'una ración, un plato (clasificador)'}
+    comments: []
+  - id: x.produce.fen.cl
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.fen.cl]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «una ración, un plato (clasificador)»? Escribe el pinyin.'}
+    answer: {typed: fen4, hanzi: 份, pinyin: fèn, meaning: 'una ración, un plato (clasificador)'}
+    comments: []
+  - id: x.read.fen.cl
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.fen.cl]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 份}
+    answer: {hanzi: 份, pinyin: fèn, meaning: 'una ración, un plato (clasificador)'}
+    comments: []
+  - id: x.dictation.shuaka
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.shuaka]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shua1 ka3, hanzi: 刷卡, pinyin: shuākǎ, meaning: pagar con tarjeta}
+    comments: []
+  - id: x.produce.shuaka
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.shuaka]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «pagar con tarjeta»? Escribe el pinyin.'}
+    answer: {typed: shua1 ka3, hanzi: 刷卡, pinyin: shuākǎ, meaning: pagar con tarjeta}
+    comments: []
+  - id: x.read.shuaka
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.shuaka]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 刷卡}
+    answer: {hanzi: 刷卡, pinyin: shuākǎ, meaning: pagar con tarjeta}
+    comments: []
+  - id: x.dictation.meinv
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.meinv]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mei3 nü3, hanzi: 美女, pinyin: měinǚ, meaning: '(para llamar a una camarera o dependienta joven) ¡oye!, ¡perdona!'}
+    comments: []
+  - id: x.produce.meinv
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.meinv]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «(para llamar a una camarera o dependienta joven) ¡oye!, ¡perdona!»? Escribe el pinyin.'}
+    answer: {typed: mei3 nü3, hanzi: 美女, pinyin: měinǚ, meaning: '(para llamar a una camarera o dependienta joven) ¡oye!, ¡perdona!'}
+    comments: []
+  - id: x.read.meinv
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.meinv]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 美女}
+    answer: {hanzi: 美女, pinyin: měinǚ, meaning: '(para llamar a una camarera o dependienta joven) ¡oye!, ¡perdona!'}
+    comments: []
+  - id: x.tones.meinv
+    added: 2026-11-11
+    lang: es
+    type: tones
+    targets: [w.meinv]
+    skills: [tones, pinyin]
+    refs: [p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 美女, pinyin: mei nü}
+    answer: {typed: '33', hanzi: 美女, pinyin: měinǚ, meaning: '(para llamar a una camarera o dependienta joven) ¡oye!, ¡perdona!'}
+    comments: []
+  - id: x.dictation.shuaige
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.shuaige]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shuai4 ge1, hanzi: 帅哥, pinyin: shuàigē, meaning: '(para llamar a un camarero joven) ¡oye!, ¡perdona!'}
+    comments: []
+  - id: x.produce.shuaige
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.shuaige]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «(para llamar a un camarero joven) ¡oye!, ¡perdona!»? Escribe el pinyin.'}
+    answer: {typed: shuai4 ge1, hanzi: 帅哥, pinyin: shuàigē, meaning: '(para llamar a un camarero joven) ¡oye!, ¡perdona!'}
+    comments: []
+  - id: x.read.shuaige
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.shuaige]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 帅哥}
+    answer: {hanzi: 帅哥, pinyin: shuàigē, meaning: '(para llamar a un camarero joven) ¡oye!, ¡perdona!'}
+    comments: []
+  - id: x.dictation.manyi
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.manyi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: man3 yi4, hanzi: 满意, pinyin: mǎnyì, meaning: 'satisfecho, contento (con algo)'}
+    comments: []
+  - id: x.read.manyi
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.manyi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 满意}
+    answer: {hanzi: 满意, pinyin: mǎnyì, meaning: 'satisfecho, contento (con algo)'}
+    comments: []
+  - id: x.listen.nihao-jiwei
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.nihao-jiwei
+    targets: [s.nihao-jiwei]
+    context: [e.nihao, w.ji, w.wei.cl]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Hola, ¿cuántos son?'}
+    comments: []
+  - id: x.produce.nihao-jiwei
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.nihao-jiwei
+    targets: [s.nihao-jiwei]
+    context: [e.nihao, w.ji, w.wei.cl]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hola, ¿cuántos son?»'}
+    answer: {meaning: 'Hola, ¿cuántos son?'}
+    comments: []
+  - id: x.listen.liang-wei
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.liang-wei
+    targets: [s.liang-wei]
+    context: [w.liang, w.wei.cl]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Dos (personas).}
+    comments: []
+  - id: x.produce.liang-wei
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.liang-wei
+    targets: [s.liang-wei]
+    context: [w.liang, w.wei.cl]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Dos (personas).»'}
+    answer: {meaning: Dos (personas).}
+    comments: []
+  - id: x.listen.zhe-shi-caidan
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.zhe-shi-caidan
+    targets: [s.zhe-shi-caidan]
+    context: [w.zhe, w.shi, w.caidan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Aquí tiene la carta.}
+    comments: []
+  - id: x.produce.zhe-shi-caidan
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.zhe-shi-caidan
+    targets: [s.zhe-shi-caidan]
+    context: [w.zhe, w.shi, w.caidan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Aquí tiene la carta.»'}
+    answer: {meaning: Aquí tiene la carta.}
+    comments: []
+  - id: x.listen.wo-yao-jiaozi-hai-yao-tang
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.wo-yao-jiaozi-hai-yao-tang
+    targets: [s.wo-yao-jiaozi-hai-yao-tang]
+    context: [w.wo, w.yao, w.jiaozi, w.hai.also, w.tang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Quiero jiaozi, y también sopa.'}
+    comments: []
+  - id: x.produce.wo-yao-jiaozi-hai-yao-tang
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-yao-jiaozi-hai-yao-tang
+    targets: [s.wo-yao-jiaozi-hai-yao-tang]
+    context: [w.wo, w.yao, w.jiaozi, w.hai.also, w.tang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero jiaozi, y también sopa.»'}
+    answer: {meaning: 'Quiero jiaozi, y también sopa.'}
+    comments: []
+  - id: x.listen.yibai-yuan
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.yibai-yuan
+    targets: [s.yibai-yuan]
+    context: [w.num.yi, w.bai.hundred, w.yuan.money]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Cien yuanes.}
+    comments: []
+  - id: x.listen.hao-wo-maidan
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.hao-wo-maidan
+    targets: [s.hao-wo-maidan]
+    context: [w.hao, w.wo, w.maidan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Vale, pago yo (la cuenta).'}
+    comments: []
+  - id: x.produce.hao-wo-maidan
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.hao-wo-maidan
+    targets: [s.hao-wo-maidan]
+    context: [w.hao, w.wo, w.maidan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Vale, pago yo (la cuenta).»'}
+    answer: {meaning: 'Vale, pago yo (la cuenta).'}
+    comments: []
+  - id: x.listen.keyi-dabao-ma
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.keyi-dabao-ma
+    targets: [s.keyi-dabao-ma]
+    context: [w.keyi, w.dabao, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Me lo pone para llevar?'}
+    comments: []
+  - id: x.produce.keyi-dabao-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.keyi-dabao-ma
+    targets: [s.keyi-dabao-ma]
+    context: [w.keyi, w.dabao, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Me lo pone para llevar?»'}
+    answer: {meaning: '¿Me lo pone para llevar?'}
+    comments: []
+  - id: x.listen.ni-yao-jirou-haishi-zhurou
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.ni-yao-jirou-haishi-zhurou
+    targets: [s.ni-yao-jirou-haishi-zhurou]
+    context: [w.ni, w.yao, w.jirou, w.haishi, w.zhurou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Quieres pollo o cerdo?'}
+    comments: []
+  - id: x.produce.ni-yao-jirou-haishi-zhurou
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.ni-yao-jirou-haishi-zhurou
+    targets: [s.ni-yao-jirou-haishi-zhurou]
+    context: [w.ni, w.yao, w.jirou, w.haishi, w.zhurou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Quieres pollo o cerdo?»'}
+    answer: {meaning: '¿Quieres pollo o cerdo?'}
+    comments: []
+  - id: x.listen.ni-yao-mifan-haishi-miantiao
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.ni-yao-mifan-haishi-miantiao
+    targets: [s.ni-yao-mifan-haishi-miantiao]
+    context: [w.ni, w.yao, w.mifan, w.haishi, w.miantiao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Quieres arroz o fideos?'}
+    comments: []
+  - id: x.produce.ni-yao-mifan-haishi-miantiao
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.ni-yao-mifan-haishi-miantiao
+    targets: [s.ni-yao-mifan-haishi-miantiao]
+    context: [w.ni, w.yao, w.mifan, w.haishi, w.miantiao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Quieres arroz o fideos?»'}
+    answer: {meaning: '¿Quieres arroz o fideos?'}
+    comments: []
+  - id: x.listen.cha-haishi-shui
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.cha-haishi-shui
+    targets: [s.cha-haishi-shui]
+    context: [w.cha, w.haishi, w.shui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Té o agua?'}
+    comments: []
+  - id: x.produce.cha-haishi-shui
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.cha-haishi-shui
+    targets: [s.cha-haishi-shui]
+    context: [w.cha, w.haishi, w.shui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Té o agua?»'}
+    answer: {meaning: '¿Té o agua?'}
+    comments: []
+  - id: x.listen.zhege-cai-hen-haochi-ni-yao-bu-yao
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.zhege-cai-hen-haochi-ni-yao-bu-yao
+    targets: [s.zhege-cai-hen-haochi-ni-yao-bu-yao]
+    context: [w.zhe, w.ge, w.cai, w.hen, w.haochi, w.ni, w.yao, w.bu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Este plato está muy bueno, ¿lo quieres?'}
+    comments: []
+  - id: x.produce.zhege-cai-hen-haochi-ni-yao-bu-yao
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.zhege-cai-hen-haochi-ni-yao-bu-yao
+    targets: [s.zhege-cai-hen-haochi-ni-yao-bu-yao]
+    context: [w.zhe, w.ge, w.cai, w.hen, w.haochi, w.ni, w.yao, w.bu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Este plato está muy bueno, ¿lo quieres?»'}
+    answer: {meaning: 'Este plato está muy bueno, ¿lo quieres?'}
+    comments: []
+  - id: x.listen.yao-bu-yao-tang
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.yao-bu-yao-tang
+    targets: [s.yao-bu-yao-tang]
+    context: [w.yao, w.bu, w.tang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Quieres sopa?'}
+    comments: []
+  - id: x.produce.yao-bu-yao-tang
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.yao-bu-yao-tang
+    targets: [s.yao-bu-yao-tang]
+    context: [w.yao, w.bu, w.tang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Quieres sopa?»'}
+    answer: {meaning: '¿Quieres sopa?'}
+    comments: []
+  - id: x.listen.dabao-ma
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.dabao-ma
+    targets: [s.dabao-ma]
+    context: [w.dabao, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Para llevar?'}
+    comments: []
+  - id: x.produce.dabao-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.dabao-ma
+    targets: [s.dabao-ma]
+    context: [w.dabao, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Para llevar?»'}
+    answer: {meaning: '¿Para llevar?'}
+    comments: []
+  - id: x.listen.ni-meiyou-kan-caidan
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.ni-meiyou-kan-caidan
+    targets: [s.ni-meiyou-kan-caidan]
+    context: [w.ni, w.meiyou, w.kan, w.caidan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No has mirado la carta.}
+    comments: []
+  - id: x.listen.ni-zenme-zhidao-ni-xiang-chi-shenme
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.ni-zenme-zhidao-ni-xiang-chi-shenme
+    targets: [s.ni-zenme-zhidao-ni-xiang-chi-shenme]
+    context: [w.ni, w.zenme, w.zhidao, w.xiang, w.chi, w.shenme]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Cómo sabes qué quieres comer?'}
+    comments: []
+  - id: x.listen.wo-keyi-yao-yi-bei-shui-ma
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.wo-keyi-yao-yi-bei-shui-ma
+    targets: [s.wo-keyi-yao-yi-bei-shui-ma]
+    context: [w.wo, w.keyi, w.yao, w.num.yi, w.bei.cl, w.shui, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Me pone un vaso de agua?'}
+    comments: []
+  - id: x.produce.wo-keyi-yao-yi-bei-shui-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-keyi-yao-yi-bei-shui-ma
+    targets: [s.wo-keyi-yao-yi-bei-shui-ma]
+    context: [w.wo, w.keyi, w.yao, w.num.yi, w.bei.cl, w.shui, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Me pone un vaso de agua?»'}
+    answer: {meaning: '¿Me pone un vaso de agua?'}
+    comments: []
+  - id: x.listen.lai-yi-bei-kele
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.lai-yi-bei-kele
+    targets: [s.lai-yi-bei-kele]
+    context: [w.lai.order, w.num.yi, w.bei.cl, w.kele]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Una cola, por favor.'}
+    comments: []
+  - id: x.produce.lai-yi-bei-kele
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.lai-yi-bei-kele
+    targets: [s.lai-yi-bei-kele]
+    context: [w.lai.order, w.num.yi, w.bei.cl, w.kele]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Una cola, por favor.»'}
+    answer: {meaning: 'Una cola, por favor.'}
+    comments: []
+  - id: x.listen.meinv-maidan
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.meinv-maidan
+    targets: [s.meinv-maidan]
+    context: [w.meinv, w.maidan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Perdona (a la camarera), la cuenta!'}
+    comments: []
+  - id: x.produce.meinv-maidan
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.meinv-maidan
+    targets: [s.meinv-maidan]
+    context: [w.meinv, w.maidan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Perdona (a la camarera), la cuenta!»'}
+    answer: {meaning: '¡Perdona (a la camarera), la cuenta!'}
+    comments: []
+  - id: x.listen.shuaige-women-yao-dian-cai
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.shuaige-women-yao-dian-cai
+    targets: [s.shuaige-women-yao-dian-cai]
+    context: [w.shuaige, w.women, w.yao, w.dian.order, w.cai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¡Perdona (al camarero), queremos pedir!'}
+    comments: []
+  - id: x.produce.shuaige-women-yao-dian-cai
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.shuaige-women-yao-dian-cai
+    targets: [s.shuaige-women-yao-dian-cai]
+    context: [w.shuaige, w.women, w.yao, w.dian.order, w.cai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Perdona (al camarero), queremos pedir!»'}
+    answer: {meaning: '¡Perdona (al camarero), queremos pedir!'}
+    comments: []
+  - id: x.listen.huanying-xiaci-zai-lai
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.huanying-xiaci-zai-lai
+    targets: [s.huanying-xiaci-zai-lai]
+    context: [w.huanying, w.xiaci, w.zai.again, w.lai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Vuelvan pronto!}
+    comments: []
+  - id: x.produce.zai-zheli-chi-haishi-dabao
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.zai-zheli-chi-haishi-dabao
+    targets: [s.zai-zheli-chi-haishi-dabao]
+    context: [w.zai.at, w.zheli, w.chi, w.haishi, w.dabao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Para tomar aquí o para llevar?»'}
+    answer: {meaning: '¿Para tomar aquí o para llevar?'}
+    comments: []
+  - id: x.produce.bu-dabao-zai-zheli-chi
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.bu-dabao-zai-zheli-chi
+    targets: [s.bu-dabao-zai-zheli-chi]
+    context: [w.bu, w.dabao, e.xiexie, w.women, w.zai.at, w.zheli, w.chi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Para llevar no, gracias: comemos aquí.»'}
+    answer: {meaning: 'Para llevar no, gracias: comemos aquí.'}
+    comments: []
+  - id: x.listen.dlg-dian-cai
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.dlg-dian-cai
+    targets: [s.dlg-dian-cai]
+    context: [e.nihao, w.ji, w.wei.cl, w.liang, w.zai.at, w.zheli, w.chi, w.haishi, w.dabao, w.bu, w.women, w.zhe, w.shi, w.caidan,
+      w.wo, w.yao, w.jiaozi, w.hai.also, w.tang, w.duoshao, w.qian, w.yigong, w.num.wu, w.num.shi, w.kuai, w.hao, w.maidan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '—Hola, ¿cuántos son? —Dos. —¿Para tomar aquí o para llevar? —Para llevar no: comemos aquí. —Aquí tiene
+        la carta. —Quiero jiaozi, y también sopa. ¿Cuánto es? —Cincuenta en total. —Vale, pago yo.'}
+    comments: []
+  - id: x.produce.buhaoyisi-keyi-gei-wo-caidan-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.buhaoyisi-keyi-gei-wo-caidan-ma
+    targets: [s.buhaoyisi-keyi-gei-wo-caidan-ma]
+    context: [e.buhaoyisi, w.keyi, w.gei.to, w.wo, w.caidan, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Perdone, ¿me da la carta?»'}
+    answer: {meaning: 'Perdone, ¿me da la carta?'}
+    comments: []
+  - id: x.listen.caidan-zai-zheli-nimen-kan-yixia
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.caidan-zai-zheli-nimen-kan-yixia
+    targets: [s.caidan-zai-zheli-nimen-kan-yixia]
+    context: [w.caidan, w.zai.at, w.zheli, w.nimen, w.kan, w.yixia]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: La carta está aquí; mírenla con calma.}
+    comments: []
+  - id: x.listen.nimen-xiang-hao-le-ma
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.nimen-xiang-hao-le-ma
+    targets: [s.nimen-xiang-hao-le-ma]
+    context: [w.nimen, w.xiang, w.hao, w.le, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Ya saben qué van a pedir?'}
+    comments: []
+  - id: x.produce.wo-hai-mei-jueding
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-hai-mei-jueding
+    targets: [s.wo-hai-mei-jueding]
+    context: [w.wo, w.hai.still, w.mei, w.jueding]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Todavía no he decidido.»'}
+    answer: {meaning: Todavía no he decidido.}
+    comments: []
+  - id: x.produce.nimen-zheli-you-shenme-haochi-de
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.nimen-zheli-you-shenme-haochi-de
+    targets: [s.nimen-zheli-you-shenme-haochi-de]
+    context: [w.nimen, w.zheli, w.you.have, w.shenme, w.haochi, w.de]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué tienen de bueno aquí?»'}
+    answer: {meaning: '¿Qué tienen de bueno aquí?'}
+    comments: []
+  - id: x.produce.wo-yao-yi-fen-jiaozi
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-yao-yi-fen-jiaozi
+    targets: [s.wo-yao-yi-fen-jiaozi]
+    context: [w.wo, w.yao, w.num.yi, w.fen.cl, w.jiaozi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Una de jiaozi.»'}
+    answer: {meaning: Una de jiaozi.}
+    comments: []
+  - id: x.produce.bu-yao-la
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.bu-yao-la
+    targets: [s.bu-yao-la]
+    context: [w.bu, w.yao, w.la]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Sin picante.»'}
+    answer: {meaning: Sin picante.}
+    comments: []
+  - id: x.produce.zhege-la-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.zhege-la-ma
+    targets: [s.zhege-la-ma]
+    context: [w.zhe, w.ge, w.la, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Esto pica?»'}
+    answer: {meaning: '¿Esto pica?'}
+    comments: []
+  - id: x.listen.bu-la-fangxin-ba
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.bu-la-fangxin-ba
+    targets: [s.bu-la-fangxin-ba]
+    context: [w.bu, w.la, w.fangxin, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'No pica, tranquilo.'}
+    comments: []
+  - id: x.produce.hai-yao-biede-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.hai-yao-biede-ma
+    targets: [s.hai-yao-biede-ma]
+    context: [w.hai.also, w.yao, w.biede, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Algo más?»'}
+    answer: {meaning: '¿Algo más?'}
+    comments: []
+  - id: x.produce.duile-zai-lai-yi-bei-shui
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.duile-zai-lai-yi-bei-shui
+    targets: [s.duile-zai-lai-yi-bei-shui]
+    context: [e.duile, w.zai.again, w.lai.order, w.num.yi, w.bei.cl, w.shui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ah, y otro vaso de agua.»'}
+    answer: {meaning: 'Ah, y otro vaso de agua.'}
+    comments: []
+  - id: x.produce.ni-jueding-ba
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.ni-jueding-ba
+    targets: [s.ni-jueding-ba]
+    context: [w.ni, w.jueding, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Decide tú!»'}
+    answer: {meaning: ¡Decide tú!}
+    comments: []
+  - id: x.produce.na-wo-yao-kele
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.na-wo-yao-kele
+    targets: [s.na-wo-yao-kele]
+    context: [w.na.then, w.wo, w.yao, w.kele]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Pues yo quiero una cola.»'}
+    answer: {meaning: Pues yo quiero una cola.}
+    comments: []
+  - id: x.produce.zhe-shi-shenme-rou
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.zhe-shi-shenme-rou
+    targets: [s.zhe-shi-shenme-rou]
+    context: [w.zhe, w.shi, w.shenme, w.rou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué carne es esta?»'}
+    answer: {meaning: '¿Qué carne es esta?'}
+    comments: []
+  - id: x.produce.na-zhege-ne
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.na-zhege-ne
+    targets: [s.na-zhege-ne]
+    context: [w.na.then, w.zhe, w.ge, w.ne]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Y esto?»'}
+    answer: {meaning: '¿Y esto?'}
+    comments: []
+  - id: x.listen.qing-man-yong
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.qing-man-yong
+    targets: [s.qing-man-yong]
+    context: [w.qing, w.man, w.yong]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Que aproveche.}
+    comments: []
+  - id: x.produce.wo-chi-bao-le
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-chi-bao-le
+    targets: [s.wo-chi-bao-le]
+    context: [w.wo, w.chi, w.bao.full, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estoy lleno.»'}
+    answer: {meaning: Estoy lleno.}
+    comments: []
+  - id: x.listen.zenmeyang-hai-manyi-ma
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.zenmeyang-hai-manyi-ma
+    targets: [s.zenmeyang-hai-manyi-ma]
+    context: [w.zenmeyang, w.hai.still, w.manyi, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Qué tal? ¿Todo bien?'}
+    comments: []
+  - id: x.produce.buhaoyisi-maidan
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.buhaoyisi-maidan
+    targets: [s.buhaoyisi-maidan]
+    context: [e.buhaoyisi, w.maidan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Perdone, ¡la cuenta!»'}
+    answer: {meaning: 'Perdone, ¡la cuenta!'}
+    comments: []
+  - id: x.listen.haode-mashang-lai
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.haode-mashang-lai
+    targets: [s.haode-mashang-lai]
+    context: [e.haode, w.mashang, w.lai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Enseguida.}
+    comments: []
+  - id: x.produce.yigong-duoshao-qian
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.yigong-duoshao-qian
+    targets: [s.yigong-duoshao-qian]
+    context: [w.yigong, w.duoshao, w.qian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuánto es en total?»'}
+    answer: {meaning: '¿Cuánto es en total?'}
+    comments: []
+  - id: x.listen.yigong-yibai-kuai
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.yigong-yibai-kuai
+    targets: [s.yigong-yibai-kuai]
+    context: [w.yigong, w.num.yi, w.bai.hundred, w.kuai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Cien en total.}
+    comments: []
+  - id: x.produce.wo-qingke-kaiwanxiao-de
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-qingke-kaiwanxiao-de
+    targets: [s.wo-qingke-kaiwanxiao-de]
+    context: [w.wo, w.qingke, w.kaiwanxiao, w.de]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Invito yo! ¡Es broma!»'}
+    answer: {meaning: ¡Invito yo! ¡Es broma!}
+    comments: []
+  - id: x.produce.keyi-shuaka-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.keyi-shuaka-ma
+    targets: [s.keyi-shuaka-ma]
+    context: [w.keyi, w.shuaka, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Puedo pagar con tarjeta?»'}
+    answer: {meaning: '¿Puedo pagar con tarjeta?'}
+    comments: []
+  - id: x.listen.buhaoyisi-women-bu-neng-shuaka
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.buhaoyisi-women-bu-neng-shuaka
+    targets: [s.buhaoyisi-women-bu-neng-shuaka]
+    context: [e.buhaoyisi, w.women, w.bu, w.neng, w.shuaka]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Lo siento, no aceptamos tarjeta.'}
+    comments: []
+  - id: x.listen.man-zou
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.man-zou
+    targets: [s.man-zou]
+    context: [w.man, w.zou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Que vaya bien! (al despedir a quien se va)}
+    comments: []
+  - id: x.produce.zhege-fandian-zenmeyang
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.zhege-fandian-zenmeyang
+    targets: [s.zhege-fandian-zenmeyang]
+    context: [w.zhe, w.ge, w.fandian, w.zenmeyang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué tal este restaurante?»'}
+    answer: {meaning: '¿Qué tal este restaurante?'}
+    comments: []
+  - id: x.produce.women-yiqi-chi-ba
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.women-yiqi-chi-ba
+    targets: [s.women-yiqi-chi-ba]
+    context: [w.women, w.yiqi, w.chi, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Comamos juntos!»'}
+    answer: {meaning: ¡Comamos juntos!}
+    comments: []
+  - id: x.produce.fandian-zai-er-lou
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.fandian-zai-er-lou
+    targets: [s.fandian-zai-er-lou]
+    context: [w.fandian, w.zai.at, w.num.er, w.lou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «El restaurante está en el segundo piso.»'}
+    answer: {meaning: El restaurante está en el segundo piso.}
+    comments: []
+  - id: x.charsound.dan
+    added: 2026-11-11
+    lang: es
+    type: charsound
+    targets: [w.caidan, w.maidan]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 单}
+    answer: {typed: dan1, hanzi: 单, pinyin: dān, meaning: 'Sale en 菜单 càidān «carta, menú», 买单 mǎidān «pagar la cuenta; ¡la
+        cuenta!».'}
+    comments: []
+  - id: x.contrast.fen.cl
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.fen-fen
+    targets: [w.fen.cl]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 份, pinyin: fèn, meaning: 'una ración, un plato (clasificador)'}
+    comments: []

@@ -946,3 +946,130 @@ sentences:
       - {text: 。}
     translation: {en: I haven't bought the plane ticket yet., es: Todavía no he comprado el billete de avión.}
     source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.nage-zui-pianyi
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǎge, ref: w.nage, text: 哪个}
+      - {pinyin: zuì, ref: w.zui, text: 最}
+      - {pinyin: piányi, ref: w.pianyi, text: 便宜}
+      - {text: ？}
+    translation: {en: 'Which one is the cheapest?', es: '¿Cuál es el más barato?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.zhege-shi-zui-pianyi-de-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: zuì, ref: w.zui, text: 最}
+      - {pinyin: piányi, ref: w.pianyi, text: 便宜}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Is this the cheapest?', es: '¿Este es el más barato?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.weishenme-zheme-gui
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wèishénme, ref: w.weishenme, text: 为什么}
+      - {pinyin: zhème, ref: w.zheme, text: 这么}
+      - {pinyin: guì, ref: w.gui, text: 贵}
+      - {text: ？}
+    translation: {en: 'Why is it so expensive?', es: '¿Por qué es tan caro?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.shi-kuai-keyi-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: shí, ref: w.num.shi, text: 十}
+      - {pinyin: kuài, ref: w.kuai, text: 块}
+      - {pinyin: kěyǐ, ref: w.keyi, text: 可以}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Is ten yuan OK?', es: '¿Diez yuanes te va bien?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.wo-xiangyao-pianyi-yidian-de
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiǎngyào, ref: w.xiangyao, text: 想要}
+      - {pinyin: piányi, ref: w.pianyi, text: 便宜}
+      - {pinyin: yìdiǎn, ref: w.yidian, sandhi: true, text: 一点}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {text: 。}
+    translation: {en: I'd like a cheaper one., es: Quiero uno un poco más barato.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.you-da-yidian-de-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: yǒu, ref: w.you.have, text: 有}
+      - {pinyin: dà, ref: w.da, text: 大}
+      - {pinyin: yìdiǎn, ref: w.yidian, sandhi: true, text: 一点}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Do you have a bigger one?', es: '¿Tiene uno un poco más grande?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.you-xiao-yidian-de-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: yǒu, ref: w.you.have, text: 有}
+      - {pinyin: xiǎo, ref: w.xiao.small, text: 小}
+      - {pinyin: yìdiǎn, ref: w.yidian, sandhi: true, text: 一点}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Do you have a smaller one?', es: '¿Tiene uno un poco más pequeño?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.zhege-tai-da-le
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: tài, ref: w.tai, text: 太}
+      - {pinyin: dà, ref: w.da, text: 大}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: 。}
+    translation: {en: This one is too big., es: Este es demasiado grande.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.zui-xiao-de-duoshao-qian
+    use: say
+    kind: example
+    segments:
+      - {pinyin: zuì, ref: w.zui, text: 最}
+      - {pinyin: xiǎo, ref: w.xiao.small, text: 小}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: duōshao, ref: w.duoshao, text: 多少}
+      - {pinyin: qián, ref: w.qian, text: 钱}
+      - {text: ？}
+    translation: {en: 'How much is the smallest?', es: '¿Cuánto cuesta el más pequeño?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.you-baise-de-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: yǒu, ref: w.you.have, text: 有}
+      - {pinyin: báisè, ref: w.baise, text: 白色}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Do you have it in white?', es: '¿Lo tienen en blanco?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.san-kuai-wu-mao
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: sān, ref: w.num.san, text: 三}
+      - {pinyin: kuài, ref: w.kuai, text: 块}
+      - {pinyin: wǔ, ref: w.num.wu, text: 五}
+      - {pinyin: máo, ref: w.mao.money, text: 毛}
+      - {text: 。}
+    translation: {en: Three fifty., es: Tres con cincuenta.}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}

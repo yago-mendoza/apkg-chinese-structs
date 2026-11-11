@@ -756,3 +756,46 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 着, pinyin: zhe, meaning: 'partícula: algo que dura, sigue así'}
     comments: []
+  - id: x.nuance.ni-xihuan-de-ren
+    added: '2026-11-11'
+    lang: es
+    type: nuance
+    targets: [st.de-relative]
+    skills: [comprehension, discrimination]
+    prompt: {text: '你喜欢的人 y 喜欢你的人: ¿quién quiere a quién?'}
+    answer: {meaning: '你喜欢的人: la persona que te gusta (tú la quieres). 喜欢你的人: la persona a la que le gustas (te quiere a ti). Lo que va antes de 的 describe a 人: empieza por el final.'}
+    comments: []
+  - id: x.nuance.xiang-ni-xiang-rang-ni
+    added: '2026-11-11'
+    lang: es
+    type: nuance
+    targets: [st.xiang-rang]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我想你 y 我想让你去: ¿qué cambia?'}
+    answer: {meaning: '我想你: «te echo de menos» (想 + persona, sin acción detrás). 我想让你去: «quiero que vayas»: 让 mete a la persona que hace la acción.'}
+    comments: []
+  - id: x.calque.xiang-rang
+    added: 2026-11-11
+    lang: es
+    type: pattern
+    targets: [st.xiang-rang]
+    context: [w.xiang, w.rang]
+    sentence: s.wo-xiang-rang-ni-bang-wo
+    reveal: [s.wo-xiang-rang-ni-qu]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «Quiero que me ayudes.»'}
+    answer: {meaning: 'Sin 让, 我想你 suena a «te echo de menos»: con 让 queda claro que quieres que el otro haga algo.'}
+    comments: []
+  - id: x.calque.adj-yidian-de
+    added: 2026-11-11
+    lang: es
+    type: pattern
+    targets: [st.adj-yidian-de]
+    context: [w.yidian, w.de]
+    sentence: s.you-da-yidian-de-ma
+    reveal: [s.wo-xiangyao-pianyi-yidian-de]
+    skills: [grammar, discrimination]
+    prompt: {text: '¿Cuál se dice así en chino? «¿Tiene uno un poco más grande?»'}
+    answer: {meaning: 'Para comparar («un poco más grande»), 一点 va detrás del adjetivo: 大一点. 有一点大 es «algo grande (de más)»,
+        una queja.'}
+    comments: []

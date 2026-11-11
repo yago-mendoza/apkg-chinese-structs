@@ -221,7 +221,7 @@ entries:
     comments: []
     connection: {kind: sound, with: [房, 放], text: '方 fāng da el sonido a 旁 páng, a 房 fáng (el de 房间) y a 放 fàng «poner».'}
   - id: w.xi.west
-    use: read
+    use: say
     use_reason: como dirección casi no se dice suelto; aquí se reconoce dentro de 东西 y 西班牙
     role: content
     kind: word
@@ -587,4 +587,14 @@ entries:
       - {ref: w.chulai, cue: 'hacia quien habla, que espera fuera'}
       - {ref: w.chuqu, cue: alejándose de quien habla}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    comments: []
+  - id: w.cheshang
+    use: hear
+    role: content
+    kind: word
+    hanzi: 车上
+    pinyin: chēshang
+    meaning: {es: 'en el coche, en el autobús', en: 'in the car, on the bus'}
+    accept_pinyin_mismatch: 上 es átono en el habla
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
     comments: []

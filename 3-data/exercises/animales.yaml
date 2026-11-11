@@ -800,3 +800,24 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 猴, pinyin: hóu, meaning: mono (en el zodiaco)}
     comments: []
+  - id: x.listen.wo-you-yi-zhi-xiao-mao
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.wo-you-yi-zhi-xiao-mao
+    targets: [s.wo-you-yi-zhi-xiao-mao]
+    context: [w.wo, w.you.have, w.num.yi, w.zhi.cl, w.xiao.small, w.mao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo un gatito.}
+    comments: []
+  - id: x.contrast.mao
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.mao-mao
+    targets: [w.mao]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 猫, pinyin: māo, meaning: gato}
+    comments: []

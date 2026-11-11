@@ -66,9 +66,10 @@ ANKI_CONNECT = "http://127.0.0.1:8765"
 
 # Identidades estables: no cambiarlas nunca, o Anki verá un mazo/modelo nuevo.
 GUID_NAMESPACE = "apkg-chinese-structs"
-# Ruta completa del mazo en Anki: YAGO lo guarda dentro de su carpeta «🀄 Chinese», junto a otros mazos que no son
-# de este proyecto. Subdecks por nivel y tema: "🀄 Chinese::🐉 Chino práctico::HSK 1::02 Saludos y despedidas".
-DECK_NAME = "🀄 Chinese::🐉 Chino práctico"
+# Ruta completa del mazo en Anki: desde el 2026-11-09 YAGO lo guarda en su familia «🌐 Language», junto a sus mazos de
+# español, inglés y francés, que no son de este proyecto (antes, en «🀄 Chinese::🐉 Chino práctico»). Subdecks por nivel
+# y tema: "🌐 Language::🀄 Chino práctico::HSK 1::02 Saludos y despedidas".
+DECK_NAME = "🌐 Language::🀄 Chino práctico"
 DECK_ID_BASE = 1_758_800_000_000         # ID del subdeck = base + hash estable del id del tema
 MODEL_TYPED_ID = 1_758_800_101
 MODEL_SELF_ID = 1_758_800_102
@@ -5250,7 +5251,8 @@ def reposition_new_cards(moves):
     request, answer, token = folder / "request.json", folder / "answer.json", uuid.uuid4().hex
     answer.unlink(missing_ok=True)
     tmp = folder / "request.json.tmp"
-    tmp.write_text(json.dumps({"token": token, "moves": [[int(c), int(p)] for c, p in moves]}), encoding="utf-8")
+    tmp.write_text(json.dumps({"token": token, "deck": DECK_NAME, "moves": [[int(c), int(p)] for c, p in moves]}),
+                   encoding="utf-8")
     tmp.replace(request)
     deadline = time.time() + ORDER_WAIT
     while time.time() < deadline:

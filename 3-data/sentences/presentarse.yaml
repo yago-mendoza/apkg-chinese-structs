@@ -1524,3 +1524,26 @@ sentences:
       - {text: ？}
     translation: {en: 'Nice to meet you. What do you do?', es: 'Encantado de conocerte. ¿A qué te dedicas?'}
     source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.wo-xiang-zai-jiandao-ni
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: zài, ref: w.zai.again, text: 再}
+      - {pinyin: jiàndào, ref: w.jiandao, text: 见到}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {text: 。}
+    translation: {en: I want to see you again., es: Quiero volver a verte.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.hen-gaoxing-jiandao-ni
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: gāoxìng, ref: w.gaoxing, text: 高兴}
+      - {pinyin: jiàndào, ref: w.jiandao, text: 见到}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {text: 。}
+    translation: {en: Nice to see you., es: Me alegro de verte.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}

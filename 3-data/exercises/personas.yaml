@@ -2012,3 +2012,51 @@ exercises:
     prompt: {text: '¿Cuál es tāmen, «ellas»?'}
     answer: {hanzi: 她们, pinyin: tāmen, meaning: ellas}
     comments: []
+  - id: x.dictation.laoren
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.laoren]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lao3 ren2, hanzi: 老人, pinyin: lǎorén, meaning: 'persona mayor, anciano'}
+    comments: []
+  - id: x.produce.laoren
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.laoren]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «persona mayor, anciano»? Escribe el pinyin.'}
+    answer: {typed: lao3 ren2, hanzi: 老人, pinyin: lǎorén, meaning: 'persona mayor, anciano'}
+    comments: []
+  - id: x.read.laoren
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.laoren]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 老人}
+    answer: {hanzi: 老人, pinyin: lǎorén, meaning: 'persona mayor, anciano'}
+    comments: []
+  - id: x.tones.laoren
+    added: 2026-11-11
+    lang: es
+    type: tones
+    targets: [w.laoren]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escucha y escribe el tono de cada sílaba (1–4, 5 = neutro).', audio: true}
+    answer: {typed: '32', hanzi: 老人, pinyin: lǎorén, meaning: 'persona mayor, anciano'}
+    comments: []
+  - id: x.produce.nage-laoren-shi-wo-yeye
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.nage-laoren-shi-wo-yeye
+    targets: [s.nage-laoren-shi-wo-yeye]
+    context: [w.na.that, w.ge, w.laoren, w.shi, w.wo, w.yeye]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ese señor mayor es mi abuelo.»'}
+    answer: {meaning: Ese señor mayor es mi abuelo.}
+    comments: []

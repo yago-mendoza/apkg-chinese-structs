@@ -375,3 +375,44 @@ entries:
     comments:
       - {date: '2026-11-06', kind: teacher, private: false, text: 'La pregunta que más marcó: 你每天几点起床？ «¿a qué hora te levantas cada día?».'}
       - {date: '2026-11-06', kind: linguistic, private: false, text: 起 «levantarse» + 床 «cama». El mismo 起 de 一起 y de 对不起.}
+  - id: w.anjing
+    use: say
+    role: content
+    kind: word
+    hanzi: 安静
+    pinyin: ānjìng
+    meaning: {es: 'tranquilo, silencioso', en: quiet}
+    connection: {kind: sound, with: [净], text: '争 zhēng da el sonido a 静 jìng y a 净 jìng (el de 干净); 青 «claro»: todo en calma.'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: usage, private: false, text: '我想要一个安静的房间 «quiero una habitación tranquila». Para pedir silencio: 请安静！.'}
+  - id: w.zuofan
+    use: say
+    role: content
+    kind: word
+    hanzi: 做饭
+    pinyin: zuò fàn
+    meaning: {es: 'cocinar, hacer la comida', en: to cook}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: usage, private: false, text: 我在做饭 «estoy cocinando». 他做的饭很好吃 «la comida que hace está muy buena».}
+  - id: w.ganjing
+    use: say
+    role: content
+    kind: word
+    hanzi: 干净
+    pinyin: gānjìng
+    meaning: {es: limpio, en: clean}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: 'El 干 gān de «seco», no el gàn de «hacer»: seco y limpio.'}
+  - id: w.dishang
+    use: hear
+    role: content
+    kind: word
+    hanzi: 地上
+    pinyin: dìshang
+    meaning: {es: en el suelo, en: on the ground}
+    accept_pinyin_mismatch: 上 es átono en el habla
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments: []

@@ -44,7 +44,7 @@
 - ✅🃏 觉得 juéde [tɕɥœ˧˥ tɤ] · creer, parecerle a uno · _verbo_ · Para dar tu opinión: 我觉得很好 «me parece bien». 你觉得怎么样？ «¿qué te parece?». · Ves 见 algo bajo una cubierta 冖 y te saltan tres chispas ⺍ en la cabeza: «¡creo que sé qué es!». Para comprobarlo das un paso 彳 al amanecer 旦 y lo tanteas con la mano 寸: después de verlo y tocarlo, dices «me parece que…». Y juéde suena a «juzgar», opinar. · 💡 Para una opinión, 觉得: 我觉得很好. 我想 es querer o tener pensado: 我想去中国. Y 怎么样 pregunta «¿qué tal?»; 你觉得怎么样？, «¿qué te parece?».
 - ✅🃏 王 Wáng [wɑŋ˧˥] · Wang (apellido) · _sustantivo_ · Como palabra suelta, 王 es «rey» [HSK 4]; aquí es el apellido.
 - ✅🃏 哪个 nǎge [na˧˩˧ kɤ] · cuál, qué (de varios) · _interrogativo_ · Palabra a palabra: 哪 «cuál» + 个, el clasificador. Para elegir entre varios: 哪个人？ «¿qué persona?», 哪个国家？ «¿qué país?».
-- ✅🃏 国家 guójiā [kwɔ˧˥ tɕja˥] · país · _sustantivo_ · Palabra a palabra: 国 «país» + 家 «casa». Para preguntar de dónde es alguien basta con 你是哪国人；国家 es la palabra entera, como en 你来自哪个国家.
+- ✅🃏 国家 guójiā [kwɔ˧˥ tɕja˥] · país · _sustantivo_ · Palabra a palabra: 国 «país» + 家 «casa». Para preguntar de dónde es alguien basta con 你是哪国人；国家 es la palabra entera, como en 你来自哪个国家. · Para preguntar de dónde es alguien, de más llano a más formal: 你哪里人？ (coloquial, puede ser la ciudad), 你是哪国人？ (lo normal), 你是哪个国家的人？, 你从哪里来？ («¿de dónde vienes?»), 请问您来自哪个国家？ (muy educado).
 - ✅🃏 日本 Rìběn [ʐɨ˥˩ pən˧˩˧] · Japón · _nombre propio_ · Palabra a palabra: 日 «sol» + 本 «origen»: el país donde nace el sol. 日本人 «japonés».
 - ✅🃏 外国 wàiguó [waɪ˥˩ kwɔ˧˥] · el extranjero; extranjero (de otro país) · _sustantivo_ · Palabra a palabra: 外 «fuera» + 国 «país». 外国人 es el extranjero, como tú en China: 我是外国人.
 - ✅🃏 汉语 Hànyǔ [xan˥˩ y˧˩˧] · chino (el idioma; más formal que 中文) · _nombre propio_ · Palabra a palabra: 汉 «los han», el pueblo chino + 语 «lengua». Es el nombre de la asignatura y del examen (汉语水平考试, el HSK); al hablar se oye más 中文: 我在学习中文.
@@ -54,6 +54,7 @@
 - ✅🃏 孟 Mèng [mɤŋ˥˩] · Mèng (tu apellido en chino) · _nombre propio_ · Un apellido chino de verdad, el de Mencio, 孟子 Mèngzǐ. Se dice 我姓孟 «me apellido Mèng».
 - ✅🃏 孟逸辰 Mèng Yìchén [mɤŋ˥˩ i˥˩ ʈʂʰən˧˥] · Mèng Yìchén (tu nombre en chino) · _nombre propio_ · Primero el apellido, 孟 Mèng, y luego el nombre, 逸辰 Yìchén: 逸 «sosegado, libre» y 辰 «los astros; la hora». Suena moderno y natural.
 - ✅🃏 上海 Shànghǎi [ʂɑŋ˥˩ xaɪ˧˩˧] · Shanghái · _nombre propio_
+- ✅🃏 见到 jiàndào [tɕjɛn˥˩ tɑʊ˥˩] · ver (a alguien), encontrarse con · _verbo_ · 我想再见到你 «quiero volver a verte». Con 见到 no se confunde con 再见 «adiós»: 我想再见你 se puede leer «quiero decirte adiós otra vez». · 见 «ver» + 到 «llegar, conseguir»: ver de verdad, encontrarse.
 
 ## 是 shì y 十 shí
 
@@ -215,3 +216,5 @@ Misma sílaba, distinto tono.
 - ✅🃏 他现在在美国。 · tā xiànzài zài Měiguó · Ahora está en Estados Unidos.
 - ✅🃏 你好，我叫孟逸辰，我是工程师。 · nǐ hǎo wǒ jiào Mèng Yìchén wǒ shì gōngchéngshī · Hola, me llamo Mèng Yìchén y soy ingeniero.
 - ✅🃏 认识你很高兴，你是做什么工作的？ · rènshi nǐ hěn gāoxìng nǐ shì zuò shénme gōngzuò de · Encantado de conocerte. ¿A qué te dedicas?
+- ✅🃏 我想再见到你。 · wǒ xiǎng zài jiàndào nǐ · Quiero volver a verte.
+- ✅🃏 很高兴见到你。 · hěn gāoxìng jiàndào nǐ · Me alegro de verte.

@@ -1,0 +1,644 @@
+# Frases · En el restaurante. Esquema: 3-data/README.md
+
+sentences:
+  - id: s.nihao-jiwei
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: nǐ hǎo, ref: e.nihao, text: 你好}
+      - {text: ，}
+      - {pinyin: jǐ, ref: w.ji, text: 几}
+      - {pinyin: wèi, ref: w.wei.cl, text: 位}
+      - {text: ？}
+    translation: {en: 'Hello, how many of you?', es: 'Hola, ¿cuántos son?'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.liang-wei
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: liǎng, ref: w.liang, text: 两}
+      - {pinyin: wèi, ref: w.wei.cl, text: 位}
+      - {text: 。}
+    translation: {en: 'Two, please.', es: Dos (personas).}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.zhe-shi-caidan
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: càidān, ref: w.caidan, text: 菜单}
+      - {text: 。}
+    translation: {en: Here's the menu., es: Aquí tiene la carta.}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.wo-yao-jiaozi-hai-yao-tang
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: jiǎozi, ref: w.jiaozi, text: 饺子}
+      - {text: ，}
+      - {pinyin: hái, ref: w.hai.also, text: 还}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: tāng, ref: w.tang, text: 汤}
+      - {text: 。}
+    translation: {en: 'I''d like dumplings, and soup too.', es: 'Quiero jiaozi, y también sopa.'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.yibai-yuan
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: yì, ref: w.num.yi, sandhi: true, text: 一}
+      - {pinyin: bǎi, ref: w.bai.hundred, text: 百}
+      - {pinyin: yuán, ref: w.yuan.money, text: 元}
+      - {text: 。}
+    translation: {en: A hundred yuan., es: Cien yuanes.}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.hao-wo-maidan
+    use: say
+    kind: example
+    segments:
+      - {pinyin: hǎo, ref: w.hao, text: 好}
+      - {text: ，}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: mǎidān, ref: w.maidan, text: 买单}
+      - {text: 。}
+    translation: {en: 'OK, I''ll pay.', es: 'Vale, pago yo (la cuenta).'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.keyi-dabao-ma
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: kěyǐ, ref: w.keyi, text: 可以}
+      - {pinyin: dǎbāo, ref: w.dabao, text: 打包}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Can I take it away?', es: '¿Me lo pone para llevar?'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.ni-yao-jirou-haishi-zhurou
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: jīròu, ref: w.jirou, text: 鸡肉}
+      - {pinyin: háishi, ref: w.haishi, text: 还是}
+      - {pinyin: zhūròu, ref: w.zhurou, text: 猪肉}
+      - {text: ？}
+    translation: {en: 'Do you want chicken or pork?', es: '¿Quieres pollo o cerdo?'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.ni-yao-mifan-haishi-miantiao
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: mǐfàn, ref: w.mifan, text: 米饭}
+      - {pinyin: háishi, ref: w.haishi, text: 还是}
+      - {pinyin: miàntiáo, ref: w.miantiao, text: 面条}
+      - {text: ？}
+    translation: {en: 'Do you want rice or noodles?', es: '¿Quieres arroz o fideos?'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.cha-haishi-shui
+    use: say
+    kind: example
+    segments:
+      - {pinyin: chá, ref: w.cha, text: 茶}
+      - {pinyin: háishi, ref: w.haishi, text: 还是}
+      - {pinyin: shuǐ, ref: w.shui, text: 水}
+      - {text: ？}
+    translation: {en: 'Tea or water?', es: '¿Té o agua?'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.zhege-cai-hen-haochi-ni-yao-bu-yao
+    use: say
+    kind: example
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: cài, ref: w.cai, text: 菜}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: hǎochī, ref: w.haochi, text: 好吃}
+      - {text: ，}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: bu, ref: w.bu, sandhi: true, text: 不}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {text: ？}
+    translation: {en: 'This dish is delicious; do you want it?', es: 'Este plato está muy bueno, ¿lo quieres?'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.yao-bu-yao-tang
+    use: say
+    kind: example
+    segments:
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: bu, ref: w.bu, sandhi: true, text: 不}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: tāng, ref: w.tang, text: 汤}
+      - {text: ？}
+    translation: {en: 'Would you like soup?', es: '¿Quieres sopa?'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.dabao-ma
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: dǎbāo, ref: w.dabao, text: 打包}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'To take away?', es: '¿Para llevar?'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.ni-meiyou-kan-caidan
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: méiyǒu, ref: w.meiyou, text: 没有}
+      - {pinyin: kàn, ref: w.kan, text: 看}
+      - {pinyin: càidān, ref: w.caidan, text: 菜单}
+      - {text: 。}
+    translation: {en: You haven't looked at the menu., es: No has mirado la carta.}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.ni-zenme-zhidao-ni-xiang-chi-shenme
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: zěnme, ref: w.zenme, text: 怎么}
+      - {pinyin: zhīdao, ref: w.zhidao, text: 知道}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: chī, ref: w.chi, text: 吃}
+      - {pinyin: shénme, ref: w.shenme, text: 什么}
+      - {text: ？}
+    translation: {en: 'How do you know what you want to eat?', es: '¿Cómo sabes qué quieres comer?'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.wo-keyi-yao-yi-bei-shui-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: kěyǐ, ref: w.keyi, text: 可以}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: yì, ref: w.num.yi, sandhi: true, text: 一}
+      - {pinyin: bēi, ref: w.bei.cl, text: 杯}
+      - {pinyin: shuǐ, ref: w.shui, text: 水}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Could I have a glass of water?', es: '¿Me pone un vaso de agua?'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.lai-yi-bei-kele
+    use: say
+    kind: example
+    segments:
+      - {pinyin: lái, ref: w.lai.order, text: 来}
+      - {pinyin: yì, ref: w.num.yi, sandhi: true, text: 一}
+      - {pinyin: bēi, ref: w.bei.cl, text: 杯}
+      - {pinyin: kělè, ref: w.kele, text: 可乐}
+      - {text: 。}
+    translation: {en: 'A cola, please.', es: 'Una cola, por favor.'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.meinv-maidan
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: měinǚ, ref: w.meinv, text: 美女}
+      - {text: ，}
+      - {pinyin: mǎidān, ref: w.maidan, text: 买单}
+      - {text: ！}
+    translation: {en: 'Excuse me, the bill!', es: '¡Perdona (a la camarera), la cuenta!'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.shuaige-women-yao-dian-cai
+    use: say
+    kind: example
+    segments:
+      - {pinyin: shuàigē, ref: w.shuaige, text: 帅哥}
+      - {text: ，}
+      - {pinyin: wǒmen, ref: w.women, text: 我们}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: diǎn, ref: w.dian.order, text: 点}
+      - {pinyin: cài, ref: w.cai, text: 菜}
+      - {text: 。}
+    translation: {en: 'Excuse me, we''d like to order.', es: '¡Perdona (al camarero), queremos pedir!'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.huanying-xiaci-zai-lai
+    use: hear
+    kind: formula
+    segments:
+      - {pinyin: huānyíng, ref: w.huanying, text: 欢迎}
+      - {pinyin: xiàcì, ref: w.xiaci, text: 下次}
+      - {pinyin: zài, ref: w.zai.again, text: 再}
+      - {pinyin: lái, ref: w.lai, text: 来}
+      - {text: ！}
+    translation: {en: Come again!, es: ¡Vuelvan pronto!}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+  - id: s.zai-zheli-chi-haishi-dabao
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: zhèlǐ, ref: w.zheli, text: 这里}
+      - {pinyin: chī, ref: w.chi, text: 吃}
+      - {pinyin: háishi, ref: w.haishi, text: 还是}
+      - {pinyin: dǎbāo, ref: w.dabao, text: 打包}
+      - {text: ？}
+    translation: {en: 'For here or to go?', es: '¿Para tomar aquí o para llevar?'}
+    source: {origin: inbox, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 2026-11-11_para-llevar.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.bu-dabao-zai-zheli-chi
+    use: say
+    kind: example
+    segments:
+      - {pinyin: bù, ref: w.bu, text: 不}
+      - {pinyin: dǎbāo, ref: w.dabao, text: 打包}
+      - {text: ，}
+      - {pinyin: xièxie, ref: e.xiexie, text: 谢谢}
+      - {text: ，}
+      - {pinyin: wǒmen, ref: w.women, text: 我们}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: zhèlǐ, ref: w.zheli, text: 这里}
+      - {pinyin: chī, ref: w.chi, text: 吃}
+      - {text: 。}
+    translation: {en: 'Not to go, thanks; we''ll eat here.', es: 'Para llevar no, gracias: comemos aquí.'}
+    source: {origin: inbox, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 2026-11-11_para-llevar.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.dlg-dian-cai
+    use: hear
+    kind: example
+    speakers: [A, B, A, B, A, B, B, A, B]
+    segments:
+      - {pinyin: nǐ hǎo, ref: e.nihao, text: 你好}
+      - {text: ，}
+      - {pinyin: jǐ, ref: w.ji, text: 几}
+      - {pinyin: wèi, ref: w.wei.cl, text: 位}
+      - {text: ？}
+      - {pinyin: liǎng, ref: w.liang, text: 两}
+      - {pinyin: wèi, ref: w.wei.cl, text: 位}
+      - {text: 。}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: zhèlǐ, ref: w.zheli, text: 这里}
+      - {pinyin: chī, ref: w.chi, text: 吃}
+      - {pinyin: háishi, ref: w.haishi, text: 还是}
+      - {pinyin: dǎbāo, ref: w.dabao, text: 打包}
+      - {text: ？}
+      - {pinyin: bù, ref: w.bu, text: 不}
+      - {pinyin: dǎbāo, ref: w.dabao, text: 打包}
+      - {text: ，}
+      - {pinyin: wǒmen, ref: w.women, text: 我们}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: zhèlǐ, ref: w.zheli, text: 这里}
+      - {pinyin: chī, ref: w.chi, text: 吃}
+      - {text: 。}
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: càidān, ref: w.caidan, text: 菜单}
+      - {text: 。}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: jiǎozi, ref: w.jiaozi, text: 饺子}
+      - {text: ，}
+      - {pinyin: hái, ref: w.hai.also, text: 还}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: tāng, ref: w.tang, text: 汤}
+      - {text: 。}
+      - {pinyin: duōshao, ref: w.duoshao, text: 多少}
+      - {pinyin: qián, ref: w.qian, text: 钱}
+      - {text: ？}
+      - {pinyin: yígòng, ref: w.yigong, text: 一共}
+      - {pinyin: wǔ, ref: w.num.wu, text: 五}
+      - {pinyin: shí, ref: w.num.shi, text: 十}
+      - {pinyin: kuài, ref: w.kuai, text: 块}
+      - {text: 。}
+      - {pinyin: hǎo, ref: w.hao, text: 好}
+      - {text: ，}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: mǎidān, ref: w.maidan, text: 买单}
+      - {text: 。}
+    translation: {en: '—Hello, how many? —Two. —For here or to go? —Not to go; we''ll eat here. —Here''s the menu. —Dumplings, and soup too. How much? —Fifty altogether. —OK, I''ll pay.', es: '—Hola, ¿cuántos son? —Dos. —¿Para tomar aquí o para llevar? —Para llevar no: comemos aquí. —Aquí tiene la carta. —Quiero jiaozi, y también sopa. ¿Cuánto es? —Cincuenta en total. —Vale, pago yo.'}
+    source: {origin: inbox, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 2026-11-11_para-llevar.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.buhaoyisi-keyi-gei-wo-caidan-ma
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: bù hǎoyìsi, ref: e.buhaoyisi, text: 不好意思}
+      - {text: ，}
+      - {pinyin: kěyǐ, ref: w.keyi, text: 可以}
+      - {pinyin: gěi, ref: w.gei.to, text: 给}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: càidān, ref: w.caidan, text: 菜单}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Excuse me, could I have the menu?', es: 'Perdone, ¿me da la carta?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.caidan-zai-zheli-nimen-kan-yixia
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: càidān, ref: w.caidan, text: 菜单}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: zhèlǐ, ref: w.zheli, text: 这里}
+      - {text: ，}
+      - {pinyin: nǐmen, ref: w.nimen, text: 你们}
+      - {pinyin: kàn, ref: w.kan, text: 看}
+      - {pinyin: yíxià, ref: w.yixia, sandhi: true, text: 一下}
+      - {text: 。}
+    translation: {en: Here's the menu; have a look., es: La carta está aquí; mírenla con calma.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.nimen-xiang-hao-le-ma
+    use: hear
+    kind: formula
+    segments:
+      - {pinyin: nǐmen, ref: w.nimen, text: 你们}
+      - {pinyin: xiǎng, ref: w.xiang, text: 想}
+      - {pinyin: hǎo, ref: w.hao, text: 好}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Have you decided?', es: '¿Ya saben qué van a pedir?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.wo-hai-mei-jueding
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: hái, ref: w.hai.still, text: 还}
+      - {pinyin: méi, ref: w.mei, text: 没}
+      - {pinyin: juédìng, ref: w.jueding, text: 决定}
+      - {text: 。}
+    translation: {en: I haven't decided yet., es: Todavía no he decidido.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.nimen-zheli-you-shenme-haochi-de
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: nǐmen, ref: w.nimen, text: 你们}
+      - {pinyin: zhèlǐ, ref: w.zheli, text: 这里}
+      - {pinyin: yǒu, ref: w.you.have, text: 有}
+      - {pinyin: shénme, ref: w.shenme, text: 什么}
+      - {pinyin: hǎochī, ref: w.haochi, text: 好吃}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {text: ？}
+    translation: {en: 'What''s good here?', es: '¿Qué tienen de bueno aquí?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.wo-yao-yi-fen-jiaozi
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: yì, ref: w.num.yi, sandhi: true, text: 一}
+      - {pinyin: fèn, ref: w.fen.cl, text: 份}
+      - {pinyin: jiǎozi, ref: w.jiaozi, text: 饺子}
+      - {text: 。}
+    translation: {en: 'One portion of dumplings, please.', es: Una de jiaozi.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.bu-yao-la
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: bú, ref: w.bu, sandhi: true, text: 不}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: là, ref: w.la, text: 辣}
+      - {text: 。}
+    translation: {en: 'Not spicy, please.', es: Sin picante.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.zhege-la-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: là, ref: w.la, text: 辣}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Is this spicy?', es: '¿Esto pica?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.bu-la-fangxin-ba
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: bù, ref: w.bu, text: 不}
+      - {pinyin: là, ref: w.la, text: 辣}
+      - {text: ，}
+      - {pinyin: fàngxīn, ref: w.fangxin, text: 放心}
+      - {pinyin: ba, ref: w.ba.particle, text: 吧}
+      - {text: 。}
+    translation: {en: 'It''s not spicy, don''t worry.', es: 'No pica, tranquilo.'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.hai-yao-biede-ma
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: hái, ref: w.hai.also, text: 还}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: biéde, ref: w.biede, text: 别的}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Anything else?', es: '¿Algo más?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.duile-zai-lai-yi-bei-shui
+    use: say
+    kind: example
+    segments:
+      - {pinyin: duì le, ref: e.duile, text: 对了}
+      - {text: ，}
+      - {pinyin: zài, ref: w.zai.again, text: 再}
+      - {pinyin: lái, ref: w.lai.order, text: 来}
+      - {pinyin: yì, ref: w.num.yi, sandhi: true, text: 一}
+      - {pinyin: bēi, ref: w.bei.cl, text: 杯}
+      - {pinyin: shuǐ, ref: w.shui, text: 水}
+      - {text: 。}
+    translation: {en: 'Oh, and another glass of water.', es: 'Ah, y otro vaso de agua.'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.ni-jueding-ba
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: juédìng, ref: w.jueding, text: 决定}
+      - {pinyin: ba, ref: w.ba.particle, text: 吧}
+      - {text: ！}
+    translation: {en: You decide!, es: ¡Decide tú!}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.na-wo-yao-kele
+    use: say
+    kind: example
+    segments:
+      - {pinyin: nà, ref: w.na.then, text: 那}
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: kělè, ref: w.kele, text: 可乐}
+      - {text: 。}
+    translation: {en: Then I'll have a cola., es: Pues yo quiero una cola.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.zhe-shi-shenme-rou
+    use: say
+    kind: example
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: shénme, ref: w.shenme, text: 什么}
+      - {pinyin: ròu, ref: w.rou, text: 肉}
+      - {text: ？}
+    translation: {en: 'What meat is this?', es: '¿Qué carne es esta?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.na-zhege-ne
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: nà, ref: w.na.then, text: 那}
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: ne, ref: w.ne, text: 呢}
+      - {text: ？}
+    translation: {en: 'And this one?', es: '¿Y esto?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.qing-man-yong
+    use: hear
+    kind: formula
+    segments:
+      - {pinyin: qǐng, ref: w.qing, text: 请}
+      - {pinyin: màn, ref: w.man, text: 慢}
+      - {pinyin: yòng, ref: w.yong, text: 用}
+      - {text: 。}
+    translation: {en: Enjoy your meal., es: Que aproveche.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.wo-chi-bao-le
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: chī, ref: w.chi, text: 吃}
+      - {pinyin: bǎo, ref: w.bao.full, text: 饱}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: 。}
+    translation: {en: I'm full., es: Estoy lleno.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.zenmeyang-hai-manyi-ma
+    use: hear
+    kind: formula
+    segments:
+      - {pinyin: zěnmeyàng, ref: w.zenmeyang, text: 怎么样}
+      - {text: ？}
+      - {pinyin: hái, ref: w.hai.still, text: 还}
+      - {pinyin: mǎnyì, ref: w.manyi, text: 满意}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'How was it? Everything OK?', es: '¿Qué tal? ¿Todo bien?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.buhaoyisi-maidan
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: bù hǎoyìsi, ref: e.buhaoyisi, text: 不好意思}
+      - {text: ，}
+      - {pinyin: mǎidān, ref: w.maidan, text: 买单}
+      - {text: ！}
+    translation: {en: 'Excuse me, the bill please!', es: 'Perdone, ¡la cuenta!'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.haode-mashang-lai
+    use: hear
+    kind: formula
+    segments:
+      - {pinyin: hǎo de, ref: e.haode, text: 好的}
+      - {text: ，}
+      - {pinyin: mǎshàng, ref: w.mashang, text: 马上}
+      - {pinyin: lái, ref: w.lai, text: 来}
+      - {text: 。}
+    translation: {en: Coming right up., es: Enseguida.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.yigong-duoshao-qian
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: yígòng, ref: w.yigong, text: 一共}
+      - {pinyin: duōshao, ref: w.duoshao, text: 多少}
+      - {pinyin: qián, ref: w.qian, text: 钱}
+      - {text: ？}
+    translation: {en: 'How much altogether?', es: '¿Cuánto es en total?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.yigong-yibai-kuai
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: yígòng, ref: w.yigong, text: 一共}
+      - {pinyin: yì, ref: w.num.yi, sandhi: true, text: 一}
+      - {pinyin: bǎi, ref: w.bai.hundred, text: 百}
+      - {pinyin: kuài, ref: w.kuai, text: 块}
+      - {text: 。}
+    translation: {en: A hundred altogether., es: Cien en total.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.wo-qingke-kaiwanxiao-de
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: qǐngkè, ref: w.qingke, text: 请客}
+      - {text: ！}
+      - {pinyin: kāi wánxiào, ref: w.kaiwanxiao, text: 开玩笑}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {text: ！}
+    translation: {en: It's on me! Just kidding!, es: ¡Invito yo! ¡Es broma!}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.keyi-shuaka-ma
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: kěyǐ, ref: w.keyi, text: 可以}
+      - {pinyin: shuākǎ, ref: w.shuaka, text: 刷卡}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Can I pay by card?', es: '¿Puedo pagar con tarjeta?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.buhaoyisi-women-bu-neng-shuaka
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: bù hǎoyìsi, ref: e.buhaoyisi, text: 不好意思}
+      - {text: ，}
+      - {pinyin: wǒmen, ref: w.women, text: 我们}
+      - {pinyin: bù, ref: w.bu, text: 不}
+      - {pinyin: néng, ref: w.neng, text: 能}
+      - {pinyin: shuākǎ, ref: w.shuaka, text: 刷卡}
+      - {text: 。}
+    translation: {en: 'Sorry, we don''t take cards.', es: 'Lo siento, no aceptamos tarjeta.'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.man-zou
+    use: hear
+    kind: formula
+    segments:
+      - {pinyin: màn, ref: w.man, text: 慢}
+      - {pinyin: zǒu, ref: w.zou, text: 走}
+      - {text: ！}
+    translation: {en: Take care!, es: ¡Que vaya bien! (al despedir a quien se va)}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.zhege-fandian-zenmeyang
+    use: say
+    kind: example
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: fàndiàn, ref: w.fandian, text: 饭店}
+      - {pinyin: zěnmeyàng, ref: w.zenmeyang, text: 怎么样}
+      - {text: ？}
+    translation: {en: 'How''s this restaurant?', es: '¿Qué tal este restaurante?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.women-yiqi-chi-ba
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒmen, ref: w.women, text: 我们}
+      - {pinyin: yìqǐ, ref: w.yiqi, sandhi: true, text: 一起}
+      - {pinyin: chī, ref: w.chi, text: 吃}
+      - {pinyin: ba, ref: w.ba.particle, text: 吧}
+      - {text: ！}
+    translation: {en: Let's eat together!, es: ¡Comamos juntos!}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.fandian-zai-er-lou
+    use: say
+    kind: example
+    segments:
+      - {pinyin: fàndiàn, ref: w.fandian, text: 饭店}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: èr, ref: w.num.er, text: 二}
+      - {pinyin: lóu, ref: w.lou, text: 楼}
+      - {text: 。}
+    translation: {en: The restaurant is on the second floor., es: El restaurante está en el segundo piso.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}

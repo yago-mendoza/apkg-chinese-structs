@@ -1739,12 +1739,16 @@ class NewCardOrderAddon(unittest.TestCase):
                     req = folder / "request.json"
                     if req.is_file():
                         got = json.loads(req.read_text(encoding="utf-8")); req.unlink()
+                        seen.append(got.get("deck"))
                         (folder / "answer.json").write_text(json.dumps({"token": got["token"], "moved": len(got["moves"]),
                                                                         "changed": len(got["moves"]), "refused": []}), encoding="utf-8")
                         return
                     import time; time.sleep(0.05)
+            seen = []
             threading.Thread(target=addon_side).start()
             self.assertEqual(anki.reposition_new_cards([(1, 10), (2, 20)]), 2)
+            # El complemento ya no lleva el nombre del mazo escrito: se lo dice push (YAGO lo movió el 2026-11-09).
+            self.assertEqual(seen, [anki.DECK_NAME])
 
     def test_a_refused_card_is_an_error(self):
         import threading

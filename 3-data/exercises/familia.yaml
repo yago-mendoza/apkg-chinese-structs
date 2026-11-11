@@ -1235,3 +1235,61 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Quiero a mi familia.»'}
     answer: {meaning: Quiero a mi familia.}
     comments: []
+  - id: x.dictation.meimei
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.meimei]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mei4 mei5, hanzi: 妹妹, pinyin: mèimei, meaning: hermana pequeña}
+    comments: []
+  - id: x.produce.meimei
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.meimei]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «hermana pequeña»? Escribe el pinyin.'}
+    answer: {typed: mei4 mei5, hanzi: 妹妹, pinyin: mèimei, meaning: hermana pequeña}
+    comments: []
+  - id: x.read.meimei
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.meimei]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 妹妹}
+    answer: {hanzi: 妹妹, pinyin: mèimei, meaning: hermana pequeña}
+    comments: []
+  - id: x.tones.meimei
+    added: 2026-11-11
+    lang: es
+    type: tones
+    targets: [w.meimei]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 妹妹, pinyin: mei mei}
+    answer: {typed: '45', hanzi: 妹妹, pinyin: mèimei, meaning: hermana pequeña}
+    comments: []
+  - id: x.produce.wo-you-yi-ge-meimei
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-you-yi-ge-meimei
+    targets: [s.wo-you-yi-ge-meimei]
+    context: [w.wo, w.you.have, w.num.yi, w.ge, w.meimei]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo una hermana pequeña.»'}
+    answer: {meaning: Tengo una hermana pequeña.}
+    comments: []
+  - id: x.charsound.ge
+    added: 2026-11-11
+    lang: es
+    type: charsound
+    targets: [w.gege, w.shuaige]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 哥}
+    answer: {typed: ge1, hanzi: 哥, pinyin: gē, meaning: 'Sale en 哥哥 gēge «hermano mayor», 帅哥 shuàigē «(para llamar a un camarero
+        joven) ¡oye!, ¡perdona!».'}
+    comments: []

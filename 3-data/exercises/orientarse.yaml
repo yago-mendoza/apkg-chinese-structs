@@ -1,0 +1,329 @@
+# Ejercicios · Orientarse. Esquema: 3-data/README.md
+
+exercises:
+  - id: x.dictation.jie
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.jie]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jie1, hanzi: 街, pinyin: jiē, meaning: calle}
+    comments: []
+  - id: x.produce.jie
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.jie]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «calle»? Escribe el pinyin.'}
+    answer: {typed: jie1, hanzi: 街, pinyin: jiē, meaning: calle}
+    comments: []
+  - id: x.read.jie
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.jie]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 街}
+    answer: {hanzi: 街, pinyin: jiē, meaning: calle}
+    comments: []
+  - id: x.dictation.fujin
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.fujin]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fu4 jin4, hanzi: 附近, pinyin: fùjìn, meaning: 'cerca, por aquí cerca'}
+    comments: []
+  - id: x.produce.fujin
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.fujin]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «cerca, por aquí cerca»? Escribe el pinyin.'}
+    answer: {typed: fu4 jin4, hanzi: 附近, pinyin: fùjìn, meaning: 'cerca, por aquí cerca'}
+    comments: []
+  - id: x.read.fujin
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.fujin]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 附近}
+    answer: {hanzi: 附近, pinyin: fùjìn, meaning: 'cerca, por aquí cerca'}
+    comments: []
+  - id: x.dictation.dong.east
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.dong.east]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dong1, hanzi: 东, pinyin: dōng, meaning: este (punto cardinal)}
+    comments: []
+  - id: x.produce.dong.east
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.dong.east]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «este (punto cardinal)»? Escribe el pinyin.'}
+    answer: {typed: dong1, hanzi: 东, pinyin: dōng, meaning: este (punto cardinal)}
+    comments: []
+  - id: x.read.dong.east
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.dong.east]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 东}
+    answer: {hanzi: 东, pinyin: dōng, meaning: este (punto cardinal)}
+    comments: []
+  - id: x.dictation.nan.south
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.nan.south]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nan2, hanzi: 南, pinyin: nán, meaning: sur}
+    comments: []
+  - id: x.produce.nan.south
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.nan.south]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «sur»? Escribe el pinyin.'}
+    answer: {typed: nan2, hanzi: 南, pinyin: nán, meaning: sur}
+    comments: []
+  - id: x.read.nan.south
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.nan.south]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 南}
+    answer: {hanzi: 南, pinyin: nán, meaning: sur}
+    comments: []
+  - id: x.dictation.bei.north
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.bei.north]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bei3, hanzi: 北, pinyin: běi, meaning: norte}
+    comments: []
+  - id: x.produce.bei.north
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.bei.north]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «norte»? Escribe el pinyin.'}
+    answer: {typed: bei3, hanzi: 北, pinyin: běi, meaning: norte}
+    comments: []
+  - id: x.read.bei.north
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.bei.north]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 北}
+    answer: {hanzi: 北, pinyin: běi, meaning: norte}
+    comments: []
+  - id: x.dictation.bian.side
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.bian.side]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bian1, hanzi: 边, pinyin: biān, meaning: lado (detrás de una dirección)}
+    comments: []
+  - id: x.read.bian.side
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.bian.side]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 边}
+    answer: {hanzi: 边, pinyin: biān, meaning: lado (detrás de una dirección)}
+    comments: []
+  - id: x.dictation.zhongjian
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.zhongjian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhong1 jian1, hanzi: 中间, pinyin: zhōngjiān, meaning: 'en medio, entre'}
+    comments: []
+  - id: x.produce.zhongjian
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.zhongjian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «en medio, entre»? Escribe el pinyin.'}
+    answer: {typed: zhong1 jian1, hanzi: 中间, pinyin: zhōngjiān, meaning: 'en medio, entre'}
+    comments: []
+  - id: x.read.zhongjian
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.zhongjian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 中间}
+    answer: {hanzi: 中间, pinyin: zhōngjiān, meaning: 'en medio, entre'}
+    comments: []
+  - id: x.dictation.didian
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.didian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: di4 dian3, hanzi: 地点, pinyin: dìdiǎn, meaning: 'lugar (de una cita, un evento)'}
+    comments: []
+  - id: x.read.didian
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.didian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 地点}
+    answer: {hanzi: 地点, pinyin: dìdiǎn, meaning: 'lugar (de una cita, un evento)'}
+    comments: []
+  - id: x.produce.wo-hui-zai-jia-fujin-he-kafei
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-hui-zai-jia-fujin-he-kafei
+    targets: [s.wo-hui-zai-jia-fujin-he-kafei]
+    context: [w.wo, w.hui.will, w.zai.at, w.jia, w.fujin, w.he.drink, w.kafei]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tomaré un café cerca de casa.»'}
+    answer: {meaning: Tomaré un café cerca de casa.}
+    comments: []
+  - id: x.produce.shanghai-de-jie-hen-piaoliang
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.shanghai-de-jie-hen-piaoliang
+    targets: [s.shanghai-de-jie-hen-piaoliang]
+    context: [w.shanghai, w.de, w.jie, w.hen, w.piaoliang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Las calles de Shanghái son muy bonitas.»'}
+    answer: {meaning: Las calles de Shanghái son muy bonitas.}
+    comments: []
+  - id: x.produce.beijing-zai-zhongguo-de-bei-bian
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.beijing-zai-zhongguo-de-bei-bian
+    targets: [s.beijing-zai-zhongguo-de-bei-bian]
+    context: [w.beijing, w.zai.at, w.zhongguo, w.de, w.bei.north, w.bian.side]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Pekín está en el norte de China.»'}
+    answer: {meaning: Pekín está en el norte de China.}
+    comments: []
+  - id: x.listen.shanghai-zai-beijing-de-nan-bian
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.shanghai-zai-beijing-de-nan-bian
+    targets: [s.shanghai-zai-beijing-de-nan-bian]
+    context: [w.shanghai, w.zai.at, w.beijing, w.de, w.nan.south, w.bian.side]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Shanghái está al sur de Pekín.}
+    comments: []
+  - id: x.produce.chaoshi-zai-dong-bian
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.chaoshi-zai-dong-bian
+    targets: [s.chaoshi-zai-dong-bian]
+    context: [w.chaoshi, w.zai.at, w.dong.east, w.bian.side]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «El súper está al este.»'}
+    answer: {meaning: El súper está al este.}
+    comments: []
+  - id: x.listen.xibanya-zai-zhongguo-de-xi-bian
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.xibanya-zai-zhongguo-de-xi-bian
+    targets: [s.xibanya-zai-zhongguo-de-xi-bian]
+    context: [w.xibanya, w.zai.at, w.zhongguo, w.de, w.xi.west, w.bian.side]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: España está al oeste de China.}
+    comments: []
+  - id: x.produce.wo-zuo-zai-zhongjian
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-zuo-zai-zhongjian
+    targets: [s.wo-zuo-zai-zhongjian]
+    context: [w.wo, w.zuo.sit, w.zai.at, w.zhongjian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me siento en medio.»'}
+    answer: {meaning: Me siento en medio.}
+    comments: []
+  - id: x.listen.shijian-he-didian
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.shijian-he-didian
+    targets: [s.shijian-he-didian]
+    context: [w.wo, w.bu, w.zhidao, w.shijian, w.he.and, w.didian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No sé la hora ni el lugar.}
+    comments: []
+  - id: x.contrast.dong.east
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.dong-dong
+    targets: [w.dong.east]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 东, pinyin: dōng, meaning: este (punto cardinal)}
+    comments: []
+  - id: x.contrast.nan.south
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.nan-nan
+    targets: [w.nan.south]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es nán, «sur»?'}
+    answer: {hanzi: 南, pinyin: nán, meaning: 'sur (el de 南京)'}
+    comments: []
+  - id: x.contrast.bei.north
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.bei-bei
+    targets: [w.bei.north]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 北, pinyin: běi, meaning: norte}
+    comments: []
+  - id: x.contrast.bian.side
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.bian-bian
+    targets: [w.bian.side]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 边, pinyin: biān, meaning: lado (detrás de una dirección)}
+    comments: []

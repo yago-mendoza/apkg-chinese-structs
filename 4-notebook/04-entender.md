@@ -24,6 +24,7 @@
 - ✅🃏 听到 tīngdào [tʰiŋ˥ tɑʊ˥˩] · oír (llegar a oír) · _verbo_ · Como 看到: 听 «escuchar» + 到 «llegar». 你听到了吗？ «¿lo has oído?».
 - ✅🃏 可能 kěnéng [kʰɤ˧˩˧ nɤŋ˧˥] · quizá, puede que · _verbo_
 - ✅🃏 感觉 gǎnjué [kan˧˩˧ tɕɥœ˧˥] · sentir; sensación · _sustantivo_ · El mismo 觉 de 觉得: 我觉得 «creo, me parece»; 感觉 «siento, me siento». 感觉很好 «me siento bien».
+- ✅🃏 记住 jìzhu [tɕi˥˩ ʈʂu] · aprenderse, acordarse (para siempre) · _verbo_ · 记 «apuntar, recordar» + 住 «quedarse fijo»: que se quede. 我记住了 «ya me lo sé».
 
 ## 话 huà y 花 huā
 
@@ -98,3 +99,7 @@ Solo los separa el tono.
 - ✅🃏 我不知道怎么说。 · wǒ bù zhīdao zěnme shuō · No sé cómo decirlo.
 - ✅🃏 你觉得呢？ · nǐ juéde ne · ¿Y tú qué opinas?
 - ✅🃏 可能是这样。 · kěnéng shì zhèyàng · Puede que sea así.
+- ✅🃏 这个怎么说？ · zhè ge zěnme shuō · ¿Cómo se dice esto?
+- ✅🃏 你说什么？再说一遍。 · nǐ shuō shénme zài shuō yí biàn · ¿Qué dices? Repítelo.
+- ✅🃏 我没听清楚，你能再说一遍吗？ · wǒ méi tīng qīngchu nǐ néng zài shuō yí biàn ma · No lo he oído bien, ¿puedes repetirlo?
+- ✅🃏 我记住了。 · wǒ jìzhu le · Ya me lo sé (no se me olvida).

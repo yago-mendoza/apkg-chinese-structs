@@ -44,6 +44,7 @@
 - ✅🃏 付钱 fùqián [fu˥˩ tɕʰjɛn˧˥] · pagar · _verbo_ · Palabra a palabra: 付 «entregar» + 钱 «dinero». 我先付钱 «primero pago». En China casi siempre se paga con el móvil: 扫码.
 - ✅🃏 扫码 sǎomǎ [sɑʊ˧˩˧ ma˧˩˧] · escanear el código (para pagar) · _verbo_ · 刷卡还是扫码？ «¿con tarjeta o con el código?». En China casi todo se paga escaneando un código QR con el móvil.
 - ✅🃏 包 bāo [pɑʊ˥] · bolso, mochila, bolsa · _verbo_
+- ✅🃏 毛 máo [mɑʊ˧˥] · diez céntimos (de yuan), al hablar · _clasificador_ · Al hablar del dinero: 块 «yuan» y 毛 «diez céntimos». 三块五毛 «tres con cincuenta». Escrito, 元 y 角.
 
 ## Querer, necesitar, gustar, amar
 
@@ -86,6 +87,13 @@ Solo los separa el tono: 买 baja y sube (3.º); 卖 cae (4.º).
 - 两 liǎng · tradicional: 二两面
 - 斤 jīn · el del mercado: 一斤苹果
 - 公斤 gōngjīn · el del sistema métrico: 一公斤
+
+## 猫 māo y 毛 máo
+
+Solo los separa el tono: se distinguen de oído por cómo sube o baja la voz.
+
+- 猫 māo · alto y plano: 小猫
+- 毛 máo · sube: 三块五毛
 
 ## Frases
 
@@ -165,3 +173,14 @@ Solo los separa el tono: 买 baja y sube (3.º); 卖 cae (4.º).
 - ✅🃏 我的包在哪里？ · wǒ de bāo zài nǎlǐ · ¿Dónde está mi bolso?
 - ✅🃏 恭喜你买到了两公斤你喜欢的苹果！ · gōngxǐ nǐ mǎi dào le liǎng gōngjīn nǐ xǐhuan de píngguǒ · ¡Enhorabuena, has comprado dos kilos de las manzanas que te gustan!
 - ✅🃏 我还没买机票。 · wǒ hái méi mǎi jīpiào · Todavía no he comprado el billete de avión.
+- ✅🃏 哪个最便宜？ · nǎge zuì piányi · ¿Cuál es el más barato?
+- ✅🃏 这个是最便宜的吗？ · zhè ge shì zuì piányi de ma · ¿Este es el más barato?
+- ✅🃏 为什么这么贵？ · wèishénme zhème guì · ¿Por qué es tan caro?
+- ✅🃏 十块可以吗？ · shí kuài kěyǐ ma · ¿Diez yuanes te va bien?
+- ✅🃏 我想要便宜一点的。 · wǒ xiǎngyào piányi yìdiǎn de · Quiero uno un poco más barato.
+- ✅🃏 有大一点的吗？ · yǒu dà yìdiǎn de ma · ¿Tiene uno un poco más grande?
+- ✅🃏 有小一点的吗？ · yǒu xiǎo yìdiǎn de ma · ¿Tiene uno un poco más pequeño?
+- ✅🃏 这个太大了。 · zhè ge tài dà le · Este es demasiado grande.
+- ✅🃏 最小的多少钱？ · zuì xiǎo de duōshao qián · ¿Cuánto cuesta el más pequeño?
+- ✅🃏 有白色的吗？ · yǒu báisè de ma · ¿Lo tienen en blanco?
+- ✅🃏 三块五毛。 · sān kuài wǔ máo · Tres con cincuenta.

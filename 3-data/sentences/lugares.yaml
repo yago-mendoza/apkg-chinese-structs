@@ -466,3 +466,58 @@ sentences:
       - {text: 。}
     translation: {en: I want to go back to Spain., es: Quiero volver a España.}
     source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.wo-dao-le
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: dào, ref: w.dao.reach, text: 到}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: ！}
+    translation: {en: I'm here!, es: ¡Ya he llegado!}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.ni-dao-le-ma
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: dào, ref: w.dao.reach, text: 到}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {pinyin: ma, ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Are you there yet?', es: '¿Ya has llegado?'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.wo-zai-lushang-le
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: lùshang, ref: w.lushang, text: 路上}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: 。}
+    translation: {en: I'm on my way., es: Ya estoy de camino.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.jintian-bu-yao-chuqu
+    use: say
+    kind: example
+    segments:
+      - {pinyin: jīntiān, ref: w.jintian, text: 今天}
+      - {pinyin: bú, ref: w.bu, sandhi: true, text: 不}
+      - {pinyin: yào, ref: w.yao, text: 要}
+      - {pinyin: chūqu, ref: w.chuqu, text: 出去}
+      - {text: 。}
+    translation: {en: Don't go out today., es: Hoy no salgas.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.cheshang-you-hen-duo-ren
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: chēshang, ref: w.cheshang, text: 车上}
+      - {pinyin: yǒu, ref: w.you.have, text: 有}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: duō, ref: w.duo, text: 多}
+      - {pinyin: rén, ref: w.ren, text: 人}
+      - {text: 。}
+    translation: {en: There are lots of people on the bus., es: En el autobús hay mucha gente.}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}

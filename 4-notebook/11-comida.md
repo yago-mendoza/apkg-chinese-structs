@@ -35,6 +35,20 @@
 - ✅🃏 请客 qǐngkè [tɕʰiŋ˧˩˧ kʰɤ˥˩] · invitar (pagar tú) · _verbo_ · 我请客！ «¡invito yo!»: pagas tú la cuenta de todos.
 - ✅🃏 果汁 guǒzhī [kwɔ˧˩˧ ʈʂɨ˥] · zumo · _sustantivo_ · Palabra a palabra: 果 «fruta», el de 水果 y 苹果, + 汁 «jugo». 我要一杯果汁 «quiero un zumo». · 汁 zhī: 氵 «agua» da el sentido y 十 shí, el sonido.
 - ✅🃏 肉 ròu [ʐoʊ˥˩] · carne · _sustantivo_ · El animal delante: 牛肉 «ternera», 猪肉 «cerdo», 羊肉 «cordero».
+- ✅🃏 鸡肉 jīròu [tɕi˥ ʐoʊ˥˩] · pollo (la carne) · _sustantivo_ · Las carnes se dicen animal + 肉 «carne»: 鸡肉 pollo, 猪肉 cerdo, 牛肉 ternera, 羊肉 cordero.
+- ✅🃏 猪肉 zhūròu [ʈʂu˥ ʐoʊ˥˩] · cerdo (la carne) · _sustantivo_
+- ✅🃏 米饭 mǐfàn [mi˧˩˧ fan˥˩] · arroz (cocido) · _sustantivo_ · 米 «grano de arroz» + 饭 «comida»: el arroz ya hecho, el que se pide. 饭 solo es «comida» en general (吃饭).
+- ✅🃏 面条 miàntiáo [mjɛn˥˩ tʰjɑʊ˧˥] · fideos, tallarines · _sustantivo_ · 面 «harina» + 条 «tira»: tiras de masa. En la carta muchas veces solo 面: 牛肉面 «fideos con ternera».
+- ✅🃏 饺子 jiǎozi [tɕjɑʊ˧˩˧ tsɯ] · jiaozi, empanadillas chinas · _sustantivo_
+- ✅🃏 汤 tāng [tʰɑŋ˥] · sopa · _sustantivo_ · En clase, para descolocarte: 要不要汤？ «¿quieres sopa?».
+- ✅🃏 辣 là [la˥˩] · picante · _adjetivo_ · 这个辣吗？ «¿esto pica?»; 不要辣 «sin picante»; 有点辣 «pica un poco».
+- ✅🃏 饱 bǎo [pɑʊ˧˩˧] · lleno, saciado · _adjetivo_ · 我吃饱了 «estoy lleno, ya no puedo más»: lo que se dice al acabar o al rechazar más comida.
+- ✅🃏 寿司 shòusī [ʂoʊ˥˩ sɯ˥] · sushi · _sustantivo_
+- ✅🃏 橙子 chéngzi [ʈʂʰɤŋ˧˥ tsɯ] · naranja (la fruta) · _sustantivo_ · El color naranja es 橙色 chéngsè: el color de la fruta.
+- ✅🃏 草莓 cǎoméi [tsʰɑʊ˧˩˧ meɪ˧˥] · fresa · _sustantivo_ · 草 «hierba» + 莓 «baya»: la baya que crece a ras de suelo.
+- ✅🃏 蔬菜 shūcài [ʂu˥ tsʰaɪ˥˩] · verdura · _sustantivo_
+- ✅🃏 豆腐 dòufu [toʊ˥˩ fu] · tofu · _sustantivo_ · 豆 «judía, soja» + 腐 «fermentado, blando»: la pasta blanda de soja.
+- ✅🃏 小吃 xiǎochī [ɕjɑʊ˧˩˧ ʈʂʰɨ˥] · tapas, comida callejera · _sustantivo_ · 小 «pequeño» + 吃 «comer»: lo que se come en poco. 小吃街 es la calle de puestos de comida.
 
 ## 喝 hē y 和 hé
 
@@ -71,6 +85,13 @@ Solo los separa el tono.
 
 - 水 shuǐ · 3.er tono, se hunde: 喝水
 - 睡 shuì · 4.º tono, baja fuerte: 睡一下
+
+## 包 bāo y 饱 bǎo
+
+Solo los separa el tono: se distinguen de oído por cómo sube o baja la voz.
+
+- 包 bāo · alto y plano: 打包
+- 饱 bǎo · baja y sube: 我吃饱了
 
 ## Frases
 
@@ -124,3 +145,5 @@ Solo los separa el tono.
 - ✅🃏 我已经自己做好饭了，我们一起吃吧。 · wǒ yǐjīng zìjǐ zuò hǎo fàn le wǒmen yìqǐ chī ba · Ya he hecho la comida yo solo: comamos juntos.
 - ✅🃏 我不喝咖啡。 · wǒ bù hē kāfēi · No tomo café.
 - ✅🃏 你喜欢吃什么？ · nǐ xǐhuan chī shénme · ¿Qué te gusta comer?
+- ✅🃏 我喜欢吃火锅。 · wǒ xǐhuan chī huǒguō · Me gusta el hot pot.
+- ✅🃏 我喜欢吃上海小吃。 · wǒ xǐhuan chī Shànghǎi xiǎochī · Me gusta la comida callejera de Shanghái.

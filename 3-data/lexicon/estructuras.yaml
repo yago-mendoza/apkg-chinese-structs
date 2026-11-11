@@ -488,6 +488,7 @@ entries:
     source: {origin: review, batch: 014-2026-10-26-duplicados-diagramas-y-recuadros, file: review-013-2026-10-23-pagar-opinar-y-contrastes.md, date: '2026-10-26'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-26', text: '的 no dice que sea pasado: 你说的话 es «lo que dices» o «lo que dijiste», según el contexto.', original: 'Quédate con este molde: [alguien hace algo] + 的 + [cosa/persona]. […] El tiempo lo aporta el contexto; 的 no indica pasado.'}
+      - {date: '2026-11-11', kind: tip, private: false, text: 'Cambia el orden y cambia quién hace qué: 你喜欢的人 «la persona que te gusta», 喜欢你的人 «la persona a la que le gustas». Lo de antes de 的 describe la última palabra: empieza por el final.', original: 'Fíjate: ¡solo hemos cambiado el orden de 你 y 喜欢, y el significado se ha invertido!'}
   - id: st.yao-le
     kind: structure
     use: say
@@ -583,3 +584,25 @@ entries:
     source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
     comments:
       - {date: '2026-11-06', kind: linguistic, private: false, text: 'Detrás del verbo, un estado que sigue: 门开着 «la puerta está abierta», 你坐着吧 «quédate sentado». Con otro tono es otra palabra: 着急 zháojí [HSK 4].'}
+  - id: st.xiang-rang
+    kind: structure
+    use: say
+    pattern: '{S} + 想 + 让 + {N} + {V}'
+    refs: [w.xiang, w.rang]
+    meaning: {en: 'Wanting someone else to do something: 让 brings in the person who acts.', es: 'Querer que otro haga algo: 让 mete a la persona que lo hace.'}
+    examples: [s.wo-xiang-rang-ni-bang-wo, s.wo-xiang-rang-ni-qu]
+    contrast: {right: s.wo-xiang-rang-ni-bang-wo, why: {en: 'Without 让, 我想你 sounds like "I miss you": 让 makes it clear that you want the other person to act.', es: 'Sin 让, 我想你 suena a «te echo de menos»: con 让 queda claro que quieres que el otro haga algo.'}, wrong: 我想你帮我。}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: tip, private: false, text: '我想去 «quiero ir» (yo); 我想让你去 «quiero que vayas» (tú). Sin 让 también se oye 我想你帮我, pero 我想你 solo es «te echo de menos».', original: 'Tu tarjeta debería expresar un patrón útil, no una prohibición: ¿Cómo digo «Quiero que me ayudes» usando 想让?'}
+  - id: st.adj-yidian-de
+    kind: structure
+    use: say
+    pattern: '{Adj} + 一点 + 的'
+    refs: [w.yidian, w.de]
+    meaning: {en: 'One that is a bit more (bigger, cheaper…): to ask for another one in a shop.', es: 'Uno un poco más (grande, barato…): para pedir otro en una tienda.'}
+    examples: [s.you-da-yidian-de-ma, s.wo-xiangyao-pianyi-yidian-de]
+    contrast: {right: s.you-da-yidian-de-ma, why: {en: 'To compare ("a bit bigger"), 一点 goes after the adjective: 大一点. 有一点大 is "a bit too big", a complaint.', es: 'Para comparar («un poco más grande»), 一点 va detrás del adjetivo: 大一点. 有一点大 es «algo grande (de más)», una queja.'}, wrong: 有一点大的吗？}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: tip, private: false, text: 'Cambia el adjetivo y vale para todo: 大一点的, 小一点的, 便宜一点的, 安静一点的.', original: Una estructura que te conviene memorizar especialmente es 我想要 + adjetivo + 一点的 (wǒ xiǎng yào… yìdiǎn de).}

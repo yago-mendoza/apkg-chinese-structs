@@ -2846,3 +2846,132 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 行, pinyin: xíng, meaning: 'vale, está bien; (algo) sirve'}
     comments: []
+  - id: x.nuance.haoa-haode
+    added: '2026-11-11'
+    lang: es
+    type: nuance
+    targets: [e.haode, w.a.particle]
+    skills: [comprehension, discrimination]
+    prompt: {text: '好啊！ y 好的。: ¿qué cambia?'}
+    answer: {meaning: '好啊: «¡vale, genial!», con ganas; el 啊 pone la alegría. 好的: «de acuerdo», amable y neutro, para confirmar lo que te proponen.'}
+    comments: []
+  - id: x.nuance.zheli-keyi-henhao
+    added: '2026-11-11'
+    lang: es
+    type: nuance
+    targets: [w.keyi, w.hen]
+    skills: [comprehension, discrimination]
+    prompt: {text: '这里可以 y 这里很好: ¿qué cambia?'}
+    answer: {meaning: '这里可以: el sitio sirve, me va bien. 这里很好: el sitio está bien, lo valoras. Y 很 muchas veces no es «muy»: acompaña al adjetivo para que suene natural.'}
+    comments: []
+  - id: x.dictation.kaiwanxiao
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.kaiwanxiao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kai1 wan2 xiao4, hanzi: 开玩笑, pinyin: kāi wánxiào, meaning: 'bromear, gastar una broma'}
+    comments: []
+  - id: x.produce.kaiwanxiao
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.kaiwanxiao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «bromear, gastar una broma»? Escribe el pinyin.'}
+    answer: {typed: kai1 wan2 xiao4, hanzi: 开玩笑, pinyin: kāi wánxiào, meaning: 'bromear, gastar una broma'}
+    comments: []
+  - id: x.read.kaiwanxiao
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.kaiwanxiao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 开玩笑}
+    answer: {hanzi: 开玩笑, pinyin: kāi wánxiào, meaning: 'bromear, gastar una broma'}
+    comments: []
+  - id: x.dictation.fangxin
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.fangxin]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fang4 xin1, hanzi: 放心, pinyin: fàngxīn, meaning: 'estar tranquilo, no preocuparse'}
+    comments: []
+  - id: x.read.fangxin
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.fangxin]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 放心}
+    answer: {hanzi: 放心, pinyin: fàngxīn, meaning: 'estar tranquilo, no preocuparse'}
+    comments: []
+  - id: x.produce.wo-xiang-rang-ni-bang-wo
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-xiang-rang-ni-bang-wo
+    targets: [s.wo-xiang-rang-ni-bang-wo]
+    context: [w.wo, w.xiang, w.rang, w.ni, w.bang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero que me ayudes.»'}
+    answer: {meaning: Quiero que me ayudes.}
+    comments: []
+  - id: x.listen.wo-xiang-rang-ni-qu
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.wo-xiang-rang-ni-qu
+    targets: [s.wo-xiang-rang-ni-qu]
+    context: [w.wo, w.xiang, w.rang, w.ni, w.qu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero que vayas.}
+    comments: []
+  - id: x.produce.keyi-qing-ni-he-kafei-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.keyi-qing-ni-he-kafei-ma
+    targets: [s.keyi-qing-ni-he-kafei-ma]
+    context: [w.keyi, w.qing, w.ni, w.he.drink, w.kafei, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Te puedo invitar a un café?»'}
+    answer: {meaning: '¿Te puedo invitar a un café?'}
+    comments: []
+  - id: x.produce.zheli-keyi-zuo-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.zheli-keyi-zuo-ma
+    targets: [s.zheli-keyi-zuo-ma]
+    context: [w.zheli, w.keyi, w.zuo.sit, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Me puedo sentar aquí?»'}
+    answer: {meaning: '¿Me puedo sentar aquí?'}
+    comments: []
+  - id: x.produce.qing-gei-wo-wu-xing
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.qing-gei-wo-wu-xing
+    targets: [s.qing-gei-wo-wu-xing]
+    context: [w.qing, w.gei.to, w.wo, w.num.wu, w.xing.star, e.xiexie]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Ponme cinco estrellas, por favor! ¡Gracias!»'}
+    answer: {meaning: '¡Ponme cinco estrellas, por favor! ¡Gracias!'}
+    comments: []
+  - id: x.produce.wo-xiang-qing-ni-he-kafei-danshi-jintian-bu-xing
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-xiang-qing-ni-he-kafei-danshi-jintian-bu-xing
+    targets: [s.wo-xiang-qing-ni-he-kafei-danshi-jintian-bu-xing]
+    context: [w.dui, w.wo, w.xiang, w.qing, w.ni, w.he.drink, w.kafei, w.danshi, w.jintian, w.bu, w.xing.ok, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Sí, quiero invitarte a un café, pero hoy ya no puedo.»'}
+    answer: {meaning: 'Sí, quiero invitarte a un café, pero hoy ya no puedo.'}
+    comments: []

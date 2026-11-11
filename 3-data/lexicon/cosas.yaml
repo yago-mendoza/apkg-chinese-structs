@@ -618,6 +618,7 @@ entries:
       - {kind: mnemonic, private: false, date: '2026-10-20', text: '到: a la izquierda, un barco de vela 至; a la derecha, 刂, otra vela más cerca de la cámara.', original: 'En 到 (dào), la parte derecha 刂 representa un la vela mas cercana a la camara.'}
       - {kind: linguistic, private: false, date: '2026-10-20', text: '到 es «llegar», a un sitio o a una cifra: 我到了 «ya he llegado». «Salir» es 出: 出去.'}
       - {date: '2026-10-31', kind: tip, private: false, text: '去 es ir hacia allí; 回, volver a donde es tuyo (casa, tu país); 到, llegar: 我去超市, 我回家, 我到家了. 到 no es «salir»: salir es 出, 出去.'}
+      - {date: '2026-11-11', kind: usage, private: false, text: 'Por mensaje: 我到了！ «¡ya he llegado!», 你到了吗？ «¿ya has llegado?», 我在路上了 «ya voy de camino».'}
   - id: g.dao-dao
     kind: group
     basis: soundalike
@@ -832,6 +833,7 @@ entries:
     members:
       - {ref: w.xing, cue: 'cae: 我姓孟'}
       - {ref: w.xing.ok, cue: 'sube: 行吗？'}
+      - {ref: w.xing.star, cue: 'alto y plano: 五星'}
     source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
     comments: []
   - id: g.dong-dong
@@ -842,6 +844,7 @@ entries:
     members:
       - {ref: w.dong, cue: 'baja y sube: 我不懂'}
       - {ref: w.dong.move, cue: 'cae: 别动！'}
+      - {ref: w.dong.east, cue: 'alto y plano: 东西'}
     source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
     comments: []
   - id: g.tamen-tamen
@@ -895,4 +898,24 @@ entries:
       - {ref: w.zhe, cue: 'cae, delante: 这个'}
       - {ref: w.zhe.dur, cue: 'átono, detrás del verbo: 开着'}
     source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+    comments: []
+  - id: w.jueding
+    use: say
+    role: content
+    kind: word
+    hanzi: 决定
+    pinyin: juédìng
+    meaning: {es: decidir; decisión, en: to decide; decision}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+    comments:
+      - {date: '2026-11-11', kind: usage, private: false, text: '我还没决定 «todavía no he decidido», 你决定吧 «decide tú», 我决定了 «ya lo he decidido». Puedes querer algo (想) sin haberlo decidido (决定).'}
+      - {date: '2026-11-11', kind: character, private: false, text: '决 lleva 冫, que antes era 氵 «agua» (決), y 夬 jué da el sonido: abrir un dique para que el agua salga, y de ahí «resolver, decidir».'}
+  - id: w.dongzuo
+    use: hear
+    role: content
+    kind: word
+    hanzi: 动作
+    pinyin: dòngzuò
+    meaning: {es: 'movimiento, gesto', en: 'movement, action'}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
     comments: []

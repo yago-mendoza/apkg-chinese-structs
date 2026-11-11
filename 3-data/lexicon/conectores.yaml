@@ -290,3 +290,15 @@ entries:
     comments:
       - {date: '2026-11-06', kind: usage, private: false, text: 'Para cambiar de tema o acordarte de algo: 对了，你明天有时间吗？ «por cierto, ¿tienes tiempo mañana?». 也对 es otra cosa: «eso también es verdad».'}
       - {date: '2026-11-06', kind: linguistic, private: false, text: 'Palabra a palabra: 对 «correcto» + 了, el cambio: «¡ah, cierto!», algo que acaba de venirte a la cabeza.'}
+  - id: w.hui.will
+    use: context
+    use_reason: 'otro sentido de un carácter que ya se lee y se oye: se practica en sus frases'
+    role: function
+    kind: word
+    hanzi: 会
+    pinyin: huì
+    meaning: {es: '(lo que va a pasar) va a, seguro que', en: will (likely future)}
+    relations: [w.hui.can]
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: 'El mismo 会 de «saber hacer» (我会说中文), aquí para lo que va a pasar: 我会在家附近喝咖啡 «tomaré un café cerca de casa», 明天会下雨 «mañana lloverá».'}

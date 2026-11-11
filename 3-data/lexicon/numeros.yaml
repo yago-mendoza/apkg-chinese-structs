@@ -512,7 +512,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Cuenta ocasiones, detrás del verbo: 他来过两次 «ha venido dos veces». Ir a un sitio siempre se cuenta con 次.'}
   - id: w.bian
-    use: hear
+    use: say
     role: function
     kind: word
     hanzi: 遍
@@ -522,6 +522,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Cuenta las veces que se hace algo entero: 这本书我看了两遍 «me he leído este libro dos veces enteras»; 再说一遍 «dilo otra vez».'}
       - {date: '2026-10-31', kind: tip, private: false, text: '次 cuenta ocasiones (我去过两次 «he ido dos veces»); 遍, una vez entera, de principio a fin (这本书我看了三遍). Cuando dudes, 次 es la general.'}
+      - {date: '2026-11-11', kind: usage, private: false, text: '再说一遍 «repítelo» es la forma de siempre de pedir que te lo repitan: 遍 pide decirlo entero otra vez. 再说一次 también vale.', original: 'Por eso, 再说一遍 (zài shuō yí biàn) es la forma habitual de pedir «repítelo».'}
   - id: g.ci-bian
     kind: group
     basis: set

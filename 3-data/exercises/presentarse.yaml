@@ -3749,3 +3749,72 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Encantado de conocerte. ¿A qué te dedicas?»'}
     answer: {meaning: 'Encantado de conocerte. ¿A qué te dedicas?'}
     comments: []
+  - id: x.dictation.jiandao
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.jiandao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jian4 dao4, hanzi: 见到, pinyin: jiàndào, meaning: 'ver (a alguien), encontrarse con'}
+    comments: []
+  - id: x.produce.jiandao
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.jiandao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «ver (a alguien), encontrarse con»? Escribe el pinyin.'}
+    answer: {typed: jian4 dao4, hanzi: 见到, pinyin: jiàndào, meaning: 'ver (a alguien), encontrarse con'}
+    comments: []
+  - id: x.read.jiandao
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.jiandao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 见到}
+    answer: {hanzi: 见到, pinyin: jiàndào, meaning: 'ver (a alguien), encontrarse con'}
+    comments: []
+  - id: x.produce.wo-xiang-zai-jiandao-ni
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-xiang-zai-jiandao-ni
+    targets: [s.wo-xiang-zai-jiandao-ni]
+    context: [w.wo, w.xiang, w.zai.again, w.jiandao, w.ni]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero volver a verte.»'}
+    answer: {meaning: Quiero volver a verte.}
+    comments: []
+  - id: x.produce.hen-gaoxing-jiandao-ni
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.hen-gaoxing-jiandao-ni
+    targets: [s.hen-gaoxing-jiandao-ni]
+    context: [w.hen, w.gaoxing, w.jiandao, w.ni]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me alegro de verte.»'}
+    answer: {meaning: Me alegro de verte.}
+    comments: []
+  - id: x.charsound.mei
+    added: 2026-11-11
+    lang: es
+    type: charsound
+    targets: [w.meiguo, w.meinv]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 美}
+    answer: {typed: mei3, hanzi: 美, pinyin: měi, meaning: 'Sale en 美国 Měiguó «Estados Unidos», 美女 měinǚ «(para llamar a una
+        camarera o dependienta joven) ¡oye!, ¡perdona!».'}
+    comments: []
+  - id: x.contrast.ye
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.ye-ye
+    targets: [w.ye]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 也, pinyin: yě, meaning: también}
+    comments: []

@@ -2135,3 +2135,112 @@ exercises:
     answer: {typed: mo4, hanzi: 末, pinyin: mò, meaning: 'Sale en 周末愉快 zhōumò yúkuài «¡buen fin de semana!», 周末 zhōumò «fin de
         semana».'}
     comments: []
+  - id: x.nuance.gaoxing-kuaile-kaixin
+    added: '2026-11-11'
+    lang: es
+    type: nuance
+    targets: [w.kuaile, w.kaixin]
+    context: [w.gaoxing]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我太高兴了, 我很快乐 y 我很开心: ¿qué cambia?'}
+    answer: {meaning: '高兴: contento por algo concreto, ahora. 快乐: feliz en general, una etapa; y el de 生日快乐. 开心: lo de diario para «estoy contento».'}
+    comments: []
+  - id: x.produce.kuaile
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.kuaile]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «feliz, alegre»? Escribe el pinyin.'}
+    answer: {typed: kuai4 le4, hanzi: 快乐, pinyin: kuàilè, meaning: 'feliz, alegre'}
+    comments: []
+  - id: x.contrast.zao.early
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.li-zao-guo
+    targets: [w.zao.early]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es zǎo, «temprano, pronto»?'}
+    answer: {hanzi: 早, pinyin: zǎo, meaning: 'temprano, pronto'}
+    comments: []
+  - id: x.dictation.kaixin
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.kaixin]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kai1 xin1, hanzi: 开心, pinyin: kāixīn, meaning: 'contento, alegre'}
+    comments: []
+  - id: x.produce.kaixin
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.kaixin]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «contento, alegre»? Escribe el pinyin.'}
+    answer: {typed: kai1 xin1, hanzi: 开心, pinyin: kāixīn, meaning: 'contento, alegre'}
+    comments: []
+  - id: x.read.kaixin
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.kaixin]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 开心}
+    answer: {hanzi: 开心, pinyin: kāixīn, meaning: 'contento, alegre'}
+    comments: []
+  - id: x.produce.shengri-kuaile
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.shengri-kuaile
+    targets: [s.shengri-kuaile]
+    context: [w.shengri, w.kuaile]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Feliz cumpleaños!»'}
+    answer: {meaning: ¡Feliz cumpleaños!}
+    comments: []
+  - id: x.produce.gen-ni-zai-yiqi-hen-kuaile
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.gen-ni-zai-yiqi-hen-kuaile
+    targets: [s.gen-ni-zai-yiqi-hen-kuaile]
+    context: [w.gen, w.ni, w.zai.at, w.yiqi, w.hen, w.kuaile]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Soy feliz estando contigo.»'}
+    answer: {meaning: Soy feliz estando contigo.}
+    comments: []
+  - id: x.produce.wo-hen-kaixin
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-hen-kaixin
+    targets: [s.wo-hen-kaixin]
+    context: [w.wo, w.hen, w.kaixin]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estoy contento.»'}
+    answer: {meaning: Estoy contento.}
+    comments: []
+  - id: x.charsound.an
+    added: 2026-11-11
+    lang: es
+    type: charsound
+    targets: [e.wanan, w.anjing]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 安}
+    answer: {typed: an1, hanzi: 安, pinyin: ān, meaning: 'Sale en 晚安 wǎn''ān «buenas noches (al irse a dormir)», 安静 ānjìng «tranquilo,
+        silencioso».'}
+    comments: []
+  - id: x.charsound.xin
+    added: 2026-11-11
+    lang: es
+    type: charsound
+    targets: [w.kaixin, w.xiaoxin, w.fangxin]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 心}
+    answer: {typed: xin1, hanzi: 心, pinyin: xīn, meaning: 'Sale en 开心 kāixīn «contento, alegre», 小心 xiǎoxīn «¡cuidado!; tener
+        cuidado», 放心 fàngxīn «estar tranquilo, no preocuparse».'}
+    comments: []

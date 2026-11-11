@@ -448,3 +448,88 @@ exercises:
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 周末}
     answer: {hanzi: 周末, pinyin: zhōumò, meaning: fin de semana}
     comments: []
+  - id: x.dictation.jianshen
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.jianshen]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jian4 shen1, hanzi: 健身, pinyin: jiànshēn, meaning: 'hacer ejercicio, ir al gimnasio'}
+    comments: []
+  - id: x.produce.jianshen
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.jianshen]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «hacer ejercicio, ir al gimnasio»? Escribe el pinyin.'}
+    answer: {typed: jian4 shen1, hanzi: 健身, pinyin: jiànshēn, meaning: 'hacer ejercicio, ir al gimnasio'}
+    comments: []
+  - id: x.read.jianshen
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.jianshen]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 健身}
+    answer: {hanzi: 健身, pinyin: jiànshēn, meaning: 'hacer ejercicio, ir al gimnasio'}
+    comments: []
+  - id: x.dictation.paizhao
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.paizhao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: pai1 zhao4, hanzi: 拍照, pinyin: pāizhào, meaning: hacer fotos}
+    comments: []
+  - id: x.produce.paizhao
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.paizhao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «hacer fotos»? Escribe el pinyin.'}
+    answer: {typed: pai1 zhao4, hanzi: 拍照, pinyin: pāizhào, meaning: hacer fotos}
+    comments: []
+  - id: x.read.paizhao
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.paizhao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 拍照}
+    answer: {hanzi: 拍照, pinyin: pāizhào, meaning: hacer fotos}
+    comments: []
+  - id: x.produce.wo-qu-jianshen
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-qu-jianshen
+    targets: [s.wo-qu-jianshen]
+    context: [w.wo, w.qu, w.jianshen]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Voy al gimnasio.»'}
+    answer: {meaning: Voy al gimnasio.}
+    comments: []
+  - id: x.produce.zheli-keyi-paizhao-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.zheli-keyi-paizhao-ma
+    targets: [s.zheli-keyi-paizhao-ma]
+    context: [w.zheli, w.keyi, w.paizhao, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Se pueden hacer fotos aquí?»'}
+    answer: {meaning: '¿Se pueden hacer fotos aquí?'}
+    comments: []
+  - id: x.charsound.zhao
+    added: 2026-11-11
+    lang: es
+    type: charsound
+    targets: [w.paizhao, w.zhaopian]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 照}
+    answer: {typed: zhao4, hanzi: 照, pinyin: zhào, meaning: 'Sale en 拍照 pāizhào «hacer fotos», 照片 zhàopiàn «foto».'}
+    comments: []

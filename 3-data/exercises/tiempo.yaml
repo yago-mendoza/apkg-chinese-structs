@@ -3212,3 +3212,63 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Son las ocho menos cinco.»'}
     answer: {meaning: Son las ocho menos cinco.}
     comments: []
+  - id: x.nuance.shuijiao-juede
+    added: '2026-11-11'
+    lang: es
+    type: nuance
+    targets: [w.shuijiao]
+    context: [w.juede]
+    skills: [comprehension, discrimination]
+    prompt: {text: '睡觉 y 觉得 llevan el mismo 觉: ¿cómo suena en cada uno?'}
+    answer: {meaning: 'En 睡觉, jiào: «dormir, el sueño». En 觉得, jué: «sentir, parecer», como en 感觉. Un mismo carácter, dos lecturas: lo decide la palabra.'}
+    comments: []
+  - id: x.dictation.youshi
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.youshi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: you3 shi2, hanzi: 有时, pinyin: yǒushí, meaning: a veces}
+    comments: []
+  - id: x.read.youshi
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.youshi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 有时}
+    answer: {hanzi: 有时, pinyin: yǒushí, meaning: a veces}
+    comments: []
+  - id: x.produce.ni-jintian-yao-zuo-shenme
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.ni-jintian-yao-zuo-shenme
+    targets: [s.ni-jintian-yao-zuo-shenme]
+    context: [w.ni, w.jintian, w.yao, w.zuo.do, w.shenme]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Qué vas a hacer hoy?»'}
+    answer: {meaning: '¿Qué vas a hacer hoy?'}
+    comments: []
+  - id: x.produce.youshi-he-cha-youshi-he-kafei
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.youshi-he-cha-youshi-he-kafei
+    targets: [s.youshi-he-cha-youshi-he-kafei]
+    context: [w.wo, w.youshi, w.he.drink, w.cha, w.kafei]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Unas veces tomo té, otras café.»'}
+    answer: {meaning: 'Unas veces tomo té, otras café.'}
+    comments: []
+  - id: x.contrast.fen.minute
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.fen-fen
+    targets: [w.fen.minute]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 分, pinyin: fēn, meaning: 'minuto (en la hora: las ocho y diez)'}
+    comments: []

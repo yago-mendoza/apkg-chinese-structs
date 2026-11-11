@@ -1041,3 +1041,25 @@ sentences:
       - {text: ！}
     translation: {en: Don't move!, es: ¡No te muevas!}
     source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.wo-jueding-le
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: juédìng, ref: w.jueding, text: 决定}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {text: 。}
+    translation: {en: I've decided., es: Ya lo he decidido.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.zhege-dongzuo-hen-nan
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: zhè, ref: w.zhe, text: 这}
+      - {pinyin: ge, ref: w.ge, text: 个}
+      - {pinyin: dòngzuò, ref: w.dongzuo, text: 动作}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: nán, ref: w.nan, text: 难}
+      - {text: 。}
+    translation: {en: This move is very hard., es: Este movimiento es muy difícil.}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}

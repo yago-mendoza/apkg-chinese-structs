@@ -705,3 +705,40 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 雪, pinyin: xuě, meaning: nieve}
     comments: []
+  - id: x.dictation.xing.star
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.xing.star]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xing1, hanzi: 星, pinyin: xīng, meaning: 'estrella (también en una valoración: 五星)'}
+    comments: []
+  - id: x.produce.xing.star
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.xing.star]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «estrella (también en una valoración: 五星)»? Escribe el pinyin.'}
+    answer: {typed: xing1, hanzi: 星, pinyin: xīng, meaning: 'estrella (también en una valoración: 五星)'}
+    comments: []
+  - id: x.read.xing.star
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.xing.star]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 星}
+    answer: {hanzi: 星, pinyin: xīng, meaning: 'estrella (también en una valoración: 五星)'}
+    comments: []
+  - id: x.contrast.xing.star
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.xing-xing
+    targets: [w.xing.star]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 星, pinyin: xīng, meaning: 'estrella (también en una valoración: 五星)'}
+    comments: []

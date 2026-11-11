@@ -455,3 +455,35 @@ sentences:
       - {text: ？}
     translation: {en: 'When are you coming back?', es: '¿Cuándo vuelves (aquí)?'}
     source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+  - id: s.shengri-kuaile
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: shēngrì, ref: w.shengri, text: 生日}
+      - {pinyin: kuàilè, ref: w.kuaile, text: 快乐}
+      - {text: ！}
+    translation: {en: Happy birthday!, es: ¡Feliz cumpleaños!}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.gen-ni-zai-yiqi-hen-kuaile
+    use: say
+    kind: example
+    segments:
+      - {pinyin: gēn, ref: w.gen, text: 跟}
+      - {pinyin: nǐ, ref: w.ni, text: 你}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: yìqǐ, ref: w.yiqi, sandhi: true, text: 一起}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: kuàilè, ref: w.kuaile, text: 快乐}
+      - {text: 。}
+    translation: {en: I'm happy when I'm with you., es: Soy feliz estando contigo.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.wo-hen-kaixin
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: kāixīn, ref: w.kaixin, text: 开心}
+      - {text: 。}
+    translation: {en: I'm happy., es: Estoy contento.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}

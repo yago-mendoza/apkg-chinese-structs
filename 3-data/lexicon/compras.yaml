@@ -514,3 +514,25 @@ entries:
     connection: {kind: sound, text: '包 bāo da el sonido a 跑 pǎo: 跑 es 包 con un pie 足 al lado.', with: [跑]}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: 'propuesta del agente: HSK 1 por frecuencia', origin: gaps}
     comments: []
+  - id: w.mao.money
+    use: hear
+    role: content
+    kind: word
+    pos: clasificador
+    pos_reason: 'como dinero (一毛, 三块五毛) cuenta: es la medida, no el apellido Mao de la lista'
+    hanzi: 毛
+    pinyin: máo
+    meaning: {es: 'diez céntimos (de yuan), al hablar', en: ten cents (spoken)}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: usage, private: false, text: 'Al hablar del dinero: 块 «yuan» y 毛 «diez céntimos». 三块五毛 «tres con cincuenta». Escrito, 元 y 角.'}
+  - id: g.mao-mao
+    kind: group
+    basis: soundalike
+    title: 猫 māo y 毛 máo
+    explanation: 'Solo los separa el tono: se distinguen de oído por cómo sube o baja la voz.'
+    members:
+      - {ref: w.mao, cue: 'alto y plano: 小猫'}
+      - {ref: w.mao.money, cue: 'sube: 三块五毛'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments: []

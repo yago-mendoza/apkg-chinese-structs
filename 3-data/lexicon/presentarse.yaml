@@ -533,6 +533,7 @@ entries:
     source: {origin: class, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-15', text: 'Palabra a palabra: 国 «país» + 家 «casa». Para preguntar de dónde es alguien basta con 你是哪国人；国家 es la palabra entera, como en 你来自哪个国家.'}
+      - {date: '2026-11-11', kind: usage, private: false, text: 'Para preguntar de dónde es alguien, de más llano a más formal: 你哪里人？ (coloquial, puede ser la ciudad), 你是哪国人？ (lo normal), 你是哪个国家的人？, 你从哪里来？ («¿de dónde vienes?»), 请问您来自哪个国家？ (muy educado).'}
   - id: w.riben
     use: hear
     role: content
@@ -641,3 +642,14 @@ entries:
     level_reason: nombre propio, de las ciudades que más se nombran
     source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
     comments: []
+  - id: w.jiandao
+    use: say
+    role: content
+    kind: word
+    hanzi: 见到
+    pinyin: jiàndào
+    meaning: {es: 'ver (a alguien), encontrarse con', en: 'to see, to meet'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: usage, private: false, text: '我想再见到你 «quiero volver a verte». Con 见到 no se confunde con 再见 «adiós»: 我想再见你 se puede leer «quiero decirte adiós otra vez».'}
+      - {date: '2026-11-11', kind: linguistic, private: false, text: '见 «ver» + 到 «llegar, conseguir»: ver de verdad, encontrarse.'}

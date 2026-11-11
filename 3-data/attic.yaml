@@ -28,8 +28,6 @@ items:
       - {text: '扌 «mano»: lanzar con la mano. Contraste con 发 en la nota de 发.'}
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.fapiao
-    snooze: 013-2026-10-23-pagar-opinar-y-contrastes
-    snooze_reason: 'despierta con 付钱, pero es HSK 4 y está metiendo mucho nivel alto: para pagar en el día a día bastan 付钱 y 扫码'
     hanzi: 发票
     pinyin: fāpiào
     meaning: {es: factura}
@@ -38,6 +36,8 @@ items:
     reason: HSK 4. Muy útil en China para gastos de trabajo, pero de nivel superior.
     notes:
       - {text: '票 piào «billete, papel» da el sonido y el sentido: el papel que se emite (发) al pagar.'}
+    snooze: 017-2026-11-11-pedir-en-el-restaurante
+    snooze_reason: 'despierta con 买单, pero es HSK 4: para pagar en un restaurante bastan 买单, 刷卡 y 扫码'
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.toupiao
     hanzi: 投票
@@ -85,8 +85,8 @@ items:
     reason: HSK 4; 错 cubre «equivocarse» en este nivel.
     notes:
       - {text: '我误会你了 «te entendí mal». 误 lleva 讠 «hablar». 会 aquí es «entender».'}
-    snooze: 003-2026-10-01-comer-dinero-y-contrastes
-    snooze_reason: 'despierta con 会, pero es HSK 4; 错 cubre «equivocarse»'
+    snooze: 017-2026-11-11-pedir-en-el-restaurante
+    snooze_reason: 'despierta con 会 «lo que va a pasar», que es otro sentido; HSK 4, y 错 cubre «equivocarse»'
     source: {batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
   - id: a.cuowu
     snooze: 010-2026-10-11-construir-numeros-y-movimiento
@@ -374,8 +374,8 @@ items:
     reason: 'HSK 2; suelto, sin frase.'
     notes:
       - {text: '明 «brillante» + 星 «estrella»: el mismo 星 de 星期 y 星星.'}
-    snooze: 015-2026-10-31-volver-a-casa-y-para-entender
-    snooze_reason: '唱歌 entró solo para oír y 明星 sigue sin frase; espera a una tuya o de clase'
+    snooze: 017-2026-11-11-pedir-en-el-restaurante
+    snooze_reason: 'despierta con 星 de 五星, pero sigue sin frase tuya o de clase'
     source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: a.dao.cl
     hanzi: 道
@@ -440,16 +440,7 @@ items:
     reason: 'HSK 2; sigue la misma regla que 回来 y 出来, que ya están.'
     notes:
       - {text: '过 «pasar, cruzar» + 来 «hacia aquí»: 走过来 «venir andando hasta aquí», 跑过来 «venir corriendo». Con 去, hacia allí: 走过去. Igual funcionan 上来, 上去, 下来 y 下去 [HSK 3].'}
-    source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
-  - id: a.dabao
-    hanzi: 打包
-    pinyin: dǎbāo
-    meaning: {es: 'envolver para llevar (las sobras)'}
-    theme: compras
-    links: [饭, 吃饭, 服务员]
-    reason: 'HSK 5; muy útil en restaurantes, pero sin conexión aún.'
-    notes:
-      - {text: '可以帮我打包吗？ «¿me lo pone para llevar?». En China es normal llevarse lo que sobra.'}
+      - {text: '跑步过来 «ven corriendo» (o «vengo corriendo»), de tus notas.'}
     source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
   - id: a.zu
     hanzi: 足
@@ -559,6 +550,8 @@ items:
     links: [房间, 干净]
     reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 4 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
     notes: []
+    snooze: 017-2026-11-11-pedir-en-el-restaurante
+    snooze_reason: 'despierta con 干净, pero es HSK 4 y sin frase; espera a salir en clase con su sentido'
     source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
   - id: a.caochang
     hanzi: 操场
@@ -647,15 +640,6 @@ items:
     reason: 'Palabra de una lista para leer pinyin (material de una clase de prueba); HSK 3 y sin frase. Despierta con 筷子 o al comprar zapatos.'
     notes: []
     source: {batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
-  - id: a.meinv
-    hanzi: 美女
-    pinyin: měinǚ
-    meaning: {es: 'chica guapa; (al llamar a una dependienta) señorita'}
-    theme: personas
-    links: [帅哥]
-    reason: 'Palabra de una lista para leer pinyin (material de una clase de prueba); HSK 4. Útil para entender cómo se llama a la gente en la calle (帅哥, 美女): espera a ese tema.'
-    notes: []
-    source: {batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
   - id: a.hua
     hanzi: 滑
     pinyin: huá
@@ -665,18 +649,6 @@ items:
     reason: 'Sílaba de una lista para leer pinyin (material de una clase de prueba), sin frase; HSK 5.'
     notes: []
     source: {batch: 012-2026-10-19-querer-poder-y-matices, file: 'material de una clase de prueba', date: '2026-10-19'}
-  - id: a.jueding
-    hanzi: 决定
-    pinyin: juédìng
-    meaning: {es: 'decidir; decisión'}
-    theme: cosas
-    links: [决心, 确定]
-    reason: 'HSK 3, del examen de 想 y 觉得 que pegaste en el review 011.'
-    notes:
-      - {text: '我已经决定要买了 «ya he decidido comprarlo»: puedes querer algo (想) sin haberlo decidido (决定).'}
-    snooze: 012-2026-10-19-querer-poder-y-matices
-    snooze_reason: 'entró al desván en este mismo lote, al filtrar su examen a HSK 1-2'
-    source: {batch: 012-2026-10-19-querer-poder-y-matices, file: 'review-011-2026-10-16-clase-primero-edad-y-opiniones.md', date: '2026-10-19'}
   - id: a.conglai
     hanzi: 从来
     pinyin: cónglái
@@ -765,6 +737,8 @@ items:
     links: [做饭]
     reason: 'HSK 6, de la lista de pinyin de la clase del 23.'
     notes: []
+    snooze: 017-2026-11-11-pedir-en-el-restaurante
+    snooze_reason: 'despierta con 做饭, pero es HSK 6 y sin frase; en el restaurante basta con 服务员'
     source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
   - id: a.changshi
     snooze: 013-2026-10-23-pagar-opinar-y-contrastes
@@ -937,6 +911,7 @@ items:
     reason: HSK 7; de tus consultas, sin frase tuya.
     notes:
       - {text: '我是地道的中国人 «soy chino de pura cepa», y 这家菜很地道 «esta comida es auténtica». 纯正 chúnzhèng [HSK 4+] es «puro, sin mezcla», más enfático; 纯血 «de sangre pura» suena racial y no se usa para la nacionalidad.'}
+      - {text: 'En los letreros, 正宗 zhèngzōng dice lo mismo: 正宗老火锅 «hot pot auténtico de toda la vida» (de tu lectura de los letreros de Shanghái).'}
     source: {batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
   - id: a.liaojie
     hanzi: 了解
@@ -1016,3 +991,141 @@ items:
     notes:
       - {text: 'Por piezas: 火 «fuego» + 鸡 «pollo», el pollo de fuego, por su moco rojo.'}
     source: {batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
+
+  # ---------------------------------------------------------------- lote 017
+  - id: a.tuijian
+    hanzi: 推荐
+    pinyin: tuījiàn
+    meaning: {es: recomendar}
+    theme: restaurante
+    links: [菜单, 好吃]
+    reason: HSK 7 por la lista, aunque en un restaurante se oye mucho; de momento basta con 你们这里有什么好吃的？.
+    notes:
+      - {text: '你有什么推荐的吗？ «¿qué me recomienda?»; 我推荐炒面 «le recomiendo los fideos salteados».'}
+    snooze: 017-2026-11-11-pedir-en-el-restaurante
+    snooze_reason: 'entró al desván en este mismo lote, al dejar para más adelante lo de nivel alto de tu diálogo del restaurante'
+    source: {batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: a.zhaopaicai
+    hanzi: 招牌菜
+    pinyin: zhāopáicài
+    meaning: {es: 'plato de la casa, especialidad'}
+    theme: restaurante
+    links: [推荐, 菜单]
+    reason: fuera de la lista del HSK; de tu diálogo del restaurante.
+    level: 7
+    level_reason: no está en la lista
+    notes:
+      - {text: '招牌 «el letrero de la tienda» + 菜 «plato»: el plato que da nombre a la casa.'}
+    snooze: 017-2026-11-11-pedir-en-el-restaurante
+    snooze_reason: 'entró al desván en este mismo lote, al dejar para más adelante lo de nivel alto de tu diálogo del restaurante'
+    source: {batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: a.shouhuanying
+    hanzi: 受欢迎
+    pinyin: shòu huānyíng
+    meaning: {es: 'tener éxito, gustar a mucha gente'}
+    theme: restaurante
+    links: [欢迎]
+    reason: 受 es HSK 3; de tu diálogo del restaurante.
+    level: 3
+    level_reason: 'no está en la lista como palabra; 受 es HSK 3'
+    notes:
+      - {text: '受 «recibir» + 欢迎 «bienvenida»: bien recibido. 饺子很受欢迎 «los jiaozi gustan mucho».'}
+    source: {batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: a.chaomian
+    hanzi: 炒面
+    pinyin: chǎomiàn
+    meaning: {es: fideos salteados}
+    theme: comida
+    links: [面条, 饭]
+    reason: fuera de la lista; plato concreto de tu diálogo. Entra cuando lo pidas en clase o en un restaurante.
+    level: 4
+    level_reason: no está en la lista
+    notes:
+      - {text: 炒 chǎo «saltear» + 面 «fideos». Igual 炒饭 «arroz frito».}
+    snooze: 017-2026-11-11-pedir-en-el-restaurante
+    snooze_reason: 'entró al desván en este mismo lote, al dejar para más adelante lo de nivel alto de tu diálogo del restaurante'
+    source: {batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: a.xiaobaicai
+    hanzi: 小白菜
+    pinyin: xiǎobáicài
+    meaning: {es: 'bok choy, col china pequeña'}
+    theme: comida
+    links: [蔬菜]
+    reason: fuera de la lista; de tu diálogo del restaurante.
+    level: 7
+    level_reason: no está en la lista
+    notes:
+      - {text: 小 «pequeño» + 白菜 «col china» (la verdura blanca).}
+    snooze: 017-2026-11-11-pedir-en-el-restaurante
+    snooze_reason: 'entró al desván en este mismo lote, al dejar para más adelante lo de nivel alto de tu diálogo del restaurante'
+    source: {batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: a.gongbaojiding
+    hanzi: 宫保鸡丁
+    pinyin: gōngbǎo jīdīng
+    meaning: {es: pollo kung pao}
+    theme: comida
+    links: [鸡肉]
+    reason: nombre de un plato; de tu diálogo del restaurante.
+    level: 7
+    level_reason: no está en la lista
+    notes:
+      - {text: 鸡丁 son daditos de pollo; es uno de los platos más pedidos fuera de China.}
+    snooze: 017-2026-11-11-pedir-en-el-restaurante
+    snooze_reason: 'entró al desván en este mismo lote, al dejar para más adelante lo de nivel alto de tu diálogo del restaurante'
+    source: {batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: a.weizi
+    hanzi: 位子
+    pinyin: wèizi
+    meaning: {es: 'sitio, asiento'}
+    theme: restaurante
+    links: [位, 座位]
+    reason: HSK 7 por la lista; en un restaurante te preguntan 几位？ y con eso basta de momento.
+    notes:
+      - {text: '有位子吗？ «¿hay sitio?»; 我想要一个安静的位子 «quiero un sitio tranquilo».'}
+    snooze: 017-2026-11-11-pedir-en-el-restaurante
+    snooze_reason: 'entró al desván en este mismo lote, al dejar para más adelante lo de nivel alto de tu diálogo del restaurante'
+    source: {batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: a.youxing
+    hanzi: 游行
+    pinyin: yóuxíng
+    meaning: {es: 'manifestación, desfile'}
+    theme: lugares
+    links: [出去]
+    reason: 'HSK 6; de tu frase 今天不要出去，因为今天有 protest: entra 今天不要出去.'
+    notes:
+      - {text: '今天不要出去，因为今天有游行 «hoy no salgas, que hay manifestación».'}
+    source: {batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: a.jiejue
+    hanzi: 解决
+    pinyin: jiějué
+    meaning: {es: 'resolver, solucionar'}
+    theme: cosas
+    links: [决定, 问题]
+    reason: HSK 3; de tus notas de 快 y 决. Entró 决定; 解决 espera.
+    notes:
+      - {text: '没问题，我来解决！ «¡sin problema, yo lo arreglo!». El mismo 决 de 决定.'}
+    snooze: 017-2026-11-11-pedir-en-el-restaurante
+    snooze_reason: 'entró al desván en este mismo lote, al dejar para más adelante lo de nivel alto de tu diálogo del restaurante'
+    source: {batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: a.xiaoqilai
+    hanzi: 笑起来
+    pinyin: xiào qǐlai
+    meaning: {es: 'al sonreír, cuando sonríes'}
+    theme: describir
+    links: [笑, 好看]
+    reason: verbo + 起来 «al ponerse a» es de HSK 3; entra cuando llegue esa estructura.
+    level: 3
+    level_reason: 'verbo + 起来 es gramática de HSK 3'
+    notes:
+      - {text: 你笑起来真好看！ «¡qué guapa estás cuando sonríes!».}
+    source: {batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: a.laozihao
+    hanzi: 老字号
+    pinyin: lǎozìhào
+    meaning: {es: 'negocio de toda la vida, con historia'}
+    theme: compras
+    links: [老, 正宗]
+    reason: HSK 7; de tu lectura de los letreros de Shanghái, solo para reconocer.
+    notes:
+      - {text: '百年老字号 «casa centenaria», en los letreros. 正宗 zhèngzōng «auténtico» (正宗老火锅) va con 地道 en el desván.'}
+    source: {batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}

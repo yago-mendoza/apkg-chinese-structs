@@ -37,7 +37,7 @@
 - ✅🃏 特别 tèbié [tʰɤ˥˩ pjɛ˧˥] · especialmente, muy · _adverbio_ · Delante de un adjetivo es más fuerte que 很: 今天特别冷 «hoy hace muchísimo frío».
 - ✅🃏 多 duō [twɔ˥] · mucho, muchos · _adjetivo_ · Delante de una medida pregunta cuánto: 多大 «qué edad, qué tamaño», 多少 «cuánto».
 - ✅🃏 真的 zhēnde [ʈʂən˥ tɤ] · de verdad, en serio · _adverbio_ · 真 delante de un adjetivo es «qué…»: 真好. 真的 es «de verdad»: 我真的知道 «de verdad que lo sé»; 真的？, con tono de pregunta, ya es «¿en serio?».
-- ✅🃏 快 kuài [kʰwaɪ˥˩] · rápido; pronto · _adjetivo_ · 他跑得很快 «corre muy rápido». Con 了, «ya casi»: 快八点了 «son casi las ocho». Lo contrario es 慢 màn.
+- ✅🃏 快 kuài [kʰwaɪ˥˩] · rápido; pronto · _adjetivo_ · 他跑得很快 «corre muy rápido». Con 了, «ya casi»: 快八点了 «son casi las ocho». Lo contrario es 慢 màn. · 忄 es el corazón, que late tan rápido que tienes que decidir 夬 ya. Es inventada: 夬 da el sonido, como en 块.
 - ✅🃏 跑 pǎo [pʰɑʊ˧˩˧] · correr · _verbo_ · 他跑得很快 «corre muy rápido». 足 a la izquierda es «pie».
 - ✅🃏 得 de [tɤ] · partícula: cómo se hace algo (说得很好) · _partícula_ · Verbo + 得 + cómo: 你说得很好 «hablas muy bien»; 你来得很早 «has llegado temprano». Valora cómo sale la acción. «你很早» no es la forma de decir que alguien llegó temprano. · Se escribe distinto que 的 (mi libro: 我的书) aunque suene igual: 得 va detrás de un verbo; 的, delante de un sustantivo. · 💡 得 detrás del verbo valora cómo sale algo: 你说得对 «tienes razón», 你说得不对 «no es correcto lo que dices», sin 是.
 - 🟡🃏 亮 liàng [ljɑŋ˥˩] · brillante, con luz · _verbo_ · Arriba lleva la parte de arriba de 高, recortada. 很亮 «hay mucha luz».
@@ -288,3 +288,4 @@ Riman en -eng; uno sube el grado, el otro es poder.
 - ✅🃏 他高兴地走了。 · tā gāoxìng de zǒu le · Se fue contento.
 - ✅🃏 这个包很重。 · zhè ge bāo hěn zhòng · Esta bolsa pesa mucho.
 - ✅🃏 医院里有很多病人。 · yīyuàn lǐ yǒu hěn duō bìngrén · En el hospital hay muchos enfermos.
+- ✅🃏 快来！ · kuài lái · ¡Ven rápido!

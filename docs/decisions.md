@@ -466,3 +466,7 @@ YAGO ordenó todos sus mazos de Anki en cinco familias; este va en `🌐 Languag
 
 YAGO, al ver un hueco el 1 de noviembre en «Cómo crece el mazo»: «deberían ser los lotes». La gráfica iba por días con algún cambio, y un día de ajustes sueltos (5 tarjetas corregidas, ninguna nueva) salía como una barra vacía, como si fuera un lote. Decidido: la exportación añade `historyBatches`, una fila por etiqueta `lote-NNN` con lo que cambió desde la anterior (así los ajustes entre dos lotes cuentan en el siguiente, y dos lotes cerrados el mismo día, como el 007 y el 008, no se juntan), y la web dibuja una barra por lote, «lote 16» con su fecha; si una exportación antigua no lo trae, sigue por días. `history` no cambia de forma. Vive en: `docs/design.md` («Repositorio y privacidad»), `anki.py` (`batch_history`), infraphysics (`DeckActivity.tsx`).
 
+### 2026-11-11 · El complemento de orden recibe el mazo de anki.py
+
+En la primera subida del lote 017 el complemento `tools/anki-order` rechazó las 3943 nuevas: llevaba escrito el nombre «🐉 Chino práctico», y desde el 9 de noviembre el mazo se llama `🌐 Language::🀄 Chino práctico` (`DECK_NAME` ya se había cambiado; el complemento, no). El orden de nuevas no se aplicó. Ahora `push` pone el nombre del mazo en la petición y el complemento solo toca nuevas de ese mazo, y solo si su nombre acaba en «Chino práctico» (la salvaguarda de no tocar otros mazos sigue en el complemento). Así, mover el mazo en Anki pide cambiar solo `DECK_NAME`. Regla: `docs/design.md`, «Anki»; prueba: `NewCardOrderAddon`.
+

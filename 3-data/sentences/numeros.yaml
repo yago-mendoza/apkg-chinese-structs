@@ -899,3 +899,39 @@ sentences:
       - {text: ？}
     translation: {en: 'How many times have you been?', es: '¿Cuántas veces has ido?'}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.wo-du-le-liang-bian
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: dú, ref: w.du, text: 读}
+      - {pinyin: le, ref: w.le, text: 了}
+      - {pinyin: liǎng, ref: w.liang, text: 两}
+      - {pinyin: biàn, ref: w.bian, text: 遍}
+      - {text: 。}
+    translation: {en: I read it through twice., es: Lo leí entero dos veces.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.zai-ting-yi-bian
+    use: say
+    kind: example
+    segments:
+      - {pinyin: zài, ref: w.zai.again, text: 再}
+      - {pinyin: tīng, ref: w.ting, text: 听}
+      - {pinyin: yí, ref: w.num.yi, sandhi: true, text: 一}
+      - {pinyin: biàn, ref: w.bian, text: 遍}
+      - {text: 。}
+    translation: {en: Listen to it once more., es: Escúchalo entero otra vez.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.wo-qu-guo-beijing-liang-ci
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: qù, ref: w.qu, text: 去}
+      - {pinyin: guo, ref: w.guo.exp, text: 过}
+      - {pinyin: Běijīng, ref: w.beijing, text: 北京}
+      - {pinyin: liǎng, ref: w.liang, text: 两}
+      - {pinyin: cì, ref: w.ci, text: 次}
+      - {text: 。}
+    translation: {en: I've been to Beijing twice., es: He estado en Pekín dos veces.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}

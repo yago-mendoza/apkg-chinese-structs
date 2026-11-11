@@ -32,7 +32,7 @@
 - ✅🃏 吃饭了吗 chīfàn le ma [ʈʂʰɨ˥ fan˥˩ lɤ ma] · ¿has comido? (como saludo) · _expresión_ · Palabra a palabra: 吃饭 «comer» + 了 «ya» + 吗: «¿ya has comido?». · No es una invitación a comer: es interesarse por ti, sobre todo entre vecinos, familia y gente mayor. Se contesta corto, 吃了，你呢？, y se sigue.
 - ✅🃏 最近忙吗 zuìjìn máng ma [tsweɪ˥˩ tɕin˥˩ mɑŋ˧˥ ma] · ¿mucho lío últimamente? · _expresión_ · Palabra a palabra: 最近 «últimamente» + 忙 «ocupado» + 吗: «¿ocupado últimamente?». · En chino el interés suele ir a algo concreto (el trabajo, la comida, el cansancio) más que a un «¿cómo estás?» abstracto.
 - ✅🃏 这个怎么样 zhège zěnmeyàng [ʈʂɤ˥˩ kɤ tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal este?, ¿qué te parece? · _expresión_ · Palabra a palabra: 这个 «este» + 怎么样 «¿qué tal?». · 怎么样 también pide opinión: 这个怎么样？ al enseñar algo, 明天怎么样？ al proponer un día.
-- ✅🃏 快乐 kuàilè [kʰwaɪ˥˩ lɤ˥˩] · feliz, alegre · _adjetivo_ · Se oye sobre todo en las felicitaciones: 生日快乐, 新年快乐.
+- ✅🃏 快乐 kuàilè [kʰwaɪ˥˩ lɤ˥˩] · feliz, alegre · _adjetivo_ · Se oye sobre todo en las felicitaciones: 生日快乐, 新年快乐. · 💡 快乐 es ser feliz, en general o en una etapa (跟你在一起很快乐); 高兴, contento por algo concreto (我太高兴了！); 开心, lo de diario para «estoy contento».
 - ✅🃏 生日快乐 shēngrì kuàilè [ʂɤŋ˥ ʐɨ˥˩ kʰwaɪ˥˩ lɤ˥˩] · ¡feliz cumpleaños! · _expresión_ · Palabra a palabra: 生日 «cumpleaños» + 快乐 «feliz»: «cumpleaños feliz».
 - ✅🃏 礼物 lǐwù [li˧˩˧ u˥˩] · regalo · _sustantivo_ · 谢谢你的礼物！ «¡gracias por tu regalo!».
 - ✅🃏 恭喜 gōngxǐ [kʊŋ˥ ɕi˧˩˧] · ¡enhorabuena! · _expresión_ · Palabra a palabra: 恭 «respetuoso» + 喜 «alegría», el mismo de 喜欢. · Se oye mucho: 恭喜发财 en el Año Nuevo chino. En la lista es de nivel 7.
@@ -42,6 +42,7 @@
 - ✅🃏 哈喽 hālou [xa˥ loʊ] · hola (informal) · _interjección_ · Palabra a palabra: 哈 hā y 喽 lou solo imitan el sonido de hello. Informal y simpático; con desconocidos, 你好. · 哈 y 拿 llevan 合 hé, que ya no da su sonido.
 - ✅🃏 嗨 hāi [xaɪ˥] · ¡hola! (informal) · _interjección_ · Préstamo del inglés hi, como 哈喽 de hello: entre amigos. Entre amigos también se saluda solo con el nombre. · 口 «boca» + 海 hǎi «mar», que da el sonido: un saludo que suena a «hi».
 - ✅🃏 周末愉快 zhōumò yúkuài [ʈʂoʊ˥ mwɔ˥˩ y˧˥ kʰwaɪ˥˩] · ¡buen fin de semana! · _expresión_ · Así se despidió la profesora el viernes 6. · Palabra a palabra: 周末 «fin de semana» + 愉快 yúkuài [HSK 6] «alegre, agradable». Igual se dice 生日快乐 para el cumpleaños.
+- ✅🃏 开心 kāixīn [kʰaɪ˥ ɕin˥] · contento, alegre · _adjetivo_ · Lo más de diario para «estoy contento»: 我很开心. Casi como 高兴; 快乐 es más «feliz» en general y el de las felicitaciones. · 开 «abrir» + 心 «corazón»: el corazón abierto.
 
 ## Saludos con 好
 
@@ -151,3 +152,6 @@ La misma sílaba: solo los separa el tono.
 - ✅🃏 我还好。 · wǒ hái hǎo · Voy tirando.
 - ✅🃏 好啊，明天见！ · hǎo a míngtiān jiàn · ¡Vale, hasta mañana!
 - ✅🃏 你什么时候回来？ · nǐ shénme shíhou huílai · ¿Cuándo vuelves (aquí)?
+- ✅🃏 生日快乐！ · shēngrì kuàilè · ¡Feliz cumpleaños!
+- ✅🃏 跟你在一起很快乐。 · gēn nǐ zài yìqǐ hěn kuàilè · Soy feliz estando contigo.
+- ✅🃏 我很开心。 · wǒ hěn kāixīn · Estoy contento.

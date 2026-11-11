@@ -1278,3 +1278,189 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 钟, pinyin: zhōng, meaning: reloj (de pared)}
     comments: []
+  - id: x.dictation.anjing
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.anjing]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: an1 jing4, hanzi: 安静, pinyin: ānjìng, meaning: 'tranquilo, silencioso'}
+    comments: []
+  - id: x.produce.anjing
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.anjing]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «tranquilo, silencioso»? Escribe el pinyin.'}
+    answer: {typed: an1 jing4, hanzi: 安静, pinyin: ānjìng, meaning: 'tranquilo, silencioso'}
+    comments: []
+  - id: x.read.anjing
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.anjing]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 安静}
+    answer: {hanzi: 安静, pinyin: ānjìng, meaning: 'tranquilo, silencioso'}
+    comments: []
+  - id: x.dictation.zuofan
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.zuofan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zuo4 fan4, hanzi: 做饭, pinyin: zuò fàn, meaning: 'cocinar, hacer la comida'}
+    comments: []
+  - id: x.produce.zuofan
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.zuofan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «cocinar, hacer la comida»? Escribe el pinyin.'}
+    answer: {typed: zuo4 fan4, hanzi: 做饭, pinyin: zuò fàn, meaning: 'cocinar, hacer la comida'}
+    comments: []
+  - id: x.read.zuofan
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.zuofan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 做饭}
+    answer: {hanzi: 做饭, pinyin: zuò fàn, meaning: 'cocinar, hacer la comida'}
+    comments: []
+  - id: x.dictation.ganjing
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.ganjing]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gan1 jing4, hanzi: 干净, pinyin: gānjìng, meaning: limpio}
+    comments: []
+  - id: x.produce.ganjing
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.ganjing]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «limpio»? Escribe el pinyin.'}
+    answer: {typed: gan1 jing4, hanzi: 干净, pinyin: gānjìng, meaning: limpio}
+    comments: []
+  - id: x.read.ganjing
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.ganjing]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 干净}
+    answer: {hanzi: 干净, pinyin: gānjìng, meaning: limpio}
+    comments: []
+  - id: x.dictation.dishang
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.dishang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: di4 shang5, hanzi: 地上, pinyin: dìshang, meaning: en el suelo}
+    comments: []
+  - id: x.read.dishang
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.dishang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 地上}
+    answer: {hanzi: 地上, pinyin: dìshang, meaning: en el suelo}
+    comments: []
+  - id: x.tones.dishang
+    added: 2026-11-11
+    lang: es
+    type: tones
+    targets: [w.dishang]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 地上, pinyin: di shang}
+    answer: {typed: '45', hanzi: 地上, pinyin: dìshang, meaning: en el suelo}
+    comments: []
+  - id: x.produce.wo-zai-zuofan
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-zai-zuofan
+    targets: [s.wo-zai-zuofan]
+    context: [w.wo, w.zai.progressive, w.zuofan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Estoy cocinando.»'}
+    answer: {meaning: Estoy cocinando.}
+    comments: []
+  - id: x.produce.you-fangjian-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.you-fangjian-ma
+    targets: [s.you-fangjian-ma]
+    context: [w.you.have, w.fangjian, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Tienen habitaciones?»'}
+    answer: {meaning: '¿Tienen habitaciones?'}
+    comments: []
+  - id: x.produce.wo-xiangyao-yi-ge-anjing-de-fangjian
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-xiangyao-yi-ge-anjing-de-fangjian
+    targets: [s.wo-xiangyao-yi-ge-anjing-de-fangjian]
+    context: [w.wo, w.xiangyao, w.num.yi, w.ge, w.anjing, w.de, w.fangjian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero una habitación tranquila.»'}
+    answer: {meaning: Quiero una habitación tranquila.}
+    comments: []
+  - id: x.produce.zui-pianyi-de-fangjian-duoshao-qian
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.zui-pianyi-de-fangjian-duoshao-qian
+    targets: [s.zui-pianyi-de-fangjian-duoshao-qian]
+    context: [w.zui, w.pianyi, w.de, w.fangjian, w.duoshao, w.qian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuánto cuesta la habitación más barata?»'}
+    answer: {meaning: '¿Cuánto cuesta la habitación más barata?'}
+    comments: []
+  - id: x.produce.wo-dao-jia-zai-kan
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-dao-jia-zai-kan
+    targets: [s.wo-dao-jia-zai-kan]
+    context: [w.wo, w.dao.reach, w.jia, w.zai.again, w.kan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Lo miro cuando llegue a casa.»'}
+    answer: {meaning: Lo miro cuando llegue a casa.}
+    comments: []
+  - id: x.produce.fangjian-hen-ganjing
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.fangjian-hen-ganjing
+    targets: [s.fangjian-hen-ganjing]
+    context: [w.fangjian, w.hen, w.ganjing]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «La habitación está muy limpia.»'}
+    answer: {meaning: La habitación está muy limpia.}
+    comments: []
+  - id: x.listen.dishang-you-shui
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.dishang-you-shui
+    targets: [s.dishang-you-shui]
+    context: [w.dishang, w.you.have, w.shui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Hay agua en el suelo.}
+    comments: []

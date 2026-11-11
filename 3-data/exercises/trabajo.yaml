@@ -1273,3 +1273,185 @@ exercises:
     prompt: {text: '¿Cuál es kè, «clase, lección»?'}
     answer: {hanzi: 课, pinyin: kè, meaning: 'clase, lección'}
     comments: []
+  - id: x.dictation.gongren
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.gongren]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gong1 ren2, hanzi: 工人, pinyin: gōngrén, meaning: 'obrero, trabajador'}
+    comments: []
+  - id: x.read.gongren
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.gongren]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 工人}
+    answer: {hanzi: 工人, pinyin: gōngrén, meaning: 'obrero, trabajador'}
+    comments: []
+  - id: x.dictation.kao
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.kao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kao3, hanzi: 考, pinyin: kǎo, meaning: 'examinarse, hacer un examen'}
+    comments: []
+  - id: x.produce.kao
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.kao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «examinarse, hacer un examen»? Escribe el pinyin.'}
+    answer: {typed: kao3, hanzi: 考, pinyin: kǎo, meaning: 'examinarse, hacer un examen'}
+    comments: []
+  - id: x.read.kao
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.kao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 考}
+    answer: {hanzi: 考, pinyin: kǎo, meaning: 'examinarse, hacer un examen'}
+    comments: []
+  - id: x.dictation.ye.page
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.ye.page]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ye4, hanzi: 页, pinyin: yè, meaning: página}
+    comments: []
+  - id: x.read.ye.page
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.ye.page]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 页}
+    answer: {hanzi: 页, pinyin: yè, meaning: página}
+    comments: []
+  - id: x.dictation.wangshang
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.wangshang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wang3 shang4, hanzi: 网上, pinyin: wǎngshàng, meaning: en internet}
+    comments: []
+  - id: x.produce.wangshang
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.wangshang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «en internet»? Escribe el pinyin.'}
+    answer: {typed: wang3 shang4, hanzi: 网上, pinyin: wǎngshàng, meaning: en internet}
+    comments: []
+  - id: x.read.wangshang
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.wangshang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 网上}
+    answer: {hanzi: 网上, pinyin: wǎngshàng, meaning: en internet}
+    comments: []
+  - id: x.dictation.xueyuan
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.xueyuan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xue2 yuan4, hanzi: 学院, pinyin: xuéyuàn, meaning: 'facultad, escuela superior'}
+    comments: []
+  - id: x.read.xueyuan
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.xueyuan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 学院}
+    answer: {hanzi: 学院, pinyin: xuéyuàn, meaning: 'facultad, escuela superior'}
+    comments: []
+  - id: x.listen.ta-shi-gongren
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.ta-shi-gongren
+    targets: [s.ta-shi-gongren]
+    context: [w.ta.he, w.shi, w.gongren]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es obrero.}
+    comments: []
+  - id: x.produce.wo-mingtian-kao-zhongwen
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-mingtian-kao-zhongwen
+    targets: [s.wo-mingtian-kao-zhongwen]
+    context: [w.wo, w.mingtian, w.kao, w.zhongwen]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Mañana tengo examen de chino.»'}
+    answer: {meaning: Mañana tengo examen de chino.}
+    comments: []
+  - id: x.listen.qing-kan-di-shi-ye
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.qing-kan-di-shi-ye
+    targets: [s.qing-kan-di-shi-ye]
+    context: [w.qing, w.kan, w.di.ordinal, w.num.shi, w.ye.page]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Mirad la página diez.}
+    comments: []
+  - id: x.produce.wo-zai-wangshang-mai
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-zai-wangshang-mai
+    targets: [s.wo-zai-wangshang-mai]
+    context: [w.wo, w.zai.at, w.wangshang, w.mai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Lo compro por internet.»'}
+    answer: {meaning: Lo compro por internet.}
+    comments: []
+  - id: x.listen.ta-zai-xueyuan-gongzuo
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.ta-zai-xueyuan-gongzuo
+    targets: [s.ta-zai-xueyuan-gongzuo]
+    context: [w.ta.he, w.zai.at, w.xueyuan, w.gongzuo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Trabaja en la facultad.}
+    comments: []
+  - id: x.charsound.yuan
+    added: 2026-11-11
+    lang: es
+    type: charsound
+    targets: [w.xueyuan, w.yiyuan]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 院}
+    answer: {typed: yuan4, hanzi: 院, pinyin: yuàn, meaning: 'Sale en 学院 xuéyuàn «facultad, escuela superior», 医院 yīyuàn «hospital».'}
+    comments: []
+  - id: x.contrast.ye.page
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.ye-ye
+    targets: [w.ye.page]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 页, pinyin: yè, meaning: página}
+    comments: []

@@ -2058,3 +2058,114 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Quiero volver a España.»'}
     answer: {meaning: Quiero volver a España.}
     comments: []
+  - id: x.contrast.li.inside
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.li-zao-guo
+    targets: [w.li.inside]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es lǐ, «dentro, en (detrás de un lugar)»?'}
+    answer: {hanzi: 里, pinyin: lǐ, meaning: 'dentro, en (detrás de un lugar)'}
+    comments: []
+  - id: x.dictation.xi.west
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.xi.west]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xi1, hanzi: 西, pinyin: xī, meaning: oeste}
+    comments: []
+  - id: x.produce.xi.west
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.xi.west]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «oeste»? Escribe el pinyin.'}
+    answer: {typed: xi1, hanzi: 西, pinyin: xī, meaning: oeste}
+    comments: []
+  - id: x.dictation.cheshang
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.cheshang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: che1 shang5, hanzi: 车上, pinyin: chēshang, meaning: 'en el coche, en el autobús'}
+    comments: []
+  - id: x.read.cheshang
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.cheshang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 车上}
+    answer: {hanzi: 车上, pinyin: chēshang, meaning: 'en el coche, en el autobús'}
+    comments: []
+  - id: x.tones.cheshang
+    added: 2026-11-11
+    lang: es
+    type: tones
+    targets: [w.cheshang]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 车上, pinyin: che shang}
+    answer: {typed: '15', hanzi: 车上, pinyin: chēshang, meaning: 'en el coche, en el autobús'}
+    comments: []
+  - id: x.produce.wo-dao-le
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-dao-le
+    targets: [s.wo-dao-le]
+    context: [w.wo, w.dao.reach, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Ya he llegado!»'}
+    answer: {meaning: ¡Ya he llegado!}
+    comments: []
+  - id: x.produce.ni-dao-le-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.ni-dao-le-ma
+    targets: [s.ni-dao-le-ma]
+    context: [w.ni, w.dao.reach, w.le, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Ya has llegado?»'}
+    answer: {meaning: '¿Ya has llegado?'}
+    comments: []
+  - id: x.produce.wo-zai-lushang-le
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-zai-lushang-le
+    targets: [s.wo-zai-lushang-le]
+    context: [w.wo, w.zai.at, w.lushang, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ya estoy de camino.»'}
+    answer: {meaning: Ya estoy de camino.}
+    comments: []
+  - id: x.produce.jintian-bu-yao-chuqu
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.jintian-bu-yao-chuqu
+    targets: [s.jintian-bu-yao-chuqu]
+    context: [w.jintian, w.bu, w.yao, w.chuqu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hoy no salgas.»'}
+    answer: {meaning: Hoy no salgas.}
+    comments: []
+  - id: x.listen.cheshang-you-hen-duo-ren
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.cheshang-you-hen-duo-ren
+    targets: [s.cheshang-you-hen-duo-ren]
+    context: [w.cheshang, w.you.have, w.hen, w.duo, w.ren]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: En el autobús hay mucha gente.}
+    comments: []

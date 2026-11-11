@@ -1,0 +1,126 @@
+# Entradas · Orientarse. Esquema: 3-data/README.md
+
+entries:
+  - id: w.jie
+    use: say
+    role: content
+    kind: word
+    hanzi: 街
+    pinyin: jiē
+    meaning: {es: calle, en: street}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: 'Los nombres de calle suelen acabar en 路 (南京路); 街 es la calle en general y la de tiendas: 小吃街 «calle de puestos de comida».'}
+  - id: w.fujin
+    use: say
+    role: content
+    kind: word
+    hanzi: 附近
+    pinyin: fùjìn
+    meaning: {es: 'cerca, por aquí cerca', en: nearby}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: usage, private: false, text: 'Detrás del sitio: 家附近 «cerca de casa», 这里附近有超市吗？ «¿hay un súper por aquí cerca?».'}
+      - {date: '2026-11-11', kind: linguistic, private: false, text: 'El mismo 近 de 最近 «últimamente»: cerca, en el espacio o en el tiempo.'}
+  - id: w.dong.east
+    use: say
+    role: content
+    kind: word
+    hanzi: 东
+    pinyin: dōng
+    meaning: {es: este (punto cardinal), en: east}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: 'El 东 de 东西 «cosa»: lo de este a oeste, todo lo que hay. Para recordarlo, la forma tradicional 東 parece el sol 日 saliendo detrás de un árbol 木 (en su origen dibujaba un saco atado).'}
+  - id: w.nan.south
+    use: say
+    role: content
+    kind: word
+    hanzi: 南
+    pinyin: nán
+    meaning: {es: sur, en: south}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: 'Suena igual que 男 «hombre» y 难 «difícil»: los tres nán, segundo tono.'}
+  - id: w.bei.north
+    use: say
+    role: content
+    kind: word
+    hanzi: 北
+    pinyin: běi
+    meaning: {es: norte, en: north}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: 'El 北 de 北京, «la capital del norte»; 南京 es «la capital del sur».'}
+  - id: w.bian.side
+    use: hear
+    role: function
+    kind: word
+    hanzi: 边
+    pinyin: biān
+    meaning: {es: lado (detrás de una dirección), en: side}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: 'Dirección + 边 «lado»: 东边 «al este», 北边 «al norte», 这边 «por aquí». A menudo átono: dōngbian.'}
+  - id: w.zhongjian
+    use: say
+    role: content
+    kind: word
+    hanzi: 中间
+    pinyin: zhōngjiān
+    meaning: {es: 'en medio, entre', en: 'middle, between'}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: usage, private: false, text: 'A + 和 + B + 中间 «entre A y B»: 超市在银行 [HSK 2] 和医院中间.'}
+  - id: w.didian
+    use: hear
+    role: content
+    kind: word
+    hanzi: 地点
+    pinyin: dìdiǎn
+    meaning: {es: 'lugar (de una cita, un evento)', en: 'location, venue'}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: 'Para el sitio de algo que pasa (una reunión, un examen): 时间和地点 «la hora y el lugar». Para «sitio» en general, 地方.'}
+  - id: g.dongnanxibei
+    kind: group
+    basis: set
+    title: 东, 南, 西 y 北
+    explanation: Los cuatro puntos cardinales; en chino se nombran 东南西北, empezando por el este. Con 边 detrás, «al este», «al sur»…
+    members:
+      - {ref: w.dong.east, cue: 'el de 东西'}
+      - {ref: w.nan.south, cue: 'el de 南京; suena como 男'}
+      - {ref: w.xi.west, cue: 'el de 西班牙'}
+      - {ref: w.bei.north, cue: 'el de 北京'}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments: []
+  - id: g.bei-bei
+    kind: group
+    basis: soundalike
+    title: 杯 bēi y 北 běi
+    explanation: 'Solo los separa el tono: se distinguen de oído por cómo sube o baja la voz.'
+    members:
+      - {ref: w.bei.cl, cue: 'alto y plano: 一杯水'}
+      - {ref: w.bei.north, cue: 'baja y sube: 北京'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments: []
+  - id: g.bian-bian
+    kind: group
+    basis: soundalike
+    title: 遍 biàn y 边 biān
+    explanation: 'Solo los separa el tono: se distinguen de oído por cómo sube o baja la voz.'
+    members:
+      - {ref: w.bian, cue: 'cae: 再说一遍'}
+      - {ref: w.bian.side, cue: 'alto y plano: 北边'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments: []
+  - id: g.xi-wash-west
+    kind: group
+    basis: soundalike
+    title: 洗 xǐ y 西 xī
+    explanation: 'Solo los separa el tono: se distinguen de oído por cómo sube o baja la voz.'
+    members:
+      - {ref: w.xi.wash, cue: 'baja y sube: 洗手'}
+      - {ref: w.xi.west, cue: 'alto y plano: 西班牙'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments: []

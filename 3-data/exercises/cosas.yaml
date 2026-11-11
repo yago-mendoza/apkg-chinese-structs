@@ -3328,3 +3328,70 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 动, pinyin: dòng, meaning: moverse}
     comments: []
+  - id: x.dictation.jueding
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.jueding]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jue2 ding4, hanzi: 决定, pinyin: juédìng, meaning: decidir; decisión}
+    comments: []
+  - id: x.produce.jueding
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.jueding]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «decidir; decisión»? Escribe el pinyin.'}
+    answer: {typed: jue2 ding4, hanzi: 决定, pinyin: juédìng, meaning: decidir; decisión}
+    comments: []
+  - id: x.read.jueding
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.jueding]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 决定}
+    answer: {hanzi: 决定, pinyin: juédìng, meaning: decidir; decisión}
+    comments: []
+  - id: x.dictation.dongzuo
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.dongzuo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dong4 zuo4, hanzi: 动作, pinyin: dòngzuò, meaning: 'movimiento, gesto'}
+    comments: []
+  - id: x.read.dongzuo
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.dongzuo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 动作}
+    answer: {hanzi: 动作, pinyin: dòngzuò, meaning: 'movimiento, gesto'}
+    comments: []
+  - id: x.produce.wo-jueding-le
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-jueding-le
+    targets: [s.wo-jueding-le]
+    context: [w.wo, w.jueding, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ya lo he decidido.»'}
+    answer: {meaning: Ya lo he decidido.}
+    comments: []
+  - id: x.listen.zhege-dongzuo-hen-nan
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.zhege-dongzuo-hen-nan
+    targets: [s.zhege-dongzuo-hen-nan]
+    context: [w.zhe, w.ge, w.dongzuo, w.hen, w.nan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Este movimiento es muy difícil.}
+    comments: []

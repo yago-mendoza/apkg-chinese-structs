@@ -392,3 +392,58 @@ sentences:
       - {text: 。}
     translation: {en: Class is over., es: Se ha acabado la clase.}
     source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.ta-shi-gongren
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {pinyin: shì, ref: w.shi, text: 是}
+      - {pinyin: gōngrén, ref: w.gongren, text: 工人}
+      - {text: 。}
+    translation: {en: He is a worker., es: Es obrero.}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.wo-mingtian-kao-zhongwen
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: míngtiān, ref: w.mingtian, text: 明天}
+      - {pinyin: kǎo, ref: w.kao, text: 考}
+      - {pinyin: Zhōngwén, ref: w.zhongwen, text: 中文}
+      - {text: 。}
+    translation: {en: I have a Chinese exam tomorrow., es: Mañana tengo examen de chino.}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.qing-kan-di-shi-ye
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: qǐng, ref: w.qing, text: 请}
+      - {pinyin: kàn, ref: w.kan, text: 看}
+      - {pinyin: dì, ref: w.di.ordinal, text: 第}
+      - {pinyin: shí, ref: w.num.shi, text: 十}
+      - {pinyin: yè, ref: w.ye.page, text: 页}
+      - {text: 。}
+    translation: {en: Please look at page ten., es: Mirad la página diez.}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.wo-zai-wangshang-mai
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: wǎngshàng, ref: w.wangshang, text: 网上}
+      - {pinyin: mǎi, ref: w.mai, text: 买}
+      - {text: 。}
+    translation: {en: I buy it online., es: Lo compro por internet.}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.ta-zai-xueyuan-gongzuo
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: tā, ref: w.ta.he, text: 他}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: xuéyuàn, ref: w.xueyuan, text: 学院}
+      - {pinyin: gōngzuò, ref: w.gongzuo, text: 工作}
+      - {text: 。}
+    translation: {en: He works at the college., es: Trabaja en la facultad.}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}

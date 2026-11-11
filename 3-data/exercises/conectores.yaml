@@ -1187,3 +1187,47 @@ exercises:
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 然}
     answer: {typed: ran2, hanzi: 然, pinyin: rán, meaning: 'Sale en 虽然 suīrán «aunque», 然后 ránhòu «después, luego».'}
     comments: []
+  - id: x.listen.wo-xihuan-de-ren-bu-xihuan-wo
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.wo-xihuan-de-ren-bu-xihuan-wo
+    targets: [s.wo-xihuan-de-ren-bu-xihuan-wo]
+    context: [w.wo, w.xihuan, w.de, w.ren, w.bu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: La persona que me gusta no me quiere.}
+    comments: []
+  - id: x.produce.xihuan-ni-de-ren-hen-duo
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.xihuan-ni-de-ren-hen-duo
+    targets: [s.xihuan-ni-de-ren-hen-duo]
+    context: [w.xihuan, w.ni, w.de, w.ren, w.hen, w.duo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Le gustas a mucha gente.»'}
+    answer: {meaning: Le gustas a mucha gente.}
+    comments: []
+  - id: x.produce.suoyi-xianzai-wo-shi-laoshi-le
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.suoyi-xianzai-wo-shi-laoshi-le
+    targets: [s.suoyi-xianzai-wo-shi-laoshi-le]
+    context: [w.suoyi, w.xianzai, w.wo, w.shi, w.laoshi, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Así que ahora el profesor soy yo.»'}
+    answer: {meaning: Así que ahora el profesor soy yo.}
+    comments: []
+  - id: x.listen.wo-gei-le-ni-wu-xing-yinwei-wo-ziji-xiang-gei
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.wo-gei-le-ni-wu-xing-yinwei-wo-ziji-xiang-gei
+    targets: [s.wo-gei-le-ni-wu-xing-yinwei-wo-ziji-xiang-gei]
+    context: [w.wo, w.gei.to, w.le, w.ni, w.num.wu, w.xing.star, w.yinwei, w.ziji, w.xiang, w.bu, w.shi, w.rang, w.de]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Te he puesto cinco estrellas porque he querido yo, no porque me lo pidieras.'}
+    comments: []

@@ -1553,3 +1553,399 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 茶, pinyin: chá, meaning: té}
     comments: []
+  - id: x.dictation.jirou
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.jirou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ji1 rou4, hanzi: 鸡肉, pinyin: jīròu, meaning: pollo (la carne)}
+    comments: []
+  - id: x.produce.jirou
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.jirou]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «pollo (la carne)»? Escribe el pinyin.'}
+    answer: {typed: ji1 rou4, hanzi: 鸡肉, pinyin: jīròu, meaning: pollo (la carne)}
+    comments: []
+  - id: x.read.jirou
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.jirou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 鸡肉}
+    answer: {hanzi: 鸡肉, pinyin: jīròu, meaning: pollo (la carne)}
+    comments: []
+  - id: x.dictation.zhurou
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.zhurou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhu1 rou4, hanzi: 猪肉, pinyin: zhūròu, meaning: cerdo (la carne)}
+    comments: []
+  - id: x.produce.zhurou
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.zhurou]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «cerdo (la carne)»? Escribe el pinyin.'}
+    answer: {typed: zhu1 rou4, hanzi: 猪肉, pinyin: zhūròu, meaning: cerdo (la carne)}
+    comments: []
+  - id: x.read.zhurou
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.zhurou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 猪肉}
+    answer: {hanzi: 猪肉, pinyin: zhūròu, meaning: cerdo (la carne)}
+    comments: []
+  - id: x.dictation.mifan
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.mifan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mi3 fan4, hanzi: 米饭, pinyin: mǐfàn, meaning: arroz (cocido)}
+    comments: []
+  - id: x.produce.mifan
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.mifan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «arroz (cocido)»? Escribe el pinyin.'}
+    answer: {typed: mi3 fan4, hanzi: 米饭, pinyin: mǐfàn, meaning: arroz (cocido)}
+    comments: []
+  - id: x.read.mifan
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.mifan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 米饭}
+    answer: {hanzi: 米饭, pinyin: mǐfàn, meaning: arroz (cocido)}
+    comments: []
+  - id: x.dictation.miantiao
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.miantiao]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mian4 tiao2, hanzi: 面条, pinyin: miàntiáo, meaning: 'fideos, tallarines'}
+    comments: []
+  - id: x.produce.miantiao
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.miantiao]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «fideos, tallarines»? Escribe el pinyin.'}
+    answer: {typed: mian4 tiao2, hanzi: 面条, pinyin: miàntiáo, meaning: 'fideos, tallarines'}
+    comments: []
+  - id: x.read.miantiao
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.miantiao]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 面条}
+    answer: {hanzi: 面条, pinyin: miàntiáo, meaning: 'fideos, tallarines'}
+    comments: []
+  - id: x.dictation.jiaozi
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.jiaozi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jiao3 zi5, hanzi: 饺子, pinyin: jiǎozi, meaning: 'jiaozi, empanadillas chinas'}
+    comments: []
+  - id: x.produce.jiaozi
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.jiaozi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «jiaozi, empanadillas chinas»? Escribe el pinyin.'}
+    answer: {typed: jiao3 zi5, hanzi: 饺子, pinyin: jiǎozi, meaning: 'jiaozi, empanadillas chinas'}
+    comments: []
+  - id: x.read.jiaozi
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.jiaozi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 饺子}
+    answer: {hanzi: 饺子, pinyin: jiǎozi, meaning: 'jiaozi, empanadillas chinas'}
+    comments: []
+  - id: x.tones.jiaozi
+    added: 2026-11-11
+    lang: es
+    type: tones
+    targets: [w.jiaozi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 饺子, pinyin: jiao zi}
+    answer: {typed: '35', hanzi: 饺子, pinyin: jiǎozi, meaning: 'jiaozi, empanadillas chinas'}
+    comments: []
+  - id: x.dictation.tang
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.tang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: tang1, hanzi: 汤, pinyin: tāng, meaning: sopa}
+    comments: []
+  - id: x.produce.tang
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.tang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «sopa»? Escribe el pinyin.'}
+    answer: {typed: tang1, hanzi: 汤, pinyin: tāng, meaning: sopa}
+    comments: []
+  - id: x.read.tang
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.tang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 汤}
+    answer: {hanzi: 汤, pinyin: tāng, meaning: sopa}
+    comments: []
+  - id: x.dictation.la
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.la]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: la4, hanzi: 辣, pinyin: là, meaning: picante}
+    comments: []
+  - id: x.produce.la
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.la]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «picante»? Escribe el pinyin.'}
+    answer: {typed: la4, hanzi: 辣, pinyin: là, meaning: picante}
+    comments: []
+  - id: x.read.la
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.la]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 辣}
+    answer: {hanzi: 辣, pinyin: là, meaning: picante}
+    comments: []
+  - id: x.dictation.bao.full
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.bao.full]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: bao3, hanzi: 饱, pinyin: bǎo, meaning: 'lleno, saciado'}
+    comments: []
+  - id: x.produce.bao.full
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.bao.full]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «lleno, saciado»? Escribe el pinyin.'}
+    answer: {typed: bao3, hanzi: 饱, pinyin: bǎo, meaning: 'lleno, saciado'}
+    comments: []
+  - id: x.read.bao.full
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.bao.full]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 饱}
+    answer: {hanzi: 饱, pinyin: bǎo, meaning: 'lleno, saciado'}
+    comments: []
+  - id: x.dictation.shousi
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.shousi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shou4 si1, hanzi: 寿司, pinyin: shòusī, meaning: sushi}
+    comments: []
+  - id: x.read.shousi
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.shousi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 寿司}
+    answer: {hanzi: 寿司, pinyin: shòusī, meaning: sushi}
+    comments: []
+  - id: x.dictation.chengzi
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.chengzi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: cheng2 zi5, hanzi: 橙子, pinyin: chéngzi, meaning: naranja (la fruta)}
+    comments: []
+  - id: x.read.chengzi
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.chengzi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 橙子}
+    answer: {hanzi: 橙子, pinyin: chéngzi, meaning: naranja (la fruta)}
+    comments: []
+  - id: x.tones.chengzi
+    added: 2026-11-11
+    lang: es
+    type: tones
+    targets: [w.chengzi]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 橙子, pinyin: cheng zi}
+    answer: {typed: '25', hanzi: 橙子, pinyin: chéngzi, meaning: naranja (la fruta)}
+    comments: []
+  - id: x.dictation.caomei
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.caomei]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: cao3 mei2, hanzi: 草莓, pinyin: cǎoméi, meaning: fresa}
+    comments: []
+  - id: x.read.caomei
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.caomei]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 草莓}
+    answer: {hanzi: 草莓, pinyin: cǎoméi, meaning: fresa}
+    comments: []
+  - id: x.dictation.shucai
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.shucai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shu1 cai4, hanzi: 蔬菜, pinyin: shūcài, meaning: verdura}
+    comments: []
+  - id: x.read.shucai
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.shucai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 蔬菜}
+    answer: {hanzi: 蔬菜, pinyin: shūcài, meaning: verdura}
+    comments: []
+  - id: x.dictation.doufu
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.doufu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dou4 fu5, hanzi: 豆腐, pinyin: dòufu, meaning: tofu}
+    comments: []
+  - id: x.read.doufu
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.doufu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 豆腐}
+    answer: {hanzi: 豆腐, pinyin: dòufu, meaning: tofu}
+    comments: []
+  - id: x.tones.doufu
+    added: 2026-11-11
+    lang: es
+    type: tones
+    targets: [w.doufu]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 豆腐, pinyin: dou fu}
+    answer: {typed: '45', hanzi: 豆腐, pinyin: dòufu, meaning: tofu}
+    comments: []
+  - id: x.dictation.xiaochi
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.xiaochi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiao3 chi1, hanzi: 小吃, pinyin: xiǎochī, meaning: 'tapas, comida callejera'}
+    comments: []
+  - id: x.read.xiaochi
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.xiaochi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 小吃}
+    answer: {hanzi: 小吃, pinyin: xiǎochī, meaning: 'tapas, comida callejera'}
+    comments: []
+  - id: x.listen.wo-xihuan-chi-huoguo
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.wo-xihuan-chi-huoguo
+    targets: [s.wo-xihuan-chi-huoguo]
+    context: [w.wo, w.xihuan, w.chi, w.huoguo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me gusta el hot pot.}
+    comments: []
+  - id: x.listen.wo-xihuan-chi-shanghai-xiaochi
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.wo-xihuan-chi-shanghai-xiaochi
+    targets: [s.wo-xihuan-chi-shanghai-xiaochi]
+    context: [w.wo, w.xihuan, w.chi, w.shanghai, w.xiaochi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me gusta la comida callejera de Shanghái.}
+    comments: []
+  - id: x.charsound.shou
+    added: 2026-11-11
+    lang: es
+    type: charsound
+    targets: [w.shousi, e.ningaoshou]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 寿}
+    answer: {typed: shou4, hanzi: 寿, pinyin: shòu, meaning: 'Sale en 寿司 shòusī «sushi», 您高寿 nín gāoshòu «¿cuántos años tiene
+        usted? (a mayores de 70)».'}
+    comments: []
+  - id: x.contrast.bao.full
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.bao-bao
+    targets: [w.bao.full]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 饱, pinyin: bǎo, meaning: 'lleno, saciado'}
+    comments: []

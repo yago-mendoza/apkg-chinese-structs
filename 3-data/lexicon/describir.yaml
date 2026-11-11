@@ -429,6 +429,7 @@ entries:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: '他跑得很快 «corre muy rápido». Con 了, «ya casi»: 快八点了 «son casi las ocho». Lo contrario es 慢 màn.'}
+      - {date: '2026-11-11', kind: mnemonic, private: false, text: '忄 es el corazón, que late tan rápido que tienes que decidir 夬 ya. Es inventada: 夬 da el sonido, como en 块.', original: 'imagina que tu corazón (忄) late tan rápido que tienes que tomar una decisión inmediata (夬, asociado a decidir).'}
   - id: w.pao
     use: hear
     role: content

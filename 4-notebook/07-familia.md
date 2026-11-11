@@ -25,6 +25,7 @@
 - ✅🃏 爸 bà [pa˥˩] · papá (al llamarlo) · _sustantivo_ · Al dirigirse a ellos se acorta: 爸！妈！ Hablando de ellos, 爸爸 y 妈妈.
 - ✅🃏 妈 mā [ma˥] · mamá (al llamarla) · _sustantivo_
 - ✅🃏 家人 jiārén [tɕja˥ ʐən˧˥] · familia (las personas) · _sustantivo_ · 家 «casa, familia» + 人 «persona»: los de casa. 你的家人都好吗？ es una pregunta muy de cortesía.
+- ✅🃏 妹妹 mèimei [meɪ˥˩ meɪ] · hermana pequeña · _sustantivo_
 
 ## 好, 女儿 y 儿子
 
@@ -73,3 +74,4 @@ Se llama a la gente por lo que es para ti, no por su nombre.
 - ✅🃏 我爷爷九十三岁了。 · wǒ yéye jiǔ shí sān suì le · Mi abuelo tiene ya noventa y tres años.
 - ✅🃏 你的家人都好吗？ · nǐ de jiārén dōu hǎo ma · ¿Está bien toda tu familia?
 - ✅🃏 我爱我的家人。 · wǒ ài wǒ de jiārén · Quiero a mi familia.
+- ✅🃏 我有一个妹妹。 · wǒ yǒu yí ge mèimei · Tengo una hermana pequeña.

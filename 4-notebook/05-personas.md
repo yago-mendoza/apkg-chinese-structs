@@ -23,7 +23,7 @@
 - ✅🃏 们 men · plural de personas (我们, 你们, 他们) · Muchas personas 亻 pasando por una puerta 门. · 门 mén le da el sonido; en 们 la sílaba pierde el tono: wǒmen, nǐmen, tāmen.
 - ✅🃏 谁 shéi · quién · _interrogativo_ · 谁 ocupa el sitio de la persona que no conoces, sin cambiar el orden: de 他是老师 sale 他是谁？. También se oye shuí. · Hablas 讠 ante la estantería de cabezas 隹: «¿quién está aquí?».
 - ✅🃏 医生 yīshēng [i˥ ʂɤŋ˥] · médico, médica · _sustantivo_ · En 医, la flecha 矢 dentro de una caja es una bala extraída, en una bandeja; 生 es la vida: el que te la salva.
-- ✅🃏 服务员 fúwùyuán [fu˧˥ u˥˩ ɥœn˧˥] · camarero, camarera · _sustantivo_ · Para llamarle se dice 服务员！ 小姐 «señorita» ya no se usa para eso: puede sonar mal.
+- ✅🃏 服务员 fúwùyuán [fu˧˥ u˥˩ ɥœn˧˥] · camarero, camarera · _sustantivo_ · Para llamarle se dice 服务员！ 小姐 «señorita» ya no se usa para eso: puede sonar mal. · En clase, para llamar al que te atiende: 美女 (a una camarera joven) o 帅哥 (a un camarero joven).
 - ✅🃏 小姐 xiǎojiě [ɕjɑʊ˧˩˧ tɕjɛ˧˩˧] · señorita (tras el apellido) · _sustantivo_
 - ✅🃏 小朋友 xiǎopéngyǒu [ɕjɑʊ˧˩˧ pʰɤŋ˧˥ joʊ˧˩˧] · niño, niña (al hablarle) · _sustantivo_ · Así se llama a un niño que no conoces: 小朋友，你几岁？.
 - ✅🃏 跟 gēn [kən˥] · con (alguien) · _preposición_ · 跟 + persona + verbo: 你想跟我一起吃饭吗？ «¿quieres comer conmigo?». Suele ir con 一起. · 跟我来 «sígueme»: 跟 también es «seguir». 跟 dice con quién y 一起, que juntos; se juntan a menudo: 我跟你(一起)去 «voy contigo».
@@ -51,6 +51,7 @@
 - ✅🃏 室友 shìyǒu [ʂɨ˥˩ joʊ˧˩˧] · compañero de piso · _sustantivo_ · 室 «cuarto» + 友 «amigo», el mismo de 朋友: el amigo con quien compartes casa.
 - ✅🃏 病人 bìngrén [piŋ˥˩ ʐən˧˥] · enfermo, paciente · _sustantivo_
 - ✅🃏 身上 shēnshang [ʂən˥ ʂɑŋ] · encima (de uno), en el cuerpo · _sustantivo_
+- ✅🃏 老人 lǎorén [lɑʊ˧˩˧ ʐən˧˥] · persona mayor, anciano · _sustantivo_ · 老 «viejo» + 人 «persona». Para hablar de alguien mayor con respeto, 老人家 lǎorénjia.
 
 ## 他, 她 y 它: los tres son tā
 
@@ -88,12 +89,13 @@ En las puertas de los baños y en los formularios.
 - 男 nán · arriba un campo, abajo la fuerza
 - 女 nǚ · una figura con las piernas cruzadas
 
-## 男 nán y 难 nán
+## 男, 难 y 南: nán
 
 Suenan igual; se separan por la forma y por el sentido.
 
 - 男 nán · un campo 田 sobre la fuerza 力
 - 难 nán · a la derecha, un pájaro 隹
+- 南 nán · arriba, 十; dentro, un 羊 sin cuernos
 
 ## 叫 jiào y 脚 jiǎo
 
@@ -146,3 +148,4 @@ Empiezan casi igual y se confunden al oído y al decirlos.
 - ✅🃏 那个男人是谁？ · nà ge nánrén shì shéi · ¿Quién es ese hombre?
 - ✅🃏 那个女人是我的老师。 · nà ge nǚrén shì wǒ de lǎoshī · Esa mujer es mi profesora.
 - ✅🃏 她们是我的朋友。 · tāmen shì wǒ de péngyou · Son mis amigas.
+- ✅🃏 那个老人是我爷爷。 · nà ge lǎorén shì wǒ yéye · Ese señor mayor es mi abuelo.

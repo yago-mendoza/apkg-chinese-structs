@@ -365,6 +365,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Palabra a palabra: 没 «no hay» + 问题 «problema». Para aceptar algo que te piden; para quitar importancia a algo que ha pasado, 没关系.'}
       - {kind: linguistic, private: false, date: '2026-10-11', text: 'No es la respuesta a 谢谢 (eso es 不客气): se dice cuando te piden algo y aceptas. como a «¿me ayudas?».'}
+      - {date: '2026-11-11', kind: usage, private: false, text: 'También para aceptar una propuesta: —我选地方，你选时间，怎么样？ —没问题！ «yo elijo el sitio y tú la hora, ¿vale? —¡Sin problema!».', original: 'SIGNIFICA SIN PROBLEMA osea cuandoalguien te propone algo tipo 我选地方，你选时间 zenmeyang?" Tu puedes contestar mei wenti.'}
   - id: w.mingbai
     use: say
     role: content
@@ -578,3 +579,25 @@ entries:
     comments:
       - {date: '2026-11-06', kind: usage, private: false, text: 'Para reaccionar a lo que te cuentan sin dudar de ello: 是吗？ «¿ah, sí?». 真的吗？ es más sorpresa: «¿de verdad?».'}
       - {date: '2026-11-06', kind: linguistic, private: false, text: 'Palabra a palabra: 是 «ser, así es» + 吗, la pregunta: «¿es así?».'}
+  - id: w.kaiwanxiao
+    use: say
+    role: content
+    kind: word
+    hanzi: 开玩笑
+    pinyin: kāi wánxiào
+    meaning: {es: 'bromear, gastar una broma', en: to joke}
+    connection: {kind: sound, with: [元], text: '元 yuán da el sonido a 玩 wán, como a 完 wán «acabar»; 王 «jade»: jugar con un jade.'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+    comments:
+      - {date: '2026-11-11', kind: usage, private: false, text: '开玩笑的！ «¡es broma!», tras decir algo en serio que no lo era. 你开玩笑吧？ «¿estás de broma?».'}
+  - id: w.fangxin
+    use: hear
+    role: content
+    kind: word
+    hanzi: 放心
+    pinyin: fàngxīn
+    meaning: {es: 'estar tranquilo, no preocuparse', en: to be at ease}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+    comments:
+      - {date: '2026-11-11', kind: usage, private: false, text: '放心吧 «tranquilo, no te preocupes»: 不辣，放心吧 «no pica, tranquilo».'}
+      - {date: '2026-11-11', kind: linguistic, private: false, text: '放 «soltar, dejar» + 心 «corazón»: dejar el corazón en paz.'}

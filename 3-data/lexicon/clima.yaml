@@ -155,3 +155,18 @@ entries:
     source: {origin: gaps, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-23'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-23', text: 'Con 大: 今天风很大 «hoy hace mucho viento». Es el fēng de tus deberes del 13: termina en -ng.'}
+  - id: w.xing.star
+    use: say
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 星
+    pinyin: xīng
+    meaning: {es: 'estrella (también en una valoración: 五星)', en: star}
+    level: 2
+    level_reason: sale en 星星 (HSK 2) y en 星期
+    relations: [w.xingxing]
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: usage, private: false, text: 'Para valorar algo: 五星 «cinco estrellas». 请给我五星！ «¡ponme cinco estrellas!».'}
+      - {date: '2026-11-11', kind: linguistic, private: false, text: El mismo 星 de 星期 «semana» y 星星 «estrellas».}

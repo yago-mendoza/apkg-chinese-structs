@@ -2699,3 +2699,65 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 差, pinyin: chà, meaning: faltar (para la hora); ser malo}
     comments: []
+  - id: x.nuance.yizhimao-xiaomao
+    added: '2026-11-11'
+    lang: es
+    type: nuance
+    targets: [w.zhi.cl, w.xiao.small]
+    skills: [comprehension, discrimination]
+    prompt: {text: '一只猫 y 小猫: ¿qué hace 只 y qué hace 小?'}
+    answer: {meaning: '只 zhī cuenta animales: 一只猫 «un gato». 小 xiǎo dice el tamaño o la edad: 小猫 «gatito». Juntos: 一只小猫 «un gatito».'}
+    comments: []
+  - id: x.listen.wo-du-le-liang-bian
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.wo-du-le-liang-bian
+    targets: [s.wo-du-le-liang-bian]
+    context: [w.wo, w.du, w.le, w.liang, w.bian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Lo leí entero dos veces.}
+    comments: []
+  - id: x.produce.zai-ting-yi-bian
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.zai-ting-yi-bian
+    targets: [s.zai-ting-yi-bian]
+    context: [w.zai.again, w.ting, w.num.yi, w.bian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Escúchalo entero otra vez.»'}
+    answer: {meaning: Escúchalo entero otra vez.}
+    comments: []
+  - id: x.listen.wo-qu-guo-beijing-liang-ci
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.wo-qu-guo-beijing-liang-ci
+    targets: [s.wo-qu-guo-beijing-liang-ci]
+    context: [w.wo, w.qu, w.guo.exp, w.beijing, w.liang, w.ci]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: He estado en Pekín dos veces.}
+    comments: []
+  - id: x.contrast.bei.cl
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.bei-bei
+    targets: [w.bei.cl]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 杯, pinyin: bēi, meaning: 'vaso de, taza de (clasificador)'}
+    comments: []
+  - id: x.contrast.bian
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.bian-bian
+    targets: [w.bian]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 遍, pinyin: biàn, meaning: vez (de principio a fin)}
+    comments: []

@@ -242,6 +242,7 @@ entries:
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-06', text: 'Para llamarle se dice 服务员！ 小姐 «señorita» ya no se usa para eso: puede sonar mal.'}
+      - {date: '2026-11-11', kind: teacher, private: false, text: 'En clase, para llamar al que te atiende: 美女 (a una camarera joven) o 帅哥 (a un camarero joven).'}
   - id: w.xiaojie
     use: hear
     role: content
@@ -351,11 +352,12 @@ entries:
   - id: g.nan-nan
     kind: group
     basis: soundalike
-    title: 男 nán y 难 nán
+    title: '男, 难 y 南: nán'
     explanation: Suenan igual; se separan por la forma y por el sentido.
     members:
       - {ref: w.nan.male, cue: un campo 田 sobre la fuerza 力}
       - {ref: w.nan, cue: 'a la derecha, un pájaro 隹'}
+      - {ref: w.nan.south, cue: 'arriba, 十; dentro, un 羊 sin cuernos'}
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments: []
   - id: w.nianqingren
@@ -576,3 +578,13 @@ entries:
     accept_pinyin_mismatch: la segunda sílaba es átona en el habla
     source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
     comments: []
+  - id: w.laoren
+    use: say
+    role: content
+    kind: word
+    hanzi: 老人
+    pinyin: lǎorén
+    meaning: {es: 'persona mayor, anciano', en: elderly person}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: '老 «viejo» + 人 «persona». Para hablar de alguien mayor con respeto, 老人家 lǎorénjia.'}

@@ -28,7 +28,8 @@ entries:
     pinyin: 'māo'
     meaning: {es: 'gato', en: 'cat'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
-    comments: []
+    comments:
+      - {date: '2026-11-11', kind: tip, private: false, text: '一只猫 «un gato» lleva 只, que cuenta animales; 小猫 «gatito», 小 «pequeño». Juntos: 一只小猫.', original: 'Zhī sirve para contar gatos, mientras que xiǎo describe su tamaño o edad.'}
   - id: w.zhu
     use: say
     role: content

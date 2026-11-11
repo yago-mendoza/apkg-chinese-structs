@@ -601,3 +601,26 @@ sentences:
       - {text: ？}
     translation: {en: 'What do you like to eat?', es: '¿Qué te gusta comer?'}
     source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
+  - id: s.wo-xihuan-chi-huoguo
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: chī, ref: w.chi, text: 吃}
+      - {pinyin: huǒguō, ref: w.huoguo, text: 火锅}
+      - {text: 。}
+    translation: {en: I like hot pot., es: Me gusta el hot pot.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.wo-xihuan-chi-shanghai-xiaochi
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: xǐhuan, ref: w.xihuan, text: 喜欢}
+      - {pinyin: chī, ref: w.chi, text: 吃}
+      - {pinyin: Shànghǎi, ref: w.shanghai, text: 上海}
+      - {pinyin: xiǎochī, ref: w.xiaochi, text: 小吃}
+      - {text: 。}
+    translation: {en: I like Shanghai street food., es: Me gusta la comida callejera de Shanghái.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}

@@ -397,7 +397,7 @@ entries:
     source: {origin: inbox, batch: 005-2026-10-05-saludos-y-sonidos, file: 2026-10-05_pegado-en-el-chat.md, date: '2026-10-05'}
     comments: []
   - id: w.kuaile
-    use: hear
+    use: say
     role: content
     kind: word
     hanzi: 快乐
@@ -406,6 +406,7 @@ entries:
     source: {origin: class, batch: 008-2026-10-08-pedir-ayuda-lugares-y-finales, file: deberes 2026-10-08, date: '2026-10-08'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Se oye sobre todo en las felicitaciones: 生日快乐, 新年快乐.'}
+      - {date: '2026-11-11', kind: tip, private: false, text: '快乐 es ser feliz, en general o en una etapa (跟你在一起很快乐); 高兴, contento por algo concreto (我太高兴了！); 开心, lo de diario para «estoy contento».'}
   - id: e.shengrikuaile
     use: say
     role: content
@@ -552,3 +553,14 @@ entries:
     comments:
       - {date: '2026-11-06', kind: teacher, private: false, text: Así se despidió la profesora el viernes 6.}
       - {date: '2026-11-06', kind: linguistic, private: false, text: 'Palabra a palabra: 周末 «fin de semana» + 愉快 yúkuài [HSK 6] «alegre, agradable». Igual se dice 生日快乐 para el cumpleaños.'}
+  - id: w.kaixin
+    use: say
+    role: content
+    kind: word
+    hanzi: 开心
+    pinyin: kāixīn
+    meaning: {es: 'contento, alegre', en: 'happy, glad'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: usage, private: false, text: 'Lo más de diario para «estoy contento»: 我很开心. Casi como 高兴; 快乐 es más «feliz» en general y el de las felicitaciones.'}
+      - {date: '2026-11-11', kind: linguistic, private: false, text: '开 «abrir» + 心 «corazón»: el corazón abierto.'}

@@ -1161,3 +1161,12 @@ sentences:
       - {text: 。}
     translation: {en: There are many patients in the hospital., es: En el hospital hay muchos enfermos.}
     source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
+  - id: s.kuai-lai
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: kuài, ref: w.kuai.fast, text: 快}
+      - {pinyin: lái, ref: w.lai, text: 来}
+      - {text: ！}
+    translation: {en: Come quickly!, es: ¡Ven rápido!}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}

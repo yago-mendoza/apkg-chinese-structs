@@ -315,3 +315,63 @@ entries:
     source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
     comments:
       - {date: '2026-11-06', kind: linguistic, private: false, text: '外 «de fuera» + 语 «lengua»: como 外国 «país de fuera», el extranjero.'}
+  - id: w.gongren
+    use: hear
+    role: content
+    kind: word
+    hanzi: 工人
+    pinyin: gōngrén
+    meaning: {es: 'obrero, trabajador', en: worker}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: '工 «trabajo» + 人 «persona»: el mismo 工 de 工作 y 工程师.'}
+  - id: w.kao
+    use: say
+    role: content
+    kind: word
+    hanzi: 考
+    pinyin: kǎo
+    meaning: {es: 'examinarse, hacer un examen', en: to take an exam}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: El 考 de 考试 «examen». 我明天考中文 «mañana tengo examen de chino».}
+  - id: w.ye.page
+    use: hear
+    role: content
+    kind: word
+    pos: clasificador
+    hanzi: 页
+    pinyin: yè
+    meaning: {es: página, en: page}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: usage, private: false, text: '请看第十页 «mirad la página diez», lo que dice la profesora.'}
+  - id: w.wangshang
+    use: say
+    role: content
+    kind: word
+    hanzi: 网上
+    pinyin: wǎngshàng
+    meaning: {es: en internet, en: online}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: '网 «red» + 上 «en»: en la red. 我在网上买 «lo compro por internet».'}
+  - id: w.xueyuan
+    use: hear
+    role: content
+    kind: word
+    hanzi: 学院
+    pinyin: xuéyuàn
+    meaning: {es: 'facultad, escuela superior', en: college}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments: []
+  - id: g.ye-ye
+    kind: group
+    basis: soundalike
+    title: 也 yě y 页 yè
+    explanation: 'Solo los separa el tono: se distinguen de oído por cómo sube o baja la voz.'
+    members:
+      - {ref: w.ye, cue: 'baja y sube: 我也是'}
+      - {ref: w.ye.page, cue: 'cae: 第十页'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments: []

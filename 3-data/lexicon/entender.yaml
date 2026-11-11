@@ -247,3 +247,14 @@ entries:
     source: {origin: review, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: review-015-2026-10-31-volver-a-casa-y-para-entender.md, date: '2026-11-06'}
     comments:
       - {date: '2026-11-06', kind: linguistic, private: false, text: 'El mismo 觉 de 觉得: 我觉得 «creo, me parece»; 感觉 «siento, me siento». 感觉很好 «me siento bien».'}
+  - id: w.jizhu
+    use: say
+    role: content
+    kind: word
+    hanzi: 记住
+    pinyin: jìzhu
+    meaning: {es: 'aprenderse, acordarse (para siempre)', en: 'to memorize, to remember'}
+    accept_pinyin_mismatch: 住 es átono en el habla
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: '记 «apuntar, recordar» + 住 «quedarse fijo»: que se quede. 我记住了 «ya me lo sé».'}

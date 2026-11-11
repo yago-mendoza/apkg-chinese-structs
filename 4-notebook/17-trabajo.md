@@ -1,0 +1,95 @@
+<!-- Generado por `anki.py notebook` desde 3-data/. No editar: se rehace en cada lote. -->
+
+# Trabajo y estudio
+
+## Vocabulario
+
+- ✅🃏 词典 cídiǎn [tsʰɯ˧˥ tjɛn˧˩˧] · diccionario · _sustantivo_
+- ✅🃏 工作 gōngzuò [kʊŋ˥ tswɔ˥˩] · trabajo; trabajar · _verbo_ · 工 gōng es el de 工程师. 恭 gōng «respetuoso» suena igual y es otro carácter.
+- ✅🃏 软件 ruǎnjiàn [ʐwan˧˩˧ tɕjɛn˥˩] · software · _sustantivo_ · Calco: 软 «blando» + 件 «pieza», frente a 硬件 yìngjiàn «hardware», las piezas duras.
+- ✅🃏 机会 jīhuì [tɕi˥ xweɪ˥˩] · oportunidad · _sustantivo_ · El mismo 机 de 手机 y 飞机.
+- ✅🃏 公司 gōngsī [kʊŋ˥ sɯ˥] · empresa · _sustantivo_ · Al hablar, 公司 es también «la oficina»: 我明天去公司 «mañana voy a la oficina».
+- ✅🃏 开会 kāihuì [kʰaɪ˥ xweɪ˥˩] · tener una reunión · _verbo_
+- ✅🃏 讨论 tǎolùn [tʰɑʊ˧˩˧ lwən˥˩] · hablar de, discutir (un tema) · _verbo_
+- ✅🃏 考试 kǎoshì [kʰɑʊ˧˩˧ ʂɨ˥˩] · examen; examinarse · _verbo_ · 考 kǎo da el sonido a 烤 kǎo, el de 烤鸭. 号 hào lleva la misma pieza abajo, pero hoy ya no suena igual.
+- ✅🃏 同事 tóngshì [tʰʊŋ˧˥ ʂɨ˥˩] · compañero de trabajo · _sustantivo_ · 同 «mismo»: 同学 es quien estudia contigo y 同事, quien trabaja contigo. · 同 es compartir algo: 同学 la clase, 同事 el trabajo, 同意 la idea, y 不同 bùtóng [HSK 2] es «distinto». 事 es un asunto que atender; 工, el trabajo técnico de 工作 y 工程师.
+- ✅🃏 准备 zhǔnbèi [ʈʂwən˧˩˧ peɪ˥˩] · preparar(se) · _verbo_ · Palabra a palabra: 准 «exacto» + 备 «tener listo». 你准备好了吗？ «¿estás listo?». · Las cabezas de la estantería 隹 se quedan sin hielo 冫 y se descongelan; voy con mis piernas 夂 al campo 田 y lo preparo para plantarlas. · 准备 + verbo es «tener pensado, ir a»: 我们准备吃牛肉 «vamos a comer ternera», no «prepararla».
+- ✅🃏 电脑 diànnǎo [tjɛn˥˩ nɑʊ˧˩˧] · ordenador · _sustantivo_ · Palabra a palabra: 电 «electricidad» + 脑 «cerebro»: el cerebro eléctrico. · 电: un sol con un cable del que sale electricidad. En 脑, 月 aquí es carne (una parte del cuerpo), y a la derecha, bajo una tapa 亠, unas conexiones cruzadas 乂 dentro del cráneo 凵.
+- ✅🃏 上班 shàngbān [ʂɑŋ˥˩ pan˥] · ir a trabajar, estar trabajando · _verbo_ · Palabra a palabra: 上 «subir, empezar» + 班 «turno». 我明天上班 «mañana trabajo». Al salir, 下班.
+- ✅🃏 知识 zhīshi [ʈʂɨ˥ ʂɨ] · conocimiento, saber · _sustantivo_ · Palabra a palabra: 知 «saber» (el de 知道) + 识 «conocer» (el de 认识). · 识, el de 认识 y 知识, es «reconocer»: el habla 讠 junto a algo que parece un caballete de pintor.
+- ✅🃏 事 shì [ʂɨ˥˩] · asunto, cosa (que hacer) · _sustantivo_ · 我今天有事 «hoy tengo cosas que hacer». 没事 méi shì «no pasa nada, estoy bien».
+- ✅🃏 下班 xiàbān [ɕja˥˩ pan˥] · salir de trabajar · _verbo_ · Lo contrario de 上班 «ir a trabajar»: 上 «subir» al turno y 下 «bajar» de él.
+- ✅🃏 请假 qǐngjià [tɕʰiŋ˧˩˧ tɕja˥˩] · pedir el día libre, pedir permiso · _verbo_ · Palabra a palabra: 请 «pedir» + 假 «permiso, vacaciones». 我明天请假 «mañana me cojo el día».
+- ✅🃏 经理 jīnglǐ [tɕiŋ˥ li˧˩˧] · jefe, gerente · _sustantivo_ · En 理 lǐ, 里 lǐ da el sonido: suenan igual.
+- ✅🃏 大学 dàxué [ta˥˩ ɕɥœ˧˥] · universidad · _sustantivo_
+- ✅🃏 教 jiāo [tɕjɑʊ˥] · enseñar · _verbo_ · A quién y qué, sin nada entre medias: 老师教我们中文 «la profesora nos enseña chino».
+- ✅🃏 班 bān [pan˥] · clase, grupo (de alumnos) · _sustantivo_ · 我们班 «mi clase». El mismo 班 de 上班 «ir a trabajar»: el turno.
+- ✅🃏 学 xué [ɕɥœ˧˥] · aprender, estudiar · _verbo_ · Para aprender a hacer algo, 学 a secas: 我想学游泳 «quiero aprender a nadar».
+- ✅🃏 作业 zuòyè [tswɔ˥˩ jɛ˥˩] · deberes · _sustantivo_ · Palabra a palabra: 作 «hacer, obra» + 业 «tarea». Se hacen con 做: 做作业. 作 y 做 suenan igual; 作 va dentro de palabras (工作, 作业), 做 es el verbo suelto.
+- ✅🃏 处理 chǔlǐ [ʈʂʰu˧˩˧ li˧˩˧] · encargarse de, resolver · _verbo_ · 我会处理的 «descuida, me encargo yo»: tranquiliza a quien te lo pide, en el trabajo sobre todo.
+- ✅🃏 得到 dédào [tɤ˧˥ tɑʊ˥˩] · conseguir, obtener · _verbo_
+- ✅🃏 记 jì [tɕi˥˩] · apuntar, anotar; recordar · _verbo_ · El 记 de 记得 «acordarse», 忘记 «olvidar» y 笔记 «apuntes»: 我记一下 «lo apunto».
+- ✅🃏 课 kè [kʰɤ˥˩] · clase, lección · _sustantivo_ · 上课 «empezar la clase, ir a clase» y 下课 «acabar la clase»: arriba y abajo, como 上班 y 下班.
+- ✅🃏 上课 shàngkè [ʂɑŋ˥˩ kʰɤ˥˩] · dar clase, ir a clase; empezar la clase · _verbo_
+- ✅🃏 下课 xiàkè [ɕja˥˩ kʰɤ˥˩] · acabar la clase · _verbo_
+- ✅🃏 老板 lǎobǎn [lɑʊ˧˩˧ pan˧˩˧] · jefe; dueño (de una tienda o un restaurante) · _sustantivo_ · En una tienda o un restaurante pequeño, al dueño se le llama 老板: 老板，多少钱？. · En los deberes del 6, 老板好 para leer en voz alta.
+- ✅🃏 外语 wàiyǔ [waɪ˥˩ y˧˩˧] · lengua extranjera · _sustantivo_ · 外 «de fuera» + 语 «lengua»: como 外国 «país de fuera», el extranjero.
+- ✅🃏 工人 gōngrén [kʊŋ˥ ʐən˧˥] · obrero, trabajador · _sustantivo_ · 工 «trabajo» + 人 «persona»: el mismo 工 de 工作 y 工程师.
+- ✅🃏 考 kǎo [kʰɑʊ˧˩˧] · examinarse, hacer un examen · _verbo_ · El 考 de 考试 «examen». 我明天考中文 «mañana tengo examen de chino».
+- ✅🃏 页 yè [jɛ˥˩] · página · _clasificador_ · 请看第十页 «mirad la página diez», lo que dice la profesora.
+- ✅🃏 网上 wǎngshàng [wɑŋ˧˩˧ ʂɑŋ˥˩] · en internet · _sustantivo_ · 网 «red» + 上 «en»: en la red. 我在网上买 «lo compro por internet».
+- ✅🃏 学院 xuéyuàn [ɕɥœ˧˥ ɥœn˥˩] · facultad, escuela superior · _sustantivo_
+
+## 学 y 雪
+
+Solo los separa el tono.
+
+- 学 xué · 2.º tono, sube: 我想学
+- 雪 xuě · 3.er tono, se hunde: 下雪
+
+## 也 yě y 页 yè
+
+Solo los separa el tono: se distinguen de oído por cómo sube o baja la voz.
+
+- 也 yě · baja y sube: 我也是
+- 页 yè · cae: 第十页
+
+## Frases
+
+- ✅🃏 你准备好了吗？ · nǐ zhǔnbèi hǎo le ma · ¿Estás listo?
+- ✅🃏 我的电脑很慢。 · wǒ de diànnǎo hěn màn · Mi ordenador va muy lento.
+- ✅🃏 我明天上班。 · wǒ míngtiān shàngbān · Mañana trabajo.
+- ✅🃏 我明天要上班。 · wǒ míngtiān yào shàngbān · Mañana tengo que ir a trabajar.
+- ✅🃏 他是我的同事。 · tā shì wǒ de tóngshì · Es mi compañero de trabajo.
+- ✅🃏 我现在有事。 · wǒ xiànzài yǒu shì · Ahora tengo algo que hacer.
+- ✅🃏 我想学习更多知识。 · wǒ xiǎng xuéxí gèng duō zhīshi · Quiero aprender más cosas.
+- ✅🃏 他有很多知识。 · tā yǒu hěn duō zhīshi · Sabe muchísimo.
+- ✅🃏 我要准备一下。 · wǒ yào zhǔnbèi yíxià · Tengo que prepararme un momento.
+- ✅🃏 我明天请假。 · wǒ míngtiān qǐngjià · Mañana me cojo el día libre.
+- ✅🃏 我六点下班。 · wǒ liù diǎn xiàbān · Salgo de trabajar a las seis.
+- ✅🃏 他是我们的经理。 · tā shì wǒmen de jīnglǐ · Es nuestro jefe.
+- ✅🃏 我明天去公司。 · wǒ míngtiān qù gōngsī · Mañana voy a la oficina.
+- ✅🃏 我在大学学习中文。 · wǒ zài dàxué xuéxí Zhōngwén · Estudio chino en la universidad.
+- ✅🃏 老师教我们中文。 · lǎoshī jiāo wǒmen Zhōngwén · La profesora nos enseña chino.
+- ✅🃏 我们班有十个人。 · wǒmen bān yǒu shí ge rén · En mi clase somos diez.
+- ✅🃏 我在做作业。 · wǒ zài zuò zuòyè · Estoy haciendo los deberes.
+- ✅🃏 我早上八点去工作。 · wǒ zǎoshang bā diǎn qù gōngzuò · Voy a trabajar a las ocho de la mañana.
+- ✅🃏 我想学更多中文，所以每天多学一点。 · wǒ xiǎng xué gèng duō Zhōngwén suǒyǐ měi tiān duō xué yìdiǎn · Quiero aprender más chino, así que cada día estudio un poco más.
+- ✅🃏 我想多学一点中文。 · wǒ xiǎng duō xué yìdiǎn Zhōngwén · Quiero aprender un poco más de chino.
+- ✅🃏 我会处理的。 · wǒ huì chǔlǐ de · Descuida, me encargo yo.
+- ✅🃏 明天我不去公司，我在家工作。 · míngtiān wǒ bú qù gōngsī wǒ zài jiā gōngzuò · Mañana no voy a la oficina: trabajo desde casa.
+- ✅🃏 老板好！ · lǎobǎn hǎo · ¡Hola, jefe! (al dueño de la tienda)
+- ✅🃏 你是做什么工作的？ · nǐ shì zuò shénme gōngzuò de · ¿A qué te dedicas?
+- ✅🃏 对，我还在学习中文。 · duì wǒ hái zài xuéxí Zhōngwén · Sí, sigo estudiando chino.
+- ✅🃏 对，但是我还不太会说中文。 · duì dànshì wǒ hái bú tài huì shuō Zhōngwén · Sí, pero todavía no hablo muy bien chino.
+- ✅🃏 你会说外语吗？ · nǐ huì shuō wàiyǔ ma · ¿Hablas algún idioma extranjero?
+- ✅🃏 他得到了一个好工作。 · tā dédào le yí ge hǎo gōngzuò · Ha conseguido un buen trabajo.
+- ✅🃏 我记一下。 · wǒ jì yíxià · Lo apunto.
+- ✅🃏 今天我有中文课。 · jīntiān wǒ yǒu Zhōngwén kè · Hoy tengo clase de chino.
+- ✅🃏 我们几点上课？ · wǒmen jǐ diǎn shàngkè · ¿A qué hora empieza la clase?
+- ✅🃏 我们下课了。 · wǒmen xiàkè le · Se ha acabado la clase.
+- ✅🃏 他是工人。 · tā shì gōngrén · Es obrero.
+- ✅🃏 我明天考中文。 · wǒ míngtiān kǎo Zhōngwén · Mañana tengo examen de chino.
+- ✅🃏 请看第十页。 · qǐng kàn dì shí yè · Mirad la página diez.
+- ✅🃏 我在网上买。 · wǒ zài wǎngshàng mǎi · Lo compro por internet.
+- ✅🃏 他在学院工作。 · tā zài xuéyuàn gōngzuò · Trabaja en la facultad.

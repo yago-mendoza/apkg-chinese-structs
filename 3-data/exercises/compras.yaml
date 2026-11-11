@@ -2361,3 +2361,162 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Todavía no he comprado el billete de avión.»'}
     answer: {meaning: Todavía no he comprado el billete de avión.}
     comments: []
+  - id: x.dictation.mao.money
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.mao.money]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mao2, hanzi: 毛, pinyin: máo, meaning: 'diez céntimos (de yuan), al hablar'}
+    comments: []
+  - id: x.read.mao.money
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.mao.money]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 毛}
+    answer: {hanzi: 毛, pinyin: máo, meaning: 'diez céntimos (de yuan), al hablar'}
+    comments: []
+  - id: x.produce.nage-zui-pianyi
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.nage-zui-pianyi
+    targets: [s.nage-zui-pianyi]
+    context: [w.nage, w.zui, w.pianyi]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuál es el más barato?»'}
+    answer: {meaning: '¿Cuál es el más barato?'}
+    comments: []
+  - id: x.produce.zhege-shi-zui-pianyi-de-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.zhege-shi-zui-pianyi-de-ma
+    targets: [s.zhege-shi-zui-pianyi-de-ma]
+    context: [w.zhe, w.ge, w.shi, w.zui, w.pianyi, w.de, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Este es el más barato?»'}
+    answer: {meaning: '¿Este es el más barato?'}
+    comments: []
+  - id: x.produce.weishenme-zheme-gui
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.weishenme-zheme-gui
+    targets: [s.weishenme-zheme-gui]
+    context: [w.weishenme, w.zheme, w.gui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Por qué es tan caro?»'}
+    answer: {meaning: '¿Por qué es tan caro?'}
+    comments: []
+  - id: x.produce.shi-kuai-keyi-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.shi-kuai-keyi-ma
+    targets: [s.shi-kuai-keyi-ma]
+    context: [w.num.shi, w.kuai, w.keyi, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Diez yuanes te va bien?»'}
+    answer: {meaning: '¿Diez yuanes te va bien?'}
+    comments: []
+  - id: x.produce.wo-xiangyao-pianyi-yidian-de
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.wo-xiangyao-pianyi-yidian-de
+    targets: [s.wo-xiangyao-pianyi-yidian-de]
+    context: [w.wo, w.xiangyao, w.pianyi, w.yidian, w.de]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero uno un poco más barato.»'}
+    answer: {meaning: Quiero uno un poco más barato.}
+    comments: []
+  - id: x.produce.you-da-yidian-de-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.you-da-yidian-de-ma
+    targets: [s.you-da-yidian-de-ma]
+    context: [w.you.have, w.da, w.yidian, w.de, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Tiene uno un poco más grande?»'}
+    answer: {meaning: '¿Tiene uno un poco más grande?'}
+    comments: []
+  - id: x.produce.you-xiao-yidian-de-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.you-xiao-yidian-de-ma
+    targets: [s.you-xiao-yidian-de-ma]
+    context: [w.you.have, w.xiao.small, w.yidian, w.de, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Tiene uno un poco más pequeño?»'}
+    answer: {meaning: '¿Tiene uno un poco más pequeño?'}
+    comments: []
+  - id: x.listen.zhege-tai-da-le
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.zhege-tai-da-le
+    targets: [s.zhege-tai-da-le]
+    context: [w.zhe, w.ge, w.tai, w.da, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Este es demasiado grande.}
+    comments: []
+  - id: x.produce.zui-xiao-de-duoshao-qian
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.zui-xiao-de-duoshao-qian
+    targets: [s.zui-xiao-de-duoshao-qian]
+    context: [w.zui, w.xiao.small, w.de, w.duoshao, w.qian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Cuánto cuesta el más pequeño?»'}
+    answer: {meaning: '¿Cuánto cuesta el más pequeño?'}
+    comments: []
+  - id: x.produce.you-baise-de-ma
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.you-baise-de-ma
+    targets: [s.you-baise-de-ma]
+    context: [w.you.have, w.baise, w.de, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Lo tienen en blanco?»'}
+    answer: {meaning: '¿Lo tienen en blanco?'}
+    comments: []
+  - id: x.listen.san-kuai-wu-mao
+    added: 2026-11-11
+    lang: es
+    type: listen
+    sentence: s.san-kuai-wu-mao
+    targets: [s.san-kuai-wu-mao]
+    context: [w.num.san, w.kuai, w.num.wu, w.mao.money]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tres con cincuenta.}
+    comments: []
+  - id: x.contrast.bao
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.bao-bao
+    targets: [w.bao]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 包, pinyin: bāo, meaning: 'bolso, mochila, bolsa'}
+    comments: []
+  - id: x.contrast.mao.money
+    added: 2026-11-11
+    lang: es
+    type: contrast
+    group: g.mao-mao
+    targets: [w.mao.money]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 毛, pinyin: máo, meaning: 'diez céntimos (de yuan), al hablar'}
+    comments: []

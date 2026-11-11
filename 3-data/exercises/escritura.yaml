@@ -654,3 +654,23 @@ exercises:
     prompt: {text: '¿Cuál es el gōng de 恭喜 «enhorabuena»?'}
     answer: {hanzi: 恭, pinyin: gōng, meaning: 'respetuoso (en 恭喜)'}
     comments: []
+  - id: x.contrast.wai
+    added: '2026-11-11'
+    lang: es
+    type: contrast
+    targets: [c.wai]
+    group: g.wai-wei
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es el wài de 外面 y 外国?'}
+    answer: {hanzi: 外, pinyin: wài, meaning: 'fuera (en 外面, 外国, 外语)'}
+    comments: []
+  - id: x.contrast.guo.fruit
+    added: '2026-11-11'
+    lang: es
+    type: contrast
+    targets: [c.guo.fruit]
+    group: g.li-zao-guo
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es el guǒ de 水果 y 苹果?'}
+    answer: {hanzi: 果, pinyin: guǒ, meaning: 'fruto (en 水果, 苹果)'}
+    comments: []

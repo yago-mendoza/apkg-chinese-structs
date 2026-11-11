@@ -1,0 +1,103 @@
+# Frases · Orientarse. Esquema: 3-data/README.md
+
+sentences:
+  - id: s.wo-hui-zai-jia-fujin-he-kafei
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: huì, ref: w.hui.will, text: 会}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: jiā, ref: w.jia, text: 家}
+      - {pinyin: fùjìn, ref: w.fujin, text: 附近}
+      - {pinyin: hē, ref: w.he.drink, text: 喝}
+      - {pinyin: kāfēi, ref: w.kafei, text: 咖啡}
+      - {text: 。}
+    translation: {en: I'll have a coffee near home., es: Tomaré un café cerca de casa.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.shanghai-de-jie-hen-piaoliang
+    use: say
+    kind: example
+    segments:
+      - {pinyin: Shànghǎi, ref: w.shanghai, text: 上海}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: jiē, ref: w.jie, text: 街}
+      - {pinyin: hěn, ref: w.hen, text: 很}
+      - {pinyin: piàoliang, ref: w.piaoliang, text: 漂亮}
+      - {text: 。}
+    translation: {en: Shanghai's streets are beautiful., es: Las calles de Shanghái son muy bonitas.}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.beijing-zai-zhongguo-de-bei-bian
+    use: say
+    kind: example
+    segments:
+      - {pinyin: Běijīng, ref: w.beijing, text: 北京}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: Zhōngguó, ref: w.zhongguo, text: 中国}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: běi, ref: w.bei.north, text: 北}
+      - {pinyin: biān, ref: w.bian.side, text: 边}
+      - {text: 。}
+    translation: {en: Beijing is in the north of China., es: Pekín está en el norte de China.}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.shanghai-zai-beijing-de-nan-bian
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: Shànghǎi, ref: w.shanghai, text: 上海}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: Běijīng, ref: w.beijing, text: 北京}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: nán, ref: w.nan.south, text: 南}
+      - {pinyin: biān, ref: w.bian.side, text: 边}
+      - {text: 。}
+    translation: {en: Shanghai is south of Beijing., es: Shanghái está al sur de Pekín.}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.chaoshi-zai-dong-bian
+    use: say
+    kind: example
+    segments:
+      - {pinyin: chāoshì, ref: w.chaoshi, text: 超市}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: dōng, ref: w.dong.east, text: 东}
+      - {pinyin: biān, ref: w.bian.side, text: 边}
+      - {text: 。}
+    translation: {en: The supermarket is to the east., es: El súper está al este.}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.xibanya-zai-zhongguo-de-xi-bian
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: Xībānyá, ref: w.xibanya, text: 西班牙}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: Zhōngguó, ref: w.zhongguo, text: 中国}
+      - {pinyin: de, ref: w.de, text: 的}
+      - {pinyin: xī, ref: w.xi.west, text: 西}
+      - {pinyin: biān, ref: w.bian.side, text: 边}
+      - {text: 。}
+    translation: {en: Spain is to the west of China., es: España está al oeste de China.}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.wo-zuo-zai-zhongjian
+    use: say
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: zuò, ref: w.zuo.sit, text: 坐}
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: zhōngjiān, ref: w.zhongjian, text: 中间}
+      - {text: 。}
+    translation: {en: I'll sit in the middle., es: Me siento en medio.}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.shijian-he-didian
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: wǒ, ref: w.wo, text: 我}
+      - {pinyin: bù, ref: w.bu, text: 不}
+      - {pinyin: zhīdao, ref: w.zhidao, text: 知道}
+      - {pinyin: shíjiān, ref: w.shijian, text: 时间}
+      - {pinyin: hé, ref: w.he.and, text: 和}
+      - {pinyin: dìdiǎn, ref: w.didian, text: 地点}
+      - {text: 。}
+    translation: {en: I don't know the time or the place., es: No sé la hora ni el lugar.}
+    source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}

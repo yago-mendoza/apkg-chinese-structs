@@ -384,3 +384,172 @@ entries:
       - {cue: '4.º tono, baja fuerte: 睡一下', ref: w.shui.sleep}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
     comments: []
+  - id: w.jirou
+    use: say
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 鸡肉
+    pinyin: jīròu
+    meaning: {es: pollo (la carne), en: chicken (meat)}
+    level: 2
+    level_reason: no está en la lista; 鸡 y 肉 son de los primeros niveles
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: 'Las carnes se dicen animal + 肉 «carne»: 鸡肉 pollo, 猪肉 cerdo, 牛肉 ternera, 羊肉 cordero.'}
+  - id: w.zhurou
+    use: say
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 猪肉
+    pinyin: zhūròu
+    meaning: {es: cerdo (la carne), en: pork}
+    level: 2
+    level_reason: no está en la lista; 猪 y 肉 son de los primeros niveles
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+    comments: []
+  - id: w.mifan
+    use: say
+    role: content
+    kind: word
+    hanzi: 米饭
+    pinyin: mǐfàn
+    meaning: {es: arroz (cocido), en: cooked rice}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: '米 «grano de arroz» + 饭 «comida»: el arroz ya hecho, el que se pide. 饭 solo es «comida» en general (吃饭).'}
+  - id: w.miantiao
+    use: say
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 面条
+    pinyin: miàntiáo
+    meaning: {es: 'fideos, tallarines', en: noodles}
+    level: 2
+    level_reason: no está en la lista; 面 es HSK 2
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: '面 «harina» + 条 «tira»: tiras de masa. En la carta muchas veces solo 面: 牛肉面 «fideos con ternera».'}
+  - id: w.jiaozi
+    use: say
+    role: content
+    kind: word
+    hanzi: 饺子
+    pinyin: jiǎozi
+    meaning: {es: 'jiaozi, empanadillas chinas', en: dumplings}
+    connection: {kind: sound, with: [校], text: '交 jiāo da el sonido a 饺 jiǎo (y, de lejos, a 校 xiào); 饣 «comida», el significado.'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+    comments: []
+  - id: w.tang
+    use: say
+    role: content
+    kind: word
+    hanzi: 汤
+    pinyin: tāng
+    meaning: {es: sopa, en: soup}
+    connection: {kind: sound, with: [场], text: 'La pieza de la derecha da el sonido a 汤 tāng y a 场 chǎng (hoy, lejos); 氵 «agua»: la sopa.'}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+    comments:
+      - {date: '2026-11-11', kind: teacher, private: false, text: 'En clase, para descolocarte: 要不要汤？ «¿quieres sopa?».'}
+  - id: w.la
+    use: say
+    use_reason: en un restaurante chino es de lo primero que hay que poder decir, aunque sea HSK 4
+    role: content
+    kind: word
+    hanzi: 辣
+    pinyin: là
+    meaning: {es: picante, en: spicy}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+    comments:
+      - {date: '2026-11-11', kind: usage, private: false, text: '这个辣吗？ «¿esto pica?»; 不要辣 «sin picante»; 有点辣 «pica un poco».'}
+  - id: w.bao.full
+    use: say
+    role: content
+    kind: word
+    hanzi: 饱
+    pinyin: bǎo
+    meaning: {es: 'lleno, saciado', en: full (after eating)}
+    connection: {kind: sound, with: [包, 跑], text: '包 bāo da el sonido a 饱 bǎo (y a 跑 pǎo); 饣 «comida»: lleno de comer.'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+    comments:
+      - {date: '2026-11-11', kind: usage, private: false, text: '我吃饱了 «estoy lleno, ya no puedo más»: lo que se dice al acabar o al rechazar más comida.'}
+  - id: w.shousi
+    use: hear
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 寿司
+    pinyin: shòusī
+    meaning: {es: sushi, en: sushi}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+    comments: []
+  - id: w.chengzi
+    use: hear
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 橙子
+    pinyin: chéngzi
+    meaning: {es: naranja (la fruta), en: orange}
+    level: 3
+    level_reason: no está en la lista; fruta de todos los días
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: 'El color naranja es 橙色 chéngsè: el color de la fruta.'}
+  - id: w.caomei
+    use: hear
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 草莓
+    pinyin: cǎoméi
+    meaning: {es: fresa, en: strawberry}
+    connection: {kind: sound, with: [早, 每], text: '早 zǎo da el sonido a 草 cǎo y 每 měi a 莓 méi; arriba, 艹 «hierba» en los dos.'}
+    level: 4
+    level_reason: no está en la lista; fruta de todos los días
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: '草 «hierba» + 莓 «baya»: la baya que crece a ras de suelo.'}
+  - id: w.shucai
+    use: hear
+    role: content
+    kind: word
+    hanzi: 蔬菜
+    pinyin: shūcài
+    meaning: {es: verdura, en: vegetables}
+    source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
+    comments: []
+  - id: w.doufu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 豆腐
+    pinyin: dòufu
+    meaning: {es: tofu, en: tofu}
+    connection: {kind: sound, with: [付, 附], text: '府 fǔ da el sonido a 腐 fǔ, y dentro lleva 付 fù, como 附 fù; abajo, 肉 «carne»: lo blando.'}
+    accept_pinyin_mismatch: 腐 es átono en el habla
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', with_class: '2026-11-09'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: '豆 «judía, soja» + 腐 «fermentado, blando»: la pasta blanda de soja.'}
+  - id: w.xiaochi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 小吃
+    pinyin: xiǎochī
+    meaning: {es: 'tapas, comida callejera', en: 'snacks, street food'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: linguistic, private: false, text: '小 «pequeño» + 吃 «comer»: lo que se come en poco. 小吃街 es la calle de puestos de comida.'}
+  - id: g.bao-bao
+    kind: group
+    basis: soundalike
+    title: 包 bāo y 饱 bǎo
+    explanation: 'Solo los separa el tono: se distinguen de oído por cómo sube o baja la voz.'
+    members:
+      - {ref: w.bao, cue: 'alto y plano: 打包'}
+      - {ref: w.bao.full, cue: 'baja y sube: 我吃饱了'}
+    source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments: []
