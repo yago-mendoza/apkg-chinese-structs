@@ -1823,3 +1823,22 @@ class Lot016(unittest.TestCase):
             anki.cmd_lookup(["你好", "谢谢"])
         self.assertEqual(len(calls), 1)
         self.assertIn("===== 谢谢", out.getvalue())
+
+    def test_the_growth_goes_batch_by_batch(self):
+        # La gráfica de la web, por lotes (2026-11-11): un lote por etiqueta lote-NNN, con los ajustes desde el anterior.
+        _, _, exercises = anki.load()
+        tags = subprocess.run(["git", "tag", "--list", "lote-*"], cwd=anki.ROOT, capture_output=True, text=True).stdout.split()
+        if not tags:
+            self.skipTest("sin etiquetas lote-NNN (clon sin tags)")
+        out = anki.batch_history(exercises, lambda x: 1)
+        tagged = [b for b in out if b["batch"] and b["number"] is not None and f"lote-{b['number']:03d}" in tags]
+        self.assertEqual(len(tagged), len(tags))
+        self.assertEqual([b["number"] for b in tagged], sorted(b["number"] for b in tagged))
+        total = sum(sum(b["added"].values()) - b["removed"] for b in out)
+        self.assertEqual(total, len(exercises))
+        # Un lote ya etiquetado se reutiliza tal cual de la exportación anterior.
+        again = anki.batch_history(exercises, lambda x: 9, previous=out)
+        self.assertEqual(again[0]["added"], out[0]["added"])
+        # El lote que se está cerrando sale aunque no cambie nada, con su nombre.
+        closing = anki.batch_history(exercises, lambda x: 1, batch="999-2099-01-01-prueba", previous=out)
+        self.assertEqual(closing[-1]["batch"], "999-2099-01-01-prueba")

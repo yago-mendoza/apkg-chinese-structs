@@ -4384,6 +4384,65 @@ def deck_history(exercises, card_level, cache=None):
     return sorted(days.values(), key=lambda d: d["date"]), new_cache
 
 
+def batch_history(exercises, card_level, batch=None, previous=None):
+    """Cómo creció el mazo, lote a lote (YAGO, 2026-11-11: la gráfica de la web va por lotes; por días, un día de
+    ajustes sueltos parecía un lote vacío). Cada lote es la diferencia entre su etiqueta `lote-NNN` y la anterior,
+    así que se lleva también los ajustes hechos desde el lote anterior; su día es el de su etiqueta. Lo que va después
+    de la última etiqueta es el lote que se está cerrando (`batch`, desde `close-batch`) o, si no se cierra ninguno,
+    lo que está en curso (`batch: None`), y solo sale si algo cambió. Un lote ya etiquetado no cambia: se reutiliza
+    de la exportación anterior (`previous`) sin volver a leer git."""
+    import subprocess
+
+    def git(*args):
+        r = subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
+        return r.stdout if r.returncode == 0 else ""
+
+    def snapshot(ref):
+        found = {}
+        for path in git("ls-tree", "-r", "--name-only", ref).split(chr(10)):
+            if re.search(r"(^|/)exercises(\.yaml|/[^/]+\.yaml)$", path):
+                for x in (yaml.safe_load(git("show", f"{ref}:{path}")) or {}).get("exercises", []):
+                    found[x["id"]] = x
+        return found
+
+    def key(x):
+        return json.dumps({k: v for k, v in x.items() if k not in ("theme", "added")}, sort_keys=True, default=str)
+
+    def diff(prev, cur):
+        added = {}
+        for i in cur.keys() - prev.keys():
+            lvl = str(card_level(cur[i]) or "unlisted")
+            added[lvl] = added.get(lvl, 0) + 1
+        return {"added": added, "removed": len(prev.keys() - cur.keys()),
+                "edited": sum(1 for i in cur.keys() & prev.keys() if key(cur[i]) != key(prev[i]))}
+
+    names = {m.group(1): m.group(0)[len("summary-"):-3] for m in
+             (re.match(r"summary-(\d{3})-.*\.md$", p.name) for p in DIGESTS.glob("summary-*.md")) if m}
+    tags = sorted((int(t.split("-", 1)[1]), t) for t in git("tag", "--list", "lote-*").split()
+                  if t.split("-", 1)[1].isdigit())
+    known = {b["number"]: b for b in (previous or []) if b.get("number") is not None}
+    out, prev, prev_tag = [], {}, None
+    for num, tag in tags:
+        name = names.get(f"{num:03d}", tag)
+        if num in known and known[num].get("batch") == name:
+            out.append(known[num])
+            prev, prev_tag = None, tag
+            continue
+        if prev is None:
+            prev = snapshot(prev_tag) if prev_tag else {}
+        cur = snapshot(tag)
+        date = git("log", "-1", "--date=short", "--format=%ad", tag).strip()
+        out.append({"batch": name, "number": num, "date": date, **diff(prev, cur)})
+        prev, prev_tag = cur, tag
+    if prev is None:
+        prev = snapshot(prev_tag) if prev_tag else {}
+    now = diff(prev, {x["id"]: x for x in exercises})
+    if batch or now["added"] or now["removed"] or now["edited"]:
+        out.append({"batch": batch, "number": int(batch[:3]) if batch else None,
+                    "date": datetime.date.today().isoformat(), **now})
+    return out
+
+
 def entry_type(e):
     """Tipo de una entrada para quien la presenta: structure, pronunciation, expression, component, bound (carácter
     que no se usa solo), charword (un solo hanzi que es palabra) o word (palabra de varios caracteres)."""
@@ -4397,7 +4456,7 @@ def entry_type(e):
     return "charword" if len(e.get("hanzi") or "") == 1 else "word"
 
 
-def export_dictionary(entries, sentences, exercises, history_cache=None):
+def export_dictionary(entries, sentences, exercises, history_cache=None, batch=None, previous_batches=None):
     manifest = load_manifest()
 
     def audio(text):
@@ -4500,7 +4559,7 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
         "counts": {"entries": len(out_entries), "sentences": len(out_sentences), "cards": len(exercises)},
         "themes": [{"id": t["id"], "title": t["title"], "order": n} for n, t in enumerate(load_themes(), 1)],
         "entries": out_entries, "groups": out_groups, "sentences": out_sentences,
-        "cards": cards, "history": history, "historyCache": new_cache,
+        "cards": cards, "history": history, "historyBatches": batch_history(exercises, card_level, batch, previous_batches), "historyCache": new_cache,
         "coverage": [{"level": lv, "total": total, "trained": have, "inDeck": in_deck}
                      for (lv, have, total), in_deck in zip(level_coverage(entries), deck_coverage(entries))],
         "theory": load_theory(),
@@ -4514,7 +4573,7 @@ def export_dictionary(entries, sentences, exercises, history_cache=None):
     }
 
 
-def cmd_export():
+def cmd_export(batch=None):
     if cmd_build(allow_missing_audio=False):
         return 1
     entries, sentences, exercises = load()
@@ -4530,7 +4589,8 @@ def cmd_export():
         except ValueError:
             previous = {}
     cache = previous.get("historyCache") if previous.get("schemaVersion") == EXPORT_SCHEMA else None
-    data = export_dictionary(entries, sentences, exercises, cache)
+    batches = previous.get("historyBatches") if previous.get("schemaVersion") == EXPORT_SCHEMA else None
+    data = export_dictionary(entries, sentences, exercises, cache, batch, batches)
     EXPORT_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     c = data["counts"]
     print(f"Exportado {EXPORT_PATH.relative_to(ROOT).as_posix()}: {c['entries']} entradas, {c['sentences']} frases, "
@@ -4703,7 +4763,7 @@ def cmd_close_batch(batch, dry_run):
         else:
             shutil.move(str(src), str(dst))
     cmd_notebook()
-    cmd_export()
+    cmd_export(batch)
     write_history(batch)
     # Never `git add -A` (AGENTS.md): tracked changes anywhere, new files only inside the pipeline folders,
     # so a stray file at the root never rides along in the batch commit.

@@ -457,3 +457,12 @@ YAGO, en el review 015, sobre #912EZ (el contraste de 进 / 近 / 今 / 斤): «
 ### 2026-11-06 · Ver el tono en color, confirmado
 
 La retrospectiva del lote 016 cierra la hipótesis: las tarjetas de tonos fallan un 9 % (34 % en el lote 014, 44 % en el 013) y decir, un 16 % (64 % en el lote 011). La regla no cambia; la hipótesis pasa a confirmada. Vive en: `docs/hypotheses.md`, `docs/goal.md` («Los tonos, también por color»).
+
+### 2026-11-09 · El mazo, dentro de «🌐 Language»
+
+YAGO ordenó todos sus mazos de Anki en cinco familias; este va en `🌐 Language`, junto a sus mazos de español, inglés y francés (que viven en atrio, no aquí). Las 3975 tarjetas se movieron en Anki a `🌐 Language::🀄 Chino práctico` con sus subdecks y su preset (`🐉 Chino práctico`), sin perder progreso, y `DECK_NAME` cambió a esa ruta para que el siguiente `push` no las devuelva a la antigua (lo que pasó el 2026-10-02). La carpeta `🀄 Chinese` de Anki se queda solo con mazos públicos descargados, que no son de este proyecto.
+
+### 2026-11-11 · La gráfica de la web, por lotes
+
+YAGO, al ver un hueco el 1 de noviembre en «Cómo crece el mazo»: «deberían ser los lotes». La gráfica iba por días con algún cambio, y un día de ajustes sueltos (5 tarjetas corregidas, ninguna nueva) salía como una barra vacía, como si fuera un lote. Decidido: la exportación añade `historyBatches`, una fila por etiqueta `lote-NNN` con lo que cambió desde la anterior (así los ajustes entre dos lotes cuentan en el siguiente, y dos lotes cerrados el mismo día, como el 007 y el 008, no se juntan), y la web dibuja una barra por lote, «lote 16» con su fecha; si una exportación antigua no lo trae, sigue por días. `history` no cambia de forma. Vive en: `docs/design.md` («Repositorio y privacidad»), `anki.py` (`batch_history`), infraphysics (`DeckActivity.tsx`).
+
