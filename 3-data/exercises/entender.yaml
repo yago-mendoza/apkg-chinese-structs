@@ -1431,3 +1431,127 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Ya me lo sé (no se me olvida).»'}
     answer: {meaning: Ya me lo sé (no se me olvida).}
     comments: []
+  - id: x.nuance.qing-three
+    added: '2026-11-23'
+    lang: es
+    type: nuance
+    targets: [w.qingchu, w.nianqing, w.qing]
+    skills: [comprehension, discrimination]
+    prompt: {text: 'qīng en 清楚 y en 年轻, qǐng en 请: ¿qué pieza lleva cada hanzi?'}
+    answer: {meaning: '清: agua 氵 y 青, «claro». 轻: coche 车, «ligero» (joven, en 年轻). 请: palabra 讠 y 青, «por favor».'}
+    comments: []
+  - id: x.nuance.kending-yiding
+    added: '2026-11-23'
+    lang: es
+    type: nuance
+    targets: [w.kending, w.yiding]
+    reveal: [s.ni-kending-lei-le]
+    skills: [comprehension, discrimination]
+    prompt: {text: '你肯定累了 y 你一定累了: ¿qué cambia?'}
+    answer: {meaning: 'Casi nada: «seguro que estás cansado». 肯定 suena a convicción tuya; 一定, a lo que deduces al verte.'}
+    comments: []
+  - id: x.dictation.kending
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.kending]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ken3 ding4, hanzi: 肯定, pinyin: kěndìng, meaning: 'seguro, sin duda'}
+    comments: []
+  - id: x.read.kending
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.kending]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 肯定}
+    answer: {hanzi: 肯定, pinyin: kěndìng, meaning: 'seguro, sin duda'}
+    comments: []
+  - id: x.produce.ni-shuo-de-you-daoli
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.ni-shuo-de-you-daoli
+    targets: [s.ni-shuo-de-you-daoli]
+    context: [w.ni, w.shuo, w.de.complement, e.youdaoli]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Lo que dices tiene sentido.»'}
+    answer: {meaning: Lo que dices tiene sentido.}
+    comments: []
+  - id: x.produce.rang-wo-xiangxiang
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.rang-wo-xiangxiang
+    targets: [s.rang-wo-xiangxiang]
+    context: [w.rang, w.wo, w.xiang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Déjame pensarlo.»'}
+    answer: {meaning: Déjame pensarlo.}
+    comments: []
+  - id: x.produce.ting-qilai-bucuo
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.ting-qilai-bucuo
+    targets: [s.ting-qilai-bucuo]
+    context: [w.ting, w.qilai, w.bucuo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Suena bien.»'}
+    answer: {meaning: Suena bien.}
+    comments: []
+  - id: x.produce.wo-mei-yijian
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.wo-mei-yijian
+    targets: [s.wo-mei-yijian]
+    context: [w.wo, w.mei, w.yijian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Por mí, bien.»'}
+    answer: {meaning: 'Por mí, bien.'}
+    comments: []
+  - id: x.listen.ni-kending-lei-le
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.ni-kending-lei-le
+    targets: [s.ni-kending-lei-le]
+    context: [w.ni, w.kending, w.lei, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Seguro que estás cansado.}
+    comments: []
+  - id: x.produce.hai-xing
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.hai-xing
+    targets: [s.hai-xing]
+    context: [w.hai.still, w.xing.ok]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No está mal.»'}
+    answer: {meaning: No está mal.}
+    comments: []
+  - id: x.produce.bu-yao-zheyang
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.bu-yao-zheyang
+    targets: [s.bu-yao-zheyang]
+    context: [w.bu, w.yao, w.zheyang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Así no!»'}
+    answer: {meaning: ¡Así no!}
+    comments: []
+  - id: x.nuance.biede-yidian
+    added: '2026-11-23'
+    lang: es
+    type: nuance
+    targets: [w.biede, w.yidian]
+    reveal: [s.hai-yao-biede-ma, s.hai-yao-yidian-ma]
+    skills: [comprehension, discrimination]
+    prompt: {text: '还要别的吗？ y 还要一点吗？: ¿qué te ofrecen en cada una?'}
+    answer: {meaning: 'Con 别的, otra cosa distinta (otro plato). Con 一点, más de lo mismo (más arroz).'}
+    comments: []

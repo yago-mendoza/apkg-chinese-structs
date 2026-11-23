@@ -245,6 +245,8 @@ entries:
     pinyin: 'bié'
     meaning: {es: 'no (hagas): prohibir', en: 'don''t'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+    comments:
+      - {date: '2026-11-23', kind: linguistic, private: false, text: '别 + verbo prohíbe: 别走 «no te vayas», 别说 «no lo digas» (frente a 不说 «no lo digo»). En 别的 + cosa es «otro, distinto»: 别的东西 «otras cosas». Son dos usos del mismo hanzi, que de origen significaba «separar».'}
   - id: w.ting
     use: say
     role: content
@@ -476,7 +478,9 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: '帮我拿一下 «sujétamelo un momento».'}
       - {kind: linguistic, private: false, date: '2026-10-21', text: 'Para coger algo con la mano, 拿; para recoger o retirar algo que te espera (dinero, un paquete), 取: 我去取钱.'}
+      - {date: '2026-11-23', kind: tip, private: false, text: 'Tres «traer»: 拿来, lo coges con la mano y me lo acercas (el boli de la mesa); 带来 [HSK 2], te lo traes contigo al venir (mañana, de tu casa); 送来, te lo entregan (un paquete, la comida). 拿 es sujetar con la mano; 带, llevar contigo como sea: 我带手机 «llevo el móvil encima».'}
   - id: w.dei
+    accept_cards: 'matiz 要小心 / 得小心 pedido en el review 017'
     use: say
     role: content
     kind: word

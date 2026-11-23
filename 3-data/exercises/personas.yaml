@@ -2060,3 +2060,217 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Ese señor mayor es mi abuelo.»'}
     answer: {meaning: Ese señor mayor es mi abuelo.}
     comments: []
+  - id: x.contrast.wo
+    added: 2026-11-23
+    lang: es
+    type: contrast
+    group: g.zhao-qian-wo
+    targets: [w.wo]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es wǒ, «yo; me»?'}
+    answer: {hanzi: 我, pinyin: wǒ, meaning: yo; me}
+    comments: []
+  - id: x.dictation.nansheng
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.nansheng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nan2 sheng1, hanzi: 男生, pinyin: nánshēng, meaning: chico (sobre todo estudiante)}
+    comments: []
+  - id: x.read.nansheng
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.nansheng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 男生}
+    answer: {hanzi: 男生, pinyin: nánshēng, meaning: chico (sobre todo estudiante)}
+    comments: []
+  - id: x.dictation.nvpengyou
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.nvpengyou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nü3 peng2 you5, hanzi: 女朋友, pinyin: nǚpéngyou, meaning: novia}
+    comments: []
+  - id: x.produce.nvpengyou
+    added: 2026-11-23
+    lang: es
+    type: produce
+    targets: [w.nvpengyou]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «novia»? Escribe el pinyin.'}
+    answer: {typed: nü3 peng2 you5, hanzi: 女朋友, pinyin: nǚpéngyou, meaning: novia}
+    comments: []
+  - id: x.read.nvpengyou
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.nvpengyou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 女朋友}
+    answer: {hanzi: 女朋友, pinyin: nǚpéngyou, meaning: novia}
+    comments: []
+  - id: x.tones.nvpengyou
+    added: 2026-11-23
+    lang: es
+    type: tones
+    targets: [w.nvpengyou]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 女朋友, pinyin: nü peng you}
+    answer: {typed: '325', hanzi: 女朋友, pinyin: nǚpéngyou, meaning: novia}
+    comments: []
+  - id: x.dictation.nanpengyou
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.nanpengyou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: nan2 peng2 you5, hanzi: 男朋友, pinyin: nánpéngyou, meaning: novio}
+    comments: []
+  - id: x.produce.nanpengyou
+    added: 2026-11-23
+    lang: es
+    type: produce
+    targets: [w.nanpengyou]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «novio»? Escribe el pinyin.'}
+    answer: {typed: nan2 peng2 you5, hanzi: 男朋友, pinyin: nánpéngyou, meaning: novio}
+    comments: []
+  - id: x.read.nanpengyou
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.nanpengyou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 男朋友}
+    answer: {hanzi: 男朋友, pinyin: nánpéngyou, meaning: novio}
+    comments: []
+  - id: x.tones.nanpengyou
+    added: 2026-11-23
+    lang: es
+    type: tones
+    targets: [w.nanpengyou]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 男朋友, pinyin: nan peng you}
+    answer: {typed: '225', hanzi: 男朋友, pinyin: nánpéngyou, meaning: novio}
+    comments: []
+  - id: x.dictation.shufu
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.shufu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: shu1 fu5, hanzi: 舒服, pinyin: shūfu, meaning: 'cómodo, a gusto; (con 不) encontrarse mal'}
+    comments: []
+  - id: x.produce.shufu
+    added: 2026-11-23
+    lang: es
+    type: produce
+    targets: [w.shufu]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «cómodo, a gusto; (con 不) encontrarse mal»? Escribe el pinyin.'}
+    answer: {typed: shu1 fu5, hanzi: 舒服, pinyin: shūfu, meaning: 'cómodo, a gusto; (con 不) encontrarse mal'}
+    comments: []
+  - id: x.read.shufu
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.shufu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 舒服}
+    answer: {hanzi: 舒服, pinyin: shūfu, meaning: 'cómodo, a gusto; (con 不) encontrarse mal'}
+    comments: []
+  - id: x.tones.shufu
+    added: 2026-11-23
+    lang: es
+    type: tones
+    targets: [w.shufu]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 舒服, pinyin: shu fu}
+    answer: {typed: '15', hanzi: 舒服, pinyin: shūfu, meaning: 'cómodo, a gusto; (con 不) encontrarse mal'}
+    comments: []
+  - id: x.listen.tamen-shi-di-yi-ci-jianmian
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.tamen-shi-di-yi-ci-jianmian
+    targets: [s.tamen-shi-di-yi-ci-jianmian]
+    context: [w.tamen, w.shi, w.diyici, w.jianmian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es la primera vez que se ven.}
+    comments: []
+  - id: x.listen.ni-you-nvpengyou-ma
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.ni-you-nvpengyou-ma
+    targets: [s.ni-you-nvpengyou-ma]
+    context: [w.ni, w.you.have, w.nvpengyou, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Tienes novia?'}
+    comments: []
+  - id: x.produce.ni-you-nvpengyou-ma
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.ni-you-nvpengyou-ma
+    targets: [s.ni-you-nvpengyou-ma]
+    context: [w.ni, w.you.have, w.nvpengyou, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Tienes novia?»'}
+    answer: {meaning: '¿Tienes novia?'}
+    comments: []
+  - id: x.listen.ta-you-nanpengyou
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.ta-you-nanpengyou
+    targets: [s.ta-you-nanpengyou]
+    context: [w.ta.she, w.you.have, w.nanpengyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tiene novio.}
+    comments: []
+  - id: x.listen.wo-bu-shufu
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.wo-bu-shufu
+    targets: [s.wo-bu-shufu]
+    context: [w.wo, w.bu, w.shufu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No me encuentro bien.}
+    comments: []
+  - id: x.produce.wo-bu-shufu
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.wo-bu-shufu
+    targets: [s.wo-bu-shufu]
+    context: [w.wo, w.bu, w.shufu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No me encuentro bien.»'}
+    answer: {meaning: No me encuentro bien.}
+    comments: []
+  - id: x.charsound.shi-4
+    added: 2026-11-23
+    lang: es
+    type: charsound
+    targets: [w.shiyou, w.jiaoshi.room]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 室}
+    answer: {typed: shi4, hanzi: 室, pinyin: shì, meaning: 'Sale en 室友 shìyǒu «compañero de piso», 教室 jiàoshì «aula (el sitio)».'}
+    comments: []

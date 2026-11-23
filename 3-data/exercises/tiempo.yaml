@@ -3272,3 +3272,12 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 分, pinyin: fēn, meaning: 'minuto (en la hora: las ocho y diez)'}
     comments: []
+  - id: x.nuance.xianzai-jintian
+    added: '2026-11-23'
+    lang: es
+    type: nuance
+    targets: [w.xianzai, w.jintian]
+    skills: [comprehension, discrimination]
+    prompt: {text: '现在 y 今天: ¿cuál es «ahora» y cuál «hoy»?'}
+    answer: {meaning: '现在 xiànzài, ahora mismo: 现在十点. 今天 jīntiān, el día de hoy: 今天八号.'}
+    comments: []

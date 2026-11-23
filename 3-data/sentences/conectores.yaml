@@ -538,3 +538,15 @@ sentences:
       - {text: 。}
     translation: {en: 'I gave you five stars because I wanted to, not because you asked me to.', es: 'Te he puesto cinco estrellas porque he querido yo, no porque me lo pidieras.'}
     source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.ta-shi-dian-cai-lai
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'tā', ref: w.ta.he, text: 他}
+      - {pinyin: 'shí', ref: w.num.shi, text: 十}
+      - {pinyin: 'diǎn', ref: w.dian.oclock, text: 点}
+      - {pinyin: 'cái', ref: w.cai.only, text: 才}
+      - {pinyin: 'lái', ref: w.lai, text: 来}
+      - {text: 。}
+    translation: {en: 'He''s not coming until ten.', es: 'No viene hasta las diez.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}

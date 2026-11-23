@@ -30,6 +30,7 @@ entries:
     source: {origin: inbox, batch: 002-2026-09-29-clima-apellidos-y-caracteres, file: mixto_29_y_hoy la de hace 2 dias.md, date: '2026-09-27'}
     comments:
       - {kind: linguistic, private: false, date: '2026-09-27', text: '打 + deporte de pelota: 打篮球 «jugar al baloncesto». Lleva 扌 «mano».'}
+      - {date: '2026-11-23', kind: usage, private: false, text: '打 casi nunca es «pegar»: hace de verbo para muchas acciones de las manos. 打电话 «llamar por teléfono», 打车 «coger un taxi», 打包 «envolver para llevar», 打开 «abrir, encender», 打球 «jugar a la pelota», 打折 «hacer descuento».'}
   - id: w.dianying
     use: hear
     role: content
@@ -175,3 +176,27 @@ entries:
     source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
     comments:
       - {date: '2026-11-11', kind: linguistic, private: false, text: '拍 «dar un golpecito» + 照 «foto»: el clic de la cámara. 照相 zhàoxiàng dice lo mismo.'}
+  - id: w.wan.play
+    use: say
+    role: content
+    kind: word
+    pos: verbo
+    hanzi: 玩
+    pinyin: wán
+    level: 1
+    level_reason: 'la lista lo trae como 玩儿, con erhua; en estándar es 玩, verbo básico del HSK 1'
+    meaning: {es: 'jugar; divertirse, salir por ahí', en: 'to play; to have fun'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'review-017, «Tus notas»: apuntes de clase', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: usage, private: false, text: 'No solo jugar: 我们出去玩吧 «salgamos a divertirnos», 去北京玩 «ir a Pekín de viaje», 好玩 «divertido». Y 玩手机 «estar con el móvil».'}
+      - {date: '2026-11-23', kind: character, private: false, text: '王 a la izquierda es 玉 «jade», no «rey»: alguien jugando con piezas de jade. 元 yuán a la derecha da un sonido que ya no se parece.'}
+  - id: g.wan-play-finish
+    kind: group
+    basis: homophone
+    title: 玩 wán y 完 wán
+    explanation: 'Suenan exactamente igual: los separa el sentido y el hanzi.'
+    members:
+      - {ref: w.wan.play, cue: 'jade 王 a la izquierda: 出去玩'}
+      - {ref: w.wan.finish, cue: 'tejado 宀 encima; detrás del verbo: 吃完了'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+    comments: []

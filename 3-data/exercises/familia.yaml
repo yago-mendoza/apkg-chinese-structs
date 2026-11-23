@@ -1293,3 +1293,32 @@ exercises:
     answer: {typed: ge1, hanzi: 哥, pinyin: gē, meaning: 'Sale en 哥哥 gēge «hermano mayor», 帅哥 shuàigē «(para llamar a un camarero
         joven) ¡oye!, ¡perdona!».'}
     comments: []
+  - id: x.dictation.xingfu
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.xingfu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xing4 fu2, hanzi: 幸福, pinyin: xìngfú, meaning: 'feliz, dichoso (con la vida que tienes)'}
+    comments: []
+  - id: x.read.xingfu
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.xingfu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 幸福}
+    answer: {hanzi: 幸福, pinyin: xìngfú, meaning: 'feliz, dichoso (con la vida que tienes)'}
+    comments: []
+  - id: x.listen.tamen-hen-xingfu
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.tamen-hen-xingfu
+    targets: [s.tamen-hen-xingfu]
+    context: [w.tamen, w.hen, w.xingfu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Son muy felices (con su vida).}
+    comments: []

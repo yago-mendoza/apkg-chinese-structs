@@ -1,0 +1,241 @@
+# Una conversación entera, el guion de YAGO tal cual (2026-11-11): no son tarjetas ni pasan las reglas del mazo.
+# Sus frases y, para los demás, lo que dicen en sus viñetas del diálogo; mandarín estándar, sin erhua (这里, 一点).
+# Cada persona habla con su voz de Azure; `anki.py audio` genera una frase por archivo y `export` la lleva a la web.
+# Formato: docs/design.md, «Conversaciones».
+id: restaurante
+title:
+  zh: 在饭馆
+  es: En el restaurante
+  en: At the restaurant
+speakers:
+  me:
+    zh: 我
+    es: yo
+    en: me
+    voice: zh-CN-YunyangNeural
+  w:
+    zh: 服务员
+    es: camarera
+    en: waitress
+    voice: zh-CN-XiaoxiaoNeural
+  c:
+    zh: 同事
+    es: compañero
+    en: colleague
+    voice: zh-CN-YunxiNeural
+lines:
+- scene: Entra y busca mesa
+  icon: door
+- who: me
+  hanzi: 晚上好！
+  pinyin: Wǎnshang hǎo!
+  es: ¡Buenas noches!
+- who: w
+  hanzi: 晚上好！在这里吃还是带走？
+  pinyin: Wǎnshang hǎo! Zài zhèlǐ chī háishi dàizǒu?
+  es: ¡Buenas noches! ¿Para tomar aquí o para llevar?
+- who: me
+  hanzi: 在这里吃。
+  pinyin: Zài zhèlǐ chī.
+  es: Para tomar aquí.
+- who: me
+  hanzi: 我们可以坐哪里？
+  pinyin: Wǒmen kěyǐ zuò nǎlǐ?
+  es: ¿Dónde nos podemos sentar?
+- who: w
+  hanzi: 这里或者那里，都可以。
+  pinyin: Zhèlǐ huòzhě nàlǐ, dōu kěyǐ.
+  es: Aquí o ahí, donde quieran.
+- who: me
+  hanzi: 那里就好，谢谢！
+  pinyin: Nàlǐ jiù hǎo, xièxie!
+  es: Ahí está bien, ¡gracias!
+- stage: van a la mesa y se sientan
+  icon: walk
+- scene: Pide la carta
+  icon: note
+- who: me
+  hanzi: 不好意思，可以给我菜单吗？
+  pinyin: Bù hǎoyìsi, kěyǐ gěi wǒ càidān ma?
+  es: Perdone, ¿me puede dar la carta?
+- who: w
+  hanzi: 好的！
+  pinyin: Hǎo de!
+  es: ¡Claro!
+- stage: pasa un rato; la camarera vuelve
+  icon: clock
+- scene: Pide ayuda para elegir
+  icon: think
+- who: me
+  hanzi: 我还没决定。可以帮我一下吗？
+  pinyin: Wǒ hái méi juédìng. Kěyǐ bāng wǒ yíxià ma?
+  es: Todavía no lo he decidido. ¿Me puede ayudar?
+- who: w
+  hanzi: 可以！
+  pinyin: Kěyǐ!
+  es: ¡Claro!
+- who: me
+  hanzi: 你们有什么好吃的？你推荐什么？
+  pinyin: Nǐmen yǒu shénme hǎochī de? Nǐ tuījiàn shénme?
+  es: ¿Qué tienen de rico? ¿Qué me recomienda?
+- who: w
+  hanzi: 我推荐炒面，很好吃！
+  pinyin: Wǒ tuījiàn chǎomiàn, hěn hǎochī!
+  es: Le recomiendo los fideos salteados, ¡están muy ricos!
+- scene: Decide el pedido
+  icon: note
+- who: me
+  hanzi: 好的。等一下，我想想。
+  pinyin: Hǎo de. Děng yíxià, wǒ xiǎngxiang.
+  es: Vale. Espere un momento, déjeme pensar.
+- who: me
+  hanzi: 我想要一份炒面，不要辣。
+  pinyin: Wǒ xiǎng yào yí fèn chǎomiàn, bú yào là.
+  es: Quiero una ración de fideos salteados, sin picante.
+- who: me
+  hanzi: 对了，请给我一点水。谢谢！
+  pinyin: Duì le, qǐng gěi wǒ yìdiǎn shuǐ. Xièxie!
+  es: Ah, por cierto, un poco de agua, por favor. ¡Gracias!
+- stage: la camarera está a punto de irse
+  icon: walk
+- who: me
+  hanzi: 请稍等！
+  pinyin: Qǐng shāoděng!
+  es: ¡Espere un momento, por favor!
+- scene: Con el compañero, en la mesa
+  icon: people
+- who: c
+  hanzi: 我也想喝点东西。
+  pinyin: Wǒ yě xiǎng hē diǎn dōngxi.
+  es: Yo también quiero tomar algo.
+  aside: en voz baja
+- who: me
+  hanzi: 我没听清楚，你再说一遍？
+  pinyin: Wǒ méi tīng qīngchu, nǐ zài shuō yí biàn?
+  es: No te he oído bien, ¿puedes repetirlo?
+- who: me
+  hanzi: 你想喝什么？
+  pinyin: Nǐ xiǎng hē shénme?
+  es: ¿Qué quieres beber?
+- who: c
+  hanzi: 你决定吧！
+  pinyin: Nǐ juédìng ba!
+  es: ¡Decide tú!
+- scene: Confirma la bebida
+  icon: cup
+- who: me
+  hanzi: 他想喝可乐。
+  pinyin: Tā xiǎng hē kělè.
+  es: Él quiere una cola.
+- who: w
+  hanzi: 没问题！
+  pinyin: Méi wèntí!
+  es: ¡Sin problema!
+- scene: Llega la comida
+  icon: bowl
+- who: me
+  hanzi: 谢谢。
+  pinyin: Xièxie.
+  es: Gracias.
+- scene: Pregunta por el plato
+  icon: question
+- who: me
+  hanzi: 这是什么蔬菜？
+  pinyin: Zhè shì shénme shūcài?
+  es: ¿Qué verdura es esta?
+- who: me
+  hanzi: 那这个是什么肉？
+  pinyin: Nà zhège shì shénme ròu?
+  es: ¿Y esta carne qué es?
+- who: me
+  hanzi: 那这个呢？
+  pinyin: Nà zhège ne?
+  es: ¿Y esto otro?
+- who: me
+  hanzi: 这个辣吗？
+  pinyin: Zhège là ma?
+  es: ¿Esto pica?
+- who: w
+  hanzi: 不辣。
+  pinyin: Bú là.
+  es: No pica.
+- scene: Mientras comen
+  icon: chopsticks
+- who: me
+  hanzi: 你觉得怎么样？
+  pinyin: Nǐ juéde zěnmeyàng?
+  es: ¿Qué te parece?
+- who: c
+  hanzi: 很好吃！
+  pinyin: Hěn hǎochī!
+  es: ¡Muy rico!
+- scene: Después de comer
+  icon: heart
+- who: me
+  hanzi: 这个不错！太好吃了！我吃饱了！
+  pinyin: Zhège búcuò! Tài hǎochī le! Wǒ chī bǎo le!
+  es: ¡Esto está muy bien! ¡Está buenísimo! ¡Estoy lleno!
+- who: me
+  hanzi: 这个让我想起西班牙的一道菜。
+  pinyin: Zhège ràng wǒ xiǎngqǐ Xībānyá de yí dào cài.
+  es: Esto me recuerda a un plato de España.
+- who: me
+  hanzi: 我的天啊！这是我来中国以后吃过的最好吃的炒面！
+  pinyin: Wǒ de tiān a! Zhè shì wǒ lái Zhōngguó yǐhòu chīguo de zuì hǎochī de chǎomiàn!
+  es: ¡Dios mío! ¡Son los fideos más ricos que he probado desde que llegué a China!
+- who: me
+  hanzi: 他也很喜欢！他觉得很好吃。
+  pinyin: Tā yě hěn xǐhuan! Tā juéde hěn hǎochī.
+  es: ¡A él también le ha gustado! Le parece muy rico.
+- scene: Lo que ha sobrado
+  icon: bowl
+- who: me
+  hanzi: 不好意思，这个可以打包吗？
+  pinyin: Bù hǎoyìsi, zhège kěyǐ dǎbāo ma?
+  es: Perdone, ¿me pone esto para llevar?
+- who: w
+  hanzi: 好的，我帮你打包。
+  pinyin: Hǎo de, wǒ bāng nǐ dǎbāo.
+  es: Claro, se lo preparo para llevar.
+- stage: pasa un rato; la camarera vuelve con una bolsa
+  icon: clock
+- scene: Pide la cuenta
+  icon: bill
+- who: me
+  hanzi: 不好意思，买单！
+  pinyin: Bù hǎoyìsi, mǎidān!
+  es: Disculpe, ¡la cuenta!
+- who: me
+  hanzi: 一共多少钱？
+  pinyin: Yígòng duōshao qián?
+  es: ¿Cuánto es en total?
+- who: w
+  hanzi: 一百块。
+  pinyin: Yìbǎi kuài.
+  es: Cien yuanes.
+- scene: Paga y se despide
+  icon: card
+- who: me
+  hanzi: 我请客！……开玩笑的！
+  pinyin: Wǒ qǐngkè! …… Kāi wánxiào de!
+  es: ¡Yo invito! … ¡Es broma!
+- who: me
+  hanzi: 我们AA吧！
+  pinyin: Wǒmen AA ba!
+  es: ¡Pagamos a medias!
+- who: me
+  hanzi: 可以刷卡吗？
+  pinyin: Kěyǐ shuākǎ ma?
+  es: ¿Se puede pagar con tarjeta?
+- who: me
+  hanzi: 可以用支付宝吗？
+  pinyin: Kěyǐ yòng Zhīfùbǎo ma?
+  es: ¿Se puede usar Alipay?
+- who: w
+  hanzi: 可以，没问题！
+  pinyin: Kěyǐ, méi wèntí!
+  es: Sí, ¡sin problema!
+- who: me
+  hanzi: 谢谢！再见！
+  pinyin: Xièxie! Zàijiàn!
+  es: ¡Gracias! ¡Adiós!

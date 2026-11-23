@@ -1846,3 +1846,54 @@ class Lot016(unittest.TestCase):
         # El lote que se está cerrando sale aunque no cambie nada, con su nombre.
         closing = anki.batch_history(exercises, lambda x: 1, batch="999-2099-01-01-prueba", previous=out)
         self.assertEqual(closing[-1]["batch"], "999-2099-01-01-prueba")
+
+
+class Conversations(unittest.TestCase):
+    """Conversaciones enteras (3-data/conversations/): el guion tal cual, una voz por persona, fuera de las tarjetas."""
+
+    def conv(self, **kw):
+        c = {"_file": "cena.yaml", "id": "cena", "title": {"es": "Cena"},
+             "speakers": {"me": {"voice": "zh-CN-YunyangNeural"}, "w": {"voice": "zh-CN-XiaoxiaoNeural"}},
+             "lines": [{"scene": "Pedir"},
+                       {"who": "me", "hanzi": "好的！", "pinyin": "Hǎo de!", "es": "¡Vale!"},
+                       {"who": "w", "hanzi": "好的！", "pinyin": "Hǎo de!", "es": "¡Vale!"},
+                       {"stage": "pasa un rato"}]}
+        return c | kw
+
+    def test_same_text_two_voices_is_two_audios(self):
+        self.assertEqual(anki.conversation_audio([self.conv()]),
+                         {("zh-CN-YunyangNeural", "好的！"), ("zh-CN-XiaoxiaoNeural", "好的！")})
+
+    def test_valid_conversation_passes(self):
+        self.assertEqual(anki.validate_conversations([self.conv()], require_audio=False), [])
+
+    def test_unknown_speaker_missing_voice_and_bad_id(self):
+        c = self.conv(id="otra", speakers={"me": {}},
+                      lines=[{"who": "x", "hanzi": "你好", "pinyin": "nǐ hǎo", "es": "hola"}])
+        errors = " | ".join(anki.validate_conversations([c], require_audio=False))
+        self.assertIn("nombre del archivo", errors)
+        self.assertIn("no tiene `voice`", errors)
+        self.assertIn("«x» no está en `speakers`", errors)
+
+    def test_export_keeps_scenes_and_points_each_line_to_its_voice(self):
+        manifest = {"zh-CN-XiaoxiaoNeural|好的！": {"file": "acs_w.mp3"}}
+        with mock.patch.object(anki, "load_conv_manifest", return_value=manifest):
+            out = anki.export_conversations([self.conv()])[0]
+        self.assertEqual([x.get("scene") or x.get("stage") or x["who"] for x in out["lines"]], ["Pedir", "me", "w", "pasa un rato"])
+        self.assertIsNone(out["lines"][1]["audio"])
+        self.assertTrue(out["lines"][2]["audio"].endswith("3-data/audio/acs_w.mp3"))
+        self.assertNotIn("_file", out)
+
+
+class NuanceLines(unittest.TestCase):
+    """Review 017: la explicación de un matiz, una frase por línea, sin cortar el pinyin entre paréntesis."""
+
+    def test_split(self):
+        text = "Adjetivo: siempre 不 (bù). Verbo: 没 si no pasó (我没吃 (wǒ méi chī)); 不 si no quieres. ¿Y 别? Prohíbe."
+        self.assertEqual(anki.answer_lines(text),
+                         ["Adjetivo: siempre 不 (bù).", "Verbo: 没 si no pasó (我没吃 (wǒ méi chī)); 不 si no quieres.",
+                          "¿Y 别?", "Prohíbe."])
+
+    def test_html(self):
+        self.assertEqual(anki.answer_lines_html("Uno. Dos <b>."), "Uno.<br>Dos &lt;b&gt;.")
+        self.assertEqual(anki.answer_lines(""), [])

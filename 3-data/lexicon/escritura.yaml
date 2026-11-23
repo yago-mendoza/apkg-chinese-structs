@@ -708,3 +708,47 @@ entries:
       - {ref: c.guo.fruit, cue: 'un árbol 木 abajo: 水果'}
     source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
     comments: []
+  - id: g.zhao-qian-wo
+    kind: group
+    basis: visual
+    title: 找 zhǎo, 钱 qián y 我 wǒ
+    explanation: 'Los tres llevan a la derecha la lanza 戈 (钱, dos lanzas pequeñas). Los separa lo de la izquierda.'
+    members:
+      - {ref: w.zhao, cue: 'la mano 扌 a la izquierda y una sola lanza'}
+      - {ref: w.qian, cue: 'el metal 钅 a la izquierda y dos lanzas pequeñas'}
+      - {ref: w.wo, cue: 'la lanza entera, con el trazo de la izquierda pegado a ella'}
+    source: {origin: review, batch: 018-2026-11-23-paneles-y-contrastes, file: review-017-2026-11-11-pedir-en-el-restaurante.md, date: '2026-11-23'}
+    comments: []
+  - id: g.hui-jin
+    kind: group
+    basis: visual
+    title: 会 huì y 今 jīn
+    explanation: 'Los dos llevan arriba el mismo tejado 人 y hablan de tiempo (会 «va a», 今 «ahora»). Los separa lo de debajo.'
+    members:
+      - {ref: w.hui.will, cue: 'debajo, 云: dos rayas y un triángulo'}
+      - {ref: c.jin.now, cue: 'debajo, solo un punto y un trazo en ángulo'}
+    source: {origin: review, batch: 018-2026-11-23-paneles-y-contrastes, file: review-017-2026-11-11-pedir-en-el-restaurante.md, date: '2026-11-23'}
+    comments: []
+  - id: g.xian-wan
+    kind: group
+    basis: visual
+    title: 现 xiàn y 玩 wán
+    explanation: 'Los dos llevan a la izquierda 王, que aquí es 玉 «jade». Los separa lo de la derecha.'
+    members:
+      - {ref: c.xian.now, cue: 'a la derecha 见 «ver»: el de 现在'}
+      - {ref: w.wan.play, cue: 'a la derecha 元, como en 元 yuán'}
+    source: {origin: review, batch: 018-2026-11-23-paneles-y-contrastes, file: review-017-2026-11-11-pedir-en-el-restaurante.md, date: '2026-11-23'}
+    comments: []
+  - id: c.xian.now
+    use: read
+    use_reason: 'ligado: se aprende dentro de 现在; está en el mazo por su parecido con 玩'
+    kind: character
+    hanzi: 现
+    pinyin: xiàn
+    meaning: {es: 'actual, presente; aparecer (en 现在)', en: 'present, current'}
+    standalone: 'no'
+    level: 1
+    level_reason: 'ligado: se aprende en 现在, HSK 1'
+    source: {origin: review, batch: 018-2026-11-23-paneles-y-contrastes, file: review-017-2026-11-11-pedir-en-el-restaurante.md, date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: character, private: false, text: '王 a la izquierda es 玉 «jade» (la piedra preciosa), no «rey»; a la derecha, 见 jiàn «ver». El brillo del jade que se deja ver: lo que aparece, lo presente.'}

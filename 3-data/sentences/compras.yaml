@@ -1073,3 +1073,27 @@ sentences:
       - {text: 。}
     translation: {en: Three fifty., es: Tres con cincuenta.}
     source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.qian-bu-gou
+    use: say
+    kind: example
+    segments:
+      - {pinyin: 'qián', ref: w.qian, text: 钱}
+      - {pinyin: 'bú', ref: w.bu, text: 不, sandhi: true}
+      - {pinyin: 'gòu', ref: w.gou.enough, text: 够}
+      - {text: 。}
+    translation: {en: 'There isn''t enough money.', es: 'No llega el dinero.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.laoban-ni-hai-mei-zhaoqian-ne
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'lǎobǎn', ref: w.laoban, text: 老板}
+      - {text: ，}
+      - {pinyin: 'nǐ', ref: w.ni, text: 你}
+      - {pinyin: 'hái', ref: w.hai.still, text: 还}
+      - {pinyin: 'méi', ref: w.mei, text: 没}
+      - {pinyin: 'zhǎoqián', ref: w.zhaoqian, text: 找钱}
+      - {pinyin: 'ne', ref: w.ne, text: 呢}
+      - {text: 。}
+    translation: {en: 'Excuse me, you haven''t given me my change yet.', es: 'Jefe, todavía no me ha dado el cambio.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}

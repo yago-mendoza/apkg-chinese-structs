@@ -49,6 +49,8 @@ THEMES = DATA / "themes.yaml"             # temas en orden de aprendizaje
 KINDS = {"lexicon": "entries", "sentences": "sentences", "exercises": "exercises"}  # carpeta → clave; un archivo por tema
 MEDIA = DATA / "audio"                  # MP3 generados; no regenerar
 AUDIO_MANIFEST = MEDIA / "index.yaml"
+CONVERSATIONS = DATA / "conversations"    # conversaciones enteras, guion tal cual: datos para la web, no tarjetas
+CONV_AUDIO_MANIFEST = MEDIA / "conversations.yaml"   # su audio, por voz y texto (una persona, una voz)
 INBOX = ROOT / "1-inbox"                  # apuntes en bruto de YAGO
 HISTORY = INBOX / "history"                # lo que pasó por el inbox, archivado tal cual por lote
 CLASS_AUDIO = ROOT / "private" / "class-audio"  # grabaciones de clase y su transcripción: solo local
@@ -183,6 +185,88 @@ def save_manifest(manifest):
     with open(AUDIO_MANIFEST, "w", encoding="utf-8") as f:
         f.write("# Procedencia de cada audio. Generado por `anki.py audio`.\n")
         yaml.safe_dump({"audio": manifest}, f, allow_unicode=True, sort_keys=True)
+
+
+# ---------------------------------------------------------------- conversaciones
+
+def load_conversations():
+    """Las conversaciones enteras (3-data/conversations/<id>.yaml): el guion de YAGO tal cual, frase a frase y en
+    orden, con quién dice cada una y una voz de Azure por persona. Son datos para oírlas seguidas en la web, no
+    tarjetas: no pasan las reglas del mazo (mandarín estándar, sin marcas ni letras latinas, palabras en el léxico)."""
+    if not CONVERSATIONS.exists():
+        return []
+    return [load_yaml(f) | {"_file": f.name} for f in sorted(CONVERSATIONS.glob("*.yaml"))]
+
+
+def conversation_lines(c):
+    return [x for x in c.get("lines", []) if x.get("who")]
+
+
+def conversation_audio(convs):
+    """Lo que hay que oír: {(voz, texto)}. Un mismo texto dicho por dos personas son dos audios."""
+    return {(c["speakers"][x["who"]]["voice"], x["hanzi"]) for c in convs for x in conversation_lines(c)
+            if x["who"] in (c.get("speakers") or {}) and x.get("hanzi")}
+
+
+def conv_key(voice, text):
+    return f"{voice}|{text}"
+
+
+def load_conv_manifest():
+    return load_yaml(CONV_AUDIO_MANIFEST).get("audio", {}) if CONV_AUDIO_MANIFEST.exists() else {}
+
+
+def save_conv_manifest(manifest):
+    MEDIA.mkdir(exist_ok=True)
+    with open(CONV_AUDIO_MANIFEST, "w", encoding="utf-8") as f:
+        f.write("# Audio de las conversaciones (3-data/conversations/), por «voz|texto». Generado por `anki.py audio`.\n")
+        yaml.safe_dump({"audio": manifest}, f, allow_unicode=True, sort_keys=True)
+
+
+def validate_conversations(convs, require_audio=True):
+    errors = []
+    for c in convs:
+        name, speakers = c["_file"], c.get("speakers") or {}
+        if not c.get("id") or Path(name).stem != c["id"]:
+            errors.append(f"conversations/{name}: el `id` tiene que ser el nombre del archivo")
+        for k, sp in speakers.items():
+            if not (sp or {}).get("voice"):
+                errors.append(f"conversations/{name}: la persona «{k}» no tiene `voice`")
+        for n, x in enumerate(c.get("lines", []), 1):
+            if x.get("scene") or x.get("stage"):
+                continue
+            if x.get("who") not in speakers:
+                errors.append(f"conversations/{name}, línea {n}: «{x.get('who')}» no está en `speakers`")
+            for field in ("hanzi", "pinyin", "es"):
+                if not x.get(field):
+                    errors.append(f"conversations/{name}, línea {n}: falta `{field}`")
+        if not conversation_lines(c):
+            errors.append(f"conversations/{name}: no tiene frases")
+    if require_audio:
+        manifest = load_conv_manifest()
+        for voice, text in sorted(conversation_audio(convs)):
+            item = manifest.get(conv_key(voice, text))
+            if not item:
+                errors.append(f"audio de conversación sin generar: {voice} · {text}")
+            elif not (MEDIA / item["file"]).exists():
+                errors.append(f"audio de conversación registrado pero ausente: {item['file']}")
+    return errors
+
+
+def export_conversations(convs):
+    """Para la web: cada conversación con sus personas, y cada frase con su audio (ruta en el repo)."""
+    manifest = load_conv_manifest()
+    out = []
+    for c in convs:
+        speakers = c["speakers"]
+        lines = []
+        for x in c.get("lines", []):
+            if x.get("who"):
+                item = manifest.get(conv_key(speakers[x["who"]]["voice"], x["hanzi"]))
+                x = x | {"audio": (MEDIA / item["file"]).relative_to(ROOT).as_posix() if item else None}
+            lines.append(x)
+        out.append({"id": c["id"], "title": c.get("title") or {}, "speakers": speakers, "lines": lines})
+    return out
 
 
 # ---------------------------------------------------------------- pinyin
@@ -1734,6 +1818,19 @@ def said_translation(prompt, eby, sby, lang="es"):
     return prompt.get("said_es") or ((e.get("meaning") or {}).get(lang, "") if e else "")
 
 
+def answer_lines(text):
+    """Una explicación en frases, una por línea: corta tras «.», «!» o «?» seguidos de espacio y mayúscula o de
+    apertura (¿, ¡, «). Lo que va entre paréntesis (el pinyin) no se corta (review 017: «así en párrafo no se entiende
+    nada»)."""
+    if not text:
+        return []
+    return [p for p in re.split(r"(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÑ¿¡«])", text.strip()) if p]
+
+
+def answer_lines_html(text):
+    return "<br>".join(esc(p) for p in answer_lines(text))
+
+
 def annotate_pinyin(text, eby, sby):
     """Cada trozo en chino de una explicación lleva su pinyin detrás, «你好 (nǐ hǎo)», salvo si ya lo lleva. El de
     las entradas y frases del mazo si coincide; si no, el de pypinyin."""
@@ -2700,6 +2797,7 @@ def validate(entries, sentences, exercises, require_audio=True):
                 errors.append(f"audio registrado pero ausente: {manifest[t]['file']}")
             elif manifest[t].get("phonemes", "") != tts_signature(tts_readings(t, entries, sentences)):
                 errors.append(f"audio con la lectura fijada (tts) sin regenerar: {t}")
+    errors += validate_conversations(load_conversations(), require_audio)
     return errors, warnings
 
 
@@ -2777,10 +2875,16 @@ def cmd_audio(dry_run):
     # Falta, o tiene una lectura fijada (`tts`) distinta de la que se usó al generarlo: se genera otra vez.
     sig = {t: tts_signature(tts_readings(t, entries, sentences)) for t in required_audio(entries, sentences, exercises)}
     pending = sorted(t for t in sig if t not in manifest or manifest[t].get("phonemes", "") != sig[t])
+    convs = load_conversations()
+    conv_manifest = load_conv_manifest()
+    conv_pending = sorted(vt for vt in conversation_audio(convs) if conv_key(*vt) not in conv_manifest)
     print(f"Audio pendiente: {len(pending)}")
     for t in pending:
         print("  " + t)
-    if dry_run or not pending:
+    print(f"Audio de conversaciones pendiente: {len(conv_pending)}")
+    for voice, t in conv_pending:
+        print(f"  {voice} · {t}")
+    if dry_run or not (pending or conv_pending):
         return 0
     key = os.environ.get("AZURE_SPEECH_KEY")
     region = os.environ.get("AZURE_SPEECH_REGION")
@@ -2799,6 +2903,19 @@ def cmd_audio(dry_run):
                        "date": datetime.date.today().isoformat()} | ({"phonemes": sig[t]} if sig[t] else {})
         save_manifest(manifest)
         print(f"  ✓ {t} → {name}")
+    # Conversaciones: cada frase con la voz de quien la dice. El mismo nombre de archivo que daría el mazo con esa
+    # voz y ese texto, así que una frase mía que ya suena en una tarjeta (Yunyang) no se genera dos veces.
+    for voice, t in conv_pending:
+        pieces = tts_readings(t, entries, sentences)
+        name = audio_key(t + (f"|{tts_signature(pieces)}" if tts_signature(pieces) else ""), voice)
+        path = MEDIA / name
+        if not path.exists():
+            path.write_bytes(azure_tts(t, voice, key, region, pieces))
+        conv_manifest[conv_key(voice, t)] = {"file": name, "provider": "Azure Speech", "voice": voice,
+                                             "rate": audio_rate(t), "lead_ms": AZURE_LEAD_MS, "tier": AZURE_TIER,
+                                             "date": datetime.date.today().isoformat()}
+        save_conv_manifest(conv_manifest)
+        print(f"  ✓ {voice} · {t} → {name}")
     return 0
 
 
@@ -3436,8 +3553,11 @@ def card_fields(ex, eby, sby, manifest, media_files):
                 for t in ex.get("targets", []) if (e := eby.get(t)) and e.get("kind") in ("word", "expression", "character"))
             if rows:
                 meaning = None
-                back = (f'<div class="meaning">{esc(annotate_pinyin(ans.get("meaning"), eby, sby))}</div>'
+                back = (f'<div class="meaning">{answer_lines_html(annotate_pinyin(ans.get("meaning"), eby, sby))}</div>'
                         f'<div class="nuance-words">{rows}</div>')
+            elif meaning:
+                back += f'<div class="meaning">{answer_lines_html(meaning)}</div>'
+                meaning = None
     if meaning:
         back += f'<div class="meaning">{esc(meaning)}</div>'
     if said:                                     # qué te habían dicho (review 012: «¿no debería traducírmelo?»)
@@ -4560,6 +4680,8 @@ def export_dictionary(entries, sentences, exercises, history_cache=None, batch=N
         "counts": {"entries": len(out_entries), "sentences": len(out_sentences), "cards": len(exercises)},
         "themes": [{"id": t["id"], "title": t["title"], "order": n} for n, t in enumerate(load_themes(), 1)],
         "entries": out_entries, "groups": out_groups, "sentences": out_sentences,
+        # Conversaciones enteras, frase a frase con la voz de quien habla: la web las oye seguidas (no son tarjetas).
+        "conversations": export_conversations(load_conversations()),
         "cards": cards, "history": history, "historyBatches": batch_history(exercises, card_level, batch, previous_batches), "historyCache": new_cache,
         "coverage": [{"level": lv, "total": total, "trained": have, "inDeck": in_deck}
                      for (lv, have, total), in_deck in zip(level_coverage(entries), deck_coverage(entries))],
@@ -5625,7 +5747,7 @@ def balance_from_anki():
 # Anki on the computer, so the site's Anki add-on, which sends it after a sync made from Anki's own window, never runs.
 # Every time anki.py syncs with AnkiWeb (stats at the start of a batch, push at its end), it sends the log itself, with
 # the site's own script (read only on the collection). Next to this repository, or where it lives on YAGO's machine
-# (dev/InfraPhysics/infraphysics, while this repository is in dev/Cockpit); ANKI_SITE_REPO points elsewhere,
+# (dev/InfraPhysics/infraphysics, while this repository is in dev/SCADA.GGUF); ANKI_SITE_REPO points elsewhere,
 # ANKI_NO_SITE turns it off. Never while anki_request is replaced (the tests' simulated AnkiConnect).
 def _site_repo():
     if os.environ.get("ANKI_SITE_REPO"):

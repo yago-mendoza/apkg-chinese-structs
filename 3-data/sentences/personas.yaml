@@ -472,3 +472,45 @@ sentences:
       - {text: 。}
     translation: {en: That old man is my grandfather., es: Ese señor mayor es mi abuelo.}
     source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.tamen-shi-di-yi-ci-jianmian
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'tāmen', ref: w.tamen, text: 他们}
+      - {pinyin: 'shì', ref: w.shi, text: 是}
+      - {pinyin: 'dì yī cì', ref: w.diyici, text: 第一次}
+      - {pinyin: 'jiànmiàn', ref: w.jianmian, text: 见面}
+      - {text: 。}
+    translation: {en: 'It''s the first time they''ve met.', es: 'Es la primera vez que se ven.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+  - id: s.ni-you-nvpengyou-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: 'nǐ', ref: w.ni, text: 你}
+      - {pinyin: 'yǒu', ref: w.you.have, text: 有}
+      - {pinyin: 'nǚpéngyou', ref: w.nvpengyou, text: 女朋友}
+      - {pinyin: 'ma', ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Do you have a girlfriend?', es: '¿Tienes novia?'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+  - id: s.ta-you-nanpengyou
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'tā', ref: w.ta.she, text: 她}
+      - {pinyin: 'yǒu', ref: w.you.have, text: 有}
+      - {pinyin: 'nánpéngyou', ref: w.nanpengyou, text: 男朋友}
+      - {text: 。}
+    translation: {en: 'She has a boyfriend.', es: 'Tiene novio.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+  - id: s.wo-bu-shufu
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: 'wǒ', ref: w.wo, text: 我}
+      - {pinyin: 'bù', ref: w.bu, text: 不}
+      - {pinyin: 'shūfu', ref: w.shufu, text: 舒服}
+      - {text: 。}
+    translation: {en: 'I don''t feel well.', es: 'No me encuentro bien.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}

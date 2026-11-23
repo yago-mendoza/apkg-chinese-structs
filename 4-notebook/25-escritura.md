@@ -44,6 +44,7 @@
 - 🟡🃏 恭 gōng · respetuoso · Arriba, 共 gòng da el sonido a 恭 gōng (el de 一共); abajo, ⺗, el corazón: el respeto.
 - 🟡🃏 外 wài · fuera (en 外面, 外国, 外语)
 - 🟡🃏 果 guǒ · fruto (en 水果, 苹果)
+- 🟡🃏 现 xiàn · actual, presente; aparecer (en 现在) · 王 a la izquierda es 玉 «jade» (la piedra preciosa), no «rey»; a la derecha, 见 jiàn «ver». El brillo del jade que se deja ver: lo que aparece, lo presente.
 
 ## 生, 牛 y 午
 
@@ -231,6 +232,28 @@ Los tres tienen un cuadro arriba y una cruz abajo. 里 lǐ «dentro» (土 abajo
 - 里 lǐ · tierra 土 abajo: 家里
 - 早 zǎo · el sol 日 sobre 十: 早上
 - 果 guǒ · un árbol 木 abajo: 水果
+
+## 找 zhǎo, 钱 qián y 我 wǒ
+
+Los tres llevan a la derecha la lanza 戈 (钱, dos lanzas pequeñas). Los separa lo de la izquierda.
+
+- 找 zhǎo · la mano 扌 a la izquierda y una sola lanza
+- 钱 qián · el metal 钅 a la izquierda y dos lanzas pequeñas
+- 我 wǒ · la lanza entera, con el trazo de la izquierda pegado a ella
+
+## 会 huì y 今 jīn
+
+Los dos llevan arriba el mismo tejado 人 y hablan de tiempo (会 «va a», 今 «ahora»). Los separa lo de debajo.
+
+- 会 huì · debajo, 云: dos rayas y un triángulo
+- 今 jīn · debajo, solo un punto y un trazo en ángulo
+
+## 现 xiàn y 玩 wán
+
+Los dos llevan a la izquierda 王, que aquí es 玉 «jade». Los separa lo de la derecha.
+
+- 现 xiàn · a la derecha 见 «ver»: el de 现在
+- 玩 wán · a la derecha 元, como en 元 yuán
 
 ## Frases
 

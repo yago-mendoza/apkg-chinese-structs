@@ -92,3 +92,4 @@ La misma sílaba: solo los separa el tono.
 - ✅🃏 我到家再看。 · wǒ dào jiā zài kàn · Lo miro cuando llegue a casa.
 - ✅🃏 房间很干净。 · fángjiān hěn gānjìng · La habitación está muy limpia.
 - ✅🃏 地上有水。 · dìshang yǒu shuǐ · Hay agua en el suelo.
+- ✅🃏 我的手机里有很多照片。 · wǒ de shǒujī lǐ yǒu hěn duō zhàopiàn · En mi móvil hay muchas fotos.

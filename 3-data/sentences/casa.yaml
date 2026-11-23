@@ -329,3 +329,18 @@ sentences:
       - {text: 。}
     translation: {en: There's water on the floor., es: Hay agua en el suelo.}
     source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.wo-de-shouji-li-you-hen-duo-zhaopian
+    use: say
+    kind: example
+    segments:
+      - {pinyin: 'wǒ', ref: w.wo, text: 我}
+      - {pinyin: 'de', ref: w.de, text: 的}
+      - {pinyin: 'shǒujī', ref: w.shouji, text: 手机}
+      - {pinyin: 'lǐ', ref: w.li.inside, text: 里}
+      - {pinyin: 'yǒu', ref: w.you.have, text: 有}
+      - {pinyin: 'hěn', ref: w.hen, text: 很}
+      - {pinyin: 'duō', ref: w.duo, text: 多}
+      - {pinyin: 'zhàopiàn', ref: w.zhaopian, text: 照片}
+      - {text: 。}
+    translation: {en: 'There are lots of photos on my phone.', es: 'En mi móvil hay muchas fotos.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}

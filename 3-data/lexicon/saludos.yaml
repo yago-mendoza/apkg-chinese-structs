@@ -281,6 +281,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-05', text: 'Con otra lectura, huán, es «devolver». En 你还好吗？ es «¿sigues bien?».'}
       - {kind: linguistic, private: false, date: '2026-10-26', text: 'Suena igual que el 孩 de 孩子 «niño», pero es otro carácter. Con 要 es «más»: 你还要水吗？ «¿quieres más agua?».'}
+      - {date: '2026-11-23', kind: tip, private: false, text: 'La idea de 还: algo sigue o se suma respecto a lo de antes. Sigue: 我还在工作 «todavía estoy trabajando». Se suma: 我要饺子，还要汤 «y además sopa». Una más: 我还要一杯 «otro». Y más que el punto de referencia: 今天比昨天还冷 «hoy hace aún más frío que ayer». Ojo: 我还好 es «estoy bastante bien», no «sigo bien».'}
   - id: e.nihaoma
     use: say
     role: content
@@ -407,6 +408,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Se oye sobre todo en las felicitaciones: 生日快乐, 新年快乐.'}
       - {date: '2026-11-11', kind: tip, private: false, text: '快乐 es ser feliz, en general o en una etapa (跟你在一起很快乐); 高兴, contento por algo concreto (我太高兴了！); 开心, lo de diario para «estoy contento».'}
+      - {date: '2026-11-23', kind: linguistic, private: false, text: 'Aquí 快 no es «rápido»: 快乐 es «feliz, alegre», sobre todo en felicitaciones (生日快乐). Es el mismo hanzi y suena igual que el 快 de 很快, pero en 快乐 no aporta la idea de rapidez.'}
   - id: e.shengrikuaile
     use: say
     role: content

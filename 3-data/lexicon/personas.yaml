@@ -588,3 +588,49 @@ entries:
     source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
     comments:
       - {date: '2026-11-11', kind: linguistic, private: false, text: '老 «viejo» + 人 «persona». Para hablar de alguien mayor con respeto, 老人家 lǎorénjia.'}
+  - id: w.nansheng
+    use: hear
+    role: content
+    kind: word
+    hanzi: 男生
+    pinyin: nánshēng
+    meaning: {es: 'chico (sobre todo estudiante)', en: 'boy (student)'}
+    relations: [w.nvsheng]
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: usage, private: false, text: 'Pareja de 女生 nǚshēng: chico y chica jóvenes, sobre todo estudiantes. Para un hombre adulto, 男人 nánrén.'}
+  - id: w.nvpengyou
+    use: say
+    role: content
+    kind: word
+    hanzi: 女朋友
+    pinyin: nǚpéngyou
+    accept_pinyin_mismatch: tono neutro en la última sílaba en el habla estándar; los diccionarios dan el tono de cita
+    meaning: {es: novia, en: girlfriend}
+    relations: [w.nanpengyou, w.pengyou]
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: usage, private: false, text: '女 «mujer» + 朋友 «amigo»: la novia. Una amiga a secas es 朋友, no 女朋友.'}
+  - id: w.nanpengyou
+    use: say
+    role: content
+    kind: word
+    hanzi: 男朋友
+    pinyin: nánpéngyou
+    accept_pinyin_mismatch: tono neutro en la última sílaba en el habla estándar; los diccionarios dan el tono de cita
+    meaning: {es: novio, en: boyfriend}
+    relations: [w.nvpengyou, w.pengyou]
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: usage, private: false, text: '男 «hombre» + 朋友 «amigo»: el novio. Igual que 女朋友, no es un amigo cualquiera.'}
+  - id: w.shufu
+    use: say
+    role: content
+    kind: word
+    hanzi: 舒服
+    pinyin: shūfu
+    accept_pinyin_mismatch: tono neutro en la última sílaba en el habla estándar; los diccionarios dan el tono de cita
+    meaning: {es: 'cómodo, a gusto; (con 不) encontrarse mal', en: 'comfortable; well'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: usage, private: false, text: '这个床很舒服 «esta cama es muy cómoda». Y lo más útil: 我不舒服 «no me encuentro bien», para decir que estás malo sin dar detalles.'}

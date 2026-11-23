@@ -110,7 +110,8 @@ entries:
     meaning: {es: 'todos, ambos (adverbio)', en: 'all, both'}
     accept_cards: 'las formas de «todo» (都, 什么都, 一切) que pidió en el review 011'
     source: {origin: class, batch: 001-2026-09-25-primeras-clases, file: sin-fecha_hojas-01-06.txt, date: '2026-09-21'}
-    comments: []
+    comments:
+      - {date: '2026-11-23', kind: tip, private: false, text: 'La idea de 都: incluirlo todo, hasta el extremo. Todos: 我们都来了. Hasta lo más inesperado: 孩子都知道 «hasta los niños lo saben». Y un punto que sorprende de tan avanzado: 都十二点了！ «¡ya son las doce!».'}
   - id: w.de
     use: say
     role: function
@@ -238,6 +239,7 @@ entries:
     comments:
       - {kind: note, private: false, date: '2026-09-27', text: 'Transcripción por el sonido: 雅 «elegante» y 戈 «alabarda», sin otro significado. Solo por diversión.', original: 'yage mendousa (yage = alabarda refinada) - no sginfinca nada adifenirac del nombre, es pura transcripcion for the fun of it.'}
   - id: w.lai
+    accept_cards: 'contraste visual 米 / 来 pedido dos veces en el review 017'
     use: say
     role: content
     kind: word
@@ -333,6 +335,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'En los nombres de países: 中国, 美国. 你是哪国人？ «¿de qué país eres?».'}
       - {kind: linguistic, private: false, date: '2026-10-21', text: 'En 中国, 中 zhōng «centro» va delante y 国 guó «país» detrás: «el país del centro».'}
+      - {date: '2026-11-23', kind: tip, private: false, text: '国 es «país» y, detrás del nombre, hace el país: 中国, 法国, 德国, 美国. La nacionalidad es país + 人: 中国人, 法国人. Suelto se usa poco y casi siempre en palabras: 回国 «volver a tu país», 外国 «el extranjero», 国家 «el país, el Estado».'}
   - id: w.hui.can
     use: say
     role: content
@@ -479,10 +482,11 @@ entries:
   - id: g.cai-cai
     kind: group
     basis: soundalike
-    title: '猜 cāi y 菜 cài'
-    explanation: '猜 es alto y plano; 菜 cae.'
+    title: '猜 cāi, 才 cái y 菜 cài'
+    explanation: 'La misma sílaba: 猜 es alto y plano, 才 sube y 菜 cae.'
     members:
       - {ref: w.cai.guess, cue: 'alto y plano'}
+      - {ref: w.cai.only, cue: 'sube: 他十点才来'}
       - {ref: w.cai, cue: 'cae'}
     source: {origin: class, batch: 006-2026-10-06-edad-numeros-y-familia, file: diapositivas 2026-10-06, date: '2026-10-06'}
     comments: []
@@ -653,3 +657,28 @@ entries:
     comments:
       - {date: '2026-11-11', kind: usage, private: false, text: '我想再见到你 «quiero volver a verte». Con 见到 no se confunde con 再见 «adiós»: 我想再见你 se puede leer «quiero decirte adiós otra vez».'}
       - {date: '2026-11-11', kind: linguistic, private: false, text: '见 «ver» + 到 «llegar, conseguir»: ver de verdad, encontrarse.'}
+  - id: w.faguo
+    use: hear
+    role: content
+    kind: word
+    pos: nombre-propio
+    hanzi: 法国
+    pinyin: Fǎguó
+    meaning: {es: Francia, en: France}
+    level: 2
+    level_reason: país muy frecuente, al nivel de 英国 y 德国; 国 es HSK 1
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+    comments: []
+  - id: w.jianada
+    use: hear
+    role: content
+    kind: word
+    pos: nombre-propio
+    hanzi: 加拿大
+    pinyin: Jiānádà
+    meaning: {es: Canadá, en: Canada}
+    level: 3
+    level_reason: 'país que no está en la lista; suena como en español (Jiā-ná-dà) y sale en clase, pero se oye menos que 美国 o 英国'
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: linguistic, private: false, text: 'Se escribe por cómo suena, Jiā-ná-dà: no busques el sentido de cada hanzi (加 «sumar», 拿 «coger», 大 «grande»).'}

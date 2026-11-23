@@ -1949,3 +1949,105 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 饱, pinyin: bǎo, meaning: 'lleno, saciado'}
     comments: []
+  - id: x.nuance.fan-cai
+    added: '2026-11-23'
+    lang: es
+    type: nuance
+    targets: [w.fan, w.cai]
+    reveal: [s.women-yao-san-ge-cai-hai-yao-mifan]
+    skills: [comprehension, discrimination]
+    prompt: {text: '饭 y 菜 en la mesa: ¿qué es cada uno?'}
+    answer: {meaning: '饭: el arroz, y la comida en general (吃饭). 菜: cada plato que acompaña al arroz (点菜).'}
+    comments: []
+  - id: x.contrast.mi
+    added: 2026-11-23
+    lang: es
+    type: contrast
+    group: g.mi-lai
+    targets: [w.mi]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es mǐ, «arroz (el grano, sin cocer)»?'}
+    answer: {hanzi: 米, pinyin: mǐ, meaning: 'arroz (el grano, sin cocer)'}
+    comments: []
+  - id: x.dictation.mi
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.mi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mi3, hanzi: 米, pinyin: mǐ, meaning: 'arroz (el grano, sin cocer)'}
+    comments: []
+  - id: x.read.mi
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.mi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 米}
+    answer: {hanzi: 米, pinyin: mǐ, meaning: 'arroz (el grano, sin cocer)'}
+    comments: []
+  - id: x.dictation.chaofan
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.chaofan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chao3 fan4, hanzi: 炒饭, pinyin: chǎofàn, meaning: arroz frito (salteado)}
+    comments: []
+  - id: x.produce.chaofan
+    added: 2026-11-23
+    lang: es
+    type: produce
+    targets: [w.chaofan]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «arroz frito (salteado)»? Escribe el pinyin.'}
+    answer: {typed: chao3 fan4, hanzi: 炒饭, pinyin: chǎofàn, meaning: arroz frito (salteado)}
+    comments: []
+  - id: x.read.chaofan
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.chaofan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 炒饭}
+    answer: {hanzi: 炒饭, pinyin: chǎofàn, meaning: arroz frito (salteado)}
+    comments: []
+  - id: x.dictation.chaomian
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.chaomian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chao3 mian4, hanzi: 炒面, pinyin: chǎomiàn, meaning: fideos salteados}
+    comments: []
+  - id: x.produce.chaomian
+    added: 2026-11-23
+    lang: es
+    type: produce
+    targets: [w.chaomian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «fideos salteados»? Escribe el pinyin.'}
+    answer: {typed: chao3 mian4, hanzi: 炒面, pinyin: chǎomiàn, meaning: fideos salteados}
+    comments: []
+  - id: x.read.chaomian
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.chaomian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 炒面}
+    answer: {hanzi: 炒面, pinyin: chǎomiàn, meaning: fideos salteados}
+    comments: []
+  - id: x.charsound.chao
+    added: 2026-11-23
+    lang: es
+    type: charsound
+    targets: [w.chaofan, w.chaomian]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 炒}
+    answer: {typed: chao3, hanzi: 炒, pinyin: chǎo, meaning: 'Sale en 炒饭 chǎofàn «arroz frito (salteado)», 炒面 chǎomiàn «fideos
+        salteados».'}
+    comments: []

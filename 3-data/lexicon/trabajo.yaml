@@ -122,6 +122,7 @@ entries:
     source: {origin: gaps, batch: 012-2026-10-19-querer-poder-y-matices, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 上 «subir, empezar» + 班 «turno». 我明天上班 «mañana trabajo». Al salir, 下班.'}
+      - {date: '2026-11-23', kind: linguistic, private: false, text: '上 «subir, entrar» + 班 «turno»: entrar en el turno de trabajo. Por eso 我今天不上班 «hoy no trabajo», aunque tengas empleo. Lo contrario, 下班 «salir del trabajo». 工作 es el trabajo en sí: 我在工作 «estoy trabajando».'}
   - id: w.zhishi
     use: hear
     role: content
@@ -375,3 +376,65 @@ entries:
       - {ref: w.ye.page, cue: 'cae: 第十页'}
     source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
     comments: []
+  - id: w.daxuesheng
+    use: say
+    role: content
+    kind: word
+    hanzi: 大学生
+    pinyin: dàxuéshēng
+    meaning: {es: estudiante universitario, en: university student}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: linguistic, private: false, text: 'La serie de la escuela: 小学生 xiǎoxuéshēng (primaria), 中学生 zhōngxuéshēng (secundaria) y 大学生 dàxuéshēng (universidad). Escuela pequeña, media y grande, más 生 «estudiante».'}
+  - id: w.xiaoxuesheng
+    use: hear
+    role: content
+    kind: word
+    hanzi: 小学生
+    pinyin: xiǎoxuéshēng
+    meaning: {es: alumno de primaria, en: primary school pupil}
+    relations: [w.daxuesheng, w.zhongxuesheng]
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+    comments: []
+  - id: w.zhongxuesheng
+    use: hear
+    role: content
+    kind: word
+    hanzi: 中学生
+    pinyin: zhōngxuéshēng
+    meaning: {es: alumno de secundaria, en: secondary school student}
+    relations: [w.daxuesheng, w.xiaoxuesheng]
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+    comments: []
+  - id: w.jiaoshi.room
+    use: say
+    role: content
+    kind: word
+    hanzi: 教室
+    pinyin: jiàoshì
+    meaning: {es: 'aula (el sitio)', en: classroom}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: linguistic, private: false, text: '教 jiào «enseñar» + 室 «sala»: la sala donde se enseña. Ojo: 教室 jiàoshì es el aula, no 老师 lǎoshī «profesor».'}
+  - id: w.xiaoyuan
+    use: hear
+    role: content
+    kind: word
+    hanzi: 校园
+    pinyin: xiàoyuán
+    meaning: {es: campus (de una escuela o universidad), en: campus}
+    connection: {kind: sound, with: [元, 远], text: '元 yuán da el sonido a 园 yuán, igual que a 远 yuǎn; alrededor, el recinto 囗.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: linguistic, private: false, text: '校 «escuela» (el de 学校) + 园 «recinto, jardín» (el de 公园): el recinto de la escuela.'}
+  - id: w.jixu
+    use: hear
+    role: content
+    kind: word
+    hanzi: 继续
+    pinyin: jìxù
+    meaning: {es: 'seguir, continuar', en: to continue}
+    connection: {kind: looks, with: [米], text: '继 jì lleva dentro un 米 encajonado, pero hoy no suena como él (mǐ): a la izquierda, 纟 «hilo», el hilo que sigue.'}
+    source: {origin: attic, batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15', rescued: 018-2026-11-23-paneles-y-contrastes}
+    comments:
+      - {date: '2026-11-23', kind: usage, private: false, text: '继续 + verbo: 继续聊天 «seguir charlando», 继续说 «sigue (hablando)». Salió en clase, en el texto de dos estudiantes que se conocen.'}

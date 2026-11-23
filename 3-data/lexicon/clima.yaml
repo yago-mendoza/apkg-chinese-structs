@@ -170,3 +170,15 @@ entries:
     comments:
       - {date: '2026-11-11', kind: usage, private: false, text: 'Para valorar algo: 五星 «cinco estrellas». 请给我五星！ «¡ponme cinco estrellas!».'}
       - {date: '2026-11-11', kind: linguistic, private: false, text: El mismo 星 de 星期 «semana» y 星星 «estrellas».}
+  - id: w.qingtian
+    use: say
+    role: content
+    kind: word
+    hanzi: 晴天
+    pinyin: qíngtiān
+    meaning: {es: 'día despejado, día de sol', en: sunny day}
+    connection: {kind: sound, with: [请, 清, 睛], text: '青 qīng da el sonido a 晴 qíng, igual que a 请 qǐng y 清 qīng; en 睛 jīng (眼睛) ya suena distinto.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'review-017, «Tus notas»: apuntes de clase', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: sound, private: false, text: 'qíng, no míng: sube como 情, no como 明.'}
+      - {date: '2026-11-23', kind: character, private: false, text: '日 «sol» + 青 qīng, que da el sonido (como en 请 y 清): el cielo limpio con sol.'}

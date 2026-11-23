@@ -3408,3 +3408,15 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «¡Ven rápido!»'}
     answer: {meaning: ¡Ven rápido!}
     comments: []
+  - id: x.cloze.yiyang-da
+    added: '2026-11-23'
+    lang: es
+    type: cloze
+    sentence: s.wo-he-ta-yiyang-da
+    gap: w.yiyang
+    targets: [w.yiyang]
+    context: [w.wo, w.he.and, w.ta.he, w.da]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Tengo la misma edad que él.» (sin 岁)'}
+    answer: {typed: yi2 yang4, hanzi: 一样, pinyin: yíyàng, meaning: 'igual, lo mismo'}
+    comments: []

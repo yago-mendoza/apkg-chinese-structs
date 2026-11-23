@@ -2520,3 +2520,65 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 毛, pinyin: máo, meaning: 'diez céntimos (de yuan), al hablar'}
     comments: []
+  - id: x.contrast.gou.enough
+    added: 2026-11-23
+    lang: es
+    type: contrast
+    group: g.gou-gou
+    targets: [w.gou.enough]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 够, pinyin: gòu, meaning: 'bastar, haber suficiente'}
+    comments: []
+  - id: x.dictation.gou.enough
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.gou.enough]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gou4, hanzi: 够, pinyin: gòu, meaning: 'bastar, haber suficiente'}
+    comments: []
+  - id: x.read.gou.enough
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.gou.enough]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 够}
+    answer: {hanzi: 够, pinyin: gòu, meaning: 'bastar, haber suficiente'}
+    comments: []
+  - id: x.produce.qian-bu-gou
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.qian-bu-gou
+    targets: [s.qian-bu-gou]
+    context: [w.qian, w.bu, w.gou.enough]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No llega el dinero.»'}
+    answer: {meaning: No llega el dinero.}
+    comments: []
+  - id: x.listen.laoban-ni-hai-mei-zhaoqian-ne
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.laoban-ni-hai-mei-zhaoqian-ne
+    targets: [s.laoban-ni-hai-mei-zhaoqian-ne]
+    context: [w.laoban, w.ni, w.hai.still, w.mei, w.zhaoqian, w.ne]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Jefe, todavía no me ha dado el cambio.'}
+    comments: []
+  - id: x.cloze.gou
+    added: '2026-11-23'
+    lang: es
+    type: cloze
+    sentence: s.qian-bu-gou
+    gap: w.gou.enough
+    targets: [w.gou.enough]
+    context: [w.qian, w.bu]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «No llega el dinero.»'}
+    answer: {typed: gou4, hanzi: 够, pinyin: gòu, meaning: 'bastar, haber suficiente'}
+    comments: []

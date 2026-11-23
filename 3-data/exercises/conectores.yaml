@@ -1231,3 +1231,54 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: 'Te he puesto cinco estrellas porque he querido yo, no porque me lo pidieras.'}
     comments: []
+  - id: x.cloze.cai.only
+    added: '2026-11-23'
+    lang: es
+    type: cloze
+    sentence: s.ta-shi-dian-cai-lai
+    gap: w.cai.only
+    targets: [w.cai.only]
+    context: [w.ta.he, w.dian.oclock, w.lai]
+    skills: [production, pinyin]
+    prompt: {text: '¿就 o 才? «No viene hasta las diez.» (más tarde de lo esperado)'}
+    answer: {typed: cai2, hanzi: 才, pinyin: cái, meaning: 'no… hasta (más tarde de lo esperado)'}
+    comments: []
+  - id: x.contrast.cai.only
+    added: 2026-11-23
+    lang: es
+    type: contrast
+    group: g.cai-cai
+    targets: [w.cai.only]
+    skills: [listening, tones, discrimination]
+    prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
+    answer: {hanzi: 才, pinyin: cái, meaning: no… hasta (más tarde de lo esperado); solo (menos de lo esperado)}
+    comments: []
+  - id: x.dictation.cai.only
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.cai.only]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: cai2, hanzi: 才, pinyin: cái, meaning: no… hasta (más tarde de lo esperado); solo (menos de lo esperado)}
+    comments: []
+  - id: x.read.cai.only
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.cai.only]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 才}
+    answer: {hanzi: 才, pinyin: cái, meaning: no… hasta (más tarde de lo esperado); solo (menos de lo esperado)}
+    comments: []
+  - id: x.listen.ta-shi-dian-cai-lai
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.ta-shi-dian-cai-lai
+    targets: [s.ta-shi-dian-cai-lai]
+    context: [w.ta.he, w.num.shi, w.dian.oclock, w.cai.only, w.lai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No viene hasta las diez.}
+    comments: []

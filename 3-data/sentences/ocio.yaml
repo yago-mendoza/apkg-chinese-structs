@@ -71,3 +71,14 @@ sentences:
       - {text: ？}
     translation: {en: 'Can I take photos here?', es: '¿Se pueden hacer fotos aquí?'}
     source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.women-chuqu-wan-ba
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: 'wǒmen', ref: w.women, text: 我们}
+      - {pinyin: 'chūqu', ref: w.chuqu, text: 出去}
+      - {pinyin: 'wán', ref: w.wan.play, text: 玩}
+      - {pinyin: 'ba', ref: w.ba.particle, text: 吧}
+      - {text: 。}
+    translation: {en: 'Let''s go out and have fun.', es: 'Salgamos a divertirnos.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}

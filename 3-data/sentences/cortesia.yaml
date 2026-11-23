@@ -962,3 +962,45 @@ sentences:
       - {text: 。}
     translation: {en: 'Yes, I want to buy you a coffee, but today I can''t any more.', es: 'Sí, quiero invitarte a un café, pero hoy ya no puedo.'}
     source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.mafan-ni-bang-wo-yixia
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: 'máfan', ref: w.mafan, text: 麻烦}
+      - {pinyin: 'nǐ', ref: w.ni, text: 你}
+      - {pinyin: 'bāng', ref: w.bang, text: 帮}
+      - {pinyin: 'wǒ', ref: w.wo, text: 我}
+      - {pinyin: 'yīxià', ref: w.yixia, text: 一下}
+      - {text: 。}
+    translation: {en: 'Could you give me a hand, please?', es: '¿Me echas una mano, por favor?'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.bie-kai-wanxiao-le
+    use: hear
+    kind: formula
+    segments:
+      - {pinyin: 'bié', ref: w.bie, text: 别}
+      - {pinyin: 'kāi wánxiào', ref: w.kaiwanxiao, text: 开玩笑}
+      - {pinyin: 'le', ref: w.le, text: 了}
+      - {text: ！}
+    translation: {en: 'Stop joking!', es: '¡No bromees!'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.wo-kai-wanxiao-de
+    use: hear
+    kind: formula
+    segments:
+      - {pinyin: 'wǒ', ref: w.wo, text: 我}
+      - {pinyin: 'kāi wánxiào', ref: w.kaiwanxiao, text: 开玩笑}
+      - {pinyin: 'de', ref: w.de, text: 的}
+      - {text: ！}
+    translation: {en: 'I''m just kidding!', es: '¡Es broma!'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.ni-dei-xiaoxin
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'nǐ', ref: w.ni, text: 你}
+      - {pinyin: 'děi', ref: w.dei, text: 得}
+      - {pinyin: 'xiǎoxīn', ref: w.xiaoxin, text: 小心}
+      - {text: 。}
+    translation: {en: 'You have to be careful.', es: 'Tienes que tener cuidado.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}

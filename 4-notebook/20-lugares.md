@@ -56,6 +56,9 @@
 - ✅🃏 出来 chūlai [ʈʂʰu˥ laɪ] · salir (hacia aquí) · _verbo_ · 出 «salir» + 来 «hacia aquí»: sales hacia donde está quien habla. 快出来！ «¡sal ya!», si te esperan fuera. 出去 es salir alejándose.
 - ✅🃏 出去 chūqu [ʈʂʰu˥ tɕʰy] · salir (hacia fuera) · _verbo_ · 出 es una planta que sale de un tiesto. 出来 chūlái es salir hacia aquí. · 出去啊？ «¿sales?» es un saludo al cruzarte con alguien que se va.
 - ✅🃏 车上 chēshang [ʈʂʰɤ˥ ʂɑŋ] · en el coche, en el autobús · _sustantivo_
+- ✅🃏 长城 Chángchéng [ʈʂʰɑŋ˧˥ ʈʂʰɤŋ˧˥] · la Gran Muralla · _nombre propio_ · 长 cháng «largo» + 城 chéng «muralla, ciudad amurallada»: la muralla larga. Mide más de veinte mil kilómetros: 长城有两万多公里.
+- ✅🃏 故宫 Gùgōng [ku˥˩ kʊŋ˥] · la Ciudad Prohibida (el antiguo palacio imperial de Pekín) · _nombre propio_ · 故 «antiguo, de antes» + 宫 «palacio»: el palacio de antes. En español se la llama Ciudad Prohibida; en chino, simplemente 故宫.
+- ✅🃏 老地方 lǎo dìfang [lɑʊ˧˩˧ ti˥˩ fɑŋ] · el sitio de siempre · _expresión_ · Palabra a palabra: 老 «viejo, de siempre» + 地方 «sitio»: el sitio de siempre. El mismo 老 de 老朋友 «amigo de toda la vida». · Al quedar basta con decirlo: 老地方？ «¿en el sitio de siempre?», o 老地方见！ «¡nos vemos donde siempre!».
 
 ## Aquí, allí, ¿dónde?
 
@@ -143,3 +146,6 @@ En las puertas: 推 «empuje» y 拉 «tire». Los dos llevan la mano 扌 a la i
 - ✅🃏 我在路上了。 · wǒ zài lùshang le · Ya estoy de camino.
 - ✅🃏 今天不要出去。 · jīntiān bú yào chūqu · Hoy no salgas.
 - ✅🃏 车上有很多人。 · chēshang yǒu hěn duō rén · En el autobús hay mucha gente.
+- ✅🃏 故宫有九千多个房间。 · Gùgōng yǒu jiǔ qiān duō ge fángjiān · La Ciudad Prohibida tiene más de nueve mil habitaciones.
+- ✅🃏 长城有两万多公里。 · Chángchéng yǒu liǎng wàn duō gōnglǐ · La Gran Muralla mide más de veinte mil kilómetros.
+- ✅🃏 老地方见！ · lǎo dìfang jiàn · ¡Nos vemos donde siempre!

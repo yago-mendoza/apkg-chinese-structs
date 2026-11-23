@@ -320,3 +320,13 @@ sentences:
       - {text: 。}
     translation: {en: I have a younger sister., es: Tengo una hermana pequeña.}
     source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.tamen-hen-xingfu
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'tāmen', ref: w.tamen, text: 他们}
+      - {pinyin: 'hěn', ref: w.hen, text: 很}
+      - {pinyin: 'xìngfú', ref: w.xingfu, text: 幸福}
+      - {text: 。}
+    translation: {en: 'They are very happy.', es: 'Son muy felices (con su vida).'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}

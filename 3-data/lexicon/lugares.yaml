@@ -598,3 +598,42 @@ entries:
     accept_pinyin_mismatch: 上 es átono en el habla
     source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
     comments: []
+  - id: w.changcheng
+    use: hear
+    role: content
+    kind: word
+    pos: nombre-propio
+    hanzi: 长城
+    pinyin: Chángchéng
+    meaning: {es: la Gran Muralla, en: the Great Wall}
+    connection: {kind: sound, with: [成], text: '成 chéng da el sonido a 城 chéng; al lado, 土 «tierra»: la muralla de tierra.'}
+    source: {origin: attic, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23', rescued: 018-2026-11-23-paneles-y-contrastes}
+    comments:
+      - {date: '2026-11-23', kind: linguistic, private: false, text: '长 cháng «largo» + 城 chéng «muralla, ciudad amurallada»: la muralla larga. Mide más de veinte mil kilómetros: 长城有两万多公里.'}
+  - id: w.gugong
+    use: hear
+    role: content
+    kind: word
+    pos: nombre-propio
+    hanzi: 故宫
+    pinyin: Gùgōng
+    meaning: {es: 'la Ciudad Prohibida (el antiguo palacio imperial de Pekín)', en: the Forbidden City}
+    level: 4
+    level_reason: 'nombre propio que no está en la lista; salió en clase y es la visita más famosa de Pekín'
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'review-017, «Tus notas»: apuntes de clase', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: linguistic, private: false, text: '故 «antiguo, de antes» + 宫 «palacio»: el palacio de antes. En español se la llama Ciudad Prohibida; en chino, simplemente 故宫.'}
+  - id: e.laodifang
+    use: say
+    role: content
+    kind: expression
+    hanzi: 老地方
+    pinyin: lǎo dìfang
+    accept_pinyin_mismatch: tono neutro en la última sílaba en el habla estándar; los diccionarios dan el tono de cita
+    meaning: {es: el sitio de siempre, en: the usual place}
+    level: 2
+    level_reason: 'no está en la lista; 老 y 地方 son HSK 1 y 2, y es muy de diario al quedar'
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: linguistic, private: false, text: 'Palabra a palabra: 老 «viejo, de siempre» + 地方 «sitio»: el sitio de siempre. El mismo 老 de 老朋友 «amigo de toda la vida».'}
+      - {date: '2026-11-23', kind: usage, private: false, text: 'Al quedar basta con decirlo: 老地方？ «¿en el sitio de siempre?», o 老地方见！ «¡nos vemos donde siempre!».'}

@@ -742,3 +742,52 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 星, pinyin: xīng, meaning: 'estrella (también en una valoración: 五星)'}
     comments: []
+  - id: x.dictation.qingtian
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.qingtian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: qing2 tian1, hanzi: 晴天, pinyin: qíngtiān, meaning: 'día despejado, día de sol'}
+    comments: []
+  - id: x.produce.qingtian
+    added: 2026-11-23
+    lang: es
+    type: produce
+    targets: [w.qingtian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «día despejado, día de sol»? Escribe el pinyin.'}
+    answer: {typed: qing2 tian1, hanzi: 晴天, pinyin: qíngtiān, meaning: 'día despejado, día de sol'}
+    comments: []
+  - id: x.read.qingtian
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.qingtian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 晴天}
+    answer: {hanzi: 晴天, pinyin: qíngtiān, meaning: 'día despejado, día de sol'}
+    comments: []
+  - id: x.listen.jintian-shi-qingtian
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.jintian-shi-qingtian
+    targets: [s.jintian-shi-qingtian]
+    context: [w.jintian, w.shi, w.qingtian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Hoy hace sol.}
+    comments: []
+  - id: x.produce.jintian-shi-qingtian
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.jintian-shi-qingtian
+    targets: [s.jintian-shi-qingtian]
+    context: [w.jintian, w.shi, w.qingtian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Hoy hace sol.»'}
+    answer: {meaning: Hoy hace sol.}
+    comments: []

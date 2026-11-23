@@ -214,3 +214,13 @@ sentences:
       - {text: 。}
     translation: {en: It is still very cold outside., es: Fuera sigue haciendo mucho frío.}
     source: {batch: 015-2026-10-31-volver-a-casa-y-para-entender, date: '2026-10-31', file: review-014-2026-10-26-duplicados-diagramas-y-recuadros.md, origin: review}
+  - id: s.jintian-shi-qingtian
+    use: say
+    kind: example
+    segments:
+      - {pinyin: 'jīntiān', ref: w.jintian, text: 今天}
+      - {pinyin: 'shì', ref: w.shi, text: 是}
+      - {pinyin: 'qíngtiān', ref: w.qingtian, text: 晴天}
+      - {text: 。}
+    translation: {en: 'It''s sunny today.', es: 'Hoy hace sol.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}

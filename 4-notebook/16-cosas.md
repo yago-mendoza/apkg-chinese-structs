@@ -22,7 +22,7 @@
 - ✅🃏 用 yòng [jʊŋ˥˩] · usar; con (un instrumento) · _verbo_ · Va antes de la acción: 我用筷子吃饭 «como con palillos». Primero con qué, luego qué haces.
 - ✅🃏 坐 zuò [tswɔ˥˩] · sentarse; ir en (un vehículo) · _verbo_ · 请坐 «siéntese»; 坐飞机 «ir en avión», 坐车 «ir en coche o autobús».
 - ✅🃏 进 jìn [tɕin˥˩] · entrar · _verbo_ · Pasar de fuera a dentro: 请进 «pase». 进来 «entrar hacia aquí», 进去 «entrar hacia allí».
-- ✅🃏 别 bié [pjɛ˧˥] · no (hagas): prohibir · _adverbio_
+- ✅🃏 别 bié [pjɛ˧˥] · no (hagas): prohibir · _adverbio_ · 别 + verbo prohíbe: 别走 «no te vayas», 别说 «no lo digas» (frente a 不说 «no lo digo»). En 别的 + cosa es «otro, distinto»: 别的东西 «otras cosas». Son dos usos del mismo hanzi, que de origen significaba «separar».
 - ✅🃏 听 tīng [tʰiŋ˥] · escuchar · _verbo_ · 口 «boca» a la izquierda. 听音乐 «escuchar música». · 💡 见 detrás de 听 o 看 dice que lo consigues: 听见 «oír» (te llega el sonido), 看见 «ver». Con 不 en medio, no: 听不见 «no oigo», 看不见 «no veo». Y 懂 es entenderlo: 听不懂 «lo oigo, pero no lo entiendo».
 - ✅🃏 生气 shēngqì [ʂɤŋ˥ tɕʰi˥˩] · enfadarse; enfadado · _adjetivo_ · 生 «producir» + 气 «aire, ánimo»: echar humo. 他生气了 «se ha enfadado».
 - ✅🃏 疼 téng [tʰɤŋ˧˥] · doler · _verbo_ · 疒 «enfermedad» por fuera. 好疼！ «¡qué daño!»: 好 delante de un adjetivo es «qué…», muy coloquial.
@@ -37,7 +37,7 @@
 - ✅🃏 等 děng [tɤŋ˧˩˧] · esperar · _verbo_ · 你等一下 «espera un momento» es de lo que más se oye.
 - ✅🃏 休息 xiūxi [ɕjoʊ˥ ɕi] · descansar · _verbo_ · Una persona 亻 junto a un árbol 木: descansa a su sombra. Debajo, en 息, uno mismo 自 (un ojo con un palito: verse a sí mismo) sobre su propio corazón 心.
 - ✅🃏 找 zhǎo [ʈʂɑʊ˧˩˧] · buscar · _verbo_ · 我在找我的手机 «estoy buscando mi móvil». Pedirlo: 帮我找一下. · 找 es casi 我 «yo», roto: le falta un trazo. Siempre andamos buscándonos a nosotros mismos, y todos estamos un poco rotos.
-- ✅🃏 拿 ná [na˧˥] · coger, llevar (en la mano) · _verbo_ · 帮我拿一下 «sujétamelo un momento». · Para coger algo con la mano, 拿; para recoger o retirar algo que te espera (dinero, un paquete), 取: 我去取钱.
+- ✅🃏 拿 ná [na˧˥] · coger, llevar (en la mano) · _verbo_ · 帮我拿一下 «sujétamelo un momento». · Para coger algo con la mano, 拿; para recoger o retirar algo que te espera (dinero, un paquete), 取: 我去取钱. · 💡 Tres «traer»: 拿来, lo coges con la mano y me lo acercas (el boli de la mesa); 带来 [HSK 2], te lo traes contigo al venir (mañana, de tu casa); 送来, te lo entregan (un paquete, la comida). 拿 es sujetar con la mano; 带, llevar contigo como sea: 我带手机 «llevo el móvil encima».
 - ✅🃏 得 děi · tener que · _verbo_ · Con esta lectura, děi, es «tener que», muy de hablar: 我得先复习一下笔记. El mismo hanzi se lee de, sin tono, en 觉得.
 - ✅🃏 离开 líkāi [li˧˥ kʰaɪ˥] · irse de, dejar (un sitio) · _verbo_ · Palabra a palabra: 离 «separarse» + 开 «abrir, partir».
 - ✅🃏 回答 huídá [xweɪ˧˥ ta˧˥] · responder · _verbo_ · Palabra a palabra: 回 «volver» + 答 «contestar»: devolver la palabra. 回答问题 «contestar una pregunta».

@@ -38,6 +38,7 @@ entries:
     comments:
       - {date: '2026-11-11', kind: usage, private: false, text: 'Al entrar en un restaurante te preguntan 几位？ «¿cuántos sois?» y contestas 两位 «dos». Es el 个 cortés: 一位老师 «un profesor».'}
       - {date: '2026-11-11', kind: teacher, private: false, text: 'En clase, la primera frase del camarero: 你好，几位？.'}
+      - {date: '2026-11-23', kind: tip, private: false, text: '人 es «persona», un sustantivo; 位 es el clasificador cortés de personas, como un 个 educado. Ninguno marca plural: 一位老师, 三位老师. Por eso se pregunta 几位？ o 几个人？, y no 几人, que suena a escrito.'}
   - id: w.dabao
     use: say
     use_reason: de clase y de todos los días en un restaurante, aunque sea HSK 5
@@ -45,11 +46,26 @@ entries:
     kind: word
     hanzi: 打包
     pinyin: dǎbāo
-    meaning: {es: para llevar; envolver lo que sobra para llevártelo, en: to pack (food) to take away}
+    meaning: {es: envolver para llevar (sobre todo lo que sobra), en: to pack (leftovers) to take away}
     source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
     comments:
-      - {date: '2026-11-11', kind: usage, private: false, text: 'Al pedir, 在这里吃还是打包？ «¿para tomar aquí o para llevar?». Al acabar, 可以打包吗？ «¿me lo pone para llevar?»: en China es normal llevarse lo que sobra.'}
+      - {date: '2026-11-11', kind: usage, private: false, text: 'Al acabar, 可以打包吗？ «¿me lo pone para llevar?»: en China es normal llevarse lo que sobra. Al pedir también se oye (在这里吃还是打包？), aunque ahí lo más natural es 带走: 在这里吃还是带走？.'}
       - {date: '2026-11-11', kind: linguistic, private: false, text: '打 «hacer (algo con las manos)» + 包 «paquete, bolsa»: hacer un paquete.'}
+  - id: w.daizou
+    use: say
+    role: content
+    kind: word
+    pos: verbo
+    hanzi: 带走
+    pinyin: dàizǒu
+    level: 2
+    level_reason: 'no está en la lista; 带 es HSK 2 y 走 HSK 1, y es lo de todos los días al pedir para llevar: nivel 2 estimado'
+    meaning: {es: 'llevarse; para llevar (al pedir comida)', en: 'to take away; to go (food)'}
+    source: {origin: inbox, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'chat: 带走 al pedir, 打包 para lo que sobra', date: '2026-11-11'}
+    comments:
+      - {date: '2026-11-11', kind: usage, private: false, text: 'Al pedir, lo más natural: 在这里吃还是带走？ «¿para tomar aquí o para llevar?». Al acabar, para llevarte lo que sobra, 打包: 可以打包吗？.'}
+      - {date: '2026-11-11', kind: linguistic, private: false, text: '带 «llevar consigo» + 走 «irse»: llevárselo.'}
+      - {date: '2026-11-23', kind: linguistic, private: false, text: '带 «llevar contigo» + una dirección: 带来 «traer» (hacia aquí), 带走 «llevarse» (de aquí), 带回去 «llevárselo de vuelta» (a donde estaba). Lo que cambia es la dirección; 带 sigue siendo llevarlo encima.'}
   - id: w.yigong
     use: say
     role: content
@@ -167,3 +183,28 @@ entries:
       - {ref: w.fen.cl, cue: 'cae: 一份饺子'}
     source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
     comments: []
+  - id: w.waimai
+    use: say
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 外卖
+    pinyin: wàimài
+    meaning: {es: 'comida a domicilio (o para llevar), pedida por el móvil', en: 'takeaway, food delivery'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: linguistic, private: false, text: '外 «fuera» + 卖 «vender»: lo que se vende para comer fuera del local. 点外卖 «pedir comida a domicilio».'}
+      - {date: '2026-11-23', kind: usage, private: false, text: 'Tres cosas distintas: 外卖, que te lo traen; 带走, pedir algo para llevar; 打包, que te lo envuelvan (sobre todo lo que sobra).'}
+  - id: w.zhaoqian
+    use: say
+    role: content
+    kind: word
+    pos: verbo
+    hanzi: 找钱
+    pinyin: zhǎoqián
+    meaning: {es: dar el cambio, en: to give change}
+    level: 3
+    level_reason: 'no está en la lista; 找 y 钱 son HSK 1, y se oye al pagar en efectivo'
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: tip, private: false, text: '找 sola es «buscar»: 我找钱 «busco dinero». Junto, 找钱 es «dar el cambio»: 找你五块 «te devuelvo cinco yuanes».'}

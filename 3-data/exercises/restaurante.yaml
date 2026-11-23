@@ -128,7 +128,7 @@ exercises:
     targets: [w.dabao]
     skills: [listening, pinyin, tones]
     prompt: {text: Escucha y escribe el pinyin., audio: true}
-    answer: {typed: da3 bao1, hanzi: 打包, pinyin: dǎbāo, meaning: para llevar; envolver lo que sobra para llevártelo}
+    answer: {typed: da3 bao1, hanzi: 打包, pinyin: dǎbāo, meaning: envolver para llevar (sobre todo lo que sobra)}
     comments: []
   - id: x.produce.dabao
     added: 2026-11-11
@@ -136,8 +136,8 @@ exercises:
     type: produce
     targets: [w.dabao]
     skills: [production, pinyin]
-    prompt: {text: '¿Cómo se dice «para llevar; envolver lo que sobra para llevártelo»? Escribe el pinyin.'}
-    answer: {typed: da3 bao1, hanzi: 打包, pinyin: dǎbāo, meaning: para llevar; envolver lo que sobra para llevártelo}
+    prompt: {text: '¿Cómo se dice «envolver para llevar (sobre todo lo que sobra)»? Escribe el pinyin.'}
+    answer: {typed: da3 bao1, hanzi: 打包, pinyin: dǎbāo, meaning: envolver para llevar (sobre todo lo que sobra)}
     comments: []
   - id: x.read.dabao
     added: 2026-11-11
@@ -146,7 +146,7 @@ exercises:
     targets: [w.dabao]
     skills: [reading, pinyin]
     prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 打包}
-    answer: {hanzi: 打包, pinyin: dǎbāo, meaning: para llevar; envolver lo que sobra para llevártelo}
+    answer: {hanzi: 打包, pinyin: dǎbāo, meaning: envolver para llevar (sobre todo lo que sobra)}
     comments: []
   - id: x.dictation.yigong
     added: 2026-11-11
@@ -430,7 +430,8 @@ exercises:
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: 'Vale, pago yo (la cuenta).'}
-    comments: []
+    comments:
+      - {date: '2026-11-23', kind: note, private: false, text: '买单: 买 «comprar» + 单 «la lista, la cuenta» (el mismo 单 de 菜单 «la lista de platos»).'}
   - id: x.produce.hao-wo-maidan
     added: 2026-11-11
     lang: es
@@ -451,7 +452,7 @@ exercises:
     context: [w.keyi, w.dabao, w.ma]
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Me lo pone para llevar?'}
+    answer: {meaning: '¿Me lo pone para llevar? (lo que ha sobrado)'}
     comments: []
   - id: x.produce.keyi-dabao-ma
     added: 2026-11-11
@@ -461,8 +462,8 @@ exercises:
     targets: [s.keyi-dabao-ma]
     context: [w.keyi, w.dabao, w.ma]
     skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿Me lo pone para llevar?»'}
-    answer: {meaning: '¿Me lo pone para llevar?'}
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Me lo pone para llevar? (lo que ha sobrado)»'}
+    answer: {meaning: '¿Me lo pone para llevar? (lo que ha sobrado)'}
     comments: []
   - id: x.listen.ni-yao-jirou-haishi-zhurou
     added: 2026-11-11
@@ -583,7 +584,7 @@ exercises:
     context: [w.dabao, w.ma]
     skills: [listening, comprehension]
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
-    answer: {meaning: '¿Para llevar?'}
+    answer: {meaning: '¿Se lo envuelvo para llevar?'}
     comments: []
   - id: x.produce.dabao-ma
     added: 2026-11-11
@@ -593,8 +594,8 @@ exercises:
     targets: [s.dabao-ma]
     context: [w.dabao, w.ma]
     skills: [production, speaking]
-    prompt: {text: 'Dilo en chino, en voz alta: «¿Para llevar?»'}
-    answer: {meaning: '¿Para llevar?'}
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Se lo envuelvo para llevar?»'}
+    answer: {meaning: '¿Se lo envuelvo para llevar?'}
     comments: []
   - id: x.listen.ni-meiyou-kan-caidan
     added: 2026-11-11
@@ -738,7 +739,8 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «Para llevar no, gracias: comemos aquí.»'}
     answer: {meaning: 'Para llevar no, gracias: comemos aquí.'}
-    comments: []
+    comments:
+      - {date: '2026-11-23', kind: note, private: false, text: 'Al pedir, 打包 y 带走 valen las dos; 不带走，我们在这里吃 también está bien. Para lo que sobra, solo 打包.'}
   - id: x.listen.dlg-dian-cai
     added: 2026-11-11
     lang: es
@@ -861,7 +863,8 @@ exercises:
     skills: [production, speaking]
     prompt: {text: 'Dilo en chino, en voz alta: «¿Algo más?»'}
     answer: {meaning: '¿Algo más?'}
-    comments: []
+    comments:
+      - {date: '2026-11-23', kind: note, private: false, text: 'El camarero también dice 还要点什么吗？ «¿quieren pedir algo más?».'}
   - id: x.produce.duile-zai-lai-yi-bei-shui
     added: 2026-11-11
     lang: es
@@ -1090,4 +1093,268 @@ exercises:
     skills: [listening, tones, discrimination]
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 份, pinyin: fèn, meaning: 'una ración, un plato (clasificador)'}
+    comments: []
+  - id: x.dictation.daizou
+    added: 2026-11-11
+    lang: es
+    type: listen
+    targets: [w.daizou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: dai4 zou3, hanzi: 带走, pinyin: dàizǒu, meaning: llevarse; para llevar (al pedir comida)}
+    comments: []
+  - id: x.produce.daizou
+    added: 2026-11-11
+    lang: es
+    type: produce
+    targets: [w.daizou]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «llevarse; para llevar (al pedir comida)»? Escribe el pinyin.'}
+    answer: {typed: dai4 zou3, hanzi: 带走, pinyin: dàizǒu, meaning: llevarse; para llevar (al pedir comida)}
+    comments: []
+  - id: x.read.daizou
+    added: 2026-11-11
+    lang: es
+    type: read
+    targets: [w.daizou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 带走}
+    answer: {hanzi: 带走, pinyin: dàizǒu, meaning: llevarse; para llevar (al pedir comida)}
+    comments: []
+  - id: x.produce.zai-zheli-chi-haishi-daizou
+    added: 2026-11-11
+    lang: es
+    type: produce
+    sentence: s.zai-zheli-chi-haishi-daizou
+    targets: [s.zai-zheli-chi-haishi-daizou]
+    context: [w.zai.at, w.zheli, w.chi, w.haishi, w.daizou]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Para tomar aquí o para llevar? (lo más natural al pedir)»'}
+    answer: {meaning: '¿Para tomar aquí o para llevar? (lo más natural al pedir)'}
+    comments: []
+  - id: x.nuance.dabao-daizou
+    added: '2026-11-23'
+    lang: es
+    type: nuance
+    targets: [w.dabao, w.daizou]
+    reveal: [s.zai-zheli-chi-haishi-daizou, s.keyi-dabao-ma]
+    skills: [comprehension, discrimination]
+    prompt: {text: '打包 y 带走: ¿cuál vale al pedir y cuál para llevarte lo que sobra?'}
+    answer: {meaning: 'Al pedir valen las dos: 带走 «me lo llevo», 打包 «envuélvamelo». Para lo que sobra, solo 打包.'}
+    comments: []
+  - id: x.nuance.zhao-zhaoqian
+    added: '2026-11-23'
+    lang: es
+    type: nuance
+    targets: [w.zhaoqian, w.zhao]
+    reveal: [s.laoban-ni-hai-mei-zhaoqian-ne]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我找钱 y 他还没找钱: ¿qué hace 找 en cada una?'}
+    answer: {meaning: 'En la primera, «buscar»: busco dinero. En la segunda, 找钱 es «dar el cambio».'}
+    comments: []
+  - id: x.nuance.hai-zai-ye
+    added: '2026-11-23'
+    lang: es
+    type: nuance
+    targets: [w.hai.also, w.zai.again, w.ye]
+    reveal: [s.wo-hai-yao-yi-bei, s.wo-ye-yao-yi-bei]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我还要一杯, 再来一杯 y 我也要一杯: ¿qué cambia?'}
+    answer: {meaning: '还要: uno más de lo que ya tienes. 再来: lo mismo otra vez. 也要: tú también, como otro que ya pidió.'}
+    comments: []
+  - id: x.nuance.ge-fen-jiaozi
+    added: '2026-11-23'
+    lang: es
+    type: nuance
+    targets: [w.fen.cl, w.ge]
+    reveal: [s.wo-yao-liang-ge-jiaozi, s.wo-yao-liang-fen-jiaozi]
+    skills: [comprehension, discrimination]
+    prompt: {text: '我要两个饺子 y 我要两份饺子: ¿cuántos jiaozi te traen?'}
+    answer: {meaning: 'Con 个, dos jiaozi sueltos. Con 份, dos raciones, con los que lleve cada una.'}
+    comments: []
+  - id: x.dictation.waimai
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.waimai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wai4 mai4, hanzi: 外卖, pinyin: wàimài, meaning: 'comida a domicilio (o para llevar), pedida por el móvil'}
+    comments: []
+  - id: x.produce.waimai
+    added: 2026-11-23
+    lang: es
+    type: produce
+    targets: [w.waimai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «comida a domicilio (o para llevar), pedida por el móvil»? Escribe el pinyin.'}
+    answer: {typed: wai4 mai4, hanzi: 外卖, pinyin: wàimài, meaning: 'comida a domicilio (o para llevar), pedida por el móvil'}
+    comments: []
+  - id: x.read.waimai
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.waimai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 外卖}
+    answer: {hanzi: 外卖, pinyin: wàimài, meaning: 'comida a domicilio (o para llevar), pedida por el móvil'}
+    comments: []
+  - id: x.dictation.zhaoqian
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.zhaoqian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhao3 qian2, hanzi: 找钱, pinyin: zhǎoqián, meaning: dar el cambio}
+    comments: []
+  - id: x.produce.zhaoqian
+    added: 2026-11-23
+    lang: es
+    type: produce
+    targets: [w.zhaoqian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «dar el cambio»? Escribe el pinyin.'}
+    answer: {typed: zhao3 qian2, hanzi: 找钱, pinyin: zhǎoqián, meaning: dar el cambio}
+    comments: []
+  - id: x.read.zhaoqian
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.zhaoqian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 找钱}
+    answer: {hanzi: 找钱, pinyin: zhǎoqián, meaning: dar el cambio}
+    comments: []
+  - id: x.listen.chi-bao-le-ma-bu-gou-hai-you
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.chi-bao-le-ma-bu-gou-hai-you
+    targets: [s.chi-bao-le-ma-bu-gou-hai-you]
+    context: [w.chi, w.bao.full, w.le, w.ma, w.bu, w.gou.enough, w.haiyou]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Ya estás lleno? Si no es bastante, hay más.'}
+    comments: []
+  - id: x.produce.wo-xiang-dian-waimai
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.wo-xiang-dian-waimai
+    targets: [s.wo-xiang-dian-waimai]
+    context: [w.wo, w.xiang, w.dian.order, w.waimai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero pedir comida a domicilio.»'}
+    answer: {meaning: Quiero pedir comida a domicilio.}
+    comments: []
+  - id: x.produce.wo-yao-yi-fen-chaofan
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.wo-yao-yi-fen-chaofan
+    targets: [s.wo-yao-yi-fen-chaofan]
+    context: [w.wo, w.yao, w.num.yi, w.fen.cl, w.chaofan]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero una de arroz frito.»'}
+    answer: {meaning: Quiero una de arroz frito.}
+    comments: []
+  - id: x.produce.zhege-chaomian-tai-haochi-le
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.zhege-chaomian-tai-haochi-le
+    targets: [s.zhege-chaomian-tai-haochi-le]
+    context: [w.zhe, w.ge, w.chaomian, w.tai, w.haochi, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Estos fideos salteados están buenísimos!»'}
+    answer: {meaning: ¡Estos fideos salteados están buenísimos!}
+    comments: []
+  - id: x.produce.na-jiu-zhege-ba
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.na-jiu-zhege-ba
+    targets: [s.na-jiu-zhege-ba]
+    context: [w.na.then, w.jiu, w.zhe, w.ge, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Pues este, entonces.»'}
+    answer: {meaning: 'Pues este, entonces.'}
+    comments: []
+  - id: x.listen.women-yao-san-ge-cai-hai-yao-mifan
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.women-yao-san-ge-cai-hai-yao-mifan
+    targets: [s.women-yao-san-ge-cai-hai-yao-mifan]
+    context: [w.women, w.yao, w.num.san, w.ge, w.cai, w.hai.also, w.mifan]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Queremos tres platos, y también arroz.'}
+    comments: []
+  - id: x.listen.wo-yao-liang-ge-jiaozi
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.wo-yao-liang-ge-jiaozi
+    targets: [s.wo-yao-liang-ge-jiaozi]
+    context: [w.wo, w.yao, w.liang, w.ge, w.jiaozi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero dos jiaozi (dos unidades).}
+    comments: []
+  - id: x.listen.wo-yao-liang-fen-jiaozi
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.wo-yao-liang-fen-jiaozi
+    targets: [s.wo-yao-liang-fen-jiaozi]
+    context: [w.wo, w.yao, w.liang, w.fen.cl, w.jiaozi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero dos raciones de jiaozi.}
+    comments: []
+  - id: x.produce.zai-lai-yidian-shui
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.zai-lai-yidian-shui
+    targets: [s.zai-lai-yidian-shui]
+    context: [w.zai.again, w.lai.order, w.yidian, w.shui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Un poco más de agua, por favor.»'}
+    answer: {meaning: 'Un poco más de agua, por favor.'}
+    comments: []
+  - id: x.listen.wo-hai-yao-yi-bei
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.wo-hai-yao-yi-bei
+    targets: [s.wo-hai-yao-yi-bei]
+    context: [w.wo, w.hai.also, w.yao, w.num.yi, w.bei.cl]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero otro vaso (uno más).}
+    comments: []
+  - id: x.listen.wo-ye-yao-yi-bei
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.wo-ye-yao-yi-bei
+    targets: [s.wo-ye-yao-yi-bei]
+    context: [w.wo, w.ye, w.yao, w.num.yi, w.bei.cl]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Yo también quiero uno.}
+    comments: []
+  - id: x.listen.hai-yao-yidian-ma
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.hai-yao-yidian-ma
+    targets: [s.hai-yao-yidian-ma]
+    context: [w.hai.also, w.yao, w.yidian, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Quieres un poco más?'}
     comments: []

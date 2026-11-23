@@ -736,3 +736,75 @@ sentences:
       - {text: 。}
     translation: {en: 'Got it, I''ll remember.', es: Ya me lo sé (no se me olvida).}
     source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.ni-shuo-de-you-daoli
+    use: say
+    kind: example
+    segments:
+      - {pinyin: 'nǐ', ref: w.ni, text: 你}
+      - {pinyin: 'shuō', ref: w.shuo, text: 说}
+      - {pinyin: 'de', ref: w.de.complement, text: 得}
+      - {pinyin: 'yǒu dàolǐ', ref: e.youdaoli, text: 有道理}
+      - {text: 。}
+    translation: {en: 'What you say makes sense.', es: 'Lo que dices tiene sentido.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.rang-wo-xiangxiang
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: 'ràng', ref: w.rang, text: 让}
+      - {pinyin: 'wǒ', ref: w.wo, text: 我}
+      - {pinyin: 'xiǎng', ref: w.xiang, text: 想}
+      - {pinyin: 'xiǎng', ref: w.xiang, text: 想}
+      - {text: 。}
+    translation: {en: 'Let me think.', es: 'Déjame pensarlo.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.ting-qilai-bucuo
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: 'tīng', ref: w.ting, text: 听}
+      - {pinyin: 'qǐlai', ref: w.qilai, text: 起来}
+      - {pinyin: 'búcuò', ref: w.bucuo, text: 不错}
+      - {text: 。}
+    translation: {en: 'Sounds good.', es: 'Suena bien.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.wo-mei-yijian
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: 'wǒ', ref: w.wo, text: 我}
+      - {pinyin: 'méi', ref: w.mei, text: 没}
+      - {pinyin: 'yìjiàn', ref: w.yijian, text: 意见}
+      - {text: 。}
+    translation: {en: 'Fine by me.', es: 'Por mí, bien.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.ni-kending-lei-le
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'nǐ', ref: w.ni, text: 你}
+      - {pinyin: 'kěndìng', ref: w.kending, text: 肯定}
+      - {pinyin: 'lèi', ref: w.lei, text: 累}
+      - {pinyin: 'le', ref: w.le, text: 了}
+      - {text: 。}
+    translation: {en: 'You must be tired.', es: 'Seguro que estás cansado.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.hai-xing
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: 'hái', ref: w.hai.still, text: 还}
+      - {pinyin: 'xíng', ref: w.xing.ok, text: 行}
+      - {text: 。}
+    translation: {en: 'It''s OK.', es: 'No está mal.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.bu-yao-zheyang
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: 'bú', ref: w.bu, text: 不, sandhi: true}
+      - {pinyin: 'yào', ref: w.yao, text: 要}
+      - {pinyin: 'zhèyàng', ref: w.zheyang, text: 这样}
+      - {text: ！}
+    translation: {en: 'Don''t do that!', es: '¡Así no!'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}

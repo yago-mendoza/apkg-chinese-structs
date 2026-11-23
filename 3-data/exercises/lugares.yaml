@@ -2169,3 +2169,129 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: En el autobús hay mucha gente.}
     comments: []
+  - id: x.dictation.changcheng
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.changcheng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chang2 cheng2, hanzi: 长城, pinyin: Chángchéng, meaning: la Gran Muralla}
+    comments: []
+  - id: x.read.changcheng
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.changcheng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 长城}
+    answer: {hanzi: 长城, pinyin: Chángchéng, meaning: la Gran Muralla}
+    comments: []
+  - id: x.dictation.gugong
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.gugong]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gu4 gong1, hanzi: 故宫, pinyin: Gùgōng, meaning: la Ciudad Prohibida (el antiguo palacio imperial de Pekín)}
+    comments: []
+  - id: x.read.gugong
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.gugong]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 故宫}
+    answer: {hanzi: 故宫, pinyin: Gùgōng, meaning: la Ciudad Prohibida (el antiguo palacio imperial de Pekín)}
+    comments: []
+  - id: x.dictation.laodifang
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [e.laodifang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: lao3 di4 fang5, hanzi: 老地方, pinyin: lǎo dìfang, meaning: el sitio de siempre}
+    comments: []
+  - id: x.produce.laodifang
+    added: 2026-11-23
+    lang: es
+    type: produce
+    targets: [e.laodifang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «el sitio de siempre»? Escribe el pinyin.'}
+    answer: {typed: lao3 di4 fang5, hanzi: 老地方, pinyin: lǎo dìfang, meaning: el sitio de siempre}
+    comments: []
+  - id: x.read.laodifang
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [e.laodifang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 老地方}
+    answer: {hanzi: 老地方, pinyin: lǎo dìfang, meaning: el sitio de siempre}
+    comments: []
+  - id: x.tones.laodifang
+    added: 2026-11-23
+    lang: es
+    type: tones
+    targets: [e.laodifang]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 老地方, pinyin: lao di fang}
+    answer: {typed: '345', hanzi: 老地方, pinyin: lǎo dìfang, meaning: el sitio de siempre}
+    comments: []
+  - id: x.listen.gugong-you-jiu-qian-duo-ge-fangjian
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.gugong-you-jiu-qian-duo-ge-fangjian
+    targets: [s.gugong-you-jiu-qian-duo-ge-fangjian]
+    context: [w.gugong, w.you.have, w.num.jiu, w.qian.thousand, w.duo, w.ge, w.fangjian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: La Ciudad Prohibida tiene más de nueve mil habitaciones.}
+    comments: []
+  - id: x.listen.changcheng-you-liang-wan-duo-gongli
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.changcheng-you-liang-wan-duo-gongli
+    targets: [s.changcheng-you-liang-wan-duo-gongli]
+    context: [w.changcheng, w.you.have, w.liang, w.wan.tenk, w.duo, w.gongli]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: La Gran Muralla mide más de veinte mil kilómetros.}
+    comments: []
+  - id: x.produce.changcheng-you-liang-wan-duo-gongli
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.changcheng-you-liang-wan-duo-gongli
+    targets: [s.changcheng-you-liang-wan-duo-gongli]
+    context: [w.changcheng, w.you.have, w.liang, w.wan.tenk, w.duo, w.gongli]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «La Gran Muralla mide más de veinte mil kilómetros.»'}
+    answer: {meaning: La Gran Muralla mide más de veinte mil kilómetros.}
+    comments: []
+  - id: x.produce.lao-difang-jian
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.lao-difang-jian
+    targets: [s.lao-difang-jian]
+    context: [e.laodifang, w.jian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Nos vemos donde siempre!»'}
+    answer: {meaning: ¡Nos vemos donde siempre!}
+    comments: []
+  - id: x.charsound.fang-2
+    added: 2026-11-23
+    lang: es
+    type: charsound
+    targets: [w.difang, e.laodifang]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 方}
+    answer: {typed: fang1, hanzi: 方, pinyin: fāng, meaning: 'Sale en 地方 dìfang «sitio, lugar», 老地方 lǎo dìfang «el sitio de siempre».'}
+    comments: []

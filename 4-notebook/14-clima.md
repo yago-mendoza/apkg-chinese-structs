@@ -19,6 +19,7 @@
 - ✅🃏 雨 yǔ [y˧˩˧] · lluvia · _sustantivo_ · Llover es 下雨 «cae la lluvia»: 下雨了 «está lloviendo».
 - ✅🃏 风 fēng [fɤŋ˥] · viento · _sustantivo_ · Con 大: 今天风很大 «hoy hace mucho viento». Es el fēng de tus deberes del 13: termina en -ng.
 - ✅🃏 星 xīng [ɕiŋ˥] · estrella (también en una valoración: 五星) · _sustantivo_ · Para valorar algo: 五星 «cinco estrellas». 请给我五星！ «¡ponme cinco estrellas!». · El mismo 星 de 星期 «semana» y 星星 «estrellas».
+- ✅🃏 晴天 qíngtiān [tɕʰiŋ˧˥ tʰjɛn˥] · día despejado, día de sol · _sustantivo_ · qíng, no míng: sube como 情, no como 明. · 日 «sol» + 青 qīng, que da el sonido (como en 请 y 清): el cielo limpio con sol.
 
 ## 热 rè y 日 rì
 
@@ -48,3 +49,4 @@ Casi iguales al oído y con el mismo tono: solo cambia la vocal. En 热, la e os
 - ✅🃏 好热！ · hǎo rè · ¡Qué calor!
 - ✅🃏 今天跟昨天一样冷。 · jīntiān gēn zuótiān yíyàng lěng · Hoy hace tanto frío como ayer.
 - ✅🃏 外面还是很冷。 · wàimiàn háishi hěn lěng · Fuera sigue haciendo mucho frío.
+- ✅🃏 今天是晴天。 · jīntiān shì qíngtiān · Hoy hace sol.

@@ -487,3 +487,13 @@ sentences:
       - {text: 。}
     translation: {en: I'm happy., es: Estoy contento.}
     source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.yiqie-dou-hao
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: 'yíqiè', ref: w.yiqie, text: 一切}
+      - {pinyin: 'dōu', ref: w.dou, text: 都}
+      - {pinyin: 'hǎo', ref: w.hao, text: 好}
+      - {text: 。}
+    translation: {en: 'All is well.', es: 'Todo bien.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}

@@ -3395,3 +3395,22 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Este movimiento es muy difícil.}
     comments: []
+  - id: x.nuance.bie-two
+    added: '2026-11-23'
+    lang: es
+    type: nuance
+    targets: [w.bie, w.biede]
+    skills: [comprehension, discrimination]
+    prompt: {text: '别走 y 别的东西: ¿qué hace 别 en cada una?'}
+    answer: {meaning: '别 + verbo prohíbe: 别走 «no te vayas». 别的 + cosa es «otro»: 别的东西 «otras cosas».'}
+    comments: []
+  - id: x.contrast.zhao
+    added: 2026-11-23
+    lang: es
+    type: contrast
+    group: g.zhao-qian-wo
+    targets: [w.zhao]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es zhǎo, «buscar»?'}
+    answer: {hanzi: 找, pinyin: zhǎo, meaning: buscar}
+    comments: []

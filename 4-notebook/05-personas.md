@@ -52,6 +52,10 @@
 - ✅🃏 病人 bìngrén [piŋ˥˩ ʐən˧˥] · enfermo, paciente · _sustantivo_
 - ✅🃏 身上 shēnshang [ʂən˥ ʂɑŋ] · encima (de uno), en el cuerpo · _sustantivo_
 - ✅🃏 老人 lǎorén [lɑʊ˧˩˧ ʐən˧˥] · persona mayor, anciano · _sustantivo_ · 老 «viejo» + 人 «persona». Para hablar de alguien mayor con respeto, 老人家 lǎorénjia.
+- ✅🃏 男生 nánshēng [nan˧˥ ʂɤŋ˥] · chico (sobre todo estudiante) · _sustantivo_ · Pareja de 女生 nǚshēng: chico y chica jóvenes, sobre todo estudiantes. Para un hombre adulto, 男人 nánrén.
+- ✅🃏 女朋友 nǚpéngyou [ny˧˩˧ pʰɤŋ˧˥ joʊ] · novia · _sustantivo_ · 女 «mujer» + 朋友 «amigo»: la novia. Una amiga a secas es 朋友, no 女朋友.
+- ✅🃏 男朋友 nánpéngyou [nan˧˥ pʰɤŋ˧˥ joʊ] · novio · _sustantivo_ · 男 «hombre» + 朋友 «amigo»: el novio. Igual que 女朋友, no es un amigo cualquiera.
+- ✅🃏 舒服 shūfu [ʂu˥ fu] · cómodo, a gusto; (con 不) encontrarse mal · _adjetivo_ · 这个床很舒服 «esta cama es muy cómoda». Y lo más útil: 我不舒服 «no me encuentro bien», para decir que estás malo sin dar detalles.
 
 ## 他, 她 y 它: los tres son tā
 
@@ -149,3 +153,7 @@ Empiezan casi igual y se confunden al oído y al decirlos.
 - ✅🃏 那个女人是我的老师。 · nà ge nǚrén shì wǒ de lǎoshī · Esa mujer es mi profesora.
 - ✅🃏 她们是我的朋友。 · tāmen shì wǒ de péngyou · Son mis amigas.
 - ✅🃏 那个老人是我爷爷。 · nà ge lǎorén shì wǒ yéye · Ese señor mayor es mi abuelo.
+- ✅🃏 他们是第一次见面。 · tāmen shì dì yī cì jiànmiàn · Es la primera vez que se ven.
+- ✅🃏 你有女朋友吗？ · nǐ yǒu nǚpéngyou ma · ¿Tienes novia?
+- ✅🃏 她有男朋友。 · tā yǒu nánpéngyou · Tiene novio.
+- ✅🃏 我不舒服。 · wǒ bù shūfu · No me encuentro bien.

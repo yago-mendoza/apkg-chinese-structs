@@ -10,11 +10,11 @@
 - ✅🃏 巧克力 qiǎokèlì [tɕʰjɑʊ˧˩˧ kʰɤ˥˩ li˥˩] · chocolate · _sustantivo_ · Transcripción fonética de «chocolate».
 - ✅🃏 牛肉 niúròu [njoʊ˧˥ ʐoʊ˥˩] · carne de ternera · _sustantivo_ · Modificador + núcleo: 牛 «vaca» especifica 肉 «carne».
 - ✅🃏 吃 chī [ʈʂʰɨ˥] · comer · _verbo_ · 口 «boca» a la izquierda, como en 喝, 吗 y 叫: lo que se hace con la boca.
-- ✅🃏 饭 fàn [fan˥˩] · comida; arroz cocido · _sustantivo_ · 饣 es 食 shí «comer, alimento» en su forma de lado; 反 fǎn da el sonido. · El radical de la comida y una mano (又, dentro de 反) que la lleva a la boca. · Para decir «comer» lo normal es 吃饭; 饭 suelto es «la comida» o «el arroz».
+- ✅🃏 饭 fàn [fan˥˩] · comida; arroz cocido · _sustantivo_ · 饣 es 食 shí «comer, alimento» en su forma de lado; 反 fǎn da el sonido. · El radical de la comida y una mano (又, dentro de 反) que la lleva a la boca. · Para decir «comer» lo normal es 吃饭; 饭 suelto es «la comida» o «el arroz». · 饭 es el arroz cocido y, por extensión, la comida: 吃饭 «comer». 米饭 es solo el arroz cocido, y 米 el grano crudo. En la mesa, 饭 es el arroz y 菜 cada plato que lo acompaña.
 - ✅🃏 吃饭 chīfàn [ʈʂʰɨ˥ fan˥˩] · comer (una comida) · _verbo_ · Verbo y objeto, «comer comida»: es la forma normal de decir «comer» cuando no dices qué. 吃饭了吗？ es también un saludo. · 吃饭 es comer, la comida en general; 米饭 es el arroz cocido. De alguien que no come nada, como un enfermo, se dice 他不吃东西.
 - ✅🃏 饭店 fàndiàn [fan˥˩ tjɛn˥˩] · restaurante · _sustantivo_ · 饭 «comida» + 店 «local»: el local de comida. En nombres propios suele ser un hotel (北京饭店); «restaurante» también se dice 餐厅 cāntīng [HSK 5]. · Un restaurante también es 餐厅 cāntīng [HSK 5], más de rótulo.
 - ✅🃏 好吃 hǎochī [xɑʊ˧˩˧ ʈʂʰɨ˥] · rico, bueno (de comer) · _adjetivo_ · 好 + verbo: «bueno de…». 好吃 «rico», 好看 «bonito», 好听 «agradable de oír».
-- ✅🃏 菜 cài [tsʰaɪ˥˩] · plato, comida; verdura · _sustantivo_ · 艹 «hierba» arriba: era la verdura. Hoy también «plato, cocina»: 中国菜 «comida china».
+- ✅🃏 菜 cài [tsʰaɪ˥˩] · plato, comida; verdura · _sustantivo_ · 艹 «hierba» arriba: era la verdura. Hoy también «plato, cocina»: 中国菜 «comida china». · Debajo de las plantas 艹 está 采 cǎi «recoger»: una mano 爫 sobre un árbol 木. Lo recogido del campo es la verdura, y de ahí el plato. 采 da también el sonido (cǎi, cài); se parece a 来 lái, pero no tiene que ver.
 - ✅🃏 茶 chá [ʈʂʰa˧˥] · té · _sustantivo_ · 艹 «hierba» arriba: una hoja. 喝茶 «tomar té». · Hierba 艹 que se corta a trocitos dentro de una casa: las hojas del té.
 - ✅🃏 苹果 píngguǒ [pʰiŋ˧˥ kwɔ˧˩˧] · manzana · _sustantivo_
 - ✅🃏 鱼 yú [y˧˥] · pez; pescado · _sustantivo_ · Es a la vez el animal y el pescado que se come: 我喜欢吃鱼 «me gusta el pescado».
@@ -49,6 +49,9 @@
 - ✅🃏 蔬菜 shūcài [ʂu˥ tsʰaɪ˥˩] · verdura · _sustantivo_
 - ✅🃏 豆腐 dòufu [toʊ˥˩ fu] · tofu · _sustantivo_ · 豆 «judía, soja» + 腐 «fermentado, blando»: la pasta blanda de soja.
 - ✅🃏 小吃 xiǎochī [ɕjɑʊ˧˩˧ ʈʂʰɨ˥] · tapas, comida callejera · _sustantivo_ · 小 «pequeño» + 吃 «comer»: lo que se come en poco. 小吃街 es la calle de puestos de comida.
+- ✅🃏 米 mǐ [mi˧˩˧] · arroz (el grano, sin cocer) · _sustantivo_ · En la mesa no se pide 米, sino 米饭 «arroz cocido»: 一碗米饭 «un cuenco de arroz». 米 es el grano, el que se compra. · Pictograma: granos de arroz alrededor de una cruz. No lo confundas con 来 lái «venir», que tiene un trazo horizontal más arriba.
+- ✅🃏 炒饭 chǎofàn [ʈʂʰɑʊ˧˩˧ fan˥˩] · arroz frito (salteado) · _sustantivo_ · 炒 + lo que se saltea: 炒饭 «arroz salteado», 炒面 «fideos salteados», 炒鸡蛋 «huevos revueltos».
+- ✅🃏 炒面 chǎomiàn [ʈʂʰɑʊ˧˩˧ mjɛn˥˩] · fideos salteados · _sustantivo_ · 炒 chǎo «saltear» + 面 «fideos». Igual 炒饭 «arroz frito».
 
 ## 喝 hē y 和 hé
 
@@ -92,6 +95,13 @@ Solo los separa el tono: se distinguen de oído por cómo sube o baja la voz.
 
 - 包 bāo · alto y plano: 打包
 - 饱 bǎo · baja y sube: 我吃饱了
+
+## 米 mǐ y 来 lái
+
+Se parecen en la cruz central con trazos a los lados. 来 lleva encima un trazo horizontal largo; 米, dos puntos.
+
+- 米 mǐ · dos puntos arriba y dos abajo, sin trazo largo encima
+- 来 lái · un trazo largo arriba y dos puntos debajo
 
 ## Frases
 

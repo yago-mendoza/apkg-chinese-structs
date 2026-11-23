@@ -48,6 +48,7 @@ entries:
     source: {origin: inbox, batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-11', text: '我没听清楚 «no lo he oído bien»: el problema es el sonido, no entenderlo. 清 lleva 青 qīng, que le da el sonido, como a 请 qǐng.'}
+      - {date: '2026-11-23', kind: usage, private: false, text: '清楚 detrás del verbo dice que algo se percibe bien: 听清楚 «oír bien», 看清楚 «ver bien», 说清楚 «explicar bien», 想清楚 «pensarlo hasta tenerlo claro». Si lo oyes bien pero no lo entiendes, 听不懂; si no lo oyes nada, 听不见.'}
     accept_pinyin_mismatch: '楚 va en tono neutro en el habla: qīngchu'
   - id: w.du
     use: say
@@ -258,3 +259,14 @@ entries:
     source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
     comments:
       - {date: '2026-11-11', kind: linguistic, private: false, text: '记 «apuntar, recordar» + 住 «quedarse fijo»: que se quede. 我记住了 «ya me lo sé».'}
+  - id: w.kending
+    use: hear
+    role: content
+    kind: word
+    hanzi: 肯定
+    pinyin: kěndìng
+    meaning: {es: 'seguro, sin duda', en: 'certainly, definitely'}
+    relations: [w.yiding]
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: usage, private: false, text: 'Como 一定 yídìng, «seguro que»: 你肯定累了 «seguro que estás cansado». 肯定 suena a convicción tuya; 一定, a deducción. Los dos son naturales en esa frase.'}

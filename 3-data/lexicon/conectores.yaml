@@ -39,6 +39,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: 'Tras 如果, marca la consecuencia, detrás del sujeto: 如果你喜欢，就买吧. En inglés se omite el «then»; en chino suele decirse.'}
+      - {date: '2026-11-23', kind: tip, private: false, text: 'La idea de 就: sin distancia entre una cosa y lo que sigue. Sin espera: 我就来 «voy enseguida». A, y en seguida B: 他一来，我就走 «en cuanto venga, me voy». Sin buscar más: 那里就好 «ahí mismo está bien», 就这个 «este mismo». Lo contrario es 才: tarde o poco.'}
   - id: w.suiran
     use: hear
     role: function
@@ -174,6 +175,7 @@ entries:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Solo en preguntas que dan a elegir: 你喝茶还是喝咖啡？ «¿tomas té o café?». La pregunta ya está en 还是: no lleva 吗.'}
       - {kind: linguistic, private: false, date: '2026-10-26', text: '还是 tiene otro uso: «aun así, sigo», 我还是不懂 «sigo sin entenderlo». Y en 他今年还是学生 son 还 «todavía» + 是 «ser»: «sigue siendo estudiante».', original: 'Háishi también tiene otros dos usos habituales: Wǒ háishi bù dǒng. → Sigo sin entender.'}
       - {date: '2026-10-31', kind: tip, private: false, text: '还 hái, 还是 háishi: 我还不懂 «todavía no lo entiendo»; 我还是不懂 «aun así, sigo sin entenderlo», después de que te lo expliquen. 你要水还是茶？ «¿agua o té?» (eliges); 水或者茶都可以 «agua o té, me da igual».'}
+      - {date: '2026-11-23', kind: linguistic, private: false, text: '还是 «o» (en preguntas) y 还是 «todavía, aun así» no son dos palabras que se escriban igual por casualidad: las dos vienen de 还 «todavía» + 是 «ser», que pasó a plantear la alternativa. 你喝茶还是咖啡？ «¿té o café?».'}
   - id: g.ba-ne.look
     kind: group
     basis: visual
@@ -248,6 +250,7 @@ entries:
     source: {origin: class, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: hoja de clase 2026-11-06, date: '2026-11-06'}
     comments:
       - {date: '2026-11-06', kind: linguistic, private: false, text: 'Al principio de la frase, 那 no es «ese»: es «entonces, pues». 那你太惨了！ «¡pues pobre de ti!», 那我们走吧 «pues vámonos».'}
+      - {date: '2026-11-23', kind: usage, private: false, text: 'En la conversación, 那 al principio es «pues, entonces»: 那好吧 «pues vale», 那我们走吧 «pues vámonos», 那就这个吧 «pues este». 那就 sirve para decidir.'}
   - id: w.yuanyin
     use: say
     role: content
@@ -302,3 +305,14 @@ entries:
     source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
     comments:
       - {date: '2026-11-11', kind: linguistic, private: false, text: 'El mismo 会 de «saber hacer» (我会说中文), aquí para lo que va a pasar: 我会在家附近喝咖啡 «tomaré un café cerca de casa», 明天会下雨 «mañana lloverá».'}
+  - id: w.cai.only
+    use: hear
+    role: function
+    kind: word
+    hanzi: 才
+    pinyin: cái
+    meaning: {es: 'no… hasta (más tarde de lo esperado); solo (menos de lo esperado)', en: 'not until; only'}
+    connection: {kind: sound, with: [在], text: '才 está dentro de 在 zài y antiguamente le daba el sonido; hoy ya no se parecen (cái, zài).'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: tip, private: false, text: '才 marca que algo llega tarde o se queda corto frente a lo que esperabas. 他十点才来 «no viene hasta las diez» (tarde). 我才二十岁 «solo tengo veinte años» (poco). Es lo contrario de 就, que lo presenta como pronto o directo.'}

@@ -7,7 +7,7 @@
 - ✅🃏 因为 yīnwèi [in˥ weɪ˥˩] · porque · _preposición_
 - ✅🃏 所以 suǒyǐ [swɔ˧˩˧ i˧˩˧] · así que, por eso · _conjunción_ · Va con 因为: 因为下雨，所以我不去. En chino se dicen los dos, la causa primero.
 - ✅🃏 如果 rúguǒ [ʐu˧˥ kwɔ˧˩˧] · si (condición) · _conjunción_
-- ✅🃏 就 jiù [tɕjoʊ˥˩] · entonces (consecuencia) · _adverbio_ · Tras 如果, marca la consecuencia, detrás del sujeto: 如果你喜欢，就买吧. En inglés se omite el «then»; en chino suele decirse.
+- ✅🃏 就 jiù [tɕjoʊ˥˩] · entonces (consecuencia) · _adverbio_ · Tras 如果, marca la consecuencia, detrás del sujeto: 如果你喜欢，就买吧. En inglés se omite el «then»; en chino suele decirse. · 💡 La idea de 就: sin distancia entre una cosa y lo que sigue. Sin espera: 我就来 «voy enseguida». A, y en seguida B: 他一来，我就走 «en cuanto venga, me voy». Sin buscar más: 那里就好 «ahí mismo está bien», 就这个 «este mismo». Lo contrario es 才: tarde o poco.
 - ✅🃏 虽然 suīrán [sweɪ˥ ʐan˧˥] · aunque · _conjunción_
 - ✅🃏 但是 dànshì [tan˥˩ ʂɨ˥˩] · pero · _conjunción_ · Con 虽然 se dicen los dos: 虽然很累，但是我很高兴.
 - ✅🃏 一边 yībiān [i˥ pjɛn˥] · mientras (一边…一边…) · _adverbio_ · 一边 + verbo + 一边 + verbo: dos cosas a la vez, 他一边吃一边说. Así se dice «leo y tomo té»: 和 no une acciones.
@@ -16,16 +16,17 @@
 - ✅🃏 也许 yěxǔ [jɛ˧˩˧ ɕy˧˩˧] · quizá · _adverbio_ · Va delante del verbo: 也许他不来 «quizá no venga». · 午 wǔ da el sonido a 许 xǔ: mismo tono, aunque hoy la vocal es otra (xu lleva ü).
 - ✅🃏 好吧 hǎo ba [xɑʊ˧˩˧ pa] · bueno, vale (aceptando) · _expresión_ · Palabra a palabra: 好 «bien» + 吧 «venga». Aceptas, a veces sin muchas ganas: «bueno, vale». 好的 es un «vale» sin más.
 - ✅🃏 又 yòu [joʊ˥˩] · otra vez (lo que ya ha pasado) · _adverbio_ · 又 cuenta una repetición que ya ha ocurrido: 他又来了 «ha vuelto a venir». Para lo que aún no ha pasado se usa 再: 我明天再来.
-- ✅🃏 还是 háishi [xaɪ˧˥ ʂɨ] · o (en una pregunta entre dos) · _conjunción_ · Solo en preguntas que dan a elegir: 你喝茶还是喝咖啡？ «¿tomas té o café?». La pregunta ya está en 还是: no lleva 吗. · 还是 tiene otro uso: «aun así, sigo», 我还是不懂 «sigo sin entenderlo». Y en 他今年还是学生 son 还 «todavía» + 是 «ser»: «sigue siendo estudiante». · 💡 还 hái, 还是 háishi: 我还不懂 «todavía no lo entiendo»; 我还是不懂 «aun así, sigo sin entenderlo», después de que te lo expliquen. 你要水还是茶？ «¿agua o té?» (eliges); 水或者茶都可以 «agua o té, me da igual».
+- ✅🃏 还是 háishi [xaɪ˧˥ ʂɨ] · o (en una pregunta entre dos) · _conjunción_ · Solo en preguntas que dan a elegir: 你喝茶还是喝咖啡？ «¿tomas té o café?». La pregunta ya está en 还是: no lleva 吗. · 还是 tiene otro uso: «aun así, sigo», 我还是不懂 «sigo sin entenderlo». Y en 他今年还是学生 son 还 «todavía» + 是 «ser»: «sigue siendo estudiante». · 💡 还 hái, 还是 háishi: 我还不懂 «todavía no lo entiendo»; 我还是不懂 «aun así, sigo sin entenderlo», después de que te lo expliquen. 你要水还是茶？ «¿agua o té?» (eliges); 水或者茶都可以 «agua o té, me da igual». · 还是 «o» (en preguntas) y 还是 «todavía, aun así» no son dos palabras que se escriban igual por casualidad: las dos vienen de 还 «todavía» + 是 «ser», que pasó a plantear la alternativa. 你喝茶还是咖啡？ «¿té o café?».
 - ✅🃏 最好 zuìhǎo [tsweɪ˥˩ xɑʊ˧˩˧] · lo mejor es (hacer algo); mejor · _adverbio_ · Delante del verbo, aconseja: 你最好问一下老师 «mejor pregúntale a la profesora».
 - ✅🃏 还有 háiyǒu [xaɪ˧˥ joʊ˧˩˧] · y además; todavía hay · _verbo_ · Para añadir algo: 还有，我明天不来 «y otra cosa: mañana no vengo». En una tienda, 还有吗？ «¿queda más?».
 - ✅🃏 或者 huòzhě [xwɔ˥˩ ʈʂɤ˧˩˧] · o (dando opciones, sin preguntar) · _conjunción_ · 或者 da opciones sin preguntar: 水或者茶都可以 «agua o té, me da igual». Para preguntar «¿esto o aquello?» se usa 还是: 你要水还是茶？.
-- ✅ 那 nà [na˥˩] · entonces, pues (para seguir lo que ha dicho otro) · _pronombre_ · Al principio de la frase, 那 no es «ese»: es «entonces, pues». 那你太惨了！ «¡pues pobre de ti!», 那我们走吧 «pues vámonos».
+- ✅ 那 nà [na˥˩] · entonces, pues (para seguir lo que ha dicho otro) · _pronombre_ · Al principio de la frase, 那 no es «ese»: es «entonces, pues». 那你太惨了！ «¡pues pobre de ti!», 那我们走吧 «pues vámonos». · En la conversación, 那 al principio es «pues, entonces»: 那好吧 «pues vale», 那我们走吧 «pues vámonos», 那就这个吧 «pues este». 那就 sirve para decidir.
 - ✅🃏 原因 yuányīn [ɥœn˧˥ in˥] · causa, motivo · _sustantivo_ · El 因 de 原因 es el mismo de 因为 «porque»: la causa.
 - ✅🃏 然后 ránhòu [ʐan˧˥ xoʊ˥˩] · después, luego · _conjunción_ · Para seguir hablando: 然后呢？ «¿y luego?». Para contar en orden: 先…，然后… «primero…, luego…».
 - ✅🃏 比如 bǐrú [pi˧˩˧ ʐu˧˥] · por ejemplo · _verbo_
 - ✅🃏 对了 duì le [tweɪ˥˩ lɤ] · por cierto; ¡ah, ya! · _expresión_ · Para cambiar de tema o acordarte de algo: 对了，你明天有时间吗？ «por cierto, ¿tienes tiempo mañana?». 也对 es otra cosa: «eso también es verdad». · Palabra a palabra: 对 «correcto» + 了, el cambio: «¡ah, cierto!», algo que acaba de venirte a la cabeza.
 - ✅ 会 huì [xweɪ˥˩] · (lo que va a pasar) va a, seguro que · _verbo_ · El mismo 会 de «saber hacer» (我会说中文), aquí para lo que va a pasar: 我会在家附近喝咖啡 «tomaré un café cerca de casa», 明天会下雨 «mañana lloverá».
+- ✅🃏 才 cái [tsʰaɪ˧˥] · no… hasta (más tarde de lo esperado); solo (menos de lo esperado) · _adverbio_ · 💡 才 marca que algo llega tarde o se queda corto frente a lo que esperabas. 他十点才来 «no viene hasta las diez» (tarde). 我才二十岁 «solo tengo veinte años» (poco). Es lo contrario de 就, que lo presenta como pronto o directo.
 
 ## 八 bā, 爸 bà y 吧 ba
 
@@ -110,3 +111,4 @@ Acaban igual, en shi; el primero opone, el segundo dice que algo no cambia.
 - ✅🃏 喜欢你的人很多。 · xǐhuan nǐ de rén hěn duō · Le gustas a mucha gente.
 - ✅🃏 所以现在我是老师了。 · suǒyǐ xiànzài wǒ shì lǎoshī le · Así que ahora el profesor soy yo.
 - ✅🃏 我给了你五星，因为我自己想给，不是因为你让我给的。 · wǒ gěi le nǐ wǔ xīng yīnwèi wǒ zìjǐ xiǎng gěi bú shì yīnwèi nǐ ràng wǒ gěi de · Te he puesto cinco estrellas porque he querido yo, no porque me lo pidieras.
+- ✅🃏 他十点才来。 · tā shí diǎn cái lái · No viene hasta las diez.

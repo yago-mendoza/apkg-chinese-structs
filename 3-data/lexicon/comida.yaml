@@ -82,6 +82,7 @@ entries:
       - {kind: character, private: false, date: '2026-10-01', text: '饣 es 食 shí «comer, alimento» en su forma de lado; 反 fǎn da el sonido.'}
       - {kind: mnemonic, private: false, date: '2026-10-01', text: 'El radical de la comida y una mano (又, dentro de 反) que la lleva a la boca.', original: 'Comer = radicla comida + manos'}
       - {kind: note, private: false, date: '2026-10-01', text: 'Para decir «comer» lo normal es 吃饭; 饭 suelto es «la comida» o «el arroz».', original: 'Pero chifan muchisimo mas "comer"'}
+      - {date: '2026-11-23', kind: usage, private: false, text: '饭 es el arroz cocido y, por extensión, la comida: 吃饭 «comer». 米饭 es solo el arroz cocido, y 米 el grano crudo. En la mesa, 饭 es el arroz y 菜 cada plato que lo acompaña.'}
   - id: w.chifan
     use: say
     role: content
@@ -124,6 +125,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: character, private: false, date: '2026-10-01', text: '艹 «hierba» arriba: era la verdura. Hoy también «plato, cocina»: 中国菜 «comida china».'}
+      - {date: '2026-11-23', kind: character, private: false, text: 'Debajo de las plantas 艹 está 采 cǎi «recoger»: una mano 爫 sobre un árbol 木. Lo recogido del campo es la verdura, y de ahí el plato. 采 da también el sonido (cǎi, cài); se parece a 来 lái, pero no tiene que ver.'}
   - id: w.cha
     use: say
     role: content
@@ -552,4 +554,52 @@ entries:
       - {ref: w.bao, cue: 'alto y plano: 打包'}
       - {ref: w.bao.full, cue: 'baja y sube: 我吃饱了'}
     source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+    comments: []
+  - id: w.mi
+    use: hear
+    role: content
+    kind: word
+    hanzi: 米
+    pinyin: mǐ
+    meaning: {es: 'arroz (el grano, sin cocer)', en: 'rice (uncooked)'}
+    source: {origin: review, batch: 018-2026-11-23-paneles-y-contrastes, file: review-017-2026-11-11-pedir-en-el-restaurante.md, date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: usage, private: false, text: 'En la mesa no se pide 米, sino 米饭 «arroz cocido»: 一碗米饭 «un cuenco de arroz». 米 es el grano, el que se compra.'}
+      - {date: '2026-11-23', kind: character, private: false, text: 'Pictograma: granos de arroz alrededor de una cruz. No lo confundas con 来 lái «venir», que tiene un trazo horizontal más arriba.'}
+  - id: w.chaofan
+    use: say
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 炒饭
+    pinyin: chǎofàn
+    meaning: {es: arroz frito (salteado), en: fried rice}
+    connection: {kind: sound, with: [少], text: '少 shǎo da el sonido a 炒 chǎo; al lado, 火 «fuego»: saltear al fuego.'}
+    level: 3
+    level_reason: 'no está en la lista; plato de todos los días, hecho con 饭 (HSK 1)'
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: linguistic, private: false, text: '炒 + lo que se saltea: 炒饭 «arroz salteado», 炒面 «fideos salteados», 炒鸡蛋 «huevos revueltos».'}
+  - id: w.chaomian
+    use: say
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 炒面
+    pinyin: chǎomiàn
+    meaning: {es: fideos salteados, en: fried noodles}
+    level: 4
+    level_reason: no está en la lista
+    source: {origin: attic, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11', rescued: 018-2026-11-23-paneles-y-contrastes}
+    comments:
+      - {date: '2026-11-23', kind: linguistic, private: false, text: '炒 chǎo «saltear» + 面 «fideos». Igual 炒饭 «arroz frito».'}
+  - id: g.mi-lai
+    kind: group
+    basis: visual
+    title: 米 mǐ y 来 lái
+    explanation: 'Se parecen en la cruz central con trazos a los lados. 来 lleva encima un trazo horizontal largo; 米, dos puntos.'
+    members:
+      - {ref: w.mi, cue: 'dos puntos arriba y dos abajo, sin trazo largo encima'}
+      - {ref: w.lai, cue: 'un trazo largo arriba y dos puntos debajo'}
+    source: {origin: review, batch: 018-2026-11-23-paneles-y-contrastes, file: review-017-2026-11-11-pedir-en-el-restaurante.md, date: '2026-11-23'}
     comments: []

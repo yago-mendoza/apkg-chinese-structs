@@ -45,6 +45,10 @@
 - ✅🃏 一半 yíbàn [i˧˥ pan˥˩] · la mitad · _número_ · 我要一半 «quiero la mitad». 一斤 es la mitad de un 公斤.
 - ✅🃏 大概 dàgài [ta˥˩ kaɪ˥˩] · aproximadamente; seguramente · _adverbio_ · 大概 va delante de la cantidad y 左右 detrás; juntos también: 他大概三十岁左右 «tendrá unos treinta».
 - ✅🃏 差 chà [ʈʂʰa˥˩] · faltar (para la hora); ser malo · _adjetivo_ · Para la hora: 差五分八点 «las ocho menos cinco». También «malo»: 这个很差 «esto es malo».
+- ✅🃏 分之 fēnzhī [fən˥ ʈʂɨ˥] · (en una fracción) partes de: 三分之二 «dos tercios» · _número_ · 💡 Al revés que en español: primero el de abajo. 三分之二 sān fēn zhī èr «de tres partes, dos» = 2/3. 二分之一 èr fēn zhī yī = 1/2 (no 五分之一, que es 1/5). Y 百分之十 «el diez por ciento».
+- ✅🃏 公里 gōnglǐ [kʊŋ˥ li˧˩˧] · kilómetro · _clasificador_ · El mismo 公 de 公斤 «kilo»: 公 marca la medida del sistema métrico. 里 lǐ era una medida china antigua de distancia.
+- ✅🃏 人口 rénkǒu [ʐən˧˥ kʰoʊ˧˩˧] · población (número de habitantes) · _sustantivo_ · 人 «persona» + 口 «boca»: las bocas que alimentar, los habitantes.
+- ✅🃏 第一次 dì yī cì [ti˥˩ i˥ tsʰɯ˥˩] · la primera vez · _expresión_ · 第一次 + verbo: 第一次来中国 «la primera vez que vengo a China». Delante de un sustantivo, con 的: 我们第一次见面的地方 «el sitio donde nos vimos por primera vez». 一 aquí suena yī, porque es un ordinal.
 
 ## 九 jiǔ y 就 jiù
 
@@ -257,3 +261,7 @@ Suenan igual, con el mismo tono. 五 es el número; 午 «mediodía» solo sale 
 - ✅🃏 我读了两遍。 · wǒ dú le liǎng biàn · Lo leí entero dos veces.
 - ✅🃏 再听一遍。 · zài tīng yí biàn · Escúchalo entero otra vez.
 - ✅🃏 我去过北京两次。 · wǒ qù guo Běijīng liǎng cì · He estado en Pekín dos veces.
+- ✅🃏 中国人口有十四亿。 · Zhōngguó rénkǒu yǒu shí sì yì · China tiene mil cuatrocientos millones de habitantes.
+- ✅🃏 三分之二。 · sān fēnzhī èr · Dos tercios.
+- ✅🃏 二分之一。 · èr fēnzhī yī · Un medio.
+- ✅🃏 零点二。 · líng diǎn èr · Cero coma dos.

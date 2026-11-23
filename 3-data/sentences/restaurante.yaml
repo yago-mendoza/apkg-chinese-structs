@@ -74,7 +74,7 @@ sentences:
       - {pinyin: dǎbāo, ref: w.dabao, text: 打包}
       - {pinyin: ma, ref: w.ma, text: 吗}
       - {text: ？}
-    translation: {en: 'Can I take it away?', es: '¿Me lo pone para llevar?'}
+    translation: {en: 'Can you pack it up for me? (the leftovers)', es: '¿Me lo pone para llevar? (lo que ha sobrado)'}
     source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
   - id: s.ni-yao-jirou-haishi-zhurou
     use: say
@@ -145,7 +145,7 @@ sentences:
       - {pinyin: dǎbāo, ref: w.dabao, text: 打包}
       - {pinyin: ma, ref: w.ma, text: 吗}
       - {text: ？}
-    translation: {en: 'To take away?', es: '¿Para llevar?'}
+    translation: {en: 'Shall I pack it up for you?', es: '¿Se lo envuelvo para llevar?'}
     source: {origin: class, batch: 017-2026-11-11-pedir-en-el-restaurante, file: hoja de clase 2026-11-09, date: '2026-11-09'}
   - id: s.ni-meiyou-kan-caidan
     use: hear
@@ -243,6 +243,18 @@ sentences:
       - {text: ？}
     translation: {en: 'For here or to go?', es: '¿Para tomar aquí o para llevar?'}
     source: {origin: inbox, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 2026-11-11_para-llevar.md, date: '2026-11-11', with_class: '2026-11-09'}
+  - id: s.zai-zheli-chi-haishi-daizou
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: zài, ref: w.zai.at, text: 在}
+      - {pinyin: zhèlǐ, ref: w.zheli, text: 这里}
+      - {pinyin: chī, ref: w.chi, text: 吃}
+      - {pinyin: háishi, ref: w.haishi, text: 还是}
+      - {pinyin: dàizǒu, ref: w.daizou, text: 带走}
+      - {text: ？}
+    translation: {en: 'For here or to go?', es: '¿Para tomar aquí o para llevar? (lo más natural al pedir)'}
+    source: {origin: inbox, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'chat: 带走 al pedir, 打包 para lo que sobra', date: '2026-11-11'}
   - id: s.bu-dabao-zai-zheli-chi
     use: say
     kind: example
@@ -642,3 +654,152 @@ sentences:
       - {text: 。}
     translation: {en: The restaurant is on the second floor., es: El restaurante está en el segundo piso.}
     source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.chi-bao-le-ma-bu-gou-hai-you
+    use: hear
+    kind: formula
+    segments:
+      - {pinyin: 'chī', ref: w.chi, text: 吃}
+      - {pinyin: 'bǎo', ref: w.bao.full, text: 饱}
+      - {pinyin: 'le', ref: w.le, text: 了}
+      - {pinyin: 'ma', ref: w.ma, text: 吗}
+      - {text: ？}
+      - {pinyin: 'bú', ref: w.bu, text: 不, sandhi: true}
+      - {pinyin: 'gòu', ref: w.gou.enough, text: 够}
+      - {pinyin: 'háiyǒu', ref: w.haiyou, text: 还有}
+      - {text: 。}
+    translation: {en: 'Are you full? If it''s not enough, there''s more.', es: '¿Ya estás lleno? Si no es bastante, hay más.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.wo-xiang-dian-waimai
+    use: say
+    kind: example
+    segments:
+      - {pinyin: 'wǒ', ref: w.wo, text: 我}
+      - {pinyin: 'xiǎng', ref: w.xiang, text: 想}
+      - {pinyin: 'diǎn', ref: w.dian.order, text: 点}
+      - {pinyin: 'wàimài', ref: w.waimai, text: 外卖}
+      - {text: 。}
+    translation: {en: 'I want to order a delivery.', es: 'Quiero pedir comida a domicilio.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.wo-yao-yi-fen-chaofan
+    use: say
+    kind: example
+    segments:
+      - {pinyin: 'wǒ', ref: w.wo, text: 我}
+      - {pinyin: 'yào', ref: w.yao, text: 要}
+      - {pinyin: 'yí', ref: w.num.yi, text: 一, sandhi: true}
+      - {pinyin: 'fèn', ref: w.fen.cl, text: 份}
+      - {pinyin: 'chǎofàn', ref: w.chaofan, text: 炒饭}
+      - {text: 。}
+    translation: {en: 'I''d like a portion of fried rice.', es: 'Quiero una de arroz frito.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.zhege-chaomian-tai-haochi-le
+    use: say
+    kind: example
+    segments:
+      - {pinyin: 'zhè', ref: w.zhe, text: 这}
+      - {pinyin: 'ge', ref: w.ge, text: 个}
+      - {pinyin: 'chǎomiàn', ref: w.chaomian, text: 炒面}
+      - {pinyin: 'tài', ref: w.tai, text: 太}
+      - {pinyin: 'hǎochī', ref: w.haochi, text: 好吃}
+      - {pinyin: 'le', ref: w.le, text: 了}
+      - {text: ！}
+    translation: {en: 'These fried noodles are delicious!', es: '¡Estos fideos salteados están buenísimos!'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.na-jiu-zhege-ba
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: 'nà', ref: w.na.then, text: 那}
+      - {pinyin: 'jiù', ref: w.jiu, text: 就}
+      - {pinyin: 'zhè', ref: w.zhe, text: 这}
+      - {pinyin: 'ge', ref: w.ge, text: 个}
+      - {pinyin: 'ba', ref: w.ba.particle, text: 吧}
+      - {text: 。}
+    translation: {en: 'Then this one.', es: 'Pues este, entonces.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.women-yao-san-ge-cai-hai-yao-mifan
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'wǒmen', ref: w.women, text: 我们}
+      - {pinyin: 'yào', ref: w.yao, text: 要}
+      - {pinyin: 'sān', ref: w.num.san, text: 三}
+      - {pinyin: 'ge', ref: w.ge, text: 个}
+      - {pinyin: 'cài', ref: w.cai, text: 菜}
+      - {text: ，}
+      - {pinyin: 'hái', ref: w.hai.also, text: 还}
+      - {pinyin: 'yào', ref: w.yao, text: 要}
+      - {pinyin: 'mǐfàn', ref: w.mifan, text: 米饭}
+      - {text: 。}
+    translation: {en: 'We''d like three dishes, and rice too.', es: 'Queremos tres platos, y también arroz.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.wo-yao-liang-ge-jiaozi
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'wǒ', ref: w.wo, text: 我}
+      - {pinyin: 'yào', ref: w.yao, text: 要}
+      - {pinyin: 'liǎng', ref: w.liang, text: 两}
+      - {pinyin: 'ge', ref: w.ge, text: 个}
+      - {pinyin: 'jiǎozi', ref: w.jiaozi, text: 饺子}
+      - {text: 。}
+    translation: {en: 'I''d like two dumplings.', es: 'Quiero dos jiaozi (dos unidades).'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.wo-yao-liang-fen-jiaozi
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'wǒ', ref: w.wo, text: 我}
+      - {pinyin: 'yào', ref: w.yao, text: 要}
+      - {pinyin: 'liǎng', ref: w.liang, text: 两}
+      - {pinyin: 'fèn', ref: w.fen.cl, text: 份}
+      - {pinyin: 'jiǎozi', ref: w.jiaozi, text: 饺子}
+      - {text: 。}
+    translation: {en: 'I''d like two portions of dumplings.', es: 'Quiero dos raciones de jiaozi.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.zai-lai-yidian-shui
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: 'zài', ref: w.zai.again, text: 再}
+      - {pinyin: 'lái', ref: w.lai.order, text: 来}
+      - {pinyin: 'yìdiǎn', ref: w.yidian, text: 一点, sandhi: true}
+      - {pinyin: 'shuǐ', ref: w.shui, text: 水}
+      - {text: 。}
+    translation: {en: 'A bit more water, please.', es: 'Un poco más de agua, por favor.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.wo-hai-yao-yi-bei
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'wǒ', ref: w.wo, text: 我}
+      - {pinyin: 'hái', ref: w.hai.also, text: 还}
+      - {pinyin: 'yào', ref: w.yao, text: 要}
+      - {pinyin: 'yì', ref: w.num.yi, text: 一, sandhi: true}
+      - {pinyin: 'bēi', ref: w.bei.cl, text: 杯}
+      - {text: 。}
+    translation: {en: 'I''d like another glass.', es: 'Quiero otro vaso (uno más).'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.wo-ye-yao-yi-bei
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'wǒ', ref: w.wo, text: 我}
+      - {pinyin: 'yě', ref: w.ye, text: 也}
+      - {pinyin: 'yào', ref: w.yao, text: 要}
+      - {pinyin: 'yì', ref: w.num.yi, text: 一, sandhi: true}
+      - {pinyin: 'bēi', ref: w.bei.cl, text: 杯}
+      - {text: 。}
+    translation: {en: 'I''d like one too.', es: 'Yo también quiero uno.'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.hai-yao-yidian-ma
+    use: hear
+    kind: formula
+    segments:
+      - {pinyin: 'hái', ref: w.hai.also, text: 还}
+      - {pinyin: 'yào', ref: w.yao, text: 要}
+      - {pinyin: 'yìdiǎn', ref: w.yidian, text: 一点, sandhi: true}
+      - {pinyin: 'ma', ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Would you like a bit more?', es: '¿Quieres un poco más?'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}

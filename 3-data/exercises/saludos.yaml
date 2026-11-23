@@ -2244,3 +2244,14 @@ exercises:
     answer: {typed: xin1, hanzi: 心, pinyin: xīn, meaning: 'Sale en 开心 kāixīn «contento, alegre», 小心 xiǎoxīn «¡cuidado!; tener
         cuidado», 放心 fàngxīn «estar tranquilo, no preocuparse».'}
     comments: []
+  - id: x.produce.yiqie-dou-hao
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.yiqie-dou-hao
+    targets: [s.yiqie-dou-hao]
+    context: [w.yiqie, w.dou, w.hao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Todo bien.»'}
+    answer: {meaning: Todo bien.}
+    comments: []

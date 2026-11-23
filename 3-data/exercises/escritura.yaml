@@ -674,3 +674,13 @@ exercises:
     prompt: {text: '¿Cuál es el guǒ de 水果 y 苹果?'}
     answer: {hanzi: 果, pinyin: guǒ, meaning: 'fruto (en 水果, 苹果)'}
     comments: []
+  - id: x.contrast.xian.now
+    added: '2026-11-23'
+    lang: es
+    type: contrast
+    group: g.xian-wan
+    targets: [c.xian.now]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es xiàn, el de 现在 «ahora»?'}
+    answer: {hanzi: 现, pinyin: xiàn, meaning: 'actual, presente (en 现在)'}
+    comments: []

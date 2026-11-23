@@ -2975,3 +2975,143 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Sí, quiero invitarte a un café, pero hoy ya no puedo.»'}
     answer: {meaning: 'Sí, quiero invitarte a un café, pero hoy ya no puedo.'}
     comments: []
+  - id: x.nuance.yao-dei-xiaoxin
+    added: '2026-11-23'
+    lang: es
+    type: nuance
+    targets: [w.xiaoxin, w.dei]
+    reveal: [s.ni-yao-xiaoxin, s.ni-dei-xiaoxin]
+    skills: [comprehension, discrimination]
+    prompt: {text: '你要小心 y 你得小心: ¿qué matiz tiene cada una?'}
+    answer: {meaning: 'Con 要, un aviso: «ten cuidado». Con 得, es necesario: «tienes que tener cuidado», más fuerte.'}
+    comments: []
+  - id: x.cloze.mafan
+    added: '2026-11-23'
+    lang: es
+    type: cloze
+    sentence: s.mafan-ni-bang-wo-yixia
+    gap: w.mafan
+    targets: [w.mafan]
+    context: [w.ni, w.bang, w.wo, w.yixia]
+    skills: [production, pinyin]
+    prompt: {text: '¿请问, 麻烦 o 对不起? Pides a alguien que te eche una mano: «¿Me echas una mano, por favor?»'}
+    answer: {typed: ma2 fan, hanzi: 麻烦, pinyin: máfan, meaning: 'molestar (al pedir un favor)', accept: [ma2 fan5, ma2 fan2]}
+    accept_pinyin_mismatch: tono neutro en la segunda sílaba en el habla estándar
+    comments: []
+  - id: x.dictation.mafan
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.mafan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ma2 fan5, hanzi: 麻烦, pinyin: máfan, meaning: molestar (al pedir un favor); molestia}
+    comments: []
+  - id: x.read.mafan
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.mafan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 麻烦}
+    answer: {hanzi: 麻烦, pinyin: máfan, meaning: molestar (al pedir un favor); molestia}
+    comments: []
+  - id: x.tones.mafan
+    added: 2026-11-23
+    lang: es
+    type: tones
+    targets: [w.mafan]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 麻烦, pinyin: ma fan}
+    answer: {typed: '25', hanzi: 麻烦, pinyin: máfan, meaning: molestar (al pedir un favor); molestia}
+    comments: []
+  - id: x.dictation.youdaoli
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [e.youdaoli]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: you3 dao4 li3, hanzi: 有道理, pinyin: yǒu dàolǐ, meaning: tiene sentido; tienes razón}
+    comments: []
+  - id: x.produce.youdaoli
+    added: 2026-11-23
+    lang: es
+    type: produce
+    targets: [e.youdaoli]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «tiene sentido; tienes razón»? Escribe el pinyin.'}
+    answer: {typed: you3 dao4 li3, hanzi: 有道理, pinyin: yǒu dàolǐ, meaning: tiene sentido; tienes razón}
+    comments: []
+  - id: x.read.youdaoli
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [e.youdaoli]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 有道理}
+    answer: {hanzi: 有道理, pinyin: yǒu dàolǐ, meaning: tiene sentido; tienes razón}
+    comments: []
+  - id: x.dictation.yijian
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.yijian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yi4 jian4, hanzi: 意见, pinyin: yìjiàn, meaning: opinión; objeción}
+    comments: []
+  - id: x.read.yijian
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.yijian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 意见}
+    answer: {hanzi: 意见, pinyin: yìjiàn, meaning: opinión; objeción}
+    comments: []
+  - id: x.produce.mafan-ni-bang-wo-yixia
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.mafan-ni-bang-wo-yixia
+    targets: [s.mafan-ni-bang-wo-yixia]
+    context: [w.mafan, w.ni, w.bang, w.wo, w.yixia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Me echas una mano, por favor?»'}
+    answer: {meaning: '¿Me echas una mano, por favor?'}
+    comments: []
+  - id: x.listen.bie-kai-wanxiao-le
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.bie-kai-wanxiao-le
+    targets: [s.bie-kai-wanxiao-le]
+    context: [w.bie, w.kaiwanxiao, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡No bromees!}
+    comments: []
+  - id: x.listen.wo-kai-wanxiao-de
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.wo-kai-wanxiao-de
+    targets: [s.wo-kai-wanxiao-de]
+    context: [w.wo, w.kaiwanxiao, w.de]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Es broma!}
+    comments: []
+  - id: x.listen.ni-dei-xiaoxin
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.ni-dei-xiaoxin
+    targets: [s.ni-dei-xiaoxin]
+    context: [w.ni, w.dei, w.xiaoxin]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tienes que tener cuidado.}
+    comments: []

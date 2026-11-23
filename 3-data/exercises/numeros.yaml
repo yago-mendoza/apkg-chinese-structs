@@ -2761,3 +2761,157 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 遍, pinyin: biàn, meaning: vez (de principio a fin)}
     comments: []
+  - id: x.dictation.fenzhi
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.fenzhi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fen1 zhi1, hanzi: 分之, pinyin: fēnzhī, meaning: '(en una fracción) partes de: 三分之二 «dos tercios»'}
+    comments: []
+  - id: x.read.fenzhi
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.fenzhi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 分之}
+    answer: {hanzi: 分之, pinyin: fēnzhī, meaning: '(en una fracción) partes de: 三分之二 «dos tercios»'}
+    comments: []
+  - id: x.dictation.gongli
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.gongli]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: gong1 li3, hanzi: 公里, pinyin: gōnglǐ, meaning: kilómetro}
+    comments: []
+  - id: x.produce.gongli
+    added: 2026-11-23
+    lang: es
+    type: produce
+    targets: [w.gongli]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «kilómetro»? Escribe el pinyin.'}
+    answer: {typed: gong1 li3, hanzi: 公里, pinyin: gōnglǐ, meaning: kilómetro}
+    comments: []
+  - id: x.read.gongli
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.gongli]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 公里}
+    answer: {hanzi: 公里, pinyin: gōnglǐ, meaning: kilómetro}
+    comments: []
+  - id: x.dictation.renkou
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.renkou]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ren2 kou3, hanzi: 人口, pinyin: rénkǒu, meaning: población (número de habitantes)}
+    comments: []
+  - id: x.read.renkou
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.renkou]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 人口}
+    answer: {hanzi: 人口, pinyin: rénkǒu, meaning: población (número de habitantes)}
+    comments: []
+  - id: x.dictation.diyici
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.diyici]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: di4 yi1 ci4, hanzi: 第一次, pinyin: dì yī cì, meaning: la primera vez}
+    comments: []
+  - id: x.produce.diyici
+    added: 2026-11-23
+    lang: es
+    type: produce
+    targets: [w.diyici]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «la primera vez»? Escribe el pinyin.'}
+    answer: {typed: di4 yi1 ci4, hanzi: 第一次, pinyin: dì yī cì, meaning: la primera vez}
+    comments: []
+  - id: x.read.diyici
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.diyici]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 第一次}
+    answer: {hanzi: 第一次, pinyin: dì yī cì, meaning: la primera vez}
+    comments: []
+  - id: x.tones.diyici
+    added: 2026-11-23
+    lang: es
+    type: tones
+    targets: [w.diyici]
+    skills: [tones, pinyin]
+    refs: []
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 第一次, pinyin: di yi ci}
+    answer: {typed: '414', hanzi: 第一次, pinyin: dì yī cì, meaning: la primera vez}
+    comments: []
+  - id: x.listen.zhongguo-renkou-you-shisi-yi
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.zhongguo-renkou-you-shisi-yi
+    targets: [s.zhongguo-renkou-you-shisi-yi]
+    context: [w.zhongguo, w.renkou, w.you.have, w.num.shi, w.num.si, w.yi.hundredmillion]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: China tiene mil cuatrocientos millones de habitantes.}
+    comments: []
+  - id: x.listen.san-fenzhi-er
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.san-fenzhi-er
+    targets: [s.san-fenzhi-er]
+    context: [w.num.san, w.fenzhi, w.num.er]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Dos tercios.}
+    comments: []
+  - id: x.listen.er-fenzhi-yi
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.er-fenzhi-yi
+    targets: [s.er-fenzhi-yi]
+    context: [w.num.er, w.fenzhi, w.num.yi]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Un medio.}
+    comments: []
+  - id: x.listen.ling-dian-er
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.ling-dian-er
+    targets: [s.ling-dian-er]
+    context: [w.ling, w.dian.decimal, w.num.er]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Cero coma dos.}
+    comments: []
+  - id: x.nuance.yibian-yidian
+    added: '2026-11-23'
+    lang: es
+    type: nuance
+    targets: [w.bian, w.yidian]
+    reveal: [s.zai-lai-yidian-shui]
+    skills: [comprehension, discrimination]
+    prompt: {text: '再说一遍 y 再来一点水: ¿qué añade 一遍 y qué 一点?'}
+    answer: {meaning: '一遍: una vez más la acción entera (repetirlo). 一点: un poco más de cantidad (de agua).'}
+    comments: []

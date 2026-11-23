@@ -643,3 +643,51 @@ entries:
     source: {origin: gaps, batch: 016-2026-11-06-improvisar-y-la-clase-del-6, file: 'propuesta del agente: HSK 1 por frecuencia', date: '2026-11-06'}
     comments:
       - {date: '2026-11-06', kind: usage, private: false, text: 'Para la hora: 差五分八点 «las ocho menos cinco». También «malo»: 这个很差 «esto es malo».'}
+  - id: w.fenzhi
+    use: hear
+    role: function
+    kind: word
+    pos: numero
+    pos_reason: 'pieza de las fracciones: entre el denominador y el numerador'
+    hanzi: 分之
+    pinyin: fēnzhī
+    meaning: {es: '(en una fracción) partes de: 三分之二 «dos tercios»', en: '(in fractions) parts of'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'review-017, «Tus notas»: apuntes de clase', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: tip, private: false, text: 'Al revés que en español: primero el de abajo. 三分之二 sān fēn zhī èr «de tres partes, dos» = 2/3. 二分之一 èr fēn zhī yī = 1/2 (no 五分之一, que es 1/5). Y 百分之十 «el diez por ciento».'}
+  - id: w.gongli
+    use: say
+    role: content
+    kind: word
+    pos: clasificador
+    pos_reason: 'unidad de medida, como 公斤'
+    hanzi: 公里
+    pinyin: gōnglǐ
+    meaning: {es: kilómetro, en: kilometre}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'review-017, «Tus notas»: apuntes de clase', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: linguistic, private: false, text: 'El mismo 公 de 公斤 «kilo»: 公 marca la medida del sistema métrico. 里 lǐ era una medida china antigua de distancia.'}
+  - id: w.renkou
+    use: hear
+    role: content
+    kind: word
+    hanzi: 人口
+    pinyin: rénkǒu
+    meaning: {es: 'población (número de habitantes)', en: population}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'review-017, «Tus notas»: apuntes de clase', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: linguistic, private: false, text: '人 «persona» + 口 «boca»: las bocas que alimentar, los habitantes.'}
+  - id: w.diyici
+    use: say
+    role: content
+    kind: word
+    pos: expresion
+    pos_reason: 'número ordinal con su clasificador (第 + 一 + 次): «la primera vez»'
+    hanzi: 第一次
+    pinyin: dì yī cì
+    meaning: {es: la primera vez, en: the first time}
+    level: 2
+    level_reason: 'no está en la lista como palabra; 第 y 一 son HSK 1 y 次 HSK 2, y se dice a diario'
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: usage, private: false, text: '第一次 + verbo: 第一次来中国 «la primera vez que vengo a China». Delante de un sustantivo, con 的: 我们第一次见面的地方 «el sitio donde nos vimos por primera vez». 一 aquí suena yī, porque es un ordinal.'}

@@ -386,19 +386,10 @@ items:
     reason: 'HSK 2 como clasificador; de momento basta 问题.'
     notes:
       - {text: '这道题太难了！ «¡este ejercicio es dificilísimo!». 题目 «enunciado» [HSK 3] y 话题 «tema de conversación» [HSK 3] llevan el mismo 题 de 问题.'}
+      - {text: 'También cuenta platos: 一道菜 «un plato». 这个让我想起西班牙的一道菜 «esto me recuerda a un plato español».'}
     source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
-    snooze: 011-2026-10-16-clase-primero-edad-y-opiniones
-    snooze_reason: 'despierta con 考试 (这道题), pero es HSK 2 y no salió en clase'
-  - id: a.mafan
-    hanzi: 麻烦
-    pinyin: máfan
-    meaning: {es: 'molestia; molestar'}
-    theme: cortesia
-    links: [请, 帮, 不好意思]
-    reason: 'HSK 3; de tu lista de consultas, sin frase de clase.'
-    notes:
-      - {text: '麻烦你了 «perdona las molestias»; 太麻烦了 «¡qué lío!». Para pedir un favor ya tienes 请 y 不好意思.'}
-    source: {batch: 010-2026-10-11-construir-numeros-y-movimiento, file: review-009-2026-10-10-situaciones-huecos-y-contrastes.md, date: '2026-10-11'}
+    snooze: 018-2026-11-23-paneles-y-contrastes
+    snooze_reason: 'despierta con 有道理, pero allí 道 es «razón», otro sentido; el clasificador (一道题, 一道菜 de tu nota del restaurante) espera a salir en clase'
   - id: a.tongshi.sametime
     hanzi: 同时
     pinyin: tóngshí
@@ -531,17 +522,6 @@ items:
     reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 4 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
     notes: []
     source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
-  - id: a.jixu
-    snooze: 013-2026-10-23-pagar-opinar-y-contrastes
-    snooze_reason: 'despierta con 开始, pero es palabra de un ejercicio de pinyin: espera a salir en clase con su sentido'
-    hanzi: 继续
-    pinyin: jìxù
-    meaning: {es: 'seguir, continuar'}
-    theme: cosas
-    links: [开始, 停]
-    reason: 'Palabra de un ejercicio de pinyin de clase, solo para oír cómo suena; de HSK 3 y sin frase. Espera hasta que salga en clase con su sentido (regla del review 010).'
-    notes: []
-    source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-15', date: '2026-10-15'}
   - id: a.dasao
     hanzi: 打扫
     pinyin: dǎsǎo
@@ -619,8 +599,8 @@ items:
     level_reason: 'Palabra de formularios; 出生 es HSK 2 y 地 «lugar», más alto.'
     reason: 'Ejemplo de una diapositiva de clase (出生地 «lugar de nacimiento»): de formularios, se lee más que se dice. Espera a que haga falta.'
     notes: []
-    snooze: 012-2026-10-19-querer-poder-y-matices
-    snooze_reason: 'despierta con 地方, pero es de formularios: se lee más que se dice'
+    snooze: 018-2026-11-23-paneles-y-contrastes
+    snooze_reason: 'despierta con 老地方, pero es de formularios: se lee más que se dice'
     source: {batch: 011-2026-10-16-clase-primero-edad-y-opiniones, file: 'diapositivas 2026-10-13', date: '2026-10-13'}
   - id: a.xigua
     hanzi: 西瓜
@@ -778,15 +758,6 @@ items:
     reason: 'De la lista de pinyin de la clase del 23. En China se usa a diario (recargar el móvil o la tarjeta del metro); espera a salir con su sentido.'
     level: 4
     level_reason: 'no está en la lista del HSK; es vocabulario de servicios y aplicaciones'
-    notes: []
-    source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
-  - id: a.changcheng
-    hanzi: 长城
-    pinyin: Chángchéng
-    meaning: {es: 'la Gran Muralla'}
-    theme: lugares
-    links: [北京, 爬山]
-    reason: 'HSK 3, de la lista de pinyin de la clase del 23; espera a hablar de viajes por China.'
     notes: []
     source: {batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: 'diapositivas 2026-10-23', date: '2026-10-23'}
   - id: a.ranshao
@@ -1031,20 +1002,6 @@ items:
     notes:
       - {text: '受 «recibir» + 欢迎 «bienvenida»: bien recibido. 饺子很受欢迎 «los jiaozi gustan mucho».'}
     source: {batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
-  - id: a.chaomian
-    hanzi: 炒面
-    pinyin: chǎomiàn
-    meaning: {es: fideos salteados}
-    theme: comida
-    links: [面条, 饭]
-    reason: fuera de la lista; plato concreto de tu diálogo. Entra cuando lo pidas en clase o en un restaurante.
-    level: 4
-    level_reason: no está en la lista
-    notes:
-      - {text: 炒 chǎo «saltear» + 面 «fideos». Igual 炒饭 «arroz frito».}
-    snooze: 017-2026-11-11-pedir-en-el-restaurante
-    snooze_reason: 'entró al desván en este mismo lote, al dejar para más adelante lo de nivel alto de tu diálogo del restaurante'
-    source: {batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
   - id: a.xiaobaicai
     hanzi: 小白菜
     pinyin: xiǎobáicài
@@ -1129,3 +1086,73 @@ items:
     notes:
       - {text: '百年老字号 «casa centenaria», en los letreros. 正宗 zhèngzōng «auténtico» (正宗老火锅) va con 地道 en el desván.'}
     source: {batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: a.xiangqilai
+    level: 3
+    level_reason: 'no está en la lista como unidad; verbo + 起来, gramática de HSK 3'
+    hanzi: 想起来
+    pinyin: xiǎng qǐlai
+    meaning: {es: 'acordarse (de algo que ya sabías)'}
+    theme: entender
+    links: [想起, 想出来, 记得]
+    reason: 'De tu cuaderno de complementos direccionales (consulta propia), nivel 3 o más y sin frase de clase.'
+    notes:
+      - {text: '想起来 es recuperar algo que ya sabías (por fin te acuerdas del nombre); 想出来 es que se te ocurra algo nuevo (una solución, un nombre chino).'}
+    source: {batch: 018-2026-11-23-paneles-y-contrastes, file: review-017-2026-11-11-pedir-en-el-restaurante.md, date: '2026-11-23'}
+  - id: a.kanchulai
+    level: 3
+    level_reason: 'no está en la lista como unidad; 出来 figurado, HSK 3'
+    hanzi: 看出来
+    pinyin: kàn chūlai
+    meaning: {es: 'notar, darse cuenta (al mirar)'}
+    theme: entender
+    links: [听出来, 看到]
+    reason: 'De tu cuaderno de complementos direccionales; uso figurado de 出来, nivel 3 o más.'
+    notes:
+      - {text: '看 es mirar; 看到, llegar a verlo; 看出来, notar algo que no se dice (que tu amigo está triste). Igual 听, 听到 y 听出来 (reconocer una voz).'}
+    source: {batch: 018-2026-11-23-paneles-y-contrastes, file: review-017-2026-11-11-pedir-en-el-restaurante.md, date: '2026-11-23'}
+  - id: a.jixialai
+    level: 3
+    level_reason: 'no está en la lista como unidad; 下来 figurado, HSK 3'
+    hanzi: 记下来
+    pinyin: jì xialai
+    meaning: {es: 'apuntar (para no olvidarlo)'}
+    theme: escritura
+    links: [写下来, 记得, 笔记]
+    reason: 'De tu cuaderno de complementos direccionales; 下来 figurado, nivel 3 o más.'
+    notes:
+      - {text: '下来 deja algo fijo: 记下来 «apúntalo», 写下来 «déjalo por escrito», 停下来 «para». 下去 es seguir: 说下去 «sigue contando», 写下去 «sigue escribiendo».'}
+    source: {batch: 018-2026-11-23-paneles-y-contrastes, file: review-017-2026-11-11-pedir-en-el-restaurante.md, date: '2026-11-23'}
+  - id: a.jiezhang
+    level: 4
+    level_reason: 'no está en la lista; más formal que 买单'
+    hanzi: 结账
+    pinyin: jiézhàng
+    meaning: {es: 'pagar la cuenta'}
+    theme: restaurante
+    links: [买单, 账单]
+    reason: 'De tu lista de restaurante (consulta); para pedir la cuenta ya tienes 买单, más de diario.'
+    notes:
+      - {text: '结账 es más formal que 买单: se oye en hoteles y tiendas.'}
+    source: {batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: a.la
+    hanzi: 啦
+    pinyin: la
+    meaning: {es: 'partícula final que suma 了 y 啊: tono vivo'}
+    theme: conectores
+    links: [了, 啊, 好啦]
+    level: 3
+    level_reason: 'no está en la lista; partícula coloquial'
+    reason: 'De una consulta tuya; coloquial y sin frase propia. 我走啦！ «¡me voy!», 好啦！ «¡vale!».'
+    notes:
+      - {text: '啦 no va con 吗: 这个啦吗 no se dice.'}
+    source: {batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: a.manman
+    hanzi: 慢慢
+    pinyin: mànmàn
+    meaning: {es: 'despacio, con calma'}
+    theme: describir
+    links: [慢, 着急, 慢慢吃]
+    reason: 'De unas frases para recibir invitados a comer (别着急，慢慢吃): ¿eran de clase? Mientras, espera.'
+    notes:
+      - {text: '别着急，慢慢吃 «sin prisa, come tranquilo», lo que dice el anfitrión en la mesa.'}
+    source: {batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}

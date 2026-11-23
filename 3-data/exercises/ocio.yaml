@@ -533,3 +533,62 @@ exercises:
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 照}
     answer: {typed: zhao4, hanzi: 照, pinyin: zhào, meaning: 'Sale en 拍照 pāizhào «hacer fotos», 照片 zhàopiàn «foto».'}
     comments: []
+  - id: x.contrast.wan.play
+    added: 2026-11-23
+    lang: es
+    type: contrast
+    group: g.wan-play-finish
+    targets: [w.wan.play]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es wán, «jugar; divertirse, salir por ahí»?'}
+    answer: {hanzi: 玩, pinyin: wán, meaning: 'jugar; divertirse, salir por ahí'}
+    comments: []
+  - id: x.dictation.wan.play
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.wan.play]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wan2, hanzi: 玩, pinyin: wán, meaning: 'jugar; divertirse, salir por ahí'}
+    comments: []
+  - id: x.produce.wan.play
+    added: 2026-11-23
+    lang: es
+    type: produce
+    targets: [w.wan.play]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «jugar; divertirse, salir por ahí»? Escribe el pinyin.'}
+    answer: {typed: wan2, hanzi: 玩, pinyin: wán, meaning: 'jugar; divertirse, salir por ahí'}
+    comments: []
+  - id: x.read.wan.play
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.wan.play]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 玩}
+    answer: {hanzi: 玩, pinyin: wán, meaning: 'jugar; divertirse, salir por ahí'}
+    comments: []
+  - id: x.listen.women-chuqu-wan-ba
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.women-chuqu-wan-ba
+    targets: [s.women-chuqu-wan-ba]
+    context: [w.women, w.chuqu, w.wan.play, w.ba.particle]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Salgamos a divertirnos.}
+    comments: []
+  - id: x.produce.women-chuqu-wan-ba
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.women-chuqu-wan-ba
+    targets: [s.women-chuqu-wan-ba]
+    context: [w.women, w.chuqu, w.wan.play, w.ba.particle]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Salgamos a divertirnos.»'}
+    answer: {meaning: Salgamos a divertirnos.}
+    comments: []

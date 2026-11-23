@@ -27,7 +27,7 @@
 - ✅🃏 长 cháng · largo · _adjetivo_ · Leído zhǎng es otro sentido, «crecer» [HSK 2]. Aquí, cháng: 好长 «qué largo».
 - ✅🃏 比 bǐ [pi˧˩˧] · que (para comparar) · _preposición_ · A 比 B + adjetivo, sin 很: 他比我高 «es más alto que yo».
 - ✅🃏 最 zuì [tsweɪ˥˩] · el más, lo que más · _adverbio_ · Delante del verbo o del adjetivo: 我最喜欢中国菜 «lo que más me gusta es la comida china».
-- ✅🃏 又 yòu [joʊ˥˩] · a la vez (又…又…) · _adverbio_ · 又 + adjetivo + 又 + adjetivo: dos cualidades a la vez, 他又高又帅. Es la forma de decir «alto y guapo»: 和 no une adjetivos.
+- ✅🃏 又 yòu [joʊ˥˩] · a la vez (又…又…) · _adverbio_ · 又 + adjetivo + 又 + adjetivo: dos cualidades a la vez, 他又高又帅. Es la forma de decir «alto y guapo»: 和 no une adjetivos. · 💡 又 y 再 son «otra vez», pero miran a lados distintos: 又 a lo que ya se repitió (他又来了 «ha vuelto a venir»), 再 a lo que se repetirá (明天再来 «vuelve mañana»). 又 también suma cualidades: 又便宜又好吃 «barato y rico a la vez».
 - ✅🃏 真 zhēn [ʈʂən˥] · de verdad; ¡qué…! · _adverbio_ · 真 + adjetivo exclama: 这个苹果真大！ «¡qué grande!». 很 + adjetivo solo describe. · Si a 真 le quitas las dos patitas de abajo, queda 直 zhí «recto» [HSK 3]: la verdad, sin patas, es una línea recta.
 - ✅🃏 手 shǒu [ʂoʊ˧˩˧] · mano · _sustantivo_ · Está en 手机 «móvil» y 手表 «reloj»: lo que se lleva en la mano o en la muñeca.
 - ✅🃏 耳朵 ěrduo [ɑɻ˧˩˧ twɔ] · oreja · _sustantivo_ · 耳 «oreja» está en 聪 de 聪明 y en 耳机 «auriculares».
@@ -188,6 +188,15 @@ Riman en -eng; uno sube el grado, el otro es poder.
 
 - 更 gèng · delante de un adjetivo, sube el grado: 更好, 更多
 - 能 néng · delante de un verbo: 我能去, 你能说慢一点吗？
+
+## Contento, feliz, a gusto
+
+Se solapan, pero cada una tiene su situación típica.
+
+- 开心 kāixīn · lo pasas genial ahora (fiesta, amigos)
+- 高兴 gāoxìng · te alegras por algo concreto (una buena noticia, conocer a alguien)
+- 快乐 kuàilè · felicitaciones: 生日快乐, 新年快乐
+- 幸福 xìngfú · tu vida te parece plena (familia, pareja)
 
 ## Frases
 

@@ -1464,3 +1464,25 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Hay agua en el suelo.}
     comments: []
+  - id: x.listen.wo-de-shouji-li-you-hen-duo-zhaopian
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.wo-de-shouji-li-you-hen-duo-zhaopian
+    targets: [s.wo-de-shouji-li-you-hen-duo-zhaopian]
+    context: [w.wo, w.de, w.shouji, w.li.inside, w.you.have, w.hen, w.duo, w.zhaopian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: En mi móvil hay muchas fotos.}
+    comments: []
+  - id: x.produce.wo-de-shouji-li-you-hen-duo-zhaopian
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.wo-de-shouji-li-you-hen-duo-zhaopian
+    targets: [s.wo-de-shouji-li-you-hen-duo-zhaopian]
+    context: [w.wo, w.de, w.shouji, w.li.inside, w.you.have, w.hen, w.duo, w.zhaopian]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «En mi móvil hay muchas fotos.»'}
+    answer: {meaning: En mi móvil hay muchas fotos.}
+    comments: []

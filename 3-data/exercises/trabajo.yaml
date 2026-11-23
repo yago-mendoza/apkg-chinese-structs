@@ -1455,3 +1455,205 @@ exercises:
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 页, pinyin: yè, meaning: página}
     comments: []
+  - id: x.dictation.daxuesheng
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.daxuesheng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: da4 xue2 sheng1, hanzi: 大学生, pinyin: dàxuéshēng, meaning: estudiante universitario}
+    comments: []
+  - id: x.produce.daxuesheng
+    added: 2026-11-23
+    lang: es
+    type: produce
+    targets: [w.daxuesheng]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «estudiante universitario»? Escribe el pinyin.'}
+    answer: {typed: da4 xue2 sheng1, hanzi: 大学生, pinyin: dàxuéshēng, meaning: estudiante universitario}
+    comments: []
+  - id: x.read.daxuesheng
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.daxuesheng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 大学生}
+    answer: {hanzi: 大学生, pinyin: dàxuéshēng, meaning: estudiante universitario}
+    comments: []
+  - id: x.dictation.xiaoxuesheng
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.xiaoxuesheng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiao3 xue2 sheng1, hanzi: 小学生, pinyin: xiǎoxuéshēng, meaning: alumno de primaria}
+    comments: []
+  - id: x.read.xiaoxuesheng
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.xiaoxuesheng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 小学生}
+    answer: {hanzi: 小学生, pinyin: xiǎoxuéshēng, meaning: alumno de primaria}
+    comments: []
+  - id: x.dictation.zhongxuesheng
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.zhongxuesheng]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhong1 xue2 sheng1, hanzi: 中学生, pinyin: zhōngxuéshēng, meaning: alumno de secundaria}
+    comments: []
+  - id: x.read.zhongxuesheng
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.zhongxuesheng]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 中学生}
+    answer: {hanzi: 中学生, pinyin: zhōngxuéshēng, meaning: alumno de secundaria}
+    comments: []
+  - id: x.dictation.jiaoshi.room
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.jiaoshi.room]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jiao4 shi4, hanzi: 教室, pinyin: jiàoshì, meaning: aula (el sitio)}
+    comments: []
+  - id: x.produce.jiaoshi.room
+    added: 2026-11-23
+    lang: es
+    type: produce
+    targets: [w.jiaoshi.room]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «aula (el sitio)»? Escribe el pinyin.'}
+    answer: {typed: jiao4 shi4, hanzi: 教室, pinyin: jiàoshì, meaning: aula (el sitio)}
+    comments: []
+  - id: x.read.jiaoshi.room
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.jiaoshi.room]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 教室}
+    answer: {hanzi: 教室, pinyin: jiàoshì, meaning: aula (el sitio)}
+    comments: []
+  - id: x.dictation.xiaoyuan
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.xiaoyuan]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiao4 yuan2, hanzi: 校园, pinyin: xiàoyuán, meaning: campus (de una escuela o universidad)}
+    comments: []
+  - id: x.read.xiaoyuan
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.xiaoyuan]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 校园}
+    answer: {hanzi: 校园, pinyin: xiàoyuán, meaning: campus (de una escuela o universidad)}
+    comments: []
+  - id: x.dictation.jixu
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.jixu]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ji4 xu4, hanzi: 继续, pinyin: jìxù, meaning: 'seguir, continuar'}
+    comments: []
+  - id: x.read.jixu
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.jixu]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 继续}
+    answer: {hanzi: 继续, pinyin: jìxù, meaning: 'seguir, continuar'}
+    comments: []
+  - id: x.listen.tamen-shi-daxuesheng-ma
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.tamen-shi-daxuesheng-ma
+    targets: [s.tamen-shi-daxuesheng-ma]
+    context: [w.tamen, w.shi, w.daxuesheng, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Son estudiantes universitarios?'}
+    comments: []
+  - id: x.produce.tamen-shi-daxuesheng-ma
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.tamen-shi-daxuesheng-ma
+    targets: [s.tamen-shi-daxuesheng-ma]
+    context: [w.tamen, w.shi, w.daxuesheng, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Son estudiantes universitarios?»'}
+    answer: {meaning: '¿Son estudiantes universitarios?'}
+    comments: []
+  - id: x.listen.xiake-yihou-ta-zai-jiaoshi-kan-shouji
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.xiake-yihou-ta-zai-jiaoshi-kan-shouji
+    targets: [s.xiake-yihou-ta-zai-jiaoshi-kan-shouji]
+    context: [w.xiake, w.yihou, w.ta.he, w.zai.at, w.jiaoshi.room, w.li.inside, w.kan, w.shouji]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Después de clase, se queda en el aula mirando el móvil.'}
+    comments: []
+  - id: x.listen.ni-du-yixia
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.ni-du-yixia
+    targets: [s.ni-du-yixia]
+    context: [w.ni, w.du, w.yixia]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: 'Léelo (en voz alta), por favor.'}
+    comments: []
+  - id: x.produce.ni-du-yixia
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.ni-du-yixia
+    targets: [s.ni-du-yixia]
+    context: [w.ni, w.du, w.yixia]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Léelo (en voz alta), por favor.»'}
+    answer: {meaning: 'Léelo (en voz alta), por favor.'}
+    comments: []
+  - id: x.listen.tamen-jixu-liaotian
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.tamen-jixu-liaotian
+    targets: [s.tamen-jixu-liaotian]
+    context: [w.tamen, w.jixu, w.liaotian]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Siguen charlando.}
+    comments: []
+  - id: x.charsound.xiao-2
+    added: 2026-11-23
+    lang: es
+    type: charsound
+    targets: [w.xiaoyuan, w.xuexiao]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 校}
+    answer: {typed: xiao4, hanzi: 校, pinyin: xiào, meaning: 'Sale en 校园 xiàoyuán «campus (de una escuela o universidad)», 学校
+        xuéxiào «escuela, colegio».'}
+    comments: []

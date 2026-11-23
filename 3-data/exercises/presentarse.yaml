@@ -3441,7 +3441,8 @@ exercises:
     skills: [production, pinyin]
     prompt: {text: '¿哪 o 哪个? Completa en pinyin: «¿Qué día vienes?»'}
     answer: {typed: na3, hanzi: 哪, pinyin: nǎ, meaning: 'qué, cuál: 哪天, sin 个, como 一天'}
-    comments: []
+    comments:
+      - {date: '2026-11-23', kind: note, private: false, text: 'También vale 你什么时候来？ «¿cuándo vienes?», más general: 哪天 pregunta el día.'}
   - id: x.cloze.dou.shenme
     added: '2026-10-26'
     lang: es
@@ -3817,4 +3818,157 @@ exercises:
     skills: [listening, tones, discrimination]
     prompt: {text: 'Escucha: ¿cuál de estas es?', audio: true}
     answer: {hanzi: 也, pinyin: yě, meaning: también}
+    comments: []
+  - id: x.contrast.lai
+    added: 2026-11-23
+    lang: es
+    type: contrast
+    group: g.mi-lai
+    targets: [w.lai]
+    skills: [reading, discrimination]
+    prompt: {text: '¿Cuál es lái, «venir»?'}
+    answer: {hanzi: 来, pinyin: lái, meaning: venir}
+    comments: []
+  - id: x.dictation.faguo
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.faguo]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: fa3 guo2, hanzi: 法国, pinyin: Fǎguó, meaning: Francia}
+    comments: []
+  - id: x.read.faguo
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.faguo]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 法国}
+    answer: {hanzi: 法国, pinyin: Fǎguó, meaning: Francia}
+    comments: []
+  - id: x.dictation.jianada
+    added: 2026-11-23
+    lang: es
+    type: listen
+    targets: [w.jianada]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jia1 na2 da4, hanzi: 加拿大, pinyin: Jiānádà, meaning: Canadá}
+    comments: []
+  - id: x.read.jianada
+    added: 2026-11-23
+    lang: es
+    type: read
+    targets: [w.jianada]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 加拿大}
+    answer: {hanzi: 加拿大, pinyin: Jiānádà, meaning: Canadá}
+    comments: []
+  - id: x.listen.ta-shi-faguo-ren
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.ta-shi-faguo-ren
+    targets: [s.ta-shi-faguo-ren]
+    context: [w.ta.she, w.shi, w.faguo, w.ren]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es francesa.}
+    comments: []
+  - id: x.listen.ta-shi-jianada-ren
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.ta-shi-jianada-ren
+    targets: [s.ta-shi-jianada-ren]
+    context: [w.ta.she, w.shi, w.jianada, w.ren]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Es canadiense.}
+    comments: []
+  - id: x.listen.ta-ershi-duo-sui
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.ta-ershi-duo-sui
+    targets: [s.ta-ershi-duo-sui]
+    context: [w.ta.he, w.num.er, w.num.shi, w.duo, w.sui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tiene veintitantos años.}
+    comments: []
+  - id: x.produce.ta-ershi-duo-sui
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.ta-ershi-duo-sui
+    targets: [s.ta-ershi-duo-sui]
+    context: [w.ta.he, w.num.er, w.num.shi, w.duo, w.sui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tiene veintitantos años.»'}
+    answer: {meaning: Tiene veintitantos años.}
+    comments: []
+  - id: x.listen.wo-he-ta-yiyang-da
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.wo-he-ta-yiyang-da
+    targets: [s.wo-he-ta-yiyang-da]
+    context: [w.wo, w.he.and, w.ta.he, w.yiyang, w.da]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Tengo la misma edad que él.}
+    comments: []
+  - id: x.produce.wo-he-ta-yiyang-da
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.wo-he-ta-yiyang-da
+    targets: [s.wo-he-ta-yiyang-da]
+    context: [w.wo, w.he.and, w.ta.he, w.yiyang, w.da]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Tengo la misma edad que él.»'}
+    answer: {meaning: Tengo la misma edad que él.}
+    comments: []
+  - id: x.listen.ni-na-nian-chusheng
+    added: 2026-11-23
+    lang: es
+    type: listen
+    sentence: s.ni-na-nian-chusheng
+    targets: [s.ni-na-nian-chusheng]
+    context: [w.ni, w.na.which, w.nian, w.chusheng]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿En qué año naciste?'}
+    comments: []
+  - id: x.produce.ni-na-nian-chusheng
+    added: 2026-11-23
+    lang: es
+    type: produce
+    sentence: s.ni-na-nian-chusheng
+    targets: [s.ni-na-nian-chusheng]
+    context: [w.ni, w.na.which, w.nian, w.chusheng]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿En qué año naciste?»'}
+    answer: {meaning: '¿En qué año naciste?'}
+    comments: []
+  - id: x.charsound.xing-2
+    added: 2026-11-23
+    lang: es
+    type: charsound
+    targets: [e.xinghui, w.xingfu]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 幸}
+    answer: {typed: xing4, hanzi: 幸, pinyin: xìng, meaning: 'Sale en 幸会 xìnghuì «encantado (de conocerle), fórmula formal»,
+        幸福 xìngfú «feliz, dichoso (con la vida que tienes)».'}
+    comments: []
+  - id: x.nuance.you-duo-da
+    added: '2026-11-23'
+    lang: es
+    type: nuance
+    targets: [s.zhongguo-you-duo-da]
+    skills: [comprehension, discrimination]
+    prompt: {text: '中国有多大？ o 中国很多大？: ¿cuál se dice?', no_audio: [中国很多大？]}
+    answer: {meaning: 'Solo 中国有多大？ «¿cómo de grande es China?». 很多大 no existe; para contestar, 中国很大.'}
     comments: []

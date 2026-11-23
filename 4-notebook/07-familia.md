@@ -26,6 +26,7 @@
 - ✅🃏 妈 mā [ma˥] · mamá (al llamarla) · _sustantivo_
 - ✅🃏 家人 jiārén [tɕja˥ ʐən˧˥] · familia (las personas) · _sustantivo_ · 家 «casa, familia» + 人 «persona»: los de casa. 你的家人都好吗？ es una pregunta muy de cortesía.
 - ✅🃏 妹妹 mèimei [meɪ˥˩ meɪ] · hermana pequeña · _sustantivo_
+- ✅🃏 幸福 xìngfú [ɕiŋ˥˩ fu˧˥] · feliz, dichoso (con la vida que tienes) · _adjetivo_
 
 ## 好, 女儿 y 儿子
 
@@ -75,3 +76,4 @@ Se llama a la gente por lo que es para ti, no por su nombre.
 - ✅🃏 你的家人都好吗？ · nǐ de jiārén dōu hǎo ma · ¿Está bien toda tu familia?
 - ✅🃏 我爱我的家人。 · wǒ ài wǒ de jiārén · Quiero a mi familia.
 - ✅🃏 我有一个妹妹。 · wǒ yǒu yí ge mèimei · Tengo una hermana pequeña.
+- ✅🃏 他们很幸福。 · tāmen hěn xìngfú · Son muy felices (con su vida).

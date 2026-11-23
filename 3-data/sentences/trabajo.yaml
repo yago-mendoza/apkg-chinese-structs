@@ -447,3 +447,50 @@ sentences:
       - {text: 。}
     translation: {en: He works at the college., es: Trabaja en la facultad.}
     source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.tamen-shi-daxuesheng-ma
+    use: say
+    kind: example
+    segments:
+      - {pinyin: 'tāmen', ref: w.tamen, text: 他们}
+      - {pinyin: 'shì', ref: w.shi, text: 是}
+      - {pinyin: 'dàxuéshēng', ref: w.daxuesheng, text: 大学生}
+      - {pinyin: 'ma', ref: w.ma, text: 吗}
+      - {text: ？}
+    translation: {en: 'Are they university students?', es: '¿Son estudiantes universitarios?'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+  - id: s.xiake-yihou-ta-zai-jiaoshi-kan-shouji
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'xiàkè', ref: w.xiake, text: 下课}
+      - {pinyin: 'yǐhòu', ref: w.yihou, text: 以后}
+      - {text: ，}
+      - {pinyin: 'tā', ref: w.ta.he, text: 他}
+      - {pinyin: 'zài', ref: w.zai.at, text: 在}
+      - {pinyin: 'jiàoshì', ref: w.jiaoshi.room, text: 教室}
+      - {pinyin: 'lǐ', ref: w.li.inside, text: 里}
+      - {pinyin: 'kàn', ref: w.kan, text: 看}
+      - {pinyin: 'shǒujī', ref: w.shouji, text: 手机}
+      - {text: 。}
+    translation: {en: 'After class he stays in the classroom looking at his phone.', es: 'Después de clase, se queda en el aula mirando el móvil.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+  - id: s.ni-du-yixia
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: 'nǐ', ref: w.ni, text: 你}
+      - {pinyin: 'dú', ref: w.du, text: 读}
+      - {pinyin: 'yīxià', ref: w.yixia, text: 一下}
+      - {text: 。}
+    translation: {en: 'Read it out, please.', es: 'Léelo (en voz alta), por favor.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+  - id: s.tamen-jixu-liaotian
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'tāmen', ref: w.tamen, text: 他们}
+      - {pinyin: 'jìxù', ref: w.jixu, text: 继续}
+      - {pinyin: 'liáotiān', ref: w.liaotian, text: 聊天}
+      - {text: 。}
+    translation: {en: 'They keep chatting.', es: 'Siguen charlando.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}

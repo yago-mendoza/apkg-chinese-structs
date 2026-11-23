@@ -935,3 +935,46 @@ sentences:
       - {text: 。}
     translation: {en: I've been to Beijing twice., es: He estado en Pekín dos veces.}
     source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.zhongguo-renkou-you-shisi-yi
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'Zhōngguó', ref: w.zhongguo, text: 中国}
+      - {pinyin: 'rénkǒu', ref: w.renkou, text: 人口}
+      - {pinyin: 'yǒu', ref: w.you.have, text: 有}
+      - {pinyin: 'shí', ref: w.num.shi, text: 十}
+      - {pinyin: 'sì', ref: w.num.si, text: 四}
+      - {pinyin: 'yì', ref: w.yi.hundredmillion, text: 亿}
+      - {text: 。}
+    translation: {en: 'China has a population of 1.4 billion.', es: 'China tiene mil cuatrocientos millones de habitantes.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+  - id: s.san-fenzhi-er
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'sān', ref: w.num.san, text: 三}
+      - {pinyin: 'fēnzhī', ref: w.fenzhi, text: 分之}
+      - {pinyin: 'èr', ref: w.num.er, text: 二}
+      - {text: 。}
+    translation: {en: 'Two thirds.', es: 'Dos tercios.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+  - id: s.er-fenzhi-yi
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'èr', ref: w.num.er, text: 二}
+      - {pinyin: 'fēnzhī', ref: w.fenzhi, text: 分之}
+      - {pinyin: 'yī', ref: w.num.yi, text: 一}
+      - {text: 。}
+    translation: {en: 'One half.', es: 'Un medio.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+  - id: s.ling-dian-er
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'líng', ref: w.ling, text: 零}
+      - {pinyin: 'diǎn', ref: w.dian.decimal, text: 点}
+      - {pinyin: 'èr', ref: w.num.er, text: 二}
+      - {text: 。}
+    translation: {en: 'Zero point two.', es: 'Cero coma dos.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}

@@ -8,12 +8,12 @@
 - ✅🃏 去 qù [tɕʰy˥˩] · ir · _verbo_
 - ✅🃏 买 mǎi [maɪ˧˩˧] · comprar · _verbo_
 - ✅🃏 商店 shāngdiàn [ʂɑŋ˥ tjɛn˥˩] · tienda · _sustantivo_ · 商: dos personas dentro de una casa, negociando: el comercio.
-- ✅🃏 在 zài [tsaɪ˥˩] · estar en (un lugar) · _verbo_ · 💡 Para «estar (en un sitio)», 在: 他们不在这里 «no están aquí». 还 hái es «todavía»: 他们还在这里 «siguen aquí».
+- ✅🃏 在 zài [tsaɪ˥˩] · estar en (un lugar) · _verbo_ · 💡 Para «estar (en un sitio)», 在: 他们不在这里 «no están aquí». 还 hái es «todavía»: 他们还在这里 «siguen aquí». · 💡 La idea de 在: estar dentro de algo. De un sitio: 我在家. De una acción, como si fuera un sitio: 我在吃饭 «estoy comiendo». Y 再 zài, que suena igual, es otra palabra: «otra vez, después» (再说一遍).
 - ❌ 哪儿 nǎr [naɻ˧˩˧] · dónde · _interrogativo_
 - ✅🃏 喜欢 xǐhuan [ɕi˧˩˧ xwan] · gustar · _verbo_ · 喜: un tambor sobre una boca que canta: alegría. · 欢 es ligada: aparece en 喜欢 y en 欢迎 huānyíng «bienvenido». 喜 también en 恭喜 gōngxǐ «¡enhorabuena!» [HSK 7], muy frecuente al hablar.
 - ✅🃏 爱 ài [aɪ˥˩] · amar, querer (a alguien) · _verbo_ · Una mano 爫 que cubre 冖 al amigo 友: amar.
 - ✅🃏 爱好 àihào [aɪ˥˩ xɑʊ˥˩] · afición, hobby · _sustantivo_ · 爱 «amar» + 好 hào «que gusta»: lo que te gusta hacer. Aquí 好 se lee hào, no hǎo.
-- ✅🃏 要 yào [jɑʊ˥˩] · querer (algo); hacer falta · _verbo_ · Unas manos que sujetan a una mujer por la cintura: desear. · El carácter antiguo dibujaba una figura con las manos en la cintura: 要 era «cintura», que después pasó a escribirse 腰 yāo [HSK 4]. · Además de «querer», 要 es «tener que» (我要工作 «tengo que trabajar») y «estar a punto de» (要下雨了 «va a llover»). · Se niega distinto que 有: 不要 «no quiero», 没有 «no tengo». · En 重要 zhòngyào «importante», 要 aporta «esencial»; suelto no tiene ese sentido. Con un nombre también es «necesitar, llevar»: 这要时间 «esto lleva tiempo» (más formal, 这需要时间).
+- ✅🃏 要 yào [jɑʊ˥˩] · querer (algo); hacer falta · _verbo_ · Unas manos que sujetan a una mujer por la cintura: desear. · El carácter antiguo dibujaba una figura con las manos en la cintura: 要 era «cintura», que después pasó a escribirse 腰 yāo [HSK 4]. · Además de «querer», 要 es «tener que» (我要工作 «tengo que trabajar») y «estar a punto de» (要下雨了 «va a llover»). · Se niega distinto que 有: 不要 «no quiero», 没有 «no tengo». · En 重要 zhòngyào «importante», 要 aporta «esencial»; suelto no tiene ese sentido. Con un nombre también es «necesitar, llevar»: 这要时间 «esto lleva tiempo» (más formal, 这需要时间). · 💡 La idea de 要: algo que empuja hacia su realización. Lo quieres: 我要咖啡. Lo necesitas o debes: 你要小心. Lo vas a hacer: 明天我要去北京. Está a punto: 要下雨了 «va a llover». Frente a 想, que es tenerlo en la cabeza (me apetece), 要 es decidido.
 - ✅🃏 需要 xūyào [ɕy˥ jɑʊ˥˩] · necesitar · _verbo_ · 需要 es necesitar porque la situación lo impone; 要, querer o hacer falta. 我需要水 «necesito agua»; 我要水 «quiero agua». · 需: una persona bajo la lluvia 雨 que necesita resguardo.
 - ✅🃏 票 piào [pʰjɑʊ˥˩] · billete, entrada · _sustantivo_ · Familia: 车票 chēpiào «billete de tren o autobús», 机票 jīpiào «billete de avión», 门票 ménpiào «entrada» [HSK 1]; 发票 fāpiào «factura» [HSK 4]; 投票 tóupiào «votar» [HSK 6]. En 发票 va 发 fā «emitir» (la factura se emite); en 投票, 投 tóu «lanzar, meter» (el voto se mete en la urna). · Un papel ritual que se quemaba: de ahí «billete»; sus cenizas flotando dan 漂 piāo «flotar», que presta el sonido a 漂亮.
 - ✅🃏 机票 jīpiào [tɕi˥ pʰjɑʊ˥˩] · billete de avión · _sustantivo_ · Al hablar se dice 机票. 飞机票 fēijīpiào «billete de avión» también es correcto, pero suena largo. · 机 jī «máquina» es el mismo de 手机 «móvil» (máquina de mano) y 飞机 fēijī «avión» (máquina que vuela).
@@ -45,6 +45,7 @@
 - ✅🃏 扫码 sǎomǎ [sɑʊ˧˩˧ ma˧˩˧] · escanear el código (para pagar) · _verbo_ · 刷卡还是扫码？ «¿con tarjeta o con el código?». En China casi todo se paga escaneando un código QR con el móvil.
 - ✅🃏 包 bāo [pɑʊ˥] · bolso, mochila, bolsa · _verbo_
 - ✅🃏 毛 máo [mɑʊ˧˥] · diez céntimos (de yuan), al hablar · _clasificador_ · Al hablar del dinero: 块 «yuan» y 毛 «diez céntimos». 三块五毛 «tres con cincuenta». Escrito, 元 y 角.
+- ✅🃏 够 gòu [koʊ˥˩] · bastar, haber suficiente · _verbo_ · 钱不够 «no llega el dinero», 时间不够 «no da tiempo». 够了！ es «ya basta», y dicho con enfado suena a «¡basta ya!»; para «ya tengo suficiente» en la mesa, 我吃饱了.
 
 ## Querer, necesitar, gustar, amar
 
@@ -94,6 +95,13 @@ Solo los separa el tono: se distinguen de oído por cómo sube o baja la voz.
 
 - 猫 māo · alto y plano: 小猫
 - 毛 máo · sube: 三块五毛
+
+## 狗 gǒu y 够 gòu
+
+La misma sílaba y la misma pieza 句 que da el sonido: solo los separa el tono.
+
+- 狗 gǒu · baja y sube: 一只狗
+- 够 gòu · cae: 钱不够
 
 ## Frases
 
@@ -184,3 +192,5 @@ Solo los separa el tono: se distinguen de oído por cómo sube o baja la voz.
 - ✅🃏 最小的多少钱？ · zuì xiǎo de duōshao qián · ¿Cuánto cuesta el más pequeño?
 - ✅🃏 有白色的吗？ · yǒu báisè de ma · ¿Lo tienen en blanco?
 - ✅🃏 三块五毛。 · sān kuài wǔ máo · Tres con cincuenta.
+- ✅🃏 钱不够。 · qián bú gòu · No llega el dinero.
+- ✅🃏 老板，你还没找钱呢。 · lǎobǎn nǐ hái méi zhǎoqián ne · Jefe, todavía no me ha dado el cambio.

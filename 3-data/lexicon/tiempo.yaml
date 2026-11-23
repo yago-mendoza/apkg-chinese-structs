@@ -561,6 +561,7 @@ entries:
     source: {origin: review, batch: 012-2026-10-19-querer-poder-y-matices, file: review-011-2026-10-16-clase-primero-edad-y-opiniones.md, date: '2026-10-19'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-19', text: 'Palabra a palabra: 马 «caballo» + 上 «encima»: «ya subido al caballo», listo para salir. 我马上来 «voy enseguida».'}
+      - {date: '2026-11-23', kind: mnemonic, private: false, text: '马 «caballo» + 上 «encima»: subirse al caballo y salir ya. 我马上来 «voy enseguida», 我马上回来 «ahora vuelvo».'}
   - id: w.mei.each
     use: say
     use_reason: 'HSK 3, pero 每天 y 每个 se dicen a diario desde el principio'

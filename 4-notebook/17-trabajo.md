@@ -15,7 +15,7 @@
 - ✅🃏 同事 tóngshì [tʰʊŋ˧˥ ʂɨ˥˩] · compañero de trabajo · _sustantivo_ · 同 «mismo»: 同学 es quien estudia contigo y 同事, quien trabaja contigo. · 同 es compartir algo: 同学 la clase, 同事 el trabajo, 同意 la idea, y 不同 bùtóng [HSK 2] es «distinto». 事 es un asunto que atender; 工, el trabajo técnico de 工作 y 工程师.
 - ✅🃏 准备 zhǔnbèi [ʈʂwən˧˩˧ peɪ˥˩] · preparar(se) · _verbo_ · Palabra a palabra: 准 «exacto» + 备 «tener listo». 你准备好了吗？ «¿estás listo?». · Las cabezas de la estantería 隹 se quedan sin hielo 冫 y se descongelan; voy con mis piernas 夂 al campo 田 y lo preparo para plantarlas. · 准备 + verbo es «tener pensado, ir a»: 我们准备吃牛肉 «vamos a comer ternera», no «prepararla».
 - ✅🃏 电脑 diànnǎo [tjɛn˥˩ nɑʊ˧˩˧] · ordenador · _sustantivo_ · Palabra a palabra: 电 «electricidad» + 脑 «cerebro»: el cerebro eléctrico. · 电: un sol con un cable del que sale electricidad. En 脑, 月 aquí es carne (una parte del cuerpo), y a la derecha, bajo una tapa 亠, unas conexiones cruzadas 乂 dentro del cráneo 凵.
-- ✅🃏 上班 shàngbān [ʂɑŋ˥˩ pan˥] · ir a trabajar, estar trabajando · _verbo_ · Palabra a palabra: 上 «subir, empezar» + 班 «turno». 我明天上班 «mañana trabajo». Al salir, 下班.
+- ✅🃏 上班 shàngbān [ʂɑŋ˥˩ pan˥] · ir a trabajar, estar trabajando · _verbo_ · Palabra a palabra: 上 «subir, empezar» + 班 «turno». 我明天上班 «mañana trabajo». Al salir, 下班. · 上 «subir, entrar» + 班 «turno»: entrar en el turno de trabajo. Por eso 我今天不上班 «hoy no trabajo», aunque tengas empleo. Lo contrario, 下班 «salir del trabajo». 工作 es el trabajo en sí: 我在工作 «estoy trabajando».
 - ✅🃏 知识 zhīshi [ʈʂɨ˥ ʂɨ] · conocimiento, saber · _sustantivo_ · Palabra a palabra: 知 «saber» (el de 知道) + 识 «conocer» (el de 认识). · 识, el de 认识 y 知识, es «reconocer»: el habla 讠 junto a algo que parece un caballete de pintor.
 - ✅🃏 事 shì [ʂɨ˥˩] · asunto, cosa (que hacer) · _sustantivo_ · 我今天有事 «hoy tengo cosas que hacer». 没事 méi shì «no pasa nada, estoy bien».
 - ✅🃏 下班 xiàbān [ɕja˥˩ pan˥] · salir de trabajar · _verbo_ · Lo contrario de 上班 «ir a trabajar»: 上 «subir» al turno y 下 «bajar» de él.
@@ -39,6 +39,12 @@
 - ✅🃏 页 yè [jɛ˥˩] · página · _clasificador_ · 请看第十页 «mirad la página diez», lo que dice la profesora.
 - ✅🃏 网上 wǎngshàng [wɑŋ˧˩˧ ʂɑŋ˥˩] · en internet · _sustantivo_ · 网 «red» + 上 «en»: en la red. 我在网上买 «lo compro por internet».
 - ✅🃏 学院 xuéyuàn [ɕɥœ˧˥ ɥœn˥˩] · facultad, escuela superior · _sustantivo_
+- ✅🃏 大学生 dàxuéshēng [ta˥˩ ɕɥœ˧˥ ʂɤŋ˥] · estudiante universitario · _sustantivo_ · La serie de la escuela: 小学生 xiǎoxuéshēng (primaria), 中学生 zhōngxuéshēng (secundaria) y 大学生 dàxuéshēng (universidad). Escuela pequeña, media y grande, más 生 «estudiante».
+- ✅🃏 小学生 xiǎoxuéshēng [ɕjɑʊ˧˩˧ ɕɥœ˧˥ ʂɤŋ˥] · alumno de primaria · _sustantivo_
+- ✅🃏 中学生 zhōngxuéshēng [ʈʂʊŋ˥ ɕɥœ˧˥ ʂɤŋ˥] · alumno de secundaria · _sustantivo_
+- ✅🃏 教室 jiàoshì [tɕjɑʊ˥˩ ʂɨ˥˩] · aula (el sitio) · _sustantivo_ · 教 jiào «enseñar» + 室 «sala»: la sala donde se enseña. Ojo: 教室 jiàoshì es el aula, no 老师 lǎoshī «profesor».
+- ✅🃏 校园 xiàoyuán [ɕjɑʊ˥˩ ɥœn˧˥] · campus (de una escuela o universidad) · _sustantivo_ · 校 «escuela» (el de 学校) + 园 «recinto, jardín» (el de 公园): el recinto de la escuela.
+- ✅🃏 继续 jìxù [tɕi˥˩ ɕy˥˩] · seguir, continuar · _verbo_ · 继续 + verbo: 继续聊天 «seguir charlando», 继续说 «sigue (hablando)». Salió en clase, en el texto de dos estudiantes que se conocen.
 
 ## 学 y 雪
 
@@ -93,3 +99,7 @@ Solo los separa el tono: se distinguen de oído por cómo sube o baja la voz.
 - ✅🃏 请看第十页。 · qǐng kàn dì shí yè · Mirad la página diez.
 - ✅🃏 我在网上买。 · wǒ zài wǎngshàng mǎi · Lo compro por internet.
 - ✅🃏 他在学院工作。 · tā zài xuéyuàn gōngzuò · Trabaja en la facultad.
+- ✅🃏 他们是大学生吗？ · tāmen shì dàxuéshēng ma · ¿Son estudiantes universitarios?
+- ✅🃏 下课以后，他在教室里看手机。 · xiàkè yǐhòu tā zài jiàoshì lǐ kàn shǒujī · Después de clase, se queda en el aula mirando el móvil.
+- ✅🃏 你读一下。 · nǐ dú yīxià · Léelo (en voz alta), por favor.
+- ✅🃏 他们继续聊天。 · tāmen jìxù liáotiān · Siguen charlando.

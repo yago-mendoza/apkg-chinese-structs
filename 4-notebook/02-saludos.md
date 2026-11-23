@@ -25,14 +25,14 @@
 - ✅🃏 好久不见 hǎojiǔ bú jiàn [xɑʊ˧˩˧ tɕjoʊ˧˩˧ pu˧˥ tɕjɛn˥˩] · ¡cuánto tiempo (sin vernos)! · _expresión_ · Palabra a palabra: 好久 «mucho tiempo» + 不见 «sin verse». Suele seguirle 最近怎么样？, como en 好久不见，最近怎么样？ «cuánto tiempo, ¿qué tal últimamente?». · 久 es una grulla de cuello largo, con una pata levantada, esperando un pez sin moverse: mucho tiempo.
 - ✅🃏 最近 zuìjìn [tsweɪ˥˩ tɕin˥˩] · últimamente, estos días · _sustantivo_
 - ✅🃏 忙 máng [mɑŋ˧˥] · ocupado, atareado · _verbo_
-- ✅🃏 还 hái [xaɪ˧˥] · todavía; aún · _adverbio_ · Con otra lectura, huán, es «devolver». En 你还好吗？ es «¿sigues bien?». · Suena igual que el 孩 de 孩子 «niño», pero es otro carácter. Con 要 es «más»: 你还要水吗？ «¿quieres más agua?».
+- ✅🃏 还 hái [xaɪ˧˥] · todavía; aún · _adverbio_ · Con otra lectura, huán, es «devolver». En 你还好吗？ es «¿sigues bien?». · Suena igual que el 孩 de 孩子 «niño», pero es otro carácter. Con 要 es «más»: 你还要水吗？ «¿quieres más agua?». · 💡 La idea de 还: algo sigue o se suma respecto a lo de antes. Sigue: 我还在工作 «todavía estoy trabajando». Se suma: 我要饺子，还要汤 «y además sopa». Una más: 我还要一杯 «otro». Y más que el punto de referencia: 今天比昨天还冷 «hoy hace aún más frío que ayer». Ojo: 我还好 es «estoy bastante bien», no «sigo bien».
 - ✅🃏 你好吗 nǐ hǎo ma [ni˧˩˧ xɑʊ˧˩˧ ma] · ¿cómo estás? · _expresión_ · Palabra a palabra: 你 «tú» + 好 «bien» + 吗 (pregunta): «¿tú, bien?». · Entre amigos suena escolar: mejor 最近怎么样？.
 - ✅🃏 最近怎么样 zuìjìn zěnmeyàng [tsweɪ˥˩ tɕin˥˩ tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal últimamente? · _expresión_ · Palabra a palabra: 最近 «últimamente» + 怎么样 «¿qué tal?». · La opción más versátil para preguntar qué tal: abarca trabajo, estudios y ánimo, y suena cercana sin ser íntima.
 - ✅🃏 你还好吗 nǐ hái hǎo ma [ni˧˩˧ xaɪ˧˥ xɑʊ˧˩˧ ma] · ¿estás bien? · _expresión_ · Palabra a palabra: 你 «tú» + 还 «todavía» + 好 «bien» + 吗: «¿sigues bien?». · Da por hecho que algo va mal: alguien se ha caído, parece triste o ha tenido un problema. Como saludo sin motivo suena alarmado.
 - ✅🃏 吃饭了吗 chīfàn le ma [ʈʂʰɨ˥ fan˥˩ lɤ ma] · ¿has comido? (como saludo) · _expresión_ · Palabra a palabra: 吃饭 «comer» + 了 «ya» + 吗: «¿ya has comido?». · No es una invitación a comer: es interesarse por ti, sobre todo entre vecinos, familia y gente mayor. Se contesta corto, 吃了，你呢？, y se sigue.
 - ✅🃏 最近忙吗 zuìjìn máng ma [tsweɪ˥˩ tɕin˥˩ mɑŋ˧˥ ma] · ¿mucho lío últimamente? · _expresión_ · Palabra a palabra: 最近 «últimamente» + 忙 «ocupado» + 吗: «¿ocupado últimamente?». · En chino el interés suele ir a algo concreto (el trabajo, la comida, el cansancio) más que a un «¿cómo estás?» abstracto.
 - ✅🃏 这个怎么样 zhège zěnmeyàng [ʈʂɤ˥˩ kɤ tsən˧˩˧ mɤ jɑŋ˥˩] · ¿qué tal este?, ¿qué te parece? · _expresión_ · Palabra a palabra: 这个 «este» + 怎么样 «¿qué tal?». · 怎么样 también pide opinión: 这个怎么样？ al enseñar algo, 明天怎么样？ al proponer un día.
-- ✅🃏 快乐 kuàilè [kʰwaɪ˥˩ lɤ˥˩] · feliz, alegre · _adjetivo_ · Se oye sobre todo en las felicitaciones: 生日快乐, 新年快乐. · 💡 快乐 es ser feliz, en general o en una etapa (跟你在一起很快乐); 高兴, contento por algo concreto (我太高兴了！); 开心, lo de diario para «estoy contento».
+- ✅🃏 快乐 kuàilè [kʰwaɪ˥˩ lɤ˥˩] · feliz, alegre · _adjetivo_ · Se oye sobre todo en las felicitaciones: 生日快乐, 新年快乐. · 💡 快乐 es ser feliz, en general o en una etapa (跟你在一起很快乐); 高兴, contento por algo concreto (我太高兴了！); 开心, lo de diario para «estoy contento». · Aquí 快 no es «rápido»: 快乐 es «feliz, alegre», sobre todo en felicitaciones (生日快乐). Es el mismo hanzi y suena igual que el 快 de 很快, pero en 快乐 no aporta la idea de rapidez.
 - ✅🃏 生日快乐 shēngrì kuàilè [ʂɤŋ˥ ʐɨ˥˩ kʰwaɪ˥˩ lɤ˥˩] · ¡feliz cumpleaños! · _expresión_ · Palabra a palabra: 生日 «cumpleaños» + 快乐 «feliz»: «cumpleaños feliz».
 - ✅🃏 礼物 lǐwù [li˧˩˧ u˥˩] · regalo · _sustantivo_ · 谢谢你的礼物！ «¡gracias por tu regalo!».
 - ✅🃏 恭喜 gōngxǐ [kʊŋ˥ ɕi˧˩˧] · ¡enhorabuena! · _expresión_ · Palabra a palabra: 恭 «respetuoso» + 喜 «alegría», el mismo de 喜欢. · Se oye mucho: 恭喜发财 en el Año Nuevo chino. En la lista es de nivel 7.
@@ -155,3 +155,4 @@ La misma sílaba: solo los separa el tono.
 - ✅🃏 生日快乐！ · shēngrì kuàilè · ¡Feliz cumpleaños!
 - ✅🃏 跟你在一起很快乐。 · gēn nǐ zài yìqǐ hěn kuàilè · Soy feliz estando contigo.
 - ✅🃏 我很开心。 · wǒ hěn kāixīn · Estoy contento.
+- ✅🃏 一切都好。 · yíqiè dōu hǎo · Todo bien.

@@ -272,6 +272,7 @@ entries:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
     comments:
       - {kind: linguistic, private: false, date: '2026-10-01', text: '又 + adjetivo + 又 + adjetivo: dos cualidades a la vez, 他又高又帅. Es la forma de decir «alto y guapo»: 和 no une adjetivos.', original: 'no decir ta hen gao he hen piao liang, sino, ta you gao you piao liang'}
+      - {date: '2026-11-23', kind: tip, private: false, text: '又 y 再 son «otra vez», pero miran a lados distintos: 又 a lo que ya se repitió (他又来了 «ha vuelto a venir»), 再 a lo que se repetirá (明天再来 «vuelve mañana»). 又 también suma cualidades: 又便宜又好吃 «barato y rico a la vez».'}
   - id: g.ai-ai
     kind: group
     basis: soundalike
@@ -697,6 +698,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-23', text: 'Con 了, que algo se ha estropeado: 我的手机坏了 «se me ha roto el móvil».'}
   - id: w.yiding
+    accept_cards: 'matiz 肯定 / 一定 que marcó como importante en el review 017'
     use: say
     role: function
     kind: word
@@ -832,3 +834,16 @@ entries:
     comments:
       - {date: '2026-11-06', kind: teacher, private: false, text: 'En clase: 那你太惨了！ «¡pues pobre de ti!», al contarle algo que te salió mal.'}
       - {date: '2026-11-06', kind: usage, private: false, text: '太惨了！ es una reacción de todos los días: «¡qué mal!, ¡pobre!».'}
+  - id: g.happy
+    kind: group
+    basis: set
+    title: 'Contento, feliz, a gusto'
+    explanation: 'Se solapan, pero cada una tiene su situación típica.'
+    members:
+      - {ref: w.kaixin, cue: 'lo pasas genial ahora (fiesta, amigos)'}
+      - {ref: w.gaoxing, cue: 'te alegras por algo concreto (una buena noticia, conocer a alguien)'}
+      - {ref: w.kuaile, cue: 'felicitaciones: 生日快乐, 新年快乐'}
+      - {ref: w.xingfu, cue: 'tu vida te parece plena (familia, pareja)'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+    comments:
+      - {date: '2026-11-23', kind: tip, private: false, text: 'De fiesta, 开心; con una buena noticia, 高兴; en las felicitaciones, 快乐; con la vida que tienes, 幸福. Y a gusto en un sitio, 舒服. Son tendencias, no reglas: se solapan.'}

@@ -4330,6 +4330,15 @@ characters:
       es: '业 parece un estante de pie, con sus postes sobre una base: lo que te sostiene, tu tarea.'
       en: '业 looks like a standing rack, its posts on a base: what holds you up, your task.'
     confidence: medium
+  带:
+    gloss: {es: 'cinturón; llevar consigo', en: 'belt; to carry along'}
+    origin:
+      es: 'Pictograma: arriba, un cinturón atado con los adornos que colgaban de él; abajo 巾, la tela que colgaba con ellos (así lo describe el Shuowen). De «cinturón» pasó a «llevar encima, llevar consigo».'
+      en: 'Pictograph: on top, a tied belt with the ornaments hanging from it; below 巾, the cloth that hung with them (as the Shuowen describes it). From belt it came to mean to carry on you, to take along.'
+    confidence: medium
+    memory:
+      es: 'Un cinturón con tres cosas colgadas arriba y un pañuelo 巾 debajo: todo lo que llevas encima.'
+      en: 'A belt with three things hanging on top and a cloth 巾 below: all you carry on you.'
   包:
     gloss: {es: 'envolver; bolsa', en: 'to wrap; bag'}
     origin:
@@ -4625,6 +4634,89 @@ characters:
     gloss: {es: jiaozi, en: dumpling}
     origin: {es: 'Fonético-semántico: 饣 «comida» da el significado y 交 jiāo el sonido.', en: 'Phono-semantic: 饣 (food) gives the meaning and 交 jiāo the sound.'}
     traditional: 餃
+    confidence: high
+  之:
+    gloss: {es: '(partícula de enlace, escrita); en 分之, «de»', en: '(literary linking particle); of'}
+    origin: {es: 'Ideograma: un pie que sale de una línea, «ir hacia». Hoy solo queda como enlace del chino escrito, en fórmulas como 三分之二.', en: 'Ideograph: a foot leaving a line, to go towards. Today it survives as a written linking word, in set phrases like 三分之二.'}
+    memory: {es: 'Un zigzag que enlaza el número de arriba con el de abajo: 三分之二, «de tres, dos».', en: 'A zigzag linking the bottom number to the top one: 三分之二, two of three.'}
+    confidence: medium
+  加:
+    gloss: {es: 'sumar, añadir', en: 'to add'}
+    origin: {es: 'Ideograma compuesto: 力 «fuerza» y 口 «boca»: añadir fuerza con palabras, apoyar; de ahí «sumar». En 加拿大 solo cuenta su sonido.', en: 'Compound ideograph: 力 (strength) and 口 (mouth): adding strength with words; hence to add. In 加拿大 only its sound counts.'}
+    confidence: high
+  园:
+    gloss: {es: 'jardín, recinto', en: 'garden, grounds'}
+    origin: {es: 'Fonético-semántico: el cercado 囗 da el significado y 元 yuán el sonido: el terreno cercado.', en: 'Phono-semantic: the enclosure 囗 gives the meaning and 元 yuán the sound: enclosed grounds.'}
+    traditional: 園
+    confidence: high
+  城:
+    gloss: {es: 'muralla; ciudad', en: 'city wall; city'}
+    origin: {es: 'Fonético-semántico: 土 «tierra» da el significado y 成 chéng el sonido: la muralla de tierra apisonada, y la ciudad que encierra.', en: 'Phono-semantic: 土 (earth) gives the meaning and 成 chéng the sound: the rammed-earth wall and the city inside it.'}
+    confidence: high
+  够:
+    gloss: {es: 'bastar, suficiente', en: 'enough'}
+    origin: {es: 'Fonético-semántico: 多 «mucho» da el significado y 句 el sonido (gōu, como en 狗 gǒu): hay bastante.', en: 'Phono-semantic: 多 (many) gives the meaning and 句 the sound (gōu, as in 狗 gǒu): there is enough.'}
+    confidence: high
+  宫:
+    gloss: {es: palacio, en: palace}
+    memory: {es: 'Un tejado 宀 y debajo dos bocas 口 una sobre otra: muchas salas llenas de gente, el palacio.', en: 'A roof 宀 over two mouths 口 stacked: many halls full of people, the palace.'}
+    origin: {es: 'Ideograma compuesto: un tejado 宀 sobre varias estancias 吕: un edificio de muchas salas, el palacio.', en: 'Compound ideograph: a roof 宀 over several rooms 吕: a many-roomed building, the palace.'}
+    confidence: medium
+  才:
+    gloss: {es: 'no… hasta; solo; talento', en: 'not until; only; talent'}
+    origin: {es: 'Pictograma: un brote que asoma de la tierra. Su uso de «no… hasta, solo» es prestado por el sonido.', en: 'Pictograph: a sprout pushing out of the ground. Its use for not until, only is a sound loan.'}
+    memory: {es: 'Un brote que acaba de salir: llega tarde y es poquito, como 才.', en: 'A sprout that has only just come up: late and small, like 才.'}
+    confidence: medium
+  故:
+    gloss: {es: 'antiguo, de antes; motivo', en: 'old, former; reason'}
+    origin: {es: 'Fonético-semántico: 攵 «golpear, hacer» da el significado y 古 gǔ «antiguo» el sonido (y algo del sentido): lo de antes.', en: 'Phono-semantic: 攵 (to strike, act) gives the meaning and 古 gǔ (ancient) the sound, and some of the sense: what came before.'}
+    confidence: high
+  晴:
+    gloss: {es: despejado, en: clear (sky)}
+    origin: {es: 'Fonético-semántico: 日 «sol» da el significado y 青 qīng el sonido: el cielo limpio, con sol.', en: 'Phono-semantic: 日 (sun) gives the meaning and 青 qīng the sound: a clear, sunny sky.'}
+    confidence: high
+  法:
+    memory: {es: 'El agua 氵 que se va 去 siempre por el mismo cauce: la ley. Y Fǎguó suena a «France».', en: 'Water 氵 that goes 去 always down the same channel: the law. And Fǎguó sounds like France.'}
+    gloss: {es: 'ley, método; Francia (en 法国)', en: 'law, method; France (in 法国)'}
+    origin: {es: 'Ideograma compuesto: el agua 氵 que sigue su curso 去: la norma que todo sigue. En 法国 solo cuenta su sonido (Fǎ, de «France»).', en: 'Compound ideograph: water 氵 following its course 去: the rule everything follows. In 法国 only its sound counts (Fǎ, from France).'}
+    confidence: medium
+  炒:
+    gloss: {es: saltear, en: to stir-fry}
+    origin: {es: 'Fonético-semántico: 火 «fuego» da el significado y 少 shǎo el sonido: saltear al fuego.', en: 'Phono-semantic: 火 (fire) gives the meaning and 少 shǎo the sound: to stir-fry.'}
+    confidence: high
+  烦:
+    gloss: {es: 'molestar; agobiado', en: 'to bother; annoyed'}
+    origin: {es: 'Ideograma compuesto: 火 «fuego» junto a 页 «cabeza»: la cabeza que arde, la fiebre del agobio.', en: 'Compound ideograph: 火 (fire) beside 页 (head): a head on fire, feverish with annoyance.'}
+    traditional: 煩
+    confidence: high
+  福:
+    gloss: {es: 'suerte, dicha', en: 'good fortune'}
+    origin: {es: 'Fonético-semántico: 礻 «altar, culto» da el significado y 畐 fú el sonido (dibujo de una vasija llena): la bendición que se pide en el altar.', en: 'Phono-semantic: 礻 (altar, worship) gives the meaning and 畐 fú the sound (a full jar): the blessing asked for at the altar.'}
+    confidence: high
+  继:
+    memory: {es: 'Un hilo 纟 que se acaba y se ata a otro para seguir: continuar.', en: 'A thread 纟 that runs out and is tied to another to carry on: continue.'}
+    gloss: {es: 'seguir, continuar', en: to continue}
+    origin: {es: 'Ideograma compuesto: 纟 «hilo» y la pieza de los hilos cortados que se vuelven a atar: empalmar, seguir. El 米 de dentro es una simplificación, no arroz.', en: 'Compound ideograph: 纟 (thread) and the piece of cut threads tied together again: to splice, to continue. The 米 inside is a simplification, not rice.'}
+    traditional: 繼
+    confidence: medium
+  续:
+    gloss: {es: 'continuar, añadir a lo que hay', en: 'to continue'}
+    origin: {es: 'Fonético-semántico: 纟 «hilo» da el significado y 卖 (antes 賣) el sonido: añadir hilo al que hay, seguir.', en: 'Phono-semantic: 纟 (thread) gives the meaning and 卖 the sound: adding thread to thread, to continue.'}
+    traditional: 續
+    confidence: high
+  肯:
+    gloss: {es: 'estar dispuesto a; aceptar', en: 'to be willing'}
+    origin: {es: 'Ideograma: carne ⺼ pegada al hueso (la parte de arriba es un hueso, no 止). «Estar dispuesto» es un uso por su sonido.', en: 'Ideograph: flesh ⺼ attached to bone (the top was a bone, not 止). Being willing is a sound loan.'}
+    memory: {es: 'Arriba 止 «parar», abajo 月 «cuerpo»: el cuerpo se para y dice que sí, seguro.', en: 'Top 止 (stop), bottom 月 (body): the body stops and says yes, sure.'}
+    confidence: medium
+  舒:
+    memory: {es: 'En tu casa 舍 te estiras a gusto: 舒服, cómodo.', en: 'At home 舍 you stretch out at ease: 舒服, comfortable.'}
+    gloss: {es: 'estirarse, relajarse', en: 'to stretch, relax'}
+    origin: {es: 'Fonético-semántico: 舍 «casa» da el significado y 予 yǔ el sonido: estar en casa a sus anchas.', en: 'Phono-semantic: 舍 (house) gives the meaning and 予 yǔ the sound: at ease at home.'}
+    confidence: medium
+  麻:
+    gloss: {es: 'cáñamo; entumecido; (en 麻烦) lío', en: 'hemp; numb'}
+    origin: {es: 'Ideograma compuesto: bajo un cobertizo 广, tallos de cáñamo 林 puestos a secar. En 麻烦 cuenta como «enredo».', en: 'Compound ideograph: under a shed 广, hemp stalks 林 laid out to dry. In 麻烦 it means a tangle.'}
     confidence: high
 
 parts:

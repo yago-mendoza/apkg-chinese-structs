@@ -13,7 +13,7 @@
 - ✅🃏 吗 ma [ma] · ¿…? (convierte la frase en pregunta de sí o no) · _partícula_ · Partícula final que convierte una afirmación en una pregunta de sí o no.
 - ✅🃏 呢 ne [nɤ] · ¿y…? (devuelve la pregunta) · _partícula_ · Una boca 口 ve a alguien sentado 匕 bajo un techo 尸 (juntos, 尼) y le devuelve la pregunta: «¿y tú?».
 - ✅🃏 也 yě [jɛ˧˩˧] · también · _adverbio_
-- ✅🃏 都 dōu [toʊ˥] · todos, ambos (adverbio) · _adverbio_
+- ✅🃏 都 dōu [toʊ˥] · todos, ambos (adverbio) · _adverbio_ · 💡 La idea de 都: incluirlo todo, hasta el extremo. Todos: 我们都来了. Hasta lo más inesperado: 孩子都知道 «hasta los niños lo saben». Y un punto que sorprende de tan avanzado: 都十二点了！ «¡ya son las doce!».
 - ✅🃏 的 de [tɤ] · de (posesión: 我的 = mi) · _partícula_ · No tiene una sola traducción: 我的 «mío», 这是我的 «es mío», 真的 «de verdad». Une lo que describe con lo descrito. · Como los otros «conejitos» (对, 时, 狗), 的 lleva una pieza a cada lado; aquí, un palito encima las une, como 的 une al dueño con lo suyo: 我的书.
 - ✅🃏 叫 jiào [tɕjɑʊ˥˩] · llamarse · _verbo_ · Para confirmar si alguien es una persona se pregunta 你是张丽吗？, no 你叫张丽吗？.
 - ✅🃏 什么 shénme [ʂən˧˥ mɤ] · qué · _interrogativo_ · 什么 va donde iría la respuesta, sin cambiar el orden: 他叫什么名字？ o 他的名字是什么？ (la primera es la más corriente).
@@ -32,7 +32,7 @@
 - ✅ 大卫 Dàwèi [ta˥˩ weɪ˥˩] · David (nombre de ejemplo) · _nombre propio_
 - ✅🃏 先生 xiānsheng [ɕjɛn˥ ʂɤŋ] · señor (tras el apellido) · _sustantivo_ · Detrás del apellido: 白先生 «el señor Bai». Es como se llama a alguien en un trato formal; no por el nombre completo. · 先 «antes» + 生 «nacer»: el que nació antes.
 - ✅🃏 哪 nǎ [na˧˩˧] · qué, cuál · _interrogativo_ · Ves varias cosas y abres la boca 口 para preguntar: «¿cuál de esas 那 quieres?». La boca convierte «ese» en una pregunta, y el tono también cambia: 那 nà baja, 哪 nǎ baja y sube. · Si sabes decir «uno», cambia 一 por 哪 y deja lo demás: de 一天 sale 哪天; de 一个人, 哪个人; de 一本书, 哪本书. 你是哪国人？ es una expresión hecha, sin 个. · 💡 哪 + clasificador: cambia 一 por 哪 y deja el resto. 一个人, 哪个人; 一本书, 哪本书; 一天, 哪天 (sin 个). 哪国人 es fija.
-- ✅🃏 国 guó [kwɔ˧˥] · país · _sustantivo_ · En los nombres de países: 中国, 美国. 你是哪国人？ «¿de qué país eres?». · En 中国, 中 zhōng «centro» va delante y 国 guó «país» detrás: «el país del centro».
+- ✅🃏 国 guó [kwɔ˧˥] · país · _sustantivo_ · En los nombres de países: 中国, 美国. 你是哪国人？ «¿de qué país eres?». · En 中国, 中 zhōng «centro» va delante y 国 guó «país» detrás: «el país del centro». · 💡 国 es «país» y, detrás del nombre, hace el país: 中国, 法国, 德国, 美国. La nacionalidad es país + 人: 中国人, 法国人. Suelto se usa poco y casi siempre en palabras: 回国 «volver a tu país», 外国 «el extranjero», 国家 «el país, el Estado».
 - ✅🃏 会 huì [xweɪ˥˩] · saber (hacer algo); ir a (predicción) · _verbo_ · Saber hacer algo aprendido: 我会说中文. «Saber un dato» es otra palabra, 知道 zhīdào [HSK 1]. · También predice: 明天会下雨 «mañana lloverá».
 - ✅🃏 学习 xuéxí [ɕɥœ˧˥ ɕi˧˥] · estudiar, aprender · _verbo_ · 学 «aprender» + 习 «practicar». 学生 «estudiante» lleva el mismo 学. · 习 xí «practicar»: una esquina de mesa con dos utensilios dentro. · 💡 En chino, estudiar y aprender son el mismo verbo: 学习, o 学 a secas. 我学习中文 «estudio chino»; 我想学游泳 «quiero aprender a nadar». 读书 dúshū es estudiar en la escuela (y leer libros).
 - ✅ 成龙 Chéng Lóng [ʈʂʰɤŋ˧˥ lʊŋ˧˥] · Jackie Chan · _nombre propio_ · Su apellido es 成 y su nombre, 龙 «dragón»: 他姓成，叫成龙.
@@ -55,6 +55,8 @@
 - ✅🃏 孟逸辰 Mèng Yìchén [mɤŋ˥˩ i˥˩ ʈʂʰən˧˥] · Mèng Yìchén (tu nombre en chino) · _nombre propio_ · Primero el apellido, 孟 Mèng, y luego el nombre, 逸辰 Yìchén: 逸 «sosegado, libre» y 辰 «los astros; la hora». Suena moderno y natural.
 - ✅🃏 上海 Shànghǎi [ʂɑŋ˥˩ xaɪ˧˩˧] · Shanghái · _nombre propio_
 - ✅🃏 见到 jiàndào [tɕjɛn˥˩ tɑʊ˥˩] · ver (a alguien), encontrarse con · _verbo_ · 我想再见到你 «quiero volver a verte». Con 见到 no se confunde con 再见 «adiós»: 我想再见你 se puede leer «quiero decirte adiós otra vez». · 见 «ver» + 到 «llegar, conseguir»: ver de verdad, encontrarse.
+- ✅🃏 法国 Fǎguó [fa˧˩˧ kwɔ˧˥] · Francia · _nombre propio_
+- ✅🃏 加拿大 Jiānádà [tɕja˥ na˧˥ ta˥˩] · Canadá · _nombre propio_ · Se escribe por cómo suena, Jiā-ná-dà: no busques el sentido de cada hanzi (加 «sumar», 拿 «coger», 大 «grande»).
 
 ## 是 shì y 十 shí
 
@@ -84,11 +86,12 @@ Los dos acaban en 生 átono; empiezan distinto.
 - 先生 xiānsheng · 先 «antes», alto y plano
 - 学生 xuéshēng · 学 «estudiar», sube
 
-## 猜 cāi y 菜 cài
+## 猜 cāi, 才 cái y 菜 cài
 
-猜 es alto y plano; 菜 cae.
+La misma sílaba: 猜 es alto y plano, 才 sube y 菜 cae.
 
 - 猜 cāi · alto y plano
+- 才 cái · sube: 他十点才来
 - 菜 cài · cae
 
 ## 王 y 忘
@@ -218,3 +221,8 @@ Misma sílaba, distinto tono.
 - ✅🃏 认识你很高兴，你是做什么工作的？ · rènshi nǐ hěn gāoxìng nǐ shì zuò shénme gōngzuò de · Encantado de conocerte. ¿A qué te dedicas?
 - ✅🃏 我想再见到你。 · wǒ xiǎng zài jiàndào nǐ · Quiero volver a verte.
 - ✅🃏 很高兴见到你。 · hěn gāoxìng jiàndào nǐ · Me alegro de verte.
+- ✅🃏 她是法国人。 · tā shì Fǎguó rén · Es francesa.
+- ✅🃏 她是加拿大人。 · tā shì Jiānádà rén · Es canadiense.
+- ✅🃏 他二十多岁。 · tā èr shí duō suì · Tiene veintitantos años.
+- ✅🃏 我和他一样大。 · wǒ hé tā yíyàng dà · Tengo la misma edad que él.
+- ✅🃏 你哪年出生？ · nǐ nǎ nián chūshēng · ¿En qué año naciste?

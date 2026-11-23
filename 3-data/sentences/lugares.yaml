@@ -521,3 +521,39 @@ sentences:
       - {text: 。}
     translation: {en: There are lots of people on the bus., es: En el autobús hay mucha gente.}
     source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.gugong-you-jiu-qian-duo-ge-fangjian
+    use: hear
+    kind: example
+    segments:
+      - {pinyin: 'Gùgōng', ref: w.gugong, text: 故宫}
+      - {pinyin: 'yǒu', ref: w.you.have, text: 有}
+      - {pinyin: 'jiǔ', ref: w.num.jiu, text: 九}
+      - {pinyin: 'qiān', ref: w.qian.thousand, text: 千}
+      - {pinyin: 'duō', ref: w.duo, text: 多}
+      - {pinyin: 'ge', ref: w.ge, text: 个}
+      - {pinyin: 'fángjiān', ref: w.fangjian, text: 房间}
+      - {text: 。}
+    translation: {en: 'The Forbidden City has more than nine thousand rooms.', es: 'La Ciudad Prohibida tiene más de nueve mil habitaciones.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+  - id: s.changcheng-you-liang-wan-duo-gongli
+    use: say
+    kind: example
+    segments:
+      - {pinyin: 'Chángchéng', ref: w.changcheng, text: 长城}
+      - {pinyin: 'yǒu', ref: w.you.have, text: 有}
+      - {pinyin: 'liǎng', ref: w.liang, text: 两}
+      - {pinyin: 'wàn', ref: w.wan.tenk, text: 万}
+      - {pinyin: 'duō', ref: w.duo, text: 多}
+      - {pinyin: 'gōnglǐ', ref: w.gongli, text: 公里}
+      - {text: 。}
+    translation: {en: 'The Great Wall is over twenty thousand kilometres long.', es: 'La Gran Muralla mide más de veinte mil kilómetros.'}
+    source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+  - id: s.lao-difang-jian
+    use: say
+    kind: formula
+    segments:
+      - {pinyin: 'lǎo dìfang', ref: e.laodifang, text: 老地方}
+      - {pinyin: 'jiàn', ref: w.jian, text: 见}
+      - {text: ！}
+    translation: {en: 'See you at the usual place!', es: '¡Nos vemos donde siempre!'}
+    source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}

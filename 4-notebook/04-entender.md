@@ -7,7 +7,7 @@
 - ✅🃏 问题 wèntí [wən˥˩ tʰi˧˥] · pregunta; problema · _sustantivo_ · Palabra a palabra: 问 «preguntar» + 题 «tema, ejercicio». Es «pregunta» y también «problema»: 我有一个问题 «tengo una pregunta»; 没问题 «no hay problema». · 题 lleva 是 a la izquierda, que le daba el sonido (hoy ya no se parece: tí), y 页 «página» a la derecha. · 💡 问题 es «pregunta» y también «problema»: 我有一个问题 «tengo una pregunta», 没问题 «sin problema», 好问题 «¡buena pregunta!».
 - ✅🃏 懂 dǒng [tʊŋ˧˩˧] · entender, comprender · _verbo_ · Solo es verbo: 我懂了 «ya lo entiendo»; 听不懂 «no lo entiendo (al oírlo)». 明白 es lo mismo, y además puede ser adjetivo, «claro»: 很明白 «muy claro». · 懂: el corazón 忄, de pie a la izquierda, y 董 dǒng, que da el sonido: entender de corazón. 喜 de 喜欢 no lleva nada a su izquierda.
 - ✅🃏 意思 yìsi [i˥˩ sɯ] · significado, sentido · _sustantivo_ · 这个是什么意思？ «¿qué significa esto?». Es el mismo 意思 de 不好意思, literalmente «no es buena intención». · 意: una voz 音 que sale del corazón 心: una intención. 思: un campo 田 de ideas cultivado en el corazón 心: pensar. · 什么意思？ «¿qué significa?»; 我的意思是… «lo que quiero decir es…». 你是什么意思？ puede sonar desafiante; para preguntar sin tensión, 你是说…？ «¿quieres decir que…?». 意 y 思 casi nunca van solos.
-- ✅🃏 清楚 qīngchu [tɕʰiŋ˥ ʈʂʰu] · claro, nítido (que se ve o se oye bien) · _adjetivo_ · 我没听清楚 «no lo he oído bien»: el problema es el sonido, no entenderlo. 清 lleva 青 qīng, que le da el sonido, como a 请 qǐng.
+- ✅🃏 清楚 qīngchu [tɕʰiŋ˥ ʈʂʰu] · claro, nítido (que se ve o se oye bien) · _adjetivo_ · 我没听清楚 «no lo he oído bien»: el problema es el sonido, no entenderlo. 清 lleva 青 qīng, que le da el sonido, como a 请 qǐng. · 清楚 detrás del verbo dice que algo se percibe bien: 听清楚 «oír bien», 看清楚 «ver bien», 说清楚 «explicar bien», 想清楚 «pensarlo hasta tenerlo claro». Si lo oyes bien pero no lo entiendes, 听不懂; si no lo oyes nada, 听不见.
 - ✅🃏 读 dú [tu˧˥] · leer (en voz alta) · _verbo_ · 这个字怎么读？ «¿cómo se lee este carácter?». Leer para uno mismo, en silencio, también es 看: 看书 «leer un libro».
 - ✅🃏 慢 màn [man˥˩] · lento, despacio · _adjetivo_ · 请说慢一点 «hable un poco más despacio, por favor». Lo contrario es 快 kuài «rápido». · Tu corazón 忄 quiere avanzar, pero una mano 又 tiene que desenredar una red 罒 que ha atrapado al sol 日: tira con tanto cuidado, tan despacio, que parece que el día no acaba nunca.
 - ✅🃏 一点 yīdiǎn [i˥ tjɛn˧˩˧] · un poco (de una cantidad o de una cualidad) · _adverbio_ · Va detrás de un adjetivo para pedir «un poco más así»: 慢一点 «más despacio», 便宜一点 «más barato». «Un poco» de una acción es 一下: 等一下. · Delante de un nombre, «un poco de»: 一点水. Detrás de un verbo, «un poco»: 吃一点. Con 有 delante del adjetivo es una queja: 有点贵 «es un poco caro», frente a 贵一点 «un poco más caro». Lo contrario de 一点 es 很多. · 点 parece un dispensador de jabón soltando sus gotas: 一点, una dosis pequeña, «un poco». · 💡 Tres yi que se confunden: 一下 «un momento», detrás del verbo (你等一下); 一定 «seguro», delante (我一定来); 一点 «un poco», de cantidad (便宜一点).
@@ -25,6 +25,7 @@
 - ✅🃏 可能 kěnéng [kʰɤ˧˩˧ nɤŋ˧˥] · quizá, puede que · _verbo_
 - ✅🃏 感觉 gǎnjué [kan˧˩˧ tɕɥœ˧˥] · sentir; sensación · _sustantivo_ · El mismo 觉 de 觉得: 我觉得 «creo, me parece»; 感觉 «siento, me siento». 感觉很好 «me siento bien».
 - ✅🃏 记住 jìzhu [tɕi˥˩ ʈʂu] · aprenderse, acordarse (para siempre) · _verbo_ · 记 «apuntar, recordar» + 住 «quedarse fijo»: que se quede. 我记住了 «ya me lo sé».
+- ✅🃏 肯定 kěndìng [kʰən˧˩˧ tiŋ˥˩] · seguro, sin duda · _adverbio_ · Como 一定 yídìng, «seguro que»: 你肯定累了 «seguro que estás cansado». 肯定 suena a convicción tuya; 一定, a deducción. Los dos son naturales en esa frase.
 
 ## 话 huà y 花 huā
 
@@ -103,3 +104,10 @@ Solo los separa el tono.
 - ✅🃏 你说什么？再说一遍。 · nǐ shuō shénme zài shuō yí biàn · ¿Qué dices? Repítelo.
 - ✅🃏 我没听清楚，你能再说一遍吗？ · wǒ méi tīng qīngchu nǐ néng zài shuō yí biàn ma · No lo he oído bien, ¿puedes repetirlo?
 - ✅🃏 我记住了。 · wǒ jìzhu le · Ya me lo sé (no se me olvida).
+- ✅🃏 你说得有道理。 · nǐ shuō de yǒu dàolǐ · Lo que dices tiene sentido.
+- ✅🃏 让我想想。 · ràng wǒ xiǎng xiǎng · Déjame pensarlo.
+- ✅🃏 听起来不错。 · tīng qǐlai búcuò · Suena bien.
+- ✅🃏 我没意见。 · wǒ méi yìjiàn · Por mí, bien.
+- ✅🃏 你肯定累了。 · nǐ kěndìng lèi le · Seguro que estás cansado.
+- ✅🃏 还行。 · hái xíng · No está mal.
+- ✅🃏 不要这样！ · bú yào zhèyàng · ¡Así no!
