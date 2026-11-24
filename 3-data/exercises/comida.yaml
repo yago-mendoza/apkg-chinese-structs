@@ -1224,6 +1224,36 @@ exercises:
     prompt: {text: 'Construye. Entras con un amigo en un sitio de comida rápida. Le cuentas qué te apetece y luego pides en el mostrador.'}
     answer: {meaning: '想 son ganas, 要 es pedir ya decidido y 喜欢, un gusto de siempre.'}
     comments: []
+  - id: x.compose.xihuan-chi
+    added: '2026-11-24'
+    lang: es
+    type: compose
+    targets: [s.wo-xihuan-chi-yu, s.wo-xihuan-chi-hanbao, s.wo-xihuan-chi-huoguo, s.wo-xihuan-chi-shanghai-xiaochi]
+    words: [w.wo, w.xihuan, w.chi, w.yu.fish, w.huoguo, w.hanbao]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. Un compañero chino te pregunta qué comida te gusta. Dile una o varias cosas que te guste comer.'}
+    answer: {meaning: '我喜欢吃 + una comida; cambia solo el final: 鱼, 汉堡, 火锅, 上海小吃…'}
+    comments: []
+  - id: x.compose.yao-yi-bei
+    added: '2026-11-24'
+    lang: es
+    type: compose
+    targets: [s.wo-yao-yi-bei-kele, s.wo-yao-yi-bei-shui, s.wo-yao-yi-bei-guozhi]
+    words: [w.wo, w.yao, w.num.yi, w.bei.cl, w.shui, w.kele]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. Estás en una cafetería y el camarero espera tu pedido. Pide algo de beber.'}
+    answer: {meaning: '我要一杯 + una bebida; 一杯 es «un vaso/una taza»: 水, 可乐, 果汁, 茶, 咖啡…'}
+    comments: []
+  - id: x.compose.zui-xihuan
+    added: '2026-11-24'
+    lang: es
+    type: compose
+    targets: [s.wo-zui-xihuan-zhongguo-cai, s.wo-zui-xihuan-chi-huoguo]
+    words: [w.wo, w.zui, w.xihuan, w.chi, w.cai]
+    skills: [production, speaking]
+    prompt: {text: 'Construye. Hablando de comida con un amigo, te pregunta cuál es tu plato favorito. Di qué es lo que más te gusta.'}
+    answer: {meaning: '我最喜欢 + lo que más te gusta; 最 es «el que más»: 我最喜欢中国菜 / 我最喜欢吃火锅.'}
+    comments: []
   - id: x.contrast.yu.fish
     added: 2026-10-19
     lang: es
@@ -2050,4 +2080,122 @@ exercises:
     prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 炒}
     answer: {typed: chao3, hanzi: 炒, pinyin: chǎo, meaning: 'Sale en 炒饭 chǎofàn «arroz frito (salteado)», 炒面 chǎomiàn «fideos
         salteados».'}
+    comments: []
+  - id: x.nuance.haochi-haohe
+    added: '2026-11-24'
+    lang: es
+    type: nuance
+    targets: [w.haochi, w.haohe]
+    skills: [comprehension, discrimination]
+    prompt: {text: '好吃 y 好喝: ¿cuál es «rico» de comer y cuál de beber?'}
+    answer: {meaning: '好吃 es rico de comer: 这个菜很好吃. 好喝 es rico de beber: 这个茶很好喝. 好 «bien» + 吃 / 喝.'}
+    comments: []
+  - id: x.dictation.haohe
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [w.haohe]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: hao3 he1, hanzi: 好喝, pinyin: hǎohē, meaning: 'rico (de beber), que sabe bien'}
+    comments: []
+  - id: x.produce.haohe
+    added: 2026-11-24
+    lang: es
+    type: produce
+    targets: [w.haohe]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «rico (de beber), que sabe bien»? Escribe el pinyin.'}
+    answer: {typed: hao3 he1, hanzi: 好喝, pinyin: hǎohē, meaning: 'rico (de beber), que sabe bien'}
+    comments: []
+  - id: x.read.haohe
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [w.haohe]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 好喝}
+    answer: {hanzi: 好喝, pinyin: hǎohē, meaning: 'rico (de beber), que sabe bien'}
+    comments: []
+  - id: x.dictation.jiu.alcohol
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [w.jiu.alcohol]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jiu3, hanzi: 酒, pinyin: jiǔ, meaning: 'alcohol, bebida alcohólica'}
+    comments: []
+  - id: x.produce.jiu.alcohol
+    added: 2026-11-24
+    lang: es
+    type: produce
+    targets: [w.jiu.alcohol]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «alcohol, bebida alcohólica»? Escribe el pinyin.'}
+    answer: {typed: jiu3, hanzi: 酒, pinyin: jiǔ, meaning: 'alcohol, bebida alcohólica'}
+    comments: []
+  - id: x.read.jiu.alcohol
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [w.jiu.alcohol]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 酒}
+    answer: {hanzi: 酒, pinyin: jiǔ, meaning: 'alcohol, bebida alcohólica'}
+    comments: []
+  - id: x.produce.wo-zui-xihuan-chi-huoguo
+    added: 2026-11-24
+    lang: es
+    type: produce
+    sentence: s.wo-zui-xihuan-chi-huoguo
+    targets: [s.wo-zui-xihuan-chi-huoguo]
+    context: [w.wo, w.zui, w.xihuan, w.chi, w.huoguo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Lo que más me gusta es comer hot pot.»'}
+    answer: {meaning: Lo que más me gusta es comer hot pot.}
+    comments: []
+  - id: x.listen.zhe-ge-cha-hen-haohe
+    added: 2026-11-24
+    lang: es
+    type: listen
+    sentence: s.zhe-ge-cha-hen-haohe
+    targets: [s.zhe-ge-cha-hen-haohe]
+    context: [w.zhe, w.ge, w.cha, w.hen, w.haohe]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Este té está muy rico.}
+    comments: []
+  - id: x.produce.zhe-ge-cha-hen-haohe
+    added: 2026-11-24
+    lang: es
+    type: produce
+    sentence: s.zhe-ge-cha-hen-haohe
+    targets: [s.zhe-ge-cha-hen-haohe]
+    context: [w.zhe, w.ge, w.cha, w.hen, w.haohe]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Este té está muy rico.»'}
+    answer: {meaning: Este té está muy rico.}
+    comments: []
+  - id: x.listen.wo-bu-he-jiu
+    added: 2026-11-24
+    lang: es
+    type: listen
+    sentence: s.wo-bu-he-jiu
+    targets: [s.wo-bu-he-jiu]
+    context: [w.wo, w.bu, w.he.drink, w.jiu.alcohol]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: No bebo alcohol.}
+    comments: []
+  - id: x.produce.wo-bu-he-jiu
+    added: 2026-11-24
+    lang: es
+    type: produce
+    sentence: s.wo-bu-he-jiu
+    targets: [s.wo-bu-he-jiu]
+    context: [w.wo, w.bu, w.he.drink, w.jiu.alcohol]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «No bebo alcohol.»'}
+    answer: {meaning: No bebo alcohol.}
     comments: []

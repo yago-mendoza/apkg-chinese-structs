@@ -15,7 +15,7 @@
 - ✅🃏 司机 sījī [sɯ˥ tɕi˥] · conductor (de taxi, de autobús) · _sustantivo_ · Es el oficio. Al taxista, al hablarle, no se le llama 司机 sino 师傅 shīfu [HSK 5]. · 司 sī da el sonido a 词 cí, que lleva además 讠 «palabra».
 - ✅🃏 地图 dìtú [ti˥˩ tʰu˧˥] · mapa · _sustantivo_ · Palabra a palabra: 地 «tierra» + 图 «dibujo». También la aplicación de mapas del móvil.
 - ✅🃏 船 chuán [ʈʂʰwan˧˥] · barco · _sustantivo_ · Se va en barco como en avión, con 坐: 坐船.
-- ✅🃏 学校 xuéxiào [ɕɥœ˧˥ ɕjɑʊ˥˩] · escuela, colegio · _sustantivo_ · Palabra a palabra: 学 «estudiar» + 校 «escuela». · 校: un árbol 木 junto a 交, seis 六 sobre unas piernas cruzadas 乂: seis alumnos se cruzan bajo el árbol de la entrada del colegio.
+- ✅🃏 学校 xuéxiào [ɕɥœ˧˥ ɕjɑʊ˥˩] · escuela, colegio · _sustantivo_ · Palabra a palabra: 学 «estudiar» + 校 «escuela». · 校: un árbol 木 junto a 交, seis 六 sobre unas piernas cruzadas 乂: seis alumnos se cruzan bajo el árbol de la entrada del colegio. · 💡 校 se lee xiào porque 交 (jiāo) le da el sonido: se parece, cambian la consonante y el tono. 木 «madera, árbol» da el sentido. El mismo 交 suena en 饺 jiǎo (饺子).
 - ✅🃏 那里 nàlǐ [na˥˩ li˧˩˧] · allí · _pronombre_
 - ✅🃏 里 lǐ [li˧˩˧] · dentro, en (detrás de un lugar) · _sustantivo_ · Va detrás del sitio: 冰箱里 «en la nevera», 房间里 «en la habitación».
 - ✅🃏 街道 jiēdào [tɕjɛ˥ tɑʊ˥˩] · calle · _sustantivo_ · Palabra a palabra: 街 «calle» + 道 «camino». · 圭 da el sonido a 街 jiē y a 鞋 xié: suenan parecido.

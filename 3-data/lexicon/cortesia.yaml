@@ -639,3 +639,62 @@ entries:
     source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
     comments:
       - {date: '2026-11-23', kind: usage, private: false, text: '我没意见 «por mí, bien»: literalmente «no tengo objeción». Se usa para decir que te parece bien lo que proponen.'}
+  - id: w.lihai
+    use: say
+    role: content
+    kind: word
+    hanzi: 厉害
+    pinyin: lìhai
+    accept_pinyin_mismatch: 'la segunda sílaba va en tono neutro: lìhai'
+    meaning: {es: 'impresionante, tremendo; (de algo) fuerte, intenso', en: 'impressive, formidable; intense'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: usage, private: false, text: '厉害 alaba, «¡qué crack!»: 你太厉害了！ También es «fuerte, intenso» para algo duro: 今天风很厉害 «hoy hace un viento tremendo».'}
+  - id: e.taihaole
+    use: say
+    role: content
+    kind: expression
+    hanzi: 太好了
+    pinyin: tài hǎo le
+    meaning: {es: '¡qué bien!, ¡genial!', en: 'great!, awesome!'}
+    level: 1
+    level_reason: 'no está en la lista; reacción de alegría básica, el patrón 太…了 con 好'
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: linguistic, private: false, text: 'Palabra a palabra: 太 «demasiado» + 好 «bien» + 了: «¡qué bien!». El patrón 太…了 marca el grado alto.'}
+  - id: e.wodetian
+    use: say
+    role: content
+    kind: expression
+    hanzi: 我的天
+    pinyin: wǒ de tiān
+    meaning: {es: '¡madre mía!, ¡Dios mío!', en: 'my god!'}
+    level: 2
+    level_reason: 'no está en la lista; reacción de sorpresa muy usada, 我的天(啊)'
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: linguistic, private: false, text: 'Palabra a palabra: 我的天 es «mi cielo», o sea «¡madre mía!». Reacción de sorpresa; también 我的天啊.'}
+  - id: e.zhendejiade
+    use: say
+    role: content
+    kind: expression
+    hanzi: 真的假的
+    pinyin: zhēn de jiǎ de
+    meaning: {es: '¿en serio?, ¿va en serio?', en: 'seriously?, for real?'}
+    level: 3
+    level_reason: 'no está en la lista; reacción coloquial, 真的 + 假的 «¿verdad o mentira?»'
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: linguistic, private: false, text: 'Palabra a palabra: 真的 «de verdad» + 假的 «falso»: «¿verdad o mentira?», o sea «¿en serio?». Se suelta ante algo que sorprende.'}
+  - id: e.xiaosiwole
+    use: say
+    role: content
+    kind: expression
+    hanzi: 笑死我了
+    pinyin: xiào sǐ wǒ le
+    meaning: {es: '¡me muero de risa!, ¡me parto!', en: "I'm dying laughing!"}
+    level: 3
+    level_reason: 'no está en la lista; coloquial muy usado en chat, 笑死 + 我 + 了'
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: linguistic, private: false, text: 'Palabra a palabra: 笑 «reír» + 死 «morir» + 我了: «me mató de risa». 死 remata el grado, no es literal.'}

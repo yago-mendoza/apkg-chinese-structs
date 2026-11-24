@@ -2255,3 +2255,89 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Todo bien.»'}
     answer: {meaning: Todo bien.}
     comments: []
+  - id: x.dictation.yue
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [w.yue]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: yue1, hanzi: 约, pinyin: yuē, meaning: 'quedar, citarse (con alguien)'}
+    comments: []
+  - id: x.produce.yue
+    added: 2026-11-24
+    lang: es
+    type: produce
+    targets: [w.yue]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «quedar, citarse (con alguien)»? Escribe el pinyin.'}
+    answer: {typed: yue1, hanzi: 约, pinyin: yuē, meaning: 'quedar, citarse (con alguien)'}
+    comments: []
+  - id: x.read.yue
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [w.yue]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 约}
+    answer: {hanzi: 约, pinyin: yuē, meaning: 'quedar, citarse (con alguien)'}
+    comments: []
+  - id: x.dictation.nine
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [e.nine]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ni3 ne5, hanzi: 你呢, pinyin: nǐ ne, meaning: '¿y tú?'}
+    comments: []
+  - id: x.produce.nine
+    added: 2026-11-24
+    lang: es
+    type: produce
+    targets: [e.nine]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¿y tú?»? Escribe el pinyin.'}
+    answer: {typed: ni3 ne5, hanzi: 你呢, pinyin: nǐ ne, meaning: '¿y tú?'}
+    comments: []
+  - id: x.read.nine
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [e.nine]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 你呢}
+    answer: {hanzi: 你呢, pinyin: nǐ ne, meaning: '¿y tú?'}
+    comments: []
+  - id: x.tones.nine
+    added: 2026-11-24
+    lang: es
+    type: tones
+    targets: [e.nine]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 你呢, pinyin: ni ne}
+    answer: {typed: '35', hanzi: 你呢, pinyin: nǐ ne, meaning: '¿y tú?'}
+    comments: []
+  - id: x.listen.women-xiaci-zai-yue
+    added: 2026-11-24
+    lang: es
+    type: listen
+    sentence: s.women-xiaci-zai-yue
+    targets: [s.women-xiaci-zai-yue]
+    context: [w.women, w.xiaci, w.zai.again, w.yue]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Ya quedamos otra vez.}
+    comments: []
+  - id: x.produce.women-xiaci-zai-yue
+    added: 2026-11-24
+    lang: es
+    type: produce
+    sentence: s.women-xiaci-zai-yue
+    targets: [s.women-xiaci-zai-yue]
+    context: [w.women, w.xiaci, w.zai.again, w.yue]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Ya quedamos otra vez.»'}
+    answer: {meaning: Ya quedamos otra vez.}
+    comments: []

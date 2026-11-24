@@ -3414,3 +3414,12 @@ exercises:
     prompt: {text: '¿Cuál es zhǎo, «buscar»?'}
     answer: {hanzi: 找, pinyin: zhǎo, meaning: buscar}
     comments: []
+  - id: x.nuance.zuo-shenme-le
+    added: '2026-11-24'
+    lang: es
+    type: nuance
+    targets: [w.zuo.do, w.le]
+    skills: [comprehension, discrimination]
+    prompt: {text: '做什么 y 做了什么: ¿cuál pregunta por lo habitual o futuro y cuál por lo ya hecho?'}
+    answer: {meaning: '做什么 pregunta por lo habitual o lo que harás: 你周末做什么？ 做了什么, con 了, por lo ya hecho: 你昨天做了什么？ El verbo no cambia; lo marca 了.'}
+    comments: []

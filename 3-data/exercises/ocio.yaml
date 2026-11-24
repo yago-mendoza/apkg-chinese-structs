@@ -592,3 +592,120 @@ exercises:
     prompt: {text: 'Dilo en chino, en voz alta: «Salgamos a divertirnos.»'}
     answer: {meaning: Salgamos a divertirnos.}
     comments: []
+  - id: x.nuance.ti-da
+    added: '2026-11-24'
+    lang: es
+    type: nuance
+    targets: [w.ti, w.da.play]
+    skills: [comprehension, discrimination]
+    prompt: {text: '踢 y 打: ¿con cuál «se juega» al fútbol y con cuál al baloncesto?'}
+    answer: {meaning: '踢 es «dar patadas»: 踢足球. 打 es «golpear con la mano»: 打篮球, 打网球. El chino no tiene un «jugar» único para los deportes.'}
+    comments: []
+  - id: x.dictation.ti
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [w.ti]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ti1, hanzi: 踢, pinyin: tī, meaning: dar una patada; jugar (al fútbol)}
+    comments: []
+  - id: x.produce.ti
+    added: 2026-11-24
+    lang: es
+    type: produce
+    targets: [w.ti]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «dar una patada; jugar (al fútbol)»? Escribe el pinyin.'}
+    answer: {typed: ti1, hanzi: 踢, pinyin: tī, meaning: dar una patada; jugar (al fútbol)}
+    comments: []
+  - id: x.read.ti
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [w.ti]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 踢}
+    answer: {hanzi: 踢, pinyin: tī, meaning: dar una patada; jugar (al fútbol)}
+    comments: []
+  - id: x.dictation.jianshenfang
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [w.jianshenfang]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: jian4 shen1 fang2, hanzi: 健身房, pinyin: jiànshēnfáng, meaning: gimnasio}
+    comments: []
+  - id: x.produce.jianshenfang
+    added: 2026-11-24
+    lang: es
+    type: produce
+    targets: [w.jianshenfang]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «gimnasio»? Escribe el pinyin.'}
+    answer: {typed: jian4 shen1 fang2, hanzi: 健身房, pinyin: jiànshēnfáng, meaning: gimnasio}
+    comments: []
+  - id: x.read.jianshenfang
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [w.jianshenfang]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 健身房}
+    answer: {hanzi: 健身房, pinyin: jiànshēnfáng, meaning: gimnasio}
+    comments: []
+  - id: x.listen.wo-xihuan-ti-zuqiu
+    added: 2026-11-24
+    lang: es
+    type: listen
+    sentence: s.wo-xihuan-ti-zuqiu
+    targets: [s.wo-xihuan-ti-zuqiu]
+    context: [w.wo, w.xihuan, w.ti, w.zuqiu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Me gusta jugar al fútbol.}
+    comments: []
+  - id: x.produce.wo-xihuan-ti-zuqiu
+    added: 2026-11-24
+    lang: es
+    type: produce
+    sentence: s.wo-xihuan-ti-zuqiu
+    targets: [s.wo-xihuan-ti-zuqiu]
+    context: [w.wo, w.xihuan, w.ti, w.zuqiu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Me gusta jugar al fútbol.»'}
+    answer: {meaning: Me gusta jugar al fútbol.}
+    comments: []
+  - id: x.listen.wo-changchang-qu-jianshenfang
+    added: 2026-11-24
+    lang: es
+    type: listen
+    sentence: s.wo-changchang-qu-jianshenfang
+    targets: [s.wo-changchang-qu-jianshenfang]
+    context: [w.wo, w.changchang, w.qu, w.jianshenfang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Voy a menudo al gimnasio.}
+    comments: []
+  - id: x.produce.wo-changchang-qu-jianshenfang
+    added: 2026-11-24
+    lang: es
+    type: produce
+    sentence: s.wo-changchang-qu-jianshenfang
+    targets: [s.wo-changchang-qu-jianshenfang]
+    context: [w.wo, w.changchang, w.qu, w.jianshenfang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Voy a menudo al gimnasio.»'}
+    answer: {meaning: Voy a menudo al gimnasio.}
+    comments: []
+  - id: x.charsound.jian-2
+    added: 2026-11-24
+    lang: es
+    type: charsound
+    targets: [w.jianshen, w.jianshenfang]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Escribe la sílaba con su tono.', hanzi: 健}
+    answer: {typed: jian4, hanzi: 健, pinyin: jiàn, meaning: 'Sale en 健身 jiànshēn «hacer ejercicio, ir al gimnasio», 健身房 jiànshēnfáng
+        «gimnasio».'}
+    comments: []

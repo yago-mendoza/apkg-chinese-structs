@@ -94,7 +94,7 @@ The deck is ordered by difficulty using the levels of the HSK 3.0 (the 2021 stan
 - **Level first, theme second.** In Anki: `🀄 Chino práctico::HSK 1::02 Saludos y despedidas`. Moving an item to another level keeps its review history.
 - **Class first, then one level at a time.** New cards from your classes come out first, whatever their level: the latest classes and the oldest pending ones, mixed, so neither waits for long. Everything else comes out level by level, so you study the whole deck. Anything from a higher level is filed under its level: from class, it still comes out with the class; from your own research, it waits.
 - **Knowing where you stand.** Every review reports how much of each level's vocabulary the deck covers. When you reach a level (at least 80% of its vocabulary, plus the agent's judgement on the sentence patterns you already handle), the agent says so clearly. Anything that arrives later from a level you already passed is flagged as a gap from that level.
-- **Gaps against a curriculum.** The review compares the deck with your current level's official list and suggests what is missing (lesson-by-lesson course sequences are planned).
+- **Gaps against a course order.** The review compares the deck with the official list and with an ideal study order (HSK 1–9, one hanzi at a time): it tells you how far the order is covered, suggests the next words that add the fewest new characters, and flags the "free" words you can already read with the characters you know. It is a suggestion, not a syllabus to pour in.
 
 ## Getting started
 

@@ -3281,3 +3281,159 @@ exercises:
     prompt: {text: '现在 y 今天: ¿cuál es «ahora» y cuál «hoy»?'}
     answer: {meaning: '现在 xiànzài, ahora mismo: 现在十点. 今天 jīntiān, el día de hoy: 今天八号.'}
     comments: []
+  - id: x.nuance.pingshi-yiban-changchang
+    added: '2026-11-24'
+    lang: es
+    type: nuance
+    targets: [w.pingshi, w.yiban.ordinary, w.changchang]
+    skills: [comprehension, discrimination]
+    prompt: {text: '平时, 一般 y 常常: ¿cuál mira a lo habitual, cuál a lo general y cuál a la frecuencia?'}
+    answer: {meaning: '平时 «de ordinario», lo normal: 我平时在家. 一般 «por lo general»: 我一般周末去健身房. 常常 «a menudo», la frecuencia: 我常常喝茶.'}
+    comments: []
+  - id: x.dictation.meitian
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [w.meitian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: mei3 tian1, hanzi: 每天, pinyin: měitiān, meaning: 'todos los días, cada día'}
+    comments: []
+  - id: x.produce.meitian
+    added: 2026-11-24
+    lang: es
+    type: produce
+    targets: [w.meitian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «todos los días, cada día»? Escribe el pinyin.'}
+    answer: {typed: mei3 tian1, hanzi: 每天, pinyin: měitiān, meaning: 'todos los días, cada día'}
+    comments: []
+  - id: x.read.meitian
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [w.meitian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 每天}
+    answer: {hanzi: 每天, pinyin: měitiān, meaning: 'todos los días, cada día'}
+    comments: []
+  - id: x.dictation.pingshi
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [w.pingshi]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ping2 shi2, hanzi: 平时, pinyin: píngshí, meaning: 'normalmente, de ordinario'}
+    comments: []
+  - id: x.produce.pingshi
+    added: 2026-11-24
+    lang: es
+    type: produce
+    targets: [w.pingshi]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «normalmente, de ordinario»? Escribe el pinyin.'}
+    answer: {typed: ping2 shi2, hanzi: 平时, pinyin: píngshí, meaning: 'normalmente, de ordinario'}
+    comments: []
+  - id: x.read.pingshi
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [w.pingshi]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 平时}
+    answer: {hanzi: 平时, pinyin: píngshí, meaning: 'normalmente, de ordinario'}
+    comments: []
+  - id: x.dictation.kong.free
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [w.kong.free]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: kong4, hanzi: 空, pinyin: kòng, meaning: 'tiempo libre, un hueco (en la agenda)'}
+    comments: []
+  - id: x.produce.kong.free
+    added: 2026-11-24
+    lang: es
+    type: produce
+    targets: [w.kong.free]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «tiempo libre, un hueco (en la agenda)»? Escribe el pinyin.'}
+    answer: {typed: kong4, hanzi: 空, pinyin: kòng, meaning: 'tiempo libre, un hueco (en la agenda)'}
+    comments: []
+  - id: x.read.kong.free
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [w.kong.free]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 空}
+    answer: {hanzi: 空, pinyin: kòng, meaning: 'tiempo libre, un hueco (en la agenda)'}
+    comments: []
+  - id: x.listen.wo-meitian-qu-jianshenfang
+    added: 2026-11-24
+    lang: es
+    type: listen
+    sentence: s.wo-meitian-qu-jianshenfang
+    targets: [s.wo-meitian-qu-jianshenfang]
+    context: [w.wo, w.meitian, w.qu, w.jianshenfang]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Voy al gimnasio todos los días.}
+    comments: []
+  - id: x.produce.wo-meitian-qu-jianshenfang
+    added: 2026-11-24
+    lang: es
+    type: produce
+    sentence: s.wo-meitian-qu-jianshenfang
+    targets: [s.wo-meitian-qu-jianshenfang]
+    context: [w.wo, w.meitian, w.qu, w.jianshenfang]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Voy al gimnasio todos los días.»'}
+    answer: {meaning: Voy al gimnasio todos los días.}
+    comments: []
+  - id: x.listen.wo-pingshi-zai-jia-gongzuo
+    added: 2026-11-24
+    lang: es
+    type: listen
+    sentence: s.wo-pingshi-zai-jia-gongzuo
+    targets: [s.wo-pingshi-zai-jia-gongzuo]
+    context: [w.wo, w.pingshi, w.zai.at, w.jia, w.gongzuo]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Normalmente trabajo en casa.}
+    comments: []
+  - id: x.produce.wo-pingshi-zai-jia-gongzuo
+    added: 2026-11-24
+    lang: es
+    type: produce
+    sentence: s.wo-pingshi-zai-jia-gongzuo
+    targets: [s.wo-pingshi-zai-jia-gongzuo]
+    context: [w.wo, w.pingshi, w.zai.at, w.jia, w.gongzuo]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Normalmente trabajo en casa.»'}
+    answer: {meaning: Normalmente trabajo en casa.}
+    comments: []
+  - id: x.listen.ni-you-kong-ma
+    added: 2026-11-24
+    lang: es
+    type: listen
+    sentence: s.ni-you-kong-ma
+    targets: [s.ni-you-kong-ma]
+    context: [w.ni, w.you.have, w.kong.free, w.ma]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: '¿Tienes un rato?'}
+    comments: []
+  - id: x.produce.ni-you-kong-ma
+    added: 2026-11-24
+    lang: es
+    type: produce
+    sentence: s.ni-you-kong-ma
+    targets: [s.ni-you-kong-ma]
+    context: [w.ni, w.you.have, w.kong.free, w.ma]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¿Tienes un rato?»'}
+    answer: {meaning: '¿Tienes un rato?'}
+    comments: []

@@ -99,7 +99,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat.md, date: '2026-10-01'}
   - id: s.wo-chifan-le
     use: say
-    kind: example
+    kind: formula
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 吃饭, ref: w.chifan, pinyin: chīfàn}
@@ -109,7 +109,7 @@ sentences:
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
   - id: s.wo-mei-chifan
     use: say
-    kind: example
+    kind: formula
     segments:
       - {text: 我, ref: w.wo, pinyin: wǒ}
       - {text: 没, ref: w.mei, pinyin: méi}
@@ -129,6 +129,18 @@ sentences:
       - {text: 。}
     translation: {es: 'Lo que más me gusta es la comida china.', en: 'Chinese food is my favourite.'}
     source: {origin: inbox, batch: 003-2026-10-01-comer-dinero-y-contrastes, file: sin-fecha_pegado-en-el-chat-2.md, date: '2026-10-01'}
+  - id: s.wo-zui-xihuan-chi-huoguo
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 最, ref: w.zui, pinyin: zuì}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 吃, ref: w.chi, pinyin: chī}
+      - {text: 火锅, ref: w.huoguo, pinyin: huǒguō}
+      - {text: 。}
+    translation: {es: 'Lo que más me gusta es comer hot pot.', en: 'My favourite thing to eat is hot pot.'}
+    source: {origin: inbox, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: wa-2026-11-24-0000.md, date: '2026-11-24'}
   - id: s.wo-ai-chi-haochi-de-dongxi
     use: hear
     kind: example
@@ -483,7 +495,7 @@ sentences:
     source: {origin: review, batch: 013-2026-10-23-pagar-opinar-y-contrastes, file: review-012-2026-10-19-querer-poder-y-matices.md, date: '2026-10-21'}
   - id: s.wo-shenme-dou-chi
     use: say
-    kind: example
+    kind: formula
     segments:
       - {text: 我, ref: w.wo, pinyin: 'wǒ'}
       - {text: 什么, ref: w.shenme, pinyin: 'shénme'}
@@ -624,3 +636,26 @@ sentences:
       - {text: 。}
     translation: {en: I like Shanghai street food., es: Me gusta la comida callejera de Shanghái.}
     source: {origin: review, batch: 017-2026-11-11-pedir-en-el-restaurante, file: review-016-2026-11-06-improvisar-y-la-clase-del-6.md, date: '2026-11-11'}
+  - id: s.zhe-ge-cha-hen-haohe
+    use: say
+    kind: example
+    segments:
+      - {text: 这, ref: w.zhe, pinyin: zhè}
+      - {text: 个, ref: w.ge, pinyin: ge}
+      - {text: 茶, ref: w.cha, pinyin: chá}
+      - {text: 很, ref: w.hen, pinyin: hěn}
+      - {text: 好喝, ref: w.haohe, pinyin: hǎohē}
+      - {text: 。}
+    translation: {es: 'Este té está muy rico.', en: 'This tea is very tasty.'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+  - id: s.wo-bu-he-jiu
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 不, ref: w.bu, pinyin: bù}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 酒, ref: w.jiu.alcohol, pinyin: jiǔ}
+      - {text: 。}
+    translation: {es: 'No bebo alcohol.', en: "I don't drink alcohol."}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}

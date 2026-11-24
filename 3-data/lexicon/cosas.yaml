@@ -106,6 +106,7 @@ entries:
     use: say
     role: function
     kind: word
+    accept_cards: 'partícula clave; el matiz 做什么 / 做了什么 (aspecto) de clase suma una tarjeta útil'
     hanzi: 了
     pinyin: le
     meaning: {es: 'partícula: algo ya pasó o ha cambiado', en: 'particle: done, or a change'}
@@ -551,6 +552,7 @@ entries:
     use: say
     role: content
     kind: word
+    accept_cards: 'el matiz 做什么 / 做了什么 (aspecto 了) de clase suma una tarjeta útil'
     hanzi: 做
     pinyin: zuò
     meaning: {es: hacer, en: 'to do, to make'}

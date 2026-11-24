@@ -497,3 +497,14 @@ sentences:
       - {text: 。}
     translation: {en: 'All is well.', es: 'Todo bien.'}
     source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.women-xiaci-zai-yue
+    use: say
+    kind: formula
+    segments:
+      - {text: 我们, ref: w.women, pinyin: wǒmen}
+      - {text: 下次, ref: w.xiaci, pinyin: xiàcì}
+      - {text: 再, ref: w.zai.again, pinyin: zài}
+      - {text: 约, ref: w.yue, pinyin: yuē}
+      - {text: 。}
+    translation: {es: 'Ya quedamos otra vez.', en: "Let's arrange it another time."}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}

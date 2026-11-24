@@ -82,3 +82,25 @@ sentences:
       - {text: 。}
     translation: {en: 'Let''s go out and have fun.', es: 'Salgamos a divertirnos.'}
     source: {origin: class, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23: apuntes de clase', date: '2026-11-23'}
+  - id: s.wo-xihuan-ti-zuqiu
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 喜欢, ref: w.xihuan, pinyin: xǐhuan}
+      - {text: 踢, ref: w.ti, pinyin: tī}
+      - {text: 足球, ref: w.zuqiu, pinyin: zúqiú}
+      - {text: 。}
+    translation: {es: 'Me gusta jugar al fútbol.', en: 'I like playing football.'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+  - id: s.wo-changchang-qu-jianshenfang
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 常常, ref: w.changchang, pinyin: chángcháng}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 健身房, ref: w.jianshenfang, pinyin: jiànshēnfáng}
+      - {text: 。}
+    translation: {es: 'Voy a menudo al gimnasio.', en: 'I often go to the gym.'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}

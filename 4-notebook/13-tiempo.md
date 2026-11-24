@@ -64,6 +64,9 @@
 - ✅🃏 路上 lùshang [lu˥˩ ʂɑŋ] · por el camino, de camino · _sustantivo_ · 在回家的路上 «de camino a casa». Al despedir a alguien: 路上小心 «ten cuidado por el camino».
 - ✅🃏 经常 jīngcháng [tɕiŋ˥ ʈʂʰɑŋ˧˥] · a menudo · _adverbio_ · Como 常常 «a menudo»; 经常 se oye un poco más en preguntas: 你经常去吗？.
 - ✅🃏 有时 yǒushí [joʊ˧˩˧ ʂɨ˧˥] · a veces · _adverbio_ · Igual que 有时候, más corto. Repetido para alternar: 有时…，有时… «unas veces…, otras…».
+- ✅🃏 每天 měitiān [meɪ˧˩˧ tʰjɛn˥] · todos los días, cada día · _sustantivo_ · 每 «cada» + 天 «día»: todos los días. Va delante del verbo: 我每天学中文 «estudio chino todos los días».
+- ✅🃏 平时 píngshí [pʰiŋ˧˥ ʂɨ˧˥] · normalmente, de ordinario · _sustantivo_ · 平时 mira a lo habitual, a las circunstancias normales: 我平时在家工作 «normalmente trabajo en casa».
+- ✅🃏 空 kòng [kʰʊŋ˥˩] · tiempo libre, un hueco (en la agenda) · _sustantivo_ · 💡 空 tiene dos lecturas: kòng es «tiempo libre» —你有空吗？ «¿tienes un rato?»— y kōng es «vacío» —这个房间是空的 «esta habitación está vacía»—. Para quedar, 有空 (kòng).
 
 ## 上 / 中 / 下 + 午
 
@@ -260,3 +263,6 @@ Solo los separa el tono.
 - ✅🃏 差五分八点。 · chà wǔ fēn bā diǎn · Son las ocho menos cinco.
 - ✅🃏 你今天要做什么？ · nǐ jīntiān yào zuò shénme · ¿Qué vas a hacer hoy?
 - ✅🃏 我有时喝茶，有时喝咖啡。 · wǒ yǒushí hē chá yǒushí hē kāfēi · Unas veces tomo té, otras café.
+- ✅🃏 我每天去健身房。 · wǒ měitiān qù jiànshēnfáng · Voy al gimnasio todos los días.
+- ✅🃏 我平时在家工作。 · wǒ píngshí zài jiā gōngzuò · Normalmente trabajo en casa.
+- ✅🃏 你有空吗？ · nǐ yǒu kòng ma · ¿Tienes un rato?

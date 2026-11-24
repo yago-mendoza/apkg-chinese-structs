@@ -51,6 +51,11 @@
 - ✅🃏 麻烦 máfan [ma˧˥ fan] · molestar (al pedir un favor); molestia · _adjetivo_ · 麻烦你 + lo que pides: 麻烦你帮我一下 «¿me echas una mano, por favor?». Al acabar, 麻烦你了 «perdona las molestias». 太麻烦了 «¡qué lío!». · 💡 Para llamar la atención, 不好意思; para preguntar algo, 请问; para pedir que te hagan algo, 麻烦你; si has hecho algo mal, 对不起.
 - ✅🃏 有道理 yǒu dàolǐ [joʊ˧˩˧ tɑʊ˥˩ li˧˩˧] · tiene sentido; tienes razón · _expresión_ · Palabra a palabra: 有 «tener» + 道理 «razón, lógica»: tiene lógica. 你说得有道理 «lo que dices tiene sentido».
 - ✅🃏 意见 yìjiàn [i˥˩ tɕjɛn˥˩] · opinión; objeción · _sustantivo_ · 我没意见 «por mí, bien»: literalmente «no tengo objeción». Se usa para decir que te parece bien lo que proponen.
+- ✅🃏 厉害 lìhai [li˥˩ xaɪ] · impresionante, tremendo; (de algo) fuerte, intenso · _adjetivo_ · 厉害 alaba, «¡qué crack!»: 你太厉害了！ También es «fuerte, intenso» para algo duro: 今天风很厉害 «hoy hace un viento tremendo».
+- ✅🃏 太好了 tài hǎo le [tʰaɪ˥˩ xɑʊ˧˩˧ lɤ] · ¡qué bien!, ¡genial! · _expresión_ · Palabra a palabra: 太 «demasiado» + 好 «bien» + 了: «¡qué bien!». El patrón 太…了 marca el grado alto.
+- ✅🃏 我的天 wǒ de tiān [wɔ˧˩˧ tɤ tʰjɛn˥] · ¡madre mía!, ¡Dios mío! · _expresión_ · Palabra a palabra: 我的天 es «mi cielo», o sea «¡madre mía!». Reacción de sorpresa; también 我的天啊.
+- ✅🃏 真的假的 zhēn de jiǎ de [ʈʂən˥ tɤ tɕja˧˩˧ tɤ] · ¿en serio?, ¿va en serio? · _expresión_ · Palabra a palabra: 真的 «de verdad» + 假的 «falso»: «¿verdad o mentira?», o sea «¿en serio?». Se suelta ante algo que sorprende.
+- ✅🃏 笑死我了 xiào sǐ wǒ le [ɕjɑʊ˥˩ sɯ˧˩˧ wɔ˧˩˧ lɤ] · ¡me muero de risa!, ¡me parto! · _expresión_ · Palabra a palabra: 笑 «reír» + 死 «morir» + 我了: «me mató de risa». 死 remata el grado, no es literal.
 
 ## Formas de decir que sí
 
@@ -186,3 +191,4 @@ Cada una contesta a una cosa distinta: a unas gracias, a una disculpa o a un fav
 - ✅🃏 别开玩笑了！ · bié kāi wánxiào le · ¡No bromees!
 - ✅🃏 我开玩笑的！ · wǒ kāi wánxiào de · ¡Es broma!
 - ✅🃏 你得小心。 · nǐ děi xiǎoxīn · Tienes que tener cuidado.
+- ✅🃏 你太厉害了！ · nǐ tài lìhai le · ¡Eres un crack!

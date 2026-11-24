@@ -1897,3 +1897,47 @@ class NuanceLines(unittest.TestCase):
     def test_html(self):
         self.assertEqual(anki.answer_lines_html("Uno. Dos <b>."), "Uno.<br>Dos &lt;b&gt;.")
         self.assertEqual(anki.answer_lines(""), [])
+
+
+class OrdenIdeal(unittest.TestCase):
+    """El orden ideal de estudio (secuencia de curso) cruzado con el mazo: frontera, próximas y huecos gratis.
+    Lógica pura, sin depender del archivo local de private/."""
+
+    ENTRIES = [
+        {"id": "w.1", "kind": "word", "hanzi": "上", "pinyin": "shàng", "use": "say"},
+        {"id": "w.2", "kind": "word", "hanzi": "不", "pinyin": "bù", "use": "say"},
+        {"id": "w.3", "kind": "word", "hanzi": "要", "pinyin": "yào", "use": "say"},
+        {"id": "w.4", "kind": "word", "hanzi": "还", "pinyin": "hái", "use": "hear"},
+        {"id": "w.x", "kind": "word", "hanzi": "欠", "pinyin": "qiàn", "use": "drop"},  # descartada: no cuenta
+    ]
+    ROWS = [
+        {"orden": "1", "palabra": "上", "pinyin": "shàng", "hanzi_nuevo": "", "tipo": "remate", "nivel": "HSK1", "significado": "up"},
+        {"orden": "2", "palabra": "不要", "pinyin": "bùyào", "hanzi_nuevo": "", "tipo": "remate", "nivel": "HSK1", "significado": "don't"},
+        {"orden": "3", "palabra": "还", "pinyin": "hái", "hanzi_nuevo": "", "tipo": "remate", "nivel": "HSK1", "significado": "still"},
+        {"orden": "4", "palabra": "还", "pinyin": "huán", "hanzi_nuevo": "", "tipo": "lectura nueva", "nivel": "HSK2", "significado": "to return"},
+        {"orden": "5", "palabra": "高", "pinyin": "gāo", "hanzi_nuevo": "高", "tipo": "hanzi nuevo", "nivel": "HSK1", "significado": "tall"},
+    ]
+
+    def test_known_hanzi_excludes_dropped(self):
+        self.assertEqual(anki.deck_known_hanzi(self.ENTRIES), {"上", "不", "要", "还"})
+
+    def test_readable_uncovered_generic(self):
+        known = {"不", "要"}
+        words = [{"palabra": "不要"}, {"palabra": "高"}, {"palabra": "不"}]
+        # 高 no es legible (hanzi desconocido); 不 ya está cubierto; queda 不要.
+        got = anki.readable_uncovered(known, words, lambda w: w["palabra"], lambda w: w["palabra"] == "不")
+        self.assertEqual([w["palabra"] for w in got], ["不要"])
+
+    def test_cross(self):
+        with mock.patch.object(anki, "load_orden", return_value=self.ROWS):
+            rows, cov, frontier, nexts, free, known = anki.orden_cross(self.ENTRIES)
+        self.assertEqual(known, 4)
+        self.assertTrue(cov[0])          # 上: en el mazo, pinyin cuadra
+        self.assertFalse(cov[1])         # 不要: no está
+        self.assertTrue(cov[2])          # 还 hái: cuadra
+        self.assertFalse(cov[3])         # 还 huán: mismo hanzi, otra lectura (polífono) -> no cubierto
+        self.assertFalse(cov[4])         # 高: no está
+        self.assertEqual(frontier, 1)    # la primera sin cubrir es 不要
+        self.assertEqual([r["palabra"] for r in nexts], ["不要", "还", "高"])
+        # Huecos gratis: legibles ya y no mostrados entre próximas. 高 no es legible; el resto va en próximas.
+        self.assertEqual(free, [])

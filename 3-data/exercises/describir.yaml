@@ -3420,3 +3420,21 @@ exercises:
     prompt: {text: 'Completa en pinyin: «Tengo la misma edad que él.» (sin 岁)'}
     answer: {typed: yi2 yang4, hanzi: 一样, pinyin: yíyàng, meaning: 'igual, lo mismo'}
     comments: []
+  - id: x.nuance.gengduo-duo
+    added: '2026-11-24'
+    lang: es
+    type: nuance
+    targets: [w.geng, w.duo]
+    skills: [comprehension, discrimination]
+    prompt: {text: '更多 y 多: ¿cuál cuantifica el objeto y cuál la acción?'}
+    answer: {meaning: '更多 + sustantivo cuantifica la cosa: 我想学更多中文 «más chino». 多 + verbo cuantifica la acción: 我想多学一点 «aprender un poco más».'}
+    comments: []
+  - id: x.nuance.youdian-yidian
+    added: '2026-11-24'
+    lang: es
+    type: nuance
+    targets: [w.youdian, w.yidian]
+    skills: [comprehension, discrimination]
+    prompt: {text: '有点 y 一点: ¿cuál va delante del adjetivo y suena a queja?'}
+    answer: {meaning: '有点 + adjetivo, «un poco» y suele quejarse: 有点贵. Adjetivo + 一点, «un poco más»: 便宜一点. 一点 + sustantivo, poca cantidad: 喝一点水.'}
+    comments: []

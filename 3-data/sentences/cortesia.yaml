@@ -1004,3 +1004,14 @@ sentences:
       - {text: 。}
     translation: {en: 'You have to be careful.', es: 'Tienes que tener cuidado.'}
     source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.ni-tai-lihai-le
+    use: say
+    kind: formula
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 太, ref: w.tai, pinyin: tài}
+      - {text: 厉害, ref: w.lihai, pinyin: lìhai}
+      - {text: 了, ref: w.le, pinyin: le}
+      - {text: ！}
+    translation: {es: '¡Eres un crack!', en: "You're amazing!"}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}

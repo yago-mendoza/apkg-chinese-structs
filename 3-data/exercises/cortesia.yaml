@@ -3115,3 +3115,220 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: Tienes que tener cuidado.}
     comments: []
+  - id: x.dictation.lihai
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [w.lihai]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: li4 hai5, hanzi: 厉害, pinyin: lìhai, meaning: 'impresionante, tremendo; (de algo) fuerte, intenso'}
+    comments: []
+  - id: x.produce.lihai
+    added: 2026-11-24
+    lang: es
+    type: produce
+    targets: [w.lihai]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «impresionante, tremendo; (de algo) fuerte, intenso»? Escribe el pinyin.'}
+    answer: {typed: li4 hai5, hanzi: 厉害, pinyin: lìhai, meaning: 'impresionante, tremendo; (de algo) fuerte, intenso'}
+    comments: []
+  - id: x.read.lihai
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [w.lihai]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 厉害}
+    answer: {hanzi: 厉害, pinyin: lìhai, meaning: 'impresionante, tremendo; (de algo) fuerte, intenso'}
+    comments: []
+  - id: x.tones.lihai
+    added: 2026-11-24
+    lang: es
+    type: tones
+    targets: [w.lihai]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 厉害, pinyin: li hai}
+    answer: {typed: '45', hanzi: 厉害, pinyin: lìhai, meaning: 'impresionante, tremendo; (de algo) fuerte, intenso'}
+    comments: []
+  - id: x.dictation.taihaole
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [e.taihaole]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: tai4 hao3 le5, hanzi: 太好了, pinyin: tài hǎo le, meaning: '¡qué bien!, ¡genial!'}
+    comments: []
+  - id: x.produce.taihaole
+    added: 2026-11-24
+    lang: es
+    type: produce
+    targets: [e.taihaole]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¡qué bien!, ¡genial!»? Escribe el pinyin.'}
+    answer: {typed: tai4 hao3 le5, hanzi: 太好了, pinyin: tài hǎo le, meaning: '¡qué bien!, ¡genial!'}
+    comments: []
+  - id: x.read.taihaole
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [e.taihaole]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 太好了}
+    answer: {hanzi: 太好了, pinyin: tài hǎo le, meaning: '¡qué bien!, ¡genial!'}
+    comments: []
+  - id: x.tones.taihaole
+    added: 2026-11-24
+    lang: es
+    type: tones
+    targets: [e.taihaole]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 太好了, pinyin: tai hao le}
+    answer: {typed: '435', hanzi: 太好了, pinyin: tài hǎo le, meaning: '¡qué bien!, ¡genial!'}
+    comments: []
+  - id: x.dictation.wodetian
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [e.wodetian]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wo3 de5 tian1, hanzi: 我的天, pinyin: wǒ de tiān, meaning: '¡madre mía!, ¡Dios mío!'}
+    comments: []
+  - id: x.produce.wodetian
+    added: 2026-11-24
+    lang: es
+    type: produce
+    targets: [e.wodetian]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¡madre mía!, ¡Dios mío!»? Escribe el pinyin.'}
+    answer: {typed: wo3 de5 tian1, hanzi: 我的天, pinyin: wǒ de tiān, meaning: '¡madre mía!, ¡Dios mío!'}
+    comments: []
+  - id: x.read.wodetian
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [e.wodetian]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 我的天}
+    answer: {hanzi: 我的天, pinyin: wǒ de tiān, meaning: '¡madre mía!, ¡Dios mío!'}
+    comments: []
+  - id: x.tones.wodetian
+    added: 2026-11-24
+    lang: es
+    type: tones
+    targets: [e.wodetian]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 我的天, pinyin: wo de tian}
+    answer: {typed: '351', hanzi: 我的天, pinyin: wǒ de tiān, meaning: '¡madre mía!, ¡Dios mío!'}
+    comments: []
+  - id: x.dictation.zhendejiade
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [e.zhendejiade]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: zhen1 de5 jia3 de5, hanzi: 真的假的, pinyin: zhēn de jiǎ de, meaning: '¿en serio?, ¿va en serio?'}
+    comments: []
+  - id: x.produce.zhendejiade
+    added: 2026-11-24
+    lang: es
+    type: produce
+    targets: [e.zhendejiade]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¿en serio?, ¿va en serio?»? Escribe el pinyin.'}
+    answer: {typed: zhen1 de5 jia3 de5, hanzi: 真的假的, pinyin: zhēn de jiǎ de, meaning: '¿en serio?, ¿va en serio?'}
+    comments: []
+  - id: x.read.zhendejiade
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [e.zhendejiade]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 真的假的}
+    answer: {hanzi: 真的假的, pinyin: zhēn de jiǎ de, meaning: '¿en serio?, ¿va en serio?'}
+    comments: []
+  - id: x.tones.zhendejiade
+    added: 2026-11-24
+    lang: es
+    type: tones
+    targets: [e.zhendejiade]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 真的假的, pinyin: zhen de jia de}
+    answer: {typed: '1535', hanzi: 真的假的, pinyin: zhēn de jiǎ de, meaning: '¿en serio?, ¿va en serio?'}
+    comments: []
+  - id: x.dictation.xiaosiwole
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [e.xiaosiwole]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: xiao4 si3 wo3 le5, hanzi: 笑死我了, pinyin: xiào sǐ wǒ le, meaning: '¡me muero de risa!, ¡me parto!'}
+    comments: []
+  - id: x.produce.xiaosiwole
+    added: 2026-11-24
+    lang: es
+    type: produce
+    targets: [e.xiaosiwole]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «¡me muero de risa!, ¡me parto!»? Escribe el pinyin.'}
+    answer: {typed: xiao4 si3 wo3 le5, hanzi: 笑死我了, pinyin: xiào sǐ wǒ le, meaning: '¡me muero de risa!, ¡me parto!'}
+    comments: []
+  - id: x.read.xiaosiwole
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [e.xiaosiwole]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 笑死我了}
+    answer: {hanzi: 笑死我了, pinyin: xiào sǐ wǒ le, meaning: '¡me muero de risa!, ¡me parto!'}
+    comments: []
+  - id: x.tones.xiaosiwole
+    added: 2026-11-24
+    lang: es
+    type: tones
+    targets: [e.xiaosiwole]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone, p.third-tone-sandhi]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 笑死我了, pinyin: xiao si wo le}
+    answer: {typed: '4335', hanzi: 笑死我了, pinyin: xiào sǐ wǒ le, meaning: '¡me muero de risa!, ¡me parto!'}
+    comments: []
+  - id: x.listen.ni-tai-lihai-le
+    added: 2026-11-24
+    lang: es
+    type: listen
+    sentence: s.ni-tai-lihai-le
+    targets: [s.ni-tai-lihai-le]
+    context: [w.ni, w.tai, w.lihai, w.le]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: ¡Eres un crack!}
+    comments: []
+  - id: x.produce.ni-tai-lihai-le
+    added: 2026-11-24
+    lang: es
+    type: produce
+    sentence: s.ni-tai-lihai-le
+    targets: [s.ni-tai-lihai-le]
+    context: [w.ni, w.tai, w.lihai, w.le]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «¡Eres un crack!»'}
+    answer: {meaning: ¡Eres un crack!}
+    comments: []
+  - id: x.charsound.jia
+    added: 2026-11-24
+    lang: es
+    type: charsound
+    targets: [e.zhendejiade, w.qingjia]
+    skills: [reading, pinyin, tones]
+    prompt: {text: '¿Cómo suena este hanzi? Tiene más de una lectura: dilas.', hanzi: 假}
+    answer: {hanzi: 假, pinyin: jiǎ / jià, meaning: 'Sale en 真的假的 zhēn de jiǎ de «¿en serio?, ¿va en serio?», 请假 qǐngjià «pedir
+        el día libre, pedir permiso».'}
+    comments: []

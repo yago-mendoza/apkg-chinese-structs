@@ -2915,3 +2915,12 @@ exercises:
     prompt: {text: '再说一遍 y 再来一点水: ¿qué añade 一遍 y qué 一点?'}
     answer: {meaning: '一遍: una vez más la acción entera (repetirlo). 一点: un poco más de cantidad (de agua).'}
     comments: []
+  - id: x.nuance.yici-yibian
+    added: '2026-11-24'
+    lang: es
+    type: nuance
+    targets: [w.ci, w.bian]
+    skills: [comprehension, discrimination]
+    prompt: {text: '一次 y 一遍: ¿cuál es «una vez» y cuál «de principio a fin»?'}
+    answer: {meaning: '一次 es una vez, una ocasión: 我去过一次. 一遍 es una pasada entera, de principio a fin: 再说一遍 «repítelo entero».'}
+    comments: []

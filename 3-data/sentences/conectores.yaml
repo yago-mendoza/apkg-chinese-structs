@@ -550,3 +550,28 @@ sentences:
       - {text: 。}
     translation: {en: 'He''s not coming until ten.', es: 'No viene hasta las diez.'}
     source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.chule-kafei-wo-shenme-dou-he
+    use: say
+    kind: example
+    segments:
+      - {text: 除了, ref: w.chule, pinyin: chúle}
+      - {text: 咖啡, ref: w.kafei, pinyin: kāfēi}
+      - {text: ，}
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 什么, ref: w.shenme, pinyin: shénme}
+      - {text: 都, ref: w.dou, pinyin: dōu}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 。}
+    translation: {es: 'Bebo de todo menos café.', en: 'I drink everything except coffee.'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+  - id: s.wo-zhi-he-shui
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 只, ref: w.zhi.only, pinyin: zhǐ}
+      - {text: 喝, ref: w.he.drink, pinyin: hē}
+      - {text: 水, ref: w.shui, pinyin: shuǐ}
+      - {text: 。}
+    translation: {es: 'Solo bebo agua.', en: 'I only drink water.'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}

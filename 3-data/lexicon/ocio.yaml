@@ -200,3 +200,26 @@ entries:
       - {ref: w.wan.finish, cue: 'tejado 宀 encima; detrás del verbo: 吃完了'}
     source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
     comments: []
+  - id: w.ti
+    use: say
+    role: content
+    kind: word
+    hanzi: 踢
+    pinyin: tī
+    meaning: {es: 'dar una patada; jugar (al fútbol)', en: 'to kick; to play (football)'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: usage, private: false, text: 'Al fútbol se «da patadas»: 踢足球. Al baloncesto o al tenis se «golpea con la mano»: 打篮球, 打网球. El chino no tiene un «jugar» único para los deportes.'}
+  - id: w.jianshenfang
+    use: say
+    role: content
+    kind: word
+    pos: sustantivo
+    hanzi: 健身房
+    pinyin: jiànshēnfáng
+    meaning: {es: 'gimnasio', en: 'gym'}
+    level: 2
+    level_reason: 'no está en la lista; 健身 (hacer ejercicio) + 房 «sala», y vas al gimnasio a menudo'
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: linguistic, private: false, text: '健身 «hacer ejercicio» + 房 «sala, cuarto»: el gimnasio. 我去健身房 «voy al gimnasio».'}

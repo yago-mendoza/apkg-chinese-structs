@@ -1282,3 +1282,99 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: No viene hasta las diez.}
     comments: []
+  - id: x.dictation.chule
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [w.chule]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: chu2 le5, hanzi: 除了, pinyin: chúle, meaning: excepto; además de}
+    comments: []
+  - id: x.cloze.chule
+    added: 2026-11-24
+    lang: es
+    type: cloze
+    sentence: s.chule-kafei-wo-shenme-dou-he
+    gap: w.chule
+    targets: [w.chule]
+    context: [w.kafei, w.wo, w.shenme, w.dou, w.he.drink]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Bebo de todo menos café.»'}
+    answer: {typed: chu2 le5, hanzi: 除了, pinyin: chúle, meaning: excepto; además de}
+    comments: []
+  - id: x.read.chule
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [w.chule]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 除了}
+    answer: {hanzi: 除了, pinyin: chúle, meaning: excepto; además de}
+    comments: []
+  - id: x.tones.chule
+    added: 2026-11-24
+    lang: es
+    type: tones
+    targets: [w.chule]
+    skills: [tones, pinyin]
+    refs: [p.neutral-tone]
+    prompt: {text: 'Escribe el tono de cada sílaba (1–4, 5 = neutro).', hanzi: 除了, pinyin: chu le}
+    answer: {typed: '25', hanzi: 除了, pinyin: chúle, meaning: excepto; además de}
+    comments: []
+  - id: x.cloze.zhi.only
+    added: 2026-11-24
+    lang: es
+    type: cloze
+    sentence: s.wo-zhi-he-shui
+    gap: w.zhi.only
+    targets: [w.zhi.only]
+    context: [w.wo, w.he.drink, w.shui]
+    skills: [production, pinyin]
+    prompt: {text: 'Completa en pinyin: «Solo bebo agua.»'}
+    answer: {typed: zhi3, hanzi: 只, pinyin: zhǐ, meaning: 'solo, solamente'}
+    comments: []
+  - id: x.listen.chule-kafei-wo-shenme-dou-he
+    added: 2026-11-24
+    lang: es
+    type: listen
+    sentence: s.chule-kafei-wo-shenme-dou-he
+    targets: [s.chule-kafei-wo-shenme-dou-he]
+    context: [w.chule, w.kafei, w.wo, w.shenme, w.dou, w.he.drink]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Bebo de todo menos café.}
+    comments: []
+  - id: x.produce.chule-kafei-wo-shenme-dou-he
+    added: 2026-11-24
+    lang: es
+    type: produce
+    sentence: s.chule-kafei-wo-shenme-dou-he
+    targets: [s.chule-kafei-wo-shenme-dou-he]
+    context: [w.chule, w.kafei, w.wo, w.shenme, w.dou, w.he.drink]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Bebo de todo menos café.»'}
+    answer: {meaning: Bebo de todo menos café.}
+    comments: []
+  - id: x.listen.wo-zhi-he-shui
+    added: 2026-11-24
+    lang: es
+    type: listen
+    sentence: s.wo-zhi-he-shui
+    targets: [s.wo-zhi-he-shui]
+    context: [w.wo, w.zhi.only, w.he.drink, w.shui]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Solo bebo agua.}
+    comments: []
+  - id: x.produce.wo-zhi-he-shui
+    added: 2026-11-24
+    lang: es
+    type: produce
+    sentence: s.wo-zhi-he-shui
+    targets: [s.wo-zhi-he-shui]
+    context: [w.wo, w.zhi.only, w.he.drink, w.shui]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Solo bebo agua.»'}
+    answer: {meaning: Solo bebo agua.}
+    comments: []

@@ -1358,3 +1358,123 @@ exercises:
     prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
     answer: {meaning: '¿Quieres un poco más?'}
     comments: []
+  - id: x.dictation.ping.cl
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [w.ping.cl]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: ping2, hanzi: 瓶, pinyin: píng, meaning: 'botella (clasificador: 一瓶)'}
+    comments: []
+  - id: x.produce.ping.cl
+    added: 2026-11-24
+    lang: es
+    type: produce
+    targets: [w.ping.cl]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «botella (clasificador: 一瓶)»? Escribe el pinyin.'}
+    answer: {typed: ping2, hanzi: 瓶, pinyin: píng, meaning: 'botella (clasificador: 一瓶)'}
+    comments: []
+  - id: x.read.ping.cl
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [w.ping.cl]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 瓶}
+    answer: {hanzi: 瓶, pinyin: píng, meaning: 'botella (clasificador: 一瓶)'}
+    comments: []
+  - id: x.dictation.wan.cl
+    added: 2026-11-24
+    lang: es
+    type: listen
+    targets: [w.wan.cl]
+    skills: [listening, pinyin, tones]
+    prompt: {text: Escucha y escribe el pinyin., audio: true}
+    answer: {typed: wan3, hanzi: 碗, pinyin: wǎn, meaning: 'cuenco, bol (clasificador: 一碗)'}
+    comments: []
+  - id: x.produce.wan.cl
+    added: 2026-11-24
+    lang: es
+    type: produce
+    targets: [w.wan.cl]
+    skills: [production, pinyin]
+    prompt: {text: '¿Cómo se dice «cuenco, bol (clasificador: 一碗)»? Escribe el pinyin.'}
+    answer: {typed: wan3, hanzi: 碗, pinyin: wǎn, meaning: 'cuenco, bol (clasificador: 一碗)'}
+    comments: []
+  - id: x.read.wan.cl
+    added: 2026-11-24
+    lang: es
+    type: read
+    targets: [w.wan.cl]
+    skills: [reading, pinyin]
+    prompt: {text: 'Léelo en voz alta; luego, pinyin y significado.', hanzi: 碗}
+    answer: {hanzi: 碗, pinyin: wǎn, meaning: 'cuenco, bol (clasificador: 一碗)'}
+    comments: []
+  - id: x.listen.wo-yao-yi-ping-pijiu
+    added: 2026-11-24
+    lang: es
+    type: listen
+    sentence: s.wo-yao-yi-ping-pijiu
+    targets: [s.wo-yao-yi-ping-pijiu]
+    context: [w.wo, w.yao, w.num.yi, w.ping.cl, w.pijiu]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero una botella de cerveza.}
+    comments: []
+  - id: x.produce.wo-yao-yi-ping-pijiu
+    added: 2026-11-24
+    lang: es
+    type: produce
+    sentence: s.wo-yao-yi-ping-pijiu
+    targets: [s.wo-yao-yi-ping-pijiu]
+    context: [w.wo, w.yao, w.num.yi, w.ping.cl, w.pijiu]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero una botella de cerveza.»'}
+    answer: {meaning: Quiero una botella de cerveza.}
+    comments: []
+  - id: x.listen.wo-yao-yi-wan-miantiao
+    added: 2026-11-24
+    lang: es
+    type: listen
+    sentence: s.wo-yao-yi-wan-miantiao
+    targets: [s.wo-yao-yi-wan-miantiao]
+    context: [w.wo, w.yao, w.num.yi, w.wan.cl, w.miantiao]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Quiero un cuenco de fideos.}
+    comments: []
+  - id: x.produce.wo-yao-yi-wan-miantiao
+    added: 2026-11-24
+    lang: es
+    type: produce
+    sentence: s.wo-yao-yi-wan-miantiao
+    targets: [s.wo-yao-yi-wan-miantiao]
+    context: [w.wo, w.yao, w.num.yi, w.wan.cl, w.miantiao]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Quiero un cuenco de fideos.»'}
+    answer: {meaning: Quiero un cuenco de fideos.}
+    comments: []
+  - id: x.listen.xiaci-zai-lai
+    added: 2026-11-24
+    lang: es
+    type: listen
+    sentence: s.xiaci-zai-lai
+    targets: [s.xiaci-zai-lai]
+    context: [w.xiaci, w.zai.again, w.lai]
+    skills: [listening, comprehension]
+    prompt: {text: 'Escucha. ¿Qué significa?', audio: true}
+    answer: {meaning: Vuelva otra vez.}
+    comments: []
+  - id: x.produce.xiaci-zai-lai
+    added: 2026-11-24
+    lang: es
+    type: produce
+    sentence: s.xiaci-zai-lai
+    targets: [s.xiaci-zai-lai]
+    context: [w.xiaci, w.zai.again, w.lai]
+    skills: [production, speaking]
+    prompt: {text: 'Dilo en chino, en voz alta: «Vuelva otra vez.»'}
+    answer: {meaning: Vuelva otra vez.}
+    comments: []

@@ -515,6 +515,7 @@ entries:
     use: say
     role: function
     kind: word
+    accept_cards: 'la clase contrastó 一次 / 一遍; el matiz suma una tarjeta útil'
     hanzi: 遍
     pinyin: 'biàn'
     meaning: {es: 'vez (de principio a fin)', en: 'time (from start to finish)'}

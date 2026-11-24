@@ -27,6 +27,8 @@
 - ✅🃏 对了 duì le [tweɪ˥˩ lɤ] · por cierto; ¡ah, ya! · _expresión_ · Para cambiar de tema o acordarte de algo: 对了，你明天有时间吗？ «por cierto, ¿tienes tiempo mañana?». 也对 es otra cosa: «eso también es verdad». · Palabra a palabra: 对 «correcto» + 了, el cambio: «¡ah, cierto!», algo que acaba de venirte a la cabeza.
 - ✅ 会 huì [xweɪ˥˩] · (lo que va a pasar) va a, seguro que · _verbo_ · El mismo 会 de «saber hacer» (我会说中文), aquí para lo que va a pasar: 我会在家附近喝咖啡 «tomaré un café cerca de casa», 明天会下雨 «mañana lloverá».
 - ✅🃏 才 cái [tsʰaɪ˧˥] · no… hasta (más tarde de lo esperado); solo (menos de lo esperado) · _adverbio_ · 💡 才 marca que algo llega tarde o se queda corto frente a lo que esperabas. 他十点才来 «no viene hasta las diez» (tarde). 我才二十岁 «solo tengo veinte años» (poco). Es lo contrario de 就, que lo presenta como pronto o directo.
+- ✅🃏 除了 chúle [ʈʂʰu˧˥ lɤ] · excepto; además de · _preposición_ · 💡 除了 cambia de sentido según lo que sigue: con 都 excluye —除了咖啡，我什么都喝 «bebo de todo menos café»—; con 还 añade —除了中文，我还学英语 «además de chino, estudio inglés».
+- ✅🃏 只 zhǐ [ʈʂɨ˧˩˧] · solo, solamente · _adverbio_ · 💡 只 zhǐ «solo» va delante del verbo: 我只喝水 «solo bebo agua». La posición cambia el sentido: 只有我喜欢中文 «solo yo», 我只喜欢中文 «solo eso me gusta». No es el 只 zhī clasificador de animales (一只猫).
 
 ## 八 bā, 爸 bà y 吧 ba
 
@@ -112,3 +114,5 @@ Acaban igual, en shi; el primero opone, el segundo dice que algo no cambia.
 - ✅🃏 所以现在我是老师了。 · suǒyǐ xiànzài wǒ shì lǎoshī le · Así que ahora el profesor soy yo.
 - ✅🃏 我给了你五星，因为我自己想给，不是因为你让我给的。 · wǒ gěi le nǐ wǔ xīng yīnwèi wǒ zìjǐ xiǎng gěi bú shì yīnwèi nǐ ràng wǒ gěi de · Te he puesto cinco estrellas porque he querido yo, no porque me lo pidieras.
 - ✅🃏 他十点才来。 · tā shí diǎn cái lái · No viene hasta las diez.
+- ✅🃏 除了咖啡，我什么都喝。 · chúle kāfēi wǒ shénme dōu hē · Bebo de todo menos café.
+- ✅🃏 我只喝水。 · wǒ zhǐ hē shuǐ · Solo bebo agua.

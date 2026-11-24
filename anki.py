@@ -1479,6 +1479,154 @@ def cmd_plan(doc=None):
     return 0
 
 
+# ---------------------------------------------------------------- orden ideal (secuencia de curso)
+#
+# Una secuencia de curso: el orden ideal de estudio del HSK 1-9 por hanzi. Cada paso estrena un carácter
+# nuevo (o un par inevitable) y, detrás, todas las palabras que ya se pueden leer con lo conocido, de
+# modo que se introduce el mínimo de caracteres nuevos y se aprovecha al máximo lo que ya hay. Vive solo
+# en local (private/orden-hsk/, ver su README): en otro equipo sin ese archivo, `orden` lo dice y el
+# review no añade su propuesta. Es para PROPONER qué entra después y qué ya se puede leer gratis, nunca
+# para volcar la lista: el HSK es la escala, no la meta (docs/goal.md), y lo que entra lo deciden los
+# apuntes y el criterio del agente. Lo «conocido» se recalcula contra el mazo de ahora, no contra las
+# columnas «Ya las sabes / Tus hanzi» del origen (una foto vieja que ni siquiera se guarda).
+
+ORDEN_CSV = ROOT / "private" / "orden-hsk" / "orden.csv"
+ORDEN_NEXT = 20              # cuántas próximas palabras óptimas lista `orden` por defecto
+ORDEN_REVIEW_NEXT = 10       # y cuántas en el review
+ORDEN_FREE_MAX = 40          # tope de «huecos gratis» que se listan
+
+
+def load_orden():
+    """El orden ideal (private/orden-hsk/orden.csv), fila a fila en orden de estudio, o [] si no está."""
+    if not ORDEN_CSV.exists():
+        return []
+    import csv
+    with open(ORDEN_CSV, encoding="utf-8", newline="") as f:
+        return list(csv.DictReader(f))
+
+
+def deck_known_hanzi(entries):
+    """Los hanzi que el mazo ya entrena a leer: los de toda palabra, expresión, carácter o componente no
+    descartado. Es lo que cuenta como «hanzi conocido» para decidir si una palabra nueva ya es legible."""
+    out = set()
+    for e in entries:
+        if e.get("kind") in ("word", "expression", "character", "component") and e.get("use") != "drop":
+            out.update(c for c in (e.get("hanzi") or "") if "一" <= c <= "鿿")
+    return out
+
+
+def readable_uncovered(known_hanzi, words, hanzi_of, is_covered):
+    """Genérica y con la fuente de palabras ENCHUFABLE. Dado el conjunto de hanzi que el mazo ya domina y
+    una lista de palabras cualquiera, devuelve las que YA se pueden leer (todos sus hanzi son conocidos)
+    pero aún no están en una carta. `hanzi_of(w)` da los caracteres de una palabra; `is_covered(w)` dice
+    si ya está cubierta. Hoy se alimenta con el orden del HSK; mañana, con una lista de frecuencia o
+    CC-CEDICT no-HSK (palabras frecuentes hechas solo de caracteres conocidos), sin tocar esta función:
+    cambia la fuente de `words`, no la lógica. Lo que salga se PROPONE y se filtra por utilidad, como el
+    desván y `use`; nunca se vuelca."""
+    out = []
+    for w in words:
+        hz = [c for c in hanzi_of(w) if "一" <= c <= "鿿"]
+        if hz and all(c in known_hanzi for c in hz) and not is_covered(w):
+            out.append(w)
+    return out
+
+
+def orden_cross(entries):
+    """Cruza el orden ideal con el mazo actual (solo cálculo). Devuelve (rows, covered, frontier, nexts,
+    free, known): `covered` es un dict fila-id→bool por posición; `frontier` la primera posición sin
+    cubrir; `nexts` las siguientes sin cubrir en orden; `free` los huecos gratis (legibles ya, sin carta y
+    sin estar entre `nexts`); `known` el nº de hanzi conocidos. [] en todo si no hay orden local."""
+    rows = load_orden()
+    if not rows:
+        return [], {}, 0, [], [], 0
+    known = deck_known_hanzi(entries)
+    # Índice del mazo: hanzi -> lecturas (pinyin normalizado con tono) de sus palabras y expresiones.
+    idx = {}
+    for e in entries:
+        if e.get("kind") in ("word", "expression") and e.get("use") != "drop" and e.get("hanzi"):
+            idx.setdefault(e["hanzi"], set()).add(compact(e.get("pinyin") or ""))
+    # Un hanzi es polífono en el orden si varias filas lo escriben con pinyin distinto: ahí el pinyin decide.
+    readings = {}
+    for r in rows:
+        readings.setdefault(r["palabra"], set()).add(compact(r.get("pinyin") or ""))
+    polyphone = {w for w, ps in readings.items() if len(ps) > 1}
+
+    def covered(r):
+        w = r["palabra"]
+        deck_pys = idx.get(w)
+        if deck_pys is None:
+            return False
+        if compact(r.get("pinyin") or "") in deck_pys:
+            return True
+        # Mismo hanzi, otra lectura: cubierto solo si el hanzi no es ambiguo en el orden.
+        return w not in polyphone
+
+    cov = {i: covered(r) for i, r in enumerate(rows)}
+    frontier = next((i for i, r in enumerate(rows) if not cov[i]), len(rows))
+    nexts = [r for i, r in enumerate(rows) if i >= frontier and not cov[i]]
+    shown = set(id(r) for r in nexts[:ORDEN_NEXT])
+    free = [r for r in readable_uncovered(known, rows, lambda r: r["palabra"], covered) if id(r) not in shown]
+    return rows, cov, frontier, nexts, free, len(known)
+
+
+def orden_row_label(r):
+    gloss = (r.get("significado") or "").split(";")[0].strip()
+    tipo = r.get("tipo") or ""
+    nuevo = f" +{r['hanzi_nuevo']}" if r.get("hanzi_nuevo") else ""
+    return f"{r['palabra']} {r.get('pinyin', '')} · {r.get('nivel', '')} · {tipo}{nuevo} · {gloss}"
+
+
+def cmd_orden(n=ORDEN_NEXT):
+    """Cruza el orden ideal de estudio con el mazo actual (solo lectura): frontera de cobertura, próximas
+    palabras óptimas y huecos gratis. Recalcula lo conocido contra el mazo de ahora."""
+    entries, _, _ = load()
+    rows, cov, frontier, nexts, free, known = orden_cross(entries)
+    if not rows:
+        print("No hay orden local (private/orden-hsk/orden.csv). Es solo-local; ver private/orden-hsk/README.md.")
+        return 0
+    total = len(rows)
+    covered_total = sum(1 for v in cov.values() if v)
+    print(f"Orden ideal de estudio (HSK 1-9 por hanzi) · private/orden-hsk/orden.csv")
+    print(f"Mazo actual: {known} hanzi conocidos.")
+    print(f"Cobertura del orden: {covered_total} de {total} palabras ya en el mazo ({100 * covered_total / total:.1f} %).")
+    print(f"Frontera: cubiertas sin interrupción las primeras {frontier}; la siguiente sin cubrir es la #{frontier + 1}.\n")
+    print(f"Próximas {min(n, len(nexts))} palabras óptimas (las siguientes del orden sin cubrir):")
+    for r in nexts[:n]:
+        free_mark = "  (gratis: sin hanzi nuevo)" if not r.get("hanzi_nuevo") else ""
+        print(f"  #{r['orden']:>6}  {orden_row_label(r)}{free_mark}")
+    print(f"\nHuecos gratis ({len(free)}): ya legibles con tus hanzi, sin carta y más abajo del frente:")
+    for r in free[:ORDEN_FREE_MAX]:
+        print(f"  #{r['orden']:>6}  {orden_row_label(r)}")
+    if len(free) > ORDEN_FREE_MAX:
+        print(f"  … y {len(free) - ORDEN_FREE_MAX} más.")
+    return 0
+
+
+def orden_section():
+    """La parte calculada de «Huecos y propuestas» del review a partir del orden ideal (secuencia de curso),
+    si existe en local. Aditiva: propone las próximas palabras del orden y los huecos gratis, y deja una
+    línea «>». Sin orden local no añade nada."""
+    entries, _, _ = load()
+    rows, cov, frontier, nexts, free, known = orden_cross(entries)
+    if not rows:
+        return []
+    total = len(rows)
+    covered_total = sum(1 for v in cov.values() if v)
+    lines = ["Según el orden ideal de estudio (secuencia de curso HSK 1-9 por hanzi; cálculo de "
+             "`anki.py orden`, solo propuesta):", "",
+             f"- Cobertura del orden: {covered_total} de {total} ({100 * covered_total / total:.1f} %); "
+             f"la siguiente sin cubrir es la #{frontier + 1}.", "",
+             "Próximas palabras del orden (menos caracteres nuevos primero):", ""]
+    for r in nexts[:ORDEN_REVIEW_NEXT]:
+        free_mark = " (gratis)" if not r.get("hanzi_nuevo") else ""
+        lines.append(f"- {orden_row_label(r)}{free_mark}")
+    if free:
+        lines += ["", "Huecos gratis (ya los puedes leer con tus hanzi, aún sin carta):", ""]
+        lines += [f"- {orden_row_label(r)}" for r in free[:ORDEN_REVIEW_NEXT]]
+    lines += ["", "> ", ""]
+    return lines
+
+
 MAINTENANCE_EVERY = 4       # cada cuántos lotes el review recuerda el mantenimiento de Anki y toca la retrospectiva
 SINE_QUA_NON = "## Sine qua non"   # primer apartado del review: lo único que hace falta contestar
 SINE_QUA_NON_MAX = 7
@@ -1632,7 +1780,9 @@ def write_review_doc(batch, osm):
              "## Carga y equilibrio", "", *balance_section(), "",
              "## Huecos y propuestas", "",
              "<!-- lo completa el agente: huecos temáticos, lo básico del nivel que falta, caracteres con historia, "
-             "qué investigar después; cada uno con su línea «>» -->", "",
+             "qué investigar después; cada uno con su línea «>». Debajo, si hay orden local, la propuesta calculada "
+             "del orden ideal de estudio -->", "",
+             *orden_section(),
              "## Suenan parecido", "", "Palabras del mazo que solo se separan por algo que cuesta oír (zh / z / j, "
              "-n / -ng, u / ü…) y aún no tienen contraste. Marca las que confundes y el lote siguiente les hace su "
              "tarjeta de oír las dos.", "",
@@ -2937,6 +3087,11 @@ CSS = """
 .task { font-size: 17px; line-height: 1.45; max-width: 26em; margin: 0 auto 14px; color: var(--muted); text-align: left; }
 .task .meta { font-size: 11px; }
 .meta .code { letter-spacing: .06em; text-transform: none; opacity: .8; }
+/* Nivel como pastilla: «HSK n» (borde entero) si la palabra está en la lista oficial; «Nivel n» (borde a trazos)
+   si es estimado, sin «HSK». El color sigue siendo el del nivel, así que la dificultad se lee igual. */
+.meta .lv-badge { text-transform: none; letter-spacing: .03em; padding: 2px 9px 3px; border-radius: 999px;
+        border: 1.5px solid var(--lv); color: var(--lv); white-space: nowrap; }
+.meta .lv-badge.est { border-style: dashed; }
 .front { margin: 6px 0; }
 .hanzi { font-size: 54px; line-height: 1.2; }
 .said { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 8px 0; }
@@ -4038,13 +4193,27 @@ def card_code(ex_id):
     return out
 
 
+def card_level_estimated(ex, eby):
+    """La tarjeta muestra un nivel estimado, no oficial: alguno de sus objetivos es una entrada que no está en la
+    lista del HSK y lleva su `level` propio (una palabra fuera de la lista). Es la misma señal que la etiqueta
+    `nivel::estimado`; en la cabecera, «HSK n» dentro de la lista y «Nivel n» fuera, para no dar por oficial lo
+    que no lo es."""
+    levels = hsk_levels()
+    return bool(any(not levels.get((eby.get(t) or {}).get("hanzi")) and (eby.get(t) or {}).get("level")
+                    for t in ex.get("targets", [])))
+
+
 def card_meta(ex, eby, sby):
-    """Cabecera de la tarjeta en Anki: el tipo, su código (en medio) y el nivel, con el color del nivel. La web pinta
-    la suya."""
+    """Cabecera de la tarjeta en Anki: el tipo, su código (en medio) y el nivel, con el color del nivel. El nivel va
+    como «HSK n» si la palabra está en la lista oficial y «Nivel n» (sin «HSK») si es estimado. La web pinta la suya."""
     lv = exercise_level(ex, eby, sby)
+    est = card_level_estimated(ex, eby)
     kind = "Dictado" if ex["type"] == "listen" and (ex.get("answer") or {}).get("typed") else TYPE_ES.get(ex["type"], ex["type"])
-    return (f'<div class="meta lv-{lv}"><span>{esc(kind)}</span><span class="code">#{card_code(ex["id"])}</span>'
-            f'<span>{esc(level_label(lv))}</span></div>')
+    band = "7-9" if lv == 7 else str(lv)
+    label = f"Nivel {band}" if est else f"HSK {band}"
+    return (f'<div class="meta lv-{lv}"><span class="kind">{esc(kind)}</span>'
+            f'<span class="code">#{card_code(ex["id"])}</span>'
+            f'<span class="lv-badge{" est" if est else ""}">{esc(label)}</span></div>')
 
 
 def build_note(ex, eby, sby, manifest, media_files, models):
@@ -4057,8 +4226,7 @@ def build_note(ex, eby, sby, manifest, media_files, models):
                         guid=genanki.guid_for(GUID_NAMESPACE, ex["id"]),
                         tags=[f"tema::{ex.get('theme')}", f"mes::{str(ex.get('added'))[:7]}",
                               f"nivel::{exercise_level(ex, eby, sby)}"]
-                        + (["nivel::estimado"] if any(not hsk_levels().get((eby.get(t) or {}).get("hanzi"))
-                                                     and (eby.get(t) or {}).get("level") for t in ex.get("targets", [])) else [])
+                        + (["nivel::estimado"] if card_level_estimated(ex, eby) else [])
                         + [f"use::{use_label(eby[t]) if t in eby else use_label(sby[t])}".replace("/", "+")
                            for t in ex.get("targets", [])[:1] if t in eby or t in sby]
                         + [f"type::{ex['type']}"] + [f"skill::{s}" for s in ex.get("skills", [])]
@@ -5984,6 +6152,9 @@ def main():
     u.add_argument("--force", action="store_true", help=f"con --prune, borrar aunque haya más de {PRUNE_MAX} huérfanas; con --reset, reiniciar aunque la fase de pruebas esté cerrada")
     pl = sub.add_parser("plan")
     pl.add_argument("--doc", metavar="LOTE", help="escribe 1-inbox/review-<LOTE>.md")
+    od = sub.add_parser("orden")
+    od.add_argument("--next", type=int, default=ORDEN_NEXT, dest="next_n",
+                    help="cuántas próximas palabras óptimas listar")
     sub.add_parser("notebook")
     sub.add_parser("materials")
     at = sub.add_parser("attic")
@@ -6030,6 +6201,8 @@ def run(args):
                         args.phone_synced)
     if args.cmd == "plan":
         return cmd_plan(args.doc)
+    if args.cmd == "orden":
+        return cmd_orden(args.next_n)
     if args.cmd == "notebook":
         return cmd_notebook()
     if args.cmd == "attic":

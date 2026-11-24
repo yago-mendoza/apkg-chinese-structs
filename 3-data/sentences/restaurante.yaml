@@ -803,3 +803,37 @@ sentences:
       - {text: ？}
     translation: {en: 'Would you like a bit more?', es: '¿Quieres un poco más?'}
     source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
+  - id: s.wo-yao-yi-ping-pijiu
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 一, ref: w.num.yi, pinyin: yì, sandhi: true}
+      - {text: 瓶, ref: w.ping.cl, pinyin: píng}
+      - {text: 啤酒, ref: w.pijiu, pinyin: píjiǔ}
+      - {text: 。}
+    translation: {es: 'Quiero una botella de cerveza.', en: "I'd like a bottle of beer."}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+  - id: s.wo-yao-yi-wan-miantiao
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 要, ref: w.yao, pinyin: yào}
+      - {text: 一, ref: w.num.yi, pinyin: yì, sandhi: true}
+      - {text: 碗, ref: w.wan.cl, pinyin: wǎn}
+      - {text: 面条, ref: w.miantiao, pinyin: miàntiáo}
+      - {text: 。}
+    translation: {es: 'Quiero un cuenco de fideos.', en: "I'd like a bowl of noodles."}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+  - id: s.xiaci-zai-lai
+    use: say
+    kind: formula
+    segments:
+      - {text: 下次, ref: w.xiaci, pinyin: xiàcì}
+      - {text: 再, ref: w.zai.again, pinyin: zài}
+      - {text: 来, ref: w.lai, pinyin: lái}
+      - {text: 。}
+    translation: {es: 'Vuelva otra vez.', en: 'Come again next time.'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}

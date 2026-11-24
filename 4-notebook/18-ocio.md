@@ -22,6 +22,8 @@
 - ✅🃏 健身 jiànshēn [tɕjɛn˥˩ ʂən˥] · hacer ejercicio, ir al gimnasio · _verbo_ · 我去健身 «voy al gimnasio». El gimnasio es 健身房 jiànshēnfáng. · 健 «sano, fuerte» + 身 «cuerpo»: poner el cuerpo fuerte.
 - ✅🃏 拍照 pāizhào [pʰaɪ˥ ʈʂɑʊ˥˩] · hacer fotos · _verbo_ · 拍 «dar un golpecito» + 照 «foto»: el clic de la cámara. 照相 zhàoxiàng dice lo mismo.
 - ✅🃏 玩 wán [wan˧˥] · jugar; divertirse, salir por ahí · _verbo_ · No solo jugar: 我们出去玩吧 «salgamos a divertirnos», 去北京玩 «ir a Pekín de viaje», 好玩 «divertido». Y 玩手机 «estar con el móvil». · 王 a la izquierda es 玉 «jade», no «rey»: alguien jugando con piezas de jade. 元 yuán a la derecha da un sonido que ya no se parece.
+- ✅🃏 踢 tī [tʰi˥] · dar una patada; jugar (al fútbol) · _verbo_ · Al fútbol se «da patadas»: 踢足球. Al baloncesto o al tenis se «golpea con la mano»: 打篮球, 打网球. El chino no tiene un «jugar» único para los deportes.
+- ✅🃏 健身房 jiànshēnfáng [tɕjɛn˥˩ ʂən˥ fɑŋ˧˥] · gimnasio · _sustantivo_ · 健身 «hacer ejercicio» + 房 «sala, cuarto»: el gimnasio. 我去健身房 «voy al gimnasio».
 
 ## 玩 wán y 完 wán
 
@@ -39,3 +41,5 @@ Suenan exactamente igual: los separa el sentido y el hanzi.
 - ✅🃏 我去健身。 · wǒ qù jiànshēn · Voy al gimnasio.
 - ✅🃏 这里可以拍照吗？ · zhèlǐ kěyǐ pāizhào ma · ¿Se pueden hacer fotos aquí?
 - ✅🃏 我们出去玩吧。 · wǒmen chūqu wán ba · Salgamos a divertirnos.
+- ✅🃏 我喜欢踢足球。 · wǒ xǐhuan tī zúqiú · Me gusta jugar al fútbol.
+- ✅🃏 我常常去健身房。 · wǒ chángcháng qù jiànshēnfáng · Voy a menudo al gimnasio.

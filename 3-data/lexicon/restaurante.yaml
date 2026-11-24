@@ -208,3 +208,26 @@ entries:
     source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
     comments:
       - {date: '2026-11-23', kind: tip, private: false, text: '找 sola es «buscar»: 我找钱 «busco dinero». Junto, 找钱 es «dar el cambio»: 找你五块 «te devuelvo cinco yuanes».'}
+  - id: w.ping.cl
+    use: say
+    role: content
+    kind: word
+    pos: clasificador
+    hanzi: 瓶
+    pinyin: píng
+    meaning: {es: 'botella (clasificador: 一瓶)', en: 'bottle (measure word)'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: usage, private: false, text: '一瓶啤酒 «una botella de cerveza», 两瓶水 «dos botellas de agua». 瓶 es el envase; 杯 es el vaso o la taza.'}
+  - id: w.wan.cl
+    use: say
+    role: content
+    kind: word
+    pos: clasificador
+    pos_reason: 'aquí 碗 es el clasificador «un cuenco de» (一碗面条); la lista lo da antes como sustantivo «cuenco»'
+    hanzi: 碗
+    pinyin: wǎn
+    meaning: {es: 'cuenco, bol (clasificador: 一碗)', en: 'bowl (measure word)'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: usage, private: false, text: '一碗面条 «un cuenco de fideos», 一碗米饭 «un bol de arroz». 碗 es el recipiente de la comida; para platos servidos, 份.'}

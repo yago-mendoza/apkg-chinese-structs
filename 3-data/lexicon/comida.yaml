@@ -603,3 +603,26 @@ entries:
       - {ref: w.lai, cue: 'un trazo largo arriba y dos puntos debajo'}
     source: {origin: review, batch: 018-2026-11-23-paneles-y-contrastes, file: review-017-2026-11-11-pedir-en-el-restaurante.md, date: '2026-11-23'}
     comments: []
+  - id: w.haohe
+    use: say
+    role: content
+    kind: word
+    pos: adjetivo
+    hanzi: 好喝
+    pinyin: hǎohē
+    meaning: {es: 'rico (de beber), que sabe bien', en: 'tasty (to drink)'}
+    level: 1
+    level_reason: 'no está en la lista; es el 好吃 de las bebidas, 好 + 喝, ambos HSK 1'
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: usage, private: false, text: '好喝 es «rico» para lo que se bebe (好 «bien» + 喝 «beber»): 这个茶很好喝. Para lo que se come, 好吃.'}
+  - id: w.jiu.alcohol
+    use: say
+    role: content
+    kind: word
+    hanzi: 酒
+    pinyin: jiǔ
+    meaning: {es: 'alcohol, bebida alcohólica', en: 'alcohol, liquor'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: linguistic, private: false, text: '酒 es cualquier bebida con alcohol. 喝酒 «beber alcohol», 啤酒 «cerveza». En un bar: 你喝酒吗？ «¿bebes (alcohol)?».'}

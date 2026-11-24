@@ -806,3 +806,40 @@ entries:
     source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
     comments:
       - {date: '2026-11-11', kind: linguistic, private: false, text: 'Igual que 有时候, más corto. Repetido para alternar: 有时…，有时… «unas veces…, otras…».'}
+  - id: w.meitian
+    use: say
+    role: content
+    kind: word
+    pos: sustantivo
+    pos_reason: '每天 es un sustantivo de tiempo (como 今天); funciona de complemento temporal delante del verbo'
+    hanzi: 每天
+    pinyin: měitiān
+    meaning: {es: 'todos los días, cada día', en: 'every day'}
+    level: 1
+    level_reason: 'no está en la lista; 每 y 天 son HSK 1 y es de lo más usado al hablar de la rutina'
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: linguistic, private: false, text: '每 «cada» + 天 «día»: todos los días. Va delante del verbo: 我每天学中文 «estudio chino todos los días».'}
+  - id: w.pingshi
+    use: say
+    role: content
+    kind: word
+    hanzi: 平时
+    pinyin: píngshí
+    meaning: {es: 'normalmente, de ordinario', en: 'normally, usually'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: linguistic, private: false, text: '平时 mira a lo habitual, a las circunstancias normales: 我平时在家工作 «normalmente trabajo en casa».'}
+  - id: w.kong.free
+    use: say
+    role: content
+    kind: word
+    pos: sustantivo
+    pos_reason: 'aquí 空 kòng es «hueco de tiempo» (有空), no el adjetivo 空 kōng «vacío»'
+    hanzi: 空
+    pinyin: kòng
+    accept_pinyin_mismatch: 'polífono: en este sentido se lee kòng «tiempo libre»; pypinyin da kōng «vacío»'
+    meaning: {es: 'tiempo libre, un hueco (en la agenda)', en: 'free time, a free slot'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: tip, private: false, text: '空 tiene dos lecturas: kòng es «tiempo libre» —你有空吗？ «¿tienes un rato?»— y kōng es «vacío» —这个房间是空的 «esta habitación está vacía»—. Para quedar, 有空 (kòng).'}

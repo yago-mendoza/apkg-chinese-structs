@@ -1208,3 +1208,37 @@ sentences:
       - {text: 。}
     translation: {en: 'Sometimes I drink tea, sometimes coffee.', es: 'Unas veces tomo té, otras café.'}
     source: {origin: gaps, batch: 017-2026-11-11-pedir-en-el-restaurante, file: 'propuesta del agente: HSK 1 por frecuencia (review 016)', date: '2026-11-11'}
+  - id: s.wo-meitian-qu-jianshenfang
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 每天, ref: w.meitian, pinyin: měitiān}
+      - {text: 去, ref: w.qu, pinyin: qù}
+      - {text: 健身房, ref: w.jianshenfang, pinyin: jiànshēnfáng}
+      - {text: 。}
+    translation: {es: 'Voy al gimnasio todos los días.', en: 'I go to the gym every day.'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+  - id: s.wo-pingshi-zai-jia-gongzuo
+    use: say
+    kind: example
+    segments:
+      - {text: 我, ref: w.wo, pinyin: wǒ}
+      - {text: 平时, ref: w.pingshi, pinyin: píngshí}
+      - {text: 在, ref: w.zai.at, pinyin: zài}
+      - {text: 家, ref: w.jia, pinyin: jiā}
+      - {text: 工作, ref: w.gongzuo, pinyin: gōngzuò}
+      - {text: 。}
+    translation: {es: 'Normalmente trabajo en casa.', en: 'I normally work from home.'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+  - id: s.ni-you-kong-ma
+    use: say
+    kind: formula
+    segments:
+      - {text: 你, ref: w.ni, pinyin: nǐ}
+      - {text: 有, ref: w.you.have, pinyin: yǒu}
+      - {text: 空, ref: w.kong.free, pinyin: kòng}
+      - {text: 吗, ref: w.ma, pinyin: ma}
+      - {text: ？}
+    translation: {es: '¿Tienes un rato?', en: 'Are you free?'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}

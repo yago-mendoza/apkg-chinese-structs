@@ -20,6 +20,8 @@
 - ✅🃏 满意 mǎnyì [man˧˩˧ i˥˩] · satisfecho, contento (con algo) · _verbo_ · 满 «lleno» + 意 «intención, idea»: lo que querías, colmado. 还满意吗？ «¿todo bien?», te pregunta el camarero.
 - ✅🃏 外卖 wàimài [waɪ˥˩ maɪ˥˩] · comida a domicilio (o para llevar), pedida por el móvil · _sustantivo_ · 外 «fuera» + 卖 «vender»: lo que se vende para comer fuera del local. 点外卖 «pedir comida a domicilio». · Tres cosas distintas: 外卖, que te lo traen; 带走, pedir algo para llevar; 打包, que te lo envuelvan (sobre todo lo que sobra).
 - ✅🃏 找钱 zhǎoqián [ʈʂɑʊ˧˩˧ tɕʰjɛn˧˥] · dar el cambio · _verbo_ · 💡 找 sola es «buscar»: 我找钱 «busco dinero». Junto, 找钱 es «dar el cambio»: 找你五块 «te devuelvo cinco yuanes».
+- ✅🃏 瓶 píng [pʰiŋ˧˥] · botella (clasificador: 一瓶) · _clasificador_ · 一瓶啤酒 «una botella de cerveza», 两瓶水 «dos botellas de agua». 瓶 es el envase; 杯 es el vaso o la taza.
+- ✅🃏 碗 wǎn [wan˧˩˧] · cuenco, bol (clasificador: 一碗) · _clasificador_ · 一碗面条 «un cuenco de fideos», 一碗米饭 «un bol de arroz». 碗 es el recipiente de la comida; para platos servidos, 份.
 
 ## 分 fēn y 份 fèn
 
@@ -95,3 +97,6 @@ Solo los separa el tono: se distinguen de oído por cómo sube o baja la voz.
 - ✅🃏 我还要一杯。 · wǒ hái yào yì bēi · Quiero otro vaso (uno más).
 - ✅🃏 我也要一杯。 · wǒ yě yào yì bēi · Yo también quiero uno.
 - ✅🃏 还要一点吗？ · hái yào yìdiǎn ma · ¿Quieres un poco más?
+- ✅🃏 我要一瓶啤酒。 · wǒ yào yì píng píjiǔ · Quiero una botella de cerveza.
+- ✅🃏 我要一碗面条。 · wǒ yào yì wǎn miàntiáo · Quiero un cuenco de fideos.
+- ✅🃏 下次再来。 · xiàcì zài lái · Vuelva otra vez.

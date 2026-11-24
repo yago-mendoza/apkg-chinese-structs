@@ -316,3 +316,27 @@ entries:
     source: {origin: inbox, batch: 018-2026-11-23-paneles-y-contrastes, file: 'chat 2026-11-23', date: '2026-11-23'}
     comments:
       - {date: '2026-11-23', kind: tip, private: false, text: '才 marca que algo llega tarde o se queda corto frente a lo que esperabas. 他十点才来 «no viene hasta las diez» (tarde). 我才二十岁 «solo tengo veinte años» (poco). Es lo contrario de 就, que lo presenta como pronto o directo.'}
+  - id: w.chule
+    use: say
+    role: function
+    kind: word
+    hanzi: 除了
+    pinyin: chúle
+    meaning: {es: 'excepto; además de', en: 'except; besides'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: tip, private: false, text: '除了 cambia de sentido según lo que sigue: con 都 excluye —除了咖啡，我什么都喝 «bebo de todo menos café»—; con 还 añade —除了中文，我还学英语 «además de chino, estudio inglés».'}
+  - id: w.zhi.only
+    use: [say]
+    use_reason: 'la lectura y el sonido de 只 ya los cubre 只 zhī (clasificador); este sentido, adverbio, se practica en hueco'
+    role: function
+    kind: word
+    pos: adverbio
+    pos_reason: '只 zhǐ «solo» es adverbio; la lista lo da también como clasificador (只 zhī)'
+    hanzi: 只
+    pinyin: zhǐ
+    meaning: {es: 'solo, solamente', en: 'only'}
+    relations: [w.zhi.cl]
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: tip, private: false, text: '只 zhǐ «solo» va delante del verbo: 我只喝水 «solo bebo agua». La posición cambia el sentido: 只有我喜欢中文 «solo yo», 我只喜欢中文 «solo eso me gusta». No es el 只 zhī clasificador de animales (一只猫).'}

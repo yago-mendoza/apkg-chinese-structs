@@ -4718,6 +4718,61 @@ characters:
     gloss: {es: 'cáñamo; entumecido; (en 麻烦) lío', en: 'hemp; numb'}
     origin: {es: 'Ideograma compuesto: bajo un cobertizo 广, tallos de cáñamo 林 puestos a secar. En 麻烦 cuenta como «enredo».', en: 'Compound ideograph: under a shed 广, hemp stalks 林 laid out to dry. In 麻烦 it means a tangle.'}
     confidence: high
+  平:
+    gloss: {es: 'llano, parejo; (en 平时) de siempre', en: 'level, even; (in 平时) usual'}
+    origin: {es: 'Pictograma: una balanza nivelada, una superficie pareja; de ahí «llano, igual». En 平时 «en tiempos normales, de costumbre».', en: 'Pictograph: a level scale, an even surface; hence flat, even. In 平时, in ordinary times.'}
+    memory: {es: 'Una superficie de agua perfectamente nivelada: 平, llano.', en: 'A perfectly level water surface: 平, flat.'}
+    confidence: high
+  踢:
+    gloss: {es: 'dar una patada, chutar', en: 'to kick'}
+    origin: {es: 'Fonético-semántico: 足 «pie» da el sentido y 易 (yì) da el sonido, hoy alejado. Se usa en 踢足球 «jugar al fútbol».', en: 'Phono-semantic: 足 foot gives the meaning and 易 (yì) the sound, now distant. Used in 踢足球, to play football.'}
+    memory: {es: 'Un pie 足 que, fácil 易, lanza el balón de una patada.', en: 'A foot 足 that, easily 易, kicks the ball.'}
+    confidence: high
+  瓶:
+    gloss: {es: 'botella (clasificador: 一瓶)', en: 'bottle (measure word)'}
+    origin: {es: 'Fonético-semántico: 瓦 «barro cocido, cerámica» da el sentido y 并 (bìng) da el sonido.', en: 'Phono-semantic: 瓦 fired clay gives the meaning and 并 (bìng) the sound.'}
+    memory: {es: 'Una vasija de barro 瓦 con el cuello estrecho: 一瓶啤酒, una botella de cerveza.', en: 'A clay vessel 瓦 with a narrow neck: a bottle.'}
+    confidence: high
+  碗:
+    gloss: {es: 'cuenco, bol (clasificador: 一碗)', en: 'bowl (measure word)'}
+    origin: {es: 'Fonético-semántico: 石 «piedra, loza» da el sentido y 宛 (wǎn) da el sonido.', en: 'Phono-semantic: 石 stone, crockery gives the meaning and 宛 (wǎn) the sound.'}
+    memory: {es: 'Un cuenco de loza 石 con la comida bien curvada 宛 dentro: 一碗面条.', en: 'A crockery bowl 石 with food curved 宛 inside: a bowl of noodles.'}
+    confidence: high
+  空:
+    gloss: {es: 'vacío (kōng); hueco de tiempo libre (kòng)', en: 'empty (kōng); free time (kòng)'}
+    origin: {es: 'Fonético-semántico: 穴 «cueva, hueco» da el sentido «vacío» y 工 (gōng) da el sonido. De «vacío» sale «hueco libre»: 有空 «tener tiempo».', en: 'Phono-semantic: 穴 cave, hollow gives the meaning empty and 工 (gōng) the sound. From empty comes a free gap: 有空, to have time.'}
+    memory: {es: 'Una cueva 穴 sin nada dentro: vacía; en la agenda, un hueco libre.', en: 'A cave 穴 with nothing inside: empty; in your diary, a free gap.'}
+    confidence: high
+  酒:
+    gloss: {es: 'alcohol, bebida alcohólica', en: 'alcohol'}
+    origin: {es: 'Ideograma compuesto: agua 氵 en una tinaja de vino 酉, que además da el sonido: el licor. Se usa en 啤酒 «cerveza».', en: 'Compound ideograph: water 氵 in a wine jar 酉, which also gives the sound: liquor. Used in 啤酒, beer.'}
+    memory: {es: 'El agua 氵 que sale de una tinaja 酉: no es agua, es 酒, vino.', en: 'The water 氵 pouring from a jar 酉: not water, it is wine.'}
+    confidence: high
+  约:
+    gloss: {es: 'quedar, citarse; acordar', en: 'to arrange to meet; to agree'}
+    origin: {es: 'Fonético-semántico: 纟 «hilo» da el sentido (atar, comprometerse) y 勺 da el sonido. Quedar con alguien es «atar» una cita.', en: 'Phono-semantic: 纟 thread gives the meaning (to bind, to commit) and 勺 the sound. Arranging to meet is tying an appointment.'}
+    memory: {es: 'Un hilo 纟 que ata a dos para verse: 约, quedar.', en: 'A thread 纟 tying two people to meet: to make a date.'}
+    confidence: high
+  除:
+    gloss: {es: 'quitar, excluir; (en 除了) excepto, además de', en: 'to remove, exclude; (in 除了) except, besides'}
+    origin: {es: 'El origen de su forma es discutido. Significa «quitar, apartar»; en 除了 introduce lo que se deja fuera o lo que se añade.', en: 'The origin of its shape is disputed. It means to remove, to set aside; in 除了 it marks what is left out or added.'}
+    memory: {es: 'Por la escalera 阝 apartas 余 lo que sobra: lo quitas. 除了这个 «quitando esto».', en: 'Up the steps 阝 you set aside 余 what is left over: you remove it. 除了, leaving this aside.'}
+    confidence: medium
+  厉:
+    gloss: {es: 'severo, intenso; (en 厉害) impresionante, tremendo', en: 'severe, intense; (in 厉害) impressive'}
+    origin: {es: 'El origen de su forma es discutido. Significa «severo, intenso»; en 厉害 describe algo tremendo, para bien o para mal.', en: 'The origin of its shape is disputed. It means severe, intense; in 厉害 it describes something formidable, good or bad.'}
+    memory: {es: 'Un peñasco 厂 que se desprende con fuerza: algo 厉害, tremendo.', en: 'A cliff 厂 breaking off with force: something 厉害, formidable.'}
+    confidence: medium
+  害:
+    gloss: {es: 'daño, perjudicar; (en 厉害) refuerza la admiración', en: 'harm; (in 厉害) intensifier'}
+    origin: {es: 'El origen de su forma es discutido. Suelto significa «daño, perjudicar»; en 厉害 pierde ese sentido y solo aporta el sonido «hai».', en: 'The origin of its shape is disputed. On its own it means harm; in 厉害 it loses that sense and only adds the sound hai.'}
+    memory: {es: 'Bajo el techo 宀, algo que hace daño; en 厉害 solo suena «hai».', en: 'Under the roof 宀, something harmful; in 厉害 it only sounds hai.'}
+    confidence: medium
+  死:
+    gloss: {es: 'morir, muerto; (en 笑死我了) a más no poder', en: 'to die, dead; (in 笑死我了) to the extreme'}
+    origin: {es: 'Ideograma compuesto: una persona 匕 inclinada ante unos restos 歹: la muerte. Como remate enfático, 笑死我了 «me muero de risa».', en: 'Compound ideograph: a person 匕 bowed before remains 歹: death. As an emphatic cap, 笑死我了, dying of laughter.'}
+    memory: {es: 'Alguien 匕 arrodillado ante unos huesos 歹: 死, la muerte.', en: 'Someone 匕 kneeling before bones 歹: 死, death.'}
+    confidence: high
 
 parts:
   亻: {es: 'persona (forma de 人 a la izquierda)', en: 'person (人 on the left)'}

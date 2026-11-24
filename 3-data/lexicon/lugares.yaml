@@ -125,6 +125,7 @@ entries:
     comments:
       - {kind: linguistic, private: false, date: '2026-10-08', text: 'Palabra a palabra: 学 «estudiar» + 校 «escuela».'}
       - {kind: mnemonic, private: false, date: '2026-10-19', text: '校: un árbol 木 junto a 交, seis 六 sobre unas piernas cruzadas 乂: seis alumnos se cruzan bajo el árbol de la entrada del colegio.', original: 'Mnemotecnia para 校 (xiào): «Seis alumnos padres se cruzan bajo un árbol (木) a la entrada del colegio».'}
+      - {kind: tip, private: false, date: '2026-11-24', text: '校 se lee xiào porque 交 (jiāo) le da el sonido: se parece, cambian la consonante y el tono. 木 «madera, árbol» da el sentido. El mismo 交 suena en 饺 jiǎo (饺子).'}
   - id: w.nali.there
     use: say
     role: function

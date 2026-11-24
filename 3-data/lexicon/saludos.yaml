@@ -566,3 +566,25 @@ entries:
     comments:
       - {date: '2026-11-11', kind: usage, private: false, text: 'Lo más de diario para «estoy contento»: 我很开心. Casi como 高兴; 快乐 es más «feliz» en general y el de las felicitaciones.'}
       - {date: '2026-11-11', kind: linguistic, private: false, text: '开 «abrir» + 心 «corazón»: el corazón abierto.'}
+  - id: w.yue
+    use: say
+    role: content
+    kind: word
+    hanzi: 约
+    pinyin: yuē
+    meaning: {es: 'quedar, citarse (con alguien)', en: 'to arrange to meet'}
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: usage, private: false, text: '约 es quedar para verse: 下次再约 «ya quedamos otro día», 约朋友吃饭 «quedar con un amigo para comer».'}
+  - id: e.nine
+    use: say
+    role: content
+    kind: expression
+    hanzi: 你呢
+    pinyin: nǐ ne
+    meaning: {es: '¿y tú?', en: 'and you?'}
+    level: 1
+    level_reason: 'no está en la lista; de lo más básico para devolver la pregunta, 你 + 呢'
+    source: {origin: class, batch: 019-2026-11-24-charla-cotidiana-y-reacciones, file: 'wa-2026-11-24-0000.md (curso reconstruido pp. 3-12)', date: '2026-11-24'}
+    comments:
+      - {date: '2026-11-24', kind: linguistic, private: false, text: 'Palabra a palabra: 你 «tú» + 呢 (partícula que devuelve la pregunta). 我很好，你呢？ «estoy bien, ¿y tú?».'}

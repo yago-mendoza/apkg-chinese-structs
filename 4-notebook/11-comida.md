@@ -52,6 +52,8 @@
 - ✅🃏 米 mǐ [mi˧˩˧] · arroz (el grano, sin cocer) · _sustantivo_ · En la mesa no se pide 米, sino 米饭 «arroz cocido»: 一碗米饭 «un cuenco de arroz». 米 es el grano, el que se compra. · Pictograma: granos de arroz alrededor de una cruz. No lo confundas con 来 lái «venir», que tiene un trazo horizontal más arriba.
 - ✅🃏 炒饭 chǎofàn [ʈʂʰɑʊ˧˩˧ fan˥˩] · arroz frito (salteado) · _sustantivo_ · 炒 + lo que se saltea: 炒饭 «arroz salteado», 炒面 «fideos salteados», 炒鸡蛋 «huevos revueltos».
 - ✅🃏 炒面 chǎomiàn [ʈʂʰɑʊ˧˩˧ mjɛn˥˩] · fideos salteados · _sustantivo_ · 炒 chǎo «saltear» + 面 «fideos». Igual 炒饭 «arroz frito».
+- ✅🃏 好喝 hǎohē [xɑʊ˧˩˧ xɤ˥] · rico (de beber), que sabe bien · _adjetivo_ · 好喝 es «rico» para lo que se bebe (好 «bien» + 喝 «beber»): 这个茶很好喝. Para lo que se come, 好吃.
+- ✅🃏 酒 jiǔ [tɕjoʊ˧˩˧] · alcohol, bebida alcohólica · _sustantivo_ · 酒 es cualquier bebida con alcohol. 喝酒 «beber alcohol», 啤酒 «cerveza». En un bar: 你喝酒吗？ «¿bebes (alcohol)?».
 
 ## 喝 hē y 和 hé
 
@@ -117,6 +119,7 @@ Se parecen en la cruz central con trazos a los lados. 来 lleva encima un trazo 
 - ✅🃏 我吃饭了。 · wǒ chīfàn le · Ya he comido.
 - ✅🃏 我没吃饭。 · wǒ méi chīfàn · No he comido.
 - ✅🃏 我最喜欢中国菜。 · wǒ zuì xǐhuan Zhōngguó cài · Lo que más me gusta es la comida china.
+- ✅🃏 我最喜欢吃火锅。 · wǒ zuì xǐhuan chī huǒguō · Lo que más me gusta es comer hot pot.
 - ✅🃏 我爱吃好吃的东西。 · wǒ ài chī hǎochī de dōngxi · Me encanta comer cosas ricas.
 - ✅🃏 这是一个鸡蛋。 · zhè shì yí ge jīdàn · Esto es un huevo.
 - ✅🃏 我喜欢吃鱼。 · wǒ xǐhuan chī yú · Me gusta el pescado.
@@ -157,3 +160,5 @@ Se parecen en la cruz central con trazos a los lados. 来 lleva encima un trazo 
 - ✅🃏 你喜欢吃什么？ · nǐ xǐhuan chī shénme · ¿Qué te gusta comer?
 - ✅🃏 我喜欢吃火锅。 · wǒ xǐhuan chī huǒguō · Me gusta el hot pot.
 - ✅🃏 我喜欢吃上海小吃。 · wǒ xǐhuan chī Shànghǎi xiǎochī · Me gusta la comida callejera de Shanghái.
+- ✅🃏 这个茶很好喝。 · zhè ge chá hěn hǎohē · Este té está muy rico.
+- ✅🃏 我不喝酒。 · wǒ bù hē jiǔ · No bebo alcohol.

@@ -43,6 +43,8 @@
 - ✅🃏 嗨 hāi [xaɪ˥] · ¡hola! (informal) · _interjección_ · Préstamo del inglés hi, como 哈喽 de hello: entre amigos. Entre amigos también se saluda solo con el nombre. · 口 «boca» + 海 hǎi «mar», que da el sonido: un saludo que suena a «hi».
 - ✅🃏 周末愉快 zhōumò yúkuài [ʈʂoʊ˥ mwɔ˥˩ y˧˥ kʰwaɪ˥˩] · ¡buen fin de semana! · _expresión_ · Así se despidió la profesora el viernes 6. · Palabra a palabra: 周末 «fin de semana» + 愉快 yúkuài [HSK 6] «alegre, agradable». Igual se dice 生日快乐 para el cumpleaños.
 - ✅🃏 开心 kāixīn [kʰaɪ˥ ɕin˥] · contento, alegre · _adjetivo_ · Lo más de diario para «estoy contento»: 我很开心. Casi como 高兴; 快乐 es más «feliz» en general y el de las felicitaciones. · 开 «abrir» + 心 «corazón»: el corazón abierto.
+- ✅🃏 约 yuē [ɥœ˥] · quedar, citarse (con alguien) · _adverbio_ · 约 es quedar para verse: 下次再约 «ya quedamos otro día», 约朋友吃饭 «quedar con un amigo para comer».
+- ✅🃏 你呢 nǐ ne [ni˧˩˧ nɤ] · ¿y tú? · _expresión_ · Palabra a palabra: 你 «tú» + 呢 (partícula que devuelve la pregunta). 我很好，你呢？ «estoy bien, ¿y tú?».
 
 ## Saludos con 好
 
@@ -156,3 +158,4 @@ La misma sílaba: solo los separa el tono.
 - ✅🃏 跟你在一起很快乐。 · gēn nǐ zài yìqǐ hěn kuàilè · Soy feliz estando contigo.
 - ✅🃏 我很开心。 · wǒ hěn kāixīn · Estoy contento.
 - ✅🃏 一切都好。 · yíqiè dōu hǎo · Todo bien.
+- ✅🃏 我们下次再约。 · wǒmen xiàcì zài yuē · Ya quedamos otra vez.
