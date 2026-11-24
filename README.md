@@ -35,6 +35,16 @@
 
 I built this for my own Mandarin, so the repository ships with a real, working example: my deck, **🐉 Chino práctico**, built from my classes. The deck and my working notes are in Spanish; the system works for any learner. Use it as is, or empty it and start with your own notes.
 
+## A worker, not a scheduler
+
+This repository is a **content worker**: it knows how a note becomes a card and nothing about *when* to run. The rules that live here, and nowhere else, are the ones about content — among them the taxonomy of what a sentence is for:
+
+- a fixed, everyday chunk you'd say verbatim (*我饿了*, "I'm full", "it's on me") becomes a **formula**, with its own production and recognition cards;
+- a sentence that only illustrates grammar or a word stays as **context** on the back of another card, no card of its own;
+- a useful, generic pattern becomes one **compose** card — a scene plus the words you already know — that asks you to *say something that fits*, with model answers, instead of translating a fixed string.
+
+What this repo deliberately does **not** own is the cadence: how often a batch runs, when to re-optimize the FSRS scheduler, when a growing backlog means *stop adding and go study*. Run it by hand — *process the inbox* — or from any scheduler of your own. In my setup an external orchestrator (my own system, GGUF.OS) drives that cadence and feeds the inbox; the repo stays self-contained and unaware of it. The per-batch review is written for the human who reads it: an automated caller can leave it unanswered without any harm.
+
 ## How it works
 
 <p align="center">
