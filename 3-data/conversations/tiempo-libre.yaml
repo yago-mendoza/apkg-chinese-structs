@@ -1,6 +1,7 @@
 # Conversación entera para oírla seguida en la web: no son tarjetas ni pasan las reglas del mazo.
-# Propuesta por el agente desde el lote 019 (charla cotidiana y reacciones): frecuencia, aficiones,
-# conectores y reacciones, casi todo vocabulario que YAGO ya domina, con algún toque un poco más alto.
+# Estándar de tamaño y riqueza: la del restaurante. Escena cotidiana larga, con varias escenas internas y
+# turnos de ida y vuelta de verdad; teje frecuencia, aficiones, conectores, reacciones y giros (马马虎虎,
+# 成交, 不见不散…) y varios sentidos de las palabras (看, 空, 待, 行), casi todo vocabulario que YAGO ya domina.
 # Cada persona habla con su voz de Azure; `anki.py audio` genera una frase por archivo y `export` la lleva a la web.
 # Formato: docs/design.md, «Conversaciones».
 id: tiempo-libre
@@ -23,82 +24,250 @@ lines:
 - scene: Se encuentran por la calle
   icon: people
 - who: me
-  hanzi: 好久不见！
-  pinyin: Hǎojiǔ bújiàn!
-  es: ¡Cuánto tiempo!
+  hanzi: 是你啊！好久不见！
+  pinyin: Shì nǐ a! Hǎojiǔ bújiàn!
+  es: ¡Anda, eres tú! ¡Cuánto tiempo!
 - who: a
-  hanzi: 好久不见！你最近怎么样？
-  pinyin: Hǎojiǔ bújiàn! Nǐ zuìjìn zěnmeyàng?
-  es: ¡Cuánto tiempo! ¿Qué tal últimamente?
+  hanzi: 真的好久不见！你怎么在这里？
+  pinyin: Zhēn de hǎojiǔ bújiàn! Nǐ zěnme zài zhèlǐ?
+  es: ¡De verdad, cuánto tiempo! ¿Qué haces por aquí?
 - who: me
-  hanzi: 挺好的。你呢？
-  pinyin: Tǐng hǎo de. Nǐ ne?
-  es: Muy bien. ¿Y tú?
+  hanzi: 我刚下班，正要回家。
+  pinyin: Wǒ gāng xiàbān, zhèng yào huí jiā.
+  es: Acabo de salir del trabajo, iba de camino a casa.
 - who: a
-  hanzi: 我也不错。
-  pinyin: Wǒ yě búcuò.
-  es: Yo también bien.
+  hanzi: 这么巧！我也是。
+  pinyin: Zhème qiǎo! Wǒ yě shì.
+  es: ¡Qué casualidad! Yo también.
+- who: me
+  hanzi: 你最近怎么样？
+  pinyin: Nǐ zuìjìn zěnmeyàng?
+  es: ¿Qué tal últimamente?
+- who: a
+  hanzi: 还行吧，老样子。你呢？
+  pinyin: Hái xíng ba, lǎo yàngzi. Nǐ ne?
+  es: Bueno, lo de siempre. ¿Y tú?
+- who: me
+  hanzi: 我也差不多，就是有点忙。
+  pinyin: Wǒ yě chàbuduō, jiùshì yǒudiǎn máng.
+  es: Yo más o menos, solo que un poco ocupado.
+- scene: El trabajo y el cansancio
+  icon: think
+- who: a
+  hanzi: 工作忙不忙？
+  pinyin: Gōngzuò máng bu máng?
+  es: ¿Mucho lío en el trabajo?
+- who: me
+  hanzi: 这个星期特别忙，每天都很累。
+  pinyin: Zhège xīngqī tèbié máng, měitiān dōu hěn lèi.
+  es: Esta semana sobre todo, cada día acabo agotado.
+- who: a
+  hanzi: 辛苦了！要注意休息啊。
+  pinyin: Xīnkǔ le! Yào zhùyì xiūxi a.
+  es: ¡Qué palo! Cuídate, descansa.
+- who: me
+  hanzi: 谢谢。你的工作呢？还顺利吗？
+  pinyin: Xièxie. Nǐ de gōngzuò ne? Hái shùnlì ma?
+  es: Gracias. ¿Y tu trabajo? ¿Va bien la cosa?
+- who: a
+  hanzi: 马马虎虎，最近压力有点大。
+  pinyin: Mǎmǎhūhū, zuìjìn yālì yǒudiǎn dà.
+  es: Así así, últimamente tengo bastante presión.
+- who: me
+  hanzi: 那你周末一般怎么放松？
+  pinyin: Nà nǐ zhōumò yìbān zěnme fàngsōng?
+  es: ¿Y cómo te relajas normalmente el finde?
 - scene: Qué hacen a diario
   icon: think
-- who: me
-  hanzi: 你平时做什么？
-  pinyin: Nǐ píngshí zuò shénme?
-  es: ¿Qué sueles hacer?
 - who: a
-  hanzi: 我一般在家工作，周末常常去健身房。你呢？
-  pinyin: Wǒ yìbān zài jiā gōngzuò, zhōumò chángcháng qù jiànshēnfáng. Nǐ ne?
-  es: Normalmente trabajo en casa y los fines de semana voy mucho al gimnasio. ¿Y tú?
+  hanzi: 我平时上班，一下班就想躺着。
+  pinyin: Wǒ píngshí shàngbān, yí xiàbān jiù xiǎng tǎng zhe.
+  es: Entre semana trabajo, y en cuanto salgo solo quiero tumbarme.
 - who: me
-  hanzi: 我每天去健身房！
-  pinyin: Wǒ měitiān qù jiànshēnfáng!
-  es: ¡Yo voy al gimnasio todos los días!
+  hanzi: 我懂！不过我每天还是会去跑步。
+  pinyin: Wǒ dǒng! Búguò wǒ měitiān háishi huì qù pǎobù.
+  es: ¡Te entiendo! Aun así yo salgo a correr todos los días.
 - who: a
-  hanzi: 真的假的？你太厉害了！
-  pinyin: Zhēn de jiǎ de? Nǐ tài lìhai le!
-  es: ¿En serio? ¡Qué máquina!
+  hanzi: 哇，你真自律！一般跑多久？
+  pinyin: Wā, nǐ zhēn zìlǜ! Yìbān pǎo duōjiǔ?
+  es: ¡Hala, qué disciplina! ¿Cuánto corres normalmente?
+- who: me
+  hanzi: 半个小时左右，出出汗很舒服。
+  pinyin: Bàn ge xiǎoshí zuǒyòu, chūchu hàn hěn shūfu.
+  es: Media hora más o menos, sudar un poco sienta genial.
+- who: a
+  hanzi: 听起来不错。我就懒，一动都不想动。
+  pinyin: Tīng qǐlái búcuò. Wǒ jiù lǎn, yí dòng dōu bù xiǎng dòng.
+  es: Suena bien. Yo es que soy perezosa, no me quiero mover ni un poco.
 - scene: Aficiones
   icon: heart
 - who: me
-  hanzi: 除了健身，我也喜欢踢足球。
-  pinyin: Chúle jiànshēn, wǒ yě xǐhuan tī zúqiú.
-  es: Además del gimnasio, también me gusta jugar al fútbol.
+  hanzi: 那你平时喜欢做什么？
+  pinyin: Nà nǐ píngshí xǐhuan zuò shénme?
+  es: ¿Y qué te gusta hacer normalmente?
 - who: a
-  hanzi: 我不太会踢足球，我只喜欢看。
-  pinyin: Wǒ bú tài huì tī zúqiú, wǒ zhǐ xǐhuan kàn.
-  es: No se me da bien el fútbol, solo me gusta verlo.
+  hanzi: 我喜欢在家看电影，或者看看书。
+  pinyin: Wǒ xǐhuan zài jiā kàn diànyǐng, huòzhě kànkan shū.
+  es: Me gusta ver pelis en casa, o leer un rato.
+- who: me
+  hanzi: 你喜欢看什么样的电影？
+  pinyin: Nǐ xǐhuan kàn shénmeyàng de diànyǐng?
+  es: ¿Qué tipo de pelis te gustan?
+- who: a
+  hanzi: 什么都看，不过最喜欢搞笑的。
+  pinyin: Shénme dōu kàn, búguò zuì xǐhuan gǎoxiào de.
+  es: Veo de todo, pero las de risa son mis favoritas.
+- who: me
+  hanzi: 我也是！看完心情特别好。
+  pinyin: Wǒ yě shì! Kàn wán xīnqíng tèbié hǎo.
+  es: ¡Yo igual! Al terminar me quedo de muy buen humor.
+- who: a
+  hanzi: 对！你呢，除了跑步还有别的爱好吗？
+  pinyin: Duì! Nǐ ne, chúle pǎobù hái yǒu bié de àihào ma?
+  es: ¡Sí! ¿Y tú, además de correr tienes otras aficiones?
+- who: me
+  hanzi: 我喜欢打球，也喜欢听音乐、做饭。
+  pinyin: Wǒ xǐhuan dǎ qiú, yě xǐhuan tīng yīnyuè, zuò fàn.
+  es: Me gusta jugar a la pelota, escuchar música y cocinar.
+- who: a
+  hanzi: 你还会做饭？太厉害了！
+  pinyin: Nǐ hái huì zuò fàn? Tài lìhai le!
+  es: ¿Encima sabes cocinar? ¡Qué máquina!
+- who: me
+  hanzi: 一般般啦，就是几个简单的菜。
+  pinyin: Yībānbān la, jiùshì jǐ ge jiǎndān de cài.
+  es: Normalillo, solo unos cuantos platos sencillos.
+- scene: El tiempo y la estación
+  icon: note
+- who: a
+  hanzi: 最近天气越来越冷了。
+  pinyin: Zuìjìn tiānqì yuè lái yuè lěng le.
+  es: El tiempo está cada vez más frío.
+- who: me
+  hanzi: 是啊，今天风特别大。
+  pinyin: Shì a, jīntiān fēng tèbié dà.
+  es: Sí, hoy hace muchísimo viento.
+- who: a
+  hanzi: 一到冬天我就不想出门。
+  pinyin: Yí dào dōngtiān wǒ jiù bù xiǎng chūmén.
+  es: En cuanto llega el invierno no quiero ni salir de casa.
+- who: me
+  hanzi: 可是老待在家里也会闷。
+  pinyin: Kěshì lǎo dāi zài jiā lǐ yě huì mèn.
+  es: Pero quedarse siempre metida en casa también agobia.
+- who: a
+  hanzi: 说得也对。
+  pinyin: Shuō de yě duì.
+  es: En eso también tienes razón.
 - scene: Hacen un plan
   icon: note
 - who: me
-  hanzi: 这个周末你有空吗？
-  pinyin: Zhège zhōumò nǐ yǒu kòng ma?
-  es: ¿Tienes tiempo este fin de semana?
+  hanzi: 这个周末你有空吗？一起出去走走？
+  pinyin: Zhège zhōumò nǐ yǒu kòng ma? Yìqǐ chūqù zǒuzou?
+  es: ¿Tienes tiempo este finde? ¿Salimos a dar una vuelta?
 - who: a
-  hanzi: 有空！做什么？
-  pinyin: Yǒu kòng! Zuò shénme?
-  es: ¡Sí! ¿Para qué?
+  hanzi: 有空！去哪里好呢？
+  pinyin: Yǒu kòng! Qù nǎlǐ hǎo ne?
+  es: ¡Sí! ¿Y a dónde vamos?
 - who: me
-  hanzi: 我们一起去踢足球吧！
-  pinyin: Wǒmen yìqǐ qù tī zúqiú ba!
-  es: ¡Vamos a jugar al fútbol juntos!
+  hanzi: 要不我们去爬山，顺便呼吸点新鲜空气？
+  pinyin: Yàobù wǒmen qù páshān, shùnbiàn hūxī diǎn xīnxiān kōngqì?
+  es: ¿Y si subimos a la montaña y de paso tomamos aire fresco?
 - who: a
-  hanzi: 太好了！我们几点见？
-  pinyin: Tài hǎo le! Wǒmen jǐ diǎn jiàn?
-  es: ¡Qué bien! ¿A qué hora quedamos?
+  hanzi: 爬山啊……我怕我爬不动。
+  pinyin: Páshān a…… Wǒ pà wǒ pá bu dòng.
+  es: La montaña... me temo que no voy a poder subir.
 - who: me
-  hanzi: 下午三点，怎么样？
-  pinyin: Xiàwǔ sān diǎn, zěnmeyàng?
-  es: A las tres de la tarde, ¿te parece?
+  hanzi: 没事，慢慢爬，不着急。
+  pinyin: Méi shì, mànman pá, bù zháojí.
+  es: Tranquila, subimos despacio, sin prisa.
 - who: a
-  hanzi: 没问题！就这么约吧！
-  pinyin: Méi wèntí! Jiù zhème yuē ba!
-  es: ¡Sin problema! ¡Quedamos así!
+  hanzi: 那好吧，我试试！要是太累我们就休息。
+  pinyin: Nà hǎo ba, wǒ shìshi! Yàoshi tài lèi wǒmen jiù xiūxi.
+  es: Vale, ¡lo intento! Si me canso mucho, descansamos.
+- who: me
+  hanzi: 没问题！爬完山我请你喝咖啡。
+  pinyin: Méi wèntí! Pá wán shān wǒ qǐng nǐ hē kāfēi.
+  es: ¡Hecho! Al bajar te invito a un café.
+- who: a
+  hanzi: 成交！这个主意不错。
+  pinyin: Chéngjiāo! Zhège zhǔyi búcuò.
+  es: ¡Trato hecho! Buena idea.
+- scene: La hora y el sitio
+  icon: note
+- who: a
+  hanzi: 那我们几点见？在哪里集合？
+  pinyin: Nà wǒmen jǐ diǎn jiàn? Zài nǎlǐ jíhé?
+  es: ¿A qué hora quedamos? ¿Dónde nos juntamos?
+- who: me
+  hanzi: 早上九点怎么样？在地铁站门口。
+  pinyin: Zǎoshang jiǔ diǎn zěnmeyàng? Zài dìtiězhàn ménkǒu.
+  es: ¿A las nueve de la mañana? En la puerta del metro.
+- who: a
+  hanzi: 九点有点早……十点行不行？
+  pinyin: Jiǔ diǎn yǒudiǎn zǎo…… Shí diǎn xíng bu xíng?
+  es: Las nueve es un poco pronto... ¿las diez te vale?
+- who: me
+  hanzi: 行，那就十点。别迟到啊！
+  pinyin: Xíng, nà jiù shí diǎn. Bié chídào a!
+  es: Vale, pues a las diez. ¡No llegues tarde, eh!
+- who: a
+  hanzi: 放心，我肯定准时到。
+  pinyin: Fàngxīn, wǒ kěndìng zhǔnshí dào.
+  es: Tranquilo, llego puntual seguro.
+- who: me
+  hanzi: 对了，记得穿运动鞋，别穿裙子。
+  pinyin: Duì le, jìde chuān yùndòngxié, bié chuān qúnzi.
+  es: Ah, acuérdate de ir con zapatillas, no con falda.
+- who: a
+  hanzi: 知道啦，你真啰嗦！
+  pinyin: Zhīdào la, nǐ zhēn luōsuo!
+  es: ¡Que ya lo sé, qué pesado eres!
+- scene: Invitan a más gente
+  icon: people
+- who: me
+  hanzi: 要不要再叫上小李？人多热闹。
+  pinyin: Yào bu yào zài jiào shàng Xiǎo Lǐ? Rén duō rènao.
+  es: ¿Llamamos también a Xiao Li? Cuantos más, mejor.
+- who: a
+  hanzi: 好啊！他最近总说想出去走走。
+  pinyin: Hǎo a! Tā zuìjìn zǒng shuō xiǎng chūqù zǒuzou.
+  es: ¡Vale! Últimamente siempre dice que quiere salir.
+- who: me
+  hanzi: 那我发个消息问问他。
+  pinyin: Nà wǒ fā ge xiāoxi wènwen tā.
+  es: Pues le mando un mensaje y le pregunto.
+- who: a
+  hanzi: 好，人越多越好玩！
+  pinyin: Hǎo, rén yuè duō yuè hǎowán!
+  es: Vale, ¡cuanta más gente, más divertido!
+- who: me
+  hanzi: 希望周末天气好，别下雨。
+  pinyin: Xīwàng zhōumò tiānqì hǎo, bié xià yǔ.
+  es: Ojalá haga buen tiempo el finde y no llueva.
+- who: a
+  hanzi: 要是下雨，我们就改天。
+  pinyin: Yàoshi xià yǔ, wǒmen jiù gǎitiān.
+  es: Si llueve, lo dejamos para otro día.
+- who: me
+  hanzi: 对，随机应变嘛。
+  pinyin: Duì, suíjī yìngbiàn ma.
+  es: Sí, ya improvisaremos.
 - stage: cada uno sigue su camino
   icon: walk
 - who: a
-  hanzi: 那周末见！
-  pinyin: Nà zhōumò jiàn!
-  es: ¡Hasta el fin de semana!
+  hanzi: 行，那就这么说定了！
+  pinyin: Xíng, nà jiù zhème shuō dìng le!
+  es: Vale, ¡entonces queda dicho!
 - who: me
-  hanzi: 周末见！
-  pinyin: Zhōumò jiàn!
-  es: ¡Hasta el fin de semana!
+  hanzi: 说定了！周末见，不见不散！
+  pinyin: Shuō dìng le! Zhōumò jiàn, bújiàn búsàn!
+  es: ¡Dicho! Nos vemos el finde, ¡sin falta!
+- who: a
+  hanzi: 不见不散！路上小心！
+  pinyin: Bújiàn búsàn! Lùshang xiǎoxīn!
+  es: ¡Sin falta! ¡Ten cuidado por el camino!
+- who: me
+  hanzi: 你也是，拜拜！
+  pinyin: Nǐ yě shì, báibái!
+  es: ¡Tú también, chao!

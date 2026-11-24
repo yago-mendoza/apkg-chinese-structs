@@ -89351,63 +89351,137 @@
     },
     {
      "who": "me",
-     "hanzi": "好久不见！",
-     "pinyin": "Hǎojiǔ bújiàn!",
-     "es": "¡Cuánto tiempo!",
-     "audio": "3-data/audio/acs_625e13c5f76c3733.mp3"
+     "hanzi": "是你啊！好久不见！",
+     "pinyin": "Shì nǐ a! Hǎojiǔ bújiàn!",
+     "es": "¡Anda, eres tú! ¡Cuánto tiempo!",
+     "audio": "3-data/audio/acs_519da24d9873d0d4.mp3"
     },
     {
      "who": "a",
-     "hanzi": "好久不见！你最近怎么样？",
-     "pinyin": "Hǎojiǔ bújiàn! Nǐ zuìjìn zěnmeyàng?",
-     "es": "¡Cuánto tiempo! ¿Qué tal últimamente?",
-     "audio": "3-data/audio/acs_cfd8406babd30a35.mp3"
+     "hanzi": "真的好久不见！你怎么在这里？",
+     "pinyin": "Zhēn de hǎojiǔ bújiàn! Nǐ zěnme zài zhèlǐ?",
+     "es": "¡De verdad, cuánto tiempo! ¿Qué haces por aquí?",
+     "audio": "3-data/audio/acs_26430293d577d5e1.mp3"
     },
     {
      "who": "me",
-     "hanzi": "挺好的。你呢？",
-     "pinyin": "Tǐng hǎo de. Nǐ ne?",
-     "es": "Muy bien. ¿Y tú?",
-     "audio": "3-data/audio/acs_15cbe5006f03c14e.mp3"
+     "hanzi": "我刚下班，正要回家。",
+     "pinyin": "Wǒ gāng xiàbān, zhèng yào huí jiā.",
+     "es": "Acabo de salir del trabajo, iba de camino a casa.",
+     "audio": "3-data/audio/acs_d493f3fab5f37dbc.mp3"
     },
     {
      "who": "a",
-     "hanzi": "我也不错。",
-     "pinyin": "Wǒ yě búcuò.",
-     "es": "Yo también bien.",
-     "audio": "3-data/audio/acs_6b5a6efe7a749929.mp3"
+     "hanzi": "这么巧！我也是。",
+     "pinyin": "Zhème qiǎo! Wǒ yě shì.",
+     "es": "¡Qué casualidad! Yo también.",
+     "audio": "3-data/audio/acs_5a7b7bfaaee1dbed.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "你最近怎么样？",
+     "pinyin": "Nǐ zuìjìn zěnmeyàng?",
+     "es": "¿Qué tal últimamente?",
+     "audio": "3-data/audio/acs_9ab59b30e22efaca.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "还行吧，老样子。你呢？",
+     "pinyin": "Hái xíng ba, lǎo yàngzi. Nǐ ne?",
+     "es": "Bueno, lo de siempre. ¿Y tú?",
+     "audio": "3-data/audio/acs_28ab4cd108975fab.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "我也差不多，就是有点忙。",
+     "pinyin": "Wǒ yě chàbuduō, jiùshì yǒudiǎn máng.",
+     "es": "Yo más o menos, solo que un poco ocupado.",
+     "audio": "3-data/audio/acs_fd16133f98f4c6d1.mp3"
+    },
+    {
+     "scene": "El trabajo y el cansancio",
+     "icon": "think"
+    },
+    {
+     "who": "a",
+     "hanzi": "工作忙不忙？",
+     "pinyin": "Gōngzuò máng bu máng?",
+     "es": "¿Mucho lío en el trabajo?",
+     "audio": "3-data/audio/acs_223293d47edbf82b.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "这个星期特别忙，每天都很累。",
+     "pinyin": "Zhège xīngqī tèbié máng, měitiān dōu hěn lèi.",
+     "es": "Esta semana sobre todo, cada día acabo agotado.",
+     "audio": "3-data/audio/acs_bc65644bd39d1f3c.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "辛苦了！要注意休息啊。",
+     "pinyin": "Xīnkǔ le! Yào zhùyì xiūxi a.",
+     "es": "¡Qué palo! Cuídate, descansa.",
+     "audio": "3-data/audio/acs_6fffaf0d32fc50e7.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "谢谢。你的工作呢？还顺利吗？",
+     "pinyin": "Xièxie. Nǐ de gōngzuò ne? Hái shùnlì ma?",
+     "es": "Gracias. ¿Y tu trabajo? ¿Va bien la cosa?",
+     "audio": "3-data/audio/acs_e6fb3dfc60cb29d7.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "马马虎虎，最近压力有点大。",
+     "pinyin": "Mǎmǎhūhū, zuìjìn yālì yǒudiǎn dà.",
+     "es": "Así así, últimamente tengo bastante presión.",
+     "audio": "3-data/audio/acs_d37b25231efaafd1.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "那你周末一般怎么放松？",
+     "pinyin": "Nà nǐ zhōumò yìbān zěnme fàngsōng?",
+     "es": "¿Y cómo te relajas normalmente el finde?",
+     "audio": "3-data/audio/acs_da7ca4f08241f1c9.mp3"
     },
     {
      "scene": "Qué hacen a diario",
      "icon": "think"
     },
     {
-     "who": "me",
-     "hanzi": "你平时做什么？",
-     "pinyin": "Nǐ píngshí zuò shénme?",
-     "es": "¿Qué sueles hacer?",
-     "audio": "3-data/audio/acs_a8536ad7c150cf7f.mp3"
-    },
-    {
      "who": "a",
-     "hanzi": "我一般在家工作，周末常常去健身房。你呢？",
-     "pinyin": "Wǒ yìbān zài jiā gōngzuò, zhōumò chángcháng qù jiànshēnfáng. Nǐ ne?",
-     "es": "Normalmente trabajo en casa y los fines de semana voy mucho al gimnasio. ¿Y tú?",
-     "audio": "3-data/audio/acs_6be4d3ffa034188f.mp3"
+     "hanzi": "我平时上班，一下班就想躺着。",
+     "pinyin": "Wǒ píngshí shàngbān, yí xiàbān jiù xiǎng tǎng zhe.",
+     "es": "Entre semana trabajo, y en cuanto salgo solo quiero tumbarme.",
+     "audio": "3-data/audio/acs_946178044bef28bf.mp3"
     },
     {
      "who": "me",
-     "hanzi": "我每天去健身房！",
-     "pinyin": "Wǒ měitiān qù jiànshēnfáng!",
-     "es": "¡Yo voy al gimnasio todos los días!",
-     "audio": "3-data/audio/acs_0b152fc641788d68.mp3"
+     "hanzi": "我懂！不过我每天还是会去跑步。",
+     "pinyin": "Wǒ dǒng! Búguò wǒ měitiān háishi huì qù pǎobù.",
+     "es": "¡Te entiendo! Aun así yo salgo a correr todos los días.",
+     "audio": "3-data/audio/acs_aa6e1381eeb64fb9.mp3"
     },
     {
      "who": "a",
-     "hanzi": "真的假的？你太厉害了！",
-     "pinyin": "Zhēn de jiǎ de? Nǐ tài lìhai le!",
-     "es": "¿En serio? ¡Qué máquina!",
-     "audio": "3-data/audio/acs_630bacf862297791.mp3"
+     "hanzi": "哇，你真自律！一般跑多久？",
+     "pinyin": "Wā, nǐ zhēn zìlǜ! Yìbān pǎo duōjiǔ?",
+     "es": "¡Hala, qué disciplina! ¿Cuánto corres normalmente?",
+     "audio": "3-data/audio/acs_95cd65ed0bf6f3d4.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "半个小时左右，出出汗很舒服。",
+     "pinyin": "Bàn ge xiǎoshí zuǒyòu, chūchu hàn hěn shūfu.",
+     "es": "Media hora más o menos, sudar un poco sienta genial.",
+     "audio": "3-data/audio/acs_2b04fe0b54952897.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "听起来不错。我就懒，一动都不想动。",
+     "pinyin": "Tīng qǐlái búcuò. Wǒ jiù lǎn, yí dòng dōu bù xiǎng dòng.",
+     "es": "Suena bien. Yo es que soy perezosa, no me quiero mover ni un poco.",
+     "audio": "3-data/audio/acs_2f0c1f23a040c866.mp3"
     },
     {
      "scene": "Aficiones",
@@ -89415,17 +89489,105 @@
     },
     {
      "who": "me",
-     "hanzi": "除了健身，我也喜欢踢足球。",
-     "pinyin": "Chúle jiànshēn, wǒ yě xǐhuan tī zúqiú.",
-     "es": "Además del gimnasio, también me gusta jugar al fútbol.",
-     "audio": "3-data/audio/acs_a4493de44333f88d.mp3"
+     "hanzi": "那你平时喜欢做什么？",
+     "pinyin": "Nà nǐ píngshí xǐhuan zuò shénme?",
+     "es": "¿Y qué te gusta hacer normalmente?",
+     "audio": "3-data/audio/acs_4cd9d07898e1c40a.mp3"
     },
     {
      "who": "a",
-     "hanzi": "我不太会踢足球，我只喜欢看。",
-     "pinyin": "Wǒ bú tài huì tī zúqiú, wǒ zhǐ xǐhuan kàn.",
-     "es": "No se me da bien el fútbol, solo me gusta verlo.",
-     "audio": "3-data/audio/acs_644c3d865f7e157d.mp3"
+     "hanzi": "我喜欢在家看电影，或者看看书。",
+     "pinyin": "Wǒ xǐhuan zài jiā kàn diànyǐng, huòzhě kànkan shū.",
+     "es": "Me gusta ver pelis en casa, o leer un rato.",
+     "audio": "3-data/audio/acs_4077965e518c9071.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "你喜欢看什么样的电影？",
+     "pinyin": "Nǐ xǐhuan kàn shénmeyàng de diànyǐng?",
+     "es": "¿Qué tipo de pelis te gustan?",
+     "audio": "3-data/audio/acs_6de7a5a04aba539d.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "什么都看，不过最喜欢搞笑的。",
+     "pinyin": "Shénme dōu kàn, búguò zuì xǐhuan gǎoxiào de.",
+     "es": "Veo de todo, pero las de risa son mis favoritas.",
+     "audio": "3-data/audio/acs_172b837225d4fa1c.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "我也是！看完心情特别好。",
+     "pinyin": "Wǒ yě shì! Kàn wán xīnqíng tèbié hǎo.",
+     "es": "¡Yo igual! Al terminar me quedo de muy buen humor.",
+     "audio": "3-data/audio/acs_3d7b7fb18075b8ed.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "对！你呢，除了跑步还有别的爱好吗？",
+     "pinyin": "Duì! Nǐ ne, chúle pǎobù hái yǒu bié de àihào ma?",
+     "es": "¡Sí! ¿Y tú, además de correr tienes otras aficiones?",
+     "audio": "3-data/audio/acs_063222a48a387a3c.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "我喜欢打球，也喜欢听音乐、做饭。",
+     "pinyin": "Wǒ xǐhuan dǎ qiú, yě xǐhuan tīng yīnyuè, zuò fàn.",
+     "es": "Me gusta jugar a la pelota, escuchar música y cocinar.",
+     "audio": "3-data/audio/acs_dbbb01fa1f9de5fa.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "你还会做饭？太厉害了！",
+     "pinyin": "Nǐ hái huì zuò fàn? Tài lìhai le!",
+     "es": "¿Encima sabes cocinar? ¡Qué máquina!",
+     "audio": "3-data/audio/acs_95cceb6fc300733f.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "一般般啦，就是几个简单的菜。",
+     "pinyin": "Yībānbān la, jiùshì jǐ ge jiǎndān de cài.",
+     "es": "Normalillo, solo unos cuantos platos sencillos.",
+     "audio": "3-data/audio/acs_483603a64a2d181f.mp3"
+    },
+    {
+     "scene": "El tiempo y la estación",
+     "icon": "note"
+    },
+    {
+     "who": "a",
+     "hanzi": "最近天气越来越冷了。",
+     "pinyin": "Zuìjìn tiānqì yuè lái yuè lěng le.",
+     "es": "El tiempo está cada vez más frío.",
+     "audio": "3-data/audio/acs_342161d73f205d2f.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "是啊，今天风特别大。",
+     "pinyin": "Shì a, jīntiān fēng tèbié dà.",
+     "es": "Sí, hoy hace muchísimo viento.",
+     "audio": "3-data/audio/acs_f372a2dc31dcbe8d.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "一到冬天我就不想出门。",
+     "pinyin": "Yí dào dōngtiān wǒ jiù bù xiǎng chūmén.",
+     "es": "En cuanto llega el invierno no quiero ni salir de casa.",
+     "audio": "3-data/audio/acs_3b0cb0ef8f51d670.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "可是老待在家里也会闷。",
+     "pinyin": "Kěshì lǎo dāi zài jiā lǐ yě huì mèn.",
+     "es": "Pero quedarse siempre metida en casa también agobia.",
+     "audio": "3-data/audio/acs_d3662d7bb3d8a275.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "说得也对。",
+     "pinyin": "Shuō de yě duì.",
+     "es": "En eso también tienes razón.",
+     "audio": "3-data/audio/acs_0d5d656dc6fe8325.mp3"
     },
     {
      "scene": "Hacen un plan",
@@ -89433,45 +89595,165 @@
     },
     {
      "who": "me",
-     "hanzi": "这个周末你有空吗？",
-     "pinyin": "Zhège zhōumò nǐ yǒu kòng ma?",
-     "es": "¿Tienes tiempo este fin de semana?",
-     "audio": "3-data/audio/acs_72f35afc3d2f57a9.mp3"
+     "hanzi": "这个周末你有空吗？一起出去走走？",
+     "pinyin": "Zhège zhōumò nǐ yǒu kòng ma? Yìqǐ chūqù zǒuzou?",
+     "es": "¿Tienes tiempo este finde? ¿Salimos a dar una vuelta?",
+     "audio": "3-data/audio/acs_90ddeb6f2a893606.mp3"
     },
     {
      "who": "a",
-     "hanzi": "有空！做什么？",
-     "pinyin": "Yǒu kòng! Zuò shénme?",
-     "es": "¡Sí! ¿Para qué?",
-     "audio": "3-data/audio/acs_5130b5eb622e6e7b.mp3"
+     "hanzi": "有空！去哪里好呢？",
+     "pinyin": "Yǒu kòng! Qù nǎlǐ hǎo ne?",
+     "es": "¡Sí! ¿Y a dónde vamos?",
+     "audio": "3-data/audio/acs_36652cdc8d170bf2.mp3"
     },
     {
      "who": "me",
-     "hanzi": "我们一起去踢足球吧！",
-     "pinyin": "Wǒmen yìqǐ qù tī zúqiú ba!",
-     "es": "¡Vamos a jugar al fútbol juntos!",
-     "audio": "3-data/audio/acs_2685c02f1812016f.mp3"
+     "hanzi": "要不我们去爬山，顺便呼吸点新鲜空气？",
+     "pinyin": "Yàobù wǒmen qù páshān, shùnbiàn hūxī diǎn xīnxiān kōngqì?",
+     "es": "¿Y si subimos a la montaña y de paso tomamos aire fresco?",
+     "audio": "3-data/audio/acs_fc5164ac0a3f7e8f.mp3"
     },
     {
      "who": "a",
-     "hanzi": "太好了！我们几点见？",
-     "pinyin": "Tài hǎo le! Wǒmen jǐ diǎn jiàn?",
-     "es": "¡Qué bien! ¿A qué hora quedamos?",
-     "audio": "3-data/audio/acs_6c170316a2483345.mp3"
+     "hanzi": "爬山啊……我怕我爬不动。",
+     "pinyin": "Páshān a…… Wǒ pà wǒ pá bu dòng.",
+     "es": "La montaña... me temo que no voy a poder subir.",
+     "audio": "3-data/audio/acs_7fe8a1ad9983e038.mp3"
     },
     {
      "who": "me",
-     "hanzi": "下午三点，怎么样？",
-     "pinyin": "Xiàwǔ sān diǎn, zěnmeyàng?",
-     "es": "A las tres de la tarde, ¿te parece?",
-     "audio": "3-data/audio/acs_d4a39fccded7b35e.mp3"
+     "hanzi": "没事，慢慢爬，不着急。",
+     "pinyin": "Méi shì, mànman pá, bù zháojí.",
+     "es": "Tranquila, subimos despacio, sin prisa.",
+     "audio": "3-data/audio/acs_cbe0c1793ebb5ac1.mp3"
     },
     {
      "who": "a",
-     "hanzi": "没问题！就这么约吧！",
-     "pinyin": "Méi wèntí! Jiù zhème yuē ba!",
-     "es": "¡Sin problema! ¡Quedamos así!",
-     "audio": "3-data/audio/acs_13565f49ad718729.mp3"
+     "hanzi": "那好吧，我试试！要是太累我们就休息。",
+     "pinyin": "Nà hǎo ba, wǒ shìshi! Yàoshi tài lèi wǒmen jiù xiūxi.",
+     "es": "Vale, ¡lo intento! Si me canso mucho, descansamos.",
+     "audio": "3-data/audio/acs_83fa77557553536e.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "没问题！爬完山我请你喝咖啡。",
+     "pinyin": "Méi wèntí! Pá wán shān wǒ qǐng nǐ hē kāfēi.",
+     "es": "¡Hecho! Al bajar te invito a un café.",
+     "audio": "3-data/audio/acs_66cd4461f1b1a7a2.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "成交！这个主意不错。",
+     "pinyin": "Chéngjiāo! Zhège zhǔyi búcuò.",
+     "es": "¡Trato hecho! Buena idea.",
+     "audio": "3-data/audio/acs_fce9977a18b7ba8a.mp3"
+    },
+    {
+     "scene": "La hora y el sitio",
+     "icon": "note"
+    },
+    {
+     "who": "a",
+     "hanzi": "那我们几点见？在哪里集合？",
+     "pinyin": "Nà wǒmen jǐ diǎn jiàn? Zài nǎlǐ jíhé?",
+     "es": "¿A qué hora quedamos? ¿Dónde nos juntamos?",
+     "audio": "3-data/audio/acs_a8abedbeb22685b3.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "早上九点怎么样？在地铁站门口。",
+     "pinyin": "Zǎoshang jiǔ diǎn zěnmeyàng? Zài dìtiězhàn ménkǒu.",
+     "es": "¿A las nueve de la mañana? En la puerta del metro.",
+     "audio": "3-data/audio/acs_397c2d0d881e7a03.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "九点有点早……十点行不行？",
+     "pinyin": "Jiǔ diǎn yǒudiǎn zǎo…… Shí diǎn xíng bu xíng?",
+     "es": "Las nueve es un poco pronto... ¿las diez te vale?",
+     "audio": "3-data/audio/acs_cfc38720e8312432.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "行，那就十点。别迟到啊！",
+     "pinyin": "Xíng, nà jiù shí diǎn. Bié chídào a!",
+     "es": "Vale, pues a las diez. ¡No llegues tarde, eh!",
+     "audio": "3-data/audio/acs_89bad499a46e21fb.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "放心，我肯定准时到。",
+     "pinyin": "Fàngxīn, wǒ kěndìng zhǔnshí dào.",
+     "es": "Tranquilo, llego puntual seguro.",
+     "audio": "3-data/audio/acs_99ca5ef723ed19a1.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "对了，记得穿运动鞋，别穿裙子。",
+     "pinyin": "Duì le, jìde chuān yùndòngxié, bié chuān qúnzi.",
+     "es": "Ah, acuérdate de ir con zapatillas, no con falda.",
+     "audio": "3-data/audio/acs_4dda9c40e4605e0c.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "知道啦，你真啰嗦！",
+     "pinyin": "Zhīdào la, nǐ zhēn luōsuo!",
+     "es": "¡Que ya lo sé, qué pesado eres!",
+     "audio": "3-data/audio/acs_73189ece679d08e8.mp3"
+    },
+    {
+     "scene": "Invitan a más gente",
+     "icon": "people"
+    },
+    {
+     "who": "me",
+     "hanzi": "要不要再叫上小李？人多热闹。",
+     "pinyin": "Yào bu yào zài jiào shàng Xiǎo Lǐ? Rén duō rènao.",
+     "es": "¿Llamamos también a Xiao Li? Cuantos más, mejor.",
+     "audio": "3-data/audio/acs_cbbe130d84d5ece3.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "好啊！他最近总说想出去走走。",
+     "pinyin": "Hǎo a! Tā zuìjìn zǒng shuō xiǎng chūqù zǒuzou.",
+     "es": "¡Vale! Últimamente siempre dice que quiere salir.",
+     "audio": "3-data/audio/acs_26d544c1944f151f.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "那我发个消息问问他。",
+     "pinyin": "Nà wǒ fā ge xiāoxi wènwen tā.",
+     "es": "Pues le mando un mensaje y le pregunto.",
+     "audio": "3-data/audio/acs_e604ae92a0bc777d.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "好，人越多越好玩！",
+     "pinyin": "Hǎo, rén yuè duō yuè hǎowán!",
+     "es": "Vale, ¡cuanta más gente, más divertido!",
+     "audio": "3-data/audio/acs_22e7cbf29bfccbca.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "希望周末天气好，别下雨。",
+     "pinyin": "Xīwàng zhōumò tiānqì hǎo, bié xià yǔ.",
+     "es": "Ojalá haga buen tiempo el finde y no llueva.",
+     "audio": "3-data/audio/acs_6c7c317706c99f25.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "要是下雨，我们就改天。",
+     "pinyin": "Yàoshi xià yǔ, wǒmen jiù gǎitiān.",
+     "es": "Si llueve, lo dejamos para otro día.",
+     "audio": "3-data/audio/acs_f84ed87ec596688e.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "对，随机应变嘛。",
+     "pinyin": "Duì, suíjī yìngbiàn ma.",
+     "es": "Sí, ya improvisaremos.",
+     "audio": "3-data/audio/acs_b2119674d37bf168.mp3"
     },
     {
      "stage": "cada uno sigue su camino",
@@ -89479,17 +89761,31 @@
     },
     {
      "who": "a",
-     "hanzi": "那周末见！",
-     "pinyin": "Nà zhōumò jiàn!",
-     "es": "¡Hasta el fin de semana!",
-     "audio": "3-data/audio/acs_53231db38c64133f.mp3"
+     "hanzi": "行，那就这么说定了！",
+     "pinyin": "Xíng, nà jiù zhème shuō dìng le!",
+     "es": "Vale, ¡entonces queda dicho!",
+     "audio": "3-data/audio/acs_99eda70306c8fb30.mp3"
     },
     {
      "who": "me",
-     "hanzi": "周末见！",
-     "pinyin": "Zhōumò jiàn!",
-     "es": "¡Hasta el fin de semana!",
-     "audio": "3-data/audio/acs_3d8972dee1d6ea8f.mp3"
+     "hanzi": "说定了！周末见，不见不散！",
+     "pinyin": "Shuō dìng le! Zhōumò jiàn, bújiàn búsàn!",
+     "es": "¡Dicho! Nos vemos el finde, ¡sin falta!",
+     "audio": "3-data/audio/acs_44660a6d41fc08ab.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "不见不散！路上小心！",
+     "pinyin": "Bújiàn búsàn! Lùshang xiǎoxīn!",
+     "es": "¡Sin falta! ¡Ten cuidado por el camino!",
+     "audio": "3-data/audio/acs_fc12f8f7f0f98bdb.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "你也是，拜拜！",
+     "pinyin": "Nǐ yě shì, báibái!",
+     "es": "¡Tú también, chao!",
+     "audio": "3-data/audio/acs_7a5aeb23e4b1cc57.mp3"
     }
    ]
   },
@@ -89516,100 +89812,414 @@
    },
    "lines": [
     {
-     "scene": "En la cafetería, piden",
+     "scene": "Llegan al bar y buscan sitio",
      "icon": "cup"
     },
     {
      "who": "me",
-     "hanzi": "你想喝点什么？",
-     "pinyin": "Nǐ xiǎng hē diǎn shénme?",
-     "es": "¿Qué te apetece tomar?",
-     "audio": "3-data/audio/acs_fad3b48f247ca33a.mp3"
+     "hanzi": "来来来，这边坐！",
+     "pinyin": "Lái lái lái, zhèbiān zuò!",
+     "es": "¡Ven, ven, siéntate aquí!",
+     "audio": "3-data/audio/acs_364b0615f90998a0.mp3"
     },
     {
      "who": "a",
-     "hanzi": "这里的茶很好喝，我要一杯茶。",
-     "pinyin": "Zhèlǐ de chá hěn hǎohē, wǒ yào yì bēi chá.",
-     "es": "El té de aquí está muy rico, yo quiero un té.",
-     "audio": "3-data/audio/acs_df6d01fbdb0825fb.mp3"
+     "hanzi": "这家店不错啊，环境挺好的。",
+     "pinyin": "Zhè jiā diàn búcuò a, huánjìng tǐng hǎo de.",
+     "es": "Qué sitio tan majo, buen ambiente.",
+     "audio": "3-data/audio/acs_111a9afd6672e8fa.mp3"
     },
     {
      "who": "me",
-     "hanzi": "我要一瓶啤酒。",
-     "pinyin": "Wǒ yào yì píng píjiǔ.",
-     "es": "Yo quiero una botella de cerveza.",
-     "audio": "3-data/audio/acs_62ed34683ed8472d.mp3"
+     "hanzi": "对吧？我常来。靠窗的位子最舒服。",
+     "pinyin": "Duì ba? Wǒ cháng lái. Kào chuāng de wèizi zuì shūfu.",
+     "es": "¿A que sí? Vengo mucho. Los sitios junto a la ventana son los más cómodos.",
+     "audio": "3-data/audio/acs_2b7f028a8d036fe3.mp3"
     },
     {
      "who": "a",
-     "hanzi": "你平时喝酒吗？",
-     "pinyin": "Nǐ píngshí hē jiǔ ma?",
-     "es": "¿Sueles beber alcohol?",
-     "audio": "3-data/audio/acs_a740c4119e594ccf.mp3"
+     "hanzi": "那我们就坐这里。今天人不多。",
+     "pinyin": "Nà wǒmen jiù zuò zhèlǐ. Jīntiān rén bù duō.",
+     "es": "Pues nos sentamos aquí. Hoy no hay mucha gente.",
+     "audio": "3-data/audio/acs_ae2abbf74a6e7204.mp3"
     },
     {
      "who": "me",
-     "hanzi": "平时不喝，今天我很高兴！",
-     "pinyin": "Píngshí bù hē, jīntiān wǒ hěn gāoxìng!",
-     "es": "Normalmente no, pero hoy estoy contento.",
-     "audio": "3-data/audio/acs_4947780dc02b4e79.mp3"
+     "hanzi": "周一嘛，大家都在上班。",
+     "pinyin": "Zhōuyī ma, dàjiā dōu zài shàngbān.",
+     "es": "Es lunes, todos están trabajando.",
+     "audio": "3-data/audio/acs_25e6d855802d0730.mp3"
     },
     {
-     "scene": "Charlan",
+     "scene": "Piden las bebidas",
+     "icon": "cup"
+    },
+    {
+     "who": "me",
+     "hanzi": "你想喝点什么？这里的饮料很多。",
+     "pinyin": "Nǐ xiǎng hē diǎn shénme? Zhèlǐ de yǐnliào hěn duō.",
+     "es": "¿Qué te apetece beber? Aquí hay muchas bebidas.",
+     "audio": "3-data/audio/acs_98c814409d5c6a18.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "我看看……有没有啤酒？",
+     "pinyin": "Wǒ kànkan…… Yǒu méi yǒu píjiǔ?",
+     "es": "A ver... ¿tienen cerveza?",
+     "audio": "3-data/audio/acs_6efcb96213d5ce41.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "有，生啤、瓶装的都有。",
+     "pinyin": "Yǒu, shēngpí, píngzhuāng de dōu yǒu.",
+     "es": "Sí, de barril y en botella.",
+     "audio": "3-data/audio/acs_1396cce852aeba41.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "那来一杯生啤吧。你呢？",
+     "pinyin": "Nà lái yì bēi shēngpí ba. Nǐ ne?",
+     "es": "Pues una caña. ¿Y tú?",
+     "audio": "3-data/audio/acs_a4be2142ae2061e4.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "我开车，不能喝酒，来一杯果汁。",
+     "pinyin": "Wǒ kāichē, bù néng hē jiǔ, lái yì bēi guǒzhī.",
+     "es": "Yo conduzco, no puedo beber, un zumo.",
+     "audio": "3-data/audio/acs_679526dc65fddf3f.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "也行，那我陪你，少喝点。",
+     "pinyin": "Yě xíng, nà wǒ péi nǐ, shǎo hē diǎn.",
+     "es": "Vale, entonces te acompaño y bebo poco.",
+     "audio": "3-data/audio/acs_8ac5852985f434b9.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "再点两份小吃，边吃边聊。",
+     "pinyin": "Zài diǎn liǎng fèn xiǎochī, biān chī biān liáo.",
+     "es": "Pedimos también dos raciones de picoteo, y charlamos mientras.",
+     "audio": "3-data/audio/acs_d748afb5e7874a56.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "好主意！我有点饿了。",
+     "pinyin": "Hǎo zhǔyi! Wǒ yǒudiǎn è le.",
+     "es": "¡Buena idea! Tengo algo de hambre.",
+     "audio": "3-data/audio/acs_daf1e6f1ce3bb62c.mp3"
+    },
+    {
+     "scene": "La buena noticia",
      "icon": "people"
     },
     {
      "who": "a",
-     "hanzi": "你今天怎么了？",
-     "pinyin": "Nǐ jīntiān zěnme le?",
-     "es": "¿Qué te pasa hoy?",
-     "audio": "3-data/audio/acs_ad1a828f72d9a318.mp3"
+     "hanzi": "其实今天叫你出来，是有件事想跟你说。",
+     "pinyin": "Qíshí jīntiān jiào nǐ chūlái, shì yǒu jiàn shì xiǎng gēn nǐ shuō.",
+     "es": "La verdad es que te he sacado hoy porque tengo algo que contarte.",
+     "audio": "3-data/audio/acs_14fbd6bf8c09f15c.mp3"
     },
     {
      "who": "me",
-     "hanzi": "我找到新工作了！",
-     "pinyin": "Wǒ zhǎodào xīn gōngzuò le!",
-     "es": "¡He encontrado un trabajo nuevo!",
-     "audio": "3-data/audio/acs_d0c05832df0efc4d.mp3"
+     "hanzi": "哦？什么事？这么神秘。",
+     "pinyin": "Ò? Shénme shì? Zhème shénmì.",
+     "es": "¿Ah? ¿Qué pasa? Qué misterio.",
+     "audio": "3-data/audio/acs_15e2ede729aa06c4.mp3"
     },
     {
      "who": "a",
-     "hanzi": "我的天！太好了！",
-     "pinyin": "Wǒ de tiān! Tài hǎo le!",
-     "es": "¡Madre mía! ¡Qué bien!",
-     "audio": "3-data/audio/acs_ccc44b883a025156.mp3"
+     "hanzi": "我升职了！",
+     "pinyin": "Wǒ shēngzhí le!",
+     "es": "¡Me han ascendido!",
+     "audio": "3-data/audio/acs_839ddc909482baf6.mp3"
     },
     {
      "who": "me",
-     "hanzi": "谢谢！我太高兴了，我想请大家吃饭……开玩笑的！",
-     "pinyin": "Xièxie! Wǒ tài gāoxìng le, wǒ xiǎng qǐng dàjiā chīfàn…… Kāi wánxiào de!",
-     "es": "¡Gracias! Estoy tan contento que invito a todos a comer… ¡Es broma!",
-     "audio": "3-data/audio/acs_10b517c06d012103.mp3"
+     "hanzi": "不会吧！真的假的？",
+     "pinyin": "Bú huì ba! Zhēn de jiǎ de?",
+     "es": "¡No me digas! ¿En serio?",
+     "audio": "3-data/audio/acs_138005e3523fe361.mp3"
     },
     {
      "who": "a",
-     "hanzi": "哈哈，笑死我了！",
-     "pinyin": "Hāhā, xiàosǐ wǒ le!",
-     "es": "¡Ja, ja, me parto!",
-     "audio": "3-data/audio/acs_23c95aa174fdf20f.mp3"
+     "hanzi": "千真万确！上个星期刚定下来。",
+     "pinyin": "Qiānzhēn-wànquè! Shàng ge xīngqī gāng dìng xiàlái.",
+     "es": "¡Como lo oyes! Se confirmó la semana pasada.",
+     "audio": "3-data/audio/acs_5cf7445f54e4e3bf.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "哇，恭喜恭喜！你太厉害了！",
+     "pinyin": "Wā, gōngxǐ gōngxǐ! Nǐ tài lìhai le!",
+     "es": "¡Hala, enhorabuena! ¡Eres un crack!",
+     "audio": "3-data/audio/acs_02b8ba69746fafdc.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "哪里哪里，运气好而已。",
+     "pinyin": "Nǎlǐ nǎlǐ, yùnqi hǎo éryǐ.",
+     "es": "Qué va, qué va, solo he tenido suerte.",
+     "audio": "3-data/audio/acs_1bc728213a5ef398.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "别谦虚了，这是你努力的结果。",
+     "pinyin": "Bié qiānxū le, zhè shì nǐ nǔlì de jiéguǒ.",
+     "es": "No seas modesto, es fruto de tu esfuerzo.",
+     "audio": "3-data/audio/acs_6af8211d75320d1b.mp3"
     },
     {
      "scene": "Brindan",
      "icon": "heart"
     },
     {
+     "who": "me",
+     "hanzi": "来，为你的新工作，干杯！",
+     "pinyin": "Lái, wèi nǐ de xīn gōngzuò, gānbēi!",
+     "es": "Venga, ¡por tu nuevo trabajo, salud!",
+     "audio": "3-data/audio/acs_27466857fa5eacb7.mp3"
+    },
+    {
      "who": "a",
-     "hanzi": "真的太好了，我们喝一杯吧！",
-     "pinyin": "Zhēn de tài hǎo le, wǒmen hē yì bēi ba!",
-     "es": "De verdad, ¡qué bien! ¡Vamos a tomar una copa!",
-     "audio": "3-data/audio/acs_3edd0f20614f04bd.mp3"
+     "hanzi": "干杯！谢谢你啊。",
+     "pinyin": "Gānbēi! Xièxie nǐ a.",
+     "es": "¡Salud! Gracias, tío.",
+     "audio": "3-data/audio/acs_cdb0419ba98a03e5.mp3"
     },
     {
      "who": "me",
-     "hanzi": "好！下次我请你！",
-     "pinyin": "Hǎo! Xiàcì wǒ qǐng nǐ!",
-     "es": "¡Vale! ¡La próxima vez invito yo!",
-     "audio": "3-data/audio/acs_12aa60e5d528eddd.mp3"
+     "hanzi": "你尝尝这个啤酒，味道怎么样？",
+     "pinyin": "Nǐ chángchang zhège píjiǔ, wèidào zěnmeyàng?",
+     "es": "Prueba esta cerveza, ¿qué tal sabe?",
+     "audio": "3-data/audio/acs_5b36d041cfcd76dc.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "嗯……很爽！冰冰凉凉的。",
+     "pinyin": "Èn…… Hěn shuǎng! Bīngbīng liángliáng de.",
+     "es": "Mmm... ¡qué gusto! Bien fresquita.",
+     "audio": "3-data/audio/acs_fbb7fd9272e6987a.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "慢点喝，别急。",
+     "pinyin": "Màn diǎn hē, bié jí.",
+     "es": "Bebe despacio, sin prisa.",
+     "audio": "3-data/audio/acs_77f857f6f2547a23.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "放心，今天我高兴，多喝两杯也没事。",
+     "pinyin": "Fàngxīn, jīntiān wǒ gāoxìng, duō hē liǎng bēi yě méi shì.",
+     "es": "Tranqui, hoy estoy contento, un par de más no pasa nada.",
+     "audio": "3-data/audio/acs_7f2f617de11b0225.mp3"
+    },
+    {
+     "scene": "Se ponen al día",
+     "icon": "people"
+    },
+    {
+     "who": "a",
+     "hanzi": "对了，你最近怎么样？好久没见了。",
+     "pinyin": "Duì le, nǐ zuìjìn zěnmeyàng? Hǎojiǔ méi jiàn le.",
+     "es": "Por cierto, ¿tú qué tal? Hace mucho que no nos vemos.",
+     "audio": "3-data/audio/acs_a5d3fd0125a1da2d.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "我啊，还是老样子，忙忙碌碌的。",
+     "pinyin": "Wǒ a, háishi lǎo yàngzi, mángmáng lùlù de.",
+     "es": "¿Yo? Lo de siempre, liadísimo.",
+     "audio": "3-data/audio/acs_121c56d6f17829d3.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "小王呢？你们还经常联系吗？",
+     "pinyin": "Xiǎo Wáng ne? Nǐmen hái jīngcháng liánxì ma?",
+     "es": "¿Y Xiao Wang? ¿Seguís en contacto a menudo?",
+     "audio": "3-data/audio/acs_b6f319dfa80ee6db.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "偶尔联系。他搬到上海去了。",
+     "pinyin": "Ǒu'ěr liánxì. Tā bān dào Shànghǎi qù le.",
+     "es": "De vez en cuando. Se mudó a Shanghái.",
+     "audio": "3-data/audio/acs_b6e65a91be16b909.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "真的？怪不得好久没他的消息。",
+     "pinyin": "Zhēn de? Guàibude hǎojiǔ méi tā de xiāoxi.",
+     "es": "¿En serio? Con razón hace tanto que no sé de él.",
+     "audio": "3-data/audio/acs_955b56d0c2726aea.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "他说有机会请我们去玩。",
+     "pinyin": "Tā shuō yǒu jīhuì qǐng wǒmen qù wán.",
+     "es": "Dice que cuando pueda nos invita a ir.",
+     "audio": "3-data/audio/acs_11bb695ef2e47e7d.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "那敢情好！我早就想去上海了。",
+     "pinyin": "Nà gǎnqíng hǎo! Wǒ zǎo jiù xiǎng qù Shànghǎi le.",
+     "es": "¡Eso estaría genial! Hace tiempo que quiero ir a Shanghái.",
+     "audio": "3-data/audio/acs_aa48075cbb59ce12.mp3"
+    },
+    {
+     "scene": "La anécdota de la mudanza",
+     "icon": "question"
+    },
+    {
+     "who": "me",
+     "hanzi": "说到搬家，我上次搬家闹了个笑话。",
+     "pinyin": "Shuō dào bānjiā, wǒ shàngcì bānjiā nào le ge xiàohua.",
+     "es": "Hablando de mudanzas, en la última me pasó una anécdota de risa.",
+     "audio": "3-data/audio/acs_7ac35c7f4cdd4f1c.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "哦？说来听听。",
+     "pinyin": "Ò? Shuō lái tīngting.",
+     "es": "¿Ah sí? Cuenta, cuenta.",
+     "audio": "3-data/audio/acs_b816619ffdd3f766.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "我把钥匙锁在屋里了，自己进不去。",
+     "pinyin": "Wǒ bǎ yàoshi suǒ zài wū lǐ le, zìjǐ jìn bu qù.",
+     "es": "Me dejé las llaves dentro y no podía entrar.",
+     "audio": "3-data/audio/acs_266d6bced6fa710a.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "哈哈，那后来呢？",
+     "pinyin": "Hāhā, nà hòulái ne?",
+     "es": "Ja, ja, ¿y luego?",
+     "audio": "3-data/audio/acs_7ede31904fc830c6.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "我在门口站了两个小时，冻得要死。",
+     "pinyin": "Wǒ zài ménkǒu zhàn le liǎng ge xiǎoshí, dòng de yào sǐ.",
+     "es": "Estuve dos horas en la puerta, muerto de frío.",
+     "audio": "3-data/audio/acs_87b197536a937200.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "哈哈哈，笑死我了！太惨了吧！",
+     "pinyin": "Hāhāhā, xiàosǐ wǒ le! Tài cǎn le ba!",
+     "es": "¡Jajaja, me parto! ¡Menudo desastre!",
+     "audio": "3-data/audio/acs_ce38d5ddf16c20cf.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "别笑了，当时我可一点都不觉得好笑。",
+     "pinyin": "Bié xiào le, dāngshí wǒ kě yìdiǎn dōu bù juéde hǎoxiào.",
+     "es": "No te rías, en el momento no me hizo ni pizca de gracia.",
+     "audio": "3-data/audio/acs_dfa5bfa05f28bce5.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "好好好，我不笑了。下次小心点。",
+     "pinyin": "Hǎo hǎo hǎo, wǒ bù xiào le. Xiàcì xiǎoxīn diǎn.",
+     "es": "Vale, vale, ya no me río. La próxima ten cuidado.",
+     "audio": "3-data/audio/acs_fb6525c446e95eb3.mp3"
+    },
+    {
+     "scene": "Otra ronda y la cuenta",
+     "icon": "bill"
+    },
+    {
+     "who": "a",
+     "hanzi": "再来一杯？时间还早。",
+     "pinyin": "Zài lái yì bēi? Shíjiān hái zǎo.",
+     "es": "¿Otra? Aún es pronto.",
+     "audio": "3-data/audio/acs_394e032cbdbea3f9.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "你喝吧，我开车就不喝了。",
+     "pinyin": "Nǐ hē ba, wǒ kāichē jiù bù hē le.",
+     "es": "Bebe tú, yo que conduzco no bebo.",
+     "audio": "3-data/audio/acs_b98bb47627243e8d.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "那我再要一杯，最后一杯！",
+     "pinyin": "Nà wǒ zài yào yì bēi, zuìhòu yì bēi!",
+     "es": "Pues una más, ¡la última!",
+     "audio": "3-data/audio/acs_4fb69430d18eabd2.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "行，今天我买单，庆祝你升职！",
+     "pinyin": "Xíng, jīntiān wǒ mǎidān, qìngzhù nǐ shēngzhí!",
+     "es": "Vale, hoy pago yo, ¡a celebrar tu ascenso!",
+     "audio": "3-data/audio/acs_a0d42f712e017a38.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "那怎么行？应该我请客才对。",
+     "pinyin": "Nà zěnme xíng? Yīnggāi wǒ qǐngkè cái duì.",
+     "es": "¿Cómo va a ser? Lo suyo es que invite yo.",
+     "audio": "3-data/audio/acs_1a5e66c6c9cc6c90.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "别跟我抢，下次你请。",
+     "pinyin": "Bié gēn wǒ qiǎng, xiàcì nǐ qǐng.",
+     "es": "No me discutas, la próxima invitas tú.",
+     "audio": "3-data/audio/acs_216b840bf96eef32.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "好吧，那就说定了，下次我请！",
+     "pinyin": "Hǎo ba, nà jiù shuō dìng le, xiàcì wǒ qǐng!",
+     "es": "Vale, queda dicho, ¡la próxima invito yo!",
+     "audio": "3-data/audio/acs_5c08e917eebe2c88.mp3"
+    },
+    {
+     "stage": "salen juntos del bar",
+     "icon": "walk"
+    },
+    {
+     "who": "a",
+     "hanzi": "今天太开心了，谢谢你陪我喝一杯。",
+     "pinyin": "Jīntiān tài kāixīn le, xièxie nǐ péi wǒ hē yì bēi.",
+     "es": "Hoy lo he pasado genial, gracias por acompañarme a tomar algo.",
+     "audio": "3-data/audio/acs_947bfddb5b8cf784.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "应该的！以后多联系。",
+     "pinyin": "Yīnggāi de! Yǐhòu duō liánxì.",
+     "es": "¡Faltaría más! A ver si hablamos más a menudo.",
+     "audio": "3-data/audio/acs_cca6a6ab0a8f1935.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "一定！你开车小心点。",
+     "pinyin": "Yídìng! Nǐ kāichē xiǎoxīn diǎn.",
+     "es": "¡Seguro! Conduce con cuidado.",
+     "audio": "3-data/audio/acs_1fedff6cedd88603.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "放心吧。到家了给我发个消息。",
+     "pinyin": "Fàngxīn ba. Dào jiā le gěi wǒ fā ge xiāoxi.",
+     "es": "Tranquilo. Cuando llegues a casa mándame un mensaje.",
+     "audio": "3-data/audio/acs_f1eb963a8ddcac6f.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "好，一路平安！",
+     "pinyin": "Hǎo, yílù píng'ān!",
+     "es": "Vale, ¡buen viaje!",
+     "audio": "3-data/audio/acs_6731e211c6d6e04c.mp3"
     }
    ]
   }

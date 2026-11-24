@@ -1,6 +1,8 @@
 # Conversación entera para oírla seguida en la web: no son tarjetas ni pasan las reglas del mazo.
-# Propuesta por el agente desde el lote 019 (charla cotidiana y reacciones): bebidas, clasificadores y, sobre
-# todo, las reacciones coloquiales (我的天, 太好了, 笑死我了), casi todo vocabulario que YAGO ya domina.
+# Estándar de tamaño y riqueza: la del restaurante. Escena cotidiana larga, con varias escenas internas y
+# turnos de ida y vuelta de verdad; teje bebidas, clasificadores (一杯, 一瓶, 两份) y, sobre todo, las reacciones
+# coloquiales y los giros (不会吧, 千真万确, 哪里哪里, 怪不得, 笑死我了, 冻得要死, 一路平安), casi todo
+# vocabulario que YAGO ya domina.
 # Cada persona habla con su voz de Azure; `anki.py audio` genera una frase por archivo y `export` la lleva a la web.
 # Formato: docs/design.md, «Conversaciones».
 id: tomar-algo
@@ -20,57 +22,235 @@ speakers:
     en: friend
     voice: zh-CN-YunxiNeural
 lines:
-- scene: En la cafetería, piden
+- scene: Llegan al bar y buscan sitio
   icon: cup
 - who: me
-  hanzi: 你想喝点什么？
-  pinyin: Nǐ xiǎng hē diǎn shénme?
-  es: ¿Qué te apetece tomar?
+  hanzi: 来来来，这边坐！
+  pinyin: Lái lái lái, zhèbiān zuò!
+  es: ¡Ven, ven, siéntate aquí!
 - who: a
-  hanzi: 这里的茶很好喝，我要一杯茶。
-  pinyin: Zhèlǐ de chá hěn hǎohē, wǒ yào yì bēi chá.
-  es: El té de aquí está muy rico, yo quiero un té.
+  hanzi: 这家店不错啊，环境挺好的。
+  pinyin: Zhè jiā diàn búcuò a, huánjìng tǐng hǎo de.
+  es: Qué sitio tan majo, buen ambiente.
 - who: me
-  hanzi: 我要一瓶啤酒。
-  pinyin: Wǒ yào yì píng píjiǔ.
-  es: Yo quiero una botella de cerveza.
+  hanzi: 对吧？我常来。靠窗的位子最舒服。
+  pinyin: Duì ba? Wǒ cháng lái. Kào chuāng de wèizi zuì shūfu.
+  es: ¿A que sí? Vengo mucho. Los sitios junto a la ventana son los más cómodos.
 - who: a
-  hanzi: 你平时喝酒吗？
-  pinyin: Nǐ píngshí hē jiǔ ma?
-  es: ¿Sueles beber alcohol?
+  hanzi: 那我们就坐这里。今天人不多。
+  pinyin: Nà wǒmen jiù zuò zhèlǐ. Jīntiān rén bù duō.
+  es: Pues nos sentamos aquí. Hoy no hay mucha gente.
 - who: me
-  hanzi: 平时不喝，今天我很高兴！
-  pinyin: Píngshí bù hē, jīntiān wǒ hěn gāoxìng!
-  es: Normalmente no, pero hoy estoy contento.
-- scene: Charlan
+  hanzi: 周一嘛，大家都在上班。
+  pinyin: Zhōuyī ma, dàjiā dōu zài shàngbān.
+  es: Es lunes, todos están trabajando.
+- scene: Piden las bebidas
+  icon: cup
+- who: me
+  hanzi: 你想喝点什么？这里的饮料很多。
+  pinyin: Nǐ xiǎng hē diǎn shénme? Zhèlǐ de yǐnliào hěn duō.
+  es: ¿Qué te apetece beber? Aquí hay muchas bebidas.
+- who: a
+  hanzi: 我看看……有没有啤酒？
+  pinyin: Wǒ kànkan…… Yǒu méi yǒu píjiǔ?
+  es: A ver... ¿tienen cerveza?
+- who: me
+  hanzi: 有，生啤、瓶装的都有。
+  pinyin: Yǒu, shēngpí, píngzhuāng de dōu yǒu.
+  es: Sí, de barril y en botella.
+- who: a
+  hanzi: 那来一杯生啤吧。你呢？
+  pinyin: Nà lái yì bēi shēngpí ba. Nǐ ne?
+  es: Pues una caña. ¿Y tú?
+- who: me
+  hanzi: 我开车，不能喝酒，来一杯果汁。
+  pinyin: Wǒ kāichē, bù néng hē jiǔ, lái yì bēi guǒzhī.
+  es: Yo conduzco, no puedo beber, un zumo.
+- who: a
+  hanzi: 也行，那我陪你，少喝点。
+  pinyin: Yě xíng, nà wǒ péi nǐ, shǎo hē diǎn.
+  es: Vale, entonces te acompaño y bebo poco.
+- who: me
+  hanzi: 再点两份小吃，边吃边聊。
+  pinyin: Zài diǎn liǎng fèn xiǎochī, biān chī biān liáo.
+  es: Pedimos también dos raciones de picoteo, y charlamos mientras.
+- who: a
+  hanzi: 好主意！我有点饿了。
+  pinyin: Hǎo zhǔyi! Wǒ yǒudiǎn è le.
+  es: ¡Buena idea! Tengo algo de hambre.
+- scene: La buena noticia
   icon: people
 - who: a
-  hanzi: 你今天怎么了？
-  pinyin: Nǐ jīntiān zěnme le?
-  es: ¿Qué te pasa hoy?
+  hanzi: 其实今天叫你出来，是有件事想跟你说。
+  pinyin: Qíshí jīntiān jiào nǐ chūlái, shì yǒu jiàn shì xiǎng gēn nǐ shuō.
+  es: La verdad es que te he sacado hoy porque tengo algo que contarte.
 - who: me
-  hanzi: 我找到新工作了！
-  pinyin: Wǒ zhǎodào xīn gōngzuò le!
-  es: ¡He encontrado un trabajo nuevo!
+  hanzi: 哦？什么事？这么神秘。
+  pinyin: Ò? Shénme shì? Zhème shénmì.
+  es: ¿Ah? ¿Qué pasa? Qué misterio.
 - who: a
-  hanzi: 我的天！太好了！
-  pinyin: Wǒ de tiān! Tài hǎo le!
-  es: ¡Madre mía! ¡Qué bien!
+  hanzi: 我升职了！
+  pinyin: Wǒ shēngzhí le!
+  es: ¡Me han ascendido!
 - who: me
-  hanzi: 谢谢！我太高兴了，我想请大家吃饭……开玩笑的！
-  pinyin: Xièxie! Wǒ tài gāoxìng le, wǒ xiǎng qǐng dàjiā chīfàn…… Kāi wánxiào de!
-  es: ¡Gracias! Estoy tan contento que invito a todos a comer… ¡Es broma!
+  hanzi: 不会吧！真的假的？
+  pinyin: Bú huì ba! Zhēn de jiǎ de?
+  es: ¡No me digas! ¿En serio?
 - who: a
-  hanzi: 哈哈，笑死我了！
-  pinyin: Hāhā, xiàosǐ wǒ le!
-  es: ¡Ja, ja, me parto!
+  hanzi: 千真万确！上个星期刚定下来。
+  pinyin: Qiānzhēn-wànquè! Shàng ge xīngqī gāng dìng xiàlái.
+  es: ¡Como lo oyes! Se confirmó la semana pasada.
+- who: me
+  hanzi: 哇，恭喜恭喜！你太厉害了！
+  pinyin: Wā, gōngxǐ gōngxǐ! Nǐ tài lìhai le!
+  es: ¡Hala, enhorabuena! ¡Eres un crack!
+- who: a
+  hanzi: 哪里哪里，运气好而已。
+  pinyin: Nǎlǐ nǎlǐ, yùnqi hǎo éryǐ.
+  es: Qué va, qué va, solo he tenido suerte.
+- who: me
+  hanzi: 别谦虚了，这是你努力的结果。
+  pinyin: Bié qiānxū le, zhè shì nǐ nǔlì de jiéguǒ.
+  es: No seas modesto, es fruto de tu esfuerzo.
 - scene: Brindan
   icon: heart
-- who: a
-  hanzi: 真的太好了，我们喝一杯吧！
-  pinyin: Zhēn de tài hǎo le, wǒmen hē yì bēi ba!
-  es: De verdad, ¡qué bien! ¡Vamos a tomar una copa!
 - who: me
-  hanzi: 好！下次我请你！
-  pinyin: Hǎo! Xiàcì wǒ qǐng nǐ!
-  es: ¡Vale! ¡La próxima vez invito yo!
+  hanzi: 来，为你的新工作，干杯！
+  pinyin: Lái, wèi nǐ de xīn gōngzuò, gānbēi!
+  es: Venga, ¡por tu nuevo trabajo, salud!
+- who: a
+  hanzi: 干杯！谢谢你啊。
+  pinyin: Gānbēi! Xièxie nǐ a.
+  es: ¡Salud! Gracias, tío.
+- who: me
+  hanzi: 你尝尝这个啤酒，味道怎么样？
+  pinyin: Nǐ chángchang zhège píjiǔ, wèidào zěnmeyàng?
+  es: Prueba esta cerveza, ¿qué tal sabe?
+- who: a
+  hanzi: 嗯……很爽！冰冰凉凉的。
+  pinyin: Èn…… Hěn shuǎng! Bīngbīng liángliáng de.
+  es: Mmm... ¡qué gusto! Bien fresquita.
+- who: me
+  hanzi: 慢点喝，别急。
+  pinyin: Màn diǎn hē, bié jí.
+  es: Bebe despacio, sin prisa.
+- who: a
+  hanzi: 放心，今天我高兴，多喝两杯也没事。
+  pinyin: Fàngxīn, jīntiān wǒ gāoxìng, duō hē liǎng bēi yě méi shì.
+  es: Tranqui, hoy estoy contento, un par de más no pasa nada.
+- scene: Se ponen al día
+  icon: people
+- who: a
+  hanzi: 对了，你最近怎么样？好久没见了。
+  pinyin: Duì le, nǐ zuìjìn zěnmeyàng? Hǎojiǔ méi jiàn le.
+  es: Por cierto, ¿tú qué tal? Hace mucho que no nos vemos.
+- who: me
+  hanzi: 我啊，还是老样子，忙忙碌碌的。
+  pinyin: Wǒ a, háishi lǎo yàngzi, mángmáng lùlù de.
+  es: ¿Yo? Lo de siempre, liadísimo.
+- who: a
+  hanzi: 小王呢？你们还经常联系吗？
+  pinyin: Xiǎo Wáng ne? Nǐmen hái jīngcháng liánxì ma?
+  es: ¿Y Xiao Wang? ¿Seguís en contacto a menudo?
+- who: me
+  hanzi: 偶尔联系。他搬到上海去了。
+  pinyin: Ǒu'ěr liánxì. Tā bān dào Shànghǎi qù le.
+  es: De vez en cuando. Se mudó a Shanghái.
+- who: a
+  hanzi: 真的？怪不得好久没他的消息。
+  pinyin: Zhēn de? Guàibude hǎojiǔ méi tā de xiāoxi.
+  es: ¿En serio? Con razón hace tanto que no sé de él.
+- who: me
+  hanzi: 他说有机会请我们去玩。
+  pinyin: Tā shuō yǒu jīhuì qǐng wǒmen qù wán.
+  es: Dice que cuando pueda nos invita a ir.
+- who: a
+  hanzi: 那敢情好！我早就想去上海了。
+  pinyin: Nà gǎnqíng hǎo! Wǒ zǎo jiù xiǎng qù Shànghǎi le.
+  es: ¡Eso estaría genial! Hace tiempo que quiero ir a Shanghái.
+- scene: La anécdota de la mudanza
+  icon: question
+- who: me
+  hanzi: 说到搬家，我上次搬家闹了个笑话。
+  pinyin: Shuō dào bānjiā, wǒ shàngcì bānjiā nào le ge xiàohua.
+  es: Hablando de mudanzas, en la última me pasó una anécdota de risa.
+- who: a
+  hanzi: 哦？说来听听。
+  pinyin: Ò? Shuō lái tīngting.
+  es: ¿Ah sí? Cuenta, cuenta.
+- who: me
+  hanzi: 我把钥匙锁在屋里了，自己进不去。
+  pinyin: Wǒ bǎ yàoshi suǒ zài wū lǐ le, zìjǐ jìn bu qù.
+  es: Me dejé las llaves dentro y no podía entrar.
+- who: a
+  hanzi: 哈哈，那后来呢？
+  pinyin: Hāhā, nà hòulái ne?
+  es: Ja, ja, ¿y luego?
+- who: me
+  hanzi: 我在门口站了两个小时，冻得要死。
+  pinyin: Wǒ zài ménkǒu zhàn le liǎng ge xiǎoshí, dòng de yào sǐ.
+  es: Estuve dos horas en la puerta, muerto de frío.
+- who: a
+  hanzi: 哈哈哈，笑死我了！太惨了吧！
+  pinyin: Hāhāhā, xiàosǐ wǒ le! Tài cǎn le ba!
+  es: ¡Jajaja, me parto! ¡Menudo desastre!
+- who: me
+  hanzi: 别笑了，当时我可一点都不觉得好笑。
+  pinyin: Bié xiào le, dāngshí wǒ kě yìdiǎn dōu bù juéde hǎoxiào.
+  es: No te rías, en el momento no me hizo ni pizca de gracia.
+- who: a
+  hanzi: 好好好，我不笑了。下次小心点。
+  pinyin: Hǎo hǎo hǎo, wǒ bù xiào le. Xiàcì xiǎoxīn diǎn.
+  es: Vale, vale, ya no me río. La próxima ten cuidado.
+- scene: Otra ronda y la cuenta
+  icon: bill
+- who: a
+  hanzi: 再来一杯？时间还早。
+  pinyin: Zài lái yì bēi? Shíjiān hái zǎo.
+  es: ¿Otra? Aún es pronto.
+- who: me
+  hanzi: 你喝吧，我开车就不喝了。
+  pinyin: Nǐ hē ba, wǒ kāichē jiù bù hē le.
+  es: Bebe tú, yo que conduzco no bebo.
+- who: a
+  hanzi: 那我再要一杯，最后一杯！
+  pinyin: Nà wǒ zài yào yì bēi, zuìhòu yì bēi!
+  es: Pues una más, ¡la última!
+- who: me
+  hanzi: 行，今天我买单，庆祝你升职！
+  pinyin: Xíng, jīntiān wǒ mǎidān, qìngzhù nǐ shēngzhí!
+  es: Vale, hoy pago yo, ¡a celebrar tu ascenso!
+- who: a
+  hanzi: 那怎么行？应该我请客才对。
+  pinyin: Nà zěnme xíng? Yīnggāi wǒ qǐngkè cái duì.
+  es: ¿Cómo va a ser? Lo suyo es que invite yo.
+- who: me
+  hanzi: 别跟我抢，下次你请。
+  pinyin: Bié gēn wǒ qiǎng, xiàcì nǐ qǐng.
+  es: No me discutas, la próxima invitas tú.
+- who: a
+  hanzi: 好吧，那就说定了，下次我请！
+  pinyin: Hǎo ba, nà jiù shuō dìng le, xiàcì wǒ qǐng!
+  es: Vale, queda dicho, ¡la próxima invito yo!
+- stage: salen juntos del bar
+  icon: walk
+- who: a
+  hanzi: 今天太开心了，谢谢你陪我喝一杯。
+  pinyin: Jīntiān tài kāixīn le, xièxie nǐ péi wǒ hē yì bēi.
+  es: Hoy lo he pasado genial, gracias por acompañarme a tomar algo.
+- who: me
+  hanzi: 应该的！以后多联系。
+  pinyin: Yīnggāi de! Yǐhòu duō liánxì.
+  es: ¡Faltaría más! A ver si hablamos más a menudo.
+- who: a
+  hanzi: 一定！你开车小心点。
+  pinyin: Yídìng! Nǐ kāichē xiǎoxīn diǎn.
+  es: ¡Seguro! Conduce con cuidado.
+- who: me
+  hanzi: 放心吧。到家了给我发个消息。
+  pinyin: Fàngxīn ba. Dào jiā le gěi wǒ fā ge xiāoxi.
+  es: Tranquilo. Cuando llegues a casa mándame un mensaje.
+- who: a
+  hanzi: 好，一路平安！
+  pinyin: Hǎo, yílù píng'ān!
+  es: Vale, ¡buen viaje!

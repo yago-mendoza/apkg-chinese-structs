@@ -494,3 +494,7 @@ YAGO trajo (lote 019) muchísimas fórmulas y ejemplos del curso y pidió dejar 
 ### 2026-11-24 · Cada lote propone sus conversaciones, y el dueño las conserva o las borra
 
 Las conversaciones enteras (`3-data/conversations/`) pasan de ser una pieza suelta que se aprueba antes de construir a una propuesta de cada lote. Norma: cada lote propone libremente las conversaciones que vea en su material —ninguna, una o unas pocas, a criterio del agente, sin cuota—, temáticas y armadas casi todas con vocabulario que el que aprende ya tiene o de nivel bajo, con algún toque un poco más alto, metiendo las palabras, expresiones y reacciones nuevas del lote en una escena cotidiana. Se crean directas; un orquestador externo (GGUF) se las acerca al dueño por correo, que las conserva o las borra. Proponer una es barato y reversible, así que ante la duda se propone (`docs/goal.md`: construir primero, explicar después). Vive en: `docs/design.md` («Conversaciones»).
+
+### 2026-11-24 · Conversaciones largas y ricas: el estándar de restaurante, aplicado
+
+Se reescribieron `tiempo-libre` y `tomar-algo`, que se habían quedado cortas, a la medida de riqueza de `restaurante` (escena entera, varias escenas internas, ~50-60 frases, con reacciones, giros y varios sentidos sobre vocabulario que YAGO ya domina), según la norma de `docs/design.md` («Conversaciones»).
