@@ -1,0 +1,104 @@
+# Conversación entera para oírla seguida en la web: no son tarjetas ni pasan las reglas del mazo.
+# Propuesta por el agente desde el lote 019 (charla cotidiana y reacciones): frecuencia, aficiones,
+# conectores y reacciones, casi todo vocabulario que YAGO ya domina, con algún toque un poco más alto.
+# Cada persona habla con su voz de Azure; `anki.py audio` genera una frase por archivo y `export` la lleva a la web.
+# Formato: docs/design.md, «Conversaciones».
+id: tiempo-libre
+title:
+  zh: 聊聊周末
+  es: Charla de fin de semana
+  en: Weekend small talk
+speakers:
+  me:
+    zh: 我
+    es: yo
+    en: me
+    voice: zh-CN-YunyangNeural
+  a:
+    zh: 朋友
+    es: amiga
+    en: friend
+    voice: zh-CN-XiaoxiaoNeural
+lines:
+- scene: Se encuentran por la calle
+  icon: people
+- who: me
+  hanzi: 好久不见！
+  pinyin: Hǎojiǔ bújiàn!
+  es: ¡Cuánto tiempo!
+- who: a
+  hanzi: 好久不见！你最近怎么样？
+  pinyin: Hǎojiǔ bújiàn! Nǐ zuìjìn zěnmeyàng?
+  es: ¡Cuánto tiempo! ¿Qué tal últimamente?
+- who: me
+  hanzi: 挺好的。你呢？
+  pinyin: Tǐng hǎo de. Nǐ ne?
+  es: Muy bien. ¿Y tú?
+- who: a
+  hanzi: 我也不错。
+  pinyin: Wǒ yě búcuò.
+  es: Yo también bien.
+- scene: Qué hacen a diario
+  icon: think
+- who: me
+  hanzi: 你平时做什么？
+  pinyin: Nǐ píngshí zuò shénme?
+  es: ¿Qué sueles hacer?
+- who: a
+  hanzi: 我一般在家工作，周末常常去健身房。你呢？
+  pinyin: Wǒ yìbān zài jiā gōngzuò, zhōumò chángcháng qù jiànshēnfáng. Nǐ ne?
+  es: Normalmente trabajo en casa y los fines de semana voy mucho al gimnasio. ¿Y tú?
+- who: me
+  hanzi: 我每天去健身房！
+  pinyin: Wǒ měitiān qù jiànshēnfáng!
+  es: ¡Yo voy al gimnasio todos los días!
+- who: a
+  hanzi: 真的假的？你太厉害了！
+  pinyin: Zhēn de jiǎ de? Nǐ tài lìhai le!
+  es: ¿En serio? ¡Qué máquina!
+- scene: Aficiones
+  icon: heart
+- who: me
+  hanzi: 除了健身，我也喜欢踢足球。
+  pinyin: Chúle jiànshēn, wǒ yě xǐhuan tī zúqiú.
+  es: Además del gimnasio, también me gusta jugar al fútbol.
+- who: a
+  hanzi: 我不太会踢足球，我只喜欢看。
+  pinyin: Wǒ bú tài huì tī zúqiú, wǒ zhǐ xǐhuan kàn.
+  es: No se me da bien el fútbol, solo me gusta verlo.
+- scene: Hacen un plan
+  icon: note
+- who: me
+  hanzi: 这个周末你有空吗？
+  pinyin: Zhège zhōumò nǐ yǒu kòng ma?
+  es: ¿Tienes tiempo este fin de semana?
+- who: a
+  hanzi: 有空！做什么？
+  pinyin: Yǒu kòng! Zuò shénme?
+  es: ¡Sí! ¿Para qué?
+- who: me
+  hanzi: 我们一起去踢足球吧！
+  pinyin: Wǒmen yìqǐ qù tī zúqiú ba!
+  es: ¡Vamos a jugar al fútbol juntos!
+- who: a
+  hanzi: 太好了！我们几点见？
+  pinyin: Tài hǎo le! Wǒmen jǐ diǎn jiàn?
+  es: ¡Qué bien! ¿A qué hora quedamos?
+- who: me
+  hanzi: 下午三点，怎么样？
+  pinyin: Xiàwǔ sān diǎn, zěnmeyàng?
+  es: A las tres de la tarde, ¿te parece?
+- who: a
+  hanzi: 没问题！就这么约吧！
+  pinyin: Méi wèntí! Jiù zhème yuē ba!
+  es: ¡Sin problema! ¡Quedamos así!
+- stage: cada uno sigue su camino
+  icon: walk
+- who: a
+  hanzi: 那周末见！
+  pinyin: Nà zhōumò jiàn!
+  es: ¡Hasta el fin de semana!
+- who: me
+  hanzi: 周末见！
+  pinyin: Zhōumò jiàn!
+  es: ¡Hasta el fin de semana!

@@ -1,0 +1,76 @@
+# Conversación entera para oírla seguida en la web: no son tarjetas ni pasan las reglas del mazo.
+# Propuesta por el agente desde el lote 019 (charla cotidiana y reacciones): bebidas, clasificadores y, sobre
+# todo, las reacciones coloquiales (我的天, 太好了, 笑死我了), casi todo vocabulario que YAGO ya domina.
+# Cada persona habla con su voz de Azure; `anki.py audio` genera una frase por archivo y `export` la lleva a la web.
+# Formato: docs/design.md, «Conversaciones».
+id: tomar-algo
+title:
+  zh: 去喝一杯
+  es: A tomar algo
+  en: Grabbing a drink
+speakers:
+  me:
+    zh: 我
+    es: yo
+    en: me
+    voice: zh-CN-YunyangNeural
+  a:
+    zh: 朋友
+    es: amigo
+    en: friend
+    voice: zh-CN-YunxiNeural
+lines:
+- scene: En la cafetería, piden
+  icon: cup
+- who: me
+  hanzi: 你想喝点什么？
+  pinyin: Nǐ xiǎng hē diǎn shénme?
+  es: ¿Qué te apetece tomar?
+- who: a
+  hanzi: 这里的茶很好喝，我要一杯茶。
+  pinyin: Zhèlǐ de chá hěn hǎohē, wǒ yào yì bēi chá.
+  es: El té de aquí está muy rico, yo quiero un té.
+- who: me
+  hanzi: 我要一瓶啤酒。
+  pinyin: Wǒ yào yì píng píjiǔ.
+  es: Yo quiero una botella de cerveza.
+- who: a
+  hanzi: 你平时喝酒吗？
+  pinyin: Nǐ píngshí hē jiǔ ma?
+  es: ¿Sueles beber alcohol?
+- who: me
+  hanzi: 平时不喝，今天我很高兴！
+  pinyin: Píngshí bù hē, jīntiān wǒ hěn gāoxìng!
+  es: Normalmente no, pero hoy estoy contento.
+- scene: Charlan
+  icon: people
+- who: a
+  hanzi: 你今天怎么了？
+  pinyin: Nǐ jīntiān zěnme le?
+  es: ¿Qué te pasa hoy?
+- who: me
+  hanzi: 我找到新工作了！
+  pinyin: Wǒ zhǎodào xīn gōngzuò le!
+  es: ¡He encontrado un trabajo nuevo!
+- who: a
+  hanzi: 我的天！太好了！
+  pinyin: Wǒ de tiān! Tài hǎo le!
+  es: ¡Madre mía! ¡Qué bien!
+- who: me
+  hanzi: 谢谢！我太高兴了，我想请大家吃饭……开玩笑的！
+  pinyin: Xièxie! Wǒ tài gāoxìng le, wǒ xiǎng qǐng dàjiā chīfàn…… Kāi wánxiào de!
+  es: ¡Gracias! Estoy tan contento que invito a todos a comer… ¡Es broma!
+- who: a
+  hanzi: 哈哈，笑死我了！
+  pinyin: Hāhā, xiàosǐ wǒ le!
+  es: ¡Ja, ja, me parto!
+- scene: Brindan
+  icon: heart
+- who: a
+  hanzi: 真的太好了，我们喝一杯吧！
+  pinyin: Zhēn de tài hǎo le, wǒmen hē yì bēi ba!
+  es: De verdad, ¡qué bien! ¡Vamos a tomar una copa!
+- who: me
+  hanzi: 好！下次我请你！
+  pinyin: Hǎo! Xiàcì wǒ qǐng nǐ!
+  es: ¡Vale! ¡La próxima vez invito yo!

@@ -89322,6 +89322,296 @@
      "audio": "3-data/audio/acs_77c63a6cbd94692c.mp3"
     }
    ]
+  },
+  {
+   "id": "tiempo-libre",
+   "title": {
+    "zh": "聊聊周末",
+    "es": "Charla de fin de semana",
+    "en": "Weekend small talk"
+   },
+   "speakers": {
+    "me": {
+     "zh": "我",
+     "es": "yo",
+     "en": "me",
+     "voice": "zh-CN-YunyangNeural"
+    },
+    "a": {
+     "zh": "朋友",
+     "es": "amiga",
+     "en": "friend",
+     "voice": "zh-CN-XiaoxiaoNeural"
+    }
+   },
+   "lines": [
+    {
+     "scene": "Se encuentran por la calle",
+     "icon": "people"
+    },
+    {
+     "who": "me",
+     "hanzi": "好久不见！",
+     "pinyin": "Hǎojiǔ bújiàn!",
+     "es": "¡Cuánto tiempo!",
+     "audio": "3-data/audio/acs_625e13c5f76c3733.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "好久不见！你最近怎么样？",
+     "pinyin": "Hǎojiǔ bújiàn! Nǐ zuìjìn zěnmeyàng?",
+     "es": "¡Cuánto tiempo! ¿Qué tal últimamente?",
+     "audio": "3-data/audio/acs_cfd8406babd30a35.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "挺好的。你呢？",
+     "pinyin": "Tǐng hǎo de. Nǐ ne?",
+     "es": "Muy bien. ¿Y tú?",
+     "audio": "3-data/audio/acs_15cbe5006f03c14e.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "我也不错。",
+     "pinyin": "Wǒ yě búcuò.",
+     "es": "Yo también bien.",
+     "audio": "3-data/audio/acs_6b5a6efe7a749929.mp3"
+    },
+    {
+     "scene": "Qué hacen a diario",
+     "icon": "think"
+    },
+    {
+     "who": "me",
+     "hanzi": "你平时做什么？",
+     "pinyin": "Nǐ píngshí zuò shénme?",
+     "es": "¿Qué sueles hacer?",
+     "audio": "3-data/audio/acs_a8536ad7c150cf7f.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "我一般在家工作，周末常常去健身房。你呢？",
+     "pinyin": "Wǒ yìbān zài jiā gōngzuò, zhōumò chángcháng qù jiànshēnfáng. Nǐ ne?",
+     "es": "Normalmente trabajo en casa y los fines de semana voy mucho al gimnasio. ¿Y tú?",
+     "audio": "3-data/audio/acs_6be4d3ffa034188f.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "我每天去健身房！",
+     "pinyin": "Wǒ měitiān qù jiànshēnfáng!",
+     "es": "¡Yo voy al gimnasio todos los días!",
+     "audio": "3-data/audio/acs_0b152fc641788d68.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "真的假的？你太厉害了！",
+     "pinyin": "Zhēn de jiǎ de? Nǐ tài lìhai le!",
+     "es": "¿En serio? ¡Qué máquina!",
+     "audio": "3-data/audio/acs_630bacf862297791.mp3"
+    },
+    {
+     "scene": "Aficiones",
+     "icon": "heart"
+    },
+    {
+     "who": "me",
+     "hanzi": "除了健身，我也喜欢踢足球。",
+     "pinyin": "Chúle jiànshēn, wǒ yě xǐhuan tī zúqiú.",
+     "es": "Además del gimnasio, también me gusta jugar al fútbol.",
+     "audio": "3-data/audio/acs_a4493de44333f88d.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "我不太会踢足球，我只喜欢看。",
+     "pinyin": "Wǒ bú tài huì tī zúqiú, wǒ zhǐ xǐhuan kàn.",
+     "es": "No se me da bien el fútbol, solo me gusta verlo.",
+     "audio": "3-data/audio/acs_644c3d865f7e157d.mp3"
+    },
+    {
+     "scene": "Hacen un plan",
+     "icon": "note"
+    },
+    {
+     "who": "me",
+     "hanzi": "这个周末你有空吗？",
+     "pinyin": "Zhège zhōumò nǐ yǒu kòng ma?",
+     "es": "¿Tienes tiempo este fin de semana?",
+     "audio": "3-data/audio/acs_72f35afc3d2f57a9.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "有空！做什么？",
+     "pinyin": "Yǒu kòng! Zuò shénme?",
+     "es": "¡Sí! ¿Para qué?",
+     "audio": "3-data/audio/acs_5130b5eb622e6e7b.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "我们一起去踢足球吧！",
+     "pinyin": "Wǒmen yìqǐ qù tī zúqiú ba!",
+     "es": "¡Vamos a jugar al fútbol juntos!",
+     "audio": "3-data/audio/acs_2685c02f1812016f.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "太好了！我们几点见？",
+     "pinyin": "Tài hǎo le! Wǒmen jǐ diǎn jiàn?",
+     "es": "¡Qué bien! ¿A qué hora quedamos?",
+     "audio": "3-data/audio/acs_6c170316a2483345.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "下午三点，怎么样？",
+     "pinyin": "Xiàwǔ sān diǎn, zěnmeyàng?",
+     "es": "A las tres de la tarde, ¿te parece?",
+     "audio": "3-data/audio/acs_d4a39fccded7b35e.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "没问题！就这么约吧！",
+     "pinyin": "Méi wèntí! Jiù zhème yuē ba!",
+     "es": "¡Sin problema! ¡Quedamos así!",
+     "audio": "3-data/audio/acs_13565f49ad718729.mp3"
+    },
+    {
+     "stage": "cada uno sigue su camino",
+     "icon": "walk"
+    },
+    {
+     "who": "a",
+     "hanzi": "那周末见！",
+     "pinyin": "Nà zhōumò jiàn!",
+     "es": "¡Hasta el fin de semana!",
+     "audio": "3-data/audio/acs_53231db38c64133f.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "周末见！",
+     "pinyin": "Zhōumò jiàn!",
+     "es": "¡Hasta el fin de semana!",
+     "audio": "3-data/audio/acs_3d8972dee1d6ea8f.mp3"
+    }
+   ]
+  },
+  {
+   "id": "tomar-algo",
+   "title": {
+    "zh": "去喝一杯",
+    "es": "A tomar algo",
+    "en": "Grabbing a drink"
+   },
+   "speakers": {
+    "me": {
+     "zh": "我",
+     "es": "yo",
+     "en": "me",
+     "voice": "zh-CN-YunyangNeural"
+    },
+    "a": {
+     "zh": "朋友",
+     "es": "amigo",
+     "en": "friend",
+     "voice": "zh-CN-YunxiNeural"
+    }
+   },
+   "lines": [
+    {
+     "scene": "En la cafetería, piden",
+     "icon": "cup"
+    },
+    {
+     "who": "me",
+     "hanzi": "你想喝点什么？",
+     "pinyin": "Nǐ xiǎng hē diǎn shénme?",
+     "es": "¿Qué te apetece tomar?",
+     "audio": "3-data/audio/acs_fad3b48f247ca33a.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "这里的茶很好喝，我要一杯茶。",
+     "pinyin": "Zhèlǐ de chá hěn hǎohē, wǒ yào yì bēi chá.",
+     "es": "El té de aquí está muy rico, yo quiero un té.",
+     "audio": "3-data/audio/acs_df6d01fbdb0825fb.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "我要一瓶啤酒。",
+     "pinyin": "Wǒ yào yì píng píjiǔ.",
+     "es": "Yo quiero una botella de cerveza.",
+     "audio": "3-data/audio/acs_62ed34683ed8472d.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "你平时喝酒吗？",
+     "pinyin": "Nǐ píngshí hē jiǔ ma?",
+     "es": "¿Sueles beber alcohol?",
+     "audio": "3-data/audio/acs_a740c4119e594ccf.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "平时不喝，今天我很高兴！",
+     "pinyin": "Píngshí bù hē, jīntiān wǒ hěn gāoxìng!",
+     "es": "Normalmente no, pero hoy estoy contento.",
+     "audio": "3-data/audio/acs_4947780dc02b4e79.mp3"
+    },
+    {
+     "scene": "Charlan",
+     "icon": "people"
+    },
+    {
+     "who": "a",
+     "hanzi": "你今天怎么了？",
+     "pinyin": "Nǐ jīntiān zěnme le?",
+     "es": "¿Qué te pasa hoy?",
+     "audio": "3-data/audio/acs_ad1a828f72d9a318.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "我找到新工作了！",
+     "pinyin": "Wǒ zhǎodào xīn gōngzuò le!",
+     "es": "¡He encontrado un trabajo nuevo!",
+     "audio": "3-data/audio/acs_d0c05832df0efc4d.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "我的天！太好了！",
+     "pinyin": "Wǒ de tiān! Tài hǎo le!",
+     "es": "¡Madre mía! ¡Qué bien!",
+     "audio": "3-data/audio/acs_ccc44b883a025156.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "谢谢！我太高兴了，我想请大家吃饭……开玩笑的！",
+     "pinyin": "Xièxie! Wǒ tài gāoxìng le, wǒ xiǎng qǐng dàjiā chīfàn…… Kāi wánxiào de!",
+     "es": "¡Gracias! Estoy tan contento que invito a todos a comer… ¡Es broma!",
+     "audio": "3-data/audio/acs_10b517c06d012103.mp3"
+    },
+    {
+     "who": "a",
+     "hanzi": "哈哈，笑死我了！",
+     "pinyin": "Hāhā, xiàosǐ wǒ le!",
+     "es": "¡Ja, ja, me parto!",
+     "audio": "3-data/audio/acs_23c95aa174fdf20f.mp3"
+    },
+    {
+     "scene": "Brindan",
+     "icon": "heart"
+    },
+    {
+     "who": "a",
+     "hanzi": "真的太好了，我们喝一杯吧！",
+     "pinyin": "Zhēn de tài hǎo le, wǒmen hē yì bēi ba!",
+     "es": "De verdad, ¡qué bien! ¡Vamos a tomar una copa!",
+     "audio": "3-data/audio/acs_3edd0f20614f04bd.mp3"
+    },
+    {
+     "who": "me",
+     "hanzi": "好！下次我请你！",
+     "pinyin": "Hǎo! Xiàcì wǒ qǐng nǐ!",
+     "es": "¡Vale! ¡La próxima vez invito yo!",
+     "audio": "3-data/audio/acs_12aa60e5d528eddd.mp3"
+    }
+   ]
   }
  ],
  "cards": [
@@ -201140,10 +201430,10 @@
   {
    "date": "2026-11-24",
    "added": {
-    "3": 28,
+    "1": 22,
     "2": 36,
     "5": 6,
-    "1": 22,
+    "3": 28,
     "6": 6,
     "7": 1,
     "4": 1
@@ -201424,7 +201714,7 @@
   }
  ],
  "historyCache": {
-  "upTo": "9313449e5657c8169647c3824797b0530a8b2349",
+  "upTo": "7bbe90c13ce32f0924ce8bdcab8b649d062d1ff0",
   "days": [
    {
     "date": "2026-09-26",
@@ -201646,6 +201936,20 @@
      "5": 5
     },
     "edited": 11,
+    "removed": 0
+   },
+   {
+    "date": "2026-11-24",
+    "added": {
+     "1": 22,
+     "2": 36,
+     "5": 6,
+     "3": 28,
+     "6": 6,
+     "7": 1,
+     "4": 1
+    },
+    "edited": 0,
     "removed": 0
    }
   ]
